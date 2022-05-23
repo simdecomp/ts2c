@@ -1,0 +1,30 @@
+_SDA_BASE_ = 0x805DC6E0;
+_SDA2_BASE_ = 0x805E1220;
+MEMORY
+{
+    text : origin = 0x80004000
+}
+SECTIONS
+{
+    GROUP :
+    {
+        .init BIND(0x80004000) ALIGN(0x20) : { *(.init) }
+        _extab BIND(0x800064E0) ALIGN(0x20) : { *(.extab) }
+        _extabindex BIND(0x800066A0) ALIGN(0x20) : { *(.extabindex) }
+        .text BIND(0x80006940) ALIGN(0x20) : { *(.text) }
+        .ctors BIND(0x80418B80) ALIGN(0x20) : { *(.ctors) }
+        .dtors BIND(0x80418C60) ALIGN(0x20) : { *(.dtors) }
+        .rodata BIND(0x80418C80) ALIGN(0x20) : { *(.rodata) }
+        .data BIND(0x80420060) ALIGN(0x20) : { *(.data) }
+        .bss BIND(0x80488180) ALIGN(0x20) : { *(.bss) }
+        .sdata BIND(0x805D46E0) ALIGN(0x20) : { *(.sdata) }
+        .sbss BIND(0x805D79C0) ALIGN(0x20) : { *(.sbss) }
+        .sdata2 BIND(0x805D9220) ALIGN(0x20) : { *(.sdata2) }
+        .sbss2 BIND(0x805DC420) ALIGN(0x20) : { *(.sbss2) }
+    }  > text
+
+}
+FORCEFILES
+{
+    main.o
+}
