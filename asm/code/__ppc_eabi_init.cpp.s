@@ -1,0 +1,60 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "__init_user"
+"__init_user":
+/* 803E5E64 003E1B04  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803E5E68 003E1B08  7C 08 02 A6 */	mflr r0
+/* 803E5E6C 003E1B0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803E5E70 003E1B10  48 00 00 15 */	bl "__init_cpp"
+/* 803E5E74 003E1B14  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803E5E78 003E1B18  7C 08 03 A6 */	mtlr r0
+/* 803E5E7C 003E1B1C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803E5E80 003E1B20  4E 80 00 20 */	blr 
+
+.global "__init_cpp"
+"__init_cpp":
+/* 803E5E84 003E1B24  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803E5E88 003E1B28  7C 08 02 A6 */	mflr r0
+/* 803E5E8C 003E1B2C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803E5E90 003E1B30  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803E5E94 003E1B34  3F E0 80 42 */	lis r31, "_ctors"@ha
+/* 803E5E98 003E1B38  3B FF 8B 80 */	addi r31, r31, "_ctors"@l
+/* 803E5E9C 003E1B3C  48 00 00 10 */	b lbl_803E5EAC
+lbl_803E5EA0:
+/* 803E5EA0 003E1B40  7D 89 03 A6 */	mtctr r12
+/* 803E5EA4 003E1B44  4E 80 04 21 */	bctrl 
+/* 803E5EA8 003E1B48  3B FF 00 04 */	addi r31, r31, 4
+lbl_803E5EAC:
+/* 803E5EAC 003E1B4C  81 9F 00 00 */	lwz r12, 0(r31)
+/* 803E5EB0 003E1B50  2C 0C 00 00 */	cmpwi r12, 0
+/* 803E5EB4 003E1B54  40 82 FF EC */	bne lbl_803E5EA0
+/* 803E5EB8 003E1B58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803E5EBC 003E1B5C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803E5EC0 003E1B60  7C 08 03 A6 */	mtlr r0
+/* 803E5EC4 003E1B64  38 21 00 10 */	addi r1, r1, 0x10
+/* 803E5EC8 003E1B68  4E 80 00 20 */	blr 
+
+.global "exit"
+"exit":
+/* 803E5ECC 003E1B6C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803E5ED0 003E1B70  7C 08 02 A6 */	mflr r0
+/* 803E5ED4 003E1B74  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803E5ED8 003E1B78  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803E5EDC 003E1B7C  3F E0 80 42 */	lis r31, "_dtors"@ha
+/* 803E5EE0 003E1B80  3B FF 8C 60 */	addi r31, r31, "_dtors"@l
+/* 803E5EE4 003E1B84  48 00 00 10 */	b lbl_803E5EF4
+lbl_803E5EE8:
+/* 803E5EE8 003E1B88  7D 89 03 A6 */	mtctr r12
+/* 803E5EEC 003E1B8C  4E 80 04 21 */	bctrl 
+/* 803E5EF0 003E1B90  3B FF 00 04 */	addi r31, r31, 4
+lbl_803E5EF4:
+/* 803E5EF4 003E1B94  81 9F 00 00 */	lwz r12, 0(r31)
+/* 803E5EF8 003E1B98  2C 0C 00 00 */	cmpwi r12, 0
+/* 803E5EFC 003E1B9C  40 82 FF EC */	bne lbl_803E5EE8
+/* 803E5F00 003E1BA0  4B F5 4E 91 */	bl "PPCHalt"
+/* 803E5F04 003E1BA4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803E5F08 003E1BA8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803E5F0C 003E1BAC  7C 08 03 A6 */	mtlr r0
+/* 803E5F10 003E1BB0  38 21 00 10 */	addi r1, r1, 0x10
+/* 803E5F14 003E1BB4  4E 80 00 20 */	blr 

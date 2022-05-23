@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #
-# Usage: ./asmsplit.py MAPFILE < ASMFILE
+# Usage: ./asmsplit.py ELFFILE < ASMFILE
+# not working
 
 import os
 import re
@@ -8,8 +9,8 @@ import sys
 from elftools.elf.elffile import *
 from elftools.elf.sections import *
 
-basedir = 'asm/'
-macros = 'macros.inc'
+basedir = 'asm/code/'
+macros = 'null.s'
 
 filenames = {}
 lastfile = None
@@ -18,6 +19,7 @@ symbolNames = []
 
 lastSymbolWasFileName = False
 fname = ''
+section = ''
 
 with open(sys.argv[1], 'rb') as f:
     elf = ELFFile(f)
@@ -26,15 +28,19 @@ with open(sys.argv[1], 'rb') as f:
         sym = elfsymtab.get_symbol(i)
         symbol_name = sym.name
         if len(sym.name) > 0 and not sym.name[0] in {'.', '@'}:
+            if not symbol_name.startswith('_'):
+                symbol_name = symbol_name.replace("_", "/")
             symbolNames.append(symbol_name)
-            if (sym['st_info'] & 0xF == 4):
-                fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], symbol_name)) + '.s'
+            if (sym['st_info']['type'] == "STT_FILE"):
+                fname = (basedir + symbol_name + '.s')
+                print("# Found file \"%s\"" % symbol_name)
                 lastSymbolWasFileName = True
-            elif (lastSymbolWasFileName == True and fname != ''):
-                filenames[sym['st_value']] = fname
-                fname = ''
-                lastSymbolWasFileName = False
-                pass
+        elif (lastSymbolWasFileName == True and fname != ''):
+            filenames[sym['st_value']] = fname
+            print("# File \"%s\" starts at address 0x%08X" % (fname, sym['st_value']))
+            fname = ''
+            lastSymbolWasFileName = False
+            pass
 
 # with open(sys.argv[1]) as mapfile:
 #     for mapline in mapfile:    
@@ -47,7 +53,6 @@ with open(sys.argv[1], 'rb') as f:
 
 curfile = open(macros, 'w')
 curaddr = 0
-section = ''
 remainder = None
 
 while asmline := remainder or sys.stdin.readline():
@@ -60,16 +65,17 @@ while asmline := remainder or sys.stdin.readline():
     else:
         if trim != "":
             if curfile.closed:
-                fname = filenames[curaddr]
-                if os.path.exists(fname):
-                    curfile = open(fname, 'a')
-                    curfile.write('\n')
-                else:
-                    os.makedirs(os.path.dirname(fname), exist_ok = True)
-                    curfile = open(fname, 'x')
-                    curfile.write('.include "' + macros + '"\n\n')
+                if curaddr in filenames:
+                    fname = filenames[curaddr]
+                    if os.path.exists(fname):
+                        curfile = open(fname, 'a')
+                        curfile.write('\n')
+                    else:
+                        os.makedirs(os.path.dirname(fname), exist_ok = True)
+                        curfile = open(fname, 'x')
+                        curfile.write('.include "macros.inc"\n\n')
 
-                curfile.write(section)
+                    curfile.write(section)
 
             if trim.startswith('.skip'):
                 curaddr += int(trim[6:], 0)
