@@ -75,7 +75,7 @@ def is_aligned(num):
 
 # returns True if value is a possible pointer
 def is_pointer(num):
-    return num in labelNames and (num >= 0x80004000 and num < 0x805DC448)
+    return num in labelNames or (num >= 0x80004000 and num < 0x805DC448)
 
 # returns True if all elements are zero
 def is_all_zero(arr):
@@ -133,7 +133,10 @@ def convert_data(data, offset, incsize):
         if pos + 4 <= size:
             val = read_u32(data, pos)
             if is_pointer(val):
-                text += '\t.4byte %s ;# ptr (0x%08X)\n' % (labelNames[val], val)
+                if val in labelNames:
+                    text += '\t.4byte %s ;# ptr (0x%08X)\n' % (labelNames[val], val)
+                else:
+                    text += '\t.4byte 0x%08X ;# ptr\n' % val
             else:
                 text += '\t.4byte 0x%08X\n' % val
             pos += 4  
