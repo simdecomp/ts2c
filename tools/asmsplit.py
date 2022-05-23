@@ -19,7 +19,7 @@ symbolNames = []
 lastSymbolWasFileName = False
 fname = ''
 
-with open(sys.argv[2], 'rb') as f:
+with open(sys.argv[1], 'rb') as f:
     elf = ELFFile(f)
     elfsymtab = elf.get_section_by_name('.symtab')
     for i in range(0, elfsymtab.num_symbols()):
@@ -35,16 +35,15 @@ with open(sys.argv[2], 'rb') as f:
                 fname = ''
                 lastSymbolWasFileName = False
                 pass
-            # add_label(sym['st_value'], ("\"%s\"" % symbol_name), True)
 
-with open(sys.argv[1]) as mapfile:
-    for mapline in mapfile:    
-        match = re.match('  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [ 0-9][0-9] [^ ]+ \t(.+)', mapline)
-        if match and match.group(2) != lastfile:
-            lastfile = match.group(2)
-            addr = int(match.group(1), 16)
-            fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], match.group(2).strip().split(' '))) + '.s'
-            filenames[addr] = fname
+# with open(sys.argv[1]) as mapfile:
+#     for mapline in mapfile:    
+#         match = re.match('  [0-9a-f]{8} [0-9a-f]{6} ([0-9a-f]{8}) [ 0-9][0-9] [^ ]+ \t(.+)', mapline)
+#         if match and match.group(2) != lastfile:
+#             lastfile = match.group(2)
+#             addr = int(match.group(1), 16)
+#             fname = basedir + '/'.join(map(lambda s: os.path.splitext(s)[0], match.group(2).strip().split(' '))) + '.s'
+#             filenames[addr] = fname
 
 curfile = open(macros, 'w')
 curaddr = 0

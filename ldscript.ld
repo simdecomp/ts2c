@@ -1,6 +1,4 @@
 ENTRY(__start)
-_SDA_BASE_ = 0x805DC6E0;
-_SDA2_BASE_ = 0x805E1220;
 PHDRS
 {
     init PT_LOAD;
