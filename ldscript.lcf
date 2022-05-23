@@ -6,7 +6,7 @@ SECTIONS
 {
     GROUP :
     {
-        .init ALIGN(0x20) : { *(.init) }
+        .init BIND(0x80004000) ALIGN(0x20) : { *(.init) }
         _extab ALIGN(0x20) : { *(.extab) }
         _extabindex ALIGN(0x20) : { *(.extabindex) }
         .text ALIGN(0x20) : { *(.text) }
@@ -14,11 +14,11 @@ SECTIONS
         .dtors ALIGN(0x20) : { *(.dtors) }
         .rodata ALIGN(0x20) : { *(.rodata) }
         .data ALIGN(0x20) : { *(.data) }
-        .bss BIND(0x80488180) ALIGN(0x40) : { *(.bss) }
-        .sdata BIND(0x805D46E0) ALIGN(0x20) : { *(.sdata) }
-        .sbss BIND(0x805D79C0) ALIGN(0x20) : { *(.sbss) }
-        .sdata2 BIND(0x805D9220) ALIGN(0x20) : { *(.sdata2) }
-        .sbss2 BIND(0x805DC420) ALIGN(0x20) : { *(.sbss2) }
+        .bss ALIGN(0x40) : { *(.bss) }
+        .sdata ALIGN(0x20) : { *(.sdata) }
+        .sbss ALIGN(0x20) : { *(.sbss) }
+        .sdata2 ALIGN(0x20) : { *(.sdata2) }
+        .sbss2 ALIGN(0x20) : { *(.sbss2) }
     }  > text
     _stack_addr = (_f_sdata2 + SIZEOF(.sdata2) + 65536 + 0x7) & ~0x7;
     _stack_end = _f_sdata2 + SIZEOF(.sdata2);
@@ -29,5 +29,17 @@ SECTIONS
 }
 FORCEFILES
 {
-    main.o
+    bss.o
+    ctors.o
+    data.o
+    dtors.o
+    extab.o
+    extabindex.o
+    init.o
+    rodata.o
+    sbss.o
+    sbss2.o
+    sdata.o
+    sdata2.o
+    text.o
 }
