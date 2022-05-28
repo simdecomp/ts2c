@@ -1,6 +1,7 @@
 .include "macros.inc"
 
 .section .sbss2, "", @nobits
+lbl_sbss2start:
 	.skip 0x8
 .global "_gxBlack"
 "_gxBlack":

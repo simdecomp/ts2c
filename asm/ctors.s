@@ -1,7 +1,61 @@
 .include "macros.inc"
 
 .section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-    .incbin "baserom.dol", 0x414C80, 0xC8
+lbl_ctors:
+	# ROM: 0x414C80
+	.4byte "__init_cpp_exceptions" ;# ptr (0x8040F9A8)
+	.4byte "__sinit_game_animation_unity_cpp" ;# ptr (0x80016844)
+	.4byte "__sinit_game_cas_unity_cpp" ;# ptr (0x800313C8)
+	.4byte "__sinit_game_interactor_unity_cpp" ;# ptr (0x80050CCC)
+	.4byte "__sinit_game_level_unity_cpp" ;# ptr (0x8009A2A4)
+	.4byte "__sinit_game_misc_unity_cpp" ;# ptr (0x8009D2DC)
+	.4byte "__sinit_game_simulator_core2_unity_cpp" ;# ptr (0x800A5580)
+	.4byte "__sinit_game_simulator_core_unity_cpp" ;# ptr (0x800FD258)
+	.4byte "__sinit_game_simulator_objectdata_unity_cpp" ;# ptr (0x80163148)
+	.4byte "__sinit_game_simulator_utility_unity_cpp" ;# ptr (0x80164B44)
+	.4byte "__sinit_game_statemachine_unity_cpp" ;# ptr (0x80176C44)
+	.4byte "__sinit_game_ui_targets_cas_unity_cpp" ;# ptr (0x8018BA78)
+	.4byte "__sinit_game_ui_targets_s2c_unity_cpp" ;# ptr (0x801BD84C)
+	.4byte "__sinit_game_ui_targets_tsc5_unity_cpp" ;# ptr (0x801C9ECC)
+	.4byte "__sinit_game_ui_targets_tsc6_unity_cpp" ;# ptr (0x801E5BD4)
+	.4byte "__sinit_game_unity_cpp" ;# ptr (0x80243D58)
+	.4byte "__sinit_game_wii_unity_cpp" ;# ptr (0x80245794)
+	.4byte "__sinit_weather_unity_cpp" ;# ptr (0x8024B304)
+	.4byte "__sinit_base_core_unity_cpp" ;# ptr (0x8025E134)
+	.4byte "__sinit_e_cheatmenu_cpp" ;# ptr (0x802799B4)
+	.4byte "__sinit_engine_core_unity_cpp" ;# ptr (0x80279E54)
+	.4byte "__sinit_engine_effects2_unity_cpp" ;# ptr (0x8027FEB8)
+	.4byte "__sinit_engine_graphics_unity_cpp" ;# ptr (0x802A126C)
+	.4byte "__sinit_engine_manager_unity_cpp" ;# ptr (0x802A58AC)
+	.4byte "__sinit_engine_ngc_unity_cpp" ;# ptr (0x802AE07C)
+	.4byte "__sinit_engine_resource_unity_cpp" ;# ptr (0x802D2DC0)
+	.4byte "__sinit_engine_utility_unity_cpp" ;# ptr (0x802F3574)
+	.4byte "__sinit_Apt_cpp" ;# ptr (0x802FC49C)
+	.4byte "__sinit_AptActionInterpreter_cpp" ;# ptr (0x803090C0)
+	.4byte "__sinit_AptArray_cpp" ;# ptr (0x80310550)
+	.4byte "__sinit_StringPool_cpp" ;# ptr (0x803357F8)
+	.4byte "__sinit_lyt_bounding_cpp" ;# ptr (0x8038A710)
+	.4byte "__sinit_lyt_pane_cpp" ;# ptr (0x80393078)
+	.4byte "__sinit_lyt_picture_cpp" ;# ptr (0x803938BC)
+	.4byte "__sinit_lyt_textBox_cpp" ;# ptr (0x80396984)
+	.4byte "__sinit_lyt_window_cpp" ;# ptr (0x80398BF0)
+	.4byte "__sinit_snd_BasicSound_cpp" ;# ptr (0x803A044C)
+	.4byte "__sinit_snd_Channel_cpp" ;# ptr (0x803A1A94)
+	.4byte "__sinit_snd_SeqPlayer_cpp" ;# ptr (0x803A8594)
+	.4byte "__sinit_snd_SeqSound_cpp" ;# ptr (0x803A9000)
+	.4byte "__sinit_snd_StrmPlayer_cpp" ;# ptr (0x803B7ADC)
+	.4byte "__sinit_snd_StrmSound_cpp" ;# ptr (0x803B7F5C)
+	.4byte "__sinit_snd_WavePlayer_cpp" ;# ptr (0x803BA4A0)
+	.4byte "__sinit_snd_WaveSound_cpp" ;# ptr (0x803BAA24)
+	.4byte "__sinit_snd_WsdPlayer_cpp" ;# ptr (0x803BC464)
+	.4byte "__sinit_ut_DvdFileStream_cpp" ;# ptr (0x803C262C)
+	.4byte "__sinit_ut_DvdLockedFileStream_cpp" ;# ptr (0x803C2854)
+	.4byte "__sinit_ut_FileStream_cpp" ;# ptr (0x803C2A7C)
+	.4byte "__sinit_ut_IOStream_cpp" ;# ptr (0x803C2E7C)
+	.4byte "__sinit_ut_TextWriterBase_cpp" ;# ptr (0x803CDF5C)
+
 .global "_ctors$99"
 "_ctors$99":
-	.incbin "baserom.dol", 0x414D48, 0x18
+	# ROM: 0x414D48
+	.4byte 0
+

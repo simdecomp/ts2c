@@ -148,7 +148,7 @@ with open(sys.argv[1], 'rt') as f:
     for line in f.readlines():
         line = line.rstrip()
             # Incbin directive
-        m = re.match(r'\t\.incbin\s+"baserom.dol"\s*,\s*([^, \.]+),\s*([^, \.]+)', line)
+        m = re.match(r'\s*\.incbin\s+"baserom.dol"\s*,\s*([^, \.]+),\s*([^, \.]+)', line)
         if m:
             g = m.groups()
             start = int(g[0], 0)
