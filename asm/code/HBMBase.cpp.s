@@ -1,0 +1,8223 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "HBMAllocMem__FUl"
+"HBMAllocMem__FUl":
+/* 8037BED4 00377B74  7C 64 1B 78 */	mr r4, r3
+/* 8037BED8 00377B78  80 6D AC DC */	lwz r3, "spAllocator"-_SDA_BASE_(r13)
+/* 8037BEDC 00377B7C  48 05 7F F4 */	b "MEMAllocFromAllocator"
+
+.global "HBMFreeMem__FPv"
+"HBMFreeMem__FPv":
+/* 8037BEE0 00377B80  7C 64 1B 78 */	mr r4, r3
+/* 8037BEE4 00377B84  80 6D AC DC */	lwz r3, "spAllocator"-_SDA_BASE_(r13)
+/* 8037BEE8 00377B88  48 05 7F F8 */	b "MEMFreeToAllocator"
+
+.global "getAllocatorType__FPC11HBMDataInfo"
+"getAllocatorType__FPC11HBMDataInfo":
+/* 8037BEEC 00377B8C  38 60 00 01 */	li r3, 1
+/* 8037BEF0 00377B90  4E 80 00 20 */	blr 
+
+.global "HBMCreate"
+"HBMCreate":
+/* 8037BEF4 00377B94  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037BEF8 00377B98  7C 08 02 A6 */	mflr r0
+/* 8037BEFC 00377B9C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037BF00 00377BA0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037BF04 00377BA4  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037BF08 00377BA8  7C 7E 1B 78 */	mr r30, r3
+/* 8037BF0C 00377BAC  4B FF FF E1 */	bl "getAllocatorType__FPC11HBMDataInfo"
+/* 8037BF10 00377BB0  2C 03 00 01 */	cmpwi r3, 1
+/* 8037BF14 00377BB4  40 82 00 2C */	bne lbl_8037BF40
+/* 8037BF18 00377BB8  80 7E 00 10 */	lwz r3, 0x10(r30)
+/* 8037BF1C 00377BBC  80 9E 00 2C */	lwz r4, 0x2c(r30)
+/* 8037BF20 00377BC0  48 00 00 D5 */	bl "MEMCreateExpHeap"
+/* 8037BF24 00377BC4  3F E0 80 59 */	lis r31, "sAllocator"@ha
+/* 8037BF28 00377BC8  7C 64 1B 78 */	mr r4, r3
+/* 8037BF2C 00377BCC  38 7F 1C 88 */	addi r3, r31, "sAllocator"@l
+/* 8037BF30 00377BD0  38 A0 00 20 */	li r5, 0x20
+/* 8037BF34 00377BD4  48 05 7F BD */	bl "MEMInitAllocatorForExpHeap"
+/* 8037BF38 00377BD8  38 1F 1C 88 */	addi r0, r31, 0x1c88
+/* 8037BF3C 00377BDC  90 0D AC DC */	stw r0, "spAllocator"-_SDA_BASE_(r13)
+lbl_8037BF40:
+/* 8037BF40 00377BE0  7F C3 F3 78 */	mr r3, r30
+/* 8037BF44 00377BE4  4B FF FF A9 */	bl "getAllocatorType__FPC11HBMDataInfo"
+/* 8037BF48 00377BE8  2C 03 00 01 */	cmpwi r3, 1
+/* 8037BF4C 00377BEC  41 82 00 34 */	beq lbl_8037BF80
+/* 8037BF50 00377BF0  40 80 00 10 */	bge lbl_8037BF60
+/* 8037BF54 00377BF4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037BF58 00377BF8  40 80 00 14 */	bge lbl_8037BF6C
+/* 8037BF5C 00377BFC  48 00 00 60 */	b lbl_8037BFBC
+lbl_8037BF60:
+/* 8037BF60 00377C00  2C 03 00 03 */	cmpwi r3, 3
+/* 8037BF64 00377C04  40 80 00 58 */	bge lbl_8037BFBC
+/* 8037BF68 00377C08  48 00 00 24 */	b lbl_8037BF8C
+lbl_8037BF6C:
+/* 8037BF6C 00377C0C  80 7E 00 3C */	lwz r3, 0x3c(r30)
+/* 8037BF70 00377C10  48 00 00 7D */	bl "SetAllocator__Q36nw4hbm3lyt6LayoutFP12MEMAllocator"
+/* 8037BF74 00377C14  80 1E 00 3C */	lwz r0, 0x3c(r30)
+/* 8037BF78 00377C18  90 0D AC DC */	stw r0, "spAllocator"-_SDA_BASE_(r13)
+/* 8037BF7C 00377C1C  48 00 00 40 */	b lbl_8037BFBC
+lbl_8037BF80:
+/* 8037BF80 00377C20  80 6D AC DC */	lwz r3, "spAllocator"-_SDA_BASE_(r13)
+/* 8037BF84 00377C24  48 00 00 69 */	bl "SetAllocator__Q36nw4hbm3lyt6LayoutFP12MEMAllocator"
+/* 8037BF88 00377C28  48 00 00 34 */	b lbl_8037BFBC
+lbl_8037BF8C:
+/* 8037BF8C 00377C2C  48 00 00 59 */	bl "GetAllocator__Q36nw4hbm3lyt6LayoutFv"
+/* 8037BF90 00377C30  2C 03 00 00 */	cmpwi r3, 0
+/* 8037BF94 00377C34  40 82 00 20 */	bne lbl_8037BFB4
+/* 8037BF98 00377C38  3C 60 80 47 */	lis r3, lbl_804682D0@ha
+/* 8037BF9C 00377C3C  3C A0 80 47 */	lis r5, lbl_804682DC@ha
+/* 8037BFA0 00377C40  38 63 82 D0 */	addi r3, r3, lbl_804682D0@l
+/* 8037BFA4 00377C44  38 80 00 6E */	li r4, 0x6e
+/* 8037BFA8 00377C48  38 A5 82 DC */	addi r5, r5, lbl_804682DC@l
+/* 8037BFAC 00377C4C  4C C6 31 82 */	crclr 6
+/* 8037BFB0 00377C50  48 00 A0 25 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037BFB4:
+/* 8037BFB4 00377C54  48 00 00 31 */	bl "GetAllocator__Q36nw4hbm3lyt6LayoutFv"
+/* 8037BFB8 00377C58  90 6D AC DC */	stw r3, "spAllocator"-_SDA_BASE_(r13)
+lbl_8037BFBC:
+/* 8037BFBC 00377C5C  7F C3 F3 78 */	mr r3, r30
+/* 8037BFC0 00377C60  48 00 06 79 */	bl "createInstance__Q210homebutton10HomeButtonFPC11HBMDataInfo"
+/* 8037BFC4 00377C64  48 00 07 05 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037BFC8 00377C68  48 00 07 09 */	bl "create__Q210homebutton10HomeButtonFv"
+/* 8037BFCC 00377C6C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037BFD0 00377C70  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037BFD4 00377C74  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037BFD8 00377C78  7C 08 03 A6 */	mtlr r0
+/* 8037BFDC 00377C7C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037BFE0 00377C80  4E 80 00 20 */	blr 
+
+.global "GetAllocator__Q36nw4hbm3lyt6LayoutFv"
+"GetAllocator__Q36nw4hbm3lyt6LayoutFv":
+/* 8037BFE4 00377C84  80 6D C5 58 */	lwz r3, "mspAllocator__Q36nw4hbm3lyt6Layout"-_SDA_BASE_(r13)
+/* 8037BFE8 00377C88  4E 80 00 20 */	blr 
+
+.global "SetAllocator__Q36nw4hbm3lyt6LayoutFP12MEMAllocator"
+"SetAllocator__Q36nw4hbm3lyt6LayoutFP12MEMAllocator":
+/* 8037BFEC 00377C8C  90 6D C5 58 */	stw r3, "mspAllocator__Q36nw4hbm3lyt6Layout"-_SDA_BASE_(r13)
+/* 8037BFF0 00377C90  4E 80 00 20 */	blr 
+
+.global "MEMCreateExpHeap"
+"MEMCreateExpHeap":
+/* 8037BFF4 00377C94  38 A0 00 00 */	li r5, 0
+/* 8037BFF8 00377C98  48 05 76 8C */	b "MEMCreateExpHeapEx"
+
+.global "HBMDelete"
+"HBMDelete":
+/* 8037BFFC 00377C9C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C000 00377CA0  7C 08 02 A6 */	mflr r0
+/* 8037C004 00377CA4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C008 00377CA8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C00C 00377CAC  48 00 06 BD */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C010 00377CB0  48 00 00 3D */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037C014 00377CB4  7C 7F 1B 78 */	mr r31, r3
+/* 8037C018 00377CB8  48 00 06 79 */	bl "deleteInstance__Q210homebutton10HomeButtonFv"
+/* 8037C01C 00377CBC  7F E3 FB 78 */	mr r3, r31
+/* 8037C020 00377CC0  4B FF FE CD */	bl "getAllocatorType__FPC11HBMDataInfo"
+/* 8037C024 00377CC4  2C 03 00 01 */	cmpwi r3, 1
+/* 8037C028 00377CC8  40 82 00 10 */	bne lbl_8037C038
+/* 8037C02C 00377CCC  80 6D AC DC */	lwz r3, "spAllocator"-_SDA_BASE_(r13)
+/* 8037C030 00377CD0  80 63 00 04 */	lwz r3, 4(r3)
+/* 8037C034 00377CD4  48 05 77 01 */	bl "MEMDestroyExpHeap"
+lbl_8037C038:
+/* 8037C038 00377CD8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C03C 00377CDC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C040 00377CE0  7C 08 03 A6 */	mtlr r0
+/* 8037C044 00377CE4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C048 00377CE8  4E 80 00 20 */	blr 
+
+.global "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+"getHBMDataInfo__Q210homebutton10HomeButtonFv":
+/* 8037C04C 00377CEC  80 63 00 04 */	lwz r3, 4(r3)
+/* 8037C050 00377CF0  4E 80 00 20 */	blr 
+
+.global "HBMInit"
+"HBMInit":
+/* 8037C054 00377CF4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C058 00377CF8  7C 08 02 A6 */	mflr r0
+/* 8037C05C 00377CFC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C060 00377D00  80 6D AC D8 */	lwz r3, "__HBMVersion"-_SDA_BASE_(r13)
+/* 8037C064 00377D04  48 05 F2 09 */	bl "OSRegisterVersion"
+/* 8037C068 00377D08  48 00 06 61 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C06C 00377D0C  48 00 17 A1 */	bl "init__Q210homebutton10HomeButtonFv"
+/* 8037C070 00377D10  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C074 00377D14  7C 08 03 A6 */	mtlr r0
+/* 8037C078 00377D18  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C07C 00377D1C  4E 80 00 20 */	blr 
+
+.global "HBMCalc"
+"HBMCalc":
+/* 8037C080 00377D20  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C084 00377D24  7C 08 02 A6 */	mflr r0
+/* 8037C088 00377D28  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C08C 00377D2C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C090 00377D30  7C 7F 1B 78 */	mr r31, r3
+/* 8037C094 00377D34  48 00 06 35 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C098 00377D38  7F E4 FB 78 */	mr r4, r31
+/* 8037C09C 00377D3C  48 00 22 79 */	bl "calc__Q210homebutton10HomeButtonFPC17HBMControllerData"
+/* 8037C0A0 00377D40  48 00 06 29 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C0A4 00377D44  48 00 5F 5D */	bl "getSelectBtnNum__Q210homebutton10HomeButtonFv"
+/* 8037C0A8 00377D48  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C0AC 00377D4C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C0B0 00377D50  7C 08 03 A6 */	mtlr r0
+/* 8037C0B4 00377D54  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C0B8 00377D58  4E 80 00 20 */	blr 
+
+.global "HBMDraw"
+"HBMDraw":
+/* 8037C0BC 00377D5C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C0C0 00377D60  7C 08 02 A6 */	mflr r0
+/* 8037C0C4 00377D64  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C0C8 00377D68  48 00 06 01 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C0CC 00377D6C  48 00 34 49 */	bl "draw__Q210homebutton10HomeButtonFv"
+/* 8037C0D0 00377D70  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C0D4 00377D74  7C 08 03 A6 */	mtlr r0
+/* 8037C0D8 00377D78  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C0DC 00377D7C  4E 80 00 20 */	blr 
+
+.global "HBMGetSelectBtnNum"
+"HBMGetSelectBtnNum":
+/* 8037C0E0 00377D80  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C0E4 00377D84  7C 08 02 A6 */	mflr r0
+/* 8037C0E8 00377D88  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C0EC 00377D8C  48 00 05 DD */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C0F0 00377D90  48 00 5F 11 */	bl "getSelectBtnNum__Q210homebutton10HomeButtonFv"
+/* 8037C0F4 00377D94  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C0F8 00377D98  7C 08 03 A6 */	mtlr r0
+/* 8037C0FC 00377D9C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C100 00377DA0  4E 80 00 20 */	blr 
+
+.global "HBMSetAdjustFlag"
+"HBMSetAdjustFlag":
+/* 8037C104 00377DA4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C108 00377DA8  7C 08 02 A6 */	mflr r0
+/* 8037C10C 00377DAC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C110 00377DB0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C114 00377DB4  7C 7F 1B 78 */	mr r31, r3
+/* 8037C118 00377DB8  48 00 05 B1 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C11C 00377DBC  7F E4 FB 78 */	mr r4, r31
+/* 8037C120 00377DC0  48 00 5F 41 */	bl "setAdjustFlag__Q210homebutton10HomeButtonFi"
+/* 8037C124 00377DC4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C128 00377DC8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C12C 00377DCC  7C 08 03 A6 */	mtlr r0
+/* 8037C130 00377DD0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C134 00377DD4  4E 80 00 20 */	blr 
+
+.global "HBMAllocMem2__FUl"
+"HBMAllocMem2__FUl":
+/* 8037C138 00377DD8  3C A0 80 59 */	lis r5, "sAllocator2"@ha
+/* 8037C13C 00377DDC  7C 64 1B 78 */	mr r4, r3
+/* 8037C140 00377DE0  38 65 1C 98 */	addi r3, r5, "sAllocator2"@l
+/* 8037C144 00377DE4  48 05 7D 8C */	b "MEMAllocFromAllocator"
+
+.global "HBMCreateDvdSound"
+"HBMCreateDvdSound":
+/* 8037C148 00377DE8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C14C 00377DEC  7C 08 02 A6 */	mflr r0
+/* 8037C150 00377DF0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C154 00377DF4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C158 00377DF8  7C 7F 1B 78 */	mr r31, r3
+/* 8037C15C 00377DFC  7C 83 23 78 */	mr r3, r4
+/* 8037C160 00377E00  7C A4 2B 78 */	mr r4, r5
+/* 8037C164 00377E04  48 00 00 39 */	bl "MEMCreateFrmHeap"
+/* 8037C168 00377E08  3C A0 80 59 */	lis r5, "sAllocator2"@ha
+/* 8037C16C 00377E0C  7C 64 1B 78 */	mr r4, r3
+/* 8037C170 00377E10  38 65 1C 98 */	addi r3, r5, "sAllocator2"@l
+/* 8037C174 00377E14  38 A0 00 20 */	li r5, 0x20
+/* 8037C178 00377E18  48 05 7D 95 */	bl "MEMInitAllocatorForFrmHeap"
+/* 8037C17C 00377E1C  48 00 05 4D */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C180 00377E20  7F E4 FB 78 */	mr r4, r31
+/* 8037C184 00377E24  48 00 68 65 */	bl "create_dvd_sound__Q210homebutton10HomeButtonFPCc"
+/* 8037C188 00377E28  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C18C 00377E2C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C190 00377E30  7C 08 03 A6 */	mtlr r0
+/* 8037C194 00377E34  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C198 00377E38  4E 80 00 20 */	blr 
+
+.global "MEMCreateFrmHeap"
+"MEMCreateFrmHeap":
+/* 8037C19C 00377E3C  38 A0 00 00 */	li r5, 0
+/* 8037C1A0 00377E40  48 05 77 40 */	b "MEMCreateFrmHeapEx"
+
+.global "HBMUpdateSound"
+"HBMUpdateSound":
+/* 8037C1A4 00377E44  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C1A8 00377E48  7C 08 02 A6 */	mflr r0
+/* 8037C1AC 00377E4C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C1B0 00377E50  48 00 05 19 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037C1B4 00377E54  48 00 69 71 */	bl "update_sound__Q210homebutton10HomeButtonFv"
+/* 8037C1B8 00377E58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C1BC 00377E5C  7C 08 03 A6 */	mtlr r0
+/* 8037C1C0 00377E60  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C1C4 00377E64  4E 80 00 20 */	blr 
+
+.global "__ct__Q210homebutton10HomeButtonFPC11HBMDataInfo"
+"__ct__Q210homebutton10HomeButtonFPC11HBMDataInfo":
+/* 8037C1C8 00377E68  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037C1CC 00377E6C  7C 08 02 A6 */	mflr r0
+/* 8037C1D0 00377E70  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037C1D4 00377E74  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037C1D8 00377E78  3B E0 00 00 */	li r31, 0
+/* 8037C1DC 00377E7C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037C1E0 00377E80  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037C1E4 00377E84  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8037C1E8 00377E88  7C 7C 1B 78 */	mr r28, r3
+/* 8037C1EC 00377E8C  90 83 00 04 */	stw r4, 4(r3)
+/* 8037C1F0 00377E90  93 E3 01 E8 */	stw r31, 0x1e8(r3)
+/* 8037C1F4 00377E94  93 E3 02 00 */	stw r31, 0x200(r3)
+/* 8037C1F8 00377E98  38 63 02 08 */	addi r3, r3, 0x208
+/* 8037C1FC 00377E9C  48 00 F1 55 */	bl "__ct__Q36nw4hbm3lyt8DrawInfoFv"
+/* 8037C200 00377EA0  38 7C 04 04 */	addi r3, r28, 0x404
+/* 8037C204 00377EA4  38 80 00 1E */	li r4, 0x1e
+/* 8037C208 00377EA8  48 00 00 C5 */	bl "__ct__Q310homebutton10HomeButton10BlackFaderFi"
+/* 8037C20C 00377EAC  38 00 FF FF */	li r0, -1
+/* 8037C210 00377EB0  38 60 00 02 */	li r3, 2
+/* 8037C214 00377EB4  90 7C 00 10 */	stw r3, 0x10(r28)
+/* 8037C218 00377EB8  3B A0 00 00 */	li r29, 0
+/* 8037C21C 00377EBC  3B C0 00 00 */	li r30, 0
+/* 8037C220 00377EC0  90 1C 00 B0 */	stw r0, 0xb0(r28)
+/* 8037C224 00377EC4  90 1C 00 14 */	stw r0, 0x14(r28)
+/* 8037C228 00377EC8  93 FC 00 18 */	stw r31, 0x18(r28)
+/* 8037C22C 00377ECC  93 FC 00 00 */	stw r31, 0(r28)
+/* 8037C230 00377ED0  93 FC 00 64 */	stw r31, 0x64(r28)
+/* 8037C234 00377ED4  9B FC 00 86 */	stb r31, 0x86(r28)
+/* 8037C238 00377ED8  93 FC 00 68 */	stw r31, 0x68(r28)
+/* 8037C23C 00377EDC  93 FC 00 6C */	stw r31, 0x6c(r28)
+/* 8037C240 00377EE0  93 FC 00 70 */	stw r31, 0x70(r28)
+/* 8037C244 00377EE4  93 FC 00 74 */	stw r31, 0x74(r28)
+/* 8037C248 00377EE8  9B FC 00 87 */	stb r31, 0x87(r28)
+/* 8037C24C 00377EEC  9B FC 00 88 */	stb r31, 0x88(r28)
+lbl_8037C250:
+/* 8037C250 00377EF0  7C 7C F2 14 */	add r3, r28, r30
+/* 8037C254 00377EF4  38 63 04 18 */	addi r3, r3, 0x418
+/* 8037C258 00377EF8  48 05 F0 E9 */	bl "OSCreateAlarm"
+/* 8037C25C 00377EFC  7C 7C F2 14 */	add r3, r28, r30
+/* 8037C260 00377F00  38 63 04 D8 */	addi r3, r3, 0x4d8
+/* 8037C264 00377F04  48 05 F0 DD */	bl "OSCreateAlarm"
+/* 8037C268 00377F08  3B BD 00 01 */	addi r29, r29, 1
+/* 8037C26C 00377F0C  3B DE 00 30 */	addi r30, r30, 0x30
+/* 8037C270 00377F10  2C 1D 00 04 */	cmpwi r29, 4
+/* 8037C274 00377F14  41 80 FF DC */	blt lbl_8037C250
+/* 8037C278 00377F18  38 7C 05 98 */	addi r3, r28, 0x598
+/* 8037C27C 00377F1C  48 05 F0 C5 */	bl "OSCreateAlarm"
+/* 8037C280 00377F20  3C 60 80 59 */	lis r3, "sMutex__Q210homebutton10HomeButton"@ha
+/* 8037C284 00377F24  38 63 1C A8 */	addi r3, r3, "sMutex__Q210homebutton10HomeButton"@l
+/* 8037C288 00377F28  48 06 53 89 */	bl "OSInitMutex"
+/* 8037C28C 00377F2C  38 00 00 00 */	li r0, 0
+/* 8037C290 00377F30  7F 83 E3 78 */	mr r3, r28
+/* 8037C294 00377F34  90 1C 05 D0 */	stw r0, 0x5d0(r28)
+/* 8037C298 00377F38  90 1C 05 D4 */	stw r0, 0x5d4(r28)
+/* 8037C29C 00377F3C  90 1C 05 D8 */	stw r0, 0x5d8(r28)
+/* 8037C2A0 00377F40  90 1C 05 DC */	stw r0, 0x5dc(r28)
+/* 8037C2A4 00377F44  90 1C 05 E0 */	stw r0, 0x5e0(r28)
+/* 8037C2A8 00377F48  90 1C 05 E4 */	stw r0, 0x5e4(r28)
+/* 8037C2AC 00377F4C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037C2B0 00377F50  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037C2B4 00377F54  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037C2B8 00377F58  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8037C2BC 00377F5C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037C2C0 00377F60  7C 08 03 A6 */	mtlr r0
+/* 8037C2C4 00377F64  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037C2C8 00377F68  4E 80 00 20 */	blr 
+
+.global "__ct__Q310homebutton10HomeButton10BlackFaderFi"
+"__ct__Q310homebutton10HomeButton10BlackFaderFi":
+/* 8037C2CC 00377F6C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C2D0 00377F70  7C 08 02 A6 */	mflr r0
+/* 8037C2D4 00377F74  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C2D8 00377F78  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C2DC 00377F7C  7C 7F 1B 78 */	mr r31, r3
+/* 8037C2E0 00377F80  48 00 60 7D */	bl "init__Q310homebutton10HomeButton10BlackFaderFi"
+/* 8037C2E4 00377F84  7F E3 FB 78 */	mr r3, r31
+/* 8037C2E8 00377F88  38 80 00 00 */	li r4, 0
+/* 8037C2EC 00377F8C  38 A0 00 00 */	li r5, 0
+/* 8037C2F0 00377F90  38 C0 00 00 */	li r6, 0
+/* 8037C2F4 00377F94  48 00 00 1D */	bl "setColor__Q310homebutton10HomeButton10BlackFaderFUcUcUc"
+/* 8037C2F8 00377F98  7F E3 FB 78 */	mr r3, r31
+/* 8037C2FC 00377F9C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C300 00377FA0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C304 00377FA4  7C 08 03 A6 */	mtlr r0
+/* 8037C308 00377FA8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C30C 00377FAC  4E 80 00 20 */	blr 
+
+.global "setColor__Q310homebutton10HomeButton10BlackFaderFUcUcUc"
+"setColor__Q310homebutton10HomeButton10BlackFaderFUcUcUc":
+/* 8037C310 00377FB0  98 83 00 0C */	stb r4, 0xc(r3)
+/* 8037C314 00377FB4  98 A3 00 0D */	stb r5, 0xd(r3)
+/* 8037C318 00377FB8  98 C3 00 0E */	stb r6, 0xe(r3)
+/* 8037C31C 00377FBC  4E 80 00 20 */	blr 
+
+.global "__dt__Q210homebutton10HomeButtonFv"
+"__dt__Q210homebutton10HomeButtonFv":
+/* 8037C320 00377FC0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037C324 00377FC4  7C 08 02 A6 */	mflr r0
+/* 8037C328 00377FC8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037C32C 00377FCC  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037C330 00377FD0  48 09 30 45 */	bl "_savegpr_27"
+/* 8037C334 00377FD4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C338 00377FD8  7C 7E 1B 78 */	mr r30, r3
+/* 8037C33C 00377FDC  7C 9F 23 78 */	mr r31, r4
+/* 8037C340 00377FE0  41 82 02 1C */	beq lbl_8037C55C
+/* 8037C344 00377FE4  80 63 01 FC */	lwz r3, 0x1fc(r3)
+/* 8037C348 00377FE8  38 80 FF FF */	li r4, -1
+/* 8037C34C 00377FEC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C350 00377FF0  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C354 00377FF4  7D 89 03 A6 */	mtctr r12
+/* 8037C358 00377FF8  4E 80 04 21 */	bctrl 
+/* 8037C35C 00377FFC  80 7E 01 FC */	lwz r3, 0x1fc(r30)
+/* 8037C360 00378000  4B FF FB 81 */	bl "HBMFreeMem__FPv"
+/* 8037C364 00378004  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037C368 00378008  38 80 FF FF */	li r4, -1
+/* 8037C36C 0037800C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C370 00378010  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C374 00378014  7D 89 03 A6 */	mtctr r12
+/* 8037C378 00378018  4E 80 04 21 */	bctrl 
+/* 8037C37C 0037801C  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037C380 00378020  4B FF FB 61 */	bl "HBMFreeMem__FPv"
+/* 8037C384 00378024  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037C388 00378028  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037C38C 0037802C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037C390 00378030  40 82 00 3C */	bne lbl_8037C3CC
+/* 8037C394 00378034  7F DC F3 78 */	mr r28, r30
+/* 8037C398 00378038  3B A0 00 00 */	li r29, 0
+lbl_8037C39C:
+/* 8037C39C 0037803C  80 7C 01 EC */	lwz r3, 0x1ec(r28)
+/* 8037C3A0 00378040  38 80 FF FF */	li r4, -1
+/* 8037C3A4 00378044  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C3A8 00378048  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C3AC 0037804C  7D 89 03 A6 */	mtctr r12
+/* 8037C3B0 00378050  4E 80 04 21 */	bctrl 
+/* 8037C3B4 00378054  80 7C 01 EC */	lwz r3, 0x1ec(r28)
+/* 8037C3B8 00378058  4B FF FB 29 */	bl "HBMFreeMem__FPv"
+/* 8037C3BC 0037805C  3B BD 00 01 */	addi r29, r29, 1
+/* 8037C3C0 00378060  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037C3C4 00378064  2C 1D 00 04 */	cmpwi r29, 4
+/* 8037C3C8 00378068  41 80 FF D4 */	blt lbl_8037C39C
+lbl_8037C3CC:
+/* 8037C3CC 0037806C  7F DC F3 78 */	mr r28, r30
+/* 8037C3D0 00378070  3B A0 00 00 */	li r29, 0
+/* 8037C3D4 00378074  48 00 00 2C */	b lbl_8037C400
+lbl_8037C3D8:
+/* 8037C3D8 00378078  80 7C 02 70 */	lwz r3, 0x270(r28)
+/* 8037C3DC 0037807C  38 80 FF FF */	li r4, -1
+/* 8037C3E0 00378080  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C3E4 00378084  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C3E8 00378088  7D 89 03 A6 */	mtctr r12
+/* 8037C3EC 0037808C  4E 80 04 21 */	bctrl 
+/* 8037C3F0 00378090  80 7C 02 70 */	lwz r3, 0x270(r28)
+/* 8037C3F4 00378094  4B FF FA ED */	bl "HBMFreeMem__FPv"
+/* 8037C3F8 00378098  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037C3FC 0037809C  3B BD 00 01 */	addi r29, r29, 1
+lbl_8037C400:
+/* 8037C400 003780A0  80 1E 00 0C */	lwz r0, 0xc(r30)
+/* 8037C404 003780A4  7C 1D 00 00 */	cmpw r29, r0
+/* 8037C408 003780A8  41 80 FF D0 */	blt lbl_8037C3D8
+/* 8037C40C 003780AC  7F DC F3 78 */	mr r28, r30
+/* 8037C410 003780B0  3B A0 00 00 */	li r29, 0
+lbl_8037C414:
+/* 8037C414 003780B4  80 7C 03 C8 */	lwz r3, 0x3c8(r28)
+/* 8037C418 003780B8  38 80 FF FF */	li r4, -1
+/* 8037C41C 003780BC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C420 003780C0  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C424 003780C4  7D 89 03 A6 */	mtctr r12
+/* 8037C428 003780C8  4E 80 04 21 */	bctrl 
+/* 8037C42C 003780CC  80 7C 03 C8 */	lwz r3, 0x3c8(r28)
+/* 8037C430 003780D0  4B FF FA B1 */	bl "HBMFreeMem__FPv"
+/* 8037C434 003780D4  3B BD 00 01 */	addi r29, r29, 1
+/* 8037C438 003780D8  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037C43C 003780DC  2C 1D 00 0F */	cmpwi r29, 0xf
+/* 8037C440 003780E0  41 80 FF D4 */	blt lbl_8037C414
+/* 8037C444 003780E4  7F DC F3 78 */	mr r28, r30
+/* 8037C448 003780E8  3B A0 00 00 */	li r29, 0
+lbl_8037C44C:
+/* 8037C44C 003780EC  80 7C 02 A0 */	lwz r3, 0x2a0(r28)
+/* 8037C450 003780F0  38 80 FF FF */	li r4, -1
+/* 8037C454 003780F4  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C458 003780F8  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C45C 003780FC  7D 89 03 A6 */	mtctr r12
+/* 8037C460 00378100  4E 80 04 21 */	bctrl 
+/* 8037C464 00378104  80 7C 02 A0 */	lwz r3, 0x2a0(r28)
+/* 8037C468 00378108  4B FF FA 79 */	bl "HBMFreeMem__FPv"
+/* 8037C46C 0037810C  3B BD 00 01 */	addi r29, r29, 1
+/* 8037C470 00378110  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037C474 00378114  2C 1D 00 4A */	cmpwi r29, 0x4a
+/* 8037C478 00378118  41 80 FF D4 */	blt lbl_8037C44C
+/* 8037C47C 0037811C  80 7E 02 04 */	lwz r3, 0x204(r30)
+/* 8037C480 00378120  4B FF FA 61 */	bl "HBMFreeMem__FPv"
+/* 8037C484 00378124  80 7E 02 00 */	lwz r3, 0x200(r30)
+/* 8037C488 00378128  38 80 FF FF */	li r4, -1
+/* 8037C48C 0037812C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C490 00378130  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 8037C494 00378134  7D 89 03 A6 */	mtctr r12
+/* 8037C498 00378138  4E 80 04 21 */	bctrl 
+/* 8037C49C 0037813C  80 7E 02 00 */	lwz r3, 0x200(r30)
+/* 8037C4A0 00378140  4B FF FA 41 */	bl "HBMFreeMem__FPv"
+/* 8037C4A4 00378144  7F DC F3 78 */	mr r28, r30
+/* 8037C4A8 00378148  3B A0 00 00 */	li r29, 0
+lbl_8037C4AC:
+/* 8037C4AC 0037814C  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037C4B0 00378150  38 80 FF FF */	li r4, -1
+/* 8037C4B4 00378154  48 00 6B 4D */	bl "__dt__Q210homebutton10ControllerFv"
+/* 8037C4B8 00378158  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037C4BC 0037815C  4B FF FA 25 */	bl "HBMFreeMem__FPv"
+/* 8037C4C0 00378160  3B BD 00 01 */	addi r29, r29, 1
+/* 8037C4C4 00378164  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037C4C8 00378168  2C 1D 00 04 */	cmpwi r29, 4
+/* 8037C4CC 0037816C  41 80 FF E0 */	blt lbl_8037C4AC
+/* 8037C4D0 00378170  80 7E 02 6C */	lwz r3, 0x26c(r30)
+/* 8037C4D4 00378174  38 80 FF FF */	li r4, -1
+/* 8037C4D8 00378178  81 83 01 F0 */	lwz r12, 0x1f0(r3)
+/* 8037C4DC 0037817C  81 8C 00 08 */	lwz r12, 8(r12)
+/* 8037C4E0 00378180  7D 89 03 A6 */	mtctr r12
+/* 8037C4E4 00378184  4E 80 04 21 */	bctrl 
+/* 8037C4E8 00378188  80 7E 02 6C */	lwz r3, 0x26c(r30)
+/* 8037C4EC 0037818C  4B FF F9 F5 */	bl "HBMFreeMem__FPv"
+/* 8037C4F0 00378190  38 00 00 00 */	li r0, 0
+/* 8037C4F4 00378194  80 7E 00 A8 */	lwz r3, 0xa8(r30)
+/* 8037C4F8 00378198  90 1E 02 6C */	stw r0, 0x26c(r30)
+/* 8037C4FC 0037819C  4B FF F9 E5 */	bl "HBMFreeMem__FPv"
+/* 8037C500 003781A0  80 7E 00 AC */	lwz r3, 0xac(r30)
+/* 8037C504 003781A4  4B FF F9 DD */	bl "HBMFreeMem__FPv"
+/* 8037C508 003781A8  3B BE 04 18 */	addi r29, r30, 0x418
+/* 8037C50C 003781AC  3B 9E 04 D8 */	addi r28, r30, 0x4d8
+/* 8037C510 003781B0  3B 60 00 00 */	li r27, 0
+lbl_8037C514:
+/* 8037C514 003781B4  7F A3 EB 78 */	mr r3, r29
+/* 8037C518 003781B8  48 05 F1 7D */	bl "OSCancelAlarm"
+/* 8037C51C 003781BC  7F 83 E3 78 */	mr r3, r28
+/* 8037C520 003781C0  48 05 F1 75 */	bl "OSCancelAlarm"
+/* 8037C524 003781C4  3B 7B 00 01 */	addi r27, r27, 1
+/* 8037C528 003781C8  3B 9C 00 30 */	addi r28, r28, 0x30
+/* 8037C52C 003781CC  2C 1B 00 04 */	cmpwi r27, 4
+/* 8037C530 003781D0  3B BD 00 30 */	addi r29, r29, 0x30
+/* 8037C534 003781D4  41 80 FF E0 */	blt lbl_8037C514
+/* 8037C538 003781D8  38 7E 05 98 */	addi r3, r30, 0x598
+/* 8037C53C 003781DC  48 05 F1 59 */	bl "OSCancelAlarm"
+/* 8037C540 003781E0  38 7E 02 08 */	addi r3, r30, 0x208
+/* 8037C544 003781E4  38 80 FF FF */	li r4, -1
+/* 8037C548 003781E8  48 00 EE 99 */	bl "__dt__Q36nw4hbm3lyt8DrawInfoFv"
+/* 8037C54C 003781EC  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037C550 003781F0  40 81 00 0C */	ble lbl_8037C55C
+/* 8037C554 003781F4  7F C3 F3 78 */	mr r3, r30
+/* 8037C558 003781F8  4B ED DA 55 */	bl "__dl__FPv"
+lbl_8037C55C:
+/* 8037C55C 003781FC  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037C560 00378200  7F C3 F3 78 */	mr r3, r30
+/* 8037C564 00378204  48 09 2E 5D */	bl "_restgpr_27"
+/* 8037C568 00378208  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037C56C 0037820C  7C 08 03 A6 */	mtlr r0
+/* 8037C570 00378210  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037C574 00378214  4E 80 00 20 */	blr 
+
+.global "__dt__Q36nw4hbm3lyt19ArcResourceAccessorFv"
+"__dt__Q36nw4hbm3lyt19ArcResourceAccessorFv":
+/* 8037C578 00378218  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C57C 0037821C  7C 08 02 A6 */	mflr r0
+/* 8037C580 00378220  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C584 00378224  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C588 00378228  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C58C 0037822C  7C 9F 23 78 */	mr r31, r4
+/* 8037C590 00378230  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037C594 00378234  7C 7E 1B 78 */	mr r30, r3
+/* 8037C598 00378238  41 82 00 2C */	beq lbl_8037C5C4
+/* 8037C59C 0037823C  38 80 FF FF */	li r4, -1
+/* 8037C5A0 00378240  38 63 00 24 */	addi r3, r3, 0x24
+/* 8037C5A4 00378244  48 00 00 3D */	bl "__dt__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv"
+/* 8037C5A8 00378248  7F C3 F3 78 */	mr r3, r30
+/* 8037C5AC 0037824C  38 80 00 00 */	li r4, 0
+/* 8037C5B0 00378250  48 01 73 19 */	bl "__dt__Q36nw4hbm3lyt16ResourceAccessorFv"
+/* 8037C5B4 00378254  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037C5B8 00378258  40 81 00 0C */	ble lbl_8037C5C4
+/* 8037C5BC 0037825C  7F C3 F3 78 */	mr r3, r30
+/* 8037C5C0 00378260  4B ED D9 ED */	bl "__dl__FPv"
+lbl_8037C5C4:
+/* 8037C5C4 00378264  7F C3 F3 78 */	mr r3, r30
+/* 8037C5C8 00378268  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C5CC 0037826C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037C5D0 00378270  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C5D4 00378274  7C 08 03 A6 */	mtlr r0
+/* 8037C5D8 00378278  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C5DC 0037827C  4E 80 00 20 */	blr 
+
+.global "__dt__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv"
+"__dt__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv":
+/* 8037C5E0 00378280  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C5E4 00378284  7C 08 02 A6 */	mflr r0
+/* 8037C5E8 00378288  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C5EC 0037828C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C5F0 00378290  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C5F4 00378294  7C 9F 23 78 */	mr r31, r4
+/* 8037C5F8 00378298  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037C5FC 0037829C  7C 7E 1B 78 */	mr r30, r3
+/* 8037C600 003782A0  41 82 00 1C */	beq lbl_8037C61C
+/* 8037C604 003782A4  38 80 00 00 */	li r4, 0
+/* 8037C608 003782A8  48 04 68 81 */	bl "__dt__Q46nw4hbm2ut6detail12LinkListImplFv"
+/* 8037C60C 003782AC  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037C610 003782B0  40 81 00 0C */	ble lbl_8037C61C
+/* 8037C614 003782B4  7F C3 F3 78 */	mr r3, r30
+/* 8037C618 003782B8  4B ED D9 95 */	bl "__dl__FPv"
+lbl_8037C61C:
+/* 8037C61C 003782BC  7F C3 F3 78 */	mr r3, r30
+/* 8037C620 003782C0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C624 003782C4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037C628 003782C8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C62C 003782CC  7C 08 03 A6 */	mtlr r0
+/* 8037C630 003782D0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C634 003782D4  4E 80 00 20 */	blr 
+
+.global "createInstance__Q210homebutton10HomeButtonFPC11HBMDataInfo"
+"createInstance__Q210homebutton10HomeButtonFPC11HBMDataInfo":
+/* 8037C638 003782D8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C63C 003782DC  7C 08 02 A6 */	mflr r0
+/* 8037C640 003782E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C644 003782E4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037C648 003782E8  7C 7F 1B 78 */	mr r31, r3
+/* 8037C64C 003782EC  38 60 07 68 */	li r3, 0x768
+/* 8037C650 003782F0  4B FF F8 85 */	bl "HBMAllocMem__FUl"
+/* 8037C654 003782F4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C658 003782F8  41 82 00 24 */	beq lbl_8037C67C
+/* 8037C65C 003782FC  7C 64 1B 78 */	mr r4, r3
+/* 8037C660 00378300  38 60 07 68 */	li r3, 0x768
+/* 8037C664 00378304  4B C9 DA DD */	bl "__nw__FUlPv"
+/* 8037C668 00378308  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C66C 0037830C  41 82 00 0C */	beq lbl_8037C678
+/* 8037C670 00378310  7F E4 FB 78 */	mr r4, r31
+/* 8037C674 00378314  4B FF FB 55 */	bl "__ct__Q210homebutton10HomeButtonFPC11HBMDataInfo"
+lbl_8037C678:
+/* 8037C678 00378318  90 6D C5 00 */	stw r3, "spHomeButtonObj__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+lbl_8037C67C:
+/* 8037C67C 0037831C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C680 00378320  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037C684 00378324  7C 08 03 A6 */	mtlr r0
+/* 8037C688 00378328  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C68C 0037832C  4E 80 00 20 */	blr 
+
+.global "deleteInstance__Q210homebutton10HomeButtonFv"
+"deleteInstance__Q210homebutton10HomeButtonFv":
+/* 8037C690 00378330  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037C694 00378334  7C 08 02 A6 */	mflr r0
+/* 8037C698 00378338  38 80 FF FF */	li r4, -1
+/* 8037C69C 0037833C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037C6A0 00378340  80 6D C5 00 */	lwz r3, "spHomeButtonObj__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037C6A4 00378344  4B FF FC 7D */	bl "__dt__Q210homebutton10HomeButtonFv"
+/* 8037C6A8 00378348  80 6D C5 00 */	lwz r3, "spHomeButtonObj__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037C6AC 0037834C  4B FF F8 35 */	bl "HBMFreeMem__FPv"
+/* 8037C6B0 00378350  38 00 00 00 */	li r0, 0
+/* 8037C6B4 00378354  90 0D C5 00 */	stw r0, "spHomeButtonObj__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037C6B8 00378358  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037C6BC 0037835C  7C 08 03 A6 */	mtlr r0
+/* 8037C6C0 00378360  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037C6C4 00378364  4E 80 00 20 */	blr 
+
+.global "getInstance__Q210homebutton10HomeButtonFv"
+"getInstance__Q210homebutton10HomeButtonFv":
+/* 8037C6C8 00378368  80 6D C5 00 */	lwz r3, "spHomeButtonObj__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037C6CC 0037836C  4E 80 00 20 */	blr 
+
+.global "create__Q210homebutton10HomeButtonFv"
+"create__Q210homebutton10HomeButtonFv":
+/* 8037C6D0 00378370  94 21 FF 10 */	stwu r1, -0xf0(r1)
+/* 8037C6D4 00378374  7C 08 02 A6 */	mflr r0
+/* 8037C6D8 00378378  90 01 00 F4 */	stw r0, 0xf4(r1)
+/* 8037C6DC 0037837C  39 61 00 F0 */	addi r11, r1, 0xf0
+/* 8037C6E0 00378380  48 09 2C 89 */	bl "_savegpr_24"
+/* 8037C6E4 00378384  38 00 00 00 */	li r0, 0
+/* 8037C6E8 00378388  3F C0 80 47 */	lis r30, lbl_80468288@ha
+/* 8037C6EC 0037838C  98 03 00 8B */	stb r0, 0x8b(r3)
+/* 8037C6F0 00378390  7C 7A 1B 78 */	mr r26, r3
+/* 8037C6F4 00378394  3B DE 82 88 */	addi r30, r30, lbl_80468288@l
+/* 8037C6F8 00378398  98 03 00 8C */	stb r0, 0x8c(r3)
+/* 8037C6FC 0037839C  98 03 00 8D */	stb r0, 0x8d(r3)
+/* 8037C700 003783A0  48 00 0F 29 */	bl "set_config__Q210homebutton10HomeButtonFv"
+/* 8037C704 003783A4  7F 43 D3 78 */	mr r3, r26
+/* 8037C708 003783A8  48 00 10 81 */	bl "set_text__Q210homebutton10HomeButtonFv"
+/* 8037C70C 003783AC  38 60 00 B0 */	li r3, 0xb0
+/* 8037C710 003783B0  4B FF F7 C5 */	bl "HBMAllocMem__FUl"
+/* 8037C714 003783B4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C718 003783B8  41 82 00 20 */	beq lbl_8037C738
+/* 8037C71C 003783BC  7C 64 1B 78 */	mr r4, r3
+/* 8037C720 003783C0  38 60 00 B0 */	li r3, 0xb0
+/* 8037C724 003783C4  4B C9 DA 1D */	bl "__nw__FUlPv"
+/* 8037C728 003783C8  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C72C 003783CC  41 82 00 08 */	beq lbl_8037C734
+/* 8037C730 003783D0  48 00 D8 81 */	bl "__ct__Q36nw4hbm3lyt19ArcResourceAccessorFv"
+lbl_8037C734:
+/* 8037C734 003783D4  90 7A 01 FC */	stw r3, 0x1fc(r26)
+lbl_8037C738:
+/* 8037C738 003783D8  80 1A 01 FC */	lwz r0, 0x1fc(r26)
+/* 8037C73C 003783DC  2C 00 00 00 */	cmpwi r0, 0
+/* 8037C740 003783E0  40 82 00 18 */	bne lbl_8037C758
+/* 8037C744 003783E4  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037C748 003783E8  38 BE 0B 30 */	addi r5, r30, 0xb30
+/* 8037C74C 003783EC  38 80 02 75 */	li r4, 0x275
+/* 8037C750 003783F0  4C C6 31 82 */	crclr 6
+/* 8037C754 003783F4  48 00 98 81 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037C758:
+/* 8037C758 003783F8  80 9A 00 04 */	lwz r4, 4(r26)
+/* 8037C75C 003783FC  38 AD AD 88 */	addi r5, r13, lbl_805D7468-_SDA_BASE_
+/* 8037C760 00378400  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037C764 00378404  80 84 00 00 */	lwz r4, 0(r4)
+/* 8037C768 00378408  48 00 D9 1D */	bl "Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc"
+/* 8037C76C 0037840C  80 7A 00 04 */	lwz r3, 4(r26)
+/* 8037C770 00378410  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037C774 00378414  2C 00 00 00 */	cmpwi r0, 0
+/* 8037C778 00378418  40 82 00 AC */	bne lbl_8037C824
+/* 8037C77C 0037841C  7F 59 D3 78 */	mr r25, r26
+/* 8037C780 00378420  3B 7E 00 D0 */	addi r27, r30, 0xd0
+/* 8037C784 00378424  3B 80 00 00 */	li r28, 0
+lbl_8037C788:
+/* 8037C788 00378428  38 60 00 24 */	li r3, 0x24
+/* 8037C78C 0037842C  4B FF F7 49 */	bl "HBMAllocMem__FUl"
+/* 8037C790 00378430  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C794 00378434  41 82 00 20 */	beq lbl_8037C7B4
+/* 8037C798 00378438  7C 64 1B 78 */	mr r4, r3
+/* 8037C79C 0037843C  38 60 00 24 */	li r3, 0x24
+/* 8037C7A0 00378440  4B C9 D9 A1 */	bl "__nw__FUlPv"
+/* 8037C7A4 00378444  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C7A8 00378448  41 82 00 08 */	beq lbl_8037C7B0
+/* 8037C7AC 0037844C  48 00 F7 D9 */	bl "__ct__Q36nw4hbm3lyt6LayoutFv"
+lbl_8037C7B0:
+/* 8037C7B0 00378450  90 79 01 EC */	stw r3, 0x1ec(r25)
+lbl_8037C7B4:
+/* 8037C7B4 00378454  80 19 01 EC */	lwz r0, 0x1ec(r25)
+/* 8037C7B8 00378458  2C 00 00 00 */	cmpwi r0, 0
+/* 8037C7BC 0037845C  40 82 00 18 */	bne lbl_8037C7D4
+/* 8037C7C0 00378460  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037C7C4 00378464  38 BE 0B 58 */	addi r5, r30, 0xb58
+/* 8037C7C8 00378468  38 80 02 81 */	li r4, 0x281
+/* 8037C7CC 0037846C  4C C6 31 82 */	crclr 6
+/* 8037C7D0 00378470  48 00 98 05 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037C7D4:
+/* 8037C7D4 00378474  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037C7D8 00378478  38 80 00 00 */	li r4, 0
+/* 8037C7DC 0037847C  80 BB 00 00 */	lwz r5, 0(r27)
+/* 8037C7E0 00378480  38 C0 00 00 */	li r6, 0
+/* 8037C7E4 00378484  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C7E8 00378488  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037C7EC 0037848C  7D 89 03 A6 */	mtctr r12
+/* 8037C7F0 00378490  4E 80 04 21 */	bctrl 
+/* 8037C7F4 00378494  7C 64 1B 78 */	mr r4, r3
+/* 8037C7F8 00378498  80 79 01 EC */	lwz r3, 0x1ec(r25)
+/* 8037C7FC 0037849C  80 BA 01 FC */	lwz r5, 0x1fc(r26)
+/* 8037C800 003784A0  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C804 003784A4  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037C808 003784A8  7D 89 03 A6 */	mtctr r12
+/* 8037C80C 003784AC  4E 80 04 21 */	bctrl 
+/* 8037C810 003784B0  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037C814 003784B4  3B 7B 00 04 */	addi r27, r27, 4
+/* 8037C818 003784B8  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037C81C 003784BC  3B 39 00 04 */	addi r25, r25, 4
+/* 8037C820 003784C0  41 80 FF 68 */	blt lbl_8037C788
+lbl_8037C824:
+/* 8037C824 003784C4  38 60 00 24 */	li r3, 0x24
+/* 8037C828 003784C8  4B FF F6 AD */	bl "HBMAllocMem__FUl"
+/* 8037C82C 003784CC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C830 003784D0  41 82 00 20 */	beq lbl_8037C850
+/* 8037C834 003784D4  7C 64 1B 78 */	mr r4, r3
+/* 8037C838 003784D8  38 60 00 24 */	li r3, 0x24
+/* 8037C83C 003784DC  4B C9 D9 05 */	bl "__nw__FUlPv"
+/* 8037C840 003784E0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C844 003784E4  41 82 00 08 */	beq lbl_8037C84C
+/* 8037C848 003784E8  48 00 F7 3D */	bl "__ct__Q36nw4hbm3lyt6LayoutFv"
+lbl_8037C84C:
+/* 8037C84C 003784EC  90 7A 01 E8 */	stw r3, 0x1e8(r26)
+lbl_8037C850:
+/* 8037C850 003784F0  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037C854 003784F4  38 80 00 00 */	li r4, 0
+/* 8037C858 003784F8  80 BA 00 A8 */	lwz r5, 0xa8(r26)
+/* 8037C85C 003784FC  38 C0 00 00 */	li r6, 0
+/* 8037C860 00378500  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C864 00378504  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037C868 00378508  7D 89 03 A6 */	mtctr r12
+/* 8037C86C 0037850C  4E 80 04 21 */	bctrl 
+/* 8037C870 00378510  7C 64 1B 78 */	mr r4, r3
+/* 8037C874 00378514  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037C878 00378518  80 BA 01 FC */	lwz r5, 0x1fc(r26)
+/* 8037C87C 0037851C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C880 00378520  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037C884 00378524  7D 89 03 A6 */	mtctr r12
+/* 8037C888 00378528  4E 80 04 21 */	bctrl 
+/* 8037C88C 0037852C  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037C890 00378530  48 00 0D 61 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037C894 00378534  7C 79 1B 78 */	mr r25, r3
+/* 8037C898 00378538  48 00 0D 51 */	bl "GetChildList__Q36nw4hbm3lyt4PaneFv"
+/* 8037C89C 0037853C  48 00 0D 19 */	bl "GetBeginIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
+/* 8037C8A0 00378540  90 61 00 34 */	stw r3, 0x34(r1)
+/* 8037C8A4 00378544  38 61 00 44 */	addi r3, r1, 0x44
+/* 8037C8A8 00378548  38 81 00 34 */	addi r4, r1, 0x34
+/* 8037C8AC 0037854C  48 00 0C D9 */	bl "__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFRCQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+/* 8037C8B0 00378550  48 00 00 50 */	b lbl_8037C900
+lbl_8037C8B4:
+/* 8037C8B4 00378554  38 61 00 44 */	addi r3, r1, 0x44
+/* 8037C8B8 00378558  48 00 0C 59 */	bl "__rf__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorCFv"
+/* 8037C8BC 0037855C  48 00 0C 4D */	bl "GetName__Q36nw4hbm3lyt4PaneCFv"
+/* 8037C8C0 00378560  38 8D AD 90 */	addi r4, r13, lbl_805D7470-_SDA_BASE_
+/* 8037C8C4 00378564  48 08 BD 29 */	bl "strcmp"
+/* 8037C8C8 00378568  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C8CC 0037856C  40 82 00 2C */	bne lbl_8037C8F8
+/* 8037C8D0 00378570  C0 22 A6 80 */	lfs f1, lbl_805DB8A0-_SDA2_BASE_(r2)
+/* 8037C8D4 00378574  38 61 00 48 */	addi r3, r1, 0x48
+/* 8037C8D8 00378578  FC 40 08 90 */	fmr f2, f1
+/* 8037C8DC 0037857C  48 00 0C 21 */	bl "__ct__Q36nw4hbm4math4VEC2Fff"
+/* 8037C8E0 00378580  7C 79 1B 78 */	mr r25, r3
+/* 8037C8E4 00378584  38 61 00 44 */	addi r3, r1, 0x44
+/* 8037C8E8 00378588  48 00 0C 29 */	bl "__rf__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorCFv"
+/* 8037C8EC 0037858C  7F 24 CB 78 */	mr r4, r25
+/* 8037C8F0 00378590  48 00 0C 05 */	bl "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 8037C8F4 00378594  48 00 00 38 */	b lbl_8037C92C
+lbl_8037C8F8:
+/* 8037C8F8 00378598  38 61 00 44 */	addi r3, r1, 0x44
+/* 8037C8FC 0037859C  48 00 0B C9 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
+lbl_8037C900:
+/* 8037C900 003785A0  7F 23 CB 78 */	mr r3, r25
+/* 8037C904 003785A4  48 00 0C E5 */	bl "GetChildList__Q36nw4hbm3lyt4PaneFv"
+/* 8037C908 003785A8  48 00 0B 59 */	bl "GetEndIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
+/* 8037C90C 003785AC  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8037C910 003785B0  38 81 00 2C */	addi r4, r1, 0x2c
+/* 8037C914 003785B4  90 61 00 2C */	stw r3, 0x2c(r1)
+/* 8037C918 003785B8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8037C91C 003785BC  90 01 00 30 */	stw r0, 0x30(r1)
+/* 8037C920 003785C0  48 00 0A C9 */	bl "__ne__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+/* 8037C924 003785C4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C928 003785C8  40 82 FF 8C */	bne lbl_8037C8B4
+lbl_8037C92C:
+/* 8037C92C 003785CC  3F A0 80 42 */	lis r29, "scAnmTable__10homebutton"@ha
+/* 8037C930 003785D0  7F 5C D3 78 */	mr r28, r26
+/* 8037C934 003785D4  3B BD CC 08 */	addi r29, r29, "scAnmTable__10homebutton"@l
+/* 8037C938 003785D8  3B FE 02 2C */	addi r31, r30, 0x22c
+/* 8037C93C 003785DC  3B 3E 01 D0 */	addi r25, r30, 0x1d0
+/* 8037C940 003785E0  3B 60 00 00 */	li r27, 0
+/* 8037C944 003785E4  48 00 01 A4 */	b lbl_8037CAE8
+lbl_8037C948:
+/* 8037C948 003785E8  80 9A 00 AC */	lwz r4, 0xac(r26)
+/* 8037C94C 003785EC  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037C950 003785F0  48 08 BB 21 */	bl "strcpy"
+/* 8037C954 003785F4  80 1D 00 04 */	lwz r0, 4(r29)
+/* 8037C958 003785F8  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037C95C 003785FC  54 00 10 3A */	slwi r0, r0, 2
+/* 8037C960 00378600  7C 9F 00 2E */	lwzx r4, r31, r0
+/* 8037C964 00378604  48 08 BC 11 */	bl "strcat"
+/* 8037C968 00378608  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037C96C 0037860C  38 A1 00 88 */	addi r5, r1, 0x88
+/* 8037C970 00378610  38 80 00 00 */	li r4, 0
+/* 8037C974 00378614  38 C0 00 00 */	li r6, 0
+/* 8037C978 00378618  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037C97C 0037861C  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037C980 00378620  7D 89 03 A6 */	mtctr r12
+/* 8037C984 00378624  4E 80 04 21 */	bctrl 
+/* 8037C988 00378628  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C98C 0037862C  7C 78 1B 78 */	mr r24, r3
+/* 8037C990 00378630  40 82 00 18 */	bne lbl_8037C9A8
+/* 8037C994 00378634  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037C998 00378638  38 BE 0B 84 */	addi r5, r30, 0xb84
+/* 8037C99C 0037863C  38 80 02 AB */	li r4, 0x2ab
+/* 8037C9A0 00378640  4C C6 31 82 */	crclr 6
+/* 8037C9A4 00378644  48 00 96 31 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037C9A8:
+/* 8037C9A8 00378648  38 60 00 28 */	li r3, 0x28
+/* 8037C9AC 0037864C  4B FF F5 29 */	bl "HBMAllocMem__FUl"
+/* 8037C9B0 00378650  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C9B4 00378654  41 82 00 20 */	beq lbl_8037C9D4
+/* 8037C9B8 00378658  7C 64 1B 78 */	mr r4, r3
+/* 8037C9BC 0037865C  38 60 00 28 */	li r3, 0x28
+/* 8037C9C0 00378660  4B C9 D7 81 */	bl "__nw__FUlPv"
+/* 8037C9C4 00378664  2C 03 00 00 */	cmpwi r3, 0
+/* 8037C9C8 00378668  41 82 00 08 */	beq lbl_8037C9D0
+/* 8037C9CC 0037866C  4B FF F0 65 */	bl "__ct__Q210homebutton18GroupAnmControllerFv"
+lbl_8037C9D0:
+/* 8037C9D0 00378670  90 7C 02 70 */	stw r3, 0x270(r28)
+lbl_8037C9D4:
+/* 8037C9D4 00378674  80 1C 02 70 */	lwz r0, 0x270(r28)
+/* 8037C9D8 00378678  2C 00 00 00 */	cmpwi r0, 0
+/* 8037C9DC 0037867C  40 82 00 18 */	bne lbl_8037C9F4
+/* 8037C9E0 00378680  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037C9E4 00378684  38 BE 0B B0 */	addi r5, r30, 0xbb0
+/* 8037C9E8 00378688  38 80 02 B1 */	li r4, 0x2b1
+/* 8037C9EC 0037868C  4C C6 31 82 */	crclr 6
+/* 8037C9F0 00378690  48 00 95 E5 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037C9F4:
+/* 8037C9F4 00378694  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037C9F8 00378698  7F 04 C3 78 */	mr r4, r24
+/* 8037C9FC 0037869C  80 BA 01 FC */	lwz r5, 0x1fc(r26)
+/* 8037CA00 003786A0  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CA04 003786A4  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 8037CA08 003786A8  7D 89 03 A6 */	mtctr r12
+/* 8037CA0C 003786AC  4E 80 04 21 */	bctrl 
+/* 8037CA10 003786B0  80 9C 02 70 */	lwz r4, 0x270(r28)
+/* 8037CA14 003786B4  90 64 00 24 */	stw r3, 0x24(r4)
+/* 8037CA18 003786B8  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CA1C 003786BC  48 00 09 C5 */	bl "GetGroupContainer__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037CA20 003786C0  80 1D 00 00 */	lwz r0, 0(r29)
+/* 8037CA24 003786C4  54 00 10 3A */	slwi r0, r0, 2
+/* 8037CA28 003786C8  7C 99 00 2E */	lwzx r4, r25, r0
+/* 8037CA2C 003786CC  48 00 F3 F5 */	bl "FindGroupByName__Q36nw4hbm3lyt14GroupContainerFPCc"
+/* 8037CA30 003786D0  80 9C 02 70 */	lwz r4, 0x270(r28)
+/* 8037CA34 003786D4  90 64 00 20 */	stw r3, 0x20(r4)
+/* 8037CA38 003786D8  80 7C 02 70 */	lwz r3, 0x270(r28)
+/* 8037CA3C 003786DC  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8037CA40 003786E0  4B FF F4 85 */	bl "GetPaneList__Q36nw4hbm3lyt5GroupFv"
+/* 8037CA44 003786E4  7C 78 1B 78 */	mr r24, r3
+/* 8037CA48 003786E8  4B FF F4 15 */	bl "GetBeginIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CA4C 003786EC  90 61 00 28 */	stw r3, 0x28(r1)
+/* 8037CA50 003786F0  38 61 00 40 */	addi r3, r1, 0x40
+/* 8037CA54 003786F4  38 81 00 28 */	addi r4, r1, 0x28
+/* 8037CA58 003786F8  4B FF F3 D5 */	bl "__ct__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFRCQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CA5C 003786FC  48 00 00 34 */	b lbl_8037CA90
+lbl_8037CA60:
+/* 8037CA60 00378700  38 61 00 40 */	addi r3, r1, 0x40
+/* 8037CA64 00378704  4B FF F3 4D */	bl "__rf__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorCFv"
+/* 8037CA68 00378708  80 63 00 08 */	lwz r3, 8(r3)
+/* 8037CA6C 0037870C  38 A0 00 00 */	li r5, 0
+/* 8037CA70 00378710  80 9C 02 70 */	lwz r4, 0x270(r28)
+/* 8037CA74 00378714  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CA78 00378718  80 84 00 24 */	lwz r4, 0x24(r4)
+/* 8037CA7C 0037871C  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 8037CA80 00378720  7D 89 03 A6 */	mtctr r12
+/* 8037CA84 00378724  4E 80 04 21 */	bctrl 
+/* 8037CA88 00378728  38 61 00 40 */	addi r3, r1, 0x40
+/* 8037CA8C 0037872C  4B FF F2 B5 */	bl "__pp__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFv"
+lbl_8037CA90:
+/* 8037CA90 00378730  7F 03 C3 78 */	mr r3, r24
+/* 8037CA94 00378734  4B FF F2 05 */	bl "GetEndIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CA98 00378738  80 01 00 40 */	lwz r0, 0x40(r1)
+/* 8037CA9C 0037873C  38 81 00 20 */	addi r4, r1, 0x20
+/* 8037CAA0 00378740  90 61 00 20 */	stw r3, 0x20(r1)
+/* 8037CAA4 00378744  38 61 00 24 */	addi r3, r1, 0x24
+/* 8037CAA8 00378748  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037CAAC 0037874C  4B FF F1 5D */	bl "__ne__Q26nw4hbm2utFQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CAB0 00378750  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CAB4 00378754  40 82 FF AC */	bne lbl_8037CA60
+/* 8037CAB8 00378758  80 7C 02 70 */	lwz r3, 0x270(r28)
+/* 8037CABC 0037875C  80 63 00 24 */	lwz r3, 0x24(r3)
+/* 8037CAC0 00378760  48 00 08 E5 */	bl "GetFrameMax__Q36nw4hbm3lyt13AnimTransformCFv"
+/* 8037CAC4 00378764  80 BA 00 04 */	lwz r5, 4(r26)
+/* 8037CAC8 00378768  38 80 00 00 */	li r4, 0
+/* 8037CACC 0037876C  80 7C 02 70 */	lwz r3, 0x270(r28)
+/* 8037CAD0 00378770  C0 42 A6 84 */	lfs f2, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037CAD4 00378774  C0 65 00 30 */	lfs f3, 0x30(r5)
+/* 8037CAD8 00378778  48 00 6F 19 */	bl "init__Q210homebutton15FrameControllerFifff"
+/* 8037CADC 0037877C  3B BD 00 08 */	addi r29, r29, 8
+/* 8037CAE0 00378780  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037CAE4 00378784  3B 7B 00 01 */	addi r27, r27, 1
+lbl_8037CAE8:
+/* 8037CAE8 00378788  80 1A 00 0C */	lwz r0, 0xc(r26)
+/* 8037CAEC 0037878C  7C 1B 00 00 */	cmpw r27, r0
+/* 8037CAF0 00378790  41 80 FE 58 */	blt lbl_8037C948
+/* 8037CAF4 00378794  3F E0 80 42 */	lis r31, "scGroupAnmTable__10homebutton"@ha
+/* 8037CAF8 00378798  7F 5D D3 78 */	mr r29, r26
+/* 8037CAFC 0037879C  3B FF CC 68 */	addi r31, r31, "scGroupAnmTable__10homebutton"@l
+/* 8037CB00 003787A0  3B 3E 06 90 */	addi r25, r30, 0x690
+/* 8037CB04 003787A4  3B 7E 08 48 */	addi r27, r30, 0x848
+/* 8037CB08 003787A8  3B 80 00 00 */	li r28, 0
+lbl_8037CB0C:
+/* 8037CB0C 003787AC  80 9A 00 AC */	lwz r4, 0xac(r26)
+/* 8037CB10 003787B0  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037CB14 003787B4  48 08 B9 5D */	bl "strcpy"
+/* 8037CB18 003787B8  80 1F 00 04 */	lwz r0, 4(r31)
+/* 8037CB1C 003787BC  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037CB20 003787C0  54 00 10 3A */	slwi r0, r0, 2
+/* 8037CB24 003787C4  7C 99 00 2E */	lwzx r4, r25, r0
+/* 8037CB28 003787C8  48 08 BA 4D */	bl "strcat"
+/* 8037CB2C 003787CC  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037CB30 003787D0  38 A1 00 88 */	addi r5, r1, 0x88
+/* 8037CB34 003787D4  38 80 00 00 */	li r4, 0
+/* 8037CB38 003787D8  38 C0 00 00 */	li r6, 0
+/* 8037CB3C 003787DC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CB40 003787E0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037CB44 003787E4  7D 89 03 A6 */	mtctr r12
+/* 8037CB48 003787E8  4E 80 04 21 */	bctrl 
+/* 8037CB4C 003787EC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CB50 003787F0  7C 78 1B 78 */	mr r24, r3
+/* 8037CB54 003787F4  40 82 00 18 */	bne lbl_8037CB6C
+/* 8037CB58 003787F8  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CB5C 003787FC  38 BE 0B 84 */	addi r5, r30, 0xb84
+/* 8037CB60 00378800  38 80 02 CB */	li r4, 0x2cb
+/* 8037CB64 00378804  4C C6 31 82 */	crclr 6
+/* 8037CB68 00378808  48 00 94 6D */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CB6C:
+/* 8037CB6C 0037880C  38 60 00 28 */	li r3, 0x28
+/* 8037CB70 00378810  4B FF F3 65 */	bl "HBMAllocMem__FUl"
+/* 8037CB74 00378814  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CB78 00378818  41 82 00 20 */	beq lbl_8037CB98
+/* 8037CB7C 0037881C  7C 64 1B 78 */	mr r4, r3
+/* 8037CB80 00378820  38 60 00 28 */	li r3, 0x28
+/* 8037CB84 00378824  4B C9 D5 BD */	bl "__nw__FUlPv"
+/* 8037CB88 00378828  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CB8C 0037882C  41 82 00 08 */	beq lbl_8037CB94
+/* 8037CB90 00378830  4B FF EE A1 */	bl "__ct__Q210homebutton18GroupAnmControllerFv"
+lbl_8037CB94:
+/* 8037CB94 00378834  90 7D 02 A0 */	stw r3, 0x2a0(r29)
+lbl_8037CB98:
+/* 8037CB98 00378838  80 1D 02 A0 */	lwz r0, 0x2a0(r29)
+/* 8037CB9C 0037883C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037CBA0 00378840  40 82 00 18 */	bne lbl_8037CBB8
+/* 8037CBA4 00378844  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CBA8 00378848  38 BE 0B E0 */	addi r5, r30, 0xbe0
+/* 8037CBAC 0037884C  38 80 02 D1 */	li r4, 0x2d1
+/* 8037CBB0 00378850  4C C6 31 82 */	crclr 6
+/* 8037CBB4 00378854  48 00 94 21 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CBB8:
+/* 8037CBB8 00378858  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CBBC 0037885C  7F 04 C3 78 */	mr r4, r24
+/* 8037CBC0 00378860  80 BA 01 FC */	lwz r5, 0x1fc(r26)
+/* 8037CBC4 00378864  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CBC8 00378868  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 8037CBCC 0037886C  7D 89 03 A6 */	mtctr r12
+/* 8037CBD0 00378870  4E 80 04 21 */	bctrl 
+/* 8037CBD4 00378874  80 9D 02 A0 */	lwz r4, 0x2a0(r29)
+/* 8037CBD8 00378878  90 64 00 24 */	stw r3, 0x24(r4)
+/* 8037CBDC 0037887C  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CBE0 00378880  48 00 08 01 */	bl "GetGroupContainer__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037CBE4 00378884  80 1F 00 00 */	lwz r0, 0(r31)
+/* 8037CBE8 00378888  54 00 10 3A */	slwi r0, r0, 2
+/* 8037CBEC 0037888C  7C 9B 00 2E */	lwzx r4, r27, r0
+/* 8037CBF0 00378890  48 00 F2 31 */	bl "FindGroupByName__Q36nw4hbm3lyt14GroupContainerFPCc"
+/* 8037CBF4 00378894  80 9D 02 A0 */	lwz r4, 0x2a0(r29)
+/* 8037CBF8 00378898  90 64 00 20 */	stw r3, 0x20(r4)
+/* 8037CBFC 0037889C  80 7D 02 A0 */	lwz r3, 0x2a0(r29)
+/* 8037CC00 003788A0  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8037CC04 003788A4  4B FF F2 C1 */	bl "GetPaneList__Q36nw4hbm3lyt5GroupFv"
+/* 8037CC08 003788A8  7C 78 1B 78 */	mr r24, r3
+/* 8037CC0C 003788AC  4B FF F2 51 */	bl "GetBeginIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CC10 003788B0  90 61 00 1C */	stw r3, 0x1c(r1)
+/* 8037CC14 003788B4  38 61 00 3C */	addi r3, r1, 0x3c
+/* 8037CC18 003788B8  38 81 00 1C */	addi r4, r1, 0x1c
+/* 8037CC1C 003788BC  4B FF F2 11 */	bl "__ct__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFRCQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CC20 003788C0  48 00 00 34 */	b lbl_8037CC54
+lbl_8037CC24:
+/* 8037CC24 003788C4  38 61 00 3C */	addi r3, r1, 0x3c
+/* 8037CC28 003788C8  4B FF F1 89 */	bl "__rf__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorCFv"
+/* 8037CC2C 003788CC  80 63 00 08 */	lwz r3, 8(r3)
+/* 8037CC30 003788D0  38 A0 00 00 */	li r5, 0
+/* 8037CC34 003788D4  80 9D 02 A0 */	lwz r4, 0x2a0(r29)
+/* 8037CC38 003788D8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CC3C 003788DC  80 84 00 24 */	lwz r4, 0x24(r4)
+/* 8037CC40 003788E0  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 8037CC44 003788E4  7D 89 03 A6 */	mtctr r12
+/* 8037CC48 003788E8  4E 80 04 21 */	bctrl 
+/* 8037CC4C 003788EC  38 61 00 3C */	addi r3, r1, 0x3c
+/* 8037CC50 003788F0  4B FF F0 F1 */	bl "__pp__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFv"
+lbl_8037CC54:
+/* 8037CC54 003788F4  7F 03 C3 78 */	mr r3, r24
+/* 8037CC58 003788F8  4B FF F0 41 */	bl "GetEndIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CC5C 003788FC  80 01 00 3C */	lwz r0, 0x3c(r1)
+/* 8037CC60 00378900  38 81 00 14 */	addi r4, r1, 0x14
+/* 8037CC64 00378904  90 61 00 14 */	stw r3, 0x14(r1)
+/* 8037CC68 00378908  38 61 00 18 */	addi r3, r1, 0x18
+/* 8037CC6C 0037890C  90 01 00 18 */	stw r0, 0x18(r1)
+/* 8037CC70 00378910  4B FF EF 99 */	bl "__ne__Q26nw4hbm2utFQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CC74 00378914  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CC78 00378918  40 82 FF AC */	bne lbl_8037CC24
+/* 8037CC7C 0037891C  80 7D 02 A0 */	lwz r3, 0x2a0(r29)
+/* 8037CC80 00378920  80 63 00 24 */	lwz r3, 0x24(r3)
+/* 8037CC84 00378924  48 00 07 21 */	bl "GetFrameMax__Q36nw4hbm3lyt13AnimTransformCFv"
+/* 8037CC88 00378928  80 BA 00 04 */	lwz r5, 4(r26)
+/* 8037CC8C 0037892C  38 80 00 00 */	li r4, 0
+/* 8037CC90 00378930  80 7D 02 A0 */	lwz r3, 0x2a0(r29)
+/* 8037CC94 00378934  C0 42 A6 84 */	lfs f2, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037CC98 00378938  C0 65 00 30 */	lfs f3, 0x30(r5)
+/* 8037CC9C 0037893C  48 00 6D 55 */	bl "init__Q210homebutton15FrameControllerFifff"
+/* 8037CCA0 00378940  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037CCA4 00378944  3B BD 00 04 */	addi r29, r29, 4
+/* 8037CCA8 00378948  2C 1C 00 4A */	cmpwi r28, 0x4a
+/* 8037CCAC 0037894C  3B FF 00 08 */	addi r31, r31, 8
+/* 8037CCB0 00378950  41 80 FE 5C */	blt lbl_8037CB0C
+/* 8037CCB4 00378954  7F 5B D3 78 */	mr r27, r26
+/* 8037CCB8 00378958  3B 3E 03 70 */	addi r25, r30, 0x370
+/* 8037CCBC 0037895C  3B 9E 04 80 */	addi r28, r30, 0x480
+/* 8037CCC0 00378960  3B A0 00 00 */	li r29, 0
+lbl_8037CCC4:
+/* 8037CCC4 00378964  80 9A 00 AC */	lwz r4, 0xac(r26)
+/* 8037CCC8 00378968  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037CCCC 0037896C  48 08 B7 A5 */	bl "strcpy"
+/* 8037CCD0 00378970  80 99 00 00 */	lwz r4, 0(r25)
+/* 8037CCD4 00378974  38 61 00 88 */	addi r3, r1, 0x88
+/* 8037CCD8 00378978  48 08 B8 9D */	bl "strcat"
+/* 8037CCDC 0037897C  80 7A 01 FC */	lwz r3, 0x1fc(r26)
+/* 8037CCE0 00378980  38 A1 00 88 */	addi r5, r1, 0x88
+/* 8037CCE4 00378984  38 80 00 00 */	li r4, 0
+/* 8037CCE8 00378988  38 C0 00 00 */	li r6, 0
+/* 8037CCEC 0037898C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CCF0 00378990  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037CCF4 00378994  7D 89 03 A6 */	mtctr r12
+/* 8037CCF8 00378998  4E 80 04 21 */	bctrl 
+/* 8037CCFC 0037899C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CD00 003789A0  7C 78 1B 78 */	mr r24, r3
+/* 8037CD04 003789A4  40 82 00 18 */	bne lbl_8037CD1C
+/* 8037CD08 003789A8  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CD0C 003789AC  38 BE 0B 84 */	addi r5, r30, 0xb84
+/* 8037CD10 003789B0  38 80 02 EB */	li r4, 0x2eb
+/* 8037CD14 003789B4  4C C6 31 82 */	crclr 6
+/* 8037CD18 003789B8  48 00 92 BD */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CD1C:
+/* 8037CD1C 003789BC  38 60 00 28 */	li r3, 0x28
+/* 8037CD20 003789C0  4B FF F1 B5 */	bl "HBMAllocMem__FUl"
+/* 8037CD24 003789C4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CD28 003789C8  41 82 00 20 */	beq lbl_8037CD48
+/* 8037CD2C 003789CC  7C 64 1B 78 */	mr r4, r3
+/* 8037CD30 003789D0  38 60 00 28 */	li r3, 0x28
+/* 8037CD34 003789D4  4B C9 D4 0D */	bl "__nw__FUlPv"
+/* 8037CD38 003789D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CD3C 003789DC  41 82 00 08 */	beq lbl_8037CD44
+/* 8037CD40 003789E0  4B FF EC F1 */	bl "__ct__Q210homebutton18GroupAnmControllerFv"
+lbl_8037CD44:
+/* 8037CD44 003789E4  90 7B 03 C8 */	stw r3, 0x3c8(r27)
+lbl_8037CD48:
+/* 8037CD48 003789E8  80 1B 03 C8 */	lwz r0, 0x3c8(r27)
+/* 8037CD4C 003789EC  2C 00 00 00 */	cmpwi r0, 0
+/* 8037CD50 003789F0  40 82 00 18 */	bne lbl_8037CD68
+/* 8037CD54 003789F4  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CD58 003789F8  38 BE 0C 10 */	addi r5, r30, 0xc10
+/* 8037CD5C 003789FC  38 80 02 F1 */	li r4, 0x2f1
+/* 8037CD60 00378A00  4C C6 31 82 */	crclr 6
+/* 8037CD64 00378A04  48 00 92 71 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CD68:
+/* 8037CD68 00378A08  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CD6C 00378A0C  7F 04 C3 78 */	mr r4, r24
+/* 8037CD70 00378A10  80 BA 01 FC */	lwz r5, 0x1fc(r26)
+/* 8037CD74 00378A14  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CD78 00378A18  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 8037CD7C 00378A1C  7D 89 03 A6 */	mtctr r12
+/* 8037CD80 00378A20  4E 80 04 21 */	bctrl 
+/* 8037CD84 00378A24  80 9B 03 C8 */	lwz r4, 0x3c8(r27)
+/* 8037CD88 00378A28  90 64 00 24 */	stw r3, 0x24(r4)
+/* 8037CD8C 00378A2C  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CD90 00378A30  48 00 06 51 */	bl "GetGroupContainer__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037CD94 00378A34  80 9C 00 00 */	lwz r4, 0(r28)
+/* 8037CD98 00378A38  48 00 F0 89 */	bl "FindGroupByName__Q36nw4hbm3lyt14GroupContainerFPCc"
+/* 8037CD9C 00378A3C  80 9B 03 C8 */	lwz r4, 0x3c8(r27)
+/* 8037CDA0 00378A40  90 64 00 20 */	stw r3, 0x20(r4)
+/* 8037CDA4 00378A44  80 7B 03 C8 */	lwz r3, 0x3c8(r27)
+/* 8037CDA8 00378A48  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8037CDAC 00378A4C  4B FF F1 19 */	bl "GetPaneList__Q36nw4hbm3lyt5GroupFv"
+/* 8037CDB0 00378A50  7C 78 1B 78 */	mr r24, r3
+/* 8037CDB4 00378A54  4B FF F0 A9 */	bl "GetBeginIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CDB8 00378A58  90 61 00 10 */	stw r3, 0x10(r1)
+/* 8037CDBC 00378A5C  38 61 00 38 */	addi r3, r1, 0x38
+/* 8037CDC0 00378A60  38 81 00 10 */	addi r4, r1, 0x10
+/* 8037CDC4 00378A64  4B FF F0 69 */	bl "__ct__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFRCQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CDC8 00378A68  48 00 00 34 */	b lbl_8037CDFC
+lbl_8037CDCC:
+/* 8037CDCC 00378A6C  38 61 00 38 */	addi r3, r1, 0x38
+/* 8037CDD0 00378A70  4B FF EF E1 */	bl "__rf__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorCFv"
+/* 8037CDD4 00378A74  80 63 00 08 */	lwz r3, 8(r3)
+/* 8037CDD8 00378A78  38 A0 00 00 */	li r5, 0
+/* 8037CDDC 00378A7C  80 9B 03 C8 */	lwz r4, 0x3c8(r27)
+/* 8037CDE0 00378A80  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CDE4 00378A84  80 84 00 24 */	lwz r4, 0x24(r4)
+/* 8037CDE8 00378A88  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 8037CDEC 00378A8C  7D 89 03 A6 */	mtctr r12
+/* 8037CDF0 00378A90  4E 80 04 21 */	bctrl 
+/* 8037CDF4 00378A94  38 61 00 38 */	addi r3, r1, 0x38
+/* 8037CDF8 00378A98  4B FF EF 49 */	bl "__pp__Q46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorFv"
+lbl_8037CDFC:
+/* 8037CDFC 00378A9C  7F 03 C3 78 */	mr r3, r24
+/* 8037CE00 00378AA0  4B FF EE 99 */	bl "GetEndIter__Q36nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>Fv"
+/* 8037CE04 00378AA4  80 01 00 38 */	lwz r0, 0x38(r1)
+/* 8037CE08 00378AA8  38 81 00 08 */	addi r4, r1, 8
+/* 8037CE0C 00378AAC  90 61 00 08 */	stw r3, 8(r1)
+/* 8037CE10 00378AB0  38 61 00 0C */	addi r3, r1, 0xc
+/* 8037CE14 00378AB4  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8037CE18 00378AB8  4B FF ED F1 */	bl "__ne__Q26nw4hbm2utFQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8IteratorQ46nw4hbm2ut41LinkList<Q46nw4hbm3lyt6detail8PaneLink,0>8Iterator"
+/* 8037CE1C 00378ABC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CE20 00378AC0  40 82 FF AC */	bne lbl_8037CDCC
+/* 8037CE24 00378AC4  80 7B 03 C8 */	lwz r3, 0x3c8(r27)
+/* 8037CE28 00378AC8  80 63 00 24 */	lwz r3, 0x24(r3)
+/* 8037CE2C 00378ACC  48 00 05 79 */	bl "GetFrameMax__Q36nw4hbm3lyt13AnimTransformCFv"
+/* 8037CE30 00378AD0  80 BA 00 04 */	lwz r5, 4(r26)
+/* 8037CE34 00378AD4  38 80 00 00 */	li r4, 0
+/* 8037CE38 00378AD8  80 7B 03 C8 */	lwz r3, 0x3c8(r27)
+/* 8037CE3C 00378ADC  C0 42 A6 84 */	lfs f2, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037CE40 00378AE0  C0 65 00 30 */	lfs f3, 0x30(r5)
+/* 8037CE44 00378AE4  48 00 6B AD */	bl "init__Q210homebutton15FrameControllerFifff"
+/* 8037CE48 00378AE8  3B BD 00 01 */	addi r29, r29, 1
+/* 8037CE4C 00378AEC  3B 7B 00 04 */	addi r27, r27, 4
+/* 8037CE50 00378AF0  2C 1D 00 0F */	cmpwi r29, 0xf
+/* 8037CE54 00378AF4  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037CE58 00378AF8  3B 39 00 04 */	addi r25, r25, 4
+/* 8037CE5C 00378AFC  41 80 FE 68 */	blt lbl_8037CCC4
+/* 8037CE60 00378B00  38 60 00 0C */	li r3, 0xc
+/* 8037CE64 00378B04  4B FF F0 71 */	bl "HBMAllocMem__FUl"
+/* 8037CE68 00378B08  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CE6C 00378B0C  41 82 00 24 */	beq lbl_8037CE90
+/* 8037CE70 00378B10  7C 64 1B 78 */	mr r4, r3
+/* 8037CE74 00378B14  38 60 00 0C */	li r3, 0xc
+/* 8037CE78 00378B18  4B C9 D2 C9 */	bl "__nw__FUlPv"
+/* 8037CE7C 00378B1C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CE80 00378B20  41 82 00 0C */	beq lbl_8037CE8C
+/* 8037CE84 00378B24  7F 44 D3 78 */	mr r4, r26
+/* 8037CE88 00378B28  48 00 04 C1 */	bl "__ct__Q210homebutton22HomeButtonEventHandlerFPQ210homebutton10HomeButton"
+lbl_8037CE8C:
+/* 8037CE8C 00378B2C  90 7A 02 04 */	stw r3, 0x204(r26)
+lbl_8037CE90:
+/* 8037CE90 00378B30  80 1A 02 04 */	lwz r0, 0x204(r26)
+/* 8037CE94 00378B34  2C 00 00 00 */	cmpwi r0, 0
+/* 8037CE98 00378B38  40 82 00 18 */	bne lbl_8037CEB0
+/* 8037CE9C 00378B3C  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CEA0 00378B40  38 BE 0C 44 */	addi r5, r30, 0xc44
+/* 8037CEA4 00378B44  38 80 03 08 */	li r4, 0x308
+/* 8037CEA8 00378B48  4C C6 31 82 */	crclr 6
+/* 8037CEAC 00378B4C  48 00 91 29 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CEB0:
+/* 8037CEB0 00378B50  38 60 00 2C */	li r3, 0x2c
+/* 8037CEB4 00378B54  4B FF F0 21 */	bl "HBMAllocMem__FUl"
+/* 8037CEB8 00378B58  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CEBC 00378B5C  41 82 00 2C */	beq lbl_8037CEE8
+/* 8037CEC0 00378B60  7C 64 1B 78 */	mr r4, r3
+/* 8037CEC4 00378B64  38 60 00 2C */	li r3, 0x2c
+/* 8037CEC8 00378B68  4B C9 D2 79 */	bl "__nw__FUlPv"
+/* 8037CECC 00378B6C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CED0 00378B70  41 82 00 14 */	beq lbl_8037CEE4
+/* 8037CED4 00378B74  80 9A 02 04 */	lwz r4, 0x204(r26)
+/* 8037CED8 00378B78  38 A0 00 00 */	li r5, 0
+/* 8037CEDC 00378B7C  80 CD AC DC */	lwz r6, "spAllocator"-_SDA_BASE_(r13)
+/* 8037CEE0 00378B80  48 00 03 2D */	bl "__ct__Q310homebutton3gui11PaneManagerFPQ310homebutton3gui12EventHandlerPCQ36nw4hbm3lyt8DrawInfoP12MEMAllocator"
+lbl_8037CEE4:
+/* 8037CEE4 00378B84  90 7A 02 00 */	stw r3, 0x200(r26)
+lbl_8037CEE8:
+/* 8037CEE8 00378B88  80 1A 02 00 */	lwz r0, 0x200(r26)
+/* 8037CEEC 00378B8C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037CEF0 00378B90  40 82 00 18 */	bne lbl_8037CF08
+/* 8037CEF4 00378B94  38 7E 00 48 */	addi r3, r30, 0x48
+/* 8037CEF8 00378B98  38 BE 0C 78 */	addi r5, r30, 0xc78
+/* 8037CEFC 00378B9C  38 80 03 0F */	li r4, 0x30f
+/* 8037CF00 00378BA0  4C C6 31 82 */	crclr 6
+/* 8037CF04 00378BA4  48 00 90 D1 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037CF08:
+/* 8037CF08 00378BA8  80 7A 02 00 */	lwz r3, 0x200(r26)
+/* 8037CF0C 00378BAC  80 9A 01 E8 */	lwz r4, 0x1e8(r26)
+/* 8037CF10 00378BB0  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CF14 00378BB4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037CF18 00378BB8  7D 89 03 A6 */	mtctr r12
+/* 8037CF1C 00378BBC  4E 80 04 21 */	bctrl 
+/* 8037CF20 00378BC0  80 7A 02 00 */	lwz r3, 0x200(r26)
+/* 8037CF24 00378BC4  38 80 00 00 */	li r4, 0
+/* 8037CF28 00378BC8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CF2C 00378BCC  81 8C 00 34 */	lwz r12, 0x34(r12)
+/* 8037CF30 00378BD0  7D 89 03 A6 */	mtctr r12
+/* 8037CF34 00378BD4  4E 80 04 21 */	bctrl 
+/* 8037CF38 00378BD8  3B 3E 01 10 */	addi r25, r30, 0x110
+/* 8037CF3C 00378BDC  3B 60 00 00 */	li r27, 0
+/* 8037CF40 00378BE0  48 00 00 58 */	b lbl_8037CF98
+lbl_8037CF44:
+/* 8037CF44 00378BE4  80 7A 01 E8 */	lwz r3, 0x1e8(r26)
+/* 8037CF48 00378BE8  48 00 06 A9 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037CF4C 00378BEC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CF50 00378BF0  38 A0 00 01 */	li r5, 1
+/* 8037CF54 00378BF4  80 99 00 00 */	lwz r4, 0(r25)
+/* 8037CF58 00378BF8  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037CF5C 00378BFC  7D 89 03 A6 */	mtctr r12
+/* 8037CF60 00378C00  4E 80 04 21 */	bctrl 
+/* 8037CF64 00378C04  7C 64 1B 78 */	mr r4, r3
+/* 8037CF68 00378C08  80 7A 02 00 */	lwz r3, 0x200(r26)
+/* 8037CF6C 00378C0C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CF70 00378C10  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 8037CF74 00378C14  7D 89 03 A6 */	mtctr r12
+/* 8037CF78 00378C18  4E 80 04 21 */	bctrl 
+/* 8037CF7C 00378C1C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037CF80 00378C20  38 80 00 01 */	li r4, 1
+/* 8037CF84 00378C24  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 8037CF88 00378C28  7D 89 03 A6 */	mtctr r12
+/* 8037CF8C 00378C2C  4E 80 04 21 */	bctrl 
+/* 8037CF90 00378C30  3B 39 00 04 */	addi r25, r25, 4
+/* 8037CF94 00378C34  3B 7B 00 01 */	addi r27, r27, 1
+lbl_8037CF98:
+/* 8037CF98 00378C38  80 1A 00 08 */	lwz r0, 8(r26)
+/* 8037CF9C 00378C3C  7C 1B 00 00 */	cmpw r27, r0
+/* 8037CFA0 00378C40  41 80 FF A4 */	blt lbl_8037CF44
+/* 8037CFA4 00378C44  38 60 01 F8 */	li r3, 0x1f8
+/* 8037CFA8 00378C48  4B FF EF 2D */	bl "HBMAllocMem__FUl"
+/* 8037CFAC 00378C4C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CFB0 00378C50  41 82 00 28 */	beq lbl_8037CFD8
+/* 8037CFB4 00378C54  7C 64 1B 78 */	mr r4, r3
+/* 8037CFB8 00378C58  38 60 01 F8 */	li r3, 0x1f8
+/* 8037CFBC 00378C5C  4B C9 D1 85 */	bl "__nw__FUlPv"
+/* 8037CFC0 00378C60  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CFC4 00378C64  41 82 00 10 */	beq lbl_8037CFD4
+/* 8037CFC8 00378C68  80 9A 00 04 */	lwz r4, 4(r26)
+/* 8037CFCC 00378C6C  80 84 00 04 */	lwz r4, 4(r4)
+/* 8037CFD0 00378C70  48 00 85 79 */	bl "__ct__Q210homebutton9RemoteSpkFPv"
+lbl_8037CFD4:
+/* 8037CFD4 00378C74  90 7A 02 6C */	stw r3, 0x26c(r26)
+lbl_8037CFD8:
+/* 8037CFD8 00378C78  7F 59 D3 78 */	mr r25, r26
+/* 8037CFDC 00378C7C  3B 60 00 00 */	li r27, 0
+lbl_8037CFE0:
+/* 8037CFE0 00378C80  38 60 00 48 */	li r3, 0x48
+/* 8037CFE4 00378C84  4B FF EE F1 */	bl "HBMAllocMem__FUl"
+/* 8037CFE8 00378C88  2C 03 00 00 */	cmpwi r3, 0
+/* 8037CFEC 00378C8C  41 82 00 28 */	beq lbl_8037D014
+/* 8037CFF0 00378C90  7C 64 1B 78 */	mr r4, r3
+/* 8037CFF4 00378C94  38 60 00 48 */	li r3, 0x48
+/* 8037CFF8 00378C98  4B C9 D1 49 */	bl "__nw__FUlPv"
+/* 8037CFFC 00378C9C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037D000 00378CA0  41 82 00 10 */	beq lbl_8037D010
+/* 8037D004 00378CA4  80 BA 02 6C */	lwz r5, 0x26c(r26)
+/* 8037D008 00378CA8  7F 64 DB 78 */	mr r4, r27
+/* 8037D00C 00378CAC  48 00 5F 31 */	bl "__ct__Q210homebutton10ControllerFiPQ210homebutton9RemoteSpk"
+lbl_8037D010:
+/* 8037D010 00378CB0  90 79 02 5C */	stw r3, 0x25c(r25)
+lbl_8037D014:
+/* 8037D014 00378CB4  3B 7B 00 01 */	addi r27, r27, 1
+/* 8037D018 00378CB8  3B 39 00 04 */	addi r25, r25, 4
+/* 8037D01C 00378CBC  2C 1B 00 04 */	cmpwi r27, 4
+/* 8037D020 00378CC0  41 80 FF C0 */	blt lbl_8037CFE0
+/* 8037D024 00378CC4  80 7A 02 00 */	lwz r3, 0x200(r26)
+/* 8037D028 00378CC8  38 9A 02 08 */	addi r4, r26, 0x208
+/* 8037D02C 00378CCC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037D030 00378CD0  81 8C 00 48 */	lwz r12, 0x48(r12)
+/* 8037D034 00378CD4  7D 89 03 A6 */	mtctr r12
+/* 8037D038 00378CD8  4E 80 04 21 */	bctrl 
+/* 8037D03C 00378CDC  80 9A 00 04 */	lwz r4, 4(r26)
+/* 8037D040 00378CE0  38 61 00 50 */	addi r3, r1, 0x50
+/* 8037D044 00378CE4  C0 42 A6 88 */	lfs f2, lbl_805DB8A8-_SDA2_BASE_(r2)
+/* 8037D048 00378CE8  C0 04 00 34 */	lfs f0, 0x34(r4)
+/* 8037D04C 00378CEC  EC 22 00 24 */	fdivs f1, f2, f0
+/* 8037D050 00378CF0  48 00 04 AD */	bl "__ct__Q36nw4hbm4math4VEC2Fff"
+/* 8037D054 00378CF4  38 7A 02 08 */	addi r3, r26, 0x208
+/* 8037D058 00378CF8  38 81 00 50 */	addi r4, r1, 0x50
+/* 8037D05C 00378CFC  48 00 01 55 */	bl "SetLocationAdjustScale__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math4VEC2"
+/* 8037D060 00378D00  88 9A 00 87 */	lbz r4, 0x87(r26)
+/* 8037D064 00378D04  38 7A 02 08 */	addi r3, r26, 0x208
+/* 8037D068 00378D08  48 00 01 39 */	bl "SetLocationAdjust__Q36nw4hbm3lyt8DrawInfoFb"
+/* 8037D06C 00378D0C  38 61 00 58 */	addi r3, r1, 0x58
+/* 8037D070 00378D10  48 00 01 2D */	bl "__ct__Q36nw4hbm4math5MTX34Fv"
+/* 8037D074 00378D14  38 61 00 58 */	addi r3, r1, 0x58
+/* 8037D078 00378D18  48 00 00 ED */	bl "MTX34Identity__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34"
+/* 8037D07C 00378D1C  38 7A 02 08 */	addi r3, r26, 0x208
+/* 8037D080 00378D20  38 81 00 58 */	addi r4, r1, 0x58
+/* 8037D084 00378D24  48 00 00 25 */	bl "SetViewMtx__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math5MTX34"
+/* 8037D088 00378D28  7F 43 D3 78 */	mr r3, r26
+/* 8037D08C 00378D2C  48 00 0C 75 */	bl "init_msg__Q210homebutton10HomeButtonFv"
+/* 8037D090 00378D30  39 61 00 F0 */	addi r11, r1, 0xf0
+/* 8037D094 00378D34  48 09 23 21 */	bl "_restgpr_24"
+/* 8037D098 00378D38  80 01 00 F4 */	lwz r0, 0xf4(r1)
+/* 8037D09C 00378D3C  7C 08 03 A6 */	mtlr r0
+/* 8037D0A0 00378D40  38 21 00 F0 */	addi r1, r1, 0xf0
+/* 8037D0A4 00378D44  4E 80 00 20 */	blr 
+
+.global "SetViewMtx__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math5MTX34"
+"SetViewMtx__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math5MTX34":
+/* 8037D0A8 00378D48  38 63 00 04 */	addi r3, r3, 4
+/* 8037D0AC 00378D4C  48 00 00 04 */	b "__as__Q36nw4hbm4math5MTX34FRCQ36nw4hbm4math5MTX34"
+
+.global "__as__Q36nw4hbm4math5MTX34FRCQ36nw4hbm4math5MTX34"
+"__as__Q36nw4hbm4math5MTX34FRCQ36nw4hbm4math5MTX34":
+/* 8037D0B0 00378D50  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D0B4 00378D54  7C 08 02 A6 */	mflr r0
+/* 8037D0B8 00378D58  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D0BC 00378D5C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D0C0 00378D60  7C 7F 1B 78 */	mr r31, r3
+/* 8037D0C4 00378D64  48 00 00 1D */	bl "__as__Q36nw4hbm4math6_MTX34FRCQ36nw4hbm4math6_MTX34"
+/* 8037D0C8 00378D68  7F E3 FB 78 */	mr r3, r31
+/* 8037D0CC 00378D6C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D0D0 00378D70  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D0D4 00378D74  7C 08 03 A6 */	mtlr r0
+/* 8037D0D8 00378D78  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D0DC 00378D7C  4E 80 00 20 */	blr 
+
+.global "__as__Q36nw4hbm4math6_MTX34FRCQ36nw4hbm4math6_MTX34"
+"__as__Q36nw4hbm4math6_MTX34FRCQ36nw4hbm4math6_MTX34":
+/* 8037D0E0 00378D80  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037D0E4 00378D84  81 84 00 0C */	lwz r12, 0xc(r4)
+/* 8037D0E8 00378D88  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037D0EC 00378D8C  83 E4 00 08 */	lwz r31, 8(r4)
+/* 8037D0F0 00378D90  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037D0F4 00378D94  83 C4 00 04 */	lwz r30, 4(r4)
+/* 8037D0F8 00378D98  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037D0FC 00378D9C  83 A4 00 00 */	lwz r29, 0(r4)
+/* 8037D100 00378DA0  81 64 00 10 */	lwz r11, 0x10(r4)
+/* 8037D104 00378DA4  81 44 00 14 */	lwz r10, 0x14(r4)
+/* 8037D108 00378DA8  81 24 00 18 */	lwz r9, 0x18(r4)
+/* 8037D10C 00378DAC  81 04 00 1C */	lwz r8, 0x1c(r4)
+/* 8037D110 00378DB0  80 E4 00 20 */	lwz r7, 0x20(r4)
+/* 8037D114 00378DB4  80 C4 00 24 */	lwz r6, 0x24(r4)
+/* 8037D118 00378DB8  80 A4 00 28 */	lwz r5, 0x28(r4)
+/* 8037D11C 00378DBC  80 04 00 2C */	lwz r0, 0x2c(r4)
+/* 8037D120 00378DC0  93 A3 00 00 */	stw r29, 0(r3)
+/* 8037D124 00378DC4  93 C3 00 04 */	stw r30, 4(r3)
+/* 8037D128 00378DC8  93 E3 00 08 */	stw r31, 8(r3)
+/* 8037D12C 00378DCC  91 83 00 0C */	stw r12, 0xc(r3)
+/* 8037D130 00378DD0  91 63 00 10 */	stw r11, 0x10(r3)
+/* 8037D134 00378DD4  91 43 00 14 */	stw r10, 0x14(r3)
+/* 8037D138 00378DD8  91 23 00 18 */	stw r9, 0x18(r3)
+/* 8037D13C 00378DDC  91 03 00 1C */	stw r8, 0x1c(r3)
+/* 8037D140 00378DE0  90 E3 00 20 */	stw r7, 0x20(r3)
+/* 8037D144 00378DE4  90 C3 00 24 */	stw r6, 0x24(r3)
+/* 8037D148 00378DE8  90 A3 00 28 */	stw r5, 0x28(r3)
+/* 8037D14C 00378DEC  90 03 00 2C */	stw r0, 0x2c(r3)
+/* 8037D150 00378DF0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037D154 00378DF4  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037D158 00378DF8  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037D15C 00378DFC  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037D160 00378E00  4E 80 00 20 */	blr 
+
+.global "MTX34Identity__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34"
+"MTX34Identity__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34":
+/* 8037D164 00378E04  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D168 00378E08  7C 08 02 A6 */	mflr r0
+/* 8037D16C 00378E0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D170 00378E10  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D174 00378E14  7C 7F 1B 78 */	mr r31, r3
+/* 8037D178 00378E18  48 00 00 21 */	bl "__opPA4_f__Q36nw4hbm4math5MTX34Fv"
+/* 8037D17C 00378E1C  48 05 A3 CD */	bl "PSMTXIdentity"
+/* 8037D180 00378E20  7F E3 FB 78 */	mr r3, r31
+/* 8037D184 00378E24  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D188 00378E28  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D18C 00378E2C  7C 08 03 A6 */	mtlr r0
+/* 8037D190 00378E30  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D194 00378E34  4E 80 00 20 */	blr 
+
+.global "__opPA4_f__Q36nw4hbm4math5MTX34Fv"
+"__opPA4_f__Q36nw4hbm4math5MTX34Fv":
+/* 8037D198 00378E38  4E 80 00 20 */	blr 
+
+.global "__ct__Q36nw4hbm4math5MTX34Fv"
+"__ct__Q36nw4hbm4math5MTX34Fv":
+/* 8037D19C 00378E3C  4E 80 00 20 */	blr 
+
+.global "SetLocationAdjust__Q36nw4hbm3lyt8DrawInfoFb"
+"SetLocationAdjust__Q36nw4hbm3lyt8DrawInfoFb":
+/* 8037D1A0 00378E40  88 03 00 50 */	lbz r0, 0x50(r3)
+/* 8037D1A4 00378E44  50 80 2E B4 */	rlwimi r0, r4, 5, 0x1a, 0x1a
+/* 8037D1A8 00378E48  98 03 00 50 */	stb r0, 0x50(r3)
+/* 8037D1AC 00378E4C  4E 80 00 20 */	blr 
+
+.global "SetLocationAdjustScale__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math4VEC2"
+"SetLocationAdjustScale__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm4math4VEC2":
+/* 8037D1B0 00378E50  38 63 00 44 */	addi r3, r3, 0x44
+/* 8037D1B4 00378E54  48 00 00 04 */	b "__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
+
+.global "__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
+"__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2":
+/* 8037D1B8 00378E58  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D1BC 00378E5C  7C 08 02 A6 */	mflr r0
+/* 8037D1C0 00378E60  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D1C4 00378E64  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D1C8 00378E68  7C 7F 1B 78 */	mr r31, r3
+/* 8037D1CC 00378E6C  48 00 00 1D */	bl "__as__Q36nw4hbm4math5_VEC2FRCQ36nw4hbm4math5_VEC2"
+/* 8037D1D0 00378E70  7F E3 FB 78 */	mr r3, r31
+/* 8037D1D4 00378E74  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D1D8 00378E78  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D1DC 00378E7C  7C 08 03 A6 */	mtlr r0
+/* 8037D1E0 00378E80  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D1E4 00378E84  4E 80 00 20 */	blr 
+
+.global "__as__Q36nw4hbm4math5_VEC2FRCQ36nw4hbm4math5_VEC2"
+"__as__Q36nw4hbm4math5_VEC2FRCQ36nw4hbm4math5_VEC2":
+/* 8037D1E8 00378E88  C0 24 00 00 */	lfs f1, 0(r4)
+/* 8037D1EC 00378E8C  C0 04 00 04 */	lfs f0, 4(r4)
+/* 8037D1F0 00378E90  D0 23 00 00 */	stfs f1, 0(r3)
+/* 8037D1F4 00378E94  D0 03 00 04 */	stfs f0, 4(r3)
+/* 8037D1F8 00378E98  4E 80 00 20 */	blr 
+
+.global "setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo"
+"setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo":
+/* 8037D1FC 00378E9C  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8037D200 00378EA0  4E 80 00 20 */	blr 
+
+.global "setTriggerTarget__Q310homebutton3gui9ComponentFb"
+"setTriggerTarget__Q310homebutton3gui9ComponentFb":
+/* 8037D204 00378EA4  98 83 00 24 */	stb r4, 0x24(r3)
+/* 8037D208 00378EA8  4E 80 00 20 */	blr 
+
+.global "__ct__Q310homebutton3gui11PaneManagerFPQ310homebutton3gui12EventHandlerPCQ36nw4hbm3lyt8DrawInfoP12MEMAllocator"
+"__ct__Q310homebutton3gui11PaneManagerFPQ310homebutton3gui12EventHandlerPCQ36nw4hbm3lyt8DrawInfoP12MEMAllocator":
+/* 8037D20C 00378EAC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D210 00378EB0  7C 08 02 A6 */	mflr r0
+/* 8037D214 00378EB4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D218 00378EB8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D21C 00378EBC  7C BF 2B 78 */	mr r31, r5
+/* 8037D220 00378EC0  7C C5 33 78 */	mr r5, r6
+/* 8037D224 00378EC4  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037D228 00378EC8  7C 7E 1B 78 */	mr r30, r3
+/* 8037D22C 00378ECC  48 00 00 3D */	bl "__ct__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandlerP12MEMAllocator"
+/* 8037D230 00378ED0  3C 80 80 47 */	lis r4, "__vt__Q310homebutton3gui11PaneManager"@ha
+/* 8037D234 00378ED4  93 FE 00 24 */	stw r31, 0x24(r30)
+/* 8037D238 00378ED8  38 84 92 E0 */	addi r4, r4, "__vt__Q310homebutton3gui11PaneManager"@l
+/* 8037D23C 00378EDC  38 7E 00 18 */	addi r3, r30, 0x18
+/* 8037D240 00378EE0  90 9E 00 00 */	stw r4, 0(r30)
+/* 8037D244 00378EE4  38 80 00 08 */	li r4, 8
+/* 8037D248 00378EE8  48 04 60 49 */	bl "List_Init__Q26nw4hbm2utFPQ36nw4hbm2ut4ListUs"
+/* 8037D24C 00378EEC  7F C3 F3 78 */	mr r3, r30
+/* 8037D250 00378EF0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D254 00378EF4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037D258 00378EF8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D25C 00378EFC  7C 08 03 A6 */	mtlr r0
+/* 8037D260 00378F00  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D264 00378F04  4E 80 00 20 */	blr 
+
+.global "__ct__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandlerP12MEMAllocator"
+"__ct__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandlerP12MEMAllocator":
+/* 8037D268 00378F08  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037D26C 00378F0C  7C 08 02 A6 */	mflr r0
+/* 8037D270 00378F10  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037D274 00378F14  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037D278 00378F18  7C BF 2B 78 */	mr r31, r5
+/* 8037D27C 00378F1C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037D280 00378F20  7C 9E 23 78 */	mr r30, r4
+/* 8037D284 00378F24  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037D288 00378F28  7C 7D 1B 78 */	mr r29, r3
+/* 8037D28C 00378F2C  48 00 00 AD */	bl "__ct__Q310homebutton3gui9InterfaceFv"
+/* 8037D290 00378F30  3C 60 80 47 */	lis r3, "__vt__Q310homebutton3gui7Manager"@ha
+/* 8037D294 00378F34  2C 1E 00 00 */	cmpwi r30, 0
+/* 8037D298 00378F38  38 63 93 34 */	addi r3, r3, "__vt__Q310homebutton3gui7Manager"@l
+/* 8037D29C 00378F3C  93 DD 00 04 */	stw r30, 4(r29)
+/* 8037D2A0 00378F40  90 7D 00 00 */	stw r3, 0(r29)
+/* 8037D2A4 00378F44  93 FD 00 14 */	stw r31, 0x14(r29)
+/* 8037D2A8 00378F48  41 82 00 1C */	beq lbl_8037D2C4
+/* 8037D2AC 00378F4C  81 9E 00 00 */	lwz r12, 0(r30)
+/* 8037D2B0 00378F50  7F C3 F3 78 */	mr r3, r30
+/* 8037D2B4 00378F54  7F A4 EB 78 */	mr r4, r29
+/* 8037D2B8 00378F58  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037D2BC 00378F5C  7D 89 03 A6 */	mtctr r12
+/* 8037D2C0 00378F60  4E 80 04 21 */	bctrl 
+lbl_8037D2C4:
+/* 8037D2C4 00378F64  38 7D 00 08 */	addi r3, r29, 8
+/* 8037D2C8 00378F68  38 80 00 08 */	li r4, 8
+/* 8037D2CC 00378F6C  48 04 5F C5 */	bl "List_Init__Q26nw4hbm2utFPQ36nw4hbm2ut4ListUs"
+/* 8037D2D0 00378F70  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037D2D4 00378F74  7F A3 EB 78 */	mr r3, r29
+/* 8037D2D8 00378F78  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037D2DC 00378F7C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037D2E0 00378F80  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037D2E4 00378F84  7C 08 03 A6 */	mtlr r0
+/* 8037D2E8 00378F88  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037D2EC 00378F8C  4E 80 00 20 */	blr 
+
+.global "__dt__Q310homebutton3gui9InterfaceFv"
+"__dt__Q310homebutton3gui9InterfaceFv":
+/* 8037D2F0 00378F90  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D2F4 00378F94  7C 08 02 A6 */	mflr r0
+/* 8037D2F8 00378F98  2C 03 00 00 */	cmpwi r3, 0
+/* 8037D2FC 00378F9C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D300 00378FA0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D304 00378FA4  7C 7F 1B 78 */	mr r31, r3
+/* 8037D308 00378FA8  41 82 00 10 */	beq lbl_8037D318
+/* 8037D30C 00378FAC  2C 04 00 00 */	cmpwi r4, 0
+/* 8037D310 00378FB0  40 81 00 08 */	ble lbl_8037D318
+/* 8037D314 00378FB4  4B ED CC 99 */	bl "__dl__FPv"
+lbl_8037D318:
+/* 8037D318 00378FB8  7F E3 FB 78 */	mr r3, r31
+/* 8037D31C 00378FBC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D320 00378FC0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D324 00378FC4  7C 08 03 A6 */	mtlr r0
+/* 8037D328 00378FC8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D32C 00378FCC  4E 80 00 20 */	blr 
+
+.global "setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager"
+"setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager":
+/* 8037D330 00378FD0  90 83 00 04 */	stw r4, 4(r3)
+/* 8037D334 00378FD4  4E 80 00 20 */	blr 
+
+.global "__ct__Q310homebutton3gui9InterfaceFv"
+"__ct__Q310homebutton3gui9InterfaceFv":
+/* 8037D338 00378FD8  3C 80 80 47 */	lis r4, "__vt__Q310homebutton3gui9Interface"@ha
+/* 8037D33C 00378FDC  38 84 91 E8 */	addi r4, r4, "__vt__Q310homebutton3gui9Interface"@l
+/* 8037D340 00378FE0  90 83 00 00 */	stw r4, 0(r3)
+/* 8037D344 00378FE4  4E 80 00 20 */	blr 
+
+.global "__ct__Q210homebutton22HomeButtonEventHandlerFPQ210homebutton10HomeButton"
+"__ct__Q210homebutton22HomeButtonEventHandlerFPQ210homebutton10HomeButton":
+/* 8037D348 00378FE8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D34C 00378FEC  7C 08 02 A6 */	mflr r0
+/* 8037D350 00378FF0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D354 00378FF4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D358 00378FF8  7C 9F 23 78 */	mr r31, r4
+/* 8037D35C 00378FFC  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037D360 00379000  7C 7E 1B 78 */	mr r30, r3
+/* 8037D364 00379004  48 00 00 31 */	bl "__ct__Q310homebutton3gui12EventHandlerFv"
+/* 8037D368 00379008  3C 80 80 47 */	lis r4, "__vt__Q210homebutton22HomeButtonEventHandler"@ha
+/* 8037D36C 0037900C  93 FE 00 08 */	stw r31, 8(r30)
+/* 8037D370 00379010  38 84 91 C8 */	addi r4, r4, "__vt__Q210homebutton22HomeButtonEventHandler"@l
+/* 8037D374 00379014  7F C3 F3 78 */	mr r3, r30
+/* 8037D378 00379018  90 9E 00 00 */	stw r4, 0(r30)
+/* 8037D37C 0037901C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D380 00379020  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037D384 00379024  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D388 00379028  7C 08 03 A6 */	mtlr r0
+/* 8037D38C 0037902C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D390 00379030  4E 80 00 20 */	blr 
+
+.global "__ct__Q310homebutton3gui12EventHandlerFv"
+"__ct__Q310homebutton3gui12EventHandlerFv":
+/* 8037D394 00379034  3C 80 80 47 */	lis r4, "__vt__Q310homebutton3gui12EventHandler"@ha
+/* 8037D398 00379038  38 84 91 D8 */	addi r4, r4, "__vt__Q310homebutton3gui12EventHandler"@l
+/* 8037D39C 0037903C  90 83 00 00 */	stw r4, 0(r3)
+/* 8037D3A0 00379040  4E 80 00 20 */	blr 
+
+.global "GetFrameMax__Q36nw4hbm3lyt13AnimTransformCFv"
+"GetFrameMax__Q36nw4hbm3lyt13AnimTransformCFv":
+/* 8037D3A4 00379044  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D3A8 00379048  7C 08 02 A6 */	mflr r0
+/* 8037D3AC 0037904C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D3B0 00379050  48 00 BB F9 */	bl "GetFrameSize__Q36nw4hbm3lyt13AnimTransformCFv"
+/* 8037D3B4 00379054  54 63 04 3E */	clrlwi r3, r3, 0x10
+/* 8037D3B8 00379058  3C 00 43 30 */	lis r0, 0x4330
+/* 8037D3BC 0037905C  90 01 00 08 */	stw r0, 8(r1)
+/* 8037D3C0 00379060  C8 22 A6 90 */	lfd f1, lbl_805DB8B0-_SDA2_BASE_(r2)
+/* 8037D3C4 00379064  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8037D3C8 00379068  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D3CC 0037906C  C8 01 00 08 */	lfd f0, 8(r1)
+/* 8037D3D0 00379070  EC 20 08 28 */	fsubs f1, f0, f1
+/* 8037D3D4 00379074  7C 08 03 A6 */	mtlr r0
+/* 8037D3D8 00379078  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D3DC 0037907C  4E 80 00 20 */	blr 
+
+.global "GetGroupContainer__Q36nw4hbm3lyt6LayoutCFv"
+"GetGroupContainer__Q36nw4hbm3lyt6LayoutCFv":
+/* 8037D3E0 00379080  80 63 00 14 */	lwz r3, 0x14(r3)
+/* 8037D3E4 00379084  4E 80 00 20 */	blr 
+
+.global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+"__ne__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator":
+/* 8037D3E8 00379088  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D3EC 0037908C  7C 08 02 A6 */	mflr r0
+/* 8037D3F0 00379090  80 A4 00 00 */	lwz r5, 0(r4)
+/* 8037D3F4 00379094  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D3F8 00379098  38 81 00 08 */	addi r4, r1, 8
+/* 8037D3FC 0037909C  80 03 00 00 */	lwz r0, 0(r3)
+/* 8037D400 003790A0  38 61 00 0C */	addi r3, r1, 0xc
+/* 8037D404 003790A4  90 A1 00 08 */	stw r5, 8(r1)
+/* 8037D408 003790A8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8037D40C 003790AC  48 00 00 1D */	bl "__eq__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+/* 8037D410 003790B0  7C 60 00 34 */	cntlzw r0, r3
+/* 8037D414 003790B4  54 03 D9 7E */	srwi r3, r0, 5
+/* 8037D418 003790B8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D41C 003790BC  7C 08 03 A6 */	mtlr r0
+/* 8037D420 003790C0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D424 003790C4  4E 80 00 20 */	blr 
+
+.global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+"__eq__Q26nw4hbm2utFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator":
+/* 8037D428 003790C8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D42C 003790CC  7C 08 02 A6 */	mflr r0
+/* 8037D430 003790D0  80 A4 00 00 */	lwz r5, 0(r4)
+/* 8037D434 003790D4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D438 003790D8  38 81 00 08 */	addi r4, r1, 8
+/* 8037D43C 003790DC  80 03 00 00 */	lwz r0, 0(r3)
+/* 8037D440 003790E0  38 61 00 0C */	addi r3, r1, 0xc
+/* 8037D444 003790E4  90 A1 00 08 */	stw r5, 8(r1)
+/* 8037D448 003790E8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8037D44C 003790EC  4B FF E8 35 */	bl "__eq__Q36nw4hbm2ut6detailFQ56nw4hbm2ut6detail12LinkListImpl8IteratorQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+/* 8037D450 003790F0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D454 003790F4  7C 08 03 A6 */	mtlr r0
+/* 8037D458 003790F8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D45C 003790FC  4E 80 00 20 */	blr 
+
+.global "GetEndIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
+"GetEndIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv":
+/* 8037D460 00379100  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D464 00379104  7C 08 02 A6 */	mflr r0
+/* 8037D468 00379108  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D46C 0037910C  4B FF E8 9D */	bl "GetEndIter__Q46nw4hbm2ut6detail12LinkListImplFv"
+/* 8037D470 00379110  90 61 00 08 */	stw r3, 8(r1)
+/* 8037D474 00379114  38 61 00 0C */	addi r3, r1, 0xc
+/* 8037D478 00379118  38 81 00 08 */	addi r4, r1, 8
+/* 8037D47C 0037911C  48 00 00 19 */	bl "__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+/* 8037D480 00379120  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D484 00379124  80 63 00 00 */	lwz r3, 0(r3)
+/* 8037D488 00379128  7C 08 03 A6 */	mtlr r0
+/* 8037D48C 0037912C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D490 00379130  4E 80 00 20 */	blr 
+
+.global "__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+"__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
+/* 8037D494 00379134  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D498 00379138  7C 08 02 A6 */	mflr r0
+/* 8037D49C 0037913C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D4A0 00379140  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D4A4 00379144  7C 7F 1B 78 */	mr r31, r3
+/* 8037D4A8 00379148  4B FF E8 55 */	bl "__ct__Q56nw4hbm2ut6detail12LinkListImpl8IteratorFRCQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+/* 8037D4AC 0037914C  7F E3 FB 78 */	mr r3, r31
+/* 8037D4B0 00379150  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D4B4 00379154  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D4B8 00379158  7C 08 03 A6 */	mtlr r0
+/* 8037D4BC 0037915C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D4C0 00379160  4E 80 00 20 */	blr 
+
+.global "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
+"__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv":
+/* 8037D4C4 00379164  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D4C8 00379168  7C 08 02 A6 */	mflr r0
+/* 8037D4CC 0037916C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D4D0 00379170  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D4D4 00379174  7C 7F 1B 78 */	mr r31, r3
+/* 8037D4D8 00379178  4B FF E8 99 */	bl "__pp__Q56nw4hbm2ut6detail12LinkListImpl8IteratorFv"
+/* 8037D4DC 0037917C  7F E3 FB 78 */	mr r3, r31
+/* 8037D4E0 00379180  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D4E4 00379184  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D4E8 00379188  7C 08 03 A6 */	mtlr r0
+/* 8037D4EC 0037918C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D4F0 00379190  4E 80 00 20 */	blr 
+
+.global "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+"SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2":
+/* 8037D4F4 00379194  38 63 00 44 */	addi r3, r3, 0x44
+/* 8037D4F8 00379198  4B FF FC C0 */	b "__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
+
+.global "__ct__Q36nw4hbm4math4VEC2Fff"
+"__ct__Q36nw4hbm4math4VEC2Fff":
+/* 8037D4FC 0037919C  D0 23 00 00 */	stfs f1, 0(r3)
+/* 8037D500 003791A0  D0 43 00 04 */	stfs f2, 4(r3)
+/* 8037D504 003791A4  4E 80 00 20 */	blr 
+
+.global "GetName__Q36nw4hbm3lyt4PaneCFv"
+"GetName__Q36nw4hbm3lyt4PaneCFv":
+/* 8037D508 003791A8  38 63 00 B4 */	addi r3, r3, 0xb4
+/* 8037D50C 003791AC  4E 80 00 20 */	blr 
+
+.global "__rf__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorCFv"
+"__rf__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorCFv":
+/* 8037D510 003791B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D514 003791B4  7C 08 02 A6 */	mflr r0
+/* 8037D518 003791B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D51C 003791BC  4B FF E9 09 */	bl "__rf__Q56nw4hbm2ut6detail12LinkListImpl8IteratorCFv"
+/* 8037D520 003791C0  48 00 00 15 */	bl "GetPointerFromNode__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FPQ36nw4hbm2ut12LinkListNode"
+/* 8037D524 003791C4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D528 003791C8  7C 08 03 A6 */	mtlr r0
+/* 8037D52C 003791CC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D530 003791D0  4E 80 00 20 */	blr 
+
+.global "GetPointerFromNode__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FPQ36nw4hbm2ut12LinkListNode"
+"GetPointerFromNode__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FPQ36nw4hbm2ut12LinkListNode":
+/* 8037D534 003791D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D538 003791D8  7C 08 02 A6 */	mflr r0
+/* 8037D53C 003791DC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037D540 003791E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D544 003791E4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D548 003791E8  7C 7F 1B 78 */	mr r31, r3
+/* 8037D54C 003791EC  40 82 00 20 */	bne lbl_8037D56C
+/* 8037D550 003791F0  3C 60 80 47 */	lis r3, lbl_8046925C@ha
+/* 8037D554 003791F4  3C A0 80 47 */	lis r5, lbl_80469238@ha
+/* 8037D558 003791F8  38 63 92 5C */	addi r3, r3, lbl_8046925C@l
+/* 8037D55C 003791FC  38 80 02 3D */	li r4, 0x23d
+/* 8037D560 00379200  38 A5 92 38 */	addi r5, r5, lbl_80469238@l
+/* 8037D564 00379204  4C C6 31 82 */	crclr 6
+/* 8037D568 00379208  48 00 8A 6D */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037D56C:
+/* 8037D56C 0037920C  38 7F FF FC */	addi r3, r31, -4
+/* 8037D570 00379210  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D574 00379214  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D578 00379218  7C 08 03 A6 */	mtlr r0
+/* 8037D57C 0037921C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D580 00379220  4E 80 00 20 */	blr 
+
+.global "__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFRCQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
+"__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFRCQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator":
+/* 8037D584 00379224  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D588 00379228  7C 08 02 A6 */	mflr r0
+/* 8037D58C 0037922C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D590 00379230  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037D594 00379234  7C 7F 1B 78 */	mr r31, r3
+/* 8037D598 00379238  4B FF E7 65 */	bl "__ct__Q56nw4hbm2ut6detail12LinkListImpl8IteratorFRCQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+/* 8037D59C 0037923C  7F E3 FB 78 */	mr r3, r31
+/* 8037D5A0 00379240  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037D5A4 00379244  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D5A8 00379248  7C 08 03 A6 */	mtlr r0
+/* 8037D5AC 0037924C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D5B0 00379250  4E 80 00 20 */	blr 
+
+.global "GetBeginIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
+"GetBeginIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv":
+/* 8037D5B4 00379254  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037D5B8 00379258  7C 08 02 A6 */	mflr r0
+/* 8037D5BC 0037925C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037D5C0 00379260  4B FF E8 D1 */	bl "GetBeginIter__Q46nw4hbm2ut6detail12LinkListImplFv"
+/* 8037D5C4 00379264  90 61 00 08 */	stw r3, 8(r1)
+/* 8037D5C8 00379268  38 61 00 0C */	addi r3, r1, 0xc
+/* 8037D5CC 0037926C  38 81 00 08 */	addi r4, r1, 8
+/* 8037D5D0 00379270  4B FF FE C5 */	bl "__ct__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
+/* 8037D5D4 00379274  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037D5D8 00379278  80 63 00 00 */	lwz r3, 0(r3)
+/* 8037D5DC 0037927C  7C 08 03 A6 */	mtlr r0
+/* 8037D5E0 00379280  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037D5E4 00379284  4E 80 00 20 */	blr 
+
+.global "GetChildList__Q36nw4hbm3lyt4PaneFv"
+"GetChildList__Q36nw4hbm3lyt4PaneFv":
+/* 8037D5E8 00379288  38 63 00 10 */	addi r3, r3, 0x10
+/* 8037D5EC 0037928C  4E 80 00 20 */	blr 
+
+.global "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+"GetRootPane__Q36nw4hbm3lyt6LayoutCFv":
+/* 8037D5F0 00379290  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 8037D5F4 00379294  4E 80 00 20 */	blr 
+
+.global "get_comma_length__10homebuttonFPc"
+"get_comma_length__10homebuttonFPc":
+/* 8037D5F8 00379298  38 A0 00 00 */	li r5, 0
+/* 8037D5FC 0037929C  48 00 00 18 */	b lbl_8037D614
+lbl_8037D600:
+/* 8037D600 003792A0  7C 80 07 74 */	extsb r0, r4
+/* 8037D604 003792A4  2C 00 00 2C */	cmpwi r0, 0x2c
+/* 8037D608 003792A8  41 82 00 18 */	beq lbl_8037D620
+/* 8037D60C 003792AC  38 A5 00 01 */	addi r5, r5, 1
+/* 8037D610 003792B0  38 63 00 01 */	addi r3, r3, 1
+lbl_8037D614:
+/* 8037D614 003792B4  88 83 00 00 */	lbz r4, 0(r3)
+/* 8037D618 003792B8  7C 80 07 75 */	extsb. r0, r4
+/* 8037D61C 003792BC  40 82 FF E4 */	bne lbl_8037D600
+lbl_8037D620:
+/* 8037D620 003792C0  7C A3 2B 78 */	mr r3, r5
+/* 8037D624 003792C4  4E 80 00 20 */	blr 
+
+.global "set_config__Q210homebutton10HomeButtonFv"
+"set_config__Q210homebutton10HomeButtonFv":
+/* 8037D628 003792C8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037D62C 003792CC  7C 08 02 A6 */	mflr r0
+/* 8037D630 003792D0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037D634 003792D4  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037D638 003792D8  48 09 1D 3D */	bl "_savegpr_27"
+/* 8037D63C 003792DC  80 83 00 04 */	lwz r4, 4(r3)
+/* 8037D640 003792E0  3F 80 80 47 */	lis r28, lbl_80468288@ha
+/* 8037D644 003792E4  7C 7D 1B 78 */	mr r29, r3
+/* 8037D648 003792E8  83 E4 00 0C */	lwz r31, 0xc(r4)
+/* 8037D64C 003792EC  3B 9C 82 88 */	addi r28, r28, lbl_80468288@l
+/* 8037D650 003792F0  80 04 00 28 */	lwz r0, 0x28(r4)
+/* 8037D654 003792F4  7F E3 FB 78 */	mr r3, r31
+/* 8037D658 003792F8  7F DF 02 14 */	add r30, r31, r0
+/* 8037D65C 003792FC  4B FF FF 9D */	bl "get_comma_length__10homebuttonFPc"
+/* 8037D660 00379300  7C 7B 1B 78 */	mr r27, r3
+/* 8037D664 00379304  38 63 00 01 */	addi r3, r3, 1
+/* 8037D668 00379308  4B FF E8 6D */	bl "HBMAllocMem__FUl"
+/* 8037D66C 0037930C  2C 03 00 00 */	cmpwi r3, 0
+/* 8037D670 00379310  90 7D 00 A8 */	stw r3, 0xa8(r29)
+/* 8037D674 00379314  40 82 00 18 */	bne lbl_8037D68C
+/* 8037D678 00379318  38 7C 00 48 */	addi r3, r28, 0x48
+/* 8037D67C 0037931C  38 BC 0C A0 */	addi r5, r28, 0xca0
+/* 8037D680 00379320  38 80 03 50 */	li r4, 0x350
+/* 8037D684 00379324  4C C6 31 82 */	crclr 6
+/* 8037D688 00379328  48 00 89 4D */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037D68C:
+/* 8037D68C 0037932C  80 7D 00 A8 */	lwz r3, 0xa8(r29)
+/* 8037D690 00379330  7F E4 FB 78 */	mr r4, r31
+/* 8037D694 00379334  7F 65 DB 78 */	mr r5, r27
+/* 8037D698 00379338  48 08 AE 99 */	bl "strncpy"
+/* 8037D69C 0037933C  80 9D 00 A8 */	lwz r4, 0xa8(r29)
+/* 8037D6A0 00379340  7C 7B FA 14 */	add r3, r27, r31
+/* 8037D6A4 00379344  38 00 00 00 */	li r0, 0
+/* 8037D6A8 00379348  3B E3 00 01 */	addi r31, r3, 1
+/* 8037D6AC 0037934C  7C 04 D9 AE */	stbx r0, r4, r27
+/* 8037D6B0 00379350  7F E3 FB 78 */	mr r3, r31
+/* 8037D6B4 00379354  4B FF FF 45 */	bl "get_comma_length__10homebuttonFPc"
+/* 8037D6B8 00379358  7C 7B 1B 78 */	mr r27, r3
+/* 8037D6BC 0037935C  38 63 00 01 */	addi r3, r3, 1
+/* 8037D6C0 00379360  4B FF E8 15 */	bl "HBMAllocMem__FUl"
+/* 8037D6C4 00379364  2C 03 00 00 */	cmpwi r3, 0
+/* 8037D6C8 00379368  90 7D 00 AC */	stw r3, 0xac(r29)
+/* 8037D6CC 0037936C  40 82 00 18 */	bne lbl_8037D6E4
+/* 8037D6D0 00379370  38 7C 00 48 */	addi r3, r28, 0x48
+/* 8037D6D4 00379374  38 BC 0C C8 */	addi r5, r28, 0xcc8
+/* 8037D6D8 00379378  38 80 03 5A */	li r4, 0x35a
+/* 8037D6DC 0037937C  4C C6 31 82 */	crclr 6
+/* 8037D6E0 00379380  48 00 88 F5 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_8037D6E4:
+/* 8037D6E4 00379384  80 7D 00 AC */	lwz r3, 0xac(r29)
+/* 8037D6E8 00379388  7F E4 FB 78 */	mr r4, r31
+/* 8037D6EC 0037938C  7F 65 DB 78 */	mr r5, r27
+/* 8037D6F0 00379390  48 08 AE 41 */	bl "strncpy"
+/* 8037D6F4 00379394  80 7D 00 AC */	lwz r3, 0xac(r29)
+/* 8037D6F8 00379398  38 80 00 00 */	li r4, 0
+/* 8037D6FC 0037939C  7F A5 EB 78 */	mr r5, r29
+/* 8037D700 003793A0  7F FF DA 14 */	add r31, r31, r27
+/* 8037D704 003793A4  7C 83 D9 AE */	stbx r4, r3, r27
+/* 8037D708 003793A8  39 00 00 00 */	li r8, 0
+/* 8037D70C 003793AC  39 20 00 00 */	li r9, 0
+/* 8037D710 003793B0  38 60 00 01 */	li r3, 1
+/* 8037D714 003793B4  48 00 00 34 */	b lbl_8037D748
+lbl_8037D718:
+/* 8037D718 003793B8  7C E0 07 74 */	extsb r0, r7
+/* 8037D71C 003793BC  2C 00 00 2C */	cmpwi r0, 0x2c
+/* 8037D720 003793C0  40 82 00 24 */	bne lbl_8037D744
+/* 8037D724 003793C4  88 06 00 01 */	lbz r0, 1(r6)
+/* 8037D728 003793C8  2C 00 00 31 */	cmpwi r0, 0x31
+/* 8037D72C 003793CC  40 82 00 0C */	bne lbl_8037D738
+/* 8037D730 003793D0  90 65 00 98 */	stw r3, 0x98(r5)
+/* 8037D734 003793D4  48 00 00 08 */	b lbl_8037D73C
+lbl_8037D738:
+/* 8037D738 003793D8  90 85 00 98 */	stw r4, 0x98(r5)
+lbl_8037D73C:
+/* 8037D73C 003793DC  38 A5 00 04 */	addi r5, r5, 4
+/* 8037D740 003793E0  39 29 00 01 */	addi r9, r9, 1
+lbl_8037D744:
+/* 8037D744 003793E4  39 08 00 01 */	addi r8, r8, 1
+lbl_8037D748:
+/* 8037D748 003793E8  7C FF 40 AE */	lbzx r7, r31, r8
+/* 8037D74C 003793EC  7C DF 42 14 */	add r6, r31, r8
+/* 8037D750 003793F0  7C E0 07 75 */	extsb. r0, r7
+/* 8037D754 003793F4  41 82 00 0C */	beq lbl_8037D760
+/* 8037D758 003793F8  7C 06 F0 40 */	cmplw r6, r30
+/* 8037D75C 003793FC  41 80 FF BC */	blt lbl_8037D718
+lbl_8037D760:
+/* 8037D760 00379400  55 20 10 3A */	slwi r0, r9, 2
+/* 8037D764 00379404  91 3D 00 08 */	stw r9, 8(r29)
+/* 8037D768 00379408  7C 09 00 50 */	subf r0, r9, r0
+/* 8037D76C 0037940C  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037D770 00379410  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8037D774 00379414  48 09 1C 4D */	bl "_restgpr_27"
+/* 8037D778 00379418  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037D77C 0037941C  7C 08 03 A6 */	mtlr r0
+/* 8037D780 00379420  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037D784 00379424  4E 80 00 20 */	blr 
+
+.global "set_text__Q210homebutton10HomeButtonFv"
+"set_text__Q210homebutton10HomeButtonFv":
+/* 8037D788 00379428  80 83 00 04 */	lwz r4, 4(r3)
+/* 8037D78C 0037942C  39 00 00 00 */	li r8, 0
+/* 8037D790 00379430  39 20 00 00 */	li r9, 0
+/* 8037D794 00379434  39 40 00 00 */	li r10, 0
+/* 8037D798 00379438  81 64 00 08 */	lwz r11, 8(r4)
+/* 8037D79C 0037943C  38 E0 00 00 */	li r7, 0
+/* 8037D7A0 00379440  7D 66 5B 78 */	mr r6, r11
+/* 8037D7A4 00379444  48 00 00 58 */	b lbl_8037D7FC
+lbl_8037D7A8:
+/* 8037D7A8 00379448  28 00 00 22 */	cmplwi r0, 0x22
+/* 8037D7AC 0037944C  40 82 00 48 */	bne lbl_8037D7F4
+/* 8037D7B0 00379450  2C 0A 00 00 */	cmpwi r10, 0
+/* 8037D7B4 00379454  40 82 00 3C */	bne lbl_8037D7F0
+/* 8037D7B8 00379458  1C 89 00 18 */	mulli r4, r9, 0x18
+/* 8037D7BC 0037945C  38 A8 00 01 */	addi r5, r8, 1
+/* 8037D7C0 00379460  7C 07 1A 14 */	add r0, r7, r3
+/* 8037D7C4 00379464  54 A5 08 3C */	slwi r5, r5, 1
+/* 8037D7C8 00379468  39 29 00 01 */	addi r9, r9, 1
+/* 8037D7CC 0037946C  39 40 00 01 */	li r10, 1
+/* 8037D7D0 00379470  2C 09 00 07 */	cmpwi r9, 7
+/* 8037D7D4 00379474  7C AB 2A 14 */	add r5, r11, r5
+/* 8037D7D8 00379478  7C 84 02 14 */	add r4, r4, r0
+/* 8037D7DC 0037947C  90 A4 00 B4 */	stw r5, 0xb4(r4)
+/* 8037D7E0 00379480  40 82 00 14 */	bne lbl_8037D7F4
+/* 8037D7E4 00379484  39 20 00 00 */	li r9, 0
+/* 8037D7E8 00379488  38 E7 00 04 */	addi r7, r7, 4
+/* 8037D7EC 0037948C  48 00 00 08 */	b lbl_8037D7F4
+lbl_8037D7F0:
+/* 8037D7F0 00379490  39 40 00 00 */	li r10, 0
+lbl_8037D7F4:
+/* 8037D7F4 00379494  38 C6 00 02 */	addi r6, r6, 2
+/* 8037D7F8 00379498  39 08 00 01 */	addi r8, r8, 1
+lbl_8037D7FC:
+/* 8037D7FC 0037949C  A0 06 00 00 */	lhz r0, 0(r6)
+/* 8037D800 003794A0  2C 00 00 00 */	cmpwi r0, 0
+/* 8037D804 003794A4  40 82 FF A4 */	bne lbl_8037D7A8
+/* 8037D808 003794A8  4E 80 00 20 */	blr 
+
+.global "init__Q210homebutton10HomeButtonFv"
+"init__Q210homebutton10HomeButtonFv":
+/* 8037D80C 003794AC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 8037D810 003794B0  7C 08 02 A6 */	mflr r0
+/* 8037D814 003794B4  90 01 00 64 */	stw r0, 0x64(r1)
+/* 8037D818 003794B8  DB E1 00 50 */	stfd f31, 0x50(r1)
+/* 8037D81C 003794BC  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
+/* 8037D820 003794C0  39 61 00 50 */	addi r11, r1, 0x50
+/* 8037D824 003794C4  48 09 1B 51 */	bl "_savegpr_27"
+/* 8037D828 003794C8  88 03 00 8B */	lbz r0, 0x8b(r3)
+/* 8037D82C 003794CC  3F A0 80 47 */	lis r29, lbl_80468288@ha
+/* 8037D830 003794D0  7C 7F 1B 78 */	mr r31, r3
+/* 8037D834 003794D4  2C 00 00 00 */	cmpwi r0, 0
+/* 8037D838 003794D8  3B BD 82 88 */	addi r29, r29, lbl_80468288@l
+/* 8037D83C 003794DC  40 82 02 FC */	bne lbl_8037DB38
+/* 8037D840 003794E0  3B C0 00 00 */	li r30, 0
+/* 8037D844 003794E4  38 00 00 01 */	li r0, 1
+/* 8037D848 003794E8  98 03 00 8B */	stb r0, 0x8b(r3)
+/* 8037D84C 003794EC  9B C3 00 8C */	stb r30, 0x8c(r3)
+/* 8037D850 003794F0  9B C3 00 8D */	stb r30, 0x8d(r3)
+/* 8037D854 003794F4  9B C3 00 91 */	stb r30, 0x91(r3)
+/* 8037D858 003794F8  9B C3 00 8F */	stb r30, 0x8f(r3)
+/* 8037D85C 003794FC  93 C3 01 BC */	stw r30, 0x1bc(r3)
+/* 8037D860 00379500  4B FF EE 69 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037D864 00379504  4B FF E7 E9 */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037D868 00379508  C0 23 00 30 */	lfs f1, 0x30(r3)
+/* 8037D86C 0037950C  C0 02 A6 98 */	lfs f0, lbl_805DB8B8-_SDA2_BASE_(r2)
+/* 8037D870 00379510  EC 00 08 24 */	fdivs f0, f0, f1
+/* 8037D874 00379514  FC 00 00 1E */	fctiwz f0, f0
+/* 8037D878 00379518  D8 01 00 20 */	stfd f0, 0x20(r1)
+/* 8037D87C 0037951C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037D880 00379520  90 1F 05 C8 */	stw r0, 0x5c8(r31)
+/* 8037D884 00379524  4B FF EE 45 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037D888 00379528  4B FF E7 C5 */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037D88C 0037952C  C0 23 00 30 */	lfs f1, 0x30(r3)
+/* 8037D890 00379530  C0 02 A6 9C */	lfs f0, lbl_805DB8BC-_SDA2_BASE_(r2)
+/* 8037D894 00379534  80 1F 00 B0 */	lwz r0, 0xb0(r31)
+/* 8037D898 00379538  EC 00 08 24 */	fdivs f0, f0, f1
+/* 8037D89C 0037953C  2C 00 00 03 */	cmpwi r0, 3
+/* 8037D8A0 00379540  FC 00 00 1E */	fctiwz f0, f0
+/* 8037D8A4 00379544  D8 01 00 28 */	stfd f0, 0x28(r1)
+/* 8037D8A8 00379548  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 8037D8AC 0037954C  90 1F 05 CC */	stw r0, 0x5cc(r31)
+/* 8037D8B0 00379550  41 82 00 08 */	beq lbl_8037D8B8
+/* 8037D8B4 00379554  9B DF 00 8E */	stb r30, 0x8e(r31)
+lbl_8037D8B8:
+/* 8037D8B8 00379558  38 60 00 00 */	li r3, 0
+/* 8037D8BC 0037955C  4B FF A3 05 */	bl "GXSetCullMode"
+/* 8037D8C0 00379560  38 00 00 00 */	li r0, 0
+/* 8037D8C4 00379564  90 1F 00 1C */	stw r0, 0x1c(r31)
+/* 8037D8C8 00379568  90 1F 00 20 */	stw r0, 0x20(r31)
+/* 8037D8CC 0037956C  90 1F 00 24 */	stw r0, 0x24(r31)
+/* 8037D8D0 00379570  90 1F 00 28 */	stw r0, 0x28(r31)
+/* 8037D8D4 00379574  90 1F 00 2C */	stw r0, 0x2c(r31)
+/* 8037D8D8 00379578  90 1F 00 30 */	stw r0, 0x30(r31)
+/* 8037D8DC 0037957C  90 1F 00 34 */	stw r0, 0x34(r31)
+/* 8037D8E0 00379580  90 1F 00 38 */	stw r0, 0x38(r31)
+/* 8037D8E4 00379584  90 1F 00 3C */	stw r0, 0x3c(r31)
+/* 8037D8E8 00379588  90 1F 00 40 */	stw r0, 0x40(r31)
+/* 8037D8EC 0037958C  90 1F 00 44 */	stw r0, 0x44(r31)
+/* 8037D8F0 00379590  90 1F 00 48 */	stw r0, 0x48(r31)
+/* 8037D8F4 00379594  90 1F 00 4C */	stw r0, 0x4c(r31)
+/* 8037D8F8 00379598  90 1F 00 50 */	stw r0, 0x50(r31)
+/* 8037D8FC 0037959C  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 8037D900 003795A0  80 7F 02 00 */	lwz r3, 0x200(r31)
+/* 8037D904 003795A4  90 1F 00 00 */	stw r0, 0(r31)
+/* 8037D908 003795A8  98 1F 00 88 */	stb r0, 0x88(r31)
+/* 8037D90C 003795AC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037D910 003795B0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037D914 003795B4  7D 89 03 A6 */	mtctr r12
+/* 8037D918 003795B8  4E 80 04 21 */	bctrl 
+/* 8037D91C 003795BC  7F E3 FB 78 */	mr r3, r31
+/* 8037D920 003795C0  48 00 2C 71 */	bl "updateTrigPane__Q210homebutton10HomeButtonFv"
+/* 8037D924 003795C4  80 9F 01 E8 */	lwz r4, 0x1e8(r31)
+/* 8037D928 003795C8  38 61 00 10 */	addi r3, r1, 0x10
+/* 8037D92C 003795CC  48 00 F4 F1 */	bl "GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037D930 003795D0  38 7F 02 08 */	addi r3, r31, 0x208
+/* 8037D934 003795D4  38 81 00 10 */	addi r4, r1, 0x10
+/* 8037D938 003795D8  48 00 03 9D */	bl "SetViewRect__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm2ut4Rect"
+/* 8037D93C 003795DC  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037D940 003795E0  38 9F 02 08 */	addi r4, r31, 0x208
+/* 8037D944 003795E4  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037D948 003795E8  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 8037D94C 003795EC  7D 89 03 A6 */	mtctr r12
+/* 8037D950 003795F0  4E 80 04 21 */	bctrl 
+/* 8037D954 003795F4  7F FC FB 78 */	mr r28, r31
+/* 8037D958 003795F8  3B C0 00 00 */	li r30, 0
+lbl_8037D95C:
+/* 8037D95C 003795FC  80 7C 01 EC */	lwz r3, 0x1ec(r28)
+/* 8037D960 00379600  38 9F 02 08 */	addi r4, r31, 0x208
+/* 8037D964 00379604  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037D968 00379608  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 8037D96C 0037960C  7D 89 03 A6 */	mtctr r12
+/* 8037D970 00379610  4E 80 04 21 */	bctrl 
+/* 8037D974 00379614  3B DE 00 01 */	addi r30, r30, 1
+/* 8037D978 00379618  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037D97C 0037961C  2C 1E 00 04 */	cmpwi r30, 4
+/* 8037D980 00379620  41 80 FF DC */	blt lbl_8037D95C
+/* 8037D984 00379624  7F E3 FB 78 */	mr r3, r31
+/* 8037D988 00379628  38 80 FF FF */	li r4, -1
+/* 8037D98C 0037962C  48 00 42 C5 */	bl "reset_guiManager__Q210homebutton10HomeButtonFi"
+/* 8037D990 00379630  C3 E2 A6 84 */	lfs f31, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037D994 00379634  7F FC FB 78 */	mr r28, r31
+/* 8037D998 00379638  3B 60 00 00 */	li r27, 0
+/* 8037D99C 0037963C  3B C0 00 00 */	li r30, 0
+lbl_8037D9A0:
+/* 8037D9A0 00379640  93 DC 00 54 */	stw r30, 0x54(r28)
+/* 8037D9A4 00379644  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9A8 00379648  48 00 59 65 */	bl "setInValidPos__Q210homebutton10ControllerFv"
+/* 8037D9AC 0037964C  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9B0 00379650  48 00 59 49 */	bl "clrKpadButton__Q210homebutton10ControllerFv"
+/* 8037D9B4 00379654  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9B8 00379658  48 00 59 BD */	bl "disconnect__Q210homebutton10ControllerFv"
+/* 8037D9BC 0037965C  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9C0 00379660  48 00 5F E9 */	bl "clrBatteryFlag__Q210homebutton10ControllerFv"
+/* 8037D9C4 00379664  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9C8 00379668  48 00 56 C5 */	bl "initCallback__Q210homebutton10ControllerFv"
+/* 8037D9CC 0037966C  80 7C 02 5C */	lwz r3, 0x25c(r28)
+/* 8037D9D0 00379670  48 00 5B 39 */	bl "initSound__Q210homebutton10ControllerFv"
+/* 8037D9D4 00379674  D3 FC 01 C0 */	stfs f31, 0x1c0(r28)
+/* 8037D9D8 00379678  3B 7B 00 01 */	addi r27, r27, 1
+/* 8037D9DC 0037967C  2C 1B 00 04 */	cmpwi r27, 4
+/* 8037D9E0 00379680  D3 FC 01 D0 */	stfs f31, 0x1d0(r28)
+/* 8037D9E4 00379684  3B 9C 00 04 */	addi r28, r28, 4
+/* 8037D9E8 00379688  41 80 FF B8 */	blt lbl_8037D9A0
+/* 8037D9EC 0037968C  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037D9F0 00379690  4B FF FC 01 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037D9F4 00379694  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037D9F8 00379698  38 A0 00 01 */	li r5, 1
+/* 8037D9FC 0037969C  80 9D 09 10 */	lwz r4, 0x910(r29)
+/* 8037DA00 003796A0  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037DA04 003796A4  7D 89 03 A6 */	mtctr r12
+/* 8037DA08 003796A8  4E 80 04 21 */	bctrl 
+/* 8037DA0C 003796AC  38 80 00 00 */	li r4, 0
+/* 8037DA10 003796B0  48 00 02 8D */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037DA14 003796B4  38 7D 09 98 */	addi r3, r29, 0x998
+/* 8037DA18 003796B8  3B 80 00 02 */	li r28, 2
+/* 8037DA1C 003796BC  3B C3 00 08 */	addi r30, r3, 8
+lbl_8037DA20:
+/* 8037DA20 003796C0  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037DA24 003796C4  4B FF FB CD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037DA28 003796C8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037DA2C 003796CC  38 A0 00 01 */	li r5, 1
+/* 8037DA30 003796D0  80 9E 00 00 */	lwz r4, 0(r30)
+/* 8037DA34 003796D4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037DA38 003796D8  7D 89 03 A6 */	mtctr r12
+/* 8037DA3C 003796DC  4E 80 04 21 */	bctrl 
+/* 8037DA40 003796E0  38 80 00 00 */	li r4, 0
+/* 8037DA44 003796E4  48 00 02 59 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037DA48 003796E8  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037DA4C 003796EC  3B DE 00 04 */	addi r30, r30, 4
+/* 8037DA50 003796F0  2C 1C 00 07 */	cmpwi r28, 7
+/* 8037DA54 003796F4  41 80 FF CC */	blt lbl_8037DA20
+/* 8037DA58 003796F8  3B BD 09 E4 */	addi r29, r29, 0x9e4
+/* 8037DA5C 003796FC  3B 80 00 00 */	li r28, 0
+lbl_8037DA60:
+/* 8037DA60 00379700  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037DA64 00379704  4B FF FB 8D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037DA68 00379708  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037DA6C 0037970C  38 A0 00 01 */	li r5, 1
+/* 8037DA70 00379710  80 9D 00 00 */	lwz r4, 0(r29)
+/* 8037DA74 00379714  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037DA78 00379718  7D 89 03 A6 */	mtctr r12
+/* 8037DA7C 0037971C  4E 80 04 21 */	bctrl 
+/* 8037DA80 00379720  38 80 00 00 */	li r4, 0
+/* 8037DA84 00379724  48 00 02 19 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037DA88 00379728  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037DA8C 0037972C  3B BD 00 04 */	addi r29, r29, 4
+/* 8037DA90 00379730  2C 1C 00 03 */	cmpwi r28, 3
+/* 8037DA94 00379734  41 80 FF CC */	blt lbl_8037DA60
+/* 8037DA98 00379738  80 7F 02 6C */	lwz r3, 0x26c(r31)
+/* 8037DA9C 0037973C  48 00 7C 0D */	bl "Start__Q210homebutton9RemoteSpkFv"
+/* 8037DAA0 00379740  80 1F 05 D0 */	lwz r0, 0x5d0(r31)
+/* 8037DAA4 00379744  2C 00 00 00 */	cmpwi r0, 0
+/* 8037DAA8 00379748  41 82 00 50 */	beq lbl_8037DAF8
+/* 8037DAAC 0037974C  3C 80 80 59 */	lis r4, "sMutex__Q210homebutton10HomeButton"@ha
+/* 8037DAB0 00379750  38 61 00 08 */	addi r3, r1, 8
+/* 8037DAB4 00379754  38 84 1C A8 */	addi r4, r4, "sMutex__Q210homebutton10HomeButton"@l
+/* 8037DAB8 00379758  48 00 01 95 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 8037DABC 0037975C  3B 80 00 00 */	li r28, 0
+/* 8037DAC0 00379760  48 00 00 1C */	b lbl_8037DADC
+lbl_8037DAC4:
+/* 8037DAC4 00379764  80 7F 05 D0 */	lwz r3, 0x5d0(r31)
+/* 8037DAC8 00379768  7F 84 E3 78 */	mr r4, r28
+/* 8037DACC 0037976C  48 00 01 7D */	bl "GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFi"
+/* 8037DAD0 00379770  C0 22 A6 88 */	lfs f1, lbl_805DB8A8-_SDA2_BASE_(r2)
+/* 8037DAD4 00379774  48 03 47 41 */	bl "SetVolume__Q36nw4hbm3snd11SoundPlayerFf"
+/* 8037DAD8 00379778  3B 9C 00 01 */	addi r28, r28, 1
+lbl_8037DADC:
+/* 8037DADC 0037977C  80 7F 05 D0 */	lwz r3, 0x5d0(r31)
+/* 8037DAE0 00379780  48 00 01 61 */	bl "GetSoundPlayerCount__Q36nw4hbm3snd18SoundArchivePlayerCFv"
+/* 8037DAE4 00379784  7C 1C 18 40 */	cmplw r28, r3
+/* 8037DAE8 00379788  41 80 FF DC */	blt lbl_8037DAC4
+/* 8037DAEC 0037978C  38 61 00 08 */	addi r3, r1, 8
+/* 8037DAF0 00379790  38 80 FF FF */	li r4, -1
+/* 8037DAF4 00379794  48 00 00 A5 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+lbl_8037DAF8:
+/* 8037DAF8 00379798  7F E3 FB 78 */	mr r3, r31
+/* 8037DAFC 0037979C  38 80 00 00 */	li r4, 0
+/* 8037DB00 003797A0  48 00 08 15 */	bl "calc__Q210homebutton10HomeButtonFPC17HBMControllerData"
+/* 8037DB04 003797A4  4B FF EB C5 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037DB08 003797A8  4B FF E5 45 */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037DB0C 003797AC  C0 23 00 30 */	lfs f1, 0x30(r3)
+/* 8037DB10 003797B0  38 7F 04 04 */	addi r3, r31, 0x404
+/* 8037DB14 003797B4  C0 02 A6 A0 */	lfs f0, lbl_805DB8C0-_SDA2_BASE_(r2)
+/* 8037DB18 003797B8  EC 00 08 24 */	fdivs f0, f0, f1
+/* 8037DB1C 003797BC  FC 00 00 1E */	fctiwz f0, f0
+/* 8037DB20 003797C0  D8 01 00 28 */	stfd f0, 0x28(r1)
+/* 8037DB24 003797C4  80 81 00 2C */	lwz r4, 0x2c(r1)
+/* 8037DB28 003797C8  48 00 48 35 */	bl "init__Q310homebutton10HomeButton10BlackFaderFi"
+/* 8037DB2C 003797CC  38 61 00 10 */	addi r3, r1, 0x10
+/* 8037DB30 003797D0  38 80 FF FF */	li r4, -1
+/* 8037DB34 003797D4  48 00 00 25 */	bl "__dt__Q36nw4hbm2ut4RectFv"
+lbl_8037DB38:
+/* 8037DB38 003797D8  E3 E1 00 58 */	psq_l f31, 88(r1), 0, qr0
+/* 8037DB3C 003797DC  39 61 00 50 */	addi r11, r1, 0x50
+/* 8037DB40 003797E0  CB E1 00 50 */	lfd f31, 0x50(r1)
+/* 8037DB44 003797E4  48 09 18 7D */	bl "_restgpr_27"
+/* 8037DB48 003797E8  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 8037DB4C 003797EC  7C 08 03 A6 */	mtlr r0
+/* 8037DB50 003797F0  38 21 00 60 */	addi r1, r1, 0x60
+/* 8037DB54 003797F4  4E 80 00 20 */	blr 
+
+.global "__dt__Q36nw4hbm2ut4RectFv"
+"__dt__Q36nw4hbm2ut4RectFv":
+/* 8037DB58 003797F8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DB5C 003797FC  7C 08 02 A6 */	mflr r0
+/* 8037DB60 00379800  2C 03 00 00 */	cmpwi r3, 0
+/* 8037DB64 00379804  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DB68 00379808  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DB6C 0037980C  7C 7F 1B 78 */	mr r31, r3
+/* 8037DB70 00379810  41 82 00 10 */	beq lbl_8037DB80
+/* 8037DB74 00379814  2C 04 00 00 */	cmpwi r4, 0
+/* 8037DB78 00379818  40 81 00 08 */	ble lbl_8037DB80
+/* 8037DB7C 0037981C  4B ED C4 31 */	bl "__dl__FPv"
+lbl_8037DB80:
+/* 8037DB80 00379820  7F E3 FB 78 */	mr r3, r31
+/* 8037DB84 00379824  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DB88 00379828  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DB8C 0037982C  7C 08 03 A6 */	mtlr r0
+/* 8037DB90 00379830  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DB94 00379834  4E 80 00 20 */	blr 
+
+.global "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+"__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv":
+/* 8037DB98 00379838  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DB9C 0037983C  7C 08 02 A6 */	mflr r0
+/* 8037DBA0 00379840  2C 03 00 00 */	cmpwi r3, 0
+/* 8037DBA4 00379844  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DBA8 00379848  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DBAC 0037984C  7C 9F 23 78 */	mr r31, r4
+/* 8037DBB0 00379850  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037DBB4 00379854  7C 7E 1B 78 */	mr r30, r3
+/* 8037DBB8 00379858  41 82 00 28 */	beq lbl_8037DBE0
+/* 8037DBBC 0037985C  80 63 00 00 */	lwz r3, 0(r3)
+/* 8037DBC0 00379860  48 00 00 7D */	bl "Unlock__Q36nw4hbm2ut6detailFR7OSMutex"
+/* 8037DBC4 00379864  7F C3 F3 78 */	mr r3, r30
+/* 8037DBC8 00379868  38 80 00 00 */	li r4, 0
+/* 8037DBCC 0037986C  48 00 00 31 */	bl "__dt__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+/* 8037DBD0 00379870  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037DBD4 00379874  40 81 00 0C */	ble lbl_8037DBE0
+/* 8037DBD8 00379878  7F C3 F3 78 */	mr r3, r30
+/* 8037DBDC 0037987C  4B ED C3 D1 */	bl "__dl__FPv"
+lbl_8037DBE0:
+/* 8037DBE0 00379880  7F C3 F3 78 */	mr r3, r30
+/* 8037DBE4 00379884  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DBE8 00379888  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037DBEC 0037988C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DBF0 00379890  7C 08 03 A6 */	mtlr r0
+/* 8037DBF4 00379894  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DBF8 00379898  4E 80 00 20 */	blr 
+
+.global "__dt__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+"__dt__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv":
+/* 8037DBFC 0037989C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DC00 003798A0  7C 08 02 A6 */	mflr r0
+/* 8037DC04 003798A4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037DC08 003798A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DC0C 003798AC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DC10 003798B0  7C 7F 1B 78 */	mr r31, r3
+/* 8037DC14 003798B4  41 82 00 10 */	beq lbl_8037DC24
+/* 8037DC18 003798B8  2C 04 00 00 */	cmpwi r4, 0
+/* 8037DC1C 003798BC  40 81 00 08 */	ble lbl_8037DC24
+/* 8037DC20 003798C0  4B ED C3 8D */	bl "__dl__FPv"
+lbl_8037DC24:
+/* 8037DC24 003798C4  7F E3 FB 78 */	mr r3, r31
+/* 8037DC28 003798C8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DC2C 003798CC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DC30 003798D0  7C 08 03 A6 */	mtlr r0
+/* 8037DC34 003798D4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DC38 003798D8  4E 80 00 20 */	blr 
+
+.global "Unlock__Q36nw4hbm2ut6detailFR7OSMutex"
+"Unlock__Q36nw4hbm2ut6detailFR7OSMutex":
+/* 8037DC3C 003798DC  48 06 3A E8 */	b "OSUnlockMutex"
+
+.global "GetSoundPlayerCount__Q36nw4hbm3snd18SoundArchivePlayerCFv"
+"GetSoundPlayerCount__Q36nw4hbm3snd18SoundArchivePlayerCFv":
+/* 8037DC40 003798E0  80 63 00 70 */	lwz r3, 0x70(r3)
+/* 8037DC44 003798E4  4E 80 00 20 */	blr 
+
+.global "GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFi"
+"GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFi":
+/* 8037DC48 003798E8  48 03 19 24 */	b "GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFUl"
+
+.global "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+"__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex":
+/* 8037DC4C 003798EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DC50 003798F0  7C 08 02 A6 */	mflr r0
+/* 8037DC54 003798F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DC58 003798F8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DC5C 003798FC  7C 9F 23 78 */	mr r31, r4
+/* 8037DC60 00379900  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037DC64 00379904  7C 7E 1B 78 */	mr r30, r3
+/* 8037DC68 00379908  48 00 00 31 */	bl "__ct__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+/* 8037DC6C 0037990C  93 FE 00 00 */	stw r31, 0(r30)
+/* 8037DC70 00379910  7F E3 FB 78 */	mr r3, r31
+/* 8037DC74 00379914  48 00 00 21 */	bl "Lock__Q36nw4hbm2ut6detailFR7OSMutex"
+/* 8037DC78 00379918  7F C3 F3 78 */	mr r3, r30
+/* 8037DC7C 0037991C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DC80 00379920  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037DC84 00379924  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DC88 00379928  7C 08 03 A6 */	mtlr r0
+/* 8037DC8C 0037992C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DC90 00379930  4E 80 00 20 */	blr 
+
+.global "Lock__Q36nw4hbm2ut6detailFR7OSMutex"
+"Lock__Q36nw4hbm2ut6detailFR7OSMutex":
+/* 8037DC94 00379934  48 06 39 B4 */	b "OSLockMutex"
+
+.global "__ct__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+"__ct__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv":
+/* 8037DC98 00379938  4E 80 00 20 */	blr 
+
+.global "SetVisible__Q36nw4hbm3lyt4PaneFb"
+"SetVisible__Q36nw4hbm3lyt4PaneFb":
+/* 8037DC9C 0037993C  7C 85 23 78 */	mr r5, r4
+/* 8037DCA0 00379940  38 80 00 00 */	li r4, 0
+/* 8037DCA4 00379944  38 63 00 CF */	addi r3, r3, 0xcf
+/* 8037DCA8 00379948  48 00 00 04 */	b "SetBit<Uc>__Q36nw4hbm3lyt6detailFPUcib_v"
+
+.global "SetBit<Uc>__Q36nw4hbm3lyt6detailFPUcib_v"
+"SetBit<Uc>__Q36nw4hbm3lyt6detailFPUcib_v":
+/* 8037DCAC 0037994C  38 00 00 01 */	li r0, 1
+/* 8037DCB0 00379950  88 E3 00 00 */	lbz r7, 0(r3)
+/* 8037DCB4 00379954  7C 06 20 30 */	slw r6, r0, r4
+/* 8037DCB8 00379958  7C A0 20 30 */	slw r0, r5, r4
+/* 8037DCBC 0037995C  7C C4 30 F8 */	nor r4, r6, r6
+/* 8037DCC0 00379960  54 84 06 3E */	clrlwi r4, r4, 0x18
+/* 8037DCC4 00379964  7C E4 20 38 */	and r4, r7, r4
+/* 8037DCC8 00379968  7C 80 03 78 */	or r0, r4, r0
+/* 8037DCCC 0037996C  98 03 00 00 */	stb r0, 0(r3)
+/* 8037DCD0 00379970  4E 80 00 20 */	blr 
+
+.global "SetViewRect__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm2ut4Rect"
+"SetViewRect__Q36nw4hbm3lyt8DrawInfoFRCQ36nw4hbm2ut4Rect":
+/* 8037DCD4 00379974  38 63 00 34 */	addi r3, r3, 0x34
+/* 8037DCD8 00379978  48 00 00 04 */	b "__as__Q36nw4hbm2ut4RectFRCQ36nw4hbm2ut4Rect"
+
+.global "__as__Q36nw4hbm2ut4RectFRCQ36nw4hbm2ut4Rect"
+"__as__Q36nw4hbm2ut4RectFRCQ36nw4hbm2ut4Rect":
+/* 8037DCDC 0037997C  C0 64 00 00 */	lfs f3, 0(r4)
+/* 8037DCE0 00379980  C0 44 00 04 */	lfs f2, 4(r4)
+/* 8037DCE4 00379984  C0 24 00 08 */	lfs f1, 8(r4)
+/* 8037DCE8 00379988  C0 04 00 0C */	lfs f0, 0xc(r4)
+/* 8037DCEC 0037998C  D0 63 00 00 */	stfs f3, 0(r3)
+/* 8037DCF0 00379990  D0 43 00 04 */	stfs f2, 4(r3)
+/* 8037DCF4 00379994  D0 23 00 08 */	stfs f1, 8(r3)
+/* 8037DCF8 00379998  D0 03 00 0C */	stfs f0, 0xc(r3)
+/* 8037DCFC 0037999C  4E 80 00 20 */	blr 
+
+.global "init_msg__Q210homebutton10HomeButtonFv"
+"init_msg__Q210homebutton10HomeButtonFv":
+/* 8037DD00 003799A0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037DD04 003799A4  7C 08 02 A6 */	mflr r0
+/* 8037DD08 003799A8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037DD0C 003799AC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037DD10 003799B0  3F E0 80 47 */	lis r31, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 8037DD14 003799B4  3B FF 8C 6C */	addi r31, r31, "scFuncTextPaneName__Q210homebutton10HomeButton"@l
+/* 8037DD18 003799B8  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037DD1C 003799BC  3B C0 00 00 */	li r30, 0
+/* 8037DD20 003799C0  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037DD24 003799C4  3B A0 00 00 */	li r29, 0
+/* 8037DD28 003799C8  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8037DD2C 003799CC  7C 7C 1B 78 */	mr r28, r3
+lbl_8037DD30:
+/* 8037DD30 003799D0  80 7C 01 E8 */	lwz r3, 0x1e8(r28)
+/* 8037DD34 003799D4  4B FF F8 BD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037DD38 003799D8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037DD3C 003799DC  38 A0 00 01 */	li r5, 1
+/* 8037DD40 003799E0  80 9F 00 00 */	lwz r4, 0(r31)
+/* 8037DD44 003799E4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037DD48 003799E8  7D 89 03 A6 */	mtctr r12
+/* 8037DD4C 003799EC  4E 80 04 21 */	bctrl 
+/* 8037DD50 003799F0  48 00 00 89 */	bl "DynamicCast<PQ36nw4hbm3lyt7TextBox,Q36nw4hbm3lyt4Pane>__Q26nw4hbm2utFPQ36nw4hbm3lyt4Pane_PQ36nw4hbm3lyt7TextBox"
+/* 8037DD54 003799F4  80 9C 00 04 */	lwz r4, 4(r28)
+/* 8037DD58 003799F8  7C 1E E2 14 */	add r0, r30, r28
+/* 8037DD5C 003799FC  38 C0 00 00 */	li r6, 0
+/* 8037DD60 00379A00  80 84 00 1C */	lwz r4, 0x1c(r4)
+/* 8037DD64 00379A04  1C 84 00 18 */	mulli r4, r4, 0x18
+/* 8037DD68 00379A08  7C 84 02 14 */	add r4, r4, r0
+/* 8037DD6C 00379A0C  80 84 00 B4 */	lwz r4, 0xb4(r4)
+/* 8037DD70 00379A10  7C 85 23 78 */	mr r5, r4
+lbl_8037DD74:
+/* 8037DD74 00379A14  A0 05 00 00 */	lhz r0, 0(r5)
+/* 8037DD78 00379A18  28 00 00 22 */	cmplwi r0, 0x22
+/* 8037DD7C 00379A1C  41 82 00 10 */	beq lbl_8037DD8C
+/* 8037DD80 00379A20  38 A5 00 02 */	addi r5, r5, 2
+/* 8037DD84 00379A24  38 C6 00 01 */	addi r6, r6, 1
+/* 8037DD88 00379A28  4B FF FF EC */	b lbl_8037DD74
+lbl_8037DD8C:
+/* 8037DD8C 00379A2C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037DD90 00379A30  54 C6 04 3E */	clrlwi r6, r6, 0x10
+/* 8037DD94 00379A34  38 A0 00 00 */	li r5, 0
+/* 8037DD98 00379A38  81 8C 00 70 */	lwz r12, 0x70(r12)
+/* 8037DD9C 00379A3C  7D 89 03 A6 */	mtctr r12
+/* 8037DDA0 00379A40  4E 80 04 21 */	bctrl 
+/* 8037DDA4 00379A44  3B BD 00 01 */	addi r29, r29, 1
+/* 8037DDA8 00379A48  3B DE 00 04 */	addi r30, r30, 4
+/* 8037DDAC 00379A4C  2C 1D 00 03 */	cmpwi r29, 3
+/* 8037DDB0 00379A50  3B FF 00 04 */	addi r31, r31, 4
+/* 8037DDB4 00379A54  41 80 FF 7C */	blt lbl_8037DD30
+/* 8037DDB8 00379A58  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037DDBC 00379A5C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037DDC0 00379A60  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037DDC4 00379A64  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037DDC8 00379A68  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8037DDCC 00379A6C  7C 08 03 A6 */	mtlr r0
+/* 8037DDD0 00379A70  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037DDD4 00379A74  4E 80 00 20 */	blr 
+
+.global "DynamicCast<PQ36nw4hbm3lyt7TextBox,Q36nw4hbm3lyt4Pane>__Q26nw4hbm2utFPQ36nw4hbm3lyt4Pane_PQ36nw4hbm3lyt7TextBox"
+"DynamicCast<PQ36nw4hbm3lyt7TextBox,Q36nw4hbm3lyt4Pane>__Q26nw4hbm2utFPQ36nw4hbm3lyt4Pane_PQ36nw4hbm3lyt7TextBox":
+/* 8037DDD8 00379A78  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DDDC 00379A7C  7C 08 02 A6 */	mflr r0
+/* 8037DDE0 00379A80  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DDE4 00379A84  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DDE8 00379A88  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037DDEC 00379A8C  7C 7E 1B 78 */	mr r30, r3
+/* 8037DDF0 00379A90  38 60 00 00 */	li r3, 0
+/* 8037DDF4 00379A94  48 00 00 81 */	bl "GetTypeInfoFromPtr_<Q36nw4hbm3lyt7TextBox>__Q36nw4hbm2ut6detailFPQ36nw4hbm3lyt7TextBox_PCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
+/* 8037DDF8 00379A98  81 9E 00 00 */	lwz r12, 0(r30)
+/* 8037DDFC 00379A9C  7C 7F 1B 78 */	mr r31, r3
+/* 8037DE00 00379AA0  7F C3 F3 78 */	mr r3, r30
+/* 8037DE04 00379AA4  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8037DE08 00379AA8  7D 89 03 A6 */	mtctr r12
+/* 8037DE0C 00379AAC  4E 80 04 21 */	bctrl 
+/* 8037DE10 00379AB0  7F E4 FB 78 */	mr r4, r31
+/* 8037DE14 00379AB4  48 00 00 31 */	bl "IsDerivedFrom__Q46nw4hbm2ut6detail15RuntimeTypeInfoCFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
+/* 8037DE18 00379AB8  2C 03 00 00 */	cmpwi r3, 0
+/* 8037DE1C 00379ABC  41 82 00 0C */	beq lbl_8037DE28
+/* 8037DE20 00379AC0  7F C3 F3 78 */	mr r3, r30
+/* 8037DE24 00379AC4  48 00 00 08 */	b lbl_8037DE2C
+lbl_8037DE28:
+/* 8037DE28 00379AC8  38 60 00 00 */	li r3, 0
+lbl_8037DE2C:
+/* 8037DE2C 00379ACC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DE30 00379AD0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DE34 00379AD4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037DE38 00379AD8  7C 08 03 A6 */	mtlr r0
+/* 8037DE3C 00379ADC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DE40 00379AE0  4E 80 00 20 */	blr 
+
+.global "IsDerivedFrom__Q46nw4hbm2ut6detail15RuntimeTypeInfoCFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
+"IsDerivedFrom__Q46nw4hbm2ut6detail15RuntimeTypeInfoCFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo":
+/* 8037DE44 00379AE4  48 00 00 18 */	b lbl_8037DE5C
+lbl_8037DE48:
+/* 8037DE48 00379AE8  7C 03 20 40 */	cmplw r3, r4
+/* 8037DE4C 00379AEC  40 82 00 0C */	bne lbl_8037DE58
+/* 8037DE50 00379AF0  38 60 00 01 */	li r3, 1
+/* 8037DE54 00379AF4  4E 80 00 20 */	blr 
+lbl_8037DE58:
+/* 8037DE58 00379AF8  80 63 00 00 */	lwz r3, 0(r3)
+lbl_8037DE5C:
+/* 8037DE5C 00379AFC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037DE60 00379B00  40 82 FF E8 */	bne lbl_8037DE48
+/* 8037DE64 00379B04  38 60 00 00 */	li r3, 0
+/* 8037DE68 00379B08  4E 80 00 20 */	blr 
+
+.global "GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv"
+"GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv":
+/* 8037DE6C 00379B0C  38 6D C5 60 */	addi r3, r13, "typeInfo__Q36nw4hbm3lyt4Pane"-_SDA_BASE_
+/* 8037DE70 00379B10  4E 80 00 20 */	blr 
+
+.global "GetTypeInfoFromPtr_<Q36nw4hbm3lyt7TextBox>__Q36nw4hbm2ut6detailFPQ36nw4hbm3lyt7TextBox_PCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
+"GetTypeInfoFromPtr_<Q36nw4hbm3lyt7TextBox>__Q36nw4hbm2ut6detailFPQ36nw4hbm3lyt7TextBox_PCQ46nw4hbm2ut6detail15RuntimeTypeInfo":
+/* 8037DE74 00379B14  38 6D C5 70 */	addi r3, r13, "typeInfo__Q36nw4hbm3lyt7TextBox"-_SDA_BASE_
+/* 8037DE78 00379B18  4E 80 00 20 */	blr 
+
+.global "init_volume__Q210homebutton10HomeButtonFv"
+"init_volume__Q210homebutton10HomeButtonFv":
+/* 8037DE7C 00379B1C  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 8037DE80 00379B20  7C 08 02 A6 */	mflr r0
+/* 8037DE84 00379B24  90 01 00 44 */	stw r0, 0x44(r1)
+/* 8037DE88 00379B28  DB E1 00 30 */	stfd f31, 0x30(r1)
+/* 8037DE8C 00379B2C  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
+/* 8037DE90 00379B30  DB C1 00 20 */	stfd f30, 0x20(r1)
+/* 8037DE94 00379B34  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
+/* 8037DE98 00379B38  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037DE9C 00379B3C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037DEA0 00379B40  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037DEA4 00379B44  7C 7D 1B 78 */	mr r29, r3
+/* 8037DEA8 00379B48  48 00 43 41 */	bl "getVolume__Q210homebutton10HomeButtonFv"
+/* 8037DEAC 00379B4C  90 7D 00 80 */	stw r3, 0x80(r29)
+/* 8037DEB0 00379B50  7F A3 EB 78 */	mr r3, r29
+/* 8037DEB4 00379B54  38 80 00 0A */	li r4, 0xa
+/* 8037DEB8 00379B58  48 00 42 DD */	bl "setVolume__Q210homebutton10HomeButtonFi"
+/* 8037DEBC 00379B5C  CB C2 A6 A8 */	lfd f30, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 8037DEC0 00379B60  3B C0 00 00 */	li r30, 0
+/* 8037DEC4 00379B64  C3 E2 A6 A4 */	lfs f31, lbl_805DB8C4-_SDA2_BASE_(r2)
+/* 8037DEC8 00379B68  3F E0 43 30 */	lis r31, 0x4330
+lbl_8037DECC:
+/* 8037DECC 00379B6C  7F A3 EB 78 */	mr r3, r29
+/* 8037DED0 00379B70  7F C4 F3 78 */	mr r4, r30
+/* 8037DED4 00379B74  48 00 01 0D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037DED8 00379B78  80 1D 00 80 */	lwz r0, 0x80(r29)
+/* 8037DEDC 00379B7C  93 E1 00 08 */	stw r31, 8(r1)
+/* 8037DEE0 00379B80  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 8037DEE4 00379B84  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8037DEE8 00379B88  C8 01 00 08 */	lfd f0, 8(r1)
+/* 8037DEEC 00379B8C  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 8037DEF0 00379B90  EC 20 F8 24 */	fdivs f1, f0, f31
+/* 8037DEF4 00379B94  48 00 54 85 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 8037DEF8 00379B98  7F A3 EB 78 */	mr r3, r29
+/* 8037DEFC 00379B9C  7F C4 F3 78 */	mr r4, r30
+/* 8037DF00 00379BA0  48 00 00 E1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037DF04 00379BA4  48 00 54 21 */	bl "connect__Q210homebutton10ControllerFv"
+/* 8037DF08 00379BA8  3B DE 00 01 */	addi r30, r30, 1
+/* 8037DF0C 00379BAC  2C 1E 00 04 */	cmpwi r30, 4
+/* 8037DF10 00379BB0  41 80 FF BC */	blt lbl_8037DECC
+/* 8037DF14 00379BB4  3B E0 00 00 */	li r31, 0
+lbl_8037DF18:
+/* 8037DF18 00379BB8  80 1D 00 80 */	lwz r0, 0x80(r29)
+/* 8037DF1C 00379BBC  7C 1F 00 00 */	cmpw r31, r0
+/* 8037DF20 00379BC0  40 80 00 28 */	bge lbl_8037DF48
+/* 8037DF24 00379BC4  7F A3 EB 78 */	mr r3, r29
+/* 8037DF28 00379BC8  38 9F 00 15 */	addi r4, r31, 0x15
+/* 8037DF2C 00379BCC  38 A0 00 0A */	li r5, 0xa
+/* 8037DF30 00379BD0  48 00 40 75 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037DF34 00379BD4  54 60 10 3A */	slwi r0, r3, 2
+/* 8037DF38 00379BD8  7C 7D 02 14 */	add r3, r29, r0
+/* 8037DF3C 00379BDC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037DF40 00379BE0  48 00 00 61 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037DF44 00379BE4  48 00 00 24 */	b lbl_8037DF68
+lbl_8037DF48:
+/* 8037DF48 00379BE8  7F A3 EB 78 */	mr r3, r29
+/* 8037DF4C 00379BEC  38 9F 00 15 */	addi r4, r31, 0x15
+/* 8037DF50 00379BF0  38 A0 00 09 */	li r5, 9
+/* 8037DF54 00379BF4  48 00 40 51 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037DF58 00379BF8  54 60 10 3A */	slwi r0, r3, 2
+/* 8037DF5C 00379BFC  7C 7D 02 14 */	add r3, r29, r0
+/* 8037DF60 00379C00  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037DF64 00379C04  48 00 00 3D */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_8037DF68:
+/* 8037DF68 00379C08  3B FF 00 01 */	addi r31, r31, 1
+/* 8037DF6C 00379C0C  2C 1F 00 0A */	cmpwi r31, 0xa
+/* 8037DF70 00379C10  41 80 FF A8 */	blt lbl_8037DF18
+/* 8037DF74 00379C14  E3 E1 00 38 */	psq_l f31, 56(r1), 0, qr0
+/* 8037DF78 00379C18  CB E1 00 30 */	lfd f31, 0x30(r1)
+/* 8037DF7C 00379C1C  E3 C1 00 28 */	psq_l f30, 40(r1), 0, qr0
+/* 8037DF80 00379C20  CB C1 00 20 */	lfd f30, 0x20(r1)
+/* 8037DF84 00379C24  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037DF88 00379C28  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037DF8C 00379C2C  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8037DF90 00379C30  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037DF94 00379C34  7C 08 03 A6 */	mtlr r0
+/* 8037DF98 00379C38  38 21 00 40 */	addi r1, r1, 0x40
+/* 8037DF9C 00379C3C  4E 80 00 20 */	blr 
+
+.global "start__Q210homebutton15FrameControllerFv"
+"start__Q210homebutton15FrameControllerFv":
+/* 8037DFA0 00379C40  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DFA4 00379C44  7C 08 02 A6 */	mflr r0
+/* 8037DFA8 00379C48  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DFAC 00379C4C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037DFB0 00379C50  7C 7F 1B 78 */	mr r31, r3
+/* 8037DFB4 00379C54  48 00 5A 5D */	bl "initFrame__Q210homebutton15FrameControllerFv"
+/* 8037DFB8 00379C58  7F E3 FB 78 */	mr r3, r31
+/* 8037DFBC 00379C5C  48 00 00 19 */	bl "restart__Q210homebutton15FrameControllerFv"
+/* 8037DFC0 00379C60  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037DFC4 00379C64  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037DFC8 00379C68  7C 08 03 A6 */	mtlr r0
+/* 8037DFCC 00379C6C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037DFD0 00379C70  4E 80 00 20 */	blr 
+
+.global "restart__Q210homebutton15FrameControllerFv"
+"restart__Q210homebutton15FrameControllerFv":
+/* 8037DFD4 00379C74  38 00 00 01 */	li r0, 1
+/* 8037DFD8 00379C78  90 03 00 14 */	stw r0, 0x14(r3)
+/* 8037DFDC 00379C7C  4E 80 00 20 */	blr 
+
+.global "getController__Q210homebutton10HomeButtonFi"
+"getController__Q210homebutton10HomeButtonFi":
+/* 8037DFE0 00379C80  54 80 10 3A */	slwi r0, r4, 2
+/* 8037DFE4 00379C84  7C 63 02 14 */	add r3, r3, r0
+/* 8037DFE8 00379C88  80 63 02 5C */	lwz r3, 0x25c(r3)
+/* 8037DFEC 00379C8C  4E 80 00 20 */	blr 
+
+.global "init_vib__Q210homebutton10HomeButtonFv"
+"init_vib__Q210homebutton10HomeButtonFv":
+/* 8037DFF0 00379C90  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037DFF4 00379C94  7C 08 02 A6 */	mflr r0
+/* 8037DFF8 00379C98  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037DFFC 00379C9C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037E000 00379CA0  7C 7F 1B 78 */	mr r31, r3
+/* 8037E004 00379CA4  48 00 42 45 */	bl "getVibFlag__Q210homebutton10HomeButtonFv"
+/* 8037E008 00379CA8  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 8037E00C 00379CAC  98 7F 00 84 */	stb r3, 0x84(r31)
+/* 8037E010 00379CB0  41 82 00 48 */	beq lbl_8037E058
+/* 8037E014 00379CB4  7F E3 FB 78 */	mr r3, r31
+/* 8037E018 00379CB8  38 80 00 0D */	li r4, 0xd
+/* 8037E01C 00379CBC  38 A0 00 06 */	li r5, 6
+/* 8037E020 00379CC0  48 00 3F 85 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E024 00379CC4  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E028 00379CC8  7C 7F 02 14 */	add r3, r31, r0
+/* 8037E02C 00379CCC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E030 00379CD0  4B FF FF 71 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E034 00379CD4  7F E3 FB 78 */	mr r3, r31
+/* 8037E038 00379CD8  38 80 00 0E */	li r4, 0xe
+/* 8037E03C 00379CDC  38 A0 00 08 */	li r5, 8
+/* 8037E040 00379CE0  48 00 3F 65 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E044 00379CE4  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E048 00379CE8  7C 7F 02 14 */	add r3, r31, r0
+/* 8037E04C 00379CEC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E050 00379CF0  4B FF FF 51 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E054 00379CF4  48 00 00 44 */	b lbl_8037E098
+lbl_8037E058:
+/* 8037E058 00379CF8  7F E3 FB 78 */	mr r3, r31
+/* 8037E05C 00379CFC  38 80 00 0D */	li r4, 0xd
+/* 8037E060 00379D00  38 A0 00 08 */	li r5, 8
+/* 8037E064 00379D04  48 00 3F 41 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E068 00379D08  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E06C 00379D0C  7C 7F 02 14 */	add r3, r31, r0
+/* 8037E070 00379D10  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E074 00379D14  4B FF FF 2D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E078 00379D18  7F E3 FB 78 */	mr r3, r31
+/* 8037E07C 00379D1C  38 80 00 0E */	li r4, 0xe
+/* 8037E080 00379D20  38 A0 00 06 */	li r5, 6
+/* 8037E084 00379D24  48 00 3F 21 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E088 00379D28  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E08C 00379D2C  7C 7F 02 14 */	add r3, r31, r0
+/* 8037E090 00379D30  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E094 00379D34  4B FF FF 0D */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_8037E098:
+/* 8037E098 00379D38  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037E09C 00379D3C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037E0A0 00379D40  7C 08 03 A6 */	mtlr r0
+/* 8037E0A4 00379D44  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037E0A8 00379D48  4E 80 00 20 */	blr 
+
+.global "init_sound__Q210homebutton10HomeButtonFv"
+"init_sound__Q210homebutton10HomeButtonFv":
+/* 8037E0AC 00379D4C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037E0B0 00379D50  7C 08 02 A6 */	mflr r0
+/* 8037E0B4 00379D54  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037E0B8 00379D58  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037E0BC 00379D5C  7C 7F 1B 78 */	mr r31, r3
+/* 8037E0C0 00379D60  80 83 00 04 */	lwz r4, 4(r3)
+/* 8037E0C4 00379D64  81 84 00 14 */	lwz r12, 0x14(r4)
+/* 8037E0C8 00379D68  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037E0CC 00379D6C  41 82 00 14 */	beq lbl_8037E0E0
+/* 8037E0D0 00379D70  38 60 00 00 */	li r3, 0
+/* 8037E0D4 00379D74  38 80 00 00 */	li r4, 0
+/* 8037E0D8 00379D78  7D 89 03 A6 */	mtctr r12
+/* 8037E0DC 00379D7C  4E 80 04 21 */	bctrl 
+lbl_8037E0E0:
+/* 8037E0E0 00379D80  4B FB 9A C5 */	bl "AXGetAuxAReturnVolume"
+/* 8037E0E4 00379D84  B0 7F 05 E8 */	sth r3, 0x5e8(r31)
+/* 8037E0E8 00379D88  4B FB 9A C5 */	bl "AXGetAuxBReturnVolume"
+/* 8037E0EC 00379D8C  B0 7F 05 EA */	sth r3, 0x5ea(r31)
+/* 8037E0F0 00379D90  4B FB 9A C5 */	bl "AXGetAuxCReturnVolume"
+/* 8037E0F4 00379D94  B0 7F 05 EC */	sth r3, 0x5ec(r31)
+/* 8037E0F8 00379D98  38 7F 05 F0 */	addi r3, r31, 0x5f0
+/* 8037E0FC 00379D9C  38 9F 05 F4 */	addi r4, r31, 0x5f4
+/* 8037E100 00379DA0  4B FB CC 3D */	bl "AXFXGetHooks"
+/* 8037E104 00379DA4  38 7F 07 58 */	addi r3, r31, 0x758
+/* 8037E108 00379DA8  38 9F 07 5C */	addi r4, r31, 0x75c
+/* 8037E10C 00379DAC  4B FB 90 1D */	bl "AXGetAuxACallback"
+/* 8037E110 00379DB0  3C 60 80 38 */	lis r3, "HBMAllocMem__FUl"@ha
+/* 8037E114 00379DB4  3C 80 80 38 */	lis r4, "HBMFreeMem__FPv"@ha
+/* 8037E118 00379DB8  38 63 BE D4 */	addi r3, r3, "HBMAllocMem__FUl"@l
+/* 8037E11C 00379DBC  38 84 BE E0 */	addi r4, r4, "HBMFreeMem__FPv"@l
+/* 8037E120 00379DC0  4B FB CC 11 */	bl "AXFXSetHooks"
+/* 8037E124 00379DC4  C0 62 A6 84 */	lfs f3, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037E128 00379DC8  38 7F 05 F8 */	addi r3, r31, 0x5f8
+/* 8037E12C 00379DCC  C0 42 A6 B0 */	lfs f2, lbl_805DB8D0-_SDA2_BASE_(r2)
+/* 8037E130 00379DD0  C0 22 A6 B4 */	lfs f1, lbl_805DB8D4-_SDA2_BASE_(r2)
+/* 8037E134 00379DD4  C0 02 A6 88 */	lfs f0, lbl_805DB8A8-_SDA2_BASE_(r2)
+/* 8037E138 00379DD8  D0 7F 07 50 */	stfs f3, 0x750(r31)
+/* 8037E13C 00379DDC  D0 5F 07 48 */	stfs f2, 0x748(r31)
+/* 8037E140 00379DE0  D0 3F 07 40 */	stfs f1, 0x740(r31)
+/* 8037E144 00379DE4  D0 7F 07 4C */	stfs f3, 0x74c(r31)
+/* 8037E148 00379DE8  D0 7F 07 54 */	stfs f3, 0x754(r31)
+/* 8037E14C 00379DEC  D0 1F 07 44 */	stfs f0, 0x744(r31)
+/* 8037E150 00379DF0  4B FB BD 65 */	bl "AXFXReverbHiInit"
+/* 8037E154 00379DF4  3C 60 80 34 */	lis r3, "AXFXReverbHiCallback"@ha
+/* 8037E158 00379DF8  38 9F 05 F8 */	addi r4, r31, 0x5f8
+/* 8037E15C 00379DFC  38 63 9F 3C */	addi r3, r3, "AXFXReverbHiCallback"@l
+/* 8037E160 00379E00  4B FB 8E 9D */	bl "AXRegisterAuxACallback"
+/* 8037E164 00379E04  3C 60 00 01 */	lis r3, 0x00008000@ha
+/* 8037E168 00379E08  38 03 80 00 */	addi r0, r3, 0x00008000@l
+/* 8037E16C 00379E0C  54 03 04 3E */	clrlwi r3, r0, 0x10
+/* 8037E170 00379E10  4B FB 9A 4D */	bl "AXSetAuxAReturnVolume"
+/* 8037E174 00379E14  38 60 00 00 */	li r3, 0
+/* 8037E178 00379E18  4B FB 9A 4D */	bl "AXSetAuxBReturnVolume"
+/* 8037E17C 00379E1C  38 60 00 00 */	li r3, 0
+/* 8037E180 00379E20  4B FB 9A 4D */	bl "AXSetAuxCReturnVolume"
+/* 8037E184 00379E24  80 7F 00 04 */	lwz r3, 4(r31)
+/* 8037E188 00379E28  81 83 00 14 */	lwz r12, 0x14(r3)
+/* 8037E18C 00379E2C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037E190 00379E30  41 82 00 14 */	beq lbl_8037E1A4
+/* 8037E194 00379E34  38 60 00 01 */	li r3, 1
+/* 8037E198 00379E38  38 80 00 00 */	li r4, 0
+/* 8037E19C 00379E3C  7D 89 03 A6 */	mtctr r12
+/* 8037E1A0 00379E40  4E 80 04 21 */	bctrl 
+lbl_8037E1A4:
+/* 8037E1A4 00379E44  38 00 00 01 */	li r0, 1
+/* 8037E1A8 00379E48  98 1F 00 8E */	stb r0, 0x8e(r31)
+/* 8037E1AC 00379E4C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037E1B0 00379E50  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037E1B4 00379E54  7C 08 03 A6 */	mtlr r0
+/* 8037E1B8 00379E58  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037E1BC 00379E5C  4E 80 00 20 */	blr 
+
+.global "init_battery__Q210homebutton10HomeButtonFPC17HBMControllerData"
+"init_battery__Q210homebutton10HomeButtonFPC17HBMControllerData":
+/* 8037E1C0 00379E60  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8037E1C4 00379E64  7C 08 02 A6 */	mflr r0
+/* 8037E1C8 00379E68  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8037E1CC 00379E6C  39 61 00 30 */	addi r11, r1, 0x30
+/* 8037E1D0 00379E70  48 09 11 9D */	bl "_savegpr_25"
+/* 8037E1D4 00379E74  7C 7B 1B 78 */	mr r27, r3
+/* 8037E1D8 00379E78  7C 9F 23 78 */	mr r31, r4
+/* 8037E1DC 00379E7C  7F 7E DB 78 */	mr r30, r27
+/* 8037E1E0 00379E80  3B A3 01 5C */	addi r29, r3, 0x15c
+/* 8037E1E4 00379E84  3B 80 00 00 */	li r28, 0
+/* 8037E1E8 00379E88  3B 20 00 01 */	li r25, 1
+/* 8037E1EC 00379E8C  3B 40 00 00 */	li r26, 0
+lbl_8037E1F0:
+/* 8037E1F0 00379E90  80 1F 00 00 */	lwz r0, 0(r31)
+/* 8037E1F4 00379E94  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E1F8 00379E98  41 82 00 7C */	beq lbl_8037E274
+/* 8037E1FC 00379E9C  80 7B 00 04 */	lwz r3, 4(r27)
+/* 8037E200 00379EA0  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037E204 00379EA4  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E208 00379EA8  40 82 00 2C */	bne lbl_8037E234
+/* 8037E20C 00379EAC  80 7E 01 EC */	lwz r3, 0x1ec(r30)
+/* 8037E210 00379EB0  4B FF F3 E1 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E214 00379EB4  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E218 00379EB8  38 A0 00 01 */	li r5, 1
+/* 8037E21C 00379EBC  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037E220 00379EC0  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E224 00379EC4  7D 89 03 A6 */	mtctr r12
+/* 8037E228 00379EC8  4E 80 04 21 */	bctrl 
+/* 8037E22C 00379ECC  38 80 00 01 */	li r4, 1
+/* 8037E230 00379ED0  4B FF FA 6D */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037E234:
+/* 8037E234 00379ED4  7F 63 DB 78 */	mr r3, r27
+/* 8037E238 00379ED8  38 9C 00 1F */	addi r4, r28, 0x1f
+/* 8037E23C 00379EDC  38 A0 00 11 */	li r5, 0x11
+/* 8037E240 00379EE0  48 00 3D 65 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E244 00379EE4  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E248 00379EE8  7C 7B 02 14 */	add r3, r27, r0
+/* 8037E24C 00379EEC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E250 00379EF0  4B FF FD 51 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E254 00379EF4  7C 9B E2 14 */	add r4, r27, r28
+/* 8037E258 00379EF8  7F 63 DB 78 */	mr r3, r27
+/* 8037E25C 00379EFC  9B 24 00 7C */	stb r25, 0x7c(r4)
+/* 8037E260 00379F00  7F 84 E3 78 */	mr r4, r28
+/* 8037E264 00379F04  4B FF FD 7D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E268 00379F08  7F A4 EB 78 */	mr r4, r29
+/* 8037E26C 00379F0C  48 00 56 49 */	bl "getInfoAsync__Q210homebutton10ControllerFP8WPADInfo"
+/* 8037E270 00379F10  48 00 00 64 */	b lbl_8037E2D4
+lbl_8037E274:
+/* 8037E274 00379F14  80 7B 00 04 */	lwz r3, 4(r27)
+/* 8037E278 00379F18  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037E27C 00379F1C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E280 00379F20  40 82 00 2C */	bne lbl_8037E2AC
+/* 8037E284 00379F24  80 7E 01 EC */	lwz r3, 0x1ec(r30)
+/* 8037E288 00379F28  4B FF F3 69 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E28C 00379F2C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E290 00379F30  38 A0 00 01 */	li r5, 1
+/* 8037E294 00379F34  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037E298 00379F38  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E29C 00379F3C  7D 89 03 A6 */	mtctr r12
+/* 8037E2A0 00379F40  4E 80 04 21 */	bctrl 
+/* 8037E2A4 00379F44  38 80 00 00 */	li r4, 0
+/* 8037E2A8 00379F48  4B FF F9 F5 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037E2AC:
+/* 8037E2AC 00379F4C  7F 63 DB 78 */	mr r3, r27
+/* 8037E2B0 00379F50  38 9C 00 1F */	addi r4, r28, 0x1f
+/* 8037E2B4 00379F54  38 A0 00 10 */	li r5, 0x10
+/* 8037E2B8 00379F58  48 00 3C ED */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E2BC 00379F5C  54 60 10 3A */	slwi r0, r3, 2
+/* 8037E2C0 00379F60  7C 7B 02 14 */	add r3, r27, r0
+/* 8037E2C4 00379F64  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E2C8 00379F68  4B FF FC D9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E2CC 00379F6C  7C 7B E2 14 */	add r3, r27, r28
+/* 8037E2D0 00379F70  9B 43 00 7C */	stb r26, 0x7c(r3)
+lbl_8037E2D4:
+/* 8037E2D4 00379F74  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E2D8 00379F78  3B DE 00 04 */	addi r30, r30, 4
+/* 8037E2DC 00379F7C  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E2E0 00379F80  3B BD 00 18 */	addi r29, r29, 0x18
+/* 8037E2E4 00379F84  3B FF 00 10 */	addi r31, r31, 0x10
+/* 8037E2E8 00379F88  41 80 FF 08 */	blt lbl_8037E1F0
+/* 8037E2EC 00379F8C  7F 63 DB 78 */	mr r3, r27
+/* 8037E2F0 00379F90  48 00 38 D5 */	bl "reset_battery__Q210homebutton10HomeButtonFv"
+/* 8037E2F4 00379F94  38 00 00 00 */	li r0, 0
+/* 8037E2F8 00379F98  39 61 00 30 */	addi r11, r1, 0x30
+/* 8037E2FC 00379F9C  90 1B 00 78 */	stw r0, 0x78(r27)
+/* 8037E300 00379FA0  48 09 10 B9 */	bl "_restgpr_25"
+/* 8037E304 00379FA4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8037E308 00379FA8  7C 08 03 A6 */	mtlr r0
+/* 8037E30C 00379FAC  38 21 00 30 */	addi r1, r1, 0x30
+/* 8037E310 00379FB0  4E 80 00 20 */	blr 
+
+.global "calc__Q210homebutton10HomeButtonFPC17HBMControllerData"
+"calc__Q210homebutton10HomeButtonFPC17HBMControllerData":
+/* 8037E314 00379FB4  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8037E318 00379FB8  7C 08 02 A6 */	mflr r0
+/* 8037E31C 00379FBC  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8037E320 00379FC0  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 8037E324 00379FC4  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 8037E328 00379FC8  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 8037E32C 00379FCC  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 8037E330 00379FD0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8037E334 00379FD4  7C 9F 23 78 */	mr r31, r4
+/* 8037E338 00379FD8  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8037E33C 00379FDC  7C 7E 1B 78 */	mr r30, r3
+/* 8037E340 00379FE0  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 8037E344 00379FE4  93 81 00 20 */	stw r28, 0x20(r1)
+/* 8037E348 00379FE8  80 63 02 00 */	lwz r3, 0x200(r3)
+/* 8037E34C 00379FEC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E350 00379FF0  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 8037E354 00379FF4  7D 89 03 A6 */	mtctr r12
+/* 8037E358 00379FF8  4E 80 04 21 */	bctrl 
+/* 8037E35C 00379FFC  7F DD F3 78 */	mr r29, r30
+/* 8037E360 0037A000  3B 80 00 00 */	li r28, 0
+/* 8037E364 0037A004  48 00 00 14 */	b lbl_8037E378
+lbl_8037E368:
+/* 8037E368 0037A008  80 7D 02 70 */	lwz r3, 0x270(r29)
+/* 8037E36C 0037A00C  4B FF D7 B5 */	bl "do_calc__Q210homebutton18GroupAnmControllerFv"
+/* 8037E370 0037A010  3B BD 00 04 */	addi r29, r29, 4
+/* 8037E374 0037A014  3B 9C 00 01 */	addi r28, r28, 1
+lbl_8037E378:
+/* 8037E378 0037A018  80 1E 00 0C */	lwz r0, 0xc(r30)
+/* 8037E37C 0037A01C  7C 1C 00 00 */	cmpw r28, r0
+/* 8037E380 0037A020  41 80 FF E8 */	blt lbl_8037E368
+/* 8037E384 0037A024  7F DD F3 78 */	mr r29, r30
+/* 8037E388 0037A028  3B 80 00 00 */	li r28, 0
+lbl_8037E38C:
+/* 8037E38C 0037A02C  80 7D 03 C8 */	lwz r3, 0x3c8(r29)
+/* 8037E390 0037A030  4B FF D7 91 */	bl "do_calc__Q210homebutton18GroupAnmControllerFv"
+/* 8037E394 0037A034  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E398 0037A038  3B BD 00 04 */	addi r29, r29, 4
+/* 8037E39C 0037A03C  2C 1C 00 0F */	cmpwi r28, 0xf
+/* 8037E3A0 0037A040  41 80 FF EC */	blt lbl_8037E38C
+/* 8037E3A4 0037A044  7F DD F3 78 */	mr r29, r30
+/* 8037E3A8 0037A048  3B 80 00 00 */	li r28, 0
+lbl_8037E3AC:
+/* 8037E3AC 0037A04C  80 7D 02 A0 */	lwz r3, 0x2a0(r29)
+/* 8037E3B0 0037A050  4B FF D7 71 */	bl "do_calc__Q210homebutton18GroupAnmControllerFv"
+/* 8037E3B4 0037A054  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E3B8 0037A058  3B BD 00 04 */	addi r29, r29, 4
+/* 8037E3BC 0037A05C  2C 1C 00 4A */	cmpwi r28, 0x4a
+/* 8037E3C0 0037A060  41 80 FF EC */	blt lbl_8037E3AC
+/* 8037E3C4 0037A064  C3 C2 A6 84 */	lfs f30, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037E3C8 0037A068  7F DD F3 78 */	mr r29, r30
+/* 8037E3CC 0037A06C  C3 E2 A6 B8 */	lfs f31, lbl_805DB8D8-_SDA2_BASE_(r2)
+/* 8037E3D0 0037A070  3B 80 00 00 */	li r28, 0
+lbl_8037E3D4:
+/* 8037E3D4 0037A074  C0 1D 01 C0 */	lfs f0, 0x1c0(r29)
+/* 8037E3D8 0037A078  FC 00 F0 40 */	fcmpo cr0, f0, f30
+/* 8037E3DC 0037A07C  40 81 00 A8 */	ble lbl_8037E484
+/* 8037E3E0 0037A080  7C 7E E2 14 */	add r3, r30, r28
+/* 8037E3E4 0037A084  88 03 00 7C */	lbz r0, 0x7c(r3)
+/* 8037E3E8 0037A088  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E3EC 0037A08C  41 82 00 1C */	beq lbl_8037E408
+/* 8037E3F0 0037A090  7F C3 F3 78 */	mr r3, r30
+/* 8037E3F4 0037A094  7F 84 E3 78 */	mr r4, r28
+/* 8037E3F8 0037A098  4B FF FB E9 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E3FC 0037A09C  48 00 0E 21 */	bl "isRumbling__Q210homebutton10ControllerFv"
+/* 8037E400 0037A0A0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E404 0037A0A4  40 82 00 38 */	bne lbl_8037E43C
+lbl_8037E408:
+/* 8037E408 0037A0A8  D3 DD 01 C0 */	stfs f30, 0x1c0(r29)
+/* 8037E40C 0037A0AC  7F C3 F3 78 */	mr r3, r30
+/* 8037E410 0037A0B0  7F 84 E3 78 */	mr r4, r28
+/* 8037E414 0037A0B4  D3 DD 01 D0 */	stfs f30, 0x1d0(r29)
+/* 8037E418 0037A0B8  4B FF FB C9 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E41C 0037A0BC  48 00 0E 01 */	bl "isRumbling__Q210homebutton10ControllerFv"
+/* 8037E420 0037A0C0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E424 0037A0C4  41 82 00 8C */	beq lbl_8037E4B0
+/* 8037E428 0037A0C8  7F C3 F3 78 */	mr r3, r30
+/* 8037E42C 0037A0CC  7F 84 E3 78 */	mr r4, r28
+/* 8037E430 0037A0D0  4B FF FB B1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E434 0037A0D4  48 00 54 19 */	bl "stopMotor__Q210homebutton10ControllerFv"
+/* 8037E438 0037A0D8  48 00 00 78 */	b lbl_8037E4B0
+lbl_8037E43C:
+/* 8037E43C 0037A0DC  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037E440 0037A0E0  C0 3D 01 C0 */	lfs f1, 0x1c0(r29)
+/* 8037E444 0037A0E4  C0 03 00 30 */	lfs f0, 0x30(r3)
+/* 8037E448 0037A0E8  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8037E44C 0037A0EC  FC 00 F0 40 */	fcmpo cr0, f0, f30
+/* 8037E450 0037A0F0  D0 1D 01 C0 */	stfs f0, 0x1c0(r29)
+/* 8037E454 0037A0F4  4C 40 13 82 */	cror 2, 0, 2
+/* 8037E458 0037A0F8  41 82 00 10 */	beq lbl_8037E468
+/* 8037E45C 0037A0FC  80 1E 00 10 */	lwz r0, 0x10(r30)
+/* 8037E460 0037A100  2C 00 00 11 */	cmpwi r0, 0x11
+/* 8037E464 0037A104  40 82 00 4C */	bne lbl_8037E4B0
+lbl_8037E468:
+/* 8037E468 0037A108  7F C3 F3 78 */	mr r3, r30
+/* 8037E46C 0037A10C  7F 84 E3 78 */	mr r4, r28
+/* 8037E470 0037A110  4B FF FB 71 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E474 0037A114  48 00 53 D9 */	bl "stopMotor__Q210homebutton10ControllerFv"
+/* 8037E478 0037A118  D3 DD 01 C0 */	stfs f30, 0x1c0(r29)
+/* 8037E47C 0037A11C  D3 FD 01 D0 */	stfs f31, 0x1d0(r29)
+/* 8037E480 0037A120  48 00 00 30 */	b lbl_8037E4B0
+lbl_8037E484:
+/* 8037E484 0037A124  C0 3D 01 D0 */	lfs f1, 0x1d0(r29)
+/* 8037E488 0037A128  FC 01 F0 40 */	fcmpo cr0, f1, f30
+/* 8037E48C 0037A12C  40 81 00 24 */	ble lbl_8037E4B0
+/* 8037E490 0037A130  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037E494 0037A134  C0 03 00 30 */	lfs f0, 0x30(r3)
+/* 8037E498 0037A138  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8037E49C 0037A13C  FC 00 F0 40 */	fcmpo cr0, f0, f30
+/* 8037E4A0 0037A140  D0 1D 01 D0 */	stfs f0, 0x1d0(r29)
+/* 8037E4A4 0037A144  4C 40 13 82 */	cror 2, 0, 2
+/* 8037E4A8 0037A148  40 82 00 08 */	bne lbl_8037E4B0
+/* 8037E4AC 0037A14C  D3 DD 01 D0 */	stfs f30, 0x1d0(r29)
+lbl_8037E4B0:
+/* 8037E4B0 0037A150  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E4B4 0037A154  3B BD 00 04 */	addi r29, r29, 4
+/* 8037E4B8 0037A158  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E4BC 0037A15C  41 80 FF 18 */	blt lbl_8037E3D4
+/* 8037E4C0 0037A160  80 1E 00 10 */	lwz r0, 0x10(r30)
+/* 8037E4C4 0037A164  28 00 00 13 */	cmplwi r0, 0x13
+/* 8037E4C8 0037A168  41 81 0B 88 */	bgt lbl_8037F050
+/* 8037E4CC 0037A16C  3C 60 80 47 */	lis r3, lbl_80468F74@ha
+/* 8037E4D0 0037A170  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E4D4 0037A174  38 63 8F 74 */	addi r3, r3, lbl_80468F74@l
+/* 8037E4D8 0037A178  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8037E4DC 0037A17C  7C 69 03 A6 */	mtctr r3
+/* 8037E4E0 0037A180  4E 80 04 20 */	bctr 
+/* 8037E4E4 0037A184  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037E4E8 0037A188  80 03 00 18 */	lwz r0, 0x18(r3)
+/* 8037E4EC 0037A18C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E4F0 0037A190  41 82 00 6C */	beq lbl_8037E55C
+/* 8037E4F4 0037A194  7F C3 F3 78 */	mr r3, r30
+/* 8037E4F8 0037A198  38 80 00 02 */	li r4, 2
+/* 8037E4FC 0037A19C  38 A0 00 00 */	li r5, 0
+/* 8037E500 0037A1A0  48 00 3A A5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E504 0037A1A4  90 7E 00 14 */	stw r3, 0x14(r30)
+/* 8037E508 0037A1A8  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E50C 0037A1AC  4B FF F0 E5 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E510 0037A1B0  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E514 0037A1B4  38 8D AD 98 */	addi r4, r13, lbl_805D7478-_SDA_BASE_
+/* 8037E518 0037A1B8  38 A0 00 01 */	li r5, 1
+/* 8037E51C 0037A1BC  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E520 0037A1C0  7D 89 03 A6 */	mtctr r12
+/* 8037E524 0037A1C4  4E 80 04 21 */	bctrl 
+/* 8037E528 0037A1C8  38 80 00 00 */	li r4, 0
+/* 8037E52C 0037A1CC  4B FF F7 71 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037E530 0037A1D0  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E534 0037A1D4  4B FF F0 BD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E538 0037A1D8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E53C 0037A1DC  38 8D AD A0 */	addi r4, r13, lbl_805D7480-_SDA_BASE_
+/* 8037E540 0037A1E0  38 A0 00 01 */	li r5, 1
+/* 8037E544 0037A1E4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E548 0037A1E8  7D 89 03 A6 */	mtctr r12
+/* 8037E54C 0037A1EC  4E 80 04 21 */	bctrl 
+/* 8037E550 0037A1F0  38 80 00 01 */	li r4, 1
+/* 8037E554 0037A1F4  4B FF F7 49 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037E558 0037A1F8  48 00 00 68 */	b lbl_8037E5C0
+lbl_8037E55C:
+/* 8037E55C 0037A1FC  7F C3 F3 78 */	mr r3, r30
+/* 8037E560 0037A200  38 80 00 00 */	li r4, 0
+/* 8037E564 0037A204  38 A0 00 00 */	li r5, 0
+/* 8037E568 0037A208  48 00 3A 3D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037E56C 0037A20C  90 7E 00 14 */	stw r3, 0x14(r30)
+/* 8037E570 0037A210  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E574 0037A214  4B FF F0 7D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E578 0037A218  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E57C 0037A21C  38 8D AD 98 */	addi r4, r13, lbl_805D7478-_SDA_BASE_
+/* 8037E580 0037A220  38 A0 00 01 */	li r5, 1
+/* 8037E584 0037A224  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E588 0037A228  7D 89 03 A6 */	mtctr r12
+/* 8037E58C 0037A22C  4E 80 04 21 */	bctrl 
+/* 8037E590 0037A230  38 80 00 01 */	li r4, 1
+/* 8037E594 0037A234  4B FF F7 09 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037E598 0037A238  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E59C 0037A23C  4B FF F0 55 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E5A0 0037A240  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E5A4 0037A244  38 8D AD A0 */	addi r4, r13, lbl_805D7480-_SDA_BASE_
+/* 8037E5A8 0037A248  38 A0 00 01 */	li r5, 1
+/* 8037E5AC 0037A24C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E5B0 0037A250  7D 89 03 A6 */	mtctr r12
+/* 8037E5B4 0037A254  4E 80 04 21 */	bctrl 
+/* 8037E5B8 0037A258  38 80 00 00 */	li r4, 0
+/* 8037E5BC 0037A25C  4B FF F6 E1 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037E5C0:
+/* 8037E5C0 0037A260  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E5C4 0037A264  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E5C8 0037A268  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E5CC 0037A26C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E5D0 0037A270  4B FF F9 D1 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E5D4 0037A274  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037E5D8 0037A278  41 82 0A 78 */	beq lbl_8037F050
+/* 8037E5DC 0037A27C  38 00 00 01 */	li r0, 1
+/* 8037E5E0 0037A280  7F C3 F3 78 */	mr r3, r30
+/* 8037E5E4 0037A284  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E5E8 0037A288  7F E4 FB 78 */	mr r4, r31
+/* 8037E5EC 0037A28C  4B FF FB D5 */	bl "init_battery__Q210homebutton10HomeButtonFPC17HBMControllerData"
+/* 8037E5F0 0037A290  48 00 0A 60 */	b lbl_8037F050
+/* 8037E5F4 0037A294  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E5F8 0037A298  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E5FC 0037A29C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E600 0037A2A0  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E604 0037A2A4  48 00 0C 05 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037E608 0037A2A8  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E60C 0037A2AC  40 82 0A 44 */	bne lbl_8037F050
+/* 8037E610 0037A2B0  7F C3 F3 78 */	mr r3, r30
+/* 8037E614 0037A2B4  4B FF F8 69 */	bl "init_volume__Q210homebutton10HomeButtonFv"
+/* 8037E618 0037A2B8  7F C3 F3 78 */	mr r3, r30
+/* 8037E61C 0037A2BC  4B FF F9 D5 */	bl "init_vib__Q210homebutton10HomeButtonFv"
+/* 8037E620 0037A2C0  7F C3 F3 78 */	mr r3, r30
+/* 8037E624 0037A2C4  4B FF FA 89 */	bl "init_sound__Q210homebutton10HomeButtonFv"
+/* 8037E628 0037A2C8  7F C3 F3 78 */	mr r3, r30
+/* 8037E62C 0037A2CC  38 80 00 00 */	li r4, 0
+/* 8037E630 0037A2D0  48 00 45 71 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 8037E634 0037A2D4  38 00 00 02 */	li r0, 2
+/* 8037E638 0037A2D8  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E63C 0037A2DC  48 00 0A 14 */	b lbl_8037F050
+/* 8037E640 0037A2E0  7F C3 F3 78 */	mr r3, r30
+/* 8037E644 0037A2E4  48 00 0E 09 */	bl "calc_letter__Q210homebutton10HomeButtonFv"
+/* 8037E648 0037A2E8  48 00 0A 08 */	b lbl_8037F050
+/* 8037E64C 0037A2EC  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E650 0037A2F0  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E654 0037A2F4  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E658 0037A2F8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E65C 0037A2FC  48 00 0B AD */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037E660 0037A300  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E664 0037A304  40 82 00 28 */	bne lbl_8037E68C
+/* 8037E668 0037A308  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E66C 0037A30C  2C 00 00 05 */	cmpwi r0, 5
+/* 8037E670 0037A310  41 82 00 1C */	beq lbl_8037E68C
+/* 8037E674 0037A314  7F C3 F3 78 */	mr r3, r30
+/* 8037E678 0037A318  48 00 35 4D */	bl "reset_battery__Q210homebutton10HomeButtonFv"
+/* 8037E67C 0037A31C  38 00 00 05 */	li r0, 5
+/* 8037E680 0037A320  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037E684 0037A324  80 7E 03 DC */	lwz r3, 0x3dc(r30)
+/* 8037E688 0037A328  4B FF F9 19 */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_8037E68C:
+/* 8037E68C 0037A32C  80 7E 01 E0 */	lwz r3, 0x1e0(r30)
+/* 8037E690 0037A330  34 03 FF FF */	addic. r0, r3, -1
+/* 8037E694 0037A334  90 1E 01 E0 */	stw r0, 0x1e0(r30)
+/* 8037E698 0037A338  41 81 09 B8 */	bgt lbl_8037F050
+/* 8037E69C 0037A33C  3B 80 00 00 */	li r28, 0
+lbl_8037E6A0:
+/* 8037E6A0 0037A340  7F 83 E3 78 */	mr r3, r28
+/* 8037E6A4 0037A344  48 07 57 91 */	bl "WPADDisconnect"
+/* 8037E6A8 0037A348  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E6AC 0037A34C  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E6B0 0037A350  41 80 FF F0 */	blt lbl_8037E6A0
+/* 8037E6B4 0037A354  38 00 00 04 */	li r0, 4
+/* 8037E6B8 0037A358  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E6BC 0037A35C  4B FF E0 0D */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037E6C0 0037A360  4B FF D9 8D */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037E6C4 0037A364  C0 23 00 30 */	lfs f1, 0x30(r3)
+/* 8037E6C8 0037A368  C0 02 A6 BC */	lfs f0, lbl_805DB8DC-_SDA2_BASE_(r2)
+/* 8037E6CC 0037A36C  EC 00 08 24 */	fdivs f0, f0, f1
+/* 8037E6D0 0037A370  FC 00 00 1E */	fctiwz f0, f0
+/* 8037E6D4 0037A374  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 8037E6D8 0037A378  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037E6DC 0037A37C  90 1E 01 E4 */	stw r0, 0x1e4(r30)
+/* 8037E6E0 0037A380  48 00 09 70 */	b lbl_8037F050
+/* 8037E6E4 0037A384  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E6E8 0037A388  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E6EC 0037A38C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E6F0 0037A390  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037E6F4 0037A394  48 00 0B 15 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037E6F8 0037A398  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E6FC 0037A39C  40 82 09 54 */	bne lbl_8037F050
+/* 8037E700 0037A3A0  80 1E 01 E4 */	lwz r0, 0x1e4(r30)
+/* 8037E704 0037A3A4  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E708 0037A3A8  40 81 00 48 */	ble lbl_8037E750
+/* 8037E70C 0037A3AC  3B 80 00 00 */	li r28, 0
+lbl_8037E710:
+/* 8037E710 0037A3B0  7F 83 E3 78 */	mr r3, r28
+/* 8037E714 0037A3B4  38 81 00 0C */	addi r4, r1, 0xc
+/* 8037E718 0037A3B8  48 07 57 E1 */	bl "WPADProbe"
+/* 8037E71C 0037A3BC  2C 03 FF FF */	cmpwi r3, -1
+/* 8037E720 0037A3C0  40 82 00 10 */	bne lbl_8037E730
+/* 8037E724 0037A3C4  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E728 0037A3C8  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E72C 0037A3CC  41 80 FF E4 */	blt lbl_8037E710
+lbl_8037E730:
+/* 8037E730 0037A3D0  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E734 0037A3D4  40 80 00 14 */	bge lbl_8037E748
+/* 8037E738 0037A3D8  80 7E 01 E4 */	lwz r3, 0x1e4(r30)
+/* 8037E73C 0037A3DC  38 03 FF FF */	addi r0, r3, -1
+/* 8037E740 0037A3E0  90 1E 01 E4 */	stw r0, 0x1e4(r30)
+/* 8037E744 0037A3E4  48 00 09 0C */	b lbl_8037F050
+lbl_8037E748:
+/* 8037E748 0037A3E8  38 00 00 00 */	li r0, 0
+/* 8037E74C 0037A3EC  90 1E 01 E4 */	stw r0, 0x1e4(r30)
+lbl_8037E750:
+/* 8037E750 0037A3F0  3B A0 00 00 */	li r29, 0
+/* 8037E754 0037A3F4  38 00 00 05 */	li r0, 5
+/* 8037E758 0037A3F8  3C 60 80 38 */	lis r3, "SimpleSyncCallback__10homebuttonFll"@ha
+/* 8037E75C 0037A3FC  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E760 0037A400  38 63 F7 B4 */	addi r3, r3, "SimpleSyncCallback__10homebuttonFll"@l
+/* 8037E764 0037A404  93 BE 00 18 */	stw r29, 0x18(r30)
+/* 8037E768 0037A408  93 BE 00 94 */	stw r29, 0x94(r30)
+/* 8037E76C 0037A40C  48 07 45 05 */	bl "WPADSetSimpleSyncCallback"
+/* 8037E770 0037A410  90 7E 01 BC */	stw r3, 0x1bc(r30)
+/* 8037E774 0037A414  3B 80 00 00 */	li r28, 0
+/* 8037E778 0037A418  9B BE 00 8A */	stb r29, 0x8a(r30)
+lbl_8037E77C:
+/* 8037E77C 0037A41C  7F C3 F3 78 */	mr r3, r30
+/* 8037E780 0037A420  7F 84 E3 78 */	mr r4, r28
+/* 8037E784 0037A424  4B FF F8 5D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E788 0037A428  38 80 00 01 */	li r4, 1
+/* 8037E78C 0037A42C  48 00 0A 75 */	bl "setEnableRumble__Q210homebutton10ControllerFb"
+/* 8037E790 0037A430  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037E794 0037A434  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037E798 0037A438  41 80 FF E4 */	blt lbl_8037E77C
+/* 8037E79C 0037A43C  48 07 44 CD */	bl "WPADStartFastSimpleSync"
+/* 8037E7A0 0037A440  7C 03 00 D0 */	neg r0, r3
+/* 8037E7A4 0037A444  7C 00 1B 78 */	or r0, r0, r3
+/* 8037E7A8 0037A448  54 00 0F FF */	rlwinm. r0, r0, 1, 0x1f, 0x1f
+/* 8037E7AC 0037A44C  98 1E 00 89 */	stb r0, 0x89(r30)
+/* 8037E7B0 0037A450  40 82 08 A0 */	bne lbl_8037F050
+/* 8037E7B4 0037A454  7F C3 F3 78 */	mr r3, r30
+/* 8037E7B8 0037A458  38 80 00 00 */	li r4, 0
+/* 8037E7BC 0037A45C  48 00 10 59 */	bl "setSimpleSyncAlarm__Q210homebutton10HomeButtonFi"
+/* 8037E7C0 0037A460  48 00 08 90 */	b lbl_8037F050
+/* 8037E7C4 0037A464  88 1E 00 89 */	lbz r0, 0x89(r30)
+/* 8037E7C8 0037A468  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E7CC 0037A46C  41 82 08 84 */	beq lbl_8037F050
+/* 8037E7D0 0037A470  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E7D4 0037A474  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E7D8 0037A478  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E7DC 0037A47C  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037E7E0 0037A480  48 00 0A 29 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037E7E4 0037A484  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E7E8 0037A488  40 82 08 68 */	bne lbl_8037F050
+/* 8037E7EC 0037A48C  80 1E 00 18 */	lwz r0, 0x18(r30)
+/* 8037E7F0 0037A490  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E7F4 0037A494  40 82 00 28 */	bne lbl_8037E81C
+/* 8037E7F8 0037A498  7F C3 F3 78 */	mr r3, r30
+/* 8037E7FC 0037A49C  48 00 33 05 */	bl "reset_control__Q210homebutton10HomeButtonFv"
+/* 8037E800 0037A4A0  7F C3 F3 78 */	mr r3, r30
+/* 8037E804 0037A4A4  48 00 31 95 */	bl "reset_btn__Q210homebutton10HomeButtonFv"
+/* 8037E808 0037A4A8  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037E80C 0037A4AC  38 80 00 02 */	li r4, 2
+/* 8037E810 0037A4B0  48 00 09 E9 */	bl "setAnmType__Q210homebutton15FrameControllerFi"
+/* 8037E814 0037A4B4  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037E818 0037A4B8  4B FF F7 89 */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_8037E81C:
+/* 8037E81C 0037A4BC  88 1E 00 7F */	lbz r0, 0x7f(r30)
+/* 8037E820 0037A4C0  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E824 0037A4C4  41 82 00 88 */	beq lbl_8037E8AC
+/* 8037E828 0037A4C8  80 1E 00 10 */	lwz r0, 0x10(r30)
+/* 8037E82C 0037A4CC  2C 00 00 06 */	cmpwi r0, 6
+/* 8037E830 0037A4D0  41 82 00 58 */	beq lbl_8037E888
+/* 8037E834 0037A4D4  7F C3 F3 78 */	mr r3, r30
+/* 8037E838 0037A4D8  38 80 00 03 */	li r4, 3
+/* 8037E83C 0037A4DC  4B FF F7 A5 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037E840 0037A4E0  38 80 00 05 */	li r4, 5
+/* 8037E844 0037A4E4  48 00 4C 55 */	bl "isPlayingSoundId__Q210homebutton10ControllerCFi"
+/* 8037E848 0037A4E8  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E84C 0037A4EC  41 82 00 14 */	beq lbl_8037E860
+/* 8037E850 0037A4F0  80 1E 05 CC */	lwz r0, 0x5cc(r30)
+/* 8037E854 0037A4F4  38 60 00 06 */	li r3, 6
+/* 8037E858 0037A4F8  90 7E 00 10 */	stw r3, 0x10(r30)
+/* 8037E85C 0037A4FC  90 1E 00 18 */	stw r0, 0x18(r30)
+lbl_8037E860:
+/* 8037E860 0037A500  80 9E 00 94 */	lwz r4, 0x94(r30)
+/* 8037E864 0037A504  80 7E 05 CC */	lwz r3, 0x5cc(r30)
+/* 8037E868 0037A508  38 04 00 01 */	addi r0, r4, 1
+/* 8037E86C 0037A50C  7C 00 18 00 */	cmpw r0, r3
+/* 8037E870 0037A510  90 1E 00 94 */	stw r0, 0x94(r30)
+/* 8037E874 0037A514  40 81 07 DC */	ble lbl_8037F050
+/* 8037E878 0037A518  38 00 00 06 */	li r0, 6
+/* 8037E87C 0037A51C  90 7E 00 18 */	stw r3, 0x18(r30)
+/* 8037E880 0037A520  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E884 0037A524  48 00 07 CC */	b lbl_8037F050
+lbl_8037E888:
+/* 8037E888 0037A528  80 7E 00 18 */	lwz r3, 0x18(r30)
+/* 8037E88C 0037A52C  80 1E 05 C8 */	lwz r0, 0x5c8(r30)
+/* 8037E890 0037A530  38 63 00 01 */	addi r3, r3, 1
+/* 8037E894 0037A534  7C 03 00 00 */	cmpw r3, r0
+/* 8037E898 0037A538  90 7E 00 18 */	stw r3, 0x18(r30)
+/* 8037E89C 0037A53C  40 81 07 B4 */	ble lbl_8037F050
+/* 8037E8A0 0037A540  38 00 00 07 */	li r0, 7
+/* 8037E8A4 0037A544  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E8A8 0037A548  48 00 07 A8 */	b lbl_8037F050
+lbl_8037E8AC:
+/* 8037E8AC 0037A54C  80 7E 00 18 */	lwz r3, 0x18(r30)
+/* 8037E8B0 0037A550  80 1E 05 C8 */	lwz r0, 0x5c8(r30)
+/* 8037E8B4 0037A554  38 63 00 01 */	addi r3, r3, 1
+/* 8037E8B8 0037A558  7C 03 00 00 */	cmpw r3, r0
+/* 8037E8BC 0037A55C  90 7E 00 18 */	stw r3, 0x18(r30)
+/* 8037E8C0 0037A560  40 81 07 90 */	ble lbl_8037F050
+/* 8037E8C4 0037A564  38 00 00 07 */	li r0, 7
+/* 8037E8C8 0037A568  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E8CC 0037A56C  48 07 43 A1 */	bl "WPADStopSimpleSync"
+/* 8037E8D0 0037A570  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E8D4 0037A574  40 82 00 10 */	bne lbl_8037E8E4
+/* 8037E8D8 0037A578  7F C3 F3 78 */	mr r3, r30
+/* 8037E8DC 0037A57C  38 80 00 01 */	li r4, 1
+/* 8037E8E0 0037A580  48 00 0F 35 */	bl "setSimpleSyncAlarm__Q210homebutton10HomeButtonFi"
+lbl_8037E8E4:
+/* 8037E8E4 0037A584  38 00 00 01 */	li r0, 1
+/* 8037E8E8 0037A588  98 1E 00 8A */	stb r0, 0x8a(r30)
+/* 8037E8EC 0037A58C  48 00 07 64 */	b lbl_8037F050
+/* 8037E8F0 0037A590  88 1E 00 8A */	lbz r0, 0x8a(r30)
+/* 8037E8F4 0037A594  2C 00 00 00 */	cmpwi r0, 0
+/* 8037E8F8 0037A598  41 82 07 58 */	beq lbl_8037F050
+/* 8037E8FC 0037A59C  80 7E 01 BC */	lwz r3, 0x1bc(r30)
+/* 8037E900 0037A5A0  48 07 43 71 */	bl "WPADSetSimpleSyncCallback"
+/* 8037E904 0037A5A4  80 7E 02 6C */	lwz r3, 0x26c(r30)
+/* 8037E908 0037A5A8  48 00 6C 11 */	bl "ClearPcm__Q210homebutton9RemoteSpkFv"
+/* 8037E90C 0037A5AC  7F C3 F3 78 */	mr r3, r30
+/* 8037E910 0037A5B0  38 80 FF FF */	li r4, -1
+/* 8037E914 0037A5B4  48 00 33 3D */	bl "reset_guiManager__Q210homebutton10HomeButtonFi"
+/* 8037E918 0037A5B8  38 00 00 06 */	li r0, 6
+/* 8037E91C 0037A5BC  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037E920 0037A5C0  80 7E 03 E0 */	lwz r3, 0x3e0(r30)
+/* 8037E924 0037A5C4  4B FF F6 7D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037E928 0037A5C8  38 00 00 08 */	li r0, 8
+/* 8037E92C 0037A5CC  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037E930 0037A5D0  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037E934 0037A5D4  38 80 00 00 */	li r4, 0
+/* 8037E938 0037A5D8  48 00 08 C1 */	bl "setAnmType__Q210homebutton15FrameControllerFi"
+/* 8037E93C 0037A5DC  7F C3 F3 78 */	mr r3, r30
+/* 8037E940 0037A5E0  38 80 00 15 */	li r4, 0x15
+/* 8037E944 0037A5E4  48 00 42 5D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 8037E948 0037A5E8  48 00 07 08 */	b lbl_8037F050
+/* 8037E94C 0037A5EC  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E950 0037A5F0  54 00 10 3A */	slwi r0, r0, 2
+/* 8037E954 0037A5F4  7C 7E 02 14 */	add r3, r30, r0
+/* 8037E958 0037A5F8  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037E95C 0037A5FC  48 00 08 AD */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037E960 0037A600  2C 03 00 00 */	cmpwi r3, 0
+/* 8037E964 0037A604  40 82 06 EC */	bne lbl_8037F050
+/* 8037E968 0037A608  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037E96C 0037A60C  2C 00 00 0D */	cmpwi r0, 0xd
+/* 8037E970 0037A610  40 82 00 40 */	bne lbl_8037E9B0
+/* 8037E974 0037A614  7F C3 F3 78 */	mr r3, r30
+/* 8037E978 0037A618  48 00 31 E9 */	bl "reset_window__Q210homebutton10HomeButtonFv"
+/* 8037E97C 0037A61C  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E980 0037A620  4B FF EC 71 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E984 0037A624  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E988 0037A628  3C 80 80 47 */	lis r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 8037E98C 0037A62C  38 84 8C 6C */	addi r4, r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l
+/* 8037E990 0037A630  38 A0 00 01 */	li r5, 1
+/* 8037E994 0037A634  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E998 0037A638  80 84 00 08 */	lwz r4, 8(r4)
+/* 8037E99C 0037A63C  7D 89 03 A6 */	mtctr r12
+/* 8037E9A0 0037A640  4E 80 04 21 */	bctrl 
+/* 8037E9A4 0037A644  38 80 00 00 */	li r4, 0
+/* 8037E9A8 0037A648  4B FF F2 F5 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037E9AC 0037A64C  48 00 00 64 */	b lbl_8037EA10
+lbl_8037E9B0:
+/* 8037E9B0 0037A650  2C 00 00 06 */	cmpwi r0, 6
+/* 8037E9B4 0037A654  40 82 00 5C */	bne lbl_8037EA10
+/* 8037E9B8 0037A658  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E9BC 0037A65C  4B FF EC 35 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E9C0 0037A660  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E9C4 0037A664  3F A0 80 47 */	lis r29, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 8037E9C8 0037A668  80 9D 8C 6C */	lwz r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l(r29)
+/* 8037E9CC 0037A66C  38 A0 00 01 */	li r5, 1
+/* 8037E9D0 0037A670  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037E9D4 0037A674  7D 89 03 A6 */	mtctr r12
+/* 8037E9D8 0037A678  4E 80 04 21 */	bctrl 
+/* 8037E9DC 0037A67C  38 80 00 00 */	li r4, 0
+/* 8037E9E0 0037A680  4B FF F2 BD */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037E9E4 0037A684  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037E9E8 0037A688  4B FF EC 09 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037E9EC 0037A68C  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037E9F0 0037A690  38 9D 8C 6C */	addi r4, r29, -29588
+/* 8037E9F4 0037A694  80 84 00 04 */	lwz r4, 4(r4)
+/* 8037E9F8 0037A698  38 A0 00 01 */	li r5, 1
+/* 8037E9FC 0037A69C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037EA00 0037A6A0  7D 89 03 A6 */	mtctr r12
+/* 8037EA04 0037A6A4  4E 80 04 21 */	bctrl 
+/* 8037EA08 0037A6A8  38 80 00 00 */	li r4, 0
+/* 8037EA0C 0037A6AC  4B FF F2 91 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037EA10:
+/* 8037EA10 0037A6B0  38 00 00 02 */	li r0, 2
+/* 8037EA14 0037A6B4  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EA18 0037A6B8  48 00 06 38 */	b lbl_8037F050
+/* 8037EA1C 0037A6BC  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EA20 0037A6C0  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EA24 0037A6C4  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EA28 0037A6C8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037EA2C 0037A6CC  48 00 07 DD */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EA30 0037A6D0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EA34 0037A6D4  40 82 06 1C */	bne lbl_8037F050
+/* 8037EA38 0037A6D8  88 1E 00 84 */	lbz r0, 0x84(r30)
+/* 8037EA3C 0037A6DC  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EA40 0037A6E0  41 82 00 24 */	beq lbl_8037EA64
+/* 8037EA44 0037A6E4  3B 80 00 00 */	li r28, 0
+lbl_8037EA48:
+/* 8037EA48 0037A6E8  7F C3 F3 78 */	mr r3, r30
+/* 8037EA4C 0037A6EC  7F 84 E3 78 */	mr r4, r28
+/* 8037EA50 0037A6F0  4B FF F5 91 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037EA54 0037A6F4  48 00 4D F9 */	bl "stopMotor__Q210homebutton10ControllerFv"
+/* 8037EA58 0037A6F8  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037EA5C 0037A6FC  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037EA60 0037A700  41 80 FF E8 */	blt lbl_8037EA48
+lbl_8037EA64:
+/* 8037EA64 0037A704  38 00 00 02 */	li r0, 2
+/* 8037EA68 0037A708  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EA6C 0037A70C  48 00 05 E4 */	b lbl_8037F050
+/* 8037EA70 0037A710  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EA74 0037A714  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EA78 0037A718  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EA7C 0037A71C  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037EA80 0037A720  48 00 07 89 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EA84 0037A724  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EA88 0037A728  40 82 05 C8 */	bne lbl_8037F050
+/* 8037EA8C 0037A72C  80 7E 00 00 */	lwz r3, 0(r30)
+/* 8037EA90 0037A730  38 00 00 00 */	li r0, 0
+/* 8037EA94 0037A734  90 1E 00 68 */	stw r0, 0x68(r30)
+/* 8037EA98 0037A738  2C 03 00 01 */	cmpwi r3, 1
+/* 8037EA9C 0037A73C  90 1E 00 6C */	stw r0, 0x6c(r30)
+/* 8037EAA0 0037A740  90 1E 00 70 */	stw r0, 0x70(r30)
+/* 8037EAA4 0037A744  90 1E 00 74 */	stw r0, 0x74(r30)
+/* 8037EAA8 0037A748  41 82 00 58 */	beq lbl_8037EB00
+/* 8037EAAC 0037A74C  3C 60 80 47 */	lis r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 8037EAB0 0037A750  3B 80 00 02 */	li r28, 2
+/* 8037EAB4 0037A754  38 63 8C 20 */	addi r3, r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+/* 8037EAB8 0037A758  3B A3 00 08 */	addi r29, r3, 8
+lbl_8037EABC:
+/* 8037EABC 0037A75C  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037EAC0 0037A760  4B FF EB 31 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037EAC4 0037A764  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037EAC8 0037A768  38 A0 00 01 */	li r5, 1
+/* 8037EACC 0037A76C  80 9D 00 00 */	lwz r4, 0(r29)
+/* 8037EAD0 0037A770  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037EAD4 0037A774  7D 89 03 A6 */	mtctr r12
+/* 8037EAD8 0037A778  4E 80 04 21 */	bctrl 
+/* 8037EADC 0037A77C  38 80 00 00 */	li r4, 0
+/* 8037EAE0 0037A780  4B FF F1 BD */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037EAE4 0037A784  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037EAE8 0037A788  3B BD 00 04 */	addi r29, r29, 4
+/* 8037EAEC 0037A78C  2C 1C 00 07 */	cmpwi r28, 7
+/* 8037EAF0 0037A790  41 80 FF CC */	blt lbl_8037EABC
+/* 8037EAF4 0037A794  38 00 00 02 */	li r0, 2
+/* 8037EAF8 0037A798  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EAFC 0037A79C  48 00 00 34 */	b lbl_8037EB30
+lbl_8037EB00:
+/* 8037EB00 0037A7A0  40 82 00 30 */	bne lbl_8037EB30
+/* 8037EB04 0037A7A4  38 00 00 0A */	li r0, 0xa
+/* 8037EB08 0037A7A8  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037EB0C 0037A7AC  80 7E 03 F0 */	lwz r3, 0x3f0(r30)
+/* 8037EB10 0037A7B0  4B FF F4 91 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037EB14 0037A7B4  38 00 00 01 */	li r0, 1
+/* 8037EB18 0037A7B8  7F C3 F3 78 */	mr r3, r30
+/* 8037EB1C 0037A7BC  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037EB20 0037A7C0  38 80 00 07 */	li r4, 7
+/* 8037EB24 0037A7C4  48 00 40 7D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 8037EB28 0037A7C8  38 00 00 08 */	li r0, 8
+/* 8037EB2C 0037A7CC  90 1E 00 10 */	stw r0, 0x10(r30)
+lbl_8037EB30:
+/* 8037EB30 0037A7D0  7F C3 F3 78 */	mr r3, r30
+/* 8037EB34 0037A7D4  48 00 1A 5D */	bl "updateTrigPane__Q210homebutton10HomeButtonFv"
+/* 8037EB38 0037A7D8  48 00 05 18 */	b lbl_8037F050
+/* 8037EB3C 0037A7DC  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EB40 0037A7E0  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EB44 0037A7E4  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EB48 0037A7E8  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 8037EB4C 0037A7EC  48 00 06 BD */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EB50 0037A7F0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EB54 0037A7F4  40 82 04 FC */	bne lbl_8037F050
+/* 8037EB58 0037A7F8  38 00 00 07 */	li r0, 7
+/* 8037EB5C 0037A7FC  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037EB60 0037A800  80 7E 03 E4 */	lwz r3, 0x3e4(r30)
+/* 8037EB64 0037A804  4B FF F4 3D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037EB68 0037A808  38 00 00 0C */	li r0, 0xc
+/* 8037EB6C 0037A80C  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EB70 0037A810  48 00 04 E0 */	b lbl_8037F050
+/* 8037EB74 0037A814  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EB78 0037A818  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EB7C 0037A81C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EB80 0037A820  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037EB84 0037A824  48 00 06 85 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EB88 0037A828  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EB8C 0037A82C  40 82 04 C4 */	bne lbl_8037F050
+/* 8037EB90 0037A830  7F C3 F3 78 */	mr r3, r30
+/* 8037EB94 0037A834  48 00 19 FD */	bl "updateTrigPane__Q210homebutton10HomeButtonFv"
+/* 8037EB98 0037A838  7F C3 F3 78 */	mr r3, r30
+/* 8037EB9C 0037A83C  48 00 2D FD */	bl "reset_btn__Q210homebutton10HomeButtonFv"
+/* 8037EBA0 0037A840  38 00 00 02 */	li r0, 2
+/* 8037EBA4 0037A844  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EBA8 0037A848  48 00 04 A8 */	b lbl_8037F050
+/* 8037EBAC 0037A84C  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EBB0 0037A850  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EBB4 0037A854  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EBB8 0037A858  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037EBBC 0037A85C  48 00 06 4D */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EBC0 0037A860  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EBC4 0037A864  40 82 04 8C */	bne lbl_8037F050
+/* 8037EBC8 0037A868  80 1E 00 B0 */	lwz r0, 0xb0(r30)
+/* 8037EBCC 0037A86C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EBD0 0037A870  41 80 00 74 */	blt lbl_8037EC44
+/* 8037EBD4 0037A874  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037EBD8 0037A878  48 00 06 15 */	bl "start__Q310homebutton10HomeButton10BlackFaderFv"
+/* 8037EBDC 0037A87C  38 00 00 13 */	li r0, 0x13
+/* 8037EBE0 0037A880  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037EBE4 0037A884  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EBE8 0037A888  48 00 05 FD */	bl "getMaxFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+/* 8037EBEC 0037A88C  6C 60 80 00 */	xoris r0, r3, 0x8000
+/* 8037EBF0 0037A890  3C 60 43 30 */	lis r3, 0x4330
+/* 8037EBF4 0037A894  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037EBF8 0037A898  80 1E 00 B0 */	lwz r0, 0xb0(r30)
+/* 8037EBFC 0037A89C  90 61 00 10 */	stw r3, 0x10(r1)
+/* 8037EC00 0037A8A0  C8 22 A6 A8 */	lfd f1, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 8037EC04 0037A8A4  2C 00 00 03 */	cmpwi r0, 3
+/* 8037EC08 0037A8A8  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 8037EC0C 0037A8AC  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8037EC10 0037A8B0  D0 1E 07 60 */	stfs f0, 0x760(r30)
+/* 8037EC14 0037A8B4  41 82 00 50 */	beq lbl_8037EC64
+/* 8037EC18 0037A8B8  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037EC1C 0037A8BC  81 83 00 14 */	lwz r12, 0x14(r3)
+/* 8037EC20 0037A8C0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037EC24 0037A8C4  41 82 00 40 */	beq lbl_8037EC64
+/* 8037EC28 0037A8C8  FC 00 00 1E */	fctiwz f0, f0
+/* 8037EC2C 0037A8CC  38 60 00 03 */	li r3, 3
+/* 8037EC30 0037A8D0  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 8037EC34 0037A8D4  80 81 00 14 */	lwz r4, 0x14(r1)
+/* 8037EC38 0037A8D8  7D 89 03 A6 */	mtctr r12
+/* 8037EC3C 0037A8DC  4E 80 04 21 */	bctrl 
+/* 8037EC40 0037A8E0  48 00 00 24 */	b lbl_8037EC64
+lbl_8037EC44:
+/* 8037EC44 0037A8E4  7F C3 F3 78 */	mr r3, r30
+/* 8037EC48 0037A8E8  48 00 19 49 */	bl "updateTrigPane__Q210homebutton10HomeButtonFv"
+/* 8037EC4C 0037A8EC  38 00 00 0D */	li r0, 0xd
+/* 8037EC50 0037A8F0  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 8037EC54 0037A8F4  80 7E 03 FC */	lwz r3, 0x3fc(r30)
+/* 8037EC58 0037A8F8  4B FF F3 49 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037EC5C 0037A8FC  38 00 00 08 */	li r0, 8
+/* 8037EC60 0037A900  90 1E 00 10 */	stw r0, 0x10(r30)
+lbl_8037EC64:
+/* 8037EC64 0037A904  7F C3 F3 78 */	mr r3, r30
+/* 8037EC68 0037A908  38 80 FF FF */	li r4, -1
+/* 8037EC6C 0037A90C  48 00 2F E5 */	bl "reset_guiManager__Q210homebutton10HomeButtonFi"
+/* 8037EC70 0037A910  48 00 03 E0 */	b lbl_8037F050
+/* 8037EC74 0037A914  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037EC78 0037A918  54 00 10 3A */	slwi r0, r0, 2
+/* 8037EC7C 0037A91C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037EC80 0037A920  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037EC84 0037A924  48 00 05 85 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EC88 0037A928  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EC8C 0037A92C  40 82 03 C4 */	bne lbl_8037F050
+/* 8037EC90 0037A930  7F C3 F3 78 */	mr r3, r30
+/* 8037EC94 0037A934  48 00 05 91 */	bl "calc_fadeoutAnm__Q210homebutton10HomeButtonFv"
+/* 8037EC98 0037A938  48 00 03 B8 */	b lbl_8037F050
+/* 8037EC9C 0037A93C  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037ECA0 0037A940  54 00 10 3A */	slwi r0, r0, 2
+/* 8037ECA4 0037A944  7C 7E 02 14 */	add r3, r30, r0
+/* 8037ECA8 0037A948  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 8037ECAC 0037A94C  48 00 05 5D */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037ECB0 0037A950  2C 03 00 00 */	cmpwi r3, 0
+/* 8037ECB4 0037A954  40 82 03 9C */	bne lbl_8037F050
+/* 8037ECB8 0037A958  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037ECBC 0037A95C  48 00 05 31 */	bl "start__Q310homebutton10HomeButton10BlackFaderFv"
+/* 8037ECC0 0037A960  38 60 00 01 */	li r3, 1
+/* 8037ECC4 0037A964  38 00 00 13 */	li r0, 0x13
+/* 8037ECC8 0037A968  98 7E 00 91 */	stb r3, 0x91(r30)
+/* 8037ECCC 0037A96C  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037ECD0 0037A970  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037ECD4 0037A974  48 00 05 11 */	bl "getMaxFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+/* 8037ECD8 0037A978  6C 60 80 00 */	xoris r0, r3, 0x8000
+/* 8037ECDC 0037A97C  3C 60 43 30 */	lis r3, 0x4330
+/* 8037ECE0 0037A980  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037ECE4 0037A984  80 1E 00 B0 */	lwz r0, 0xb0(r30)
+/* 8037ECE8 0037A988  90 61 00 10 */	stw r3, 0x10(r1)
+/* 8037ECEC 0037A98C  C8 22 A6 A8 */	lfd f1, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 8037ECF0 0037A990  2C 00 00 03 */	cmpwi r0, 3
+/* 8037ECF4 0037A994  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 8037ECF8 0037A998  EC 00 08 28 */	fsubs f0, f0, f1
+/* 8037ECFC 0037A99C  D0 1E 07 60 */	stfs f0, 0x760(r30)
+/* 8037ED00 0037A9A0  41 82 03 50 */	beq lbl_8037F050
+/* 8037ED04 0037A9A4  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037ED08 0037A9A8  81 83 00 14 */	lwz r12, 0x14(r3)
+/* 8037ED0C 0037A9AC  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037ED10 0037A9B0  41 82 03 40 */	beq lbl_8037F050
+/* 8037ED14 0037A9B4  FC 00 00 1E */	fctiwz f0, f0
+/* 8037ED18 0037A9B8  38 60 00 03 */	li r3, 3
+/* 8037ED1C 0037A9BC  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 8037ED20 0037A9C0  80 81 00 14 */	lwz r4, 0x14(r1)
+/* 8037ED24 0037A9C4  7D 89 03 A6 */	mtctr r12
+/* 8037ED28 0037A9C8  4E 80 04 21 */	bctrl 
+/* 8037ED2C 0037A9CC  48 00 03 24 */	b lbl_8037F050
+/* 8037ED30 0037A9D0  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037ED34 0037A9D4  54 00 10 3A */	slwi r0, r0, 2
+/* 8037ED38 0037A9D8  7C 7E 02 14 */	add r3, r30, r0
+/* 8037ED3C 0037A9DC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037ED40 0037A9E0  48 00 04 C9 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037ED44 0037A9E4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037ED48 0037A9E8  40 82 00 1C */	bne lbl_8037ED64
+/* 8037ED4C 0037A9EC  38 00 00 11 */	li r0, 0x11
+/* 8037ED50 0037A9F0  C0 22 A6 84 */	lfs f1, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037ED54 0037A9F4  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037ED58 0037A9F8  7F C3 F3 78 */	mr r3, r30
+/* 8037ED5C 0037A9FC  48 00 3F 2D */	bl "fadeout_sound__Q210homebutton10HomeButtonFf"
+/* 8037ED60 0037AA00  48 00 02 F0 */	b lbl_8037F050
+lbl_8037ED64:
+/* 8037ED64 0037AA04  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037ED68 0037AA08  54 00 10 3A */	slwi r0, r0, 2
+/* 8037ED6C 0037AA0C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037ED70 0037AA10  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037ED74 0037AA14  48 00 04 61 */	bl "getCurrentFrame__Q210homebutton15FrameControllerCFv"
+/* 8037ED78 0037AA18  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8037ED7C 0037AA1C  FF E0 08 90 */	fmr f31, f1
+/* 8037ED80 0037AA20  54 00 10 3A */	slwi r0, r0, 2
+/* 8037ED84 0037AA24  7C 7E 02 14 */	add r3, r30, r0
+/* 8037ED88 0037AA28  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037ED8C 0037AA2C  48 00 04 51 */	bl "getMaxFrame__Q210homebutton15FrameControllerCFv"
+/* 8037ED90 0037AA30  EC 21 F8 28 */	fsubs f1, f1, f31
+/* 8037ED94 0037AA34  C0 1E 07 60 */	lfs f0, 0x760(r30)
+/* 8037ED98 0037AA38  7F C3 F3 78 */	mr r3, r30
+/* 8037ED9C 0037AA3C  EC 21 00 24 */	fdivs f1, f1, f0
+/* 8037EDA0 0037AA40  48 00 3E E9 */	bl "fadeout_sound__Q210homebutton10HomeButtonFf"
+/* 8037EDA4 0037AA44  48 00 02 AC */	b lbl_8037F050
+/* 8037EDA8 0037AA48  80 1E 00 B0 */	lwz r0, 0xb0(r30)
+/* 8037EDAC 0037AA4C  38 60 00 12 */	li r3, 0x12
+/* 8037EDB0 0037AA50  90 7E 00 10 */	stw r3, 0x10(r30)
+/* 8037EDB4 0037AA54  2C 00 00 03 */	cmpwi r0, 3
+/* 8037EDB8 0037AA58  41 82 00 A0 */	beq lbl_8037EE58
+/* 8037EDBC 0037AA5C  80 1E 05 D0 */	lwz r0, 0x5d0(r30)
+/* 8037EDC0 0037AA60  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EDC4 0037AA64  41 82 00 50 */	beq lbl_8037EE14
+/* 8037EDC8 0037AA68  3C 80 80 59 */	lis r4, "sMutex__Q210homebutton10HomeButton"@ha
+/* 8037EDCC 0037AA6C  38 61 00 08 */	addi r3, r1, 8
+/* 8037EDD0 0037AA70  38 84 1C A8 */	addi r4, r4, "sMutex__Q210homebutton10HomeButton"@l
+/* 8037EDD4 0037AA74  4B FF EE 79 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 8037EDD8 0037AA78  3B A0 00 00 */	li r29, 0
+/* 8037EDDC 0037AA7C  48 00 00 1C */	b lbl_8037EDF8
+lbl_8037EDE0:
+/* 8037EDE0 0037AA80  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 8037EDE4 0037AA84  7F A4 EB 78 */	mr r4, r29
+/* 8037EDE8 0037AA88  4B FF EE 61 */	bl "GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFi"
+/* 8037EDEC 0037AA8C  38 80 00 00 */	li r4, 0
+/* 8037EDF0 0037AA90  48 03 33 79 */	bl "StopAllSound__Q36nw4hbm3snd11SoundPlayerFi"
+/* 8037EDF4 0037AA94  3B BD 00 01 */	addi r29, r29, 1
+lbl_8037EDF8:
+/* 8037EDF8 0037AA98  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 8037EDFC 0037AA9C  4B FF EE 45 */	bl "GetSoundPlayerCount__Q36nw4hbm3snd18SoundArchivePlayerCFv"
+/* 8037EE00 0037AAA0  7C 1D 18 40 */	cmplw r29, r3
+/* 8037EE04 0037AAA4  41 80 FF DC */	blt lbl_8037EDE0
+/* 8037EE08 0037AAA8  38 61 00 08 */	addi r3, r1, 8
+/* 8037EE0C 0037AAAC  38 80 FF FF */	li r4, -1
+/* 8037EE10 0037AAB0  4B FF ED 89 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+lbl_8037EE14:
+/* 8037EE14 0037AAB4  88 1E 00 8E */	lbz r0, 0x8e(r30)
+/* 8037EE18 0037AAB8  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EE1C 0037AABC  41 82 00 3C */	beq lbl_8037EE58
+/* 8037EE20 0037AAC0  38 7E 05 F8 */	addi r3, r30, 0x5f8
+/* 8037EE24 0037AAC4  4B FB B0 F5 */	bl "AXFXReverbHiShutdown"
+/* 8037EE28 0037AAC8  80 7E 07 58 */	lwz r3, 0x758(r30)
+/* 8037EE2C 0037AACC  80 9E 07 5C */	lwz r4, 0x75c(r30)
+/* 8037EE30 0037AAD0  4B FB 81 CD */	bl "AXRegisterAuxACallback"
+/* 8037EE34 0037AAD4  80 7E 05 F0 */	lwz r3, 0x5f0(r30)
+/* 8037EE38 0037AAD8  80 9E 05 F4 */	lwz r4, 0x5f4(r30)
+/* 8037EE3C 0037AADC  4B FB BE F5 */	bl "AXFXSetHooks"
+/* 8037EE40 0037AAE0  A0 7E 05 E8 */	lhz r3, 0x5e8(r30)
+/* 8037EE44 0037AAE4  4B FB 8D 79 */	bl "AXSetAuxAReturnVolume"
+/* 8037EE48 0037AAE8  A0 7E 05 EA */	lhz r3, 0x5ea(r30)
+/* 8037EE4C 0037AAEC  4B FB 8D 79 */	bl "AXSetAuxBReturnVolume"
+/* 8037EE50 0037AAF0  A0 7E 05 EC */	lhz r3, 0x5ec(r30)
+/* 8037EE54 0037AAF4  4B FB 8D 79 */	bl "AXSetAuxCReturnVolume"
+lbl_8037EE58:
+/* 8037EE58 0037AAF8  80 9E 00 80 */	lwz r4, 0x80(r30)
+/* 8037EE5C 0037AAFC  7F C3 F3 78 */	mr r3, r30
+/* 8037EE60 0037AB00  48 00 33 35 */	bl "setVolume__Q210homebutton10HomeButtonFi"
+/* 8037EE64 0037AB04  38 60 00 00 */	li r3, 0
+/* 8037EE68 0037AB08  48 07 58 DD */	bl "WPADSaveConfig"
+/* 8037EE6C 0037AB0C  80 7E 02 6C */	lwz r3, 0x26c(r30)
+/* 8037EE70 0037AB10  48 00 68 CD */	bl "Stop__Q210homebutton9RemoteSpkFv"
+/* 8037EE74 0037AB14  7F DD F3 78 */	mr r29, r30
+/* 8037EE78 0037AB18  3B 80 00 00 */	li r28, 0
+lbl_8037EE7C:
+/* 8037EE7C 0037AB1C  80 7D 02 5C */	lwz r3, 0x25c(r29)
+/* 8037EE80 0037AB20  48 00 42 A1 */	bl "clearCallback__Q210homebutton10ControllerFv"
+/* 8037EE84 0037AB24  3B 9C 00 01 */	addi r28, r28, 1
+/* 8037EE88 0037AB28  3B BD 00 04 */	addi r29, r29, 4
+/* 8037EE8C 0037AB2C  2C 1C 00 04 */	cmpwi r28, 4
+/* 8037EE90 0037AB30  41 80 FF EC */	blt lbl_8037EE7C
+/* 8037EE94 0037AB34  80 1E 00 B0 */	lwz r0, 0xb0(r30)
+/* 8037EE98 0037AB38  2C 00 00 03 */	cmpwi r0, 3
+/* 8037EE9C 0037AB3C  41 82 00 24 */	beq lbl_8037EEC0
+/* 8037EEA0 0037AB40  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037EEA4 0037AB44  81 83 00 14 */	lwz r12, 0x14(r3)
+/* 8037EEA8 0037AB48  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037EEAC 0037AB4C  41 82 00 14 */	beq lbl_8037EEC0
+/* 8037EEB0 0037AB50  38 60 00 04 */	li r3, 4
+/* 8037EEB4 0037AB54  38 80 00 00 */	li r4, 0
+/* 8037EEB8 0037AB58  7D 89 03 A6 */	mtctr r12
+/* 8037EEBC 0037AB5C  4E 80 04 21 */	bctrl 
+lbl_8037EEC0:
+/* 8037EEC0 0037AB60  38 00 00 00 */	li r0, 0
+/* 8037EEC4 0037AB64  98 1E 00 8B */	stb r0, 0x8b(r30)
+/* 8037EEC8 0037AB68  48 00 01 88 */	b lbl_8037F050
+/* 8037EECC 0037AB6C  38 00 00 02 */	li r0, 2
+/* 8037EED0 0037AB70  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EED4 0037AB74  48 00 01 7C */	b lbl_8037F050
+/* 8037EED8 0037AB78  88 1E 00 8C */	lbz r0, 0x8c(r30)
+/* 8037EEDC 0037AB7C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EEE0 0037AB80  41 82 00 18 */	beq lbl_8037EEF8
+/* 8037EEE4 0037AB84  7F C3 F3 78 */	mr r3, r30
+/* 8037EEE8 0037AB88  7F E4 FB 78 */	mr r4, r31
+/* 8037EEEC 0037AB8C  4B FF F2 D5 */	bl "init_battery__Q210homebutton10HomeButtonFPC17HBMControllerData"
+/* 8037EEF0 0037AB90  38 00 00 00 */	li r0, 0
+/* 8037EEF4 0037AB94  98 1E 00 8C */	stb r0, 0x8c(r30)
+lbl_8037EEF8:
+/* 8037EEF8 0037AB98  88 1E 00 8D */	lbz r0, 0x8d(r30)
+/* 8037EEFC 0037AB9C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EF00 0037ABA0  41 82 00 1C */	beq lbl_8037EF1C
+/* 8037EF04 0037ABA4  7F C3 F3 78 */	mr r3, r30
+/* 8037EF08 0037ABA8  4B FF EF 75 */	bl "init_volume__Q210homebutton10HomeButtonFv"
+/* 8037EF0C 0037ABAC  7F C3 F3 78 */	mr r3, r30
+/* 8037EF10 0037ABB0  4B FF F0 E1 */	bl "init_vib__Q210homebutton10HomeButtonFv"
+/* 8037EF14 0037ABB4  38 00 00 00 */	li r0, 0
+/* 8037EF18 0037ABB8  98 1E 00 8D */	stb r0, 0x8d(r30)
+lbl_8037EF1C:
+/* 8037EF1C 0037ABBC  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037EF20 0037ABC0  48 00 34 AD */	bl "isDone__Q310homebutton10HomeButton10BlackFaderFv"
+/* 8037EF24 0037ABC4  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EF28 0037ABC8  41 82 00 E4 */	beq lbl_8037F00C
+/* 8037EF2C 0037ABCC  88 1E 00 8F */	lbz r0, 0x8f(r30)
+/* 8037EF30 0037ABD0  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EF34 0037ABD4  41 82 00 20 */	beq lbl_8037EF54
+/* 8037EF38 0037ABD8  88 1E 00 8A */	lbz r0, 0x8a(r30)
+/* 8037EF3C 0037ABDC  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EF40 0037ABE0  41 82 01 10 */	beq lbl_8037F050
+/* 8037EF44 0037ABE4  80 7E 01 BC */	lwz r3, 0x1bc(r30)
+/* 8037EF48 0037ABE8  48 07 3D 29 */	bl "WPADSetSimpleSyncCallback"
+/* 8037EF4C 0037ABEC  38 00 00 00 */	li r0, 0
+/* 8037EF50 0037ABF0  98 1E 00 8F */	stb r0, 0x8f(r30)
+lbl_8037EF54:
+/* 8037EF54 0037ABF4  88 1E 00 90 */	lbz r0, 0x90(r30)
+/* 8037EF58 0037ABF8  2C 00 00 00 */	cmpwi r0, 0
+/* 8037EF5C 0037ABFC  41 82 00 8C */	beq lbl_8037EFE8
+/* 8037EF60 0037AC00  80 7E 03 DC */	lwz r3, 0x3dc(r30)
+/* 8037EF64 0037AC04  48 00 4A AD */	bl "initFrame__Q210homebutton15FrameControllerFv"
+/* 8037EF68 0037AC08  80 7E 03 DC */	lwz r3, 0x3dc(r30)
+/* 8037EF6C 0037AC0C  48 00 02 5D */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 8037EF70 0037AC10  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037EF74 0037AC14  4B FF E6 7D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037EF78 0037AC18  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037EF7C 0037AC1C  3F A0 80 47 */	lis r29, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 8037EF80 0037AC20  80 9D 8C 6C */	lwz r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l(r29)
+/* 8037EF84 0037AC24  38 A0 00 01 */	li r5, 1
+/* 8037EF88 0037AC28  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037EF8C 0037AC2C  7D 89 03 A6 */	mtctr r12
+/* 8037EF90 0037AC30  4E 80 04 21 */	bctrl 
+/* 8037EF94 0037AC34  38 80 00 00 */	li r4, 0
+/* 8037EF98 0037AC38  4B FF ED 05 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037EF9C 0037AC3C  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037EFA0 0037AC40  4B FF E6 51 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037EFA4 0037AC44  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037EFA8 0037AC48  38 9D 8C 6C */	addi r4, r29, -29588
+/* 8037EFAC 0037AC4C  80 84 00 04 */	lwz r4, 4(r4)
+/* 8037EFB0 0037AC50  38 A0 00 01 */	li r5, 1
+/* 8037EFB4 0037AC54  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037EFB8 0037AC58  7D 89 03 A6 */	mtctr r12
+/* 8037EFBC 0037AC5C  4E 80 04 21 */	bctrl 
+/* 8037EFC0 0037AC60  38 80 00 00 */	li r4, 0
+/* 8037EFC4 0037AC64  4B FF EC D9 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037EFC8 0037AC68  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037EFCC 0037AC6C  48 00 02 3D */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037EFD0 0037AC70  2C 03 00 00 */	cmpwi r3, 0
+/* 8037EFD4 0037AC74  41 82 00 14 */	beq lbl_8037EFE8
+/* 8037EFD8 0037AC78  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037EFDC 0037AC7C  48 00 4A 35 */	bl "initFrame__Q210homebutton15FrameControllerFv"
+/* 8037EFE0 0037AC80  80 7E 04 00 */	lwz r3, 0x400(r30)
+/* 8037EFE4 0037AC84  48 00 01 E5 */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_8037EFE8:
+/* 8037EFE8 0037AC88  38 00 00 11 */	li r0, 0x11
+/* 8037EFEC 0037AC8C  38 60 00 01 */	li r3, 1
+/* 8037EFF0 0037AC90  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 8037EFF4 0037AC94  48 06 F3 81 */	bl "VISetBlack"
+/* 8037EFF8 0037AC98  48 06 F1 F5 */	bl "VIFlush"
+/* 8037EFFC 0037AC9C  C0 22 A6 84 */	lfs f1, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037F000 0037ACA0  7F C3 F3 78 */	mr r3, r30
+/* 8037F004 0037ACA4  48 00 3C 85 */	bl "fadeout_sound__Q210homebutton10HomeButtonFf"
+/* 8037F008 0037ACA8  48 00 00 48 */	b lbl_8037F050
+lbl_8037F00C:
+/* 8037F00C 0037ACAC  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037F010 0037ACB0  48 00 01 D5 */	bl "getMaxFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+/* 8037F014 0037ACB4  7C 7D 1B 78 */	mr r29, r3
+/* 8037F018 0037ACB8  38 7E 04 04 */	addi r3, r30, 0x404
+/* 8037F01C 0037ACBC  48 00 01 A5 */	bl "getFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+/* 8037F020 0037ACC0  7C 63 E8 50 */	subf r3, r3, r29
+/* 8037F024 0037ACC4  3C 00 43 30 */	lis r0, 0x4330
+/* 8037F028 0037ACC8  6C 64 80 00 */	xoris r4, r3, 0x8000
+/* 8037F02C 0037ACCC  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8037F030 0037ACD0  C8 42 A6 A8 */	lfd f2, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 8037F034 0037ACD4  7F C3 F3 78 */	mr r3, r30
+/* 8037F038 0037ACD8  90 81 00 14 */	stw r4, 0x14(r1)
+/* 8037F03C 0037ACDC  C0 1E 07 60 */	lfs f0, 0x760(r30)
+/* 8037F040 0037ACE0  C8 21 00 10 */	lfd f1, 0x10(r1)
+/* 8037F044 0037ACE4  EC 21 10 28 */	fsubs f1, f1, f2
+/* 8037F048 0037ACE8  EC 21 00 24 */	fdivs f1, f1, f0
+/* 8037F04C 0037ACEC  48 00 3C 3D */	bl "fadeout_sound__Q210homebutton10HomeButtonFf"
+lbl_8037F050:
+/* 8037F050 0037ACF0  80 1E 00 68 */	lwz r0, 0x68(r30)
+/* 8037F054 0037ACF4  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F058 0037ACF8  41 82 00 4C */	beq lbl_8037F0A4
+/* 8037F05C 0037ACFC  7F C3 F3 78 */	mr r3, r30
+/* 8037F060 0037AD00  48 00 2C AD */	bl "isUpBarActive__Q210homebutton10HomeButtonCFv"
+/* 8037F064 0037AD04  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F068 0037AD08  41 82 00 3C */	beq lbl_8037F0A4
+/* 8037F06C 0037AD0C  80 7E 00 68 */	lwz r3, 0x68(r30)
+/* 8037F070 0037AD10  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F074 0037AD14  41 82 00 28 */	beq lbl_8037F09C
+/* 8037F078 0037AD18  80 1E 00 70 */	lwz r0, 0x70(r30)
+/* 8037F07C 0037AD1C  7C 03 00 00 */	cmpw r3, r0
+/* 8037F080 0037AD20  41 82 00 1C */	beq lbl_8037F09C
+/* 8037F084 0037AD24  54 60 10 3A */	slwi r0, r3, 2
+/* 8037F088 0037AD28  7C 7E 02 14 */	add r3, r30, r0
+/* 8037F08C 0037AD2C  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037F090 0037AD30  4B FF EF 11 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037F094 0037AD34  80 1E 00 68 */	lwz r0, 0x68(r30)
+/* 8037F098 0037AD38  90 1E 00 70 */	stw r0, 0x70(r30)
+lbl_8037F09C:
+/* 8037F09C 0037AD3C  38 00 00 00 */	li r0, 0
+/* 8037F0A0 0037AD40  90 1E 00 68 */	stw r0, 0x68(r30)
+lbl_8037F0A4:
+/* 8037F0A4 0037AD44  80 1E 00 6C */	lwz r0, 0x6c(r30)
+/* 8037F0A8 0037AD48  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F0AC 0037AD4C  41 82 00 4C */	beq lbl_8037F0F8
+/* 8037F0B0 0037AD50  7F C3 F3 78 */	mr r3, r30
+/* 8037F0B4 0037AD54  48 00 2C C1 */	bl "isDownBarActive__Q210homebutton10HomeButtonFv"
+/* 8037F0B8 0037AD58  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F0BC 0037AD5C  41 82 00 3C */	beq lbl_8037F0F8
+/* 8037F0C0 0037AD60  80 7E 00 6C */	lwz r3, 0x6c(r30)
+/* 8037F0C4 0037AD64  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F0C8 0037AD68  41 82 00 28 */	beq lbl_8037F0F0
+/* 8037F0CC 0037AD6C  80 1E 00 74 */	lwz r0, 0x74(r30)
+/* 8037F0D0 0037AD70  7C 03 00 00 */	cmpw r3, r0
+/* 8037F0D4 0037AD74  41 82 00 1C */	beq lbl_8037F0F0
+/* 8037F0D8 0037AD78  54 60 10 3A */	slwi r0, r3, 2
+/* 8037F0DC 0037AD7C  7C 7E 02 14 */	add r3, r30, r0
+/* 8037F0E0 0037AD80  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037F0E4 0037AD84  4B FF EE BD */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037F0E8 0037AD88  80 1E 00 6C */	lwz r0, 0x6c(r30)
+/* 8037F0EC 0037AD8C  90 1E 00 74 */	stw r0, 0x74(r30)
+lbl_8037F0F0:
+/* 8037F0F0 0037AD90  38 00 00 00 */	li r0, 0
+/* 8037F0F4 0037AD94  90 1E 00 6C */	stw r0, 0x6c(r30)
+lbl_8037F0F8:
+/* 8037F0F8 0037AD98  2C 1F 00 00 */	cmpwi r31, 0
+/* 8037F0FC 0037AD9C  41 82 00 10 */	beq lbl_8037F10C
+/* 8037F100 0037ADA0  7F C3 F3 78 */	mr r3, r30
+/* 8037F104 0037ADA4  7F E4 FB 78 */	mr r4, r31
+/* 8037F108 0037ADA8  48 00 07 A9 */	bl "update__Q210homebutton10HomeButtonFPC17HBMControllerData"
+lbl_8037F10C:
+/* 8037F10C 0037ADAC  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037F110 0037ADB0  38 80 00 00 */	li r4, 0
+/* 8037F114 0037ADB4  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F118 0037ADB8  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 8037F11C 0037ADBC  7D 89 03 A6 */	mtctr r12
+/* 8037F120 0037ADC0  4E 80 04 21 */	bctrl 
+/* 8037F124 0037ADC4  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 8037F128 0037ADC8  38 9E 02 08 */	addi r4, r30, 0x208
+/* 8037F12C 0037ADCC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F130 0037ADD0  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 8037F134 0037ADD4  7D 89 03 A6 */	mtctr r12
+/* 8037F138 0037ADD8  4E 80 04 21 */	bctrl 
+/* 8037F13C 0037ADDC  80 7E 00 04 */	lwz r3, 4(r30)
+/* 8037F140 0037ADE0  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037F144 0037ADE4  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F148 0037ADE8  40 82 00 34 */	bne lbl_8037F17C
+/* 8037F14C 0037ADEC  7F DD F3 78 */	mr r29, r30
+/* 8037F150 0037ADF0  3B E0 00 00 */	li r31, 0
+lbl_8037F154:
+/* 8037F154 0037ADF4  80 7D 01 EC */	lwz r3, 0x1ec(r29)
+/* 8037F158 0037ADF8  38 9E 02 08 */	addi r4, r30, 0x208
+/* 8037F15C 0037ADFC  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F160 0037AE00  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 8037F164 0037AE04  7D 89 03 A6 */	mtctr r12
+/* 8037F168 0037AE08  4E 80 04 21 */	bctrl 
+/* 8037F16C 0037AE0C  3B FF 00 01 */	addi r31, r31, 1
+/* 8037F170 0037AE10  3B BD 00 04 */	addi r29, r29, 4
+/* 8037F174 0037AE14  2C 1F 00 04 */	cmpwi r31, 4
+/* 8037F178 0037AE18  41 80 FF DC */	blt lbl_8037F154
+lbl_8037F17C:
+/* 8037F17C 0037AE1C  80 7E 00 64 */	lwz r3, 0x64(r30)
+/* 8037F180 0037AE20  2C 03 00 02 */	cmpwi r3, 2
+/* 8037F184 0037AE24  41 81 00 0C */	bgt lbl_8037F190
+/* 8037F188 0037AE28  38 03 00 01 */	addi r0, r3, 1
+/* 8037F18C 0037AE2C  90 1E 00 64 */	stw r0, 0x64(r30)
+lbl_8037F190:
+/* 8037F190 0037AE30  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
+/* 8037F194 0037AE34  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 8037F198 0037AE38  E3 C1 00 38 */	psq_l f30, 56(r1), 0, qr0
+/* 8037F19C 0037AE3C  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 8037F1A0 0037AE40  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8037F1A4 0037AE44  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8037F1A8 0037AE48  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 8037F1AC 0037AE4C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 8037F1B0 0037AE50  83 81 00 20 */	lwz r28, 0x20(r1)
+/* 8037F1B4 0037AE54  7C 08 03 A6 */	mtlr r0
+/* 8037F1B8 0037AE58  38 21 00 50 */	addi r1, r1, 0x50
+/* 8037F1BC 0037AE5C  4E 80 00 20 */	blr 
+
+.global "getFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+"getFrame__Q310homebutton10HomeButton10BlackFaderCFv":
+/* 8037F1C0 0037AE60  80 63 00 00 */	lwz r3, 0(r3)
+/* 8037F1C4 0037AE64  4E 80 00 20 */	blr 
+
+.global "stop__Q210homebutton15FrameControllerFv"
+"stop__Q210homebutton15FrameControllerFv":
+/* 8037F1C8 0037AE68  38 00 00 00 */	li r0, 0
+/* 8037F1CC 0037AE6C  90 03 00 14 */	stw r0, 0x14(r3)
+/* 8037F1D0 0037AE70  4E 80 00 20 */	blr 
+
+.global "getCurrentFrame__Q210homebutton15FrameControllerCFv"
+"getCurrentFrame__Q210homebutton15FrameControllerCFv":
+/* 8037F1D4 0037AE74  C0 23 00 0C */	lfs f1, 0xc(r3)
+/* 8037F1D8 0037AE78  4E 80 00 20 */	blr 
+
+.global "getMaxFrame__Q210homebutton15FrameControllerCFv"
+"getMaxFrame__Q210homebutton15FrameControllerCFv":
+/* 8037F1DC 0037AE7C  C0 23 00 04 */	lfs f1, 4(r3)
+/* 8037F1E0 0037AE80  4E 80 00 20 */	blr 
+
+.global "getMaxFrame__Q310homebutton10HomeButton10BlackFaderCFv"
+"getMaxFrame__Q310homebutton10HomeButton10BlackFaderCFv":
+/* 8037F1E4 0037AE84  80 63 00 04 */	lwz r3, 4(r3)
+/* 8037F1E8 0037AE88  4E 80 00 20 */	blr 
+
+.global "start__Q310homebutton10HomeButton10BlackFaderFv"
+"start__Q310homebutton10HomeButton10BlackFaderFv":
+/* 8037F1EC 0037AE8C  38 00 00 01 */	li r0, 1
+/* 8037F1F0 0037AE90  90 03 00 08 */	stw r0, 8(r3)
+/* 8037F1F4 0037AE94  4E 80 00 20 */	blr 
+
+.global "setAnmType__Q210homebutton15FrameControllerFi"
+"setAnmType__Q210homebutton15FrameControllerFi":
+/* 8037F1F8 0037AE98  90 83 00 18 */	stw r4, 0x18(r3)
+/* 8037F1FC 0037AE9C  4E 80 00 20 */	blr 
+
+.global "setEnableRumble__Q210homebutton10ControllerFb"
+"setEnableRumble__Q210homebutton10ControllerFb":
+/* 8037F200 0037AEA0  98 83 00 44 */	stb r4, 0x44(r3)
+/* 8037F204 0037AEA4  4E 80 00 20 */	blr 
+
+.global "isPlaying__Q210homebutton15FrameControllerCFv"
+"isPlaying__Q210homebutton15FrameControllerCFv":
+/* 8037F208 0037AEA8  80 63 00 14 */	lwz r3, 0x14(r3)
+/* 8037F20C 0037AEAC  38 03 FF FF */	addi r0, r3, -1
+/* 8037F210 0037AEB0  7C 00 00 34 */	cntlzw r0, r0
+/* 8037F214 0037AEB4  54 03 D9 7E */	srwi r3, r0, 5
+/* 8037F218 0037AEB8  4E 80 00 20 */	blr 
+
+.global "isRumbling__Q210homebutton10ControllerFv"
+"isRumbling__Q210homebutton10ControllerFv":
+/* 8037F21C 0037AEBC  88 63 00 1C */	lbz r3, 0x1c(r3)
+/* 8037F220 0037AEC0  4E 80 00 20 */	blr 
+
+.global "calc_fadeoutAnm__Q210homebutton10HomeButtonFv"
+"calc_fadeoutAnm__Q210homebutton10HomeButtonFv":
+/* 8037F224 0037AEC4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037F228 0037AEC8  7C 08 02 A6 */	mflr r0
+/* 8037F22C 0037AECC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037F230 0037AED0  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037F234 0037AED4  7C 7F 1B 78 */	mr r31, r3
+/* 8037F238 0037AED8  80 63 01 E8 */	lwz r3, 0x1e8(r3)
+/* 8037F23C 0037AEDC  4B FF E3 B5 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F240 0037AEE0  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F244 0037AEE4  3C 80 80 47 */	lis r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 8037F248 0037AEE8  38 84 8C 6C */	addi r4, r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l
+/* 8037F24C 0037AEEC  38 A0 00 01 */	li r5, 1
+/* 8037F250 0037AEF0  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F254 0037AEF4  80 84 00 08 */	lwz r4, 8(r4)
+/* 8037F258 0037AEF8  7D 89 03 A6 */	mtctr r12
+/* 8037F25C 0037AEFC  4E 80 04 21 */	bctrl 
+/* 8037F260 0037AF00  38 80 00 00 */	li r4, 0
+/* 8037F264 0037AF04  4B FF EA 39 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037F268 0037AF08  80 7F 00 04 */	lwz r3, 4(r31)
+/* 8037F26C 0037AF0C  80 03 00 18 */	lwz r0, 0x18(r3)
+/* 8037F270 0037AF10  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F274 0037AF14  41 82 00 1C */	beq lbl_8037F290
+/* 8037F278 0037AF18  7F E3 FB 78 */	mr r3, r31
+/* 8037F27C 0037AF1C  38 80 00 03 */	li r4, 3
+/* 8037F280 0037AF20  38 A0 00 01 */	li r5, 1
+/* 8037F284 0037AF24  48 00 2D 21 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037F288 0037AF28  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 8037F28C 0037AF2C  48 00 00 18 */	b lbl_8037F2A4
+lbl_8037F290:
+/* 8037F290 0037AF30  7F E3 FB 78 */	mr r3, r31
+/* 8037F294 0037AF34  38 80 00 01 */	li r4, 1
+/* 8037F298 0037AF38  38 A0 00 01 */	li r5, 1
+/* 8037F29C 0037AF3C  48 00 2D 09 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037F2A0 0037AF40  90 7F 00 14 */	stw r3, 0x14(r31)
+lbl_8037F2A4:
+/* 8037F2A4 0037AF44  80 1F 00 14 */	lwz r0, 0x14(r31)
+/* 8037F2A8 0037AF48  54 00 10 3A */	slwi r0, r0, 2
+/* 8037F2AC 0037AF4C  7C 7F 02 14 */	add r3, r31, r0
+/* 8037F2B0 0037AF50  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037F2B4 0037AF54  4B FF EC ED */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037F2B8 0037AF58  80 1F 00 14 */	lwz r0, 0x14(r31)
+/* 8037F2BC 0037AF5C  38 60 00 10 */	li r3, 0x10
+/* 8037F2C0 0037AF60  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 8037F2C4 0037AF64  54 00 10 3A */	slwi r0, r0, 2
+/* 8037F2C8 0037AF68  7C 7F 02 14 */	add r3, r31, r0
+/* 8037F2CC 0037AF6C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037F2D0 0037AF70  4B FF FF 0D */	bl "getMaxFrame__Q210homebutton15FrameControllerCFv"
+/* 8037F2D4 0037AF74  D0 3F 07 60 */	stfs f1, 0x760(r31)
+/* 8037F2D8 0037AF78  80 7F 00 04 */	lwz r3, 4(r31)
+/* 8037F2DC 0037AF7C  81 83 00 14 */	lwz r12, 0x14(r3)
+/* 8037F2E0 0037AF80  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037F2E4 0037AF84  41 82 00 20 */	beq lbl_8037F304
+/* 8037F2E8 0037AF88  FC 00 08 18 */	frsp f0, f1
+/* 8037F2EC 0037AF8C  38 60 00 02 */	li r3, 2
+/* 8037F2F0 0037AF90  FC 00 00 1E */	fctiwz f0, f0
+/* 8037F2F4 0037AF94  D8 01 00 08 */	stfd f0, 8(r1)
+/* 8037F2F8 0037AF98  80 81 00 0C */	lwz r4, 0xc(r1)
+/* 8037F2FC 0037AF9C  7D 89 03 A6 */	mtctr r12
+/* 8037F300 0037AFA0  4E 80 04 21 */	bctrl 
+lbl_8037F304:
+/* 8037F304 0037AFA4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037F308 0037AFA8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037F30C 0037AFAC  7C 08 03 A6 */	mtlr r0
+/* 8037F310 0037AFB0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037F314 0037AFB4  4E 80 00 20 */	blr 
+
+.global "calc_battery__Q210homebutton10HomeButtonFi"
+"calc_battery__Q210homebutton10HomeButtonFi":
+/* 8037F318 0037AFB8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037F31C 0037AFBC  7C 08 02 A6 */	mflr r0
+/* 8037F320 0037AFC0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037F324 0037AFC4  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037F328 0037AFC8  48 09 00 4D */	bl "_savegpr_27"
+/* 8037F32C 0037AFCC  1C C4 00 18 */	mulli r6, r4, 0x18
+/* 8037F330 0037AFD0  3C A0 80 47 */	lis r5, "scBatteryPaneName__Q210homebutton10HomeButton"@ha
+/* 8037F334 0037AFD4  54 80 20 36 */	slwi r0, r4, 4
+/* 8037F338 0037AFD8  38 A5 8D 78 */	addi r5, r5, "scBatteryPaneName__Q210homebutton10HomeButton"@l
+/* 8037F33C 0037AFDC  7C 7B 1B 78 */	mr r27, r3
+/* 8037F340 0037AFE0  7C 9C 23 78 */	mr r28, r4
+/* 8037F344 0037AFE4  7F E5 02 14 */	add r31, r5, r0
+/* 8037F348 0037AFE8  7F C3 32 14 */	add r30, r3, r6
+/* 8037F34C 0037AFEC  3B A0 00 00 */	li r29, 0
+lbl_8037F350:
+/* 8037F350 0037AFF0  88 1E 01 70 */	lbz r0, 0x170(r30)
+/* 8037F354 0037AFF4  7C 1D 00 00 */	cmpw r29, r0
+/* 8037F358 0037AFF8  40 80 00 30 */	bge lbl_8037F388
+/* 8037F35C 0037AFFC  80 7B 01 E8 */	lwz r3, 0x1e8(r27)
+/* 8037F360 0037B000  4B FF E2 91 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F364 0037B004  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F368 0037B008  38 A0 00 01 */	li r5, 1
+/* 8037F36C 0037B00C  80 9F 00 00 */	lwz r4, 0(r31)
+/* 8037F370 0037B010  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F374 0037B014  7D 89 03 A6 */	mtctr r12
+/* 8037F378 0037B018  4E 80 04 21 */	bctrl 
+/* 8037F37C 0037B01C  38 80 00 01 */	li r4, 1
+/* 8037F380 0037B020  4B FF E9 1D */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037F384 0037B024  48 00 00 2C */	b lbl_8037F3B0
+lbl_8037F388:
+/* 8037F388 0037B028  80 7B 01 E8 */	lwz r3, 0x1e8(r27)
+/* 8037F38C 0037B02C  4B FF E2 65 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F390 0037B030  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F394 0037B034  38 A0 00 01 */	li r5, 1
+/* 8037F398 0037B038  80 9F 00 00 */	lwz r4, 0(r31)
+/* 8037F39C 0037B03C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F3A0 0037B040  7D 89 03 A6 */	mtctr r12
+/* 8037F3A4 0037B044  4E 80 04 21 */	bctrl 
+/* 8037F3A8 0037B048  38 80 00 00 */	li r4, 0
+/* 8037F3AC 0037B04C  4B FF E8 F1 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037F3B0:
+/* 8037F3B0 0037B050  3B BD 00 01 */	addi r29, r29, 1
+/* 8037F3B4 0037B054  3B FF 00 04 */	addi r31, r31, 4
+/* 8037F3B8 0037B058  2C 1D 00 04 */	cmpwi r29, 4
+/* 8037F3BC 0037B05C  41 80 FF 94 */	blt lbl_8037F350
+/* 8037F3C0 0037B060  88 1E 01 70 */	lbz r0, 0x170(r30)
+/* 8037F3C4 0037B064  28 00 00 02 */	cmplwi r0, 2
+/* 8037F3C8 0037B068  40 80 00 28 */	bge lbl_8037F3F0
+/* 8037F3CC 0037B06C  7F 63 DB 78 */	mr r3, r27
+/* 8037F3D0 0037B070  38 9C 00 1F */	addi r4, r28, 0x1f
+/* 8037F3D4 0037B074  38 A0 00 15 */	li r5, 0x15
+/* 8037F3D8 0037B078  48 00 2B CD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037F3DC 0037B07C  54 60 10 3A */	slwi r0, r3, 2
+/* 8037F3E0 0037B080  7C 7B 02 14 */	add r3, r27, r0
+/* 8037F3E4 0037B084  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037F3E8 0037B088  4B FF EB B9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037F3EC 0037B08C  48 00 00 24 */	b lbl_8037F410
+lbl_8037F3F0:
+/* 8037F3F0 0037B090  7F 63 DB 78 */	mr r3, r27
+/* 8037F3F4 0037B094  38 9C 00 1F */	addi r4, r28, 0x1f
+/* 8037F3F8 0037B098  38 A0 00 11 */	li r5, 0x11
+/* 8037F3FC 0037B09C  48 00 2B A9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037F400 0037B0A0  54 60 10 3A */	slwi r0, r3, 2
+/* 8037F404 0037B0A4  7C 7B 02 14 */	add r3, r27, r0
+/* 8037F408 0037B0A8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037F40C 0037B0AC  4B FF EB 95 */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_8037F410:
+/* 8037F410 0037B0B0  80 1B 00 78 */	lwz r0, 0x78(r27)
+/* 8037F414 0037B0B4  2C 00 00 64 */	cmpwi r0, 0x64
+/* 8037F418 0037B0B8  40 80 00 0C */	bge lbl_8037F424
+/* 8037F41C 0037B0BC  38 00 00 00 */	li r0, 0
+/* 8037F420 0037B0C0  90 1B 00 78 */	stw r0, 0x78(r27)
+lbl_8037F424:
+/* 8037F424 0037B0C4  7F 63 DB 78 */	mr r3, r27
+/* 8037F428 0037B0C8  7F 84 E3 78 */	mr r4, r28
+/* 8037F42C 0037B0CC  4B FF EB B5 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037F430 0037B0D0  48 00 45 79 */	bl "clrBatteryFlag__Q210homebutton10ControllerFv"
+/* 8037F434 0037B0D4  39 61 00 20 */	addi r11, r1, 0x20
+/* 8037F438 0037B0D8  48 08 FF 89 */	bl "_restgpr_27"
+/* 8037F43C 0037B0DC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037F440 0037B0E0  7C 08 03 A6 */	mtlr r0
+/* 8037F444 0037B0E4  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037F448 0037B0E8  4E 80 00 20 */	blr 
+
+.global "calc_letter__Q210homebutton10HomeButtonFv"
+"calc_letter__Q210homebutton10HomeButtonFv":
+/* 8037F44C 0037B0EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037F450 0037B0F0  7C 08 02 A6 */	mflr r0
+/* 8037F454 0037B0F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037F458 0037B0F8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037F45C 0037B0FC  7C 7F 1B 78 */	mr r31, r3
+/* 8037F460 0037B100  88 03 00 86 */	lbz r0, 0x86(r3)
+/* 8037F464 0037B104  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F468 0037B108  41 82 00 58 */	beq lbl_8037F4C0
+/* 8037F46C 0037B10C  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 8037F470 0037B110  4B FF FD 99 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8037F474 0037B114  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F478 0037B118  40 82 00 48 */	bne lbl_8037F4C0
+/* 8037F47C 0037B11C  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037F480 0037B120  4B FF E1 71 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F484 0037B124  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F488 0037B128  3C 80 80 47 */	lis r4, "scFuncPaneName__Q210homebutton10HomeButton"@ha
+/* 8037F48C 0037B12C  80 84 8B 98 */	lwz r4, "scFuncPaneName__Q210homebutton10HomeButton"@l(r4)
+/* 8037F490 0037B130  38 A0 00 01 */	li r5, 1
+/* 8037F494 0037B134  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F498 0037B138  7D 89 03 A6 */	mtctr r12
+/* 8037F49C 0037B13C  4E 80 04 21 */	bctrl 
+/* 8037F4A0 0037B140  38 80 00 01 */	li r4, 1
+/* 8037F4A4 0037B144  4B FF E7 F9 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037F4A8 0037B148  80 7F 03 C8 */	lwz r3, 0x3c8(r31)
+/* 8037F4AC 0037B14C  38 80 00 02 */	li r4, 2
+/* 8037F4B0 0037B150  4B FF FD 49 */	bl "setAnmType__Q210homebutton15FrameControllerFi"
+/* 8037F4B4 0037B154  80 7F 03 C8 */	lwz r3, 0x3c8(r31)
+/* 8037F4B8 0037B158  4B FF EA E9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037F4BC 0037B15C  48 00 00 44 */	b lbl_8037F500
+lbl_8037F4C0:
+/* 8037F4C0 0037B160  88 1F 00 86 */	lbz r0, 0x86(r31)
+/* 8037F4C4 0037B164  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F4C8 0037B168  40 82 00 38 */	bne lbl_8037F500
+/* 8037F4CC 0037B16C  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 8037F4D0 0037B170  4B FF E1 21 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F4D4 0037B174  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F4D8 0037B178  3C 80 80 47 */	lis r4, "scFuncPaneName__Q210homebutton10HomeButton"@ha
+/* 8037F4DC 0037B17C  80 84 8B 98 */	lwz r4, "scFuncPaneName__Q210homebutton10HomeButton"@l(r4)
+/* 8037F4E0 0037B180  38 A0 00 01 */	li r5, 1
+/* 8037F4E4 0037B184  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F4E8 0037B188  7D 89 03 A6 */	mtctr r12
+/* 8037F4EC 0037B18C  4E 80 04 21 */	bctrl 
+/* 8037F4F0 0037B190  38 80 00 00 */	li r4, 0
+/* 8037F4F4 0037B194  4B FF E7 A9 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037F4F8 0037B198  80 7F 03 C8 */	lwz r3, 0x3c8(r31)
+/* 8037F4FC 0037B19C  4B FF FC CD */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_8037F500:
+/* 8037F500 0037B1A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037F504 0037B1A4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037F508 0037B1A8  7C 08 03 A6 */	mtlr r0
+/* 8037F50C 0037B1AC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037F510 0037B1B0  4E 80 00 20 */	blr 
+
+.global "draw__Q210homebutton10HomeButtonFv"
+"draw__Q210homebutton10HomeButtonFv":
+/* 8037F514 0037B1B4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037F518 0037B1B8  7C 08 02 A6 */	mflr r0
+/* 8037F51C 0037B1BC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037F520 0037B1C0  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037F524 0037B1C4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037F528 0037B1C8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037F52C 0037B1CC  7C 7D 1B 78 */	mr r29, r3
+/* 8037F530 0037B1D0  38 9D 02 08 */	addi r4, r29, 0x208
+/* 8037F534 0037B1D4  80 63 01 E8 */	lwz r3, 0x1e8(r3)
+/* 8037F538 0037B1D8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F53C 0037B1DC  81 8C 00 28 */	lwz r12, 0x28(r12)
+/* 8037F540 0037B1E0  7D 89 03 A6 */	mtctr r12
+/* 8037F544 0037B1E4  4E 80 04 21 */	bctrl 
+/* 8037F548 0037B1E8  80 7D 00 04 */	lwz r3, 4(r29)
+/* 8037F54C 0037B1EC  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037F550 0037B1F0  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F554 0037B1F4  40 82 00 30 */	bne lbl_8037F584
+/* 8037F558 0037B1F8  3B FD 00 0C */	addi r31, r29, 0xc
+/* 8037F55C 0037B1FC  3B C0 00 03 */	li r30, 3
+lbl_8037F560:
+/* 8037F560 0037B200  80 7F 01 EC */	lwz r3, 0x1ec(r31)
+/* 8037F564 0037B204  38 9D 02 08 */	addi r4, r29, 0x208
+/* 8037F568 0037B208  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F56C 0037B20C  81 8C 00 28 */	lwz r12, 0x28(r12)
+/* 8037F570 0037B210  7D 89 03 A6 */	mtctr r12
+/* 8037F574 0037B214  4E 80 04 21 */	bctrl 
+/* 8037F578 0037B218  37 DE FF FF */	addic. r30, r30, -1
+/* 8037F57C 0037B21C  3B FF FF FC */	addi r31, r31, -4
+/* 8037F580 0037B220  40 80 FF E0 */	bge lbl_8037F560
+lbl_8037F584:
+/* 8037F584 0037B224  38 7D 04 04 */	addi r3, r29, 0x404
+/* 8037F588 0037B228  48 00 30 FD */	bl "draw__Q310homebutton10HomeButton10BlackFaderFv"
+/* 8037F58C 0037B22C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037F590 0037B230  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037F594 0037B234  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037F598 0037B238  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037F59C 0037B23C  7C 08 03 A6 */	mtlr r0
+/* 8037F5A0 0037B240  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037F5A4 0037B244  4E 80 00 20 */	blr 
+
+.global "SpeakerCallback__10homebuttonFP7OSAlarmP9OSContext"
+"SpeakerCallback__10homebuttonFP7OSAlarmP9OSContext":
+/* 8037F5A8 0037B248  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037F5AC 0037B24C  7C 08 02 A6 */	mflr r0
+/* 8037F5B0 0037B250  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037F5B4 0037B254  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037F5B8 0037B258  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037F5BC 0037B25C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037F5C0 0037B260  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8037F5C4 0037B264  48 05 C5 01 */	bl "OSGetAlarmUserData"
+/* 8037F5C8 0037B268  54 7E 84 3E */	srwi r30, r3, 0x10
+/* 8037F5CC 0037B26C  54 7D 04 3E */	clrlwi r29, r3, 0x10
+/* 8037F5D0 0037B270  4B FF D0 F9 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037F5D4 0037B274  7C 7C 1B 78 */	mr r28, r3
+/* 8037F5D8 0037B278  7F C3 F3 78 */	mr r3, r30
+/* 8037F5DC 0037B27C  48 07 57 75 */	bl "WPADIsSpeakerEnabled"
+/* 8037F5E0 0037B280  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F5E4 0037B284  41 82 00 1C */	beq lbl_8037F600
+/* 8037F5E8 0037B288  7F 83 E3 78 */	mr r3, r28
+/* 8037F5EC 0037B28C  7F C4 F3 78 */	mr r4, r30
+/* 8037F5F0 0037B290  4B FF E9 F1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037F5F4 0037B294  48 00 41 99 */	bl "isPlayReady__Q210homebutton10ControllerCFv"
+/* 8037F5F8 0037B298  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F5FC 0037B29C  40 82 00 18 */	bne lbl_8037F614
+lbl_8037F600:
+/* 8037F600 0037B2A0  7F 83 E3 78 */	mr r3, r28
+/* 8037F604 0037B2A4  7F C4 F3 78 */	mr r4, r30
+/* 8037F608 0037B2A8  38 A0 00 32 */	li r5, 0x32
+/* 8037F60C 0037B2AC  48 00 00 79 */	bl "setSpeakerAlarm__Q210homebutton10HomeButtonFii"
+/* 8037F610 0037B2B0  48 00 00 28 */	b lbl_8037F638
+lbl_8037F614:
+/* 8037F614 0037B2B4  7F 83 E3 78 */	mr r3, r28
+/* 8037F618 0037B2B8  48 00 00 41 */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 8037F61C 0037B2BC  7C 7F 1B 78 */	mr r31, r3
+/* 8037F620 0037B2C0  7F 83 E3 78 */	mr r3, r28
+/* 8037F624 0037B2C4  7F C4 F3 78 */	mr r4, r30
+/* 8037F628 0037B2C8  4B FF E9 B9 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037F62C 0037B2CC  7F E4 FB 78 */	mr r4, r31
+/* 8037F630 0037B2D0  7F A5 EB 78 */	mr r5, r29
+/* 8037F634 0037B2D4  48 00 3D 55 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+lbl_8037F638:
+/* 8037F638 0037B2D8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037F63C 0037B2DC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037F640 0037B2E0  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037F644 0037B2E4  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037F648 0037B2E8  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8037F64C 0037B2EC  7C 08 03 A6 */	mtlr r0
+/* 8037F650 0037B2F0  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037F654 0037B2F4  4E 80 00 20 */	blr 
+
+.global "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+"getSoundArchivePlayer__Q210homebutton10HomeButtonFv":
+/* 8037F658 0037B2F8  80 63 05 D0 */	lwz r3, 0x5d0(r3)
+/* 8037F65C 0037B2FC  4E 80 00 20 */	blr 
+
+.global "MotorCallback__10homebuttonFP7OSAlarmP9OSContext"
+"MotorCallback__10homebuttonFP7OSAlarmP9OSContext":
+/* 8037F660 0037B300  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037F664 0037B304  7C 08 02 A6 */	mflr r0
+/* 8037F668 0037B308  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037F66C 0037B30C  48 05 C4 59 */	bl "OSGetAlarmUserData"
+/* 8037F670 0037B310  48 00 41 DD */	bl "stopMotor__Q210homebutton10ControllerFv"
+/* 8037F674 0037B314  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037F678 0037B318  7C 08 03 A6 */	mtlr r0
+/* 8037F67C 0037B31C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037F680 0037B320  4E 80 00 20 */	blr 
+
+.global "setSpeakerAlarm__Q210homebutton10HomeButtonFii"
+"setSpeakerAlarm__Q210homebutton10HomeButtonFii":
+/* 8037F684 0037B324  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037F688 0037B328  7C 08 02 A6 */	mflr r0
+/* 8037F68C 0037B32C  1C E4 00 30 */	mulli r7, r4, 0x30
+/* 8037F690 0037B330  54 86 80 1E */	slwi r6, r4, 0x10
+/* 8037F694 0037B334  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037F698 0037B338  38 04 00 02 */	addi r0, r4, 2
+/* 8037F69C 0037B33C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037F6A0 0037B340  7C 63 3A 14 */	add r3, r3, r7
+/* 8037F6A4 0037B344  3B E3 04 D8 */	addi r31, r3, 0x4d8
+/* 8037F6A8 0037B348  7C C4 03 78 */	or r4, r6, r0
+/* 8037F6AC 0037B34C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037F6B0 0037B350  7C BE 2B 78 */	mr r30, r5
+/* 8037F6B4 0037B354  7F E3 FB 78 */	mr r3, r31
+/* 8037F6B8 0037B358  48 05 C4 05 */	bl "OSSetAlarmUserData"
+/* 8037F6BC 0037B35C  7F E3 FB 78 */	mr r3, r31
+/* 8037F6C0 0037B360  48 05 BF D5 */	bl "OSCancelAlarm"
+/* 8037F6C4 0037B364  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 8037F6C8 0037B368  3C E0 80 38 */	lis r7, "SpeakerCallback__10homebuttonFP7OSAlarmP9OSContext"@ha
+/* 8037F6CC 0037B36C  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 8037F6D0 0037B370  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 8037F6D4 0037B374  38 83 4D D3 */	addi r4, r3, 0x10624DD3@l
+/* 8037F6D8 0037B378  38 E7 F5 A8 */	addi r7, r7, "SpeakerCallback__10homebuttonFP7OSAlarmP9OSContext"@l
+/* 8037F6DC 0037B37C  54 00 F0 BE */	srwi r0, r0, 2
+/* 8037F6E0 0037B380  7F E3 FB 78 */	mr r3, r31
+/* 8037F6E4 0037B384  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8037F6E8 0037B388  38 A0 00 00 */	li r5, 0
+/* 8037F6EC 0037B38C  54 00 D1 BE */	srwi r0, r0, 6
+/* 8037F6F0 0037B390  7C DE 01 D6 */	mullw r6, r30, r0
+/* 8037F6F4 0037B394  48 05 BE AD */	bl "OSSetAlarm"
+/* 8037F6F8 0037B398  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037F6FC 0037B39C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037F700 0037B3A0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037F704 0037B3A4  7C 08 03 A6 */	mtlr r0
+/* 8037F708 0037B3A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037F70C 0037B3AC  4E 80 00 20 */	blr 
+
+.global "RetrySimpleSyncCallback__10homebuttonFP7OSAlarmP9OSContext"
+"RetrySimpleSyncCallback__10homebuttonFP7OSAlarmP9OSContext":
+/* 8037F710 0037B3B0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8037F714 0037B3B4  7C 08 02 A6 */	mflr r0
+/* 8037F718 0037B3B8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8037F71C 0037B3BC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8037F720 0037B3C0  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8037F724 0037B3C4  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8037F728 0037B3C8  7C 7D 1B 78 */	mr r29, r3
+/* 8037F72C 0037B3CC  4B FF CF 9D */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037F730 0037B3D0  7C 7F 1B 78 */	mr r31, r3
+/* 8037F734 0037B3D4  7F A3 EB 78 */	mr r3, r29
+/* 8037F738 0037B3D8  48 05 C3 8D */	bl "OSGetAlarmUserData"
+/* 8037F73C 0037B3DC  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F740 0037B3E0  7C 7E 1B 78 */	mr r30, r3
+/* 8037F744 0037B3E4  3B A0 00 00 */	li r29, 0
+/* 8037F748 0037B3E8  40 82 00 24 */	bne lbl_8037F76C
+/* 8037F74C 0037B3EC  48 07 35 1D */	bl "WPADStartFastSimpleSync"
+/* 8037F750 0037B3F0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F754 0037B3F4  41 82 00 28 */	beq lbl_8037F77C
+/* 8037F758 0037B3F8  7F E3 FB 78 */	mr r3, r31
+/* 8037F75C 0037B3FC  38 80 00 01 */	li r4, 1
+/* 8037F760 0037B400  48 00 00 4D */	bl "setSimpleSyncFlag__Q210homebutton10HomeButtonFb"
+/* 8037F764 0037B404  3B A0 00 01 */	li r29, 1
+/* 8037F768 0037B408  48 00 00 14 */	b lbl_8037F77C
+lbl_8037F76C:
+/* 8037F76C 0037B40C  48 07 35 01 */	bl "WPADStopSimpleSync"
+/* 8037F770 0037B410  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F774 0037B414  41 82 00 08 */	beq lbl_8037F77C
+/* 8037F778 0037B418  3B A0 00 01 */	li r29, 1
+lbl_8037F77C:
+/* 8037F77C 0037B41C  2C 1D 00 00 */	cmpwi r29, 0
+/* 8037F780 0037B420  40 82 00 10 */	bne lbl_8037F790
+/* 8037F784 0037B424  7F E3 FB 78 */	mr r3, r31
+/* 8037F788 0037B428  7F C4 F3 78 */	mr r4, r30
+/* 8037F78C 0037B42C  48 00 00 89 */	bl "setSimpleSyncAlarm__Q210homebutton10HomeButtonFi"
+lbl_8037F790:
+/* 8037F790 0037B430  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8037F794 0037B434  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8037F798 0037B438  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8037F79C 0037B43C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8037F7A0 0037B440  7C 08 03 A6 */	mtlr r0
+/* 8037F7A4 0037B444  38 21 00 20 */	addi r1, r1, 0x20
+/* 8037F7A8 0037B448  4E 80 00 20 */	blr 
+
+.global "setSimpleSyncFlag__Q210homebutton10HomeButtonFb"
+"setSimpleSyncFlag__Q210homebutton10HomeButtonFb":
+/* 8037F7AC 0037B44C  98 83 00 89 */	stb r4, 0x89(r3)
+/* 8037F7B0 0037B450  4E 80 00 20 */	blr 
+
+.global "SimpleSyncCallback__10homebuttonFll"
+"SimpleSyncCallback__10homebuttonFll":
+/* 8037F7B4 0037B454  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037F7B8 0037B458  7C 08 02 A6 */	mflr r0
+/* 8037F7BC 0037B45C  2C 03 00 01 */	cmpwi r3, 1
+/* 8037F7C0 0037B460  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037F7C4 0037B464  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037F7C8 0037B468  7C 9F 23 78 */	mr r31, r4
+/* 8037F7CC 0037B46C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037F7D0 0037B470  7C 7E 1B 78 */	mr r30, r3
+/* 8037F7D4 0037B474  40 82 00 10 */	bne lbl_8037F7E4
+/* 8037F7D8 0037B478  4B FF CE F1 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037F7DC 0037B47C  38 80 00 01 */	li r4, 1
+/* 8037F7E0 0037B480  48 00 00 2D */	bl "setEndSimpleSyncFlag__Q210homebutton10HomeButtonFb"
+lbl_8037F7E4:
+/* 8037F7E4 0037B484  4B FF CE E5 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037F7E8 0037B488  7F C4 F3 78 */	mr r4, r30
+/* 8037F7EC 0037B48C  7F E5 FB 78 */	mr r5, r31
+/* 8037F7F0 0037B490  48 00 00 A1 */	bl "callSimpleSyncCallback__Q210homebutton10HomeButtonFll"
+/* 8037F7F4 0037B494  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037F7F8 0037B498  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037F7FC 0037B49C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037F800 0037B4A0  7C 08 03 A6 */	mtlr r0
+/* 8037F804 0037B4A4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037F808 0037B4A8  4E 80 00 20 */	blr 
+
+.global "setEndSimpleSyncFlag__Q210homebutton10HomeButtonFb"
+"setEndSimpleSyncFlag__Q210homebutton10HomeButtonFb":
+/* 8037F80C 0037B4AC  98 83 00 8A */	stb r4, 0x8a(r3)
+/* 8037F810 0037B4B0  4E 80 00 20 */	blr 
+
+.global "setSimpleSyncAlarm__Q210homebutton10HomeButtonFi"
+"setSimpleSyncAlarm__Q210homebutton10HomeButtonFi":
+/* 8037F814 0037B4B4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037F818 0037B4B8  7C 08 02 A6 */	mflr r0
+/* 8037F81C 0037B4BC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037F820 0037B4C0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037F824 0037B4C4  7C 9F 23 78 */	mr r31, r4
+/* 8037F828 0037B4C8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8037F82C 0037B4CC  7C 7E 1B 78 */	mr r30, r3
+/* 8037F830 0037B4D0  38 63 05 98 */	addi r3, r3, 0x598
+/* 8037F834 0037B4D4  48 05 BE 61 */	bl "OSCancelAlarm"
+/* 8037F838 0037B4D8  7F E4 FB 78 */	mr r4, r31
+/* 8037F83C 0037B4DC  38 7E 05 98 */	addi r3, r30, 0x598
+/* 8037F840 0037B4E0  48 05 C2 7D */	bl "OSSetAlarmUserData"
+/* 8037F844 0037B4E4  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 8037F848 0037B4E8  3C E0 80 38 */	lis r7, "RetrySimpleSyncCallback__10homebuttonFP7OSAlarmP9OSContext"@ha
+/* 8037F84C 0037B4EC  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 8037F850 0037B4F0  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 8037F854 0037B4F4  38 83 4D D3 */	addi r4, r3, 0x10624DD3@l
+/* 8037F858 0037B4F8  38 E7 F7 10 */	addi r7, r7, "RetrySimpleSyncCallback__10homebuttonFP7OSAlarmP9OSContext"@l
+/* 8037F85C 0037B4FC  54 00 F0 BE */	srwi r0, r0, 2
+/* 8037F860 0037B500  38 7E 05 98 */	addi r3, r30, 0x598
+/* 8037F864 0037B504  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8037F868 0037B508  38 A0 00 00 */	li r5, 0
+/* 8037F86C 0037B50C  54 00 D1 BE */	srwi r0, r0, 6
+/* 8037F870 0037B510  1C C0 00 64 */	mulli r6, r0, 0x64
+/* 8037F874 0037B514  48 05 BD 2D */	bl "OSSetAlarm"
+/* 8037F878 0037B518  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037F87C 0037B51C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037F880 0037B520  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8037F884 0037B524  7C 08 03 A6 */	mtlr r0
+/* 8037F888 0037B528  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037F88C 0037B52C  4E 80 00 20 */	blr 
+
+.global "callSimpleSyncCallback__Q210homebutton10HomeButtonFll"
+"callSimpleSyncCallback__Q210homebutton10HomeButtonFll":
+/* 8037F890 0037B530  81 83 01 BC */	lwz r12, 0x1bc(r3)
+/* 8037F894 0037B534  2C 0C 00 00 */	cmpwi r12, 0
+/* 8037F898 0037B538  4D 82 00 20 */	beqlr 
+/* 8037F89C 0037B53C  7C 83 23 78 */	mr r3, r4
+/* 8037F8A0 0037B540  7C A4 2B 78 */	mr r4, r5
+/* 8037F8A4 0037B544  7D 89 03 A6 */	mtctr r12
+/* 8037F8A8 0037B548  4E 80 04 20 */	bctr 
+/* 8037F8AC 0037B54C  4E 80 00 20 */	blr 
+
+.global "update__Q210homebutton10HomeButtonFPC17HBMControllerData"
+"update__Q210homebutton10HomeButtonFPC17HBMControllerData":
+/* 8037F8B0 0037B550  94 21 FF 50 */	stwu r1, -0xb0(r1)
+/* 8037F8B4 0037B554  7C 08 02 A6 */	mflr r0
+/* 8037F8B8 0037B558  90 01 00 B4 */	stw r0, 0xb4(r1)
+/* 8037F8BC 0037B55C  DB E1 00 A0 */	stfd f31, 0xa0(r1)
+/* 8037F8C0 0037B560  F3 E1 00 A8 */	psq_st f31, 168(r1), 0, qr0
+/* 8037F8C4 0037B564  DB C1 00 90 */	stfd f30, 0x90(r1)
+/* 8037F8C8 0037B568  F3 C1 00 98 */	psq_st f30, 152(r1), 0, qr0
+/* 8037F8CC 0037B56C  39 61 00 90 */	addi r11, r1, 0x90
+/* 8037F8D0 0037B570  48 08 FA 79 */	bl "_savegpr_16"
+/* 8037F8D4 0037B574  7C 73 1B 78 */	mr r19, r3
+/* 8037F8D8 0037B578  7C 94 23 78 */	mr r20, r4
+/* 8037F8DC 0037B57C  38 63 04 04 */	addi r3, r3, 0x404
+/* 8037F8E0 0037B580  48 00 2A 91 */	bl "calc__Q310homebutton10HomeButton10BlackFaderFv"
+/* 8037F8E4 0037B584  3E E0 80 47 */	lis r23, "scBatteryPaneName__Q210homebutton10HomeButton"@ha
+/* 8037F8E8 0037B588  C3 C2 A6 C0 */	lfs f30, lbl_805DB8E0-_SDA2_BASE_(r2)
+/* 8037F8EC 0037B58C  C3 E2 A6 B4 */	lfs f31, lbl_805DB8D4-_SDA2_BASE_(r2)
+/* 8037F8F0 0037B590  7E 7B 9B 78 */	mr r27, r19
+/* 8037F8F4 0037B594  7E 9A A3 78 */	mr r26, r20
+/* 8037F8F8 0037B598  3B 33 01 5C */	addi r25, r19, 0x15c
+/* 8037F8FC 0037B59C  3B 13 04 18 */	addi r24, r19, 0x418
+/* 8037F900 0037B5A0  3A F7 8D 78 */	addi r23, r23, "scBatteryPaneName__Q210homebutton10HomeButton"@l
+/* 8037F904 0037B5A4  3A A0 00 00 */	li r21, 0
+/* 8037F908 0037B5A8  3B 80 00 01 */	li r28, 1
+/* 8037F90C 0037B5AC  3F A0 80 00 */	lis r29, 0x8000
+/* 8037F910 0037B5B0  3F C0 10 62 */	lis r30, 0x1062
+/* 8037F914 0037B5B4  3F E0 80 38 */	lis r31, 0x8038
+/* 8037F918 0037B5B8  3A 40 00 00 */	li r18, 0
+lbl_8037F91C:
+/* 8037F91C 0037B5BC  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037F920 0037B5C0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037F924 0037B5C4  41 82 03 EC */	beq lbl_8037FD10
+/* 8037F928 0037B5C8  88 03 00 5D */	lbz r0, 0x5d(r3)
+/* 8037F92C 0037B5CC  7C 00 07 74 */	extsb r0, r0
+/* 8037F930 0037B5D0  2C 00 FF FF */	cmpwi r0, -1
+/* 8037F934 0037B5D4  41 82 01 24 */	beq lbl_8037FA58
+/* 8037F938 0037B5D8  4B FF CD 91 */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 8037F93C 0037B5DC  4B FF C7 11 */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 8037F940 0037B5E0  C0 03 00 30 */	lfs f0, 0x30(r3)
+/* 8037F944 0037B5E4  80 7B 00 54 */	lwz r3, 0x54(r27)
+/* 8037F948 0037B5E8  EC 1E 00 24 */	fdivs f0, f30, f0
+/* 8037F94C 0037B5EC  EC 1F 00 2A */	fadds f0, f31, f0
+/* 8037F950 0037B5F0  FC 00 00 1E */	fctiwz f0, f0
+/* 8037F954 0037B5F4  D8 01 00 40 */	stfd f0, 0x40(r1)
+/* 8037F958 0037B5F8  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8037F95C 0037B5FC  7C 03 00 00 */	cmpw r3, r0
+/* 8037F960 0037B600  40 81 00 94 */	ble lbl_8037F9F4
+/* 8037F964 0037B604  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037F968 0037B608  88 03 00 5D */	lbz r0, 0x5d(r3)
+/* 8037F96C 0037B60C  7C 00 07 75 */	extsb. r0, r0
+/* 8037F970 0037B610  40 82 00 8C */	bne lbl_8037F9FC
+/* 8037F974 0037B614  80 14 00 0C */	lwz r0, 0xc(r20)
+/* 8037F978 0037B618  28 00 00 02 */	cmplwi r0, 2
+/* 8037F97C 0037B61C  41 82 00 2C */	beq lbl_8037F9A8
+/* 8037F980 0037B620  88 03 00 5C */	lbz r0, 0x5c(r3)
+/* 8037F984 0037B624  28 00 00 02 */	cmplwi r0, 2
+/* 8037F988 0037B628  41 82 00 20 */	beq lbl_8037F9A8
+/* 8037F98C 0037B62C  88 03 00 5E */	lbz r0, 0x5e(r3)
+/* 8037F990 0037B630  7C 00 07 75 */	extsb. r0, r0
+/* 8037F994 0037B634  40 81 00 0C */	ble lbl_8037F9A0
+/* 8037F998 0037B638  38 A0 00 01 */	li r5, 1
+/* 8037F99C 0037B63C  48 00 00 10 */	b lbl_8037F9AC
+lbl_8037F9A0:
+/* 8037F9A0 0037B640  38 A0 00 00 */	li r5, 0
+/* 8037F9A4 0037B644  48 00 00 08 */	b lbl_8037F9AC
+lbl_8037F9A8:
+/* 8037F9A8 0037B648  38 A0 00 01 */	li r5, 1
+lbl_8037F9AC:
+/* 8037F9AC 0037B64C  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037F9B0 0037B650  7F 44 D3 78 */	mr r4, r26
+/* 8037F9B4 0037B654  48 00 37 C1 */	bl "setKpad__Q210homebutton10ControllerFPC11HBMKPadDatab"
+/* 8037F9B8 0037B658  80 73 00 04 */	lwz r3, 4(r19)
+/* 8037F9BC 0037B65C  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037F9C0 0037B660  2C 00 00 00 */	cmpwi r0, 0
+/* 8037F9C4 0037B664  40 82 00 38 */	bne lbl_8037F9FC
+/* 8037F9C8 0037B668  80 7B 01 EC */	lwz r3, 0x1ec(r27)
+/* 8037F9CC 0037B66C  4B FF DC 25 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037F9D0 0037B670  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037F9D4 0037B674  38 A0 00 01 */	li r5, 1
+/* 8037F9D8 0037B678  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037F9DC 0037B67C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037F9E0 0037B680  7D 89 03 A6 */	mtctr r12
+/* 8037F9E4 0037B684  4E 80 04 21 */	bctrl 
+/* 8037F9E8 0037B688  38 80 00 01 */	li r4, 1
+/* 8037F9EC 0037B68C  4B FF E2 B1 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037F9F0 0037B690  48 00 00 0C */	b lbl_8037F9FC
+lbl_8037F9F4:
+/* 8037F9F4 0037B694  38 03 00 01 */	addi r0, r3, 1
+/* 8037F9F8 0037B698  90 1B 00 54 */	stw r0, 0x54(r27)
+lbl_8037F9FC:
+/* 8037F9FC 0037B69C  80 14 00 0C */	lwz r0, 0xc(r20)
+/* 8037FA00 0037B6A0  28 00 00 02 */	cmplwi r0, 2
+/* 8037FA04 0037B6A4  41 82 00 94 */	beq lbl_8037FA98
+/* 8037FA08 0037B6A8  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037FA0C 0037B6AC  88 03 00 5C */	lbz r0, 0x5c(r3)
+/* 8037FA10 0037B6B0  28 00 00 02 */	cmplwi r0, 2
+/* 8037FA14 0037B6B4  41 82 00 84 */	beq lbl_8037FA98
+/* 8037FA18 0037B6B8  88 03 00 5E */	lbz r0, 0x5e(r3)
+/* 8037FA1C 0037B6BC  7C 00 07 75 */	extsb. r0, r0
+/* 8037FA20 0037B6C0  41 81 00 78 */	bgt lbl_8037FA98
+/* 8037FA24 0037B6C4  7E A3 AB 78 */	mr r3, r21
+/* 8037FA28 0037B6C8  38 81 00 08 */	addi r4, r1, 8
+/* 8037FA2C 0037B6CC  48 07 44 CD */	bl "WPADProbe"
+/* 8037FA30 0037B6D0  80 94 00 00 */	lwz r4, 0(r20)
+/* 8037FA34 0037B6D4  88 04 00 5D */	lbz r0, 0x5d(r4)
+/* 8037FA38 0037B6D8  7C 00 07 74 */	extsb r0, r0
+/* 8037FA3C 0037B6DC  2C 00 FF FE */	cmpwi r0, -2
+/* 8037FA40 0037B6E0  41 82 00 58 */	beq lbl_8037FA98
+/* 8037FA44 0037B6E4  2C 03 FF FE */	cmpwi r3, -2
+/* 8037FA48 0037B6E8  41 82 00 50 */	beq lbl_8037FA98
+/* 8037FA4C 0037B6EC  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037FA50 0037B6F0  48 00 38 BD */	bl "setInValidPos__Q210homebutton10ControllerFv"
+/* 8037FA54 0037B6F4  48 00 00 44 */	b lbl_8037FA98
+lbl_8037FA58:
+/* 8037FA58 0037B6F8  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037FA5C 0037B6FC  48 00 38 B1 */	bl "setInValidPos__Q210homebutton10ControllerFv"
+/* 8037FA60 0037B700  80 73 00 04 */	lwz r3, 4(r19)
+/* 8037FA64 0037B704  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037FA68 0037B708  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FA6C 0037B70C  40 82 00 2C */	bne lbl_8037FA98
+/* 8037FA70 0037B710  80 7B 01 EC */	lwz r3, 0x1ec(r27)
+/* 8037FA74 0037B714  4B FF DB 7D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037FA78 0037B718  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FA7C 0037B71C  38 A0 00 01 */	li r5, 1
+/* 8037FA80 0037B720  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037FA84 0037B724  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037FA88 0037B728  7D 89 03 A6 */	mtctr r12
+/* 8037FA8C 0037B72C  4E 80 04 21 */	bctrl 
+/* 8037FA90 0037B730  38 80 00 00 */	li r4, 0
+/* 8037FA94 0037B734  4B FF E2 09 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037FA98:
+/* 8037FA98 0037B738  7C 73 AA 14 */	add r3, r19, r21
+/* 8037FA9C 0037B73C  88 03 00 7C */	lbz r0, 0x7c(r3)
+/* 8037FAA0 0037B740  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FAA4 0037B744  40 82 01 00 */	bne lbl_8037FBA4
+/* 8037FAA8 0037B748  9B 83 00 7C */	stb r28, 0x7c(r3)
+/* 8037FAAC 0037B74C  7E 63 9B 78 */	mr r3, r19
+/* 8037FAB0 0037B750  7E A4 AB 78 */	mr r4, r21
+/* 8037FAB4 0037B754  4B FF E5 2D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FAB8 0037B758  7F 24 CB 78 */	mr r4, r25
+/* 8037FABC 0037B75C  48 00 3D F9 */	bl "getInfoAsync__Q210homebutton10ControllerFP8WPADInfo"
+/* 8037FAC0 0037B760  7E 63 9B 78 */	mr r3, r19
+/* 8037FAC4 0037B764  38 95 00 1F */	addi r4, r21, 0x1f
+/* 8037FAC8 0037B768  38 A0 00 11 */	li r5, 0x11
+/* 8037FACC 0037B76C  48 00 24 D9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037FAD0 0037B770  54 60 10 3A */	slwi r0, r3, 2
+/* 8037FAD4 0037B774  7C 73 02 14 */	add r3, r19, r0
+/* 8037FAD8 0037B778  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037FADC 0037B77C  4B FF E4 C5 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037FAE0 0037B780  7E 63 9B 78 */	mr r3, r19
+/* 8037FAE4 0037B784  38 95 00 1F */	addi r4, r21, 0x1f
+/* 8037FAE8 0037B788  38 A0 00 12 */	li r5, 0x12
+/* 8037FAEC 0037B78C  48 00 24 B9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037FAF0 0037B790  54 60 10 3A */	slwi r0, r3, 2
+/* 8037FAF4 0037B794  7C 73 02 14 */	add r3, r19, r0
+/* 8037FAF8 0037B798  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037FAFC 0037B79C  4B FF F6 CD */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 8037FB00 0037B7A0  7E 63 9B 78 */	mr r3, r19
+/* 8037FB04 0037B7A4  38 95 00 1F */	addi r4, r21, 0x1f
+/* 8037FB08 0037B7A8  38 A0 00 0F */	li r5, 0xf
+/* 8037FB0C 0037B7AC  48 00 24 99 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037FB10 0037B7B0  54 60 10 3A */	slwi r0, r3, 2
+/* 8037FB14 0037B7B4  7C 73 02 14 */	add r3, r19, r0
+/* 8037FB18 0037B7B8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037FB1C 0037B7BC  4B FF E4 85 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037FB20 0037B7C0  7E 63 9B 78 */	mr r3, r19
+/* 8037FB24 0037B7C4  38 95 00 11 */	addi r4, r21, 0x11
+/* 8037FB28 0037B7C8  48 00 30 79 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 8037FB2C 0037B7CC  7E 63 9B 78 */	mr r3, r19
+/* 8037FB30 0037B7D0  7E A4 AB 78 */	mr r4, r21
+/* 8037FB34 0037B7D4  4B FF E4 AD */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FB38 0037B7D8  48 00 37 ED */	bl "connect__Q210homebutton10ControllerFv"
+/* 8037FB3C 0037B7DC  7E 63 9B 78 */	mr r3, r19
+/* 8037FB40 0037B7E0  7E A4 AB 78 */	mr r4, r21
+/* 8037FB44 0037B7E4  4B FF E4 9D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FB48 0037B7E8  48 00 3C 91 */	bl "startMotor__Q210homebutton10ControllerFv"
+/* 8037FB4C 0037B7EC  7E 63 9B 78 */	mr r3, r19
+/* 8037FB50 0037B7F0  7E A4 AB 78 */	mr r4, r21
+/* 8037FB54 0037B7F4  4B FF E4 8D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FB58 0037B7F8  7C 64 1B 78 */	mr r4, r3
+/* 8037FB5C 0037B7FC  7F 03 C3 78 */	mr r3, r24
+/* 8037FB60 0037B800  48 05 BF 5D */	bl "OSSetAlarmUserData"
+/* 8037FB64 0037B804  7F 03 C3 78 */	mr r3, r24
+/* 8037FB68 0037B808  48 05 BB 2D */	bl "OSCancelAlarm"
+/* 8037FB6C 0037B80C  80 1D 00 F8 */	lwz r0, 0xf8(r29)
+/* 8037FB70 0037B810  38 9E 4D D3 */	addi r4, r30, 0x4dd3
+/* 8037FB74 0037B814  7F 03 C3 78 */	mr r3, r24
+/* 8037FB78 0037B818  38 FF F6 60 */	addi r7, r31, -2464
+/* 8037FB7C 0037B81C  54 00 F0 BE */	srwi r0, r0, 2
+/* 8037FB80 0037B820  38 A0 00 00 */	li r5, 0
+/* 8037FB84 0037B824  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8037FB88 0037B828  54 00 D1 BE */	srwi r0, r0, 6
+/* 8037FB8C 0037B82C  1C C0 01 2C */	mulli r6, r0, 0x12c
+/* 8037FB90 0037B830  48 05 BA 11 */	bl "OSSetAlarm"
+/* 8037FB94 0037B834  7E 63 9B 78 */	mr r3, r19
+/* 8037FB98 0037B838  7E A4 AB 78 */	mr r4, r21
+/* 8037FB9C 0037B83C  38 A0 01 90 */	li r5, 0x190
+/* 8037FBA0 0037B840  4B FF FA E5 */	bl "setSpeakerAlarm__Q210homebutton10HomeButtonFii"
+lbl_8037FBA4:
+/* 8037FBA4 0037B844  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037FBA8 0037B848  88 03 00 5D */	lbz r0, 0x5d(r3)
+/* 8037FBAC 0037B84C  7C 00 07 75 */	extsb. r0, r0
+/* 8037FBB0 0037B850  40 82 01 38 */	bne lbl_8037FCE8
+/* 8037FBB4 0037B854  38 61 00 30 */	addi r3, r1, 0x30
+/* 8037FBB8 0037B858  48 00 03 45 */	bl "__ct__Q36nw4hbm4math4VEC3Fv"
+/* 8037FBBC 0037B85C  80 14 00 0C */	lwz r0, 0xc(r20)
+/* 8037FBC0 0037B860  28 00 00 02 */	cmplwi r0, 2
+/* 8037FBC4 0037B864  40 82 00 38 */	bne lbl_8037FBFC
+/* 8037FBC8 0037B868  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037FBCC 0037B86C  88 03 00 5C */	lbz r0, 0x5c(r3)
+/* 8037FBD0 0037B870  28 00 00 02 */	cmplwi r0, 2
+/* 8037FBD4 0037B874  40 82 00 28 */	bne lbl_8037FBFC
+/* 8037FBD8 0037B878  C0 22 A6 84 */	lfs f1, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037FBDC 0037B87C  38 61 00 24 */	addi r3, r1, 0x24
+/* 8037FBE0 0037B880  C0 62 A6 C4 */	lfs f3, lbl_805DB8E4-_SDA2_BASE_(r2)
+/* 8037FBE4 0037B884  FC 40 08 90 */	fmr f2, f1
+/* 8037FBE8 0037B888  48 00 03 05 */	bl "__ct__Q36nw4hbm4math4VEC3Ffff"
+/* 8037FBEC 0037B88C  7C 64 1B 78 */	mr r4, r3
+/* 8037FBF0 0037B890  38 61 00 30 */	addi r3, r1, 0x30
+/* 8037FBF4 0037B894  48 00 02 AD */	bl "__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3"
+/* 8037FBF8 0037B898  48 00 00 48 */	b lbl_8037FC40
+lbl_8037FBFC:
+/* 8037FBFC 0037B89C  80 74 00 00 */	lwz r3, 0(r20)
+/* 8037FC00 0037B8A0  80 03 00 38 */	lwz r0, 0x38(r3)
+/* 8037FC04 0037B8A4  80 63 00 34 */	lwz r3, 0x34(r3)
+/* 8037FC08 0037B8A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037FC0C 0037B8AC  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 8037FC10 0037B8B0  90 61 00 10 */	stw r3, 0x10(r1)
+/* 8037FC14 0037B8B4  FC 20 00 50 */	fneg f1, f0
+/* 8037FC18 0037B8B8  C0 41 00 10 */	lfs f2, 0x10(r1)
+/* 8037FC1C 0037B8BC  48 00 02 5D */	bl "Atan2Deg__Q26nw4hbm4mathFff"
+/* 8037FC20 0037B8C0  FC 60 08 90 */	fmr f3, f1
+/* 8037FC24 0037B8C4  C0 22 A6 84 */	lfs f1, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 8037FC28 0037B8C8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8037FC2C 0037B8CC  FC 40 08 90 */	fmr f2, f1
+/* 8037FC30 0037B8D0  48 00 02 BD */	bl "__ct__Q36nw4hbm4math4VEC3Ffff"
+/* 8037FC34 0037B8D4  7C 64 1B 78 */	mr r4, r3
+/* 8037FC38 0037B8D8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8037FC3C 0037B8DC  48 00 02 65 */	bl "__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3"
+lbl_8037FC40:
+/* 8037FC40 0037B8E0  80 73 00 04 */	lwz r3, 4(r19)
+/* 8037FC44 0037B8E4  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037FC48 0037B8E8  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FC4C 0037B8EC  40 82 00 54 */	bne lbl_8037FCA0
+/* 8037FC50 0037B8F0  80 7B 01 EC */	lwz r3, 0x1ec(r27)
+/* 8037FC54 0037B8F4  4B FF D9 9D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037FC58 0037B8F8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FC5C 0037B8FC  38 A0 00 01 */	li r5, 1
+/* 8037FC60 0037B900  80 8D AC F4 */	lwz r4, "scCursorRotPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037FC64 0037B904  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037FC68 0037B908  7D 89 03 A6 */	mtctr r12
+/* 8037FC6C 0037B90C  4E 80 04 21 */	bctrl 
+/* 8037FC70 0037B910  38 81 00 30 */	addi r4, r1, 0x30
+/* 8037FC74 0037B914  48 00 01 FD */	bl "SetRotate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3"
+/* 8037FC78 0037B918  80 7B 01 EC */	lwz r3, 0x1ec(r27)
+/* 8037FC7C 0037B91C  4B FF D9 75 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037FC80 0037B920  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FC84 0037B924  38 A0 00 01 */	li r5, 1
+/* 8037FC88 0037B928  80 8D AD 00 */	lwz r4, "scCursorSRotPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037FC8C 0037B92C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037FC90 0037B930  7D 89 03 A6 */	mtctr r12
+/* 8037FC94 0037B934  4E 80 04 21 */	bctrl 
+/* 8037FC98 0037B938  38 81 00 30 */	addi r4, r1, 0x30
+/* 8037FC9C 0037B93C  48 00 01 D5 */	bl "SetRotate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3"
+lbl_8037FCA0:
+/* 8037FCA0 0037B940  80 13 00 78 */	lwz r0, 0x78(r19)
+/* 8037FCA4 0037B944  2C 00 00 64 */	cmpwi r0, 0x64
+/* 8037FCA8 0037B948  40 81 00 18 */	ble lbl_8037FCC0
+/* 8037FCAC 0037B94C  7E 63 9B 78 */	mr r3, r19
+/* 8037FCB0 0037B950  7E A4 AB 78 */	mr r4, r21
+/* 8037FCB4 0037B954  4B FF E3 2D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FCB8 0037B958  7F 24 CB 78 */	mr r4, r25
+/* 8037FCBC 0037B95C  48 00 3B F9 */	bl "getInfoAsync__Q210homebutton10ControllerFP8WPADInfo"
+lbl_8037FCC0:
+/* 8037FCC0 0037B960  7E 63 9B 78 */	mr r3, r19
+/* 8037FCC4 0037B964  7E A4 AB 78 */	mr r4, r21
+/* 8037FCC8 0037B968  48 00 02 39 */	bl "update_controller__Q210homebutton10HomeButtonFi"
+/* 8037FCCC 0037B96C  80 73 00 04 */	lwz r3, 4(r19)
+/* 8037FCD0 0037B970  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037FCD4 0037B974  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FCD8 0037B978  40 82 00 10 */	bne lbl_8037FCE8
+/* 8037FCDC 0037B97C  7E 63 9B 78 */	mr r3, r19
+/* 8037FCE0 0037B980  7E A4 AB 78 */	mr r4, r21
+/* 8037FCE4 0037B984  48 00 07 AD */	bl "update_posController__Q210homebutton10HomeButtonFi"
+lbl_8037FCE8:
+/* 8037FCE8 0037B988  7E 63 9B 78 */	mr r3, r19
+/* 8037FCEC 0037B98C  7E A4 AB 78 */	mr r4, r21
+/* 8037FCF0 0037B990  4B FF E2 F1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8037FCF4 0037B994  48 00 3C 69 */	bl "getBatteryFlag__Q210homebutton10ControllerCFv"
+/* 8037FCF8 0037B998  2C 03 00 00 */	cmpwi r3, 0
+/* 8037FCFC 0037B99C  41 82 01 08 */	beq lbl_8037FE04
+/* 8037FD00 0037B9A0  7E 63 9B 78 */	mr r3, r19
+/* 8037FD04 0037B9A4  7E A4 AB 78 */	mr r4, r21
+/* 8037FD08 0037B9A8  4B FF F6 11 */	bl "calc_battery__Q210homebutton10HomeButtonFi"
+/* 8037FD0C 0037B9AC  48 00 00 F8 */	b lbl_8037FE04
+lbl_8037FD10:
+/* 8037FD10 0037B9B0  7E D3 AA 14 */	add r22, r19, r21
+/* 8037FD14 0037B9B4  88 16 00 7C */	lbz r0, 0x7c(r22)
+/* 8037FD18 0037B9B8  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FD1C 0037B9BC  41 82 00 DC */	beq lbl_8037FDF8
+/* 8037FD20 0037B9C0  7E 63 9B 78 */	mr r3, r19
+/* 8037FD24 0037B9C4  38 95 00 1F */	addi r4, r21, 0x1f
+/* 8037FD28 0037B9C8  38 A0 00 11 */	li r5, 0x11
+/* 8037FD2C 0037B9CC  48 00 22 79 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037FD30 0037B9D0  54 60 10 3A */	slwi r0, r3, 2
+/* 8037FD34 0037B9D4  7C 73 02 14 */	add r3, r19, r0
+/* 8037FD38 0037B9D8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037FD3C 0037B9DC  4B FF E2 65 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037FD40 0037B9E0  7E 63 9B 78 */	mr r3, r19
+/* 8037FD44 0037B9E4  38 95 00 1F */	addi r4, r21, 0x1f
+/* 8037FD48 0037B9E8  38 A0 00 12 */	li r5, 0x12
+/* 8037FD4C 0037B9EC  48 00 22 59 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8037FD50 0037B9F0  54 60 10 3A */	slwi r0, r3, 2
+/* 8037FD54 0037B9F4  7C 73 02 14 */	add r3, r19, r0
+/* 8037FD58 0037B9F8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8037FD5C 0037B9FC  4B FF E2 45 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8037FD60 0037BA00  7E F1 BB 78 */	mr r17, r23
+/* 8037FD64 0037BA04  3A 00 00 00 */	li r16, 0
+lbl_8037FD68:
+/* 8037FD68 0037BA08  80 73 01 E8 */	lwz r3, 0x1e8(r19)
+/* 8037FD6C 0037BA0C  4B FF D8 85 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037FD70 0037BA10  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FD74 0037BA14  38 A0 00 01 */	li r5, 1
+/* 8037FD78 0037BA18  80 91 00 00 */	lwz r4, 0(r17)
+/* 8037FD7C 0037BA1C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037FD80 0037BA20  7D 89 03 A6 */	mtctr r12
+/* 8037FD84 0037BA24  4E 80 04 21 */	bctrl 
+/* 8037FD88 0037BA28  38 80 00 00 */	li r4, 0
+/* 8037FD8C 0037BA2C  4B FF DF 11 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8037FD90 0037BA30  3A 10 00 01 */	addi r16, r16, 1
+/* 8037FD94 0037BA34  3A 31 00 04 */	addi r17, r17, 4
+/* 8037FD98 0037BA38  2C 10 00 04 */	cmpwi r16, 4
+/* 8037FD9C 0037BA3C  41 80 FF CC */	blt lbl_8037FD68
+/* 8037FDA0 0037BA40  80 73 00 04 */	lwz r3, 4(r19)
+/* 8037FDA4 0037BA44  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8037FDA8 0037BA48  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FDAC 0037BA4C  40 82 00 2C */	bne lbl_8037FDD8
+/* 8037FDB0 0037BA50  80 7B 01 EC */	lwz r3, 0x1ec(r27)
+/* 8037FDB4 0037BA54  4B FF D8 3D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8037FDB8 0037BA58  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FDBC 0037BA5C  38 A0 00 01 */	li r5, 1
+/* 8037FDC0 0037BA60  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 8037FDC4 0037BA64  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8037FDC8 0037BA68  7D 89 03 A6 */	mtctr r12
+/* 8037FDCC 0037BA6C  4E 80 04 21 */	bctrl 
+/* 8037FDD0 0037BA70  38 80 00 00 */	li r4, 0
+/* 8037FDD4 0037BA74  4B FF DE C9 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+lbl_8037FDD8:
+/* 8037FDD8 0037BA78  92 5B 00 54 */	stw r18, 0x54(r27)
+/* 8037FDDC 0037BA7C  9A 56 00 7C */	stb r18, 0x7c(r22)
+/* 8037FDE0 0037BA80  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037FDE4 0037BA84  48 00 35 29 */	bl "setInValidPos__Q210homebutton10ControllerFv"
+/* 8037FDE8 0037BA88  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037FDEC 0037BA8C  48 00 35 0D */	bl "clrKpadButton__Q210homebutton10ControllerFv"
+/* 8037FDF0 0037BA90  80 7B 02 5C */	lwz r3, 0x25c(r27)
+/* 8037FDF4 0037BA94  48 00 35 81 */	bl "disconnect__Q210homebutton10ControllerFv"
+lbl_8037FDF8:
+/* 8037FDF8 0037BA98  7E 63 9B 78 */	mr r3, r19
+/* 8037FDFC 0037BA9C  7E A4 AB 78 */	mr r4, r21
+/* 8037FE00 0037BAA0  48 00 1E 51 */	bl "reset_guiManager__Q210homebutton10HomeButtonFi"
+lbl_8037FE04:
+/* 8037FE04 0037BAA4  3A B5 00 01 */	addi r21, r21, 1
+/* 8037FE08 0037BAA8  3B 7B 00 04 */	addi r27, r27, 4
+/* 8037FE0C 0037BAAC  2C 15 00 04 */	cmpwi r21, 4
+/* 8037FE10 0037BAB0  3B 5A 00 10 */	addi r26, r26, 0x10
+/* 8037FE14 0037BAB4  3B 39 00 18 */	addi r25, r25, 0x18
+/* 8037FE18 0037BAB8  3B 18 00 30 */	addi r24, r24, 0x30
+/* 8037FE1C 0037BABC  3A F7 00 10 */	addi r23, r23, 0x10
+/* 8037FE20 0037BAC0  3A 94 00 10 */	addi r20, r20, 0x10
+/* 8037FE24 0037BAC4  41 80 FA F8 */	blt lbl_8037F91C
+/* 8037FE28 0037BAC8  80 73 00 78 */	lwz r3, 0x78(r19)
+/* 8037FE2C 0037BACC  2C 03 00 64 */	cmpwi r3, 0x64
+/* 8037FE30 0037BAD0  40 81 00 10 */	ble lbl_8037FE40
+/* 8037FE34 0037BAD4  38 00 00 00 */	li r0, 0
+/* 8037FE38 0037BAD8  90 13 00 78 */	stw r0, 0x78(r19)
+/* 8037FE3C 0037BADC  48 00 00 0C */	b lbl_8037FE48
+lbl_8037FE40:
+/* 8037FE40 0037BAE0  38 03 00 01 */	addi r0, r3, 1
+/* 8037FE44 0037BAE4  90 13 00 78 */	stw r0, 0x78(r19)
+lbl_8037FE48:
+/* 8037FE48 0037BAE8  E3 E1 00 A8 */	psq_l f31, 168(r1), 0, qr0
+/* 8037FE4C 0037BAEC  CB E1 00 A0 */	lfd f31, 0xa0(r1)
+/* 8037FE50 0037BAF0  E3 C1 00 98 */	psq_l f30, 152(r1), 0, qr0
+/* 8037FE54 0037BAF4  39 61 00 90 */	addi r11, r1, 0x90
+/* 8037FE58 0037BAF8  CB C1 00 90 */	lfd f30, 0x90(r1)
+/* 8037FE5C 0037BAFC  48 08 F5 39 */	bl "_restgpr_16"
+/* 8037FE60 0037BB00  80 01 00 B4 */	lwz r0, 0xb4(r1)
+/* 8037FE64 0037BB04  7C 08 03 A6 */	mtlr r0
+/* 8037FE68 0037BB08  38 21 00 B0 */	addi r1, r1, 0xb0
+/* 8037FE6C 0037BB0C  4E 80 00 20 */	blr 
+
+.global "SetRotate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3"
+"SetRotate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3":
+/* 8037FE70 0037BB10  38 63 00 38 */	addi r3, r3, 0x38
+/* 8037FE74 0037BB14  48 00 00 2C */	b "__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3"
+
+.global "Atan2Deg__Q26nw4hbm4mathFff"
+"Atan2Deg__Q26nw4hbm4mathFff":
+/* 8037FE78 0037BB18  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037FE7C 0037BB1C  7C 08 02 A6 */	mflr r0
+/* 8037FE80 0037BB20  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037FE84 0037BB24  48 01 90 11 */	bl "Atan2FIdx__Q26nw4hbm4mathFff"
+/* 8037FE88 0037BB28  C0 02 A6 C8 */	lfs f0, lbl_805DB8E8-_SDA2_BASE_(r2)
+/* 8037FE8C 0037BB2C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037FE90 0037BB30  EC 20 00 72 */	fmuls f1, f0, f1
+/* 8037FE94 0037BB34  7C 08 03 A6 */	mtlr r0
+/* 8037FE98 0037BB38  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037FE9C 0037BB3C  4E 80 00 20 */	blr 
+
+.global "__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3"
+"__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3":
+/* 8037FEA0 0037BB40  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8037FEA4 0037BB44  7C 08 02 A6 */	mflr r0
+/* 8037FEA8 0037BB48  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8037FEAC 0037BB4C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8037FEB0 0037BB50  7C 7F 1B 78 */	mr r31, r3
+/* 8037FEB4 0037BB54  48 00 00 1D */	bl "__as__Q36nw4hbm4math5_VEC3FRCQ36nw4hbm4math5_VEC3"
+/* 8037FEB8 0037BB58  7F E3 FB 78 */	mr r3, r31
+/* 8037FEBC 0037BB5C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8037FEC0 0037BB60  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8037FEC4 0037BB64  7C 08 03 A6 */	mtlr r0
+/* 8037FEC8 0037BB68  38 21 00 10 */	addi r1, r1, 0x10
+/* 8037FECC 0037BB6C  4E 80 00 20 */	blr 
+
+.global "__as__Q36nw4hbm4math5_VEC3FRCQ36nw4hbm4math5_VEC3"
+"__as__Q36nw4hbm4math5_VEC3FRCQ36nw4hbm4math5_VEC3":
+/* 8037FED0 0037BB70  C0 44 00 00 */	lfs f2, 0(r4)
+/* 8037FED4 0037BB74  C0 24 00 04 */	lfs f1, 4(r4)
+/* 8037FED8 0037BB78  C0 04 00 08 */	lfs f0, 8(r4)
+/* 8037FEDC 0037BB7C  D0 43 00 00 */	stfs f2, 0(r3)
+/* 8037FEE0 0037BB80  D0 23 00 04 */	stfs f1, 4(r3)
+/* 8037FEE4 0037BB84  D0 03 00 08 */	stfs f0, 8(r3)
+/* 8037FEE8 0037BB88  4E 80 00 20 */	blr 
+
+.global "__ct__Q36nw4hbm4math4VEC3Ffff"
+"__ct__Q36nw4hbm4math4VEC3Ffff":
+/* 8037FEEC 0037BB8C  D0 23 00 00 */	stfs f1, 0(r3)
+/* 8037FEF0 0037BB90  D0 43 00 04 */	stfs f2, 4(r3)
+/* 8037FEF4 0037BB94  D0 63 00 08 */	stfs f3, 8(r3)
+/* 8037FEF8 0037BB98  4E 80 00 20 */	blr 
+
+.global "__ct__Q36nw4hbm4math4VEC3Fv"
+"__ct__Q36nw4hbm4math4VEC3Fv":
+/* 8037FEFC 0037BB9C  4E 80 00 20 */	blr 
+
+.global "update_controller__Q210homebutton10HomeButtonFi"
+"update_controller__Q210homebutton10HomeButtonFi":
+/* 8037FF00 0037BBA0  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8037FF04 0037BBA4  7C 08 02 A6 */	mflr r0
+/* 8037FF08 0037BBA8  90 01 00 54 */	stw r0, 0x54(r1)
+/* 8037FF0C 0037BBAC  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 8037FF10 0037BBB0  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 8037FF14 0037BBB4  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 8037FF18 0037BBB8  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 8037FF1C 0037BBBC  3C 00 43 30 */	lis r0, 0x4330
+/* 8037FF20 0037BBC0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8037FF24 0037BBC4  7C 7F 1B 78 */	mr r31, r3
+/* 8037FF28 0037BBC8  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8037FF2C 0037BBCC  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 8037FF30 0037BBD0  7C 9D 23 78 */	mr r29, r4
+/* 8037FF34 0037BBD4  90 01 00 08 */	stw r0, 8(r1)
+/* 8037FF38 0037BBD8  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8037FF3C 0037BBDC  48 00 1D BD */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 8037FF40 0037BBE0  2C 03 00 00 */	cmpwi r3, 0
+/* 8037FF44 0037BBE4  41 82 04 C8 */	beq lbl_8038040C
+/* 8037FF48 0037BBE8  57 A0 10 3A */	slwi r0, r29, 2
+/* 8037FF4C 0037BBEC  7C 7F 02 14 */	add r3, r31, r0
+/* 8037FF50 0037BBF0  80 63 02 5C */	lwz r3, 0x25c(r3)
+/* 8037FF54 0037BBF4  48 00 38 81 */	bl "getController__Q210homebutton10ControllerFv"
+/* 8037FF58 0037BBF8  C0 62 A6 CC */	lfs f3, lbl_805DB8EC-_SDA2_BASE_(r2)
+/* 8037FF5C 0037BBFC  7C 7E 1B 78 */	mr r30, r3
+/* 8037FF60 0037BC00  C0 43 00 08 */	lfs f2, 8(r3)
+/* 8037FF64 0037BC04  C0 22 A6 D0 */	lfs f1, lbl_805DB8F0-_SDA2_BASE_(r2)
+/* 8037FF68 0037BC08  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 8037FF6C 0037BC0C  EC 63 00 B2 */	fmuls f3, f3, f2
+/* 8037FF70 0037BC10  88 1F 00 87 */	lbz r0, 0x87(r31)
+/* 8037FF74 0037BC14  EC 01 00 32 */	fmuls f0, f1, f0
+/* 8037FF78 0037BC18  C0 42 A6 B4 */	lfs f2, lbl_805DB8D4-_SDA2_BASE_(r2)
+/* 8037FF7C 0037BC1C  2C 00 00 00 */	cmpwi r0, 0
+/* 8037FF80 0037BC20  EC 23 00 B2 */	fmuls f1, f3, f2
+/* 8037FF84 0037BC24  EC 60 00 B2 */	fmuls f3, f0, f2
+/* 8037FF88 0037BC28  41 82 00 18 */	beq lbl_8037FFA0
+/* 8037FF8C 0037BC2C  80 7F 00 04 */	lwz r3, 4(r31)
+/* 8037FF90 0037BC30  C0 43 00 34 */	lfs f2, 0x34(r3)
+/* 8037FF94 0037BC34  C0 03 00 38 */	lfs f0, 0x38(r3)
+/* 8037FF98 0037BC38  EC 21 00 B2 */	fmuls f1, f1, f2
+/* 8037FF9C 0037BC3C  EC 63 00 32 */	fmuls f3, f3, f0
+lbl_8037FFA0:
+/* 8037FFA0 0037BC40  80 7F 02 00 */	lwz r3, 0x200(r31)
+/* 8037FFA4 0037BC44  FC 40 18 50 */	fneg f2, f3
+/* 8037FFA8 0037BC48  7F A4 EB 78 */	mr r4, r29
+/* 8037FFAC 0037BC4C  7F C8 F3 78 */	mr r8, r30
+/* 8037FFB0 0037BC50  81 83 00 00 */	lwz r12, 0(r3)
+/* 8037FFB4 0037BC54  80 BE 00 10 */	lwz r5, 0x10(r30)
+/* 8037FFB8 0037BC58  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 8037FFBC 0037BC5C  80 DE 00 14 */	lwz r6, 0x14(r30)
+/* 8037FFC0 0037BC60  80 FE 00 18 */	lwz r7, 0x18(r30)
+/* 8037FFC4 0037BC64  7D 89 03 A6 */	mtctr r12
+/* 8037FFC8 0037BC68  4E 80 04 21 */	bctrl 
+/* 8037FFCC 0037BC6C  80 7E 00 10 */	lwz r3, 0x10(r30)
+/* 8037FFD0 0037BC70  54 60 00 C6 */	rlwinm r0, r3, 0, 3, 3
+/* 8037FFD4 0037BC74  50 60 04 21 */	rlwimi. r0, r3, 0, 0x10, 0x10
+/* 8037FFD8 0037BC78  41 82 00 F8 */	beq lbl_803800D0
+/* 8037FFDC 0037BC7C  7F E3 FB 78 */	mr r3, r31
+/* 8037FFE0 0037BC80  48 00 1D 19 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 8037FFE4 0037BC84  2C 03 00 00 */	cmpwi r3, 0
+/* 8037FFE8 0037BC88  41 82 00 E8 */	beq lbl_803800D0
+/* 8037FFEC 0037BC8C  80 1F 00 00 */	lwz r0, 0(r31)
+/* 8037FFF0 0037BC90  2C 00 00 01 */	cmpwi r0, 1
+/* 8037FFF4 0037BC94  40 82 00 74 */	bne lbl_80380068
+/* 8037FFF8 0037BC98  80 7F 02 00 */	lwz r3, 0x200(r31)
+/* 8037FFFC 0037BC9C  7F A4 EB 78 */	mr r4, r29
+/* 80380000 0037BCA0  C0 22 A6 84 */	lfs f1, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 80380004 0037BCA4  38 A0 00 00 */	li r5, 0
+/* 80380008 0037BCA8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038000C 0037BCAC  38 C0 00 00 */	li r6, 0
+/* 80380010 0037BCB0  C0 42 A6 D4 */	lfs f2, lbl_805DB8F4-_SDA2_BASE_(r2)
+/* 80380014 0037BCB4  38 E0 00 00 */	li r7, 0
+/* 80380018 0037BCB8  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 8038001C 0037BCBC  39 00 00 00 */	li r8, 0
+/* 80380020 0037BCC0  7D 89 03 A6 */	mtctr r12
+/* 80380024 0037BCC4  4E 80 04 21 */	bctrl 
+/* 80380028 0037BCC8  80 7F 03 D8 */	lwz r3, 0x3d8(r31)
+/* 8038002C 0037BCCC  4B FF DF 75 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380030 0037BCD0  38 00 00 02 */	li r0, 2
+/* 80380034 0037BCD4  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 80380038 0037BCD8  80 7F 03 D0 */	lwz r3, 0x3d0(r31)
+/* 8038003C 0037BCDC  4B FF DF 65 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380040 0037BCE0  80 7F 03 F4 */	lwz r3, 0x3f4(r31)
+/* 80380044 0037BCE4  4B FF DF 5D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380048 0037BCE8  38 60 00 0A */	li r3, 0xa
+/* 8038004C 0037BCEC  38 00 00 00 */	li r0, 0
+/* 80380050 0037BCF0  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 80380054 0037BCF4  7F E3 FB 78 */	mr r3, r31
+/* 80380058 0037BCF8  38 80 00 08 */	li r4, 8
+/* 8038005C 0037BCFC  90 1F 00 00 */	stw r0, 0(r31)
+/* 80380060 0037BD00  48 00 2B 41 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380064 0037BD04  48 00 04 00 */	b lbl_80380464
+lbl_80380068:
+/* 80380068 0037BD08  2C 00 00 00 */	cmpwi r0, 0
+/* 8038006C 0037BD0C  40 82 03 F8 */	bne lbl_80380464
+/* 80380070 0037BD10  80 7F 03 D4 */	lwz r3, 0x3d4(r31)
+/* 80380074 0037BD14  4B FF F1 95 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80380078 0037BD18  2C 03 00 00 */	cmpwi r3, 0
+/* 8038007C 0037BD1C  41 82 00 0C */	beq lbl_80380088
+/* 80380080 0037BD20  80 7F 03 D4 */	lwz r3, 0x3d4(r31)
+/* 80380084 0037BD24  4B FF F1 45 */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_80380088:
+/* 80380088 0037BD28  80 7F 03 F8 */	lwz r3, 0x3f8(r31)
+/* 8038008C 0037BD2C  4B FF F1 7D */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80380090 0037BD30  2C 03 00 00 */	cmpwi r3, 0
+/* 80380094 0037BD34  41 82 00 0C */	beq lbl_803800A0
+/* 80380098 0037BD38  80 7F 03 F8 */	lwz r3, 0x3f8(r31)
+/* 8038009C 0037BD3C  4B FF F1 2D */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_803800A0:
+/* 803800A0 0037BD40  38 60 00 00 */	li r3, 0
+/* 803800A4 0037BD44  38 00 00 04 */	li r0, 4
+/* 803800A8 0037BD48  90 7F 00 B0 */	stw r3, 0xb0(r31)
+/* 803800AC 0037BD4C  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 803800B0 0037BD50  80 7F 03 D8 */	lwz r3, 0x3d8(r31)
+/* 803800B4 0037BD54  4B FF DE ED */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803800B8 0037BD58  38 00 00 0E */	li r0, 0xe
+/* 803800BC 0037BD5C  7F E3 FB 78 */	mr r3, r31
+/* 803800C0 0037BD60  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 803800C4 0037BD64  38 80 00 01 */	li r4, 1
+/* 803800C8 0037BD68  48 00 2A D9 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803800CC 0037BD6C  48 00 03 98 */	b lbl_80380464
+lbl_803800D0:
+/* 803800D0 0037BD70  80 1F 00 00 */	lwz r0, 0(r31)
+/* 803800D4 0037BD74  2C 00 00 01 */	cmpwi r0, 1
+/* 803800D8 0037BD78  40 82 03 8C */	bne lbl_80380464
+/* 803800DC 0037BD7C  7F E3 FB 78 */	mr r3, r31
+/* 803800E0 0037BD80  48 00 1C 19 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 803800E4 0037BD84  2C 03 00 00 */	cmpwi r3, 0
+/* 803800E8 0037BD88  41 82 03 7C */	beq lbl_80380464
+/* 803800EC 0037BD8C  80 7E 00 10 */	lwz r3, 0x10(r30)
+/* 803800F0 0037BD90  54 60 04 E7 */	rlwinm. r0, r3, 0, 0x13, 0x13
+/* 803800F4 0037BD94  40 82 00 0C */	bne lbl_80380100
+/* 803800F8 0037BD98  54 60 03 DF */	rlwinm. r0, r3, 0, 0xf, 0xf
+/* 803800FC 0037BD9C  41 82 01 80 */	beq lbl_8038027C
+lbl_80380100:
+/* 80380100 0037BDA0  80 7F 00 80 */	lwz r3, 0x80(r31)
+/* 80380104 0037BDA4  2C 03 00 00 */	cmpwi r3, 0
+/* 80380108 0037BDA8  40 81 01 64 */	ble lbl_8038026C
+/* 8038010C 0037BDAC  38 83 FF FF */	addi r4, r3, -1
+/* 80380110 0037BDB0  7F E3 FB 78 */	mr r3, r31
+/* 80380114 0037BDB4  90 9F 00 80 */	stw r4, 0x80(r31)
+/* 80380118 0037BDB8  38 84 00 15 */	addi r4, r4, 0x15
+/* 8038011C 0037BDBC  38 A0 00 0A */	li r5, 0xa
+/* 80380120 0037BDC0  48 00 1E 85 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380124 0037BDC4  54 60 10 3A */	slwi r0, r3, 2
+/* 80380128 0037BDC8  7C 7F 02 14 */	add r3, r31, r0
+/* 8038012C 0037BDCC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380130 0037BDD0  4B FF F0 99 */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 80380134 0037BDD4  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 80380138 0037BDD8  7F E3 FB 78 */	mr r3, r31
+/* 8038013C 0037BDDC  38 A0 00 09 */	li r5, 9
+/* 80380140 0037BDE0  38 84 00 15 */	addi r4, r4, 0x15
+/* 80380144 0037BDE4  48 00 1E 61 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380148 0037BDE8  54 60 10 3A */	slwi r0, r3, 2
+/* 8038014C 0037BDEC  7C 7F 02 14 */	add r3, r31, r0
+/* 80380150 0037BDF0  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380154 0037BDF4  4B FF DE 4D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380158 0037BDF8  7F E3 FB 78 */	mr r3, r31
+/* 8038015C 0037BDFC  38 80 00 0B */	li r4, 0xb
+/* 80380160 0037BE00  38 A0 00 05 */	li r5, 5
+/* 80380164 0037BE04  48 00 1E 41 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380168 0037BE08  54 60 10 3A */	slwi r0, r3, 2
+/* 8038016C 0037BE0C  7C 7F 02 14 */	add r3, r31, r0
+/* 80380170 0037BE10  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380174 0037BE14  4B FF DE 2D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380178 0037BE18  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 8038017C 0037BE1C  2C 00 00 00 */	cmpwi r0, 0
+/* 80380180 0037BE20  40 82 00 78 */	bne lbl_803801F8
+/* 80380184 0037BE24  7F E3 FB 78 */	mr r3, r31
+/* 80380188 0037BE28  38 80 00 0C */	li r4, 0xc
+/* 8038018C 0037BE2C  48 00 2A 15 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380190 0037BE30  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80380194 0037BE34  3B A0 00 00 */	li r29, 0
+/* 80380198 0037BE38  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_8038019C:
+/* 8038019C 0037BE3C  7F E3 FB 78 */	mr r3, r31
+/* 803801A0 0037BE40  7F A4 EB 78 */	mr r4, r29
+/* 803801A4 0037BE44  4B FF DE 3D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803801A8 0037BE48  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 803801AC 0037BE4C  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 803801B0 0037BE50  90 01 00 0C */	stw r0, 0xc(r1)
+/* 803801B4 0037BE54  C8 01 00 08 */	lfd f0, 8(r1)
+/* 803801B8 0037BE58  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 803801BC 0037BE5C  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 803801C0 0037BE60  48 00 31 B9 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 803801C4 0037BE64  7F E3 FB 78 */	mr r3, r31
+/* 803801C8 0037BE68  4B FF F4 91 */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 803801CC 0037BE6C  7C 7E 1B 78 */	mr r30, r3
+/* 803801D0 0037BE70  7F E3 FB 78 */	mr r3, r31
+/* 803801D4 0037BE74  7F A4 EB 78 */	mr r4, r29
+/* 803801D8 0037BE78  4B FF DE 09 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803801DC 0037BE7C  7F C4 F3 78 */	mr r4, r30
+/* 803801E0 0037BE80  38 A0 00 01 */	li r5, 1
+/* 803801E4 0037BE84  48 00 31 A5 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 803801E8 0037BE88  3B BD 00 01 */	addi r29, r29, 1
+/* 803801EC 0037BE8C  2C 1D 00 04 */	cmpwi r29, 4
+/* 803801F0 0037BE90  41 80 FF AC */	blt lbl_8038019C
+/* 803801F4 0037BE94  48 00 02 70 */	b lbl_80380464
+lbl_803801F8:
+/* 803801F8 0037BE98  7F E3 FB 78 */	mr r3, r31
+/* 803801FC 0037BE9C  38 80 00 0A */	li r4, 0xa
+/* 80380200 0037BEA0  48 00 29 A1 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380204 0037BEA4  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80380208 0037BEA8  3B A0 00 00 */	li r29, 0
+/* 8038020C 0037BEAC  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_80380210:
+/* 80380210 0037BEB0  7F E3 FB 78 */	mr r3, r31
+/* 80380214 0037BEB4  7F A4 EB 78 */	mr r4, r29
+/* 80380218 0037BEB8  4B FF DD C9 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8038021C 0037BEBC  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 80380220 0037BEC0  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80380224 0037BEC4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80380228 0037BEC8  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 8038022C 0037BECC  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 80380230 0037BED0  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 80380234 0037BED4  48 00 31 45 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 80380238 0037BED8  7F E3 FB 78 */	mr r3, r31
+/* 8038023C 0037BEDC  4B FF F4 1D */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 80380240 0037BEE0  7C 7E 1B 78 */	mr r30, r3
+/* 80380244 0037BEE4  7F E3 FB 78 */	mr r3, r31
+/* 80380248 0037BEE8  7F A4 EB 78 */	mr r4, r29
+/* 8038024C 0037BEEC  4B FF DD 95 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80380250 0037BEF0  7F C4 F3 78 */	mr r4, r30
+/* 80380254 0037BEF4  38 A0 00 01 */	li r5, 1
+/* 80380258 0037BEF8  48 00 31 31 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 8038025C 0037BEFC  3B BD 00 01 */	addi r29, r29, 1
+/* 80380260 0037BF00  2C 1D 00 04 */	cmpwi r29, 4
+/* 80380264 0037BF04  41 80 FF AC */	blt lbl_80380210
+/* 80380268 0037BF08  48 00 01 FC */	b lbl_80380464
+lbl_8038026C:
+/* 8038026C 0037BF0C  7F E3 FB 78 */	mr r3, r31
+/* 80380270 0037BF10  38 80 00 0D */	li r4, 0xd
+/* 80380274 0037BF14  48 00 29 2D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380278 0037BF18  48 00 01 EC */	b lbl_80380464
+lbl_8038027C:
+/* 8038027C 0037BF1C  54 60 06 F7 */	rlwinm. r0, r3, 0, 0x1b, 0x1b
+/* 80380280 0037BF20  40 82 00 0C */	bne lbl_8038028C
+/* 80380284 0037BF24  54 60 03 9D */	rlwinm. r0, r3, 0, 0xe, 0xe
+/* 80380288 0037BF28  41 82 01 DC */	beq lbl_80380464
+lbl_8038028C:
+/* 8038028C 0037BF2C  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 80380290 0037BF30  2C 04 00 0A */	cmpwi r4, 0xa
+/* 80380294 0037BF34  40 80 01 68 */	bge lbl_803803FC
+/* 80380298 0037BF38  7F E3 FB 78 */	mr r3, r31
+/* 8038029C 0037BF3C  38 84 00 15 */	addi r4, r4, 0x15
+/* 803802A0 0037BF40  38 A0 00 09 */	li r5, 9
+/* 803802A4 0037BF44  48 00 1D 01 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803802A8 0037BF48  54 60 10 3A */	slwi r0, r3, 2
+/* 803802AC 0037BF4C  7C 7F 02 14 */	add r3, r31, r0
+/* 803802B0 0037BF50  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803802B4 0037BF54  4B FF EF 15 */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 803802B8 0037BF58  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 803802BC 0037BF5C  7F E3 FB 78 */	mr r3, r31
+/* 803802C0 0037BF60  38 A0 00 0A */	li r5, 0xa
+/* 803802C4 0037BF64  38 84 00 15 */	addi r4, r4, 0x15
+/* 803802C8 0037BF68  48 00 1C DD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803802CC 0037BF6C  54 60 10 3A */	slwi r0, r3, 2
+/* 803802D0 0037BF70  7C 7F 02 14 */	add r3, r31, r0
+/* 803802D4 0037BF74  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803802D8 0037BF78  4B FF DC C9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803802DC 0037BF7C  80 DF 00 80 */	lwz r6, 0x80(r31)
+/* 803802E0 0037BF80  7F E3 FB 78 */	mr r3, r31
+/* 803802E4 0037BF84  38 80 00 0C */	li r4, 0xc
+/* 803802E8 0037BF88  38 A0 00 05 */	li r5, 5
+/* 803802EC 0037BF8C  38 06 00 01 */	addi r0, r6, 1
+/* 803802F0 0037BF90  90 1F 00 80 */	stw r0, 0x80(r31)
+/* 803802F4 0037BF94  48 00 1C B1 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803802F8 0037BF98  54 60 10 3A */	slwi r0, r3, 2
+/* 803802FC 0037BF9C  7C 7F 02 14 */	add r3, r31, r0
+/* 80380300 0037BFA0  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380304 0037BFA4  4B FF DC 9D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380308 0037BFA8  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 8038030C 0037BFAC  2C 00 00 0A */	cmpwi r0, 0xa
+/* 80380310 0037BFB0  40 82 00 78 */	bne lbl_80380388
+/* 80380314 0037BFB4  7F E3 FB 78 */	mr r3, r31
+/* 80380318 0037BFB8  38 80 00 0B */	li r4, 0xb
+/* 8038031C 0037BFBC  48 00 28 85 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380320 0037BFC0  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80380324 0037BFC4  3B A0 00 00 */	li r29, 0
+/* 80380328 0037BFC8  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_8038032C:
+/* 8038032C 0037BFCC  7F E3 FB 78 */	mr r3, r31
+/* 80380330 0037BFD0  7F A4 EB 78 */	mr r4, r29
+/* 80380334 0037BFD4  4B FF DC AD */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80380338 0037BFD8  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 8038033C 0037BFDC  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80380340 0037BFE0  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80380344 0037BFE4  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80380348 0037BFE8  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 8038034C 0037BFEC  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 80380350 0037BFF0  48 00 30 29 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 80380354 0037BFF4  7F E3 FB 78 */	mr r3, r31
+/* 80380358 0037BFF8  4B FF F3 01 */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 8038035C 0037BFFC  7C 7E 1B 78 */	mr r30, r3
+/* 80380360 0037C000  7F E3 FB 78 */	mr r3, r31
+/* 80380364 0037C004  7F A4 EB 78 */	mr r4, r29
+/* 80380368 0037C008  4B FF DC 79 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8038036C 0037C00C  7F C4 F3 78 */	mr r4, r30
+/* 80380370 0037C010  38 A0 00 01 */	li r5, 1
+/* 80380374 0037C014  48 00 30 15 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 80380378 0037C018  3B BD 00 01 */	addi r29, r29, 1
+/* 8038037C 0037C01C  2C 1D 00 04 */	cmpwi r29, 4
+/* 80380380 0037C020  41 80 FF AC */	blt lbl_8038032C
+/* 80380384 0037C024  48 00 00 E0 */	b lbl_80380464
+lbl_80380388:
+/* 80380388 0037C028  7F E3 FB 78 */	mr r3, r31
+/* 8038038C 0037C02C  38 80 00 09 */	li r4, 9
+/* 80380390 0037C030  48 00 28 11 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380394 0037C034  CB C2 A6 A8 */	lfd f30, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80380398 0037C038  3B A0 00 00 */	li r29, 0
+/* 8038039C 0037C03C  C3 E2 A6 A4 */	lfs f31, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_803803A0:
+/* 803803A0 0037C040  7F E3 FB 78 */	mr r3, r31
+/* 803803A4 0037C044  7F A4 EB 78 */	mr r4, r29
+/* 803803A8 0037C048  4B FF DC 39 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803803AC 0037C04C  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 803803B0 0037C050  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 803803B4 0037C054  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803803B8 0037C058  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 803803BC 0037C05C  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 803803C0 0037C060  EC 20 F8 24 */	fdivs f1, f0, f31
+/* 803803C4 0037C064  48 00 2F B5 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 803803C8 0037C068  7F E3 FB 78 */	mr r3, r31
+/* 803803CC 0037C06C  4B FF F2 8D */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 803803D0 0037C070  7C 7E 1B 78 */	mr r30, r3
+/* 803803D4 0037C074  7F E3 FB 78 */	mr r3, r31
+/* 803803D8 0037C078  7F A4 EB 78 */	mr r4, r29
+/* 803803DC 0037C07C  4B FF DC 05 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803803E0 0037C080  7F C4 F3 78 */	mr r4, r30
+/* 803803E4 0037C084  38 A0 00 01 */	li r5, 1
+/* 803803E8 0037C088  48 00 2F A1 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 803803EC 0037C08C  3B BD 00 01 */	addi r29, r29, 1
+/* 803803F0 0037C090  2C 1D 00 04 */	cmpwi r29, 4
+/* 803803F4 0037C094  41 80 FF AC */	blt lbl_803803A0
+/* 803803F8 0037C098  48 00 00 6C */	b lbl_80380464
+lbl_803803FC:
+/* 803803FC 0037C09C  7F E3 FB 78 */	mr r3, r31
+/* 80380400 0037C0A0  38 80 00 0D */	li r4, 0xd
+/* 80380404 0037C0A4  48 00 27 9D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80380408 0037C0A8  48 00 00 5C */	b lbl_80380464
+lbl_8038040C:
+/* 8038040C 0037C0AC  80 1F 00 00 */	lwz r0, 0(r31)
+/* 80380410 0037C0B0  2C 00 00 01 */	cmpwi r0, 1
+/* 80380414 0037C0B4  40 82 00 50 */	bne lbl_80380464
+/* 80380418 0037C0B8  80 1F 00 10 */	lwz r0, 0x10(r31)
+/* 8038041C 0037C0BC  2C 00 00 05 */	cmpwi r0, 5
+/* 80380420 0037C0C0  40 82 00 44 */	bne lbl_80380464
+/* 80380424 0037C0C4  80 1F 00 14 */	lwz r0, 0x14(r31)
+/* 80380428 0037C0C8  54 00 10 3A */	slwi r0, r0, 2
+/* 8038042C 0037C0CC  7C 7F 02 14 */	add r3, r31, r0
+/* 80380430 0037C0D0  80 63 03 C8 */	lwz r3, 0x3c8(r3)
+/* 80380434 0037C0D4  4B FF ED D5 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80380438 0037C0D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038043C 0037C0DC  40 82 00 28 */	bne lbl_80380464
+/* 80380440 0037C0E0  57 A0 10 3A */	slwi r0, r29, 2
+/* 80380444 0037C0E4  7C 7F 02 14 */	add r3, r31, r0
+/* 80380448 0037C0E8  80 63 02 5C */	lwz r3, 0x25c(r3)
+/* 8038044C 0037C0EC  48 00 33 89 */	bl "getController__Q210homebutton10ControllerFv"
+/* 80380450 0037C0F0  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 80380454 0037C0F4  2C 00 00 00 */	cmpwi r0, 0
+/* 80380458 0037C0F8  41 82 00 0C */	beq lbl_80380464
+/* 8038045C 0037C0FC  80 1F 05 C8 */	lwz r0, 0x5c8(r31)
+/* 80380460 0037C100  90 1F 00 18 */	stw r0, 0x18(r31)
+lbl_80380464:
+/* 80380464 0037C104  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
+/* 80380468 0037C108  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 8038046C 0037C10C  E3 C1 00 38 */	psq_l f30, 56(r1), 0, qr0
+/* 80380470 0037C110  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 80380474 0037C114  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80380478 0037C118  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8038047C 0037C11C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80380480 0037C120  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80380484 0037C124  7C 08 03 A6 */	mtlr r0
+/* 80380488 0037C128  38 21 00 50 */	addi r1, r1, 0x50
+/* 8038048C 0037C12C  4E 80 00 20 */	blr 
+
+.global "update_posController__Q210homebutton10HomeButtonFi"
+"update_posController__Q210homebutton10HomeButtonFi":
+/* 80380490 0037C130  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80380494 0037C134  7C 08 02 A6 */	mflr r0
+/* 80380498 0037C138  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8038049C 0037C13C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803804A0 0037C140  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 803804A4 0037C144  54 9E 10 3A */	slwi r30, r4, 2
+/* 803804A8 0037C148  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 803804AC 0037C14C  7C 7D 1B 78 */	mr r29, r3
+/* 803804B0 0037C150  7C 63 F2 14 */	add r3, r3, r30
+/* 803804B4 0037C154  80 63 02 5C */	lwz r3, 0x25c(r3)
+/* 803804B8 0037C158  48 00 33 1D */	bl "getController__Q210homebutton10ControllerFv"
+/* 803804BC 0037C15C  80 9D 01 E8 */	lwz r4, 0x1e8(r29)
+/* 803804C0 0037C160  7C 7F 1B 78 */	mr r31, r3
+/* 803804C4 0037C164  38 61 00 10 */	addi r3, r1, 0x10
+/* 803804C8 0037C168  48 00 C9 55 */	bl "GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv"
+/* 803804CC 0037C16C  C0 7F 00 08 */	lfs f3, 8(r31)
+/* 803804D0 0037C170  38 61 00 08 */	addi r3, r1, 8
+/* 803804D4 0037C174  C0 21 00 18 */	lfs f1, 0x18(r1)
+/* 803804D8 0037C178  C0 5F 00 0C */	lfs f2, 0xc(r31)
+/* 803804DC 0037C17C  C0 01 00 1C */	lfs f0, 0x1c(r1)
+/* 803804E0 0037C180  EC 23 00 72 */	fmuls f1, f3, f1
+/* 803804E4 0037C184  EC 42 00 32 */	fmuls f2, f2, f0
+/* 803804E8 0037C188  4B FF D0 15 */	bl "__ct__Q36nw4hbm4math4VEC2Fff"
+/* 803804EC 0037C18C  7C 7D F2 14 */	add r3, r29, r30
+/* 803804F0 0037C190  80 63 01 EC */	lwz r3, 0x1ec(r3)
+/* 803804F4 0037C194  4B FF D0 FD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803804F8 0037C198  81 83 00 00 */	lwz r12, 0(r3)
+/* 803804FC 0037C19C  38 A0 00 01 */	li r5, 1
+/* 80380500 0037C1A0  80 8D AC E8 */	lwz r4, "scCursorPaneName__Q210homebutton10HomeButton"-_SDA_BASE_(r13)
+/* 80380504 0037C1A4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 80380508 0037C1A8  7D 89 03 A6 */	mtctr r12
+/* 8038050C 0037C1AC  4E 80 04 21 */	bctrl 
+/* 80380510 0037C1B0  38 81 00 08 */	addi r4, r1, 8
+/* 80380514 0037C1B4  48 00 00 2D */	bl "SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 80380518 0037C1B8  38 61 00 10 */	addi r3, r1, 0x10
+/* 8038051C 0037C1BC  38 80 FF FF */	li r4, -1
+/* 80380520 0037C1C0  4B FF D6 39 */	bl "__dt__Q36nw4hbm2ut4RectFv"
+/* 80380524 0037C1C4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80380528 0037C1C8  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8038052C 0037C1CC  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80380530 0037C1D0  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80380534 0037C1D4  7C 08 03 A6 */	mtlr r0
+/* 80380538 0037C1D8  38 21 00 30 */	addi r1, r1, 0x30
+/* 8038053C 0037C1DC  4E 80 00 20 */	blr 
+
+.global "SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+"SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2":
+/* 80380540 0037C1E0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80380544 0037C1E4  7C 08 02 A6 */	mflr r0
+/* 80380548 0037C1E8  C0 24 00 00 */	lfs f1, 0(r4)
+/* 8038054C 0037C1EC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80380550 0037C1F0  C0 44 00 04 */	lfs f2, 4(r4)
+/* 80380554 0037C1F4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80380558 0037C1F8  7C 7F 1B 78 */	mr r31, r3
+/* 8038055C 0037C1FC  C0 62 A6 84 */	lfs f3, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 80380560 0037C200  38 61 00 08 */	addi r3, r1, 8
+/* 80380564 0037C204  4B FF F9 89 */	bl "__ct__Q36nw4hbm4math4VEC3Ffff"
+/* 80380568 0037C208  7C 64 1B 78 */	mr r4, r3
+/* 8038056C 0037C20C  7F E3 FB 78 */	mr r3, r31
+/* 80380570 0037C210  48 00 00 19 */	bl "SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3"
+/* 80380574 0037C214  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80380578 0037C218  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8038057C 0037C21C  7C 08 03 A6 */	mtlr r0
+/* 80380580 0037C220  38 21 00 20 */	addi r1, r1, 0x20
+/* 80380584 0037C224  4E 80 00 20 */	blr 
+
+.global "SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3"
+"SetTranslate__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC3":
+/* 80380588 0037C228  38 63 00 2C */	addi r3, r3, 0x2c
+/* 8038058C 0037C22C  4B FF F9 14 */	b "__as__Q36nw4hbm4math4VEC3FRCQ36nw4hbm4math4VEC3"
+
+.global "updateTrigPane__Q210homebutton10HomeButtonFv"
+"updateTrigPane__Q210homebutton10HomeButtonFv":
+/* 80380590 0037C230  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80380594 0037C234  7C 08 02 A6 */	mflr r0
+/* 80380598 0037C238  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8038059C 0037C23C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803805A0 0037C240  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803805A4 0037C244  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803805A8 0037C248  7C 7D 1B 78 */	mr r29, r3
+/* 803805AC 0037C24C  80 03 00 00 */	lwz r0, 0(r3)
+/* 803805B0 0037C250  2C 00 00 01 */	cmpwi r0, 1
+/* 803805B4 0037C254  41 82 00 EC */	beq lbl_803806A0
+/* 803805B8 0037C258  40 80 00 10 */	bge lbl_803805C8
+/* 803805BC 0037C25C  2C 00 00 00 */	cmpwi r0, 0
+/* 803805C0 0037C260  40 80 00 14 */	bge lbl_803805D4
+/* 803805C4 0037C264  48 00 02 78 */	b lbl_8038083C
+lbl_803805C8:
+/* 803805C8 0037C268  2C 00 00 03 */	cmpwi r0, 3
+/* 803805CC 0037C26C  40 80 02 70 */	bge lbl_8038083C
+/* 803805D0 0037C270  48 00 01 A4 */	b lbl_80380774
+lbl_803805D4:
+/* 803805D4 0037C274  3F E0 80 47 */	lis r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 803805D8 0037C278  3B C0 00 00 */	li r30, 0
+/* 803805DC 0037C27C  3B FF 8C 20 */	addi r31, r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+lbl_803805E0:
+/* 803805E0 0037C280  2C 1E 00 02 */	cmpwi r30, 2
+/* 803805E4 0037C284  41 80 00 0C */	blt lbl_803805F0
+/* 803805E8 0037C288  2C 1E 00 09 */	cmpwi r30, 9
+/* 803805EC 0037C28C  40 82 00 54 */	bne lbl_80380640
+lbl_803805F0:
+/* 803805F0 0037C290  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 803805F4 0037C294  4B FF CF FD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803805F8 0037C298  81 83 00 00 */	lwz r12, 0(r3)
+/* 803805FC 0037C29C  38 A0 00 01 */	li r5, 1
+/* 80380600 0037C2A0  80 9F 00 00 */	lwz r4, 0(r31)
+/* 80380604 0037C2A4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 80380608 0037C2A8  7D 89 03 A6 */	mtctr r12
+/* 8038060C 0037C2AC  4E 80 04 21 */	bctrl 
+/* 80380610 0037C2B0  7C 64 1B 78 */	mr r4, r3
+/* 80380614 0037C2B4  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 80380618 0037C2B8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038061C 0037C2BC  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 80380620 0037C2C0  7D 89 03 A6 */	mtctr r12
+/* 80380624 0037C2C4  4E 80 04 21 */	bctrl 
+/* 80380628 0037C2C8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038062C 0037C2CC  38 80 00 01 */	li r4, 1
+/* 80380630 0037C2D0  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 80380634 0037C2D4  7D 89 03 A6 */	mtctr r12
+/* 80380638 0037C2D8  4E 80 04 21 */	bctrl 
+/* 8038063C 0037C2DC  48 00 00 50 */	b lbl_8038068C
+lbl_80380640:
+/* 80380640 0037C2E0  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 80380644 0037C2E4  4B FF CF AD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80380648 0037C2E8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038064C 0037C2EC  38 A0 00 01 */	li r5, 1
+/* 80380650 0037C2F0  80 9F 00 00 */	lwz r4, 0(r31)
+/* 80380654 0037C2F4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 80380658 0037C2F8  7D 89 03 A6 */	mtctr r12
+/* 8038065C 0037C2FC  4E 80 04 21 */	bctrl 
+/* 80380660 0037C300  7C 64 1B 78 */	mr r4, r3
+/* 80380664 0037C304  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 80380668 0037C308  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038066C 0037C30C  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 80380670 0037C310  7D 89 03 A6 */	mtctr r12
+/* 80380674 0037C314  4E 80 04 21 */	bctrl 
+/* 80380678 0037C318  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038067C 0037C31C  38 80 00 00 */	li r4, 0
+/* 80380680 0037C320  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 80380684 0037C324  7D 89 03 A6 */	mtctr r12
+/* 80380688 0037C328  4E 80 04 21 */	bctrl 
+lbl_8038068C:
+/* 8038068C 0037C32C  3B DE 00 01 */	addi r30, r30, 1
+/* 80380690 0037C330  3B FF 00 04 */	addi r31, r31, 4
+/* 80380694 0037C334  2C 1E 00 0A */	cmpwi r30, 0xa
+/* 80380698 0037C338  41 80 FF 48 */	blt lbl_803805E0
+/* 8038069C 0037C33C  48 00 01 A0 */	b lbl_8038083C
+lbl_803806A0:
+/* 803806A0 0037C340  3F E0 80 47 */	lis r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 803806A4 0037C344  3B C0 00 00 */	li r30, 0
+/* 803806A8 0037C348  3B FF 8C 20 */	addi r31, r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+lbl_803806AC:
+/* 803806AC 0037C34C  2C 1E 00 00 */	cmpwi r30, 0
+/* 803806B0 0037C350  40 81 00 0C */	ble lbl_803806BC
+/* 803806B4 0037C354  2C 1E 00 07 */	cmpwi r30, 7
+/* 803806B8 0037C358  41 80 00 0C */	blt lbl_803806C4
+lbl_803806BC:
+/* 803806BC 0037C35C  2C 1E 00 09 */	cmpwi r30, 9
+/* 803806C0 0037C360  40 82 00 54 */	bne lbl_80380714
+lbl_803806C4:
+/* 803806C4 0037C364  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 803806C8 0037C368  4B FF CF 29 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803806CC 0037C36C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803806D0 0037C370  38 A0 00 01 */	li r5, 1
+/* 803806D4 0037C374  80 9F 00 00 */	lwz r4, 0(r31)
+/* 803806D8 0037C378  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803806DC 0037C37C  7D 89 03 A6 */	mtctr r12
+/* 803806E0 0037C380  4E 80 04 21 */	bctrl 
+/* 803806E4 0037C384  7C 64 1B 78 */	mr r4, r3
+/* 803806E8 0037C388  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 803806EC 0037C38C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803806F0 0037C390  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803806F4 0037C394  7D 89 03 A6 */	mtctr r12
+/* 803806F8 0037C398  4E 80 04 21 */	bctrl 
+/* 803806FC 0037C39C  81 83 00 00 */	lwz r12, 0(r3)
+/* 80380700 0037C3A0  38 80 00 01 */	li r4, 1
+/* 80380704 0037C3A4  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 80380708 0037C3A8  7D 89 03 A6 */	mtctr r12
+/* 8038070C 0037C3AC  4E 80 04 21 */	bctrl 
+/* 80380710 0037C3B0  48 00 00 50 */	b lbl_80380760
+lbl_80380714:
+/* 80380714 0037C3B4  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 80380718 0037C3B8  4B FF CE D9 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 8038071C 0037C3BC  81 83 00 00 */	lwz r12, 0(r3)
+/* 80380720 0037C3C0  38 A0 00 01 */	li r5, 1
+/* 80380724 0037C3C4  80 9F 00 00 */	lwz r4, 0(r31)
+/* 80380728 0037C3C8  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8038072C 0037C3CC  7D 89 03 A6 */	mtctr r12
+/* 80380730 0037C3D0  4E 80 04 21 */	bctrl 
+/* 80380734 0037C3D4  7C 64 1B 78 */	mr r4, r3
+/* 80380738 0037C3D8  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 8038073C 0037C3DC  81 83 00 00 */	lwz r12, 0(r3)
+/* 80380740 0037C3E0  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 80380744 0037C3E4  7D 89 03 A6 */	mtctr r12
+/* 80380748 0037C3E8  4E 80 04 21 */	bctrl 
+/* 8038074C 0037C3EC  81 83 00 00 */	lwz r12, 0(r3)
+/* 80380750 0037C3F0  38 80 00 00 */	li r4, 0
+/* 80380754 0037C3F4  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 80380758 0037C3F8  7D 89 03 A6 */	mtctr r12
+/* 8038075C 0037C3FC  4E 80 04 21 */	bctrl 
+lbl_80380760:
+/* 80380760 0037C400  3B DE 00 01 */	addi r30, r30, 1
+/* 80380764 0037C404  3B FF 00 04 */	addi r31, r31, 4
+/* 80380768 0037C408  2C 1E 00 0A */	cmpwi r30, 0xa
+/* 8038076C 0037C40C  41 80 FF 40 */	blt lbl_803806AC
+/* 80380770 0037C410  48 00 00 CC */	b lbl_8038083C
+lbl_80380774:
+/* 80380774 0037C414  3F E0 80 47 */	lis r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 80380778 0037C418  3B C0 00 00 */	li r30, 0
+/* 8038077C 0037C41C  3B FF 8C 20 */	addi r31, r31, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+lbl_80380780:
+/* 80380780 0037C420  2C 1E 00 07 */	cmpwi r30, 7
+/* 80380784 0037C424  41 80 00 0C */	blt lbl_80380790
+/* 80380788 0037C428  2C 1E 00 09 */	cmpwi r30, 9
+/* 8038078C 0037C42C  40 82 00 54 */	bne lbl_803807E0
+lbl_80380790:
+/* 80380790 0037C430  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 80380794 0037C434  4B FF CE 5D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80380798 0037C438  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038079C 0037C43C  38 A0 00 01 */	li r5, 1
+/* 803807A0 0037C440  80 9F 00 00 */	lwz r4, 0(r31)
+/* 803807A4 0037C444  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803807A8 0037C448  7D 89 03 A6 */	mtctr r12
+/* 803807AC 0037C44C  4E 80 04 21 */	bctrl 
+/* 803807B0 0037C450  7C 64 1B 78 */	mr r4, r3
+/* 803807B4 0037C454  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 803807B8 0037C458  81 83 00 00 */	lwz r12, 0(r3)
+/* 803807BC 0037C45C  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803807C0 0037C460  7D 89 03 A6 */	mtctr r12
+/* 803807C4 0037C464  4E 80 04 21 */	bctrl 
+/* 803807C8 0037C468  81 83 00 00 */	lwz r12, 0(r3)
+/* 803807CC 0037C46C  38 80 00 00 */	li r4, 0
+/* 803807D0 0037C470  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 803807D4 0037C474  7D 89 03 A6 */	mtctr r12
+/* 803807D8 0037C478  4E 80 04 21 */	bctrl 
+/* 803807DC 0037C47C  48 00 00 50 */	b lbl_8038082C
+lbl_803807E0:
+/* 803807E0 0037C480  80 7D 01 E8 */	lwz r3, 0x1e8(r29)
+/* 803807E4 0037C484  4B FF CE 0D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803807E8 0037C488  81 83 00 00 */	lwz r12, 0(r3)
+/* 803807EC 0037C48C  38 A0 00 01 */	li r5, 1
+/* 803807F0 0037C490  80 9F 00 00 */	lwz r4, 0(r31)
+/* 803807F4 0037C494  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803807F8 0037C498  7D 89 03 A6 */	mtctr r12
+/* 803807FC 0037C49C  4E 80 04 21 */	bctrl 
+/* 80380800 0037C4A0  7C 64 1B 78 */	mr r4, r3
+/* 80380804 0037C4A4  80 7D 02 00 */	lwz r3, 0x200(r29)
+/* 80380808 0037C4A8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038080C 0037C4AC  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 80380810 0037C4B0  7D 89 03 A6 */	mtctr r12
+/* 80380814 0037C4B4  4E 80 04 21 */	bctrl 
+/* 80380818 0037C4B8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038081C 0037C4BC  38 80 00 01 */	li r4, 1
+/* 80380820 0037C4C0  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 80380824 0037C4C4  7D 89 03 A6 */	mtctr r12
+/* 80380828 0037C4C8  4E 80 04 21 */	bctrl 
+lbl_8038082C:
+/* 8038082C 0037C4CC  3B DE 00 01 */	addi r30, r30, 1
+/* 80380830 0037C4D0  3B FF 00 04 */	addi r31, r31, 4
+/* 80380834 0037C4D4  2C 1E 00 0A */	cmpwi r30, 0xa
+/* 80380838 0037C4D8  41 80 FF 48 */	blt lbl_80380780
+lbl_8038083C:
+/* 8038083C 0037C4DC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80380840 0037C4E0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80380844 0037C4E4  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80380848 0037C4E8  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8038084C 0037C4EC  7C 08 03 A6 */	mtlr r0
+/* 80380850 0037C4F0  38 21 00 20 */	addi r1, r1, 0x20
+/* 80380854 0037C4F4  4E 80 00 20 */	blr 
+
+.global "startPointEvent__Q210homebutton10HomeButtonFPCcPv"
+"startPointEvent__Q210homebutton10HomeButtonFPCcPv":
+/* 80380858 0037C4F8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8038085C 0037C4FC  7C 08 02 A6 */	mflr r0
+/* 80380860 0037C500  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80380864 0037C504  39 61 00 20 */	addi r11, r1, 0x20
+/* 80380868 0037C508  48 08 EB 0D */	bl "_savegpr_27"
+/* 8038086C 0037C50C  7C 7C 1B 78 */	mr r28, r3
+/* 80380870 0037C510  7C BD 2B 78 */	mr r29, r5
+/* 80380874 0037C514  48 00 15 F9 */	bl "getPaneNo__Q210homebutton10HomeButtonFPCc"
+/* 80380878 0037C518  7C 7F 1B 78 */	mr r31, r3
+/* 8038087C 0037C51C  7F 83 E3 78 */	mr r3, r28
+/* 80380880 0037C520  3B C0 00 00 */	li r30, 0
+/* 80380884 0037C524  48 00 14 75 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 80380888 0037C528  2C 03 00 00 */	cmpwi r3, 0
+/* 8038088C 0037C52C  41 82 03 2C */	beq lbl_80380BB8
+/* 80380890 0037C530  2C 1F FF FF */	cmpwi r31, -1
+/* 80380894 0037C534  41 82 03 24 */	beq lbl_80380BB8
+/* 80380898 0037C538  57 E0 10 3A */	slwi r0, r31, 2
+/* 8038089C 0037C53C  7C 7C 02 14 */	add r3, r28, r0
+/* 803808A0 0037C540  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 803808A4 0037C544  2C 00 00 00 */	cmpwi r0, 0
+/* 803808A8 0037C548  40 82 03 10 */	bne lbl_80380BB8
+/* 803808AC 0037C54C  80 9C 00 00 */	lwz r4, 0(r28)
+/* 803808B0 0037C550  2C 04 00 02 */	cmpwi r4, 2
+/* 803808B4 0037C554  41 82 00 4C */	beq lbl_80380900
+/* 803808B8 0037C558  80 1C 00 08 */	lwz r0, 8(r28)
+/* 803808BC 0037C55C  7C 1F 00 00 */	cmpw r31, r0
+/* 803808C0 0037C560  40 80 00 40 */	bge lbl_80380900
+/* 803808C4 0037C564  7F 83 E3 78 */	mr r3, r28
+/* 803808C8 0037C568  7F E4 FB 78 */	mr r4, r31
+/* 803808CC 0037C56C  38 A0 00 00 */	li r5, 0
+/* 803808D0 0037C570  48 00 16 8D */	bl "findAnimator__Q210homebutton10HomeButtonFii"
+/* 803808D4 0037C574  54 60 10 3A */	slwi r0, r3, 2
+/* 803808D8 0037C578  7C 7C 02 14 */	add r3, r28, r0
+/* 803808DC 0037C57C  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 803808E0 0037C580  4B FF D6 C1 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803808E4 0037C584  80 1C 00 00 */	lwz r0, 0(r28)
+/* 803808E8 0037C588  2C 00 00 00 */	cmpwi r0, 0
+/* 803808EC 0037C58C  40 82 02 CC */	bne lbl_80380BB8
+/* 803808F0 0037C590  7F 83 E3 78 */	mr r3, r28
+/* 803808F4 0037C594  48 00 17 29 */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 803808F8 0037C598  3B C0 00 01 */	li r30, 1
+/* 803808FC 0037C59C  48 00 02 BC */	b lbl_80380BB8
+lbl_80380900:
+/* 80380900 0037C5A0  80 1C 00 08 */	lwz r0, 8(r28)
+/* 80380904 0037C5A4  7C 00 F8 50 */	subf r0, r0, r31
+/* 80380908 0037C5A8  28 00 00 09 */	cmplwi r0, 9
+/* 8038090C 0037C5AC  41 81 02 AC */	bgt lbl_80380BB8
+/* 80380910 0037C5B0  3C 60 80 47 */	lis r3, lbl_80468FC4@ha
+/* 80380914 0037C5B4  54 00 10 3A */	slwi r0, r0, 2
+/* 80380918 0037C5B8  38 63 8F C4 */	addi r3, r3, lbl_80468FC4@l
+/* 8038091C 0037C5BC  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80380920 0037C5C0  7C 69 03 A6 */	mtctr r3
+/* 80380924 0037C5C4  4E 80 04 20 */	bctr 
+/* 80380928 0037C5C8  2C 04 00 00 */	cmpwi r4, 0
+/* 8038092C 0037C5CC  40 82 02 8C */	bne lbl_80380BB8
+/* 80380930 0037C5D0  7F 83 E3 78 */	mr r3, r28
+/* 80380934 0037C5D4  48 00 13 D9 */	bl "isUpBarActive__Q210homebutton10HomeButtonCFv"
+/* 80380938 0037C5D8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038093C 0037C5DC  41 82 00 2C */	beq lbl_80380968
+/* 80380940 0037C5E0  80 7C 03 D4 */	lwz r3, 0x3d4(r28)
+/* 80380944 0037C5E4  4B FF D6 5D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380948 0037C5E8  38 60 00 03 */	li r3, 3
+/* 8038094C 0037C5EC  38 00 00 00 */	li r0, 0
+/* 80380950 0037C5F0  90 7C 00 70 */	stw r3, 0x70(r28)
+/* 80380954 0037C5F4  7F 83 E3 78 */	mr r3, r28
+/* 80380958 0037C5F8  90 1C 00 68 */	stw r0, 0x68(r28)
+/* 8038095C 0037C5FC  48 00 16 C1 */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380960 0037C600  3B C0 00 01 */	li r30, 1
+/* 80380964 0037C604  48 00 02 54 */	b lbl_80380BB8
+lbl_80380968:
+/* 80380968 0037C608  38 00 00 03 */	li r0, 3
+/* 8038096C 0037C60C  90 1C 00 68 */	stw r0, 0x68(r28)
+/* 80380970 0037C610  48 00 02 48 */	b lbl_80380BB8
+/* 80380974 0037C614  2C 04 00 00 */	cmpwi r4, 0
+/* 80380978 0037C618  40 82 00 5C */	bne lbl_803809D4
+/* 8038097C 0037C61C  7F 83 E3 78 */	mr r3, r28
+/* 80380980 0037C620  38 80 00 04 */	li r4, 4
+/* 80380984 0037C624  38 A0 00 02 */	li r5, 2
+/* 80380988 0037C628  48 00 16 1D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038098C 0037C62C  7C 7B 1B 78 */	mr r27, r3
+/* 80380990 0037C630  7F 83 E3 78 */	mr r3, r28
+/* 80380994 0037C634  48 00 13 E1 */	bl "isDownBarActive__Q210homebutton10HomeButtonFv"
+/* 80380998 0037C638  2C 03 00 00 */	cmpwi r3, 0
+/* 8038099C 0037C63C  41 82 00 30 */	beq lbl_803809CC
+/* 803809A0 0037C640  57 60 10 3A */	slwi r0, r27, 2
+/* 803809A4 0037C644  7C 7C 02 14 */	add r3, r28, r0
+/* 803809A8 0037C648  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803809AC 0037C64C  4B FF D5 F5 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803809B0 0037C650  38 00 00 00 */	li r0, 0
+/* 803809B4 0037C654  93 7C 00 74 */	stw r27, 0x74(r28)
+/* 803809B8 0037C658  7F 83 E3 78 */	mr r3, r28
+/* 803809BC 0037C65C  90 1C 00 6C */	stw r0, 0x6c(r28)
+/* 803809C0 0037C660  48 00 16 5D */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 803809C4 0037C664  3B C0 00 01 */	li r30, 1
+/* 803809C8 0037C668  48 00 01 F0 */	b lbl_80380BB8
+lbl_803809CC:
+/* 803809CC 0037C66C  93 7C 00 6C */	stw r27, 0x6c(r28)
+/* 803809D0 0037C670  48 00 01 E8 */	b lbl_80380BB8
+lbl_803809D4:
+/* 803809D4 0037C674  2C 04 00 01 */	cmpwi r4, 1
+/* 803809D8 0037C678  40 82 01 E0 */	bne lbl_80380BB8
+/* 803809DC 0037C67C  7F 83 E3 78 */	mr r3, r28
+/* 803809E0 0037C680  38 80 00 04 */	li r4, 4
+/* 803809E4 0037C684  38 A0 00 13 */	li r5, 0x13
+/* 803809E8 0037C688  48 00 15 BD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803809EC 0037C68C  7C 7B 1B 78 */	mr r27, r3
+/* 803809F0 0037C690  7F 83 E3 78 */	mr r3, r28
+/* 803809F4 0037C694  48 00 13 81 */	bl "isDownBarActive__Q210homebutton10HomeButtonFv"
+/* 803809F8 0037C698  2C 03 00 00 */	cmpwi r3, 0
+/* 803809FC 0037C69C  41 82 00 30 */	beq lbl_80380A2C
+/* 80380A00 0037C6A0  57 60 10 3A */	slwi r0, r27, 2
+/* 80380A04 0037C6A4  7C 7C 02 14 */	add r3, r28, r0
+/* 80380A08 0037C6A8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380A0C 0037C6AC  4B FF D5 95 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380A10 0037C6B0  38 00 00 00 */	li r0, 0
+/* 80380A14 0037C6B4  93 7C 00 74 */	stw r27, 0x74(r28)
+/* 80380A18 0037C6B8  7F 83 E3 78 */	mr r3, r28
+/* 80380A1C 0037C6BC  90 1C 00 6C */	stw r0, 0x6c(r28)
+/* 80380A20 0037C6C0  48 00 15 FD */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380A24 0037C6C4  3B C0 00 01 */	li r30, 1
+/* 80380A28 0037C6C8  48 00 01 90 */	b lbl_80380BB8
+lbl_80380A2C:
+/* 80380A2C 0037C6CC  93 7C 00 6C */	stw r27, 0x6c(r28)
+/* 80380A30 0037C6D0  48 00 01 88 */	b lbl_80380BB8
+/* 80380A34 0037C6D4  2C 04 00 01 */	cmpwi r4, 1
+/* 80380A38 0037C6D8  40 82 01 80 */	bne lbl_80380BB8
+/* 80380A3C 0037C6DC  7F 83 E3 78 */	mr r3, r28
+/* 80380A40 0037C6E0  38 80 00 06 */	li r4, 6
+/* 80380A44 0037C6E4  38 A0 00 04 */	li r5, 4
+/* 80380A48 0037C6E8  48 00 15 5D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380A4C 0037C6EC  54 60 10 3A */	slwi r0, r3, 2
+/* 80380A50 0037C6F0  7C 7C 02 14 */	add r3, r28, r0
+/* 80380A54 0037C6F4  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380A58 0037C6F8  4B FF D5 49 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380A5C 0037C6FC  7F 83 E3 78 */	mr r3, r28
+/* 80380A60 0037C700  48 00 15 BD */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380A64 0037C704  3B C0 00 01 */	li r30, 1
+/* 80380A68 0037C708  48 00 01 50 */	b lbl_80380BB8
+/* 80380A6C 0037C70C  2C 04 00 01 */	cmpwi r4, 1
+/* 80380A70 0037C710  40 82 01 48 */	bne lbl_80380BB8
+/* 80380A74 0037C714  7F 83 E3 78 */	mr r3, r28
+/* 80380A78 0037C718  38 80 00 07 */	li r4, 7
+/* 80380A7C 0037C71C  38 A0 00 04 */	li r5, 4
+/* 80380A80 0037C720  48 00 15 25 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380A84 0037C724  54 60 10 3A */	slwi r0, r3, 2
+/* 80380A88 0037C728  7C 7C 02 14 */	add r3, r28, r0
+/* 80380A8C 0037C72C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380A90 0037C730  4B FF D5 11 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380A94 0037C734  7F 83 E3 78 */	mr r3, r28
+/* 80380A98 0037C738  48 00 15 85 */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380A9C 0037C73C  3B C0 00 01 */	li r30, 1
+/* 80380AA0 0037C740  48 00 01 18 */	b lbl_80380BB8
+/* 80380AA4 0037C744  2C 04 00 01 */	cmpwi r4, 1
+/* 80380AA8 0037C748  40 82 01 10 */	bne lbl_80380BB8
+/* 80380AAC 0037C74C  7F 83 E3 78 */	mr r3, r28
+/* 80380AB0 0037C750  38 80 00 08 */	li r4, 8
+/* 80380AB4 0037C754  38 A0 00 04 */	li r5, 4
+/* 80380AB8 0037C758  48 00 14 ED */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380ABC 0037C75C  54 60 10 3A */	slwi r0, r3, 2
+/* 80380AC0 0037C760  7C 7C 02 14 */	add r3, r28, r0
+/* 80380AC4 0037C764  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380AC8 0037C768  4B FF D4 D9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380ACC 0037C76C  7F 83 E3 78 */	mr r3, r28
+/* 80380AD0 0037C770  48 00 15 4D */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380AD4 0037C774  3B C0 00 01 */	li r30, 1
+/* 80380AD8 0037C778  48 00 00 E0 */	b lbl_80380BB8
+/* 80380ADC 0037C77C  2C 04 00 01 */	cmpwi r4, 1
+/* 80380AE0 0037C780  40 82 00 D8 */	bne lbl_80380BB8
+/* 80380AE4 0037C784  7F 83 E3 78 */	mr r3, r28
+/* 80380AE8 0037C788  38 80 00 09 */	li r4, 9
+/* 80380AEC 0037C78C  38 A0 00 04 */	li r5, 4
+/* 80380AF0 0037C790  48 00 14 B5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380AF4 0037C794  54 60 10 3A */	slwi r0, r3, 2
+/* 80380AF8 0037C798  7C 7C 02 14 */	add r3, r28, r0
+/* 80380AFC 0037C79C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380B00 0037C7A0  4B FF D4 A1 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380B04 0037C7A4  7F 83 E3 78 */	mr r3, r28
+/* 80380B08 0037C7A8  48 00 15 15 */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380B0C 0037C7AC  3B C0 00 01 */	li r30, 1
+/* 80380B10 0037C7B0  48 00 00 A8 */	b lbl_80380BB8
+/* 80380B14 0037C7B4  2C 04 00 01 */	cmpwi r4, 1
+/* 80380B18 0037C7B8  40 82 00 A0 */	bne lbl_80380BB8
+/* 80380B1C 0037C7BC  7F 83 E3 78 */	mr r3, r28
+/* 80380B20 0037C7C0  38 80 00 0A */	li r4, 0xa
+/* 80380B24 0037C7C4  38 A0 00 04 */	li r5, 4
+/* 80380B28 0037C7C8  48 00 14 7D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380B2C 0037C7CC  54 60 10 3A */	slwi r0, r3, 2
+/* 80380B30 0037C7D0  7C 7C 02 14 */	add r3, r28, r0
+/* 80380B34 0037C7D4  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380B38 0037C7D8  4B FF D4 69 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380B3C 0037C7DC  7F 83 E3 78 */	mr r3, r28
+/* 80380B40 0037C7E0  48 00 14 DD */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380B44 0037C7E4  3B C0 00 01 */	li r30, 1
+/* 80380B48 0037C7E8  48 00 00 70 */	b lbl_80380BB8
+/* 80380B4C 0037C7EC  2C 04 00 02 */	cmpwi r4, 2
+/* 80380B50 0037C7F0  40 82 00 68 */	bne lbl_80380BB8
+/* 80380B54 0037C7F4  7F 83 E3 78 */	mr r3, r28
+/* 80380B58 0037C7F8  38 80 00 11 */	li r4, 0x11
+/* 80380B5C 0037C7FC  38 A0 00 0B */	li r5, 0xb
+/* 80380B60 0037C800  48 00 14 45 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380B64 0037C804  54 60 10 3A */	slwi r0, r3, 2
+/* 80380B68 0037C808  7C 7C 02 14 */	add r3, r28, r0
+/* 80380B6C 0037C80C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380B70 0037C810  4B FF D4 31 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380B74 0037C814  7F 83 E3 78 */	mr r3, r28
+/* 80380B78 0037C818  48 00 14 A5 */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380B7C 0037C81C  3B C0 00 01 */	li r30, 1
+/* 80380B80 0037C820  48 00 00 38 */	b lbl_80380BB8
+/* 80380B84 0037C824  2C 04 00 02 */	cmpwi r4, 2
+/* 80380B88 0037C828  40 82 00 30 */	bne lbl_80380BB8
+/* 80380B8C 0037C82C  7F 83 E3 78 */	mr r3, r28
+/* 80380B90 0037C830  38 80 00 12 */	li r4, 0x12
+/* 80380B94 0037C834  38 A0 00 0B */	li r5, 0xb
+/* 80380B98 0037C838  48 00 14 0D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380B9C 0037C83C  54 60 10 3A */	slwi r0, r3, 2
+/* 80380BA0 0037C840  7C 7C 02 14 */	add r3, r28, r0
+/* 80380BA4 0037C844  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380BA8 0037C848  4B FF D3 F9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380BAC 0037C84C  7F 83 E3 78 */	mr r3, r28
+/* 80380BB0 0037C850  48 00 14 6D */	bl "setForcusSE__Q210homebutton10HomeButtonFv"
+/* 80380BB4 0037C854  3B C0 00 01 */	li r30, 1
+lbl_80380BB8:
+/* 80380BB8 0037C858  80 7C 00 08 */	lwz r3, 8(r28)
+/* 80380BBC 0037C85C  38 83 00 01 */	addi r4, r3, 1
+/* 80380BC0 0037C860  7C 1F 20 00 */	cmpw r31, r4
+/* 80380BC4 0037C864  41 82 00 10 */	beq lbl_80380BD4
+/* 80380BC8 0037C868  38 03 00 09 */	addi r0, r3, 9
+/* 80380BCC 0037C86C  7C 1F 00 00 */	cmpw r31, r0
+/* 80380BD0 0037C870  40 82 00 38 */	bne lbl_80380C08
+lbl_80380BD4:
+/* 80380BD4 0037C874  54 80 10 3A */	slwi r0, r4, 2
+/* 80380BD8 0037C878  7C 9C 02 14 */	add r4, r28, r0
+/* 80380BDC 0037C87C  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 80380BE0 0037C880  38 03 00 01 */	addi r0, r3, 1
+/* 80380BE4 0037C884  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 80380BE8 0037C888  80 7C 00 08 */	lwz r3, 8(r28)
+/* 80380BEC 0037C88C  38 03 00 09 */	addi r0, r3, 9
+/* 80380BF0 0037C890  54 00 10 3A */	slwi r0, r0, 2
+/* 80380BF4 0037C894  7C 9C 02 14 */	add r4, r28, r0
+/* 80380BF8 0037C898  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 80380BFC 0037C89C  38 03 00 01 */	addi r0, r3, 1
+/* 80380C00 0037C8A0  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 80380C04 0037C8A4  48 00 00 18 */	b lbl_80380C1C
+lbl_80380C08:
+/* 80380C08 0037C8A8  57 E0 10 3A */	slwi r0, r31, 2
+/* 80380C0C 0037C8AC  7C 9C 02 14 */	add r4, r28, r0
+/* 80380C10 0037C8B0  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 80380C14 0037C8B4  38 03 00 01 */	addi r0, r3, 1
+/* 80380C18 0037C8B8  90 04 00 1C */	stw r0, 0x1c(r4)
+lbl_80380C1C:
+/* 80380C1C 0037C8BC  2C 1E 00 00 */	cmpwi r30, 0
+/* 80380C20 0037C8C0  41 82 00 5C */	beq lbl_80380C7C
+/* 80380C24 0037C8C4  2C 1D 00 00 */	cmpwi r29, 0
+/* 80380C28 0037C8C8  41 82 00 54 */	beq lbl_80380C7C
+/* 80380C2C 0037C8CC  80 9D 00 00 */	lwz r4, 0(r29)
+/* 80380C30 0037C8D0  7F 83 E3 78 */	mr r3, r28
+/* 80380C34 0037C8D4  4B FF D3 AD */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80380C38 0037C8D8  4B FF E5 E5 */	bl "isRumbling__Q210homebutton10ControllerFv"
+/* 80380C3C 0037C8DC  2C 03 00 00 */	cmpwi r3, 0
+/* 80380C40 0037C8E0  40 82 00 3C */	bne lbl_80380C7C
+/* 80380C44 0037C8E4  80 1D 00 00 */	lwz r0, 0(r29)
+/* 80380C48 0037C8E8  C0 02 A6 84 */	lfs f0, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 80380C4C 0037C8EC  54 00 10 3A */	slwi r0, r0, 2
+/* 80380C50 0037C8F0  7C 9C 02 14 */	add r4, r28, r0
+/* 80380C54 0037C8F4  C0 24 01 D0 */	lfs f1, 0x1d0(r4)
+/* 80380C58 0037C8F8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80380C5C 0037C8FC  4C 40 13 82 */	cror 2, 0, 2
+/* 80380C60 0037C900  40 82 00 1C */	bne lbl_80380C7C
+/* 80380C64 0037C904  C0 02 A6 D8 */	lfs f0, lbl_805DB8F8-_SDA2_BASE_(r2)
+/* 80380C68 0037C908  7F 83 E3 78 */	mr r3, r28
+/* 80380C6C 0037C90C  D0 04 01 C0 */	stfs f0, 0x1c0(r4)
+/* 80380C70 0037C910  80 9D 00 00 */	lwz r4, 0(r29)
+/* 80380C74 0037C914  4B FF D3 6D */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80380C78 0037C918  48 00 2B 61 */	bl "startMotor__Q210homebutton10ControllerFv"
+lbl_80380C7C:
+/* 80380C7C 0037C91C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80380C80 0037C920  48 08 E7 41 */	bl "_restgpr_27"
+/* 80380C84 0037C924  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80380C88 0037C928  7C 08 03 A6 */	mtlr r0
+/* 80380C8C 0037C92C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80380C90 0037C930  4E 80 00 20 */	blr 
+
+.global "startLeftEvent__Q210homebutton10HomeButtonFPCc"
+"startLeftEvent__Q210homebutton10HomeButtonFPCc":
+/* 80380C94 0037C934  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80380C98 0037C938  7C 08 02 A6 */	mflr r0
+/* 80380C9C 0037C93C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80380CA0 0037C940  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80380CA4 0037C944  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80380CA8 0037C948  7C 7E 1B 78 */	mr r30, r3
+/* 80380CAC 0037C94C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80380CB0 0037C950  48 00 11 BD */	bl "getPaneNo__Q210homebutton10HomeButtonFPCc"
+/* 80380CB4 0037C954  54 60 10 3A */	slwi r0, r3, 2
+/* 80380CB8 0037C958  7C 7F 1B 78 */	mr r31, r3
+/* 80380CBC 0037C95C  7F BE 02 14 */	add r29, r30, r0
+/* 80380CC0 0037C960  80 9D 00 1C */	lwz r4, 0x1c(r29)
+/* 80380CC4 0037C964  2C 04 00 00 */	cmpwi r4, 0
+/* 80380CC8 0037C968  40 81 00 5C */	ble lbl_80380D24
+/* 80380CCC 0037C96C  80 BE 00 08 */	lwz r5, 8(r30)
+/* 80380CD0 0037C970  38 C5 00 01 */	addi r6, r5, 1
+/* 80380CD4 0037C974  7C 03 30 00 */	cmpw r3, r6
+/* 80380CD8 0037C978  41 82 00 10 */	beq lbl_80380CE8
+/* 80380CDC 0037C97C  38 05 00 09 */	addi r0, r5, 9
+/* 80380CE0 0037C980  7C 03 00 00 */	cmpw r3, r0
+/* 80380CE4 0037C984  40 82 00 38 */	bne lbl_80380D1C
+lbl_80380CE8:
+/* 80380CE8 0037C988  54 C0 10 3A */	slwi r0, r6, 2
+/* 80380CEC 0037C98C  7C 9E 02 14 */	add r4, r30, r0
+/* 80380CF0 0037C990  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 80380CF4 0037C994  38 03 FF FF */	addi r0, r3, -1
+/* 80380CF8 0037C998  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 80380CFC 0037C99C  80 7E 00 08 */	lwz r3, 8(r30)
+/* 80380D00 0037C9A0  38 03 00 09 */	addi r0, r3, 9
+/* 80380D04 0037C9A4  54 00 10 3A */	slwi r0, r0, 2
+/* 80380D08 0037C9A8  7C 9E 02 14 */	add r4, r30, r0
+/* 80380D0C 0037C9AC  80 64 00 1C */	lwz r3, 0x1c(r4)
+/* 80380D10 0037C9B0  38 03 FF FF */	addi r0, r3, -1
+/* 80380D14 0037C9B4  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 80380D18 0037C9B8  48 00 00 0C */	b lbl_80380D24
+lbl_80380D1C:
+/* 80380D1C 0037C9BC  38 04 FF FF */	addi r0, r4, -1
+/* 80380D20 0037C9C0  90 1D 00 1C */	stw r0, 0x1c(r29)
+lbl_80380D24:
+/* 80380D24 0037C9C4  7F C3 F3 78 */	mr r3, r30
+/* 80380D28 0037C9C8  48 00 0F D1 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 80380D2C 0037C9CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80380D30 0037C9D0  41 82 02 94 */	beq lbl_80380FC4
+/* 80380D34 0037C9D4  2C 1F FF FF */	cmpwi r31, -1
+/* 80380D38 0037C9D8  41 82 02 8C */	beq lbl_80380FC4
+/* 80380D3C 0037C9DC  80 1D 00 1C */	lwz r0, 0x1c(r29)
+/* 80380D40 0037C9E0  2C 00 00 00 */	cmpwi r0, 0
+/* 80380D44 0037C9E4  40 82 02 80 */	bne lbl_80380FC4
+/* 80380D48 0037C9E8  80 9E 00 00 */	lwz r4, 0(r30)
+/* 80380D4C 0037C9EC  2C 04 00 02 */	cmpwi r4, 2
+/* 80380D50 0037C9F0  41 82 00 34 */	beq lbl_80380D84
+/* 80380D54 0037C9F4  80 1E 00 08 */	lwz r0, 8(r30)
+/* 80380D58 0037C9F8  7C 1F 00 00 */	cmpw r31, r0
+/* 80380D5C 0037C9FC  40 80 00 28 */	bge lbl_80380D84
+/* 80380D60 0037CA00  7F C3 F3 78 */	mr r3, r30
+/* 80380D64 0037CA04  7F E4 FB 78 */	mr r4, r31
+/* 80380D68 0037CA08  38 A0 00 02 */	li r5, 2
+/* 80380D6C 0037CA0C  48 00 11 F1 */	bl "findAnimator__Q210homebutton10HomeButtonFii"
+/* 80380D70 0037CA10  54 60 10 3A */	slwi r0, r3, 2
+/* 80380D74 0037CA14  7C 7E 02 14 */	add r3, r30, r0
+/* 80380D78 0037CA18  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 80380D7C 0037CA1C  4B FF D2 25 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380D80 0037CA20  48 00 02 44 */	b lbl_80380FC4
+lbl_80380D84:
+/* 80380D84 0037CA24  80 1E 00 08 */	lwz r0, 8(r30)
+/* 80380D88 0037CA28  7C 00 F8 50 */	subf r0, r0, r31
+/* 80380D8C 0037CA2C  28 00 00 09 */	cmplwi r0, 9
+/* 80380D90 0037CA30  41 81 02 34 */	bgt lbl_80380FC4
+/* 80380D94 0037CA34  3C 60 80 47 */	lis r3, lbl_80468FEC@ha
+/* 80380D98 0037CA38  54 00 10 3A */	slwi r0, r0, 2
+/* 80380D9C 0037CA3C  38 63 8F EC */	addi r3, r3, lbl_80468FEC@l
+/* 80380DA0 0037CA40  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80380DA4 0037CA44  7C 69 03 A6 */	mtctr r3
+/* 80380DA8 0037CA48  4E 80 04 20 */	bctr 
+/* 80380DAC 0037CA4C  2C 04 00 00 */	cmpwi r4, 0
+/* 80380DB0 0037CA50  40 82 02 14 */	bne lbl_80380FC4
+/* 80380DB4 0037CA54  7F C3 F3 78 */	mr r3, r30
+/* 80380DB8 0037CA58  48 00 0F 55 */	bl "isUpBarActive__Q210homebutton10HomeButtonCFv"
+/* 80380DBC 0037CA5C  2C 03 00 00 */	cmpwi r3, 0
+/* 80380DC0 0037CA60  41 82 00 20 */	beq lbl_80380DE0
+/* 80380DC4 0037CA64  80 7E 03 F8 */	lwz r3, 0x3f8(r30)
+/* 80380DC8 0037CA68  4B FF D1 D9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380DCC 0037CA6C  38 60 00 0C */	li r3, 0xc
+/* 80380DD0 0037CA70  38 00 00 00 */	li r0, 0
+/* 80380DD4 0037CA74  90 7E 00 70 */	stw r3, 0x70(r30)
+/* 80380DD8 0037CA78  90 1E 00 68 */	stw r0, 0x68(r30)
+/* 80380DDC 0037CA7C  48 00 01 E8 */	b lbl_80380FC4
+lbl_80380DE0:
+/* 80380DE0 0037CA80  38 00 00 0C */	li r0, 0xc
+/* 80380DE4 0037CA84  90 1E 00 68 */	stw r0, 0x68(r30)
+/* 80380DE8 0037CA88  48 00 01 DC */	b lbl_80380FC4
+/* 80380DEC 0037CA8C  2C 04 00 00 */	cmpwi r4, 0
+/* 80380DF0 0037CA90  40 82 00 50 */	bne lbl_80380E40
+/* 80380DF4 0037CA94  7F C3 F3 78 */	mr r3, r30
+/* 80380DF8 0037CA98  38 80 00 05 */	li r4, 5
+/* 80380DFC 0037CA9C  38 A0 00 03 */	li r5, 3
+/* 80380E00 0037CAA0  48 00 11 A5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380E04 0037CAA4  7C 7F 1B 78 */	mr r31, r3
+/* 80380E08 0037CAA8  7F C3 F3 78 */	mr r3, r30
+/* 80380E0C 0037CAAC  48 00 0F 69 */	bl "isDownBarActive__Q210homebutton10HomeButtonFv"
+/* 80380E10 0037CAB0  2C 03 00 00 */	cmpwi r3, 0
+/* 80380E14 0037CAB4  41 82 00 24 */	beq lbl_80380E38
+/* 80380E18 0037CAB8  57 E0 10 3A */	slwi r0, r31, 2
+/* 80380E1C 0037CABC  7C 7E 02 14 */	add r3, r30, r0
+/* 80380E20 0037CAC0  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380E24 0037CAC4  4B FF D1 7D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380E28 0037CAC8  38 00 00 00 */	li r0, 0
+/* 80380E2C 0037CACC  93 FE 00 74 */	stw r31, 0x74(r30)
+/* 80380E30 0037CAD0  90 1E 00 6C */	stw r0, 0x6c(r30)
+/* 80380E34 0037CAD4  48 00 01 90 */	b lbl_80380FC4
+lbl_80380E38:
+/* 80380E38 0037CAD8  93 FE 00 6C */	stw r31, 0x6c(r30)
+/* 80380E3C 0037CADC  48 00 01 88 */	b lbl_80380FC4
+lbl_80380E40:
+/* 80380E40 0037CAE0  2C 04 00 01 */	cmpwi r4, 1
+/* 80380E44 0037CAE4  40 82 01 80 */	bne lbl_80380FC4
+/* 80380E48 0037CAE8  7F C3 F3 78 */	mr r3, r30
+/* 80380E4C 0037CAEC  38 80 00 05 */	li r4, 5
+/* 80380E50 0037CAF0  38 A0 00 14 */	li r5, 0x14
+/* 80380E54 0037CAF4  48 00 11 51 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380E58 0037CAF8  7C 7F 1B 78 */	mr r31, r3
+/* 80380E5C 0037CAFC  7F C3 F3 78 */	mr r3, r30
+/* 80380E60 0037CB00  48 00 0F 15 */	bl "isDownBarActive__Q210homebutton10HomeButtonFv"
+/* 80380E64 0037CB04  2C 03 00 00 */	cmpwi r3, 0
+/* 80380E68 0037CB08  41 82 00 24 */	beq lbl_80380E8C
+/* 80380E6C 0037CB0C  57 E0 10 3A */	slwi r0, r31, 2
+/* 80380E70 0037CB10  7C 7E 02 14 */	add r3, r30, r0
+/* 80380E74 0037CB14  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380E78 0037CB18  4B FF D1 29 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380E7C 0037CB1C  38 00 00 00 */	li r0, 0
+/* 80380E80 0037CB20  93 FE 00 74 */	stw r31, 0x74(r30)
+/* 80380E84 0037CB24  90 1E 00 6C */	stw r0, 0x6c(r30)
+/* 80380E88 0037CB28  48 00 01 3C */	b lbl_80380FC4
+lbl_80380E8C:
+/* 80380E8C 0037CB2C  93 FE 00 6C */	stw r31, 0x6c(r30)
+/* 80380E90 0037CB30  48 00 01 34 */	b lbl_80380FC4
+/* 80380E94 0037CB34  2C 04 00 01 */	cmpwi r4, 1
+/* 80380E98 0037CB38  40 82 01 2C */	bne lbl_80380FC4
+/* 80380E9C 0037CB3C  7F C3 F3 78 */	mr r3, r30
+/* 80380EA0 0037CB40  38 80 00 06 */	li r4, 6
+/* 80380EA4 0037CB44  38 A0 00 07 */	li r5, 7
+/* 80380EA8 0037CB48  48 00 10 FD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380EAC 0037CB4C  54 60 10 3A */	slwi r0, r3, 2
+/* 80380EB0 0037CB50  7C 7E 02 14 */	add r3, r30, r0
+/* 80380EB4 0037CB54  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380EB8 0037CB58  4B FF D0 E9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380EBC 0037CB5C  48 00 01 08 */	b lbl_80380FC4
+/* 80380EC0 0037CB60  2C 04 00 01 */	cmpwi r4, 1
+/* 80380EC4 0037CB64  40 82 01 00 */	bne lbl_80380FC4
+/* 80380EC8 0037CB68  7F C3 F3 78 */	mr r3, r30
+/* 80380ECC 0037CB6C  38 80 00 07 */	li r4, 7
+/* 80380ED0 0037CB70  38 A0 00 07 */	li r5, 7
+/* 80380ED4 0037CB74  48 00 10 D1 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380ED8 0037CB78  54 60 10 3A */	slwi r0, r3, 2
+/* 80380EDC 0037CB7C  7C 7E 02 14 */	add r3, r30, r0
+/* 80380EE0 0037CB80  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380EE4 0037CB84  4B FF D0 BD */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380EE8 0037CB88  48 00 00 DC */	b lbl_80380FC4
+/* 80380EEC 0037CB8C  2C 04 00 01 */	cmpwi r4, 1
+/* 80380EF0 0037CB90  40 82 00 D4 */	bne lbl_80380FC4
+/* 80380EF4 0037CB94  7F C3 F3 78 */	mr r3, r30
+/* 80380EF8 0037CB98  38 80 00 08 */	li r4, 8
+/* 80380EFC 0037CB9C  38 A0 00 07 */	li r5, 7
+/* 80380F00 0037CBA0  48 00 10 A5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380F04 0037CBA4  54 60 10 3A */	slwi r0, r3, 2
+/* 80380F08 0037CBA8  7C 7E 02 14 */	add r3, r30, r0
+/* 80380F0C 0037CBAC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380F10 0037CBB0  4B FF D0 91 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380F14 0037CBB4  48 00 00 B0 */	b lbl_80380FC4
+/* 80380F18 0037CBB8  2C 04 00 01 */	cmpwi r4, 1
+/* 80380F1C 0037CBBC  40 82 00 A8 */	bne lbl_80380FC4
+/* 80380F20 0037CBC0  7F C3 F3 78 */	mr r3, r30
+/* 80380F24 0037CBC4  38 80 00 09 */	li r4, 9
+/* 80380F28 0037CBC8  38 A0 00 07 */	li r5, 7
+/* 80380F2C 0037CBCC  48 00 10 79 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380F30 0037CBD0  54 60 10 3A */	slwi r0, r3, 2
+/* 80380F34 0037CBD4  7C 7E 02 14 */	add r3, r30, r0
+/* 80380F38 0037CBD8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380F3C 0037CBDC  4B FF D0 65 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380F40 0037CBE0  48 00 00 84 */	b lbl_80380FC4
+/* 80380F44 0037CBE4  2C 04 00 01 */	cmpwi r4, 1
+/* 80380F48 0037CBE8  40 82 00 7C */	bne lbl_80380FC4
+/* 80380F4C 0037CBEC  7F C3 F3 78 */	mr r3, r30
+/* 80380F50 0037CBF0  38 80 00 0A */	li r4, 0xa
+/* 80380F54 0037CBF4  38 A0 00 07 */	li r5, 7
+/* 80380F58 0037CBF8  48 00 10 4D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380F5C 0037CBFC  54 60 10 3A */	slwi r0, r3, 2
+/* 80380F60 0037CC00  7C 7E 02 14 */	add r3, r30, r0
+/* 80380F64 0037CC04  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380F68 0037CC08  4B FF D0 39 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380F6C 0037CC0C  48 00 00 58 */	b lbl_80380FC4
+/* 80380F70 0037CC10  2C 04 00 02 */	cmpwi r4, 2
+/* 80380F74 0037CC14  40 82 00 50 */	bne lbl_80380FC4
+/* 80380F78 0037CC18  7F C3 F3 78 */	mr r3, r30
+/* 80380F7C 0037CC1C  38 80 00 11 */	li r4, 0x11
+/* 80380F80 0037CC20  38 A0 00 0C */	li r5, 0xc
+/* 80380F84 0037CC24  48 00 10 21 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380F88 0037CC28  54 60 10 3A */	slwi r0, r3, 2
+/* 80380F8C 0037CC2C  7C 7E 02 14 */	add r3, r30, r0
+/* 80380F90 0037CC30  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380F94 0037CC34  4B FF D0 0D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80380F98 0037CC38  48 00 00 2C */	b lbl_80380FC4
+/* 80380F9C 0037CC3C  2C 04 00 02 */	cmpwi r4, 2
+/* 80380FA0 0037CC40  40 82 00 24 */	bne lbl_80380FC4
+/* 80380FA4 0037CC44  7F C3 F3 78 */	mr r3, r30
+/* 80380FA8 0037CC48  38 80 00 12 */	li r4, 0x12
+/* 80380FAC 0037CC4C  38 A0 00 0C */	li r5, 0xc
+/* 80380FB0 0037CC50  48 00 0F F5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80380FB4 0037CC54  54 60 10 3A */	slwi r0, r3, 2
+/* 80380FB8 0037CC58  7C 7E 02 14 */	add r3, r30, r0
+/* 80380FBC 0037CC5C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80380FC0 0037CC60  4B FF CF E1 */	bl "start__Q210homebutton15FrameControllerFv"
+lbl_80380FC4:
+/* 80380FC4 0037CC64  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80380FC8 0037CC68  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80380FCC 0037CC6C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80380FD0 0037CC70  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80380FD4 0037CC74  7C 08 03 A6 */	mtlr r0
+/* 80380FD8 0037CC78  38 21 00 20 */	addi r1, r1, 0x20
+/* 80380FDC 0037CC7C  4E 80 00 20 */	blr 
+
+.global "startTrigEvent__Q210homebutton10HomeButtonFPCc"
+"startTrigEvent__Q210homebutton10HomeButtonFPCc":
+/* 80380FE0 0037CC80  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80380FE4 0037CC84  7C 08 02 A6 */	mflr r0
+/* 80380FE8 0037CC88  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80380FEC 0037CC8C  DB E1 00 40 */	stfd f31, 0x40(r1)
+/* 80380FF0 0037CC90  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
+/* 80380FF4 0037CC94  DB C1 00 30 */	stfd f30, 0x30(r1)
+/* 80380FF8 0037CC98  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
+/* 80380FFC 0037CC9C  3C 00 43 30 */	lis r0, 0x4330
+/* 80381000 0037CCA0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80381004 0037CCA4  7C 7F 1B 78 */	mr r31, r3
+/* 80381008 0037CCA8  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8038100C 0037CCAC  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80381010 0037CCB0  90 01 00 08 */	stw r0, 8(r1)
+/* 80381014 0037CCB4  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80381018 0037CCB8  48 00 0E 55 */	bl "getPaneNo__Q210homebutton10HomeButtonFPCc"
+/* 8038101C 0037CCBC  7C 7E 1B 78 */	mr r30, r3
+/* 80381020 0037CCC0  7F E3 FB 78 */	mr r3, r31
+/* 80381024 0037CCC4  48 00 0C D5 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 80381028 0037CCC8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038102C 0037CCCC  41 82 09 38 */	beq lbl_80381964
+/* 80381030 0037CCD0  2C 1E FF FF */	cmpwi r30, -1
+/* 80381034 0037CCD4  41 82 09 30 */	beq lbl_80381964
+/* 80381038 0037CCD8  80 9F 00 00 */	lwz r4, 0(r31)
+/* 8038103C 0037CCDC  2C 04 00 00 */	cmpwi r4, 0
+/* 80381040 0037CCE0  40 82 01 9C */	bne lbl_803811DC
+/* 80381044 0037CCE4  80 1F 00 08 */	lwz r0, 8(r31)
+/* 80381048 0037CCE8  7C 1E 00 00 */	cmpw r30, r0
+/* 8038104C 0037CCEC  40 80 01 90 */	bge lbl_803811DC
+/* 80381050 0037CCF0  38 1E 00 01 */	addi r0, r30, 1
+/* 80381054 0037CCF4  7F E3 FB 78 */	mr r3, r31
+/* 80381058 0037CCF8  90 1F 00 B0 */	stw r0, 0xb0(r31)
+/* 8038105C 0037CCFC  38 9E 00 04 */	addi r4, r30, 4
+/* 80381060 0037CD00  38 A0 00 01 */	li r5, 1
+/* 80381064 0037CD04  48 00 0E F9 */	bl "findAnimator__Q210homebutton10HomeButtonFii"
+/* 80381068 0037CD08  54 60 10 3A */	slwi r0, r3, 2
+/* 8038106C 0037CD0C  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 80381070 0037CD10  7C 7F 02 14 */	add r3, r31, r0
+/* 80381074 0037CD14  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 80381078 0037CD18  4B FF CF 29 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038107C 0037CD1C  7F E3 FB 78 */	mr r3, r31
+/* 80381080 0037CD20  38 80 00 05 */	li r4, 5
+/* 80381084 0037CD24  48 00 1B 1D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381088 0037CD28  57 C0 10 3A */	slwi r0, r30, 2
+/* 8038108C 0037CD2C  7C 7F 02 14 */	add r3, r31, r0
+/* 80381090 0037CD30  80 03 00 98 */	lwz r0, 0x98(r3)
+/* 80381094 0037CD34  2C 00 00 00 */	cmpwi r0, 0
+/* 80381098 0037CD38  41 82 01 38 */	beq lbl_803811D0
+/* 8038109C 0037CD3C  38 60 00 0B */	li r3, 0xb
+/* 803810A0 0037CD40  38 00 00 02 */	li r0, 2
+/* 803810A4 0037CD44  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 803810A8 0037CD48  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 803810AC 0037CD4C  90 1F 00 00 */	stw r0, 0(r31)
+/* 803810B0 0037CD50  4B FF C5 41 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803810B4 0037CD54  81 83 00 00 */	lwz r12, 0(r3)
+/* 803810B8 0037CD58  3C 80 80 47 */	lis r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 803810BC 0037CD5C  38 84 8C 6C */	addi r4, r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l
+/* 803810C0 0037CD60  38 A0 00 01 */	li r5, 1
+/* 803810C4 0037CD64  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803810C8 0037CD68  80 84 00 08 */	lwz r4, 8(r4)
+/* 803810CC 0037CD6C  7D 89 03 A6 */	mtctr r12
+/* 803810D0 0037CD70  4E 80 04 21 */	bctrl 
+/* 803810D4 0037CD74  4B FF CD 05 */	bl "DynamicCast<PQ36nw4hbm3lyt7TextBox,Q36nw4hbm3lyt4Pane>__Q26nw4hbm2utFPQ36nw4hbm3lyt4Pane_PQ36nw4hbm3lyt7TextBox"
+/* 803810D8 0037CD78  80 DF 00 04 */	lwz r6, 4(r31)
+/* 803810DC 0037CD7C  38 1E 00 01 */	addi r0, r30, 1
+/* 803810E0 0037CD80  80 86 00 24 */	lwz r4, 0x24(r6)
+/* 803810E4 0037CD84  7C 80 00 39 */	and. r0, r4, r0
+/* 803810E8 0037CD88  41 82 00 44 */	beq lbl_8038112C
+/* 803810EC 0037CD8C  80 86 00 1C */	lwz r4, 0x1c(r6)
+/* 803810F0 0037CD90  38 1E 00 02 */	addi r0, r30, 2
+/* 803810F4 0037CD94  54 07 10 3A */	slwi r7, r0, 2
+/* 803810F8 0037CD98  39 00 00 00 */	li r8, 0
+/* 803810FC 0037CD9C  1C 04 00 18 */	mulli r0, r4, 0x18
+/* 80381100 0037CDA0  7C 1F 02 14 */	add r0, r31, r0
+/* 80381104 0037CDA4  7C 80 3A 14 */	add r4, r0, r7
+/* 80381108 0037CDA8  80 84 00 B4 */	lwz r4, 0xb4(r4)
+lbl_8038110C:
+/* 8038110C 0037CDAC  55 00 0B FC */	rlwinm r0, r8, 1, 0xf, 0x1e
+/* 80381110 0037CDB0  7C 04 02 2E */	lhzx r0, r4, r0
+/* 80381114 0037CDB4  28 00 FF 1F */	cmplwi r0, 0xff1f
+/* 80381118 0037CDB8  41 82 00 50 */	beq lbl_80381168
+/* 8038111C 0037CDBC  28 00 00 3F */	cmplwi r0, 0x3f
+/* 80381120 0037CDC0  41 82 00 48 */	beq lbl_80381168
+/* 80381124 0037CDC4  39 08 00 01 */	addi r8, r8, 1
+/* 80381128 0037CDC8  4B FF FF E4 */	b lbl_8038110C
+lbl_8038112C:
+/* 8038112C 0037CDCC  80 06 00 1C */	lwz r0, 0x1c(r6)
+/* 80381130 0037CDD0  38 9E 00 02 */	addi r4, r30, 2
+/* 80381134 0037CDD4  54 87 10 3A */	slwi r7, r4, 2
+/* 80381138 0037CDD8  39 00 00 00 */	li r8, 0
+/* 8038113C 0037CDDC  1C 80 00 18 */	mulli r4, r0, 0x18
+/* 80381140 0037CDE0  7C 07 FA 14 */	add r0, r7, r31
+/* 80381144 0037CDE4  7C 84 02 14 */	add r4, r4, r0
+/* 80381148 0037CDE8  80 A4 00 B4 */	lwz r5, 0xb4(r4)
+lbl_8038114C:
+/* 8038114C 0037CDEC  55 00 0B FC */	rlwinm r0, r8, 1, 0xf, 0x1e
+/* 80381150 0037CDF0  7C 85 02 14 */	add r4, r5, r0
+/* 80381154 0037CDF4  A0 04 00 02 */	lhz r0, 2(r4)
+/* 80381158 0037CDF8  28 00 00 22 */	cmplwi r0, 0x22
+/* 8038115C 0037CDFC  41 82 00 0C */	beq lbl_80381168
+/* 80381160 0037CE00  39 08 00 01 */	addi r8, r8, 1
+/* 80381164 0037CE04  4B FF FF E8 */	b lbl_8038114C
+lbl_80381168:
+/* 80381168 0037CE08  80 06 00 1C */	lwz r0, 0x1c(r6)
+/* 8038116C 0037CE0C  55 04 04 3E */	clrlwi r4, r8, 0x10
+/* 80381170 0037CE10  81 83 00 00 */	lwz r12, 0(r3)
+/* 80381174 0037CE14  38 A0 00 00 */	li r5, 0
+/* 80381178 0037CE18  1C C0 00 18 */	mulli r6, r0, 0x18
+/* 8038117C 0037CE1C  38 04 00 01 */	addi r0, r4, 1
+/* 80381180 0037CE20  81 8C 00 70 */	lwz r12, 0x70(r12)
+/* 80381184 0037CE24  7C 9F 32 14 */	add r4, r31, r6
+/* 80381188 0037CE28  7C 84 3A 14 */	add r4, r4, r7
+/* 8038118C 0037CE2C  54 06 04 3E */	clrlwi r6, r0, 0x10
+/* 80381190 0037CE30  80 84 00 B4 */	lwz r4, 0xb4(r4)
+/* 80381194 0037CE34  7D 89 03 A6 */	mtctr r12
+/* 80381198 0037CE38  4E 80 04 21 */	bctrl 
+/* 8038119C 0037CE3C  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 803811A0 0037CE40  4B FF C4 51 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803811A4 0037CE44  81 83 00 00 */	lwz r12, 0(r3)
+/* 803811A8 0037CE48  3C 80 80 47 */	lis r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 803811AC 0037CE4C  38 84 8C 6C */	addi r4, r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l
+/* 803811B0 0037CE50  38 A0 00 01 */	li r5, 1
+/* 803811B4 0037CE54  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803811B8 0037CE58  80 84 00 08 */	lwz r4, 8(r4)
+/* 803811BC 0037CE5C  7D 89 03 A6 */	mtctr r12
+/* 803811C0 0037CE60  4E 80 04 21 */	bctrl 
+/* 803811C4 0037CE64  38 80 00 01 */	li r4, 1
+/* 803811C8 0037CE68  4B FF CA D5 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 803811CC 0037CE6C  48 00 07 98 */	b lbl_80381964
+lbl_803811D0:
+/* 803811D0 0037CE70  38 00 00 0F */	li r0, 0xf
+/* 803811D4 0037CE74  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 803811D8 0037CE78  48 00 07 8C */	b lbl_80381964
+lbl_803811DC:
+/* 803811DC 0037CE7C  80 1F 00 08 */	lwz r0, 8(r31)
+/* 803811E0 0037CE80  7C 00 F0 50 */	subf r0, r0, r30
+/* 803811E4 0037CE84  28 00 00 09 */	cmplwi r0, 9
+/* 803811E8 0037CE88  41 81 07 7C */	bgt lbl_80381964
+/* 803811EC 0037CE8C  3C 60 80 47 */	lis r3, lbl_80469014@ha
+/* 803811F0 0037CE90  54 00 10 3A */	slwi r0, r0, 2
+/* 803811F4 0037CE94  38 63 90 14 */	addi r3, r3, lbl_80469014@l
+/* 803811F8 0037CE98  7C 63 00 2E */	lwzx r3, r3, r0
+/* 803811FC 0037CE9C  7C 69 03 A6 */	mtctr r3
+/* 80381200 0037CEA0  4E 80 04 20 */	bctr 
+/* 80381204 0037CEA4  80 7F 03 F8 */	lwz r3, 0x3f8(r31)
+/* 80381208 0037CEA8  4B FF E0 01 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 8038120C 0037CEAC  2C 03 00 00 */	cmpwi r3, 0
+/* 80381210 0037CEB0  41 82 00 0C */	beq lbl_8038121C
+/* 80381214 0037CEB4  80 7F 03 F8 */	lwz r3, 0x3f8(r31)
+/* 80381218 0037CEB8  4B FF DF B1 */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_8038121C:
+/* 8038121C 0037CEBC  80 7F 03 D4 */	lwz r3, 0x3d4(r31)
+/* 80381220 0037CEC0  4B FF DF E9 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381224 0037CEC4  2C 03 00 00 */	cmpwi r3, 0
+/* 80381228 0037CEC8  41 82 00 0C */	beq lbl_80381234
+/* 8038122C 0037CECC  80 7F 03 D4 */	lwz r3, 0x3d4(r31)
+/* 80381230 0037CED0  4B FF DF 99 */	bl "stop__Q210homebutton15FrameControllerFv"
+lbl_80381234:
+/* 80381234 0037CED4  38 60 00 00 */	li r3, 0
+/* 80381238 0037CED8  38 00 00 04 */	li r0, 4
+/* 8038123C 0037CEDC  90 7F 00 B0 */	stw r3, 0xb0(r31)
+/* 80381240 0037CEE0  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 80381244 0037CEE4  80 7F 03 D8 */	lwz r3, 0x3d8(r31)
+/* 80381248 0037CEE8  4B FF CD 59 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038124C 0037CEEC  38 00 00 0E */	li r0, 0xe
+/* 80381250 0037CEF0  7F E3 FB 78 */	mr r3, r31
+/* 80381254 0037CEF4  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 80381258 0037CEF8  38 80 00 01 */	li r4, 1
+/* 8038125C 0037CEFC  48 00 19 45 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381260 0037CF00  48 00 07 04 */	b lbl_80381964
+/* 80381264 0037CF04  2C 04 00 01 */	cmpwi r4, 1
+/* 80381268 0037CF08  40 82 00 44 */	bne lbl_803812AC
+/* 8038126C 0037CF0C  80 7F 03 D8 */	lwz r3, 0x3d8(r31)
+/* 80381270 0037CF10  4B FF CD 31 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381274 0037CF14  80 7F 03 F4 */	lwz r3, 0x3f4(r31)
+/* 80381278 0037CF18  4B FF CD 29 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038127C 0037CF1C  38 00 00 02 */	li r0, 2
+/* 80381280 0037CF20  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 80381284 0037CF24  80 7F 03 D0 */	lwz r3, 0x3d0(r31)
+/* 80381288 0037CF28  4B FF CD 19 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038128C 0037CF2C  38 60 00 0A */	li r3, 0xa
+/* 80381290 0037CF30  38 00 00 00 */	li r0, 0
+/* 80381294 0037CF34  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 80381298 0037CF38  7F E3 FB 78 */	mr r3, r31
+/* 8038129C 0037CF3C  38 80 00 08 */	li r4, 8
+/* 803812A0 0037CF40  90 1F 00 00 */	stw r0, 0(r31)
+/* 803812A4 0037CF44  48 00 18 FD */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803812A8 0037CF48  48 00 06 BC */	b lbl_80381964
+lbl_803812AC:
+/* 803812AC 0037CF4C  2C 04 00 00 */	cmpwi r4, 0
+/* 803812B0 0037CF50  40 82 06 B4 */	bne lbl_80381964
+/* 803812B4 0037CF54  80 7F 03 CC */	lwz r3, 0x3cc(r31)
+/* 803812B8 0037CF58  4B FF CC E9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803812BC 0037CF5C  38 00 00 09 */	li r0, 9
+/* 803812C0 0037CF60  90 1F 00 14 */	stw r0, 0x14(r31)
+/* 803812C4 0037CF64  80 7F 03 EC */	lwz r3, 0x3ec(r31)
+/* 803812C8 0037CF68  4B FF CC D9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803812CC 0037CF6C  38 00 00 0A */	li r0, 0xa
+/* 803812D0 0037CF70  3C 60 80 47 */	lis r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 803812D4 0037CF74  38 63 8C 20 */	addi r3, r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+/* 803812D8 0037CF78  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 803812DC 0037CF7C  3B C3 00 08 */	addi r30, r3, 8
+/* 803812E0 0037CF80  3B A0 00 02 */	li r29, 2
+lbl_803812E4:
+/* 803812E4 0037CF84  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 803812E8 0037CF88  4B FF C3 09 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803812EC 0037CF8C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803812F0 0037CF90  38 A0 00 01 */	li r5, 1
+/* 803812F4 0037CF94  80 9E 00 00 */	lwz r4, 0(r30)
+/* 803812F8 0037CF98  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 803812FC 0037CF9C  7D 89 03 A6 */	mtctr r12
+/* 80381300 0037CFA0  4E 80 04 21 */	bctrl 
+/* 80381304 0037CFA4  38 80 00 01 */	li r4, 1
+/* 80381308 0037CFA8  4B FF C9 95 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8038130C 0037CFAC  3B BD 00 01 */	addi r29, r29, 1
+/* 80381310 0037CFB0  3B DE 00 04 */	addi r30, r30, 4
+/* 80381314 0037CFB4  2C 1D 00 07 */	cmpwi r29, 7
+/* 80381318 0037CFB8  41 80 FF CC */	blt lbl_803812E4
+/* 8038131C 0037CFBC  38 00 00 01 */	li r0, 1
+/* 80381320 0037CFC0  7F E3 FB 78 */	mr r3, r31
+/* 80381324 0037CFC4  90 1F 00 00 */	stw r0, 0(r31)
+/* 80381328 0037CFC8  38 80 00 05 */	li r4, 5
+/* 8038132C 0037CFCC  48 00 18 75 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381330 0037CFD0  48 00 06 34 */	b lbl_80381964
+/* 80381334 0037CFD4  80 7F 00 80 */	lwz r3, 0x80(r31)
+/* 80381338 0037CFD8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038133C 0037CFDC  40 81 01 64 */	ble lbl_803814A0
+/* 80381340 0037CFE0  38 83 FF FF */	addi r4, r3, -1
+/* 80381344 0037CFE4  7F E3 FB 78 */	mr r3, r31
+/* 80381348 0037CFE8  90 9F 00 80 */	stw r4, 0x80(r31)
+/* 8038134C 0037CFEC  38 84 00 15 */	addi r4, r4, 0x15
+/* 80381350 0037CFF0  38 A0 00 0A */	li r5, 0xa
+/* 80381354 0037CFF4  48 00 0C 51 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381358 0037CFF8  54 60 10 3A */	slwi r0, r3, 2
+/* 8038135C 0037CFFC  7C 7F 02 14 */	add r3, r31, r0
+/* 80381360 0037D000  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381364 0037D004  4B FF DE 65 */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 80381368 0037D008  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 8038136C 0037D00C  7F E3 FB 78 */	mr r3, r31
+/* 80381370 0037D010  38 A0 00 09 */	li r5, 9
+/* 80381374 0037D014  38 84 00 15 */	addi r4, r4, 0x15
+/* 80381378 0037D018  48 00 0C 2D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038137C 0037D01C  54 60 10 3A */	slwi r0, r3, 2
+/* 80381380 0037D020  7C 7F 02 14 */	add r3, r31, r0
+/* 80381384 0037D024  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381388 0037D028  4B FF CC 19 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038138C 0037D02C  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 80381390 0037D030  2C 00 00 00 */	cmpwi r0, 0
+/* 80381394 0037D034  40 82 00 78 */	bne lbl_8038140C
+/* 80381398 0037D038  7F E3 FB 78 */	mr r3, r31
+/* 8038139C 0037D03C  38 80 00 0C */	li r4, 0xc
+/* 803813A0 0037D040  48 00 18 01 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803813A4 0037D044  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 803813A8 0037D048  3B A0 00 00 */	li r29, 0
+/* 803813AC 0037D04C  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_803813B0:
+/* 803813B0 0037D050  7F E3 FB 78 */	mr r3, r31
+/* 803813B4 0037D054  7F A4 EB 78 */	mr r4, r29
+/* 803813B8 0037D058  4B FF CC 29 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803813BC 0037D05C  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 803813C0 0037D060  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 803813C4 0037D064  90 01 00 0C */	stw r0, 0xc(r1)
+/* 803813C8 0037D068  C8 01 00 08 */	lfd f0, 8(r1)
+/* 803813CC 0037D06C  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 803813D0 0037D070  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 803813D4 0037D074  48 00 1F A5 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 803813D8 0037D078  7F E3 FB 78 */	mr r3, r31
+/* 803813DC 0037D07C  4B FF E2 7D */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 803813E0 0037D080  7C 7E 1B 78 */	mr r30, r3
+/* 803813E4 0037D084  7F E3 FB 78 */	mr r3, r31
+/* 803813E8 0037D088  7F A4 EB 78 */	mr r4, r29
+/* 803813EC 0037D08C  4B FF CB F5 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803813F0 0037D090  7F C4 F3 78 */	mr r4, r30
+/* 803813F4 0037D094  38 A0 00 01 */	li r5, 1
+/* 803813F8 0037D098  48 00 1F 91 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 803813FC 0037D09C  3B BD 00 01 */	addi r29, r29, 1
+/* 80381400 0037D0A0  2C 1D 00 04 */	cmpwi r29, 4
+/* 80381404 0037D0A4  41 80 FF AC */	blt lbl_803813B0
+/* 80381408 0037D0A8  48 00 00 74 */	b lbl_8038147C
+lbl_8038140C:
+/* 8038140C 0037D0AC  7F E3 FB 78 */	mr r3, r31
+/* 80381410 0037D0B0  38 80 00 0A */	li r4, 0xa
+/* 80381414 0037D0B4  48 00 17 8D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381418 0037D0B8  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 8038141C 0037D0BC  3B A0 00 00 */	li r29, 0
+/* 80381420 0037D0C0  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_80381424:
+/* 80381424 0037D0C4  7F E3 FB 78 */	mr r3, r31
+/* 80381428 0037D0C8  7F A4 EB 78 */	mr r4, r29
+/* 8038142C 0037D0CC  4B FF CB B5 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80381430 0037D0D0  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 80381434 0037D0D4  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80381438 0037D0D8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8038143C 0037D0DC  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80381440 0037D0E0  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 80381444 0037D0E4  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 80381448 0037D0E8  48 00 1F 31 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 8038144C 0037D0EC  7F E3 FB 78 */	mr r3, r31
+/* 80381450 0037D0F0  4B FF E2 09 */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 80381454 0037D0F4  7C 7E 1B 78 */	mr r30, r3
+/* 80381458 0037D0F8  7F E3 FB 78 */	mr r3, r31
+/* 8038145C 0037D0FC  7F A4 EB 78 */	mr r4, r29
+/* 80381460 0037D100  4B FF CB 81 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80381464 0037D104  7F C4 F3 78 */	mr r4, r30
+/* 80381468 0037D108  38 A0 00 01 */	li r5, 1
+/* 8038146C 0037D10C  48 00 1F 1D */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 80381470 0037D110  3B BD 00 01 */	addi r29, r29, 1
+/* 80381474 0037D114  2C 1D 00 04 */	cmpwi r29, 4
+/* 80381478 0037D118  41 80 FF AC */	blt lbl_80381424
+lbl_8038147C:
+/* 8038147C 0037D11C  7F E3 FB 78 */	mr r3, r31
+/* 80381480 0037D120  38 80 00 0B */	li r4, 0xb
+/* 80381484 0037D124  38 A0 00 05 */	li r5, 5
+/* 80381488 0037D128  48 00 0B 1D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038148C 0037D12C  54 60 10 3A */	slwi r0, r3, 2
+/* 80381490 0037D130  7C 7F 02 14 */	add r3, r31, r0
+/* 80381494 0037D134  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381498 0037D138  4B FF CB 09 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038149C 0037D13C  48 00 04 C8 */	b lbl_80381964
+lbl_803814A0:
+/* 803814A0 0037D140  7F E3 FB 78 */	mr r3, r31
+/* 803814A4 0037D144  38 80 00 0D */	li r4, 0xd
+/* 803814A8 0037D148  48 00 16 F9 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803814AC 0037D14C  48 00 04 B8 */	b lbl_80381964
+/* 803814B0 0037D150  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 803814B4 0037D154  2C 04 00 0A */	cmpwi r4, 0xa
+/* 803814B8 0037D158  40 80 01 64 */	bge lbl_8038161C
+/* 803814BC 0037D15C  7F E3 FB 78 */	mr r3, r31
+/* 803814C0 0037D160  38 84 00 15 */	addi r4, r4, 0x15
+/* 803814C4 0037D164  38 A0 00 09 */	li r5, 9
+/* 803814C8 0037D168  48 00 0A DD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803814CC 0037D16C  54 60 10 3A */	slwi r0, r3, 2
+/* 803814D0 0037D170  7C 7F 02 14 */	add r3, r31, r0
+/* 803814D4 0037D174  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803814D8 0037D178  4B FF DC F1 */	bl "stop__Q210homebutton15FrameControllerFv"
+/* 803814DC 0037D17C  80 9F 00 80 */	lwz r4, 0x80(r31)
+/* 803814E0 0037D180  7F E3 FB 78 */	mr r3, r31
+/* 803814E4 0037D184  38 A0 00 0A */	li r5, 0xa
+/* 803814E8 0037D188  38 84 00 15 */	addi r4, r4, 0x15
+/* 803814EC 0037D18C  48 00 0A B9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803814F0 0037D190  54 60 10 3A */	slwi r0, r3, 2
+/* 803814F4 0037D194  7C 7F 02 14 */	add r3, r31, r0
+/* 803814F8 0037D198  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803814FC 0037D19C  4B FF CA A5 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381500 0037D1A0  80 7F 00 80 */	lwz r3, 0x80(r31)
+/* 80381504 0037D1A4  38 03 00 01 */	addi r0, r3, 1
+/* 80381508 0037D1A8  2C 00 00 0A */	cmpwi r0, 0xa
+/* 8038150C 0037D1AC  90 1F 00 80 */	stw r0, 0x80(r31)
+/* 80381510 0037D1B0  40 82 00 78 */	bne lbl_80381588
+/* 80381514 0037D1B4  7F E3 FB 78 */	mr r3, r31
+/* 80381518 0037D1B8  38 80 00 0B */	li r4, 0xb
+/* 8038151C 0037D1BC  48 00 16 85 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381520 0037D1C0  CB E2 A6 A8 */	lfd f31, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80381524 0037D1C4  3B A0 00 00 */	li r29, 0
+/* 80381528 0037D1C8  C3 C2 A6 A4 */	lfs f30, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_8038152C:
+/* 8038152C 0037D1CC  7F E3 FB 78 */	mr r3, r31
+/* 80381530 0037D1D0  7F A4 EB 78 */	mr r4, r29
+/* 80381534 0037D1D4  4B FF CA AD */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80381538 0037D1D8  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 8038153C 0037D1DC  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 80381540 0037D1E0  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80381544 0037D1E4  C8 01 00 08 */	lfd f0, 8(r1)
+/* 80381548 0037D1E8  EC 00 F8 28 */	fsubs f0, f0, f31
+/* 8038154C 0037D1EC  EC 20 F0 24 */	fdivs f1, f0, f30
+/* 80381550 0037D1F0  48 00 1E 29 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 80381554 0037D1F4  7F E3 FB 78 */	mr r3, r31
+/* 80381558 0037D1F8  4B FF E1 01 */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 8038155C 0037D1FC  7C 7E 1B 78 */	mr r30, r3
+/* 80381560 0037D200  7F E3 FB 78 */	mr r3, r31
+/* 80381564 0037D204  7F A4 EB 78 */	mr r4, r29
+/* 80381568 0037D208  4B FF CA 79 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 8038156C 0037D20C  7F C4 F3 78 */	mr r4, r30
+/* 80381570 0037D210  38 A0 00 01 */	li r5, 1
+/* 80381574 0037D214  48 00 1E 15 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 80381578 0037D218  3B BD 00 01 */	addi r29, r29, 1
+/* 8038157C 0037D21C  2C 1D 00 04 */	cmpwi r29, 4
+/* 80381580 0037D220  41 80 FF AC */	blt lbl_8038152C
+/* 80381584 0037D224  48 00 00 74 */	b lbl_803815F8
+lbl_80381588:
+/* 80381588 0037D228  7F E3 FB 78 */	mr r3, r31
+/* 8038158C 0037D22C  38 80 00 09 */	li r4, 9
+/* 80381590 0037D230  48 00 16 11 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381594 0037D234  CB C2 A6 A8 */	lfd f30, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 80381598 0037D238  3B A0 00 00 */	li r29, 0
+/* 8038159C 0037D23C  C3 E2 A6 A4 */	lfs f31, lbl_805DB8C4-_SDA2_BASE_(r2)
+lbl_803815A0:
+/* 803815A0 0037D240  7F E3 FB 78 */	mr r3, r31
+/* 803815A4 0037D244  7F A4 EB 78 */	mr r4, r29
+/* 803815A8 0037D248  4B FF CA 39 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803815AC 0037D24C  80 1F 00 80 */	lwz r0, 0x80(r31)
+/* 803815B0 0037D250  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 803815B4 0037D254  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803815B8 0037D258  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 803815BC 0037D25C  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 803815C0 0037D260  EC 20 F8 24 */	fdivs f1, f0, f31
+/* 803815C4 0037D264  48 00 1D B5 */	bl "setSpeakerVol__Q210homebutton10ControllerFf"
+/* 803815C8 0037D268  7F E3 FB 78 */	mr r3, r31
+/* 803815CC 0037D26C  4B FF E0 8D */	bl "getSoundArchivePlayer__Q210homebutton10HomeButtonFv"
+/* 803815D0 0037D270  7C 7E 1B 78 */	mr r30, r3
+/* 803815D4 0037D274  7F E3 FB 78 */	mr r3, r31
+/* 803815D8 0037D278  7F A4 EB 78 */	mr r4, r29
+/* 803815DC 0037D27C  4B FF CA 05 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803815E0 0037D280  7F C4 F3 78 */	mr r4, r30
+/* 803815E4 0037D284  38 A0 00 01 */	li r5, 1
+/* 803815E8 0037D288  48 00 1D A1 */	bl "playSound__Q210homebutton10ControllerFPQ36nw4hbm3snd18SoundArchivePlayeri"
+/* 803815EC 0037D28C  3B BD 00 01 */	addi r29, r29, 1
+/* 803815F0 0037D290  2C 1D 00 04 */	cmpwi r29, 4
+/* 803815F4 0037D294  41 80 FF AC */	blt lbl_803815A0
+lbl_803815F8:
+/* 803815F8 0037D298  7F E3 FB 78 */	mr r3, r31
+/* 803815FC 0037D29C  38 80 00 0C */	li r4, 0xc
+/* 80381600 0037D2A0  38 A0 00 05 */	li r5, 5
+/* 80381604 0037D2A4  48 00 09 A1 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381608 0037D2A8  54 60 10 3A */	slwi r0, r3, 2
+/* 8038160C 0037D2AC  7C 7F 02 14 */	add r3, r31, r0
+/* 80381610 0037D2B0  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381614 0037D2B4  4B FF C9 8D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381618 0037D2B8  48 00 03 4C */	b lbl_80381964
+lbl_8038161C:
+/* 8038161C 0037D2BC  7F E3 FB 78 */	mr r3, r31
+/* 80381620 0037D2C0  38 80 00 0D */	li r4, 0xd
+/* 80381624 0037D2C4  48 00 15 7D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381628 0037D2C8  48 00 03 3C */	b lbl_80381964
+/* 8038162C 0037D2CC  88 1F 00 84 */	lbz r0, 0x84(r31)
+/* 80381630 0037D2D0  2C 00 00 00 */	cmpwi r0, 0
+/* 80381634 0037D2D4  40 82 00 6C */	bne lbl_803816A0
+/* 80381638 0037D2D8  38 00 00 01 */	li r0, 1
+/* 8038163C 0037D2DC  7F E3 FB 78 */	mr r3, r31
+/* 80381640 0037D2E0  98 1F 00 84 */	stb r0, 0x84(r31)
+/* 80381644 0037D2E4  38 80 00 01 */	li r4, 1
+/* 80381648 0037D2E8  48 00 0B F9 */	bl "setVibFlag__Q210homebutton10HomeButtonFb"
+/* 8038164C 0037D2EC  7F E3 FB 78 */	mr r3, r31
+/* 80381650 0037D2F0  38 80 00 0E */	li r4, 0xe
+/* 80381654 0037D2F4  38 A0 00 08 */	li r5, 8
+/* 80381658 0037D2F8  48 00 09 4D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038165C 0037D2FC  54 60 10 3A */	slwi r0, r3, 2
+/* 80381660 0037D300  7C 7F 02 14 */	add r3, r31, r0
+/* 80381664 0037D304  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381668 0037D308  4B FF C9 39 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 8038166C 0037D30C  7F E3 FB 78 */	mr r3, r31
+/* 80381670 0037D310  38 80 00 10 */	li r4, 0x10
+/* 80381674 0037D314  38 A0 00 06 */	li r5, 6
+/* 80381678 0037D318  48 00 09 2D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038167C 0037D31C  54 60 10 3A */	slwi r0, r3, 2
+/* 80381680 0037D320  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 80381684 0037D324  7C 7F 02 14 */	add r3, r31, r0
+/* 80381688 0037D328  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8038168C 0037D32C  4B FF C9 15 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381690 0037D330  7F E3 FB 78 */	mr r3, r31
+/* 80381694 0037D334  38 80 00 0E */	li r4, 0xe
+/* 80381698 0037D338  48 00 15 09 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 8038169C 0037D33C  48 00 00 34 */	b lbl_803816D0
+lbl_803816A0:
+/* 803816A0 0037D340  7F E3 FB 78 */	mr r3, r31
+/* 803816A4 0037D344  38 80 00 10 */	li r4, 0x10
+/* 803816A8 0037D348  38 A0 00 0E */	li r5, 0xe
+/* 803816AC 0037D34C  48 00 08 F9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803816B0 0037D350  54 60 10 3A */	slwi r0, r3, 2
+/* 803816B4 0037D354  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 803816B8 0037D358  7C 7F 02 14 */	add r3, r31, r0
+/* 803816BC 0037D35C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803816C0 0037D360  4B FF C8 E1 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803816C4 0037D364  7F E3 FB 78 */	mr r3, r31
+/* 803816C8 0037D368  38 80 00 0D */	li r4, 0xd
+/* 803816CC 0037D36C  48 00 14 D5 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+lbl_803816D0:
+/* 803816D0 0037D370  C3 E2 A6 84 */	lfs f31, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 803816D4 0037D374  7F FE FB 78 */	mr r30, r31
+/* 803816D8 0037D378  3B A0 00 00 */	li r29, 0
+lbl_803816DC:
+/* 803816DC 0037D37C  7F E3 FB 78 */	mr r3, r31
+/* 803816E0 0037D380  7F A4 EB 78 */	mr r4, r29
+/* 803816E4 0037D384  4B FF C8 FD */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803816E8 0037D388  48 00 20 F1 */	bl "startMotor__Q210homebutton10ControllerFv"
+/* 803816EC 0037D38C  D3 FE 01 C0 */	stfs f31, 0x1c0(r30)
+/* 803816F0 0037D390  3B BD 00 01 */	addi r29, r29, 1
+/* 803816F4 0037D394  2C 1D 00 04 */	cmpwi r29, 4
+/* 803816F8 0037D398  D3 FE 01 D0 */	stfs f31, 0x1d0(r30)
+/* 803816FC 0037D39C  3B DE 00 04 */	addi r30, r30, 4
+/* 80381700 0037D3A0  41 80 FF DC */	blt lbl_803816DC
+/* 80381704 0037D3A4  38 00 00 09 */	li r0, 9
+/* 80381708 0037D3A8  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 8038170C 0037D3AC  48 00 02 58 */	b lbl_80381964
+/* 80381710 0037D3B0  88 1F 00 84 */	lbz r0, 0x84(r31)
+/* 80381714 0037D3B4  2C 00 00 00 */	cmpwi r0, 0
+/* 80381718 0037D3B8  41 82 00 6C */	beq lbl_80381784
+/* 8038171C 0037D3BC  38 00 00 00 */	li r0, 0
+/* 80381720 0037D3C0  7F E3 FB 78 */	mr r3, r31
+/* 80381724 0037D3C4  98 1F 00 84 */	stb r0, 0x84(r31)
+/* 80381728 0037D3C8  38 80 00 00 */	li r4, 0
+/* 8038172C 0037D3CC  48 00 0B 15 */	bl "setVibFlag__Q210homebutton10HomeButtonFb"
+/* 80381730 0037D3D0  7F E3 FB 78 */	mr r3, r31
+/* 80381734 0037D3D4  38 80 00 0E */	li r4, 0xe
+/* 80381738 0037D3D8  38 A0 00 06 */	li r5, 6
+/* 8038173C 0037D3DC  48 00 08 69 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381740 0037D3E0  54 60 10 3A */	slwi r0, r3, 2
+/* 80381744 0037D3E4  7C 7F 02 14 */	add r3, r31, r0
+/* 80381748 0037D3E8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8038174C 0037D3EC  4B FF C8 55 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381750 0037D3F0  7F E3 FB 78 */	mr r3, r31
+/* 80381754 0037D3F4  38 80 00 0D */	li r4, 0xd
+/* 80381758 0037D3F8  38 A0 00 08 */	li r5, 8
+/* 8038175C 0037D3FC  48 00 08 49 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381760 0037D400  54 60 10 3A */	slwi r0, r3, 2
+/* 80381764 0037D404  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 80381768 0037D408  7C 7F 02 14 */	add r3, r31, r0
+/* 8038176C 0037D40C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381770 0037D410  4B FF C8 31 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381774 0037D414  7F E3 FB 78 */	mr r3, r31
+/* 80381778 0037D418  38 80 00 0F */	li r4, 0xf
+/* 8038177C 0037D41C  48 00 14 25 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381780 0037D420  48 00 00 10 */	b lbl_80381790
+lbl_80381784:
+/* 80381784 0037D424  7F E3 FB 78 */	mr r3, r31
+/* 80381788 0037D428  38 80 00 0D */	li r4, 0xd
+/* 8038178C 0037D42C  48 00 14 15 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+lbl_80381790:
+/* 80381790 0037D430  38 00 00 09 */	li r0, 9
+/* 80381794 0037D434  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 80381798 0037D438  48 00 01 CC */	b lbl_80381964
+/* 8038179C 0037D43C  7F E3 FB 78 */	mr r3, r31
+/* 803817A0 0037D440  38 80 00 0F */	li r4, 0xf
+/* 803817A4 0037D444  38 A0 00 05 */	li r5, 5
+/* 803817A8 0037D448  48 00 07 FD */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803817AC 0037D44C  54 60 10 3A */	slwi r0, r3, 2
+/* 803817B0 0037D450  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 803817B4 0037D454  7C 7F 02 14 */	add r3, r31, r0
+/* 803817B8 0037D458  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803817BC 0037D45C  4B FF C7 E5 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803817C0 0037D460  38 00 00 03 */	li r0, 3
+/* 803817C4 0037D464  7F E3 FB 78 */	mr r3, r31
+/* 803817C8 0037D468  90 1F 00 10 */	stw r0, 0x10(r31)
+/* 803817CC 0037D46C  38 80 00 01 */	li r4, 1
+/* 803817D0 0037D470  48 00 01 C1 */	bl "setReassignedFlag__Q210homebutton10HomeButtonFb"
+/* 803817D4 0037D474  C3 E2 A6 84 */	lfs f31, lbl_805DB8A4-_SDA2_BASE_(r2)
+/* 803817D8 0037D478  7F FE FB 78 */	mr r30, r31
+/* 803817DC 0037D47C  3B A0 00 00 */	li r29, 0
+lbl_803817E0:
+/* 803817E0 0037D480  D3 FE 01 C0 */	stfs f31, 0x1c0(r30)
+/* 803817E4 0037D484  7F E3 FB 78 */	mr r3, r31
+/* 803817E8 0037D488  7F A4 EB 78 */	mr r4, r29
+/* 803817EC 0037D48C  D3 FE 01 D0 */	stfs f31, 0x1d0(r30)
+/* 803817F0 0037D490  4B FF C7 F1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 803817F4 0037D494  48 00 20 59 */	bl "stopMotor__Q210homebutton10ControllerFv"
+/* 803817F8 0037D498  7F E3 FB 78 */	mr r3, r31
+/* 803817FC 0037D49C  7F A4 EB 78 */	mr r4, r29
+/* 80381800 0037D4A0  4B FF C7 E1 */	bl "getController__Q210homebutton10HomeButtonFi"
+/* 80381804 0037D4A4  38 80 00 00 */	li r4, 0
+/* 80381808 0037D4A8  4B FF D9 F9 */	bl "setEnableRumble__Q210homebutton10ControllerFb"
+/* 8038180C 0037D4AC  3B BD 00 01 */	addi r29, r29, 1
+/* 80381810 0037D4B0  3B DE 00 04 */	addi r30, r30, 4
+/* 80381814 0037D4B4  2C 1D 00 04 */	cmpwi r29, 4
+/* 80381818 0037D4B8  41 80 FF C8 */	blt lbl_803817E0
+/* 8038181C 0037D4BC  4B FF AE AD */	bl "getInstance__Q210homebutton10HomeButtonFv"
+/* 80381820 0037D4C0  4B FF A8 2D */	bl "getHBMDataInfo__Q210homebutton10HomeButtonFv"
+/* 80381824 0037D4C4  C0 23 00 30 */	lfs f1, 0x30(r3)
+/* 80381828 0037D4C8  C0 02 A6 A0 */	lfs f0, lbl_805DB8C0-_SDA2_BASE_(r2)
+/* 8038182C 0037D4CC  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 80381830 0037D4D0  EC 00 08 24 */	fdivs f0, f0, f1
+/* 80381834 0037D4D4  FC 00 00 1E */	fctiwz f0, f0
+/* 80381838 0037D4D8  D8 01 00 18 */	stfd f0, 0x18(r1)
+/* 8038183C 0037D4DC  80 01 00 1C */	lwz r0, 0x1c(r1)
+/* 80381840 0037D4E0  90 1F 01 E0 */	stw r0, 0x1e0(r31)
+/* 80381844 0037D4E4  4B FF BD AD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80381848 0037D4E8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8038184C 0037D4EC  3F C0 80 47 */	lis r30, "scFuncTextPaneName__Q210homebutton10HomeButton"@ha
+/* 80381850 0037D4F0  80 9E 8C 6C */	lwz r4, "scFuncTextPaneName__Q210homebutton10HomeButton"@l(r30)
+/* 80381854 0037D4F4  38 A0 00 01 */	li r5, 1
+/* 80381858 0037D4F8  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 8038185C 0037D4FC  7D 89 03 A6 */	mtctr r12
+/* 80381860 0037D500  4E 80 04 21 */	bctrl 
+/* 80381864 0037D504  38 80 00 01 */	li r4, 1
+/* 80381868 0037D508  4B FF C4 35 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 8038186C 0037D50C  80 7F 01 E8 */	lwz r3, 0x1e8(r31)
+/* 80381870 0037D510  4B FF BD 81 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80381874 0037D514  81 83 00 00 */	lwz r12, 0(r3)
+/* 80381878 0037D518  38 9E 8C 6C */	addi r4, r30, -29588
+/* 8038187C 0037D51C  80 84 00 04 */	lwz r4, 4(r4)
+/* 80381880 0037D520  38 A0 00 01 */	li r5, 1
+/* 80381884 0037D524  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 80381888 0037D528  7D 89 03 A6 */	mtctr r12
+/* 8038188C 0037D52C  4E 80 04 21 */	bctrl 
+/* 80381890 0037D530  38 80 00 01 */	li r4, 1
+/* 80381894 0037D534  4B FF C4 09 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 80381898 0037D538  7F E3 FB 78 */	mr r3, r31
+/* 8038189C 0037D53C  38 80 00 05 */	li r4, 5
+/* 803818A0 0037D540  48 00 13 01 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803818A4 0037D544  7F E3 FB 78 */	mr r3, r31
+/* 803818A8 0037D548  38 80 00 10 */	li r4, 0x10
+/* 803818AC 0037D54C  48 00 12 F5 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 803818B0 0037D550  48 00 00 B4 */	b lbl_80381964
+/* 803818B4 0037D554  7F E3 FB 78 */	mr r3, r31
+/* 803818B8 0037D558  38 80 00 13 */	li r4, 0x13
+/* 803818BC 0037D55C  38 A0 00 0D */	li r5, 0xd
+/* 803818C0 0037D560  48 00 06 E5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 803818C4 0037D564  54 60 10 3A */	slwi r0, r3, 2
+/* 803818C8 0037D568  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 803818CC 0037D56C  7C 7F 02 14 */	add r3, r31, r0
+/* 803818D0 0037D570  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 803818D4 0037D574  4B FF C6 CD */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803818D8 0037D578  80 9F 00 B0 */	lwz r4, 0xb0(r31)
+/* 803818DC 0037D57C  38 60 00 0D */	li r3, 0xd
+/* 803818E0 0037D580  38 00 00 00 */	li r0, 0
+/* 803818E4 0037D584  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 803818E8 0037D588  2C 04 00 01 */	cmpwi r4, 1
+/* 803818EC 0037D58C  90 1F 00 00 */	stw r0, 0(r31)
+/* 803818F0 0037D590  40 82 00 14 */	bne lbl_80381904
+/* 803818F4 0037D594  7F E3 FB 78 */	mr r3, r31
+/* 803818F8 0037D598  38 80 00 02 */	li r4, 2
+/* 803818FC 0037D59C  48 00 12 A5 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381900 0037D5A0  48 00 00 64 */	b lbl_80381964
+lbl_80381904:
+/* 80381904 0037D5A4  2C 04 00 02 */	cmpwi r4, 2
+/* 80381908 0037D5A8  40 82 00 5C */	bne lbl_80381964
+/* 8038190C 0037D5AC  7F E3 FB 78 */	mr r3, r31
+/* 80381910 0037D5B0  38 80 00 03 */	li r4, 3
+/* 80381914 0037D5B4  48 00 12 8D */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80381918 0037D5B8  48 00 00 4C */	b lbl_80381964
+/* 8038191C 0037D5BC  7F E3 FB 78 */	mr r3, r31
+/* 80381920 0037D5C0  38 80 00 14 */	li r4, 0x14
+/* 80381924 0037D5C4  38 A0 00 0D */	li r5, 0xd
+/* 80381928 0037D5C8  48 00 06 7D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 8038192C 0037D5CC  54 60 10 3A */	slwi r0, r3, 2
+/* 80381930 0037D5D0  90 7F 00 14 */	stw r3, 0x14(r31)
+/* 80381934 0037D5D4  7C 7F 02 14 */	add r3, r31, r0
+/* 80381938 0037D5D8  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 8038193C 0037D5DC  4B FF C6 65 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381940 0037D5E0  38 60 00 0D */	li r3, 0xd
+/* 80381944 0037D5E4  38 A0 FF FF */	li r5, -1
+/* 80381948 0037D5E8  38 00 00 00 */	li r0, 0
+/* 8038194C 0037D5EC  90 7F 00 10 */	stw r3, 0x10(r31)
+/* 80381950 0037D5F0  7F E3 FB 78 */	mr r3, r31
+/* 80381954 0037D5F4  38 80 00 06 */	li r4, 6
+/* 80381958 0037D5F8  90 BF 00 B0 */	stw r5, 0xb0(r31)
+/* 8038195C 0037D5FC  90 1F 00 00 */	stw r0, 0(r31)
+/* 80381960 0037D600  48 00 12 41 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+lbl_80381964:
+/* 80381964 0037D604  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
+/* 80381968 0037D608  CB E1 00 40 */	lfd f31, 0x40(r1)
+/* 8038196C 0037D60C  E3 C1 00 38 */	psq_l f30, 56(r1), 0, qr0
+/* 80381970 0037D610  CB C1 00 30 */	lfd f30, 0x30(r1)
+/* 80381974 0037D614  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80381978 0037D618  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8038197C 0037D61C  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 80381980 0037D620  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80381984 0037D624  7C 08 03 A6 */	mtlr r0
+/* 80381988 0037D628  38 21 00 50 */	addi r1, r1, 0x50
+/* 8038198C 0037D62C  4E 80 00 20 */	blr 
+
+.global "setReassignedFlag__Q210homebutton10HomeButtonFb"
+"setReassignedFlag__Q210homebutton10HomeButtonFb":
+/* 80381990 0037D630  98 83 00 88 */	stb r4, 0x88(r3)
+/* 80381994 0037D634  4E 80 00 20 */	blr 
+
+.global "reset_btn__Q210homebutton10HomeButtonFv"
+"reset_btn__Q210homebutton10HomeButtonFv":
+/* 80381998 0037D638  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8038199C 0037D63C  7C 08 02 A6 */	mflr r0
+/* 803819A0 0037D640  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803819A4 0037D644  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803819A8 0037D648  7C 7F 1B 78 */	mr r31, r3
+/* 803819AC 0037D64C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803819B0 0037D650  3B C0 00 00 */	li r30, 0
+/* 803819B4 0037D654  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803819B8 0037D658  7F FD FB 78 */	mr r29, r31
+/* 803819BC 0037D65C  93 81 00 10 */	stw r28, 0x10(r1)
+/* 803819C0 0037D660  3B 80 00 00 */	li r28, 0
+/* 803819C4 0037D664  48 00 00 3C */	b lbl_80381A00
+lbl_803819C8:
+/* 803819C8 0037D668  80 1D 00 1C */	lwz r0, 0x1c(r29)
+/* 803819CC 0037D66C  2C 00 00 00 */	cmpwi r0, 0
+/* 803819D0 0037D670  41 82 00 28 */	beq lbl_803819F8
+/* 803819D4 0037D674  7F E3 FB 78 */	mr r3, r31
+/* 803819D8 0037D678  7F 84 E3 78 */	mr r4, r28
+/* 803819DC 0037D67C  38 A0 00 02 */	li r5, 2
+/* 803819E0 0037D680  48 00 05 7D */	bl "findAnimator__Q210homebutton10HomeButtonFii"
+/* 803819E4 0037D684  54 60 10 3A */	slwi r0, r3, 2
+/* 803819E8 0037D688  7C 7F 02 14 */	add r3, r31, r0
+/* 803819EC 0037D68C  80 63 02 70 */	lwz r3, 0x270(r3)
+/* 803819F0 0037D690  4B FF C5 B1 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 803819F4 0037D694  93 DD 00 1C */	stw r30, 0x1c(r29)
+lbl_803819F8:
+/* 803819F8 0037D698  3B BD 00 04 */	addi r29, r29, 4
+/* 803819FC 0037D69C  3B 9C 00 01 */	addi r28, r28, 1
+lbl_80381A00:
+/* 80381A00 0037D6A0  80 1F 00 08 */	lwz r0, 8(r31)
+/* 80381A04 0037D6A4  7C 1C 00 00 */	cmpw r28, r0
+/* 80381A08 0037D6A8  41 80 FF C0 */	blt lbl_803819C8
+/* 80381A0C 0037D6AC  54 00 10 3A */	slwi r0, r0, 2
+/* 80381A10 0037D6B0  7C 7F 02 14 */	add r3, r31, r0
+/* 80381A14 0037D6B4  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 80381A18 0037D6B8  2C 00 00 00 */	cmpwi r0, 0
+/* 80381A1C 0037D6BC  41 82 00 24 */	beq lbl_80381A40
+/* 80381A20 0037D6C0  80 7F 03 F8 */	lwz r3, 0x3f8(r31)
+/* 80381A24 0037D6C4  4B FF C5 7D */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381A28 0037D6C8  80 7F 00 08 */	lwz r3, 8(r31)
+/* 80381A2C 0037D6CC  38 80 00 00 */	li r4, 0
+/* 80381A30 0037D6D0  38 03 00 01 */	addi r0, r3, 1
+/* 80381A34 0037D6D4  54 00 10 3A */	slwi r0, r0, 2
+/* 80381A38 0037D6D8  7C 7F 02 14 */	add r3, r31, r0
+/* 80381A3C 0037D6DC  90 83 00 1C */	stw r4, 0x1c(r3)
+lbl_80381A40:
+/* 80381A40 0037D6E0  80 7F 00 08 */	lwz r3, 8(r31)
+/* 80381A44 0037D6E4  38 03 00 01 */	addi r0, r3, 1
+/* 80381A48 0037D6E8  54 00 10 3A */	slwi r0, r0, 2
+/* 80381A4C 0037D6EC  7C 7F 02 14 */	add r3, r31, r0
+/* 80381A50 0037D6F0  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 80381A54 0037D6F4  2C 00 00 00 */	cmpwi r0, 0
+/* 80381A58 0037D6F8  41 82 00 88 */	beq lbl_80381AE0
+/* 80381A5C 0037D6FC  80 1F 00 00 */	lwz r0, 0(r31)
+/* 80381A60 0037D700  2C 00 00 01 */	cmpwi r0, 1
+/* 80381A64 0037D704  40 82 00 48 */	bne lbl_80381AAC
+/* 80381A68 0037D708  80 1F 00 18 */	lwz r0, 0x18(r31)
+/* 80381A6C 0037D70C  2C 00 00 00 */	cmpwi r0, 0
+/* 80381A70 0037D710  40 82 00 70 */	bne lbl_80381AE0
+/* 80381A74 0037D714  7F E3 FB 78 */	mr r3, r31
+/* 80381A78 0037D718  38 80 00 05 */	li r4, 5
+/* 80381A7C 0037D71C  38 A0 00 14 */	li r5, 0x14
+/* 80381A80 0037D720  48 00 05 25 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381A84 0037D724  54 60 10 3A */	slwi r0, r3, 2
+/* 80381A88 0037D728  7C 7F 02 14 */	add r3, r31, r0
+/* 80381A8C 0037D72C  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381A90 0037D730  4B FF C5 11 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381A94 0037D734  80 1F 00 08 */	lwz r0, 8(r31)
+/* 80381A98 0037D738  38 80 00 00 */	li r4, 0
+/* 80381A9C 0037D73C  54 00 10 3A */	slwi r0, r0, 2
+/* 80381AA0 0037D740  7C 7F 02 14 */	add r3, r31, r0
+/* 80381AA4 0037D744  90 83 00 1C */	stw r4, 0x1c(r3)
+/* 80381AA8 0037D748  48 00 00 38 */	b lbl_80381AE0
+lbl_80381AAC:
+/* 80381AAC 0037D74C  7F E3 FB 78 */	mr r3, r31
+/* 80381AB0 0037D750  38 80 00 05 */	li r4, 5
+/* 80381AB4 0037D754  38 A0 00 03 */	li r5, 3
+/* 80381AB8 0037D758  48 00 04 ED */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381ABC 0037D75C  54 60 10 3A */	slwi r0, r3, 2
+/* 80381AC0 0037D760  7C 7F 02 14 */	add r3, r31, r0
+/* 80381AC4 0037D764  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381AC8 0037D768  4B FF C4 D9 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381ACC 0037D76C  80 1F 00 08 */	lwz r0, 8(r31)
+/* 80381AD0 0037D770  38 80 00 00 */	li r4, 0
+/* 80381AD4 0037D774  54 00 10 3A */	slwi r0, r0, 2
+/* 80381AD8 0037D778  7C 7F 02 14 */	add r3, r31, r0
+/* 80381ADC 0037D77C  90 83 00 1C */	stw r4, 0x1c(r3)
+lbl_80381AE0:
+/* 80381AE0 0037D780  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80381AE4 0037D784  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80381AE8 0037D788  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80381AEC 0037D78C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80381AF0 0037D790  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80381AF4 0037D794  7C 08 03 A6 */	mtlr r0
+/* 80381AF8 0037D798  38 21 00 20 */	addi r1, r1, 0x20
+/* 80381AFC 0037D79C  4E 80 00 20 */	blr 
+
+.global "reset_control__Q210homebutton10HomeButtonFv"
+"reset_control__Q210homebutton10HomeButtonFv":
+/* 80381B00 0037D7A0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80381B04 0037D7A4  7C 08 02 A6 */	mflr r0
+/* 80381B08 0037D7A8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80381B0C 0037D7AC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80381B10 0037D7B0  3B E0 00 00 */	li r31, 0
+/* 80381B14 0037D7B4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80381B18 0037D7B8  7C 7E 1B 78 */	mr r30, r3
+lbl_80381B1C:
+/* 80381B1C 0037D7BC  7F C3 F3 78 */	mr r3, r30
+/* 80381B20 0037D7C0  38 9F 00 06 */	addi r4, r31, 6
+/* 80381B24 0037D7C4  38 A0 00 07 */	li r5, 7
+/* 80381B28 0037D7C8  48 00 04 7D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381B2C 0037D7CC  54 60 10 3A */	slwi r0, r3, 2
+/* 80381B30 0037D7D0  7C 7E 02 14 */	add r3, r30, r0
+/* 80381B34 0037D7D4  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381B38 0037D7D8  4B FF C4 69 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381B3C 0037D7DC  3B FF 00 01 */	addi r31, r31, 1
+/* 80381B40 0037D7E0  2C 1F 00 05 */	cmpwi r31, 5
+/* 80381B44 0037D7E4  41 80 FF D8 */	blt lbl_80381B1C
+/* 80381B48 0037D7E8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80381B4C 0037D7EC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80381B50 0037D7F0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80381B54 0037D7F4  7C 08 03 A6 */	mtlr r0
+/* 80381B58 0037D7F8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80381B5C 0037D7FC  4E 80 00 20 */	blr 
+
+.global "reset_window__Q210homebutton10HomeButtonFv"
+"reset_window__Q210homebutton10HomeButtonFv":
+/* 80381B60 0037D800  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80381B64 0037D804  7C 08 02 A6 */	mflr r0
+/* 80381B68 0037D808  38 80 00 11 */	li r4, 0x11
+/* 80381B6C 0037D80C  38 A0 00 0C */	li r5, 0xc
+/* 80381B70 0037D810  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80381B74 0037D814  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80381B78 0037D818  7C 7F 1B 78 */	mr r31, r3
+/* 80381B7C 0037D81C  48 00 04 29 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381B80 0037D820  54 60 10 3A */	slwi r0, r3, 2
+/* 80381B84 0037D824  7C 7F 02 14 */	add r3, r31, r0
+/* 80381B88 0037D828  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381B8C 0037D82C  4B FF C4 15 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381B90 0037D830  7F E3 FB 78 */	mr r3, r31
+/* 80381B94 0037D834  38 80 00 12 */	li r4, 0x12
+/* 80381B98 0037D838  38 A0 00 0C */	li r5, 0xc
+/* 80381B9C 0037D83C  48 00 04 09 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381BA0 0037D840  54 60 10 3A */	slwi r0, r3, 2
+/* 80381BA4 0037D844  7C 7F 02 14 */	add r3, r31, r0
+/* 80381BA8 0037D848  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381BAC 0037D84C  4B FF C3 F5 */	bl "start__Q210homebutton15FrameControllerFv"
+/* 80381BB0 0037D850  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80381BB4 0037D854  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80381BB8 0037D858  7C 08 03 A6 */	mtlr r0
+/* 80381BBC 0037D85C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80381BC0 0037D860  4E 80 00 20 */	blr 
+
+.global "reset_battery__Q210homebutton10HomeButtonFv"
+"reset_battery__Q210homebutton10HomeButtonFv":
+/* 80381BC4 0037D864  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80381BC8 0037D868  7C 08 02 A6 */	mflr r0
+/* 80381BCC 0037D86C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80381BD0 0037D870  39 61 00 20 */	addi r11, r1, 0x20
+/* 80381BD4 0037D874  48 08 D7 A1 */	bl "_savegpr_27"
+/* 80381BD8 0037D878  3F E0 80 47 */	lis r31, "scBatteryPaneName__Q210homebutton10HomeButton"@ha
+/* 80381BDC 0037D87C  7C 7B 1B 78 */	mr r27, r3
+/* 80381BE0 0037D880  3B FF 8D 78 */	addi r31, r31, "scBatteryPaneName__Q210homebutton10HomeButton"@l
+/* 80381BE4 0037D884  3B A0 00 00 */	li r29, 0
+lbl_80381BE8:
+/* 80381BE8 0037D888  7F FE FB 78 */	mr r30, r31
+/* 80381BEC 0037D88C  3B 80 00 00 */	li r28, 0
+lbl_80381BF0:
+/* 80381BF0 0037D890  80 7B 01 E8 */	lwz r3, 0x1e8(r27)
+/* 80381BF4 0037D894  4B FF B9 FD */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80381BF8 0037D898  81 83 00 00 */	lwz r12, 0(r3)
+/* 80381BFC 0037D89C  38 A0 00 01 */	li r5, 1
+/* 80381C00 0037D8A0  80 9E 00 00 */	lwz r4, 0(r30)
+/* 80381C04 0037D8A4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 80381C08 0037D8A8  7D 89 03 A6 */	mtctr r12
+/* 80381C0C 0037D8AC  4E 80 04 21 */	bctrl 
+/* 80381C10 0037D8B0  38 80 00 00 */	li r4, 0
+/* 80381C14 0037D8B4  4B FF C0 89 */	bl "SetVisible__Q36nw4hbm3lyt4PaneFb"
+/* 80381C18 0037D8B8  3B 9C 00 01 */	addi r28, r28, 1
+/* 80381C1C 0037D8BC  3B DE 00 04 */	addi r30, r30, 4
+/* 80381C20 0037D8C0  2C 1C 00 04 */	cmpwi r28, 4
+/* 80381C24 0037D8C4  41 80 FF CC */	blt lbl_80381BF0
+/* 80381C28 0037D8C8  3B BD 00 01 */	addi r29, r29, 1
+/* 80381C2C 0037D8CC  3B FF 00 10 */	addi r31, r31, 0x10
+/* 80381C30 0037D8D0  2C 1D 00 04 */	cmpwi r29, 4
+/* 80381C34 0037D8D4  41 80 FF B4 */	blt lbl_80381BE8
+/* 80381C38 0037D8D8  39 61 00 20 */	addi r11, r1, 0x20
+/* 80381C3C 0037D8DC  48 08 D7 85 */	bl "_restgpr_27"
+/* 80381C40 0037D8E0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80381C44 0037D8E4  7C 08 03 A6 */	mtlr r0
+/* 80381C48 0037D8E8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80381C4C 0037D8EC  4E 80 00 20 */	blr 
+
+.global "reset_guiManager__Q210homebutton10HomeButtonFi"
+"reset_guiManager__Q210homebutton10HomeButtonFi":
+/* 80381C50 0037D8F0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80381C54 0037D8F4  7C 08 02 A6 */	mflr r0
+/* 80381C58 0037D8F8  2C 04 00 00 */	cmpwi r4, 0
+/* 80381C5C 0037D8FC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80381C60 0037D900  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80381C64 0037D904  93 C1 00 08 */	stw r30, 8(r1)
+/* 80381C68 0037D908  7C 7E 1B 78 */	mr r30, r3
+/* 80381C6C 0037D90C  40 80 00 48 */	bge lbl_80381CB4
+/* 80381C70 0037D910  3B E0 00 00 */	li r31, 0
+lbl_80381C74:
+/* 80381C74 0037D914  80 7E 02 00 */	lwz r3, 0x200(r30)
+/* 80381C78 0037D918  7F E4 FB 78 */	mr r4, r31
+/* 80381C7C 0037D91C  C0 22 A6 DC */	lfs f1, lbl_805DB8FC-_SDA2_BASE_(r2)
+/* 80381C80 0037D920  38 A0 00 00 */	li r5, 0
+/* 80381C84 0037D924  81 83 00 00 */	lwz r12, 0(r3)
+/* 80381C88 0037D928  38 C0 00 00 */	li r6, 0
+/* 80381C8C 0037D92C  FC 40 08 90 */	fmr f2, f1
+/* 80381C90 0037D930  38 E0 00 00 */	li r7, 0
+/* 80381C94 0037D934  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 80381C98 0037D938  39 00 00 00 */	li r8, 0
+/* 80381C9C 0037D93C  7D 89 03 A6 */	mtctr r12
+/* 80381CA0 0037D940  4E 80 04 21 */	bctrl 
+/* 80381CA4 0037D944  3B FF 00 01 */	addi r31, r31, 1
+/* 80381CA8 0037D948  2C 1F 00 08 */	cmpwi r31, 8
+/* 80381CAC 0037D94C  41 80 FF C8 */	blt lbl_80381C74
+/* 80381CB0 0037D950  48 00 00 30 */	b lbl_80381CE0
+lbl_80381CB4:
+/* 80381CB4 0037D954  80 63 02 00 */	lwz r3, 0x200(r3)
+/* 80381CB8 0037D958  38 A0 00 00 */	li r5, 0
+/* 80381CBC 0037D95C  C0 22 A6 DC */	lfs f1, lbl_805DB8FC-_SDA2_BASE_(r2)
+/* 80381CC0 0037D960  38 C0 00 00 */	li r6, 0
+/* 80381CC4 0037D964  81 83 00 00 */	lwz r12, 0(r3)
+/* 80381CC8 0037D968  38 E0 00 00 */	li r7, 0
+/* 80381CCC 0037D96C  FC 40 08 90 */	fmr f2, f1
+/* 80381CD0 0037D970  39 00 00 00 */	li r8, 0
+/* 80381CD4 0037D974  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 80381CD8 0037D978  7D 89 03 A6 */	mtctr r12
+/* 80381CDC 0037D97C  4E 80 04 21 */	bctrl 
+lbl_80381CE0:
+/* 80381CE0 0037D980  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80381CE4 0037D984  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80381CE8 0037D988  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80381CEC 0037D98C  7C 08 03 A6 */	mtlr r0
+/* 80381CF0 0037D990  38 21 00 10 */	addi r1, r1, 0x10
+/* 80381CF4 0037D994  4E 80 00 20 */	blr 
+
+.global "isActive__Q210homebutton10HomeButtonCFv"
+"isActive__Q210homebutton10HomeButtonCFv":
+/* 80381CF8 0037D998  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 80381CFC 0037D99C  38 03 FF FE */	addi r0, r3, -2
+/* 80381D00 0037D9A0  7C 00 00 34 */	cntlzw r0, r0
+/* 80381D04 0037D9A4  54 03 D9 7E */	srwi r3, r0, 5
+/* 80381D08 0037D9A8  4E 80 00 20 */	blr 
+
+.global "isUpBarActive__Q210homebutton10HomeButtonCFv"
+"isUpBarActive__Q210homebutton10HomeButtonCFv":
+/* 80381D0C 0037D9AC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80381D10 0037D9B0  7C 08 02 A6 */	mflr r0
+/* 80381D14 0037D9B4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80381D18 0037D9B8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80381D1C 0037D9BC  3B E0 00 01 */	li r31, 1
+/* 80381D20 0037D9C0  93 C1 00 08 */	stw r30, 8(r1)
+/* 80381D24 0037D9C4  7C 7E 1B 78 */	mr r30, r3
+/* 80381D28 0037D9C8  4B FF FF D1 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 80381D2C 0037D9CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80381D30 0037D9D0  41 82 00 24 */	beq lbl_80381D54
+/* 80381D34 0037D9D4  80 7E 03 F8 */	lwz r3, 0x3f8(r30)
+/* 80381D38 0037D9D8  4B FF D4 D1 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381D3C 0037D9DC  2C 03 00 00 */	cmpwi r3, 0
+/* 80381D40 0037D9E0  40 82 00 14 */	bne lbl_80381D54
+/* 80381D44 0037D9E4  80 7E 03 D4 */	lwz r3, 0x3d4(r30)
+/* 80381D48 0037D9E8  4B FF D4 C1 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381D4C 0037D9EC  2C 03 00 00 */	cmpwi r3, 0
+/* 80381D50 0037D9F0  41 82 00 08 */	beq lbl_80381D58
+lbl_80381D54:
+/* 80381D54 0037D9F4  3B E0 00 00 */	li r31, 0
+lbl_80381D58:
+/* 80381D58 0037D9F8  7F E3 FB 78 */	mr r3, r31
+/* 80381D5C 0037D9FC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80381D60 0037DA00  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80381D64 0037DA04  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80381D68 0037DA08  7C 08 03 A6 */	mtlr r0
+/* 80381D6C 0037DA0C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80381D70 0037DA10  4E 80 00 20 */	blr 
+
+.global "isDownBarActive__Q210homebutton10HomeButtonFv"
+"isDownBarActive__Q210homebutton10HomeButtonFv":
+/* 80381D74 0037DA14  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80381D78 0037DA18  7C 08 02 A6 */	mflr r0
+/* 80381D7C 0037DA1C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80381D80 0037DA20  39 61 00 20 */	addi r11, r1, 0x20
+/* 80381D84 0037DA24  48 08 D5 ED */	bl "_savegpr_26"
+/* 80381D88 0037DA28  7C 7A 1B 78 */	mr r26, r3
+/* 80381D8C 0037DA2C  3B 60 00 01 */	li r27, 1
+/* 80381D90 0037DA30  38 80 00 04 */	li r4, 4
+/* 80381D94 0037DA34  38 A0 00 02 */	li r5, 2
+/* 80381D98 0037DA38  48 00 02 0D */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381D9C 0037DA3C  7C 7C 1B 78 */	mr r28, r3
+/* 80381DA0 0037DA40  7F 43 D3 78 */	mr r3, r26
+/* 80381DA4 0037DA44  38 80 00 05 */	li r4, 5
+/* 80381DA8 0037DA48  38 A0 00 03 */	li r5, 3
+/* 80381DAC 0037DA4C  48 00 01 F9 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381DB0 0037DA50  7C 7D 1B 78 */	mr r29, r3
+/* 80381DB4 0037DA54  7F 43 D3 78 */	mr r3, r26
+/* 80381DB8 0037DA58  38 80 00 04 */	li r4, 4
+/* 80381DBC 0037DA5C  38 A0 00 13 */	li r5, 0x13
+/* 80381DC0 0037DA60  48 00 01 E5 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381DC4 0037DA64  7C 7E 1B 78 */	mr r30, r3
+/* 80381DC8 0037DA68  7F 43 D3 78 */	mr r3, r26
+/* 80381DCC 0037DA6C  38 80 00 05 */	li r4, 5
+/* 80381DD0 0037DA70  38 A0 00 14 */	li r5, 0x14
+/* 80381DD4 0037DA74  48 00 01 D1 */	bl "findGroupAnimator__Q210homebutton10HomeButtonFii"
+/* 80381DD8 0037DA78  7C 7F 1B 78 */	mr r31, r3
+/* 80381DDC 0037DA7C  7F 43 D3 78 */	mr r3, r26
+/* 80381DE0 0037DA80  4B FF FF 19 */	bl "isActive__Q210homebutton10HomeButtonCFv"
+/* 80381DE4 0037DA84  2C 03 00 00 */	cmpwi r3, 0
+/* 80381DE8 0037DA88  41 82 00 64 */	beq lbl_80381E4C
+/* 80381DEC 0037DA8C  57 80 10 3A */	slwi r0, r28, 2
+/* 80381DF0 0037DA90  7C 7A 02 14 */	add r3, r26, r0
+/* 80381DF4 0037DA94  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381DF8 0037DA98  4B FF D4 11 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381DFC 0037DA9C  2C 03 00 00 */	cmpwi r3, 0
+/* 80381E00 0037DAA0  40 82 00 4C */	bne lbl_80381E4C
+/* 80381E04 0037DAA4  57 A0 10 3A */	slwi r0, r29, 2
+/* 80381E08 0037DAA8  7C 7A 02 14 */	add r3, r26, r0
+/* 80381E0C 0037DAAC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381E10 0037DAB0  4B FF D3 F9 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381E14 0037DAB4  2C 03 00 00 */	cmpwi r3, 0
+/* 80381E18 0037DAB8  40 82 00 34 */	bne lbl_80381E4C
+/* 80381E1C 0037DABC  57 C0 10 3A */	slwi r0, r30, 2
+/* 80381E20 0037DAC0  7C 7A 02 14 */	add r3, r26, r0
+/* 80381E24 0037DAC4  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381E28 0037DAC8  4B FF D3 E1 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381E2C 0037DACC  2C 03 00 00 */	cmpwi r3, 0
+/* 80381E30 0037DAD0  40 82 00 1C */	bne lbl_80381E4C
+/* 80381E34 0037DAD4  57 E0 10 3A */	slwi r0, r31, 2
+/* 80381E38 0037DAD8  7C 7A 02 14 */	add r3, r26, r0
+/* 80381E3C 0037DADC  80 63 02 A0 */	lwz r3, 0x2a0(r3)
+/* 80381E40 0037DAE0  4B FF D3 C9 */	bl "isPlaying__Q210homebutton15FrameControllerCFv"
+/* 80381E44 0037DAE4  2C 03 00 00 */	cmpwi r3, 0
+/* 80381E48 0037DAE8  41 82 00 08 */	beq lbl_80381E50
+lbl_80381E4C:
+/* 80381E4C 0037DAEC  3B 60 00 00 */	li r27, 0
+lbl_80381E50:
+/* 80381E50 0037DAF0  39 61 00 20 */	addi r11, r1, 0x20
+/* 80381E54 0037DAF4  7F 63 DB 78 */	mr r3, r27
+/* 80381E58 0037DAF8  48 08 D5 65 */	bl "_restgpr_26"
+/* 80381E5C 0037DAFC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80381E60 0037DB00  7C 08 03 A6 */	mtlr r0
+/* 80381E64 0037DB04  38 21 00 20 */	addi r1, r1, 0x20
+/* 80381E68 0037DB08  4E 80 00 20 */	blr 
+
+.global "getPaneNo__Q210homebutton10HomeButtonFPCc"
+"getPaneNo__Q210homebutton10HomeButtonFPCc":
+/* 80381E6C 0037DB0C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80381E70 0037DB10  7C 08 02 A6 */	mflr r0
+/* 80381E74 0037DB14  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80381E78 0037DB18  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80381E7C 0037DB1C  3B E0 FF FF */	li r31, -1
+/* 80381E80 0037DB20  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80381E84 0037DB24  3B C0 00 00 */	li r30, 0
+/* 80381E88 0037DB28  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80381E8C 0037DB2C  7C 9D 23 78 */	mr r29, r4
+/* 80381E90 0037DB30  93 81 00 10 */	stw r28, 0x10(r1)
+/* 80381E94 0037DB34  7C 7C 1B 78 */	mr r28, r3
+/* 80381E98 0037DB38  48 00 00 30 */	b lbl_80381EC8
+lbl_80381E9C:
+/* 80381E9C 0037DB3C  7F 83 E3 78 */	mr r3, r28
+/* 80381EA0 0037DB40  7F C4 F3 78 */	mr r4, r30
+/* 80381EA4 0037DB44  48 00 00 A5 */	bl "getPaneName__Q210homebutton10HomeButtonFi"
+/* 80381EA8 0037DB48  7C 64 1B 78 */	mr r4, r3
+/* 80381EAC 0037DB4C  7F A3 EB 78 */	mr r3, r29
+/* 80381EB0 0037DB50  48 08 67 3D */	bl "strcmp"
+/* 80381EB4 0037DB54  2C 03 00 00 */	cmpwi r3, 0
+/* 80381EB8 0037DB58  40 82 00 0C */	bne lbl_80381EC4
+/* 80381EBC 0037DB5C  7F DF F3 78 */	mr r31, r30
+/* 80381EC0 0037DB60  48 00 00 14 */	b lbl_80381ED4
+lbl_80381EC4:
+/* 80381EC4 0037DB64  3B DE 00 01 */	addi r30, r30, 1
+lbl_80381EC8:
+/* 80381EC8 0037DB68  80 1C 00 08 */	lwz r0, 8(r28)
+/* 80381ECC 0037DB6C  7C 1E 00 00 */	cmpw r30, r0
+/* 80381ED0 0037DB70  41 80 FF CC */	blt lbl_80381E9C
+lbl_80381ED4:
+/* 80381ED4 0037DB74  3B C0 00 00 */	li r30, 0
+lbl_80381ED8:
+/* 80381ED8 0037DB78  7F 83 E3 78 */	mr r3, r28
+/* 80381EDC 0037DB7C  7F C4 F3 78 */	mr r4, r30
+/* 80381EE0 0037DB80  48 00 00 55 */	bl "getFuncPaneName__Q210homebutton10HomeButtonFi"
+/* 80381EE4 0037DB84  7C 64 1B 78 */	mr r4, r3
+/* 80381EE8 0037DB88  7F A3 EB 78 */	mr r3, r29
+/* 80381EEC 0037DB8C  48 08 67 01 */	bl "strcmp"
+/* 80381EF0 0037DB90  2C 03 00 00 */	cmpwi r3, 0
+/* 80381EF4 0037DB94  40 82 00 10 */	bne lbl_80381F04
+/* 80381EF8 0037DB98  80 1C 00 08 */	lwz r0, 8(r28)
+/* 80381EFC 0037DB9C  7F FE 02 14 */	add r31, r30, r0
+/* 80381F00 0037DBA0  48 00 00 10 */	b lbl_80381F10
+lbl_80381F04:
+/* 80381F04 0037DBA4  3B DE 00 01 */	addi r30, r30, 1
+/* 80381F08 0037DBA8  2C 1E 00 0A */	cmpwi r30, 0xa
+/* 80381F0C 0037DBAC  41 80 FF CC */	blt lbl_80381ED8
+lbl_80381F10:
+/* 80381F10 0037DBB0  7F E3 FB 78 */	mr r3, r31
+/* 80381F14 0037DBB4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80381F18 0037DBB8  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80381F1C 0037DBBC  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80381F20 0037DBC0  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80381F24 0037DBC4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80381F28 0037DBC8  7C 08 03 A6 */	mtlr r0
+/* 80381F2C 0037DBCC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80381F30 0037DBD0  4E 80 00 20 */	blr 
+
+.global "getFuncPaneName__Q210homebutton10HomeButtonFi"
+"getFuncPaneName__Q210homebutton10HomeButtonFi":
+/* 80381F34 0037DBD4  3C 60 80 47 */	lis r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@ha
+/* 80381F38 0037DBD8  54 80 10 3A */	slwi r0, r4, 2
+/* 80381F3C 0037DBDC  38 63 8C 20 */	addi r3, r3, "scFuncTouchPaneName__Q210homebutton10HomeButton"@l
+/* 80381F40 0037DBE0  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80381F44 0037DBE4  4E 80 00 20 */	blr 
+
+.global "getPaneName__Q210homebutton10HomeButtonFi"
+"getPaneName__Q210homebutton10HomeButtonFi":
+/* 80381F48 0037DBE8  3C 60 80 47 */	lis r3, "scBtnName__Q210homebutton10HomeButton"@ha
+/* 80381F4C 0037DBEC  54 80 10 3A */	slwi r0, r4, 2
+/* 80381F50 0037DBF0  38 63 83 98 */	addi r3, r3, "scBtnName__Q210homebutton10HomeButton"@l
+/* 80381F54 0037DBF4  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80381F58 0037DBF8  4E 80 00 20 */	blr 
+
+.global "findAnimator__Q210homebutton10HomeButtonFii"
+"findAnimator__Q210homebutton10HomeButtonFii":
+/* 80381F5C 0037DBFC  80 03 00 0C */	lwz r0, 0xc(r3)
+/* 80381F60 0037DC00  3C C0 80 42 */	lis r6, "scAnmTable__10homebutton"@ha
+/* 80381F64 0037DC04  38 C6 CC 08 */	addi r6, r6, "scAnmTable__10homebutton"@l
+/* 80381F68 0037DC08  38 60 00 00 */	li r3, 0
+/* 80381F6C 0037DC0C  7C 09 03 A6 */	mtctr r0
+/* 80381F70 0037DC10  2C 00 00 00 */	cmpwi r0, 0
+/* 80381F74 0037DC14  40 81 00 28 */	ble lbl_80381F9C
+lbl_80381F78:
+/* 80381F78 0037DC18  80 06 00 00 */	lwz r0, 0(r6)
+/* 80381F7C 0037DC1C  7C 04 00 00 */	cmpw r4, r0
+/* 80381F80 0037DC20  40 82 00 10 */	bne lbl_80381F90
+/* 80381F84 0037DC24  80 06 00 04 */	lwz r0, 4(r6)
+/* 80381F88 0037DC28  7C 05 00 00 */	cmpw r5, r0
+/* 80381F8C 0037DC2C  4D 82 00 20 */	beqlr 
+lbl_80381F90:
+/* 80381F90 0037DC30  38 C6 00 08 */	addi r6, r6, 8
+/* 80381F94 0037DC34  38 63 00 01 */	addi r3, r3, 1
+/* 80381F98 0037DC38  42 00 FF E0 */	bdnz lbl_80381F78
+lbl_80381F9C:
+/* 80381F9C 0037DC3C  38 60 FF FF */	li r3, -1
+/* 80381FA0 0037DC40  4E 80 00 20 */	blr 
+
+.global "findGroupAnimator__Q210homebutton10HomeButtonFii"
+"findGroupAnimator__Q210homebutton10HomeButtonFii":
+/* 80381FA4 0037DC44  3C C0 80 42 */	lis r6, "scGroupAnmTable__10homebutton"@ha
+/* 80381FA8 0037DC48  38 00 00 25 */	li r0, 0x25
+/* 80381FAC 0037DC4C  38 C6 CC 68 */	addi r6, r6, "scGroupAnmTable__10homebutton"@l
+/* 80381FB0 0037DC50  38 60 00 00 */	li r3, 0
+/* 80381FB4 0037DC54  7C 09 03 A6 */	mtctr r0
+lbl_80381FB8:
+/* 80381FB8 0037DC58  80 06 00 00 */	lwz r0, 0(r6)
+/* 80381FBC 0037DC5C  7C 04 00 00 */	cmpw r4, r0
+/* 80381FC0 0037DC60  40 82 00 10 */	bne lbl_80381FD0
+/* 80381FC4 0037DC64  80 06 00 04 */	lwz r0, 4(r6)
+/* 80381FC8 0037DC68  7C 05 00 00 */	cmpw r5, r0
+/* 80381FCC 0037DC6C  4D 82 00 20 */	beqlr 
+lbl_80381FD0:
+/* 80381FD0 0037DC70  80 06 00 08 */	lwz r0, 8(r6)
+/* 80381FD4 0037DC74  38 63 00 01 */	addi r3, r3, 1
+/* 80381FD8 0037DC78  7C 04 00 00 */	cmpw r4, r0
+/* 80381FDC 0037DC7C  40 82 00 10 */	bne lbl_80381FEC
+/* 80381FE0 0037DC80  80 06 00 0C */	lwz r0, 0xc(r6)
+/* 80381FE4 0037DC84  7C 05 00 00 */	cmpw r5, r0
+/* 80381FE8 0037DC88  4D 82 00 20 */	beqlr 
+lbl_80381FEC:
+/* 80381FEC 0037DC8C  38 C6 00 10 */	addi r6, r6, 0x10
+/* 80381FF0 0037DC90  38 63 00 01 */	addi r3, r3, 1
+/* 80381FF4 0037DC94  42 00 FF C4 */	bdnz lbl_80381FB8
+/* 80381FF8 0037DC98  38 60 FF FF */	li r3, -1
+/* 80381FFC 0037DC9C  4E 80 00 20 */	blr 
+
+.global "getSelectBtnNum__Q210homebutton10HomeButtonFv"
+"getSelectBtnNum__Q210homebutton10HomeButtonFv":
+/* 80382000 0037DCA0  80 03 00 10 */	lwz r0, 0x10(r3)
+/* 80382004 0037DCA4  2C 00 00 12 */	cmpwi r0, 0x12
+/* 80382008 0037DCA8  41 82 00 0C */	beq lbl_80382014
+/* 8038200C 0037DCAC  38 60 FF FF */	li r3, -1
+/* 80382010 0037DCB0  4E 80 00 20 */	blr 
+lbl_80382014:
+/* 80382014 0037DCB4  80 63 00 B0 */	lwz r3, 0xb0(r3)
+/* 80382018 0037DCB8  4E 80 00 20 */	blr 
+
+.global "setForcusSE__Q210homebutton10HomeButtonFv"
+"setForcusSE__Q210homebutton10HomeButtonFv":
+/* 8038201C 0037DCBC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80382020 0037DCC0  7C 08 02 A6 */	mflr r0
+/* 80382024 0037DCC4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80382028 0037DCC8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8038202C 0037DCCC  7C 7F 1B 78 */	mr r31, r3
+/* 80382030 0037DCD0  80 03 00 64 */	lwz r0, 0x64(r3)
+/* 80382034 0037DCD4  2C 00 00 02 */	cmpwi r0, 2
+/* 80382038 0037DCD8  40 81 00 14 */	ble lbl_8038204C
+/* 8038203C 0037DCDC  38 80 00 04 */	li r4, 4
+/* 80382040 0037DCE0  48 00 0B 61 */	bl "play_sound__Q210homebutton10HomeButtonFi"
+/* 80382044 0037DCE4  38 00 00 00 */	li r0, 0
+/* 80382048 0037DCE8  90 1F 00 64 */	stw r0, 0x64(r31)
+lbl_8038204C:
+/* 8038204C 0037DCEC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80382050 0037DCF0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80382054 0037DCF4  7C 08 03 A6 */	mtlr r0
+/* 80382058 0037DCF8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8038205C 0037DCFC  4E 80 00 20 */	blr 
+
+.global "setAdjustFlag__Q210homebutton10HomeButtonFi"
+"setAdjustFlag__Q210homebutton10HomeButtonFi":
+/* 80382060 0037DD00  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80382064 0037DD04  7C 08 02 A6 */	mflr r0
+/* 80382068 0037DD08  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8038206C 0037DD0C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80382070 0037DD10  7C 9F 23 78 */	mr r31, r4
+/* 80382074 0037DD14  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80382078 0037DD18  7C 7E 1B 78 */	mr r30, r3
+/* 8038207C 0037DD1C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80382080 0037DD20  48 00 01 11 */	bl "__ct__Q36nw4hbm4math4VEC2Fv"
+/* 80382084 0037DD24  7C 1F 00 D0 */	neg r0, r31
+/* 80382088 0037DD28  38 7E 02 08 */	addi r3, r30, 0x208
+/* 8038208C 0037DD2C  7C 00 FB 78 */	or r0, r0, r31
+/* 80382090 0037DD30  54 04 0F FE */	srwi r4, r0, 0x1f
+/* 80382094 0037DD34  98 9E 00 87 */	stb r4, 0x87(r30)
+/* 80382098 0037DD38  4B FF B1 09 */	bl "SetLocationAdjust__Q36nw4hbm3lyt8DrawInfoFb"
+/* 8038209C 0037DD3C  88 1E 00 87 */	lbz r0, 0x87(r30)
+/* 803820A0 0037DD40  2C 00 00 00 */	cmpwi r0, 0
+/* 803820A4 0037DD44  41 82 00 6C */	beq lbl_80382110
+/* 803820A8 0037DD48  80 9E 00 04 */	lwz r4, 4(r30)
+/* 803820AC 0037DD4C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803820B0 0037DD50  C0 24 00 34 */	lfs f1, 0x34(r4)
+/* 803820B4 0037DD54  C0 44 00 38 */	lfs f2, 0x38(r4)
+/* 803820B8 0037DD58  4B FF B4 45 */	bl "__ct__Q36nw4hbm4math4VEC2Fff"
+/* 803820BC 0037DD5C  7C 64 1B 78 */	mr r4, r3
+/* 803820C0 0037DD60  38 61 00 18 */	addi r3, r1, 0x18
+/* 803820C4 0037DD64  4B FF B0 F5 */	bl "__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
+/* 803820C8 0037DD68  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 803820CC 0037DD6C  4B FF B5 25 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803820D0 0037DD70  38 81 00 18 */	addi r4, r1, 0x18
+/* 803820D4 0037DD74  4B FF B4 21 */	bl "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 803820D8 0037DD78  80 7E 00 04 */	lwz r3, 4(r30)
+/* 803820DC 0037DD7C  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 803820E0 0037DD80  2C 00 00 00 */	cmpwi r0, 0
+/* 803820E4 0037DD84  40 82 00 8C */	bne lbl_80382170
+/* 803820E8 0037DD88  3B E0 00 00 */	li r31, 0
+lbl_803820EC:
+/* 803820EC 0037DD8C  80 7E 01 EC */	lwz r3, 0x1ec(r30)
+/* 803820F0 0037DD90  4B FF B5 01 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 803820F4 0037DD94  38 81 00 18 */	addi r4, r1, 0x18
+/* 803820F8 0037DD98  4B FF B3 FD */	bl "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 803820FC 0037DD9C  3B FF 00 01 */	addi r31, r31, 1
+/* 80382100 0037DDA0  3B DE 00 04 */	addi r30, r30, 4
+/* 80382104 0037DDA4  2C 1F 00 04 */	cmpwi r31, 4
+/* 80382108 0037DDA8  41 80 FF E4 */	blt lbl_803820EC
+/* 8038210C 0037DDAC  48 00 00 64 */	b lbl_80382170
+lbl_80382110:
+/* 80382110 0037DDB0  C0 22 A6 88 */	lfs f1, lbl_805DB8A8-_SDA2_BASE_(r2)
+/* 80382114 0037DDB4  38 61 00 08 */	addi r3, r1, 8
+/* 80382118 0037DDB8  FC 40 08 90 */	fmr f2, f1
+/* 8038211C 0037DDBC  4B FF B3 E1 */	bl "__ct__Q36nw4hbm4math4VEC2Fff"
+/* 80382120 0037DDC0  7C 64 1B 78 */	mr r4, r3
+/* 80382124 0037DDC4  38 61 00 18 */	addi r3, r1, 0x18
+/* 80382128 0037DDC8  4B FF B0 91 */	bl "__as__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
+/* 8038212C 0037DDCC  80 7E 01 E8 */	lwz r3, 0x1e8(r30)
+/* 80382130 0037DDD0  4B FF B4 C1 */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80382134 0037DDD4  38 81 00 18 */	addi r4, r1, 0x18
+/* 80382138 0037DDD8  4B FF B3 BD */	bl "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 8038213C 0037DDDC  80 7E 00 04 */	lwz r3, 4(r30)
+/* 80382140 0037DDE0  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 80382144 0037DDE4  2C 00 00 00 */	cmpwi r0, 0
+/* 80382148 0037DDE8  40 82 00 28 */	bne lbl_80382170
+/* 8038214C 0037DDEC  3B E0 00 00 */	li r31, 0
+lbl_80382150:
+/* 80382150 0037DDF0  80 7E 01 EC */	lwz r3, 0x1ec(r30)
+/* 80382154 0037DDF4  4B FF B4 9D */	bl "GetRootPane__Q36nw4hbm3lyt6LayoutCFv"
+/* 80382158 0037DDF8  38 81 00 18 */	addi r4, r1, 0x18
+/* 8038215C 0037DDFC  4B FF B3 99 */	bl "SetScale__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm4math4VEC2"
+/* 80382160 0037DE00  3B FF 00 01 */	addi r31, r31, 1
+/* 80382164 0037DE04  3B DE 00 04 */	addi r30, r30, 4
+/* 80382168 0037DE08  2C 1F 00 04 */	cmpwi r31, 4
+/* 8038216C 0037DE0C  41 80 FF E4 */	blt lbl_80382150
+lbl_80382170:
+/* 80382170 0037DE10  38 60 00 00 */	li r3, 0
+/* 80382174 0037DE14  4B FF 5A 4D */	bl "GXSetCullMode"
+/* 80382178 0037DE18  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8038217C 0037DE1C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80382180 0037DE20  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80382184 0037DE24  7C 08 03 A6 */	mtlr r0
+/* 80382188 0037DE28  38 21 00 30 */	addi r1, r1, 0x30
+/* 8038218C 0037DE2C  4E 80 00 20 */	blr 
+
+.global "__ct__Q36nw4hbm4math4VEC2Fv"
+"__ct__Q36nw4hbm4math4VEC2Fv":
+/* 80382190 0037DE30  4E 80 00 20 */	blr 
+
+.global "setVolume__Q210homebutton10HomeButtonFi"
+"setVolume__Q210homebutton10HomeButtonFi":
+/* 80382194 0037DE34  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80382198 0037DE38  7C 08 02 A6 */	mflr r0
+/* 8038219C 0037DE3C  6C 83 80 00 */	xoris r3, r4, 0x8000
+/* 803821A0 0037DE40  C8 42 A6 A8 */	lfd f2, lbl_805DB8C8-_SDA2_BASE_(r2)
+/* 803821A4 0037DE44  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803821A8 0037DE48  3C 00 43 30 */	lis r0, 0x4330
+/* 803821AC 0037DE4C  C0 02 A6 E0 */	lfs f0, lbl_805DB900-_SDA2_BASE_(r2)
+/* 803821B0 0037DE50  90 61 00 0C */	stw r3, 0xc(r1)
+/* 803821B4 0037DE54  90 01 00 08 */	stw r0, 8(r1)
+/* 803821B8 0037DE58  C8 21 00 08 */	lfd f1, 8(r1)
+/* 803821BC 0037DE5C  EC 21 10 28 */	fsubs f1, f1, f2
+/* 803821C0 0037DE60  EC 00 00 72 */	fmuls f0, f0, f1
+/* 803821C4 0037DE64  FC 00 00 1E */	fctiwz f0, f0
+/* 803821C8 0037DE68  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 803821CC 0037DE6C  80 61 00 14 */	lwz r3, 0x14(r1)
+/* 803821D0 0037DE70  54 63 06 3E */	clrlwi r3, r3, 0x18
+/* 803821D4 0037DE74  48 07 42 11 */	bl "WPADSetSpeakerVolume"
+/* 803821D8 0037DE78  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803821DC 0037DE7C  7C 08 03 A6 */	mtlr r0
+/* 803821E0 0037DE80  38 21 00 20 */	addi r1, r1, 0x20
+/* 803821E4 0037DE84  4E 80 00 20 */	blr 
+
+.global "getVolume__Q210homebutton10HomeButtonFv"
+"getVolume__Q210homebutton10HomeButtonFv":
+/* 803821E8 0037DE88  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803821EC 0037DE8C  7C 08 02 A6 */	mflr r0
+/* 803821F0 0037DE90  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803821F4 0037DE94  48 07 41 BD */	bl "WPADGetSpeakerVolume"
+/* 803821F8 0037DE98  54 63 06 3E */	clrlwi r3, r3, 0x18
+/* 803821FC 0037DE9C  3C 00 43 30 */	lis r0, 0x4330
+/* 80382200 0037DEA0  90 01 00 08 */	stw r0, 8(r1)
+/* 80382204 0037DEA4  C8 62 A6 90 */	lfd f3, lbl_805DB8B0-_SDA2_BASE_(r2)
+/* 80382208 0037DEA8  90 61 00 0C */	stw r3, 0xc(r1)
+/* 8038220C 0037DEAC  C0 22 A6 E8 */	lfs f1, lbl_805DB908-_SDA2_BASE_(r2)
+/* 80382210 0037DEB0  C8 41 00 08 */	lfd f2, 8(r1)
+/* 80382214 0037DEB4  C0 02 A6 E4 */	lfs f0, lbl_805DB904-_SDA2_BASE_(r2)
+/* 80382218 0037DEB8  EC 42 18 28 */	fsubs f2, f2, f3
+/* 8038221C 0037DEBC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80382220 0037DEC0  EC 21 00 B2 */	fmuls f1, f1, f2
+/* 80382224 0037DEC4  EC 00 08 2A */	fadds f0, f0, f1
+/* 80382228 0037DEC8  FC 00 00 1E */	fctiwz f0, f0
+/* 8038222C 0037DECC  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 80382230 0037DED0  80 61 00 14 */	lwz r3, 0x14(r1)
+/* 80382234 0037DED4  7C 08 03 A6 */	mtlr r0
+/* 80382238 0037DED8  38 21 00 20 */	addi r1, r1, 0x20
+/* 8038223C 0037DEDC  4E 80 00 20 */	blr 
+
+.global "setVibFlag__Q210homebutton10HomeButtonFb"
+"setVibFlag__Q210homebutton10HomeButtonFb":
+/* 80382240 0037DEE0  7C 83 23 78 */	mr r3, r4
+/* 80382244 0037DEE4  48 07 22 B0 */	b "WPADEnableMotor"
+
+.global "getVibFlag__Q210homebutton10HomeButtonFv"
+"getVibFlag__Q210homebutton10HomeButtonFv":
+/* 80382248 0037DEE8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8038224C 0037DEEC  7C 08 02 A6 */	mflr r0
+/* 80382250 0037DEF0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80382254 0037DEF4  48 07 22 D5 */	bl "WPADIsMotorEnabled"
+/* 80382258 0037DEF8  7C 03 00 D0 */	neg r0, r3
+/* 8038225C 0037DEFC  7C 00 1B 78 */	or r0, r0, r3
+/* 80382260 0037DF00  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 80382264 0037DF04  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80382268 0037DF08  7C 08 03 A6 */	mtlr r0
+/* 8038226C 0037DF0C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80382270 0037DF10  4E 80 00 20 */	blr 
+
+.global "onEvent__Q210homebutton22HomeButtonEventHandlerFUlUlPv"
+"onEvent__Q210homebutton22HomeButtonEventHandlerFUlUlPv":
+/* 80382274 0037DF14  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80382278 0037DF18  7C 08 02 A6 */	mflr r0
+/* 8038227C 0037DF1C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80382280 0037DF20  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80382284 0037DF24  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382288 0037DF28  7C DE 33 78 */	mr r30, r6
+/* 8038228C 0037DF2C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80382290 0037DF30  7C BD 2B 78 */	mr r29, r5
+/* 80382294 0037DF34  93 81 00 10 */	stw r28, 0x10(r1)
+/* 80382298 0037DF38  7C 7C 1B 78 */	mr r28, r3
+/* 8038229C 0037DF3C  80 63 00 04 */	lwz r3, 4(r3)
+/* 803822A0 0037DF40  81 83 00 00 */	lwz r12, 0(r3)
+/* 803822A4 0037DF44  81 8C 00 24 */	lwz r12, 0x24(r12)
+/* 803822A8 0037DF48  7D 89 03 A6 */	mtctr r12
+/* 803822AC 0037DF4C  4E 80 04 21 */	bctrl 
+/* 803822B0 0037DF50  81 83 00 00 */	lwz r12, 0(r3)
+/* 803822B4 0037DF54  81 8C 00 64 */	lwz r12, 0x64(r12)
+/* 803822B8 0037DF58  7D 89 03 A6 */	mtctr r12
+/* 803822BC 0037DF5C  4E 80 04 21 */	bctrl 
+/* 803822C0 0037DF60  4B FF B2 49 */	bl "GetName__Q36nw4hbm3lyt4PaneCFv"
+/* 803822C4 0037DF64  7C 7F 1B 78 */	mr r31, r3
+/* 803822C8 0037DF68  7F 83 E3 78 */	mr r3, r28
+/* 803822CC 0037DF6C  48 00 00 81 */	bl "getHomeButton__Q210homebutton22HomeButtonEventHandlerFv"
+/* 803822D0 0037DF70  2C 1D 00 01 */	cmpwi r29, 1
+/* 803822D4 0037DF74  41 82 00 20 */	beq lbl_803822F4
+/* 803822D8 0037DF78  40 80 00 10 */	bge lbl_803822E8
+/* 803822DC 0037DF7C  2C 1D 00 00 */	cmpwi r29, 0
+/* 803822E0 0037DF80  40 80 00 30 */	bge lbl_80382310
+/* 803822E4 0037DF84  48 00 00 48 */	b lbl_8038232C
+lbl_803822E8:
+/* 803822E8 0037DF88  2C 1D 00 03 */	cmpwi r29, 3
+/* 803822EC 0037DF8C  40 80 00 40 */	bge lbl_8038232C
+/* 803822F0 0037DF90  48 00 00 14 */	b lbl_80382304
+lbl_803822F4:
+/* 803822F4 0037DF94  7F E4 FB 78 */	mr r4, r31
+/* 803822F8 0037DF98  7F C5 F3 78 */	mr r5, r30
+/* 803822FC 0037DF9C  4B FF E5 5D */	bl "startPointEvent__Q210homebutton10HomeButtonFPCcPv"
+/* 80382300 0037DFA0  48 00 00 2C */	b lbl_8038232C
+lbl_80382304:
+/* 80382304 0037DFA4  7F E4 FB 78 */	mr r4, r31
+/* 80382308 0037DFA8  4B FF E9 8D */	bl "startLeftEvent__Q210homebutton10HomeButtonFPCc"
+/* 8038230C 0037DFAC  48 00 00 20 */	b lbl_8038232C
+lbl_80382310:
+/* 80382310 0037DFB0  80 9E 00 10 */	lwz r4, 0x10(r30)
+/* 80382314 0037DFB4  54 80 05 29 */	rlwinm. r0, r4, 0, 0x14, 0x14
+/* 80382318 0037DFB8  40 82 00 0C */	bne lbl_80382324
+/* 8038231C 0037DFBC  54 80 01 CF */	rlwinm. r0, r4, 0, 7, 7
+/* 80382320 0037DFC0  41 82 00 0C */	beq lbl_8038232C
+lbl_80382324:
+/* 80382324 0037DFC4  7F E4 FB 78 */	mr r4, r31
+/* 80382328 0037DFC8  4B FF EC B9 */	bl "startTrigEvent__Q210homebutton10HomeButtonFPCc"
+lbl_8038232C:
+/* 8038232C 0037DFCC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80382330 0037DFD0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80382334 0037DFD4  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382338 0037DFD8  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8038233C 0037DFDC  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80382340 0037DFE0  7C 08 03 A6 */	mtlr r0
+/* 80382344 0037DFE4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80382348 0037DFE8  4E 80 00 20 */	blr 
+
+.global "getHomeButton__Q210homebutton22HomeButtonEventHandlerFv"
+"getHomeButton__Q210homebutton22HomeButtonEventHandlerFv":
+/* 8038234C 0037DFEC  80 63 00 08 */	lwz r3, 8(r3)
+/* 80382350 0037DFF0  4E 80 00 20 */	blr 
+
+.global "getPane__Q310homebutton3gui13PaneComponentFv"
+"getPane__Q310homebutton3gui13PaneComponentFv":
+/* 80382354 0037DFF4  80 63 00 2C */	lwz r3, 0x2c(r3)
+/* 80382358 0037DFF8  4E 80 00 20 */	blr 
+
+.global "init__Q310homebutton10HomeButton10BlackFaderFi"
+"init__Q310homebutton10HomeButton10BlackFaderFi":
+/* 8038235C 0037DFFC  38 00 00 00 */	li r0, 0
+/* 80382360 0037E000  90 83 00 04 */	stw r4, 4(r3)
+/* 80382364 0037E004  90 03 00 00 */	stw r0, 0(r3)
+/* 80382368 0037E008  90 03 00 08 */	stw r0, 8(r3)
+/* 8038236C 0037E00C  4E 80 00 20 */	blr 
+
+.global "calc__Q310homebutton10HomeButton10BlackFaderFv"
+"calc__Q310homebutton10HomeButton10BlackFaderFv":
+/* 80382370 0037E010  80 03 00 08 */	lwz r0, 8(r3)
+/* 80382374 0037E014  2C 00 00 01 */	cmpwi r0, 1
+/* 80382378 0037E018  40 82 00 14 */	bne lbl_8038238C
+/* 8038237C 0037E01C  80 83 00 00 */	lwz r4, 0(r3)
+/* 80382380 0037E020  38 04 00 01 */	addi r0, r4, 1
+/* 80382384 0037E024  90 03 00 00 */	stw r0, 0(r3)
+/* 80382388 0037E028  48 00 00 18 */	b lbl_803823A0
+lbl_8038238C:
+/* 8038238C 0037E02C  2C 00 00 02 */	cmpwi r0, 2
+/* 80382390 0037E030  40 82 00 10 */	bne lbl_803823A0
+/* 80382394 0037E034  80 83 00 00 */	lwz r4, 0(r3)
+/* 80382398 0037E038  38 04 FF FF */	addi r0, r4, -1
+/* 8038239C 0037E03C  90 03 00 00 */	stw r0, 0(r3)
+lbl_803823A0:
+/* 803823A0 0037E040  80 03 00 00 */	lwz r0, 0(r3)
+/* 803823A4 0037E044  2C 00 00 00 */	cmpwi r0, 0
+/* 803823A8 0037E048  40 80 00 10 */	bge lbl_803823B8
+/* 803823AC 0037E04C  38 00 00 00 */	li r0, 0
+/* 803823B0 0037E050  90 03 00 00 */	stw r0, 0(r3)
+/* 803823B4 0037E054  4E 80 00 20 */	blr 
+lbl_803823B8:
+/* 803823B8 0037E058  80 83 00 04 */	lwz r4, 4(r3)
+/* 803823BC 0037E05C  7C 00 20 00 */	cmpw r0, r4
+/* 803823C0 0037E060  4C 81 00 20 */	blelr 
+/* 803823C4 0037E064  90 83 00 00 */	stw r4, 0(r3)
+/* 803823C8 0037E068  4E 80 00 20 */	blr 
+
+.global "isDone__Q310homebutton10HomeButton10BlackFaderFv"
+"isDone__Q310homebutton10HomeButton10BlackFaderFv":
+/* 803823CC 0037E06C  80 A3 00 08 */	lwz r5, 8(r3)
+/* 803823D0 0037E070  2C 05 00 01 */	cmpwi r5, 1
+/* 803823D4 0037E074  40 82 00 1C */	bne lbl_803823F0
+/* 803823D8 0037E078  80 83 00 00 */	lwz r4, 0(r3)
+/* 803823DC 0037E07C  80 03 00 04 */	lwz r0, 4(r3)
+/* 803823E0 0037E080  7C 04 00 00 */	cmpw r4, r0
+/* 803823E4 0037E084  40 82 00 0C */	bne lbl_803823F0
+/* 803823E8 0037E088  38 60 00 01 */	li r3, 1
+/* 803823EC 0037E08C  4E 80 00 20 */	blr 
+lbl_803823F0:
+/* 803823F0 0037E090  2C 05 00 02 */	cmpwi r5, 2
+/* 803823F4 0037E094  40 82 00 18 */	bne lbl_8038240C
+/* 803823F8 0037E098  80 03 00 00 */	lwz r0, 0(r3)
+/* 803823FC 0037E09C  2C 00 00 00 */	cmpwi r0, 0
+/* 80382400 0037E0A0  40 82 00 0C */	bne lbl_8038240C
+/* 80382404 0037E0A4  38 60 00 01 */	li r3, 1
+/* 80382408 0037E0A8  4E 80 00 20 */	blr 
+lbl_8038240C:
+/* 8038240C 0037E0AC  38 60 00 00 */	li r3, 0
+/* 80382410 0037E0B0  4E 80 00 20 */	blr 
+
+.global "drawBlackPlate__10homebuttonFffff8_GXColor"
+"drawBlackPlate__10homebuttonFffff8_GXColor":
+/* 80382414 0037E0B4  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80382418 0037E0B8  7C 08 02 A6 */	mflr r0
+/* 8038241C 0037E0BC  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80382420 0037E0C0  39 61 00 30 */	addi r11, r1, 0x30
+/* 80382424 0037E0C4  48 08 CE BD */	bl "_savefpr_28"
+/* 80382428 0037E0C8  88 83 00 00 */	lbz r4, 0(r3)
+/* 8038242C 0037E0CC  FF 80 08 90 */	fmr f28, f1
+/* 80382430 0037E0D0  88 C3 00 01 */	lbz r6, 1(r3)
+/* 80382434 0037E0D4  FF A0 10 90 */	fmr f29, f2
+/* 80382438 0037E0D8  88 A3 00 02 */	lbz r5, 2(r3)
+/* 8038243C 0037E0DC  FF C0 18 90 */	fmr f30, f3
+/* 80382440 0037E0E0  88 03 00 03 */	lbz r0, 3(r3)
+/* 80382444 0037E0E4  98 81 00 08 */	stb r4, 8(r1)
+/* 80382448 0037E0E8  FF E0 20 90 */	fmr f31, f4
+/* 8038244C 0037E0EC  38 81 00 08 */	addi r4, r1, 8
+/* 80382450 0037E0F0  38 60 00 01 */	li r3, 1
+/* 80382454 0037E0F4  98 C1 00 09 */	stb r6, 9(r1)
+/* 80382458 0037E0F8  98 A1 00 0A */	stb r5, 0xa(r1)
+/* 8038245C 0037E0FC  98 01 00 0B */	stb r0, 0xb(r1)
+/* 80382460 0037E100  4B FF 7D 71 */	bl "GXSetTevColor"
+/* 80382464 0037E104  38 60 00 80 */	li r3, 0x80
+/* 80382468 0037E108  38 80 00 00 */	li r4, 0
+/* 8038246C 0037E10C  38 A0 00 04 */	li r5, 4
+/* 80382470 0037E110  4B FF 54 89 */	bl "GXBegin"
+/* 80382474 0037E114  FC 20 E0 90 */	fmr f1, f28
+/* 80382478 0037E118  FC 40 E8 90 */	fmr f2, f29
+/* 8038247C 0037E11C  48 00 00 49 */	bl "GXPosition2f32"
+/* 80382480 0037E120  FC 20 E0 90 */	fmr f1, f28
+/* 80382484 0037E124  FC 40 F8 90 */	fmr f2, f31
+/* 80382488 0037E128  48 00 00 3D */	bl "GXPosition2f32"
+/* 8038248C 0037E12C  FC 20 F0 90 */	fmr f1, f30
+/* 80382490 0037E130  FC 40 F8 90 */	fmr f2, f31
+/* 80382494 0037E134  48 00 00 31 */	bl "GXPosition2f32"
+/* 80382498 0037E138  FC 20 F0 90 */	fmr f1, f30
+/* 8038249C 0037E13C  FC 40 E8 90 */	fmr f2, f29
+/* 803824A0 0037E140  48 00 00 25 */	bl "GXPosition2f32"
+/* 803824A4 0037E144  48 00 00 1D */	bl "GXEnd_803824C0"
+/* 803824A8 0037E148  39 61 00 30 */	addi r11, r1, 0x30
+/* 803824AC 0037E14C  48 08 CE 81 */	bl "_restfpr_28"
+/* 803824B0 0037E150  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803824B4 0037E154  7C 08 03 A6 */	mtlr r0
+/* 803824B8 0037E158  38 21 00 30 */	addi r1, r1, 0x30
+/* 803824BC 0037E15C  4E 80 00 20 */	blr 
+
+.global "GXEnd_803824C0"
+"GXEnd_803824C0":
+/* 803824C0 0037E160  4E 80 00 20 */	blr 
+
+.global "GXPosition2f32"
+"GXPosition2f32":
+/* 803824C4 0037E164  3C 60 CC 01 */	lis r3, 0xCC008000@ha
+/* 803824C8 0037E168  D0 23 80 00 */	stfs f1, 0xCC008000@l(r3)
+/* 803824CC 0037E16C  D0 43 80 00 */	stfs f2, -0x8000(r3)
+/* 803824D0 0037E170  4E 80 00 20 */	blr 
+
+.global "initgx__10homebuttonFv"
+"initgx__10homebuttonFv":
+/* 803824D4 0037E174  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803824D8 0037E178  7C 08 02 A6 */	mflr r0
+/* 803824DC 0037E17C  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803824E0 0037E180  38 61 00 08 */	addi r3, r1, 8
+/* 803824E4 0037E184  48 05 50 65 */	bl "PSMTXIdentity"
+/* 803824E8 0037E188  38 61 00 08 */	addi r3, r1, 8
+/* 803824EC 0037E18C  38 80 00 00 */	li r4, 0
+/* 803824F0 0037E190  4B FF 89 49 */	bl "GXLoadPosMtxImm"
+/* 803824F4 0037E194  38 60 00 00 */	li r3, 0
+/* 803824F8 0037E198  4B FF 89 E9 */	bl "GXSetCurrentMtx"
+/* 803824FC 0037E19C  4B FF 3F C1 */	bl "GXClearVtxDesc"
+/* 80382500 0037E1A0  38 60 00 09 */	li r3, 9
+/* 80382504 0037E1A4  38 80 00 01 */	li r4, 1
+/* 80382508 0037E1A8  4B FF 37 25 */	bl "GXSetVtxDesc"
+/* 8038250C 0037E1AC  38 60 00 00 */	li r3, 0
+/* 80382510 0037E1B0  38 80 00 09 */	li r4, 9
+/* 80382514 0037E1B4  38 A0 00 00 */	li r5, 0
+/* 80382518 0037E1B8  38 C0 00 04 */	li r6, 4
+/* 8038251C 0037E1BC  38 E0 00 00 */	li r7, 0
+/* 80382520 0037E1C0  4B FF 3F D1 */	bl "GXSetVtxAttrFmt"
+/* 80382524 0037E1C4  38 60 00 01 */	li r3, 1
+/* 80382528 0037E1C8  4B FF 67 11 */	bl "GXSetNumChans"
+/* 8038252C 0037E1CC  38 60 00 04 */	li r3, 4
+/* 80382530 0037E1D0  38 80 00 00 */	li r4, 0
+/* 80382534 0037E1D4  38 A0 00 00 */	li r5, 0
+/* 80382538 0037E1D8  38 C0 00 00 */	li r6, 0
+/* 8038253C 0037E1DC  38 E0 00 00 */	li r7, 0
+/* 80382540 0037E1E0  39 00 00 00 */	li r8, 0
+/* 80382544 0037E1E4  39 20 00 02 */	li r9, 2
+/* 80382548 0037E1E8  4B FF 67 15 */	bl "GXSetChanCtrl"
+/* 8038254C 0037E1EC  38 60 00 05 */	li r3, 5
+/* 80382550 0037E1F0  38 80 00 00 */	li r4, 0
+/* 80382554 0037E1F4  38 A0 00 00 */	li r5, 0
+/* 80382558 0037E1F8  38 C0 00 00 */	li r6, 0
+/* 8038255C 0037E1FC  38 E0 00 00 */	li r7, 0
+/* 80382560 0037E200  39 00 00 00 */	li r8, 0
+/* 80382564 0037E204  39 20 00 02 */	li r9, 2
+/* 80382568 0037E208  4B FF 66 F5 */	bl "GXSetChanCtrl"
+/* 8038256C 0037E20C  38 60 00 00 */	li r3, 0
+/* 80382570 0037E210  4B FF 48 BD */	bl "GXSetNumTexGens"
+/* 80382574 0037E214  38 60 00 01 */	li r3, 1
+/* 80382578 0037E218  4B FF 80 F1 */	bl "GXSetNumTevStages"
+/* 8038257C 0037E21C  38 60 00 00 */	li r3, 0
+/* 80382580 0037E220  38 80 00 FF */	li r4, 0xff
+/* 80382584 0037E224  38 A0 00 FF */	li r5, 0xff
+/* 80382588 0037E228  38 C0 00 FF */	li r6, 0xff
+/* 8038258C 0037E22C  4B FF 7F 81 */	bl "GXSetTevOrder"
+/* 80382590 0037E230  38 60 00 00 */	li r3, 0
+/* 80382594 0037E234  38 80 00 0F */	li r4, 0xf
+/* 80382598 0037E238  38 A0 00 0F */	li r5, 0xf
+/* 8038259C 0037E23C  38 C0 00 0F */	li r6, 0xf
+/* 803825A0 0037E240  38 E0 00 02 */	li r7, 2
+/* 803825A4 0037E244  4B FF 7A FD */	bl "GXSetTevColorIn"
+/* 803825A8 0037E248  38 60 00 00 */	li r3, 0
+/* 803825AC 0037E24C  38 80 00 00 */	li r4, 0
+/* 803825B0 0037E250  38 A0 00 00 */	li r5, 0
+/* 803825B4 0037E254  38 C0 00 00 */	li r6, 0
+/* 803825B8 0037E258  38 E0 00 01 */	li r7, 1
+/* 803825BC 0037E25C  39 00 00 00 */	li r8, 0
+/* 803825C0 0037E260  4B FF 7B 61 */	bl "GXSetTevColorOp"
+/* 803825C4 0037E264  38 60 00 00 */	li r3, 0
+/* 803825C8 0037E268  38 80 00 07 */	li r4, 7
+/* 803825CC 0037E26C  38 A0 00 07 */	li r5, 7
+/* 803825D0 0037E270  38 C0 00 07 */	li r6, 7
+/* 803825D4 0037E274  38 E0 00 01 */	li r7, 1
+/* 803825D8 0037E278  4B FF 7B 09 */	bl "GXSetTevAlphaIn"
+/* 803825DC 0037E27C  38 60 00 00 */	li r3, 0
+/* 803825E0 0037E280  38 80 00 00 */	li r4, 0
+/* 803825E4 0037E284  38 A0 00 00 */	li r5, 0
+/* 803825E8 0037E288  38 C0 00 00 */	li r6, 0
+/* 803825EC 0037E28C  38 E0 00 01 */	li r7, 1
+/* 803825F0 0037E290  39 00 00 00 */	li r8, 0
+/* 803825F4 0037E294  4B FF 7B 85 */	bl "GXSetTevAlphaOp"
+/* 803825F8 0037E298  38 60 00 07 */	li r3, 7
+/* 803825FC 0037E29C  38 80 00 00 */	li r4, 0
+/* 80382600 0037E2A0  38 A0 00 01 */	li r5, 1
+/* 80382604 0037E2A4  38 C0 00 07 */	li r6, 7
+/* 80382608 0037E2A8  38 E0 00 00 */	li r7, 0
+/* 8038260C 0037E2AC  4B FF 7E 3D */	bl "GXSetAlphaCompare"
+/* 80382610 0037E2B0  38 60 00 01 */	li r3, 1
+/* 80382614 0037E2B4  38 80 00 04 */	li r4, 4
+/* 80382618 0037E2B8  38 A0 00 05 */	li r5, 5
+/* 8038261C 0037E2BC  38 C0 00 05 */	li r6, 5
+/* 80382620 0037E2C0  4B FF 83 BD */	bl "GXSetBlendMode"
+/* 80382624 0037E2C4  38 60 00 00 */	li r3, 0
+/* 80382628 0037E2C8  4B FF 84 31 */	bl "GXSetAlphaUpdate"
+/* 8038262C 0037E2CC  38 60 00 00 */	li r3, 0
+/* 80382630 0037E2D0  38 80 00 07 */	li r4, 7
+/* 80382634 0037E2D4  38 A0 00 00 */	li r5, 0
+/* 80382638 0037E2D8  4B FF 84 4D */	bl "GXSetZMode"
+/* 8038263C 0037E2DC  38 60 00 00 */	li r3, 0
+/* 80382640 0037E2E0  4B FF 5E 75 */	bl "GXSetDispCopyGamma"
+/* 80382644 0037E2E4  38 60 00 00 */	li r3, 0
+/* 80382648 0037E2E8  4B FF 79 05 */	bl "GXSetNumIndStages"
+/* 8038264C 0037E2EC  38 60 00 00 */	li r3, 0
+/* 80382650 0037E2F0  38 80 00 00 */	li r4, 0
+/* 80382654 0037E2F4  38 A0 00 01 */	li r5, 1
+/* 80382658 0037E2F8  38 C0 00 02 */	li r6, 2
+/* 8038265C 0037E2FC  38 E0 00 03 */	li r7, 3
+/* 80382660 0037E300  4B FF 7D 6D */	bl "GXSetTevSwapModeTable"
+/* 80382664 0037E304  38 60 00 00 */	li r3, 0
+/* 80382668 0037E308  38 80 00 00 */	li r4, 0
+/* 8038266C 0037E30C  38 A0 00 00 */	li r5, 0
+/* 80382670 0037E310  4B FF 7D 21 */	bl "GXSetTevSwapMode"
+/* 80382674 0037E314  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80382678 0037E318  7C 08 03 A6 */	mtlr r0
+/* 8038267C 0037E31C  38 21 00 40 */	addi r1, r1, 0x40
+/* 80382680 0037E320  4E 80 00 20 */	blr 
+
+.global "draw__Q310homebutton10HomeButton10BlackFaderFv"
+"draw__Q310homebutton10HomeButton10BlackFaderFv":
+/* 80382684 0037E324  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80382688 0037E328  7C 08 02 A6 */	mflr r0
+/* 8038268C 0037E32C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80382690 0037E330  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80382694 0037E334  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382698 0037E338  7C 7E 1B 78 */	mr r30, r3
+/* 8038269C 0037E33C  80 83 00 00 */	lwz r4, 0(r3)
+/* 803826A0 0037E340  80 03 00 04 */	lwz r0, 4(r3)
+/* 803826A4 0037E344  54 83 40 2E */	slwi r3, r4, 8
+/* 803826A8 0037E348  7C 64 18 50 */	subf r3, r4, r3
+/* 803826AC 0037E34C  7C 03 03 D6 */	divw r0, r3, r0
+/* 803826B0 0037E350  54 1F 06 3E */	clrlwi r31, r0, 0x18
+/* 803826B4 0037E354  4B FF FE 21 */	bl "initgx__10homebuttonFv"
+/* 803826B8 0037E358  88 BE 00 0C */	lbz r5, 0xc(r30)
+/* 803826BC 0037E35C  38 61 00 08 */	addi r3, r1, 8
+/* 803826C0 0037E360  88 9E 00 0D */	lbz r4, 0xd(r30)
+/* 803826C4 0037E364  88 1E 00 0E */	lbz r0, 0xe(r30)
+/* 803826C8 0037E368  C0 22 A6 EC */	lfs f1, lbl_805DB90C-_SDA2_BASE_(r2)
+/* 803826CC 0037E36C  C0 62 A6 F0 */	lfs f3, lbl_805DB910-_SDA2_BASE_(r2)
+/* 803826D0 0037E370  98 A1 00 0C */	stb r5, 0xc(r1)
+/* 803826D4 0037E374  FC 40 08 90 */	fmr f2, f1
+/* 803826D8 0037E378  FC 80 18 90 */	fmr f4, f3
+/* 803826DC 0037E37C  98 81 00 0D */	stb r4, 0xd(r1)
+/* 803826E0 0037E380  98 01 00 0E */	stb r0, 0xe(r1)
+/* 803826E4 0037E384  9B E1 00 0F */	stb r31, 0xf(r1)
+/* 803826E8 0037E388  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 803826EC 0037E38C  90 01 00 08 */	stw r0, 8(r1)
+/* 803826F0 0037E390  4B FF FD 25 */	bl "drawBlackPlate__10homebuttonFffff8_GXColor"
+/* 803826F4 0037E394  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803826F8 0037E398  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803826FC 0037E39C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382700 0037E3A0  7C 08 03 A6 */	mtlr r0
+/* 80382704 0037E3A4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80382708 0037E3A8  4E 80 00 20 */	blr 
+
+.global "create_sound__Q210homebutton10HomeButtonFPQ36nw4hbm3snd12SoundArchiveb"
+"create_sound__Q210homebutton10HomeButtonFPQ36nw4hbm3snd12SoundArchiveb":
+/* 8038270C 0037E3AC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80382710 0037E3B0  7C 08 02 A6 */	mflr r0
+/* 80382714 0037E3B4  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80382718 0037E3B8  39 61 00 30 */	addi r11, r1, 0x30
+/* 8038271C 0037E3BC  48 08 CC 51 */	bl "_savegpr_25"
+/* 80382720 0037E3C0  3F C0 80 47 */	lis r30, lbl_80468288@ha
+/* 80382724 0037E3C4  7C 79 1B 78 */	mr r25, r3
+/* 80382728 0037E3C8  7C 9A 23 78 */	mr r26, r4
+/* 8038272C 0037E3CC  7C BB 2B 78 */	mr r27, r5
+/* 80382730 0037E3D0  3B DE 82 88 */	addi r30, r30, lbl_80468288@l
+/* 80382734 0037E3D4  38 60 00 D8 */	li r3, 0xd8
+/* 80382738 0037E3D8  4B FF 9A 01 */	bl "HBMAllocMem2__FUl"
+/* 8038273C 0037E3DC  2C 03 00 00 */	cmpwi r3, 0
+/* 80382740 0037E3E0  41 82 00 20 */	beq lbl_80382760
+/* 80382744 0037E3E4  7C 64 1B 78 */	mr r4, r3
+/* 80382748 0037E3E8  38 60 00 D8 */	li r3, 0xd8
+/* 8038274C 0037E3EC  4B C9 79 F5 */	bl "__nw__FUlPv"
+/* 80382750 0037E3F0  2C 03 00 00 */	cmpwi r3, 0
+/* 80382754 0037E3F4  41 82 00 08 */	beq lbl_8038275C
+/* 80382758 0037E3F8  48 02 AC 7D */	bl "__ct__Q36nw4hbm3snd18SoundArchivePlayerFv"
+lbl_8038275C:
+/* 8038275C 0037E3FC  90 79 05 D0 */	stw r3, 0x5d0(r25)
+lbl_80382760:
+/* 80382760 0037E400  80 19 05 D0 */	lwz r0, 0x5d0(r25)
+/* 80382764 0037E404  2C 00 00 00 */	cmpwi r0, 0
+/* 80382768 0037E408  40 82 00 18 */	bne lbl_80382780
+/* 8038276C 0037E40C  38 7E 00 48 */	addi r3, r30, 0x48
+/* 80382770 0037E410  38 BE 0D B4 */	addi r5, r30, 0xdb4
+/* 80382774 0037E414  38 80 0E 98 */	li r4, 0xe98
+/* 80382778 0037E418  4C C6 31 82 */	crclr 6
+/* 8038277C 0037E41C  48 00 38 59 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_80382780:
+/* 80382780 0037E420  80 79 05 D0 */	lwz r3, 0x5d0(r25)
+/* 80382784 0037E424  7F 44 D3 78 */	mr r4, r26
+/* 80382788 0037E428  48 02 B7 19 */	bl "GetRequiredMemSize__Q36nw4hbm3snd18SoundArchivePlayerFPCQ36nw4hbm3snd12SoundArchive"
+/* 8038278C 0037E42C  7C 7D 1B 78 */	mr r29, r3
+/* 80382790 0037E430  80 79 05 D0 */	lwz r3, 0x5d0(r25)
+/* 80382794 0037E434  7F 44 D3 78 */	mr r4, r26
+/* 80382798 0037E438  48 02 B8 75 */	bl "GetRequiredStrmBufferSize__Q36nw4hbm3snd18SoundArchivePlayerFPCQ36nw4hbm3snd12SoundArchive"
+/* 8038279C 0037E43C  7C 7C 1B 78 */	mr r28, r3
+/* 803827A0 0037E440  4B FF 99 99 */	bl "HBMAllocMem2__FUl"
+/* 803827A4 0037E444  7C 7F 1B 78 */	mr r31, r3
+/* 803827A8 0037E448  7F A3 EB 78 */	mr r3, r29
+/* 803827AC 0037E44C  4B FF 99 8D */	bl "HBMAllocMem2__FUl"
+/* 803827B0 0037E450  7C 65 1B 78 */	mr r5, r3
+/* 803827B4 0037E454  80 79 05 D0 */	lwz r3, 0x5d0(r25)
+/* 803827B8 0037E458  7F 44 D3 78 */	mr r4, r26
+/* 803827BC 0037E45C  7F A6 EB 78 */	mr r6, r29
+/* 803827C0 0037E460  7F E7 FB 78 */	mr r7, r31
+/* 803827C4 0037E464  7F 88 E3 78 */	mr r8, r28
+/* 803827C8 0037E468  48 02 B5 D9 */	bl "Setup__Q36nw4hbm3snd18SoundArchivePlayerFPCQ36nw4hbm3snd12SoundArchivePvUlPvUl"
+/* 803827CC 0037E46C  2C 03 00 00 */	cmpwi r3, 0
+/* 803827D0 0037E470  40 82 00 18 */	bne lbl_803827E8
+/* 803827D4 0037E474  38 7E 00 48 */	addi r3, r30, 0x48
+/* 803827D8 0037E478  38 BE 0D E4 */	addi r5, r30, 0xde4
+/* 803827DC 0037E47C  38 80 0E AA */	li r4, 0xeaa
+/* 803827E0 0037E480  4C C6 31 82 */	crclr 6
+/* 803827E4 0037E484  48 00 37 F1 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_803827E8:
+/* 803827E8 0037E488  38 60 00 04 */	li r3, 4
+/* 803827EC 0037E48C  4B FF 99 4D */	bl "HBMAllocMem2__FUl"
+/* 803827F0 0037E490  2C 03 00 00 */	cmpwi r3, 0
+/* 803827F4 0037E494  41 82 00 20 */	beq lbl_80382814
+/* 803827F8 0037E498  7C 64 1B 78 */	mr r4, r3
+/* 803827FC 0037E49C  38 60 00 04 */	li r3, 4
+/* 80382800 0037E4A0  4B C9 79 41 */	bl "__nw__FUlPv"
+/* 80382804 0037E4A4  2C 03 00 00 */	cmpwi r3, 0
+/* 80382808 0037E4A8  41 82 00 08 */	beq lbl_80382810
+/* 8038280C 0037E4AC  48 00 01 45 */	bl "__ct__Q36nw4hbm3snd11SoundHandleFv"
+lbl_80382810:
+/* 80382810 0037E4B0  90 79 05 E4 */	stw r3, 0x5e4(r25)
+lbl_80382814:
+/* 80382814 0037E4B4  80 19 05 E4 */	lwz r0, 0x5e4(r25)
+/* 80382818 0037E4B8  2C 00 00 00 */	cmpwi r0, 0
+/* 8038281C 0037E4BC  40 82 00 18 */	bne lbl_80382834
+/* 80382820 0037E4C0  38 7E 00 48 */	addi r3, r30, 0x48
+/* 80382824 0037E4C4  38 BE 0E 04 */	addi r5, r30, 0xe04
+/* 80382828 0037E4C8  38 80 0E B1 */	li r4, 0xeb1
+/* 8038282C 0037E4CC  4C C6 31 82 */	crclr 6
+/* 80382830 0037E4D0  48 00 37 A5 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_80382834:
+/* 80382834 0037E4D4  2C 1B 00 00 */	cmpwi r27, 0
+/* 80382838 0037E4D8  41 82 00 D8 */	beq lbl_80382910
+/* 8038283C 0037E4DC  38 60 00 2C */	li r3, 0x2c
+/* 80382840 0037E4E0  4B FF 98 F9 */	bl "HBMAllocMem2__FUl"
+/* 80382844 0037E4E4  2C 03 00 00 */	cmpwi r3, 0
+/* 80382848 0037E4E8  41 82 00 20 */	beq lbl_80382868
+/* 8038284C 0037E4EC  7C 64 1B 78 */	mr r4, r3
+/* 80382850 0037E4F0  38 60 00 2C */	li r3, 0x2c
+/* 80382854 0037E4F4  4B C9 78 ED */	bl "__nw__FUlPv"
+/* 80382858 0037E4F8  2C 03 00 00 */	cmpwi r3, 0
+/* 8038285C 0037E4FC  41 82 00 08 */	beq lbl_80382864
+/* 80382860 0037E500  48 02 F2 C5 */	bl "__ct__Q36nw4hbm3snd9SoundHeapFv"
+lbl_80382864:
+/* 80382864 0037E504  90 79 05 E0 */	stw r3, 0x5e0(r25)
+lbl_80382868:
+/* 80382868 0037E508  80 19 05 E0 */	lwz r0, 0x5e0(r25)
+/* 8038286C 0037E50C  2C 00 00 00 */	cmpwi r0, 0
+/* 80382870 0037E510  40 82 00 18 */	bne lbl_80382888
+/* 80382874 0037E514  38 7E 00 48 */	addi r3, r30, 0x48
+/* 80382878 0037E518  38 BE 0E 2C */	addi r5, r30, 0xe2c
+/* 8038287C 0037E51C  38 80 0E BA */	li r4, 0xeba
+/* 80382880 0037E520  4C C6 31 82 */	crclr 6
+/* 80382884 0037E524  48 00 37 51 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_80382888:
+/* 80382888 0037E528  80 19 00 08 */	lwz r0, 8(r25)
+/* 8038288C 0037E52C  3C 60 00 07 */	lis r3, 0x0006F800@ha
+/* 80382890 0037E530  3B E3 F8 00 */	addi r31, r3, 0x0006F800@l
+/* 80382894 0037E534  2C 00 00 02 */	cmpwi r0, 2
+/* 80382898 0037E538  40 82 00 08 */	bne lbl_803828A0
+/* 8038289C 0037E53C  3F E0 00 06 */	lis r31, 6
+lbl_803828A0:
+/* 803828A0 0037E540  7F E3 FB 78 */	mr r3, r31
+/* 803828A4 0037E544  4B FF 98 95 */	bl "HBMAllocMem2__FUl"
+/* 803828A8 0037E548  7C 64 1B 78 */	mr r4, r3
+/* 803828AC 0037E54C  80 79 05 E0 */	lwz r3, 0x5e0(r25)
+/* 803828B0 0037E550  7F E5 FB 78 */	mr r5, r31
+/* 803828B4 0037E554  48 02 F3 85 */	bl "Create__Q36nw4hbm3snd9SoundHeapFPvUl"
+/* 803828B8 0037E558  80 79 05 E0 */	lwz r3, 0x5e0(r25)
+/* 803828BC 0037E55C  48 00 00 79 */	bl "IsValid__Q36nw4hbm3snd9SoundHeapCFv"
+/* 803828C0 0037E560  2C 03 00 00 */	cmpwi r3, 0
+/* 803828C4 0037E564  40 82 00 18 */	bne lbl_803828DC
+/* 803828C8 0037E568  38 7E 00 48 */	addi r3, r30, 0x48
+/* 803828CC 0037E56C  38 BE 0E 50 */	addi r5, r30, 0xe50
+/* 803828D0 0037E570  38 80 0E C2 */	li r4, 0xec2
+/* 803828D4 0037E574  4C C6 31 82 */	crclr 6
+/* 803828D8 0037E578  48 00 36 FD */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_803828DC:
+/* 803828DC 0037E57C  80 79 05 D0 */	lwz r3, 0x5d0(r25)
+/* 803828E0 0037E580  38 80 00 00 */	li r4, 0
+/* 803828E4 0037E584  80 B9 05 E0 */	lwz r5, 0x5e0(r25)
+/* 803828E8 0037E588  38 C0 00 00 */	li r6, 0
+/* 803828EC 0037E58C  48 00 00 45 */	bl "LoadGroup__Q36nw4hbm3snd18SoundArchivePlayerFiPQ36nw4hbm3snd22SoundMemoryAllocatableUl"
+/* 803828F0 0037E590  2C 03 00 00 */	cmpwi r3, 0
+/* 803828F4 0037E594  40 82 00 24 */	bne lbl_80382918
+/* 803828F8 0037E598  38 7E 00 48 */	addi r3, r30, 0x48
+/* 803828FC 0037E59C  38 BE 0D E4 */	addi r5, r30, 0xde4
+/* 80382900 0037E5A0  38 80 0E C5 */	li r4, 0xec5
+/* 80382904 0037E5A4  4C C6 31 82 */	crclr 6
+/* 80382908 0037E5A8  48 00 36 CD */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+/* 8038290C 0037E5AC  48 00 00 0C */	b lbl_80382918
+lbl_80382910:
+/* 80382910 0037E5B0  38 00 00 00 */	li r0, 0
+/* 80382914 0037E5B4  90 19 05 E0 */	stw r0, 0x5e0(r25)
+lbl_80382918:
+/* 80382918 0037E5B8  39 61 00 30 */	addi r11, r1, 0x30
+/* 8038291C 0037E5BC  48 08 CA 9D */	bl "_restgpr_25"
+/* 80382920 0037E5C0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80382924 0037E5C4  7C 08 03 A6 */	mtlr r0
+/* 80382928 0037E5C8  38 21 00 30 */	addi r1, r1, 0x30
+/* 8038292C 0037E5CC  4E 80 00 20 */	blr 
+
+.global "LoadGroup__Q36nw4hbm3snd18SoundArchivePlayerFiPQ36nw4hbm3snd22SoundMemoryAllocatableUl"
+"LoadGroup__Q36nw4hbm3snd18SoundArchivePlayerFiPQ36nw4hbm3snd22SoundMemoryAllocatableUl":
+/* 80382930 0037E5D0  48 02 D8 7C */	b "LoadGroup__Q36nw4hbm3snd18SoundArchivePlayerFUlPQ36nw4hbm3snd22SoundMemoryAllocatableUl"
+
+.global "IsValid__Q36nw4hbm3snd9SoundHeapCFv"
+"IsValid__Q36nw4hbm3snd9SoundHeapCFv":
+/* 80382934 0037E5D4  38 63 00 1C */	addi r3, r3, 0x1c
+/* 80382938 0037E5D8  48 00 00 04 */	b "IsValid__Q46nw4hbm3snd6detail9FrameHeapCFv"
+
+.global "IsValid__Q46nw4hbm3snd6detail9FrameHeapCFv"
+"IsValid__Q46nw4hbm3snd6detail9FrameHeapCFv":
+/* 8038293C 0037E5DC  80 63 00 00 */	lwz r3, 0(r3)
+/* 80382940 0037E5E0  7C 03 00 D0 */	neg r0, r3
+/* 80382944 0037E5E4  7C 00 1B 78 */	or r0, r0, r3
+/* 80382948 0037E5E8  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 8038294C 0037E5EC  4E 80 00 20 */	blr 
+
+.global "__ct__Q36nw4hbm3snd11SoundHandleFv"
+"__ct__Q36nw4hbm3snd11SoundHandleFv":
+/* 80382950 0037E5F0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80382954 0037E5F4  7C 08 02 A6 */	mflr r0
+/* 80382958 0037E5F8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8038295C 0037E5FC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80382960 0037E600  7C 7F 1B 78 */	mr r31, r3
+/* 80382964 0037E604  4B FF B3 35 */	bl "__ct__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+/* 80382968 0037E608  38 00 00 00 */	li r0, 0
+/* 8038296C 0037E60C  7F E3 FB 78 */	mr r3, r31
+/* 80382970 0037E610  90 1F 00 00 */	stw r0, 0(r31)
+/* 80382974 0037E614  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80382978 0037E618  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8038297C 0037E61C  7C 08 03 A6 */	mtlr r0
+/* 80382980 0037E620  38 21 00 10 */	addi r1, r1, 0x10
+/* 80382984 0037E624  4E 80 00 20 */	blr 
+
+.global "__dt__Q36nw4hbm3snd11SoundHandleFv"
+"__dt__Q36nw4hbm3snd11SoundHandleFv":
+/* 80382988 0037E628  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8038298C 0037E62C  7C 08 02 A6 */	mflr r0
+/* 80382990 0037E630  2C 03 00 00 */	cmpwi r3, 0
+/* 80382994 0037E634  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80382998 0037E638  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8038299C 0037E63C  7C 9F 23 78 */	mr r31, r4
+/* 803829A0 0037E640  93 C1 00 08 */	stw r30, 8(r1)
+/* 803829A4 0037E644  7C 7E 1B 78 */	mr r30, r3
+/* 803829A8 0037E648  41 82 00 24 */	beq lbl_803829CC
+/* 803829AC 0037E64C  48 02 F1 01 */	bl "DetachSound__Q36nw4hbm3snd11SoundHandleFv"
+/* 803829B0 0037E650  7F C3 F3 78 */	mr r3, r30
+/* 803829B4 0037E654  38 80 00 00 */	li r4, 0
+/* 803829B8 0037E658  4B FF B2 45 */	bl "__dt__Q46nw4hbm2ut21@unnamed@HBMBase_cpp@11NonCopyableFv"
+/* 803829BC 0037E65C  2C 1F 00 00 */	cmpwi r31, 0
+/* 803829C0 0037E660  40 81 00 0C */	ble lbl_803829CC
+/* 803829C4 0037E664  7F C3 F3 78 */	mr r3, r30
+/* 803829C8 0037E668  4B ED 75 E5 */	bl "__dl__FPv"
+lbl_803829CC:
+/* 803829CC 0037E66C  7F C3 F3 78 */	mr r3, r30
+/* 803829D0 0037E670  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803829D4 0037E674  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803829D8 0037E678  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803829DC 0037E67C  7C 08 03 A6 */	mtlr r0
+/* 803829E0 0037E680  38 21 00 10 */	addi r1, r1, 0x10
+/* 803829E4 0037E684  4E 80 00 20 */	blr 
+
+.global "create_dvd_sound__Q210homebutton10HomeButtonFPCc"
+"create_dvd_sound__Q210homebutton10HomeButtonFPCc":
+/* 803829E8 0037E688  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803829EC 0037E68C  7C 08 02 A6 */	mflr r0
+/* 803829F0 0037E690  3C A0 80 59 */	lis r5, "sMutex__Q210homebutton10HomeButton"@ha
+/* 803829F4 0037E694  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803829F8 0037E698  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803829FC 0037E69C  3F E0 80 47 */	lis r31, lbl_80468288@ha
+/* 80382A00 0037E6A0  3B FF 82 88 */	addi r31, r31, lbl_80468288@l
+/* 80382A04 0037E6A4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382A08 0037E6A8  7C 9E 23 78 */	mr r30, r4
+/* 80382A0C 0037E6AC  38 85 1C A8 */	addi r4, r5, "sMutex__Q210homebutton10HomeButton"@l
+/* 80382A10 0037E6B0  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80382A14 0037E6B4  7C 7D 1B 78 */	mr r29, r3
+/* 80382A18 0037E6B8  38 61 00 08 */	addi r3, r1, 8
+/* 80382A1C 0037E6BC  4B FF B2 31 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 80382A20 0037E6C0  4B FB 2F A9 */	bl "AICheckInit"
+/* 80382A24 0037E6C4  2C 03 00 00 */	cmpwi r3, 0
+/* 80382A28 0037E6C8  40 82 00 10 */	bne lbl_80382A38
+/* 80382A2C 0037E6CC  38 60 00 00 */	li r3, 0
+/* 80382A30 0037E6D0  4B FB 2F A1 */	bl "AIInit"
+/* 80382A34 0037E6D4  4B FB 38 F9 */	bl "AXInit"
+lbl_80382A38:
+/* 80382A38 0037E6D8  38 60 00 04 */	li r3, 4
+/* 80382A3C 0037E6DC  38 80 00 03 */	li r4, 3
+/* 80382A40 0037E6E0  48 03 14 75 */	bl "InitSoundSystem__Q36nw4hbm3snd11SoundSystemFll"
+/* 80382A44 0037E6E4  38 60 01 8C */	li r3, 0x18c
+/* 80382A48 0037E6E8  4B FF 96 F1 */	bl "HBMAllocMem2__FUl"
+/* 80382A4C 0037E6EC  2C 03 00 00 */	cmpwi r3, 0
+/* 80382A50 0037E6F0  41 82 00 20 */	beq lbl_80382A70
+/* 80382A54 0037E6F4  7C 64 1B 78 */	mr r4, r3
+/* 80382A58 0037E6F8  38 60 01 8C */	li r3, 0x18c
+/* 80382A5C 0037E6FC  4B C9 76 E5 */	bl "__nw__FUlPv"
+/* 80382A60 0037E700  2C 03 00 00 */	cmpwi r3, 0
+/* 80382A64 0037E704  41 82 00 08 */	beq lbl_80382A6C
+/* 80382A68 0037E708  48 01 F7 D5 */	bl "__ct__Q36nw4hbm3snd15DvdSoundArchiveFv"
+lbl_80382A6C:
+/* 80382A6C 0037E70C  90 7D 05 D4 */	stw r3, 0x5d4(r29)
+lbl_80382A70:
+/* 80382A70 0037E710  80 1D 05 D4 */	lwz r0, 0x5d4(r29)
+/* 80382A74 0037E714  2C 00 00 00 */	cmpwi r0, 0
+/* 80382A78 0037E718  40 82 00 18 */	bne lbl_80382A90
+/* 80382A7C 0037E71C  38 7F 00 48 */	addi r3, r31, 0x48
+/* 80382A80 0037E720  38 BF 0E 80 */	addi r5, r31, 0xe80
+/* 80382A84 0037E724  38 80 0F 10 */	li r4, 0xf10
+/* 80382A88 0037E728  4C C6 31 82 */	crclr 6
+/* 80382A8C 0037E72C  48 00 35 49 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_80382A90:
+/* 80382A90 0037E730  80 7D 05 D4 */	lwz r3, 0x5d4(r29)
+/* 80382A94 0037E734  7F C4 F3 78 */	mr r4, r30
+/* 80382A98 0037E738  48 01 F9 5D */	bl "Open__Q36nw4hbm3snd15DvdSoundArchiveFPCc"
+/* 80382A9C 0037E73C  2C 03 00 00 */	cmpwi r3, 0
+/* 80382AA0 0037E740  40 82 00 1C */	bne lbl_80382ABC
+/* 80382AA4 0037E744  7F C6 F3 78 */	mr r6, r30
+/* 80382AA8 0037E748  38 7F 00 48 */	addi r3, r31, 0x48
+/* 80382AAC 0037E74C  38 BF 0E AC */	addi r5, r31, 0xeac
+/* 80382AB0 0037E750  38 80 0F 15 */	li r4, 0xf15
+/* 80382AB4 0037E754  4C C6 31 82 */	crclr 6
+/* 80382AB8 0037E758  48 00 35 1D */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_80382ABC:
+/* 80382ABC 0037E75C  80 7D 05 D4 */	lwz r3, 0x5d4(r29)
+/* 80382AC0 0037E760  48 00 00 55 */	bl "GetHeaderSize__Q36nw4hbm3snd15DvdSoundArchiveCFv"
+/* 80382AC4 0037E764  7C 7F 1B 78 */	mr r31, r3
+/* 80382AC8 0037E768  4B FF 96 71 */	bl "HBMAllocMem2__FUl"
+/* 80382ACC 0037E76C  7C 64 1B 78 */	mr r4, r3
+/* 80382AD0 0037E770  80 7D 05 D4 */	lwz r3, 0x5d4(r29)
+/* 80382AD4 0037E774  7F E5 FB 78 */	mr r5, r31
+/* 80382AD8 0037E778  48 01 FC F5 */	bl "LoadHeader__Q36nw4hbm3snd15DvdSoundArchiveFPvUl"
+/* 80382ADC 0037E77C  80 9D 05 D4 */	lwz r4, 0x5d4(r29)
+/* 80382AE0 0037E780  7F A3 EB 78 */	mr r3, r29
+/* 80382AE4 0037E784  38 A0 00 01 */	li r5, 1
+/* 80382AE8 0037E788  4B FF FC 25 */	bl "create_sound__Q210homebutton10HomeButtonFPQ36nw4hbm3snd12SoundArchiveb"
+/* 80382AEC 0037E78C  38 61 00 08 */	addi r3, r1, 8
+/* 80382AF0 0037E790  38 80 FF FF */	li r4, -1
+/* 80382AF4 0037E794  4B FF B0 A5 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 80382AF8 0037E798  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80382AFC 0037E79C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80382B00 0037E7A0  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382B04 0037E7A4  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80382B08 0037E7A8  7C 08 03 A6 */	mtlr r0
+/* 80382B0C 0037E7AC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80382B10 0037E7B0  4E 80 00 20 */	blr 
+
+.global "GetHeaderSize__Q36nw4hbm3snd15DvdSoundArchiveCFv"
+"GetHeaderSize__Q36nw4hbm3snd15DvdSoundArchiveCFv":
+/* 80382B14 0037E7B4  38 63 01 08 */	addi r3, r3, 0x108
+/* 80382B18 0037E7B8  48 00 00 04 */	b "GetInfoChunkSize__Q46nw4hbm3snd6detail22SoundArchiveFileReaderCFv"
+
+.global "GetInfoChunkSize__Q46nw4hbm3snd6detail22SoundArchiveFileReaderCFv"
+"GetInfoChunkSize__Q46nw4hbm3snd6detail22SoundArchiveFileReaderCFv":
+/* 80382B1C 0037E7BC  80 63 00 1C */	lwz r3, 0x1c(r3)
+/* 80382B20 0037E7C0  4E 80 00 20 */	blr 
+
+.global "update_sound__Q210homebutton10HomeButtonFv"
+"update_sound__Q210homebutton10HomeButtonFv":
+/* 80382B24 0037E7C4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80382B28 0037E7C8  7C 08 02 A6 */	mflr r0
+/* 80382B2C 0037E7CC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80382B30 0037E7D0  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80382B34 0037E7D4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382B38 0037E7D8  7C 7E 1B 78 */	mr r30, r3
+/* 80382B3C 0037E7DC  80 03 05 D0 */	lwz r0, 0x5d0(r3)
+/* 80382B40 0037E7E0  2C 00 00 00 */	cmpwi r0, 0
+/* 80382B44 0037E7E4  41 82 00 28 */	beq lbl_80382B6C
+/* 80382B48 0037E7E8  3C 80 80 59 */	lis r4, "sMutex__Q210homebutton10HomeButton"@ha
+/* 80382B4C 0037E7EC  38 61 00 08 */	addi r3, r1, 8
+/* 80382B50 0037E7F0  38 84 1C A8 */	addi r4, r4, "sMutex__Q210homebutton10HomeButton"@l
+/* 80382B54 0037E7F4  4B FF B0 F9 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 80382B58 0037E7F8  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 80382B5C 0037E7FC  48 02 BF 91 */	bl "Update__Q36nw4hbm3snd18SoundArchivePlayerFv"
+/* 80382B60 0037E800  38 61 00 08 */	addi r3, r1, 8
+/* 80382B64 0037E804  38 80 FF FF */	li r4, -1
+/* 80382B68 0037E808  4B FF B0 31 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+lbl_80382B6C:
+/* 80382B6C 0037E80C  3B E0 00 00 */	li r31, 0
+lbl_80382B70:
+/* 80382B70 0037E810  80 7E 02 5C */	lwz r3, 0x25c(r30)
+/* 80382B74 0037E814  48 00 09 A5 */	bl "updateSound__Q210homebutton10ControllerFv"
+/* 80382B78 0037E818  3B FF 00 01 */	addi r31, r31, 1
+/* 80382B7C 0037E81C  3B DE 00 04 */	addi r30, r30, 4
+/* 80382B80 0037E820  2C 1F 00 04 */	cmpwi r31, 4
+/* 80382B84 0037E824  41 80 FF EC */	blt lbl_80382B70
+/* 80382B88 0037E828  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80382B8C 0037E82C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80382B90 0037E830  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382B94 0037E834  7C 08 03 A6 */	mtlr r0
+/* 80382B98 0037E838  38 21 00 20 */	addi r1, r1, 0x20
+/* 80382B9C 0037E83C  4E 80 00 20 */	blr 
+
+.global "play_sound__Q210homebutton10HomeButtonFi"
+"play_sound__Q210homebutton10HomeButtonFi":
+/* 80382BA0 0037E840  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80382BA4 0037E844  7C 08 02 A6 */	mflr r0
+/* 80382BA8 0037E848  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80382BAC 0037E84C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80382BB0 0037E850  7C 9F 23 78 */	mr r31, r4
+/* 80382BB4 0037E854  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382BB8 0037E858  7C 7E 1B 78 */	mr r30, r3
+/* 80382BBC 0037E85C  80 A3 00 04 */	lwz r5, 4(r3)
+/* 80382BC0 0037E860  38 60 00 00 */	li r3, 0
+/* 80382BC4 0037E864  81 85 00 14 */	lwz r12, 0x14(r5)
+/* 80382BC8 0037E868  2C 0C 00 00 */	cmpwi r12, 0
+/* 80382BCC 0037E86C  41 82 00 10 */	beq lbl_80382BDC
+/* 80382BD0 0037E870  38 60 00 05 */	li r3, 5
+/* 80382BD4 0037E874  7D 89 03 A6 */	mtctr r12
+/* 80382BD8 0037E878  4E 80 04 21 */	bctrl 
+lbl_80382BDC:
+/* 80382BDC 0037E87C  2C 03 00 00 */	cmpwi r3, 0
+/* 80382BE0 0037E880  40 82 00 58 */	bne lbl_80382C38
+/* 80382BE4 0037E884  80 1E 05 D0 */	lwz r0, 0x5d0(r30)
+/* 80382BE8 0037E888  2C 00 00 00 */	cmpwi r0, 0
+/* 80382BEC 0037E88C  41 82 00 4C */	beq lbl_80382C38
+/* 80382BF0 0037E890  80 1E 05 E4 */	lwz r0, 0x5e4(r30)
+/* 80382BF4 0037E894  2C 00 00 00 */	cmpwi r0, 0
+/* 80382BF8 0037E898  41 82 00 40 */	beq lbl_80382C38
+/* 80382BFC 0037E89C  3C 80 80 59 */	lis r4, "sMutex__Q210homebutton10HomeButton"@ha
+/* 80382C00 0037E8A0  38 61 00 08 */	addi r3, r1, 8
+/* 80382C04 0037E8A4  38 84 1C A8 */	addi r4, r4, "sMutex__Q210homebutton10HomeButton"@l
+/* 80382C08 0037E8A8  4B FF B0 45 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 80382C0C 0037E8AC  80 7E 05 E4 */	lwz r3, 0x5e4(r30)
+/* 80382C10 0037E8B0  48 02 EE 9D */	bl "DetachSound__Q36nw4hbm3snd11SoundHandleFv"
+/* 80382C14 0037E8B4  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 80382C18 0037E8B8  7F E5 FB 78 */	mr r5, r31
+/* 80382C1C 0037E8BC  80 9E 05 E4 */	lwz r4, 0x5e4(r30)
+/* 80382C20 0037E8C0  38 C0 00 00 */	li r6, 0
+/* 80382C24 0037E8C4  38 63 00 0C */	addi r3, r3, 0xc
+/* 80382C28 0037E8C8  48 00 00 29 */	bl "StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleiPCQ46nw4hbm3snd14SoundStartable9StartInfo"
+/* 80382C2C 0037E8CC  38 61 00 08 */	addi r3, r1, 8
+/* 80382C30 0037E8D0  38 80 FF FF */	li r4, -1
+/* 80382C34 0037E8D4  4B FF AF 65 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+lbl_80382C38:
+/* 80382C38 0037E8D8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80382C3C 0037E8DC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80382C40 0037E8E0  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382C44 0037E8E4  7C 08 03 A6 */	mtlr r0
+/* 80382C48 0037E8E8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80382C4C 0037E8EC  4E 80 00 20 */	blr 
+
+.global "StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleiPCQ46nw4hbm3snd14SoundStartable9StartInfo"
+"StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleiPCQ46nw4hbm3snd14SoundStartable9StartInfo":
+/* 80382C50 0037E8F0  48 00 00 04 */	b "StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleUlPCQ46nw4hbm3snd14SoundStartable9StartInfo"
+
+.global "StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleUlPCQ46nw4hbm3snd14SoundStartable9StartInfo"
+"StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleUlPCQ46nw4hbm3snd14SoundStartable9StartInfo":
+/* 80382C54 0037E8F4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80382C58 0037E8F8  7C 08 02 A6 */	mflr r0
+/* 80382C5C 0037E8FC  7C C8 33 78 */	mr r8, r6
+/* 80382C60 0037E900  38 C0 00 00 */	li r6, 0
+/* 80382C64 0037E904  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80382C68 0037E908  38 E0 00 00 */	li r7, 0
+/* 80382C6C 0037E90C  48 03 11 A9 */	bl "detail_StartSound__Q36nw4hbm3snd14SoundStartableFPQ36nw4hbm3snd11SoundHandleUlPQ56nw4hbm3snd6detail10BasicSound14AmbientArgInfoPQ46nw4hbm3snd6detail19ExternalSoundPlayerPCQ46nw4hbm3snd14SoundStartable9StartInfo"
+/* 80382C70 0037E910  7C 60 00 34 */	cntlzw r0, r3
+/* 80382C74 0037E914  54 03 D9 7E */	srwi r3, r0, 5
+/* 80382C78 0037E918  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80382C7C 0037E91C  7C 08 03 A6 */	mtlr r0
+/* 80382C80 0037E920  38 21 00 10 */	addi r1, r1, 0x10
+/* 80382C84 0037E924  4E 80 00 20 */	blr 
+
+.global "fadeout_sound__Q210homebutton10HomeButtonFf"
+"fadeout_sound__Q210homebutton10HomeButtonFf":
+/* 80382C88 0037E928  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80382C8C 0037E92C  7C 08 02 A6 */	mflr r0
+/* 80382C90 0037E930  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80382C94 0037E934  DB E1 00 20 */	stfd f31, 0x20(r1)
+/* 80382C98 0037E938  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
+/* 80382C9C 0037E93C  FF E0 08 90 */	fmr f31, f1
+/* 80382CA0 0037E940  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80382CA4 0037E944  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80382CA8 0037E948  7C 7E 1B 78 */	mr r30, r3
+/* 80382CAC 0037E94C  80 03 00 B0 */	lwz r0, 0xb0(r3)
+/* 80382CB0 0037E950  2C 00 00 03 */	cmpwi r0, 3
+/* 80382CB4 0037E954  41 82 00 84 */	beq lbl_80382D38
+/* 80382CB8 0037E958  88 03 00 8E */	lbz r0, 0x8e(r3)
+/* 80382CBC 0037E95C  2C 00 00 00 */	cmpwi r0, 0
+/* 80382CC0 0037E960  41 82 00 20 */	beq lbl_80382CE0
+/* 80382CC4 0037E964  C0 02 A6 F4 */	lfs f0, lbl_805DB914-_SDA2_BASE_(r2)
+/* 80382CC8 0037E968  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80382CCC 0037E96C  FC 00 00 1E */	fctiwz f0, f0
+/* 80382CD0 0037E970  D8 01 00 10 */	stfd f0, 0x10(r1)
+/* 80382CD4 0037E974  80 61 00 14 */	lwz r3, 0x14(r1)
+/* 80382CD8 0037E978  54 63 04 3E */	clrlwi r3, r3, 0x10
+/* 80382CDC 0037E97C  4B FB 4E E1 */	bl "AXSetAuxAReturnVolume"
+lbl_80382CE0:
+/* 80382CE0 0037E980  80 1E 05 D0 */	lwz r0, 0x5d0(r30)
+/* 80382CE4 0037E984  2C 00 00 00 */	cmpwi r0, 0
+/* 80382CE8 0037E988  41 82 00 50 */	beq lbl_80382D38
+/* 80382CEC 0037E98C  3C 80 80 59 */	lis r4, "sMutex__Q210homebutton10HomeButton"@ha
+/* 80382CF0 0037E990  38 61 00 08 */	addi r3, r1, 8
+/* 80382CF4 0037E994  38 84 1C A8 */	addi r4, r4, "sMutex__Q210homebutton10HomeButton"@l
+/* 80382CF8 0037E998  4B FF AF 55 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 80382CFC 0037E99C  3B E0 00 00 */	li r31, 0
+/* 80382D00 0037E9A0  48 00 00 1C */	b lbl_80382D1C
+lbl_80382D04:
+/* 80382D04 0037E9A4  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 80382D08 0037E9A8  7F E4 FB 78 */	mr r4, r31
+/* 80382D0C 0037E9AC  4B FF AF 3D */	bl "GetSoundPlayer__Q36nw4hbm3snd18SoundArchivePlayerFi"
+/* 80382D10 0037E9B0  FC 20 F8 90 */	fmr f1, f31
+/* 80382D14 0037E9B4  48 02 F5 01 */	bl "SetVolume__Q36nw4hbm3snd11SoundPlayerFf"
+/* 80382D18 0037E9B8  3B FF 00 01 */	addi r31, r31, 1
+lbl_80382D1C:
+/* 80382D1C 0037E9BC  80 7E 05 D0 */	lwz r3, 0x5d0(r30)
+/* 80382D20 0037E9C0  4B FF AF 21 */	bl "GetSoundPlayerCount__Q36nw4hbm3snd18SoundArchivePlayerCFv"
+/* 80382D24 0037E9C4  7C 1F 18 40 */	cmplw r31, r3
+/* 80382D28 0037E9C8  41 80 FF DC */	blt lbl_80382D04
+/* 80382D2C 0037E9CC  38 61 00 08 */	addi r3, r1, 8
+/* 80382D30 0037E9D0  38 80 FF FF */	li r4, -1
+/* 80382D34 0037E9D4  4B FF AE 65 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+lbl_80382D38:
+/* 80382D38 0037E9D8  E3 E1 00 28 */	psq_l f31, 40(r1), 0, qr0
+/* 80382D3C 0037E9DC  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80382D40 0037E9E0  CB E1 00 20 */	lfd f31, 0x20(r1)
+/* 80382D44 0037E9E4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80382D48 0037E9E8  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80382D4C 0037E9EC  7C 08 03 A6 */	mtlr r0
+/* 80382D50 0037E9F0  38 21 00 30 */	addi r1, r1, 0x30
+/* 80382D54 0037E9F4  4E 80 00 20 */	blr 
+
+.global "create__Q310homebutton3gui9InterfaceFv"
+"create__Q310homebutton3gui9InterfaceFv":
+/* 80382D58 0037E9F8  4E 80 00 20 */	blr 
+
+.global "init__Q310homebutton3gui9InterfaceFv"
+"init__Q310homebutton3gui9InterfaceFv":
+/* 80382D5C 0037E9FC  4E 80 00 20 */	blr 
+
+.global "calc__Q310homebutton3gui9InterfaceFv"
+"calc__Q310homebutton3gui9InterfaceFv":
+/* 80382D60 0037EA00  4E 80 00 20 */	blr 
+
+.global "draw__Q310homebutton3gui9InterfaceFv"
+"draw__Q310homebutton3gui9InterfaceFv":
+/* 80382D64 0037EA04  4E 80 00 20 */	blr 
+
+.global "draw__Q310homebutton3gui9InterfaceFRA3_A4_f"
+"draw__Q310homebutton3gui9InterfaceFRA3_A4_f":
+/* 80382D68 0037EA08  4E 80 00 20 */	blr 
+
+.global "onEvent__Q310homebutton3gui12EventHandlerFUlUlPv"
+"onEvent__Q310homebutton3gui12EventHandlerFUlUlPv":
+/* 80382D6C 0037EA0C  4E 80 00 20 */	blr 
+
+.section .rodata, "a"  # 0x80418C80 - 0x80420060
+.global "scAnmTable__10homebutton"
+"scAnmTable__10homebutton":
+	.incbin "baserom.dol", 0x418D08, 0x60
+.global "scGroupAnmTable__10homebutton"
+"scGroupAnmTable__10homebutton":
+	.incbin "baserom.dol", 0x418D68, 0x250
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global lbl_80468288
+lbl_80468288:
+	.incbin "baserom.dol", 0x464388, 0x48
+.global lbl_804682D0
+lbl_804682D0:
+	.incbin "baserom.dol", 0x4643D0, 0xC
+.global lbl_804682DC
+lbl_804682DC:
+	.incbin "baserom.dol", 0x4643DC, 0x7C
+.global "scCursorLytName__Q210homebutton10HomeButton"
+"scCursorLytName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464458, 0x40
+.global "scBtnName__Q210homebutton10HomeButton"
+"scBtnName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464498, 0x40
+.global "scTxtName__Q210homebutton10HomeButton"
+"scTxtName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x4644D8, 0x80
+.global "scGrName__Q210homebutton10HomeButton"
+"scGrName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464558, 0x5C
+.global "scAnimName__Q210homebutton10HomeButton"
+"scAnimName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x4645B4, 0x144
+.global "scPairGroupAnimName__Q210homebutton10HomeButton"
+"scPairGroupAnimName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x4646F8, 0x110
+.global "scPairGroupName__Q210homebutton10HomeButton"
+"scPairGroupName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464808, 0x210
+.global "scGroupAnimName__Q210homebutton10HomeButton"
+"scGroupAnimName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464A18, 0x1B8
+.global "scGroupName__Q210homebutton10HomeButton"
+"scGroupName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464BD0, 0xC8
+.global "scFuncPaneName__Q210homebutton10HomeButton"
+"scFuncPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464C98, 0x88
+.global "scFuncTouchPaneName__Q210homebutton10HomeButton"
+"scFuncTouchPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464D20, 0x4C
+.global "scFuncTextPaneName__Q210homebutton10HomeButton"
+"scFuncTextPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464D6C, 0x10C
+.global "scBatteryPaneName__Q210homebutton10HomeButton"
+"scBatteryPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x464E78, 0x1FC
+.global lbl_80468F74
+lbl_80468F74:
+	.incbin "baserom.dol", 0x465074, 0x50
+.global lbl_80468FC4
+lbl_80468FC4:
+	.incbin "baserom.dol", 0x4650C4, 0x28
+.global lbl_80468FEC
+lbl_80468FEC:
+	.incbin "baserom.dol", 0x4650EC, 0x28
+.global lbl_80469014
+lbl_80469014:
+	.incbin "baserom.dol", 0x465114, 0x1B4
+.global "__vt__Q210homebutton22HomeButtonEventHandler"
+"__vt__Q210homebutton22HomeButtonEventHandler":
+	.incbin "baserom.dol", 0x4652C8, 0x10
+.global "__vt__Q310homebutton3gui12EventHandler"
+"__vt__Q310homebutton3gui12EventHandler":
+	.incbin "baserom.dol", 0x4652D8, 0x10
+.global "__vt__Q310homebutton3gui9Interface"
+"__vt__Q310homebutton3gui9Interface":
+	.incbin "baserom.dol", 0x4652E8, 0x50
+.global lbl_80469238
+lbl_80469238:
+	.incbin "baserom.dol", 0x465338, 0x24
+.global lbl_8046925C
+lbl_8046925C:
+	.incbin "baserom.dol", 0x46535C, 0xC
+
+.section .bss, "wa"  # 0x80488180 - 0x805DC448
+.global "sAllocator"
+"sAllocator":
+	.skip 0x10
+.global "sAllocator2"
+"sAllocator2":
+	.skip 0x10
+.global "sMutex__Q210homebutton10HomeButton"
+"sMutex__Q210homebutton10HomeButton":
+	.skip 0x18
+
+.section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
+.global "__HBMVersion"
+"__HBMVersion":
+	.incbin "baserom.dol", 0x486F38, 0x4
+.global "spAllocator"
+"spAllocator":
+	.incbin "baserom.dol", 0x486F3C, 0xC
+.global "scCursorPaneName__Q210homebutton10HomeButton"
+"scCursorPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x486F48, 0xC
+.global "scCursorRotPaneName__Q210homebutton10HomeButton"
+"scCursorRotPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x486F54, 0xC
+.global "scCursorSRotPaneName__Q210homebutton10HomeButton"
+"scCursorSRotPaneName__Q210homebutton10HomeButton":
+	.incbin "baserom.dol", 0x486F60, 0x88
+.global lbl_805D7468
+lbl_805D7468:
+	.incbin "baserom.dol", 0x486FE8, 0x8
+.global lbl_805D7470
+lbl_805D7470:
+	.incbin "baserom.dol", 0x486FF0, 0x8
+.global lbl_805D7478
+lbl_805D7478:
+	.incbin "baserom.dol", 0x486FF8, 0x8
+.global lbl_805D7480
+lbl_805D7480:
+	.incbin "baserom.dol", 0x487000, 0x8
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "spHomeButtonObj__Q210homebutton10HomeButton"
+"spHomeButtonObj__Q210homebutton10HomeButton":
+	.skip 0x8
+
+.section .sdata2, "a"  # 0x805D9220 - 0x805DC420
+.global lbl_805DB8A0
+lbl_805DB8A0:
+	.incbin "baserom.dol", 0x489BC0, 0x4
+.global lbl_805DB8A4
+lbl_805DB8A4:
+	.incbin "baserom.dol", 0x489BC4, 0x4
+.global lbl_805DB8A8
+lbl_805DB8A8:
+	.incbin "baserom.dol", 0x489BC8, 0x8
+.global lbl_805DB8B0
+lbl_805DB8B0:
+	.incbin "baserom.dol", 0x489BD0, 0x8
+.global lbl_805DB8B8
+lbl_805DB8B8:
+	.incbin "baserom.dol", 0x489BD8, 0x4
+.global lbl_805DB8BC
+lbl_805DB8BC:
+	.incbin "baserom.dol", 0x489BDC, 0x4
+.global lbl_805DB8C0
+lbl_805DB8C0:
+	.incbin "baserom.dol", 0x489BE0, 0x4
+.global lbl_805DB8C4
+lbl_805DB8C4:
+	.incbin "baserom.dol", 0x489BE4, 0x4
+.global lbl_805DB8C8
+lbl_805DB8C8:
+	.incbin "baserom.dol", 0x489BE8, 0x8
+.global lbl_805DB8D0
+lbl_805DB8D0:
+	.incbin "baserom.dol", 0x489BF0, 0x4
+.global lbl_805DB8D4
+lbl_805DB8D4:
+	.incbin "baserom.dol", 0x489BF4, 0x4
+.global lbl_805DB8D8
+lbl_805DB8D8:
+	.incbin "baserom.dol", 0x489BF8, 0x4
+.global lbl_805DB8DC
+lbl_805DB8DC:
+	.incbin "baserom.dol", 0x489BFC, 0x4
+.global lbl_805DB8E0
+lbl_805DB8E0:
+	.incbin "baserom.dol", 0x489C00, 0x4
+.global lbl_805DB8E4
+lbl_805DB8E4:
+	.incbin "baserom.dol", 0x489C04, 0x4
+.global lbl_805DB8E8
+lbl_805DB8E8:
+	.incbin "baserom.dol", 0x489C08, 0x4
+.global lbl_805DB8EC
+lbl_805DB8EC:
+	.incbin "baserom.dol", 0x489C0C, 0x4
+.global lbl_805DB8F0
+lbl_805DB8F0:
+	.incbin "baserom.dol", 0x489C10, 0x4
+.global lbl_805DB8F4
+lbl_805DB8F4:
+	.incbin "baserom.dol", 0x489C14, 0x4
+.global lbl_805DB8F8
+lbl_805DB8F8:
+	.incbin "baserom.dol", 0x489C18, 0x4
+.global lbl_805DB8FC
+lbl_805DB8FC:
+	.incbin "baserom.dol", 0x489C1C, 0x4
+.global lbl_805DB900
+lbl_805DB900:
+	.incbin "baserom.dol", 0x489C20, 0x4
+.global lbl_805DB904
+lbl_805DB904:
+	.incbin "baserom.dol", 0x489C24, 0x4
+.global lbl_805DB908
+lbl_805DB908:
+	.incbin "baserom.dol", 0x489C28, 0x4
+.global lbl_805DB90C
+lbl_805DB90C:
+	.incbin "baserom.dol", 0x489C2C, 0x4
+.global lbl_805DB910
+lbl_805DB910:
+	.incbin "baserom.dol", 0x489C30, 0x4
+.global lbl_805DB914
+lbl_805DB914:
+	.incbin "baserom.dol", 0x489C34, 0x4

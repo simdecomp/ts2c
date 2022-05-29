@@ -1,0 +1,3266 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "AptFileNameCompare__FPCcPCc"
+"AptFileNameCompare__FPCcPCc":
+/* 803200BC 0031BD5C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803200C0 0031BD60  7C 08 02 A6 */	mflr r0
+/* 803200C4 0031BD64  2C 03 00 00 */	cmpwi r3, 0
+/* 803200C8 0031BD68  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803200CC 0031BD6C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803200D0 0031BD70  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803200D4 0031BD74  7C 9E 23 78 */	mr r30, r4
+/* 803200D8 0031BD78  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803200DC 0031BD7C  7C 7D 1B 78 */	mr r29, r3
+/* 803200E0 0031BD80  41 82 00 0C */	beq lbl_803200EC
+/* 803200E4 0031BD84  2C 04 00 00 */	cmpwi r4, 0
+/* 803200E8 0031BD88  40 82 00 0C */	bne lbl_803200F4
+lbl_803200EC:
+/* 803200EC 0031BD8C  38 60 00 00 */	li r3, 0
+/* 803200F0 0031BD90  48 00 00 CC */	b lbl_803201BC
+lbl_803200F4:
+/* 803200F4 0031BD94  48 0E EB 45 */	bl "strlen"
+/* 803200F8 0031BD98  7C 7F 1B 78 */	mr r31, r3
+/* 803200FC 0031BD9C  7F C3 F3 78 */	mr r3, r30
+/* 80320100 0031BDA0  48 0E EB 39 */	bl "strlen"
+/* 80320104 0031BDA4  7C 1F 18 00 */	cmpw r31, r3
+/* 80320108 0031BDA8  41 82 00 0C */	beq lbl_80320114
+/* 8032010C 0031BDAC  38 60 00 00 */	li r3, 0
+/* 80320110 0031BDB0  48 00 00 AC */	b lbl_803201BC
+lbl_80320114:
+/* 80320114 0031BDB4  7F E9 03 A6 */	mtctr r31
+/* 80320118 0031BDB8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8032011C 0031BDBC  40 81 00 9C */	ble lbl_803201B8
+lbl_80320120:
+/* 80320120 0031BDC0  88 7E 00 00 */	lbz r3, 0(r30)
+/* 80320124 0031BDC4  88 1D 00 00 */	lbz r0, 0(r29)
+/* 80320128 0031BDC8  7C 64 07 74 */	extsb r4, r3
+/* 8032012C 0031BDCC  7C 03 07 74 */	extsb r3, r0
+/* 80320130 0031BDD0  7C 03 20 00 */	cmpw r3, r4
+/* 80320134 0031BDD4  41 82 00 78 */	beq lbl_803201AC
+/* 80320138 0031BDD8  2C 03 00 61 */	cmpwi r3, 0x61
+/* 8032013C 0031BDDC  41 80 00 18 */	blt lbl_80320154
+/* 80320140 0031BDE0  2C 03 00 7A */	cmpwi r3, 0x7a
+/* 80320144 0031BDE4  41 81 00 10 */	bgt lbl_80320154
+/* 80320148 0031BDE8  38 03 FF E0 */	addi r0, r3, -32
+/* 8032014C 0031BDEC  7C 03 07 74 */	extsb r3, r0
+/* 80320150 0031BDF0  48 00 00 10 */	b lbl_80320160
+lbl_80320154:
+/* 80320154 0031BDF4  2C 03 00 5C */	cmpwi r3, 0x5c
+/* 80320158 0031BDF8  40 82 00 08 */	bne lbl_80320160
+/* 8032015C 0031BDFC  38 60 00 2F */	li r3, 0x2f
+lbl_80320160:
+/* 80320160 0031BE00  7C 60 07 74 */	extsb r0, r3
+/* 80320164 0031BE04  7C 00 20 00 */	cmpw r0, r4
+/* 80320168 0031BE08  41 82 00 44 */	beq lbl_803201AC
+/* 8032016C 0031BE0C  2C 04 00 61 */	cmpwi r4, 0x61
+/* 80320170 0031BE10  41 80 00 18 */	blt lbl_80320188
+/* 80320174 0031BE14  2C 04 00 7A */	cmpwi r4, 0x7a
+/* 80320178 0031BE18  41 81 00 10 */	bgt lbl_80320188
+/* 8032017C 0031BE1C  38 04 FF E0 */	addi r0, r4, -32
+/* 80320180 0031BE20  7C 04 07 74 */	extsb r4, r0
+/* 80320184 0031BE24  48 00 00 10 */	b lbl_80320194
+lbl_80320188:
+/* 80320188 0031BE28  2C 04 00 5C */	cmpwi r4, 0x5c
+/* 8032018C 0031BE2C  40 82 00 08 */	bne lbl_80320194
+/* 80320190 0031BE30  38 80 00 2F */	li r4, 0x2f
+lbl_80320194:
+/* 80320194 0031BE34  7C 63 07 74 */	extsb r3, r3
+/* 80320198 0031BE38  7C 80 07 74 */	extsb r0, r4
+/* 8032019C 0031BE3C  7C 03 00 00 */	cmpw r3, r0
+/* 803201A0 0031BE40  41 82 00 0C */	beq lbl_803201AC
+/* 803201A4 0031BE44  38 60 00 00 */	li r3, 0
+/* 803201A8 0031BE48  48 00 00 14 */	b lbl_803201BC
+lbl_803201AC:
+/* 803201AC 0031BE4C  3B BD 00 01 */	addi r29, r29, 1
+/* 803201B0 0031BE50  3B DE 00 01 */	addi r30, r30, 1
+/* 803201B4 0031BE54  42 00 FF 6C */	bdnz lbl_80320120
+lbl_803201B8:
+/* 803201B8 0031BE58  38 60 00 01 */	li r3, 1
+lbl_803201BC:
+/* 803201BC 0031BE5C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803201C0 0031BE60  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803201C4 0031BE64  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 803201C8 0031BE68  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 803201CC 0031BE6C  7C 08 03 A6 */	mtlr r0
+/* 803201D0 0031BE70  38 21 00 20 */	addi r1, r1, 0x20
+/* 803201D4 0031BE74  4E 80 00 20 */	blr 
+
+.global "findFile__9AptLoaderFRC9EAStringC"
+"findFile__9AptLoaderFRC9EAStringC":
+/* 803201D8 0031BE78  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803201DC 0031BE7C  7C 08 02 A6 */	mflr r0
+/* 803201E0 0031BE80  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803201E4 0031BE84  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803201E8 0031BE88  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803201EC 0031BE8C  7C BE 2B 78 */	mr r30, r5
+/* 803201F0 0031BE90  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803201F4 0031BE94  7C 9D 23 78 */	mr r29, r4
+/* 803201F8 0031BE98  93 81 00 10 */	stw r28, 0x10(r1)
+/* 803201FC 0031BE9C  7C 7C 1B 78 */	mr r28, r3
+/* 80320200 0031BEA0  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320204 0031BEA4  4B FD DE 91 */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320208 0031BEA8  48 00 00 58 */	b lbl_80320260
+lbl_8032020C:
+/* 8032020C 0031BEAC  7F C3 F3 78 */	mr r3, r30
+/* 80320210 0031BEB0  4B FE A0 E1 */	bl "c_str__9EAStringCCFv"
+/* 80320214 0031BEB4  7C 7F 1B 78 */	mr r31, r3
+/* 80320218 0031BEB8  38 61 00 0C */	addi r3, r1, 0xc
+/* 8032021C 0031BEBC  4B FD DE 71 */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 80320220 0031BEC0  80 63 00 00 */	lwz r3, 0(r3)
+/* 80320224 0031BEC4  4B FF 59 9D */	bl "GetName__7AptFileCFv"
+/* 80320228 0031BEC8  4B FE A2 1D */	bl "__opPCc__9EAStringCCFv"
+/* 8032022C 0031BECC  7F E4 FB 78 */	mr r4, r31
+/* 80320230 0031BED0  4B FF FE 8D */	bl "AptFileNameCompare__FPCcPCc"
+/* 80320234 0031BED4  28 03 00 01 */	cmplwi r3, 1
+/* 80320238 0031BED8  40 82 00 20 */	bne lbl_80320258
+/* 8032023C 0031BEDC  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320240 0031BEE0  4B FD DE 4D */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 80320244 0031BEE4  7C 64 1B 78 */	mr r4, r3
+/* 80320248 0031BEE8  7F 83 E3 78 */	mr r3, r28
+/* 8032024C 0031BEEC  80 84 00 00 */	lwz r4, 0(r4)
+/* 80320250 0031BEF0  4B ED F9 11 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80320254 0031BEF4  48 00 00 38 */	b lbl_8032028C
+lbl_80320258:
+/* 80320258 0031BEF8  38 61 00 0C */	addi r3, r1, 0xc
+/* 8032025C 0031BEFC  4B FD DE 21 */	bl "__pp__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFv"
+lbl_80320260:
+/* 80320260 0031BF00  7F A4 EB 78 */	mr r4, r29
+/* 80320264 0031BF04  38 61 00 08 */	addi r3, r1, 8
+/* 80320268 0031BF08  4B FD DE 05 */	bl "End__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 8032026C 0031BF0C  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320270 0031BF10  38 81 00 08 */	addi r4, r1, 8
+/* 80320274 0031BF14  4B FD DD DD */	bl "__ne__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 80320278 0031BF18  2C 03 00 00 */	cmpwi r3, 0
+/* 8032027C 0031BF1C  40 82 FF 90 */	bne lbl_8032020C
+/* 80320280 0031BF20  7F 83 E3 78 */	mr r3, r28
+/* 80320284 0031BF24  38 80 00 00 */	li r4, 0
+/* 80320288 0031BF28  4B ED F8 D9 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+lbl_8032028C:
+/* 8032028C 0031BF2C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80320290 0031BF30  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80320294 0031BF34  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80320298 0031BF38  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8032029C 0031BF3C  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 803202A0 0031BF40  7C 08 03 A6 */	mtlr r0
+/* 803202A4 0031BF44  38 21 00 20 */	addi r1, r1, 0x20
+/* 803202A8 0031BF48  4E 80 00 20 */	blr 
+
+.global "__dt__9AptLoaderFv"
+"__dt__9AptLoaderFv":
+/* 803202AC 0031BF4C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803202B0 0031BF50  7C 08 02 A6 */	mflr r0
+/* 803202B4 0031BF54  2C 03 00 00 */	cmpwi r3, 0
+/* 803202B8 0031BF58  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803202BC 0031BF5C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803202C0 0031BF60  7C 9F 23 78 */	mr r31, r4
+/* 803202C4 0031BF64  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803202C8 0031BF68  7C 7E 1B 78 */	mr r30, r3
+/* 803202CC 0031BF6C  41 82 00 60 */	beq lbl_8032032C
+/* 803202D0 0031BF70  48 00 00 2C */	b lbl_803202FC
+lbl_803202D4:
+/* 803202D4 0031BF74  7F C4 F3 78 */	mr r4, r30
+/* 803202D8 0031BF78  38 61 00 08 */	addi r3, r1, 8
+/* 803202DC 0031BF7C  4B FD DD B9 */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 803202E0 0031BF80  38 61 00 08 */	addi r3, r1, 8
+/* 803202E4 0031BF84  4B FD DD A9 */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 803202E8 0031BF88  80 63 00 00 */	lwz r3, 0(r3)
+/* 803202EC 0031BF8C  4B FF 58 D5 */	bl "GetName__7AptFileCFv"
+/* 803202F0 0031BF90  7C 64 1B 78 */	mr r4, r3
+/* 803202F4 0031BF94  7F C3 F3 78 */	mr r3, r30
+/* 803202F8 0031BF98  48 00 06 65 */	bl "CancelPreloadedAnimation__9AptLoaderFRC9EAStringC"
+lbl_803202FC:
+/* 803202FC 0031BF9C  7F C3 F3 78 */	mr r3, r30
+/* 80320300 0031BFA0  4B FD DC E1 */	bl "Empty__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320304 0031BFA4  2C 03 00 00 */	cmpwi r3, 0
+/* 80320308 0031BFA8  41 82 FF CC */	beq lbl_803202D4
+/* 8032030C 0031BFAC  7F C3 F3 78 */	mr r3, r30
+/* 80320310 0031BFB0  38 80 FF FF */	li r4, -1
+/* 80320314 0031BFB4  4B FD DC 35 */	bl "__dt__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320318 0031BFB8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8032031C 0031BFBC  40 81 00 10 */	ble lbl_8032032C
+/* 80320320 0031BFC0  7F C3 F3 78 */	mr r3, r30
+/* 80320324 0031BFC4  38 80 00 04 */	li r4, 4
+/* 80320328 0031BFC8  48 00 16 69 */	bl "__dl__9AptLoaderFPvUl"
+lbl_8032032C:
+/* 8032032C 0031BFCC  7F C3 F3 78 */	mr r3, r30
+/* 80320330 0031BFD0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80320334 0031BFD4  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80320338 0031BFD8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8032033C 0031BFDC  7C 08 03 A6 */	mtlr r0
+/* 80320340 0031BFE0  38 21 00 20 */	addi r1, r1, 0x20
+/* 80320344 0031BFE4  4E 80 00 20 */	blr 
+
+.global "Invalidate__9AptLoaderFP7AptFile"
+"Invalidate__9AptLoaderFP7AptFile":
+/* 80320348 0031BFE8  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8032034C 0031BFEC  7C 08 02 A6 */	mflr r0
+/* 80320350 0031BFF0  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80320354 0031BFF4  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80320358 0031BFF8  7C 9F 23 78 */	mr r31, r4
+/* 8032035C 0031BFFC  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80320360 0031C000  7C 7E 1B 78 */	mr r30, r3
+/* 80320364 0031C004  7F C4 F3 78 */	mr r4, r30
+/* 80320368 0031C008  38 61 00 10 */	addi r3, r1, 0x10
+/* 8032036C 0031C00C  4B FD DD 29 */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320370 0031C010  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320374 0031C014  4B FD DD 19 */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 80320378 0031C018  80 03 00 00 */	lwz r0, 0(r3)
+/* 8032037C 0031C01C  7C 00 F8 40 */	cmplw r0, r31
+/* 80320380 0031C020  40 82 00 10 */	bne lbl_80320390
+/* 80320384 0031C024  7F C3 F3 78 */	mr r3, r30
+/* 80320388 0031C028  4B FD DC 69 */	bl "PopFront__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 8032038C 0031C02C  48 00 00 94 */	b lbl_80320420
+lbl_80320390:
+/* 80320390 0031C030  7F C4 F3 78 */	mr r4, r30
+/* 80320394 0031C034  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320398 0031C038  4B FD DC FD */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 8032039C 0031C03C  48 00 00 64 */	b lbl_80320400
+lbl_803203A0:
+/* 803203A0 0031C040  38 61 00 14 */	addi r3, r1, 0x14
+/* 803203A4 0031C044  38 81 00 18 */	addi r4, r1, 0x18
+/* 803203A8 0031C048  48 00 12 5D */	bl "__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 803203AC 0031C04C  38 61 00 14 */	addi r3, r1, 0x14
+/* 803203B0 0031C050  4B FD DC CD */	bl "__pp__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFv"
+/* 803203B4 0031C054  7F C4 F3 78 */	mr r4, r30
+/* 803203B8 0031C058  38 61 00 0C */	addi r3, r1, 0xc
+/* 803203BC 0031C05C  4B FD DC B1 */	bl "End__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 803203C0 0031C060  38 61 00 14 */	addi r3, r1, 0x14
+/* 803203C4 0031C064  38 81 00 0C */	addi r4, r1, 0xc
+/* 803203C8 0031C068  4B FD DC 89 */	bl "__ne__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 803203CC 0031C06C  2C 03 00 00 */	cmpwi r3, 0
+/* 803203D0 0031C070  41 82 00 28 */	beq lbl_803203F8
+/* 803203D4 0031C074  38 61 00 14 */	addi r3, r1, 0x14
+/* 803203D8 0031C078  4B FD DC B5 */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 803203DC 0031C07C  80 03 00 00 */	lwz r0, 0(r3)
+/* 803203E0 0031C080  7C 00 F8 40 */	cmplw r0, r31
+/* 803203E4 0031C084  40 82 00 14 */	bne lbl_803203F8
+/* 803203E8 0031C088  7F C3 F3 78 */	mr r3, r30
+/* 803203EC 0031C08C  38 81 00 18 */	addi r4, r1, 0x18
+/* 803203F0 0031C090  48 00 11 F5 */	bl "EraseAfter__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 803203F4 0031C094  48 00 00 2C */	b lbl_80320420
+lbl_803203F8:
+/* 803203F8 0031C098  38 61 00 18 */	addi r3, r1, 0x18
+/* 803203FC 0031C09C  4B FD DC 81 */	bl "__pp__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFv"
+lbl_80320400:
+/* 80320400 0031C0A0  7F C4 F3 78 */	mr r4, r30
+/* 80320404 0031C0A4  38 61 00 08 */	addi r3, r1, 8
+/* 80320408 0031C0A8  4B FD DC 65 */	bl "End__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 8032040C 0031C0AC  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320410 0031C0B0  38 81 00 08 */	addi r4, r1, 8
+/* 80320414 0031C0B4  4B FD DC 3D */	bl "__ne__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 80320418 0031C0B8  2C 03 00 00 */	cmpwi r3, 0
+/* 8032041C 0031C0BC  40 82 FF 84 */	bne lbl_803203A0
+lbl_80320420:
+/* 80320420 0031C0C0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80320424 0031C0C4  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80320428 0031C0C8  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 8032042C 0031C0CC  7C 08 03 A6 */	mtlr r0
+/* 80320430 0031C0D0  38 21 00 30 */	addi r1, r1, 0x30
+/* 80320434 0031C0D4  4E 80 00 20 */	blr 
+
+.global "notify__9AptLoaderF22AptSharedPtr<7AptFile>"
+"notify__9AptLoaderF22AptSharedPtr<7AptFile>":
+/* 80320438 0031C0D8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8032043C 0031C0DC  7C 08 02 A6 */	mflr r0
+/* 80320440 0031C0E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80320444 0031C0E4  38 61 00 08 */	addi r3, r1, 8
+/* 80320448 0031C0E8  4B ED F7 C5 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 8032044C 0031C0EC  38 61 00 08 */	addi r3, r1, 8
+/* 80320450 0031C0F0  48 00 11 21 */	bl "GlobalNotificationFunction__F22AptSharedPtr<7AptFile>"
+/* 80320454 0031C0F4  38 61 00 08 */	addi r3, r1, 8
+/* 80320458 0031C0F8  38 80 FF FF */	li r4, -1
+/* 8032045C 0031C0FC  4B ED F7 45 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320460 0031C100  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80320464 0031C104  7C 08 03 A6 */	mtlr r0
+/* 80320468 0031C108  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032046C 0031C10C  4E 80 00 20 */	blr 
+
+.global "IsLoaded__9AptLoaderFRC9EAStringC"
+"IsLoaded__9AptLoaderFRC9EAStringC":
+/* 80320470 0031C110  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80320474 0031C114  7C 08 02 A6 */	mflr r0
+/* 80320478 0031C118  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8032047C 0031C11C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80320480 0031C120  7C 7F 1B 78 */	mr r31, r3
+/* 80320484 0031C124  38 61 00 08 */	addi r3, r1, 8
+/* 80320488 0031C128  4B FF FD 51 */	bl "findFile__9AptLoaderFRC9EAStringC"
+/* 8032048C 0031C12C  38 61 00 08 */	addi r3, r1, 8
+/* 80320490 0031C130  4B FD D9 41 */	bl "__opb__22AptSharedPtr<7AptFile>CFv"
+/* 80320494 0031C134  2C 03 00 00 */	cmpwi r3, 0
+/* 80320498 0031C138  41 82 00 48 */	beq lbl_803204E0
+/* 8032049C 0031C13C  38 61 00 08 */	addi r3, r1, 8
+/* 803204A0 0031C140  4B FD D8 E5 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803204A4 0031C144  4B FD D5 15 */	bl "GetState__7AptFileCFv"
+/* 803204A8 0031C148  2C 03 00 04 */	cmpwi r3, 4
+/* 803204AC 0031C14C  41 82 00 18 */	beq lbl_803204C4
+/* 803204B0 0031C150  38 61 00 08 */	addi r3, r1, 8
+/* 803204B4 0031C154  4B FD D8 D1 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803204B8 0031C158  4B FD D5 01 */	bl "GetState__7AptFileCFv"
+/* 803204BC 0031C15C  2C 03 00 05 */	cmpwi r3, 5
+/* 803204C0 0031C160  40 82 00 20 */	bne lbl_803204E0
+lbl_803204C4:
+/* 803204C4 0031C164  7F E3 FB 78 */	mr r3, r31
+/* 803204C8 0031C168  38 81 00 08 */	addi r4, r1, 8
+/* 803204CC 0031C16C  4B ED F7 41 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803204D0 0031C170  38 61 00 08 */	addi r3, r1, 8
+/* 803204D4 0031C174  38 80 FF FF */	li r4, -1
+/* 803204D8 0031C178  4B ED F6 C9 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803204DC 0031C17C  48 00 00 1C */	b lbl_803204F8
+lbl_803204E0:
+/* 803204E0 0031C180  7F E3 FB 78 */	mr r3, r31
+/* 803204E4 0031C184  38 80 00 00 */	li r4, 0
+/* 803204E8 0031C188  4B ED F6 79 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 803204EC 0031C18C  38 61 00 08 */	addi r3, r1, 8
+/* 803204F0 0031C190  38 80 FF FF */	li r4, -1
+/* 803204F4 0031C194  4B ED F6 AD */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_803204F8:
+/* 803204F8 0031C198  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803204FC 0031C19C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80320500 0031C1A0  7C 08 03 A6 */	mtlr r0
+/* 80320504 0031C1A4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80320508 0031C1A8  4E 80 00 20 */	blr 
+
+.global "Load__9AptLoaderFRC9EAStringC"
+"Load__9AptLoaderFRC9EAStringC":
+/* 8032050C 0031C1AC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80320510 0031C1B0  7C 08 02 A6 */	mflr r0
+/* 80320514 0031C1B4  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80320518 0031C1B8  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 8032051C 0031C1BC  7C BF 2B 78 */	mr r31, r5
+/* 80320520 0031C1C0  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80320524 0031C1C4  7C 9E 23 78 */	mr r30, r4
+/* 80320528 0031C1C8  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 8032052C 0031C1CC  7C 7D 1B 78 */	mr r29, r3
+/* 80320530 0031C1D0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320534 0031C1D4  4B FF FC A5 */	bl "findFile__9AptLoaderFRC9EAStringC"
+/* 80320538 0031C1D8  38 61 00 10 */	addi r3, r1, 0x10
+/* 8032053C 0031C1DC  38 80 00 00 */	li r4, 0
+/* 80320540 0031C1E0  4B FD D8 4D */	bl "__ne<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b"
+/* 80320544 0031C1E4  2C 03 00 00 */	cmpwi r3, 0
+/* 80320548 0031C1E8  41 82 00 20 */	beq lbl_80320568
+/* 8032054C 0031C1EC  7F A3 EB 78 */	mr r3, r29
+/* 80320550 0031C1F0  38 81 00 10 */	addi r4, r1, 0x10
+/* 80320554 0031C1F4  4B ED F6 B9 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80320558 0031C1F8  38 61 00 10 */	addi r3, r1, 0x10
+/* 8032055C 0031C1FC  38 80 FF FF */	li r4, -1
+/* 80320560 0031C200  4B ED F6 41 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320564 0031C204  48 00 00 5C */	b lbl_803205C0
+lbl_80320568:
+/* 80320568 0031C208  38 60 00 18 */	li r3, 0x18
+/* 8032056C 0031C20C  48 00 14 B1 */	bl "__nw__7AptFileFUl"
+/* 80320570 0031C210  2C 03 00 00 */	cmpwi r3, 0
+/* 80320574 0031C214  41 82 00 0C */	beq lbl_80320580
+/* 80320578 0031C218  7F E4 FB 78 */	mr r4, r31
+/* 8032057C 0031C21C  48 00 14 35 */	bl "__ct__7AptFileFRC9EAStringC"
+lbl_80320580:
+/* 80320580 0031C220  90 61 00 0C */	stw r3, 0xc(r1)
+/* 80320584 0031C224  7C 64 1B 78 */	mr r4, r3
+/* 80320588 0031C228  38 61 00 08 */	addi r3, r1, 8
+/* 8032058C 0031C22C  4B ED F5 D5 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80320590 0031C230  7F C3 F3 78 */	mr r3, r30
+/* 80320594 0031C234  38 81 00 0C */	addi r4, r1, 0xc
+/* 80320598 0031C238  48 00 10 79 */	bl "PushFront__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRCP7AptFile"
+/* 8032059C 0031C23C  7F A3 EB 78 */	mr r3, r29
+/* 803205A0 0031C240  38 81 00 08 */	addi r4, r1, 8
+/* 803205A4 0031C244  4B ED F6 69 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803205A8 0031C248  38 61 00 08 */	addi r3, r1, 8
+/* 803205AC 0031C24C  38 80 FF FF */	li r4, -1
+/* 803205B0 0031C250  4B ED F5 F1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803205B4 0031C254  38 61 00 10 */	addi r3, r1, 0x10
+/* 803205B8 0031C258  38 80 FF FF */	li r4, -1
+/* 803205BC 0031C25C  4B ED F5 E5 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_803205C0:
+/* 803205C0 0031C260  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803205C4 0031C264  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803205C8 0031C268  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 803205CC 0031C26C  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 803205D0 0031C270  7C 08 03 A6 */	mtlr r0
+/* 803205D4 0031C274  38 21 00 30 */	addi r1, r1, 0x30
+/* 803205D8 0031C278  4E 80 00 20 */	blr 
+
+.global "AllImportsAvailable__9AptLoaderF22AptSharedPtr<7AptFile>"
+"AllImportsAvailable__9AptLoaderF22AptSharedPtr<7AptFile>":
+/* 803205DC 0031C27C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803205E0 0031C280  7C 08 02 A6 */	mflr r0
+/* 803205E4 0031C284  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803205E8 0031C288  39 61 00 30 */	addi r11, r1, 0x30
+/* 803205EC 0031C28C  48 0E ED 85 */	bl "_savegpr_26"
+/* 803205F0 0031C290  7C 7A 1B 78 */	mr r26, r3
+/* 803205F4 0031C294  7C 9B 23 78 */	mr r27, r4
+/* 803205F8 0031C298  3B A0 00 01 */	li r29, 1
+/* 803205FC 0031C29C  3B 80 00 00 */	li r28, 0
+/* 80320600 0031C2A0  3B C0 00 00 */	li r30, 0
+/* 80320604 0031C2A4  48 00 00 6C */	b lbl_80320670
+lbl_80320608:
+/* 80320608 0031C2A8  7F 63 DB 78 */	mr r3, r27
+/* 8032060C 0031C2AC  4B FD D7 79 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320610 0031C2B0  4B FE DC E1 */	bl "GetMainCharacter__7AptFileCFv"
+/* 80320614 0031C2B4  80 83 00 2C */	lwz r4, 0x2c(r3)
+/* 80320618 0031C2B8  38 61 00 0C */	addi r3, r1, 0xc
+/* 8032061C 0031C2BC  7C 84 F0 2E */	lwzx r4, r4, r30
+/* 80320620 0031C2C0  4B FD D1 29 */	bl "__ct__9EAStringCFPCc"
+/* 80320624 0031C2C4  7F 44 D3 78 */	mr r4, r26
+/* 80320628 0031C2C8  38 61 00 08 */	addi r3, r1, 8
+/* 8032062C 0031C2CC  38 A1 00 0C */	addi r5, r1, 0xc
+/* 80320630 0031C2D0  4B FF FE 41 */	bl "IsLoaded__9AptLoaderFRC9EAStringC"
+/* 80320634 0031C2D4  38 61 00 08 */	addi r3, r1, 8
+/* 80320638 0031C2D8  48 00 12 35 */	bl "__nt__22AptSharedPtr<7AptFile>CFv"
+/* 8032063C 0031C2DC  7C 7F 1B 78 */	mr r31, r3
+/* 80320640 0031C2E0  38 61 00 08 */	addi r3, r1, 8
+/* 80320644 0031C2E4  38 80 FF FF */	li r4, -1
+/* 80320648 0031C2E8  4B ED F5 59 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 8032064C 0031C2EC  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320650 0031C2F0  38 80 FF FF */	li r4, -1
+/* 80320654 0031C2F4  4B FD CE 65 */	bl "__dt__9EAStringCFv"
+/* 80320658 0031C2F8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8032065C 0031C2FC  41 82 00 0C */	beq lbl_80320668
+/* 80320660 0031C300  3B A0 00 00 */	li r29, 0
+/* 80320664 0031C304  48 00 00 24 */	b lbl_80320688
+lbl_80320668:
+/* 80320668 0031C308  3B DE 00 10 */	addi r30, r30, 0x10
+/* 8032066C 0031C30C  3B 9C 00 01 */	addi r28, r28, 1
+lbl_80320670:
+/* 80320670 0031C310  7F 63 DB 78 */	mr r3, r27
+/* 80320674 0031C314  4B FD D7 11 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320678 0031C318  4B FE DC 79 */	bl "GetMainCharacter__7AptFileCFv"
+/* 8032067C 0031C31C  80 03 00 28 */	lwz r0, 0x28(r3)
+/* 80320680 0031C320  7C 1C 00 00 */	cmpw r28, r0
+/* 80320684 0031C324  41 80 FF 84 */	blt lbl_80320608
+lbl_80320688:
+/* 80320688 0031C328  39 61 00 30 */	addi r11, r1, 0x30
+/* 8032068C 0031C32C  7F A3 EB 78 */	mr r3, r29
+/* 80320690 0031C330  48 0E ED 2D */	bl "_restgpr_26"
+/* 80320694 0031C334  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80320698 0031C338  7C 08 03 A6 */	mtlr r0
+/* 8032069C 0031C33C  38 21 00 30 */	addi r1, r1, 0x30
+/* 803206A0 0031C340  4E 80 00 20 */	blr 
+
+.global "Update__9AptLoaderFv"
+"Update__9AptLoaderFv":
+/* 803206A4 0031C344  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 803206A8 0031C348  7C 08 02 A6 */	mflr r0
+/* 803206AC 0031C34C  90 01 00 44 */	stw r0, 0x44(r1)
+/* 803206B0 0031C350  39 61 00 40 */	addi r11, r1, 0x40
+/* 803206B4 0031C354  48 0E EC C1 */	bl "_savegpr_27"
+/* 803206B8 0031C358  3F A0 80 54 */	lis r29, "gAptFuncs"@ha
+/* 803206BC 0031C35C  7C 7B 1B 78 */	mr r27, r3
+/* 803206C0 0031C360  3B BD 12 68 */	addi r29, r29, "gAptFuncs"@l
+lbl_803206C4:
+/* 803206C4 0031C364  7F 64 DB 78 */	mr r4, r27
+/* 803206C8 0031C368  38 61 00 20 */	addi r3, r1, 0x20
+/* 803206CC 0031C36C  3B 80 00 00 */	li r28, 0
+/* 803206D0 0031C370  4B FD D9 C5 */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 803206D4 0031C374  48 00 01 74 */	b lbl_80320848
+lbl_803206D8:
+/* 803206D8 0031C378  38 61 00 20 */	addi r3, r1, 0x20
+/* 803206DC 0031C37C  4B FD D9 B1 */	bl "__ml__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFv"
+/* 803206E0 0031C380  7C 64 1B 78 */	mr r4, r3
+/* 803206E4 0031C384  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803206E8 0031C388  80 84 00 00 */	lwz r4, 0(r4)
+/* 803206EC 0031C38C  4B ED F4 75 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+lbl_803206F0:
+/* 803206F0 0031C390  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803206F4 0031C394  4B FD D6 91 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803206F8 0031C398  4B FD D2 C1 */	bl "GetState__7AptFileCFv"
+/* 803206FC 0031C39C  2C 03 00 01 */	cmpwi r3, 1
+/* 80320700 0031C3A0  40 82 00 50 */	bne lbl_80320750
+/* 80320704 0031C3A4  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320708 0031C3A8  4B FD D6 7D */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 8032070C 0031C3AC  38 80 00 02 */	li r4, 2
+/* 80320710 0031C3B0  4B FD D5 A5 */	bl "setState__7AptFileFQ27AptFile5State"
+/* 80320714 0031C3B4  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320718 0031C3B8  38 81 00 1C */	addi r4, r1, 0x1c
+/* 8032071C 0031C3BC  4B ED F4 F1 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80320720 0031C3C0  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320724 0031C3C4  4B FD D6 61 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320728 0031C3C8  4B FF 54 99 */	bl "GetName__7AptFileCFv"
+/* 8032072C 0031C3CC  4B FE 9D 1D */	bl "ConstRawPtr__9EAStringCCFv"
+/* 80320730 0031C3D0  81 9D 00 20 */	lwz r12, 0x20(r29)
+/* 80320734 0031C3D4  38 81 00 18 */	addi r4, r1, 0x18
+/* 80320738 0031C3D8  7D 89 03 A6 */	mtctr r12
+/* 8032073C 0031C3DC  4E 80 04 21 */	bctrl 
+/* 80320740 0031C3E0  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320744 0031C3E4  38 80 FF FF */	li r4, -1
+/* 80320748 0031C3E8  4B ED F4 59 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 8032074C 0031C3EC  48 00 00 CC */	b lbl_80320818
+lbl_80320750:
+/* 80320750 0031C3F0  2C 03 00 02 */	cmpwi r3, 2
+/* 80320754 0031C3F4  41 82 00 E0 */	beq lbl_80320834
+/* 80320758 0031C3F8  2C 03 00 03 */	cmpwi r3, 3
+/* 8032075C 0031C3FC  40 82 00 AC */	bne lbl_80320808
+/* 80320760 0031C400  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320764 0031C404  38 81 00 1C */	addi r4, r1, 0x1c
+/* 80320768 0031C408  4B ED F4 A5 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 8032076C 0031C40C  7F 63 DB 78 */	mr r3, r27
+/* 80320770 0031C410  38 81 00 14 */	addi r4, r1, 0x14
+/* 80320774 0031C414  4B FF FE 69 */	bl "AllImportsAvailable__9AptLoaderF22AptSharedPtr<7AptFile>"
+/* 80320778 0031C418  7C 7E 1B 78 */	mr r30, r3
+/* 8032077C 0031C41C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320780 0031C420  38 80 FF FF */	li r4, -1
+/* 80320784 0031C424  4B ED F4 1D */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320788 0031C428  2C 1E 00 00 */	cmpwi r30, 0
+/* 8032078C 0031C42C  41 82 00 A8 */	beq lbl_80320834
+/* 80320790 0031C430  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320794 0031C434  4B FD D5 F1 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320798 0031C438  38 80 00 04 */	li r4, 4
+/* 8032079C 0031C43C  4B FD D5 19 */	bl "setState__7AptFileFQ27AptFile5State"
+/* 803207A0 0031C440  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803207A4 0031C444  3B 80 00 01 */	li r28, 1
+/* 803207A8 0031C448  4B FD D5 DD */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803207AC 0031C44C  48 00 12 7D */	bl "GetUserData__7AptFileCFv"
+/* 803207B0 0031C450  7C 7E 1B 78 */	mr r30, r3
+/* 803207B4 0031C454  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803207B8 0031C458  4B FD D5 CD */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803207BC 0031C45C  4B FE DB 35 */	bl "GetMainCharacter__7AptFileCFv"
+/* 803207C0 0031C460  7C 7F 1B 78 */	mr r31, r3
+/* 803207C4 0031C464  38 61 00 1C */	addi r3, r1, 0x1c
+/* 803207C8 0031C468  4B FD D5 BD */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803207CC 0031C46C  4B FE DB 25 */	bl "GetMainCharacter__7AptFileCFv"
+/* 803207D0 0031C470  7F E4 FB 78 */	mr r4, r31
+/* 803207D4 0031C474  7F C5 F3 78 */	mr r5, r30
+/* 803207D8 0031C478  38 63 00 08 */	addi r3, r3, 8
+/* 803207DC 0031C47C  4B FE BD C9 */	bl "Link__21AptCharacterAnimationFP12AptCharacterPv"
+/* 803207E0 0031C480  38 61 00 10 */	addi r3, r1, 0x10
+/* 803207E4 0031C484  38 81 00 1C */	addi r4, r1, 0x1c
+/* 803207E8 0031C488  4B ED F4 25 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803207EC 0031C48C  7F 63 DB 78 */	mr r3, r27
+/* 803207F0 0031C490  38 81 00 10 */	addi r4, r1, 0x10
+/* 803207F4 0031C494  4B FF FC 45 */	bl "notify__9AptLoaderF22AptSharedPtr<7AptFile>"
+/* 803207F8 0031C498  38 61 00 10 */	addi r3, r1, 0x10
+/* 803207FC 0031C49C  38 80 FF FF */	li r4, -1
+/* 80320800 0031C4A0  4B ED F3 A1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320804 0031C4A4  48 00 00 14 */	b lbl_80320818
+lbl_80320808:
+/* 80320808 0031C4A8  2C 03 00 04 */	cmpwi r3, 4
+/* 8032080C 0031C4AC  41 82 00 28 */	beq lbl_80320834
+/* 80320810 0031C4B0  2C 03 00 05 */	cmpwi r3, 5
+/* 80320814 0031C4B4  41 82 00 20 */	beq lbl_80320834
+lbl_80320818:
+/* 80320818 0031C4B8  7F 64 DB 78 */	mr r4, r27
+/* 8032081C 0031C4BC  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320820 0031C4C0  4B FD D8 75 */	bl "Begin__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320824 0031C4C4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320828 0031C4C8  38 81 00 0C */	addi r4, r1, 0xc
+/* 8032082C 0031C4CC  48 00 0E 55 */	bl "__as__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 80320830 0031C4D0  4B FF FE C0 */	b lbl_803206F0
+lbl_80320834:
+/* 80320834 0031C4D4  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320838 0031C4D8  38 80 FF FF */	li r4, -1
+/* 8032083C 0031C4DC  4B ED F3 65 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320840 0031C4E0  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320844 0031C4E4  4B FD D8 39 */	bl "__pp__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFv"
+lbl_80320848:
+/* 80320848 0031C4E8  7F 64 DB 78 */	mr r4, r27
+/* 8032084C 0031C4EC  38 61 00 08 */	addi r3, r1, 8
+/* 80320850 0031C4F0  4B FD D8 1D */	bl "End__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>Fv"
+/* 80320854 0031C4F4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320858 0031C4F8  38 81 00 08 */	addi r4, r1, 8
+/* 8032085C 0031C4FC  4B FD D7 F5 */	bl "__ne__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+/* 80320860 0031C500  2C 03 00 00 */	cmpwi r3, 0
+/* 80320864 0031C504  40 82 FE 74 */	bne lbl_803206D8
+/* 80320868 0031C508  2C 1C 00 00 */	cmpwi r28, 0
+/* 8032086C 0031C50C  40 82 FE 58 */	bne lbl_803206C4
+/* 80320870 0031C510  39 61 00 40 */	addi r11, r1, 0x40
+/* 80320874 0031C514  48 0E EB 4D */	bl "_restgpr_27"
+/* 80320878 0031C518  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 8032087C 0031C51C  7C 08 03 A6 */	mtlr r0
+/* 80320880 0031C520  38 21 00 40 */	addi r1, r1, 0x40
+/* 80320884 0031C524  4E 80 00 20 */	blr 
+
+.global "CompleteLoad__9AptLoaderF22AptSharedPtr<7AptFile>PvPvPv"
+"CompleteLoad__9AptLoaderF22AptSharedPtr<7AptFile>PvPvPv":
+/* 80320888 0031C528  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8032088C 0031C52C  7C 08 02 A6 */	mflr r0
+/* 80320890 0031C530  2C 05 00 00 */	cmpwi r5, 0
+/* 80320894 0031C534  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80320898 0031C538  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8032089C 0031C53C  7C FF 3B 78 */	mr r31, r7
+/* 803208A0 0031C540  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803208A4 0031C544  7C DE 33 78 */	mr r30, r6
+/* 803208A8 0031C548  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803208AC 0031C54C  7C BD 2B 78 */	mr r29, r5
+/* 803208B0 0031C550  93 81 00 10 */	stw r28, 0x10(r1)
+/* 803208B4 0031C554  7C 9C 23 78 */	mr r28, r4
+/* 803208B8 0031C558  41 82 00 84 */	beq lbl_8032093C
+/* 803208BC 0031C55C  80 06 00 14 */	lwz r0, 0x14(r6)
+/* 803208C0 0031C560  2C 00 00 00 */	cmpwi r0, 0
+/* 803208C4 0031C564  41 82 00 0C */	beq lbl_803208D0
+/* 803208C8 0031C568  7C 05 02 14 */	add r0, r5, r0
+/* 803208CC 0031C56C  90 06 00 14 */	stw r0, 0x14(r6)
+lbl_803208D0:
+/* 803208D0 0031C570  80 66 00 14 */	lwz r3, 0x14(r6)
+/* 803208D4 0031C574  7F A4 EB 78 */	mr r4, r29
+/* 803208D8 0031C578  7F C5 F3 78 */	mr r5, r30
+/* 803208DC 0031C57C  7F E6 FB 78 */	mr r6, r31
+/* 803208E0 0031C580  38 63 00 08 */	addi r3, r3, 8
+/* 803208E4 0031C584  4B FE B4 7D */	bl "Resolve__21AptCharacterAnimationFPvP12AptConstFilePv"
+/* 803208E8 0031C588  7F 83 E3 78 */	mr r3, r28
+/* 803208EC 0031C58C  4B FD D4 99 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803208F0 0031C590  80 BE 00 14 */	lwz r5, 0x14(r30)
+/* 803208F4 0031C594  7F A4 EB 78 */	mr r4, r29
+/* 803208F8 0031C598  7F E6 FB 78 */	mr r6, r31
+/* 803208FC 0031C59C  48 00 11 35 */	bl "setDataPointers__7AptFileFPvP12AptCharacterPv"
+/* 80320900 0031C5A0  7F 83 E3 78 */	mr r3, r28
+/* 80320904 0031C5A4  4B FD D4 81 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320908 0031C5A8  38 80 00 03 */	li r4, 3
+/* 8032090C 0031C5AC  4B FD D3 A9 */	bl "setState__7AptFileFQ27AptFile5State"
+/* 80320910 0031C5B0  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 80320914 0031C5B4  2C 00 00 00 */	cmpwi r0, 0
+/* 80320918 0031C5B8  41 82 00 0C */	beq lbl_80320924
+/* 8032091C 0031C5BC  7C 1D 00 50 */	subf r0, r29, r0
+/* 80320920 0031C5C0  90 1E 00 14 */	stw r0, 0x14(r30)
+lbl_80320924:
+/* 80320924 0031C5C4  3C 80 80 54 */	lis r4, "gAptFuncs"@ha
+/* 80320928 0031C5C8  7F C3 F3 78 */	mr r3, r30
+/* 8032092C 0031C5CC  38 84 12 68 */	addi r4, r4, "gAptFuncs"@l
+/* 80320930 0031C5D0  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 80320934 0031C5D4  7D 89 03 A6 */	mtctr r12
+/* 80320938 0031C5D8  4E 80 04 21 */	bctrl 
+lbl_8032093C:
+/* 8032093C 0031C5DC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80320940 0031C5E0  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80320944 0031C5E4  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80320948 0031C5E8  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8032094C 0031C5EC  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80320950 0031C5F0  7C 08 03 A6 */	mtlr r0
+/* 80320954 0031C5F4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80320958 0031C5F8  4E 80 00 20 */	blr 
+
+.global "CancelPreloadedAnimation__9AptLoaderFRC9EAStringC"
+"CancelPreloadedAnimation__9AptLoaderFRC9EAStringC":
+/* 8032095C 0031C5FC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80320960 0031C600  7C 08 02 A6 */	mflr r0
+/* 80320964 0031C604  7C 85 23 78 */	mr r5, r4
+/* 80320968 0031C608  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8032096C 0031C60C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80320970 0031C610  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80320974 0031C614  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80320978 0031C618  93 81 00 20 */	stw r28, 0x20(r1)
+/* 8032097C 0031C61C  7C 7C 1B 78 */	mr r28, r3
+/* 80320980 0031C620  7F 84 E3 78 */	mr r4, r28
+/* 80320984 0031C624  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320988 0031C628  4B FF F8 51 */	bl "findFile__9AptLoaderFRC9EAStringC"
+/* 8032098C 0031C62C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320990 0031C630  48 00 0E DD */	bl "__nt__22AptSharedPtr<7AptFile>CFv"
+/* 80320994 0031C634  2C 03 00 00 */	cmpwi r3, 0
+/* 80320998 0031C638  41 82 00 14 */	beq lbl_803209AC
+/* 8032099C 0031C63C  38 61 00 18 */	addi r3, r1, 0x18
+/* 803209A0 0031C640  38 80 FF FF */	li r4, -1
+/* 803209A4 0031C644  4B ED F1 FD */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803209A8 0031C648  48 00 01 60 */	b lbl_80320B08
+lbl_803209AC:
+/* 803209AC 0031C64C  38 61 00 18 */	addi r3, r1, 0x18
+/* 803209B0 0031C650  4B FD D3 D5 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803209B4 0031C654  4B FD D0 05 */	bl "GetState__7AptFileCFv"
+/* 803209B8 0031C658  2C 03 00 01 */	cmpwi r3, 1
+/* 803209BC 0031C65C  41 82 01 38 */	beq lbl_80320AF4
+/* 803209C0 0031C660  2C 03 00 02 */	cmpwi r3, 2
+/* 803209C4 0031C664  40 82 00 3C */	bne lbl_80320A00
+/* 803209C8 0031C668  38 61 00 18 */	addi r3, r1, 0x18
+/* 803209CC 0031C66C  4B FD D3 B9 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803209D0 0031C670  48 00 10 59 */	bl "GetUserData__7AptFileCFv"
+/* 803209D4 0031C674  2C 03 00 00 */	cmpwi r3, 0
+/* 803209D8 0031C678  41 82 01 1C */	beq lbl_80320AF4
+/* 803209DC 0031C67C  38 61 00 18 */	addi r3, r1, 0x18
+/* 803209E0 0031C680  4B FD D3 A5 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803209E4 0031C684  48 00 10 45 */	bl "GetUserData__7AptFileCFv"
+/* 803209E8 0031C688  3C 80 80 54 */	lis r4, "gAptFuncs"@ha
+/* 803209EC 0031C68C  38 84 12 68 */	addi r4, r4, "gAptFuncs"@l
+/* 803209F0 0031C690  81 84 00 24 */	lwz r12, 0x24(r4)
+/* 803209F4 0031C694  7D 89 03 A6 */	mtctr r12
+/* 803209F8 0031C698  4E 80 04 21 */	bctrl 
+/* 803209FC 0031C69C  48 00 00 F8 */	b lbl_80320AF4
+lbl_80320A00:
+/* 80320A00 0031C6A0  38 03 FF FD */	addi r0, r3, -3
+/* 80320A04 0031C6A4  28 00 00 02 */	cmplwi r0, 2
+/* 80320A08 0031C6A8  41 81 00 EC */	bgt lbl_80320AF4
+/* 80320A0C 0031C6AC  3B A0 00 00 */	li r29, 0
+/* 80320A10 0031C6B0  3B C0 00 00 */	li r30, 0
+/* 80320A14 0031C6B4  48 00 00 C8 */	b lbl_80320ADC
+lbl_80320A18:
+/* 80320A18 0031C6B8  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320A1C 0031C6BC  4B FD D3 69 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320A20 0031C6C0  4B FE D8 D1 */	bl "GetMainCharacter__7AptFileCFv"
+/* 80320A24 0031C6C4  80 83 00 2C */	lwz r4, 0x2c(r3)
+/* 80320A28 0031C6C8  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320A2C 0031C6CC  7C 84 F0 2E */	lwzx r4, r4, r30
+/* 80320A30 0031C6D0  4B FD CD 19 */	bl "__ct__9EAStringCFPCc"
+/* 80320A34 0031C6D4  7F 84 E3 78 */	mr r4, r28
+/* 80320A38 0031C6D8  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320A3C 0031C6DC  38 A1 00 10 */	addi r5, r1, 0x10
+/* 80320A40 0031C6E0  4B FF F7 99 */	bl "findFile__9AptLoaderFRC9EAStringC"
+/* 80320A44 0031C6E4  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320A48 0031C6E8  38 80 FF FF */	li r4, -1
+/* 80320A4C 0031C6EC  4B FD CA 6D */	bl "__dt__9EAStringCFv"
+/* 80320A50 0031C6F0  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320A54 0031C6F4  4B FD D3 7D */	bl "__opb__22AptSharedPtr<7AptFile>CFv"
+/* 80320A58 0031C6F8  2C 03 00 00 */	cmpwi r3, 0
+/* 80320A5C 0031C6FC  41 82 00 6C */	beq lbl_80320AC8
+/* 80320A60 0031C700  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320A64 0031C704  38 81 00 14 */	addi r4, r1, 0x14
+/* 80320A68 0031C708  4B ED F1 A5 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80320A6C 0031C70C  80 6D BE 7C */	lwz r3, "gpLinker"-_SDA_BASE_(r13)
+/* 80320A70 0031C710  38 81 00 0C */	addi r4, r1, 0xc
+/* 80320A74 0031C714  48 00 0F CD */	bl "isFileImported__9AptLinkerF22AptSharedPtr<7AptFile>"
+/* 80320A78 0031C718  7C 60 00 34 */	cntlzw r0, r3
+/* 80320A7C 0031C71C  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320A80 0031C720  54 1F D9 7E */	srwi r31, r0, 5
+/* 80320A84 0031C724  38 80 FF FF */	li r4, -1
+/* 80320A88 0031C728  4B ED F1 19 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320A8C 0031C72C  2C 1F 00 00 */	cmpwi r31, 0
+/* 80320A90 0031C730  41 82 00 38 */	beq lbl_80320AC8
+/* 80320A94 0031C734  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320A98 0031C738  4B FD D2 ED */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320A9C 0031C73C  4B FE D8 55 */	bl "GetMainCharacter__7AptFileCFv"
+/* 80320AA0 0031C740  80 83 00 2C */	lwz r4, 0x2c(r3)
+/* 80320AA4 0031C744  38 61 00 08 */	addi r3, r1, 8
+/* 80320AA8 0031C748  7C 84 F0 2E */	lwzx r4, r4, r30
+/* 80320AAC 0031C74C  4B FD CC 9D */	bl "__ct__9EAStringCFPCc"
+/* 80320AB0 0031C750  7F 83 E3 78 */	mr r3, r28
+/* 80320AB4 0031C754  38 81 00 08 */	addi r4, r1, 8
+/* 80320AB8 0031C758  4B FF FE A5 */	bl "CancelPreloadedAnimation__9AptLoaderFRC9EAStringC"
+/* 80320ABC 0031C75C  38 61 00 08 */	addi r3, r1, 8
+/* 80320AC0 0031C760  38 80 FF FF */	li r4, -1
+/* 80320AC4 0031C764  4B FD C9 F5 */	bl "__dt__9EAStringCFv"
+lbl_80320AC8:
+/* 80320AC8 0031C768  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320ACC 0031C76C  38 80 FF FF */	li r4, -1
+/* 80320AD0 0031C770  4B ED F0 D1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320AD4 0031C774  3B DE 00 10 */	addi r30, r30, 0x10
+/* 80320AD8 0031C778  3B BD 00 01 */	addi r29, r29, 1
+lbl_80320ADC:
+/* 80320ADC 0031C77C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320AE0 0031C780  4B FD D2 A5 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320AE4 0031C784  4B FE D8 0D */	bl "GetMainCharacter__7AptFileCFv"
+/* 80320AE8 0031C788  80 03 00 28 */	lwz r0, 0x28(r3)
+/* 80320AEC 0031C78C  7C 1D 00 00 */	cmpw r29, r0
+/* 80320AF0 0031C790  41 80 FF 28 */	blt lbl_80320A18
+lbl_80320AF4:
+/* 80320AF4 0031C794  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320AF8 0031C798  4B ED F0 1D */	bl "Dispose__22AptSharedPtr<7AptFile>Fv"
+/* 80320AFC 0031C79C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320B00 0031C7A0  38 80 FF FF */	li r4, -1
+/* 80320B04 0031C7A4  4B ED F0 9D */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80320B08:
+/* 80320B08 0031C7A8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80320B0C 0031C7AC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80320B10 0031C7B0  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80320B14 0031C7B4  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80320B18 0031C7B8  83 81 00 20 */	lwz r28, 0x20(r1)
+/* 80320B1C 0031C7BC  7C 08 03 A6 */	mtlr r0
+/* 80320B20 0031C7C0  38 21 00 30 */	addi r1, r1, 0x30
+/* 80320B24 0031C7C4  4E 80 00 20 */	blr 
+
+.global "Update__9AptLinkerFv"
+"Update__9AptLinkerFv":
+/* 80320B28 0031C7C8  94 21 FE 70 */	stwu r1, -0x190(r1)
+/* 80320B2C 0031C7CC  7C 08 02 A6 */	mflr r0
+/* 80320B30 0031C7D0  90 01 01 94 */	stw r0, 0x194(r1)
+/* 80320B34 0031C7D4  39 61 01 90 */	addi r11, r1, 0x190
+/* 80320B38 0031C7D8  48 0E E8 2D */	bl "_savegpr_23"
+/* 80320B3C 0031C7DC  7C 7E 1B 78 */	mr r30, r3
+/* 80320B40 0031C7E0  80 6D BE 78 */	lwz r3, "gpLoader"-_SDA_BASE_(r13)
+/* 80320B44 0031C7E4  4B FF FB 61 */	bl "Update__9AptLoaderFv"
+/* 80320B48 0031C7E8  3C 60 80 54 */	lis r3, "gSIPlayback"@ha
+/* 80320B4C 0031C7EC  80 03 13 5C */	lwz r0, "gSIPlayback"@l(r3)
+/* 80320B50 0031C7F0  2C 00 00 00 */	cmpwi r0, 0
+/* 80320B54 0031C7F4  41 82 00 14 */	beq lbl_80320B68
+/* 80320B58 0031C7F8  80 6D BE 80 */	lwz r3, "gpSavedInputCheckpoints"-_SDA_BASE_(r13)
+/* 80320B5C 0031C7FC  48 00 11 D1 */	bl "CanLinkPendingFiles__24AptSavedInputCheckpointsFv"
+/* 80320B60 0031C800  2C 03 00 00 */	cmpwi r3, 0
+/* 80320B64 0031C804  41 82 03 34 */	beq lbl_80320E98
+lbl_80320B68:
+/* 80320B68 0031C808  38 7E 00 04 */	addi r3, r30, 4
+/* 80320B6C 0031C80C  48 00 18 61 */	bl "Size__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80320B70 0031C810  7C 7F 1B 78 */	mr r31, r3
+/* 80320B74 0031C814  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320B78 0031C818  38 9E 00 04 */	addi r4, r30, 4
+/* 80320B7C 0031C81C  48 00 17 F1 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320B80 0031C820  3C 60 80 54 */	lis r3, "gAptFuncs"@ha
+/* 80320B84 0031C824  3B 20 FF FF */	li r25, -1
+/* 80320B88 0031C828  3B 40 00 01 */	li r26, 1
+/* 80320B8C 0031C82C  3B A0 00 06 */	li r29, 6
+/* 80320B90 0031C830  3B 63 12 68 */	addi r27, r3, "gAptFuncs"@l
+/* 80320B94 0031C834  48 00 02 9C */	b lbl_80320E30
+lbl_80320B98:
+/* 80320B98 0031C838  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320B9C 0031C83C  3A E0 00 00 */	li r23, 0
+/* 80320BA0 0031C840  48 00 17 69 */	bl "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80320BA4 0031C844  7C 64 1B 78 */	mr r4, r3
+/* 80320BA8 0031C848  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320BAC 0031C84C  4B ED F0 61 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80320BB0 0031C850  7F C4 F3 78 */	mr r4, r30
+/* 80320BB4 0031C854  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320BB8 0031C858  48 00 0B 19 */	bl "Begin__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80320BBC 0031C85C  48 00 02 38 */	b lbl_80320DF4
+lbl_80320BC0:
+/* 80320BC0 0031C860  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320BC4 0031C864  48 00 0B 05 */	bl "__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv"
+/* 80320BC8 0031C868  7C 64 1B 78 */	mr r4, r3
+/* 80320BCC 0031C86C  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320BD0 0031C870  48 00 0C F5 */	bl "__ct__31AptSharedPtr<15AptLinkerThingy>FRC31AptSharedPtr<15AptLinkerThingy>"
+/* 80320BD4 0031C874  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320BD8 0031C878  48 00 0C A5 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80320BDC 0031C87C  7C 64 1B 78 */	mr r4, r3
+/* 80320BE0 0031C880  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320BE4 0031C884  48 00 11 41 */	bl "GetFile__15AptLinkerThingyCFv"
+/* 80320BE8 0031C888  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320BEC 0031C88C  38 81 00 20 */	addi r4, r1, 0x20
+/* 80320BF0 0031C890  3B 80 00 00 */	li r28, 0
+/* 80320BF4 0031C894  48 00 0D 15 */	bl "__eq<7AptFile,7AptFile>__FRC22AptSharedPtr<7AptFile>RC22AptSharedPtr<7AptFile>_b"
+/* 80320BF8 0031C898  2C 03 00 00 */	cmpwi r3, 0
+/* 80320BFC 0031C89C  41 82 00 1C */	beq lbl_80320C18
+/* 80320C00 0031C8A0  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320C04 0031C8A4  48 00 0C 79 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80320C08 0031C8A8  48 00 11 15 */	bl "IsAttachedToMovie__15AptLinkerThingyCFv"
+/* 80320C0C 0031C8AC  2C 03 00 00 */	cmpwi r3, 0
+/* 80320C10 0031C8B0  40 82 00 08 */	bne lbl_80320C18
+/* 80320C14 0031C8B4  3B 80 00 01 */	li r28, 1
+lbl_80320C18:
+/* 80320C18 0031C8B8  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320C1C 0031C8BC  38 80 FF FF */	li r4, -1
+/* 80320C20 0031C8C0  4B ED EF 81 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80320C24 0031C8C4  2C 1C 00 00 */	cmpwi r28, 0
+/* 80320C28 0031C8C8  41 82 01 B0 */	beq lbl_80320DD8
+/* 80320C2C 0031C8CC  3B 80 00 00 */	li r28, 0
+/* 80320C30 0031C8D0  38 60 00 38 */	li r3, 0x38
+/* 80320C34 0031C8D4  48 00 1F A9 */	bl "__nw__25AptCharacterAnimationInstFUl"
+/* 80320C38 0031C8D8  2C 03 00 00 */	cmpwi r3, 0
+/* 80320C3C 0031C8DC  7C 78 1B 78 */	mr r24, r3
+/* 80320C40 0031C8E0  41 82 00 24 */	beq lbl_80320C64
+/* 80320C44 0031C8E4  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320C48 0031C8E8  38 81 00 20 */	addi r4, r1, 0x20
+/* 80320C4C 0031C8EC  4B ED EF C1 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80320C50 0031C8F0  7F 03 C3 78 */	mr r3, r24
+/* 80320C54 0031C8F4  38 81 00 10 */	addi r4, r1, 0x10
+/* 80320C58 0031C8F8  3B 80 00 01 */	li r28, 1
+/* 80320C5C 0031C8FC  4B FE B8 11 */	bl "__ct__25AptCharacterAnimationInstF22AptSharedPtr<7AptFile>"
+/* 80320C60 0031C900  7C 78 1B 78 */	mr r24, r3
+lbl_80320C64:
+/* 80320C64 0031C904  2C 1C 00 00 */	cmpwi r28, 0
+/* 80320C68 0031C908  41 82 00 10 */	beq lbl_80320C78
+/* 80320C6C 0031C90C  38 61 00 10 */	addi r3, r1, 0x10
+/* 80320C70 0031C910  38 80 FF FF */	li r4, -1
+/* 80320C74 0031C914  4B ED EF 2D */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80320C78:
+/* 80320C78 0031C918  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320C7C 0031C91C  48 00 0C 01 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80320C80 0031C920  48 00 10 45 */	bl "GetTarget__15AptLinkerThingyCFv"
+/* 80320C84 0031C924  7C 7C 1B 78 */	mr r28, r3
+/* 80320C88 0031C928  4B FD B5 DD */	bl "AptGetSwfVersion__Fv"
+/* 80320C8C 0031C92C  2C 03 00 00 */	cmpwi r3, 0
+/* 80320C90 0031C930  40 82 00 10 */	bne lbl_80320CA0
+/* 80320C94 0031C934  7F 03 C3 78 */	mr r3, r24
+/* 80320C98 0031C938  4B FE B8 B9 */	bl "getSwfVersion__25AptCharacterAnimationInstFv"
+/* 80320C9C 0031C93C  4B FD B5 C1 */	bl "AptSetSwfVersion__Fi"
+lbl_80320CA0:
+/* 80320CA0 0031C940  7F 83 E3 78 */	mr r3, r28
+/* 80320CA4 0031C944  38 80 00 01 */	li r4, 1
+/* 80320CA8 0031C948  4B FF 53 09 */	bl "ClearCIH__6AptCIHFb"
+/* 80320CAC 0031C94C  7F 83 E3 78 */	mr r3, r28
+/* 80320CB0 0031C950  38 80 00 12 */	li r4, 0x12
+/* 80320CB4 0031C954  4B FD D6 D9 */	bl "setVtblIndex__8AptValueF31AptVirtualFunctionTable_Indices"
+/* 80320CB8 0031C958  93 1C 00 4C */	stw r24, 0x4c(r28)
+/* 80320CBC 0031C95C  7F 83 E3 78 */	mr r3, r28
+/* 80320CC0 0031C960  38 80 00 01 */	li r4, 1
+/* 80320CC4 0031C964  4B FD D6 71 */	bl "setIsDefined__8AptValueFb"
+/* 80320CC8 0031C968  7F 83 E3 78 */	mr r3, r28
+/* 80320CCC 0031C96C  4B FE A0 DD */	bl "getSpriteInstBase__6AptCIHCFv"
+/* 80320CD0 0031C970  93 23 00 18 */	stw r25, 0x18(r3)
+/* 80320CD4 0031C974  7F 83 E3 78 */	mr r3, r28
+/* 80320CD8 0031C978  4B FE A0 D1 */	bl "getSpriteInstBase__6AptCIHCFv"
+/* 80320CDC 0031C97C  80 03 00 1C */	lwz r0, 0x1c(r3)
+/* 80320CE0 0031C980  53 40 3E 30 */	rlwimi r0, r26, 7, 0x18, 0x18
+/* 80320CE4 0031C984  90 03 00 1C */	stw r0, 0x1c(r3)
+/* 80320CE8 0031C988  7F 83 E3 78 */	mr r3, r28
+/* 80320CEC 0031C98C  4B FF 74 75 */	bl "tick__6AptCIHFv"
+/* 80320CF0 0031C990  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320CF4 0031C994  48 00 0B 89 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80320CF8 0031C998  38 80 00 01 */	li r4, 1
+/* 80320CFC 0031C99C  48 00 10 19 */	bl "SetAttachedToMovie__15AptLinkerThingyFb"
+/* 80320D00 0031C9A0  80 1B 00 2C */	lwz r0, 0x2c(r27)
+/* 80320D04 0031C9A4  2C 00 00 00 */	cmpwi r0, 0
+/* 80320D08 0031C9A8  41 82 00 30 */	beq lbl_80320D38
+/* 80320D0C 0031C9AC  38 7C 00 0C */	addi r3, r28, 0xc
+/* 80320D10 0031C9B0  4B FE 97 39 */	bl "ConstRawPtr__9EAStringCCFv"
+/* 80320D14 0031C9B4  7C 7C 1B 78 */	mr r28, r3
+/* 80320D18 0031C9B8  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320D1C 0031C9BC  4B FD D0 69 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320D20 0031C9C0  4B FF 4E A1 */	bl "GetName__7AptFileCFv"
+/* 80320D24 0031C9C4  4B FE 97 25 */	bl "ConstRawPtr__9EAStringCCFv"
+/* 80320D28 0031C9C8  81 9B 00 2C */	lwz r12, 0x2c(r27)
+/* 80320D2C 0031C9CC  7F 84 E3 78 */	mr r4, r28
+/* 80320D30 0031C9D0  7D 89 03 A6 */	mtctr r12
+/* 80320D34 0031C9D4  4E 80 04 21 */	bctrl 
+lbl_80320D38:
+/* 80320D38 0031C9D8  80 0D BE 48 */	lwz r0, "gbSavedInputsEnabled"-_SDA_BASE_(r13)
+/* 80320D3C 0031C9DC  2C 00 00 00 */	cmpwi r0, 0
+/* 80320D40 0031C9E0  41 82 00 50 */	beq lbl_80320D90
+/* 80320D44 0031C9E4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320D48 0031C9E8  4B FD D0 3D */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80320D4C 0031C9EC  4B FF 4E 75 */	bl "GetName__7AptFileCFv"
+/* 80320D50 0031C9F0  7C 78 1B 78 */	mr r24, r3
+/* 80320D54 0031C9F4  4B FE 95 A5 */	bl "Size__9EAStringCCFv"
+/* 80320D58 0031C9F8  80 0D BE 4C */	lwz r0, "gnCurTick"-_SDA_BASE_(r13)
+/* 80320D5C 0031C9FC  7C 7C 1B 78 */	mr r28, r3
+/* 80320D60 0031CA00  9B A1 00 60 */	stb r29, 0x60(r1)
+/* 80320D64 0031CA04  7F 03 C3 78 */	mr r3, r24
+/* 80320D68 0031CA08  90 01 00 5C */	stw r0, 0x5c(r1)
+/* 80320D6C 0031CA0C  4B FE 96 DD */	bl "ConstRawPtr__9EAStringCCFv"
+/* 80320D70 0031CA10  7C 64 1B 78 */	mr r4, r3
+/* 80320D74 0031CA14  38 61 00 61 */	addi r3, r1, 0x61
+/* 80320D78 0031CA18  48 0E 76 F9 */	bl "strcpy"
+/* 80320D7C 0031CA1C  81 9B 00 18 */	lwz r12, 0x18(r27)
+/* 80320D80 0031CA20  38 61 00 5C */	addi r3, r1, 0x5c
+/* 80320D84 0031CA24  38 9C 00 06 */	addi r4, r28, 6
+/* 80320D88 0031CA28  7D 89 03 A6 */	mtctr r12
+/* 80320D8C 0031CA2C  4E 80 04 21 */	bctrl 
+lbl_80320D90:
+/* 80320D90 0031CA30  38 7E 00 04 */	addi r3, r30, 4
+/* 80320D94 0031CA34  48 00 16 39 */	bl "Size__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80320D98 0031CA38  7C 1F 18 00 */	cmpw r31, r3
+/* 80320D9C 0031CA3C  41 82 00 3C */	beq lbl_80320DD8
+/* 80320DA0 0031CA40  38 61 00 30 */	addi r3, r1, 0x30
+/* 80320DA4 0031CA44  38 9E 00 04 */	addi r4, r30, 4
+/* 80320DA8 0031CA48  48 00 15 C5 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320DAC 0031CA4C  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320DB0 0031CA50  38 81 00 30 */	addi r4, r1, 0x30
+/* 80320DB4 0031CA54  48 00 0A 6D */	bl "__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 80320DB8 0031CA58  38 7E 00 04 */	addi r3, r30, 4
+/* 80320DBC 0031CA5C  48 00 16 11 */	bl "Size__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80320DC0 0031CA60  7C 7F 1B 78 */	mr r31, r3
+/* 80320DC4 0031CA64  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320DC8 0031CA68  3A E0 00 01 */	li r23, 1
+/* 80320DCC 0031CA6C  38 80 FF FF */	li r4, -1
+/* 80320DD0 0031CA70  4B FD CE FD */	bl "__dt__31AptSharedPtr<15AptLinkerThingy>Fv"
+/* 80320DD4 0031CA74  48 00 00 40 */	b lbl_80320E14
+lbl_80320DD8:
+/* 80320DD8 0031CA78  38 61 00 18 */	addi r3, r1, 0x18
+/* 80320DDC 0031CA7C  38 80 FF FF */	li r4, -1
+/* 80320DE0 0031CA80  4B FD CE ED */	bl "__dt__31AptSharedPtr<15AptLinkerThingy>Fv"
+/* 80320DE4 0031CA84  38 61 00 0C */	addi r3, r1, 0xc
+/* 80320DE8 0031CA88  38 81 00 1C */	addi r4, r1, 0x1c
+/* 80320DEC 0031CA8C  38 A0 00 00 */	li r5, 0
+/* 80320DF0 0031CA90  48 00 09 F9 */	bl "__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFi"
+lbl_80320DF4:
+/* 80320DF4 0031CA94  7F C4 F3 78 */	mr r4, r30
+/* 80320DF8 0031CA98  38 61 00 08 */	addi r3, r1, 8
+/* 80320DFC 0031CA9C  48 00 08 AD */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80320E00 0031CAA0  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80320E04 0031CAA4  38 81 00 08 */	addi r4, r1, 8
+/* 80320E08 0031CAA8  48 00 08 85 */	bl "__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80320E0C 0031CAAC  2C 03 00 00 */	cmpwi r3, 0
+/* 80320E10 0031CAB0  40 82 FD B0 */	bne lbl_80320BC0
+lbl_80320E14:
+/* 80320E14 0031CAB4  2C 17 00 00 */	cmpwi r23, 0
+/* 80320E18 0031CAB8  40 82 00 0C */	bne lbl_80320E24
+/* 80320E1C 0031CABC  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320E20 0031CAC0  48 00 14 D9 */	bl "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+lbl_80320E24:
+/* 80320E24 0031CAC4  38 61 00 20 */	addi r3, r1, 0x20
+/* 80320E28 0031CAC8  38 80 FF FF */	li r4, -1
+/* 80320E2C 0031CACC  4B ED ED 75 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80320E30:
+/* 80320E30 0031CAD0  38 61 00 24 */	addi r3, r1, 0x24
+/* 80320E34 0031CAD4  38 9E 00 04 */	addi r4, r30, 4
+/* 80320E38 0031CAD8  48 00 14 15 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320E3C 0031CADC  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320E40 0031CAE0  38 81 00 24 */	addi r4, r1, 0x24
+/* 80320E44 0031CAE4  48 00 13 81 */	bl "__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 80320E48 0031CAE8  2C 03 00 00 */	cmpwi r3, 0
+/* 80320E4C 0031CAEC  40 82 FD 4C */	bne lbl_80320B98
+/* 80320E50 0031CAF0  3C 60 80 54 */	lis r3, "gSIPlayback"@ha
+/* 80320E54 0031CAF4  80 03 13 5C */	lwz r0, "gSIPlayback"@l(r3)
+/* 80320E58 0031CAF8  2C 00 00 00 */	cmpwi r0, 0
+/* 80320E5C 0031CAFC  41 82 00 0C */	beq lbl_80320E68
+/* 80320E60 0031CB00  80 6D BE 80 */	lwz r3, "gpSavedInputCheckpoints"-_SDA_BASE_(r13)
+/* 80320E64 0031CB04  48 00 0E 69 */	bl "AllLinked__24AptSavedInputCheckpointsFv"
+lbl_80320E68:
+/* 80320E68 0031CB08  2C 1F 00 00 */	cmpwi r31, 0
+/* 80320E6C 0031CB0C  40 81 00 2C */	ble lbl_80320E98
+/* 80320E70 0031CB10  38 61 00 48 */	addi r3, r1, 0x48
+/* 80320E74 0031CB14  4B FD B9 3D */	bl "__ct__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320E78 0031CB18  38 7E 00 04 */	addi r3, r30, 4
+/* 80320E7C 0031CB1C  38 81 00 48 */	addi r4, r1, 0x48
+/* 80320E80 0031CB20  48 00 10 A1 */	bl "Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>"
+/* 80320E84 0031CB24  80 6D BE 74 */	lwz r3, "gpPool"-_SDA_BASE_(r13)
+/* 80320E88 0031CB28  4B FE C0 91 */	bl "runActions__20AptAnimationPoolDataFv"
+/* 80320E8C 0031CB2C  38 61 00 48 */	addi r3, r1, 0x48
+/* 80320E90 0031CB30  38 80 FF FF */	li r4, -1
+/* 80320E94 0031CB34  4B FD B8 6D */	bl "__dt__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+lbl_80320E98:
+/* 80320E98 0031CB38  39 61 01 90 */	addi r11, r1, 0x190
+/* 80320E9C 0031CB3C  48 0E E5 15 */	bl "_restgpr_23"
+/* 80320EA0 0031CB40  80 01 01 94 */	lwz r0, 0x194(r1)
+/* 80320EA4 0031CB44  7C 08 03 A6 */	mtlr r0
+/* 80320EA8 0031CB48  38 21 01 90 */	addi r1, r1, 0x190
+/* 80320EAC 0031CB4C  4E 80 00 20 */	blr 
+
+.global "Notify__9AptLinkerF22AptSharedPtr<7AptFile>"
+"Notify__9AptLinkerF22AptSharedPtr<7AptFile>":
+/* 80320EB0 0031CB50  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80320EB4 0031CB54  7C 08 02 A6 */	mflr r0
+/* 80320EB8 0031CB58  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80320EBC 0031CB5C  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80320EC0 0031CB60  7C 9F 23 78 */	mr r31, r4
+/* 80320EC4 0031CB64  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80320EC8 0031CB68  7C 7E 1B 78 */	mr r30, r3
+/* 80320ECC 0031CB6C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320ED0 0031CB70  38 9E 00 04 */	addi r4, r30, 4
+/* 80320ED4 0031CB74  48 00 14 99 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320ED8 0031CB78  48 00 00 24 */	b lbl_80320EFC
+lbl_80320EDC:
+/* 80320EDC 0031CB7C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320EE0 0031CB80  48 00 14 29 */	bl "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80320EE4 0031CB84  7F E4 FB 78 */	mr r4, r31
+/* 80320EE8 0031CB88  48 00 0A 21 */	bl "__eq<7AptFile,7AptFile>__FRC22AptSharedPtr<7AptFile>RC22AptSharedPtr<7AptFile>_b"
+/* 80320EEC 0031CB8C  2C 03 00 00 */	cmpwi r3, 0
+/* 80320EF0 0031CB90  40 82 00 38 */	bne lbl_80320F28
+/* 80320EF4 0031CB94  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320EF8 0031CB98  48 00 14 01 */	bl "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+lbl_80320EFC:
+/* 80320EFC 0031CB9C  38 61 00 08 */	addi r3, r1, 8
+/* 80320F00 0031CBA0  38 9E 00 04 */	addi r4, r30, 4
+/* 80320F04 0031CBA4  48 00 13 49 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80320F08 0031CBA8  38 61 00 14 */	addi r3, r1, 0x14
+/* 80320F0C 0031CBAC  38 81 00 08 */	addi r4, r1, 8
+/* 80320F10 0031CBB0  48 00 12 B5 */	bl "__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 80320F14 0031CBB4  2C 03 00 00 */	cmpwi r3, 0
+/* 80320F18 0031CBB8  40 82 FF C4 */	bne lbl_80320EDC
+/* 80320F1C 0031CBBC  7F E4 FB 78 */	mr r4, r31
+/* 80320F20 0031CBC0  38 7E 00 04 */	addi r3, r30, 4
+/* 80320F24 0031CBC4  48 00 14 B1 */	bl "PushBack__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRC22AptSharedPtr<7AptFile>"
+lbl_80320F28:
+/* 80320F28 0031CBC8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80320F2C 0031CBCC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80320F30 0031CBD0  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80320F34 0031CBD4  7C 08 03 A6 */	mtlr r0
+/* 80320F38 0031CBD8  38 21 00 30 */	addi r1, r1, 0x30
+/* 80320F3C 0031CBDC  4E 80 00 20 */	blr 
+
+.global "Load__9AptLinkerFRC9EAStringC9EAStringC"
+"Load__9AptLinkerFRC9EAStringC9EAStringC":
+/* 80320F40 0031CBE0  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 80320F44 0031CBE4  7C 08 02 A6 */	mflr r0
+/* 80320F48 0031CBE8  90 01 00 74 */	stw r0, 0x74(r1)
+/* 80320F4C 0031CBEC  39 61 00 70 */	addi r11, r1, 0x70
+/* 80320F50 0031CBF0  48 0E E4 1D */	bl "_savegpr_25"
+/* 80320F54 0031CBF4  7C 7E 1B 78 */	mr r30, r3
+/* 80320F58 0031CBF8  7C 9A 23 78 */	mr r26, r4
+/* 80320F5C 0031CBFC  7C B9 2B 78 */	mr r25, r5
+/* 80320F60 0031CC00  38 60 00 00 */	li r3, 0
+/* 80320F64 0031CC04  4B FD A8 61 */	bl "_AptGetAnimationAtLevel__Fi"
+/* 80320F68 0031CC08  3C E0 80 54 */	lis r7, "gAptActionInterpreter"@ha
+/* 80320F6C 0031CC0C  7C 64 1B 78 */	mr r4, r3
+/* 80320F70 0031CC10  38 67 13 80 */	addi r3, r7, "gAptActionInterpreter"@l
+/* 80320F74 0031CC14  7F 26 CB 78 */	mr r6, r25
+/* 80320F78 0031CC18  38 A0 00 00 */	li r5, 0
+/* 80320F7C 0031CC1C  38 E0 00 01 */	li r7, 1
+/* 80320F80 0031CC20  39 00 00 01 */	li r8, 1
+/* 80320F84 0031CC24  39 20 00 00 */	li r9, 0
+/* 80320F88 0031CC28  4B FD F9 31 */	bl "getVariable__20AptActionInterpreterFP8AptValueP8AptValuePC9EAStringCiii"
+/* 80320F8C 0031CC2C  2C 03 00 00 */	cmpwi r3, 0
+/* 80320F90 0031CC30  7C 79 1B 78 */	mr r25, r3
+/* 80320F94 0031CC34  41 82 04 E0 */	beq lbl_80321474
+/* 80320F98 0031CC38  38 80 00 00 */	li r4, 0
+/* 80320F9C 0031CC3C  4B FD D4 59 */	bl "isCIH__8AptValueCFb"
+/* 80320FA0 0031CC40  2C 03 00 00 */	cmpwi r3, 0
+/* 80320FA4 0031CC44  40 82 00 08 */	bne lbl_80320FAC
+/* 80320FA8 0031CC48  48 00 04 CC */	b lbl_80321474
+lbl_80320FAC:
+/* 80320FAC 0031CC4C  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80320FB0 0031CC50  38 80 00 00 */	li r4, 0
+/* 80320FB4 0031CC54  4B ED EB AD */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80320FB8 0031CC58  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320FBC 0031CC5C  38 8D A4 58 */	addi r4, r13, lbl_805D6B38-_SDA_BASE_
+/* 80320FC0 0031CC60  4B FD C7 89 */	bl "__ct__9EAStringCFPCc"
+/* 80320FC4 0031CC64  7F 43 D3 78 */	mr r3, r26
+/* 80320FC8 0031CC68  38 81 00 3C */	addi r4, r1, 0x3c
+/* 80320FCC 0031CC6C  4B FD C7 AD */	bl "__eq__9EAStringCCFRC9EAStringC"
+/* 80320FD0 0031CC70  7C 7B 1B 78 */	mr r27, r3
+/* 80320FD4 0031CC74  38 61 00 3C */	addi r3, r1, 0x3c
+/* 80320FD8 0031CC78  38 80 FF FF */	li r4, -1
+/* 80320FDC 0031CC7C  4B FD C4 DD */	bl "__dt__9EAStringCFv"
+/* 80320FE0 0031CC80  2C 1B 00 00 */	cmpwi r27, 0
+/* 80320FE4 0031CC84  40 82 00 90 */	bne lbl_80321074
+/* 80320FE8 0031CC88  80 8D BE 78 */	lwz r4, "gpLoader"-_SDA_BASE_(r13)
+/* 80320FEC 0031CC8C  7F 45 D3 78 */	mr r5, r26
+/* 80320FF0 0031CC90  38 61 00 38 */	addi r3, r1, 0x38
+/* 80320FF4 0031CC94  4B FF F4 7D */	bl "IsLoaded__9AptLoaderFRC9EAStringC"
+/* 80320FF8 0031CC98  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80320FFC 0031CC9C  38 81 00 38 */	addi r4, r1, 0x38
+/* 80321000 0031CCA0  4B ED EA B9 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321004 0031CCA4  38 61 00 38 */	addi r3, r1, 0x38
+/* 80321008 0031CCA8  38 80 FF FF */	li r4, -1
+/* 8032100C 0031CCAC  4B ED EB 95 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80321010 0031CCB0  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80321014 0031CCB4  38 80 00 00 */	li r4, 0
+/* 80321018 0031CCB8  48 00 09 41 */	bl "__eq<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b"
+/* 8032101C 0031CCBC  2C 03 00 00 */	cmpwi r3, 0
+/* 80321020 0031CCC0  41 82 00 30 */	beq lbl_80321050
+/* 80321024 0031CCC4  80 8D BE 78 */	lwz r4, "gpLoader"-_SDA_BASE_(r13)
+/* 80321028 0031CCC8  7F 45 D3 78 */	mr r5, r26
+/* 8032102C 0031CCCC  38 61 00 34 */	addi r3, r1, 0x34
+/* 80321030 0031CCD0  4B FF F4 DD */	bl "Load__9AptLoaderFRC9EAStringC"
+/* 80321034 0031CCD4  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80321038 0031CCD8  38 81 00 34 */	addi r4, r1, 0x34
+/* 8032103C 0031CCDC  4B ED EA 7D */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321040 0031CCE0  38 61 00 34 */	addi r3, r1, 0x34
+/* 80321044 0031CCE4  38 80 FF FF */	li r4, -1
+/* 80321048 0031CCE8  4B ED EB 59 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 8032104C 0031CCEC  48 00 00 28 */	b lbl_80321074
+lbl_80321050:
+/* 80321050 0031CCF0  38 61 00 30 */	addi r3, r1, 0x30
+/* 80321054 0031CCF4  38 81 00 4C */	addi r4, r1, 0x4c
+/* 80321058 0031CCF8  4B ED EB B5 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 8032105C 0031CCFC  7F C3 F3 78 */	mr r3, r30
+/* 80321060 0031CD00  38 81 00 30 */	addi r4, r1, 0x30
+/* 80321064 0031CD04  4B FF FE 4D */	bl "Notify__9AptLinkerF22AptSharedPtr<7AptFile>"
+/* 80321068 0031CD08  38 61 00 30 */	addi r3, r1, 0x30
+/* 8032106C 0031CD0C  38 80 FF FF */	li r4, -1
+/* 80321070 0031CD10  4B ED EB 31 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80321074:
+/* 80321074 0031CD14  7F 23 CB 78 */	mr r3, r25
+/* 80321078 0031CD18  38 80 00 00 */	li r4, 0
+/* 8032107C 0031CD1C  4B FD D3 75 */	bl "c_cih__8AptValueCFb"
+/* 80321080 0031CD20  7C 7F 1B 78 */	mr r31, r3
+/* 80321084 0031CD24  38 80 00 01 */	li r4, 1
+/* 80321088 0031CD28  4B FF 4F 29 */	bl "ClearCIH__6AptCIHFb"
+/* 8032108C 0031CD2C  7F E3 FB 78 */	mr r3, r31
+/* 80321090 0031CD30  4B FD D5 E5 */	bl "getZombieState__6AptCIHCFv"
+/* 80321094 0031CD34  2C 03 00 01 */	cmpwi r3, 1
+/* 80321098 0031CD38  40 82 02 60 */	bne lbl_803212F8
+/* 8032109C 0031CD3C  7F C4 F3 78 */	mr r4, r30
+/* 803210A0 0031CD40  7F E5 FB 78 */	mr r5, r31
+/* 803210A4 0031CD44  38 61 00 48 */	addi r3, r1, 0x48
+/* 803210A8 0031CD48  48 00 0B 75 */	bl "findThingy__9AptLinkerFP6AptCIH"
+/* 803210AC 0031CD4C  38 61 00 48 */	addi r3, r1, 0x48
+/* 803210B0 0031CD50  48 00 06 19 */	bl "__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv"
+/* 803210B4 0031CD54  7C 64 1B 78 */	mr r4, r3
+/* 803210B8 0031CD58  38 61 00 44 */	addi r3, r1, 0x44
+/* 803210BC 0031CD5C  48 00 08 09 */	bl "__ct__31AptSharedPtr<15AptLinkerThingy>FRC31AptSharedPtr<15AptLinkerThingy>"
+/* 803210C0 0031CD60  38 61 00 44 */	addi r3, r1, 0x44
+/* 803210C4 0031CD64  48 00 07 B9 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 803210C8 0031CD68  7C 64 1B 78 */	mr r4, r3
+/* 803210CC 0031CD6C  38 61 00 2C */	addi r3, r1, 0x2c
+/* 803210D0 0031CD70  48 00 0C 55 */	bl "GetFile__15AptLinkerThingyCFv"
+/* 803210D4 0031CD74  38 61 00 2C */	addi r3, r1, 0x2c
+/* 803210D8 0031CD78  4B FD CC F1 */	bl "Get__22AptSharedPtr<7AptFile>CFv"
+/* 803210DC 0031CD7C  7C 79 1B 78 */	mr r25, r3
+/* 803210E0 0031CD80  38 61 00 2C */	addi r3, r1, 0x2c
+/* 803210E4 0031CD84  38 80 FF FF */	li r4, -1
+/* 803210E8 0031CD88  4B ED EA B9 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803210EC 0031CD8C  7F 23 CB 78 */	mr r3, r25
+/* 803210F0 0031CD90  4B FD C8 C9 */	bl "GetState__7AptFileCFv"
+/* 803210F4 0031CD94  2C 03 00 05 */	cmpwi r3, 5
+/* 803210F8 0031CD98  41 82 00 1C */	beq lbl_80321114
+/* 803210FC 0031CD9C  7F C3 F3 78 */	mr r3, r30
+/* 80321100 0031CDA0  38 81 00 48 */	addi r4, r1, 0x48
+/* 80321104 0031CDA4  48 00 05 D5 */	bl "Erase__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321108 0031CDA8  7F 23 CB 78 */	mr r3, r25
+/* 8032110C 0031CDAC  38 80 00 05 */	li r4, 5
+/* 80321110 0031CDB0  4B FD CB A5 */	bl "setState__7AptFileFQ27AptFile5State"
+lbl_80321114:
+/* 80321114 0031CDB4  38 60 00 64 */	li r3, 0x64
+/* 80321118 0031CDB8  4B FD D5 C9 */	bl "__nw__10AptValueGCFUl"
+/* 8032111C 0031CDBC  2C 03 00 00 */	cmpwi r3, 0
+/* 80321120 0031CDC0  7C 7A 1B 78 */	mr r26, r3
+/* 80321124 0031CDC4  41 82 00 18 */	beq lbl_8032113C
+/* 80321128 0031CDC8  80 DF 00 48 */	lwz r6, 0x48(r31)
+/* 8032112C 0031CDCC  38 80 00 13 */	li r4, 0x13
+/* 80321130 0031CDD0  38 A0 00 00 */	li r5, 0
+/* 80321134 0031CDD4  4B FD D3 35 */	bl "__ct__6AptCIHF31AptVirtualFunctionTable_IndicesP16AptCharacterInstP6AptCIH"
+/* 80321138 0031CDD8  7C 7A 1B 78 */	mr r26, r3
+lbl_8032113C:
+/* 8032113C 0031CDDC  80 BF 00 58 */	lwz r5, 0x58(r31)
+/* 80321140 0031CDE0  38 7A 00 0C */	addi r3, r26, 0xc
+/* 80321144 0031CDE4  80 1A 00 58 */	lwz r0, 0x58(r26)
+/* 80321148 0031CDE8  38 9F 00 0C */	addi r4, r31, 0xc
+/* 8032114C 0031CDEC  7C A5 7E 70 */	srawi r5, r5, 0xf
+/* 80321150 0031CDF0  50 A0 78 20 */	rlwimi r0, r5, 0xf, 0, 0x10
+/* 80321154 0031CDF4  90 1A 00 58 */	stw r0, 0x58(r26)
+/* 80321158 0031CDF8  4B FD C3 F1 */	bl "__as__9EAStringCFRC9EAStringC"
+/* 8032115C 0031CDFC  80 1F 00 48 */	lwz r0, 0x48(r31)
+/* 80321160 0031CE00  2C 00 00 00 */	cmpwi r0, 0
+/* 80321164 0031CE04  41 82 01 18 */	beq lbl_8032127C
+/* 80321168 0031CE08  80 1F 00 50 */	lwz r0, 0x50(r31)
+/* 8032116C 0031CE0C  90 1A 00 50 */	stw r0, 0x50(r26)
+/* 80321170 0031CE10  80 1F 00 54 */	lwz r0, 0x54(r31)
+/* 80321174 0031CE14  90 1A 00 54 */	stw r0, 0x54(r26)
+/* 80321178 0031CE18  80 7F 00 48 */	lwz r3, 0x48(r31)
+/* 8032117C 0031CE1C  81 83 00 00 */	lwz r12, 0(r3)
+/* 80321180 0031CE20  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 80321184 0031CE24  7D 89 03 A6 */	mtctr r12
+/* 80321188 0031CE28  4E 80 04 21 */	bctrl 
+/* 8032118C 0031CE2C  7F 45 D3 78 */	mr r5, r26
+/* 80321190 0031CE30  38 9F 00 0C */	addi r4, r31, 0xc
+/* 80321194 0031CE34  48 00 5C 31 */	bl "Set__13AptNativeHashFPC9EAStringCP8AptValue"
+/* 80321198 0031CE38  80 7F 00 48 */	lwz r3, 0x48(r31)
+/* 8032119C 0031CE3C  4B FE 9C 0D */	bl "getSpriteInstBase__6AptCIHCFv"
+/* 803211A0 0031CE40  7F E4 FB 78 */	mr r4, r31
+/* 803211A4 0031CE44  38 63 00 24 */	addi r3, r3, 0x24
+/* 803211A8 0031CE48  4B FF C0 4D */	bl "removeObject__14AptDisplayListFP6AptCIH"
+/* 803211AC 0031CE4C  80 7A 00 50 */	lwz r3, 0x50(r26)
+/* 803211B0 0031CE50  2C 03 00 00 */	cmpwi r3, 0
+/* 803211B4 0031CE54  41 82 00 08 */	beq lbl_803211BC
+/* 803211B8 0031CE58  93 43 00 54 */	stw r26, 0x54(r3)
+lbl_803211BC:
+/* 803211BC 0031CE5C  80 7A 00 54 */	lwz r3, 0x54(r26)
+/* 803211C0 0031CE60  2C 03 00 00 */	cmpwi r3, 0
+/* 803211C4 0031CE64  41 82 00 08 */	beq lbl_803211CC
+/* 803211C8 0031CE68  93 43 00 50 */	stw r26, 0x50(r3)
+lbl_803211CC:
+/* 803211CC 0031CE6C  81 9F 00 00 */	lwz r12, 0(r31)
+/* 803211D0 0031CE70  3F 60 80 46 */	lis r27, "__PRETTY_FUNCTION__$9013_80458758"@ha
+/* 803211D4 0031CE74  3F 80 80 46 */	lis r28, lbl_80458788@ha
+/* 803211D8 0031CE78  7F E3 FB 78 */	mr r3, r31
+/* 803211DC 0031CE7C  81 8C 00 08 */	lwz r12, 8(r12)
+/* 803211E0 0031CE80  38 9B 87 58 */	addi r4, r27, "__PRETTY_FUNCTION__$9013_80458758"@l
+/* 803211E4 0031CE84  38 C0 02 D9 */	li r6, 0x2d9
+/* 803211E8 0031CE88  38 BC 87 88 */	addi r5, r28, lbl_80458788@l
+/* 803211EC 0031CE8C  7D 89 03 A6 */	mtctr r12
+/* 803211F0 0031CE90  4E 80 04 21 */	bctrl 
+/* 803211F4 0031CE94  83 3A 00 48 */	lwz r25, 0x48(r26)
+/* 803211F8 0031CE98  7F 23 CB 78 */	mr r3, r25
+/* 803211FC 0031CE9C  4B FE 9B AD */	bl "getSpriteInstBase__6AptCIHCFv"
+/* 80321200 0031CEA0  38 9A 00 28 */	addi r4, r26, 0x28
+/* 80321204 0031CEA4  38 1A 00 10 */	addi r0, r26, 0x10
+/* 80321208 0031CEA8  90 81 00 08 */	stw r4, 8(r1)
+/* 8032120C 0031CEAC  3B A0 00 00 */	li r29, 0
+/* 80321210 0031CEB0  C0 22 A4 60 */	lfs f1, lbl_805DB680-_SDA2_BASE_(r2)
+/* 80321214 0031CEB4  7F 44 D3 78 */	mr r4, r26
+/* 80321218 0031CEB8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8032121C 0031CEBC  7F 28 CB 78 */	mr r8, r25
+/* 80321220 0031CEC0  38 FA 00 0C */	addi r7, r26, 0xc
+/* 80321224 0031CEC4  38 C0 00 00 */	li r6, 0
+/* 80321228 0031CEC8  93 A1 00 10 */	stw r29, 0x10(r1)
+/* 8032122C 0031CECC  39 20 00 01 */	li r9, 1
+/* 80321230 0031CED0  39 40 FF FF */	li r10, -1
+/* 80321234 0031CED4  38 63 00 24 */	addi r3, r3, 0x24
+/* 80321238 0031CED8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8032123C 0031CEDC  80 1A 00 58 */	lwz r0, 0x58(r26)
+/* 80321240 0031CEE0  7C 05 7E 70 */	srawi r5, r0, 0xf
+/* 80321244 0031CEE4  4B FF BA 09 */	bl "placeObject__14AptDisplayListFP6AptCIHiP12AptCharacterPC9EAStringCP6AptCIHiiP9AptCXFormP9AptMatrixP17AptEventActionSetfP8AptValue"
+/* 80321248 0031CEE8  7F E3 FB 78 */	mr r3, r31
+/* 8032124C 0031CEEC  38 80 00 01 */	li r4, 1
+/* 80321250 0031CEF0  4B FD D0 E5 */	bl "setIsDefined__8AptValueFb"
+/* 80321254 0031CEF4  80 7A 00 48 */	lwz r3, 0x48(r26)
+/* 80321258 0031CEF8  38 9B 87 58 */	addi r4, r27, -30888
+/* 8032125C 0031CEFC  38 BC 87 88 */	addi r5, r28, -30840
+/* 80321260 0031CF00  38 C0 02 E6 */	li r6, 0x2e6
+/* 80321264 0031CF04  81 83 00 00 */	lwz r12, 0(r3)
+/* 80321268 0031CF08  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 8032126C 0031CF0C  7D 89 03 A6 */	mtctr r12
+/* 80321270 0031CF10  4E 80 04 21 */	bctrl 
+/* 80321274 0031CF14  93 BF 00 48 */	stw r29, 0x48(r31)
+/* 80321278 0031CF18  48 00 00 3C */	b lbl_803212B4
+lbl_8032127C:
+/* 8032127C 0031CF1C  80 1F 00 50 */	lwz r0, 0x50(r31)
+/* 80321280 0031CF20  7F E3 FB 78 */	mr r3, r31
+/* 80321284 0031CF24  90 1A 00 50 */	stw r0, 0x50(r26)
+/* 80321288 0031CF28  80 1F 00 54 */	lwz r0, 0x54(r31)
+/* 8032128C 0031CF2C  90 1A 00 54 */	stw r0, 0x54(r26)
+/* 80321290 0031CF30  4B FF B0 F9 */	bl "remove__19AptDisplayListStateFP6AptCIH"
+/* 80321294 0031CF34  80 7A 00 50 */	lwz r3, 0x50(r26)
+/* 80321298 0031CF38  2C 03 00 00 */	cmpwi r3, 0
+/* 8032129C 0031CF3C  41 82 00 08 */	beq lbl_803212A4
+/* 803212A0 0031CF40  93 43 00 54 */	stw r26, 0x54(r3)
+lbl_803212A4:
+/* 803212A4 0031CF44  80 7A 00 54 */	lwz r3, 0x54(r26)
+/* 803212A8 0031CF48  2C 03 00 00 */	cmpwi r3, 0
+/* 803212AC 0031CF4C  41 82 00 08 */	beq lbl_803212B4
+/* 803212B0 0031CF50  93 43 00 50 */	stw r26, 0x50(r3)
+lbl_803212B4:
+/* 803212B4 0031CF54  81 9A 00 00 */	lwz r12, 0(r26)
+/* 803212B8 0031CF58  3C 80 80 46 */	lis r4, "__PRETTY_FUNCTION__$9013_80458758"@ha
+/* 803212BC 0031CF5C  3C A0 80 46 */	lis r5, lbl_80458788@ha
+/* 803212C0 0031CF60  7F 43 D3 78 */	mr r3, r26
+/* 803212C4 0031CF64  81 8C 00 08 */	lwz r12, 8(r12)
+/* 803212C8 0031CF68  38 84 87 58 */	addi r4, r4, "__PRETTY_FUNCTION__$9013_80458758"@l
+/* 803212CC 0031CF6C  38 C0 02 F7 */	li r6, 0x2f7
+/* 803212D0 0031CF70  38 A5 87 88 */	addi r5, r5, lbl_80458788@l
+/* 803212D4 0031CF74  7D 89 03 A6 */	mtctr r12
+/* 803212D8 0031CF78  4E 80 04 21 */	bctrl 
+/* 803212DC 0031CF7C  7F E3 FB 78 */	mr r3, r31
+/* 803212E0 0031CF80  38 80 00 01 */	li r4, 1
+/* 803212E4 0031CF84  4B FD CF 35 */	bl "setGCRoot__8AptValueFUi"
+/* 803212E8 0031CF88  7F 5F D3 78 */	mr r31, r26
+/* 803212EC 0031CF8C  38 61 00 44 */	addi r3, r1, 0x44
+/* 803212F0 0031CF90  38 80 FF FF */	li r4, -1
+/* 803212F4 0031CF94  4B FD C9 D9 */	bl "__dt__31AptSharedPtr<15AptLinkerThingy>Fv"
+lbl_803212F8:
+/* 803212F8 0031CF98  7F E3 FB 78 */	mr r3, r31
+/* 803212FC 0031CF9C  38 80 00 13 */	li r4, 0x13
+/* 80321300 0031CFA0  4B FD D0 8D */	bl "setVtblIndex__8AptValueF31AptVirtualFunctionTable_Indices"
+/* 80321304 0031CFA4  38 00 00 00 */	li r0, 0
+/* 80321308 0031CFA8  7F E3 FB 78 */	mr r3, r31
+/* 8032130C 0031CFAC  90 1F 00 4C */	stw r0, 0x4c(r31)
+/* 80321310 0031CFB0  38 80 00 01 */	li r4, 1
+/* 80321314 0031CFB4  4B FD D0 21 */	bl "setIsDefined__8AptValueFb"
+/* 80321318 0031CFB8  7F C4 F3 78 */	mr r4, r30
+/* 8032131C 0031CFBC  7F E5 FB 78 */	mr r5, r31
+/* 80321320 0031CFC0  38 61 00 40 */	addi r3, r1, 0x40
+/* 80321324 0031CFC4  48 00 08 F9 */	bl "findThingy__9AptLinkerFP6AptCIH"
+/* 80321328 0031CFC8  7F C4 F3 78 */	mr r4, r30
+/* 8032132C 0031CFCC  38 61 00 28 */	addi r3, r1, 0x28
+/* 80321330 0031CFD0  48 00 03 79 */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80321334 0031CFD4  38 61 00 40 */	addi r3, r1, 0x40
+/* 80321338 0031CFD8  38 81 00 28 */	addi r4, r1, 0x28
+/* 8032133C 0031CFDC  48 00 04 89 */	bl "__eq__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321340 0031CFE0  2C 03 00 00 */	cmpwi r3, 0
+/* 80321344 0031CFE4  41 82 00 90 */	beq lbl_803213D4
+/* 80321348 0031CFE8  38 61 00 4C */	addi r3, r1, 0x4c
+/* 8032134C 0031CFEC  38 80 00 00 */	li r4, 0
+/* 80321350 0031CFF0  4B FD CA 3D */	bl "__ne<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b"
+/* 80321354 0031CFF4  2C 03 00 00 */	cmpwi r3, 0
+/* 80321358 0031CFF8  41 82 01 10 */	beq lbl_80321468
+/* 8032135C 0031CFFC  3B 60 00 00 */	li r27, 0
+/* 80321360 0031D000  38 60 00 10 */	li r3, 0x10
+/* 80321364 0031D004  48 00 08 AD */	bl "__nw__15AptLinkerThingyFUl"
+/* 80321368 0031D008  2C 03 00 00 */	cmpwi r3, 0
+/* 8032136C 0031D00C  7C 7A 1B 78 */	mr r26, r3
+/* 80321370 0031D010  41 82 00 28 */	beq lbl_80321398
+/* 80321374 0031D014  38 61 00 24 */	addi r3, r1, 0x24
+/* 80321378 0031D018  38 81 00 4C */	addi r4, r1, 0x4c
+/* 8032137C 0031D01C  4B ED E8 91 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321380 0031D020  7F 43 D3 78 */	mr r3, r26
+/* 80321384 0031D024  7F E5 FB 78 */	mr r5, r31
+/* 80321388 0031D028  38 81 00 24 */	addi r4, r1, 0x24
+/* 8032138C 0031D02C  3B 60 00 01 */	li r27, 1
+/* 80321390 0031D030  48 00 08 21 */	bl "__ct__15AptLinkerThingyF22AptSharedPtr<7AptFile>P6AptCIH"
+/* 80321394 0031D034  7C 7A 1B 78 */	mr r26, r3
+lbl_80321398:
+/* 80321398 0031D038  7F 44 D3 78 */	mr r4, r26
+/* 8032139C 0031D03C  38 61 00 20 */	addi r3, r1, 0x20
+/* 803213A0 0031D040  48 00 04 E5 */	bl "__ct__31AptSharedPtr<15AptLinkerThingy>FP15AptLinkerThingy"
+/* 803213A4 0031D044  7F C3 F3 78 */	mr r3, r30
+/* 803213A8 0031D048  38 81 00 20 */	addi r4, r1, 0x20
+/* 803213AC 0031D04C  48 00 03 79 */	bl "PushFront__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRC31AptSharedPtr<15AptLinkerThingy>"
+/* 803213B0 0031D050  38 61 00 20 */	addi r3, r1, 0x20
+/* 803213B4 0031D054  38 80 FF FF */	li r4, -1
+/* 803213B8 0031D058  4B FD C9 15 */	bl "__dt__31AptSharedPtr<15AptLinkerThingy>Fv"
+/* 803213BC 0031D05C  2C 1B 00 00 */	cmpwi r27, 0
+/* 803213C0 0031D060  41 82 00 A8 */	beq lbl_80321468
+/* 803213C4 0031D064  38 61 00 24 */	addi r3, r1, 0x24
+/* 803213C8 0031D068  38 80 FF FF */	li r4, -1
+/* 803213CC 0031D06C  4B ED E7 D5 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803213D0 0031D070  48 00 00 98 */	b lbl_80321468
+lbl_803213D4:
+/* 803213D4 0031D074  7F C3 F3 78 */	mr r3, r30
+/* 803213D8 0031D078  38 81 00 40 */	addi r4, r1, 0x40
+/* 803213DC 0031D07C  48 00 02 FD */	bl "Erase__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 803213E0 0031D080  38 61 00 4C */	addi r3, r1, 0x4c
+/* 803213E4 0031D084  38 80 00 00 */	li r4, 0
+/* 803213E8 0031D088  4B FD C9 A5 */	bl "__ne<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b"
+/* 803213EC 0031D08C  2C 03 00 00 */	cmpwi r3, 0
+/* 803213F0 0031D090  41 82 00 78 */	beq lbl_80321468
+/* 803213F4 0031D094  3B 60 00 00 */	li r27, 0
+/* 803213F8 0031D098  38 60 00 10 */	li r3, 0x10
+/* 803213FC 0031D09C  48 00 08 15 */	bl "__nw__15AptLinkerThingyFUl"
+/* 80321400 0031D0A0  2C 03 00 00 */	cmpwi r3, 0
+/* 80321404 0031D0A4  7C 7A 1B 78 */	mr r26, r3
+/* 80321408 0031D0A8  41 82 00 28 */	beq lbl_80321430
+/* 8032140C 0031D0AC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321410 0031D0B0  38 81 00 4C */	addi r4, r1, 0x4c
+/* 80321414 0031D0B4  4B ED E7 F9 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321418 0031D0B8  7F 43 D3 78 */	mr r3, r26
+/* 8032141C 0031D0BC  7F E5 FB 78 */	mr r5, r31
+/* 80321420 0031D0C0  38 81 00 1C */	addi r4, r1, 0x1c
+/* 80321424 0031D0C4  3B 60 00 01 */	li r27, 1
+/* 80321428 0031D0C8  48 00 07 89 */	bl "__ct__15AptLinkerThingyF22AptSharedPtr<7AptFile>P6AptCIH"
+/* 8032142C 0031D0CC  7C 7A 1B 78 */	mr r26, r3
+lbl_80321430:
+/* 80321430 0031D0D0  7F 44 D3 78 */	mr r4, r26
+/* 80321434 0031D0D4  38 61 00 18 */	addi r3, r1, 0x18
+/* 80321438 0031D0D8  48 00 04 4D */	bl "__ct__31AptSharedPtr<15AptLinkerThingy>FP15AptLinkerThingy"
+/* 8032143C 0031D0DC  7F C3 F3 78 */	mr r3, r30
+/* 80321440 0031D0E0  38 81 00 18 */	addi r4, r1, 0x18
+/* 80321444 0031D0E4  48 00 02 E1 */	bl "PushFront__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRC31AptSharedPtr<15AptLinkerThingy>"
+/* 80321448 0031D0E8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8032144C 0031D0EC  38 80 FF FF */	li r4, -1
+/* 80321450 0031D0F0  4B FD C8 7D */	bl "__dt__31AptSharedPtr<15AptLinkerThingy>Fv"
+/* 80321454 0031D0F4  2C 1B 00 00 */	cmpwi r27, 0
+/* 80321458 0031D0F8  41 82 00 10 */	beq lbl_80321468
+/* 8032145C 0031D0FC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321460 0031D100  38 80 FF FF */	li r4, -1
+/* 80321464 0031D104  4B ED E7 3D */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80321468:
+/* 80321468 0031D108  38 61 00 4C */	addi r3, r1, 0x4c
+/* 8032146C 0031D10C  38 80 FF FF */	li r4, -1
+/* 80321470 0031D110  4B ED E7 31 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_80321474:
+/* 80321474 0031D114  39 61 00 70 */	addi r11, r1, 0x70
+/* 80321478 0031D118  48 0E DF 41 */	bl "_restgpr_25"
+/* 8032147C 0031D11C  80 01 00 74 */	lwz r0, 0x74(r1)
+/* 80321480 0031D120  7C 08 03 A6 */	mtlr r0
+/* 80321484 0031D124  38 21 00 70 */	addi r1, r1, 0x70
+/* 80321488 0031D128  4E 80 00 20 */	blr 
+
+.global "CancelLoad__9AptLinkerFP6AptCIH"
+"CancelLoad__9AptLinkerFP6AptCIH":
+/* 8032148C 0031D12C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80321490 0031D130  7C 08 02 A6 */	mflr r0
+/* 80321494 0031D134  7C 85 23 78 */	mr r5, r4
+/* 80321498 0031D138  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8032149C 0031D13C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803214A0 0031D140  7C 7F 1B 78 */	mr r31, r3
+/* 803214A4 0031D144  7F E4 FB 78 */	mr r4, r31
+/* 803214A8 0031D148  38 61 00 0C */	addi r3, r1, 0xc
+/* 803214AC 0031D14C  48 00 07 71 */	bl "findThingy__9AptLinkerFP6AptCIH"
+/* 803214B0 0031D150  7F E4 FB 78 */	mr r4, r31
+/* 803214B4 0031D154  38 61 00 08 */	addi r3, r1, 8
+/* 803214B8 0031D158  48 00 01 F1 */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 803214BC 0031D15C  38 61 00 0C */	addi r3, r1, 0xc
+/* 803214C0 0031D160  38 81 00 08 */	addi r4, r1, 8
+/* 803214C4 0031D164  48 00 01 C9 */	bl "__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 803214C8 0031D168  2C 03 00 00 */	cmpwi r3, 0
+/* 803214CC 0031D16C  41 82 00 10 */	beq lbl_803214DC
+/* 803214D0 0031D170  7F E3 FB 78 */	mr r3, r31
+/* 803214D4 0031D174  38 81 00 0C */	addi r4, r1, 0xc
+/* 803214D8 0031D178  48 00 02 01 */	bl "Erase__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+lbl_803214DC:
+/* 803214DC 0031D17C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803214E0 0031D180  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803214E4 0031D184  7C 08 03 A6 */	mtlr r0
+/* 803214E8 0031D188  38 21 00 20 */	addi r1, r1, 0x20
+/* 803214EC 0031D18C  4E 80 00 20 */	blr 
+
+.global "AptSharedPtrIncRef__FP7AptFile"
+"AptSharedPtrIncRef__FP7AptFile":
+/* 803214F0 0031D190  48 00 08 48 */	b "IncRef__20AptSharedPtrRefCountFv"
+
+.global "AptSharedPtrDecRef__FP7AptFile"
+"AptSharedPtrDecRef__FP7AptFile":
+/* 803214F4 0031D194  48 00 08 58 */	b "DecRef__20AptSharedPtrRefCountFv"
+
+.global "AptSharedPtrDelete__FP7AptFile"
+"AptSharedPtrDelete__FP7AptFile":
+/* 803214F8 0031D198  38 80 00 01 */	li r4, 1
+/* 803214FC 0031D19C  48 00 08 64 */	b "__dt__7AptFileFv"
+
+.global "AptSharedPtrIncRef__FP15AptLinkerThingy"
+"AptSharedPtrIncRef__FP15AptLinkerThingy":
+/* 80321500 0031D1A0  48 00 08 38 */	b "IncRef__20AptSharedPtrRefCountFv"
+
+.global "AptSharedPtrDecRef__FP15AptLinkerThingy"
+"AptSharedPtrDecRef__FP15AptLinkerThingy":
+/* 80321504 0031D1A4  48 00 08 48 */	b "DecRef__20AptSharedPtrRefCountFv"
+
+.global "AptSharedPtrDelete__FP15AptLinkerThingy"
+"AptSharedPtrDelete__FP15AptLinkerThingy":
+/* 80321508 0031D1A8  38 80 00 01 */	li r4, 1
+/* 8032150C 0031D1AC  48 00 00 04 */	b "__dt__15AptLinkerThingyFv"
+
+.global "__dt__15AptLinkerThingyFv"
+"__dt__15AptLinkerThingyFv":
+/* 80321510 0031D1B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321514 0031D1B4  7C 08 02 A6 */	mflr r0
+/* 80321518 0031D1B8  2C 03 00 00 */	cmpwi r3, 0
+/* 8032151C 0031D1BC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321520 0031D1C0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321524 0031D1C4  7C 9F 23 78 */	mr r31, r4
+/* 80321528 0031D1C8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8032152C 0031D1CC  7C 7E 1B 78 */	mr r30, r3
+/* 80321530 0031D1D0  41 82 00 24 */	beq lbl_80321554
+/* 80321534 0031D1D4  38 80 FF FF */	li r4, -1
+/* 80321538 0031D1D8  38 63 00 04 */	addi r3, r3, 4
+/* 8032153C 0031D1DC  4B ED E6 65 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80321540 0031D1E0  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321544 0031D1E4  40 81 00 10 */	ble lbl_80321554
+/* 80321548 0031D1E8  7F C3 F3 78 */	mr r3, r30
+/* 8032154C 0031D1EC  38 80 00 10 */	li r4, 0x10
+/* 80321550 0031D1F0  48 00 08 C9 */	bl "__dl__15AptLinkerThingyFPvUl"
+lbl_80321554:
+/* 80321554 0031D1F4  7F C3 F3 78 */	mr r3, r30
+/* 80321558 0031D1F8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8032155C 0031D1FC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80321560 0031D200  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321564 0031D204  7C 08 03 A6 */	mtlr r0
+/* 80321568 0031D208  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032156C 0031D20C  4E 80 00 20 */	blr 
+
+.global "GlobalNotificationFunction__F22AptSharedPtr<7AptFile>"
+"GlobalNotificationFunction__F22AptSharedPtr<7AptFile>":
+/* 80321570 0031D210  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80321574 0031D214  7C 08 02 A6 */	mflr r0
+/* 80321578 0031D218  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8032157C 0031D21C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80321580 0031D220  7C 7F 1B 78 */	mr r31, r3
+/* 80321584 0031D224  38 61 00 08 */	addi r3, r1, 8
+/* 80321588 0031D228  7F E4 FB 78 */	mr r4, r31
+/* 8032158C 0031D22C  4B ED E6 81 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321590 0031D230  80 6D BE 7C */	lwz r3, "gpLinker"-_SDA_BASE_(r13)
+/* 80321594 0031D234  38 81 00 08 */	addi r4, r1, 8
+/* 80321598 0031D238  4B FF F9 19 */	bl "Notify__9AptLinkerF22AptSharedPtr<7AptFile>"
+/* 8032159C 0031D23C  38 61 00 08 */	addi r3, r1, 8
+/* 803215A0 0031D240  38 80 FF FF */	li r4, -1
+/* 803215A4 0031D244  4B ED E5 FD */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 803215A8 0031D248  3C 60 80 54 */	lis r3, "gSIPlayback"@ha
+/* 803215AC 0031D24C  80 03 13 5C */	lwz r0, "gSIPlayback"@l(r3)
+/* 803215B0 0031D250  2C 00 00 00 */	cmpwi r0, 0
+/* 803215B4 0031D254  41 82 00 1C */	beq lbl_803215D0
+/* 803215B8 0031D258  7F E3 FB 78 */	mr r3, r31
+/* 803215BC 0031D25C  4B FD C7 C9 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 803215C0 0031D260  4B FF 46 01 */	bl "GetName__7AptFileCFv"
+/* 803215C4 0031D264  7C 64 1B 78 */	mr r4, r3
+/* 803215C8 0031D268  80 6D BE 80 */	lwz r3, "gpSavedInputCheckpoints"-_SDA_BASE_(r13)
+/* 803215CC 0031D26C  48 00 08 61 */	bl "FileLoaded__24AptSavedInputCheckpointsFRC9EAStringC"
+lbl_803215D0:
+/* 803215D0 0031D270  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803215D4 0031D274  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803215D8 0031D278  7C 08 03 A6 */	mtlr r0
+/* 803215DC 0031D27C  38 21 00 20 */	addi r1, r1, 0x20
+/* 803215E0 0031D280  4E 80 00 20 */	blr 
+
+.global "EraseAfter__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+"EraseAfter__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator":
+/* 803215E4 0031D284  80 84 00 00 */	lwz r4, 0(r4)
+/* 803215E8 0031D288  80 64 00 04 */	lwz r3, 4(r4)
+/* 803215EC 0031D28C  2C 03 00 00 */	cmpwi r3, 0
+/* 803215F0 0031D290  41 82 00 0C */	beq lbl_803215FC
+/* 803215F4 0031D294  80 03 00 04 */	lwz r0, 4(r3)
+/* 803215F8 0031D298  90 04 00 04 */	stw r0, 4(r4)
+lbl_803215FC:
+/* 803215FC 0031D29C  38 80 00 08 */	li r4, 8
+/* 80321600 0031D2A0  4B FD CA 40 */	b "__dl__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFPvUl"
+
+.global "__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+"__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator":
+/* 80321604 0031D2A4  80 04 00 00 */	lwz r0, 0(r4)
+/* 80321608 0031D2A8  90 03 00 00 */	stw r0, 0(r3)
+/* 8032160C 0031D2AC  4E 80 00 20 */	blr 
+
+.global "PushFront__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRCP7AptFile"
+"PushFront__Q311CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>FRCP7AptFile":
+/* 80321610 0031D2B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321614 0031D2B4  7C 08 02 A6 */	mflr r0
+/* 80321618 0031D2B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8032161C 0031D2BC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321620 0031D2C0  7C 9F 23 78 */	mr r31, r4
+/* 80321624 0031D2C4  93 C1 00 08 */	stw r30, 8(r1)
+/* 80321628 0031D2C8  7C 7E 1B 78 */	mr r30, r3
+/* 8032162C 0031D2CC  38 60 00 08 */	li r3, 8
+/* 80321630 0031D2D0  48 00 00 4D */	bl "__nw__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFUl"
+/* 80321634 0031D2D4  2C 03 00 00 */	cmpwi r3, 0
+/* 80321638 0031D2D8  41 82 00 10 */	beq lbl_80321648
+/* 8032163C 0031D2DC  7F E4 FB 78 */	mr r4, r31
+/* 80321640 0031D2E0  38 A0 00 00 */	li r5, 0
+/* 80321644 0031D2E4  48 00 00 29 */	bl "__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFRCP7AptFilePQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4Node"
+lbl_80321648:
+/* 80321648 0031D2E8  80 1E 00 00 */	lwz r0, 0(r30)
+/* 8032164C 0031D2EC  90 03 00 04 */	stw r0, 4(r3)
+/* 80321650 0031D2F0  90 7E 00 00 */	stw r3, 0(r30)
+/* 80321654 0031D2F4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80321658 0031D2F8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8032165C 0031D2FC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321660 0031D300  7C 08 03 A6 */	mtlr r0
+/* 80321664 0031D304  38 21 00 10 */	addi r1, r1, 0x10
+/* 80321668 0031D308  4E 80 00 20 */	blr 
+
+.global "__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFRCP7AptFilePQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4Node"
+"__ct__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFRCP7AptFilePQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4Node":
+/* 8032166C 0031D30C  80 04 00 00 */	lwz r0, 0(r4)
+/* 80321670 0031D310  90 A3 00 04 */	stw r5, 4(r3)
+/* 80321674 0031D314  90 03 00 00 */	stw r0, 0(r3)
+/* 80321678 0031D318  4E 80 00 20 */	blr 
+
+.global "__nw__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFUl"
+"__nw__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>4NodeFUl":
+/* 8032167C 0031D31C  48 00 03 28 */	b "Alloc__Q219AptSingleListPolicy9AllocatorFUl"
+
+.global "__as__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator"
+"__as__Q411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList43SingleList<P7AptFile,19AptSingleListPolicy>8Iterator":
+/* 80321680 0031D320  80 04 00 00 */	lwz r0, 0(r4)
+/* 80321684 0031D324  90 03 00 00 */	stw r0, 0(r3)
+/* 80321688 0031D328  4E 80 00 20 */	blr 
+
+.global "__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+"__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator":
+/* 8032168C 0031D32C  80 A3 00 00 */	lwz r5, 0(r3)
+/* 80321690 0031D330  80 04 00 00 */	lwz r0, 0(r4)
+/* 80321694 0031D334  7C 65 00 50 */	subf r3, r5, r0
+/* 80321698 0031D338  7C 00 28 50 */	subf r0, r0, r5
+/* 8032169C 0031D33C  7C 60 03 78 */	or r0, r3, r0
+/* 803216A0 0031D340  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 803216A4 0031D344  4E 80 00 20 */	blr 
+
+.global "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+"End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv":
+/* 803216A8 0031D348  38 80 00 00 */	li r4, 0
+/* 803216AC 0031D34C  48 00 00 04 */	b "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFPQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node"
+
+.global "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFPQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node"
+"__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFPQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node":
+/* 803216B0 0031D350  90 83 00 00 */	stw r4, 0(r3)
+/* 803216B4 0031D354  4E 80 00 20 */	blr 
+
+.global "__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFv"
+"__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFv":
+/* 803216B8 0031D358  80 83 00 00 */	lwz r4, 0(r3)
+/* 803216BC 0031D35C  80 04 00 04 */	lwz r0, 4(r4)
+/* 803216C0 0031D360  90 03 00 00 */	stw r0, 0(r3)
+/* 803216C4 0031D364  4E 80 00 20 */	blr 
+
+.global "__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv"
+"__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv":
+/* 803216C8 0031D368  80 63 00 00 */	lwz r3, 0(r3)
+/* 803216CC 0031D36C  4E 80 00 20 */	blr 
+
+.global "Begin__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+"Begin__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv":
+/* 803216D0 0031D370  80 84 00 00 */	lwz r4, 0(r4)
+/* 803216D4 0031D374  4B FF FF DC */	b "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFPQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node"
+
+.global "Erase__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+"Erase__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator":
+/* 803216D8 0031D378  80 A3 00 00 */	lwz r5, 0(r3)
+/* 803216DC 0031D37C  80 84 00 00 */	lwz r4, 0(r4)
+/* 803216E0 0031D380  7C 04 28 40 */	cmplw r4, r5
+/* 803216E4 0031D384  40 82 00 10 */	bne lbl_803216F4
+/* 803216E8 0031D388  4B FD C7 A4 */	b "PopFront__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 803216EC 0031D38C  48 00 00 08 */	b lbl_803216F4
+lbl_803216F0:
+/* 803216F0 0031D390  7C 05 03 78 */	mr r5, r0
+lbl_803216F4:
+/* 803216F4 0031D394  2C 05 00 00 */	cmpwi r5, 0
+/* 803216F8 0031D398  41 82 00 10 */	beq lbl_80321708
+/* 803216FC 0031D39C  80 05 00 04 */	lwz r0, 4(r5)
+/* 80321700 0031D3A0  7C 00 20 40 */	cmplw r0, r4
+/* 80321704 0031D3A4  40 82 FF EC */	bne lbl_803216F0
+lbl_80321708:
+/* 80321708 0031D3A8  80 65 00 04 */	lwz r3, 4(r5)
+/* 8032170C 0031D3AC  2C 03 00 00 */	cmpwi r3, 0
+/* 80321710 0031D3B0  41 82 00 0C */	beq lbl_8032171C
+/* 80321714 0031D3B4  80 03 00 04 */	lwz r0, 4(r3)
+/* 80321718 0031D3B8  90 05 00 04 */	stw r0, 4(r5)
+lbl_8032171C:
+/* 8032171C 0031D3BC  38 80 00 01 */	li r4, 1
+/* 80321720 0031D3C0  4B FD C7 BC */	b "__dt__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFv"
+
+.global "PushFront__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRC31AptSharedPtr<15AptLinkerThingy>"
+"PushFront__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>FRC31AptSharedPtr<15AptLinkerThingy>":
+/* 80321724 0031D3C4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321728 0031D3C8  7C 08 02 A6 */	mflr r0
+/* 8032172C 0031D3CC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321730 0031D3D0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321734 0031D3D4  7C 9F 23 78 */	mr r31, r4
+/* 80321738 0031D3D8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8032173C 0031D3DC  7C 7E 1B 78 */	mr r30, r3
+/* 80321740 0031D3E0  38 60 00 08 */	li r3, 8
+/* 80321744 0031D3E4  48 00 00 7D */	bl "__nw__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFUl"
+/* 80321748 0031D3E8  2C 03 00 00 */	cmpwi r3, 0
+/* 8032174C 0031D3EC  41 82 00 10 */	beq lbl_8032175C
+/* 80321750 0031D3F0  7F E4 FB 78 */	mr r4, r31
+/* 80321754 0031D3F4  38 A0 00 00 */	li r5, 0
+/* 80321758 0031D3F8  48 00 00 29 */	bl "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFRC31AptSharedPtr<15AptLinkerThingy>PQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node"
+lbl_8032175C:
+/* 8032175C 0031D3FC  80 1E 00 00 */	lwz r0, 0(r30)
+/* 80321760 0031D400  90 03 00 04 */	stw r0, 4(r3)
+/* 80321764 0031D404  90 7E 00 00 */	stw r3, 0(r30)
+/* 80321768 0031D408  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8032176C 0031D40C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80321770 0031D410  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321774 0031D414  7C 08 03 A6 */	mtlr r0
+/* 80321778 0031D418  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032177C 0031D41C  4E 80 00 20 */	blr 
+
+.global "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFRC31AptSharedPtr<15AptLinkerThingy>PQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node"
+"__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFRC31AptSharedPtr<15AptLinkerThingy>PQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4Node":
+/* 80321780 0031D420  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321784 0031D424  7C 08 02 A6 */	mflr r0
+/* 80321788 0031D428  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8032178C 0031D42C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321790 0031D430  7C BF 2B 78 */	mr r31, r5
+/* 80321794 0031D434  93 C1 00 08 */	stw r30, 8(r1)
+/* 80321798 0031D438  7C 7E 1B 78 */	mr r30, r3
+/* 8032179C 0031D43C  48 00 01 29 */	bl "__ct__31AptSharedPtr<15AptLinkerThingy>FRC31AptSharedPtr<15AptLinkerThingy>"
+/* 803217A0 0031D440  93 FE 00 04 */	stw r31, 4(r30)
+/* 803217A4 0031D444  7F C3 F3 78 */	mr r3, r30
+/* 803217A8 0031D448  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803217AC 0031D44C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803217B0 0031D450  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803217B4 0031D454  7C 08 03 A6 */	mtlr r0
+/* 803217B8 0031D458  38 21 00 10 */	addi r1, r1, 0x10
+/* 803217BC 0031D45C  4E 80 00 20 */	blr 
+
+.global "__nw__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFUl"
+"__nw__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>4NodeFUl":
+/* 803217C0 0031D460  48 00 01 E4 */	b "Alloc__Q219AptSingleListPolicy9AllocatorFUl"
+
+.global "__eq__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+"__eq__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator":
+/* 803217C4 0031D464  80 63 00 00 */	lwz r3, 0(r3)
+/* 803217C8 0031D468  80 04 00 00 */	lwz r0, 0(r4)
+/* 803217CC 0031D46C  7C 03 00 50 */	subf r0, r3, r0
+/* 803217D0 0031D470  7C 00 00 34 */	cntlzw r0, r0
+/* 803217D4 0031D474  54 03 D9 7E */	srwi r3, r0, 5
+/* 803217D8 0031D478  4E 80 00 20 */	blr 
+
+.global "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+"__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator":
+/* 803217DC 0031D47C  80 04 00 00 */	lwz r0, 0(r4)
+/* 803217E0 0031D480  90 03 00 00 */	stw r0, 0(r3)
+/* 803217E4 0031D484  4E 80 00 20 */	blr 
+
+.global "__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFi"
+"__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFi":
+/* 803217E8 0031D488  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803217EC 0031D48C  7C 08 02 A6 */	mflr r0
+/* 803217F0 0031D490  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803217F4 0031D494  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803217F8 0031D498  7C 9F 23 78 */	mr r31, r4
+/* 803217FC 0031D49C  4B FF FF E1 */	bl "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321800 0031D4A0  80 7F 00 00 */	lwz r3, 0(r31)
+/* 80321804 0031D4A4  80 03 00 04 */	lwz r0, 4(r3)
+/* 80321808 0031D4A8  90 1F 00 00 */	stw r0, 0(r31)
+/* 8032180C 0031D4AC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80321810 0031D4B0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321814 0031D4B4  7C 08 03 A6 */	mtlr r0
+/* 80321818 0031D4B8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032181C 0031D4BC  4E 80 00 20 */	blr 
+
+.global "__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+"__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator":
+/* 80321820 0031D4C0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321824 0031D4C4  7C 08 02 A6 */	mflr r0
+/* 80321828 0031D4C8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8032182C 0031D4CC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321830 0031D4D0  7C 7F 1B 78 */	mr r31, r3
+/* 80321834 0031D4D4  48 00 00 1D */	bl "__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 80321838 0031D4D8  7F E3 FB 78 */	mr r3, r31
+/* 8032183C 0031D4DC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80321840 0031D4E0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321844 0031D4E4  7C 08 03 A6 */	mtlr r0
+/* 80321848 0031D4E8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032184C 0031D4EC  4E 80 00 20 */	blr 
+
+.global "__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+"__as__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>":
+/* 80321850 0031D4F0  80 C4 00 00 */	lwz r6, 0(r4)
+/* 80321854 0031D4F4  80 A4 00 04 */	lwz r5, 4(r4)
+/* 80321858 0031D4F8  80 04 00 08 */	lwz r0, 8(r4)
+/* 8032185C 0031D4FC  90 C3 00 00 */	stw r6, 0(r3)
+/* 80321860 0031D500  90 A3 00 04 */	stw r5, 4(r3)
+/* 80321864 0031D504  90 03 00 08 */	stw r0, 8(r3)
+/* 80321868 0031D508  4E 80 00 20 */	blr 
+
+.global "__nt__22AptSharedPtr<7AptFile>CFv"
+"__nt__22AptSharedPtr<7AptFile>CFv":
+/* 8032186C 0031D50C  80 03 00 00 */	lwz r0, 0(r3)
+/* 80321870 0031D510  7C 00 00 34 */	cntlzw r0, r0
+/* 80321874 0031D514  54 03 D9 7E */	srwi r3, r0, 5
+/* 80321878 0031D518  4E 80 00 20 */	blr 
+
+.global "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+"__rf__31AptSharedPtr<15AptLinkerThingy>CFv":
+/* 8032187C 0031D51C  80 63 00 00 */	lwz r3, 0(r3)
+/* 80321880 0031D520  4E 80 00 20 */	blr 
+
+.global "__ct__31AptSharedPtr<15AptLinkerThingy>FP15AptLinkerThingy"
+"__ct__31AptSharedPtr<15AptLinkerThingy>FP15AptLinkerThingy":
+/* 80321884 0031D524  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321888 0031D528  7C 08 02 A6 */	mflr r0
+/* 8032188C 0031D52C  2C 04 00 00 */	cmpwi r4, 0
+/* 80321890 0031D530  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321894 0031D534  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321898 0031D538  7C 7F 1B 78 */	mr r31, r3
+/* 8032189C 0031D53C  90 83 00 00 */	stw r4, 0(r3)
+/* 803218A0 0031D540  41 82 00 0C */	beq lbl_803218AC
+/* 803218A4 0031D544  7C 83 23 78 */	mr r3, r4
+/* 803218A8 0031D548  4B FF FC 59 */	bl "AptSharedPtrIncRef__FP15AptLinkerThingy"
+lbl_803218AC:
+/* 803218AC 0031D54C  7F E3 FB 78 */	mr r3, r31
+/* 803218B0 0031D550  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803218B4 0031D554  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803218B8 0031D558  7C 08 03 A6 */	mtlr r0
+/* 803218BC 0031D55C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803218C0 0031D560  4E 80 00 20 */	blr 
+
+.global "__ct__31AptSharedPtr<15AptLinkerThingy>FRC31AptSharedPtr<15AptLinkerThingy>"
+"__ct__31AptSharedPtr<15AptLinkerThingy>FRC31AptSharedPtr<15AptLinkerThingy>":
+/* 803218C4 0031D564  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803218C8 0031D568  7C 08 02 A6 */	mflr r0
+/* 803218CC 0031D56C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803218D0 0031D570  80 04 00 00 */	lwz r0, 0(r4)
+/* 803218D4 0031D574  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803218D8 0031D578  7C 7F 1B 78 */	mr r31, r3
+/* 803218DC 0031D57C  2C 00 00 00 */	cmpwi r0, 0
+/* 803218E0 0031D580  90 03 00 00 */	stw r0, 0(r3)
+/* 803218E4 0031D584  41 82 00 0C */	beq lbl_803218F0
+/* 803218E8 0031D588  7C 03 03 78 */	mr r3, r0
+/* 803218EC 0031D58C  4B FF FC 15 */	bl "AptSharedPtrIncRef__FP15AptLinkerThingy"
+lbl_803218F0:
+/* 803218F0 0031D590  7F E3 FB 78 */	mr r3, r31
+/* 803218F4 0031D594  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803218F8 0031D598  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803218FC 0031D59C  7C 08 03 A6 */	mtlr r0
+/* 80321900 0031D5A0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80321904 0031D5A4  4E 80 00 20 */	blr 
+
+.global "__eq<7AptFile,7AptFile>__FRC22AptSharedPtr<7AptFile>RC22AptSharedPtr<7AptFile>_b"
+"__eq<7AptFile,7AptFile>__FRC22AptSharedPtr<7AptFile>RC22AptSharedPtr<7AptFile>_b":
+/* 80321908 0031D5A8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8032190C 0031D5AC  7C 08 02 A6 */	mflr r0
+/* 80321910 0031D5B0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321914 0031D5B4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321918 0031D5B8  93 C1 00 08 */	stw r30, 8(r1)
+/* 8032191C 0031D5BC  7C 7E 1B 78 */	mr r30, r3
+/* 80321920 0031D5C0  7C 83 23 78 */	mr r3, r4
+/* 80321924 0031D5C4  4B FD C4 A5 */	bl "Get__22AptSharedPtr<7AptFile>CFv"
+/* 80321928 0031D5C8  7C 7F 1B 78 */	mr r31, r3
+/* 8032192C 0031D5CC  7F C3 F3 78 */	mr r3, r30
+/* 80321930 0031D5D0  4B FD C4 99 */	bl "Get__22AptSharedPtr<7AptFile>CFv"
+/* 80321934 0031D5D4  7C 03 F8 50 */	subf r0, r3, r31
+/* 80321938 0031D5D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8032193C 0031D5DC  7C 00 00 34 */	cntlzw r0, r0
+/* 80321940 0031D5E0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80321944 0031D5E4  54 03 D9 7E */	srwi r3, r0, 5
+/* 80321948 0031D5E8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8032194C 0031D5EC  7C 08 03 A6 */	mtlr r0
+/* 80321950 0031D5F0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80321954 0031D5F4  4E 80 00 20 */	blr 
+
+.global "__eq<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b"
+"__eq<7AptFile>__FRC22AptSharedPtr<7AptFile>i_b":
+/* 80321958 0031D5F8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8032195C 0031D5FC  7C 08 02 A6 */	mflr r0
+/* 80321960 0031D600  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321964 0031D604  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321968 0031D608  7C 9F 23 78 */	mr r31, r4
+/* 8032196C 0031D60C  4B FD C4 5D */	bl "Get__22AptSharedPtr<7AptFile>CFv"
+/* 80321970 0031D610  7C 03 F8 50 */	subf r0, r3, r31
+/* 80321974 0031D614  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80321978 0031D618  7C 00 00 34 */	cntlzw r0, r0
+/* 8032197C 0031D61C  54 03 D9 7E */	srwi r3, r0, 5
+/* 80321980 0031D620  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321984 0031D624  7C 08 03 A6 */	mtlr r0
+/* 80321988 0031D628  38 21 00 10 */	addi r1, r1, 0x10
+/* 8032198C 0031D62C  4E 80 00 20 */	blr 
+
+.global "__dl__9AptLoaderFPvUl"
+"__dl__9AptLoaderFPvUl":
+/* 80321990 0031D630  7C 60 1B 78 */	mr r0, r3
+/* 80321994 0031D634  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80321998 0031D638  7C 85 23 78 */	mr r5, r4
+/* 8032199C 0031D63C  7C 04 03 78 */	mr r4, r0
+/* 803219A0 0031D640  48 00 C8 D4 */	b "Deallocate__17DOGMA_PoolManagerFPvUl"
+
+.global "Alloc__Q219AptSingleListPolicy9AllocatorFUl"
+"Alloc__Q219AptSingleListPolicy9AllocatorFUl":
+/* 803219A4 0031D644  7C 64 1B 78 */	mr r4, r3
+/* 803219A8 0031D648  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 803219AC 0031D64C  48 00 C7 94 */	b "Allocate__17DOGMA_PoolManagerFUl"
+
+.global "__ct__7AptFileFRC9EAStringC"
+"__ct__7AptFileFRC9EAStringC":
+/* 803219B0 0031D650  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803219B4 0031D654  7C 08 02 A6 */	mflr r0
+/* 803219B8 0031D658  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803219BC 0031D65C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803219C0 0031D660  7C 9F 23 78 */	mr r31, r4
+/* 803219C4 0031D664  93 C1 00 08 */	stw r30, 8(r1)
+/* 803219C8 0031D668  7C 7E 1B 78 */	mr r30, r3
+/* 803219CC 0031D66C  48 00 00 45 */	bl "__ct__20AptSharedPtrRefCountFv"
+/* 803219D0 0031D670  7F E4 FB 78 */	mr r4, r31
+/* 803219D4 0031D674  38 7E 00 04 */	addi r3, r30, 4
+/* 803219D8 0031D678  4B FD BD 39 */	bl "__ct__9EAStringCFRC9EAStringC"
+/* 803219DC 0031D67C  38 00 00 00 */	li r0, 0
+/* 803219E0 0031D680  38 60 00 01 */	li r3, 1
+/* 803219E4 0031D684  90 7E 00 08 */	stw r3, 8(r30)
+/* 803219E8 0031D688  7F C3 F3 78 */	mr r3, r30
+/* 803219EC 0031D68C  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 803219F0 0031D690  90 1E 00 10 */	stw r0, 0x10(r30)
+/* 803219F4 0031D694  90 1E 00 14 */	stw r0, 0x14(r30)
+/* 803219F8 0031D698  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803219FC 0031D69C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80321A00 0031D6A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321A04 0031D6A4  7C 08 03 A6 */	mtlr r0
+/* 80321A08 0031D6A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80321A0C 0031D6AC  4E 80 00 20 */	blr 
+
+.global "__ct__20AptSharedPtrRefCountFv"
+"__ct__20AptSharedPtrRefCountFv":
+/* 80321A10 0031D6B0  38 00 00 00 */	li r0, 0
+/* 80321A14 0031D6B4  90 03 00 00 */	stw r0, 0(r3)
+/* 80321A18 0031D6B8  4E 80 00 20 */	blr 
+
+.global "__nw__7AptFileFUl"
+"__nw__7AptFileFUl":
+/* 80321A1C 0031D6BC  7C 64 1B 78 */	mr r4, r3
+/* 80321A20 0031D6C0  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80321A24 0031D6C4  48 00 C7 1C */	b "Allocate__17DOGMA_PoolManagerFUl"
+
+.global "GetUserData__7AptFileCFv"
+"GetUserData__7AptFileCFv":
+/* 80321A28 0031D6C8  80 63 00 14 */	lwz r3, 0x14(r3)
+/* 80321A2C 0031D6CC  4E 80 00 20 */	blr 
+
+.global "setDataPointers__7AptFileFPvP12AptCharacterPv"
+"setDataPointers__7AptFileFPvP12AptCharacterPv":
+/* 80321A30 0031D6D0  90 83 00 0C */	stw r4, 0xc(r3)
+/* 80321A34 0031D6D4  90 A3 00 10 */	stw r5, 0x10(r3)
+/* 80321A38 0031D6D8  90 C3 00 14 */	stw r6, 0x14(r3)
+/* 80321A3C 0031D6DC  4E 80 00 20 */	blr 
+
+.global "isFileImported__9AptLinkerF22AptSharedPtr<7AptFile>"
+"isFileImported__9AptLinkerF22AptSharedPtr<7AptFile>":
+/* 80321A40 0031D6E0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80321A44 0031D6E4  7C 08 02 A6 */	mflr r0
+/* 80321A48 0031D6E8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80321A4C 0031D6EC  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80321A50 0031D6F0  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80321A54 0031D6F4  7C 9E 23 78 */	mr r30, r4
+/* 80321A58 0031D6F8  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80321A5C 0031D6FC  7C 7D 1B 78 */	mr r29, r3
+/* 80321A60 0031D700  7F A4 EB 78 */	mr r4, r29
+/* 80321A64 0031D704  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321A68 0031D708  4B FF FC 69 */	bl "Begin__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80321A6C 0031D70C  48 00 00 54 */	b lbl_80321AC0
+lbl_80321A70:
+/* 80321A70 0031D710  7F C4 F3 78 */	mr r4, r30
+/* 80321A74 0031D714  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321A78 0031D718  4B ED E1 95 */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321A7C 0031D71C  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321A80 0031D720  4B FF FC 49 */	bl "__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv"
+/* 80321A84 0031D724  4B FF FD F9 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80321A88 0031D728  38 63 00 04 */	addi r3, r3, 4
+/* 80321A8C 0031D72C  4B FD C2 F9 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80321A90 0031D730  38 81 00 0C */	addi r4, r1, 0xc
+/* 80321A94 0031D734  48 00 00 6D */	bl "isFileImported__7AptFileF22AptSharedPtr<7AptFile>"
+/* 80321A98 0031D738  7C 7F 1B 78 */	mr r31, r3
+/* 80321A9C 0031D73C  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321AA0 0031D740  38 80 FF FF */	li r4, -1
+/* 80321AA4 0031D744  4B ED E0 FD */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80321AA8 0031D748  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321AAC 0031D74C  41 82 00 0C */	beq lbl_80321AB8
+/* 80321AB0 0031D750  38 60 00 01 */	li r3, 1
+/* 80321AB4 0031D754  48 00 00 30 */	b lbl_80321AE4
+lbl_80321AB8:
+/* 80321AB8 0031D758  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321ABC 0031D75C  4B FF FB FD */	bl "__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFv"
+lbl_80321AC0:
+/* 80321AC0 0031D760  7F A4 EB 78 */	mr r4, r29
+/* 80321AC4 0031D764  38 61 00 08 */	addi r3, r1, 8
+/* 80321AC8 0031D768  4B FF FB E1 */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80321ACC 0031D76C  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321AD0 0031D770  38 81 00 08 */	addi r4, r1, 8
+/* 80321AD4 0031D774  4B FF FB B9 */	bl "__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321AD8 0031D778  2C 03 00 00 */	cmpwi r3, 0
+/* 80321ADC 0031D77C  40 82 FF 94 */	bne lbl_80321A70
+/* 80321AE0 0031D780  38 60 00 00 */	li r3, 0
+lbl_80321AE4:
+/* 80321AE4 0031D784  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80321AE8 0031D788  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80321AEC 0031D78C  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80321AF0 0031D790  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80321AF4 0031D794  7C 08 03 A6 */	mtlr r0
+/* 80321AF8 0031D798  38 21 00 30 */	addi r1, r1, 0x30
+/* 80321AFC 0031D79C  4E 80 00 20 */	blr 
+
+.global "isFileImported__7AptFileF22AptSharedPtr<7AptFile>"
+"isFileImported__7AptFileF22AptSharedPtr<7AptFile>":
+/* 80321B00 0031D7A0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80321B04 0031D7A4  7C 08 02 A6 */	mflr r0
+/* 80321B08 0031D7A8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80321B0C 0031D7AC  39 61 00 30 */	addi r11, r1, 0x30
+/* 80321B10 0031D7B0  48 0E D8 65 */	bl "_savegpr_27"
+/* 80321B14 0031D7B4  7C 7B 1B 78 */	mr r27, r3
+/* 80321B18 0031D7B8  7C 9C 23 78 */	mr r28, r4
+/* 80321B1C 0031D7BC  3B A0 00 00 */	li r29, 0
+/* 80321B20 0031D7C0  3B C0 00 00 */	li r30, 0
+/* 80321B24 0031D7C4  48 00 00 5C */	b lbl_80321B80
+lbl_80321B28:
+/* 80321B28 0031D7C8  7F 63 DB 78 */	mr r3, r27
+/* 80321B2C 0031D7CC  4B FE C7 C5 */	bl "GetMainCharacter__7AptFileCFv"
+/* 80321B30 0031D7D0  80 83 00 2C */	lwz r4, 0x2c(r3)
+/* 80321B34 0031D7D4  38 61 00 08 */	addi r3, r1, 8
+/* 80321B38 0031D7D8  7C 84 F0 2E */	lwzx r4, r4, r30
+/* 80321B3C 0031D7DC  4B FD BC 0D */	bl "__ct__9EAStringCFPCc"
+/* 80321B40 0031D7E0  7F 83 E3 78 */	mr r3, r28
+/* 80321B44 0031D7E4  4B FD C2 41 */	bl "__rf__22AptSharedPtr<7AptFile>CFv"
+/* 80321B48 0031D7E8  7C 64 1B 78 */	mr r4, r3
+/* 80321B4C 0031D7EC  38 61 00 08 */	addi r3, r1, 8
+/* 80321B50 0031D7F0  38 84 00 04 */	addi r4, r4, 4
+/* 80321B54 0031D7F4  4B FD BC 25 */	bl "__eq__9EAStringCCFRC9EAStringC"
+/* 80321B58 0031D7F8  7C 7F 1B 78 */	mr r31, r3
+/* 80321B5C 0031D7FC  38 61 00 08 */	addi r3, r1, 8
+/* 80321B60 0031D800  38 80 FF FF */	li r4, -1
+/* 80321B64 0031D804  4B FD B9 55 */	bl "__dt__9EAStringCFv"
+/* 80321B68 0031D808  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321B6C 0031D80C  41 82 00 0C */	beq lbl_80321B78
+/* 80321B70 0031D810  38 60 00 01 */	li r3, 1
+/* 80321B74 0031D814  48 00 00 24 */	b lbl_80321B98
+lbl_80321B78:
+/* 80321B78 0031D818  3B DE 00 10 */	addi r30, r30, 0x10
+/* 80321B7C 0031D81C  3B BD 00 01 */	addi r29, r29, 1
+lbl_80321B80:
+/* 80321B80 0031D820  7F 63 DB 78 */	mr r3, r27
+/* 80321B84 0031D824  4B FE C7 6D */	bl "GetMainCharacter__7AptFileCFv"
+/* 80321B88 0031D828  80 03 00 28 */	lwz r0, 0x28(r3)
+/* 80321B8C 0031D82C  7C 1D 00 00 */	cmpw r29, r0
+/* 80321B90 0031D830  41 80 FF 98 */	blt lbl_80321B28
+/* 80321B94 0031D834  38 60 00 00 */	li r3, 0
+lbl_80321B98:
+/* 80321B98 0031D838  39 61 00 30 */	addi r11, r1, 0x30
+/* 80321B9C 0031D83C  48 0E D8 25 */	bl "_restgpr_27"
+/* 80321BA0 0031D840  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80321BA4 0031D844  7C 08 03 A6 */	mtlr r0
+/* 80321BA8 0031D848  38 21 00 30 */	addi r1, r1, 0x30
+/* 80321BAC 0031D84C  4E 80 00 20 */	blr 
+
+.global "__ct__15AptLinkerThingyF22AptSharedPtr<7AptFile>P6AptCIH"
+"__ct__15AptLinkerThingyF22AptSharedPtr<7AptFile>P6AptCIH":
+/* 80321BB0 0031D850  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80321BB4 0031D854  7C 08 02 A6 */	mflr r0
+/* 80321BB8 0031D858  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80321BBC 0031D85C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80321BC0 0031D860  7C BF 2B 78 */	mr r31, r5
+/* 80321BC4 0031D864  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80321BC8 0031D868  7C 9E 23 78 */	mr r30, r4
+/* 80321BCC 0031D86C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80321BD0 0031D870  7C 7D 1B 78 */	mr r29, r3
+/* 80321BD4 0031D874  4B FF FE 3D */	bl "__ct__20AptSharedPtrRefCountFv"
+/* 80321BD8 0031D878  7F C4 F3 78 */	mr r4, r30
+/* 80321BDC 0031D87C  38 7D 00 04 */	addi r3, r29, 4
+/* 80321BE0 0031D880  4B ED E0 2D */	bl "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80321BE4 0031D884  38 00 00 00 */	li r0, 0
+/* 80321BE8 0031D888  93 FD 00 08 */	stw r31, 8(r29)
+/* 80321BEC 0031D88C  7F A3 EB 78 */	mr r3, r29
+/* 80321BF0 0031D890  98 1D 00 0C */	stb r0, 0xc(r29)
+/* 80321BF4 0031D894  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80321BF8 0031D898  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80321BFC 0031D89C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80321C00 0031D8A0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80321C04 0031D8A4  7C 08 03 A6 */	mtlr r0
+/* 80321C08 0031D8A8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80321C0C 0031D8AC  4E 80 00 20 */	blr 
+
+.global "__nw__15AptLinkerThingyFUl"
+"__nw__15AptLinkerThingyFUl":
+/* 80321C10 0031D8B0  7C 64 1B 78 */	mr r4, r3
+/* 80321C14 0031D8B4  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80321C18 0031D8B8  48 00 C5 28 */	b "Allocate__17DOGMA_PoolManagerFUl"
+
+.global "findThingy__9AptLinkerFP6AptCIH"
+"findThingy__9AptLinkerFP6AptCIH":
+/* 80321C1C 0031D8BC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80321C20 0031D8C0  7C 08 02 A6 */	mflr r0
+/* 80321C24 0031D8C4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80321C28 0031D8C8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80321C2C 0031D8CC  7C BF 2B 78 */	mr r31, r5
+/* 80321C30 0031D8D0  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80321C34 0031D8D4  7C 9E 23 78 */	mr r30, r4
+/* 80321C38 0031D8D8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80321C3C 0031D8DC  7C 7D 1B 78 */	mr r29, r3
+/* 80321C40 0031D8E0  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321C44 0031D8E4  4B FF FA 8D */	bl "Begin__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80321C48 0031D8E8  48 00 00 34 */	b lbl_80321C7C
+lbl_80321C4C:
+/* 80321C4C 0031D8EC  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321C50 0031D8F0  4B FF FA 79 */	bl "__ml__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFv"
+/* 80321C54 0031D8F4  4B FF FC 29 */	bl "__rf__31AptSharedPtr<15AptLinkerThingy>CFv"
+/* 80321C58 0031D8F8  80 03 00 08 */	lwz r0, 8(r3)
+/* 80321C5C 0031D8FC  7C 00 F8 40 */	cmplw r0, r31
+/* 80321C60 0031D900  40 82 00 14 */	bne lbl_80321C74
+/* 80321C64 0031D904  7F A3 EB 78 */	mr r3, r29
+/* 80321C68 0031D908  38 81 00 0C */	addi r4, r1, 0xc
+/* 80321C6C 0031D90C  4B FF FB 71 */	bl "__ct__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321C70 0031D910  48 00 00 38 */	b lbl_80321CA8
+lbl_80321C74:
+/* 80321C74 0031D914  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321C78 0031D918  4B FF FA 41 */	bl "__pp__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorFv"
+lbl_80321C7C:
+/* 80321C7C 0031D91C  7F C4 F3 78 */	mr r4, r30
+/* 80321C80 0031D920  38 61 00 08 */	addi r3, r1, 8
+/* 80321C84 0031D924  4B FF FA 25 */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+/* 80321C88 0031D928  38 61 00 0C */	addi r3, r1, 0xc
+/* 80321C8C 0031D92C  38 81 00 08 */	addi r4, r1, 8
+/* 80321C90 0031D930  4B FF F9 FD */	bl "__ne__Q411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8IteratorCFRCQ411CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>8Iterator"
+/* 80321C94 0031D934  2C 03 00 00 */	cmpwi r3, 0
+/* 80321C98 0031D938  40 82 FF B4 */	bne lbl_80321C4C
+/* 80321C9C 0031D93C  7F A3 EB 78 */	mr r3, r29
+/* 80321CA0 0031D940  7F C4 F3 78 */	mr r4, r30
+/* 80321CA4 0031D944  4B FF FA 05 */	bl "End__Q311CommonSense10SingleList67SingleList<31AptSharedPtr<15AptLinkerThingy>,19AptSingleListPolicy>Fv"
+lbl_80321CA8:
+/* 80321CA8 0031D948  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80321CAC 0031D94C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80321CB0 0031D950  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80321CB4 0031D954  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80321CB8 0031D958  7C 08 03 A6 */	mtlr r0
+/* 80321CBC 0031D95C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80321CC0 0031D960  4E 80 00 20 */	blr 
+
+.global "GetTarget__15AptLinkerThingyCFv"
+"GetTarget__15AptLinkerThingyCFv":
+/* 80321CC4 0031D964  80 63 00 08 */	lwz r3, 8(r3)
+/* 80321CC8 0031D968  4E 80 00 20 */	blr 
+
+.global "AllLinked__24AptSavedInputCheckpointsFv"
+"AllLinked__24AptSavedInputCheckpointsFv":
+/* 80321CCC 0031D96C  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80321CD0 0031D970  7C 08 02 A6 */	mflr r0
+/* 80321CD4 0031D974  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80321CD8 0031D978  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80321CDC 0031D97C  7C 7F 1B 78 */	mr r31, r3
+/* 80321CE0 0031D980  38 61 00 08 */	addi r3, r1, 8
+/* 80321CE4 0031D984  4B FD A9 B9 */	bl "__ct__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>Fv"
+/* 80321CE8 0031D988  7F E3 FB 78 */	mr r3, r31
+/* 80321CEC 0031D98C  38 81 00 08 */	addi r4, r1, 8
+/* 80321CF0 0031D990  48 00 03 89 */	bl "Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>"
+/* 80321CF4 0031D994  38 61 00 08 */	addi r3, r1, 8
+/* 80321CF8 0031D998  38 80 FF FF */	li r4, -1
+/* 80321CFC 0031D99C  4B FD A8 F1 */	bl "__dt__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>Fv"
+/* 80321D00 0031D9A0  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80321D04 0031D9A4  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80321D08 0031D9A8  7C 08 03 A6 */	mtlr r0
+/* 80321D0C 0031D9AC  38 21 00 30 */	addi r1, r1, 0x30
+/* 80321D10 0031D9B0  4E 80 00 20 */	blr 
+
+.global "SetAttachedToMovie__15AptLinkerThingyFb"
+"SetAttachedToMovie__15AptLinkerThingyFb":
+/* 80321D14 0031D9B4  98 83 00 0C */	stb r4, 0xc(r3)
+/* 80321D18 0031D9B8  4E 80 00 20 */	blr 
+
+.global "IsAttachedToMovie__15AptLinkerThingyCFv"
+"IsAttachedToMovie__15AptLinkerThingyCFv":
+/* 80321D1C 0031D9BC  88 63 00 0C */	lbz r3, 0xc(r3)
+/* 80321D20 0031D9C0  4E 80 00 20 */	blr 
+
+.global "GetFile__15AptLinkerThingyCFv"
+"GetFile__15AptLinkerThingyCFv":
+/* 80321D24 0031D9C4  38 84 00 04 */	addi r4, r4, 4
+/* 80321D28 0031D9C8  4B ED DE E4 */	b "__ct__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+
+.global "CanLinkPendingFiles__24AptSavedInputCheckpointsFv"
+"CanLinkPendingFiles__24AptSavedInputCheckpointsFv":
+/* 80321D2C 0031D9CC  38 80 00 03 */	li r4, 3
+/* 80321D30 0031D9D0  38 A0 00 02 */	li r5, 2
+/* 80321D34 0031D9D4  4B FD BE 28 */	b "allStatesAre2__24AptSavedInputCheckpointsFQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5State"
+
+.global "IncRef__20AptSharedPtrRefCountFv"
+"IncRef__20AptSharedPtrRefCountFv":
+/* 80321D38 0031D9D8  80 83 00 00 */	lwz r4, 0(r3)
+/* 80321D3C 0031D9DC  38 04 00 01 */	addi r0, r4, 1
+/* 80321D40 0031D9E0  90 03 00 00 */	stw r0, 0(r3)
+/* 80321D44 0031D9E4  7C 03 03 78 */	mr r3, r0
+/* 80321D48 0031D9E8  4E 80 00 20 */	blr 
+
+.global "DecRef__20AptSharedPtrRefCountFv"
+"DecRef__20AptSharedPtrRefCountFv":
+/* 80321D4C 0031D9EC  80 83 00 00 */	lwz r4, 0(r3)
+/* 80321D50 0031D9F0  38 04 FF FF */	addi r0, r4, -1
+/* 80321D54 0031D9F4  90 03 00 00 */	stw r0, 0(r3)
+/* 80321D58 0031D9F8  7C 03 03 78 */	mr r3, r0
+/* 80321D5C 0031D9FC  4E 80 00 20 */	blr 
+
+.global "__dt__7AptFileFv"
+"__dt__7AptFileFv":
+/* 80321D60 0031DA00  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80321D64 0031DA04  7C 08 02 A6 */	mflr r0
+/* 80321D68 0031DA08  2C 03 00 00 */	cmpwi r3, 0
+/* 80321D6C 0031DA0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80321D70 0031DA10  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80321D74 0031DA14  7C 9F 23 78 */	mr r31, r4
+/* 80321D78 0031DA18  93 C1 00 08 */	stw r30, 8(r1)
+/* 80321D7C 0031DA1C  7C 7E 1B 78 */	mr r30, r3
+/* 80321D80 0031DA20  41 82 00 68 */	beq lbl_80321DE8
+/* 80321D84 0031DA24  80 6D BE 78 */	lwz r3, "gpLoader"-_SDA_BASE_(r13)
+/* 80321D88 0031DA28  7F C4 F3 78 */	mr r4, r30
+/* 80321D8C 0031DA2C  4B FF E5 BD */	bl "Invalidate__9AptLoaderFP7AptFile"
+/* 80321D90 0031DA30  80 7E 00 08 */	lwz r3, 8(r30)
+/* 80321D94 0031DA34  38 03 FF FD */	addi r0, r3, -3
+/* 80321D98 0031DA38  28 00 00 02 */	cmplwi r0, 2
+/* 80321D9C 0031DA3C  41 81 00 2C */	bgt lbl_80321DC8
+/* 80321DA0 0031DA40  80 7E 00 10 */	lwz r3, 0x10(r30)
+/* 80321DA4 0031DA44  80 9E 00 0C */	lwz r4, 0xc(r30)
+/* 80321DA8 0031DA48  38 63 00 08 */	addi r3, r3, 8
+/* 80321DAC 0031DA4C  4B FE A0 A1 */	bl "Unresolve__21AptCharacterAnimationFPv"
+/* 80321DB0 0031DA50  3C 80 80 54 */	lis r4, "gAptFuncs"@ha
+/* 80321DB4 0031DA54  80 7E 00 14 */	lwz r3, 0x14(r30)
+/* 80321DB8 0031DA58  38 84 12 68 */	addi r4, r4, "gAptFuncs"@l
+/* 80321DBC 0031DA5C  81 84 00 24 */	lwz r12, 0x24(r4)
+/* 80321DC0 0031DA60  7D 89 03 A6 */	mtctr r12
+/* 80321DC4 0031DA64  4E 80 04 21 */	bctrl 
+lbl_80321DC8:
+/* 80321DC8 0031DA68  38 7E 00 04 */	addi r3, r30, 4
+/* 80321DCC 0031DA6C  38 80 FF FF */	li r4, -1
+/* 80321DD0 0031DA70  4B FD B6 E9 */	bl "__dt__9EAStringCFv"
+/* 80321DD4 0031DA74  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321DD8 0031DA78  40 81 00 10 */	ble lbl_80321DE8
+/* 80321DDC 0031DA7C  7F C3 F3 78 */	mr r3, r30
+/* 80321DE0 0031DA80  38 80 00 18 */	li r4, 0x18
+/* 80321DE4 0031DA84  48 00 00 21 */	bl "__dl__7AptFileFPvUl"
+lbl_80321DE8:
+/* 80321DE8 0031DA88  7F C3 F3 78 */	mr r3, r30
+/* 80321DEC 0031DA8C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80321DF0 0031DA90  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80321DF4 0031DA94  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80321DF8 0031DA98  7C 08 03 A6 */	mtlr r0
+/* 80321DFC 0031DA9C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80321E00 0031DAA0  4E 80 00 20 */	blr 
+
+.global "__dl__7AptFileFPvUl"
+"__dl__7AptFileFPvUl":
+/* 80321E04 0031DAA4  7C 60 1B 78 */	mr r0, r3
+/* 80321E08 0031DAA8  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80321E0C 0031DAAC  7C 85 23 78 */	mr r5, r4
+/* 80321E10 0031DAB0  7C 04 03 78 */	mr r4, r0
+/* 80321E14 0031DAB4  48 00 C4 60 */	b "Deallocate__17DOGMA_PoolManagerFPvUl"
+
+.global "__dl__15AptLinkerThingyFPvUl"
+"__dl__15AptLinkerThingyFPvUl":
+/* 80321E18 0031DAB8  7C 60 1B 78 */	mr r0, r3
+/* 80321E1C 0031DABC  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80321E20 0031DAC0  7C 85 23 78 */	mr r5, r4
+/* 80321E24 0031DAC4  7C 04 03 78 */	mr r4, r0
+/* 80321E28 0031DAC8  48 00 C4 4C */	b "Deallocate__17DOGMA_PoolManagerFPvUl"
+
+.global "FileLoaded__24AptSavedInputCheckpointsFRC9EAStringC"
+"FileLoaded__24AptSavedInputCheckpointsFRC9EAStringC":
+/* 80321E2C 0031DACC  38 A0 00 01 */	li r5, 1
+/* 80321E30 0031DAD0  38 C0 00 03 */	li r6, 3
+/* 80321E34 0031DAD4  38 E0 00 02 */	li r7, 2
+/* 80321E38 0031DAD8  48 00 00 04 */	b "updateState__24AptSavedInputCheckpointsFRC9EAStringCQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5State"
+
+.global "updateState__24AptSavedInputCheckpointsFRC9EAStringCQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5State"
+"updateState__24AptSavedInputCheckpointsFRC9EAStringCQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5StateQ222AptFileSavedInputState5State":
+/* 80321E3C 0031DADC  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80321E40 0031DAE0  7C 08 02 A6 */	mflr r0
+/* 80321E44 0031DAE4  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80321E48 0031DAE8  39 61 00 40 */	addi r11, r1, 0x40
+/* 80321E4C 0031DAEC  48 0E D5 29 */	bl "_savegpr_27"
+/* 80321E50 0031DAF0  7C 7B 1B 78 */	mr r27, r3
+/* 80321E54 0031DAF4  7C 9C 23 78 */	mr r28, r4
+/* 80321E58 0031DAF8  7C BD 2B 78 */	mr r29, r5
+/* 80321E5C 0031DAFC  7C DE 33 78 */	mr r30, r6
+/* 80321E60 0031DB00  7C FF 3B 78 */	mr r31, r7
+/* 80321E64 0031DB04  7F 64 DB 78 */	mr r4, r27
+/* 80321E68 0031DB08  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321E6C 0031DB0C  4B FD B0 B1 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>Fv"
+/* 80321E70 0031DB10  48 00 00 50 */	b lbl_80321EC0
+lbl_80321E74:
+/* 80321E74 0031DB14  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321E78 0031DB18  4B FD B0 75 */	bl "__rf__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80321E7C 0031DB1C  4B FD BC D1 */	bl "GetName__22AptFileSavedInputStateCFv"
+/* 80321E80 0031DB20  7F 84 E3 78 */	mr r4, r28
+/* 80321E84 0031DB24  4B FD B8 F5 */	bl "__eq__9EAStringCCFRC9EAStringC"
+/* 80321E88 0031DB28  2C 03 00 00 */	cmpwi r3, 0
+/* 80321E8C 0031DB2C  41 82 00 2C */	beq lbl_80321EB8
+/* 80321E90 0031DB30  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321E94 0031DB34  4B FD B0 59 */	bl "__rf__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80321E98 0031DB38  4B FD BC AD */	bl "GetState__22AptFileSavedInputStateCFv"
+/* 80321E9C 0031DB3C  7C 1D 18 00 */	cmpw r29, r3
+/* 80321EA0 0031DB40  40 82 00 68 */	bne lbl_80321F08
+/* 80321EA4 0031DB44  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321EA8 0031DB48  4B FD B0 45 */	bl "__rf__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80321EAC 0031DB4C  7F C4 F3 78 */	mr r4, r30
+/* 80321EB0 0031DB50  4B FD BC 8D */	bl "SetState__22AptFileSavedInputStateFQ222AptFileSavedInputState5State"
+/* 80321EB4 0031DB54  48 00 00 54 */	b lbl_80321F08
+lbl_80321EB8:
+/* 80321EB8 0031DB58  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321EBC 0031DB5C  4B FD B0 21 */	bl "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>155DbgIteratorBase<22AptFileSavedInputState,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIterator>Fv"
+lbl_80321EC0:
+/* 80321EC0 0031DB60  7F 64 DB 78 */	mr r4, r27
+/* 80321EC4 0031DB64  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321EC8 0031DB68  4B FD AF A9 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>Fv"
+/* 80321ECC 0031DB6C  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80321ED0 0031DB70  38 81 00 10 */	addi r4, r1, 0x10
+/* 80321ED4 0031DB74  4B FD AF 4D */	bl "__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>155DbgIteratorBase<22AptFileSavedInputState,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>11DbgIterator"
+/* 80321ED8 0031DB78  2C 03 00 00 */	cmpwi r3, 0
+/* 80321EDC 0031DB7C  40 82 FF 98 */	bne lbl_80321E74
+/* 80321EE0 0031DB80  7F 84 E3 78 */	mr r4, r28
+/* 80321EE4 0031DB84  7F E5 FB 78 */	mr r5, r31
+/* 80321EE8 0031DB88  38 61 00 08 */	addi r3, r1, 8
+/* 80321EEC 0031DB8C  4B FD BC 11 */	bl "__ct__22AptFileSavedInputStateFRC9EAStringCQ222AptFileSavedInputState5State"
+/* 80321EF0 0031DB90  7F 63 DB 78 */	mr r3, r27
+/* 80321EF4 0031DB94  38 81 00 08 */	addi r4, r1, 8
+/* 80321EF8 0031DB98  4B FD A9 11 */	bl "PushBack__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>FRC22AptFileSavedInputState"
+/* 80321EFC 0031DB9C  38 61 00 08 */	addi r3, r1, 8
+/* 80321F00 0031DBA0  38 80 FF FF */	li r4, -1
+/* 80321F04 0031DBA4  4B FD B1 9D */	bl "__dt__22AptFileSavedInputStateFv"
+lbl_80321F08:
+/* 80321F08 0031DBA8  39 61 00 40 */	addi r11, r1, 0x40
+/* 80321F0C 0031DBAC  48 0E D4 B5 */	bl "_restgpr_27"
+/* 80321F10 0031DBB0  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80321F14 0031DBB4  7C 08 03 A6 */	mtlr r0
+/* 80321F18 0031DBB8  38 21 00 40 */	addi r1, r1, 0x40
+/* 80321F1C 0031DBBC  4E 80 00 20 */	blr 
+
+.global "Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>"
+"Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>":
+/* 80321F20 0031DBC0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80321F24 0031DBC4  7C 08 02 A6 */	mflr r0
+/* 80321F28 0031DBC8  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80321F2C 0031DBCC  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80321F30 0031DBD0  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80321F34 0031DBD4  7C 9E 23 78 */	mr r30, r4
+/* 80321F38 0031DBD8  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80321F3C 0031DBDC  7C 7D 1B 78 */	mr r29, r3
+/* 80321F40 0031DBE0  80 A4 00 00 */	lwz r5, 0(r4)
+/* 80321F44 0031DBE4  80 03 00 00 */	lwz r0, 0(r3)
+/* 80321F48 0031DBE8  90 04 00 00 */	stw r0, 0(r4)
+/* 80321F4C 0031DBEC  90 A3 00 00 */	stw r5, 0(r3)
+/* 80321F50 0031DBF0  7F C3 F3 78 */	mr r3, r30
+/* 80321F54 0031DBF4  4B FD AE C5 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 80321F58 0031DBF8  7C 7F 1B 78 */	mr r31, r3
+/* 80321F5C 0031DBFC  7F A3 EB 78 */	mr r3, r29
+/* 80321F60 0031DC00  4B FD AE B9 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 80321F64 0031DC04  7C 64 1B 78 */	mr r4, r3
+/* 80321F68 0031DC08  7F C3 F3 78 */	mr r3, r30
+/* 80321F6C 0031DC0C  4B FD AD C5 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 80321F70 0031DC10  7F A3 EB 78 */	mr r3, r29
+/* 80321F74 0031DC14  7F E4 FB 78 */	mr r4, r31
+/* 80321F78 0031DC18  4B FD AD B9 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 80321F7C 0031DC1C  7F A3 EB 78 */	mr r3, r29
+/* 80321F80 0031DC20  4B FD A8 19 */	bl "DoingSmallStringOptimization__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80321F84 0031DC24  7C 7F 1B 78 */	mr r31, r3
+/* 80321F88 0031DC28  7F C3 F3 78 */	mr r3, r30
+/* 80321F8C 0031DC2C  4B FD A8 0D */	bl "DoingSmallStringOptimization__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80321F90 0031DC30  2C 03 00 00 */	cmpwi r3, 0
+/* 80321F94 0031DC34  80 1E 00 08 */	lwz r0, 8(r30)
+/* 80321F98 0031DC38  80 9D 00 08 */	lwz r4, 8(r29)
+/* 80321F9C 0031DC3C  41 82 00 10 */	beq lbl_80321FAC
+/* 80321FA0 0031DC40  38 1D 00 0C */	addi r0, r29, 0xc
+/* 80321FA4 0031DC44  90 1D 00 08 */	stw r0, 8(r29)
+/* 80321FA8 0031DC48  48 00 00 08 */	b lbl_80321FB0
+lbl_80321FAC:
+/* 80321FAC 0031DC4C  90 1D 00 08 */	stw r0, 8(r29)
+lbl_80321FB0:
+/* 80321FB0 0031DC50  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321FB4 0031DC54  41 82 00 10 */	beq lbl_80321FC4
+/* 80321FB8 0031DC58  38 1E 00 0C */	addi r0, r30, 0xc
+/* 80321FBC 0031DC5C  90 1E 00 08 */	stw r0, 8(r30)
+/* 80321FC0 0031DC60  48 00 00 08 */	b lbl_80321FC8
+lbl_80321FC4:
+/* 80321FC4 0031DC64  90 9E 00 08 */	stw r4, 8(r30)
+lbl_80321FC8:
+/* 80321FC8 0031DC68  2C 03 00 00 */	cmpwi r3, 0
+/* 80321FCC 0031DC6C  40 82 00 0C */	bne lbl_80321FD8
+/* 80321FD0 0031DC70  2C 1F 00 00 */	cmpwi r31, 0
+/* 80321FD4 0031DC74  41 82 00 88 */	beq lbl_8032205C
+lbl_80321FD8:
+/* 80321FD8 0031DC78  38 61 00 10 */	addi r3, r1, 0x10
+/* 80321FDC 0031DC7C  38 80 00 00 */	li r4, 0
+/* 80321FE0 0031DC80  4B ED DB 81 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80321FE4 0031DC84  38 61 00 14 */	addi r3, r1, 0x14
+/* 80321FE8 0031DC88  38 80 00 00 */	li r4, 0
+/* 80321FEC 0031DC8C  4B ED DB 75 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80321FF0 0031DC90  38 61 00 08 */	addi r3, r1, 8
+/* 80321FF4 0031DC94  38 80 00 00 */	li r4, 0
+/* 80321FF8 0031DC98  4B ED DB 69 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 80321FFC 0031DC9C  38 61 00 14 */	addi r3, r1, 0x14
+/* 80322000 0031DCA0  38 81 00 08 */	addi r4, r1, 8
+/* 80322004 0031DCA4  4B ED DA B5 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80322008 0031DCA8  38 61 00 08 */	addi r3, r1, 8
+/* 8032200C 0031DCAC  38 80 FF FF */	li r4, -1
+/* 80322010 0031DCB0  4B ED DB 91 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80322014 0031DCB4  38 7D 00 0C */	addi r3, r29, 0xc
+/* 80322018 0031DCB8  38 9D 00 14 */	addi r4, r29, 0x14
+/* 8032201C 0031DCBC  38 A1 00 10 */	addi r5, r1, 0x10
+/* 80322020 0031DCC0  48 00 08 ED */	bl "Copy<P22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 80322024 0031DCC4  38 7E 00 0C */	addi r3, r30, 0xc
+/* 80322028 0031DCC8  38 9E 00 14 */	addi r4, r30, 0x14
+/* 8032202C 0031DCCC  38 BD 00 0C */	addi r5, r29, 0xc
+/* 80322030 0031DCD0  48 00 08 DD */	bl "Copy<P22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 80322034 0031DCD4  38 61 00 10 */	addi r3, r1, 0x10
+/* 80322038 0031DCD8  38 81 00 18 */	addi r4, r1, 0x18
+/* 8032203C 0031DCDC  38 BE 00 0C */	addi r5, r30, 0xc
+/* 80322040 0031DCE0  48 00 08 CD */	bl "Copy<P22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 80322044 0031DCE4  38 61 00 14 */	addi r3, r1, 0x14
+/* 80322048 0031DCE8  38 80 FF FF */	li r4, -1
+/* 8032204C 0031DCEC  4B ED DB 55 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80322050 0031DCF0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80322054 0031DCF4  38 80 FF FF */	li r4, -1
+/* 80322058 0031DCF8  4B ED DB 49 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_8032205C:
+/* 8032205C 0031DCFC  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80322060 0031DD00  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80322064 0031DD04  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80322068 0031DD08  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 8032206C 0031DD0C  7C 08 03 A6 */	mtlr r0
+/* 80322070 0031DD10  38 21 00 30 */	addi r1, r1, 0x30
+/* 80322074 0031DD14  4E 80 00 20 */	blr 
+
+.global "Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>"
+"Swap__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>FRQ32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>":
+/* 80322078 0031DD18  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8032207C 0031DD1C  7C 08 02 A6 */	mflr r0
+/* 80322080 0031DD20  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80322084 0031DD24  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80322088 0031DD28  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 8032208C 0031DD2C  7C 9E 23 78 */	mr r30, r4
+/* 80322090 0031DD30  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80322094 0031DD34  7C 7D 1B 78 */	mr r29, r3
+/* 80322098 0031DD38  80 A4 00 00 */	lwz r5, 0(r4)
+/* 8032209C 0031DD3C  80 03 00 00 */	lwz r0, 0(r3)
+/* 803220A0 0031DD40  90 04 00 00 */	stw r0, 0(r4)
+/* 803220A4 0031DD44  90 A3 00 00 */	stw r5, 0(r3)
+/* 803220A8 0031DD48  7F C3 F3 78 */	mr r3, r30
+/* 803220AC 0031DD4C  4B FD AD 6D */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 803220B0 0031DD50  7C 7F 1B 78 */	mr r31, r3
+/* 803220B4 0031DD54  7F A3 EB 78 */	mr r3, r29
+/* 803220B8 0031DD58  4B FD AD 61 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 803220BC 0031DD5C  7C 64 1B 78 */	mr r4, r3
+/* 803220C0 0031DD60  7F C3 F3 78 */	mr r3, r30
+/* 803220C4 0031DD64  4B FD AC 6D */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 803220C8 0031DD68  7F A3 EB 78 */	mr r3, r29
+/* 803220CC 0031DD6C  7F E4 FB 78 */	mr r4, r31
+/* 803220D0 0031DD70  4B FD AC 61 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 803220D4 0031DD74  7F A3 EB 78 */	mr r3, r29
+/* 803220D8 0031DD78  4B FD A5 AD */	bl "DoingSmallStringOptimization__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>CFv"
+/* 803220DC 0031DD7C  7C 7F 1B 78 */	mr r31, r3
+/* 803220E0 0031DD80  7F C3 F3 78 */	mr r3, r30
+/* 803220E4 0031DD84  4B FD A5 A1 */	bl "DoingSmallStringOptimization__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptFileSavedInputState>,20StringAsVectorPolicy>CFv"
+/* 803220E8 0031DD88  2C 03 00 00 */	cmpwi r3, 0
+/* 803220EC 0031DD8C  80 1E 00 08 */	lwz r0, 8(r30)
+/* 803220F0 0031DD90  80 9D 00 08 */	lwz r4, 8(r29)
+/* 803220F4 0031DD94  41 82 00 10 */	beq lbl_80322104
+/* 803220F8 0031DD98  38 1D 00 0C */	addi r0, r29, 0xc
+/* 803220FC 0031DD9C  90 1D 00 08 */	stw r0, 8(r29)
+/* 80322100 0031DDA0  48 00 00 08 */	b lbl_80322108
+lbl_80322104:
+/* 80322104 0031DDA4  90 1D 00 08 */	stw r0, 8(r29)
+lbl_80322108:
+/* 80322108 0031DDA8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8032210C 0031DDAC  41 82 00 10 */	beq lbl_8032211C
+/* 80322110 0031DDB0  38 1E 00 0C */	addi r0, r30, 0xc
+/* 80322114 0031DDB4  90 1E 00 08 */	stw r0, 8(r30)
+/* 80322118 0031DDB8  48 00 00 08 */	b lbl_80322120
+lbl_8032211C:
+/* 8032211C 0031DDBC  90 9E 00 08 */	stw r4, 8(r30)
+lbl_80322120:
+/* 80322120 0031DDC0  2C 03 00 00 */	cmpwi r3, 0
+/* 80322124 0031DDC4  40 82 00 0C */	bne lbl_80322130
+/* 80322128 0031DDC8  2C 1F 00 00 */	cmpwi r31, 0
+/* 8032212C 0031DDCC  41 82 00 7C */	beq lbl_803221A8
+lbl_80322130:
+/* 80322130 0031DDD0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80322134 0031DDD4  4B FD B7 19 */	bl "__ct__22AptFileSavedInputStateFv"
+/* 80322138 0031DDD8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8032213C 0031DDDC  4B FD B7 11 */	bl "__ct__22AptFileSavedInputStateFv"
+/* 80322140 0031DDE0  38 61 00 08 */	addi r3, r1, 8
+/* 80322144 0031DDE4  4B FD B7 09 */	bl "__ct__22AptFileSavedInputStateFv"
+/* 80322148 0031DDE8  38 61 00 18 */	addi r3, r1, 0x18
+/* 8032214C 0031DDEC  38 81 00 08 */	addi r4, r1, 8
+/* 80322150 0031DDF0  4B FD B0 A5 */	bl "__as__22AptFileSavedInputStateFRC22AptFileSavedInputState"
+/* 80322154 0031DDF4  38 61 00 08 */	addi r3, r1, 8
+/* 80322158 0031DDF8  38 80 FF FF */	li r4, -1
+/* 8032215C 0031DDFC  4B FD AF 45 */	bl "__dt__22AptFileSavedInputStateFv"
+/* 80322160 0031DE00  38 7D 00 0C */	addi r3, r29, 0xc
+/* 80322164 0031DE04  38 9D 00 1C */	addi r4, r29, 0x1c
+/* 80322168 0031DE08  38 A1 00 10 */	addi r5, r1, 0x10
+/* 8032216C 0031DE0C  48 00 08 05 */	bl "Copy<P22AptFileSavedInputState,P22AptFileSavedInputState>__20StringAsVectorPolicyFP22AptFileSavedInputStateP22AptFileSavedInputStateP22AptFileSavedInputState_P22AptFileSavedInputState"
+/* 80322170 0031DE10  38 7E 00 0C */	addi r3, r30, 0xc
+/* 80322174 0031DE14  38 9E 00 1C */	addi r4, r30, 0x1c
+/* 80322178 0031DE18  38 BD 00 0C */	addi r5, r29, 0xc
+/* 8032217C 0031DE1C  48 00 07 F5 */	bl "Copy<P22AptFileSavedInputState,P22AptFileSavedInputState>__20StringAsVectorPolicyFP22AptFileSavedInputStateP22AptFileSavedInputStateP22AptFileSavedInputState_P22AptFileSavedInputState"
+/* 80322180 0031DE20  38 61 00 10 */	addi r3, r1, 0x10
+/* 80322184 0031DE24  38 81 00 20 */	addi r4, r1, 0x20
+/* 80322188 0031DE28  38 BE 00 0C */	addi r5, r30, 0xc
+/* 8032218C 0031DE2C  48 00 07 E5 */	bl "Copy<P22AptFileSavedInputState,P22AptFileSavedInputState>__20StringAsVectorPolicyFP22AptFileSavedInputStateP22AptFileSavedInputStateP22AptFileSavedInputState_P22AptFileSavedInputState"
+/* 80322190 0031DE30  38 61 00 18 */	addi r3, r1, 0x18
+/* 80322194 0031DE34  38 80 FF FF */	li r4, -1
+/* 80322198 0031DE38  4B FD AF 09 */	bl "__dt__22AptFileSavedInputStateFv"
+/* 8032219C 0031DE3C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803221A0 0031DE40  38 80 FF FF */	li r4, -1
+/* 803221A4 0031DE44  4B FD AE FD */	bl "__dt__22AptFileSavedInputStateFv"
+lbl_803221A8:
+/* 803221A8 0031DE48  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803221AC 0031DE4C  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803221B0 0031DE50  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 803221B4 0031DE54  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 803221B8 0031DE58  7C 08 03 A6 */	mtlr r0
+/* 803221BC 0031DE5C  38 21 00 30 */	addi r1, r1, 0x30
+/* 803221C0 0031DE60  4E 80 00 20 */	blr 
+
+.global "__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+"__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator":
+/* 803221C4 0031DE64  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803221C8 0031DE68  7C 08 02 A6 */	mflr r0
+/* 803221CC 0031DE6C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803221D0 0031DE70  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803221D4 0031DE74  7C 9F 23 78 */	mr r31, r4
+/* 803221D8 0031DE78  93 C1 00 08 */	stw r30, 8(r1)
+/* 803221DC 0031DE7C  7C 7E 1B 78 */	mr r30, r3
+/* 803221E0 0031DE80  48 00 00 35 */	bl "AssertSameRange__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 803221E4 0031DE84  80 1F 00 00 */	lwz r0, 0(r31)
+/* 803221E8 0031DE88  80 9E 00 00 */	lwz r4, 0(r30)
+/* 803221EC 0031DE8C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803221F0 0031DE90  7C 64 00 50 */	subf r3, r4, r0
+/* 803221F4 0031DE94  7C 00 20 50 */	subf r0, r0, r4
+/* 803221F8 0031DE98  7C 60 03 78 */	or r0, r3, r0
+/* 803221FC 0031DE9C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80322200 0031DEA0  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 80322204 0031DEA4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80322208 0031DEA8  7C 08 03 A6 */	mtlr r0
+/* 8032220C 0031DEAC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80322210 0031DEB0  4E 80 00 20 */	blr 
+
+.global "AssertSameRange__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+"AssertSameRange__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>":
+/* 80322214 0031DEB4  80 A3 00 04 */	lwz r5, 4(r3)
+/* 80322218 0031DEB8  38 C0 00 00 */	li r6, 0
+/* 8032221C 0031DEBC  80 04 00 04 */	lwz r0, 4(r4)
+/* 80322220 0031DEC0  7C 05 00 40 */	cmplw r5, r0
+/* 80322224 0031DEC4  40 82 00 18 */	bne lbl_8032223C
+/* 80322228 0031DEC8  80 63 00 08 */	lwz r3, 8(r3)
+/* 8032222C 0031DECC  80 04 00 08 */	lwz r0, 8(r4)
+/* 80322230 0031DED0  7C 03 00 40 */	cmplw r3, r0
+/* 80322234 0031DED4  40 82 00 08 */	bne lbl_8032223C
+/* 80322238 0031DED8  38 C0 00 01 */	li r6, 1
+lbl_8032223C:
+/* 8032223C 0031DEDC  3C 80 80 46 */	lis r4, lbl_804587B8@ha
+/* 80322240 0031DEE0  7C C3 33 78 */	mr r3, r6
+/* 80322244 0031DEE4  38 84 87 B8 */	addi r4, r4, lbl_804587B8@l
+/* 80322248 0031DEE8  4B FD C6 04 */	b "Assert__Q32EA6String13DefaultPolicyFbPCc"
+
+.global "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+"End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv":
+/* 8032224C 0031DEEC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322250 0031DEF0  7C 08 02 A6 */	mflr r0
+/* 80322254 0031DEF4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80322258 0031DEF8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8032225C 0031DEFC  7C 7F 1B 78 */	mr r31, r3
+/* 80322260 0031DF00  38 61 00 08 */	addi r3, r1, 8
+/* 80322264 0031DF04  80 04 00 00 */	lwz r0, 0(r4)
+/* 80322268 0031DF08  80 A4 00 08 */	lwz r5, 8(r4)
+/* 8032226C 0031DF0C  54 00 10 3A */	slwi r0, r0, 2
+/* 80322270 0031DF10  7C A4 2B 78 */	mr r4, r5
+/* 80322274 0031DF14  7C A5 02 14 */	add r5, r5, r0
+/* 80322278 0031DF18  48 00 00 75 */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+/* 8032227C 0031DF1C  7C 64 1B 78 */	mr r4, r3
+/* 80322280 0031DF20  7F E3 FB 78 */	mr r3, r31
+/* 80322284 0031DF24  48 00 00 19 */	bl "End__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv"
+/* 80322288 0031DF28  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8032228C 0031DF2C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80322290 0031DF30  7C 08 03 A6 */	mtlr r0
+/* 80322294 0031DF34  38 21 00 20 */	addi r1, r1, 0x20
+/* 80322298 0031DF38  4E 80 00 20 */	blr 
+
+.global "End__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv"
+"End__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv":
+/* 8032229C 0031DF3C  80 C4 00 04 */	lwz r6, 4(r4)
+/* 803222A0 0031DF40  80 A4 00 00 */	lwz r5, 0(r4)
+/* 803222A4 0031DF44  7C C4 33 78 */	mr r4, r6
+/* 803222A8 0031DF48  48 00 00 04 */	b "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+
+.global "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+"__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>":
+/* 803222AC 0031DF4C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803222B0 0031DF50  7C 08 02 A6 */	mflr r0
+/* 803222B4 0031DF54  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803222B8 0031DF58  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803222BC 0031DF5C  7C 7F 1B 78 */	mr r31, r3
+/* 803222C0 0031DF60  48 00 00 1D */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+/* 803222C4 0031DF64  7F E3 FB 78 */	mr r3, r31
+/* 803222C8 0031DF68  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803222CC 0031DF6C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803222D0 0031DF70  7C 08 03 A6 */	mtlr r0
+/* 803222D4 0031DF74  38 21 00 10 */	addi r1, r1, 0x10
+/* 803222D8 0031DF78  4E 80 00 20 */	blr 
+
+.global "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+"__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>":
+/* 803222DC 0031DF7C  90 83 00 00 */	stw r4, 0(r3)
+/* 803222E0 0031DF80  90 A3 00 04 */	stw r5, 4(r3)
+/* 803222E4 0031DF84  90 C3 00 08 */	stw r6, 8(r3)
+/* 803222E8 0031DF88  4E 80 00 20 */	blr 
+
+.global "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+"__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>":
+/* 803222EC 0031DF8C  90 83 00 00 */	stw r4, 0(r3)
+/* 803222F0 0031DF90  90 A3 00 04 */	stw r5, 4(r3)
+/* 803222F4 0031DF94  4E 80 00 20 */	blr 
+
+.global "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+"__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv":
+/* 803222F8 0031DF98  80 83 00 00 */	lwz r4, 0(r3)
+/* 803222FC 0031DF9C  38 04 00 04 */	addi r0, r4, 4
+/* 80322300 0031DFA0  90 03 00 00 */	stw r0, 0(r3)
+/* 80322304 0031DFA4  4E 80 00 20 */	blr 
+
+.global "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+"__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv":
+/* 80322308 0031DFA8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8032230C 0031DFAC  7C 08 02 A6 */	mflr r0
+/* 80322310 0031DFB0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80322314 0031DFB4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80322318 0031DFB8  7C 7F 1B 78 */	mr r31, r3
+/* 8032231C 0031DFBC  48 00 00 1D */	bl "Validate__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFv"
+/* 80322320 0031DFC0  80 7F 00 00 */	lwz r3, 0(r31)
+/* 80322324 0031DFC4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80322328 0031DFC8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8032232C 0031DFCC  7C 08 03 A6 */	mtlr r0
+/* 80322330 0031DFD0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80322334 0031DFD4  4E 80 00 20 */	blr 
+
+.global "Validate__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFv"
+"Validate__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFv":
+/* 80322338 0031DFD8  80 83 00 00 */	lwz r4, 0(r3)
+/* 8032233C 0031DFDC  38 A0 00 00 */	li r5, 0
+/* 80322340 0031DFE0  80 03 00 04 */	lwz r0, 4(r3)
+/* 80322344 0031DFE4  7C 04 00 40 */	cmplw r4, r0
+/* 80322348 0031DFE8  41 80 00 14 */	blt lbl_8032235C
+/* 8032234C 0031DFEC  80 03 00 08 */	lwz r0, 8(r3)
+/* 80322350 0031DFF0  7C 04 00 40 */	cmplw r4, r0
+/* 80322354 0031DFF4  40 80 00 08 */	bge lbl_8032235C
+/* 80322358 0031DFF8  38 A0 00 01 */	li r5, 1
+lbl_8032235C:
+/* 8032235C 0031DFFC  3C 80 80 46 */	lis r4, lbl_804587D8@ha
+/* 80322360 0031E000  7C A3 2B 78 */	mr r3, r5
+/* 80322364 0031E004  38 84 87 D8 */	addi r4, r4, lbl_804587D8@l
+/* 80322368 0031E008  4B FD C4 E4 */	b "Assert__Q32EA6String13DefaultPolicyFbPCc"
+
+.global "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+"Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv":
+/* 8032236C 0031E00C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322370 0031E010  7C 08 02 A6 */	mflr r0
+/* 80322374 0031E014  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80322378 0031E018  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8032237C 0031E01C  7C 7F 1B 78 */	mr r31, r3
+/* 80322380 0031E020  38 61 00 08 */	addi r3, r1, 8
+/* 80322384 0031E024  80 04 00 00 */	lwz r0, 0(r4)
+/* 80322388 0031E028  80 A4 00 08 */	lwz r5, 8(r4)
+/* 8032238C 0031E02C  54 00 10 3A */	slwi r0, r0, 2
+/* 80322390 0031E030  7C A4 2B 78 */	mr r4, r5
+/* 80322394 0031E034  7C A5 02 14 */	add r5, r5, r0
+/* 80322398 0031E038  4B FF FF 55 */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+/* 8032239C 0031E03C  7C 64 1B 78 */	mr r4, r3
+/* 803223A0 0031E040  7F E3 FB 78 */	mr r3, r31
+/* 803223A4 0031E044  48 00 00 19 */	bl "Begin__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv"
+/* 803223A8 0031E048  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803223AC 0031E04C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803223B0 0031E050  7C 08 03 A6 */	mtlr r0
+/* 803223B4 0031E054  38 21 00 20 */	addi r1, r1, 0x20
+/* 803223B8 0031E058  4E 80 00 20 */	blr 
+
+.global "Begin__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv"
+"Begin__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>18DbgIteratorFactoryFv":
+/* 803223BC 0031E05C  80 A4 00 00 */	lwz r5, 0(r4)
+/* 803223C0 0031E060  80 C4 00 04 */	lwz r6, 4(r4)
+/* 803223C4 0031E064  7C A4 2B 78 */	mr r4, r5
+/* 803223C8 0031E068  4B FF FE E4 */	b "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+
+.global "Size__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+"Size__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv":
+/* 803223CC 0031E06C  80 63 00 00 */	lwz r3, 0(r3)
+/* 803223D0 0031E070  4E 80 00 20 */	blr 
+
+.global "PushBack__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRC22AptSharedPtr<7AptFile>"
+"PushBack__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRC22AptSharedPtr<7AptFile>":
+/* 803223D4 0031E074  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803223D8 0031E078  7C 08 02 A6 */	mflr r0
+/* 803223DC 0031E07C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803223E0 0031E080  38 04 00 04 */	addi r0, r4, 4
+/* 803223E4 0031E084  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803223E8 0031E088  7C 7F 1B 78 */	mr r31, r3
+/* 803223EC 0031E08C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803223F0 0031E090  90 81 00 08 */	stw r4, 8(r1)
+/* 803223F4 0031E094  7F E4 FB 78 */	mr r4, r31
+/* 803223F8 0031E098  90 01 00 0C */	stw r0, 0xc(r1)
+/* 803223FC 0031E09C  4B FF FE 51 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322400 0031E0A0  7F E3 FB 78 */	mr r3, r31
+/* 80322404 0031E0A4  38 81 00 08 */	addi r4, r1, 8
+/* 80322408 0031E0A8  38 A1 00 0C */	addi r5, r1, 0xc
+/* 8032240C 0031E0AC  38 C1 00 10 */	addi r6, r1, 0x10
+/* 80322410 0031E0B0  48 00 00 19 */	bl "Insert<PC22AptSharedPtr<7AptFile>>__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRCPC22AptSharedPtr<7AptFile>RCPC22AptSharedPtr<7AptFile>RCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_v"
+/* 80322414 0031E0B4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80322418 0031E0B8  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 8032241C 0031E0BC  7C 08 03 A6 */	mtlr r0
+/* 80322420 0031E0C0  38 21 00 30 */	addi r1, r1, 0x30
+/* 80322424 0031E0C4  4E 80 00 20 */	blr 
+
+.global "Insert<PC22AptSharedPtr<7AptFile>>__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRCPC22AptSharedPtr<7AptFile>RCPC22AptSharedPtr<7AptFile>RCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_v"
+"Insert<PC22AptSharedPtr<7AptFile>>__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRCPC22AptSharedPtr<7AptFile>RCPC22AptSharedPtr<7AptFile>RCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_v":
+/* 80322428 0031E0C8  94 21 FF 40 */	stwu r1, -0xc0(r1)
+/* 8032242C 0031E0CC  7C 08 02 A6 */	mflr r0
+/* 80322430 0031E0D0  90 01 00 C4 */	stw r0, 0xc4(r1)
+/* 80322434 0031E0D4  DB E1 00 B0 */	stfd f31, 0xb0(r1)
+/* 80322438 0031E0D8  F3 E1 00 B8 */	psq_st f31, 184(r1), 0, qr0
+/* 8032243C 0031E0DC  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80322440 0031E0E0  48 0E CF 31 */	bl "_savegpr_26"
+/* 80322444 0031E0E4  81 04 00 00 */	lwz r8, 0(r4)
+/* 80322448 0031E0E8  3C E0 80 46 */	lis r7, lbl_80458794@ha
+/* 8032244C 0031E0EC  80 05 00 00 */	lwz r0, 0(r5)
+/* 80322450 0031E0F0  7C 9C 23 78 */	mr r28, r4
+/* 80322454 0031E0F4  7C 7B 1B 78 */	mr r27, r3
+/* 80322458 0031E0F8  7C BD 2B 78 */	mr r29, r5
+/* 8032245C 0031E0FC  7C 08 00 50 */	subf r0, r8, r0
+/* 80322460 0031E100  7C DE 33 78 */	mr r30, r6
+/* 80322464 0031E104  7C 00 16 70 */	srawi r0, r0, 2
+/* 80322468 0031E108  38 87 87 94 */	addi r4, r7, lbl_80458794@l
+/* 8032246C 0031E10C  7F 40 01 94 */	addze r26, r0
+/* 80322470 0031E110  57 40 0F FE */	srwi r0, r26, 0x1f
+/* 80322474 0031E114  68 03 00 01 */	xori r3, r0, 1
+/* 80322478 0031E118  4B FD C3 D5 */	bl "Assert__Q32EA6String13DefaultPolicyFbPCc"
+/* 8032247C 0031E11C  2C 1A 00 00 */	cmpwi r26, 0
+/* 80322480 0031E120  41 82 01 FC */	beq lbl_8032267C
+/* 80322484 0031E124  80 1B 00 00 */	lwz r0, 0(r27)
+/* 80322488 0031E128  7F 63 DB 78 */	mr r3, r27
+/* 8032248C 0031E12C  7F E0 D2 14 */	add r31, r0, r26
+/* 80322490 0031E130  4B FD A9 89 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 80322494 0031E134  7C 1F 18 00 */	cmpw r31, r3
+/* 80322498 0031E138  40 80 01 44 */	bge lbl_803225DC
+/* 8032249C 0031E13C  7F 64 DB 78 */	mr r4, r27
+/* 803224A0 0031E140  38 61 00 7C */	addi r3, r1, 0x7c
+/* 803224A4 0031E144  4B FF FD A9 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 803224A8 0031E148  7F C3 F3 78 */	mr r3, r30
+/* 803224AC 0031E14C  38 81 00 7C */	addi r4, r1, 0x7c
+/* 803224B0 0031E150  48 00 04 11 */	bl "__eq__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 803224B4 0031E154  2C 03 00 00 */	cmpwi r3, 0
+/* 803224B8 0031E158  41 82 00 50 */	beq lbl_80322508
+/* 803224BC 0031E15C  80 1B 00 00 */	lwz r0, 0(r27)
+/* 803224C0 0031E160  80 BB 00 08 */	lwz r5, 8(r27)
+/* 803224C4 0031E164  54 00 10 3A */	slwi r0, r0, 2
+/* 803224C8 0031E168  80 7C 00 00 */	lwz r3, 0(r28)
+/* 803224CC 0031E16C  80 9D 00 00 */	lwz r4, 0(r29)
+/* 803224D0 0031E170  7C A5 02 14 */	add r5, r5, r0
+/* 803224D4 0031E174  48 00 06 0D */	bl "Copy<PC22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 803224D8 0031E178  38 61 00 0C */	addi r3, r1, 0xc
+/* 803224DC 0031E17C  38 80 00 00 */	li r4, 0
+/* 803224E0 0031E180  4B ED D6 81 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 803224E4 0031E184  80 7B 00 08 */	lwz r3, 8(r27)
+/* 803224E8 0031E188  57 E0 10 3A */	slwi r0, r31, 2
+/* 803224EC 0031E18C  38 81 00 0C */	addi r4, r1, 0xc
+/* 803224F0 0031E190  7C 63 02 14 */	add r3, r3, r0
+/* 803224F4 0031E194  4B ED D5 C5 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803224F8 0031E198  38 61 00 0C */	addi r3, r1, 0xc
+/* 803224FC 0031E19C  38 80 FF FF */	li r4, -1
+/* 80322500 0031E1A0  4B ED D6 A1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+/* 80322504 0031E1A4  48 00 00 D0 */	b lbl_803225D4
+lbl_80322508:
+/* 80322508 0031E1A8  7F 64 DB 78 */	mr r4, r27
+/* 8032250C 0031E1AC  38 61 00 58 */	addi r3, r1, 0x58
+/* 80322510 0031E1B0  4B FF FD 3D */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322514 0031E1B4  81 21 00 58 */	lwz r9, 0x58(r1)
+/* 80322518 0031E1B8  7F 64 DB 78 */	mr r4, r27
+/* 8032251C 0031E1BC  81 01 00 5C */	lwz r8, 0x5c(r1)
+/* 80322520 0031E1C0  38 61 00 4C */	addi r3, r1, 0x4c
+/* 80322524 0031E1C4  80 E1 00 60 */	lwz r7, 0x60(r1)
+/* 80322528 0031E1C8  80 DE 00 00 */	lwz r6, 0(r30)
+/* 8032252C 0031E1CC  80 BE 00 04 */	lwz r5, 4(r30)
+/* 80322530 0031E1D0  80 1E 00 08 */	lwz r0, 8(r30)
+/* 80322534 0031E1D4  91 21 00 64 */	stw r9, 0x64(r1)
+/* 80322538 0031E1D8  91 01 00 68 */	stw r8, 0x68(r1)
+/* 8032253C 0031E1DC  90 E1 00 6C */	stw r7, 0x6c(r1)
+/* 80322540 0031E1E0  90 C1 00 70 */	stw r6, 0x70(r1)
+/* 80322544 0031E1E4  90 A1 00 74 */	stw r5, 0x74(r1)
+/* 80322548 0031E1E8  90 01 00 78 */	stw r0, 0x78(r1)
+/* 8032254C 0031E1EC  4B FF FE 21 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322550 0031E1F0  7F C3 F3 78 */	mr r3, r30
+/* 80322554 0031E1F4  38 81 00 4C */	addi r4, r1, 0x4c
+/* 80322558 0031E1F8  48 00 03 1D */	bl "__mi__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 8032255C 0031E1FC  80 1B 00 08 */	lwz r0, 8(r27)
+/* 80322560 0031E200  54 64 10 3A */	slwi r4, r3, 2
+/* 80322564 0031E204  57 45 10 3A */	slwi r5, r26, 2
+/* 80322568 0031E208  38 61 00 70 */	addi r3, r1, 0x70
+/* 8032256C 0031E20C  7C 00 22 14 */	add r0, r0, r4
+/* 80322570 0031E210  38 81 00 64 */	addi r4, r1, 0x64
+/* 80322574 0031E214  7C A5 02 14 */	add r5, r5, r0
+/* 80322578 0031E218  48 00 05 CD */	bl "Move<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__Q32EA6String13DefaultPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 8032257C 0031E21C  80 9E 00 00 */	lwz r4, 0(r30)
+/* 80322580 0031E220  38 61 00 40 */	addi r3, r1, 0x40
+/* 80322584 0031E224  80 BE 00 04 */	lwz r5, 4(r30)
+/* 80322588 0031E228  38 C1 00 34 */	addi r6, r1, 0x34
+/* 8032258C 0031E22C  80 1E 00 08 */	lwz r0, 8(r30)
+/* 80322590 0031E230  90 81 00 34 */	stw r4, 0x34(r1)
+/* 80322594 0031E234  80 9C 00 00 */	lwz r4, 0(r28)
+/* 80322598 0031E238  90 A1 00 38 */	stw r5, 0x38(r1)
+/* 8032259C 0031E23C  80 BD 00 00 */	lwz r5, 0(r29)
+/* 803225A0 0031E240  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 803225A4 0031E244  48 00 04 B5 */	bl "Copy<PC22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 803225A8 0031E248  38 61 00 08 */	addi r3, r1, 8
+/* 803225AC 0031E24C  38 80 00 00 */	li r4, 0
+/* 803225B0 0031E250  4B ED D5 B1 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 803225B4 0031E254  80 7B 00 08 */	lwz r3, 8(r27)
+/* 803225B8 0031E258  57 E0 10 3A */	slwi r0, r31, 2
+/* 803225BC 0031E25C  38 81 00 08 */	addi r4, r1, 8
+/* 803225C0 0031E260  7C 63 02 14 */	add r3, r3, r0
+/* 803225C4 0031E264  4B ED D4 F5 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803225C8 0031E268  38 61 00 08 */	addi r3, r1, 8
+/* 803225CC 0031E26C  38 80 FF FF */	li r4, -1
+/* 803225D0 0031E270  4B ED D5 D1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_803225D4:
+/* 803225D4 0031E274  93 FB 00 00 */	stw r31, 0(r27)
+/* 803225D8 0031E278  48 00 00 A4 */	b lbl_8032267C
+lbl_803225DC:
+/* 803225DC 0031E27C  4B FD AD E9 */	bl "GrowthFactor__20StringAsVectorPolicyFv"
+/* 803225E0 0031E280  FF E0 08 90 */	fmr f31, f1
+/* 803225E4 0031E284  7F 63 DB 78 */	mr r3, r27
+/* 803225E8 0031E288  4B FD A8 31 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 803225EC 0031E28C  6C 63 80 00 */	xoris r3, r3, 0x8000
+/* 803225F0 0031E290  3C 00 43 30 */	lis r0, 0x4330
+/* 803225F4 0031E294  90 61 00 8C */	stw r3, 0x8c(r1)
+/* 803225F8 0031E298  C8 22 A4 58 */	lfd f1, lbl_805DB678-_SDA2_BASE_(r2)
+/* 803225FC 0031E29C  90 01 00 88 */	stw r0, 0x88(r1)
+/* 80322600 0031E2A0  C8 01 00 88 */	lfd f0, 0x88(r1)
+/* 80322604 0031E2A4  EC 00 08 28 */	fsubs f0, f0, f1
+/* 80322608 0031E2A8  EC 00 07 F2 */	fmuls f0, f0, f31
+/* 8032260C 0031E2AC  FC 00 00 1E */	fctiwz f0, f0
+/* 80322610 0031E2B0  D8 01 00 90 */	stfd f0, 0x90(r1)
+/* 80322614 0031E2B4  83 41 00 94 */	lwz r26, 0x94(r1)
+/* 80322618 0031E2B8  7C 1A F8 00 */	cmpw r26, r31
+/* 8032261C 0031E2BC  40 80 00 08 */	bge lbl_80322624
+/* 80322620 0031E2C0  7F FA FB 78 */	mr r26, r31
+lbl_80322624:
+/* 80322624 0031E2C4  7F 64 DB 78 */	mr r4, r27
+/* 80322628 0031E2C8  38 61 00 28 */	addi r3, r1, 0x28
+/* 8032262C 0031E2CC  4B FF FD 41 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322630 0031E2D0  7F C3 F3 78 */	mr r3, r30
+/* 80322634 0031E2D4  38 81 00 28 */	addi r4, r1, 0x28
+/* 80322638 0031E2D8  48 00 02 3D */	bl "__mi__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 8032263C 0031E2DC  7C 7E 1B 78 */	mr r30, r3
+/* 80322640 0031E2E0  7F 63 DB 78 */	mr r3, r27
+/* 80322644 0031E2E4  7F 44 D3 78 */	mr r4, r26
+/* 80322648 0031E2E8  48 00 00 6D */	bl "Reserve__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fi"
+/* 8032264C 0031E2EC  7F 64 DB 78 */	mr r4, r27
+/* 80322650 0031E2F0  38 61 00 10 */	addi r3, r1, 0x10
+/* 80322654 0031E2F4  4B FF FD 19 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322658 0031E2F8  7F C5 F3 78 */	mr r5, r30
+/* 8032265C 0031E2FC  38 61 00 1C */	addi r3, r1, 0x1c
+/* 80322660 0031E300  38 81 00 10 */	addi r4, r1, 0x10
+/* 80322664 0031E304  48 00 00 39 */	bl "__pl__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFi"
+/* 80322668 0031E308  7F 63 DB 78 */	mr r3, r27
+/* 8032266C 0031E30C  7F 84 E3 78 */	mr r4, r28
+/* 80322670 0031E310  7F A5 EB 78 */	mr r5, r29
+/* 80322674 0031E314  38 C1 00 1C */	addi r6, r1, 0x1c
+/* 80322678 0031E318  4B FF FD B1 */	bl "Insert<PC22AptSharedPtr<7AptFile>>__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FRCPC22AptSharedPtr<7AptFile>RCPC22AptSharedPtr<7AptFile>RCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_v"
+lbl_8032267C:
+/* 8032267C 0031E31C  E3 E1 00 B8 */	psq_l f31, 184(r1), 0, qr0
+/* 80322680 0031E320  39 61 00 B0 */	addi r11, r1, 0xb0
+/* 80322684 0031E324  CB E1 00 B0 */	lfd f31, 0xb0(r1)
+/* 80322688 0031E328  48 0E CD 35 */	bl "_restgpr_26"
+/* 8032268C 0031E32C  80 01 00 C4 */	lwz r0, 0xc4(r1)
+/* 80322690 0031E330  7C 08 03 A6 */	mtlr r0
+/* 80322694 0031E334  38 21 00 C0 */	addi r1, r1, 0xc0
+/* 80322698 0031E338  4E 80 00 20 */	blr 
+
+.global "__pl__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFi"
+"__pl__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFi":
+/* 8032269C 0031E33C  80 E4 00 00 */	lwz r7, 0(r4)
+/* 803226A0 0031E340  54 A0 10 3A */	slwi r0, r5, 2
+/* 803226A4 0031E344  80 A4 00 04 */	lwz r5, 4(r4)
+/* 803226A8 0031E348  80 C4 00 08 */	lwz r6, 8(r4)
+/* 803226AC 0031E34C  7C 87 02 14 */	add r4, r7, r0
+/* 803226B0 0031E350  4B FF FB FC */	b "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>"
+
+.global "Reserve__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fi"
+"Reserve__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fi":
+/* 803226B4 0031E354  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 803226B8 0031E358  7C 08 02 A6 */	mflr r0
+/* 803226BC 0031E35C  90 01 00 54 */	stw r0, 0x54(r1)
+/* 803226C0 0031E360  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 803226C4 0031E364  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 803226C8 0031E368  7C 9E 23 78 */	mr r30, r4
+/* 803226CC 0031E36C  93 A1 00 44 */	stw r29, 0x44(r1)
+/* 803226D0 0031E370  7C 7D 1B 78 */	mr r29, r3
+/* 803226D4 0031E374  4B FD A7 45 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>CFv"
+/* 803226D8 0031E378  7C 1E 18 00 */	cmpw r30, r3
+/* 803226DC 0031E37C  40 81 00 E8 */	ble lbl_803227C4
+/* 803226E0 0031E380  2C 1E 00 01 */	cmpwi r30, 1
+/* 803226E4 0031E384  41 81 00 14 */	bgt lbl_803226F8
+/* 803226E8 0031E388  7F A3 EB 78 */	mr r3, r29
+/* 803226EC 0031E38C  7F C4 F3 78 */	mr r4, r30
+/* 803226F0 0031E390  4B FD A6 41 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 803226F4 0031E394  48 00 00 D0 */	b lbl_803227C4
+lbl_803226F8:
+/* 803226F8 0031E398  38 BE 00 01 */	addi r5, r30, 1
+/* 803226FC 0031E39C  38 60 00 00 */	li r3, 0
+/* 80322700 0031E3A0  38 80 00 00 */	li r4, 0
+/* 80322704 0031E3A4  4B FD A0 91 */	bl "ReAlloc__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FPC22AptSharedPtr<7AptFile>ii"
+/* 80322708 0031E3A8  7C 7F 1B 78 */	mr r31, r3
+/* 8032270C 0031E3AC  7F A4 EB 78 */	mr r4, r29
+/* 80322710 0031E3B0  38 61 00 0C */	addi r3, r1, 0xc
+/* 80322714 0031E3B4  4B FF FB 39 */	bl "End__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 80322718 0031E3B8  80 C1 00 0C */	lwz r6, 0xc(r1)
+/* 8032271C 0031E3BC  7F A4 EB 78 */	mr r4, r29
+/* 80322720 0031E3C0  80 A1 00 10 */	lwz r5, 0x10(r1)
+/* 80322724 0031E3C4  38 61 00 24 */	addi r3, r1, 0x24
+/* 80322728 0031E3C8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8032272C 0031E3CC  90 C1 00 18 */	stw r6, 0x18(r1)
+/* 80322730 0031E3D0  90 A1 00 1C */	stw r5, 0x1c(r1)
+/* 80322734 0031E3D4  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80322738 0031E3D8  4B FF FC 35 */	bl "Begin__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>Fv"
+/* 8032273C 0031E3DC  80 E1 00 24 */	lwz r7, 0x24(r1)
+/* 80322740 0031E3E0  7F E5 FB 78 */	mr r5, r31
+/* 80322744 0031E3E4  80 C1 00 28 */	lwz r6, 0x28(r1)
+/* 80322748 0031E3E8  38 61 00 30 */	addi r3, r1, 0x30
+/* 8032274C 0031E3EC  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 80322750 0031E3F0  38 81 00 18 */	addi r4, r1, 0x18
+/* 80322754 0031E3F4  90 E1 00 30 */	stw r7, 0x30(r1)
+/* 80322758 0031E3F8  90 C1 00 34 */	stw r6, 0x34(r1)
+/* 8032275C 0031E3FC  90 01 00 38 */	stw r0, 0x38(r1)
+/* 80322760 0031E400  48 00 02 75 */	bl "Copy<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+/* 80322764 0031E404  7F A3 EB 78 */	mr r3, r29
+/* 80322768 0031E408  7F C4 F3 78 */	mr r4, r30
+/* 8032276C 0031E40C  4B FD A5 C5 */	bl "Capacity__Q42EA6String4Impl14UseCapacity<1>Fi"
+/* 80322770 0031E410  7F A3 EB 78 */	mr r3, r29
+/* 80322774 0031E414  4B FD A0 25 */	bl "DoingSmallStringOptimization__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>CFv"
+/* 80322778 0031E418  2C 03 00 00 */	cmpwi r3, 0
+/* 8032277C 0031E41C  40 82 00 14 */	bne lbl_80322790
+/* 80322780 0031E420  80 7D 00 08 */	lwz r3, 8(r29)
+/* 80322784 0031E424  38 80 00 00 */	li r4, 0
+/* 80322788 0031E428  38 A0 00 00 */	li r5, 0
+/* 8032278C 0031E42C  4B FD A0 09 */	bl "ReAlloc__Q32EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>FPC22AptSharedPtr<7AptFile>ii"
+lbl_80322790:
+/* 80322790 0031E430  93 FD 00 08 */	stw r31, 8(r29)
+/* 80322794 0031E434  38 61 00 08 */	addi r3, r1, 8
+/* 80322798 0031E438  38 80 00 00 */	li r4, 0
+/* 8032279C 0031E43C  4B ED D3 C5 */	bl "__ct__22AptSharedPtr<7AptFile>FP7AptFile"
+/* 803227A0 0031E440  80 1D 00 00 */	lwz r0, 0(r29)
+/* 803227A4 0031E444  38 81 00 08 */	addi r4, r1, 8
+/* 803227A8 0031E448  80 7D 00 08 */	lwz r3, 8(r29)
+/* 803227AC 0031E44C  54 00 10 3A */	slwi r0, r0, 2
+/* 803227B0 0031E450  7C 63 02 14 */	add r3, r3, r0
+/* 803227B4 0031E454  4B ED D3 05 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 803227B8 0031E458  38 61 00 08 */	addi r3, r1, 8
+/* 803227BC 0031E45C  38 80 FF FF */	li r4, -1
+/* 803227C0 0031E460  4B ED D3 E1 */	bl "__dt__22AptSharedPtr<7AptFile>Fv"
+lbl_803227C4:
+/* 803227C4 0031E464  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 803227C8 0031E468  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 803227CC 0031E46C  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 803227D0 0031E470  83 A1 00 44 */	lwz r29, 0x44(r1)
+/* 803227D4 0031E474  7C 08 03 A6 */	mtlr r0
+/* 803227D8 0031E478  38 21 00 50 */	addi r1, r1, 0x50
+/* 803227DC 0031E47C  4E 80 00 20 */	blr 
+
+.global "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fi"
+"__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fi":
+/* 803227E0 0031E480  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803227E4 0031E484  7C 08 02 A6 */	mflr r0
+/* 803227E8 0031E488  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803227EC 0031E48C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803227F0 0031E490  7C 9F 23 78 */	mr r31, r4
+/* 803227F4 0031E494  48 00 00 25 */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 803227F8 0031E498  80 7F 00 00 */	lwz r3, 0(r31)
+/* 803227FC 0031E49C  38 03 00 04 */	addi r0, r3, 4
+/* 80322800 0031E4A0  90 1F 00 00 */	stw r0, 0(r31)
+/* 80322804 0031E4A4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80322808 0031E4A8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8032280C 0031E4AC  7C 08 03 A6 */	mtlr r0
+/* 80322810 0031E4B0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80322814 0031E4B4  4E 80 00 20 */	blr 
+
+.global "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+"__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator":
+/* 80322818 0031E4B8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8032281C 0031E4BC  7C 08 02 A6 */	mflr r0
+/* 80322820 0031E4C0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80322824 0031E4C4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80322828 0031E4C8  7C 7F 1B 78 */	mr r31, r3
+/* 8032282C 0031E4CC  48 00 00 1D */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 80322830 0031E4D0  7F E3 FB 78 */	mr r3, r31
+/* 80322834 0031E4D4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80322838 0031E4D8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8032283C 0031E4DC  7C 08 03 A6 */	mtlr r0
+/* 80322840 0031E4E0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80322844 0031E4E4  4E 80 00 20 */	blr 
+
+.global "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+"__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>FRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>":
+/* 80322848 0031E4E8  80 C4 00 00 */	lwz r6, 0(r4)
+/* 8032284C 0031E4EC  80 A4 00 04 */	lwz r5, 4(r4)
+/* 80322850 0031E4F0  80 04 00 08 */	lwz r0, 8(r4)
+/* 80322854 0031E4F4  90 C3 00 00 */	stw r6, 0(r3)
+/* 80322858 0031E4F8  90 A3 00 04 */	stw r5, 4(r3)
+/* 8032285C 0031E4FC  90 03 00 08 */	stw r0, 8(r3)
+/* 80322860 0031E500  4E 80 00 20 */	blr 
+
+.global "__mm__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+"__mm__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv":
+/* 80322864 0031E504  80 83 00 00 */	lwz r4, 0(r3)
+/* 80322868 0031E508  38 04 FF FC */	addi r0, r4, -4
+/* 8032286C 0031E50C  90 03 00 00 */	stw r0, 0(r3)
+/* 80322870 0031E510  4E 80 00 20 */	blr 
+
+.global "__mi__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+"__mi__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>":
+/* 80322874 0031E514  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80322878 0031E518  7C 08 02 A6 */	mflr r0
+/* 8032287C 0031E51C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80322880 0031E520  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80322884 0031E524  7C 9F 23 78 */	mr r31, r4
+/* 80322888 0031E528  93 C1 00 08 */	stw r30, 8(r1)
+/* 8032288C 0031E52C  7C 7E 1B 78 */	mr r30, r3
+/* 80322890 0031E530  4B FF F9 85 */	bl "AssertSameRange__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 80322894 0031E534  80 7F 00 00 */	lwz r3, 0(r31)
+/* 80322898 0031E538  80 1E 00 00 */	lwz r0, 0(r30)
+/* 8032289C 0031E53C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803228A0 0031E540  7C 03 00 50 */	subf r0, r3, r0
+/* 803228A4 0031E544  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803228A8 0031E548  7C 00 16 70 */	srawi r0, r0, 2
+/* 803228AC 0031E54C  7C 60 01 94 */	addze r3, r0
+/* 803228B0 0031E550  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803228B4 0031E554  7C 08 03 A6 */	mtlr r0
+/* 803228B8 0031E558  38 21 00 10 */	addi r1, r1, 0x10
+/* 803228BC 0031E55C  4E 80 00 20 */	blr 
+
+.global "__eq__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+"__eq__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator":
+/* 803228C0 0031E560  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803228C4 0031E564  7C 08 02 A6 */	mflr r0
+/* 803228C8 0031E568  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803228CC 0031E56C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803228D0 0031E570  7C 9F 23 78 */	mr r31, r4
+/* 803228D4 0031E574  93 C1 00 08 */	stw r30, 8(r1)
+/* 803228D8 0031E578  7C 7E 1B 78 */	mr r30, r3
+/* 803228DC 0031E57C  4B FF F9 39 */	bl "AssertSameRange__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 803228E0 0031E580  80 1F 00 00 */	lwz r0, 0(r31)
+/* 803228E4 0031E584  80 7E 00 00 */	lwz r3, 0(r30)
+/* 803228E8 0031E588  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803228EC 0031E58C  7C 03 00 50 */	subf r0, r3, r0
+/* 803228F0 0031E590  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803228F4 0031E594  7C 00 00 34 */	cntlzw r0, r0
+/* 803228F8 0031E598  54 03 D9 7E */	srwi r3, r0, 5
+/* 803228FC 0031E59C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80322900 0031E5A0  7C 08 03 A6 */	mtlr r0
+/* 80322904 0031E5A4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80322908 0031E5A8  4E 80 00 20 */	blr 
+
+.global "Copy<P22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+"Copy<P22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFP22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>":
+/* 8032290C 0031E5AC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322910 0031E5B0  7C 08 02 A6 */	mflr r0
+/* 80322914 0031E5B4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80322918 0031E5B8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8032291C 0031E5BC  7C BF 2B 78 */	mr r31, r5
+/* 80322920 0031E5C0  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80322924 0031E5C4  7C 9E 23 78 */	mr r30, r4
+/* 80322928 0031E5C8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8032292C 0031E5CC  7C 7D 1B 78 */	mr r29, r3
+/* 80322930 0031E5D0  48 00 00 18 */	b lbl_80322948
+lbl_80322934:
+/* 80322934 0031E5D4  7F E3 FB 78 */	mr r3, r31
+/* 80322938 0031E5D8  7F A4 EB 78 */	mr r4, r29
+/* 8032293C 0031E5DC  3B BD 00 04 */	addi r29, r29, 4
+/* 80322940 0031E5E0  3B FF 00 04 */	addi r31, r31, 4
+/* 80322944 0031E5E4  4B ED D1 75 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+lbl_80322948:
+/* 80322948 0031E5E8  7C 1D F0 40 */	cmplw r29, r30
+/* 8032294C 0031E5EC  40 82 FF E8 */	bne lbl_80322934
+/* 80322950 0031E5F0  7F E3 FB 78 */	mr r3, r31
+/* 80322954 0031E5F4  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80322958 0031E5F8  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8032295C 0031E5FC  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80322960 0031E600  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80322964 0031E604  7C 08 03 A6 */	mtlr r0
+/* 80322968 0031E608  38 21 00 20 */	addi r1, r1, 0x20
+/* 8032296C 0031E60C  4E 80 00 20 */	blr 
+
+.global "Copy<P22AptFileSavedInputState,P22AptFileSavedInputState>__20StringAsVectorPolicyFP22AptFileSavedInputStateP22AptFileSavedInputStateP22AptFileSavedInputState_P22AptFileSavedInputState"
+"Copy<P22AptFileSavedInputState,P22AptFileSavedInputState>__20StringAsVectorPolicyFP22AptFileSavedInputStateP22AptFileSavedInputStateP22AptFileSavedInputState_P22AptFileSavedInputState":
+/* 80322970 0031E610  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322974 0031E614  7C 08 02 A6 */	mflr r0
+/* 80322978 0031E618  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8032297C 0031E61C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80322980 0031E620  7C BF 2B 78 */	mr r31, r5
+/* 80322984 0031E624  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80322988 0031E628  7C 9E 23 78 */	mr r30, r4
+/* 8032298C 0031E62C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80322990 0031E630  7C 7D 1B 78 */	mr r29, r3
+/* 80322994 0031E634  48 00 00 18 */	b lbl_803229AC
+lbl_80322998:
+/* 80322998 0031E638  7F E3 FB 78 */	mr r3, r31
+/* 8032299C 0031E63C  7F A4 EB 78 */	mr r4, r29
+/* 803229A0 0031E640  3B BD 00 08 */	addi r29, r29, 8
+/* 803229A4 0031E644  3B FF 00 08 */	addi r31, r31, 8
+/* 803229A8 0031E648  4B FD A8 4D */	bl "__as__22AptFileSavedInputStateFRC22AptFileSavedInputState"
+lbl_803229AC:
+/* 803229AC 0031E64C  7C 1D F0 40 */	cmplw r29, r30
+/* 803229B0 0031E650  40 82 FF E8 */	bne lbl_80322998
+/* 803229B4 0031E654  7F E3 FB 78 */	mr r3, r31
+/* 803229B8 0031E658  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 803229BC 0031E65C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 803229C0 0031E660  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 803229C4 0031E664  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803229C8 0031E668  7C 08 03 A6 */	mtlr r0
+/* 803229CC 0031E66C  38 21 00 20 */	addi r1, r1, 0x20
+/* 803229D0 0031E670  4E 80 00 20 */	blr 
+
+.global "Copy<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+"Copy<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>":
+/* 803229D4 0031E674  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803229D8 0031E678  7C 08 02 A6 */	mflr r0
+/* 803229DC 0031E67C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803229E0 0031E680  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803229E4 0031E684  7C BF 2B 78 */	mr r31, r5
+/* 803229E8 0031E688  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 803229EC 0031E68C  7C 9E 23 78 */	mr r30, r4
+/* 803229F0 0031E690  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 803229F4 0031E694  7C 7D 1B 78 */	mr r29, r3
+/* 803229F8 0031E698  48 00 00 2C */	b lbl_80322A24
+lbl_803229FC:
+/* 803229FC 0031E69C  7F A4 EB 78 */	mr r4, r29
+/* 80322A00 0031E6A0  38 61 00 08 */	addi r3, r1, 8
+/* 80322A04 0031E6A4  38 A0 00 00 */	li r5, 0
+/* 80322A08 0031E6A8  4B FF FD D9 */	bl "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fi"
+/* 80322A0C 0031E6AC  38 61 00 08 */	addi r3, r1, 8
+/* 80322A10 0031E6B0  4B FF F8 F9 */	bl "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80322A14 0031E6B4  7C 64 1B 78 */	mr r4, r3
+/* 80322A18 0031E6B8  7F E3 FB 78 */	mr r3, r31
+/* 80322A1C 0031E6BC  3B FF 00 04 */	addi r31, r31, 4
+/* 80322A20 0031E6C0  4B ED D0 99 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+lbl_80322A24:
+/* 80322A24 0031E6C4  7F A3 EB 78 */	mr r3, r29
+/* 80322A28 0031E6C8  7F C4 F3 78 */	mr r4, r30
+/* 80322A2C 0031E6CC  4B FF F7 99 */	bl "__ne__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 80322A30 0031E6D0  2C 03 00 00 */	cmpwi r3, 0
+/* 80322A34 0031E6D4  40 82 FF C8 */	bne lbl_803229FC
+/* 80322A38 0031E6D8  7F E3 FB 78 */	mr r3, r31
+/* 80322A3C 0031E6DC  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80322A40 0031E6E0  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80322A44 0031E6E4  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80322A48 0031E6E8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80322A4C 0031E6EC  7C 08 03 A6 */	mtlr r0
+/* 80322A50 0031E6F0  38 21 00 30 */	addi r1, r1, 0x30
+/* 80322A54 0031E6F4  4E 80 00 20 */	blr 
+
+.global "Copy<PC22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+"Copy<PC22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator_Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator":
+/* 80322A58 0031E6F8  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80322A5C 0031E6FC  7C 08 02 A6 */	mflr r0
+/* 80322A60 0031E700  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80322A64 0031E704  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 80322A68 0031E708  7C DF 33 78 */	mr r31, r6
+/* 80322A6C 0031E70C  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 80322A70 0031E710  7C BE 2B 78 */	mr r30, r5
+/* 80322A74 0031E714  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 80322A78 0031E718  7C 9D 23 78 */	mr r29, r4
+/* 80322A7C 0031E71C  93 81 00 20 */	stw r28, 0x20(r1)
+/* 80322A80 0031E720  7C 7C 1B 78 */	mr r28, r3
+/* 80322A84 0031E724  48 00 00 28 */	b lbl_80322AAC
+lbl_80322A88:
+/* 80322A88 0031E728  7F E4 FB 78 */	mr r4, r31
+/* 80322A8C 0031E72C  38 61 00 08 */	addi r3, r1, 8
+/* 80322A90 0031E730  38 A0 00 00 */	li r5, 0
+/* 80322A94 0031E734  4B FF FD 4D */	bl "__pp__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fi"
+/* 80322A98 0031E738  38 61 00 08 */	addi r3, r1, 8
+/* 80322A9C 0031E73C  4B FF F8 6D */	bl "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80322AA0 0031E740  7F A4 EB 78 */	mr r4, r29
+/* 80322AA4 0031E744  3B BD 00 04 */	addi r29, r29, 4
+/* 80322AA8 0031E748  4B ED D0 11 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+lbl_80322AAC:
+/* 80322AAC 0031E74C  7C 1D F0 40 */	cmplw r29, r30
+/* 80322AB0 0031E750  40 82 FF D8 */	bne lbl_80322A88
+/* 80322AB4 0031E754  7F 83 E3 78 */	mr r3, r28
+/* 80322AB8 0031E758  7F E4 FB 78 */	mr r4, r31
+/* 80322ABC 0031E75C  4B FF FD 5D */	bl "__ct__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator"
+/* 80322AC0 0031E760  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80322AC4 0031E764  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 80322AC8 0031E768  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 80322ACC 0031E76C  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 80322AD0 0031E770  83 81 00 20 */	lwz r28, 0x20(r1)
+/* 80322AD4 0031E774  7C 08 03 A6 */	mtlr r0
+/* 80322AD8 0031E778  38 21 00 30 */	addi r1, r1, 0x30
+/* 80322ADC 0031E77C  4E 80 00 20 */	blr 
+
+.global "Copy<PC22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+"Copy<PC22AptSharedPtr<7AptFile>,P22AptSharedPtr<7AptFile>>__20StringAsVectorPolicyFPC22AptSharedPtr<7AptFile>PC22AptSharedPtr<7AptFile>P22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>":
+/* 80322AE0 0031E780  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322AE4 0031E784  7C 08 02 A6 */	mflr r0
+/* 80322AE8 0031E788  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80322AEC 0031E78C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80322AF0 0031E790  7C BF 2B 78 */	mr r31, r5
+/* 80322AF4 0031E794  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80322AF8 0031E798  7C 9E 23 78 */	mr r30, r4
+/* 80322AFC 0031E79C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80322B00 0031E7A0  7C 7D 1B 78 */	mr r29, r3
+/* 80322B04 0031E7A4  48 00 00 18 */	b lbl_80322B1C
+lbl_80322B08:
+/* 80322B08 0031E7A8  7F E3 FB 78 */	mr r3, r31
+/* 80322B0C 0031E7AC  7F A4 EB 78 */	mr r4, r29
+/* 80322B10 0031E7B0  3B BD 00 04 */	addi r29, r29, 4
+/* 80322B14 0031E7B4  3B FF 00 04 */	addi r31, r31, 4
+/* 80322B18 0031E7B8  4B ED CF A1 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+lbl_80322B1C:
+/* 80322B1C 0031E7BC  7C 1D F0 40 */	cmplw r29, r30
+/* 80322B20 0031E7C0  40 82 FF E8 */	bne lbl_80322B08
+/* 80322B24 0031E7C4  7F E3 FB 78 */	mr r3, r31
+/* 80322B28 0031E7C8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80322B2C 0031E7CC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80322B30 0031E7D0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80322B34 0031E7D4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80322B38 0031E7D8  7C 08 03 A6 */	mtlr r0
+/* 80322B3C 0031E7DC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80322B40 0031E7E0  4E 80 00 20 */	blr 
+
+.global "Move<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__Q32EA6String13DefaultPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>"
+"Move<Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator,P22AptSharedPtr<7AptFile>>__Q32EA6String13DefaultPolicyFQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorP22AptSharedPtr<7AptFile>_P22AptSharedPtr<7AptFile>":
+/* 80322B44 0031E7E4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80322B48 0031E7E8  7C 08 02 A6 */	mflr r0
+/* 80322B4C 0031E7EC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80322B50 0031E7F0  7C 60 1B 78 */	mr r0, r3
+/* 80322B54 0031E7F4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80322B58 0031E7F8  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80322B5C 0031E7FC  7C BE 2B 78 */	mr r30, r5
+/* 80322B60 0031E800  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80322B64 0031E804  7C 9D 23 78 */	mr r29, r4
+/* 80322B68 0031E808  7F A3 EB 78 */	mr r3, r29
+/* 80322B6C 0031E80C  7C 04 03 78 */	mr r4, r0
+/* 80322B70 0031E810  4B FF FD 05 */	bl "__mi__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>CFRCQ42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>"
+/* 80322B74 0031E814  54 60 10 3A */	slwi r0, r3, 2
+/* 80322B78 0031E818  7C 7F 1B 78 */	mr r31, r3
+/* 80322B7C 0031E81C  7F DE 02 14 */	add r30, r30, r0
+/* 80322B80 0031E820  7F A3 EB 78 */	mr r3, r29
+/* 80322B84 0031E824  3B DE FF FC */	addi r30, r30, -4
+/* 80322B88 0031E828  4B FF FC DD */	bl "__mm__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+/* 80322B8C 0031E82C  48 00 00 24 */	b lbl_80322BB0
+lbl_80322B90:
+/* 80322B90 0031E830  7F A3 EB 78 */	mr r3, r29
+/* 80322B94 0031E834  4B FF F7 75 */	bl "__ml__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIteratorCFv"
+/* 80322B98 0031E838  7C 64 1B 78 */	mr r4, r3
+/* 80322B9C 0031E83C  7F C3 F3 78 */	mr r3, r30
+/* 80322BA0 0031E840  4B ED CF 19 */	bl "__as__22AptSharedPtr<7AptFile>FRC22AptSharedPtr<7AptFile>"
+/* 80322BA4 0031E844  7F A3 EB 78 */	mr r3, r29
+/* 80322BA8 0031E848  4B FF FC BD */	bl "__mm__Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>155DbgIteratorBase<22AptSharedPtr<7AptFile>,Q42EA6String86BasicString<48StringAsVectorEncoding<22AptSharedPtr<7AptFile>>,20StringAsVectorPolicy>11DbgIterator>Fv"
+/* 80322BAC 0031E84C  3B DE FF FC */	addi r30, r30, -4
+lbl_80322BB0:
+/* 80322BB0 0031E850  2C 1F 00 00 */	cmpwi r31, 0
+/* 80322BB4 0031E854  3B FF FF FF */	addi r31, r31, -1
+/* 80322BB8 0031E858  40 82 FF D8 */	bne lbl_80322B90
+/* 80322BBC 0031E85C  7F C3 F3 78 */	mr r3, r30
+/* 80322BC0 0031E860  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80322BC4 0031E864  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80322BC8 0031E868  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80322BCC 0031E86C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80322BD0 0031E870  7C 08 03 A6 */	mtlr r0
+/* 80322BD4 0031E874  38 21 00 20 */	addi r1, r1, 0x20
+/* 80322BD8 0031E878  4E 80 00 20 */	blr 
+
+.global "__nw__25AptCharacterAnimationInstFUl"
+"__nw__25AptCharacterAnimationInstFUl":
+/* 80322BDC 0031E87C  7C 64 1B 78 */	mr r4, r3
+/* 80322BE0 0031E880  80 6D BE 60 */	lwz r3, "gpNonGCPoolManager"-_SDA_BASE_(r13)
+/* 80322BE4 0031E884  48 00 B5 5C */	b "Allocate__17DOGMA_PoolManagerFUl"
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global "__PRETTY_FUNCTION__$9013_80458758"
+"__PRETTY_FUNCTION__$9013_80458758":
+	.incbin "baserom.dol", 0x454858, 0x30
+.global lbl_80458788
+lbl_80458788:
+	.incbin "baserom.dol", 0x454888, 0xC
+.global lbl_80458794
+lbl_80458794:
+	.incbin "baserom.dol", 0x454894, 0x24
+.global lbl_804587B8
+lbl_804587B8:
+	.incbin "baserom.dol", 0x4548B8, 0x20
+.global lbl_804587D8
+lbl_804587D8:
+	.incbin "baserom.dol", 0x4548D8, 0x30
+
+.section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
+.global lbl_805D6B38
+lbl_805D6B38:
+	.incbin "baserom.dol", 0x4866B8, 0x8
+
+.section .sdata2, "a"  # 0x805D9220 - 0x805DC420
+.global lbl_805DB678
+lbl_805DB678:
+	.incbin "baserom.dol", 0x489998, 0x8
+.global lbl_805DB680
+lbl_805DB680:
+	.incbin "baserom.dol", 0x4899A0, 0x8

@@ -1,0 +1,740 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "__ct__Q46nw4hbm3snd6detail18SoundArchiveLoaderFRCQ36nw4hbm3snd12SoundArchive"
+"__ct__Q46nw4hbm3snd6detail18SoundArchiveLoaderFRCQ36nw4hbm3snd12SoundArchive":
+/* 803AC9B0 003A8650  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803AC9B4 003A8654  7C 08 02 A6 */	mflr r0
+/* 803AC9B8 003A8658  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803AC9BC 003A865C  38 00 00 00 */	li r0, 0
+/* 803AC9C0 003A8660  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803AC9C4 003A8664  7C 7F 1B 78 */	mr r31, r3
+/* 803AC9C8 003A8668  90 83 00 18 */	stw r4, 0x18(r3)
+/* 803AC9CC 003A866C  90 03 02 1C */	stw r0, 0x21c(r3)
+/* 803AC9D0 003A8670  48 03 4C 41 */	bl "OSInitMutex"
+/* 803AC9D4 003A8674  7F E3 FB 78 */	mr r3, r31
+/* 803AC9D8 003A8678  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803AC9DC 003A867C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803AC9E0 003A8680  7C 08 03 A6 */	mtlr r0
+/* 803AC9E4 003A8684  38 21 00 10 */	addi r1, r1, 0x10
+/* 803AC9E8 003A8688  4E 80 00 20 */	blr 
+
+.global "__dt__Q46nw4hbm3snd6detail18SoundArchiveLoaderFv"
+"__dt__Q46nw4hbm3snd6detail18SoundArchiveLoaderFv":
+/* 803AC9EC 003A868C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803AC9F0 003A8690  7C 08 02 A6 */	mflr r0
+/* 803AC9F4 003A8694  2C 03 00 00 */	cmpwi r3, 0
+/* 803AC9F8 003A8698  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803AC9FC 003A869C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803ACA00 003A86A0  7C 7F 1B 78 */	mr r31, r3
+/* 803ACA04 003A86A4  41 82 00 10 */	beq lbl_803ACA14
+/* 803ACA08 003A86A8  2C 04 00 00 */	cmpwi r4, 0
+/* 803ACA0C 003A86AC  40 81 00 08 */	ble lbl_803ACA14
+/* 803ACA10 003A86B0  4B EA D5 9D */	bl "__dl__FPv"
+lbl_803ACA14:
+/* 803ACA14 003A86B4  7F E3 FB 78 */	mr r3, r31
+/* 803ACA18 003A86B8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803ACA1C 003A86BC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803ACA20 003A86C0  7C 08 03 A6 */	mtlr r0
+/* 803ACA24 003A86C4  38 21 00 10 */	addi r1, r1, 0x10
+/* 803ACA28 003A86C8  4E 80 00 20 */	blr 
+
+.global "LoadGroup__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPQ36nw4hbm3snd22SoundMemoryAllocatablePPvUl"
+"LoadGroup__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPQ36nw4hbm3snd22SoundMemoryAllocatablePPvUl":
+/* 803ACA2C 003A86CC  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 803ACA30 003A86D0  7C 08 02 A6 */	mflr r0
+/* 803ACA34 003A86D4  90 01 00 64 */	stw r0, 0x64(r1)
+/* 803ACA38 003A86D8  39 61 00 60 */	addi r11, r1, 0x60
+/* 803ACA3C 003A86DC  48 06 29 29 */	bl "_savegpr_23"
+/* 803ACA40 003A86E0  2C 05 00 00 */	cmpwi r5, 0
+/* 803ACA44 003A86E4  7C 7F 1B 78 */	mr r31, r3
+/* 803ACA48 003A86E8  7C 97 23 78 */	mr r23, r4
+/* 803ACA4C 003A86EC  7C BA 2B 78 */	mr r26, r5
+/* 803ACA50 003A86F0  7C D8 33 78 */	mr r24, r6
+/* 803ACA54 003A86F4  7C F9 3B 78 */	mr r25, r7
+/* 803ACA58 003A86F8  40 82 00 20 */	bne lbl_803ACA78
+/* 803ACA5C 003A86FC  3C 60 80 47 */	lis r3, lbl_80470090@ha
+/* 803ACA60 003A8700  3C A0 80 47 */	lis r5, lbl_804700AC@ha
+/* 803ACA64 003A8704  38 63 00 90 */	addi r3, r3, lbl_80470090@l
+/* 803ACA68 003A8708  38 80 00 53 */	li r4, 0x53
+/* 803ACA6C 003A870C  38 A5 00 AC */	addi r5, r5, lbl_804700AC@l
+/* 803ACA70 003A8710  4C C6 31 82 */	crclr 6
+/* 803ACA74 003A8714  4B FD 95 61 */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_803ACA78:
+/* 803ACA78 003A8718  7F E4 FB 78 */	mr r4, r31
+/* 803ACA7C 003A871C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACA80 003A8720  4B FD 11 CD */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 803ACA84 003A8724  80 7F 00 18 */	lwz r3, 0x18(r31)
+/* 803ACA88 003A8728  7E E4 BB 78 */	mr r4, r23
+/* 803ACA8C 003A872C  38 BF 00 1C */	addi r5, r31, 0x1c
+/* 803ACA90 003A8730  38 C0 02 00 */	li r6, 0x200
+/* 803ACA94 003A8734  4B FF E5 21 */	bl "detail_OpenGroupStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi"
+/* 803ACA98 003A8738  7C 64 1B 78 */	mr r4, r3
+/* 803ACA9C 003A873C  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACAA0 003A8740  48 00 05 CD */	bl "__ct__Q46nw4hbm3snd6detail16FileStreamHandleFPQ36nw4hbm2ut10FileStream"
+/* 803ACAA4 003A8744  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACAA8 003A8748  48 00 05 B1 */	bl "__opb__Q46nw4hbm3snd6detail16FileStreamHandleCFv"
+/* 803ACAAC 003A874C  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACAB0 003A8750  40 82 00 24 */	bne lbl_803ACAD4
+/* 803ACAB4 003A8754  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACAB8 003A8758  38 80 FF FF */	li r4, -1
+/* 803ACABC 003A875C  48 00 05 31 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACAC0 003A8760  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACAC4 003A8764  38 80 FF FF */	li r4, -1
+/* 803ACAC8 003A8768  4B FD 10 D1 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACACC 003A876C  38 60 00 00 */	li r3, 0
+/* 803ACAD0 003A8770  48 00 04 E4 */	b lbl_803ACFB4
+lbl_803ACAD4:
+/* 803ACAD4 003A8774  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACAD8 003A8778  48 00 05 0D */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACADC 003A877C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACAE0 003A8780  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 803ACAE4 003A8784  7D 89 03 A6 */	mtctr r12
+/* 803ACAE8 003A8788  4E 80 04 21 */	bctrl 
+/* 803ACAEC 003A878C  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACAF0 003A8790  41 82 00 24 */	beq lbl_803ACB14
+/* 803ACAF4 003A8794  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACAF8 003A8798  48 00 04 ED */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACAFC 003A879C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACB00 003A87A0  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 803ACB04 003A87A4  7D 89 03 A6 */	mtctr r12
+/* 803ACB08 003A87A8  4E 80 04 21 */	bctrl 
+/* 803ACB0C 003A87AC  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACB10 003A87B0  40 82 00 24 */	bne lbl_803ACB34
+lbl_803ACB14:
+/* 803ACB14 003A87B4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACB18 003A87B8  38 80 FF FF */	li r4, -1
+/* 803ACB1C 003A87BC  48 00 04 D1 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACB20 003A87C0  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACB24 003A87C4  38 80 FF FF */	li r4, -1
+/* 803ACB28 003A87C8  4B FD 10 71 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACB2C 003A87CC  38 60 00 00 */	li r3, 0
+/* 803ACB30 003A87D0  48 00 04 84 */	b lbl_803ACFB4
+lbl_803ACB34:
+/* 803ACB34 003A87D4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACB38 003A87D8  48 00 04 AD */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACB3C 003A87DC  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACB40 003A87E0  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACB44 003A87E4  7D 89 03 A6 */	mtctr r12
+/* 803ACB48 003A87E8  4E 80 04 21 */	bctrl 
+/* 803ACB4C 003A87EC  81 9A 00 00 */	lwz r12, 0(r26)
+/* 803ACB50 003A87F0  7C 64 1B 78 */	mr r4, r3
+/* 803ACB54 003A87F4  7F 43 D3 78 */	mr r3, r26
+/* 803ACB58 003A87F8  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 803ACB5C 003A87FC  7D 89 03 A6 */	mtctr r12
+/* 803ACB60 003A8800  4E 80 04 21 */	bctrl 
+/* 803ACB64 003A8804  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACB68 003A8808  7C 7C 1B 78 */	mr r28, r3
+/* 803ACB6C 003A880C  40 82 00 24 */	bne lbl_803ACB90
+/* 803ACB70 003A8810  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACB74 003A8814  38 80 FF FF */	li r4, -1
+/* 803ACB78 003A8818  48 00 04 75 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACB7C 003A881C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACB80 003A8820  38 80 FF FF */	li r4, -1
+/* 803ACB84 003A8824  4B FD 10 15 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACB88 003A8828  38 60 00 00 */	li r3, 0
+/* 803ACB8C 003A882C  48 00 04 28 */	b lbl_803ACFB4
+lbl_803ACB90:
+/* 803ACB90 003A8830  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACB94 003A8834  48 00 04 49 */	bl "GetFileStream__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACB98 003A8838  2C 19 00 00 */	cmpwi r25, 0
+/* 803ACB9C 003A883C  90 7F 02 1C */	stw r3, 0x21c(r31)
+/* 803ACBA0 003A8840  40 82 00 70 */	bne lbl_803ACC10
+/* 803ACBA4 003A8844  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACBA8 003A8848  48 00 04 3D */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACBAC 003A884C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACBB0 003A8850  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACBB4 003A8854  7D 89 03 A6 */	mtctr r12
+/* 803ACBB8 003A8858  4E 80 04 21 */	bctrl 
+/* 803ACBBC 003A885C  7C 7D 1B 78 */	mr r29, r3
+/* 803ACBC0 003A8860  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACBC4 003A8864  48 00 04 21 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACBC8 003A8868  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACBCC 003A886C  7F 84 E3 78 */	mr r4, r28
+/* 803ACBD0 003A8870  7F A5 EB 78 */	mr r5, r29
+/* 803ACBD4 003A8874  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 803ACBD8 003A8878  7D 89 03 A6 */	mtctr r12
+/* 803ACBDC 003A887C  4E 80 04 21 */	bctrl 
+/* 803ACBE0 003A8880  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACBE4 003A8884  40 82 00 D0 */	bne lbl_803ACCB4
+/* 803ACBE8 003A8888  38 00 00 00 */	li r0, 0
+/* 803ACBEC 003A888C  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACBF0 003A8890  90 1F 02 1C */	stw r0, 0x21c(r31)
+/* 803ACBF4 003A8894  38 80 FF FF */	li r4, -1
+/* 803ACBF8 003A8898  48 00 03 F5 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACBFC 003A889C  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACC00 003A88A0  38 80 FF FF */	li r4, -1
+/* 803ACC04 003A88A4  4B FD 0F 95 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACC08 003A88A8  38 60 00 00 */	li r3, 0
+/* 803ACC0C 003A88AC  48 00 03 A8 */	b lbl_803ACFB4
+lbl_803ACC10:
+/* 803ACC10 003A88B0  7F 9E E3 78 */	mr r30, r28
+/* 803ACC14 003A88B4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACC18 003A88B8  48 00 03 CD */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACC1C 003A88BC  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACC20 003A88C0  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACC24 003A88C4  7D 89 03 A6 */	mtctr r12
+/* 803ACC28 003A88C8  4E 80 04 21 */	bctrl 
+/* 803ACC2C 003A88CC  7C 7B 1B 78 */	mr r27, r3
+/* 803ACC30 003A88D0  48 00 00 7C */	b lbl_803ACCAC
+lbl_803ACC34:
+/* 803ACC34 003A88D4  7F 23 CB 78 */	mr r3, r25
+/* 803ACC38 003A88D8  7F 64 DB 78 */	mr r4, r27
+/* 803ACC3C 003A88DC  48 00 03 91 */	bl "Min<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUl_Ul"
+/* 803ACC40 003A88E0  7C 7D 1B 78 */	mr r29, r3
+/* 803ACC44 003A88E4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACC48 003A88E8  48 00 03 9D */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACC4C 003A88EC  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACC50 003A88F0  7F C4 F3 78 */	mr r4, r30
+/* 803ACC54 003A88F4  7F A5 EB 78 */	mr r5, r29
+/* 803ACC58 003A88F8  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 803ACC5C 003A88FC  7D 89 03 A6 */	mtctr r12
+/* 803ACC60 003A8900  4E 80 04 21 */	bctrl 
+/* 803ACC64 003A8904  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACC68 003A8908  40 82 00 2C */	bne lbl_803ACC94
+/* 803ACC6C 003A890C  38 00 00 00 */	li r0, 0
+/* 803ACC70 003A8910  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACC74 003A8914  90 1F 02 1C */	stw r0, 0x21c(r31)
+/* 803ACC78 003A8918  38 80 FF FF */	li r4, -1
+/* 803ACC7C 003A891C  48 00 03 71 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACC80 003A8920  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACC84 003A8924  38 80 FF FF */	li r4, -1
+/* 803ACC88 003A8928  4B FD 0F 11 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACC8C 003A892C  38 60 00 00 */	li r3, 0
+/* 803ACC90 003A8930  48 00 03 24 */	b lbl_803ACFB4
+lbl_803ACC94:
+/* 803ACC94 003A8934  7C 1B C8 40 */	cmplw r27, r25
+/* 803ACC98 003A8938  40 81 00 10 */	ble lbl_803ACCA8
+/* 803ACC9C 003A893C  7F 79 D8 50 */	subf r27, r25, r27
+/* 803ACCA0 003A8940  7F DE CA 14 */	add r30, r30, r25
+/* 803ACCA4 003A8944  48 00 00 08 */	b lbl_803ACCAC
+lbl_803ACCA8:
+/* 803ACCA8 003A8948  3B 60 00 00 */	li r27, 0
+lbl_803ACCAC:
+/* 803ACCAC 003A894C  2C 1B 00 00 */	cmpwi r27, 0
+/* 803ACCB0 003A8950  40 82 FF 84 */	bne lbl_803ACC34
+lbl_803ACCB4:
+/* 803ACCB4 003A8954  3B A0 00 00 */	li r29, 0
+/* 803ACCB8 003A8958  80 7F 00 18 */	lwz r3, 0x18(r31)
+/* 803ACCBC 003A895C  93 BF 02 1C */	stw r29, 0x21c(r31)
+/* 803ACCC0 003A8960  7E E4 BB 78 */	mr r4, r23
+/* 803ACCC4 003A8964  38 A1 00 18 */	addi r5, r1, 0x18
+/* 803ACCC8 003A8968  4B FF E1 85 */	bl "detail_ReadGroupInfo__Q36nw4hbm3snd12SoundArchiveCFUlPQ46nw4hbm3snd12SoundArchive9GroupInfo"
+/* 803ACCCC 003A896C  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACCD0 003A8970  40 82 00 24 */	bne lbl_803ACCF4
+/* 803ACCD4 003A8974  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACCD8 003A8978  38 80 FF FF */	li r4, -1
+/* 803ACCDC 003A897C  48 00 03 11 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACCE0 003A8980  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACCE4 003A8984  38 80 FF FF */	li r4, -1
+/* 803ACCE8 003A8988  4B FD 0E B1 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACCEC 003A898C  38 60 00 00 */	li r3, 0
+/* 803ACCF0 003A8990  48 00 02 C4 */	b lbl_803ACFB4
+lbl_803ACCF4:
+/* 803ACCF4 003A8994  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 803ACCF8 003A8998  2C 00 00 00 */	cmpwi r0, 0
+/* 803ACCFC 003A899C  41 82 02 90 */	beq lbl_803ACF8C
+/* 803ACD00 003A89A0  80 7F 00 18 */	lwz r3, 0x18(r31)
+/* 803ACD04 003A89A4  7E E4 BB 78 */	mr r4, r23
+/* 803ACD08 003A89A8  38 BF 00 1C */	addi r5, r31, 0x1c
+/* 803ACD0C 003A89AC  38 C0 02 00 */	li r6, 0x200
+/* 803ACD10 003A89B0  4B FF E3 49 */	bl "detail_OpenGroupWaveDataStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi"
+/* 803ACD14 003A89B4  7C 64 1B 78 */	mr r4, r3
+/* 803ACD18 003A89B8  38 61 00 08 */	addi r3, r1, 8
+/* 803ACD1C 003A89BC  48 00 03 51 */	bl "__ct__Q46nw4hbm3snd6detail16FileStreamHandleFPQ36nw4hbm2ut10FileStream"
+/* 803ACD20 003A89C0  38 61 00 08 */	addi r3, r1, 8
+/* 803ACD24 003A89C4  48 00 03 35 */	bl "__opb__Q46nw4hbm3snd6detail16FileStreamHandleCFv"
+/* 803ACD28 003A89C8  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACD2C 003A89CC  40 82 00 30 */	bne lbl_803ACD5C
+/* 803ACD30 003A89D0  38 61 00 08 */	addi r3, r1, 8
+/* 803ACD34 003A89D4  38 80 FF FF */	li r4, -1
+/* 803ACD38 003A89D8  48 00 02 B5 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACD3C 003A89DC  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACD40 003A89E0  38 80 FF FF */	li r4, -1
+/* 803ACD44 003A89E4  48 00 02 A9 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACD48 003A89E8  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACD4C 003A89EC  38 80 FF FF */	li r4, -1
+/* 803ACD50 003A89F0  4B FD 0E 49 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACD54 003A89F4  38 60 00 00 */	li r3, 0
+/* 803ACD58 003A89F8  48 00 02 5C */	b lbl_803ACFB4
+lbl_803ACD5C:
+/* 803ACD5C 003A89FC  38 61 00 08 */	addi r3, r1, 8
+/* 803ACD60 003A8A00  48 00 02 85 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACD64 003A8A04  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACD68 003A8A08  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 803ACD6C 003A8A0C  7D 89 03 A6 */	mtctr r12
+/* 803ACD70 003A8A10  4E 80 04 21 */	bctrl 
+/* 803ACD74 003A8A14  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACD78 003A8A18  41 82 00 24 */	beq lbl_803ACD9C
+/* 803ACD7C 003A8A1C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACD80 003A8A20  48 00 02 65 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACD84 003A8A24  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACD88 003A8A28  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 803ACD8C 003A8A2C  7D 89 03 A6 */	mtctr r12
+/* 803ACD90 003A8A30  4E 80 04 21 */	bctrl 
+/* 803ACD94 003A8A34  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACD98 003A8A38  40 82 00 30 */	bne lbl_803ACDC8
+lbl_803ACD9C:
+/* 803ACD9C 003A8A3C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACDA0 003A8A40  38 80 FF FF */	li r4, -1
+/* 803ACDA4 003A8A44  48 00 02 49 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACDA8 003A8A48  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACDAC 003A8A4C  38 80 FF FF */	li r4, -1
+/* 803ACDB0 003A8A50  48 00 02 3D */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACDB4 003A8A54  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACDB8 003A8A58  38 80 FF FF */	li r4, -1
+/* 803ACDBC 003A8A5C  4B FD 0D DD */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACDC0 003A8A60  38 60 00 00 */	li r3, 0
+/* 803ACDC4 003A8A64  48 00 01 F0 */	b lbl_803ACFB4
+lbl_803ACDC8:
+/* 803ACDC8 003A8A68  38 61 00 08 */	addi r3, r1, 8
+/* 803ACDCC 003A8A6C  48 00 02 19 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACDD0 003A8A70  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACDD4 003A8A74  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACDD8 003A8A78  7D 89 03 A6 */	mtctr r12
+/* 803ACDDC 003A8A7C  4E 80 04 21 */	bctrl 
+/* 803ACDE0 003A8A80  81 9A 00 00 */	lwz r12, 0(r26)
+/* 803ACDE4 003A8A84  7C 64 1B 78 */	mr r4, r3
+/* 803ACDE8 003A8A88  7F 43 D3 78 */	mr r3, r26
+/* 803ACDEC 003A8A8C  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 803ACDF0 003A8A90  7D 89 03 A6 */	mtctr r12
+/* 803ACDF4 003A8A94  4E 80 04 21 */	bctrl 
+/* 803ACDF8 003A8A98  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACDFC 003A8A9C  7C 7B 1B 78 */	mr r27, r3
+/* 803ACE00 003A8AA0  40 82 00 30 */	bne lbl_803ACE30
+/* 803ACE04 003A8AA4  38 61 00 08 */	addi r3, r1, 8
+/* 803ACE08 003A8AA8  38 80 FF FF */	li r4, -1
+/* 803ACE0C 003A8AAC  48 00 01 E1 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE10 003A8AB0  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACE14 003A8AB4  38 80 FF FF */	li r4, -1
+/* 803ACE18 003A8AB8  48 00 01 D5 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE1C 003A8ABC  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACE20 003A8AC0  38 80 FF FF */	li r4, -1
+/* 803ACE24 003A8AC4  4B FD 0D 75 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACE28 003A8AC8  38 60 00 00 */	li r3, 0
+/* 803ACE2C 003A8ACC  48 00 01 88 */	b lbl_803ACFB4
+lbl_803ACE30:
+/* 803ACE30 003A8AD0  38 61 00 08 */	addi r3, r1, 8
+/* 803ACE34 003A8AD4  48 00 01 A9 */	bl "GetFileStream__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE38 003A8AD8  2C 19 00 00 */	cmpwi r25, 0
+/* 803ACE3C 003A8ADC  90 7F 02 1C */	stw r3, 0x21c(r31)
+/* 803ACE40 003A8AE0  40 82 00 78 */	bne lbl_803ACEB8
+/* 803ACE44 003A8AE4  38 61 00 08 */	addi r3, r1, 8
+/* 803ACE48 003A8AE8  48 00 01 9D */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE4C 003A8AEC  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACE50 003A8AF0  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACE54 003A8AF4  7D 89 03 A6 */	mtctr r12
+/* 803ACE58 003A8AF8  4E 80 04 21 */	bctrl 
+/* 803ACE5C 003A8AFC  7C 7E 1B 78 */	mr r30, r3
+/* 803ACE60 003A8B00  38 61 00 08 */	addi r3, r1, 8
+/* 803ACE64 003A8B04  48 00 01 81 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE68 003A8B08  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACE6C 003A8B0C  7F 64 DB 78 */	mr r4, r27
+/* 803ACE70 003A8B10  7F C5 F3 78 */	mr r5, r30
+/* 803ACE74 003A8B14  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 803ACE78 003A8B18  7D 89 03 A6 */	mtctr r12
+/* 803ACE7C 003A8B1C  4E 80 04 21 */	bctrl 
+/* 803ACE80 003A8B20  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACE84 003A8B24  40 82 00 E4 */	bne lbl_803ACF68
+/* 803ACE88 003A8B28  93 BF 02 1C */	stw r29, 0x21c(r31)
+/* 803ACE8C 003A8B2C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACE90 003A8B30  38 80 FF FF */	li r4, -1
+/* 803ACE94 003A8B34  48 00 01 59 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACE98 003A8B38  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACE9C 003A8B3C  38 80 FF FF */	li r4, -1
+/* 803ACEA0 003A8B40  48 00 01 4D */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACEA4 003A8B44  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACEA8 003A8B48  38 80 FF FF */	li r4, -1
+/* 803ACEAC 003A8B4C  4B FD 0C ED */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACEB0 003A8B50  38 60 00 00 */	li r3, 0
+/* 803ACEB4 003A8B54  48 00 01 00 */	b lbl_803ACFB4
+lbl_803ACEB8:
+/* 803ACEB8 003A8B58  7F 7D DB 78 */	mr r29, r27
+/* 803ACEBC 003A8B5C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACEC0 003A8B60  48 00 01 25 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACEC4 003A8B64  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACEC8 003A8B68  81 8C 00 40 */	lwz r12, 0x40(r12)
+/* 803ACECC 003A8B6C  7D 89 03 A6 */	mtctr r12
+/* 803ACED0 003A8B70  4E 80 04 21 */	bctrl 
+/* 803ACED4 003A8B74  7C 7A 1B 78 */	mr r26, r3
+/* 803ACED8 003A8B78  48 00 00 88 */	b lbl_803ACF60
+lbl_803ACEDC:
+/* 803ACEDC 003A8B7C  7F 23 CB 78 */	mr r3, r25
+/* 803ACEE0 003A8B80  7F 44 D3 78 */	mr r4, r26
+/* 803ACEE4 003A8B84  48 00 00 E9 */	bl "Min<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUl_Ul"
+/* 803ACEE8 003A8B88  7C 7E 1B 78 */	mr r30, r3
+/* 803ACEEC 003A8B8C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACEF0 003A8B90  48 00 00 F5 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACEF4 003A8B94  81 83 00 00 */	lwz r12, 0(r3)
+/* 803ACEF8 003A8B98  7F A4 EB 78 */	mr r4, r29
+/* 803ACEFC 003A8B9C  7F C5 F3 78 */	mr r5, r30
+/* 803ACF00 003A8BA0  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 803ACF04 003A8BA4  7D 89 03 A6 */	mtctr r12
+/* 803ACF08 003A8BA8  4E 80 04 21 */	bctrl 
+/* 803ACF0C 003A8BAC  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACF10 003A8BB0  40 82 00 38 */	bne lbl_803ACF48
+/* 803ACF14 003A8BB4  38 00 00 00 */	li r0, 0
+/* 803ACF18 003A8BB8  38 61 00 08 */	addi r3, r1, 8
+/* 803ACF1C 003A8BBC  90 1F 02 1C */	stw r0, 0x21c(r31)
+/* 803ACF20 003A8BC0  38 80 FF FF */	li r4, -1
+/* 803ACF24 003A8BC4  48 00 00 C9 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACF28 003A8BC8  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACF2C 003A8BCC  38 80 FF FF */	li r4, -1
+/* 803ACF30 003A8BD0  48 00 00 BD */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACF34 003A8BD4  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACF38 003A8BD8  38 80 FF FF */	li r4, -1
+/* 803ACF3C 003A8BDC  4B FD 0C 5D */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACF40 003A8BE0  38 60 00 00 */	li r3, 0
+/* 803ACF44 003A8BE4  48 00 00 70 */	b lbl_803ACFB4
+lbl_803ACF48:
+/* 803ACF48 003A8BE8  7C 1A C8 40 */	cmplw r26, r25
+/* 803ACF4C 003A8BEC  40 81 00 10 */	ble lbl_803ACF5C
+/* 803ACF50 003A8BF0  7F 59 D0 50 */	subf r26, r25, r26
+/* 803ACF54 003A8BF4  7F BD CA 14 */	add r29, r29, r25
+/* 803ACF58 003A8BF8  48 00 00 08 */	b lbl_803ACF60
+lbl_803ACF5C:
+/* 803ACF5C 003A8BFC  3B 40 00 00 */	li r26, 0
+lbl_803ACF60:
+/* 803ACF60 003A8C00  2C 1A 00 00 */	cmpwi r26, 0
+/* 803ACF64 003A8C04  40 82 FF 78 */	bne lbl_803ACEDC
+lbl_803ACF68:
+/* 803ACF68 003A8C08  38 00 00 00 */	li r0, 0
+/* 803ACF6C 003A8C0C  2C 18 00 00 */	cmpwi r24, 0
+/* 803ACF70 003A8C10  90 1F 02 1C */	stw r0, 0x21c(r31)
+/* 803ACF74 003A8C14  41 82 00 08 */	beq lbl_803ACF7C
+/* 803ACF78 003A8C18  93 78 00 00 */	stw r27, 0(r24)
+lbl_803ACF7C:
+/* 803ACF7C 003A8C1C  38 61 00 08 */	addi r3, r1, 8
+/* 803ACF80 003A8C20  38 80 FF FF */	li r4, -1
+/* 803ACF84 003A8C24  48 00 00 69 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACF88 003A8C28  48 00 00 10 */	b lbl_803ACF98
+lbl_803ACF8C:
+/* 803ACF8C 003A8C2C  2C 18 00 00 */	cmpwi r24, 0
+/* 803ACF90 003A8C30  41 82 00 08 */	beq lbl_803ACF98
+/* 803ACF94 003A8C34  93 B8 00 00 */	stw r29, 0(r24)
+lbl_803ACF98:
+/* 803ACF98 003A8C38  38 61 00 0C */	addi r3, r1, 0xc
+/* 803ACF9C 003A8C3C  38 80 FF FF */	li r4, -1
+/* 803ACFA0 003A8C40  48 00 00 4D */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803ACFA4 003A8C44  38 61 00 10 */	addi r3, r1, 0x10
+/* 803ACFA8 003A8C48  38 80 FF FF */	li r4, -1
+/* 803ACFAC 003A8C4C  4B FD 0B ED */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803ACFB0 003A8C50  7F 83 E3 78 */	mr r3, r28
+lbl_803ACFB4:
+/* 803ACFB4 003A8C54  39 61 00 60 */	addi r11, r1, 0x60
+/* 803ACFB8 003A8C58  48 06 23 F9 */	bl "_restgpr_23"
+/* 803ACFBC 003A8C5C  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 803ACFC0 003A8C60  7C 08 03 A6 */	mtlr r0
+/* 803ACFC4 003A8C64  38 21 00 60 */	addi r1, r1, 0x60
+/* 803ACFC8 003A8C68  4E 80 00 20 */	blr 
+
+.global "Min<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUl_Ul"
+"Min<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUl_Ul":
+/* 803ACFCC 003A8C6C  7C 03 20 40 */	cmplw r3, r4
+/* 803ACFD0 003A8C70  4C 81 00 20 */	blelr 
+/* 803ACFD4 003A8C74  7C 83 23 78 */	mr r3, r4
+/* 803ACFD8 003A8C78  4E 80 00 20 */	blr 
+
+.global "GetFileStream__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+"GetFileStream__Q46nw4hbm3snd6detail16FileStreamHandleFv":
+/* 803ACFDC 003A8C7C  80 63 00 00 */	lwz r3, 0(r3)
+/* 803ACFE0 003A8C80  4E 80 00 20 */	blr 
+
+.global "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+"__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv":
+/* 803ACFE4 003A8C84  80 63 00 00 */	lwz r3, 0(r3)
+/* 803ACFE8 003A8C88  4E 80 00 20 */	blr 
+
+.global "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+"__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv":
+/* 803ACFEC 003A8C8C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803ACFF0 003A8C90  7C 08 02 A6 */	mflr r0
+/* 803ACFF4 003A8C94  2C 03 00 00 */	cmpwi r3, 0
+/* 803ACFF8 003A8C98  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803ACFFC 003A8C9C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803AD000 003A8CA0  7C 9F 23 78 */	mr r31, r4
+/* 803AD004 003A8CA4  93 C1 00 08 */	stw r30, 8(r1)
+/* 803AD008 003A8CA8  7C 7E 1B 78 */	mr r30, r3
+/* 803AD00C 003A8CAC  41 82 00 30 */	beq lbl_803AD03C
+/* 803AD010 003A8CB0  80 63 00 00 */	lwz r3, 0(r3)
+/* 803AD014 003A8CB4  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD018 003A8CB8  41 82 00 14 */	beq lbl_803AD02C
+/* 803AD01C 003A8CBC  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD020 003A8CC0  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 803AD024 003A8CC4  7D 89 03 A6 */	mtctr r12
+/* 803AD028 003A8CC8  4E 80 04 21 */	bctrl 
+lbl_803AD02C:
+/* 803AD02C 003A8CCC  2C 1F 00 00 */	cmpwi r31, 0
+/* 803AD030 003A8CD0  40 81 00 0C */	ble lbl_803AD03C
+/* 803AD034 003A8CD4  7F C3 F3 78 */	mr r3, r30
+/* 803AD038 003A8CD8  4B EA CF 75 */	bl "__dl__FPv"
+lbl_803AD03C:
+/* 803AD03C 003A8CDC  7F C3 F3 78 */	mr r3, r30
+/* 803AD040 003A8CE0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803AD044 003A8CE4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803AD048 003A8CE8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803AD04C 003A8CEC  7C 08 03 A6 */	mtlr r0
+/* 803AD050 003A8CF0  38 21 00 10 */	addi r1, r1, 0x10
+/* 803AD054 003A8CF4  4E 80 00 20 */	blr 
+
+.global "__opb__Q46nw4hbm3snd6detail16FileStreamHandleCFv"
+"__opb__Q46nw4hbm3snd6detail16FileStreamHandleCFv":
+/* 803AD058 003A8CF8  80 63 00 00 */	lwz r3, 0(r3)
+/* 803AD05C 003A8CFC  7C 03 00 D0 */	neg r0, r3
+/* 803AD060 003A8D00  7C 00 1B 78 */	or r0, r0, r3
+/* 803AD064 003A8D04  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 803AD068 003A8D08  4E 80 00 20 */	blr 
+
+.global "__ct__Q46nw4hbm3snd6detail16FileStreamHandleFPQ36nw4hbm2ut10FileStream"
+"__ct__Q46nw4hbm3snd6detail16FileStreamHandleFPQ36nw4hbm2ut10FileStream":
+/* 803AD06C 003A8D0C  90 83 00 00 */	stw r4, 0(r3)
+/* 803AD070 003A8D10  4E 80 00 20 */	blr 
+
+.global "ReadFile__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPvll"
+"ReadFile__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPvll":
+/* 803AD074 003A8D14  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803AD078 003A8D18  7C 08 02 A6 */	mflr r0
+/* 803AD07C 003A8D1C  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803AD080 003A8D20  39 61 00 30 */	addi r11, r1, 0x30
+/* 803AD084 003A8D24  48 06 22 F1 */	bl "_savegpr_27"
+/* 803AD088 003A8D28  7C 7B 1B 78 */	mr r27, r3
+/* 803AD08C 003A8D2C  7C 9C 23 78 */	mr r28, r4
+/* 803AD090 003A8D30  7C BD 2B 78 */	mr r29, r5
+/* 803AD094 003A8D34  7C DE 33 78 */	mr r30, r6
+/* 803AD098 003A8D38  7C FF 3B 78 */	mr r31, r7
+/* 803AD09C 003A8D3C  7F 64 DB 78 */	mr r4, r27
+/* 803AD0A0 003A8D40  38 61 00 0C */	addi r3, r1, 0xc
+/* 803AD0A4 003A8D44  4B FD 0B A9 */	bl "__ct__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>FR7OSMutex"
+/* 803AD0A8 003A8D48  80 7B 00 18 */	lwz r3, 0x18(r27)
+/* 803AD0AC 003A8D4C  7F 84 E3 78 */	mr r4, r28
+/* 803AD0B0 003A8D50  38 BB 00 1C */	addi r5, r27, 0x1c
+/* 803AD0B4 003A8D54  38 C0 02 00 */	li r6, 0x200
+/* 803AD0B8 003A8D58  4B FF DD B5 */	bl "detail_OpenFileStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi"
+/* 803AD0BC 003A8D5C  7C 64 1B 78 */	mr r4, r3
+/* 803AD0C0 003A8D60  38 61 00 08 */	addi r3, r1, 8
+/* 803AD0C4 003A8D64  4B FF FF A9 */	bl "__ct__Q46nw4hbm3snd6detail16FileStreamHandleFPQ36nw4hbm2ut10FileStream"
+/* 803AD0C8 003A8D68  38 61 00 08 */	addi r3, r1, 8
+/* 803AD0CC 003A8D6C  4B FF FF 8D */	bl "__opb__Q46nw4hbm3snd6detail16FileStreamHandleCFv"
+/* 803AD0D0 003A8D70  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD0D4 003A8D74  40 82 00 24 */	bne lbl_803AD0F8
+/* 803AD0D8 003A8D78  38 61 00 08 */	addi r3, r1, 8
+/* 803AD0DC 003A8D7C  38 80 FF FF */	li r4, -1
+/* 803AD0E0 003A8D80  4B FF FF 0D */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD0E4 003A8D84  38 61 00 0C */	addi r3, r1, 0xc
+/* 803AD0E8 003A8D88  38 80 FF FF */	li r4, -1
+/* 803AD0EC 003A8D8C  4B FD 0A AD */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803AD0F0 003A8D90  38 60 FF FF */	li r3, -1
+/* 803AD0F4 003A8D94  48 00 01 0C */	b lbl_803AD200
+lbl_803AD0F8:
+/* 803AD0F8 003A8D98  38 61 00 08 */	addi r3, r1, 8
+/* 803AD0FC 003A8D9C  4B FF FE E9 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD100 003A8DA0  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD104 003A8DA4  81 8C 00 50 */	lwz r12, 0x50(r12)
+/* 803AD108 003A8DA8  7D 89 03 A6 */	mtctr r12
+/* 803AD10C 003A8DAC  4E 80 04 21 */	bctrl 
+/* 803AD110 003A8DB0  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD114 003A8DB4  41 82 00 24 */	beq lbl_803AD138
+/* 803AD118 003A8DB8  38 61 00 08 */	addi r3, r1, 8
+/* 803AD11C 003A8DBC  4B FF FE C9 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD120 003A8DC0  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD124 003A8DC4  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 803AD128 003A8DC8  7D 89 03 A6 */	mtctr r12
+/* 803AD12C 003A8DCC  4E 80 04 21 */	bctrl 
+/* 803AD130 003A8DD0  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD134 003A8DD4  40 82 00 24 */	bne lbl_803AD158
+lbl_803AD138:
+/* 803AD138 003A8DD8  38 61 00 08 */	addi r3, r1, 8
+/* 803AD13C 003A8DDC  38 80 FF FF */	li r4, -1
+/* 803AD140 003A8DE0  4B FF FE AD */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD144 003A8DE4  38 61 00 0C */	addi r3, r1, 0xc
+/* 803AD148 003A8DE8  38 80 FF FF */	li r4, -1
+/* 803AD14C 003A8DEC  4B FD 0A 4D */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803AD150 003A8DF0  38 60 FF FF */	li r3, -1
+/* 803AD154 003A8DF4  48 00 00 AC */	b lbl_803AD200
+lbl_803AD158:
+/* 803AD158 003A8DF8  38 61 00 08 */	addi r3, r1, 8
+/* 803AD15C 003A8DFC  4B FF FE 89 */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD160 003A8E00  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD164 003A8E04  7F E4 FB 78 */	mr r4, r31
+/* 803AD168 003A8E08  38 A0 00 00 */	li r5, 0
+/* 803AD16C 003A8E0C  81 8C 00 44 */	lwz r12, 0x44(r12)
+/* 803AD170 003A8E10  7D 89 03 A6 */	mtctr r12
+/* 803AD174 003A8E14  4E 80 04 21 */	bctrl 
+/* 803AD178 003A8E18  38 61 00 08 */	addi r3, r1, 8
+/* 803AD17C 003A8E1C  4B FF FE 61 */	bl "GetFileStream__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD180 003A8E20  90 7B 02 1C */	stw r3, 0x21c(r27)
+/* 803AD184 003A8E24  7F C3 F3 78 */	mr r3, r30
+/* 803AD188 003A8E28  38 80 00 20 */	li r4, 0x20
+/* 803AD18C 003A8E2C  48 00 00 8D */	bl "RoundUp<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUi_Ul"
+/* 803AD190 003A8E30  7C 7F 1B 78 */	mr r31, r3
+/* 803AD194 003A8E34  38 61 00 08 */	addi r3, r1, 8
+/* 803AD198 003A8E38  4B FF FE 4D */	bl "__rf__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD19C 003A8E3C  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD1A0 003A8E40  7F A4 EB 78 */	mr r4, r29
+/* 803AD1A4 003A8E44  7F E5 FB 78 */	mr r5, r31
+/* 803AD1A8 003A8E48  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 803AD1AC 003A8E4C  7D 89 03 A6 */	mtctr r12
+/* 803AD1B0 003A8E50  4E 80 04 21 */	bctrl 
+/* 803AD1B4 003A8E54  38 00 00 00 */	li r0, 0
+/* 803AD1B8 003A8E58  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD1BC 003A8E5C  90 1B 02 1C */	stw r0, 0x21c(r27)
+/* 803AD1C0 003A8E60  40 82 00 24 */	bne lbl_803AD1E4
+/* 803AD1C4 003A8E64  38 61 00 08 */	addi r3, r1, 8
+/* 803AD1C8 003A8E68  38 80 FF FF */	li r4, -1
+/* 803AD1CC 003A8E6C  4B FF FE 21 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD1D0 003A8E70  38 61 00 0C */	addi r3, r1, 0xc
+/* 803AD1D4 003A8E74  38 80 FF FF */	li r4, -1
+/* 803AD1D8 003A8E78  4B FD 09 C1 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803AD1DC 003A8E7C  38 60 FF FF */	li r3, -1
+/* 803AD1E0 003A8E80  48 00 00 20 */	b lbl_803AD200
+lbl_803AD1E4:
+/* 803AD1E4 003A8E84  38 61 00 08 */	addi r3, r1, 8
+/* 803AD1E8 003A8E88  38 80 FF FF */	li r4, -1
+/* 803AD1EC 003A8E8C  4B FF FE 01 */	bl "__dt__Q46nw4hbm3snd6detail16FileStreamHandleFv"
+/* 803AD1F0 003A8E90  38 61 00 0C */	addi r3, r1, 0xc
+/* 803AD1F4 003A8E94  38 80 FF FF */	li r4, -1
+/* 803AD1F8 003A8E98  4B FD 09 A1 */	bl "__dt__Q46nw4hbm2ut6detail18AutoLock<7OSMutex>Fv"
+/* 803AD1FC 003A8E9C  7F C3 F3 78 */	mr r3, r30
+lbl_803AD200:
+/* 803AD200 003A8EA0  39 61 00 30 */	addi r11, r1, 0x30
+/* 803AD204 003A8EA4  48 06 21 BD */	bl "_restgpr_27"
+/* 803AD208 003A8EA8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803AD20C 003A8EAC  7C 08 03 A6 */	mtlr r0
+/* 803AD210 003A8EB0  38 21 00 30 */	addi r1, r1, 0x30
+/* 803AD214 003A8EB4  4E 80 00 20 */	blr 
+
+.global "RoundUp<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUi_Ul"
+"RoundUp<Ul>__Q36nw4hbm2ut36@unnamed@snd_SoundArchiveLoader_cpp@FUlUi_Ul":
+/* 803AD218 003A8EB8  38 04 FF FF */	addi r0, r4, -1
+/* 803AD21C 003A8EBC  7C 64 1A 14 */	add r3, r4, r3
+/* 803AD220 003A8EC0  7C 04 00 F8 */	nor r4, r0, r0
+/* 803AD224 003A8EC4  38 03 FF FF */	addi r0, r3, -1
+/* 803AD228 003A8EC8  7C 83 00 38 */	and r3, r4, r0
+/* 803AD22C 003A8ECC  4E 80 00 20 */	blr 
+
+.global "LoadFile__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPQ36nw4hbm3snd22SoundMemoryAllocatable"
+"LoadFile__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPQ36nw4hbm3snd22SoundMemoryAllocatable":
+/* 803AD230 003A8ED0  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 803AD234 003A8ED4  7C 08 02 A6 */	mflr r0
+/* 803AD238 003A8ED8  2C 05 00 00 */	cmpwi r5, 0
+/* 803AD23C 003A8EDC  90 01 00 34 */	stw r0, 0x34(r1)
+/* 803AD240 003A8EE0  93 E1 00 2C */	stw r31, 0x2c(r1)
+/* 803AD244 003A8EE4  93 C1 00 28 */	stw r30, 0x28(r1)
+/* 803AD248 003A8EE8  7C BE 2B 78 */	mr r30, r5
+/* 803AD24C 003A8EEC  93 A1 00 24 */	stw r29, 0x24(r1)
+/* 803AD250 003A8EF0  7C 9D 23 78 */	mr r29, r4
+/* 803AD254 003A8EF4  93 81 00 20 */	stw r28, 0x20(r1)
+/* 803AD258 003A8EF8  7C 7C 1B 78 */	mr r28, r3
+/* 803AD25C 003A8EFC  40 82 00 20 */	bne lbl_803AD27C
+/* 803AD260 003A8F00  3C 60 80 47 */	lis r3, lbl_80470090@ha
+/* 803AD264 003A8F04  3C A0 80 47 */	lis r5, lbl_804700AC@ha
+/* 803AD268 003A8F08  38 63 00 90 */	addi r3, r3, lbl_80470090@l
+/* 803AD26C 003A8F0C  38 80 01 2B */	li r4, 0x12b
+/* 803AD270 003A8F10  38 A5 00 AC */	addi r5, r5, lbl_804700AC@l
+/* 803AD274 003A8F14  4C C6 31 82 */	crclr 6
+/* 803AD278 003A8F18  4B FD 8D 5D */	bl "Panic__Q36nw4hbm2db6detailFPCciPCce"
+lbl_803AD27C:
+/* 803AD27C 003A8F1C  80 7C 00 18 */	lwz r3, 0x18(r28)
+/* 803AD280 003A8F20  7F A4 EB 78 */	mr r4, r29
+/* 803AD284 003A8F24  38 A1 00 08 */	addi r5, r1, 8
+/* 803AD288 003A8F28  4B FF DB D5 */	bl "detail_ReadFileInfo__Q36nw4hbm3snd12SoundArchiveCFUlPQ46nw4hbm3snd12SoundArchive8FileInfo"
+/* 803AD28C 003A8F2C  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD290 003A8F30  40 82 00 0C */	bne lbl_803AD29C
+/* 803AD294 003A8F34  38 60 00 00 */	li r3, 0
+/* 803AD298 003A8F38  48 00 00 7C */	b lbl_803AD314
+lbl_803AD29C:
+/* 803AD29C 003A8F3C  83 E1 00 08 */	lwz r31, 8(r1)
+/* 803AD2A0 003A8F40  2C 1F 00 00 */	cmpwi r31, 0
+/* 803AD2A4 003A8F44  40 82 00 0C */	bne lbl_803AD2B0
+/* 803AD2A8 003A8F48  38 60 00 00 */	li r3, 0
+/* 803AD2AC 003A8F4C  48 00 00 68 */	b lbl_803AD314
+lbl_803AD2B0:
+/* 803AD2B0 003A8F50  81 9E 00 00 */	lwz r12, 0(r30)
+/* 803AD2B4 003A8F54  7F C3 F3 78 */	mr r3, r30
+/* 803AD2B8 003A8F58  7F E4 FB 78 */	mr r4, r31
+/* 803AD2BC 003A8F5C  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 803AD2C0 003A8F60  7D 89 03 A6 */	mtctr r12
+/* 803AD2C4 003A8F64  4E 80 04 21 */	bctrl 
+/* 803AD2C8 003A8F68  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD2CC 003A8F6C  7C 7E 1B 78 */	mr r30, r3
+/* 803AD2D0 003A8F70  40 82 00 0C */	bne lbl_803AD2DC
+/* 803AD2D4 003A8F74  38 60 00 00 */	li r3, 0
+/* 803AD2D8 003A8F78  48 00 00 3C */	b lbl_803AD314
+lbl_803AD2DC:
+/* 803AD2DC 003A8F7C  7F 83 E3 78 */	mr r3, r28
+/* 803AD2E0 003A8F80  7F A4 EB 78 */	mr r4, r29
+/* 803AD2E4 003A8F84  7F C5 F3 78 */	mr r5, r30
+/* 803AD2E8 003A8F88  7F E6 FB 78 */	mr r6, r31
+/* 803AD2EC 003A8F8C  38 E0 00 00 */	li r7, 0
+/* 803AD2F0 003A8F90  4B FF FD 85 */	bl "ReadFile__Q46nw4hbm3snd6detail18SoundArchiveLoaderFUlPvll"
+/* 803AD2F4 003A8F94  7C 1F 18 40 */	cmplw r31, r3
+/* 803AD2F8 003A8F98  41 82 00 0C */	beq lbl_803AD304
+/* 803AD2FC 003A8F9C  38 60 00 00 */	li r3, 0
+/* 803AD300 003A8FA0  48 00 00 14 */	b lbl_803AD314
+lbl_803AD304:
+/* 803AD304 003A8FA4  7F C3 F3 78 */	mr r3, r30
+/* 803AD308 003A8FA8  7F E4 FB 78 */	mr r4, r31
+/* 803AD30C 003A8FAC  48 02 EF 95 */	bl "DCStoreRange"
+/* 803AD310 003A8FB0  7F C3 F3 78 */	mr r3, r30
+lbl_803AD314:
+/* 803AD314 003A8FB4  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 803AD318 003A8FB8  83 E1 00 2C */	lwz r31, 0x2c(r1)
+/* 803AD31C 003A8FBC  83 C1 00 28 */	lwz r30, 0x28(r1)
+/* 803AD320 003A8FC0  83 A1 00 24 */	lwz r29, 0x24(r1)
+/* 803AD324 003A8FC4  83 81 00 20 */	lwz r28, 0x20(r1)
+/* 803AD328 003A8FC8  7C 08 03 A6 */	mtlr r0
+/* 803AD32C 003A8FCC  38 21 00 30 */	addi r1, r1, 0x30
+/* 803AD330 003A8FD0  4E 80 00 20 */	blr 
+
+.global "Cancel__Q46nw4hbm3snd6detail18SoundArchiveLoaderFv"
+"Cancel__Q46nw4hbm3snd6detail18SoundArchiveLoaderFv":
+/* 803AD334 003A8FD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803AD338 003A8FD8  7C 08 02 A6 */	mflr r0
+/* 803AD33C 003A8FDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803AD340 003A8FE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803AD344 003A8FE4  7C 7F 1B 78 */	mr r31, r3
+/* 803AD348 003A8FE8  80 03 02 1C */	lwz r0, 0x21c(r3)
+/* 803AD34C 003A8FEC  2C 00 00 00 */	cmpwi r0, 0
+/* 803AD350 003A8FF0  41 82 00 70 */	beq lbl_803AD3C0
+/* 803AD354 003A8FF4  7C 03 03 78 */	mr r3, r0
+/* 803AD358 003A8FF8  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD35C 003A8FFC  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 803AD360 003A9000  7D 89 03 A6 */	mtctr r12
+/* 803AD364 003A9004  4E 80 04 21 */	bctrl 
+/* 803AD368 003A9008  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD36C 003A900C  41 82 00 54 */	beq lbl_803AD3C0
+/* 803AD370 003A9010  80 7F 02 1C */	lwz r3, 0x21c(r31)
+/* 803AD374 003A9014  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD378 003A9018  81 8C 00 28 */	lwz r12, 0x28(r12)
+/* 803AD37C 003A901C  7D 89 03 A6 */	mtctr r12
+/* 803AD380 003A9020  4E 80 04 21 */	bctrl 
+/* 803AD384 003A9024  2C 03 00 00 */	cmpwi r3, 0
+/* 803AD388 003A9028  41 82 00 24 */	beq lbl_803AD3AC
+/* 803AD38C 003A902C  80 7F 02 1C */	lwz r3, 0x21c(r31)
+/* 803AD390 003A9030  38 80 00 00 */	li r4, 0
+/* 803AD394 003A9034  38 A0 00 00 */	li r5, 0
+/* 803AD398 003A9038  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD39C 003A903C  81 8C 00 4C */	lwz r12, 0x4c(r12)
+/* 803AD3A0 003A9040  7D 89 03 A6 */	mtctr r12
+/* 803AD3A4 003A9044  4E 80 04 21 */	bctrl 
+/* 803AD3A8 003A9048  48 00 00 18 */	b lbl_803AD3C0
+lbl_803AD3AC:
+/* 803AD3AC 003A904C  80 7F 02 1C */	lwz r3, 0x21c(r31)
+/* 803AD3B0 003A9050  81 83 00 00 */	lwz r12, 0(r3)
+/* 803AD3B4 003A9054  81 8C 00 48 */	lwz r12, 0x48(r12)
+/* 803AD3B8 003A9058  7D 89 03 A6 */	mtctr r12
+/* 803AD3BC 003A905C  4E 80 04 21 */	bctrl 
+lbl_803AD3C0:
+/* 803AD3C0 003A9060  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803AD3C4 003A9064  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803AD3C8 003A9068  7C 08 03 A6 */	mtlr r0
+/* 803AD3CC 003A906C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803AD3D0 003A9070  4E 80 00 20 */	blr 
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global lbl_80470090
+lbl_80470090:
+	.incbin "baserom.dol", 0x46C190, 0x1C
+.global lbl_804700AC
+lbl_804700AC:
+	.incbin "baserom.dol", 0x46C1AC, 0x2C

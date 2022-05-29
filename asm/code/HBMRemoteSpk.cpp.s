@@ -1,0 +1,670 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk"
+"SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk":
+/* 80385224 00380EC4  90 6D C5 18 */	stw r3, "spInstance__Q210homebutton9RemoteSpk"-_SDA_BASE_(r13)
+/* 80385228 00380EC8  4E 80 00 20 */	blr 
+
+.global "GetInstance__Q210homebutton9RemoteSpkFv"
+"GetInstance__Q210homebutton9RemoteSpkFv":
+/* 8038522C 00380ECC  80 6D C5 18 */	lwz r3, "spInstance__Q210homebutton9RemoteSpk"-_SDA_BASE_(r13)
+/* 80385230 00380ED0  4E 80 00 20 */	blr 
+
+.global "GetPCMFromSeID__Q210homebutton9RemoteSpkFiRPsRi"
+"GetPCMFromSeID__Q210homebutton9RemoteSpkFiRPsRi":
+/* 80385234 00380ED4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80385238 00380ED8  7C 08 02 A6 */	mflr r0
+/* 8038523C 00380EDC  38 63 01 D0 */	addi r3, r3, 0x1d0
+/* 80385240 00380EE0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80385244 00380EE4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80385248 00380EE8  7C DF 33 78 */	mr r31, r6
+/* 8038524C 00380EEC  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80385250 00380EF0  7C BE 2B 78 */	mr r30, r5
+/* 80385254 00380EF4  38 A1 00 08 */	addi r5, r1, 8
+/* 80385258 00380EF8  4B FB 0C 69 */	bl "ARCFastOpen"
+/* 8038525C 00380EFC  38 61 00 08 */	addi r3, r1, 8
+/* 80385260 00380F00  4B FB 0F 15 */	bl "ARCGetStartAddrInMem"
+/* 80385264 00380F04  90 7E 00 00 */	stw r3, 0(r30)
+/* 80385268 00380F08  38 61 00 08 */	addi r3, r1, 8
+/* 8038526C 00380F0C  4B FB 0F 1D */	bl "ARCGetLength"
+/* 80385270 00380F10  90 7F 00 00 */	stw r3, 0(r31)
+/* 80385274 00380F14  38 61 00 08 */	addi r3, r1, 8
+/* 80385278 00380F18  4B FB 0F 19 */	bl "ARCClose"
+/* 8038527C 00380F1C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80385280 00380F20  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80385284 00380F24  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80385288 00380F28  7C 08 03 A6 */	mtlr r0
+/* 8038528C 00380F2C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80385290 00380F30  4E 80 00 20 */	blr 
+
+.global "MakeVolumeData__10homebuttonFPCsPsiUl"
+"MakeVolumeData__10homebuttonFPCsPsiUl":
+/* 80385294 00380F34  28 06 00 28 */	cmplwi r6, 0x28
+/* 80385298 00380F38  39 80 00 28 */	li r12, 0x28
+/* 8038529C 00380F3C  41 81 00 08 */	bgt lbl_803852A4
+/* 803852A0 00380F40  7C CC 33 78 */	mr r12, r6
+lbl_803852A4:
+/* 803852A4 00380F44  28 0C 00 00 */	cmplwi r12, 0
+/* 803852A8 00380F48  3C E0 66 66 */	lis r7, 0x66666667@ha
+/* 803852AC 00380F4C  39 47 66 67 */	addi r10, r7, 0x66666667@l
+/* 803852B0 00380F50  40 81 00 C0 */	ble lbl_80385370
+/* 803852B4 00380F54  55 80 F0 BF */	rlwinm. r0, r12, 0x1e, 2, 0x1f
+/* 803852B8 00380F58  7C 09 03 A6 */	mtctr r0
+/* 803852BC 00380F5C  41 82 00 88 */	beq lbl_80385344
+lbl_803852C0:
+/* 803852C0 00380F60  A9 03 00 00 */	lha r8, 0(r3)
+/* 803852C4 00380F64  7C E8 29 D6 */	mullw r7, r8, r5
+/* 803852C8 00380F68  A9 03 00 02 */	lha r8, 2(r3)
+/* 803852CC 00380F6C  7D 6A 38 96 */	mulhw r11, r10, r7
+/* 803852D0 00380F70  7C E8 29 D6 */	mullw r7, r8, r5
+/* 803852D4 00380F74  A9 03 00 04 */	lha r8, 4(r3)
+/* 803852D8 00380F78  7D 60 16 70 */	srawi r0, r11, 2
+/* 803852DC 00380F7C  54 09 0F FE */	srwi r9, r0, 0x1f
+/* 803852E0 00380F80  7D 6A 38 96 */	mulhw r11, r10, r7
+/* 803852E4 00380F84  7C 00 4A 14 */	add r0, r0, r9
+/* 803852E8 00380F88  B0 04 00 00 */	sth r0, 0(r4)
+/* 803852EC 00380F8C  7C E8 29 D6 */	mullw r7, r8, r5
+/* 803852F0 00380F90  A9 03 00 06 */	lha r8, 6(r3)
+/* 803852F4 00380F94  7D 60 16 70 */	srawi r0, r11, 2
+/* 803852F8 00380F98  38 63 00 08 */	addi r3, r3, 8
+/* 803852FC 00380F9C  54 09 0F FE */	srwi r9, r0, 0x1f
+/* 80385300 00380FA0  7D 6A 38 96 */	mulhw r11, r10, r7
+/* 80385304 00380FA4  7C 00 4A 14 */	add r0, r0, r9
+/* 80385308 00380FA8  B0 04 00 02 */	sth r0, 2(r4)
+/* 8038530C 00380FAC  7D 60 16 70 */	srawi r0, r11, 2
+/* 80385310 00380FB0  7C E8 29 D6 */	mullw r7, r8, r5
+/* 80385314 00380FB4  54 09 0F FE */	srwi r9, r0, 0x1f
+/* 80385318 00380FB8  7C 00 4A 14 */	add r0, r0, r9
+/* 8038531C 00380FBC  B0 04 00 04 */	sth r0, 4(r4)
+/* 80385320 00380FC0  7D 6A 38 96 */	mulhw r11, r10, r7
+/* 80385324 00380FC4  7D 60 16 70 */	srawi r0, r11, 2
+/* 80385328 00380FC8  54 09 0F FE */	srwi r9, r0, 0x1f
+/* 8038532C 00380FCC  7C 00 4A 14 */	add r0, r0, r9
+/* 80385330 00380FD0  B0 04 00 06 */	sth r0, 6(r4)
+/* 80385334 00380FD4  38 84 00 08 */	addi r4, r4, 8
+/* 80385338 00380FD8  42 00 FF 88 */	bdnz lbl_803852C0
+/* 8038533C 00380FDC  71 8C 00 03 */	andi. r12, r12, 3
+/* 80385340 00380FE0  41 82 00 30 */	beq lbl_80385370
+lbl_80385344:
+/* 80385344 00380FE4  7D 89 03 A6 */	mtctr r12
+lbl_80385348:
+/* 80385348 00380FE8  A9 03 00 00 */	lha r8, 0(r3)
+/* 8038534C 00380FEC  38 63 00 02 */	addi r3, r3, 2
+/* 80385350 00380FF0  7C E8 29 D6 */	mullw r7, r8, r5
+/* 80385354 00380FF4  7D 6A 38 96 */	mulhw r11, r10, r7
+/* 80385358 00380FF8  7D 60 16 70 */	srawi r0, r11, 2
+/* 8038535C 00380FFC  54 09 0F FE */	srwi r9, r0, 0x1f
+/* 80385360 00381000  7C 00 4A 14 */	add r0, r0, r9
+/* 80385364 00381004  B0 04 00 00 */	sth r0, 0(r4)
+/* 80385368 00381008  38 84 00 02 */	addi r4, r4, 2
+/* 8038536C 0038100C  42 00 FF DC */	bdnz lbl_80385348
+lbl_80385370:
+/* 80385370 00381010  28 06 00 28 */	cmplwi r6, 0x28
+/* 80385374 00381014  40 81 00 0C */	ble lbl_80385380
+/* 80385378 00381018  38 60 00 00 */	li r3, 0
+/* 8038537C 0038101C  4E 80 00 20 */	blr 
+lbl_80385380:
+/* 80385380 00381020  20 A6 00 28 */	subfic r5, r6, 0x28
+/* 80385384 00381024  38 60 00 00 */	li r3, 0
+/* 80385388 00381028  28 05 00 00 */	cmplwi r5, 0
+/* 8038538C 0038102C  40 81 00 50 */	ble lbl_803853DC
+/* 80385390 00381030  54 A0 E8 FF */	rlwinm. r0, r5, 0x1d, 3, 0x1f
+/* 80385394 00381034  7C 09 03 A6 */	mtctr r0
+/* 80385398 00381038  41 82 00 34 */	beq lbl_803853CC
+lbl_8038539C:
+/* 8038539C 0038103C  B0 64 00 00 */	sth r3, 0(r4)
+/* 803853A0 00381040  B0 64 00 02 */	sth r3, 2(r4)
+/* 803853A4 00381044  B0 64 00 04 */	sth r3, 4(r4)
+/* 803853A8 00381048  B0 64 00 06 */	sth r3, 6(r4)
+/* 803853AC 0038104C  B0 64 00 08 */	sth r3, 8(r4)
+/* 803853B0 00381050  B0 64 00 0A */	sth r3, 0xa(r4)
+/* 803853B4 00381054  B0 64 00 0C */	sth r3, 0xc(r4)
+/* 803853B8 00381058  B0 64 00 0E */	sth r3, 0xe(r4)
+/* 803853BC 0038105C  38 84 00 10 */	addi r4, r4, 0x10
+/* 803853C0 00381060  42 00 FF DC */	bdnz lbl_8038539C
+/* 803853C4 00381064  70 A5 00 07 */	andi. r5, r5, 7
+/* 803853C8 00381068  41 82 00 14 */	beq lbl_803853DC
+lbl_803853CC:
+/* 803853CC 0038106C  7C A9 03 A6 */	mtctr r5
+lbl_803853D0:
+/* 803853D0 00381070  B0 64 00 00 */	sth r3, 0(r4)
+/* 803853D4 00381074  38 84 00 02 */	addi r4, r4, 2
+/* 803853D8 00381078  42 00 FF F8 */	bdnz lbl_803853D0
+lbl_803853DC:
+/* 803853DC 0038107C  38 60 00 01 */	li r3, 1
+/* 803853E0 00381080  4E 80 00 20 */	blr 
+
+.global "UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"
+"UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext":
+/* 803853E4 00381084  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 803853E8 00381088  7C 08 02 A6 */	mflr r0
+/* 803853EC 0038108C  90 01 00 94 */	stw r0, 0x94(r1)
+/* 803853F0 00381090  39 61 00 90 */	addi r11, r1, 0x90
+/* 803853F4 00381094  48 08 9F 81 */	bl "_savegpr_27"
+/* 803853F8 00381098  4B FF FE 35 */	bl "GetInstance__Q210homebutton9RemoteSpkFv"
+/* 803853FC 0038109C  2C 03 00 00 */	cmpwi r3, 0
+/* 80385400 003810A0  41 82 01 00 */	beq lbl_80385500
+/* 80385404 003810A4  4B FF FE 29 */	bl "GetInstance__Q210homebutton9RemoteSpkFv"
+/* 80385408 003810A8  7C 7D 1B 78 */	mr r29, r3
+/* 8038540C 003810AC  3B 80 00 00 */	li r28, 0
+/* 80385410 003810B0  3B E0 00 00 */	li r31, 0
+/* 80385414 003810B4  3B C0 FF FF */	li r30, -1
+lbl_80385418:
+/* 80385418 003810B8  80 1D 00 50 */	lwz r0, 0x50(r29)
+/* 8038541C 003810BC  2C 00 00 00 */	cmpwi r0, 0
+/* 80385420 003810C0  41 82 00 D0 */	beq lbl_803854F0
+/* 80385424 003810C4  7F 83 E3 78 */	mr r3, r28
+/* 80385428 003810C8  48 06 F9 29 */	bl "WPADIsSpeakerEnabled"
+/* 8038542C 003810CC  2C 03 00 00 */	cmpwi r3, 0
+/* 80385430 003810D0  41 82 00 C0 */	beq lbl_803854F0
+/* 80385434 003810D4  48 05 B0 29 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 80385438 003810D8  7C 7B 1B 78 */	mr r27, r3
+/* 8038543C 003810DC  7F 83 E3 78 */	mr r3, r28
+/* 80385440 003810E0  48 07 11 2D */	bl "WPADCanSendStreamData"
+/* 80385444 003810E4  2C 03 00 00 */	cmpwi r3, 0
+/* 80385448 003810E8  41 82 00 80 */	beq lbl_803854C8
+/* 8038544C 003810EC  88 BD 00 5D */	lbz r5, 0x5d(r29)
+/* 80385450 003810F0  38 81 00 20 */	addi r4, r1, 0x20
+/* 80385454 003810F4  80 1D 00 54 */	lwz r0, 0x54(r29)
+/* 80385458 003810F8  80 7D 00 50 */	lwz r3, 0x50(r29)
+/* 8038545C 003810FC  7C A5 07 74 */	extsb r5, r5
+/* 80385460 00381100  54 06 F8 7E */	srwi r6, r0, 1
+/* 80385464 00381104  4B FF FE 31 */	bl "MakeVolumeData__10homebuttonFPCsPsiUl"
+/* 80385468 00381108  88 1D 00 5C */	lbz r0, 0x5c(r29)
+/* 8038546C 0038110C  38 7D 00 30 */	addi r3, r29, 0x30
+/* 80385470 00381110  38 A1 00 20 */	addi r5, r1, 0x20
+/* 80385474 00381114  38 E1 00 08 */	addi r7, r1, 8
+/* 80385478 00381118  7C 00 00 34 */	cntlzw r0, r0
+/* 8038547C 0038111C  38 C0 00 28 */	li r6, 0x28
+/* 80385480 00381120  54 04 D9 7E */	srwi r4, r0, 5
+/* 80385484 00381124  48 06 B5 B1 */	bl "WENCGetEncodeData"
+/* 80385488 00381128  7F 83 E3 78 */	mr r3, r28
+/* 8038548C 0038112C  38 81 00 08 */	addi r4, r1, 8
+/* 80385490 00381130  38 A0 00 14 */	li r5, 0x14
+/* 80385494 00381134  48 07 11 5D */	bl "WPADSendStreamData"
+/* 80385498 00381138  9B FD 00 5C */	stb r31, 0x5c(r29)
+/* 8038549C 0038113C  9B FD 00 5E */	stb r31, 0x5e(r29)
+/* 803854A0 00381140  80 7D 00 50 */	lwz r3, 0x50(r29)
+/* 803854A4 00381144  38 03 00 50 */	addi r0, r3, 0x50
+/* 803854A8 00381148  90 1D 00 50 */	stw r0, 0x50(r29)
+/* 803854AC 0038114C  80 7D 00 54 */	lwz r3, 0x54(r29)
+/* 803854B0 00381150  34 03 FF B0 */	addic. r0, r3, -80
+/* 803854B4 00381154  90 1D 00 54 */	stw r0, 0x54(r29)
+/* 803854B8 00381158  41 81 00 30 */	bgt lbl_803854E8
+/* 803854BC 0038115C  93 DD 00 58 */	stw r30, 0x58(r29)
+/* 803854C0 00381160  93 FD 00 50 */	stw r31, 0x50(r29)
+/* 803854C4 00381164  48 00 00 24 */	b lbl_803854E8
+lbl_803854C8:
+/* 803854C8 00381168  88 7D 00 5E */	lbz r3, 0x5e(r29)
+/* 803854CC 0038116C  38 63 00 01 */	addi r3, r3, 1
+/* 803854D0 00381170  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 803854D4 00381174  98 7D 00 5E */	stb r3, 0x5e(r29)
+/* 803854D8 00381178  7C 00 07 74 */	extsb r0, r0
+/* 803854DC 0038117C  2C 00 00 3C */	cmpwi r0, 0x3c
+/* 803854E0 00381180  40 81 00 08 */	ble lbl_803854E8
+/* 803854E4 00381184  93 FD 00 50 */	stw r31, 0x50(r29)
+lbl_803854E8:
+/* 803854E8 00381188  7F 63 DB 78 */	mr r3, r27
+/* 803854EC 0038118C  48 05 AF 99 */	bl "OSRestoreInterrupts"
+lbl_803854F0:
+/* 803854F0 00381190  3B 9C 00 01 */	addi r28, r28, 1
+/* 803854F4 00381194  3B BD 00 68 */	addi r29, r29, 0x68
+/* 803854F8 00381198  2C 1C 00 04 */	cmpwi r28, 4
+/* 803854FC 0038119C  41 80 FF 1C */	blt lbl_80385418
+lbl_80385500:
+/* 80385500 003811A0  39 61 00 90 */	addi r11, r1, 0x90
+/* 80385504 003811A4  48 08 9E BD */	bl "_restgpr_27"
+/* 80385508 003811A8  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 8038550C 003811AC  7C 08 03 A6 */	mtlr r0
+/* 80385510 003811B0  38 21 00 90 */	addi r1, r1, 0x90
+/* 80385514 003811B4  4E 80 00 20 */	blr 
+
+.global "ClearPcm__Q210homebutton9RemoteSpkFv"
+"ClearPcm__Q210homebutton9RemoteSpkFv":
+/* 80385518 003811B8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8038551C 003811BC  7C 08 02 A6 */	mflr r0
+/* 80385520 003811C0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385524 003811C4  4B FF FD 09 */	bl "GetInstance__Q210homebutton9RemoteSpkFv"
+/* 80385528 003811C8  38 80 FF FF */	li r4, -1
+/* 8038552C 003811CC  38 00 00 00 */	li r0, 0
+/* 80385530 003811D0  90 83 00 58 */	stw r4, 0x58(r3)
+/* 80385534 003811D4  90 03 00 50 */	stw r0, 0x50(r3)
+/* 80385538 003811D8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8038553C 003811DC  7C 08 03 A6 */	mtlr r0
+/* 80385540 003811E0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385544 003811E4  4E 80 00 20 */	blr 
+
+.global "__ct__Q210homebutton9RemoteSpkFPv"
+"__ct__Q210homebutton9RemoteSpkFPv":
+/* 80385548 003811E8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8038554C 003811EC  7C 08 02 A6 */	mflr r0
+/* 80385550 003811F0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80385554 003811F4  39 61 00 20 */	addi r11, r1, 0x20
+/* 80385558 003811F8  48 08 9E 19 */	bl "_savegpr_26"
+/* 8038555C 003811FC  3C A0 80 47 */	lis r5, "__vt__Q210homebutton9RemoteSpk"@ha
+/* 80385560 00381200  7C 7A 1B 78 */	mr r26, r3
+/* 80385564 00381204  38 A5 94 28 */	addi r5, r5, "__vt__Q210homebutton9RemoteSpk"@l
+/* 80385568 00381208  7C 9B 23 78 */	mr r27, r4
+/* 8038556C 0038120C  90 A3 01 F0 */	stw r5, 0x1f0(r3)
+/* 80385570 00381210  4B FF FC B5 */	bl "SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk"
+/* 80385574 00381214  2C 1B 00 00 */	cmpwi r27, 0
+/* 80385578 00381218  41 82 00 24 */	beq lbl_8038559C
+/* 8038557C 0038121C  7F 63 DB 78 */	mr r3, r27
+/* 80385580 00381220  38 9A 01 D0 */	addi r4, r26, 0x1d0
+/* 80385584 00381224  4B FB 08 9D */	bl "ARCInitHandle"
+/* 80385588 00381228  7C 03 00 D0 */	neg r0, r3
+/* 8038558C 0038122C  7C 00 1B 78 */	or r0, r0, r3
+/* 80385590 00381230  54 00 0F FE */	srwi r0, r0, 0x1f
+/* 80385594 00381234  98 1A 01 EC */	stb r0, 0x1ec(r26)
+/* 80385598 00381238  48 00 00 0C */	b lbl_803855A4
+lbl_8038559C:
+/* 8038559C 0038123C  38 00 00 00 */	li r0, 0
+/* 803855A0 00381240  98 1A 01 EC */	stb r0, 0x1ec(r26)
+lbl_803855A4:
+/* 803855A4 00381244  38 7A 01 A0 */	addi r3, r26, 0x1a0
+/* 803855A8 00381248  48 05 5D 99 */	bl "OSCreateAlarm"
+/* 803855AC 0038124C  7F 5C D3 78 */	mr r28, r26
+/* 803855B0 00381250  3B 60 00 00 */	li r27, 0
+/* 803855B4 00381254  3B A0 00 00 */	li r29, 0
+/* 803855B8 00381258  3B C0 FF FF */	li r30, -1
+/* 803855BC 0038125C  3B E0 00 01 */	li r31, 1
+lbl_803855C0:
+/* 803855C0 00381260  7F 83 E3 78 */	mr r3, r28
+/* 803855C4 00381264  48 05 5D 7D */	bl "OSCreateAlarm"
+/* 803855C8 00381268  93 BC 00 50 */	stw r29, 0x50(r28)
+/* 803855CC 0038126C  3B 7B 00 01 */	addi r27, r27, 1
+/* 803855D0 00381270  2C 1B 00 04 */	cmpwi r27, 4
+/* 803855D4 00381274  93 DC 00 58 */	stw r30, 0x58(r28)
+/* 803855D8 00381278  9B FC 00 5C */	stb r31, 0x5c(r28)
+/* 803855DC 0038127C  9B FC 00 62 */	stb r31, 0x62(r28)
+/* 803855E0 00381280  3B 9C 00 68 */	addi r28, r28, 0x68
+/* 803855E4 00381284  41 80 FF DC */	blt lbl_803855C0
+/* 803855E8 00381288  39 61 00 20 */	addi r11, r1, 0x20
+/* 803855EC 0038128C  7F 43 D3 78 */	mr r3, r26
+/* 803855F0 00381290  48 08 9D CD */	bl "_restgpr_26"
+/* 803855F4 00381294  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 803855F8 00381298  7C 08 03 A6 */	mtlr r0
+/* 803855FC 0038129C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80385600 003812A0  4E 80 00 20 */	blr 
+
+.global "__dt__Q210homebutton9RemoteSpkFv"
+"__dt__Q210homebutton9RemoteSpkFv":
+/* 80385604 003812A4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80385608 003812A8  7C 08 02 A6 */	mflr r0
+/* 8038560C 003812AC  2C 03 00 00 */	cmpwi r3, 0
+/* 80385610 003812B0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80385614 003812B4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80385618 003812B8  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8038561C 003812BC  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80385620 003812C0  7C 9D 23 78 */	mr r29, r4
+/* 80385624 003812C4  93 81 00 10 */	stw r28, 0x10(r1)
+/* 80385628 003812C8  7C 7C 1B 78 */	mr r28, r3
+/* 8038562C 003812CC  41 82 00 58 */	beq lbl_80385684
+/* 80385630 003812D0  3C 80 80 47 */	lis r4, "__vt__Q210homebutton9RemoteSpk"@ha
+/* 80385634 003812D4  38 84 94 28 */	addi r4, r4, "__vt__Q210homebutton9RemoteSpk"@l
+/* 80385638 003812D8  90 83 01 F0 */	stw r4, 0x1f0(r3)
+/* 8038563C 003812DC  38 60 00 00 */	li r3, 0
+/* 80385640 003812E0  4B FF FB E5 */	bl "SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk"
+/* 80385644 003812E4  38 00 00 00 */	li r0, 0
+/* 80385648 003812E8  38 7C 01 A0 */	addi r3, r28, 0x1a0
+/* 8038564C 003812EC  98 1C 01 EC */	stb r0, 0x1ec(r28)
+/* 80385650 003812F0  48 05 60 45 */	bl "OSCancelAlarm"
+/* 80385654 003812F4  7F 9F E3 78 */	mr r31, r28
+/* 80385658 003812F8  3B C0 00 00 */	li r30, 0
+lbl_8038565C:
+/* 8038565C 003812FC  7F E3 FB 78 */	mr r3, r31
+/* 80385660 00381300  48 05 60 35 */	bl "OSCancelAlarm"
+/* 80385664 00381304  3B DE 00 01 */	addi r30, r30, 1
+/* 80385668 00381308  3B FF 00 68 */	addi r31, r31, 0x68
+/* 8038566C 0038130C  2C 1E 00 04 */	cmpwi r30, 4
+/* 80385670 00381310  41 80 FF EC */	blt lbl_8038565C
+/* 80385674 00381314  2C 1D 00 00 */	cmpwi r29, 0
+/* 80385678 00381318  40 81 00 0C */	ble lbl_80385684
+/* 8038567C 0038131C  7F 83 E3 78 */	mr r3, r28
+/* 80385680 00381320  4B ED 49 2D */	bl "__dl__FPv"
+lbl_80385684:
+/* 80385684 00381324  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80385688 00381328  7F 83 E3 78 */	mr r3, r28
+/* 8038568C 0038132C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80385690 00381330  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80385694 00381334  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80385698 00381338  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8038569C 0038133C  7C 08 03 A6 */	mtlr r0
+/* 803856A0 00381340  38 21 00 20 */	addi r1, r1, 0x20
+/* 803856A4 00381344  4E 80 00 20 */	blr 
+
+.global "Start__Q210homebutton9RemoteSpkFv"
+"Start__Q210homebutton9RemoteSpkFv":
+/* 803856A8 00381348  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803856AC 0038134C  7C 08 02 A6 */	mflr r0
+/* 803856B0 00381350  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803856B4 00381354  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803856B8 00381358  7C 7F 1B 78 */	mr r31, r3
+/* 803856BC 0038135C  88 03 01 EC */	lbz r0, 0x1ec(r3)
+/* 803856C0 00381360  2C 00 00 00 */	cmpwi r0, 0
+/* 803856C4 00381364  41 82 00 64 */	beq lbl_80385728
+/* 803856C8 00381368  38 63 01 A0 */	addi r3, r3, 0x1a0
+/* 803856CC 0038136C  48 05 5C 75 */	bl "OSCreateAlarm"
+/* 803856D0 00381370  48 05 E9 49 */	bl "OSGetTime"
+/* 803856D4 00381374  3C C0 80 00 */	lis r6, 0x800000F8@ha
+/* 803856D8 00381378  3C A0 43 1C */	lis r5, 0x431BDE83@ha
+/* 803856DC 0038137C  80 06 00 F8 */	lwz r0, 0x800000F8@l(r6)
+/* 803856E0 00381380  3C C0 10 62 */	lis r6, 0x10624DD3@ha
+/* 803856E4 00381384  39 46 4D D3 */	addi r10, r6, 0x10624DD3@l
+/* 803856E8 00381388  3D 20 80 38 */	lis r9, "UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@ha
+/* 803856EC 0038138C  54 00 F0 BE */	srwi r0, r0, 2
+/* 803856F0 00381390  38 A5 DE 83 */	addi r5, r5, 0x431BDE83@l
+/* 803856F4 00381394  7D 05 00 16 */	mulhwu r8, r5, r0
+/* 803856F8 00381398  3C E0 00 66 */	lis r7, 0x0065B9AB@ha
+/* 803856FC 0038139C  7C 86 23 78 */	mr r6, r4
+/* 80385700 003813A0  38 07 B9 AB */	addi r0, r7, 0x0065B9AB@l
+/* 80385704 003813A4  7C 65 1B 78 */	mr r5, r3
+/* 80385708 003813A8  38 7F 01 A0 */	addi r3, r31, 0x1a0
+/* 8038570C 003813AC  55 04 8B FE */	srwi r4, r8, 0xf
+/* 80385710 003813B0  39 29 53 E4 */	addi r9, r9, "UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@l
+/* 80385714 003813B4  7C 04 01 D6 */	mullw r0, r4, r0
+/* 80385718 003813B8  38 E0 00 00 */	li r7, 0
+/* 8038571C 003813BC  7C 0A 00 16 */	mulhwu r0, r10, r0
+/* 80385720 003813C0  54 08 BA 7E */	srwi r8, r0, 9
+/* 80385724 003813C4  48 05 5E ED */	bl "OSSetPeriodicAlarm"
+lbl_80385728:
+/* 80385728 003813C8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8038572C 003813CC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80385730 003813D0  7C 08 03 A6 */	mtlr r0
+/* 80385734 003813D4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385738 003813D8  4E 80 00 20 */	blr 
+
+.global "Stop__Q210homebutton9RemoteSpkFv"
+"Stop__Q210homebutton9RemoteSpkFv":
+/* 8038573C 003813DC  38 63 01 A0 */	addi r3, r3, 0x1a0
+/* 80385740 003813E0  48 05 5F 54 */	b "OSCancelAlarm"
+
+.global "DelaySpeakerOnCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"
+"DelaySpeakerOnCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext":
+/* 80385744 003813E4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80385748 003813E8  7C 08 02 A6 */	mflr r0
+/* 8038574C 003813EC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385750 003813F0  48 05 63 75 */	bl "OSGetAlarmUserData"
+/* 80385754 003813F4  3C A0 80 38 */	lis r5, "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"@ha
+/* 80385758 003813F8  38 80 00 01 */	li r4, 1
+/* 8038575C 003813FC  38 A5 57 74 */	addi r5, r5, "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"@l
+/* 80385760 00381400  48 06 F6 35 */	bl "WPADControlSpeaker"
+/* 80385764 00381404  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80385768 00381408  7C 08 03 A6 */	mtlr r0
+/* 8038576C 0038140C  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385770 00381410  4E 80 00 20 */	blr 
+
+.global "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"
+"SpeakerOnCallback__Q210homebutton9RemoteSpkFll":
+/* 80385774 00381414  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80385778 00381418  7C 08 02 A6 */	mflr r0
+/* 8038577C 0038141C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385780 00381420  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80385784 00381424  7C 9F 23 78 */	mr r31, r4
+/* 80385788 00381428  93 C1 00 08 */	stw r30, 8(r1)
+/* 8038578C 0038142C  7C 7E 1B 78 */	mr r30, r3
+/* 80385790 00381430  4B FF FA 9D */	bl "GetInstance__Q210homebutton9RemoteSpkFv"
+/* 80385794 00381434  2C 03 00 00 */	cmpwi r3, 0
+/* 80385798 00381438  41 82 00 9C */	beq lbl_80385834
+/* 8038579C 0038143C  2C 1F FF FF */	cmpwi r31, -1
+/* 803857A0 00381440  41 82 00 94 */	beq lbl_80385834
+/* 803857A4 00381444  40 80 00 10 */	bge lbl_803857B4
+/* 803857A8 00381448  2C 1F FF FE */	cmpwi r31, -2
+/* 803857AC 0038144C  40 80 00 38 */	bge lbl_803857E4
+/* 803857B0 00381450  48 00 00 84 */	b lbl_80385834
+lbl_803857B4:
+/* 803857B4 00381454  2C 1F 00 01 */	cmpwi r31, 1
+/* 803857B8 00381458  40 80 00 7C */	bge lbl_80385834
+/* 803857BC 0038145C  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 803857C0 00381460  3C A0 80 38 */	lis r5, "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"@ha
+/* 803857C4 00381464  38 C0 00 01 */	li r6, 1
+/* 803857C8 00381468  38 A5 58 7C */	addi r5, r5, "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"@l
+/* 803857CC 0038146C  7C 83 02 14 */	add r4, r3, r0
+/* 803857D0 00381470  7F C3 F3 78 */	mr r3, r30
+/* 803857D4 00381474  98 C4 00 5C */	stb r6, 0x5c(r4)
+/* 803857D8 00381478  38 80 00 04 */	li r4, 4
+/* 803857DC 0038147C  48 06 F5 B9 */	bl "WPADControlSpeaker"
+/* 803857E0 00381480  48 00 00 54 */	b lbl_80385834
+lbl_803857E4:
+/* 803857E4 00381484  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 803857E8 00381488  7F C4 F3 78 */	mr r4, r30
+/* 803857EC 0038148C  7F E3 02 14 */	add r31, r3, r0
+/* 803857F0 00381490  7F E3 FB 78 */	mr r3, r31
+/* 803857F4 00381494  48 05 62 C9 */	bl "OSSetAlarmUserData"
+/* 803857F8 00381498  7F E3 FB 78 */	mr r3, r31
+/* 803857FC 0038149C  48 05 5E 99 */	bl "OSCancelAlarm"
+/* 80385800 003814A0  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 80385804 003814A4  3C E0 80 38 */	lis r7, "DelaySpeakerOnCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@ha
+/* 80385808 003814A8  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 8038580C 003814AC  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 80385810 003814B0  38 83 4D D3 */	addi r4, r3, 0x10624DD3@l
+/* 80385814 003814B4  38 E7 57 44 */	addi r7, r7, "DelaySpeakerOnCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@l
+/* 80385818 003814B8  54 00 F0 BE */	srwi r0, r0, 2
+/* 8038581C 003814BC  7F E3 FB 78 */	mr r3, r31
+/* 80385820 003814C0  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 80385824 003814C4  38 A0 00 00 */	li r5, 0
+/* 80385828 003814C8  54 00 D1 BE */	srwi r0, r0, 6
+/* 8038582C 003814CC  1C C0 00 32 */	mulli r6, r0, 0x32
+/* 80385830 003814D0  48 05 5D 71 */	bl "OSSetAlarm"
+lbl_80385834:
+/* 80385834 003814D4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80385838 003814D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8038583C 003814DC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80385840 003814E0  7C 08 03 A6 */	mtlr r0
+/* 80385844 003814E4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385848 003814E8  4E 80 00 20 */	blr 
+
+.global "DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"
+"DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext":
+/* 8038584C 003814EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80385850 003814F0  7C 08 02 A6 */	mflr r0
+/* 80385854 003814F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385858 003814F8  48 05 62 6D */	bl "OSGetAlarmUserData"
+/* 8038585C 003814FC  3C A0 80 38 */	lis r5, "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"@ha
+/* 80385860 00381500  38 80 00 04 */	li r4, 4
+/* 80385864 00381504  38 A5 58 7C */	addi r5, r5, "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"@l
+/* 80385868 00381508  48 06 F5 2D */	bl "WPADControlSpeaker"
+/* 8038586C 0038150C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80385870 00381510  7C 08 03 A6 */	mtlr r0
+/* 80385874 00381514  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385878 00381518  4E 80 00 20 */	blr 
+
+.global "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"
+"SpeakerPlayCallback__Q210homebutton9RemoteSpkFll":
+/* 8038587C 0038151C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80385880 00381520  7C 08 02 A6 */	mflr r0
+/* 80385884 00381524  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385888 00381528  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8038588C 0038152C  7C 9F 23 78 */	mr r31, r4
+/* 80385890 00381530  93 C1 00 08 */	stw r30, 8(r1)
+/* 80385894 00381534  7C 7E 1B 78 */	mr r30, r3
+/* 80385898 00381538  4B FF F9 95 */	bl "GetInstance__Q210homebutton9RemoteSpkFv"
+/* 8038589C 0038153C  2C 03 00 00 */	cmpwi r3, 0
+/* 803858A0 00381540  41 82 00 9C */	beq lbl_8038593C
+/* 803858A4 00381544  2C 1F FF FF */	cmpwi r31, -1
+/* 803858A8 00381548  41 82 00 30 */	beq lbl_803858D8
+/* 803858AC 0038154C  40 80 00 10 */	bge lbl_803858BC
+/* 803858B0 00381550  2C 1F FF FE */	cmpwi r31, -2
+/* 803858B4 00381554  40 80 00 38 */	bge lbl_803858EC
+/* 803858B8 00381558  48 00 00 84 */	b lbl_8038593C
+lbl_803858BC:
+/* 803858BC 0038155C  2C 1F 00 01 */	cmpwi r31, 1
+/* 803858C0 00381560  40 80 00 7C */	bge lbl_8038593C
+/* 803858C4 00381564  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 803858C8 00381568  38 80 00 01 */	li r4, 1
+/* 803858CC 0038156C  7C 63 02 14 */	add r3, r3, r0
+/* 803858D0 00381570  98 83 00 62 */	stb r4, 0x62(r3)
+/* 803858D4 00381574  48 00 00 68 */	b lbl_8038593C
+lbl_803858D8:
+/* 803858D8 00381578  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 803858DC 0038157C  38 80 00 00 */	li r4, 0
+/* 803858E0 00381580  7C 63 02 14 */	add r3, r3, r0
+/* 803858E4 00381584  98 83 00 62 */	stb r4, 0x62(r3)
+/* 803858E8 00381588  48 00 00 54 */	b lbl_8038593C
+lbl_803858EC:
+/* 803858EC 0038158C  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 803858F0 00381590  7F C4 F3 78 */	mr r4, r30
+/* 803858F4 00381594  7F E3 02 14 */	add r31, r3, r0
+/* 803858F8 00381598  7F E3 FB 78 */	mr r3, r31
+/* 803858FC 0038159C  48 05 61 C1 */	bl "OSSetAlarmUserData"
+/* 80385900 003815A0  7F E3 FB 78 */	mr r3, r31
+/* 80385904 003815A4  48 05 5D 91 */	bl "OSCancelAlarm"
+/* 80385908 003815A8  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 8038590C 003815AC  3C E0 80 38 */	lis r7, "DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@ha
+/* 80385910 003815B0  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 80385914 003815B4  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 80385918 003815B8  38 83 4D D3 */	addi r4, r3, 0x10624DD3@l
+/* 8038591C 003815BC  38 E7 58 4C */	addi r7, r7, "DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"@l
+/* 80385920 003815C0  54 00 F0 BE */	srwi r0, r0, 2
+/* 80385924 003815C4  7F E3 FB 78 */	mr r3, r31
+/* 80385928 003815C8  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8038592C 003815CC  38 A0 00 00 */	li r5, 0
+/* 80385930 003815D0  54 00 D1 BE */	srwi r0, r0, 6
+/* 80385934 003815D4  1C C0 00 32 */	mulli r6, r0, 0x32
+/* 80385938 003815D8  48 05 5C 69 */	bl "OSSetAlarm"
+lbl_8038593C:
+/* 8038593C 003815DC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80385940 003815E0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80385944 003815E4  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80385948 003815E8  7C 08 03 A6 */	mtlr r0
+/* 8038594C 003815EC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80385950 003815F0  4E 80 00 20 */	blr 
+
+.global "Connect__Q210homebutton9RemoteSpkFl"
+"Connect__Q210homebutton9RemoteSpkFl":
+/* 80385954 003815F4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80385958 003815F8  7C 08 02 A6 */	mflr r0
+/* 8038595C 003815FC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80385960 00381600  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80385964 00381604  7C 9F 23 78 */	mr r31, r4
+/* 80385968 00381608  93 C1 00 08 */	stw r30, 8(r1)
+/* 8038596C 0038160C  7C 7E 1B 78 */	mr r30, r3
+/* 80385970 00381610  88 03 01 EC */	lbz r0, 0x1ec(r3)
+/* 80385974 00381614  2C 00 00 00 */	cmpwi r0, 0
+/* 80385978 00381618  41 82 00 44 */	beq lbl_803859BC
+/* 8038597C 0038161C  3C A0 80 38 */	lis r5, "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"@ha
+/* 80385980 00381620  7F E3 FB 78 */	mr r3, r31
+/* 80385984 00381624  38 A5 57 74 */	addi r5, r5, "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"@l
+/* 80385988 00381628  38 80 00 01 */	li r4, 1
+/* 8038598C 0038162C  48 06 F4 09 */	bl "WPADControlSpeaker"
+/* 80385990 00381630  1F FF 00 68 */	mulli r31, r31, 0x68
+/* 80385994 00381634  38 80 00 00 */	li r4, 0
+/* 80385998 00381638  38 A0 00 20 */	li r5, 0x20
+/* 8038599C 0038163C  7C 7E FA 14 */	add r3, r30, r31
+/* 803859A0 00381640  38 63 00 30 */	addi r3, r3, 0x30
+/* 803859A4 00381644  4B C7 EA 99 */	bl "memset"
+/* 803859A8 00381648  7C 7E FA 14 */	add r3, r30, r31
+/* 803859AC 0038164C  38 00 00 01 */	li r0, 1
+/* 803859B0 00381650  98 03 00 5C */	stb r0, 0x5c(r3)
+/* 803859B4 00381654  38 00 00 00 */	li r0, 0
+/* 803859B8 00381658  98 03 00 62 */	stb r0, 0x62(r3)
+lbl_803859BC:
+/* 803859BC 0038165C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803859C0 00381660  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803859C4 00381664  83 C1 00 08 */	lwz r30, 8(r1)
+/* 803859C8 00381668  7C 08 03 A6 */	mtlr r0
+/* 803859CC 0038166C  38 21 00 10 */	addi r1, r1, 0x10
+/* 803859D0 00381670  4E 80 00 20 */	blr 
+
+.global "Play__Q210homebutton9RemoteSpkFliSc"
+"Play__Q210homebutton9RemoteSpkFliSc":
+/* 803859D4 00381674  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 803859D8 00381678  7C 08 02 A6 */	mflr r0
+/* 803859DC 0038167C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 803859E0 00381680  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 803859E4 00381684  7C DF 33 78 */	mr r31, r6
+/* 803859E8 00381688  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 803859EC 0038168C  7C BE 2B 78 */	mr r30, r5
+/* 803859F0 00381690  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 803859F4 00381694  7C 9D 23 78 */	mr r29, r4
+/* 803859F8 00381698  93 81 00 10 */	stw r28, 0x10(r1)
+/* 803859FC 0038169C  7C 7C 1B 78 */	mr r28, r3
+/* 80385A00 003816A0  88 03 01 EC */	lbz r0, 0x1ec(r3)
+/* 80385A04 003816A4  2C 00 00 00 */	cmpwi r0, 0
+/* 80385A08 003816A8  41 82 00 3C */	beq lbl_80385A44
+/* 80385A0C 003816AC  7F C4 F3 78 */	mr r4, r30
+/* 80385A10 003816B0  38 A1 00 0C */	addi r5, r1, 0xc
+/* 80385A14 003816B4  38 C1 00 08 */	addi r6, r1, 8
+/* 80385A18 003816B8  4B FF F8 1D */	bl "GetPCMFromSeID__Q210homebutton9RemoteSpkFiRPsRi"
+/* 80385A1C 003816BC  1C 7D 00 68 */	mulli r3, r29, 0x68
+/* 80385A20 003816C0  38 00 00 00 */	li r0, 0
+/* 80385A24 003816C4  7C 7C 1A 14 */	add r3, r28, r3
+/* 80385A28 003816C8  98 03 00 5E */	stb r0, 0x5e(r3)
+/* 80385A2C 003816CC  93 C3 00 58 */	stw r30, 0x58(r3)
+/* 80385A30 003816D0  80 01 00 08 */	lwz r0, 8(r1)
+/* 80385A34 003816D4  90 03 00 54 */	stw r0, 0x54(r3)
+/* 80385A38 003816D8  9B E3 00 5D */	stb r31, 0x5d(r3)
+/* 80385A3C 003816DC  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 80385A40 003816E0  90 03 00 50 */	stw r0, 0x50(r3)
+lbl_80385A44:
+/* 80385A44 003816E4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80385A48 003816E8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80385A4C 003816EC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80385A50 003816F0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80385A54 003816F4  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 80385A58 003816F8  7C 08 03 A6 */	mtlr r0
+/* 80385A5C 003816FC  38 21 00 20 */	addi r1, r1, 0x20
+/* 80385A60 00381700  4E 80 00 20 */	blr 
+
+.global "isPlaying__Q210homebutton9RemoteSpkCFl"
+"isPlaying__Q210homebutton9RemoteSpkCFl":
+/* 80385A64 00381704  1C 04 00 68 */	mulli r0, r4, 0x68
+/* 80385A68 00381708  7C 63 02 14 */	add r3, r3, r0
+/* 80385A6C 0038170C  80 63 00 50 */	lwz r3, 0x50(r3)
+/* 80385A70 00381710  7C 03 00 D0 */	neg r0, r3
+/* 80385A74 00381714  7C 00 1B 78 */	or r0, r0, r3
+/* 80385A78 00381718  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 80385A7C 0038171C  4E 80 00 20 */	blr 
+
+.global "isPlayingId__Q210homebutton9RemoteSpkCFli"
+"isPlayingId__Q210homebutton9RemoteSpkCFli":
+/* 80385A80 00381720  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80385A84 00381724  7C 08 02 A6 */	mflr r0
+/* 80385A88 00381728  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80385A8C 0038172C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80385A90 00381730  7C BF 2B 78 */	mr r31, r5
+/* 80385A94 00381734  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80385A98 00381738  7C 9E 23 78 */	mr r30, r4
+/* 80385A9C 0038173C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80385AA0 00381740  7C 7D 1B 78 */	mr r29, r3
+/* 80385AA4 00381744  4B FF FF C1 */	bl "isPlaying__Q210homebutton9RemoteSpkCFl"
+/* 80385AA8 00381748  2C 03 00 00 */	cmpwi r3, 0
+/* 80385AAC 0038174C  41 82 00 20 */	beq lbl_80385ACC
+/* 80385AB0 00381750  1C 1E 00 68 */	mulli r0, r30, 0x68
+/* 80385AB4 00381754  7C 7D 02 14 */	add r3, r29, r0
+/* 80385AB8 00381758  80 03 00 58 */	lwz r0, 0x58(r3)
+/* 80385ABC 0038175C  7C 1F 00 00 */	cmpw r31, r0
+/* 80385AC0 00381760  40 82 00 0C */	bne lbl_80385ACC
+/* 80385AC4 00381764  38 60 00 01 */	li r3, 1
+/* 80385AC8 00381768  48 00 00 08 */	b lbl_80385AD0
+lbl_80385ACC:
+/* 80385ACC 0038176C  38 60 00 00 */	li r3, 0
+lbl_80385AD0:
+/* 80385AD0 00381770  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80385AD4 00381774  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80385AD8 00381778  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80385ADC 0038177C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80385AE0 00381780  7C 08 03 A6 */	mtlr r0
+/* 80385AE4 00381784  38 21 00 20 */	addi r1, r1, 0x20
+/* 80385AE8 00381788  4E 80 00 20 */	blr 
+
+.global "isPlayReady__Q210homebutton9RemoteSpkCFl"
+"isPlayReady__Q210homebutton9RemoteSpkCFl":
+/* 80385AEC 0038178C  1C 04 00 68 */	mulli r0, r4, 0x68
+/* 80385AF0 00381790  7C 63 02 14 */	add r3, r3, r0
+/* 80385AF4 00381794  88 63 00 62 */	lbz r3, 0x62(r3)
+/* 80385AF8 00381798  7C 03 00 D0 */	neg r0, r3
+/* 80385AFC 0038179C  7C 00 1B 78 */	or r0, r0, r3
+/* 80385B00 003817A0  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 80385B04 003817A4  4E 80 00 20 */	blr 
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global "__vt__Q210homebutton9RemoteSpk"
+"__vt__Q210homebutton9RemoteSpk":
+	.incbin "baserom.dol", 0x465528, 0x10
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "spInstance__Q210homebutton9RemoteSpk"
+"spInstance__Q210homebutton9RemoteSpk":
+	.skip 0x8

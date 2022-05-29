@@ -1,0 +1,248 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "cbForNandClose"
+"cbForNandClose":
+/* 8036EB08 0036A7A8  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EB0C 0036A7AC  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EB10 0036A7B0  4D 82 00 20 */	beqlr 
+/* 8036EB14 0036A7B4  7C 60 00 34 */	cntlzw r0, r3
+/* 8036EB18 0036A7B8  38 80 00 00 */	li r4, 0
+/* 8036EB1C 0036A7BC  54 00 DF FE */	rlwinm r0, r0, 0x1b, 0x1f, 0x1f
+/* 8036EB20 0036A7C0  7C 60 00 D0 */	neg r3, r0
+/* 8036EB24 0036A7C4  38 63 00 02 */	addi r3, r3, 2
+/* 8036EB28 0036A7C8  7D 89 03 A6 */	mtctr r12
+/* 8036EB2C 0036A7CC  4E 80 04 20 */	bctr 
+/* 8036EB30 0036A7D0  4E 80 00 20 */	blr 
+
+.global "cbForNandWrite"
+"cbForNandWrite":
+/* 8036EB34 0036A7D4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036EB38 0036A7D8  7C 08 02 A6 */	mflr r0
+/* 8036EB3C 0036A7DC  3C 60 80 59 */	lis r3, "NandInfo"@ha
+/* 8036EB40 0036A7E0  3C 80 80 37 */	lis r4, "cbForNandClose"@ha
+/* 8036EB44 0036A7E4  3C A0 80 59 */	lis r5, "NandCb"@ha
+/* 8036EB48 0036A7E8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036EB4C 0036A7EC  38 63 11 C0 */	addi r3, r3, "NandInfo"@l
+/* 8036EB50 0036A7F0  38 84 EB 08 */	addi r4, r4, "cbForNandClose"@l
+/* 8036EB54 0036A7F4  38 A5 12 50 */	addi r5, r5, "NandCb"@l
+/* 8036EB58 0036A7F8  48 06 A1 CD */	bl "NANDCloseAsync"
+/* 8036EB5C 0036A7FC  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EB60 0036A800  41 82 00 20 */	beq lbl_8036EB80
+/* 8036EB64 0036A804  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EB68 0036A808  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EB6C 0036A80C  41 82 00 14 */	beq lbl_8036EB80
+/* 8036EB70 0036A810  38 60 00 02 */	li r3, 2
+/* 8036EB74 0036A814  38 80 00 00 */	li r4, 0
+/* 8036EB78 0036A818  7D 89 03 A6 */	mtctr r12
+/* 8036EB7C 0036A81C  4E 80 04 21 */	bctrl 
+lbl_8036EB80:
+/* 8036EB80 0036A820  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036EB84 0036A824  7C 08 03 A6 */	mtlr r0
+/* 8036EB88 0036A828  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036EB8C 0036A82C  4E 80 00 20 */	blr 
+
+.global "cbForNandOpen"
+"cbForNandOpen":
+/* 8036EB90 0036A830  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036EB94 0036A834  7C 08 02 A6 */	mflr r0
+/* 8036EB98 0036A838  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EB9C 0036A83C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036EBA0 0036A840  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036EBA4 0036A844  3F E0 80 59 */	lis r31, "NandInfo"@ha
+/* 8036EBA8 0036A848  3B FF 11 C0 */	addi r31, r31, "NandInfo"@l
+/* 8036EBAC 0036A84C  40 82 00 64 */	bne lbl_8036EC10
+/* 8036EBB0 0036A850  3C C0 80 37 */	lis r6, "cbForNandWrite"@ha
+/* 8036EBB4 0036A854  38 7F 00 00 */	addi r3, r31, 0
+/* 8036EBB8 0036A858  38 9F 01 60 */	addi r4, r31, 0x160
+/* 8036EBBC 0036A85C  38 FF 00 90 */	addi r7, r31, 0x90
+/* 8036EBC0 0036A860  38 C6 EB 34 */	addi r6, r6, "cbForNandWrite"@l
+/* 8036EBC4 0036A864  38 A0 00 80 */	li r5, 0x80
+/* 8036EBC8 0036A868  48 06 96 C5 */	bl "NANDWriteAsync"
+/* 8036EBCC 0036A86C  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EBD0 0036A870  41 82 00 5C */	beq lbl_8036EC2C
+/* 8036EBD4 0036A874  3C 80 80 37 */	lis r4, "cbForNandClose"@ha
+/* 8036EBD8 0036A878  38 7F 00 00 */	addi r3, r31, 0
+/* 8036EBDC 0036A87C  38 84 EB 08 */	addi r4, r4, "cbForNandClose"@l
+/* 8036EBE0 0036A880  38 BF 00 90 */	addi r5, r31, 0x90
+/* 8036EBE4 0036A884  48 06 A1 41 */	bl "NANDCloseAsync"
+/* 8036EBE8 0036A888  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EBEC 0036A88C  41 82 00 40 */	beq lbl_8036EC2C
+/* 8036EBF0 0036A890  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EBF4 0036A894  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EBF8 0036A898  41 82 00 34 */	beq lbl_8036EC2C
+/* 8036EBFC 0036A89C  38 60 00 02 */	li r3, 2
+/* 8036EC00 0036A8A0  38 80 00 00 */	li r4, 0
+/* 8036EC04 0036A8A4  7D 89 03 A6 */	mtctr r12
+/* 8036EC08 0036A8A8  4E 80 04 21 */	bctrl 
+/* 8036EC0C 0036A8AC  48 00 00 20 */	b lbl_8036EC2C
+lbl_8036EC10:
+/* 8036EC10 0036A8B0  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EC14 0036A8B4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EC18 0036A8B8  41 82 00 14 */	beq lbl_8036EC2C
+/* 8036EC1C 0036A8BC  38 60 00 02 */	li r3, 2
+/* 8036EC20 0036A8C0  38 80 00 00 */	li r4, 0
+/* 8036EC24 0036A8C4  7D 89 03 A6 */	mtctr r12
+/* 8036EC28 0036A8C8  4E 80 04 21 */	bctrl 
+lbl_8036EC2C:
+/* 8036EC2C 0036A8CC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036EC30 0036A8D0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036EC34 0036A8D4  7C 08 03 A6 */	mtlr r0
+/* 8036EC38 0036A8D8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036EC3C 0036A8DC  4E 80 00 20 */	blr 
+
+.global "cbForNandCreate"
+"cbForNandCreate":
+/* 8036EC40 0036A8E0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036EC44 0036A8E4  7C 08 02 A6 */	mflr r0
+/* 8036EC48 0036A8E8  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EC4C 0036A8EC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036EC50 0036A8F0  41 82 00 0C */	beq lbl_8036EC5C
+/* 8036EC54 0036A8F4  2C 03 FF FA */	cmpwi r3, -6
+/* 8036EC58 0036A8F8  40 82 00 54 */	bne lbl_8036ECAC
+lbl_8036EC5C:
+/* 8036EC5C 0036A8FC  3C 60 80 46 */	lis r3, lbl_80466718@ha
+/* 8036EC60 0036A900  3C 80 80 59 */	lis r4, "NandInfo"@ha
+/* 8036EC64 0036A904  3C C0 80 37 */	lis r6, "cbForNandOpen"@ha
+/* 8036EC68 0036A908  3C E0 80 59 */	lis r7, "NandCb"@ha
+/* 8036EC6C 0036A90C  38 63 67 18 */	addi r3, r3, lbl_80466718@l
+/* 8036EC70 0036A910  38 84 11 C0 */	addi r4, r4, "NandInfo"@l
+/* 8036EC74 0036A914  38 C6 EB 90 */	addi r6, r6, "cbForNandOpen"@l
+/* 8036EC78 0036A918  38 E7 12 50 */	addi r7, r7, "NandCb"@l
+/* 8036EC7C 0036A91C  38 A0 00 02 */	li r5, 2
+/* 8036EC80 0036A920  48 06 9F 49 */	bl "NANDPrivateOpenAsync"
+/* 8036EC84 0036A924  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EC88 0036A928  41 82 00 40 */	beq lbl_8036ECC8
+/* 8036EC8C 0036A92C  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EC90 0036A930  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EC94 0036A934  41 82 00 34 */	beq lbl_8036ECC8
+/* 8036EC98 0036A938  38 60 00 02 */	li r3, 2
+/* 8036EC9C 0036A93C  38 80 00 00 */	li r4, 0
+/* 8036ECA0 0036A940  7D 89 03 A6 */	mtctr r12
+/* 8036ECA4 0036A944  4E 80 04 21 */	bctrl 
+/* 8036ECA8 0036A948  48 00 00 20 */	b lbl_8036ECC8
+lbl_8036ECAC:
+/* 8036ECAC 0036A94C  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036ECB0 0036A950  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036ECB4 0036A954  41 82 00 14 */	beq lbl_8036ECC8
+/* 8036ECB8 0036A958  38 60 00 02 */	li r3, 2
+/* 8036ECBC 0036A95C  38 80 00 00 */	li r4, 0
+/* 8036ECC0 0036A960  7D 89 03 A6 */	mtctr r12
+/* 8036ECC4 0036A964  4E 80 04 21 */	bctrl 
+lbl_8036ECC8:
+/* 8036ECC8 0036A968  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036ECCC 0036A96C  7C 08 03 A6 */	mtlr r0
+/* 8036ECD0 0036A970  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036ECD4 0036A974  4E 80 00 20 */	blr 
+
+.global "cbForNandCreateDir"
+"cbForNandCreateDir":
+/* 8036ECD8 0036A978  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036ECDC 0036A97C  7C 08 02 A6 */	mflr r0
+/* 8036ECE0 0036A980  2C 03 00 00 */	cmpwi r3, 0
+/* 8036ECE4 0036A984  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036ECE8 0036A988  41 82 00 0C */	beq lbl_8036ECF4
+/* 8036ECEC 0036A98C  2C 03 FF FA */	cmpwi r3, -6
+/* 8036ECF0 0036A990  40 82 00 50 */	bne lbl_8036ED40
+lbl_8036ECF4:
+/* 8036ECF4 0036A994  3C 60 80 46 */	lis r3, lbl_80466718@ha
+/* 8036ECF8 0036A998  3C C0 80 37 */	lis r6, "cbForNandCreate"@ha
+/* 8036ECFC 0036A99C  3C E0 80 59 */	lis r7, "NandCb"@ha
+/* 8036ED00 0036A9A0  38 80 00 3F */	li r4, 0x3f
+/* 8036ED04 0036A9A4  38 63 67 18 */	addi r3, r3, lbl_80466718@l
+/* 8036ED08 0036A9A8  38 C6 EC 40 */	addi r6, r6, "cbForNandCreate"@l
+/* 8036ED0C 0036A9AC  38 E7 12 50 */	addi r7, r7, "NandCb"@l
+/* 8036ED10 0036A9B0  38 A0 00 00 */	li r5, 0
+/* 8036ED14 0036A9B4  48 06 92 49 */	bl "NANDPrivateCreateAsync"
+/* 8036ED18 0036A9B8  2C 03 00 00 */	cmpwi r3, 0
+/* 8036ED1C 0036A9BC  41 82 00 40 */	beq lbl_8036ED5C
+/* 8036ED20 0036A9C0  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036ED24 0036A9C4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036ED28 0036A9C8  41 82 00 34 */	beq lbl_8036ED5C
+/* 8036ED2C 0036A9CC  38 60 00 02 */	li r3, 2
+/* 8036ED30 0036A9D0  38 80 00 00 */	li r4, 0
+/* 8036ED34 0036A9D4  7D 89 03 A6 */	mtctr r12
+/* 8036ED38 0036A9D8  4E 80 04 21 */	bctrl 
+/* 8036ED3C 0036A9DC  48 00 00 20 */	b lbl_8036ED5C
+lbl_8036ED40:
+/* 8036ED40 0036A9E0  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036ED44 0036A9E4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036ED48 0036A9E8  41 82 00 14 */	beq lbl_8036ED5C
+/* 8036ED4C 0036A9EC  38 60 00 02 */	li r3, 2
+/* 8036ED50 0036A9F0  38 80 00 00 */	li r4, 0
+/* 8036ED54 0036A9F4  7D 89 03 A6 */	mtctr r12
+/* 8036ED58 0036A9F8  4E 80 04 21 */	bctrl 
+lbl_8036ED5C:
+/* 8036ED5C 0036A9FC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036ED60 0036AA00  7C 08 03 A6 */	mtlr r0
+/* 8036ED64 0036AA04  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036ED68 0036AA08  4E 80 00 20 */	blr 
+
+.global "__DVDStoreErrorCode"
+"__DVDStoreErrorCode":
+/* 8036ED6C 0036AA0C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036ED70 0036AA10  7C 08 02 A6 */	mflr r0
+/* 8036ED74 0036AA14  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036ED78 0036AA18  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036ED7C 0036AA1C  3F E0 80 59 */	lis r31, "__ErrorInfo"@ha
+/* 8036ED80 0036AA20  3B FF 13 20 */	addi r31, r31, "__ErrorInfo"@l
+/* 8036ED84 0036AA24  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036ED88 0036AA28  7C 9E 23 78 */	mr r30, r4
+/* 8036ED8C 0036AA2C  90 7F 00 08 */	stw r3, 8(r31)
+/* 8036ED90 0036AA30  48 07 52 89 */	bl "OSGetTime"
+/* 8036ED94 0036AA34  3C C0 80 00 */	lis r6, 0x800000F8@ha
+/* 8036ED98 0036AA38  38 A0 00 00 */	li r5, 0
+/* 8036ED9C 0036AA3C  80 06 00 F8 */	lwz r0, 0x800000F8@l(r6)
+/* 8036EDA0 0036AA40  54 06 F0 BE */	srwi r6, r0, 2
+/* 8036EDA4 0036AA44  48 0A 07 21 */	bl "__div2i"
+/* 8036EDA8 0036AA48  90 9F 00 0C */	stw r4, 0xc(r31)
+/* 8036EDAC 0036AA4C  3C 60 80 46 */	lis r3, lbl_80466734@ha
+/* 8036EDB0 0036AA50  3C C0 80 37 */	lis r6, "cbForNandCreateDir"@ha
+/* 8036EDB4 0036AA54  3C E0 80 59 */	lis r7, "NandCb"@ha
+/* 8036EDB8 0036AA58  93 CD C4 28 */	stw r30, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EDBC 0036AA5C  38 63 67 34 */	addi r3, r3, lbl_80466734@l
+/* 8036EDC0 0036AA60  38 C6 EC D8 */	addi r6, r6, "cbForNandCreateDir"@l
+/* 8036EDC4 0036AA64  38 E7 12 50 */	addi r7, r7, "NandCb"@l
+/* 8036EDC8 0036AA68  38 80 00 3F */	li r4, 0x3f
+/* 8036EDCC 0036AA6C  38 A0 00 00 */	li r5, 0
+/* 8036EDD0 0036AA70  48 06 97 B1 */	bl "NANDPrivateCreateDirAsync"
+/* 8036EDD4 0036AA74  2C 03 00 00 */	cmpwi r3, 0
+/* 8036EDD8 0036AA78  41 82 00 20 */	beq lbl_8036EDF8
+/* 8036EDDC 0036AA7C  81 8D C4 28 */	lwz r12, "Callback_805D8B08"-_SDA_BASE_(r13)
+/* 8036EDE0 0036AA80  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036EDE4 0036AA84  41 82 00 14 */	beq lbl_8036EDF8
+/* 8036EDE8 0036AA88  38 60 00 02 */	li r3, 2
+/* 8036EDEC 0036AA8C  38 80 00 00 */	li r4, 0
+/* 8036EDF0 0036AA90  7D 89 03 A6 */	mtctr r12
+/* 8036EDF4 0036AA94  4E 80 04 21 */	bctrl 
+lbl_8036EDF8:
+/* 8036EDF8 0036AA98  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036EDFC 0036AA9C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036EE00 0036AAA0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036EE04 0036AAA4  7C 08 03 A6 */	mtlr r0
+/* 8036EE08 0036AAA8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036EE0C 0036AAAC  4E 80 00 20 */	blr 
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global lbl_80466718
+lbl_80466718:
+	.incbin "baserom.dol", 0x462818, 0x1C
+.global lbl_80466734
+lbl_80466734:
+	.incbin "baserom.dol", 0x462834, 0x14
+
+.section .bss, "wa"  # 0x80488180 - 0x805DC448
+.global "NandInfo"
+"NandInfo":
+	.skip 0x90
+.global "NandCb"
+"NandCb":
+	.skip 0xD0
+.global "__ErrorInfo"
+"__ErrorInfo":
+	.skip 0x80
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "Callback_805D8B08"
+"Callback_805D8B08":
+	.skip 0x8

@@ -1,0 +1,5098 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "StampCommand"
+"StampCommand":
+/* 8036A3C8 00366068  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036A3CC 0036606C  7C 08 02 A6 */	mflr r0
+/* 8036A3D0 00366070  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036A3D4 00366074  39 61 00 20 */	addi r11, r1, 0x20
+/* 8036A3D8 00366078  48 0A 4F 9D */	bl "_savegpr_27"
+/* 8036A3DC 0036607C  7C 7B 1B 78 */	mr r27, r3
+/* 8036A3E0 00366080  7C 9C 23 78 */	mr r28, r4
+/* 8036A3E4 00366084  7C BD 2B 78 */	mr r29, r5
+/* 8036A3E8 00366088  48 07 60 75 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036A3EC 0036608C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A3F0 00366090  7C 7F 1B 78 */	mr r31, r3
+/* 8036A3F4 00366094  28 00 00 05 */	cmplwi r0, 5
+/* 8036A3F8 00366098  41 80 00 0C */	blt lbl_8036A404
+/* 8036A3FC 0036609C  38 00 00 00 */	li r0, 0
+/* 8036A400 003660A0  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036A404:
+/* 8036A404 003660A4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A408 003660A8  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036A40C 003660AC  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A410 003660B0  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036A414 003660B4  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036A418 003660B8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A41C 003660BC  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036A420 003660C0  7C 9E 22 14 */	add r4, r30, r4
+/* 8036A424 003660C4  93 64 00 1C */	stw r27, 0x1c(r4)
+/* 8036A428 003660C8  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036A42C 003660CC  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036A430 003660D0  93 83 00 20 */	stw r28, 0x20(r3)
+/* 8036A434 003660D4  7C 7E 02 14 */	add r3, r30, r0
+/* 8036A438 003660D8  93 A3 00 24 */	stw r29, 0x24(r3)
+/* 8036A43C 003660DC  48 07 9B F5 */	bl "OSGetTick"
+/* 8036A440 003660E0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A444 003660E4  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A448 003660E8  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036A44C 003660EC  38 04 00 01 */	addi r0, r4, 1
+/* 8036A450 003660F0  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A454 003660F4  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036A458 003660F8  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036A45C 003660FC  7F E3 FB 78 */	mr r3, r31
+/* 8036A460 00366100  48 07 60 25 */	bl "OSRestoreInterrupts"
+/* 8036A464 00366104  39 61 00 20 */	addi r11, r1, 0x20
+/* 8036A468 00366108  48 0A 4F 59 */	bl "_restgpr_27"
+/* 8036A46C 0036610C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036A470 00366110  7C 08 03 A6 */	mtlr r0
+/* 8036A474 00366114  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036A478 00366118  4E 80 00 20 */	blr 
+
+.global "defaultOptionalCommandChecker"
+"defaultOptionalCommandChecker":
+/* 8036A47C 0036611C  4E 80 00 20 */	blr 
+
+.global "DVDInit"
+"DVDInit":
+/* 8036A480 00366120  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036A484 00366124  7C 08 02 A6 */	mflr r0
+/* 8036A488 00366128  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036A48C 0036612C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036A490 00366130  80 0D C3 DC */	lwz r0, "DVDInitialized"-_SDA_BASE_(r13)
+/* 8036A494 00366134  2C 00 00 00 */	cmpwi r0, 0
+/* 8036A498 00366138  40 82 00 B4 */	bne lbl_8036A54C
+/* 8036A49C 0036613C  80 6D AC 40 */	lwz r3, "__DVDVersion"-_SDA_BASE_(r13)
+/* 8036A4A0 00366140  48 07 0D CD */	bl "OSRegisterVersion"
+/* 8036A4A4 00366144  3B E0 00 01 */	li r31, 1
+/* 8036A4A8 00366148  93 ED C3 DC */	stw r31, "DVDInitialized"-_SDA_BASE_(r13)
+/* 8036A4AC 0036614C  48 00 4D 05 */	bl "DVDLowInit"
+/* 8036A4B0 00366150  4B FF F4 D1 */	bl "__DVDFSInit"
+/* 8036A4B4 00366154  48 00 43 FD */	bl "__DVDClearWaitingQueue"
+/* 8036A4B8 00366158  3C 00 80 00 */	lis r0, 0x8000
+/* 8036A4BC 0036615C  38 60 00 00 */	li r3, 0
+/* 8036A4C0 00366160  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036A4C4 00366164  38 6D C3 88 */	addi r3, r13, "__DVDThreadQueue"-_SDA_BASE_
+/* 8036A4C8 00366168  90 0D C4 18 */	stw r0, "bootInfo"-_SDA_BASE_(r13)
+/* 8036A4CC 0036616C  90 0D C4 1C */	stw r0, "IDShouldBe"-_SDA_BASE_(r13)
+/* 8036A4D0 00366170  48 07 89 AD */	bl "OSInitThreadQueue"
+/* 8036A4D4 00366174  48 00 63 D9 */	bl "DVDLowUnmaskStatusInterrupts"
+/* 8036A4D8 00366178  48 00 63 DD */	bl "DVDLowMaskCoverInterrupt"
+/* 8036A4DC 0036617C  80 6D C4 18 */	lwz r3, "bootInfo"-_SDA_BASE_(r13)
+/* 8036A4E0 00366180  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8036A4E4 00366184  3C 03 1A E0 */	addis r0, r3, 0x1ae0
+/* 8036A4E8 00366188  28 00 7C 22 */	cmplwi r0, 0x7c22
+/* 8036A4EC 0036618C  41 82 00 14 */	beq lbl_8036A500
+/* 8036A4F0 00366190  3C 03 F2 EB */	addis r0, r3, 0xf2eb
+/* 8036A4F4 00366194  28 00 EA 5E */	cmplwi r0, 0xea5e
+/* 8036A4F8 00366198  41 82 00 08 */	beq lbl_8036A500
+/* 8036A4FC 0036619C  93 ED C3 BC */	stw r31, "FirstTimeInBootrom"-_SDA_BASE_(r13)
+lbl_8036A500:
+/* 8036A500 003661A0  3F E0 80 59 */	lis r31, "__ErrorInfo"@ha
+/* 8036A504 003661A4  38 80 00 00 */	li r4, 0
+/* 8036A508 003661A8  38 7F 13 20 */	addi r3, r31, "__ErrorInfo"@l
+/* 8036A50C 003661AC  38 A0 00 80 */	li r5, 0x80
+/* 8036A510 003661B0  4B C9 9F 2D */	bl "memset"
+/* 8036A514 003661B4  38 7F 13 20 */	addi r3, r31, 0x1320
+/* 8036A518 003661B8  3C 80 80 00 */	lis r4, 0x8000
+/* 8036A51C 003661BC  38 A0 00 04 */	li r5, 4
+/* 8036A520 003661C0  4B C9 9E 19 */	bl "memcpy"
+/* 8036A524 003661C4  3C C0 80 00 */	lis r6, 0x80000006@ha
+/* 8036A528 003661C8  38 BF 13 20 */	addi r5, r31, 0x1320
+/* 8036A52C 003661CC  88 86 00 06 */	lbz r4, 0x80000006@l(r6)
+/* 8036A530 003661D0  38 00 00 00 */	li r0, 0
+/* 8036A534 003661D4  38 60 00 01 */	li r3, 1
+/* 8036A538 003661D8  98 85 00 04 */	stb r4, 4(r5)
+/* 8036A53C 003661DC  88 86 00 07 */	lbz r4, 7(r6)
+/* 8036A540 003661E0  98 85 00 05 */	stb r4, 5(r5)
+/* 8036A544 003661E4  90 0D C3 D8 */	stw r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036A548 003661E8  48 00 4A 6D */	bl "DVDSetAutoFatalMessaging"
+lbl_8036A54C:
+/* 8036A54C 003661EC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036A550 003661F0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036A554 003661F4  7C 08 03 A6 */	mtlr r0
+/* 8036A558 003661F8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036A55C 003661FC  4E 80 00 20 */	blr 
+
+.global "stateReadingFST"
+"stateReadingFST":
+/* 8036A560 00366200  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036A564 00366204  7C 08 02 A6 */	mflr r0
+/* 8036A568 00366208  3C A0 80 37 */	lis r5, "stateReadingFST"@ha
+/* 8036A56C 0036620C  3C 60 80 59 */	lis r3, "BB2"@ha
+/* 8036A570 00366210  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036A574 00366214  38 A5 A5 60 */	addi r5, r5, "stateReadingFST"@l
+/* 8036A578 00366218  38 63 C5 C0 */	addi r3, r3, "BB2"@l
+/* 8036A57C 0036621C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036A580 00366220  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036A584 00366224  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036A588 00366228  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8036A58C 0036622C  80 8D C4 18 */	lwz r4, "bootInfo"-_SDA_BASE_(r13)
+/* 8036A590 00366230  90 AD C4 24 */	stw r5, "LastState"-_SDA_BASE_(r13)
+/* 8036A594 00366234  80 03 00 08 */	lwz r0, 8(r3)
+/* 8036A598 00366238  80 64 00 3C */	lwz r3, 0x3c(r4)
+/* 8036A59C 0036623C  7C 03 00 40 */	cmplw r3, r0
+/* 8036A5A0 00366240  40 80 00 1C */	bge lbl_8036A5BC
+/* 8036A5A4 00366244  3C A0 80 46 */	lis r5, lbl_804664D0@ha
+/* 8036A5A8 00366248  38 6D AC 4C */	addi r3, r13, lbl_805D732C-_SDA_BASE_
+/* 8036A5AC 0036624C  38 A5 64 D0 */	addi r5, r5, lbl_804664D0@l
+/* 8036A5B0 00366250  38 80 04 0B */	li r4, 0x40b
+/* 8036A5B4 00366254  4C C6 31 82 */	crclr 6
+/* 8036A5B8 00366258  48 07 2B 91 */	bl "OSPanic"
+lbl_8036A5BC:
+/* 8036A5BC 0036625C  38 60 00 00 */	li r3, 0
+/* 8036A5C0 00366260  48 00 62 FD */	bl "DVDLowClearCoverInterrupt"
+/* 8036A5C4 00366264  80 6D C3 D8 */	lwz r3, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036A5C8 00366268  3C C0 80 59 */	lis r6, "BB2"@ha
+/* 8036A5CC 0036626C  38 C6 C5 C0 */	addi r6, r6, "BB2"@l
+/* 8036A5D0 00366270  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036A5D4 00366274  7C 63 18 F8 */	nor r3, r3, r3
+/* 8036A5D8 00366278  80 A6 00 08 */	lwz r5, 8(r6)
+/* 8036A5DC 0036627C  54 64 07 BC */	rlwinm r4, r3, 0, 0x1e, 0x1e
+/* 8036A5E0 00366280  80 66 00 04 */	lwz r3, 4(r6)
+/* 8036A5E4 00366284  7C A4 20 30 */	slw r4, r5, r4
+/* 8036A5E8 00366288  38 84 00 1F */	addi r4, r4, 0x1f
+/* 8036A5EC 0036628C  7C 7D 04 30 */	srw r29, r3, r0
+/* 8036A5F0 00366290  54 9C 00 34 */	rlwinm r28, r4, 0, 0, 0x1a
+/* 8036A5F4 00366294  48 07 5E 69 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036A5F8 00366298  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A5FC 0036629C  7C 7F 1B 78 */	mr r31, r3
+/* 8036A600 003662A0  28 00 00 05 */	cmplwi r0, 5
+/* 8036A604 003662A4  41 80 00 0C */	blt lbl_8036A610
+/* 8036A608 003662A8  38 00 00 00 */	li r0, 0
+/* 8036A60C 003662AC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036A610:
+/* 8036A610 003662B0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A614 003662B4  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036A618 003662B8  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A61C 003662BC  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036A620 003662C0  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036A624 003662C4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A628 003662C8  38 A0 00 01 */	li r5, 1
+/* 8036A62C 003662CC  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036A630 003662D0  7C 9E 22 14 */	add r4, r30, r4
+/* 8036A634 003662D4  90 A4 00 1C */	stw r5, 0x1c(r4)
+/* 8036A638 003662D8  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036A63C 003662DC  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036A640 003662E0  93 A3 00 20 */	stw r29, 0x20(r3)
+/* 8036A644 003662E4  7C 7E 02 14 */	add r3, r30, r0
+/* 8036A648 003662E8  93 83 00 24 */	stw r28, 0x24(r3)
+/* 8036A64C 003662EC  48 07 99 E5 */	bl "OSGetTick"
+/* 8036A650 003662F0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A654 003662F4  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A658 003662F8  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036A65C 003662FC  38 04 00 01 */	addi r0, r4, 1
+/* 8036A660 00366300  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A664 00366304  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036A668 00366308  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036A66C 0036630C  7F E3 FB 78 */	mr r3, r31
+/* 8036A670 00366310  48 07 5E 15 */	bl "OSRestoreInterrupts"
+/* 8036A674 00366314  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036A678 00366318  3C 80 80 59 */	lis r4, "BB2"@ha
+/* 8036A67C 0036631C  38 84 C5 C0 */	addi r4, r4, "BB2"@l
+/* 8036A680 00366320  3C C0 80 37 */	lis r6, "cbForStateReadingFST"@ha
+/* 8036A684 00366324  7C 00 00 F8 */	nor r0, r0, r0
+/* 8036A688 00366328  80 64 00 08 */	lwz r3, 8(r4)
+/* 8036A68C 0036632C  54 00 07 BC */	rlwinm r0, r0, 0, 0x1e, 0x1e
+/* 8036A690 00366330  80 ED C4 18 */	lwz r7, "bootInfo"-_SDA_BASE_(r13)
+/* 8036A694 00366334  7C 63 00 30 */	slw r3, r3, r0
+/* 8036A698 00366338  80 A4 00 04 */	lwz r5, 4(r4)
+/* 8036A69C 0036633C  38 83 00 1F */	addi r4, r3, 0x1f
+/* 8036A6A0 00366340  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036A6A4 00366344  80 67 00 38 */	lwz r3, 0x38(r7)
+/* 8036A6A8 00366348  54 84 00 34 */	rlwinm r4, r4, 0, 0, 0x1a
+/* 8036A6AC 0036634C  7C A5 04 30 */	srw r5, r5, r0
+/* 8036A6B0 00366350  38 C6 A6 D8 */	addi r6, r6, "cbForStateReadingFST"@l
+/* 8036A6B4 00366354  48 00 5D 49 */	bl "DVDLowRead"
+/* 8036A6B8 00366358  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036A6BC 0036635C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036A6C0 00366360  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036A6C4 00366364  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036A6C8 00366368  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8036A6CC 0036636C  7C 08 03 A6 */	mtlr r0
+/* 8036A6D0 00366370  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036A6D4 00366374  4E 80 00 20 */	blr 
+
+.global "cbForStateReadingFST"
+"cbForStateReadingFST":
+/* 8036A6D8 00366378  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036A6DC 0036637C  7C 08 02 A6 */	mflr r0
+/* 8036A6E0 00366380  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036A6E4 00366384  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036A6E8 00366388  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036A6EC 0036638C  7C 7E 1B 78 */	mr r30, r3
+/* 8036A6F0 00366390  48 07 5D 6D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036A6F4 00366394  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A6F8 00366398  2C 00 00 00 */	cmpwi r0, 0
+/* 8036A6FC 0036639C  40 82 00 14 */	bne lbl_8036A710
+/* 8036A700 003663A0  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036A704 003663A4  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036A708 003663A8  93 C4 00 78 */	stw r30, 0x78(r4)
+/* 8036A70C 003663AC  48 00 00 1C */	b lbl_8036A728
+lbl_8036A710:
+/* 8036A710 003663B0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A714 003663B4  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036A718 003663B8  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036A71C 003663BC  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036A720 003663C0  7C 84 02 14 */	add r4, r4, r0
+/* 8036A724 003663C4  93 C4 00 14 */	stw r30, 0x14(r4)
+lbl_8036A728:
+/* 8036A728 003663C8  48 07 5D 5D */	bl "OSRestoreInterrupts"
+/* 8036A72C 003663CC  28 1E 00 10 */	cmplwi r30, 0x10
+/* 8036A730 003663D0  40 82 00 1C */	bne lbl_8036A74C
+/* 8036A734 003663D4  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036A738 003663D8  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036A73C 003663DC  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036A740 003663E0  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036A744 003663E4  48 00 46 29 */	bl "__DVDStoreErrorCode"
+/* 8036A748 003663E8  48 00 00 FC */	b lbl_8036A844
+lbl_8036A74C:
+/* 8036A74C 003663EC  28 1E 00 20 */	cmplwi r30, 0x20
+/* 8036A750 003663F0  40 82 00 1C */	bne lbl_8036A76C
+/* 8036A754 003663F4  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036A758 003663F8  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036A75C 003663FC  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036A760 00366400  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036A764 00366404  48 00 46 09 */	bl "__DVDStoreErrorCode"
+/* 8036A768 00366408  48 00 00 DC */	b lbl_8036A844
+lbl_8036A76C:
+/* 8036A76C 0036640C  57 C0 07 FF */	clrlwi. r0, r30, 0x1f
+/* 8036A770 00366410  41 82 00 44 */	beq lbl_8036A7B4
+/* 8036A774 00366414  3B C0 00 00 */	li r30, 0
+/* 8036A778 00366418  93 CD C3 B8 */	stw r30, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036A77C 0036641C  4B FF F2 05 */	bl "__DVDFSInit"
+/* 8036A780 00366420  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036A784 00366424  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036A788 00366428  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036A78C 0036642C  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036A790 00366430  93 C4 00 0C */	stw r30, 0xc(r4)
+/* 8036A794 00366434  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036A798 00366438  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036A79C 0036643C  41 82 00 10 */	beq lbl_8036A7AC
+/* 8036A7A0 00366440  38 60 00 00 */	li r3, 0
+/* 8036A7A4 00366444  7D 89 03 A6 */	mtctr r12
+/* 8036A7A8 00366448  4E 80 04 21 */	bctrl 
+lbl_8036A7AC:
+/* 8036A7AC 0036644C  48 00 25 A1 */	bl "stateReady"
+/* 8036A7B0 00366450  48 00 00 94 */	b lbl_8036A844
+lbl_8036A7B4:
+/* 8036A7B4 00366454  48 07 5C A9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036A7B8 00366458  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A7BC 0036645C  7C 7F 1B 78 */	mr r31, r3
+/* 8036A7C0 00366460  28 00 00 05 */	cmplwi r0, 5
+/* 8036A7C4 00366464  41 80 00 0C */	blt lbl_8036A7D0
+/* 8036A7C8 00366468  38 00 00 00 */	li r0, 0
+/* 8036A7CC 0036646C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036A7D0:
+/* 8036A7D0 00366470  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A7D4 00366474  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036A7D8 00366478  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A7DC 0036647C  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036A7E0 00366480  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036A7E4 00366484  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A7E8 00366488  38 C0 00 27 */	li r6, 0x27
+/* 8036A7EC 0036648C  38 80 00 00 */	li r4, 0
+/* 8036A7F0 00366490  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036A7F4 00366494  7C BE 2A 14 */	add r5, r30, r5
+/* 8036A7F8 00366498  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036A7FC 0036649C  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036A800 003664A0  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036A804 003664A4  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036A808 003664A8  7C 7E 02 14 */	add r3, r30, r0
+/* 8036A80C 003664AC  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036A810 003664B0  48 07 98 21 */	bl "OSGetTick"
+/* 8036A814 003664B4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A818 003664B8  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A81C 003664BC  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036A820 003664C0  38 04 00 01 */	addi r0, r4, 1
+/* 8036A824 003664C4  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036A828 003664C8  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036A82C 003664CC  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036A830 003664D0  7F E3 FB 78 */	mr r3, r31
+/* 8036A834 003664D4  48 07 5C 51 */	bl "OSRestoreInterrupts"
+/* 8036A838 003664D8  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036A83C 003664DC  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036A840 003664E0  48 00 55 B9 */	bl "DVDLowRequestError"
+lbl_8036A844:
+/* 8036A844 003664E4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036A848 003664E8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036A84C 003664EC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036A850 003664F0  7C 08 03 A6 */	mtlr r0
+/* 8036A854 003664F4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036A858 003664F8  4E 80 00 20 */	blr 
+
+.global "FatalAlarmHandler"
+"FatalAlarmHandler":
+/* 8036A85C 003664FC  48 00 47 C8 */	b "__DVDPrintFatalMessage"
+
+.global "cbForStateError"
+"cbForStateError":
+/* 8036A860 00366500  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036A864 00366504  7C 08 02 A6 */	mflr r0
+/* 8036A868 00366508  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036A86C 0036650C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036A870 00366510  7C 7F 1B 78 */	mr r31, r3
+/* 8036A874 00366514  48 00 47 9D */	bl "__DVDGetAutoFatalMessaging"
+/* 8036A878 00366518  2C 03 00 00 */	cmpwi r3, 0
+/* 8036A87C 0036651C  41 82 00 2C */	beq lbl_8036A8A8
+/* 8036A880 00366520  3F E0 80 59 */	lis r31, "FatalAlarm"@ha
+/* 8036A884 00366524  38 7F C6 10 */	addi r3, r31, "FatalAlarm"@l
+/* 8036A888 00366528  48 07 0A B9 */	bl "OSCreateAlarm"
+/* 8036A88C 0036652C  3C E0 80 37 */	lis r7, "FatalAlarmHandler"@ha
+/* 8036A890 00366530  38 7F C6 10 */	addi r3, r31, -14832
+/* 8036A894 00366534  38 E7 A8 5C */	addi r7, r7, "FatalAlarmHandler"@l
+/* 8036A898 00366538  38 C0 00 01 */	li r6, 1
+/* 8036A89C 0036653C  38 A0 00 00 */	li r5, 0
+/* 8036A8A0 00366540  48 07 0D 01 */	bl "OSSetAlarm"
+/* 8036A8A4 00366544  48 00 00 B8 */	b lbl_8036A95C
+lbl_8036A8A8:
+/* 8036A8A8 00366548  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036A8AC 0036654C  38 00 FF FF */	li r0, -1
+/* 8036A8B0 00366550  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036A8B4 00366554  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036A8B8 00366558  40 82 00 1C */	bne lbl_8036A8D4
+/* 8036A8BC 0036655C  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036A8C0 00366560  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036A8C4 00366564  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036A8C8 00366568  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036A8CC 0036656C  48 00 44 A1 */	bl "__DVDStoreErrorCode"
+/* 8036A8D0 00366570  48 00 00 8C */	b lbl_8036A95C
+lbl_8036A8D4:
+/* 8036A8D4 00366574  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036A8D8 00366578  40 82 00 1C */	bne lbl_8036A8F4
+/* 8036A8DC 0036657C  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036A8E0 00366580  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036A8E4 00366584  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036A8E8 00366588  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036A8EC 0036658C  48 00 44 81 */	bl "__DVDStoreErrorCode"
+/* 8036A8F0 00366590  48 00 00 6C */	b lbl_8036A95C
+lbl_8036A8F4:
+/* 8036A8F4 00366594  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036A8F8 00366598  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036A8FC 0036659C  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036A900 003665A0  38 00 00 01 */	li r0, 1
+/* 8036A904 003665A4  90 0D C3 AC */	stw r0, "FatalErrorFlag"-_SDA_BASE_(r13)
+/* 8036A908 003665A8  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036A90C 003665AC  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036A910 003665B0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036A914 003665B4  41 82 00 14 */	beq lbl_8036A928
+/* 8036A918 003665B8  7F E4 FB 78 */	mr r4, r31
+/* 8036A91C 003665BC  38 60 FF FF */	li r3, -1
+/* 8036A920 003665C0  7D 89 03 A6 */	mtctr r12
+/* 8036A924 003665C4  4E 80 04 21 */	bctrl 
+lbl_8036A928:
+/* 8036A928 003665C8  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036A92C 003665CC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036A930 003665D0  41 82 00 28 */	beq lbl_8036A958
+/* 8036A934 003665D4  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036A938 003665D8  38 00 00 00 */	li r0, 0
+/* 8036A93C 003665DC  90 0D C3 B0 */	stw r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036A940 003665E0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036A944 003665E4  41 82 00 14 */	beq lbl_8036A958
+/* 8036A948 003665E8  7F E4 FB 78 */	mr r4, r31
+/* 8036A94C 003665EC  38 60 00 00 */	li r3, 0
+/* 8036A950 003665F0  7D 89 03 A6 */	mtctr r12
+/* 8036A954 003665F4  4E 80 04 21 */	bctrl 
+lbl_8036A958:
+/* 8036A958 003665F8  48 00 23 F5 */	bl "stateReady"
+lbl_8036A95C:
+/* 8036A95C 003665FC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036A960 00366600  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036A964 00366604  7C 08 03 A6 */	mtlr r0
+/* 8036A968 00366608  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036A96C 0036660C  4E 80 00 20 */	blr 
+
+.global "cbForStoreErrorCode1"
+"cbForStoreErrorCode1":
+/* 8036A970 00366610  3C A0 80 37 */	lis r5, "cbForStateError"@ha
+/* 8036A974 00366614  38 60 00 00 */	li r3, 0
+/* 8036A978 00366618  38 A5 A8 60 */	addi r5, r5, "cbForStateError"@l
+/* 8036A97C 0036661C  38 80 00 00 */	li r4, 0
+/* 8036A980 00366620  48 00 51 7C */	b "DVDLowStopMotor"
+
+.global "cbForStoreErrorCode2"
+"cbForStoreErrorCode2":
+/* 8036A984 00366624  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036A988 00366628  7C 08 02 A6 */	mflr r0
+/* 8036A98C 0036662C  38 60 00 00 */	li r3, 0
+/* 8036A990 00366630  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036A994 00366634  48 00 55 CD */	bl "DVDLowSetSpinupFlag"
+/* 8036A998 00366638  3C 60 80 37 */	lis r3, "cbForStateError"@ha
+/* 8036A99C 0036663C  38 63 A8 60 */	addi r3, r3, "cbForStateError"@l
+/* 8036A9A0 00366640  48 00 55 CD */	bl "DVDLowReset"
+/* 8036A9A4 00366644  38 00 00 00 */	li r0, 0
+/* 8036A9A8 00366648  90 0D C4 04 */	stw r0, "ResetRequired"-_SDA_BASE_(r13)
+/* 8036A9AC 0036664C  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036A9B0 00366650  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036A9B4 00366654  7C 08 03 A6 */	mtlr r0
+/* 8036A9B8 00366658  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036A9BC 0036665C  4E 80 00 20 */	blr 
+
+.global "CategorizeError"
+"CategorizeError":
+/* 8036A9C0 00366660  3C 03 FF FE */	addis r0, r3, 0xfffe
+/* 8036A9C4 00366664  28 00 04 00 */	cmplwi r0, 0x400
+/* 8036A9C8 00366668  40 82 00 10 */	bne lbl_8036A9D8
+/* 8036A9CC 0036666C  90 6D C4 08 */	stw r3, "LastError"-_SDA_BASE_(r13)
+/* 8036A9D0 00366670  38 60 00 01 */	li r3, 1
+/* 8036A9D4 00366674  4E 80 00 20 */	blr 
+lbl_8036A9D8:
+/* 8036A9D8 00366678  54 64 02 3E */	clrlwi r4, r3, 8
+/* 8036A9DC 0036667C  3C 04 FF FA */	addis r0, r4, 0xfffa
+/* 8036A9E0 00366680  28 00 28 00 */	cmplwi r0, 0x2800
+/* 8036A9E4 00366684  41 82 00 28 */	beq lbl_8036AA0C
+/* 8036A9E8 00366688  3C 04 FF FE */	addis r0, r4, 0xfffe
+/* 8036A9EC 0036668C  28 00 3A 00 */	cmplwi r0, 0x3a00
+/* 8036A9F0 00366690  41 82 00 1C */	beq lbl_8036AA0C
+/* 8036A9F4 00366694  3C 64 FF FB */	addis r3, r4, 0xfffb
+/* 8036A9F8 00366698  28 03 30 00 */	cmplwi r3, 0x3000
+/* 8036A9FC 0036669C  41 82 00 10 */	beq lbl_8036AA0C
+/* 8036AA00 003666A0  3C 04 FF F5 */	addis r0, r4, 0xfff5
+/* 8036AA04 003666A4  28 00 5A 01 */	cmplwi r0, 0x5a01
+/* 8036AA08 003666A8  40 82 00 0C */	bne lbl_8036AA14
+lbl_8036AA0C:
+/* 8036AA0C 003666AC  38 60 00 00 */	li r3, 0
+/* 8036AA10 003666B0  4E 80 00 20 */	blr 
+lbl_8036AA14:
+/* 8036AA14 003666B4  28 03 20 00 */	cmplwi r3, 0x2000
+/* 8036AA18 003666B8  40 82 00 30 */	bne lbl_8036AA48
+/* 8036AA1C 003666BC  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AA20 003666C0  80 03 00 08 */	lwz r0, 8(r3)
+/* 8036AA24 003666C4  28 00 00 25 */	cmplwi r0, 0x25
+/* 8036AA28 003666C8  41 82 00 18 */	beq lbl_8036AA40
+/* 8036AA2C 003666CC  3C 60 80 37 */	lis r3, "stateDownRotation"@ha
+/* 8036AA30 003666D0  80 0D C4 24 */	lwz r0, "LastState"-_SDA_BASE_(r13)
+/* 8036AA34 003666D4  38 63 C7 98 */	addi r3, r3, "stateDownRotation"@l
+/* 8036AA38 003666D8  7C 00 18 40 */	cmplw r0, r3
+/* 8036AA3C 003666DC  40 82 00 0C */	bne lbl_8036AA48
+lbl_8036AA40:
+/* 8036AA40 003666E0  38 60 00 00 */	li r3, 0
+/* 8036AA44 003666E4  4E 80 00 20 */	blr 
+lbl_8036AA48:
+/* 8036AA48 003666E8  80 6D C3 B8 */	lwz r3, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036AA4C 003666EC  38 03 00 01 */	addi r0, r3, 1
+/* 8036AA50 003666F0  90 0D C3 B8 */	stw r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036AA54 003666F4  80 0D C3 B8 */	lwz r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036AA58 003666F8  2C 00 00 02 */	cmpwi r0, 2
+/* 8036AA5C 003666FC  40 82 00 28 */	bne lbl_8036AA84
+/* 8036AA60 00366700  80 0D C4 08 */	lwz r0, "LastError"-_SDA_BASE_(r13)
+/* 8036AA64 00366704  7C 04 00 40 */	cmplw r4, r0
+/* 8036AA68 00366708  40 82 00 10 */	bne lbl_8036AA78
+/* 8036AA6C 0036670C  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
+/* 8036AA70 00366710  38 60 00 01 */	li r3, 1
+/* 8036AA74 00366714  4E 80 00 20 */	blr 
+lbl_8036AA78:
+/* 8036AA78 00366718  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
+/* 8036AA7C 0036671C  38 60 00 02 */	li r3, 2
+/* 8036AA80 00366720  4E 80 00 20 */	blr 
+lbl_8036AA84:
+/* 8036AA84 00366724  3C 04 FF FD */	addis r0, r4, 0xfffd
+/* 8036AA88 00366728  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
+/* 8036AA8C 0036672C  28 00 11 00 */	cmplwi r0, 0x1100
+/* 8036AA90 00366730  41 82 00 14 */	beq lbl_8036AAA4
+/* 8036AA94 00366734  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AA98 00366738  80 03 00 08 */	lwz r0, 8(r3)
+/* 8036AA9C 0036673C  28 00 00 05 */	cmplwi r0, 5
+/* 8036AAA0 00366740  40 82 00 0C */	bne lbl_8036AAAC
+lbl_8036AAA4:
+/* 8036AAA4 00366744  38 60 00 02 */	li r3, 2
+/* 8036AAA8 00366748  4E 80 00 20 */	blr 
+lbl_8036AAAC:
+/* 8036AAAC 0036674C  38 60 00 03 */	li r3, 3
+/* 8036AAB0 00366750  4E 80 00 20 */	blr 
+
+.global "cbForStoreErrorCode3"
+"cbForStoreErrorCode3":
+/* 8036AAB4 00366754  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036AAB8 00366758  7C 08 02 A6 */	mflr r0
+/* 8036AABC 0036675C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036AAC0 00366760  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036AAC4 00366764  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036AAC8 00366768  48 07 59 95 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036AACC 0036676C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AAD0 00366770  7C 7F 1B 78 */	mr r31, r3
+/* 8036AAD4 00366774  28 00 00 05 */	cmplwi r0, 5
+/* 8036AAD8 00366778  41 80 00 0C */	blt lbl_8036AAE4
+/* 8036AADC 0036677C  38 00 00 00 */	li r0, 0
+/* 8036AAE0 00366780  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036AAE4:
+/* 8036AAE4 00366784  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AAE8 00366788  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036AAEC 0036678C  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AAF0 00366790  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036AAF4 00366794  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036AAF8 00366798  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AAFC 0036679C  38 C0 00 10 */	li r6, 0x10
+/* 8036AB00 003667A0  38 80 00 00 */	li r4, 0
+/* 8036AB04 003667A4  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036AB08 003667A8  7C BE 2A 14 */	add r5, r30, r5
+/* 8036AB0C 003667AC  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036AB10 003667B0  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036AB14 003667B4  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036AB18 003667B8  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036AB1C 003667BC  7C 7E 02 14 */	add r3, r30, r0
+/* 8036AB20 003667C0  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036AB24 003667C4  48 07 95 0D */	bl "OSGetTick"
+/* 8036AB28 003667C8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AB2C 003667CC  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AB30 003667D0  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036AB34 003667D4  38 04 00 01 */	addi r0, r4, 1
+/* 8036AB38 003667D8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AB3C 003667DC  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036AB40 003667E0  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036AB44 003667E4  7F E3 FB 78 */	mr r3, r31
+/* 8036AB48 003667E8  48 07 59 3D */	bl "OSRestoreInterrupts"
+/* 8036AB4C 003667EC  3C A0 80 37 */	lis r5, "cbForStateGoToRetry"@ha
+/* 8036AB50 003667F0  38 60 00 00 */	li r3, 0
+/* 8036AB54 003667F4  38 A5 B3 30 */	addi r5, r5, "cbForStateGoToRetry"@l
+/* 8036AB58 003667F8  38 80 00 00 */	li r4, 0
+/* 8036AB5C 003667FC  48 00 4F A1 */	bl "DVDLowStopMotor"
+/* 8036AB60 00366800  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036AB64 00366804  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036AB68 00366808  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036AB6C 0036680C  7C 08 03 A6 */	mtlr r0
+/* 8036AB70 00366810  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036AB74 00366814  4E 80 00 20 */	blr 
+
+.global "cbForStateGettingError"
+"cbForStateGettingError":
+/* 8036AB78 00366818  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036AB7C 0036681C  7C 08 02 A6 */	mflr r0
+/* 8036AB80 00366820  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036AB84 00366824  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036AB88 00366828  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036AB8C 0036682C  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036AB90 00366830  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8036AB94 00366834  7C 7C 1B 78 */	mr r28, r3
+/* 8036AB98 00366838  48 07 58 C5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036AB9C 0036683C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ABA0 00366840  2C 00 00 00 */	cmpwi r0, 0
+/* 8036ABA4 00366844  40 82 00 14 */	bne lbl_8036ABB8
+/* 8036ABA8 00366848  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036ABAC 0036684C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036ABB0 00366850  93 84 00 78 */	stw r28, 0x78(r4)
+/* 8036ABB4 00366854  48 00 00 1C */	b lbl_8036ABD0
+lbl_8036ABB8:
+/* 8036ABB8 00366858  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ABBC 0036685C  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036ABC0 00366860  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036ABC4 00366864  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036ABC8 00366868  7C 84 02 14 */	add r4, r4, r0
+/* 8036ABCC 0036686C  93 84 00 14 */	stw r28, 0x14(r4)
+lbl_8036ABD0:
+/* 8036ABD0 00366870  48 07 58 B5 */	bl "OSRestoreInterrupts"
+/* 8036ABD4 00366874  28 1C 00 10 */	cmplwi r28, 0x10
+/* 8036ABD8 00366878  40 82 00 1C */	bne lbl_8036ABF4
+/* 8036ABDC 0036687C  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036ABE0 00366880  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036ABE4 00366884  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036ABE8 00366888  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036ABEC 0036688C  48 00 41 81 */	bl "__DVDStoreErrorCode"
+/* 8036ABF0 00366890  48 00 04 6C */	b lbl_8036B05C
+lbl_8036ABF4:
+/* 8036ABF4 00366894  28 1C 00 20 */	cmplwi r28, 0x20
+/* 8036ABF8 00366898  40 82 00 1C */	bne lbl_8036AC14
+/* 8036ABFC 0036689C  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036AC00 003668A0  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036AC04 003668A4  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036AC08 003668A8  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036AC0C 003668AC  48 00 41 61 */	bl "__DVDStoreErrorCode"
+/* 8036AC10 003668B0  48 00 04 4C */	b lbl_8036B05C
+lbl_8036AC14:
+/* 8036AC14 003668B4  57 80 07 BD */	rlwinm. r0, r28, 0, 0x1e, 0x1e
+/* 8036AC18 003668B8  41 82 00 1C */	beq lbl_8036AC34
+/* 8036AC1C 003668BC  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036AC20 003668C0  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036AC24 003668C4  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036AC28 003668C8  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036AC2C 003668CC  48 00 41 41 */	bl "__DVDStoreErrorCode"
+/* 8036AC30 003668D0  48 00 04 2C */	b lbl_8036B05C
+lbl_8036AC34:
+/* 8036AC34 003668D4  48 00 5C 6D */	bl "DVDLowGetImmBufferReg"
+/* 8036AC38 003668D8  7C 7D 1B 78 */	mr r29, r3
+/* 8036AC3C 003668DC  54 7C 00 0E */	rlwinm r28, r3, 0, 0, 7
+/* 8036AC40 003668E0  4B FF FD 81 */	bl "CategorizeError"
+/* 8036AC44 003668E4  28 03 00 01 */	cmplwi r3, 1
+/* 8036AC48 003668E8  7C 7E 1B 78 */	mr r30, r3
+/* 8036AC4C 003668EC  40 82 00 18 */	bne lbl_8036AC64
+/* 8036AC50 003668F0  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036AC54 003668F4  7F A3 EB 78 */	mr r3, r29
+/* 8036AC58 003668F8  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036AC5C 003668FC  48 00 41 11 */	bl "__DVDStoreErrorCode"
+/* 8036AC60 00366900  48 00 03 FC */	b lbl_8036B05C
+lbl_8036AC64:
+/* 8036AC64 00366904  38 03 FF FE */	addi r0, r3, -2
+/* 8036AC68 00366908  28 00 00 01 */	cmplwi r0, 1
+/* 8036AC6C 0036690C  41 81 00 0C */	bgt lbl_8036AC78
+/* 8036AC70 00366910  38 A0 00 00 */	li r5, 0
+/* 8036AC74 00366914  48 00 00 68 */	b lbl_8036ACDC
+lbl_8036AC78:
+/* 8036AC78 00366918  3C 1C FF 00 */	addis r0, r28, 0xff00
+/* 8036AC7C 0036691C  28 00 00 00 */	cmplwi r0, 0
+/* 8036AC80 00366920  40 82 00 0C */	bne lbl_8036AC8C
+/* 8036AC84 00366924  38 A0 00 04 */	li r5, 4
+/* 8036AC88 00366928  48 00 00 54 */	b lbl_8036ACDC
+lbl_8036AC8C:
+/* 8036AC8C 0036692C  3C 1C FE 00 */	addis r0, r28, 0xfe00
+/* 8036AC90 00366930  28 00 00 00 */	cmplwi r0, 0
+/* 8036AC94 00366934  40 82 00 0C */	bne lbl_8036ACA0
+/* 8036AC98 00366938  38 A0 00 06 */	li r5, 6
+/* 8036AC9C 0036693C  48 00 00 40 */	b lbl_8036ACDC
+lbl_8036ACA0:
+/* 8036ACA0 00366940  3C 1C FD 00 */	addis r0, r28, 0xfd00
+/* 8036ACA4 00366944  28 00 00 00 */	cmplwi r0, 0
+/* 8036ACA8 00366948  40 82 00 0C */	bne lbl_8036ACB4
+/* 8036ACAC 0036694C  38 A0 00 03 */	li r5, 3
+/* 8036ACB0 00366950  48 00 00 2C */	b lbl_8036ACDC
+lbl_8036ACB4:
+/* 8036ACB4 00366954  2C 1C 00 00 */	cmpwi r28, 0
+/* 8036ACB8 00366958  40 82 00 20 */	bne lbl_8036ACD8
+/* 8036ACBC 0036695C  3C 1D FF FB */	addis r0, r29, 0xfffb
+/* 8036ACC0 00366960  28 00 30 00 */	cmplwi r0, 0x3000
+/* 8036ACC4 00366964  40 82 00 0C */	bne lbl_8036ACD0
+/* 8036ACC8 00366968  38 A0 00 01 */	li r5, 1
+/* 8036ACCC 0036696C  48 00 00 10 */	b lbl_8036ACDC
+lbl_8036ACD0:
+/* 8036ACD0 00366970  38 A0 00 05 */	li r5, 5
+/* 8036ACD4 00366974  48 00 00 08 */	b lbl_8036ACDC
+lbl_8036ACD8:
+/* 8036ACD8 00366978  38 A0 00 05 */	li r5, 5
+lbl_8036ACDC:
+/* 8036ACDC 0036697C  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036ACE0 00366980  2C 00 00 00 */	cmpwi r0, 0
+/* 8036ACE4 00366984  41 82 00 6C */	beq lbl_8036AD50
+/* 8036ACE8 00366988  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036ACEC 0036698C  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036ACF0 00366990  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036ACF4 00366994  38 80 00 00 */	li r4, 0
+/* 8036ACF8 00366998  90 AD C3 B4 */	stw r5, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036ACFC 0036699C  38 00 00 0A */	li r0, 0xa
+/* 8036AD00 003669A0  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036AD04 003669A4  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036AD08 003669A8  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036AD0C 003669AC  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036AD10 003669B0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036AD14 003669B4  41 82 00 14 */	beq lbl_8036AD28
+/* 8036AD18 003669B8  7F E4 FB 78 */	mr r4, r31
+/* 8036AD1C 003669BC  38 60 FF FD */	li r3, -3
+/* 8036AD20 003669C0  7D 89 03 A6 */	mtctr r12
+/* 8036AD24 003669C4  4E 80 04 21 */	bctrl 
+lbl_8036AD28:
+/* 8036AD28 003669C8  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036AD2C 003669CC  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036AD30 003669D0  41 82 00 14 */	beq lbl_8036AD44
+/* 8036AD34 003669D4  7F E4 FB 78 */	mr r4, r31
+/* 8036AD38 003669D8  38 60 00 00 */	li r3, 0
+/* 8036AD3C 003669DC  7D 89 03 A6 */	mtctr r12
+/* 8036AD40 003669E0  4E 80 04 21 */	bctrl 
+lbl_8036AD44:
+/* 8036AD44 003669E4  48 00 20 09 */	bl "stateReady"
+/* 8036AD48 003669E8  38 00 00 01 */	li r0, 1
+/* 8036AD4C 003669EC  48 00 00 08 */	b lbl_8036AD54
+lbl_8036AD50:
+/* 8036AD50 003669F0  38 00 00 00 */	li r0, 0
+lbl_8036AD54:
+/* 8036AD54 003669F4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036AD58 003669F8  40 82 03 04 */	bne lbl_8036B05C
+/* 8036AD5C 003669FC  28 1E 00 02 */	cmplwi r30, 2
+/* 8036AD60 00366A00  40 82 00 18 */	bne lbl_8036AD78
+/* 8036AD64 00366A04  3C 80 80 37 */	lis r4, "cbForStoreErrorCode3"@ha
+/* 8036AD68 00366A08  7F A3 EB 78 */	mr r3, r29
+/* 8036AD6C 00366A0C  38 84 AA B4 */	addi r4, r4, "cbForStoreErrorCode3"@l
+/* 8036AD70 00366A10  48 00 3F FD */	bl "__DVDStoreErrorCode"
+/* 8036AD74 00366A14  48 00 02 E8 */	b lbl_8036B05C
+lbl_8036AD78:
+/* 8036AD78 00366A18  28 1E 00 03 */	cmplwi r30, 3
+/* 8036AD7C 00366A1C  40 82 00 CC */	bne lbl_8036AE48
+/* 8036AD80 00366A20  57 A3 02 3E */	clrlwi r3, r29, 8
+/* 8036AD84 00366A24  3C 03 FF FD */	addis r0, r3, 0xfffd
+/* 8036AD88 00366A28  28 00 11 00 */	cmplwi r0, 0x1100
+/* 8036AD8C 00366A2C  40 82 00 A8 */	bne lbl_8036AE34
+/* 8036AD90 00366A30  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AD94 00366A34  83 A3 00 10 */	lwz r29, 0x10(r3)
+/* 8036AD98 00366A38  48 07 56 C5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036AD9C 00366A3C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ADA0 00366A40  7C 7F 1B 78 */	mr r31, r3
+/* 8036ADA4 00366A44  28 00 00 05 */	cmplwi r0, 5
+/* 8036ADA8 00366A48  41 80 00 0C */	blt lbl_8036ADB4
+/* 8036ADAC 00366A4C  38 00 00 00 */	li r0, 0
+/* 8036ADB0 00366A50  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036ADB4:
+/* 8036ADB4 00366A54  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ADB8 00366A58  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036ADBC 00366A5C  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ADC0 00366A60  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036ADC4 00366A64  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036ADC8 00366A68  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ADCC 00366A6C  38 C0 00 02 */	li r6, 2
+/* 8036ADD0 00366A70  38 80 00 00 */	li r4, 0
+/* 8036ADD4 00366A74  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036ADD8 00366A78  7C BE 2A 14 */	add r5, r30, r5
+/* 8036ADDC 00366A7C  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036ADE0 00366A80  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036ADE4 00366A84  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036ADE8 00366A88  93 A3 00 20 */	stw r29, 0x20(r3)
+/* 8036ADEC 00366A8C  7C 7E 02 14 */	add r3, r30, r0
+/* 8036ADF0 00366A90  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036ADF4 00366A94  48 07 92 3D */	bl "OSGetTick"
+/* 8036ADF8 00366A98  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036ADFC 00366A9C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AE00 00366AA0  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036AE04 00366AA4  38 04 00 01 */	addi r0, r4, 1
+/* 8036AE08 00366AA8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AE0C 00366AAC  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036AE10 00366AB0  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036AE14 00366AB4  7F E3 FB 78 */	mr r3, r31
+/* 8036AE18 00366AB8  48 07 56 6D */	bl "OSRestoreInterrupts"
+/* 8036AE1C 00366ABC  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AE20 00366AC0  3C 80 80 37 */	lis r4, "cbForUnrecoveredError"@ha
+/* 8036AE24 00366AC4  38 84 B0 7C */	addi r4, r4, "cbForUnrecoveredError"@l
+/* 8036AE28 00366AC8  80 63 00 10 */	lwz r3, 0x10(r3)
+/* 8036AE2C 00366ACC  48 00 57 81 */	bl "DVDLowSeek"
+/* 8036AE30 00366AD0  48 00 02 2C */	b lbl_8036B05C
+lbl_8036AE34:
+/* 8036AE34 00366AD4  81 8D C4 24 */	lwz r12, "LastState"-_SDA_BASE_(r13)
+/* 8036AE38 00366AD8  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AE3C 00366ADC  7D 89 03 A6 */	mtctr r12
+/* 8036AE40 00366AE0  4E 80 04 21 */	bctrl 
+/* 8036AE44 00366AE4  48 00 02 18 */	b lbl_8036B05C
+lbl_8036AE48:
+/* 8036AE48 00366AE8  3C 1C FF 00 */	addis r0, r28, 0xff00
+/* 8036AE4C 00366AEC  28 00 00 00 */	cmplwi r0, 0
+/* 8036AE50 00366AF0  40 82 00 84 */	bne lbl_8036AED4
+/* 8036AE54 00366AF4  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036AE58 00366AF8  38 00 00 05 */	li r0, 5
+/* 8036AE5C 00366AFC  38 60 00 01 */	li r3, 1
+/* 8036AE60 00366B00  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036AE64 00366B04  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036AE68 00366B08  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036AE6C 00366B0C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036AE70 00366B10  40 82 01 EC */	bne lbl_8036B05C
+/* 8036AE74 00366B14  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036AE78 00366B18  2C 00 00 00 */	cmpwi r0, 0
+/* 8036AE7C 00366B1C  40 82 01 E0 */	bne lbl_8036B05C
+/* 8036AE80 00366B20  3F C0 80 59 */	lis r30, "CoverAlarm"@ha
+/* 8036AE84 00366B24  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036AE88 00366B28  38 7E C6 40 */	addi r3, r30, "CoverAlarm"@l
+/* 8036AE8C 00366B2C  48 07 04 B5 */	bl "OSCreateAlarm"
+/* 8036AE90 00366B30  48 07 91 A1 */	bl "OSGetTick"
+/* 8036AE94 00366B34  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036AE98 00366B38  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036AE9C 00366B3C  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036AEA0 00366B40  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036AEA4 00366B44  7C 66 1B 78 */	mr r6, r3
+/* 8036AEA8 00366B48  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036AEAC 00366B4C  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036AEB0 00366B50  38 7E C6 40 */	addi r3, r30, -14784
+/* 8036AEB4 00366B54  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036AEB8 00366B58  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036AEBC 00366B5C  38 A0 00 00 */	li r5, 0
+/* 8036AEC0 00366B60  38 E0 00 00 */	li r7, 0
+/* 8036AEC4 00366B64  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036AEC8 00366B68  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036AECC 00366B6C  48 07 07 45 */	bl "OSSetPeriodicAlarm"
+/* 8036AED0 00366B70  48 00 01 8C */	b lbl_8036B05C
+lbl_8036AED4:
+/* 8036AED4 00366B74  3C 1C FE 00 */	addis r0, r28, 0xfe00
+/* 8036AED8 00366B78  28 00 00 00 */	cmplwi r0, 0
+/* 8036AEDC 00366B7C  40 82 00 18 */	bne lbl_8036AEF4
+/* 8036AEE0 00366B80  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036AEE4 00366B84  38 00 00 03 */	li r0, 3
+/* 8036AEE8 00366B88  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036AEEC 00366B8C  48 00 15 5D */	bl "stateCoverClosed"
+/* 8036AEF0 00366B90  48 00 01 6C */	b lbl_8036B05C
+lbl_8036AEF4:
+/* 8036AEF4 00366B94  3C 1C FD 00 */	addis r0, r28, 0xfd00
+/* 8036AEF8 00366B98  28 00 00 00 */	cmplwi r0, 0
+/* 8036AEFC 00366B9C  40 82 00 84 */	bne lbl_8036AF80
+/* 8036AF00 00366BA0  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036AF04 00366BA4  38 00 00 04 */	li r0, 4
+/* 8036AF08 00366BA8  38 60 00 01 */	li r3, 1
+/* 8036AF0C 00366BAC  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036AF10 00366BB0  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036AF14 00366BB4  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036AF18 00366BB8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036AF1C 00366BBC  40 82 01 40 */	bne lbl_8036B05C
+/* 8036AF20 00366BC0  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036AF24 00366BC4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036AF28 00366BC8  40 82 01 34 */	bne lbl_8036B05C
+/* 8036AF2C 00366BCC  3F C0 80 59 */	lis r30, "CoverAlarm"@ha
+/* 8036AF30 00366BD0  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036AF34 00366BD4  38 7E C6 40 */	addi r3, r30, "CoverAlarm"@l
+/* 8036AF38 00366BD8  48 07 04 09 */	bl "OSCreateAlarm"
+/* 8036AF3C 00366BDC  48 07 90 F5 */	bl "OSGetTick"
+/* 8036AF40 00366BE0  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036AF44 00366BE4  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036AF48 00366BE8  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036AF4C 00366BEC  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036AF50 00366BF0  7C 66 1B 78 */	mr r6, r3
+/* 8036AF54 00366BF4  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036AF58 00366BF8  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036AF5C 00366BFC  38 7E C6 40 */	addi r3, r30, -14784
+/* 8036AF60 00366C00  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036AF64 00366C04  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036AF68 00366C08  38 A0 00 00 */	li r5, 0
+/* 8036AF6C 00366C0C  38 E0 00 00 */	li r7, 0
+/* 8036AF70 00366C10  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036AF74 00366C14  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036AF78 00366C18  48 07 06 99 */	bl "OSSetPeriodicAlarm"
+/* 8036AF7C 00366C1C  48 00 00 E0 */	b lbl_8036B05C
+lbl_8036AF80:
+/* 8036AF80 00366C20  2C 1C 00 00 */	cmpwi r28, 0
+/* 8036AF84 00366C24  40 82 00 C4 */	bne lbl_8036B048
+/* 8036AF88 00366C28  3C 1D FF FB */	addis r0, r29, 0xfffb
+/* 8036AF8C 00366C2C  28 00 30 00 */	cmplwi r0, 0x3000
+/* 8036AF90 00366C30  40 82 00 A0 */	bne lbl_8036B030
+/* 8036AF94 00366C34  48 07 54 C9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036AF98 00366C38  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AF9C 00366C3C  7C 7F 1B 78 */	mr r31, r3
+/* 8036AFA0 00366C40  28 00 00 05 */	cmplwi r0, 5
+/* 8036AFA4 00366C44  41 80 00 0C */	blt lbl_8036AFB0
+/* 8036AFA8 00366C48  38 00 00 00 */	li r0, 0
+/* 8036AFAC 00366C4C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036AFB0:
+/* 8036AFB0 00366C50  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AFB4 00366C54  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036AFB8 00366C58  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AFBC 00366C5C  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036AFC0 00366C60  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036AFC4 00366C64  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AFC8 00366C68  38 C0 00 10 */	li r6, 0x10
+/* 8036AFCC 00366C6C  38 80 00 00 */	li r4, 0
+/* 8036AFD0 00366C70  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036AFD4 00366C74  7C BE 2A 14 */	add r5, r30, r5
+/* 8036AFD8 00366C78  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036AFDC 00366C7C  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036AFE0 00366C80  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036AFE4 00366C84  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036AFE8 00366C88  7C 7E 02 14 */	add r3, r30, r0
+/* 8036AFEC 00366C8C  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036AFF0 00366C90  48 07 90 41 */	bl "OSGetTick"
+/* 8036AFF4 00366C94  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AFF8 00366C98  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036AFFC 00366C9C  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B000 00366CA0  38 04 00 01 */	addi r0, r4, 1
+/* 8036B004 00366CA4  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B008 00366CA8  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036B00C 00366CAC  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B010 00366CB0  7F E3 FB 78 */	mr r3, r31
+/* 8036B014 00366CB4  48 07 54 71 */	bl "OSRestoreInterrupts"
+/* 8036B018 00366CB8  3C A0 80 37 */	lis r5, "cbForStateCheckID1"@ha
+/* 8036B01C 00366CBC  38 60 00 00 */	li r3, 0
+/* 8036B020 00366CC0  38 A5 C0 EC */	addi r5, r5, "cbForStateCheckID1"@l
+/* 8036B024 00366CC4  38 80 00 00 */	li r4, 0
+/* 8036B028 00366CC8  48 00 4A D5 */	bl "DVDLowStopMotor"
+/* 8036B02C 00366CCC  48 00 00 30 */	b lbl_8036B05C
+lbl_8036B030:
+/* 8036B030 00366CD0  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036B034 00366CD4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036B038 00366CD8  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036B03C 00366CDC  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036B040 00366CE0  48 00 3D 2D */	bl "__DVDStoreErrorCode"
+/* 8036B044 00366CE4  48 00 00 18 */	b lbl_8036B05C
+lbl_8036B048:
+/* 8036B048 00366CE8  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036B04C 00366CEC  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036B050 00366CF0  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036B054 00366CF4  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036B058 00366CF8  48 00 3D 15 */	bl "__DVDStoreErrorCode"
+lbl_8036B05C:
+/* 8036B05C 00366CFC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036B060 00366D00  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036B064 00366D04  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036B068 00366D08  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036B06C 00366D0C  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8036B070 00366D10  7C 08 03 A6 */	mtlr r0
+/* 8036B074 00366D14  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036B078 00366D18  4E 80 00 20 */	blr 
+
+.global "cbForUnrecoveredError"
+"cbForUnrecoveredError":
+/* 8036B07C 00366D1C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036B080 00366D20  7C 08 02 A6 */	mflr r0
+/* 8036B084 00366D24  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036B088 00366D28  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036B08C 00366D2C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036B090 00366D30  7C 7E 1B 78 */	mr r30, r3
+/* 8036B094 00366D34  48 07 53 C9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B098 00366D38  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B09C 00366D3C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B0A0 00366D40  40 82 00 14 */	bne lbl_8036B0B4
+/* 8036B0A4 00366D44  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B0A8 00366D48  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B0AC 00366D4C  93 C4 00 78 */	stw r30, 0x78(r4)
+/* 8036B0B0 00366D50  48 00 00 1C */	b lbl_8036B0CC
+lbl_8036B0B4:
+/* 8036B0B4 00366D54  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B0B8 00366D58  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B0BC 00366D5C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B0C0 00366D60  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B0C4 00366D64  7C 84 02 14 */	add r4, r4, r0
+/* 8036B0C8 00366D68  93 C4 00 14 */	stw r30, 0x14(r4)
+lbl_8036B0CC:
+/* 8036B0CC 00366D6C  48 07 53 B9 */	bl "OSRestoreInterrupts"
+/* 8036B0D0 00366D70  28 1E 00 10 */	cmplwi r30, 0x10
+/* 8036B0D4 00366D74  40 82 00 1C */	bne lbl_8036B0F0
+/* 8036B0D8 00366D78  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036B0DC 00366D7C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B0E0 00366D80  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036B0E4 00366D84  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B0E8 00366D88  48 00 3C 85 */	bl "__DVDStoreErrorCode"
+/* 8036B0EC 00366D8C  48 00 01 58 */	b lbl_8036B244
+lbl_8036B0F0:
+/* 8036B0F0 00366D90  28 1E 00 20 */	cmplwi r30, 0x20
+/* 8036B0F4 00366D94  40 82 00 1C */	bne lbl_8036B110
+/* 8036B0F8 00366D98  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036B0FC 00366D9C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B100 00366DA0  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036B104 00366DA4  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B108 00366DA8  48 00 3C 65 */	bl "__DVDStoreErrorCode"
+/* 8036B10C 00366DAC  48 00 01 38 */	b lbl_8036B244
+lbl_8036B110:
+/* 8036B110 00366DB0  57 C0 07 FF */	clrlwi. r0, r30, 0x1f
+/* 8036B114 00366DB4  41 82 00 A0 */	beq lbl_8036B1B4
+/* 8036B118 00366DB8  48 07 53 45 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B11C 00366DBC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B120 00366DC0  7C 7F 1B 78 */	mr r31, r3
+/* 8036B124 00366DC4  28 00 00 05 */	cmplwi r0, 5
+/* 8036B128 00366DC8  41 80 00 0C */	blt lbl_8036B134
+/* 8036B12C 00366DCC  38 00 00 00 */	li r0, 0
+/* 8036B130 00366DD0  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B134:
+/* 8036B134 00366DD4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B138 00366DD8  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036B13C 00366DDC  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B140 00366DE0  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036B144 00366DE4  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B148 00366DE8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B14C 00366DEC  38 C0 00 10 */	li r6, 0x10
+/* 8036B150 00366DF0  38 80 00 00 */	li r4, 0
+/* 8036B154 00366DF4  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B158 00366DF8  7C BE 2A 14 */	add r5, r30, r5
+/* 8036B15C 00366DFC  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036B160 00366E00  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036B164 00366E04  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B168 00366E08  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036B16C 00366E0C  7C 7E 02 14 */	add r3, r30, r0
+/* 8036B170 00366E10  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B174 00366E14  48 07 8E BD */	bl "OSGetTick"
+/* 8036B178 00366E18  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B17C 00366E1C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B180 00366E20  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B184 00366E24  38 04 00 01 */	addi r0, r4, 1
+/* 8036B188 00366E28  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B18C 00366E2C  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036B190 00366E30  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B194 00366E34  7F E3 FB 78 */	mr r3, r31
+/* 8036B198 00366E38  48 07 52 ED */	bl "OSRestoreInterrupts"
+/* 8036B19C 00366E3C  3C A0 80 37 */	lis r5, "cbForStateGoToRetry"@ha
+/* 8036B1A0 00366E40  38 60 00 00 */	li r3, 0
+/* 8036B1A4 00366E44  38 A5 B3 30 */	addi r5, r5, "cbForStateGoToRetry"@l
+/* 8036B1A8 00366E48  38 80 00 00 */	li r4, 0
+/* 8036B1AC 00366E4C  48 00 49 51 */	bl "DVDLowStopMotor"
+/* 8036B1B0 00366E50  48 00 00 94 */	b lbl_8036B244
+lbl_8036B1B4:
+/* 8036B1B4 00366E54  48 07 52 A9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B1B8 00366E58  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B1BC 00366E5C  7C 7F 1B 78 */	mr r31, r3
+/* 8036B1C0 00366E60  28 00 00 05 */	cmplwi r0, 5
+/* 8036B1C4 00366E64  41 80 00 0C */	blt lbl_8036B1D0
+/* 8036B1C8 00366E68  38 00 00 00 */	li r0, 0
+/* 8036B1CC 00366E6C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B1D0:
+/* 8036B1D0 00366E70  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B1D4 00366E74  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036B1D8 00366E78  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B1DC 00366E7C  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036B1E0 00366E80  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B1E4 00366E84  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B1E8 00366E88  38 C0 00 27 */	li r6, 0x27
+/* 8036B1EC 00366E8C  38 80 00 00 */	li r4, 0
+/* 8036B1F0 00366E90  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B1F4 00366E94  7C BE 2A 14 */	add r5, r30, r5
+/* 8036B1F8 00366E98  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036B1FC 00366E9C  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036B200 00366EA0  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B204 00366EA4  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036B208 00366EA8  7C 7E 02 14 */	add r3, r30, r0
+/* 8036B20C 00366EAC  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B210 00366EB0  48 07 8E 21 */	bl "OSGetTick"
+/* 8036B214 00366EB4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B218 00366EB8  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B21C 00366EBC  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B220 00366EC0  38 04 00 01 */	addi r0, r4, 1
+/* 8036B224 00366EC4  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B228 00366EC8  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036B22C 00366ECC  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B230 00366ED0  7F E3 FB 78 */	mr r3, r31
+/* 8036B234 00366ED4  48 07 52 51 */	bl "OSRestoreInterrupts"
+/* 8036B238 00366ED8  3C 60 80 37 */	lis r3, "cbForUnrecoveredErrorRetry"@ha
+/* 8036B23C 00366EDC  38 63 B2 5C */	addi r3, r3, "cbForUnrecoveredErrorRetry"@l
+/* 8036B240 00366EE0  48 00 4B B9 */	bl "DVDLowRequestError"
+lbl_8036B244:
+/* 8036B244 00366EE4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036B248 00366EE8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036B24C 00366EEC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036B250 00366EF0  7C 08 03 A6 */	mtlr r0
+/* 8036B254 00366EF4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036B258 00366EF8  4E 80 00 20 */	blr 
+
+.global "cbForUnrecoveredErrorRetry"
+"cbForUnrecoveredErrorRetry":
+/* 8036B25C 00366EFC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036B260 00366F00  7C 08 02 A6 */	mflr r0
+/* 8036B264 00366F04  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036B268 00366F08  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036B26C 00366F0C  7C 7F 1B 78 */	mr r31, r3
+/* 8036B270 00366F10  48 07 51 ED */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B274 00366F14  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B278 00366F18  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B27C 00366F1C  40 82 00 14 */	bne lbl_8036B290
+/* 8036B280 00366F20  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B284 00366F24  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B288 00366F28  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036B28C 00366F2C  48 00 00 1C */	b lbl_8036B2A8
+lbl_8036B290:
+/* 8036B290 00366F30  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B294 00366F34  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B298 00366F38  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B29C 00366F3C  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B2A0 00366F40  7C 84 02 14 */	add r4, r4, r0
+/* 8036B2A4 00366F44  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036B2A8:
+/* 8036B2A8 00366F48  48 07 51 DD */	bl "OSRestoreInterrupts"
+/* 8036B2AC 00366F4C  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036B2B0 00366F50  40 82 00 1C */	bne lbl_8036B2CC
+/* 8036B2B4 00366F54  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036B2B8 00366F58  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B2BC 00366F5C  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036B2C0 00366F60  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B2C4 00366F64  48 00 3A A9 */	bl "__DVDStoreErrorCode"
+/* 8036B2C8 00366F68  48 00 00 54 */	b lbl_8036B31C
+lbl_8036B2CC:
+/* 8036B2CC 00366F6C  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036B2D0 00366F70  40 82 00 1C */	bne lbl_8036B2EC
+/* 8036B2D4 00366F74  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036B2D8 00366F78  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B2DC 00366F7C  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036B2E0 00366F80  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B2E4 00366F84  48 00 3A 89 */	bl "__DVDStoreErrorCode"
+/* 8036B2E8 00366F88  48 00 00 34 */	b lbl_8036B31C
+lbl_8036B2EC:
+/* 8036B2EC 00366F8C  57 E0 07 BD */	rlwinm. r0, r31, 0, 0x1e, 0x1e
+/* 8036B2F0 00366F90  41 82 00 1C */	beq lbl_8036B30C
+/* 8036B2F4 00366F94  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036B2F8 00366F98  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036B2FC 00366F9C  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036B300 00366FA0  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036B304 00366FA4  48 00 3A 69 */	bl "__DVDStoreErrorCode"
+/* 8036B308 00366FA8  48 00 00 14 */	b lbl_8036B31C
+lbl_8036B30C:
+/* 8036B30C 00366FAC  48 00 55 95 */	bl "DVDLowGetImmBufferReg"
+/* 8036B310 00366FB0  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036B314 00366FB4  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036B318 00366FB8  48 00 3A 55 */	bl "__DVDStoreErrorCode"
+lbl_8036B31C:
+/* 8036B31C 00366FBC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036B320 00366FC0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036B324 00366FC4  7C 08 03 A6 */	mtlr r0
+/* 8036B328 00366FC8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036B32C 00366FCC  4E 80 00 20 */	blr 
+
+.global "cbForStateGoToRetry"
+"cbForStateGoToRetry":
+/* 8036B330 00366FD0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036B334 00366FD4  7C 08 02 A6 */	mflr r0
+/* 8036B338 00366FD8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036B33C 00366FDC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036B340 00366FE0  7C 7F 1B 78 */	mr r31, r3
+/* 8036B344 00366FE4  48 07 51 19 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B348 00366FE8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B34C 00366FEC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B350 00366FF0  40 82 00 14 */	bne lbl_8036B364
+/* 8036B354 00366FF4  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B358 00366FF8  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B35C 00366FFC  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036B360 00367000  48 00 00 1C */	b lbl_8036B37C
+lbl_8036B364:
+/* 8036B364 00367004  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B368 00367008  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B36C 0036700C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B370 00367010  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B374 00367014  7C 84 02 14 */	add r4, r4, r0
+/* 8036B378 00367018  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036B37C:
+/* 8036B37C 0036701C  48 07 51 09 */	bl "OSRestoreInterrupts"
+/* 8036B380 00367020  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036B384 00367024  40 82 00 1C */	bne lbl_8036B3A0
+/* 8036B388 00367028  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036B38C 0036702C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B390 00367030  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036B394 00367034  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B398 00367038  48 00 39 D5 */	bl "__DVDStoreErrorCode"
+/* 8036B39C 0036703C  48 00 01 A8 */	b lbl_8036B544
+lbl_8036B3A0:
+/* 8036B3A0 00367040  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036B3A4 00367044  40 82 00 1C */	bne lbl_8036B3C0
+/* 8036B3A8 00367048  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036B3AC 0036704C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B3B0 00367050  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036B3B4 00367054  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B3B8 00367058  48 00 39 B5 */	bl "__DVDStoreErrorCode"
+/* 8036B3BC 0036705C  48 00 01 88 */	b lbl_8036B544
+lbl_8036B3C0:
+/* 8036B3C0 00367060  57 E0 07 BD */	rlwinm. r0, r31, 0, 0x1e, 0x1e
+/* 8036B3C4 00367064  41 82 00 1C */	beq lbl_8036B3E0
+/* 8036B3C8 00367068  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036B3CC 0036706C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036B3D0 00367070  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036B3D4 00367074  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036B3D8 00367078  48 00 39 95 */	bl "__DVDStoreErrorCode"
+/* 8036B3DC 0036707C  48 00 01 68 */	b lbl_8036B544
+lbl_8036B3E0:
+/* 8036B3E0 00367080  38 00 00 00 */	li r0, 0
+/* 8036B3E4 00367084  90 0D C3 B8 */	stw r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036B3E8 00367088  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B3EC 0036708C  28 00 00 04 */	cmplwi r0, 4
+/* 8036B3F0 00367090  41 82 00 4C */	beq lbl_8036B43C
+/* 8036B3F4 00367094  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B3F8 00367098  28 00 00 05 */	cmplwi r0, 5
+/* 8036B3FC 0036709C  41 82 00 40 */	beq lbl_8036B43C
+/* 8036B400 003670A0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B404 003670A4  28 00 00 0D */	cmplwi r0, 0xd
+/* 8036B408 003670A8  41 82 00 34 */	beq lbl_8036B43C
+/* 8036B40C 003670AC  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B410 003670B0  28 00 00 21 */	cmplwi r0, 0x21
+/* 8036B414 003670B4  41 82 00 28 */	beq lbl_8036B43C
+/* 8036B418 003670B8  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B41C 003670BC  28 00 00 22 */	cmplwi r0, 0x22
+/* 8036B420 003670C0  41 82 00 1C */	beq lbl_8036B43C
+/* 8036B424 003670C4  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B428 003670C8  28 00 00 0F */	cmplwi r0, 0xf
+/* 8036B42C 003670CC  41 82 00 10 */	beq lbl_8036B43C
+/* 8036B430 003670D0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B434 003670D4  28 00 00 25 */	cmplwi r0, 0x25
+/* 8036B438 003670D8  40 82 00 0C */	bne lbl_8036B444
+lbl_8036B43C:
+/* 8036B43C 003670DC  38 00 00 01 */	li r0, 1
+/* 8036B440 003670E0  90 0D C4 04 */	stw r0, "ResetRequired"-_SDA_BASE_(r13)
+lbl_8036B444:
+/* 8036B444 003670E4  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036B448 003670E8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B44C 003670EC  41 82 00 70 */	beq lbl_8036B4BC
+/* 8036B450 003670F0  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036B454 003670F4  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036B458 003670F8  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036B45C 003670FC  38 00 00 02 */	li r0, 2
+/* 8036B460 00367100  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036B464 00367104  38 80 00 00 */	li r4, 0
+/* 8036B468 00367108  38 00 00 0A */	li r0, 0xa
+/* 8036B46C 0036710C  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036B470 00367110  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036B474 00367114  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036B478 00367118  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036B47C 0036711C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036B480 00367120  41 82 00 14 */	beq lbl_8036B494
+/* 8036B484 00367124  7F E4 FB 78 */	mr r4, r31
+/* 8036B488 00367128  38 60 FF FD */	li r3, -3
+/* 8036B48C 0036712C  7D 89 03 A6 */	mtctr r12
+/* 8036B490 00367130  4E 80 04 21 */	bctrl 
+lbl_8036B494:
+/* 8036B494 00367134  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036B498 00367138  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036B49C 0036713C  41 82 00 14 */	beq lbl_8036B4B0
+/* 8036B4A0 00367140  7F E4 FB 78 */	mr r4, r31
+/* 8036B4A4 00367144  38 60 00 00 */	li r3, 0
+/* 8036B4A8 00367148  7D 89 03 A6 */	mtctr r12
+/* 8036B4AC 0036714C  4E 80 04 21 */	bctrl 
+lbl_8036B4B0:
+/* 8036B4B0 00367150  48 00 18 9D */	bl "stateReady"
+/* 8036B4B4 00367154  38 00 00 01 */	li r0, 1
+/* 8036B4B8 00367158  48 00 00 08 */	b lbl_8036B4C0
+lbl_8036B4BC:
+/* 8036B4BC 0036715C  38 00 00 00 */	li r0, 0
+lbl_8036B4C0:
+/* 8036B4C0 00367160  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B4C4 00367164  40 82 00 80 */	bne lbl_8036B544
+/* 8036B4C8 00367168  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036B4CC 0036716C  38 00 00 0B */	li r0, 0xb
+/* 8036B4D0 00367170  38 60 00 01 */	li r3, 1
+/* 8036B4D4 00367174  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036B4D8 00367178  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036B4DC 0036717C  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036B4E0 00367180  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B4E4 00367184  40 82 00 60 */	bne lbl_8036B544
+/* 8036B4E8 00367188  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036B4EC 0036718C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B4F0 00367190  40 82 00 54 */	bne lbl_8036B544
+/* 8036B4F4 00367194  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036B4F8 00367198  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036B4FC 0036719C  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036B500 003671A0  48 06 FE 41 */	bl "OSCreateAlarm"
+/* 8036B504 003671A4  48 07 8B 2D */	bl "OSGetTick"
+/* 8036B508 003671A8  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036B50C 003671AC  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036B510 003671B0  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036B514 003671B4  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036B518 003671B8  7C 66 1B 78 */	mr r6, r3
+/* 8036B51C 003671BC  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036B520 003671C0  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036B524 003671C4  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036B528 003671C8  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036B52C 003671CC  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036B530 003671D0  38 A0 00 00 */	li r5, 0
+/* 8036B534 003671D4  38 E0 00 00 */	li r7, 0
+/* 8036B538 003671D8  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036B53C 003671DC  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036B540 003671E0  48 07 00 D1 */	bl "OSSetPeriodicAlarm"
+lbl_8036B544:
+/* 8036B544 003671E4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036B548 003671E8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036B54C 003671EC  7C 08 03 A6 */	mtlr r0
+/* 8036B550 003671F0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036B554 003671F4  4E 80 00 20 */	blr 
+
+.global "stateCheckID"
+"stateCheckID":
+/* 8036B558 003671F8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036B55C 003671FC  7C 08 02 A6 */	mflr r0
+/* 8036B560 00367200  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036B564 00367204  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036B568 00367208  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036B56C 0036720C  3F C0 80 59 */	lis r30, "BB2"@ha
+/* 8036B570 00367210  3B DE C5 C0 */	addi r30, r30, "BB2"@l
+/* 8036B574 00367214  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036B578 00367218  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036B57C 0036721C  2C 00 00 03 */	cmpwi r0, 3
+/* 8036B580 00367220  41 82 00 08 */	beq lbl_8036B588
+/* 8036B584 00367224  48 00 01 90 */	b lbl_8036B714
+lbl_8036B588:
+/* 8036B588 00367228  3B E0 00 00 */	li r31, 0
+/* 8036B58C 0036722C  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036B590 00367230  93 ED C3 D0 */	stw r31, "ChangedDisc"-_SDA_BASE_(r13)
+/* 8036B594 00367234  38 7E 00 C0 */	addi r3, r30, 0xc0
+/* 8036B598 00367238  80 84 00 24 */	lwz r4, 0x24(r4)
+/* 8036B59C 0036723C  48 00 38 75 */	bl "DVDCompareDiskID"
+/* 8036B5A0 00367240  2C 03 00 00 */	cmpwi r3, 0
+/* 8036B5A4 00367244  41 82 00 D8 */	beq lbl_8036B67C
+/* 8036B5A8 00367248  80 6D C4 1C */	lwz r3, "IDShouldBe"-_SDA_BASE_(r13)
+/* 8036B5AC 0036724C  38 9E 00 C0 */	addi r4, r30, 0xc0
+/* 8036B5B0 00367250  38 A0 00 20 */	li r5, 0x20
+/* 8036B5B4 00367254  4B C9 8D 85 */	bl "memcpy"
+/* 8036B5B8 00367258  80 AD C4 20 */	lwz r5, "executing"-_SDA_BASE_(r13)
+/* 8036B5BC 0036725C  38 00 00 01 */	li r0, 1
+/* 8036B5C0 00367260  38 7E 00 00 */	addi r3, r30, 0
+/* 8036B5C4 00367264  38 80 00 20 */	li r4, 0x20
+/* 8036B5C8 00367268  90 05 00 0C */	stw r0, 0xc(r5)
+/* 8036B5CC 0036726C  48 07 0C 79 */	bl "DCInvalidateRange"
+/* 8036B5D0 00367270  93 ED C3 B8 */	stw r31, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036B5D4 00367274  38 60 00 00 */	li r3, 0
+/* 8036B5D8 00367278  48 00 52 E5 */	bl "DVDLowClearCoverInterrupt"
+/* 8036B5DC 0036727C  48 07 4E 81 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B5E0 00367280  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B5E4 00367284  7C 7D 1B 78 */	mr r29, r3
+/* 8036B5E8 00367288  28 00 00 05 */	cmplwi r0, 5
+/* 8036B5EC 0036728C  41 80 00 08 */	blt lbl_8036B5F4
+/* 8036B5F0 00367290  93 ED C3 A0 */	stw r31, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B5F4:
+/* 8036B5F4 00367294  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B5F8 00367298  3F E0 80 59 */	lis r31, "__ErrorInfo"@ha
+/* 8036B5FC 0036729C  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B600 003672A0  3B FF 13 20 */	addi r31, r31, "__ErrorInfo"@l
+/* 8036B604 003672A4  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036B608 003672A8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B60C 003672AC  38 E0 00 21 */	li r7, 0x21
+/* 8036B610 003672B0  3C A0 00 01 */	lis r5, 1
+/* 8036B614 003672B4  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B618 003672B8  38 80 00 20 */	li r4, 0x20
+/* 8036B61C 003672BC  7C DF 32 14 */	add r6, r31, r6
+/* 8036B620 003672C0  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036B624 003672C4  7C 7F 1A 14 */	add r3, r31, r3
+/* 8036B628 003672C8  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B62C 003672CC  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036B630 003672D0  7C 7F 02 14 */	add r3, r31, r0
+/* 8036B634 003672D4  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B638 003672D8  48 07 89 F9 */	bl "OSGetTick"
+/* 8036B63C 003672DC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B640 003672E0  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B644 003672E4  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B648 003672E8  38 04 00 01 */	addi r0, r4, 1
+/* 8036B64C 003672EC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B650 003672F0  7C 9F 2A 14 */	add r4, r31, r5
+/* 8036B654 003672F4  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B658 003672F8  7F A3 EB 78 */	mr r3, r29
+/* 8036B65C 003672FC  48 07 4E 29 */	bl "OSRestoreInterrupts"
+/* 8036B660 00367300  3C C0 80 37 */	lis r6, "cbForStateReadingTOC"@ha
+/* 8036B664 00367304  38 7E 00 E0 */	addi r3, r30, 0xe0
+/* 8036B668 00367308  38 C6 B8 90 */	addi r6, r6, "cbForStateReadingTOC"@l
+/* 8036B66C 0036730C  38 80 00 20 */	li r4, 0x20
+/* 8036B670 00367310  3C A0 00 01 */	lis r5, 1
+/* 8036B674 00367314  48 00 42 F5 */	bl "DVDLowUnencryptedRead"
+/* 8036B678 00367318  48 00 01 FC */	b lbl_8036B874
+lbl_8036B67C:
+/* 8036B67C 0036731C  48 07 4D E1 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B680 00367320  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B684 00367324  7C 7D 1B 78 */	mr r29, r3
+/* 8036B688 00367328  28 00 00 05 */	cmplwi r0, 5
+/* 8036B68C 0036732C  41 80 00 08 */	blt lbl_8036B694
+/* 8036B690 00367330  93 ED C3 A0 */	stw r31, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B694:
+/* 8036B694 00367334  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B698 00367338  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036B69C 0036733C  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B6A0 00367340  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036B6A4 00367344  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B6A8 00367348  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B6AC 0036734C  38 C0 00 10 */	li r6, 0x10
+/* 8036B6B0 00367350  38 80 00 00 */	li r4, 0
+/* 8036B6B4 00367354  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B6B8 00367358  7C BE 2A 14 */	add r5, r30, r5
+/* 8036B6BC 0036735C  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036B6C0 00367360  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036B6C4 00367364  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B6C8 00367368  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036B6CC 0036736C  7C 7E 02 14 */	add r3, r30, r0
+/* 8036B6D0 00367370  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B6D4 00367374  48 07 89 5D */	bl "OSGetTick"
+/* 8036B6D8 00367378  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B6DC 0036737C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B6E0 00367380  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B6E4 00367384  38 04 00 01 */	addi r0, r4, 1
+/* 8036B6E8 00367388  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B6EC 0036738C  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036B6F0 00367390  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B6F4 00367394  7F A3 EB 78 */	mr r3, r29
+/* 8036B6F8 00367398  48 07 4D 8D */	bl "OSRestoreInterrupts"
+/* 8036B6FC 0036739C  3C A0 80 37 */	lis r5, "cbForStateCheckID1"@ha
+/* 8036B700 003673A0  38 60 00 00 */	li r3, 0
+/* 8036B704 003673A4  38 A5 C0 EC */	addi r5, r5, "cbForStateCheckID1"@l
+/* 8036B708 003673A8  38 80 00 00 */	li r4, 0
+/* 8036B70C 003673AC  48 00 43 F1 */	bl "DVDLowStopMotor"
+/* 8036B710 003673B0  48 00 01 64 */	b lbl_8036B874
+lbl_8036B714:
+/* 8036B714 003673B4  80 8D C4 1C */	lwz r4, "IDShouldBe"-_SDA_BASE_(r13)
+/* 8036B718 003673B8  38 7E 00 C0 */	addi r3, r30, 0xc0
+/* 8036B71C 003673BC  38 A0 00 20 */	li r5, 0x20
+/* 8036B720 003673C0  48 09 A2 D9 */	bl "memcmp"
+/* 8036B724 003673C4  2C 03 00 00 */	cmpwi r3, 0
+/* 8036B728 003673C8  41 82 00 A0 */	beq lbl_8036B7C8
+/* 8036B72C 003673CC  48 07 4D 31 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B730 003673D0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B734 003673D4  7C 7D 1B 78 */	mr r29, r3
+/* 8036B738 003673D8  28 00 00 05 */	cmplwi r0, 5
+/* 8036B73C 003673DC  41 80 00 0C */	blt lbl_8036B748
+/* 8036B740 003673E0  38 00 00 00 */	li r0, 0
+/* 8036B744 003673E4  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B748:
+/* 8036B748 003673E8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B74C 003673EC  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036B750 003673F0  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B754 003673F4  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036B758 003673F8  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B75C 003673FC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B760 00367400  38 C0 00 10 */	li r6, 0x10
+/* 8036B764 00367404  38 80 00 00 */	li r4, 0
+/* 8036B768 00367408  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B76C 0036740C  7C BE 2A 14 */	add r5, r30, r5
+/* 8036B770 00367410  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036B774 00367414  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036B778 00367418  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B77C 0036741C  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036B780 00367420  7C 7E 02 14 */	add r3, r30, r0
+/* 8036B784 00367424  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B788 00367428  48 07 88 A9 */	bl "OSGetTick"
+/* 8036B78C 0036742C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B790 00367430  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B794 00367434  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B798 00367438  38 04 00 01 */	addi r0, r4, 1
+/* 8036B79C 0036743C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B7A0 00367440  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036B7A4 00367444  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B7A8 00367448  7F A3 EB 78 */	mr r3, r29
+/* 8036B7AC 0036744C  48 07 4C D9 */	bl "OSRestoreInterrupts"
+/* 8036B7B0 00367450  3C A0 80 37 */	lis r5, "cbForStateCheckID1"@ha
+/* 8036B7B4 00367454  38 60 00 00 */	li r3, 0
+/* 8036B7B8 00367458  38 A5 C0 EC */	addi r5, r5, "cbForStateCheckID1"@l
+/* 8036B7BC 0036745C  38 80 00 00 */	li r4, 0
+/* 8036B7C0 00367460  48 00 43 3D */	bl "DVDLowStopMotor"
+/* 8036B7C4 00367464  48 00 00 B0 */	b lbl_8036B874
+lbl_8036B7C8:
+/* 8036B7C8 00367468  3B E0 00 00 */	li r31, 0
+/* 8036B7CC 0036746C  38 60 00 00 */	li r3, 0
+/* 8036B7D0 00367470  93 ED C3 B8 */	stw r31, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036B7D4 00367474  48 00 50 E9 */	bl "DVDLowClearCoverInterrupt"
+/* 8036B7D8 00367478  48 07 4C 85 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B7DC 0036747C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B7E0 00367480  7C 7D 1B 78 */	mr r29, r3
+/* 8036B7E4 00367484  28 00 00 05 */	cmplwi r0, 5
+/* 8036B7E8 00367488  41 80 00 08 */	blt lbl_8036B7F0
+/* 8036B7EC 0036748C  93 ED C3 A0 */	stw r31, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B7F0:
+/* 8036B7F0 00367490  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B7F4 00367494  3F E0 80 59 */	lis r31, "__ErrorInfo"@ha
+/* 8036B7F8 00367498  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B7FC 0036749C  3B FF 13 20 */	addi r31, r31, "__ErrorInfo"@l
+/* 8036B800 003674A0  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036B804 003674A4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B808 003674A8  38 E0 00 21 */	li r7, 0x21
+/* 8036B80C 003674AC  3C A0 00 01 */	lis r5, 1
+/* 8036B810 003674B0  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B814 003674B4  38 80 00 20 */	li r4, 0x20
+/* 8036B818 003674B8  7C DF 32 14 */	add r6, r31, r6
+/* 8036B81C 003674BC  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036B820 003674C0  7C 7F 1A 14 */	add r3, r31, r3
+/* 8036B824 003674C4  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B828 003674C8  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036B82C 003674CC  7C 7F 02 14 */	add r3, r31, r0
+/* 8036B830 003674D0  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B834 003674D4  48 07 87 FD */	bl "OSGetTick"
+/* 8036B838 003674D8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B83C 003674DC  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B840 003674E0  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B844 003674E4  38 04 00 01 */	addi r0, r4, 1
+/* 8036B848 003674E8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B84C 003674EC  7C 9F 2A 14 */	add r4, r31, r5
+/* 8036B850 003674F0  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B854 003674F4  7F A3 EB 78 */	mr r3, r29
+/* 8036B858 003674F8  48 07 4C 2D */	bl "OSRestoreInterrupts"
+/* 8036B85C 003674FC  3C C0 80 37 */	lis r6, "cbForStateReadingTOC"@ha
+/* 8036B860 00367500  38 7E 00 E0 */	addi r3, r30, 0xe0
+/* 8036B864 00367504  38 C6 B8 90 */	addi r6, r6, "cbForStateReadingTOC"@l
+/* 8036B868 00367508  38 80 00 20 */	li r4, 0x20
+/* 8036B86C 0036750C  3C A0 00 01 */	lis r5, 1
+/* 8036B870 00367510  48 00 40 F9 */	bl "DVDLowUnencryptedRead"
+lbl_8036B874:
+/* 8036B874 00367514  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036B878 00367518  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036B87C 0036751C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036B880 00367520  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036B884 00367524  7C 08 03 A6 */	mtlr r0
+/* 8036B888 00367528  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036B88C 0036752C  4E 80 00 20 */	blr 
+
+.global "cbForStateReadingTOC"
+"cbForStateReadingTOC":
+/* 8036B890 00367530  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036B894 00367534  7C 08 02 A6 */	mflr r0
+/* 8036B898 00367538  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036B89C 0036753C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036B8A0 00367540  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036B8A4 00367544  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036B8A8 00367548  7C 7D 1B 78 */	mr r29, r3
+/* 8036B8AC 0036754C  48 07 4B B1 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B8B0 00367550  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B8B4 00367554  2C 00 00 00 */	cmpwi r0, 0
+/* 8036B8B8 00367558  40 82 00 14 */	bne lbl_8036B8CC
+/* 8036B8BC 0036755C  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036B8C0 00367560  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036B8C4 00367564  93 A4 00 78 */	stw r29, 0x78(r4)
+/* 8036B8C8 00367568  48 00 00 20 */	b lbl_8036B8E8
+lbl_8036B8CC:
+/* 8036B8CC 0036756C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B8D0 00367570  3C A0 80 59 */	lis r5, "__ErrorInfo"@ha
+/* 8036B8D4 00367574  38 A5 13 20 */	addi r5, r5, "__ErrorInfo"@l
+/* 8036B8D8 00367578  38 04 FF FF */	addi r0, r4, -1
+/* 8036B8DC 0036757C  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B8E0 00367580  7C 85 02 14 */	add r4, r5, r0
+/* 8036B8E4 00367584  93 A4 00 28 */	stw r29, 0x28(r4)
+lbl_8036B8E8:
+/* 8036B8E8 00367588  48 07 4B 9D */	bl "OSRestoreInterrupts"
+/* 8036B8EC 0036758C  28 1D 00 10 */	cmplwi r29, 0x10
+/* 8036B8F0 00367590  40 82 00 1C */	bne lbl_8036B90C
+/* 8036B8F4 00367594  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036B8F8 00367598  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B8FC 0036759C  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036B900 003675A0  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B904 003675A4  48 00 34 69 */	bl "__DVDStoreErrorCode"
+/* 8036B908 003675A8  48 00 01 0C */	b lbl_8036BA14
+lbl_8036B90C:
+/* 8036B90C 003675AC  28 1D 00 20 */	cmplwi r29, 0x20
+/* 8036B910 003675B0  40 82 00 1C */	bne lbl_8036B92C
+/* 8036B914 003675B4  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036B918 003675B8  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036B91C 003675BC  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036B920 003675C0  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036B924 003675C4  48 00 34 49 */	bl "__DVDStoreErrorCode"
+/* 8036B928 003675C8  48 00 00 EC */	b lbl_8036BA14
+lbl_8036B92C:
+/* 8036B92C 003675CC  57 A0 07 FF */	clrlwi. r0, r29, 0x1f
+/* 8036B930 003675D0  41 82 00 C8 */	beq lbl_8036B9F8
+/* 8036B934 003675D4  3C 80 80 59 */	lis r4, "GameTocBuffer"@ha
+/* 8036B938 003675D8  3B A0 00 00 */	li r29, 0
+/* 8036B93C 003675DC  38 84 C6 A0 */	addi r4, r4, "GameTocBuffer"@l
+/* 8036B940 003675E0  93 AD C3 B8 */	stw r29, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036B944 003675E4  38 60 00 00 */	li r3, 0
+/* 8036B948 003675E8  90 8D C3 F0 */	stw r4, "GameToc"-_SDA_BASE_(r13)
+/* 8036B94C 003675EC  48 00 4F 71 */	bl "DVDLowClearCoverInterrupt"
+/* 8036B950 003675F0  48 07 4B 0D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036B954 003675F4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B958 003675F8  7C 7E 1B 78 */	mr r30, r3
+/* 8036B95C 003675FC  28 00 00 05 */	cmplwi r0, 5
+/* 8036B960 00367600  41 80 00 08 */	blt lbl_8036B968
+/* 8036B964 00367604  93 AD C3 A0 */	stw r29, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036B968:
+/* 8036B968 00367608  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B96C 0036760C  3F E0 80 59 */	lis r31, "__ErrorInfo"@ha
+/* 8036B970 00367610  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B974 00367614  3F A0 00 01 */	lis r29, 0x00010008@ha
+/* 8036B978 00367618  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036B97C 0036761C  3B FF 13 20 */	addi r31, r31, "__ErrorInfo"@l
+/* 8036B980 00367620  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B984 00367624  38 C0 00 21 */	li r6, 0x21
+/* 8036B988 00367628  38 BD 00 08 */	addi r5, r29, 0x00010008@l
+/* 8036B98C 0036762C  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036B990 00367630  7C 9F 22 14 */	add r4, r31, r4
+/* 8036B994 00367634  90 C4 00 1C */	stw r6, 0x1c(r4)
+/* 8036B998 00367638  7C 7F 1A 14 */	add r3, r31, r3
+/* 8036B99C 0036763C  38 80 00 20 */	li r4, 0x20
+/* 8036B9A0 00367640  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036B9A4 00367644  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036B9A8 00367648  7C 7F 02 14 */	add r3, r31, r0
+/* 8036B9AC 0036764C  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036B9B0 00367650  48 07 86 81 */	bl "OSGetTick"
+/* 8036B9B4 00367654  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B9B8 00367658  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B9BC 0036765C  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036B9C0 00367660  38 04 00 01 */	addi r0, r4, 1
+/* 8036B9C4 00367664  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036B9C8 00367668  7C 9F 2A 14 */	add r4, r31, r5
+/* 8036B9CC 0036766C  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036B9D0 00367670  7F C3 F3 78 */	mr r3, r30
+/* 8036B9D4 00367674  48 07 4A B1 */	bl "OSRestoreInterrupts"
+/* 8036B9D8 00367678  3C 60 80 59 */	lis r3, "PartInfoBuffer"@ha
+/* 8036B9DC 0036767C  3C C0 80 37 */	lis r6, "cbForStateReadingPartitionInfo"@ha
+/* 8036B9E0 00367680  38 BD 00 08 */	addi r5, r29, 8
+/* 8036B9E4 00367684  38 80 00 20 */	li r4, 0x20
+/* 8036B9E8 00367688  38 63 C6 C0 */	addi r3, r3, "PartInfoBuffer"@l
+/* 8036B9EC 0036768C  38 C6 BA 30 */	addi r6, r6, "cbForStateReadingPartitionInfo"@l
+/* 8036B9F0 00367690  48 00 3F 79 */	bl "DVDLowUnencryptedRead"
+/* 8036B9F4 00367694  48 00 00 20 */	b lbl_8036BA14
+lbl_8036B9F8:
+/* 8036B9F8 00367698  38 60 00 27 */	li r3, 0x27
+/* 8036B9FC 0036769C  38 80 00 00 */	li r4, 0
+/* 8036BA00 003676A0  38 A0 00 00 */	li r5, 0
+/* 8036BA04 003676A4  4B FF E9 C5 */	bl "StampCommand"
+/* 8036BA08 003676A8  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036BA0C 003676AC  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036BA10 003676B0  48 00 43 E9 */	bl "DVDLowRequestError"
+lbl_8036BA14:
+/* 8036BA14 003676B4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036BA18 003676B8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036BA1C 003676BC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036BA20 003676C0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036BA24 003676C4  7C 08 03 A6 */	mtlr r0
+/* 8036BA28 003676C8  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036BA2C 003676CC  4E 80 00 20 */	blr 
+
+.global "cbForStateReadingPartitionInfo"
+"cbForStateReadingPartitionInfo":
+/* 8036BA30 003676D0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036BA34 003676D4  7C 08 02 A6 */	mflr r0
+/* 8036BA38 003676D8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036BA3C 003676DC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036BA40 003676E0  3F E0 80 59 */	lis r31, "BB2"@ha
+/* 8036BA44 003676E4  3B FF C5 C0 */	addi r31, r31, "BB2"@l
+/* 8036BA48 003676E8  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036BA4C 003676EC  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036BA50 003676F0  93 81 00 10 */	stw r28, 0x10(r1)
+/* 8036BA54 003676F4  7C 7C 1B 78 */	mr r28, r3
+/* 8036BA58 003676F8  48 07 4A 05 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BA5C 003676FC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BA60 00367700  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BA64 00367704  40 82 00 14 */	bne lbl_8036BA78
+/* 8036BA68 00367708  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036BA6C 0036770C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036BA70 00367710  93 84 00 78 */	stw r28, 0x78(r4)
+/* 8036BA74 00367714  48 00 00 20 */	b lbl_8036BA94
+lbl_8036BA78:
+/* 8036BA78 00367718  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BA7C 0036771C  3C A0 80 59 */	lis r5, "__ErrorInfo"@ha
+/* 8036BA80 00367720  38 A5 13 20 */	addi r5, r5, "__ErrorInfo"@l
+/* 8036BA84 00367724  38 04 FF FF */	addi r0, r4, -1
+/* 8036BA88 00367728  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BA8C 0036772C  7C 85 02 14 */	add r4, r5, r0
+/* 8036BA90 00367730  93 84 00 28 */	stw r28, 0x28(r4)
+lbl_8036BA94:
+/* 8036BA94 00367734  48 07 49 F1 */	bl "OSRestoreInterrupts"
+/* 8036BA98 00367738  28 1C 00 10 */	cmplwi r28, 0x10
+/* 8036BA9C 0036773C  40 82 00 1C */	bne lbl_8036BAB8
+/* 8036BAA0 00367740  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036BAA4 00367744  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036BAA8 00367748  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036BAAC 0036774C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036BAB0 00367750  48 00 32 BD */	bl "__DVDStoreErrorCode"
+/* 8036BAB4 00367754  48 00 03 2C */	b lbl_8036BDE0
+lbl_8036BAB8:
+/* 8036BAB8 00367758  28 1C 00 20 */	cmplwi r28, 0x20
+/* 8036BABC 0036775C  40 82 00 1C */	bne lbl_8036BAD8
+/* 8036BAC0 00367760  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036BAC4 00367764  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036BAC8 00367768  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036BACC 0036776C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036BAD0 00367770  48 00 32 9D */	bl "__DVDStoreErrorCode"
+/* 8036BAD4 00367774  48 00 03 0C */	b lbl_8036BDE0
+lbl_8036BAD8:
+/* 8036BAD8 00367778  57 80 07 FF */	clrlwi. r0, r28, 0x1f
+/* 8036BADC 0036777C  41 82 02 E8 */	beq lbl_8036BDC4
+/* 8036BAE0 00367780  38 C0 00 00 */	li r6, 0
+/* 8036BAE4 00367784  38 7F 01 00 */	addi r3, r31, 0x100
+/* 8036BAE8 00367788  90 CD C3 B8 */	stw r6, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036BAEC 0036778C  38 E0 00 00 */	li r7, 0
+/* 8036BAF0 00367790  80 8D C3 F0 */	lwz r4, "GameToc"-_SDA_BASE_(r13)
+/* 8036BAF4 00367794  90 6D C3 EC */	stw r3, "PartInfo"-_SDA_BASE_(r13)
+/* 8036BAF8 00367798  90 CD C3 E8 */	stw r6, "BootGameInfo"-_SDA_BASE_(r13)
+/* 8036BAFC 0036779C  48 00 00 24 */	b lbl_8036BB20
+lbl_8036BB00:
+/* 8036BB00 003677A0  80 03 00 04 */	lwz r0, 4(r3)
+/* 8036BB04 003677A4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BB08 003677A8  40 82 00 0C */	bne lbl_8036BB14
+/* 8036BB0C 003677AC  7C 66 1B 78 */	mr r6, r3
+/* 8036BB10 003677B0  90 6D C3 E8 */	stw r3, "BootGameInfo"-_SDA_BASE_(r13)
+lbl_8036BB14:
+/* 8036BB14 003677B4  38 63 00 08 */	addi r3, r3, 8
+/* 8036BB18 003677B8  38 E7 00 01 */	addi r7, r7, 1
+/* 8036BB1C 003677BC  90 6D C3 EC */	stw r3, "PartInfo"-_SDA_BASE_(r13)
+lbl_8036BB20:
+/* 8036BB20 003677C0  80 04 00 00 */	lwz r0, 0(r4)
+/* 8036BB24 003677C4  7C E5 07 34 */	extsh r5, r7
+/* 8036BB28 003677C8  7C 05 00 40 */	cmplw r5, r0
+/* 8036BB2C 003677CC  41 80 FF D4 */	blt lbl_8036BB00
+/* 8036BB30 003677D0  2C 06 00 00 */	cmpwi r6, 0
+/* 8036BB34 003677D4  41 82 01 94 */	beq lbl_8036BCC8
+/* 8036BB38 003677D8  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036BB3C 003677DC  2C 00 00 03 */	cmpwi r0, 3
+/* 8036BB40 003677E0  41 82 00 08 */	beq lbl_8036BB48
+/* 8036BB44 003677E4  48 00 00 C4 */	b lbl_8036BC08
+lbl_8036BB48:
+/* 8036BB48 003677E8  3B A0 00 00 */	li r29, 0
+/* 8036BB4C 003677EC  38 60 00 00 */	li r3, 0
+/* 8036BB50 003677F0  93 AD C3 B8 */	stw r29, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036BB54 003677F4  48 00 4D 69 */	bl "DVDLowClearCoverInterrupt"
+/* 8036BB58 003677F8  80 6D C3 E8 */	lwz r3, "BootGameInfo"-_SDA_BASE_(r13)
+/* 8036BB5C 003677FC  83 83 00 00 */	lwz r28, 0(r3)
+/* 8036BB60 00367800  48 07 48 FD */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BB64 00367804  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BB68 00367808  7C 7E 1B 78 */	mr r30, r3
+/* 8036BB6C 0036780C  28 00 00 05 */	cmplwi r0, 5
+/* 8036BB70 00367810  41 80 00 08 */	blt lbl_8036BB78
+/* 8036BB74 00367814  93 AD C3 A0 */	stw r29, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036BB78:
+/* 8036BB78 00367818  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BB7C 0036781C  3F A0 80 59 */	lis r29, "__ErrorInfo"@ha
+/* 8036BB80 00367820  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BB84 00367824  3B BD 13 20 */	addi r29, r29, "__ErrorInfo"@l
+/* 8036BB88 00367828  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036BB8C 0036782C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BB90 00367830  38 C0 00 22 */	li r6, 0x22
+/* 8036BB94 00367834  38 80 00 00 */	li r4, 0
+/* 8036BB98 00367838  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036BB9C 0036783C  7C BD 2A 14 */	add r5, r29, r5
+/* 8036BBA0 00367840  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036BBA4 00367844  7C 7D 1A 14 */	add r3, r29, r3
+/* 8036BBA8 00367848  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BBAC 0036784C  93 83 00 20 */	stw r28, 0x20(r3)
+/* 8036BBB0 00367850  7C 7D 02 14 */	add r3, r29, r0
+/* 8036BBB4 00367854  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036BBB8 00367858  48 07 84 79 */	bl "OSGetTick"
+/* 8036BBBC 0036785C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BBC0 00367860  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BBC4 00367864  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036BBC8 00367868  38 04 00 01 */	addi r0, r4, 1
+/* 8036BBCC 0036786C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BBD0 00367870  7C 9D 2A 14 */	add r4, r29, r5
+/* 8036BBD4 00367874  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036BBD8 00367878  7F C3 F3 78 */	mr r3, r30
+/* 8036BBDC 0036787C  48 07 48 A9 */	bl "OSRestoreInterrupts"
+/* 8036BBE0 00367880  80 6D C3 E8 */	lwz r3, "BootGameInfo"-_SDA_BASE_(r13)
+/* 8036BBE4 00367884  3D 00 80 37 */	lis r8, "cbForStateOpenPartition"@ha
+/* 8036BBE8 00367888  38 FF 01 40 */	addi r7, r31, 0x140
+/* 8036BBEC 0036788C  38 80 00 00 */	li r4, 0
+/* 8036BBF0 00367890  80 63 00 00 */	lwz r3, 0(r3)
+/* 8036BBF4 00367894  39 08 BE 00 */	addi r8, r8, "cbForStateOpenPartition"@l
+/* 8036BBF8 00367898  38 A0 00 00 */	li r5, 0
+/* 8036BBFC 0036789C  38 C0 00 00 */	li r6, 0
+/* 8036BC00 003678A0  48 00 39 9D */	bl "DVDLowOpenPartition"
+/* 8036BC04 003678A4  48 00 01 DC */	b lbl_8036BDE0
+lbl_8036BC08:
+/* 8036BC08 003678A8  3B A0 00 00 */	li r29, 0
+/* 8036BC0C 003678AC  38 60 00 00 */	li r3, 0
+/* 8036BC10 003678B0  93 AD C3 B8 */	stw r29, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036BC14 003678B4  48 00 4C A9 */	bl "DVDLowClearCoverInterrupt"
+/* 8036BC18 003678B8  80 6D C3 E8 */	lwz r3, "BootGameInfo"-_SDA_BASE_(r13)
+/* 8036BC1C 003678BC  83 83 00 00 */	lwz r28, 0(r3)
+/* 8036BC20 003678C0  48 07 48 3D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BC24 003678C4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC28 003678C8  7C 7E 1B 78 */	mr r30, r3
+/* 8036BC2C 003678CC  28 00 00 05 */	cmplwi r0, 5
+/* 8036BC30 003678D0  41 80 00 08 */	blt lbl_8036BC38
+/* 8036BC34 003678D4  93 AD C3 A0 */	stw r29, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036BC38:
+/* 8036BC38 003678D8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC3C 003678DC  3F A0 80 59 */	lis r29, "__ErrorInfo"@ha
+/* 8036BC40 003678E0  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC44 003678E4  3B BD 13 20 */	addi r29, r29, "__ErrorInfo"@l
+/* 8036BC48 003678E8  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036BC4C 003678EC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC50 003678F0  38 C0 00 22 */	li r6, 0x22
+/* 8036BC54 003678F4  38 80 00 00 */	li r4, 0
+/* 8036BC58 003678F8  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036BC5C 003678FC  7C BD 2A 14 */	add r5, r29, r5
+/* 8036BC60 00367900  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036BC64 00367904  7C 7D 1A 14 */	add r3, r29, r3
+/* 8036BC68 00367908  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BC6C 0036790C  93 83 00 20 */	stw r28, 0x20(r3)
+/* 8036BC70 00367910  7C 7D 02 14 */	add r3, r29, r0
+/* 8036BC74 00367914  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036BC78 00367918  48 07 83 B9 */	bl "OSGetTick"
+/* 8036BC7C 0036791C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC80 00367920  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC84 00367924  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036BC88 00367928  38 04 00 01 */	addi r0, r4, 1
+/* 8036BC8C 0036792C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BC90 00367930  7C 9D 2A 14 */	add r4, r29, r5
+/* 8036BC94 00367934  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036BC98 00367938  7F C3 F3 78 */	mr r3, r30
+/* 8036BC9C 0036793C  48 07 47 E9 */	bl "OSRestoreInterrupts"
+/* 8036BCA0 00367940  80 6D C3 E8 */	lwz r3, "BootGameInfo"-_SDA_BASE_(r13)
+/* 8036BCA4 00367944  3D 00 80 37 */	lis r8, "cbForStateOpenPartition2"@ha
+/* 8036BCA8 00367948  38 FF 01 40 */	addi r7, r31, 0x140
+/* 8036BCAC 0036794C  38 80 00 00 */	li r4, 0
+/* 8036BCB0 00367950  80 63 00 00 */	lwz r3, 0(r3)
+/* 8036BCB4 00367954  39 08 BF 88 */	addi r8, r8, "cbForStateOpenPartition2"@l
+/* 8036BCB8 00367958  38 A0 00 00 */	li r5, 0
+/* 8036BCBC 0036795C  38 C0 00 00 */	li r6, 0
+/* 8036BCC0 00367960  48 00 38 DD */	bl "DVDLowOpenPartition"
+/* 8036BCC4 00367964  48 00 01 1C */	b lbl_8036BDE0
+lbl_8036BCC8:
+/* 8036BCC8 00367968  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036BCCC 0036796C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BCD0 00367970  41 82 00 6C */	beq lbl_8036BD3C
+/* 8036BCD4 00367974  83 8D C4 20 */	lwz r28, "executing"-_SDA_BASE_(r13)
+/* 8036BCD8 00367978  38 7F 00 20 */	addi r3, r31, 0x20
+/* 8036BCDC 0036797C  38 00 00 01 */	li r0, 1
+/* 8036BCE0 00367980  38 80 00 00 */	li r4, 0
+/* 8036BCE4 00367984  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036BCE8 00367988  38 00 00 0A */	li r0, 0xa
+/* 8036BCEC 0036798C  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036BCF0 00367990  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036BCF4 00367994  90 1C 00 0C */	stw r0, 0xc(r28)
+/* 8036BCF8 00367998  81 9C 00 28 */	lwz r12, 0x28(r28)
+/* 8036BCFC 0036799C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036BD00 003679A0  41 82 00 14 */	beq lbl_8036BD14
+/* 8036BD04 003679A4  7F 84 E3 78 */	mr r4, r28
+/* 8036BD08 003679A8  38 60 FF FD */	li r3, -3
+/* 8036BD0C 003679AC  7D 89 03 A6 */	mtctr r12
+/* 8036BD10 003679B0  4E 80 04 21 */	bctrl 
+lbl_8036BD14:
+/* 8036BD14 003679B4  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036BD18 003679B8  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036BD1C 003679BC  41 82 00 14 */	beq lbl_8036BD30
+/* 8036BD20 003679C0  7F 84 E3 78 */	mr r4, r28
+/* 8036BD24 003679C4  38 60 00 00 */	li r3, 0
+/* 8036BD28 003679C8  7D 89 03 A6 */	mtctr r12
+/* 8036BD2C 003679CC  4E 80 04 21 */	bctrl 
+lbl_8036BD30:
+/* 8036BD30 003679D0  48 00 10 1D */	bl "stateReady"
+/* 8036BD34 003679D4  38 00 00 01 */	li r0, 1
+/* 8036BD38 003679D8  48 00 00 08 */	b lbl_8036BD40
+lbl_8036BD3C:
+/* 8036BD3C 003679DC  38 00 00 00 */	li r0, 0
+lbl_8036BD40:
+/* 8036BD40 003679E0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BD44 003679E4  40 82 00 9C */	bne lbl_8036BDE0
+/* 8036BD48 003679E8  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036BD4C 003679EC  38 00 00 06 */	li r0, 6
+/* 8036BD50 003679F0  38 60 00 01 */	li r3, 1
+/* 8036BD54 003679F4  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036BD58 003679F8  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036BD5C 003679FC  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036BD60 00367A00  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BD64 00367A04  40 82 00 7C */	bne lbl_8036BDE0
+/* 8036BD68 00367A08  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036BD6C 00367A0C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BD70 00367A10  40 82 00 70 */	bne lbl_8036BDE0
+/* 8036BD74 00367A14  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036BD78 00367A18  38 7F 00 80 */	addi r3, r31, 0x80
+/* 8036BD7C 00367A1C  48 06 F5 C5 */	bl "OSCreateAlarm"
+/* 8036BD80 00367A20  48 07 82 B1 */	bl "OSGetTick"
+/* 8036BD84 00367A24  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036BD88 00367A28  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036BD8C 00367A2C  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036BD90 00367A30  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036BD94 00367A34  7C 66 1B 78 */	mr r6, r3
+/* 8036BD98 00367A38  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036BD9C 00367A3C  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036BDA0 00367A40  38 7F 00 80 */	addi r3, r31, 0x80
+/* 8036BDA4 00367A44  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036BDA8 00367A48  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036BDAC 00367A4C  38 A0 00 00 */	li r5, 0
+/* 8036BDB0 00367A50  38 E0 00 00 */	li r7, 0
+/* 8036BDB4 00367A54  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036BDB8 00367A58  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036BDBC 00367A5C  48 06 F8 55 */	bl "OSSetPeriodicAlarm"
+/* 8036BDC0 00367A60  48 00 00 20 */	b lbl_8036BDE0
+lbl_8036BDC4:
+/* 8036BDC4 00367A64  38 60 00 27 */	li r3, 0x27
+/* 8036BDC8 00367A68  38 80 00 00 */	li r4, 0
+/* 8036BDCC 00367A6C  38 A0 00 00 */	li r5, 0
+/* 8036BDD0 00367A70  4B FF E5 F9 */	bl "StampCommand"
+/* 8036BDD4 00367A74  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036BDD8 00367A78  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036BDDC 00367A7C  48 00 40 1D */	bl "DVDLowRequestError"
+lbl_8036BDE0:
+/* 8036BDE0 00367A80  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036BDE4 00367A84  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036BDE8 00367A88  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036BDEC 00367A8C  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036BDF0 00367A90  83 81 00 10 */	lwz r28, 0x10(r1)
+/* 8036BDF4 00367A94  7C 08 03 A6 */	mtlr r0
+/* 8036BDF8 00367A98  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036BDFC 00367A9C  4E 80 00 20 */	blr 
+
+.global "cbForStateOpenPartition"
+"cbForStateOpenPartition":
+/* 8036BE00 00367AA0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036BE04 00367AA4  7C 08 02 A6 */	mflr r0
+/* 8036BE08 00367AA8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036BE0C 00367AAC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036BE10 00367AB0  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036BE14 00367AB4  7C 7E 1B 78 */	mr r30, r3
+/* 8036BE18 00367AB8  48 07 46 45 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BE1C 00367ABC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BE20 00367AC0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BE24 00367AC4  40 82 00 14 */	bne lbl_8036BE38
+/* 8036BE28 00367AC8  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036BE2C 00367ACC  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036BE30 00367AD0  93 C4 00 78 */	stw r30, 0x78(r4)
+/* 8036BE34 00367AD4  48 00 00 20 */	b lbl_8036BE54
+lbl_8036BE38:
+/* 8036BE38 00367AD8  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BE3C 00367ADC  3C A0 80 59 */	lis r5, "__ErrorInfo"@ha
+/* 8036BE40 00367AE0  38 A5 13 20 */	addi r5, r5, "__ErrorInfo"@l
+/* 8036BE44 00367AE4  38 04 FF FF */	addi r0, r4, -1
+/* 8036BE48 00367AE8  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BE4C 00367AEC  7C 85 02 14 */	add r4, r5, r0
+/* 8036BE50 00367AF0  93 C4 00 28 */	stw r30, 0x28(r4)
+lbl_8036BE54:
+/* 8036BE54 00367AF4  48 07 46 31 */	bl "OSRestoreInterrupts"
+/* 8036BE58 00367AF8  28 1E 00 10 */	cmplwi r30, 0x10
+/* 8036BE5C 00367AFC  40 82 00 1C */	bne lbl_8036BE78
+/* 8036BE60 00367B00  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036BE64 00367B04  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036BE68 00367B08  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036BE6C 00367B0C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036BE70 00367B10  48 00 2E FD */	bl "__DVDStoreErrorCode"
+/* 8036BE74 00367B14  48 00 00 FC */	b lbl_8036BF70
+lbl_8036BE78:
+/* 8036BE78 00367B18  28 1E 00 20 */	cmplwi r30, 0x20
+/* 8036BE7C 00367B1C  40 82 00 1C */	bne lbl_8036BE98
+/* 8036BE80 00367B20  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036BE84 00367B24  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036BE88 00367B28  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036BE8C 00367B2C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036BE90 00367B30  48 00 2E DD */	bl "__DVDStoreErrorCode"
+/* 8036BE94 00367B34  48 00 00 DC */	b lbl_8036BF70
+lbl_8036BE98:
+/* 8036BE98 00367B38  57 C0 07 FF */	clrlwi. r0, r30, 0x1f
+/* 8036BE9C 00367B3C  41 82 00 B8 */	beq lbl_8036BF54
+/* 8036BEA0 00367B40  3B C0 00 00 */	li r30, 0
+/* 8036BEA4 00367B44  38 60 00 00 */	li r3, 0
+/* 8036BEA8 00367B48  93 CD C3 B8 */	stw r30, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036BEAC 00367B4C  48 00 4A 11 */	bl "DVDLowClearCoverInterrupt"
+/* 8036BEB0 00367B50  48 07 45 AD */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BEB4 00367B54  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BEB8 00367B58  7C 7F 1B 78 */	mr r31, r3
+/* 8036BEBC 00367B5C  28 00 00 05 */	cmplwi r0, 5
+/* 8036BEC0 00367B60  41 80 00 08 */	blt lbl_8036BEC8
+/* 8036BEC4 00367B64  93 CD C3 A0 */	stw r30, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036BEC8:
+/* 8036BEC8 00367B68  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BECC 00367B6C  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036BED0 00367B70  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BED4 00367B74  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036BED8 00367B78  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036BEDC 00367B7C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BEE0 00367B80  38 E0 00 01 */	li r7, 1
+/* 8036BEE4 00367B84  38 A0 01 08 */	li r5, 0x108
+/* 8036BEE8 00367B88  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036BEEC 00367B8C  38 80 00 20 */	li r4, 0x20
+/* 8036BEF0 00367B90  7C DE 32 14 */	add r6, r30, r6
+/* 8036BEF4 00367B94  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036BEF8 00367B98  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036BEFC 00367B9C  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BF00 00367BA0  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036BF04 00367BA4  7C 7E 02 14 */	add r3, r30, r0
+/* 8036BF08 00367BA8  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036BF0C 00367BAC  48 07 81 25 */	bl "OSGetTick"
+/* 8036BF10 00367BB0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BF14 00367BB4  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BF18 00367BB8  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036BF1C 00367BBC  38 04 00 01 */	addi r0, r4, 1
+/* 8036BF20 00367BC0  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BF24 00367BC4  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036BF28 00367BC8  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036BF2C 00367BCC  7F E3 FB 78 */	mr r3, r31
+/* 8036BF30 00367BD0  48 07 45 55 */	bl "OSRestoreInterrupts"
+/* 8036BF34 00367BD4  3C 60 80 59 */	lis r3, "BB2"@ha
+/* 8036BF38 00367BD8  3C C0 80 37 */	lis r6, "cbForStateCheckID2"@ha
+/* 8036BF3C 00367BDC  38 63 C5 C0 */	addi r3, r3, "BB2"@l
+/* 8036BF40 00367BE0  38 80 00 20 */	li r4, 0x20
+/* 8036BF44 00367BE4  38 C6 C2 B4 */	addi r6, r6, "cbForStateCheckID2"@l
+/* 8036BF48 00367BE8  38 A0 01 08 */	li r5, 0x108
+/* 8036BF4C 00367BEC  48 00 44 B1 */	bl "DVDLowRead"
+/* 8036BF50 00367BF0  48 00 00 20 */	b lbl_8036BF70
+lbl_8036BF54:
+/* 8036BF54 00367BF4  38 60 00 27 */	li r3, 0x27
+/* 8036BF58 00367BF8  38 80 00 00 */	li r4, 0
+/* 8036BF5C 00367BFC  38 A0 00 00 */	li r5, 0
+/* 8036BF60 00367C00  4B FF E4 69 */	bl "StampCommand"
+/* 8036BF64 00367C04  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036BF68 00367C08  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036BF6C 00367C0C  48 00 3E 8D */	bl "DVDLowRequestError"
+lbl_8036BF70:
+/* 8036BF70 00367C10  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036BF74 00367C14  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036BF78 00367C18  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036BF7C 00367C1C  7C 08 03 A6 */	mtlr r0
+/* 8036BF80 00367C20  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036BF84 00367C24  4E 80 00 20 */	blr 
+
+.global "cbForStateOpenPartition2"
+"cbForStateOpenPartition2":
+/* 8036BF88 00367C28  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036BF8C 00367C2C  7C 08 02 A6 */	mflr r0
+/* 8036BF90 00367C30  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036BF94 00367C34  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036BF98 00367C38  7C 7F 1B 78 */	mr r31, r3
+/* 8036BF9C 00367C3C  48 07 44 C1 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036BFA0 00367C40  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BFA4 00367C44  2C 00 00 00 */	cmpwi r0, 0
+/* 8036BFA8 00367C48  40 82 00 14 */	bne lbl_8036BFBC
+/* 8036BFAC 00367C4C  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036BFB0 00367C50  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036BFB4 00367C54  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036BFB8 00367C58  48 00 00 1C */	b lbl_8036BFD4
+lbl_8036BFBC:
+/* 8036BFBC 00367C5C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036BFC0 00367C60  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036BFC4 00367C64  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036BFC8 00367C68  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036BFCC 00367C6C  7C 84 02 14 */	add r4, r4, r0
+/* 8036BFD0 00367C70  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036BFD4:
+/* 8036BFD4 00367C74  48 07 44 B1 */	bl "OSRestoreInterrupts"
+/* 8036BFD8 00367C78  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036BFDC 00367C7C  40 82 00 1C */	bne lbl_8036BFF8
+/* 8036BFE0 00367C80  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036BFE4 00367C84  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036BFE8 00367C88  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036BFEC 00367C8C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036BFF0 00367C90  48 00 2D 7D */	bl "__DVDStoreErrorCode"
+/* 8036BFF4 00367C94  48 00 00 E4 */	b lbl_8036C0D8
+lbl_8036BFF8:
+/* 8036BFF8 00367C98  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036BFFC 00367C9C  40 82 00 1C */	bne lbl_8036C018
+/* 8036C000 00367CA0  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036C004 00367CA4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C008 00367CA8  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036C00C 00367CAC  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C010 00367CB0  48 00 2D 5D */	bl "__DVDStoreErrorCode"
+/* 8036C014 00367CB4  48 00 00 C4 */	b lbl_8036C0D8
+lbl_8036C018:
+/* 8036C018 00367CB8  57 E0 07 FF */	clrlwi. r0, r31, 0x1f
+/* 8036C01C 00367CBC  41 82 00 A0 */	beq lbl_8036C0BC
+/* 8036C020 00367CC0  38 80 00 00 */	li r4, 0
+/* 8036C024 00367CC4  90 8D C3 B8 */	stw r4, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036C028 00367CC8  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036C02C 00367CCC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C030 00367CD0  41 82 00 68 */	beq lbl_8036C098
+/* 8036C034 00367CD4  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036C038 00367CD8  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036C03C 00367CDC  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036C040 00367CE0  90 8D C3 B4 */	stw r4, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036C044 00367CE4  38 00 00 0A */	li r0, 0xa
+/* 8036C048 00367CE8  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036C04C 00367CEC  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036C050 00367CF0  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036C054 00367CF4  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036C058 00367CF8  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036C05C 00367CFC  41 82 00 14 */	beq lbl_8036C070
+/* 8036C060 00367D00  7F E4 FB 78 */	mr r4, r31
+/* 8036C064 00367D04  38 60 FF FD */	li r3, -3
+/* 8036C068 00367D08  7D 89 03 A6 */	mtctr r12
+/* 8036C06C 00367D0C  4E 80 04 21 */	bctrl 
+lbl_8036C070:
+/* 8036C070 00367D10  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036C074 00367D14  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036C078 00367D18  41 82 00 14 */	beq lbl_8036C08C
+/* 8036C07C 00367D1C  7F E4 FB 78 */	mr r4, r31
+/* 8036C080 00367D20  38 60 00 00 */	li r3, 0
+/* 8036C084 00367D24  7D 89 03 A6 */	mtctr r12
+/* 8036C088 00367D28  4E 80 04 21 */	bctrl 
+lbl_8036C08C:
+/* 8036C08C 00367D2C  48 00 0C C1 */	bl "stateReady"
+/* 8036C090 00367D30  38 00 00 01 */	li r0, 1
+/* 8036C094 00367D34  48 00 00 08 */	b lbl_8036C09C
+lbl_8036C098:
+/* 8036C098 00367D38  38 00 00 00 */	li r0, 0
+lbl_8036C09C:
+/* 8036C09C 00367D3C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C0A0 00367D40  40 82 00 38 */	bne lbl_8036C0D8
+/* 8036C0A4 00367D44  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036C0A8 00367D48  38 00 00 01 */	li r0, 1
+/* 8036C0AC 00367D4C  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036C0B0 00367D50  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036C0B4 00367D54  48 00 0F C1 */	bl "stateBusy"
+/* 8036C0B8 00367D58  48 00 00 20 */	b lbl_8036C0D8
+lbl_8036C0BC:
+/* 8036C0BC 00367D5C  38 60 00 27 */	li r3, 0x27
+/* 8036C0C0 00367D60  38 80 00 00 */	li r4, 0
+/* 8036C0C4 00367D64  38 A0 00 00 */	li r5, 0
+/* 8036C0C8 00367D68  4B FF E3 01 */	bl "StampCommand"
+/* 8036C0CC 00367D6C  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036C0D0 00367D70  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036C0D4 00367D74  48 00 3D 25 */	bl "DVDLowRequestError"
+lbl_8036C0D8:
+/* 8036C0D8 00367D78  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C0DC 00367D7C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C0E0 00367D80  7C 08 03 A6 */	mtlr r0
+/* 8036C0E4 00367D84  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C0E8 00367D88  4E 80 00 20 */	blr 
+
+.global "cbForStateCheckID1"
+"cbForStateCheckID1":
+/* 8036C0EC 00367D8C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C0F0 00367D90  7C 08 02 A6 */	mflr r0
+/* 8036C0F4 00367D94  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C0F8 00367D98  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C0FC 00367D9C  7C 7F 1B 78 */	mr r31, r3
+/* 8036C100 00367DA0  48 07 43 5D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C104 00367DA4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C108 00367DA8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C10C 00367DAC  40 82 00 14 */	bne lbl_8036C120
+/* 8036C110 00367DB0  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036C114 00367DB4  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036C118 00367DB8  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036C11C 00367DBC  48 00 00 1C */	b lbl_8036C138
+lbl_8036C120:
+/* 8036C120 00367DC0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C124 00367DC4  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036C128 00367DC8  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036C12C 00367DCC  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C130 00367DD0  7C 84 02 14 */	add r4, r4, r0
+/* 8036C134 00367DD4  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036C138:
+/* 8036C138 00367DD8  48 07 43 4D */	bl "OSRestoreInterrupts"
+/* 8036C13C 00367DDC  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036C140 00367DE0  40 82 00 1C */	bne lbl_8036C15C
+/* 8036C144 00367DE4  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036C148 00367DE8  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C14C 00367DEC  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036C150 00367DF0  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C154 00367DF4  48 00 2C 19 */	bl "__DVDStoreErrorCode"
+/* 8036C158 00367DF8  48 00 01 48 */	b lbl_8036C2A0
+lbl_8036C15C:
+/* 8036C15C 00367DFC  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036C160 00367E00  40 82 00 1C */	bne lbl_8036C17C
+/* 8036C164 00367E04  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036C168 00367E08  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C16C 00367E0C  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036C170 00367E10  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C174 00367E14  48 00 2B F9 */	bl "__DVDStoreErrorCode"
+/* 8036C178 00367E18  48 00 01 28 */	b lbl_8036C2A0
+lbl_8036C17C:
+/* 8036C17C 00367E1C  57 E0 07 BD */	rlwinm. r0, r31, 0, 0x1e, 0x1e
+/* 8036C180 00367E20  41 82 00 1C */	beq lbl_8036C19C
+/* 8036C184 00367E24  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036C188 00367E28  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036C18C 00367E2C  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036C190 00367E30  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036C194 00367E34  48 00 2B D9 */	bl "__DVDStoreErrorCode"
+/* 8036C198 00367E38  48 00 01 08 */	b lbl_8036C2A0
+lbl_8036C19C:
+/* 8036C19C 00367E3C  38 80 00 00 */	li r4, 0
+/* 8036C1A0 00367E40  90 8D C3 B8 */	stw r4, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036C1A4 00367E44  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036C1A8 00367E48  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C1AC 00367E4C  41 82 00 6C */	beq lbl_8036C218
+/* 8036C1B0 00367E50  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036C1B4 00367E54  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036C1B8 00367E58  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036C1BC 00367E5C  38 00 00 01 */	li r0, 1
+/* 8036C1C0 00367E60  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036C1C4 00367E64  38 00 00 0A */	li r0, 0xa
+/* 8036C1C8 00367E68  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036C1CC 00367E6C  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036C1D0 00367E70  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036C1D4 00367E74  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036C1D8 00367E78  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036C1DC 00367E7C  41 82 00 14 */	beq lbl_8036C1F0
+/* 8036C1E0 00367E80  7F E4 FB 78 */	mr r4, r31
+/* 8036C1E4 00367E84  38 60 FF FD */	li r3, -3
+/* 8036C1E8 00367E88  7D 89 03 A6 */	mtctr r12
+/* 8036C1EC 00367E8C  4E 80 04 21 */	bctrl 
+lbl_8036C1F0:
+/* 8036C1F0 00367E90  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036C1F4 00367E94  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036C1F8 00367E98  41 82 00 14 */	beq lbl_8036C20C
+/* 8036C1FC 00367E9C  7F E4 FB 78 */	mr r4, r31
+/* 8036C200 00367EA0  38 60 00 00 */	li r3, 0
+/* 8036C204 00367EA4  7D 89 03 A6 */	mtctr r12
+/* 8036C208 00367EA8  4E 80 04 21 */	bctrl 
+lbl_8036C20C:
+/* 8036C20C 00367EAC  48 00 0B 41 */	bl "stateReady"
+/* 8036C210 00367EB0  38 00 00 01 */	li r0, 1
+/* 8036C214 00367EB4  48 00 00 08 */	b lbl_8036C21C
+lbl_8036C218:
+/* 8036C218 00367EB8  38 00 00 00 */	li r0, 0
+lbl_8036C21C:
+/* 8036C21C 00367EBC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C220 00367EC0  40 82 00 80 */	bne lbl_8036C2A0
+/* 8036C224 00367EC4  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036C228 00367EC8  38 00 00 06 */	li r0, 6
+/* 8036C22C 00367ECC  38 60 00 01 */	li r3, 1
+/* 8036C230 00367ED0  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036C234 00367ED4  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036C238 00367ED8  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036C23C 00367EDC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C240 00367EE0  40 82 00 60 */	bne lbl_8036C2A0
+/* 8036C244 00367EE4  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036C248 00367EE8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C24C 00367EEC  40 82 00 54 */	bne lbl_8036C2A0
+/* 8036C250 00367EF0  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036C254 00367EF4  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036C258 00367EF8  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036C25C 00367EFC  48 06 F0 E5 */	bl "OSCreateAlarm"
+/* 8036C260 00367F00  48 07 7D D1 */	bl "OSGetTick"
+/* 8036C264 00367F04  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036C268 00367F08  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036C26C 00367F0C  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036C270 00367F10  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036C274 00367F14  7C 66 1B 78 */	mr r6, r3
+/* 8036C278 00367F18  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036C27C 00367F1C  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036C280 00367F20  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036C284 00367F24  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036C288 00367F28  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036C28C 00367F2C  38 A0 00 00 */	li r5, 0
+/* 8036C290 00367F30  38 E0 00 00 */	li r7, 0
+/* 8036C294 00367F34  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036C298 00367F38  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036C29C 00367F3C  48 06 F3 75 */	bl "OSSetPeriodicAlarm"
+lbl_8036C2A0:
+/* 8036C2A0 00367F40  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C2A4 00367F44  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C2A8 00367F48  7C 08 03 A6 */	mtlr r0
+/* 8036C2AC 00367F4C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C2B0 00367F50  4E 80 00 20 */	blr 
+
+.global "cbForStateCheckID2"
+"cbForStateCheckID2":
+/* 8036C2B4 00367F54  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C2B8 00367F58  7C 08 02 A6 */	mflr r0
+/* 8036C2BC 00367F5C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C2C0 00367F60  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C2C4 00367F64  7C 7F 1B 78 */	mr r31, r3
+/* 8036C2C8 00367F68  48 07 41 95 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C2CC 00367F6C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C2D0 00367F70  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C2D4 00367F74  40 82 00 14 */	bne lbl_8036C2E8
+/* 8036C2D8 00367F78  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036C2DC 00367F7C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036C2E0 00367F80  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036C2E4 00367F84  48 00 00 20 */	b lbl_8036C304
+lbl_8036C2E8:
+/* 8036C2E8 00367F88  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C2EC 00367F8C  3C A0 80 59 */	lis r5, "__ErrorInfo"@ha
+/* 8036C2F0 00367F90  38 A5 13 20 */	addi r5, r5, "__ErrorInfo"@l
+/* 8036C2F4 00367F94  38 04 FF FF */	addi r0, r4, -1
+/* 8036C2F8 00367F98  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C2FC 00367F9C  7C 85 02 14 */	add r4, r5, r0
+/* 8036C300 00367FA0  93 E4 00 28 */	stw r31, 0x28(r4)
+lbl_8036C304:
+/* 8036C304 00367FA4  48 07 41 81 */	bl "OSRestoreInterrupts"
+/* 8036C308 00367FA8  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036C30C 00367FAC  40 82 00 1C */	bne lbl_8036C328
+/* 8036C310 00367FB0  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036C314 00367FB4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C318 00367FB8  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036C31C 00367FBC  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C320 00367FC0  48 00 2A 4D */	bl "__DVDStoreErrorCode"
+/* 8036C324 00367FC4  48 00 01 10 */	b lbl_8036C434
+lbl_8036C328:
+/* 8036C328 00367FC8  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036C32C 00367FCC  40 82 00 1C */	bne lbl_8036C348
+/* 8036C330 00367FD0  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036C334 00367FD4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C338 00367FD8  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036C33C 00367FDC  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C340 00367FE0  48 00 2A 2D */	bl "__DVDStoreErrorCode"
+/* 8036C344 00367FE4  48 00 00 F0 */	b lbl_8036C434
+lbl_8036C348:
+/* 8036C348 00367FE8  57 E0 07 FF */	clrlwi. r0, r31, 0x1f
+/* 8036C34C 00367FEC  41 82 00 CC */	beq lbl_8036C418
+/* 8036C350 00367FF0  3C A0 80 37 */	lis r5, "stateReadingFST"@ha
+/* 8036C354 00367FF4  38 00 00 00 */	li r0, 0
+/* 8036C358 00367FF8  38 A5 A5 60 */	addi r5, r5, "stateReadingFST"@l
+/* 8036C35C 00367FFC  3C 60 80 59 */	lis r3, "BB2"@ha
+/* 8036C360 00368000  90 0D C3 B8 */	stw r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036C364 00368004  38 63 C5 C0 */	addi r3, r3, "BB2"@l
+/* 8036C368 00368008  80 8D C4 18 */	lwz r4, "bootInfo"-_SDA_BASE_(r13)
+/* 8036C36C 0036800C  90 AD C4 24 */	stw r5, "LastState"-_SDA_BASE_(r13)
+/* 8036C370 00368010  80 03 00 08 */	lwz r0, 8(r3)
+/* 8036C374 00368014  80 64 00 3C */	lwz r3, 0x3c(r4)
+/* 8036C378 00368018  7C 03 00 40 */	cmplw r3, r0
+/* 8036C37C 0036801C  40 80 00 1C */	bge lbl_8036C398
+/* 8036C380 00368020  3C A0 80 46 */	lis r5, lbl_804664D0@ha
+/* 8036C384 00368024  38 6D AC 4C */	addi r3, r13, lbl_805D732C-_SDA_BASE_
+/* 8036C388 00368028  38 A5 64 D0 */	addi r5, r5, lbl_804664D0@l
+/* 8036C38C 0036802C  38 80 04 0B */	li r4, 0x40b
+/* 8036C390 00368030  4C C6 31 82 */	crclr 6
+/* 8036C394 00368034  48 07 0D B5 */	bl "OSPanic"
+lbl_8036C398:
+/* 8036C398 00368038  38 60 00 00 */	li r3, 0
+/* 8036C39C 0036803C  48 00 45 21 */	bl "DVDLowClearCoverInterrupt"
+/* 8036C3A0 00368040  80 CD C3 D8 */	lwz r6, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036C3A4 00368044  3F E0 80 59 */	lis r31, "BB2"@ha
+/* 8036C3A8 00368048  3B FF C5 C0 */	addi r31, r31, "BB2"@l
+/* 8036C3AC 0036804C  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036C3B0 00368050  80 9F 00 08 */	lwz r4, 8(r31)
+/* 8036C3B4 00368054  38 60 00 01 */	li r3, 1
+/* 8036C3B8 00368058  7C 00 00 F8 */	nor r0, r0, r0
+/* 8036C3BC 0036805C  80 FF 00 04 */	lwz r7, 4(r31)
+/* 8036C3C0 00368060  54 00 07 BC */	rlwinm r0, r0, 0, 0x1e, 0x1e
+/* 8036C3C4 00368064  7C 85 00 30 */	slw r5, r4, r0
+/* 8036C3C8 00368068  7C E4 34 30 */	srw r4, r7, r6
+/* 8036C3CC 0036806C  38 05 00 1F */	addi r0, r5, 0x1f
+/* 8036C3D0 00368070  54 05 00 34 */	rlwinm r5, r0, 0, 0, 0x1a
+/* 8036C3D4 00368074  4B FF DF F5 */	bl "StampCommand"
+/* 8036C3D8 00368078  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036C3DC 0036807C  3C C0 80 37 */	lis r6, "cbForStateReadingFST"@ha
+/* 8036C3E0 00368080  80 7F 00 08 */	lwz r3, 8(r31)
+/* 8036C3E4 00368084  38 C6 A6 D8 */	addi r6, r6, "cbForStateReadingFST"@l
+/* 8036C3E8 00368088  7C 00 00 F8 */	nor r0, r0, r0
+/* 8036C3EC 0036808C  80 ED C4 18 */	lwz r7, "bootInfo"-_SDA_BASE_(r13)
+/* 8036C3F0 00368090  54 00 07 BC */	rlwinm r0, r0, 0, 0x1e, 0x1e
+/* 8036C3F4 00368094  80 BF 00 04 */	lwz r5, 4(r31)
+/* 8036C3F8 00368098  7C 63 00 30 */	slw r3, r3, r0
+/* 8036C3FC 0036809C  80 0D C3 D8 */	lwz r0, "__DVDLayoutFormat"-_SDA_BASE_(r13)
+/* 8036C400 003680A0  38 83 00 1F */	addi r4, r3, 0x1f
+/* 8036C404 003680A4  80 67 00 38 */	lwz r3, 0x38(r7)
+/* 8036C408 003680A8  54 84 00 34 */	rlwinm r4, r4, 0, 0, 0x1a
+/* 8036C40C 003680AC  7C A5 04 30 */	srw r5, r5, r0
+/* 8036C410 003680B0  48 00 3F ED */	bl "DVDLowRead"
+/* 8036C414 003680B4  48 00 00 20 */	b lbl_8036C434
+lbl_8036C418:
+/* 8036C418 003680B8  38 60 00 27 */	li r3, 0x27
+/* 8036C41C 003680BC  38 80 00 00 */	li r4, 0
+/* 8036C420 003680C0  38 A0 00 00 */	li r5, 0
+/* 8036C424 003680C4  4B FF DF A5 */	bl "StampCommand"
+/* 8036C428 003680C8  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036C42C 003680CC  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036C430 003680D0  48 00 39 C9 */	bl "DVDLowRequestError"
+lbl_8036C434:
+/* 8036C434 003680D4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C438 003680D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C43C 003680DC  7C 08 03 A6 */	mtlr r0
+/* 8036C440 003680E0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C444 003680E4  4E 80 00 20 */	blr 
+
+.global "stateCoverClosed"
+"stateCoverClosed":
+/* 8036C448 003680E8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C44C 003680EC  7C 08 02 A6 */	mflr r0
+/* 8036C450 003680F0  38 60 00 01 */	li r3, 1
+/* 8036C454 003680F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C458 003680F8  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036C45C 003680FC  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036C460 00368100  28 00 00 26 */	cmplwi r0, 0x26
+/* 8036C464 00368104  41 81 00 7C */	bgt lbl_8036C4E0
+/* 8036C468 00368108  3C 60 80 46 */	lis r3, lbl_80466504@ha
+/* 8036C46C 0036810C  54 00 10 3A */	slwi r0, r0, 2
+/* 8036C470 00368110  38 63 65 04 */	addi r3, r3, lbl_80466504@l
+/* 8036C474 00368114  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8036C478 00368118  7C 69 03 A6 */	mtctr r3
+/* 8036C47C 0036811C  4E 80 04 20 */	bctr 
+/* 8036C480 00368120  48 00 24 31 */	bl "__DVDClearWaitingQueue"
+/* 8036C484 00368124  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036C488 00368128  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036C48C 0036812C  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036C490 00368130  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036C494 00368134  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036C498 00368138  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036C49C 0036813C  41 82 00 10 */	beq lbl_8036C4AC
+/* 8036C4A0 00368140  38 60 FF FC */	li r3, -4
+/* 8036C4A4 00368144  7D 89 03 A6 */	mtctr r12
+/* 8036C4A8 00368148  4E 80 04 21 */	bctrl 
+lbl_8036C4AC:
+/* 8036C4AC 0036814C  48 00 08 A1 */	bl "stateReady"
+/* 8036C4B0 00368150  48 00 00 4C */	b lbl_8036C4FC
+/* 8036C4B4 00368154  38 00 00 00 */	li r0, 0
+/* 8036C4B8 00368158  90 0D C4 00 */	stw r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036C4BC 0036815C  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036C4C0 00368160  38 00 00 01 */	li r0, 1
+/* 8036C4C4 00368164  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036C4C8 00368168  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036C4CC 0036816C  48 00 0B A9 */	bl "stateBusy"
+/* 8036C4D0 00368170  48 00 00 2C */	b lbl_8036C4FC
+/* 8036C4D4 00368174  80 0D C6 B0 */	lwz r0, "__OSInIPL"-_SDA_BASE_(r13)
+/* 8036C4D8 00368178  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C4DC 0036817C  40 82 00 20 */	bne lbl_8036C4FC
+lbl_8036C4E0:
+/* 8036C4E0 00368180  38 00 00 00 */	li r0, 0
+/* 8036C4E4 00368184  38 60 00 01 */	li r3, 1
+/* 8036C4E8 00368188  90 0D C4 00 */	stw r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036C4EC 0036818C  48 00 3A 75 */	bl "DVDLowSetSpinupFlag"
+/* 8036C4F0 00368190  3C 60 80 37 */	lis r3, "cbForStateReset"@ha
+/* 8036C4F4 00368194  38 63 C6 B4 */	addi r3, r3, "cbForStateReset"@l
+/* 8036C4F8 00368198  48 00 3A 75 */	bl "DVDLowReset"
+lbl_8036C4FC:
+/* 8036C4FC 0036819C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C500 003681A0  7C 08 03 A6 */	mtlr r0
+/* 8036C504 003681A4  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C508 003681A8  4E 80 00 20 */	blr 
+
+.global "ResetAlarmHandler"
+"ResetAlarmHandler":
+/* 8036C50C 003681AC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C510 003681B0  7C 08 02 A6 */	mflr r0
+/* 8036C514 003681B4  3C 60 80 00 */	lis r3, 0x800030E6@ha
+/* 8036C518 003681B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C51C 003681BC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C520 003681C0  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036C524 003681C4  A0 03 30 E6 */	lhz r0, 0x800030E6@l(r3)
+/* 8036C528 003681C8  28 00 80 03 */	cmplwi r0, 0x8003
+/* 8036C52C 003681CC  40 82 00 B0 */	bne lbl_8036C5DC
+/* 8036C530 003681D0  3C 80 80 37 */	lis r4, "stateDownRotation"@ha
+/* 8036C534 003681D4  38 60 00 00 */	li r3, 0
+/* 8036C538 003681D8  38 84 C7 98 */	addi r4, r4, "stateDownRotation"@l
+/* 8036C53C 003681DC  90 8D C4 24 */	stw r4, "LastState"-_SDA_BASE_(r13)
+/* 8036C540 003681E0  48 00 43 7D */	bl "DVDLowClearCoverInterrupt"
+/* 8036C544 003681E4  48 07 3F 19 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C548 003681E8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C54C 003681EC  7C 7F 1B 78 */	mr r31, r3
+/* 8036C550 003681F0  28 00 00 05 */	cmplwi r0, 5
+/* 8036C554 003681F4  41 80 00 0C */	blt lbl_8036C560
+/* 8036C558 003681F8  38 00 00 00 */	li r0, 0
+/* 8036C55C 003681FC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036C560:
+/* 8036C560 00368200  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C564 00368204  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036C568 00368208  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C56C 0036820C  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036C570 00368210  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C574 00368214  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C578 00368218  38 C0 00 25 */	li r6, 0x25
+/* 8036C57C 0036821C  38 80 00 00 */	li r4, 0
+/* 8036C580 00368220  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036C584 00368224  7C BE 2A 14 */	add r5, r30, r5
+/* 8036C588 00368228  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036C58C 0036822C  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036C590 00368230  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C594 00368234  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036C598 00368238  7C 7E 02 14 */	add r3, r30, r0
+/* 8036C59C 0036823C  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036C5A0 00368240  48 07 7A 91 */	bl "OSGetTick"
+/* 8036C5A4 00368244  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C5A8 00368248  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C5AC 0036824C  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C5B0 00368250  38 04 00 01 */	addi r0, r4, 1
+/* 8036C5B4 00368254  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C5B8 00368258  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036C5BC 0036825C  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036C5C0 00368260  7F E3 FB 78 */	mr r3, r31
+/* 8036C5C4 00368264  48 07 3E C1 */	bl "OSRestoreInterrupts"
+/* 8036C5C8 00368268  3C 80 80 37 */	lis r4, "cbForStateDownRotation"@ha
+/* 8036C5CC 0036826C  3C 60 00 02 */	lis r3, 2
+/* 8036C5D0 00368270  38 84 C8 60 */	addi r4, r4, "cbForStateDownRotation"@l
+/* 8036C5D4 00368274  48 00 3C A9 */	bl "DVDLowSetMaximumRotation"
+/* 8036C5D8 00368278  48 00 00 C4 */	b lbl_8036C69C
+lbl_8036C5DC:
+/* 8036C5DC 0036827C  3C 60 80 59 */	lis r3, "CurrDiskID"@ha
+/* 8036C5E0 00368280  38 80 00 20 */	li r4, 0x20
+/* 8036C5E4 00368284  38 63 C6 80 */	addi r3, r3, "CurrDiskID"@l
+/* 8036C5E8 00368288  48 06 FC 5D */	bl "DCInvalidateRange"
+/* 8036C5EC 0036828C  3C 80 80 37 */	lis r4, "stateCoverClosed_CMD"@ha
+/* 8036C5F0 00368290  38 60 00 00 */	li r3, 0
+/* 8036C5F4 00368294  38 84 C9 F8 */	addi r4, r4, "stateCoverClosed_CMD"@l
+/* 8036C5F8 00368298  90 8D C4 24 */	stw r4, "LastState"-_SDA_BASE_(r13)
+/* 8036C5FC 0036829C  48 00 42 C1 */	bl "DVDLowClearCoverInterrupt"
+/* 8036C600 003682A0  48 07 3E 5D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C604 003682A4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C608 003682A8  7C 7F 1B 78 */	mr r31, r3
+/* 8036C60C 003682AC  28 00 00 05 */	cmplwi r0, 5
+/* 8036C610 003682B0  41 80 00 0C */	blt lbl_8036C61C
+/* 8036C614 003682B4  38 00 00 00 */	li r0, 0
+/* 8036C618 003682B8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036C61C:
+/* 8036C61C 003682BC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C620 003682C0  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036C624 003682C4  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C628 003682C8  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036C62C 003682CC  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036C630 003682D0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C634 003682D4  38 E0 00 05 */	li r7, 5
+/* 8036C638 003682D8  38 A0 00 00 */	li r5, 0
+/* 8036C63C 003682DC  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036C640 003682E0  38 80 00 20 */	li r4, 0x20
+/* 8036C644 003682E4  7C DE 32 14 */	add r6, r30, r6
+/* 8036C648 003682E8  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036C64C 003682EC  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036C650 003682F0  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C654 003682F4  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036C658 003682F8  7C 7E 02 14 */	add r3, r30, r0
+/* 8036C65C 003682FC  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036C660 00368300  48 07 79 D1 */	bl "OSGetTick"
+/* 8036C664 00368304  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C668 00368308  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C66C 0036830C  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C670 00368310  38 04 00 01 */	addi r0, r4, 1
+/* 8036C674 00368314  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C678 00368318  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036C67C 0036831C  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036C680 00368320  7F E3 FB 78 */	mr r3, r31
+/* 8036C684 00368324  48 07 3E 01 */	bl "OSRestoreInterrupts"
+/* 8036C688 00368328  3C 60 80 59 */	lis r3, "CurrDiskID"@ha
+/* 8036C68C 0036832C  3C 80 80 37 */	lis r4, "cbForStateCoverClosed"@ha
+/* 8036C690 00368330  38 63 C6 80 */	addi r3, r3, "CurrDiskID"@l
+/* 8036C694 00368334  38 84 CA C8 */	addi r4, r4, "cbForStateCoverClosed"@l
+/* 8036C698 00368338  48 00 2D 7D */	bl "DVDLowReadDiskID"
+lbl_8036C69C:
+/* 8036C69C 0036833C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C6A0 00368340  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C6A4 00368344  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036C6A8 00368348  7C 08 03 A6 */	mtlr r0
+/* 8036C6AC 0036834C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C6B0 00368350  4E 80 00 20 */	blr 
+
+.global "cbForStateReset"
+"cbForStateReset":
+/* 8036C6B4 00368354  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C6B8 00368358  7C 08 02 A6 */	mflr r0
+/* 8036C6BC 0036835C  28 03 00 10 */	cmplwi r3, 0x10
+/* 8036C6C0 00368360  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C6C4 00368364  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C6C8 00368368  40 82 00 1C */	bne lbl_8036C6E4
+/* 8036C6CC 0036836C  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036C6D0 00368370  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C6D4 00368374  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036C6D8 00368378  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C6DC 0036837C  48 00 26 91 */	bl "__DVDStoreErrorCode"
+/* 8036C6E0 00368380  48 00 00 A4 */	b lbl_8036C784
+lbl_8036C6E4:
+/* 8036C6E4 00368384  28 03 00 20 */	cmplwi r3, 0x20
+/* 8036C6E8 00368388  40 82 00 1C */	bne lbl_8036C704
+/* 8036C6EC 0036838C  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036C6F0 00368390  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C6F4 00368394  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036C6F8 00368398  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C6FC 0036839C  48 00 26 71 */	bl "__DVDStoreErrorCode"
+/* 8036C700 003683A0  48 00 00 84 */	b lbl_8036C784
+lbl_8036C704:
+/* 8036C704 003683A4  54 60 07 FF */	clrlwi. r0, r3, 0x1f
+/* 8036C708 003683A8  41 82 00 60 */	beq lbl_8036C768
+/* 8036C70C 003683AC  48 07 79 2D */	bl "__OSGetSystemTime"
+/* 8036C710 003683B0  38 00 00 00 */	li r0, 0
+/* 8036C714 003683B4  90 8D C3 FC */	stw r4, lbl_805D8ADC-_SDA_BASE_(r13)
+/* 8036C718 003683B8  3F E0 80 59 */	lis r31, "ResetAlarm"@ha
+/* 8036C71C 003683BC  90 6D C3 F8 */	stw r3, "LastResetEnd"-_SDA_BASE_(r13)
+/* 8036C720 003683C0  38 7F 11 00 */	addi r3, r31, "ResetAlarm"@l
+/* 8036C724 003683C4  90 0D C4 04 */	stw r0, "ResetRequired"-_SDA_BASE_(r13)
+/* 8036C728 003683C8  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036C72C 003683CC  48 06 EC 15 */	bl "OSCreateAlarm"
+/* 8036C730 003683D0  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 8036C734 003683D4  3C E0 80 37 */	lis r7, "ResetAlarmHandler"@ha
+/* 8036C738 003683D8  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 8036C73C 003683DC  3C 60 10 62 */	lis r3, 0x10624DD3@ha
+/* 8036C740 003683E0  38 83 4D D3 */	addi r4, r3, 0x10624DD3@l
+/* 8036C744 003683E4  38 E7 C5 0C */	addi r7, r7, "ResetAlarmHandler"@l
+/* 8036C748 003683E8  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036C74C 003683EC  38 7F 11 00 */	addi r3, r31, 0x1100
+/* 8036C750 003683F0  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036C754 003683F4  38 A0 00 00 */	li r5, 0
+/* 8036C758 003683F8  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036C75C 003683FC  1C C0 00 64 */	mulli r6, r0, 0x64
+/* 8036C760 00368400  48 06 EE 41 */	bl "OSSetAlarm"
+/* 8036C764 00368404  48 00 00 20 */	b lbl_8036C784
+lbl_8036C768:
+/* 8036C768 00368408  38 60 00 27 */	li r3, 0x27
+/* 8036C76C 0036840C  38 80 00 00 */	li r4, 0
+/* 8036C770 00368410  38 A0 00 00 */	li r5, 0
+/* 8036C774 00368414  4B FF DC 55 */	bl "StampCommand"
+/* 8036C778 00368418  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036C77C 0036841C  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036C780 00368420  48 00 36 79 */	bl "DVDLowRequestError"
+lbl_8036C784:
+/* 8036C784 00368424  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C788 00368428  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C78C 0036842C  7C 08 03 A6 */	mtlr r0
+/* 8036C790 00368430  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C794 00368434  4E 80 00 20 */	blr 
+
+.global "stateDownRotation"
+"stateDownRotation":
+/* 8036C798 00368438  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C79C 0036843C  7C 08 02 A6 */	mflr r0
+/* 8036C7A0 00368440  38 60 00 00 */	li r3, 0
+/* 8036C7A4 00368444  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C7A8 00368448  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C7AC 0036844C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036C7B0 00368450  48 00 41 0D */	bl "DVDLowClearCoverInterrupt"
+/* 8036C7B4 00368454  48 07 3C A9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C7B8 00368458  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C7BC 0036845C  7C 7F 1B 78 */	mr r31, r3
+/* 8036C7C0 00368460  28 00 00 05 */	cmplwi r0, 5
+/* 8036C7C4 00368464  41 80 00 0C */	blt lbl_8036C7D0
+/* 8036C7C8 00368468  38 00 00 00 */	li r0, 0
+/* 8036C7CC 0036846C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036C7D0:
+/* 8036C7D0 00368470  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C7D4 00368474  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036C7D8 00368478  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C7DC 0036847C  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036C7E0 00368480  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C7E4 00368484  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C7E8 00368488  38 C0 00 25 */	li r6, 0x25
+/* 8036C7EC 0036848C  38 80 00 00 */	li r4, 0
+/* 8036C7F0 00368490  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036C7F4 00368494  7C BE 2A 14 */	add r5, r30, r5
+/* 8036C7F8 00368498  90 C5 00 1C */	stw r6, 0x1c(r5)
+/* 8036C7FC 0036849C  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036C800 003684A0  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C804 003684A4  90 83 00 20 */	stw r4, 0x20(r3)
+/* 8036C808 003684A8  7C 7E 02 14 */	add r3, r30, r0
+/* 8036C80C 003684AC  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036C810 003684B0  48 07 78 21 */	bl "OSGetTick"
+/* 8036C814 003684B4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C818 003684B8  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C81C 003684BC  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C820 003684C0  38 04 00 01 */	addi r0, r4, 1
+/* 8036C824 003684C4  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C828 003684C8  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036C82C 003684CC  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036C830 003684D0  7F E3 FB 78 */	mr r3, r31
+/* 8036C834 003684D4  48 07 3C 51 */	bl "OSRestoreInterrupts"
+/* 8036C838 003684D8  3C 80 80 37 */	lis r4, "cbForStateDownRotation"@ha
+/* 8036C83C 003684DC  3C 60 00 02 */	lis r3, 2
+/* 8036C840 003684E0  38 84 C8 60 */	addi r4, r4, "cbForStateDownRotation"@l
+/* 8036C844 003684E4  48 00 3A 39 */	bl "DVDLowSetMaximumRotation"
+/* 8036C848 003684E8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C84C 003684EC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C850 003684F0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036C854 003684F4  7C 08 03 A6 */	mtlr r0
+/* 8036C858 003684F8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C85C 003684FC  4E 80 00 20 */	blr 
+
+.global "cbForStateDownRotation"
+"cbForStateDownRotation":
+/* 8036C860 00368500  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C864 00368504  7C 08 02 A6 */	mflr r0
+/* 8036C868 00368508  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036C86C 0036850C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036C870 00368510  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036C874 00368514  7C 7E 1B 78 */	mr r30, r3
+/* 8036C878 00368518  48 07 3B E5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C87C 0036851C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C880 00368520  2C 00 00 00 */	cmpwi r0, 0
+/* 8036C884 00368524  40 82 00 14 */	bne lbl_8036C898
+/* 8036C888 00368528  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036C88C 0036852C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036C890 00368530  93 C4 00 78 */	stw r30, 0x78(r4)
+/* 8036C894 00368534  48 00 00 20 */	b lbl_8036C8B4
+lbl_8036C898:
+/* 8036C898 00368538  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C89C 0036853C  3C A0 80 59 */	lis r5, "__ErrorInfo"@ha
+/* 8036C8A0 00368540  38 A5 13 20 */	addi r5, r5, "__ErrorInfo"@l
+/* 8036C8A4 00368544  38 04 FF FF */	addi r0, r4, -1
+/* 8036C8A8 00368548  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C8AC 0036854C  7C 85 02 14 */	add r4, r5, r0
+/* 8036C8B0 00368550  93 C4 00 28 */	stw r30, 0x28(r4)
+lbl_8036C8B4:
+/* 8036C8B4 00368554  48 07 3B D1 */	bl "OSRestoreInterrupts"
+/* 8036C8B8 00368558  28 1E 00 10 */	cmplwi r30, 0x10
+/* 8036C8BC 0036855C  40 82 00 1C */	bne lbl_8036C8D8
+/* 8036C8C0 00368560  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036C8C4 00368564  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C8C8 00368568  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036C8CC 0036856C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C8D0 00368570  48 00 24 9D */	bl "__DVDStoreErrorCode"
+/* 8036C8D4 00368574  48 00 01 0C */	b lbl_8036C9E0
+lbl_8036C8D8:
+/* 8036C8D8 00368578  28 1E 00 20 */	cmplwi r30, 0x20
+/* 8036C8DC 0036857C  40 82 00 1C */	bne lbl_8036C8F8
+/* 8036C8E0 00368580  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036C8E4 00368584  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036C8E8 00368588  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036C8EC 0036858C  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036C8F0 00368590  48 00 24 7D */	bl "__DVDStoreErrorCode"
+/* 8036C8F4 00368594  48 00 00 EC */	b lbl_8036C9E0
+lbl_8036C8F8:
+/* 8036C8F8 00368598  57 C0 07 FF */	clrlwi. r0, r30, 0x1f
+/* 8036C8FC 0036859C  41 82 00 C8 */	beq lbl_8036C9C4
+/* 8036C900 003685A0  3C 60 80 59 */	lis r3, "CurrDiskID"@ha
+/* 8036C904 003685A4  38 80 00 20 */	li r4, 0x20
+/* 8036C908 003685A8  38 63 C6 80 */	addi r3, r3, "CurrDiskID"@l
+/* 8036C90C 003685AC  48 06 F9 39 */	bl "DCInvalidateRange"
+/* 8036C910 003685B0  3C 80 80 37 */	lis r4, "stateCoverClosed_CMD"@ha
+/* 8036C914 003685B4  38 60 00 00 */	li r3, 0
+/* 8036C918 003685B8  38 84 C9 F8 */	addi r4, r4, "stateCoverClosed_CMD"@l
+/* 8036C91C 003685BC  90 8D C4 24 */	stw r4, "LastState"-_SDA_BASE_(r13)
+/* 8036C920 003685C0  48 00 3F 9D */	bl "DVDLowClearCoverInterrupt"
+/* 8036C924 003685C4  48 07 3B 39 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036C928 003685C8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C92C 003685CC  7C 7F 1B 78 */	mr r31, r3
+/* 8036C930 003685D0  28 00 00 05 */	cmplwi r0, 5
+/* 8036C934 003685D4  41 80 00 0C */	blt lbl_8036C940
+/* 8036C938 003685D8  38 00 00 00 */	li r0, 0
+/* 8036C93C 003685DC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036C940:
+/* 8036C940 003685E0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C944 003685E4  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036C948 003685E8  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C94C 003685EC  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036C950 003685F0  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036C954 003685F4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C958 003685F8  38 E0 00 05 */	li r7, 5
+/* 8036C95C 003685FC  38 A0 00 00 */	li r5, 0
+/* 8036C960 00368600  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036C964 00368604  38 80 00 20 */	li r4, 0x20
+/* 8036C968 00368608  7C DE 32 14 */	add r6, r30, r6
+/* 8036C96C 0036860C  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036C970 00368610  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036C974 00368614  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036C978 00368618  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036C97C 0036861C  7C 7E 02 14 */	add r3, r30, r0
+/* 8036C980 00368620  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036C984 00368624  48 07 76 AD */	bl "OSGetTick"
+/* 8036C988 00368628  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C98C 0036862C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C990 00368630  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036C994 00368634  38 04 00 01 */	addi r0, r4, 1
+/* 8036C998 00368638  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036C99C 0036863C  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036C9A0 00368640  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036C9A4 00368644  7F E3 FB 78 */	mr r3, r31
+/* 8036C9A8 00368648  48 07 3A DD */	bl "OSRestoreInterrupts"
+/* 8036C9AC 0036864C  3C 60 80 59 */	lis r3, "CurrDiskID"@ha
+/* 8036C9B0 00368650  3C 80 80 37 */	lis r4, "cbForStateCoverClosed"@ha
+/* 8036C9B4 00368654  38 63 C6 80 */	addi r3, r3, "CurrDiskID"@l
+/* 8036C9B8 00368658  38 84 CA C8 */	addi r4, r4, "cbForStateCoverClosed"@l
+/* 8036C9BC 0036865C  48 00 2A 59 */	bl "DVDLowReadDiskID"
+/* 8036C9C0 00368660  48 00 00 20 */	b lbl_8036C9E0
+lbl_8036C9C4:
+/* 8036C9C4 00368664  38 60 00 27 */	li r3, 0x27
+/* 8036C9C8 00368668  38 80 00 00 */	li r4, 0
+/* 8036C9CC 0036866C  38 A0 00 00 */	li r5, 0
+/* 8036C9D0 00368670  4B FF D9 F9 */	bl "StampCommand"
+/* 8036C9D4 00368674  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036C9D8 00368678  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036C9DC 0036867C  48 00 34 1D */	bl "DVDLowRequestError"
+lbl_8036C9E0:
+/* 8036C9E0 00368680  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036C9E4 00368684  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036C9E8 00368688  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036C9EC 0036868C  7C 08 03 A6 */	mtlr r0
+/* 8036C9F0 00368690  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036C9F4 00368694  4E 80 00 20 */	blr 
+
+.global "stateCoverClosed_CMD"
+"stateCoverClosed_CMD":
+/* 8036C9F8 00368698  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036C9FC 0036869C  7C 08 02 A6 */	mflr r0
+/* 8036CA00 003686A0  38 60 00 00 */	li r3, 0
+/* 8036CA04 003686A4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036CA08 003686A8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036CA0C 003686AC  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036CA10 003686B0  48 00 3E AD */	bl "DVDLowClearCoverInterrupt"
+/* 8036CA14 003686B4  48 07 3A 49 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036CA18 003686B8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA1C 003686BC  7C 7F 1B 78 */	mr r31, r3
+/* 8036CA20 003686C0  28 00 00 05 */	cmplwi r0, 5
+/* 8036CA24 003686C4  41 80 00 0C */	blt lbl_8036CA30
+/* 8036CA28 003686C8  38 00 00 00 */	li r0, 0
+/* 8036CA2C 003686CC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036CA30:
+/* 8036CA30 003686D0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA34 003686D4  3F C0 80 59 */	lis r30, "__ErrorInfo"@ha
+/* 8036CA38 003686D8  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA3C 003686DC  3B DE 13 20 */	addi r30, r30, "__ErrorInfo"@l
+/* 8036CA40 003686E0  1C C0 00 14 */	mulli r6, r0, 0x14
+/* 8036CA44 003686E4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA48 003686E8  38 E0 00 05 */	li r7, 5
+/* 8036CA4C 003686EC  38 A0 00 00 */	li r5, 0
+/* 8036CA50 003686F0  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036CA54 003686F4  38 80 00 20 */	li r4, 0x20
+/* 8036CA58 003686F8  7C DE 32 14 */	add r6, r30, r6
+/* 8036CA5C 003686FC  90 E6 00 1C */	stw r7, 0x1c(r6)
+/* 8036CA60 00368700  7C 7E 1A 14 */	add r3, r30, r3
+/* 8036CA64 00368704  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036CA68 00368708  90 A3 00 20 */	stw r5, 0x20(r3)
+/* 8036CA6C 0036870C  7C 7E 02 14 */	add r3, r30, r0
+/* 8036CA70 00368710  90 83 00 24 */	stw r4, 0x24(r3)
+/* 8036CA74 00368714  48 07 75 BD */	bl "OSGetTick"
+/* 8036CA78 00368718  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA7C 0036871C  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA80 00368720  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036CA84 00368724  38 04 00 01 */	addi r0, r4, 1
+/* 8036CA88 00368728  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CA8C 0036872C  7C 9E 2A 14 */	add r4, r30, r5
+/* 8036CA90 00368730  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036CA94 00368734  7F E3 FB 78 */	mr r3, r31
+/* 8036CA98 00368738  48 07 39 ED */	bl "OSRestoreInterrupts"
+/* 8036CA9C 0036873C  3C 60 80 59 */	lis r3, "CurrDiskID"@ha
+/* 8036CAA0 00368740  3C 80 80 37 */	lis r4, "cbForStateCoverClosed"@ha
+/* 8036CAA4 00368744  38 63 C6 80 */	addi r3, r3, "CurrDiskID"@l
+/* 8036CAA8 00368748  38 84 CA C8 */	addi r4, r4, "cbForStateCoverClosed"@l
+/* 8036CAAC 0036874C  48 00 29 69 */	bl "DVDLowReadDiskID"
+/* 8036CAB0 00368750  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036CAB4 00368754  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036CAB8 00368758  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036CABC 0036875C  7C 08 03 A6 */	mtlr r0
+/* 8036CAC0 00368760  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036CAC4 00368764  4E 80 00 20 */	blr 
+
+.global "cbForStateCoverClosed"
+"cbForStateCoverClosed":
+/* 8036CAC8 00368768  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036CACC 0036876C  7C 08 02 A6 */	mflr r0
+/* 8036CAD0 00368770  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036CAD4 00368774  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036CAD8 00368778  7C 7F 1B 78 */	mr r31, r3
+/* 8036CADC 0036877C  48 07 39 81 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036CAE0 00368780  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CAE4 00368784  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CAE8 00368788  40 82 00 14 */	bne lbl_8036CAFC
+/* 8036CAEC 0036878C  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036CAF0 00368790  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036CAF4 00368794  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036CAF8 00368798  48 00 00 1C */	b lbl_8036CB14
+lbl_8036CAFC:
+/* 8036CAFC 0036879C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036CB00 003687A0  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036CB04 003687A4  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036CB08 003687A8  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036CB0C 003687AC  7C 84 02 14 */	add r4, r4, r0
+/* 8036CB10 003687B0  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036CB14:
+/* 8036CB14 003687B4  48 07 39 71 */	bl "OSRestoreInterrupts"
+/* 8036CB18 003687B8  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036CB1C 003687BC  40 82 00 1C */	bne lbl_8036CB38
+/* 8036CB20 003687C0  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036CB24 003687C4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036CB28 003687C8  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036CB2C 003687CC  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036CB30 003687D0  48 00 22 3D */	bl "__DVDStoreErrorCode"
+/* 8036CB34 003687D4  48 00 00 58 */	b lbl_8036CB8C
+lbl_8036CB38:
+/* 8036CB38 003687D8  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036CB3C 003687DC  40 82 00 1C */	bne lbl_8036CB58
+/* 8036CB40 003687E0  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036CB44 003687E4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036CB48 003687E8  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036CB4C 003687EC  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036CB50 003687F0  48 00 22 1D */	bl "__DVDStoreErrorCode"
+/* 8036CB54 003687F4  48 00 00 38 */	b lbl_8036CB8C
+lbl_8036CB58:
+/* 8036CB58 003687F8  57 E0 07 FF */	clrlwi. r0, r31, 0x1f
+/* 8036CB5C 003687FC  41 82 00 14 */	beq lbl_8036CB70
+/* 8036CB60 00368800  38 00 00 00 */	li r0, 0
+/* 8036CB64 00368804  90 0D C3 B8 */	stw r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036CB68 00368808  4B FF E9 F1 */	bl "stateCheckID"
+/* 8036CB6C 0036880C  48 00 00 20 */	b lbl_8036CB8C
+lbl_8036CB70:
+/* 8036CB70 00368810  38 60 00 27 */	li r3, 0x27
+/* 8036CB74 00368814  38 80 00 00 */	li r4, 0
+/* 8036CB78 00368818  38 A0 00 00 */	li r5, 0
+/* 8036CB7C 0036881C  4B FF D8 4D */	bl "StampCommand"
+/* 8036CB80 00368820  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036CB84 00368824  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036CB88 00368828  48 00 32 71 */	bl "DVDLowRequestError"
+lbl_8036CB8C:
+/* 8036CB8C 0036882C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036CB90 00368830  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036CB94 00368834  7C 08 03 A6 */	mtlr r0
+/* 8036CB98 00368838  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036CB9C 0036883C  4E 80 00 20 */	blr 
+
+.global "cbForPrepareCoverRegister"
+"cbForPrepareCoverRegister":
+/* 8036CBA0 00368840  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036CBA4 00368844  7C 08 02 A6 */	mflr r0
+/* 8036CBA8 00368848  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036CBAC 0036884C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036CBB0 00368850  3B E0 00 00 */	li r31, 0
+/* 8036CBB4 00368854  93 ED C3 D4 */	stw r31, "PreparingCover"-_SDA_BASE_(r13)
+/* 8036CBB8 00368858  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CBBC 0036885C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CBC0 00368860  41 82 00 88 */	beq lbl_8036CC48
+/* 8036CBC4 00368864  48 00 3B 65 */	bl "DVDLowGetCoverRegister"
+/* 8036CBC8 00368868  54 60 07 FF */	clrlwi. r0, r3, 0x1f
+/* 8036CBCC 0036886C  40 82 01 48 */	bne lbl_8036CD14
+/* 8036CBD0 00368870  3C 60 80 59 */	lis r3, "CoverAlarm"@ha
+/* 8036CBD4 00368874  38 63 C6 40 */	addi r3, r3, "CoverAlarm"@l
+/* 8036CBD8 00368878  48 06 EA BD */	bl "OSCancelAlarm"
+/* 8036CBDC 0036887C  93 ED C3 C8 */	stw r31, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CBE0 00368880  93 ED C3 C8 */	stw r31, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CBE4 00368884  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CBE8 00368888  28 00 00 03 */	cmplwi r0, 3
+/* 8036CBEC 0036888C  40 82 00 0C */	bne lbl_8036CBF8
+/* 8036CBF0 00368890  38 00 00 01 */	li r0, 1
+/* 8036CBF4 00368894  90 0D C3 D0 */	stw r0, "ChangedDisc"-_SDA_BASE_(r13)
+lbl_8036CBF8:
+/* 8036CBF8 00368898  80 0D C4 00 */	lwz r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036CBFC 0036889C  28 00 00 02 */	cmplwi r0, 2
+/* 8036CC00 003688A0  40 82 00 1C */	bne lbl_8036CC1C
+/* 8036CC04 003688A4  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CC08 003688A8  2C 03 00 00 */	cmpwi r3, 0
+/* 8036CC0C 003688AC  41 82 01 08 */	beq lbl_8036CD14
+/* 8036CC10 003688B0  38 00 00 0C */	li r0, 0xc
+/* 8036CC14 003688B4  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CC18 003688B8  48 00 00 FC */	b lbl_8036CD14
+lbl_8036CC1C:
+/* 8036CC1C 003688BC  48 00 3C 99 */	bl "DVDLowMaskCoverInterrupt"
+/* 8036CC20 003688C0  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CC24 003688C4  2C 03 00 00 */	cmpwi r3, 0
+/* 8036CC28 003688C8  41 82 00 14 */	beq lbl_8036CC3C
+/* 8036CC2C 003688CC  38 00 00 03 */	li r0, 3
+/* 8036CC30 003688D0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CC34 003688D4  4B FF F8 15 */	bl "stateCoverClosed"
+/* 8036CC38 003688D8  48 00 00 DC */	b lbl_8036CD14
+lbl_8036CC3C:
+/* 8036CC3C 003688DC  38 00 00 07 */	li r0, 7
+/* 8036CC40 003688E0  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036CC44 003688E4  48 00 00 D0 */	b lbl_8036CD14
+lbl_8036CC48:
+/* 8036CC48 003688E8  48 00 3A E1 */	bl "DVDLowGetCoverRegister"
+/* 8036CC4C 003688EC  54 60 07 FF */	clrlwi. r0, r3, 0x1f
+/* 8036CC50 003688F0  41 82 00 3C */	beq lbl_8036CC8C
+/* 8036CC54 003688F4  80 0D C4 00 */	lwz r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036CC58 003688F8  38 60 00 01 */	li r3, 1
+/* 8036CC5C 003688FC  93 ED C3 C4 */	stw r31, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CC60 00368900  28 00 00 02 */	cmplwi r0, 2
+/* 8036CC64 00368904  90 6D C3 C8 */	stw r3, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CC68 00368908  40 82 00 14 */	bne lbl_8036CC7C
+/* 8036CC6C 0036890C  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CC70 00368910  38 00 00 0C */	li r0, 0xc
+/* 8036CC74 00368914  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CC78 00368918  48 00 00 9C */	b lbl_8036CD14
+lbl_8036CC7C:
+/* 8036CC7C 0036891C  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CC80 00368920  38 00 00 05 */	li r0, 5
+/* 8036CC84 00368924  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CC88 00368928  48 00 00 8C */	b lbl_8036CD14
+lbl_8036CC8C:
+/* 8036CC8C 0036892C  48 00 3A 9D */	bl "DVDLowGetCoverRegister"
+/* 8036CC90 00368930  54 60 07 7B */	rlwinm. r0, r3, 0, 0x1d, 0x1d
+/* 8036CC94 00368934  41 82 00 80 */	beq lbl_8036CD14
+/* 8036CC98 00368938  3C 60 80 59 */	lis r3, "CoverAlarm"@ha
+/* 8036CC9C 0036893C  38 63 C6 40 */	addi r3, r3, "CoverAlarm"@l
+/* 8036CCA0 00368940  48 06 E9 F5 */	bl "OSCancelAlarm"
+/* 8036CCA4 00368944  93 ED C3 C4 */	stw r31, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CCA8 00368948  38 60 00 00 */	li r3, 0
+/* 8036CCAC 0036894C  48 00 3C 11 */	bl "DVDLowClearCoverInterrupt"
+/* 8036CCB0 00368950  93 ED C3 C8 */	stw r31, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CCB4 00368954  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CCB8 00368958  28 00 00 03 */	cmplwi r0, 3
+/* 8036CCBC 0036895C  40 82 00 0C */	bne lbl_8036CCC8
+/* 8036CCC0 00368960  38 00 00 01 */	li r0, 1
+/* 8036CCC4 00368964  90 0D C3 D0 */	stw r0, "ChangedDisc"-_SDA_BASE_(r13)
+lbl_8036CCC8:
+/* 8036CCC8 00368968  80 0D C4 00 */	lwz r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036CCCC 0036896C  28 00 00 02 */	cmplwi r0, 2
+/* 8036CCD0 00368970  40 82 00 1C */	bne lbl_8036CCEC
+/* 8036CCD4 00368974  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CCD8 00368978  2C 03 00 00 */	cmpwi r3, 0
+/* 8036CCDC 0036897C  41 82 00 38 */	beq lbl_8036CD14
+/* 8036CCE0 00368980  38 00 00 0C */	li r0, 0xc
+/* 8036CCE4 00368984  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CCE8 00368988  48 00 00 2C */	b lbl_8036CD14
+lbl_8036CCEC:
+/* 8036CCEC 0036898C  48 00 3B C9 */	bl "DVDLowMaskCoverInterrupt"
+/* 8036CCF0 00368990  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036CCF4 00368994  2C 03 00 00 */	cmpwi r3, 0
+/* 8036CCF8 00368998  41 82 00 14 */	beq lbl_8036CD0C
+/* 8036CCFC 0036899C  38 00 00 03 */	li r0, 3
+/* 8036CD00 003689A0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CD04 003689A4  4B FF F7 45 */	bl "stateCoverClosed"
+/* 8036CD08 003689A8  48 00 00 0C */	b lbl_8036CD14
+lbl_8036CD0C:
+/* 8036CD0C 003689AC  38 00 00 07 */	li r0, 7
+/* 8036CD10 003689B0  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036CD14:
+/* 8036CD14 003689B4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036CD18 003689B8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036CD1C 003689BC  7C 08 03 A6 */	mtlr r0
+/* 8036CD20 003689C0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036CD24 003689C4  4E 80 00 20 */	blr 
+
+.global "CoverAlarmHandler"
+"CoverAlarmHandler":
+/* 8036CD28 003689C8  80 0D C3 D4 */	lwz r0, "PreparingCover"-_SDA_BASE_(r13)
+/* 8036CD2C 003689CC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CD30 003689D0  4C 82 00 20 */	bnelr 
+/* 8036CD34 003689D4  38 00 00 01 */	li r0, 1
+/* 8036CD38 003689D8  3C 60 80 37 */	lis r3, "cbForPrepareCoverRegister"@ha
+/* 8036CD3C 003689DC  90 0D C3 D4 */	stw r0, "PreparingCover"-_SDA_BASE_(r13)
+/* 8036CD40 003689E0  38 63 CB A0 */	addi r3, r3, "cbForPrepareCoverRegister"@l
+/* 8036CD44 003689E4  48 00 39 F4 */	b "DVDLowPrepareCoverRegister"
+/* 8036CD48 003689E8  4E 80 00 20 */	blr 
+
+.global "stateReady"
+"stateReady":
+/* 8036CD4C 003689EC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036CD50 003689F0  7C 08 02 A6 */	mflr r0
+/* 8036CD54 003689F4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036CD58 003689F8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036CD5C 003689FC  48 00 1C 95 */	bl "__DVDCheckWaitingQueue"
+/* 8036CD60 00368A00  2C 03 00 00 */	cmpwi r3, 0
+/* 8036CD64 00368A04  40 82 00 10 */	bne lbl_8036CD74
+/* 8036CD68 00368A08  38 00 00 00 */	li r0, 0
+/* 8036CD6C 00368A0C  90 0D C4 20 */	stw r0, "executing"-_SDA_BASE_(r13)
+/* 8036CD70 00368A10  48 00 02 F0 */	b lbl_8036D060
+lbl_8036CD74:
+/* 8036CD74 00368A14  80 0D C3 A4 */	lwz r0, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036CD78 00368A18  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CD7C 00368A1C  41 82 00 18 */	beq lbl_8036CD94
+/* 8036CD80 00368A20  38 60 00 01 */	li r3, 1
+/* 8036CD84 00368A24  38 00 00 00 */	li r0, 0
+/* 8036CD88 00368A28  90 6D C3 A8 */	stw r3, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036CD8C 00368A2C  90 0D C4 20 */	stw r0, "executing"-_SDA_BASE_(r13)
+/* 8036CD90 00368A30  48 00 02 D0 */	b lbl_8036D060
+lbl_8036CD94:
+/* 8036CD94 00368A34  48 00 1B BD */	bl "__DVDPopWaitingQueue"
+/* 8036CD98 00368A38  80 0D C3 AC */	lwz r0, "FatalErrorFlag"-_SDA_BASE_(r13)
+/* 8036CD9C 00368A3C  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036CDA0 00368A40  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CDA4 00368A44  41 82 00 3C */	beq lbl_8036CDE0
+/* 8036CDA8 00368A48  38 00 FF FF */	li r0, -1
+/* 8036CDAC 00368A4C  3C A0 80 59 */	lis r5, "DummyCommandBlock"@ha
+/* 8036CDB0 00368A50  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CDB4 00368A54  38 A5 C5 E0 */	addi r5, r5, "DummyCommandBlock"@l
+/* 8036CDB8 00368A58  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036CDBC 00368A5C  90 AD C4 20 */	stw r5, "executing"-_SDA_BASE_(r13)
+/* 8036CDC0 00368A60  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036CDC4 00368A64  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036CDC8 00368A68  41 82 00 10 */	beq lbl_8036CDD8
+/* 8036CDCC 00368A6C  38 60 FF FF */	li r3, -1
+/* 8036CDD0 00368A70  7D 89 03 A6 */	mtctr r12
+/* 8036CDD4 00368A74  4E 80 04 21 */	bctrl 
+lbl_8036CDD8:
+/* 8036CDD8 00368A78  4B FF FF 75 */	bl "stateReady"
+/* 8036CDDC 00368A7C  48 00 02 84 */	b lbl_8036D060
+lbl_8036CDE0:
+/* 8036CDE0 00368A80  80 03 00 08 */	lwz r0, 8(r3)
+/* 8036CDE4 00368A84  90 0D C4 14 */	stw r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CDE8 00368A88  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CDEC 00368A8C  28 00 00 20 */	cmplwi r0, 0x20
+/* 8036CDF0 00368A90  41 82 00 1C */	beq lbl_8036CE0C
+/* 8036CDF4 00368A94  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CDF8 00368A98  28 00 00 0E */	cmplwi r0, 0xe
+/* 8036CDFC 00368A9C  41 82 00 10 */	beq lbl_8036CE0C
+/* 8036CE00 00368AA0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036CE04 00368AA4  28 00 00 23 */	cmplwi r0, 0x23
+/* 8036CE08 00368AA8  40 82 00 0C */	bne lbl_8036CE14
+lbl_8036CE0C:
+/* 8036CE0C 00368AAC  38 00 00 00 */	li r0, 0
+/* 8036CE10 00368AB0  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036CE14:
+/* 8036CE14 00368AB4  80 0D C3 B4 */	lwz r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036CE18 00368AB8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CE1C 00368ABC  41 82 01 E0 */	beq lbl_8036CFFC
+/* 8036CE20 00368AC0  80 0D C3 B4 */	lwz r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036CE24 00368AC4  2C 00 00 04 */	cmpwi r0, 4
+/* 8036CE28 00368AC8  41 82 01 2C */	beq lbl_8036CF54
+/* 8036CE2C 00368ACC  40 80 00 1C */	bge lbl_8036CE48
+/* 8036CE30 00368AD0  2C 00 00 02 */	cmpwi r0, 2
+/* 8036CE34 00368AD4  41 82 00 28 */	beq lbl_8036CE5C
+/* 8036CE38 00368AD8  40 80 00 A0 */	bge lbl_8036CED8
+/* 8036CE3C 00368ADC  2C 00 00 01 */	cmpwi r0, 1
+/* 8036CE40 00368AE0  40 80 01 90 */	bge lbl_8036CFD0
+/* 8036CE44 00368AE4  48 00 01 AC */	b lbl_8036CFF0
+lbl_8036CE48:
+/* 8036CE48 00368AE8  2C 00 00 08 */	cmpwi r0, 8
+/* 8036CE4C 00368AEC  40 80 01 A4 */	bge lbl_8036CFF0
+/* 8036CE50 00368AF0  2C 00 00 06 */	cmpwi r0, 6
+/* 8036CE54 00368AF4  40 80 01 7C */	bge lbl_8036CFD0
+/* 8036CE58 00368AF8  48 00 01 88 */	b lbl_8036CFE0
+lbl_8036CE5C:
+/* 8036CE5C 00368AFC  38 00 00 0B */	li r0, 0xb
+/* 8036CE60 00368B00  38 80 00 01 */	li r4, 1
+/* 8036CE64 00368B04  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CE68 00368B08  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CE6C 00368B0C  90 8D C4 00 */	stw r4, "MotorState"-_SDA_BASE_(r13)
+/* 8036CE70 00368B10  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CE74 00368B14  40 82 01 7C */	bne lbl_8036CFF0
+/* 8036CE78 00368B18  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CE7C 00368B1C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CE80 00368B20  40 82 01 70 */	bne lbl_8036CFF0
+/* 8036CE84 00368B24  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036CE88 00368B28  90 8D C3 C4 */	stw r4, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CE8C 00368B2C  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036CE90 00368B30  48 06 E4 B1 */	bl "OSCreateAlarm"
+/* 8036CE94 00368B34  48 07 71 9D */	bl "OSGetTick"
+/* 8036CE98 00368B38  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036CE9C 00368B3C  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036CEA0 00368B40  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036CEA4 00368B44  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036CEA8 00368B48  7C 66 1B 78 */	mr r6, r3
+/* 8036CEAC 00368B4C  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036CEB0 00368B50  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036CEB4 00368B54  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036CEB8 00368B58  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036CEBC 00368B5C  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036CEC0 00368B60  38 A0 00 00 */	li r5, 0
+/* 8036CEC4 00368B64  38 E0 00 00 */	li r7, 0
+/* 8036CEC8 00368B68  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036CECC 00368B6C  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036CED0 00368B70  48 06 E7 41 */	bl "OSSetPeriodicAlarm"
+/* 8036CED4 00368B74  48 00 01 1C */	b lbl_8036CFF0
+lbl_8036CED8:
+/* 8036CED8 00368B78  38 00 00 04 */	li r0, 4
+/* 8036CEDC 00368B7C  38 80 00 01 */	li r4, 1
+/* 8036CEE0 00368B80  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CEE4 00368B84  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CEE8 00368B88  90 8D C4 00 */	stw r4, "MotorState"-_SDA_BASE_(r13)
+/* 8036CEEC 00368B8C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CEF0 00368B90  40 82 01 00 */	bne lbl_8036CFF0
+/* 8036CEF4 00368B94  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CEF8 00368B98  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CEFC 00368B9C  40 82 00 F4 */	bne lbl_8036CFF0
+/* 8036CF00 00368BA0  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036CF04 00368BA4  90 8D C3 C4 */	stw r4, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CF08 00368BA8  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036CF0C 00368BAC  48 06 E4 35 */	bl "OSCreateAlarm"
+/* 8036CF10 00368BB0  48 07 71 21 */	bl "OSGetTick"
+/* 8036CF14 00368BB4  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036CF18 00368BB8  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036CF1C 00368BBC  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036CF20 00368BC0  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036CF24 00368BC4  7C 66 1B 78 */	mr r6, r3
+/* 8036CF28 00368BC8  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036CF2C 00368BCC  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036CF30 00368BD0  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036CF34 00368BD4  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036CF38 00368BD8  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036CF3C 00368BDC  38 A0 00 00 */	li r5, 0
+/* 8036CF40 00368BE0  38 E0 00 00 */	li r7, 0
+/* 8036CF44 00368BE4  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036CF48 00368BE8  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036CF4C 00368BEC  48 06 E6 C5 */	bl "OSSetPeriodicAlarm"
+/* 8036CF50 00368BF0  48 00 00 A0 */	b lbl_8036CFF0
+lbl_8036CF54:
+/* 8036CF54 00368BF4  38 00 00 05 */	li r0, 5
+/* 8036CF58 00368BF8  38 80 00 01 */	li r4, 1
+/* 8036CF5C 00368BFC  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CF60 00368C00  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CF64 00368C04  90 8D C4 00 */	stw r4, "MotorState"-_SDA_BASE_(r13)
+/* 8036CF68 00368C08  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CF6C 00368C0C  40 82 00 84 */	bne lbl_8036CFF0
+/* 8036CF70 00368C10  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036CF74 00368C14  2C 00 00 00 */	cmpwi r0, 0
+/* 8036CF78 00368C18  40 82 00 78 */	bne lbl_8036CFF0
+/* 8036CF7C 00368C1C  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036CF80 00368C20  90 8D C3 C4 */	stw r4, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036CF84 00368C24  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036CF88 00368C28  48 06 E3 B9 */	bl "OSCreateAlarm"
+/* 8036CF8C 00368C2C  48 07 70 A5 */	bl "OSGetTick"
+/* 8036CF90 00368C30  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036CF94 00368C34  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036CF98 00368C38  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036CF9C 00368C3C  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036CFA0 00368C40  7C 66 1B 78 */	mr r6, r3
+/* 8036CFA4 00368C44  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036CFA8 00368C48  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036CFAC 00368C4C  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036CFB0 00368C50  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036CFB4 00368C54  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036CFB8 00368C58  38 A0 00 00 */	li r5, 0
+/* 8036CFBC 00368C5C  38 E0 00 00 */	li r7, 0
+/* 8036CFC0 00368C60  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036CFC4 00368C64  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036CFC8 00368C68  48 06 E6 49 */	bl "OSSetPeriodicAlarm"
+/* 8036CFCC 00368C6C  48 00 00 24 */	b lbl_8036CFF0
+lbl_8036CFD0:
+/* 8036CFD0 00368C70  38 00 00 03 */	li r0, 3
+/* 8036CFD4 00368C74  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036CFD8 00368C78  4B FF F4 71 */	bl "stateCoverClosed"
+/* 8036CFDC 00368C7C  48 00 00 14 */	b lbl_8036CFF0
+lbl_8036CFE0:
+/* 8036CFE0 00368C80  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036CFE4 00368C84  80 6D C4 0C */	lwz r3, "CancelLastError"-_SDA_BASE_(r13)
+/* 8036CFE8 00368C88  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036CFEC 00368C8C  48 00 1D 81 */	bl "__DVDStoreErrorCode"
+lbl_8036CFF0:
+/* 8036CFF0 00368C90  38 00 00 00 */	li r0, 0
+/* 8036CFF4 00368C94  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036CFF8 00368C98  48 00 00 68 */	b lbl_8036D060
+lbl_8036CFFC:
+/* 8036CFFC 00368C9C  80 0D C4 00 */	lwz r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036D000 00368CA0  2C 00 00 01 */	cmpwi r0, 1
+/* 8036D004 00368CA4  41 82 00 58 */	beq lbl_8036D05C
+/* 8036D008 00368CA8  40 80 00 10 */	bge lbl_8036D018
+/* 8036D00C 00368CAC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D010 00368CB0  40 80 00 38 */	bge lbl_8036D048
+/* 8036D014 00368CB4  48 00 00 48 */	b lbl_8036D05C
+lbl_8036D018:
+/* 8036D018 00368CB8  2C 00 00 03 */	cmpwi r0, 3
+/* 8036D01C 00368CBC  40 80 00 40 */	bge lbl_8036D05C
+/* 8036D020 00368CC0  80 0D C3 CC */	lwz r0, "MotorStopped"-_SDA_BASE_(r13)
+/* 8036D024 00368CC4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D028 00368CC8  41 82 00 10 */	beq lbl_8036D038
+/* 8036D02C 00368CCC  38 00 00 0C */	li r0, 0xc
+/* 8036D030 00368CD0  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036D034 00368CD4  48 00 00 2C */	b lbl_8036D060
+lbl_8036D038:
+/* 8036D038 00368CD8  38 00 00 03 */	li r0, 3
+/* 8036D03C 00368CDC  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036D040 00368CE0  4B FF F4 09 */	bl "stateCoverClosed"
+/* 8036D044 00368CE4  48 00 00 1C */	b lbl_8036D060
+lbl_8036D048:
+/* 8036D048 00368CE8  38 00 00 01 */	li r0, 1
+/* 8036D04C 00368CEC  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036D050 00368CF0  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036D054 00368CF4  48 00 00 21 */	bl "stateBusy"
+/* 8036D058 00368CF8  48 00 00 08 */	b lbl_8036D060
+lbl_8036D05C:
+/* 8036D05C 00368CFC  4B FF F3 ED */	bl "stateCoverClosed"
+lbl_8036D060:
+/* 8036D060 00368D00  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036D064 00368D04  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036D068 00368D08  7C 08 03 A6 */	mtlr r0
+/* 8036D06C 00368D0C  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036D070 00368D10  4E 80 00 20 */	blr 
+
+.global "stateBusy"
+"stateBusy":
+/* 8036D074 00368D14  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036D078 00368D18  7C 08 02 A6 */	mflr r0
+/* 8036D07C 00368D1C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036D080 00368D20  39 61 00 20 */	addi r11, r1, 0x20
+/* 8036D084 00368D24  48 0A 22 ED */	bl "_savegpr_26"
+/* 8036D088 00368D28  3C 80 80 37 */	lis r4, "stateBusy"@ha
+/* 8036D08C 00368D2C  7C 7D 1B 78 */	mr r29, r3
+/* 8036D090 00368D30  38 84 D0 74 */	addi r4, r4, "stateBusy"@l
+/* 8036D094 00368D34  90 8D C4 24 */	stw r4, "LastState"-_SDA_BASE_(r13)
+/* 8036D098 00368D38  83 43 00 08 */	lwz r26, 8(r3)
+/* 8036D09C 00368D3C  2C 1A 00 11 */	cmpwi r26, 0x11
+/* 8036D0A0 00368D40  40 80 00 30 */	bge lbl_8036D0D0
+/* 8036D0A4 00368D44  2C 1A 00 05 */	cmpwi r26, 5
+/* 8036D0A8 00368D48  41 82 00 40 */	beq lbl_8036D0E8
+/* 8036D0AC 00368D4C  40 80 00 18 */	bge lbl_8036D0C4
+/* 8036D0B0 00368D50  2C 1A 00 04 */	cmpwi r26, 4
+/* 8036D0B4 00368D54  40 80 00 B8 */	bge lbl_8036D16C
+/* 8036D0B8 00368D58  2C 1A 00 02 */	cmpwi r26, 2
+/* 8036D0BC 00368D5C  40 80 00 2C */	bge lbl_8036D0E8
+/* 8036D0C0 00368D60  48 00 00 AC */	b lbl_8036D16C
+lbl_8036D0C4:
+/* 8036D0C4 00368D64  2C 1A 00 0D */	cmpwi r26, 0xd
+/* 8036D0C8 00368D68  40 80 00 20 */	bge lbl_8036D0E8
+/* 8036D0CC 00368D6C  48 00 00 A0 */	b lbl_8036D16C
+lbl_8036D0D0:
+/* 8036D0D0 00368D70  2C 1A 00 25 */	cmpwi r26, 0x25
+/* 8036D0D4 00368D74  41 82 00 14 */	beq lbl_8036D0E8
+/* 8036D0D8 00368D78  40 80 00 94 */	bge lbl_8036D16C
+/* 8036D0DC 00368D7C  2C 1A 00 22 */	cmpwi r26, 0x22
+/* 8036D0E0 00368D80  41 82 00 08 */	beq lbl_8036D0E8
+/* 8036D0E4 00368D84  48 00 00 88 */	b lbl_8036D16C
+lbl_8036D0E8:
+/* 8036D0E8 00368D88  83 63 00 14 */	lwz r27, 0x14(r3)
+/* 8036D0EC 00368D8C  83 C3 00 10 */	lwz r30, 0x10(r3)
+/* 8036D0F0 00368D90  48 07 33 6D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036D0F4 00368D94  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D0F8 00368D98  7C 7F 1B 78 */	mr r31, r3
+/* 8036D0FC 00368D9C  28 00 00 05 */	cmplwi r0, 5
+/* 8036D100 00368DA0  41 80 00 0C */	blt lbl_8036D10C
+/* 8036D104 00368DA4  38 00 00 00 */	li r0, 0
+/* 8036D108 00368DA8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036D10C:
+/* 8036D10C 00368DAC  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D110 00368DB0  3F 80 80 59 */	lis r28, "__ErrorInfo"@ha
+/* 8036D114 00368DB4  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D118 00368DB8  3B 9C 13 20 */	addi r28, r28, "__ErrorInfo"@l
+/* 8036D11C 00368DBC  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036D120 00368DC0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D124 00368DC4  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036D128 00368DC8  7C 9C 22 14 */	add r4, r28, r4
+/* 8036D12C 00368DCC  93 44 00 1C */	stw r26, 0x1c(r4)
+/* 8036D130 00368DD0  7C 7C 1A 14 */	add r3, r28, r3
+/* 8036D134 00368DD4  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036D138 00368DD8  93 C3 00 20 */	stw r30, 0x20(r3)
+/* 8036D13C 00368DDC  7C 7C 02 14 */	add r3, r28, r0
+/* 8036D140 00368DE0  93 63 00 24 */	stw r27, 0x24(r3)
+/* 8036D144 00368DE4  48 07 6E ED */	bl "OSGetTick"
+/* 8036D148 00368DE8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D14C 00368DEC  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D150 00368DF0  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036D154 00368DF4  38 04 00 01 */	addi r0, r4, 1
+/* 8036D158 00368DF8  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D15C 00368DFC  7C 9C 2A 14 */	add r4, r28, r5
+/* 8036D160 00368E00  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036D164 00368E04  7F E3 FB 78 */	mr r3, r31
+/* 8036D168 00368E08  48 07 33 1D */	bl "OSRestoreInterrupts"
+lbl_8036D16C:
+/* 8036D16C 00368E0C  80 1D 00 08 */	lwz r0, 8(r29)
+/* 8036D170 00368E10  28 00 00 26 */	cmplwi r0, 0x26
+/* 8036D174 00368E14  41 81 03 D8 */	bgt lbl_8036D54C
+/* 8036D178 00368E18  3C 60 80 46 */	lis r3, lbl_804665A0@ha
+/* 8036D17C 00368E1C  54 00 10 3A */	slwi r0, r0, 2
+/* 8036D180 00368E20  38 63 65 A0 */	addi r3, r3, lbl_804665A0@l
+/* 8036D184 00368E24  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8036D188 00368E28  7C 69 03 A6 */	mtctr r3
+/* 8036D18C 00368E2C  4E 80 04 20 */	bctr 
+/* 8036D190 00368E30  38 60 00 00 */	li r3, 0
+/* 8036D194 00368E34  48 00 37 29 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D198 00368E38  38 00 00 20 */	li r0, 0x20
+/* 8036D19C 00368E3C  3C 80 80 37 */	lis r4, "cbForStateBusy"@ha
+/* 8036D1A0 00368E40  90 1D 00 1C */	stw r0, 0x1c(r29)
+/* 8036D1A4 00368E44  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
+/* 8036D1A8 00368E48  80 7D 00 18 */	lwz r3, 0x18(r29)
+/* 8036D1AC 00368E4C  48 00 22 69 */	bl "DVDLowReadDiskID"
+/* 8036D1B0 00368E50  48 00 03 B4 */	b lbl_8036D564
+/* 8036D1B4 00368E54  80 1D 00 14 */	lwz r0, 0x14(r29)
+/* 8036D1B8 00368E58  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D1BC 00368E5C  40 82 00 3C */	bne lbl_8036D1F8
+/* 8036D1C0 00368E60  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D1C4 00368E64  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036D1C8 00368E68  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D1CC 00368E6C  38 00 00 00 */	li r0, 0
+/* 8036D1D0 00368E70  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D1D4 00368E74  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036D1D8 00368E78  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036D1DC 00368E7C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D1E0 00368E80  41 82 00 10 */	beq lbl_8036D1F0
+/* 8036D1E4 00368E84  38 60 00 00 */	li r3, 0
+/* 8036D1E8 00368E88  7D 89 03 A6 */	mtctr r12
+/* 8036D1EC 00368E8C  4E 80 04 21 */	bctrl 
+lbl_8036D1F0:
+/* 8036D1F0 00368E90  4B FF FB 5D */	bl "stateReady"
+/* 8036D1F4 00368E94  48 00 03 70 */	b lbl_8036D564
+lbl_8036D1F8:
+/* 8036D1F8 00368E98  38 60 00 00 */	li r3, 0
+/* 8036D1FC 00368E9C  48 00 36 C1 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D200 00368EA0  80 7D 00 20 */	lwz r3, 0x20(r29)
+/* 8036D204 00368EA4  3F E0 00 08 */	lis r31, 8
+/* 8036D208 00368EA8  80 1D 00 14 */	lwz r0, 0x14(r29)
+/* 8036D20C 00368EAC  7C 03 00 50 */	subf r0, r3, r0
+/* 8036D210 00368EB0  7C 00 F8 40 */	cmplw r0, r31
+/* 8036D214 00368EB4  41 81 00 08 */	bgt lbl_8036D21C
+/* 8036D218 00368EB8  7C 1F 03 78 */	mr r31, r0
+lbl_8036D21C:
+/* 8036D21C 00368EBC  80 1D 00 20 */	lwz r0, 0x20(r29)
+/* 8036D220 00368EC0  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 8036D224 00368EC4  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036D228 00368EC8  93 FD 00 1C */	stw r31, 0x1c(r29)
+/* 8036D22C 00368ECC  83 7D 00 08 */	lwz r27, 8(r29)
+/* 8036D230 00368ED0  7F 43 02 14 */	add r26, r3, r0
+/* 8036D234 00368ED4  48 07 32 29 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036D238 00368ED8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D23C 00368EDC  7C 7E 1B 78 */	mr r30, r3
+/* 8036D240 00368EE0  28 00 00 05 */	cmplwi r0, 5
+/* 8036D244 00368EE4  41 80 00 0C */	blt lbl_8036D250
+/* 8036D248 00368EE8  38 00 00 00 */	li r0, 0
+/* 8036D24C 00368EEC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036D250:
+/* 8036D250 00368EF0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D254 00368EF4  3F 80 80 59 */	lis r28, "__ErrorInfo"@ha
+/* 8036D258 00368EF8  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D25C 00368EFC  3B 9C 13 20 */	addi r28, r28, "__ErrorInfo"@l
+/* 8036D260 00368F00  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036D264 00368F04  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D268 00368F08  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036D26C 00368F0C  7C 9C 22 14 */	add r4, r28, r4
+/* 8036D270 00368F10  93 64 00 1C */	stw r27, 0x1c(r4)
+/* 8036D274 00368F14  7C 7C 1A 14 */	add r3, r28, r3
+/* 8036D278 00368F18  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036D27C 00368F1C  93 43 00 20 */	stw r26, 0x20(r3)
+/* 8036D280 00368F20  7C 7C 02 14 */	add r3, r28, r0
+/* 8036D284 00368F24  93 E3 00 24 */	stw r31, 0x24(r3)
+/* 8036D288 00368F28  48 07 6D A9 */	bl "OSGetTick"
+/* 8036D28C 00368F2C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D290 00368F30  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D294 00368F34  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036D298 00368F38  38 04 00 01 */	addi r0, r4, 1
+/* 8036D29C 00368F3C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D2A0 00368F40  7C 9C 2A 14 */	add r4, r28, r5
+/* 8036D2A4 00368F44  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036D2A8 00368F48  7F C3 F3 78 */	mr r3, r30
+/* 8036D2AC 00368F4C  48 07 31 D9 */	bl "OSRestoreInterrupts"
+/* 8036D2B0 00368F50  80 FD 00 20 */	lwz r7, 0x20(r29)
+/* 8036D2B4 00368F54  3C C0 80 37 */	lis r6, "cbForStateBusy"@ha
+/* 8036D2B8 00368F58  80 7D 00 18 */	lwz r3, 0x18(r29)
+/* 8036D2BC 00368F5C  38 C6 D5 7C */	addi r6, r6, "cbForStateBusy"@l
+/* 8036D2C0 00368F60  80 BD 00 10 */	lwz r5, 0x10(r29)
+/* 8036D2C4 00368F64  54 E0 F0 BE */	srwi r0, r7, 2
+/* 8036D2C8 00368F68  80 9D 00 1C */	lwz r4, 0x1c(r29)
+/* 8036D2CC 00368F6C  7C 63 3A 14 */	add r3, r3, r7
+/* 8036D2D0 00368F70  7C A5 02 14 */	add r5, r5, r0
+/* 8036D2D4 00368F74  48 00 31 29 */	bl "DVDLowRead"
+/* 8036D2D8 00368F78  48 00 02 8C */	b lbl_8036D564
+/* 8036D2DC 00368F7C  38 60 00 00 */	li r3, 0
+/* 8036D2E0 00368F80  48 00 35 DD */	bl "DVDLowClearCoverInterrupt"
+/* 8036D2E4 00368F84  3C 80 80 37 */	lis r4, "cbForStateBusy"@ha
+/* 8036D2E8 00368F88  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 8036D2EC 00368F8C  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
+/* 8036D2F0 00368F90  48 00 32 BD */	bl "DVDLowSeek"
+/* 8036D2F4 00368F94  48 00 02 70 */	b lbl_8036D564
+/* 8036D2F8 00368F98  3C A0 80 37 */	lis r5, "cbForStateBusy"@ha
+/* 8036D2FC 00368F9C  38 60 00 00 */	li r3, 0
+/* 8036D300 00368FA0  38 A5 D5 7C */	addi r5, r5, "cbForStateBusy"@l
+/* 8036D304 00368FA4  38 80 00 00 */	li r4, 0
+/* 8036D308 00368FA8  48 00 27 F5 */	bl "DVDLowStopMotor"
+/* 8036D30C 00368FAC  48 00 02 58 */	b lbl_8036D564
+/* 8036D310 00368FB0  3C A0 80 37 */	lis r5, "cbForStateBusy"@ha
+/* 8036D314 00368FB4  38 60 00 00 */	li r3, 0
+/* 8036D318 00368FB8  38 A5 D5 7C */	addi r5, r5, "cbForStateBusy"@l
+/* 8036D31C 00368FBC  38 80 00 00 */	li r4, 0
+/* 8036D320 00368FC0  48 00 27 DD */	bl "DVDLowStopMotor"
+/* 8036D324 00368FC4  48 00 02 40 */	b lbl_8036D564
+/* 8036D328 00368FC8  38 60 00 00 */	li r3, 0
+/* 8036D32C 00368FCC  48 00 35 91 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D330 00368FD0  3C A0 80 37 */	lis r5, "cbForStateBusy"@ha
+/* 8036D334 00368FD4  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 8036D338 00368FD8  80 9D 00 14 */	lwz r4, 0x14(r29)
+/* 8036D33C 00368FDC  38 A5 D5 7C */	addi r5, r5, "cbForStateBusy"@l
+/* 8036D340 00368FE0  48 00 2D A9 */	bl "DVDLowAudioBufferConfig"
+/* 8036D344 00368FE4  48 00 02 20 */	b lbl_8036D564
+/* 8036D348 00368FE8  38 60 00 00 */	li r3, 0
+/* 8036D34C 00368FEC  48 00 35 71 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D350 00368FF0  38 00 00 20 */	li r0, 0x20
+/* 8036D354 00368FF4  3C 80 80 37 */	lis r4, "cbForStateBusy"@ha
+/* 8036D358 00368FF8  90 1D 00 1C */	stw r0, 0x1c(r29)
+/* 8036D35C 00368FFC  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
+/* 8036D360 00369000  80 7D 00 18 */	lwz r3, 0x18(r29)
+/* 8036D364 00369004  48 00 29 2D */	bl "DVDLowInquiry"
+/* 8036D368 00369008  48 00 01 FC */	b lbl_8036D564
+/* 8036D36C 0036900C  38 60 00 00 */	li r3, 0
+/* 8036D370 00369010  48 00 35 4D */	bl "DVDLowClearCoverInterrupt"
+/* 8036D374 00369014  3C A0 80 37 */	lis r5, "cbForStateBusy"@ha
+/* 8036D378 00369018  38 60 00 00 */	li r3, 0
+/* 8036D37C 0036901C  38 A5 D5 7C */	addi r5, r5, "cbForStateBusy"@l
+/* 8036D380 00369020  38 80 00 00 */	li r4, 0
+/* 8036D384 00369024  48 00 27 79 */	bl "DVDLowStopMotor"
+/* 8036D388 00369028  48 00 01 DC */	b lbl_8036D564
+/* 8036D38C 0036902C  38 60 00 01 */	li r3, 1
+/* 8036D390 00369030  48 00 2B D1 */	bl "DVDLowSetSpinupFlag"
+/* 8036D394 00369034  3C 60 80 37 */	lis r3, "cbForStateBusy"@ha
+/* 8036D398 00369038  38 63 D5 7C */	addi r3, r3, "cbForStateBusy"@l
+/* 8036D39C 0036903C  48 00 2B D1 */	bl "DVDLowReset"
+/* 8036D3A0 00369040  48 00 01 C4 */	b lbl_8036D564
+/* 8036D3A4 00369044  80 1D 00 14 */	lwz r0, 0x14(r29)
+/* 8036D3A8 00369048  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D3AC 0036904C  40 82 00 3C */	bne lbl_8036D3E8
+/* 8036D3B0 00369050  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D3B4 00369054  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036D3B8 00369058  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D3BC 0036905C  38 00 00 00 */	li r0, 0
+/* 8036D3C0 00369060  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D3C4 00369064  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036D3C8 00369068  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036D3CC 0036906C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D3D0 00369070  41 82 00 10 */	beq lbl_8036D3E0
+/* 8036D3D4 00369074  38 60 00 00 */	li r3, 0
+/* 8036D3D8 00369078  7D 89 03 A6 */	mtctr r12
+/* 8036D3DC 0036907C  4E 80 04 21 */	bctrl 
+lbl_8036D3E0:
+/* 8036D3E0 00369080  4B FF F9 6D */	bl "stateReady"
+/* 8036D3E4 00369084  48 00 01 80 */	b lbl_8036D564
+lbl_8036D3E8:
+/* 8036D3E8 00369088  38 60 00 00 */	li r3, 0
+/* 8036D3EC 0036908C  48 00 34 D1 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D3F0 00369090  80 7D 00 20 */	lwz r3, 0x20(r29)
+/* 8036D3F4 00369094  3F E0 00 08 */	lis r31, 8
+/* 8036D3F8 00369098  80 1D 00 14 */	lwz r0, 0x14(r29)
+/* 8036D3FC 0036909C  7C 03 00 50 */	subf r0, r3, r0
+/* 8036D400 003690A0  7C 00 F8 40 */	cmplw r0, r31
+/* 8036D404 003690A4  41 81 00 08 */	bgt lbl_8036D40C
+/* 8036D408 003690A8  7C 1F 03 78 */	mr r31, r0
+lbl_8036D40C:
+/* 8036D40C 003690AC  80 1D 00 20 */	lwz r0, 0x20(r29)
+/* 8036D410 003690B0  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 8036D414 003690B4  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036D418 003690B8  93 FD 00 1C */	stw r31, 0x1c(r29)
+/* 8036D41C 003690BC  83 5D 00 08 */	lwz r26, 8(r29)
+/* 8036D420 003690C0  7F 63 02 14 */	add r27, r3, r0
+/* 8036D424 003690C4  48 07 30 39 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036D428 003690C8  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D42C 003690CC  7C 7E 1B 78 */	mr r30, r3
+/* 8036D430 003690D0  28 00 00 05 */	cmplwi r0, 5
+/* 8036D434 003690D4  41 80 00 0C */	blt lbl_8036D440
+/* 8036D438 003690D8  38 00 00 00 */	li r0, 0
+/* 8036D43C 003690DC  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+lbl_8036D440:
+/* 8036D440 003690E0  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D444 003690E4  3F 80 80 59 */	lis r28, "__ErrorInfo"@ha
+/* 8036D448 003690E8  80 6D C3 A0 */	lwz r3, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D44C 003690EC  3B 9C 13 20 */	addi r28, r28, "__ErrorInfo"@l
+/* 8036D450 003690F0  1C 80 00 14 */	mulli r4, r0, 0x14
+/* 8036D454 003690F4  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D458 003690F8  1C 63 00 14 */	mulli r3, r3, 0x14
+/* 8036D45C 003690FC  7C 9C 22 14 */	add r4, r28, r4
+/* 8036D460 00369100  93 44 00 1C */	stw r26, 0x1c(r4)
+/* 8036D464 00369104  7C 7C 1A 14 */	add r3, r28, r3
+/* 8036D468 00369108  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036D46C 0036910C  93 63 00 20 */	stw r27, 0x20(r3)
+/* 8036D470 00369110  7C 7C 02 14 */	add r3, r28, r0
+/* 8036D474 00369114  93 E3 00 24 */	stw r31, 0x24(r3)
+/* 8036D478 00369118  48 07 6B B9 */	bl "OSGetTick"
+/* 8036D47C 0036911C  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D480 00369120  80 8D C3 A0 */	lwz r4, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D484 00369124  1C A0 00 14 */	mulli r5, r0, 0x14
+/* 8036D488 00369128  38 04 00 01 */	addi r0, r4, 1
+/* 8036D48C 0036912C  90 0D C3 A0 */	stw r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D490 00369130  7C 9C 2A 14 */	add r4, r28, r5
+/* 8036D494 00369134  90 64 00 2C */	stw r3, 0x2c(r4)
+/* 8036D498 00369138  7F C3 F3 78 */	mr r3, r30
+/* 8036D49C 0036913C  48 07 2F E9 */	bl "OSRestoreInterrupts"
+/* 8036D4A0 00369140  80 FD 00 20 */	lwz r7, 0x20(r29)
+/* 8036D4A4 00369144  3C C0 80 37 */	lis r6, "cbForStateBusy"@ha
+/* 8036D4A8 00369148  80 7D 00 18 */	lwz r3, 0x18(r29)
+/* 8036D4AC 0036914C  38 C6 D5 7C */	addi r6, r6, "cbForStateBusy"@l
+/* 8036D4B0 00369150  80 BD 00 10 */	lwz r5, 0x10(r29)
+/* 8036D4B4 00369154  54 E0 F0 BE */	srwi r0, r7, 2
+/* 8036D4B8 00369158  80 9D 00 1C */	lwz r4, 0x1c(r29)
+/* 8036D4BC 0036915C  7C 63 3A 14 */	add r3, r3, r7
+/* 8036D4C0 00369160  7C A5 02 14 */	add r5, r5, r0
+/* 8036D4C4 00369164  48 00 24 A5 */	bl "DVDLowUnencryptedRead"
+/* 8036D4C8 00369168  48 00 00 9C */	b lbl_8036D564
+/* 8036D4CC 0036916C  38 60 00 00 */	li r3, 0
+/* 8036D4D0 00369170  48 00 33 ED */	bl "DVDLowClearCoverInterrupt"
+/* 8036D4D4 00369174  3D 00 80 37 */	lis r8, "cbForStateBusy"@ha
+/* 8036D4D8 00369178  80 7D 00 10 */	lwz r3, 0x10(r29)
+/* 8036D4DC 0036917C  80 FD 00 18 */	lwz r7, 0x18(r29)
+/* 8036D4E0 00369180  39 08 D5 7C */	addi r8, r8, "cbForStateBusy"@l
+/* 8036D4E4 00369184  38 80 00 00 */	li r4, 0
+/* 8036D4E8 00369188  38 A0 00 00 */	li r5, 0
+/* 8036D4EC 0036918C  38 C0 00 00 */	li r6, 0
+/* 8036D4F0 00369190  48 00 20 AD */	bl "DVDLowOpenPartition"
+/* 8036D4F4 00369194  48 00 00 70 */	b lbl_8036D564
+/* 8036D4F8 00369198  38 60 00 00 */	li r3, 0
+/* 8036D4FC 0036919C  48 00 33 C1 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D500 003691A0  3C 60 80 37 */	lis r3, "cbForStateBusy"@ha
+/* 8036D504 003691A4  38 63 D5 7C */	addi r3, r3, "cbForStateBusy"@l
+/* 8036D508 003691A8  48 00 22 FD */	bl "DVDLowClosePartition"
+/* 8036D50C 003691AC  48 00 00 58 */	b lbl_8036D564
+/* 8036D510 003691B0  3C 60 80 37 */	lis r3, "cbForStateBusy"@ha
+/* 8036D514 003691B4  38 63 D5 7C */	addi r3, r3, "cbForStateBusy"@l
+/* 8036D518 003691B8  48 00 32 21 */	bl "DVDLowPrepareCoverRegister"
+/* 8036D51C 003691BC  48 00 00 48 */	b lbl_8036D564
+/* 8036D520 003691C0  3C 60 80 37 */	lis r3, "cbForStateBusy"@ha
+/* 8036D524 003691C4  38 63 D5 7C */	addi r3, r3, "cbForStateBusy"@l
+/* 8036D528 003691C8  48 00 32 11 */	bl "DVDLowPrepareCoverRegister"
+/* 8036D52C 003691CC  48 00 00 38 */	b lbl_8036D564
+/* 8036D530 003691D0  38 60 00 00 */	li r3, 0
+/* 8036D534 003691D4  48 00 33 89 */	bl "DVDLowClearCoverInterrupt"
+/* 8036D538 003691D8  3C 80 80 37 */	lis r4, "cbForStateBusy"@ha
+/* 8036D53C 003691DC  3C 60 00 02 */	lis r3, 2
+/* 8036D540 003691E0  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
+/* 8036D544 003691E4  48 00 2D 39 */	bl "DVDLowSetMaximumRotation"
+/* 8036D548 003691E8  48 00 00 1C */	b lbl_8036D564
+lbl_8036D54C:
+/* 8036D54C 003691EC  81 8D AC 48 */	lwz r12, "checkOptionalCommand"-_SDA_BASE_(r13)
+/* 8036D550 003691F0  3C 80 80 37 */	lis r4, "cbForStateBusy"@ha
+/* 8036D554 003691F4  7F A3 EB 78 */	mr r3, r29
+/* 8036D558 003691F8  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
+/* 8036D55C 003691FC  7D 89 03 A6 */	mtctr r12
+/* 8036D560 00369200  4E 80 04 21 */	bctrl 
+lbl_8036D564:
+/* 8036D564 00369204  39 61 00 20 */	addi r11, r1, 0x20
+/* 8036D568 00369208  48 0A 1E 55 */	bl "_restgpr_26"
+/* 8036D56C 0036920C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036D570 00369210  7C 08 03 A6 */	mtlr r0
+/* 8036D574 00369214  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036D578 00369218  4E 80 00 20 */	blr 
+
+.global "cbForStateBusy"
+"cbForStateBusy":
+/* 8036D57C 0036921C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036D580 00369220  7C 08 02 A6 */	mflr r0
+/* 8036D584 00369224  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036D588 00369228  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036D58C 0036922C  7C 7F 1B 78 */	mr r31, r3
+/* 8036D590 00369230  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036D594 00369234  48 07 2E C9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036D598 00369238  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D59C 0036923C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D5A0 00369240  40 82 00 14 */	bne lbl_8036D5B4
+/* 8036D5A4 00369244  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036D5A8 00369248  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036D5AC 0036924C  93 E4 00 78 */	stw r31, 0x78(r4)
+/* 8036D5B0 00369250  48 00 00 1C */	b lbl_8036D5CC
+lbl_8036D5B4:
+/* 8036D5B4 00369254  80 0D C3 A0 */	lwz r0, "CommandInfoCounter"-_SDA_BASE_(r13)
+/* 8036D5B8 00369258  3C 80 80 59 */	lis r4, "__ErrorInfo"@ha
+/* 8036D5BC 0036925C  38 84 13 20 */	addi r4, r4, "__ErrorInfo"@l
+/* 8036D5C0 00369260  1C 00 00 14 */	mulli r0, r0, 0x14
+/* 8036D5C4 00369264  7C 84 02 14 */	add r4, r4, r0
+/* 8036D5C8 00369268  93 E4 00 14 */	stw r31, 0x14(r4)
+lbl_8036D5CC:
+/* 8036D5CC 0036926C  48 07 2E B9 */	bl "OSRestoreInterrupts"
+/* 8036D5D0 00369270  28 1F 00 10 */	cmplwi r31, 0x10
+/* 8036D5D4 00369274  40 82 00 1C */	bne lbl_8036D5F0
+/* 8036D5D8 00369278  3C 60 01 23 */	lis r3, 0x01234568@ha
+/* 8036D5DC 0036927C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036D5E0 00369280  38 63 45 68 */	addi r3, r3, 0x01234568@l
+/* 8036D5E4 00369284  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036D5E8 00369288  48 00 17 85 */	bl "__DVDStoreErrorCode"
+/* 8036D5EC 0036928C  48 00 07 AC */	b lbl_8036DD98
+lbl_8036D5F0:
+/* 8036D5F0 00369290  28 1F 00 20 */	cmplwi r31, 0x20
+/* 8036D5F4 00369294  40 82 00 1C */	bne lbl_8036D610
+/* 8036D5F8 00369298  3C 60 01 23 */	lis r3, 0x01234569@ha
+/* 8036D5FC 0036929C  3C 80 80 37 */	lis r4, "cbForStoreErrorCode2"@ha
+/* 8036D600 003692A0  38 63 45 69 */	addi r3, r3, 0x01234569@l
+/* 8036D604 003692A4  38 84 A9 84 */	addi r4, r4, "cbForStoreErrorCode2"@l
+/* 8036D608 003692A8  48 00 17 65 */	bl "__DVDStoreErrorCode"
+/* 8036D60C 003692AC  48 00 07 8C */	b lbl_8036DD98
+lbl_8036D610:
+/* 8036D610 003692B0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D614 003692B4  28 00 00 03 */	cmplwi r0, 3
+/* 8036D618 003692B8  41 82 00 10 */	beq lbl_8036D628
+/* 8036D61C 003692BC  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D620 003692C0  28 00 00 0F */	cmplwi r0, 0xf
+/* 8036D624 003692C4  40 82 01 50 */	bne lbl_8036D774
+lbl_8036D628:
+/* 8036D628 003692C8  57 E0 07 BD */	rlwinm. r0, r31, 0, 0x1e, 0x1e
+/* 8036D62C 003692CC  41 82 00 1C */	beq lbl_8036D648
+/* 8036D630 003692D0  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036D634 003692D4  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036D638 003692D8  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036D63C 003692DC  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036D640 003692E0  48 00 17 2D */	bl "__DVDStoreErrorCode"
+/* 8036D644 003692E4  48 00 07 54 */	b lbl_8036DD98
+lbl_8036D648:
+/* 8036D648 003692E8  38 00 00 00 */	li r0, 0
+/* 8036D64C 003692EC  90 0D C3 B8 */	stw r0, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036D650 003692F0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D654 003692F4  28 00 00 0F */	cmplwi r0, 0xf
+/* 8036D658 003692F8  40 82 00 0C */	bne lbl_8036D664
+/* 8036D65C 003692FC  38 00 00 01 */	li r0, 1
+/* 8036D660 00369300  90 0D C4 04 */	stw r0, "ResetRequired"-_SDA_BASE_(r13)
+lbl_8036D664:
+/* 8036D664 00369304  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036D668 00369308  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D66C 0036930C  41 82 00 70 */	beq lbl_8036D6DC
+/* 8036D670 00369310  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D674 00369314  83 ED C4 20 */	lwz r31, "executing"-_SDA_BASE_(r13)
+/* 8036D678 00369318  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D67C 0036931C  38 00 00 07 */	li r0, 7
+/* 8036D680 00369320  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036D684 00369324  38 80 00 00 */	li r4, 0
+/* 8036D688 00369328  38 00 00 0A */	li r0, 0xa
+/* 8036D68C 0036932C  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036D690 00369330  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D694 00369334  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036D698 00369338  81 9F 00 28 */	lwz r12, 0x28(r31)
+/* 8036D69C 0036933C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D6A0 00369340  41 82 00 14 */	beq lbl_8036D6B4
+/* 8036D6A4 00369344  7F E4 FB 78 */	mr r4, r31
+/* 8036D6A8 00369348  38 60 FF FD */	li r3, -3
+/* 8036D6AC 0036934C  7D 89 03 A6 */	mtctr r12
+/* 8036D6B0 00369350  4E 80 04 21 */	bctrl 
+lbl_8036D6B4:
+/* 8036D6B4 00369354  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036D6B8 00369358  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D6BC 0036935C  41 82 00 14 */	beq lbl_8036D6D0
+/* 8036D6C0 00369360  7F E4 FB 78 */	mr r4, r31
+/* 8036D6C4 00369364  38 60 00 00 */	li r3, 0
+/* 8036D6C8 00369368  7D 89 03 A6 */	mtctr r12
+/* 8036D6CC 0036936C  4E 80 04 21 */	bctrl 
+lbl_8036D6D0:
+/* 8036D6D0 00369370  4B FF F6 7D */	bl "stateReady"
+/* 8036D6D4 00369374  38 00 00 01 */	li r0, 1
+/* 8036D6D8 00369378  48 00 00 08 */	b lbl_8036D6E0
+lbl_8036D6DC:
+/* 8036D6DC 0036937C  38 00 00 00 */	li r0, 0
+lbl_8036D6E0:
+/* 8036D6E0 00369380  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D6E4 00369384  40 82 06 B4 */	bne lbl_8036DD98
+/* 8036D6E8 00369388  80 0D C4 00 */	lwz r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036D6EC 0036938C  28 00 00 02 */	cmplwi r0, 2
+/* 8036D6F0 00369390  41 82 06 A8 */	beq lbl_8036DD98
+/* 8036D6F4 00369394  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036D6F8 00369398  38 00 00 07 */	li r0, 7
+/* 8036D6FC 0036939C  38 60 00 01 */	li r3, 1
+/* 8036D700 003693A0  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036D704 003693A4  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036D708 003693A8  90 6D C4 00 */	stw r3, "MotorState"-_SDA_BASE_(r13)
+/* 8036D70C 003693AC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D710 003693B0  40 82 06 88 */	bne lbl_8036DD98
+/* 8036D714 003693B4  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036D718 003693B8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D71C 003693BC  40 82 06 7C */	bne lbl_8036DD98
+/* 8036D720 003693C0  3F E0 80 59 */	lis r31, "CoverAlarm"@ha
+/* 8036D724 003693C4  90 6D C3 C4 */	stw r3, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036D728 003693C8  38 7F C6 40 */	addi r3, r31, "CoverAlarm"@l
+/* 8036D72C 003693CC  48 06 DC 15 */	bl "OSCreateAlarm"
+/* 8036D730 003693D0  48 07 69 01 */	bl "OSGetTick"
+/* 8036D734 003693D4  3C A0 80 00 */	lis r5, 0x800000F8@ha
+/* 8036D738 003693D8  3C 80 10 62 */	lis r4, 0x10624DD3@ha
+/* 8036D73C 003693DC  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
+/* 8036D740 003693E0  3D 20 80 37 */	lis r9, "CoverAlarmHandler"@ha
+/* 8036D744 003693E4  7C 66 1B 78 */	mr r6, r3
+/* 8036D748 003693E8  38 84 4D D3 */	addi r4, r4, 0x10624DD3@l
+/* 8036D74C 003693EC  54 00 F0 BE */	srwi r0, r0, 2
+/* 8036D750 003693F0  38 7F C6 40 */	addi r3, r31, -14784
+/* 8036D754 003693F4  7C 04 00 16 */	mulhwu r0, r4, r0
+/* 8036D758 003693F8  39 29 CD 28 */	addi r9, r9, "CoverAlarmHandler"@l
+/* 8036D75C 003693FC  38 A0 00 00 */	li r5, 0
+/* 8036D760 00369400  38 E0 00 00 */	li r7, 0
+/* 8036D764 00369404  54 00 D1 BE */	srwi r0, r0, 6
+/* 8036D768 00369408  1D 00 00 64 */	mulli r8, r0, 0x64
+/* 8036D76C 0036940C  48 06 DE A5 */	bl "OSSetPeriodicAlarm"
+/* 8036D770 00369410  48 00 06 28 */	b lbl_8036DD98
+lbl_8036D774:
+/* 8036D774 00369414  80 6D C4 14 */	lwz r3, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D778 00369418  28 03 00 01 */	cmplwi r3, 1
+/* 8036D77C 0036941C  41 82 00 24 */	beq lbl_8036D7A0
+/* 8036D780 00369420  28 03 00 04 */	cmplwi r3, 4
+/* 8036D784 00369424  41 82 00 1C */	beq lbl_8036D7A0
+/* 8036D788 00369428  28 03 00 05 */	cmplwi r3, 5
+/* 8036D78C 0036942C  41 82 00 14 */	beq lbl_8036D7A0
+/* 8036D790 00369430  28 03 00 21 */	cmplwi r3, 0x21
+/* 8036D794 00369434  41 82 00 0C */	beq lbl_8036D7A0
+/* 8036D798 00369438  28 03 00 0E */	cmplwi r3, 0xe
+/* 8036D79C 0036943C  40 82 00 0C */	bne lbl_8036D7A8
+lbl_8036D7A0:
+/* 8036D7A0 00369440  38 00 00 01 */	li r0, 1
+/* 8036D7A4 00369444  48 00 00 1C */	b lbl_8036D7C0
+lbl_8036D7A8:
+/* 8036D7A8 00369448  80 0D AC 54 */	lwz r0, "DmaCommand"-_SDA_BASE_(r13)
+/* 8036D7AC 0036944C  7C 03 00 40 */	cmplw r3, r0
+/* 8036D7B0 00369450  40 82 00 0C */	bne lbl_8036D7BC
+/* 8036D7B4 00369454  38 00 00 01 */	li r0, 1
+/* 8036D7B8 00369458  48 00 00 08 */	b lbl_8036D7C0
+lbl_8036D7BC:
+/* 8036D7BC 0036945C  38 00 00 00 */	li r0, 0
+lbl_8036D7C0:
+/* 8036D7C0 00369460  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D7C4 00369464  41 82 00 2C */	beq lbl_8036D7F0
+/* 8036D7C8 00369468  73 E0 00 09 */	andi. r0, r31, 9
+/* 8036D7CC 0036946C  41 82 00 10 */	beq lbl_8036D7DC
+/* 8036D7D0 00369470  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036D7D4 00369474  80 83 00 1C */	lwz r4, 0x1c(r3)
+/* 8036D7D8 00369478  48 00 00 08 */	b lbl_8036D7E0
+lbl_8036D7DC:
+/* 8036D7DC 0036947C  38 80 00 00 */	li r4, 0
+lbl_8036D7E0:
+/* 8036D7E0 00369480  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036D7E4 00369484  80 03 00 20 */	lwz r0, 0x20(r3)
+/* 8036D7E8 00369488  7C 00 22 14 */	add r0, r0, r4
+/* 8036D7EC 0036948C  90 03 00 20 */	stw r0, 0x20(r3)
+lbl_8036D7F0:
+/* 8036D7F0 00369490  80 0D C3 C0 */	lwz r0, "Breaking"-_SDA_BASE_(r13)
+/* 8036D7F4 00369494  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D7F8 00369498  41 82 00 68 */	beq lbl_8036D860
+/* 8036D7FC 0036949C  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D800 003694A0  83 CD C4 20 */	lwz r30, "executing"-_SDA_BASE_(r13)
+/* 8036D804 003694A4  38 80 00 00 */	li r4, 0
+/* 8036D808 003694A8  38 00 00 0A */	li r0, 0xa
+/* 8036D80C 003694AC  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D810 003694B0  90 8D C3 C0 */	stw r4, "Breaking"-_SDA_BASE_(r13)
+/* 8036D814 003694B4  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036D818 003694B8  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D81C 003694BC  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 8036D820 003694C0  81 9E 00 28 */	lwz r12, 0x28(r30)
+/* 8036D824 003694C4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D828 003694C8  41 82 00 14 */	beq lbl_8036D83C
+/* 8036D82C 003694CC  7F C4 F3 78 */	mr r4, r30
+/* 8036D830 003694D0  38 60 FF FD */	li r3, -3
+/* 8036D834 003694D4  7D 89 03 A6 */	mtctr r12
+/* 8036D838 003694D8  4E 80 04 21 */	bctrl 
+lbl_8036D83C:
+/* 8036D83C 003694DC  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036D840 003694E0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D844 003694E4  41 82 00 14 */	beq lbl_8036D858
+/* 8036D848 003694E8  7F C4 F3 78 */	mr r4, r30
+/* 8036D84C 003694EC  38 60 00 00 */	li r3, 0
+/* 8036D850 003694F0  7D 89 03 A6 */	mtctr r12
+/* 8036D854 003694F4  4E 80 04 21 */	bctrl 
+lbl_8036D858:
+/* 8036D858 003694F8  4B FF F4 F5 */	bl "stateReady"
+/* 8036D85C 003694FC  48 00 05 3C */	b lbl_8036DD98
+lbl_8036D860:
+/* 8036D860 00369500  57 E0 07 FF */	clrlwi. r0, r31, 0x1f
+/* 8036D864 00369504  41 82 03 F0 */	beq lbl_8036DC54
+/* 8036D868 00369508  3B E0 00 00 */	li r31, 0
+/* 8036D86C 0036950C  93 ED C3 B8 */	stw r31, "NumInternalRetry"-_SDA_BASE_(r13)
+/* 8036D870 00369510  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D874 00369514  28 00 00 10 */	cmplwi r0, 0x10
+/* 8036D878 00369518  40 82 00 50 */	bne lbl_8036D8C8
+/* 8036D87C 0036951C  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036D880 00369520  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D884 00369524  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D888 00369528  80 A4 00 10 */	lwz r5, 0x10(r4)
+/* 8036D88C 0036952C  7C 05 00 D0 */	neg r0, r5
+/* 8036D890 00369530  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D894 00369534  7C 00 2B 78 */	or r0, r0, r5
+/* 8036D898 00369538  54 03 0F FE */	srwi r3, r0, 0x1f
+/* 8036D89C 0036953C  38 03 00 01 */	addi r0, r3, 1
+/* 8036D8A0 00369540  90 0D C4 00 */	stw r0, "MotorState"-_SDA_BASE_(r13)
+/* 8036D8A4 00369544  93 E4 00 0C */	stw r31, 0xc(r4)
+/* 8036D8A8 00369548  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036D8AC 0036954C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D8B0 00369550  41 82 00 10 */	beq lbl_8036D8C0
+/* 8036D8B4 00369554  38 60 00 00 */	li r3, 0
+/* 8036D8B8 00369558  7D 89 03 A6 */	mtctr r12
+/* 8036D8BC 0036955C  4E 80 04 21 */	bctrl 
+lbl_8036D8C0:
+/* 8036D8C0 00369560  4B FF F4 8D */	bl "stateReady"
+/* 8036D8C4 00369564  48 00 04 D4 */	b lbl_8036DD98
+lbl_8036D8C8:
+/* 8036D8C8 00369568  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D8CC 0036956C  28 00 00 20 */	cmplwi r0, 0x20
+/* 8036D8D0 00369570  40 82 00 50 */	bne lbl_8036D920
+/* 8036D8D4 00369574  48 07 67 65 */	bl "__OSGetSystemTime"
+/* 8036D8D8 00369578  3C A0 80 59 */	lis r5, "DummyCommandBlock"@ha
+/* 8036D8DC 0036957C  80 CD C4 20 */	lwz r6, "executing"-_SDA_BASE_(r13)
+/* 8036D8E0 00369580  38 A5 C5 E0 */	addi r5, r5, "DummyCommandBlock"@l
+/* 8036D8E4 00369584  90 8D C3 FC */	stw r4, lbl_805D8ADC-_SDA_BASE_(r13)
+/* 8036D8E8 00369588  90 6D C3 F8 */	stw r3, "LastResetEnd"-_SDA_BASE_(r13)
+/* 8036D8EC 0036958C  93 ED C4 04 */	stw r31, "ResetRequired"-_SDA_BASE_(r13)
+/* 8036D8F0 00369590  93 ED C3 B4 */	stw r31, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036D8F4 00369594  90 AD C4 20 */	stw r5, "executing"-_SDA_BASE_(r13)
+/* 8036D8F8 00369598  93 E6 00 0C */	stw r31, 0xc(r6)
+/* 8036D8FC 0036959C  81 86 00 28 */	lwz r12, 0x28(r6)
+/* 8036D900 003695A0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D904 003695A4  41 82 00 14 */	beq lbl_8036D918
+/* 8036D908 003695A8  7C C4 33 78 */	mr r4, r6
+/* 8036D90C 003695AC  38 60 00 00 */	li r3, 0
+/* 8036D910 003695B0  7D 89 03 A6 */	mtctr r12
+/* 8036D914 003695B4  4E 80 04 21 */	bctrl 
+lbl_8036D918:
+/* 8036D918 003695B8  4B FF F4 35 */	bl "stateReady"
+/* 8036D91C 003695BC  48 00 04 7C */	b lbl_8036DD98
+lbl_8036D920:
+/* 8036D920 003695C0  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036D924 003695C4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D928 003695C8  41 82 00 68 */	beq lbl_8036D990
+/* 8036D92C 003695CC  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036D930 003695D0  83 CD C4 20 */	lwz r30, "executing"-_SDA_BASE_(r13)
+/* 8036D934 003695D4  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036D938 003695D8  93 ED C3 B4 */	stw r31, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036D93C 003695DC  38 00 00 0A */	li r0, 0xa
+/* 8036D940 003695E0  93 ED C3 B0 */	stw r31, "Canceling"-_SDA_BASE_(r13)
+/* 8036D944 003695E4  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036D948 003695E8  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 8036D94C 003695EC  81 9E 00 28 */	lwz r12, 0x28(r30)
+/* 8036D950 003695F0  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D954 003695F4  41 82 00 14 */	beq lbl_8036D968
+/* 8036D958 003695F8  7F C4 F3 78 */	mr r4, r30
+/* 8036D95C 003695FC  38 60 FF FD */	li r3, -3
+/* 8036D960 00369600  7D 89 03 A6 */	mtctr r12
+/* 8036D964 00369604  4E 80 04 21 */	bctrl 
+lbl_8036D968:
+/* 8036D968 00369608  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036D96C 0036960C  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036D970 00369610  41 82 00 14 */	beq lbl_8036D984
+/* 8036D974 00369614  7F C4 F3 78 */	mr r4, r30
+/* 8036D978 00369618  38 60 00 00 */	li r3, 0
+/* 8036D97C 0036961C  7D 89 03 A6 */	mtctr r12
+/* 8036D980 00369620  4E 80 04 21 */	bctrl 
+lbl_8036D984:
+/* 8036D984 00369624  4B FF F3 C9 */	bl "stateReady"
+/* 8036D988 00369628  38 00 00 01 */	li r0, 1
+/* 8036D98C 0036962C  48 00 00 08 */	b lbl_8036D994
+lbl_8036D990:
+/* 8036D990 00369630  38 00 00 00 */	li r0, 0
+lbl_8036D994:
+/* 8036D994 00369634  2C 00 00 00 */	cmpwi r0, 0
+/* 8036D998 00369638  40 82 04 00 */	bne lbl_8036DD98
+/* 8036D99C 0036963C  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036D9A0 00369640  28 00 00 26 */	cmplwi r0, 0x26
+/* 8036D9A4 00369644  40 82 00 AC */	bne lbl_8036DA50
+/* 8036D9A8 00369648  48 00 2D 81 */	bl "DVDLowGetCoverRegister"
+/* 8036D9AC 0036964C  7C 7F 1B 78 */	mr r31, r3
+/* 8036D9B0 00369650  48 07 66 89 */	bl "__OSGetSystemTime"
+/* 8036D9B4 00369654  3C C0 80 00 */	lis r6, 0x800000F8@ha
+/* 8036D9B8 00369658  3C A0 10 62 */	lis r5, 0x10624DD3@ha
+/* 8036D9BC 0036965C  80 C6 00 F8 */	lwz r6, 0x800000F8@l(r6)
+/* 8036D9C0 00369660  38 E5 4D D3 */	addi r7, r5, 0x10624DD3@l
+/* 8036D9C4 00369664  81 0D C3 F8 */	lwz r8, "LastResetEnd"-_SDA_BASE_(r13)
+/* 8036D9C8 00369668  38 00 00 00 */	li r0, 0
+/* 8036D9CC 0036966C  54 C5 F0 BE */	srwi r5, r6, 2
+/* 8036D9D0 00369670  81 2D C3 FC */	lwz r9, lbl_805D8ADC-_SDA_BASE_(r13)
+/* 8036D9D4 00369674  7C C7 28 16 */	mulhwu r6, r7, r5
+/* 8036D9D8 00369678  7C 89 20 10 */	subfc r4, r9, r4
+/* 8036D9DC 0036967C  6C 05 80 00 */	xoris r5, r0, 0x8000
+/* 8036D9E0 00369680  7C 08 19 10 */	subfe r0, r8, r3
+/* 8036D9E4 00369684  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 8036D9E8 00369688  54 C3 D1 BE */	srwi r3, r6, 6
+/* 8036D9EC 0036968C  1C 63 00 64 */	mulli r3, r3, 0x64
+/* 8036D9F0 00369690  7C 63 20 10 */	subfc r3, r3, r4
+/* 8036D9F4 00369694  7C A5 01 10 */	subfe r5, r5, r0
+/* 8036D9F8 00369698  7C A0 01 10 */	subfe r5, r0, r0
+/* 8036D9FC 0036969C  7C A5 00 D1 */	neg. r5, r5
+/* 8036DA00 003696A0  41 82 00 0C */	beq lbl_8036DA0C
+/* 8036DA04 003696A4  38 60 00 00 */	li r3, 0
+/* 8036DA08 003696A8  48 00 00 10 */	b lbl_8036DA18
+lbl_8036DA0C:
+/* 8036DA0C 003696AC  57 E0 07 FE */	clrlwi r0, r31, 0x1f
+/* 8036DA10 003696B0  7C 60 00 D0 */	neg r3, r0
+/* 8036DA14 003696B4  38 63 00 02 */	addi r3, r3, 2
+lbl_8036DA18:
+/* 8036DA18 003696B8  3C A0 80 59 */	lis r5, "DummyCommandBlock"@ha
+/* 8036DA1C 003696BC  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036DA20 003696C0  38 A5 C5 E0 */	addi r5, r5, "DummyCommandBlock"@l
+/* 8036DA24 003696C4  38 00 00 00 */	li r0, 0
+/* 8036DA28 003696C8  90 AD C4 20 */	stw r5, "executing"-_SDA_BASE_(r13)
+/* 8036DA2C 003696CC  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036DA30 003696D0  90 64 00 10 */	stw r3, 0x10(r4)
+/* 8036DA34 003696D4  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036DA38 003696D8  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DA3C 003696DC  41 82 00 0C */	beq lbl_8036DA48
+/* 8036DA40 003696E0  7D 89 03 A6 */	mtctr r12
+/* 8036DA44 003696E4  4E 80 04 21 */	bctrl 
+lbl_8036DA48:
+/* 8036DA48 003696E8  4B FF F3 05 */	bl "stateReady"
+/* 8036DA4C 003696EC  48 00 03 4C */	b lbl_8036DD98
+lbl_8036DA50:
+/* 8036DA50 003696F0  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DA54 003696F4  28 00 00 24 */	cmplwi r0, 0x24
+/* 8036DA58 003696F8  40 82 00 64 */	bne lbl_8036DABC
+/* 8036DA5C 003696FC  48 00 2C CD */	bl "DVDLowGetCoverRegister"
+/* 8036DA60 00369700  54 60 F7 FF */	rlwinm. r0, r3, 0x1e, 0x1f, 0x1f
+/* 8036DA64 00369704  40 82 00 0C */	bne lbl_8036DA70
+/* 8036DA68 00369708  54 60 07 FF */	clrlwi. r0, r3, 0x1f
+/* 8036DA6C 0036970C  41 82 00 0C */	beq lbl_8036DA78
+lbl_8036DA70:
+/* 8036DA70 00369710  38 60 00 00 */	li r3, 0
+/* 8036DA74 00369714  48 00 00 10 */	b lbl_8036DA84
+lbl_8036DA78:
+/* 8036DA78 00369718  80 0D C3 B4 */	lwz r0, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036DA7C 0036971C  7C 00 00 34 */	cntlzw r0, r0
+/* 8036DA80 00369720  54 03 D9 7E */	srwi r3, r0, 5
+lbl_8036DA84:
+/* 8036DA84 00369724  3C A0 80 59 */	lis r5, "DummyCommandBlock"@ha
+/* 8036DA88 00369728  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036DA8C 0036972C  38 A5 C5 E0 */	addi r5, r5, "DummyCommandBlock"@l
+/* 8036DA90 00369730  38 00 00 00 */	li r0, 0
+/* 8036DA94 00369734  90 AD C4 20 */	stw r5, "executing"-_SDA_BASE_(r13)
+/* 8036DA98 00369738  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036DA9C 0036973C  90 64 00 10 */	stw r3, 0x10(r4)
+/* 8036DAA0 00369740  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036DAA4 00369744  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DAA8 00369748  41 82 00 0C */	beq lbl_8036DAB4
+/* 8036DAAC 0036974C  7D 89 03 A6 */	mtctr r12
+/* 8036DAB0 00369750  4E 80 04 21 */	bctrl 
+lbl_8036DAB4:
+/* 8036DAB4 00369754  4B FF F2 99 */	bl "stateReady"
+/* 8036DAB8 00369758  48 00 02 E0 */	b lbl_8036DD98
+lbl_8036DABC:
+/* 8036DABC 0036975C  80 6D C4 14 */	lwz r3, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DAC0 00369760  28 03 00 01 */	cmplwi r3, 1
+/* 8036DAC4 00369764  41 82 00 24 */	beq lbl_8036DAE8
+/* 8036DAC8 00369768  28 03 00 04 */	cmplwi r3, 4
+/* 8036DACC 0036976C  41 82 00 1C */	beq lbl_8036DAE8
+/* 8036DAD0 00369770  28 03 00 05 */	cmplwi r3, 5
+/* 8036DAD4 00369774  41 82 00 14 */	beq lbl_8036DAE8
+/* 8036DAD8 00369778  28 03 00 21 */	cmplwi r3, 0x21
+/* 8036DADC 0036977C  41 82 00 0C */	beq lbl_8036DAE8
+/* 8036DAE0 00369780  28 03 00 0E */	cmplwi r3, 0xe
+/* 8036DAE4 00369784  40 82 00 0C */	bne lbl_8036DAF0
+lbl_8036DAE8:
+/* 8036DAE8 00369788  38 00 00 01 */	li r0, 1
+/* 8036DAEC 0036978C  48 00 00 1C */	b lbl_8036DB08
+lbl_8036DAF0:
+/* 8036DAF0 00369790  80 0D AC 54 */	lwz r0, "DmaCommand"-_SDA_BASE_(r13)
+/* 8036DAF4 00369794  7C 03 00 40 */	cmplw r3, r0
+/* 8036DAF8 00369798  40 82 00 0C */	bne lbl_8036DB04
+/* 8036DAFC 0036979C  38 00 00 01 */	li r0, 1
+/* 8036DB00 003697A0  48 00 00 08 */	b lbl_8036DB08
+lbl_8036DB04:
+/* 8036DB04 003697A4  38 00 00 00 */	li r0, 0
+lbl_8036DB08:
+/* 8036DB08 003697A8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DB0C 003697AC  41 82 00 58 */	beq lbl_8036DB64
+/* 8036DB10 003697B0  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036DB14 003697B4  80 83 00 20 */	lwz r4, 0x20(r3)
+/* 8036DB18 003697B8  80 03 00 14 */	lwz r0, 0x14(r3)
+/* 8036DB1C 003697BC  7C 04 00 40 */	cmplw r4, r0
+/* 8036DB20 003697C0  41 82 00 0C */	beq lbl_8036DB2C
+/* 8036DB24 003697C4  4B FF F5 51 */	bl "stateBusy"
+/* 8036DB28 003697C8  48 00 02 70 */	b lbl_8036DD98
+lbl_8036DB2C:
+/* 8036DB2C 003697CC  3C 80 80 59 */	lis r4, "DummyCommandBlock"@ha
+/* 8036DB30 003697D0  38 00 00 00 */	li r0, 0
+/* 8036DB34 003697D4  38 84 C5 E0 */	addi r4, r4, "DummyCommandBlock"@l
+/* 8036DB38 003697D8  90 8D C4 20 */	stw r4, "executing"-_SDA_BASE_(r13)
+/* 8036DB3C 003697DC  90 03 00 0C */	stw r0, 0xc(r3)
+/* 8036DB40 003697E0  81 83 00 28 */	lwz r12, 0x28(r3)
+/* 8036DB44 003697E4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DB48 003697E8  41 82 00 14 */	beq lbl_8036DB5C
+/* 8036DB4C 003697EC  7C 64 1B 78 */	mr r4, r3
+/* 8036DB50 003697F0  80 63 00 20 */	lwz r3, 0x20(r3)
+/* 8036DB54 003697F4  7D 89 03 A6 */	mtctr r12
+/* 8036DB58 003697F8  4E 80 04 21 */	bctrl 
+lbl_8036DB5C:
+/* 8036DB5C 003697FC  4B FF F1 F1 */	bl "stateReady"
+/* 8036DB60 00369800  48 00 02 38 */	b lbl_8036DD98
+lbl_8036DB64:
+/* 8036DB64 00369804  80 6D C4 14 */	lwz r3, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DB68 00369808  38 03 FF F7 */	addi r0, r3, -9
+/* 8036DB6C 0036980C  28 00 00 03 */	cmplwi r0, 3
+/* 8036DB70 00369810  41 81 00 0C */	bgt lbl_8036DB7C
+/* 8036DB74 00369814  38 00 00 01 */	li r0, 1
+/* 8036DB78 00369818  48 00 00 48 */	b lbl_8036DBC0
+lbl_8036DB7C:
+/* 8036DB7C 0036981C  3C 80 80 46 */	lis r4, 0x8046
+/* 8036DB80 00369820  84 04 66 3C */	lwzu r0, 0x663c(r4)
+/* 8036DB84 00369824  7C 03 00 40 */	cmplw r3, r0
+/* 8036DB88 00369828  40 82 00 0C */	bne lbl_8036DB94
+/* 8036DB8C 0036982C  38 00 00 01 */	li r0, 1
+/* 8036DB90 00369830  48 00 00 30 */	b lbl_8036DBC0
+lbl_8036DB94:
+/* 8036DB94 00369834  80 04 00 04 */	lwz r0, 4(r4)
+/* 8036DB98 00369838  7C 03 00 40 */	cmplw r3, r0
+/* 8036DB9C 0036983C  40 82 00 0C */	bne lbl_8036DBA8
+/* 8036DBA0 00369840  38 00 00 01 */	li r0, 1
+/* 8036DBA4 00369844  48 00 00 1C */	b lbl_8036DBC0
+lbl_8036DBA8:
+/* 8036DBA8 00369848  80 04 00 08 */	lwz r0, 8(r4)
+/* 8036DBAC 0036984C  7C 03 00 40 */	cmplw r3, r0
+/* 8036DBB0 00369850  40 82 00 0C */	bne lbl_8036DBBC
+/* 8036DBB4 00369854  38 00 00 01 */	li r0, 1
+/* 8036DBB8 00369858  48 00 00 08 */	b lbl_8036DBC0
+lbl_8036DBBC:
+/* 8036DBBC 0036985C  38 00 00 00 */	li r0, 0
+lbl_8036DBC0:
+/* 8036DBC0 00369860  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DBC4 00369864  41 82 00 58 */	beq lbl_8036DC1C
+/* 8036DBC8 00369868  80 6D C4 14 */	lwz r3, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DBCC 0036986C  38 03 FF F6 */	addi r0, r3, -10
+/* 8036DBD0 00369870  28 00 00 01 */	cmplwi r0, 1
+/* 8036DBD4 00369874  41 81 00 10 */	bgt lbl_8036DBE4
+/* 8036DBD8 00369878  48 00 2C C9 */	bl "DVDLowGetImmBufferReg"
+/* 8036DBDC 0036987C  54 63 10 3A */	slwi r3, r3, 2
+/* 8036DBE0 00369880  48 00 00 08 */	b lbl_8036DBE8
+lbl_8036DBE4:
+/* 8036DBE4 00369884  48 00 2C BD */	bl "DVDLowGetImmBufferReg"
+lbl_8036DBE8:
+/* 8036DBE8 00369888  3C A0 80 59 */	lis r5, "DummyCommandBlock"@ha
+/* 8036DBEC 0036988C  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036DBF0 00369890  38 A5 C5 E0 */	addi r5, r5, "DummyCommandBlock"@l
+/* 8036DBF4 00369894  38 00 00 00 */	li r0, 0
+/* 8036DBF8 00369898  90 AD C4 20 */	stw r5, "executing"-_SDA_BASE_(r13)
+/* 8036DBFC 0036989C  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036DC00 003698A0  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036DC04 003698A4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DC08 003698A8  41 82 00 0C */	beq lbl_8036DC14
+/* 8036DC0C 003698AC  7D 89 03 A6 */	mtctr r12
+/* 8036DC10 003698B0  4E 80 04 21 */	bctrl 
+lbl_8036DC14:
+/* 8036DC14 003698B4  4B FF F1 39 */	bl "stateReady"
+/* 8036DC18 003698B8  48 00 01 80 */	b lbl_8036DD98
+lbl_8036DC1C:
+/* 8036DC1C 003698BC  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036DC20 003698C0  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036DC24 003698C4  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036DC28 003698C8  38 00 00 00 */	li r0, 0
+/* 8036DC2C 003698CC  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036DC30 003698D0  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036DC34 003698D4  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036DC38 003698D8  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DC3C 003698DC  41 82 00 10 */	beq lbl_8036DC4C
+/* 8036DC40 003698E0  38 60 00 00 */	li r3, 0
+/* 8036DC44 003698E4  7D 89 03 A6 */	mtctr r12
+/* 8036DC48 003698E8  4E 80 04 21 */	bctrl 
+lbl_8036DC4C:
+/* 8036DC4C 003698EC  4B FF F1 01 */	bl "stateReady"
+/* 8036DC50 003698F0  48 00 01 48 */	b lbl_8036DD98
+lbl_8036DC54:
+/* 8036DC54 003698F4  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DC58 003698F8  28 00 00 0E */	cmplwi r0, 0xe
+/* 8036DC5C 003698FC  40 82 00 1C */	bne lbl_8036DC78
+/* 8036DC60 00369900  3C 60 01 23 */	lis r3, 0x01234567@ha
+/* 8036DC64 00369904  3C 80 80 37 */	lis r4, "cbForStoreErrorCode1"@ha
+/* 8036DC68 00369908  38 63 45 67 */	addi r3, r3, 0x01234567@l
+/* 8036DC6C 0036990C  38 84 A9 70 */	addi r4, r4, "cbForStoreErrorCode1"@l
+/* 8036DC70 00369910  48 00 10 FD */	bl "__DVDStoreErrorCode"
+/* 8036DC74 00369914  48 00 01 24 */	b lbl_8036DD98
+lbl_8036DC78:
+/* 8036DC78 00369918  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DC7C 0036991C  28 00 00 01 */	cmplwi r0, 1
+/* 8036DC80 00369920  41 82 00 34 */	beq lbl_8036DCB4
+/* 8036DC84 00369924  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DC88 00369928  28 00 00 04 */	cmplwi r0, 4
+/* 8036DC8C 0036992C  41 82 00 28 */	beq lbl_8036DCB4
+/* 8036DC90 00369930  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DC94 00369934  28 00 00 05 */	cmplwi r0, 5
+/* 8036DC98 00369938  41 82 00 1C */	beq lbl_8036DCB4
+/* 8036DC9C 0036993C  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DCA0 00369940  28 00 00 21 */	cmplwi r0, 0x21
+/* 8036DCA4 00369944  41 82 00 10 */	beq lbl_8036DCB4
+/* 8036DCA8 00369948  80 0D C4 14 */	lwz r0, "CurrCommand"-_SDA_BASE_(r13)
+/* 8036DCAC 0036994C  28 00 00 0E */	cmplwi r0, 0xe
+/* 8036DCB0 00369950  40 82 00 CC */	bne lbl_8036DD7C
+lbl_8036DCB4:
+/* 8036DCB4 00369954  83 CD C4 20 */	lwz r30, "executing"-_SDA_BASE_(r13)
+/* 8036DCB8 00369958  80 7E 00 20 */	lwz r3, 0x20(r30)
+/* 8036DCBC 0036995C  80 1E 00 14 */	lwz r0, 0x14(r30)
+/* 8036DCC0 00369960  7C 03 00 40 */	cmplw r3, r0
+/* 8036DCC4 00369964  40 82 00 B8 */	bne lbl_8036DD7C
+/* 8036DCC8 00369968  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036DCCC 0036996C  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DCD0 00369970  41 82 00 68 */	beq lbl_8036DD38
+/* 8036DCD4 00369974  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036DCD8 00369978  38 80 00 00 */	li r4, 0
+/* 8036DCDC 0036997C  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036DCE0 00369980  90 8D C3 B4 */	stw r4, "ResumeFromHere"-_SDA_BASE_(r13)
+/* 8036DCE4 00369984  38 00 00 0A */	li r0, 0xa
+/* 8036DCE8 00369988  90 8D C3 B0 */	stw r4, "Canceling"-_SDA_BASE_(r13)
+/* 8036DCEC 0036998C  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036DCF0 00369990  90 1E 00 0C */	stw r0, 0xc(r30)
+/* 8036DCF4 00369994  81 9E 00 28 */	lwz r12, 0x28(r30)
+/* 8036DCF8 00369998  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DCFC 0036999C  41 82 00 14 */	beq lbl_8036DD10
+/* 8036DD00 003699A0  7F C4 F3 78 */	mr r4, r30
+/* 8036DD04 003699A4  38 60 FF FD */	li r3, -3
+/* 8036DD08 003699A8  7D 89 03 A6 */	mtctr r12
+/* 8036DD0C 003699AC  4E 80 04 21 */	bctrl 
+lbl_8036DD10:
+/* 8036DD10 003699B0  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036DD14 003699B4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DD18 003699B8  41 82 00 14 */	beq lbl_8036DD2C
+/* 8036DD1C 003699BC  7F C4 F3 78 */	mr r4, r30
+/* 8036DD20 003699C0  38 60 00 00 */	li r3, 0
+/* 8036DD24 003699C4  7D 89 03 A6 */	mtctr r12
+/* 8036DD28 003699C8  4E 80 04 21 */	bctrl 
+lbl_8036DD2C:
+/* 8036DD2C 003699CC  4B FF F0 21 */	bl "stateReady"
+/* 8036DD30 003699D0  38 00 00 01 */	li r0, 1
+/* 8036DD34 003699D4  48 00 00 08 */	b lbl_8036DD3C
+lbl_8036DD38:
+/* 8036DD38 003699D8  38 00 00 00 */	li r0, 0
+lbl_8036DD3C:
+/* 8036DD3C 003699DC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DD40 003699E0  40 82 00 58 */	bne lbl_8036DD98
+/* 8036DD44 003699E4  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036DD48 003699E8  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
+/* 8036DD4C 003699EC  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036DD50 003699F0  38 00 00 00 */	li r0, 0
+/* 8036DD54 003699F4  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036DD58 003699F8  90 04 00 0C */	stw r0, 0xc(r4)
+/* 8036DD5C 003699FC  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8036DD60 00369A00  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036DD64 00369A04  41 82 00 10 */	beq lbl_8036DD74
+/* 8036DD68 00369A08  80 64 00 20 */	lwz r3, 0x20(r4)
+/* 8036DD6C 00369A0C  7D 89 03 A6 */	mtctr r12
+/* 8036DD70 00369A10  4E 80 04 21 */	bctrl 
+lbl_8036DD74:
+/* 8036DD74 00369A14  4B FF EF D9 */	bl "stateReady"
+/* 8036DD78 00369A18  48 00 00 20 */	b lbl_8036DD98
+lbl_8036DD7C:
+/* 8036DD7C 00369A1C  38 60 00 27 */	li r3, 0x27
+/* 8036DD80 00369A20  38 80 00 00 */	li r4, 0
+/* 8036DD84 00369A24  38 A0 00 00 */	li r5, 0
+/* 8036DD88 00369A28  4B FF C6 41 */	bl "StampCommand"
+/* 8036DD8C 00369A2C  3C 60 80 37 */	lis r3, "cbForStateGettingError"@ha
+/* 8036DD90 00369A30  38 63 AB 78 */	addi r3, r3, "cbForStateGettingError"@l
+/* 8036DD94 00369A34  48 00 20 65 */	bl "DVDLowRequestError"
+lbl_8036DD98:
+/* 8036DD98 00369A38  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036DD9C 00369A3C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036DDA0 00369A40  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036DDA4 00369A44  7C 08 03 A6 */	mtlr r0
+/* 8036DDA8 00369A48  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036DDAC 00369A4C  4E 80 00 20 */	blr 
+
+.global "DVDReadAbsAsyncPrio"
+"DVDReadAbsAsyncPrio":
+/* 8036DDB0 00369A50  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036DDB4 00369A54  7C 08 02 A6 */	mflr r0
+/* 8036DDB8 00369A58  39 20 00 01 */	li r9, 1
+/* 8036DDBC 00369A5C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036DDC0 00369A60  38 00 00 00 */	li r0, 0
+/* 8036DDC4 00369A64  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036DDC8 00369A68  7D 1F 43 78 */	mr r31, r8
+/* 8036DDCC 00369A6C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036DDD0 00369A70  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036DDD4 00369A74  7C 7D 1B 78 */	mr r29, r3
+/* 8036DDD8 00369A78  91 23 00 08 */	stw r9, 8(r3)
+/* 8036DDDC 00369A7C  90 83 00 18 */	stw r4, 0x18(r3)
+/* 8036DDE0 00369A80  90 A3 00 14 */	stw r5, 0x14(r3)
+/* 8036DDE4 00369A84  90 C3 00 10 */	stw r6, 0x10(r3)
+/* 8036DDE8 00369A88  90 03 00 20 */	stw r0, 0x20(r3)
+/* 8036DDEC 00369A8C  90 E3 00 28 */	stw r7, 0x28(r3)
+/* 8036DDF0 00369A90  80 0D AC 44 */	lwz r0, "autoInvalidation"-_SDA_BASE_(r13)
+/* 8036DDF4 00369A94  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DDF8 00369A98  41 82 00 38 */	beq lbl_8036DE30
+/* 8036DDFC 00369A9C  28 09 00 01 */	cmplwi r9, 1
+/* 8036DE00 00369AA0  41 82 00 24 */	beq lbl_8036DE24
+/* 8036DE04 00369AA4  28 09 00 04 */	cmplwi r9, 4
+/* 8036DE08 00369AA8  41 82 00 1C */	beq lbl_8036DE24
+/* 8036DE0C 00369AAC  28 09 00 05 */	cmplwi r9, 5
+/* 8036DE10 00369AB0  41 82 00 14 */	beq lbl_8036DE24
+/* 8036DE14 00369AB4  28 09 00 21 */	cmplwi r9, 0x21
+/* 8036DE18 00369AB8  41 82 00 0C */	beq lbl_8036DE24
+/* 8036DE1C 00369ABC  28 09 00 0E */	cmplwi r9, 0xe
+/* 8036DE20 00369AC0  40 82 00 10 */	bne lbl_8036DE30
+lbl_8036DE24:
+/* 8036DE24 00369AC4  80 63 00 18 */	lwz r3, 0x18(r3)
+/* 8036DE28 00369AC8  80 9D 00 14 */	lwz r4, 0x14(r29)
+/* 8036DE2C 00369ACC  48 06 E4 19 */	bl "DCInvalidateRange"
+lbl_8036DE30:
+/* 8036DE30 00369AD0  48 07 26 2D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036DE34 00369AD4  38 00 00 02 */	li r0, 2
+/* 8036DE38 00369AD8  7C 7E 1B 78 */	mr r30, r3
+/* 8036DE3C 00369ADC  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8036DE40 00369AE0  7F E3 FB 78 */	mr r3, r31
+/* 8036DE44 00369AE4  7F A4 EB 78 */	mr r4, r29
+/* 8036DE48 00369AE8  48 00 0A A1 */	bl "__DVDPushWaitingQueue"
+/* 8036DE4C 00369AEC  80 0D C4 20 */	lwz r0, "executing"-_SDA_BASE_(r13)
+/* 8036DE50 00369AF0  7C 7F 1B 78 */	mr r31, r3
+/* 8036DE54 00369AF4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DE58 00369AF8  40 82 00 14 */	bne lbl_8036DE6C
+/* 8036DE5C 00369AFC  80 0D C3 A4 */	lwz r0, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036DE60 00369B00  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DE64 00369B04  40 82 00 08 */	bne lbl_8036DE6C
+/* 8036DE68 00369B08  4B FF EE E5 */	bl "stateReady"
+lbl_8036DE6C:
+/* 8036DE6C 00369B0C  7F C3 F3 78 */	mr r3, r30
+/* 8036DE70 00369B10  48 07 26 15 */	bl "OSRestoreInterrupts"
+/* 8036DE74 00369B14  7F E3 FB 78 */	mr r3, r31
+/* 8036DE78 00369B18  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036DE7C 00369B1C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036DE80 00369B20  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036DE84 00369B24  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036DE88 00369B28  7C 08 03 A6 */	mtlr r0
+/* 8036DE8C 00369B2C  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036DE90 00369B30  4E 80 00 20 */	blr 
+
+.global "DVDInquiryAsync"
+"DVDInquiryAsync":
+/* 8036DE94 00369B34  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036DE98 00369B38  7C 08 02 A6 */	mflr r0
+/* 8036DE9C 00369B3C  38 E0 00 0E */	li r7, 0xe
+/* 8036DEA0 00369B40  38 C0 00 20 */	li r6, 0x20
+/* 8036DEA4 00369B44  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036DEA8 00369B48  38 00 00 00 */	li r0, 0
+/* 8036DEAC 00369B4C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036DEB0 00369B50  7C 7F 1B 78 */	mr r31, r3
+/* 8036DEB4 00369B54  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036DEB8 00369B58  90 E3 00 08 */	stw r7, 8(r3)
+/* 8036DEBC 00369B5C  90 83 00 18 */	stw r4, 0x18(r3)
+/* 8036DEC0 00369B60  90 C3 00 14 */	stw r6, 0x14(r3)
+/* 8036DEC4 00369B64  90 03 00 20 */	stw r0, 0x20(r3)
+/* 8036DEC8 00369B68  90 A3 00 28 */	stw r5, 0x28(r3)
+/* 8036DECC 00369B6C  80 0D AC 44 */	lwz r0, "autoInvalidation"-_SDA_BASE_(r13)
+/* 8036DED0 00369B70  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DED4 00369B74  41 82 00 38 */	beq lbl_8036DF0C
+/* 8036DED8 00369B78  28 07 00 01 */	cmplwi r7, 1
+/* 8036DEDC 00369B7C  41 82 00 24 */	beq lbl_8036DF00
+/* 8036DEE0 00369B80  28 07 00 04 */	cmplwi r7, 4
+/* 8036DEE4 00369B84  41 82 00 1C */	beq lbl_8036DF00
+/* 8036DEE8 00369B88  28 07 00 05 */	cmplwi r7, 5
+/* 8036DEEC 00369B8C  41 82 00 14 */	beq lbl_8036DF00
+/* 8036DEF0 00369B90  28 07 00 21 */	cmplwi r7, 0x21
+/* 8036DEF4 00369B94  41 82 00 0C */	beq lbl_8036DF00
+/* 8036DEF8 00369B98  28 07 00 0E */	cmplwi r7, 0xe
+/* 8036DEFC 00369B9C  40 82 00 10 */	bne lbl_8036DF0C
+lbl_8036DF00:
+/* 8036DF00 00369BA0  80 63 00 18 */	lwz r3, 0x18(r3)
+/* 8036DF04 00369BA4  80 9F 00 14 */	lwz r4, 0x14(r31)
+/* 8036DF08 00369BA8  48 06 E3 3D */	bl "DCInvalidateRange"
+lbl_8036DF0C:
+/* 8036DF0C 00369BAC  48 07 25 51 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036DF10 00369BB0  38 00 00 02 */	li r0, 2
+/* 8036DF14 00369BB4  7C 7E 1B 78 */	mr r30, r3
+/* 8036DF18 00369BB8  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8036DF1C 00369BBC  7F E4 FB 78 */	mr r4, r31
+/* 8036DF20 00369BC0  38 60 00 02 */	li r3, 2
+/* 8036DF24 00369BC4  48 00 09 C5 */	bl "__DVDPushWaitingQueue"
+/* 8036DF28 00369BC8  80 0D C4 20 */	lwz r0, "executing"-_SDA_BASE_(r13)
+/* 8036DF2C 00369BCC  7C 7F 1B 78 */	mr r31, r3
+/* 8036DF30 00369BD0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DF34 00369BD4  40 82 00 14 */	bne lbl_8036DF48
+/* 8036DF38 00369BD8  80 0D C3 A4 */	lwz r0, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036DF3C 00369BDC  2C 00 00 00 */	cmpwi r0, 0
+/* 8036DF40 00369BE0  40 82 00 08 */	bne lbl_8036DF48
+/* 8036DF44 00369BE4  4B FF EE 09 */	bl "stateReady"
+lbl_8036DF48:
+/* 8036DF48 00369BE8  7F C3 F3 78 */	mr r3, r30
+/* 8036DF4C 00369BEC  48 07 25 39 */	bl "OSRestoreInterrupts"
+/* 8036DF50 00369BF0  7F E3 FB 78 */	mr r3, r31
+/* 8036DF54 00369BF4  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036DF58 00369BF8  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036DF5C 00369BFC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036DF60 00369C00  7C 08 03 A6 */	mtlr r0
+/* 8036DF64 00369C04  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036DF68 00369C08  4E 80 00 20 */	blr 
+
+.global "DVDGetCommandBlockStatus"
+"DVDGetCommandBlockStatus":
+/* 8036DF6C 00369C0C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036DF70 00369C10  7C 08 02 A6 */	mflr r0
+/* 8036DF74 00369C14  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036DF78 00369C18  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036DF7C 00369C1C  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036DF80 00369C20  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036DF84 00369C24  7C 7D 1B 78 */	mr r29, r3
+/* 8036DF88 00369C28  48 07 24 D5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036DF8C 00369C2C  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036DF90 00369C30  7C 7E 1B 78 */	mr r30, r3
+/* 8036DF94 00369C34  2C 00 00 03 */	cmpwi r0, 3
+/* 8036DF98 00369C38  40 82 00 0C */	bne lbl_8036DFA4
+/* 8036DF9C 00369C3C  3B E0 00 01 */	li r31, 1
+/* 8036DFA0 00369C40  48 00 00 6C */	b lbl_8036E00C
+lbl_8036DFA4:
+/* 8036DFA4 00369C44  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036DFA8 00369C48  2C 00 00 05 */	cmpwi r0, 5
+/* 8036DFAC 00369C4C  40 82 00 0C */	bne lbl_8036DFB8
+/* 8036DFB0 00369C50  3B E0 00 04 */	li r31, 4
+/* 8036DFB4 00369C54  48 00 00 58 */	b lbl_8036E00C
+lbl_8036DFB8:
+/* 8036DFB8 00369C58  3F E0 80 59 */	lis r31, "__DVDStopMotorCommandBlock"@ha
+/* 8036DFBC 00369C5C  80 0D C4 20 */	lwz r0, "executing"-_SDA_BASE_(r13)
+/* 8036DFC0 00369C60  3B FF 11 30 */	addi r31, r31, "__DVDStopMotorCommandBlock"@l
+/* 8036DFC4 00369C64  7C 00 F8 40 */	cmplw r0, r31
+/* 8036DFC8 00369C68  40 82 00 40 */	bne lbl_8036E008
+/* 8036DFCC 00369C6C  48 00 0A 7D */	bl "__DVDGetNextWaitingQueue"
+/* 8036DFD0 00369C70  2C 03 00 00 */	cmpwi r3, 0
+/* 8036DFD4 00369C74  41 82 00 1C */	beq lbl_8036DFF0
+/* 8036DFD8 00369C78  7C 1D 18 40 */	cmplw r29, r3
+/* 8036DFDC 00369C7C  40 82 00 0C */	bne lbl_8036DFE8
+/* 8036DFE0 00369C80  3B E0 00 01 */	li r31, 1
+/* 8036DFE4 00369C84  48 00 00 28 */	b lbl_8036E00C
+lbl_8036DFE8:
+/* 8036DFE8 00369C88  83 FD 00 0C */	lwz r31, 0xc(r29)
+/* 8036DFEC 00369C8C  48 00 00 20 */	b lbl_8036E00C
+lbl_8036DFF0:
+/* 8036DFF0 00369C90  7C 1D F8 40 */	cmplw r29, r31
+/* 8036DFF4 00369C94  40 82 00 0C */	bne lbl_8036E000
+/* 8036DFF8 00369C98  3B E0 00 00 */	li r31, 0
+/* 8036DFFC 00369C9C  48 00 00 10 */	b lbl_8036E00C
+lbl_8036E000:
+/* 8036E000 00369CA0  83 FD 00 0C */	lwz r31, 0xc(r29)
+/* 8036E004 00369CA4  48 00 00 08 */	b lbl_8036E00C
+lbl_8036E008:
+/* 8036E008 00369CA8  83 FD 00 0C */	lwz r31, 0xc(r29)
+lbl_8036E00C:
+/* 8036E00C 00369CAC  7F C3 F3 78 */	mr r3, r30
+/* 8036E010 00369CB0  48 07 24 75 */	bl "OSRestoreInterrupts"
+/* 8036E014 00369CB4  7F E3 FB 78 */	mr r3, r31
+/* 8036E018 00369CB8  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036E01C 00369CBC  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036E020 00369CC0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036E024 00369CC4  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036E028 00369CC8  7C 08 03 A6 */	mtlr r0
+/* 8036E02C 00369CCC  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036E030 00369CD0  4E 80 00 20 */	blr 
+
+.global "DVDGetDriveStatus"
+"DVDGetDriveStatus":
+/* 8036E034 00369CD4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036E038 00369CD8  7C 08 02 A6 */	mflr r0
+/* 8036E03C 00369CDC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036E040 00369CE0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036E044 00369CE4  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036E048 00369CE8  48 07 24 15 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E04C 00369CEC  80 0D C3 AC */	lwz r0, "FatalErrorFlag"-_SDA_BASE_(r13)
+/* 8036E050 00369CF0  7C 7F 1B 78 */	mr r31, r3
+/* 8036E054 00369CF4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E058 00369CF8  41 82 00 0C */	beq lbl_8036E064
+/* 8036E05C 00369CFC  3B C0 FF FF */	li r30, -1
+/* 8036E060 00369D00  48 00 00 4C */	b lbl_8036E0AC
+lbl_8036E064:
+/* 8036E064 00369D04  80 0D C3 A8 */	lwz r0, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E068 00369D08  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E06C 00369D0C  41 82 00 0C */	beq lbl_8036E078
+/* 8036E070 00369D10  3B C0 00 08 */	li r30, 8
+/* 8036E074 00369D14  48 00 00 38 */	b lbl_8036E0AC
+lbl_8036E078:
+/* 8036E078 00369D18  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036E07C 00369D1C  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E080 00369D20  40 82 00 0C */	bne lbl_8036E08C
+/* 8036E084 00369D24  3B C0 00 00 */	li r30, 0
+/* 8036E088 00369D28  48 00 00 24 */	b lbl_8036E0AC
+lbl_8036E08C:
+/* 8036E08C 00369D2C  3C 80 80 59 */	lis r4, "DummyCommandBlock"@ha
+/* 8036E090 00369D30  38 84 C5 E0 */	addi r4, r4, "DummyCommandBlock"@l
+/* 8036E094 00369D34  7C 03 20 40 */	cmplw r3, r4
+/* 8036E098 00369D38  40 82 00 0C */	bne lbl_8036E0A4
+/* 8036E09C 00369D3C  38 60 00 00 */	li r3, 0
+/* 8036E0A0 00369D40  48 00 00 08 */	b lbl_8036E0A8
+lbl_8036E0A4:
+/* 8036E0A4 00369D44  4B FF FE C9 */	bl "DVDGetCommandBlockStatus"
+lbl_8036E0A8:
+/* 8036E0A8 00369D48  7C 7E 1B 78 */	mr r30, r3
+lbl_8036E0AC:
+/* 8036E0AC 00369D4C  7F E3 FB 78 */	mr r3, r31
+/* 8036E0B0 00369D50  48 07 23 D5 */	bl "OSRestoreInterrupts"
+/* 8036E0B4 00369D54  7F C3 F3 78 */	mr r3, r30
+/* 8036E0B8 00369D58  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036E0BC 00369D5C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036E0C0 00369D60  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036E0C4 00369D64  7C 08 03 A6 */	mtlr r0
+/* 8036E0C8 00369D68  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036E0CC 00369D6C  4E 80 00 20 */	blr 
+
+.global "DVDSetAutoInvalidation"
+"DVDSetAutoInvalidation":
+/* 8036E0D0 00369D70  7C 60 1B 78 */	mr r0, r3
+/* 8036E0D4 00369D74  80 6D AC 44 */	lwz r3, "autoInvalidation"-_SDA_BASE_(r13)
+/* 8036E0D8 00369D78  90 0D AC 44 */	stw r0, "autoInvalidation"-_SDA_BASE_(r13)
+/* 8036E0DC 00369D7C  4E 80 00 20 */	blr 
+
+.global "DVDResume"
+"DVDResume":
+/* 8036E0E0 00369D80  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036E0E4 00369D84  7C 08 02 A6 */	mflr r0
+/* 8036E0E8 00369D88  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036E0EC 00369D8C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036E0F0 00369D90  48 07 23 6D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E0F4 00369D94  38 80 00 00 */	li r4, 0
+/* 8036E0F8 00369D98  7C 7F 1B 78 */	mr r31, r3
+/* 8036E0FC 00369D9C  90 8D C3 A4 */	stw r4, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036E100 00369DA0  80 0D C3 A8 */	lwz r0, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E104 00369DA4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E108 00369DA8  41 82 00 0C */	beq lbl_8036E114
+/* 8036E10C 00369DAC  90 8D C3 A8 */	stw r4, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E110 00369DB0  4B FF EC 3D */	bl "stateReady"
+lbl_8036E114:
+/* 8036E114 00369DB4  7F E3 FB 78 */	mr r3, r31
+/* 8036E118 00369DB8  48 07 23 6D */	bl "OSRestoreInterrupts"
+/* 8036E11C 00369DBC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036E120 00369DC0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036E124 00369DC4  7C 08 03 A6 */	mtlr r0
+/* 8036E128 00369DC8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036E12C 00369DCC  4E 80 00 20 */	blr 
+
+.global "DVDCancelAsync"
+"DVDCancelAsync":
+/* 8036E130 00369DD0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036E134 00369DD4  7C 08 02 A6 */	mflr r0
+/* 8036E138 00369DD8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036E13C 00369DDC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036E140 00369DE0  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036E144 00369DE4  7C 9E 23 78 */	mr r30, r4
+/* 8036E148 00369DE8  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036E14C 00369DEC  7C 7D 1B 78 */	mr r29, r3
+/* 8036E150 00369DF0  48 07 23 0D */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E154 00369DF4  80 9D 00 0C */	lwz r4, 0xc(r29)
+/* 8036E158 00369DF8  7C 7F 1B 78 */	mr r31, r3
+/* 8036E15C 00369DFC  38 04 00 01 */	addi r0, r4, 1
+/* 8036E160 00369E00  28 00 00 0D */	cmplwi r0, 0xd
+/* 8036E164 00369E04  41 81 02 F8 */	bgt lbl_8036E45C
+/* 8036E168 00369E08  3C 80 80 46 */	lis r4, lbl_804666E0@ha
+/* 8036E16C 00369E0C  54 00 10 3A */	slwi r0, r0, 2
+/* 8036E170 00369E10  38 84 66 E0 */	addi r4, r4, lbl_804666E0@l
+/* 8036E174 00369E14  7C 84 00 2E */	lwzx r4, r4, r0
+/* 8036E178 00369E18  7C 89 03 A6 */	mtctr r4
+/* 8036E17C 00369E1C  4E 80 04 20 */	bctr 
+/* 8036E180 00369E20  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E184 00369E24  41 82 02 D8 */	beq lbl_8036E45C
+/* 8036E188 00369E28  7F CC F3 78 */	mr r12, r30
+/* 8036E18C 00369E2C  7F A4 EB 78 */	mr r4, r29
+/* 8036E190 00369E30  38 60 00 00 */	li r3, 0
+/* 8036E194 00369E34  7D 89 03 A6 */	mtctr r12
+/* 8036E198 00369E38  4E 80 04 21 */	bctrl 
+/* 8036E19C 00369E3C  48 00 02 C0 */	b lbl_8036E45C
+/* 8036E1A0 00369E40  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E1A4 00369E44  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E1A8 00369E48  41 82 00 10 */	beq lbl_8036E1B8
+/* 8036E1AC 00369E4C  48 07 22 D9 */	bl "OSRestoreInterrupts"
+/* 8036E1B0 00369E50  38 60 00 00 */	li r3, 0
+/* 8036E1B4 00369E54  48 00 02 B4 */	b lbl_8036E468
+lbl_8036E1B8:
+/* 8036E1B8 00369E58  38 00 00 01 */	li r0, 1
+/* 8036E1BC 00369E5C  93 CD C4 10 */	stw r30, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036E1C0 00369E60  90 0D C3 B0 */	stw r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E1C4 00369E64  80 1D 00 08 */	lwz r0, 8(r29)
+/* 8036E1C8 00369E68  28 00 00 04 */	cmplwi r0, 4
+/* 8036E1CC 00369E6C  41 82 00 1C */	beq lbl_8036E1E8
+/* 8036E1D0 00369E70  28 00 00 21 */	cmplwi r0, 0x21
+/* 8036E1D4 00369E74  41 82 00 14 */	beq lbl_8036E1E8
+/* 8036E1D8 00369E78  28 00 00 22 */	cmplwi r0, 0x22
+/* 8036E1DC 00369E7C  41 82 00 0C */	beq lbl_8036E1E8
+/* 8036E1E0 00369E80  28 00 00 01 */	cmplwi r0, 1
+/* 8036E1E4 00369E84  40 82 02 78 */	bne lbl_8036E45C
+lbl_8036E1E8:
+/* 8036E1E8 00369E88  38 00 00 01 */	li r0, 1
+/* 8036E1EC 00369E8C  90 0D C3 C0 */	stw r0, "Breaking"-_SDA_BASE_(r13)
+/* 8036E1F0 00369E90  48 00 02 6C */	b lbl_8036E45C
+/* 8036E1F4 00369E94  7F A3 EB 78 */	mr r3, r29
+/* 8036E1F8 00369E98  48 00 08 B1 */	bl "__DVDDequeueWaitingQueue"
+/* 8036E1FC 00369E9C  81 9D 00 28 */	lwz r12, 0x28(r29)
+/* 8036E200 00369EA0  38 00 00 0A */	li r0, 0xa
+/* 8036E204 00369EA4  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8036E208 00369EA8  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036E20C 00369EAC  41 82 00 14 */	beq lbl_8036E220
+/* 8036E210 00369EB0  7F A4 EB 78 */	mr r4, r29
+/* 8036E214 00369EB4  38 60 FF FD */	li r3, -3
+/* 8036E218 00369EB8  7D 89 03 A6 */	mtctr r12
+/* 8036E21C 00369EBC  4E 80 04 21 */	bctrl 
+lbl_8036E220:
+/* 8036E220 00369EC0  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E224 00369EC4  41 82 02 38 */	beq lbl_8036E45C
+/* 8036E228 00369EC8  7F CC F3 78 */	mr r12, r30
+/* 8036E22C 00369ECC  7F A4 EB 78 */	mr r4, r29
+/* 8036E230 00369ED0  38 60 00 00 */	li r3, 0
+/* 8036E234 00369ED4  7D 89 03 A6 */	mtctr r12
+/* 8036E238 00369ED8  4E 80 04 21 */	bctrl 
+/* 8036E23C 00369EDC  48 00 02 20 */	b lbl_8036E45C
+/* 8036E240 00369EE0  80 1D 00 08 */	lwz r0, 8(r29)
+/* 8036E244 00369EE4  28 00 00 25 */	cmplwi r0, 0x25
+/* 8036E248 00369EE8  41 81 00 9C */	bgt lbl_8036E2E4
+/* 8036E24C 00369EEC  3C 60 80 46 */	lis r3, lbl_80466648@ha
+/* 8036E250 00369EF0  54 00 10 3A */	slwi r0, r0, 2
+/* 8036E254 00369EF4  38 63 66 48 */	addi r3, r3, lbl_80466648@l
+/* 8036E258 00369EF8  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8036E25C 00369EFC  7C 69 03 A6 */	mtctr r3
+/* 8036E260 00369F00  4E 80 04 20 */	bctr 
+/* 8036E264 00369F04  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E268 00369F08  41 82 01 F4 */	beq lbl_8036E45C
+/* 8036E26C 00369F0C  7F CC F3 78 */	mr r12, r30
+/* 8036E270 00369F10  7F A4 EB 78 */	mr r4, r29
+/* 8036E274 00369F14  38 60 00 00 */	li r3, 0
+/* 8036E278 00369F18  7D 89 03 A6 */	mtctr r12
+/* 8036E27C 00369F1C  4E 80 04 21 */	bctrl 
+/* 8036E280 00369F20  48 00 01 DC */	b lbl_8036E45C
+/* 8036E284 00369F24  80 0D C6 B0 */	lwz r0, "__OSInIPL"-_SDA_BASE_(r13)
+/* 8036E288 00369F28  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E28C 00369F2C  41 82 00 58 */	beq lbl_8036E2E4
+/* 8036E290 00369F30  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036E294 00369F34  38 00 00 0A */	li r0, 0xa
+/* 8036E298 00369F38  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036E29C 00369F3C  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036E2A0 00369F40  81 9D 00 28 */	lwz r12, 0x28(r29)
+/* 8036E2A4 00369F44  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8036E2A8 00369F48  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036E2AC 00369F4C  41 82 00 14 */	beq lbl_8036E2C0
+/* 8036E2B0 00369F50  7F A4 EB 78 */	mr r4, r29
+/* 8036E2B4 00369F54  38 60 FF FD */	li r3, -3
+/* 8036E2B8 00369F58  7D 89 03 A6 */	mtctr r12
+/* 8036E2BC 00369F5C  4E 80 04 21 */	bctrl 
+lbl_8036E2C0:
+/* 8036E2C0 00369F60  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E2C4 00369F64  41 82 00 18 */	beq lbl_8036E2DC
+/* 8036E2C8 00369F68  7F CC F3 78 */	mr r12, r30
+/* 8036E2CC 00369F6C  7F A4 EB 78 */	mr r4, r29
+/* 8036E2D0 00369F70  38 60 00 00 */	li r3, 0
+/* 8036E2D4 00369F74  7D 89 03 A6 */	mtctr r12
+/* 8036E2D8 00369F78  4E 80 04 21 */	bctrl 
+lbl_8036E2DC:
+/* 8036E2DC 00369F7C  4B FF EA 71 */	bl "stateReady"
+/* 8036E2E0 00369F80  48 00 01 7C */	b lbl_8036E45C
+lbl_8036E2E4:
+/* 8036E2E4 00369F84  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E2E8 00369F88  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E2EC 00369F8C  41 82 00 14 */	beq lbl_8036E300
+/* 8036E2F0 00369F90  7F E3 FB 78 */	mr r3, r31
+/* 8036E2F4 00369F94  48 07 21 91 */	bl "OSRestoreInterrupts"
+/* 8036E2F8 00369F98  38 60 00 00 */	li r3, 0
+/* 8036E2FC 00369F9C  48 00 01 6C */	b lbl_8036E468
+lbl_8036E300:
+/* 8036E300 00369FA0  38 00 00 01 */	li r0, 1
+/* 8036E304 00369FA4  93 CD C4 10 */	stw r30, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036E308 00369FA8  90 0D C3 B0 */	stw r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E30C 00369FAC  48 00 01 50 */	b lbl_8036E45C
+/* 8036E310 00369FB0  80 0D C3 C8 */	lwz r0, "WaitingForCoverClose"-_SDA_BASE_(r13)
+/* 8036E314 00369FB4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E318 00369FB8  40 82 00 1C */	bne lbl_8036E334
+/* 8036E31C 00369FBC  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036E320 00369FC0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E324 00369FC4  40 82 00 10 */	bne lbl_8036E334
+/* 8036E328 00369FC8  48 07 21 5D */	bl "OSRestoreInterrupts"
+/* 8036E32C 00369FCC  38 60 00 00 */	li r3, 0
+/* 8036E330 00369FD0  48 00 01 38 */	b lbl_8036E468
+lbl_8036E334:
+/* 8036E334 00369FD4  80 0D C3 C4 */	lwz r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+/* 8036E338 00369FD8  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E33C 00369FDC  41 82 00 18 */	beq lbl_8036E354
+/* 8036E340 00369FE0  3C 60 80 59 */	lis r3, "CoverAlarm"@ha
+/* 8036E344 00369FE4  38 63 C6 40 */	addi r3, r3, "CoverAlarm"@l
+/* 8036E348 00369FE8  48 06 D3 4D */	bl "OSCancelAlarm"
+/* 8036E34C 00369FEC  38 00 00 00 */	li r0, 0
+/* 8036E350 00369FF0  90 0D C3 C4 */	stw r0, "WaitingForCoverOpen"-_SDA_BASE_(r13)
+lbl_8036E354:
+/* 8036E354 00369FF4  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036E358 00369FF8  2C 00 00 04 */	cmpwi r0, 4
+/* 8036E35C 00369FFC  40 82 00 0C */	bne lbl_8036E368
+/* 8036E360 0036A000  38 00 00 03 */	li r0, 3
+/* 8036E364 0036A004  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036E368:
+/* 8036E368 0036A008  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036E36C 0036A00C  2C 00 00 05 */	cmpwi r0, 5
+/* 8036E370 0036A010  40 82 00 0C */	bne lbl_8036E37C
+/* 8036E374 0036A014  38 00 00 04 */	li r0, 4
+/* 8036E378 0036A018  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036E37C:
+/* 8036E37C 0036A01C  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036E380 0036A020  2C 00 00 06 */	cmpwi r0, 6
+/* 8036E384 0036A024  40 82 00 0C */	bne lbl_8036E390
+/* 8036E388 0036A028  38 00 00 01 */	li r0, 1
+/* 8036E38C 0036A02C  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036E390:
+/* 8036E390 0036A030  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036E394 0036A034  2C 00 00 0B */	cmpwi r0, 0xb
+/* 8036E398 0036A038  40 82 00 0C */	bne lbl_8036E3A4
+/* 8036E39C 0036A03C  38 00 00 02 */	li r0, 2
+/* 8036E3A0 0036A040  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036E3A4:
+/* 8036E3A4 0036A044  80 1D 00 0C */	lwz r0, 0xc(r29)
+/* 8036E3A8 0036A048  2C 00 00 07 */	cmpwi r0, 7
+/* 8036E3AC 0036A04C  40 82 00 0C */	bne lbl_8036E3B8
+/* 8036E3B0 0036A050  38 00 00 07 */	li r0, 7
+/* 8036E3B4 0036A054  90 0D C3 B4 */	stw r0, "ResumeFromHere"-_SDA_BASE_(r13)
+lbl_8036E3B8:
+/* 8036E3B8 0036A058  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036E3BC 0036A05C  38 00 00 0A */	li r0, 0xa
+/* 8036E3C0 0036A060  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036E3C4 0036A064  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036E3C8 0036A068  81 9D 00 28 */	lwz r12, 0x28(r29)
+/* 8036E3CC 0036A06C  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8036E3D0 0036A070  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036E3D4 0036A074  41 82 00 14 */	beq lbl_8036E3E8
+/* 8036E3D8 0036A078  7F A4 EB 78 */	mr r4, r29
+/* 8036E3DC 0036A07C  38 60 FF FD */	li r3, -3
+/* 8036E3E0 0036A080  7D 89 03 A6 */	mtctr r12
+/* 8036E3E4 0036A084  4E 80 04 21 */	bctrl 
+lbl_8036E3E8:
+/* 8036E3E8 0036A088  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E3EC 0036A08C  41 82 00 18 */	beq lbl_8036E404
+/* 8036E3F0 0036A090  7F CC F3 78 */	mr r12, r30
+/* 8036E3F4 0036A094  7F A4 EB 78 */	mr r4, r29
+/* 8036E3F8 0036A098  38 60 00 00 */	li r3, 0
+/* 8036E3FC 0036A09C  7D 89 03 A6 */	mtctr r12
+/* 8036E400 0036A0A0  4E 80 04 21 */	bctrl 
+lbl_8036E404:
+/* 8036E404 0036A0A4  4B FF E9 49 */	bl "stateReady"
+/* 8036E408 0036A0A8  48 00 00 54 */	b lbl_8036E45C
+/* 8036E40C 0036A0AC  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
+/* 8036E410 0036A0B0  38 00 00 0A */	li r0, 0xa
+/* 8036E414 0036A0B4  38 63 C5 E0 */	addi r3, r3, "DummyCommandBlock"@l
+/* 8036E418 0036A0B8  90 6D C4 20 */	stw r3, "executing"-_SDA_BASE_(r13)
+/* 8036E41C 0036A0BC  81 9D 00 28 */	lwz r12, 0x28(r29)
+/* 8036E420 0036A0C0  90 1D 00 0C */	stw r0, 0xc(r29)
+/* 8036E424 0036A0C4  2C 0C 00 00 */	cmpwi r12, 0
+/* 8036E428 0036A0C8  41 82 00 14 */	beq lbl_8036E43C
+/* 8036E42C 0036A0CC  7F A4 EB 78 */	mr r4, r29
+/* 8036E430 0036A0D0  38 60 FF FD */	li r3, -3
+/* 8036E434 0036A0D4  7D 89 03 A6 */	mtctr r12
+/* 8036E438 0036A0D8  4E 80 04 21 */	bctrl 
+lbl_8036E43C:
+/* 8036E43C 0036A0DC  2C 1E 00 00 */	cmpwi r30, 0
+/* 8036E440 0036A0E0  41 82 00 18 */	beq lbl_8036E458
+/* 8036E444 0036A0E4  7F CC F3 78 */	mr r12, r30
+/* 8036E448 0036A0E8  7F A4 EB 78 */	mr r4, r29
+/* 8036E44C 0036A0EC  38 60 00 00 */	li r3, 0
+/* 8036E450 0036A0F0  7D 89 03 A6 */	mtctr r12
+/* 8036E454 0036A0F4  4E 80 04 21 */	bctrl 
+lbl_8036E458:
+/* 8036E458 0036A0F8  4B FF E8 F5 */	bl "stateReady"
+lbl_8036E45C:
+/* 8036E45C 0036A0FC  7F E3 FB 78 */	mr r3, r31
+/* 8036E460 0036A100  48 07 20 25 */	bl "OSRestoreInterrupts"
+/* 8036E464 0036A104  38 60 00 01 */	li r3, 1
+lbl_8036E468:
+/* 8036E468 0036A108  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036E46C 0036A10C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036E470 0036A110  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036E474 0036A114  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036E478 0036A118  7C 08 03 A6 */	mtlr r0
+/* 8036E47C 0036A11C  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036E480 0036A120  4E 80 00 20 */	blr 
+
+.global "DVDCancel"
+"DVDCancel":
+/* 8036E484 0036A124  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036E488 0036A128  7C 08 02 A6 */	mflr r0
+/* 8036E48C 0036A12C  3C 80 80 37 */	lis r4, "cbForCancelSync"@ha
+/* 8036E490 0036A130  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036E494 0036A134  38 84 E5 50 */	addi r4, r4, "cbForCancelSync"@l
+/* 8036E498 0036A138  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036E49C 0036A13C  93 C1 00 08 */	stw r30, 8(r1)
+/* 8036E4A0 0036A140  7C 7E 1B 78 */	mr r30, r3
+/* 8036E4A4 0036A144  4B FF FC 8D */	bl "DVDCancelAsync"
+/* 8036E4A8 0036A148  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E4AC 0036A14C  40 82 00 0C */	bne lbl_8036E4B8
+/* 8036E4B0 0036A150  38 60 FF FF */	li r3, -1
+/* 8036E4B4 0036A154  48 00 00 84 */	b lbl_8036E538
+lbl_8036E4B8:
+/* 8036E4B8 0036A158  48 07 1F A5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E4BC 0036A15C  7C 7F 1B 78 */	mr r31, r3
+lbl_8036E4C0:
+/* 8036E4C0 0036A160  80 1E 00 0C */	lwz r0, 0xc(r30)
+/* 8036E4C4 0036A164  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E4C8 0036A168  41 82 00 64 */	beq lbl_8036E52C
+/* 8036E4CC 0036A16C  2C 00 FF FF */	cmpwi r0, -1
+/* 8036E4D0 0036A170  41 82 00 5C */	beq lbl_8036E52C
+/* 8036E4D4 0036A174  2C 00 00 0A */	cmpwi r0, 0xa
+/* 8036E4D8 0036A178  41 82 00 54 */	beq lbl_8036E52C
+/* 8036E4DC 0036A17C  2C 00 00 03 */	cmpwi r0, 3
+/* 8036E4E0 0036A180  40 82 00 40 */	bne lbl_8036E520
+/* 8036E4E4 0036A184  80 1E 00 08 */	lwz r0, 8(r30)
+/* 8036E4E8 0036A188  28 00 00 04 */	cmplwi r0, 4
+/* 8036E4EC 0036A18C  41 82 00 40 */	beq lbl_8036E52C
+/* 8036E4F0 0036A190  28 00 00 05 */	cmplwi r0, 5
+/* 8036E4F4 0036A194  41 82 00 38 */	beq lbl_8036E52C
+/* 8036E4F8 0036A198  28 00 00 0D */	cmplwi r0, 0xd
+/* 8036E4FC 0036A19C  41 82 00 30 */	beq lbl_8036E52C
+/* 8036E500 0036A1A0  28 00 00 21 */	cmplwi r0, 0x21
+/* 8036E504 0036A1A4  41 82 00 28 */	beq lbl_8036E52C
+/* 8036E508 0036A1A8  28 00 00 22 */	cmplwi r0, 0x22
+/* 8036E50C 0036A1AC  41 82 00 20 */	beq lbl_8036E52C
+/* 8036E510 0036A1B0  28 00 00 0F */	cmplwi r0, 0xf
+/* 8036E514 0036A1B4  41 82 00 18 */	beq lbl_8036E52C
+/* 8036E518 0036A1B8  28 00 00 25 */	cmplwi r0, 0x25
+/* 8036E51C 0036A1BC  41 82 00 10 */	beq lbl_8036E52C
+lbl_8036E520:
+/* 8036E520 0036A1C0  38 6D C3 88 */	addi r3, r13, "__DVDThreadQueue"-_SDA_BASE_
+/* 8036E524 0036A1C4  48 07 58 29 */	bl "OSSleepThread"
+/* 8036E528 0036A1C8  4B FF FF 98 */	b lbl_8036E4C0
+lbl_8036E52C:
+/* 8036E52C 0036A1CC  7F E3 FB 78 */	mr r3, r31
+/* 8036E530 0036A1D0  48 07 1F 55 */	bl "OSRestoreInterrupts"
+/* 8036E534 0036A1D4  38 60 00 00 */	li r3, 0
+lbl_8036E538:
+/* 8036E538 0036A1D8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036E53C 0036A1DC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036E540 0036A1E0  83 C1 00 08 */	lwz r30, 8(r1)
+/* 8036E544 0036A1E4  7C 08 03 A6 */	mtlr r0
+/* 8036E548 0036A1E8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036E54C 0036A1EC  4E 80 00 20 */	blr 
+
+.global "cbForCancelSync"
+"cbForCancelSync":
+/* 8036E550 0036A1F0  38 6D C3 88 */	addi r3, r13, "__DVDThreadQueue"-_SDA_BASE_
+/* 8036E554 0036A1F4  48 07 58 E4 */	b "OSWakeupThread"
+
+.global "__BS2DVDLowCallback"
+"__BS2DVDLowCallback":
+/* 8036E558 0036A1F8  90 6D C3 E0 */	stw r3, "__BS2DVDLowIntType"-_SDA_BASE_(r13)
+/* 8036E55C 0036A1FC  4E 80 00 20 */	blr 
+
+.global "__DVDGetCoverStatus"
+"__DVDGetCoverStatus":
+/* 8036E560 0036A200  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8036E564 0036A204  7C 08 02 A6 */	mflr r0
+/* 8036E568 0036A208  3C 60 80 37 */	lis r3, "__BS2DVDLowCallback"@ha
+/* 8036E56C 0036A20C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8036E570 0036A210  38 00 00 00 */	li r0, 0
+/* 8036E574 0036A214  38 63 E5 58 */	addi r3, r3, "__BS2DVDLowCallback"@l
+/* 8036E578 0036A218  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8036E57C 0036A21C  90 0D C3 E0 */	stw r0, "__BS2DVDLowIntType"-_SDA_BASE_(r13)
+/* 8036E580 0036A220  48 00 21 B9 */	bl "DVDLowPrepareCoverRegister"
+lbl_8036E584:
+/* 8036E584 0036A224  80 0D C3 E0 */	lwz r0, "__BS2DVDLowIntType"-_SDA_BASE_(r13)
+/* 8036E588 0036A228  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E58C 0036A22C  41 82 FF F8 */	beq lbl_8036E584
+/* 8036E590 0036A230  80 0D C3 E0 */	lwz r0, "__BS2DVDLowIntType"-_SDA_BASE_(r13)
+/* 8036E594 0036A234  54 00 07 FF */	clrlwi. r0, r0, 0x1f
+/* 8036E598 0036A238  40 82 00 0C */	bne lbl_8036E5A4
+/* 8036E59C 0036A23C  38 60 00 00 */	li r3, 0
+/* 8036E5A0 0036A240  48 00 00 74 */	b lbl_8036E614
+lbl_8036E5A4:
+/* 8036E5A4 0036A244  48 00 21 85 */	bl "DVDLowGetCoverRegister"
+/* 8036E5A8 0036A248  7C 7F 1B 78 */	mr r31, r3
+/* 8036E5AC 0036A24C  48 07 5A 8D */	bl "__OSGetSystemTime"
+/* 8036E5B0 0036A250  3C C0 80 00 */	lis r6, 0x800000F8@ha
+/* 8036E5B4 0036A254  3C A0 10 62 */	lis r5, 0x10624DD3@ha
+/* 8036E5B8 0036A258  80 C6 00 F8 */	lwz r6, 0x800000F8@l(r6)
+/* 8036E5BC 0036A25C  38 E5 4D D3 */	addi r7, r5, 0x10624DD3@l
+/* 8036E5C0 0036A260  81 0D C3 F8 */	lwz r8, "LastResetEnd"-_SDA_BASE_(r13)
+/* 8036E5C4 0036A264  38 00 00 00 */	li r0, 0
+/* 8036E5C8 0036A268  54 C5 F0 BE */	srwi r5, r6, 2
+/* 8036E5CC 0036A26C  81 2D C3 FC */	lwz r9, lbl_805D8ADC-_SDA_BASE_(r13)
+/* 8036E5D0 0036A270  7C C7 28 16 */	mulhwu r6, r7, r5
+/* 8036E5D4 0036A274  7C 89 20 10 */	subfc r4, r9, r4
+/* 8036E5D8 0036A278  6C 05 80 00 */	xoris r5, r0, 0x8000
+/* 8036E5DC 0036A27C  7C 08 19 10 */	subfe r0, r8, r3
+/* 8036E5E0 0036A280  6C 00 80 00 */	xoris r0, r0, 0x8000
+/* 8036E5E4 0036A284  54 C3 D1 BE */	srwi r3, r6, 6
+/* 8036E5E8 0036A288  1C 63 00 64 */	mulli r3, r3, 0x64
+/* 8036E5EC 0036A28C  7C 63 20 10 */	subfc r3, r3, r4
+/* 8036E5F0 0036A290  7C A5 01 10 */	subfe r5, r5, r0
+/* 8036E5F4 0036A294  7C A0 01 10 */	subfe r5, r0, r0
+/* 8036E5F8 0036A298  7C A5 00 D1 */	neg. r5, r5
+/* 8036E5FC 0036A29C  41 82 00 0C */	beq lbl_8036E608
+/* 8036E600 0036A2A0  38 60 00 00 */	li r3, 0
+/* 8036E604 0036A2A4  48 00 00 10 */	b lbl_8036E614
+lbl_8036E608:
+/* 8036E608 0036A2A8  57 E0 07 FE */	clrlwi r0, r31, 0x1f
+/* 8036E60C 0036A2AC  7C 60 00 D0 */	neg r3, r0
+/* 8036E610 0036A2B0  38 63 00 02 */	addi r3, r3, 2
+lbl_8036E614:
+/* 8036E614 0036A2B4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8036E618 0036A2B8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8036E61C 0036A2BC  7C 08 03 A6 */	mtlr r0
+/* 8036E620 0036A2C0  38 21 00 10 */	addi r1, r1, 0x10
+/* 8036E624 0036A2C4  4E 80 00 20 */	blr 
+
+.global "__DVDPrepareResetAsync"
+"__DVDPrepareResetAsync":
+/* 8036E628 0036A2C8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036E62C 0036A2CC  7C 08 02 A6 */	mflr r0
+/* 8036E630 0036A2D0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036E634 0036A2D4  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036E638 0036A2D8  7C 7F 1B 78 */	mr r31, r3
+/* 8036E63C 0036A2DC  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036E640 0036A2E0  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036E644 0036A2E4  48 07 1E 19 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E648 0036A2E8  7C 7D 1B 78 */	mr r29, r3
+/* 8036E64C 0036A2EC  48 00 02 65 */	bl "__DVDClearWaitingQueue"
+/* 8036E650 0036A2F0  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E654 0036A2F4  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E658 0036A2F8  41 82 00 0C */	beq lbl_8036E664
+/* 8036E65C 0036A2FC  93 ED C4 10 */	stw r31, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036E660 0036A300  48 00 00 C0 */	b lbl_8036E720
+lbl_8036E664:
+/* 8036E664 0036A304  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036E668 0036A308  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E66C 0036A30C  41 82 00 0C */	beq lbl_8036E678
+/* 8036E670 0036A310  38 00 00 00 */	li r0, 0
+/* 8036E674 0036A314  90 03 00 28 */	stw r0, 0x28(r3)
+lbl_8036E678:
+/* 8036E678 0036A318  48 07 1D E5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E67C 0036A31C  7C 7E 1B 78 */	mr r30, r3
+/* 8036E680 0036A320  48 07 1D DD */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E684 0036A324  80 0D C4 20 */	lwz r0, "executing"-_SDA_BASE_(r13)
+/* 8036E688 0036A328  38 80 00 01 */	li r4, 1
+/* 8036E68C 0036A32C  90 8D C3 A4 */	stw r4, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036E690 0036A330  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E694 0036A334  40 82 00 08 */	bne lbl_8036E69C
+/* 8036E698 0036A338  90 8D C3 A8 */	stw r4, "PausingFlag"-_SDA_BASE_(r13)
+lbl_8036E69C:
+/* 8036E69C 0036A33C  48 07 1D E9 */	bl "OSRestoreInterrupts"
+/* 8036E6A0 0036A340  48 00 00 0C */	b lbl_8036E6AC
+lbl_8036E6A4:
+/* 8036E6A4 0036A344  38 80 00 00 */	li r4, 0
+/* 8036E6A8 0036A348  4B FF FA 89 */	bl "DVDCancelAsync"
+lbl_8036E6AC:
+/* 8036E6AC 0036A34C  48 00 02 A5 */	bl "__DVDPopWaitingQueue"
+/* 8036E6B0 0036A350  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E6B4 0036A354  40 82 FF F0 */	bne lbl_8036E6A4
+/* 8036E6B8 0036A358  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036E6BC 0036A35C  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E6C0 0036A360  41 82 00 10 */	beq lbl_8036E6D0
+/* 8036E6C4 0036A364  7F E4 FB 78 */	mr r4, r31
+/* 8036E6C8 0036A368  4B FF FA 69 */	bl "DVDCancelAsync"
+/* 8036E6CC 0036A36C  48 00 00 20 */	b lbl_8036E6EC
+lbl_8036E6D0:
+/* 8036E6D0 0036A370  2C 1F 00 00 */	cmpwi r31, 0
+/* 8036E6D4 0036A374  41 82 00 18 */	beq lbl_8036E6EC
+/* 8036E6D8 0036A378  7F EC FB 78 */	mr r12, r31
+/* 8036E6DC 0036A37C  38 60 00 00 */	li r3, 0
+/* 8036E6E0 0036A380  38 80 00 00 */	li r4, 0
+/* 8036E6E4 0036A384  7D 89 03 A6 */	mtctr r12
+/* 8036E6E8 0036A388  4E 80 04 21 */	bctrl 
+lbl_8036E6EC:
+/* 8036E6EC 0036A38C  48 07 1D 71 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E6F0 0036A390  38 80 00 00 */	li r4, 0
+/* 8036E6F4 0036A394  7C 7F 1B 78 */	mr r31, r3
+/* 8036E6F8 0036A398  90 8D C3 A4 */	stw r4, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036E6FC 0036A39C  80 0D C3 A8 */	lwz r0, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E700 0036A3A0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E704 0036A3A4  41 82 00 0C */	beq lbl_8036E710
+/* 8036E708 0036A3A8  90 8D C3 A8 */	stw r4, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E70C 0036A3AC  4B FF E6 41 */	bl "stateReady"
+lbl_8036E710:
+/* 8036E710 0036A3B0  7F E3 FB 78 */	mr r3, r31
+/* 8036E714 0036A3B4  48 07 1D 71 */	bl "OSRestoreInterrupts"
+/* 8036E718 0036A3B8  7F C3 F3 78 */	mr r3, r30
+/* 8036E71C 0036A3BC  48 07 1D 69 */	bl "OSRestoreInterrupts"
+lbl_8036E720:
+/* 8036E720 0036A3C0  7F A3 EB 78 */	mr r3, r29
+/* 8036E724 0036A3C4  48 07 1D 61 */	bl "OSRestoreInterrupts"
+/* 8036E728 0036A3C8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036E72C 0036A3CC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036E730 0036A3D0  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036E734 0036A3D4  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036E738 0036A3D8  7C 08 03 A6 */	mtlr r0
+/* 8036E73C 0036A3DC  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036E740 0036A3E0  4E 80 00 20 */	blr 
+
+.global "Callback"
+"Callback":
+/* 8036E744 0036A3E4  38 00 00 01 */	li r0, 1
+/* 8036E748 0036A3E8  90 0D C3 E4 */	stw r0, "Prepared"-_SDA_BASE_(r13)
+/* 8036E74C 0036A3EC  4E 80 00 20 */	blr 
+
+.global "__DVDPrepareReset"
+"__DVDPrepareReset":
+/* 8036E750 0036A3F0  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8036E754 0036A3F4  7C 08 02 A6 */	mflr r0
+/* 8036E758 0036A3F8  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8036E75C 0036A3FC  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 8036E760 0036A400  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 8036E764 0036A404  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8036E768 0036A408  48 07 1C F5 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E76C 0036A40C  3B E0 00 00 */	li r31, 0
+/* 8036E770 0036A410  93 ED C3 E4 */	stw r31, "Prepared"-_SDA_BASE_(r13)
+/* 8036E774 0036A414  48 07 1C E9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E778 0036A418  7C 7D 1B 78 */	mr r29, r3
+/* 8036E77C 0036A41C  48 00 01 35 */	bl "__DVDClearWaitingQueue"
+/* 8036E780 0036A420  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
+/* 8036E784 0036A424  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E788 0036A428  41 82 00 14 */	beq lbl_8036E79C
+/* 8036E78C 0036A42C  3C 60 80 37 */	lis r3, "Callback"@ha
+/* 8036E790 0036A430  38 63 E7 44 */	addi r3, r3, "Callback"@l
+/* 8036E794 0036A434  90 6D C4 10 */	stw r3, "CancelCallback"-_SDA_BASE_(r13)
+/* 8036E798 0036A438  48 00 00 B8 */	b lbl_8036E850
+lbl_8036E79C:
+/* 8036E79C 0036A43C  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036E7A0 0036A440  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E7A4 0036A444  41 82 00 08 */	beq lbl_8036E7AC
+/* 8036E7A8 0036A448  93 E3 00 28 */	stw r31, 0x28(r3)
+lbl_8036E7AC:
+/* 8036E7AC 0036A44C  48 07 1C B1 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E7B0 0036A450  7C 7F 1B 78 */	mr r31, r3
+/* 8036E7B4 0036A454  48 07 1C A9 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E7B8 0036A458  80 0D C4 20 */	lwz r0, "executing"-_SDA_BASE_(r13)
+/* 8036E7BC 0036A45C  38 80 00 01 */	li r4, 1
+/* 8036E7C0 0036A460  90 8D C3 A4 */	stw r4, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036E7C4 0036A464  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E7C8 0036A468  40 82 00 08 */	bne lbl_8036E7D0
+/* 8036E7CC 0036A46C  90 8D C3 A8 */	stw r4, "PausingFlag"-_SDA_BASE_(r13)
+lbl_8036E7D0:
+/* 8036E7D0 0036A470  48 07 1C B5 */	bl "OSRestoreInterrupts"
+/* 8036E7D4 0036A474  48 00 00 0C */	b lbl_8036E7E0
+lbl_8036E7D8:
+/* 8036E7D8 0036A478  38 80 00 00 */	li r4, 0
+/* 8036E7DC 0036A47C  4B FF F9 55 */	bl "DVDCancelAsync"
+lbl_8036E7E0:
+/* 8036E7E0 0036A480  48 00 01 71 */	bl "__DVDPopWaitingQueue"
+/* 8036E7E4 0036A484  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E7E8 0036A488  40 82 FF F0 */	bne lbl_8036E7D8
+/* 8036E7EC 0036A48C  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
+/* 8036E7F0 0036A490  2C 03 00 00 */	cmpwi r3, 0
+/* 8036E7F4 0036A494  41 82 00 14 */	beq lbl_8036E808
+/* 8036E7F8 0036A498  3C 80 80 37 */	lis r4, "Callback"@ha
+/* 8036E7FC 0036A49C  38 84 E7 44 */	addi r4, r4, "Callback"@l
+/* 8036E800 0036A4A0  4B FF F9 31 */	bl "DVDCancelAsync"
+/* 8036E804 0036A4A4  48 00 00 18 */	b lbl_8036E81C
+lbl_8036E808:
+/* 8036E808 0036A4A8  3C 00 80 37 */	lis r0, 0x8037
+/* 8036E80C 0036A4AC  34 00 E7 44 */	addic. r0, r0, -6332
+/* 8036E810 0036A4B0  41 82 00 0C */	beq lbl_8036E81C
+/* 8036E814 0036A4B4  38 00 00 01 */	li r0, 1
+/* 8036E818 0036A4B8  90 0D C3 E4 */	stw r0, "Prepared"-_SDA_BASE_(r13)
+lbl_8036E81C:
+/* 8036E81C 0036A4BC  48 07 1C 41 */	bl "__RAS_OSDisableInterrupts_begin"
+/* 8036E820 0036A4C0  38 80 00 00 */	li r4, 0
+/* 8036E824 0036A4C4  7C 7E 1B 78 */	mr r30, r3
+/* 8036E828 0036A4C8  90 8D C3 A4 */	stw r4, "PauseFlag"-_SDA_BASE_(r13)
+/* 8036E82C 0036A4CC  80 0D C3 A8 */	lwz r0, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E830 0036A4D0  2C 00 00 00 */	cmpwi r0, 0
+/* 8036E834 0036A4D4  41 82 00 0C */	beq lbl_8036E840
+/* 8036E838 0036A4D8  90 8D C3 A8 */	stw r4, "PausingFlag"-_SDA_BASE_(r13)
+/* 8036E83C 0036A4DC  4B FF E5 11 */	bl "stateReady"
+lbl_8036E840:
+/* 8036E840 0036A4E0  7F C3 F3 78 */	mr r3, r30
+/* 8036E844 0036A4E4  48 07 1C 41 */	bl "OSRestoreInterrupts"
+/* 8036E848 0036A4E8  7F E3 FB 78 */	mr r3, r31
+/* 8036E84C 0036A4EC  48 07 1C 39 */	bl "OSRestoreInterrupts"
+lbl_8036E850:
+/* 8036E850 0036A4F0  7F A3 EB 78 */	mr r3, r29
+/* 8036E854 0036A4F4  48 07 1C 31 */	bl "OSRestoreInterrupts"
+/* 8036E858 0036A4F8  48 07 1C 19 */	bl "OSEnableInterrupts"
+lbl_8036E85C:
+/* 8036E85C 0036A4FC  80 0D C3 E4 */	lwz r0, "Prepared"-_SDA_BASE_(r13)
+/* 8036E860 0036A500  2C 00 00 01 */	cmpwi r0, 1
+/* 8036E864 0036A504  40 82 FF F8 */	bne lbl_8036E85C
+/* 8036E868 0036A508  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8036E86C 0036A50C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 8036E870 0036A510  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 8036E874 0036A514  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 8036E878 0036A518  7C 08 03 A6 */	mtlr r0
+/* 8036E87C 0036A51C  38 21 00 20 */	addi r1, r1, 0x20
+/* 8036E880 0036A520  4E 80 00 20 */	blr 
+
+.global "__DVDTestAlarm"
+"__DVDTestAlarm":
+/* 8036E884 0036A524  3C 80 80 59 */	lis r4, "ResetAlarm"@ha
+/* 8036E888 0036A528  38 84 11 00 */	addi r4, r4, "ResetAlarm"@l
+/* 8036E88C 0036A52C  7C 03 20 40 */	cmplw r3, r4
+/* 8036E890 0036A530  40 82 00 0C */	bne lbl_8036E89C
+/* 8036E894 0036A534  38 60 00 01 */	li r3, 1
+/* 8036E898 0036A538  4E 80 00 20 */	blr 
+lbl_8036E89C:
+/* 8036E89C 0036A53C  48 00 21 84 */	b "__DVDLowTestAlarm"
+/* 8036E8A0 0036A540  4E 80 00 20 */	blr 
+
+.global "__DVDStopMotorAsync"
+"__DVDStopMotorAsync":
+/* 8036E8A4 0036A544  38 60 00 01 */	li r3, 1
+/* 8036E8A8 0036A548  4E 80 00 20 */	blr 
+
+.global "__DVDRestartMotor"
+"__DVDRestartMotor":
+/* 8036E8AC 0036A54C  4E 80 00 20 */	blr 
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+	.incbin "baserom.dol", 0x462588, 0x48
+.global lbl_804664D0
+lbl_804664D0:
+	.incbin "baserom.dol", 0x4625D0, 0x34
+.global lbl_80466504
+lbl_80466504:
+	.incbin "baserom.dol", 0x462604, 0x9C
+.global lbl_804665A0
+lbl_804665A0:
+	.incbin "baserom.dol", 0x4626A0, 0x9C
+.global "ImmCommand"
+"ImmCommand":
+	.incbin "baserom.dol", 0x46273C, 0xC
+.global lbl_80466648
+lbl_80466648:
+	.incbin "baserom.dol", 0x462748, 0x98
+.global lbl_804666E0
+lbl_804666E0:
+	.incbin "baserom.dol", 0x4627E0, 0x38
+
+.section .bss, "wa"  # 0x80488180 - 0x805DC448
+.global "BB2"
+"BB2":
+	.skip 0x20
+.global "DummyCommandBlock"
+"DummyCommandBlock":
+	.skip 0x30
+.global "FatalAlarm"
+"FatalAlarm":
+	.skip 0x30
+.global "CoverAlarm"
+"CoverAlarm":
+	.skip 0x40
+.global "CurrDiskID"
+"CurrDiskID":
+	.skip 0x20
+.global "GameTocBuffer"
+"GameTocBuffer":
+	.skip 0x20
+.global "PartInfoBuffer"
+"PartInfoBuffer":
+	.skip 0x40
+.global "TmdBuffer"
+"TmdBuffer":
+	.skip 0x3904
+.global lbl_80590004
+lbl_80590004:
+	.skip 0x10FC
+.global "ResetAlarm"
+"ResetAlarm":
+	.skip 0x30
+.global "__DVDStopMotorCommandBlock"
+"__DVDStopMotorCommandBlock":
+	.skip 0x30
+.global "__DVDRestartMotorCommandBlock"
+"__DVDRestartMotorCommandBlock":
+	.skip 0x30
+
+.section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
+.global "__DVDVersion"
+"__DVDVersion":
+	.incbin "baserom.dol", 0x486EA0, 0x4
+.global "autoInvalidation"
+"autoInvalidation":
+	.incbin "baserom.dol", 0x486EA4, 0x4
+.global "checkOptionalCommand"
+"checkOptionalCommand":
+	.incbin "baserom.dol", 0x486EA8, 0x4
+.global lbl_805D732C
+lbl_805D732C:
+	.incbin "baserom.dol", 0x486EAC, 0x8
+.global "DmaCommand"
+"DmaCommand":
+	.incbin "baserom.dol", 0x486EB4, 0x4
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "CommandInfoCounter"
+"CommandInfoCounter":
+	.skip 0x4
+.global "PauseFlag"
+"PauseFlag":
+	.skip 0x4
+.global "PausingFlag"
+"PausingFlag":
+	.skip 0x4
+.global "FatalErrorFlag"
+"FatalErrorFlag":
+	.skip 0x4
+.global "Canceling"
+"Canceling":
+	.skip 0x4
+.global "ResumeFromHere"
+"ResumeFromHere":
+	.skip 0x4
+.global "NumInternalRetry"
+"NumInternalRetry":
+	.skip 0x4
+.global "FirstTimeInBootrom"
+"FirstTimeInBootrom":
+	.skip 0x4
+.global "Breaking"
+"Breaking":
+	.skip 0x4
+.global "WaitingForCoverOpen"
+"WaitingForCoverOpen":
+	.skip 0x4
+.global "WaitingForCoverClose"
+"WaitingForCoverClose":
+	.skip 0x4
+.global "MotorStopped"
+"MotorStopped":
+	.skip 0x4
+.global "ChangedDisc"
+"ChangedDisc":
+	.skip 0x4
+.global "PreparingCover"
+"PreparingCover":
+	.skip 0x4
+.global "__DVDLayoutFormat"
+"__DVDLayoutFormat":
+	.skip 0x4
+.global "DVDInitialized"
+"DVDInitialized":
+	.skip 0x4
+.global "__BS2DVDLowIntType"
+"__BS2DVDLowIntType":
+	.skip 0x4
+.global "Prepared"
+"Prepared":
+	.skip 0x4
+.global "BootGameInfo"
+"BootGameInfo":
+	.skip 0x4
+.global "PartInfo"
+"PartInfo":
+	.skip 0x4
+.global "GameToc"
+"GameToc":
+	.skip 0x8
+.global "LastResetEnd"
+"LastResetEnd":
+	.skip 0x4
+.global lbl_805D8ADC
+lbl_805D8ADC:
+	.skip 0x4
+.global "MotorState"
+"MotorState":
+	.skip 0x4
+.global "ResetRequired"
+"ResetRequired":
+	.skip 0x4
+.global "LastError"
+"LastError":
+	.skip 0x4
+.global "CancelLastError"
+"CancelLastError":
+	.skip 0x4
+.global "CancelCallback"
+"CancelCallback":
+	.skip 0x4
+.global "CurrCommand"
+"CurrCommand":
+	.skip 0x4
+.global "bootInfo"
+"bootInfo":
+	.skip 0x4
+.global "IDShouldBe"
+"IDShouldBe":
+	.skip 0x4
+.global "executing"
+"executing":
+	.skip 0x4
+.global "LastState"
+"LastState":
+	.skip 0x4

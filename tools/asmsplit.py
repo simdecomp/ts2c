@@ -35,11 +35,12 @@ with open(sys.argv[1], 'rb') as f:
                 fname = (basedir + symbol_name + '.s')
                 print("# Found file \"%s\"" % symbol_name)
                 lastSymbolWasFileName = True
-        elif (lastSymbolWasFileName == True and fname != ''):
+        elif (fname != ''):
+            if sym['st_info']['type'] != "STT_SECTION":
+                fname = ''
+                continue
             filenames[sym['st_value']] = fname
             print("# File \"%s\" starts at address 0x%08X" % (fname, sym['st_value']))
-            fname = ''
-            lastSymbolWasFileName = False
             pass
 
 # with open(sys.argv[1]) as mapfile:
@@ -65,17 +66,16 @@ while asmline := remainder or sys.stdin.readline():
     else:
         if trim != "":
             if curfile.closed:
-                if curaddr in filenames:
-                    fname = filenames[curaddr]
-                    if os.path.exists(fname):
-                        curfile = open(fname, 'a')
-                        curfile.write('\n')
-                    else:
-                        os.makedirs(os.path.dirname(fname), exist_ok = True)
-                        curfile = open(fname, 'x')
-                        curfile.write('.include "macros.inc"\n\n')
+                fname = filenames[curaddr]
+                if os.path.exists(fname):
+                    curfile = open(fname, 'a')
+                    curfile.write('\n')
+                else:
+                    os.makedirs(os.path.dirname(fname), exist_ok = True)
+                    curfile = open(fname, 'x')
+                    curfile.write('.include "macros.inc"\n\n')
 
-                    curfile.write(section)
+                curfile.write(section)
 
             if trim.startswith('.skip'):
                 curaddr += int(trim[6:], 0)

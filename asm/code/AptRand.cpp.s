@@ -1,0 +1,173 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "_randReloadMersenneTwister__Fv"
+"_randReloadMersenneTwister__Fv":
+/* 80327D0C 003239AC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80327D10 003239B0  7C 08 02 A6 */	mflr r0
+/* 80327D14 003239B4  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80327D18 003239B8  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80327D1C 003239BC  3F E0 80 54 */	lis r31, "s_RandState"@ha
+/* 80327D20 003239C0  3B FF 13 F0 */	addi r31, r31, "s_RandState"@l
+/* 80327D24 003239C4  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80327D28 003239C8  3B DF 00 08 */	addi r30, r31, 8
+/* 80327D2C 003239CC  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 80327D30 003239D0  3B BF 06 34 */	addi r29, r31, 0x634
+/* 80327D34 003239D4  80 0D A5 78 */	lwz r0, "s_RandLeft"-_SDA_BASE_(r13)
+/* 80327D38 003239D8  2C 00 FF FF */	cmpwi r0, -1
+/* 80327D3C 003239DC  40 80 00 0C */	bge lbl_80327D48
+/* 80327D40 003239E0  38 60 11 05 */	li r3, 0x1105
+/* 80327D44 003239E4  48 00 01 B1 */	bl "AptSeedRand__FUi"
+lbl_80327D48:
+/* 80327D48 003239E8  3C A0 80 54 */	lis r5, "s_RandState"@ha
+/* 80327D4C 003239EC  38 00 02 6F */	li r0, 0x26f
+/* 80327D50 003239F0  38 C5 13 F0 */	addi r6, r5, "s_RandState"@l
+/* 80327D54 003239F4  90 0D A5 78 */	stw r0, "s_RandLeft"-_SDA_BASE_(r13)
+/* 80327D58 003239F8  38 86 00 04 */	addi r4, r6, 4
+/* 80327D5C 003239FC  3C 60 99 09 */	lis r3, 0x9908B0DF@ha
+/* 80327D60 00323A00  80 05 13 F0 */	lwz r0, 0x13f0(r5)
+/* 80327D64 00323A04  38 A3 B0 DF */	addi r5, r3, 0x9908B0DF@l
+/* 80327D68 00323A08  90 8D C0 68 */	stw r4, "s_RandNext"-_SDA_BASE_(r13)
+/* 80327D6C 00323A0C  38 E0 00 E4 */	li r7, 0xe4
+/* 80327D70 00323A10  81 26 00 04 */	lwz r9, 4(r6)
+/* 80327D74 00323A14  48 00 00 40 */	b lbl_80327DB4
+lbl_80327D78:
+/* 80327D78 00323A18  55 26 07 FE */	clrlwi r6, r9, 0x1f
+/* 80327D7C 00323A1C  55 23 00 7E */	clrlwi r3, r9, 1
+/* 80327D80 00323A20  50 03 00 00 */	rlwimi r3, r0, 0, 0, 0
+/* 80327D84 00323A24  80 9D 00 00 */	lwz r4, 0(r29)
+/* 80327D88 00323A28  7C C6 00 D0 */	neg r6, r6
+/* 80327D8C 00323A2C  7D 20 4B 78 */	mr r0, r9
+/* 80327D90 00323A30  54 63 F8 7E */	srwi r3, r3, 1
+/* 80327D94 00323A34  3B BD 00 04 */	addi r29, r29, 4
+/* 80327D98 00323A38  7C A6 30 38 */	and r6, r5, r6
+/* 80327D9C 00323A3C  7C 83 1A 78 */	xor r3, r4, r3
+/* 80327DA0 00323A40  7C 63 32 78 */	xor r3, r3, r6
+/* 80327DA4 00323A44  90 7F 00 00 */	stw r3, 0(r31)
+/* 80327DA8 00323A48  3B FF 00 04 */	addi r31, r31, 4
+/* 80327DAC 00323A4C  81 3E 00 00 */	lwz r9, 0(r30)
+/* 80327DB0 00323A50  3B DE 00 04 */	addi r30, r30, 4
+lbl_80327DB4:
+/* 80327DB4 00323A54  34 E7 FF FF */	addic. r7, r7, -1
+/* 80327DB8 00323A58  40 82 FF C0 */	bne lbl_80327D78
+/* 80327DBC 00323A5C  3C E0 80 54 */	lis r7, "s_RandState"@ha
+/* 80327DC0 00323A60  3C 60 99 09 */	lis r3, 0x9908B0DF@ha
+/* 80327DC4 00323A64  38 E7 13 F0 */	addi r7, r7, "s_RandState"@l
+/* 80327DC8 00323A68  39 00 01 8D */	li r8, 0x18d
+/* 80327DCC 00323A6C  38 A3 B0 DF */	addi r5, r3, 0x9908B0DF@l
+/* 80327DD0 00323A70  48 00 00 40 */	b lbl_80327E10
+lbl_80327DD4:
+/* 80327DD4 00323A74  55 26 07 FE */	clrlwi r6, r9, 0x1f
+/* 80327DD8 00323A78  55 23 00 7E */	clrlwi r3, r9, 1
+/* 80327DDC 00323A7C  50 03 00 00 */	rlwimi r3, r0, 0, 0, 0
+/* 80327DE0 00323A80  80 87 00 00 */	lwz r4, 0(r7)
+/* 80327DE4 00323A84  7C C6 00 D0 */	neg r6, r6
+/* 80327DE8 00323A88  7D 20 4B 78 */	mr r0, r9
+/* 80327DEC 00323A8C  54 63 F8 7E */	srwi r3, r3, 1
+/* 80327DF0 00323A90  38 E7 00 04 */	addi r7, r7, 4
+/* 80327DF4 00323A94  7C A6 30 38 */	and r6, r5, r6
+/* 80327DF8 00323A98  7C 83 1A 78 */	xor r3, r4, r3
+/* 80327DFC 00323A9C  7C 63 32 78 */	xor r3, r3, r6
+/* 80327E00 00323AA0  90 7F 00 00 */	stw r3, 0(r31)
+/* 80327E04 00323AA4  3B FF 00 04 */	addi r31, r31, 4
+/* 80327E08 00323AA8  81 3E 00 00 */	lwz r9, 0(r30)
+/* 80327E0C 00323AAC  3B DE 00 04 */	addi r30, r30, 4
+lbl_80327E10:
+/* 80327E10 00323AB0  35 08 FF FF */	addic. r8, r8, -1
+/* 80327E14 00323AB4  40 82 FF C0 */	bne lbl_80327DD4
+/* 80327E18 00323AB8  3C 80 80 54 */	lis r4, "s_RandState"@ha
+/* 80327E1C 00323ABC  3C 60 9D 2C */	lis r3, 0x9D2C5680@ha
+/* 80327E20 00323AC0  80 C4 13 F0 */	lwz r6, "s_RandState"@l(r4)
+/* 80327E24 00323AC4  38 63 56 80 */	addi r3, r3, 0x9D2C5680@l
+/* 80327E28 00323AC8  81 07 00 00 */	lwz r8, 0(r7)
+/* 80327E2C 00323ACC  3C A0 99 09 */	lis r5, 0x9908B0DF@ha
+/* 80327E30 00323AD0  54 C4 AA FE */	srwi r4, r6, 0xb
+/* 80327E34 00323AD4  54 C7 00 7E */	clrlwi r7, r6, 1
+/* 80327E38 00323AD8  7C C9 22 78 */	xor r9, r6, r4
+/* 80327E3C 00323ADC  54 C6 07 FE */	clrlwi r6, r6, 0x1f
+/* 80327E40 00323AE0  55 24 38 30 */	slwi r4, r9, 7
+/* 80327E44 00323AE4  50 07 00 00 */	rlwimi r7, r0, 0, 0, 0
+/* 80327E48 00323AE8  7C 80 18 38 */	and r0, r4, r3
+/* 80327E4C 00323AEC  38 65 B0 DF */	addi r3, r5, 0x9908B0DF@l
+/* 80327E50 00323AF0  7D 29 02 78 */	xor r9, r9, r0
+/* 80327E54 00323AF4  7C 86 00 D0 */	neg r4, r6
+/* 80327E58 00323AF8  55 20 78 20 */	slwi r0, r9, 0xf
+/* 80327E5C 00323AFC  54 E6 F8 7E */	srwi r6, r7, 1
+/* 80327E60 00323B00  74 00 EF C6 */	andis. r0, r0, 0xefc6
+/* 80327E64 00323B04  7C 63 20 38 */	and r3, r3, r4
+/* 80327E68 00323B08  7D 05 32 78 */	xor r5, r8, r6
+/* 80327E6C 00323B0C  7C A3 1A 78 */	xor r3, r5, r3
+/* 80327E70 00323B10  7D 29 02 78 */	xor r9, r9, r0
+/* 80327E74 00323B14  90 7F 00 00 */	stw r3, 0(r31)
+/* 80327E78 00323B18  55 20 74 BE */	srwi r0, r9, 0x12
+/* 80327E7C 00323B1C  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80327E80 00323B20  7D 23 02 78 */	xor r3, r9, r0
+/* 80327E84 00323B24  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80327E88 00323B28  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80327E8C 00323B2C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80327E90 00323B30  7C 08 03 A6 */	mtlr r0
+/* 80327E94 00323B34  38 21 00 20 */	addi r1, r1, 0x20
+/* 80327E98 00323B38  4E 80 00 20 */	blr 
+
+.global "AptRand__Fv"
+"AptRand__Fv":
+/* 80327E9C 00323B3C  80 6D A5 78 */	lwz r3, "s_RandLeft"-_SDA_BASE_(r13)
+/* 80327EA0 00323B40  34 03 FF FF */	addic. r0, r3, -1
+/* 80327EA4 00323B44  90 0D A5 78 */	stw r0, "s_RandLeft"-_SDA_BASE_(r13)
+/* 80327EA8 00323B48  40 80 00 08 */	bge lbl_80327EB0
+/* 80327EAC 00323B4C  4B FF FE 60 */	b "_randReloadMersenneTwister__Fv"
+lbl_80327EB0:
+/* 80327EB0 00323B50  80 8D C0 68 */	lwz r4, "s_RandNext"-_SDA_BASE_(r13)
+/* 80327EB4 00323B54  3C 60 9D 2C */	lis r3, 0x9D2C5680@ha
+/* 80327EB8 00323B58  38 03 56 80 */	addi r0, r3, 0x9D2C5680@l
+/* 80327EBC 00323B5C  38 64 00 04 */	addi r3, r4, 4
+/* 80327EC0 00323B60  90 6D C0 68 */	stw r3, "s_RandNext"-_SDA_BASE_(r13)
+/* 80327EC4 00323B64  80 84 00 00 */	lwz r4, 0(r4)
+/* 80327EC8 00323B68  54 83 AA FE */	srwi r3, r4, 0xb
+/* 80327ECC 00323B6C  7C 84 1A 78 */	xor r4, r4, r3
+/* 80327ED0 00323B70  54 83 38 30 */	slwi r3, r4, 7
+/* 80327ED4 00323B74  7C 60 00 38 */	and r0, r3, r0
+/* 80327ED8 00323B78  7C 84 02 78 */	xor r4, r4, r0
+/* 80327EDC 00323B7C  54 80 78 20 */	slwi r0, r4, 0xf
+/* 80327EE0 00323B80  74 00 EF C6 */	andis. r0, r0, 0xefc6
+/* 80327EE4 00323B84  7C 84 02 78 */	xor r4, r4, r0
+/* 80327EE8 00323B88  54 80 74 BE */	srwi r0, r4, 0x12
+/* 80327EEC 00323B8C  7C 83 02 78 */	xor r3, r4, r0
+/* 80327EF0 00323B90  4E 80 00 20 */	blr 
+
+.global "AptSeedRand__FUi"
+"AptSeedRand__FUi":
+/* 80327EF4 00323B94  3C A0 80 54 */	lis r5, "s_RandState"@ha
+/* 80327EF8 00323B98  60 64 00 01 */	ori r4, r3, 1
+/* 80327EFC 00323B9C  38 A5 13 F0 */	addi r5, r5, "s_RandState"@l
+/* 80327F00 00323BA0  38 00 00 00 */	li r0, 0
+/* 80327F04 00323BA4  90 85 00 00 */	stw r4, 0(r5)
+/* 80327F08 00323BA8  3C 60 00 01 */	lis r3, 0x00010DCD@ha
+/* 80327F0C 00323BAC  38 A5 00 04 */	addi r5, r5, 4
+/* 80327F10 00323BB0  90 0D A5 78 */	stw r0, "s_RandLeft"-_SDA_BASE_(r13)
+/* 80327F14 00323BB4  38 03 0D CD */	addi r0, r3, 0x00010DCD@l
+/* 80327F18 00323BB8  38 60 02 70 */	li r3, 0x270
+/* 80327F1C 00323BBC  48 00 00 10 */	b lbl_80327F2C
+lbl_80327F20:
+/* 80327F20 00323BC0  7C 84 01 D6 */	mullw r4, r4, r0
+/* 80327F24 00323BC4  90 85 00 00 */	stw r4, 0(r5)
+/* 80327F28 00323BC8  38 A5 00 04 */	addi r5, r5, 4
+lbl_80327F2C:
+/* 80327F2C 00323BCC  34 63 FF FF */	addic. r3, r3, -1
+/* 80327F30 00323BD0  40 82 FF F0 */	bne lbl_80327F20
+/* 80327F34 00323BD4  4E 80 00 20 */	blr 
+
+.section .bss, "wa"  # 0x80488180 - 0x805DC448
+.global "s_RandState"
+"s_RandState":
+	.skip 0x9C8
+
+.section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
+.global "s_RandLeft"
+"s_RandLeft":
+	.incbin "baserom.dol", 0x4867D8, 0x8
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "s_RandNext"
+"s_RandNext":
+	.skip 0x8

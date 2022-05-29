@@ -1,7 +1,7 @@
 .include "macros.inc"
 
 
-.section .sbss, "wa"
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_pInstance__9SyncAudio"
 "s_pInstance__9SyncAudio":
 	.skip 0x8

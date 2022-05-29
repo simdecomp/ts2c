@@ -1,944 +1,472 @@
-# Found file "syncaudio.cpp"
-# File "asm/code/syncaudio.cpp.s" starts at address 0x80006940
-# Found file "bomb.cpp"
-# File "asm/code/bomb.cpp.s" starts at address 0x80007D60
-# Found file "objectdatafactory.cpp"
-# File "asm/code/objectdatafactory.cpp.s" starts at address 0x80007D60
-# Found file "game/animation/unity.cpp"
-# File "asm/code/game/animation/unity.cpp.s" starts at address 0x80007DDC
-# Found file "game/cas/unity.cpp"
-# File "asm/code/game/cas/unity.cpp.s" starts at address 0x800294E8
-# Found file "game/interactor/unity.cpp"
-# File "asm/code/game/interactor/unity.cpp.s" starts at address 0x8004DE60
-# Found file "game/level/unity.cpp"
-# File "asm/code/game/level/unity.cpp.s" starts at address 0x800824EC
-# Found file "game/misc/unity.cpp"
-# File "asm/code/game/misc/unity.cpp.s" starts at address 0x8009B638
-# Found file "game/simulator/core2/unity.cpp"
-# File "asm/code/game/simulator/core2/unity.cpp.s" starts at address 0x800A0C90
-# Found file "game/simulator/core/unity.cpp"
-# File "asm/code/game/simulator/core/unity.cpp.s" starts at address 0x800EE9B4
-# Found file "game/simulator/objectdata/unity.cpp"
-# File "asm/code/game/simulator/objectdata/unity.cpp.s" starts at address 0x8015D494
-# Found file "game/simulator/utility/unity.cpp"
-# File "asm/code/game/simulator/utility/unity.cpp.s" starts at address 0x80164114
-# Found file "game/statemachine/unity.cpp"
-# File "asm/code/game/statemachine/unity.cpp.s" starts at address 0x8016A144
-# Found file "game/ui/core/unity.cpp"
-# File "asm/code/game/ui/core/unity.cpp.s" starts at address 0x8017B228
-# Found file "game/ui/targets/cas/unity.cpp"
-# File "asm/code/game/ui/targets/cas/unity.cpp.s" starts at address 0x80187D04
-# Found file "game/ui/targets/s2c/unity.cpp"
-# File "asm/code/game/ui/targets/s2c/unity.cpp.s" starts at address 0x8019A37C
-# Found file "game/ui/targets/tsc5/unity.cpp"
-# File "asm/code/game/ui/targets/tsc5/unity.cpp.s" starts at address 0x801C16F0
-# Found file "game/ui/targets/tsc6/unity.cpp"
-# File "asm/code/game/ui/targets/tsc6/unity.cpp.s" starts at address 0x801E5080
-# Found file "game/unity.cpp"
-# File "asm/code/game/unity.cpp.s" starts at address 0x801F5914
-# Found file "game/wii/unity.cpp"
-# File "asm/code/game/wii/unity.cpp.s" starts at address 0x80244F5C
-# Found file "weather/unity.cpp"
-# File "asm/code/weather/unity.cpp.s" starts at address 0x80246CD8
-# Found file "base/core/engine/dependencies/unity.cpp"
-# File "asm/code/base/core/engine/dependencies/unity.cpp.s" starts at address 0x8024C454
-# Found file "base/core/unity.cpp"
-# File "asm/code/base/core/unity.cpp.s" starts at address 0x8025B03C
-# Found file "base/ngc/unity.cpp"
-# File "asm/code/base/ngc/unity.cpp.s" starts at address 0x80277FD0
-# Found file "e/cheatmenu.cpp"
-# File "asm/code/e/cheatmenu.cpp.s" starts at address 0x802798CC
-# Found file "engine/core/unity.cpp"
-# File "asm/code/engine/core/unity.cpp.s" starts at address 0x802799E0
-# Found file "engine/effects2/unity.cpp"
-# File "asm/code/engine/effects2/unity.cpp.s" starts at address 0x8027BDDC
-# Found file "engine/effects/unity.cpp"
-# File "asm/code/engine/effects/unity.cpp.s" starts at address 0x8027FF34
-# Found file "engine/graphics/unity.cpp"
-# File "asm/code/engine/graphics/unity.cpp.s" starts at address 0x80281E6C
-# Found file "engine/manager/unity.cpp"
-# File "asm/code/engine/manager/unity.cpp.s" starts at address 0x802A5834
-# Found file "engine/ngc/unity.cpp"
-# File "asm/code/engine/ngc/unity.cpp.s" starts at address 0x802AD2BC
-# Found file "engine/resource/unity.cpp"
-# File "asm/code/engine/resource/unity.cpp.s" starts at address 0x802D09A8
-# Found file "engine/utility/unity.cpp"
-# File "asm/code/engine/utility/unity.cpp.s" starts at address 0x802EFCC4
-# Found file "fixed/pool.cpp"
-# File "asm/code/fixed/pool.cpp.s" starts at address 0x802FA694
-# Found file "hashtable.cpp"
-# File "asm/code/hashtable.cpp.s" starts at address 0x802FA6FC
-# Found file "red/black/tree.cpp"
-# File "asm/code/red/black/tree.cpp.s" starts at address 0x802FA960
-# Found file "string.cpp"
-# File "asm/code/string.cpp.s" starts at address 0x802FB254
-# Found file "Apt.cpp"
-# File "asm/code/Apt.cpp.s" starts at address 0x802FB254
-# Found file "AptActionInterpreter.cpp"
-# File "asm/code/AptActionInterpreter.cpp.s" starts at address 0x802FEA80
-# Found file "AptAnimation.cpp"
-# File "asm/code/AptAnimation.cpp.s" starts at address 0x8030B910
-# Found file "AptArray.cpp"
-# File "asm/code/AptArray.cpp.s" starts at address 0x8030E9AC
-# Found file "AptCharacter.cpp"
-# File "asm/code/AptCharacter.cpp.s" starts at address 0x803107D4
-# Found file "AptCharacterInstButton.cpp"
-# File "asm/code/AptCharacterInstButton.cpp.s" starts at address 0x80315C6C
-# Found file "AptCIH.cpp"
-# File "asm/code/AptCIH.cpp.s" starts at address 0x80315CF4
-# Found file "AptDate.cpp"
-# File "asm/code/AptDate.cpp.s" starts at address 0x80318A74
-# Found file "AptDisplayList.cpp"
-# File "asm/code/AptDisplayList.cpp.s" starts at address 0x8031BDC0
-# Found file "AptGC.cpp"
-# File "asm/code/AptGC.cpp.s" starts at address 0x8031E9F4
-# Found file "AptInput.cpp"
-# File "asm/code/AptInput.cpp.s" starts at address 0x8031ED10
-# Found file "AptLoad.cpp"
-# File "asm/code/AptLoad.cpp.s" starts at address 0x803200BC
-# Found file "AptMath.cpp"
-# File "asm/code/AptMath.cpp.s" starts at address 0x80322BE8
-# Found file "AptMiscObjects.cpp"
-# File "asm/code/AptMiscObjects.cpp.s" starts at address 0x80322D78
-# Found file "AptMovie.cpp"
-# File "asm/code/AptMovie.cpp.s" starts at address 0x803260B8
-# Found file "AptNativeHash.cpp"
-# File "asm/code/AptNativeHash.cpp.s" starts at address 0x80326BF4
-# Found file "AptRand.cpp"
-# File "asm/code/AptRand.cpp.s" starts at address 0x80327D0C
-# Found file "AptRenderingContext.cpp"
-# File "asm/code/AptRenderingContext.cpp.s" starts at address 0x80327F38
-# Found file "AptSound.cpp"
-# File "asm/code/AptSound.cpp.s" starts at address 0x80328408
-# Found file "AptSpriteMembers.cpp"
-# File "asm/code/AptSpriteMembers.cpp.s" starts at address 0x80328A4C
-# Found file "AptStageMembers.cpp"
-# File "asm/code/AptStageMembers.cpp.s" starts at address 0x80328B8C
-# Found file "AptString.cpp"
-# File "asm/code/AptString.cpp.s" starts at address 0x80328CE4
-# Found file "AptTextFormat.cpp"
-# File "asm/code/AptTextFormat.cpp.s" starts at address 0x8032A530
-# Found file "AptValue.cpp"
-# File "asm/code/AptValue.cpp.s" starts at address 0x8032AD3C
-# Found file "AptValueFactory.cpp"
-# File "asm/code/AptValueFactory.cpp.s" starts at address 0x8032D9E0
-# Found file "AptValueGCAllocator.cpp"
-# File "asm/code/AptValueGCAllocator.cpp.s" starts at address 0x8032D9E4
-# Found file "AptXmlMembers.cpp"
-# File "asm/code/AptXmlMembers.cpp.s" starts at address 0x8032DDBC
-# Found file "DogmaAllocator.cpp"
-# File "asm/code/DogmaAllocator.cpp.s" starts at address 0x8032DEE0
-# Found file "AptGlobalExtensionObject.cpp"
-# File "asm/code/AptGlobalExtensionObject.cpp.s" starts at address 0x8032E4E8
-# Found file "AptGlobalObject.cpp"
-# File "asm/code/AptGlobalObject.cpp.s" starts at address 0x8032E4E8
-# Found file "AptObject.cpp"
-# File "asm/code/AptObject.cpp.s" starts at address 0x8032E61C
-# Found file "AptScriptColour.cpp"
-# File "asm/code/AptScriptColour.cpp.s" starts at address 0x8032EA94
-# Found file "AptScriptFunction.cpp"
-# File "asm/code/AptScriptFunction.cpp.s" starts at address 0x8032F6CC
-# Found file "AptXml.cpp"
-# File "asm/code/AptXml.cpp.s" starts at address 0x8033068C
-# Found file "AptXmlAttributes.cpp"
-# File "asm/code/AptXmlAttributes.cpp.s" starts at address 0x80330F50
-# Found file "AptXmlNode.cpp"
-# File "asm/code/AptXmlNode.cpp.s" starts at address 0x803310FC
-# Found file "AptBoolean.cpp"
-# File "asm/code/AptBoolean.cpp.s" starts at address 0x80331DE8
-# Found file "AptFloat.cpp"
-# File "asm/code/AptFloat.cpp.s" starts at address 0x80331EE0
-# Found file "AptInteger.cpp"
-# File "asm/code/AptInteger.cpp.s" starts at address 0x80331FD8
-# Found file "AptValueVector.cpp"
-# File "asm/code/AptValueVector.cpp.s" starts at address 0x803320D0
-# Found file "EAString.cpp"
-# File "asm/code/EAString.cpp.s" starts at address 0x80332228
-# Found file "StringPool.cpp"
-# File "asm/code/StringPool.cpp.s" starts at address 0x80333A88
-# Found file "ai.c"
-# File "asm/code/ai.c.s" starts at address 0x803358B8
-# Found file "arc.c"
-# File "asm/code/arc.c.s" starts at address 0x80335E20
-# Found file "AX.c"
-# File "asm/code/AX.c.s" starts at address 0x8033632C
-# Found file "AXAlloc.c"
-# File "asm/code/AXAlloc.c.s" starts at address 0x803363D0
-# Found file "AXAux.c"
-# File "asm/code/AXAux.c.s" starts at address 0x80336938
-# Found file "AXCL.c"
-# File "asm/code/AXCL.c.s" starts at address 0x80337164
-# Found file "AXOut.c"
-# File "asm/code/AXOut.c.s" starts at address 0x80337BD4
-# Found file "AXSPB.c"
-# File "asm/code/AXSPB.c.s" starts at address 0x80338420
-# Found file "AXVPB.c"
-# File "asm/code/AXVPB.c.s" starts at address 0x80338844
-# Found file "AXProf.c"
-# File "asm/code/AXProf.c.s" starts at address 0x80339E74
-# Found file "AXComp.c"
-# File "asm/code/AXComp.c.s" starts at address 0x8045CAA0
-# Found file "DSPCode.c"
-# File "asm/code/DSPCode.c.s" starts at address 0x8045DA60
-# Found file "AXFXReverbHi.c"
-# File "asm/code/AXFXReverbHi.c.s" starts at address 0x80339EB4
-# Found file "AXFXReverbHiExp.c"
-# File "asm/code/AXFXReverbHiExp.c.s" starts at address 0x80339F40
-# Found file "AXFXHooks.c"
-# File "asm/code/AXFXHooks.c.s" starts at address 0x8033AD18
-# Found file "PPCArch.c"
-# File "asm/code/PPCArch.c.s" starts at address 0x8033AD50
-# Found file "gki/buffer.c"
-# File "asm/code/gki/buffer.c.s" starts at address 0x8033AEB4
-# Found file "gki/time.c"
-# File "asm/code/gki/time.c.s" starts at address 0x8033C2F8
-# Found file "gki/ppc.c"
-# File "asm/code/gki/ppc.c.s" starts at address 0x8033C850
-# Found file "hcisu/h2.c"
-# File "asm/code/hcisu/h2.c.s" starts at address 0x8033CAE0
-# Found file "uusb/ppc.c"
-# File "asm/code/uusb/ppc.c.s" starts at address 0x8033D17C
-# Found file "bta/dm/cfg.c"
-# File "asm/code/bta/dm/cfg.c.s" starts at address 0x8041C788
-# Found file "bta/hh/cfg.c"
-# File "asm/code/bta/hh/cfg.c.s" starts at address 0x8041C818
-# Found file "bta/sys/cfg.c"
-# File "asm/code/bta/sys/cfg.c.s" starts at address 0x805D72A0
-# Found file "bte/hcisu.c"
-# File "asm/code/bte/hcisu.c.s" starts at address 0x8033E658
-# Found file "bte/init.c"
-# File "asm/code/bte/init.c.s" starts at address 0x8033E710
-# Found file "bte/logmsg.c"
-# File "asm/code/bte/logmsg.c.s" starts at address 0x8033E73C
-# Found file "bte/main.c"
-# File "asm/code/bte/main.c.s" starts at address 0x8033E8A0
-# Found file "btu/task1.c"
-# File "asm/code/btu/task1.c.s" starts at address 0x8033E9F8
-# Found file "bd.c"
-# File "asm/code/bd.c.s" starts at address 0x8033EE48
-# Found file "bta/sys/conn.c"
-# File "asm/code/bta/sys/conn.c.s" starts at address 0x8033EF1C
-# Found file "bta/sys/main.c"
-# File "asm/code/bta/sys/main.c.s" starts at address 0x8033F170
-# Found file "ptim.c"
-# File "asm/code/ptim.c.s" starts at address 0x8033F3B4
-# Found file "utl.c"
-# File "asm/code/utl.c.s" starts at address 0x8033F594
-# Found file "bta/dm/act.c"
-# File "asm/code/bta/dm/act.c.s" starts at address 0x8033F5D8
-# Found file "bta/dm/api.c"
-# File "asm/code/bta/dm/api.c.s" starts at address 0x80341914
-# Found file "bta/dm/main.c"
-# File "asm/code/bta/dm/main.c.s" starts at address 0x80341D80
-# Found file "bta/dm/pm.c"
-# File "asm/code/bta/dm/pm.c.s" starts at address 0x80341EE0
-# Found file "bta/hh/act.c"
-# File "asm/code/bta/hh/act.c.s" starts at address 0x803428FC
-# Found file "bta/hh/api.c"
-# File "asm/code/bta/hh/api.c.s" starts at address 0x80344044
-# Found file "bta/hh/main.c"
-# File "asm/code/bta/hh/main.c.s" starts at address 0x80344414
-# Found file "bta/hh/utils.c"
-# File "asm/code/bta/hh/utils.c.s" starts at address 0x80344968
-# Found file "btm/acl.c"
-# File "asm/code/btm/acl.c.s" starts at address 0x80344D14
-# Found file "btm/dev.c"
-# File "asm/code/btm/dev.c.s" starts at address 0x80346A58
-# Found file "btm/devctl.c"
-# File "asm/code/btm/devctl.c.s" starts at address 0x80347124
-# Found file "btm/discovery.c"
-# File "asm/code/btm/discovery.c.s" starts at address 0x80348AAC
-# Found file "btm/inq.c"
-# File "asm/code/btm/inq.c.s" starts at address 0x80348BE0
-# Found file "btm/main.c"
-# File "asm/code/btm/main.c.s" starts at address 0x8034A678
-# Found file "btm/pm.c"
-# File "asm/code/btm/pm.c.s" starts at address 0x8034A6D4
-# Found file "btm/sco.c"
-# File "asm/code/btm/sco.c.s" starts at address 0x8034B368
-# Found file "btm/sec.c"
-# File "asm/code/btm/sec.c.s" starts at address 0x8034C1A0
-# Found file "btu/hcif.c"
-# File "asm/code/btu/hcif.c.s" starts at address 0x8034F164
-# Found file "btu/init.c"
-# File "asm/code/btu/init.c.s" starts at address 0x803503C0
-# Found file "wbt/ext.c"
-# File "asm/code/wbt/ext.c.s" starts at address 0x80350438
-# Found file "gap/api.c"
-# File "asm/code/gap/api.c.s" starts at address 0x80350518
-# Found file "gap/conn.c"
-# File "asm/code/gap/conn.c.s" starts at address 0x80350578
-# Found file "gap/utils.c"
-# File "asm/code/gap/utils.c.s" starts at address 0x803510B4
-# Found file "hcicmds.c"
-# File "asm/code/hcicmds.c.s" starts at address 0x803516D0
-# Found file "hidd/api.c"
-# File "asm/code/hidd/api.c.s" starts at address 0x80353DEC
-# Found file "hidd/conn.c"
-# File "asm/code/hidd/conn.c.s" starts at address 0x80353E54
-# Found file "hidd/mgmt.c"
-# File "asm/code/hidd/mgmt.c.s" starts at address 0x80353F14
-# Found file "hidd/pm.c"
-# File "asm/code/hidd/pm.c.s" starts at address 0x80353FDC
-# Found file "hidh/api.c"
-# File "asm/code/hidh/api.c.s" starts at address 0x80354358
-# Found file "hidh/conn.c"
-# File "asm/code/hidh/conn.c.s" starts at address 0x803550D8
-# Found file "l2c/api.c"
-# File "asm/code/l2c/api.c.s" starts at address 0x80357118
-# Found file "l2c/csm.c"
-# File "asm/code/l2c/csm.c.s" starts at address 0x80357CE4
-# Found file "l2c/link.c"
-# File "asm/code/l2c/link.c.s" starts at address 0x803591C0
-# Found file "l2c/main.c"
-# File "asm/code/l2c/main.c.s" starts at address 0x8035A34C
-# Found file "l2c/utils.c"
-# File "asm/code/l2c/utils.c.s" starts at address 0x8035B37C
-# Found file "port/api.c"
-# File "asm/code/port/api.c.s" starts at address 0x8035D240
-# Found file "port/rfc.c"
-# File "asm/code/port/rfc.c.s" starts at address 0x8035D290
-# Found file "port/utils.c"
-# File "asm/code/port/utils.c.s" starts at address 0x8035E68C
-# Found file "rfc/l2cap/if.c"
-# File "asm/code/rfc/l2cap/if.c.s" starts at address 0x8035EC64
-# Found file "rfc/mx/fsm.c"
-# File "asm/code/rfc/mx/fsm.c.s" starts at address 0x8035F598
-# Found file "rfc/port/fsm.c"
-# File "asm/code/rfc/port/fsm.c.s" starts at address 0x803601DC
-# Found file "rfc/port/if.c"
-# File "asm/code/rfc/port/if.c.s" starts at address 0x8036137C
-# Found file "rfc/ts/frames.c"
-# File "asm/code/rfc/ts/frames.c.s" starts at address 0x803618A8
-# Found file "rfc/utils.c"
-# File "asm/code/rfc/utils.c.s" starts at address 0x80362EF0
-# Found file "sdp/api.c"
-# File "asm/code/sdp/api.c.s" starts at address 0x803636D0
-# Found file "sdp/db.c"
-# File "asm/code/sdp/db.c.s" starts at address 0x80364538
-# Found file "sdp/discovery.c"
-# File "asm/code/sdp/discovery.c.s" starts at address 0x80365204
-# Found file "sdp/main.c"
-# File "asm/code/sdp/main.c.s" starts at address 0x8036647C
-# Found file "sdp/server.c"
-# File "asm/code/sdp/server.c.s" starts at address 0x80366FE8
-# Found file "sdp/utils.c"
-# File "asm/code/sdp/utils.c.s" starts at address 0x80367CF8
-# Found file "db.c"
-# File "asm/code/db.c.s" starts at address 0x80368D38
-# Found file "dsp.c"
-# File "asm/code/dsp.c.s" starts at address 0x80368E20
-# Found file "dsp/debug.c"
-# File "asm/code/dsp/debug.c.s" starts at address 0x8036909C
-# Found file "dsp/task.c"
-# File "asm/code/dsp/task.c.s" starts at address 0x803690EC
-# Found file "dvdfs.c"
-# File "asm/code/dvdfs.c.s" starts at address 0x80369980
-# Found file "dvd.c"
-# File "asm/code/dvd.c.s" starts at address 0x8036A3C8
-# Found file "dvdqueue.c"
-# File "asm/code/dvdqueue.c.s" starts at address 0x8036E8B0
-# Found file "dvderror.c"
-# File "asm/code/dvderror.c.s" starts at address 0x8036EB08
-# Found file "dvdidutils.c"
-# File "asm/code/dvdidutils.c.s" starts at address 0x8036EE10
-# Found file "dvdFatal.c"
-# File "asm/code/dvdFatal.c.s" starts at address 0x8036EF00
-# Found file "dvd/broadway.c"
-# File "asm/code/dvd/broadway.c.s" starts at address 0x8036F03C
-# Found file "euart.c"
-# File "asm/code/euart.c.s" starts at address 0x80370A28
-# Found file "EXIBios.c"
-# File "asm/code/EXIBios.c.s" starts at address 0x80370D98
-# Found file "EXIUart.c"
-# File "asm/code/EXIUart.c.s" starts at address 0x8037262C
-# Found file "EXICommon.c"
-# File "asm/code/EXICommon.c.s" starts at address 0x80372960
-# Found file "fs.c"
-# File "asm/code/fs.c.s" starts at address 0x80372AEC
-# Found file "GXInit.c"
-# File "asm/code/GXInit.c.s" starts at address 0x80373E04
-# Found file "GXFifo.c"
-# File "asm/code/GXFifo.c.s" starts at address 0x80374FCC
-# Found file "GXAttr.c"
-# File "asm/code/GXAttr.c.s" starts at address 0x80375C2C
-# Found file "GXMisc.c"
-# File "asm/code/GXMisc.c.s" starts at address 0x80376E50
-# Found file "GXGeometry.c"
-# File "asm/code/GXGeometry.c.s" starts at address 0x80377680
-# Found file "GXFrameBuf.c"
-# File "asm/code/GXFrameBuf.c.s" starts at address 0x80377C1C
-# Found file "GXLight.c"
-# File "asm/code/GXLight.c.s" starts at address 0x80378794
-# Found file "GXTexture.c"
-# File "asm/code/GXTexture.c.s" starts at address 0x80378D00
-# Found file "GXBump.c"
-# File "asm/code/GXBump.c.s" starts at address 0x80379BC0
-# Found file "GXTev.c"
-# File "asm/code/GXTev.c.s" starts at address 0x8037A00C
-# Found file "GXPixel.c"
-# File "asm/code/GXPixel.c.s" starts at address 0x8037A68C
-# Found file "GXDisplayList.c"
-# File "asm/code/GXDisplayList.c.s" starts at address 0x8037AC90
-# Found file "GXTransform.c"
-# File "asm/code/GXTransform.c.s" starts at address 0x8037AD04
-# Found file "GXPerf.c"
-# File "asm/code/GXPerf.c.s" starts at address 0x8037B1F4
-# Found file "HBMAnmController.cpp"
-# File "asm/code/HBMAnmController.cpp.s" starts at address 0x8037BA30
-# Found file "HBMBase.cpp"
-# File "asm/code/HBMBase.cpp.s" starts at address 0x8037BED4
-# Found file "HBMController.cpp"
-# File "asm/code/HBMController.cpp.s" starts at address 0x80382D70
-# Found file "HBMFrameController.cpp"
-# File "asm/code/HBMFrameController.cpp.s" starts at address 0x803839F0
-# Found file "HBMGUIManager.cpp"
-# File "asm/code/HBMGUIManager.cpp.s" starts at address 0x80383BA8
-# Found file "HBMRemoteSpk.cpp"
-# File "asm/code/HBMRemoteSpk.cpp.s" starts at address 0x80385224
-# Found file "db/assert.cpp"
-# File "asm/code/db/assert.cpp.s" starts at address 0x80385B08
-# Found file "db/console.cpp"
-# File "asm/code/db/console.cpp.s" starts at address 0x803861F0
-# Found file "db/DbgPrintBase.cpp"
-# File "asm/code/db/DbgPrintBase.cpp.s" starts at address 0x80386B2C
-# Found file "db/directPrint.cpp"
-# File "asm/code/db/directPrint.cpp.s" starts at address 0x80386BE8
-# Found file "db/mapFile.cpp"
-# File "asm/code/db/mapFile.cpp.s" starts at address 0x803878A0
-# Found file "lyt/animation.cpp"
-# File "asm/code/lyt/animation.cpp.s" starts at address 0x80388164
-# Found file "lyt/arcResourceAccessor.cpp"
-# File "asm/code/lyt/arcResourceAccessor.cpp.s" starts at address 0x80389A10
-# Found file "lyt/bounding.cpp"
-# File "asm/code/lyt/bounding.cpp.s" starts at address 0x8038A550
-# Found file "lyt/common.cpp"
-# File "asm/code/lyt/common.cpp.s" starts at address 0x8038A724
-# Found file "lyt/drawInfo.cpp"
-# File "asm/code/lyt/drawInfo.cpp.s" starts at address 0x8038B350
-# Found file "lyt/group.cpp"
-# File "asm/code/lyt/group.cpp.s" starts at address 0x8038B43C
-# Found file "lyt/layout.cpp"
-# File "asm/code/lyt/layout.cpp.s" starts at address 0x8038BED0
-# Found file "lyt/material.cpp"
-# File "asm/code/lyt/material.cpp.s" starts at address 0x8038D1F8
-# Found file "lyt/pane.cpp"
-# File "asm/code/lyt/pane.cpp.s" starts at address 0x803917B8
-# Found file "lyt/picture.cpp"
-# File "asm/code/lyt/picture.cpp.s" starts at address 0x80393084
-# Found file "lyt/resourceAccessor.cpp"
-# File "asm/code/lyt/resourceAccessor.cpp.s" starts at address 0x803938C8
-# Found file "lyt/textBox.cpp"
-# File "asm/code/lyt/textBox.cpp.s" starts at address 0x80393920
-# Found file "lyt/window.cpp"
-# File "asm/code/lyt/window.cpp.s" starts at address 0x80396990
-# Found file "math/arithmetic.cpp"
-# File "asm/code/math/arithmetic.cpp.s" starts at address 0x80398BFC
-# Found file "math/equation.cpp"
-# File "asm/code/math/equation.cpp.s" starts at address 0x80398CDC
-# Found file "math/triangular.cpp"
-# File "asm/code/math/triangular.cpp.s" starts at address 0x80398CE4
-# Found file "snd/AnimSound.cpp"
-# File "asm/code/snd/AnimSound.cpp.s" starts at address 0x80398FEC
-# Found file "snd/AxManager.cpp"
-# File "asm/code/snd/AxManager.cpp.s" starts at address 0x80399068
-# Found file "snd/AxVoice.cpp"
-# File "asm/code/snd/AxVoice.cpp.s" starts at address 0x8039B040
-# Found file "snd/Bank.cpp"
-# File "asm/code/snd/Bank.cpp.s" starts at address 0x8039E904
-# Found file "snd/BankFile.cpp"
-# File "asm/code/snd/BankFile.cpp.s" starts at address 0x8039EB98
-# Found file "snd/BasicSound.cpp"
-# File "asm/code/snd/BasicSound.cpp.s" starts at address 0x8039F388
-# Found file "snd/Channel.cpp"
-# File "asm/code/snd/Channel.cpp.s" starts at address 0x803A0458
-# Found file "snd/DisposeCallbackManager.cpp"
-# File "asm/code/snd/DisposeCallbackManager.cpp.s" starts at address 0x803A1B08
-# Found file "snd/DvdSoundArchive.cpp"
-# File "asm/code/snd/DvdSoundArchive.cpp.s" starts at address 0x803A223C
-# Found file "snd/EnvGenerator.cpp"
-# File "asm/code/snd/EnvGenerator.cpp.s" starts at address 0x803A2D30
-# Found file "snd/ExternalHeap.cpp"
-# File "asm/code/snd/ExternalHeap.cpp.s" starts at address 0x803A32E4
-# Found file "snd/ExternalSoundPlayer.cpp"
-# File "asm/code/snd/ExternalSoundPlayer.cpp.s" starts at address 0x803A3324
-# Found file "snd/FrameHeap.cpp"
-# File "asm/code/snd/FrameHeap.cpp.s" starts at address 0x803A3818
-# Found file "snd/InstancePool.cpp"
-# File "asm/code/snd/InstancePool.cpp.s" starts at address 0x803A45CC
-# Found file "snd/Lfo.cpp"
-# File "asm/code/snd/Lfo.cpp.s" starts at address 0x803A4830
-# Found file "snd/MemorySoundArchive.cpp"
-# File "asm/code/snd/MemorySoundArchive.cpp.s" starts at address 0x803A4AB4
-# Found file "snd/MidiSeqPlayer.cpp"
-# File "asm/code/snd/MidiSeqPlayer.cpp.s" starts at address 0x803A4BC8
-# Found file "snd/MidiSeqTrack.cpp"
-# File "asm/code/snd/MidiSeqTrack.cpp.s" starts at address 0x803A4C6C
-# Found file "snd/MidiSeqTrackAllocator.cpp"
-# File "asm/code/snd/MidiSeqTrackAllocator.cpp.s" starts at address 0x803A4D30
-# Found file "snd/MmlParser.cpp"
-# File "asm/code/snd/MmlParser.cpp.s" starts at address 0x803A4D84
-# Found file "snd/MmlSeqTrack.cpp"
-# File "asm/code/snd/MmlSeqTrack.cpp.s" starts at address 0x803A5F70
-# Found file "snd/MmlSeqTrackAllocator.cpp"
-# File "asm/code/snd/MmlSeqTrackAllocator.cpp.s" starts at address 0x803A6030
-# Found file "snd/PlayerHeap.cpp"
-# File "asm/code/snd/PlayerHeap.cpp.s" starts at address 0x803A6220
-# Found file "snd/RemoteSpeaker.cpp"
-# File "asm/code/snd/RemoteSpeaker.cpp.s" starts at address 0x803A62A8
-# Found file "snd/RemoteSpeakerManager.cpp"
-# File "asm/code/snd/RemoteSpeakerManager.cpp.s" starts at address 0x803A6810
-# Found file "snd/SeqFile.cpp"
-# File "asm/code/snd/SeqFile.cpp.s" starts at address 0x803A6A88
-# Found file "snd/SeqPlayer.cpp"
-# File "asm/code/snd/SeqPlayer.cpp.s" starts at address 0x803A6CB0
-# Found file "snd/SeqSound.cpp"
-# File "asm/code/snd/SeqSound.cpp.s" starts at address 0x803A866C
-# Found file "snd/SeqSoundHandle.cpp"
-# File "asm/code/snd/SeqSoundHandle.cpp.s" starts at address 0x803A900C
-# Found file "snd/SeqTrack.cpp"
-# File "asm/code/snd/SeqTrack.cpp.s" starts at address 0x803A9080
-# Found file "snd/Sound3DActor.cpp"
-# File "asm/code/snd/Sound3DActor.cpp.s" starts at address 0x803AACAC
-# Found file "snd/SoundArchive.cpp"
-# File "asm/code/snd/SoundArchive.cpp.s" starts at address 0x803AACFC
-# Found file "snd/SoundArchiveFile.cpp"
-# File "asm/code/snd/SoundArchiveFile.cpp.s" starts at address 0x803AB2A0
-# Found file "snd/SoundArchiveLoader.cpp"
-# File "asm/code/snd/SoundArchiveLoader.cpp.s" starts at address 0x803AC9B0
-# Found file "snd/SoundArchivePlayer.cpp"
-# File "asm/code/snd/SoundArchivePlayer.cpp.s" starts at address 0x803AD3D4
-# Found file "snd/SoundHandle.cpp"
-# File "asm/code/snd/SoundHandle.cpp.s" starts at address 0x803B1A30
-# Found file "snd/SoundHeap.cpp"
-# File "asm/code/snd/SoundHeap.cpp.s" starts at address 0x803B1B24
-# Found file "snd/SoundPlayer.cpp"
-# File "asm/code/snd/SoundPlayer.cpp.s" starts at address 0x803B1D2C
-# Found file "snd/SoundStartable.cpp"
-# File "asm/code/snd/SoundStartable.cpp.s" starts at address 0x803B3E14
-# Found file "snd/SoundSystem.cpp"
-# File "asm/code/snd/SoundSystem.cpp.s" starts at address 0x803B3EB4
-# Found file "snd/SoundThread.cpp"
-# File "asm/code/snd/SoundThread.cpp.s" starts at address 0x803B4000
-# Found file "snd/StrmChannel.cpp"
-# File "asm/code/snd/StrmChannel.cpp.s" starts at address 0x803B478C
-# Found file "snd/StrmFile.cpp"
-# File "asm/code/snd/StrmFile.cpp.s" starts at address 0x803B4A64
-# Found file "snd/StrmPlayer.cpp"
-# File "asm/code/snd/StrmPlayer.cpp.s" starts at address 0x803B5150
-# Found file "snd/StrmSound.cpp"
-# File "asm/code/snd/StrmSound.cpp.s" starts at address 0x803B7BAC
-# Found file "snd/StrmSoundHandle.cpp"
-# File "asm/code/snd/StrmSoundHandle.cpp.s" starts at address 0x803B7F68
-# Found file "snd/TaskManager.cpp"
-# File "asm/code/snd/TaskManager.cpp.s" starts at address 0x803B7FDC
-# Found file "snd/TaskThread.cpp"
-# File "asm/code/snd/TaskThread.cpp.s" starts at address 0x803B8AF0
-# Found file "snd/Util.cpp"
-# File "asm/code/snd/Util.cpp.s" starts at address 0x803B8C8C
-# Found file "snd/WaveFile.cpp"
-# File "asm/code/snd/WaveFile.cpp.s" starts at address 0x803B905C
-# Found file "snd/WavePlayer.cpp"
-# File "asm/code/snd/WavePlayer.cpp.s" starts at address 0x803B9210
-# Found file "snd/WaveSound.cpp"
-# File "asm/code/snd/WaveSound.cpp.s" starts at address 0x803BA570
-# Found file "snd/WaveSoundHandle.cpp"
-# File "asm/code/snd/WaveSoundHandle.cpp.s" starts at address 0x803BAA30
-# Found file "snd/WsdFile.cpp"
-# File "asm/code/snd/WsdFile.cpp.s" starts at address 0x803BAAA4
-# Found file "snd/WsdPlayer.cpp"
-# File "asm/code/snd/WsdPlayer.cpp.s" starts at address 0x803BB0FC
-# Found file "snd/WsdTrack.cpp"
-# File "asm/code/snd/WsdTrack.cpp.s" starts at address 0x803BC54C
-# Found file "ut/ArchiveFont.cpp"
-# File "asm/code/ut/ArchiveFont.cpp.s" starts at address 0x803BD128
-# Found file "ut/binaryFileFormat.cpp"
-# File "asm/code/ut/binaryFileFormat.cpp.s" starts at address 0x803BD144
-# Found file "ut/CharStrmReader.cpp"
-# File "asm/code/ut/CharStrmReader.cpp.s" starts at address 0x803BD48C
-# Found file "ut/CharWriter.cpp"
-# File "asm/code/ut/CharWriter.cpp.s" starts at address 0x803BDEF0
-# Found file "ut/DvdFileStream.cpp"
-# File "asm/code/ut/DvdFileStream.cpp.s" starts at address 0x803C1994
-# Found file "ut/DvdLockedFileStream.cpp"
-# File "asm/code/ut/DvdLockedFileStream.cpp.s" starts at address 0x803C2638
-# Found file "ut/FileStream.cpp"
-# File "asm/code/ut/FileStream.cpp.s" starts at address 0x803C2860
-# Found file "ut/Font.cpp"
-# File "asm/code/ut/Font.cpp.s" starts at address 0x803C2A88
-# Found file "ut/IOStream.cpp"
-# File "asm/code/ut/IOStream.cpp.s" starts at address 0x803C2C4C
-# Found file "ut/LinkList.cpp"
-# File "asm/code/ut/LinkList.cpp.s" starts at address 0x803C2E88
-# Found file "ut/list.cpp"
-# File "asm/code/ut/list.cpp.s" starts at address 0x803C3290
-# Found file "ut/ResFont.cpp"
-# File "asm/code/ut/ResFont.cpp.s" starts at address 0x803C3668
-# Found file "ut/ResFontBase.cpp"
-# File "asm/code/ut/ResFontBase.cpp.s" starts at address 0x803C4704
-# Found file "ut/TagProcessorBase.cpp"
-# File "asm/code/ut/TagProcessorBase.cpp.s" starts at address 0x803C7904
-# Found file "ut/TextWriterBase.cpp"
-# File "asm/code/ut/TextWriterBase.cpp.s" starts at address 0x803C8A3C
-# Found file "ipcMain.c"
-# File "asm/code/ipcMain.c.s" starts at address 0x803CDFE0
-# Found file "ipcclt.c"
-# File "asm/code/ipcclt.c.s" starts at address 0x803CE064
-# Found file "memory.c"
-# File "asm/code/memory.c.s" starts at address 0x803CF764
-# Found file "ipcProfile.c"
-# File "asm/code/ipcProfile.c.s" starts at address 0x803CFC88
-# Found file "KPAD.c"
-# File "asm/code/KPAD.c.s" starts at address 0x803CFE4C
-# Found file "mem/heapCommon.c"
-# File "asm/code/mem/heapCommon.c.s" starts at address 0x803D2D08
-# Found file "mem/expHeap.c"
-# File "asm/code/mem/expHeap.c.s" starts at address 0x803D3174
-# Found file "mem/frameHeap.c"
-# File "asm/code/mem/frameHeap.c.s" starts at address 0x803D38E0
-# Found file "mem/unitHeap.c"
-# File "asm/code/mem/unitHeap.c.s" starts at address 0x803D3BCC
-# Found file "mem/allocator.c"
-# File "asm/code/mem/allocator.c.s" starts at address 0x803D3EA4
-# Found file "mem/list.c"
-# File "asm/code/mem/list.c.s" starts at address 0x803D3F28
-# Found file "mix.c"
-# File "asm/code/mix.c.s" starts at address 0x803D403C
-# Found file "remote.c"
-# File "asm/code/remote.c.s" starts at address 0x803D70B4
-# Found file "mtx.c"
-# File "asm/code/mtx.c.s" starts at address 0x803D7548
-# Found file "mtxvec.c"
-# File "asm/code/mtxvec.c.s" starts at address 0x803D7A58
-# Found file "mtx44.c"
-# File "asm/code/mtx44.c.s" starts at address 0x803D7B00
-# Found file "vec.c"
-# File "asm/code/vec.c.s" starts at address 0x803D7C9C
-# Found file "nand.c"
-# File "asm/code/nand.c.s" starts at address 0x803D7DC0
-# Found file "NANDOpenClose.c"
-# File "asm/code/NANDOpenClose.c.s" starts at address 0x803D8924
-# Found file "NANDCore.c"
-# File "asm/code/NANDCore.c.s" starts at address 0x803D8E08
-# Found file "NANDCheck.c"
-# File "asm/code/NANDCheck.c.s" starts at address 0x803D9DF0
-# Found file "OS.c"
-# File "asm/code/OS.c.s" starts at address 0x803D9FB4
-# Found file "OSAlarm.c"
-# File "asm/code/OSAlarm.c.s" starts at address 0x803DB2E8
-# Found file "OSAlloc.c"
-# File "asm/code/OSAlloc.c.s" starts at address 0x803DBACC
-# Found file "OSArena.c"
-# File "asm/code/OSArena.c.s" starts at address 0x803DBCE8
-# Found file "OSAudioSystem.c"
-# File "asm/code/OSAudioSystem.c.s" starts at address 0x803DBD7C
-# Found file "OSCache.c"
-# File "asm/code/OSCache.c.s" starts at address 0x803DC230
-# Found file "OSContext.c"
-# File "asm/code/OSContext.c.s" starts at address 0x803DC830
-# Found file "OSError.c"
-# File "asm/code/OSError.c.s" starts at address 0x803DD0B8
-# Found file "OSExec.c"
-# File "asm/code/OSExec.c.s" starts at address 0x803DD7EC
-# Found file "OSFatal.c"
-# File "asm/code/OSFatal.c.s" starts at address 0x803DEB1C
-# Found file "OSFont.c"
-# File "asm/code/OSFont.c.s" starts at address 0x803DF740
-# Found file "OSInterrupt.c"
-# File "asm/code/OSInterrupt.c.s" starts at address 0x803E045C
-# Found file "OSLink.c"
-# File "asm/code/OSLink.c.s" starts at address 0x803E0BE0
-# Found file "OSMessage.c"
-# File "asm/code/OSMessage.c.s" starts at address 0x803E0BF8
-# Found file "OSMemory.c"
-# File "asm/code/OSMemory.c.s" starts at address 0x803E0DFC
-# Found file "OSMutex.c"
-# File "asm/code/OSMutex.c.s" starts at address 0x803E1610
-# Found file "OSReboot.c"
-# File "asm/code/OSReboot.c.s" starts at address 0x803E1858
-# Found file "OSReset.c"
-# File "asm/code/OSReset.c.s" starts at address 0x803E18CC
-# Found file "OSRtc.c"
-# File "asm/code/OSRtc.c.s" starts at address 0x803E1F70
-# Found file "OSSemaphore.c"
-# File "asm/code/OSSemaphore.c.s" starts at address 0x803E29FC
-# Found file "OSSync.c"
-# File "asm/code/OSSync.c.s" starts at address 0x803E2B74
-# Found file "OSThread.c"
-# File "asm/code/OSThread.c.s" starts at address 0x803E2BF4
-# Found file "OSTime.c"
-# File "asm/code/OSTime.c.s" starts at address 0x803E4018
-# Found file "OSUtf.c"
-# File "asm/code/OSUtf.c.s" starts at address 0x803E442C
-# Found file "OSIpc.c"
-# File "asm/code/OSIpc.c.s" starts at address 0x803E4664
-# Found file "OSStateTM.c"
-# File "asm/code/OSStateTM.c.s" starts at address 0x803E468C
-# Found file "__start.c"
-# File "asm/code/__start.c.s" starts at address 0x80004000
-# Found file "OSPlayRecord.c"
-# File "asm/code/OSPlayRecord.c.s" starts at address 0x803E4CDC
-# Found file "OSStateFlags.c"
-# File "asm/code/OSStateFlags.c.s" starts at address 0x803E53D4
-# Found file "OSNet.c"
-# File "asm/code/OSNet.c.s" starts at address 0x803E55E0
-# Found file "OSNandbootInfo.c"
-# File "asm/code/OSNandbootInfo.c.s" starts at address 0x803E5B74
-# Found file "__ppc_eabi_init.cpp"
-# File "asm/code/__ppc_eabi_init.cpp.s" starts at address 0x803E5E64
-# Found file "Pad.c"
-# File "asm/code/Pad.c.s" starts at address 0x803E5F18
-# Found file "scsystem.c"
-# File "asm/code/scsystem.c.s" starts at address 0x803E77B0
-# Found file "scapi.c"
-# File "asm/code/scapi.c.s" starts at address 0x803E9114
-# Found file "scapi/prdinfo.c"
-# File "asm/code/scapi/prdinfo.c.s" starts at address 0x803E94D8
-# Found file "SIBios.c"
-# File "asm/code/SIBios.c.s" starts at address 0x803E96C8
-# Found file "SISamplingRate.c"
-# File "asm/code/SISamplingRate.c.s" starts at address 0x803EAC48
-# Found file "TPL.c"
-# File "asm/code/TPL.c.s" starts at address 0x803EAD28
-# Found file "usb.c"
-# File "asm/code/usb.c.s" starts at address 0x803EAF3C
-# Found file "vi.c"
-# File "asm/code/vi.c.s" starts at address 0x803EBFDC
-# Found file "i2c.c"
-# File "asm/code/i2c.c.s" starts at address 0x803EE974
-# Found file "vi3in1.c"
-# File "asm/code/vi3in1.c.s" starts at address 0x803EF390
-# Found file "wenc.c"
-# File "asm/code/wenc.c.s" starts at address 0x803F0A34
-# Found file "WPAD.c"
-# File "asm/code/WPAD.c.s" starts at address 0x803F0D0C
-# Found file "WPADHIDParser.c"
-# File "asm/code/WPADHIDParser.c.s" starts at address 0x803F82B4
-# Found file "WPADEncrypt.c"
-# File "asm/code/WPADEncrypt.c.s" starts at address 0x803FCD68
-# Found file "WPADMem.c"
-# File "asm/code/WPADMem.c.s" starts at address 0x805CFF60
-# Found file "debug/msg.c"
-# File "asm/code/debug/msg.c.s" starts at address 0x803FDE10
-# Found file "WUD.c"
-# File "asm/code/WUD.c.s" starts at address 0x803FDE60
-# Found file "WUDHidHost.c"
-# File "asm/code/WUDHidHost.c.s" starts at address 0x804021D0
-# Found file "debug/msg.c"
-# File "asm/code/debug/msg.c.s" starts at address 0x8040271C
-# Found file "DebuggerDriver.c"
-# File "asm/code/DebuggerDriver.c.s" starts at address 0x8040276C
-# Found file "exi2.c"
-# File "asm/code/exi2.c.s" starts at address 0x80402AA0
-# Found file "float.cpp"
-# File "asm/code/float.cpp.s" starts at address 0x805D7990
-# Found file "ansi/files.c"
-# File "asm/code/ansi/files.c.s" starts at address 0x8040322C
-# Found file "ansi/fp.c"
-# File "asm/code/ansi/fp.c.s" starts at address 0x8040333C
-# Found file "arith.c"
-# File "asm/code/arith.c.s" starts at address 0x80404CAC
-# Found file "bsearch.c"
-# File "asm/code/bsearch.c.s" starts at address 0x80404CBC
-# Found file "buffer/io.c"
-# File "asm/code/buffer/io.c.s" starts at address 0x80404DAC
-# Found file "ctype.c"
-# File "asm/code/ctype.c.s" starts at address 0x80404E8C
-# Found file "direct/io.c"
-# File "asm/code/direct/io.c.s" starts at address 0x80404F8C
-# Found file "errno.c"
-# File "asm/code/errno.c.s" starts at address 0x805D9090
-# Found file "file/io.c"
-# File "asm/code/file/io.c.s" starts at address 0x80405294
-# Found file "FILE/POS.C"
-# File "asm/code/FILE/POS.C.s" starts at address 0x80405544
-# Found file "locale.c"
-# File "asm/code/locale.c.s" starts at address 0x8041F300
-# Found file "mbstring.c"
-# File "asm/code/mbstring.c.s" starts at address 0x804057B4
-# Found file "mem.c"
-# File "asm/code/mem.c.s" starts at address 0x804058D4
-# Found file "mem/funcs.c"
-# File "asm/code/mem/funcs.c.s" starts at address 0x80405A44
-# Found file "math/api.c"
-# File "asm/code/math/api.c.s" starts at address 0x80405D14
-# Found file "misc/io.c"
-# File "asm/code/misc/io.c.s" starts at address 0x80405DAC
-# Found file "printf.c"
-# File "asm/code/printf.c.s" starts at address 0x80405DBC
-# Found file "qsort.c"
-# File "asm/code/qsort.c.s" starts at address 0x80408248
-# Found file "rand.c"
-# File "asm/code/rand.c.s" starts at address 0x804083B8
-# Found file "scanf.c"
-# File "asm/code/scanf.c.s" starts at address 0x804083E0
-# Found file "string.c"
-# File "asm/code/string.c.s" starts at address 0x80408470
-# Found file "strtold.c"
-# File "asm/code/strtold.c.s" starts at address 0x8040882C
-# Found file "strtoul.c"
-# File "asm/code/strtoul.c.s" starts at address 0x80409D54
-# Found file "wctype.c"
-# File "asm/code/wctype.c.s" starts at address 0x8041F448
-# Found file "wstring.c"
-# File "asm/code/wstring.c.s" starts at address 0x8040A3DC
-# Found file "wchar/io.c"
-# File "asm/code/wchar/io.c.s" starts at address 0x8040A3F8
-# Found file "uart/console/io/gcn.c"
-# File "asm/code/uart/console/io/gcn.c.s" starts at address 0x8040A47C
-# Found file "abort/exit/ppc/eabi.c"
-# File "asm/code/abort/exit/ppc/eabi.c.s" starts at address 0x805D90A0
-# Found file "math/sun.c"
-# File "asm/code/math/sun.c.s" starts at address 0x8040A554
-# Found file "math/double.c"
-# File "asm/code/math/double.c.s" starts at address 0x8040A594
-# Found file "extras.c"
-# File "asm/code/extras.c.s" starts at address 0x8040A60C
-# Found file "e/acos.c"
-# File "asm/code/e/acos.c.s" starts at address 0x8040A7B8
-# Found file "e/asin.c"
-# File "asm/code/e/asin.c.s" starts at address 0x8040AA7C
-# Found file "e/atan2.c"
-# File "asm/code/e/atan2.c.s" starts at address 0x8040AD14
-# Found file "e/exp.c"
-# File "asm/code/e/exp.c.s" starts at address 0x8040AF84
-# Found file "e/fmod.c"
-# File "asm/code/e/fmod.c.s" starts at address 0x8040B1B8
-# Found file "e/log.c"
-# File "asm/code/e/log.c.s" starts at address 0x8040B4E8
-# Found file "e/log10.c"
-# File "asm/code/e/log10.c.s" starts at address 0x8040B79C
-# Found file "e/pow.c"
-# File "asm/code/e/pow.c.s" starts at address 0x8040B8B0
-# Found file "e/rem/pio2.c"
-# File "asm/code/e/rem/pio2.c.s" starts at address 0x8040C0F8
-# Found file "k/cos.c"
-# File "asm/code/k/cos.c.s" starts at address 0x8040C490
-# Found file "k/rem/pio2.c"
-# File "asm/code/k/rem/pio2.c.s" starts at address 0x8040C5A0
-# Found file "k/sin.c"
-# File "asm/code/k/sin.c.s" starts at address 0x8040DCAC
-# Found file "k/tan.c"
-# File "asm/code/k/tan.c.s" starts at address 0x8040DD6C
-# Found file "s/atan.c"
-# File "asm/code/s/atan.c.s" starts at address 0x8040DFC4
-# Found file "s/ceil.c"
-# File "asm/code/s/ceil.c.s" starts at address 0x8040E204
-# Found file "s/copysign.c"
-# File "asm/code/s/copysign.c.s" starts at address 0x8040E344
-# Found file "s/cos.c"
-# File "asm/code/s/cos.c.s" starts at address 0x8040E370
-# Found file "s/floor.c"
-# File "asm/code/s/floor.c.s" starts at address 0x8040E444
-# Found file "s/frexp.c"
-# File "asm/code/s/frexp.c.s" starts at address 0x8040E588
-# Found file "s/ldexp.c"
-# File "asm/code/s/ldexp.c.s" starts at address 0x8040E610
-# Found file "s/modf.c"
-# File "asm/code/s/modf.c.s" starts at address 0x8040E77C
-# Found file "s/sin.c"
-# File "asm/code/s/sin.c.s" starts at address 0x8040E878
-# Found file "s/tan.c"
-# File "asm/code/s/tan.c.s" starts at address 0x8040E950
-# Found file "w/acos.c"
-# File "asm/code/w/acos.c.s" starts at address 0x8040E9C8
-# Found file "w/asin.c"
-# File "asm/code/w/asin.c.s" starts at address 0x8040E9CC
-# Found file "w/atan2.c"
-# File "asm/code/w/atan2.c.s" starts at address 0x8040E9D0
-# Found file "w/exp.c"
-# File "asm/code/w/exp.c.s" starts at address 0x8040E9D4
-# Found file "w/fmod.c"
-# File "asm/code/w/fmod.c.s" starts at address 0x8040E9D8
-# Found file "w/log.c"
-# File "asm/code/w/log.c.s" starts at address 0x8040E9DC
-# Found file "w/log10.c"
-# File "asm/code/w/log10.c.s" starts at address 0x8040E9E0
-# Found file "w/pow.c"
-# File "asm/code/w/pow.c.s" starts at address 0x8040E9E4
-# Found file "e/sqrt.c"
-# File "asm/code/e/sqrt.c.s" starts at address 0x8040E9E8
-# Found file "math/ppc.c"
-# File "asm/code/math/ppc.c.s" starts at address 0x8040EC30
-# Found file "w/sqrt.c"
-# File "asm/code/w/sqrt.c.s" starts at address 0x8040EC34
-# Found file "__mem.c"
-# File "asm/code/__mem.c.s" starts at address 0x8040EC38
-# Found file "__va_arg.c"
-# File "asm/code/__va_arg.c.s" starts at address 0x8040EC54
-# Found file "global/destructor/chain.c"
-# File "asm/code/global/destructor/chain.c.s" starts at address 0x8040ED1C
-# Found file "NMWException.cp"
-# File "asm/code/NMWException.cp.s" starts at address 0x8040ED7C
-# Found file "ptmf.c"
-# File "asm/code/ptmf.c.s" starts at address 0x8040F1E8
-# Found file "runtime.c"
-# File "asm/code/runtime.c.s" starts at address 0x8040F24C
-# Found file "__init_cpp_exceptions.cpp"
-# File "asm/code/__init_cpp_exceptions.cpp.s" starts at address 0x8040F9A8
-# Found file "Gecko/ExceptionPPC.cp"
-# File "asm/code/Gecko/ExceptionPPC.cp.s" starts at address 0x8040FA18
-# Found file "mainloop.c"
-# File "asm/code/mainloop.c.s" starts at address 0x8040FA7C
-# Found file "nubevent.c"
-# File "asm/code/nubevent.c.s" starts at address 0x8040FB74
-# Found file "nubinit.c"
-# File "asm/code/nubinit.c.s" starts at address 0x8040FD9C
-# Found file "msg.c"
-# File "asm/code/msg.c.s" starts at address 0x8040FF20
-# Found file "msgbuf.c"
-# File "asm/code/msgbuf.c.s" starts at address 0x8040FF4C
-# Found file "serpoll.c"
-# File "asm/code/serpoll.c.s" starts at address 0x80410788
-# Found file "usr/put.c"
-# File "asm/code/usr/put.c.s" starts at address 0x80410934
-# Found file "dispatch.c"
-# File "asm/code/dispatch.c.s" starts at address 0x804109C0
-# Found file "msghndlr.c"
-# File "asm/code/msghndlr.c.s" starts at address 0x80410B08
-# Found file "support.c"
-# File "asm/code/support.c.s" starts at address 0x80411BE4
-# Found file "mutex/TRK.c"
-# File "asm/code/mutex/TRK.c.s" starts at address 0x80412298
-# Found file "notify.c"
-# File "asm/code/notify.c.s" starts at address 0x804122B0
-# Found file "flush/cache.c"
-# File "asm/code/flush/cache.c.s" starts at address 0x80412348
-# Found file "mem/TRK.c"
-# File "asm/code/mem/TRK.c.s" starts at address 0x80412380
-# Found file "string/TRK.c"
-# File "asm/code/string/TRK.c.s" starts at address 0x80412438
-# Found file "__exception.s"
-# File "asm/code/__exception.s.s" starts at address 0x800044C0
-# Found file "targimpl.c"
-# File "asm/code/targimpl.c.s" starts at address 0x80412454
-# Found file "targsupp.s"
-# File "asm/code/targsupp.s.s" starts at address 0x80413E70
-# Found file "mpc/7xx/603e.c"
-# File "asm/code/mpc/7xx/603e.c.s" starts at address 0x80413E90
-# Found file "mslsupp.c"
-# File "asm/code/mslsupp.c.s" starts at address 0x80414200
-# Found file "dolphin/trk.c"
-# File "asm/code/dolphin/trk.c.s" starts at address 0x80414378
-# Found file "main/TRK.c"
-# File "asm/code/main/TRK.c.s" starts at address 0x80414694
-# Found file "dolphin/trk/glue.c"
-# File "asm/code/dolphin/trk/glue.c.s" starts at address 0x804146D8
-# Found file "targcont.c"
-# File "asm/code/targcont.c.s" starts at address 0x80414B98
-# Found file "target/options.c"
-# File "asm/code/target/options.c.s" starts at address 0x80414BCC
-# Found file "UDP/Stubs.c"
-# File "asm/code/UDP/Stubs.c.s" starts at address 0x80414BE8
-# Found file "main.c"
-# File "asm/code/main.c.s" starts at address 0x80414C30
-# Found file "CircleBuffer.c"
-# File "asm/code/CircleBuffer.c.s" starts at address 0x80414EF0
-# Found file "MWCriticalSection/gc.cpp"
-# File "asm/code/MWCriticalSection/gc.cpp.s" starts at address 0x80415158
-# Found file "GDBase.c"
-# File "asm/code/GDBase.c.s" starts at address 0x804151B0
-# Found file "THPDec.c"
-# File "asm/code/THPDec.c.s" starts at address 0x80415308
-# Found file "THPAudio.c"
-# File "asm/code/THPAudio.c.s" starts at address 0x804186D8
+syncaudio.cpp
+bomb.cpp
+objectdatafactory.cpp
+game/animation/unity.cpp
+game/cas/unity.cpp
+game/interactor/unity.cpp
+game/level/unity.cpp
+game/misc/unity.cpp
+game/simulator/core2/unity.cpp
+game/simulator/core/unity.cpp
+game/simulator/objectdata/unity.cpp
+game/simulator/utility/unity.cpp
+game/statemachine/unity.cpp
+game/ui/core/unity.cpp
+game/ui/targets/cas/unity.cpp
+game/ui/targets/s2c/unity.cpp
+game/ui/targets/tsc5/unity.cpp
+game/ui/targets/tsc6/unity.cpp
+game/unity.cpp
+game/wii/unity.cpp
+weather/unity.cpp
+base/core/engine/dependencies/unity.cpp
+base/core/unity.cpp
+base/ngc/unity.cpp
+e/cheatmenu.cpp
+engine/core/unity.cpp
+engine/effects2/unity.cpp
+engine/effects/unity.cpp
+engine/graphics/unity.cpp
+engine/manager/unity.cpp
+engine/ngc/unity.cpp
+engine/resource/unity.cpp
+engine/utility/unity.cpp
+fixed/pool.cpp
+hashtable.cpp
+red/black/tree.cpp
+string.cpp
+Apt.cpp
+AptActionInterpreter.cpp
+AptAnimation.cpp
+AptArray.cpp
+AptCharacter.cpp
+AptCharacterInstButton.cpp
+AptCIH.cpp
+AptDate.cpp
+AptDisplayList.cpp
+AptGC.cpp
+AptInput.cpp
+AptLoad.cpp
+AptMath.cpp
+AptMiscObjects.cpp
+AptMovie.cpp
+AptNativeHash.cpp
+AptRand.cpp
+AptRenderingContext.cpp
+AptSound.cpp
+AptSpriteMembers.cpp
+AptStageMembers.cpp
+AptString.cpp
+AptTextFormat.cpp
+AptValue.cpp
+AptValueFactory.cpp
+AptValueGCAllocator.cpp
+AptXmlMembers.cpp
+DogmaAllocator.cpp
+AptGlobalExtensionObject.cpp
+AptGlobalObject.cpp
+AptObject.cpp
+AptScriptColour.cpp
+AptScriptFunction.cpp
+AptXml.cpp
+AptXmlAttributes.cpp
+AptXmlNode.cpp
+AptBoolean.cpp
+AptFloat.cpp
+AptInteger.cpp
+AptValueVector.cpp
+EAString.cpp
+StringPool.cpp
+ai.c
+arc.c
+AX.c
+AXAlloc.c
+AXAux.c
+AXCL.c
+AXOut.c
+AXSPB.c
+AXVPB.c
+AXProf.c
+AXComp.c
+DSPCode.c
+AXFXReverbHi.c
+AXFXReverbHiExp.c
+AXFXHooks.c
+PPCArch.c
+gki/buffer.c
+gki/time.c
+gki/ppc.c
+hcisu/h2.c
+uusb/ppc.c
+bta/dm/cfg.c
+bta/hh/cfg.c
+bta/sys/cfg.c
+bte/hcisu.c
+bte/init.c
+bte/logmsg.c
+bte/main.c
+btu/task1.c
+bd.c
+bta/sys/conn.c
+bta/sys/main.c
+ptim.c
+utl.c
+bta/dm/act.c
+bta/dm/api.c
+bta/dm/main.c
+bta/dm/pm.c
+bta/hh/act.c
+bta/hh/api.c
+bta/hh/main.c
+bta/hh/utils.c
+btm/acl.c
+btm/dev.c
+btm/devctl.c
+btm/discovery.c
+btm/inq.c
+btm/main.c
+btm/pm.c
+btm/sco.c
+btm/sec.c
+btu/hcif.c
+btu/init.c
+wbt/ext.c
+gap/api.c
+gap/conn.c
+gap/utils.c
+hcicmds.c
+hidd/api.c
+hidd/conn.c
+hidd/mgmt.c
+hidd/pm.c
+hidh/api.c
+hidh/conn.c
+l2c/api.c
+l2c/csm.c
+l2c/link.c
+l2c/main.c
+l2c/utils.c
+port/api.c
+port/rfc.c
+port/utils.c
+rfc/l2cap/if.c
+rfc/mx/fsm.c
+rfc/port/fsm.c
+rfc/port/if.c
+rfc/ts/frames.c
+rfc/utils.c
+sdp/api.c
+sdp/db.c
+sdp/discovery.c
+sdp/main.c
+sdp/server.c
+sdp/utils.c
+db.c
+dsp.c
+dsp/debug.c
+dsp/task.c
+dvdfs.c
+dvd.c
+dvdqueue.c
+dvderror.c
+dvdidutils.c
+dvdFatal.c
+dvd/broadway.c
+euart.c
+EXIBios.c
+EXIUart.c
+EXICommon.c
+fs.c
+GXInit.c
+GXFifo.c
+GXAttr.c
+GXMisc.c
+GXGeometry.c
+GXFrameBuf.c
+GXLight.c
+GXTexture.c
+GXBump.c
+GXTev.c
+GXPixel.c
+GXDisplayList.c
+GXTransform.c
+GXPerf.c
+HBMAnmController.cpp
+HBMBase.cpp
+HBMController.cpp
+HBMFrameController.cpp
+HBMGUIManager.cpp
+HBMRemoteSpk.cpp
+db/assert.cpp
+db/console.cpp
+db/DbgPrintBase.cpp
+db/directPrint.cpp
+db/mapFile.cpp
+lyt/animation.cpp
+lyt/arcResourceAccessor.cpp
+lyt/bounding.cpp
+lyt/common.cpp
+lyt/drawInfo.cpp
+lyt/group.cpp
+lyt/layout.cpp
+lyt/material.cpp
+lyt/pane.cpp
+lyt/picture.cpp
+lyt/resourceAccessor.cpp
+lyt/textBox.cpp
+lyt/window.cpp
+math/arithmetic.cpp
+math/equation.cpp
+math/triangular.cpp
+snd/AnimSound.cpp
+snd/AxManager.cpp
+snd/AxVoice.cpp
+snd/Bank.cpp
+snd/BankFile.cpp
+snd/BasicSound.cpp
+snd/Channel.cpp
+snd/DisposeCallbackManager.cpp
+snd/DvdSoundArchive.cpp
+snd/EnvGenerator.cpp
+snd/ExternalHeap.cpp
+snd/ExternalSoundPlayer.cpp
+snd/FrameHeap.cpp
+snd/InstancePool.cpp
+snd/Lfo.cpp
+snd/MemorySoundArchive.cpp
+snd/MidiSeqPlayer.cpp
+snd/MidiSeqTrack.cpp
+snd/MidiSeqTrackAllocator.cpp
+snd/MmlParser.cpp
+snd/MmlSeqTrack.cpp
+snd/MmlSeqTrackAllocator.cpp
+snd/PlayerHeap.cpp
+snd/RemoteSpeaker.cpp
+snd/RemoteSpeakerManager.cpp
+snd/SeqFile.cpp
+snd/SeqPlayer.cpp
+snd/SeqSound.cpp
+snd/SeqSoundHandle.cpp
+snd/SeqTrack.cpp
+snd/Sound3DActor.cpp
+snd/SoundArchive.cpp
+snd/SoundArchiveFile.cpp
+snd/SoundArchiveLoader.cpp
+snd/SoundArchivePlayer.cpp
+snd/SoundHandle.cpp
+snd/SoundHeap.cpp
+snd/SoundPlayer.cpp
+snd/SoundStartable.cpp
+snd/SoundSystem.cpp
+snd/SoundThread.cpp
+snd/StrmChannel.cpp
+snd/StrmFile.cpp
+snd/StrmPlayer.cpp
+snd/StrmSound.cpp
+snd/StrmSoundHandle.cpp
+snd/TaskManager.cpp
+snd/TaskThread.cpp
+snd/Util.cpp
+snd/WaveFile.cpp
+snd/WavePlayer.cpp
+snd/WaveSound.cpp
+snd/WaveSoundHandle.cpp
+snd/WsdFile.cpp
+snd/WsdPlayer.cpp
+snd/WsdTrack.cpp
+ut/ArchiveFont.cpp
+ut/binaryFileFormat.cpp
+ut/CharStrmReader.cpp
+ut/CharWriter.cpp
+ut/DvdFileStream.cpp
+ut/DvdLockedFileStream.cpp
+ut/FileStream.cpp
+ut/Font.cpp
+ut/IOStream.cpp
+ut/LinkList.cpp
+ut/list.cpp
+ut/ResFont.cpp
+ut/ResFontBase.cpp
+ut/TagProcessorBase.cpp
+ut/TextWriterBase.cpp
+ipcMain.c
+ipcclt.c
+memory.c
+ipcProfile.c
+KPAD.c
+mem/heapCommon.c
+mem/expHeap.c
+mem/frameHeap.c
+mem/unitHeap.c
+mem/allocator.c
+mem/list.c
+mix.c
+remote.c
+mtx.c
+mtxvec.c
+mtx44.c
+vec.c
+nand.c
+NANDOpenClose.c
+NANDCore.c
+NANDCheck.c
+OS.c
+OSAlarm.c
+OSAlloc.c
+OSArena.c
+OSAudioSystem.c
+OSCache.c
+OSContext.c
+OSError.c
+OSExec.c
+OSFatal.c
+OSFont.c
+OSInterrupt.c
+OSLink.c
+OSMessage.c
+OSMemory.c
+OSMutex.c
+OSReboot.c
+OSReset.c
+OSRtc.c
+OSSemaphore.c
+OSSync.c
+OSThread.c
+OSTime.c
+OSUtf.c
+OSIpc.c
+OSStateTM.c
+__start.c
+OSPlayRecord.c
+OSStateFlags.c
+OSNet.c
+OSNandbootInfo.c
+__ppc_eabi_init.cpp
+Pad.c
+scsystem.c
+scapi.c
+scapi/prdinfo.c
+SIBios.c
+SISamplingRate.c
+TPL.c
+usb.c
+vi.c
+i2c.c
+vi3in1.c
+wenc.c
+WPAD.c
+WPADHIDParser.c
+WPADEncrypt.c
+WPADMem.c
+debug/msg.c
+WUD.c
+WUDHidHost.c
+debug/msg.c
+DebuggerDriver.c
+exi2.c
+float.cpp
+ansi/files.c
+ansi/fp.c
+arith.c
+bsearch.c
+buffer/io.c
+ctype.c
+direct/io.c
+errno.c
+file/io.c
+FILE/POS.C
+locale.c
+mbstring.c
+mem.c
+mem/funcs.c
+math/api.c
+misc/io.c
+printf.c
+qsort.c
+rand.c
+scanf.c
+string.c
+strtold.c
+strtoul.c
+wctype.c
+wstring.c
+wchar/io.c
+uart/console/io/gcn.c
+abort/exit/ppc/eabi.c
+math/sun.c
+math/double.c
+extras.c
+e/acos.c
+e/asin.c
+e/atan2.c
+e/exp.c
+e/fmod.c
+e/log.c
+e/log10.c
+e/pow.c
+e/rem/pio2.c
+k/cos.c
+k/rem/pio2.c
+k/sin.c
+k/tan.c
+s/atan.c
+s/ceil.c
+s/copysign.c
+s/cos.c
+s/floor.c
+s/frexp.c
+s/ldexp.c
+s/modf.c
+s/sin.c
+s/tan.c
+w/acos.c
+w/asin.c
+w/atan2.c
+w/exp.c
+w/fmod.c
+w/log.c
+w/log10.c
+w/pow.c
+e/sqrt.c
+math/ppc.c
+w/sqrt.c
+__mem.c
+__va_arg.c
+global/destructor/chain.c
+NMWException.cp
+ptmf.c
+runtime.c
+__init_cpp_exceptions.cpp
+Gecko/ExceptionPPC.cp
+mainloop.c
+nubevent.c
+nubinit.c
+msg.c
+msgbuf.c
+serpoll.c
+usr/put.c
+dispatch.c
+msghndlr.c
+support.c
+mutex/TRK.c
+notify.c
+flush/cache.c
+mem/TRK.c
+string/TRK.c
+__exception.s
+targimpl.c
+targsupp.s
+mpc/7xx/603e.c
+mslsupp.c
+dolphin/trk.c
+main/TRK.c
+dolphin/trk/glue.c
+targcont.c
+target/options.c
+UDP/Stubs.c
+main.c
+CircleBuffer.c
+MWCriticalSection/gc.cpp
+GDBase.c
+THPDec.c
+THPAudio.c

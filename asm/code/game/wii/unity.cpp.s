@@ -1,0 +1,2260 @@
+.include "macros.inc"
+
+.section .text, "ax"  # 0x80006940 - 0x80418B80
+.global "__ct__14PetsHomeButtonFv"
+"__ct__14PetsHomeButtonFv":
+/* 80244F5C 00240BFC  38 00 00 00 */	li r0, 0
+/* 80244F60 00240C00  90 03 00 00 */	stw r0, 0(r3)
+/* 80244F64 00240C04  4E 80 00 20 */	blr 
+
+.global "__dt__14PetsHomeButtonFv"
+"__dt__14PetsHomeButtonFv":
+/* 80244F68 00240C08  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80244F6C 00240C0C  7C 08 02 A6 */	mflr r0
+/* 80244F70 00240C10  2C 03 00 00 */	cmpwi r3, 0
+/* 80244F74 00240C14  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80244F78 00240C18  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80244F7C 00240C1C  7C 9F 23 78 */	mr r31, r4
+/* 80244F80 00240C20  93 C1 00 08 */	stw r30, 8(r1)
+/* 80244F84 00240C24  7C 7E 1B 78 */	mr r30, r3
+/* 80244F88 00240C28  41 82 00 24 */	beq lbl_80244FAC
+/* 80244F8C 00240C2C  80 63 00 00 */	lwz r3, 0(r3)
+/* 80244F90 00240C30  48 00 09 71 */	bl "Destroy__13TRCHomeButtonFP13TRCHomeButton"
+/* 80244F94 00240C34  38 00 00 00 */	li r0, 0
+/* 80244F98 00240C38  2C 1F 00 00 */	cmpwi r31, 0
+/* 80244F9C 00240C3C  90 1E 00 00 */	stw r0, 0(r30)
+/* 80244FA0 00240C40  40 81 00 0C */	ble lbl_80244FAC
+/* 80244FA4 00240C44  7F C3 F3 78 */	mr r3, r30
+/* 80244FA8 00240C48  48 01 50 05 */	bl "__dl__FPv"
+lbl_80244FAC:
+/* 80244FAC 00240C4C  7F C3 F3 78 */	mr r3, r30
+/* 80244FB0 00240C50  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80244FB4 00240C54  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80244FB8 00240C58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80244FBC 00240C5C  7C 08 03 A6 */	mtlr r0
+/* 80244FC0 00240C60  38 21 00 10 */	addi r1, r1, 0x10
+/* 80244FC4 00240C64  4E 80 00 20 */	blr 
+
+.global "Init__14PetsHomeButtonFv"
+"Init__14PetsHomeButtonFv":
+/* 80244FC8 00240C68  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80244FCC 00240C6C  7C 08 02 A6 */	mflr r0
+/* 80244FD0 00240C70  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80244FD4 00240C74  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80244FD8 00240C78  7C 7F 1B 78 */	mr r31, r3
+/* 80244FDC 00240C7C  38 61 00 08 */	addi r3, r1, 8
+/* 80244FE0 00240C80  48 00 07 FD */	bl "__ct__10TRCWiiInitFv"
+/* 80244FE4 00240C84  3C C0 80 24 */	lis r6, "HBAllocFuncAlign__FPCcii"@ha
+/* 80244FE8 00240C88  3C A0 80 24 */	lis r5, "HBAllocFunc__FPCci"@ha
+/* 80244FEC 00240C8C  3C 80 80 24 */	lis r4, "HBFreeFunc__FPv"@ha
+/* 80244FF0 00240C90  38 61 00 08 */	addi r3, r1, 8
+/* 80244FF4 00240C94  38 C6 54 88 */	addi r6, r6, "HBAllocFuncAlign__FPCcii"@l
+/* 80244FF8 00240C98  38 A5 54 D4 */	addi r5, r5, "HBAllocFunc__FPCci"@l
+/* 80244FFC 00240C9C  38 84 55 0C */	addi r4, r4, "HBFreeFunc__FPv"@l
+/* 80245000 00240CA0  90 C1 00 08 */	stw r6, 8(r1)
+/* 80245004 00240CA4  90 A1 00 0C */	stw r5, 0xc(r1)
+/* 80245008 00240CA8  90 81 00 10 */	stw r4, 0x10(r1)
+/* 8024500C 00240CAC  48 00 08 A1 */	bl "Create__13TRCHomeButtonFP10TRCWiiInit"
+/* 80245010 00240CB0  3C 80 80 45 */	lis r4, lbl_8044E8C8@ha
+/* 80245014 00240CB4  90 7F 00 00 */	stw r3, 0(r31)
+/* 80245018 00240CB8  38 84 E8 C8 */	addi r4, r4, lbl_8044E8C8@l
+/* 8024501C 00240CBC  38 A0 00 00 */	li r5, 0
+/* 80245020 00240CC0  48 00 0B 19 */	bl "Init__13TRCHomeButtonFPCcQ213TRCHomeButton13HomeInputType"
+/* 80245024 00240CC4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245028 00240CC8  40 82 00 1C */	bne lbl_80245044
+/* 8024502C 00240CCC  80 7F 00 00 */	lwz r3, 0(r31)
+/* 80245030 00240CD0  48 00 08 D1 */	bl "Destroy__13TRCHomeButtonFP13TRCHomeButton"
+/* 80245034 00240CD4  38 00 00 00 */	li r0, 0
+/* 80245038 00240CD8  38 60 00 01 */	li r3, 1
+/* 8024503C 00240CDC  90 1F 00 00 */	stw r0, 0(r31)
+/* 80245040 00240CE0  48 00 00 08 */	b lbl_80245048
+lbl_80245044:
+/* 80245044 00240CE4  38 60 00 00 */	li r3, 0
+lbl_80245048:
+/* 80245048 00240CE8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8024504C 00240CEC  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 80245050 00240CF0  7C 08 03 A6 */	mtlr r0
+/* 80245054 00240CF4  38 21 00 20 */	addi r1, r1, 0x20
+/* 80245058 00240CF8  4E 80 00 20 */	blr 
+
+.global "PostRenderRestoreStates__14PetsHomeButtonFv"
+"PostRenderRestoreStates__14PetsHomeButtonFv":
+/* 8024505C 00240CFC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245060 00240D00  7C 08 02 A6 */	mflr r0
+/* 80245064 00240D04  38 60 00 01 */	li r3, 1
+/* 80245068 00240D08  38 80 00 00 */	li r4, 0
+/* 8024506C 00240D0C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245070 00240D10  38 A0 00 03 */	li r5, 3
+/* 80245074 00240D14  38 C0 00 03 */	li r6, 3
+/* 80245078 00240D18  38 E0 00 03 */	li r7, 3
+/* 8024507C 00240D1C  48 13 53 51 */	bl "GXSetTevSwapModeTable"
+/* 80245080 00240D20  38 60 00 02 */	li r3, 2
+/* 80245084 00240D24  38 80 00 02 */	li r4, 2
+/* 80245088 00240D28  38 A0 00 02 */	li r5, 2
+/* 8024508C 00240D2C  38 C0 00 02 */	li r6, 2
+/* 80245090 00240D30  38 E0 00 03 */	li r7, 3
+/* 80245094 00240D34  48 13 53 39 */	bl "GXSetTevSwapModeTable"
+/* 80245098 00240D38  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8024509C 00240D3C  7C 08 03 A6 */	mtlr r0
+/* 802450A0 00240D40  38 21 00 10 */	addi r1, r1, 0x10
+/* 802450A4 00240D44  4E 80 00 20 */	blr 
+
+.global "PauseAllSounds__Fb"
+"PauseAllSounds__Fb":
+/* 802450A8 00240D48  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802450AC 00240D4C  7C 08 02 A6 */	mflr r0
+/* 802450B0 00240D50  2C 03 00 00 */	cmpwi r3, 0
+/* 802450B4 00240D54  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802450B8 00240D58  41 82 00 A4 */	beq lbl_8024515C
+/* 802450BC 00240D5C  4B DD 47 DD */	bl "GetSoundPlayer__Fv"
+/* 802450C0 00240D60  2C 03 00 00 */	cmpwi r3, 0
+/* 802450C4 00240D64  41 82 00 14 */	beq lbl_802450D8
+/* 802450C8 00240D68  4B DD 47 D1 */	bl "GetSoundPlayer__Fv"
+/* 802450CC 00240D6C  4B EC A0 D5 */	bl "PauseMusic__12cSoundPlayerFv"
+/* 802450D0 00240D70  4B DD 47 C9 */	bl "GetSoundPlayer__Fv"
+/* 802450D4 00240D74  4B EC A1 AD */	bl "PauseSounds__12cSoundPlayerFv"
+lbl_802450D8:
+/* 802450D8 00240D78  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 802450DC 00240D7C  2C 03 00 00 */	cmpwi r3, 0
+/* 802450E0 00240D80  41 82 00 68 */	beq lbl_80245148
+/* 802450E4 00240D84  81 83 00 00 */	lwz r12, 0(r3)
+/* 802450E8 00240D88  81 8C 00 30 */	lwz r12, 0x30(r12)
+/* 802450EC 00240D8C  7D 89 03 A6 */	mtctr r12
+/* 802450F0 00240D90  4E 80 04 21 */	bctrl 
+/* 802450F4 00240D94  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 802450F8 00240D98  81 83 00 00 */	lwz r12, 0(r3)
+/* 802450FC 00240D9C  81 8C 00 2C */	lwz r12, 0x2c(r12)
+/* 80245100 00240DA0  7D 89 03 A6 */	mtctr r12
+/* 80245104 00240DA4  4E 80 04 21 */	bctrl 
+/* 80245108 00240DA8  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 8024510C 00240DAC  38 80 00 01 */	li r4, 1
+/* 80245110 00240DB0  81 83 00 00 */	lwz r12, 0(r3)
+/* 80245114 00240DB4  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 80245118 00240DB8  7D 89 03 A6 */	mtctr r12
+/* 8024511C 00240DBC  4E 80 04 21 */	bctrl 
+/* 80245120 00240DC0  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 80245124 00240DC4  81 83 00 00 */	lwz r12, 0(r3)
+/* 80245128 00240DC8  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 8024512C 00240DCC  7D 89 03 A6 */	mtctr r12
+/* 80245130 00240DD0  4E 80 04 21 */	bctrl 
+/* 80245134 00240DD4  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 80245138 00240DD8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8024513C 00240DDC  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 80245140 00240DE0  7D 89 03 A6 */	mtctr r12
+/* 80245144 00240DE4  4E 80 04 21 */	bctrl 
+lbl_80245148:
+/* 80245148 00240DE8  38 60 00 01 */	li r3, 1
+/* 8024514C 00240DEC  48 07 00 0D */	bl "PauseSound__9ENgcMovieFb"
+/* 80245150 00240DF0  38 00 00 00 */	li r0, 0
+/* 80245154 00240DF4  90 0D A0 A8 */	stw r0, "gAudioEnabled"-_SDA_BASE_(r13)
+/* 80245158 00240DF8  48 00 00 60 */	b lbl_802451B8
+lbl_8024515C:
+/* 8024515C 00240DFC  38 00 00 01 */	li r0, 1
+/* 80245160 00240E00  90 0D A0 A8 */	stw r0, "gAudioEnabled"-_SDA_BASE_(r13)
+/* 80245164 00240E04  4B DD 47 35 */	bl "GetSoundPlayer__Fv"
+/* 80245168 00240E08  2C 03 00 00 */	cmpwi r3, 0
+/* 8024516C 00240E0C  41 82 00 14 */	beq lbl_80245180
+/* 80245170 00240E10  4B DD 47 29 */	bl "GetSoundPlayer__Fv"
+/* 80245174 00240E14  4B EC A1 A5 */	bl "ResumeSounds__12cSoundPlayerFv"
+/* 80245178 00240E18  4B DD 47 21 */	bl "GetSoundPlayer__Fv"
+/* 8024517C 00240E1C  4B EC A0 95 */	bl "ResumeMusic__12cSoundPlayerFv"
+lbl_80245180:
+/* 80245180 00240E20  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 80245184 00240E24  2C 03 00 00 */	cmpwi r3, 0
+/* 80245188 00240E28  41 82 00 28 */	beq lbl_802451B0
+/* 8024518C 00240E2C  81 83 00 00 */	lwz r12, 0(r3)
+/* 80245190 00240E30  81 8C 00 38 */	lwz r12, 0x38(r12)
+/* 80245194 00240E34  7D 89 03 A6 */	mtctr r12
+/* 80245198 00240E38  4E 80 04 21 */	bctrl 
+/* 8024519C 00240E3C  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
+/* 802451A0 00240E40  81 83 00 00 */	lwz r12, 0(r3)
+/* 802451A4 00240E44  81 8C 00 34 */	lwz r12, 0x34(r12)
+/* 802451A8 00240E48  7D 89 03 A6 */	mtctr r12
+/* 802451AC 00240E4C  4E 80 04 21 */	bctrl 
+lbl_802451B0:
+/* 802451B0 00240E50  38 60 00 00 */	li r3, 0
+/* 802451B4 00240E54  48 06 FF A5 */	bl "PauseSound__9ENgcMovieFb"
+lbl_802451B8:
+/* 802451B8 00240E58  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802451BC 00240E5C  7C 08 03 A6 */	mtlr r0
+/* 802451C0 00240E60  38 21 00 10 */	addi r1, r1, 0x10
+/* 802451C4 00240E64  4E 80 00 20 */	blr 
+
+.global "UpdateDraw__14PetsHomeButtonFb"
+"UpdateDraw__14PetsHomeButtonFb":
+/* 802451C8 00240E68  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802451CC 00240E6C  7C 08 02 A6 */	mflr r0
+/* 802451D0 00240E70  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802451D4 00240E74  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802451D8 00240E78  7C 9F 23 78 */	mr r31, r4
+/* 802451DC 00240E7C  93 C1 00 08 */	stw r30, 8(r1)
+/* 802451E0 00240E80  7C 7E 1B 78 */	mr r30, r3
+/* 802451E4 00240E84  80 03 00 00 */	lwz r0, 0(r3)
+/* 802451E8 00240E88  2C 00 00 00 */	cmpwi r0, 0
+/* 802451EC 00240E8C  41 82 00 88 */	beq lbl_80245274
+/* 802451F0 00240E90  7C 03 03 78 */	mr r3, r0
+/* 802451F4 00240E94  48 00 06 25 */	bl "IsEnabled__13TRCHomeButtonFv"
+/* 802451F8 00240E98  2C 03 00 00 */	cmpwi r3, 0
+/* 802451FC 00240E9C  41 82 00 08 */	beq lbl_80245204
+/* 80245200 00240EA0  48 00 00 74 */	b lbl_80245274
+lbl_80245204:
+/* 80245204 00240EA4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80245208 00240EA8  48 00 05 FD */	bl "IsBanIconActive__13TRCHomeButtonFv"
+/* 8024520C 00240EAC  2C 1F 00 00 */	cmpwi r31, 0
+/* 80245210 00240EB0  7C 7F 1B 78 */	mr r31, r3
+/* 80245214 00240EB4  41 82 00 18 */	beq lbl_8024522C
+/* 80245218 00240EB8  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
+/* 8024521C 00240EBC  4B E1 AF B5 */	bl "GetWiiWideScreen__9EGraphicsCFv"
+/* 80245220 00240EC0  7C 64 1B 78 */	mr r4, r3
+/* 80245224 00240EC4  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80245228 00240EC8  48 00 10 C5 */	bl "StartUpHomeMenu__13TRCHomeButtonFb"
+lbl_8024522C:
+/* 8024522C 00240ECC  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80245230 00240ED0  48 00 11 25 */	bl "Update__13TRCHomeButtonFv"
+/* 80245234 00240ED4  2C 1F 00 00 */	cmpwi r31, 0
+/* 80245238 00240ED8  40 82 00 14 */	bne lbl_8024524C
+/* 8024523C 00240EDC  80 7E 00 00 */	lwz r3, 0(r30)
+/* 80245240 00240EE0  48 00 05 C5 */	bl "IsBanIconActive__13TRCHomeButtonFv"
+/* 80245244 00240EE4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245248 00240EE8  41 82 00 2C */	beq lbl_80245274
+lbl_8024524C:
+/* 8024524C 00240EEC  3F E0 80 54 */	lis r31, "_ngcRenderer"@ha
+/* 80245250 00240EF0  38 7F 8B 10 */	addi r3, r31, "_ngcRenderer"@l
+/* 80245254 00240EF4  48 07 E8 95 */	bl "GetRenderStateCache__12ENgcRendererFv"
+/* 80245258 00240EF8  48 00 05 A1 */	bl "Invalidate__20ENgcRenderStateCacheFv"
+/* 8024525C 00240EFC  38 7F 8B 10 */	addi r3, r31, -29936
+/* 80245260 00240F00  48 07 E8 89 */	bl "GetRenderStateCache__12ENgcRendererFv"
+/* 80245264 00240F04  38 80 00 00 */	li r4, 0
+/* 80245268 00240F08  48 08 42 F1 */	bl "Apply__20ENgcRenderStateCacheFb"
+/* 8024526C 00240F0C  7F C3 F3 78 */	mr r3, r30
+/* 80245270 00240F10  4B FF FD ED */	bl "PostRenderRestoreStates__14PetsHomeButtonFv"
+lbl_80245274:
+/* 80245274 00240F14  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245278 00240F18  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8024527C 00240F1C  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80245280 00240F20  7C 08 03 A6 */	mtlr r0
+/* 80245284 00240F24  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245288 00240F28  4E 80 00 20 */	blr 
+
+.global "PostFrameUpdate__14PetsHomeButtonFb"
+"PostFrameUpdate__14PetsHomeButtonFb":
+/* 8024528C 00240F2C  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80245290 00240F30  7C 08 02 A6 */	mflr r0
+/* 80245294 00240F34  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80245298 00240F38  39 61 00 20 */	addi r11, r1, 0x20
+/* 8024529C 00240F3C  48 1C A0 D9 */	bl "_savegpr_27"
+/* 802452A0 00240F40  80 03 00 00 */	lwz r0, 0(r3)
+/* 802452A4 00240F44  7C 7B 1B 78 */	mr r27, r3
+/* 802452A8 00240F48  7C 9C 23 78 */	mr r28, r4
+/* 802452AC 00240F4C  2C 00 00 00 */	cmpwi r0, 0
+/* 802452B0 00240F50  41 82 01 C0 */	beq lbl_80245470
+/* 802452B4 00240F54  7C 03 03 78 */	mr r3, r0
+/* 802452B8 00240F58  48 00 05 61 */	bl "IsEnabled__13TRCHomeButtonFv"
+/* 802452BC 00240F5C  2C 03 00 00 */	cmpwi r3, 0
+/* 802452C0 00240F60  41 82 01 B0 */	beq lbl_80245470
+/* 802452C4 00240F64  2C 1C 00 00 */	cmpwi r28, 0
+/* 802452C8 00240F68  40 82 00 08 */	bne lbl_802452D0
+/* 802452CC 00240F6C  48 00 01 A4 */	b lbl_80245470
+lbl_802452D0:
+/* 802452D0 00240F70  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
+/* 802452D4 00240F74  4B E1 AE FD */	bl "GetWiiWideScreen__9EGraphicsCFv"
+/* 802452D8 00240F78  7C 64 1B 78 */	mr r4, r3
+/* 802452DC 00240F7C  80 7B 00 00 */	lwz r3, 0(r27)
+/* 802452E0 00240F80  48 00 10 0D */	bl "StartUpHomeMenu__13TRCHomeButtonFb"
+/* 802452E4 00240F84  80 6D BC 04 */	lwz r3, "_pCtrlMan"-_SDA_BASE_(r13)
+/* 802452E8 00240F88  81 83 00 00 */	lwz r12, 0(r3)
+/* 802452EC 00240F8C  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 802452F0 00240F90  7D 89 03 A6 */	mtctr r12
+/* 802452F4 00240F94  4E 80 04 21 */	bctrl 
+/* 802452F8 00240F98  98 7B 00 04 */	stb r3, 4(r27)
+/* 802452FC 00240F9C  38 80 00 01 */	li r4, 1
+/* 80245300 00240FA0  80 6D BC 04 */	lwz r3, "_pCtrlMan"-_SDA_BASE_(r13)
+/* 80245304 00240FA4  81 83 00 00 */	lwz r12, 0(r3)
+/* 80245308 00240FA8  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 8024530C 00240FAC  7D 89 03 A6 */	mtctr r12
+/* 80245310 00240FB0  4E 80 04 21 */	bctrl 
+/* 80245314 00240FB4  80 7B 00 00 */	lwz r3, 0(r27)
+/* 80245318 00240FB8  48 00 05 11 */	bl "GetHomeMenuState__13TRCHomeButtonFv"
+/* 8024531C 00240FBC  2C 03 00 01 */	cmpwi r3, 1
+/* 80245320 00240FC0  40 82 01 50 */	bne lbl_80245470
+/* 80245324 00240FC4  38 60 00 01 */	li r3, 1
+/* 80245328 00240FC8  4B FF FD 81 */	bl "PauseAllSounds__Fb"
+/* 8024532C 00240FCC  38 60 00 00 */	li r3, 0
+/* 80245330 00240FD0  48 1A 95 21 */	bl "VISetTimeToDimming"
+/* 80245334 00240FD4  3F C0 80 54 */	lis r30, "_ngcRenderer"@ha
+/* 80245338 00240FD8  7C 7D 1B 78 */	mr r29, r3
+/* 8024533C 00240FDC  38 7E 8B 10 */	addi r3, r30, "_ngcRenderer"@l
+/* 80245340 00240FE0  38 80 00 01 */	li r4, 1
+/* 80245344 00240FE4  48 07 EC 55 */	bl "ForceDisableFullSceneAA__12ENgcRendererFb"
+/* 80245348 00240FE8  48 00 00 A0 */	b lbl_802453E8
+lbl_8024534C:
+/* 8024534C 00240FEC  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
+/* 80245350 00240FF0  81 83 00 00 */	lwz r12, 0(r3)
+/* 80245354 00240FF4  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 80245358 00240FF8  7D 89 03 A6 */	mtctr r12
+/* 8024535C 00240FFC  4E 80 04 21 */	bctrl 
+/* 80245360 00241000  48 03 C8 79 */	bl "DrawPrevFrameBufferToScreen__Fv"
+/* 80245364 00241004  4B FB 47 05 */	bl "GetCurrentRenderer__Fv"
+/* 80245368 00241008  81 83 00 00 */	lwz r12, 0(r3)
+/* 8024536C 0024100C  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 80245370 00241010  7D 89 03 A6 */	mtctr r12
+/* 80245374 00241014  4E 80 04 21 */	bctrl 
+/* 80245378 00241018  7C 7F 1B 78 */	mr r31, r3
+/* 8024537C 0024101C  3B 80 00 00 */	li r28, 0
+/* 80245380 00241020  48 00 00 40 */	b lbl_802453C0
+lbl_80245384:
+/* 80245384 00241024  4B FB 46 E5 */	bl "GetCurrentRenderer__Fv"
+/* 80245388 00241028  81 83 00 00 */	lwz r12, 0(r3)
+/* 8024538C 0024102C  7F 84 E3 78 */	mr r4, r28
+/* 80245390 00241030  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 80245394 00241034  7D 89 03 A6 */	mtctr r12
+/* 80245398 00241038  4E 80 04 21 */	bctrl 
+/* 8024539C 0024103C  80 7B 00 00 */	lwz r3, 0(r27)
+/* 802453A0 00241040  48 00 0F B5 */	bl "Update__13TRCHomeButtonFv"
+/* 802453A4 00241044  4B FB 46 C5 */	bl "GetCurrentRenderer__Fv"
+/* 802453A8 00241048  81 83 00 00 */	lwz r12, 0(r3)
+/* 802453AC 0024104C  7F 84 E3 78 */	mr r4, r28
+/* 802453B0 00241050  81 8C 00 1C */	lwz r12, 0x1c(r12)
+/* 802453B4 00241054  7D 89 03 A6 */	mtctr r12
+/* 802453B8 00241058  4E 80 04 21 */	bctrl 
+/* 802453BC 0024105C  3B 9C 00 01 */	addi r28, r28, 1
+lbl_802453C0:
+/* 802453C0 00241060  7C 1C F8 00 */	cmpw r28, r31
+/* 802453C4 00241064  41 80 FF C0 */	blt lbl_80245384
+/* 802453C8 00241068  38 7E 8B 10 */	addi r3, r30, -29936
+/* 802453CC 0024106C  48 07 E7 1D */	bl "GetRenderStateCache__12ENgcRendererFv"
+/* 802453D0 00241070  48 00 04 29 */	bl "Invalidate__20ENgcRenderStateCacheFv"
+/* 802453D4 00241074  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
+/* 802453D8 00241078  81 83 00 00 */	lwz r12, 0(r3)
+/* 802453DC 0024107C  81 8C 00 20 */	lwz r12, 0x20(r12)
+/* 802453E0 00241080  7D 89 03 A6 */	mtctr r12
+/* 802453E4 00241084  4E 80 04 21 */	bctrl 
+lbl_802453E8:
+/* 802453E8 00241088  80 7B 00 00 */	lwz r3, 0(r27)
+/* 802453EC 0024108C  48 00 04 3D */	bl "GetHomeMenuState__13TRCHomeButtonFv"
+/* 802453F0 00241090  2C 03 00 01 */	cmpwi r3, 1
+/* 802453F4 00241094  41 82 FF 58 */	beq lbl_8024534C
+/* 802453F8 00241098  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
+/* 802453FC 0024109C  38 80 00 00 */	li r4, 0
+/* 80245400 002410A0  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
+/* 80245404 002410A4  48 07 EB 95 */	bl "ForceDisableFullSceneAA__12ENgcRendererFb"
+/* 80245408 002410A8  7F 63 DB 78 */	mr r3, r27
+/* 8024540C 002410AC  4B FF FC 51 */	bl "PostRenderRestoreStates__14PetsHomeButtonFv"
+/* 80245410 002410B0  7F A3 EB 78 */	mr r3, r29
+/* 80245414 002410B4  48 1A 94 3D */	bl "VISetTimeToDimming"
+/* 80245418 002410B8  80 7B 00 00 */	lwz r3, 0(r27)
+/* 8024541C 002410BC  48 00 04 05 */	bl "GetShutdownButton__13TRCHomeButtonFv"
+/* 80245420 002410C0  2C 03 00 02 */	cmpwi r3, 2
+/* 80245424 002410C4  41 82 00 20 */	beq lbl_80245444
+/* 80245428 002410C8  40 80 00 28 */	bge lbl_80245450
+/* 8024542C 002410CC  2C 03 00 01 */	cmpwi r3, 1
+/* 80245430 002410D0  40 80 00 08 */	bge lbl_80245438
+/* 80245434 002410D4  48 00 00 1C */	b lbl_80245450
+lbl_80245438:
+/* 80245438 002410D8  38 60 00 03 */	li r3, 3
+/* 8024543C 002410DC  48 06 D5 21 */	bl "RequestReset__F9ResetType"
+/* 80245440 002410E0  48 00 00 30 */	b lbl_80245470
+lbl_80245444:
+/* 80245444 002410E4  38 60 00 02 */	li r3, 2
+/* 80245448 002410E8  48 06 D5 15 */	bl "RequestReset__F9ResetType"
+/* 8024544C 002410EC  48 00 00 24 */	b lbl_80245470
+lbl_80245450:
+/* 80245450 002410F0  80 6D BC 04 */	lwz r3, "_pCtrlMan"-_SDA_BASE_(r13)
+/* 80245454 002410F4  88 9B 00 04 */	lbz r4, 4(r27)
+/* 80245458 002410F8  81 83 00 00 */	lwz r12, 0(r3)
+/* 8024545C 002410FC  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 80245460 00241100  7D 89 03 A6 */	mtctr r12
+/* 80245464 00241104  4E 80 04 21 */	bctrl 
+/* 80245468 00241108  38 60 00 00 */	li r3, 0
+/* 8024546C 0024110C  4B FF FC 3D */	bl "PauseAllSounds__Fb"
+lbl_80245470:
+/* 80245470 00241110  39 61 00 20 */	addi r11, r1, 0x20
+/* 80245474 00241114  48 1C 9F 4D */	bl "_restgpr_27"
+/* 80245478 00241118  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8024547C 0024111C  7C 08 03 A6 */	mtlr r0
+/* 80245480 00241120  38 21 00 20 */	addi r1, r1, 0x20
+/* 80245484 00241124  4E 80 00 20 */	blr 
+
+.global "HBAllocFuncAlign__FPCcii"
+"HBAllocFuncAlign__FPCcii":
+/* 80245488 00241128  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8024548C 0024112C  7C 08 02 A6 */	mflr r0
+/* 80245490 00241130  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245494 00241134  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80245498 00241138  7C BF 2B 78 */	mr r31, r5
+/* 8024549C 0024113C  93 C1 00 08 */	stw r30, 8(r1)
+/* 802454A0 00241140  7C 9E 23 78 */	mr r30, r4
+/* 802454A4 00241144  48 00 CC 5D */	bl "MainHeap__Fv"
+/* 802454A8 00241148  7F C4 F3 78 */	mr r4, r30
+/* 802454AC 0024114C  7F E5 FB 78 */	mr r5, r31
+/* 802454B0 00241150  38 C0 00 00 */	li r6, 0
+/* 802454B4 00241154  38 E0 00 00 */	li r7, 0
+/* 802454B8 00241158  48 01 1D 95 */	bl "MallocAlignedWrapper__6EAHeapFUlUlUli"
+/* 802454BC 0024115C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802454C0 00241160  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802454C4 00241164  83 C1 00 08 */	lwz r30, 8(r1)
+/* 802454C8 00241168  7C 08 03 A6 */	mtlr r0
+/* 802454CC 0024116C  38 21 00 10 */	addi r1, r1, 0x10
+/* 802454D0 00241170  4E 80 00 20 */	blr 
+
+.global "HBAllocFunc__FPCci"
+"HBAllocFunc__FPCci":
+/* 802454D4 00241174  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802454D8 00241178  7C 08 02 A6 */	mflr r0
+/* 802454DC 0024117C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802454E0 00241180  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802454E4 00241184  7C 9F 23 78 */	mr r31, r4
+/* 802454E8 00241188  48 00 CC 19 */	bl "MainHeap__Fv"
+/* 802454EC 0024118C  7F E4 FB 78 */	mr r4, r31
+/* 802454F0 00241190  38 A0 00 00 */	li r5, 0
+/* 802454F4 00241194  48 01 0F FD */	bl "MallocWrapper__6EAHeapFUli"
+/* 802454F8 00241198  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802454FC 0024119C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245500 002411A0  7C 08 03 A6 */	mtlr r0
+/* 80245504 002411A4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245508 002411A8  4E 80 00 20 */	blr 
+
+.global "HBFreeFunc__FPv"
+"HBFreeFunc__FPv":
+/* 8024550C 002411AC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245510 002411B0  7C 08 02 A6 */	mflr r0
+/* 80245514 002411B4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245518 002411B8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8024551C 002411BC  7C 7F 1B 78 */	mr r31, r3
+/* 80245520 002411C0  48 00 CB E1 */	bl "MainHeap__Fv"
+/* 80245524 002411C4  7F E4 FB 78 */	mr r4, r31
+/* 80245528 002411C8  48 01 3B 15 */	bl "Free__6EAHeapFPv"
+/* 8024552C 002411CC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245530 002411D0  38 60 00 01 */	li r3, 1
+/* 80245534 002411D4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245538 002411D8  7C 08 03 A6 */	mtlr r0
+/* 8024553C 002411DC  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245540 002411E0  4E 80 00 20 */	blr 
+
+.global "DrawBanIconToFB__FPUciiiif"
+"DrawBanIconToFB__FPUciiiif":
+/* 80245544 002411E4  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80245548 002411E8  7C 08 02 A6 */	mflr r0
+/* 8024554C 002411EC  90 01 00 94 */	stw r0, 0x94(r1)
+/* 80245550 002411F0  DB E1 00 80 */	stfd f31, 0x80(r1)
+/* 80245554 002411F4  F3 E1 00 88 */	psq_st f31, 136(r1), 0, qr0
+/* 80245558 002411F8  DB C1 00 70 */	stfd f30, 0x70(r1)
+/* 8024555C 002411FC  F3 C1 00 78 */	psq_st f30, 120(r1), 0, qr0
+/* 80245560 00241200  DB A1 00 60 */	stfd f29, 0x60(r1)
+/* 80245564 00241204  F3 A1 00 68 */	psq_st f29, 104(r1), 0, qr0
+/* 80245568 00241208  39 61 00 60 */	addi r11, r1, 0x60
+/* 8024556C 0024120C  48 1C 9D F5 */	bl "_savegpr_22"
+/* 80245570 00241210  C0 02 9C 90 */	lfs f0, lbl_805DAEB0-_SDA2_BASE_(r2)
+/* 80245574 00241214  3C 00 43 30 */	lis r0, 0x4330
+/* 80245578 00241218  FF A0 08 90 */	fmr f29, f1
+/* 8024557C 0024121C  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80245580 00241220  EF E0 08 28 */	fsubs f31, f0, f1
+/* 80245584 00241224  CB C2 9C 98 */	lfd f30, lbl_805DAEB8-_SDA2_BASE_(r2)
+/* 80245588 00241228  90 01 00 18 */	stw r0, 0x18(r1)
+/* 8024558C 0024122C  7C 78 1B 78 */	mr r24, r3
+/* 80245590 00241230  7C 99 23 78 */	mr r25, r4
+/* 80245594 00241234  7C BA 2B 78 */	mr r26, r5
+/* 80245598 00241238  7C DB 33 78 */	mr r27, r6
+/* 8024559C 0024123C  7C FC 3B 78 */	mr r28, r7
+/* 802455A0 00241240  3B C0 00 00 */	li r30, 0
+/* 802455A4 00241244  3A CD BA 48 */	addi r22, r13, "backgroundColor$31666"-_SDA_BASE_
+/* 802455A8 00241248  48 00 01 08 */	b lbl_802456B0
+lbl_802455AC:
+/* 802455AC 0024124C  7C 7E E0 50 */	subf r3, r30, r28
+/* 802455B0 00241250  3B A0 00 00 */	li r29, 0
+/* 802455B4 00241254  38 03 FF FF */	addi r0, r3, -1
+/* 802455B8 00241258  7F FB 01 D6 */	mullw r31, r27, r0
+/* 802455BC 0024125C  57 F7 10 3A */	slwi r23, r31, 2
+/* 802455C0 00241260  48 00 00 E4 */	b lbl_802456A4
+lbl_802455C4:
+/* 802455C4 00241264  7C 7F B8 50 */	subf r3, r31, r23
+/* 802455C8 00241268  88 0D BA 48 */	lbz r0, "backgroundColor$31666"-_SDA_BASE_(r13)
+/* 802455CC 0024126C  7D 38 1A 14 */	add r9, r24, r3
+/* 802455D0 00241270  89 16 00 01 */	lbz r8, 1(r22)
+/* 802455D4 00241274  88 69 00 02 */	lbz r3, 2(r9)
+/* 802455D8 00241278  7F 24 CB 78 */	mr r4, r25
+/* 802455DC 0024127C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802455E0 00241280  7F 45 D3 78 */	mr r5, r26
+/* 802455E4 00241284  88 16 00 02 */	lbz r0, 2(r22)
+/* 802455E8 00241288  7F A6 EB 78 */	mr r6, r29
+/* 802455EC 0024128C  90 61 00 1C */	stw r3, 0x1c(r1)
+/* 802455F0 00241290  7F C7 F3 78 */	mr r7, r30
+/* 802455F4 00241294  C8 21 00 10 */	lfd f1, 0x10(r1)
+/* 802455F8 00241298  38 61 00 08 */	addi r3, r1, 8
+/* 802455FC 0024129C  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 80245600 002412A0  EC 41 F0 28 */	fsubs f2, f1, f30
+/* 80245604 002412A4  91 01 00 14 */	stw r8, 0x14(r1)
+/* 80245608 002412A8  EC 20 F0 28 */	fsubs f1, f0, f30
+/* 8024560C 002412AC  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80245610 002412B0  EC 62 07 F2 */	fmuls f3, f2, f31
+/* 80245614 002412B4  EC 41 07 72 */	fmuls f2, f1, f29
+/* 80245618 002412B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8024561C 002412BC  EC 20 F0 28 */	fsubs f1, f0, f30
+/* 80245620 002412C0  C8 01 00 10 */	lfd f0, 0x10(r1)
+/* 80245624 002412C4  EC 63 10 2A */	fadds f3, f3, f2
+/* 80245628 002412C8  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 8024562C 002412CC  EC 41 07 F2 */	fmuls f2, f1, f31
+/* 80245630 002412D0  FC 60 18 1E */	fctiwz f3, f3
+/* 80245634 002412D4  EC 20 07 F2 */	fmuls f1, f0, f31
+/* 80245638 002412D8  D8 61 00 20 */	stfd f3, 0x20(r1)
+/* 8024563C 002412DC  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80245640 002412E0  98 01 00 08 */	stb r0, 8(r1)
+/* 80245644 002412E4  88 09 00 01 */	lbz r0, 1(r9)
+/* 80245648 002412E8  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 8024564C 002412EC  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 80245650 002412F0  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 80245654 002412F4  EC 00 07 72 */	fmuls f0, f0, f29
+/* 80245658 002412F8  EC 02 00 2A */	fadds f0, f2, f0
+/* 8024565C 002412FC  FC 00 00 1E */	fctiwz f0, f0
+/* 80245660 00241300  D8 01 00 28 */	stfd f0, 0x28(r1)
+/* 80245664 00241304  80 01 00 2C */	lwz r0, 0x2c(r1)
+/* 80245668 00241308  98 01 00 09 */	stb r0, 9(r1)
+/* 8024566C 0024130C  88 09 00 00 */	lbz r0, 0(r9)
+/* 80245670 00241310  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80245674 00241314  C8 01 00 18 */	lfd f0, 0x18(r1)
+/* 80245678 00241318  EC 00 F0 28 */	fsubs f0, f0, f30
+/* 8024567C 0024131C  EC 00 07 72 */	fmuls f0, f0, f29
+/* 80245680 00241320  EC 01 00 2A */	fadds f0, f1, f0
+/* 80245684 00241324  FC 00 00 1E */	fctiwz f0, f0
+/* 80245688 00241328  D8 01 00 30 */	stfd f0, 0x30(r1)
+/* 8024568C 0024132C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 80245690 00241330  98 01 00 0A */	stb r0, 0xa(r1)
+/* 80245694 00241334  48 08 B1 3D */	bl "XFONTDrawRGBPixel__FPUciiii"
+/* 80245698 00241338  3B FF 00 01 */	addi r31, r31, 1
+/* 8024569C 0024133C  3A F7 00 04 */	addi r23, r23, 4
+/* 802456A0 00241340  3B BD 00 01 */	addi r29, r29, 1
+lbl_802456A4:
+/* 802456A4 00241344  7C 1D D8 00 */	cmpw r29, r27
+/* 802456A8 00241348  41 80 FF 1C */	blt lbl_802455C4
+/* 802456AC 0024134C  3B DE 00 01 */	addi r30, r30, 1
+lbl_802456B0:
+/* 802456B0 00241350  7C 1E E0 00 */	cmpw r30, r28
+/* 802456B4 00241354  41 80 FE F8 */	blt lbl_802455AC
+/* 802456B8 00241358  E3 E1 00 88 */	psq_l f31, 136(r1), 0, qr0
+/* 802456BC 0024135C  CB E1 00 80 */	lfd f31, 0x80(r1)
+/* 802456C0 00241360  E3 C1 00 78 */	psq_l f30, 120(r1), 0, qr0
+/* 802456C4 00241364  CB C1 00 70 */	lfd f30, 0x70(r1)
+/* 802456C8 00241368  E3 A1 00 68 */	psq_l f29, 104(r1), 0, qr0
+/* 802456CC 0024136C  39 61 00 60 */	addi r11, r1, 0x60
+/* 802456D0 00241370  CB A1 00 60 */	lfd f29, 0x60(r1)
+/* 802456D4 00241374  48 1C 9C D9 */	bl "_restgpr_22"
+/* 802456D8 00241378  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 802456DC 0024137C  7C 08 03 A6 */	mtlr r0
+/* 802456E0 00241380  38 21 00 90 */	addi r1, r1, 0x90
+/* 802456E4 00241384  4E 80 00 20 */	blr 
+
+.global "HomeButton_DiskEjectUpdate__Fv"
+"HomeButton_DiskEjectUpdate__Fv":
+/* 802456E8 00241388  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802456EC 0024138C  7C 08 02 A6 */	mflr r0
+/* 802456F0 00241390  38 6D BA 40 */	addi r3, r13, "_wiiHomeButton"-_SDA_BASE_
+/* 802456F4 00241394  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802456F8 00241398  DB E1 00 18 */	stfd f31, 0x18(r1)
+/* 802456FC 0024139C  93 E1 00 14 */	stw r31, 0x14(r1)
+/* 80245700 002413A0  48 00 01 A5 */	bl "GetTRCHomeButton__14PetsHomeButtonFv"
+/* 80245704 002413A4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245708 002413A8  7C 7F 1B 78 */	mr r31, r3
+/* 8024570C 002413AC  41 82 00 6C */	beq lbl_80245778
+/* 80245710 002413B0  48 00 01 21 */	bl "GetBanIconData__13TRCHomeButtonFv"
+/* 80245714 002413B4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245718 002413B8  41 82 00 60 */	beq lbl_80245778
+/* 8024571C 002413BC  7F E3 FB 78 */	mr r3, r31
+/* 80245720 002413C0  48 00 0B 49 */	bl "WasHomeButtonPressedThisFrame__13TRCHomeButtonFv"
+/* 80245724 002413C4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245728 002413C8  41 82 00 0C */	beq lbl_80245734
+/* 8024572C 002413CC  7F E3 FB 78 */	mr r3, r31
+/* 80245730 002413D0  48 00 11 19 */	bl "TriggerHomeMenuBanIcon__13TRCHomeButtonFv"
+lbl_80245734:
+/* 80245734 002413D4  7F E3 FB 78 */	mr r3, r31
+/* 80245738 002413D8  48 00 00 CD */	bl "IsBanIconActive__13TRCHomeButtonFv"
+/* 8024573C 002413DC  2C 03 00 00 */	cmpwi r3, 0
+/* 80245740 002413E0  41 82 00 38 */	beq lbl_80245778
+/* 80245744 002413E4  7F E3 FB 78 */	mr r3, r31
+/* 80245748 002413E8  48 00 11 69 */	bl "UpdateBanIconAlpha__13TRCHomeButtonFv"
+/* 8024574C 002413EC  FF E0 08 90 */	fmr f31, f1
+/* 80245750 002413F0  7F E3 FB 78 */	mr r3, r31
+/* 80245754 002413F4  48 00 00 DD */	bl "GetBanIconData__13TRCHomeButtonFv"
+/* 80245758 002413F8  FC 20 F8 90 */	fmr f1, f31
+/* 8024575C 002413FC  38 80 00 40 */	li r4, 0x40
+/* 80245760 00241400  38 A0 00 40 */	li r5, 0x40
+/* 80245764 00241404  38 C0 00 38 */	li r6, 0x38
+/* 80245768 00241408  38 E0 00 38 */	li r7, 0x38
+/* 8024576C 0024140C  4B FF FD D9 */	bl "DrawBanIconToFB__FPUciiiif"
+/* 80245770 00241410  38 60 00 01 */	li r3, 1
+/* 80245774 00241414  48 00 00 08 */	b lbl_8024577C
+lbl_80245778:
+/* 80245778 00241418  38 60 00 00 */	li r3, 0
+lbl_8024577C:
+/* 8024577C 0024141C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80245780 00241420  CB E1 00 18 */	lfd f31, 0x18(r1)
+/* 80245784 00241424  83 E1 00 14 */	lwz r31, 0x14(r1)
+/* 80245788 00241428  7C 08 03 A6 */	mtlr r0
+/* 8024578C 0024142C  38 21 00 20 */	addi r1, r1, 0x20
+/* 80245790 00241430  4E 80 00 20 */	blr 
+
+.global "__sinit_game_wii_unity_cpp"
+"__sinit_game_wii_unity_cpp":
+/* 80245794 00241434  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245798 00241438  7C 08 02 A6 */	mflr r0
+/* 8024579C 0024143C  38 6D BA 40 */	addi r3, r13, "_wiiHomeButton"-_SDA_BASE_
+/* 802457A0 00241440  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802457A4 00241444  4B FF F7 B9 */	bl "__ct__14PetsHomeButtonFv"
+/* 802457A8 00241448  3C 80 80 24 */	lis r4, "__dt__14PetsHomeButtonFv"@ha
+/* 802457AC 0024144C  3C A0 80 4A */	lis r5, lbl_804A4748@ha
+/* 802457B0 00241450  38 84 4F 68 */	addi r4, r4, "__dt__14PetsHomeButtonFv"@l
+/* 802457B4 00241454  38 6D BA 40 */	addi r3, r13, "_wiiHomeButton"-_SDA_BASE_
+/* 802457B8 00241458  38 A5 47 48 */	addi r5, r5, lbl_804A4748@l
+/* 802457BC 0024145C  48 1C 95 61 */	bl "__register_global_object"
+/* 802457C0 00241460  3C 60 80 4A */	lis r3, "msInitParams__13TRCHomeButton"@ha
+/* 802457C4 00241464  38 63 47 54 */	addi r3, r3, "msInitParams__13TRCHomeButton"@l
+/* 802457C8 00241468  48 00 00 15 */	bl "__ct__10TRCWiiInitFv"
+/* 802457CC 0024146C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802457D0 00241470  7C 08 03 A6 */	mtlr r0
+/* 802457D4 00241474  38 21 00 10 */	addi r1, r1, 0x10
+/* 802457D8 00241478  4E 80 00 20 */	blr 
+
+.global "__ct__10TRCWiiInitFv"
+"__ct__10TRCWiiInitFv":
+/* 802457DC 0024147C  38 00 00 00 */	li r0, 0
+/* 802457E0 00241480  90 03 00 00 */	stw r0, 0(r3)
+/* 802457E4 00241484  90 03 00 04 */	stw r0, 4(r3)
+/* 802457E8 00241488  90 03 00 08 */	stw r0, 8(r3)
+/* 802457EC 0024148C  4E 80 00 20 */	blr 
+
+.global "ResumeFX__6EAudioFv"
+"ResumeFX__6EAudioFv":
+/* 802457F0 00241490  4E 80 00 20 */	blr 
+
+.global "PauseFX__6EAudioFv"
+"PauseFX__6EAudioFv":
+/* 802457F4 00241494  4E 80 00 20 */	blr 
+
+.global "Invalidate__20ENgcRenderStateCacheFv"
+"Invalidate__20ENgcRenderStateCacheFv":
+/* 802457F8 00241498  38 00 FF FF */	li r0, -1
+/* 802457FC 0024149C  90 03 0D 94 */	stw r0, 0xd94(r3)
+/* 80245800 002414A0  4E 80 00 20 */	blr 
+
+.global "IsBanIconActive__13TRCHomeButtonFv"
+"IsBanIconActive__13TRCHomeButtonFv":
+/* 80245804 002414A4  80 63 00 C4 */	lwz r3, 0xc4(r3)
+/* 80245808 002414A8  38 03 FF FF */	addi r0, r3, -1
+/* 8024580C 002414AC  7C 00 00 34 */	cntlzw r0, r0
+/* 80245810 002414B0  54 03 D9 7E */	srwi r3, r0, 5
+/* 80245814 002414B4  4E 80 00 20 */	blr 
+
+.global "IsEnabled__13TRCHomeButtonFv"
+"IsEnabled__13TRCHomeButtonFv":
+/* 80245818 002414B8  88 63 00 D1 */	lbz r3, 0xd1(r3)
+/* 8024581C 002414BC  4E 80 00 20 */	blr 
+
+.global "GetShutdownButton__13TRCHomeButtonFv"
+"GetShutdownButton__13TRCHomeButtonFv":
+/* 80245820 002414C0  80 63 00 D4 */	lwz r3, 0xd4(r3)
+/* 80245824 002414C4  4E 80 00 20 */	blr 
+
+.global "GetHomeMenuState__13TRCHomeButtonFv"
+"GetHomeMenuState__13TRCHomeButtonFv":
+/* 80245828 002414C8  80 63 00 24 */	lwz r3, 0x24(r3)
+/* 8024582C 002414CC  4E 80 00 20 */	blr 
+
+.global "GetBanIconData__13TRCHomeButtonFv"
+"GetBanIconData__13TRCHomeButtonFv":
+/* 80245830 002414D0  80 63 00 6C */	lwz r3, 0x6c(r3)
+/* 80245834 002414D4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245838 002414D8  41 82 00 0C */	beq lbl_80245844
+/* 8024583C 002414DC  38 63 00 36 */	addi r3, r3, 0x36
+/* 80245840 002414E0  4E 80 00 20 */	blr 
+lbl_80245844:
+/* 80245844 002414E4  38 60 00 00 */	li r3, 0
+/* 80245848 002414E8  4E 80 00 20 */	blr 
+
+.global "__nw__13TRCHomeButtonFUl"
+"__nw__13TRCHomeButtonFUl":
+/* 8024584C 002414EC  3C A0 80 4A */	lis r5, "msInitParams__13TRCHomeButton"@ha
+/* 80245850 002414F0  3C C0 80 45 */	lis r6, lbl_8044EA70@ha
+/* 80245854 002414F4  38 A5 47 54 */	addi r5, r5, "msInitParams__13TRCHomeButton"@l
+/* 80245858 002414F8  7C 64 1B 78 */	mr r4, r3
+/* 8024585C 002414FC  81 85 00 04 */	lwz r12, 4(r5)
+/* 80245860 00241500  38 66 EA 70 */	addi r3, r6, lbl_8044EA70@l
+/* 80245864 00241504  7D 89 03 A6 */	mtctr r12
+/* 80245868 00241508  4E 80 04 20 */	bctr 
+
+.global "__as__10TRCWiiInitFRC10TRCWiiInit"
+"__as__10TRCWiiInitFRC10TRCWiiInit":
+/* 8024586C 0024150C  80 C4 00 00 */	lwz r6, 0(r4)
+/* 80245870 00241510  80 A4 00 04 */	lwz r5, 4(r4)
+/* 80245874 00241514  80 04 00 08 */	lwz r0, 8(r4)
+/* 80245878 00241518  90 C3 00 00 */	stw r6, 0(r3)
+/* 8024587C 0024151C  90 A3 00 04 */	stw r5, 4(r3)
+/* 80245880 00241520  90 03 00 08 */	stw r0, 8(r3)
+/* 80245884 00241524  4E 80 00 20 */	blr 
+
+.global "__dl__13TRCHomeButtonFPvUl"
+"__dl__13TRCHomeButtonFPvUl":
+/* 80245888 00241528  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 8024588C 0024152C  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245890 00241530  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245894 00241534  7D 89 03 A6 */	mtctr r12
+/* 80245898 00241538  4E 80 04 20 */	bctr 
+
+.global "IsDPDEnabled__18EControllerManagerFv"
+"IsDPDEnabled__18EControllerManagerFv":
+/* 8024589C 0024153C  38 60 00 00 */	li r3, 0
+/* 802458A0 00241540  4E 80 00 20 */	blr 
+
+.global "GetTRCHomeButton__14PetsHomeButtonFv"
+"GetTRCHomeButton__14PetsHomeButtonFv":
+/* 802458A4 00241544  80 63 00 00 */	lwz r3, 0(r3)
+/* 802458A8 00241548  4E 80 00 20 */	blr 
+
+.global "Create__13TRCHomeButtonFP10TRCWiiInit"
+"Create__13TRCHomeButtonFP10TRCWiiInit":
+/* 802458AC 0024154C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802458B0 00241550  7C 08 02 A6 */	mflr r0
+/* 802458B4 00241554  7C 64 1B 78 */	mr r4, r3
+/* 802458B8 00241558  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802458BC 0024155C  80 0D BA 4C */	lwz r0, "m_pInstance__13TRCHomeButton"-_SDA_BASE_(r13)
+/* 802458C0 00241560  2C 00 00 00 */	cmpwi r0, 0
+/* 802458C4 00241564  40 82 00 28 */	bne lbl_802458EC
+/* 802458C8 00241568  3C 60 80 4A */	lis r3, "msInitParams__13TRCHomeButton"@ha
+/* 802458CC 0024156C  38 63 47 54 */	addi r3, r3, "msInitParams__13TRCHomeButton"@l
+/* 802458D0 00241570  4B FF FF 9D */	bl "__as__10TRCWiiInitFRC10TRCWiiInit"
+/* 802458D4 00241574  38 60 31 C4 */	li r3, 0x31c4
+/* 802458D8 00241578  4B FF FF 75 */	bl "__nw__13TRCHomeButtonFUl"
+/* 802458DC 0024157C  2C 03 00 00 */	cmpwi r3, 0
+/* 802458E0 00241580  41 82 00 10 */	beq lbl_802458F0
+/* 802458E4 00241584  48 00 00 31 */	bl "__ct__13TRCHomeButtonFv"
+/* 802458E8 00241588  48 00 00 08 */	b lbl_802458F0
+lbl_802458EC:
+/* 802458EC 0024158C  7C 03 03 78 */	mr r3, r0
+lbl_802458F0:
+/* 802458F0 00241590  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802458F4 00241594  7C 08 03 A6 */	mtlr r0
+/* 802458F8 00241598  38 21 00 10 */	addi r1, r1, 0x10
+/* 802458FC 0024159C  4E 80 00 20 */	blr 
+
+.global "Destroy__13TRCHomeButtonFP13TRCHomeButton"
+"Destroy__13TRCHomeButtonFP13TRCHomeButton":
+/* 80245900 002415A0  2C 03 00 00 */	cmpwi r3, 0
+/* 80245904 002415A4  4D 82 00 20 */	beqlr 
+/* 80245908 002415A8  38 80 00 01 */	li r4, 1
+/* 8024590C 002415AC  48 00 01 04 */	b "__dt__13TRCHomeButtonFv"
+/* 80245910 002415B0  4E 80 00 20 */	blr 
+
+.global "__ct__13TRCHomeButtonFv"
+"__ct__13TRCHomeButtonFv":
+/* 80245914 002415B4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245918 002415B8  7C 08 02 A6 */	mflr r0
+/* 8024591C 002415BC  38 80 00 00 */	li r4, 0
+/* 80245920 002415C0  38 A0 00 40 */	li r5, 0x40
+/* 80245924 002415C4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245928 002415C8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8024592C 002415CC  7C 7F 1B 78 */	mr r31, r3
+/* 80245930 002415D0  90 6D BA 4C */	stw r3, "m_pInstance__13TRCHomeButton"-_SDA_BASE_(r13)
+/* 80245934 002415D4  38 63 00 28 */	addi r3, r3, 0x28
+/* 80245938 002415D8  4B DB EB 05 */	bl "memset"
+/* 8024593C 002415DC  38 7F 0F 4C */	addi r3, r31, 0xf4c
+/* 80245940 002415E0  38 80 00 00 */	li r4, 0
+/* 80245944 002415E4  38 A0 21 00 */	li r5, 0x2100
+/* 80245948 002415E8  4B DB EA F5 */	bl "memset"
+/* 8024594C 002415EC  38 7F 30 4C */	addi r3, r31, 0x304c
+/* 80245950 002415F0  38 80 00 00 */	li r4, 0
+/* 80245954 002415F4  38 A0 00 10 */	li r5, 0x10
+/* 80245958 002415F8  4B DB EA E5 */	bl "memset"
+/* 8024595C 002415FC  38 7F 30 6C */	addi r3, r31, 0x306c
+/* 80245960 00241600  38 80 00 00 */	li r4, 0
+/* 80245964 00241604  38 A0 00 10 */	li r5, 0x10
+/* 80245968 00241608  4B DB EA D5 */	bl "memset"
+/* 8024596C 0024160C  38 7F 30 7C */	addi r3, r31, 0x307c
+/* 80245970 00241610  38 80 00 00 */	li r4, 0
+/* 80245974 00241614  38 A0 01 40 */	li r5, 0x140
+/* 80245978 00241618  4B DB EA C5 */	bl "memset"
+/* 8024597C 0024161C  38 7F 00 70 */	addi r3, r31, 0x70
+/* 80245980 00241620  38 80 00 00 */	li r4, 0
+/* 80245984 00241624  38 A0 00 40 */	li r5, 0x40
+/* 80245988 00241628  4B DB EA B5 */	bl "memset"
+/* 8024598C 0024162C  7F E3 FB 78 */	mr r3, r31
+/* 80245990 00241630  38 80 00 00 */	li r4, 0
+/* 80245994 00241634  38 A0 00 20 */	li r5, 0x20
+/* 80245998 00241638  4B DB EA A5 */	bl "memset"
+/* 8024599C 0024163C  38 C0 00 00 */	li r6, 0
+/* 802459A0 00241640  38 A0 00 03 */	li r5, 3
+/* 802459A4 00241644  38 80 00 01 */	li r4, 1
+/* 802459A8 00241648  38 00 FF FF */	li r0, -1
+/* 802459AC 0024164C  90 DF 00 68 */	stw r6, 0x68(r31)
+/* 802459B0 00241650  7F E3 FB 78 */	mr r3, r31
+/* 802459B4 00241654  90 DF 00 B0 */	stw r6, 0xb0(r31)
+/* 802459B8 00241658  90 BF 00 B4 */	stw r5, 0xb4(r31)
+/* 802459BC 0024165C  90 DF 00 B8 */	stw r6, 0xb8(r31)
+/* 802459C0 00241660  90 DF 00 BC */	stw r6, 0xbc(r31)
+/* 802459C4 00241664  90 DF 00 C4 */	stw r6, 0xc4(r31)
+/* 802459C8 00241668  90 DF 00 C0 */	stw r6, 0xc0(r31)
+/* 802459CC 0024166C  90 DF 00 C8 */	stw r6, 0xc8(r31)
+/* 802459D0 00241670  90 DF 00 CC */	stw r6, 0xcc(r31)
+/* 802459D4 00241674  98 DF 00 D0 */	stb r6, 0xd0(r31)
+/* 802459D8 00241678  90 DF 00 24 */	stw r6, 0x24(r31)
+/* 802459DC 0024167C  90 9F 00 20 */	stw r4, 0x20(r31)
+/* 802459E0 00241680  98 DF 00 D1 */	stb r6, 0xd1(r31)
+/* 802459E4 00241684  98 DF 00 D2 */	stb r6, 0xd2(r31)
+/* 802459E8 00241688  98 DF 00 D3 */	stb r6, 0xd3(r31)
+/* 802459EC 0024168C  90 1F 00 D4 */	stw r0, 0xd4(r31)
+/* 802459F0 00241690  90 DF 00 6C */	stw r6, 0x6c(r31)
+/* 802459F4 00241694  90 DF 31 BC */	stw r6, 0x31bc(r31)
+/* 802459F8 00241698  90 DF 31 C0 */	stw r6, 0x31c0(r31)
+/* 802459FC 0024169C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245A00 002416A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245A04 002416A4  7C 08 03 A6 */	mtlr r0
+/* 80245A08 002416A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245A0C 002416AC  4E 80 00 20 */	blr 
+
+.global "__dt__13TRCHomeButtonFv"
+"__dt__13TRCHomeButtonFv":
+/* 80245A10 002416B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245A14 002416B4  7C 08 02 A6 */	mflr r0
+/* 80245A18 002416B8  2C 03 00 00 */	cmpwi r3, 0
+/* 80245A1C 002416BC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245A20 002416C0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80245A24 002416C4  7C 9F 23 78 */	mr r31, r4
+/* 80245A28 002416C8  93 C1 00 08 */	stw r30, 8(r1)
+/* 80245A2C 002416CC  7C 7E 1B 78 */	mr r30, r3
+/* 80245A30 002416D0  41 82 00 24 */	beq lbl_80245A54
+/* 80245A34 002416D4  48 00 02 C9 */	bl "Restore__13TRCHomeButtonFv"
+/* 80245A38 002416D8  38 00 00 00 */	li r0, 0
+/* 80245A3C 002416DC  2C 1F 00 00 */	cmpwi r31, 0
+/* 80245A40 002416E0  90 0D BA 4C */	stw r0, "m_pInstance__13TRCHomeButton"-_SDA_BASE_(r13)
+/* 80245A44 002416E4  40 81 00 10 */	ble lbl_80245A54
+/* 80245A48 002416E8  7F C3 F3 78 */	mr r3, r30
+/* 80245A4C 002416EC  38 80 31 C4 */	li r4, 0x31c4
+/* 80245A50 002416F0  4B FF FE 39 */	bl "__dl__13TRCHomeButtonFPvUl"
+lbl_80245A54:
+/* 80245A54 002416F4  7F C3 F3 78 */	mr r3, r30
+/* 80245A58 002416F8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245A5C 002416FC  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80245A60 00241700  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245A64 00241704  7C 08 03 A6 */	mtlr r0
+/* 80245A68 00241708  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245A6C 0024170C  4E 80 00 20 */	blr 
+
+.global "LoadData__13TRCHomeButtonFPCcPCciPUl"
+"LoadData__13TRCHomeButtonFPCcPCciPUl":
+/* 80245A70 00241710  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80245A74 00241714  7C 08 02 A6 */	mflr r0
+/* 80245A78 00241718  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80245A7C 0024171C  39 61 00 20 */	addi r11, r1, 0x20
+/* 80245A80 00241720  48 1C 98 F1 */	bl "_savegpr_26"
+/* 80245A84 00241724  7C BA 2B 78 */	mr r26, r5
+/* 80245A88 00241728  7C DB 33 78 */	mr r27, r6
+/* 80245A8C 0024172C  7C FC 3B 78 */	mr r28, r7
+/* 80245A90 00241730  3B E0 00 00 */	li r31, 0
+/* 80245A94 00241734  38 60 00 00 */	li r3, 0
+/* 80245A98 00241738  38 AD 9E 10 */	addi r5, r13, lbl_805D64F0-_SDA_BASE_
+/* 80245A9C 0024173C  38 C0 00 02 */	li r6, 2
+/* 80245AA0 00241740  3C E0 80 00 */	lis r7, 0x8000
+/* 80245AA4 00241744  39 00 00 00 */	li r8, 0
+/* 80245AA8 00241748  48 03 2C 75 */	bl "Creator__8ENgcFileFP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi"
+/* 80245AAC 0024174C  2C 03 00 00 */	cmpwi r3, 0
+/* 80245AB0 00241750  7C 7E 1B 78 */	mr r30, r3
+/* 80245AB4 00241754  41 82 00 68 */	beq lbl_80245B1C
+/* 80245AB8 00241758  4B DE A3 99 */	bl "GetLength__5EFileCFv"
+/* 80245ABC 0024175C  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245AC0 00241760  7C 7D 1B 78 */	mr r29, r3
+/* 80245AC4 00241764  81 84 47 54 */	lwz r12, "msInitParams__13TRCHomeButton"@l(r4)
+/* 80245AC8 00241768  7F 43 D3 78 */	mr r3, r26
+/* 80245ACC 0024176C  7F A4 EB 78 */	mr r4, r29
+/* 80245AD0 00241770  7F 65 DB 78 */	mr r5, r27
+/* 80245AD4 00241774  7D 89 03 A6 */	mtctr r12
+/* 80245AD8 00241778  4E 80 04 21 */	bctrl 
+/* 80245ADC 0024177C  81 9E 00 00 */	lwz r12, 0(r30)
+/* 80245AE0 00241780  7C 7F 1B 78 */	mr r31, r3
+/* 80245AE4 00241784  7F C3 F3 78 */	mr r3, r30
+/* 80245AE8 00241788  7F A5 EB 78 */	mr r5, r29
+/* 80245AEC 0024178C  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 80245AF0 00241790  7F E4 FB 78 */	mr r4, r31
+/* 80245AF4 00241794  7D 89 03 A6 */	mtctr r12
+/* 80245AF8 00241798  4E 80 04 21 */	bctrl 
+/* 80245AFC 0024179C  2C 1C 00 00 */	cmpwi r28, 0
+/* 80245B00 002417A0  41 82 00 08 */	beq lbl_80245B08
+/* 80245B04 002417A4  93 BC 00 00 */	stw r29, 0(r28)
+lbl_80245B08:
+/* 80245B08 002417A8  81 9E 00 00 */	lwz r12, 0(r30)
+/* 80245B0C 002417AC  7F C3 F3 78 */	mr r3, r30
+/* 80245B10 002417B0  81 8C 00 0C */	lwz r12, 0xc(r12)
+/* 80245B14 002417B4  7D 89 03 A6 */	mtctr r12
+/* 80245B18 002417B8  4E 80 04 21 */	bctrl 
+lbl_80245B1C:
+/* 80245B1C 002417BC  39 61 00 20 */	addi r11, r1, 0x20
+/* 80245B20 002417C0  7F E3 FB 78 */	mr r3, r31
+/* 80245B24 002417C4  48 1C 98 99 */	bl "_restgpr_26"
+/* 80245B28 002417C8  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80245B2C 002417CC  7C 08 03 A6 */	mtlr r0
+/* 80245B30 002417D0  38 21 00 20 */	addi r1, r1, 0x20
+/* 80245B34 002417D4  4E 80 00 20 */	blr 
+
+.global "Init__13TRCHomeButtonFPCcQ213TRCHomeButton13HomeInputType"
+"Init__13TRCHomeButtonFPCcQ213TRCHomeButton13HomeInputType":
+/* 80245B38 002417D8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245B3C 002417DC  7C 08 02 A6 */	mflr r0
+/* 80245B40 002417E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245B44 002417E4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80245B48 002417E8  7C BF 2B 78 */	mr r31, r5
+/* 80245B4C 002417EC  38 A0 00 20 */	li r5, 0x20
+/* 80245B50 002417F0  93 C1 00 08 */	stw r30, 8(r1)
+/* 80245B54 002417F4  7C 7E 1B 78 */	mr r30, r3
+/* 80245B58 002417F8  48 1C 29 D9 */	bl "strncpy"
+/* 80245B5C 002417FC  93 FE 00 20 */	stw r31, 0x20(r30)
+/* 80245B60 00241800  7F C3 F3 78 */	mr r3, r30
+/* 80245B64 00241804  48 00 02 E9 */	bl "InitInfo__13TRCHomeButtonFv"
+/* 80245B68 00241808  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 80245B6C 0024180C  98 7E 00 D3 */	stb r3, 0xd3(r30)
+/* 80245B70 00241810  41 82 00 6C */	beq lbl_80245BDC
+/* 80245B74 00241814  7F C3 F3 78 */	mr r3, r30
+/* 80245B78 00241818  48 00 05 45 */	bl "InitHBMLibrary__13TRCHomeButtonFv"
+/* 80245B7C 0024181C  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 80245B80 00241820  98 7E 00 D3 */	stb r3, 0xd3(r30)
+/* 80245B84 00241824  41 82 00 58 */	beq lbl_80245BDC
+/* 80245B88 00241828  7F C3 F3 78 */	mr r3, r30
+/* 80245B8C 0024182C  48 00 05 9D */	bl "InitSound__13TRCHomeButtonFv"
+/* 80245B90 00241830  54 60 06 3F */	clrlwi. r0, r3, 0x18
+/* 80245B94 00241834  98 7E 00 D3 */	stb r3, 0xd3(r30)
+/* 80245B98 00241838  41 82 00 44 */	beq lbl_80245BDC
+/* 80245B9C 0024183C  C0 02 9C A0 */	lfs f0, lbl_805DAEC0-_SDA2_BASE_(r2)
+/* 80245BA0 00241840  38 60 00 00 */	li r3, 0
+/* 80245BA4 00241844  38 00 00 01 */	li r0, 1
+/* 80245BA8 00241848  90 7E 00 7C */	stw r3, 0x7c(r30)
+/* 80245BAC 0024184C  D0 1E 00 74 */	stfs f0, 0x74(r30)
+/* 80245BB0 00241850  D0 1E 00 78 */	stfs f0, 0x78(r30)
+/* 80245BB4 00241854  D0 1E 00 84 */	stfs f0, 0x84(r30)
+/* 80245BB8 00241858  D0 1E 00 88 */	stfs f0, 0x88(r30)
+/* 80245BBC 0024185C  90 7E 00 8C */	stw r3, 0x8c(r30)
+/* 80245BC0 00241860  D0 1E 00 94 */	stfs f0, 0x94(r30)
+/* 80245BC4 00241864  D0 1E 00 98 */	stfs f0, 0x98(r30)
+/* 80245BC8 00241868  90 7E 00 9C */	stw r3, 0x9c(r30)
+/* 80245BCC 0024186C  D0 1E 00 A4 */	stfs f0, 0xa4(r30)
+/* 80245BD0 00241870  D0 1E 00 A8 */	stfs f0, 0xa8(r30)
+/* 80245BD4 00241874  90 7E 00 AC */	stw r3, 0xac(r30)
+/* 80245BD8 00241878  98 1E 00 D1 */	stb r0, 0xd1(r30)
+lbl_80245BDC:
+/* 80245BDC 0024187C  88 7E 00 D3 */	lbz r3, 0xd3(r30)
+/* 80245BE0 00241880  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245BE4 00241884  83 C1 00 08 */	lwz r30, 8(r1)
+/* 80245BE8 00241888  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245BEC 0024188C  7C 08 03 A6 */	mtlr r0
+/* 80245BF0 00241890  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245BF4 00241894  4E 80 00 20 */	blr 
+
+.global "LoadBanIcon__13TRCHomeButtonFPCc"
+"LoadBanIcon__13TRCHomeButtonFPCc":
+/* 80245BF8 00241898  94 21 FF A0 */	stwu r1, -0x60(r1)
+/* 80245BFC 0024189C  7C 08 02 A6 */	mflr r0
+/* 80245C00 002418A0  90 01 00 64 */	stw r0, 0x64(r1)
+/* 80245C04 002418A4  93 E1 00 5C */	stw r31, 0x5c(r1)
+/* 80245C08 002418A8  3F E0 80 45 */	lis r31, lbl_8044E8C8@ha
+/* 80245C0C 002418AC  3B FF E8 C8 */	addi r31, r31, lbl_8044E8C8@l
+/* 80245C10 002418B0  93 C1 00 58 */	stw r30, 0x58(r1)
+/* 80245C14 002418B4  7C 9E 23 78 */	mr r30, r4
+/* 80245C18 002418B8  93 A1 00 54 */	stw r29, 0x54(r1)
+/* 80245C1C 002418BC  7C 7D 1B 78 */	mr r29, r3
+/* 80245C20 002418C0  80 03 00 68 */	lwz r0, 0x68(r3)
+/* 80245C24 002418C4  2C 00 00 00 */	cmpwi r0, 0
+/* 80245C28 002418C8  40 82 00 B8 */	bne lbl_80245CE0
+/* 80245C2C 002418CC  38 00 00 00 */	li r0, 0
+/* 80245C30 002418D0  38 61 00 08 */	addi r3, r1, 8
+/* 80245C34 002418D4  90 01 00 08 */	stw r0, 8(r1)
+/* 80245C38 002418D8  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80245C3C 002418DC  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80245C40 002418E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245C44 002418E4  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80245C48 002418E8  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80245C4C 002418EC  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80245C50 002418F0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80245C54 002418F4  90 01 00 28 */	stw r0, 0x28(r1)
+/* 80245C58 002418F8  90 01 00 2C */	stw r0, 0x2c(r1)
+/* 80245C5C 002418FC  90 01 00 30 */	stw r0, 0x30(r1)
+/* 80245C60 00241900  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80245C64 00241904  90 01 00 38 */	stw r0, 0x38(r1)
+/* 80245C68 00241908  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 80245C6C 0024190C  90 01 00 40 */	stw r0, 0x40(r1)
+/* 80245C70 00241910  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80245C74 00241914  48 1C 27 FD */	bl "strcpy"
+/* 80245C78 00241918  38 61 00 08 */	addi r3, r1, 8
+/* 80245C7C 0024191C  38 9F 00 14 */	addi r4, r31, 0x14
+/* 80245C80 00241920  48 1C 28 F5 */	bl "strcat"
+/* 80245C84 00241924  7F A3 EB 78 */	mr r3, r29
+/* 80245C88 00241928  38 81 00 08 */	addi r4, r1, 8
+/* 80245C8C 0024192C  38 BF 00 28 */	addi r5, r31, 0x28
+/* 80245C90 00241930  38 C0 00 40 */	li r6, 0x40
+/* 80245C94 00241934  38 E0 00 00 */	li r7, 0
+/* 80245C98 00241938  4B FF FD D9 */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80245C9C 0024193C  2C 03 00 00 */	cmpwi r3, 0
+/* 80245CA0 00241940  90 7D 00 68 */	stw r3, 0x68(r29)
+/* 80245CA4 00241944  41 82 00 08 */	beq lbl_80245CAC
+/* 80245CA8 00241948  48 1A 50 81 */	bl "TPLBind"
+lbl_80245CAC:
+/* 80245CAC 0024194C  7F C4 F3 78 */	mr r4, r30
+/* 80245CB0 00241950  38 61 00 08 */	addi r3, r1, 8
+/* 80245CB4 00241954  48 1C 27 BD */	bl "strcpy"
+/* 80245CB8 00241958  38 61 00 08 */	addi r3, r1, 8
+/* 80245CBC 0024195C  38 9F 00 38 */	addi r4, r31, 0x38
+/* 80245CC0 00241960  48 1C 28 B5 */	bl "strcat"
+/* 80245CC4 00241964  7F A3 EB 78 */	mr r3, r29
+/* 80245CC8 00241968  38 81 00 08 */	addi r4, r1, 8
+/* 80245CCC 0024196C  38 BF 00 50 */	addi r5, r31, 0x50
+/* 80245CD0 00241970  38 C0 00 40 */	li r6, 0x40
+/* 80245CD4 00241974  38 E0 00 00 */	li r7, 0
+/* 80245CD8 00241978  4B FF FD 99 */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80245CDC 0024197C  90 7D 00 6C */	stw r3, 0x6c(r29)
+lbl_80245CE0:
+/* 80245CE0 00241980  80 01 00 64 */	lwz r0, 0x64(r1)
+/* 80245CE4 00241984  83 E1 00 5C */	lwz r31, 0x5c(r1)
+/* 80245CE8 00241988  83 C1 00 58 */	lwz r30, 0x58(r1)
+/* 80245CEC 0024198C  83 A1 00 54 */	lwz r29, 0x54(r1)
+/* 80245CF0 00241990  7C 08 03 A6 */	mtlr r0
+/* 80245CF4 00241994  38 21 00 60 */	addi r1, r1, 0x60
+/* 80245CF8 00241998  4E 80 00 20 */	blr 
+
+.global "Restore__13TRCHomeButtonFv"
+"Restore__13TRCHomeButtonFv":
+/* 80245CFC 0024199C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80245D00 002419A0  7C 08 02 A6 */	mflr r0
+/* 80245D04 002419A4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245D08 002419A8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80245D0C 002419AC  7C 7F 1B 78 */	mr r31, r3
+/* 80245D10 002419B0  88 03 00 D3 */	lbz r0, 0xd3(r3)
+/* 80245D14 002419B4  2C 00 00 00 */	cmpwi r0, 0
+/* 80245D18 002419B8  41 82 00 08 */	beq lbl_80245D20
+/* 80245D1C 002419BC  48 13 62 E1 */	bl "HBMDelete"
+lbl_80245D20:
+/* 80245D20 002419C0  80 7F 00 B0 */	lwz r3, 0xb0(r31)
+/* 80245D24 002419C4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245D28 002419C8  41 82 00 20 */	beq lbl_80245D48
+/* 80245D2C 002419CC  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245D30 002419D0  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245D34 002419D4  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245D38 002419D8  7D 89 03 A6 */	mtctr r12
+/* 80245D3C 002419DC  4E 80 04 21 */	bctrl 
+/* 80245D40 002419E0  38 00 00 00 */	li r0, 0
+/* 80245D44 002419E4  90 1F 00 B0 */	stw r0, 0xb0(r31)
+lbl_80245D48:
+/* 80245D48 002419E8  80 7F 00 28 */	lwz r3, 0x28(r31)
+/* 80245D4C 002419EC  2C 03 00 00 */	cmpwi r3, 0
+/* 80245D50 002419F0  41 82 00 20 */	beq lbl_80245D70
+/* 80245D54 002419F4  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245D58 002419F8  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245D5C 002419FC  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245D60 00241A00  7D 89 03 A6 */	mtctr r12
+/* 80245D64 00241A04  4E 80 04 21 */	bctrl 
+/* 80245D68 00241A08  38 00 00 00 */	li r0, 0
+/* 80245D6C 00241A0C  90 1F 00 28 */	stw r0, 0x28(r31)
+lbl_80245D70:
+/* 80245D70 00241A10  80 7F 00 2C */	lwz r3, 0x2c(r31)
+/* 80245D74 00241A14  2C 03 00 00 */	cmpwi r3, 0
+/* 80245D78 00241A18  41 82 00 20 */	beq lbl_80245D98
+/* 80245D7C 00241A1C  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245D80 00241A20  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245D84 00241A24  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245D88 00241A28  7D 89 03 A6 */	mtctr r12
+/* 80245D8C 00241A2C  4E 80 04 21 */	bctrl 
+/* 80245D90 00241A30  38 00 00 00 */	li r0, 0
+/* 80245D94 00241A34  90 1F 00 2C */	stw r0, 0x2c(r31)
+lbl_80245D98:
+/* 80245D98 00241A38  80 7F 00 30 */	lwz r3, 0x30(r31)
+/* 80245D9C 00241A3C  2C 03 00 00 */	cmpwi r3, 0
+/* 80245DA0 00241A40  41 82 00 20 */	beq lbl_80245DC0
+/* 80245DA4 00241A44  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245DA8 00241A48  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245DAC 00241A4C  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245DB0 00241A50  7D 89 03 A6 */	mtctr r12
+/* 80245DB4 00241A54  4E 80 04 21 */	bctrl 
+/* 80245DB8 00241A58  38 00 00 00 */	li r0, 0
+/* 80245DBC 00241A5C  90 1F 00 30 */	stw r0, 0x30(r31)
+lbl_80245DC0:
+/* 80245DC0 00241A60  80 7F 00 34 */	lwz r3, 0x34(r31)
+/* 80245DC4 00241A64  2C 03 00 00 */	cmpwi r3, 0
+/* 80245DC8 00241A68  41 82 00 20 */	beq lbl_80245DE8
+/* 80245DCC 00241A6C  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245DD0 00241A70  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245DD4 00241A74  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245DD8 00241A78  7D 89 03 A6 */	mtctr r12
+/* 80245DDC 00241A7C  4E 80 04 21 */	bctrl 
+/* 80245DE0 00241A80  38 00 00 00 */	li r0, 0
+/* 80245DE4 00241A84  90 1F 00 34 */	stw r0, 0x34(r31)
+lbl_80245DE8:
+/* 80245DE8 00241A88  80 7F 00 68 */	lwz r3, 0x68(r31)
+/* 80245DEC 00241A8C  2C 03 00 00 */	cmpwi r3, 0
+/* 80245DF0 00241A90  41 82 00 20 */	beq lbl_80245E10
+/* 80245DF4 00241A94  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245DF8 00241A98  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245DFC 00241A9C  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245E00 00241AA0  7D 89 03 A6 */	mtctr r12
+/* 80245E04 00241AA4  4E 80 04 21 */	bctrl 
+/* 80245E08 00241AA8  38 00 00 00 */	li r0, 0
+/* 80245E0C 00241AAC  90 1F 00 68 */	stw r0, 0x68(r31)
+lbl_80245E10:
+/* 80245E10 00241AB0  80 7F 00 38 */	lwz r3, 0x38(r31)
+/* 80245E14 00241AB4  2C 03 00 00 */	cmpwi r3, 0
+/* 80245E18 00241AB8  41 82 00 20 */	beq lbl_80245E38
+/* 80245E1C 00241ABC  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 80245E20 00241AC0  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
+/* 80245E24 00241AC4  81 84 00 08 */	lwz r12, 8(r4)
+/* 80245E28 00241AC8  7D 89 03 A6 */	mtctr r12
+/* 80245E2C 00241ACC  4E 80 04 21 */	bctrl 
+/* 80245E30 00241AD0  38 00 00 00 */	li r0, 0
+/* 80245E34 00241AD4  90 1F 00 38 */	stw r0, 0x38(r31)
+lbl_80245E38:
+/* 80245E38 00241AD8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80245E3C 00241ADC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80245E40 00241AE0  7C 08 03 A6 */	mtlr r0
+/* 80245E44 00241AE4  38 21 00 10 */	addi r1, r1, 0x10
+/* 80245E48 00241AE8  4E 80 00 20 */	blr 
+
+.global "InitInfo__13TRCHomeButtonFv"
+"InitInfo__13TRCHomeButtonFv":
+/* 80245E4C 00241AEC  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 80245E50 00241AF0  7C 08 02 A6 */	mflr r0
+/* 80245E54 00241AF4  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80245E58 00241AF8  38 00 00 00 */	li r0, 0
+/* 80245E5C 00241AFC  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 80245E60 00241B00  3F E0 80 45 */	lis r31, lbl_8044E8C8@ha
+/* 80245E64 00241B04  3B FF E8 C8 */	addi r31, r31, lbl_8044E8C8@l
+/* 80245E68 00241B08  93 C1 00 48 */	stw r30, 0x48(r1)
+/* 80245E6C 00241B0C  7C 7E 1B 78 */	mr r30, r3
+/* 80245E70 00241B10  7F C4 F3 78 */	mr r4, r30
+/* 80245E74 00241B14  38 61 00 08 */	addi r3, r1, 8
+/* 80245E78 00241B18  90 01 00 08 */	stw r0, 8(r1)
+/* 80245E7C 00241B1C  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80245E80 00241B20  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80245E84 00241B24  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80245E88 00241B28  90 01 00 18 */	stw r0, 0x18(r1)
+/* 80245E8C 00241B2C  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80245E90 00241B30  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80245E94 00241B34  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80245E98 00241B38  90 01 00 28 */	stw r0, 0x28(r1)
+/* 80245E9C 00241B3C  90 01 00 2C */	stw r0, 0x2c(r1)
+/* 80245EA0 00241B40  90 01 00 30 */	stw r0, 0x30(r1)
+/* 80245EA4 00241B44  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80245EA8 00241B48  90 01 00 38 */	stw r0, 0x38(r1)
+/* 80245EAC 00241B4C  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 80245EB0 00241B50  90 01 00 40 */	stw r0, 0x40(r1)
+/* 80245EB4 00241B54  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80245EB8 00241B58  48 1C 25 B9 */	bl "strcpy"
+/* 80245EBC 00241B5C  48 1A 33 2D */	bl "SCGetLanguage"
+/* 80245EC0 00241B60  54 60 06 3E */	clrlwi r0, r3, 0x18
+/* 80245EC4 00241B64  28 00 00 06 */	cmplwi r0, 6
+/* 80245EC8 00241B68  90 1E 00 44 */	stw r0, 0x44(r30)
+/* 80245ECC 00241B6C  41 81 00 8C */	bgt lbl_80245F58
+/* 80245ED0 00241B70  3C 60 80 45 */	lis r3, lbl_8044EA1C@ha
+/* 80245ED4 00241B74  54 00 10 3A */	slwi r0, r0, 2
+/* 80245ED8 00241B78  38 63 EA 1C */	addi r3, r3, lbl_8044EA1C@l
+/* 80245EDC 00241B7C  7C 63 00 2E */	lwzx r3, r3, r0
+/* 80245EE0 00241B80  7C 69 03 A6 */	mtctr r3
+/* 80245EE4 00241B84  4E 80 04 20 */	bctr 
+/* 80245EE8 00241B88  38 61 00 08 */	addi r3, r1, 8
+/* 80245EEC 00241B8C  38 9F 00 60 */	addi r4, r31, 0x60
+/* 80245EF0 00241B90  48 1C 26 85 */	bl "strcat"
+/* 80245EF4 00241B94  48 00 00 78 */	b lbl_80245F6C
+/* 80245EF8 00241B98  38 61 00 08 */	addi r3, r1, 8
+/* 80245EFC 00241B9C  38 9F 00 70 */	addi r4, r31, 0x70
+/* 80245F00 00241BA0  48 1C 26 75 */	bl "strcat"
+/* 80245F04 00241BA4  48 00 00 68 */	b lbl_80245F6C
+/* 80245F08 00241BA8  38 61 00 08 */	addi r3, r1, 8
+/* 80245F0C 00241BAC  38 9F 00 84 */	addi r4, r31, 0x84
+/* 80245F10 00241BB0  48 1C 26 65 */	bl "strcat"
+/* 80245F14 00241BB4  48 00 00 58 */	b lbl_80245F6C
+/* 80245F18 00241BB8  38 61 00 08 */	addi r3, r1, 8
+/* 80245F1C 00241BBC  38 9F 00 98 */	addi r4, r31, 0x98
+/* 80245F20 00241BC0  48 1C 26 55 */	bl "strcat"
+/* 80245F24 00241BC4  48 00 00 48 */	b lbl_80245F6C
+/* 80245F28 00241BC8  38 61 00 08 */	addi r3, r1, 8
+/* 80245F2C 00241BCC  38 9F 00 AC */	addi r4, r31, 0xac
+/* 80245F30 00241BD0  48 1C 26 45 */	bl "strcat"
+/* 80245F34 00241BD4  48 00 00 38 */	b lbl_80245F6C
+/* 80245F38 00241BD8  38 61 00 08 */	addi r3, r1, 8
+/* 80245F3C 00241BDC  38 9F 00 C0 */	addi r4, r31, 0xc0
+/* 80245F40 00241BE0  48 1C 26 35 */	bl "strcat"
+/* 80245F44 00241BE4  48 00 00 28 */	b lbl_80245F6C
+/* 80245F48 00241BE8  38 61 00 08 */	addi r3, r1, 8
+/* 80245F4C 00241BEC  38 9F 00 D4 */	addi r4, r31, 0xd4
+/* 80245F50 00241BF0  48 1C 26 25 */	bl "strcat"
+/* 80245F54 00241BF4  48 00 00 18 */	b lbl_80245F6C
+lbl_80245F58:
+/* 80245F58 00241BF8  38 00 00 00 */	li r0, 0
+/* 80245F5C 00241BFC  38 61 00 08 */	addi r3, r1, 8
+/* 80245F60 00241C00  90 1E 00 44 */	stw r0, 0x44(r30)
+/* 80245F64 00241C04  38 9F 00 60 */	addi r4, r31, 0x60
+/* 80245F68 00241C08  48 1C 26 0D */	bl "strcat"
+lbl_80245F6C:
+/* 80245F6C 00241C0C  7F C3 F3 78 */	mr r3, r30
+/* 80245F70 00241C10  38 81 00 08 */	addi r4, r1, 8
+/* 80245F74 00241C14  38 BF 00 E8 */	addi r5, r31, 0xe8
+/* 80245F78 00241C18  38 C0 00 40 */	li r6, 0x40
+/* 80245F7C 00241C1C  38 E0 00 00 */	li r7, 0
+/* 80245F80 00241C20  4B FF FA F1 */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80245F84 00241C24  90 7E 00 28 */	stw r3, 0x28(r30)
+/* 80245F88 00241C28  7F C4 F3 78 */	mr r4, r30
+/* 80245F8C 00241C2C  38 61 00 08 */	addi r3, r1, 8
+/* 80245F90 00241C30  48 1C 24 E1 */	bl "strcpy"
+/* 80245F94 00241C34  38 61 00 08 */	addi r3, r1, 8
+/* 80245F98 00241C38  38 9F 00 F8 */	addi r4, r31, 0xf8
+/* 80245F9C 00241C3C  48 1C 25 D9 */	bl "strcat"
+/* 80245FA0 00241C40  7F C3 F3 78 */	mr r3, r30
+/* 80245FA4 00241C44  38 81 00 08 */	addi r4, r1, 8
+/* 80245FA8 00241C48  38 BF 01 08 */	addi r5, r31, 0x108
+/* 80245FAC 00241C4C  38 C0 00 40 */	li r6, 0x40
+/* 80245FB0 00241C50  38 E0 00 00 */	li r7, 0
+/* 80245FB4 00241C54  4B FF FA BD */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80245FB8 00241C58  90 7E 00 2C */	stw r3, 0x2c(r30)
+/* 80245FBC 00241C5C  7F C4 F3 78 */	mr r4, r30
+/* 80245FC0 00241C60  38 61 00 08 */	addi r3, r1, 8
+/* 80245FC4 00241C64  48 1C 24 AD */	bl "strcpy"
+/* 80245FC8 00241C68  38 61 00 08 */	addi r3, r1, 8
+/* 80245FCC 00241C6C  38 9F 01 18 */	addi r4, r31, 0x118
+/* 80245FD0 00241C70  48 1C 25 A5 */	bl "strcat"
+/* 80245FD4 00241C74  7F C3 F3 78 */	mr r3, r30
+/* 80245FD8 00241C78  38 81 00 08 */	addi r4, r1, 8
+/* 80245FDC 00241C7C  38 BF 01 24 */	addi r5, r31, 0x124
+/* 80245FE0 00241C80  38 C0 00 40 */	li r6, 0x40
+/* 80245FE4 00241C84  38 E0 00 00 */	li r7, 0
+/* 80245FE8 00241C88  4B FF FA 89 */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80245FEC 00241C8C  90 7E 00 30 */	stw r3, 0x30(r30)
+/* 80245FF0 00241C90  7F C4 F3 78 */	mr r4, r30
+/* 80245FF4 00241C94  38 61 00 08 */	addi r3, r1, 8
+/* 80245FF8 00241C98  48 1C 24 79 */	bl "strcpy"
+/* 80245FFC 00241C9C  38 61 00 08 */	addi r3, r1, 8
+/* 80246000 00241CA0  38 9F 01 34 */	addi r4, r31, 0x134
+/* 80246004 00241CA4  48 1C 25 71 */	bl "strcat"
+/* 80246008 00241CA8  7F C3 F3 78 */	mr r3, r30
+/* 8024600C 00241CAC  38 81 00 08 */	addi r4, r1, 8
+/* 80246010 00241CB0  38 BF 01 40 */	addi r5, r31, 0x140
+/* 80246014 00241CB4  38 FE 00 50 */	addi r7, r30, 0x50
+/* 80246018 00241CB8  38 C0 00 40 */	li r6, 0x40
+/* 8024601C 00241CBC  4B FF FA 55 */	bl "LoadData__13TRCHomeButtonFPCcPCciPUl"
+/* 80246020 00241CC0  C0 02 9C 90 */	lfs f0, lbl_805DAEB0-_SDA2_BASE_(r2)
+/* 80246024 00241CC4  3C A0 80 24 */	lis r5, "SoundCallback__13TRCHomeButtonFii"@ha
+/* 80246028 00241CC8  38 00 00 00 */	li r0, 0
+/* 8024602C 00241CCC  C0 22 9C A4 */	lfs f1, lbl_805DAEC4-_SDA2_BASE_(r2)
+/* 80246030 00241CD0  38 A5 62 60 */	addi r5, r5, "SoundCallback__13TRCHomeButtonFii"@l
+/* 80246034 00241CD4  90 7E 00 34 */	stw r3, 0x34(r30)
+/* 80246038 00241CD8  7F C3 F3 78 */	mr r3, r30
+/* 8024603C 00241CDC  7F C4 F3 78 */	mr r4, r30
+/* 80246040 00241CE0  90 BE 00 3C */	stw r5, 0x3c(r30)
+/* 80246044 00241CE4  90 1E 00 40 */	stw r0, 0x40(r30)
+/* 80246048 00241CE8  90 1E 00 48 */	stw r0, 0x48(r30)
+/* 8024604C 00241CEC  D0 3E 00 5C */	stfs f1, 0x5c(r30)
+/* 80246050 00241CF0  D0 1E 00 60 */	stfs f0, 0x60(r30)
+/* 80246054 00241CF4  D0 1E 00 58 */	stfs f0, 0x58(r30)
+/* 80246058 00241CF8  4B FF FB A1 */	bl "LoadBanIcon__13TRCHomeButtonFPCc"
+/* 8024605C 00241CFC  80 1E 00 68 */	lwz r0, 0x68(r30)
+/* 80246060 00241D00  2C 00 00 00 */	cmpwi r0, 0
+/* 80246064 00241D04  41 82 00 34 */	beq lbl_80246098
+/* 80246068 00241D08  80 1E 00 28 */	lwz r0, 0x28(r30)
+/* 8024606C 00241D0C  2C 00 00 00 */	cmpwi r0, 0
+/* 80246070 00241D10  41 82 00 28 */	beq lbl_80246098
+/* 80246074 00241D14  80 1E 00 2C */	lwz r0, 0x2c(r30)
+/* 80246078 00241D18  2C 00 00 00 */	cmpwi r0, 0
+/* 8024607C 00241D1C  41 82 00 1C */	beq lbl_80246098
+/* 80246080 00241D20  80 1E 00 30 */	lwz r0, 0x30(r30)
+/* 80246084 00241D24  2C 00 00 00 */	cmpwi r0, 0
+/* 80246088 00241D28  41 82 00 10 */	beq lbl_80246098
+/* 8024608C 00241D2C  80 1E 00 34 */	lwz r0, 0x34(r30)
+/* 80246090 00241D30  2C 00 00 00 */	cmpwi r0, 0
+/* 80246094 00241D34  40 82 00 0C */	bne lbl_802460A0
+lbl_80246098:
+/* 80246098 00241D38  38 60 00 00 */	li r3, 0
+/* 8024609C 00241D3C  48 00 00 08 */	b lbl_802460A4
+lbl_802460A0:
+/* 802460A0 00241D40  38 60 00 01 */	li r3, 1
+lbl_802460A4:
+/* 802460A4 00241D44  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 802460A8 00241D48  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 802460AC 00241D4C  83 C1 00 48 */	lwz r30, 0x48(r1)
+/* 802460B0 00241D50  7C 08 03 A6 */	mtlr r0
+/* 802460B4 00241D54  38 21 00 50 */	addi r1, r1, 0x50
+/* 802460B8 00241D58  4E 80 00 20 */	blr 
+
+.global "InitHBMLibrary__13TRCHomeButtonFv"
+"InitHBMLibrary__13TRCHomeButtonFv":
+/* 802460BC 00241D5C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802460C0 00241D60  7C 08 02 A6 */	mflr r0
+/* 802460C4 00241D64  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 802460C8 00241D68  3C A0 80 45 */	lis r5, lbl_8044EA38@ha
+/* 802460CC 00241D6C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802460D0 00241D70  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802460D4 00241D74  7C 7F 1B 78 */	mr r31, r3
+/* 802460D8 00241D78  38 65 EA 38 */	addi r3, r5, lbl_8044EA38@l
+/* 802460DC 00241D7C  38 A0 00 40 */	li r5, 0x40
+/* 802460E0 00241D80  81 84 47 54 */	lwz r12, "msInitParams__13TRCHomeButton"@l(r4)
+/* 802460E4 00241D84  3C 80 00 08 */	lis r4, 8
+/* 802460E8 00241D88  7D 89 03 A6 */	mtctr r12
+/* 802460EC 00241D8C  4E 80 04 21 */	bctrl 
+/* 802460F0 00241D90  38 00 00 00 */	li r0, 0
+/* 802460F4 00241D94  3C 80 00 08 */	lis r4, 8
+/* 802460F8 00241D98  90 7F 00 38 */	stw r3, 0x38(r31)
+/* 802460FC 00241D9C  38 7F 00 28 */	addi r3, r31, 0x28
+/* 80246100 00241DA0  90 9F 00 54 */	stw r4, 0x54(r31)
+/* 80246104 00241DA4  90 1F 00 64 */	stw r0, 0x64(r31)
+/* 80246108 00241DA8  90 1F 00 4C */	stw r0, 0x4c(r31)
+/* 8024610C 00241DAC  48 13 5D E9 */	bl "HBMCreate"
+/* 80246110 00241DB0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80246114 00241DB4  38 60 00 01 */	li r3, 1
+/* 80246118 00241DB8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8024611C 00241DBC  7C 08 03 A6 */	mtlr r0
+/* 80246120 00241DC0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80246124 00241DC4  4E 80 00 20 */	blr 
+
+.global "InitSound__13TRCHomeButtonFv"
+"InitSound__13TRCHomeButtonFv":
+/* 80246128 00241DC8  94 21 FF B0 */	stwu r1, -0x50(r1)
+/* 8024612C 00241DCC  7C 08 02 A6 */	mflr r0
+/* 80246130 00241DD0  90 01 00 54 */	stw r0, 0x54(r1)
+/* 80246134 00241DD4  38 00 00 00 */	li r0, 0
+/* 80246138 00241DD8  93 E1 00 4C */	stw r31, 0x4c(r1)
+/* 8024613C 00241DDC  7C 7F 1B 78 */	mr r31, r3
+/* 80246140 00241DE0  7F E4 FB 78 */	mr r4, r31
+/* 80246144 00241DE4  38 61 00 08 */	addi r3, r1, 8
+/* 80246148 00241DE8  90 01 00 08 */	stw r0, 8(r1)
+/* 8024614C 00241DEC  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80246150 00241DF0  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80246154 00241DF4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80246158 00241DF8  90 01 00 18 */	stw r0, 0x18(r1)
+/* 8024615C 00241DFC  90 01 00 1C */	stw r0, 0x1c(r1)
+/* 80246160 00241E00  90 01 00 20 */	stw r0, 0x20(r1)
+/* 80246164 00241E04  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80246168 00241E08  90 01 00 28 */	stw r0, 0x28(r1)
+/* 8024616C 00241E0C  90 01 00 2C */	stw r0, 0x2c(r1)
+/* 80246170 00241E10  90 01 00 30 */	stw r0, 0x30(r1)
+/* 80246174 00241E14  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80246178 00241E18  90 01 00 38 */	stw r0, 0x38(r1)
+/* 8024617C 00241E1C  90 01 00 3C */	stw r0, 0x3c(r1)
+/* 80246180 00241E20  90 01 00 40 */	stw r0, 0x40(r1)
+/* 80246184 00241E24  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80246188 00241E28  48 1C 22 E9 */	bl "strcpy"
+/* 8024618C 00241E2C  3C 80 80 45 */	lis r4, lbl_8044EA48@ha
+/* 80246190 00241E30  38 61 00 08 */	addi r3, r1, 8
+/* 80246194 00241E34  38 84 EA 48 */	addi r4, r4, lbl_8044EA48@l
+/* 80246198 00241E38  48 1C 23 DD */	bl "strcat"
+/* 8024619C 00241E3C  3C 80 80 4A */	lis r4, "msInitParams__13TRCHomeButton"@ha
+/* 802461A0 00241E40  3C 60 80 45 */	lis r3, lbl_8044EA5C@ha
+/* 802461A4 00241E44  81 84 47 54 */	lwz r12, "msInitParams__13TRCHomeButton"@l(r4)
+/* 802461A8 00241E48  38 63 EA 5C */	addi r3, r3, lbl_8044EA5C@l
+/* 802461AC 00241E4C  3C 80 00 0A */	lis r4, 0xa
+/* 802461B0 00241E50  38 A0 00 40 */	li r5, 0x40
+/* 802461B4 00241E54  7D 89 03 A6 */	mtctr r12
+/* 802461B8 00241E58  4E 80 04 21 */	bctrl 
+/* 802461BC 00241E5C  90 7F 00 B0 */	stw r3, 0xb0(r31)
+/* 802461C0 00241E60  7C 64 1B 78 */	mr r4, r3
+/* 802461C4 00241E64  38 61 00 08 */	addi r3, r1, 8
+/* 802461C8 00241E68  3C A0 00 0A */	lis r5, 0xa
+/* 802461CC 00241E6C  48 13 5F 7D */	bl "HBMCreateDvdSound"
+/* 802461D0 00241E70  83 E1 00 4C */	lwz r31, 0x4c(r1)
+/* 802461D4 00241E74  38 60 00 01 */	li r3, 1
+/* 802461D8 00241E78  80 01 00 54 */	lwz r0, 0x54(r1)
+/* 802461DC 00241E7C  7C 08 03 A6 */	mtlr r0
+/* 802461E0 00241E80  38 21 00 50 */	addi r1, r1, 0x50
+/* 802461E4 00241E84  4E 80 00 20 */	blr 
+
+.global "InitHomeMenu__13TRCHomeButtonFv"
+"InitHomeMenu__13TRCHomeButtonFv":
+/* 802461E8 00241E88  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802461EC 00241E8C  7C 08 02 A6 */	mflr r0
+/* 802461F0 00241E90  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802461F4 00241E94  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802461F8 00241E98  7C 7F 1B 78 */	mr r31, r3
+/* 802461FC 00241E9C  48 13 5E 59 */	bl "HBMInit"
+/* 80246200 00241EA0  80 7F 00 BC */	lwz r3, 0xbc(r31)
+/* 80246204 00241EA4  48 13 5F 01 */	bl "HBMSetAdjustFlag"
+/* 80246208 00241EA8  38 00 00 01 */	li r0, 1
+/* 8024620C 00241EAC  7F E3 FB 78 */	mr r3, r31
+/* 80246210 00241EB0  90 1F 00 B4 */	stw r0, 0xb4(r31)
+/* 80246214 00241EB4  90 1F 00 C0 */	stw r0, 0xc0(r31)
+/* 80246218 00241EB8  48 00 01 A5 */	bl "ClearInputHistory__13TRCHomeButtonFv"
+/* 8024621C 00241EBC  38 60 00 00 */	li r3, 0
+/* 80246220 00241EC0  38 80 00 00 */	li r4, 0
+/* 80246224 00241EC4  48 1A E2 05 */	bl "WPADControlMotor"
+/* 80246228 00241EC8  38 60 00 01 */	li r3, 1
+/* 8024622C 00241ECC  38 80 00 00 */	li r4, 0
+/* 80246230 00241ED0  48 1A E1 F9 */	bl "WPADControlMotor"
+/* 80246234 00241ED4  38 60 00 02 */	li r3, 2
+/* 80246238 00241ED8  38 80 00 00 */	li r4, 0
+/* 8024623C 00241EDC  48 1A E1 ED */	bl "WPADControlMotor"
+/* 80246240 00241EE0  38 60 00 03 */	li r3, 3
+/* 80246244 00241EE4  38 80 00 00 */	li r4, 0
+/* 80246248 00241EE8  48 1A E1 E1 */	bl "WPADControlMotor"
+/* 8024624C 00241EEC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80246250 00241EF0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80246254 00241EF4  7C 08 03 A6 */	mtlr r0
+/* 80246258 00241EF8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8024625C 00241EFC  4E 80 00 20 */	blr 
+
+.global "SoundCallback__13TRCHomeButtonFii"
+"SoundCallback__13TRCHomeButtonFii":
+/* 80246260 00241F00  38 60 00 00 */	li r3, 0
+/* 80246264 00241F04  4E 80 00 20 */	blr 
+
+.global "WasHomeButtonPressedThisFrame__13TRCHomeButtonFv"
+"WasHomeButtonPressedThisFrame__13TRCHomeButtonFv":
+/* 80246268 00241F08  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8024626C 00241F0C  7C 08 02 A6 */	mflr r0
+/* 80246270 00241F10  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80246274 00241F14  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80246278 00241F18  7C 7F 1B 78 */	mr r31, r3
+/* 8024627C 00241F1C  48 00 01 B1 */	bl "UpdateControllersKPAD__13TRCHomeButtonFv"
+/* 80246280 00241F20  80 1F 0F 50 */	lwz r0, 0xf50(r31)
+/* 80246284 00241F24  54 00 04 21 */	rlwinm. r0, r0, 0, 0x10, 0x10
+/* 80246288 00241F28  41 82 00 0C */	beq lbl_80246294
+/* 8024628C 00241F2C  38 60 00 01 */	li r3, 1
+/* 80246290 00241F30  48 00 00 48 */	b lbl_802462D8
+lbl_80246294:
+/* 80246294 00241F34  80 1F 17 90 */	lwz r0, 0x1790(r31)
+/* 80246298 00241F38  54 00 04 21 */	rlwinm. r0, r0, 0, 0x10, 0x10
+/* 8024629C 00241F3C  41 82 00 0C */	beq lbl_802462A8
+/* 802462A0 00241F40  38 60 00 01 */	li r3, 1
+/* 802462A4 00241F44  48 00 00 34 */	b lbl_802462D8
+lbl_802462A8:
+/* 802462A8 00241F48  80 1F 1F D0 */	lwz r0, 0x1fd0(r31)
+/* 802462AC 00241F4C  38 7F 10 80 */	addi r3, r31, 0x1080
+/* 802462B0 00241F50  54 00 04 21 */	rlwinm. r0, r0, 0, 0x10, 0x10
+/* 802462B4 00241F54  41 82 00 0C */	beq lbl_802462C0
+/* 802462B8 00241F58  38 60 00 01 */	li r3, 1
+/* 802462BC 00241F5C  48 00 00 1C */	b lbl_802462D8
+lbl_802462C0:
+/* 802462C0 00241F60  80 03 17 90 */	lwz r0, 0x1790(r3)
+/* 802462C4 00241F64  54 00 04 21 */	rlwinm. r0, r0, 0, 0x10, 0x10
+/* 802462C8 00241F68  41 82 00 0C */	beq lbl_802462D4
+/* 802462CC 00241F6C  38 60 00 01 */	li r3, 1
+/* 802462D0 00241F70  48 00 00 08 */	b lbl_802462D8
+lbl_802462D4:
+/* 802462D4 00241F74  38 60 00 00 */	li r3, 0
+lbl_802462D8:
+/* 802462D8 00241F78  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802462DC 00241F7C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802462E0 00241F80  7C 08 03 A6 */	mtlr r0
+/* 802462E4 00241F84  38 21 00 10 */	addi r1, r1, 0x10
+/* 802462E8 00241F88  4E 80 00 20 */	blr 
+
+.global "StartUpHomeMenu__13TRCHomeButtonFb"
+"StartUpHomeMenu__13TRCHomeButtonFb":
+/* 802462EC 00241F8C  7C A4 00 D0 */	neg r5, r4
+/* 802462F0 00241F90  88 03 00 D1 */	lbz r0, 0xd1(r3)
+/* 802462F4 00241F94  7C A5 23 78 */	or r5, r5, r4
+/* 802462F8 00241F98  98 83 00 D2 */	stb r4, 0xd2(r3)
+/* 802462FC 00241F9C  54 A4 0F FE */	srwi r4, r5, 0x1f
+/* 80246300 00241FA0  2C 00 00 00 */	cmpwi r0, 0
+/* 80246304 00241FA4  90 83 00 BC */	stw r4, 0xbc(r3)
+/* 80246308 00241FA8  40 82 00 08 */	bne lbl_80246310
+/* 8024630C 00241FAC  48 00 05 3C */	b "TriggerHomeMenuBanIcon__13TRCHomeButtonFv"
+lbl_80246310:
+/* 80246310 00241FB0  80 03 00 B8 */	lwz r0, 0xb8(r3)
+/* 80246314 00241FB4  2C 00 00 00 */	cmpwi r0, 0
+/* 80246318 00241FB8  4C 82 00 20 */	bnelr 
+/* 8024631C 00241FBC  38 00 00 01 */	li r0, 1
+/* 80246320 00241FC0  90 03 00 B8 */	stw r0, 0xb8(r3)
+/* 80246324 00241FC4  90 03 00 24 */	stw r0, 0x24(r3)
+/* 80246328 00241FC8  4B FF FE C0 */	b "InitHomeMenu__13TRCHomeButtonFv"
+/* 8024632C 00241FCC  4E 80 00 20 */	blr 
+
+.global "RestoreHomeMenu__13TRCHomeButtonFv"
+"RestoreHomeMenu__13TRCHomeButtonFv":
+/* 80246330 00241FD0  4E 80 00 20 */	blr 
+
+.global "ShutDownHomeMenu__13TRCHomeButtonFv"
+"ShutDownHomeMenu__13TRCHomeButtonFv":
+/* 80246334 00241FD4  80 03 00 B8 */	lwz r0, 0xb8(r3)
+/* 80246338 00241FD8  2C 00 00 01 */	cmpwi r0, 1
+/* 8024633C 00241FDC  4C 82 00 20 */	bnelr 
+/* 80246340 00241FE0  38 00 00 00 */	li r0, 0
+/* 80246344 00241FE4  90 03 00 B8 */	stw r0, 0xb8(r3)
+/* 80246348 00241FE8  90 03 00 24 */	stw r0, 0x24(r3)
+/* 8024634C 00241FEC  4B FF FF E4 */	b "RestoreHomeMenu__13TRCHomeButtonFv"
+/* 80246350 00241FF0  4E 80 00 20 */	blr 
+
+.global "Update__13TRCHomeButtonFv"
+"Update__13TRCHomeButtonFv":
+/* 80246354 00241FF4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80246358 00241FF8  7C 08 02 A6 */	mflr r0
+/* 8024635C 00241FFC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80246360 00242000  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80246364 00242004  7C 7F 1B 78 */	mr r31, r3
+/* 80246368 00242008  80 03 00 B8 */	lwz r0, 0xb8(r3)
+/* 8024636C 0024200C  2C 00 00 01 */	cmpwi r0, 1
+/* 80246370 00242010  40 82 00 24 */	bne lbl_80246394
+/* 80246374 00242014  80 03 00 C4 */	lwz r0, 0xc4(r3)
+/* 80246378 00242018  2C 00 00 00 */	cmpwi r0, 0
+/* 8024637C 0024201C  40 82 00 18 */	bne lbl_80246394
+/* 80246380 00242020  48 00 00 AD */	bl "UpdateControllersKPAD__13TRCHomeButtonFv"
+/* 80246384 00242024  7F E3 FB 78 */	mr r3, r31
+/* 80246388 00242028  48 00 02 45 */	bl "ProcessController__13TRCHomeButtonFv"
+/* 8024638C 0024202C  7F E3 FB 78 */	mr r3, r31
+/* 80246390 00242030  48 00 04 81 */	bl "RenderHomeMenu__13TRCHomeButtonFv"
+lbl_80246394:
+/* 80246394 00242034  80 1F 00 C4 */	lwz r0, 0xc4(r31)
+/* 80246398 00242038  2C 00 00 01 */	cmpwi r0, 1
+/* 8024639C 0024203C  40 82 00 0C */	bne lbl_802463A8
+/* 802463A0 00242040  7F E3 FB 78 */	mr r3, r31
+/* 802463A4 00242044  48 00 06 85 */	bl "RenderBanIcon__13TRCHomeButtonFv"
+lbl_802463A8:
+/* 802463A8 00242048  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802463AC 0024204C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802463B0 00242050  7C 08 03 A6 */	mtlr r0
+/* 802463B4 00242054  38 21 00 10 */	addi r1, r1, 0x10
+/* 802463B8 00242058  4E 80 00 20 */	blr 
+
+.global "ClearInputHistory__13TRCHomeButtonFv"
+"ClearInputHistory__13TRCHomeButtonFv":
+/* 802463BC 0024205C  C0 02 9C A0 */	lfs f0, lbl_805DAEC0-_SDA2_BASE_(r2)
+/* 802463C0 00242060  38 00 00 00 */	li r0, 0
+/* 802463C4 00242064  C0 22 9C 90 */	lfs f1, lbl_805DAEB0-_SDA2_BASE_(r2)
+/* 802463C8 00242068  90 03 30 C4 */	stw r0, 0x30c4(r3)
+/* 802463CC 0024206C  90 03 30 C8 */	stw r0, 0x30c8(r3)
+/* 802463D0 00242070  D0 23 30 A4 */	stfs f1, 0x30a4(r3)
+/* 802463D4 00242074  D0 03 30 A8 */	stfs f0, 0x30a8(r3)
+/* 802463D8 00242078  D0 03 30 BC */	stfs f0, 0x30bc(r3)
+/* 802463DC 0024207C  D0 03 30 C0 */	stfs f0, 0x30c0(r3)
+/* 802463E0 00242080  90 03 31 14 */	stw r0, 0x3114(r3)
+/* 802463E4 00242084  90 03 31 18 */	stw r0, 0x3118(r3)
+/* 802463E8 00242088  D0 23 30 F4 */	stfs f1, 0x30f4(r3)
+/* 802463EC 0024208C  D0 03 30 F8 */	stfs f0, 0x30f8(r3)
+/* 802463F0 00242090  D0 03 31 0C */	stfs f0, 0x310c(r3)
+/* 802463F4 00242094  D0 03 31 10 */	stfs f0, 0x3110(r3)
+/* 802463F8 00242098  90 03 31 64 */	stw r0, 0x3164(r3)
+/* 802463FC 0024209C  90 03 31 68 */	stw r0, 0x3168(r3)
+/* 80246400 002420A0  D0 23 31 44 */	stfs f1, 0x3144(r3)
+/* 80246404 002420A4  D0 03 31 48 */	stfs f0, 0x3148(r3)
+/* 80246408 002420A8  D0 03 31 5C */	stfs f0, 0x315c(r3)
+/* 8024640C 002420AC  D0 03 31 60 */	stfs f0, 0x3160(r3)
+/* 80246410 002420B0  90 03 31 B4 */	stw r0, 0x31b4(r3)
+/* 80246414 002420B4  90 03 31 B8 */	stw r0, 0x31b8(r3)
+/* 80246418 002420B8  D0 23 31 94 */	stfs f1, 0x3194(r3)
+/* 8024641C 002420BC  D0 03 31 98 */	stfs f0, 0x3198(r3)
+/* 80246420 002420C0  D0 03 31 AC */	stfs f0, 0x31ac(r3)
+/* 80246424 002420C4  D0 03 31 B0 */	stfs f0, 0x31b0(r3)
+/* 80246428 002420C8  4E 80 00 20 */	blr 
+
+.global "UpdateControllersKPAD__13TRCHomeButtonFv"
+"UpdateControllersKPAD__13TRCHomeButtonFv":
+/* 8024642C 002420CC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 80246430 002420D0  7C 08 02 A6 */	mflr r0
+/* 80246434 002420D4  90 01 00 34 */	stw r0, 0x34(r1)
+/* 80246438 002420D8  39 61 00 30 */	addi r11, r1, 0x30
+/* 8024643C 002420DC  48 1C 8F 25 */	bl "_savegpr_22"
+/* 80246440 002420E0  7C 7F 1B 78 */	mr r31, r3
+/* 80246444 002420E4  3B 83 30 5C */	addi r28, r3, 0x305c
+/* 80246448 002420E8  7F FD FB 78 */	mr r29, r31
+/* 8024644C 002420EC  3B 63 0F 4C */	addi r27, r3, 0xf4c
+/* 80246450 002420F0  7F FA FB 78 */	mr r26, r31
+/* 80246454 002420F4  7F F9 FB 78 */	mr r25, r31
+/* 80246458 002420F8  3B 00 00 00 */	li r24, 0
+/* 8024645C 002420FC  3B C0 00 00 */	li r30, 0
+lbl_80246460:
+/* 80246460 00242100  7F 03 C3 78 */	mr r3, r24
+/* 80246464 00242104  7F 84 E3 78 */	mr r4, r28
+/* 80246468 00242108  48 1A DA 91 */	bl "WPADProbe"
+/* 8024646C 0024210C  90 7D 30 4C */	stw r3, 0x304c(r29)
+/* 80246470 00242110  7F 03 C3 78 */	mr r3, r24
+/* 80246474 00242114  7F 64 DB 78 */	mr r4, r27
+/* 80246478 00242118  38 A0 00 10 */	li r5, 0x10
+/* 8024647C 0024211C  48 18 BB 6D */	bl "KPADRead"
+/* 80246480 00242120  90 7D 30 6C */	stw r3, 0x306c(r29)
+/* 80246484 00242124  80 1D 30 4C */	lwz r0, 0x304c(r29)
+/* 80246488 00242128  2C 00 FF FF */	cmpwi r0, -1
+/* 8024648C 0024212C  41 82 00 68 */	beq lbl_802464F4
+/* 80246490 00242130  40 80 00 10 */	bge lbl_802464A0
+/* 80246494 00242134  2C 00 FF FD */	cmpwi r0, -3
+/* 80246498 00242138  40 80 00 14 */	bge lbl_802464AC
+/* 8024649C 0024213C  48 00 00 58 */	b lbl_802464F4
+lbl_802464A0:
+/* 802464A0 00242140  2C 00 00 01 */	cmpwi r0, 1
+/* 802464A4 00242144  40 80 00 50 */	bge lbl_802464F4
+/* 802464A8 00242148  48 00 00 2C */	b lbl_802464D4
+lbl_802464AC:
+/* 802464AC 0024214C  2C 00 FF FE */	cmpwi r0, -2
+/* 802464B0 00242150  40 82 00 24 */	bne lbl_802464D4
+/* 802464B4 00242154  8A FA 0F A8 */	lbz r23, 0xfa8(r26)
+/* 802464B8 00242158  7F 63 DB 78 */	mr r3, r27
+/* 802464BC 0024215C  8A DA 0F A9 */	lbz r22, 0xfa9(r26)
+/* 802464C0 00242160  38 80 00 00 */	li r4, 0
+/* 802464C4 00242164  38 A0 00 84 */	li r5, 0x84
+/* 802464C8 00242168  4B DB DF 75 */	bl "memset"
+/* 802464CC 0024216C  9A FA 0F A8 */	stb r23, 0xfa8(r26)
+/* 802464D0 00242170  9A DA 0F A9 */	stb r22, 0xfa9(r26)
+lbl_802464D4:
+/* 802464D4 00242174  93 79 00 70 */	stw r27, 0x70(r25)
+/* 802464D8 00242178  80 1A 0F 50 */	lwz r0, 0xf50(r26)
+/* 802464DC 0024217C  28 00 02 00 */	cmplwi r0, 0x200
+/* 802464E0 00242180  40 82 00 18 */	bne lbl_802464F8
+/* 802464E4 00242184  38 60 00 00 */	li r3, 0
+/* 802464E8 00242188  48 1A 7E 8D */	bl "VISetBlack"
+/* 802464EC 0024218C  48 1A 7D 01 */	bl "VIFlush"
+/* 802464F0 00242190  48 00 00 08 */	b lbl_802464F8
+lbl_802464F4:
+/* 802464F4 00242194  93 D9 00 70 */	stw r30, 0x70(r25)
+lbl_802464F8:
+/* 802464F8 00242198  3B 18 00 01 */	addi r24, r24, 1
+/* 802464FC 0024219C  3B BD 00 04 */	addi r29, r29, 4
+/* 80246500 002421A0  28 18 00 04 */	cmplwi r24, 4
+/* 80246504 002421A4  3B 7B 08 40 */	addi r27, r27, 0x840
+/* 80246508 002421A8  3B 5A 08 40 */	addi r26, r26, 0x840
+/* 8024650C 002421AC  3B 39 00 10 */	addi r25, r25, 0x10
+/* 80246510 002421B0  3B 9C 00 04 */	addi r28, r28, 4
+/* 80246514 002421B4  41 80 FF 4C */	blt lbl_80246460
+/* 80246518 002421B8  7F FD FB 78 */	mr r29, r31
+/* 8024651C 002421BC  7F FC FB 78 */	mr r28, r31
+/* 80246520 002421C0  3A C0 00 00 */	li r22, 0
+/* 80246524 002421C4  3B C0 00 00 */	li r30, 0
+lbl_80246528:
+/* 80246528 002421C8  80 1F 30 5C */	lwz r0, 0x305c(r31)
+/* 8024652C 002421CC  28 00 00 02 */	cmplwi r0, 2
+/* 80246530 002421D0  40 82 00 2C */	bne lbl_8024655C
+/* 80246534 002421D4  80 1F 30 4C */	lwz r0, 0x304c(r31)
+/* 80246538 002421D8  2C 00 00 00 */	cmpwi r0, 0
+/* 8024653C 002421DC  40 82 00 20 */	bne lbl_8024655C
+/* 80246540 002421E0  80 7D 00 70 */	lwz r3, 0x70(r29)
+/* 80246544 002421E4  2C 03 00 00 */	cmpwi r3, 0
+/* 80246548 002421E8  41 82 00 14 */	beq lbl_8024655C
+/* 8024654C 002421EC  38 63 00 60 */	addi r3, r3, 0x60
+/* 80246550 002421F0  38 80 00 00 */	li r4, 0
+/* 80246554 002421F4  38 A0 00 24 */	li r5, 0x24
+/* 80246558 002421F8  4B DB DE E5 */	bl "memset"
+lbl_8024655C:
+/* 8024655C 002421FC  80 1F 30 4C */	lwz r0, 0x304c(r31)
+/* 80246560 00242200  2C 00 00 00 */	cmpwi r0, 0
+/* 80246564 00242204  40 82 00 38 */	bne lbl_8024659C
+/* 80246568 00242208  80 1F 30 6C */	lwz r0, 0x306c(r31)
+/* 8024656C 0024220C  2C 00 00 00 */	cmpwi r0, 0
+/* 80246570 00242210  40 81 00 2C */	ble lbl_8024659C
+/* 80246574 00242214  80 1D 00 70 */	lwz r0, 0x70(r29)
+/* 80246578 00242218  2C 00 00 00 */	cmpwi r0, 0
+/* 8024657C 0024221C  41 82 00 20 */	beq lbl_8024659C
+/* 80246580 00242220  80 1D 00 7C */	lwz r0, 0x7c(r29)
+/* 80246584 00242224  28 00 00 02 */	cmplwi r0, 2
+/* 80246588 00242228  40 82 00 14 */	bne lbl_8024659C
+/* 8024658C 0024222C  88 1C 0F A8 */	lbz r0, 0xfa8(r28)
+/* 80246590 00242230  28 00 00 02 */	cmplwi r0, 2
+/* 80246594 00242234  41 82 00 08 */	beq lbl_8024659C
+/* 80246598 00242238  93 DD 00 7C */	stw r30, 0x7c(r29)
+lbl_8024659C:
+/* 8024659C 0024223C  3A D6 00 01 */	addi r22, r22, 1
+/* 802465A0 00242240  3B BD 00 10 */	addi r29, r29, 0x10
+/* 802465A4 00242244  28 16 00 04 */	cmplwi r22, 4
+/* 802465A8 00242248  3B 9C 08 40 */	addi r28, r28, 0x840
+/* 802465AC 0024224C  3B FF 00 04 */	addi r31, r31, 4
+/* 802465B0 00242250  41 80 FF 78 */	blt lbl_80246528
+/* 802465B4 00242254  39 61 00 30 */	addi r11, r1, 0x30
+/* 802465B8 00242258  48 1C 8D F5 */	bl "_restgpr_22"
+/* 802465BC 0024225C  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 802465C0 00242260  7C 08 03 A6 */	mtlr r0
+/* 802465C4 00242264  38 21 00 30 */	addi r1, r1, 0x30
+/* 802465C8 00242268  4E 80 00 20 */	blr 
+
+.global "ProcessController__13TRCHomeButtonFv"
+"ProcessController__13TRCHomeButtonFv":
+/* 802465CC 0024226C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802465D0 00242270  7C 08 02 A6 */	mflr r0
+/* 802465D4 00242274  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802465D8 00242278  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802465DC 0024227C  7C 7F 1B 78 */	mr r31, r3
+/* 802465E0 00242280  38 63 00 70 */	addi r3, r3, 0x70
+/* 802465E4 00242284  48 13 5A 9D */	bl "HBMCalc"
+/* 802465E8 00242288  2C 03 00 00 */	cmpwi r3, 0
+/* 802465EC 0024228C  41 80 00 1C */	blt lbl_80246608
+/* 802465F0 00242290  38 00 00 00 */	li r0, 0
+/* 802465F4 00242294  90 1F 00 B4 */	stw r0, 0xb4(r31)
+/* 802465F8 00242298  48 13 5A E9 */	bl "HBMGetSelectBtnNum"
+/* 802465FC 0024229C  90 7F 00 D4 */	stw r3, 0xd4(r31)
+/* 80246600 002422A0  7F E3 FB 78 */	mr r3, r31
+/* 80246604 002422A4  4B FF FD 31 */	bl "ShutDownHomeMenu__13TRCHomeButtonFv"
+lbl_80246608:
+/* 80246608 002422A8  48 13 5B 9D */	bl "HBMUpdateSound"
+/* 8024660C 002422AC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80246610 002422B0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80246614 002422B4  7C 08 03 A6 */	mtlr r0
+/* 80246618 002422B8  38 21 00 10 */	addi r1, r1, 0x10
+/* 8024661C 002422BC  4E 80 00 20 */	blr 
+
+.global "PreRender__13TRCHomeButtonFv"
+"PreRender__13TRCHomeButtonFv":
+/* 80246620 002422C0  94 21 FF 70 */	stwu r1, -0x90(r1)
+/* 80246624 002422C4  7C 08 02 A6 */	mflr r0
+/* 80246628 002422C8  90 01 00 94 */	stw r0, 0x94(r1)
+/* 8024662C 002422CC  93 E1 00 8C */	stw r31, 0x8c(r1)
+/* 80246630 002422D0  93 C1 00 88 */	stw r30, 0x88(r1)
+/* 80246634 002422D4  7C 7E 1B 78 */	mr r30, r3
+/* 80246638 002422D8  38 61 00 58 */	addi r3, r1, 0x58
+/* 8024663C 002422DC  48 19 0F 0D */	bl "PSMTXIdentity"
+/* 80246640 002422E0  38 61 00 58 */	addi r3, r1, 0x58
+/* 80246644 002422E4  38 80 00 03 */	li r4, 3
+/* 80246648 002422E8  48 13 47 F1 */	bl "GXLoadPosMtxImm"
+/* 8024664C 002422EC  38 7E 0F 30 */	addi r3, r30, 0xf30
+/* 80246650 002422F0  48 13 47 A9 */	bl "GXGetProjectionv"
+/* 80246654 002422F4  88 1E 00 D2 */	lbz r0, 0xd2(r30)
+/* 80246658 002422F8  2C 00 00 00 */	cmpwi r0, 0
+/* 8024665C 002422FC  41 82 00 28 */	beq lbl_80246684
+/* 80246660 00242300  C0 22 9C AC */	lfs f1, lbl_805DAECC-_SDA2_BASE_(r2)
+/* 80246664 00242304  38 61 00 18 */	addi r3, r1, 0x18
+/* 80246668 00242308  C0 42 9C B0 */	lfs f2, lbl_805DAED0-_SDA2_BASE_(r2)
+/* 8024666C 0024230C  C0 62 9C B4 */	lfs f3, lbl_805DAED4-_SDA2_BASE_(r2)
+/* 80246670 00242310  C0 82 9C B8 */	lfs f4, lbl_805DAED8-_SDA2_BASE_(r2)
+/* 80246674 00242314  C0 A2 9C A0 */	lfs f5, lbl_805DAEC0-_SDA2_BASE_(r2)
+/* 80246678 00242318  C0 C2 9C BC */	lfs f6, lbl_805DAEDC-_SDA2_BASE_(r2)
+/* 8024667C 0024231C  48 19 14 85 */	bl "C_MTXOrtho"
+/* 80246680 00242320  48 00 00 24 */	b lbl_802466A4
+lbl_80246684:
+/* 80246684 00242324  C0 22 9C AC */	lfs f1, lbl_805DAECC-_SDA2_BASE_(r2)
+/* 80246688 00242328  38 61 00 18 */	addi r3, r1, 0x18
+/* 8024668C 0024232C  C0 42 9C B0 */	lfs f2, lbl_805DAED0-_SDA2_BASE_(r2)
+/* 80246690 00242330  C0 62 9C C0 */	lfs f3, lbl_805DAEE0-_SDA2_BASE_(r2)
+/* 80246694 00242334  C0 82 9C C4 */	lfs f4, lbl_805DAEE4-_SDA2_BASE_(r2)
+/* 80246698 00242338  C0 A2 9C A0 */	lfs f5, lbl_805DAEC0-_SDA2_BASE_(r2)
+/* 8024669C 0024233C  C0 C2 9C BC */	lfs f6, lbl_805DAEDC-_SDA2_BASE_(r2)
+/* 802466A0 00242340  48 19 14 61 */	bl "C_MTXOrtho"
+lbl_802466A4:
+/* 802466A4 00242344  38 61 00 18 */	addi r3, r1, 0x18
+/* 802466A8 00242348  38 80 00 01 */	li r4, 1
+/* 802466AC 0024234C  48 13 46 9D */	bl "GXSetProjection"
+/* 802466B0 00242350  38 60 00 00 */	li r3, 0
+/* 802466B4 00242354  48 13 15 0D */	bl "GXSetCullMode"
+/* 802466B8 00242358  38 7E 00 D8 */	addi r3, r30, 0xd8
+/* 802466BC 0024235C  48 12 FD 71 */	bl "GXGetVtxDescv"
+/* 802466C0 00242360  3B FE 01 B0 */	addi r31, r30, 0x1b0
+/* 802466C4 00242364  3B C0 00 00 */	li r30, 0
+lbl_802466C8:
+/* 802466C8 00242368  7F C3 F3 78 */	mr r3, r30
+/* 802466CC 0024236C  7F E4 FB 78 */	mr r4, r31
+/* 802466D0 00242370  48 13 04 71 */	bl "GXGetVtxAttrFmtv"
+/* 802466D4 00242374  3B DE 00 01 */	addi r30, r30, 1
+/* 802466D8 00242378  3B FF 01 B0 */	addi r31, r31, 0x1b0
+/* 802466DC 0024237C  2C 1E 00 08 */	cmpwi r30, 8
+/* 802466E0 00242380  41 80 FF E8 */	blt lbl_802466C8
+/* 802466E4 00242384  88 E2 9C A8 */	lbz r7, lbl_805DAEC8-_SDA2_BASE_(r2)
+/* 802466E8 00242388  38 81 00 10 */	addi r4, r1, 0x10
+/* 802466EC 0024238C  88 C2 9C A9 */	lbz r6, lbl_805DAEC9-_SDA2_BASE_(r2)
+/* 802466F0 00242390  38 60 00 04 */	li r3, 4
+/* 802466F4 00242394  88 A2 9C AA */	lbz r5, lbl_805DAECA-_SDA2_BASE_(r2)
+/* 802466F8 00242398  88 02 9C AB */	lbz r0, lbl_805DAECB-_SDA2_BASE_(r2)
+/* 802466FC 0024239C  98 E1 00 08 */	stb r7, 8(r1)
+/* 80246700 002423A0  98 C1 00 09 */	stb r6, 9(r1)
+/* 80246704 002423A4  98 A1 00 0A */	stb r5, 0xa(r1)
+/* 80246708 002423A8  98 01 00 0B */	stb r0, 0xb(r1)
+/* 8024670C 002423AC  80 01 00 08 */	lwz r0, 8(r1)
+/* 80246710 002423B0  90 01 00 10 */	stw r0, 0x10(r1)
+/* 80246714 002423B4  48 13 23 75 */	bl "GXSetChanAmbColor"
+/* 80246718 002423B8  80 01 00 08 */	lwz r0, 8(r1)
+/* 8024671C 002423BC  38 81 00 0C */	addi r4, r1, 0xc
+/* 80246720 002423C0  38 60 00 04 */	li r3, 4
+/* 80246724 002423C4  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80246728 002423C8  48 13 24 39 */	bl "GXSetChanMatColor"
+/* 8024672C 002423CC  38 60 00 01 */	li r3, 1
+/* 80246730 002423D0  38 80 00 00 */	li r4, 0
+/* 80246734 002423D4  38 A0 00 01 */	li r5, 1
+/* 80246738 002423D8  38 C0 00 02 */	li r6, 2
+/* 8024673C 002423DC  38 E0 00 03 */	li r7, 3
+/* 80246740 002423E0  48 13 3C 8D */	bl "GXSetTevSwapModeTable"
+/* 80246744 002423E4  38 60 00 02 */	li r3, 2
+/* 80246748 002423E8  38 80 00 00 */	li r4, 0
+/* 8024674C 002423EC  38 A0 00 01 */	li r5, 1
+/* 80246750 002423F0  38 C0 00 02 */	li r6, 2
+/* 80246754 002423F4  38 E0 00 03 */	li r7, 3
+/* 80246758 002423F8  48 13 3C 75 */	bl "GXSetTevSwapModeTable"
+/* 8024675C 002423FC  80 01 00 94 */	lwz r0, 0x94(r1)
+/* 80246760 00242400  83 E1 00 8C */	lwz r31, 0x8c(r1)
+/* 80246764 00242404  83 C1 00 88 */	lwz r30, 0x88(r1)
+/* 80246768 00242408  7C 08 03 A6 */	mtlr r0
+/* 8024676C 0024240C  38 21 00 90 */	addi r1, r1, 0x90
+/* 80246770 00242410  4E 80 00 20 */	blr 
+
+.global "PostRender__13TRCHomeButtonFv"
+"PostRender__13TRCHomeButtonFv":
+/* 80246774 00242414  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 80246778 00242418  7C 08 02 A6 */	mflr r0
+/* 8024677C 0024241C  90 01 00 24 */	stw r0, 0x24(r1)
+/* 80246780 00242420  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 80246784 00242424  93 C1 00 18 */	stw r30, 0x18(r1)
+/* 80246788 00242428  93 A1 00 14 */	stw r29, 0x14(r1)
+/* 8024678C 0024242C  7C 7D 1B 78 */	mr r29, r3
+/* 80246790 00242430  38 63 00 D8 */	addi r3, r3, 0xd8
+/* 80246794 00242434  48 12 F6 FD */	bl "GXSetVtxDescv"
+/* 80246798 00242438  3B FD 01 B0 */	addi r31, r29, 0x1b0
+/* 8024679C 0024243C  3B C0 00 00 */	li r30, 0
+lbl_802467A0:
+/* 802467A0 00242440  7F C3 F3 78 */	mr r3, r30
+/* 802467A4 00242444  7F E4 FB 78 */	mr r4, r31
+/* 802467A8 00242448  48 12 FE E9 */	bl "GXSetVtxAttrFmtv"
+/* 802467AC 0024244C  3B DE 00 01 */	addi r30, r30, 1
+/* 802467B0 00242450  3B FF 01 B0 */	addi r31, r31, 0x1b0
+/* 802467B4 00242454  2C 1E 00 08 */	cmpwi r30, 8
+/* 802467B8 00242458  41 80 FF E8 */	blt lbl_802467A0
+/* 802467BC 0024245C  38 7D 0F 30 */	addi r3, r29, 0xf30
+/* 802467C0 00242460  48 13 45 ED */	bl "GXSetProjectionv"
+/* 802467C4 00242464  38 60 00 01 */	li r3, 1
+/* 802467C8 00242468  48 13 24 71 */	bl "GXSetNumChans"
+/* 802467CC 0024246C  38 60 00 01 */	li r3, 1
+/* 802467D0 00242470  48 13 06 5D */	bl "GXSetNumTexGens"
+/* 802467D4 00242474  38 60 00 04 */	li r3, 4
+/* 802467D8 00242478  38 80 00 00 */	li r4, 0
+/* 802467DC 0024247C  38 A0 00 00 */	li r5, 0
+/* 802467E0 00242480  38 C0 00 01 */	li r6, 1
+/* 802467E4 00242484  38 E0 00 00 */	li r7, 0
+/* 802467E8 00242488  39 00 00 00 */	li r8, 0
+/* 802467EC 0024248C  39 20 00 02 */	li r9, 2
+/* 802467F0 00242490  48 13 24 6D */	bl "GXSetChanCtrl"
+/* 802467F4 00242494  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 802467F8 00242498  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 802467FC 0024249C  83 C1 00 18 */	lwz r30, 0x18(r1)
+/* 80246800 002424A0  83 A1 00 14 */	lwz r29, 0x14(r1)
+/* 80246804 002424A4  7C 08 03 A6 */	mtlr r0
+/* 80246808 002424A8  38 21 00 20 */	addi r1, r1, 0x20
+/* 8024680C 002424AC  4E 80 00 20 */	blr 
+
+.global "RenderHomeMenu__13TRCHomeButtonFv"
+"RenderHomeMenu__13TRCHomeButtonFv":
+/* 80246810 002424B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80246814 002424B4  7C 08 02 A6 */	mflr r0
+/* 80246818 002424B8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8024681C 002424BC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80246820 002424C0  7C 7F 1B 78 */	mr r31, r3
+/* 80246824 002424C4  4B FF FD FD */	bl "PreRender__13TRCHomeButtonFv"
+/* 80246828 002424C8  48 13 58 95 */	bl "HBMDraw"
+/* 8024682C 002424CC  7F E3 FB 78 */	mr r3, r31
+/* 80246830 002424D0  4B FF FF 45 */	bl "PostRender__13TRCHomeButtonFv"
+/* 80246834 002424D4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80246838 002424D8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8024683C 002424DC  7C 08 03 A6 */	mtlr r0
+/* 80246840 002424E0  38 21 00 10 */	addi r1, r1, 0x10
+/* 80246844 002424E4  4E 80 00 20 */	blr 
+
+.global "TriggerHomeMenuBanIcon__13TRCHomeButtonFv"
+"TriggerHomeMenuBanIcon__13TRCHomeButtonFv":
+/* 80246848 002424E8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8024684C 002424EC  7C 08 02 A6 */	mflr r0
+/* 80246850 002424F0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80246854 002424F4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80246858 002424F8  7C 7F 1B 78 */	mr r31, r3
+/* 8024685C 002424FC  80 03 00 C4 */	lwz r0, 0xc4(r3)
+/* 80246860 00242500  2C 00 00 00 */	cmpwi r0, 0
+/* 80246864 00242504  40 82 00 38 */	bne lbl_8024689C
+/* 80246868 00242508  80 03 00 B8 */	lwz r0, 0xb8(r3)
+/* 8024686C 0024250C  2C 00 00 00 */	cmpwi r0, 0
+/* 80246870 00242510  40 82 00 2C */	bne lbl_8024689C
+/* 80246874 00242514  80 03 00 24 */	lwz r0, 0x24(r3)
+/* 80246878 00242518  2C 00 00 00 */	cmpwi r0, 0
+/* 8024687C 0024251C  40 82 00 20 */	bne lbl_8024689C
+/* 80246880 00242520  48 19 D7 B1 */	bl "OSGetTick"
+/* 80246884 00242524  38 80 00 00 */	li r4, 0
+/* 80246888 00242528  38 00 00 01 */	li r0, 1
+/* 8024688C 0024252C  90 7F 00 CC */	stw r3, 0xcc(r31)
+/* 80246890 00242530  98 9F 00 D0 */	stb r4, 0xd0(r31)
+/* 80246894 00242534  90 9F 00 C8 */	stw r4, 0xc8(r31)
+/* 80246898 00242538  90 1F 00 C4 */	stw r0, 0xc4(r31)
+lbl_8024689C:
+/* 8024689C 0024253C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802468A0 00242540  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802468A4 00242544  7C 08 03 A6 */	mtlr r0
+/* 802468A8 00242548  38 21 00 10 */	addi r1, r1, 0x10
+/* 802468AC 0024254C  4E 80 00 20 */	blr 
+
+.global "UpdateBanIconAlpha__13TRCHomeButtonFv"
+"UpdateBanIconAlpha__13TRCHomeButtonFv":
+/* 802468B0 00242550  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 802468B4 00242554  7C 08 02 A6 */	mflr r0
+/* 802468B8 00242558  90 01 00 24 */	stw r0, 0x24(r1)
+/* 802468BC 0024255C  93 E1 00 1C */	stw r31, 0x1c(r1)
+/* 802468C0 00242560  7C 7F 1B 78 */	mr r31, r3
+/* 802468C4 00242564  48 19 D7 6D */	bl "OSGetTick"
+/* 802468C8 00242568  3C 80 80 00 */	lis r4, 0x800000F8@ha
+/* 802468CC 0024256C  3C A0 10 62 */	lis r5, 0x10624DD3@ha
+/* 802468D0 00242570  80 04 00 F8 */	lwz r0, 0x800000F8@l(r4)
+/* 802468D4 00242574  38 C5 4D D3 */	addi r6, r5, 0x10624DD3@l
+/* 802468D8 00242578  3C 80 43 30 */	lis r4, 0x4330
+/* 802468DC 0024257C  80 FF 00 CC */	lwz r7, 0xcc(r31)
+/* 802468E0 00242580  54 05 F0 BE */	srwi r5, r0, 2
+/* 802468E4 00242584  80 1F 00 C8 */	lwz r0, 0xc8(r31)
+/* 802468E8 00242588  7C A6 28 16 */	mulhwu r5, r6, r5
+/* 802468EC 0024258C  7C C7 18 50 */	subf r6, r7, r3
+/* 802468F0 00242590  90 81 00 08 */	stw r4, 8(r1)
+/* 802468F4 00242594  2C 00 00 01 */	cmpwi r0, 1
+/* 802468F8 00242598  C8 22 9C 98 */	lfd f1, lbl_805DAEB8-_SDA2_BASE_(r2)
+/* 802468FC 0024259C  54 A3 D1 BE */	srwi r3, r5, 6
+/* 80246900 002425A0  7C 66 1B 96 */	divwu r3, r6, r3
+/* 80246904 002425A4  90 61 00 0C */	stw r3, 0xc(r1)
+/* 80246908 002425A8  C8 01 00 08 */	lfd f0, 8(r1)
+/* 8024690C 002425AC  EC 60 08 28 */	fsubs f3, f0, f1
+/* 80246910 002425B0  41 82 00 68 */	beq lbl_80246978
+/* 80246914 002425B4  40 80 00 10 */	bge lbl_80246924
+/* 80246918 002425B8  2C 00 00 00 */	cmpwi r0, 0
+/* 8024691C 002425BC  40 80 00 14 */	bge lbl_80246930
+/* 80246920 002425C0  48 00 00 B8 */	b lbl_802469D8
+lbl_80246924:
+/* 80246924 002425C4  2C 00 00 03 */	cmpwi r0, 3
+/* 80246928 002425C8  40 80 00 B0 */	bge lbl_802469D8
+/* 8024692C 002425CC  48 00 00 70 */	b lbl_8024699C
+lbl_80246930:
+/* 80246930 002425D0  C0 42 9C CC */	lfs f2, lbl_805DAEEC-_SDA2_BASE_(r2)
+/* 80246934 002425D4  C0 02 9C C8 */	lfs f0, lbl_805DAEE8-_SDA2_BASE_(r2)
+/* 80246938 002425D8  EC 23 10 24 */	fdivs f1, f3, f2
+/* 8024693C 002425DC  EC 00 00 72 */	fmuls f0, f0, f1
+/* 80246940 002425E0  FC 03 10 40 */	fcmpo cr0, f3, f2
+/* 80246944 002425E4  FC 00 00 1E */	fctiwz f0, f0
+/* 80246948 002425E8  D8 01 00 08 */	stfd f0, 8(r1)
+/* 8024694C 002425EC  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 80246950 002425F0  98 1F 00 D0 */	stb r0, 0xd0(r31)
+/* 80246954 002425F4  4C 41 13 82 */	cror 2, 1, 2
+/* 80246958 002425F8  40 82 00 80 */	bne lbl_802469D8
+/* 8024695C 002425FC  48 19 D6 D5 */	bl "OSGetTick"
+/* 80246960 00242600  38 80 00 01 */	li r4, 1
+/* 80246964 00242604  38 00 00 FF */	li r0, 0xff
+/* 80246968 00242608  90 7F 00 CC */	stw r3, 0xcc(r31)
+/* 8024696C 0024260C  90 9F 00 C8 */	stw r4, 0xc8(r31)
+/* 80246970 00242610  98 1F 00 D0 */	stb r0, 0xd0(r31)
+/* 80246974 00242614  48 00 00 64 */	b lbl_802469D8
+lbl_80246978:
+/* 80246978 00242618  C0 02 9C D0 */	lfs f0, lbl_805DAEF0-_SDA2_BASE_(r2)
+/* 8024697C 0024261C  FC 03 00 40 */	fcmpo cr0, f3, f0
+/* 80246980 00242620  4C 41 13 82 */	cror 2, 1, 2
+/* 80246984 00242624  40 82 00 54 */	bne lbl_802469D8
+/* 80246988 00242628  48 19 D6 A9 */	bl "OSGetTick"
+/* 8024698C 0024262C  38 00 00 02 */	li r0, 2
+/* 80246990 00242630  90 7F 00 CC */	stw r3, 0xcc(r31)
+/* 80246994 00242634  90 1F 00 C8 */	stw r0, 0xc8(r31)
+/* 80246998 00242638  48 00 00 40 */	b lbl_802469D8
+lbl_8024699C:
+/* 8024699C 0024263C  C0 42 9C CC */	lfs f2, lbl_805DAEEC-_SDA2_BASE_(r2)
+/* 802469A0 00242640  C0 02 9C C8 */	lfs f0, lbl_805DAEE8-_SDA2_BASE_(r2)
+/* 802469A4 00242644  EC 22 18 28 */	fsubs f1, f2, f3
+/* 802469A8 00242648  FC 03 10 40 */	fcmpo cr0, f3, f2
+/* 802469AC 0024264C  EC 21 10 24 */	fdivs f1, f1, f2
+/* 802469B0 00242650  EC 00 00 72 */	fmuls f0, f0, f1
+/* 802469B4 00242654  FC 00 00 1E */	fctiwz f0, f0
+/* 802469B8 00242658  D8 01 00 08 */	stfd f0, 8(r1)
+/* 802469BC 0024265C  80 01 00 0C */	lwz r0, 0xc(r1)
+/* 802469C0 00242660  98 1F 00 D0 */	stb r0, 0xd0(r31)
+/* 802469C4 00242664  4C 41 13 82 */	cror 2, 1, 2
+/* 802469C8 00242668  40 82 00 10 */	bne lbl_802469D8
+/* 802469CC 0024266C  38 00 00 00 */	li r0, 0
+/* 802469D0 00242670  98 1F 00 D0 */	stb r0, 0xd0(r31)
+/* 802469D4 00242674  90 1F 00 C4 */	stw r0, 0xc4(r31)
+lbl_802469D8:
+/* 802469D8 00242678  88 7F 00 D0 */	lbz r3, 0xd0(r31)
+/* 802469DC 0024267C  3C 00 43 30 */	lis r0, 0x4330
+/* 802469E0 00242680  90 01 00 08 */	stw r0, 8(r1)
+/* 802469E4 00242684  83 E1 00 1C */	lwz r31, 0x1c(r1)
+/* 802469E8 00242688  90 61 00 0C */	stw r3, 0xc(r1)
+/* 802469EC 0024268C  C8 42 9C 98 */	lfd f2, lbl_805DAEB8-_SDA2_BASE_(r2)
+/* 802469F0 00242690  C8 21 00 08 */	lfd f1, 8(r1)
+/* 802469F4 00242694  C0 02 9C D4 */	lfs f0, lbl_805DAEF4-_SDA2_BASE_(r2)
+/* 802469F8 00242698  EC 21 10 28 */	fsubs f1, f1, f2
+/* 802469FC 0024269C  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 80246A00 002426A0  EC 21 00 24 */	fdivs f1, f1, f0
+/* 80246A04 002426A4  7C 08 03 A6 */	mtlr r0
+/* 80246A08 002426A8  38 21 00 20 */	addi r1, r1, 0x20
+/* 80246A0C 002426AC  4E 80 00 20 */	blr 
+
+.global "DisableHomeMenu__13TRCHomeButtonFii"
+"DisableHomeMenu__13TRCHomeButtonFii":
+/* 80246A10 002426B0  38 00 00 00 */	li r0, 0
+/* 80246A14 002426B4  90 83 31 BC */	stw r4, 0x31bc(r3)
+/* 80246A18 002426B8  90 A3 31 C0 */	stw r5, 0x31c0(r3)
+/* 80246A1C 002426BC  98 03 00 D1 */	stb r0, 0xd1(r3)
+/* 80246A20 002426C0  90 03 00 C4 */	stw r0, 0xc4(r3)
+/* 80246A24 002426C4  4E 80 00 20 */	blr 
+
+.global "RenderBanIcon__13TRCHomeButtonFv"
+"RenderBanIcon__13TRCHomeButtonFv":
+/* 80246A28 002426C8  94 21 FF C0 */	stwu r1, -0x40(r1)
+/* 80246A2C 002426CC  7C 08 02 A6 */	mflr r0
+/* 80246A30 002426D0  90 01 00 44 */	stw r0, 0x44(r1)
+/* 80246A34 002426D4  93 E1 00 3C */	stw r31, 0x3c(r1)
+/* 80246A38 002426D8  7C 7F 1B 78 */	mr r31, r3
+/* 80246A3C 002426DC  4B FF FB E5 */	bl "PreRender__13TRCHomeButtonFv"
+/* 80246A40 002426E0  7F E3 FB 78 */	mr r3, r31
+/* 80246A44 002426E4  4B FF FE 6D */	bl "UpdateBanIconAlpha__13TRCHomeButtonFv"
+/* 80246A48 002426E8  48 12 FA 75 */	bl "GXClearVtxDesc"
+/* 80246A4C 002426EC  38 60 00 05 */	li r3, 5
+/* 80246A50 002426F0  38 80 00 09 */	li r4, 9
+/* 80246A54 002426F4  38 A0 00 00 */	li r5, 0
+/* 80246A58 002426F8  38 C0 00 03 */	li r6, 3
+/* 80246A5C 002426FC  38 E0 00 00 */	li r7, 0
+/* 80246A60 00242700  48 12 FA 91 */	bl "GXSetVtxAttrFmt"
+/* 80246A64 00242704  38 60 00 05 */	li r3, 5
+/* 80246A68 00242708  38 80 00 0D */	li r4, 0xd
+/* 80246A6C 0024270C  38 A0 00 01 */	li r5, 1
+/* 80246A70 00242710  38 C0 00 03 */	li r6, 3
+/* 80246A74 00242714  38 E0 00 00 */	li r7, 0
+/* 80246A78 00242718  48 12 FA 79 */	bl "GXSetVtxAttrFmt"
+/* 80246A7C 0024271C  38 60 00 09 */	li r3, 9
+/* 80246A80 00242720  38 80 00 01 */	li r4, 1
+/* 80246A84 00242724  48 12 F1 A9 */	bl "GXSetVtxDesc"
+/* 80246A88 00242728  38 60 00 0D */	li r3, 0xd
+/* 80246A8C 0024272C  38 80 00 01 */	li r4, 1
+/* 80246A90 00242730  48 12 F1 9D */	bl "GXSetVtxDesc"
+/* 80246A94 00242734  38 60 00 01 */	li r3, 1
+/* 80246A98 00242738  48 13 21 A1 */	bl "GXSetNumChans"
+/* 80246A9C 0024273C  38 60 00 04 */	li r3, 4
+/* 80246AA0 00242740  38 80 00 00 */	li r4, 0
+/* 80246AA4 00242744  38 A0 00 01 */	li r5, 1
+/* 80246AA8 00242748  38 C0 00 01 */	li r6, 1
+/* 80246AAC 0024274C  38 E0 00 00 */	li r7, 0
+/* 80246AB0 00242750  39 00 00 00 */	li r8, 0
+/* 80246AB4 00242754  39 20 00 02 */	li r9, 2
+/* 80246AB8 00242758  48 13 21 A5 */	bl "GXSetChanCtrl"
+/* 80246ABC 0024275C  38 60 00 01 */	li r3, 1
+/* 80246AC0 00242760  48 13 03 6D */	bl "GXSetNumTexGens"
+/* 80246AC4 00242764  38 60 00 00 */	li r3, 0
+/* 80246AC8 00242768  38 80 00 01 */	li r4, 1
+/* 80246ACC 0024276C  38 A0 00 04 */	li r5, 4
+/* 80246AD0 00242770  38 C0 00 3C */	li r6, 0x3c
+/* 80246AD4 00242774  48 00 01 D9 */	bl "GXSetTexCoordGen"
+/* 80246AD8 00242778  38 60 00 01 */	li r3, 1
+/* 80246ADC 0024277C  48 13 3B 8D */	bl "GXSetNumTevStages"
+/* 80246AE0 00242780  88 E2 9C D8 */	lbz r7, lbl_805DAEF8-_SDA2_BASE_(r2)
+/* 80246AE4 00242784  38 81 00 0C */	addi r4, r1, 0xc
+/* 80246AE8 00242788  88 C2 9C D9 */	lbz r6, lbl_805DAEF9-_SDA2_BASE_(r2)
+/* 80246AEC 0024278C  38 60 00 01 */	li r3, 1
+/* 80246AF0 00242790  88 A2 9C DA */	lbz r5, lbl_805DAEFA-_SDA2_BASE_(r2)
+/* 80246AF4 00242794  88 1F 00 D0 */	lbz r0, 0xd0(r31)
+/* 80246AF8 00242798  98 E1 00 08 */	stb r7, 8(r1)
+/* 80246AFC 0024279C  98 C1 00 09 */	stb r6, 9(r1)
+/* 80246B00 002427A0  98 A1 00 0A */	stb r5, 0xa(r1)
+/* 80246B04 002427A4  98 01 00 0B */	stb r0, 0xb(r1)
+/* 80246B08 002427A8  80 01 00 08 */	lwz r0, 8(r1)
+/* 80246B0C 002427AC  90 01 00 0C */	stw r0, 0xc(r1)
+/* 80246B10 002427B0  48 13 36 C1 */	bl "GXSetTevColor"
+/* 80246B14 002427B4  38 60 00 00 */	li r3, 0
+/* 80246B18 002427B8  38 80 00 00 */	li r4, 0
+/* 80246B1C 002427BC  38 A0 00 00 */	li r5, 0
+/* 80246B20 002427C0  38 C0 00 FF */	li r6, 0xff
+/* 80246B24 002427C4  48 13 39 E9 */	bl "GXSetTevOrder"
+/* 80246B28 002427C8  38 60 00 00 */	li r3, 0
+/* 80246B2C 002427CC  38 80 00 0F */	li r4, 0xf
+/* 80246B30 002427D0  38 A0 00 0F */	li r5, 0xf
+/* 80246B34 002427D4  38 C0 00 0F */	li r6, 0xf
+/* 80246B38 002427D8  38 E0 00 08 */	li r7, 8
+/* 80246B3C 002427DC  48 13 35 65 */	bl "GXSetTevColorIn"
+/* 80246B40 002427E0  38 60 00 00 */	li r3, 0
+/* 80246B44 002427E4  38 80 00 00 */	li r4, 0
+/* 80246B48 002427E8  38 A0 00 00 */	li r5, 0
+/* 80246B4C 002427EC  38 C0 00 00 */	li r6, 0
+/* 80246B50 002427F0  38 E0 00 01 */	li r7, 1
+/* 80246B54 002427F4  39 00 00 00 */	li r8, 0
+/* 80246B58 002427F8  48 13 35 C9 */	bl "GXSetTevColorOp"
+/* 80246B5C 002427FC  38 60 00 00 */	li r3, 0
+/* 80246B60 00242800  38 80 00 07 */	li r4, 7
+/* 80246B64 00242804  38 A0 00 01 */	li r5, 1
+/* 80246B68 00242808  38 C0 00 04 */	li r6, 4
+/* 80246B6C 0024280C  38 E0 00 07 */	li r7, 7
+/* 80246B70 00242810  48 13 35 71 */	bl "GXSetTevAlphaIn"
+/* 80246B74 00242814  38 60 00 00 */	li r3, 0
+/* 80246B78 00242818  38 80 00 00 */	li r4, 0
+/* 80246B7C 0024281C  38 A0 00 00 */	li r5, 0
+/* 80246B80 00242820  38 C0 00 00 */	li r6, 0
+/* 80246B84 00242824  38 E0 00 01 */	li r7, 1
+/* 80246B88 00242828  39 00 00 00 */	li r8, 0
+/* 80246B8C 0024282C  48 13 35 ED */	bl "GXSetTevAlphaOp"
+/* 80246B90 00242830  38 60 00 01 */	li r3, 1
+/* 80246B94 00242834  38 80 00 04 */	li r4, 4
+/* 80246B98 00242838  38 A0 00 05 */	li r5, 5
+/* 80246B9C 0024283C  38 C0 00 00 */	li r6, 0
+/* 80246BA0 00242840  48 13 3E 3D */	bl "GXSetBlendMode"
+/* 80246BA4 00242844  38 60 00 00 */	li r3, 0
+/* 80246BA8 00242848  38 80 00 03 */	li r4, 3
+/* 80246BAC 0024284C  38 A0 00 00 */	li r5, 0
+/* 80246BB0 00242850  48 13 3E D5 */	bl "GXSetZMode"
+/* 80246BB4 00242854  38 60 00 03 */	li r3, 3
+/* 80246BB8 00242858  48 13 43 29 */	bl "GXSetCurrentMtx"
+/* 80246BBC 0024285C  80 7F 00 68 */	lwz r3, 0x68(r31)
+/* 80246BC0 00242860  38 81 00 10 */	addi r4, r1, 0x10
+/* 80246BC4 00242864  38 A0 00 00 */	li r5, 0
+/* 80246BC8 00242868  48 1A 42 95 */	bl "TPLGetGXTexObjFromPalette"
+/* 80246BCC 0024286C  38 61 00 10 */	addi r3, r1, 0x10
+/* 80246BD0 00242870  38 80 00 00 */	li r4, 0
+/* 80246BD4 00242874  48 13 28 4D */	bl "GXLoadTexObj"
+/* 80246BD8 00242878  38 60 00 80 */	li r3, 0x80
+/* 80246BDC 0024287C  38 80 00 05 */	li r4, 5
+/* 80246BE0 00242880  38 A0 00 04 */	li r5, 4
+/* 80246BE4 00242884  48 13 0D 15 */	bl "GXBegin"
+/* 80246BE8 00242888  80 7F 31 BC */	lwz r3, 0x31bc(r31)
+/* 80246BEC 0024288C  80 1F 31 C0 */	lwz r0, 0x31c0(r31)
+/* 80246BF0 00242890  38 63 FF E6 */	addi r3, r3, -26
+/* 80246BF4 00242894  20 00 00 07 */	subfic r0, r0, 7
+/* 80246BF8 00242898  7C 63 07 34 */	extsh r3, r3
+/* 80246BFC 0024289C  7C 04 07 34 */	extsh r4, r0
+/* 80246C00 002428A0  48 00 00 C9 */	bl "GXPosition2s16"
+/* 80246C04 002428A4  38 60 00 00 */	li r3, 0
+/* 80246C08 002428A8  38 80 00 01 */	li r4, 1
+/* 80246C0C 002428AC  48 00 00 AD */	bl "GXTexCoord2s16"
+/* 80246C10 002428B0  80 7F 31 BC */	lwz r3, 0x31bc(r31)
+/* 80246C14 002428B4  80 1F 31 C0 */	lwz r0, 0x31c0(r31)
+/* 80246C18 002428B8  38 63 FF E6 */	addi r3, r3, -26
+/* 80246C1C 002428BC  20 00 00 3F */	subfic r0, r0, 0x3f
+/* 80246C20 002428C0  7C 63 07 34 */	extsh r3, r3
+/* 80246C24 002428C4  7C 04 07 34 */	extsh r4, r0
+/* 80246C28 002428C8  48 00 00 A1 */	bl "GXPosition2s16"
+/* 80246C2C 002428CC  38 60 00 00 */	li r3, 0
+/* 80246C30 002428D0  38 80 00 00 */	li r4, 0
+/* 80246C34 002428D4  48 00 00 85 */	bl "GXTexCoord2s16"
+/* 80246C38 002428D8  80 7F 31 BC */	lwz r3, 0x31bc(r31)
+/* 80246C3C 002428DC  80 1F 31 C0 */	lwz r0, 0x31c0(r31)
+/* 80246C40 002428E0  38 63 00 1E */	addi r3, r3, 0x1e
+/* 80246C44 002428E4  20 00 00 3F */	subfic r0, r0, 0x3f
+/* 80246C48 002428E8  7C 63 07 34 */	extsh r3, r3
+/* 80246C4C 002428EC  7C 04 07 34 */	extsh r4, r0
+/* 80246C50 002428F0  48 00 00 79 */	bl "GXPosition2s16"
+/* 80246C54 002428F4  38 60 00 01 */	li r3, 1
+/* 80246C58 002428F8  38 80 00 00 */	li r4, 0
+/* 80246C5C 002428FC  48 00 00 5D */	bl "GXTexCoord2s16"
+/* 80246C60 00242900  80 7F 31 BC */	lwz r3, 0x31bc(r31)
+/* 80246C64 00242904  80 1F 31 C0 */	lwz r0, 0x31c0(r31)
+/* 80246C68 00242908  38 63 00 1E */	addi r3, r3, 0x1e
+/* 80246C6C 0024290C  20 00 00 07 */	subfic r0, r0, 7
+/* 80246C70 00242910  7C 63 07 34 */	extsh r3, r3
+/* 80246C74 00242914  7C 04 07 34 */	extsh r4, r0
+/* 80246C78 00242918  48 00 00 51 */	bl "GXPosition2s16"
+/* 80246C7C 0024291C  38 60 00 01 */	li r3, 1
+/* 80246C80 00242920  38 80 00 01 */	li r4, 1
+/* 80246C84 00242924  48 00 00 35 */	bl "GXTexCoord2s16"
+/* 80246C88 00242928  48 00 00 21 */	bl "GXEnd"
+/* 80246C8C 0024292C  7F E3 FB 78 */	mr r3, r31
+/* 80246C90 00242930  4B FF FA E5 */	bl "PostRender__13TRCHomeButtonFv"
+/* 80246C94 00242934  80 01 00 44 */	lwz r0, 0x44(r1)
+/* 80246C98 00242938  83 E1 00 3C */	lwz r31, 0x3c(r1)
+/* 80246C9C 0024293C  7C 08 03 A6 */	mtlr r0
+/* 80246CA0 00242940  38 21 00 40 */	addi r1, r1, 0x40
+/* 80246CA4 00242944  4E 80 00 20 */	blr 
+
+.global "GXEnd"
+"GXEnd":
+/* 80246CA8 00242948  4E 80 00 20 */	blr 
+
+.global "GXSetTexCoordGen"
+"GXSetTexCoordGen":
+/* 80246CAC 0024294C  38 E0 00 00 */	li r7, 0
+/* 80246CB0 00242950  39 00 00 7D */	li r8, 0x7d
+/* 80246CB4 00242954  48 12 FF 50 */	b "GXSetTexCoordGen2"
+
+.global "GXTexCoord2s16"
+"GXTexCoord2s16":
+/* 80246CB8 00242958  3C A0 CC 01 */	lis r5, 0xCC008000@ha
+/* 80246CBC 0024295C  B0 65 80 00 */	sth r3, 0xCC008000@l(r5)
+/* 80246CC0 00242960  B0 85 80 00 */	sth r4, -0x8000(r5)
+/* 80246CC4 00242964  4E 80 00 20 */	blr 
+
+.global "GXPosition2s16"
+"GXPosition2s16":
+/* 80246CC8 00242968  3C A0 CC 01 */	lis r5, 0xCC008000@ha
+/* 80246CCC 0024296C  B0 65 80 00 */	sth r3, 0xCC008000@l(r5)
+/* 80246CD0 00242970  B0 85 80 00 */	sth r4, -0x8000(r5)
+/* 80246CD4 00242974  4E 80 00 20 */	blr 
+
+.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
+	.4byte "__sinit_game_unity_cpp" ;# ptr (0x80243D58)
+
+.section .data, "wa"  # 0x80420060 - 0x80488160
+.global lbl_8044E8C8
+lbl_8044E8C8:
+	.incbin "baserom.dol", 0x44A9C8, 0x154
+.global lbl_8044EA1C
+lbl_8044EA1C:
+	.incbin "baserom.dol", 0x44AB1C, 0x1C
+.global lbl_8044EA38
+lbl_8044EA38:
+	.incbin "baserom.dol", 0x44AB38, 0x10
+.global lbl_8044EA48
+lbl_8044EA48:
+	.incbin "baserom.dol", 0x44AB48, 0x14
+.global lbl_8044EA5C
+lbl_8044EA5C:
+	.incbin "baserom.dol", 0x44AB5C, 0x14
+.global lbl_8044EA70
+lbl_8044EA70:
+	.incbin "baserom.dol", 0x44AB70, 0x18
+
+.section .bss, "wa"  # 0x80488180 - 0x805DC448
+.global lbl_804A4748
+lbl_804A4748:
+	.skip 0xC
+.global "msInitParams__13TRCHomeButton"
+"msInitParams__13TRCHomeButton":
+	.skip 0xC
+
+.section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
+.global lbl_805D64F0
+lbl_805D64F0:
+	.incbin "baserom.dol", 0x486070, 0x8
+
+.section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
+.global "_wiiHomeButton"
+"_wiiHomeButton":
+	.skip 0x8
+.global "backgroundColor$31666"
+"backgroundColor$31666":
+	.skip 0x4
+.global "m_pInstance__13TRCHomeButton"
+"m_pInstance__13TRCHomeButton":
+	.skip 0x4
+
+.section .sdata2, "a"  # 0x805D9220 - 0x805DC420
+.global lbl_805DAEB0
+lbl_805DAEB0:
+	.incbin "baserom.dol", 0x4891D0, 0x8
+.global lbl_805DAEB8
+lbl_805DAEB8:
+	.incbin "baserom.dol", 0x4891D8, 0x8
+.global lbl_805DAEC0
+lbl_805DAEC0:
+	.incbin "baserom.dol", 0x4891E0, 0x4
+.global lbl_805DAEC4
+lbl_805DAEC4:
+	.incbin "baserom.dol", 0x4891E4, 0x4
+.global lbl_805DAEC8
+lbl_805DAEC8:
+	.incbin "baserom.dol", 0x4891E8, 0x1
+.global lbl_805DAEC9
+lbl_805DAEC9:
+	.incbin "baserom.dol", 0x4891E9, 0x1
+.global lbl_805DAECA
+lbl_805DAECA:
+	.incbin "baserom.dol", 0x4891EA, 0x1
+.global lbl_805DAECB
+lbl_805DAECB:
+	.incbin "baserom.dol", 0x4891EB, 0x1
+.global lbl_805DAECC
+lbl_805DAECC:
+	.incbin "baserom.dol", 0x4891EC, 0x4
+.global lbl_805DAED0
+lbl_805DAED0:
+	.incbin "baserom.dol", 0x4891F0, 0x4
+.global lbl_805DAED4
+lbl_805DAED4:
+	.incbin "baserom.dol", 0x4891F4, 0x4
+.global lbl_805DAED8
+lbl_805DAED8:
+	.incbin "baserom.dol", 0x4891F8, 0x4
+.global lbl_805DAEDC
+lbl_805DAEDC:
+	.incbin "baserom.dol", 0x4891FC, 0x4
+.global lbl_805DAEE0
+lbl_805DAEE0:
+	.incbin "baserom.dol", 0x489200, 0x4
+.global lbl_805DAEE4
+lbl_805DAEE4:
+	.incbin "baserom.dol", 0x489204, 0x4
+.global lbl_805DAEE8
+lbl_805DAEE8:
+	.incbin "baserom.dol", 0x489208, 0x4
+.global lbl_805DAEEC
+lbl_805DAEEC:
+	.incbin "baserom.dol", 0x48920C, 0x4
+.global lbl_805DAEF0
+lbl_805DAEF0:
+	.incbin "baserom.dol", 0x489210, 0x4
+.global lbl_805DAEF4
+lbl_805DAEF4:
+	.incbin "baserom.dol", 0x489214, 0x4
+.global lbl_805DAEF8
+lbl_805DAEF8:
+	.incbin "baserom.dol", 0x489218, 0x1
+.global lbl_805DAEF9
+lbl_805DAEF9:
+	.incbin "baserom.dol", 0x489219, 0x1
+.global lbl_805DAEFA
+lbl_805DAEFA:
+	.incbin "baserom.dol", 0x48921A, 0x6
