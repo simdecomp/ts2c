@@ -18926,9 +18926,6 @@ lbl_801F58D0:
 /* 801F590C 001F15AC  38 60 00 00 */	li r3, 0
 /* 801F5910 001F15B0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_ui_targets_tsc5_unity_cpp" ;# ptr (0x801C9ECC)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "PLNIconDataTable__9PLNTarget"
 "PLNIconDataTable__9PLNTarget":

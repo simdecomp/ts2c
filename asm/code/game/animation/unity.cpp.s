@@ -39445,9 +39445,6 @@ lbl_80029134:
 "SetTargetAngle__10IKDataBoarFf":
 /* 800294E4 00025184  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__init_cpp_exceptions" ;# ptr (0x8040F9A8)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "s_lRequiredAnimations__16AdultSimAnimator"
 "s_lRequiredAnimations__16AdultSimAnimator":

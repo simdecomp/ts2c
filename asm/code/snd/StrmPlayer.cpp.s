@@ -3151,9 +3151,6 @@ lbl_803B7B60:
 /* 803B7BA4 003B3844  38 21 00 10 */	addi r1, r1, 0x10
 /* 803B7BA8 003B3848  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_SeqSound_cpp" ;# ptr (0x803A9000)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804719F8
 lbl_804719F8:

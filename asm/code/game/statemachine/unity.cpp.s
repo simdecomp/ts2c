@@ -20170,9 +20170,6 @@ lbl_8017B20C:
 /* 8017B220 00176EC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017B224 00176EC4  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_simulator_utility_unity_cpp" ;# ptr (0x80164B44)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042C718
 lbl_8042C718:

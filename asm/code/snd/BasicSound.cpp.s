@@ -1264,9 +1264,6 @@ lbl_803A0430:
 /* 803A0450 0039C0F0  38 80 00 00 */	li r4, 0
 /* 803A0454 0039C0F4  4B FE A2 C8 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_lyt_window_cpp" ;# ptr (0x80398BF0)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046D798
 lbl_8046D798:

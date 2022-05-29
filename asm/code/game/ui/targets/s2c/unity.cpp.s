@@ -44968,9 +44968,6 @@ lbl_801C16C0:
 /* 801C16E8 001BD388  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 801C16EC 001BD38C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_ui_targets_cas_unity_cpp" ;# ptr (0x8018BA78)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "zodiacPersonalityValues_8041A4C0"
 "zodiacPersonalityValues_8041A4C0":

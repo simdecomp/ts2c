@@ -36085,9 +36085,6 @@ lbl_802EFCB4:
 /* 802EFCBC 002EB95C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802EFCC0 002EB960  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_ngc_unity_cpp" ;# ptr (0x802AE07C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80453460
 lbl_80453460:

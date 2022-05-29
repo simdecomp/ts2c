@@ -12130,9 +12130,6 @@ lbl_802FA674:
 /* 802FA68C 002F632C  38 80 10 00 */	li r4, 0x1000
 /* 802FA690 002F6330  4B F5 1D C4 */	b "__ct__11EAllocGroupFi"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_resource_unity_cpp" ;# ptr (0x802D2DC0)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041B4B8
 lbl_8041B4B8:

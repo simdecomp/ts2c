@@ -150,9 +150,6 @@ lbl_8038A664:
 /* 8038A71C 003863BC  90 83 00 00 */	stw r4, 0(r3)
 /* 8038A720 003863C0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_StringPool_cpp" ;# ptr (0x803357F8)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3lyt8Bounding"
 "__vt__Q36nw4hbm3lyt8Bounding":

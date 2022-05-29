@@ -6839,9 +6839,6 @@ lbl_800A0C80:
 /* 800A0C88 0009C928  38 21 00 10 */	addi r1, r1, 0x10
 /* 800A0C8C 0009C92C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_level_unity_cpp" ;# ptr (0x8009A2A4)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "_Xml_BtmDecode"
 "_Xml_BtmDecode":

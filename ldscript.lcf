@@ -6,7 +6,7 @@ SECTIONS
 {
     GROUP :
     {
-        .init BIND(0x80004000) ALIGN(0x20) : {}
+        .init ALIGN(0x20) : {}
         _extab ALIGN(0x20) : {}
         _extabindex ALIGN(0x20) : {}
         .text ALIGN(0x20) : {}
@@ -14,11 +14,11 @@ SECTIONS
         .dtors ALIGN(0x20) : {}
         .rodata ALIGN(0x20) : {}
         .data ALIGN(0x20) : {}
-        .bss BIND(0x80488180) ALIGN(0x40) : {}
-        .sdata BIND(0x805D46E0) ALIGN(0x20) : {}
-        .sbss BIND(0x805D79C0) ALIGN(0x20) : {}
-        .sdata2 BIND(0x805D9220) ALIGN(0x20) : {}
-        .sbss2 BIND(0x805DC420) ALIGN(0x20) : {}
+        .bss ALIGN(0x40) : {}
+        .sdata ALIGN(0x20) : {}
+        .sbss ALIGN(0x20) : {}
+        .sdata2 ALIGN(0x20) : {}
+        .sbss2 ALIGN(0x20) : {}
         .stack      ALIGN(0x20) : {}
     }  > text
     _stack_base = _f_stack;
@@ -27,20 +27,4 @@ SECTIONS
     _db_stack_end = _stack_addr;
     __ArenaLo = (_db_stack_addr + 0x1f) & ~0x1f;
     __ArenaHi = 0x81700000;
-}
-FORCEFILES
-{
-    bss.o
-    ctors.o
-    data.o
-    dtors.o
-    extab.o
-    extabindex.o
-    init.o
-    rodata.o
-    sbss.o
-    sbss2.o
-    sdata.o
-    sdata2.o
-    text.o
 }

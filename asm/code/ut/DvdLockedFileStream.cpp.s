@@ -162,9 +162,6 @@ lbl_803C2750:
 /* 803C2858 003BE4F8  38 8D C6 08 */	addi r4, r13, "typeInfo__Q36nw4hbm2ut13DvdFileStream"-_SDA_BASE_
 /* 803C285C 003BE4FC  4B FC 7E C0 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_ut_DvdFileStream_cpp" ;# ptr (0x803C262C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm2ut19DvdLockedFileStream"
 "__vt__Q36nw4hbm2ut19DvdLockedFileStream":

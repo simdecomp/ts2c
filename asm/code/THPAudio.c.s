@@ -383,32 +383,3 @@ lbl_80418B54:
 /* 80418B74 00414814  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80418B78 00414818  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80418B7C 0041481C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-lbl_ctors:
-	# ROM: 0x414C80
-
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_ut_TextWriterBase_cpp" ;# ptr (0x803CDF5C)
-
-.global "_ctors$99"
-"_ctors$99":
-	# ROM: 0x414D48
-	.4byte 0
-
-
-.section .dtors, "wa"  # 0x80418C60 - 0x80418C80
-lbl_dtors:
-	# ROM: 0x414D60
-
-.section .dtors, "wa"  # 0x80418C60 - 0x80418C80
-.global "__fini_cpp_exceptions_reference"
-"__fini_cpp_exceptions_reference":
-	# ROM: 0x414D64
-	.4byte "__fini_cpp_exceptions" ;# ptr (0x8040F9E4)
-
-.global "_dtors$99"
-"_dtors$99":
-	# ROM: 0x414D68
-	.4byte 0
-

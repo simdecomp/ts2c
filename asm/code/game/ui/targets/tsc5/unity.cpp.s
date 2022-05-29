@@ -41158,9 +41158,6 @@ lbl_801E5060:
 /* 801E5078 001E0D18  38 21 00 30 */	addi r1, r1, 0x30
 /* 801E507C 001E0D1C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_ui_targets_s2c_unity_cpp" ;# ptr (0x801BD84C)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "tutorialLockTable$41948"
 "tutorialLockTable$41948":

@@ -624,9 +624,6 @@ lbl_80393890:
 /* 803938C0 0038F560  38 8D C5 60 */	addi r4, r13, "typeInfo__Q36nw4hbm3lyt4Pane"-_SDA_BASE_
 /* 803938C4 0038F564  4B FF 6E 58 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_lyt_pane_cpp" ;# ptr (0x80393078)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046B250
 lbl_8046B250:

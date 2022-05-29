@@ -1679,9 +1679,6 @@ lbl_803A1934:
 /* 803A1B00 0039D7A0  38 C0 00 61 */	li r6, 0x61
 /* 803A1B04 0039D7A4  48 06 D5 30 */	b "__destroy_arr"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_BasicSound_cpp" ;# ptr (0x803A044C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046D8F0
 lbl_8046D8F0:

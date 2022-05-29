@@ -2172,9 +2172,6 @@ lbl_803107B8:
 /* 803107CC 0030C46C  38 21 00 10 */	addi r1, r1, 0x10
 /* 803107D0 0030C470  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_AptActionInterpreter_cpp" ;# ptr (0x803090C0)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041B910
 lbl_8041B910:

@@ -1544,9 +1544,6 @@ lbl_803BC4E8:
 /* 803BC544 003B81E4  38 63 FF F8 */	addi r3, r3, -8
 /* 803BC548 003B81E8  4B FF E0 84 */	b "__dt__Q46nw4hbm3snd6detail9WsdPlayerFv"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_WaveSound_cpp" ;# ptr (0x803BAA24)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472B88
 lbl_80472B88:

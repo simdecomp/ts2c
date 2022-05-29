@@ -4568,9 +4568,6 @@ lbl_8027FE4C:
 /* 8027FF2C 0027BBCC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8027FF30 0027BBD0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_core_unity_cpp" ;# ptr (0x80279E54)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804501F0
 lbl_804501F0:

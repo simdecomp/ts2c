@@ -6341,9 +6341,6 @@ lbl_8024C308:
 /* 8024C44C 002480EC  90 03 00 00 */	stw r0, 0(r3)
 /* 8024C450 002480F0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_wii_unity_cpp" ;# ptr (0x80245794)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044EA88
 lbl_8044EA88:

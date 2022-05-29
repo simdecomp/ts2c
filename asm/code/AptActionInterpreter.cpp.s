@@ -15039,9 +15039,6 @@ lbl_8030B8D4:
 "fmod__3stdFff":
 /* 8030B90C 003075AC  4B EF 79 50 */	b "fmodf"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_Apt_cpp" ;# ptr (0x802FC49C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_80454740"
 "__PRETTY_FUNCTION__$1864_80454740":

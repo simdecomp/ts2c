@@ -89,9 +89,6 @@ lbl_802799A4:
 /* 802799D8 00275678  90 03 00 08 */	stw r0, 8(r3)
 /* 802799DC 0027567C  48 19 53 40 */	b "__register_global_object"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_base_core_unity_cpp" ;# ptr (0x8025E134)
-
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_804F33A8
 lbl_804F33A8:

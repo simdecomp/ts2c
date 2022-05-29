@@ -8977,9 +8977,6 @@ lbl_802AD24C:
 /* 802AD2B4 002A8F54  38 60 00 01 */	li r3, 1
 /* 802AD2B8 002A8F58  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_graphics_unity_cpp" ;# ptr (0x802A126C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804508A0
 lbl_804508A0:

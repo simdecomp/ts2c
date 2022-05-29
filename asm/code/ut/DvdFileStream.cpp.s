@@ -922,9 +922,6 @@ lbl_803C25E8:
 /* 803C2630 003BE2D0  38 8D C6 18 */	addi r4, r13, "typeInfo__Q36nw4hbm2ut10FileStream"-_SDA_BASE_
 /* 803C2634 003BE2D4  4B FC 80 E8 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_WsdPlayer_cpp" ;# ptr (0x803BC464)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473710
 lbl_80473710:

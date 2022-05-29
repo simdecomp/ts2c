@@ -736,9 +736,6 @@ lbl_803A8F50:
 /* 803A9004 003A4CA4  38 8D C5 88 */	addi r4, r13, "typeInfo__Q46nw4hbm3snd6detail10BasicSound"-_SDA_BASE_
 /* 803A9008 003A4CA8  4B FE 17 14 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_SeqPlayer_cpp" ;# ptr (0x803A8594)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046F268
 lbl_8046F268:

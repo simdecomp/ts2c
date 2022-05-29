@@ -29746,9 +29746,6 @@ lbl_8009B5A0:
 /* 8009B630 000972D0  38 60 00 00 */	li r3, 0
 /* 8009B634 000972D4  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_interactor_unity_cpp" ;# ptr (0x80050CCC)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "zodiacPersonalityValues_80419590"
 "zodiacPersonalityValues_80419590":

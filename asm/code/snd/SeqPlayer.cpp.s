@@ -1919,9 +1919,6 @@ lbl_803A8618:
 /* 803A8664 003A4304  38 63 FF F8 */	addi r3, r3, -8
 /* 803A8668 003A4308  4B FF E6 FC */	b "__dt__Q46nw4hbm3snd6detail9SeqPlayerFv"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_Channel_cpp" ;# ptr (0x803A1A94)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046ED30
 lbl_8046ED30:

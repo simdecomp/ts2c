@@ -5491,7 +5491,7 @@ lbl_805DB9C8:
 lbl_805DB9D0:
 	.incbin "baserom.dol", 0x489CF0, 0x8
 
-.section .sbss2  # 0x805dc420 - 0x805DC448
+.section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 .global "DefaultBlackColor"
 "DefaultBlackColor":
 	.skip 0x8

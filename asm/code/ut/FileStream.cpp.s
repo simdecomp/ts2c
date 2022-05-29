@@ -170,9 +170,6 @@ lbl_803C2A78:
 /* 803C2A80 003BE720  38 8D C6 20 */	addi r4, r13, "typeInfo__Q36nw4hbm2ut8IOStream"-_SDA_BASE_
 /* 803C2A84 003BE724  4B FC 7C 98 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_ut_DvdLockedFileStream_cpp" ;# ptr (0x803C2854)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473A58
 lbl_80473A58:

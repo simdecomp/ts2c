@@ -1986,9 +1986,6 @@ lbl_803357DC:
 /* 803358B0 00331550  90 83 00 04 */	stw r4, 4(r3)
 /* 803358B4 00331554  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_AptArray_cpp" ;# ptr (0x80310550)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_8045BFD8"
 "__PRETTY_FUNCTION__$1864_8045BFD8":

@@ -1845,9 +1845,6 @@ lbl_80393054:
 /* 8039307C 0038ED1C  38 80 00 00 */	li r4, 0
 /* 80393080 0038ED20  4B FF 76 9C */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_lyt_bounding_cpp" ;# ptr (0x8038A710)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046AEC8
 lbl_8046AEC8:

@@ -1442,9 +1442,6 @@ lbl_803BA524:
 /* 803BA568 003B6208  38 21 00 10 */	addi r1, r1, 0x10
 /* 803BA56C 003B620C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_snd_StrmSound_cpp" ;# ptr (0x803B7F5C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472298
 lbl_80472298:

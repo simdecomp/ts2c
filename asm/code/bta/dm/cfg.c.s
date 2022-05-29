@@ -34,7 +34,7 @@
 "p_bta_dm_pm_md":
 	.incbin "baserom.dol", 0x486E08, 0x8
 
-.section .sbss2  # 0x805dc420 - 0x805DC448
+.section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 .global "bta_dm_pm_cfg"
 "bta_dm_pm_cfg":
 	.skip 0x8

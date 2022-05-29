@@ -172,9 +172,6 @@ lbl_803C2E60:
 /* 803C2E80 003BEB20  38 80 00 00 */	li r4, 0
 /* 803C2E84 003BEB24  4B FC 78 98 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_ut_FileStream_cpp" ;# ptr (0x803C2A7C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473C18
 lbl_80473C18:

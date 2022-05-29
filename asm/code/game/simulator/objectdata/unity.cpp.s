@@ -8790,9 +8790,6 @@ lbl_80163FAC:
 /* 8016410C 0015FDAC  38 60 00 02 */	li r3, 2
 /* 80164110 0015FDB0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_simulator_core_unity_cpp" ;# ptr (0x800FD258)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042BF90
 lbl_8042BF90:

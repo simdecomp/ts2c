@@ -6106,9 +6106,6 @@ lbl_803CDFD0:
 /* 803CDFD8 003C9C78  38 21 00 10 */	addi r1, r1, 0x10
 /* 803CDFDC 003C9C7C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_ut_IOStream_cpp" ;# ptr (0x803C2E7C)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80474C50
 lbl_80474C50:

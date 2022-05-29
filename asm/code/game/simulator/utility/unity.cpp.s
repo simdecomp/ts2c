@@ -7270,9 +7270,6 @@ lbl_8016A138:
 /* 8016A13C 00165DDC  4B FF FF 84 */	b "FindRes<C10WStringSet>__FPC10WStringSetPC10WStringSeti_PC10WStringSet"
 /* 8016A140 00165DE0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_simulator_objectdata_unity_cpp" ;# ptr (0x80163148)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042C5C8
 lbl_8042C5C8:

@@ -4426,9 +4426,6 @@ lbl_802FE9FC:
 /* 802FEA78 002FA718  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 802FEA7C 002FA71C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_utility_unity_cpp" ;# ptr (0x802F3574)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "AptValueSizesByVType"
 "AptValueSizesByVType":

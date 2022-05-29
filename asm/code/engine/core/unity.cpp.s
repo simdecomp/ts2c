@@ -2639,9 +2639,6 @@ lbl_8027BDC4:
 /* 8027BDD4 00277A74  38 63 FF F8 */	addi r3, r3, -8
 /* 8027BDD8 00277A78  4B FF DC 48 */	b "__dt__14BackgroundImplFv"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_e_cheatmenu_cpp" ;# ptr (0x802799B4)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044FDE8
 lbl_8044FDE8:

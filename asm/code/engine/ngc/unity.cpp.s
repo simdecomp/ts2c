@@ -40397,9 +40397,6 @@ lbl_802D0998:
 /* 802D09A0 002CC640  38 60 00 01 */	li r3, 1
 /* 802D09A4 002CC644  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_manager_unity_cpp" ;# ptr (0x802A58AC)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "kNgcDvdErrorEnglish"
 "kNgcDvdErrorEnglish":
@@ -41675,7 +41672,7 @@ lbl_805DB428:
 lbl_805DB430:
 	.incbin "baserom.dol", 0x489750, 0x8
 
-.section .sbss2  # 0x805dc420 - 0x805DC448
+.section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 .global "_gxBlack"
 "_gxBlack":
 	.skip 0x1

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
-# Usage: dump_common_data.py file.s
-# Dumps all incbin data and prints the revised file to stdout.
+# Usage: dump_common_data.py
+# Dumps all incbin data from every asm file and writes to new files
 
 import os
 import re
@@ -11,28 +11,29 @@ labelNames = {}
 
 # print("# Scanning for labels first...")
 
-for filename in os.listdir("asm"):
-    f = os.path.join("asm", filename)
-    if os.path.isfile(f):
-        # print("# Found file \"%s\"" % f)
-        file = open(f, "rt")
-        label = ''
-        address = 0
-        for line in file.readlines():
-            line = line.rstrip()
-            m = re.match(r'\s*\.global (.*)', line)
-            if m:
-                g = m.groups()
-                # print("# Found label \"%s\" at 0x%08X" % g[0], int(g[1], 16))
-                label = g[0]
-            else:
-                m = re.match(r'\/\* ([0-9A-F]{8})', line)
-                if m and label != '':
+for root, subdirs, files in os.walk("asm/"):
+    for filename in files:
+        f = os.path.join(root, filename)
+        if os.path.isfile(f):
+            # print("# Found file \"%s\"" % f)
+            file = open(f, "rt")
+            label = ''
+            address = 0
+            for line in file.readlines():
+                line = line.rstrip()
+                m = re.match(r'\s*\.global (.*)', line)
+                if m:
                     g = m.groups()
-                    address = int(g[0], 16)
-                    labelNames[address] = label
-                    label = ''
-                    address = 0
+                    # print("# Found label \"%s\" at 0x%08X" % g[0], int(g[1], 16))
+                    label = g[0]
+                else:
+                    m = re.match(r'\/\* ([0-9A-F]{8})', line)
+                    if m and label != '':
+                        g = m.groups()
+                        address = int(g[0], 16)
+                        labelNames[address] = label
+                        label = ''
+                        address = 0
 
 # Reads a bytearray from baserom.dol
 def read_baserom(start, size):
@@ -143,18 +144,20 @@ def convert_data(data, offset, incsize):
     return text
 
 currSection = ''
-
-with open(sys.argv[1], 'rt') as f:
-    for line in f.readlines():
-        line = line.rstrip()
-            # Incbin directive
-        m = re.match(r'\s*\.incbin\s+"baserom.dol"\s*,\s*([^, \.]+),\s*([^, \.]+)', line)
-        if m:
-            g = m.groups()
-            start = int(g[0], 0)
-            size = int(g[1], 0)
-            data = read_baserom(start, size)
-            print('\t# ROM: 0x%X' % start)
-            print(convert_data(data, start, size))
-            continue
-        print(line)
+for root, subdirs, files in os.walk("asm"):
+    for filename in files:
+        with open(os.path.join(root, filename), 'rt') as f:
+            new_file = open(os.path.join(root, filename) + '.new', 'wt')
+            for line in f.readlines():
+                line = line.rstrip()
+                    # Incbin directive
+                m = re.match(r'\s*\.incbin\s+"baserom.dol"\s*,\s*([^, \.]+),\s*([^, \.]+)', line)
+                if m:
+                    g = m.groups()
+                    start = int(g[0], 0)
+                    size = int(g[1], 0)
+                    data = read_baserom(start, size)
+                    new_file.write('\t# ROM: 0x%X\n' % start)
+                    new_file.write("%s\n" % convert_data(data, start, size))
+                    continue
+                new_file.write("%s\n" % line)

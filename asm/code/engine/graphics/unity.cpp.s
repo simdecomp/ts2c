@@ -40792,9 +40792,6 @@ lbl_802A581C:
 /* 802A582C 002A14CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 802A5830 002A14D0  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_engine_effects2_unity_cpp" ;# ptr (0x8027FEB8)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804502C8
 lbl_804502C8:

@@ -66,7 +66,7 @@ lbl_8033EF14:
 /* 8033EF14 0033ABB4  38 60 00 00 */	li r3, 0
 /* 8033EF18 0033ABB8  4E 80 00 20 */	blr 
 
-.section .sbss2  # 0x805dc420 - 0x805DC448
+.section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 .global "bd_addr_null"
 "bd_addr_null":
 	.skip 0x8

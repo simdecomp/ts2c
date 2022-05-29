@@ -37,9 +37,6 @@ lbl_8040FA08:
 /* 8040FA10 0040B6B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8040FA14 0040B6B4  4E 80 00 20 */	blr 
 
-.section .dtors, "wa"  # 0x80418C60 - 0x80418C80
-	.4byte "__destroy_global_chain" ;# ptr (0x8040ED34)
-
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "fragmentID"
 "fragmentID":

@@ -20951,9 +20951,6 @@ lbl_8019A354:
 /* 8019A374 00196014  38 21 00 20 */	addi r1, r1, 0x20
 /* 8019A378 00196018  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_statemachine_unity_cpp" ;# ptr (0x80176C44)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "kGRID_SHADERS_IDS__13CASTargetTSC6"
 "kGRID_SHADERS_IDS__13CASTargetTSC6":

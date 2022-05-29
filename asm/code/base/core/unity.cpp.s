@@ -33402,9 +33402,6 @@ lbl_80277F40:
 /* 80277FC8 00273C68  38 60 00 00 */	li r3, 0
 /* 80277FCC 00273C6C  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_weather_unity_cpp" ;# ptr (0x8024B304)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044ECF8
 lbl_8044ECF8:

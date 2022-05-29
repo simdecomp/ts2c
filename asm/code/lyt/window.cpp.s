@@ -2373,9 +2373,6 @@ lbl_80398BC0:
 /* 80398BF4 00394894  38 8D C5 60 */	addi r4, r13, "typeInfo__Q36nw4hbm3lyt4Pane"-_SDA_BASE_
 /* 80398BF8 00394898  4B FF 1B 24 */	b "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_lyt_textBox_cpp" ;# ptr (0x80396984)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "flipInfos$7609"
 "flipInfos$7609":

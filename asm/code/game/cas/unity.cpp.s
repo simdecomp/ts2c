@@ -43176,9 +43176,6 @@ lbl_8004DBE0:
 /* 8004DE58 00049AF8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8004DE5C 00049AFC  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_animation_unity_cpp" ;# ptr (0x80016844)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "zodiacPersonalityValues"
 "zodiacPersonalityValues":
@@ -44064,6 +44061,6 @@ lbl_805D9640:
 lbl_805D9644:
 	.incbin "baserom.dol", 0x487964, 0x4
 
-.section .sbss2  # 0x805dc420 - 0x805DC448
+.section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 lbl_sbss2start:
 	.skip 0x8

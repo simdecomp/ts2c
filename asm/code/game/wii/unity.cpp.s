@@ -2144,9 +2144,6 @@ lbl_802469D8:
 /* 80246CD0 00242970  B0 85 80 00 */	sth r4, -0x8000(r5)
 /* 80246CD4 00242974  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_unity_cpp" ;# ptr (0x80243D58)
-
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044E8C8
 lbl_8044E8C8:

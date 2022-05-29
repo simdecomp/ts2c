@@ -61487,9 +61487,6 @@ lbl_80082458:
 /* 800824E4 0007E184  38 21 00 10 */	addi r1, r1, 0x10
 /* 800824E8 0007E188  4E 80 00 20 */	blr 
 
-.section .ctors, "wa"  # 0x80418B80 - 0x80418C60
-	.4byte "__sinit_game_cas_unity_cpp" ;# ptr (0x800313C8)
-
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 	.incbin "baserom.dol", 0x4153C8, 0x38
 .global lbl_80419300
