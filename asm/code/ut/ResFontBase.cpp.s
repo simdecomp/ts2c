@@ -20,7 +20,7 @@
 /* 803C473C 003C03DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C4740 003C03E0  7C 08 03 A6 */	mtlr r0
 /* 803C4744 003C03E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C4748 003C03E8  4E 80 00 20 */	blr 
+/* 803C4748 003C03E8  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut4FontFv"
 "__ct__Q36nw4hbm2ut4FontFv":
@@ -34,7 +34,7 @@
 /* 803C4768 003C0408  90 03 00 08 */	stw r0, 8(r3)
 /* 803C476C 003C040C  80 05 00 08 */	lwz r0, 8(r5)
 /* 803C4770 003C0410  90 03 00 0C */	stw r0, 0xc(r3)
-/* 803C4774 003C0414  4E 80 00 20 */	blr 
+/* 803C4774 003C0414  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm2ut6detail11ResFontBaseFv"
 "__dt__Q46nw4hbm2ut6detail11ResFontBaseFv":
@@ -60,7 +60,7 @@ lbl_803C47B4:
 /* 803C47C0 003C0460  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C47C4 003C0464  7C 08 03 A6 */	mtlr r0
 /* 803C47C8 003C0468  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C47CC 003C046C  4E 80 00 20 */	blr 
+/* 803C47CC 003C046C  4E 80 00 20 */	blr
 
 .global "SetResourceBuffer__Q46nw4hbm2ut6detail11ResFontBaseFPvPQ36nw4hbm2ut15FontInformation"
 "SetResourceBuffer__Q46nw4hbm2ut6detail11ResFontBaseFPvPQ36nw4hbm2ut15FontInformation":
@@ -231,7 +231,7 @@ lbl_803C4A08:
 /* 803C4A20 003C06C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C4A24 003C06C4  7C 08 03 A6 */	mtlr r0
 /* 803C4A28 003C06C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C4A2C 003C06CC  4E 80 00 20 */	blr 
+/* 803C4A2C 003C06CC  4E 80 00 20 */	blr
 
 .global "GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -378,7 +378,7 @@ lbl_803C4C18:
 /* 803C4C28 003C08C8  88 63 00 15 */	lbz r3, 0x15(r3)
 /* 803C4C2C 003C08CC  7C 08 03 A6 */	mtlr r0
 /* 803C4C30 003C08D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C4C34 003C08D4  4E 80 00 20 */	blr 
+/* 803C4C34 003C08D4  4E 80 00 20 */	blr
 
 .global "GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -525,7 +525,7 @@ lbl_803C4E20:
 /* 803C4E30 003C0AD0  88 63 00 14 */	lbz r3, 0x14(r3)
 /* 803C4E34 003C0AD4  7C 08 03 A6 */	mtlr r0
 /* 803C4E38 003C0AD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C4E3C 003C0ADC  4E 80 00 20 */	blr 
+/* 803C4E3C 003C0ADC  4E 80 00 20 */	blr
 
 .global "GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -672,7 +672,7 @@ lbl_803C5028:
 /* 803C5038 003C0CD8  88 63 00 16 */	lbz r3, 0x16(r3)
 /* 803C503C 003C0CDC  7C 08 03 A6 */	mtlr r0
 /* 803C5040 003C0CE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5044 003C0CE4  4E 80 00 20 */	blr 
+/* 803C5044 003C0CE4  4E 80 00 20 */	blr
 
 .global "GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -821,7 +821,7 @@ lbl_803C5230:
 /* 803C5248 003C0EE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C524C 003C0EEC  7C 08 03 A6 */	mtlr r0
 /* 803C5250 003C0EF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5254 003C0EF4  4E 80 00 20 */	blr 
+/* 803C5254 003C0EF4  4E 80 00 20 */	blr
 
 .global "GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -970,7 +970,7 @@ lbl_803C5440:
 /* 803C5458 003C10F8  7C 63 07 74 */	extsb r3, r3
 /* 803C545C 003C10FC  7C 08 03 A6 */	mtlr r0
 /* 803C5460 003C1100  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5464 003C1104  4E 80 00 20 */	blr 
+/* 803C5464 003C1104  4E 80 00 20 */	blr
 
 .global "GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1118,7 +1118,7 @@ lbl_803C5650:
 /* 803C5664 003C1304  88 63 00 01 */	lbz r3, 1(r3)
 /* 803C5668 003C1308  7C 08 03 A6 */	mtlr r0
 /* 803C566C 003C130C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5670 003C1310  4E 80 00 20 */	blr 
+/* 803C5670 003C1310  4E 80 00 20 */	blr
 
 .global "GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1266,7 +1266,7 @@ lbl_803C585C:
 /* 803C5870 003C1510  88 63 00 00 */	lbz r3, 0(r3)
 /* 803C5874 003C1514  7C 08 03 A6 */	mtlr r0
 /* 803C5878 003C1518  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C587C 003C151C  4E 80 00 20 */	blr 
+/* 803C587C 003C151C  4E 80 00 20 */	blr
 
 .global "GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1414,12 +1414,12 @@ lbl_803C5A68:
 /* 803C5A7C 003C171C  88 63 00 03 */	lbz r3, 3(r3)
 /* 803C5A80 003C1720  7C 08 03 A6 */	mtlr r0
 /* 803C5A84 003C1724  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5A88 003C1728  4E 80 00 20 */	blr 
+/* 803C5A88 003C1728  4E 80 00 20 */	blr
 
 .global "GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv":
 /* 803C5A8C 003C172C  38 60 00 02 */	li r3, 2
-/* 803C5A90 003C1730  4E 80 00 20 */	blr 
+/* 803C5A90 003C1730  4E 80 00 20 */	blr
 
 .global "GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1567,7 +1567,7 @@ lbl_803C5C7C:
 /* 803C5C90 003C1930  A0 63 00 0A */	lhz r3, 0xa(r3)
 /* 803C5C94 003C1934  7C 08 03 A6 */	mtlr r0
 /* 803C5C98 003C1938  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5C9C 003C193C  4E 80 00 20 */	blr 
+/* 803C5C9C 003C193C  4E 80 00 20 */	blr
 
 .global "GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1715,7 +1715,7 @@ lbl_803C5E88:
 /* 803C5E9C 003C1B3C  7C 63 07 74 */	extsb r3, r3
 /* 803C5EA0 003C1B40  7C 08 03 A6 */	mtlr r0
 /* 803C5EA4 003C1B44  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C5EA8 003C1B48  4E 80 00 20 */	blr 
+/* 803C5EA8 003C1B48  4E 80 00 20 */	blr
 
 .global "GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -1865,7 +1865,7 @@ lbl_803C6094:
 /* 803C60B0 003C1D50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C60B4 003C1D54  7C 08 03 A6 */	mtlr r0
 /* 803C60B8 003C1D58  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C60BC 003C1D5C  4E 80 00 20 */	blr 
+/* 803C60BC 003C1D5C  4E 80 00 20 */	blr
 
 .global "SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths"
 "SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths":
@@ -2081,7 +2081,7 @@ lbl_803C6394:
 /* 803C63B0 003C2050  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C63B4 003C2054  7C 08 03 A6 */	mtlr r0
 /* 803C63B8 003C2058  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C63BC 003C205C  4E 80 00 20 */	blr 
+/* 803C63BC 003C205C  4E 80 00 20 */	blr
 
 .global "SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs"
 "SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs":
@@ -2242,7 +2242,7 @@ lbl_803C65DC:
 /* 803C65E8 003C2288  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C65EC 003C228C  7C 08 03 A6 */	mtlr r0
 /* 803C65F0 003C2290  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C65F4 003C2294  4E 80 00 20 */	blr 
+/* 803C65F4 003C2294  4E 80 00 20 */	blr
 
 .global "SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi"
 "SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi":
@@ -2410,7 +2410,7 @@ lbl_803C6828:
 /* 803C683C 003C24DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C6840 003C24E0  7C 08 03 A6 */	mtlr r0
 /* 803C6844 003C24E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C6848 003C24E8  4E 80 00 20 */	blr 
+/* 803C6848 003C24E8  4E 80 00 20 */	blr
 
 .global "GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs"
 "GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs":
@@ -2420,7 +2420,7 @@ lbl_803C6828:
 /* 803C6858 003C24F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C685C 003C24FC  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 803C6860 003C2500  7D 89 03 A6 */	mtctr r12
-/* 803C6864 003C2504  4E 80 04 21 */	bctrl 
+/* 803C6864 003C2504  4E 80 04 21 */	bctrl
 /* 803C6868 003C2508  54 60 46 3E */	srwi r0, r3, 0x18
 /* 803C686C 003C250C  98 01 00 08 */	stb r0, 8(r1)
 /* 803C6870 003C2510  54 60 86 3E */	rlwinm r0, r3, 0x10, 0x18, 0x1f
@@ -2432,7 +2432,7 @@ lbl_803C6828:
 /* 803C6888 003C2528  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C688C 003C252C  7C 08 03 A6 */	mtlr r0
 /* 803C6890 003C2530  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C6894 003C2534  4E 80 00 20 */	blr 
+/* 803C6894 003C2534  4E 80 00 20 */	blr
 
 .global "GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs"
 "GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs":
@@ -2455,7 +2455,7 @@ lbl_803C6828:
 /* 803C68D8 003C2578  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C68DC 003C257C  7C 08 03 A6 */	mtlr r0
 /* 803C68E0 003C2580  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C68E4 003C2584  4E 80 00 20 */	blr 
+/* 803C68E4 003C2584  4E 80 00 20 */	blr
 
 .global "GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs"
 "GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs":
@@ -2478,7 +2478,7 @@ lbl_803C6828:
 /* 803C6928 003C25C8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803C692C 003C25CC  7C 08 03 A6 */	mtlr r0
 /* 803C6930 003C25D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C6934 003C25D4  4E 80 00 20 */	blr 
+/* 803C6934 003C25D4  4E 80 00 20 */	blr
 
 .global "GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv"
 "GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv":
@@ -2625,7 +2625,7 @@ lbl_803C6B20:
 /* 803C6B30 003C27D0  88 63 00 07 */	lbz r3, 7(r3)
 /* 803C6B34 003C27D4  7C 08 03 A6 */	mtlr r0
 /* 803C6B38 003C27D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C6B3C 003C27DC  4E 80 00 20 */	blr 
+/* 803C6B3C 003C27DC  4E 80 00 20 */	blr
 
 .global "GetGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs"
 "GetGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs":
@@ -2784,7 +2784,7 @@ lbl_803C6D54:
 /* 803C6D60 003C2A00  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C6D64 003C2A04  7C 08 03 A6 */	mtlr r0
 /* 803C6D68 003C2A08  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C6D6C 003C2A0C  4E 80 00 20 */	blr 
+/* 803C6D6C 003C2A0C  4E 80 00 20 */	blr
 
 .global "FindGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs"
 "FindGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs":
@@ -2954,7 +2954,7 @@ lbl_803C6FA8:
 /* 803C6FB4 003C2C54  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C6FB8 003C2C58  7C 08 03 A6 */	mtlr r0
 /* 803C6FBC 003C2C5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C6FC0 003C2C60  4E 80 00 20 */	blr 
+/* 803C6FC0 003C2C60  4E 80 00 20 */	blr
 
 .global "FindGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPCQ36nw4hbm2ut11FontCodeMapUs"
 "FindGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPCQ36nw4hbm2ut11FontCodeMapUs":
@@ -3173,7 +3173,7 @@ lbl_803C72A0:
 /* 803C72B4 003C2F54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C72B8 003C2F58  7C 08 03 A6 */	mtlr r0
 /* 803C72BC 003C2F5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C72C0 003C2F60  4E 80 00 20 */	blr 
+/* 803C72C0 003C2F60  4E 80 00 20 */	blr
 
 .global "GetCharWidthsFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs"
 "GetCharWidthsFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFUs":
@@ -3342,7 +3342,7 @@ lbl_803C74F8:
 /* 803C7504 003C31A4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C7508 003C31A8  7C 08 03 A6 */	mtlr r0
 /* 803C750C 003C31AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C7510 003C31B0  4E 80 00 20 */	blr 
+/* 803C7510 003C31B0  4E 80 00 20 */	blr
 
 .global "GetCharWidthsFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPCQ36nw4hbm2ut9FontWidthUs"
 "GetCharWidthsFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPCQ36nw4hbm2ut9FontWidthUs":
@@ -3430,7 +3430,7 @@ lbl_803C761C:
 /* 803C763C 003C32DC  38 63 00 08 */	addi r3, r3, 8
 /* 803C7640 003C32E0  7C 08 03 A6 */	mtlr r0
 /* 803C7644 003C32E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C7648 003C32E8  4E 80 00 20 */	blr 
+/* 803C7648 003C32E8  4E 80 00 20 */	blr
 
 .global "GetGlyphFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs"
 "GetGlyphFromIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs":
@@ -3621,21 +3621,108 @@ lbl_803C7844:
 /* 803C78F4 003C3594  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C78F8 003C3598  7C 08 03 A6 */	mtlr r0
 /* 803C78FC 003C359C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C7900 003C35A0  4E 80 00 20 */	blr 
+/* 803C7900 003C35A0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80474800
 lbl_80474800:
-	.incbin "baserom.dol", 0x470900, 0x3C
+	# ROM: 0x470900
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+
 .global lbl_8047483C
 lbl_8047483C:
-	.incbin "baserom.dol", 0x47093C, 0x224
+	# ROM: 0x47093C
+	.asciz "ut_ResFontBase.cpp"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\npUserBuffer(=%p) is not valid pointer."
+	.asciz "NW4HBM:Pointer Error\npFontInfo(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mResource == NULL"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mFontInfo == NULL"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nmFontInfo(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\n& widths(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "linefeed is out of bounds(%d)\n%d <= linefeed <= %d not satisfied."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\npMap(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "unknwon MAPMETHOD"
+	.byte 0x00, 0x00
+
 .global lbl_80474A60
 lbl_80474A60:
-	.incbin "baserom.dol", 0x470B60, 0x38
+	# ROM: 0x470B60
+	.asciz "NW4HBM:Pointer Error\npWidth(=%p) is not valid pointer."
+	.byte 0x00
+
 .global "__vt__Q46nw4hbm2ut6detail11ResFontBase"
 "__vt__Q46nw4hbm2ut6detail11ResFontBase":
-	.incbin "baserom.dol", 0x470B98, 0x58
+	# ROM: 0x470B98
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm2ut6detail11ResFontBaseFv" ;# ptr (0x803C4778)
+	.4byte "GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4A30)
+	.4byte "GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4C38)
+	.4byte "GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4E40)
+	.4byte "GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5048)
+	.4byte "GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5258)
+	.4byte "GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5468)
+	.4byte "GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5674)
+	.4byte "GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5880)
+	.4byte "GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5A8C)
+	.4byte "GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5A94)
+	.4byte "GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5CA0)
+	.4byte "GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5EAC)
+	.4byte "SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths" ;# ptr (0x803C60C0)
+	.4byte "SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs" ;# ptr (0x803C63C0)
+	.4byte "SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi" ;# ptr (0x803C65F8)
+	.4byte "GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs" ;# ptr (0x803C684C)
+	.4byte "GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs" ;# ptr (0x803C6898)
+	.4byte "GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs" ;# ptr (0x803C68E8)
+	.4byte "GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C6938)
+
 .global "__vt__Q36nw4hbm2ut4Font"
 "__vt__Q36nw4hbm2ut4Font":
-	.incbin "baserom.dol", 0x470BF0, 0x58
+	# ROM: 0x470BF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm2ut4FontFv" ;# ptr (0x80395FB4)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+

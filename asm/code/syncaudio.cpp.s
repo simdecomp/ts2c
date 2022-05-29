@@ -44,7 +44,7 @@
 /* 800069D8 00002678  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800069DC 0000267C  7C 08 03 A6 */	mtlr r0
 /* 800069E0 00002680  38 21 00 20 */	addi r1, r1, 0x20
-/* 800069E4 00002684  4E 80 00 20 */	blr 
+/* 800069E4 00002684  4E 80 00 20 */	blr
 
 .global "__dt__9SyncAudioFv"
 "__dt__9SyncAudioFv":
@@ -87,7 +87,7 @@ lbl_80006A68:
 /* 80006A74 00002714  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80006A78 00002718  7C 08 03 A6 */	mtlr r0
 /* 80006A7C 0000271C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80006A80 00002720  4E 80 00 20 */	blr 
+/* 80006A80 00002720  4E 80 00 20 */	blr
 
 .global "ReserveSoundChannel__9SyncAudioFv"
 "ReserveSoundChannel__9SyncAudioFv":
@@ -117,13 +117,13 @@ lbl_80006AB8:
 /* 80006ADC 0000277C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006AE0 00002780  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80006AE4 00002784  7D 89 03 A6 */	mtctr r12
-/* 80006AE8 00002788  4E 80 04 21 */	bctrl 
+/* 80006AE8 00002788  4E 80 04 21 */	bctrl
 /* 80006AEC 0000278C  90 7C 00 08 */	stw r3, 8(r28)
 /* 80006AF0 00002790  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 80006AF4 00002794  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006AF8 00002798  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80006AFC 0000279C  7D 89 03 A6 */	mtctr r12
-/* 80006B00 000027A0  4E 80 04 21 */	bctrl 
+/* 80006B00 000027A0  4E 80 04 21 */	bctrl
 /* 80006B04 000027A4  90 7D 00 08 */	stw r3, 8(r29)
 /* 80006B08 000027A8  80 9C 00 08 */	lwz r4, 8(r28)
 /* 80006B0C 000027AC  2C 04 00 00 */	cmpwi r4, 0
@@ -140,7 +140,7 @@ lbl_80006B28:
 /* 80006B34 000027D4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006B38 000027D8  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 80006B3C 000027DC  7D 89 03 A6 */	mtctr r12
-/* 80006B40 000027E0  4E 80 04 21 */	bctrl 
+/* 80006B40 000027E0  4E 80 04 21 */	bctrl
 lbl_80006B44:
 /* 80006B44 000027E4  80 9D 00 08 */	lwz r4, 8(r29)
 /* 80006B48 000027E8  2C 04 00 00 */	cmpwi r4, 0
@@ -149,7 +149,7 @@ lbl_80006B44:
 /* 80006B54 000027F4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006B58 000027F8  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 80006B5C 000027FC  7D 89 03 A6 */	mtctr r12
-/* 80006B60 00002800  4E 80 04 21 */	bctrl 
+/* 80006B60 00002800  4E 80 04 21 */	bctrl
 lbl_80006B64:
 /* 80006B64 00002804  3B 5A 00 01 */	addi r26, r26, 1
 /* 80006B68 00002808  3B DE 00 28 */	addi r30, r30, 0x28
@@ -168,7 +168,7 @@ lbl_80006B80:
 /* 80006B98 00002838  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80006B9C 0000283C  7C 08 03 A6 */	mtlr r0
 /* 80006BA0 00002840  38 21 00 30 */	addi r1, r1, 0x30
-/* 80006BA4 00002844  4E 80 00 20 */	blr 
+/* 80006BA4 00002844  4E 80 00 20 */	blr
 
 .global "ReleaseSoundChannel__9SyncAudioFi"
 "ReleaseSoundChannel__9SyncAudioFi":
@@ -202,7 +202,7 @@ lbl_80006B80:
 /* 80006C14 000028B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006C18 000028B8  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80006C1C 000028BC  7D 89 03 A6 */	mtctr r12
-/* 80006C20 000028C0  4E 80 04 21 */	bctrl 
+/* 80006C20 000028C0  4E 80 04 21 */	bctrl
 /* 80006C24 000028C4  38 00 00 00 */	li r0, 0
 /* 80006C28 000028C8  98 1E 00 0C */	stb r0, 0xc(r30)
 lbl_80006C2C:
@@ -211,7 +211,7 @@ lbl_80006C2C:
 /* 80006C34 000028D4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006C38 000028D8  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 80006C3C 000028DC  7D 89 03 A6 */	mtctr r12
-/* 80006C40 000028E0  4E 80 04 21 */	bctrl 
+/* 80006C40 000028E0  4E 80 04 21 */	bctrl
 /* 80006C44 000028E4  38 00 00 00 */	li r0, 0
 /* 80006C48 000028E8  C0 02 80 00 */	lfs f0, lbl_805D9220-_SDA2_BASE_(r2)
 /* 80006C4C 000028EC  90 1E 00 08 */	stw r0, 8(r30)
@@ -229,7 +229,7 @@ lbl_80006C58:
 /* 80006C78 00002918  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006C7C 0000291C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80006C80 00002920  7D 89 03 A6 */	mtctr r12
-/* 80006C84 00002924  4E 80 04 21 */	bctrl 
+/* 80006C84 00002924  4E 80 04 21 */	bctrl
 /* 80006C88 00002928  38 00 00 00 */	li r0, 0
 /* 80006C8C 0000292C  98 1E 00 0C */	stb r0, 0xc(r30)
 lbl_80006C90:
@@ -238,7 +238,7 @@ lbl_80006C90:
 /* 80006C98 00002938  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006C9C 0000293C  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 80006CA0 00002940  7D 89 03 A6 */	mtctr r12
-/* 80006CA4 00002944  4E 80 04 21 */	bctrl 
+/* 80006CA4 00002944  4E 80 04 21 */	bctrl
 /* 80006CA8 00002948  38 00 00 00 */	li r0, 0
 /* 80006CAC 0000294C  C0 02 80 00 */	lfs f0, lbl_805D9220-_SDA2_BASE_(r2)
 /* 80006CB0 00002950  90 1E 00 08 */	stw r0, 8(r30)
@@ -253,7 +253,7 @@ lbl_80006CBC:
 /* 80006CD0 00002970  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80006CD4 00002974  7C 08 03 A6 */	mtlr r0
 /* 80006CD8 00002978  38 21 00 20 */	addi r1, r1, 0x20
-/* 80006CDC 0000297C  4E 80 00 20 */	blr 
+/* 80006CDC 0000297C  4E 80 00 20 */	blr
 
 .global "PreloadSyncSample__9SyncAudioFUi"
 "PreloadSyncSample__9SyncAudioFUi":
@@ -289,7 +289,7 @@ lbl_80006D34:
 /* 80006D4C 000029EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80006D50 000029F0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80006D54 000029F4  7D 89 03 A6 */	mtctr r12
-/* 80006D58 000029F8  4E 80 04 21 */	bctrl 
+/* 80006D58 000029F8  4E 80 04 21 */	bctrl
 /* 80006D5C 000029FC  2C 03 00 00 */	cmpwi r3, 0
 /* 80006D60 00002A00  93 FE 00 08 */	stw r31, 8(r30)
 /* 80006D64 00002A04  41 82 00 08 */	beq lbl_80006D6C
@@ -314,7 +314,7 @@ lbl_80006D98:
 /* 80006DA0 00002A40  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80006DA4 00002A44  7C 08 03 A6 */	mtlr r0
 /* 80006DA8 00002A48  38 21 00 30 */	addi r1, r1, 0x30
-/* 80006DAC 00002A4C  4E 80 00 20 */	blr 
+/* 80006DAC 00002A4C  4E 80 00 20 */	blr
 
 .global "IsLoadedSyncSample__9SyncAudioFUi"
 "IsLoadedSyncSample__9SyncAudioFUi":
@@ -466,7 +466,7 @@ lbl_80006FAC:
 /* 80006FB4 00002C54  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80006FB8 00002C58  7C 08 03 A6 */	mtlr r0
 /* 80006FBC 00002C5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80006FC0 00002C60  4E 80 00 20 */	blr 
+/* 80006FC0 00002C60  4E 80 00 20 */	blr
 
 .global "UnloadSyncSample__9SyncAudioFUi"
 "UnloadSyncSample__9SyncAudioFUi":
@@ -515,7 +515,7 @@ lbl_80007048:
 /* 8000705C 00002CFC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80007060 00002D00  7C 08 03 A6 */	mtlr r0
 /* 80007064 00002D04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80007068 00002D08  4E 80 00 20 */	blr 
+/* 80007068 00002D08  4E 80 00 20 */	blr
 
 .global "ClearCommandQueue__9SyncAudioFv"
 "ClearCommandQueue__9SyncAudioFv":
@@ -577,7 +577,7 @@ lbl_80007084:
 /* 80007144 00002DE4  98 03 02 D1 */	stb r0, 0x2d1(r3)
 /* 80007148 00002DE8  98 03 02 D0 */	stb r0, 0x2d0(r3)
 /* 8000714C 00002DEC  D0 03 02 D8 */	stfs f0, 0x2d8(r3)
-/* 80007150 00002DF0  4E 80 00 20 */	blr 
+/* 80007150 00002DF0  4E 80 00 20 */	blr
 
 .global "PlaySyncSample__9SyncAudioFUiiff"
 "PlaySyncSample__9SyncAudioFUiiff":
@@ -614,7 +614,7 @@ lbl_80007084:
 /* 800071CC 00002E6C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800071D0 00002E70  7C 08 03 A6 */	mtlr r0
 /* 800071D4 00002E74  38 21 00 30 */	addi r1, r1, 0x30
-/* 800071D8 00002E78  4E 80 00 20 */	blr 
+/* 800071D8 00002E78  4E 80 00 20 */	blr
 
 .global "ActuallyPlaySyncSample__9SyncAudioFUiiff"
 "ActuallyPlaySyncSample__9SyncAudioFUiiff":
@@ -669,7 +669,7 @@ lbl_80007274:
 /* 80007290 00002F30  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007294 00002F34  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80007298 00002F38  7D 89 03 A6 */	mtctr r12
-/* 8000729C 00002F3C  4E 80 04 21 */	bctrl 
+/* 8000729C 00002F3C  4E 80 04 21 */	bctrl
 lbl_800072A0:
 /* 800072A0 00002F40  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 800072A4 00002F44  80 9F 00 08 */	lwz r4, 8(r31)
@@ -677,7 +677,7 @@ lbl_800072A0:
 /* 800072AC 00002F4C  80 BE 00 04 */	lwz r5, 4(r30)
 /* 800072B0 00002F50  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 800072B4 00002F54  7D 89 03 A6 */	mtctr r12
-/* 800072B8 00002F58  4E 80 04 21 */	bctrl 
+/* 800072B8 00002F58  4E 80 04 21 */	bctrl
 /* 800072BC 00002F5C  C0 02 80 04 */	lfs f0, lbl_805D9224-_SDA2_BASE_(r2)
 /* 800072C0 00002F60  38 00 00 01 */	li r0, 1
 /* 800072C4 00002F64  98 1F 00 0C */	stb r0, 0xc(r31)
@@ -757,7 +757,7 @@ lbl_80007324:
 /* 800073DC 0000307C  81 83 00 00 */	lwz r12, 0(r3)
 /* 800073E0 00003080  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 800073E4 00003084  7D 89 03 A6 */	mtctr r12
-/* 800073E8 00003088  4E 80 04 21 */	bctrl 
+/* 800073E8 00003088  4E 80 04 21 */	bctrl
 lbl_800073EC:
 /* 800073EC 0000308C  E3 E1 00 58 */	psq_l f31, 88(r1), 0, qr0
 /* 800073F0 00003090  CB E1 00 50 */	lfd f31, 0x50(r1)
@@ -768,7 +768,7 @@ lbl_800073EC:
 /* 80007404 000030A4  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 80007408 000030A8  7C 08 03 A6 */	mtlr r0
 /* 8000740C 000030AC  38 21 00 60 */	addi r1, r1, 0x60
-/* 80007410 000030B0  4E 80 00 20 */	blr 
+/* 80007410 000030B0  4E 80 00 20 */	blr
 
 .global "CleanUpAllChannelsAndSamples__9SyncAudioFv"
 "CleanUpAllChannelsAndSamples__9SyncAudioFv":
@@ -800,7 +800,7 @@ lbl_80007458:
 /* 80007474 00003114  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007478 00003118  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8000747C 0000311C  7D 89 03 A6 */	mtctr r12
-/* 80007480 00003120  4E 80 04 21 */	bctrl 
+/* 80007480 00003120  4E 80 04 21 */	bctrl
 /* 80007484 00003124  9B FE 00 08 */	stb r31, 8(r30)
 lbl_80007488:
 /* 80007488 00003128  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
@@ -808,7 +808,7 @@ lbl_80007488:
 /* 80007490 00003130  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007494 00003134  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 80007498 00003138  7D 89 03 A6 */	mtctr r12
-/* 8000749C 0000313C  4E 80 04 21 */	bctrl 
+/* 8000749C 0000313C  4E 80 04 21 */	bctrl
 /* 800074A0 00003140  93 FE 00 04 */	stw r31, 4(r30)
 /* 800074A4 00003144  D3 FE 00 0C */	stfs f31, 0xc(r30)
 /* 800074A8 00003148  D3 FE 00 10 */	stfs f31, 0x10(r30)
@@ -850,7 +850,7 @@ lbl_800074E8:
 /* 8000752C 000031CC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80007530 000031D0  7C 08 03 A6 */	mtlr r0
 /* 80007534 000031D4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80007538 000031D8  4E 80 00 20 */	blr 
+/* 80007538 000031D8  4E 80 00 20 */	blr
 
 .global "TrySyncAudio__9SyncAudioFsisRs"
 "TrySyncAudio__9SyncAudioFsisRs":
@@ -1212,7 +1212,7 @@ lbl_80007A14:
 /* 80007A1C 000036BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80007A20 000036C0  7C 08 03 A6 */	mtlr r0
 /* 80007A24 000036C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80007A28 000036C8  4E 80 00 20 */	blr 
+/* 80007A28 000036C8  4E 80 00 20 */	blr
 
 .global "ClearEdithTrackingData__9SyncAudioFv"
 "ClearEdithTrackingData__9SyncAudioFv":
@@ -1279,7 +1279,7 @@ lbl_80007A14:
 /* 80007B1C 000037BC  B0 83 03 84 */	sth r4, 0x384(r3)
 /* 80007B20 000037C0  90 83 03 80 */	stw r4, 0x380(r3)
 /* 80007B24 000037C4  90 83 03 88 */	stw r4, 0x388(r3)
-/* 80007B28 000037C8  4E 80 00 20 */	blr 
+/* 80007B28 000037C8  4E 80 00 20 */	blr
 
 .global "GetErrorCode__9SyncAudioFv"
 "GetErrorCode__9SyncAudioFv":
@@ -1287,7 +1287,7 @@ lbl_80007A14:
 /* 80007B30 000037D0  80 63 03 88 */	lwz r3, 0x388(r3)
 /* 80007B34 000037D4  38 00 00 00 */	li r0, 0
 /* 80007B38 000037D8  90 04 03 88 */	stw r0, 0x388(r4)
-/* 80007B3C 000037DC  4E 80 00 20 */	blr 
+/* 80007B3C 000037DC  4E 80 00 20 */	blr
 
 .global "__dt__10EAutoMutexFv"
 "__dt__10EAutoMutexFv":
@@ -1304,7 +1304,7 @@ lbl_80007A14:
 /* 80007B68 00003808  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007B6C 0000380C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80007B70 00003810  7D 89 03 A6 */	mtctr r12
-/* 80007B74 00003814  4E 80 04 21 */	bctrl 
+/* 80007B74 00003814  4E 80 04 21 */	bctrl
 /* 80007B78 00003818  2C 1F 00 00 */	cmpwi r31, 0
 /* 80007B7C 0000381C  40 81 00 0C */	ble lbl_80007B88
 /* 80007B80 00003820  7F C3 F3 78 */	mr r3, r30
@@ -1316,7 +1316,7 @@ lbl_80007B88:
 /* 80007B94 00003834  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80007B98 00003838  7C 08 03 A6 */	mtlr r0
 /* 80007B9C 0000383C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80007BA0 00003840  4E 80 00 20 */	blr 
+/* 80007BA0 00003840  4E 80 00 20 */	blr
 
 .global "__ct__10EAutoMutexFR6EMutex"
 "__ct__10EAutoMutexFR6EMutex":
@@ -1332,13 +1332,13 @@ lbl_80007B88:
 /* 80007BC8 00003868  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007BCC 0000386C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80007BD0 00003870  7D 89 03 A6 */	mtctr r12
-/* 80007BD4 00003874  4E 80 04 21 */	bctrl 
+/* 80007BD4 00003874  4E 80 04 21 */	bctrl
 /* 80007BD8 00003878  7F E3 FB 78 */	mr r3, r31
 /* 80007BDC 0000387C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80007BE0 00003880  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80007BE4 00003884  7C 08 03 A6 */	mtlr r0
 /* 80007BE8 00003888  38 21 00 10 */	addi r1, r1, 0x10
-/* 80007BEC 0000388C  4E 80 00 20 */	blr 
+/* 80007BEC 0000388C  4E 80 00 20 */	blr
 
 .global "__dt__15SyncSoundSampleFv"
 "__dt__15SyncSoundSampleFv":
@@ -1358,7 +1358,7 @@ lbl_80007C18:
 /* 80007C20 000038C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80007C24 000038C4  7C 08 03 A6 */	mtlr r0
 /* 80007C28 000038C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80007C2C 000038CC  4E 80 00 20 */	blr 
+/* 80007C2C 000038CC  4E 80 00 20 */	blr
 
 .global "__ct__15SyncSoundSampleFv"
 "__ct__15SyncSoundSampleFv":
@@ -1368,7 +1368,7 @@ lbl_80007C18:
 /* 80007C3C 000038DC  90 03 00 04 */	stw r0, 4(r3)
 /* 80007C40 000038E0  90 83 00 00 */	stw r4, 0(r3)
 /* 80007C44 000038E4  90 03 00 08 */	stw r0, 8(r3)
-/* 80007C48 000038E8  4E 80 00 20 */	blr 
+/* 80007C48 000038E8  4E 80 00 20 */	blr
 
 .global "__dt__16SyncSoundChannelFv"
 "__dt__16SyncSoundChannelFv":
@@ -1388,7 +1388,7 @@ lbl_80007C74:
 /* 80007C7C 0000391C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80007C80 00003920  7C 08 03 A6 */	mtlr r0
 /* 80007C84 00003924  38 21 00 10 */	addi r1, r1, 0x10
-/* 80007C88 00003928  4E 80 00 20 */	blr 
+/* 80007C88 00003928  4E 80 00 20 */	blr
 
 .global "__ct__16SyncSoundChannelFv"
 "__ct__16SyncSoundChannelFv":
@@ -1401,17 +1401,17 @@ lbl_80007C74:
 /* 80007CA4 00003944  98 03 00 08 */	stb r0, 8(r3)
 /* 80007CA8 00003948  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 80007CAC 0000394C  D0 03 00 10 */	stfs f0, 0x10(r3)
-/* 80007CB0 00003950  4E 80 00 20 */	blr 
+/* 80007CB0 00003950  4E 80 00 20 */	blr
 
 .global "GetObjectModule__Fv"
 "GetObjectModule__Fv":
 /* 80007CB4 00003954  80 6D B5 38 */	lwz r3, "pObjectModule__5Globs"-_SDA_BASE_(r13)
-/* 80007CB8 00003958  4E 80 00 20 */	blr 
+/* 80007CB8 00003958  4E 80 00 20 */	blr
 
 .global "GetSimulator__Fv"
 "GetSimulator__Fv":
 /* 80007CBC 0000395C  80 6D B5 30 */	lwz r3, "pSimulator__5Globs"-_SDA_BASE_(r13)
-/* 80007CC0 00003960  4E 80 00 20 */	blr 
+/* 80007CC0 00003960  4E 80 00 20 */	blr
 
 .global "Start__6EClockFv"
 "Start__6EClockFv":
@@ -1420,7 +1420,7 @@ lbl_80007C74:
 /* 80007CCC 0000396C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007CD0 00003970  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80007CD4 00003974  7D 89 03 A6 */	mtctr r12
-/* 80007CD8 00003978  4E 80 04 20 */	bctr 
+/* 80007CD8 00003978  4E 80 04 20 */	bctr
 
 .global "GetSec__6EClockFv"
 "GetSec__6EClockFv":
@@ -1429,14 +1429,14 @@ lbl_80007C74:
 /* 80007CE4 00003984  81 83 00 00 */	lwz r12, 0(r3)
 /* 80007CE8 00003988  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80007CEC 0000398C  7D 89 03 A6 */	mtctr r12
-/* 80007CF0 00003990  4E 80 04 20 */	bctr 
+/* 80007CF0 00003990  4E 80 04 20 */	bctr
 
 .global "SetGlobal__10cSimulatorFss"
 "SetGlobal__10cSimulatorFss":
 /* 80007CF4 00003994  54 80 08 3C */	slwi r0, r4, 1
 /* 80007CF8 00003998  7C 63 02 14 */	add r3, r3, r0
 /* 80007CFC 0000399C  B0 A3 00 32 */	sth r5, 0x32(r3)
-/* 80007D00 000039A0  4E 80 00 20 */	blr 
+/* 80007D00 000039A0  4E 80 00 20 */	blr
 
 .global "SetPitch__10EVoiceDescFf"
 "SetPitch__10EVoiceDescFf":
@@ -1444,7 +1444,7 @@ lbl_80007C74:
 /* 80007D08 000039A8  D0 23 00 0C */	stfs f1, 0xc(r3)
 /* 80007D0C 000039AC  60 00 00 04 */	ori r0, r0, 4
 /* 80007D10 000039B0  90 03 00 00 */	stw r0, 0(r3)
-/* 80007D14 000039B4  4E 80 00 20 */	blr 
+/* 80007D14 000039B4  4E 80 00 20 */	blr
 
 .global "SetRightVolume__10EVoiceDescFf"
 "SetRightVolume__10EVoiceDescFf":
@@ -1452,7 +1452,7 @@ lbl_80007C74:
 /* 80007D1C 000039BC  D0 23 00 08 */	stfs f1, 8(r3)
 /* 80007D20 000039C0  60 00 00 02 */	ori r0, r0, 2
 /* 80007D24 000039C4  90 03 00 00 */	stw r0, 0(r3)
-/* 80007D28 000039C8  4E 80 00 20 */	blr 
+/* 80007D28 000039C8  4E 80 00 20 */	blr
 
 .global "SetLeftVolume__10EVoiceDescFf"
 "SetLeftVolume__10EVoiceDescFf":
@@ -1460,7 +1460,7 @@ lbl_80007C74:
 /* 80007D30 000039D0  D0 23 00 04 */	stfs f1, 4(r3)
 /* 80007D34 000039D4  60 00 00 01 */	ori r0, r0, 1
 /* 80007D38 000039D8  90 03 00 00 */	stw r0, 0(r3)
-/* 80007D3C 000039DC  4E 80 00 20 */	blr 
+/* 80007D3C 000039DC  4E 80 00 20 */	blr
 
 .global "SetPlaying__10EVoiceDescFb"
 "SetPlaying__10EVoiceDescFb":
@@ -1468,24 +1468,37 @@ lbl_80007C74:
 /* 80007D44 000039E4  98 83 00 10 */	stb r4, 0x10(r3)
 /* 80007D48 000039E8  60 00 00 08 */	ori r0, r0, 8
 /* 80007D4C 000039EC  90 03 00 00 */	stw r0, 0(r3)
-/* 80007D50 000039F0  4E 80 00 20 */	blr 
+/* 80007D50 000039F0  4E 80 00 20 */	blr
 
 .global "__ct__10EVoiceDescFv"
 "__ct__10EVoiceDescFv":
 /* 80007D54 000039F4  38 00 00 00 */	li r0, 0
 /* 80007D58 000039F8  90 03 00 00 */	stw r0, 0(r3)
-/* 80007D5C 000039FC  4E 80 00 20 */	blr 
+/* 80007D5C 000039FC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__9SyncAudio"
 "__vt__9SyncAudio":
-	.incbin "baserom.dol", 0x41C160, 0xC
+	# ROM: 0x41C160
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9SyncAudioFv" ;# ptr (0x800069E8)
+
 .global "__vt__16SyncSoundChannel"
 "__vt__16SyncSoundChannel":
-	.incbin "baserom.dol", 0x41C16C, 0xC
+	# ROM: 0x41C16C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16SyncSoundChannelFv" ;# ptr (0x80007C4C)
+
 .global "__vt__15SyncSoundSample"
 "__vt__15SyncSoundSample":
-	.incbin "baserom.dol", 0x41C178, 0x10
+	# ROM: 0x41C178
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15SyncSoundSampleFv" ;# ptr (0x80007BF0)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_pInstance__9SyncAudio"
@@ -1495,13 +1508,23 @@ lbl_80007C74:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805D9220
 lbl_805D9220:
-	.incbin "baserom.dol", 0x487540, 0x4
+	# ROM: 0x487540
+	.4byte 0x3F800000
+
 .global lbl_805D9224
 lbl_805D9224:
-	.incbin "baserom.dol", 0x487544, 0x4
+	# ROM: 0x487544
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D9228
 lbl_805D9228:
-	.incbin "baserom.dol", 0x487548, 0x8
+	# ROM: 0x487548
+	.4byte 0x41200000
+	.4byte 0x00000000
+
 .global lbl_805D9230
 lbl_805D9230:
-	.incbin "baserom.dol", 0x487550, 0x8
+	# ROM: 0x487550
+	.4byte 0x43300000
+	.4byte 0x80000000
+

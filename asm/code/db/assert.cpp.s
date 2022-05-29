@@ -54,7 +54,7 @@ lbl_80385BB0:
 /* 80385BBC 0038185C  83 A1 00 84 */	lwz r29, 0x84(r1)
 /* 80385BC0 00381860  7C 08 03 A6 */	mtlr r0
 /* 80385BC4 00381864  38 21 00 90 */	addi r1, r1, 0x90
-/* 80385BC8 00381868  4E 80 00 20 */	blr 
+/* 80385BC8 00381868  4E 80 00 20 */	blr
 
 .global "Console_VPrintf__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCcP16__va_list_struct"
 "Console_VPrintf__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCcP16__va_list_struct":
@@ -118,7 +118,7 @@ lbl_80385C84:
 /* 80385C8C 0038192C  83 C1 01 18 */	lwz r30, 0x118(r1)
 /* 80385C90 00381930  7C 08 03 A6 */	mtlr r0
 /* 80385C94 00381934  38 21 01 20 */	addi r1, r1, 0x120
-/* 80385C98 00381938  4E 80 00 20 */	blr 
+/* 80385C98 00381938  4E 80 00 20 */	blr
 
 .global "ShowStack___Q26nw4hbm2dbFUl"
 "ShowStack___Q26nw4hbm2dbFUl":
@@ -172,7 +172,7 @@ lbl_80385D40:
 /* 80385D4C 003819EC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80385D50 003819F0  7C 08 03 A6 */	mtlr r0
 /* 80385D54 003819F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385D58 003819F8  4E 80 00 20 */	blr 
+/* 80385D58 003819F8  4E 80 00 20 */	blr
 
 .global "VPanic__Q26nw4hbm2dbFPCciPCcP16__va_list_struct"
 "VPanic__Q26nw4hbm2dbFPCciPCcP16__va_list_struct":
@@ -244,7 +244,7 @@ lbl_80385E48:
 /* 80385E54 00381AF4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80385E58 00381AF8  7C 08 03 A6 */	mtlr r0
 /* 80385E5C 00381AFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385E60 00381B00  4E 80 00 20 */	blr 
+/* 80385E60 00381B00  4E 80 00 20 */	blr
 
 .global "Console_SetVisible__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadb"
 "Console_SetVisible__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadb":
@@ -272,7 +272,7 @@ lbl_80385EA4:
 /* 80385EB4 00381B54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385EB8 00381B58  7C 08 03 A6 */	mtlr r0
 /* 80385EBC 00381B5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385EC0 00381B60  4E 80 00 20 */	blr 
+/* 80385EC0 00381B60  4E 80 00 20 */	blr
 
 .global "Console_ShowLatestLine__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "Console_ShowLatestLine__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -300,7 +300,7 @@ lbl_80385EFC:
 /* 80385F14 00381BB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385F18 00381BB8  7C 08 03 A6 */	mtlr r0
 /* 80385F1C 00381BBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385F20 00381BC0  4E 80 00 20 */	blr 
+/* 80385F20 00381BC0  4E 80 00 20 */	blr
 
 .global "Console_SetViewBaseLine__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadl"
 "Console_SetViewBaseLine__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadl":
@@ -328,7 +328,7 @@ lbl_80385F64:
 /* 80385F74 00381C14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385F78 00381C18  7C 08 03 A6 */	mtlr r0
 /* 80385F7C 00381C1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385F80 00381C20  4E 80 00 20 */	blr 
+/* 80385F80 00381C20  4E 80 00 20 */	blr
 
 .global "Console_GetViewHeight__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "Console_GetViewHeight__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -352,7 +352,7 @@ lbl_80385FBC:
 /* 80385FC4 00381C64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385FC8 00381C68  7C 08 03 A6 */	mtlr r0
 /* 80385FCC 00381C6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385FD0 00381C70  4E 80 00 20 */	blr 
+/* 80385FD0 00381C70  4E 80 00 20 */	blr
 
 .global "Panic__Q36nw4hbm2db6detailFPCciPCce"
 "Panic__Q36nw4hbm2db6detailFPCciPCce":
@@ -391,7 +391,7 @@ lbl_80386008:
 /* 80386050 00381CF0  83 E1 00 7C */	lwz r31, 0x7c(r1)
 /* 80386054 00381CF4  7C 08 03 A6 */	mtlr r0
 /* 80386058 00381CF8  38 21 00 80 */	addi r1, r1, 0x80
-/* 8038605C 00381CFC  4E 80 00 20 */	blr 
+/* 8038605C 00381CFC  4E 80 00 20 */	blr
 
 .global "Warning__Q36nw4hbm2db6detailFPCciPCce"
 "Warning__Q36nw4hbm2db6detailFPCciPCce":
@@ -496,7 +496,7 @@ lbl_803861C4:
 /* 803861D4 00381E74  83 81 00 80 */	lwz r28, 0x80(r1)
 /* 803861D8 00381E78  7C 08 03 A6 */	mtlr r0
 /* 803861DC 00381E7C  38 21 00 90 */	addi r1, r1, 0x90
-/* 803861E0 00381E80  4E 80 00 20 */	blr 
+/* 803861E0 00381E80  4E 80 00 20 */	blr
 
 .global "WarningAlarmFunc___Q26nw4hbm2dbFP7OSAlarmP9OSContext"
 "WarningAlarmFunc___Q26nw4hbm2dbFP7OSAlarmP9OSContext":
@@ -507,19 +507,48 @@ lbl_803861C4:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80469438
 lbl_80469438:
-	.incbin "baserom.dol", 0x465538, 0x90
+	# ROM: 0x465538
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.asciz "-------------------------------- TRACE\n"
+	.asciz "Address:   BackChain   LR save\n"
+	.asciz "%08X:  %08X    %08X "
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804694C8
 lbl_804694C8:
-	.incbin "baserom.dol", 0x4655C8, 0x10
+	# ROM: 0x4655C8
+	.asciz "%s:%d Panic:"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804694D8
 lbl_804694D8:
-	.incbin "baserom.dol", 0x4655D8, 0xC
+	# ROM: 0x4655D8
+	.asciz "console.h"
+	.byte 0x00, 0x00
+
 .global lbl_804694E4
 lbl_804694E4:
-	.incbin "baserom.dol", 0x4655E4, 0x24
+	# ROM: 0x4655E4
+	.asciz "Pointer must not be NULL (console)"
+	.byte 0x00
+
 .global lbl_80469508
 lbl_80469508:
-	.incbin "baserom.dol", 0x465608, 0x10
+	# ROM: 0x465608
+	.asciz "%s:%d Warning:"
+	.byte 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "sWarningAlarm__Q26nw4hbm2db"
@@ -529,10 +558,14 @@ lbl_80469508:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7490
 lbl_805D7490:
-	.incbin "baserom.dol", 0x487010, 0x4
+	# ROM: 0x487010
+	.4byte 0x0A000000
+
 .global lbl_805D7494
 lbl_805D7494:
-	.incbin "baserom.dol", 0x487014, 0x4
+	# ROM: 0x487014
+	.4byte 0x25730A00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "sWarningTime__Q26nw4hbm2db"

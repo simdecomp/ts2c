@@ -51,7 +51,7 @@ lbl_80278064:
 /* 80278078 00273D18  54 00 10 3A */	slwi r0, r0, 2
 /* 8027807C 00273D1C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80278080 00273D20  7C 69 03 A6 */	mtctr r3
-/* 80278084 00273D24  4E 80 04 20 */	bctr 
+/* 80278084 00273D24  4E 80 04 20 */	bctr
 /* 80278088 00273D28  3A 6D 9E C4 */	addi r19, r13, lbl_805D65A4-_SDA_BASE_
 /* 8027808C 00273D2C  48 00 01 DC */	b lbl_80278268
 /* 80278090 00273D30  3A 6D 9E CC */	addi r19, r13, lbl_805D65AC-_SDA_BASE_
@@ -269,7 +269,7 @@ lbl_80278358:
 /* 80278364 00274004  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80278368 00274008  7C 08 03 A6 */	mtlr r0
 /* 8027836C 0027400C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80278370 00274010  4E 80 00 20 */	blr 
+/* 80278370 00274010  4E 80 00 20 */	blr
 
 .global "__dt__14EWiicorderFileFv"
 "__dt__14EWiicorderFileFv":
@@ -296,7 +296,7 @@ lbl_802783B4:
 /* 802783C0 00274060  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802783C4 00274064  7C 08 03 A6 */	mtlr r0
 /* 802783C8 00274068  38 21 00 10 */	addi r1, r1, 0x10
-/* 802783CC 0027406C  4E 80 00 20 */	blr 
+/* 802783CC 0027406C  4E 80 00 20 */	blr
 
 .global "Creator__14EWiicorderFileFP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi"
 "Creator__14EWiicorderFileFP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi":
@@ -373,18 +373,18 @@ lbl_802784CC:
 /* 802784D8 00274178  83 A1 02 14 */	lwz r29, 0x214(r1)
 /* 802784DC 0027417C  7C 08 03 A6 */	mtlr r0
 /* 802784E0 00274180  38 21 02 20 */	addi r1, r1, 0x220
-/* 802784E4 00274184  4E 80 00 20 */	blr 
+/* 802784E4 00274184  4E 80 00 20 */	blr
 
 .global "Destroy__14EWiicorderFileFv"
 "Destroy__14EWiicorderFileFv":
 /* 802784E8 00274188  2C 03 00 00 */	cmpwi r3, 0
-/* 802784EC 0027418C  4D 82 00 20 */	beqlr 
+/* 802784EC 0027418C  4D 82 00 20 */	beqlr
 /* 802784F0 00274190  81 83 00 00 */	lwz r12, 0(r3)
 /* 802784F4 00274194  38 80 00 01 */	li r4, 1
 /* 802784F8 00274198  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802784FC 0027419C  7D 89 03 A6 */	mtctr r12
-/* 80278500 002741A0  4E 80 04 20 */	bctr 
-/* 80278504 002741A4  4E 80 00 20 */	blr 
+/* 80278500 002741A0  4E 80 04 20 */	bctr
+/* 80278504 002741A4  4E 80 00 20 */	blr
 
 .global "Write__14EWiicorderFileFPCvUl"
 "Write__14EWiicorderFileFPCvUl":
@@ -453,7 +453,7 @@ lbl_802785D8:
 /* 802785EC 0027428C  80 01 04 34 */	lwz r0, 0x434(r1)
 /* 802785F0 00274290  7C 08 03 A6 */	mtlr r0
 /* 802785F4 00274294  38 21 04 30 */	addi r1, r1, 0x430
-/* 802785F8 00274298  4E 80 00 20 */	blr 
+/* 802785F8 00274298  4E 80 00 20 */	blr
 
 .global "Read__14EWiicorderFileFPvUl"
 "Read__14EWiicorderFileFPvUl":
@@ -468,7 +468,7 @@ lbl_802785D8:
 /* 8027861C 002742BC  38 60 00 00 */	li r3, 0
 /* 80278620 002742C0  7C 08 03 A6 */	mtlr r0
 /* 80278624 002742C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278628 002742C8  4E 80 00 20 */	blr 
+/* 80278628 002742C8  4E 80 00 20 */	blr
 
 .global "Seek__14EWiicorderFileFiQ25EFile8SeekType"
 "Seek__14EWiicorderFileFiQ25EFile8SeekType":
@@ -483,7 +483,7 @@ lbl_802785D8:
 /* 8027864C 002742EC  38 60 00 00 */	li r3, 0
 /* 80278650 002742F0  7C 08 03 A6 */	mtlr r0
 /* 80278654 002742F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278658 002742F8  4E 80 00 20 */	blr 
+/* 80278658 002742F8  4E 80 00 20 */	blr
 
 .global "Tell__14EWiicorderFileCFv"
 "Tell__14EWiicorderFileCFv":
@@ -498,22 +498,22 @@ lbl_802785D8:
 /* 8027867C 0027431C  38 60 00 00 */	li r3, 0
 /* 80278680 00274320  7C 08 03 A6 */	mtlr r0
 /* 80278684 00274324  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278688 00274328  4E 80 00 20 */	blr 
+/* 80278688 00274328  4E 80 00 20 */	blr
 
 .global "Flush__14EWiicorderFileFv"
 "Flush__14EWiicorderFileFv":
 /* 8027868C 0027432C  38 60 00 01 */	li r3, 1
-/* 80278690 00274330  4E 80 00 20 */	blr 
+/* 80278690 00274330  4E 80 00 20 */	blr
 
 .global "GetLastError__14EWiicorderFileCFv"
 "GetLastError__14EWiicorderFileCFv":
 /* 80278694 00274334  38 60 00 00 */	li r3, 0
-/* 80278698 00274338  4E 80 00 20 */	blr 
+/* 80278698 00274338  4E 80 00 20 */	blr
 
 .global "GetSystemHandle__14EWiicorderFileCFv"
 "GetSystemHandle__14EWiicorderFileCFv":
 /* 8027869C 0027433C  38 60 00 00 */	li r3, 0
-/* 802786A0 00274340  4E 80 00 20 */	blr 
+/* 802786A0 00274340  4E 80 00 20 */	blr
 
 .global "__dt__8ENgcFileFv"
 "__dt__8ENgcFileFv":
@@ -547,7 +547,7 @@ lbl_80278700:
 /* 8027870C 002743AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278710 002743B0  7C 08 03 A6 */	mtlr r0
 /* 80278714 002743B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278718 002743B8  4E 80 00 20 */	blr 
+/* 80278718 002743B8  4E 80 00 20 */	blr
 
 .global "Creator__8ENgcFileFP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi"
 "Creator__8ENgcFileFP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi":
@@ -597,7 +597,7 @@ lbl_8027878C:
 /* 802787C4 00274464  38 80 00 01 */	li r4, 1
 /* 802787C8 00274468  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802787CC 0027446C  7D 89 03 A6 */	mtctr r12
-/* 802787D0 00274470  4E 80 04 21 */	bctrl 
+/* 802787D0 00274470  4E 80 04 21 */	bctrl
 lbl_802787D4:
 /* 802787D4 00274474  38 60 00 00 */	li r3, 0
 /* 802787D8 00274478  48 00 00 2C */	b lbl_80278804
@@ -620,7 +620,7 @@ lbl_80278804:
 /* 80278814 002744B4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80278818 002744B8  7C 08 03 A6 */	mtlr r0
 /* 8027881C 002744BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80278820 002744C0  4E 80 00 20 */	blr 
+/* 80278820 002744C0  4E 80 00 20 */	blr
 
 .global "Destroy__8ENgcFileFv"
 "Destroy__8ENgcFileFv":
@@ -638,13 +638,13 @@ lbl_80278804:
 /* 80278850 002744F0  38 80 00 01 */	li r4, 1
 /* 80278854 002744F4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80278858 002744F8  7D 89 03 A6 */	mtctr r12
-/* 8027885C 002744FC  4E 80 04 21 */	bctrl 
+/* 8027885C 002744FC  4E 80 04 21 */	bctrl
 lbl_80278860:
 /* 80278860 00274500  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278864 00274504  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278868 00274508  7C 08 03 A6 */	mtlr r0
 /* 8027886C 0027450C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278870 00274510  4E 80 00 20 */	blr 
+/* 80278870 00274510  4E 80 00 20 */	blr
 
 .global "Read__8ENgcFileFPvUl"
 "Read__8ENgcFileFPvUl":
@@ -678,7 +678,7 @@ lbl_802788BC:
 /* 802788D8 00274578  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802788DC 0027457C  7C 08 03 A6 */	mtlr r0
 /* 802788E0 00274580  38 21 00 20 */	addi r1, r1, 0x20
-/* 802788E4 00274584  4E 80 00 20 */	blr 
+/* 802788E4 00274584  4E 80 00 20 */	blr
 
 .global "BufferReadRequest__8ENgcFileFPUci"
 "BufferReadRequest__8ENgcFileFPUci":
@@ -742,12 +742,12 @@ lbl_80278984:
 /* 802789C0 00274660  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802789C4 00274664  7C 08 03 A6 */	mtlr r0
 /* 802789C8 00274668  38 21 00 20 */	addi r1, r1, 0x20
-/* 802789CC 0027466C  4E 80 00 20 */	blr 
+/* 802789CC 0027466C  4E 80 00 20 */	blr
 
 .global "Write__8ENgcFileFPCvUl"
 "Write__8ENgcFileFPCvUl":
 /* 802789D0 00274670  38 60 00 00 */	li r3, 0
-/* 802789D4 00274674  4E 80 00 20 */	blr 
+/* 802789D4 00274674  4E 80 00 20 */	blr
 
 .global "Seek__8ENgcFileFiQ25EFile8SeekType"
 "Seek__8ENgcFileFiQ25EFile8SeekType":
@@ -778,27 +778,27 @@ lbl_80278A0C:
 /* 80278A2C 002746CC  98 03 00 74 */	stb r0, 0x74(r3)
 lbl_80278A30:
 /* 80278A30 002746D0  80 63 00 68 */	lwz r3, 0x68(r3)
-/* 80278A34 002746D4  4E 80 00 20 */	blr 
+/* 80278A34 002746D4  4E 80 00 20 */	blr
 
 .global "Tell__8ENgcFileCFv"
 "Tell__8ENgcFileCFv":
 /* 80278A38 002746D8  80 63 00 68 */	lwz r3, 0x68(r3)
-/* 80278A3C 002746DC  4E 80 00 20 */	blr 
+/* 80278A3C 002746DC  4E 80 00 20 */	blr
 
 .global "Flush__8ENgcFileFv"
 "Flush__8ENgcFileFv":
 /* 80278A40 002746E0  38 60 00 01 */	li r3, 1
-/* 80278A44 002746E4  4E 80 00 20 */	blr 
+/* 80278A44 002746E4  4E 80 00 20 */	blr
 
 .global "GetLastError__8ENgcFileCFv"
 "GetLastError__8ENgcFileCFv":
 /* 80278A48 002746E8  38 60 00 00 */	li r3, 0
-/* 80278A4C 002746EC  4E 80 00 20 */	blr 
+/* 80278A4C 002746EC  4E 80 00 20 */	blr
 
 .global "GetSystemHandle__8ENgcFileCFv"
 "GetSystemHandle__8ENgcFileCFv":
 /* 80278A50 002746F0  38 63 00 2C */	addi r3, r3, 0x2c
-/* 80278A54 002746F4  4E 80 00 20 */	blr 
+/* 80278A54 002746F4  4E 80 00 20 */	blr
 
 .global "__ct__14ENgcFileSystemFv"
 "__ct__14ENgcFileSystemFv":
@@ -816,7 +816,7 @@ lbl_80278A30:
 /* 80278A84 00274724  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278A88 00274728  7C 08 03 A6 */	mtlr r0
 /* 80278A8C 0027472C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278A90 00274730  4E 80 00 20 */	blr 
+/* 80278A90 00274730  4E 80 00 20 */	blr
 
 .global "__dt__14ENgcFileSystemFv"
 "__dt__14ENgcFileSystemFv":
@@ -851,7 +851,7 @@ lbl_80278AF0:
 /* 80278AFC 0027479C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278B00 002747A0  7C 08 03 A6 */	mtlr r0
 /* 80278B04 002747A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278B08 002747A8  4E 80 00 20 */	blr 
+/* 80278B08 002747A8  4E 80 00 20 */	blr
 
 .global "Init__14ENgcFileSystemFQ25EFile10DeviceType"
 "Init__14ENgcFileSystemFQ25EFile10DeviceType":
@@ -903,14 +903,14 @@ lbl_80278B74:
 /* 80278BB8 00274858  7F C3 F3 78 */	mr r3, r30
 /* 80278BBC 0027485C  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 80278BC0 00274860  7D 89 03 A6 */	mtctr r12
-/* 80278BC4 00274864  4E 80 04 21 */	bctrl 
+/* 80278BC4 00274864  4E 80 04 21 */	bctrl
 /* 80278BC8 00274868  7F E3 FB 78 */	mr r3, r31
 /* 80278BCC 0027486C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278BD0 00274870  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80278BD4 00274874  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278BD8 00274878  7C 08 03 A6 */	mtlr r0
 /* 80278BDC 0027487C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278BE0 00274880  4E 80 00 20 */	blr 
+/* 80278BE0 00274880  4E 80 00 20 */	blr
 
 .global "efopen"
 "efopen":
@@ -930,12 +930,12 @@ lbl_80278B74:
 /* 80278C18 002748B8  39 20 00 00 */	li r9, 0
 /* 80278C1C 002748BC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80278C20 002748C0  7D 89 03 A6 */	mtctr r12
-/* 80278C24 002748C4  4E 80 04 21 */	bctrl 
+/* 80278C24 002748C4  4E 80 04 21 */	bctrl
 /* 80278C28 002748C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278C2C 002748CC  80 61 00 08 */	lwz r3, 8(r1)
 /* 80278C30 002748D0  7C 08 03 A6 */	mtlr r0
 /* 80278C34 002748D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278C38 002748D8  4E 80 00 20 */	blr 
+/* 80278C38 002748D8  4E 80 00 20 */	blr
 
 .global "efclose"
 "efclose":
@@ -951,7 +951,7 @@ lbl_80278B74:
 /* 80278C60 00274900  38 60 00 00 */	li r3, 0
 /* 80278C64 00274904  7C 08 03 A6 */	mtlr r0
 /* 80278C68 00274908  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278C6C 0027490C  4E 80 00 20 */	blr 
+/* 80278C6C 0027490C  4E 80 00 20 */	blr
 
 .global "efread"
 "efread":
@@ -962,7 +962,7 @@ lbl_80278B74:
 /* 80278C80 00274920  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80278C84 00274924  7C 04 03 78 */	mr r4, r0
 /* 80278C88 00274928  7D 89 03 A6 */	mtctr r12
-/* 80278C8C 0027492C  4E 80 04 20 */	bctr 
+/* 80278C8C 0027492C  4E 80 04 20 */	bctr
 
 .global "efseek"
 "efseek":
@@ -978,24 +978,24 @@ lbl_80278B74:
 /* 80278CB4 00274954  81 83 00 00 */	lwz r12, 0(r3)
 /* 80278CB8 00274958  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80278CBC 0027495C  7D 89 03 A6 */	mtctr r12
-/* 80278CC0 00274960  4E 80 04 21 */	bctrl 
+/* 80278CC0 00274960  4E 80 04 21 */	bctrl
 /* 80278CC4 00274964  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80278CC8 00274968  7F E3 FB 78 */	mr r3, r31
 /* 80278CCC 0027496C  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80278CD0 00274970  7D 89 03 A6 */	mtctr r12
-/* 80278CD4 00274974  4E 80 04 21 */	bctrl 
+/* 80278CD4 00274974  4E 80 04 21 */	bctrl
 /* 80278CD8 00274978  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278CDC 0027497C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278CE0 00274980  7C 08 03 A6 */	mtlr r0
 /* 80278CE4 00274984  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278CE8 00274988  4E 80 00 20 */	blr 
+/* 80278CE8 00274988  4E 80 00 20 */	blr
 
 .global "eftell"
 "eftell":
 /* 80278CEC 0027498C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80278CF0 00274990  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80278CF4 00274994  7D 89 03 A6 */	mtctr r12
-/* 80278CF8 00274998  4E 80 04 20 */	bctr 
+/* 80278CF8 00274998  4E 80 04 20 */	bctr
 
 .global "InitResetFileList__14ENgcFileSystemFv"
 "InitResetFileList__14ENgcFileSystemFv":
@@ -1040,7 +1040,7 @@ lbl_80278D48:
 /* 80278D8C 00274A2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80278D90 00274A30  7C 08 03 A6 */	mtlr r0
 /* 80278D94 00274A34  38 21 00 20 */	addi r1, r1, 0x20
-/* 80278D98 00274A38  4E 80 00 20 */	blr 
+/* 80278D98 00274A38  4E 80 00 20 */	blr
 
 .global "AddFileToResetList__14ENgcFileSystemFP5EFile"
 "AddFileToResetList__14ENgcFileSystemFP5EFile":
@@ -1083,7 +1083,7 @@ lbl_80278E18:
 /* 80278E18 00274AB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80278E1C 00274ABC  7C 08 03 A6 */	mtlr r0
 /* 80278E20 00274AC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278E24 00274AC4  4E 80 00 20 */	blr 
+/* 80278E24 00274AC4  4E 80 00 20 */	blr
 
 .global "DeleteFileFromResetList__14ENgcFileSystemFP5EFile"
 "DeleteFileFromResetList__14ENgcFileSystemFP5EFile":
@@ -1123,7 +1123,7 @@ lbl_80278E94:
 /* 80278E98 00274B38  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80278E9C 00274B3C  7C 08 03 A6 */	mtlr r0
 /* 80278EA0 00274B40  38 21 00 10 */	addi r1, r1, 0x10
-/* 80278EA4 00274B44  4E 80 00 20 */	blr 
+/* 80278EA4 00274B44  4E 80 00 20 */	blr
 
 .global "ShutdownResetList__14ENgcFileSystemFv"
 "ShutdownResetList__14ENgcFileSystemFv":
@@ -1186,7 +1186,7 @@ lbl_80278F64:
 /* 80278F74 00274C14  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80278F78 00274C18  7C 08 03 A6 */	mtlr r0
 /* 80278F7C 00274C1C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80278F80 00274C20  4E 80 00 20 */	blr 
+/* 80278F80 00274C20  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl34vector<P5EFile,Q25eastl9allocator>FPP5EFileRCP5EFile"
 "DoInsertValue__Q25eastl34vector<P5EFile,Q25eastl9allocator>FPP5EFileRCP5EFile":
@@ -1290,7 +1290,7 @@ lbl_802790DC:
 /* 802790E4 00274D84  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802790E8 00274D88  7C 08 03 A6 */	mtlr r0
 /* 802790EC 00274D8C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802790F0 00274D90  4E 80 00 20 */	blr 
+/* 802790F0 00274D90  4E 80 00 20 */	blr
 
 .global "__ct__10ESemaphoreFv"
 "__ct__10ESemaphoreFv":
@@ -1311,7 +1311,7 @@ lbl_802790DC:
 /* 8027912C 00274DCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80279130 00274DD0  7C 08 03 A6 */	mtlr r0
 /* 80279134 00274DD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279138 00274DD8  4E 80 00 20 */	blr 
+/* 80279138 00274DD8  4E 80 00 20 */	blr
 
 .global "__dt__10ESemaphoreFv"
 "__dt__10ESemaphoreFv":
@@ -1346,7 +1346,7 @@ lbl_80279198:
 /* 802791A4 00274E44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802791A8 00274E48  7C 08 03 A6 */	mtlr r0
 /* 802791AC 00274E4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802791B0 00274E50  4E 80 00 20 */	blr 
+/* 802791B0 00274E50  4E 80 00 20 */	blr
 
 .global "Create__10ESemaphoreFii"
 "Create__10ESemaphoreFii":
@@ -1373,13 +1373,13 @@ lbl_802791DC:
 /* 80279200 00274EA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80279204 00274EA4  7C 08 03 A6 */	mtlr r0
 /* 80279208 00274EA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027920C 00274EAC  4E 80 00 20 */	blr 
+/* 8027920C 00274EAC  4E 80 00 20 */	blr
 
 .global "Destroy__10ESemaphoreFv"
 "Destroy__10ESemaphoreFv":
 /* 80279210 00274EB0  38 00 00 00 */	li r0, 0
 /* 80279214 00274EB4  90 03 00 04 */	stw r0, 4(r3)
-/* 80279218 00274EB8  4E 80 00 20 */	blr 
+/* 80279218 00274EB8  4E 80 00 20 */	blr
 
 .global "Acquire__10ESemaphoreFUi"
 "Acquire__10ESemaphoreFUi":
@@ -1408,7 +1408,7 @@ lbl_80279268:
 /* 8027926C 00274F0C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80279270 00274F10  7C 08 03 A6 */	mtlr r0
 /* 80279274 00274F14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279278 00274F18  4E 80 00 20 */	blr 
+/* 80279278 00274F18  4E 80 00 20 */	blr
 
 .global "Release__10ESemaphoreFv"
 "Release__10ESemaphoreFv":
@@ -1437,7 +1437,7 @@ lbl_802792BC:
 /* 802792D0 00274F70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802792D4 00274F74  7C 08 03 A6 */	mtlr r0
 /* 802792D8 00274F78  38 21 00 10 */	addi r1, r1, 0x10
-/* 802792DC 00274F7C  4E 80 00 20 */	blr 
+/* 802792DC 00274F7C  4E 80 00 20 */	blr
 
 .global "_tCallback__6ESleepFP7OSAlarmP9OSContext"
 "_tCallback__6ESleepFP7OSAlarmP9OSContext":
@@ -1445,10 +1445,10 @@ lbl_802792BC:
 /* 802792E4 00274F84  80 64 00 0C */	lwz r3, 0xc(r4)
 /* 802792E8 00274F88  80 04 00 08 */	lwz r0, 8(r4)
 /* 802792EC 00274F8C  7C 03 00 00 */	cmpw r3, r0
-/* 802792F0 00274F90  4C 80 00 20 */	bgelr 
+/* 802792F0 00274F90  4C 80 00 20 */	bgelr
 /* 802792F4 00274F94  38 64 00 0C */	addi r3, r4, 0xc
 /* 802792F8 00274F98  48 16 98 1C */	b "OSSignalSemaphore"
-/* 802792FC 00274F9C  4E 80 00 20 */	blr 
+/* 802792FC 00274F9C  4E 80 00 20 */	blr
 
 .global "__ct__6ESleepFv"
 "__ct__6ESleepFv":
@@ -1481,7 +1481,7 @@ lbl_802792BC:
 /* 80279368 00275008  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027936C 0027500C  7C 08 03 A6 */	mtlr r0
 /* 80279370 00275010  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279374 00275014  4E 80 00 20 */	blr 
+/* 80279374 00275014  4E 80 00 20 */	blr
 
 .global "__dt__6ESleepFv"
 "__dt__6ESleepFv":
@@ -1519,7 +1519,7 @@ lbl_802793DC:
 /* 802793E8 00275088  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802793EC 0027508C  7C 08 03 A6 */	mtlr r0
 /* 802793F0 00275090  38 21 00 10 */	addi r1, r1, 0x10
-/* 802793F4 00275094  4E 80 00 20 */	blr 
+/* 802793F4 00275094  4E 80 00 20 */	blr
 
 .global "Sleep__6ESleepFUi"
 "Sleep__6ESleepFUi":
@@ -1546,12 +1546,12 @@ lbl_802793DC:
 /* 80279448 002750E8  38 80 FF FF */	li r4, -1
 /* 8027944C 002750EC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80279450 002750F0  7D 89 03 A6 */	mtctr r12
-/* 80279454 002750F4  4E 80 04 21 */	bctrl 
+/* 80279454 002750F4  4E 80 04 21 */	bctrl
 /* 80279458 002750F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027945C 002750FC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80279460 00275100  7C 08 03 A6 */	mtlr r0
 /* 80279464 00275104  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279468 00275108  4E 80 00 20 */	blr 
+/* 80279468 00275108  4E 80 00 20 */	blr
 
 .global "__ct__7EThreadFv"
 "__ct__7EThreadFv":
@@ -1568,7 +1568,7 @@ lbl_802793DC:
 /* 80279494 00275134  98 83 03 34 */	stb r4, 0x334(r3)
 /* 80279498 00275138  98 83 03 35 */	stb r4, 0x335(r3)
 /* 8027949C 0027513C  90 03 03 38 */	stw r0, 0x338(r3)
-/* 802794A0 00275140  4E 80 00 20 */	blr 
+/* 802794A0 00275140  4E 80 00 20 */	blr
 
 .global "__dt__7EThreadFv"
 "__dt__7EThreadFv":
@@ -1602,7 +1602,7 @@ lbl_802794FC:
 /* 80279508 002751A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027950C 002751AC  7C 08 03 A6 */	mtlr r0
 /* 80279510 002751B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279514 002751B4  4E 80 00 20 */	blr 
+/* 80279514 002751B4  4E 80 00 20 */	blr
 
 .global "DeallocateStack__7EThreadFv"
 "DeallocateStack__7EThreadFv":
@@ -1628,7 +1628,7 @@ lbl_8027954C:
 /* 80279560 00275200  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80279564 00275204  7C 08 03 A6 */	mtlr r0
 /* 80279568 00275208  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027956C 0027520C  4E 80 00 20 */	blr 
+/* 8027956C 0027520C  4E 80 00 20 */	blr
 
 .global "Create__7EThreadFiiPv"
 "Create__7EThreadFiiPv":
@@ -1701,7 +1701,7 @@ lbl_80279658:
 /* 80279660 00275300  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80279664 00275304  7C 08 03 A6 */	mtlr r0
 /* 80279668 00275308  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027966C 0027530C  4E 80 00 20 */	blr 
+/* 8027966C 0027530C  4E 80 00 20 */	blr
 
 .global "ThreadEntryPoint__7EThreadFPv"
 "ThreadEntryPoint__7EThreadFPv":
@@ -1711,12 +1711,12 @@ lbl_80279658:
 /* 8027967C 0027531C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80279680 00275320  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80279684 00275324  7D 89 03 A6 */	mtctr r12
-/* 80279688 00275328  4E 80 04 21 */	bctrl 
+/* 80279688 00275328  4E 80 04 21 */	bctrl
 /* 8027968C 0027532C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80279690 00275330  38 60 00 00 */	li r3, 0
 /* 80279694 00275334  7C 08 03 A6 */	mtlr r0
 /* 80279698 00275338  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027969C 0027533C  4E 80 00 20 */	blr 
+/* 8027969C 0027533C  4E 80 00 20 */	blr
 
 .global "Attach__7EThreadFi"
 "Attach__7EThreadFi":
@@ -1782,7 +1782,7 @@ lbl_80279760:
 /* 8027977C 0027541C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80279780 00275420  7C 08 03 A6 */	mtlr r0
 /* 80279784 00275424  38 21 00 20 */	addi r1, r1, 0x20
-/* 80279788 00275428  4E 80 00 20 */	blr 
+/* 80279788 00275428  4E 80 00 20 */	blr
 
 .global "Destroy__7EThreadFv"
 "Destroy__7EThreadFv":
@@ -1847,7 +1847,7 @@ lbl_80279854:
 /* 80279858 002754F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8027985C 002754FC  7C 08 03 A6 */	mtlr r0
 /* 80279860 00275500  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279864 00275504  4E 80 00 20 */	blr 
+/* 80279864 00275504  4E 80 00 20 */	blr
 
 .global "Start__7EThreadFv"
 "Start__7EThreadFv":
@@ -1875,17 +1875,17 @@ lbl_80279854:
 /* 802798A4 00275544  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802798A8 00275548  7C 08 03 A6 */	mtlr r0
 /* 802798AC 0027554C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802798B0 00275550  4E 80 00 20 */	blr 
+/* 802798B0 00275550  4E 80 00 20 */	blr
 
 .global "GetStack__7EThreadFv"
 "GetStack__7EThreadFv":
 /* 802798B4 00275554  80 63 03 2C */	lwz r3, 0x32c(r3)
-/* 802798B8 00275558  4E 80 00 20 */	blr 
+/* 802798B8 00275558  4E 80 00 20 */	blr
 
 .global "GetStackSize__7EThreadFv"
 "GetStackSize__7EThreadFv":
 /* 802798BC 0027555C  80 63 03 30 */	lwz r3, 0x330(r3)
-/* 802798C0 00275560  4E 80 00 20 */	blr 
+/* 802798C0 00275560  4E 80 00 20 */	blr
 
 .global "GetCurrentThreadId__7EThreadFv"
 "GetCurrentThreadId__7EThreadFv":
@@ -1893,101 +1893,358 @@ lbl_80279854:
 
 .global "Main__7EThreadFv"
 "Main__7EThreadFv":
-/* 802798C8 00275568  4E 80 00 20 */	blr 
+/* 802798C8 00275568  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044F8C0
 lbl_8044F8C0:
-	.incbin "baserom.dol", 0x44B9C0, 0x360
+	# ROM: 0x44B9C0
+	.asciz "constructor"
+	.asciz "destructor"
+	.byte 0x00
+	.asciz "operator -="
+	.asciz "operator -"
+	.byte 0x00
+	.asciz "operator +="
+	.asciz "operator +"
+	.byte 0x00
+	.asciz "operator ="
+	.byte 0x00
+	.asciz "operator =="
+	.asciz "operator *"
+	.byte 0x00
+	.asciz "operator ~"
+	.byte 0x00
+	.asciz "operator ++"
+	.asciz "operator --"
+	.asciz "operator >>"
+	.asciz "operator <<"
+	.asciz "operator <"
+	.byte 0x00
+	.asciz "operator >"
+	.byte 0x00
+	.asciz "operator ->"
+	.4byte 0x00000000
+	.asciz "operator delete"
+	.asciz "operator delete[]"
+	.byte 0x00, 0x00
+	.asciz "operator new"
+	.byte 0x00, 0x00, 0x00
+	.asciz "operator new[]"
+	.byte 0x00
+	.asciz "operator ()"
+	.asciz "operator []"
+	.asciz "operator "
+	.byte 0x00, 0x00
+	.asciz "long long"
+	.byte 0x00, 0x00
+	.asciz "unsigned "
+	.byte 0x00, 0x00
+	.4byte 0x80278088 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278090 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278108 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780F8 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780F0 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780E8 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278100 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780C0 ;# ptr
+	.4byte 0x802780B8 ;# ptr
+	.4byte 0x802780D8 ;# ptr
+	.4byte 0x802780E0 ;# ptr
+	.4byte 0x80278098 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780A8 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780B0 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780C8 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780A0 ;# ptr
+	.4byte 0x80278268 ;# ptr
+	.4byte 0x802780D0 ;# ptr
+	.asciz "<~{all|closeall}~{}~>\n"
+	.byte 0x00
+	.asciz "R:/output/disks/wii/"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<~{%d|open|%s%s}~{}~>\n"
+	.byte 0x00
+	.asciz "Single line output to a Wiicorder file is longer than the %d buffer. It is %d in length. Breaking the line."
+	.asciz "<~{%d}~{"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8044FC20
 lbl_8044FC20:
-	.incbin "baserom.dol", 0x44BD20, 0x40
+	# ROM: 0x44BD20
+	.asciz "Attempting to read from a WiicorderFile.  This is not possible"
+	.byte 0x00
+
 .global lbl_8044FC60
 lbl_8044FC60:
-	.incbin "baserom.dol", 0x44BD60, 0x44
+	# ROM: 0x44BD60
+	.asciz "Attempting to seek within a WiicorderFile.  This is not possible"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8044FCA4
 lbl_8044FCA4:
-	.incbin "baserom.dol", 0x44BDA4, 0x50
+	# ROM: 0x44BDA4
+	.asciz "Attempting to tell the position within a WiicorderFile.  This is not possible"
+	.byte 0x00, 0x00
+
 .global "lutSeekType$8077"
 "lutSeekType$8077":
-	.incbin "baserom.dol", 0x44BDF4, 0xC
+	# ROM: 0x44BDF4
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000002
+
 .global "__vt__8ENgcFile"
 "__vt__8ENgcFile":
-	.incbin "baserom.dol", 0x44BE00, 0x38
+	# ROM: 0x44BE00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__8ENgcFileFv" ;# ptr (0x802786A4)
+	.4byte "Destroy__8ENgcFileFv" ;# ptr (0x80278824)
+	.4byte "Read__8ENgcFileFPvUl" ;# ptr (0x80278874)
+	.4byte "Write__8ENgcFileFPCvUl" ;# ptr (0x802789D0)
+	.4byte "Seek__8ENgcFileFiQ25EFile8SeekType" ;# ptr (0x802789D8)
+	.4byte "Tell__8ENgcFileCFv" ;# ptr (0x80278A38)
+	.4byte "Flush__8ENgcFileFv" ;# ptr (0x80278A40)
+	.4byte "GetLastError__8ENgcFileCFv" ;# ptr (0x80278A48)
+	.4byte "GetSystemHandle__8ENgcFileCFv" ;# ptr (0x80278A50)
+	.4byte "GetLSN__5EFileFv" ;# ptr (0x801F9A14)
+	.4byte "Allocate__5EFileFRUi" ;# ptr (0x801F9A50)
+	.4byte 0x00000000
+
 .global "__vt__7EThread"
 "__vt__7EThread":
-	.incbin "baserom.dol", 0x44BE38, 0x10
+	# ROM: 0x44BE38
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__7EThreadFv" ;# ptr (0x802794A4)
+	.4byte "Main__7EThreadFv" ;# ptr (0x802798C8)
+
 .global "__vt__10ESemaphore"
 "__vt__10ESemaphore":
-	.incbin "baserom.dol", 0x44BE48, 0x18
+	# ROM: 0x44BE48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10ESemaphoreFv" ;# ptr (0x8027913C)
+	.4byte "Acquire__10ESemaphoreFUi" ;# ptr (0x8027921C)
+	.4byte "Release__10ESemaphoreFv" ;# ptr (0x8027927C)
+	.4byte "Release__11ESyncObjectFUiPUi" ;# ptr (0x8026FEF8)
+
 .global "__vt__14EWiicorderFile"
 "__vt__14EWiicorderFile":
-	.incbin "baserom.dol", 0x44BE60, 0x34
+	# ROM: 0x44BE60
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14EWiicorderFileFv" ;# ptr (0x80278374)
+	.4byte "Destroy__14EWiicorderFileFv" ;# ptr (0x802784E8)
+	.4byte "Read__14EWiicorderFileFPvUl" ;# ptr (0x802785FC)
+	.4byte "Write__14EWiicorderFileFPCvUl" ;# ptr (0x80278508)
+	.4byte "Seek__14EWiicorderFileFiQ25EFile8SeekType" ;# ptr (0x8027862C)
+	.4byte "Tell__14EWiicorderFileCFv" ;# ptr (0x8027865C)
+	.4byte "Flush__14EWiicorderFileFv" ;# ptr (0x8027868C)
+	.4byte "GetLastError__14EWiicorderFileCFv" ;# ptr (0x80278694)
+	.4byte "GetSystemHandle__14EWiicorderFileCFv" ;# ptr (0x8027869C)
+	.4byte "GetLSN__5EFileFv" ;# ptr (0x801F9A14)
+	.4byte "Allocate__5EFileFRUi" ;# ptr (0x801F9A50)
+
 .global "__vt__14ENgcFileSystem"
 "__vt__14ENgcFileSystem":
-	.incbin "baserom.dol", 0x44BE94, 0x54
+	# ROM: 0x44BE94
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14ENgcFileSystemFv" ;# ptr (0x80278A94)
+	.4byte "ManagedStartup__20EGlobalManagerClientFv" ;# ptr (0x8025FD9C)
+	.4byte "ManagedShutdown__11EFileSystemFv" ;# ptr (0x8025F590)
+	.4byte "Access__11EFileSystemFPCcPCcQ25EFile10DeviceTypeQ25EFile10AccessMode" ;# ptr (0x8025F7B0)
+	.4byte "Create__11EFileSystemFRP5EFilePCcPCcQ25EFile10DeviceTypeQ25EFile10AccessModeUi" ;# ptr (0x8025F908)
+	.4byte "Init__14ENgcFileSystemFQ25EFile10DeviceType" ;# ptr (0x80278B0C)
+	.4byte "InitHDD__11EFileSystemFbPCc" ;# ptr (0x8025FAFC)
+	.4byte "InitHDDFileSystem__11EFileSystemFv" ;# ptr (0x8025FAF4)
+	.4byte "HDDIsUnformatted__11EFileSystemFv" ;# ptr (0x8025FB2C)
+	.4byte "InitResetFileList__14ENgcFileSystemFv" ;# ptr (0x80278CFC)
+	.4byte "AddFileToResetList__14ENgcFileSystemFP5EFile" ;# ptr (0x80278D9C)
+	.4byte "DeleteFileFromResetList__14ENgcFileSystemFP5EFile" ;# ptr (0x80278E28)
+	.4byte "ShutdownResetList__14ENgcFileSystemFv" ;# ptr (0x80278EA8)
+	.asciz "allocator.h"
+	.asciz "allocator.h"
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D65A0
 lbl_805D65A0:
-	.incbin "baserom.dol", 0x486120, 0x4
+	# ROM: 0x486120
+	.4byte 0x0A000000
+
 .global lbl_805D65A4
 lbl_805D65A4:
-	.incbin "baserom.dol", 0x486124, 0x8
+	# ROM: 0x486124
+	.asciz "const&"
+	.byte 0x00
+
 .global lbl_805D65AC
 lbl_805D65AC:
-	.incbin "baserom.dol", 0x48612C, 0x4
+	# ROM: 0x48612C
+	.4byte 0x2C200000
+
 .global lbl_805D65B0
 lbl_805D65B0:
-	.incbin "baserom.dol", 0x486130, 0x8
+	# ROM: 0x486130
+	.asciz "float"
+	.byte 0x00, 0x00
+
 .global lbl_805D65B8
 lbl_805D65B8:
-	.incbin "baserom.dol", 0x486138, 0x8
+	# ROM: 0x486138
+	.asciz "void"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D65C0
 lbl_805D65C0:
-	.incbin "baserom.dol", 0x486140, 0x4
+	# ROM: 0x486140
+	.4byte 0x696E7400
+
 .global lbl_805D65C4
 lbl_805D65C4:
-	.incbin "baserom.dol", 0x486144, 0x8
+	# ROM: 0x486144
+	.asciz "long"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D65CC
 lbl_805D65CC:
-	.incbin "baserom.dol", 0x48614C, 0x8
+	# ROM: 0x48614C
+	.asciz "char"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D65D4
 lbl_805D65D4:
-	.incbin "baserom.dol", 0x486154, 0x8
+	# ROM: 0x486154
+	.asciz "bool"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D65DC
 lbl_805D65DC:
-	.incbin "baserom.dol", 0x48615C, 0x8
+	# ROM: 0x48615C
+	.asciz "short"
+	.byte 0x00, 0x00
+
 .global lbl_805D65E4
 lbl_805D65E4:
-	.incbin "baserom.dol", 0x486164, 0x8
+	# ROM: 0x486164
+	.asciz "double"
+	.byte 0x00
+
 .global lbl_805D65EC
 lbl_805D65EC:
-	.incbin "baserom.dol", 0x48616C, 0x4
+	# ROM: 0x48616C
+	.4byte 0x2E2E2E00
+
 .global lbl_805D65F0
 lbl_805D65F0:
-	.incbin "baserom.dol", 0x486170, 0x4
+	# ROM: 0x486170
+	.4byte 0x26000000
+
 .global lbl_805D65F4
 lbl_805D65F4:
-	.incbin "baserom.dol", 0x486174, 0x4
+	# ROM: 0x486174
+	.4byte 0x2A000000
+
 .global lbl_805D65F8
 lbl_805D65F8:
-	.incbin "baserom.dol", 0x486178, 0x8
+	# ROM: 0x486178
+	.asciz "const "
+	.byte 0x00
+
 .global lbl_805D6600
 lbl_805D6600:
-	.incbin "baserom.dol", 0x486180, 0x4
+	# ROM: 0x486180
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global "m_channelCounter__14EWiicorderFile"
 "m_channelCounter__14EWiicorderFile":
-	.incbin "baserom.dol", 0x486184, 0x4
+	# ROM: 0x486184
+	.4byte 0x00000001
+
 .global "firstFile$7542"
 "firstFile$7542":
-	.incbin "baserom.dol", 0x486188, 0x4
+	# ROM: 0x486188
+	.4byte 0x01000000
+
 .global lbl_805D660C
 lbl_805D660C:
-	.incbin "baserom.dol", 0x48618C, 0x4
+	# ROM: 0x48618C
+	.4byte 0x72000000
+
 .global lbl_805D6610
 lbl_805D6610:
-	.incbin "baserom.dol", 0x486190, 0x8
+	# ROM: 0x486190
+	.asciz "}~>\n"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "totalRead$7935"

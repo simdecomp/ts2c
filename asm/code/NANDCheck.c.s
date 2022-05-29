@@ -54,7 +54,7 @@ lbl_803D9E8C:
 /* 803D9E9C 003D5B3C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803D9EA0 003D5B40  7C 08 03 A6 */	mtlr r0
 /* 803D9EA4 003D5B44  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D9EA8 003D5B48  4E 80 00 20 */	blr 
+/* 803D9EA8 003D5B48  4E 80 00 20 */	blr
 
 .global "NANDCheck"
 "NANDCheck":
@@ -131,13 +131,40 @@ lbl_803D9F98:
 /* 803D9FA4 003D5C44  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803D9FA8 003D5C48  7C 08 03 A6 */	mtlr r0
 /* 803D9FAC 003D5C4C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803D9FB0 003D5C50  4E 80 00 20 */	blr 
+/* 803D9FB0 003D5C50  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x472060, 0x80
+	# ROM: 0x472060
+	.asciz "/title/00010000"
+	.asciz "/title/00010001"
+	.asciz "/title/00010003"
+	.asciz "/title/00010004"
+	.asciz "/title/00010005"
+	.asciz "/title/00010006"
+	.asciz "/title/00010007"
+	.asciz "/shared2/title"
+	.byte 0x00
+
 .global "USER_DIR_LIST"
 "USER_DIR_LIST":
-	.incbin "baserom.dol", 0x4720E0, 0x30
+	# ROM: 0x4720E0
+	.4byte 0x805D7758 ;# ptr
+	.4byte 0x805D7760 ;# ptr
+	.4byte 0x80475F60 ;# ptr
+	.4byte 0x80475F70 ;# ptr
+	.4byte 0x80475F80 ;# ptr
+	.4byte 0x80475F90 ;# ptr
+	.4byte 0x80475FA0 ;# ptr
+	.4byte 0x80475FB0 ;# ptr
+	.4byte 0x80475FC0 ;# ptr
+	.4byte 0x80475FD0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x4872D8, 0x10
+	# ROM: 0x4872D8
+	.asciz "/meta"
+	.byte 0x00, 0x00
+	.asciz "/ticket"
+

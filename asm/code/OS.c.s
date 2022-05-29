@@ -77,7 +77,7 @@ lbl_803DA054:
 /* 803DA0CC 003D5D6C  FF C0 00 90 */	fmr f30, f0
 /* 803DA0D0 003D5D70  FF E0 00 90 */	fmr f31, f0
 /* 803DA0D4 003D5D74  FD FE 05 8E */	mtfsf 0xff, f0
-/* 803DA0D8 003D5D78  4E 80 00 20 */	blr 
+/* 803DA0D8 003D5D78  4E 80 00 20 */	blr
 
 .global "__OSGetIOSRev"
 "__OSGetIOSRev":
@@ -107,7 +107,7 @@ lbl_803DA054:
 /* 803DA138 003D5DD8  98 83 00 05 */	stb r4, 5(r3)
 /* 803DA13C 003D5DDC  98 C3 00 04 */	stb r6, 4(r3)
 /* 803DA140 003D5DE0  B0 03 00 06 */	sth r0, 6(r3)
-/* 803DA144 003D5DE4  4E 80 00 20 */	blr 
+/* 803DA144 003D5DE4  4E 80 00 20 */	blr
 
 .global "OSGetConsoleType"
 "OSGetConsoleType":
@@ -295,7 +295,7 @@ lbl_803DA3A4:
 /* 803DA3A8 003D6048  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803DA3AC 003D604C  7C 08 03 A6 */	mtlr r0
 /* 803DA3B0 003D6050  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DA3B4 003D6054  4E 80 00 20 */	blr 
+/* 803DA3B4 003D6054  4E 80 00 20 */	blr
 
 .global "ClearArena"
 "ClearArena":
@@ -432,7 +432,7 @@ lbl_803DA57C:
 /* 803DA584 003D6224  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803DA588 003D6228  7C 08 03 A6 */	mtlr r0
 /* 803DA58C 003D622C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DA590 003D6230  4E 80 00 20 */	blr 
+/* 803DA590 003D6230  4E 80 00 20 */	blr
 
 .global "ClearMEM2Arena"
 "ClearMEM2Arena":
@@ -571,7 +571,7 @@ lbl_803DA760:
 /* 803DA768 003D6408  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803DA76C 003D640C  7C 08 03 A6 */	mtlr r0
 /* 803DA770 003D6410  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DA774 003D6414  4E 80 00 20 */	blr 
+/* 803DA774 003D6414  4E 80 00 20 */	blr
 
 .global "InquiryCallback"
 "InquiryCallback":
@@ -586,12 +586,12 @@ lbl_803DA788:
 /* 803DA794 003D6434  A0 04 00 02 */	lhz r0, 2(r4)
 /* 803DA798 003D6438  60 00 80 00 */	ori r0, r0, 0x8000
 /* 803DA79C 003D643C  B0 03 30 E6 */	sth r0, 0x800030E6@l(r3)
-/* 803DA7A0 003D6440  4E 80 00 20 */	blr 
+/* 803DA7A0 003D6440  4E 80 00 20 */	blr
 lbl_803DA7A4:
 /* 803DA7A4 003D6444  38 00 00 01 */	li r0, 1
 /* 803DA7A8 003D6448  3C 60 80 00 */	lis r3, 0x800030E6@ha
 /* 803DA7AC 003D644C  B0 03 30 E6 */	sth r0, 0x800030E6@l(r3)
-/* 803DA7B0 003D6450  4E 80 00 20 */	blr 
+/* 803DA7B0 003D6450  4E 80 00 20 */	blr
 
 .global "ReportOSInfo"
 "ReportOSInfo":
@@ -669,7 +669,7 @@ lbl_803DA898:
 /* 803DA8B0 003D6550  38 84 62 00 */	addi r4, r4, lbl_80476200@l
 /* 803DA8B4 003D6554  7C 84 28 2E */	lwzx r4, r4, r5
 /* 803DA8B8 003D6558  7C 89 03 A6 */	mtctr r4
-/* 803DA8BC 003D655C  4E 80 04 20 */	bctr 
+/* 803DA8BC 003D655C  4E 80 04 20 */	bctr
 /* 803DA8C0 003D6560  38 7F 00 F4 */	addi r3, r31, 0xf4
 /* 803DA8C4 003D6564  4C C6 31 82 */	crclr 6
 /* 803DA8C8 003D6568  48 00 27 F1 */	bl "OSReport"
@@ -770,7 +770,7 @@ lbl_803DA95C:
 /* 803DAA34 003D66D4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803DAA38 003D66D8  7C 08 03 A6 */	mtlr r0
 /* 803DAA3C 003D66DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DAA40 003D66E0  4E 80 00 20 */	blr 
+/* 803DAA40 003D66E0  4E 80 00 20 */	blr
 
 .global "OSInit"
 "OSInit":
@@ -1052,7 +1052,7 @@ lbl_803DAE30:
 /* 803DAE38 003D6AD8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803DAE3C 003D6ADC  7C 08 03 A6 */	mtlr r0
 /* 803DAE40 003D6AE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DAE44 003D6AE4  4E 80 00 20 */	blr 
+/* 803DAE44 003D6AE4  4E 80 00 20 */	blr
 
 .global "OSExceptionInit"
 "OSExceptionInit":
@@ -1224,7 +1224,7 @@ lbl_803DB00C:
 /* 803DB0B8 003D6D58  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803DB0BC 003D6D5C  7C 08 03 A6 */	mtlr r0
 /* 803DB0C0 003D6D60  38 21 00 40 */	addi r1, r1, 0x40
-/* 803DB0C4 003D6D64  4E 80 00 20 */	blr 
+/* 803DB0C4 003D6D64  4E 80 00 20 */	blr
 
 .global "__OSDBINTSTART"
 "__OSDBINTSTART":
@@ -1236,7 +1236,7 @@ lbl_803DB00C:
 /* 803DB0DC 003D6D7C  7C 68 03 A6 */	mtlr r3
 /* 803DB0E0 003D6D80  38 60 00 30 */	li r3, 0x30
 /* 803DB0E4 003D6D84  7C 60 01 24 */	mtmsr r3
-/* 803DB0E8 003D6D88  4E 80 00 20 */	blr 
+/* 803DB0E8 003D6D88  4E 80 00 20 */	blr
 
 .global "__OSDBJUMPSTART"
 "__OSDBJUMPSTART":
@@ -1248,14 +1248,14 @@ lbl_803DB00C:
 /* 803DB0F4 003D6D94  54 60 15 BA */	rlwinm r0, r3, 2, 0x16, 0x1d
 /* 803DB0F8 003D6D98  7C 65 00 2E */	lwzx r3, r5, r0
 /* 803DB0FC 003D6D9C  7C 85 01 2E */	stwx r4, r5, r0
-/* 803DB100 003D6DA0  4E 80 00 20 */	blr 
+/* 803DB100 003D6DA0  4E 80 00 20 */	blr
 
 .global "__OSGetExceptionHandler"
 "__OSGetExceptionHandler":
 /* 803DB104 003D6DA4  80 8D C6 C0 */	lwz r4, "OSExceptionTable"-_SDA_BASE_(r13)
 /* 803DB108 003D6DA8  54 60 15 BA */	rlwinm r0, r3, 2, 0x16, 0x1d
 /* 803DB10C 003D6DAC  7C 64 00 2E */	lwzx r3, r4, r0
-/* 803DB110 003D6DB0  4E 80 00 20 */	blr 
+/* 803DB110 003D6DB0  4E 80 00 20 */	blr
 
 .global "__OSEVStart"
 "__OSEVStart":
@@ -1287,7 +1287,7 @@ func_803DB14C:
 
 .global "__DBVECTOR"
 "__DBVECTOR":
-/* 803DB16C 003D6E0C  60 00 00 00 */	nop 
+/* 803DB16C 003D6E0C  60 00 00 00 */	nop
 /* 803DB170 003D6E10  7C 60 00 A6 */	mfmsr r3
 /* 803DB174 003D6E14  60 63 00 30 */	ori r3, r3, 0x30
 /* 803DB178 003D6E18  7C 7B 03 A6 */	mtspr 0x1b, r3
@@ -1301,16 +1301,16 @@ func_803DB14C:
 /* 803DB18C 003D6E2C  3C A0 80 3E */	lis r5, "OSDefaultExceptionHandler"@ha
 /* 803DB190 003D6E30  38 A5 B1 B0 */	addi r5, r5, "OSDefaultExceptionHandler"@l
 /* 803DB194 003D6E34  7C BA 03 A6 */	mtspr 0x1a, r5
-/* 803DB198 003D6E38  4C 00 00 64 */	rfi 
+/* 803DB198 003D6E38  4C 00 00 64 */	rfi
 lbl_803DB19C:
 /* 803DB19C 003D6E3C  54 65 15 BA */	rlwinm r5, r3, 2, 0x16, 0x1d
 /* 803DB1A0 003D6E40  80 A5 30 00 */	lwz r5, 0x3000(r5)
 /* 803DB1A4 003D6E44  7C BA 03 A6 */	mtspr 0x1a, r5
-/* 803DB1A8 003D6E48  4C 00 00 64 */	rfi 
+/* 803DB1A8 003D6E48  4C 00 00 64 */	rfi
 
 .global "__OSEVEnd"
 "__OSEVEnd":
-/* 803DB1AC 003D6E4C  60 00 00 00 */	nop 
+/* 803DB1AC 003D6E4C  60 00 00 00 */	nop
 
 .global "OSDefaultExceptionHandler"
 "OSDefaultExceptionHandler":
@@ -1359,14 +1359,14 @@ lbl_803DB19C:
 /* 803DB24C 003D6EEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DB250 003D6EF0  7C 08 03 A6 */	mtlr r0
 /* 803DB254 003D6EF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DB258 003D6EF8  4E 80 00 20 */	blr 
+/* 803DB258 003D6EF8  4E 80 00 20 */	blr
 
 .global "__OSGetDIConfig"
 "__OSGetDIConfig":
 /* 803DB25C 003D6EFC  3C 60 CD 00 */	lis r3, 0xCD006024@ha
 /* 803DB260 003D6F00  80 03 60 24 */	lwz r0, 0xCD006024@l(r3)
 /* 803DB264 003D6F04  54 03 06 3E */	clrlwi r3, r0, 0x18
-/* 803DB268 003D6F08  4E 80 00 20 */	blr 
+/* 803DB268 003D6F08  4E 80 00 20 */	blr
 
 .global "OSRegisterVersion"
 "OSRegisterVersion":
@@ -1396,7 +1396,7 @@ lbl_803DB294:
 /* 803DB2B8 003D6F58  88 86 00 03 */	lbz r4, 3(r6)
 /* 803DB2BC 003D6F5C  98 85 00 03 */	stb r4, 3(r5)
 /* 803DB2C0 003D6F60  98 05 00 04 */	stb r0, 4(r5)
-/* 803DB2C4 003D6F64  4E 80 00 20 */	blr 
+/* 803DB2C4 003D6F64  4E 80 00 20 */	blr
 
 .global "OSGetAppType"
 "OSGetAppType":
@@ -1404,22 +1404,121 @@ lbl_803DB294:
 /* 803DB2CC 003D6F6C  2C 00 00 00 */	cmpwi r0, 0
 /* 803DB2D0 003D6F70  41 82 00 0C */	beq lbl_803DB2DC
 /* 803DB2D4 003D6F74  38 60 00 40 */	li r3, 0x40
-/* 803DB2D8 003D6F78  4E 80 00 20 */	blr 
+/* 803DB2D8 003D6F78  4E 80 00 20 */	blr
 lbl_803DB2DC:
 /* 803DB2DC 003D6F7C  3C 60 80 00 */	lis r3, 0x80003184@ha
 /* 803DB2E0 003D6F80  88 63 31 84 */	lbz r3, 0x80003184@l(r3)
-/* 803DB2E4 003D6F84  4E 80 00 20 */	blr 
+/* 803DB2E4 003D6F84  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80476010
 lbl_80476010:
-	.incbin "baserom.dol", 0x472110, 0x1F0
+	# ROM: 0x472110
+	.asciz "<< RVL_SDK - OS \trelease build: Apr 24 2007 11:50:47 (0x4199_60831) >>"
+	.byte 0x00
+	.asciz "\nRevolution OS\n"
+	.asciz "Kernel built : %s %s\n"
+	.byte 0x00, 0x00
+	.asciz "Apr 24 2007"
+	.asciz "11:50:47"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Console Type : "
+	.asciz "Pre-production board 1\n"
+	.asciz "Pre-production board 2-1\n"
+	.byte 0x00, 0x00
+	.asciz "Pre-production board 2-2\n"
+	.byte 0x00, 0x00
+	.asciz "Retail %d\n"
+	.byte 0x00
+	.asciz "NDEV 2.1\n"
+	.byte 0x00, 0x00
+	.asciz "NDEV 2.0\n"
+	.byte 0x00, 0x00
+	.asciz "NDEV 1.2\n"
+	.byte 0x00, 0x00
+	.asciz "NDEV 1.1\n"
+	.byte 0x00, 0x00
+	.asciz "NDEV 1.0\n"
+	.byte 0x00, 0x00
+	.asciz "Revolution Emulator\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Emulation platform (%08x)\n"
+	.byte 0x00
+	.asciz "TDEV-based emulation HW%d\n"
+	.byte 0x00
+	.asciz "Firmware     : %d.%d.%d "
+	.byte 0x00, 0x00, 0x00
+	.asciz "(%d/%d/%d)\n"
+	.asciz "Memory %d MB\n"
+	.byte 0x00, 0x00
+	.asciz "MEM1 Arena : 0x%x - 0x%x\n"
+	.byte 0x00, 0x00
+	.asciz "MEM2 Arena : 0x%x - 0x%x\n"
+	.byte 0x00, 0x00
+
 .global lbl_80476200
 lbl_80476200:
-	.incbin "baserom.dol", 0x472300, 0x128
+	# ROM: 0x472300
+	.4byte 0x803DA910 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA900 ;# ptr
+	.4byte 0x803DA8F0 ;# ptr
+	.4byte 0x803DA8E0 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA920 ;# ptr
+	.4byte 0x803DA8D0 ;# ptr
+	.4byte 0x803DA8C0 ;# ptr
+	.asciz "OS ERROR: boot program is not for RVL target. Please use correct boot program.\n"
+	.asciz "Failed to run app"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "OS ERROR: apploader[D].img is not for RVL target. Please use correct apploader[D].img.\n"
+
 .global "__OSExceptionLocations"
 "__OSExceptionLocations":
-	.incbin "baserom.dol", 0x472428, 0xD8
+	# ROM: 0x472428
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000300
+	.4byte 0x00000400
+	.4byte 0x00000500
+	.4byte 0x00000600
+	.4byte 0x00000700
+	.4byte 0x00000800
+	.4byte 0x00000900
+	.4byte 0x00000C00
+	.4byte 0x00000D00
+	.4byte 0x00000F00
+	.4byte 0x00001300
+	.4byte 0x00001400
+	.4byte 0x00001700
+	.asciz "Installing OSDBIntegrator\n"
+	.byte 0x00
+	.asciz ">>> OSINIT: exception %d commandeered by TRK\n"
+	.byte 0x00, 0x00
+	.asciz ">>> OSINIT: exception %d vectored to debugger\n"
+	.byte 0x00
+	.asciz "Exceptions initialized...\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__OSRebootParams"
@@ -1435,19 +1534,34 @@ lbl_80476200:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__OSVersion"
 "__OSVersion":
-	.incbin "baserom.dol", 0x4872E8, 0x4
+	# ROM: 0x4872E8
+	.4byte 0x80476010 ;# ptr
+
 .global lbl_805D776C
 lbl_805D776C:
-	.incbin "baserom.dol", 0x4872EC, 0x8
+	# ROM: 0x4872EC
+	.asciz "%08x\n"
+	.byte 0x00, 0x00
+
 .global lbl_805D7774
 lbl_805D7774:
-	.incbin "baserom.dol", 0x4872F4, 0x4
+	# ROM: 0x4872F4
+	.4byte 0x25730A00
+
 .global lbl_805D7778
 lbl_805D7778:
-	.incbin "baserom.dol", 0x4872F8, 0x10
+	# ROM: 0x4872F8
+	.asciz "OS.c"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HAEA"
+	.byte 0x00, 0x00, 0x00
+
 .global "AppGameNameForSysMenu"
 "AppGameNameForSysMenu":
-	.incbin "baserom.dol", 0x487308, 0x8
+	# ROM: 0x487308
+	.4byte 0x805D7780 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__OSInIPL"

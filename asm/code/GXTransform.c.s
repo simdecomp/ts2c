@@ -19,7 +19,7 @@
 /* 8037AD38 003769D8  F0 05 00 00 */	psq_st f0, 0(r5), 0, qr0
 /* 8037AD3C 003769DC  80 03 05 28 */	lwz r0, 0x528(r3)
 /* 8037AD40 003769E0  90 04 80 00 */	stw r0, -0x8000(r4)
-/* 8037AD44 003769E4  4E 80 00 20 */	blr 
+/* 8037AD44 003769E4  4E 80 00 20 */	blr
 
 .global "GXSetProjection"
 "GXSetProjection":
@@ -49,7 +49,7 @@ lbl_8037AD9C:
 /* 8037AD9C 00376A3C  80 05 05 FC */	lwz r0, 0x5fc(r5)
 /* 8037ADA0 00376A40  64 00 08 00 */	oris r0, r0, 0x800
 /* 8037ADA4 00376A44  90 05 05 FC */	stw r0, 0x5fc(r5)
-/* 8037ADA8 00376A48  4E 80 00 20 */	blr 
+/* 8037ADA8 00376A48  4E 80 00 20 */	blr
 
 .global "GXSetProjectionv"
 "GXSetProjectionv":
@@ -73,7 +73,7 @@ lbl_8037ADC8:
 /* 8037ADE8 00376A88  80 04 05 FC */	lwz r0, 0x5fc(r4)
 /* 8037ADEC 00376A8C  64 00 08 00 */	oris r0, r0, 0x800
 /* 8037ADF0 00376A90  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 8037ADF4 00376A94  4E 80 00 20 */	blr 
+/* 8037ADF4 00376A94  4E 80 00 20 */	blr
 
 .global "GXGetProjectionv"
 "GXGetProjectionv":
@@ -94,7 +94,7 @@ lbl_8037AE14:
 /* 8037AE28 00376AC8  F0 43 00 04 */	psq_st f2, 4(r3), 0, qr0
 /* 8037AE2C 00376ACC  F0 23 00 0C */	psq_st f1, 12(r3), 0, qr0
 /* 8037AE30 00376AD0  F0 03 00 14 */	psq_st f0, 20(r3), 0, qr0
-/* 8037AE34 00376AD4  4E 80 00 20 */	blr 
+/* 8037AE34 00376AD4  4E 80 00 20 */	blr
 
 .global "GXLoadPosMtxImm"
 "GXLoadPosMtxImm":
@@ -117,7 +117,7 @@ lbl_8037AE14:
 /* 8037AE78 00376B18  F0 44 00 00 */	psq_st f2, 0(r4), 0, qr0
 /* 8037AE7C 00376B1C  F0 24 00 00 */	psq_st f1, 0(r4), 0, qr0
 /* 8037AE80 00376B20  F0 04 00 00 */	psq_st f0, 0(r4), 0, qr0
-/* 8037AE84 00376B24  4E 80 00 20 */	blr 
+/* 8037AE84 00376B24  4E 80 00 20 */	blr
 
 .global "GXLoadNrmMtxImm"
 "GXLoadNrmMtxImm":
@@ -142,7 +142,7 @@ lbl_8037AE14:
 /* 8037AED0 00376B70  D0 45 80 00 */	stfs f2, -0x8000(r5)
 /* 8037AED4 00376B74  F0 24 00 00 */	psq_st f1, 0(r4), 0, qr0
 /* 8037AED8 00376B78  D0 05 80 00 */	stfs f0, -0x8000(r5)
-/* 8037AEDC 00376B7C  4E 80 00 20 */	blr 
+/* 8037AEDC 00376B7C  4E 80 00 20 */	blr
 
 .global "GXSetCurrentMtx"
 "GXSetCurrentMtx":
@@ -153,7 +153,7 @@ lbl_8037AE14:
 /* 8037AEF0 00376B90  80 04 05 FC */	lwz r0, 0x5fc(r4)
 /* 8037AEF4 00376B94  64 00 04 00 */	oris r0, r0, 0x400
 /* 8037AEF8 00376B98  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 8037AEFC 00376B9C  4E 80 00 20 */	blr 
+/* 8037AEFC 00376B9C  4E 80 00 20 */	blr
 
 .global "GXLoadTexMtxImm"
 "GXLoadTexMtxImm":
@@ -195,7 +195,7 @@ lbl_8037AF30:
 /* 8037AF7C 00376C1C  F0 44 00 00 */	psq_st f2, 0(r4), 0, qr0
 /* 8037AF80 00376C20  F0 24 00 00 */	psq_st f1, 0(r4), 0, qr0
 /* 8037AF84 00376C24  F0 04 00 00 */	psq_st f0, 0(r4), 0, qr0
-/* 8037AF88 00376C28  4E 80 00 20 */	blr 
+/* 8037AF88 00376C28  4E 80 00 20 */	blr
 lbl_8037AF8C:
 /* 8037AF8C 00376C2C  38 84 80 00 */	addi r4, r4, -32768
 /* 8037AF90 00376C30  E0 63 00 00 */	psq_l f3, 0(r3), 0, qr0
@@ -206,7 +206,7 @@ lbl_8037AF8C:
 /* 8037AFA4 00376C44  F0 44 00 00 */	psq_st f2, 0(r4), 0, qr0
 /* 8037AFA8 00376C48  F0 24 00 00 */	psq_st f1, 0(r4), 0, qr0
 /* 8037AFAC 00376C4C  F0 04 00 00 */	psq_st f0, 0(r4), 0, qr0
-/* 8037AFB0 00376C50  4E 80 00 20 */	blr 
+/* 8037AFB0 00376C50  4E 80 00 20 */	blr
 
 .global "__GXSetViewport"
 "__GXSetViewport":
@@ -245,7 +245,7 @@ lbl_8037AF8C:
 /* 8037B034 00376CD4  D0 84 80 00 */	stfs f4, -0x8000(r4)
 /* 8037B038 00376CD8  D0 24 80 00 */	stfs f1, -0x8000(r4)
 /* 8037B03C 00376CDC  D0 04 80 00 */	stfs f0, -0x8000(r4)
-/* 8037B040 00376CE0  4E 80 00 20 */	blr 
+/* 8037B040 00376CE0  4E 80 00 20 */	blr
 
 .global "GXSetViewport"
 "GXSetViewport":
@@ -259,7 +259,7 @@ lbl_8037AF8C:
 /* 8037B060 00376D00  80 03 05 FC */	lwz r0, 0x5fc(r3)
 /* 8037B064 00376D04  64 00 10 00 */	oris r0, r0, 0x1000
 /* 8037B068 00376D08  90 03 05 FC */	stw r0, 0x5fc(r3)
-/* 8037B06C 00376D0C  4E 80 00 20 */	blr 
+/* 8037B06C 00376D0C  4E 80 00 20 */	blr
 
 .global "GXSetZScaleOffset"
 "GXSetZScaleOffset":
@@ -274,7 +274,7 @@ lbl_8037AF8C:
 /* 8037B090 00376D30  80 03 05 FC */	lwz r0, 0x5fc(r3)
 /* 8037B094 00376D34  64 00 10 00 */	oris r0, r0, 0x1000
 /* 8037B098 00376D38  90 03 05 FC */	stw r0, 0x5fc(r3)
-/* 8037B09C 00376D3C  4E 80 00 20 */	blr 
+/* 8037B09C 00376D3C  4E 80 00 20 */	blr
 
 .global "GXSetScissor"
 "GXSetScissor":
@@ -303,7 +303,7 @@ lbl_8037AF8C:
 /* 8037B0F8 00376D98  80 68 01 4C */	lwz r3, 0x14c(r8)
 /* 8037B0FC 00376D9C  90 67 80 00 */	stw r3, -0x8000(r7)
 /* 8037B100 00376DA0  B0 08 00 02 */	sth r0, 2(r8)
-/* 8037B104 00376DA4  4E 80 00 20 */	blr 
+/* 8037B104 00376DA4  4E 80 00 20 */	blr
 
 .global "GXSetScissorBoxOffset"
 "GXSetScissorBoxOffset":
@@ -321,7 +321,7 @@ lbl_8037AF8C:
 /* 8037B134 00376DD4  90 C5 80 00 */	stw r6, -0x8000(r5)
 /* 8037B138 00376DD8  38 00 00 00 */	li r0, 0
 /* 8037B13C 00376DDC  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037B140 00376DE0  4E 80 00 20 */	blr 
+/* 8037B140 00376DE0  4E 80 00 20 */	blr
 
 .global "GXSetClipMode"
 "GXSetClipMode":
@@ -334,7 +334,7 @@ lbl_8037AF8C:
 /* 8037B15C 00376DFC  90 A6 80 00 */	stw r5, -0x8000(r6)
 /* 8037B160 00376E00  90 66 80 00 */	stw r3, -0x8000(r6)
 /* 8037B164 00376E04  B0 04 00 02 */	sth r0, 2(r4)
-/* 8037B168 00376E08  4E 80 00 20 */	blr 
+/* 8037B168 00376E08  4E 80 00 20 */	blr
 
 .global "__GXSetMatrixIndex"
 "__GXSetMatrixIndex":
@@ -373,21 +373,32 @@ lbl_8037B1B0:
 lbl_8037B1E8:
 /* 8037B1E8 00376E88  38 00 00 01 */	li r0, 1
 /* 8037B1EC 00376E8C  B0 06 00 02 */	sth r0, 2(r6)
-/* 8037B1F0 00376E90  4E 80 00 20 */	blr 
+/* 8037B1F0 00376E90  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB888
 lbl_805DB888:
-	.incbin "baserom.dol", 0x489BA8, 0x4
+	# ROM: 0x489BA8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB88C
 lbl_805DB88C:
-	.incbin "baserom.dol", 0x489BAC, 0x4
+	# ROM: 0x489BAC
+	.4byte 0x3F800000
+
 .global lbl_805DB890
 lbl_805DB890:
-	.incbin "baserom.dol", 0x489BB0, 0x4
+	# ROM: 0x489BB0
+	.4byte 0x3F000000
+
 .global lbl_805DB894
 lbl_805DB894:
-	.incbin "baserom.dol", 0x489BB4, 0x4
+	# ROM: 0x489BB4
+	.4byte 0x43AB0000
+
 .global lbl_805DB898
 lbl_805DB898:
-	.incbin "baserom.dol", 0x489BB8, 0x8
+	# ROM: 0x489BB8
+	.4byte 0x4B7FFFFF
+	.4byte 0x00000000
+

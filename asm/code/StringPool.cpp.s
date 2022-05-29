@@ -1648,7 +1648,7 @@ lbl_80333AD4:
 /* 80335428 003310C8  80 01 02 E4 */	lwz r0, 0x2e4(r1)
 /* 8033542C 003310CC  7C 08 03 A6 */	mtlr r0
 /* 80335430 003310D0  38 21 02 E0 */	addi r1, r1, 0x2e0
-/* 80335434 003310D4  4E 80 00 20 */	blr 
+/* 80335434 003310D4  4E 80 00 20 */	blr
 
 .global "Teardown__10StringPoolFv"
 "Teardown__10StringPoolFv":
@@ -1681,7 +1681,7 @@ lbl_8033547C:
 /* 80335498 00331138  38 BF C8 D0 */	addi r5, r31, -14128
 /* 8033549C 0033113C  38 C0 01 37 */	li r6, 0x137
 /* 803354A0 00331140  7D 89 03 A6 */	mtctr r12
-/* 803354A4 00331144  4E 80 04 21 */	bctrl 
+/* 803354A4 00331144  4E 80 04 21 */	bctrl
 /* 803354A8 00331148  7F 5B D3 78 */	mr r27, r26
 lbl_803354AC:
 /* 803354AC 0033114C  2C 1B 00 00 */	cmpwi r27, 0
@@ -1719,7 +1719,7 @@ lbl_803354FC:
 /* 8033551C 003311BC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80335520 003311C0  7C 08 03 A6 */	mtlr r0
 /* 80335524 003311C4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80335528 003311C8  4E 80 00 20 */	blr 
+/* 80335528 003311C8  4E 80 00 20 */	blr
 
 .global "GetFromPool__10StringPoolFPCc"
 "GetFromPool__10StringPoolFPCc":
@@ -1796,7 +1796,7 @@ lbl_803355C8:
 /* 80335634 003312D4  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80335638 003312D8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8033563C 003312DC  7D 89 03 A6 */	mtctr r12
-/* 80335640 003312E0  4E 80 04 21 */	bctrl 
+/* 80335640 003312E0  4E 80 04 21 */	bctrl
 /* 80335644 003312E4  7F E3 FB 78 */	mr r3, r31
 /* 80335648 003312E8  48 00 02 35 */	bl "incGCRoot__8AptValueFv"
 /* 8033564C 003312EC  7F E3 FB 78 */	mr r3, r31
@@ -1806,7 +1806,7 @@ lbl_80335650:
 /* 80335658 003312F8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8033565C 003312FC  7C 08 03 A6 */	mtlr r0
 /* 80335660 00331300  38 21 00 30 */	addi r1, r1, 0x30
-/* 80335664 00331304  4E 80 00 20 */	blr 
+/* 80335664 00331304  4E 80 00 20 */	blr
 
 .global "RemoveFromPool__10StringPoolFP9AptString"
 "RemoveFromPool__10StringPoolFP9AptString":
@@ -1850,7 +1850,7 @@ lbl_80335650:
 /* 803356FC 0033139C  81 9D 00 00 */	lwz r12, 0(r29)
 /* 80335700 003313A0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80335704 003313A4  7D 89 03 A6 */	mtctr r12
-/* 80335708 003313A8  4E 80 04 21 */	bctrl 
+/* 80335708 003313A8  4E 80 04 21 */	bctrl
 /* 8033570C 003313AC  48 00 00 60 */	b lbl_8033576C
 /* 80335710 003313B0  48 00 00 10 */	b lbl_80335720
 lbl_80335714:
@@ -1876,7 +1876,7 @@ lbl_80335720:
 /* 8033575C 003313FC  38 C0 02 52 */	li r6, 0x252
 /* 80335760 00331400  38 A5 C8 D0 */	addi r5, r5, lbl_8045C8D0@l
 /* 80335764 00331404  7D 89 03 A6 */	mtctr r12
-/* 80335768 00331408  4E 80 04 21 */	bctrl 
+/* 80335768 00331408  4E 80 04 21 */	bctrl
 lbl_8033576C:
 /* 8033576C 0033140C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80335770 00331410  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1884,7 +1884,7 @@ lbl_8033576C:
 /* 80335778 00331418  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033577C 0033141C  7C 08 03 A6 */	mtlr r0
 /* 80335780 00331420  38 21 00 20 */	addi r1, r1, 0x20
-/* 80335784 00331424  4E 80 00 20 */	blr 
+/* 80335784 00331424  4E 80 00 20 */	blr
 
 .global "ClearTemporaryPool__10StringPoolFv"
 "ClearTemporaryPool__10StringPoolFv":
@@ -1899,7 +1899,7 @@ lbl_803357A0:
 /* 803357A4 00331444  83 E3 00 10 */	lwz r31, 0x10(r3)
 /* 803357A8 00331448  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 803357AC 0033144C  7D 89 03 A6 */	mtctr r12
-/* 803357B0 00331450  4E 80 04 21 */	bctrl 
+/* 803357B0 00331450  4E 80 04 21 */	bctrl
 /* 803357B4 00331454  80 6D C1 A0 */	lwz r3, "spFirstFree__10StringPool"-_SDA_BASE_(r13)
 /* 803357B8 00331458  2C 03 00 00 */	cmpwi r3, 0
 /* 803357BC 0033145C  41 82 00 18 */	beq lbl_803357D4
@@ -1907,7 +1907,7 @@ lbl_803357A0:
 /* 803357C4 00331464  38 80 00 01 */	li r4, 1
 /* 803357C8 00331468  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 803357CC 0033146C  7D 89 03 A6 */	mtctr r12
-/* 803357D0 00331470  4E 80 04 21 */	bctrl 
+/* 803357D0 00331470  4E 80 04 21 */	bctrl
 lbl_803357D4:
 /* 803357D4 00331474  93 ED C1 A0 */	stw r31, "spFirstFree__10StringPool"-_SDA_BASE_(r13)
 /* 803357D8 00331478  7F E3 FB 78 */	mr r3, r31
@@ -1918,7 +1918,7 @@ lbl_803357DC:
 /* 803357E8 00331488  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803357EC 0033148C  7C 08 03 A6 */	mtlr r0
 /* 803357F0 00331490  38 21 00 10 */	addi r1, r1, 0x10
-/* 803357F4 00331494  4E 80 00 20 */	blr 
+/* 803357F4 00331494  4E 80 00 20 */	blr
 
 .global "__sinit_StringPool_cpp"
 "__sinit_StringPool_cpp":
@@ -1943,7 +1943,7 @@ lbl_803357DC:
 /* 80335840 003314E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80335844 003314E4  7C 08 03 A6 */	mtlr r0
 /* 80335848 003314E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033584C 003314EC  4E 80 00 20 */	blr 
+/* 8033584C 003314EC  4E 80 00 20 */	blr
 
 .global "__arraydtor$7449"
 "__arraydtor$7449":
@@ -1958,125 +1958,346 @@ lbl_803357DC:
 .global "GetNext__9AptStringCFv"
 "GetNext__9AptStringCFv":
 /* 8033586C 0033150C  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 80335870 00331510  4E 80 00 20 */	blr 
+/* 80335870 00331510  4E 80 00 20 */	blr
 
 .global "SetNext__9AptStringFP9AptString"
 "SetNext__9AptStringFP9AptString":
 /* 80335874 00331514  90 83 00 10 */	stw r4, 0x10(r3)
-/* 80335878 00331518  4E 80 00 20 */	blr 
+/* 80335878 00331518  4E 80 00 20 */	blr
 
 .global "incGCRoot__8AptValueFv"
 "incGCRoot__8AptValueFv":
 /* 8033587C 0033151C  80 83 00 04 */	lwz r4, 4(r3)
 /* 80335880 00331520  54 85 C6 BE */	rlwinm r5, r4, 0x18, 0x1a, 0x1f
 /* 80335884 00331524  28 05 00 3F */	cmplwi r5, 0x3f
-/* 80335888 00331528  4C 80 00 20 */	bgelr 
+/* 80335888 00331528  4C 80 00 20 */	bgelr
 /* 8033588C 0033152C  38 05 00 01 */	addi r0, r5, 1
 /* 80335890 00331530  50 04 44 AE */	rlwimi r4, r0, 8, 0x12, 0x17
 /* 80335894 00331534  90 83 00 04 */	stw r4, 4(r3)
-/* 80335898 00331538  4E 80 00 20 */	blr 
+/* 80335898 00331538  4E 80 00 20 */	blr
 
 .global "decGCRoot__8AptValueFv"
 "decGCRoot__8AptValueFv":
 /* 8033589C 0033153C  80 83 00 04 */	lwz r4, 4(r3)
 /* 803358A0 00331540  54 85 C6 BF */	rlwinm. r5, r4, 0x18, 0x1a, 0x1f
-/* 803358A4 00331544  4D 82 00 20 */	beqlr 
+/* 803358A4 00331544  4D 82 00 20 */	beqlr
 /* 803358A8 00331548  38 05 FF FF */	addi r0, r5, -1
 /* 803358AC 0033154C  50 04 44 AE */	rlwimi r4, r0, 8, 0x12, 0x17
 /* 803358B0 00331550  90 83 00 04 */	stw r4, 4(r3)
-/* 803358B4 00331554  4E 80 00 20 */	blr 
+/* 803358B4 00331554  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_8045BFD8"
 "__PRETTY_FUNCTION__$1864_8045BFD8":
-	.incbin "baserom.dol", 0x4580D8, 0x50
+	# ROM: 0x4580D8
+	.asciz "AptCIH::AptCIH(AptVirtualFunctionTable_Indices, AptCharacterInst *, AptCIH *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2185_8045C028"
 "__PRETTY_FUNCTION__$2185_8045C028":
-	.incbin "baserom.dol", 0x458128, 0x2C
+	# ROM: 0x458128
+	.asciz "AptNativeHash::UnsetAt(AptHashItem *const )"
+
 .global "__PRETTY_FUNCTION__$2191_8045C054"
 "__PRETTY_FUNCTION__$2191_8045C054":
-	.incbin "baserom.dol", 0x458154, 0x3C
+	# ROM: 0x458154
+	.asciz "AptNativeHash::OverwriteAt(AptHashItem *const , AptValue *)"
+
 .global "__PRETTY_FUNCTION__$2198_8045C090"
 "__PRETTY_FUNCTION__$2198_8045C090":
-	.incbin "baserom.dol", 0x458190, 0x34
+	# ROM: 0x458190
+	.asciz "AptNativeHash::OverwriteAt(const int, AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2204_8045C0C4"
 "__PRETTY_FUNCTION__$2204_8045C0C4":
-	.incbin "baserom.dol", 0x4581C4, 0x3C
+	# ROM: 0x4581C4
+	.asciz "AptNativeHash::SetAt(AptHashItem *const , AptValue *const )"
+
 .global "__PRETTY_FUNCTION__$2215_8045C100"
 "__PRETTY_FUNCTION__$2215_8045C100":
-	.incbin "baserom.dol", 0x458200, 0x38
+	# ROM: 0x458200
+	.asciz "AptNativeHash::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$2252_8045C138"
 "__PRETTY_FUNCTION__$2252_8045C138":
-	.incbin "baserom.dol", 0x458238, 0x20
+	# ROM: 0x458238
+	.asciz "AptNativeHash::UnsetPrototype()"
+
 .global "__PRETTY_FUNCTION__$2260_8045C158"
 "__PRETTY_FUNCTION__$2260_8045C158":
-	.incbin "baserom.dol", 0x458258, 0x30
+	# ROM: 0x458258
+	.asciz "AptNativeHash::SetPrototype(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2274_8045C188"
 "__PRETTY_FUNCTION__$2274_8045C188":
-	.incbin "baserom.dol", 0x458288, 0x20
+	# ROM: 0x458288
+	.asciz "AptNativeHash::Unset__Proto__()"
+
 .global "__PRETTY_FUNCTION__$2282_8045C1A8"
 "__PRETTY_FUNCTION__$2282_8045C1A8":
-	.incbin "baserom.dol", 0x4582A8, 0x30
+	# ROM: 0x4582A8
+	.asciz "AptNativeHash::Set__Proto__(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2368_8045C1D8"
 "__PRETTY_FUNCTION__$2368_8045C1D8":
-	.incbin "baserom.dol", 0x4582D8, 0x30
+	# ROM: 0x4582D8
+	.asciz "AptPrototype::SetSuperConstructor(AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2520_8045C208"
 "__PRETTY_FUNCTION__$2520_8045C208":
-	.incbin "baserom.dol", 0x458308, 0x24
+	# ROM: 0x458308
+	.asciz "AptFrameStack::DestroyGCPointers()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2587_8045C22C"
 "__PRETTY_FUNCTION__$2587_8045C22C":
-	.incbin "baserom.dol", 0x45832C, 0x34
+	# ROM: 0x45832C
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *, int)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2595_8045C260"
 "__PRETTY_FUNCTION__$2595_8045C260":
-	.incbin "baserom.dol", 0x458360, 0x30
+	# ROM: 0x458360
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3023_8045C290"
 "__PRETTY_FUNCTION__$3023_8045C290":
-	.incbin "baserom.dol", 0x458390, 0x2C
+	# ROM: 0x458390
+	.asciz "AptActionInterpreter::clearThrownValue()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3029_8045C2BC"
 "__PRETTY_FUNCTION__$3029_8045C2BC":
-	.incbin "baserom.dol", 0x4583BC, 0x30
+	# ROM: 0x4583BC
+	.asciz "AptActionInterpreter::throwValue(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3076_8045C2EC"
 "__PRETTY_FUNCTION__$3076_8045C2EC":
-	.incbin "baserom.dol", 0x4583EC, 0x2C
+	# ROM: 0x4583EC
+	.asciz "AptScriptFunctionBase::CreateFrameStack()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3383"
 "__PRETTY_FUNCTION__$3383":
-	.incbin "baserom.dol", 0x458418, 0x24
+	# ROM: 0x458418
+	.asciz "AptValuePtrStack<AptValue>::pop()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3468"
 "__PRETTY_FUNCTION__$3468":
-	.incbin "baserom.dol", 0x45843C, 0x34
+	# ROM: 0x45843C
+	.asciz "AptArray::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$3500"
 "__PRETTY_FUNCTION__$3500":
-	.incbin "baserom.dol", 0x458470, 0x28
+	# ROM: 0x458470
+	.asciz "AptStringObject::setString(AptString *)"
+
 .global "__PRETTY_FUNCTION__$3506"
 "__PRETTY_FUNCTION__$3506":
-	.incbin "baserom.dol", 0x458498, 0x24
+	# ROM: 0x458498
+	.asciz "AptStringObject::~AptStringObject()"
+
 .global "__PRETTY_FUNCTION__$6670"
 "__PRETTY_FUNCTION__$6670":
-	.incbin "baserom.dol", 0x4584BC, 0x2C
+	# ROM: 0x4584BC
+	.asciz "AptBasePtrStack<AptValue>::Push(AptValue *)"
+
 .global "__PRETTY_FUNCTION__$6710"
 "__PRETTY_FUNCTION__$6710":
-	.incbin "baserom.dol", 0x4584E8, 0x40
+	# ROM: 0x4584E8
+	.asciz "AptBasePtrStack<AptValue>::PopAndPush(const int, AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6731"
 "__PRETTY_FUNCTION__$6731":
-	.incbin "baserom.dol", 0x458528, 0x24
+	# ROM: 0x458528
+	.asciz "AptBasePtrStack<AptValue>::Pop()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6746"
 "__PRETTY_FUNCTION__$6746":
-	.incbin "baserom.dol", 0x45854C, 0x2C
+	# ROM: 0x45854C
+	.asciz "AptBasePtrStack<AptValue>::Pop(const int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6767"
 "__PRETTY_FUNCTION__$6767":
-	.incbin "baserom.dol", 0x458578, 0x440
+	# ROM: 0x458578
+	.asciz "AptBasePtrStack<AptValue>::SafePop(const int)"
+	.byte 0x00, 0x00
+	.asciz "__proto__"
+	.byte 0x00, 0x00
+	.asciz "_currentframe"
+	.byte 0x00, 0x00
+	.asciz "_droptarget"
+	.asciz "_focusrect"
+	.byte 0x00
+	.asciz "_framesloaded"
+	.byte 0x00, 0x00
+	.asciz "_highquality"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_quality"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_rotation"
+	.byte 0x00, 0x00
+	.asciz "_soundbuftime"
+	.byte 0x00, 0x00
+	.asciz "_totalframes"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_visible"
+	.byte 0x00, 0x00, 0x00
+	.asciz "charCodeAt"
+	.byte 0x00
+	.asciz "contentType"
+	.asciz "controller"
+	.byte 0x00
+	.asciz "fromCharCode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "function"
+	.byte 0x00, 0x00, 0x00
+	.asciz "fXAxisValue"
+	.asciz "fYAxisValue"
+	.asciz "getBytesLoaded"
+	.byte 0x00
+	.asciz "getBytesTotal"
+	.byte 0x00, 0x00
+	.asciz "getFullYear"
+	.asciz "getHours"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getMilliseconds"
+	.asciz "getMinutes"
+	.byte 0x00
+	.asciz "getMonth"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getSeconds"
+	.byte 0x00
+	.asciz "getTimezoneOffset"
+	.byte 0x00, 0x00
+	.asciz "getTransform"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getUTCDate"
+	.byte 0x00
+	.asciz "getUTCDay"
+	.byte 0x00, 0x00
+	.asciz "getUTCFullYear"
+	.byte 0x00
+	.asciz "getUTCHours"
+	.asciz "getUTCMilliseconds"
+	.byte 0x00
+	.asciz "getUTCMinutes"
+	.byte 0x00, 0x00
+	.asciz "getUTCMonth"
+	.asciz "getUTCSeconds"
+	.byte 0x00, 0x00
+	.asciz "lastIndexOf"
+	.asciz "LoadVars"
+	.byte 0x00, 0x00, 0x00
+	.asciz "movieclip"
+	.byte 0x00, 0x00
+	.asciz "NodeName"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NodeValue"
+	.byte 0x00, 0x00
+	.asciz "onDragOut"
+	.byte 0x00, 0x00
+	.asciz "onDragOver"
+	.byte 0x00
+	.asciz "onEnterFrame"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onKeyDown"
+	.byte 0x00, 0x00
+	.asciz "onMouseDown"
+	.asciz "onMouseMove"
+	.asciz "onMouseUp"
+	.byte 0x00, 0x00
+	.asciz "onMouseWheel"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onRelease"
+	.byte 0x00, 0x00
+	.asciz "onReleaseOutside"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onRollOut"
+	.byte 0x00, 0x00
+	.asciz "onRollOver"
+	.byte 0x00
+	.asciz "onUnload"
+	.byte 0x00, 0x00, 0x00
+	.asciz "prototype"
+	.byte 0x00, 0x00
+	.asciz "sendAndLoad"
+	.asciz "setFullYear"
+	.asciz "setHours"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "setMilliseconds"
+	.asciz "setMinutes"
+	.byte 0x00
+	.asciz "setMonth"
+	.byte 0x00, 0x00, 0x00
+	.asciz "setSeconds"
+	.byte 0x00
+	.asciz "setTransform"
+	.byte 0x00, 0x00, 0x00
+	.asciz "setUTCDate"
+	.byte 0x00
+	.asciz "setUTCFullYear"
+	.byte 0x00
+	.asciz "setUTCHours"
+	.asciz "setUTCMilliseconds"
+	.byte 0x00
+	.asciz "setUTCMinutes"
+	.byte 0x00, 0x00
+	.asciz "setUTCMonth"
+	.asciz "setUTCSeconds"
+	.byte 0x00, 0x00
+	.asciz "substring"
+	.byte 0x00, 0x00
+	.asciz "TextFormat"
+	.byte 0x00
+	.asciz "toLowerCase"
+	.asciz "toString"
+	.byte 0x00, 0x00, 0x00
+	.asciz "toUpperCase"
+	.asciz "undefined"
+	.byte 0x00, 0x00
+	.asciz "undefKey"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$8025"
 "__PRETTY_FUNCTION__$8025":
-	.incbin "baserom.dol", 0x4589B8, 0x18
+	# ROM: 0x4589B8
+	.asciz "StringPool::Teardown()"
+	.byte 0x00
+
 .global lbl_8045C8D0
 lbl_8045C8D0:
-	.incbin "baserom.dol", 0x4589D0, 0x10
+	# ROM: 0x4589D0
+	.asciz "StringPool.cpp"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$8116"
 "__PRETTY_FUNCTION__$8116":
-	.incbin "baserom.dol", 0x4589E0, 0x2C
+	# ROM: 0x4589E0
+	.asciz "StringPool::GetFromPool(const char *const )"
+
 .global "__PRETTY_FUNCTION__$8199"
 "__PRETTY_FUNCTION__$8199":
-	.incbin "baserom.dol", 0x458A0C, 0x34
+	# ROM: 0x458A0C
+	.asciz "StringPool::RemoveFromPool(AptString *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_80541DF0
@@ -2089,307 +2310,571 @@ lbl_80541DF0:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D6F58
 lbl_805D6F58:
-	.incbin "baserom.dol", 0x486AD8, 0x8
+	# ROM: 0x486AD8
+	.asciz "_alpha"
+	.byte 0x00
+
 .global lbl_805D6F60
 lbl_805D6F60:
-	.incbin "baserom.dol", 0x486AE0, 0x8
+	# ROM: 0x486AE0
+	.asciz "_down"
+	.byte 0x00, 0x00
+
 .global lbl_805D6F68
 lbl_805D6F68:
-	.incbin "baserom.dol", 0x486AE8, 0x8
+	# ROM: 0x486AE8
+	.asciz "_global"
+
 .global lbl_805D6F70
 lbl_805D6F70:
-	.incbin "baserom.dol", 0x486AF0, 0x8
+	# ROM: 0x486AF0
+	.asciz "_height"
+
 .global lbl_805D6F78
 lbl_805D6F78:
-	.incbin "baserom.dol", 0x486AF8, 0x8
+	# ROM: 0x486AF8
+	.asciz "_left"
+	.byte 0x00, 0x00
+
 .global lbl_805D6F80
 lbl_805D6F80:
-	.incbin "baserom.dol", 0x486B00, 0x8
+	# ROM: 0x486B00
+	.asciz "_name"
+	.byte 0x00, 0x00
+
 .global lbl_805D6F88
 lbl_805D6F88:
-	.incbin "baserom.dol", 0x486B08, 0x8
+	# ROM: 0x486B08
+	.asciz "_right"
+	.byte 0x00
+
 .global lbl_805D6F90
 lbl_805D6F90:
-	.incbin "baserom.dol", 0x486B10, 0x8
+	# ROM: 0x486B10
+	.asciz "_target"
+
 .global lbl_805D6F98
 lbl_805D6F98:
-	.incbin "baserom.dol", 0x486B18, 0x8
+	# ROM: 0x486B18
+	.asciz "_type"
+	.byte 0x00, 0x00
+
 .global lbl_805D6FA0
 lbl_805D6FA0:
-	.incbin "baserom.dol", 0x486B20, 0x4
+	# ROM: 0x486B20
+	.4byte 0x5F757000
+
 .global lbl_805D6FA4
 lbl_805D6FA4:
-	.incbin "baserom.dol", 0x486B24, 0x8
+	# ROM: 0x486B24
+	.asciz "_url"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6FAC
 lbl_805D6FAC:
-	.incbin "baserom.dol", 0x486B2C, 0x8
+	# ROM: 0x486B2C
+	.asciz "_width"
+	.byte 0x00
+
 .global lbl_805D6FB4
 lbl_805D6FB4:
-	.incbin "baserom.dol", 0x486B34, 0x4
+	# ROM: 0x486B34
+	.4byte 0x5F780000
+
 .global lbl_805D6FB8
 lbl_805D6FB8:
-	.incbin "baserom.dol", 0x486B38, 0x8
+	# ROM: 0x486B38
+	.asciz "_xmouse"
+
 .global lbl_805D6FC0
 lbl_805D6FC0:
-	.incbin "baserom.dol", 0x486B40, 0x8
+	# ROM: 0x486B40
+	.asciz "_xscale"
+
 .global lbl_805D6FC8
 lbl_805D6FC8:
-	.incbin "baserom.dol", 0x486B48, 0x8
+	# ROM: 0x486B48
+	.4byte 0x5F790000
+	.4byte 0x00000000
+
 .global lbl_805D6FD0
 lbl_805D6FD0:
-	.incbin "baserom.dol", 0x486B50, 0x8
+	# ROM: 0x486B50
+	.asciz "_ymouse"
+
 .global lbl_805D6FD8
 lbl_805D6FD8:
-	.incbin "baserom.dol", 0x486B58, 0x8
+	# ROM: 0x486B58
+	.asciz "_yscale"
+
 .global lbl_805D6FE0
 lbl_805D6FE0:
-	.incbin "baserom.dol", 0x486B60, 0x4
+	# ROM: 0x486B60
+	.4byte 0x61610000
+
 .global lbl_805D6FE4
 lbl_805D6FE4:
-	.incbin "baserom.dol", 0x486B64, 0x4
+	# ROM: 0x486B64
+	.4byte 0x61620000
+
 .global lbl_805D6FE8
 lbl_805D6FE8:
-	.incbin "baserom.dol", 0x486B68, 0x4
+	# ROM: 0x486B68
+	.4byte 0x61627300
+
 .global lbl_805D6FEC
 lbl_805D6FEC:
-	.incbin "baserom.dol", 0x486B6C, 0x8
+	# ROM: 0x486B6C
+	.asciz "acos"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6FF4
 lbl_805D6FF4:
-	.incbin "baserom.dol", 0x486B74, 0x8
+	# ROM: 0x486B74
+	.asciz "Array"
+	.byte 0x00, 0x00
+
 .global lbl_805D6FFC
 lbl_805D6FFC:
-	.incbin "baserom.dol", 0x486B7C, 0x8
+	# ROM: 0x486B7C
+	.asciz "asin"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7004
 lbl_805D7004:
-	.incbin "baserom.dol", 0x486B84, 0x8
+	# ROM: 0x486B84
+	.asciz "atan"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D700C
 lbl_805D700C:
-	.incbin "baserom.dol", 0x486B8C, 0x8
+	# ROM: 0x486B8C
+	.asciz "atan2"
+	.byte 0x00, 0x00
+
 .global lbl_805D7014
 lbl_805D7014:
-	.incbin "baserom.dol", 0x486B94, 0x4
+	# ROM: 0x486B94
+	.4byte 0x62610000
+
 .global lbl_805D7018
 lbl_805D7018:
-	.incbin "baserom.dol", 0x486B98, 0x8
+	# ROM: 0x486B98
+	.4byte 0x62620000
+	.4byte 0x00000000
+
 .global lbl_805D7020
 lbl_805D7020:
-	.incbin "baserom.dol", 0x486BA0, 0x8
+	# ROM: 0x486BA0
+	.asciz "boolean"
+
 .global lbl_805D7028
 lbl_805D7028:
-	.incbin "baserom.dol", 0x486BA8, 0x8
+	# ROM: 0x486BA8
+	.asciz "ceil"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7030
 lbl_805D7030:
-	.incbin "baserom.dol", 0x486BB0, 0x8
+	# ROM: 0x486BB0
+	.asciz "center"
+	.byte 0x00
+
 .global lbl_805D7038
 lbl_805D7038:
-	.incbin "baserom.dol", 0x486BB8, 0x8
+	# ROM: 0x486BB8
+	.asciz "charAt"
+	.byte 0x00
+
 .global lbl_805D7040
 lbl_805D7040:
-	.incbin "baserom.dol", 0x486BC0, 0x8
+	# ROM: 0x486BC0
+	.asciz "Color"
+	.byte 0x00, 0x00
+
 .global lbl_805D7048
 lbl_805D7048:
-	.incbin "baserom.dol", 0x486BC8, 0x8
+	# ROM: 0x486BC8
+	.asciz "concat"
+	.byte 0x00
+
 .global lbl_805D7050
 lbl_805D7050:
-	.incbin "baserom.dol", 0x486BD0, 0x4
+	# ROM: 0x486BD0
+	.4byte 0x636F7300
+
 .global lbl_805D7054
 lbl_805D7054:
-	.incbin "baserom.dol", 0x486BD4, 0x8
+	# ROM: 0x486BD4
+	.asciz "Date"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D705C
 lbl_805D705C:
-	.incbin "baserom.dol", 0x486BDC, 0x8
+	# ROM: 0x486BDC
+	.asciz "Error"
+	.byte 0x00, 0x00
+
 .global lbl_805D7064
 lbl_805D7064:
-	.incbin "baserom.dol", 0x486BE4, 0x4
+	# ROM: 0x486BE4
+	.4byte 0x65787000
+
 .global lbl_805D7068
 lbl_805D7068:
-	.incbin "baserom.dol", 0x486BE8, 0x8
+	# ROM: 0x486BE8
+	.asciz "false"
+	.byte 0x00, 0x00
+
 .global lbl_805D7070
 lbl_805D7070:
-	.incbin "baserom.dol", 0x486BF0, 0x8
+	# ROM: 0x486BF0
+	.asciz "floor"
+	.byte 0x00, 0x00
+
 .global lbl_805D7078
 lbl_805D7078:
-	.incbin "baserom.dol", 0x486BF8, 0x4
+	# ROM: 0x486BF8
+	.4byte 0x67610000
+
 .global lbl_805D707C
 lbl_805D707C:
-	.incbin "baserom.dol", 0x486BFC, 0x4
+	# ROM: 0x486BFC
+	.4byte 0x67620000
+
 .global lbl_805D7080
 lbl_805D7080:
-	.incbin "baserom.dol", 0x486C00, 0x8
+	# ROM: 0x486C00
+	.asciz "getDate"
+
 .global lbl_805D7088
 lbl_805D7088:
-	.incbin "baserom.dol", 0x486C08, 0x8
+	# ROM: 0x486C08
+	.asciz "getDay"
+	.byte 0x00
+
 .global lbl_805D7090
 lbl_805D7090:
-	.incbin "baserom.dol", 0x486C10, 0x8
+	# ROM: 0x486C10
+	.asciz "getRGB"
+	.byte 0x00
+
 .global lbl_805D7098
 lbl_805D7098:
-	.incbin "baserom.dol", 0x486C18, 0x8
+	# ROM: 0x486C18
+	.asciz "getTime"
+
 .global lbl_805D70A0
 lbl_805D70A0:
-	.incbin "baserom.dol", 0x486C20, 0x8
+	# ROM: 0x486C20
+	.asciz "getYear"
+
 .global lbl_805D70A8
 lbl_805D70A8:
-	.incbin "baserom.dol", 0x486C28, 0x8
+	# ROM: 0x486C28
+	.asciz "indexOf"
+
 .global lbl_805D70B0
 lbl_805D70B0:
-	.incbin "baserom.dol", 0x486C30, 0x8
+	# ROM: 0x486C30
+	.asciz "join"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D70B8
 lbl_805D70B8:
-	.incbin "baserom.dol", 0x486C38, 0x8
+	# ROM: 0x486C38
+	.asciz "left"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D70C0
 lbl_805D70C0:
-	.incbin "baserom.dol", 0x486C40, 0x8
+	# ROM: 0x486C40
+	.asciz "length"
+	.byte 0x00
+
 .global lbl_805D70C8
 lbl_805D70C8:
-	.incbin "baserom.dol", 0x486C48, 0x8
+	# ROM: 0x486C48
+	.asciz "load"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D70D0
 lbl_805D70D0:
-	.incbin "baserom.dol", 0x486C50, 0x8
+	# ROM: 0x486C50
+	.asciz "loaded"
+	.byte 0x00
+
 .global lbl_805D70D8
 lbl_805D70D8:
-	.incbin "baserom.dol", 0x486C58, 0x4
+	# ROM: 0x486C58
+	.4byte 0x6C6F6700
+
 .global lbl_805D70DC
 lbl_805D70DC:
-	.incbin "baserom.dol", 0x486C5C, 0x4
+	# ROM: 0x486C5C
+	.4byte 0x6D617800
+
 .global lbl_805D70E0
 lbl_805D70E0:
-	.incbin "baserom.dol", 0x486C60, 0x4
+	# ROM: 0x486C60
+	.4byte 0x6D696E00
+
 .global lbl_805D70E4
 lbl_805D70E4:
-	.incbin "baserom.dol", 0x486C64, 0x8
+	# ROM: 0x486C64
+	.asciz "none"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D70EC
 lbl_805D70EC:
-	.incbin "baserom.dol", 0x486C6C, 0x8
+	# ROM: 0x486C6C
+	.asciz "null"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D70F4
 lbl_805D70F4:
-	.incbin "baserom.dol", 0x486C74, 0x8
+	# ROM: 0x486C74
+	.asciz "number"
+	.byte 0x00
+
 .global lbl_805D70FC
 lbl_805D70FC:
-	.incbin "baserom.dol", 0x486C7C, 0x8
+	# ROM: 0x486C7C
+	.asciz "object"
+	.byte 0x00
+
 .global lbl_805D7104
 lbl_805D7104:
-	.incbin "baserom.dol", 0x486C84, 0xC
+	# ROM: 0x486C84
+	.asciz "onData"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_805D7110
 lbl_805D7110:
-	.incbin "baserom.dol", 0x486C90, 0x8
+	# ROM: 0x486C90
+	.asciz "onKeyUp"
+
 .global lbl_805D7118
 lbl_805D7118:
-	.incbin "baserom.dol", 0x486C98, 0x8
+	# ROM: 0x486C98
+	.asciz "onLoad"
+	.byte 0x00
+
 .global lbl_805D7120
 lbl_805D7120:
-	.incbin "baserom.dol", 0x486CA0, 0x8
+	# ROM: 0x486CA0
+	.asciz "onPress"
+
 .global lbl_805D7128
 lbl_805D7128:
-	.incbin "baserom.dol", 0x486CA8, 0x4
+	# ROM: 0x486CA8
+	.4byte 0x706F7000
+
 .global lbl_805D712C
 lbl_805D712C:
-	.incbin "baserom.dol", 0x486CAC, 0x4
+	# ROM: 0x486CAC
+	.4byte 0x706F7700
+
 .global lbl_805D7130
 lbl_805D7130:
-	.incbin "baserom.dol", 0x486CB0, 0x8
+	# ROM: 0x486CB0
+	.asciz "push"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7138
 lbl_805D7138:
-	.incbin "baserom.dol", 0x486CB8, 0x4
+	# ROM: 0x486CB8
+	.4byte 0x72610000
+
 .global lbl_805D713C
 lbl_805D713C:
-	.incbin "baserom.dol", 0x486CBC, 0x8
+	# ROM: 0x486CBC
+	.asciz "random"
+	.byte 0x00
+
 .global lbl_805D7144
 lbl_805D7144:
-	.incbin "baserom.dol", 0x486CC4, 0x4
+	# ROM: 0x486CC4
+	.4byte 0x72620000
+
 .global lbl_805D7148
 lbl_805D7148:
-	.incbin "baserom.dol", 0x486CC8, 0x8
+	# ROM: 0x486CC8
+	.asciz "reverse"
+
 .global lbl_805D7150
 lbl_805D7150:
-	.incbin "baserom.dol", 0x486CD0, 0x8
+	# ROM: 0x486CD0
+	.asciz "right"
+	.byte 0x00, 0x00
+
 .global lbl_805D7158
 lbl_805D7158:
-	.incbin "baserom.dol", 0x486CD8, 0x8
+	# ROM: 0x486CD8
+	.asciz "round"
+	.byte 0x00, 0x00
+
 .global lbl_805D7160
 lbl_805D7160:
-	.incbin "baserom.dol", 0x486CE0, 0x8
+	# ROM: 0x486CE0
+	.asciz "send"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7168
 lbl_805D7168:
-	.incbin "baserom.dol", 0x486CE8, 0x8
+	# ROM: 0x486CE8
+	.asciz "setDate"
+
 .global lbl_805D7170
 lbl_805D7170:
-	.incbin "baserom.dol", 0x486CF0, 0x8
+	# ROM: 0x486CF0
+	.asciz "setRGB"
+	.byte 0x00
+
 .global lbl_805D7178
 lbl_805D7178:
-	.incbin "baserom.dol", 0x486CF8, 0x8
+	# ROM: 0x486CF8
+	.asciz "setTime"
+
 .global lbl_805D7180
 lbl_805D7180:
-	.incbin "baserom.dol", 0x486D00, 0x8
+	# ROM: 0x486D00
+	.asciz "setYear"
+
 .global lbl_805D7188
 lbl_805D7188:
-	.incbin "baserom.dol", 0x486D08, 0x8
+	# ROM: 0x486D08
+	.asciz "shift"
+	.byte 0x00, 0x00
+
 .global lbl_805D7190
 lbl_805D7190:
-	.incbin "baserom.dol", 0x486D10, 0x4
+	# ROM: 0x486D10
+	.4byte 0x73696E00
+
 .global lbl_805D7194
 lbl_805D7194:
-	.incbin "baserom.dol", 0x486D14, 0x8
+	# ROM: 0x486D14
+	.asciz "slice"
+	.byte 0x00, 0x00
+
 .global lbl_805D719C
 lbl_805D719C:
-	.incbin "baserom.dol", 0x486D1C, 0x8
+	# ROM: 0x486D1C
+	.asciz "sort"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D71A4
 lbl_805D71A4:
-	.incbin "baserom.dol", 0x486D24, 0x8
+	# ROM: 0x486D24
+	.asciz "sortOn"
+	.byte 0x00
+
 .global lbl_805D71AC
 lbl_805D71AC:
-	.incbin "baserom.dol", 0x486D2C, 0x8
+	# ROM: 0x486D2C
+	.asciz "Sound"
+	.byte 0x00, 0x00
+
 .global lbl_805D71B4
 lbl_805D71B4:
-	.incbin "baserom.dol", 0x486D34, 0x8
+	# ROM: 0x486D34
+	.asciz "splice"
+	.byte 0x00
+
 .global lbl_805D71BC
 lbl_805D71BC:
-	.incbin "baserom.dol", 0x486D3C, 0x8
+	# ROM: 0x486D3C
+	.asciz "split"
+	.byte 0x00, 0x00
+
 .global lbl_805D71C4
 lbl_805D71C4:
-	.incbin "baserom.dol", 0x486D44, 0x8
+	# ROM: 0x486D44
+	.asciz "sqrt"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D71CC
 lbl_805D71CC:
-	.incbin "baserom.dol", 0x486D4C, 0x8
+	# ROM: 0x486D4C
+	.asciz "string"
+	.byte 0x00
+
 .global lbl_805D71D4
 lbl_805D71D4:
-	.incbin "baserom.dol", 0x486D54, 0x8
+	# ROM: 0x486D54
+	.asciz "substr"
+	.byte 0x00
+
 .global lbl_805D71DC
 lbl_805D71DC:
-	.incbin "baserom.dol", 0x486D5C, 0x8
+	# ROM: 0x486D5C
+	.asciz "super"
+	.byte 0x00, 0x00
+
 .global lbl_805D71E4
 lbl_805D71E4:
-	.incbin "baserom.dol", 0x486D64, 0x4
+	# ROM: 0x486D64
+	.4byte 0x74616E00
+
 .global lbl_805D71E8
 lbl_805D71E8:
-	.incbin "baserom.dol", 0x486D68, 0x8
+	# ROM: 0x486D68
+	.asciz "target"
+	.byte 0x00
+
 .global lbl_805D71F0
 lbl_805D71F0:
-	.incbin "baserom.dol", 0x486D70, 0x8
+	# ROM: 0x486D70
+	.asciz "this"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D71F8
 lbl_805D71F8:
-	.incbin "baserom.dol", 0x486D78, 0x8
+	# ROM: 0x486D78
+	.asciz "true"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7200
 lbl_805D7200:
-	.incbin "baserom.dol", 0x486D80, 0x8
+	# ROM: 0x486D80
+	.asciz "unshift"
+
 .global lbl_805D7208
 lbl_805D7208:
-	.incbin "baserom.dol", 0x486D88, 0x4
+	# ROM: 0x486D88
+	.4byte 0x55544300
+
 .global lbl_805D720C
 lbl_805D720C:
-	.incbin "baserom.dol", 0x486D8C, 0x8
+	# ROM: 0x486D8C
+	.asciz "xMax"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7214
 lbl_805D7214:
-	.incbin "baserom.dol", 0x486D94, 0x8
+	# ROM: 0x486D94
+	.asciz "xMin"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D721C
 lbl_805D721C:
-	.incbin "baserom.dol", 0x486D9C, 0x4
+	# ROM: 0x486D9C
+	.4byte 0x584D4C00
+
 .global lbl_805D7220
 lbl_805D7220:
-	.incbin "baserom.dol", 0x486DA0, 0x8
+	# ROM: 0x486DA0
+	.asciz "yMax"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7228
 lbl_805D7228:
-	.incbin "baserom.dol", 0x486DA8, 0x8
+	# ROM: 0x486DA8
+	.asciz "yMin"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "spPool__10StringPool"

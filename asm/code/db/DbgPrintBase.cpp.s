@@ -18,7 +18,7 @@
 /* 80386B50 003827F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80386B54 003827F4  7C 08 03 A6 */	mtlr r0
 /* 80386B58 003827F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80386B5C 003827FC  4E 80 00 20 */	blr 
+/* 80386B5C 003827FC  4E 80 00 20 */	blr
 
 .global "__as__8_GXColorFRC8_GXColor"
 "__as__8_GXColorFRC8_GXColor":
@@ -30,7 +30,7 @@
 /* 80386B74 00382814  98 C3 00 01 */	stb r6, 1(r3)
 /* 80386B78 00382818  98 A3 00 02 */	stb r5, 2(r3)
 /* 80386B7C 0038281C  98 03 00 03 */	stb r0, 3(r3)
-/* 80386B80 00382820  4E 80 00 20 */	blr 
+/* 80386B80 00382820  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut5ColorFv"
 "__dt__Q36nw4hbm2ut5ColorFv":
@@ -50,7 +50,7 @@ lbl_80386BAC:
 /* 80386BB4 00382854  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80386BB8 00382858  7C 08 03 A6 */	mtlr r0
 /* 80386BBC 0038285C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80386BC0 00382860  4E 80 00 20 */	blr 
+/* 80386BC0 00382860  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut5ColorFRCQ36nw4hbm2ut5Color"
 "__ct__Q36nw4hbm2ut5ColorFRCQ36nw4hbm2ut5Color":
@@ -62,4 +62,4 @@ lbl_80386BAC:
 /* 80386BD8 00382878  98 C3 00 01 */	stb r6, 1(r3)
 /* 80386BDC 0038287C  98 A3 00 02 */	stb r5, 2(r3)
 /* 80386BE0 00382880  98 03 00 03 */	stb r0, 3(r3)
-/* 80386BE4 00382884  4E 80 00 20 */	blr 
+/* 80386BE4 00382884  4E 80 00 20 */	blr

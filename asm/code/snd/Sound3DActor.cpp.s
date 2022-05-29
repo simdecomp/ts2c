@@ -19,16 +19,23 @@ lbl_803AACD4:
 /* 803AACDC 003A697C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803AACE0 003A6980  7C 08 03 A6 */	mtlr r0
 /* 803AACE4 003A6984  38 21 00 10 */	addi r1, r1, 0x10
-/* 803AACE8 003A6988  4E 80 00 20 */	blr 
+/* 803AACE8 003A6988  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3snd14SoundStartableFv"
 "__ct__Q36nw4hbm3snd14SoundStartableFv":
 /* 803AACEC 003A698C  3C 80 80 47 */	lis r4, "__vt__Q36nw4hbm3snd14SoundStartable"@ha
 /* 803AACF0 003A6990  38 84 F9 E8 */	addi r4, r4, "__vt__Q36nw4hbm3snd14SoundStartable"@l
 /* 803AACF4 003A6994  90 83 00 00 */	stw r4, 0(r3)
-/* 803AACF8 003A6998  4E 80 00 20 */	blr 
+/* 803AACF8 003A6998  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3snd14SoundStartable"
 "__vt__Q36nw4hbm3snd14SoundStartable":
-	.incbin "baserom.dol", 0x46BAE8, 0x18
+	# ROM: 0x46BAE8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3snd14SoundStartableFv" ;# ptr (0x803AACAC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+

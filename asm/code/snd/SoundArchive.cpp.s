@@ -11,7 +11,7 @@
 /* 803AAD10 003A69B0  90 83 00 04 */	stw r4, 4(r3)
 /* 803AAD14 003A69B4  98 03 00 08 */	stb r0, 8(r3)
 /* 803AAD18 003A69B8  98 83 00 09 */	stb r4, 9(r3)
-/* 803AAD1C 003A69BC  4E 80 00 20 */	blr 
+/* 803AAD1C 003A69BC  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3snd12SoundArchiveFv"
 "__dt__Q36nw4hbm3snd12SoundArchiveFv":
@@ -31,7 +31,7 @@ lbl_803AAD48:
 /* 803AAD50 003A69F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803AAD54 003A69F4  7C 08 03 A6 */	mtlr r0
 /* 803AAD58 003A69F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803AAD5C 003A69FC  4E 80 00 20 */	blr 
+/* 803AAD5C 003A69FC  4E 80 00 20 */	blr
 
 .global "IsAvailable__Q36nw4hbm3snd12SoundArchiveCFv"
 "IsAvailable__Q36nw4hbm3snd12SoundArchiveCFv":
@@ -39,7 +39,7 @@ lbl_803AAD48:
 /* 803AAD64 003A6A04  7C 03 00 D0 */	neg r0, r3
 /* 803AAD68 003A6A08  7C 00 1B 78 */	or r0, r0, r3
 /* 803AAD6C 003A6A0C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803AAD70 003A6A10  4E 80 00 20 */	blr 
+/* 803AAD70 003A6A10  4E 80 00 20 */	blr
 
 .global "Setup__Q36nw4hbm3snd12SoundArchiveFPQ46nw4hbm3snd6detail22SoundArchiveFileReader"
 "Setup__Q36nw4hbm3snd12SoundArchiveFPQ46nw4hbm3snd6detail22SoundArchiveFileReader":
@@ -66,7 +66,7 @@ lbl_803AADB4:
 /* 803AADC0 003A6A60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803AADC4 003A6A64  7C 08 03 A6 */	mtlr r0
 /* 803AADC8 003A6A68  38 21 00 10 */	addi r1, r1, 0x10
-/* 803AADCC 003A6A6C  4E 80 00 20 */	blr 
+/* 803AADCC 003A6A6C  4E 80 00 20 */	blr
 
 .global "Shutdown__Q36nw4hbm3snd12SoundArchiveFv"
 "Shutdown__Q36nw4hbm3snd12SoundArchiveFv":
@@ -75,7 +75,7 @@ lbl_803AADB4:
 /* 803AADD8 003A6A78  90 83 00 04 */	stw r4, 4(r3)
 /* 803AADDC 003A6A7C  98 03 00 08 */	stb r0, 8(r3)
 /* 803AADE0 003A6A80  98 83 00 09 */	stb r4, 9(r3)
-/* 803AADE4 003A6A84  4E 80 00 20 */	blr 
+/* 803AADE4 003A6A84  4E 80 00 20 */	blr
 
 .global "GetPlayerCount__Q36nw4hbm3snd12SoundArchiveCFv"
 "GetPlayerCount__Q36nw4hbm3snd12SoundArchiveCFv":
@@ -239,7 +239,7 @@ lbl_803AAF70:
 /* 803AAF84 003A6C24  7F E5 FB 78 */	mr r5, r31
 /* 803AAF88 003A6C28  7D 07 43 78 */	mr r7, r8
 /* 803AAF8C 003A6C2C  7D 89 03 A6 */	mtctr r12
-/* 803AAF90 003A6C30  4E 80 04 21 */	bctrl 
+/* 803AAF90 003A6C30  4E 80 04 21 */	bctrl
 lbl_803AAF94:
 /* 803AAF94 003A6C34  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803AAF98 003A6C38  83 E1 00 5C */	lwz r31, 0x5c(r1)
@@ -248,7 +248,7 @@ lbl_803AAF94:
 /* 803AAFA4 003A6C44  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 803AAFA8 003A6C48  7C 08 03 A6 */	mtlr r0
 /* 803AAFAC 003A6C4C  38 21 00 60 */	addi r1, r1, 0x60
-/* 803AAFB0 003A6C50  4E 80 00 20 */	blr 
+/* 803AAFB0 003A6C50  4E 80 00 20 */	blr
 
 .global "detail_OpenGroupStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi"
 "detail_OpenGroupStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi":
@@ -287,7 +287,7 @@ lbl_803AB018:
 /* 803AB02C 003A6CCC  80 C1 00 10 */	lwz r6, 0x10(r1)
 /* 803AB030 003A6CD0  80 E1 00 14 */	lwz r7, 0x14(r1)
 /* 803AB034 003A6CD4  7D 89 03 A6 */	mtctr r12
-/* 803AB038 003A6CD8  4E 80 04 21 */	bctrl 
+/* 803AB038 003A6CD8  4E 80 04 21 */	bctrl
 lbl_803AB03C:
 /* 803AB03C 003A6CDC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803AB040 003A6CE0  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -295,7 +295,7 @@ lbl_803AB03C:
 /* 803AB048 003A6CE8  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803AB04C 003A6CEC  7C 08 03 A6 */	mtlr r0
 /* 803AB050 003A6CF0  38 21 00 30 */	addi r1, r1, 0x30
-/* 803AB054 003A6CF4  4E 80 00 20 */	blr 
+/* 803AB054 003A6CF4  4E 80 00 20 */	blr
 
 .global "detail_OpenGroupWaveDataStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi"
 "detail_OpenGroupWaveDataStream__Q36nw4hbm3snd12SoundArchiveCFUlPvi":
@@ -334,7 +334,7 @@ lbl_803AB0BC:
 /* 803AB0D0 003A6D70  80 C1 00 18 */	lwz r6, 0x18(r1)
 /* 803AB0D4 003A6D74  80 E1 00 1C */	lwz r7, 0x1c(r1)
 /* 803AB0D8 003A6D78  7D 89 03 A6 */	mtctr r12
-/* 803AB0DC 003A6D7C  4E 80 04 21 */	bctrl 
+/* 803AB0DC 003A6D7C  4E 80 04 21 */	bctrl
 lbl_803AB0E0:
 /* 803AB0E0 003A6D80  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803AB0E4 003A6D84  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -342,7 +342,7 @@ lbl_803AB0E0:
 /* 803AB0EC 003A6D8C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803AB0F0 003A6D90  7C 08 03 A6 */	mtlr r0
 /* 803AB0F4 003A6D94  38 21 00 30 */	addi r1, r1, 0x30
-/* 803AB0F8 003A6D98  4E 80 00 20 */	blr 
+/* 803AB0F8 003A6D98  4E 80 00 20 */	blr
 
 .global "OpenExtStreamImpl__Q36nw4hbm3snd12SoundArchiveCFPviPCcUlUl"
 "OpenExtStreamImpl__Q36nw4hbm3snd12SoundArchiveCFPviPCcUlUl":
@@ -402,14 +402,14 @@ lbl_803AB1AC:
 /* 803AB1C4 003A6E64  7F A7 EB 78 */	mr r7, r29
 /* 803AB1C8 003A6E68  7F C8 F3 78 */	mr r8, r30
 /* 803AB1CC 003A6E6C  7D 89 03 A6 */	mtctr r12
-/* 803AB1D0 003A6E70  4E 80 04 21 */	bctrl 
+/* 803AB1D0 003A6E70  4E 80 04 21 */	bctrl
 lbl_803AB1D4:
 /* 803AB1D4 003A6E74  39 61 01 30 */	addi r11, r1, 0x130
 /* 803AB1D8 003A6E78  48 06 41 E1 */	bl "_restgpr_25"
 /* 803AB1DC 003A6E7C  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 803AB1E0 003A6E80  7C 08 03 A6 */	mtlr r0
 /* 803AB1E4 003A6E84  38 21 01 30 */	addi r1, r1, 0x130
-/* 803AB1E8 003A6E88  4E 80 00 20 */	blr 
+/* 803AB1E8 003A6E88  4E 80 00 20 */	blr
 
 .global "SetExternalFileRoot__Q36nw4hbm3snd12SoundArchiveFPCc"
 "SetExternalFileRoot__Q36nw4hbm3snd12SoundArchiveFPCc":
@@ -459,21 +459,42 @@ lbl_803AB264:
 /* 803AB290 003A6F30  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803AB294 003A6F34  7C 08 03 A6 */	mtlr r0
 /* 803AB298 003A6F38  38 21 00 20 */	addi r1, r1, 0x20
-/* 803AB29C 003A6F3C  4E 80 00 20 */	blr 
+/* 803AB29C 003A6F3C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046FA00
 lbl_8046FA00:
-	.incbin "baserom.dol", 0x46BB00, 0x18
+	# ROM: 0x46BB00
+	.asciz "snd_SoundArchive.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046FA18
 lbl_8046FA18:
-	.incbin "baserom.dol", 0x46BB18, 0x30
+	# ROM: 0x46BB18
+	.asciz "NW4HBM:Pointer must not be NULL (fileReader)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046FA48
 lbl_8046FA48:
-	.incbin "baserom.dol", 0x46BB48, 0x20
+	# ROM: 0x46BB48
+	.asciz "Too long file path \"%s/%s\""
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_8046FA68
 lbl_8046FA68:
-	.incbin "baserom.dol", 0x46BB68, 0x30
+	# ROM: 0x46BB68
+	.asciz "NW4HBM:Failed assertion nullPos < FILE_PATH_MAX"
+
 .global "__vt__Q36nw4hbm3snd12SoundArchive"
 "__vt__Q36nw4hbm3snd12SoundArchive":
-	.incbin "baserom.dol", 0x46BB98, 0x20
+	# ROM: 0x46BB98
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3snd12SoundArchiveFv" ;# ptr (0x803AAD20)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+

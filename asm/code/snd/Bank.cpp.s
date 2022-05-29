@@ -16,7 +16,7 @@
 /* 8039E92C 0039A5CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039E930 0039A5D0  7C 08 03 A6 */	mtlr r0
 /* 8039E934 0039A5D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039E938 0039A5D8  4E 80 00 20 */	blr 
+/* 8039E938 0039A5D8  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail4BankFv"
 "__dt__Q46nw4hbm3snd6detail4BankFv":
@@ -36,7 +36,7 @@ lbl_8039E964:
 /* 8039E96C 0039A60C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039E970 0039A610  7C 08 03 A6 */	mtlr r0
 /* 8039E974 0039A614  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039E978 0039A618  4E 80 00 20 */	blr 
+/* 8039E978 0039A618  4E 80 00 20 */	blr
 
 .global "NoteOn__Q46nw4hbm3snd6detail4BankCFRCQ46nw4hbm3snd6detail10NoteOnInfo"
 "NoteOn__Q46nw4hbm3snd6detail4BankCFRCQ46nw4hbm3snd6detail10NoteOnInfo":
@@ -154,17 +154,17 @@ lbl_8039EB20:
 /* 8039EB28 0039A7C8  83 C1 00 C8 */	lwz r30, 0xc8(r1)
 /* 8039EB2C 0039A7CC  7C 08 03 A6 */	mtlr r0
 /* 8039EB30 0039A7D0  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8039EB34 0039A7D4  4E 80 00 20 */	blr 
+/* 8039EB34 0039A7D4  4E 80 00 20 */	blr
 
 .global "SetInitSurroundPan__Q46nw4hbm3snd6detail7ChannelFf"
 "SetInitSurroundPan__Q46nw4hbm3snd6detail7ChannelFf":
 /* 8039EB38 0039A7D8  D0 23 00 BC */	stfs f1, 0xbc(r3)
-/* 8039EB3C 0039A7DC  4E 80 00 20 */	blr 
+/* 8039EB3C 0039A7DC  4E 80 00 20 */	blr
 
 .global "SetInitPan__Q46nw4hbm3snd6detail7ChannelFf"
 "SetInitPan__Q46nw4hbm3snd6detail7ChannelFf":
 /* 8039EB40 0039A7E0  D0 23 00 B8 */	stfs f1, 0xb8(r3)
-/* 8039EB44 0039A7E4  4E 80 00 20 */	blr 
+/* 8039EB44 0039A7E4  4E 80 00 20 */	blr
 
 .global "SetRelease__Q46nw4hbm3snd6detail7ChannelFi"
 "SetRelease__Q46nw4hbm3snd6detail7ChannelFi":
@@ -189,43 +189,55 @@ lbl_8039EB20:
 .global "SetTune__Q46nw4hbm3snd6detail7ChannelFf"
 "SetTune__Q46nw4hbm3snd6detail7ChannelFf":
 /* 8039EB68 0039A808  D0 23 00 C0 */	stfs f1, 0xc0(r3)
-/* 8039EB6C 0039A80C  4E 80 00 20 */	blr 
+/* 8039EB6C 0039A80C  4E 80 00 20 */	blr
 
 .global "SetInitVolume__Q46nw4hbm3snd6detail7ChannelFf"
 "SetInitVolume__Q46nw4hbm3snd6detail7ChannelFf":
 /* 8039EB70 0039A810  D0 23 00 B4 */	stfs f1, 0xb4(r3)
-/* 8039EB74 0039A814  4E 80 00 20 */	blr 
+/* 8039EB74 0039A814  4E 80 00 20 */	blr
 
 .global "SetOriginalKey__Q46nw4hbm3snd6detail7ChannelFi"
 "SetOriginalKey__Q46nw4hbm3snd6detail7ChannelFi":
 /* 8039EB78 0039A818  90 83 00 D0 */	stw r4, 0xd0(r3)
-/* 8039EB7C 0039A81C  4E 80 00 20 */	blr 
+/* 8039EB7C 0039A81C  4E 80 00 20 */	blr
 
 .global "SetKey__Q46nw4hbm3snd6detail7ChannelFi"
 "SetKey__Q46nw4hbm3snd6detail7ChannelFi":
 /* 8039EB80 0039A820  90 83 00 CC */	stw r4, 0xcc(r3)
-/* 8039EB84 0039A824  4E 80 00 20 */	blr 
+/* 8039EB84 0039A824  4E 80 00 20 */	blr
 
 .global "Min<i>__Q36nw4hbm2ut22@unnamed@snd_Bank_cpp@Fii_i"
 "Min<i>__Q36nw4hbm2ut22@unnamed@snd_Bank_cpp@Fii_i":
 /* 8039EB88 0039A828  7C 03 20 00 */	cmpw r3, r4
-/* 8039EB8C 0039A82C  4C 81 00 20 */	blelr 
+/* 8039EB8C 0039A82C  4C 81 00 20 */	blelr
 /* 8039EB90 0039A830  7C 83 23 78 */	mr r3, r4
-/* 8039EB94 0039A834  4E 80 00 20 */	blr 
+/* 8039EB94 0039A834  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBAB0
 lbl_805DBAB0:
-	.incbin "baserom.dol", 0x489DD0, 0x4
+	# ROM: 0x489DD0
+	.4byte 0x42FE0000
+
 .global lbl_805DBAB4
 lbl_805DBAB4:
-	.incbin "baserom.dol", 0x489DD4, 0x4
+	# ROM: 0x489DD4
+	.4byte 0x427C0000
+
 .global lbl_805DBAB8
 lbl_805DBAB8:
-	.incbin "baserom.dol", 0x489DD8, 0x8
+	# ROM: 0x489DD8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBAC0
 lbl_805DBAC0:
-	.incbin "baserom.dol", 0x489DE0, 0x8
+	# ROM: 0x489DE0
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBAC8
 lbl_805DBAC8:
-	.incbin "baserom.dol", 0x489DE8, 0x8
+	# ROM: 0x489DE8
+	.4byte 0x43300000
+	.4byte 0x00000000
+

@@ -70,7 +70,7 @@
 /* 8033F6D8 0033B378  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8033F6DC 0033B37C  7C 08 03 A6 */	mtlr r0
 /* 8033F6E0 0033B380  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033F6E4 0033B384  4E 80 00 20 */	blr 
+/* 8033F6E4 0033B384  4E 80 00 20 */	blr
 
 .global "bta_dm_disable"
 "bta_dm_disable":
@@ -119,7 +119,7 @@ lbl_8033F788:
 /* 8033F788 0033B428  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033F78C 0033B42C  7C 08 03 A6 */	mtlr r0
 /* 8033F790 0033B430  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F794 0033B434  4E 80 00 20 */	blr 
+/* 8033F794 0033B434  4E 80 00 20 */	blr
 
 .global "bta_dm_disable_timer_cback"
 "bta_dm_disable_timer_cback":
@@ -167,14 +167,14 @@ lbl_8033F818:
 /* 8033F82C 0033B4CC  38 80 00 00 */	li r4, 0
 /* 8033F830 0033B4D0  98 05 00 72 */	stb r0, 0x72(r5)
 /* 8033F834 0033B4D4  7D 89 03 A6 */	mtctr r12
-/* 8033F838 0033B4D8  4E 80 04 21 */	bctrl 
+/* 8033F838 0033B4D8  4E 80 04 21 */	bctrl
 lbl_8033F83C:
 /* 8033F83C 0033B4DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033F840 0033B4E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033F844 0033B4E4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033F848 0033B4E8  7C 08 03 A6 */	mtlr r0
 /* 8033F84C 0033B4EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F850 0033B4F0  4E 80 00 20 */	blr 
+/* 8033F850 0033B4F0  4E 80 00 20 */	blr
 
 .global "bta_dm_set_dev_name"
 "bta_dm_set_dev_name":
@@ -200,7 +200,7 @@ lbl_8033F83C:
 /* 8033F894 0033B534  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033F898 0033B538  7C 08 03 A6 */	mtlr r0
 /* 8033F89C 0033B53C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F8A0 0033B540  4E 80 00 20 */	blr 
+/* 8033F8A0 0033B540  4E 80 00 20 */	blr
 
 .global "bta_dm_bond"
 "bta_dm_bond":
@@ -233,7 +233,7 @@ lbl_8033F8EC:
 /* 8033F904 0033B5A4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8033F908 0033B5A8  7C 08 03 A6 */	mtlr r0
 /* 8033F90C 0033B5AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033F910 0033B5B0  4E 80 00 20 */	blr 
+/* 8033F910 0033B5B0  4E 80 00 20 */	blr
 
 .global "bta_dm_pin_reply"
 "bta_dm_pin_reply":
@@ -279,7 +279,7 @@ lbl_8033F99C:
 /* 8033F9A0 0033B640  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8033F9A4 0033B644  7C 08 03 A6 */	mtlr r0
 /* 8033F9A8 0033B648  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033F9AC 0033B64C  4E 80 00 20 */	blr 
+/* 8033F9AC 0033B64C  4E 80 00 20 */	blr
 
 .global "bta_dm_auth_reply"
 "bta_dm_auth_reply":
@@ -340,7 +340,7 @@ lbl_8033FA70:
 /* 8033FA74 0033B714  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8033FA78 0033B718  7C 08 03 A6 */	mtlr r0
 /* 8033FA7C 0033B71C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033FA80 0033B720  4E 80 00 20 */	blr 
+/* 8033FA80 0033B720  4E 80 00 20 */	blr
 
 .global "bta_dm_search_start"
 "bta_dm_search_start":
@@ -367,7 +367,7 @@ lbl_8033FA70:
 /* 8033FAD4 0033B774  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033FAD8 0033B778  7C 08 03 A6 */	mtlr r0
 /* 8033FADC 0033B77C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033FAE0 0033B780  4E 80 00 20 */	blr 
+/* 8033FAE0 0033B780  4E 80 00 20 */	blr
 
 .global "bta_dm_search_cancel"
 "bta_dm_search_cancel":
@@ -385,7 +385,7 @@ lbl_8033FA70:
 /* 8033FB10 0033B7B0  81 84 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r4)
 /* 8033FB14 0033B7B4  38 80 00 00 */	li r4, 0
 /* 8033FB18 0033B7B8  7D 89 03 A6 */	mtctr r12
-/* 8033FB1C 0033B7BC  4E 80 04 21 */	bctrl 
+/* 8033FB1C 0033B7BC  4E 80 04 21 */	bctrl
 /* 8033FB20 0033B7C0  38 60 01 10 */	li r3, 0x110
 /* 8033FB24 0033B7C4  4B FF B8 71 */	bl "GKI_getbuf"
 /* 8033FB28 0033B7C8  2C 03 00 00 */	cmpwi r3, 0
@@ -405,7 +405,7 @@ lbl_8033FB58:
 /* 8033FB58 0033B7F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033FB5C 0033B7FC  7C 08 03 A6 */	mtlr r0
 /* 8033FB60 0033B800  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033FB64 0033B804  4E 80 00 20 */	blr 
+/* 8033FB64 0033B804  4E 80 00 20 */	blr
 
 .global "bta_dm_discover"
 "bta_dm_discover":
@@ -480,7 +480,7 @@ lbl_8033FC64:
 /* 8033FC6C 0033B90C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033FC70 0033B910  7C 08 03 A6 */	mtlr r0
 /* 8033FC74 0033B914  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033FC78 0033B918  4E 80 00 20 */	blr 
+/* 8033FC78 0033B918  4E 80 00 20 */	blr
 
 .global "bta_dm_inq_cmpl"
 "bta_dm_inq_cmpl":
@@ -549,7 +549,7 @@ lbl_8033FD40:
 /* 8033FD64 0033BA04  38 60 00 02 */	li r3, 2
 /* 8033FD68 0033BA08  93 C1 01 08 */	stw r30, 0x108(r1)
 /* 8033FD6C 0033BA0C  7D 89 03 A6 */	mtctr r12
-/* 8033FD70 0033BA10  4E 80 04 21 */	bctrl 
+/* 8033FD70 0033BA10  4E 80 04 21 */	bctrl
 /* 8033FD74 0033BA14  48 00 00 A8 */	b lbl_8033FE1C
 lbl_8033FD78:
 /* 8033FD78 0033BA18  3C 60 80 58 */	lis r3, "btm_cb"@ha
@@ -625,13 +625,13 @@ lbl_8033FE68:
 /* 8033FE78 0033BB18  98 01 01 10 */	stb r0, 0x110(r1)
 /* 8033FE7C 0033BB1C  38 60 00 01 */	li r3, 1
 /* 8033FE80 0033BB20  7D 89 03 A6 */	mtctr r12
-/* 8033FE84 0033BB24  4E 80 04 21 */	bctrl 
+/* 8033FE84 0033BB24  4E 80 04 21 */	bctrl
 /* 8033FE88 0033BB28  39 61 02 30 */	addi r11, r1, 0x230
 /* 8033FE8C 0033BB2C  48 0C F5 35 */	bl "_restgpr_27"
 /* 8033FE90 0033BB30  80 01 02 34 */	lwz r0, 0x234(r1)
 /* 8033FE94 0033BB34  7C 08 03 A6 */	mtlr r0
 /* 8033FE98 0033BB38  38 21 02 30 */	addi r1, r1, 0x230
-/* 8033FE9C 0033BB3C  4E 80 00 20 */	blr 
+/* 8033FE9C 0033BB3C  4E 80 00 20 */	blr
 
 .global "bta_dm_rmt_name"
 "bta_dm_rmt_name":
@@ -660,7 +660,7 @@ lbl_8033FECC:
 /* 8033FEF4 0033BB94  38 60 00 02 */	li r3, 2
 /* 8033FEF8 0033BB98  93 C1 01 08 */	stw r30, 0x108(r1)
 /* 8033FEFC 0033BB9C  7D 89 03 A6 */	mtctr r12
-/* 8033FF00 0033BBA0  4E 80 04 21 */	bctrl 
+/* 8033FF00 0033BBA0  4E 80 04 21 */	bctrl
 /* 8033FF04 0033BBA4  48 00 00 A0 */	b lbl_8033FFA4
 lbl_8033FF08:
 /* 8033FF08 0033BBA8  3C 60 80 58 */	lis r3, "btm_cb"@ha
@@ -726,13 +726,13 @@ lbl_8033FFDC:
 /* 8033FFE4 0033BC84  81 83 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r3)
 /* 8033FFE8 0033BC88  38 60 00 02 */	li r3, 2
 /* 8033FFEC 0033BC8C  7D 89 03 A6 */	mtctr r12
-/* 8033FFF0 0033BC90  4E 80 04 21 */	bctrl 
+/* 8033FFF0 0033BC90  4E 80 04 21 */	bctrl
 /* 8033FFF4 0033BC94  39 61 01 30 */	addi r11, r1, 0x130
 /* 8033FFF8 0033BC98  48 0C F3 C9 */	bl "_restgpr_27"
 /* 8033FFFC 0033BC9C  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 80340000 0033BCA0  7C 08 03 A6 */	mtlr r0
 /* 80340004 0033BCA4  38 21 01 30 */	addi r1, r1, 0x130
-/* 80340008 0033BCA8  4E 80 00 20 */	blr 
+/* 80340008 0033BCA8  4E 80 00 20 */	blr
 
 .global "bta_dm_disc_rmt_name"
 "bta_dm_disc_rmt_name":
@@ -756,12 +756,12 @@ lbl_8034003C:
 /* 8034004C 0033BCEC  38 60 00 02 */	li r3, 2
 /* 80340050 0033BCF0  81 85 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r5)
 /* 80340054 0033BCF4  7D 89 03 A6 */	mtctr r12
-/* 80340058 0033BCF8  4E 80 04 21 */	bctrl 
+/* 80340058 0033BCF8  4E 80 04 21 */	bctrl
 /* 8034005C 0033BCFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80340060 0033BD00  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80340064 0033BD04  7C 08 03 A6 */	mtlr r0
 /* 80340068 0033BD08  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034006C 0033BD0C  4E 80 00 20 */	blr 
+/* 8034006C 0033BD0C  4E 80 00 20 */	blr
 
 .global "bta_dm_sdp_result"
 "bta_dm_sdp_result":
@@ -930,7 +930,7 @@ lbl_803402BC:
 /* 803402C8 0033BF68  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803402CC 0033BF6C  7C 08 03 A6 */	mtlr r0
 /* 803402D0 0033BF70  38 21 00 20 */	addi r1, r1, 0x20
-/* 803402D4 0033BF74  4E 80 00 20 */	blr 
+/* 803402D4 0033BF74  4E 80 00 20 */	blr
 
 .global "bta_dm_search_cmpl"
 "bta_dm_search_cmpl":
@@ -939,7 +939,7 @@ lbl_803402BC:
 /* 803402E0 0033BF80  81 84 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r4)
 /* 803402E4 0033BF84  38 80 00 00 */	li r4, 0
 /* 803402E8 0033BF88  7D 89 03 A6 */	mtctr r12
-/* 803402EC 0033BF8C  4E 80 04 20 */	bctr 
+/* 803402EC 0033BF8C  4E 80 04 20 */	bctr
 
 .global "bta_dm_disc_result"
 "bta_dm_disc_result":
@@ -951,7 +951,7 @@ lbl_803402BC:
 /* 80340304 0033BFA4  38 83 00 08 */	addi r4, r3, 8
 /* 80340308 0033BFA8  38 60 00 02 */	li r3, 2
 /* 8034030C 0033BFAC  7D 89 03 A6 */	mtctr r12
-/* 80340310 0033BFB0  4E 80 04 21 */	bctrl 
+/* 80340310 0033BFB0  4E 80 04 21 */	bctrl
 /* 80340314 0033BFB4  38 60 01 10 */	li r3, 0x110
 /* 80340318 0033BFB8  4B FF B0 7D */	bl "GKI_getbuf"
 /* 8034031C 0033BFBC  2C 03 00 00 */	cmpwi r3, 0
@@ -963,7 +963,7 @@ lbl_80340330:
 /* 80340330 0033BFD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80340334 0033BFD4  7C 08 03 A6 */	mtlr r0
 /* 80340338 0033BFD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034033C 0033BFDC  4E 80 00 20 */	blr 
+/* 8034033C 0033BFDC  4E 80 00 20 */	blr
 
 .global "bta_dm_search_result"
 "bta_dm_search_result":
@@ -978,7 +978,7 @@ lbl_80340330:
 /* 80340360 0033C000  81 85 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r5)
 /* 80340364 0033C004  38 60 00 02 */	li r3, 2
 /* 80340368 0033C008  7D 89 03 A6 */	mtctr r12
-/* 8034036C 0033C00C  4E 80 04 21 */	bctrl 
+/* 8034036C 0033C00C  4E 80 04 21 */	bctrl
 lbl_80340370:
 /* 80340370 0033C010  3C C0 80 58 */	lis r6, "bta_dm_search_cb"@ha
 /* 80340374 0033C014  38 C6 3E B8 */	addi r6, r6, "bta_dm_search_cb"@l
@@ -1003,7 +1003,7 @@ lbl_803403B8:
 /* 803403B8 0033C058  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803403BC 0033C05C  7C 08 03 A6 */	mtlr r0
 /* 803403C0 0033C060  38 21 00 10 */	addi r1, r1, 0x10
-/* 803403C4 0033C064  4E 80 00 20 */	blr 
+/* 803403C4 0033C064  4E 80 00 20 */	blr
 
 .global "bta_dm_search_timer_cback"
 "bta_dm_search_timer_cback":
@@ -1026,7 +1026,7 @@ lbl_803403F0:
 /* 80340404 0033C0A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80340408 0033C0A8  7C 08 03 A6 */	mtlr r0
 /* 8034040C 0033C0AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80340410 0033C0B0  4E 80 00 20 */	blr 
+/* 80340410 0033C0B0  4E 80 00 20 */	blr
 
 .global "bta_dm_free_sdp_db"
 "bta_dm_free_sdp_db":
@@ -1047,7 +1047,7 @@ lbl_80340444:
 /* 80340448 0033C0E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034044C 0033C0EC  7C 08 03 A6 */	mtlr r0
 /* 80340450 0033C0F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80340454 0033C0F4  4E 80 00 20 */	blr 
+/* 80340454 0033C0F4  4E 80 00 20 */	blr
 
 .global "bta_dm_queue_search"
 "bta_dm_queue_search":
@@ -1068,7 +1068,7 @@ lbl_80340444:
 /* 80340490 0033C130  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80340494 0033C134  7C 08 03 A6 */	mtlr r0
 /* 80340498 0033C138  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034049C 0033C13C  4E 80 00 20 */	blr 
+/* 8034049C 0033C13C  4E 80 00 20 */	blr
 
 .global "bta_dm_queue_disc"
 "bta_dm_queue_disc":
@@ -1089,7 +1089,7 @@ lbl_80340444:
 /* 803404D8 0033C178  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803404DC 0033C17C  7C 08 03 A6 */	mtlr r0
 /* 803404E0 0033C180  38 21 00 10 */	addi r1, r1, 0x10
-/* 803404E4 0033C184  4E 80 00 20 */	blr 
+/* 803404E4 0033C184  4E 80 00 20 */	blr
 
 .global "bta_dm_search_clear_queue"
 "bta_dm_search_clear_queue":
@@ -1110,7 +1110,7 @@ lbl_80340518:
 /* 8034051C 0033C1BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80340520 0033C1C0  7C 08 03 A6 */	mtlr r0
 /* 80340524 0033C1C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80340528 0033C1C8  4E 80 00 20 */	blr 
+/* 80340528 0033C1C8  4E 80 00 20 */	blr
 
 .global "bta_dm_search_cancel_cmpl"
 "bta_dm_search_cancel_cmpl":
@@ -1131,7 +1131,7 @@ lbl_8034055C:
 /* 80340560 0033C200  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80340564 0033C204  7C 08 03 A6 */	mtlr r0
 /* 80340568 0033C208  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034056C 0033C20C  4E 80 00 20 */	blr 
+/* 8034056C 0033C20C  4E 80 00 20 */	blr
 
 .global "bta_dm_search_cancel_transac_cmpl"
 "bta_dm_search_cancel_transac_cmpl":
@@ -1153,12 +1153,12 @@ lbl_803405A0:
 /* 803405A8 0033C248  81 84 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r4)
 /* 803405AC 0033C24C  38 80 00 00 */	li r4, 0
 /* 803405B0 0033C250  7D 89 03 A6 */	mtctr r12
-/* 803405B4 0033C254  4E 80 04 21 */	bctrl 
+/* 803405B4 0033C254  4E 80 04 21 */	bctrl
 /* 803405B8 0033C258  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803405BC 0033C25C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803405C0 0033C260  7C 08 03 A6 */	mtlr r0
 /* 803405C4 0033C264  38 21 00 10 */	addi r1, r1, 0x10
-/* 803405C8 0033C268  4E 80 00 20 */	blr 
+/* 803405C8 0033C268  4E 80 00 20 */	blr
 
 .global "bta_dm_search_cancel_notify"
 "bta_dm_search_cancel_notify":
@@ -1167,7 +1167,7 @@ lbl_803405A0:
 /* 803405D4 0033C274  81 84 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r4)
 /* 803405D8 0033C278  38 80 00 00 */	li r4, 0
 /* 803405DC 0033C27C  7D 89 03 A6 */	mtctr r12
-/* 803405E0 0033C280  4E 80 04 20 */	bctr 
+/* 803405E0 0033C280  4E 80 04 20 */	bctr
 
 .global "bta_dm_find_services"
 "bta_dm_find_services":
@@ -1281,7 +1281,7 @@ lbl_8034076C:
 /* 80340774 0033C414  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80340778 0033C418  7C 08 03 A6 */	mtlr r0
 /* 8034077C 0033C41C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80340780 0033C420  4E 80 00 20 */	blr 
+/* 80340780 0033C420  4E 80 00 20 */	blr
 
 .global "bta_dm_discover_next_device"
 "bta_dm_discover_next_device":
@@ -1344,7 +1344,7 @@ lbl_8034084C:
 /* 80340854 0033C4F4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80340858 0033C4F8  7C 08 03 A6 */	mtlr r0
 /* 8034085C 0033C4FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80340860 0033C500  4E 80 00 20 */	blr 
+/* 80340860 0033C500  4E 80 00 20 */	blr
 
 .global "bta_dm_sdp_callback"
 "bta_dm_sdp_callback":
@@ -1366,7 +1366,7 @@ lbl_80340898:
 /* 8034089C 0033C53C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803408A0 0033C540  7C 08 03 A6 */	mtlr r0
 /* 803408A4 0033C544  38 21 00 10 */	addi r1, r1, 0x10
-/* 803408A8 0033C548  4E 80 00 20 */	blr 
+/* 803408A8 0033C548  4E 80 00 20 */	blr
 
 .global "bta_dm_inq_results_cb"
 "bta_dm_inq_results_cb":
@@ -1397,7 +1397,7 @@ lbl_80340900:
 /* 80340908 0033C5A8  81 83 3E B8 */	lwz r12, "bta_dm_search_cb"@l(r3)
 /* 8034090C 0033C5AC  38 60 00 00 */	li r3, 0
 /* 80340910 0033C5B0  7D 89 03 A6 */	mtctr r12
-/* 80340914 0033C5B4  4E 80 04 21 */	bctrl 
+/* 80340914 0033C5B4  4E 80 04 21 */	bctrl
 /* 80340918 0033C5B8  2C 1F 00 00 */	cmpwi r31, 0
 /* 8034091C 0033C5BC  41 82 00 0C */	beq lbl_80340928
 /* 80340920 0033C5C0  88 01 00 12 */	lbz r0, 0x12(r1)
@@ -1407,7 +1407,7 @@ lbl_80340928:
 /* 8034092C 0033C5CC  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 80340930 0033C5D0  7C 08 03 A6 */	mtlr r0
 /* 80340934 0033C5D4  38 21 01 20 */	addi r1, r1, 0x120
-/* 80340938 0033C5D8  4E 80 00 20 */	blr 
+/* 80340938 0033C5D8  4E 80 00 20 */	blr
 
 .global "bta_dm_inq_cmpl_cb"
 "bta_dm_inq_cmpl_cb":
@@ -1430,7 +1430,7 @@ lbl_80340974:
 /* 80340978 0033C618  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034097C 0033C61C  7C 08 03 A6 */	mtlr r0
 /* 80340980 0033C620  38 21 00 10 */	addi r1, r1, 0x10
-/* 80340984 0033C624  4E 80 00 20 */	blr 
+/* 80340984 0033C624  4E 80 00 20 */	blr
 
 .global "bta_dm_service_search_remname_cback"
 "bta_dm_service_search_remname_cback":
@@ -1449,7 +1449,7 @@ lbl_80340974:
 /* 803409B8 0033C658  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803409BC 0033C65C  7C 08 03 A6 */	mtlr r0
 /* 803409C0 0033C660  38 21 00 10 */	addi r1, r1, 0x10
-/* 803409C4 0033C664  4E 80 00 20 */	blr 
+/* 803409C4 0033C664  4E 80 00 20 */	blr
 
 .global "bta_dm_remname_cback"
 "bta_dm_remname_cback":
@@ -1488,7 +1488,7 @@ lbl_80340A38:
 /* 80340A44 0033C6E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80340A48 0033C6E8  7C 08 03 A6 */	mtlr r0
 /* 80340A4C 0033C6EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80340A50 0033C6F0  4E 80 00 20 */	blr 
+/* 80340A50 0033C6F0  4E 80 00 20 */	blr
 
 .global "bta_dm_disc_remname_cback"
 "bta_dm_disc_remname_cback":
@@ -1526,7 +1526,7 @@ lbl_80340AC0:
 /* 80340ACC 0033C76C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80340AD0 0033C770  7C 08 03 A6 */	mtlr r0
 /* 80340AD4 0033C774  38 21 00 20 */	addi r1, r1, 0x20
-/* 80340AD8 0033C778  4E 80 00 20 */	blr 
+/* 80340AD8 0033C778  4E 80 00 20 */	blr
 
 .global "bta_dm_cancel_rmt_name"
 "bta_dm_cancel_rmt_name":
@@ -1576,7 +1576,7 @@ lbl_80340B50:
 /* 80340B70 0033C810  38 81 00 08 */	addi r4, r1, 8
 /* 80340B74 0033C814  38 60 00 04 */	li r3, 4
 /* 80340B78 0033C818  7D 89 03 A6 */	mtctr r12
-/* 80340B7C 0033C81C  4E 80 04 21 */	bctrl 
+/* 80340B7C 0033C81C  4E 80 04 21 */	bctrl
 /* 80340B80 0033C820  38 60 00 01 */	li r3, 1
 /* 80340B84 0033C824  48 00 00 08 */	b lbl_80340B8C
 lbl_80340B88:
@@ -1588,7 +1588,7 @@ lbl_80340B8C:
 /* 80340B98 0033C838  83 A1 01 24 */	lwz r29, 0x124(r1)
 /* 80340B9C 0033C83C  7C 08 03 A6 */	mtlr r0
 /* 80340BA0 0033C840  38 21 01 30 */	addi r1, r1, 0x130
-/* 80340BA4 0033C844  4E 80 00 20 */	blr 
+/* 80340BA4 0033C844  4E 80 00 20 */	blr
 
 .global "bta_dm_pinname_cback"
 "bta_dm_pinname_cback":
@@ -1636,13 +1636,13 @@ lbl_80340C34:
 /* 80340C40 0033C8E0  38 60 00 02 */	li r3, 2
 /* 80340C44 0033C8E4  81 85 00 50 */	lwz r12, 0x50(r5)
 /* 80340C48 0033C8E8  7D 89 03 A6 */	mtctr r12
-/* 80340C4C 0033C8EC  4E 80 04 21 */	bctrl 
+/* 80340C4C 0033C8EC  4E 80 04 21 */	bctrl
 /* 80340C50 0033C8F0  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80340C54 0033C8F4  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 80340C58 0033C8F8  83 C1 01 18 */	lwz r30, 0x118(r1)
 /* 80340C5C 0033C8FC  7C 08 03 A6 */	mtlr r0
 /* 80340C60 0033C900  38 21 01 20 */	addi r1, r1, 0x120
-/* 80340C64 0033C904  4E 80 00 20 */	blr 
+/* 80340C64 0033C904  4E 80 00 20 */	blr
 
 .global "bta_dm_pin_cback"
 "bta_dm_pin_cback":
@@ -1715,7 +1715,7 @@ lbl_80340D1C:
 /* 80340D64 0033CA04  38 81 00 08 */	addi r4, r1, 8
 /* 80340D68 0033CA08  38 60 00 02 */	li r3, 2
 /* 80340D6C 0033CA0C  7D 89 03 A6 */	mtctr r12
-/* 80340D70 0033CA10  4E 80 04 21 */	bctrl 
+/* 80340D70 0033CA10  4E 80 04 21 */	bctrl
 /* 80340D74 0033CA14  38 60 00 01 */	li r3, 1
 lbl_80340D78:
 /* 80340D78 0033CA18  80 01 01 34 */	lwz r0, 0x134(r1)
@@ -1725,12 +1725,12 @@ lbl_80340D78:
 /* 80340D88 0033CA28  83 81 01 20 */	lwz r28, 0x120(r1)
 /* 80340D8C 0033CA2C  7C 08 03 A6 */	mtlr r0
 /* 80340D90 0033CA30  38 21 01 30 */	addi r1, r1, 0x130
-/* 80340D94 0033CA34  4E 80 00 20 */	blr 
+/* 80340D94 0033CA34  4E 80 00 20 */	blr
 
 .global "bta_dm_link_key_request_cback"
 "bta_dm_link_key_request_cback":
 /* 80340D98 0033CA38  38 60 00 0B */	li r3, 0xb
-/* 80340D9C 0033CA3C  4E 80 00 20 */	blr 
+/* 80340D9C 0033CA3C  4E 80 00 20 */	blr
 
 .global "bta_dm_new_link_key_cback"
 "bta_dm_new_link_key_cback":
@@ -1765,7 +1765,7 @@ lbl_80340D78:
 /* 80340E10 0033CAB0  38 81 00 08 */	addi r4, r1, 8
 /* 80340E14 0033CAB4  38 60 00 03 */	li r3, 3
 /* 80340E18 0033CAB8  7D 89 03 A6 */	mtctr r12
-/* 80340E1C 0033CABC  4E 80 04 21 */	bctrl 
+/* 80340E1C 0033CABC  4E 80 04 21 */	bctrl
 lbl_80340E20:
 /* 80340E20 0033CAC0  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 80340E24 0033CAC4  38 60 00 01 */	li r3, 1
@@ -1773,7 +1773,7 @@ lbl_80340E20:
 /* 80340E2C 0033CACC  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80340E30 0033CAD0  7C 08 03 A6 */	mtlr r0
 /* 80340E34 0033CAD4  38 21 01 20 */	addi r1, r1, 0x120
-/* 80340E38 0033CAD8  4E 80 00 20 */	blr 
+/* 80340E38 0033CAD8  4E 80 00 20 */	blr
 
 .global "bta_dm_authentication_complete_cback"
 "bta_dm_authentication_complete_cback":
@@ -1803,14 +1803,14 @@ lbl_80340E20:
 /* 80340E98 0033CB38  38 81 00 08 */	addi r4, r1, 8
 /* 80340E9C 0033CB3C  38 60 00 03 */	li r3, 3
 /* 80340EA0 0033CB40  7D 89 03 A6 */	mtctr r12
-/* 80340EA4 0033CB44  4E 80 04 21 */	bctrl 
+/* 80340EA4 0033CB44  4E 80 04 21 */	bctrl
 lbl_80340EA8:
 /* 80340EA8 0033CB48  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 80340EAC 0033CB4C  38 60 00 00 */	li r3, 0
 /* 80340EB0 0033CB50  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80340EB4 0033CB54  7C 08 03 A6 */	mtlr r0
 /* 80340EB8 0033CB58  38 21 01 20 */	addi r1, r1, 0x120
-/* 80340EBC 0033CB5C  4E 80 00 20 */	blr 
+/* 80340EBC 0033CB5C  4E 80 00 20 */	blr
 
 .global "bta_dm_local_addr_cback"
 "bta_dm_local_addr_cback":
@@ -1818,12 +1818,12 @@ lbl_80340EA8:
 /* 80340EC4 0033CB64  38 84 3F 34 */	addi r4, r4, "bta_dm_cb"@l
 /* 80340EC8 0033CB68  81 84 00 50 */	lwz r12, 0x50(r4)
 /* 80340ECC 0033CB6C  2C 0C 00 00 */	cmpwi r12, 0
-/* 80340ED0 0033CB70  4D 82 00 20 */	beqlr 
+/* 80340ED0 0033CB70  4D 82 00 20 */	beqlr
 /* 80340ED4 0033CB74  7C 64 1B 78 */	mr r4, r3
 /* 80340ED8 0033CB78  38 60 00 00 */	li r3, 0
 /* 80340EDC 0033CB7C  7D 89 03 A6 */	mtctr r12
-/* 80340EE0 0033CB80  4E 80 04 20 */	bctr 
-/* 80340EE4 0033CB84  4E 80 00 20 */	blr 
+/* 80340EE0 0033CB80  4E 80 04 20 */	bctr
+/* 80340EE4 0033CB84  4E 80 00 20 */	blr
 
 .global "bta_dm_signal_strength"
 "bta_dm_signal_strength":
@@ -1913,7 +1913,7 @@ lbl_80340FFC:
 /* 80341008 0033CCA8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034100C 0033CCAC  7C 08 03 A6 */	mtlr r0
 /* 80341010 0033CCB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341014 0033CCB4  4E 80 00 20 */	blr 
+/* 80341014 0033CCB4  4E 80 00 20 */	blr
 
 .global "bta_dm_acl_change_cback"
 "bta_dm_acl_change_cback":
@@ -1945,7 +1945,7 @@ lbl_8034106C:
 /* 80341078 0033CD18  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034107C 0033CD1C  7C 08 03 A6 */	mtlr r0
 /* 80341080 0033CD20  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341084 0033CD24  4E 80 00 20 */	blr 
+/* 80341084 0033CD24  4E 80 00 20 */	blr
 
 .global "bta_dm_acl_change"
 "bta_dm_acl_change":
@@ -2008,7 +2008,7 @@ lbl_80341124:
 /* 80341158 0033CDF8  38 81 00 08 */	addi r4, r1, 8
 /* 8034115C 0033CDFC  38 60 00 05 */	li r3, 5
 /* 80341160 0033CE00  7D 89 03 A6 */	mtctr r12
-/* 80341164 0033CE04  4E 80 04 21 */	bctrl 
+/* 80341164 0033CE04  4E 80 04 21 */	bctrl
 /* 80341168 0033CE08  48 00 01 84 */	b lbl_803412EC
 lbl_8034116C:
 /* 8034116C 0033CE0C  3C 60 80 58 */	lis r3, "bta_dm_cb"@ha
@@ -2115,7 +2115,7 @@ lbl_803412BC:
 /* 803412DC 0033CF7C  81 85 00 50 */	lwz r12, 0x50(r5)
 /* 803412E0 0033CF80  38 60 00 06 */	li r3, 6
 /* 803412E4 0033CF84  7D 89 03 A6 */	mtctr r12
-/* 803412E8 0033CF88  4E 80 04 21 */	bctrl 
+/* 803412E8 0033CF88  4E 80 04 21 */	bctrl
 lbl_803412EC:
 /* 803412EC 0033CF8C  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 803412F0 0033CF90  83 E1 01 2C */	lwz r31, 0x12c(r1)
@@ -2123,7 +2123,7 @@ lbl_803412EC:
 /* 803412F8 0033CF98  83 A1 01 24 */	lwz r29, 0x124(r1)
 /* 803412FC 0033CF9C  7C 08 03 A6 */	mtlr r0
 /* 80341300 0033CFA0  38 21 01 30 */	addi r1, r1, 0x130
-/* 80341304 0033CFA4  4E 80 00 20 */	blr 
+/* 80341304 0033CFA4  4E 80 00 20 */	blr
 
 .global "bta_dm_disable_conn_down_timer_cback"
 "bta_dm_disable_conn_down_timer_cback":
@@ -2133,7 +2133,7 @@ lbl_803412EC:
 /* 80341314 0033CFB4  38 80 00 00 */	li r4, 0
 /* 80341318 0033CFB8  81 85 00 50 */	lwz r12, 0x50(r5)
 /* 8034131C 0033CFBC  7D 89 03 A6 */	mtctr r12
-/* 80341320 0033CFC0  4E 80 04 20 */	bctr 
+/* 80341320 0033CFC0  4E 80 04 20 */	bctr
 
 .global "bta_dm_rssi_cback"
 "bta_dm_rssi_cback":
@@ -2158,13 +2158,13 @@ lbl_803412EC:
 /* 8034136C 0033D00C  38 60 00 07 */	li r3, 7
 /* 80341370 0033D010  98 01 00 0F */	stb r0, 0xf(r1)
 /* 80341374 0033D014  7D 89 03 A6 */	mtctr r12
-/* 80341378 0033D018  4E 80 04 21 */	bctrl 
+/* 80341378 0033D018  4E 80 04 21 */	bctrl
 lbl_8034137C:
 /* 8034137C 0033D01C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80341380 0033D020  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80341384 0033D024  7C 08 03 A6 */	mtlr r0
 /* 80341388 0033D028  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034138C 0033D02C  4E 80 00 20 */	blr 
+/* 8034138C 0033D02C  4E 80 00 20 */	blr
 
 .global "bta_dm_link_quality_cback"
 "bta_dm_link_quality_cback":
@@ -2189,13 +2189,13 @@ lbl_8034137C:
 /* 803413D8 0033D078  38 60 00 07 */	li r3, 7
 /* 803413DC 0033D07C  98 01 00 10 */	stb r0, 0x10(r1)
 /* 803413E0 0033D080  7D 89 03 A6 */	mtctr r12
-/* 803413E4 0033D084  4E 80 04 21 */	bctrl 
+/* 803413E4 0033D084  4E 80 04 21 */	bctrl
 lbl_803413E8:
 /* 803413E8 0033D088  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803413EC 0033D08C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803413F0 0033D090  7C 08 03 A6 */	mtlr r0
 /* 803413F4 0033D094  38 21 00 20 */	addi r1, r1, 0x20
-/* 803413F8 0033D098  4E 80 00 20 */	blr 
+/* 803413F8 0033D098  4E 80 00 20 */	blr
 
 .global "bta_dm_l2cap_server_compress_cback"
 "bta_dm_l2cap_server_compress_cback":
@@ -2259,7 +2259,7 @@ lbl_803414C4:
 /* 803414D0 0033D170  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803414D4 0033D174  7C 08 03 A6 */	mtlr r0
 /* 803414D8 0033D178  38 21 00 30 */	addi r1, r1, 0x30
-/* 803414DC 0033D17C  4E 80 00 20 */	blr 
+/* 803414DC 0033D17C  4E 80 00 20 */	blr
 
 .global "bta_dm_compress_cback"
 "bta_dm_compress_cback":
@@ -2420,7 +2420,7 @@ lbl_803416FC:
 /* 80341708 0033D3A8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034170C 0033D3AC  7C 08 03 A6 */	mtlr r0
 /* 80341710 0033D3B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341714 0033D3B4  4E 80 00 20 */	blr 
+/* 80341714 0033D3B4  4E 80 00 20 */	blr
 
 .global "bta_dm_rm_cback"
 "bta_dm_rm_cback":
@@ -2497,7 +2497,7 @@ lbl_80341808:
 /* 80341810 0033D4B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80341814 0033D4B4  7C 08 03 A6 */	mtlr r0
 /* 80341818 0033D4B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034181C 0033D4BC  4E 80 00 20 */	blr 
+/* 8034181C 0033D4BC  4E 80 00 20 */	blr
 
 .global "bta_dm_keep_acl"
 "bta_dm_keep_acl":
@@ -2535,7 +2535,7 @@ lbl_80341890:
 /* 80341894 0033D534  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80341898 0033D538  7C 08 03 A6 */	mtlr r0
 /* 8034189C 0033D53C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803418A0 0033D540  4E 80 00 20 */	blr 
+/* 803418A0 0033D540  4E 80 00 20 */	blr
 
 .global "bta_dm_immediate_disable"
 "bta_dm_immediate_disable":
@@ -2545,11 +2545,11 @@ lbl_80341890:
 /* 803418B0 0033D550  38 80 00 00 */	li r4, 0
 /* 803418B4 0033D554  81 85 00 50 */	lwz r12, 0x50(r5)
 /* 803418B8 0033D558  7D 89 03 A6 */	mtctr r12
-/* 803418BC 0033D55C  4E 80 04 20 */	bctr 
+/* 803418BC 0033D55C  4E 80 04 20 */	bctr
 
 .global "bta_dm_reset_complete"
 "bta_dm_reset_complete":
-/* 803418C0 0033D560  4E 80 00 20 */	blr 
+/* 803418C0 0033D560  4E 80 00 20 */	blr
 
 .global "bta_dm_send_hci_reset"
 "bta_dm_send_hci_reset":
@@ -2573,41 +2573,108 @@ lbl_803418F8:
 /* 80341904 0033D5A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341908 0033D5A8  7C 08 03 A6 */	mtlr r0
 /* 8034190C 0033D5AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341910 0033D5B0  4E 80 00 20 */	blr 
+/* 80341910 0033D5B0  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "bta_service_id_to_uuid_lkup_tbl"
 "bta_service_id_to_uuid_lkup_tbl":
-	.incbin "baserom.dol", 0x418928, 0x30
+	# ROM: 0x418928
+	.4byte 0x12001101
+	.4byte 0x11031111
+	.4byte 0x11021108
+	.4byte 0x111E1105
+	.4byte 0x11061109
+	.4byte 0x11101104
+	.4byte 0x1118111B
+	.4byte 0x11151116
+	.4byte 0x1117112D
+	.4byte 0x110B110E
+	.4byte 0x11241304
+	.4byte 0x112F0000
+
 .global "bta_service_id_to_btm_srv_id_lkup_tbl"
 "bta_service_id_to_btm_srv_id_lkup_tbl":
-	.incbin "baserom.dol", 0x418958, 0x60
+	# ROM: 0x418958
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x0000000B
+	.4byte 0x00000002
+	.4byte 0x0000000C
+	.4byte 0x0000001D
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x00000004
+	.4byte 0x00000016
+	.4byte 0x00000023
+	.4byte 0x00000019
+	.4byte 0x0000001B
+	.4byte 0x0000001A
+	.4byte 0x00000028
+	.4byte 0x00000025
+	.4byte 0x00000027
+	.4byte 0x00000020
+	.4byte 0x00000025
+	.4byte 0x0000002C
+	.4byte 0x00000000
+
 .global "bta_security"
 "bta_security":
-	.incbin "baserom.dol", 0x4189B8, 0x18
+	# ROM: 0x4189B8
+	.4byte "bta_dm_authorize_cback" ;# ptr (0x80340AE0)
+	.4byte "bta_dm_pin_cback" ;# ptr (0x80340C68)
+	.4byte "bta_dm_new_link_key_cback" ;# ptr (0x80340DA0)
+	.4byte "bta_dm_link_key_request_cback" ;# ptr (0x80340D98)
+	.4byte "bta_dm_authentication_complete_cback" ;# ptr (0x80340E3C)
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80460B70
 lbl_80460B70:
-	.incbin "baserom.dol", 0x45CC70, 0x20
+	# ROM: 0x45CC70
+	.asciz " bta_dm_disable_timer_cback  "
+	.byte 0x00, 0x00
+
 .global lbl_80460B90
 lbl_80460B90:
-	.incbin "baserom.dol", 0x45CC90, 0x20
+	# ROM: 0x45CC90
+	.asciz " bta_dm_search_timer_cback  "
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80460BB0
 lbl_80460BB0:
-	.incbin "baserom.dol", 0x45CCB0, 0x40
+	# ROM: 0x45CCB0
+	.asciz " bta_dm_pin_cback() -> Failed to start Remote Name Request  "
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80460BF0
 lbl_80460BF0:
-	.incbin "baserom.dol", 0x45CCF0, 0x14
+	# ROM: 0x45CCF0
+	.asciz " timer stopped  "
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80460C04
 lbl_80460C04:
-	.incbin "baserom.dol", 0x45CD04, 0x30
+	# ROM: 0x45CD04
+	.asciz "bta_dm_l2cap_server_compress_cback, BTA ID %d"
+	.byte 0x00, 0x00
+
 .global lbl_80460C34
 lbl_80460C34:
-	.incbin "baserom.dol", 0x45CD34, 0x3C
+	# ROM: 0x45CD34
+	.asciz "bta_dm_compress_cback open app_id %d, BTA id %d, state %d"
+	.byte 0x00, 0x00
+
 .global lbl_80460C70
 lbl_80460C70:
-	.incbin "baserom.dol", 0x45CD70, 0x40
+	# ROM: 0x45CD70
+	.asciz "bta_dm_compress_cback close app_id %d, BTA id %d, state %d"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "bta_dm_compress_srvcs"
@@ -2617,7 +2684,12 @@ lbl_80460C70:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB768
 lbl_805DB768:
-	.incbin "baserom.dol", 0x489A88, 0x2
+	# ROM: 0x489A88
+	.byte 0x00, 0x01
+
 .global lbl_805DB76A
 lbl_805DB76A:
-	.incbin "baserom.dol", 0x489A8A, 0x6
+	# ROM: 0x489A8A
+	.byte 0x80, 0x01
+	.4byte 0x00000000
+

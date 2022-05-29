@@ -70,7 +70,7 @@ lbl_80370B10:
 /* 80370B14 0036C7B4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80370B18 0036C7B8  7C 08 03 A6 */	mtlr r0
 /* 80370B1C 0036C7BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80370B20 0036C7C0  4E 80 00 20 */	blr 
+/* 80370B20 0036C7C0  4E 80 00 20 */	blr
 
 .global "InitializeUART"
 "InitializeUART":
@@ -93,7 +93,7 @@ lbl_80370B5C:
 /* 80370B5C 0036C7FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80370B60 0036C800  7C 08 03 A6 */	mtlr r0
 /* 80370B64 0036C804  38 21 00 10 */	addi r1, r1, 0x10
-/* 80370B68 0036C808  4E 80 00 20 */	blr 
+/* 80370B68 0036C808  4E 80 00 20 */	blr
 
 .global "WriteUARTN"
 "WriteUARTN":
@@ -253,7 +253,7 @@ lbl_80370D80:
 /* 80370D88 0036CA28  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80370D8C 0036CA2C  7C 08 03 A6 */	mtlr r0
 /* 80370D90 0036CA30  38 21 00 30 */	addi r1, r1, 0x30
-/* 80370D94 0036CA34  4E 80 00 20 */	blr 
+/* 80370D94 0036CA34  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__EUARTInitialized"

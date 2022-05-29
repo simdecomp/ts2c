@@ -114,7 +114,7 @@ lbl_803EC158:
 /* 803EC160 003E7E00  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EC164 003E7E04  7C 08 03 A6 */	mtlr r0
 /* 803EC168 003E7E08  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EC16C 003E7E0C  4E 80 00 20 */	blr 
+/* 803EC16C 003E7E0C  4E 80 00 20 */	blr
 
 .global "__VIRetraceHandler"
 "__VIRetraceHandler":
@@ -191,7 +191,7 @@ lbl_803EC244:
 /* 803EC270 003E7F10  A8 61 00 0A */	lha r3, 0xa(r1)
 /* 803EC274 003E7F14  A8 81 00 08 */	lha r4, 8(r1)
 /* 803EC278 003E7F18  7D 89 03 A6 */	mtctr r12
-/* 803EC27C 003E7F1C  4E 80 04 21 */	bctrl 
+/* 803EC27C 003E7F1C  4E 80 04 21 */	bctrl
 lbl_803EC280:
 /* 803EC280 003E7F20  38 61 00 10 */	addi r3, r1, 0x10
 /* 803EC284 003E7F24  4B FF 0A 29 */	bl "OSClearContext"
@@ -211,7 +211,7 @@ lbl_803EC294:
 /* 803EC2B8 003E7F58  41 82 00 10 */	beq lbl_803EC2C8
 /* 803EC2BC 003E7F5C  80 6D C9 04 */	lwz r3, "retraceCount"-_SDA_BASE_(r13)
 /* 803EC2C0 003E7F60  7D 89 03 A6 */	mtctr r12
-/* 803EC2C4 003E7F64  4E 80 04 21 */	bctrl 
+/* 803EC2C4 003E7F64  4E 80 04 21 */	bctrl
 lbl_803EC2C8:
 /* 803EC2C8 003E7F68  80 0D C8 60 */	lwz r0, "vsync_timing_test_flag"-_SDA_BASE_(r13)
 /* 803EC2CC 003E7F6C  2C 00 00 00 */	cmpwi r0, 0
@@ -348,7 +348,7 @@ lbl_803EC48C:
 /* 803EC4A8 003E8148  38 84 45 50 */	addi r4, r4, lbl_80484550@l
 /* 803EC4AC 003E814C  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803EC4B0 003E8150  7C 89 03 A6 */	mtctr r4
-/* 803EC4B4 003E8154  4E 80 04 20 */	bctr 
+/* 803EC4B4 003E8154  4E 80 04 20 */	bctr
 /* 803EC4B8 003E8158  3B A0 00 00 */	li r29, 0
 /* 803EC4BC 003E815C  48 00 00 10 */	b lbl_803EC4CC
 /* 803EC4C0 003E8160  3B A0 00 01 */	li r29, 1
@@ -506,7 +506,7 @@ lbl_803EC694:
 /* 803EC6A8 003E8348  81 8D C8 D4 */	lwz r12, "PostCB"-_SDA_BASE_(r13)
 /* 803EC6AC 003E834C  80 6D C9 04 */	lwz r3, "retraceCount"-_SDA_BASE_(r13)
 /* 803EC6B0 003E8350  7D 89 03 A6 */	mtctr r12
-/* 803EC6B4 003E8354  4E 80 04 21 */	bctrl 
+/* 803EC6B4 003E8354  4E 80 04 21 */	bctrl
 lbl_803EC6B8:
 /* 803EC6B8 003E8358  38 6D C8 E0 */	addi r3, r13, "retraceQueue"-_SDA_BASE_
 /* 803EC6BC 003E835C  4B FF 77 7D */	bl "OSWakeupThread"
@@ -703,7 +703,7 @@ lbl_803EC968:
 /* 803EC970 003E8610  80 01 02 F4 */	lwz r0, 0x2f4(r1)
 /* 803EC974 003E8614  7C 08 03 A6 */	mtlr r0
 /* 803EC978 003E8618  38 21 02 F0 */	addi r1, r1, 0x2f0
-/* 803EC97C 003E861C  4E 80 00 20 */	blr 
+/* 803EC97C 003E861C  4E 80 00 20 */	blr
 
 .global "VISetPreRetraceCallback"
 "VISetPreRetraceCallback":
@@ -723,7 +723,7 @@ lbl_803EC968:
 /* 803EC9B4 003E8654  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EC9B8 003E8658  7C 08 03 A6 */	mtlr r0
 /* 803EC9BC 003E865C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EC9C0 003E8660  4E 80 00 20 */	blr 
+/* 803EC9C0 003E8660  4E 80 00 20 */	blr
 
 .global "VISetPostRetraceCallback"
 "VISetPostRetraceCallback":
@@ -743,7 +743,7 @@ lbl_803EC968:
 /* 803EC9F8 003E8698  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EC9FC 003E869C  7C 08 03 A6 */	mtlr r0
 /* 803ECA00 003E86A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803ECA04 003E86A4  4E 80 00 20 */	blr 
+/* 803ECA04 003E86A4  4E 80 00 20 */	blr
 
 .global "getTiming"
 "getTiming":
@@ -754,66 +754,66 @@ lbl_803EC968:
 /* 803ECA18 003E86B8  38 84 45 70 */	addi r4, r4, lbl_80484570@l
 /* 803ECA1C 003E86BC  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803ECA20 003E86C0  7C 89 03 A6 */	mtctr r4
-/* 803ECA24 003E86C4  4E 80 04 20 */	bctr 
+/* 803ECA24 003E86C4  4E 80 04 20 */	bctr
 /* 803ECA28 003E86C8  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA2C 003E86CC  38 63 43 68 */	addi r3, r3, "timing"@l
-/* 803ECA30 003E86D0  4E 80 00 20 */	blr 
+/* 803ECA30 003E86D0  4E 80 00 20 */	blr
 /* 803ECA34 003E86D4  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA38 003E86D8  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA3C 003E86DC  38 63 00 26 */	addi r3, r3, 0x26
-/* 803ECA40 003E86E0  4E 80 00 20 */	blr 
+/* 803ECA40 003E86E0  4E 80 00 20 */	blr
 /* 803ECA44 003E86E4  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA48 003E86E8  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA4C 003E86EC  38 63 00 4C */	addi r3, r3, 0x4c
-/* 803ECA50 003E86F0  4E 80 00 20 */	blr 
+/* 803ECA50 003E86F0  4E 80 00 20 */	blr
 /* 803ECA54 003E86F4  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA58 003E86F8  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA5C 003E86FC  38 63 00 72 */	addi r3, r3, 0x72
-/* 803ECA60 003E8700  4E 80 00 20 */	blr 
+/* 803ECA60 003E8700  4E 80 00 20 */	blr
 /* 803ECA64 003E8704  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA68 003E8708  38 63 43 68 */	addi r3, r3, "timing"@l
-/* 803ECA6C 003E870C  4E 80 00 20 */	blr 
+/* 803ECA6C 003E870C  4E 80 00 20 */	blr
 /* 803ECA70 003E8710  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA74 003E8714  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA78 003E8718  38 63 00 26 */	addi r3, r3, 0x26
-/* 803ECA7C 003E871C  4E 80 00 20 */	blr 
+/* 803ECA7C 003E871C  4E 80 00 20 */	blr
 /* 803ECA80 003E8720  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA84 003E8724  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA88 003E8728  38 63 00 98 */	addi r3, r3, 0x98
-/* 803ECA8C 003E872C  4E 80 00 20 */	blr 
+/* 803ECA8C 003E872C  4E 80 00 20 */	blr
 /* 803ECA90 003E8730  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECA94 003E8734  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECA98 003E8738  38 63 00 BE */	addi r3, r3, 0xbe
-/* 803ECA9C 003E873C  4E 80 00 20 */	blr 
+/* 803ECA9C 003E873C  4E 80 00 20 */	blr
 /* 803ECAA0 003E8740  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAA4 003E8744  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAA8 003E8748  38 63 00 E4 */	addi r3, r3, 0xe4
-/* 803ECAAC 003E874C  4E 80 00 20 */	blr 
+/* 803ECAAC 003E874C  4E 80 00 20 */	blr
 /* 803ECAB0 003E8750  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAB4 003E8754  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAB8 003E8758  38 63 01 0A */	addi r3, r3, 0x10a
-/* 803ECABC 003E875C  4E 80 00 20 */	blr 
+/* 803ECABC 003E875C  4E 80 00 20 */	blr
 /* 803ECAC0 003E8760  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAC4 003E8764  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAC8 003E8768  38 63 00 4C */	addi r3, r3, 0x4c
-/* 803ECACC 003E876C  4E 80 00 20 */	blr 
+/* 803ECACC 003E876C  4E 80 00 20 */	blr
 /* 803ECAD0 003E8770  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAD4 003E8774  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAD8 003E8778  38 63 00 72 */	addi r3, r3, 0x72
-/* 803ECADC 003E877C  4E 80 00 20 */	blr 
+/* 803ECADC 003E877C  4E 80 00 20 */	blr
 /* 803ECAE0 003E8780  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAE4 003E8784  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAE8 003E8788  38 63 01 30 */	addi r3, r3, 0x130
-/* 803ECAEC 003E878C  4E 80 00 20 */	blr 
+/* 803ECAEC 003E878C  4E 80 00 20 */	blr
 /* 803ECAF0 003E8790  3C 60 80 48 */	lis r3, "timing"@ha
 /* 803ECAF4 003E8794  38 63 43 68 */	addi r3, r3, "timing"@l
 /* 803ECAF8 003E8798  38 63 01 56 */	addi r3, r3, 0x156
-/* 803ECAFC 003E879C  4E 80 00 20 */	blr 
+/* 803ECAFC 003E879C  4E 80 00 20 */	blr
 /* 803ECB00 003E87A0  80 6D C8 AC */	lwz r3, "timingExtra"-_SDA_BASE_(r13)
-/* 803ECB04 003E87A4  4E 80 00 20 */	blr 
+/* 803ECB04 003E87A4  4E 80 00 20 */	blr
 lbl_803ECB08:
 /* 803ECB08 003E87A8  38 60 00 00 */	li r3, 0
-/* 803ECB0C 003E87AC  4E 80 00 20 */	blr 
+/* 803ECB0C 003E87AC  4E 80 00 20 */	blr
 
 .global "__VIInit"
 "__VIInit":
@@ -955,7 +955,7 @@ lbl_803ECD08:
 /* 803ECD10 003E89B0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803ECD14 003E89B4  7C 08 03 A6 */	mtlr r0
 /* 803ECD18 003E89B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803ECD1C 003E89BC  4E 80 00 20 */	blr 
+/* 803ECD1C 003E89BC  4E 80 00 20 */	blr
 
 .global "VIInit"
 "VIInit":
@@ -1258,7 +1258,7 @@ lbl_803ED028:
 /* 803ED1A0 003E8E40  38 84 45 EC */	addi r4, r4, lbl_804845EC@l
 /* 803ED1A4 003E8E44  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803ED1A8 003E8E48  7C 89 03 A6 */	mtctr r4
-/* 803ED1AC 003E8E4C  4E 80 04 20 */	bctr 
+/* 803ED1AC 003E8E4C  4E 80 04 20 */	bctr
 /* 803ED1B0 003E8E50  3B 80 00 00 */	li r28, 0
 /* 803ED1B4 003E8E54  48 00 00 10 */	b lbl_803ED1C4
 /* 803ED1B8 003E8E58  3B 80 00 01 */	li r28, 1
@@ -1310,7 +1310,7 @@ lbl_803ED250:
 /* 803ED258 003E8EF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803ED25C 003E8EFC  7C 08 03 A6 */	mtlr r0
 /* 803ED260 003E8F00  38 21 00 30 */	addi r1, r1, 0x30
-/* 803ED264 003E8F04  4E 80 00 20 */	blr 
+/* 803ED264 003E8F04  4E 80 00 20 */	blr
 
 .global "VIWaitForRetrace"
 "VIWaitForRetrace":
@@ -1335,7 +1335,7 @@ lbl_803ED288:
 /* 803ED2AC 003E8F4C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803ED2B0 003E8F50  7C 08 03 A6 */	mtlr r0
 /* 803ED2B4 003E8F54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803ED2B8 003E8F58  4E 80 00 20 */	blr 
+/* 803ED2B8 003E8F58  4E 80 00 20 */	blr
 
 .global "setFbbRegs"
 "setFbbRegs":
@@ -1523,7 +1523,7 @@ lbl_803ED448:
 lbl_803ED568:
 /* 803ED568 003E9208  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803ED56C 003E920C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803ED570 003E9210  4E 80 00 20 */	blr 
+/* 803ED570 003E9210  4E 80 00 20 */	blr
 
 .global "setVerticalRegs"
 "setVerticalRegs":
@@ -1631,7 +1631,7 @@ lbl_803ED668:
 /* 803ED6F4 003E9394  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803ED6F8 003E9398  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803ED6FC 003E939C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803ED700 003E93A0  4E 80 00 20 */	blr 
+/* 803ED700 003E93A0  4E 80 00 20 */	blr
 
 .global "VIConfigure"
 "VIConfigure":
@@ -2148,7 +2148,7 @@ lbl_803EDE44:
 /* 803EDE88 003E9B28  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803EDE8C 003E9B2C  7C 08 03 A6 */	mtlr r0
 /* 803EDE90 003E9B30  38 21 00 30 */	addi r1, r1, 0x30
-/* 803EDE94 003E9B34  4E 80 00 20 */	blr 
+/* 803EDE94 003E9B34  4E 80 00 20 */	blr
 
 .global "VIConfigurePan"
 "VIConfigurePan":
@@ -2376,7 +2376,7 @@ lbl_803EE198:
 /* 803EE1DC 003E9E7C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803EE1E0 003E9E80  7C 08 03 A6 */	mtlr r0
 /* 803EE1E4 003E9E84  38 21 00 30 */	addi r1, r1, 0x30
-/* 803EE1E8 003E9E88  4E 80 00 20 */	blr 
+/* 803EE1E8 003E9E88  4E 80 00 20 */	blr
 
 .global "VIFlush"
 "VIFlush":
@@ -2452,7 +2452,7 @@ lbl_803EE2B8:
 /* 803EE2F0 003E9F90  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EE2F4 003E9F94  7C 08 03 A6 */	mtlr r0
 /* 803EE2F8 003E9F98  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EE2FC 003E9F9C  4E 80 00 20 */	blr 
+/* 803EE2FC 003E9F9C  4E 80 00 20 */	blr
 
 .global "VISetNextFrameBuffer"
 "VISetNextFrameBuffer":
@@ -2482,12 +2482,12 @@ lbl_803EE2B8:
 /* 803EE35C 003E9FFC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803EE360 003EA000  7C 08 03 A6 */	mtlr r0
 /* 803EE364 003EA004  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE368 003EA008  4E 80 00 20 */	blr 
+/* 803EE368 003EA008  4E 80 00 20 */	blr
 
 .global "VIGetCurrentFrameBuffer"
 "VIGetCurrentFrameBuffer":
 /* 803EE36C 003EA00C  80 6D C8 C0 */	lwz r3, "CurrBufAddr"-_SDA_BASE_(r13)
-/* 803EE370 003EA010  4E 80 00 20 */	blr 
+/* 803EE370 003EA010  4E 80 00 20 */	blr
 
 .global "VISetBlack"
 "VISetBlack":
@@ -2520,12 +2520,12 @@ lbl_803EE2B8:
 /* 803EE3DC 003EA07C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803EE3E0 003EA080  7C 08 03 A6 */	mtlr r0
 /* 803EE3E4 003EA084  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EE3E8 003EA088  4E 80 00 20 */	blr 
+/* 803EE3E8 003EA088  4E 80 00 20 */	blr
 
 .global "VIGetRetraceCount"
 "VIGetRetraceCount":
 /* 803EE3EC 003EA08C  80 6D C9 04 */	lwz r3, "retraceCount"-_SDA_BASE_(r13)
-/* 803EE3F0 003EA090  4E 80 00 20 */	blr 
+/* 803EE3F0 003EA090  4E 80 00 20 */	blr
 
 .global "VIGetNextField"
 "VIGetNextField":
@@ -2568,7 +2568,7 @@ lbl_803EE414:
 /* 803EE480 003EA120  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE484 003EA124  7C 08 03 A6 */	mtlr r0
 /* 803EE488 003EA128  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE48C 003EA12C  4E 80 00 20 */	blr 
+/* 803EE48C 003EA12C  4E 80 00 20 */	blr
 
 .global "VIGetCurrentLine"
 "VIGetCurrentLine":
@@ -2609,7 +2609,7 @@ lbl_803EE504:
 /* 803EE510 003EA1B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE514 003EA1B4  7C 08 03 A6 */	mtlr r0
 /* 803EE518 003EA1B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE51C 003EA1BC  4E 80 00 20 */	blr 
+/* 803EE51C 003EA1BC  4E 80 00 20 */	blr
 
 .global "VIGetTvFormat"
 "VIGetTvFormat":
@@ -2626,7 +2626,7 @@ lbl_803EE504:
 /* 803EE548 003EA1E8  38 84 47 60 */	addi r4, r4, lbl_80484760@l
 /* 803EE54C 003EA1EC  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803EE550 003EA1F0  7C 89 03 A6 */	mtctr r4
-/* 803EE554 003EA1F4  4E 80 04 20 */	bctr 
+/* 803EE554 003EA1F4  4E 80 04 20 */	bctr
 /* 803EE558 003EA1F8  3B E0 00 00 */	li r31, 0
 /* 803EE55C 003EA1FC  48 00 00 08 */	b lbl_803EE564
 /* 803EE560 003EA200  3B E0 00 01 */	li r31, 1
@@ -2637,7 +2637,7 @@ lbl_803EE564:
 /* 803EE570 003EA210  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE574 003EA214  7C 08 03 A6 */	mtlr r0
 /* 803EE578 003EA218  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE57C 003EA21C  4E 80 00 20 */	blr 
+/* 803EE57C 003EA21C  4E 80 00 20 */	blr
 
 .global "VIGetScanMode"
 "VIGetScanMode":
@@ -2666,7 +2666,7 @@ lbl_803EE5C4:
 /* 803EE5D0 003EA270  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE5D4 003EA274  7C 08 03 A6 */	mtlr r0
 /* 803EE5D8 003EA278  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE5DC 003EA27C  4E 80 00 20 */	blr 
+/* 803EE5DC 003EA27C  4E 80 00 20 */	blr
 
 .global "VIGetDTVStatus"
 "VIGetDTVStatus":
@@ -2684,7 +2684,7 @@ lbl_803EE5C4:
 /* 803EE60C 003EA2AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE610 003EA2B0  7C 08 03 A6 */	mtlr r0
 /* 803EE614 003EA2B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE618 003EA2B8  4E 80 00 20 */	blr 
+/* 803EE618 003EA2B8  4E 80 00 20 */	blr
 
 .global "__VIDisplayPositionToXY"
 "__VIDisplayPositionToXY":
@@ -2844,7 +2844,7 @@ lbl_803EE834:
 lbl_803EE844:
 /* 803EE844 003EA4E4  38 03 FF FF */	addi r0, r3, -1
 /* 803EE848 003EA4E8  B0 05 00 00 */	sth r0, 0(r5)
-/* 803EE84C 003EA4EC  4E 80 00 20 */	blr 
+/* 803EE84C 003EA4EC  4E 80 00 20 */	blr
 
 .global "VISetTimeToDimming"
 "VISetTimeToDimming":
@@ -2864,7 +2864,7 @@ lbl_803EE844:
 /* 803EE884 003EA524  38 84 47 80 */	addi r4, r4, lbl_80484780@l
 /* 803EE888 003EA528  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803EE88C 003EA52C  7C 89 03 A6 */	mtctr r4
-/* 803EE890 003EA530  4E 80 04 20 */	bctr 
+/* 803EE890 003EA530  4E 80 04 20 */	bctr
 /* 803EE894 003EA534  3B E0 00 00 */	li r31, 0
 /* 803EE898 003EA538  48 00 00 08 */	b lbl_803EE8A0
 /* 803EE89C 003EA53C  3B E0 00 01 */	li r31, 1
@@ -2922,50 +2922,260 @@ lbl_803EE938:
 /* 803EE944 003EA5E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EE948 003EA5E8  7C 08 03 A6 */	mtlr r0
 /* 803EE94C 003EA5EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EE950 003EA5F0  4E 80 00 20 */	blr 
+/* 803EE950 003EA5F0  4E 80 00 20 */	blr
 
 .global "__VIResetRFIdle"
 "__VIResetRFIdle":
 /* 803EE954 003EA5F4  38 00 00 00 */	li r0, 0
 /* 803EE958 003EA5F8  38 60 00 01 */	li r3, 1
 /* 803EE95C 003EA5FC  90 0D C8 EC */	stw r0, "__VIDimmingFlag_RF_IDLE"-_SDA_BASE_(r13)
-/* 803EE960 003EA600  4E 80 00 20 */	blr 
+/* 803EE960 003EA600  4E 80 00 20 */	blr
 
 .global "__VIResetSIIdle"
 "__VIResetSIIdle":
 /* 803EE964 003EA604  38 00 00 00 */	li r0, 0
 /* 803EE968 003EA608  38 60 00 01 */	li r3, 1
 /* 803EE96C 003EA60C  90 0D C8 E8 */	stw r0, "__VIDimmingFlag_SI_IDLE"-_SDA_BASE_(r13)
-/* 803EE970 003EA610  4E 80 00 20 */	blr 
+/* 803EE970 003EA610  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80484320
 lbl_80484320:
-	.incbin "baserom.dol", 0x480420, 0x48
+	# ROM: 0x480420
+	.asciz "<< RVL_SDK - VI \trelease build: Nov 30 2006 03:31:49 (0x4199_60831) >>"
+	.byte 0x00
+
 .global "timing"
 "timing":
-	.incbin "baserom.dol", 0x480468, 0x1A4
+	# ROM: 0x480468
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x00040C0C
+	.4byte 0x0C0C0208
+	.4byte 0x02080208
+	.4byte 0x0208020E
+	.4byte 0x01AD4047
+	.4byte 0x69A20175
+	.4byte 0x7A00019C
+	.4byte 0x0500011F
+	.4byte 0x00230024
+	.4byte 0x00010000
+	.4byte 0x0D0C0B0A
+	.4byte 0x026B026A
+	.4byte 0x0269026C
+	.4byte 0x027101B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C8500
+	.4byte 0x01A40500
+	.4byte 0x011F0021
+	.4byte 0x00210002
+	.4byte 0x00020D0B
+	.4byte 0x0D0B026B
+	.4byte 0x026D026B
+	.4byte 0x026D0270
+	.4byte 0x01B0404B
+	.4byte 0x6AAC017C
+	.4byte 0x850001A4
+	.4byte 0x060000F0
+	.4byte 0x00180019
+	.4byte 0x00030002
+	.4byte 0x100F0E0D
+	.4byte 0x02060205
+	.4byte 0x02040207
+	.4byte 0x020D01AD
+	.4byte 0x404E70A2
+	.4byte 0x01757A00
+	.4byte 0x019C0600
+	.4byte 0x00F00018
+	.4byte 0x00180004
+	.4byte 0x0004100E
+	.4byte 0x100E0206
+	.4byte 0x02080206
+	.4byte 0x0208020E
+	.4byte 0x01AD404E
+	.4byte 0x70A20175
+	.4byte 0x7A00019C
+	.4byte 0x0C0001E0
+	.4byte 0x00300030
+	.4byte 0x00060006
+	.4byte 0x18181818
+	.4byte 0x040E040E
+	.4byte 0x040E040E
+	.4byte 0x041A01AD
+	.4byte 0x404769A2
+	.4byte 0x01757A00
+	.4byte 0x019C0C00
+	.4byte 0x01E0002C
+	.4byte 0x002C000A
+	.4byte 0x000A1818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69A8017B
+	.4byte 0x7A00019C
+	.4byte 0x060000F1
+	.4byte 0x00180019
+	.4byte 0x00010000
+	.4byte 0x0C0D0C0D
+	.4byte 0x02080207
+	.4byte 0x02080207
+	.4byte 0x020D01AD
+	.4byte 0x4047699F
+	.4byte 0x01727A00
+	.4byte 0x019C0C00
+	.4byte 0x01E00030
+	.4byte 0x00300006
+	.4byte 0x00061818
+	.4byte 0x1818040E
+	.4byte 0x040E040E
+	.4byte 0x040E041A
+	.4byte 0x01AD4047
+	.4byte 0x69B40187
+	.4byte 0x7A00019C
+	.4byte 0x0A000240
+	.4byte 0x003E003E
+	.4byte 0x00060006
+	.4byte 0x14141414
+	.4byte 0x04D804D8
+	.4byte 0x04D804D8
+	.4byte 0x04E201B0
+	.4byte 0x404B6AAC
+	.4byte 0x017C7A00
+	.4byte 0x019C0000
+
 .global "taps"
 "taps":
-	.incbin "baserom.dol", 0x48060C, 0x34
+	# ROM: 0x48060C
+	.4byte 0x01F001DC
+	.4byte 0x01AE0174
+	.4byte 0x012900DB
+	.4byte 0x008E0046
+	.4byte 0x000C00E2
+	.4byte 0x00CB00C0
+	.4byte 0x00C400CF
+	.4byte 0x00DE00EC
+	.4byte 0x00FC0008
+	.4byte 0x000F0013
+	.4byte 0x0013000F
+	.4byte 0x000C0008
+	.4byte 0x00010000
+
 .global "ShutdownFunctionInfo_80484540"
 "ShutdownFunctionInfo_80484540":
-	.incbin "baserom.dol", 0x480640, 0x10
+	# ROM: 0x480640
+	.4byte "OnShutdown_803EBFDC" ;# ptr (0x803EBFDC)
+	.4byte 0x0000007F
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global lbl_80484550
 lbl_80484550:
-	.incbin "baserom.dol", 0x480650, 0x20
+	# ROM: 0x480650
+	.4byte 0x803EC4B8 ;# ptr
+	.4byte 0x803EC4C0 ;# ptr
+	.4byte 0x803EC4C8 ;# ptr
+	.4byte 0x803EC4B8 ;# ptr
+	.4byte 0x803EC4C0 ;# ptr
+	.4byte 0x803EC4C8 ;# ptr
+	.4byte 0x803EC4B8 ;# ptr
+	.4byte 0x803EC4B8 ;# ptr
+
 .global lbl_80484570
 lbl_80484570:
-	.incbin "baserom.dol", 0x480670, 0x7C
+	# ROM: 0x480670
+	.4byte 0x803ECA28 ;# ptr
+	.4byte 0x803ECA34 ;# ptr
+	.4byte 0x803ECAA0 ;# ptr
+	.4byte 0x803ECAB0 ;# ptr
+	.4byte 0x803ECA44 ;# ptr
+	.4byte 0x803ECA54 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECA80 ;# ptr
+	.4byte 0x803ECA90 ;# ptr
+	.4byte 0x803ECAA0 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECAC0 ;# ptr
+	.4byte 0x803ECAD0 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECA64 ;# ptr
+	.4byte 0x803ECA70 ;# ptr
+	.4byte 0x803ECAA0 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECAE0 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECAF0 ;# ptr
+	.4byte 0x803ECB08 ;# ptr
+	.4byte 0x803ECB00 ;# ptr
+	.4byte 0x803ECB00 ;# ptr
+	.4byte 0x803ECB00 ;# ptr
+
 .global lbl_804845EC
 lbl_804845EC:
-	.incbin "baserom.dol", 0x4806EC, 0x174
+	# ROM: 0x4806EC
+	.4byte 0x803ED1B0 ;# ptr
+	.4byte 0x803ED1B8 ;# ptr
+	.4byte 0x803ED1C0 ;# ptr
+	.4byte 0x803ED1B0 ;# ptr
+	.4byte 0x803ED1B8 ;# ptr
+	.4byte 0x803ED1C0 ;# ptr
+	.4byte 0x803ED1B0 ;# ptr
+	.4byte 0x803ED1B0 ;# ptr
+	.asciz "***************************************\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz " ! ! ! C A U T I O N ! ! !             \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "This TV format \"DEBUG_PAL\" is only for \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "temporary solution until PAL DAC board \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "is available. Please do NOT use this   \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "mode in real games!!!                  \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "VIConfigure(): Tried to change mode from (%d) to (%d), which is forbidden\n"
+	.byte 0x00
+
 .global lbl_80484760
 lbl_80484760:
-	.incbin "baserom.dol", 0x480860, 0x20
+	# ROM: 0x480860
+	.4byte 0x803EE558 ;# ptr
+	.4byte 0x803EE560 ;# ptr
+	.4byte 0x803EE564 ;# ptr
+	.4byte 0x803EE558 ;# ptr
+	.4byte 0x803EE560 ;# ptr
+	.4byte 0x803EE564 ;# ptr
+	.4byte 0x803EE558 ;# ptr
+	.4byte 0x803EE558 ;# ptr
+
 .global lbl_80484780
 lbl_80484780:
-	.incbin "baserom.dol", 0x480880, 0x20
+	# ROM: 0x480880
+	.4byte 0x803EE894 ;# ptr
+	.4byte 0x803EE89C ;# ptr
+	.4byte 0x803EE8A0 ;# ptr
+	.4byte 0x803EE894 ;# ptr
+	.4byte 0x803EE89C ;# ptr
+	.4byte 0x803EE8A0 ;# ptr
+	.4byte 0x803EE894 ;# ptr
+	.4byte 0x803EE894 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "shdwRegs"
@@ -2984,25 +3194,40 @@ lbl_80484780:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__VIVersion"
 "__VIVersion":
-	.incbin "baserom.dol", 0x4874B0, 0x4
+	# ROM: 0x4874B0
+	.4byte 0x80484320 ;# ptr
+
 .global "first$1654"
 "first$1654":
-	.incbin "baserom.dol", 0x4874B4, 0x4
+	# ROM: 0x4874B4
+	.4byte 0x00000001
+
 .global "old_dtvStatus$1704"
 "old_dtvStatus$1704":
-	.incbin "baserom.dol", 0x4874B8, 0x4
+	# ROM: 0x4874B8
+	.4byte 0x000003E7
+
 .global "old_tvtype$1705"
 "old_tvtype$1705":
-	.incbin "baserom.dol", 0x4874BC, 0x4
+	# ROM: 0x4874BC
+	.4byte 0x000003E7
+
 .global "__VIDimmingFlag_Enable_old$1708"
 "__VIDimmingFlag_Enable_old$1708":
-	.incbin "baserom.dol", 0x4874C0, 0x4
+	# ROM: 0x4874C0
+	.4byte 0x00000001
+
 .global "__VIDVDStopFlag_Enable_old$1709"
 "__VIDVDStopFlag_Enable_old$1709":
-	.incbin "baserom.dol", 0x4874C4, 0x4
+	# ROM: 0x4874C4
+	.4byte 0x00000001
+
 .global lbl_805D7948
 lbl_805D7948:
-	.incbin "baserom.dol", 0x4874C8, 0x8
+	# ROM: 0x4874C8
+	.asciz "vi.c"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "IsInitialized"

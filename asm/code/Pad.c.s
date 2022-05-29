@@ -115,7 +115,7 @@ lbl_803E60A8:
 /* 803E60AC 003E1D4C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E60B0 003E1D50  7C 08 03 A6 */	mtlr r0
 /* 803E60B4 003E1D54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E60B8 003E1D58  4E 80 00 20 */	blr 
+/* 803E60B8 003E1D58  4E 80 00 20 */	blr
 
 .global "PADOriginCallback"
 "PADOriginCallback":
@@ -168,7 +168,7 @@ lbl_803E6168:
 /* 803E616C 003E1E0C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803E6170 003E1E10  7C 08 03 A6 */	mtlr r0
 /* 803E6174 003E1E14  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6178 003E1E18  4E 80 00 20 */	blr 
+/* 803E6178 003E1E18  4E 80 00 20 */	blr
 
 .global "PADOriginUpdateCallback"
 "PADOriginUpdateCallback":
@@ -223,7 +223,7 @@ lbl_803E6228:
 /* 803E6234 003E1ED4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E6238 003E1ED8  7C 08 03 A6 */	mtlr r0
 /* 803E623C 003E1EDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6240 003E1EE0  4E 80 00 20 */	blr 
+/* 803E6240 003E1EE0  4E 80 00 20 */	blr
 
 .global "PADProbeCallback"
 "PADProbeCallback":
@@ -281,7 +281,7 @@ lbl_803E6300:
 /* 803E6308 003E1FA8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803E630C 003E1FAC  7C 08 03 A6 */	mtlr r0
 /* 803E6310 003E1FB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6314 003E1FB4  4E 80 00 20 */	blr 
+/* 803E6314 003E1FB4  4E 80 00 20 */	blr
 
 .global "PADTypeAndStatusCallback"
 "PADTypeAndStatusCallback":
@@ -494,7 +494,7 @@ lbl_803E6618:
 /* 803E6628 003E22C8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E662C 003E22CC  7C 08 03 A6 */	mtlr r0
 /* 803E6630 003E22D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6634 003E22D4  4E 80 00 20 */	blr 
+/* 803E6634 003E22D4  4E 80 00 20 */	blr
 
 .global "PADReceiveCheckCallback"
 "PADReceiveCheckCallback":
@@ -578,7 +578,7 @@ lbl_803E6758:
 /* 803E6764 003E2404  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E6768 003E2408  7C 08 03 A6 */	mtlr r0
 /* 803E676C 003E240C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6770 003E2410  4E 80 00 20 */	blr 
+/* 803E6770 003E2410  4E 80 00 20 */	blr
 
 .global "PADReset"
 "PADReset":
@@ -649,7 +649,7 @@ lbl_803E6858:
 /* 803E686C 003E250C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E6870 003E2510  7C 08 03 A6 */	mtlr r0
 /* 803E6874 003E2514  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E6878 003E2518  4E 80 00 20 */	blr 
+/* 803E6878 003E2518  4E 80 00 20 */	blr
 
 .global "PADRecalibrate"
 "PADRecalibrate":
@@ -721,7 +721,7 @@ lbl_803E6964:
 /* 803E6978 003E2618  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E697C 003E261C  7C 08 03 A6 */	mtlr r0
 /* 803E6980 003E2620  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E6984 003E2624  4E 80 00 20 */	blr 
+/* 803E6984 003E2624  4E 80 00 20 */	blr
 
 .global "PADInit"
 "PADInit":
@@ -820,7 +820,7 @@ lbl_803E6AD4:
 /* 803E6AD4 003E2774  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E6AD8 003E2778  7C 08 03 A6 */	mtlr r0
 /* 803E6ADC 003E277C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E6AE0 003E2780  4E 80 00 20 */	blr 
+/* 803E6AE0 003E2780  4E 80 00 20 */	blr
 
 .global "PADRead"
 "PADRead":
@@ -982,7 +982,7 @@ lbl_803E6D1C:
 /* 803E6D24 003E29C4  7E 64 9B 78 */	mr r4, r19
 /* 803E6D28 003E29C8  38 A1 00 08 */	addi r5, r1, 8
 /* 803E6D2C 003E29CC  7D 89 03 A6 */	mtctr r12
-/* 803E6D30 003E29D0  4E 80 04 21 */	bctrl 
+/* 803E6D30 003E29D0  4E 80 04 21 */	bctrl
 /* 803E6D34 003E29D4  A0 13 00 00 */	lhz r0, 0(r19)
 /* 803E6D38 003E29D8  54 00 04 A5 */	rlwinm. r0, r0, 0, 0x12, 0x12
 /* 803E6D3C 003E29DC  41 82 00 40 */	beq lbl_803E6D7C
@@ -1020,7 +1020,7 @@ lbl_803E6D8C:
 /* 803E6DB4 003E2A54  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E6DB8 003E2A58  7C 08 03 A6 */	mtlr r0
 /* 803E6DBC 003E2A5C  38 21 00 50 */	addi r1, r1, 0x50
-/* 803E6DC0 003E2A60  4E 80 00 20 */	blr 
+/* 803E6DC0 003E2A60  4E 80 00 20 */	blr
 
 .global "PADControlMotor"
 "PADControlMotor":
@@ -1072,7 +1072,7 @@ lbl_803E6E58:
 /* 803E6E6C 003E2B0C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E6E70 003E2B10  7C 08 03 A6 */	mtlr r0
 /* 803E6E74 003E2B14  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E6E78 003E2B18  4E 80 00 20 */	blr 
+/* 803E6E78 003E2B18  4E 80 00 20 */	blr
 
 .global "SPEC0_MakeStatus"
 "SPEC0_MakeStatus":
@@ -1147,7 +1147,7 @@ lbl_803E6F60:
 /* 803E6F84 003E2C24  98 C4 00 03 */	stb r6, 3(r4)
 /* 803E6F88 003E2C28  98 A4 00 04 */	stb r5, 4(r4)
 /* 803E6F8C 003E2C2C  98 04 00 05 */	stb r0, 5(r4)
-/* 803E6F90 003E2C30  4E 80 00 20 */	blr 
+/* 803E6F90 003E2C30  4E 80 00 20 */	blr
 
 .global "SPEC1_MakeStatus"
 "SPEC1_MakeStatus":
@@ -1222,7 +1222,7 @@ lbl_803E7078:
 /* 803E709C 003E2D3C  98 C4 00 03 */	stb r6, 3(r4)
 /* 803E70A0 003E2D40  98 A4 00 04 */	stb r5, 4(r4)
 /* 803E70A4 003E2D44  98 04 00 05 */	stb r0, 5(r4)
-/* 803E70A8 003E2D48  4E 80 00 20 */	blr 
+/* 803E70A8 003E2D48  4E 80 00 20 */	blr
 
 .global "SPEC2_MakeStatus"
 "SPEC2_MakeStatus":
@@ -1600,7 +1600,7 @@ lbl_803E7610:
 /* 803E761C 003E32BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E7620 003E32C0  7C 08 03 A6 */	mtlr r0
 /* 803E7624 003E32C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E7628 003E32C8  4E 80 00 20 */	blr 
+/* 803E7628 003E32C8  4E 80 00 20 */	blr
 
 .global "OnShutdown_803E762C"
 "OnShutdown_803E762C":
@@ -1659,7 +1659,7 @@ lbl_803E76E0:
 /* 803E76E4 003E3384  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E76E8 003E3388  7C 08 03 A6 */	mtlr r0
 /* 803E76EC 003E338C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E76F0 003E3390  4E 80 00 20 */	blr 
+/* 803E76F0 003E3390  4E 80 00 20 */	blr
 
 .global "SamplingHandler"
 "SamplingHandler":
@@ -1677,7 +1677,7 @@ lbl_803E76E0:
 /* 803E7720 003E33C0  4B FF 53 65 */	bl "OSSetCurrentContext"
 /* 803E7724 003E33C4  81 8D C7 EC */	lwz r12, "SamplingCallback"-_SDA_BASE_(r13)
 /* 803E7728 003E33C8  7D 89 03 A6 */	mtctr r12
-/* 803E772C 003E33CC  4E 80 04 21 */	bctrl 
+/* 803E772C 003E33CC  4E 80 04 21 */	bctrl
 /* 803E7730 003E33D0  38 61 00 08 */	addi r3, r1, 8
 /* 803E7734 003E33D4  4B FF 55 79 */	bl "OSClearContext"
 /* 803E7738 003E33D8  7F E3 FB 78 */	mr r3, r31
@@ -1687,7 +1687,7 @@ lbl_803E7740:
 /* 803E7744 003E33E4  83 E1 02 DC */	lwz r31, 0x2dc(r1)
 /* 803E7748 003E33E8  7C 08 03 A6 */	mtlr r0
 /* 803E774C 003E33EC  38 21 02 E0 */	addi r1, r1, 0x2e0
-/* 803E7750 003E33F0  4E 80 00 20 */	blr 
+/* 803E7750 003E33F0  4E 80 00 20 */	blr
 
 .global "__PADDisableRecalibration"
 "__PADDisableRecalibration":
@@ -1714,13 +1714,20 @@ lbl_803E7794:
 /* 803E77A0 003E3440  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E77A4 003E3444  7C 08 03 A6 */	mtlr r0
 /* 803E77A8 003E3448  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E77AC 003E344C  4E 80 00 20 */	blr 
+/* 803E77AC 003E344C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x47FA58, 0x48
+	# ROM: 0x47FA58
+	.asciz "<< RVL_SDK - PAD \trelease build: Nov 30 2006 03:31:43 (0x4199_60831) >>"
+
 .global "ShutdownFunctionInfo_804839A0"
 "ShutdownFunctionInfo_804839A0":
-	.incbin "baserom.dol", 0x47FAA0, 0x10
+	# ROM: 0x47FAA0
+	.4byte "OnShutdown_803E762C" ;# ptr (0x803E762C)
+	.4byte 0x0000007F
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "Origin"
@@ -1739,28 +1746,44 @@ lbl_803E7794:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__PADVersion"
 "__PADVersion":
-	.incbin "baserom.dol", 0x487368, 0x4
+	# ROM: 0x487368
+	.4byte 0x80483958 ;# ptr
+
 .global "ResettingChan"
 "ResettingChan":
-	.incbin "baserom.dol", 0x48736C, 0x4
+	# ROM: 0x48736C
+	.4byte 0x00000020
+
 .global "XPatchBits"
 "XPatchBits":
-	.incbin "baserom.dol", 0x487370, 0x4
+	# ROM: 0x487370
+	.4byte 0xF0000000
+
 .global "AnalogMode"
 "AnalogMode":
-	.incbin "baserom.dol", 0x487374, 0x4
+	# ROM: 0x487374
+	.4byte 0x00000300
+
 .global "Spec"
 "Spec":
-	.incbin "baserom.dol", 0x487378, 0x4
+	# ROM: 0x487378
+	.4byte 0x00000005
+
 .global "MakeStatus"
 "MakeStatus":
-	.incbin "baserom.dol", 0x48737C, 0x4
+	# ROM: 0x48737C
+	.4byte "SPEC2_MakeStatus" ;# ptr (0x803E70AC)
+
 .global "CmdReadOrigin"
 "CmdReadOrigin":
-	.incbin "baserom.dol", 0x487380, 0x4
+	# ROM: 0x487380
+	.4byte 0x41000000
+
 .global "CmdCalibrate"
 "CmdCalibrate":
-	.incbin "baserom.dol", 0x487384, 0x4
+	# ROM: 0x487384
+	.4byte 0x42000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "recalibrated$939"

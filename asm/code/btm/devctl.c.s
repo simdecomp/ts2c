@@ -42,7 +42,7 @@
 /* 803471B4 00342E54  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803471B8 00342E58  7C 08 03 A6 */	mtlr r0
 /* 803471BC 00342E5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803471C0 00342E60  4E 80 00 20 */	blr 
+/* 803471C0 00342E60  4E 80 00 20 */	blr
 
 .global "btm_db_reset"
 "btm_db_reset":
@@ -63,7 +63,7 @@
 /* 803471FC 00342E9C  41 82 00 10 */	beq lbl_8034720C
 /* 80347200 00342EA0  38 60 00 00 */	li r3, 0
 /* 80347204 00342EA4  7D 89 03 A6 */	mtctr r12
-/* 80347208 00342EA8  4E 80 04 21 */	bctrl 
+/* 80347208 00342EA8  4E 80 04 21 */	bctrl
 lbl_8034720C:
 /* 8034720C 00342EAC  3C 60 80 58 */	lis r3, "btm_cb"@ha
 /* 80347210 00342EB0  38 63 42 98 */	addi r3, r3, "btm_cb"@l
@@ -75,7 +75,7 @@ lbl_8034720C:
 /* 80347228 00342EC8  41 82 00 10 */	beq lbl_80347238
 /* 8034722C 00342ECC  38 61 00 08 */	addi r3, r1, 8
 /* 80347230 00342ED0  7D 89 03 A6 */	mtctr r12
-/* 80347234 00342ED4  4E 80 04 21 */	bctrl 
+/* 80347234 00342ED4  4E 80 04 21 */	bctrl
 lbl_80347238:
 /* 80347238 00342ED8  3C 60 80 58 */	lis r3, "btm_cb"@ha
 /* 8034723C 00342EDC  38 63 42 98 */	addi r3, r3, "btm_cb"@l
@@ -87,12 +87,12 @@ lbl_80347238:
 /* 80347254 00342EF4  41 82 00 10 */	beq lbl_80347264
 /* 80347258 00342EF8  38 61 00 08 */	addi r3, r1, 8
 /* 8034725C 00342EFC  7D 89 03 A6 */	mtctr r12
-/* 80347260 00342F00  4E 80 04 21 */	bctrl 
+/* 80347260 00342F00  4E 80 04 21 */	bctrl
 lbl_80347264:
 /* 80347264 00342F04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80347268 00342F08  7C 08 03 A6 */	mtlr r0
 /* 8034726C 00342F0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80347270 00342F10  4E 80 00 20 */	blr 
+/* 80347270 00342F10  4E 80 00 20 */	blr
 
 .global "BTM_DeviceReset"
 "BTM_DeviceReset":
@@ -129,14 +129,14 @@ lbl_803472A8:
 /* 803472E8 00342F88  41 82 00 10 */	beq lbl_803472F8
 /* 803472EC 00342F8C  38 60 00 01 */	li r3, 1
 /* 803472F0 00342F90  7D 89 03 A6 */	mtctr r12
-/* 803472F4 00342F94  4E 80 04 21 */	bctrl 
+/* 803472F4 00342F94  4E 80 04 21 */	bctrl
 lbl_803472F8:
 /* 803472F8 00342F98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803472FC 00342F9C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80347300 00342FA0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80347304 00342FA4  7C 08 03 A6 */	mtlr r0
 /* 80347308 00342FA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034730C 00342FAC  4E 80 00 20 */	blr 
+/* 8034730C 00342FAC  4E 80 00 20 */	blr
 
 .global "BTM_SendHciReset"
 "BTM_SendHciReset":
@@ -176,14 +176,14 @@ lbl_80347350:
 /* 80347390 00343030  41 82 00 10 */	beq lbl_803473A0
 /* 80347394 00343034  38 60 00 01 */	li r3, 1
 /* 80347398 00343038  7D 89 03 A6 */	mtctr r12
-/* 8034739C 0034303C  4E 80 04 21 */	bctrl 
+/* 8034739C 0034303C  4E 80 04 21 */	bctrl
 lbl_803473A0:
 /* 803473A0 00343040  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803473A4 00343044  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803473A8 00343048  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803473AC 0034304C  7C 08 03 A6 */	mtlr r0
 /* 803473B0 00343050  38 21 00 10 */	addi r1, r1, 0x10
-/* 803473B4 00343054  4E 80 00 20 */	blr 
+/* 803473B4 00343054  4E 80 00 20 */	blr
 
 .global "BTM_IsDeviceUp"
 "BTM_IsDeviceUp":
@@ -193,7 +193,7 @@ lbl_803473A0:
 /* 803473C4 00343064  38 03 FF FB */	addi r0, r3, -5
 /* 803473C8 00343068  7C 00 00 34 */	cntlzw r0, r0
 /* 803473CC 0034306C  54 03 DE 3E */	rlwinm r3, r0, 0x1b, 0x18, 0x1f
-/* 803473D0 00343070  4E 80 00 20 */	blr 
+/* 803473D0 00343070  4E 80 00 20 */	blr
 
 .global "BTM_SetAfhChannels"
 "BTM_SetAfhChannels":
@@ -262,7 +262,7 @@ lbl_803474AC:
 /* 803474B4 00343154  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803474B8 00343158  7C 08 03 A6 */	mtlr r0
 /* 803474BC 0034315C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803474C0 00343160  4E 80 00 20 */	blr 
+/* 803474C0 00343160  4E 80 00 20 */	blr
 
 .global "btm_dev_timeout"
 "btm_dev_timeout":
@@ -438,14 +438,14 @@ lbl_80347714:
 /* 80347734 003433D4  41 82 00 10 */	beq lbl_80347744
 /* 80347738 003433D8  38 60 00 00 */	li r3, 0
 /* 8034773C 003433DC  7D 89 03 A6 */	mtctr r12
-/* 80347740 003433E0  4E 80 04 21 */	bctrl 
+/* 80347740 003433E0  4E 80 04 21 */	bctrl
 lbl_80347744:
 /* 80347744 003433E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80347748 003433E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034774C 003433EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80347750 003433F0  7C 08 03 A6 */	mtlr r0
 /* 80347754 003433F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80347758 003433F8  4E 80 00 20 */	blr 
+/* 80347758 003433F8  4E 80 00 20 */	blr
 
 .global "btm_reset_complete"
 "btm_reset_complete":
@@ -474,7 +474,7 @@ lbl_80347798:
 /* 803477B0 00343450  38 60 00 00 */	li r3, 0
 /* 803477B4 00343454  90 1F 06 20 */	stw r0, 0x620(r31)
 /* 803477B8 00343458  7D 89 03 A6 */	mtctr r12
-/* 803477BC 0034345C  4E 80 04 21 */	bctrl 
+/* 803477BC 0034345C  4E 80 04 21 */	bctrl
 /* 803477C0 00343460  48 00 01 48 */	b lbl_80347908
 lbl_803477C4:
 /* 803477C4 00343464  88 1F 06 4E */	lbz r0, 0x64e(r31)
@@ -569,7 +569,7 @@ lbl_80347908:
 /* 80347910 003435B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80347914 003435B4  7C 08 03 A6 */	mtlr r0
 /* 80347918 003435B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034791C 003435BC  4E 80 00 20 */	blr 
+/* 8034791C 003435BC  4E 80 00 20 */	blr
 
 .global "btm_read_hci_buf_size_complete"
 "btm_read_hci_buf_size_complete":
@@ -625,7 +625,7 @@ lbl_803479D8:
 /* 803479D8 00343678  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803479DC 0034367C  7C 08 03 A6 */	mtlr r0
 /* 803479E0 00343680  38 21 00 10 */	addi r1, r1, 0x10
-/* 803479E4 00343684  4E 80 00 20 */	blr 
+/* 803479E4 00343684  4E 80 00 20 */	blr
 
 .global "btm_read_local_version_complete"
 "btm_read_local_version_complete":
@@ -678,7 +678,7 @@ lbl_80347A94:
 /* 80347A94 00343734  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80347A98 00343738  7C 08 03 A6 */	mtlr r0
 /* 80347A9C 0034373C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80347AA0 00343740  4E 80 00 20 */	blr 
+/* 80347AA0 00343740  4E 80 00 20 */	blr
 
 .global "btm_read_local_features_complete"
 "btm_read_local_features_complete":
@@ -1019,21 +1019,21 @@ lbl_80347F40:
 /* 80347F60 00343C00  41 82 00 10 */	beq lbl_80347F70
 /* 80347F64 00343C04  38 60 00 00 */	li r3, 0
 /* 80347F68 00343C08  7D 89 03 A6 */	mtctr r12
-/* 80347F6C 00343C0C  4E 80 04 21 */	bctrl 
+/* 80347F6C 00343C0C  4E 80 04 21 */	bctrl
 lbl_80347F70:
 /* 80347F70 00343C10  2C 1C 00 00 */	cmpwi r28, 0
 /* 80347F74 00343C14  41 82 00 14 */	beq lbl_80347F88
 /* 80347F78 00343C18  7F 8C E3 78 */	mr r12, r28
 /* 80347F7C 00343C1C  38 60 00 00 */	li r3, 0
 /* 80347F80 00343C20  7D 89 03 A6 */	mtctr r12
-/* 80347F84 00343C24  4E 80 04 21 */	bctrl 
+/* 80347F84 00343C24  4E 80 04 21 */	bctrl
 lbl_80347F88:
 /* 80347F88 00343C28  39 61 00 20 */	addi r11, r1, 0x20
 /* 80347F8C 00343C2C  48 0C 74 35 */	bl "_restgpr_27"
 /* 80347F90 00343C30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80347F94 00343C34  7C 08 03 A6 */	mtlr r0
 /* 80347F98 00343C38  38 21 00 20 */	addi r1, r1, 0x20
-/* 80347F9C 00343C3C  4E 80 00 20 */	blr 
+/* 80347F9C 00343C3C  4E 80 00 20 */	blr
 
 .global "BTM_SetLocalDeviceName"
 "BTM_SetLocalDeviceName":
@@ -1087,7 +1087,7 @@ lbl_8034803C:
 /* 80348048 00343CE8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034804C 00343CEC  7C 08 03 A6 */	mtlr r0
 /* 80348050 00343CF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80348054 00343CF4  4E 80 00 20 */	blr 
+/* 80348054 00343CF4  4E 80 00 20 */	blr
 
 .global "btm_read_local_name_complete"
 "btm_read_local_name_complete":
@@ -1113,13 +1113,13 @@ lbl_8034803C:
 /* 803480A4 00343D44  7F CC F3 78 */	mr r12, r30
 /* 803480A8 00343D48  38 7D 00 01 */	addi r3, r29, 1
 /* 803480AC 00343D4C  7D 89 03 A6 */	mtctr r12
-/* 803480B0 00343D50  4E 80 04 21 */	bctrl 
+/* 803480B0 00343D50  4E 80 04 21 */	bctrl
 /* 803480B4 00343D54  48 00 00 14 */	b lbl_803480C8
 lbl_803480B8:
 /* 803480B8 00343D58  7F CC F3 78 */	mr r12, r30
 /* 803480BC 00343D5C  38 60 00 00 */	li r3, 0
 /* 803480C0 00343D60  7D 89 03 A6 */	mtctr r12
-/* 803480C4 00343D64  4E 80 04 21 */	bctrl 
+/* 803480C4 00343D64  4E 80 04 21 */	bctrl
 lbl_803480C8:
 /* 803480C8 00343D68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803480CC 00343D6C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1127,7 +1127,7 @@ lbl_803480C8:
 /* 803480D4 00343D74  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803480D8 00343D78  7C 08 03 A6 */	mtlr r0
 /* 803480DC 00343D7C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803480E0 00343D80  4E 80 00 20 */	blr 
+/* 803480E0 00343D80  4E 80 00 20 */	blr
 
 .global "BTM_ReadLocalDeviceAddr"
 "BTM_ReadLocalDeviceAddr":
@@ -1141,19 +1141,19 @@ lbl_803480C8:
 /* 80348100 00343DA0  38 84 42 98 */	addi r4, r4, "btm_cb"@l
 /* 80348104 00343DA4  38 64 06 30 */	addi r3, r4, 0x630
 /* 80348108 00343DA8  7D 89 03 A6 */	mtctr r12
-/* 8034810C 00343DAC  4E 80 04 21 */	bctrl 
+/* 8034810C 00343DAC  4E 80 04 21 */	bctrl
 lbl_80348110:
 /* 80348110 00343DB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80348114 00343DB4  38 60 00 00 */	li r3, 0
 /* 80348118 00343DB8  7C 08 03 A6 */	mtlr r0
 /* 8034811C 00343DBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80348120 00343DC0  4E 80 00 20 */	blr 
+/* 80348120 00343DC0  4E 80 00 20 */	blr
 
 .global "btm_read_local_addr_complete"
 "btm_read_local_addr_complete":
 /* 80348124 00343DC4  88 03 00 00 */	lbz r0, 0(r3)
 /* 80348128 00343DC8  2C 00 00 00 */	cmpwi r0, 0
-/* 8034812C 00343DCC  4C 82 00 20 */	bnelr 
+/* 8034812C 00343DCC  4C 82 00 20 */	bnelr
 /* 80348130 00343DD0  3C 80 80 58 */	lis r4, "btm_cb"@ha
 /* 80348134 00343DD4  88 03 00 01 */	lbz r0, 1(r3)
 /* 80348138 00343DD8  38 84 42 98 */	addi r4, r4, "btm_cb"@l
@@ -1168,7 +1168,7 @@ lbl_80348110:
 /* 8034815C 00343DFC  98 04 06 31 */	stb r0, 0x631(r4)
 /* 80348160 00343E00  88 03 00 06 */	lbz r0, 6(r3)
 /* 80348164 00343E04  98 04 06 30 */	stb r0, 0x630(r4)
-/* 80348168 00343E08  4E 80 00 20 */	blr 
+/* 80348168 00343E08  4E 80 00 20 */	blr
 
 .global "BTM_ReadLocalVersion"
 "BTM_ReadLocalVersion":
@@ -1178,7 +1178,7 @@ lbl_80348110:
 /* 80348178 00343E18  28 00 00 04 */	cmplwi r0, 4
 /* 8034817C 00343E1C  40 80 00 0C */	bge lbl_80348188
 /* 80348180 00343E20  38 60 00 0C */	li r3, 0xc
-/* 80348184 00343E24  4E 80 00 20 */	blr 
+/* 80348184 00343E24  4E 80 00 20 */	blr
 lbl_80348188:
 /* 80348188 00343E28  A0 85 06 36 */	lhz r4, 0x636(r5)
 /* 8034818C 00343E2C  A0 05 06 38 */	lhz r0, 0x638(r5)
@@ -1191,7 +1191,7 @@ lbl_80348188:
 /* 803481A8 00343E48  A0 05 06 3E */	lhz r0, 0x63e(r5)
 /* 803481AC 00343E4C  B0 03 00 08 */	sth r0, 8(r3)
 /* 803481B0 00343E50  38 60 00 00 */	li r3, 0
-/* 803481B4 00343E54  4E 80 00 20 */	blr 
+/* 803481B4 00343E54  4E 80 00 20 */	blr
 
 .global "BTM_SetDeviceClass"
 "BTM_SetDeviceClass":
@@ -1229,21 +1229,21 @@ lbl_80348220:
 /* 80348228 00343EC8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034822C 00343ECC  7C 08 03 A6 */	mtlr r0
 /* 80348230 00343ED0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80348234 00343ED4  4E 80 00 20 */	blr 
+/* 80348234 00343ED4  4E 80 00 20 */	blr
 
 .global "BTM_ReadDeviceClass"
 "BTM_ReadDeviceClass":
 /* 80348238 00343ED8  3C 60 80 58 */	lis r3, "btm_cb"@ha
 /* 8034823C 00343EDC  38 63 42 98 */	addi r3, r3, "btm_cb"@l
 /* 80348240 00343EE0  38 63 06 48 */	addi r3, r3, 0x648
-/* 80348244 00343EE4  4E 80 00 20 */	blr 
+/* 80348244 00343EE4  4E 80 00 20 */	blr
 
 .global "BTM_ReadLocalFeatures"
 "BTM_ReadLocalFeatures":
 /* 80348248 00343EE8  3C 60 80 58 */	lis r3, "btm_cb"@ha
 /* 8034824C 00343EEC  38 63 42 98 */	addi r3, r3, "btm_cb"@l
 /* 80348250 00343EF0  38 63 06 40 */	addi r3, r3, 0x640
-/* 80348254 00343EF4  4E 80 00 20 */	blr 
+/* 80348254 00343EF4  4E 80 00 20 */	blr
 
 .global "BTM_RegisterForDeviceStatusNotif"
 "BTM_RegisterForDeviceStatusNotif":
@@ -1252,7 +1252,7 @@ lbl_80348220:
 /* 80348260 00343F00  38 84 42 98 */	addi r4, r4, "btm_cb"@l
 /* 80348264 00343F04  80 64 05 68 */	lwz r3, 0x568(r4)
 /* 80348268 00343F08  90 04 05 68 */	stw r0, 0x568(r4)
-/* 8034826C 00343F0C  4E 80 00 20 */	blr 
+/* 8034826C 00343F0C  4E 80 00 20 */	blr
 
 .global "BTM_VendorSpecificCommand"
 "BTM_VendorSpecificCommand":
@@ -1325,7 +1325,7 @@ lbl_80348354:
 /* 8034835C 00343FFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80348360 00344000  7C 08 03 A6 */	mtlr r0
 /* 80348364 00344004  38 21 00 20 */	addi r1, r1, 0x20
-/* 80348368 00344008  4E 80 00 20 */	blr 
+/* 80348368 00344008  4E 80 00 20 */	blr
 
 .global "btm_vsc_complete"
 "btm_vsc_complete":
@@ -1350,13 +1350,13 @@ lbl_80348354:
 /* 803483B4 00344054  7F EC FB 78 */	mr r12, r31
 /* 803483B8 00344058  38 61 00 08 */	addi r3, r1, 8
 /* 803483BC 0034405C  7D 89 03 A6 */	mtctr r12
-/* 803483C0 00344060  4E 80 04 21 */	bctrl 
+/* 803483C0 00344060  4E 80 04 21 */	bctrl
 lbl_803483C4:
 /* 803483C4 00344064  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 803483C8 00344068  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 803483CC 0034406C  7C 08 03 A6 */	mtlr r0
 /* 803483D0 00344070  38 21 01 20 */	addi r1, r1, 0x120
-/* 803483D4 00344074  4E 80 00 20 */	blr 
+/* 803483D4 00344074  4E 80 00 20 */	blr
 
 .global "BTM_RegisterForVSEvents"
 "BTM_RegisterForVSEvents":
@@ -1368,13 +1368,13 @@ lbl_803483C4:
 /* 803483EC 0034408C  2C 03 00 00 */	cmpwi r3, 0
 /* 803483F0 00344090  41 82 00 0C */	beq lbl_803483FC
 /* 803483F4 00344094  38 60 00 02 */	li r3, 2
-/* 803483F8 00344098  4E 80 00 20 */	blr 
+/* 803483F8 00344098  4E 80 00 20 */	blr
 lbl_803483FC:
 /* 803483FC 0034409C  3C 80 80 58 */	lis r4, "btm_cb"@ha
 /* 80348400 003440A0  38 84 42 98 */	addi r4, r4, "btm_cb"@l
 /* 80348404 003440A4  90 64 05 6C */	stw r3, 0x56c(r4)
 /* 80348408 003440A8  38 60 00 00 */	li r3, 0
-/* 8034840C 003440AC  4E 80 00 20 */	blr 
+/* 8034840C 003440AC  4E 80 00 20 */	blr
 
 .global "btm_vendor_specific_evt"
 "btm_vendor_specific_evt":
@@ -1409,7 +1409,7 @@ lbl_80348464:
 /* 8034847C 0034411C  7F C3 F3 78 */	mr r3, r30
 /* 80348480 00344120  7F A4 EB 78 */	mr r4, r29
 /* 80348484 00344124  7D 89 03 A6 */	mtctr r12
-/* 80348488 00344128  4E 80 04 21 */	bctrl 
+/* 80348488 00344128  4E 80 04 21 */	bctrl
 lbl_8034848C:
 /* 8034848C 0034412C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80348490 00344130  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1417,7 +1417,7 @@ lbl_8034848C:
 /* 80348498 00344138  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034849C 0034413C  7C 08 03 A6 */	mtlr r0
 /* 803484A0 00344140  38 21 00 20 */	addi r1, r1, 0x20
-/* 803484A4 00344144  4E 80 00 20 */	blr 
+/* 803484A4 00344144  4E 80 00 20 */	blr
 
 .global "BTM_WritePageTimeout"
 "BTM_WritePageTimeout":
@@ -1463,7 +1463,7 @@ lbl_80348534:
 /* 80348538 003441D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034853C 003441DC  7C 08 03 A6 */	mtlr r0
 /* 80348540 003441E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80348544 003441E4  4E 80 00 20 */	blr 
+/* 80348544 003441E4  4E 80 00 20 */	blr
 
 .global "BTM_ReadStoredLinkKey"
 "BTM_ReadStoredLinkKey":
@@ -1526,7 +1526,7 @@ lbl_80348604:
 /* 80348610 003442B0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80348614 003442B4  7C 08 03 A6 */	mtlr r0
 /* 80348618 003442B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034861C 003442BC  4E 80 00 20 */	blr 
+/* 8034861C 003442BC  4E 80 00 20 */	blr
 
 .global "BTM_WriteStoredLinkKey"
 "BTM_WriteStoredLinkKey":
@@ -1586,7 +1586,7 @@ lbl_803486D0:
 /* 803486E0 00344380  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803486E4 00344384  7C 08 03 A6 */	mtlr r0
 /* 803486E8 00344388  38 21 00 20 */	addi r1, r1, 0x20
-/* 803486EC 0034438C  4E 80 00 20 */	blr 
+/* 803486EC 0034438C  4E 80 00 20 */	blr
 
 .global "BTM_DeleteStoredLinkKey"
 "BTM_DeleteStoredLinkKey":
@@ -1647,7 +1647,7 @@ lbl_803487A4:
 /* 803487B0 00344450  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803487B4 00344454  7C 08 03 A6 */	mtlr r0
 /* 803487B8 00344458  38 21 00 20 */	addi r1, r1, 0x20
-/* 803487BC 0034445C  4E 80 00 20 */	blr 
+/* 803487BC 0034445C  4E 80 00 20 */	blr
 
 .global "btm_read_stored_link_key_complete"
 "btm_read_stored_link_key_complete":
@@ -1677,12 +1677,12 @@ lbl_803487A4:
 /* 8034881C 003444BC  7C 04 02 14 */	add r0, r4, r0
 /* 80348820 003444C0  B0 01 00 0C */	sth r0, 0xc(r1)
 /* 80348824 003444C4  7D 89 03 A6 */	mtctr r12
-/* 80348828 003444C8  4E 80 04 21 */	bctrl 
+/* 80348828 003444C8  4E 80 04 21 */	bctrl
 lbl_8034882C:
 /* 8034882C 003444CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80348830 003444D0  7C 08 03 A6 */	mtlr r0
 /* 80348834 003444D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80348838 003444D8  4E 80 00 20 */	blr 
+/* 80348838 003444D8  4E 80 00 20 */	blr
 
 .global "btm_write_stored_link_key_complete"
 "btm_write_stored_link_key_complete":
@@ -1704,12 +1704,12 @@ lbl_8034882C:
 /* 80348878 00344518  38 61 00 08 */	addi r3, r1, 8
 /* 8034887C 0034451C  98 01 00 0A */	stb r0, 0xa(r1)
 /* 80348880 00344520  7D 89 03 A6 */	mtctr r12
-/* 80348884 00344524  4E 80 04 21 */	bctrl 
+/* 80348884 00344524  4E 80 04 21 */	bctrl
 lbl_80348888:
 /* 80348888 00344528  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8034888C 0034452C  7C 08 03 A6 */	mtlr r0
 /* 80348890 00344530  38 21 00 10 */	addi r1, r1, 0x10
-/* 80348894 00344534  4E 80 00 20 */	blr 
+/* 80348894 00344534  4E 80 00 20 */	blr
 
 .global "btm_delete_stored_link_key_complete"
 "btm_delete_stored_link_key_complete":
@@ -1734,12 +1734,12 @@ lbl_80348888:
 /* 803488E0 00344580  7C 04 02 14 */	add r0, r4, r0
 /* 803488E4 00344584  B0 01 00 0A */	sth r0, 0xa(r1)
 /* 803488E8 00344588  7D 89 03 A6 */	mtctr r12
-/* 803488EC 0034458C  4E 80 04 21 */	bctrl 
+/* 803488EC 0034458C  4E 80 04 21 */	bctrl
 lbl_803488F0:
 /* 803488F0 00344590  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803488F4 00344594  7C 08 03 A6 */	mtlr r0
 /* 803488F8 00344598  38 21 00 10 */	addi r1, r1, 0x10
-/* 803488FC 0034459C  4E 80 00 20 */	blr 
+/* 803488FC 0034459C  4E 80 00 20 */	blr
 
 .global "btm_return_link_keys_evt"
 "btm_return_link_keys_evt":
@@ -1839,12 +1839,12 @@ lbl_80348A64:
 /* 80348A6C 0034470C  7C 06 00 40 */	cmplw r6, r0
 /* 80348A70 00344710  41 80 FE BC */	blt lbl_8034892C
 /* 80348A74 00344714  7D 89 03 A6 */	mtctr r12
-/* 80348A78 00344718  4E 80 04 21 */	bctrl 
+/* 80348A78 00344718  4E 80 04 21 */	bctrl
 lbl_80348A7C:
 /* 80348A7C 0034471C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80348A80 00344720  7C 08 03 A6 */	mtlr r0
 /* 80348A84 00344724  38 21 00 20 */	addi r1, r1, 0x20
-/* 80348A88 00344728  4E 80 00 20 */	blr 
+/* 80348A88 00344728  4E 80 00 20 */	blr
 
 .global "btm_report_device_status"
 "btm_report_device_status":
@@ -1852,47 +1852,89 @@ lbl_80348A7C:
 /* 80348A90 00344730  38 84 42 98 */	addi r4, r4, "btm_cb"@l
 /* 80348A94 00344734  81 84 05 68 */	lwz r12, 0x568(r4)
 /* 80348A98 00344738  2C 0C 00 00 */	cmpwi r12, 0
-/* 80348A9C 0034473C  4D 82 00 20 */	beqlr 
+/* 80348A9C 0034473C  4D 82 00 20 */	beqlr
 /* 80348AA0 00344740  7D 89 03 A6 */	mtctr r12
-/* 80348AA4 00344744  4E 80 04 20 */	bctr 
-/* 80348AA8 00344748  4E 80 00 20 */	blr 
+/* 80348AA4 00344744  4E 80 04 20 */	bctr
+/* 80348AA8 00344748  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80461BE8
 lbl_80461BE8:
-	.incbin "baserom.dol", 0x45DCE8, 0x30
+	# ROM: 0x45DCE8
+	.asciz "BTM_SetAfhChannels first: %d (%d) last: %d (%d)"
+
 .global lbl_80461C18
 lbl_80461C18:
-	.incbin "baserom.dol", 0x45DD18, 0x6C
+	# ROM: 0x45DD18
+	.asciz "btm_reset_complete"
+	.byte 0x00
+	.asciz "Local supported ACL packet types: 0x%04x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Local supported SCO packet types: 0x%04x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80461C84
 lbl_80461C84:
-	.incbin "baserom.dol", 0x45DD84, 0x40
+	# ROM: 0x45DD84
+	.asciz "BTM: BTM_VendorSpecificCommand: Opcode: 0x%04X, ParamLen: %i."
+	.byte 0x00, 0x00
+
 .global lbl_80461CC4
 lbl_80461CC4:
-	.incbin "baserom.dol", 0x45DDC4, 0x44
+	# ROM: 0x45DDC4
+	.asciz "BTM: Unable to send vendor specific command (controller is busy)."
+	.byte 0x00, 0x00
+
 .global lbl_80461D08
 lbl_80461D08:
-	.incbin "baserom.dol", 0x45DE08, 0x40
+	# ROM: 0x45DE08
+	.asciz "BTM Event: Received a vendor specific event from controller"
+	.4byte 0x00000000
+
 .global lbl_80461D48
 lbl_80461D48:
-	.incbin "baserom.dol", 0x45DE48, 0x70
+	# ROM: 0x45DE48
+	.asciz "BTM: BTM_WritePageTimeout: Timeout: %d."
+	.asciz "BTM: BTM_WriteVoiceSettings: Settings: 0x%04x."
+	.byte 0x00
+	.asciz "BTM: BTM_EnableTestMode"
+
 .global lbl_80461DB8
 lbl_80461DB8:
-	.incbin "baserom.dol", 0x45DEB8, 0x2C
+	# ROM: 0x45DEB8
+	.asciz "BTM: BTM_ReadStoredLinkKey: Read_All: %s"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80461DE4
 lbl_80461DE4:
-	.incbin "baserom.dol", 0x45DEE4, 0x2C
+	# ROM: 0x45DEE4
+	.asciz "BTM: BTM_WriteStoredLinkKey: num_keys: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80461E10
 lbl_80461E10:
-	.incbin "baserom.dol", 0x45DF10, 0x38
+	# ROM: 0x45DF10
+	.asciz "BTM: BTM_DeleteStoredLinkKey: delete_all_flag: %s"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D72C8
 lbl_805D72C8:
-	.incbin "baserom.dol", 0x486E48, 0x4
+	# ROM: 0x486E48
+	.4byte 0x001F0000
+
 .global lbl_805D72CC
 lbl_805D72CC:
-	.incbin "baserom.dol", 0x486E4C, 0x8
+	# ROM: 0x486E4C
+	.asciz "TRUE"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D72D4
 lbl_805D72D4:
-	.incbin "baserom.dol", 0x486E54, 0xC
+	# ROM: 0x486E54
+	.asciz "FALSE"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

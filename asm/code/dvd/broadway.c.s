@@ -41,7 +41,7 @@ lbl_8036F0B0:
 lbl_8036F0C0:
 /* 8036F0C0 0036AD60  81 84 00 00 */	lwz r12, 0(r4)
 /* 8036F0C4 0036AD64  7D 89 03 A6 */	mtctr r12
-/* 8036F0C8 0036AD68  4E 80 04 21 */	bctrl 
+/* 8036F0C8 0036AD68  4E 80 04 21 */	bctrl
 /* 8036F0CC 0036AD6C  38 00 00 00 */	li r0, 0
 /* 8036F0D0 0036AD70  98 0D C4 39 */	stb r0, "callbackInProgress"-_SDA_BASE_(r13)
 lbl_8036F0D4:
@@ -52,7 +52,7 @@ lbl_8036F0D4:
 /* 8036F0E4 0036AD84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036F0E8 0036AD88  7C 08 03 A6 */	mtlr r0
 /* 8036F0EC 0036AD8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036F0F0 0036AD90  4E 80 00 20 */	blr 
+/* 8036F0F0 0036AD90  4E 80 00 20 */	blr
 
 .global "doPrepareCoverRegisterCallback"
 "doPrepareCoverRegisterCallback":
@@ -94,7 +94,7 @@ lbl_8036F154:
 lbl_8036F17C:
 /* 8036F17C 0036AE1C  81 84 00 00 */	lwz r12, 0(r4)
 /* 8036F180 0036AE20  7D 89 03 A6 */	mtctr r12
-/* 8036F184 0036AE24  4E 80 04 21 */	bctrl 
+/* 8036F184 0036AE24  4E 80 04 21 */	bctrl
 /* 8036F188 0036AE28  38 00 00 00 */	li r0, 0
 /* 8036F18C 0036AE2C  98 0D C4 39 */	stb r0, "callbackInProgress"-_SDA_BASE_(r13)
 lbl_8036F190:
@@ -105,7 +105,7 @@ lbl_8036F190:
 /* 8036F1A0 0036AE40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036F1A4 0036AE44  7C 08 03 A6 */	mtlr r0
 /* 8036F1A8 0036AE48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036F1AC 0036AE4C  4E 80 00 20 */	blr 
+/* 8036F1AC 0036AE4C  4E 80 00 20 */	blr
 
 .global "DVDLowInit"
 "DVDLowInit":
@@ -278,7 +278,7 @@ lbl_8036F3FC:
 /* 8036F404 0036B0A4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036F408 0036B0A8  7C 08 03 A6 */	mtlr r0
 /* 8036F40C 0036B0AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036F410 0036B0B0  4E 80 00 20 */	blr 
+/* 8036F410 0036B0B0  4E 80 00 20 */	blr
 
 .global "DVDLowReadDiskID"
 "DVDLowReadDiskID":
@@ -388,7 +388,7 @@ lbl_8036F580:
 /* 8036F58C 0036B22C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036F590 0036B230  7C 08 03 A6 */	mtlr r0
 /* 8036F594 0036B234  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036F598 0036B238  4E 80 00 20 */	blr 
+/* 8036F598 0036B238  4E 80 00 20 */	blr
 
 .global "DVDLowOpenPartition"
 "DVDLowOpenPartition":
@@ -560,7 +560,7 @@ lbl_8036F7E4:
 /* 8036F7F4 0036B494  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8036F7F8 0036B498  7C 08 03 A6 */	mtlr r0
 /* 8036F7FC 0036B49C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036F800 0036B4A0  4E 80 00 20 */	blr 
+/* 8036F800 0036B4A0  4E 80 00 20 */	blr
 
 .global "DVDLowClosePartition"
 "DVDLowClosePartition":
@@ -660,7 +660,7 @@ lbl_8036F950:
 /* 8036F958 0036B5F8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036F95C 0036B5FC  7C 08 03 A6 */	mtlr r0
 /* 8036F960 0036B600  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036F964 0036B604  4E 80 00 20 */	blr 
+/* 8036F964 0036B604  4E 80 00 20 */	blr
 
 .global "DVDLowUnencryptedRead"
 "DVDLowUnencryptedRead":
@@ -772,7 +772,7 @@ lbl_8036FAE4:
 /* 8036FAEC 0036B78C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036FAF0 0036B790  7C 08 03 A6 */	mtlr r0
 /* 8036FAF4 0036B794  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036FAF8 0036B798  4E 80 00 20 */	blr 
+/* 8036FAF8 0036B798  4E 80 00 20 */	blr
 
 .global "DVDLowStopMotor"
 "DVDLowStopMotor":
@@ -884,7 +884,7 @@ lbl_8036FC78:
 /* 8036FC80 0036B920  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036FC84 0036B924  7C 08 03 A6 */	mtlr r0
 /* 8036FC88 0036B928  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036FC8C 0036B92C  4E 80 00 20 */	blr 
+/* 8036FC8C 0036B92C  4E 80 00 20 */	blr
 
 .global "DVDLowInquiry"
 "DVDLowInquiry":
@@ -985,7 +985,7 @@ lbl_8036FDE0:
 /* 8036FDE8 0036BA88  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036FDEC 0036BA8C  7C 08 03 A6 */	mtlr r0
 /* 8036FDF0 0036BA90  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036FDF4 0036BA94  4E 80 00 20 */	blr 
+/* 8036FDF4 0036BA94  4E 80 00 20 */	blr
 
 .global "DVDLowRequestError"
 "DVDLowRequestError":
@@ -1086,13 +1086,13 @@ lbl_8036FF48:
 /* 8036FF50 0036BBF0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036FF54 0036BBF4  7C 08 03 A6 */	mtlr r0
 /* 8036FF58 0036BBF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036FF5C 0036BBFC  4E 80 00 20 */	blr 
+/* 8036FF5C 0036BBFC  4E 80 00 20 */	blr
 
 .global "DVDLowSetSpinupFlag"
 "DVDLowSetSpinupFlag":
 /* 8036FF60 0036BC00  90 6D C4 48 */	stw r3, "spinUpValue"-_SDA_BASE_(r13)
 /* 8036FF64 0036BC04  38 60 00 01 */	li r3, 1
-/* 8036FF68 0036BC08  4E 80 00 20 */	blr 
+/* 8036FF68 0036BC08  4E 80 00 20 */	blr
 
 .global "DVDLowReset"
 "DVDLowReset":
@@ -1198,7 +1198,7 @@ lbl_803700D0:
 /* 803700D8 0036BD78  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803700DC 0036BD7C  7C 08 03 A6 */	mtlr r0
 /* 803700E0 0036BD80  38 21 00 10 */	addi r1, r1, 0x10
-/* 803700E4 0036BD84  4E 80 00 20 */	blr 
+/* 803700E4 0036BD84  4E 80 00 20 */	blr
 
 .global "DVDLowAudioBufferConfig"
 "DVDLowAudioBufferConfig":
@@ -1310,7 +1310,7 @@ lbl_80370264:
 /* 8037026C 0036BF0C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80370270 0036BF10  7C 08 03 A6 */	mtlr r0
 /* 80370274 0036BF14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80370278 0036BF18  4E 80 00 20 */	blr 
+/* 80370278 0036BF18  4E 80 00 20 */	blr
 
 .global "DVDLowSetMaximumRotation"
 "DVDLowSetMaximumRotation":
@@ -1417,7 +1417,7 @@ lbl_803703E4:
 /* 803703EC 0036C08C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803703F0 0036C090  7C 08 03 A6 */	mtlr r0
 /* 803703F4 0036C094  38 21 00 10 */	addi r1, r1, 0x10
-/* 803703F8 0036C098  4E 80 00 20 */	blr 
+/* 803703F8 0036C098  4E 80 00 20 */	blr
 
 .global "DVDLowRead"
 "DVDLowRead":
@@ -1537,7 +1537,7 @@ lbl_80370594:
 /* 8037059C 0036C23C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803705A0 0036C240  7C 08 03 A6 */	mtlr r0
 /* 803705A4 0036C244  38 21 00 10 */	addi r1, r1, 0x10
-/* 803705A8 0036C248  4E 80 00 20 */	blr 
+/* 803705A8 0036C248  4E 80 00 20 */	blr
 
 .global "DVDLowSeek"
 "DVDLowSeek":
@@ -1643,14 +1643,14 @@ lbl_80370710:
 /* 80370718 0036C3B8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8037071C 0036C3BC  7C 08 03 A6 */	mtlr r0
 /* 80370720 0036C3C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80370724 0036C3C4  4E 80 00 20 */	blr 
+/* 80370724 0036C3C4  4E 80 00 20 */	blr
 
 .global "DVDLowGetCoverRegister"
 "DVDLowGetCoverRegister":
 /* 80370728 0036C3C8  3C 60 80 59 */	lis r3, "diRegValCache"@ha
 /* 8037072C 0036C3CC  38 63 14 20 */	addi r3, r3, "diRegValCache"@l
 /* 80370730 0036C3D0  80 63 00 04 */	lwz r3, 4(r3)
-/* 80370734 0036C3D4  4E 80 00 20 */	blr 
+/* 80370734 0036C3D4  4E 80 00 20 */	blr
 
 .global "DVDLowPrepareCoverRegister"
 "DVDLowPrepareCoverRegister":
@@ -1751,23 +1751,23 @@ lbl_80370888:
 /* 80370890 0036C530  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80370894 0036C534  7C 08 03 A6 */	mtlr r0
 /* 80370898 0036C538  38 21 00 10 */	addi r1, r1, 0x10
-/* 8037089C 0036C53C  4E 80 00 20 */	blr 
+/* 8037089C 0036C53C  4E 80 00 20 */	blr
 
 .global "DVDLowGetImmBufferReg"
 "DVDLowGetImmBufferReg":
 /* 803708A0 0036C540  3C 60 80 59 */	lis r3, "diRegValCache"@ha
 /* 803708A4 0036C544  80 63 14 20 */	lwz r3, "diRegValCache"@l(r3)
-/* 803708A8 0036C548  4E 80 00 20 */	blr 
+/* 803708A8 0036C548  4E 80 00 20 */	blr
 
 .global "DVDLowUnmaskStatusInterrupts"
 "DVDLowUnmaskStatusInterrupts":
 /* 803708AC 0036C54C  38 60 00 01 */	li r3, 1
-/* 803708B0 0036C550  4E 80 00 20 */	blr 
+/* 803708B0 0036C550  4E 80 00 20 */	blr
 
 .global "DVDLowMaskCoverInterrupt"
 "DVDLowMaskCoverInterrupt":
 /* 803708B4 0036C554  38 60 00 01 */	li r3, 1
-/* 803708B8 0036C558  4E 80 00 20 */	blr 
+/* 803708B8 0036C558  4E 80 00 20 */	blr
 
 .global "DVDLowClearCoverInterrupt"
 "DVDLowClearCoverInterrupt":
@@ -1867,17 +1867,113 @@ lbl_80370A08:
 /* 80370A10 0036C6B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80370A14 0036C6B4  7C 08 03 A6 */	mtlr r0
 /* 80370A18 0036C6B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80370A1C 0036C6BC  4E 80 00 20 */	blr 
+/* 80370A1C 0036C6BC  4E 80 00 20 */	blr
 
 .global "__DVDLowTestAlarm"
 "__DVDLowTestAlarm":
 /* 80370A20 0036C6C0  38 60 00 00 */	li r3, 0
-/* 80370A24 0036C6C4  4E 80 00 20 */	blr 
+/* 80370A24 0036C6C4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80466BF8
 lbl_80466BF8:
-	.incbin "baserom.dol", 0x462CF8, 0xBF8
+	# ROM: 0x462CF8
+	.asciz "(doTransactionCallback) Error - context mangled!\n"
+	.byte 0x00, 0x00
+	.asciz "(doCoverCallback) Error - context mangled!\n"
+	.asciz "IPCCltInit returned error: %d\n"
+	.byte 0x00
+	.asciz "(ddrAllocAligned32) Not enough space to allocate %d bytes\n"
+	.byte 0x00
+	.asciz "Allocation of diCommand blocks failed\n"
+	.byte 0x00
+	.asciz "Allocation of pathBuf failed\n"
+	.byte 0x00, 0x00
+	.asciz "(DVDLowInit) Error: IOS_Open failed - pathname '/dev/di' does not exist\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "(DVDLowInit) Error: IOS_Open failed - calling thread lacks permission\n"
+	.byte 0x00
+	.asciz "(DVDLowInit) Error: IOS_Open failed - connection limit has been reached\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "(DVDLowInit) IOS_Open failed, errorcode = %d\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "(newContext) ERROR: freeDvdContext.inUse (#%d) is true\n"
+	.asciz "(newContext) Now spinning in infinite loop\n"
+	.4byte 0x00000000
+	.asciz "(newContext) Something overwrote the context magic - spinning \n"
+	.asciz "@@@@@@ WARNING - Calling DVDLowReadDiskId with NULL ptr\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowReadDiskID) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "(DVDLowOpenPartition) eTicket memory is unaligned\n"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "(DVDLowOpenPartition) certificates memory is unaligned\n"
+	.asciz "@@@ (DVDLowOpenPartition) IOS_IoctlvAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowClosePartition) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowUnencryptedRead) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowStopMotor) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowWaitForCoverClose) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowInquiry) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowRequestError) IOS_IoctlAsync returned error: %d\n"
+	.asciz "(DVDLowSetSpinupFlag): Synch functions can't be called in callbacks\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowNotifyReset) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowReset) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowAudioBufferConfig) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "(DVDLowGetCoverStatus): Synch functions can't be called in callbacks\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowGetCoverStatus) IOS_Ioctl returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowReadDVD) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowReadDVDConfig) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowReadDvdCopyright) IOS_IoctlAsync returned error: %d\n"
+	.asciz "@@@ (DVDLowReadDvdPhysical) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowReadDvdDiscKey) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowReportKey) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowOffset) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowStopLaser) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowReadDiskBca) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowSerMeasControl) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowRequestDiscStatus) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "@@@ (DVDLowRequestRetryNumber) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowSetMaxRotation) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "(DVDLowRead): ERROR - destAddr buffer is not 32 byte aligned\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowRead) IOS_IoctlAsync returned error: %d\n"
+	.asciz "@@@ (DVDLowSeek) IOS_IoctlAsync returned error: %d\n"
+	.asciz "(DVDLowGetCoverReg): Synch functions can't be called in callbacks\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowGetCoverReg) IOS_Ioctl returned error: %d\n"
+	.byte 0x00, 0x00
+	.asciz "@@@ (DVDLowPrepareCoverRegsiter) IOS_IoctlAsync returned error: %d\n"
+	.asciz "@@@ (DVDLowClearCoverInterrupt) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00
+	.asciz "@@@ (DVDLowEnableDvdVideo) IOS_IoctlAsync returned error: %d\n"
+	.byte 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "dvdContexts"
@@ -1905,10 +2001,15 @@ lbl_80466BF8:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "DiFD"
 "DiFD":
-	.incbin "baserom.dol", 0x486EB8, 0x8
+	# ROM: 0x486EB8
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+
 .global lbl_805D7340
 lbl_805D7340:
-	.incbin "baserom.dol", 0x486EC0, 0x8
+	# ROM: 0x486EC0
+	.asciz "/dev/di"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "requestInProgress"

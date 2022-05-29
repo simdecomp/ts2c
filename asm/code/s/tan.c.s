@@ -35,9 +35,11 @@ lbl_8040E9B8:
 /* 8040E9B8 0040A658  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8040E9BC 0040A65C  7C 08 03 A6 */	mtlr r0
 /* 8040E9C0 0040A660  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040E9C4 0040A664  4E 80 00 20 */	blr 
+/* 8040E9C4 0040A664  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC3E8
 lbl_805DC3E8:
-	.incbin "baserom.dol", 0x48A708, 0x8
+	# ROM: 0x48A708
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+

@@ -109,7 +109,7 @@ lbl_80366600:
 /* 8036660C 003622AC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80366610 003622B0  7C 08 03 A6 */	mtlr r0
 /* 80366614 003622B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80366618 003622B8  4E 80 00 20 */	blr 
+/* 80366618 003622B8  4E 80 00 20 */	blr
 
 .global "sdp_connect_ind"
 "sdp_connect_ind":
@@ -162,7 +162,7 @@ lbl_803666C0:
 /* 803666D0 00362370  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803666D4 00362374  7C 08 03 A6 */	mtlr r0
 /* 803666D8 00362378  38 21 00 20 */	addi r1, r1, 0x20
-/* 803666DC 0036237C  4E 80 00 20 */	blr 
+/* 803666DC 0036237C  4E 80 00 20 */	blr
 
 .global "sdp_connect_cfm"
 "sdp_connect_cfm":
@@ -245,7 +245,7 @@ lbl_803667FC:
 /* 80366800 003624A0  38 03 FF F6 */	addi r0, r3, 0x0000FFF6@l
 /* 80366804 003624A4  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366808 003624A8  7D 89 03 A6 */	mtctr r12
-/* 8036680C 003624AC  4E 80 04 21 */	bctrl 
+/* 8036680C 003624AC  4E 80 04 21 */	bctrl
 /* 80366810 003624B0  48 00 00 38 */	b lbl_80366848
 lbl_80366814:
 /* 80366814 003624B4  28 1F 00 0F */	cmplwi r31, 0xf
@@ -254,14 +254,14 @@ lbl_80366814:
 /* 80366820 003624C0  38 03 FF F7 */	addi r0, r3, 0x0000FFF7@l
 /* 80366824 003624C4  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366828 003624C8  7D 89 03 A6 */	mtctr r12
-/* 8036682C 003624CC  4E 80 04 21 */	bctrl 
+/* 8036682C 003624CC  4E 80 04 21 */	bctrl
 /* 80366830 003624D0  48 00 00 18 */	b lbl_80366848
 lbl_80366834:
 /* 80366834 003624D4  3C 60 00 01 */	lis r3, 0x0000FFF1@ha
 /* 80366838 003624D8  38 03 FF F1 */	addi r0, r3, 0x0000FFF1@l
 /* 8036683C 003624DC  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366840 003624E0  7D 89 03 A6 */	mtctr r12
-/* 80366844 003624E4  4E 80 04 21 */	bctrl 
+/* 80366844 003624E4  4E 80 04 21 */	bctrl
 lbl_80366848:
 /* 80366848 003624E8  7F A3 EB 78 */	mr r3, r29
 /* 8036684C 003624EC  48 00 15 B1 */	bl "sdpu_release_ccb"
@@ -273,7 +273,7 @@ lbl_80366850:
 /* 80366860 00362500  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80366864 00362504  7C 08 03 A6 */	mtlr r0
 /* 80366868 00362508  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036686C 0036250C  4E 80 00 20 */	blr 
+/* 8036686C 0036250C  4E 80 00 20 */	blr
 
 .global "sdp_config_ind"
 "sdp_config_ind":
@@ -362,7 +362,7 @@ lbl_80366990:
 /* 8036699C 0036263C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803669A0 00362640  7C 08 03 A6 */	mtlr r0
 /* 803669A4 00362644  38 21 00 20 */	addi r1, r1, 0x20
-/* 803669A8 00362648  4E 80 00 20 */	blr 
+/* 803669A8 00362648  4E 80 00 20 */	blr
 
 .global "sdp_config_cfm"
 "sdp_config_cfm":
@@ -456,7 +456,7 @@ lbl_80366AE0:
 /* 80366AF0 00362790  38 03 FF F2 */	addi r0, r3, 0x0000FFF2@l
 /* 80366AF4 00362794  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366AF8 00362798  7D 89 03 A6 */	mtctr r12
-/* 80366AFC 0036279C  4E 80 04 21 */	bctrl 
+/* 80366AFC 0036279C  4E 80 04 21 */	bctrl
 lbl_80366B00:
 /* 80366B00 003627A0  7F C3 F3 78 */	mr r3, r30
 /* 80366B04 003627A4  48 00 12 F9 */	bl "sdpu_release_ccb"
@@ -468,7 +468,7 @@ lbl_80366B08:
 /* 80366B18 003627B8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80366B1C 003627BC  7C 08 03 A6 */	mtlr r0
 /* 80366B20 003627C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80366B24 003627C4  4E 80 00 20 */	blr 
+/* 80366B24 003627C4  4E 80 00 20 */	blr
 
 .global "sdp_disconnect_ind"
 "sdp_disconnect_ind":
@@ -527,7 +527,7 @@ lbl_80366BC4:
 /* 80366BEC 0036288C  7C 00 18 78 */	andc r0, r0, r3
 /* 80366BF0 00362890  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366BF4 00362894  7D 89 03 A6 */	mtctr r12
-/* 80366BF8 00362898  4E 80 04 21 */	bctrl 
+/* 80366BF8 00362898  4E 80 04 21 */	bctrl
 lbl_80366BFC:
 /* 80366BFC 0036289C  7F E3 FB 78 */	mr r3, r31
 /* 80366C00 003628A0  48 00 11 FD */	bl "sdpu_release_ccb"
@@ -538,7 +538,7 @@ lbl_80366C04:
 /* 80366C10 003628B0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80366C14 003628B4  7C 08 03 A6 */	mtlr r0
 /* 80366C18 003628B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80366C1C 003628BC  4E 80 00 20 */	blr 
+/* 80366C1C 003628BC  4E 80 00 20 */	blr
 
 .global "sdp_data_ind"
 "sdp_data_ind":
@@ -598,7 +598,7 @@ lbl_80366CD4:
 /* 80366CE4 00362984  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80366CE8 00362988  7C 08 03 A6 */	mtlr r0
 /* 80366CEC 0036298C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80366CF0 00362990  4E 80 00 20 */	blr 
+/* 80366CF0 00362990  4E 80 00 20 */	blr
 
 .global "sdp_conn_originate"
 "sdp_conn_originate":
@@ -676,7 +676,7 @@ lbl_80366DEC:
 /* 80366DF8 00362A98  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80366DFC 00362A9C  7C 08 03 A6 */	mtlr r0
 /* 80366E00 00362AA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80366E04 00362AA4  4E 80 00 20 */	blr 
+/* 80366E04 00362AA4  4E 80 00 20 */	blr
 
 .global "sdp_disconnect"
 "sdp_disconnect":
@@ -712,7 +712,7 @@ lbl_80366E6C:
 /* 80366E74 00362B14  41 82 00 10 */	beq lbl_80366E84
 /* 80366E78 00362B18  7F E3 FB 78 */	mr r3, r31
 /* 80366E7C 00362B1C  7D 89 03 A6 */	mtctr r12
-/* 80366E80 00362B20  4E 80 04 21 */	bctrl 
+/* 80366E80 00362B20  4E 80 04 21 */	bctrl
 lbl_80366E84:
 /* 80366E84 00362B24  7F C3 F3 78 */	mr r3, r30
 /* 80366E88 00362B28  48 00 0F 75 */	bl "sdpu_release_ccb"
@@ -722,7 +722,7 @@ lbl_80366E8C:
 /* 80366E94 00362B34  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80366E98 00362B38  7C 08 03 A6 */	mtlr r0
 /* 80366E9C 00362B3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80366EA0 00362B40  4E 80 00 20 */	blr 
+/* 80366EA0 00362B40  4E 80 00 20 */	blr
 
 .global "sdp_disconnect_cfm"
 "sdp_disconnect_cfm":
@@ -766,7 +766,7 @@ lbl_80366F28:
 /* 80366F30 00362BD0  41 82 00 10 */	beq lbl_80366F40
 /* 80366F34 00362BD4  A0 7F 04 72 */	lhz r3, 0x472(r31)
 /* 80366F38 00362BD8  7D 89 03 A6 */	mtctr r12
-/* 80366F3C 00362BDC  4E 80 04 21 */	bctrl 
+/* 80366F3C 00362BDC  4E 80 04 21 */	bctrl
 lbl_80366F40:
 /* 80366F40 00362BE0  7F E3 FB 78 */	mr r3, r31
 /* 80366F44 00362BE4  48 00 0E B9 */	bl "sdpu_release_ccb"
@@ -776,7 +776,7 @@ lbl_80366F48:
 /* 80366F50 00362BF0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80366F54 00362BF4  7C 08 03 A6 */	mtlr r0
 /* 80366F58 00362BF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80366F5C 00362BFC  4E 80 00 20 */	blr 
+/* 80366F5C 00362BFC  4E 80 00 20 */	blr
 
 .global "sdp_conn_timeout"
 "sdp_conn_timeout":
@@ -807,7 +807,7 @@ lbl_80366FA4:
 /* 80366FBC 00362C5C  38 03 FF F1 */	addi r0, r3, 0x0000FFF1@l
 /* 80366FC0 00362C60  54 03 04 3E */	clrlwi r3, r0, 0x10
 /* 80366FC4 00362C64  7D 89 03 A6 */	mtctr r12
-/* 80366FC8 00362C68  4E 80 04 21 */	bctrl 
+/* 80366FC8 00362C68  4E 80 04 21 */	bctrl
 lbl_80366FCC:
 /* 80366FCC 00362C6C  7F E3 FB 78 */	mr r3, r31
 /* 80366FD0 00362C70  48 00 0E 2D */	bl "sdpu_release_ccb"
@@ -815,45 +815,93 @@ lbl_80366FCC:
 /* 80366FD8 00362C78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80366FDC 00362C7C  7C 08 03 A6 */	mtlr r0
 /* 80366FE0 00362C80  38 21 00 10 */	addi r1, r1, 0x10
-/* 80366FE4 00362C84  4E 80 00 20 */	blr 
+/* 80366FE4 00362C84  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465CB0
 lbl_80465CB0:
-	.incbin "baserom.dol", 0x461DB0, 0x78
+	# ROM: 0x461DB0
+	.asciz "Service Discovery"
+	.byte 0x00, 0x00
+	.asciz "Security Registration Server failed"
+	.asciz "Security Registration for Client failed"
+	.asciz "SDP Registration failed"
+
 .global lbl_80465D28
 lbl_80465D28:
-	.incbin "baserom.dol", 0x461E28, 0xC0
+	# ROM: 0x461E28
+	.asciz "SDP - Rcvd L2CAP conn ind, sent config req, CID 0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SDP - Rcvd conn cnf for unknown CID 0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SDP - got conn cnf, sent cfg req, CID: 0x%x"
+	.asciz "SDP - Rcvd conn cnf with error: 0x%x  CID 0x%x"
+	.byte 0x00
+
 .global lbl_80465DE8
 lbl_80465DE8:
-	.incbin "baserom.dol", 0x461EE8, 0x2C
+	# ROM: 0x461EE8
+	.asciz "SDP - Rcvd L2CAP cfg ind, unknown CID: 0x%x"
+
 .global lbl_80465E14
 lbl_80465E14:
-	.incbin "baserom.dol", 0x461F14, 0x58
+	# ROM: 0x461F14
+	.asciz "SDP - Rcvd cfg ind, sent cfg cfm, CID: 0x%x"
+	.asciz "SDP - Rcvd cfg cfm, CID: 0x%x  Result: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80465E6C
 lbl_80465E6C:
-	.incbin "baserom.dol", 0x461F6C, 0x1C
+	# ROM: 0x461F6C
+	.asciz "SDP - disconnect  CID: 0x%x"
+
 .global lbl_80465E88
 lbl_80465E88:
-	.incbin "baserom.dol", 0x461F88, 0x2C
+	# ROM: 0x461F88
+	.asciz "SDP - Rcvd L2CAP disc, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465EB4
 lbl_80465EB4:
-	.incbin "baserom.dol", 0x461FB4, 0x24
+	# ROM: 0x461FB4
+	.asciz "SDP - Rcvd L2CAP disc, CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465ED8
 lbl_80465ED8:
-	.incbin "baserom.dol", 0x461FD8, 0x38
+	# ROM: 0x461FD8
+	.asciz "SDP - Ignored L2CAP data while in state: %d, CID: 0x%x"
+	.byte 0x00
+
 .global lbl_80465F10
 lbl_80465F10:
-	.incbin "baserom.dol", 0x462010, 0x78
+	# ROM: 0x462010
+	.asciz "SDP - Rcvd L2CAP data, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SDP - no spare CCB for orig"
+	.asciz "SDP - Originate started"
+	.asciz "SDP - Originate failed"
+	.byte 0x00
+
 .global lbl_80465F88
 lbl_80465F88:
-	.incbin "baserom.dol", 0x462088, 0x30
+	# ROM: 0x462088
+	.asciz "SDP - Rcvd L2CAP disc cfm, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465FB8
 lbl_80465FB8:
-	.incbin "baserom.dol", 0x4620B8, 0x28
+	# ROM: 0x4620B8
+	.asciz "SDP - Rcvd L2CAP disc cfm, CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465FE0
 lbl_80465FE0:
-	.incbin "baserom.dol", 0x4620E0, 0x30
+	# ROM: 0x4620E0
+	.asciz "SDP - CCB timeout in state: %d  CID: 0x%x"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "sdp_cb"

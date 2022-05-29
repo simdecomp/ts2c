@@ -122,7 +122,7 @@ lbl_8016A2A0:
 /* 8016A2BC 00165F5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016A2C0 00165F60  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8016A2C4 00165F64  7D 89 03 A6 */	mtctr r12
-/* 8016A2C8 00165F68  4E 80 04 21 */	bctrl 
+/* 8016A2C8 00165F68  4E 80 04 21 */	bctrl
 /* 8016A2CC 00165F6C  80 7B 00 3C */	lwz r3, 0x3c(r27)
 /* 8016A2D0 00165F70  38 80 00 04 */	li r4, 4
 /* 8016A2D4 00165F74  38 AD 86 70 */	addi r5, r13, lbl_805D4D50-_SDA_BASE_
@@ -148,7 +148,7 @@ lbl_8016A300:
 /* 8016A318 00165FB8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8016A31C 00165FBC  7C 08 03 A6 */	mtlr r0
 /* 8016A320 00165FC0  38 21 00 40 */	addi r1, r1, 0x40
-/* 8016A324 00165FC4  4E 80 00 20 */	blr 
+/* 8016A324 00165FC4  4E 80 00 20 */	blr
 
 .global "Draw__12StateMachineFP3ERC"
 "Draw__12StateMachineFP3ERC":
@@ -173,7 +173,7 @@ lbl_8016A364:
 /* 8016A36C 0016600C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016A370 00166010  7C 08 03 A6 */	mtlr r0
 /* 8016A374 00166014  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A378 00166018  4E 80 00 20 */	blr 
+/* 8016A378 00166018  4E 80 00 20 */	blr
 
 .global "DrawTopmost__12StateMachineFP3ERC"
 "DrawTopmost__12StateMachineFP3ERC":
@@ -203,7 +203,7 @@ lbl_8016A3CC:
 /* 8016A3D4 00166074  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016A3D8 00166078  7C 08 03 A6 */	mtlr r0
 /* 8016A3DC 0016607C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A3E0 00166080  4E 80 00 20 */	blr 
+/* 8016A3E0 00166080  4E 80 00 20 */	blr
 
 .global "SetNextState__12StateMachineFif"
 "SetNextState__12StateMachineFif":
@@ -227,7 +227,7 @@ lbl_8016A41C:
 /* 8016A424 001660C4  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8016A428 001660C8  7C 08 03 A6 */	mtlr r0
 /* 8016A42C 001660CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A430 001660D0  4E 80 00 20 */	blr 
+/* 8016A430 001660D0  4E 80 00 20 */	blr
 
 .global "CallState__12StateMachineFi"
 "CallState__12StateMachineFi":
@@ -245,14 +245,14 @@ lbl_8016A458:
 /* 8016A45C 001660FC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016A460 00166100  7C 08 03 A6 */	mtlr r0
 /* 8016A464 00166104  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A468 00166108  4E 80 00 20 */	blr 
+/* 8016A468 00166108  4E 80 00 20 */	blr
 
 .global "ReturnFromState__12StateMachineFi"
 "ReturnFromState__12StateMachineFi":
 /* 8016A46C 0016610C  38 00 00 01 */	li r0, 1
 /* 8016A470 00166110  90 83 00 6C */	stw r4, 0x6c(r3)
 /* 8016A474 00166114  98 03 00 68 */	stb r0, 0x68(r3)
-/* 8016A478 00166118  4E 80 00 20 */	blr 
+/* 8016A478 00166118  4E 80 00 20 */	blr
 
 .global "GetCurStateId__12StateMachineCFv"
 "GetCurStateId__12StateMachineCFv":
@@ -276,7 +276,7 @@ lbl_8016A4B4:
 /* 8016A4B8 00166158  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016A4BC 0016615C  7C 08 03 A6 */	mtlr r0
 /* 8016A4C0 00166160  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A4C4 00166164  4E 80 00 20 */	blr 
+/* 8016A4C4 00166164  4E 80 00 20 */	blr
 
 .global "AddState__12StateMachineFP17StateMachineState"
 "AddState__12StateMachineFP17StateMachineState":
@@ -300,7 +300,7 @@ lbl_8016A500:
 /* 8016A508 001661A8  80 61 00 08 */	lwz r3, 8(r1)
 /* 8016A50C 001661AC  7C 08 03 A6 */	mtlr r0
 /* 8016A510 001661B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A514 001661B4  4E 80 00 20 */	blr 
+/* 8016A514 001661B4  4E 80 00 20 */	blr
 
 .global "DeleteAllStates__12StateMachineFv"
 "DeleteAllStates__12StateMachineFv":
@@ -330,7 +330,7 @@ lbl_8016A560:
 /* 8016A570 00166210  38 80 00 01 */	li r4, 1
 /* 8016A574 00166214  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016A578 00166218  7D 89 03 A6 */	mtctr r12
-/* 8016A57C 0016621C  4E 80 04 21 */	bctrl 
+/* 8016A57C 0016621C  4E 80 04 21 */	bctrl
 lbl_8016A580:
 /* 8016A580 00166220  93 FE 00 00 */	stw r31, 0(r30)
 /* 8016A584 00166224  3B DE 00 04 */	addi r30, r30, 4
@@ -358,7 +358,7 @@ lbl_8016A588:
 /* 8016A5D8 00166278  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8016A5DC 0016627C  7C 08 03 A6 */	mtlr r0
 /* 8016A5E0 00166280  38 21 00 30 */	addi r1, r1, 0x30
-/* 8016A5E4 00166284  4E 80 00 20 */	blr 
+/* 8016A5E4 00166284  4E 80 00 20 */	blr
 
 .global "GetTimeInState__12StateMachineCFv"
 "GetTimeInState__12StateMachineCFv":
@@ -404,7 +404,7 @@ lbl_8016A658:
 /* 8016A668 00166308  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8016A66C 0016630C  7C 08 03 A6 */	mtlr r0
 /* 8016A670 00166310  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A674 00166314  4E 80 00 20 */	blr 
+/* 8016A674 00166314  4E 80 00 20 */	blr
 
 .global "FindState__12StateMachineFPC17StateMachineState"
 "FindState__12StateMachineFPC17StateMachineState":
@@ -440,7 +440,7 @@ lbl_8016A6D0:
 /* 8016A6DC 0016637C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016A6E0 00166380  7C 08 03 A6 */	mtlr r0
 /* 8016A6E4 00166384  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A6E8 00166388  4E 80 00 20 */	blr 
+/* 8016A6E8 00166388  4E 80 00 20 */	blr
 
 .global "SetState__12StateMachineFP17StateMachineState"
 "SetState__12StateMachineFP17StateMachineState":
@@ -457,7 +457,7 @@ lbl_8016A6D0:
 /* 8016A714 001663B4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016A718 001663B8  7C 08 03 A6 */	mtlr r0
 /* 8016A71C 001663BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A720 001663C0  4E 80 00 20 */	blr 
+/* 8016A720 001663C0  4E 80 00 20 */	blr
 
 .global "PushStatus__12StateMachineFv"
 "PushStatus__12StateMachineFv":
@@ -482,7 +482,7 @@ lbl_8016A74C:
 /* 8016A768 00166408  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8016A76C 0016640C  7C 08 03 A6 */	mtlr r0
 /* 8016A770 00166410  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A774 00166414  4E 80 00 20 */	blr 
+/* 8016A774 00166414  4E 80 00 20 */	blr
 
 .global "PopStatus__12StateMachineFv"
 "PopStatus__12StateMachineFv":
@@ -508,7 +508,7 @@ lbl_8016A74C:
 /* 8016A7C4 00166464  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016A7C8 00166468  7C 08 03 A6 */	mtlr r0
 /* 8016A7CC 0016646C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A7D0 00166470  4E 80 00 20 */	blr 
+/* 8016A7D0 00166470  4E 80 00 20 */	blr
 
 .global "StatusReset__18StateMachineStatusFv"
 "StatusReset__18StateMachineStatusFv":
@@ -520,7 +520,7 @@ lbl_8016A74C:
 /* 8016A7E8 00166488  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8016A7EC 0016648C  D0 03 00 10 */	stfs f0, 0x10(r3)
 /* 8016A7F0 00166490  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 8016A7F4 00166494  4E 80 00 20 */	blr 
+/* 8016A7F4 00166494  4E 80 00 20 */	blr
 
 .global "SetState__18StateMachineStatusFP17StateMachineState"
 "SetState__18StateMachineStatusFP17StateMachineState":
@@ -545,7 +545,7 @@ lbl_8016A74C:
 /* 8016A840 001664E0  7F C3 F3 78 */	mr r3, r30
 /* 8016A844 001664E4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8016A848 001664E8  7D 89 03 A6 */	mtctr r12
-/* 8016A84C 001664EC  4E 80 04 21 */	bctrl 
+/* 8016A84C 001664EC  4E 80 04 21 */	bctrl
 /* 8016A850 001664F0  7F C3 F3 78 */	mr r3, r30
 /* 8016A854 001664F4  38 80 00 04 */	li r4, 4
 /* 8016A858 001664F8  38 AD 86 70 */	addi r5, r13, lbl_805D4D50-_SDA_BASE_
@@ -563,7 +563,7 @@ lbl_8016A864:
 /* 8016A884 00166524  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016A888 00166528  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8016A88C 0016652C  7D 89 03 A6 */	mtctr r12
-/* 8016A890 00166530  4E 80 04 21 */	bctrl 
+/* 8016A890 00166530  4E 80 04 21 */	bctrl
 /* 8016A894 00166534  80 7D 00 00 */	lwz r3, 0(r29)
 /* 8016A898 00166538  38 BF C7 28 */	addi r5, r31, -14552
 /* 8016A89C 0016653C  38 80 00 02 */	li r4, 2
@@ -582,7 +582,7 @@ lbl_8016A8A4:
 /* 8016A8CC 0016656C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016A8D0 00166570  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8016A8D4 00166574  7D 89 03 A6 */	mtctr r12
-/* 8016A8D8 00166578  4E 80 04 21 */	bctrl 
+/* 8016A8D8 00166578  4E 80 04 21 */	bctrl
 /* 8016A8DC 0016657C  80 7D 00 00 */	lwz r3, 0(r29)
 /* 8016A8E0 00166580  38 80 00 01 */	li r4, 1
 /* 8016A8E4 00166584  38 AD 86 78 */	addi r5, r13, lbl_805D4D58-_SDA_BASE_
@@ -596,27 +596,27 @@ lbl_8016A8F4:
 /* 8016A900 001665A0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016A904 001665A4  7C 08 03 A6 */	mtlr r0
 /* 8016A908 001665A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016A90C 001665AC  4E 80 00 20 */	blr 
+/* 8016A90C 001665AC  4E 80 00 20 */	blr
 
 .global "AddToSecondsBeforeNextState__18StateMachineStatusFf"
 "AddToSecondsBeforeNextState__18StateMachineStatusFf":
 /* 8016A910 001665B0  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 8016A914 001665B4  C0 42 89 30 */	lfs f2, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 8016A918 001665B8  FC 00 10 40 */	fcmpo cr0, f0, f2
-/* 8016A91C 001665BC  4C 81 00 20 */	blelr 
+/* 8016A91C 001665BC  4C 81 00 20 */	blelr
 /* 8016A920 001665C0  EC 00 08 2A */	fadds f0, f0, f1
 /* 8016A924 001665C4  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 8016A928 001665C8  D0 03 00 10 */	stfs f0, 0x10(r3)
-/* 8016A92C 001665CC  4C 80 00 20 */	bgelr 
+/* 8016A92C 001665CC  4C 80 00 20 */	bgelr
 /* 8016A930 001665D0  D0 43 00 10 */	stfs f2, 0x10(r3)
-/* 8016A934 001665D4  4E 80 00 20 */	blr 
+/* 8016A934 001665D4  4E 80 00 20 */	blr
 
 .global "AddToSecondsInCurState__18StateMachineStatusFf"
 "AddToSecondsInCurState__18StateMachineStatusFf":
 /* 8016A938 001665D8  C0 03 00 14 */	lfs f0, 0x14(r3)
 /* 8016A93C 001665DC  EC 00 08 2A */	fadds f0, f0, f1
 /* 8016A940 001665E0  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 8016A944 001665E4  4E 80 00 20 */	blr 
+/* 8016A944 001665E4  4E 80 00 20 */	blr
 
 .global "ShutdownCurState__18StateMachineStatusFv"
 "ShutdownCurState__18StateMachineStatusFv":
@@ -638,7 +638,7 @@ lbl_8016A8F4:
 /* 8016A984 00166624  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016A988 00166628  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8016A98C 0016662C  7D 89 03 A6 */	mtctr r12
-/* 8016A990 00166630  4E 80 04 21 */	bctrl 
+/* 8016A990 00166630  4E 80 04 21 */	bctrl
 /* 8016A994 00166634  80 7E 00 00 */	lwz r3, 0(r30)
 /* 8016A998 00166638  38 BF C7 28 */	addi r5, r31, -14552
 /* 8016A99C 0016663C  38 80 00 02 */	li r4, 2
@@ -651,7 +651,7 @@ lbl_8016A9AC:
 /* 8016A9B4 00166654  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016A9B8 00166658  7C 08 03 A6 */	mtlr r0
 /* 8016A9BC 0016665C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016A9C0 00166660  4E 80 00 20 */	blr 
+/* 8016A9C0 00166660  4E 80 00 20 */	blr
 
 .global "UpdateCurState__18StateMachineStatusFf"
 "UpdateCurState__18StateMachineStatusFf":
@@ -674,7 +674,7 @@ lbl_8016A9AC:
 /* 8016AA04 001666A4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016AA08 001666A8  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8016AA0C 001666AC  7D 89 03 A6 */	mtctr r12
-/* 8016AA10 001666B0  4E 80 04 21 */	bctrl 
+/* 8016AA10 001666B0  4E 80 04 21 */	bctrl
 /* 8016AA14 001666B4  80 7F 00 00 */	lwz r3, 0(r31)
 /* 8016AA18 001666B8  38 80 00 08 */	li r4, 8
 /* 8016AA1C 001666BC  38 AD 86 80 */	addi r5, r13, lbl_805D4D60-_SDA_BASE_
@@ -685,7 +685,7 @@ lbl_8016AA24:
 /* 8016AA2C 001666CC  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8016AA30 001666D0  7C 08 03 A6 */	mtlr r0
 /* 8016AA34 001666D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AA38 001666D8  4E 80 00 20 */	blr 
+/* 8016AA38 001666D8  4E 80 00 20 */	blr
 
 .global "DrawCurState__18StateMachineStatusFP3ERC"
 "DrawCurState__18StateMachineStatusFP3ERC":
@@ -708,7 +708,7 @@ lbl_8016AA24:
 /* 8016AA7C 0016671C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016AA80 00166720  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 8016AA84 00166724  7D 89 03 A6 */	mtctr r12
-/* 8016AA88 00166728  4E 80 04 21 */	bctrl 
+/* 8016AA88 00166728  4E 80 04 21 */	bctrl
 /* 8016AA8C 0016672C  80 7E 00 00 */	lwz r3, 0(r30)
 /* 8016AA90 00166730  38 80 00 10 */	li r4, 0x10
 /* 8016AA94 00166734  38 AD 86 88 */	addi r5, r13, lbl_805D4D68-_SDA_BASE_
@@ -719,7 +719,7 @@ lbl_8016AA9C:
 /* 8016AAA4 00166744  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016AAA8 00166748  7C 08 03 A6 */	mtlr r0
 /* 8016AAAC 0016674C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016AAB0 00166750  4E 80 00 20 */	blr 
+/* 8016AAB0 00166750  4E 80 00 20 */	blr
 
 .global "DrawTopmostCurState__18StateMachineStatusFP3ERC"
 "DrawTopmostCurState__18StateMachineStatusFP3ERC":
@@ -744,7 +744,7 @@ lbl_8016AA9C:
 /* 8016AAFC 0016679C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016AB00 001667A0  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 8016AB04 001667A4  7D 89 03 A6 */	mtctr r12
-/* 8016AB08 001667A8  4E 80 04 21 */	bctrl 
+/* 8016AB08 001667A8  4E 80 04 21 */	bctrl
 /* 8016AB0C 001667AC  80 7D 00 00 */	lwz r3, 0(r29)
 /* 8016AB10 001667B0  38 BF C7 34 */	addi r5, r31, -14540
 /* 8016AB14 001667B4  38 80 00 20 */	li r4, 0x20
@@ -756,7 +756,7 @@ lbl_8016AB1C:
 /* 8016AB28 001667C8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016AB2C 001667CC  7C 08 03 A6 */	mtlr r0
 /* 8016AB30 001667D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AB34 001667D4  4E 80 00 20 */	blr 
+/* 8016AB34 001667D4  4E 80 00 20 */	blr
 
 .global "FindMachineById__19StateMachineManagerFi"
 "FindMachineById__19StateMachineManagerFi":
@@ -796,7 +796,7 @@ lbl_8016AB9C:
 /* 8016ABAC 0016684C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8016ABB0 00166850  7C 08 03 A6 */	mtlr r0
 /* 8016ABB4 00166854  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016ABB8 00166858  4E 80 00 20 */	blr 
+/* 8016ABB8 00166858  4E 80 00 20 */	blr
 
 .global "FindMachine__19StateMachineManagerFPC12StateMachine"
 "FindMachine__19StateMachineManagerFPC12StateMachine":
@@ -831,7 +831,7 @@ lbl_8016AC10:
 /* 8016AC1C 001668BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016AC20 001668C0  7C 08 03 A6 */	mtlr r0
 /* 8016AC24 001668C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AC28 001668C8  4E 80 00 20 */	blr 
+/* 8016AC28 001668C8  4E 80 00 20 */	blr
 
 .global "Startup__19StateMachineManagerFv"
 "Startup__19StateMachineManagerFv":
@@ -848,7 +848,7 @@ lbl_8016AC4C:
 /* 8016AC50 001668F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016AC54 001668F4  7C 08 03 A6 */	mtlr r0
 /* 8016AC58 001668F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016AC5C 001668FC  4E 80 00 20 */	blr 
+/* 8016AC5C 001668FC  4E 80 00 20 */	blr
 
 .global "Shutdown__19StateMachineManagerFv"
 "Shutdown__19StateMachineManagerFv":
@@ -861,7 +861,7 @@ lbl_8016AC4C:
 /* 8016AC78 00166918  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016AC7C 0016691C  7C 08 03 A6 */	mtlr r0
 /* 8016AC80 00166920  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016AC84 00166924  4E 80 00 20 */	blr 
+/* 8016AC84 00166924  4E 80 00 20 */	blr
 
 .global "UpdateMachine__19StateMachineManagerFf"
 "UpdateMachine__19StateMachineManagerFf":
@@ -882,7 +882,7 @@ lbl_8016ACB4:
 /* 8016ACBC 0016695C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016ACC0 00166960  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8016ACC4 00166964  7D 89 03 A6 */	mtctr r12
-/* 8016ACC8 00166968  4E 80 04 21 */	bctrl 
+/* 8016ACC8 00166968  4E 80 04 21 */	bctrl
 /* 8016ACCC 0016696C  3B FF 00 04 */	addi r31, r31, 4
 lbl_8016ACD0:
 /* 8016ACD0 00166970  7F C3 F3 78 */	mr r3, r30
@@ -895,15 +895,15 @@ lbl_8016ACD0:
 /* 8016ACEC 0016698C  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 8016ACF0 00166990  7C 08 03 A6 */	mtlr r0
 /* 8016ACF4 00166994  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016ACF8 00166998  4E 80 00 20 */	blr 
+/* 8016ACF8 00166998  4E 80 00 20 */	blr
 
 .global "UpdateMachines__19StateMachineManagerFf"
 "UpdateMachines__19StateMachineManagerFf":
 /* 8016ACFC 0016699C  80 6D B6 A8 */	lwz r3, "s_pStateMachineManager__19StateMachineManager"-_SDA_BASE_(r13)
 /* 8016AD00 001669A0  2C 03 00 00 */	cmpwi r3, 0
-/* 8016AD04 001669A4  4D 82 00 20 */	beqlr 
+/* 8016AD04 001669A4  4D 82 00 20 */	beqlr
 /* 8016AD08 001669A8  4B FF FF 80 */	b "UpdateMachine__19StateMachineManagerFf"
-/* 8016AD0C 001669AC  4E 80 00 20 */	blr 
+/* 8016AD0C 001669AC  4E 80 00 20 */	blr
 
 .global "DrawMachine__19StateMachineManagerFP3ERC"
 "DrawMachine__19StateMachineManagerFP3ERC":
@@ -924,7 +924,7 @@ lbl_8016AD3C:
 /* 8016AD44 001669E4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016AD48 001669E8  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 8016AD4C 001669EC  7D 89 03 A6 */	mtctr r12
-/* 8016AD50 001669F0  4E 80 04 21 */	bctrl 
+/* 8016AD50 001669F0  4E 80 04 21 */	bctrl
 /* 8016AD54 001669F4  3B FF 00 04 */	addi r31, r31, 4
 lbl_8016AD58:
 /* 8016AD58 001669F8  7F A3 EB 78 */	mr r3, r29
@@ -937,7 +937,7 @@ lbl_8016AD58:
 /* 8016AD74 00166A14  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016AD78 00166A18  7C 08 03 A6 */	mtlr r0
 /* 8016AD7C 00166A1C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AD80 00166A20  4E 80 00 20 */	blr 
+/* 8016AD80 00166A20  4E 80 00 20 */	blr
 
 .global "DrawTopmostMachine__19StateMachineManagerFP3ERC"
 "DrawTopmostMachine__19StateMachineManagerFP3ERC":
@@ -958,7 +958,7 @@ lbl_8016ADB0:
 /* 8016ADB8 00166A58  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016ADBC 00166A5C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 8016ADC0 00166A60  7D 89 03 A6 */	mtctr r12
-/* 8016ADC4 00166A64  4E 80 04 21 */	bctrl 
+/* 8016ADC4 00166A64  4E 80 04 21 */	bctrl
 /* 8016ADC8 00166A68  3B FF 00 04 */	addi r31, r31, 4
 lbl_8016ADCC:
 /* 8016ADCC 00166A6C  7F A3 EB 78 */	mr r3, r29
@@ -971,98 +971,98 @@ lbl_8016ADCC:
 /* 8016ADE8 00166A88  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016ADEC 00166A8C  7C 08 03 A6 */	mtlr r0
 /* 8016ADF0 00166A90  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016ADF4 00166A94  4E 80 00 20 */	blr 
+/* 8016ADF4 00166A94  4E 80 00 20 */	blr
 
 .global "DrawMachines__19StateMachineManagerFP3ERC"
 "DrawMachines__19StateMachineManagerFP3ERC":
 /* 8016ADF8 00166A98  80 0D B6 A8 */	lwz r0, "s_pStateMachineManager__19StateMachineManager"-_SDA_BASE_(r13)
 /* 8016ADFC 00166A9C  7C 64 1B 78 */	mr r4, r3
 /* 8016AE00 00166AA0  2C 00 00 00 */	cmpwi r0, 0
-/* 8016AE04 00166AA4  4D 82 00 20 */	beqlr 
+/* 8016AE04 00166AA4  4D 82 00 20 */	beqlr
 /* 8016AE08 00166AA8  7C 03 03 78 */	mr r3, r0
 /* 8016AE0C 00166AAC  4B FF FF 04 */	b "DrawMachine__19StateMachineManagerFP3ERC"
-/* 8016AE10 00166AB0  4E 80 00 20 */	blr 
+/* 8016AE10 00166AB0  4E 80 00 20 */	blr
 
 .global "DrawTopmostMachines__19StateMachineManagerFP3ERC"
 "DrawTopmostMachines__19StateMachineManagerFP3ERC":
 /* 8016AE14 00166AB4  80 0D B6 A8 */	lwz r0, "s_pStateMachineManager__19StateMachineManager"-_SDA_BASE_(r13)
 /* 8016AE18 00166AB8  7C 64 1B 78 */	mr r4, r3
 /* 8016AE1C 00166ABC  2C 00 00 00 */	cmpwi r0, 0
-/* 8016AE20 00166AC0  4D 82 00 20 */	beqlr 
+/* 8016AE20 00166AC0  4D 82 00 20 */	beqlr
 /* 8016AE24 00166AC4  7C 03 03 78 */	mr r3, r0
 /* 8016AE28 00166AC8  4B FF FF 5C */	b "DrawTopmostMachine__19StateMachineManagerFP3ERC"
-/* 8016AE2C 00166ACC  4E 80 00 20 */	blr 
+/* 8016AE2C 00166ACC  4E 80 00 20 */	blr
 
 .global "GetReturnVal__12StateMachineCFv"
 "GetReturnVal__12StateMachineCFv":
 /* 8016AE30 00166AD0  80 63 00 70 */	lwz r3, 0x70(r3)
-/* 8016AE34 00166AD4  4E 80 00 20 */	blr 
+/* 8016AE34 00166AD4  4E 80 00 20 */	blr
 
 .global "ResetReturnVal__12StateMachineFv"
 "ResetReturnVal__12StateMachineFv":
 /* 8016AE38 00166AD8  38 00 00 00 */	li r0, 0
 /* 8016AE3C 00166ADC  90 03 00 70 */	stw r0, 0x70(r3)
-/* 8016AE40 00166AE0  4E 80 00 20 */	blr 
+/* 8016AE40 00166AE0  4E 80 00 20 */	blr
 
 .global "CheckBaseCallFlag__17StateMachineStateFUiPCc"
 "CheckBaseCallFlag__17StateMachineStateFUiPCc":
-/* 8016AE44 00166AE4  4E 80 00 20 */	blr 
+/* 8016AE44 00166AE4  4E 80 00 20 */	blr
 
 .global "Reset__17StateMachineStateFv"
 "Reset__17StateMachineStateFv":
-/* 8016AE48 00166AE8  4E 80 00 20 */	blr 
+/* 8016AE48 00166AE8  4E 80 00 20 */	blr
 
 .global "ClearBaseCallFlag__17StateMachineStateCFUiPCc"
 "ClearBaseCallFlag__17StateMachineStateCFUiPCc":
-/* 8016AE4C 00166AEC  4E 80 00 20 */	blr 
+/* 8016AE4C 00166AEC  4E 80 00 20 */	blr
 
 .global "SetCallingState__18StateMachineStatusFP17StateMachineState"
 "SetCallingState__18StateMachineStatusFP17StateMachineState":
 /* 8016AE50 00166AF0  90 83 00 0C */	stw r4, 0xc(r3)
-/* 8016AE54 00166AF4  4E 80 00 20 */	blr 
+/* 8016AE54 00166AF4  4E 80 00 20 */	blr
 
 .global "IsPausedUpdate__12StateMachineCFv"
 "IsPausedUpdate__12StateMachineCFv":
 /* 8016AE58 00166AF8  88 63 00 24 */	lbz r3, 0x24(r3)
-/* 8016AE5C 00166AFC  4E 80 00 20 */	blr 
+/* 8016AE5C 00166AFC  4E 80 00 20 */	blr
 
 .global "IsEnabled__12StateMachineCFv"
 "IsEnabled__12StateMachineCFv":
 /* 8016AE60 00166B00  88 63 00 74 */	lbz r3, 0x74(r3)
-/* 8016AE64 00166B04  4E 80 00 20 */	blr 
+/* 8016AE64 00166B04  4E 80 00 20 */	blr
 
 .global "Update__17StateMachineStateFf"
 "Update__17StateMachineStateFf":
-/* 8016AE68 00166B08  4E 80 00 20 */	blr 
+/* 8016AE68 00166B08  4E 80 00 20 */	blr
 
 .global "Draw__17StateMachineStateFP3ERC"
 "Draw__17StateMachineStateFP3ERC":
-/* 8016AE6C 00166B0C  4E 80 00 20 */	blr 
+/* 8016AE6C 00166B0C  4E 80 00 20 */	blr
 
 .global "DrawTopmost__17StateMachineStateFP3ERC"
 "DrawTopmost__17StateMachineStateFP3ERC":
-/* 8016AE70 00166B10  4E 80 00 20 */	blr 
+/* 8016AE70 00166B10  4E 80 00 20 */	blr
 
 .global "SetNextState__18StateMachineStatusFP17StateMachineStatef"
 "SetNextState__18StateMachineStatusFP17StateMachineStatef":
 /* 8016AE74 00166B14  90 83 00 04 */	stw r4, 4(r3)
 /* 8016AE78 00166B18  D0 23 00 10 */	stfs f1, 0x10(r3)
-/* 8016AE7C 00166B1C  4E 80 00 20 */	blr 
+/* 8016AE7C 00166B1C  4E 80 00 20 */	blr
 
 .global "GetStateId__17StateMachineStateCFv"
 "GetStateId__17StateMachineStateCFv":
 /* 8016AE80 00166B20  80 63 00 04 */	lwz r3, 4(r3)
-/* 8016AE84 00166B24  4E 80 00 20 */	blr 
+/* 8016AE84 00166B24  4E 80 00 20 */	blr
 
 .global "GetCurState__18StateMachineStatusCFv"
 "GetCurState__18StateMachineStatusCFv":
 /* 8016AE88 00166B28  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016AE8C 00166B2C  4E 80 00 20 */	blr 
+/* 8016AE8C 00166B2C  4E 80 00 20 */	blr
 
 .global "GetStage__17StateMachineStateCFv"
 "GetStage__17StateMachineStateCFv":
 /* 8016AE90 00166B30  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 8016AE94 00166B34  4E 80 00 20 */	blr 
+/* 8016AE94 00166B34  4E 80 00 20 */	blr
 
 .global "__dt__17StateMachineStateFv"
 "__dt__17StateMachineStateFv":
@@ -1082,12 +1082,12 @@ lbl_8016AEC0:
 /* 8016AEC8 00166B68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016AECC 00166B6C  7C 08 03 A6 */	mtlr r0
 /* 8016AED0 00166B70  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016AED4 00166B74  4E 80 00 20 */	blr 
+/* 8016AED4 00166B74  4E 80 00 20 */	blr
 
 .global "GetSecondsInCurState__18StateMachineStatusCFv"
 "GetSecondsInCurState__18StateMachineStatusCFv":
 /* 8016AED8 00166B78  C0 23 00 14 */	lfs f1, 0x14(r3)
-/* 8016AEDC 00166B7C  4E 80 00 20 */	blr 
+/* 8016AEDC 00166B7C  4E 80 00 20 */	blr
 
 .global "__ct__18StateMachineStatusFv"
 "__ct__18StateMachineStatusFv":
@@ -1099,7 +1099,7 @@ lbl_8016AEC0:
 /* 8016AEF4 00166B94  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8016AEF8 00166B98  D0 03 00 10 */	stfs f0, 0x10(r3)
 /* 8016AEFC 00166B9C  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 8016AF00 00166BA0  4E 80 00 20 */	blr 
+/* 8016AF00 00166BA0  4E 80 00 20 */	blr
 
 .global "__dt__18StateMachineStatusFv"
 "__dt__18StateMachineStatusFv":
@@ -1119,20 +1119,20 @@ lbl_8016AF2C:
 /* 8016AF34 00166BD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016AF38 00166BD8  7C 08 03 A6 */	mtlr r0
 /* 8016AF3C 00166BDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016AF40 00166BE0  4E 80 00 20 */	blr 
+/* 8016AF40 00166BE0  4E 80 00 20 */	blr
 
 .global "Startup__17StateMachineStateFv"
 "Startup__17StateMachineStateFv":
-/* 8016AF44 00166BE4  4E 80 00 20 */	blr 
+/* 8016AF44 00166BE4  4E 80 00 20 */	blr
 
 .global "Shutdown__17StateMachineStateFv"
 "Shutdown__17StateMachineStateFv":
-/* 8016AF48 00166BE8  4E 80 00 20 */	blr 
+/* 8016AF48 00166BE8  4E 80 00 20 */	blr
 
 .global "GetMachineId__12StateMachineCFv"
 "GetMachineId__12StateMachineCFv":
 /* 8016AF4C 00166BEC  80 63 00 1C */	lwz r3, 0x1c(r3)
-/* 8016AF50 00166BF0  4E 80 00 20 */	blr 
+/* 8016AF50 00166BF0  4E 80 00 20 */	blr
 
 .global "__ct__19StateMachineManagerFv"
 "__ct__19StateMachineManagerFv":
@@ -1153,7 +1153,7 @@ lbl_8016AF2C:
 /* 8016AF8C 00166C2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016AF90 00166C30  7C 08 03 A6 */	mtlr r0
 /* 8016AF94 00166C34  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AF98 00166C38  4E 80 00 20 */	blr 
+/* 8016AF98 00166C38  4E 80 00 20 */	blr
 
 .global "RemoveAllMachines__19StateMachineManagerFv"
 "RemoveAllMachines__19StateMachineManagerFv":
@@ -1180,24 +1180,24 @@ lbl_8016AFE8:
 /* 8016AFE8 00166C88  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016AFEC 00166C8C  7C 08 03 A6 */	mtlr r0
 /* 8016AFF0 00166C90  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016AFF4 00166C94  4E 80 00 20 */	blr 
+/* 8016AFF4 00166C94  4E 80 00 20 */	blr
 
 .global "SetStage__17StateMachineStateFi"
 "SetStage__17StateMachineStateFi":
 /* 8016AFF8 00166C98  90 83 00 10 */	stw r4, 0x10(r3)
-/* 8016AFFC 00166C9C  4E 80 00 20 */	blr 
+/* 8016AFFC 00166C9C  4E 80 00 20 */	blr
 
 .global "NextStage__17StateMachineStateFi"
 "NextStage__17StateMachineStateFi":
 /* 8016B000 00166CA0  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 8016B004 00166CA4  7C 00 22 14 */	add r0, r0, r4
 /* 8016B008 00166CA8  90 03 00 10 */	stw r0, 0x10(r3)
-/* 8016B00C 00166CAC  4E 80 00 20 */	blr 
+/* 8016B00C 00166CAC  4E 80 00 20 */	blr
 
 .global "GetStateMachine__17StateMachineStateFv"
 "GetStateMachine__17StateMachineStateFv":
 /* 8016B010 00166CB0  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8016B014 00166CB4  4E 80 00 20 */	blr 
+/* 8016B014 00166CB4  4E 80 00 20 */	blr
 
 .global "__ct__17StateMachineStateFii"
 "__ct__17StateMachineStateFii":
@@ -1213,7 +1213,7 @@ lbl_8016AFE8:
 /* 8016B03C 00166CDC  90 C3 00 10 */	stw r6, 0x10(r3)
 /* 8016B040 00166CE0  90 E3 00 14 */	stw r7, 0x14(r3)
 /* 8016B044 00166CE4  98 03 00 18 */	stb r0, 0x18(r3)
-/* 8016B048 00166CE8  4E 80 00 20 */	blr 
+/* 8016B048 00166CE8  4E 80 00 20 */	blr
 
 .global "Startup__12StateMachineFv"
 "Startup__12StateMachineFv":
@@ -1234,7 +1234,7 @@ lbl_8016AFE8:
 /* 8016B078 00166D18  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016B07C 00166D1C  7C 08 03 A6 */	mtlr r0
 /* 8016B080 00166D20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B084 00166D24  4E 80 00 20 */	blr 
+/* 8016B084 00166D24  4E 80 00 20 */	blr
 
 .global "Reset__12StateMachineFv"
 "Reset__12StateMachineFv":
@@ -1243,7 +1243,7 @@ lbl_8016AFE8:
 .global "GetManager__19StateMachineManagerFv"
 "GetManager__19StateMachineManagerFv":
 /* 8016B08C 00166D2C  80 6D B6 A8 */	lwz r3, "s_pStateMachineManager__19StateMachineManager"-_SDA_BASE_(r13)
-/* 8016B090 00166D30  4E 80 00 20 */	blr 
+/* 8016B090 00166D30  4E 80 00 20 */	blr
 
 .global "__dt__12StateMachineFv"
 "__dt__12StateMachineFv":
@@ -1279,7 +1279,7 @@ lbl_8016B0F8:
 /* 8016B104 00166DA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B108 00166DA8  7C 08 03 A6 */	mtlr r0
 /* 8016B10C 00166DAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B110 00166DB0  4E 80 00 20 */	blr 
+/* 8016B110 00166DB0  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl87stack<P18StateMachineStatus,Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>>Fv"
 "__dt__Q25eastl87stack<P18StateMachineStatus,Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>>Fv":
@@ -1305,7 +1305,7 @@ lbl_8016B150:
 /* 8016B15C 00166DFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B160 00166E00  7C 08 03 A6 */	mtlr r0
 /* 8016B164 00166E04  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B168 00166E08  4E 80 00 20 */	blr 
+/* 8016B168 00166E08  4E 80 00 20 */	blr
 
 .global "__ct__12StateMachineFii"
 "__ct__12StateMachineFii":
@@ -1352,36 +1352,36 @@ lbl_8016B150:
 /* 8016B20C 00166EAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016B210 00166EB0  7C 08 03 A6 */	mtlr r0
 /* 8016B214 00166EB4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016B218 00166EB8  4E 80 00 20 */	blr 
+/* 8016B218 00166EB8  4E 80 00 20 */	blr
 
 .global "PauseUpdate__12StateMachineFv"
 "PauseUpdate__12StateMachineFv":
 /* 8016B21C 00166EBC  38 00 00 01 */	li r0, 1
 /* 8016B220 00166EC0  98 03 00 24 */	stb r0, 0x24(r3)
-/* 8016B224 00166EC4  4E 80 00 20 */	blr 
+/* 8016B224 00166EC4  4E 80 00 20 */	blr
 
 .global "UnpauseUpdate__12StateMachineFv"
 "UnpauseUpdate__12StateMachineFv":
 /* 8016B228 00166EC8  38 00 00 00 */	li r0, 0
 /* 8016B22C 00166ECC  98 03 00 24 */	stb r0, 0x24(r3)
-/* 8016B230 00166ED0  4E 80 00 20 */	blr 
+/* 8016B230 00166ED0  4E 80 00 20 */	blr
 
 .global "GetFrameDeltaTime__12StateMachineCFv"
 "GetFrameDeltaTime__12StateMachineCFv":
 /* 8016B234 00166ED4  C0 23 00 28 */	lfs f1, 0x28(r3)
-/* 8016B238 00166ED8  4E 80 00 20 */	blr 
+/* 8016B238 00166ED8  4E 80 00 20 */	blr
 
 .global "Disable__12StateMachineFv"
 "Disable__12StateMachineFv":
 /* 8016B23C 00166EDC  38 00 00 00 */	li r0, 0
 /* 8016B240 00166EE0  98 03 00 74 */	stb r0, 0x74(r3)
-/* 8016B244 00166EE4  4E 80 00 20 */	blr 
+/* 8016B244 00166EE4  4E 80 00 20 */	blr
 
 .global "Enable__12StateMachineFv"
 "Enable__12StateMachineFv":
 /* 8016B248 00166EE8  38 00 00 01 */	li r0, 1
 /* 8016B24C 00166EEC  98 03 00 74 */	stb r0, 0x74(r3)
-/* 8016B250 00166EF0  4E 80 00 20 */	blr 
+/* 8016B250 00166EF0  4E 80 00 20 */	blr
 
 .global "__dt__18TRCBatteryLowStateFv"
 "__dt__18TRCBatteryLowStateFv":
@@ -1407,7 +1407,7 @@ lbl_8016B290:
 /* 8016B29C 00166F3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B2A0 00166F40  7C 08 03 A6 */	mtlr r0
 /* 8016B2A4 00166F44  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B2A8 00166F48  4E 80 00 20 */	blr 
+/* 8016B2A8 00166F48  4E 80 00 20 */	blr
 
 .global "__dt__25TRCNunchukDisconnectStateFv"
 "__dt__25TRCNunchukDisconnectStateFv":
@@ -1433,7 +1433,7 @@ lbl_8016B2E8:
 /* 8016B2F4 00166F94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B2F8 00166F98  7C 08 03 A6 */	mtlr r0
 /* 8016B2FC 00166F9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B300 00166FA0  4E 80 00 20 */	blr 
+/* 8016B300 00166FA0  4E 80 00 20 */	blr
 
 .global "__dt__24TRCNunchukReconnectStateFv"
 "__dt__24TRCNunchukReconnectStateFv":
@@ -1459,7 +1459,7 @@ lbl_8016B340:
 /* 8016B34C 00166FEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B350 00166FF0  7C 08 03 A6 */	mtlr r0
 /* 8016B354 00166FF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B358 00166FF8  4E 80 00 20 */	blr 
+/* 8016B358 00166FF8  4E 80 00 20 */	blr
 
 .global "__dt__22TRCCoreDisconnectStateFv"
 "__dt__22TRCCoreDisconnectStateFv":
@@ -1485,7 +1485,7 @@ lbl_8016B398:
 /* 8016B3A4 00167044  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B3A8 00167048  7C 08 03 A6 */	mtlr r0
 /* 8016B3AC 0016704C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B3B0 00167050  4E 80 00 20 */	blr 
+/* 8016B3B0 00167050  4E 80 00 20 */	blr
 
 .global "__dt__13TRCDelayStateFv"
 "__dt__13TRCDelayStateFv":
@@ -1511,7 +1511,7 @@ lbl_8016B3F0:
 /* 8016B3FC 0016709C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B400 001670A0  7C 08 03 A6 */	mtlr r0
 /* 8016B404 001670A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B408 001670A8  4E 80 00 20 */	blr 
+/* 8016B408 001670A8  4E 80 00 20 */	blr
 
 .global "__dt__13TRCReadyStateFv"
 "__dt__13TRCReadyStateFv":
@@ -1537,7 +1537,7 @@ lbl_8016B448:
 /* 8016B454 001670F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B458 001670F8  7C 08 03 A6 */	mtlr r0
 /* 8016B45C 001670FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B460 00167100  4E 80 00 20 */	blr 
+/* 8016B460 00167100  4E 80 00 20 */	blr
 
 .global "__dt__20UrbzModeNewGameStateFv"
 "__dt__20UrbzModeNewGameStateFv":
@@ -1563,7 +1563,7 @@ lbl_8016B4A0:
 /* 8016B4AC 0016714C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B4B0 00167150  7C 08 03 A6 */	mtlr r0
 /* 8016B4B4 00167154  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B4B8 00167158  4E 80 00 20 */	blr 
+/* 8016B4B8 00167158  4E 80 00 20 */	blr
 
 .global "__dt__21StartScreenStartStateFv"
 "__dt__21StartScreenStartStateFv":
@@ -1589,7 +1589,7 @@ lbl_8016B4F8:
 /* 8016B504 001671A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B508 001671A8  7C 08 03 A6 */	mtlr r0
 /* 8016B50C 001671AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B510 001671B0  4E 80 00 20 */	blr 
+/* 8016B510 001671B0  4E 80 00 20 */	blr
 
 .global "__dt__30TheSimsStartScreenStateMachineFv"
 "__dt__30TheSimsStartScreenStateMachineFv":
@@ -1615,7 +1615,7 @@ lbl_8016B550:
 /* 8016B55C 001671FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B560 00167200  7C 08 03 A6 */	mtlr r0
 /* 8016B564 00167204  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B568 00167208  4E 80 00 20 */	blr 
+/* 8016B568 00167208  4E 80 00 20 */	blr
 
 .global "__dt__17NeighborhoodStateFv"
 "__dt__17NeighborhoodStateFv":
@@ -1641,7 +1641,7 @@ lbl_8016B5A8:
 /* 8016B5B4 00167254  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B5B8 00167258  7C 08 03 A6 */	mtlr r0
 /* 8016B5BC 0016725C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B5C0 00167260  4E 80 00 20 */	blr 
+/* 8016B5C0 00167260  4E 80 00 20 */	blr
 
 .global "__dt__17PreGameSetupStateFv"
 "__dt__17PreGameSetupStateFv":
@@ -1667,7 +1667,7 @@ lbl_8016B600:
 /* 8016B60C 001672AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B610 001672B0  7C 08 03 A6 */	mtlr r0
 /* 8016B614 001672B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B618 001672B8  4E 80 00 20 */	blr 
+/* 8016B618 001672B8  4E 80 00 20 */	blr
 
 .global "__dt__22InLevelCreateASimStateFv"
 "__dt__22InLevelCreateASimStateFv":
@@ -1693,7 +1693,7 @@ lbl_8016B658:
 /* 8016B664 00167304  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B668 00167308  7C 08 03 A6 */	mtlr r0
 /* 8016B66C 0016730C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B670 00167310  4E 80 00 20 */	blr 
+/* 8016B670 00167310  4E 80 00 20 */	blr
 
 .global "__dt__25PreGameCreateAFamilyStateFv"
 "__dt__25PreGameCreateAFamilyStateFv":
@@ -1719,7 +1719,7 @@ lbl_8016B6B0:
 /* 8016B6BC 0016735C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B6C0 00167360  7C 08 03 A6 */	mtlr r0
 /* 8016B6C4 00167364  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B6C8 00167368  4E 80 00 20 */	blr 
+/* 8016B6C8 00167368  4E 80 00 20 */	blr
 
 .global "__dt__12PreGameStateFv"
 "__dt__12PreGameStateFv":
@@ -1745,7 +1745,7 @@ lbl_8016B708:
 /* 8016B714 001673B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B718 001673B8  7C 08 03 A6 */	mtlr r0
 /* 8016B71C 001673BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B720 001673C0  4E 80 00 20 */	blr 
+/* 8016B720 001673C0  4E 80 00 20 */	blr
 
 .global "__dt__20ChangeHouseLoadHouseFv"
 "__dt__20ChangeHouseLoadHouseFv":
@@ -1771,7 +1771,7 @@ lbl_8016B760:
 /* 8016B76C 0016740C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B770 00167410  7C 08 03 A6 */	mtlr r0
 /* 8016B774 00167414  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B778 00167418  4E 80 00 20 */	blr 
+/* 8016B778 00167418  4E 80 00 20 */	blr
 
 .global "__dt__22ChangeHouseUnloadHouseFv"
 "__dt__22ChangeHouseUnloadHouseFv":
@@ -1797,7 +1797,7 @@ lbl_8016B7B8:
 /* 8016B7C4 00167464  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B7C8 00167468  7C 08 03 A6 */	mtlr r0
 /* 8016B7CC 0016746C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B7D0 00167470  4E 80 00 20 */	blr 
+/* 8016B7D0 00167470  4E 80 00 20 */	blr
 
 .global "__dt__20ChangeHouseSaveHouseFv"
 "__dt__20ChangeHouseSaveHouseFv":
@@ -1823,7 +1823,7 @@ lbl_8016B810:
 /* 8016B81C 001674BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B820 001674C0  7C 08 03 A6 */	mtlr r0
 /* 8016B824 001674C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B828 001674C8  4E 80 00 20 */	blr 
+/* 8016B828 001674C8  4E 80 00 20 */	blr
 
 .global "__dt__24ChangeHouseDemolishHouseFv"
 "__dt__24ChangeHouseDemolishHouseFv":
@@ -1849,7 +1849,7 @@ lbl_8016B868:
 /* 8016B874 00167514  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B878 00167518  7C 08 03 A6 */	mtlr r0
 /* 8016B87C 0016751C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B880 00167520  4E 80 00 20 */	blr 
+/* 8016B880 00167520  4E 80 00 20 */	blr
 
 .global "__dt__31LiveModeChangeHouseStateMachineFv"
 "__dt__31LiveModeChangeHouseStateMachineFv":
@@ -1875,7 +1875,7 @@ lbl_8016B8C0:
 /* 8016B8CC 0016756C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B8D0 00167570  7C 08 03 A6 */	mtlr r0
 /* 8016B8D4 00167574  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B8D8 00167578  4E 80 00 20 */	blr 
+/* 8016B8D8 00167578  4E 80 00 20 */	blr
 
 .global "__dt__17LiveModeInitStateFv"
 "__dt__17LiveModeInitStateFv":
@@ -1901,7 +1901,7 @@ lbl_8016B918:
 /* 8016B924 001675C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B928 001675C8  7C 08 03 A6 */	mtlr r0
 /* 8016B92C 001675CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B930 001675D0  4E 80 00 20 */	blr 
+/* 8016B930 001675D0  4E 80 00 20 */	blr
 
 .global "__dt__15TRCStateMachineFv"
 "__dt__15TRCStateMachineFv":
@@ -1927,7 +1927,7 @@ lbl_8016B970:
 /* 8016B97C 0016761C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B980 00167620  7C 08 03 A6 */	mtlr r0
 /* 8016B984 00167624  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B988 00167628  4E 80 00 20 */	blr 
+/* 8016B988 00167628  4E 80 00 20 */	blr
 
 .global "__dt__17InLevelStoryStateFv"
 "__dt__17InLevelStoryStateFv":
@@ -1953,7 +1953,7 @@ lbl_8016B9C8:
 /* 8016B9D4 00167674  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016B9D8 00167678  7C 08 03 A6 */	mtlr r0
 /* 8016B9DC 0016767C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016B9E0 00167680  4E 80 00 20 */	blr 
+/* 8016B9E0 00167680  4E 80 00 20 */	blr
 
 .global "__dt__22IrisTransitionOutStateFv"
 "__dt__22IrisTransitionOutStateFv":
@@ -1979,7 +1979,7 @@ lbl_8016BA20:
 /* 8016BA2C 001676CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BA30 001676D0  7C 08 03 A6 */	mtlr r0
 /* 8016BA34 001676D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BA38 001676D8  4E 80 00 20 */	blr 
+/* 8016BA38 001676D8  4E 80 00 20 */	blr
 
 .global "__dt__21IrisTransitionInStateFv"
 "__dt__21IrisTransitionInStateFv":
@@ -2005,7 +2005,7 @@ lbl_8016BA78:
 /* 8016BA84 00167724  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BA88 00167728  7C 08 03 A6 */	mtlr r0
 /* 8016BA8C 0016772C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BA90 00167730  4E 80 00 20 */	blr 
+/* 8016BA90 00167730  4E 80 00 20 */	blr
 
 .global "__dt__24LoadingScreenUpdateStateFv"
 "__dt__24LoadingScreenUpdateStateFv":
@@ -2031,7 +2031,7 @@ lbl_8016BAD0:
 /* 8016BADC 0016777C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BAE0 00167780  7C 08 03 A6 */	mtlr r0
 /* 8016BAE4 00167784  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BAE8 00167788  4E 80 00 20 */	blr 
+/* 8016BAE8 00167788  4E 80 00 20 */	blr
 
 .global "__dt__32LoadingScreenWaitingForLoadStateFv"
 "__dt__32LoadingScreenWaitingForLoadStateFv":
@@ -2057,7 +2057,7 @@ lbl_8016BB28:
 /* 8016BB34 001677D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BB38 001677D8  7C 08 03 A6 */	mtlr r0
 /* 8016BB3C 001677DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BB40 001677E0  4E 80 00 20 */	blr 
+/* 8016BB40 001677E0  4E 80 00 20 */	blr
 
 .global "__dt__19TheSimsStateMachineFv"
 "__dt__19TheSimsStateMachineFv":
@@ -2083,7 +2083,7 @@ lbl_8016BB80:
 /* 8016BB8C 0016782C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BB90 00167830  7C 08 03 A6 */	mtlr r0
 /* 8016BB94 00167834  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BB98 00167838  4E 80 00 20 */	blr 
+/* 8016BB98 00167838  4E 80 00 20 */	blr
 
 .global "push__Q25eastl87stack<P18StateMachineStatus,Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>>FRCP18StateMachineStatus"
 "push__Q25eastl87stack<P18StateMachineStatus,Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>>FRCP18StateMachineStatus":
@@ -2116,11 +2116,11 @@ lbl_8016BB80:
 /* 8016BBE0 00167880  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016BBE4 00167884  7C 08 03 A6 */	mtlr r0
 /* 8016BBE8 00167888  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016BBEC 0016788C  4E 80 00 20 */	blr 
+/* 8016BBEC 0016788C  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStatePP17StateMachineState"
 "DoDestroyValues__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStatePP17StateMachineState":
-/* 8016BBF0 00167890  4E 80 00 20 */	blr 
+/* 8016BBF0 00167890  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCP17StateMachineState"
 "push_back__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCP17StateMachineState":
@@ -2152,7 +2152,7 @@ lbl_8016BC4C:
 /* 8016BC50 001678F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016BC54 001678F4  7C 08 03 A6 */	mtlr r0
 /* 8016BC58 001678F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BC5C 001678FC  4E 80 00 20 */	blr 
+/* 8016BC5C 001678FC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv"
 "__dt__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv":
@@ -2182,7 +2182,7 @@ lbl_8016BCAC:
 /* 8016BCB8 00167958  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BCBC 0016795C  7C 08 03 A6 */	mtlr r0
 /* 8016BCC0 00167960  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BCC4 00167964  4E 80 00 20 */	blr 
+/* 8016BCC4 00167964  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>Fv"
 "__dt__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>Fv":
@@ -2217,7 +2217,7 @@ lbl_8016BD24:
 /* 8016BD30 001679D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BD34 001679D4  7C 08 03 A6 */	mtlr r0
 /* 8016BD38 001679D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BD3C 001679DC  4E 80 00 20 */	blr 
+/* 8016BD3C 001679DC  4E 80 00 20 */	blr
 
 .global "swap__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>"
 "swap__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>":
@@ -2262,7 +2262,7 @@ lbl_8016BDC8:
 /* 8016BDD0 00167A70  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8016BDD4 00167A74  7C 08 03 A6 */	mtlr r0
 /* 8016BDD8 00167A78  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016BDDC 00167A7C  4E 80 00 20 */	blr 
+/* 8016BDDC 00167A7C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>"
 "__ct__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>":
@@ -2290,7 +2290,7 @@ lbl_8016BDC8:
 /* 8016BE34 00167AD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BE38 00167AD8  7C 08 03 A6 */	mtlr r0
 /* 8016BE3C 00167ADC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BE40 00167AE0  4E 80 00 20 */	blr 
+/* 8016BE40 00167AE0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -2318,7 +2318,7 @@ lbl_8016BDC8:
 /* 8016BE98 00167B38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BE9C 00167B3C  7C 08 03 A6 */	mtlr r0
 /* 8016BEA0 00167B40  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BEA4 00167B44  4E 80 00 20 */	blr 
+/* 8016BEA4 00167B44  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUl":
@@ -2331,7 +2331,7 @@ lbl_8016BDC8:
 /* 8016BEC0 00167B60  4B EA C2 74 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8016BEC4:
 /* 8016BEC4 00167B64  38 60 00 00 */	li r3, 0
-/* 8016BEC8 00167B68  4E 80 00 20 */	blr 
+/* 8016BEC8 00167B68  4E 80 00 20 */	blr
 
 .global "size__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>CFv"
 "size__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>CFv":
@@ -2340,7 +2340,7 @@ lbl_8016BEC4:
 /* 8016BED4 00167B74  7C 04 00 50 */	subf r0, r4, r0
 /* 8016BED8 00167B78  7C 00 16 70 */	srawi r0, r0, 2
 /* 8016BEDC 00167B7C  7C 60 01 94 */	addze r3, r0
-/* 8016BEE0 00167B80  4E 80 00 20 */	blr 
+/* 8016BEE0 00167B80  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2355,7 +2355,7 @@ lbl_8016BEC4:
 /* 8016BF04 00167BA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BF08 00167BA8  7C 08 03 A6 */	mtlr r0
 /* 8016BF0C 00167BAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BF10 00167BB0  4E 80 00 20 */	blr 
+/* 8016BF10 00167BB0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2375,17 +2375,17 @@ lbl_8016BEC4:
 /* 8016BF48 00167BE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016BF4C 00167BEC  7C 08 03 A6 */	mtlr r0
 /* 8016BF50 00167BF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BF54 00167BF4  4E 80 00 20 */	blr 
+/* 8016BF54 00167BF4  4E 80 00 20 */	blr
 
 .global "end__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv"
 "end__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv":
 /* 8016BF58 00167BF8  80 63 00 04 */	lwz r3, 4(r3)
-/* 8016BF5C 00167BFC  4E 80 00 20 */	blr 
+/* 8016BF5C 00167BFC  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv"
 "begin__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>Fv":
 /* 8016BF60 00167C00  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016BF64 00167C04  4E 80 00 20 */	blr 
+/* 8016BF64 00167C04  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FRCP18StateMachineStatus"
 "push_back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FRCP18StateMachineStatus":
@@ -2417,7 +2417,7 @@ lbl_8016BFC0:
 /* 8016BFC4 00167C64  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016BFC8 00167C68  7C 08 03 A6 */	mtlr r0
 /* 8016BFCC 00167C6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016BFD0 00167C70  4E 80 00 20 */	blr 
+/* 8016BFD0 00167C70  4E 80 00 20 */	blr
 
 .global "__as__18StateMachineStatusFRC18StateMachineStatus"
 "__as__18StateMachineStatusFRC18StateMachineStatus":
@@ -2433,30 +2433,30 @@ lbl_8016BFC0:
 /* 8016BFF8 00167C98  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8016BFFC 00167C9C  D0 23 00 10 */	stfs f1, 0x10(r3)
 /* 8016C000 00167CA0  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 8016C004 00167CA4  4E 80 00 20 */	blr 
+/* 8016C004 00167CA4  4E 80 00 20 */	blr
 
 .global "pop_back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv"
 "pop_back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv":
 /* 8016C008 00167CA8  80 83 00 04 */	lwz r4, 4(r3)
 /* 8016C00C 00167CAC  38 04 FF FC */	addi r0, r4, -4
 /* 8016C010 00167CB0  90 03 00 04 */	stw r0, 4(r3)
-/* 8016C014 00167CB4  4E 80 00 20 */	blr 
+/* 8016C014 00167CB4  4E 80 00 20 */	blr
 
 .global "back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv"
 "back__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv":
 /* 8016C018 00167CB8  80 63 00 04 */	lwz r3, 4(r3)
 /* 8016C01C 00167CBC  38 63 FF FC */	addi r3, r3, -4
-/* 8016C020 00167CC0  4E 80 00 20 */	blr 
+/* 8016C020 00167CC0  4E 80 00 20 */	blr
 
 .global "end__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv"
 "end__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv":
 /* 8016C024 00167CC4  80 63 00 04 */	lwz r3, 4(r3)
-/* 8016C028 00167CC8  4E 80 00 20 */	blr 
+/* 8016C028 00167CC8  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv"
 "begin__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv":
 /* 8016C02C 00167CCC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016C030 00167CD0  4E 80 00 20 */	blr 
+/* 8016C030 00167CD0  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv"
 "__dt__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>Fv":
@@ -2486,7 +2486,7 @@ lbl_8016C080:
 /* 8016C08C 00167D2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C090 00167D30  7C 08 03 A6 */	mtlr r0
 /* 8016C094 00167D34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C098 00167D38  4E 80 00 20 */	blr 
+/* 8016C098 00167D38  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>Fv"
 "__dt__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>Fv":
@@ -2521,11 +2521,11 @@ lbl_8016C0F8:
 /* 8016C104 00167DA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C108 00167DA8  7C 08 03 A6 */	mtlr r0
 /* 8016C10C 00167DAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C110 00167DB0  4E 80 00 20 */	blr 
+/* 8016C110 00167DB0  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FPP12StateMachinePP12StateMachine"
 "DoDestroyValues__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FPP12StateMachinePP12StateMachine":
-/* 8016C114 00167DB4  4E 80 00 20 */	blr 
+/* 8016C114 00167DB4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2540,7 +2540,7 @@ lbl_8016C0F8:
 /* 8016C138 00167DD8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C13C 00167DDC  7C 08 03 A6 */	mtlr r0
 /* 8016C140 00167DE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C144 00167DE4  4E 80 00 20 */	blr 
+/* 8016C144 00167DE4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2560,7 +2560,7 @@ lbl_8016C0F8:
 /* 8016C17C 00167E1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C180 00167E20  7C 08 03 A6 */	mtlr r0
 /* 8016C184 00167E24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C188 00167E28  4E 80 00 20 */	blr 
+/* 8016C188 00167E28  4E 80 00 20 */	blr
 
 .global "swap__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRQ25eastl42vector<P12StateMachine,Q25eastl9allocator>"
 "swap__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRQ25eastl42vector<P12StateMachine,Q25eastl9allocator>":
@@ -2605,7 +2605,7 @@ lbl_8016C214:
 /* 8016C21C 00167EBC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8016C220 00167EC0  7C 08 03 A6 */	mtlr r0
 /* 8016C224 00167EC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C228 00167EC8  4E 80 00 20 */	blr 
+/* 8016C228 00167EC8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl42vector<P12StateMachine,Q25eastl9allocator>"
 "__ct__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl42vector<P12StateMachine,Q25eastl9allocator>":
@@ -2633,7 +2633,7 @@ lbl_8016C214:
 /* 8016C280 00167F20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C284 00167F24  7C 08 03 A6 */	mtlr r0
 /* 8016C288 00167F28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C28C 00167F2C  4E 80 00 20 */	blr 
+/* 8016C28C 00167F2C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -2661,7 +2661,7 @@ lbl_8016C214:
 /* 8016C2E4 00167F84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C2E8 00167F88  7C 08 03 A6 */	mtlr r0
 /* 8016C2EC 00167F8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C2F0 00167F90  4E 80 00 20 */	blr 
+/* 8016C2F0 00167F90  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FUl":
@@ -2674,7 +2674,7 @@ lbl_8016C214:
 /* 8016C30C 00167FAC  4B EA BE 28 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8016C310:
 /* 8016C310 00167FB0  38 60 00 00 */	li r3, 0
-/* 8016C314 00167FB4  4E 80 00 20 */	blr 
+/* 8016C314 00167FB4  4E 80 00 20 */	blr
 
 .global "size__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>CFv"
 "size__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>CFv":
@@ -2683,7 +2683,7 @@ lbl_8016C310:
 /* 8016C320 00167FC0  7C 04 00 50 */	subf r0, r4, r0
 /* 8016C324 00167FC4  7C 00 16 70 */	srawi r0, r0, 2
 /* 8016C328 00167FC8  7C 60 01 94 */	addze r3, r0
-/* 8016C32C 00167FCC  4E 80 00 20 */	blr 
+/* 8016C32C 00167FCC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv"
 "__dt__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>Fv":
@@ -2713,7 +2713,7 @@ lbl_8016C37C:
 /* 8016C388 00168028  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C38C 0016802C  7C 08 03 A6 */	mtlr r0
 /* 8016C390 00168030  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C394 00168034  4E 80 00 20 */	blr 
+/* 8016C394 00168034  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>Fv"
 "__dt__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>Fv":
@@ -2748,11 +2748,11 @@ lbl_8016C3F4:
 /* 8016C400 001680A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C404 001680A4  7C 08 03 A6 */	mtlr r0
 /* 8016C408 001680A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C40C 001680AC  4E 80 00 20 */	blr 
+/* 8016C40C 001680AC  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusPP18StateMachineStatus"
 "DoDestroyValues__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusPP18StateMachineStatus":
-/* 8016C410 001680B0  4E 80 00 20 */	blr 
+/* 8016C410 001680B0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2767,7 +2767,7 @@ lbl_8016C3F4:
 /* 8016C434 001680D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C438 001680D8  7C 08 03 A6 */	mtlr r0
 /* 8016C43C 001680DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C440 001680E0  4E 80 00 20 */	blr 
+/* 8016C440 001680E0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -2787,7 +2787,7 @@ lbl_8016C3F4:
 /* 8016C478 00168118  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016C47C 0016811C  7C 08 03 A6 */	mtlr r0
 /* 8016C480 00168120  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016C484 00168124  4E 80 00 20 */	blr 
+/* 8016C484 00168124  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl37vector<P8PaneItem,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl37vector<P8PaneItem,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -2815,7 +2815,7 @@ lbl_8016C3F4:
 /* 8016C4DC 0016817C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016C4E0 00168180  7C 08 03 A6 */	mtlr r0
 /* 8016C4E4 00168184  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C4E8 00168188  4E 80 00 20 */	blr 
+/* 8016C4E8 00168188  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStateRCP17StateMachineState"
 "DoInsertValue__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStateRCP17StateMachineState":
@@ -2907,24 +2907,24 @@ lbl_8016C624:
 /* 8016C62C 001682CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016C630 001682D0  7C 08 03 A6 */	mtlr r0
 /* 8016C634 001682D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C638 001682D8  4E 80 00 20 */	blr 
+/* 8016C638 001682D8  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStateUl"
 "DoFree__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FPP17StateMachineStateUl":
 /* 8016C63C 001682DC  2C 04 00 00 */	cmpwi r4, 0
-/* 8016C640 001682E0  4D 82 00 20 */	beqlr 
+/* 8016C640 001682E0  4D 82 00 20 */	beqlr
 /* 8016C644 001682E4  54 A5 10 3A */	slwi r5, r5, 2
 /* 8016C648 001682E8  38 63 00 0C */	addi r3, r3, 0xc
 /* 8016C64C 001682EC  4B EA BA D8 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8016C650 001682F0  4E 80 00 20 */	blr 
+/* 8016C650 001682F0  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl51VectorBase<P17StateMachineState,Q25eastl9allocator>FUl":
 /* 8016C654 001682F4  2C 04 00 00 */	cmpwi r4, 0
 /* 8016C658 001682F8  38 60 00 01 */	li r3, 1
-/* 8016C65C 001682FC  4D 82 00 20 */	beqlr 
+/* 8016C65C 001682FC  4D 82 00 20 */	beqlr
 /* 8016C660 00168300  54 83 08 3C */	slwi r3, r4, 1
-/* 8016C664 00168304  4E 80 00 20 */	blr 
+/* 8016C664 00168304  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>"
 "__as__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FRCQ25eastl47vector<P17StateMachineState,Q25eastl9allocator>":
@@ -3013,7 +3013,7 @@ lbl_8016C790:
 /* 8016C7A0 00168440  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016C7A4 00168444  7C 08 03 A6 */	mtlr r0
 /* 8016C7A8 00168448  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C7AC 0016844C  4E 80 00 20 */	blr 
+/* 8016C7AC 0016844C  4E 80 00 20 */	blr
 
 .global "DoRealloc<PP17StateMachineState>__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FUlPP17StateMachineStatePP17StateMachineState_PP17StateMachineState"
 "DoRealloc<PP17StateMachineState>__Q25eastl47vector<P17StateMachineState,Q25eastl9allocator>FUlPP17StateMachineStatePP17StateMachineState_PP17StateMachineState":
@@ -3038,7 +3038,7 @@ lbl_8016C790:
 /* 8016C7F8 00168498  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016C7FC 0016849C  7C 08 03 A6 */	mtlr r0
 /* 8016C800 001684A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C804 001684A4  4E 80 00 20 */	blr 
+/* 8016C804 001684A4  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusRCP18StateMachineStatus"
 "DoInsertValue__Q25eastl48vector<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusRCP18StateMachineStatus":
@@ -3130,16 +3130,16 @@ lbl_8016C940:
 /* 8016C948 001685E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016C94C 001685EC  7C 08 03 A6 */	mtlr r0
 /* 8016C950 001685F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016C954 001685F4  4E 80 00 20 */	blr 
+/* 8016C954 001685F4  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusUl"
 "DoFree__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FPP18StateMachineStatusUl":
 /* 8016C958 001685F8  2C 04 00 00 */	cmpwi r4, 0
-/* 8016C95C 001685FC  4D 82 00 20 */	beqlr 
+/* 8016C95C 001685FC  4D 82 00 20 */	beqlr
 /* 8016C960 00168600  54 A5 10 3A */	slwi r5, r5, 2
 /* 8016C964 00168604  38 63 00 0C */	addi r3, r3, 0xc
 /* 8016C968 00168608  4B EA B7 BC */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8016C96C 0016860C  4E 80 00 20 */	blr 
+/* 8016C96C 0016860C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FUl":
@@ -3152,15 +3152,15 @@ lbl_8016C940:
 /* 8016C988 00168628  4B EA B7 AC */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8016C98C:
 /* 8016C98C 0016862C  38 60 00 00 */	li r3, 0
-/* 8016C990 00168630  4E 80 00 20 */	blr 
+/* 8016C990 00168630  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl52VectorBase<P18StateMachineStatus,Q25eastl9allocator>FUl":
 /* 8016C994 00168634  2C 04 00 00 */	cmpwi r4, 0
 /* 8016C998 00168638  38 60 00 01 */	li r3, 1
-/* 8016C99C 0016863C  4D 82 00 20 */	beqlr 
+/* 8016C99C 0016863C  4D 82 00 20 */	beqlr
 /* 8016C9A0 00168640  54 83 08 3C */	slwi r3, r4, 1
-/* 8016C9A4 00168644  4E 80 00 20 */	blr 
+/* 8016C9A4 00168644  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl42vector<P12StateMachine,Q25eastl9allocator>"
 "__as__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FRCQ25eastl42vector<P12StateMachine,Q25eastl9allocator>":
@@ -3249,16 +3249,16 @@ lbl_8016CAD0:
 /* 8016CAE0 00168780  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CAE4 00168784  7C 08 03 A6 */	mtlr r0
 /* 8016CAE8 00168788  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CAEC 0016878C  4E 80 00 20 */	blr 
+/* 8016CAEC 0016878C  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FPP12StateMachineUl"
 "DoFree__Q25eastl46VectorBase<P12StateMachine,Q25eastl9allocator>FPP12StateMachineUl":
 /* 8016CAF0 00168790  2C 04 00 00 */	cmpwi r4, 0
-/* 8016CAF4 00168794  4D 82 00 20 */	beqlr 
+/* 8016CAF4 00168794  4D 82 00 20 */	beqlr
 /* 8016CAF8 00168798  54 A5 10 3A */	slwi r5, r5, 2
 /* 8016CAFC 0016879C  38 63 00 0C */	addi r3, r3, 0xc
 /* 8016CB00 001687A0  4B EA B6 24 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8016CB04 001687A4  4E 80 00 20 */	blr 
+/* 8016CB04 001687A4  4E 80 00 20 */	blr
 
 .global "DoRealloc<PP12StateMachine>__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FUlPP12StateMachinePP12StateMachine_PP12StateMachine"
 "DoRealloc<PP12StateMachine>__Q25eastl42vector<P12StateMachine,Q25eastl9allocator>FUlPP12StateMachinePP12StateMachine_PP12StateMachine":
@@ -3283,7 +3283,7 @@ lbl_8016CAD0:
 /* 8016CB50 001687F0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CB54 001687F4  7C 08 03 A6 */	mtlr r0
 /* 8016CB58 001687F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CB5C 001687FC  4E 80 00 20 */	blr 
+/* 8016CB5C 001687FC  4E 80 00 20 */	blr
 
 .global "copy<PP17StateMachineState,PP17StateMachineState>__5eastlFPP17StateMachineStatePP17StateMachineStatePP17StateMachineState_PP17StateMachineState"
 "copy<PP17StateMachineState,PP17StateMachineState>__5eastlFPP17StateMachineStatePP17StateMachineStatePP17StateMachineState_PP17StateMachineState":
@@ -3320,7 +3320,7 @@ lbl_8016CAD0:
 /* 8016CBB4 00168854  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016CBB8 00168858  7C 08 03 A6 */	mtlr r0
 /* 8016CBBC 0016885C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016CBC0 00168860  4E 80 00 20 */	blr 
+/* 8016CBC0 00168860  4E 80 00 20 */	blr
 
 .global "copy<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__5eastlFQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>_Q25eastl41generic_iterator<PP17StateMachineState,v>"
 "copy<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__5eastlFQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>_Q25eastl41generic_iterator<PP17StateMachineState,v>":
@@ -3340,7 +3340,7 @@ lbl_8016CAD0:
 /* 8016CBF8 00168898  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CBFC 0016889C  7C 08 03 A6 */	mtlr r0
 /* 8016CC00 001688A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CC04 001688A4  4E 80 00 20 */	blr 
+/* 8016CC04 001688A4  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>_Q25eastl41generic_iterator<PP17StateMachineState,v>"
 "do_copy<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>_Q25eastl41generic_iterator<PP17StateMachineState,v>":
@@ -3375,7 +3375,7 @@ lbl_8016CAD0:
 /* 8016CC78 00168918  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016CC7C 0016891C  7C 08 03 A6 */	mtlr r0
 /* 8016CC80 00168920  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CC84 00168924  4E 80 00 20 */	blr 
+/* 8016CC84 00168924  4E 80 00 20 */	blr
 
 .global "swap<PP17StateMachineState>__5eastlFRPP17StateMachineStateRPP17StateMachineState_v"
 "swap<PP17StateMachineState>__5eastlFRPP17StateMachineStateRPP17StateMachineState_v":
@@ -3383,7 +3383,7 @@ lbl_8016CAD0:
 /* 8016CC8C 0016892C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016CC90 00168930  90 03 00 00 */	stw r0, 0(r3)
 /* 8016CC94 00168934  90 A4 00 00 */	stw r5, 0(r4)
-/* 8016CC98 00168938  4E 80 00 20 */	blr 
+/* 8016CC98 00168938  4E 80 00 20 */	blr
 
 .global "copy<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__5eastlFQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>_Q25eastl36generic_iterator<PP12StateMachine,v>"
 "copy<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__5eastlFQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>_Q25eastl36generic_iterator<PP12StateMachine,v>":
@@ -3403,7 +3403,7 @@ lbl_8016CAD0:
 /* 8016CCD0 00168970  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CCD4 00168974  7C 08 03 A6 */	mtlr r0
 /* 8016CCD8 00168978  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CCDC 0016897C  4E 80 00 20 */	blr 
+/* 8016CCDC 0016897C  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>_Q25eastl36generic_iterator<PP12StateMachine,v>"
 "do_copy<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>_Q25eastl36generic_iterator<PP12StateMachine,v>":
@@ -3438,7 +3438,7 @@ lbl_8016CAD0:
 /* 8016CD50 001689F0  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016CD54 001689F4  7C 08 03 A6 */	mtlr r0
 /* 8016CD58 001689F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CD5C 001689FC  4E 80 00 20 */	blr 
+/* 8016CD5C 001689FC  4E 80 00 20 */	blr
 
 .global "copy_chooser<PP12StateMachine,PP12StateMachine>__5eastlFPP12StateMachinePP12StateMachinePP12StateMachine_PP12StateMachine"
 "copy_chooser<PP12StateMachine,PP12StateMachine>__5eastlFPP12StateMachinePP12StateMachinePP12StateMachine_PP12StateMachine":
@@ -3467,7 +3467,7 @@ lbl_8016CAD0:
 /* 8016CDAC 00168A4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016CDB0 00168A50  7C 08 03 A6 */	mtlr r0
 /* 8016CDB4 00168A54  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016CDB8 00168A58  4E 80 00 20 */	blr 
+/* 8016CDB8 00168A58  4E 80 00 20 */	blr
 
 .global "swap<PP12StateMachine>__5eastlFRPP12StateMachineRPP12StateMachine_v"
 "swap<PP12StateMachine>__5eastlFRPP12StateMachineRPP12StateMachine_v":
@@ -3475,7 +3475,7 @@ lbl_8016CAD0:
 /* 8016CDC0 00168A60  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016CDC4 00168A64  90 03 00 00 */	stw r0, 0(r3)
 /* 8016CDC8 00168A68  90 A4 00 00 */	stw r5, 0(r4)
-/* 8016CDCC 00168A6C  4E 80 00 20 */	blr 
+/* 8016CDCC 00168A6C  4E 80 00 20 */	blr
 
 .global "fill_n<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__5eastlFQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItem_Q25eastl31generic_iterator<PP8PaneItem,v>"
 "fill_n<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__5eastlFQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItem_Q25eastl31generic_iterator<PP8PaneItem,v>":
@@ -3489,7 +3489,7 @@ lbl_8016CAD0:
 /* 8016CDEC 00168A8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016CDF0 00168A90  7C 08 03 A6 */	mtlr r0
 /* 8016CDF4 00168A94  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016CDF8 00168A98  4E 80 00 20 */	blr 
+/* 8016CDF8 00168A98  4E 80 00 20 */	blr
 
 .global "do_fill<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__Q25eastl13fill_n_imp<1>FQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItem_Q25eastl31generic_iterator<PP8PaneItem,v>"
 "do_fill<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__Q25eastl13fill_n_imp<1>FQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItem_Q25eastl31generic_iterator<PP8PaneItem,v>":
@@ -3520,7 +3520,7 @@ lbl_8016CE38:
 /* 8016CE54 00168AF4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CE58 00168AF8  7C 08 03 A6 */	mtlr r0
 /* 8016CE5C 00168AFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CE60 00168B00  4E 80 00 20 */	blr 
+/* 8016CE60 00168B00  4E 80 00 20 */	blr
 
 .global "copy_backward<PP17StateMachineState,PP17StateMachineState>__5eastlFPP17StateMachineStatePP17StateMachineStatePP17StateMachineState_PP17StateMachineState"
 "copy_backward<PP17StateMachineState,PP17StateMachineState>__5eastlFPP17StateMachineStatePP17StateMachineStatePP17StateMachineState_PP17StateMachineState":
@@ -3563,7 +3563,7 @@ lbl_8016CE38:
 /* 8016CEC4 00168B64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016CEC8 00168B68  7C 08 03 A6 */	mtlr r0
 /* 8016CECC 00168B6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CED0 00168B70  4E 80 00 20 */	blr 
+/* 8016CED0 00168B70  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl42generic_iterator<PP18StateMachineStatus,v>,Q25eastl42generic_iterator<PP18StateMachineStatus,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>_Q25eastl42generic_iterator<PP18StateMachineStatus,v>"
 "do_copy<Q25eastl42generic_iterator<PP18StateMachineStatus,v>,Q25eastl42generic_iterator<PP18StateMachineStatus,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>_Q25eastl42generic_iterator<PP18StateMachineStatus,v>":
@@ -3598,7 +3598,7 @@ lbl_8016CE38:
 /* 8016CF44 00168BE4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016CF48 00168BE8  7C 08 03 A6 */	mtlr r0
 /* 8016CF4C 00168BEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016CF50 00168BF0  4E 80 00 20 */	blr 
+/* 8016CF50 00168BF0  4E 80 00 20 */	blr
 
 .global "copy_chooser<PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus"
 "copy_chooser<PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus":
@@ -3627,7 +3627,7 @@ lbl_8016CE38:
 /* 8016CFA0 00168C40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016CFA4 00168C44  7C 08 03 A6 */	mtlr r0
 /* 8016CFA8 00168C48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016CFAC 00168C4C  4E 80 00 20 */	blr 
+/* 8016CFAC 00168C4C  4E 80 00 20 */	blr
 
 .global "copy_backward<PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus"
 "copy_backward<PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus":
@@ -3703,7 +3703,7 @@ lbl_8016CE38:
 /* 8016D07C 00168D1C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016D080 00168D20  7C 08 03 A6 */	mtlr r0
 /* 8016D084 00168D24  38 21 00 50 */	addi r1, r1, 0x50
-/* 8016D088 00168D28  4E 80 00 20 */	blr 
+/* 8016D088 00168D28  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__5eastlFQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl22integral_constant<b,1>_Q25eastl41generic_iterator<PP17StateMachineState,v>"
 "uninitialized_copy_impl<Q25eastl41generic_iterator<PP17StateMachineState,v>,Q25eastl41generic_iterator<PP17StateMachineState,v>>__5eastlFQ25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl41generic_iterator<PP17StateMachineState,v>Q25eastl22integral_constant<b,1>_Q25eastl41generic_iterator<PP17StateMachineState,v>":
@@ -3723,7 +3723,7 @@ lbl_8016CE38:
 /* 8016D0C0 00168D60  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016D0C4 00168D64  7C 08 03 A6 */	mtlr r0
 /* 8016D0C8 00168D68  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016D0CC 00168D6C  4E 80 00 20 */	blr 
+/* 8016D0CC 00168D6C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PP12StateMachine,PP12StateMachine,PP12StateMachine>__5eastlFPP12StateMachinePP12StateMachinePP12StateMachine_PP12StateMachine"
 "uninitialized_copy_ptr<PP12StateMachine,PP12StateMachine,PP12StateMachine>__5eastlFPP12StateMachinePP12StateMachinePP12StateMachine_PP12StateMachine":
@@ -3768,7 +3768,7 @@ lbl_8016CE38:
 /* 8016D168 00168E08  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016D16C 00168E0C  7C 08 03 A6 */	mtlr r0
 /* 8016D170 00168E10  38 21 00 50 */	addi r1, r1, 0x50
-/* 8016D174 00168E14  4E 80 00 20 */	blr 
+/* 8016D174 00168E14  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__5eastlFQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl22integral_constant<b,1>_Q25eastl36generic_iterator<PP12StateMachine,v>"
 "uninitialized_copy_impl<Q25eastl36generic_iterator<PP12StateMachine,v>,Q25eastl36generic_iterator<PP12StateMachine,v>>__5eastlFQ25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl36generic_iterator<PP12StateMachine,v>Q25eastl22integral_constant<b,1>_Q25eastl36generic_iterator<PP12StateMachine,v>":
@@ -3788,7 +3788,7 @@ lbl_8016CE38:
 /* 8016D1AC 00168E4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016D1B0 00168E50  7C 08 03 A6 */	mtlr r0
 /* 8016D1B4 00168E54  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016D1B8 00168E58  4E 80 00 20 */	blr 
+/* 8016D1B8 00168E58  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<P8PaneItem,Ul>__5eastlFPP8PaneItemUlRCP8PaneItem_v"
 "uninitialized_fill_n_ptr<P8PaneItem,Ul>__5eastlFPP8PaneItemUlRCP8PaneItem_v":
@@ -3820,7 +3820,7 @@ lbl_8016CE38:
 /* 8016D220 00168EC0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8016D224 00168EC4  7C 08 03 A6 */	mtlr r0
 /* 8016D228 00168EC8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8016D22C 00168ECC  4E 80 00 20 */	blr 
+/* 8016D22C 00168ECC  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__5eastlFQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItemQ25eastl22integral_constant<b,1>_v"
 "uninitialized_fill_n_impl<Q25eastl31generic_iterator<PP8PaneItem,v>,Ul,P8PaneItem>__5eastlFQ25eastl31generic_iterator<PP8PaneItem,v>UlRCP8PaneItemQ25eastl22integral_constant<b,1>_v":
@@ -3834,7 +3834,7 @@ lbl_8016CE38:
 /* 8016D24C 00168EEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016D250 00168EF0  7C 08 03 A6 */	mtlr r0
 /* 8016D254 00168EF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016D258 00168EF8  4E 80 00 20 */	blr 
+/* 8016D258 00168EF8  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PP18StateMachineStatus,PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus"
 "uninitialized_copy_ptr<PP18StateMachineStatus,PP18StateMachineStatus,PP18StateMachineStatus>__5eastlFPP18StateMachineStatusPP18StateMachineStatusPP18StateMachineStatus_PP18StateMachineStatus":
@@ -3879,7 +3879,7 @@ lbl_8016CE38:
 /* 8016D2F4 00168F94  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016D2F8 00168F98  7C 08 03 A6 */	mtlr r0
 /* 8016D2FC 00168F9C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8016D300 00168FA0  4E 80 00 20 */	blr 
+/* 8016D300 00168FA0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl42generic_iterator<PP18StateMachineStatus,v>,Q25eastl42generic_iterator<PP18StateMachineStatus,v>>__5eastlFQ25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl22integral_constant<b,1>_Q25eastl42generic_iterator<PP18StateMachineStatus,v>"
 "uninitialized_copy_impl<Q25eastl42generic_iterator<PP18StateMachineStatus,v>,Q25eastl42generic_iterator<PP18StateMachineStatus,v>>__5eastlFQ25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl42generic_iterator<PP18StateMachineStatus,v>Q25eastl22integral_constant<b,1>_Q25eastl42generic_iterator<PP18StateMachineStatus,v>":
@@ -3899,67 +3899,67 @@ lbl_8016CE38:
 /* 8016D338 00168FD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016D33C 00168FDC  7C 08 03 A6 */	mtlr r0
 /* 8016D340 00168FE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016D344 00168FE4  4E 80 00 20 */	blr 
+/* 8016D344 00168FE4  4E 80 00 20 */	blr
 
 .global "base__Q25eastl41generic_iterator<PP17StateMachineState,v>CFv"
 "base__Q25eastl41generic_iterator<PP17StateMachineState,v>CFv":
-/* 8016D348 00168FE8  4E 80 00 20 */	blr 
+/* 8016D348 00168FE8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl41generic_iterator<PP17StateMachineState,v>FRCQ25eastl41generic_iterator<PP17StateMachineState,v>"
 "__ct__Q25eastl41generic_iterator<PP17StateMachineState,v>FRCQ25eastl41generic_iterator<PP17StateMachineState,v>":
 /* 8016D34C 00168FEC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D350 00168FF0  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D354 00168FF4  4E 80 00 20 */	blr 
+/* 8016D354 00168FF4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl41generic_iterator<PP17StateMachineState,v>FRCPP17StateMachineState"
 "__ct__Q25eastl41generic_iterator<PP17StateMachineState,v>FRCPP17StateMachineState":
 /* 8016D358 00168FF8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D35C 00168FFC  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D360 00169000  4E 80 00 20 */	blr 
+/* 8016D360 00169000  4E 80 00 20 */	blr
 
 .global "base__Q25eastl36generic_iterator<PP12StateMachine,v>CFv"
 "base__Q25eastl36generic_iterator<PP12StateMachine,v>CFv":
-/* 8016D364 00169004  4E 80 00 20 */	blr 
+/* 8016D364 00169004  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl36generic_iterator<PP12StateMachine,v>FRCQ25eastl36generic_iterator<PP12StateMachine,v>"
 "__ct__Q25eastl36generic_iterator<PP12StateMachine,v>FRCQ25eastl36generic_iterator<PP12StateMachine,v>":
 /* 8016D368 00169008  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D36C 0016900C  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D370 00169010  4E 80 00 20 */	blr 
+/* 8016D370 00169010  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl36generic_iterator<PP12StateMachine,v>FRCPP12StateMachine"
 "__ct__Q25eastl36generic_iterator<PP12StateMachine,v>FRCPP12StateMachine":
 /* 8016D374 00169014  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D378 00169018  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D37C 0016901C  4E 80 00 20 */	blr 
+/* 8016D37C 0016901C  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl31generic_iterator<PP8PaneItem,v>Fv"
 "__pp__Q25eastl31generic_iterator<PP8PaneItem,v>Fv":
 /* 8016D380 00169020  80 83 00 00 */	lwz r4, 0(r3)
 /* 8016D384 00169024  38 04 00 04 */	addi r0, r4, 4
 /* 8016D388 00169028  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D38C 0016902C  4E 80 00 20 */	blr 
+/* 8016D38C 0016902C  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl31generic_iterator<PP8PaneItem,v>CFv"
 "__ml__Q25eastl31generic_iterator<PP8PaneItem,v>CFv":
 /* 8016D390 00169030  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016D394 00169034  4E 80 00 20 */	blr 
+/* 8016D394 00169034  4E 80 00 20 */	blr
 
 .global "base__Q25eastl42generic_iterator<PP18StateMachineStatus,v>CFv"
 "base__Q25eastl42generic_iterator<PP18StateMachineStatus,v>CFv":
-/* 8016D398 00169038  4E 80 00 20 */	blr 
+/* 8016D398 00169038  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42generic_iterator<PP18StateMachineStatus,v>FRCQ25eastl42generic_iterator<PP18StateMachineStatus,v>"
 "__ct__Q25eastl42generic_iterator<PP18StateMachineStatus,v>FRCQ25eastl42generic_iterator<PP18StateMachineStatus,v>":
 /* 8016D39C 0016903C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D3A0 00169040  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D3A4 00169044  4E 80 00 20 */	blr 
+/* 8016D3A4 00169044  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42generic_iterator<PP18StateMachineStatus,v>FRCPP18StateMachineStatus"
 "__ct__Q25eastl42generic_iterator<PP18StateMachineStatus,v>FRCPP18StateMachineStatus":
 /* 8016D3A8 00169048  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016D3AC 0016904C  90 03 00 00 */	stw r0, 0(r3)
-/* 8016D3B0 00169050  4E 80 00 20 */	blr 
+/* 8016D3B0 00169050  4E 80 00 20 */	blr
 
 .global "Startup__19CreateASimBaseStateFv"
 "Startup__19CreateASimBaseStateFv":
@@ -3989,7 +3989,7 @@ lbl_8016CE38:
 /* 8016D410 001690B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016D414 001690B4  7C 08 03 A6 */	mtlr r0
 /* 8016D418 001690B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016D41C 001690BC  4E 80 00 20 */	blr 
+/* 8016D41C 001690BC  4E 80 00 20 */	blr
 
 .global "Shutdown__19CreateASimBaseStateFv"
 "Shutdown__19CreateASimBaseStateFv":
@@ -4002,7 +4002,7 @@ lbl_8016CE38:
 /* 8016D438 001690D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016D43C 001690DC  7C 08 03 A6 */	mtlr r0
 /* 8016D440 001690E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016D444 001690E4  4E 80 00 20 */	blr 
+/* 8016D444 001690E4  4E 80 00 20 */	blr
 
 .global "Reset__19CreateASimBaseStateFv"
 "Reset__19CreateASimBaseStateFv":
@@ -4046,7 +4046,7 @@ lbl_8016CE38:
 /* 8016D4DC 0016917C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016D4E0 00169180  7C 08 03 A6 */	mtlr r0
 /* 8016D4E4 00169184  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016D4E8 00169188  4E 80 00 20 */	blr 
+/* 8016D4E8 00169188  4E 80 00 20 */	blr
 
 .global "GetDatasetName__19CreateASimBaseStateCFPc"
 "GetDatasetName__19CreateASimBaseStateCFPc":
@@ -4092,7 +4092,7 @@ lbl_8016D56C:
 /* 8016D574 00169214  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016D578 00169218  7C 08 03 A6 */	mtlr r0
 /* 8016D57C 0016921C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016D580 00169220  4E 80 00 20 */	blr 
+/* 8016D580 00169220  4E 80 00 20 */	blr
 
 .global "Update__19CreateASimBaseStateFf"
 "Update__19CreateASimBaseStateFf":
@@ -4137,7 +4137,7 @@ lbl_8016D5D8:
 /* 8016D618 001692B8  38 63 C9 BC */	addi r3, r3, lbl_8042C9BC@l
 /* 8016D61C 001692BC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8016D620 001692C0  7C 69 03 A6 */	mtctr r3
-/* 8016D624 001692C4  4E 80 04 20 */	bctr 
+/* 8016D624 001692C4  4E 80 04 20 */	bctr
 /* 8016D628 001692C8  38 60 00 01 */	li r3, 1
 /* 8016D62C 001692CC  48 17 78 99 */	bl "SetDefaultShaderState__8ERShaderFi"
 /* 8016D630 001692D0  7F C3 F3 78 */	mr r3, r30
@@ -4207,7 +4207,7 @@ lbl_8016D720:
 /* 8016D72C 001693CC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016D730 001693D0  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 8016D734 001693D4  7D 89 03 A6 */	mtctr r12
-/* 8016D738 001693D8  4E 80 04 21 */	bctrl 
+/* 8016D738 001693D8  4E 80 04 21 */	bctrl
 lbl_8016D73C:
 /* 8016D73C 001693DC  7F C3 F3 78 */	mr r3, r30
 /* 8016D740 001693E0  38 80 00 01 */	li r4, 1
@@ -4362,7 +4362,7 @@ lbl_8016D954:
 /* 8016D96C 0016960C  38 80 00 01 */	li r4, 1
 /* 8016D970 00169610  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016D974 00169614  7D 89 03 A6 */	mtctr r12
-/* 8016D978 00169618  4E 80 04 21 */	bctrl 
+/* 8016D978 00169618  4E 80 04 21 */	bctrl
 lbl_8016D97C:
 /* 8016D97C 0016961C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016D980 00169620  38 00 00 00 */	li r0, 0
@@ -4399,7 +4399,7 @@ lbl_8016D9B8:
 /* 8016D9F4 00169694  38 80 00 01 */	li r4, 1
 /* 8016D9F8 00169698  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016D9FC 0016969C  7D 89 03 A6 */	mtctr r12
-/* 8016DA00 001696A0  4E 80 04 21 */	bctrl 
+/* 8016DA00 001696A0  4E 80 04 21 */	bctrl
 lbl_8016DA04:
 /* 8016DA04 001696A4  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DA08 001696A8  38 00 00 00 */	li r0, 0
@@ -4412,7 +4412,7 @@ lbl_8016DA04:
 /* 8016DA24 001696C4  38 80 00 01 */	li r4, 1
 /* 8016DA28 001696C8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DA2C 001696CC  7D 89 03 A6 */	mtctr r12
-/* 8016DA30 001696D0  4E 80 04 21 */	bctrl 
+/* 8016DA30 001696D0  4E 80 04 21 */	bctrl
 lbl_8016DA34:
 /* 8016DA34 001696D4  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DA38 001696D8  3C 60 80 49 */	lis r3, "_globals"@ha
@@ -4432,7 +4432,7 @@ lbl_8016DA60:
 /* 8016DA6C 0016970C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016DA70 00169710  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8016DA74 00169714  7D 89 03 A6 */	mtctr r12
-/* 8016DA78 00169718  4E 80 04 21 */	bctrl 
+/* 8016DA78 00169718  4E 80 04 21 */	bctrl
 /* 8016DA7C 0016971C  2C 03 00 00 */	cmpwi r3, 0
 /* 8016DA80 00169720  41 82 03 58 */	beq lbl_8016DDD8
 /* 8016DA84 00169724  48 00 04 C1 */	bl "AcceptFlowRequest__16StateMachineFlowFv"
@@ -4443,7 +4443,7 @@ lbl_8016DA60:
 /* 8016DA98 00169738  38 80 00 01 */	li r4, 1
 /* 8016DA9C 0016973C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DAA0 00169740  7D 89 03 A6 */	mtctr r12
-/* 8016DAA4 00169744  4E 80 04 21 */	bctrl 
+/* 8016DAA4 00169744  4E 80 04 21 */	bctrl
 lbl_8016DAA8:
 /* 8016DAA8 00169748  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DAAC 0016974C  38 00 00 00 */	li r0, 0
@@ -4456,7 +4456,7 @@ lbl_8016DAA8:
 /* 8016DAC8 00169768  38 80 00 01 */	li r4, 1
 /* 8016DACC 0016976C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DAD0 00169770  7D 89 03 A6 */	mtctr r12
-/* 8016DAD4 00169774  4E 80 04 21 */	bctrl 
+/* 8016DAD4 00169774  4E 80 04 21 */	bctrl
 lbl_8016DAD8:
 /* 8016DAD8 00169778  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DADC 0016977C  3C 60 80 49 */	lis r3, "_globals"@ha
@@ -4493,7 +4493,7 @@ lbl_8016DB30:
 /* 8016DB4C 001697EC  38 80 00 01 */	li r4, 1
 /* 8016DB50 001697F0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DB54 001697F4  7D 89 03 A6 */	mtctr r12
-/* 8016DB58 001697F8  4E 80 04 21 */	bctrl 
+/* 8016DB58 001697F8  4E 80 04 21 */	bctrl
 lbl_8016DB5C:
 /* 8016DB5C 001697FC  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016DB60 00169800  38 00 00 00 */	li r0, 0
@@ -4586,7 +4586,7 @@ lbl_8016DC50:
 /* 8016DC98 00169938  38 80 00 01 */	li r4, 1
 /* 8016DC9C 0016993C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DCA0 00169940  7D 89 03 A6 */	mtctr r12
-/* 8016DCA4 00169944  4E 80 04 21 */	bctrl 
+/* 8016DCA4 00169944  4E 80 04 21 */	bctrl
 lbl_8016DCA8:
 /* 8016DCA8 00169948  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DCAC 0016994C  38 00 00 00 */	li r0, 0
@@ -4599,7 +4599,7 @@ lbl_8016DCA8:
 /* 8016DCC8 00169968  38 80 00 01 */	li r4, 1
 /* 8016DCCC 0016996C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DCD0 00169970  7D 89 03 A6 */	mtctr r12
-/* 8016DCD4 00169974  4E 80 04 21 */	bctrl 
+/* 8016DCD4 00169974  4E 80 04 21 */	bctrl
 lbl_8016DCD8:
 /* 8016DCD8 00169978  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016DCDC 0016997C  38 80 00 00 */	li r4, 0
@@ -4615,7 +4615,7 @@ lbl_8016DCF4:
 /* 8016DD00 001699A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016DD04 001699A4  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8016DD08 001699A8  7D 89 03 A6 */	mtctr r12
-/* 8016DD0C 001699AC  4E 80 04 21 */	bctrl 
+/* 8016DD0C 001699AC  4E 80 04 21 */	bctrl
 /* 8016DD10 001699B0  2C 03 00 00 */	cmpwi r3, 0
 /* 8016DD14 001699B4  41 82 00 C4 */	beq lbl_8016DDD8
 /* 8016DD18 001699B8  48 00 02 2D */	bl "AcceptFlowRequest__16StateMachineFlowFv"
@@ -4626,7 +4626,7 @@ lbl_8016DCF4:
 /* 8016DD2C 001699CC  38 80 00 01 */	li r4, 1
 /* 8016DD30 001699D0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DD34 001699D4  7D 89 03 A6 */	mtctr r12
-/* 8016DD38 001699D8  4E 80 04 21 */	bctrl 
+/* 8016DD38 001699D8  4E 80 04 21 */	bctrl
 lbl_8016DD3C:
 /* 8016DD3C 001699DC  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DD40 001699E0  38 00 00 00 */	li r0, 0
@@ -4639,7 +4639,7 @@ lbl_8016DD3C:
 /* 8016DD5C 001699FC  38 80 00 01 */	li r4, 1
 /* 8016DD60 00169A00  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DD64 00169A04  7D 89 03 A6 */	mtctr r12
-/* 8016DD68 00169A08  4E 80 04 21 */	bctrl 
+/* 8016DD68 00169A08  4E 80 04 21 */	bctrl
 lbl_8016DD6C:
 /* 8016DD6C 00169A0C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016DD70 00169A10  38 80 00 00 */	li r4, 0
@@ -4676,7 +4676,7 @@ lbl_8016DDD8:
 /* 8016DDE0 00169A80  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8016DDE4 00169A84  7C 08 03 A6 */	mtlr r0
 /* 8016DDE8 00169A88  38 21 00 70 */	addi r1, r1, 0x70
-/* 8016DDEC 00169A8C  4E 80 00 20 */	blr 
+/* 8016DDEC 00169A8C  4E 80 00 20 */	blr
 
 .global "OnBackOut__19CreateASimBaseStateFv"
 "OnBackOut__19CreateASimBaseStateFv":
@@ -4704,7 +4704,7 @@ lbl_8016DE34:
 /* 8016DE40 00169AE0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016DE44 00169AE4  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8016DE48 00169AE8  7D 89 03 A6 */	mtctr r12
-/* 8016DE4C 00169AEC  4E 80 04 21 */	bctrl 
+/* 8016DE4C 00169AEC  4E 80 04 21 */	bctrl
 /* 8016DE50 00169AF0  2C 03 00 00 */	cmpwi r3, 0
 /* 8016DE54 00169AF4  41 82 00 D0 */	beq lbl_8016DF24
 /* 8016DE58 00169AF8  48 00 00 ED */	bl "AcceptFlowRequest__16StateMachineFlowFv"
@@ -4715,7 +4715,7 @@ lbl_8016DE34:
 /* 8016DE6C 00169B0C  38 80 00 01 */	li r4, 1
 /* 8016DE70 00169B10  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DE74 00169B14  7D 89 03 A6 */	mtctr r12
-/* 8016DE78 00169B18  4E 80 04 21 */	bctrl 
+/* 8016DE78 00169B18  4E 80 04 21 */	bctrl
 lbl_8016DE7C:
 /* 8016DE7C 00169B1C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016DE80 00169B20  38 00 00 00 */	li r0, 0
@@ -4728,7 +4728,7 @@ lbl_8016DE7C:
 /* 8016DE9C 00169B3C  38 80 00 01 */	li r4, 1
 /* 8016DEA0 00169B40  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016DEA4 00169B44  7D 89 03 A6 */	mtctr r12
-/* 8016DEA8 00169B48  4E 80 04 21 */	bctrl 
+/* 8016DEA8 00169B48  4E 80 04 21 */	bctrl
 lbl_8016DEAC:
 /* 8016DEAC 00169B4C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016DEB0 00169B50  3F E0 BA 2F */	lis r31, 0xBA2F3A39@ha
@@ -4768,7 +4768,7 @@ lbl_8016DF24:
 /* 8016DF30 00169BD0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016DF34 00169BD4  7C 08 03 A6 */	mtlr r0
 /* 8016DF38 00169BD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016DF3C 00169BDC  4E 80 00 20 */	blr 
+/* 8016DF3C 00169BDC  4E 80 00 20 */	blr
 
 .global "Draw__19CreateASimBaseStateFP3ERC"
 "Draw__19CreateASimBaseStateFP3ERC":
@@ -4780,27 +4780,27 @@ lbl_8016DF24:
 /* 8016DF48 00169BE8  80 0D B6 D4 */	lwz r0, "m_stateRequest__16StateMachineFlow"-_SDA_BASE_(r13)
 /* 8016DF4C 00169BEC  90 6D B6 DC */	stw r3, "m_stateLast__16StateMachineFlow"-_SDA_BASE_(r13)
 /* 8016DF50 00169BF0  90 0D B6 D8 */	stw r0, "m_stateCurrent__16StateMachineFlow"-_SDA_BASE_(r13)
-/* 8016DF54 00169BF4  4E 80 00 20 */	blr 
+/* 8016DF54 00169BF4  4E 80 00 20 */	blr
 
 .global "GetFlowRequest__16StateMachineFlowFv"
 "GetFlowRequest__16StateMachineFlowFv":
 /* 8016DF58 00169BF8  80 6D B6 D4 */	lwz r3, "m_stateRequest__16StateMachineFlow"-_SDA_BASE_(r13)
-/* 8016DF5C 00169BFC  4E 80 00 20 */	blr 
+/* 8016DF5C 00169BFC  4E 80 00 20 */	blr
 
 .global "GetCurrentState__16StateMachineFlowFv"
 "GetCurrentState__16StateMachineFlowFv":
 /* 8016DF60 00169C00  80 6D B6 D8 */	lwz r3, "m_stateCurrent__16StateMachineFlow"-_SDA_BASE_(r13)
-/* 8016DF64 00169C04  4E 80 00 20 */	blr 
+/* 8016DF64 00169C04  4E 80 00 20 */	blr
 
 .global "SetUseButtonFilters__9AptViewerFb"
 "SetUseButtonFilters__9AptViewerFb":
 /* 8016DF68 00169C08  98 83 03 A6 */	stb r4, 0x3a6(r3)
-/* 8016DF6C 00169C0C  4E 80 00 20 */	blr 
+/* 8016DF6C 00169C0C  4E 80 00 20 */	blr
 
 .global "SetUnmappedControllerRead__9AptViewerFi"
 "SetUnmappedControllerRead__9AptViewerFi":
 /* 8016DF70 00169C10  90 83 03 A8 */	stw r4, 0x3a8(r3)
-/* 8016DF74 00169C14  4E 80 00 20 */	blr 
+/* 8016DF74 00169C14  4E 80 00 20 */	blr
 
 .global "IsFadedIn__25LoadingScreenStateMachineFv"
 "IsFadedIn__25LoadingScreenStateMachineFv":
@@ -4812,7 +4812,7 @@ lbl_8016DF24:
 /* 8016DF8C 00169C2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016DF90 00169C30  7C 08 03 A6 */	mtlr r0
 /* 8016DF94 00169C34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016DF98 00169C38  4E 80 00 20 */	blr 
+/* 8016DF98 00169C38  4E 80 00 20 */	blr
 
 .global "IsReadyToLoad__32LoadingScreenWaitingForLoadStateFv"
 "IsReadyToLoad__32LoadingScreenWaitingForLoadStateFv":
@@ -4830,7 +4830,7 @@ lbl_8016DF24:
 /* 8016DFC8 00169C68  EC 20 08 28 */	fsubs f1, f0, f1
 /* 8016DFCC 00169C6C  7C 08 03 A6 */	mtlr r0
 /* 8016DFD0 00169C70  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016DFD4 00169C74  4E 80 00 20 */	blr 
+/* 8016DFD4 00169C74  4E 80 00 20 */	blr
 
 .global "IsLoadComplete__24LoadingScreenUpdateStateFv"
 "IsLoadComplete__24LoadingScreenUpdateStateFv":
@@ -4848,17 +4848,17 @@ lbl_8016DF24:
 /* 8016E004 00169CA4  EC 20 08 28 */	fsubs f1, f0, f1
 /* 8016E008 00169CA8  7C 08 03 A6 */	mtlr r0
 /* 8016E00C 00169CAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E010 00169CB0  4E 80 00 20 */	blr 
+/* 8016E010 00169CB0  4E 80 00 20 */	blr
 
 .global "IsLoadComplete__25LoadingScreenStateMachineFv"
 "IsLoadComplete__25LoadingScreenStateMachineFv":
 /* 8016E014 00169CB4  88 63 00 85 */	lbz r3, 0x85(r3)
-/* 8016E018 00169CB8  4E 80 00 20 */	blr 
+/* 8016E018 00169CB8  4E 80 00 20 */	blr
 
 .global "GetLoadingScreen__25LoadingScreenStateMachineFv"
 "GetLoadingScreen__25LoadingScreenStateMachineFv":
 /* 8016E01C 00169CBC  80 63 00 78 */	lwz r3, 0x78(r3)
-/* 8016E020 00169CC0  4E 80 00 20 */	blr 
+/* 8016E020 00169CC0  4E 80 00 20 */	blr
 
 .global "__ct__22IrisTransitionOutStateFi"
 "__ct__22IrisTransitionOutStateFi":
@@ -4877,7 +4877,7 @@ lbl_8016DF24:
 /* 8016E054 00169CF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E058 00169CF8  7C 08 03 A6 */	mtlr r0
 /* 8016E05C 00169CFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E060 00169D00  4E 80 00 20 */	blr 
+/* 8016E060 00169D00  4E 80 00 20 */	blr
 
 .global "__ct__21IrisTransitionInStateFi"
 "__ct__21IrisTransitionInStateFi":
@@ -4896,7 +4896,7 @@ lbl_8016DF24:
 /* 8016E094 00169D34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E098 00169D38  7C 08 03 A6 */	mtlr r0
 /* 8016E09C 00169D3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E0A0 00169D40  4E 80 00 20 */	blr 
+/* 8016E0A0 00169D40  4E 80 00 20 */	blr
 
 .global "__ct__24LoadingScreenUpdateStateFi"
 "__ct__24LoadingScreenUpdateStateFi":
@@ -4915,7 +4915,7 @@ lbl_8016DF24:
 /* 8016E0D4 00169D74  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E0D8 00169D78  7C 08 03 A6 */	mtlr r0
 /* 8016E0DC 00169D7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E0E0 00169D80  4E 80 00 20 */	blr 
+/* 8016E0E0 00169D80  4E 80 00 20 */	blr
 
 .global "__ct__32LoadingScreenWaitingForLoadStateFi"
 "__ct__32LoadingScreenWaitingForLoadStateFi":
@@ -4934,19 +4934,19 @@ lbl_8016DF24:
 /* 8016E114 00169DB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E118 00169DB8  7C 08 03 A6 */	mtlr r0
 /* 8016E11C 00169DBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E120 00169DC0  4E 80 00 20 */	blr 
+/* 8016E120 00169DC0  4E 80 00 20 */	blr
 
 .global "LoadFinished__25LoadingScreenStateMachineFv"
 "LoadFinished__25LoadingScreenStateMachineFv":
 /* 8016E124 00169DC4  38 00 00 01 */	li r0, 1
 /* 8016E128 00169DC8  98 03 00 85 */	stb r0, 0x85(r3)
-/* 8016E12C 00169DCC  4E 80 00 20 */	blr 
+/* 8016E12C 00169DCC  4E 80 00 20 */	blr
 
 .global "LoadStarted__25LoadingScreenStateMachineFv"
 "LoadStarted__25LoadingScreenStateMachineFv":
 /* 8016E130 00169DD0  38 00 00 00 */	li r0, 0
 /* 8016E134 00169DD4  98 03 00 84 */	stb r0, 0x84(r3)
-/* 8016E138 00169DD8  4E 80 00 20 */	blr 
+/* 8016E138 00169DD8  4E 80 00 20 */	blr
 
 .global "IsLoadComplete__21IrisTransitionInStateFv"
 "IsLoadComplete__21IrisTransitionInStateFv":
@@ -4964,7 +4964,7 @@ lbl_8016DF24:
 /* 8016E168 00169E08  EC 20 08 28 */	fsubs f1, f0, f1
 /* 8016E16C 00169E0C  7C 08 03 A6 */	mtlr r0
 /* 8016E170 00169E10  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E174 00169E14  4E 80 00 20 */	blr 
+/* 8016E174 00169E14  4E 80 00 20 */	blr
 
 .global "IsFadingIn__25LoadingScreenStateMachineFv"
 "IsFadingIn__25LoadingScreenStateMachineFv":
@@ -4976,7 +4976,7 @@ lbl_8016DF24:
 /* 8016E18C 00169E2C  88 63 00 84 */	lbz r3, 0x84(r3)
 /* 8016E190 00169E30  7C 08 03 A6 */	mtlr r0
 /* 8016E194 00169E34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E198 00169E38  4E 80 00 20 */	blr 
+/* 8016E198 00169E38  4E 80 00 20 */	blr
 
 .global "Time__6QTimerFv"
 "Time__6QTimerFv":
@@ -4992,17 +4992,17 @@ lbl_8016DF24:
 /* 8016E1C0 00169E60  EC 21 00 28 */	fsubs f1, f1, f0
 /* 8016E1C4 00169E64  7C 08 03 A6 */	mtlr r0
 /* 8016E1C8 00169E68  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E1CC 00169E6C  4E 80 00 20 */	blr 
+/* 8016E1CC 00169E6C  4E 80 00 20 */	blr
 
 .global "SetUIDrawEnable__7EGlobalCFb"
 "SetUIDrawEnable__7EGlobalCFb":
 /* 8016E1D0 00169E70  98 8D 82 FC */	stb r4, "gbDrawUI"-_SDA_BASE_(r13)
-/* 8016E1D4 00169E74  4E 80 00 20 */	blr 
+/* 8016E1D4 00169E74  4E 80 00 20 */	blr
 
 .global "SetUIUpdateEnable__7EGlobalCFb"
 "SetUIUpdateEnable__7EGlobalCFb":
 /* 8016E1D8 00169E78  98 8D 82 FD */	stb r4, "gbUpdateUI"-_SDA_BASE_(r13)
-/* 8016E1DC 00169E7C  4E 80 00 20 */	blr 
+/* 8016E1DC 00169E7C  4E 80 00 20 */	blr
 
 .global "__dt__12EGameStateIdFv"
 "__dt__12EGameStateIdFv":
@@ -5022,49 +5022,49 @@ lbl_8016E208:
 /* 8016E210 00169EB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E214 00169EB4  7C 08 03 A6 */	mtlr r0
 /* 8016E218 00169EB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E21C 00169EBC  4E 80 00 20 */	blr 
+/* 8016E21C 00169EBC  4E 80 00 20 */	blr
 
 .global "__ct__12EGameStateIdFv"
 "__ct__12EGameStateIdFv":
 /* 8016E220 00169EC0  38 00 00 00 */	li r0, 0
 /* 8016E224 00169EC4  90 03 00 00 */	stw r0, 0(r3)
-/* 8016E228 00169EC8  4E 80 00 20 */	blr 
+/* 8016E228 00169EC8  4E 80 00 20 */	blr
 
 .global "__opUi__12EGameStateIdCFv"
 "__opUi__12EGameStateIdCFv":
 /* 8016E22C 00169ECC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016E230 00169ED0  4E 80 00 20 */	blr 
+/* 8016E230 00169ED0  4E 80 00 20 */	blr
 
 .global "__ct__12EGameStateIdFRC12EGameStateId"
 "__ct__12EGameStateIdFRC12EGameStateId":
 /* 8016E234 00169ED4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016E238 00169ED8  90 03 00 00 */	stw r0, 0(r3)
-/* 8016E23C 00169EDC  4E 80 00 20 */	blr 
+/* 8016E23C 00169EDC  4E 80 00 20 */	blr
 
 .global "__ct__12EGameStateIdFUi"
 "__ct__12EGameStateIdFUi":
 /* 8016E240 00169EE0  90 83 00 00 */	stw r4, 0(r3)
-/* 8016E244 00169EE4  4E 80 00 20 */	blr 
+/* 8016E244 00169EE4  4E 80 00 20 */	blr
 
 .global "GetPreviousLot__7EGlobalCFv"
 "GetPreviousLot__7EGlobalCFv":
 /* 8016E248 00169EE8  80 63 02 0C */	lwz r3, 0x20c(r3)
-/* 8016E24C 00169EEC  4E 80 00 20 */	blr 
+/* 8016E24C 00169EEC  4E 80 00 20 */	blr
 
 .global "GetTransitionID__7EGlobalCFv"
 "GetTransitionID__7EGlobalCFv":
 /* 8016E250 00169EF0  80 63 02 10 */	lwz r3, 0x210(r3)
-/* 8016E254 00169EF4  4E 80 00 20 */	blr 
+/* 8016E254 00169EF4  4E 80 00 20 */	blr
 
 .global "SetTransitioningNeighborID__7EGlobalFs"
 "SetTransitioningNeighborID__7EGlobalFs":
 /* 8016E258 00169EF8  B0 83 03 FC */	sth r4, 0x3fc(r3)
-/* 8016E25C 00169EFC  4E 80 00 20 */	blr 
+/* 8016E25C 00169EFC  4E 80 00 20 */	blr
 
 .global "SetListenFlag__7EGlobalFb"
 "SetListenFlag__7EGlobalFb":
 /* 8016E260 00169F00  98 83 03 E5 */	stb r4, 0x3e5(r3)
-/* 8016E264 00169F04  4E 80 00 20 */	blr 
+/* 8016E264 00169F04  4E 80 00 20 */	blr
 
 .global "IsTransitionLoad__7EGlobalFv"
 "IsTransitionLoad__7EGlobalFv":
@@ -5080,10 +5080,10 @@ lbl_8016E208:
 /* 8016E280 00169F20  48 00 00 0C */	b lbl_8016E28C
 lbl_8016E284:
 /* 8016E284 00169F24  38 60 00 01 */	li r3, 1
-/* 8016E288 00169F28  4E 80 00 20 */	blr 
+/* 8016E288 00169F28  4E 80 00 20 */	blr
 lbl_8016E28C:
 /* 8016E28C 00169F2C  38 60 00 00 */	li r3, 0
-/* 8016E290 00169F30  4E 80 00 20 */	blr 
+/* 8016E290 00169F30  4E 80 00 20 */	blr
 
 .global "InNPCEditorBasedToolMode__7EGlobalFv"
 "InNPCEditorBasedToolMode__7EGlobalFv":
@@ -5098,13 +5098,13 @@ lbl_8016E2B0:
 /* 8016E2B0 00169F50  38 80 00 01 */	li r4, 1
 lbl_8016E2B4:
 /* 8016E2B4 00169F54  7C 83 23 78 */	mr r3, r4
-/* 8016E2B8 00169F58  4E 80 00 20 */	blr 
+/* 8016E2B8 00169F58  4E 80 00 20 */	blr
 
 .global "ClearPlayerCheats__7EGlobalFv"
 "ClearPlayerCheats__7EGlobalFv":
 /* 8016E2BC 00169F5C  38 00 00 00 */	li r0, 0
 /* 8016E2C0 00169F60  90 03 01 54 */	stw r0, 0x154(r3)
-/* 8016E2C4 00169F64  4E 80 00 20 */	blr 
+/* 8016E2C4 00169F64  4E 80 00 20 */	blr
 
 .global "BGCall_IsComplete__Fv"
 "BGCall_IsComplete__Fv":
@@ -5131,19 +5131,19 @@ lbl_8016E2B4:
 /* 8016E30C 00169FAC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8016E310 00169FB0  7C 08 03 A6 */	mtlr r0
 /* 8016E314 00169FB4  38 21 00 60 */	addi r1, r1, 0x60
-/* 8016E318 00169FB8  4E 80 00 20 */	blr 
+/* 8016E318 00169FB8  4E 80 00 20 */	blr
 
 .global "End__2BGCFv"
 "End__2BGCFv":
 /* 8016E31C 00169FBC  38 00 00 01 */	li r0, 1
 /* 8016E320 00169FC0  98 0D B8 61 */	stb r0, "s_bBGComplete__2BG"-_SDA_BASE_(r13)
-/* 8016E324 00169FC4  4E 80 00 20 */	blr 
+/* 8016E324 00169FC4  4E 80 00 20 */	blr
 
 .global "Start__2BGCFv"
 "Start__2BGCFv":
 /* 8016E328 00169FC8  38 00 00 00 */	li r0, 0
 /* 8016E32C 00169FCC  98 0D B8 61 */	stb r0, "s_bBGComplete__2BG"-_SDA_BASE_(r13)
-/* 8016E330 00169FD0  4E 80 00 20 */	blr 
+/* 8016E330 00169FD0  4E 80 00 20 */	blr
 
 .global "AddRef__13EFlashManagerFUiP5EFilei"
 "AddRef__13EFlashManagerFUiP5EFilei":
@@ -5180,7 +5180,7 @@ lbl_8016E384:
 /* 8016E390 0016A030  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E394 0016A034  7C 08 03 A6 */	mtlr r0
 /* 8016E398 0016A038  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E39C 0016A03C  4E 80 00 20 */	blr 
+/* 8016E39C 0016A03C  4E 80 00 20 */	blr
 
 .global "__ct__13EGameStateManFv"
 "__ct__13EGameStateManFv":
@@ -5201,7 +5201,7 @@ lbl_8016E384:
 /* 8016E3D8 0016A078  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E3DC 0016A07C  7C 08 03 A6 */	mtlr r0
 /* 8016E3E0 0016A080  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E3E4 0016A084  4E 80 00 20 */	blr 
+/* 8016E3E4 0016A084  4E 80 00 20 */	blr
 
 .global "__dt__24TNodeList<P10EGameState>Fv"
 "__dt__24TNodeList<P10EGameState>Fv":
@@ -5227,7 +5227,7 @@ lbl_8016E424:
 /* 8016E430 0016A0D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E434 0016A0D4  7C 08 03 A6 */	mtlr r0
 /* 8016E438 0016A0D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E43C 0016A0DC  4E 80 00 20 */	blr 
+/* 8016E43C 0016A0DC  4E 80 00 20 */	blr
 
 .global "__dt__13EGameStateManFv"
 "__dt__13EGameStateManFv":
@@ -5257,7 +5257,7 @@ lbl_8016E48C:
 /* 8016E498 0016A138  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E49C 0016A13C  7C 08 03 A6 */	mtlr r0
 /* 8016E4A0 0016A140  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E4A4 0016A144  4E 80 00 20 */	blr 
+/* 8016E4A4 0016A144  4E 80 00 20 */	blr
 
 .global "SetState__13EGameStateManF12EGameStateId"
 "SetState__13EGameStateManF12EGameStateId":
@@ -5304,7 +5304,7 @@ lbl_8016E4D4:
 /* 8016E544 0016A1E4  7F E4 FB 78 */	mr r4, r31
 /* 8016E548 0016A1E8  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8016E54C 0016A1EC  7D 89 03 A6 */	mtctr r12
-/* 8016E550 0016A1F0  4E 80 04 21 */	bctrl 
+/* 8016E550 0016A1F0  4E 80 04 21 */	bctrl
 lbl_8016E554:
 /* 8016E554 0016A1F4  3F E0 80 49 */	lis r31, "_globals"@ha
 /* 8016E558 0016A1F8  93 DB 00 00 */	stw r30, 0(r27)
@@ -5319,7 +5319,7 @@ lbl_8016E554:
 /* 8016E57C 0016A21C  7F A3 EB 78 */	mr r3, r29
 /* 8016E580 0016A220  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8016E584 0016A224  7D 89 03 A6 */	mtctr r12
-/* 8016E588 0016A228  4E 80 04 21 */	bctrl 
+/* 8016E588 0016A228  4E 80 04 21 */	bctrl
 /* 8016E58C 0016A22C  48 00 00 18 */	b lbl_8016E5A4
 lbl_8016E590:
 /* 8016E590 0016A230  7F C3 F3 78 */	mr r3, r30
@@ -5334,7 +5334,7 @@ lbl_8016E5A4:
 /* 8016E5AC 0016A24C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8016E5B0 0016A250  7C 08 03 A6 */	mtlr r0
 /* 8016E5B4 0016A254  38 21 00 30 */	addi r1, r1, 0x30
-/* 8016E5B8 0016A258  4E 80 00 20 */	blr 
+/* 8016E5B8 0016A258  4E 80 00 20 */	blr
 
 .global "AddState__13EGameStateManFP10EGameState"
 "AddState__13EGameStateManFP10EGameState":
@@ -5353,7 +5353,7 @@ lbl_8016E5A4:
 /* 8016E5EC 0016A28C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E5F0 0016A290  7C 08 03 A6 */	mtlr r0
 /* 8016E5F4 0016A294  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E5F8 0016A298  4E 80 00 20 */	blr 
+/* 8016E5F8 0016A298  4E 80 00 20 */	blr
 
 .global "KillState__13EGameStateManFv"
 "KillState__13EGameStateManFv":
@@ -5379,7 +5379,7 @@ lbl_8016E640:
 /* 8016E644 0016A2E4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8016E648 0016A2E8  7C 08 03 A6 */	mtlr r0
 /* 8016E64C 0016A2EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016E650 0016A2F0  4E 80 00 20 */	blr 
+/* 8016E650 0016A2F0  4E 80 00 20 */	blr
 
 .global "DeleteAllStates__13EGameStateManFv"
 "DeleteAllStates__13EGameStateManFv":
@@ -5397,7 +5397,7 @@ lbl_8016E640:
 /* 8016E680 0016A320  38 80 00 00 */	li r4, 0
 /* 8016E684 0016A324  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8016E688 0016A328  7D 89 03 A6 */	mtctr r12
-/* 8016E68C 0016A32C  4E 80 04 21 */	bctrl 
+/* 8016E68C 0016A32C  4E 80 04 21 */	bctrl
 lbl_8016E690:
 /* 8016E690 0016A330  38 00 00 00 */	li r0, 0
 /* 8016E694 0016A334  38 7F 00 04 */	addi r3, r31, 4
@@ -5410,7 +5410,7 @@ lbl_8016E690:
 /* 8016E6B0 0016A350  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016E6B4 0016A354  7C 08 03 A6 */	mtlr r0
 /* 8016E6B8 0016A358  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E6BC 0016A35C  4E 80 00 20 */	blr 
+/* 8016E6BC 0016A35C  4E 80 00 20 */	blr
 
 .global "Update__13EGameStateManFv"
 "Update__13EGameStateManFv":
@@ -5431,12 +5431,12 @@ lbl_8016E6EC:
 /* 8016E6F4 0016A394  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016E6F8 0016A398  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8016E6FC 0016A39C  7D 89 03 A6 */	mtctr r12
-/* 8016E700 0016A3A0  4E 80 04 21 */	bctrl 
+/* 8016E700 0016A3A0  4E 80 04 21 */	bctrl
 /* 8016E704 0016A3A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E708 0016A3A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016E70C 0016A3AC  7C 08 03 A6 */	mtlr r0
 /* 8016E710 0016A3B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E714 0016A3B4  4E 80 00 20 */	blr 
+/* 8016E714 0016A3B4  4E 80 00 20 */	blr
 
 .global "Draw__13EGameStateManFP3ERC"
 "Draw__13EGameStateManFP3ERC":
@@ -5451,12 +5451,12 @@ lbl_8016E6EC:
 /* 8016E738 0016A3D8  7F E4 FB 78 */	mr r4, r31
 /* 8016E73C 0016A3DC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8016E740 0016A3E0  7D 89 03 A6 */	mtctr r12
-/* 8016E744 0016A3E4  4E 80 04 21 */	bctrl 
+/* 8016E744 0016A3E4  4E 80 04 21 */	bctrl
 /* 8016E748 0016A3E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E74C 0016A3EC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016E750 0016A3F0  7C 08 03 A6 */	mtlr r0
 /* 8016E754 0016A3F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E758 0016A3F8  4E 80 00 20 */	blr 
+/* 8016E758 0016A3F8  4E 80 00 20 */	blr
 
 .global "__dl__10EGameStateFPv"
 "__dl__10EGameStateFPv":
@@ -5472,7 +5472,7 @@ lbl_8016E6EC:
 /* 8016E780 0016A420  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016E784 0016A424  7C 08 03 A6 */	mtlr r0
 /* 8016E788 0016A428  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E78C 0016A42C  4E 80 00 20 */	blr 
+/* 8016E78C 0016A42C  4E 80 00 20 */	blr
 
 .global "GetState__10EGameStateFv"
 "GetState__10EGameStateFv":
@@ -5505,11 +5505,11 @@ lbl_8016E6EC:
 /* 8016E7EC 0016A48C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8016E7F0 0016A490  7C 08 03 A6 */	mtlr r0
 /* 8016E7F4 0016A494  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016E7F8 0016A498  4E 80 00 20 */	blr 
+/* 8016E7F8 0016A498  4E 80 00 20 */	blr
 
 .global "PauseAllSounds__10EGameStateFv"
 "PauseAllSounds__10EGameStateFv":
-/* 8016E7FC 0016A49C  4E 80 00 20 */	blr 
+/* 8016E7FC 0016A49C  4E 80 00 20 */	blr
 
 .global "__ct__24TNodeList<P10EGameState>Fb"
 "__ct__24TNodeList<P10EGameState>Fb":
@@ -5528,7 +5528,7 @@ lbl_8016E6EC:
 /* 8016E830 0016A4D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016E834 0016A4D4  7C 08 03 A6 */	mtlr r0
 /* 8016E838 0016A4D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E83C 0016A4DC  4E 80 00 20 */	blr 
+/* 8016E83C 0016A4DC  4E 80 00 20 */	blr
 
 .global "GetData__24TNodeList<P10EGameState>FP17NLIteratorPtrType"
 "GetData__24TNodeList<P10EGameState>FP17NLIteratorPtrType":
@@ -5565,7 +5565,7 @@ lbl_8016E870:
 /* 8016E89C 0016A53C  38 80 00 01 */	li r4, 1
 /* 8016E8A0 0016A540  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016E8A4 0016A544  7D 89 03 A6 */	mtctr r12
-/* 8016E8A8 0016A548  4E 80 04 21 */	bctrl 
+/* 8016E8A8 0016A548  4E 80 04 21 */	bctrl
 lbl_8016E8AC:
 /* 8016E8AC 0016A54C  7F DF F3 78 */	mr r31, r30
 lbl_8016E8B0:
@@ -5581,13 +5581,13 @@ lbl_8016E8B0:
 /* 8016E8D4 0016A574  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016E8D8 0016A578  7C 08 03 A6 */	mtlr r0
 /* 8016E8DC 0016A57C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016E8E0 0016A580  4E 80 00 20 */	blr 
+/* 8016E8E0 0016A580  4E 80 00 20 */	blr
 
 .global "__as__12EGameStateIdFRC12EGameStateId"
 "__as__12EGameStateIdFRC12EGameStateId":
 /* 8016E8E4 0016A584  80 04 00 00 */	lwz r0, 0(r4)
 /* 8016E8E8 0016A588  90 03 00 00 */	stw r0, 0(r3)
-/* 8016E8EC 0016A58C  4E 80 00 20 */	blr 
+/* 8016E8EC 0016A58C  4E 80 00 20 */	blr
 
 .global "Reset__16InLevelBaseStateFv"
 "Reset__16InLevelBaseStateFv":
@@ -5626,7 +5626,7 @@ lbl_8016E960:
 /* 8016E968 0016A608  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016E96C 0016A60C  7C 08 03 A6 */	mtlr r0
 /* 8016E970 0016A610  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016E974 0016A614  4E 80 00 20 */	blr 
+/* 8016E974 0016A614  4E 80 00 20 */	blr
 
 .global "Shutdown__16InLevelBaseStateFv"
 "Shutdown__16InLevelBaseStateFv":
@@ -5646,7 +5646,7 @@ lbl_8016E960:
 /* 8016E9AC 0016A64C  38 80 00 01 */	li r4, 1
 /* 8016E9B0 0016A650  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016E9B4 0016A654  7D 89 03 A6 */	mtctr r12
-/* 8016E9B8 0016A658  4E 80 04 21 */	bctrl 
+/* 8016E9B8 0016A658  4E 80 04 21 */	bctrl
 lbl_8016E9BC:
 /* 8016E9BC 0016A65C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016E9C0 0016A660  3B E0 00 00 */	li r31, 0
@@ -5668,7 +5668,7 @@ lbl_8016E9E4:
 /* 8016E9FC 0016A69C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8016EA00 0016A6A0  7C 08 03 A6 */	mtlr r0
 /* 8016EA04 0016A6A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016EA08 0016A6A8  4E 80 00 20 */	blr 
+/* 8016EA08 0016A6A8  4E 80 00 20 */	blr
 
 .global "Update__16InLevelBaseStateFf"
 "Update__16InLevelBaseStateFf":
@@ -5702,7 +5702,7 @@ lbl_8016E9E4:
 /* 8016EA78 0016A718  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016EA7C 0016A71C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8016EA80 0016A720  7D 89 03 A6 */	mtctr r12
-/* 8016EA84 0016A724  4E 80 04 21 */	bctrl 
+/* 8016EA84 0016A724  4E 80 04 21 */	bctrl
 lbl_8016EA88:
 /* 8016EA88 0016A728  7F A3 EB 78 */	mr r3, r29
 /* 8016EA8C 0016A72C  4B FF C5 85 */	bl "GetStateMachine__17StateMachineStateFv"
@@ -5728,7 +5728,7 @@ lbl_8016EAA8:
 /* 8016EAD8 0016A778  38 80 00 01 */	li r4, 1
 /* 8016EADC 0016A77C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EAE0 0016A780  7D 89 03 A6 */	mtctr r12
-/* 8016EAE4 0016A784  4E 80 04 21 */	bctrl 
+/* 8016EAE4 0016A784  4E 80 04 21 */	bctrl
 lbl_8016EAE8:
 /* 8016EAE8 0016A788  80 7D 01 28 */	lwz r3, 0x128(r29)
 /* 8016EAEC 0016A78C  38 00 00 00 */	li r0, 0
@@ -5739,7 +5739,7 @@ lbl_8016EAE8:
 /* 8016EB00 0016A7A0  38 80 00 01 */	li r4, 1
 /* 8016EB04 0016A7A4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EB08 0016A7A8  7D 89 03 A6 */	mtctr r12
-/* 8016EB0C 0016A7AC  4E 80 04 21 */	bctrl 
+/* 8016EB0C 0016A7AC  4E 80 04 21 */	bctrl
 lbl_8016EB10:
 /* 8016EB10 0016A7B0  80 7D 01 2C */	lwz r3, 0x12c(r29)
 /* 8016EB14 0016A7B4  38 00 00 00 */	li r0, 0
@@ -5750,7 +5750,7 @@ lbl_8016EB10:
 /* 8016EB28 0016A7C8  38 80 00 01 */	li r4, 1
 /* 8016EB2C 0016A7CC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EB30 0016A7D0  7D 89 03 A6 */	mtctr r12
-/* 8016EB34 0016A7D4  4E 80 04 21 */	bctrl 
+/* 8016EB34 0016A7D4  4E 80 04 21 */	bctrl
 lbl_8016EB38:
 /* 8016EB38 0016A7D8  80 7D 01 30 */	lwz r3, 0x130(r29)
 /* 8016EB3C 0016A7DC  38 00 00 00 */	li r0, 0
@@ -5761,7 +5761,7 @@ lbl_8016EB38:
 /* 8016EB50 0016A7F0  38 80 00 01 */	li r4, 1
 /* 8016EB54 0016A7F4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EB58 0016A7F8  7D 89 03 A6 */	mtctr r12
-/* 8016EB5C 0016A7FC  4E 80 04 21 */	bctrl 
+/* 8016EB5C 0016A7FC  4E 80 04 21 */	bctrl
 lbl_8016EB60:
 /* 8016EB60 0016A800  80 7D 01 38 */	lwz r3, 0x138(r29)
 /* 8016EB64 0016A804  38 00 00 00 */	li r0, 0
@@ -5772,7 +5772,7 @@ lbl_8016EB60:
 /* 8016EB78 0016A818  38 80 00 01 */	li r4, 1
 /* 8016EB7C 0016A81C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EB80 0016A820  7D 89 03 A6 */	mtctr r12
-/* 8016EB84 0016A824  4E 80 04 21 */	bctrl 
+/* 8016EB84 0016A824  4E 80 04 21 */	bctrl
 lbl_8016EB88:
 /* 8016EB88 0016A828  80 7D 01 54 */	lwz r3, 0x154(r29)
 /* 8016EB8C 0016A82C  3B C0 00 00 */	li r30, 0
@@ -5790,7 +5790,7 @@ lbl_8016EBA8:
 /* 8016EBB8 0016A858  38 80 00 01 */	li r4, 1
 /* 8016EBBC 0016A85C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EBC0 0016A860  7D 89 03 A6 */	mtctr r12
-/* 8016EBC4 0016A864  4E 80 04 21 */	bctrl 
+/* 8016EBC4 0016A864  4E 80 04 21 */	bctrl
 lbl_8016EBC8:
 /* 8016EBC8 0016A868  38 00 00 00 */	li r0, 0
 /* 8016EBCC 0016A86C  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -5803,7 +5803,7 @@ lbl_8016EBC8:
 /* 8016EBE8 0016A888  38 80 00 01 */	li r4, 1
 /* 8016EBEC 0016A88C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EBF0 0016A890  7D 89 03 A6 */	mtctr r12
-/* 8016EBF4 0016A894  4E 80 04 21 */	bctrl 
+/* 8016EBF4 0016A894  4E 80 04 21 */	bctrl
 lbl_8016EBF8:
 /* 8016EBF8 0016A898  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016EBFC 0016A89C  38 00 00 00 */	li r0, 0
@@ -5816,7 +5816,7 @@ lbl_8016EBF8:
 /* 8016EC18 0016A8B8  38 80 00 01 */	li r4, 1
 /* 8016EC1C 0016A8BC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EC20 0016A8C0  7D 89 03 A6 */	mtctr r12
-/* 8016EC24 0016A8C4  4E 80 04 21 */	bctrl 
+/* 8016EC24 0016A8C4  4E 80 04 21 */	bctrl
 lbl_8016EC28:
 /* 8016EC28 0016A8C8  80 7D 01 44 */	lwz r3, 0x144(r29)
 /* 8016EC2C 0016A8CC  38 00 00 00 */	li r0, 0
@@ -5827,7 +5827,7 @@ lbl_8016EC28:
 /* 8016EC40 0016A8E0  38 80 00 01 */	li r4, 1
 /* 8016EC44 0016A8E4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EC48 0016A8E8  7D 89 03 A6 */	mtctr r12
-/* 8016EC4C 0016A8EC  4E 80 04 21 */	bctrl 
+/* 8016EC4C 0016A8EC  4E 80 04 21 */	bctrl
 lbl_8016EC50:
 /* 8016EC50 0016A8F0  80 7D 01 48 */	lwz r3, 0x148(r29)
 /* 8016EC54 0016A8F4  38 00 00 00 */	li r0, 0
@@ -5838,7 +5838,7 @@ lbl_8016EC50:
 /* 8016EC68 0016A908  38 80 00 01 */	li r4, 1
 /* 8016EC6C 0016A90C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EC70 0016A910  7D 89 03 A6 */	mtctr r12
-/* 8016EC74 0016A914  4E 80 04 21 */	bctrl 
+/* 8016EC74 0016A914  4E 80 04 21 */	bctrl
 lbl_8016EC78:
 /* 8016EC78 0016A918  80 7D 01 4C */	lwz r3, 0x14c(r29)
 /* 8016EC7C 0016A91C  38 00 00 00 */	li r0, 0
@@ -5849,7 +5849,7 @@ lbl_8016EC78:
 /* 8016EC90 0016A930  38 80 00 01 */	li r4, 1
 /* 8016EC94 0016A934  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EC98 0016A938  7D 89 03 A6 */	mtctr r12
-/* 8016EC9C 0016A93C  4E 80 04 21 */	bctrl 
+/* 8016EC9C 0016A93C  4E 80 04 21 */	bctrl
 lbl_8016ECA0:
 /* 8016ECA0 0016A940  38 80 00 00 */	li r4, 0
 /* 8016ECA4 0016A944  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -5917,7 +5917,7 @@ lbl_8016ED6C:
 /* 8016ED84 0016AA24  38 80 00 01 */	li r4, 1
 /* 8016ED88 0016AA28  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016ED8C 0016AA2C  7D 89 03 A6 */	mtctr r12
-/* 8016ED90 0016AA30  4E 80 04 21 */	bctrl 
+/* 8016ED90 0016AA30  4E 80 04 21 */	bctrl
 lbl_8016ED94:
 /* 8016ED94 0016AA34  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016ED98 0016AA38  38 80 00 00 */	li r4, 0
@@ -5984,7 +5984,7 @@ lbl_8016EE50:
 /* 8016EE74 0016AB14  38 80 00 01 */	li r4, 1
 /* 8016EE78 0016AB18  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EE7C 0016AB1C  7D 89 03 A6 */	mtctr r12
-/* 8016EE80 0016AB20  4E 80 04 21 */	bctrl 
+/* 8016EE80 0016AB20  4E 80 04 21 */	bctrl
 lbl_8016EE84:
 /* 8016EE84 0016AB24  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016EE88 0016AB28  38 00 00 00 */	li r0, 0
@@ -5997,7 +5997,7 @@ lbl_8016EE84:
 /* 8016EEA4 0016AB44  38 80 00 01 */	li r4, 1
 /* 8016EEA8 0016AB48  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016EEAC 0016AB4C  7D 89 03 A6 */	mtctr r12
-/* 8016EEB0 0016AB50  4E 80 04 21 */	bctrl 
+/* 8016EEB0 0016AB50  4E 80 04 21 */	bctrl
 lbl_8016EEB4:
 /* 8016EEB4 0016AB54  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016EEB8 0016AB58  38 00 00 00 */	li r0, 0
@@ -6110,7 +6110,7 @@ lbl_8016F028:
 /* 8016F048 0016ACE8  38 80 00 01 */	li r4, 1
 /* 8016F04C 0016ACEC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F050 0016ACF0  7D 89 03 A6 */	mtctr r12
-/* 8016F054 0016ACF4  4E 80 04 21 */	bctrl 
+/* 8016F054 0016ACF4  4E 80 04 21 */	bctrl
 lbl_8016F058:
 /* 8016F058 0016ACF8  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016F05C 0016ACFC  38 00 00 00 */	li r0, 0
@@ -6129,7 +6129,7 @@ lbl_8016F058:
 /* 8016F090 0016AD30  38 63 CB 38 */	addi r3, r3, lbl_8042CB38@l
 /* 8016F094 0016AD34  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8016F098 0016AD38  7C 69 03 A6 */	mtctr r3
-/* 8016F09C 0016AD3C  4E 80 04 20 */	bctr 
+/* 8016F09C 0016AD3C  4E 80 04 20 */	bctr
 /* 8016F0A0 0016AD40  3B C0 00 00 */	li r30, 0
 /* 8016F0A4 0016AD44  48 00 00 18 */	b lbl_8016F0BC
 /* 8016F0A8 0016AD48  38 60 00 01 */	li r3, 1
@@ -6148,7 +6148,7 @@ lbl_8016F0BC:
 /* 8016F0D8 0016AD78  81 83 00 00 */	lwz r12, 0(r3)
 /* 8016F0DC 0016AD7C  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8016F0E0 0016AD80  7D 89 03 A6 */	mtctr r12
-/* 8016F0E4 0016AD84  4E 80 04 21 */	bctrl 
+/* 8016F0E4 0016AD84  4E 80 04 21 */	bctrl
 lbl_8016F0E8:
 /* 8016F0E8 0016AD88  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016F0EC 0016AD8C  38 63 75 34 */	addi r3, r3, "_gd"@l
@@ -6159,7 +6159,7 @@ lbl_8016F0E8:
 /* 8016F100 0016ADA0  38 80 00 01 */	li r4, 1
 /* 8016F104 0016ADA4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F108 0016ADA8  7D 89 03 A6 */	mtctr r12
-/* 8016F10C 0016ADAC  4E 80 04 21 */	bctrl 
+/* 8016F10C 0016ADAC  4E 80 04 21 */	bctrl
 lbl_8016F110:
 /* 8016F110 0016ADB0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016F114 0016ADB4  38 00 00 00 */	li r0, 0
@@ -6172,7 +6172,7 @@ lbl_8016F110:
 /* 8016F130 0016ADD0  38 80 00 01 */	li r4, 1
 /* 8016F134 0016ADD4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F138 0016ADD8  7D 89 03 A6 */	mtctr r12
-/* 8016F13C 0016ADDC  4E 80 04 21 */	bctrl 
+/* 8016F13C 0016ADDC  4E 80 04 21 */	bctrl
 lbl_8016F140:
 /* 8016F140 0016ADE0  80 7D 01 20 */	lwz r3, 0x120(r29)
 /* 8016F144 0016ADE4  38 00 00 00 */	li r0, 0
@@ -6183,7 +6183,7 @@ lbl_8016F140:
 /* 8016F158 0016ADF8  38 80 00 01 */	li r4, 1
 /* 8016F15C 0016ADFC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F160 0016AE00  7D 89 03 A6 */	mtctr r12
-/* 8016F164 0016AE04  4E 80 04 21 */	bctrl 
+/* 8016F164 0016AE04  4E 80 04 21 */	bctrl
 lbl_8016F168:
 /* 8016F168 0016AE08  80 7D 01 2C */	lwz r3, 0x12c(r29)
 /* 8016F16C 0016AE0C  38 00 00 00 */	li r0, 0
@@ -6194,7 +6194,7 @@ lbl_8016F168:
 /* 8016F180 0016AE20  38 80 00 01 */	li r4, 1
 /* 8016F184 0016AE24  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F188 0016AE28  7D 89 03 A6 */	mtctr r12
-/* 8016F18C 0016AE2C  4E 80 04 21 */	bctrl 
+/* 8016F18C 0016AE2C  4E 80 04 21 */	bctrl
 lbl_8016F190:
 /* 8016F190 0016AE30  38 00 00 00 */	li r0, 0
 /* 8016F194 0016AE34  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -6207,7 +6207,7 @@ lbl_8016F190:
 /* 8016F1B0 0016AE50  38 80 00 01 */	li r4, 1
 /* 8016F1B4 0016AE54  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F1B8 0016AE58  7D 89 03 A6 */	mtctr r12
-/* 8016F1BC 0016AE5C  4E 80 04 21 */	bctrl 
+/* 8016F1BC 0016AE5C  4E 80 04 21 */	bctrl
 lbl_8016F1C0:
 /* 8016F1C0 0016AE60  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016F1C4 0016AE64  38 00 00 00 */	li r0, 0
@@ -6220,7 +6220,7 @@ lbl_8016F1C0:
 /* 8016F1E0 0016AE80  38 80 00 01 */	li r4, 1
 /* 8016F1E4 0016AE84  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F1E8 0016AE88  7D 89 03 A6 */	mtctr r12
-/* 8016F1EC 0016AE8C  4E 80 04 21 */	bctrl 
+/* 8016F1EC 0016AE8C  4E 80 04 21 */	bctrl
 lbl_8016F1F0:
 /* 8016F1F0 0016AE90  80 7D 01 40 */	lwz r3, 0x140(r29)
 /* 8016F1F4 0016AE94  38 00 00 00 */	li r0, 0
@@ -6231,7 +6231,7 @@ lbl_8016F1F0:
 /* 8016F208 0016AEA8  38 80 00 01 */	li r4, 1
 /* 8016F20C 0016AEAC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F210 0016AEB0  7D 89 03 A6 */	mtctr r12
-/* 8016F214 0016AEB4  4E 80 04 21 */	bctrl 
+/* 8016F214 0016AEB4  4E 80 04 21 */	bctrl
 lbl_8016F218:
 /* 8016F218 0016AEB8  80 7D 01 44 */	lwz r3, 0x144(r29)
 /* 8016F21C 0016AEBC  38 00 00 00 */	li r0, 0
@@ -6242,7 +6242,7 @@ lbl_8016F218:
 /* 8016F230 0016AED0  38 80 00 01 */	li r4, 1
 /* 8016F234 0016AED4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F238 0016AED8  7D 89 03 A6 */	mtctr r12
-/* 8016F23C 0016AEDC  4E 80 04 21 */	bctrl 
+/* 8016F23C 0016AEDC  4E 80 04 21 */	bctrl
 lbl_8016F240:
 /* 8016F240 0016AEE0  80 7D 01 48 */	lwz r3, 0x148(r29)
 /* 8016F244 0016AEE4  38 00 00 00 */	li r0, 0
@@ -6253,7 +6253,7 @@ lbl_8016F240:
 /* 8016F258 0016AEF8  38 80 00 01 */	li r4, 1
 /* 8016F25C 0016AEFC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F260 0016AF00  7D 89 03 A6 */	mtctr r12
-/* 8016F264 0016AF04  4E 80 04 21 */	bctrl 
+/* 8016F264 0016AF04  4E 80 04 21 */	bctrl
 lbl_8016F268:
 /* 8016F268 0016AF08  80 7D 01 4C */	lwz r3, 0x14c(r29)
 /* 8016F26C 0016AF0C  38 00 00 00 */	li r0, 0
@@ -6264,7 +6264,7 @@ lbl_8016F268:
 /* 8016F280 0016AF20  38 80 00 01 */	li r4, 1
 /* 8016F284 0016AF24  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F288 0016AF28  7D 89 03 A6 */	mtctr r12
-/* 8016F28C 0016AF2C  4E 80 04 21 */	bctrl 
+/* 8016F28C 0016AF2C  4E 80 04 21 */	bctrl
 lbl_8016F290:
 /* 8016F290 0016AF30  38 00 00 00 */	li r0, 0
 /* 8016F294 0016AF34  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -6371,7 +6371,7 @@ lbl_8016F3E4:
 /* 8016F404 0016B0A4  38 80 00 01 */	li r4, 1
 /* 8016F408 0016B0A8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F40C 0016B0AC  7D 89 03 A6 */	mtctr r12
-/* 8016F410 0016B0B0  4E 80 04 21 */	bctrl 
+/* 8016F410 0016B0B0  4E 80 04 21 */	bctrl
 lbl_8016F414:
 /* 8016F414 0016B0B4  38 00 00 00 */	li r0, 0
 /* 8016F418 0016B0B8  38 60 1D 8C */	li r3, 0x1d8c
@@ -6399,7 +6399,7 @@ lbl_8016F448:
 /* 8016F468 0016B108  38 80 00 01 */	li r4, 1
 /* 8016F46C 0016B10C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F470 0016B110  7D 89 03 A6 */	mtctr r12
-/* 8016F474 0016B114  4E 80 04 21 */	bctrl 
+/* 8016F474 0016B114  4E 80 04 21 */	bctrl
 lbl_8016F478:
 /* 8016F478 0016B118  38 00 00 00 */	li r0, 0
 /* 8016F47C 0016B11C  38 60 01 A8 */	li r3, 0x1a8
@@ -6427,7 +6427,7 @@ lbl_8016F4AC:
 /* 8016F4CC 0016B16C  38 80 00 01 */	li r4, 1
 /* 8016F4D0 0016B170  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F4D4 0016B174  7D 89 03 A6 */	mtctr r12
-/* 8016F4D8 0016B178  4E 80 04 21 */	bctrl 
+/* 8016F4D8 0016B178  4E 80 04 21 */	bctrl
 lbl_8016F4DC:
 /* 8016F4DC 0016B17C  38 00 00 00 */	li r0, 0
 /* 8016F4E0 0016B180  38 60 01 A8 */	li r3, 0x1a8
@@ -6455,7 +6455,7 @@ lbl_8016F510:
 /* 8016F530 0016B1D0  38 80 00 01 */	li r4, 1
 /* 8016F534 0016B1D4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F538 0016B1D8  7D 89 03 A6 */	mtctr r12
-/* 8016F53C 0016B1DC  4E 80 04 21 */	bctrl 
+/* 8016F53C 0016B1DC  4E 80 04 21 */	bctrl
 lbl_8016F540:
 /* 8016F540 0016B1E0  38 00 00 00 */	li r0, 0
 /* 8016F544 0016B1E4  38 60 01 A8 */	li r3, 0x1a8
@@ -6483,7 +6483,7 @@ lbl_8016F574:
 /* 8016F594 0016B234  38 80 00 01 */	li r4, 1
 /* 8016F598 0016B238  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F59C 0016B23C  7D 89 03 A6 */	mtctr r12
-/* 8016F5A0 0016B240  4E 80 04 21 */	bctrl 
+/* 8016F5A0 0016B240  4E 80 04 21 */	bctrl
 lbl_8016F5A4:
 /* 8016F5A4 0016B244  38 00 00 00 */	li r0, 0
 /* 8016F5A8 0016B248  38 60 01 A8 */	li r3, 0x1a8
@@ -6511,7 +6511,7 @@ lbl_8016F5D8:
 /* 8016F5F8 0016B298  38 80 00 01 */	li r4, 1
 /* 8016F5FC 0016B29C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F600 0016B2A0  7D 89 03 A6 */	mtctr r12
-/* 8016F604 0016B2A4  4E 80 04 21 */	bctrl 
+/* 8016F604 0016B2A4  4E 80 04 21 */	bctrl
 lbl_8016F608:
 /* 8016F608 0016B2A8  38 00 00 00 */	li r0, 0
 /* 8016F60C 0016B2AC  38 60 01 A8 */	li r3, 0x1a8
@@ -6539,7 +6539,7 @@ lbl_8016F63C:
 /* 8016F65C 0016B2FC  38 80 00 01 */	li r4, 1
 /* 8016F660 0016B300  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F664 0016B304  7D 89 03 A6 */	mtctr r12
-/* 8016F668 0016B308  4E 80 04 21 */	bctrl 
+/* 8016F668 0016B308  4E 80 04 21 */	bctrl
 lbl_8016F66C:
 /* 8016F66C 0016B30C  38 00 00 00 */	li r0, 0
 /* 8016F670 0016B310  38 60 01 A8 */	li r3, 0x1a8
@@ -6570,7 +6570,7 @@ lbl_8016F6A0:
 /* 8016F6CC 0016B36C  38 80 00 01 */	li r4, 1
 /* 8016F6D0 0016B370  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F6D4 0016B374  7D 89 03 A6 */	mtctr r12
-/* 8016F6D8 0016B378  4E 80 04 21 */	bctrl 
+/* 8016F6D8 0016B378  4E 80 04 21 */	bctrl
 lbl_8016F6DC:
 /* 8016F6DC 0016B37C  38 00 00 00 */	li r0, 0
 /* 8016F6E0 0016B380  38 60 04 EC */	li r3, 0x4ec
@@ -6602,7 +6602,7 @@ lbl_8016F714:
 /* 8016F740 0016B3E0  38 80 00 01 */	li r4, 1
 /* 8016F744 0016B3E4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F748 0016B3E8  7D 89 03 A6 */	mtctr r12
-/* 8016F74C 0016B3EC  4E 80 04 21 */	bctrl 
+/* 8016F74C 0016B3EC  4E 80 04 21 */	bctrl
 lbl_8016F750:
 /* 8016F750 0016B3F0  38 00 00 00 */	li r0, 0
 /* 8016F754 0016B3F4  38 60 04 EC */	li r3, 0x4ec
@@ -6634,7 +6634,7 @@ lbl_8016F788:
 /* 8016F7B4 0016B454  38 80 00 01 */	li r4, 1
 /* 8016F7B8 0016B458  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F7BC 0016B45C  7D 89 03 A6 */	mtctr r12
-/* 8016F7C0 0016B460  4E 80 04 21 */	bctrl 
+/* 8016F7C0 0016B460  4E 80 04 21 */	bctrl
 lbl_8016F7C4:
 /* 8016F7C4 0016B464  38 00 00 00 */	li r0, 0
 /* 8016F7C8 0016B468  38 60 04 EC */	li r3, 0x4ec
@@ -6663,7 +6663,7 @@ lbl_8016F7FC:
 /* 8016F81C 0016B4BC  38 80 00 01 */	li r4, 1
 /* 8016F820 0016B4C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F824 0016B4C4  7D 89 03 A6 */	mtctr r12
-/* 8016F828 0016B4C8  4E 80 04 21 */	bctrl 
+/* 8016F828 0016B4C8  4E 80 04 21 */	bctrl
 lbl_8016F82C:
 /* 8016F82C 0016B4CC  38 00 00 00 */	li r0, 0
 /* 8016F830 0016B4D0  38 60 00 D4 */	li r3, 0xd4
@@ -6691,7 +6691,7 @@ lbl_8016F860:
 /* 8016F880 0016B520  38 80 00 01 */	li r4, 1
 /* 8016F884 0016B524  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F888 0016B528  7D 89 03 A6 */	mtctr r12
-/* 8016F88C 0016B52C  4E 80 04 21 */	bctrl 
+/* 8016F88C 0016B52C  4E 80 04 21 */	bctrl
 lbl_8016F890:
 /* 8016F890 0016B530  38 00 00 00 */	li r0, 0
 /* 8016F894 0016B534  38 60 00 D8 */	li r3, 0xd8
@@ -6719,7 +6719,7 @@ lbl_8016F8C4:
 /* 8016F8E4 0016B584  38 80 00 01 */	li r4, 1
 /* 8016F8E8 0016B588  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F8EC 0016B58C  7D 89 03 A6 */	mtctr r12
-/* 8016F8F0 0016B590  4E 80 04 21 */	bctrl 
+/* 8016F8F0 0016B590  4E 80 04 21 */	bctrl
 lbl_8016F8F4:
 /* 8016F8F4 0016B594  38 00 00 00 */	li r0, 0
 /* 8016F8F8 0016B598  38 60 01 D4 */	li r3, 0x1d4
@@ -6748,7 +6748,7 @@ lbl_8016F928:
 /* 8016F94C 0016B5EC  38 80 00 01 */	li r4, 1
 /* 8016F950 0016B5F0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F954 0016B5F4  7D 89 03 A6 */	mtctr r12
-/* 8016F958 0016B5F8  4E 80 04 21 */	bctrl 
+/* 8016F958 0016B5F8  4E 80 04 21 */	bctrl
 lbl_8016F95C:
 /* 8016F95C 0016B5FC  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016F960 0016B600  38 00 00 00 */	li r0, 0
@@ -6761,7 +6761,7 @@ lbl_8016F95C:
 /* 8016F97C 0016B61C  38 80 00 01 */	li r4, 1
 /* 8016F980 0016B620  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F984 0016B624  7D 89 03 A6 */	mtctr r12
-/* 8016F988 0016B628  4E 80 04 21 */	bctrl 
+/* 8016F988 0016B628  4E 80 04 21 */	bctrl
 lbl_8016F98C:
 /* 8016F98C 0016B62C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016F990 0016B630  38 00 00 00 */	li r0, 0
@@ -6774,7 +6774,7 @@ lbl_8016F98C:
 /* 8016F9AC 0016B64C  38 80 00 01 */	li r4, 1
 /* 8016F9B0 0016B650  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016F9B4 0016B654  7D 89 03 A6 */	mtctr r12
-/* 8016F9B8 0016B658  4E 80 04 21 */	bctrl 
+/* 8016F9B8 0016B658  4E 80 04 21 */	bctrl
 lbl_8016F9BC:
 /* 8016F9BC 0016B65C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016F9C0 0016B660  38 00 00 00 */	li r0, 0
@@ -6799,7 +6799,7 @@ lbl_8016F9D8:
 /* 8016FA08 0016B6A8  38 80 00 01 */	li r4, 1
 /* 8016FA0C 0016B6AC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FA10 0016B6B0  7D 89 03 A6 */	mtctr r12
-/* 8016FA14 0016B6B4  4E 80 04 21 */	bctrl 
+/* 8016FA14 0016B6B4  4E 80 04 21 */	bctrl
 lbl_8016FA18:
 /* 8016FA18 0016B6B8  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FA1C 0016B6BC  38 00 00 00 */	li r0, 0
@@ -6834,7 +6834,7 @@ lbl_8016FA58:
 /* 8016FA88 0016B728  38 80 00 01 */	li r4, 1
 /* 8016FA8C 0016B72C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FA90 0016B730  7D 89 03 A6 */	mtctr r12
-/* 8016FA94 0016B734  4E 80 04 21 */	bctrl 
+/* 8016FA94 0016B734  4E 80 04 21 */	bctrl
 lbl_8016FA98:
 /* 8016FA98 0016B738  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FA9C 0016B73C  38 00 00 00 */	li r0, 0
@@ -6869,7 +6869,7 @@ lbl_8016FAD8:
 /* 8016FB08 0016B7A8  38 80 00 01 */	li r4, 1
 /* 8016FB0C 0016B7AC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FB10 0016B7B0  7D 89 03 A6 */	mtctr r12
-/* 8016FB14 0016B7B4  4E 80 04 21 */	bctrl 
+/* 8016FB14 0016B7B4  4E 80 04 21 */	bctrl
 lbl_8016FB18:
 /* 8016FB18 0016B7B8  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FB1C 0016B7BC  38 00 00 00 */	li r0, 0
@@ -6882,7 +6882,7 @@ lbl_8016FB18:
 /* 8016FB38 0016B7D8  38 80 00 01 */	li r4, 1
 /* 8016FB3C 0016B7DC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FB40 0016B7E0  7D 89 03 A6 */	mtctr r12
-/* 8016FB44 0016B7E4  4E 80 04 21 */	bctrl 
+/* 8016FB44 0016B7E4  4E 80 04 21 */	bctrl
 lbl_8016FB48:
 /* 8016FB48 0016B7E8  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016FB4C 0016B7EC  38 00 00 00 */	li r0, 0
@@ -6895,7 +6895,7 @@ lbl_8016FB48:
 /* 8016FB68 0016B808  38 80 00 01 */	li r4, 1
 /* 8016FB6C 0016B80C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FB70 0016B810  7D 89 03 A6 */	mtctr r12
-/* 8016FB74 0016B814  4E 80 04 21 */	bctrl 
+/* 8016FB74 0016B814  4E 80 04 21 */	bctrl
 lbl_8016FB78:
 /* 8016FB78 0016B818  38 00 00 00 */	li r0, 0
 /* 8016FB7C 0016B81C  38 60 04 EC */	li r3, 0x4ec
@@ -6924,7 +6924,7 @@ lbl_8016FBB0:
 /* 8016FBD0 0016B870  38 80 00 01 */	li r4, 1
 /* 8016FBD4 0016B874  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FBD8 0016B878  7D 89 03 A6 */	mtctr r12
-/* 8016FBDC 0016B87C  4E 80 04 21 */	bctrl 
+/* 8016FBDC 0016B87C  4E 80 04 21 */	bctrl
 lbl_8016FBE0:
 /* 8016FBE0 0016B880  3F C0 80 49 */	lis r30, "_gd"@ha
 /* 8016FBE4 0016B884  38 00 00 00 */	li r0, 0
@@ -6938,7 +6938,7 @@ lbl_8016FBE0:
 /* 8016FC04 0016B8A4  38 80 00 01 */	li r4, 1
 /* 8016FC08 0016B8A8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FC0C 0016B8AC  7D 89 03 A6 */	mtctr r12
-/* 8016FC10 0016B8B0  4E 80 04 21 */	bctrl 
+/* 8016FC10 0016B8B0  4E 80 04 21 */	bctrl
 lbl_8016FC14:
 /* 8016FC14 0016B8B4  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016FC18 0016B8B8  38 00 00 00 */	li r0, 0
@@ -7014,7 +7014,7 @@ lbl_8016FCF8:
 /* 8016FD10 0016B9B0  38 80 00 01 */	li r4, 1
 /* 8016FD14 0016B9B4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FD18 0016B9B8  7D 89 03 A6 */	mtctr r12
-/* 8016FD1C 0016B9BC  4E 80 04 21 */	bctrl 
+/* 8016FD1C 0016B9BC  4E 80 04 21 */	bctrl
 lbl_8016FD20:
 /* 8016FD20 0016B9C0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016FD24 0016B9C4  38 00 00 00 */	li r0, 0
@@ -7036,7 +7036,7 @@ lbl_8016FD34:
 /* 8016FD60 0016BA00  38 80 00 01 */	li r4, 1
 /* 8016FD64 0016BA04  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FD68 0016BA08  7D 89 03 A6 */	mtctr r12
-/* 8016FD6C 0016BA0C  4E 80 04 21 */	bctrl 
+/* 8016FD6C 0016BA0C  4E 80 04 21 */	bctrl
 lbl_8016FD70:
 /* 8016FD70 0016BA10  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016FD74 0016BA14  38 00 00 00 */	li r0, 0
@@ -7059,7 +7059,7 @@ lbl_8016FD84:
 /* 8016FDB4 0016BA54  38 80 00 01 */	li r4, 1
 /* 8016FDB8 0016BA58  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FDBC 0016BA5C  7D 89 03 A6 */	mtctr r12
-/* 8016FDC0 0016BA60  4E 80 04 21 */	bctrl 
+/* 8016FDC0 0016BA60  4E 80 04 21 */	bctrl
 lbl_8016FDC4:
 /* 8016FDC4 0016BA64  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FDC8 0016BA68  38 00 00 00 */	li r0, 0
@@ -7090,7 +7090,7 @@ lbl_8016FE00:
 /* 8016FE24 0016BAC4  38 80 00 01 */	li r4, 1
 /* 8016FE28 0016BAC8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FE2C 0016BACC  7D 89 03 A6 */	mtctr r12
-/* 8016FE30 0016BAD0  4E 80 04 21 */	bctrl 
+/* 8016FE30 0016BAD0  4E 80 04 21 */	bctrl
 lbl_8016FE34:
 /* 8016FE34 0016BAD4  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FE38 0016BAD8  38 00 00 00 */	li r0, 0
@@ -7122,7 +7122,7 @@ lbl_8016FE74:
 /* 8016FE98 0016BB38  38 80 00 01 */	li r4, 1
 /* 8016FE9C 0016BB3C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FEA0 0016BB40  7D 89 03 A6 */	mtctr r12
-/* 8016FEA4 0016BB44  4E 80 04 21 */	bctrl 
+/* 8016FEA4 0016BB44  4E 80 04 21 */	bctrl
 lbl_8016FEA8:
 /* 8016FEA8 0016BB48  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FEAC 0016BB4C  38 00 00 00 */	li r0, 0
@@ -7157,7 +7157,7 @@ lbl_8016FEE8:
 /* 8016FF18 0016BBB8  38 80 00 01 */	li r4, 1
 /* 8016FF1C 0016BBBC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FF20 0016BBC0  7D 89 03 A6 */	mtctr r12
-/* 8016FF24 0016BBC4  4E 80 04 21 */	bctrl 
+/* 8016FF24 0016BBC4  4E 80 04 21 */	bctrl
 lbl_8016FF28:
 /* 8016FF28 0016BBC8  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8016FF2C 0016BBCC  38 00 00 00 */	li r0, 0
@@ -7186,7 +7186,7 @@ lbl_8016FF68:
 /* 8016FF80 0016BC20  38 80 00 01 */	li r4, 1
 /* 8016FF84 0016BC24  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FF88 0016BC28  7D 89 03 A6 */	mtctr r12
-/* 8016FF8C 0016BC2C  4E 80 04 21 */	bctrl 
+/* 8016FF8C 0016BC2C  4E 80 04 21 */	bctrl
 lbl_8016FF90:
 /* 8016FF90 0016BC30  38 00 00 00 */	li r0, 0
 /* 8016FF94 0016BC34  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -7199,7 +7199,7 @@ lbl_8016FF90:
 /* 8016FFB0 0016BC50  38 80 00 01 */	li r4, 1
 /* 8016FFB4 0016BC54  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8016FFB8 0016BC58  7D 89 03 A6 */	mtctr r12
-/* 8016FFBC 0016BC5C  4E 80 04 21 */	bctrl 
+/* 8016FFBC 0016BC5C  4E 80 04 21 */	bctrl
 lbl_8016FFC0:
 /* 8016FFC0 0016BC60  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8016FFC4 0016BC64  38 00 00 00 */	li r0, 0
@@ -7249,7 +7249,7 @@ lbl_8017004C:
 /* 8017006C 0016BD0C  38 80 00 01 */	li r4, 1
 /* 80170070 0016BD10  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170074 0016BD14  7D 89 03 A6 */	mtctr r12
-/* 80170078 0016BD18  4E 80 04 21 */	bctrl 
+/* 80170078 0016BD18  4E 80 04 21 */	bctrl
 lbl_8017007C:
 /* 8017007C 0016BD1C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80170080 0016BD20  38 00 00 00 */	li r0, 0
@@ -7262,7 +7262,7 @@ lbl_8017007C:
 /* 8017009C 0016BD3C  38 80 00 01 */	li r4, 1
 /* 801700A0 0016BD40  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801700A4 0016BD44  7D 89 03 A6 */	mtctr r12
-/* 801700A8 0016BD48  4E 80 04 21 */	bctrl 
+/* 801700A8 0016BD48  4E 80 04 21 */	bctrl
 lbl_801700AC:
 /* 801700AC 0016BD4C  38 00 00 00 */	li r0, 0
 /* 801700B0 0016BD50  90 1D 01 44 */	stw r0, 0x144(r29)
@@ -7294,7 +7294,7 @@ lbl_801700F0:
 /* 80170110 0016BDB0  38 80 00 01 */	li r4, 1
 /* 80170114 0016BDB4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170118 0016BDB8  7D 89 03 A6 */	mtctr r12
-/* 8017011C 0016BDBC  4E 80 04 21 */	bctrl 
+/* 8017011C 0016BDBC  4E 80 04 21 */	bctrl
 lbl_80170120:
 /* 80170120 0016BDC0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80170124 0016BDC4  38 00 00 00 */	li r0, 0
@@ -7325,7 +7325,7 @@ lbl_80170160:
 /* 80170180 0016BE20  38 80 00 01 */	li r4, 1
 /* 80170184 0016BE24  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170188 0016BE28  7D 89 03 A6 */	mtctr r12
-/* 8017018C 0016BE2C  4E 80 04 21 */	bctrl 
+/* 8017018C 0016BE2C  4E 80 04 21 */	bctrl
 lbl_80170190:
 /* 80170190 0016BE30  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80170194 0016BE34  38 00 00 00 */	li r0, 0
@@ -7356,7 +7356,7 @@ lbl_801701D0:
 /* 801701F0 0016BE90  38 80 00 01 */	li r4, 1
 /* 801701F4 0016BE94  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801701F8 0016BE98  7D 89 03 A6 */	mtctr r12
-/* 801701FC 0016BE9C  4E 80 04 21 */	bctrl 
+/* 801701FC 0016BE9C  4E 80 04 21 */	bctrl
 lbl_80170200:
 /* 80170200 0016BEA0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80170204 0016BEA4  38 00 00 00 */	li r0, 0
@@ -7369,7 +7369,7 @@ lbl_80170200:
 /* 80170220 0016BEC0  38 80 00 01 */	li r4, 1
 /* 80170224 0016BEC4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170228 0016BEC8  7D 89 03 A6 */	mtctr r12
-/* 8017022C 0016BECC  4E 80 04 21 */	bctrl 
+/* 8017022C 0016BECC  4E 80 04 21 */	bctrl
 lbl_80170230:
 /* 80170230 0016BED0  38 00 00 00 */	li r0, 0
 /* 80170234 0016BED4  90 1D 01 40 */	stw r0, 0x140(r29)
@@ -7412,7 +7412,7 @@ lbl_801702A8:
 /* 801702B8 0016BF58  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 801702BC 0016BF5C  7C 08 03 A6 */	mtlr r0
 /* 801702C0 0016BF60  38 21 00 30 */	addi r1, r1, 0x30
-/* 801702C4 0016BF64  4E 80 00 20 */	blr 
+/* 801702C4 0016BF64  4E 80 00 20 */	blr
 
 .global "HandleFlowToIngameDialog__16InLevelBaseStateFv"
 "HandleFlowToIngameDialog__16InLevelBaseStateFv":
@@ -7429,7 +7429,7 @@ lbl_801702A8:
 /* 801702F0 0016BF90  81 83 00 00 */	lwz r12, 0(r3)
 /* 801702F4 0016BF94  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 801702F8 0016BF98  7D 89 03 A6 */	mtctr r12
-/* 801702FC 0016BF9C  4E 80 04 21 */	bctrl 
+/* 801702FC 0016BF9C  4E 80 04 21 */	bctrl
 lbl_80170300:
 /* 80170300 0016BFA0  3C 60 80 43 */	lis r3, lbl_8042C9E0@ha
 /* 80170304 0016BFA4  38 80 00 00 */	li r4, 0
@@ -7438,7 +7438,7 @@ lbl_80170300:
 /* 80170310 0016BFB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170314 0016BFB4  7C 08 03 A6 */	mtlr r0
 /* 80170318 0016BFB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017031C 0016BFBC  4E 80 00 20 */	blr 
+/* 8017031C 0016BFBC  4E 80 00 20 */	blr
 
 .global "HandleExitToMainMenu__16InLevelBaseStateFv"
 "HandleExitToMainMenu__16InLevelBaseStateFv":
@@ -7456,7 +7456,7 @@ lbl_80170300:
 /* 8017034C 0016BFEC  38 80 00 01 */	li r4, 1
 /* 80170350 0016BFF0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170354 0016BFF4  7D 89 03 A6 */	mtctr r12
-/* 80170358 0016BFF8  4E 80 04 21 */	bctrl 
+/* 80170358 0016BFF8  4E 80 04 21 */	bctrl
 lbl_8017035C:
 /* 8017035C 0016BFFC  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80170360 0016C000  38 00 00 00 */	li r0, 0
@@ -7469,7 +7469,7 @@ lbl_8017035C:
 /* 8017037C 0016C01C  38 80 00 01 */	li r4, 1
 /* 80170380 0016C020  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170384 0016C024  7D 89 03 A6 */	mtctr r12
-/* 80170388 0016C028  4E 80 04 21 */	bctrl 
+/* 80170388 0016C028  4E 80 04 21 */	bctrl
 lbl_8017038C:
 /* 8017038C 0016C02C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80170390 0016C030  38 00 00 00 */	li r0, 0
@@ -7482,7 +7482,7 @@ lbl_8017038C:
 /* 801703AC 0016C04C  38 80 00 01 */	li r4, 1
 /* 801703B0 0016C050  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801703B4 0016C054  7D 89 03 A6 */	mtctr r12
-/* 801703B8 0016C058  4E 80 04 21 */	bctrl 
+/* 801703B8 0016C058  4E 80 04 21 */	bctrl
 lbl_801703BC:
 /* 801703BC 0016C05C  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 801703C0 0016C060  38 00 00 00 */	li r0, 0
@@ -7495,7 +7495,7 @@ lbl_801703BC:
 /* 801703DC 0016C07C  38 80 00 01 */	li r4, 1
 /* 801703E0 0016C080  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801703E4 0016C084  7D 89 03 A6 */	mtctr r12
-/* 801703E8 0016C088  4E 80 04 21 */	bctrl 
+/* 801703E8 0016C088  4E 80 04 21 */	bctrl
 lbl_801703EC:
 /* 801703EC 0016C08C  80 7F 01 34 */	lwz r3, 0x134(r31)
 /* 801703F0 0016C090  38 00 00 00 */	li r0, 0
@@ -7506,7 +7506,7 @@ lbl_801703EC:
 /* 80170404 0016C0A4  38 80 00 01 */	li r4, 1
 /* 80170408 0016C0A8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017040C 0016C0AC  7D 89 03 A6 */	mtctr r12
-/* 80170410 0016C0B0  4E 80 04 21 */	bctrl 
+/* 80170410 0016C0B0  4E 80 04 21 */	bctrl
 lbl_80170414:
 /* 80170414 0016C0B4  38 00 00 00 */	li r0, 0
 /* 80170418 0016C0B8  90 1F 01 34 */	stw r0, 0x134(r31)
@@ -7519,7 +7519,7 @@ lbl_80170414:
 /* 80170434 0016C0D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170438 0016C0D8  7C 08 03 A6 */	mtlr r0
 /* 8017043C 0016C0DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170440 0016C0E0  4E 80 00 20 */	blr 
+/* 80170440 0016C0E0  4E 80 00 20 */	blr
 
 .global "Draw__16InLevelBaseStateFP3ERC"
 "Draw__16InLevelBaseStateFP3ERC":
@@ -7544,7 +7544,7 @@ lbl_80170484:
 /* 80170488 0016C128  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017048C 0016C12C  7C 08 03 A6 */	mtlr r0
 /* 80170490 0016C130  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170494 0016C134  4E 80 00 20 */	blr 
+/* 80170494 0016C134  4E 80 00 20 */	blr
 
 .global "SavePlayerInteractorState__16InLevelBaseStateCFv"
 "SavePlayerInteractorState__16InLevelBaseStateCFv":
@@ -7571,7 +7571,7 @@ lbl_801704E0:
 /* 801704E0 0016C180  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801704E4 0016C184  7C 08 03 A6 */	mtlr r0
 /* 801704E8 0016C188  38 21 00 10 */	addi r1, r1, 0x10
-/* 801704EC 0016C18C  4E 80 00 20 */	blr 
+/* 801704EC 0016C18C  4E 80 00 20 */	blr
 
 .global "__ct__16InLevelBaseStateFi"
 "__ct__16InLevelBaseStateFi":
@@ -7611,7 +7611,7 @@ lbl_801704E0:
 /* 80170574 0016C214  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170578 0016C218  7C 08 03 A6 */	mtlr r0
 /* 8017057C 0016C21C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170580 0016C220  4E 80 00 20 */	blr 
+/* 80170580 0016C220  4E 80 00 20 */	blr
 
 .global "__dt__16InLevelBaseStateFv"
 "__dt__16InLevelBaseStateFv":
@@ -7636,7 +7636,7 @@ lbl_801704E0:
 /* 801705CC 0016C26C  81 83 00 00 */	lwz r12, 0(r3)
 /* 801705D0 0016C270  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801705D4 0016C274  7D 89 03 A6 */	mtctr r12
-/* 801705D8 0016C278  4E 80 04 21 */	bctrl 
+/* 801705D8 0016C278  4E 80 04 21 */	bctrl
 lbl_801705DC:
 /* 801705DC 0016C27C  80 7D 01 20 */	lwz r3, 0x120(r29)
 /* 801705E0 0016C280  38 00 00 00 */	li r0, 0
@@ -7647,7 +7647,7 @@ lbl_801705DC:
 /* 801705F4 0016C294  38 80 00 01 */	li r4, 1
 /* 801705F8 0016C298  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801705FC 0016C29C  7D 89 03 A6 */	mtctr r12
-/* 80170600 0016C2A0  4E 80 04 21 */	bctrl 
+/* 80170600 0016C2A0  4E 80 04 21 */	bctrl
 lbl_80170604:
 /* 80170604 0016C2A4  80 7D 01 24 */	lwz r3, 0x124(r29)
 /* 80170608 0016C2A8  38 00 00 00 */	li r0, 0
@@ -7658,7 +7658,7 @@ lbl_80170604:
 /* 8017061C 0016C2BC  38 80 00 01 */	li r4, 1
 /* 80170620 0016C2C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170624 0016C2C4  7D 89 03 A6 */	mtctr r12
-/* 80170628 0016C2C8  4E 80 04 21 */	bctrl 
+/* 80170628 0016C2C8  4E 80 04 21 */	bctrl
 lbl_8017062C:
 /* 8017062C 0016C2CC  80 7D 01 28 */	lwz r3, 0x128(r29)
 /* 80170630 0016C2D0  38 00 00 00 */	li r0, 0
@@ -7669,7 +7669,7 @@ lbl_8017062C:
 /* 80170644 0016C2E4  38 80 00 01 */	li r4, 1
 /* 80170648 0016C2E8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017064C 0016C2EC  7D 89 03 A6 */	mtctr r12
-/* 80170650 0016C2F0  4E 80 04 21 */	bctrl 
+/* 80170650 0016C2F0  4E 80 04 21 */	bctrl
 lbl_80170654:
 /* 80170654 0016C2F4  80 7D 01 2C */	lwz r3, 0x12c(r29)
 /* 80170658 0016C2F8  38 00 00 00 */	li r0, 0
@@ -7680,7 +7680,7 @@ lbl_80170654:
 /* 8017066C 0016C30C  38 80 00 01 */	li r4, 1
 /* 80170670 0016C310  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80170674 0016C314  7D 89 03 A6 */	mtctr r12
-/* 80170678 0016C318  4E 80 04 21 */	bctrl 
+/* 80170678 0016C318  4E 80 04 21 */	bctrl
 lbl_8017067C:
 /* 8017067C 0016C31C  80 7D 01 30 */	lwz r3, 0x130(r29)
 /* 80170680 0016C320  38 00 00 00 */	li r0, 0
@@ -7691,7 +7691,7 @@ lbl_8017067C:
 /* 80170694 0016C334  38 80 00 01 */	li r4, 1
 /* 80170698 0016C338  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017069C 0016C33C  7D 89 03 A6 */	mtctr r12
-/* 801706A0 0016C340  4E 80 04 21 */	bctrl 
+/* 801706A0 0016C340  4E 80 04 21 */	bctrl
 lbl_801706A4:
 /* 801706A4 0016C344  80 7D 01 34 */	lwz r3, 0x134(r29)
 /* 801706A8 0016C348  38 00 00 00 */	li r0, 0
@@ -7702,7 +7702,7 @@ lbl_801706A4:
 /* 801706BC 0016C35C  38 80 00 01 */	li r4, 1
 /* 801706C0 0016C360  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801706C4 0016C364  7D 89 03 A6 */	mtctr r12
-/* 801706C8 0016C368  4E 80 04 21 */	bctrl 
+/* 801706C8 0016C368  4E 80 04 21 */	bctrl
 lbl_801706CC:
 /* 801706CC 0016C36C  80 7D 01 38 */	lwz r3, 0x138(r29)
 /* 801706D0 0016C370  38 00 00 00 */	li r0, 0
@@ -7713,7 +7713,7 @@ lbl_801706CC:
 /* 801706E4 0016C384  38 80 00 01 */	li r4, 1
 /* 801706E8 0016C388  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801706EC 0016C38C  7D 89 03 A6 */	mtctr r12
-/* 801706F0 0016C390  4E 80 04 21 */	bctrl 
+/* 801706F0 0016C390  4E 80 04 21 */	bctrl
 lbl_801706F4:
 /* 801706F4 0016C394  80 7D 01 54 */	lwz r3, 0x154(r29)
 /* 801706F8 0016C398  3B E0 00 00 */	li r31, 0
@@ -7731,7 +7731,7 @@ lbl_80170714:
 /* 80170724 0016C3C4  38 80 00 01 */	li r4, 1
 /* 80170728 0016C3C8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017072C 0016C3CC  7D 89 03 A6 */	mtctr r12
-/* 80170730 0016C3D0  4E 80 04 21 */	bctrl 
+/* 80170730 0016C3D0  4E 80 04 21 */	bctrl
 lbl_80170734:
 /* 80170734 0016C3D4  38 00 00 00 */	li r0, 0
 /* 80170738 0016C3D8  38 7D 00 7C */	addi r3, r29, 0x7c
@@ -7753,37 +7753,37 @@ lbl_80170764:
 /* 80170774 0016C414  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80170778 0016C418  7C 08 03 A6 */	mtlr r0
 /* 8017077C 0016C41C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80170780 0016C420  4E 80 00 20 */	blr 
+/* 80170780 0016C420  4E 80 00 20 */	blr
 
 .global "SetPauseMenuActive__9H2DTargetFb"
 "SetPauseMenuActive__9H2DTargetFb":
 /* 80170784 0016C424  98 83 02 95 */	stb r4, 0x295(r3)
-/* 80170788 0016C428  4E 80 00 20 */	blr 
+/* 80170788 0016C428  4E 80 00 20 */	blr
 
 .global "SetInLevel__8GameDataFb"
 "SetInLevel__8GameDataFb":
 /* 8017078C 0016C42C  98 83 00 67 */	stb r4, 0x67(r3)
-/* 80170790 0016C430  4E 80 00 20 */	blr 
+/* 80170790 0016C430  4E 80 00 20 */	blr
 
 .global "GetGameState__8GameDataCFv"
 "GetGameState__8GameDataCFv":
 /* 80170794 0016C434  80 63 00 00 */	lwz r3, 0(r3)
-/* 80170798 0016C438  4E 80 00 20 */	blr 
+/* 80170798 0016C438  4E 80 00 20 */	blr
 
 .global "SetGameState__8GameDataFQ28GameData9GameState"
 "SetGameState__8GameDataFQ28GameData9GameState":
 /* 8017079C 0016C43C  90 83 00 00 */	stw r4, 0(r3)
-/* 801707A0 0016C440  4E 80 00 20 */	blr 
+/* 801707A0 0016C440  4E 80 00 20 */	blr
 
 .global "SetSelectedFamily__8GameDataFi"
 "SetSelectedFamily__8GameDataFi":
 /* 801707A4 0016C444  90 83 00 80 */	stw r4, 0x80(r3)
-/* 801707A8 0016C448  4E 80 00 20 */	blr 
+/* 801707A8 0016C448  4E 80 00 20 */	blr
 
 .global "SetAuthorMode__8GameDataFb"
 "SetAuthorMode__8GameDataFb":
 /* 801707AC 0016C44C  98 83 00 94 */	stb r4, 0x94(r3)
-/* 801707B0 0016C450  4E 80 00 20 */	blr 
+/* 801707B0 0016C450  4E 80 00 20 */	blr
 
 .global "CopyrightFadeOut__8GameDataFv"
 "CopyrightFadeOut__8GameDataFv":
@@ -7792,7 +7792,7 @@ lbl_80170764:
 /* 801707BC 0016C45C  7C 80 00 38 */	and r0, r4, r0
 /* 801707C0 0016C460  60 00 00 02 */	ori r0, r0, 2
 /* 801707C4 0016C464  90 03 00 A4 */	stw r0, 0xa4(r3)
-/* 801707C8 0016C468  4E 80 00 20 */	blr 
+/* 801707C8 0016C468  4E 80 00 20 */	blr
 
 .global "CopyrightUpLongEnough__8GameDataFv"
 "CopyrightUpLongEnough__8GameDataFv":
@@ -7808,25 +7808,25 @@ lbl_80170764:
 /* 801707F0 0016C490  54 63 17 FE */	rlwinm r3, r3, 2, 0x1f, 0x1f
 /* 801707F4 0016C494  7C 08 03 A6 */	mtlr r0
 /* 801707F8 0016C498  38 21 00 10 */	addi r1, r1, 0x10
-/* 801707FC 0016C49C  4E 80 00 20 */	blr 
+/* 801707FC 0016C49C  4E 80 00 20 */	blr
 
 .global "CopyrightIsFadeOut__8GameDataCFv"
 "CopyrightIsFadeOut__8GameDataCFv":
 /* 80170800 0016C4A0  80 03 00 A4 */	lwz r0, 0xa4(r3)
 /* 80170804 0016C4A4  54 03 FF FE */	rlwinm r3, r0, 0x1f, 0x1f, 0x1f
-/* 80170808 0016C4A8  4E 80 00 20 */	blr 
+/* 80170808 0016C4A8  4E 80 00 20 */	blr
 
 .global "CopyrightIsFadedOut__8GameDataCFv"
 "CopyrightIsFadedOut__8GameDataCFv":
 /* 8017080C 0016C4AC  80 03 00 A4 */	lwz r0, 0xa4(r3)
 /* 80170810 0016C4B0  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 80170814 0016C4B4  4E 80 00 20 */	blr 
+/* 80170814 0016C4B4  4E 80 00 20 */	blr
 
 .global "CopyrightIsFadedIn__8GameDataCFv"
 "CopyrightIsFadedIn__8GameDataCFv":
 /* 80170818 0016C4B8  80 03 00 A4 */	lwz r0, 0xa4(r3)
 /* 8017081C 0016C4BC  54 03 F7 FE */	rlwinm r3, r0, 0x1e, 0x1f, 0x1f
-/* 80170820 0016C4C0  4E 80 00 20 */	blr 
+/* 80170820 0016C4C0  4E 80 00 20 */	blr
 
 .global "CopyrightFadeIn__8GameDataFv"
 "CopyrightFadeIn__8GameDataFv":
@@ -7834,7 +7834,7 @@ lbl_80170764:
 /* 80170828 0016C4C8  54 00 07 F6 */	rlwinm r0, r0, 0, 0x1f, 0x1b
 /* 8017082C 0016C4CC  60 00 00 01 */	ori r0, r0, 1
 /* 80170830 0016C4D0  90 03 00 A4 */	stw r0, 0xa4(r3)
-/* 80170834 0016C4D4  4E 80 00 20 */	blr 
+/* 80170834 0016C4D4  4E 80 00 20 */	blr
 
 .global "SetLastTransitionSimulatorTime__12NeighborhoodFRC8GameTime"
 "SetLastTransitionSimulatorTime__12NeighborhoodFRC8GameTime":
@@ -7858,7 +7858,7 @@ lbl_80170764:
 /* 80170858 0016C4F8  60 00 00 01 */	ori r0, r0, 1
 /* 8017085C 0016C4FC  B0 03 00 54 */	sth r0, 0x54(r3)
 /* 80170860 0016C500  D0 03 00 94 */	stfs f0, 0x94(r3)
-/* 80170864 0016C504  4E 80 00 20 */	blr 
+/* 80170864 0016C504  4E 80 00 20 */	blr
 
 .global "__dt__12UIObjectBaseFv"
 "__dt__12UIObjectBaseFv":
@@ -7878,7 +7878,7 @@ lbl_80170890:
 /* 80170898 0016C538  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017089C 0016C53C  7C 08 03 A6 */	mtlr r0
 /* 801708A0 0016C540  38 21 00 10 */	addi r1, r1, 0x10
-/* 801708A4 0016C544  4E 80 00 20 */	blr 
+/* 801708A4 0016C544  4E 80 00 20 */	blr
 
 .global "__ct__12UIObjectBaseFv"
 "__ct__12UIObjectBaseFv":
@@ -7924,45 +7924,45 @@ lbl_80170890:
 /* 80170944 0016C5E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170948 0016C5E8  7C 08 03 A6 */	mtlr r0
 /* 8017094C 0016C5EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170950 0016C5F0  4E 80 00 20 */	blr 
+/* 80170950 0016C5F0  4E 80 00 20 */	blr
 
 .global "SetVariable__12UIObjectBaseFPCcPCc"
 "SetVariable__12UIObjectBaseFPCcPCc":
-/* 80170954 0016C5F4  4E 80 00 20 */	blr 
+/* 80170954 0016C5F4  4E 80 00 20 */	blr
 
 .global "GetVariable__12UIObjectBaseFPCc"
 "GetVariable__12UIObjectBaseFPCc":
 /* 80170958 0016C5F8  38 60 00 00 */	li r3, 0
-/* 8017095C 0016C5FC  4E 80 00 20 */	blr 
+/* 8017095C 0016C5FC  4E 80 00 20 */	blr
 
 .global "GetLocalizable__12UIObjectBaseFPCc"
 "GetLocalizable__12UIObjectBaseFPCc":
 /* 80170960 0016C600  38 60 00 00 */	li r3, 0
-/* 80170964 0016C604  4E 80 00 20 */	blr 
+/* 80170964 0016C604  4E 80 00 20 */	blr
 
 .global "Update__12UIObjectBaseFv"
 "Update__12UIObjectBaseFv":
-/* 80170968 0016C608  4E 80 00 20 */	blr 
+/* 80170968 0016C608  4E 80 00 20 */	blr
 
 .global "Draw__12UIObjectBaseFP3ERC"
 "Draw__12UIObjectBaseFP3ERC":
-/* 8017096C 0016C60C  4E 80 00 20 */	blr 
+/* 8017096C 0016C60C  4E 80 00 20 */	blr
 
 .global "Enable__14PetsHomeButtonFv"
 "Enable__14PetsHomeButtonFv":
 /* 80170970 0016C610  80 63 00 00 */	lwz r3, 0(r3)
 /* 80170974 0016C614  2C 03 00 00 */	cmpwi r3, 0
-/* 80170978 0016C618  4D 82 00 20 */	beqlr 
+/* 80170978 0016C618  4D 82 00 20 */	beqlr
 /* 8017097C 0016C61C  48 00 00 1C */	b "EnableHomeMenu__13TRCHomeButtonFv"
-/* 80170980 0016C620  4E 80 00 20 */	blr 
+/* 80170980 0016C620  4E 80 00 20 */	blr
 
 .global "Disable__14PetsHomeButtonFii"
 "Disable__14PetsHomeButtonFii":
 /* 80170984 0016C624  80 63 00 00 */	lwz r3, 0(r3)
 /* 80170988 0016C628  2C 03 00 00 */	cmpwi r3, 0
-/* 8017098C 0016C62C  4D 82 00 20 */	beqlr 
+/* 8017098C 0016C62C  4D 82 00 20 */	beqlr
 /* 80170990 0016C630  48 0D 60 80 */	b "DisableHomeMenu__13TRCHomeButtonFii"
-/* 80170994 0016C634  4E 80 00 20 */	blr 
+/* 80170994 0016C634  4E 80 00 20 */	blr
 
 .global "EnableHomeMenu__13TRCHomeButtonFv"
 "EnableHomeMenu__13TRCHomeButtonFv":
@@ -7970,18 +7970,18 @@ lbl_80170890:
 /* 8017099C 0016C63C  38 00 00 00 */	li r0, 0
 /* 801709A0 0016C640  98 83 00 D1 */	stb r4, 0xd1(r3)
 /* 801709A4 0016C644  90 03 00 C4 */	stw r0, 0xc4(r3)
-/* 801709A8 0016C648  4E 80 00 20 */	blr 
+/* 801709A8 0016C648  4E 80 00 20 */	blr
 
 .global "SetFamilyToNull__5HouseFv"
 "SetFamilyToNull__5HouseFv":
 /* 801709AC 0016C64C  38 00 00 00 */	li r0, 0
 /* 801709B0 0016C650  90 03 00 10 */	stw r0, 0x10(r3)
-/* 801709B4 0016C654  4E 80 00 20 */	blr 
+/* 801709B4 0016C654  4E 80 00 20 */	blr
 
 .global "SetGameState__4EAppF18OVERALL_GAME_STATE"
 "SetGameState__4EAppF18OVERALL_GAME_STATE":
 /* 801709B8 0016C658  90 83 04 60 */	stw r4, 0x460(r3)
-/* 801709BC 0016C65C  4E 80 00 20 */	blr 
+/* 801709BC 0016C65C  4E 80 00 20 */	blr
 
 .global "__ct__17CBFunctor1<P3ERC>FPQ213CBFunctorBase9DummyInit"
 "__ct__17CBFunctor1<P3ERC>FPQ213CBFunctorBase9DummyInit":
@@ -7996,7 +7996,7 @@ lbl_80170890:
 /* 801709E0 0016C680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801709E4 0016C684  7C 08 03 A6 */	mtlr r0
 /* 801709E8 0016C688  38 21 00 10 */	addi r1, r1, 0x10
-/* 801709EC 0016C68C  4E 80 00 20 */	blr 
+/* 801709EC 0016C68C  4E 80 00 20 */	blr
 
 .global "__ct__23CBFunctor1wRet<PCc,PUs>FPQ213CBFunctorBase9DummyInit"
 "__ct__23CBFunctor1wRet<PCc,PUs>FPQ213CBFunctorBase9DummyInit":
@@ -8011,7 +8011,7 @@ lbl_80170890:
 /* 80170A10 0016C6B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170A14 0016C6B4  7C 08 03 A6 */	mtlr r0
 /* 80170A18 0016C6B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170A1C 0016C6BC  4E 80 00 20 */	blr 
+/* 80170A1C 0016C6BC  4E 80 00 20 */	blr
 
 .global "__ct__19CBFunctor2<PCc,PCc>FPQ213CBFunctorBase9DummyInit"
 "__ct__19CBFunctor2<PCc,PCc>FPQ213CBFunctorBase9DummyInit":
@@ -8026,7 +8026,7 @@ lbl_80170890:
 /* 80170A40 0016C6E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170A44 0016C6E4  7C 08 03 A6 */	mtlr r0
 /* 80170A48 0016C6E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170A4C 0016C6EC  4E 80 00 20 */	blr 
+/* 80170A4C 0016C6EC  4E 80 00 20 */	blr
 
 .global "__ct__22CBFunctor1wRet<PCc,Pc>FPQ213CBFunctorBase9DummyInit"
 "__ct__22CBFunctor1wRet<PCc,Pc>FPQ213CBFunctorBase9DummyInit":
@@ -8041,7 +8041,7 @@ lbl_80170890:
 /* 80170A70 0016C710  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170A74 0016C714  7C 08 03 A6 */	mtlr r0
 /* 80170A78 0016C718  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170A7C 0016C71C  4E 80 00 20 */	blr 
+/* 80170A7C 0016C71C  4E 80 00 20 */	blr
 
 .global "LoadLevelGlobalData__Fv"
 "LoadLevelGlobalData__Fv":
@@ -8075,7 +8075,7 @@ lbl_80170AB0:
 /* 80170AE8 0016C788  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80170AEC 0016C78C  7C 08 03 A6 */	mtlr r0
 /* 80170AF0 0016C790  38 21 00 20 */	addi r1, r1, 0x20
-/* 80170AF4 0016C794  4E 80 00 20 */	blr 
+/* 80170AF4 0016C794  4E 80 00 20 */	blr
 
 .global "UnloadLevelGlobalData__Fv"
 "UnloadLevelGlobalData__Fv":
@@ -8122,7 +8122,7 @@ lbl_80170B84:
 /* 80170B90 0016C830  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80170B94 0016C834  7C 08 03 A6 */	mtlr r0
 /* 80170B98 0016C838  38 21 00 20 */	addi r1, r1, 0x20
-/* 80170B9C 0016C83C  4E 80 00 20 */	blr 
+/* 80170B9C 0016C83C  4E 80 00 20 */	blr
 
 .global "RenderPostProcessEffects__37@unnamed@game_statemachine_unity_cpp@FiP3ERC"
 "RenderPostProcessEffects__37@unnamed@game_statemachine_unity_cpp@FiP3ERC":
@@ -8165,7 +8165,7 @@ lbl_80170C1C:
 /* 80170C28 0016C8C8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80170C2C 0016C8CC  7C 08 03 A6 */	mtlr r0
 /* 80170C30 0016C8D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80170C34 0016C8D4  4E 80 00 20 */	blr 
+/* 80170C34 0016C8D4  4E 80 00 20 */	blr
 
 .global "__ct__9ELiveModeFv"
 "__ct__9ELiveModeFv":
@@ -8205,7 +8205,7 @@ lbl_80170C1C:
 /* 80170CBC 0016C95C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80170CC0 0016C960  7C 08 03 A6 */	mtlr r0
 /* 80170CC4 0016C964  38 21 00 20 */	addi r1, r1, 0x20
-/* 80170CC8 0016C968  4E 80 00 20 */	blr 
+/* 80170CC8 0016C968  4E 80 00 20 */	blr
 
 .global "__dt__9ELiveModeFv"
 "__dt__9ELiveModeFv":
@@ -8235,7 +8235,7 @@ lbl_80170D18:
 /* 80170D24 0016C9C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170D28 0016C9C8  7C 08 03 A6 */	mtlr r0
 /* 80170D2C 0016C9CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170D30 0016C9D0  4E 80 00 20 */	blr 
+/* 80170D30 0016C9D0  4E 80 00 20 */	blr
 
 .global "Init__9ELiveModeFi"
 "Init__9ELiveModeFi":
@@ -8279,7 +8279,7 @@ lbl_80170D88:
 /* 80170DC4 0016CA64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170DC8 0016CA68  7C 08 03 A6 */	mtlr r0
 /* 80170DCC 0016CA6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170DD0 0016CA70  4E 80 00 20 */	blr 
+/* 80170DD0 0016CA70  4E 80 00 20 */	blr
 
 .global "Shutdown__17LiveModeInitStateFv"
 "Shutdown__17LiveModeInitStateFv":
@@ -8291,7 +8291,7 @@ lbl_80170D88:
 /* 80170DE8 0016CA88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80170DEC 0016CA8C  7C 08 03 A6 */	mtlr r0
 /* 80170DF0 0016CA90  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170DF4 0016CA94  4E 80 00 20 */	blr 
+/* 80170DF4 0016CA94  4E 80 00 20 */	blr
 
 .global "Reset__17LiveModeInitStateFv"
 "Reset__17LiveModeInitStateFv":
@@ -8338,7 +8338,7 @@ lbl_80170E34:
 /* 80170E94 0016CB34  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80170E98 0016CB38  7C 08 03 A6 */	mtlr r0
 /* 80170E9C 0016CB3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80170EA0 0016CB40  4E 80 00 20 */	blr 
+/* 80170EA0 0016CB40  4E 80 00 20 */	blr
 
 .global "Update__17LiveModeInitStateFf"
 "Update__17LiveModeInitStateFf":
@@ -8386,7 +8386,7 @@ lbl_80170F10:
 /* 80170F40 0016CBE0  38 63 CC 2C */	addi r3, r3, lbl_8042CC2C@l
 /* 80170F44 0016CBE4  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80170F48 0016CBE8  7C 69 03 A6 */	mtctr r3
-/* 80170F4C 0016CBEC  4E 80 04 20 */	bctr 
+/* 80170F4C 0016CBEC  4E 80 04 20 */	bctr
 /* 80170F50 0016CBF0  4B EA 89 71 */	bl "GetWeatherManager__Fv"
 /* 80170F54 0016CBF4  48 0D 78 A9 */	bl "Suspend__14WeatherManagerFv"
 /* 80170F58 0016CBF8  80 7A 00 70 */	lwz r3, 0x70(r26)
@@ -8450,14 +8450,14 @@ lbl_8017100C:
 /* 8017103C 0016CCDC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80171040 0016CCE0  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80171044 0016CCE4  7D 89 03 A6 */	mtctr r12
-/* 80171048 0016CCE8  4E 80 04 21 */	bctrl 
+/* 80171048 0016CCE8  4E 80 04 21 */	bctrl
 /* 8017104C 0016CCEC  2C 03 00 00 */	cmpwi r3, 0
 /* 80171050 0016CCF0  40 82 08 E8 */	bne lbl_80171938
 /* 80171054 0016CCF4  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
 /* 80171058 0016CCF8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017105C 0016CCFC  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 80171060 0016CD00  7D 89 03 A6 */	mtctr r12
-/* 80171064 0016CD04  4E 80 04 21 */	bctrl 
+/* 80171064 0016CD04  4E 80 04 21 */	bctrl
 /* 80171068 0016CD08  4B F2 FB C5 */	bl "timeGetTime__Fv"
 /* 8017106C 0016CD0C  3F 40 80 49 */	lis r26, "_globals"@ha
 /* 80171070 0016CD10  38 61 00 70 */	addi r3, r1, 0x70
@@ -8575,7 +8575,7 @@ lbl_80171210:
 /* 8017122C 0016CECC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80171230 0016CED0  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80171234 0016CED4  7D 89 03 A6 */	mtctr r12
-/* 80171238 0016CED8  4E 80 04 21 */	bctrl 
+/* 80171238 0016CED8  4E 80 04 21 */	bctrl
 /* 8017123C 0016CEDC  2C 03 00 00 */	cmpwi r3, 0
 /* 80171240 0016CEE0  40 82 06 F8 */	bne lbl_80171938
 /* 80171244 0016CEE4  7F 83 E3 78 */	mr r3, r28
@@ -8601,7 +8601,7 @@ lbl_80171210:
 /* 80171294 0016CF34  81 83 00 00 */	lwz r12, 0(r3)
 /* 80171298 0016CF38  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8017129C 0016CF3C  7D 89 03 A6 */	mtctr r12
-/* 801712A0 0016CF40  4E 80 04 21 */	bctrl 
+/* 801712A0 0016CF40  4E 80 04 21 */	bctrl
 /* 801712A4 0016CF44  2C 03 00 00 */	cmpwi r3, 0
 /* 801712A8 0016CF48  40 82 06 90 */	bne lbl_80171938
 /* 801712AC 0016CF4C  38 00 00 00 */	li r0, 0
@@ -8701,13 +8701,13 @@ lbl_801713F0:
 /* 80171414 0016D0B4  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80171418 0016D0B8  38 E0 00 00 */	li r7, 0
 /* 8017141C 0016D0BC  7D 89 03 A6 */	mtctr r12
-/* 80171420 0016D0C0  4E 80 04 21 */	bctrl 
+/* 80171420 0016D0C0  4E 80 04 21 */	bctrl
 /* 80171424 0016D0C4  38 79 7A 40 */	addi r3, r25, 0x7a40
 /* 80171428 0016D0C8  48 0B A7 69 */	bl "GetSelectedPerson__7EGlobalCFv"
 /* 8017142C 0016D0CC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80171430 0016D0D0  81 8C 00 C0 */	lwz r12, 0xc0(r12)
 /* 80171434 0016D0D4  7D 89 03 A6 */	mtctr r12
-/* 80171438 0016D0D8  4E 80 04 21 */	bctrl 
+/* 80171438 0016D0D8  4E 80 04 21 */	bctrl
 lbl_8017143C:
 /* 8017143C 0016D0DC  7F 83 E3 78 */	mr r3, r28
 /* 80171440 0016D0E0  38 80 00 01 */	li r4, 1
@@ -9087,7 +9087,7 @@ lbl_801719C0:
 /* 801719C8 0016D668  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 801719CC 0016D66C  7C 08 03 A6 */	mtlr r0
 /* 801719D0 0016D670  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 801719D4 0016D674  4E 80 00 20 */	blr 
+/* 801719D4 0016D674  4E 80 00 20 */	blr
 
 .global "Draw__17LiveModeInitStateFP3ERC"
 "Draw__17LiveModeInitStateFP3ERC":
@@ -9111,7 +9111,7 @@ lbl_801719C0:
 /* 80171A10 0016D6B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80171A14 0016D6B4  7C 08 03 A6 */	mtlr r0
 /* 80171A18 0016D6B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171A1C 0016D6BC  4E 80 00 20 */	blr 
+/* 80171A1C 0016D6BC  4E 80 00 20 */	blr
 
 .global "Reset__9ELiveModeFi"
 "Reset__9ELiveModeFi":
@@ -9199,7 +9199,7 @@ lbl_80171B40:
 /* 80171B44 0016D7E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171B48 0016D7E8  7C 08 03 A6 */	mtlr r0
 /* 80171B4C 0016D7EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171B50 0016D7F0  4E 80 00 20 */	blr 
+/* 80171B50 0016D7F0  4E 80 00 20 */	blr
 
 .global "Reset__24ChangeHouseDemolishHouseFv"
 "Reset__24ChangeHouseDemolishHouseFv":
@@ -9216,7 +9216,7 @@ lbl_80171B40:
 /* 80171B7C 0016D81C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80171B80 0016D820  7C 08 03 A6 */	mtlr r0
 /* 80171B84 0016D824  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171B88 0016D828  4E 80 00 20 */	blr 
+/* 80171B88 0016D828  4E 80 00 20 */	blr
 
 .global "Update__24ChangeHouseDemolishHouseFf"
 "Update__24ChangeHouseDemolishHouseFf":
@@ -9251,7 +9251,7 @@ lbl_80171BF4:
 /* 80171BF8 0016D898  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171BFC 0016D89C  7C 08 03 A6 */	mtlr r0
 /* 80171C00 0016D8A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171C04 0016D8A4  4E 80 00 20 */	blr 
+/* 80171C04 0016D8A4  4E 80 00 20 */	blr
 
 .global "Reset__20ChangeHouseSaveHouseFv"
 "Reset__20ChangeHouseSaveHouseFv":
@@ -9265,7 +9265,7 @@ lbl_80171BF4:
 /* 80171C24 0016D8C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80171C28 0016D8C8  7C 08 03 A6 */	mtlr r0
 /* 80171C2C 0016D8CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171C30 0016D8D0  4E 80 00 20 */	blr 
+/* 80171C30 0016D8D0  4E 80 00 20 */	blr
 
 .global "Update__20ChangeHouseSaveHouseFf"
 "Update__20ChangeHouseSaveHouseFf":
@@ -9299,7 +9299,7 @@ lbl_80171C94:
 /* 80171C98 0016D938  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171C9C 0016D93C  7C 08 03 A6 */	mtlr r0
 /* 80171CA0 0016D940  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171CA4 0016D944  4E 80 00 20 */	blr 
+/* 80171CA4 0016D944  4E 80 00 20 */	blr
 
 .global "Reset__22ChangeHouseUnloadHouseFv"
 "Reset__22ChangeHouseUnloadHouseFv":
@@ -9366,7 +9366,7 @@ lbl_80171D14:
 /* 80171D90 0016DA30  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171D94 0016DA34  7C 08 03 A6 */	mtlr r0
 /* 80171D98 0016DA38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171D9C 0016DA3C  4E 80 00 20 */	blr 
+/* 80171D9C 0016DA3C  4E 80 00 20 */	blr
 
 .global "Update__22ChangeHouseUnloadHouseFf"
 "Update__22ChangeHouseUnloadHouseFf":
@@ -9384,7 +9384,7 @@ lbl_80171D14:
 /* 80171DCC 0016DA6C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171DD0 0016DA70  7C 08 03 A6 */	mtlr r0
 /* 80171DD4 0016DA74  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171DD8 0016DA78  4E 80 00 20 */	blr 
+/* 80171DD8 0016DA78  4E 80 00 20 */	blr
 
 .global "DatasetFinishAddRefAsync__20ChangeHouseLoadHouseFv"
 "DatasetFinishAddRefAsync__20ChangeHouseLoadHouseFv":
@@ -9404,7 +9404,7 @@ lbl_80171D14:
 /* 80171E10 0016DAB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80171E14 0016DAB4  7C 08 03 A6 */	mtlr r0
 /* 80171E18 0016DAB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171E1C 0016DABC  4E 80 00 20 */	blr 
+/* 80171E1C 0016DABC  4E 80 00 20 */	blr
 
 .global "Reset__20ChangeHouseLoadHouseFv"
 "Reset__20ChangeHouseLoadHouseFv":
@@ -9442,7 +9442,7 @@ lbl_80171E60:
 /* 80171E98 0016DB38  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80171E9C 0016DB3C  7C 08 03 A6 */	mtlr r0
 /* 80171EA0 0016DB40  38 21 00 10 */	addi r1, r1, 0x10
-/* 80171EA4 0016DB44  4E 80 00 20 */	blr 
+/* 80171EA4 0016DB44  4E 80 00 20 */	blr
 
 .global "Update__20ChangeHouseLoadHouseFf"
 "Update__20ChangeHouseLoadHouseFf":
@@ -9491,7 +9491,7 @@ lbl_80171F18:
 /* 80171F48 0016DBE8  38 63 CC EC */	addi r3, r3, lbl_8042CCEC@l
 /* 80171F4C 0016DBEC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80171F50 0016DBF0  7C 69 03 A6 */	mtctr r3
-/* 80171F54 0016DBF4  4E 80 04 20 */	bctr 
+/* 80171F54 0016DBF4  4E 80 04 20 */	bctr
 /* 80171F58 0016DBF8  4B EA 79 69 */	bl "GetWeatherManager__Fv"
 /* 80171F5C 0016DBFC  48 0D 68 A1 */	bl "Suspend__14WeatherManagerFv"
 /* 80171F60 0016DC00  80 7A 00 70 */	lwz r3, 0x70(r26)
@@ -9560,14 +9560,14 @@ lbl_80172040:
 /* 80172054 0016DCF4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80172058 0016DCF8  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8017205C 0016DCFC  7D 89 03 A6 */	mtctr r12
-/* 80172060 0016DD00  4E 80 04 21 */	bctrl 
+/* 80172060 0016DD00  4E 80 04 21 */	bctrl
 /* 80172064 0016DD04  2C 03 00 00 */	cmpwi r3, 0
 /* 80172068 0016DD08  40 82 06 88 */	bne lbl_801726F0
 /* 8017206C 0016DD0C  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
 /* 80172070 0016DD10  81 83 00 00 */	lwz r12, 0(r3)
 /* 80172074 0016DD14  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 80172078 0016DD18  7D 89 03 A6 */	mtctr r12
-/* 8017207C 0016DD1C  4E 80 04 21 */	bctrl 
+/* 8017207C 0016DD1C  4E 80 04 21 */	bctrl
 /* 80172080 0016DD20  4B F2 EB AD */	bl "timeGetTime__Fv"
 /* 80172084 0016DD24  3F 20 80 49 */	lis r25, "_globals"@ha
 /* 80172088 0016DD28  38 61 00 50 */	addi r3, r1, 0x50
@@ -9694,7 +9694,7 @@ lbl_80172208:
 /* 80172268 0016DF08  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017226C 0016DF0C  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80172270 0016DF10  7D 89 03 A6 */	mtctr r12
-/* 80172274 0016DF14  4E 80 04 21 */	bctrl 
+/* 80172274 0016DF14  4E 80 04 21 */	bctrl
 /* 80172278 0016DF18  2C 03 00 00 */	cmpwi r3, 0
 /* 8017227C 0016DF1C  40 82 04 74 */	bne lbl_801726F0
 /* 80172280 0016DF20  7F 83 E3 78 */	mr r3, r28
@@ -9715,7 +9715,7 @@ lbl_80172208:
 /* 801722BC 0016DF5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 801722C0 0016DF60  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 801722C4 0016DF64  7D 89 03 A6 */	mtctr r12
-/* 801722C8 0016DF68  4E 80 04 21 */	bctrl 
+/* 801722C8 0016DF68  4E 80 04 21 */	bctrl
 /* 801722CC 0016DF6C  2C 03 00 00 */	cmpwi r3, 0
 /* 801722D0 0016DF70  40 82 04 20 */	bne lbl_801726F0
 /* 801722D4 0016DF74  7F 83 E3 78 */	mr r3, r28
@@ -10013,7 +10013,7 @@ lbl_80172730:
 /* 80172738 0016E3D8  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 8017273C 0016E3DC  7C 08 03 A6 */	mtlr r0
 /* 80172740 0016E3E0  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80172744 0016E3E4  4E 80 00 20 */	blr 
+/* 80172744 0016E3E4  4E 80 00 20 */	blr
 
 .global "DatasetPendingAddRefAsync__20ChangeHouseLoadHouseCFv"
 "DatasetPendingAddRefAsync__20ChangeHouseLoadHouseCFv":
@@ -10021,7 +10021,7 @@ lbl_80172730:
 /* 8017274C 0016E3EC  7C 03 00 D0 */	neg r0, r3
 /* 80172750 0016E3F0  7C 00 1B 78 */	or r0, r0, r3
 /* 80172754 0016E3F4  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80172758 0016E3F8  4E 80 00 20 */	blr 
+/* 80172758 0016E3F8  4E 80 00 20 */	blr
 
 .global "Startup__31LiveModeChangeHouseStateMachineFv"
 "Startup__31LiveModeChangeHouseStateMachineFv":
@@ -10096,7 +10096,7 @@ lbl_80172848:
 /* 80172858 0016E4F8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017285C 0016E4FC  7C 08 03 A6 */	mtlr r0
 /* 80172860 0016E500  38 21 00 10 */	addi r1, r1, 0x10
-/* 80172864 0016E504  4E 80 00 20 */	blr 
+/* 80172864 0016E504  4E 80 00 20 */	blr
 
 .global "__ct__20ChangeHouseLoadHouseFi"
 "__ct__20ChangeHouseLoadHouseFi":
@@ -10117,7 +10117,7 @@ lbl_80172848:
 /* 801728A0 0016E540  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801728A4 0016E544  7C 08 03 A6 */	mtlr r0
 /* 801728A8 0016E548  38 21 00 10 */	addi r1, r1, 0x10
-/* 801728AC 0016E54C  4E 80 00 20 */	blr 
+/* 801728AC 0016E54C  4E 80 00 20 */	blr
 
 .global "__ct__22ChangeHouseUnloadHouseFi"
 "__ct__22ChangeHouseUnloadHouseFi":
@@ -10136,7 +10136,7 @@ lbl_80172848:
 /* 801728E0 0016E580  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801728E4 0016E584  7C 08 03 A6 */	mtlr r0
 /* 801728E8 0016E588  38 21 00 10 */	addi r1, r1, 0x10
-/* 801728EC 0016E58C  4E 80 00 20 */	blr 
+/* 801728EC 0016E58C  4E 80 00 20 */	blr
 
 .global "__ct__20ChangeHouseSaveHouseFi"
 "__ct__20ChangeHouseSaveHouseFi":
@@ -10155,7 +10155,7 @@ lbl_80172848:
 /* 80172920 0016E5C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80172924 0016E5C4  7C 08 03 A6 */	mtlr r0
 /* 80172928 0016E5C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017292C 0016E5CC  4E 80 00 20 */	blr 
+/* 8017292C 0016E5CC  4E 80 00 20 */	blr
 
 .global "__ct__24ChangeHouseDemolishHouseFi"
 "__ct__24ChangeHouseDemolishHouseFi":
@@ -10174,7 +10174,7 @@ lbl_80172848:
 /* 80172960 0016E600  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80172964 0016E604  7C 08 03 A6 */	mtlr r0
 /* 80172968 0016E608  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017296C 0016E60C  4E 80 00 20 */	blr 
+/* 8017296C 0016E60C  4E 80 00 20 */	blr
 
 .global "Shutdown__31LiveModeChangeHouseStateMachineFv"
 "Shutdown__31LiveModeChangeHouseStateMachineFv":
@@ -10191,7 +10191,7 @@ lbl_80172848:
 /* 80172998 0016E638  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017299C 0016E63C  7C 08 03 A6 */	mtlr r0
 /* 801729A0 0016E640  38 21 00 10 */	addi r1, r1, 0x10
-/* 801729A4 0016E644  4E 80 00 20 */	blr 
+/* 801729A4 0016E644  4E 80 00 20 */	blr
 
 .global "Reset__31LiveModeChangeHouseStateMachineFv"
 "Reset__31LiveModeChangeHouseStateMachineFv":
@@ -10220,7 +10220,7 @@ lbl_801729F8:
 /* 801729FC 0016E69C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80172A00 0016E6A0  7C 08 03 A6 */	mtlr r0
 /* 80172A04 0016E6A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80172A08 0016E6A8  4E 80 00 20 */	blr 
+/* 80172A08 0016E6A8  4E 80 00 20 */	blr
 
 .global "Update__31LiveModeChangeHouseStateMachineFf"
 "Update__31LiveModeChangeHouseStateMachineFf":
@@ -10244,7 +10244,7 @@ lbl_801729F8:
 /* 80172A38 0016E6D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80172A3C 0016E6DC  7C 08 03 A6 */	mtlr r0
 /* 80172A40 0016E6E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80172A44 0016E6E4  4E 80 00 20 */	blr 
+/* 80172A44 0016E6E4  4E 80 00 20 */	blr
 
 .global "GotoStartMode__9ELiveModeFv"
 "GotoStartMode__9ELiveModeFv":
@@ -10269,7 +10269,7 @@ lbl_801729F8:
 /* 80172A90 0016E730  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80172A94 0016E734  7C 08 03 A6 */	mtlr r0
 /* 80172A98 0016E738  38 21 00 10 */	addi r1, r1, 0x10
-/* 80172A9C 0016E73C  4E 80 00 20 */	blr 
+/* 80172A9C 0016E73C  4E 80 00 20 */	blr
 
 .global "QuitToMainMenu__9ELiveModeFv"
 "QuitToMainMenu__9ELiveModeFv":
@@ -10324,7 +10324,7 @@ lbl_80172B14:
 /* 80172B5C 0016E7FC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80172B60 0016E800  7C 08 03 A6 */	mtlr r0
 /* 80172B64 0016E804  38 21 00 20 */	addi r1, r1, 0x20
-/* 80172B68 0016E808  4E 80 00 20 */	blr 
+/* 80172B68 0016E808  4E 80 00 20 */	blr
 
 .global "IsReadyForUpdate__9ELiveModeFv"
 "IsReadyForUpdate__9ELiveModeFv":
@@ -10426,7 +10426,7 @@ lbl_80172CB8:
 /* 80172CC0 0016E960  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80172CC4 0016E964  7C 08 03 A6 */	mtlr r0
 /* 80172CC8 0016E968  38 21 00 10 */	addi r1, r1, 0x10
-/* 80172CCC 0016E96C  4E 80 00 20 */	blr 
+/* 80172CCC 0016E96C  4E 80 00 20 */	blr
 
 .global "UpdateIntroCamera__9ELiveModeFv"
 "UpdateIntroCamera__9ELiveModeFv":
@@ -10693,7 +10693,7 @@ lbl_80173094:
 /* 801730A0 0016ED40  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 801730A4 0016ED44  7C 08 03 A6 */	mtlr r0
 /* 801730A8 0016ED48  38 21 00 70 */	addi r1, r1, 0x70
-/* 801730AC 0016ED4C  4E 80 00 20 */	blr 
+/* 801730AC 0016ED4C  4E 80 00 20 */	blr
 
 .global "Update__9ELiveModeFv"
 "Update__9ELiveModeFv":
@@ -10979,7 +10979,7 @@ lbl_80173498:
 /* 801734AC 0016F14C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801734B0 0016F150  7C 08 03 A6 */	mtlr r0
 /* 801734B4 0016F154  38 21 00 30 */	addi r1, r1, 0x30
-/* 801734B8 0016F158  4E 80 00 20 */	blr 
+/* 801734B8 0016F158  4E 80 00 20 */	blr
 
 .global "Draw__9ELiveModeFP3ERC"
 "Draw__9ELiveModeFP3ERC":
@@ -11019,7 +11019,7 @@ lbl_80173498:
 /* 80173540 0016F1E0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80173544 0016F1E4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80173548 0016F1E8  7D 89 03 A6 */	mtctr r12
-/* 8017354C 0016F1EC  4E 80 04 21 */	bctrl 
+/* 8017354C 0016F1EC  4E 80 04 21 */	bctrl
 /* 80173550 0016F1F0  80 7B 01 B0 */	lwz r3, 0x1b0(r27)
 /* 80173554 0016F1F4  7F E4 FB 78 */	mr r4, r31
 /* 80173558 0016F1F8  38 A0 00 00 */	li r5, 0
@@ -11058,7 +11058,7 @@ lbl_80173498:
 /* 801735DC 0016F27C  7F C8 F3 78 */	mr r8, r30
 /* 801735E0 0016F280  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 801735E4 0016F284  7D 89 03 A6 */	mtctr r12
-/* 801735E8 0016F288  4E 80 04 21 */	bctrl 
+/* 801735E8 0016F288  4E 80 04 21 */	bctrl
 /* 801735EC 0016F28C  48 00 02 E4 */	b lbl_801738D0
 lbl_801735F0:
 /* 801735F0 0016F290  C0 4D B6 B0 */	lfs f2, "Accumulator$48398"-_SDA_BASE_(r13)
@@ -11191,7 +11191,7 @@ lbl_801737D4:
 /* 801737E4 0016F484  81 83 00 00 */	lwz r12, 0(r3)
 /* 801737E8 0016F488  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 801737EC 0016F48C  7D 89 03 A6 */	mtctr r12
-/* 801737F0 0016F490  4E 80 04 21 */	bctrl 
+/* 801737F0 0016F490  4E 80 04 21 */	bctrl
 /* 801737F4 0016F494  48 00 00 DC */	b lbl_801738D0
 lbl_801737F8:
 /* 801737F8 0016F498  3F A0 80 49 */	lis r29, "_globals"@ha
@@ -11256,11 +11256,11 @@ lbl_801738D0:
 /* 801738E0 0016F580  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 801738E4 0016F584  7C 08 03 A6 */	mtlr r0
 /* 801738E8 0016F588  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 801738EC 0016F58C  4E 80 00 20 */	blr 
+/* 801738EC 0016F58C  4E 80 00 20 */	blr
 
 .global "PauseAllSounds__9ELiveModeFv"
 "PauseAllSounds__9ELiveModeFv":
-/* 801738F0 0016F590  4E 80 00 20 */	blr 
+/* 801738F0 0016F590  4E 80 00 20 */	blr
 
 .global "DrawMain__9ELiveModeFP3ERC"
 "DrawMain__9ELiveModeFP3ERC":
@@ -11311,13 +11311,13 @@ lbl_80173954:
 /* 801739A0 0016F640  81 83 00 00 */	lwz r12, 0(r3)
 /* 801739A4 0016F644  81 8C 00 AC */	lwz r12, 0xac(r12)
 /* 801739A8 0016F648  7D 89 03 A6 */	mtctr r12
-/* 801739AC 0016F64C  4E 80 04 21 */	bctrl 
+/* 801739AC 0016F64C  4E 80 04 21 */	bctrl
 /* 801739B0 0016F650  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 801739B4 0016F654  FF A0 08 90 */	fmr f29, f1
 /* 801739B8 0016F658  81 83 00 00 */	lwz r12, 0(r3)
 /* 801739BC 0016F65C  81 8C 00 B4 */	lwz r12, 0xb4(r12)
 /* 801739C0 0016F660  7D 89 03 A6 */	mtctr r12
-/* 801739C4 0016F664  4E 80 04 21 */	bctrl 
+/* 801739C4 0016F664  4E 80 04 21 */	bctrl
 /* 801739C8 0016F668  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 801739CC 0016F66C  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 801739D0 0016F670  3F E0 43 30 */	lis r31, 0x4330
@@ -11329,7 +11329,7 @@ lbl_80173954:
 /* 801739E8 0016F688  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 801739EC 0016F68C  EF C0 08 28 */	fsubs f30, f0, f1
 /* 801739F0 0016F690  7D 89 03 A6 */	mtctr r12
-/* 801739F4 0016F694  4E 80 04 21 */	bctrl 
+/* 801739F4 0016F694  4E 80 04 21 */	bctrl
 /* 801739F8 0016F698  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 801739FC 0016F69C  93 E1 00 20 */	stw r31, 0x20(r1)
 /* 80173A00 0016F6A0  C8 22 89 50 */	lfd f1, lbl_805D9B70-_SDA2_BASE_(r2)
@@ -11362,7 +11362,7 @@ lbl_80173954:
 /* 80173A6C 0016F70C  7F 64 DB 78 */	mr r4, r27
 /* 80173A70 0016F710  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80173A74 0016F714  7D 89 03 A6 */	mtctr r12
-/* 80173A78 0016F718  4E 80 04 21 */	bctrl 
+/* 80173A78 0016F718  4E 80 04 21 */	bctrl
 /* 80173A7C 0016F71C  3B FE 7A 40 */	addi r31, r30, 0x7a40
 /* 80173A80 0016F720  38 00 00 00 */	li r0, 0
 /* 80173A84 0016F724  90 1F 01 7C */	stw r0, 0x17c(r31)
@@ -11370,7 +11370,7 @@ lbl_80173954:
 /* 80173A8C 0016F72C  81 9B 00 00 */	lwz r12, 0(r27)
 /* 80173A90 0016F730  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 80173A94 0016F734  7D 89 03 A6 */	mtctr r12
-/* 80173A98 0016F738  4E 80 04 21 */	bctrl 
+/* 80173A98 0016F738  4E 80 04 21 */	bctrl
 /* 80173A9C 0016F73C  83 DF 01 78 */	lwz r30, 0x178(r31)
 /* 80173AA0 0016F740  2C 1E 00 00 */	cmpwi r30, 0
 /* 80173AA4 0016F744  41 82 00 3C */	beq lbl_80173AE0
@@ -11393,7 +11393,7 @@ lbl_80173AE0:
 /* 80173AE4 0016F784  7F 63 DB 78 */	mr r3, r27
 /* 80173AE8 0016F788  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 80173AEC 0016F78C  7D 89 03 A6 */	mtctr r12
-/* 80173AF0 0016F790  4E 80 04 21 */	bctrl 
+/* 80173AF0 0016F790  4E 80 04 21 */	bctrl
 /* 80173AF4 0016F794  3C 60 80 49 */	lis r3, "_globals"@ha
 /* 80173AF8 0016F798  38 63 7A 40 */	addi r3, r3, "_globals"@l
 /* 80173AFC 0016F79C  80 03 01 78 */	lwz r0, 0x178(r3)
@@ -11425,7 +11425,7 @@ lbl_80173B40:
 /* 80173B5C 0016F7FC  7F 64 DB 78 */	mr r4, r27
 /* 80173B60 0016F800  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80173B64 0016F804  7D 89 03 A6 */	mtctr r12
-/* 80173B68 0016F808  4E 80 04 21 */	bctrl 
+/* 80173B68 0016F808  4E 80 04 21 */	bctrl
 lbl_80173B6C:
 /* 80173B6C 0016F80C  E3 E1 00 88 */	psq_l f31, 136(r1), 0, qr0
 /* 80173B70 0016F810  CB E1 00 80 */	lfd f31, 0x80(r1)
@@ -11442,7 +11442,7 @@ lbl_80173B6C:
 /* 80173B9C 0016F83C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80173BA0 0016F840  7C 08 03 A6 */	mtlr r0
 /* 80173BA4 0016F844  38 21 00 90 */	addi r1, r1, 0x90
-/* 80173BA8 0016F848  4E 80 00 20 */	blr 
+/* 80173BA8 0016F848  4E 80 00 20 */	blr
 
 .global "TriggerIntroCamera__9ELiveModeFP14CameraDirector"
 "TriggerIntroCamera__9ELiveModeFP14CameraDirector":
@@ -11473,7 +11473,7 @@ lbl_80173C00:
 /* 80173C08 0016F8A8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80173C0C 0016F8AC  7C 08 03 A6 */	mtlr r0
 /* 80173C10 0016F8B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80173C14 0016F8B4  4E 80 00 20 */	blr 
+/* 80173C14 0016F8B4  4E 80 00 20 */	blr
 
 .global "StartIntroCamera__9ELiveModeFP14CameraDirectorP8ESimsCam"
 "StartIntroCamera__9ELiveModeFP14CameraDirectorP8ESimsCam":
@@ -11617,7 +11617,7 @@ lbl_80173E00:
 /* 80173E10 0016FAB0  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80173E14 0016FAB4  7C 08 03 A6 */	mtlr r0
 /* 80173E18 0016FAB8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80173E1C 0016FABC  4E 80 00 20 */	blr 
+/* 80173E1C 0016FABC  4E 80 00 20 */	blr
 
 .global "EndIntroCamera__9ELiveModeCFP14CameraDirectorP8ESimsCam"
 "EndIntroCamera__9ELiveModeCFP14CameraDirectorP8ESimsCam":
@@ -11672,42 +11672,42 @@ lbl_80173EC0:
 /* 80173ED0 0016FB70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80173ED4 0016FB74  7C 08 03 A6 */	mtlr r0
 /* 80173ED8 0016FB78  38 21 00 20 */	addi r1, r1, 0x20
-/* 80173EDC 0016FB7C  4E 80 00 20 */	blr 
+/* 80173EDC 0016FB7C  4E 80 00 20 */	blr
 
 .global "ProfileLoadStages_Init__Fv"
 "ProfileLoadStages_Init__Fv":
-/* 80173EE0 0016FB80  4E 80 00 20 */	blr 
+/* 80173EE0 0016FB80  4E 80 00 20 */	blr
 
 .global "ProfileLoadStages_Tick__Fi"
 "ProfileLoadStages_Tick__Fi":
-/* 80173EE4 0016FB84  4E 80 00 20 */	blr 
+/* 80173EE4 0016FB84  4E 80 00 20 */	blr
 
 .global "ProfileLoadStages_Done__Fv"
 "ProfileLoadStages_Done__Fv":
-/* 80173EE8 0016FB88  4E 80 00 20 */	blr 
+/* 80173EE8 0016FB88  4E 80 00 20 */	blr
 
 .global "ProfileLoadStages_Log__Fv"
 "ProfileLoadStages_Log__Fv":
-/* 80173EEC 0016FB8C  4E 80 00 20 */	blr 
+/* 80173EEC 0016FB8C  4E 80 00 20 */	blr
 
 .global "ProfileLoadStages_LoadingScreenStart__FUi"
 "ProfileLoadStages_LoadingScreenStart__FUi":
-/* 80173EF0 0016FB90  4E 80 00 20 */	blr 
+/* 80173EF0 0016FB90  4E 80 00 20 */	blr
 
 .global "SetInitialized__9ELiveModeFb"
 "SetInitialized__9ELiveModeFb":
 /* 80173EF4 0016FB94  98 83 00 18 */	stb r4, 0x18(r3)
-/* 80173EF8 0016FB98  4E 80 00 20 */	blr 
+/* 80173EF8 0016FB98  4E 80 00 20 */	blr
 
 .global "GetIntroCameraState__9ELiveModeCFv"
 "GetIntroCameraState__9ELiveModeCFv":
 /* 80173EFC 0016FB9C  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80173F00 0016FBA0  4E 80 00 20 */	blr 
+/* 80173F00 0016FBA0  4E 80 00 20 */	blr
 
 .global "SetDontDraw__9ELiveModeFb"
 "SetDontDraw__9ELiveModeFb":
 /* 80173F04 0016FBA4  98 83 00 19 */	stb r4, 0x19(r3)
-/* 80173F08 0016FBA8  4E 80 00 20 */	blr 
+/* 80173F08 0016FBA8  4E 80 00 20 */	blr
 
 .global "DatasetPendingAddRefAsync__17LiveModeInitStateCFv"
 "DatasetPendingAddRefAsync__17LiveModeInitStateCFv":
@@ -11715,17 +11715,17 @@ lbl_80173EC0:
 /* 80173F10 0016FBB0  7C 03 00 D0 */	neg r0, r3
 /* 80173F14 0016FBB4  7C 00 1B 78 */	or r0, r0, r3
 /* 80173F18 0016FBB8  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80173F1C 0016FBBC  4E 80 00 20 */	blr 
+/* 80173F1C 0016FBBC  4E 80 00 20 */	blr
 
 .global "SetGoingToNeighborhoodMode__9ELiveModeFb"
 "SetGoingToNeighborhoodMode__9ELiveModeFb":
 /* 80173F20 0016FBC0  98 83 00 16 */	stb r4, 0x16(r3)
-/* 80173F24 0016FBC4  4E 80 00 20 */	blr 
+/* 80173F24 0016FBC4  4E 80 00 20 */	blr
 
 .global "IsInitialized__9ELiveModeCFv"
 "IsInitialized__9ELiveModeCFv":
 /* 80173F28 0016FBC8  88 63 00 18 */	lbz r3, 0x18(r3)
-/* 80173F2C 0016FBCC  4E 80 00 20 */	blr 
+/* 80173F2C 0016FBCC  4E 80 00 20 */	blr
 
 .global "__ct__31LiveModeChangeHouseStateMachineFii"
 "__ct__31LiveModeChangeHouseStateMachineFii":
@@ -11743,7 +11743,7 @@ lbl_80173EC0:
 /* 80173F5C 0016FBFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80173F60 0016FC00  7C 08 03 A6 */	mtlr r0
 /* 80173F64 0016FC04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80173F68 0016FC08  4E 80 00 20 */	blr 
+/* 80173F68 0016FC08  4E 80 00 20 */	blr
 
 .global "__ct__17LiveModeInitStateFi"
 "__ct__17LiveModeInitStateFi":
@@ -11764,7 +11764,7 @@ lbl_80173EC0:
 /* 80173FA4 0016FC44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80173FA8 0016FC48  7C 08 03 A6 */	mtlr r0
 /* 80173FAC 0016FC4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80173FB0 0016FC50  4E 80 00 20 */	blr 
+/* 80173FB0 0016FC50  4E 80 00 20 */	blr
 
 .global "ClearKillQueue__12ObjectModuleFv"
 "ClearKillQueue__12ObjectModuleFv":
@@ -11774,32 +11774,32 @@ lbl_80173EC0:
 .global "SetIsIntroPlaying__14CameraDirectorFb"
 "SetIsIntroPlaying__14CameraDirectorFb":
 /* 80173FBC 0016FC5C  98 83 02 B5 */	stb r4, 0x2b5(r3)
-/* 80173FC0 0016FC60  4E 80 00 20 */	blr 
+/* 80173FC0 0016FC60  4E 80 00 20 */	blr
 
 .global "Enable__14CameraDirectorFv"
 "Enable__14CameraDirectorFv":
 /* 80173FC4 0016FC64  80 03 02 9C */	lwz r0, 0x29c(r3)
 /* 80173FC8 0016FC68  54 00 00 3C */	rlwinm r0, r0, 0, 0, 0x1e
 /* 80173FCC 0016FC6C  90 03 02 9C */	stw r0, 0x29c(r3)
-/* 80173FD0 0016FC70  4E 80 00 20 */	blr 
+/* 80173FD0 0016FC70  4E 80 00 20 */	blr
 
 .global "GetbMoved__8ESimsCamCFv"
 "GetbMoved__8ESimsCamCFv":
 /* 80173FD4 0016FC74  88 63 07 44 */	lbz r3, 0x744(r3)
-/* 80173FD8 0016FC78  4E 80 00 20 */	blr 
+/* 80173FD8 0016FC78  4E 80 00 20 */	blr
 
 .global "Disable__14CameraDirectorFv"
 "Disable__14CameraDirectorFv":
 /* 80173FDC 0016FC7C  80 03 02 9C */	lwz r0, 0x29c(r3)
 /* 80173FE0 0016FC80  60 00 00 01 */	ori r0, r0, 1
 /* 80173FE4 0016FC84  90 03 02 9C */	stw r0, 0x29c(r3)
-/* 80173FE8 0016FC88  4E 80 00 20 */	blr 
+/* 80173FE8 0016FC88  4E 80 00 20 */	blr
 
 .global "SetLockState__14CameraDirectorFv"
 "SetLockState__14CameraDirectorFv":
 /* 80173FEC 0016FC8C  38 00 00 01 */	li r0, 1
 /* 80173FF0 0016FC90  90 03 02 AC */	stw r0, 0x2ac(r3)
-/* 80173FF4 0016FC94  4E 80 00 20 */	blr 
+/* 80173FF4 0016FC94  4E 80 00 20 */	blr
 
 .global "__ne__5EVec4CFRC5EVec3"
 "__ne__5EVec4CFRC5EVec3":
@@ -11824,22 +11824,22 @@ lbl_8017403C:
 /* 8017403C 0016FCDC  38 00 00 01 */	li r0, 1
 lbl_80174040:
 /* 80174040 0016FCE0  7C 03 03 78 */	mr r3, r0
-/* 80174044 0016FCE4  4E 80 00 20 */	blr 
+/* 80174044 0016FCE4  4E 80 00 20 */	blr
 
 .global "GetActualScreenXSize__9EGraphicsFv"
 "GetActualScreenXSize__9EGraphicsFv":
 /* 80174048 0016FCE8  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8017404C 0016FCEC  4E 80 00 20 */	blr 
+/* 8017404C 0016FCEC  4E 80 00 20 */	blr
 
 .global "GetActualScreenYSize__9EGraphicsFv"
 "GetActualScreenYSize__9EGraphicsFv":
 /* 80174050 0016FCF0  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 80174054 0016FCF4  4E 80 00 20 */	blr 
+/* 80174054 0016FCF4  4E 80 00 20 */	blr
 
 .global "GetWiiWideScreenXOffsetScaled__9EGraphicsCFv"
 "GetWiiWideScreenXOffsetScaled__9EGraphicsCFv":
 /* 80174058 0016FCF8  C0 23 02 54 */	lfs f1, 0x254(r3)
-/* 8017405C 0016FCFC  4E 80 00 20 */	blr 
+/* 8017405C 0016FCFC  4E 80 00 20 */	blr
 
 .global "__ct__8TRect<f>Fffff"
 "__ct__8TRect<f>Fffff":
@@ -11847,7 +11847,7 @@ lbl_80174040:
 /* 80174064 0016FD04  D0 43 00 04 */	stfs f2, 4(r3)
 /* 80174068 0016FD08  D0 63 00 08 */	stfs f3, 8(r3)
 /* 8017406C 0016FD0C  D0 83 00 0C */	stfs f4, 0xc(r3)
-/* 80174070 0016FD10  4E 80 00 20 */	blr 
+/* 80174070 0016FD10  4E 80 00 20 */	blr
 
 .global "GetRow<7AnimRef>__11ERQuickdataFPC18ERQTable<7AnimRef>PCcPPC7AnimRef_b"
 "GetRow<7AnimRef>__11ERQuickdataFPC18ERQTable<7AnimRef>PCcPPC7AnimRef_b":
@@ -11868,7 +11868,7 @@ lbl_80174098:
 /* 801740A8 0016FD48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801740AC 0016FD4C  7C 08 03 A6 */	mtlr r0
 /* 801740B0 0016FD50  38 21 00 10 */	addi r1, r1, 0x10
-/* 801740B4 0016FD54  4E 80 00 20 */	blr 
+/* 801740B4 0016FD54  4E 80 00 20 */	blr
 
 .global "GetTable<7AnimRef>__11ERQuickdataFPCcPPC18ERQTable<7AnimRef>_b"
 "GetTable<7AnimRef>__11ERQuickdataFPCcPPC18ERQTable<7AnimRef>_b":
@@ -11898,7 +11898,7 @@ lbl_80174100:
 /* 80174104 0016FDA4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174108 0016FDA8  7C 08 03 A6 */	mtlr r0
 /* 8017410C 0016FDAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174110 0016FDB0  4E 80 00 20 */	blr 
+/* 80174110 0016FDB0  4E 80 00 20 */	blr
 
 .global "Update__32LoadingScreenWaitingForLoadStateFf"
 "Update__32LoadingScreenWaitingForLoadStateFf":
@@ -11922,7 +11922,7 @@ lbl_80174150:
 /* 80174154 0016FDF4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174158 0016FDF8  7C 08 03 A6 */	mtlr r0
 /* 8017415C 0016FDFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174160 0016FE00  4E 80 00 20 */	blr 
+/* 80174160 0016FE00  4E 80 00 20 */	blr
 
 .global "Update__24LoadingScreenUpdateStateFf"
 "Update__24LoadingScreenUpdateStateFf":
@@ -11958,7 +11958,7 @@ lbl_801741C4:
 /* 801741D0 0016FE70  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801741D4 0016FE74  7C 08 03 A6 */	mtlr r0
 /* 801741D8 0016FE78  38 21 00 20 */	addi r1, r1, 0x20
-/* 801741DC 0016FE7C  4E 80 00 20 */	blr 
+/* 801741DC 0016FE7C  4E 80 00 20 */	blr
 
 .global "DrawTopmost__24LoadingScreenUpdateStateFP3ERC"
 "DrawTopmost__24LoadingScreenUpdateStateFP3ERC":
@@ -11995,7 +11995,7 @@ lbl_80174244:
 /* 80174254 0016FEF4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80174258 0016FEF8  7C 08 03 A6 */	mtlr r0
 /* 8017425C 0016FEFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80174260 0016FF00  4E 80 00 20 */	blr 
+/* 80174260 0016FF00  4E 80 00 20 */	blr
 
 .global "LssDummyPrintf__FPCce"
 "LssDummyPrintf__FPCce":
@@ -12019,7 +12019,7 @@ lbl_8017428C:
 /* 801742A4 0016FF44  91 21 00 20 */	stw r9, 0x20(r1)
 /* 801742A8 0016FF48  91 41 00 24 */	stw r10, 0x24(r1)
 /* 801742AC 0016FF4C  38 21 00 70 */	addi r1, r1, 0x70
-/* 801742B0 0016FF50  4E 80 00 20 */	blr 
+/* 801742B0 0016FF50  4E 80 00 20 */	blr
 
 .global "IsIrisTransitionInComplete__25LoadingScreenStateMachineFv"
 "IsIrisTransitionInComplete__25LoadingScreenStateMachineFv":
@@ -12046,7 +12046,7 @@ lbl_801742F4:
 /* 801742F8 0016FF98  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801742FC 0016FF9C  7C 08 03 A6 */	mtlr r0
 /* 80174300 0016FFA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174304 0016FFA4  4E 80 00 20 */	blr 
+/* 80174304 0016FFA4  4E 80 00 20 */	blr
 
 .global "IsIrisTransitionOutComplete__25LoadingScreenStateMachineFv"
 "IsIrisTransitionOutComplete__25LoadingScreenStateMachineFv":
@@ -12056,23 +12056,23 @@ lbl_801742F4:
 /* 80174314 0016FFB4  48 00 07 80 */	b "IsTransitionOutDone__9TIRTargetFv"
 lbl_80174318:
 /* 80174318 0016FFB8  38 60 00 00 */	li r3, 0
-/* 8017431C 0016FFBC  4E 80 00 20 */	blr 
+/* 8017431C 0016FFBC  4E 80 00 20 */	blr
 
 .global "IrisTransitionIn__25LoadingScreenStateMachineFv"
 "IrisTransitionIn__25LoadingScreenStateMachineFv":
 /* 80174320 0016FFC0  80 63 00 80 */	lwz r3, 0x80(r3)
 /* 80174324 0016FFC4  2C 03 00 00 */	cmpwi r3, 0
-/* 80174328 0016FFC8  4D 82 00 20 */	beqlr 
+/* 80174328 0016FFC8  4D 82 00 20 */	beqlr
 /* 8017432C 0016FFCC  48 07 F5 38 */	b "TransitionIn__9TIRTargetFv"
-/* 80174330 0016FFD0  4E 80 00 20 */	blr 
+/* 80174330 0016FFD0  4E 80 00 20 */	blr
 
 .global "IrisTransitionOut__25LoadingScreenStateMachineFv"
 "IrisTransitionOut__25LoadingScreenStateMachineFv":
 /* 80174334 0016FFD4  80 63 00 80 */	lwz r3, 0x80(r3)
 /* 80174338 0016FFD8  2C 03 00 00 */	cmpwi r3, 0
-/* 8017433C 0016FFDC  4D 82 00 20 */	beqlr 
+/* 8017433C 0016FFDC  4D 82 00 20 */	beqlr
 /* 80174340 0016FFE0  48 07 F5 90 */	b "TransitionOut__9TIRTargetFv"
-/* 80174344 0016FFE4  4E 80 00 20 */	blr 
+/* 80174344 0016FFE4  4E 80 00 20 */	blr
 
 .global "IsIrisTransitionInProgress__25LoadingScreenStateMachineFv"
 "IsIrisTransitionInProgress__25LoadingScreenStateMachineFv":
@@ -12082,7 +12082,7 @@ lbl_80174318:
 /* 80174354 0016FFF4  48 00 07 48 */	b "IsInTransition__9TIRTargetFv"
 lbl_80174358:
 /* 80174358 0016FFF8  38 60 00 00 */	li r3, 0
-/* 8017435C 0016FFFC  4E 80 00 20 */	blr 
+/* 8017435C 0016FFFC  4E 80 00 20 */	blr
 
 .global "IsIrisLoaded__25LoadingScreenStateMachineFv"
 "IsIrisLoaded__25LoadingScreenStateMachineFv":
@@ -12092,7 +12092,7 @@ lbl_80174358:
 /* 8017436C 0017000C  48 07 F3 BC */	b "IsLoaded__9TIRTargetFv"
 lbl_80174370:
 /* 80174370 00170010  38 60 00 00 */	li r3, 0
-/* 80174374 00170014  4E 80 00 20 */	blr 
+/* 80174374 00170014  4E 80 00 20 */	blr
 
 .global "__ct__25LoadingScreenStateMachineFii"
 "__ct__25LoadingScreenStateMachineFii":
@@ -12118,7 +12118,7 @@ lbl_80174370:
 /* 801743C4 00170064  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801743C8 00170068  7C 08 03 A6 */	mtlr r0
 /* 801743CC 0017006C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801743D0 00170070  4E 80 00 20 */	blr 
+/* 801743D0 00170070  4E 80 00 20 */	blr
 
 .global "__dt__25LoadingScreenStateMachineFv"
 "__dt__25LoadingScreenStateMachineFv":
@@ -12150,7 +12150,7 @@ lbl_80174428:
 /* 80174434 001700D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80174438 001700D8  7C 08 03 A6 */	mtlr r0
 /* 8017443C 001700DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174440 001700E0  4E 80 00 20 */	blr 
+/* 80174440 001700E0  4E 80 00 20 */	blr
 
 .global "Startup__25LoadingScreenStateMachineFv"
 "Startup__25LoadingScreenStateMachineFv":
@@ -12212,7 +12212,7 @@ lbl_801744F4:
 /* 80174510 001701B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174514 001701B4  7C 08 03 A6 */	mtlr r0
 /* 80174518 001701B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017451C 001701BC  4E 80 00 20 */	blr 
+/* 8017451C 001701BC  4E 80 00 20 */	blr
 
 .global "Update__25LoadingScreenStateMachineFf"
 "Update__25LoadingScreenStateMachineFf":
@@ -12245,7 +12245,7 @@ lbl_8017456C:
 /* 80174574 00170214  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80174578 00170218  7C 08 03 A6 */	mtlr r0
 /* 8017457C 0017021C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174580 00170220  4E 80 00 20 */	blr 
+/* 80174580 00170220  4E 80 00 20 */	blr
 
 .global "DeleteLoadingScreen__25LoadingScreenStateMachineFv"
 "DeleteLoadingScreen__25LoadingScreenStateMachineFv":
@@ -12263,7 +12263,7 @@ lbl_8017456C:
 /* 801745B0 00170250  81 83 00 00 */	lwz r12, 0(r3)
 /* 801745B4 00170254  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801745B8 00170258  7D 89 03 A6 */	mtctr r12
-/* 801745BC 0017025C  4E 80 04 21 */	bctrl 
+/* 801745BC 0017025C  4E 80 04 21 */	bctrl
 lbl_801745C0:
 /* 801745C0 00170260  38 00 00 00 */	li r0, 0
 /* 801745C4 00170264  90 1F 00 78 */	stw r0, 0x78(r31)
@@ -12273,7 +12273,7 @@ lbl_801745CC:
 /* 801745D0 00170270  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801745D4 00170274  7C 08 03 A6 */	mtlr r0
 /* 801745D8 00170278  38 21 00 10 */	addi r1, r1, 0x10
-/* 801745DC 0017027C  4E 80 00 20 */	blr 
+/* 801745DC 0017027C  4E 80 00 20 */	blr
 
 .global "CreateIris__25LoadingScreenStateMachineFv"
 "CreateIris__25LoadingScreenStateMachineFv":
@@ -12297,7 +12297,7 @@ lbl_80174618:
 /* 8017461C 001702BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174620 001702C0  7C 08 03 A6 */	mtlr r0
 /* 80174624 001702C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174628 001702C8  4E 80 00 20 */	blr 
+/* 80174628 001702C8  4E 80 00 20 */	blr
 
 .global "DeleteIris__25LoadingScreenStateMachineFv"
 "DeleteIris__25LoadingScreenStateMachineFv":
@@ -12315,7 +12315,7 @@ lbl_80174618:
 /* 80174658 001702F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017465C 001702FC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80174660 00170300  7D 89 03 A6 */	mtctr r12
-/* 80174664 00170304  4E 80 04 21 */	bctrl 
+/* 80174664 00170304  4E 80 04 21 */	bctrl
 lbl_80174668:
 /* 80174668 00170308  38 00 00 00 */	li r0, 0
 /* 8017466C 0017030C  90 1F 00 80 */	stw r0, 0x80(r31)
@@ -12324,12 +12324,12 @@ lbl_80174670:
 /* 80174674 00170314  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174678 00170318  7C 08 03 A6 */	mtlr r0
 /* 8017467C 0017031C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174680 00170320  4E 80 00 20 */	blr 
+/* 80174680 00170320  4E 80 00 20 */	blr
 
 .global "IsReadyToLoad__25LoadingScreenStateMachineCFv"
 "IsReadyToLoad__25LoadingScreenStateMachineCFv":
 /* 80174684 00170324  88 63 00 84 */	lbz r3, 0x84(r3)
-/* 80174688 00170328  4E 80 00 20 */	blr 
+/* 80174688 00170328  4E 80 00 20 */	blr
 
 .global "IsLoading__25LoadingScreenStateMachineCFv"
 "IsLoading__25LoadingScreenStateMachineCFv":
@@ -12355,7 +12355,7 @@ lbl_801746C4:
 /* 801746D0 00170370  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801746D4 00170374  7C 08 03 A6 */	mtlr r0
 /* 801746D8 00170378  38 21 00 10 */	addi r1, r1, 0x10
-/* 801746DC 0017037C  4E 80 00 20 */	blr 
+/* 801746DC 0017037C  4E 80 00 20 */	blr
 
 .global "StartLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenModePCc"
 "StartLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenModePCc":
@@ -12406,26 +12406,26 @@ lbl_80174770:
 /* 80174788 00170428  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017478C 0017042C  7C 08 03 A6 */	mtlr r0
 /* 80174790 00170430  38 21 00 20 */	addi r1, r1, 0x20
-/* 80174794 00170434  4E 80 00 20 */	blr 
+/* 80174794 00170434  4E 80 00 20 */	blr
 
 .global "StartingLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenMode"
 "StartingLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenMode":
 /* 80174798 00170438  80 0D B6 B4 */	lwz r0, "s_pSM__25LoadingScreenStateMachine"-_SDA_BASE_(r13)
 /* 8017479C 0017043C  7C 64 1B 78 */	mr r4, r3
 /* 801747A0 00170440  2C 00 00 00 */	cmpwi r0, 0
-/* 801747A4 00170444  4D 82 00 20 */	beqlr 
+/* 801747A4 00170444  4D 82 00 20 */	beqlr
 /* 801747A8 00170448  7C 03 03 78 */	mr r3, r0
 /* 801747AC 0017044C  38 A0 00 00 */	li r5, 0
 /* 801747B0 00170450  4B FF FF 30 */	b "StartLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenModePCc"
-/* 801747B4 00170454  4E 80 00 20 */	blr 
+/* 801747B4 00170454  4E 80 00 20 */	blr
 
 .global "LoadFinishing__25LoadingScreenStateMachineFv"
 "LoadFinishing__25LoadingScreenStateMachineFv":
 /* 801747B8 00170458  80 6D B6 B4 */	lwz r3, "s_pSM__25LoadingScreenStateMachine"-_SDA_BASE_(r13)
 /* 801747BC 0017045C  2C 03 00 00 */	cmpwi r3, 0
-/* 801747C0 00170460  4D 82 00 20 */	beqlr 
+/* 801747C0 00170460  4D 82 00 20 */	beqlr
 /* 801747C4 00170464  4B FF 99 60 */	b "LoadFinished__25LoadingScreenStateMachineFv"
-/* 801747C8 00170468  4E 80 00 20 */	blr 
+/* 801747C8 00170468  4E 80 00 20 */	blr
 
 .global "LoadInProgress__25LoadingScreenStateMachineFv"
 "LoadInProgress__25LoadingScreenStateMachineFv":
@@ -12435,7 +12435,7 @@ lbl_80174770:
 /* 801747D8 00170478  4B FF FE B4 */	b "IsLoading__25LoadingScreenStateMachineCFv"
 lbl_801747DC:
 /* 801747DC 0017047C  38 60 00 00 */	li r3, 0
-/* 801747E0 00170480  4E 80 00 20 */	blr 
+/* 801747E0 00170480  4E 80 00 20 */	blr
 
 .global "Startup__21IrisTransitionInStateFv"
 "Startup__21IrisTransitionInStateFv":
@@ -12459,7 +12459,7 @@ lbl_801747DC:
 /* 80174828 001704C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017482C 001704CC  7C 08 03 A6 */	mtlr r0
 /* 80174830 001704D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174834 001704D4  4E 80 00 20 */	blr 
+/* 80174834 001704D4  4E 80 00 20 */	blr
 
 .global "Update__21IrisTransitionInStateFf"
 "Update__21IrisTransitionInStateFf":
@@ -12502,7 +12502,7 @@ lbl_801748B8:
 /* 801748BC 0017055C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801748C0 00170560  7C 08 03 A6 */	mtlr r0
 /* 801748C4 00170564  38 21 00 10 */	addi r1, r1, 0x10
-/* 801748C8 00170568  4E 80 00 20 */	blr 
+/* 801748C8 00170568  4E 80 00 20 */	blr
 
 .global "Shutdown__21IrisTransitionInStateFv"
 "Shutdown__21IrisTransitionInStateFv":
@@ -12521,7 +12521,7 @@ lbl_801748B8:
 /* 801748F0 00170590  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801748F4 00170594  7C 08 03 A6 */	mtlr r0
 /* 801748F8 00170598  38 21 00 10 */	addi r1, r1, 0x10
-/* 801748FC 0017059C  4E 80 00 20 */	blr 
+/* 801748FC 0017059C  4E 80 00 20 */	blr
 
 .global "Update__22IrisTransitionOutStateFf"
 "Update__22IrisTransitionOutStateFf":
@@ -12571,7 +12571,7 @@ lbl_80174994:
 /* 801749A0 00170640  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801749A4 00170644  7C 08 03 A6 */	mtlr r0
 /* 801749A8 00170648  38 21 00 20 */	addi r1, r1, 0x20
-/* 801749AC 0017064C  4E 80 00 20 */	blr 
+/* 801749AC 0017064C  4E 80 00 20 */	blr
 
 .global "DrawTopmost__22IrisTransitionOutStateFP3ERC"
 "DrawTopmost__22IrisTransitionOutStateFP3ERC":
@@ -12597,7 +12597,7 @@ lbl_801749F4:
 /* 801749F8 00170698  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801749FC 0017069C  7C 08 03 A6 */	mtlr r0
 /* 80174A00 001706A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174A04 001706A4  4E 80 00 20 */	blr 
+/* 80174A04 001706A4  4E 80 00 20 */	blr
 
 .global "Shutdown__22IrisTransitionOutStateFv"
 "Shutdown__22IrisTransitionOutStateFv":
@@ -12615,12 +12615,12 @@ lbl_801749F4:
 /* 80174A34 001706D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80174A38 001706D8  7C 08 03 A6 */	mtlr r0
 /* 80174A3C 001706DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174A40 001706E0  4E 80 00 20 */	blr 
+/* 80174A40 001706E0  4E 80 00 20 */	blr
 
 .global "GetMode__14CLoadingScreenCFv"
 "GetMode__14CLoadingScreenCFv":
 /* 80174A44 001706E4  80 63 03 64 */	lwz r3, 0x364(r3)
-/* 80174A48 001706E8  4E 80 00 20 */	blr 
+/* 80174A48 001706E8  4E 80 00 20 */	blr
 
 .global "__nw__14CLoadingScreenFUl"
 "__nw__14CLoadingScreenFUl":
@@ -12639,28 +12639,28 @@ lbl_801749F4:
 /* 80174A7C 0017071C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174A80 00170720  7C 08 03 A6 */	mtlr r0
 /* 80174A84 00170724  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174A88 00170728  4E 80 00 20 */	blr 
+/* 80174A88 00170728  4E 80 00 20 */	blr
 
 .global "IsTransitionInDone__9TIRTargetFv"
 "IsTransitionInDone__9TIRTargetFv":
 /* 80174A8C 0017072C  88 63 00 BC */	lbz r3, 0xbc(r3)
-/* 80174A90 00170730  4E 80 00 20 */	blr 
+/* 80174A90 00170730  4E 80 00 20 */	blr
 
 .global "IsTransitionOutDone__9TIRTargetFv"
 "IsTransitionOutDone__9TIRTargetFv":
 /* 80174A94 00170734  88 63 00 BD */	lbz r3, 0xbd(r3)
-/* 80174A98 00170738  4E 80 00 20 */	blr 
+/* 80174A98 00170738  4E 80 00 20 */	blr
 
 .global "IsInTransition__9TIRTargetFv"
 "IsInTransition__9TIRTargetFv":
 /* 80174A9C 0017073C  88 63 00 BE */	lbz r3, 0xbe(r3)
-/* 80174AA0 00170740  4E 80 00 20 */	blr 
+/* 80174AA0 00170740  4E 80 00 20 */	blr
 
 .global "IsFadedOut__5FaderFv"
 "IsFadedOut__5FaderFv":
 /* 80174AA4 00170744  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 80174AA8 00170748  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 80174AAC 0017074C  4E 80 00 20 */	blr 
+/* 80174AAC 0017074C  4E 80 00 20 */	blr
 
 .global "Update__23MUStatesProcessRequestsFf"
 "Update__23MUStatesProcessRequestsFf":
@@ -12747,7 +12747,7 @@ lbl_80174BD0:
 /* 80174BD8 00170878  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80174BDC 0017087C  7C 08 03 A6 */	mtlr r0
 /* 80174BE0 00170880  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174BE4 00170884  4E 80 00 20 */	blr 
+/* 80174BE4 00170884  4E 80 00 20 */	blr
 
 .global "Reset__17MUStatesLoadHouseFv"
 "Reset__17MUStatesLoadHouseFv":
@@ -12763,7 +12763,7 @@ lbl_80174BD0:
 /* 80174C0C 001708AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80174C10 001708B0  7C 08 03 A6 */	mtlr r0
 /* 80174C14 001708B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174C18 001708B8  4E 80 00 20 */	blr 
+/* 80174C18 001708B8  4E 80 00 20 */	blr
 
 .global "Draw__17MUStatesLoadHouseFP3ERC"
 "Draw__17MUStatesLoadHouseFP3ERC":
@@ -12850,7 +12850,7 @@ lbl_80174D30:
 /* 80174D3C 001709DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174D40 001709E0  7C 08 03 A6 */	mtlr r0
 /* 80174D44 001709E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80174D48 001709E8  4E 80 00 20 */	blr 
+/* 80174D48 001709E8  4E 80 00 20 */	blr
 
 .global "Reset__34MUStatesTransitionAutoSaveExistingFv"
 "Reset__34MUStatesTransitionAutoSaveExistingFv":
@@ -12898,7 +12898,7 @@ lbl_80174DD4:
 /* 80174DD8 00170A78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174DDC 00170A7C  7C 08 03 A6 */	mtlr r0
 /* 80174DE0 00170A80  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174DE4 00170A84  4E 80 00 20 */	blr 
+/* 80174DE4 00170A84  4E 80 00 20 */	blr
 
 .global "Reset__34MUStatesTransitionSaveExistingGameFv"
 "Reset__34MUStatesTransitionSaveExistingGameFv":
@@ -12914,7 +12914,7 @@ lbl_80174DD4:
 /* 80174E0C 00170AAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80174E10 00170AB0  7C 08 03 A6 */	mtlr r0
 /* 80174E14 00170AB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174E18 00170AB8  4E 80 00 20 */	blr 
+/* 80174E18 00170AB8  4E 80 00 20 */	blr
 
 .global "Draw__34MUStatesTransitionSaveExistingGameFP3ERC"
 "Draw__34MUStatesTransitionSaveExistingGameFP3ERC":
@@ -12974,7 +12974,7 @@ lbl_80174ED4:
 /* 80174ED8 00170B78  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80174EDC 00170B7C  7C 08 03 A6 */	mtlr r0
 /* 80174EE0 00170B80  38 21 00 20 */	addi r1, r1, 0x20
-/* 80174EE4 00170B84  4E 80 00 20 */	blr 
+/* 80174EE4 00170B84  4E 80 00 20 */	blr
 
 .global "Startup__14MUStateMachineFv"
 "Startup__14MUStateMachineFv":
@@ -13034,12 +13034,12 @@ lbl_80174FA0:
 /* 80174FAC 00170C4C  7F E3 FB 78 */	mr r3, r31
 /* 80174FB0 00170C50  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80174FB4 00170C54  7D 89 03 A6 */	mtctr r12
-/* 80174FB8 00170C58  4E 80 04 21 */	bctrl 
+/* 80174FB8 00170C58  4E 80 04 21 */	bctrl
 /* 80174FBC 00170C5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80174FC0 00170C60  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80174FC4 00170C64  7C 08 03 A6 */	mtlr r0
 /* 80174FC8 00170C68  38 21 00 10 */	addi r1, r1, 0x10
-/* 80174FCC 00170C6C  4E 80 00 20 */	blr 
+/* 80174FCC 00170C6C  4E 80 00 20 */	blr
 
 .global "__ct__34MUStatesTransitionSaveExistingGameFi"
 "__ct__34MUStatesTransitionSaveExistingGameFi":
@@ -13058,7 +13058,7 @@ lbl_80174FA0:
 /* 80175000 00170CA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175004 00170CA4  7C 08 03 A6 */	mtlr r0
 /* 80175008 00170CA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017500C 00170CAC  4E 80 00 20 */	blr 
+/* 8017500C 00170CAC  4E 80 00 20 */	blr
 
 .global "__ct__34MUStatesTransitionAutoSaveExistingFi"
 "__ct__34MUStatesTransitionAutoSaveExistingFi":
@@ -13077,7 +13077,7 @@ lbl_80174FA0:
 /* 80175040 00170CE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175044 00170CE4  7C 08 03 A6 */	mtlr r0
 /* 80175048 00170CE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017504C 00170CEC  4E 80 00 20 */	blr 
+/* 8017504C 00170CEC  4E 80 00 20 */	blr
 
 .global "__ct__17MUStatesLoadHouseFi"
 "__ct__17MUStatesLoadHouseFi":
@@ -13096,7 +13096,7 @@ lbl_80174FA0:
 /* 80175080 00170D20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175084 00170D24  7C 08 03 A6 */	mtlr r0
 /* 80175088 00170D28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017508C 00170D2C  4E 80 00 20 */	blr 
+/* 8017508C 00170D2C  4E 80 00 20 */	blr
 
 .global "__ct__23MUStatesProcessRequestsFi"
 "__ct__23MUStatesProcessRequestsFi":
@@ -13115,7 +13115,7 @@ lbl_80174FA0:
 /* 801750C0 00170D60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801750C4 00170D64  7C 08 03 A6 */	mtlr r0
 /* 801750C8 00170D68  38 21 00 10 */	addi r1, r1, 0x10
-/* 801750CC 00170D6C  4E 80 00 20 */	blr 
+/* 801750CC 00170D6C  4E 80 00 20 */	blr
 
 .global "Shutdown__14MUStateMachineFv"
 "Shutdown__14MUStateMachineFv":
@@ -13131,7 +13131,7 @@ lbl_80174FA0:
 /* 801750F4 00170D94  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801750F8 00170D98  7C 08 03 A6 */	mtlr r0
 /* 801750FC 00170D9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175100 00170DA0  4E 80 00 20 */	blr 
+/* 80175100 00170DA0  4E 80 00 20 */	blr
 
 .global "Reset__14MUStateMachineFv"
 "Reset__14MUStateMachineFv":
@@ -13149,7 +13149,7 @@ lbl_80174FA0:
 /* 80175130 00170DD0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80175134 00170DD4  7C 08 03 A6 */	mtlr r0
 /* 80175138 00170DD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017513C 00170DDC  4E 80 00 20 */	blr 
+/* 8017513C 00170DDC  4E 80 00 20 */	blr
 
 .global "Update__14MUStateMachineFf"
 "Update__14MUStateMachineFf":
@@ -13161,9 +13161,9 @@ lbl_80174FA0:
 /* 80175148 00170DE8  38 A5 75 34 */	addi r5, r5, "_gd"@l
 /* 8017514C 00170DEC  88 05 00 66 */	lbz r0, 0x66(r5)
 /* 80175150 00170DF0  2C 00 00 00 */	cmpwi r0, 0
-/* 80175154 00170DF4  4D 82 00 20 */	beqlr 
+/* 80175154 00170DF4  4D 82 00 20 */	beqlr
 /* 80175158 00170DF8  4B FF 51 D0 */	b "Draw__12StateMachineFP3ERC"
-/* 8017515C 00170DFC  4E 80 00 20 */	blr 
+/* 8017515C 00170DFC  4E 80 00 20 */	blr
 
 .global "MURequest__14MUStateMachineFQ214MUStateMachine10eMURequest"
 "MURequest__14MUStateMachineFQ214MUStateMachine10eMURequest":
@@ -13182,7 +13182,7 @@ lbl_80174FA0:
 /* 80175190 00170E30  90 0D B6 BC */	stw r0, "m_resultRequest__14MUStateMachine"-_SDA_BASE_(r13)
 lbl_80175194:
 /* 80175194 00170E34  7C 83 23 78 */	mr r3, r4
-/* 80175198 00170E38  4E 80 00 20 */	blr 
+/* 80175198 00170E38  4E 80 00 20 */	blr
 
 .global "MUPollForResult__14MUStateMachineFQ214MUStateMachine10eMURequest"
 "MUPollForResult__14MUStateMachineFQ214MUStateMachine10eMURequest":
@@ -13193,7 +13193,7 @@ lbl_80175194:
 /* 801751AC 00170E4C  80 8D B6 B8 */	lwz r4, "m_result__14MUStateMachine"-_SDA_BASE_(r13)
 lbl_801751B0:
 /* 801751B0 00170E50  7C 83 23 78 */	mr r3, r4
-/* 801751B4 00170E54  4E 80 00 20 */	blr 
+/* 801751B4 00170E54  4E 80 00 20 */	blr
 
 .global "__dt__23MUStatesProcessRequestsFv"
 "__dt__23MUStatesProcessRequestsFv":
@@ -13219,7 +13219,7 @@ lbl_801751F4:
 /* 80175200 00170EA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175204 00170EA4  7C 08 03 A6 */	mtlr r0
 /* 80175208 00170EA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017520C 00170EAC  4E 80 00 20 */	blr 
+/* 8017520C 00170EAC  4E 80 00 20 */	blr
 
 .global "__dt__17MUStatesLoadHouseFv"
 "__dt__17MUStatesLoadHouseFv":
@@ -13245,7 +13245,7 @@ lbl_8017524C:
 /* 80175258 00170EF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017525C 00170EFC  7C 08 03 A6 */	mtlr r0
 /* 80175260 00170F00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175264 00170F04  4E 80 00 20 */	blr 
+/* 80175264 00170F04  4E 80 00 20 */	blr
 
 .global "__dt__34MUStatesTransitionAutoSaveExistingFv"
 "__dt__34MUStatesTransitionAutoSaveExistingFv":
@@ -13271,7 +13271,7 @@ lbl_801752A4:
 /* 801752B0 00170F50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801752B4 00170F54  7C 08 03 A6 */	mtlr r0
 /* 801752B8 00170F58  38 21 00 10 */	addi r1, r1, 0x10
-/* 801752BC 00170F5C  4E 80 00 20 */	blr 
+/* 801752BC 00170F5C  4E 80 00 20 */	blr
 
 .global "__dt__34MUStatesTransitionSaveExistingGameFv"
 "__dt__34MUStatesTransitionSaveExistingGameFv":
@@ -13297,13 +13297,13 @@ lbl_801752FC:
 /* 80175308 00170FA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017530C 00170FAC  7C 08 03 A6 */	mtlr r0
 /* 80175310 00170FB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175314 00170FB4  4E 80 00 20 */	blr 
+/* 80175314 00170FB4  4E 80 00 20 */	blr
 
 .global "__ct__18MemoryDevicePort_tF14MemoryDevice_t15MemorySaveNum_t"
 "__ct__18MemoryDevicePort_tF14MemoryDevice_t15MemorySaveNum_t":
 /* 80175318 00170FB8  90 83 00 00 */	stw r4, 0(r3)
 /* 8017531C 00170FBC  90 A3 00 04 */	stw r5, 4(r3)
-/* 80175320 00170FC0  4E 80 00 20 */	blr 
+/* 80175320 00170FC0  4E 80 00 20 */	blr
 
 .global "Reset__12PreGameStateFv"
 "Reset__12PreGameStateFv":
@@ -13337,7 +13337,7 @@ lbl_801752FC:
 /* 80175390 00171030  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80175394 00171034  7C 08 03 A6 */	mtlr r0
 /* 80175398 00171038  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017539C 0017103C  4E 80 00 20 */	blr 
+/* 8017539C 0017103C  4E 80 00 20 */	blr
 
 .global "Update__12PreGameStateFf"
 "Update__12PreGameStateFf":
@@ -13450,7 +13450,7 @@ lbl_8017550C:
 /* 80175520 001711C0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80175524 001711C4  7C 08 03 A6 */	mtlr r0
 /* 80175528 001711C8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017552C 001711CC  4E 80 00 20 */	blr 
+/* 8017552C 001711CC  4E 80 00 20 */	blr
 
 .global "Reset__25PreGameCreateAFamilyStateFv"
 "Reset__25PreGameCreateAFamilyStateFv":
@@ -13467,7 +13467,7 @@ lbl_8017550C:
 /* 80175558 001711F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017555C 001711FC  7C 08 03 A6 */	mtlr r0
 /* 80175560 00171200  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175564 00171204  4E 80 00 20 */	blr 
+/* 80175564 00171204  4E 80 00 20 */	blr
 
 .global "Update__25PreGameCreateAFamilyStateFf"
 "Update__25PreGameCreateAFamilyStateFf":
@@ -13556,7 +13556,7 @@ lbl_8017566C:
 /* 80175698 00171338  38 80 00 01 */	li r4, 1
 /* 8017569C 0017133C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801756A0 00171340  7D 89 03 A6 */	mtctr r12
-/* 801756A4 00171344  4E 80 04 21 */	bctrl 
+/* 801756A4 00171344  4E 80 04 21 */	bctrl
 lbl_801756A8:
 /* 801756A8 00171348  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 801756AC 0017134C  38 00 00 00 */	li r0, 0
@@ -13569,7 +13569,7 @@ lbl_801756A8:
 /* 801756C8 00171368  38 80 00 01 */	li r4, 1
 /* 801756CC 0017136C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801756D0 00171370  7D 89 03 A6 */	mtctr r12
-/* 801756D4 00171374  4E 80 04 21 */	bctrl 
+/* 801756D4 00171374  4E 80 04 21 */	bctrl
 lbl_801756D8:
 /* 801756D8 00171378  3F C0 80 49 */	lis r30, "_gd"@ha
 /* 801756DC 0017137C  3F E0 80 49 */	lis r31, "_globals"@ha
@@ -13604,7 +13604,7 @@ lbl_80175740:
 /* 8017574C 001713EC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80175750 001713F0  7C 08 03 A6 */	mtlr r0
 /* 80175754 001713F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80175758 001713F8  4E 80 00 20 */	blr 
+/* 80175758 001713F8  4E 80 00 20 */	blr
 
 .global "Reset__22InLevelCreateASimStateFv"
 "Reset__22InLevelCreateASimStateFv":
@@ -13642,7 +13642,7 @@ lbl_80175740:
 /* 801757D8 00171478  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801757DC 0017147C  7C 08 03 A6 */	mtlr r0
 /* 801757E0 00171480  38 21 00 20 */	addi r1, r1, 0x20
-/* 801757E4 00171484  4E 80 00 20 */	blr 
+/* 801757E4 00171484  4E 80 00 20 */	blr
 
 .global "Update__22InLevelCreateASimStateFf"
 "Update__22InLevelCreateASimStateFf":
@@ -13697,7 +13697,7 @@ lbl_80175890:
 /* 80175898 00171538  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017589C 0017153C  7C 08 03 A6 */	mtlr r0
 /* 801758A0 00171540  38 21 00 10 */	addi r1, r1, 0x10
-/* 801758A4 00171544  4E 80 00 20 */	blr 
+/* 801758A4 00171544  4E 80 00 20 */	blr
 
 .global "Startup__17PreGameSetupStateFv"
 "Startup__17PreGameSetupStateFv":
@@ -13799,7 +13799,7 @@ lbl_801759FC:
 /* 80175A14 001716B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80175A18 001716B8  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 80175A1C 001716BC  7D 89 03 A6 */	mtctr r12
-/* 80175A20 001716C0  4E 80 04 21 */	bctrl 
+/* 80175A20 001716C0  4E 80 04 21 */	bctrl
 /* 80175A24 001716C4  2C 03 00 01 */	cmpwi r3, 1
 /* 80175A28 001716C8  41 82 00 14 */	beq lbl_80175A3C
 /* 80175A2C 001716CC  38 60 00 01 */	li r3, 1
@@ -13825,7 +13825,7 @@ lbl_80175A64:
 /* 80175A6C 0017170C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80175A70 00171710  7C 08 03 A6 */	mtlr r0
 /* 80175A74 00171714  38 21 00 20 */	addi r1, r1, 0x20
-/* 80175A78 00171718  4E 80 00 20 */	blr 
+/* 80175A78 00171718  4E 80 00 20 */	blr
 
 .global "Shutdown__17PreGameSetupStateFv"
 "Shutdown__17PreGameSetupStateFv":
@@ -13843,7 +13843,7 @@ lbl_80175A64:
 /* 80175A9C 0017173C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175AA0 00171740  7C 08 03 A6 */	mtlr r0
 /* 80175AA4 00171744  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175AA8 00171748  4E 80 00 20 */	blr 
+/* 80175AA8 00171748  4E 80 00 20 */	blr
 
 .global "Update__17PreGameSetupStateFf"
 "Update__17PreGameSetupStateFf":
@@ -13947,7 +13947,7 @@ lbl_80175C0C:
 /* 80175C14 001718B4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80175C18 001718B8  7C 08 03 A6 */	mtlr r0
 /* 80175C1C 001718BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175C20 001718C0  4E 80 00 20 */	blr 
+/* 80175C20 001718C0  4E 80 00 20 */	blr
 
 .global "Draw__17PreGameSetupStateFP3ERC"
 "Draw__17PreGameSetupStateFP3ERC":
@@ -13974,7 +13974,7 @@ lbl_80175C0C:
 /* 80175C68 00171908  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175C6C 0017190C  7C 08 03 A6 */	mtlr r0
 /* 80175C70 00171910  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175C74 00171914  4E 80 00 20 */	blr 
+/* 80175C74 00171914  4E 80 00 20 */	blr
 
 .global "Shutdown__17NeighborhoodStateFv"
 "Shutdown__17NeighborhoodStateFv":
@@ -13991,7 +13991,7 @@ lbl_80175C0C:
 /* 80175CA0 00171940  81 83 00 00 */	lwz r12, 0(r3)
 /* 80175CA4 00171944  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80175CA8 00171948  7D 89 03 A6 */	mtctr r12
-/* 80175CAC 0017194C  4E 80 04 21 */	bctrl 
+/* 80175CAC 0017194C  4E 80 04 21 */	bctrl
 lbl_80175CB0:
 /* 80175CB0 00171950  38 00 00 00 */	li r0, 0
 /* 80175CB4 00171954  3C 60 80 51 */	lis r3, "_datasetman"@ha
@@ -14007,7 +14007,7 @@ lbl_80175CB0:
 /* 80175CDC 0017197C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80175CE0 00171980  7C 08 03 A6 */	mtlr r0
 /* 80175CE4 00171984  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175CE8 00171988  4E 80 00 20 */	blr 
+/* 80175CE8 00171988  4E 80 00 20 */	blr
 
 .global "Reset__17NeighborhoodStateFv"
 "Reset__17NeighborhoodStateFv":
@@ -14101,7 +14101,7 @@ lbl_80175E20:
 /* 80175E28 00171AC8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80175E2C 00171ACC  7C 08 03 A6 */	mtlr r0
 /* 80175E30 00171AD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175E34 00171AD4  4E 80 00 20 */	blr 
+/* 80175E34 00171AD4  4E 80 00 20 */	blr
 
 .global "Draw__17NeighborhoodStateFP3ERC"
 "Draw__17NeighborhoodStateFP3ERC":
@@ -14125,7 +14125,7 @@ lbl_80175E20:
 /* 80175E64 00171B04  38 80 00 01 */	li r4, 1
 lbl_80175E68:
 /* 80175E68 00171B08  7C 83 23 78 */	mr r3, r4
-/* 80175E6C 00171B0C  4E 80 00 20 */	blr 
+/* 80175E6C 00171B0C  4E 80 00 20 */	blr
 
 .global "CASAccepted__19CreateASimBaseStateFv"
 "CASAccepted__19CreateASimBaseStateFv":
@@ -14139,7 +14139,7 @@ lbl_80175E68:
 /* 80175E8C 00171B2C  38 80 00 01 */	li r4, 1
 lbl_80175E90:
 /* 80175E90 00171B30  7C 83 23 78 */	mr r3, r4
-/* 80175E94 00171B34  4E 80 00 20 */	blr 
+/* 80175E94 00171B34  4E 80 00 20 */	blr
 
 .global "__ct__19CreateASimBaseStateFi"
 "__ct__19CreateASimBaseStateFi":
@@ -14164,7 +14164,7 @@ lbl_80175E90:
 /* 80175EE0 00171B80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175EE4 00171B84  7C 08 03 A6 */	mtlr r0
 /* 80175EE8 00171B88  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175EEC 00171B8C  4E 80 00 20 */	blr 
+/* 80175EEC 00171B8C  4E 80 00 20 */	blr
 
 .global "__ct__20TheSimsMainMenuStateFi"
 "__ct__20TheSimsMainMenuStateFi":
@@ -14184,7 +14184,7 @@ lbl_80175E90:
 /* 80175F24 00171BC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175F28 00171BC8  7C 08 03 A6 */	mtlr r0
 /* 80175F2C 00171BCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175F30 00171BD0  4E 80 00 20 */	blr 
+/* 80175F30 00171BD0  4E 80 00 20 */	blr
 
 .global "__dt__22TheSimsNGCLicenseStateFv"
 "__dt__22TheSimsNGCLicenseStateFv":
@@ -14210,7 +14210,7 @@ lbl_80175F70:
 /* 80175F7C 00171C1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175F80 00171C20  7C 08 03 A6 */	mtlr r0
 /* 80175F84 00171C24  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175F88 00171C28  4E 80 00 20 */	blr 
+/* 80175F88 00171C28  4E 80 00 20 */	blr
 
 .global "__dt__28TheSimsNGCHealthWarningStateFv"
 "__dt__28TheSimsNGCHealthWarningStateFv":
@@ -14240,7 +14240,7 @@ lbl_80175FD8:
 /* 80175FE4 00171C84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80175FE8 00171C88  7C 08 03 A6 */	mtlr r0
 /* 80175FEC 00171C8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80175FF0 00171C90  4E 80 00 20 */	blr 
+/* 80175FF0 00171C90  4E 80 00 20 */	blr
 
 .global "__dt__31TheSimsWiiNunchuckRequiredStateFv"
 "__dt__31TheSimsWiiNunchuckRequiredStateFv":
@@ -14270,7 +14270,7 @@ lbl_80176040:
 /* 8017604C 00171CEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176050 00171CF0  7C 08 03 A6 */	mtlr r0
 /* 80176054 00171CF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176058 00171CF8  4E 80 00 20 */	blr 
+/* 80176058 00171CF8  4E 80 00 20 */	blr
 
 .global "__dt__24TheSimsMemCardCheckStateFv"
 "__dt__24TheSimsMemCardCheckStateFv":
@@ -14296,7 +14296,7 @@ lbl_80176098:
 /* 801760A4 00171D44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801760A8 00171D48  7C 08 03 A6 */	mtlr r0
 /* 801760AC 00171D4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801760B0 00171D50  4E 80 00 20 */	blr 
+/* 801760B0 00171D50  4E 80 00 20 */	blr
 
 .global "__dt__19TheSimsEAMovieStateFv"
 "__dt__19TheSimsEAMovieStateFv":
@@ -14322,7 +14322,7 @@ lbl_801760F0:
 /* 801760FC 00171D9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176100 00171DA0  7C 08 03 A6 */	mtlr r0
 /* 80176104 00171DA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176108 00171DA8  4E 80 00 20 */	blr 
+/* 80176108 00171DA8  4E 80 00 20 */	blr
 
 .global "__dt__21TheSimsMaxisLogoStateFv"
 "__dt__21TheSimsMaxisLogoStateFv":
@@ -14352,7 +14352,7 @@ lbl_80176158:
 /* 80176164 00171E04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176168 00171E08  7C 08 03 A6 */	mtlr r0
 /* 8017616C 00171E0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176170 00171E10  4E 80 00 20 */	blr 
+/* 80176170 00171E10  4E 80 00 20 */	blr
 
 .global "__dt__26TheSimsSimsIntroMovieStateFv"
 "__dt__26TheSimsSimsIntroMovieStateFv":
@@ -14378,7 +14378,7 @@ lbl_801761B0:
 /* 801761BC 00171E5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801761C0 00171E60  7C 08 03 A6 */	mtlr r0
 /* 801761C4 00171E64  38 21 00 10 */	addi r1, r1, 0x10
-/* 801761C8 00171E68  4E 80 00 20 */	blr 
+/* 801761C8 00171E68  4E 80 00 20 */	blr
 
 .global "__dt__25TheSimsEnterMainMenuStateFv"
 "__dt__25TheSimsEnterMainMenuStateFv":
@@ -14404,7 +14404,7 @@ lbl_80176208:
 /* 80176214 00171EB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176218 00171EB8  7C 08 03 A6 */	mtlr r0
 /* 8017621C 00171EBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176220 00171EC0  4E 80 00 20 */	blr 
+/* 80176220 00171EC0  4E 80 00 20 */	blr
 
 .global "__dt__20TheSimsMainMenuStateFv"
 "__dt__20TheSimsMainMenuStateFv":
@@ -14430,12 +14430,12 @@ lbl_80176260:
 /* 8017626C 00171F0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176270 00171F10  7C 08 03 A6 */	mtlr r0
 /* 80176274 00171F14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176278 00171F18  4E 80 00 20 */	blr 
+/* 80176278 00171F18  4E 80 00 20 */	blr
 
 .global "GetStartLot__8ESimsAppCFv"
 "GetStartLot__8ESimsAppCFv":
 /* 8017627C 00171F1C  80 6D 9B 0C */	lwz r3, "s_startLot__8ESimsApp"-_SDA_BASE_(r13)
-/* 80176280 00171F20  4E 80 00 20 */	blr 
+/* 80176280 00171F20  4E 80 00 20 */	blr
 
 .global "Startup__15StartScreenVarsFv"
 "Startup__15StartScreenVarsFv":
@@ -14479,7 +14479,7 @@ lbl_801762AC:
 /* 80176314 00171FB4  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 80176318 00171FB8  7C 08 03 A6 */	mtlr r0
 /* 8017631C 00171FBC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80176320 00171FC0  4E 80 00 20 */	blr 
+/* 80176320 00171FC0  4E 80 00 20 */	blr
 
 .global "Shutdown__15StartScreenVarsFv"
 "Shutdown__15StartScreenVarsFv":
@@ -14496,7 +14496,7 @@ lbl_801762AC:
 /* 8017634C 00171FEC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80176350 00171FF0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80176354 00171FF4  7D 89 03 A6 */	mtctr r12
-/* 80176358 00171FF8  4E 80 04 21 */	bctrl 
+/* 80176358 00171FF8  4E 80 04 21 */	bctrl
 lbl_8017635C:
 /* 8017635C 00171FFC  38 00 00 00 */	li r0, 0
 /* 80176360 00172000  90 1F 00 20 */	stw r0, 0x20(r31)
@@ -14504,7 +14504,7 @@ lbl_8017635C:
 /* 80176368 00172008  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017636C 0017200C  7C 08 03 A6 */	mtlr r0
 /* 80176370 00172010  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176374 00172014  4E 80 00 20 */	blr 
+/* 80176374 00172014  4E 80 00 20 */	blr
 
 .global "Reset__15StartScreenVarsFv"
 "Reset__15StartScreenVarsFv":
@@ -14541,7 +14541,7 @@ lbl_8017635C:
 /* 801763F0 00172090  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801763F4 00172094  7C 08 03 A6 */	mtlr r0
 /* 801763F8 00172098  38 21 00 20 */	addi r1, r1, 0x20
-/* 801763FC 0017209C  4E 80 00 20 */	blr 
+/* 801763FC 0017209C  4E 80 00 20 */	blr
 
 .global "Update__15StartScreenVarsFf"
 "Update__15StartScreenVarsFf":
@@ -14554,14 +14554,14 @@ lbl_8017635C:
 /* 80176418 001720B8  D0 43 00 08 */	stfs f2, 8(r3)
 /* 8017641C 001720BC  D0 23 00 00 */	stfs f1, 0(r3)
 /* 80176420 001720C0  4C 41 13 82 */	cror 2, 1, 2
-/* 80176424 001720C4  4C 82 00 20 */	bnelr 
+/* 80176424 001720C4  4C 82 00 20 */	bnelr
 /* 80176428 001720C8  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 8017642C 001720CC  EC 02 00 28 */	fsubs f0, f2, f0
 /* 80176430 001720D0  7C 00 00 34 */	cntlzw r0, r0
 /* 80176434 001720D4  54 00 D9 7E */	srwi r0, r0, 5
 /* 80176438 001720D8  D0 03 00 08 */	stfs f0, 8(r3)
 /* 8017643C 001720DC  98 03 00 0C */	stb r0, 0xc(r3)
-/* 80176440 001720E0  4E 80 00 20 */	blr 
+/* 80176440 001720E0  4E 80 00 20 */	blr
 
 .global "DrawPressStart__15StartScreenVarsCFP3ERC"
 "DrawPressStart__15StartScreenVarsCFP3ERC":
@@ -14616,7 +14616,7 @@ lbl_801764F4:
 /* 80176500 001721A0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80176504 001721A4  7C 08 03 A6 */	mtlr r0
 /* 80176508 001721A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017650C 001721AC  4E 80 00 20 */	blr 
+/* 8017650C 001721AC  4E 80 00 20 */	blr
 
 .global "Startup__30TheSimsStartScreenStateMachineFv"
 "Startup__30TheSimsStartScreenStateMachineFv":
@@ -14654,7 +14654,7 @@ lbl_80176560:
 /* 80176584 00172224  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80176588 00172228  7C 08 03 A6 */	mtlr r0
 /* 8017658C 0017222C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176590 00172230  4E 80 00 20 */	blr 
+/* 80176590 00172230  4E 80 00 20 */	blr
 
 .global "__ct__21StartScreenStartStateFi"
 "__ct__21StartScreenStartStateFi":
@@ -14677,7 +14677,7 @@ lbl_80176560:
 /* 801765D4 00172274  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801765D8 00172278  7C 08 03 A6 */	mtlr r0
 /* 801765DC 0017227C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801765E0 00172280  4E 80 00 20 */	blr 
+/* 801765E0 00172280  4E 80 00 20 */	blr
 
 .global "__ct__15StartScreenVarsFv"
 "__ct__15StartScreenVarsFv":
@@ -14695,7 +14695,7 @@ lbl_80176560:
 /* 80176610 001722B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176614 001722B4  7C 08 03 A6 */	mtlr r0
 /* 80176618 001722B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017661C 001722BC  4E 80 00 20 */	blr 
+/* 8017661C 001722BC  4E 80 00 20 */	blr
 
 .global "Shutdown__30TheSimsStartScreenStateMachineFv"
 "Shutdown__30TheSimsStartScreenStateMachineFv":
@@ -14717,7 +14717,7 @@ lbl_80176560:
 /* 8017665C 001722FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176660 00172300  7C 08 03 A6 */	mtlr r0
 /* 80176664 00172304  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176668 00172308  4E 80 00 20 */	blr 
+/* 80176668 00172308  4E 80 00 20 */	blr
 
 .global "Reset__30TheSimsStartScreenStateMachineFv"
 "Reset__30TheSimsStartScreenStateMachineFv":
@@ -14745,7 +14745,7 @@ lbl_80176560:
 /* 801766C0 00172360  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801766C4 00172364  7C 08 03 A6 */	mtlr r0
 /* 801766C8 00172368  38 21 00 10 */	addi r1, r1, 0x10
-/* 801766CC 0017236C  4E 80 00 20 */	blr 
+/* 801766CC 0017236C  4E 80 00 20 */	blr
 
 .global "Update__30TheSimsStartScreenStateMachineFf"
 "Update__30TheSimsStartScreenStateMachineFf":
@@ -14766,7 +14766,7 @@ lbl_80176560:
 /* 80176708 001723A8  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8017670C 001723AC  7C 08 03 A6 */	mtlr r0
 /* 80176710 001723B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80176714 001723B4  4E 80 00 20 */	blr 
+/* 80176714 001723B4  4E 80 00 20 */	blr
 
 .global "Startup__21StartScreenStartStateFv"
 "Startup__21StartScreenStartStateFv":
@@ -14808,7 +14808,7 @@ lbl_80176790:
 /* 801767A0 00172440  38 84 BC 2D */	addi r4, r4, 0x7F5ABC2D@l
 /* 801767A4 00172444  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801767A8 00172448  7D 89 03 A6 */	mtctr r12
-/* 801767AC 0017244C  4E 80 04 21 */	bctrl 
+/* 801767AC 0017244C  4E 80 04 21 */	bctrl
 /* 801767B0 00172450  90 7E 00 78 */	stw r3, 0x78(r30)
 /* 801767B4 00172454  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 801767B8 00172458  38 63 75 34 */	addi r3, r3, "_gd"@l
@@ -14818,14 +14818,14 @@ lbl_80176790:
 /* 801767C8 00172468  81 83 00 00 */	lwz r12, 0(r3)
 /* 801767CC 0017246C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801767D0 00172470  7D 89 03 A6 */	mtctr r12
-/* 801767D4 00172474  4E 80 04 21 */	bctrl 
+/* 801767D4 00172474  4E 80 04 21 */	bctrl
 /* 801767D8 00172478  90 7E 00 7C */	stw r3, 0x7c(r30)
 /* 801767DC 0017247C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801767E0 00172480  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801767E4 00172484  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801767E8 00172488  7C 08 03 A6 */	mtlr r0
 /* 801767EC 0017248C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801767F0 00172490  4E 80 00 20 */	blr 
+/* 801767F0 00172490  4E 80 00 20 */	blr
 
 .global "Shutdown__21StartScreenStartStateFv"
 "Shutdown__21StartScreenStartStateFv":
@@ -14859,7 +14859,7 @@ lbl_80176790:
 /* 80176860 00172500  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80176864 00172504  7C 08 03 A6 */	mtlr r0
 /* 80176868 00172508  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017686C 0017250C  4E 80 00 20 */	blr 
+/* 8017686C 0017250C  4E 80 00 20 */	blr
 
 .global "Update__21StartScreenStartStateFf"
 "Update__21StartScreenStartStateFf":
@@ -14967,7 +14967,7 @@ lbl_801769A8:
 /* 801769F0 00172690  81 83 00 00 */	lwz r12, 0(r3)
 /* 801769F4 00172694  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 801769F8 00172698  7D 89 03 A6 */	mtctr r12
-/* 801769FC 0017269C  4E 80 04 21 */	bctrl 
+/* 801769FC 0017269C  4E 80 04 21 */	bctrl
 /* 80176A00 001726A0  3C 80 80 49 */	lis r4, "_globals"@ha
 /* 80176A04 001726A4  3C 00 43 30 */	lis r0, 0x4330
 /* 80176A08 001726A8  38 84 7A 40 */	addi r4, r4, "_globals"@l
@@ -14986,7 +14986,7 @@ lbl_801769A8:
 /* 80176A3C 001726DC  EC 21 10 28 */	fsubs f1, f1, f2
 /* 80176A40 001726E0  EC 21 00 24 */	fdivs f1, f1, f0
 /* 80176A44 001726E4  7D 89 03 A6 */	mtctr r12
-/* 80176A48 001726E8  4E 80 04 21 */	bctrl 
+/* 80176A48 001726E8  4E 80 04 21 */	bctrl
 /* 80176A4C 001726EC  38 60 00 00 */	li r3, 0
 /* 80176A50 001726F0  4B FF DD 49 */	bl "StartingLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenMode"
 lbl_80176A54:
@@ -14995,7 +14995,7 @@ lbl_80176A54:
 /* 80176A5C 001726FC  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80176A60 00172700  7C 08 03 A6 */	mtlr r0
 /* 80176A64 00172704  38 21 00 30 */	addi r1, r1, 0x30
-/* 80176A68 00172708  4E 80 00 20 */	blr 
+/* 80176A68 00172708  4E 80 00 20 */	blr
 
 .global "Draw__21StartScreenStartStateFP3ERC"
 "Draw__21StartScreenStartStateFP3ERC":
@@ -15055,7 +15055,7 @@ lbl_80176A54:
 /* 80176B40 001727E0  7F E8 FB 78 */	mr r8, r31
 /* 80176B44 001727E4  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80176B48 001727E8  7D 89 03 A6 */	mtctr r12
-/* 80176B4C 001727EC  4E 80 04 21 */	bctrl 
+/* 80176B4C 001727EC  4E 80 04 21 */	bctrl
 lbl_80176B50:
 /* 80176B50 001727F0  80 7A 00 7C */	lwz r3, 0x7c(r26)
 /* 80176B54 001727F4  2C 03 00 00 */	cmpwi r3, 0
@@ -15099,7 +15099,7 @@ lbl_80176B50:
 /* 80176BEC 0017288C  7F 88 E3 78 */	mr r8, r28
 /* 80176BF0 00172890  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80176BF4 00172894  7D 89 03 A6 */	mtctr r12
-/* 80176BF8 00172898  4E 80 04 21 */	bctrl 
+/* 80176BF8 00172898  4E 80 04 21 */	bctrl
 lbl_80176BFC:
 /* 80176BFC 0017289C  80 6D B6 D0 */	lwz r3, "s_pVars"-_SDA_BASE_(r13)
 /* 80176C00 001728A0  C0 02 89 98 */	lfs f0, lbl_805D9BB8-_SDA2_BASE_(r2)
@@ -15119,7 +15119,7 @@ lbl_80176C24:
 /* 80176C34 001728D4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80176C38 001728D8  7C 08 03 A6 */	mtlr r0
 /* 80176C3C 001728DC  38 21 00 80 */	addi r1, r1, 0x80
-/* 80176C40 001728E0  4E 80 00 20 */	blr 
+/* 80176C40 001728E0  4E 80 00 20 */	blr
 
 .global "__sinit_game_statemachine_unity_cpp"
 "__sinit_game_statemachine_unity_cpp":
@@ -15140,7 +15140,7 @@ lbl_80176C24:
 /* 80176C7C 0017291C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176C80 00172920  7C 08 03 A6 */	mtlr r0
 /* 80176C84 00172924  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176C88 00172928  4E 80 00 20 */	blr 
+/* 80176C88 00172928  4E 80 00 20 */	blr
 
 .global "__ct__16StateMachineFlowFii"
 "__ct__16StateMachineFlowFii":
@@ -15158,7 +15158,7 @@ lbl_80176C24:
 /* 80176CB8 00172958  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176CBC 0017295C  7C 08 03 A6 */	mtlr r0
 /* 80176CC0 00172960  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176CC4 00172964  4E 80 00 20 */	blr 
+/* 80176CC4 00172964  4E 80 00 20 */	blr
 
 .global "__dt__16StateMachineFlowFv"
 "__dt__16StateMachineFlowFv":
@@ -15184,7 +15184,7 @@ lbl_80176D04:
 /* 80176D10 001729B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176D14 001729B4  7C 08 03 A6 */	mtlr r0
 /* 80176D18 001729B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176D1C 001729BC  4E 80 00 20 */	blr 
+/* 80176D1C 001729BC  4E 80 00 20 */	blr
 
 .global "__ct__22TheSimsNGCLicenseStateFv"
 "__ct__22TheSimsNGCLicenseStateFv":
@@ -15209,7 +15209,7 @@ lbl_80176D04:
 /* 80176D68 00172A08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80176D6C 00172A0C  7C 08 03 A6 */	mtlr r0
 /* 80176D70 00172A10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176D74 00172A14  4E 80 00 20 */	blr 
+/* 80176D74 00172A14  4E 80 00 20 */	blr
 
 .global "Startup__22TheSimsNGCLicenseStateFv"
 "Startup__22TheSimsNGCLicenseStateFv":
@@ -15272,7 +15272,7 @@ lbl_80176D04:
 /* 80176E58 00172AF8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80176E5C 00172AFC  7C 08 03 A6 */	mtlr r0
 /* 80176E60 00172B00  38 21 00 20 */	addi r1, r1, 0x20
-/* 80176E64 00172B04  4E 80 00 20 */	blr 
+/* 80176E64 00172B04  4E 80 00 20 */	blr
 
 .global "Shutdown__22TheSimsNGCLicenseStateFv"
 "Shutdown__22TheSimsNGCLicenseStateFv":
@@ -15293,7 +15293,7 @@ lbl_80176E98:
 /* 80176E9C 00172B3C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80176EA0 00172B40  7C 08 03 A6 */	mtlr r0
 /* 80176EA4 00172B44  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176EA8 00172B48  4E 80 00 20 */	blr 
+/* 80176EA8 00172B48  4E 80 00 20 */	blr
 
 .global "Update__22TheSimsNGCLicenseStateFf"
 "Update__22TheSimsNGCLicenseStateFf":
@@ -15353,7 +15353,7 @@ lbl_80176F70:
 /* 80176F74 00172C14  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80176F78 00172C18  7C 08 03 A6 */	mtlr r0
 /* 80176F7C 00172C1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80176F80 00172C20  4E 80 00 20 */	blr 
+/* 80176F80 00172C20  4E 80 00 20 */	blr
 
 .global "Draw__22TheSimsNGCLicenseStateFP3ERC"
 "Draw__22TheSimsNGCLicenseStateFP3ERC":
@@ -15399,7 +15399,7 @@ lbl_80176F70:
 /* 80177020 00172CC0  39 08 7E 70 */	addi r8, r8, "_BLACK"@l
 /* 80177024 00172CC4  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80177028 00172CC8  7D 89 03 A6 */	mtctr r12
-/* 8017702C 00172CCC  4E 80 04 21 */	bctrl 
+/* 8017702C 00172CCC  4E 80 04 21 */	bctrl
 /* 80177030 00172CD0  80 7A 00 1C */	lwz r3, 0x1c(r26)
 /* 80177034 00172CD4  7F 64 DB 78 */	mr r4, r27
 /* 80177038 00172CD8  48 16 75 7D */	bl "Select__6ERFontFP3ERC"
@@ -15475,13 +15475,13 @@ lbl_80176F70:
 /* 80177150 00172DF0  7F 88 E3 78 */	mr r8, r28
 /* 80177154 00172DF4  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80177158 00172DF8  7D 89 03 A6 */	mtctr r12
-/* 8017715C 00172DFC  4E 80 04 21 */	bctrl 
+/* 8017715C 00172DFC  4E 80 04 21 */	bctrl
 /* 80177160 00172E00  39 61 00 A0 */	addi r11, r1, 0xa0
 /* 80177164 00172E04  48 29 82 59 */	bl "_restgpr_26"
 /* 80177168 00172E08  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 8017716C 00172E0C  7C 08 03 A6 */	mtlr r0
 /* 80177170 00172E10  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80177174 00172E14  4E 80 00 20 */	blr 
+/* 80177174 00172E14  4E 80 00 20 */	blr
 
 .global "__ct__28TheSimsNGCHealthWarningStateFv"
 "__ct__28TheSimsNGCHealthWarningStateFv":
@@ -15510,7 +15510,7 @@ lbl_80176F70:
 /* 801771D0 00172E70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801771D4 00172E74  7C 08 03 A6 */	mtlr r0
 /* 801771D8 00172E78  38 21 00 10 */	addi r1, r1, 0x10
-/* 801771DC 00172E7C  4E 80 00 20 */	blr 
+/* 801771DC 00172E7C  4E 80 00 20 */	blr
 
 .global "Startup__28TheSimsNGCHealthWarningStateFv"
 "Startup__28TheSimsNGCHealthWarningStateFv":
@@ -15715,7 +15715,7 @@ lbl_80177488:
 /* 80177498 00173138  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017749C 0017313C  7C 08 03 A6 */	mtlr r0
 /* 801774A0 00173140  38 21 00 10 */	addi r1, r1, 0x10
-/* 801774A4 00173144  4E 80 00 20 */	blr 
+/* 801774A4 00173144  4E 80 00 20 */	blr
 
 .global "Shutdown__28TheSimsNGCHealthWarningStateFv"
 "Shutdown__28TheSimsNGCHealthWarningStateFv":
@@ -15734,7 +15734,7 @@ lbl_80177488:
 /* 801774D8 00173178  38 80 00 01 */	li r4, 1
 /* 801774DC 0017317C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801774E0 00173180  7D 89 03 A6 */	mtctr r12
-/* 801774E4 00173184  4E 80 04 21 */	bctrl 
+/* 801774E4 00173184  4E 80 04 21 */	bctrl
 lbl_801774E8:
 /* 801774E8 00173188  38 00 00 00 */	li r0, 0
 /* 801774EC 0017318C  90 1F 00 1C */	stw r0, 0x1c(r31)
@@ -15743,7 +15743,7 @@ lbl_801774E8:
 /* 801774F8 00173198  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801774FC 0017319C  7C 08 03 A6 */	mtlr r0
 /* 80177500 001731A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177504 001731A4  4E 80 00 20 */	blr 
+/* 80177504 001731A4  4E 80 00 20 */	blr
 
 .global "Reset__28TheSimsNGCHealthWarningStateFv"
 "Reset__28TheSimsNGCHealthWarningStateFv":
@@ -15766,7 +15766,7 @@ lbl_801774E8:
 /* 80177548 001731E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017754C 001731EC  7C 08 03 A6 */	mtlr r0
 /* 80177550 001731F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177554 001731F4  4E 80 00 20 */	blr 
+/* 80177554 001731F4  4E 80 00 20 */	blr
 
 .global "Update__28TheSimsNGCHealthWarningStateFf"
 "Update__28TheSimsNGCHealthWarningStateFf":
@@ -15875,7 +15875,7 @@ lbl_801776C0:
 /* 801776CC 0017336C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801776D0 00173370  7C 08 03 A6 */	mtlr r0
 /* 801776D4 00173374  38 21 00 20 */	addi r1, r1, 0x20
-/* 801776D8 00173378  4E 80 00 20 */	blr 
+/* 801776D8 00173378  4E 80 00 20 */	blr
 
 .global "Draw__28TheSimsNGCHealthWarningStateFP3ERC"
 "Draw__28TheSimsNGCHealthWarningStateFP3ERC":
@@ -15927,7 +15927,7 @@ lbl_801776C0:
 /* 80177790 00173430  7F 88 E3 78 */	mr r8, r28
 /* 80177794 00173434  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80177798 00173438  7D 89 03 A6 */	mtctr r12
-/* 8017779C 0017343C  4E 80 04 21 */	bctrl 
+/* 8017779C 0017343C  4E 80 04 21 */	bctrl
 /* 801777A0 00173440  80 7A 00 1C */	lwz r3, 0x1c(r26)
 /* 801777A4 00173444  7F 64 DB 78 */	mr r4, r27
 /* 801777A8 00173448  4B F2 59 29 */	bl "WrapperDraw__7WrapperFP3ERC"
@@ -15936,7 +15936,7 @@ lbl_801776C0:
 /* 801777B4 00173454  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 801777B8 00173458  7C 08 03 A6 */	mtlr r0
 /* 801777BC 0017345C  38 21 00 50 */	addi r1, r1, 0x50
-/* 801777C0 00173460  4E 80 00 20 */	blr 
+/* 801777C0 00173460  4E 80 00 20 */	blr
 
 .global "__ct__31TheSimsWiiNunchuckRequiredStateFv"
 "__ct__31TheSimsWiiNunchuckRequiredStateFv":
@@ -15961,7 +15961,7 @@ lbl_801776C0:
 /* 8017780C 001734AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80177810 001734B0  7C 08 03 A6 */	mtlr r0
 /* 80177814 001734B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177818 001734B8  4E 80 00 20 */	blr 
+/* 80177818 001734B8  4E 80 00 20 */	blr
 
 .global "Startup__31TheSimsWiiNunchuckRequiredStateFv"
 "Startup__31TheSimsWiiNunchuckRequiredStateFv":
@@ -16031,7 +16031,7 @@ lbl_801778F8:
 /* 80177904 001735A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80177908 001735A8  7C 08 03 A6 */	mtlr r0
 /* 8017790C 001735AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177910 001735B0  4E 80 00 20 */	blr 
+/* 80177910 001735B0  4E 80 00 20 */	blr
 
 .global "Shutdown__31TheSimsWiiNunchuckRequiredStateFv"
 "Shutdown__31TheSimsWiiNunchuckRequiredStateFv":
@@ -16050,7 +16050,7 @@ lbl_801778F8:
 /* 80177944 001735E4  38 80 00 01 */	li r4, 1
 /* 80177948 001735E8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017794C 001735EC  7D 89 03 A6 */	mtctr r12
-/* 80177950 001735F0  4E 80 04 21 */	bctrl 
+/* 80177950 001735F0  4E 80 04 21 */	bctrl
 lbl_80177954:
 /* 80177954 001735F4  38 00 00 00 */	li r0, 0
 /* 80177958 001735F8  90 1F 00 1C */	stw r0, 0x1c(r31)
@@ -16059,7 +16059,7 @@ lbl_80177954:
 /* 80177964 00173604  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80177968 00173608  7C 08 03 A6 */	mtlr r0
 /* 8017796C 0017360C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177970 00173610  4E 80 00 20 */	blr 
+/* 80177970 00173610  4E 80 00 20 */	blr
 
 .global "Reset__31TheSimsWiiNunchuckRequiredStateFv"
 "Reset__31TheSimsWiiNunchuckRequiredStateFv":
@@ -16082,7 +16082,7 @@ lbl_80177954:
 /* 801779B4 00173654  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801779B8 00173658  7C 08 03 A6 */	mtlr r0
 /* 801779BC 0017365C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801779C0 00173660  4E 80 00 20 */	blr 
+/* 801779C0 00173660  4E 80 00 20 */	blr
 
 .global "Update__31TheSimsWiiNunchuckRequiredStateFf"
 "Update__31TheSimsWiiNunchuckRequiredStateFf":
@@ -16183,7 +16183,7 @@ lbl_80177B20:
 /* 80177B24 001737C4  7F A3 EB 78 */	mr r3, r29
 /* 80177B28 001737C8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80177B2C 001737CC  7D 89 03 A6 */	mtctr r12
-/* 80177B30 001737D0  4E 80 04 21 */	bctrl 
+/* 80177B30 001737D0  4E 80 04 21 */	bctrl
 /* 80177B34 001737D4  7F A3 EB 78 */	mr r3, r29
 /* 80177B38 001737D8  38 80 00 02 */	li r4, 2
 /* 80177B3C 001737DC  38 A0 00 00 */	li r5, 0
@@ -16206,7 +16206,7 @@ lbl_80177B6C:
 /* 80177B7C 0017381C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80177B80 00173820  7C 08 03 A6 */	mtlr r0
 /* 80177B84 00173824  38 21 00 30 */	addi r1, r1, 0x30
-/* 80177B88 00173828  4E 80 00 20 */	blr 
+/* 80177B88 00173828  4E 80 00 20 */	blr
 
 .global "Draw__31TheSimsWiiNunchuckRequiredStateFP3ERC"
 "Draw__31TheSimsWiiNunchuckRequiredStateFP3ERC":
@@ -16258,7 +16258,7 @@ lbl_80177B6C:
 /* 80177C40 001738E0  7F 88 E3 78 */	mr r8, r28
 /* 80177C44 001738E4  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 80177C48 001738E8  7D 89 03 A6 */	mtctr r12
-/* 80177C4C 001738EC  4E 80 04 21 */	bctrl 
+/* 80177C4C 001738EC  4E 80 04 21 */	bctrl
 /* 80177C50 001738F0  80 7A 00 1C */	lwz r3, 0x1c(r26)
 /* 80177C54 001738F4  7F 64 DB 78 */	mr r4, r27
 /* 80177C58 001738F8  4B F2 54 79 */	bl "WrapperDraw__7WrapperFP3ERC"
@@ -16267,7 +16267,7 @@ lbl_80177B6C:
 /* 80177C64 00173904  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80177C68 00173908  7C 08 03 A6 */	mtlr r0
 /* 80177C6C 0017390C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80177C70 00173910  4E 80 00 20 */	blr 
+/* 80177C70 00173910  4E 80 00 20 */	blr
 
 .global "__ct__19TheSimsEAMovieStateFv"
 "__ct__19TheSimsEAMovieStateFv":
@@ -16289,7 +16289,7 @@ lbl_80177B6C:
 /* 80177CB0 00173950  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80177CB4 00173954  7C 08 03 A6 */	mtlr r0
 /* 80177CB8 00173958  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177CBC 0017395C  4E 80 00 20 */	blr 
+/* 80177CBC 0017395C  4E 80 00 20 */	blr
 
 .global "Startup__19TheSimsEAMovieStateFv"
 "Startup__19TheSimsEAMovieStateFv":
@@ -16308,7 +16308,7 @@ lbl_80177B6C:
 /* 80177CF0 00173990  81 83 00 00 */	lwz r12, 0(r3)
 /* 80177CF4 00173994  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 80177CF8 00173998  7D 89 03 A6 */	mtctr r12
-/* 80177CFC 0017399C  4E 80 04 21 */	bctrl 
+/* 80177CFC 0017399C  4E 80 04 21 */	bctrl
 /* 80177D00 001739A0  3F E0 80 49 */	lis r31, "_globals"@ha
 /* 80177D04 001739A4  3B FF 7A 40 */	addi r31, r31, "_globals"@l
 /* 80177D08 001739A8  88 1F 03 B0 */	lbz r0, 0x3b0(r31)
@@ -16355,7 +16355,7 @@ lbl_80177D88:
 /* 80177D9C 00173A3C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80177DA0 00173A40  7C 08 03 A6 */	mtlr r0
 /* 80177DA4 00173A44  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177DA8 00173A48  4E 80 00 20 */	blr 
+/* 80177DA8 00173A48  4E 80 00 20 */	blr
 
 .global "Update__19TheSimsEAMovieStateFf"
 "Update__19TheSimsEAMovieStateFf":
@@ -16380,7 +16380,7 @@ lbl_80177DEC:
 /* 80177DF0 00173A90  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80177DF4 00173A94  7C 08 03 A6 */	mtlr r0
 /* 80177DF8 00173A98  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177DFC 00173A9C  4E 80 00 20 */	blr 
+/* 80177DFC 00173A9C  4E 80 00 20 */	blr
 
 .global "Draw__19TheSimsEAMovieStateFP3ERC"
 "Draw__19TheSimsEAMovieStateFP3ERC":
@@ -16416,7 +16416,7 @@ lbl_80177E4C:
 /* 80177E64 00173B04  38 80 00 01 */	li r4, 1
 /* 80177E68 00173B08  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80177E6C 00173B0C  7D 89 03 A6 */	mtctr r12
-/* 80177E70 00173B10  4E 80 04 21 */	bctrl 
+/* 80177E70 00173B10  4E 80 04 21 */	bctrl
 lbl_80177E74:
 /* 80177E74 00173B14  3F E0 80 49 */	lis r31, "_gd"@ha
 /* 80177E78 00173B18  38 00 00 00 */	li r0, 0
@@ -16431,7 +16431,7 @@ lbl_80177E74:
 /* 80177E9C 00173B3C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80177EA0 00173B40  7C 08 03 A6 */	mtlr r0
 /* 80177EA4 00173B44  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177EA8 00173B48  4E 80 00 20 */	blr 
+/* 80177EA8 00173B48  4E 80 00 20 */	blr
 
 .global "__ct__24TheSimsMemCardCheckStateFv"
 "__ct__24TheSimsMemCardCheckStateFv":
@@ -16451,7 +16451,7 @@ lbl_80177E74:
 /* 80177EE0 00173B80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80177EE4 00173B84  7C 08 03 A6 */	mtlr r0
 /* 80177EE8 00173B88  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177EEC 00173B8C  4E 80 00 20 */	blr 
+/* 80177EEC 00173B8C  4E 80 00 20 */	blr
 
 .global "Startup__24TheSimsMemCardCheckStateFv"
 "Startup__24TheSimsMemCardCheckStateFv":
@@ -16485,7 +16485,7 @@ lbl_80177E74:
 /* 80177F5C 00173BFC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80177F60 00173C00  7C 08 03 A6 */	mtlr r0
 /* 80177F64 00173C04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80177F68 00173C08  4E 80 00 20 */	blr 
+/* 80177F68 00173C08  4E 80 00 20 */	blr
 
 .global "Shutdown__24TheSimsMemCardCheckStateFv"
 "Shutdown__24TheSimsMemCardCheckStateFv":
@@ -16540,7 +16540,7 @@ lbl_80177E74:
 /* 80178014 00173CB4  39 08 7E 70 */	addi r8, r8, "_BLACK"@l
 /* 80178018 00173CB8  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 8017801C 00173CBC  7D 89 03 A6 */	mtctr r12
-/* 80178020 00173CC0  4E 80 04 21 */	bctrl 
+/* 80178020 00173CC0  4E 80 04 21 */	bctrl
 /* 80178024 00173CC4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80178028 00173CC8  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 8017802C 00173CCC  83 C1 00 38 */	lwz r30, 0x38(r1)
@@ -16548,7 +16548,7 @@ lbl_80177E74:
 /* 80178034 00173CD4  83 81 00 30 */	lwz r28, 0x30(r1)
 /* 80178038 00173CD8  7C 08 03 A6 */	mtlr r0
 /* 8017803C 00173CDC  38 21 00 40 */	addi r1, r1, 0x40
-/* 80178040 00173CE0  4E 80 00 20 */	blr 
+/* 80178040 00173CE0  4E 80 00 20 */	blr
 
 .global "__ct__21TheSimsMaxisLogoStateFv"
 "__ct__21TheSimsMaxisLogoStateFv":
@@ -16573,7 +16573,7 @@ lbl_80177E74:
 /* 8017808C 00173D2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80178090 00173D30  7C 08 03 A6 */	mtlr r0
 /* 80178094 00173D34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178098 00173D38  4E 80 00 20 */	blr 
+/* 80178098 00173D38  4E 80 00 20 */	blr
 
 .global "Startup__21TheSimsMaxisLogoStateFv"
 "Startup__21TheSimsMaxisLogoStateFv":
@@ -16640,7 +16640,7 @@ lbl_80178148:
 /* 8017817C 00173E1C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80178180 00173E20  7C 08 03 A6 */	mtlr r0
 /* 80178184 00173E24  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178188 00173E28  4E 80 00 20 */	blr 
+/* 80178188 00173E28  4E 80 00 20 */	blr
 
 .global "Shutdown__21TheSimsMaxisLogoStateFv"
 "Shutdown__21TheSimsMaxisLogoStateFv":
@@ -16659,7 +16659,7 @@ lbl_80178148:
 /* 801781BC 00173E5C  38 80 00 01 */	li r4, 1
 /* 801781C0 00173E60  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801781C4 00173E64  7D 89 03 A6 */	mtctr r12
-/* 801781C8 00173E68  4E 80 04 21 */	bctrl 
+/* 801781C8 00173E68  4E 80 04 21 */	bctrl
 lbl_801781CC:
 /* 801781CC 00173E6C  38 00 00 00 */	li r0, 0
 /* 801781D0 00173E70  90 1F 00 1C */	stw r0, 0x1c(r31)
@@ -16668,7 +16668,7 @@ lbl_801781CC:
 /* 801781DC 00173E7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801781E0 00173E80  7C 08 03 A6 */	mtlr r0
 /* 801781E4 00173E84  38 21 00 10 */	addi r1, r1, 0x10
-/* 801781E8 00173E88  4E 80 00 20 */	blr 
+/* 801781E8 00173E88  4E 80 00 20 */	blr
 
 .global "Reset__21TheSimsMaxisLogoStateFv"
 "Reset__21TheSimsMaxisLogoStateFv":
@@ -16723,7 +16723,7 @@ lbl_801781CC:
 /* 801782AC 00173F4C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801782B0 00173F50  7C 08 03 A6 */	mtlr r0
 /* 801782B4 00173F54  38 21 00 20 */	addi r1, r1, 0x20
-/* 801782B8 00173F58  4E 80 00 20 */	blr 
+/* 801782B8 00173F58  4E 80 00 20 */	blr
 
 .global "Update__21TheSimsMaxisLogoStateFf"
 "Update__21TheSimsMaxisLogoStateFf":
@@ -16792,7 +16792,7 @@ lbl_80178394:
 /* 801783A0 00174040  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801783A4 00174044  7C 08 03 A6 */	mtlr r0
 /* 801783A8 00174048  38 21 00 20 */	addi r1, r1, 0x20
-/* 801783AC 0017404C  4E 80 00 20 */	blr 
+/* 801783AC 0017404C  4E 80 00 20 */	blr
 
 .global "Draw__21TheSimsMaxisLogoStateFP3ERC"
 "Draw__21TheSimsMaxisLogoStateFP3ERC":
@@ -16844,7 +16844,7 @@ lbl_80178394:
 /* 80178464 00174104  7F 88 E3 78 */	mr r8, r28
 /* 80178468 00174108  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
 /* 8017846C 0017410C  7D 89 03 A6 */	mtctr r12
-/* 80178470 00174110  4E 80 04 21 */	bctrl 
+/* 80178470 00174110  4E 80 04 21 */	bctrl
 /* 80178474 00174114  80 7A 00 1C */	lwz r3, 0x1c(r26)
 /* 80178478 00174118  7F 64 DB 78 */	mr r4, r27
 /* 8017847C 0017411C  4B F2 4C 55 */	bl "WrapperDraw__7WrapperFP3ERC"
@@ -16853,7 +16853,7 @@ lbl_80178394:
 /* 80178488 00174128  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8017848C 0017412C  7C 08 03 A6 */	mtlr r0
 /* 80178490 00174130  38 21 00 50 */	addi r1, r1, 0x50
-/* 80178494 00174134  4E 80 00 20 */	blr 
+/* 80178494 00174134  4E 80 00 20 */	blr
 
 .global "__ct__26TheSimsSimsIntroMovieStateFv"
 "__ct__26TheSimsSimsIntroMovieStateFv":
@@ -16875,7 +16875,7 @@ lbl_80178394:
 /* 801784D4 00174174  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801784D8 00174178  7C 08 03 A6 */	mtlr r0
 /* 801784DC 0017417C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801784E0 00174180  4E 80 00 20 */	blr 
+/* 801784E0 00174180  4E 80 00 20 */	blr
 
 .global "Startup__26TheSimsSimsIntroMovieStateFv"
 "Startup__26TheSimsSimsIntroMovieStateFv":
@@ -16901,7 +16901,7 @@ lbl_80178394:
 /* 80178530 001741D0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80178534 001741D4  7C 08 03 A6 */	mtlr r0
 /* 80178538 001741D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017853C 001741DC  4E 80 00 20 */	blr 
+/* 8017853C 001741DC  4E 80 00 20 */	blr
 
 .global "Shutdown__26TheSimsSimsIntroMovieStateFv"
 "Shutdown__26TheSimsSimsIntroMovieStateFv":
@@ -16934,7 +16934,7 @@ lbl_80178588:
 /* 801785A4 00174244  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801785A8 00174248  7C 08 03 A6 */	mtlr r0
 /* 801785AC 0017424C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801785B0 00174250  4E 80 00 20 */	blr 
+/* 801785B0 00174250  4E 80 00 20 */	blr
 
 .global "Update__26TheSimsSimsIntroMovieStateFf"
 "Update__26TheSimsSimsIntroMovieStateFf":
@@ -16973,21 +16973,21 @@ lbl_8017860C:
 /* 80178630 001742D0  85 83 02 70 */	lwzu r12, 0x270(r3)
 /* 80178634 001742D4  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 80178638 001742D8  7D 89 03 A6 */	mtctr r12
-/* 8017863C 001742DC  4E 80 04 21 */	bctrl 
+/* 8017863C 001742DC  4E 80 04 21 */	bctrl
 lbl_80178640:
 /* 80178640 001742E0  3F E0 80 49 */	lis r31, "_app"@ha
 /* 80178644 001742E4  38 7F 02 70 */	addi r3, r31, "_app"@l
 /* 80178648 001742E8  81 83 00 00 */	lwz r12, "m_restoreVisualTab__9NV5Target"@l(r3)
 /* 8017864C 001742EC  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 80178650 001742F0  7D 89 03 A6 */	mtctr r12
-/* 80178654 001742F4  4E 80 04 21 */	bctrl 
+/* 80178654 001742F4  4E 80 04 21 */	bctrl
 /* 80178658 001742F8  2C 03 00 00 */	cmpwi r3, 0
 /* 8017865C 001742FC  40 82 00 30 */	bne lbl_8017868C
 /* 80178660 00174300  38 7F 02 70 */	addi r3, r31, 0x270
 /* 80178664 00174304  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178668 00174308  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8017866C 0017430C  7D 89 03 A6 */	mtctr r12
-/* 80178670 00174310  4E 80 04 21 */	bctrl 
+/* 80178670 00174310  4E 80 04 21 */	bctrl
 /* 80178674 00174314  2C 03 00 00 */	cmpwi r3, 0
 /* 80178678 00174318  40 82 00 14 */	bne lbl_8017868C
 /* 8017867C 0017431C  C0 22 89 30 */	lfs f1, lbl_805D9B50-_SDA2_BASE_(r2)
@@ -17000,7 +17000,7 @@ lbl_8017868C:
 /* 80178694 00174334  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80178698 00174338  7C 08 03 A6 */	mtlr r0
 /* 8017869C 0017433C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801786A0 00174340  4E 80 00 20 */	blr 
+/* 801786A0 00174340  4E 80 00 20 */	blr
 
 .global "Reset__25TheSimsEnterMainMenuStateFv"
 "Reset__25TheSimsEnterMainMenuStateFv":
@@ -17035,7 +17035,7 @@ lbl_801786D4:
 /* 80178710 001743B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80178714 001743B4  7C 08 03 A6 */	mtlr r0
 /* 80178718 001743B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017871C 001743BC  4E 80 00 20 */	blr 
+/* 8017871C 001743BC  4E 80 00 20 */	blr
 
 .global "Shutdown__25TheSimsEnterMainMenuStateFv"
 "Shutdown__25TheSimsEnterMainMenuStateFv":
@@ -17054,7 +17054,7 @@ lbl_801786D4:
 /* 80178744 001743E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80178748 001743E8  7C 08 03 A6 */	mtlr r0
 /* 8017874C 001743EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178750 001743F0  4E 80 00 20 */	blr 
+/* 80178750 001743F0  4E 80 00 20 */	blr
 
 .global "BGCall_SetDefaults__Fv"
 "BGCall_SetDefaults__Fv":
@@ -17069,11 +17069,11 @@ lbl_801786D4:
 /* 80178774 00174414  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178778 00174418  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 8017877C 0017441C  7D 89 03 A6 */	mtctr r12
-/* 80178780 00174420  4E 80 04 21 */	bctrl 
+/* 80178780 00174420  4E 80 04 21 */	bctrl
 /* 80178784 00174424  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80178788 00174428  7C 08 03 A6 */	mtlr r0
 /* 8017878C 0017442C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178790 00174430  4E 80 00 20 */	blr 
+/* 80178790 00174430  4E 80 00 20 */	blr
 
 .global "__ct__25TheSimsEnterMainMenuStateFv"
 "__ct__25TheSimsEnterMainMenuStateFv":
@@ -17096,7 +17096,7 @@ lbl_801786D4:
 /* 801787D4 00174474  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801787D8 00174478  7C 08 03 A6 */	mtlr r0
 /* 801787DC 0017447C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801787E0 00174480  4E 80 00 20 */	blr 
+/* 801787E0 00174480  4E 80 00 20 */	blr
 
 .global "Startup__25TheSimsEnterMainMenuStateFv"
 "Startup__25TheSimsEnterMainMenuStateFv":
@@ -17111,7 +17111,7 @@ lbl_801786D4:
 /* 80178804 001744A4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178808 001744A8  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 8017880C 001744AC  7D 89 03 A6 */	mtctr r12
-/* 80178810 001744B0  4E 80 04 21 */	bctrl 
+/* 80178810 001744B0  4E 80 04 21 */	bctrl
 /* 80178814 001744B4  3C 60 80 49 */	lis r3, "_globals"@ha
 /* 80178818 001744B8  38 63 7A 40 */	addi r3, r3, "_globals"@l
 /* 8017881C 001744BC  88 03 03 A4 */	lbz r0, 0x3a4(r3)
@@ -17155,7 +17155,7 @@ lbl_8017889C:
 /* 801788A4 00174544  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801788A8 00174548  7C 08 03 A6 */	mtlr r0
 /* 801788AC 0017454C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801788B0 00174550  4E 80 00 20 */	blr 
+/* 801788B0 00174550  4E 80 00 20 */	blr
 
 .global "Update__25TheSimsEnterMainMenuStateFf"
 "Update__25TheSimsEnterMainMenuStateFf":
@@ -17182,7 +17182,7 @@ lbl_8017889C:
 /* 80178904 001745A4  38 63 CF 94 */	addi r3, r3, lbl_8042CF94@l
 /* 80178908 001745A8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8017890C 001745AC  7C 69 03 A6 */	mtctr r3
-/* 80178910 001745B0  4E 80 04 20 */	bctr 
+/* 80178910 001745B0  4E 80 04 20 */	bctr
 /* 80178914 001745B4  7F A3 EB 78 */	mr r3, r29
 /* 80178918 001745B8  38 80 00 01 */	li r4, 1
 /* 8017891C 001745BC  4B FF 26 E5 */	bl "NextStage__17StateMachineStateFi"
@@ -17192,70 +17192,70 @@ lbl_8017889C:
 /* 8017892C 001745CC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178930 001745D0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178934 001745D4  7D 89 03 A6 */	mtctr r12
-/* 80178938 001745D8  4E 80 04 21 */	bctrl 
+/* 80178938 001745D8  4E 80 04 21 */	bctrl
 /* 8017893C 001745DC  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 80178940 001745E0  3C 80 37 4C */	lis r4, 0x374BDCEA@ha
 /* 80178944 001745E4  38 84 DC EA */	addi r4, r4, 0x374BDCEA@l
 /* 80178948 001745E8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017894C 001745EC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178950 001745F0  7D 89 03 A6 */	mtctr r12
-/* 80178954 001745F4  4E 80 04 21 */	bctrl 
+/* 80178954 001745F4  4E 80 04 21 */	bctrl
 /* 80178958 001745F8  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 8017895C 001745FC  3C 80 04 8B */	lis r4, 0x048AE94F@ha
 /* 80178960 00174600  38 84 E9 4F */	addi r4, r4, 0x048AE94F@l
 /* 80178964 00174604  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178968 00174608  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8017896C 0017460C  7D 89 03 A6 */	mtctr r12
-/* 80178970 00174610  4E 80 04 21 */	bctrl 
+/* 80178970 00174610  4E 80 04 21 */	bctrl
 /* 80178974 00174614  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 80178978 00174618  3C 80 CB 30 */	lis r4, 0xCB2FA7CD@ha
 /* 8017897C 0017461C  38 84 A7 CD */	addi r4, r4, 0xCB2FA7CD@l
 /* 80178980 00174620  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178984 00174624  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178988 00174628  7D 89 03 A6 */	mtctr r12
-/* 8017898C 0017462C  4E 80 04 21 */	bctrl 
+/* 8017898C 0017462C  4E 80 04 21 */	bctrl
 /* 80178990 00174630  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 80178994 00174634  3C 80 5D 6A */	lis r4, 0x5D6996BB@ha
 /* 80178998 00174638  38 84 96 BB */	addi r4, r4, 0x5D6996BB@l
 /* 8017899C 0017463C  81 83 00 00 */	lwz r12, 0(r3)
 /* 801789A0 00174640  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801789A4 00174644  7D 89 03 A6 */	mtctr r12
-/* 801789A8 00174648  4E 80 04 21 */	bctrl 
+/* 801789A8 00174648  4E 80 04 21 */	bctrl
 /* 801789AC 0017464C  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 801789B0 00174650  3C 80 2A B0 */	lis r4, 0x2AAFF358@ha
 /* 801789B4 00174654  38 84 F3 58 */	addi r4, r4, 0x2AAFF358@l
 /* 801789B8 00174658  81 83 00 00 */	lwz r12, 0(r3)
 /* 801789BC 0017465C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801789C0 00174660  7D 89 03 A6 */	mtctr r12
-/* 801789C4 00174664  4E 80 04 21 */	bctrl 
+/* 801789C4 00174664  4E 80 04 21 */	bctrl
 /* 801789C8 00174668  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 801789CC 0017466C  3C 80 21 2F */	lis r4, 0x212EDD24@ha
 /* 801789D0 00174670  38 84 DD 24 */	addi r4, r4, 0x212EDD24@l
 /* 801789D4 00174674  81 83 00 00 */	lwz r12, 0(r3)
 /* 801789D8 00174678  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801789DC 0017467C  7D 89 03 A6 */	mtctr r12
-/* 801789E0 00174680  4E 80 04 21 */	bctrl 
+/* 801789E0 00174680  4E 80 04 21 */	bctrl
 /* 801789E4 00174684  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 801789E8 00174688  3C 80 AE 81 */	lis r4, 0xAE80F928@ha
 /* 801789EC 0017468C  38 84 F9 28 */	addi r4, r4, 0xAE80F928@l
 /* 801789F0 00174690  81 83 00 00 */	lwz r12, 0(r3)
 /* 801789F4 00174694  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801789F8 00174698  7D 89 03 A6 */	mtctr r12
-/* 801789FC 0017469C  4E 80 04 21 */	bctrl 
+/* 801789FC 0017469C  4E 80 04 21 */	bctrl
 /* 80178A00 001746A0  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 80178A04 001746A4  3C 80 CD 35 */	lis r4, 0xCD34ABDC@ha
 /* 80178A08 001746A8  38 84 AB DC */	addi r4, r4, 0xCD34ABDC@l
 /* 80178A0C 001746AC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178A10 001746B0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178A14 001746B4  7D 89 03 A6 */	mtctr r12
-/* 80178A18 001746B8  4E 80 04 21 */	bctrl 
+/* 80178A18 001746B8  4E 80 04 21 */	bctrl
 /* 80178A1C 001746BC  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
 /* 80178A20 001746C0  3C 80 76 D8 */	lis r4, 0x76D81C2A@ha
 /* 80178A24 001746C4  38 84 1C 2A */	addi r4, r4, 0x76D81C2A@l
 /* 80178A28 001746C8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80178A2C 001746CC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178A30 001746D0  7D 89 03 A6 */	mtctr r12
-/* 80178A34 001746D4  4E 80 04 21 */	bctrl 
+/* 80178A34 001746D4  4E 80 04 21 */	bctrl
 /* 80178A38 001746D8  3F 80 80 51 */	lis r28, "_datasetman"@ha
 /* 80178A3C 001746DC  3F 60 50 13 */	lis r27, 0x5012E600@ha
 /* 80178A40 001746E0  38 7C 37 A4 */	addi r3, r28, "_datasetman"@l
@@ -17425,7 +17425,7 @@ lbl_80178C9C:
 /* 80178CA4 00174944  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80178CA8 00174948  7C 08 03 A6 */	mtlr r0
 /* 80178CAC 0017494C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80178CB0 00174950  4E 80 00 20 */	blr 
+/* 80178CB0 00174950  4E 80 00 20 */	blr
 
 .global "Draw__25TheSimsEnterMainMenuStateFP3ERC"
 "Draw__25TheSimsEnterMainMenuStateFP3ERC":
@@ -17454,7 +17454,7 @@ lbl_80178C9C:
 /* 80178CF4 00174994  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80178CF8 00174998  7C 08 03 A6 */	mtlr r0
 /* 80178CFC 0017499C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178D00 001749A0  4E 80 00 20 */	blr 
+/* 80178D00 001749A0  4E 80 00 20 */	blr
 
 .global "Shutdown__20TheSimsMainMenuStateFv"
 "Shutdown__20TheSimsMainMenuStateFv":
@@ -17476,7 +17476,7 @@ lbl_80178C9C:
 /* 80178D40 001749E0  38 80 00 01 */	li r4, 1
 /* 80178D44 001749E4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80178D48 001749E8  7D 89 03 A6 */	mtctr r12
-/* 80178D4C 001749EC  4E 80 04 21 */	bctrl 
+/* 80178D4C 001749EC  4E 80 04 21 */	bctrl
 lbl_80178D50:
 /* 80178D50 001749F0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80178D54 001749F4  38 00 00 00 */	li r0, 0
@@ -17485,7 +17485,7 @@ lbl_80178D50:
 /* 80178D60 00174A00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80178D64 00174A04  7C 08 03 A6 */	mtlr r0
 /* 80178D68 00174A08  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178D6C 00174A0C  4E 80 00 20 */	blr 
+/* 80178D6C 00174A0C  4E 80 00 20 */	blr
 
 .global "Reset__20TheSimsMainMenuStateFv"
 "Reset__20TheSimsMainMenuStateFv":
@@ -17569,7 +17569,7 @@ lbl_80178E88:
 /* 80178E90 00174B30  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80178E94 00174B34  7C 08 03 A6 */	mtlr r0
 /* 80178E98 00174B38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80178E9C 00174B3C  4E 80 00 20 */	blr 
+/* 80178E9C 00174B3C  4E 80 00 20 */	blr
 
 .global "Update__20TheSimsMainMenuStateFf"
 "Update__20TheSimsMainMenuStateFf":
@@ -17623,7 +17623,7 @@ lbl_80178F24:
 /* 80178F54 00174BF4  7F C3 F3 78 */	mr r3, r30
 /* 80178F58 00174BF8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80178F5C 00174BFC  7D 89 03 A6 */	mtctr r12
-/* 80178F60 00174C00  4E 80 04 21 */	bctrl 
+/* 80178F60 00174C00  4E 80 04 21 */	bctrl
 /* 80178F64 00174C04  48 00 03 64 */	b lbl_801792C8
 lbl_80178F68:
 /* 80178F68 00174C08  3C 60 80 49 */	lis r3, "_globals"@ha
@@ -17731,7 +17731,7 @@ lbl_801790B0:
 /* 801790D8 00174D78  38 80 00 01 */	li r4, 1
 /* 801790DC 00174D7C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801790E0 00174D80  7D 89 03 A6 */	mtctr r12
-/* 801790E4 00174D84  4E 80 04 21 */	bctrl 
+/* 801790E4 00174D84  4E 80 04 21 */	bctrl
 lbl_801790E8:
 /* 801790E8 00174D88  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 801790EC 00174D8C  38 00 00 00 */	li r0, 0
@@ -17755,7 +17755,7 @@ lbl_80179108:
 /* 80179130 00174DD0  38 80 00 01 */	li r4, 1
 /* 80179134 00174DD4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80179138 00174DD8  7D 89 03 A6 */	mtctr r12
-/* 8017913C 00174DDC  4E 80 04 21 */	bctrl 
+/* 8017913C 00174DDC  4E 80 04 21 */	bctrl
 lbl_80179140:
 /* 80179140 00174DE0  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80179144 00174DE4  38 00 00 00 */	li r0, 0
@@ -17779,7 +17779,7 @@ lbl_80179160:
 /* 80179188 00174E28  38 80 00 01 */	li r4, 1
 /* 8017918C 00174E2C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80179190 00174E30  7D 89 03 A6 */	mtctr r12
-/* 80179194 00174E34  4E 80 04 21 */	bctrl 
+/* 80179194 00174E34  4E 80 04 21 */	bctrl
 lbl_80179198:
 /* 80179198 00174E38  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8017919C 00174E3C  38 00 00 00 */	li r0, 0
@@ -17813,7 +17813,7 @@ lbl_801791DC:
 /* 80179204 00174EA4  38 80 00 01 */	li r4, 1
 /* 80179208 00174EA8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017920C 00174EAC  7D 89 03 A6 */	mtctr r12
-/* 80179210 00174EB0  4E 80 04 21 */	bctrl 
+/* 80179210 00174EB0  4E 80 04 21 */	bctrl
 lbl_80179214:
 /* 80179214 00174EB4  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80179218 00174EB8  38 00 00 00 */	li r0, 0
@@ -17870,7 +17870,7 @@ lbl_801792C8:
 /* 801792D0 00174F70  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801792D4 00174F74  7C 08 03 A6 */	mtlr r0
 /* 801792D8 00174F78  38 21 00 10 */	addi r1, r1, 0x10
-/* 801792DC 00174F7C  4E 80 00 20 */	blr 
+/* 801792DC 00174F7C  4E 80 00 20 */	blr
 
 .global "LeavingMainMenuCleanup__20TheSimsMainMenuStateCFv"
 "LeavingMainMenuCleanup__20TheSimsMainMenuStateCFv":
@@ -17886,7 +17886,7 @@ lbl_801792C8:
 /* 80179304 00174FA4  38 80 00 01 */	li r4, 1
 /* 80179308 00174FA8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017930C 00174FAC  7D 89 03 A6 */	mtctr r12
-/* 80179310 00174FB0  4E 80 04 21 */	bctrl 
+/* 80179310 00174FB0  4E 80 04 21 */	bctrl
 lbl_80179314:
 /* 80179314 00174FB4  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80179318 00174FB8  38 00 00 00 */	li r0, 0
@@ -17899,7 +17899,7 @@ lbl_80179314:
 /* 80179334 00174FD4  38 80 00 01 */	li r4, 1
 /* 80179338 00174FD8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017933C 00174FDC  7D 89 03 A6 */	mtctr r12
-/* 80179340 00174FE0  4E 80 04 21 */	bctrl 
+/* 80179340 00174FE0  4E 80 04 21 */	bctrl
 lbl_80179344:
 /* 80179344 00174FE4  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 80179348 00174FE8  38 00 00 00 */	li r0, 0
@@ -17908,7 +17908,7 @@ lbl_80179344:
 /* 80179354 00174FF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179358 00174FF8  7C 08 03 A6 */	mtlr r0
 /* 8017935C 00174FFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179360 00175000  4E 80 00 20 */	blr 
+/* 80179360 00175000  4E 80 00 20 */	blr
 
 .global "Draw__20TheSimsMainMenuStateFP3ERC"
 "Draw__20TheSimsMainMenuStateFP3ERC":
@@ -18140,7 +18140,7 @@ lbl_80179660:
 /* 80179690 00175330  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80179694 00175334  7C 08 03 A6 */	mtlr r0
 /* 80179698 00175338  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017969C 0017533C  4E 80 00 20 */	blr 
+/* 8017969C 0017533C  4E 80 00 20 */	blr
 
 .global "Shutdown__19TheSimsStateMachineFv"
 "Shutdown__19TheSimsStateMachineFv":
@@ -18157,7 +18157,7 @@ lbl_80179660:
 /* 801796C8 00175368  38 80 00 01 */	li r4, 1
 /* 801796CC 0017536C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801796D0 00175370  7D 89 03 A6 */	mtctr r12
-/* 801796D4 00175374  4E 80 04 21 */	bctrl 
+/* 801796D4 00175374  4E 80 04 21 */	bctrl
 lbl_801796D8:
 /* 801796D8 00175378  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 801796DC 0017537C  38 00 00 00 */	li r0, 0
@@ -18166,7 +18166,7 @@ lbl_801796D8:
 /* 801796E8 00175388  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801796EC 0017538C  7C 08 03 A6 */	mtlr r0
 /* 801796F0 00175390  38 21 00 10 */	addi r1, r1, 0x10
-/* 801796F4 00175394  4E 80 00 20 */	blr 
+/* 801796F4 00175394  4E 80 00 20 */	blr
 
 .global "Update__19TheSimsStateMachineFf"
 "Update__19TheSimsStateMachineFf":
@@ -18191,7 +18191,7 @@ lbl_80179734:
 /* 8017973C 001753DC  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 80179740 001753E0  7C 08 03 A6 */	mtlr r0
 /* 80179744 001753E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179748 001753E8  4E 80 00 20 */	blr 
+/* 80179748 001753E8  4E 80 00 20 */	blr
 
 .global "Draw__19TheSimsStateMachineFP3ERC"
 "Draw__19TheSimsStateMachineFP3ERC":
@@ -18230,7 +18230,7 @@ lbl_801797A8:
 /* 801797C4 00175464  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801797C8 00175468  7C 08 03 A6 */	mtlr r0
 /* 801797CC 0017546C  38 21 00 20 */	addi r1, r1, 0x20
-/* 801797D0 00175470  4E 80 00 20 */	blr 
+/* 801797D0 00175470  4E 80 00 20 */	blr
 
 .global "__ct__9DummyModeFv"
 "__ct__9DummyModeFv":
@@ -18257,7 +18257,7 @@ lbl_801797A8:
 /* 80179824 001754C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80179828 001754C8  7C 08 03 A6 */	mtlr r0
 /* 8017982C 001754CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179830 001754D0  4E 80 00 20 */	blr 
+/* 80179830 001754D0  4E 80 00 20 */	blr
 
 .global "__dt__9DummyModeFv"
 "__dt__9DummyModeFv":
@@ -18283,23 +18283,23 @@ lbl_80179870:
 /* 8017987C 0017551C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179880 00175520  7C 08 03 A6 */	mtlr r0
 /* 80179884 00175524  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179888 00175528  4E 80 00 20 */	blr 
+/* 80179888 00175528  4E 80 00 20 */	blr
 
 .global "Init__9DummyModeFi"
 "Init__9DummyModeFi":
-/* 8017988C 0017552C  4E 80 00 20 */	blr 
+/* 8017988C 0017552C  4E 80 00 20 */	blr
 
 .global "Reset__9DummyModeFi"
 "Reset__9DummyModeFi":
-/* 80179890 00175530  4E 80 00 20 */	blr 
+/* 80179890 00175530  4E 80 00 20 */	blr
 
 .global "Update__9DummyModeFv"
 "Update__9DummyModeFv":
-/* 80179894 00175534  4E 80 00 20 */	blr 
+/* 80179894 00175534  4E 80 00 20 */	blr
 
 .global "Draw__9DummyModeFP3ERC"
 "Draw__9DummyModeFP3ERC":
-/* 80179898 00175538  4E 80 00 20 */	blr 
+/* 80179898 00175538  4E 80 00 20 */	blr
 
 .global "AddRef__12EFontManagerFUiP5EFilei"
 "AddRef__12EFontManagerFUiP5EFilei":
@@ -18365,7 +18365,7 @@ lbl_80179948:
 /* 80179964 00175604  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80179968 00175608  7C 08 03 A6 */	mtlr r0
 /* 8017996C 0017560C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179970 00175610  4E 80 00 20 */	blr 
+/* 80179970 00175610  4E 80 00 20 */	blr
 
 .global "__ct__8IconItemFv"
 "__ct__8IconItemFv":
@@ -18392,18 +18392,18 @@ lbl_80179948:
 /* 801799C4 00175664  81 9F 00 00 */	lwz r12, 0(r31)
 /* 801799C8 00175668  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801799CC 0017566C  7D 89 03 A6 */	mtctr r12
-/* 801799D0 00175670  4E 80 04 21 */	bctrl 
+/* 801799D0 00175670  4E 80 04 21 */	bctrl
 /* 801799D4 00175674  81 9F 00 00 */	lwz r12, 0(r31)
 /* 801799D8 00175678  7F E3 FB 78 */	mr r3, r31
 /* 801799DC 0017567C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801799E0 00175680  7D 89 03 A6 */	mtctr r12
-/* 801799E4 00175684  4E 80 04 21 */	bctrl 
+/* 801799E4 00175684  4E 80 04 21 */	bctrl
 /* 801799E8 00175688  7F E3 FB 78 */	mr r3, r31
 /* 801799EC 0017568C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801799F0 00175690  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801799F4 00175694  7C 08 03 A6 */	mtlr r0
 /* 801799F8 00175698  38 21 00 10 */	addi r1, r1, 0x10
-/* 801799FC 0017569C  4E 80 00 20 */	blr 
+/* 801799FC 0017569C  4E 80 00 20 */	blr
 
 .global "__ct__15WrapperPaneBaseFii"
 "__ct__15WrapperPaneBaseFii":
@@ -18448,7 +18448,7 @@ lbl_80179948:
 /* 80179A98 00175738  81 9D 00 00 */	lwz r12, 0(r29)
 /* 80179A9C 0017573C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80179AA0 00175740  7D 89 03 A6 */	mtctr r12
-/* 80179AA4 00175744  4E 80 04 21 */	bctrl 
+/* 80179AA4 00175744  4E 80 04 21 */	bctrl
 /* 80179AA8 00175748  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80179AAC 0017574C  7F A3 EB 78 */	mr r3, r29
 /* 80179AB0 00175750  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -18456,12 +18456,12 @@ lbl_80179948:
 /* 80179AB8 00175758  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80179ABC 0017575C  7C 08 03 A6 */	mtlr r0
 /* 80179AC0 00175760  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179AC4 00175764  4E 80 00 20 */	blr 
+/* 80179AC4 00175764  4E 80 00 20 */	blr
 
 .global "SetDefaultFont__7WrapperFP6ERFont"
 "SetDefaultFont__7WrapperFP6ERFont":
 /* 80179AC8 00175768  90 6D B4 0C */	stw r3, "s_pDefaultFont__7Wrapper"-_SDA_BASE_(r13)
-/* 80179ACC 0017576C  4E 80 00 20 */	blr 
+/* 80179ACC 0017576C  4E 80 00 20 */	blr
 
 .global "__ct__7WrapperFPCc"
 "__ct__7WrapperFPCc":
@@ -18495,7 +18495,7 @@ lbl_80179948:
 /* 80179B3C 001757DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80179B40 001757E0  7C 08 03 A6 */	mtlr r0
 /* 80179B44 001757E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179B48 001757E8  4E 80 00 20 */	blr 
+/* 80179B48 001757E8  4E 80 00 20 */	blr
 
 .global "__dt__7WrapperFv"
 "__dt__7WrapperFv":
@@ -18529,12 +18529,12 @@ lbl_80179BA8:
 /* 80179BB4 00175854  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179BB8 00175858  7C 08 03 A6 */	mtlr r0
 /* 80179BBC 0017585C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179BC0 00175860  4E 80 00 20 */	blr 
+/* 80179BC0 00175860  4E 80 00 20 */	blr
 
 .global "SetAlpha__15WrapperPaneBaseFf"
 "SetAlpha__15WrapperPaneBaseFf":
 /* 80179BC4 00175864  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 80179BC8 00175868  4E 80 00 20 */	blr 
+/* 80179BC8 00175868  4E 80 00 20 */	blr
 
 .global "EnableDraw__15WrapperPaneBaseFv"
 "EnableDraw__15WrapperPaneBaseFv":
@@ -18594,12 +18594,12 @@ lbl_80179C54:
 /* 80179C60 00175900  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179C64 00175904  7C 08 03 A6 */	mtlr r0
 /* 80179C68 00175908  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179C6C 0017590C  4E 80 00 20 */	blr 
+/* 80179C6C 0017590C  4E 80 00 20 */	blr
 
 .global "GetPadType__15TRCStateMachineCFv"
 "GetPadType__15TRCStateMachineCFv":
 /* 80179C70 00175910  80 63 01 10 */	lwz r3, 0x110(r3)
-/* 80179C74 00175914  4E 80 00 20 */	blr 
+/* 80179C74 00175914  4E 80 00 20 */	blr
 
 .global "AdjustMusicVolume__6EAudioFf"
 "AdjustMusicVolume__6EAudioFf":
@@ -18616,7 +18616,7 @@ lbl_80179C54:
 /* 80179CA0 00175940  81 83 00 00 */	lwz r12, 0(r3)
 /* 80179CA4 00175944  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80179CA8 00175948  7D 89 03 A6 */	mtctr r12
-/* 80179CAC 0017594C  4E 80 04 21 */	bctrl 
+/* 80179CAC 0017594C  4E 80 04 21 */	bctrl
 /* 80179CB0 00175950  EC 21 F8 2A */	fadds f1, f1, f31
 /* 80179CB4 00175954  C0 02 89 38 */	lfs f0, lbl_805D9B58-_SDA2_BASE_(r2)
 /* 80179CB8 00175958  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -18635,7 +18635,7 @@ lbl_80179CE0:
 /* 80179CE4 00175984  7F C3 F3 78 */	mr r3, r30
 /* 80179CE8 00175988  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 80179CEC 0017598C  7D 89 03 A6 */	mtctr r12
-/* 80179CF0 00175990  4E 80 04 21 */	bctrl 
+/* 80179CF0 00175990  4E 80 04 21 */	bctrl
 /* 80179CF4 00175994  7F E3 FB 78 */	mr r3, r31
 /* 80179CF8 00175998  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 80179CFC 0017599C  CB E1 00 10 */	lfd f31, 0x10(r1)
@@ -18644,7 +18644,7 @@ lbl_80179CE0:
 /* 80179D08 001759A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80179D0C 001759AC  7C 08 03 A6 */	mtlr r0
 /* 80179D10 001759B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80179D14 001759B4  4E 80 00 20 */	blr 
+/* 80179D14 001759B4  4E 80 00 20 */	blr
 
 .global "GetCmdPressedAllCtrl__18EControllerManagerFUiPUiUi"
 "GetCmdPressedAllCtrl__18EControllerManagerFUiPUiUi":
@@ -18680,7 +18680,7 @@ lbl_80179CE0:
 /* 80179D8C 00175A2C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80179D90 00175A30  7C 08 03 A6 */	mtlr r0
 /* 80179D94 00175A34  38 21 00 30 */	addi r1, r1, 0x30
-/* 80179D98 00175A38  4E 80 00 20 */	blr 
+/* 80179D98 00175A38  4E 80 00 20 */	blr
 
 .global "GetCmdPressedExclAllCtrl__18EControllerManagerFUiPUiUi"
 "GetCmdPressedExclAllCtrl__18EControllerManagerFUiPUiUi":
@@ -18716,7 +18716,7 @@ lbl_80179CE0:
 /* 80179E10 00175AB0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80179E14 00175AB4  7C 08 03 A6 */	mtlr r0
 /* 80179E18 00175AB8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80179E1C 00175ABC  4E 80 00 20 */	blr 
+/* 80179E1C 00175ABC  4E 80 00 20 */	blr
 
 .global "__ct__22InLevelCreateASimStateFi"
 "__ct__22InLevelCreateASimStateFi":
@@ -18734,7 +18734,7 @@ lbl_80179CE0:
 /* 80179E4C 00175AEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179E50 00175AF0  7C 08 03 A6 */	mtlr r0
 /* 80179E54 00175AF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179E58 00175AF8  4E 80 00 20 */	blr 
+/* 80179E58 00175AF8  4E 80 00 20 */	blr
 
 .global "__dt__19CreateASimBaseStateFv"
 "__dt__19CreateASimBaseStateFv":
@@ -18760,7 +18760,7 @@ lbl_80179E98:
 /* 80179EA4 00175B44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179EA8 00175B48  7C 08 03 A6 */	mtlr r0
 /* 80179EAC 00175B4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179EB0 00175B50  4E 80 00 20 */	blr 
+/* 80179EB0 00175B50  4E 80 00 20 */	blr
 
 .global "__ct__25PreGameCreateAFamilyStateFi"
 "__ct__25PreGameCreateAFamilyStateFi":
@@ -18778,7 +18778,7 @@ lbl_80179E98:
 /* 80179EE0 00175B80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179EE4 00175B84  7C 08 03 A6 */	mtlr r0
 /* 80179EE8 00175B88  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179EEC 00175B8C  4E 80 00 20 */	blr 
+/* 80179EEC 00175B8C  4E 80 00 20 */	blr
 
 .global "__ct__17NeighborhoodStateFi"
 "__ct__17NeighborhoodStateFi":
@@ -18800,7 +18800,7 @@ lbl_80179E98:
 /* 80179F2C 00175BCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179F30 00175BD0  7C 08 03 A6 */	mtlr r0
 /* 80179F34 00175BD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179F38 00175BD8  4E 80 00 20 */	blr 
+/* 80179F38 00175BD8  4E 80 00 20 */	blr
 
 .global "__ct__17PreGameSetupStateFi"
 "__ct__17PreGameSetupStateFi":
@@ -18820,7 +18820,7 @@ lbl_80179E98:
 /* 80179F70 00175C10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179F74 00175C14  7C 08 03 A6 */	mtlr r0
 /* 80179F78 00175C18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179F7C 00175C1C  4E 80 00 20 */	blr 
+/* 80179F7C 00175C1C  4E 80 00 20 */	blr
 
 .global "__ct__12PreGameStateFi"
 "__ct__12PreGameStateFi":
@@ -18839,7 +18839,7 @@ lbl_80179E98:
 /* 80179FB0 00175C50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179FB4 00175C54  7C 08 03 A6 */	mtlr r0
 /* 80179FB8 00175C58  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179FBC 00175C5C  4E 80 00 20 */	blr 
+/* 80179FBC 00175C5C  4E 80 00 20 */	blr
 
 .global "__ct__20UrbzModeNewGameStateFi"
 "__ct__20UrbzModeNewGameStateFi":
@@ -18858,7 +18858,7 @@ lbl_80179E98:
 /* 80179FF0 00175C90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80179FF4 00175C94  7C 08 03 A6 */	mtlr r0
 /* 80179FF8 00175C98  38 21 00 10 */	addi r1, r1, 0x10
-/* 80179FFC 00175C9C  4E 80 00 20 */	blr 
+/* 80179FFC 00175C9C  4E 80 00 20 */	blr
 
 .global "__ct__17InLevelStoryStateFi"
 "__ct__17InLevelStoryStateFi":
@@ -18876,7 +18876,7 @@ lbl_80179E98:
 /* 8017A02C 00175CCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A030 00175CD0  7C 08 03 A6 */	mtlr r0
 /* 8017A034 00175CD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A038 00175CD8  4E 80 00 20 */	blr 
+/* 8017A038 00175CD8  4E 80 00 20 */	blr
 
 .global "__ct__30TheSimsStartScreenStateMachineFii"
 "__ct__30TheSimsStartScreenStateMachineFii":
@@ -18894,7 +18894,7 @@ lbl_80179E98:
 /* 8017A068 00175D08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A06C 00175D0C  7C 08 03 A6 */	mtlr r0
 /* 8017A070 00175D10  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A074 00175D14  4E 80 00 20 */	blr 
+/* 8017A074 00175D14  4E 80 00 20 */	blr
 
 .global "Reset__20UrbzModeNewGameStateFv"
 "Reset__20UrbzModeNewGameStateFv":
@@ -18918,7 +18918,7 @@ lbl_80179E98:
 /* 8017A0BC 00175D5C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017A0C0 00175D60  7C 08 03 A6 */	mtlr r0
 /* 8017A0C4 00175D64  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A0C8 00175D68  4E 80 00 20 */	blr 
+/* 8017A0C8 00175D68  4E 80 00 20 */	blr
 
 .global "Update__20UrbzModeNewGameStateFf"
 "Update__20UrbzModeNewGameStateFf":
@@ -18944,14 +18944,14 @@ lbl_80179E98:
 /* 8017A118 00175DB8  38 63 CF B0 */	addi r3, r3, lbl_8042CFB0@l
 /* 8017A11C 00175DBC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8017A120 00175DC0  7C 69 03 A6 */	mtctr r3
-/* 8017A124 00175DC4  4E 80 04 20 */	bctr 
+/* 8017A124 00175DC4  4E 80 04 20 */	bctr
 /* 8017A128 00175DC8  38 60 00 06 */	li r3, 6
 /* 8017A12C 00175DCC  4B FF A6 6D */	bl "StartingLoad__25LoadingScreenStateMachineFQ214CLoadingScreen18eLoadingScreenMode"
 /* 8017A130 00175DD0  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 8017A134 00175DD4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017A138 00175DD8  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8017A13C 00175DDC  7D 89 03 A6 */	mtctr r12
-/* 8017A140 00175DE0  4E 80 04 21 */	bctrl 
+/* 8017A140 00175DE0  4E 80 04 21 */	bctrl
 /* 8017A144 00175DE4  4B E9 F7 55 */	bl "GetSoundPlayer__Fv"
 /* 8017A148 00175DE8  38 80 00 03 */	li r4, 3
 /* 8017A14C 00175DEC  4B F9 4D 15 */	bl "SetGameMode__12cSoundPlayerFQ23snd5eMode"
@@ -19021,7 +19021,7 @@ lbl_8017A23C:
 /* 8017A240 00175EE0  7F 63 DB 78 */	mr r3, r27
 /* 8017A244 00175EE4  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8017A248 00175EE8  7D 89 03 A6 */	mtctr r12
-/* 8017A24C 00175EEC  4E 80 04 21 */	bctrl 
+/* 8017A24C 00175EEC  4E 80 04 21 */	bctrl
 /* 8017A250 00175EF0  7C 64 1B 78 */	mr r4, r3
 /* 8017A254 00175EF4  38 7D 75 34 */	addi r3, r29, 0x7534
 /* 8017A258 00175EF8  4B FF 65 4D */	bl "SetSelectedFamily__8GameDataFi"
@@ -19033,7 +19033,7 @@ lbl_8017A23C:
 /* 8017A270 00175F10  38 80 00 00 */	li r4, 0
 /* 8017A274 00175F14  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8017A278 00175F18  7D 89 03 A6 */	mtctr r12
-/* 8017A27C 00175F1C  4E 80 04 21 */	bctrl 
+/* 8017A27C 00175F1C  4E 80 04 21 */	bctrl
 /* 8017A280 00175F20  2C 03 00 00 */	cmpwi r3, 0
 /* 8017A284 00175F24  40 82 00 64 */	bne lbl_8017A2E8
 /* 8017A288 00175F28  38 00 00 00 */	li r0, 0
@@ -19072,13 +19072,13 @@ lbl_8017A2E8:
 /* 8017A308 00175FA8  7F 63 DB 78 */	mr r3, r27
 /* 8017A30C 00175FAC  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 8017A310 00175FB0  7D 89 03 A6 */	mtctr r12
-/* 8017A314 00175FB4  4E 80 04 21 */	bctrl 
+/* 8017A314 00175FB4  4E 80 04 21 */	bctrl
 /* 8017A318 00175FB8  81 9B 00 00 */	lwz r12, 0(r27)
 /* 8017A31C 00175FBC  7C 7E 1B 78 */	mr r30, r3
 /* 8017A320 00175FC0  7F 63 DB 78 */	mr r3, r27
 /* 8017A324 00175FC4  81 8C 00 C0 */	lwz r12, 0xc0(r12)
 /* 8017A328 00175FC8  7D 89 03 A6 */	mtctr r12
-/* 8017A32C 00175FCC  4E 80 04 21 */	bctrl 
+/* 8017A32C 00175FCC  4E 80 04 21 */	bctrl
 /* 8017A330 00175FD0  7C 60 00 34 */	cntlzw r0, r3
 /* 8017A334 00175FD4  3B 40 FF FF */	li r26, -1
 /* 8017A338 00175FD8  54 1D D9 7E */	srwi r29, r0, 5
@@ -19090,7 +19090,7 @@ lbl_8017A344:
 /* 8017A34C 00175FEC  7F 24 CB 78 */	mr r4, r25
 /* 8017A350 00175FF0  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8017A354 00175FF4  7D 89 03 A6 */	mtctr r12
-/* 8017A358 00175FF8  4E 80 04 21 */	bctrl 
+/* 8017A358 00175FF8  4E 80 04 21 */	bctrl
 /* 8017A35C 00175FFC  2C 03 00 00 */	cmpwi r3, 0
 /* 8017A360 00176000  41 82 00 38 */	beq lbl_8017A398
 /* 8017A364 00176004  4B F9 26 C1 */	bl "GetGUID__12FamilyMemberCFv"
@@ -19122,7 +19122,7 @@ lbl_8017A3B8:
 /* 8017A3BC 0017605C  7F 63 DB 78 */	mr r3, r27
 /* 8017A3C0 00176060  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8017A3C4 00176064  7D 89 03 A6 */	mtctr r12
-/* 8017A3C8 00176068  4E 80 04 21 */	bctrl 
+/* 8017A3C8 00176068  4E 80 04 21 */	bctrl
 /* 8017A3CC 0017606C  3F A0 80 49 */	lis r29, "_gd"@ha
 /* 8017A3D0 00176070  7C 64 1B 78 */	mr r4, r3
 /* 8017A3D4 00176074  38 7D 75 34 */	addi r3, r29, "_gd"@l
@@ -19161,7 +19161,7 @@ lbl_8017A430:
 /* 8017A450 001760F0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017A454 001760F4  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8017A458 001760F8  7D 89 03 A6 */	mtctr r12
-/* 8017A45C 001760FC  4E 80 04 21 */	bctrl 
+/* 8017A45C 001760FC  4E 80 04 21 */	bctrl
 /* 8017A460 00176100  2C 03 00 00 */	cmpwi r3, 0
 /* 8017A464 00176104  41 82 01 28 */	beq lbl_8017A58C
 lbl_8017A468:
@@ -19174,7 +19174,7 @@ lbl_8017A468:
 /* 8017A480 00176120  38 80 00 01 */	li r4, 1
 /* 8017A484 00176124  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017A488 00176128  7D 89 03 A6 */	mtctr r12
-/* 8017A48C 0017612C  4E 80 04 21 */	bctrl 
+/* 8017A48C 0017612C  4E 80 04 21 */	bctrl
 lbl_8017A490:
 /* 8017A490 00176130  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 8017A494 00176134  3C 60 80 49 */	lis r3, "_app"@ha
@@ -19250,7 +19250,7 @@ lbl_8017A58C:
 /* 8017A5A0 00176240  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8017A5A4 00176244  7C 08 03 A6 */	mtlr r0
 /* 8017A5A8 00176248  38 21 00 40 */	addi r1, r1, 0x40
-/* 8017A5AC 0017624C  4E 80 00 20 */	blr 
+/* 8017A5AC 0017624C  4E 80 00 20 */	blr
 
 .global "SetupDefaultUIData__19SerializeUIGameDataFv"
 "SetupDefaultUIData__19SerializeUIGameDataFv":
@@ -19273,7 +19273,7 @@ lbl_8017A58C:
 /* 8017A5F0 00176290  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017A5F4 00176294  7C 08 03 A6 */	mtlr r0
 /* 8017A5F8 00176298  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A5FC 0017629C  4E 80 00 20 */	blr 
+/* 8017A5FC 0017629C  4E 80 00 20 */	blr
 
 .global "IsTRCShowing__Fv"
 "IsTRCShowing__Fv":
@@ -19304,7 +19304,7 @@ lbl_8017A650:
 /* 8017A65C 001762FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A660 00176300  7C 08 03 A6 */	mtlr r0
 /* 8017A664 00176304  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A668 00176308  4E 80 00 20 */	blr 
+/* 8017A668 00176308  4E 80 00 20 */	blr
 
 .global "Startup__15TRCStateMachineFv"
 "Startup__15TRCStateMachineFv":
@@ -19400,7 +19400,7 @@ lbl_8017A79C:
 /* 8017A7B8 00176458  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017A7BC 0017645C  7C 08 03 A6 */	mtlr r0
 /* 8017A7C0 00176460  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A7C4 00176464  4E 80 00 20 */	blr 
+/* 8017A7C4 00176464  4E 80 00 20 */	blr
 
 .global "__ct__18TRCBatteryLowStateFi"
 "__ct__18TRCBatteryLowStateFi":
@@ -19419,7 +19419,7 @@ lbl_8017A79C:
 /* 8017A7F8 00176498  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A7FC 0017649C  7C 08 03 A6 */	mtlr r0
 /* 8017A800 001764A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A804 001764A4  4E 80 00 20 */	blr 
+/* 8017A804 001764A4  4E 80 00 20 */	blr
 
 .global "__ct__24TRCNunchukReconnectStateFi"
 "__ct__24TRCNunchukReconnectStateFi":
@@ -19444,7 +19444,7 @@ lbl_8017A79C:
 /* 8017A850 001764F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A854 001764F4  7C 08 03 A6 */	mtlr r0
 /* 8017A858 001764F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A85C 001764FC  4E 80 00 20 */	blr 
+/* 8017A85C 001764FC  4E 80 00 20 */	blr
 
 .global "__ct__25TRCNunchukDisconnectStateFi"
 "__ct__25TRCNunchukDisconnectStateFi":
@@ -19463,7 +19463,7 @@ lbl_8017A79C:
 /* 8017A890 00176530  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A894 00176534  7C 08 03 A6 */	mtlr r0
 /* 8017A898 00176538  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A89C 0017653C  4E 80 00 20 */	blr 
+/* 8017A89C 0017653C  4E 80 00 20 */	blr
 
 .global "__ct__22TRCCoreDisconnectStateFi"
 "__ct__22TRCCoreDisconnectStateFi":
@@ -19482,7 +19482,7 @@ lbl_8017A79C:
 /* 8017A8D0 00176570  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A8D4 00176574  7C 08 03 A6 */	mtlr r0
 /* 8017A8D8 00176578  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A8DC 0017657C  4E 80 00 20 */	blr 
+/* 8017A8DC 0017657C  4E 80 00 20 */	blr
 
 .global "__ct__13TRCDelayStateFi"
 "__ct__13TRCDelayStateFi":
@@ -19501,7 +19501,7 @@ lbl_8017A79C:
 /* 8017A910 001765B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A914 001765B4  7C 08 03 A6 */	mtlr r0
 /* 8017A918 001765B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A91C 001765BC  4E 80 00 20 */	blr 
+/* 8017A91C 001765BC  4E 80 00 20 */	blr
 
 .global "__ct__13TRCReadyStateFi"
 "__ct__13TRCReadyStateFi":
@@ -19520,7 +19520,7 @@ lbl_8017A79C:
 /* 8017A950 001765F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017A954 001765F4  7C 08 03 A6 */	mtlr r0
 /* 8017A958 001765F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A95C 001765FC  4E 80 00 20 */	blr 
+/* 8017A95C 001765FC  4E 80 00 20 */	blr
 
 .global "Shutdown__15TRCStateMachineFv"
 "Shutdown__15TRCStateMachineFv":
@@ -19536,7 +19536,7 @@ lbl_8017A79C:
 /* 8017A984 00176624  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017A988 00176628  7C 08 03 A6 */	mtlr r0
 /* 8017A98C 0017662C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A990 00176630  4E 80 00 20 */	blr 
+/* 8017A990 00176630  4E 80 00 20 */	blr
 
 .global "Reset__15TRCStateMachineFv"
 "Reset__15TRCStateMachineFv":
@@ -19558,7 +19558,7 @@ lbl_8017A79C:
 /* 8017A9D0 00176670  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017A9D4 00176674  7C 08 03 A6 */	mtlr r0
 /* 8017A9D8 00176678  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017A9DC 0017667C  4E 80 00 20 */	blr 
+/* 8017A9DC 0017667C  4E 80 00 20 */	blr
 
 .global "Update__15TRCStateMachineFf"
 "Update__15TRCStateMachineFf":
@@ -19641,7 +19641,7 @@ lbl_8017AAF8:
 /* 8017AB04 001767A4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017AB08 001767A8  7C 08 03 A6 */	mtlr r0
 /* 8017AB0C 001767AC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017AB10 001767B0  4E 80 00 20 */	blr 
+/* 8017AB10 001767B0  4E 80 00 20 */	blr
 
 .global "UpdateControllers__15TRCStateMachineFi"
 "UpdateControllers__15TRCStateMachineFi":
@@ -19824,7 +19824,7 @@ lbl_8017ADA8:
 /* 8017ADB0 00176A50  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8017ADB4 00176A54  7C 08 03 A6 */	mtlr r0
 /* 8017ADB8 00176A58  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017ADBC 00176A5C  4E 80 00 20 */	blr 
+/* 8017ADBC 00176A5C  4E 80 00 20 */	blr
 
 .global "__as__11_WiiPadInfoFRC11_WiiPadInfo"
 "__as__11_WiiPadInfoFRC11_WiiPadInfo":
@@ -19844,7 +19844,7 @@ lbl_8017ADA8:
 /* 8017ADF4 00176A94  90 C3 00 08 */	stw r6, 8(r3)
 /* 8017ADF8 00176A98  98 A3 00 0C */	stb r5, 0xc(r3)
 /* 8017ADFC 00176A9C  B0 03 00 0E */	sth r0, 0xe(r3)
-/* 8017AE00 00176AA0  4E 80 00 20 */	blr 
+/* 8017AE00 00176AA0  4E 80 00 20 */	blr
 
 .global "EnableNotification__15TRCStateMachineF12_PADDataTypel"
 "EnableNotification__15TRCStateMachineF12_PADDataTypel":
@@ -19855,7 +19855,7 @@ lbl_8017ADA8:
 /* 8017AE14 00176AB4  80 64 00 94 */	lwz r3, 0x94(r4)
 /* 8017AE18 00176AB8  7C 60 03 78 */	or r0, r3, r0
 /* 8017AE1C 00176ABC  90 04 00 94 */	stw r0, 0x94(r4)
-/* 8017AE20 00176AC0  4E 80 00 20 */	blr 
+/* 8017AE20 00176AC0  4E 80 00 20 */	blr
 
 .global "DisableNotification__15TRCStateMachineF12_PADDataTypel"
 "DisableNotification__15TRCStateMachineF12_PADDataTypel":
@@ -19866,7 +19866,7 @@ lbl_8017ADA8:
 /* 8017AE34 00176AD4  80 64 00 94 */	lwz r3, 0x94(r4)
 /* 8017AE38 00176AD8  7C 60 00 78 */	andc r0, r3, r0
 /* 8017AE3C 00176ADC  90 04 00 94 */	stw r0, 0x94(r4)
-/* 8017AE40 00176AE0  4E 80 00 20 */	blr 
+/* 8017AE40 00176AE0  4E 80 00 20 */	blr
 
 .global "GetNotificationEnabled__15TRCStateMachineF12_PADDataTypel"
 "GetNotificationEnabled__15TRCStateMachineF12_PADDataTypel":
@@ -19879,7 +19879,7 @@ lbl_8017ADA8:
 /* 8017AE5C 00176AFC  7C 03 00 D0 */	neg r0, r3
 /* 8017AE60 00176B00  7C 00 1B 78 */	or r0, r0, r3
 /* 8017AE64 00176B04  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8017AE68 00176B08  4E 80 00 20 */	blr 
+/* 8017AE68 00176B08  4E 80 00 20 */	blr
 
 .global "Monitor__15TRCStateMachineFbUi"
 "Monitor__15TRCStateMachineFbUi":
@@ -19915,7 +19915,7 @@ lbl_8017AECC:
 /* 8017AED4 00176B74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017AED8 00176B78  7C 08 03 A6 */	mtlr r0
 /* 8017AEDC 00176B7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017AEE0 00176B80  4E 80 00 20 */	blr 
+/* 8017AEE0 00176B80  4E 80 00 20 */	blr
 
 .global "Startup__22TRCCoreDisconnectStateFv"
 "Startup__22TRCCoreDisconnectStateFv":
@@ -19941,7 +19941,7 @@ lbl_8017AF18:
 /* 8017AF2C 00176BCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017AF30 00176BD0  7C 08 03 A6 */	mtlr r0
 /* 8017AF34 00176BD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017AF38 00176BD8  4E 80 00 20 */	blr 
+/* 8017AF38 00176BD8  4E 80 00 20 */	blr
 
 .global "Shutdown__22TRCCoreDisconnectStateFv"
 "Shutdown__22TRCCoreDisconnectStateFv":
@@ -19965,7 +19965,7 @@ lbl_8017AF78:
 /* 8017AF7C 00176C1C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017AF80 00176C20  7C 08 03 A6 */	mtlr r0
 /* 8017AF84 00176C24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017AF88 00176C28  4E 80 00 20 */	blr 
+/* 8017AF88 00176C28  4E 80 00 20 */	blr
 
 .global "Startup__24TRCNunchukReconnectStateFv"
 "Startup__24TRCNunchukReconnectStateFv":
@@ -19986,7 +19986,7 @@ lbl_8017AF78:
 /* 8017AFC4 00176C64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017AFC8 00176C68  7C 08 03 A6 */	mtlr r0
 /* 8017AFCC 00176C6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017AFD0 00176C70  4E 80 00 20 */	blr 
+/* 8017AFD0 00176C70  4E 80 00 20 */	blr
 
 .global "Shutdown__24TRCNunchukReconnectStateFv"
 "Shutdown__24TRCNunchukReconnectStateFv":
@@ -20009,7 +20009,7 @@ lbl_8017AF78:
 /* 8017B014 00176CB4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017B018 00176CB8  7C 08 03 A6 */	mtlr r0
 /* 8017B01C 00176CBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B020 00176CC0  4E 80 00 20 */	blr 
+/* 8017B020 00176CC0  4E 80 00 20 */	blr
 
 .global "Update__24TRCNunchukReconnectStateFf"
 "Update__24TRCNunchukReconnectStateFf":
@@ -20031,7 +20031,7 @@ lbl_8017B058:
 /* 8017B05C 00176CFC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017B060 00176D00  7C 08 03 A6 */	mtlr r0
 /* 8017B064 00176D04  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B068 00176D08  4E 80 00 20 */	blr 
+/* 8017B068 00176D08  4E 80 00 20 */	blr
 
 .global "Startup__25TRCNunchukDisconnectStateFv"
 "Startup__25TRCNunchukDisconnectStateFv":
@@ -20062,7 +20062,7 @@ lbl_8017B0C0:
 /* 8017B0C4 00176D64  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017B0C8 00176D68  7C 08 03 A6 */	mtlr r0
 /* 8017B0CC 00176D6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B0D0 00176D70  4E 80 00 20 */	blr 
+/* 8017B0D0 00176D70  4E 80 00 20 */	blr
 
 .global "Shutdown__25TRCNunchukDisconnectStateFv"
 "Shutdown__25TRCNunchukDisconnectStateFv":
@@ -20079,7 +20079,7 @@ lbl_8017B0C0:
 /* 8017B0FC 00176D9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B100 00176DA0  7C 08 03 A6 */	mtlr r0
 /* 8017B104 00176DA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B108 00176DA8  4E 80 00 20 */	blr 
+/* 8017B108 00176DA8  4E 80 00 20 */	blr
 
 .global "Update__25TRCNunchukDisconnectStateFf"
 "Update__25TRCNunchukDisconnectStateFf":
@@ -20099,7 +20099,7 @@ lbl_8017B0C0:
 /* 8017B134 00176DD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B138 00176DD8  7C 08 03 A6 */	mtlr r0
 /* 8017B13C 00176DDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B140 00176DE0  4E 80 00 20 */	blr 
+/* 8017B140 00176DE0  4E 80 00 20 */	blr
 
 .global "Shutdown__18TRCBatteryLowStateFv"
 "Shutdown__18TRCBatteryLowStateFv":
@@ -20120,7 +20120,7 @@ lbl_8017B178:
 /* 8017B178 00176E18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B17C 00176E1C  7C 08 03 A6 */	mtlr r0
 /* 8017B180 00176E20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B184 00176E24  4E 80 00 20 */	blr 
+/* 8017B184 00176E24  4E 80 00 20 */	blr
 
 .global "Update__18TRCBatteryLowStateFf"
 "Update__18TRCBatteryLowStateFf":
@@ -20142,7 +20142,7 @@ lbl_8017B1BC:
 /* 8017B1C0 00176E60  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017B1C4 00176E64  7C 08 03 A6 */	mtlr r0
 /* 8017B1C8 00176E68  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B1CC 00176E6C  4E 80 00 20 */	blr 
+/* 8017B1CC 00176E6C  4E 80 00 20 */	blr
 
 .global "__dt__14MUStateMachineFv"
 "__dt__14MUStateMachineFv":
@@ -20168,252 +20168,1087 @@ lbl_8017B20C:
 /* 8017B218 00176EB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B21C 00176EBC  7C 08 03 A6 */	mtlr r0
 /* 8017B220 00176EC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B224 00176EC4  4E 80 00 20 */	blr 
+/* 8017B224 00176EC4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042C718
 lbl_8042C718:
-	.incbin "baserom.dol", 0x428818, 0x10
+	# ROM: 0x428818
+	.asciz "EASTL vector"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042C728
 lbl_8042C728:
-	.incbin "baserom.dol", 0x428828, 0xC
+	# ROM: 0x428828
+	.asciz "Shutdown"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042C734
 lbl_8042C734:
-	.incbin "baserom.dol", 0x428834, 0xC
+	# ROM: 0x428834
+	.asciz "DrawTopmost"
+
 .global lbl_8042C740
 lbl_8042C740:
-	.incbin "baserom.dol", 0x428840, 0x20
+	# ROM: 0x428840
+	.asciz "CreateASimBaseState::Startup 1"
+	.byte 0x00
+
 .global lbl_8042C760
 lbl_8042C760:
-	.incbin "baserom.dol", 0x428860, 0x20
+	# ROM: 0x428860
+	.asciz "CreateASimBaseState::Startup 2"
+	.byte 0x00
+
 .global lbl_8042C780
 lbl_8042C780:
-	.incbin "baserom.dol", 0x428880, 0x20
+	# ROM: 0x428880
+	.asciz "CreateASimBaseState::Reset 1"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042C7A0
 lbl_8042C7A0:
-	.incbin "baserom.dol", 0x4288A0, 0x21C
+	# ROM: 0x4288A0
+	.asciz "CreateASimBaseState::Reset 2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "CAS_mode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "createacrew"
+	.asciz "createasim"
+	.byte 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 0"
+	.byte 0x00, 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 1a"
+	.byte 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 1b"
+	.byte 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 2"
+	.byte 0x00, 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 2a"
+	.byte 0x00
+	.asciz "CreateASimBaseState::Update - m_bWaitingForBG stage 3"
+	.byte 0x00, 0x00
+	.asciz "CreateASimBaseState::Update()"
+	.byte 0x00, 0x00
+	.asciz "CreateASimBaseState::Update - bDone 0"
+	.byte 0x00, 0x00
+	.asciz "CreateASimBaseState::Update - bDone 1"
+	.byte 0x00, 0x00
+	.asciz "MEM_result"
+	.byte 0x00
+	.asciz "MEM_source"
+	.byte 0x00
+
 .global lbl_8042C9BC
 lbl_8042C9BC:
-	.incbin "baserom.dol", 0x428ABC, 0x24
+	# ROM: 0x428ABC
+	.4byte 0x8016D628 ;# ptr
+	.4byte 0x8016D66C ;# ptr
+	.4byte 0x8016D6C8 ;# ptr
+	.4byte 0x8016D6FC ;# ptr
+	.4byte 0x8016D758 ;# ptr
+	.4byte 0x8016D780 ;# ptr
+	.4byte 0x8016D790 ;# ptr
+	.4byte 0x8016D7A0 ;# ptr
+	.4byte 0x00000000
+
 .global lbl_8042C9E0
 lbl_8042C9E0:
-	.incbin "baserom.dol", 0x428AE0, 0x158
+	# ROM: 0x428AE0
+	.asciz "DisableAnalogNavigation"
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 2a"
+	.byte 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 2b"
+	.byte 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 2c"
+	.byte 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 4a"
+	.byte 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 4b"
+	.byte 0x00, 0x00
+	.asciz "GAMESTATE_WARDROBE goingToCasStage 4c"
+	.byte 0x00, 0x00
+
 .global lbl_8042CB38
 lbl_8042CB38:
-	.incbin "baserom.dol", 0x428C38, 0x88
+	# ROM: 0x428C38
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0A8 ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0BC ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+	.4byte 0x8016F0A0 ;# ptr
+
 .global "g_levelShaders"
 "g_levelShaders":
-	.incbin "baserom.dol", 0x428CC0, 0x6C
+	# ROM: 0x428CC0
+	.4byte 0xCA32F60F
+	.4byte 0x3FAD74B6
+	.4byte 0x149B26BE
+	.4byte 0xE07ADEFC
+	.asciz "lot_preobj%02d"
+	.byte 0x00
+	.asciz "gameglobal"
+	.byte 0x00
+	.asciz "LiveModeInitState::Update()"
+	.asciz "StoryMode"
+	.byte 0x00, 0x00
+	.asciz "Continue"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FreePlay"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042CC2C
 lbl_8042CC2C:
-	.incbin "baserom.dol", 0x428D2C, 0xC0
+	# ROM: 0x428D2C
+	.4byte 0x80170F50 ;# ptr
+	.4byte 0x80170FA4 ;# ptr
+	.4byte 0x80170FE8 ;# ptr
+	.4byte 0x8017101C ;# ptr
+	.4byte 0x80171038 ;# ptr
+	.4byte 0x801710CC ;# ptr
+	.4byte 0x80171188 ;# ptr
+	.4byte 0x801711A8 ;# ptr
+	.4byte 0x801711D8 ;# ptr
+	.4byte 0x801711F0 ;# ptr
+	.4byte 0x80171228 ;# ptr
+	.4byte 0x80171254 ;# ptr
+	.4byte 0x80171274 ;# ptr
+	.4byte 0x80171290 ;# ptr
+	.4byte 0x801712C4 ;# ptr
+	.4byte 0x801712D8 ;# ptr
+	.4byte 0x80171354 ;# ptr
+	.4byte 0x8017144C ;# ptr
+	.4byte 0x801714C0 ;# ptr
+	.4byte 0x801714E0 ;# ptr
+	.4byte 0x801714F8 ;# ptr
+	.4byte 0x80171504 ;# ptr
+	.4byte 0x80171550 ;# ptr
+	.4byte 0x8017156C ;# ptr
+	.4byte 0x8017157C ;# ptr
+	.4byte 0x801715A0 ;# ptr
+	.4byte 0x801715C0 ;# ptr
+	.4byte 0x801715D8 ;# ptr
+	.4byte 0x801715E8 ;# ptr
+	.4byte 0x80171610 ;# ptr
+	.4byte 0x80171650 ;# ptr
+	.4byte 0x801717D4 ;# ptr
+	.4byte 0x80171824 ;# ptr
+	.asciz "hideBlackPoly"
+	.byte 0x00, 0x00
+	.asciz "ChangeHouseLoadHouse::Update()"
+	.byte 0x00
+	.asciz "ChangeHouse"
+
 .global lbl_8042CCEC
 lbl_8042CCEC:
-	.incbin "baserom.dol", 0x428DEC, 0x6C
+	# ROM: 0x428DEC
+	.4byte 0x80171F58 ;# ptr
+	.4byte 0x80171FE4 ;# ptr
+	.4byte 0x80172028 ;# ptr
+	.4byte 0x80172050 ;# ptr
+	.4byte 0x801720DC ;# ptr
+	.4byte 0x80172188 ;# ptr
+	.4byte 0x801721A8 ;# ptr
+	.4byte 0x801721E8 ;# ptr
+	.4byte 0x8017223C ;# ptr
+	.4byte 0x80172248 ;# ptr
+	.4byte 0x8017228C ;# ptr
+	.4byte 0x801722AC ;# ptr
+	.4byte 0x801722E4 ;# ptr
+	.4byte 0x801722F8 ;# ptr
+	.4byte 0x80172308 ;# ptr
+	.4byte 0x80172314 ;# ptr
+	.4byte 0x80172320 ;# ptr
+	.4byte 0x80172340 ;# ptr
+	.4byte 0x80172384 ;# ptr
+	.4byte 0x8017239C ;# ptr
+	.4byte 0x801723BC ;# ptr
+	.4byte 0x801723DC ;# ptr
+	.4byte 0x801723F4 ;# ptr
+	.4byte 0x80172438 ;# ptr
+	.4byte 0x801724C4 ;# ptr
+	.4byte 0x801725C8 ;# ptr
+	.4byte 0x80172654 ;# ptr
+
 .global lbl_8042CD58
 lbl_8042CD58:
-	.incbin "baserom.dol", 0x428E58, 0x18
+	# ROM: 0x428E58
+	.asciz "start_storymode_house"
+	.byte 0x00, 0x00
+
 .global lbl_8042CD70
 lbl_8042CD70:
-	.incbin "baserom.dol", 0x428E70, 0x20
+	# ROM: 0x428E70
+	.asciz "cam_intro_lot%02u_story_part01"
+	.byte 0x00
+
 .global lbl_8042CD90
 lbl_8042CD90:
-	.incbin "baserom.dol", 0x428E90, 0x18
+	# ROM: 0x428E90
+	.asciz "cam_transition_cas_exit"
+
 .global lbl_8042CDA8
 lbl_8042CDA8:
-	.incbin "baserom.dol", 0x428EA8, 0x2C
+	# ROM: 0x428EA8
+	.asciz "  LoadingScreenUpdateState() alpha=%3.1f\n"
+	.byte 0x00, 0x00
+
 .global lbl_8042CDD4
 lbl_8042CDD4:
-	.incbin "baserom.dol", 0x428ED4, 0x13C
+	# ROM: 0x428ED4
+	.asciz "PlayerNumber"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PreGameState::Update()"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "PreGameContinue"
+	.asciz "PreGameNew"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "InLevelCreateASimState::Reset 1"
+	.asciz "InLevelCreateASimState::Reset 2"
+	.asciz "CAS_neighborID"
+	.byte 0x00
+	.asciz "InLevelCreateASimState::Reset 3"
+	.asciz "default_player1_first_name"
+	.byte 0x00
+	.asciz "Player1FirstName"
+	.byte 0x00, 0x00, 0x00
+	.asciz "default_player1_last_name"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "Player1LastName"
+	.asciz "FamilyName"
+	.byte 0x00
+	.asciz "CAS_lotnumber"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_8042CF10
 lbl_8042CF10:
-	.incbin "baserom.dol", 0x429010, 0x10
+	# ROM: 0x429010
+	.asciz "press_start_ngc"
+
 .global lbl_8042CF20
 lbl_8042CF20:
-	.incbin "baserom.dol", 0x429020, 0xC
+	# ROM: 0x429020
+	.asciz "startscreen"
+
 .global lbl_8042CF2C
 lbl_8042CF2C:
-	.incbin "baserom.dol", 0x42902C, 0x2C
+	# ROM: 0x42902C
+	.asciz "maxis_logo_brand"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GetBtnPressedMask__11EControllerFUi" ;# ptr (0x802F2ED8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GetBtnDownMask__11EControllerFUi" ;# ptr (0x802F2A80)
+
 .global lbl_8042CF58
 lbl_8042CF58:
-	.incbin "baserom.dol", 0x429058, 0xC
+	# ROM: 0x429058
+	.asciz "mainmenualt"
+
 .global lbl_8042CF64
 lbl_8042CF64:
-	.incbin "baserom.dol", 0x429064, 0xC
+	# ROM: 0x429064
+	.asciz "mainmenu"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042CF70
 lbl_8042CF70:
-	.incbin "baserom.dol", 0x429070, 0x24
+	# ROM: 0x429070
+	.asciz "TheSimsEnterMainMenuState::Update()"
+
 .global lbl_8042CF94
 lbl_8042CF94:
-	.incbin "baserom.dol", 0x429094, 0x1C
+	# ROM: 0x429094
+	.4byte 0x80178914 ;# ptr
+	.4byte 0x80178920 ;# ptr
+	.4byte 0x80178A9C ;# ptr
+	.4byte 0x80178AD4 ;# ptr
+	.4byte 0x80178AF4 ;# ptr
+	.4byte 0x80178B5C ;# ptr
+	.4byte 0x80178B98 ;# ptr
+
 .global lbl_8042CFB0
 lbl_8042CFB0:
-	.incbin "baserom.dol", 0x4290B0, 0x2C
+	# ROM: 0x4290B0
+	.4byte 0x8017A128 ;# ptr
+	.4byte 0x8017A17C ;# ptr
+	.4byte 0x8017A190 ;# ptr
+	.4byte 0x8017A1AC ;# ptr
+	.4byte 0x8017A1BC ;# ptr
+	.4byte 0x8017A3FC ;# ptr
+	.4byte 0x8017A440 ;# ptr
+	.4byte 0x8017A4C0 ;# ptr
+	.4byte 0x8017A4D0 ;# ptr
+	.4byte 0x8017A4EC ;# ptr
+	.4byte 0x8017A57C ;# ptr
+
 .global "__vt__18TRCBatteryLowState"
 "__vt__18TRCBatteryLowState":
-	.incbin "baserom.dol", 0x4290DC, 0x24
+	# ROM: 0x4290DC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__18TRCBatteryLowStateFv" ;# ptr (0x8016B254)
+	.4byte "Startup__18TRCBatteryLowStateFv" ;# ptr (0x8017B110)
+	.4byte "Shutdown__18TRCBatteryLowStateFv" ;# ptr (0x8017B144)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__18TRCBatteryLowStateFf" ;# ptr (0x8017B188)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__25TRCNunchukDisconnectState"
 "__vt__25TRCNunchukDisconnectState":
-	.incbin "baserom.dol", 0x429100, 0x24
+	# ROM: 0x429100
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__25TRCNunchukDisconnectStateFv" ;# ptr (0x8016B2AC)
+	.4byte "Startup__25TRCNunchukDisconnectStateFv" ;# ptr (0x8017B06C)
+	.4byte "Shutdown__25TRCNunchukDisconnectStateFv" ;# ptr (0x8017B0D4)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__25TRCNunchukDisconnectStateFf" ;# ptr (0x8017B10C)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__24TRCNunchukReconnectState"
 "__vt__24TRCNunchukReconnectState":
-	.incbin "baserom.dol", 0x429124, 0x24
+	# ROM: 0x429124
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__24TRCNunchukReconnectStateFv" ;# ptr (0x8016B304)
+	.4byte "Startup__24TRCNunchukReconnectStateFv" ;# ptr (0x8017AF8C)
+	.4byte "Shutdown__24TRCNunchukReconnectStateFv" ;# ptr (0x8017AFD4)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__24TRCNunchukReconnectStateFf" ;# ptr (0x8017B024)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__22TRCCoreDisconnectState"
 "__vt__22TRCCoreDisconnectState":
-	.incbin "baserom.dol", 0x429148, 0x24
+	# ROM: 0x429148
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22TRCCoreDisconnectStateFv" ;# ptr (0x8016B35C)
+	.4byte "Startup__22TRCCoreDisconnectStateFv" ;# ptr (0x8017AEE4)
+	.4byte "Shutdown__22TRCCoreDisconnectStateFv" ;# ptr (0x8017AF3C)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__17StateMachineStateFf" ;# ptr (0x8016AE68)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__13TRCDelayState"
 "__vt__13TRCDelayState":
-	.incbin "baserom.dol", 0x42916C, 0x24
+	# ROM: 0x42916C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13TRCDelayStateFv" ;# ptr (0x8016B3B4)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__17StateMachineStateFf" ;# ptr (0x8016AE68)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__13TRCReadyState"
 "__vt__13TRCReadyState":
-	.incbin "baserom.dol", 0x429190, 0x28
+	# ROM: 0x429190
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13TRCReadyStateFv" ;# ptr (0x8016B40C)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__17StateMachineStateFf" ;# ptr (0x8016AE68)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+	.4byte 0x00000000
+
 .global "__vt__7Wrapper"
 "__vt__7Wrapper":
-	.incbin "baserom.dol", 0x4291B8, 0x20
+	# ROM: 0x4291B8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__7WrapperFv" ;# ptr (0x80179B4C)
+	.4byte "SetVariable__12UIObjectBaseFPCcPCc" ;# ptr (0x80170954)
+	.4byte "GetVariable__12UIObjectBaseFPCc" ;# ptr (0x80170958)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__14BackgroundPane"
 "__vt__14BackgroundPane":
-	.incbin "baserom.dol", 0x4291D8, 0x70
+	# ROM: 0x4291D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14BackgroundPaneFv" ;# ptr (0x80179C18)
+	.4byte "Startup__15WrapperPaneBaseFv" ;# ptr (0x8009C6D0)
+	.4byte "Shutdown__15WrapperPaneBaseFv" ;# ptr (0x8009C720)
+	.4byte "Reset__15WrapperPaneBaseFv" ;# ptr (0x8009DDC4)
+	.4byte "DrawBackground__15WrapperPaneBaseFP3ERC" ;# ptr (0x8009C86C)
+	.4byte "DrawItems__15WrapperPaneBaseFP3ERCb" ;# ptr (0x8009CABC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__20UrbzModeNewGameState"
 "__vt__20UrbzModeNewGameState":
-	.incbin "baserom.dol", 0x429248, 0x24
+	# ROM: 0x429248
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__20UrbzModeNewGameStateFv" ;# ptr (0x8016B464)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__20UrbzModeNewGameStateFv" ;# ptr (0x8017A078)
+	.4byte "Update__20UrbzModeNewGameStateFf" ;# ptr (0x8017A0CC)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__21StartScreenStartState"
 "__vt__21StartScreenStartState":
-	.incbin "baserom.dol", 0x42926C, 0x24
+	# ROM: 0x42926C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21StartScreenStartStateFv" ;# ptr (0x8016B4BC)
+	.4byte "Startup__21StartScreenStartStateFv" ;# ptr (0x80176718)
+	.4byte "Shutdown__21StartScreenStartStateFv" ;# ptr (0x801767F4)
+	.4byte "Reset__12StateMachineFv" ;# ptr (0x8016B088)
+	.4byte "Update__21StartScreenStartStateFf" ;# ptr (0x80176870)
+	.4byte "Draw__21StartScreenStartStateFP3ERC" ;# ptr (0x80176A6C)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__30TheSimsStartScreenStateMachine"
 "__vt__30TheSimsStartScreenStateMachine":
-	.incbin "baserom.dol", 0x429290, 0x24
+	# ROM: 0x429290
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__30TheSimsStartScreenStateMachineFv" ;# ptr (0x8016B514)
+	.4byte "Startup__30TheSimsStartScreenStateMachineFv" ;# ptr (0x80176510)
+	.4byte "Shutdown__30TheSimsStartScreenStateMachineFv" ;# ptr (0x80176620)
+	.4byte "Reset__30TheSimsStartScreenStateMachineFv" ;# ptr (0x8017666C)
+	.4byte "Update__30TheSimsStartScreenStateMachineFf" ;# ptr (0x801766D0)
+	.4byte "Draw__12StateMachineFP3ERC" ;# ptr (0x8016A328)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__17NeighborhoodState"
 "__vt__17NeighborhoodState":
-	.incbin "baserom.dol", 0x4292B4, 0x24
+	# ROM: 0x4292B4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17NeighborhoodStateFv" ;# ptr (0x8016B56C)
+	.4byte "Startup__17NeighborhoodStateFv" ;# ptr (0x80175C28)
+	.4byte "Shutdown__17NeighborhoodStateFv" ;# ptr (0x80175C78)
+	.4byte "Reset__17NeighborhoodStateFv" ;# ptr (0x80175CEC)
+	.4byte "Update__17NeighborhoodStateFf" ;# ptr (0x80175CF0)
+	.4byte "Draw__17NeighborhoodStateFP3ERC" ;# ptr (0x80175E38)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__17PreGameSetupState"
 "__vt__17PreGameSetupState":
-	.incbin "baserom.dol", 0x4292D8, 0x24
+	# ROM: 0x4292D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17PreGameSetupStateFv" ;# ptr (0x8016B5C4)
+	.4byte "Startup__17PreGameSetupStateFv" ;# ptr (0x801758A8)
+	.4byte "Shutdown__17PreGameSetupStateFv" ;# ptr (0x80175A7C)
+	.4byte "Reset__17PreGameSetupStateFv" ;# ptr (0x80175A80)
+	.4byte "Update__17PreGameSetupStateFf" ;# ptr (0x80175AAC)
+	.4byte "Draw__17PreGameSetupStateFP3ERC" ;# ptr (0x80175C24)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__22InLevelCreateASimState"
 "__vt__22InLevelCreateASimState":
-	.incbin "baserom.dol", 0x4292FC, 0x24
+	# ROM: 0x4292FC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22InLevelCreateASimStateFv" ;# ptr (0x8016B61C)
+	.4byte "Startup__19CreateASimBaseStateFv" ;# ptr (0x8016D3B4)
+	.4byte "Shutdown__19CreateASimBaseStateFv" ;# ptr (0x8016D420)
+	.4byte "Reset__22InLevelCreateASimStateFv" ;# ptr (0x8017575C)
+	.4byte "Update__22InLevelCreateASimStateFf" ;# ptr (0x801757E8)
+	.4byte "Draw__19CreateASimBaseStateFP3ERC" ;# ptr (0x8016DF40)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__25PreGameCreateAFamilyState"
 "__vt__25PreGameCreateAFamilyState":
-	.incbin "baserom.dol", 0x429320, 0x24
+	# ROM: 0x429320
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__25PreGameCreateAFamilyStateFv" ;# ptr (0x8016B674)
+	.4byte "Startup__19CreateASimBaseStateFv" ;# ptr (0x8016D3B4)
+	.4byte "Shutdown__19CreateASimBaseStateFv" ;# ptr (0x8016D420)
+	.4byte "Reset__25PreGameCreateAFamilyStateFv" ;# ptr (0x80175530)
+	.4byte "Update__25PreGameCreateAFamilyStateFf" ;# ptr (0x80175568)
+	.4byte "Draw__19CreateASimBaseStateFP3ERC" ;# ptr (0x8016DF40)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__12PreGameState"
 "__vt__12PreGameState":
-	.incbin "baserom.dol", 0x429344, 0x24
+	# ROM: 0x429344
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12PreGameStateFv" ;# ptr (0x8016B6CC)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__12PreGameStateFv" ;# ptr (0x80175324)
+	.4byte "Update__12PreGameStateFf" ;# ptr (0x801753A0)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__34MUStatesTransitionSaveExistingGame"
 "__vt__34MUStatesTransitionSaveExistingGame":
-	.incbin "baserom.dol", 0x429368, 0x24
+	# ROM: 0x429368
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__34MUStatesTransitionSaveExistingGameFv" ;# ptr (0x801752C0)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__34MUStatesTransitionSaveExistingGameFv" ;# ptr (0x80174DE8)
+	.4byte "Update__34MUStatesTransitionSaveExistingGameFf" ;# ptr (0x80174E20)
+	.4byte "Draw__34MUStatesTransitionSaveExistingGameFP3ERC" ;# ptr (0x80174E1C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__34MUStatesTransitionAutoSaveExisting"
 "__vt__34MUStatesTransitionAutoSaveExisting":
-	.incbin "baserom.dol", 0x42938C, 0x24
+	# ROM: 0x42938C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__34MUStatesTransitionAutoSaveExistingFv" ;# ptr (0x80175268)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__34MUStatesTransitionAutoSaveExistingFv" ;# ptr (0x80174D4C)
+	.4byte "Update__34MUStatesTransitionAutoSaveExistingFf" ;# ptr (0x80174D50)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__17MUStatesLoadHouse"
 "__vt__17MUStatesLoadHouse":
-	.incbin "baserom.dol", 0x4293B0, 0x24
+	# ROM: 0x4293B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17MUStatesLoadHouseFv" ;# ptr (0x80175210)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17MUStatesLoadHouseFv" ;# ptr (0x80174BE8)
+	.4byte "Update__17MUStatesLoadHouseFf" ;# ptr (0x80174C20)
+	.4byte "Draw__17MUStatesLoadHouseFP3ERC" ;# ptr (0x80174C1C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__23MUStatesProcessRequests"
 "__vt__23MUStatesProcessRequests":
-	.incbin "baserom.dol", 0x4293D4, 0x24
+	# ROM: 0x4293D4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__23MUStatesProcessRequestsFv" ;# ptr (0x801751B8)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__23MUStatesProcessRequestsFf" ;# ptr (0x80174AB0)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__20ChangeHouseLoadHouse"
 "__vt__20ChangeHouseLoadHouse":
-	.incbin "baserom.dol", 0x4293F8, 0x24
+	# ROM: 0x4293F8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__20ChangeHouseLoadHouseFv" ;# ptr (0x8016B724)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__20ChangeHouseLoadHouseFv" ;# ptr (0x80171E20)
+	.4byte "Update__20ChangeHouseLoadHouseFf" ;# ptr (0x80171EA8)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__22ChangeHouseUnloadHouse"
 "__vt__22ChangeHouseUnloadHouse":
-	.incbin "baserom.dol", 0x42941C, 0x24
+	# ROM: 0x42941C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22ChangeHouseUnloadHouseFv" ;# ptr (0x8016B77C)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__22ChangeHouseUnloadHouseFv" ;# ptr (0x80171CA8)
+	.4byte "Update__22ChangeHouseUnloadHouseFf" ;# ptr (0x80171DA0)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__20ChangeHouseSaveHouse"
 "__vt__20ChangeHouseSaveHouse":
-	.incbin "baserom.dol", 0x429440, 0x24
+	# ROM: 0x429440
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__20ChangeHouseSaveHouseFv" ;# ptr (0x8016B7D4)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__20ChangeHouseSaveHouseFv" ;# ptr (0x80171C08)
+	.4byte "Update__20ChangeHouseSaveHouseFf" ;# ptr (0x80171C34)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__24ChangeHouseDemolishHouse"
 "__vt__24ChangeHouseDemolishHouse":
-	.incbin "baserom.dol", 0x429464, 0x24
+	# ROM: 0x429464
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__24ChangeHouseDemolishHouseFv" ;# ptr (0x8016B82C)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__24ChangeHouseDemolishHouseFv" ;# ptr (0x80171B54)
+	.4byte "Update__24ChangeHouseDemolishHouseFf" ;# ptr (0x80171B8C)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__9ELiveMode"
 "__vt__9ELiveMode":
-	.incbin "baserom.dol", 0x429488, 0x20
+	# ROM: 0x429488
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9ELiveModeFv" ;# ptr (0x80170CCC)
+	.4byte "Init__9ELiveModeFi" ;# ptr (0x80170D34)
+	.4byte "Update__9ELiveModeFv" ;# ptr (0x801730B0)
+	.4byte "Draw__9ELiveModeFP3ERC" ;# ptr (0x801734BC)
+	.4byte "Reset__9ELiveModeFi" ;# ptr (0x80171A20)
+	.4byte "PauseAllSounds__9ELiveModeFv" ;# ptr (0x801738F0)
+
 .global "__vt__31LiveModeChangeHouseStateMachine"
 "__vt__31LiveModeChangeHouseStateMachine":
-	.incbin "baserom.dol", 0x4294A8, 0x24
+	# ROM: 0x4294A8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__31LiveModeChangeHouseStateMachineFv" ;# ptr (0x8016B884)
+	.4byte "Startup__31LiveModeChangeHouseStateMachineFv" ;# ptr (0x8017275C)
+	.4byte "Shutdown__31LiveModeChangeHouseStateMachineFv" ;# ptr (0x80172970)
+	.4byte "Reset__31LiveModeChangeHouseStateMachineFv" ;# ptr (0x801729A8)
+	.4byte "Update__31LiveModeChangeHouseStateMachineFf" ;# ptr (0x80172A0C)
+	.4byte "Draw__31LiveModeChangeHouseStateMachineFP3ERC" ;# ptr (0x80172A10)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__17LiveModeInitState"
 "__vt__17LiveModeInitState":
-	.incbin "baserom.dol", 0x4294CC, 0x24
+	# ROM: 0x4294CC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17LiveModeInitStateFv" ;# ptr (0x8016B8DC)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17LiveModeInitStateFv" ;# ptr (0x80170DD4)
+	.4byte "Reset__17LiveModeInitStateFv" ;# ptr (0x80170DF8)
+	.4byte "Update__17LiveModeInitStateFf" ;# ptr (0x80170EA4)
+	.4byte "Draw__17LiveModeInitStateFP3ERC" ;# ptr (0x801719D8)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__15TRCStateMachine"
 "__vt__15TRCStateMachine":
-	.incbin "baserom.dol", 0x4294F0, 0x24
+	# ROM: 0x4294F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15TRCStateMachineFv" ;# ptr (0x8016B934)
+	.4byte "Startup__15TRCStateMachineFv" ;# ptr (0x8017A66C)
+	.4byte "Shutdown__15TRCStateMachineFv" ;# ptr (0x8017A960)
+	.4byte "Reset__15TRCStateMachineFv" ;# ptr (0x8017A994)
+	.4byte "Update__15TRCStateMachineFf" ;# ptr (0x8017A9E0)
+	.4byte "Draw__12StateMachineFP3ERC" ;# ptr (0x8016A328)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__17InLevelStoryState"
 "__vt__17InLevelStoryState":
-	.incbin "baserom.dol", 0x429514, 0x24
+	# ROM: 0x429514
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17InLevelStoryStateFv" ;# ptr (0x8016B98C)
+	.4byte "Startup__12StateMachineFv" ;# ptr (0x8016B04C)
+	.4byte "Shutdown__16InLevelBaseStateFv" ;# ptr (0x8016E978)
+	.4byte "Reset__16InLevelBaseStateFv" ;# ptr (0x8016E8F0)
+	.4byte "Update__16InLevelBaseStateFf" ;# ptr (0x8016EA0C)
+	.4byte "Draw__16InLevelBaseStateFP3ERC" ;# ptr (0x80170444)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__16InLevelBaseState"
 "__vt__16InLevelBaseState":
-	.incbin "baserom.dol", 0x429538, 0x24
+	# ROM: 0x429538
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16InLevelBaseStateFv" ;# ptr (0x80170584)
+	.4byte "Startup__12StateMachineFv" ;# ptr (0x8016B04C)
+	.4byte "Shutdown__16InLevelBaseStateFv" ;# ptr (0x8016E978)
+	.4byte "Reset__16InLevelBaseStateFv" ;# ptr (0x8016E8F0)
+	.4byte "Update__16InLevelBaseStateFf" ;# ptr (0x8016EA0C)
+	.4byte "Draw__16InLevelBaseStateFP3ERC" ;# ptr (0x80170444)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__22IrisTransitionOutState"
 "__vt__22IrisTransitionOutState":
-	.incbin "baserom.dol", 0x42955C, 0x24
+	# ROM: 0x42955C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22IrisTransitionOutStateFv" ;# ptr (0x8016B9E4)
+	.4byte "Startup__22IrisTransitionOutStateFv" ;# ptr (0x801748D0)
+	.4byte "Shutdown__22IrisTransitionOutStateFv" ;# ptr (0x80174A08)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__22IrisTransitionOutStateFf" ;# ptr (0x80174900)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__22IrisTransitionOutStateFP3ERC" ;# ptr (0x801749B0)
+
 .global "__vt__21IrisTransitionInState"
 "__vt__21IrisTransitionInState":
-	.incbin "baserom.dol", 0x429580, 0x24
+	# ROM: 0x429580
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21IrisTransitionInStateFv" ;# ptr (0x8016BA3C)
+	.4byte "Startup__21IrisTransitionInStateFv" ;# ptr (0x801747E4)
+	.4byte "Shutdown__21IrisTransitionInStateFv" ;# ptr (0x801748CC)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__21IrisTransitionInStateFf" ;# ptr (0x80174838)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__24LoadingScreenUpdateState"
 "__vt__24LoadingScreenUpdateState":
-	.incbin "baserom.dol", 0x4295A4, 0x24
+	# ROM: 0x4295A4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__24LoadingScreenUpdateStateFv" ;# ptr (0x8016BA94)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__24LoadingScreenUpdateStateFf" ;# ptr (0x80174164)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__24LoadingScreenUpdateStateFP3ERC" ;# ptr (0x801741E0)
+
 .global "__vt__32LoadingScreenWaitingForLoadState"
 "__vt__32LoadingScreenWaitingForLoadState":
-	.incbin "baserom.dol", 0x4295C8, 0x24
+	# ROM: 0x4295C8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__32LoadingScreenWaitingForLoadStateFv" ;# ptr (0x8016BAEC)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__32LoadingScreenWaitingForLoadStateFf" ;# ptr (0x80174114)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__25LoadingScreenStateMachine"
 "__vt__25LoadingScreenStateMachine":
-	.incbin "baserom.dol", 0x4295EC, 0x24
+	# ROM: 0x4295EC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__25LoadingScreenStateMachineFv" ;# ptr (0x801743D4)
+	.4byte "Startup__25LoadingScreenStateMachineFv" ;# ptr (0x80174444)
+	.4byte "Shutdown__12StateMachineFv" ;# ptr (0x8016B050)
+	.4byte "Reset__12StateMachineFv" ;# ptr (0x8016B088)
+	.4byte "Update__25LoadingScreenStateMachineFf" ;# ptr (0x80174520)
+	.4byte "Draw__12StateMachineFP3ERC" ;# ptr (0x8016A328)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__9DummyMode"
 "__vt__9DummyMode":
-	.incbin "baserom.dol", 0x429610, 0x20
+	# ROM: 0x429610
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9DummyModeFv" ;# ptr (0x80179834)
+	.4byte "Init__9DummyModeFi" ;# ptr (0x8017988C)
+	.4byte "Update__9DummyModeFv" ;# ptr (0x80179894)
+	.4byte "Draw__9DummyModeFP3ERC" ;# ptr (0x80179898)
+	.4byte "Reset__9DummyModeFi" ;# ptr (0x80179890)
+	.4byte "PauseAllSounds__10EGameStateFv" ;# ptr (0x8016E7FC)
+
 .global "__vt__20TheSimsMainMenuState"
 "__vt__20TheSimsMainMenuState":
-	.incbin "baserom.dol", 0x429630, 0x24
+	# ROM: 0x429630
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__20TheSimsMainMenuStateFv" ;# ptr (0x80176224)
+	.4byte "Startup__20TheSimsMainMenuStateFv" ;# ptr (0x80178CBC)
+	.4byte "Shutdown__20TheSimsMainMenuStateFv" ;# ptr (0x80178D04)
+	.4byte "Reset__20TheSimsMainMenuStateFv" ;# ptr (0x80178D70)
+	.4byte "Update__20TheSimsMainMenuStateFf" ;# ptr (0x80178EA0)
+	.4byte "Draw__20TheSimsMainMenuStateFP3ERC" ;# ptr (0x80179364)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__25TheSimsEnterMainMenuState"
 "__vt__25TheSimsEnterMainMenuState":
-	.incbin "baserom.dol", 0x429654, 0x24
+	# ROM: 0x429654
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__25TheSimsEnterMainMenuStateFv" ;# ptr (0x801761CC)
+	.4byte "Startup__25TheSimsEnterMainMenuStateFv" ;# ptr (0x801787E4)
+	.4byte "Shutdown__25TheSimsEnterMainMenuStateFv" ;# ptr (0x80178720)
+	.4byte "Reset__25TheSimsEnterMainMenuStateFv" ;# ptr (0x801786A4)
+	.4byte "Update__25TheSimsEnterMainMenuStateFf" ;# ptr (0x801788B4)
+	.4byte "Draw__25TheSimsEnterMainMenuStateFP3ERC" ;# ptr (0x80178CB4)
+	.4byte "DrawTopmost__25TheSimsEnterMainMenuStateFP3ERC" ;# ptr (0x80178CB8)
+
 .global "__vt__26TheSimsSimsIntroMovieState"
 "__vt__26TheSimsSimsIntroMovieState":
-	.incbin "baserom.dol", 0x429678, 0x24
+	# ROM: 0x429678
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__26TheSimsSimsIntroMovieStateFv" ;# ptr (0x80176174)
+	.4byte "Startup__26TheSimsSimsIntroMovieStateFv" ;# ptr (0x801784E4)
+	.4byte "Shutdown__26TheSimsSimsIntroMovieStateFv" ;# ptr (0x80178540)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__26TheSimsSimsIntroMovieStateFf" ;# ptr (0x801785B4)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__21TheSimsMaxisLogoState"
 "__vt__21TheSimsMaxisLogoState":
-	.incbin "baserom.dol", 0x42969C, 0x24
+	# ROM: 0x42969C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21TheSimsMaxisLogoStateFv" ;# ptr (0x8017610C)
+	.4byte "Startup__21TheSimsMaxisLogoStateFv" ;# ptr (0x8017809C)
+	.4byte "Shutdown__21TheSimsMaxisLogoStateFv" ;# ptr (0x8017818C)
+	.4byte "Reset__21TheSimsMaxisLogoStateFv" ;# ptr (0x801781EC)
+	.4byte "Update__21TheSimsMaxisLogoStateFf" ;# ptr (0x801782BC)
+	.4byte "Draw__21TheSimsMaxisLogoStateFP3ERC" ;# ptr (0x801783B0)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__19TheSimsEAMovieState"
 "__vt__19TheSimsEAMovieState":
-	.incbin "baserom.dol", 0x4296C0, 0x24
+	# ROM: 0x4296C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__19TheSimsEAMovieStateFv" ;# ptr (0x801760B4)
+	.4byte "Startup__19TheSimsEAMovieStateFv" ;# ptr (0x80177CC0)
+	.4byte "Shutdown__19TheSimsEAMovieStateFv" ;# ptr (0x80177E04)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__19TheSimsEAMovieStateFf" ;# ptr (0x80177DAC)
+	.4byte "Draw__19TheSimsEAMovieStateFP3ERC" ;# ptr (0x80177E00)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__24TheSimsMemCardCheckState"
 "__vt__24TheSimsMemCardCheckState":
-	.incbin "baserom.dol", 0x4296E4, 0x24
+	# ROM: 0x4296E4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__24TheSimsMemCardCheckStateFv" ;# ptr (0x8017605C)
+	.4byte "Startup__24TheSimsMemCardCheckStateFv" ;# ptr (0x80177EF0)
+	.4byte "Shutdown__24TheSimsMemCardCheckStateFv" ;# ptr (0x80177F6C)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__24TheSimsMemCardCheckStateFf" ;# ptr (0x80177F70)
+	.4byte "Draw__24TheSimsMemCardCheckStateFP3ERC" ;# ptr (0x80177F74)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__31TheSimsWiiNunchuckRequiredState"
 "__vt__31TheSimsWiiNunchuckRequiredState":
-	.incbin "baserom.dol", 0x429708, 0x24
+	# ROM: 0x429708
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__31TheSimsWiiNunchuckRequiredStateFv" ;# ptr (0x80175FF4)
+	.4byte "Startup__31TheSimsWiiNunchuckRequiredStateFv" ;# ptr (0x8017781C)
+	.4byte "Shutdown__31TheSimsWiiNunchuckRequiredStateFv" ;# ptr (0x80177914)
+	.4byte "Reset__31TheSimsWiiNunchuckRequiredStateFv" ;# ptr (0x80177974)
+	.4byte "Update__31TheSimsWiiNunchuckRequiredStateFf" ;# ptr (0x801779C4)
+	.4byte "Draw__31TheSimsWiiNunchuckRequiredStateFP3ERC" ;# ptr (0x80177B8C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__28TheSimsNGCHealthWarningState"
 "__vt__28TheSimsNGCHealthWarningState":
-	.incbin "baserom.dol", 0x42972C, 0x24
+	# ROM: 0x42972C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__28TheSimsNGCHealthWarningStateFv" ;# ptr (0x80175F8C)
+	.4byte "Startup__28TheSimsNGCHealthWarningStateFv" ;# ptr (0x801771E0)
+	.4byte "Shutdown__28TheSimsNGCHealthWarningStateFv" ;# ptr (0x801774A8)
+	.4byte "Reset__28TheSimsNGCHealthWarningStateFv" ;# ptr (0x80177508)
+	.4byte "Update__28TheSimsNGCHealthWarningStateFf" ;# ptr (0x80177558)
+	.4byte "Draw__28TheSimsNGCHealthWarningStateFP3ERC" ;# ptr (0x801776DC)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__22TheSimsNGCLicenseState"
 "__vt__22TheSimsNGCLicenseState":
-	.incbin "baserom.dol", 0x429750, 0x24
+	# ROM: 0x429750
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22TheSimsNGCLicenseStateFv" ;# ptr (0x80175F34)
+	.4byte "Startup__22TheSimsNGCLicenseStateFv" ;# ptr (0x80176D78)
+	.4byte "Shutdown__22TheSimsNGCLicenseStateFv" ;# ptr (0x80176E68)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__22TheSimsNGCLicenseStateFf" ;# ptr (0x80176EAC)
+	.4byte "Draw__22TheSimsNGCLicenseStateFP3ERC" ;# ptr (0x80176F84)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+
 .global "__vt__19CreateASimBaseState"
 "__vt__19CreateASimBaseState":
-	.incbin "baserom.dol", 0x429774, 0x24
+	# ROM: 0x429774
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__19CreateASimBaseStateFv" ;# ptr (0x80179E5C)
+	.4byte "Startup__19CreateASimBaseStateFv" ;# ptr (0x8016D3B4)
+	.4byte "Shutdown__19CreateASimBaseStateFv" ;# ptr (0x8016D420)
+	.4byte "Reset__19CreateASimBaseStateFv" ;# ptr (0x8016D448)
+	.4byte "Update__19CreateASimBaseStateFf" ;# ptr (0x8016D584)
+	.4byte "Draw__19CreateASimBaseStateFP3ERC" ;# ptr (0x8016DF40)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__19TheSimsStateMachine"
 "__vt__19TheSimsStateMachine":
-	.incbin "baserom.dol", 0x429798, 0x24
+	# ROM: 0x429798
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__19TheSimsStateMachineFv" ;# ptr (0x8016BB44)
+	.4byte "Startup__19TheSimsStateMachineFv" ;# ptr (0x80179368)
+	.4byte "Shutdown__19TheSimsStateMachineFv" ;# ptr (0x801796A0)
+	.4byte "Reset__12StateMachineFv" ;# ptr (0x8016B088)
+	.4byte "Update__19TheSimsStateMachineFf" ;# ptr (0x801796F8)
+	.4byte "Draw__19TheSimsStateMachineFP3ERC" ;# ptr (0x8017974C)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__16StateMachineFlow"
 "__vt__16StateMachineFlow":
-	.incbin "baserom.dol", 0x4297BC, 0x24
+	# ROM: 0x4297BC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16StateMachineFlowFv" ;# ptr (0x80176CC8)
+	.4byte "Startup__12StateMachineFv" ;# ptr (0x8016B04C)
+	.4byte "Shutdown__12StateMachineFv" ;# ptr (0x8016B050)
+	.4byte "Reset__12StateMachineFv" ;# ptr (0x8016B088)
+	.4byte "Update__12StateMachineFf" ;# ptr (0x8016A16C)
+	.4byte "Draw__12StateMachineFP3ERC" ;# ptr (0x8016A328)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__10EGameState"
 "__vt__10EGameState":
-	.incbin "baserom.dol", 0x4297E0, 0x30
+	# ROM: 0x4297E0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10EGameStateFv" ;# ptr (0x8016E344)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "PauseAllSounds__10EGameStateFv" ;# ptr (0x8016E7FC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__12UIObjectBase"
 "__vt__12UIObjectBase":
-	.incbin "baserom.dol", 0x429810, 0x20
+	# ROM: 0x429810
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12UIObjectBaseFv" ;# ptr (0x80170868)
+	.4byte "SetVariable__12UIObjectBaseFPCcPCc" ;# ptr (0x80170954)
+	.4byte "GetVariable__12UIObjectBaseFPCc" ;# ptr (0x80170958)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__14MUStateMachine"
 "__vt__14MUStateMachine":
-	.incbin "baserom.dol", 0x429830, 0x24
+	# ROM: 0x429830
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14MUStateMachineFv" ;# ptr (0x8017B1D0)
+	.4byte "Startup__14MUStateMachineFv" ;# ptr (0x80174EE8)
+	.4byte "Shutdown__14MUStateMachineFv" ;# ptr (0x801750D0)
+	.4byte "Reset__14MUStateMachineFv" ;# ptr (0x80175104)
+	.4byte "Update__14MUStateMachineFf" ;# ptr (0x80175140)
+	.4byte "Draw__14MUStateMachineFP3ERC" ;# ptr (0x80175144)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__12StateMachine"
 "__vt__12StateMachine":
-	.incbin "baserom.dol", 0x429854, 0x24
+	# ROM: 0x429854
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12StateMachineFv" ;# ptr (0x8016B094)
+	.4byte "Startup__12StateMachineFv" ;# ptr (0x8016B04C)
+	.4byte "Shutdown__12StateMachineFv" ;# ptr (0x8016B050)
+	.4byte "Reset__12StateMachineFv" ;# ptr (0x8016B088)
+	.4byte "Update__12StateMachineFf" ;# ptr (0x8016A16C)
+	.4byte "Draw__12StateMachineFP3ERC" ;# ptr (0x8016A328)
+	.4byte "DrawTopmost__12StateMachineFP3ERC" ;# ptr (0x8016A37C)
+
 .global "__vt__17StateMachineState"
 "__vt__17StateMachineState":
-	.incbin "baserom.dol", 0x429878, 0x3C
+	# ROM: 0x429878
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17StateMachineStateFv" ;# ptr (0x8016AE98)
+	.4byte "Startup__17StateMachineStateFv" ;# ptr (0x8016AF44)
+	.4byte "Shutdown__17StateMachineStateFv" ;# ptr (0x8016AF48)
+	.4byte "Reset__17StateMachineStateFv" ;# ptr (0x8016AE48)
+	.4byte "Update__17StateMachineStateFf" ;# ptr (0x8016AE68)
+	.4byte "Draw__17StateMachineStateFP3ERC" ;# ptr (0x8016AE6C)
+	.4byte "DrawTopmost__17StateMachineStateFP3ERC" ;# ptr (0x8016AE70)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GetBtnPressedMask__11EControllerFUi" ;# ptr (0x802F2ED8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GetBtnDownMask__11EControllerFUi" ;# ptr (0x802F2A80)
+
 .global lbl_8042D7B4
 lbl_8042D7B4:
-	.incbin "baserom.dol", 0x4298B4, 0x1C
+	# ROM: 0x4298B4
+	.asciz "TRCNunchukReconnectState"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042D7D0
 lbl_8042D7D0:
-	.incbin "baserom.dol", 0x4298D0, 0x30
+	# ROM: 0x4298D0
+	.asciz "music_menu_theme_loop"
+	.byte 0x00, 0x00
+	.asciz "allocator.h"
+	.asciz "allocator.h"
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_press_start_color"
@@ -20423,37 +21258,65 @@ lbl_8042D7D0:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D4D50
 lbl_805D4D50:
-	.incbin "baserom.dol", 0x4848D0, 0x8
+	# ROM: 0x4848D0
+	.asciz "Reset"
+	.byte 0x00, 0x00
+
 .global lbl_805D4D58
 lbl_805D4D58:
-	.incbin "baserom.dol", 0x4848D8, 0x8
+	# ROM: 0x4848D8
+	.asciz "Startup"
+
 .global lbl_805D4D60
 lbl_805D4D60:
-	.incbin "baserom.dol", 0x4848E0, 0x8
+	# ROM: 0x4848E0
+	.asciz "Update"
+	.byte 0x00
+
 .global lbl_805D4D68
 lbl_805D4D68:
-	.incbin "baserom.dol", 0x4848E8, 0x8
+	# ROM: 0x4848E8
+	.asciz "Draw"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4D70
 lbl_805D4D70:
-	.incbin "baserom.dol", 0x4848F0, 0x8
+	# ROM: 0x4848F0
+	.asciz "CASNew"
+	.byte 0x00
+
 .global lbl_805D4D78
 lbl_805D4D78:
-	.incbin "baserom.dol", 0x4848F8, 0x8
+	# ROM: 0x4848F8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4D80
 lbl_805D4D80:
-	.incbin "baserom.dol", 0x484900, 0x8
+	# ROM: 0x484900
+	.asciz "Unknown"
+
 .global "FlipFlop$48399"
 "FlipFlop$48399":
-	.incbin "baserom.dol", 0x484908, 0x8
+	# ROM: 0x484908
+	.4byte 0x01000000
+	.4byte 0x00000000
+
 .global lbl_805D4D90
 lbl_805D4D90:
-	.incbin "baserom.dol", 0x484910, 0x8
+	# ROM: 0x484910
+	.asciz "AnimRef"
+
 .global lbl_805D4D98
 lbl_805D4D98:
-	.incbin "baserom.dol", 0x484918, 0x8
+	# ROM: 0x484918
+	.asciz "Restart"
+
 .global "s_batteryTimeout"
 "s_batteryTimeout":
-	.incbin "baserom.dol", 0x484920, 0x8
+	# ROM: 0x484920
+	.4byte 0x0000000F
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_pStateMachineManager__19StateMachineManager"
@@ -20505,106 +21368,179 @@ lbl_805D4D98:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805D9B50
 lbl_805D9B50:
-	.incbin "baserom.dol", 0x487E70, 0x4
+	# ROM: 0x487E70
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D9B54
 lbl_805D9B54:
-	.incbin "baserom.dol", 0x487E74, 0x4
+	# ROM: 0x487E74
+	.4byte 0x41200000
+
 .global lbl_805D9B58
 lbl_805D9B58:
-	.incbin "baserom.dol", 0x487E78, 0x4
+	# ROM: 0x487E78
+	.4byte 0x3F800000
+
 .global lbl_805D9B5C
 lbl_805D9B5C:
-	.incbin "baserom.dol", 0x487E7C, 0x4
+	# ROM: 0x487E7C
+	.4byte 0x3F000000
+
 .global lbl_805D9B60
 lbl_805D9B60:
-	.incbin "baserom.dol", 0x487E80, 0x4
+	# ROM: 0x487E80
+	.4byte 0x41900000
+
 .global lbl_805D9B64
 lbl_805D9B64:
-	.incbin "baserom.dol", 0x487E84, 0x4
+	# ROM: 0x487E84
+	.4byte 0x3D4CCCCD
+
 .global lbl_805D9B68
 lbl_805D9B68:
-	.incbin "baserom.dol", 0x487E88, 0x4
+	# ROM: 0x487E88
+	.4byte 0x3F4CCCCD
+
 .global lbl_805D9B6C
 lbl_805D9B6C:
-	.incbin "baserom.dol", 0x487E8C, 0x4
+	# ROM: 0x487E8C
+	.4byte 0x3F666666
+
 .global lbl_805D9B70
 lbl_805D9B70:
-	.incbin "baserom.dol", 0x487E90, 0x8
+	# ROM: 0x487E90
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805D9B78
 lbl_805D9B78:
-	.incbin "baserom.dol", 0x487E98, 0x8
+	# ROM: 0x487E98
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805D9B80
 lbl_805D9B80:
-	.incbin "baserom.dol", 0x487EA0, 0x4
+	# ROM: 0x487EA0
+	.4byte 0x3C23D70A
+
 .global lbl_805D9B84
 lbl_805D9B84:
-	.incbin "baserom.dol", 0x487EA4, 0x4
+	# ROM: 0x487EA4
+	.4byte 0x3BA3D70A
+
 .global lbl_805D9B88
 lbl_805D9B88:
-	.incbin "baserom.dol", 0x487EA8, 0x4
+	# ROM: 0x487EA8
+	.4byte 0x42000000
+
 .global lbl_805D9B8C
 lbl_805D9B8C:
-	.incbin "baserom.dol", 0x487EAC, 0x4
+	# ROM: 0x487EAC
+	.4byte 0x41700000
+
 .global lbl_805D9B90
 lbl_805D9B90:
-	.incbin "baserom.dol", 0x487EB0, 0x4
+	# ROM: 0x487EB0
+	.4byte 0x3F4E147B
+
 .global lbl_805D9B94
 lbl_805D9B94:
-	.incbin "baserom.dol", 0x487EB4, 0x4
+	# ROM: 0x487EB4
+	.4byte 0x3F19999A
+
 .global lbl_805D9B98
 lbl_805D9B98:
-	.incbin "baserom.dol", 0x487EB8, 0x4
+	# ROM: 0x487EB8
+	.4byte 0x3EDC28F6
+
 .global lbl_805D9B9C
 lbl_805D9B9C:
-	.incbin "baserom.dol", 0x487EBC, 0x4
+	# ROM: 0x487EBC
+	.4byte 0x41C80000
+
 .global lbl_805D9BA0
 lbl_805D9BA0:
-	.incbin "baserom.dol", 0x487EC0, 0x4
+	# ROM: 0x487EC0
+	.4byte 0x40000000
+
 .global lbl_805D9BA4
 lbl_805D9BA4:
-	.incbin "baserom.dol", 0x487EC4, 0x4
+	# ROM: 0x487EC4
+	.4byte 0x40400000
+
 .global lbl_805D9BA8
 lbl_805D9BA8:
-	.incbin "baserom.dol", 0x487EC8, 0x4
+	# ROM: 0x487EC8
+	.4byte 0x41C00000
+
 .global lbl_805D9BAC
 lbl_805D9BAC:
-	.incbin "baserom.dol", 0x487ECC, 0x4
+	# ROM: 0x487ECC
+	.4byte 0x3ECCCCCD
+
 .global lbl_805D9BB0
 lbl_805D9BB0:
-	.incbin "baserom.dol", 0x487ED0, 0x4
+	# ROM: 0x487ED0
+	.4byte 0x3FC00000
+
 .global lbl_805D9BB4
 lbl_805D9BB4:
-	.incbin "baserom.dol", 0x487ED4, 0x4
+	# ROM: 0x487ED4
+	.4byte 0x41A00000
+
 .global lbl_805D9BB8
 lbl_805D9BB8:
-	.incbin "baserom.dol", 0x487ED8, 0x4
+	# ROM: 0x487ED8
+	.4byte 0x40A00000
+
 .global lbl_805D9BBC
 lbl_805D9BBC:
-	.incbin "baserom.dol", 0x487EDC, 0x4
+	# ROM: 0x487EDC
+	.4byte 0x41400000
+
 .global lbl_805D9BC0
 lbl_805D9BC0:
-	.incbin "baserom.dol", 0x487EE0, 0x4
+	# ROM: 0x487EE0
+	.4byte 0x3F6147AE
+
 .global lbl_805D9BC4
 lbl_805D9BC4:
-	.incbin "baserom.dol", 0x487EE4, 0x4
+	# ROM: 0x487EE4
+	.4byte 0x40C00000
+
 .global lbl_805D9BC8
 lbl_805D9BC8:
-	.incbin "baserom.dol", 0x487EE8, 0x4
+	# ROM: 0x487EE8
+	.4byte 0x3E4CCCCC
+
 .global lbl_805D9BCC
 lbl_805D9BCC:
-	.incbin "baserom.dol", 0x487EEC, 0x4
+	# ROM: 0x487EEC
+	.4byte 0x3E715F15
+
 .global lbl_805D9BD0
 lbl_805D9BD0:
-	.incbin "baserom.dol", 0x487EF0, 0x4
+	# ROM: 0x487EF0
+	.4byte 0x3F2A0EA1
+
 .global lbl_805D9BD4
 lbl_805D9BD4:
-	.incbin "baserom.dol", 0x487EF4, 0x4
+	# ROM: 0x487EF4
+	.4byte 0x3EF0A3D7
+
 .global lbl_805D9BD8
 lbl_805D9BD8:
-	.incbin "baserom.dol", 0x487EF8, 0x4
+	# ROM: 0x487EF8
+	.4byte 0x3F48C88A
+
 .global lbl_805D9BDC
 lbl_805D9BDC:
-	.incbin "baserom.dol", 0x487EFC, 0x4
+	# ROM: 0x487EFC
+	.4byte 0x3EB33333
+
 .global lbl_805D9BE0
 lbl_805D9BE0:
-	.incbin "baserom.dol", 0x487F00, 0x8
+	# ROM: 0x487F00
+	.asciz "?333"
+	.byte 0x00, 0x00, 0x00
+

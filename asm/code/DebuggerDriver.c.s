@@ -7,11 +7,11 @@
 /* 80402770 003FE410  38 00 00 01 */	li r0, 1
 /* 80402774 003FE414  98 0D C9 A0 */	stb r0, "__DBEXIInputFlag"-_SDA_BASE_(r13)
 /* 80402778 003FE418  2C 0C 00 00 */	cmpwi r12, 0
-/* 8040277C 003FE41C  4D 82 00 20 */	beqlr 
+/* 8040277C 003FE41C  4D 82 00 20 */	beqlr
 /* 80402780 003FE420  38 60 00 00 */	li r3, 0
 /* 80402784 003FE424  7D 89 03 A6 */	mtctr r12
-/* 80402788 003FE428  4E 80 04 20 */	bctr 
-/* 8040278C 003FE42C  4E 80 00 20 */	blr 
+/* 80402788 003FE428  4E 80 04 20 */	bctr
+/* 8040278C 003FE42C  4E 80 00 20 */	blr
 
 .global "__DBIntrHandler"
 "__DBIntrHandler":
@@ -20,10 +20,10 @@
 /* 80402798 003FE438  90 05 30 00 */	stw r0, 0xCC003000@l(r5)
 /* 8040279C 003FE43C  81 8D C9 9C */	lwz r12, "__DBDbgCallback"-_SDA_BASE_(r13)
 /* 804027A0 003FE440  2C 0C 00 00 */	cmpwi r12, 0
-/* 804027A4 003FE444  4D 82 00 20 */	beqlr 
+/* 804027A4 003FE444  4D 82 00 20 */	beqlr
 /* 804027A8 003FE448  7D 89 03 A6 */	mtctr r12
-/* 804027AC 003FE44C  4E 80 04 20 */	bctr 
-/* 804027B0 003FE450  4E 80 00 20 */	blr 
+/* 804027AC 003FE44C  4E 80 04 20 */	bctr
+/* 804027B0 003FE450  4E 80 00 20 */	blr
 
 .global "DBInitComm"
 "DBInitComm":
@@ -49,7 +49,7 @@
 /* 80402800 003FE4A0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80402804 003FE4A4  7C 08 03 A6 */	mtlr r0
 /* 80402808 003FE4A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040280C 003FE4AC  4E 80 00 20 */	blr 
+/* 8040280C 003FE4AC  4E 80 00 20 */	blr
 
 .global "DBInitInterrupts"
 "DBInitInterrupts":
@@ -73,7 +73,7 @@
 /* 80402854 003FE4F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80402858 003FE4F8  7C 08 03 A6 */	mtlr r0
 /* 8040285C 003FE4FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80402860 003FE500  4E 80 00 20 */	blr 
+/* 80402860 003FE500  4E 80 00 20 */	blr
 
 .global "DBQueryData"
 "DBQueryData":
@@ -119,7 +119,7 @@ lbl_804028F0:
 /* 804028F8 003FE598  80 6D C9 A8 */	lwz r3, "__DBRecvDataSize"-_SDA_BASE_(r13)
 /* 804028FC 003FE59C  7C 08 03 A6 */	mtlr r0
 /* 80402900 003FE5A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80402904 003FE5A4  4E 80 00 20 */	blr 
+/* 80402904 003FE5A4  4E 80 00 20 */	blr
 
 .global "DBRead"
 "DBRead":
@@ -154,7 +154,7 @@ lbl_804028F0:
 /* 80402978 003FE618  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040297C 003FE61C  7C 08 03 A6 */	mtlr r0
 /* 80402980 003FE620  38 21 00 10 */	addi r1, r1, 0x10
-/* 80402984 003FE624  4E 80 00 20 */	blr 
+/* 80402984 003FE624  4E 80 00 20 */	blr
 
 .global "DBWrite"
 "DBWrite":
@@ -230,20 +230,23 @@ lbl_80402A58:
 /* 80402A88 003FE728  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80402A8C 003FE72C  7C 08 03 A6 */	mtlr r0
 /* 80402A90 003FE730  38 21 00 30 */	addi r1, r1, 0x30
-/* 80402A94 003FE734  4E 80 00 20 */	blr 
+/* 80402A94 003FE734  4E 80 00 20 */	blr
 
 .global "DBOpen"
 "DBOpen":
-/* 80402A98 003FE738  4E 80 00 20 */	blr 
+/* 80402A98 003FE738  4E 80 00 20 */	blr
 
 .global "DBClose"
 "DBClose":
-/* 80402A9C 003FE73C  4E 80 00 20 */	blr 
+/* 80402A9C 003FE73C  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "l_byOffsetCounter$639"
 "l_byOffsetCounter$639":
-	.incbin "baserom.dol", 0x487508, 0x8
+	# ROM: 0x487508
+	.4byte 0x80000000
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__DBMtrCallback"

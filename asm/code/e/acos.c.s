@@ -186,57 +186,107 @@ lbl_8040AA5C:
 /* 8040AA6C 0040670C  CB C1 00 20 */	lfd f30, 0x20(r1)
 /* 8040AA70 00406710  7C 08 03 A6 */	mtlr r0
 /* 8040AA74 00406714  38 21 00 40 */	addi r1, r1, 0x40
-/* 8040AA78 00406718  4E 80 00 20 */	blr 
+/* 8040AA78 00406718  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBE70
 lbl_805DBE70:
-	.incbin "baserom.dol", 0x48A190, 0x8
+	# ROM: 0x48A190
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBE78
 lbl_805DBE78:
-	.incbin "baserom.dol", 0x48A198, 0x8
+	# ROM: 0x48A198
+	.4byte 0x400921FB
+	.4byte 0x54442D18
+
 .global lbl_805DBE80
 lbl_805DBE80:
-	.incbin "baserom.dol", 0x48A1A0, 0x8
+	# ROM: 0x48A1A0
+	.4byte 0x3FF921FB
+	.4byte 0x54442D18
+
 .global lbl_805DBE88
 lbl_805DBE88:
-	.incbin "baserom.dol", 0x48A1A8, 0x8
+	# ROM: 0x48A1A8
+	.4byte 0x3FC55555
+	.4byte 0x55555555
+
 .global lbl_805DBE90
 lbl_805DBE90:
-	.incbin "baserom.dol", 0x48A1B0, 0x8
+	# ROM: 0x48A1B0
+	.4byte 0xBFD4D612
+	.4byte 0x03EB6F7D
+
 .global lbl_805DBE98
 lbl_805DBE98:
-	.incbin "baserom.dol", 0x48A1B8, 0x8
+	# ROM: 0x48A1B8
+	.4byte 0x3FC9C155
+	.4byte 0x0E884455
+
 .global lbl_805DBEA0
 lbl_805DBEA0:
-	.incbin "baserom.dol", 0x48A1C0, 0x8
+	# ROM: 0x48A1C0
+	.4byte 0xBFA48228
+	.4byte 0xB5688F3B
+
 .global lbl_805DBEA8
 lbl_805DBEA8:
-	.incbin "baserom.dol", 0x48A1C8, 0x8
+	# ROM: 0x48A1C8
+	.4byte 0x3F49EFE0
+	.4byte 0x7501B288
+
 .global lbl_805DBEB0
 lbl_805DBEB0:
-	.incbin "baserom.dol", 0x48A1D0, 0x8
+	# ROM: 0x48A1D0
+	.4byte 0x3F023DE1
+	.4byte 0x0DFDF709
+
 .global lbl_805DBEB8
 lbl_805DBEB8:
-	.incbin "baserom.dol", 0x48A1D8, 0x8
+	# ROM: 0x48A1D8
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+
 .global lbl_805DBEC0
 lbl_805DBEC0:
-	.incbin "baserom.dol", 0x48A1E0, 0x8
+	# ROM: 0x48A1E0
+	.4byte 0xC0033A27
+	.4byte 0x1C8A2D4B
+
 .global lbl_805DBEC8
 lbl_805DBEC8:
-	.incbin "baserom.dol", 0x48A1E8, 0x8
+	# ROM: 0x48A1E8
+	.4byte 0x40002AE5
+	.4byte 0x9C598AC8
+
 .global lbl_805DBED0
 lbl_805DBED0:
-	.incbin "baserom.dol", 0x48A1F0, 0x8
+	# ROM: 0x48A1F0
+	.4byte 0xBFE6066C
+	.4byte 0x1B8D0159
+
 .global lbl_805DBED8
 lbl_805DBED8:
-	.incbin "baserom.dol", 0x48A1F8, 0x8
+	# ROM: 0x48A1F8
+	.4byte 0x3FB3B8C5
+	.4byte 0xB12E9282
+
 .global lbl_805DBEE0
 lbl_805DBEE0:
-	.incbin "baserom.dol", 0x48A200, 0x8
+	# ROM: 0x48A200
+	.4byte 0x3C91A626
+	.4byte 0x33145C07
+
 .global lbl_805DBEE8
 lbl_805DBEE8:
-	.incbin "baserom.dol", 0x48A208, 0x8
+	# ROM: 0x48A208
+	.4byte 0x3FE00000
+	.4byte 0x00000000
+
 .global lbl_805DBEF0
 lbl_805DBEF0:
-	.incbin "baserom.dol", 0x48A210, 0x8
+	# ROM: 0x48A210
+	.4byte 0x40000000
+	.4byte 0x00000000
+

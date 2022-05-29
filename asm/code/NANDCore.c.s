@@ -60,7 +60,7 @@ lbl_803D8EC0:
 /* 803D8ECC 003D4B6C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D8ED0 003D4B70  7C 08 03 A6 */	mtlr r0
 /* 803D8ED4 003D4B74  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8ED8 003D4B78  4E 80 00 20 */	blr 
+/* 803D8ED8 003D4B78  4E 80 00 20 */	blr
 
 .global "nandGetHeadToken"
 "nandGetHeadToken":
@@ -122,7 +122,7 @@ lbl_803D8F98:
 /* 803D8FA0 003D4C40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D8FA4 003D4C44  7C 08 03 A6 */	mtlr r0
 /* 803D8FA8 003D4C48  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8FAC 003D4C4C  4E 80 00 20 */	blr 
+/* 803D8FAC 003D4C4C  4E 80 00 20 */	blr
 
 .global "nandConvertPath"
 "nandConvertPath":
@@ -211,7 +211,7 @@ lbl_803D90D0:
 /* 803D90DC 003D4D7C  83 A1 02 14 */	lwz r29, 0x214(r1)
 /* 803D90E0 003D4D80  7C 08 03 A6 */	mtlr r0
 /* 803D90E4 003D4D84  38 21 02 20 */	addi r1, r1, 0x220
-/* 803D90E8 003D4D88  4E 80 00 20 */	blr 
+/* 803D90E8 003D4D88  4E 80 00 20 */	blr
 
 .global "nandIsPrivatePath"
 "nandIsPrivatePath":
@@ -227,7 +227,7 @@ lbl_803D90D0:
 /* 803D9110 003D4DB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D9114 003D4DB4  7C 08 03 A6 */	mtlr r0
 /* 803D9118 003D4DB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D911C 003D4DBC  4E 80 00 20 */	blr 
+/* 803D911C 003D4DBC  4E 80 00 20 */	blr
 
 .global "nandIsUnderPrivatePath"
 "nandIsUnderPrivatePath":
@@ -254,7 +254,7 @@ lbl_803D9164:
 /* 803D9168 003D4E08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D916C 003D4E0C  7C 08 03 A6 */	mtlr r0
 /* 803D9170 003D4E10  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D9174 003D4E14  4E 80 00 20 */	blr 
+/* 803D9174 003D4E14  4E 80 00 20 */	blr
 
 .global "nandIsInitialized"
 "nandIsInitialized":
@@ -262,11 +262,11 @@ lbl_803D9164:
 /* 803D917C 003D4E1C  38 03 FF FE */	addi r0, r3, -2
 /* 803D9180 003D4E20  7C 00 00 34 */	cntlzw r0, r0
 /* 803D9184 003D4E24  54 03 D9 7E */	srwi r3, r0, 5
-/* 803D9188 003D4E28  4E 80 00 20 */	blr 
+/* 803D9188 003D4E28  4E 80 00 20 */	blr
 
 .global "nandReportErrorCode"
 "nandReportErrorCode":
-/* 803D918C 003D4E2C  4E 80 00 20 */	blr 
+/* 803D918C 003D4E2C  4E 80 00 20 */	blr
 
 .global "nandConvertErrorCode"
 "nandConvertErrorCode":
@@ -326,7 +326,7 @@ lbl_803D9248:
 /* 803D9250 003D4EF0  83 C1 01 48 */	lwz r30, 0x148(r1)
 /* 803D9254 003D4EF4  7C 08 03 A6 */	mtlr r0
 /* 803D9258 003D4EF8  38 21 01 50 */	addi r1, r1, 0x150
-/* 803D925C 003D4EFC  4E 80 00 20 */	blr 
+/* 803D925C 003D4EFC  4E 80 00 20 */	blr
 
 .global "nandGenerateAbsPath"
 "nandGenerateAbsPath":
@@ -384,7 +384,7 @@ lbl_803D9310:
 /* 803D9318 003D4FB8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D931C 003D4FBC  7C 08 03 A6 */	mtlr r0
 /* 803D9320 003D4FC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D9324 003D4FC4  4E 80 00 20 */	blr 
+/* 803D9324 003D4FC4  4E 80 00 20 */	blr
 
 .global "NANDInit"
 "NANDInit":
@@ -562,7 +562,7 @@ lbl_803D9578:
 /* 803D958C 003D522C  83 8A FF F0 */	lwz r28, -0x10(r10)
 /* 803D9590 003D5230  7C 08 03 A6 */	mtlr r0
 /* 803D9594 003D5234  7D 41 53 78 */	mr r1, r10
-/* 803D9598 003D5238  4E 80 00 20 */	blr 
+/* 803D9598 003D5238  4E 80 00 20 */	blr
 
 .global "nandOnShutdown"
 "nandOnShutdown":
@@ -621,13 +621,13 @@ lbl_803D9650:
 /* 803D9658 003D52F8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D965C 003D52FC  7C 08 03 A6 */	mtlr r0
 /* 803D9660 003D5300  38 21 00 30 */	addi r1, r1, 0x30
-/* 803D9664 003D5304  4E 80 00 20 */	blr 
+/* 803D9664 003D5304  4E 80 00 20 */	blr
 
 .global "nandShutdownCallback"
 "nandShutdownCallback":
 /* 803D9668 003D5308  38 00 00 01 */	li r0, 1
 /* 803D966C 003D530C  90 04 00 00 */	stw r0, 0(r4)
-/* 803D9670 003D5310  4E 80 00 20 */	blr 
+/* 803D9670 003D5310  4E 80 00 20 */	blr
 
 .global "nandCallback"
 "nandCallback":
@@ -687,14 +687,14 @@ lbl_803D9730:
 /* 803D9734 003D53D4  7F A3 EB 78 */	mr r3, r29
 /* 803D9738 003D53D8  7F C4 F3 78 */	mr r4, r30
 /* 803D973C 003D53DC  7D 89 03 A6 */	mtctr r12
-/* 803D9740 003D53E0  4E 80 04 21 */	bctrl 
+/* 803D9740 003D53E0  4E 80 04 21 */	bctrl
 /* 803D9744 003D53E4  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 803D9748 003D53E8  83 E1 01 5C */	lwz r31, 0x15c(r1)
 /* 803D974C 003D53EC  83 C1 01 58 */	lwz r30, 0x158(r1)
 /* 803D9750 003D53F0  83 A1 01 54 */	lwz r29, 0x154(r1)
 /* 803D9754 003D53F4  7C 08 03 A6 */	mtlr r0
 /* 803D9758 003D53F8  38 21 01 60 */	addi r1, r1, 0x160
-/* 803D975C 003D53FC  4E 80 00 20 */	blr 
+/* 803D975C 003D53FC  4E 80 00 20 */	blr
 
 .global "nandGetType"
 "nandGetType":
@@ -899,7 +899,7 @@ lbl_803D9A1C:
 /* 803D9A24 003D56C4  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803D9A28 003D56C8  7C 08 03 A6 */	mtlr r0
 /* 803D9A2C 003D56CC  38 21 00 70 */	addi r1, r1, 0x70
-/* 803D9A30 003D56D0  4E 80 00 20 */	blr 
+/* 803D9A30 003D56D0  4E 80 00 20 */	blr
 
 .global "NANDGetType"
 "NANDGetType":
@@ -970,7 +970,7 @@ lbl_803D9B10:
 /* 803D9B18 003D57B8  83 C1 01 48 */	lwz r30, 0x148(r1)
 /* 803D9B1C 003D57BC  7C 08 03 A6 */	mtlr r0
 /* 803D9B20 003D57C0  38 21 01 50 */	addi r1, r1, 0x150
-/* 803D9B24 003D57C4  4E 80 00 20 */	blr 
+/* 803D9B24 003D57C4  4E 80 00 20 */	blr
 
 .global "NANDPrivateGetTypeAsync"
 "NANDPrivateGetTypeAsync":
@@ -1042,7 +1042,7 @@ lbl_803D9C08:
 /* 803D9C10 003D58B0  83 C1 01 48 */	lwz r30, 0x148(r1)
 /* 803D9C14 003D58B4  7C 08 03 A6 */	mtlr r0
 /* 803D9C18 003D58B8  38 21 01 50 */	addi r1, r1, 0x150
-/* 803D9C1C 003D58BC  4E 80 00 20 */	blr 
+/* 803D9C1C 003D58BC  4E 80 00 20 */	blr
 
 .global "nandGetTypeCallback"
 "nandGetTypeCallback":
@@ -1120,20 +1120,20 @@ lbl_803D9D18:
 /* 803D9D1C 003D59BC  7F A3 EB 78 */	mr r3, r29
 /* 803D9D20 003D59C0  7F E4 FB 78 */	mr r4, r31
 /* 803D9D24 003D59C4  7D 89 03 A6 */	mtctr r12
-/* 803D9D28 003D59C8  4E 80 04 21 */	bctrl 
+/* 803D9D28 003D59C8  4E 80 04 21 */	bctrl
 /* 803D9D2C 003D59CC  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 803D9D30 003D59D0  83 E1 01 5C */	lwz r31, 0x15c(r1)
 /* 803D9D34 003D59D4  83 C1 01 58 */	lwz r30, 0x158(r1)
 /* 803D9D38 003D59D8  83 A1 01 54 */	lwz r29, 0x154(r1)
 /* 803D9D3C 003D59DC  7C 08 03 A6 */	mtlr r0
 /* 803D9D40 003D59E0  38 21 01 60 */	addi r1, r1, 0x160
-/* 803D9D44 003D59E4  4E 80 00 20 */	blr 
+/* 803D9D44 003D59E4  4E 80 00 20 */	blr
 
 .global "nandGetHomeDir"
 "nandGetHomeDir":
 /* 803D9D48 003D59E8  3C 60 80 5B */	lis r3, "s_homeDir"@ha
 /* 803D9D4C 003D59EC  38 63 29 00 */	addi r3, r3, "s_homeDir"@l
-/* 803D9D50 003D59F0  4E 80 00 20 */	blr 
+/* 803D9D50 003D59F0  4E 80 00 20 */	blr
 
 .global "_ES_GetDataDir"
 "_ES_GetDataDir":
@@ -1179,32 +1179,155 @@ lbl_803D9DDC:
 /* 803D9DE0 003D5A80  80 0A 00 04 */	lwz r0, 4(r10)
 /* 803D9DE4 003D5A84  7C 08 03 A6 */	mtlr r0
 /* 803D9DE8 003D5A88  7D 41 53 78 */	mr r1, r10
-/* 803D9DEC 003D5A8C  4E 80 00 20 */	blr 
+/* 803D9DEC 003D5A8C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041EC08
 lbl_8041EC08:
-	.incbin "baserom.dol", 0x41AD08, 0x140
+	# ROM: 0x41AD08
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0xFFFFFF9A
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFF99
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFF8E
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFF97
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFF8C
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFF9B
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFF94
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFF93
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFF95
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFF96
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFF8D
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFF98
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF91
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFF8B
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFF8A
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFF89
+	.4byte 0xFFFFFF80
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFC
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFFA
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFF9
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF8
+	.4byte 0xFFFFFFFD
+	.4byte 0xFFFFFFF7
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF6
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF5
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF4
+	.4byte 0xFFFFFFFB
+	.4byte 0xFFFFFFF3
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF2
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF1
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFF0
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEF
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEE
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFED
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEC
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEB
+	.4byte 0xFFFFFFC0
+	.4byte 0xFFFFFFEA
+	.4byte 0xFFFFFFFE
+	.4byte 0xFFFFFFE9
+	.4byte 0xFFFFFFC0
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80475E40
 lbl_80475E40:
-	.incbin "baserom.dol", 0x471F40, 0x60
+	# ROM: 0x471F40
+	.asciz "<< RVL_SDK - NAND \trelease build: Nov 30 2006 03:32:57 (0x4199_60831) >>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "s_currentDir"
 "s_currentDir":
-	.incbin "baserom.dol", 0x471FA0, 0x40
+	# ROM: 0x471FA0
+	.4byte 0x2F000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "s_shutdownFuncInfo"
 "s_shutdownFuncInfo":
-	.incbin "baserom.dol", 0x471FE0, 0x10
+	# ROM: 0x471FE0
+	.4byte "nandOnShutdown" ;# ptr (0x803D959C)
+	.4byte 0x000000FF
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global lbl_80475EF0
 lbl_80475EF0:
-	.incbin "baserom.dol", 0x471FF0, 0xC
+	# ROM: 0x471FF0
+	.asciz "/shared2"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80475EFC
 lbl_80475EFC:
-	.incbin "baserom.dol", 0x471FFC, 0xC
+	# ROM: 0x471FFC
+	.asciz "/shared2/"
+	.byte 0x00, 0x00
+
 .global lbl_80475F08
 lbl_80475F08:
-	.incbin "baserom.dol", 0x472008, 0x58
+	# ROM: 0x472008
+	.asciz "CAUTION!  Unexpected error code [%d] was found.\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Failed to set home directory.\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_homeDir"
@@ -1214,28 +1337,45 @@ lbl_80475F08:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__NANDVersion"
 "__NANDVersion":
-	.incbin "baserom.dol", 0x4872B0, 0x4
+	# ROM: 0x4872B0
+	.4byte 0x80475E40 ;# ptr
+
 .global lbl_805D7734
 lbl_805D7734:
-	.incbin "baserom.dol", 0x4872B4, 0x4
+	# ROM: 0x4872B4
+	.4byte 0x2F000000
+
 .global lbl_805D7738
 lbl_805D7738:
-	.incbin "baserom.dol", 0x4872B8, 0x4
+	# ROM: 0x4872B8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D773C
 lbl_805D773C:
-	.incbin "baserom.dol", 0x4872BC, 0x4
+	# ROM: 0x4872BC
+	.4byte 0x2E000000
+
 .global lbl_805D7740
 lbl_805D7740:
-	.incbin "baserom.dol", 0x4872C0, 0x4
+	# ROM: 0x4872C0
+	.4byte 0x2E2E0000
+
 .global lbl_805D7744
 lbl_805D7744:
-	.incbin "baserom.dol", 0x4872C4, 0x4
+	# ROM: 0x4872C4
+	.4byte 0x2F257300
+
 .global lbl_805D7748
 lbl_805D7748:
-	.incbin "baserom.dol", 0x4872C8, 0x8
+	# ROM: 0x4872C8
+	.asciz "%s/%s"
+	.byte 0x00, 0x00
+
 .global lbl_805D7750
 lbl_805D7750:
-	.incbin "baserom.dol", 0x4872D0, 0x8
+	# ROM: 0x4872D0
+	.asciz "/dev/es"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_libState"

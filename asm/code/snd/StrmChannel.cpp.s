@@ -51,7 +51,7 @@ lbl_803B4828:
 /* 803B4838 003B04D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803B483C 003B04DC  7C 08 03 A6 */	mtlr r0
 /* 803B4840 003B04E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B4844 003B04E4  4E 80 00 20 */	blr 
+/* 803B4844 003B04E4  4E 80 00 20 */	blr
 
 .global "Alloc__Q46nw4hbm3snd6detail14StrmBufferPoolFv"
 "Alloc__Q46nw4hbm3snd6detail14StrmBufferPoolFv":
@@ -126,7 +126,7 @@ lbl_803B4938:
 /* 803B493C 003B05DC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803B4940 003B05E0  7C 08 03 A6 */	mtlr r0
 /* 803B4944 003B05E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B4948 003B05E8  4E 80 00 20 */	blr 
+/* 803B4948 003B05E8  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPvUl_Pv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPvUl_Pv":
@@ -141,11 +141,11 @@ lbl_803B4938:
 /* 803B496C 003B060C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4970 003B0610  7C 08 03 A6 */	mtlr r0
 /* 803B4974 003B0614  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4978 003B0618  4E 80 00 20 */	blr 
+/* 803B4978 003B0618  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPCv":
-/* 803B497C 003B061C  4E 80 00 20 */	blr 
+/* 803B497C 003B061C  4E 80 00 20 */	blr
 
 .global "RoundUp<i>__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FiUi_i"
 "RoundUp<i>__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FiUi_i":
@@ -153,7 +153,7 @@ lbl_803B4938:
 /* 803B4984 003B0624  38 04 FF FF */	addi r0, r4, -1
 /* 803B4988 003B0628  38 63 FF FF */	addi r3, r3, -1
 /* 803B498C 003B062C  7C 63 00 78 */	andc r3, r3, r0
-/* 803B4990 003B0630  4E 80 00 20 */	blr 
+/* 803B4990 003B0630  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail14StrmBufferPoolFPv"
 "Free__Q46nw4hbm3snd6detail14StrmBufferPoolFPv":
@@ -190,7 +190,7 @@ lbl_803B4938:
 /* 803B4A0C 003B06AC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803B4A10 003B06B0  7C 08 03 A6 */	mtlr r0
 /* 803B4A14 003B06B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B4A18 003B06B8  4E 80 00 20 */	blr 
+/* 803B4A18 003B06B8  4E 80 00 20 */	blr
 
 .global "GetOffsetFromPtr__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPCvPCv"
 "GetOffsetFromPtr__Q36nw4hbm2ut29@unnamed@snd_StrmChannel_cpp@FPCvPCv":
@@ -211,12 +211,18 @@ lbl_803B4938:
 /* 803B4A54 003B06F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4A58 003B06F8  7C 08 03 A6 */	mtlr r0
 /* 803B4A5C 003B06FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4A60 003B0700  4E 80 00 20 */	blr 
+/* 803B4A60 003B0700  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80471770
 lbl_80471770:
-	.incbin "baserom.dol", 0x46D870, 0x14
+	# ROM: 0x46D870
+	.asciz "snd_StrmChannel.cpp"
+
 .global lbl_80471784
 lbl_80471784:
-	.incbin "baserom.dol", 0x46D884, 0x24
+	# ROM: 0x46D884
+	.asciz "Too large stream buffer size."
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

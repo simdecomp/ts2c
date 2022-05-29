@@ -95,12 +95,20 @@ lbl_803B3FE4:
 /* 803B3FF0 003AFC90  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803B3FF4 003AFC94  7C 08 03 A6 */	mtlr r0
 /* 803B3FF8 003AFC98  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B3FFC 003AFC9C  4E 80 00 20 */	blr 
+/* 803B3FFC 003AFC9C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80471670
 lbl_80471670:
-	.incbin "baserom.dol", 0x46D770, 0x98
+	# ROM: 0x46D770
+	.asciz "snd_SoundSystem.cpp"
+	.asciz "NW4HBM:Failed assertion initStatus == SC_STATUS_OK"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion result"
+	.byte 0x00
+	.asciz "SoundSystem::WaitForResetReady is TIME OUT.\n"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "sInitialized__Q36nw4hbm3snd29@unnamed@snd_SoundSystem_cpp@"

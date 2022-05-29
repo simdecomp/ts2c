@@ -72,7 +72,7 @@ lbl_80336990:
 /* 80336A3C 003326DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80336A40 003326E0  7C 08 03 A6 */	mtlr r0
 /* 80336A44 003326E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80336A48 003326E8  4E 80 00 20 */	blr 
+/* 80336A48 003326E8  4E 80 00 20 */	blr
 
 .global "__AXAuxQuit"
 "__AXAuxQuit":
@@ -80,7 +80,7 @@ lbl_80336990:
 /* 80336A50 003326F0  90 0D C2 30 */	stw r0, "__AXCallbackAuxA"-_SDA_BASE_(r13)
 /* 80336A54 003326F4  90 0D C2 2C */	stw r0, "__AXCallbackAuxB"-_SDA_BASE_(r13)
 /* 80336A58 003326F8  90 0D C2 28 */	stw r0, "__AXCallbackAuxC"-_SDA_BASE_(r13)
-/* 80336A5C 003326FC  4E 80 00 20 */	blr 
+/* 80336A5C 003326FC  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAInput"
 "__AXGetAuxAInput":
@@ -93,11 +93,11 @@ lbl_80336990:
 /* 80336A78 00332718  1C 00 06 00 */	mulli r0, r0, 0x600
 /* 80336A7C 0033271C  7C 04 02 14 */	add r0, r4, r0
 /* 80336A80 00332720  90 03 00 00 */	stw r0, 0(r3)
-/* 80336A84 00332724  4E 80 00 20 */	blr 
+/* 80336A84 00332724  4E 80 00 20 */	blr
 lbl_80336A88:
 /* 80336A88 00332728  38 00 00 00 */	li r0, 0
 /* 80336A8C 0033272C  90 03 00 00 */	stw r0, 0(r3)
-/* 80336A90 00332730  4E 80 00 20 */	blr 
+/* 80336A90 00332730  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAOutput"
 "__AXGetAuxAOutput":
@@ -107,7 +107,7 @@ lbl_80336A88:
 /* 80336AA0 00332740  1C 00 06 00 */	mulli r0, r0, 0x600
 /* 80336AA4 00332744  7C 04 02 14 */	add r0, r4, r0
 /* 80336AA8 00332748  90 03 00 00 */	stw r0, 0(r3)
-/* 80336AAC 0033274C  4E 80 00 20 */	blr 
+/* 80336AAC 0033274C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAInputDpl2"
 "__AXGetAuxAInputDpl2":
@@ -118,7 +118,7 @@ lbl_80336A88:
 /* 80336AC0 00332760  7C 84 02 14 */	add r4, r4, r0
 /* 80336AC4 00332764  38 04 04 80 */	addi r0, r4, 0x480
 /* 80336AC8 00332768  90 03 00 00 */	stw r0, 0(r3)
-/* 80336ACC 0033276C  4E 80 00 20 */	blr 
+/* 80336ACC 0033276C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAOutputDpl2R"
 "__AXGetAuxAOutputDpl2R":
@@ -129,7 +129,7 @@ lbl_80336A88:
 /* 80336AE0 00332780  7C 84 02 14 */	add r4, r4, r0
 /* 80336AE4 00332784  38 04 01 80 */	addi r0, r4, 0x180
 /* 80336AE8 00332788  90 03 00 00 */	stw r0, 0(r3)
-/* 80336AEC 0033278C  4E 80 00 20 */	blr 
+/* 80336AEC 0033278C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAOutputDpl2Ls"
 "__AXGetAuxAOutputDpl2Ls":
@@ -140,7 +140,7 @@ lbl_80336A88:
 /* 80336B00 003327A0  7C 84 02 14 */	add r4, r4, r0
 /* 80336B04 003327A4  38 04 03 00 */	addi r0, r4, 0x300
 /* 80336B08 003327A8  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B0C 003327AC  4E 80 00 20 */	blr 
+/* 80336B0C 003327AC  4E 80 00 20 */	blr
 
 .global "__AXGetAuxAOutputDpl2Rs"
 "__AXGetAuxAOutputDpl2Rs":
@@ -151,7 +151,7 @@ lbl_80336A88:
 /* 80336B20 003327C0  7C 84 02 14 */	add r4, r4, r0
 /* 80336B24 003327C4  38 04 04 80 */	addi r0, r4, 0x480
 /* 80336B28 003327C8  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B2C 003327CC  4E 80 00 20 */	blr 
+/* 80336B2C 003327CC  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBInput"
 "__AXGetAuxBInput":
@@ -164,11 +164,11 @@ lbl_80336A88:
 /* 80336B48 003327E8  1C 00 06 00 */	mulli r0, r0, 0x600
 /* 80336B4C 003327EC  7C 04 02 14 */	add r0, r4, r0
 /* 80336B50 003327F0  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B54 003327F4  4E 80 00 20 */	blr 
+/* 80336B54 003327F4  4E 80 00 20 */	blr
 lbl_80336B58:
 /* 80336B58 003327F8  38 00 00 00 */	li r0, 0
 /* 80336B5C 003327FC  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B60 00332800  4E 80 00 20 */	blr 
+/* 80336B60 00332800  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBOutput"
 "__AXGetAuxBOutput":
@@ -178,7 +178,7 @@ lbl_80336B58:
 /* 80336B70 00332810  1C 00 06 00 */	mulli r0, r0, 0x600
 /* 80336B74 00332814  7C 04 02 14 */	add r0, r4, r0
 /* 80336B78 00332818  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B7C 0033281C  4E 80 00 20 */	blr 
+/* 80336B7C 0033281C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBInputDpl2"
 "__AXGetAuxBInputDpl2":
@@ -189,7 +189,7 @@ lbl_80336B58:
 /* 80336B90 00332830  7C 84 02 14 */	add r4, r4, r0
 /* 80336B94 00332834  38 04 04 80 */	addi r0, r4, 0x480
 /* 80336B98 00332838  90 03 00 00 */	stw r0, 0(r3)
-/* 80336B9C 0033283C  4E 80 00 20 */	blr 
+/* 80336B9C 0033283C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBOutputDpl2R"
 "__AXGetAuxBOutputDpl2R":
@@ -200,7 +200,7 @@ lbl_80336B58:
 /* 80336BB0 00332850  7C 84 02 14 */	add r4, r4, r0
 /* 80336BB4 00332854  38 04 01 80 */	addi r0, r4, 0x180
 /* 80336BB8 00332858  90 03 00 00 */	stw r0, 0(r3)
-/* 80336BBC 0033285C  4E 80 00 20 */	blr 
+/* 80336BBC 0033285C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBOutputDpl2Ls"
 "__AXGetAuxBOutputDpl2Ls":
@@ -211,7 +211,7 @@ lbl_80336B58:
 /* 80336BD0 00332870  7C 84 02 14 */	add r4, r4, r0
 /* 80336BD4 00332874  38 04 03 00 */	addi r0, r4, 0x300
 /* 80336BD8 00332878  90 03 00 00 */	stw r0, 0(r3)
-/* 80336BDC 0033287C  4E 80 00 20 */	blr 
+/* 80336BDC 0033287C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxBOutputDpl2Rs"
 "__AXGetAuxBOutputDpl2Rs":
@@ -222,7 +222,7 @@ lbl_80336B58:
 /* 80336BF0 00332890  7C 84 02 14 */	add r4, r4, r0
 /* 80336BF4 00332894  38 04 04 80 */	addi r0, r4, 0x480
 /* 80336BF8 00332898  90 03 00 00 */	stw r0, 0(r3)
-/* 80336BFC 0033289C  4E 80 00 20 */	blr 
+/* 80336BFC 0033289C  4E 80 00 20 */	blr
 
 .global "__AXGetAuxCInput"
 "__AXGetAuxCInput":
@@ -235,11 +235,11 @@ lbl_80336B58:
 /* 80336C18 003328B8  1C 00 04 80 */	mulli r0, r0, 0x480
 /* 80336C1C 003328BC  7C 04 02 14 */	add r0, r4, r0
 /* 80336C20 003328C0  90 03 00 00 */	stw r0, 0(r3)
-/* 80336C24 003328C4  4E 80 00 20 */	blr 
+/* 80336C24 003328C4  4E 80 00 20 */	blr
 lbl_80336C28:
 /* 80336C28 003328C8  38 00 00 00 */	li r0, 0
 /* 80336C2C 003328CC  90 03 00 00 */	stw r0, 0(r3)
-/* 80336C30 003328D0  4E 80 00 20 */	blr 
+/* 80336C30 003328D0  4E 80 00 20 */	blr
 
 .global "__AXGetAuxCOutput"
 "__AXGetAuxCOutput":
@@ -249,7 +249,7 @@ lbl_80336C28:
 /* 80336C40 003328E0  1C 00 04 80 */	mulli r0, r0, 0x480
 /* 80336C44 003328E4  7C 04 02 14 */	add r0, r4, r0
 /* 80336C48 003328E8  90 03 00 00 */	stw r0, 0(r3)
-/* 80336C4C 003328EC  4E 80 00 20 */	blr 
+/* 80336C4C 003328EC  4E 80 00 20 */	blr
 
 .global "__AXProcessAux"
 "__AXProcessAux":
@@ -304,7 +304,7 @@ lbl_80336C28:
 /* 80336D10 003329B0  38 61 00 40 */	addi r3, r1, 0x40
 /* 80336D14 003329B4  80 8D C2 24 */	lwz r4, "__AXContextAuxA"-_SDA_BASE_(r13)
 /* 80336D18 003329B8  7D 89 03 A6 */	mtctr r12
-/* 80336D1C 003329BC  4E 80 04 21 */	bctrl 
+/* 80336D1C 003329BC  4E 80 04 21 */	bctrl
 /* 80336D20 003329C0  80 61 00 40 */	lwz r3, 0x40(r1)
 /* 80336D24 003329C4  38 80 06 00 */	li r4, 0x600
 /* 80336D28 003329C8  48 0A 55 A9 */	bl "DCFlushRangeNoSync"
@@ -324,7 +324,7 @@ lbl_80336D30:
 /* 80336D5C 003329FC  38 61 00 30 */	addi r3, r1, 0x30
 /* 80336D60 00332A00  80 8D C2 24 */	lwz r4, "__AXContextAuxA"-_SDA_BASE_(r13)
 /* 80336D64 00332A04  7D 89 03 A6 */	mtctr r12
-/* 80336D68 00332A08  4E 80 04 21 */	bctrl 
+/* 80336D68 00332A08  4E 80 04 21 */	bctrl
 /* 80336D6C 00332A0C  80 61 00 30 */	lwz r3, 0x30(r1)
 /* 80336D70 00332A10  38 80 04 80 */	li r4, 0x480
 /* 80336D74 00332A14  48 0A 55 5D */	bl "DCFlushRangeNoSync"
@@ -371,7 +371,7 @@ lbl_80336DC0:
 /* 80336E10 00332AB0  38 61 00 20 */	addi r3, r1, 0x20
 /* 80336E14 00332AB4  80 8D C2 20 */	lwz r4, "__AXContextAuxB"-_SDA_BASE_(r13)
 /* 80336E18 00332AB8  7D 89 03 A6 */	mtctr r12
-/* 80336E1C 00332ABC  4E 80 04 21 */	bctrl 
+/* 80336E1C 00332ABC  4E 80 04 21 */	bctrl
 /* 80336E20 00332AC0  80 61 00 20 */	lwz r3, 0x20(r1)
 /* 80336E24 00332AC4  38 80 06 00 */	li r4, 0x600
 /* 80336E28 00332AC8  48 0A 54 A9 */	bl "DCFlushRangeNoSync"
@@ -392,7 +392,7 @@ lbl_80336E30:
 /* 80336E60 00332B00  38 61 00 14 */	addi r3, r1, 0x14
 /* 80336E64 00332B04  80 8D C2 20 */	lwz r4, "__AXContextAuxB"-_SDA_BASE_(r13)
 /* 80336E68 00332B08  7D 89 03 A6 */	mtctr r12
-/* 80336E6C 00332B0C  4E 80 04 21 */	bctrl 
+/* 80336E6C 00332B0C  4E 80 04 21 */	bctrl
 /* 80336E70 00332B10  80 61 00 14 */	lwz r3, 0x14(r1)
 /* 80336E74 00332B14  38 80 04 80 */	li r4, 0x480
 /* 80336E78 00332B18  48 0A 54 59 */	bl "DCFlushRangeNoSync"
@@ -438,7 +438,7 @@ lbl_80336EC8:
 /* 80336F10 00332BB0  38 61 00 08 */	addi r3, r1, 8
 /* 80336F14 00332BB4  80 8D C2 1C */	lwz r4, "__AXContextAuxC"-_SDA_BASE_(r13)
 /* 80336F18 00332BB8  7D 89 03 A6 */	mtctr r12
-/* 80336F1C 00332BBC  4E 80 04 21 */	bctrl 
+/* 80336F1C 00332BBC  4E 80 04 21 */	bctrl
 /* 80336F20 00332BC0  80 61 00 08 */	lwz r3, 8(r1)
 /* 80336F24 00332BC4  38 80 04 80 */	li r4, 0x480
 /* 80336F28 00332BC8  48 0A 53 A9 */	bl "DCFlushRangeNoSync"
@@ -495,7 +495,7 @@ lbl_80336F84:
 /* 80336FEC 00332C8C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80336FF0 00332C90  7C 08 03 A6 */	mtlr r0
 /* 80336FF4 00332C94  38 21 00 60 */	addi r1, r1, 0x60
-/* 80336FF8 00332C98  4E 80 00 20 */	blr 
+/* 80336FF8 00332C98  4E 80 00 20 */	blr
 
 .global "AXRegisterAuxACallback"
 "AXRegisterAuxACallback":
@@ -524,7 +524,7 @@ lbl_80337040:
 /* 80337050 00332CF0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80337054 00332CF4  7C 08 03 A6 */	mtlr r0
 /* 80337058 00332CF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033705C 00332CFC  4E 80 00 20 */	blr 
+/* 8033705C 00332CFC  4E 80 00 20 */	blr
 
 .global "AXRegisterAuxBCallback"
 "AXRegisterAuxBCallback":
@@ -553,7 +553,7 @@ lbl_803370A4:
 /* 803370B4 00332D54  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803370B8 00332D58  7C 08 03 A6 */	mtlr r0
 /* 803370BC 00332D5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803370C0 00332D60  4E 80 00 20 */	blr 
+/* 803370C0 00332D60  4E 80 00 20 */	blr
 
 .global "AXRegisterAuxCCallback"
 "AXRegisterAuxCCallback":
@@ -582,7 +582,7 @@ lbl_80337108:
 /* 80337118 00332DB8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033711C 00332DBC  7C 08 03 A6 */	mtlr r0
 /* 80337120 00332DC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80337124 00332DC4  4E 80 00 20 */	blr 
+/* 80337124 00332DC4  4E 80 00 20 */	blr
 
 .global "AXGetAuxACallback"
 "AXGetAuxACallback":
@@ -590,7 +590,7 @@ lbl_80337108:
 /* 8033712C 00332DCC  90 03 00 00 */	stw r0, 0(r3)
 /* 80337130 00332DD0  80 0D C2 24 */	lwz r0, "__AXContextAuxA"-_SDA_BASE_(r13)
 /* 80337134 00332DD4  90 04 00 00 */	stw r0, 0(r4)
-/* 80337138 00332DD8  4E 80 00 20 */	blr 
+/* 80337138 00332DD8  4E 80 00 20 */	blr
 
 .global "AXGetAuxBCallback"
 "AXGetAuxBCallback":
@@ -598,7 +598,7 @@ lbl_80337108:
 /* 80337140 00332DE0  90 03 00 00 */	stw r0, 0(r3)
 /* 80337144 00332DE4  80 0D C2 20 */	lwz r0, "__AXContextAuxB"-_SDA_BASE_(r13)
 /* 80337148 00332DE8  90 04 00 00 */	stw r0, 0(r4)
-/* 8033714C 00332DEC  4E 80 00 20 */	blr 
+/* 8033714C 00332DEC  4E 80 00 20 */	blr
 
 .global "AXGetAuxCCallback"
 "AXGetAuxCCallback":
@@ -606,7 +606,7 @@ lbl_80337108:
 /* 80337154 00332DF4  90 03 00 00 */	stw r0, 0(r3)
 /* 80337158 00332DF8  80 0D C2 1C */	lwz r0, "__AXContextAuxC"-_SDA_BASE_(r13)
 /* 8033715C 00332DFC  90 04 00 00 */	stw r0, 0(r4)
-/* 80337160 00332E00  4E 80 00 20 */	blr 
+/* 80337160 00332E00  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__AXBufferAuxA"

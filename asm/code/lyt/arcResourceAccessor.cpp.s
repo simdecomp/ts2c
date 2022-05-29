@@ -93,7 +93,7 @@ lbl_80389B40:
 /* 80389B4C 003857EC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80389B50 003857F0  7C 08 03 A6 */	mtlr r0
 /* 80389B54 003857F4  38 21 00 40 */	addi r1, r1, 0x40
-/* 80389B58 003857F8  4E 80 00 20 */	blr 
+/* 80389B58 003857F8  4E 80 00 20 */	blr
 
 .global "GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl"
 "GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl":
@@ -210,11 +210,11 @@ lbl_80389CF0:
 /* 80389CF8 00385998  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80389CFC 0038599C  7C 08 03 A6 */	mtlr r0
 /* 80389D00 003859A0  38 21 00 40 */	addi r1, r1, 0x40
-/* 80389D04 003859A4  4E 80 00 20 */	blr 
+/* 80389D04 003859A4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut37@unnamed@lyt_arcResourceAccessor_cpp@11NonCopyableFv"
 "__ct__Q46nw4hbm2ut37@unnamed@lyt_arcResourceAccessor_cpp@11NonCopyableFv":
-/* 80389D08 003859A8  4E 80 00 20 */	blr 
+/* 80389D08 003859A8  4E 80 00 20 */	blr
 
 .global "FindFont__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>PCc"
 "FindFont__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>PCc":
@@ -265,7 +265,7 @@ lbl_80389DA4:
 /* 80389DAC 00385A4C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80389DB0 00385A50  7C 08 03 A6 */	mtlr r0
 /* 80389DB4 00385A54  38 21 00 20 */	addi r1, r1, 0x20
-/* 80389DB8 00385A58  4E 80 00 20 */	blr 
+/* 80389DB8 00385A58  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator":
@@ -284,7 +284,7 @@ lbl_80389DA4:
 /* 80389DEC 00385A8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389DF0 00385A90  7C 08 03 A6 */	mtlr r0
 /* 80389DF4 00385A94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389DF8 00385A98  4E 80 00 20 */	blr 
+/* 80389DF8 00385A98  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator":
@@ -301,7 +301,7 @@ lbl_80389DA4:
 /* 80389E24 00385AC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389E28 00385AC8  7C 08 03 A6 */	mtlr r0
 /* 80389E2C 00385ACC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389E30 00385AD0  4E 80 00 20 */	blr 
+/* 80389E30 00385AD0  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv"
 "GetEndIter__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv":
@@ -317,7 +317,7 @@ lbl_80389DA4:
 /* 80389E58 00385AF8  80 63 00 00 */	lwz r3, 0(r3)
 /* 80389E5C 00385AFC  7C 08 03 A6 */	mtlr r0
 /* 80389E60 00385B00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389E64 00385B04  4E 80 00 20 */	blr 
+/* 80389E64 00385B04  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -332,7 +332,7 @@ lbl_80389DA4:
 /* 80389E88 00385B28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389E8C 00385B2C  7C 08 03 A6 */	mtlr r0
 /* 80389E90 00385B30  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389E94 00385B34  4E 80 00 20 */	blr 
+/* 80389E94 00385B34  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFv"
 "__pp__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFv":
@@ -347,17 +347,17 @@ lbl_80389DA4:
 /* 80389EB8 00385B58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389EBC 00385B5C  7C 08 03 A6 */	mtlr r0
 /* 80389EC0 00385B60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389EC4 00385B64  4E 80 00 20 */	blr 
+/* 80389EC4 00385B64  4E 80 00 20 */	blr
 
 .global "GetFont__Q36nw4hbm3lyt11FontRefLinkCFv"
 "GetFont__Q36nw4hbm3lyt11FontRefLinkCFv":
 /* 80389EC8 00385B68  80 63 00 88 */	lwz r3, 0x88(r3)
-/* 80389ECC 00385B6C  4E 80 00 20 */	blr 
+/* 80389ECC 00385B6C  4E 80 00 20 */	blr
 
 .global "GetFontName__Q36nw4hbm3lyt11FontRefLinkCFv"
 "GetFontName__Q36nw4hbm3lyt11FontRefLinkCFv":
 /* 80389ED0 00385B70  38 63 00 08 */	addi r3, r3, 8
-/* 80389ED4 00385B74  4E 80 00 20 */	blr 
+/* 80389ED4 00385B74  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorCFv":
@@ -369,7 +369,7 @@ lbl_80389DA4:
 /* 80389EEC 00385B8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389EF0 00385B90  7C 08 03 A6 */	mtlr r0
 /* 80389EF4 00385B94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389EF8 00385B98  4E 80 00 20 */	blr 
+/* 80389EF8 00385B98  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -393,7 +393,7 @@ lbl_80389F34:
 /* 80389F3C 00385BDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389F40 00385BE0  7C 08 03 A6 */	mtlr r0
 /* 80389F44 00385BE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389F48 00385BE8  4E 80 00 20 */	blr 
+/* 80389F48 00385BE8  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFRCQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator"
 "__ct__Q46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8IteratorFRCQ46nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>8Iterator":
@@ -408,7 +408,7 @@ lbl_80389F34:
 /* 80389F6C 00385C0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389F70 00385C10  7C 08 03 A6 */	mtlr r0
 /* 80389F74 00385C14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389F78 00385C18  4E 80 00 20 */	blr 
+/* 80389F78 00385C18  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv"
 "GetBeginIter__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv":
@@ -424,7 +424,7 @@ lbl_80389F34:
 /* 80389FA0 00385C40  80 63 00 00 */	lwz r3, 0(r3)
 /* 80389FA4 00385C44  7C 08 03 A6 */	mtlr r0
 /* 80389FA8 00385C48  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389FAC 00385C4C  4E 80 00 20 */	blr 
+/* 80389FAC 00385C4C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3lyt19ArcResourceAccessorFv"
 "__ct__Q36nw4hbm3lyt19ArcResourceAccessorFv":
@@ -446,7 +446,7 @@ lbl_80389F34:
 /* 80389FEC 00385C8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80389FF0 00385C90  7C 08 03 A6 */	mtlr r0
 /* 80389FF4 00385C94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80389FF8 00385C98  4E 80 00 20 */	blr 
+/* 80389FF8 00385C98  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv"
 "__ct__Q36nw4hbm2ut38LinkList<Q36nw4hbm3lyt11FontRefLink,0>Fv":
@@ -461,7 +461,7 @@ lbl_80389F34:
 /* 8038A01C 00385CBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A020 00385CC0  7C 08 03 A6 */	mtlr r0
 /* 8038A024 00385CC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A028 00385CC8  4E 80 00 20 */	blr 
+/* 8038A028 00385CC8  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut6detail12LinkListImplFv"
 "__ct__Q46nw4hbm2ut6detail12LinkListImplFv":
@@ -480,7 +480,7 @@ lbl_80389F34:
 /* 8038A05C 00385CFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A060 00385D00  7C 08 03 A6 */	mtlr r0
 /* 8038A064 00385D04  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A068 00385D08  4E 80 00 20 */	blr 
+/* 8038A068 00385D08  4E 80 00 20 */	blr
 
 .global "Initialize___Q46nw4hbm2ut6detail12LinkListImplFv"
 "Initialize___Q46nw4hbm2ut6detail12LinkListImplFv":
@@ -489,7 +489,7 @@ lbl_80389F34:
 /* 8038A074 00385D14  90 83 00 00 */	stw r4, 0(r3)
 /* 8038A078 00385D18  90 03 00 04 */	stw r0, 4(r3)
 /* 8038A07C 00385D1C  90 03 00 08 */	stw r0, 8(r3)
-/* 8038A080 00385D20  4E 80 00 20 */	blr 
+/* 8038A080 00385D20  4E 80 00 20 */	blr
 
 .global "Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc"
 "Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc":
@@ -554,7 +554,7 @@ lbl_8038A148:
 /* 8038A158 00385DF8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8038A15C 00385DFC  7C 08 03 A6 */	mtlr r0
 /* 8038A160 00385E00  38 21 00 20 */	addi r1, r1, 0x20
-/* 8038A164 00385E04  4E 80 00 20 */	blr 
+/* 8038A164 00385E04  4E 80 00 20 */	blr
 
 .global "IsAttached__Q36nw4hbm3lyt19ArcResourceAccessorCFv"
 "IsAttached__Q36nw4hbm3lyt19ArcResourceAccessorCFv":
@@ -562,7 +562,7 @@ lbl_8038A148:
 /* 8038A16C 00385E0C  7C 03 00 D0 */	neg r0, r3
 /* 8038A170 00385E10  7C 00 1B 78 */	or r0, r0, r3
 /* 8038A174 00385E14  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8038A178 00385E18  4E 80 00 20 */	blr 
+/* 8038A178 00385E18  4E 80 00 20 */	blr
 
 .global "GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl"
 "GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl":
@@ -604,7 +604,7 @@ lbl_8038A1E0:
 /* 8038A1EC 00385E8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A1F0 00385E90  7C 08 03 A6 */	mtlr r0
 /* 8038A1F4 00385E94  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A1F8 00385E98  4E 80 00 20 */	blr 
+/* 8038A1F8 00385E98  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt24MultiArcResourceAccessorFv"
 "__dt__Q36nw4hbm3lyt24MultiArcResourceAccessorFv":
@@ -641,7 +641,7 @@ lbl_8038A264:
 /* 8038A270 00385F10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A274 00385F14  7C 08 03 A6 */	mtlr r0
 /* 8038A278 00385F18  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A27C 00385F1C  4E 80 00 20 */	blr 
+/* 8038A27C 00385F1C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -656,7 +656,7 @@ lbl_8038A264:
 /* 8038A2A0 00385F40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A2A4 00385F44  7C 08 03 A6 */	mtlr r0
 /* 8038A2A8 00385F48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A2AC 00385F4C  4E 80 00 20 */	blr 
+/* 8038A2AC 00385F4C  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>Fv"
 "GetEndIter__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>Fv":
@@ -672,7 +672,7 @@ lbl_8038A264:
 /* 8038A2D4 00385F74  80 63 00 00 */	lwz r3, 0(r3)
 /* 8038A2D8 00385F78  7C 08 03 A6 */	mtlr r0
 /* 8038A2DC 00385F7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A2E0 00385F80  4E 80 00 20 */	blr 
+/* 8038A2E0 00385F80  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator":
@@ -691,7 +691,7 @@ lbl_8038A264:
 /* 8038A314 00385FB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A318 00385FB8  7C 08 03 A6 */	mtlr r0
 /* 8038A31C 00385FBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A320 00385FC0  4E 80 00 20 */	blr 
+/* 8038A320 00385FC0  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator":
@@ -708,7 +708,7 @@ lbl_8038A264:
 /* 8038A34C 00385FEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A350 00385FF0  7C 08 03 A6 */	mtlr r0
 /* 8038A354 00385FF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A358 00385FF8  4E 80 00 20 */	blr 
+/* 8038A358 00385FF8  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFv"
 "__pp__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFv":
@@ -723,7 +723,7 @@ lbl_8038A264:
 /* 8038A37C 0038601C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A380 00386020  7C 08 03 A6 */	mtlr r0
 /* 8038A384 00386024  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A388 00386028  4E 80 00 20 */	blr 
+/* 8038A388 00386028  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorCFv":
@@ -735,7 +735,7 @@ lbl_8038A264:
 /* 8038A3A0 00386040  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A3A4 00386044  7C 08 03 A6 */	mtlr r0
 /* 8038A3A8 00386048  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A3AC 0038604C  4E 80 00 20 */	blr 
+/* 8038A3AC 0038604C  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -759,7 +759,7 @@ lbl_8038A3E8:
 /* 8038A3F0 00386090  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A3F4 00386094  7C 08 03 A6 */	mtlr r0
 /* 8038A3F8 00386098  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A3FC 0038609C  4E 80 00 20 */	blr 
+/* 8038A3FC 0038609C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFRCQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8IteratorFRCQ46nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>8Iterator":
@@ -774,7 +774,7 @@ lbl_8038A3E8:
 /* 8038A420 003860C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A424 003860C4  7C 08 03 A6 */	mtlr r0
 /* 8038A428 003860C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A42C 003860CC  4E 80 00 20 */	blr 
+/* 8038A42C 003860CC  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>Fv"
 "GetBeginIter__Q36nw4hbm2ut42LinkList<Q36nw4hbm3lyt15ArcResourceLink,0>Fv":
@@ -790,7 +790,7 @@ lbl_8038A3E8:
 /* 8038A454 003860F4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8038A458 003860F8  7C 08 03 A6 */	mtlr r0
 /* 8038A45C 003860FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A460 00386100  4E 80 00 20 */	blr 
+/* 8038A460 00386100  4E 80 00 20 */	blr
 
 .global "DetachAll__Q36nw4hbm3lyt24MultiArcResourceAccessorFv"
 "DetachAll__Q36nw4hbm3lyt24MultiArcResourceAccessorFv":
@@ -853,17 +853,17 @@ lbl_8038A520:
 /* 8038A528 003861C8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8038A52C 003861CC  7C 08 03 A6 */	mtlr r0
 /* 8038A530 003861D0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8038A534 003861D4  4E 80 00 20 */	blr 
+/* 8038A534 003861D4  4E 80 00 20 */	blr
 
 .global "GetResRootDir__Q36nw4hbm3lyt15ArcResourceLinkCFv"
 "GetResRootDir__Q36nw4hbm3lyt15ArcResourceLinkCFv":
 /* 8038A538 003861D8  38 63 00 24 */	addi r3, r3, 0x24
-/* 8038A53C 003861DC  4E 80 00 20 */	blr 
+/* 8038A53C 003861DC  4E 80 00 20 */	blr
 
 .global "GetArcHandle__Q36nw4hbm3lyt15ArcResourceLinkFv"
 "GetArcHandle__Q36nw4hbm3lyt15ArcResourceLinkFv":
 /* 8038A540 003861E0  38 63 00 08 */	addi r3, r3, 8
-/* 8038A544 003861E4  4E 80 00 20 */	blr 
+/* 8038A544 003861E4  4E 80 00 20 */	blr
 
 .global "GetFont__Q36nw4hbm3lyt24MultiArcResourceAccessorFPCc"
 "GetFont__Q36nw4hbm3lyt24MultiArcResourceAccessorFPCc":
@@ -873,33 +873,83 @@ lbl_8038A520:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80469D90
 lbl_80469D90:
-	.incbin "baserom.dol", 0x465E90, 0x1C
+	# ROM: 0x465E90
+	.asciz "lyt_arcResourceAccessor.cpp"
+
 .global lbl_80469DAC
 lbl_80469DAC:
-	.incbin "baserom.dol", 0x465EAC, 0x144
+	# ROM: 0x465EAC
+	.asciz "NW4HBM:Failed assertion bSuccess"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion std::strlen(name) < FONTNAMEBUF_MAX"
+	.asciz "NW4HBM:Failed assertion ! IsAttached()"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (archiveStart)"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "NW4HBM:Pointer must not be NULL (resourceRootDirectory)"
+	.asciz "NW4HBM:Failed assertion IsAttached()"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (pLink)"
+
 .global "__vt__Q36nw4hbm3lyt24MultiArcResourceAccessor"
 "__vt__Q36nw4hbm3lyt24MultiArcResourceAccessor":
-	.incbin "baserom.dol", 0x465FF0, 0x14
+	# ROM: 0x465FF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt24MultiArcResourceAccessorFv" ;# ptr (0x8038A1FC)
+	.4byte "GetResource__Q36nw4hbm3lyt24MultiArcResourceAccessorFUlPCcPUl" ;# ptr (0x8038A46C)
+	.4byte "GetFont__Q36nw4hbm3lyt24MultiArcResourceAccessorFPCc" ;# ptr (0x8038A548)
+
 .global "__vt__Q36nw4hbm3lyt19ArcResourceAccessor"
 "__vt__Q36nw4hbm3lyt19ArcResourceAccessor":
-	.incbin "baserom.dol", 0x466004, 0x44
+	# ROM: 0x466004
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt19ArcResourceAccessorFv" ;# ptr (0x8037C578)
+	.4byte "GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl" ;# ptr (0x8038A17C)
+	.4byte "GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc" ;# ptr (0x8038A19C)
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_80469F48
 lbl_80469F48:
-	.incbin "baserom.dol", 0x466048, 0x24
+	# ROM: 0x466048
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_80469F6C
 lbl_80469F6C:
-	.incbin "baserom.dol", 0x46606C, 0x6C
+	# ROM: 0x46606C
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_80469FD8
 lbl_80469FD8:
-	.incbin "baserom.dol", 0x4660D8, 0x24
+	# ROM: 0x4660D8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_80469FFC
 lbl_80469FFC:
-	.incbin "baserom.dol", 0x4660FC, 0xC
+	# ROM: 0x4660FC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D74B0
 lbl_805D74B0:
-	.incbin "baserom.dol", 0x487030, 0x4
+	# ROM: 0x487030
+	.4byte 0x2E000000
+
 .global lbl_805D74B4
 lbl_805D74B4:
-	.incbin "baserom.dol", 0x487034, 0x4
+	# ROM: 0x487034
+	.4byte 0x2E2E0000
+

@@ -25,7 +25,7 @@
 /* 803BA5BC 003B625C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BA5C0 003B6260  7C 08 03 A6 */	mtlr r0
 /* 803BA5C4 003B6264  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA5C8 003B6268  4E 80 00 20 */	blr 
+/* 803BA5C8 003B6268  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail9WsdPlayerFv"
 "__dt__Q46nw4hbm3snd6detail9WsdPlayerFv":
@@ -58,7 +58,7 @@ lbl_803BA624:
 /* 803BA630 003B62D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BA634 003B62D4  7C 08 03 A6 */	mtlr r0
 /* 803BA638 003B62D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA63C 003B62DC  4E 80 00 20 */	blr 
+/* 803BA63C 003B62DC  4E 80 00 20 */	blr
 
 .global "Prepare__Q46nw4hbm3snd6detail9WaveSoundFPCvliPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUl"
 "Prepare__Q46nw4hbm3snd6detail9WaveSoundFPCvliPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUl":
@@ -105,7 +105,7 @@ lbl_803BA6D0:
 /* 803BA6D4 003B6374  7F 23 CB 78 */	mr r3, r25
 /* 803BA6D8 003B6378  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 803BA6DC 003B637C  7D 89 03 A6 */	mtctr r12
-/* 803BA6E0 003B6380  4E 80 04 21 */	bctrl 
+/* 803BA6E0 003B6380  4E 80 04 21 */	bctrl
 /* 803BA6E4 003B6384  7F 44 D3 78 */	mr r4, r26
 /* 803BA6E8 003B6388  7F 65 DB 78 */	mr r5, r27
 /* 803BA6EC 003B638C  7F 86 E3 78 */	mr r6, r28
@@ -118,7 +118,7 @@ lbl_803BA6D0:
 /* 803BA708 003B63A8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803BA70C 003B63AC  7C 08 03 A6 */	mtlr r0
 /* 803BA710 003B63B0  38 21 00 30 */	addi r1, r1, 0x30
-/* 803BA714 003B63B4  4E 80 00 20 */	blr 
+/* 803BA714 003B63B4  4E 80 00 20 */	blr
 
 .global "Shutdown__Q46nw4hbm3snd6detail9WaveSoundFv"
 "Shutdown__Q46nw4hbm3snd6detail9WaveSoundFv":
@@ -135,7 +135,7 @@ lbl_803BA6D0:
 /* 803BA740 003B63E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803BA744 003B63E4  7C 08 03 A6 */	mtlr r0
 /* 803BA748 003B63E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA74C 003B63EC  4E 80 00 20 */	blr 
+/* 803BA74C 003B63EC  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound"
 "Free__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound":
@@ -175,7 +175,7 @@ lbl_803BA7B8:
 /* 803BA7CC 003B646C  38 80 FF FF */	li r4, -1
 /* 803BA7D0 003B6470  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803BA7D4 003B6474  7D 89 03 A6 */	mtctr r12
-/* 803BA7D8 003B6478  4E 80 04 21 */	bctrl 
+/* 803BA7D8 003B6478  4E 80 04 21 */	bctrl
 /* 803BA7DC 003B647C  7F C3 F3 78 */	mr r3, r30
 /* 803BA7E0 003B6480  7F E4 FB 78 */	mr r4, r31
 /* 803BA7E4 003B6484  48 00 00 29 */	bl "Free__Q46nw4hbm3snd6detail42MemoryPool<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound"
@@ -188,7 +188,7 @@ lbl_803BA7F4:
 /* 803BA7FC 003B649C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803BA800 003B64A0  7C 08 03 A6 */	mtlr r0
 /* 803BA804 003B64A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BA808 003B64A8  4E 80 00 20 */	blr 
+/* 803BA808 003B64A8  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail42MemoryPool<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound"
 "Free__Q46nw4hbm3snd6detail42MemoryPool<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound":
@@ -222,7 +222,7 @@ lbl_803BA85C:
 /* 803BA868 003B6508  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BA86C 003B650C  7C 08 03 A6 */	mtlr r0
 /* 803BA870 003B6510  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA874 003B6514  4E 80 00 20 */	blr 
+/* 803BA874 003B6514  4E 80 00 20 */	blr
 
 .global "RemovePriorityList__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound"
 "RemovePriorityList__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSound":
@@ -250,7 +250,7 @@ lbl_803BA85C:
 /* 803BA8C0 003B6560  80 63 00 00 */	lwz r3, 0(r3)
 /* 803BA8C4 003B6564  7C 08 03 A6 */	mtlr r0
 /* 803BA8C8 003B6568  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BA8CC 003B656C  4E 80 00 20 */	blr 
+/* 803BA8CC 003B656C  4E 80 00 20 */	blr
 
 .global "SetChannelPriority__Q46nw4hbm3snd6detail9WaveSoundFi"
 "SetChannelPriority__Q46nw4hbm3snd6detail9WaveSoundFi":
@@ -289,7 +289,7 @@ lbl_803BA934:
 /* 803BA948 003B65E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BA94C 003B65EC  7C 08 03 A6 */	mtlr r0
 /* 803BA950 003B65F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA954 003B65F4  4E 80 00 20 */	blr 
+/* 803BA954 003B65F4  4E 80 00 20 */	blr
 
 .global "SetPlayerPriority__Q46nw4hbm3snd6detail9WaveSoundFi"
 "SetPlayerPriority__Q46nw4hbm3snd6detail9WaveSoundFi":
@@ -309,7 +309,7 @@ lbl_803BA934:
 /* 803BA98C 003B662C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803BA990 003B6630  7C 08 03 A6 */	mtlr r0
 /* 803BA994 003B6634  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BA998 003B6638  4E 80 00 20 */	blr 
+/* 803BA998 003B6638  4E 80 00 20 */	blr
 
 .global "UpdatePriority__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSoundi"
 "UpdatePriority__Q46nw4hbm3snd6detail52SoundInstanceManager<Q46nw4hbm3snd6detail9WaveSound>FPQ46nw4hbm3snd6detail9WaveSoundi":
@@ -333,7 +333,7 @@ lbl_803BA934:
 /* 803BA9E0 003B6680  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803BA9E4 003B6684  7C 08 03 A6 */	mtlr r0
 /* 803BA9E8 003B6688  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BA9EC 003B668C  4E 80 00 20 */	blr 
+/* 803BA9EC 003B668C  4E 80 00 20 */	blr
 
 .global "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv"
 "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv":
@@ -341,7 +341,7 @@ lbl_803BA934:
 /* 803BA9F4 003B6694  7C 03 00 D0 */	neg r0, r3
 /* 803BA9F8 003B6698  7C 00 1B 78 */	or r0, r0, r3
 /* 803BA9FC 003B669C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803BAA00 003B66A0  4E 80 00 20 */	blr 
+/* 803BAA00 003B66A0  4E 80 00 20 */	blr
 
 .global "DetachTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv"
 "DetachTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv":
@@ -351,17 +351,17 @@ lbl_803BA934:
 .global "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail9WaveSoundCFv"
 "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail9WaveSoundCFv":
 /* 803BAA0C 003B66AC  38 6D C5 F8 */	addi r3, r13, "typeInfo__Q46nw4hbm3snd6detail9WaveSound"-_SDA_BASE_
-/* 803BAA10 003B66B0  4E 80 00 20 */	blr 
+/* 803BAA10 003B66B0  4E 80 00 20 */	blr
 
 .global "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundCFv"
 "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundCFv":
 /* 803BAA14 003B66B4  38 63 00 D8 */	addi r3, r3, 0xd8
-/* 803BAA18 003B66B8  4E 80 00 20 */	blr 
+/* 803BAA18 003B66B8  4E 80 00 20 */	blr
 
 .global "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundFv"
 "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundFv":
 /* 803BAA1C 003B66BC  38 63 00 D8 */	addi r3, r3, 0xd8
-/* 803BAA20 003B66C0  4E 80 00 20 */	blr 
+/* 803BAA20 003B66C0  4E 80 00 20 */	blr
 
 .global "__sinit_snd_WaveSound_cpp"
 "__sinit_snd_WaveSound_cpp":
@@ -372,19 +372,68 @@ lbl_803BA934:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472758
 lbl_80472758:
-	.incbin "baserom.dol", 0x46E858, 0xA8
+	# ROM: 0x46E858
+	.asciz "snd_WaveSound.cpp"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "NW4HBM:Pointer must not be NULL (waveSoundBase)"
+	.asciz "NW4HBM:Pointer must not be NULL (callback)"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (GetSoundPlayer())"
+	.byte 0x00
+
 .global lbl_80472800
 lbl_80472800:
-	.incbin "baserom.dol", 0x46E900, 0x44
+	# ROM: 0x46E900
+	.asciz "priority is out of bounds(%d)\n%d <= priority <= %d not satisfied."
+	.byte 0x00, 0x00
+
 .global "__vt__Q46nw4hbm3snd6detail9WaveSound"
 "__vt__Q46nw4hbm3snd6detail9WaveSound":
-	.incbin "baserom.dol", 0x46E944, 0xC4
+	# ROM: 0x46E944
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail9WaveSoundCFv" ;# ptr (0x803BAA0C)
+	.4byte "__dt__Q46nw4hbm3snd6detail9WaveSoundFv" ;# ptr (0x803BA810)
+	.4byte "Update__Q46nw4hbm3snd6detail10BasicSoundFv" ;# ptr (0x8039F87C)
+	.4byte "StartPrepared__Q46nw4hbm3snd6detail10BasicSoundFv" ;# ptr (0x8039F508)
+	.4byte "Stop__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F520)
+	.4byte "Pause__Q46nw4hbm3snd6detail10BasicSoundFbi" ;# ptr (0x8039F650)
+	.4byte "SetAutoStopCounter__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F78C)
+	.4byte "FadeIn__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F7A4)
+	.4byte "Shutdown__Q46nw4hbm3snd6detail9WaveSoundFv" ;# ptr (0x803BA718)
+	.4byte "IsPrepared__Q46nw4hbm3snd6detail10BasicSoundCFv" ;# ptr (0x8039F82C)
+	.4byte "IsPause__Q46nw4hbm3snd6detail10BasicSoundCFv" ;# ptr (0x8039F868)
+	.4byte "SetInitialVolume__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A00AC)
+	.4byte "SetVolume__Q46nw4hbm3snd6detail10BasicSoundFfi" ;# ptr (0x803A0118)
+	.4byte "SetPitch__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A019C)
+	.4byte "SetPan__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0208)
+	.4byte "SetSurroundPan__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0210)
+	.4byte "SetLpfFreq__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0218)
+	.4byte "SetPlayerPriority__Q46nw4hbm3snd6detail9WaveSoundFi" ;# ptr (0x803BA958)
+	.4byte "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv" ;# ptr (0x803BA9F0)
+	.4byte "DetachTempSpecialHandle__Q46nw4hbm3snd6detail9WaveSoundFv" ;# ptr (0x803BAA04)
+	.4byte "InitParam__Q46nw4hbm3snd6detail10BasicSoundFv" ;# ptr (0x8039F428)
+	.4byte "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundFv" ;# ptr (0x803BAA1C)
+	.4byte "GetBasicPlayer__Q46nw4hbm3snd6detail9WaveSoundCFv" ;# ptr (0x803BAA14)
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_80472908
 lbl_80472908:
-	.incbin "baserom.dol", 0x46EA08, 0x28
+	# ROM: 0x46EA08
+	.asciz "NW4HBM:Pointer must not be NULL (sound)"
+
 .global lbl_80472930
 lbl_80472930:
-	.incbin "baserom.dol", 0x46EA30, 0x18
+	# ROM: 0x46EA30
+	.asciz "SoundInstanceManager.h"
+	.byte 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q46nw4hbm3snd6detail9WaveSound"

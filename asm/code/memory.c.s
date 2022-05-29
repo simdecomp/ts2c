@@ -81,7 +81,7 @@ lbl_803CF870:
 /* 803CF884 003CB524  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CF888 003CB528  7C 08 03 A6 */	mtlr r0
 /* 803CF88C 003CB52C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CF890 003CB530  4E 80 00 20 */	blr 
+/* 803CF890 003CB530  4E 80 00 20 */	blr
 
 .global "__iosAlloc"
 "__iosAlloc":
@@ -228,7 +228,7 @@ lbl_803CFA70:
 /* 803CFA88 003CB728  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CFA8C 003CB72C  7C 08 03 A6 */	mtlr r0
 /* 803CFA90 003CB730  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CFA94 003CB734  4E 80 00 20 */	blr 
+/* 803CFA94 003CB734  4E 80 00 20 */	blr
 
 .global "iosAllocAligned"
 "iosAllocAligned":
@@ -371,7 +371,7 @@ lbl_803CFC64:
 /* 803CFC78 003CB918  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CFC7C 003CB91C  7C 08 03 A6 */	mtlr r0
 /* 803CFC80 003CB920  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CFC84 003CB924  4E 80 00 20 */	blr 
+/* 803CFC84 003CB924  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__heaps"

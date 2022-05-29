@@ -85,7 +85,7 @@ lbl_80377D38:
 /* 80377D44 003739E4  A0 03 00 0C */	lhz r0, 0xc(r3)
 /* 80377D48 003739E8  7C 00 32 14 */	add r0, r0, r6
 /* 80377D4C 003739EC  B0 04 00 0C */	sth r0, 0xc(r4)
-/* 80377D50 003739F0  4E 80 00 20 */	blr 
+/* 80377D50 003739F0  4E 80 00 20 */	blr
 
 .global "GXSetDispCopySrc"
 "GXSetDispCopySrc":
@@ -104,7 +104,7 @@ lbl_80377D38:
 /* 80377D84 00373A24  90 E5 02 30 */	stw r7, 0x230(r5)
 /* 80377D88 00373A28  50 03 C0 0E */	rlwimi r3, r0, 0x18, 0, 7
 /* 80377D8C 00373A2C  90 65 02 34 */	stw r3, 0x234(r5)
-/* 80377D90 00373A30  4E 80 00 20 */	blr 
+/* 80377D90 00373A30  4E 80 00 20 */	blr
 
 .global "GXSetTexCopySrc"
 "GXSetTexCopySrc":
@@ -123,7 +123,7 @@ lbl_80377D38:
 /* 80377DC4 00373A64  90 E5 02 40 */	stw r7, 0x240(r5)
 /* 80377DC8 00373A68  50 03 C0 0E */	rlwimi r3, r0, 0x18, 0, 7
 /* 80377DCC 00373A6C  90 65 02 44 */	stw r3, 0x244(r5)
-/* 80377DD0 00373A70  4E 80 00 20 */	blr 
+/* 80377DD0 00373A70  4E 80 00 20 */	blr
 
 .global "GXSetDispCopyDst"
 "GXSetDispCopyDst":
@@ -135,7 +135,7 @@ lbl_80377D38:
 /* 80377DE8 00373A88  38 00 00 4D */	li r0, 0x4d
 /* 80377DEC 00373A8C  50 03 C0 0E */	rlwimi r3, r0, 0x18, 0, 7
 /* 80377DF0 00373A90  90 64 02 38 */	stw r3, 0x238(r4)
-/* 80377DF4 00373A94  4E 80 00 20 */	blr 
+/* 80377DF4 00373A94  4E 80 00 20 */	blr
 
 .global "GXSetTexCopyDst"
 "GXSetTexCopyDst":
@@ -213,7 +213,7 @@ lbl_80377E88:
 /* 80377F04 00373BA4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80377F08 00373BA8  7C 08 03 A6 */	mtlr r0
 /* 80377F0C 00373BAC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80377F10 00373BB0  4E 80 00 20 */	blr 
+/* 80377F10 00373BB0  4E 80 00 20 */	blr
 
 .global "GXSetDispCopyFrame2Field"
 "GXSetDispCopyFrame2Field":
@@ -224,7 +224,7 @@ lbl_80377E88:
 /* 80377F24 00373BC4  80 04 02 4C */	lwz r0, 0x24c(r4)
 /* 80377F28 00373BC8  54 00 05 22 */	rlwinm r0, r0, 0, 0x14, 0x11
 /* 80377F2C 00373BCC  90 04 02 4C */	stw r0, 0x24c(r4)
-/* 80377F30 00373BD0  4E 80 00 20 */	blr 
+/* 80377F30 00373BD0  4E 80 00 20 */	blr
 
 .global "GXSetCopyClamp"
 "GXSetCopyClamp":
@@ -237,7 +237,7 @@ lbl_80377E88:
 /* 80377F4C 00373BEC  50 60 07 FE */	rlwimi r0, r3, 0, 0x1f, 0x1f
 /* 80377F50 00373BF0  50 60 07 BC */	rlwimi r0, r3, 0, 0x1e, 0x1e
 /* 80377F54 00373BF4  90 04 02 4C */	stw r0, 0x24c(r4)
-/* 80377F58 00373BF8  4E 80 00 20 */	blr 
+/* 80377F58 00373BF8  4E 80 00 20 */	blr
 
 .global "GXGetYScaleFactor"
 "GXGetYScaleFactor":
@@ -394,7 +394,7 @@ lbl_80378140:
 /* 8037817C 00373E1C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80378180 00373E20  7C 08 03 A6 */	mtlr r0
 /* 80378184 00373E24  38 21 00 70 */	addi r1, r1, 0x70
-/* 80378188 00373E28  4E 80 00 20 */	blr 
+/* 80378188 00373E28  4E 80 00 20 */	blr
 
 .global "GXSetDispCopyYScale"
 "GXSetDispCopyYScale":
@@ -452,7 +452,7 @@ lbl_80378248:
 /* 80378248 00373EE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8037824C 00373EEC  7C 08 03 A6 */	mtlr r0
 /* 80378250 00373EF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80378254 00373EF4  4E 80 00 20 */	blr 
+/* 80378254 00373EF4  4E 80 00 20 */	blr
 
 .global "GXSetCopyClear"
 "GXSetCopyClear":
@@ -485,7 +485,7 @@ lbl_80378248:
 /* 803782C0 00373F60  99 07 80 00 */	stb r8, -0x8000(r7)
 /* 803782C4 00373F64  90 A7 80 00 */	stw r5, -0x8000(r7)
 /* 803782C8 00373F68  B0 03 00 02 */	sth r0, 2(r3)
-/* 803782CC 00373F6C  4E 80 00 20 */	blr 
+/* 803782CC 00373F6C  4E 80 00 20 */	blr
 
 .global "GXSetCopyFilter"
 "GXSetCopyFilter":
@@ -613,7 +613,7 @@ lbl_8037848C:
 /* 803784A4 00374144  98 A4 80 00 */	stb r5, -0x8000(r4)
 /* 803784A8 00374148  91 84 80 00 */	stw r12, -0x8000(r4)
 /* 803784AC 0037414C  B0 03 00 02 */	sth r0, 2(r3)
-/* 803784B0 00374150  4E 80 00 20 */	blr 
+/* 803784B0 00374150  4E 80 00 20 */	blr
 
 .global "GXSetDispCopyGamma"
 "GXSetDispCopyGamma":
@@ -621,7 +621,7 @@ lbl_8037848C:
 /* 803784B8 00374158  80 04 02 3C */	lwz r0, 0x23c(r4)
 /* 803784BC 0037415C  50 60 3D F0 */	rlwimi r0, r3, 7, 0x17, 0x18
 /* 803784C0 00374160  90 04 02 3C */	stw r0, 0x23c(r4)
-/* 803784C4 00374164  4E 80 00 20 */	blr 
+/* 803784C4 00374164  4E 80 00 20 */	blr
 
 .global "GXCopyDisp"
 "GXCopyDisp":
@@ -708,7 +708,7 @@ lbl_803785DC:
 lbl_803785F8:
 /* 803785F8 00374298  38 00 00 00 */	li r0, 0
 /* 803785FC 0037429C  B0 05 00 02 */	sth r0, 2(r5)
-/* 80378600 003742A0  4E 80 00 20 */	blr 
+/* 80378600 003742A0  4E 80 00 20 */	blr
 
 .global "GXCopyTex"
 "GXCopyTex":
@@ -804,7 +804,7 @@ lbl_80378734:
 lbl_80378750:
 /* 80378750 003743F0  38 00 00 00 */	li r0, 0
 /* 80378754 003743F4  B0 09 00 02 */	sth r0, 2(r9)
-/* 80378758 003743F8  4E 80 00 20 */	blr 
+/* 80378758 003743F8  4E 80 00 20 */	blr
 
 .global "GXClearBoundingBox"
 "GXClearBoundingBox":
@@ -821,29 +821,116 @@ lbl_80378750:
 /* 80378784 00374424  38 00 00 00 */	li r0, 0
 /* 80378788 00374428  90 85 80 00 */	stw r4, -0x8000(r5)
 /* 8037878C 0037442C  B0 03 00 02 */	sth r0, 2(r3)
-/* 80378790 00374430  4E 80 00 20 */	blr 
+/* 80378790 00374430  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "GXNtsc480IntDf"
 "GXNtsc480IntDf":
-	.incbin "baserom.dol", 0x463E48, 0x3C
+	# ROM: 0x463E48
+	.4byte 0x00000000
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
 .global "GXNtsc480Prog"
 "GXNtsc480Prog":
-	.incbin "baserom.dol", 0x463E84, 0x3C
+	# ROM: 0x463E84
+	.4byte 0x00000002
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000000
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060000
+	.4byte 0x15161500
+	.4byte 0x00000000
+
 .global "GXMpal480IntDf"
 "GXMpal480IntDf":
-	.incbin "baserom.dol", 0x463EC0, 0x3C
+	# ROM: 0x463EC0
+	.4byte 0x00000008
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
 .global "GXPal528IntDf"
 "GXPal528IntDf":
-	.incbin "baserom.dol", 0x463EFC, 0x3C
+	# ROM: 0x463EFC
+	.4byte 0x00000004
+	.4byte 0x02800210
+	.4byte 0x02100028
+	.4byte 0x00170280
+	.4byte 0x02100000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+
 .global "GXEurgb60Hz480IntDf"
 "GXEurgb60Hz480IntDf":
-	.incbin "baserom.dol", 0x463F38, 0x40
+	# ROM: 0x463F38
+	.4byte 0x00000014
+	.4byte 0x028001E0
+	.4byte 0x01E00028
+	.4byte 0x00000280
+	.4byte 0x01E00000
+	.4byte 0x00000001
+	.4byte 0x00000606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060606
+	.4byte 0x06060808
+	.4byte 0x0A0C0A08
+	.4byte 0x08000000
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB7E0
 lbl_805DB7E0:
-	.incbin "baserom.dol", 0x489B00, 0x8
+	# ROM: 0x489B00
+	.4byte 0x43800000
+	.4byte 0x00000000
+
 .global lbl_805DB7E8
 lbl_805DB7E8:
-	.incbin "baserom.dol", 0x489B08, 0x8
+	# ROM: 0x489B08
+	.4byte 0x43300000
+	.4byte 0x00000000
+

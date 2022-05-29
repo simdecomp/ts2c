@@ -4,13 +4,13 @@
 .global "SetSeqPlayer__Q46nw4hbm3snd6detail8SeqTrackFPQ46nw4hbm3snd6detail9SeqPlayer"
 "SetSeqPlayer__Q46nw4hbm3snd6detail8SeqTrackFPQ46nw4hbm3snd6detail9SeqPlayer":
 /* 803A4D30 003A09D0  90 83 00 B4 */	stw r4, 0xb4(r3)
-/* 803A4D34 003A09D4  4E 80 00 20 */	blr 
+/* 803A4D34 003A09D4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail8PoolImplFv"
 "__ct__Q46nw4hbm3snd6detail8PoolImplFv":
 /* 803A4D38 003A09D8  38 00 00 00 */	li r0, 0
 /* 803A4D3C 003A09DC  90 03 00 00 */	stw r0, 0(r3)
-/* 803A4D40 003A09E0  4E 80 00 20 */	blr 
+/* 803A4D40 003A09E0  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail17SeqTrackAllocatorFv"
 "__dt__Q46nw4hbm3snd6detail17SeqTrackAllocatorFv":
@@ -30,4 +30,4 @@ lbl_803A4D6C:
 /* 803A4D74 003A0A14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4D78 003A0A18  7C 08 03 A6 */	mtlr r0
 /* 803A4D7C 003A0A1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4D80 003A0A20  4E 80 00 20 */	blr 
+/* 803A4D80 003A0A20  4E 80 00 20 */	blr

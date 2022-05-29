@@ -29,7 +29,7 @@ lbl_80341F38:
 /* 80341F38 0033DBD8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341F3C 0033DBDC  7C 08 03 A6 */	mtlr r0
 /* 80341F40 0033DBE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341F44 0033DBE4  4E 80 00 20 */	blr 
+/* 80341F44 0033DBE4  4E 80 00 20 */	blr
 
 .global "bta_dm_disable_pm"
 "bta_dm_disable_pm":
@@ -288,7 +288,7 @@ lbl_803422C8:
 /* 803422D0 0033DF70  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803422D4 0033DF74  7C 08 03 A6 */	mtlr r0
 /* 803422D8 0033DF78  38 21 00 40 */	addi r1, r1, 0x40
-/* 803422DC 0033DF7C  4E 80 00 20 */	blr 
+/* 803422DC 0033DF7C  4E 80 00 20 */	blr
 
 .global "bta_dm_pm_set_mode"
 "bta_dm_pm_set_mode":
@@ -534,7 +534,7 @@ lbl_80342648:
 /* 80342650 0033E2F0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80342654 0033E2F4  7C 08 03 A6 */	mtlr r0
 /* 80342658 0033E2F8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8034265C 0033E2FC  4E 80 00 20 */	blr 
+/* 8034265C 0033E2FC  4E 80 00 20 */	blr
 
 .global "bta_dm_pm_btm_cback"
 "bta_dm_pm_btm_cback":
@@ -568,7 +568,7 @@ lbl_803426C0:
 /* 803426C8 0033E368  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803426CC 0033E36C  7C 08 03 A6 */	mtlr r0
 /* 803426D0 0033E370  38 21 00 20 */	addi r1, r1, 0x20
-/* 803426D4 0033E374  4E 80 00 20 */	blr 
+/* 803426D4 0033E374  4E 80 00 20 */	blr
 
 .global "bta_dm_pm_timer_cback"
 "bta_dm_pm_timer_cback":
@@ -638,7 +638,7 @@ lbl_803427B8:
 /* 803427C0 0033E460  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803427C4 0033E464  7C 08 03 A6 */	mtlr r0
 /* 803427C8 0033E468  38 21 00 10 */	addi r1, r1, 0x10
-/* 803427CC 0033E46C  4E 80 00 20 */	blr 
+/* 803427CC 0033E46C  4E 80 00 20 */	blr
 
 .global "bta_dm_pm_btm_status"
 "bta_dm_pm_btm_status":
@@ -722,7 +722,7 @@ lbl_803428D8:
 /* 803428E0 0033E580  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803428E4 0033E584  7C 08 03 A6 */	mtlr r0
 /* 803428E8 0033E588  38 21 00 20 */	addi r1, r1, 0x20
-/* 803428EC 0033E58C  4E 80 00 20 */	blr 
+/* 803428EC 0033E58C  4E 80 00 20 */	blr
 
 .global "bta_dm_pm_timer"
 "bta_dm_pm_timer":
@@ -733,10 +733,17 @@ lbl_803428D8:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80460CB0
 lbl_80460CB0:
-	.incbin "baserom.dol", 0x45CDB0, 0x2C
+	# ROM: 0x45CDB0
+	.asciz "bta_dm_act no more connected service cbs"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80460CDC
 lbl_80460CDC:
-	.incbin "baserom.dol", 0x45CDDC, 0x24
+	# ROM: 0x45CDDC
+	.asciz "bta_dm_act no more pm timers"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "bta_dm_conn_srvcs"

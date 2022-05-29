@@ -145,7 +145,7 @@ lbl_803DBF54:
 /* 803DBF8C 003D7C2C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803DBF90 003D7C30  7C 08 03 A6 */	mtlr r0
 /* 803DBF94 003D7C34  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DBF98 003D7C38  4E 80 00 20 */	blr 
+/* 803DBF98 003D7C38  4E 80 00 20 */	blr
 
 .global "__OSInitAudioSystem"
 "__OSInitAudioSystem":
@@ -274,7 +274,7 @@ lbl_803DC12C:
 /* 803DC154 003D7DF4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803DC158 003D7DF8  7C 08 03 A6 */	mtlr r0
 /* 803DC15C 003D7DFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DC160 003D7E00  4E 80 00 20 */	blr 
+/* 803DC160 003D7E00  4E 80 00 20 */	blr
 
 .global "__OSStopAudioSystem"
 "__OSStopAudioSystem":
@@ -336,9 +336,42 @@ lbl_803DC214:
 /* 803DC220 003D7EC0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803DC224 003D7EC4  7C 08 03 A6 */	mtlr r0
 /* 803DC228 003D7EC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DC22C 003D7ECC  4E 80 00 20 */	blr 
+/* 803DC22C 003D7ECC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "DSPInitCode"
 "DSPInitCode":
-	.incbin "baserom.dol", 0x472510, 0x80
+	# ROM: 0x472510
+	.4byte 0x029F0010
+	.4byte 0x029F0033
+	.4byte 0x029F0034
+	.4byte 0x029F0035
+	.4byte 0x029F0036
+	.4byte 0x029F0037
+	.4byte 0x029F0038
+	.4byte 0x029F0039
+	.4byte 0x12061203
+	.4byte 0x12041205
+	.4byte 0x00808000
+	.4byte 0x0088FFFF
+	.4byte 0x00841000
+	.4byte 0x0064001D
+	.4byte 0x02180000
+	.4byte 0x81001C1E
+	.4byte 0x00441B1E
+	.4byte 0x00840800
+	.4byte 0x00640027
+	.4byte 0x191E0000
+	.4byte 0x00DEFFFC
+	.4byte 0x02A08000
+	.4byte 0x029C0028
+	.4byte 0x16FC0054
+	.4byte 0x16FD4348
+	.4byte 0x002102FF
+	.4byte 0x02FF02FF
+	.4byte 0x02FF02FF
+	.4byte 0x02FF02FF
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+

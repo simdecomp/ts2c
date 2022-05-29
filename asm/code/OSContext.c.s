@@ -77,7 +77,7 @@ lbl_803DC8D0:
 /* 803DC948 003D85E8  CB C4 01 80 */	lfd f30, 0x180(r4)
 /* 803DC94C 003D85EC  CB E4 01 88 */	lfd f31, 0x188(r4)
 lbl_803DC950:
-/* 803DC950 003D85F0  4E 80 00 20 */	blr 
+/* 803DC950 003D85F0  4E 80 00 20 */	blr
 
 .global "__OSSaveFPUContext"
 "__OSSaveFPUContext":
@@ -155,7 +155,7 @@ lbl_803DC950:
 /* 803DCA70 003D8710  F3 C5 02 B8 */	psq_st f30, 696(r5), 0, qr0
 /* 803DCA74 003D8714  F3 E5 02 C0 */	psq_st f31, 704(r5), 0, qr0
 lbl_803DCA78:
-/* 803DCA78 003D8718  4E 80 00 20 */	blr 
+/* 803DCA78 003D8718  4E 80 00 20 */	blr
 
 .global "OSSaveFPUContext"
 "OSSaveFPUContext":
@@ -177,7 +177,7 @@ lbl_803DCA78:
 /* 803DCAAC 003D874C  7C C0 00 A6 */	mfmsr r6
 /* 803DCAB0 003D8750  60 C6 00 02 */	ori r6, r6, 2
 /* 803DCAB4 003D8754  7C C0 01 24 */	mtmsr r6
-/* 803DCAB8 003D8758  4E 80 00 20 */	blr 
+/* 803DCAB8 003D8758  4E 80 00 20 */	blr
 lbl_803DCABC:
 /* 803DCABC 003D875C  80 C3 01 9C */	lwz r6, 0x19c(r3)
 /* 803DCAC0 003D8760  54 C6 04 E2 */	rlwinm r6, r6, 0, 0x13, 0x11
@@ -186,14 +186,14 @@ lbl_803DCABC:
 /* 803DCACC 003D876C  54 C6 04 E2 */	rlwinm r6, r6, 0, 0x13, 0x11
 /* 803DCAD0 003D8770  60 C6 00 02 */	ori r6, r6, 2
 /* 803DCAD4 003D8774  7C C0 01 24 */	mtmsr r6
-/* 803DCAD8 003D8778  4C 00 01 2C */	isync 
-/* 803DCADC 003D877C  4E 80 00 20 */	blr 
+/* 803DCAD8 003D8778  4C 00 01 2C */	isync
+/* 803DCADC 003D877C  4E 80 00 20 */	blr
 
 .global "OSGetCurrentContext"
 "OSGetCurrentContext":
 /* 803DCAE0 003D8780  3C 60 80 00 */	lis r3, 0x800000D4@ha
 /* 803DCAE4 003D8784  80 63 00 D4 */	lwz r3, 0x800000D4@l(r3)
-/* 803DCAE8 003D8788  4E 80 00 20 */	blr 
+/* 803DCAE8 003D8788  4E 80 00 20 */	blr
 
 .global "OSSaveContext"
 "OSSaveContext":
@@ -228,7 +228,7 @@ lbl_803DCABC:
 /* 803DCB5C 003D87FC  38 00 00 01 */	li r0, 1
 /* 803DCB60 003D8800  90 03 00 0C */	stw r0, 0xc(r3)
 /* 803DCB64 003D8804  38 60 00 00 */	li r3, 0
-/* 803DCB68 003D8808  4E 80 00 20 */	blr 
+/* 803DCB68 003D8808  4E 80 00 20 */	blr
 
 .global "OSLoadContext"
 "OSLoadContext":
@@ -288,12 +288,12 @@ lbl_803DCBC0:
 /* 803DCC34 003D88D4  7C 9B 03 A6 */	mtspr 0x1b, r4
 /* 803DCC38 003D88D8  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 803DCC3C 003D88DC  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 803DCC40 003D88E0  4C 00 00 64 */	rfi 
+/* 803DCC40 003D88E0  4C 00 00 64 */	rfi
 
 .global "OSGetStackPointer"
 "OSGetStackPointer":
 /* 803DCC44 003D88E4  7C 23 0B 78 */	mr r3, r1
-/* 803DCC48 003D88E8  4E 80 00 20 */	blr 
+/* 803DCC48 003D88E8  4E 80 00 20 */	blr
 
 .global "OSSwitchFiber"
 "OSSwitchFiber":
@@ -303,12 +303,12 @@ lbl_803DCBC0:
 /* 803DCC58 003D88F8  7C 81 23 78 */	mr r1, r4
 /* 803DCC5C 003D88FC  90 05 00 04 */	stw r0, 4(r5)
 /* 803DCC60 003D8900  7C 68 03 A6 */	mtlr r3
-/* 803DCC64 003D8904  4E 80 00 21 */	blrl 
+/* 803DCC64 003D8904  4E 80 00 21 */	blrl
 /* 803DCC68 003D8908  80 A1 00 00 */	lwz r5, 0(r1)
 /* 803DCC6C 003D890C  80 05 00 04 */	lwz r0, 4(r5)
 /* 803DCC70 003D8910  7C 08 03 A6 */	mtlr r0
 /* 803DCC74 003D8914  7C A1 2B 78 */	mr r1, r5
-/* 803DCC78 003D8918  4E 80 00 20 */	blr 
+/* 803DCC78 003D8918  4E 80 00 20 */	blr
 
 .global "OSSwitchFiberEx"
 "OSSwitchFiberEx":
@@ -318,12 +318,12 @@ lbl_803DCBC0:
 /* 803DCC88 003D8928  7D 01 43 78 */	mr r1, r8
 /* 803DCC8C 003D892C  90 09 00 04 */	stw r0, 4(r9)
 /* 803DCC90 003D8930  7C E8 03 A6 */	mtlr r7
-/* 803DCC94 003D8934  4E 80 00 21 */	blrl 
+/* 803DCC94 003D8934  4E 80 00 21 */	blrl
 /* 803DCC98 003D8938  80 A1 00 00 */	lwz r5, 0(r1)
 /* 803DCC9C 003D893C  80 05 00 04 */	lwz r0, 4(r5)
 /* 803DCCA0 003D8940  7C 08 03 A6 */	mtlr r0
 /* 803DCCA4 003D8944  7C A1 2B 78 */	mr r1, r5
-/* 803DCCA8 003D8948  4E 80 00 20 */	blr 
+/* 803DCCA8 003D8948  4E 80 00 20 */	blr
 
 .global "OSClearContext"
 "OSClearContext":
@@ -333,9 +333,9 @@ lbl_803DCBC0:
 /* 803DCCB8 003D8958  B0 A3 01 A2 */	sth r5, 0x1a2(r3)
 /* 803DCCBC 003D895C  80 04 00 D8 */	lwz r0, 0x800000D8@l(r4)
 /* 803DCCC0 003D8960  7C 03 00 40 */	cmplw r3, r0
-/* 803DCCC4 003D8964  4C 82 00 20 */	bnelr 
+/* 803DCCC4 003D8964  4C 82 00 20 */	bnelr
 /* 803DCCC8 003D8968  90 A4 00 D8 */	stw r5, 0xd8(r4)
-/* 803DCCCC 003D896C  4E 80 00 20 */	blr 
+/* 803DCCCC 003D896C  4E 80 00 20 */	blr
 
 .global "OSInitContext"
 "OSInitContext":
@@ -550,14 +550,14 @@ lbl_803DCFD4:
 /* 803DCFDC 003D8C7C  80 01 02 F4 */	lwz r0, 0x2f4(r1)
 /* 803DCFE0 003D8C80  7C 08 03 A6 */	mtlr r0
 /* 803DCFE4 003D8C84  38 21 02 F0 */	addi r1, r1, 0x2f0
-/* 803DCFE8 003D8C88  4E 80 00 20 */	blr 
+/* 803DCFE8 003D8C88  4E 80 00 20 */	blr
 
 .global "OSSwitchFPUContext"
 "OSSwitchFPUContext":
 /* 803DCFEC 003D8C8C  7C A0 00 A6 */	mfmsr r5
 /* 803DCFF0 003D8C90  60 A5 20 00 */	ori r5, r5, 0x2000
 /* 803DCFF4 003D8C94  7C A0 01 24 */	mtmsr r5
-/* 803DCFF8 003D8C98  4C 00 01 2C */	isync 
+/* 803DCFF8 003D8C98  4C 00 01 2C */	isync
 /* 803DCFFC 003D8C9C  80 A4 01 9C */	lwz r5, 0x19c(r4)
 /* 803DD000 003D8CA0  60 A5 20 00 */	ori r5, r5, 0x2000
 /* 803DD004 003D8CA4  7C BB 03 A6 */	mtspr 0x1b, r5
@@ -588,7 +588,7 @@ lbl_803DD02C:
 /* 803DD060 003D8D00  80 A4 00 14 */	lwz r5, 0x14(r4)
 /* 803DD064 003D8D04  80 64 00 0C */	lwz r3, 0xc(r4)
 /* 803DD068 003D8D08  80 84 00 10 */	lwz r4, 0x10(r4)
-/* 803DD06C 003D8D0C  4C 00 00 64 */	rfi 
+/* 803DD06C 003D8D0C  4C 00 00 64 */	rfi
 
 .global "__OSContextInit"
 "__OSContextInit":
@@ -609,12 +609,39 @@ lbl_803DD02C:
 /* 803DD0A8 003D8D48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DD0AC 003D8D4C  7C 08 03 A6 */	mtlr r0
 /* 803DD0B0 003D8D50  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DD0B4 003D8D54  4E 80 00 20 */	blr 
+/* 803DD0B4 003D8D54  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804766C8
 lbl_804766C8:
-	.incbin "baserom.dol", 0x4727C8, 0x1B8
+	# ROM: 0x4727C8
+	.asciz "------------------------- Context 0x%08x -------------------------\n"
+	.4byte 0x00000000
+	.asciz "r%-2d  = 0x%08x (%14d)  r%-2d  = 0x%08x (%14d)\n"
+	.asciz "LR   = 0x%08x                   CR   = 0x%08x\n"
+	.byte 0x00
+	.asciz "SRR0 = 0x%08x                   SRR1 = 0x%08x\n"
+	.byte 0x00
+	.asciz "\nGQRs----------\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "gqr%d = 0x%08x \t gqr%d = 0x%08x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "\n\nFPRs----------\n"
+	.byte 0x00, 0x00
+	.asciz "fr%d \t= %d \t fr%d \t= %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "\n\nPSFs----------\n"
+	.byte 0x00, 0x00
+	.asciz "ps%d \t= 0x%x \t ps%d \t= 0x%x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "\nAddress:      Back Chain    LR Save\n"
+	.byte 0x00, 0x00
+	.asciz "0x%08x:   0x%08x    0x%08x\n"
+
 .global lbl_80476880
 lbl_80476880:
-	.incbin "baserom.dol", 0x472980, 0x28
+	# ROM: 0x472980
+	.asciz "FPU-unavailable handler installed\n"
+	.byte 0x00
+	.4byte 0x00000000
+

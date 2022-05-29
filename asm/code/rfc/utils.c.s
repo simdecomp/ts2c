@@ -18,7 +18,7 @@ lbl_80362F10:
 /* 80362F18 0035EBB8  40 82 FF E8 */	bne lbl_80362F00
 /* 80362F1C 0035EBBC  20 06 00 FF */	subfic r0, r6, 0xff
 /* 80362F20 0035EBC0  54 03 06 3E */	clrlwi r3, r0, 0x18
-/* 80362F24 0035EBC4  4E 80 00 20 */	blr 
+/* 80362F24 0035EBC4  4E 80 00 20 */	blr
 
 .global "rfc_check_fcs"
 "rfc_check_fcs":
@@ -42,7 +42,7 @@ lbl_80362F48:
 /* 80362F64 0035EC04  38 03 FF 31 */	addi r0, r3, -207
 /* 80362F68 0035EC08  7C 00 00 34 */	cntlzw r0, r0
 /* 80362F6C 0035EC0C  54 03 DE 3E */	rlwinm r3, r0, 0x1b, 0x18, 0x1f
-/* 80362F70 0035EC10  4E 80 00 20 */	blr 
+/* 80362F70 0035EC10  4E 80 00 20 */	blr
 
 .global "rfc_alloc_multiplexer_channel"
 "rfc_alloc_multiplexer_channel":
@@ -137,7 +137,7 @@ lbl_803630B4:
 /* 803630BC 0035ED5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803630C0 0035ED60  7C 08 03 A6 */	mtlr r0
 /* 803630C4 0035ED64  38 21 00 20 */	addi r1, r1, 0x20
-/* 803630C8 0035ED68  4E 80 00 20 */	blr 
+/* 803630C8 0035ED68  4E 80 00 20 */	blr
 
 .global "rfc_release_multiplexer_channel"
 "rfc_release_multiplexer_channel":
@@ -177,7 +177,7 @@ lbl_80363118:
 /* 80363144 0035EDE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80363148 0035EDE8  7C 08 03 A6 */	mtlr r0
 /* 8036314C 0035EDEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80363150 0035EDF0  4E 80 00 20 */	blr 
+/* 80363150 0035EDF0  4E 80 00 20 */	blr
 
 .global "rfc_timer_start"
 "rfc_timer_start":
@@ -210,7 +210,7 @@ lbl_8036319C:
 /* 803631B8 0035EE58  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803631BC 0035EE5C  7C 08 03 A6 */	mtlr r0
 /* 803631C0 0035EE60  38 21 00 10 */	addi r1, r1, 0x10
-/* 803631C4 0035EE64  4E 80 00 20 */	blr 
+/* 803631C4 0035EE64  4E 80 00 20 */	blr
 
 .global "rfc_timer_stop"
 "rfc_timer_stop":
@@ -236,7 +236,7 @@ lbl_80363204:
 /* 80363210 0035EEB0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80363214 0035EEB4  7C 08 03 A6 */	mtlr r0
 /* 80363218 0035EEB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036321C 0035EEBC  4E 80 00 20 */	blr 
+/* 8036321C 0035EEBC  4E 80 00 20 */	blr
 
 .global "rfc_port_timer_start"
 "rfc_port_timer_start":
@@ -272,7 +272,7 @@ lbl_80363270:
 /* 80363290 0035EF30  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80363294 0035EF34  7C 08 03 A6 */	mtlr r0
 /* 80363298 0035EF38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036329C 0035EF3C  4E 80 00 20 */	blr 
+/* 8036329C 0035EF3C  4E 80 00 20 */	blr
 
 .global "rfc_port_timer_stop"
 "rfc_port_timer_stop":
@@ -298,7 +298,7 @@ lbl_803632DC:
 /* 803632E8 0035EF88  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803632EC 0035EF8C  7C 08 03 A6 */	mtlr r0
 /* 803632F0 0035EF90  38 21 00 10 */	addi r1, r1, 0x10
-/* 803632F4 0035EF94  4E 80 00 20 */	blr 
+/* 803632F4 0035EF94  4E 80 00 20 */	blr
 
 .global "rfc_check_mcb_active"
 "rfc_check_mcb_active":
@@ -355,16 +355,16 @@ lbl_803633A8:
 /* 803633AC 0035F04C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803633B0 0035F050  7C 08 03 A6 */	mtlr r0
 /* 803633B4 0035F054  38 21 00 10 */	addi r1, r1, 0x10
-/* 803633B8 0035F058  4E 80 00 20 */	blr 
+/* 803633B8 0035F058  4E 80 00 20 */	blr
 
 .global "rfcomm_process_timeout"
 "rfcomm_process_timeout":
 /* 803633BC 0035F05C  A0 03 00 14 */	lhz r0, 0x14(r3)
 /* 803633C0 0035F060  2C 00 00 0C */	cmpwi r0, 0xc
 /* 803633C4 0035F064  41 82 00 20 */	beq lbl_803633E4
-/* 803633C8 0035F068  4C 80 00 20 */	bgelr 
+/* 803633C8 0035F068  4C 80 00 20 */	bgelr
 /* 803633CC 0035F06C  2C 00 00 0B */	cmpwi r0, 0xb
-/* 803633D0 0035F070  4D 80 00 20 */	bltlr 
+/* 803633D0 0035F070  4D 80 00 20 */	bltlr
 /* 803633D4 0035F074  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 803633D8 0035F078  38 80 00 05 */	li r4, 5
 /* 803633DC 0035F07C  38 A0 00 00 */	li r5, 0
@@ -374,7 +374,7 @@ lbl_803633E4:
 /* 803633E8 0035F088  38 80 00 05 */	li r4, 5
 /* 803633EC 0035F08C  38 A0 00 00 */	li r5, 0
 /* 803633F0 0035F090  4B FF CD EC */	b "rfc_port_sm_execute"
-/* 803633F4 0035F094  4E 80 00 20 */	blr 
+/* 803633F4 0035F094  4E 80 00 20 */	blr
 
 .global "rfc_sec_check_complete"
 "rfc_sec_check_complete":
@@ -400,7 +400,7 @@ lbl_8036343C:
 /* 8036343C 0035F0DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80363440 0035F0E0  7C 08 03 A6 */	mtlr r0
 /* 80363444 0035F0E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80363448 0035F0E8  4E 80 00 20 */	blr 
+/* 80363448 0035F0E8  4E 80 00 20 */	blr
 
 .global "rfc_port_closed"
 "rfc_port_closed":
@@ -496,7 +496,7 @@ lbl_8036357C:
 /* 80363594 0035F234  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80363598 0035F238  7C 08 03 A6 */	mtlr r0
 /* 8036359C 0035F23C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803635A0 0035F240  4E 80 00 20 */	blr 
+/* 803635A0 0035F240  4E 80 00 20 */	blr
 
 .global "rfc_inc_credit"
 "rfc_inc_credit":
@@ -536,14 +536,14 @@ lbl_8036361C:
 /* 80363620 0035F2C0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80363624 0035F2C4  7C 08 03 A6 */	mtlr r0
 /* 80363628 0035F2C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036362C 0035F2CC  4E 80 00 20 */	blr 
+/* 8036362C 0035F2CC  4E 80 00 20 */	blr
 
 .global "rfc_dec_credit"
 "rfc_dec_credit":
 /* 80363630 0035F2D0  80 83 00 6C */	lwz r4, 0x6c(r3)
 /* 80363634 0035F2D4  88 04 00 72 */	lbz r0, 0x72(r4)
 /* 80363638 0035F2D8  28 00 00 02 */	cmplwi r0, 2
-/* 8036363C 0035F2DC  4C 82 00 20 */	bnelr 
+/* 8036363C 0035F2DC  4C 82 00 20 */	bnelr
 /* 80363640 0035F2E0  A0 83 00 98 */	lhz r4, 0x98(r3)
 /* 80363644 0035F2E4  2C 04 00 00 */	cmpwi r4, 0
 /* 80363648 0035F2E8  41 82 00 0C */	beq lbl_80363654
@@ -552,10 +552,10 @@ lbl_8036361C:
 lbl_80363654:
 /* 80363654 0035F2F4  A0 03 00 98 */	lhz r0, 0x98(r3)
 /* 80363658 0035F2F8  2C 00 00 00 */	cmpwi r0, 0
-/* 8036365C 0035F2FC  4C 82 00 20 */	bnelr 
+/* 8036365C 0035F2FC  4C 82 00 20 */	bnelr
 /* 80363660 0035F300  38 00 00 01 */	li r0, 1
 /* 80363664 0035F304  98 03 00 24 */	stb r0, 0x24(r3)
-/* 80363668 0035F308  4E 80 00 20 */	blr 
+/* 80363668 0035F308  4E 80 00 20 */	blr
 
 .global "rfc_check_send_cmd"
 "rfc_check_send_cmd":
@@ -586,26 +586,107 @@ lbl_803636BC:
 /* 803636C0 0035F360  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803636C4 0035F364  7C 08 03 A6 */	mtlr r0
 /* 803636C8 0035F368  38 21 00 10 */	addi r1, r1, 0x10
-/* 803636CC 0035F36C  4E 80 00 20 */	blr 
+/* 803636CC 0035F36C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "rfc_crctable"
 "rfc_crctable":
-	.incbin "baserom.dol", 0x418BD8, 0x100
+	# ROM: 0x418BD8
+	.4byte 0x0091E372
+	.4byte 0x0796E475
+	.4byte 0x0E9FED7C
+	.4byte 0x0998EA7B
+	.4byte 0x1C8DFF6E
+	.4byte 0x1B8AF869
+	.4byte 0x1283F160
+	.4byte 0x1584F667
+	.4byte 0x38A9DB4A
+	.4byte 0x3FAEDC4D
+	.4byte 0x36A7D544
+	.4byte 0x31A0D243
+	.4byte 0x24B5C756
+	.4byte 0x23B2C051
+	.4byte 0x2ABBC958
+	.4byte 0x2DBCCE5F
+	.4byte 0x70E19302
+	.4byte 0x77E69405
+	.4byte 0x7EEF9D0C
+	.4byte 0x79E89A0B
+	.4byte 0x6CFD8F1E
+	.4byte 0x6BFA8819
+	.4byte 0x62F38110
+	.4byte 0x65F48617
+	.4byte 0x48D9AB3A
+	.4byte 0x4FDEAC3D
+	.4byte 0x46D7A534
+	.4byte 0x41D0A233
+	.4byte 0x54C5B726
+	.4byte 0x53C2B021
+	.4byte 0x5ACBB928
+	.4byte 0x5DCCBE2F
+	.4byte 0xE0710392
+	.4byte 0xE7760495
+	.4byte 0xEE7F0D9C
+	.4byte 0xE9780A9B
+	.4byte 0xFC6D1F8E
+	.4byte 0xFB6A1889
+	.4byte 0xF2631180
+	.4byte 0xF5641687
+	.4byte 0xD8493BAA
+	.4byte 0xDF4E3CAD
+	.4byte 0xD64735A4
+	.4byte 0xD14032A3
+	.4byte 0xC45527B6
+	.4byte 0xC35220B1
+	.4byte 0xCA5B29B8
+	.4byte 0xCD5C2EBF
+	.4byte 0x900173E2
+	.4byte 0x970674E5
+	.4byte 0x9E0F7DEC
+	.4byte 0x99087AEB
+	.4byte 0x8C1D6FFE
+	.4byte 0x8B1A68F9
+	.4byte 0x821361F0
+	.4byte 0x851466F7
+	.4byte 0xA8394BDA
+	.4byte 0xAF3E4CDD
+	.4byte 0xA63745D4
+	.4byte 0xA13042D3
+	.4byte 0xB42557C6
+	.4byte 0xB32250C1
+	.4byte 0xBA2B59C8
+	.4byte 0xBD2C5ECF
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804659D8
 lbl_804659D8:
-	.incbin "baserom.dol", 0x461AD8, 0x10
+	# ROM: 0x461AD8
+	.asciz "rfc_timer_stop"
+	.byte 0x00
+
 .global lbl_804659E8
 lbl_804659E8:
-	.incbin "baserom.dol", 0x461AE8, 0x20
+	# ROM: 0x461AE8
+	.asciz "rfc_timer_start - timeout:%d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465A08
 lbl_80465A08:
-	.incbin "baserom.dol", 0x461B08, 0x24
+	# ROM: 0x461B08
+	.asciz "rfc_port_timer_start - timeout:%d"
+	.byte 0x00, 0x00
+
 .global lbl_80465A2C
 lbl_80465A2C:
-	.incbin "baserom.dol", 0x461B2C, 0x24
+	# ROM: 0x461B2C
+	.asciz "rfc_port_timer_stop"
+	.asciz "rfc_port_closed"
+
 .global lbl_80465A50
 lbl_80465A50:
-	.incbin "baserom.dol", 0x461B50, 0x18
+	# ROM: 0x461B50
+	.asciz "rfc_inc_credit:%d"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

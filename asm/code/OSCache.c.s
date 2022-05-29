@@ -7,12 +7,12 @@
 /* 803DC234 003D7ED4  7C 70 FA A6 */	mfspr r3, 0x3f0
 /* 803DC238 003D7ED8  60 63 40 00 */	ori r3, r3, 0x4000
 /* 803DC23C 003D7EDC  7C 70 FB A6 */	mtspr 0x3f0, r3
-/* 803DC240 003D7EE0  4E 80 00 20 */	blr 
+/* 803DC240 003D7EE0  4E 80 00 20 */	blr
 
 .global "DCInvalidateRange"
 "DCInvalidateRange":
 /* 803DC244 003D7EE4  28 04 00 00 */	cmplwi r4, 0
-/* 803DC248 003D7EE8  4C 81 00 20 */	blelr 
+/* 803DC248 003D7EE8  4C 81 00 20 */	blelr
 /* 803DC24C 003D7EEC  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC250 003D7EF0  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC254 003D7EF4  38 84 00 1F */	addi r4, r4, 0x1f
@@ -22,12 +22,12 @@ lbl_803DC260:
 /* 803DC260 003D7F00  7C 00 1B AC */	dcbi 0, r3
 /* 803DC264 003D7F04  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC268 003D7F08  42 00 FF F8 */	bdnz lbl_803DC260
-/* 803DC26C 003D7F0C  4E 80 00 20 */	blr 
+/* 803DC26C 003D7F0C  4E 80 00 20 */	blr
 
 .global "DCFlushRange"
 "DCFlushRange":
 /* 803DC270 003D7F10  28 04 00 00 */	cmplwi r4, 0
-/* 803DC274 003D7F14  4C 81 00 20 */	blelr 
+/* 803DC274 003D7F14  4C 81 00 20 */	blelr
 /* 803DC278 003D7F18  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC27C 003D7F1C  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC280 003D7F20  38 84 00 1F */	addi r4, r4, 0x1f
@@ -37,13 +37,13 @@ lbl_803DC28C:
 /* 803DC28C 003D7F2C  7C 00 18 AC */	dcbf 0, r3
 /* 803DC290 003D7F30  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC294 003D7F34  42 00 FF F8 */	bdnz lbl_803DC28C
-/* 803DC298 003D7F38  44 00 00 02 */	sc 
-/* 803DC29C 003D7F3C  4E 80 00 20 */	blr 
+/* 803DC298 003D7F38  44 00 00 02 */	sc
+/* 803DC29C 003D7F3C  4E 80 00 20 */	blr
 
 .global "DCStoreRange"
 "DCStoreRange":
 /* 803DC2A0 003D7F40  28 04 00 00 */	cmplwi r4, 0
-/* 803DC2A4 003D7F44  4C 81 00 20 */	blelr 
+/* 803DC2A4 003D7F44  4C 81 00 20 */	blelr
 /* 803DC2A8 003D7F48  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC2AC 003D7F4C  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC2B0 003D7F50  38 84 00 1F */	addi r4, r4, 0x1f
@@ -53,13 +53,13 @@ lbl_803DC2BC:
 /* 803DC2BC 003D7F5C  7C 00 18 6C */	dcbst 0, r3
 /* 803DC2C0 003D7F60  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC2C4 003D7F64  42 00 FF F8 */	bdnz lbl_803DC2BC
-/* 803DC2C8 003D7F68  44 00 00 02 */	sc 
-/* 803DC2CC 003D7F6C  4E 80 00 20 */	blr 
+/* 803DC2C8 003D7F68  44 00 00 02 */	sc
+/* 803DC2CC 003D7F6C  4E 80 00 20 */	blr
 
 .global "DCFlushRangeNoSync"
 "DCFlushRangeNoSync":
 /* 803DC2D0 003D7F70  28 04 00 00 */	cmplwi r4, 0
-/* 803DC2D4 003D7F74  4C 81 00 20 */	blelr 
+/* 803DC2D4 003D7F74  4C 81 00 20 */	blelr
 /* 803DC2D8 003D7F78  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC2DC 003D7F7C  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC2E0 003D7F80  38 84 00 1F */	addi r4, r4, 0x1f
@@ -69,12 +69,12 @@ lbl_803DC2EC:
 /* 803DC2EC 003D7F8C  7C 00 18 AC */	dcbf 0, r3
 /* 803DC2F0 003D7F90  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC2F4 003D7F94  42 00 FF F8 */	bdnz lbl_803DC2EC
-/* 803DC2F8 003D7F98  4E 80 00 20 */	blr 
+/* 803DC2F8 003D7F98  4E 80 00 20 */	blr
 
 .global "DCStoreRangeNoSync"
 "DCStoreRangeNoSync":
 /* 803DC2FC 003D7F9C  28 04 00 00 */	cmplwi r4, 0
-/* 803DC300 003D7FA0  4C 81 00 20 */	blelr 
+/* 803DC300 003D7FA0  4C 81 00 20 */	blelr
 /* 803DC304 003D7FA4  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC308 003D7FA8  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC30C 003D7FAC  38 84 00 1F */	addi r4, r4, 0x1f
@@ -84,12 +84,12 @@ lbl_803DC318:
 /* 803DC318 003D7FB8  7C 00 18 6C */	dcbst 0, r3
 /* 803DC31C 003D7FBC  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC320 003D7FC0  42 00 FF F8 */	bdnz lbl_803DC318
-/* 803DC324 003D7FC4  4E 80 00 20 */	blr 
+/* 803DC324 003D7FC4  4E 80 00 20 */	blr
 
 .global "DCZeroRange"
 "DCZeroRange":
 /* 803DC328 003D7FC8  28 04 00 00 */	cmplwi r4, 0
-/* 803DC32C 003D7FCC  4C 81 00 20 */	blelr 
+/* 803DC32C 003D7FCC  4C 81 00 20 */	blelr
 /* 803DC330 003D7FD0  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC334 003D7FD4  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC338 003D7FD8  38 84 00 1F */	addi r4, r4, 0x1f
@@ -99,12 +99,12 @@ lbl_803DC344:
 /* 803DC344 003D7FE4  7C 00 1F EC */	dcbz 0, r3
 /* 803DC348 003D7FE8  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC34C 003D7FEC  42 00 FF F8 */	bdnz lbl_803DC344
-/* 803DC350 003D7FF0  4E 80 00 20 */	blr 
+/* 803DC350 003D7FF0  4E 80 00 20 */	blr
 
 .global "ICInvalidateRange"
 "ICInvalidateRange":
 /* 803DC354 003D7FF4  28 04 00 00 */	cmplwi r4, 0
-/* 803DC358 003D7FF8  4C 81 00 20 */	blelr 
+/* 803DC358 003D7FF8  4C 81 00 20 */	blelr
 /* 803DC35C 003D7FFC  54 65 06 FE */	clrlwi r5, r3, 0x1b
 /* 803DC360 003D8000  7C 84 2A 14 */	add r4, r4, r5
 /* 803DC364 003D8004  38 84 00 1F */	addi r4, r4, 0x1f
@@ -115,23 +115,23 @@ lbl_803DC370:
 /* 803DC374 003D8014  38 63 00 20 */	addi r3, r3, 0x20
 /* 803DC378 003D8018  42 00 FF F8 */	bdnz lbl_803DC370
 /* 803DC37C 003D801C  7C 00 04 AC */	sync 0
-/* 803DC380 003D8020  4C 00 01 2C */	isync 
-/* 803DC384 003D8024  4E 80 00 20 */	blr 
+/* 803DC380 003D8020  4C 00 01 2C */	isync
+/* 803DC384 003D8024  4E 80 00 20 */	blr
 
 .global "ICFlashInvalidate"
 "ICFlashInvalidate":
 /* 803DC388 003D8028  7C 70 FA A6 */	mfspr r3, 0x3f0
 /* 803DC38C 003D802C  60 63 08 00 */	ori r3, r3, 0x800
 /* 803DC390 003D8030  7C 70 FB A6 */	mtspr 0x3f0, r3
-/* 803DC394 003D8034  4E 80 00 20 */	blr 
+/* 803DC394 003D8034  4E 80 00 20 */	blr
 
 .global "ICEnable"
 "ICEnable":
-/* 803DC398 003D8038  4C 00 01 2C */	isync 
+/* 803DC398 003D8038  4C 00 01 2C */	isync
 /* 803DC39C 003D803C  7C 70 FA A6 */	mfspr r3, 0x3f0
 /* 803DC3A0 003D8040  60 63 80 00 */	ori r3, r3, 0x8000
 /* 803DC3A4 003D8044  7C 70 FB A6 */	mtspr 0x3f0, r3
-/* 803DC3A8 003D8048  4E 80 00 20 */	blr 
+/* 803DC3A8 003D8048  4E 80 00 20 */	blr
 
 .global "__LCEnable"
 "__LCEnable":
@@ -149,24 +149,24 @@ lbl_803DC3C4:
 /* 803DC3D4 003D8074  7C 98 E2 A6 */	mfspr r4, 0x398
 /* 803DC3D8 003D8078  64 84 10 0F */	oris r4, r4, 0x100f
 /* 803DC3DC 003D807C  7C 98 E3 A6 */	mtspr 0x398, r4
-/* 803DC3E0 003D8080  60 00 00 00 */	nop 
-/* 803DC3E4 003D8084  60 00 00 00 */	nop 
-/* 803DC3E8 003D8088  60 00 00 00 */	nop 
-/* 803DC3EC 003D808C  60 00 00 00 */	nop 
-/* 803DC3F0 003D8090  60 00 00 00 */	nop 
-/* 803DC3F4 003D8094  60 00 00 00 */	nop 
-/* 803DC3F8 003D8098  60 00 00 00 */	nop 
-/* 803DC3FC 003D809C  60 00 00 00 */	nop 
-/* 803DC400 003D80A0  60 00 00 00 */	nop 
-/* 803DC404 003D80A4  60 00 00 00 */	nop 
-/* 803DC408 003D80A8  60 00 00 00 */	nop 
-/* 803DC40C 003D80AC  60 00 00 00 */	nop 
+/* 803DC3E0 003D8080  60 00 00 00 */	nop
+/* 803DC3E4 003D8084  60 00 00 00 */	nop
+/* 803DC3E8 003D8088  60 00 00 00 */	nop
+/* 803DC3EC 003D808C  60 00 00 00 */	nop
+/* 803DC3F0 003D8090  60 00 00 00 */	nop
+/* 803DC3F4 003D8094  60 00 00 00 */	nop
+/* 803DC3F8 003D8098  60 00 00 00 */	nop
+/* 803DC3FC 003D809C  60 00 00 00 */	nop
+/* 803DC400 003D80A0  60 00 00 00 */	nop
+/* 803DC404 003D80A4  60 00 00 00 */	nop
+/* 803DC408 003D80A8  60 00 00 00 */	nop
+/* 803DC40C 003D80AC  60 00 00 00 */	nop
 /* 803DC410 003D80B0  3C 60 E0 00 */	lis r3, 0xE0000002@h
 /* 803DC414 003D80B4  60 63 00 02 */	ori r3, r3, 0xE0000002@l
 /* 803DC418 003D80B8  7C 7F 83 A6 */	mtdbatl 3, r3
 /* 803DC41C 003D80BC  60 63 01 FE */	ori r3, r3, 0x1fe
 /* 803DC420 003D80C0  7C 7E 83 A6 */	mtdbatu 3, r3
-/* 803DC424 003D80C4  4C 00 01 2C */	isync 
+/* 803DC424 003D80C4  4C 00 01 2C */	isync
 /* 803DC428 003D80C8  3C 60 E0 00 */	lis r3, 0xE0000020@ha
 /* 803DC42C 003D80CC  38 C0 02 00 */	li r6, 0x200
 /* 803DC430 003D80D0  7C C9 03 A6 */	mtctr r6
@@ -175,19 +175,19 @@ lbl_803DC438:
 /* 803DC438 003D80D8  10 06 1F EC */	dcbz_l r6, r3
 /* 803DC43C 003D80DC  38 63 00 20 */	addi r3, r3, 0xE0000020@l
 /* 803DC440 003D80E0  42 00 FF F8 */	bdnz lbl_803DC438
-/* 803DC444 003D80E4  60 00 00 00 */	nop 
-/* 803DC448 003D80E8  60 00 00 00 */	nop 
-/* 803DC44C 003D80EC  60 00 00 00 */	nop 
-/* 803DC450 003D80F0  60 00 00 00 */	nop 
-/* 803DC454 003D80F4  60 00 00 00 */	nop 
-/* 803DC458 003D80F8  60 00 00 00 */	nop 
-/* 803DC45C 003D80FC  60 00 00 00 */	nop 
-/* 803DC460 003D8100  60 00 00 00 */	nop 
-/* 803DC464 003D8104  60 00 00 00 */	nop 
-/* 803DC468 003D8108  60 00 00 00 */	nop 
-/* 803DC46C 003D810C  60 00 00 00 */	nop 
-/* 803DC470 003D8110  60 00 00 00 */	nop 
-/* 803DC474 003D8114  4E 80 00 20 */	blr 
+/* 803DC444 003D80E4  60 00 00 00 */	nop
+/* 803DC448 003D80E8  60 00 00 00 */	nop
+/* 803DC44C 003D80EC  60 00 00 00 */	nop
+/* 803DC450 003D80F0  60 00 00 00 */	nop
+/* 803DC454 003D80F4  60 00 00 00 */	nop
+/* 803DC458 003D80F8  60 00 00 00 */	nop
+/* 803DC45C 003D80FC  60 00 00 00 */	nop
+/* 803DC460 003D8100  60 00 00 00 */	nop
+/* 803DC464 003D8104  60 00 00 00 */	nop
+/* 803DC468 003D8108  60 00 00 00 */	nop
+/* 803DC46C 003D810C  60 00 00 00 */	nop
+/* 803DC470 003D8110  60 00 00 00 */	nop
+/* 803DC474 003D8114  4E 80 00 20 */	blr
 
 .global "LCEnable"
 "LCEnable":
@@ -204,7 +204,7 @@ lbl_803DC438:
 /* 803DC4A0 003D8140  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803DC4A4 003D8144  7C 08 03 A6 */	mtlr r0
 /* 803DC4A8 003D8148  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DC4AC 003D814C  4E 80 00 20 */	blr 
+/* 803DC4AC 003D814C  4E 80 00 20 */	blr
 
 .global "LCDisable"
 "LCDisable":
@@ -218,7 +218,7 @@ lbl_803DC4BC:
 /* 803DC4C8 003D8168  7C 98 E2 A6 */	mfspr r4, 0x398
 /* 803DC4CC 003D816C  54 84 01 04 */	rlwinm r4, r4, 0, 4, 2
 /* 803DC4D0 003D8170  7C 98 E3 A6 */	mtspr 0x398, r4
-/* 803DC4D4 003D8174  4E 80 00 20 */	blr 
+/* 803DC4D4 003D8174  4E 80 00 20 */	blr
 
 .global "LCStoreBlocks"
 "LCStoreBlocks":
@@ -230,7 +230,7 @@ lbl_803DC4BC:
 /* 803DC4EC 003D818C  7C C6 23 78 */	or r6, r6, r4
 /* 803DC4F0 003D8190  60 C6 00 02 */	ori r6, r6, 2
 /* 803DC4F4 003D8194  7C DB E3 A6 */	mtspr 0x39b, r6
-/* 803DC4F8 003D8198  4E 80 00 20 */	blr 
+/* 803DC4F8 003D8198  4E 80 00 20 */	blr
 
 .global "LCStoreData"
 "LCStoreData":
@@ -276,7 +276,7 @@ lbl_803DC570:
 /* 803DC58C 003D822C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803DC590 003D8230  7C 08 03 A6 */	mtlr r0
 /* 803DC594 003D8234  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DC598 003D8238  4E 80 00 20 */	blr 
+/* 803DC598 003D8238  4E 80 00 20 */	blr
 
 .global "LCQueueWait"
 "LCQueueWait":
@@ -284,7 +284,7 @@ lbl_803DC570:
 /* 803DC5A0 003D8240  54 84 47 3E */	rlwinm r4, r4, 8, 0x1c, 0x1f
 /* 803DC5A4 003D8244  7C 04 18 00 */	cmpw r4, r3
 /* 803DC5A8 003D8248  41 81 FF F4 */	bgt "LCQueueWait"
-/* 803DC5AC 003D824C  4E 80 00 20 */	blr 
+/* 803DC5AC 003D824C  4E 80 00 20 */	blr
 
 .global "DMAErrorHandler"
 "DMAErrorHandler":
@@ -376,7 +376,7 @@ lbl_803DC6D4:
 /* 803DC6E8 003D8388  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 803DC6EC 003D838C  7C 08 03 A6 */	mtlr r0
 /* 803DC6F0 003D8390  38 21 00 80 */	addi r1, r1, 0x80
-/* 803DC6F4 003D8394  4E 80 00 20 */	blr 
+/* 803DC6F4 003D8394  4E 80 00 20 */	blr
 
 .global "__OSCacheInit"
 "__OSCacheInit":
@@ -463,9 +463,38 @@ lbl_803DC7FC:
 /* 803DC820 003D84C0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803DC824 003D84C4  7C 08 03 A6 */	mtlr r0
 /* 803DC828 003D84C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DC82C 003D84CC  4E 80 00 20 */	blr 
+/* 803DC82C 003D84CC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80476490
 lbl_80476490:
-	.incbin "baserom.dol", 0x472590, 0x238
+	# ROM: 0x472590
+	.asciz ">>> L2 INVALIDATE : SHOULD NEVER HAPPEN\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "Machine check received\n"
+	.asciz "HID2 = 0x%x   SRR1 = 0x%x\n"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "Machine check was not DMA/locked cache related\n"
+	.asciz "DMAErrorHandler(): An error occurred while processing DMA.\n"
+	.asciz "The following errors have been detected and cleared :\n"
+	.byte 0x00
+	.asciz "\t- Requested a locked cache tag that was already in the cache\n"
+	.byte 0x00
+	.asciz "\t- DMA attempted to access normal cache\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "\t- DMA missed in data cache\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "\t- DMA queue overflowed\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L1 i-caches initialized\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L1 d-caches initialized\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2 cache initialized\n"
+	.byte 0x00, 0x00
+	.asciz "Locked cache machine check handler installed\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

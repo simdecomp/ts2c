@@ -58,12 +58,12 @@ lbl_8040A52C:
 /* 8040A53C 004061DC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8040A540 004061E0  7C 08 03 A6 */	mtlr r0
 /* 8040A544 004061E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040A548 004061E8  4E 80 00 20 */	blr 
+/* 8040A548 004061E8  4E 80 00 20 */	blr
 
 .global "__close_console"
 "__close_console":
 /* 8040A54C 004061EC  38 60 00 00 */	li r3, 0
-/* 8040A550 004061F0  4E 80 00 20 */	blr 
+/* 8040A550 004061F0  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "initialized$552"

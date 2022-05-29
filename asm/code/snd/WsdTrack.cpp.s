@@ -36,13 +36,13 @@
 /* 803BC5C4 003B8264  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BC5C8 003B8268  7C 08 03 A6 */	mtlr r0
 /* 803BC5CC 003B826C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BC5D0 003B8270  4E 80 00 20 */	blr 
+/* 803BC5D0 003B8270  4E 80 00 20 */	blr
 
 .global "Start__Q46nw4hbm3snd6detail8WsdTrackFPCvi"
 "Start__Q46nw4hbm3snd6detail8WsdTrackFPCvi":
 /* 803BC5D4 003B8274  90 83 00 00 */	stw r4, 0(r3)
 /* 803BC5D8 003B8278  90 A3 00 04 */	stw r5, 4(r3)
-/* 803BC5DC 003B827C  4E 80 00 20 */	blr 
+/* 803BC5DC 003B827C  4E 80 00 20 */	blr
 
 .global "Close__Q46nw4hbm3snd6detail8WsdTrackFv"
 "Close__Q46nw4hbm3snd6detail8WsdTrackFv":
@@ -59,7 +59,7 @@
 /* 803BC608 003B82A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803BC60C 003B82AC  7C 08 03 A6 */	mtlr r0
 /* 803BC610 003B82B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BC614 003B82B4  4E 80 00 20 */	blr 
+/* 803BC614 003B82B4  4E 80 00 20 */	blr
 
 .global "ParseNextTick__Q46nw4hbm3snd6detail8WsdTrackFPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUlb"
 "ParseNextTick__Q46nw4hbm3snd6detail8WsdTrackFPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUlb":
@@ -135,7 +135,7 @@ lbl_803BC708:
 /* 803BC710 003B83B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803BC714 003B83B4  7C 08 03 A6 */	mtlr r0
 /* 803BC718 003B83B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BC71C 003B83BC  4E 80 00 20 */	blr 
+/* 803BC71C 003B83BC  4E 80 00 20 */	blr
 
 .global "ReleaseAllChannel__Q46nw4hbm3snd6detail8WsdTrackFi"
 "ReleaseAllChannel__Q46nw4hbm3snd6detail8WsdTrackFi":
@@ -206,7 +206,7 @@ lbl_803BC7DC:
 /* 803BC808 003B84A8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803BC80C 003B84AC  7C 08 03 A6 */	mtlr r0
 /* 803BC810 003B84B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BC814 003B84B4  4E 80 00 20 */	blr 
+/* 803BC814 003B84B4  4E 80 00 20 */	blr
 
 .global "PauseAllChannel__Q46nw4hbm3snd6detail8WsdTrackFb"
 "PauseAllChannel__Q46nw4hbm3snd6detail8WsdTrackFb":
@@ -242,7 +242,7 @@ lbl_803BC870:
 /* 803BC880 003B8520  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BC884 003B8524  7C 08 03 A6 */	mtlr r0
 /* 803BC888 003B8528  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BC88C 003B852C  4E 80 00 20 */	blr 
+/* 803BC88C 003B852C  4E 80 00 20 */	blr
 
 .global "UpdateChannel__Q46nw4hbm3snd6detail8WsdTrackFv"
 "UpdateChannel__Q46nw4hbm3snd6detail8WsdTrackFv":
@@ -282,14 +282,14 @@ lbl_803BC870:
 /* 803BC914 003B85B4  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 803BC918 003B85B8  90 01 00 48 */	stw r0, 0x48(r1)
 /* 803BC91C 003B85BC  7D 89 03 A6 */	mtctr r12
-/* 803BC920 003B85C0  4E 80 04 21 */	bctrl 
+/* 803BC920 003B85C0  4E 80 04 21 */	bctrl
 /* 803BC924 003B85C4  80 7F 00 2C */	lwz r3, 0x2c(r31)
 /* 803BC928 003B85C8  EF FF 00 72 */	fmuls f31, f31, f1
 /* 803BC92C 003B85CC  C3 C2 AA 30 */	lfs f30, lbl_805DBC50-_SDA2_BASE_(r2)
 /* 803BC930 003B85D0  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BC934 003B85D4  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 803BC938 003B85D8  7D 89 03 A6 */	mtctr r12
-/* 803BC93C 003B85DC  4E 80 04 21 */	bctrl 
+/* 803BC93C 003B85DC  4E 80 04 21 */	bctrl
 /* 803BC940 003B85E0  EF DE 00 72 */	fmuls f30, f30, f1
 /* 803BC944 003B85E4  C0 1F 00 20 */	lfs f0, 0x20(r31)
 /* 803BC948 003B85E8  88 7F 00 24 */	lbz r3, 0x24(r31)
@@ -325,7 +325,7 @@ lbl_803BC9A8:
 /* 803BC9B8 003B8658  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BC9BC 003B865C  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 803BC9C0 003B8660  7D 89 03 A6 */	mtctr r12
-/* 803BC9C4 003B8664  4E 80 04 21 */	bctrl 
+/* 803BC9C4 003B8664  4E 80 04 21 */	bctrl
 /* 803BC9C8 003B8668  88 7F 00 25 */	lbz r3, 0x25(r31)
 /* 803BC9CC 003B866C  EF BD 08 2A */	fadds f29, f29, f1
 /* 803BC9D0 003B8670  C3 82 AA 34 */	lfs f28, lbl_805DBC54-_SDA2_BASE_(r2)
@@ -361,28 +361,28 @@ lbl_803BCA20:
 /* 803BCA40 003B86E0  EC 01 00 32 */	fmuls f0, f1, f0
 /* 803BCA44 003B86E4  EF 9C 00 2A */	fadds f28, f28, f0
 /* 803BCA48 003B86E8  7D 89 03 A6 */	mtctr r12
-/* 803BCA4C 003B86EC  4E 80 04 21 */	bctrl 
+/* 803BCA4C 003B86EC  4E 80 04 21 */	bctrl
 /* 803BCA50 003B86F0  80 7F 00 2C */	lwz r3, 0x2c(r31)
 /* 803BCA54 003B86F4  EF 9C 08 2A */	fadds f28, f28, f1
 /* 803BCA58 003B86F8  C3 62 AA 34 */	lfs f27, lbl_805DBC54-_SDA2_BASE_(r2)
 /* 803BCA5C 003B86FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCA60 003B8700  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 803BCA64 003B8704  7D 89 03 A6 */	mtctr r12
-/* 803BCA68 003B8708  4E 80 04 21 */	bctrl 
+/* 803BCA68 003B8708  4E 80 04 21 */	bctrl
 /* 803BCA6C 003B870C  80 7F 00 2C */	lwz r3, 0x2c(r31)
 /* 803BCA70 003B8710  EF 7B 08 2A */	fadds f27, f27, f1
 /* 803BCA74 003B8714  C3 42 AA 34 */	lfs f26, lbl_805DBC54-_SDA2_BASE_(r2)
 /* 803BCA78 003B8718  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCA7C 003B871C  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 803BCA80 003B8720  7D 89 03 A6 */	mtctr r12
-/* 803BCA84 003B8724  4E 80 04 21 */	bctrl 
+/* 803BCA84 003B8724  4E 80 04 21 */	bctrl
 /* 803BCA88 003B8728  80 7F 00 2C */	lwz r3, 0x2c(r31)
 /* 803BCA8C 003B872C  EF 5A 08 2A */	fadds f26, f26, f1
 /* 803BCA90 003B8730  C3 22 AA 34 */	lfs f25, lbl_805DBC54-_SDA2_BASE_(r2)
 /* 803BCA94 003B8734  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCA98 003B8738  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 803BCA9C 003B873C  7D 89 03 A6 */	mtctr r12
-/* 803BCAA0 003B8740  4E 80 04 21 */	bctrl 
+/* 803BCAA0 003B8740  4E 80 04 21 */	bctrl
 /* 803BCAA4 003B8744  88 1F 00 29 */	lbz r0, 0x29(r31)
 /* 803BCAA8 003B8748  EF 39 08 2A */	fadds f25, f25, f1
 /* 803BCAAC 003B874C  80 7F 00 2C */	lwz r3, 0x2c(r31)
@@ -398,7 +398,7 @@ lbl_803BCA20:
 /* 803BCAD4 003B8774  EC 00 C0 28 */	fsubs f0, f0, f24
 /* 803BCAD8 003B8778  EF 18 00 2A */	fadds f24, f24, f0
 /* 803BCADC 003B877C  7D 89 03 A6 */	mtctr r12
-/* 803BCAE0 003B8780  4E 80 04 21 */	bctrl 
+/* 803BCAE0 003B8780  4E 80 04 21 */	bctrl
 /* 803BCAE4 003B8784  88 9F 00 26 */	lbz r4, 0x26(r31)
 /* 803BCAE8 003B8788  EF 18 08 2A */	fadds f24, f24, f1
 /* 803BCAEC 003B878C  88 7F 00 27 */	lbz r3, 0x27(r31)
@@ -427,7 +427,7 @@ lbl_803BCB18:
 /* 803BCB44 003B87E4  EC 00 08 2A */	fadds f0, f0, f1
 /* 803BCB48 003B87E8  D0 1D 00 00 */	stfs f0, 0(r29)
 /* 803BCB4C 003B87EC  7D 89 03 A6 */	mtctr r12
-/* 803BCB50 003B87F0  4E 80 04 21 */	bctrl 
+/* 803BCB50 003B87F0  4E 80 04 21 */	bctrl
 /* 803BCB54 003B87F4  C0 1D 00 00 */	lfs f0, 0(r29)
 /* 803BCB58 003B87F8  3B 9C 00 01 */	addi r28, r28, 1
 /* 803BCB5C 003B87FC  2C 1C 00 03 */	cmpwi r28, 3
@@ -447,7 +447,7 @@ lbl_803BCB84:
 /* 803BCB90 003B8830  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCB94 003B8834  81 8C 00 90 */	lwz r12, 0x90(r12)
 /* 803BCB98 003B8838  7D 89 03 A6 */	mtctr r12
-/* 803BCB9C 003B883C  4E 80 04 21 */	bctrl 
+/* 803BCB9C 003B883C  4E 80 04 21 */	bctrl
 /* 803BCBA0 003B8840  80 7F 00 2C */	lwz r3, 0x2c(r31)
 /* 803BCBA4 003B8844  7F 84 E3 78 */	mr r4, r28
 /* 803BCBA8 003B8848  C0 1D 00 00 */	lfs f0, 0(r29)
@@ -457,7 +457,7 @@ lbl_803BCB84:
 /* 803BCBB8 003B8858  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 803BCBBC 003B885C  D0 1D 00 00 */	stfs f0, 0(r29)
 /* 803BCBC0 003B8860  7D 89 03 A6 */	mtctr r12
-/* 803BCBC4 003B8864  4E 80 04 21 */	bctrl 
+/* 803BCBC4 003B8864  4E 80 04 21 */	bctrl
 /* 803BCBC8 003B8868  C0 1E 00 00 */	lfs f0, 0(r30)
 /* 803BCBCC 003B886C  3B 9C 00 01 */	addi r28, r28, 1
 /* 803BCBD0 003B8870  2C 1C 00 04 */	cmpwi r28, 4
@@ -496,7 +496,7 @@ lbl_803BCBF8:
 /* 803BCC50 003B88F0  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCC54 003B88F4  81 8C 00 7C */	lwz r12, 0x7c(r12)
 /* 803BCC58 003B88F8  7D 89 03 A6 */	mtctr r12
-/* 803BCC5C 003B88FC  4E 80 04 21 */	bctrl 
+/* 803BCC5C 003B88FC  4E 80 04 21 */	bctrl
 /* 803BCC60 003B8900  7C 64 1B 78 */	mr r4, r3
 /* 803BCC64 003B8904  7F 83 E3 78 */	mr r3, r28
 /* 803BCC68 003B8908  4B FE D2 85 */	bl "SetOutputLine__Q46nw4hbm3snd6detail7ChannelFi"
@@ -504,7 +504,7 @@ lbl_803BCBF8:
 /* 803BCC70 003B8910  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCC74 003B8914  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 803BCC78 003B8918  7D 89 03 A6 */	mtctr r12
-/* 803BCC7C 003B891C  4E 80 04 21 */	bctrl 
+/* 803BCC7C 003B891C  4E 80 04 21 */	bctrl
 /* 803BCC80 003B8920  7F 83 E3 78 */	mr r3, r28
 /* 803BCC84 003B8924  4B FE D2 61 */	bl "SetMainOutVolume__Q46nw4hbm3snd6detail7ChannelFf"
 /* 803BCC88 003B8928  FC 20 C0 90 */	fmr f1, f24
@@ -530,7 +530,7 @@ lbl_803BCCC8:
 /* 803BCCD0 003B8970  81 83 00 00 */	lwz r12, 0(r3)
 /* 803BCCD4 003B8974  81 8C 00 8C */	lwz r12, 0x8c(r12)
 /* 803BCCD8 003B8978  7D 89 03 A6 */	mtctr r12
-/* 803BCCDC 003B897C  4E 80 04 21 */	bctrl 
+/* 803BCCDC 003B897C  4E 80 04 21 */	bctrl
 /* 803BCCE0 003B8980  7F 83 E3 78 */	mr r3, r28
 /* 803BCCE4 003B8984  7F 64 DB 78 */	mr r4, r27
 /* 803BCCE8 003B8988  4B FE D1 51 */	bl "SetRemoteOutVolume__Q46nw4hbm3snd6detail7ChannelFif"
@@ -586,12 +586,12 @@ lbl_803BCD38:
 /* 803BCDAC 003B8A4C  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 803BCDB0 003B8A50  7C 08 03 A6 */	mtlr r0
 /* 803BCDB4 003B8A54  38 21 01 20 */	addi r1, r1, 0x120
-/* 803BCDB8 003B8A58  4E 80 00 20 */	blr 
+/* 803BCDB8 003B8A58  4E 80 00 20 */	blr
 
 .global "GetPanRange__Q46nw4hbm3snd6detail9WsdPlayerCFv"
 "GetPanRange__Q46nw4hbm3snd6detail9WsdPlayerCFv":
 /* 803BCDBC 003B8A5C  C0 23 00 30 */	lfs f1, 0x30(r3)
-/* 803BCDC0 003B8A60  4E 80 00 20 */	blr 
+/* 803BCDC0 003B8A60  4E 80 00 20 */	blr
 
 .global "FreeAllChannel__Q46nw4hbm3snd6detail8WsdTrackFv"
 "FreeAllChannel__Q46nw4hbm3snd6detail8WsdTrackFv":
@@ -619,7 +619,7 @@ lbl_803BCDF8:
 /* 803BCE10 003B8AB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BCE14 003B8AB4  7C 08 03 A6 */	mtlr r0
 /* 803BCE18 003B8AB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BCE1C 003B8ABC  4E 80 00 20 */	blr 
+/* 803BCE1C 003B8ABC  4E 80 00 20 */	blr
 
 .global "Parse__Q46nw4hbm3snd6detail8WsdTrackFPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUlb"
 "Parse__Q46nw4hbm3snd6detail8WsdTrackFPCQ56nw4hbm3snd6detail8WsdTrack11WsdCallbackUlb":
@@ -661,7 +661,7 @@ lbl_803BCE6C:
 /* 803BCEA8 003B8B48  39 20 00 00 */	li r9, 0
 /* 803BCEAC 003B8B4C  81 1D 00 04 */	lwz r8, 4(r29)
 /* 803BCEB0 003B8B50  7D 89 03 A6 */	mtctr r12
-/* 803BCEB4 003B8B54  4E 80 04 21 */	bctrl 
+/* 803BCEB4 003B8B54  4E 80 04 21 */	bctrl
 /* 803BCEB8 003B8B58  2C 03 00 00 */	cmpwi r3, 0
 /* 803BCEBC 003B8B5C  40 82 00 0C */	bne lbl_803BCEC8
 /* 803BCEC0 003B8B60  38 60 FF FF */	li r3, -1
@@ -722,7 +722,7 @@ lbl_803BCF7C:
 /* 803BCF88 003B8C28  83 A1 00 B4 */	lwz r29, 0xb4(r1)
 /* 803BCF8C 003B8C2C  7C 08 03 A6 */	mtlr r0
 /* 803BCF90 003B8C30  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 803BCF94 003B8C34  4E 80 00 20 */	blr 
+/* 803BCF94 003B8C34  4E 80 00 20 */	blr
 
 .global "AddChannel__Q46nw4hbm3snd6detail8WsdTrackFPQ46nw4hbm3snd6detail7Channel"
 "AddChannel__Q46nw4hbm3snd6detail8WsdTrackFPQ46nw4hbm3snd6detail7Channel":
@@ -742,24 +742,24 @@ lbl_803BCF7C:
 /* 803BCFCC 003B8C6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BCFD0 003B8C70  7C 08 03 A6 */	mtlr r0
 /* 803BCFD4 003B8C74  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BCFD8 003B8C78  4E 80 00 20 */	blr 
+/* 803BCFD8 003B8C78  4E 80 00 20 */	blr
 
 .global "GetVoiceOutCount__Q46nw4hbm3snd6detail9WsdPlayerCFv"
 "GetVoiceOutCount__Q46nw4hbm3snd6detail9WsdPlayerCFv":
 /* 803BCFDC 003B8C7C  80 63 00 8C */	lwz r3, 0x8c(r3)
-/* 803BCFE0 003B8C80  4E 80 00 20 */	blr 
+/* 803BCFE0 003B8C80  4E 80 00 20 */	blr
 
 .global "Min<i>__Q36nw4hbm2ut26@unnamed@snd_WsdTrack_cpp@Fii_i"
 "Min<i>__Q36nw4hbm2ut26@unnamed@snd_WsdTrack_cpp@Fii_i":
 /* 803BCFE4 003B8C84  7C 03 20 00 */	cmpw r3, r4
-/* 803BCFE8 003B8C88  4C 81 00 20 */	blelr 
+/* 803BCFE8 003B8C88  4C 81 00 20 */	blelr
 /* 803BCFEC 003B8C8C  7C 83 23 78 */	mr r3, r4
-/* 803BCFF0 003B8C90  4E 80 00 20 */	blr 
+/* 803BCFF0 003B8C90  4E 80 00 20 */	blr
 
 .global "GetChannelPriority__Q46nw4hbm3snd6detail9WsdPlayerCFv"
 "GetChannelPriority__Q46nw4hbm3snd6detail9WsdPlayerCFv":
 /* 803BCFF4 003B8C94  88 63 00 90 */	lbz r3, 0x90(r3)
-/* 803BCFF8 003B8C98  4E 80 00 20 */	blr 
+/* 803BCFF8 003B8C98  4E 80 00 20 */	blr
 
 .global "ChannelCallbackFunc__Q46nw4hbm3snd6detail8WsdTrackFPQ46nw4hbm3snd6detail7ChannelQ56nw4hbm3snd6detail7Channel21ChannelCallbackStatusUl"
 "ChannelCallbackFunc__Q46nw4hbm3snd6detail8WsdTrackFPQ46nw4hbm3snd6detail7ChannelQ56nw4hbm3snd6detail7Channel21ChannelCallbackStatusUl":
@@ -845,35 +845,79 @@ lbl_803BD108:
 /* 803BD118 003B8DB8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803BD11C 003B8DBC  7C 08 03 A6 */	mtlr r0
 /* 803BD120 003B8DC0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BD124 003B8DC4  4E 80 00 20 */	blr 
+/* 803BD124 003B8DC4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472F10
 lbl_80472F10:
-	.incbin "baserom.dol", 0x46F010, 0x14
+	# ROM: 0x46F010
+	.asciz "snd_WsdTrack.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80472F24
 lbl_80472F24:
-	.incbin "baserom.dol", 0x46F024, 0x214
+	# ROM: 0x46F024
+	.asciz "NW4HBM:Pointer must not be NULL (mWsdPlayer)"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "release is out of bounds(%d)\n%d <= release <= %d not satisfied."
+	.asciz "NW4HBM:Pointer must not be NULL (dropChannel)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (track)"
+	.asciz "NW4HBM:Pointer must not be NULL (channel)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion false"
+	.byte 0x00, 0x00
+	.asciz "remoteIndex is out of bounds(%d)\n%d <= remoteIndex < %d not satisfied."
+	.byte 0x00
+	.asciz "Channel.h"
+	.byte 0x00, 0x00
+	.asciz "remoteIndex is out of bounds(%d)\n%d <= remoteIndex < %d not satisfied."
+	.byte 0x00
+	.asciz "Channel.h"
+	.byte 0x00, 0x00
+	.asciz "remoteIndex is out of bounds(%d)\n%d <= remoteIndex < %d not satisfied."
+	.byte 0x00
+	.asciz "Channel.h"
+	.byte 0x00, 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBC50
 lbl_805DBC50:
-	.incbin "baserom.dol", 0x489F70, 0x4
+	# ROM: 0x489F70
+	.4byte 0x3F800000
+
 .global lbl_805DBC54
 lbl_805DBC54:
-	.incbin "baserom.dol", 0x489F74, 0x4
+	# ROM: 0x489F74
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBC58
 lbl_805DBC58:
-	.incbin "baserom.dol", 0x489F78, 0x4
+	# ROM: 0x489F78
+	.4byte 0x427C0000
+
 .global lbl_805DBC5C
 lbl_805DBC5C:
-	.incbin "baserom.dol", 0x489F7C, 0x4
+	# ROM: 0x489F7C
+	.4byte 0x3C800000
+
 .global lbl_805DBC60
 lbl_805DBC60:
-	.incbin "baserom.dol", 0x489F80, 0x8
+	# ROM: 0x489F80
+	.4byte 0x42FE0000
+	.4byte 0x00000000
+
 .global lbl_805DBC68
 lbl_805DBC68:
-	.incbin "baserom.dol", 0x489F88, 0x8
+	# ROM: 0x489F88
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBC70
 lbl_805DBC70:
-	.incbin "baserom.dol", 0x489F90, 0x8
+	# ROM: 0x489F90
+	.4byte 0x43300000
+	.4byte 0x00000000
+

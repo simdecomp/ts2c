@@ -63,7 +63,7 @@ lbl_803A6B48:
 /* 803A6B50 003A27F0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A6B54 003A27F4  7C 08 03 A6 */	mtlr r0
 /* 803A6B58 003A27F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6B5C 003A27FC  4E 80 00 20 */	blr 
+/* 803A6B5C 003A27FC  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail13SeqFileReaderFPCv"
 "__ct__Q46nw4hbm3snd6detail13SeqFileReaderFPCv":
@@ -118,7 +118,7 @@ lbl_803A6C04:
 /* 803A6C10 003A28B0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A6C14 003A28B4  7C 08 03 A6 */	mtlr r0
 /* 803A6C18 003A28B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A6C1C 003A28BC  4E 80 00 20 */	blr 
+/* 803A6C1C 003A28BC  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut25@unnamed@snd_SeqFile_cpp@FPCvUl_PCv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut25@unnamed@snd_SeqFile_cpp@FPCvUl_PCv":
@@ -133,11 +133,11 @@ lbl_803A6C04:
 /* 803A6C40 003A28E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6C44 003A28E4  7C 08 03 A6 */	mtlr r0
 /* 803A6C48 003A28E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6C4C 003A28EC  4E 80 00 20 */	blr 
+/* 803A6C4C 003A28EC  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut25@unnamed@snd_SeqFile_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut25@unnamed@snd_SeqFile_cpp@FPCv":
-/* 803A6C50 003A28F0  4E 80 00 20 */	blr 
+/* 803A6C50 003A28F0  4E 80 00 20 */	blr
 
 .global "GetBaseAddress__Q46nw4hbm3snd6detail13SeqFileReaderCFv"
 "GetBaseAddress__Q46nw4hbm3snd6detail13SeqFileReaderCFv":
@@ -164,12 +164,26 @@ lbl_803A6C90:
 /* 803A6CA0 003A2940  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A6CA4 003A2944  7C 08 03 A6 */	mtlr r0
 /* 803A6CA8 003A2948  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6CAC 003A294C  4E 80 00 20 */	blr 
+/* 803A6CAC 003A294C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046EBC8
 lbl_8046EBC8:
-	.incbin "baserom.dol", 0x46ACC8, 0x138
+	# ROM: 0x46ACC8
+	.asciz "snd_SeqFile.cpp"
+	.asciz "NW4HBM:Failed assertion fileHeader->signature == SeqFile::SIGNATURE_FILE"
+	.byte 0x00, 0x00, 0x00
+	.asciz "seq file is not supported version.\n  please reconvert file using new version tools.\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (seqData)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mDataBlock->blockHeader.kind == SeqFile::SIGNATURE_DATA_BLOCK"
+	.byte 0x00, 0x00
+
 .global lbl_8046ED00
 lbl_8046ED00:
-	.incbin "baserom.dol", 0x46AE00, 0x30
+	# ROM: 0x46AE00
+	.asciz "NW4HBM:Pointer must not be NULL (mHeader)"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

@@ -236,7 +236,7 @@ lbl_80363A30:
 /* 80363A38 0035F6D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80363A3C 0035F6DC  7C 08 03 A6 */	mtlr r0
 /* 80363A40 0035F6E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80363A44 0035F6E4  4E 80 00 20 */	blr 
+/* 80363A44 0035F6E4  4E 80 00 20 */	blr
 
 .global "SDP_ServiceSearchRequest"
 "SDP_ServiceSearchRequest":
@@ -264,7 +264,7 @@ lbl_80363A8C:
 /* 80363A94 0035F734  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80363A98 0035F738  7C 08 03 A6 */	mtlr r0
 /* 80363A9C 0035F73C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80363AA0 0035F740  4E 80 00 20 */	blr 
+/* 80363AA0 0035F740  4E 80 00 20 */	blr
 
 .global "SDP_ServiceSearchAttributeRequest"
 "SDP_ServiceSearchAttributeRequest":
@@ -294,7 +294,7 @@ lbl_80363AF0:
 /* 80363AF8 0035F798  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80363AFC 0035F79C  7C 08 03 A6 */	mtlr r0
 /* 80363B00 0035F7A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80363B04 0035F7A4  4E 80 00 20 */	blr 
+/* 80363B04 0035F7A4  4E 80 00 20 */	blr
 
 .global "SDP_FindAttributeInRec"
 "SDP_FindAttributeInRec":
@@ -303,13 +303,13 @@ lbl_80363AF0:
 lbl_80363B10:
 /* 80363B10 0035F7B0  A0 03 00 04 */	lhz r0, 4(r3)
 /* 80363B14 0035F7B4  7C 00 20 40 */	cmplw r0, r4
-/* 80363B18 0035F7B8  4D 82 00 20 */	beqlr 
+/* 80363B18 0035F7B8  4D 82 00 20 */	beqlr
 /* 80363B1C 0035F7BC  80 63 00 00 */	lwz r3, 0(r3)
 lbl_80363B20:
 /* 80363B20 0035F7C0  2C 03 00 00 */	cmpwi r3, 0
 /* 80363B24 0035F7C4  40 82 FF EC */	bne lbl_80363B10
 /* 80363B28 0035F7C8  38 60 00 00 */	li r3, 0
-/* 80363B2C 0035F7CC  4E 80 00 20 */	blr 
+/* 80363B2C 0035F7CC  4E 80 00 20 */	blr
 
 .global "SDP_FindServiceInDb"
 "SDP_FindServiceInDb":
@@ -343,7 +343,7 @@ lbl_80363B74:
 /* 80363B8C 0035F82C  40 82 00 10 */	bne lbl_80363B9C
 /* 80363B90 0035F830  A0 06 00 08 */	lhz r0, 8(r6)
 /* 80363B94 0035F834  7C 00 20 40 */	cmplw r0, r4
-/* 80363B98 0035F838  4D 82 00 20 */	beqlr 
+/* 80363B98 0035F838  4D 82 00 20 */	beqlr
 lbl_80363B9C:
 /* 80363B9C 0035F83C  80 C6 00 00 */	lwz r6, 0(r6)
 lbl_80363BA0:
@@ -362,7 +362,7 @@ lbl_80363BAC:
 /* 80363BCC 0035F86C  40 82 00 10 */	bne lbl_80363BDC
 /* 80363BD0 0035F870  A0 06 00 08 */	lhz r0, 8(r6)
 /* 80363BD4 0035F874  7C 00 20 40 */	cmplw r0, r4
-/* 80363BD8 0035F878  4D 82 00 20 */	beqlr 
+/* 80363BD8 0035F878  4D 82 00 20 */	beqlr
 lbl_80363BDC:
 /* 80363BDC 0035F87C  80 C6 00 00 */	lwz r6, 0(r6)
 lbl_80363BE0:
@@ -374,7 +374,7 @@ lbl_80363BEC:
 /* 80363BEC 0035F88C  2C 03 00 00 */	cmpwi r3, 0
 /* 80363BF0 0035F890  40 82 FF 58 */	bne lbl_80363B48
 /* 80363BF4 0035F894  38 60 00 00 */	li r3, 0
-/* 80363BF8 0035F898  4E 80 00 20 */	blr 
+/* 80363BF8 0035F898  4E 80 00 20 */	blr
 
 .global "SDP_FindServiceUUIDInDb"
 "SDP_FindServiceUUIDInDb":
@@ -455,7 +455,7 @@ lbl_80363CE8:
 /* 80363CF4 0035F994  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80363CF8 0035F998  7C 08 03 A6 */	mtlr r0
 /* 80363CFC 0035F99C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80363D00 0035F9A0  4E 80 00 20 */	blr 
+/* 80363D00 0035F9A0  4E 80 00 20 */	blr
 
 .global "SDP_SetLocalDiRecord"
 "SDP_SetLocalDiRecord":
@@ -693,7 +693,7 @@ lbl_80364044:
 /* 80364054 0035FCF4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80364058 0035FCF8  7C 08 03 A6 */	mtlr r0
 /* 8036405C 0035FCFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80364060 0035FD00  4E 80 00 20 */	blr 
+/* 80364060 0035FD00  4E 80 00 20 */	blr
 
 .global "SDP_GetLocalDiRecord"
 "SDP_GetLocalDiRecord":
@@ -1022,7 +1022,7 @@ lbl_803644F0:
 /* 80364504 003601A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80364508 003601A8  7C 08 03 A6 */	mtlr r0
 /* 8036450C 003601AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80364510 003601B0  4E 80 00 20 */	blr 
+/* 80364510 003601B0  4E 80 00 20 */	blr
 
 .global "SDP_SetTraceLevel"
 "SDP_SetTraceLevel":
@@ -1035,9 +1035,12 @@ lbl_80364528:
 /* 80364528 003601C8  3C 60 80 58 */	lis r3, "sdp_cb"@ha
 /* 8036452C 003601CC  38 63 7F 60 */	addi r3, r3, "sdp_cb"@l
 /* 80364530 003601D0  88 63 46 30 */	lbz r3, 0x4630(r3)
-/* 80364534 003601D4  4E 80 00 20 */	blr 
+/* 80364534 003601D4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465A68
 lbl_80465A68:
-	.incbin "baserom.dol", 0x461B68, 0x50
+	# ROM: 0x461B68
+	.asciz "SDP_InitDiscoveryDb Illegal param: p_db 0x%x, len %d, num_uuid %d, num_attr %d"
+	.byte 0x00
+

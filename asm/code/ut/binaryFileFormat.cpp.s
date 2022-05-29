@@ -212,7 +212,7 @@ lbl_803BD440:
 /* 803BD448 003B90E8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803BD44C 003B90EC  7C 08 03 A6 */	mtlr r0
 /* 803BD450 003B90F0  38 21 00 40 */	addi r1, r1, 0x40
-/* 803BD454 003B90F4  4E 80 00 20 */	blr 
+/* 803BD454 003B90F4  4E 80 00 20 */	blr
 
 .global "BitExtract<Us>__Q36nw4hbm2ut33@unnamed@ut_binaryFileFormat_cpp@FUsii_Us"
 "BitExtract<Us>__Q36nw4hbm2ut33@unnamed@ut_binaryFileFormat_cpp@FUsii_Us":
@@ -222,7 +222,7 @@ lbl_803BD440:
 /* 803BD464 003B9104  38 63 FF FF */	addi r3, r3, -1
 /* 803BD468 003B9108  54 63 04 3E */	clrlwi r3, r3, 0x10
 /* 803BD46C 003B910C  7C 63 00 38 */	and r3, r3, r0
-/* 803BD470 003B9110  4E 80 00 20 */	blr 
+/* 803BD470 003B9110  4E 80 00 20 */	blr
 
 .global "BitExtract<Ul>__Q36nw4hbm2ut33@unnamed@ut_binaryFileFormat_cpp@FUlii_Ul"
 "BitExtract<Ul>__Q36nw4hbm2ut33@unnamed@ut_binaryFileFormat_cpp@FUlii_Ul":
@@ -231,9 +231,23 @@ lbl_803BD440:
 /* 803BD47C 003B911C  7C C3 28 30 */	slw r3, r6, r5
 /* 803BD480 003B9120  38 63 FF FF */	addi r3, r3, -1
 /* 803BD484 003B9124  7C 63 00 38 */	and r3, r3, r0
-/* 803BD488 003B9128  4E 80 00 20 */	blr 
+/* 803BD488 003B9128  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473138
 lbl_80473138:
-	.incbin "baserom.dol", 0x46F238, 0x150
+	# ROM: 0x46F238
+	.asciz "ut_binaryFileFormat.cpp"
+	.asciz "NW4HBM:Pointer Error\nheader(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "Signature check failed ('%c%c%c%c' must be '%c%c%c%c')."
+	.asciz "Unsupported byte order."
+	.asciz "Version check faild ('%d.%d' must be '%d.%d')."
+	.byte 0x00
+	.asciz "Too small file size(=%d)."
+	.byte 0x00, 0x00
+	.asciz "Too small number of data blocks(=%d)."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nfileHeader(=%p) is not valid pointer."
+	.byte 0x00
+

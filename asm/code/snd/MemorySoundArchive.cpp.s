@@ -25,7 +25,7 @@ lbl_803A4AF0:
 /* 803A4AFC 003A079C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4B00 003A07A0  7C 08 03 A6 */	mtlr r0
 /* 803A4B04 003A07A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4B08 003A07A8  4E 80 00 20 */	blr 
+/* 803A4B08 003A07A8  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut8IOStreamFv"
 "__dt__Q36nw4hbm2ut8IOStreamFv":
@@ -45,7 +45,7 @@ lbl_803A4B34:
 /* 803A4B3C 003A07DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4B40 003A07E0  7C 08 03 A6 */	mtlr r0
 /* 803A4B44 003A07E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4B48 003A07E8  4E 80 00 20 */	blr 
+/* 803A4B48 003A07E8  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut10FileStreamFv"
 "__ct__Q36nw4hbm2ut10FileStreamFv":
@@ -63,7 +63,7 @@ lbl_803A4B34:
 /* 803A4B78 003A0818  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4B7C 003A081C  7C 08 03 A6 */	mtlr r0
 /* 803A4B80 003A0820  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4B84 003A0824  4E 80 00 20 */	blr 
+/* 803A4B84 003A0824  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut8IOStreamFv"
 "__ct__Q36nw4hbm2ut8IOStreamFv":
@@ -74,24 +74,24 @@ lbl_803A4B34:
 /* 803A4B98 003A0838  90 83 00 00 */	stw r4, 0(r3)
 /* 803A4B9C 003A083C  90 03 00 0C */	stw r0, 0xc(r3)
 /* 803A4BA0 003A0840  90 03 00 10 */	stw r0, 0x10(r3)
-/* 803A4BA4 003A0844  4E 80 00 20 */	blr 
+/* 803A4BA4 003A0844  4E 80 00 20 */	blr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm2ut10FileStreamCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm2ut10FileStreamCFv":
 /* 803A4BA8 003A0848  38 6D C6 18 */	addi r3, r13, "typeInfo__Q36nw4hbm2ut10FileStream"-_SDA_BASE_
-/* 803A4BAC 003A084C  4E 80 00 20 */	blr 
+/* 803A4BAC 003A084C  4E 80 00 20 */	blr
 
 .global "GetOffsetAlign__Q36nw4hbm2ut8IOStreamCFv"
 "GetOffsetAlign__Q36nw4hbm2ut8IOStreamCFv":
 /* 803A4BB0 003A0850  38 60 00 01 */	li r3, 1
-/* 803A4BB4 003A0854  4E 80 00 20 */	blr 
+/* 803A4BB4 003A0854  4E 80 00 20 */	blr
 
 .global "GetSizeAlign__Q36nw4hbm2ut8IOStreamCFv"
 "GetSizeAlign__Q36nw4hbm2ut8IOStreamCFv":
 /* 803A4BB8 003A0858  38 60 00 01 */	li r3, 1
-/* 803A4BBC 003A085C  4E 80 00 20 */	blr 
+/* 803A4BBC 003A085C  4E 80 00 20 */	blr
 
 .global "GetBufferAlign__Q36nw4hbm2ut8IOStreamCFv"
 "GetBufferAlign__Q36nw4hbm2ut8IOStreamCFv":
 /* 803A4BC0 003A0860  38 60 00 01 */	li r3, 1
-/* 803A4BC4 003A0864  4E 80 00 20 */	blr 
+/* 803A4BC4 003A0864  4E 80 00 20 */	blr

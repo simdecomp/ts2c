@@ -24,3 +24,5 @@ __pycache__/*
 in
 *.dump
 ts2c
+objdump.diff
+xxd.diff

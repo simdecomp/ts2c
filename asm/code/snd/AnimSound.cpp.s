@@ -7,7 +7,7 @@
 /* 80398FF0 00394C90  7C 03 00 D0 */	neg r0, r3
 /* 80398FF4 00394C94  7C 00 1B 78 */	or r0, r0, r3
 /* 80398FF8 00394C98  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80398FFC 00394C9C  4E 80 00 20 */	blr 
+/* 80398FFC 00394C9C  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<c,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util16DataRef<c,v,v,v>PCv_PCc"
 "GetDataRefAddress0<c,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util16DataRef<c,v,v,v>PCv_PCc":
@@ -37,14 +37,21 @@ lbl_80399040:
 /* 80399058 00394CF8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039905C 00394CFC  7C 08 03 A6 */	mtlr r0
 /* 80399060 00394D00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399064 00394D04  4E 80 00 20 */	blr 
+/* 80399064 00394D04  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046CF58
 lbl_8046CF58:
-	.incbin "baserom.dol", 0x469058, 0x30
+	# ROM: 0x469058
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7590
 lbl_805D7590:
-	.incbin "baserom.dol", 0x487110, 0x8
+	# ROM: 0x487110
+	.asciz "Util.h"
+	.byte 0x00
+

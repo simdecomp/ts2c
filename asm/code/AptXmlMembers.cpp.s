@@ -44,7 +44,7 @@ lbl_8032DE44:
 /* 8032DE4C 00329AEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032DE50 00329AF0  7C 08 03 A6 */	mtlr r0
 /* 8032DE54 00329AF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032DE58 00329AF8  4E 80 00 20 */	blr 
+/* 8032DE58 00329AF8  4E 80 00 20 */	blr
 
 .global "hash__14XmlMemberIndexFPCcUi"
 "hash__14XmlMemberIndexFPCcUi":
@@ -84,18 +84,293 @@ lbl_8032DEC8:
 /* 8032DED0 00329B70  7C 03 00 AE */	lbzx r0, r3, r0
 /* 8032DED4 00329B74  7C 64 02 14 */	add r3, r4, r0
 /* 8032DED8 00329B78  38 21 01 10 */	addi r1, r1, 0x110
-/* 8032DEDC 00329B7C  4E 80 00 20 */	blr 
+/* 8032DEDC 00329B7C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041C670
 lbl_8041C670:
-	.incbin "baserom.dol", 0x418770, 0x100
+	# ROM: 0x418770
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D0A
+	.4byte 0x0A4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x0A4D0F4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x0A4D4D4D
+	.4byte 0x0F4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D19144D
+	.4byte 0x00004D14
+	.4byte 0x00004D4D
+	.4byte 0x004D001F
+	.4byte 0x054D1E00
+	.4byte 0x00054D4D
+	.4byte 0x4D0A4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+	.4byte 0x4D4D4D4D
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x457348, 0x148
+	# ROM: 0x457348
+	.asciz "nextSibling"
+	.asciz "insertBefore"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getBytesTotal"
+	.byte 0x00, 0x00
+	.asciz "getBytesLoaded"
+	.byte 0x00
+	.asciz "appendChild"
+	.asciz "firstChild"
+	.byte 0x00
+	.asciz "sendAndLoad"
+	.asciz "cloneNode"
+	.byte 0x00, 0x00
+	.asciz "childNodes"
+	.byte 0x00
+	.asciz "attributes"
+	.byte 0x00
+	.asciz "ignoreWhite"
+	.asciz "lastChild"
+	.byte 0x00, 0x00
+	.asciz "hasChildNodes"
+	.byte 0x00, 0x00
+	.asciz "removeNode"
+	.byte 0x00
+	.asciz "createElement"
+	.byte 0x00, 0x00
+	.asciz "createTextNode"
+	.byte 0x00
+	.asciz "parseXml"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nodeType"
+	.byte 0x00, 0x00, 0x00
+	.asciz "contentType"
+	.asciz "docTypeDecl"
+	.asciz "toString"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nodeName"
+	.byte 0x00, 0x00, 0x00
+	.asciz "parentNode"
+	.byte 0x00
+	.asciz "nodeValue"
+	.byte 0x00, 0x00
+	.asciz "previousSibling"
+
 .global "wordlist$7478"
 "wordlist$7478":
-	.incbin "baserom.dol", 0x457490, 0x268
+	# ROM: 0x457490
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F14 ;# ptr
+	.4byte 0x0000006E
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F1C ;# ptr
+	.4byte 0x00000070
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B248 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x8045B254 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x8045B264 ;# ptr
+	.4byte 0x00000068
+	.4byte 0x8045B274 ;# ptr
+	.4byte 0x00000069
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B284 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B290 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x8045B29C ;# ptr
+	.4byte 0x0000006F
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B2A8 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x8045B2B4 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B2C0 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x8045B2CC ;# ptr
+	.4byte 0x0000006A
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B2D8 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D6F24 ;# ptr
+	.4byte 0x0000006B
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F2C ;# ptr
+	.4byte 0x0000006C
+	.4byte 0x8045B2E4 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B2F4 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B300 ;# ptr
+	.4byte 0x00000065
+	.4byte 0x8045B310 ;# ptr
+	.4byte 0x00000066
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B320 ;# ptr
+	.4byte 0x0000006D
+	.4byte 0x8045B32C ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B338 ;# ptr
+	.4byte 0x00000064
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B344 ;# ptr
+	.4byte 0x00000067
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B350 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B35C ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B368 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B374 ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6F10 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045B380 ;# ptr
+	.4byte 0x0000000E
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x486A90, 0x28
+	# ROM: 0x486A90
+	.4byte 0x00000000
+	.asciz "send"
+	.byte 0x00, 0x00, 0x00
+	.asciz "status"
+	.byte 0x00
+	.asciz "load"
+	.byte 0x00, 0x00, 0x00
+	.asciz "loaded"
+	.byte 0x00
+	.4byte 0x00000000
+

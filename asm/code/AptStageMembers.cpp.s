@@ -57,7 +57,7 @@ lbl_80328C44:
 /* 80328C50 003248F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80328C54 003248F4  7C 08 03 A6 */	mtlr r0
 /* 80328C58 003248F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80328C5C 003248FC  4E 80 00 20 */	blr 
+/* 80328C5C 003248FC  4E 80 00 20 */	blr
 
 .global "hash__17StageMembersIndexFPCcUi"
 "hash__17StageMembersIndexFPCcUi":
@@ -97,23 +97,121 @@ lbl_80328CCC:
 /* 80328CD4 00324974  7C 03 00 AE */	lbzx r0, r3, r0
 /* 80328CD8 00324978  7C 64 02 14 */	add r3, r4, r0
 /* 80328CDC 0032497C  38 21 01 10 */	addi r1, r1, 0x110
-/* 80328CE0 00324980  4E 80 00 20 */	blr 
+/* 80328CE0 00324980  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041C270
 lbl_8041C270:
-	.incbin "baserom.dol", 0x418370, 0x100
+	# ROM: 0x418370
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x000F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F00
+	.4byte 0x00000F00
+	.4byte 0x0F000F0F
+	.4byte 0x000F0F00
+	.4byte 0x0F0F0F0F
+	.4byte 0x050F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F0F0F0F
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x456270, 0x28
+	# ROM: 0x456270
+	.asciz "scaleMode"
+	.byte 0x00, 0x00
+	.asciz "addListener"
+	.asciz "removeListener"
+	.byte 0x00
+
 .global "wordlist$7479_8045A198"
 "wordlist$7479_8045A198":
-	.incbin "baserom.dol", 0x456298, 0x30
+	# ROM: 0x456298
+	.4byte 0x805D6D50 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6D58 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x8045A170 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D6D60 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x8045A17C ;# ptr
+	.4byte 0x00000064
+	.4byte 0x8045A188 ;# ptr
+	.4byte 0x00000065
+
 .global "lookup$7486"
 "lookup$7486":
-	.incbin "baserom.dol", 0x4562C8, 0x10
+	# ROM: 0x4562C8
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF0001FF
+	.4byte 0xFF020304
+	.4byte 0xFFFF0500
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "lengthtable$7478"
 "lengthtable$7478":
-	.incbin "baserom.dol", 0x4868C8, 0x20
+	# ROM: 0x4868C8
+	.4byte 0x05060905
+	.4byte 0x0B0E0000
+	.asciz "align"
+	.byte 0x00, 0x00
+	.asciz "height"
+	.byte 0x00
+	.asciz "width"
+	.byte 0x00, 0x00
+

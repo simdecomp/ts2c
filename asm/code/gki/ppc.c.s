@@ -38,7 +38,7 @@
 /* 8033C8D0 00338570  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033C8D4 00338574  7C 08 03 A6 */	mtlr r0
 /* 8033C8D8 00338578  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033C8DC 0033857C  4E 80 00 20 */	blr 
+/* 8033C8DC 0033857C  4E 80 00 20 */	blr
 
 .global "GKI_shutdown"
 "GKI_shutdown":
@@ -85,23 +85,23 @@ lbl_8033C964:
 /* 8033C978 00338618  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033C97C 0033861C  7C 08 03 A6 */	mtlr r0
 /* 8033C980 00338620  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033C984 00338624  4E 80 00 20 */	blr 
+/* 8033C984 00338624  4E 80 00 20 */	blr
 
 .global "GKI_run"
 "GKI_run":
-/* 8033C988 00338628  4E 80 00 20 */	blr 
+/* 8033C988 00338628  4E 80 00 20 */	blr
 
 .global "GKI_sched_lock"
 "GKI_sched_lock":
-/* 8033C98C 0033862C  4E 80 00 20 */	blr 
+/* 8033C98C 0033862C  4E 80 00 20 */	blr
 
 .global "GKI_sched_unlock"
 "GKI_sched_unlock":
-/* 8033C990 00338630  4E 80 00 20 */	blr 
+/* 8033C990 00338630  4E 80 00 20 */	blr
 
 .global "GKI_delay"
 "GKI_delay":
-/* 8033C994 00338634  4E 80 00 20 */	blr 
+/* 8033C994 00338634  4E 80 00 20 */	blr
 
 .global "GKI_send_event"
 "GKI_send_event":
@@ -147,12 +147,12 @@ lbl_8033CA24:
 /* 8033CA2C 003386CC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033CA30 003386D0  7C 08 03 A6 */	mtlr r0
 /* 8033CA34 003386D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033CA38 003386D8  4E 80 00 20 */	blr 
+/* 8033CA38 003386D8  4E 80 00 20 */	blr
 
 .global "GKI_get_taskid"
 "GKI_get_taskid":
 /* 8033CA3C 003386DC  38 60 00 02 */	li r3, 2
-/* 8033CA40 003386E0  4E 80 00 20 */	blr 
+/* 8033CA40 003386E0  4E 80 00 20 */	blr
 
 .global "GKI_enable"
 "GKI_enable":
@@ -184,11 +184,11 @@ lbl_8033CA24:
 /* 8033CA9C 0033873C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033CAA0 00338740  7C 08 03 A6 */	mtlr r0
 /* 8033CAA4 00338744  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033CAA8 00338748  4E 80 00 20 */	blr 
+/* 8033CAA8 00338748  4E 80 00 20 */	blr
 
 .global "GKI_exception"
 "GKI_exception":
-/* 8033CAAC 0033874C  4E 80 00 20 */	blr 
+/* 8033CAAC 0033874C  4E 80 00 20 */	blr
 
 .global "GKI_os_malloc"
 "GKI_os_malloc":
@@ -203,7 +203,7 @@ lbl_8033CACC:
 /* 8033CACC 0033876C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033CAD0 00338770  7C 08 03 A6 */	mtlr r0
 /* 8033CAD4 00338774  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033CAD8 00338778  4E 80 00 20 */	blr 
+/* 8033CAD8 00338778  4E 80 00 20 */	blr
 
 .global "GKI_os_free"
 "GKI_os_free":

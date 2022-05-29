@@ -74,14 +74,14 @@ lbl_803F83A8:
 /* 803F83B4 003F4054  41 82 00 10 */	beq lbl_803F83C4
 /* 803F83B8 003F4058  7F 63 DB 78 */	mr r3, r27
 /* 803F83BC 003F405C  7D 89 03 A6 */	mtctr r12
-/* 803F83C0 003F4060  4E 80 04 21 */	bctrl 
+/* 803F83C0 003F4060  4E 80 04 21 */	bctrl
 lbl_803F83C4:
 /* 803F83C4 003F4064  39 61 00 20 */	addi r11, r1, 0x20
 /* 803F83C8 003F4068  48 01 6F F9 */	bl "_restgpr_27"
 /* 803F83CC 003F406C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F83D0 003F4070  7C 08 03 A6 */	mtlr r0
 /* 803F83D4 003F4074  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F83D8 003F4078  4E 80 00 20 */	blr 
+/* 803F83D8 003F4078  4E 80 00 20 */	blr
 
 .global "getDevConfig"
 "getDevConfig":
@@ -512,7 +512,7 @@ lbl_803F8A08:
 /* 803F8A10 003F46B0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F8A14 003F46B4  7C 08 03 A6 */	mtlr r0
 /* 803F8A18 003F46B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F8A1C 003F46BC  4E 80 00 20 */	blr 
+/* 803F8A1C 003F46BC  4E 80 00 20 */	blr
 
 .global "getExtConfig"
 "getExtConfig":
@@ -847,7 +847,7 @@ lbl_803F8EE4:
 /* 803F8EF0 003F4B90  7F 63 DB 78 */	mr r3, r27
 /* 803F8EF4 003F4B94  88 9E 08 C1 */	lbz r4, 0x8c1(r30)
 /* 803F8EF8 003F4B98  7D 89 03 A6 */	mtctr r12
-/* 803F8EFC 003F4B9C  4E 80 04 21 */	bctrl 
+/* 803F8EFC 003F4B9C  4E 80 04 21 */	bctrl
 /* 803F8F00 003F4BA0  38 00 00 00 */	li r0, 0
 /* 803F8F04 003F4BA4  90 1E 08 9C */	stw r0, 0x89c(r30)
 lbl_803F8F08:
@@ -856,7 +856,7 @@ lbl_803F8F08:
 /* 803F8F10 003F4BB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F8F14 003F4BB4  7C 08 03 A6 */	mtlr r0
 /* 803F8F18 003F4BB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F8F1C 003F4BBC  4E 80 00 20 */	blr 
+/* 803F8F1C 003F4BBC  4E 80 00 20 */	blr
 
 .global "getExtType"
 "getExtType":
@@ -938,7 +938,7 @@ lbl_803F8FE0:
 /* 803F9034 003F4CD4  7F A3 EB 78 */	mr r3, r29
 /* 803F9038 003F4CD8  88 9F 08 C1 */	lbz r4, 0x8c1(r31)
 /* 803F903C 003F4CDC  7D 89 03 A6 */	mtctr r12
-/* 803F9040 003F4CE0  4E 80 04 21 */	bctrl 
+/* 803F9040 003F4CE0  4E 80 04 21 */	bctrl
 /* 803F9044 003F4CE4  48 00 01 34 */	b lbl_803F9178
 lbl_803F9048:
 /* 803F9048 003F4CE8  38 03 00 FF */	addi r0, r3, 0xff
@@ -1025,7 +1025,7 @@ lbl_803F9178:
 /* 803F9180 003F4E20  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F9184 003F4E24  7C 08 03 A6 */	mtlr r0
 /* 803F9188 003F4E28  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F918C 003F4E2C  4E 80 00 20 */	blr 
+/* 803F918C 003F4E2C  4E 80 00 20 */	blr
 
 .global "getGameInfo"
 "getGameInfo":
@@ -1131,7 +1131,7 @@ lbl_803F9308:
 /* 803F9310 003F4FB0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803F9314 003F4FB4  7C 08 03 A6 */	mtlr r0
 /* 803F9318 003F4FB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F931C 003F4FBC  4E 80 00 20 */	blr 
+/* 803F931C 003F4FBC  4E 80 00 20 */	blr
 
 .global "WPADiHIDParser"
 "WPADiHIDParser":
@@ -1161,7 +1161,7 @@ lbl_803F9308:
 /* 803F937C 003F501C  7F A4 EB 78 */	mr r4, r29
 /* 803F9380 003F5020  7D 85 00 2E */	lwzx r12, r5, r0
 /* 803F9384 003F5024  7D 89 03 A6 */	mtctr r12
-/* 803F9388 003F5028  4E 80 04 21 */	bctrl 
+/* 803F9388 003F5028  4E 80 04 21 */	bctrl
 /* 803F938C 003F502C  7F E3 FB 78 */	mr r3, r31
 /* 803F9390 003F5030  4B FE 70 F5 */	bl "OSRestoreInterrupts"
 /* 803F9394 003F5034  7F 83 E3 78 */	mr r3, r28
@@ -1180,7 +1180,7 @@ lbl_803F93AC:
 /* 803F93C0 003F5060  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F93C4 003F5064  7C 08 03 A6 */	mtlr r0
 /* 803F93C8 003F5068  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F93CC 003F506C  4E 80 00 20 */	blr 
+/* 803F93CC 003F506C  4E 80 00 20 */	blr
 
 .global "__a1_20_status_report"
 "__a1_20_status_report":
@@ -1385,7 +1385,7 @@ lbl_803F9610:
 /* 803F96CC 003F536C  7F 23 CB 78 */	mr r3, r25
 /* 803F96D0 003F5370  38 80 00 FF */	li r4, 0xff
 /* 803F96D4 003F5374  7D 89 03 A6 */	mtctr r12
-/* 803F96D8 003F5378  4E 80 04 21 */	bctrl 
+/* 803F96D8 003F5378  4E 80 04 21 */	bctrl
 /* 803F96DC 003F537C  48 00 00 6C */	b lbl_803F9748
 lbl_803F96E0:
 /* 803F96E0 003F5380  38 7F 03 54 */	addi r3, r31, 0x354
@@ -1410,7 +1410,7 @@ lbl_803F96F0:
 /* 803F9728 003F53C8  7F 23 CB 78 */	mr r3, r25
 /* 803F972C 003F53CC  38 80 00 00 */	li r4, 0
 /* 803F9730 003F53D0  7D 89 03 A6 */	mtctr r12
-/* 803F9734 003F53D4  4E 80 04 21 */	bctrl 
+/* 803F9734 003F53D4  4E 80 04 21 */	bctrl
 /* 803F9738 003F53D8  48 00 00 10 */	b lbl_803F9748
 lbl_803F973C:
 /* 803F973C 003F53DC  38 7F 03 6C */	addi r3, r31, 0x36c
@@ -1435,7 +1435,7 @@ lbl_803F9768:
 /* 803F9780 003F5420  7F 23 CB 78 */	mr r3, r25
 /* 803F9784 003F5424  38 80 00 00 */	li r4, 0
 /* 803F9788 003F5428  7D 89 03 A6 */	mtctr r12
-/* 803F978C 003F542C  4E 80 04 21 */	bctrl 
+/* 803F978C 003F542C  4E 80 04 21 */	bctrl
 /* 803F9790 003F5430  38 00 00 00 */	li r0, 0
 /* 803F9794 003F5434  90 1E 08 9C */	stw r0, 0x89c(r30)
 lbl_803F9798:
@@ -1457,7 +1457,7 @@ lbl_803F97C8:
 /* 803F97D0 003F5470  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F97D4 003F5474  7C 08 03 A6 */	mtlr r0
 /* 803F97D8 003F5478  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F97DC 003F547C  4E 80 00 20 */	blr 
+/* 803F97DC 003F547C  4E 80 00 20 */	blr
 
 .global "__a1_21_user_data"
 "__a1_21_user_data":
@@ -1577,7 +1577,7 @@ lbl_803F999C:
 /* 803F999C 003F563C  7F 03 C3 78 */	mr r3, r24
 /* 803F99A0 003F5640  38 80 FF FD */	li r4, -3
 /* 803F99A4 003F5644  7D 89 03 A6 */	mtctr r12
-/* 803F99A8 003F5648  4E 80 04 21 */	bctrl 
+/* 803F99A8 003F5648  4E 80 04 21 */	bctrl
 lbl_803F99AC:
 /* 803F99AC 003F564C  38 00 00 00 */	li r0, 0
 /* 803F99B0 003F5650  90 1D 08 9C */	stw r0, 0x89c(r29)
@@ -1676,7 +1676,7 @@ lbl_803F9AF4:
 /* 803F9B00 003F57A0  7F 03 C3 78 */	mr r3, r24
 /* 803F9B04 003F57A4  7E E4 BB 78 */	mr r4, r23
 /* 803F9B08 003F57A8  7D 89 03 A6 */	mtctr r12
-/* 803F9B0C 003F57AC  4E 80 04 21 */	bctrl 
+/* 803F9B0C 003F57AC  4E 80 04 21 */	bctrl
 /* 803F9B10 003F57B0  38 00 00 00 */	li r0, 0
 /* 803F9B14 003F57B4  90 1D 08 9C */	stw r0, 0x89c(r29)
 lbl_803F9B18:
@@ -1703,7 +1703,7 @@ lbl_803F9B30:
 /* 803F9B60 003F5800  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F9B64 003F5804  7C 08 03 A6 */	mtlr r0
 /* 803F9B68 003F5808  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F9B6C 003F580C  4E 80 00 20 */	blr 
+/* 803F9B6C 003F580C  4E 80 00 20 */	blr
 
 .global "__a1_22_ack"
 "__a1_22_ack":
@@ -1833,7 +1833,7 @@ lbl_803F9D3C:
 /* 803F9D54 003F59F4  7F 43 D3 78 */	mr r3, r26
 /* 803F9D58 003F59F8  7F 84 E3 78 */	mr r4, r28
 /* 803F9D5C 003F59FC  7D 89 03 A6 */	mtctr r12
-/* 803F9D60 003F5A00  4E 80 04 21 */	bctrl 
+/* 803F9D60 003F5A00  4E 80 04 21 */	bctrl
 /* 803F9D64 003F5A04  38 00 00 00 */	li r0, 0
 /* 803F9D68 003F5A08  90 1E 08 9C */	stw r0, 0x89c(r30)
 lbl_803F9D6C:
@@ -1856,7 +1856,7 @@ lbl_803F9D84:
 /* 803F9DA4 003F5A44  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F9DA8 003F5A48  7C 08 03 A6 */	mtlr r0
 /* 803F9DAC 003F5A4C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F9DB0 003F5A50  4E 80 00 20 */	blr 
+/* 803F9DB0 003F5A50  4E 80 00 20 */	blr
 
 .global "__parse_dpd_data"
 "__parse_dpd_data":
@@ -2054,7 +2054,7 @@ lbl_803FA078:
 /* 803FA07C 003F5D1C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 803FA080 003F5D20  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803FA084 003F5D24  38 21 00 30 */	addi r1, r1, 0x30
-/* 803FA088 003F5D28  4E 80 00 20 */	blr 
+/* 803FA088 003F5D28  4E 80 00 20 */	blr
 
 .global "__a1_30_data_type"
 "__a1_30_data_type":
@@ -2170,7 +2170,7 @@ lbl_803FA204:
 /* 803FA234 003F5ED4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803FA238 003F5ED8  7C 08 03 A6 */	mtlr r0
 /* 803FA23C 003F5EDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FA240 003F5EE0  4E 80 00 20 */	blr 
+/* 803FA240 003F5EE0  4E 80 00 20 */	blr
 
 .global "__a1_31_data_type"
 "__a1_31_data_type":
@@ -2320,7 +2320,7 @@ lbl_803FA3AC:
 /* 803FA474 003F6114  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FA478 003F6118  7C 08 03 A6 */	mtlr r0
 /* 803FA47C 003F611C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FA480 003F6120  4E 80 00 20 */	blr 
+/* 803FA480 003F6120  4E 80 00 20 */	blr
 
 .global "__a1_32_data_type"
 "__a1_32_data_type":
@@ -2851,7 +2851,7 @@ lbl_803FAC0C:
 /* 803FAC2C 003F68CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FAC30 003F68D0  7C 08 03 A6 */	mtlr r0
 /* 803FAC34 003F68D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FAC38 003F68D8  4E 80 00 20 */	blr 
+/* 803FAC38 003F68D8  4E 80 00 20 */	blr
 
 .global "__a1_33_data_type"
 "__a1_33_data_type":
@@ -3014,11 +3014,11 @@ lbl_803FADB4:
 /* 803FAEA0 003F6B40  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803FAEA4 003F6B44  7C 08 03 A6 */	mtlr r0
 /* 803FAEA8 003F6B48  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FAEAC 003F6B4C  4E 80 00 20 */	blr 
+/* 803FAEAC 003F6B4C  4E 80 00 20 */	blr
 
 .global "__a1_34_data_type"
 "__a1_34_data_type":
-/* 803FAEB0 003F6B50  4E 80 00 20 */	blr 
+/* 803FAEB0 003F6B50  4E 80 00 20 */	blr
 
 .global "__a1_35_data_type"
 "__a1_35_data_type":
@@ -3594,7 +3594,7 @@ lbl_803FB6E8:
 /* 803FB710 003F73B0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803FB714 003F73B4  7C 08 03 A6 */	mtlr r0
 /* 803FB718 003F73B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FB71C 003F73BC  4E 80 00 20 */	blr 
+/* 803FB71C 003F73BC  4E 80 00 20 */	blr
 
 .global "__a1_36_data_type"
 "__a1_36_data_type":
@@ -3730,7 +3730,7 @@ lbl_803FB8FC:
 /* 803FB91C 003F75BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FB920 003F75C0  7C 08 03 A6 */	mtlr r0
 /* 803FB924 003F75C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FB928 003F75C8  4E 80 00 20 */	blr 
+/* 803FB928 003F75C8  4E 80 00 20 */	blr
 
 .global "__a1_37_data_type"
 "__a1_37_data_type":
@@ -4301,11 +4301,11 @@ lbl_803FC154:
 /* 803FC178 003F7E18  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803FC17C 003F7E1C  7C 08 03 A6 */	mtlr r0
 /* 803FC180 003F7E20  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FC184 003F7E24  4E 80 00 20 */	blr 
+/* 803FC184 003F7E24  4E 80 00 20 */	blr
 
 .global "__a1_3d_data_type"
 "__a1_3d_data_type":
-/* 803FC188 003F7E28  4E 80 00 20 */	blr 
+/* 803FC188 003F7E28  4E 80 00 20 */	blr
 
 .global "__a1_3e_data_type"
 "__a1_3e_data_type":
@@ -4695,7 +4695,7 @@ lbl_803FC754:
 /* 803FC760 003F8400  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803FC764 003F8404  7C 08 03 A6 */	mtlr r0
 /* 803FC768 003F8408  38 21 00 40 */	addi r1, r1, 0x40
-/* 803FC76C 003F840C  4E 80 00 20 */	blr 
+/* 803FC76C 003F840C  4E 80 00 20 */	blr
 
 .global "__a1_3f_data_type"
 "__a1_3f_data_type":
@@ -5089,25 +5089,125 @@ lbl_803FCD40:
 /* 803FCD54 003F89F4  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 803FCD58 003F89F8  7C 08 03 A6 */	mtlr r0
 /* 803FCD5C 003F89FC  38 21 00 30 */	addi r1, r1, 0x30
-/* 803FCD60 003F8A00  4E 80 00 20 */	blr 
+/* 803FCD60 003F8A00  4E 80 00 20 */	blr
 
 .global "__a1_unused_report"
 "__a1_unused_report":
-/* 803FCD64 003F8A04  4E 80 00 20 */	blr 
+/* 803FCD64 003F8A04  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__a1_input_reports_array"
 "__a1_input_reports_array":
-	.incbin "baserom.dol", 0x481118, 0x80
+	# ROM: 0x481118
+	.4byte "__a1_20_status_report" ;# ptr (0x803F93D0)
+	.4byte "__a1_21_user_data" ;# ptr (0x803F97E0)
+	.4byte "__a1_22_ack" ;# ptr (0x803F9B70)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_30_data_type" ;# ptr (0x803FA08C)
+	.4byte "__a1_31_data_type" ;# ptr (0x803FA244)
+	.4byte "__a1_32_data_type" ;# ptr (0x803FA484)
+	.4byte "__a1_33_data_type" ;# ptr (0x803FAC3C)
+	.4byte "__a1_34_data_type" ;# ptr (0x803FAEB0)
+	.4byte "__a1_35_data_type" ;# ptr (0x803FAEB4)
+	.4byte "__a1_36_data_type" ;# ptr (0x803FB720)
+	.4byte "__a1_37_data_type" ;# ptr (0x803FB92C)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_unused_report" ;# ptr (0x803FCD64)
+	.4byte "__a1_3d_data_type" ;# ptr (0x803FC188)
+	.4byte "__a1_3e_data_type" ;# ptr (0x803FC18C)
+	.4byte "__a1_3f_data_type" ;# ptr (0x803FC770)
+
 .global "checkInvalidData"
 "checkInvalidData":
-	.incbin "baserom.dol", 0x481198, 0x290
+	# ROM: 0x481198
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF000000
+	.asciz "Dpd Setting is ok.\n"
+	.4byte 0x00000000
+	.asciz "Dpd Setting is broken.\n"
+	.asciz "Old Firmware uses default values because it has no Dpd Setting.\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Acc is ok.\n"
+	.asciz "Acc is broken.\n"
+	.asciz "0G:  accX = %d,  accY = %d,  accZ = %d\n"
+	.asciz "1G:  accX = %d,  accY = %d,  accZ = %d\n"
+	.asciz "Volume: %d,   Motor: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "check sum error.\n"
+	.byte 0x00, 0x00
+	.asciz "0G:  fsaccX = %d,  fsaccY = %d,  fsaccZ = %d\n"
+	.byte 0x00, 0x00
+	.asciz "1G:  fsaccX = %d,  fsaccY = %d,  fsaccZ = %d\n"
+	.byte 0x00, 0x00
+	.asciz "FS:  X = %d,  X max = %d,  X min = %d\n"
+	.byte 0x00
+	.asciz "FS:  Y = %d,  Y max = %d,  Y min = %d\n"
+	.byte 0x00
+	.asciz "CL:  X = %d,  X max = %d,  X min = %d\n"
+	.byte 0x00
+	.asciz "CL:  Y = %d,  Y max = %d,  Y min = %d\n"
+	.byte 0x00
+	.asciz "CR:  X = %d,  X max = %d,  X min = %d\n"
+	.byte 0x00
+	.asciz "CR:  Y = %d,  Y max = %d,  Y min = %d\n"
+	.byte 0x00
+	.asciz "LR:  L = %d,  R = %d\n"
+	.byte 0x00, 0x00
+
 .global lbl_80485328
 lbl_80485328:
-	.incbin "baserom.dol", 0x481428, 0xC
+	# ROM: 0x481428
+	.asciz "type : %d\n"
+	.byte 0x00
+
 .global lbl_80485334
 lbl_80485334:
-	.incbin "baserom.dol", 0x481434, 0x144
+	# ROM: 0x481434
+	.asciz "mode : %d\n"
+	.byte 0x00
+	.asciz "Received report 20\n"
+	.asciz "initialize attachment\n"
+	.byte 0x00
+	.asciz "already initialized\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "already disconnected\n"
+	.byte 0x00, 0x00
+	.asciz "read error happens!\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "base addr: %08x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "length   : %d\n"
+	.byte 0x00
+	.asciz "received data is out of range!\n"
+	.asciz "Received ack!\n"
+	.byte 0x00
+	.asciz "ack --> report ID = %02x, error code = %d\n"
+	.byte 0x00
+	.asciz "ack error --> report ID = %d, error code = %d\n"
+	.byte 0x00
+	.asciz "invalid ack!\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "checkBuffer"
@@ -5134,34 +5234,59 @@ lbl_80485334:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBDB0
 lbl_805DBDB0:
-	.incbin "baserom.dol", 0x48A0D0, 0x2
+	# ROM: 0x48A0D0
+	.byte 0x00, 0x7F
+
 .global lbl_805DBDB2
 lbl_805DBDB2:
-	.incbin "baserom.dol", 0x48A0D2, 0x2
+	# ROM: 0x48A0D2
+	.byte 0x00, 0x7F
+
 .global lbl_805DBDB4
 lbl_805DBDB4:
-	.incbin "baserom.dol", 0x48A0D4, 0x2
+	# ROM: 0x48A0D4
+	.byte 0x03, 0x80
+
 .global lbl_805DBDB6
 lbl_805DBDB6:
-	.incbin "baserom.dol", 0x48A0D6, 0x2
+	# ROM: 0x48A0D6
+	.byte 0x03, 0x80
+
 .global lbl_805DBDB8
 lbl_805DBDB8:
-	.incbin "baserom.dol", 0x48A0D8, 0x2
+	# ROM: 0x48A0D8
+	.byte 0x00, 0x5D
+
 .global lbl_805DBDBA
 lbl_805DBDBA:
-	.incbin "baserom.dol", 0x48A0DA, 0x2
+	# ROM: 0x48A0DA
+	.byte 0x02, 0xA2
+
 .global lbl_805DBDBC
 lbl_805DBDBC:
-	.incbin "baserom.dol", 0x48A0DC, 0x2
+	# ROM: 0x48A0DC
+	.byte 0x02, 0xA2
+
 .global lbl_805DBDBE
 lbl_805DBDBE:
-	.incbin "baserom.dol", 0x48A0DE, 0x2
+	# ROM: 0x48A0DE
+	.byte 0x00, 0x5D
+
 .global lbl_805DBDC0
 lbl_805DBDC0:
-	.incbin "baserom.dol", 0x48A0E0, 0x8
+	# ROM: 0x48A0E0
+	.4byte 0x40490FD8
+	.4byte 0x00000000
+
 .global lbl_805DBDC8
 lbl_805DBDC8:
-	.incbin "baserom.dol", 0x48A0E8, 0x8
+	# ROM: 0x48A0E8
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DBDD0
 lbl_805DBDD0:
-	.incbin "baserom.dol", 0x48A0F0, 0x8
+	# ROM: 0x48A0F0
+	.4byte 0x43300000
+	.4byte 0x80000000
+

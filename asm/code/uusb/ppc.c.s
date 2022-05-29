@@ -32,7 +32,7 @@
 /* 8033D1E4 00338E84  7F A4 07 74 */	extsb r4, r29
 /* 8033D1E8 00338E88  38 60 00 04 */	li r3, 4
 /* 8033D1EC 00338E8C  7D 89 03 A6 */	mtctr r12
-/* 8033D1F0 00338E90  4E 80 04 21 */	bctrl 
+/* 8033D1F0 00338E90  4E 80 04 21 */	bctrl
 lbl_8033D1F4:
 /* 8033D1F4 00338E94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D1F8 00338E98  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -40,7 +40,7 @@ lbl_8033D1F4:
 /* 8033D200 00338EA0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033D204 00338EA4  7C 08 03 A6 */	mtlr r0
 /* 8033D208 00338EA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D20C 00338EAC  4E 80 00 20 */	blr 
+/* 8033D20C 00338EAC  4E 80 00 20 */	blr
 
 .global "uusb_ReadIntrDataCB"
 "uusb_ReadIntrDataCB":
@@ -192,7 +192,7 @@ lbl_8033D414:
 /* 8033D41C 003390BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D420 003390C0  7C 08 03 A6 */	mtlr r0
 /* 8033D424 003390C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D428 003390C8  4E 80 00 20 */	blr 
+/* 8033D428 003390C8  4E 80 00 20 */	blr
 
 .global "uusb_ReadBulkDataCB"
 "uusb_ReadBulkDataCB":
@@ -339,7 +339,7 @@ lbl_8033D61C:
 /* 8033D624 003392C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D628 003392C8  7C 08 03 A6 */	mtlr r0
 /* 8033D62C 003392CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D630 003392D0  4E 80 00 20 */	blr 
+/* 8033D630 003392D0  4E 80 00 20 */	blr
 
 .global "uusb_issue_bulk_read"
 "uusb_issue_bulk_read":
@@ -416,7 +416,7 @@ lbl_8033D730:
 /* 8033D738 003393D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D73C 003393DC  7C 08 03 A6 */	mtlr r0
 /* 8033D740 003393E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D744 003393E4  4E 80 00 20 */	blr 
+/* 8033D744 003393E4  4E 80 00 20 */	blr
 
 .global "uusb_issue_intr_read"
 "uusb_issue_intr_read":
@@ -497,7 +497,7 @@ lbl_8033D844:
 /* 8033D85C 003394FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D860 00339500  7C 08 03 A6 */	mtlr r0
 /* 8033D864 00339504  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D868 00339508  4E 80 00 20 */	blr 
+/* 8033D868 00339508  4E 80 00 20 */	blr
 
 .global "uusb_WriteCtrlDataCB"
 "uusb_WriteCtrlDataCB":
@@ -599,7 +599,7 @@ lbl_8033D9C0:
 /* 8033D9D0 00339670  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8033D9D4 00339674  7C 08 03 A6 */	mtlr r0
 /* 8033D9D8 00339678  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D9DC 0033967C  4E 80 00 20 */	blr 
+/* 8033D9DC 0033967C  4E 80 00 20 */	blr
 
 .global "uusb_WriteBulkDataCB"
 "uusb_WriteBulkDataCB":
@@ -698,7 +698,7 @@ lbl_8033DB28:
 /* 8033DB38 003397D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8033DB3C 003397DC  7C 08 03 A6 */	mtlr r0
 /* 8033DB40 003397E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033DB44 003397E4  4E 80 00 20 */	blr 
+/* 8033DB44 003397E4  4E 80 00 20 */	blr
 
 .global "uusb_get_devId"
 "uusb_get_devId":
@@ -774,7 +774,7 @@ lbl_8033DC3C:
 /* 8033DC44 003398E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033DC48 003398E8  7C 08 03 A6 */	mtlr r0
 /* 8033DC4C 003398EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033DC50 003398F0  4E 80 00 20 */	blr 
+/* 8033DC50 003398F0  4E 80 00 20 */	blr
 
 .global "UUSB_Register"
 "UUSB_Register":
@@ -943,7 +943,7 @@ lbl_8033DEA4:
 /* 8033DEB0 00339B50  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033DEB4 00339B54  7C 08 03 A6 */	mtlr r0
 /* 8033DEB8 00339B58  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033DEBC 00339B5C  4E 80 00 20 */	blr 
+/* 8033DEBC 00339B5C  4E 80 00 20 */	blr
 
 .global "UUSB_Open"
 "UUSB_Open":
@@ -1022,12 +1022,12 @@ lbl_8033DFBC:
 /* 8033DFC8 00339C68  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033DFCC 00339C6C  7C 08 03 A6 */	mtlr r0
 /* 8033DFD0 00339C70  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033DFD4 00339C74  4E 80 00 20 */	blr 
+/* 8033DFD4 00339C74  4E 80 00 20 */	blr
 
 .global "UUSB_Read"
 "UUSB_Read":
 /* 8033DFD8 00339C78  38 60 00 00 */	li r3, 0
-/* 8033DFDC 00339C7C  4E 80 00 20 */	blr 
+/* 8033DFDC 00339C7C  4E 80 00 20 */	blr
 
 .global "UUSB_Write"
 "UUSB_Write":
@@ -1423,7 +1423,7 @@ lbl_8033E550:
 /* 8033E558 0033A1F8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8033E55C 0033A1FC  7C 08 03 A6 */	mtlr r0
 /* 8033E560 0033A200  38 21 00 30 */	addi r1, r1, 0x30
-/* 8033E564 0033A204  4E 80 00 20 */	blr 
+/* 8033E564 0033A204  4E 80 00 20 */	blr
 
 .global "UUSB_Close"
 "UUSB_Close":
@@ -1475,7 +1475,7 @@ lbl_8033E5E8:
 /* 8033E604 0033A2A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033E608 0033A2A8  7C 08 03 A6 */	mtlr r0
 /* 8033E60C 0033A2AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033E610 0033A2B0  4E 80 00 20 */	blr 
+/* 8033E610 0033A2B0  4E 80 00 20 */	blr
 
 .global "UUSB_Unregister"
 "UUSB_Unregister":
@@ -1495,18 +1495,111 @@ lbl_8033E5E8:
 /* 8033E648 0033A2E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033E64C 0033A2EC  7C 08 03 A6 */	mtlr r0
 /* 8033E650 0033A2F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033E654 0033A2F4  4E 80 00 20 */	blr 
+/* 8033E654 0033A2F4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8045FDF0
 lbl_8045FDF0:
-	.incbin "baserom.dol", 0x45BEF0, 0x5D0
+	# ROM: 0x45BEF0
+	.asciz "HCISU_LOG: uusb_ReadIntrDataCB called\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: uusb_ReadIntrDataCB: usb_state != UUSB_PPC_OPENED_ST\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: ************\n* uusb_ReadIntrDataCB(): usb_state != UUSB_PPC_OPENED_ST - stop reading\n************\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: uusb_ReadIntrDataCB(): Got Error code %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_LOG: uusb_ReadIntrDataCB: len(%d) offset (%d) cp_len(%d) data = "
+	.byte 0x00
+	.asciz "HCISU_ERR: uusb_readBulkDataCB: usb_state != UUSB_PPC_OPENED_ST\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: ****\n* uusb_readBulkDataCB(): usb_state != UUSB_PPC_OPENED_ST - stop reading\n****\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: uusb_ReadBulkDataCB(): Got Error code %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_LOG: uusb_ReadBulkDataCB: len(%d) offset(%d) cp_len(%d) data = "
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: ****\n* uusb_issue_bulk_read(): unable to get buffer - try again\n****\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: uusb_issue_bulk_read: IUSB_ReadBlkMsgAsync failed with err = %d\n"
+	.asciz "HCISU_ERR: ****\n* uusb_issue_bulk_read: IUSB_ReadBlkMsgAsync failed with err = %d\n****\n"
+	.asciz "HCISU_ERR: ****\n* uusb_issue_intr_read(): unable to get buffer - try again\n****\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: IUSB_ReadIntrMsgAsync failed with err = %d\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: ****\n* uusb_issue_intr_read(): IUSB_ReadIntrMsgAsync failed with err = %d\n****\n"
+	.byte 0x00
+	.asciz "HCISU_LOG: uusb_WriteCtrlDataCB called with err = %d\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: uusb_WriteCtrlDataCB(): Got error (%d)\n"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "HCISU_ERR: uusb_WriteCtrlDataCB(): error - unable to write data packet\n"
+	.asciz "HCISU_LOG: uusb_WriteBulkDataCB called with err = %d\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: uusb_WriteBulkDataCB(): Got error (%d)\n"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "HCISU_ERR: uusb_WriteBulkDataCB(): error - unable to write data packet\n"
+
 .global lbl_804603C0
 lbl_804603C0:
-	.incbin "baserom.dol", 0x45C4C0, 0x60
+	# ROM: 0x45C4C0
+	.asciz "HCISU_ERR: ERROR from IUSB_OpenDeviceIds (%d) : Device (vendor 0x%x product 0x%x) not found\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80460420
 lbl_80460420:
-	.incbin "baserom.dol", 0x45C520, 0x718
+	# ROM: 0x45C520
+	.asciz "HCISU_ERR: No suitable Bluetooth Device was found. Exiting...\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: UUSB_Register: ERROR - failed IPCCltInit\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: UUSB_Register: ERROR - failed IUSB_OpenLib\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: UUSB_Register: Error returned from get_devId()\n"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "HCISU_LOG: UUSB_Register: uusb_get_dev_id returned with usb.devId = %d\n"
+	.asciz "HCISU_LOG: UUSB_Register: Unable to create memory pools\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_LOG: UUSB_Register: hci_cmd_usb_pool_id (%d) hci_acl_usb_pool_id(%d)\n"
+	.asciz "HCISU_LOG: UUSB_Open: USB is not in registered state, unable to open\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_LOG: UUSB_Open: USB Buffer Pool's Invalid\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "HCISU_LOG: UUSB_Open: hci_cmd_usb_pool_id = %d\n"
+	.asciz "HCISU_LOG: UUSB_Open: hci_acl_usb_pool_id = %d\n"
+	.asciz "HCISU_ERR: UUSB_Write: usb_state != UUSB_PPC_OPENED_ST\n"
+	.asciz "HCISU_LOG: buffer size = %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_LOG: UUSB_Write: ep(%d) len(%d) data = "
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: UUSB_Write: Unable to get buffer from hci_cmd_usb_pool\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: UUSB_WRITE(): Ctrl Queue count =  %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: *************************************************************************************\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteCtrlMsgAsync error...  (%d), writes outstanding (%d)\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteCtrlMsgAsync error... IOS_ERROR_FAIL_ALLOC  (%d), writes outstanding (%d)\n"
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteCtrlMsgAsync error... IOS_ERROR_QFULL  (%d), writes outstanding (%d)\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: UUSB_Write: Unable to get buffer from hci_acl_usb_pool\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: UUSB_Write - writing mem data\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: UUSB_WRITE(): Bulk Queue count =  %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteBlkMsgAsync error...  (%d), writes outstanding (%d)\n"
+	.byte 0x00, 0x00
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteBlkMsgAsync error... IOS_ERROR_FAIL_ALLOC  (%d), writes outstanding (%d)\n"
+	.byte 0x00
+	.asciz "HCISU_ERR: * UUSB_Write(): IUSB_WriteBlkMsgAsync error... IOS_ERROR_QFULL  (%d), writes outstanding (%d)\n"
+	.byte 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "usb"
@@ -1522,22 +1615,36 @@ lbl_80460420:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "wait4hci"
 "wait4hci":
-	.incbin "baserom.dol", 0x486DD8, 0x4
+	# ROM: 0x486DD8
+	.4byte 0x00000001
+
 .global "__ntd_ios_file_descriptor"
 "__ntd_ios_file_descriptor":
-	.incbin "baserom.dol", 0x486DDC, 0x4
+	# ROM: 0x486DDC
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global lbl_805D7260
 lbl_805D7260:
-	.incbin "baserom.dol", 0x486DE0, 0x8
+	# ROM: 0x486DE0
+	.asciz "%02x "
+	.byte 0x00, 0x00
+
 .global lbl_805D7268
 lbl_805D7268:
-	.incbin "baserom.dol", 0x486DE8, 0x4
+	# ROM: 0x486DE8
+	.4byte 0x0A000000
+
 .global lbl_805D726C
 lbl_805D726C:
-	.incbin "baserom.dol", 0x486DEC, 0x4
+	# ROM: 0x486DEC
+	.4byte 0x6F683000
+
 .global lbl_805D7270
 lbl_805D7270:
-	.incbin "baserom.dol", 0x486DF0, 0x8
+	# ROM: 0x486DF0
+	.4byte 0x6F683100
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "uusb_g_usb_devid_found"

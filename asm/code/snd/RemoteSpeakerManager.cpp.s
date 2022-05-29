@@ -20,7 +20,7 @@ lbl_803A683C:
 /* 803A6844 003A24E4  38 63 21 68 */	addi r3, r3, "instance$722"@l
 /* 803A6848 003A24E8  7C 08 03 A6 */	mtlr r0
 /* 803A684C 003A24EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6850 003A24F0  4E 80 00 20 */	blr 
+/* 803A6850 003A24F0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFv"
 "__ct__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFv":
@@ -58,12 +58,12 @@ lbl_803A689C:
 /* 803A68C8 003A2568  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A68CC 003A256C  7C 08 03 A6 */	mtlr r0
 /* 803A68D0 003A2570  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A68D4 003A2574  4E 80 00 20 */	blr 
+/* 803A68D4 003A2574  4E 80 00 20 */	blr
 
 .global "SetChannelIndex__Q36nw4hbm3snd13RemoteSpeakerFi"
 "SetChannelIndex__Q36nw4hbm3snd13RemoteSpeakerFi":
 /* 803A68D8 003A2578  90 83 00 2C */	stw r4, 0x2c(r3)
-/* 803A68DC 003A257C  4E 80 00 20 */	blr 
+/* 803A68DC 003A257C  4E 80 00 20 */	blr
 
 .global "Setup__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFv"
 "Setup__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFv":
@@ -119,7 +119,7 @@ lbl_803A6990:
 /* 803A699C 003A263C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A69A0 003A2640  7C 08 03 A6 */	mtlr r0
 /* 803A69A4 003A2644  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A69A8 003A2648  4E 80 00 20 */	blr 
+/* 803A69A8 003A2648  4E 80 00 20 */	blr
 
 .global "RemoteSpeakerAlarmProc__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFP7OSAlarmP9OSContext"
 "RemoteSpeakerAlarmProc__Q46nw4hbm3snd6detail20RemoteSpeakerManagerFP7OSAlarmP9OSContext":
@@ -182,12 +182,21 @@ lbl_803A6A6C:
 /* 803A6A78 003A2718  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 803A6A7C 003A271C  7C 08 03 A6 */	mtlr r0
 /* 803A6A80 003A2720  38 21 00 70 */	addi r1, r1, 0x70
-/* 803A6A84 003A2724  4E 80 00 20 */	blr 
+/* 803A6A84 003A2724  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046EB00
 lbl_8046EB00:
-	.incbin "baserom.dol", 0x46AC00, 0xC8
+	# ROM: 0x46AC00
+	.asciz "snd_RemoteSpeakerManager.cpp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "channelIndex is out of bounds(%d)\n%d <= channelIndex < %d not satisfied."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion &manager.mRemoteSpeakerAlarm == alarm"
+	.byte 0x00, 0x00
+	.asciz "wrong remote sample size"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "instance$722"

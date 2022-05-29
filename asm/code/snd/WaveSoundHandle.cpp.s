@@ -28,7 +28,7 @@ lbl_803BAA7C:
 /* 803BAA80 003B6720  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803BAA84 003B6724  7C 08 03 A6 */	mtlr r0
 /* 803BAA88 003B6728  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BAA8C 003B672C  4E 80 00 20 */	blr 
+/* 803BAA8C 003B672C  4E 80 00 20 */	blr
 
 .global "IsAttachedSound__Q36nw4hbm3snd15WaveSoundHandleCFv"
 "IsAttachedSound__Q36nw4hbm3snd15WaveSoundHandleCFv":
@@ -36,4 +36,4 @@ lbl_803BAA7C:
 /* 803BAA94 003B6734  7C 03 00 D0 */	neg r0, r3
 /* 803BAA98 003B6738  7C 00 1B 78 */	or r0, r0, r3
 /* 803BAA9C 003B673C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803BAAA0 003B6740  4E 80 00 20 */	blr 
+/* 803BAAA0 003B6740  4E 80 00 20 */	blr

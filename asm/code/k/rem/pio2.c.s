@@ -1603,38 +1603,83 @@ lbl_8040DC8C:
 /* 8040DC9C 0040993C  80 01 03 74 */	lwz r0, 0x374(r1)
 /* 8040DCA0 00409940  7C 08 03 A6 */	mtlr r0
 /* 8040DCA4 00409944  38 21 03 70 */	addi r1, r1, 0x370
-/* 8040DCA8 00409948  4E 80 00 20 */	blr 
+/* 8040DCA8 00409948  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "init_jk"
 "init_jk":
-	.incbin "baserom.dol", 0x41BD40, 0x10
+	# ROM: 0x41BD40
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000006
+
 .global "PIo2"
 "PIo2":
-	.incbin "baserom.dol", 0x41BD50, 0x40
+	# ROM: 0x41BD50
+	.4byte 0x3FF921FB
+	.4byte 0x40000000
+	.asciz ">tD-"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x3CF84698
+	.4byte 0x80000000
+	.4byte 0x3B78CC51
+	.4byte 0x60000000
+	.4byte 0x39F01B83
+	.4byte 0x80000000
+	.asciz "8z% @"
+	.byte 0x00, 0x00
+	.4byte 0x36E38222
+	.4byte 0x80000000
+	.4byte 0x3569F31D
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC2B0
 lbl_805DC2B0:
-	.incbin "baserom.dol", 0x48A5D0, 0x8
+	# ROM: 0x48A5D0
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DC2B8
 lbl_805DC2B8:
-	.incbin "baserom.dol", 0x48A5D8, 0x8
+	# ROM: 0x48A5D8
+	.4byte 0x3E700000
+	.4byte 0x00000000
+
 .global lbl_805DC2C0
 lbl_805DC2C0:
-	.incbin "baserom.dol", 0x48A5E0, 0x8
+	# ROM: 0x48A5E0
+	.4byte 0x41700000
+	.4byte 0x00000000
+
 .global lbl_805DC2C8
 lbl_805DC2C8:
-	.incbin "baserom.dol", 0x48A5E8, 0x8
+	# ROM: 0x48A5E8
+	.4byte 0x40200000
+	.4byte 0x00000000
+
 .global lbl_805DC2D0
 lbl_805DC2D0:
-	.incbin "baserom.dol", 0x48A5F0, 0x8
+	# ROM: 0x48A5F0
+	.4byte 0x3FC00000
+	.4byte 0x00000000
+
 .global lbl_805DC2D8
 lbl_805DC2D8:
-	.incbin "baserom.dol", 0x48A5F8, 0x8
+	# ROM: 0x48A5F8
+	.4byte 0x3FE00000
+	.4byte 0x00000000
+
 .global lbl_805DC2E0
 lbl_805DC2E0:
-	.incbin "baserom.dol", 0x48A600, 0x8
+	# ROM: 0x48A600
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+
 .global lbl_805DC2E8
 lbl_805DC2E8:
-	.incbin "baserom.dol", 0x48A608, 0x8
+	# ROM: 0x48A608
+	.4byte 0x43300000
+	.4byte 0x80000000
+

@@ -68,7 +68,7 @@ lbl_803652DC:
 /* 803652E0 00360F80  7D 63 5B 78 */	mr r3, r11
 /* 803652E4 00360F84  38 04 FF FF */	addi r0, r4, -1
 /* 803652E8 00360F88  98 0A 00 00 */	stb r0, 0(r10)
-/* 803652EC 00360F8C  4E 80 00 20 */	blr 
+/* 803652EC 00360F8C  4E 80 00 20 */	blr
 
 .global "sdp_snd_service_search_req"
 "sdp_snd_service_search_req":
@@ -150,7 +150,7 @@ lbl_80365408:
 /* 80365410 003610B0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80365414 003610B4  7C 08 03 A6 */	mtlr r0
 /* 80365418 003610B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8036541C 003610BC  4E 80 00 20 */	blr 
+/* 8036541C 003610BC  4E 80 00 20 */	blr
 
 .global "sdp_disc_connected"
 "sdp_disc_connected":
@@ -257,7 +257,7 @@ lbl_80365574:
 /* 80365584 00361224  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80365588 00361228  7C 08 03 A6 */	mtlr r0
 /* 8036558C 0036122C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80365590 00361230  4E 80 00 20 */	blr 
+/* 80365590 00361230  4E 80 00 20 */	blr
 
 .global "process_service_search_rsp"
 "process_service_search_rsp":
@@ -349,7 +349,7 @@ lbl_803656C8:
 /* 803656CC 0036136C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803656D0 00361370  7C 08 03 A6 */	mtlr r0
 /* 803656D4 00361374  38 21 00 10 */	addi r1, r1, 0x10
-/* 803656D8 00361378  4E 80 00 20 */	blr 
+/* 803656D8 00361378  4E 80 00 20 */	blr
 
 .global "process_service_attr_rsp"
 "process_service_attr_rsp":
@@ -534,7 +534,7 @@ lbl_8036596C:
 /* 80365974 00361614  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80365978 00361618  7C 08 03 A6 */	mtlr r0
 /* 8036597C 0036161C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80365980 00361620  4E 80 00 20 */	blr 
+/* 80365980 00361620  4E 80 00 20 */	blr
 
 .global "process_service_search_attr_rsp"
 "process_service_search_attr_rsp":
@@ -732,7 +732,7 @@ lbl_80365C40:
 /* 80365C48 003618E8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80365C4C 003618EC  7C 08 03 A6 */	mtlr r0
 /* 80365C50 003618F0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80365C54 003618F4  4E 80 00 20 */	blr 
+/* 80365C54 003618F4  4E 80 00 20 */	blr
 
 .global "save_attr_seq"
 "save_attr_seq":
@@ -871,7 +871,7 @@ lbl_80365E2C:
 /* 80365E34 00361AD4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80365E38 00361AD8  7C 08 03 A6 */	mtlr r0
 /* 80365E3C 00361ADC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80365E40 00361AE0  4E 80 00 20 */	blr 
+/* 80365E40 00361AE0  4E 80 00 20 */	blr
 
 .global "add_record"
 "add_record":
@@ -919,7 +919,7 @@ lbl_80365ECC:
 /* 80365ED4 00361B74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80365ED8 00361B78  7C 08 03 A6 */	mtlr r0
 /* 80365EDC 00361B7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80365EE0 00361B80  4E 80 00 20 */	blr 
+/* 80365EE0 00361B80  4E 80 00 20 */	blr
 
 .global "add_attr"
 "add_attr":
@@ -975,7 +975,7 @@ lbl_80365F6C:
 /* 80365FA0 00361C40  38 A5 5C 88 */	addi r5, r5, lbl_80465C88@l
 /* 80365FA4 00361C44  7C A5 20 2E */	lwzx r5, r5, r4
 /* 80365FA8 00361C48  7C A9 03 A6 */	mtctr r5
-/* 80365FAC 00361C4C  4E 80 04 20 */	bctr 
+/* 80365FAC 00361C4C  4E 80 04 20 */	bctr
 /* 80365FB0 00361C50  2C 1C 00 00 */	cmpwi r28, 0
 /* 80365FB4 00361C54  41 82 00 AC */	beq lbl_80366060
 /* 80365FB8 00361C58  80 01 00 08 */	lwz r0, 8(r1)
@@ -1321,18 +1321,49 @@ lbl_80366464:
 /* 8036646C 0036210C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80366470 00362110  7C 08 03 A6 */	mtlr r0
 /* 80366474 00362114  38 21 00 40 */	addi r1, r1, 0x40
-/* 80366478 00362118  4E 80 00 20 */	blr 
+/* 80366478 00362118  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465B50
 lbl_80465B50:
-	.incbin "baserom.dol", 0x461C50, 0x28
+	# ROM: 0x461C50
+	.asciz "SDP - Unexp. PDU: %d in state: %d"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_80465B78
 lbl_80465B78:
-	.incbin "baserom.dol", 0x461C78, 0x28
+	# ROM: 0x461C78
+	.asciz "SDP - Rcvd ServiceSearchRsp, no matches"
+
 .global lbl_80465BA0
 lbl_80465BA0:
-	.incbin "baserom.dol", 0x461CA0, 0xE8
+	# ROM: 0x461CA0
+	.asciz "SDP - Wrong type: 0x%02x in attr_rsp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SDP - Bad len in attr_rsp %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SDP - DB full"
+	.byte 0x00, 0x00
+	.asciz "SDP - Bad type: 0x%02x or len: %d in attr_rsp"
+	.byte 0x00, 0x00
+	.asciz "SDP - attr nesting too deep"
+	.asciz "SDP - bad len in UUID attr: %d"
+	.byte 0x00
+	.asciz "SDP - bad len in boolean attr: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80465C88
 lbl_80465C88:
-	.incbin "baserom.dol", 0x461D88, 0x28
+	# ROM: 0x461D88
+	.4byte 0x803663E4 ;# ptr
+	.4byte 0x80365FB0 ;# ptr
+	.4byte 0x80366060 ;# ptr
+	.4byte 0x8036611C ;# ptr
+	.4byte 0x80366364 ;# ptr
+	.4byte 0x80366394 ;# ptr
+	.4byte 0x803662B0 ;# ptr
+	.4byte 0x803662B0 ;# ptr
+	.4byte 0x80366364 ;# ptr
+	.4byte 0x00000000
+

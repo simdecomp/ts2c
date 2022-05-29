@@ -22,21 +22,21 @@
 
 .global "AllocatorFreeForFrmHeap_"
 "AllocatorFreeForFrmHeap_":
-/* 803D3ECC 003CFB6C  4E 80 00 20 */	blr 
+/* 803D3ECC 003CFB6C  4E 80 00 20 */	blr
 
 .global "MEMAllocFromAllocator"
 "MEMAllocFromAllocator":
 /* 803D3ED0 003CFB70  80 A3 00 00 */	lwz r5, 0(r3)
 /* 803D3ED4 003CFB74  81 85 00 00 */	lwz r12, 0(r5)
 /* 803D3ED8 003CFB78  7D 89 03 A6 */	mtctr r12
-/* 803D3EDC 003CFB7C  4E 80 04 20 */	bctr 
+/* 803D3EDC 003CFB7C  4E 80 04 20 */	bctr
 
 .global "MEMFreeToAllocator"
 "MEMFreeToAllocator":
 /* 803D3EE0 003CFB80  80 A3 00 00 */	lwz r5, 0(r3)
 /* 803D3EE4 003CFB84  81 85 00 04 */	lwz r12, 4(r5)
 /* 803D3EE8 003CFB88  7D 89 03 A6 */	mtctr r12
-/* 803D3EEC 003CFB8C  4E 80 04 20 */	bctr 
+/* 803D3EEC 003CFB8C  4E 80 04 20 */	bctr
 
 .global "MEMInitAllocatorForExpHeap"
 "MEMInitAllocatorForExpHeap":
@@ -46,7 +46,7 @@
 /* 803D3EFC 003CFB9C  90 83 00 04 */	stw r4, 4(r3)
 /* 803D3F00 003CFBA0  90 A3 00 08 */	stw r5, 8(r3)
 /* 803D3F04 003CFBA4  90 03 00 0C */	stw r0, 0xc(r3)
-/* 803D3F08 003CFBA8  4E 80 00 20 */	blr 
+/* 803D3F08 003CFBA8  4E 80 00 20 */	blr
 
 .global "MEMInitAllocatorForFrmHeap"
 "MEMInitAllocatorForFrmHeap":
@@ -56,12 +56,18 @@
 /* 803D3F18 003CFBB8  90 83 00 04 */	stw r4, 4(r3)
 /* 803D3F1C 003CFBBC  90 A3 00 08 */	stw r5, 8(r3)
 /* 803D3F20 003CFBC0  90 03 00 0C */	stw r0, 0xc(r3)
-/* 803D3F24 003CFBC4  4E 80 00 20 */	blr 
+/* 803D3F24 003CFBC4  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "sAllocatorFunc$684"
 "sAllocatorFunc$684":
-	.incbin "baserom.dol", 0x48A038, 0x8
+	# ROM: 0x48A038
+	.4byte "AllocatorAllocForExpHeap_" ;# ptr (0x803D3EA4)
+	.4byte "AllocatorFreeForExpHeap_" ;# ptr (0x803D3EB4)
+
 .global "sAllocatorFunc$691"
 "sAllocatorFunc$691":
-	.incbin "baserom.dol", 0x48A040, 0x8
+	# ROM: 0x48A040
+	.4byte "AllocatorAllocForFrmHeap_" ;# ptr (0x803D3EBC)
+	.4byte "AllocatorFreeForFrmHeap_" ;# ptr (0x803D3ECC)
+

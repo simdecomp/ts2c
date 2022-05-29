@@ -410,7 +410,7 @@ lbl_8034F6FC:
 /* 8034F70C 0034B3AC  83 81 00 30 */	lwz r28, 0x30(r1)
 /* 8034F710 0034B3B0  7C 08 03 A6 */	mtlr r0
 /* 8034F714 0034B3B4  38 21 00 40 */	addi r1, r1, 0x40
-/* 8034F718 0034B3B8  4E 80 00 20 */	blr 
+/* 8034F718 0034B3B8  4E 80 00 20 */	blr
 
 .global "btu_hcif_send_cmd"
 "btu_hcif_send_cmd":
@@ -520,7 +520,7 @@ lbl_8034F88C:
 /* 8034F898 0034B538  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034F89C 0034B53C  7C 08 03 A6 */	mtlr r0
 /* 8034F8A0 0034B540  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034F8A4 0034B544  4E 80 00 20 */	blr 
+/* 8034F8A4 0034B544  4E 80 00 20 */	blr
 
 .global "btu_hcif_connection_comp_evt"
 "btu_hcif_connection_comp_evt":
@@ -580,7 +580,7 @@ lbl_8034F96C:
 /* 8034F974 0034B614  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8034F978 0034B618  7C 08 03 A6 */	mtlr r0
 /* 8034F97C 0034B61C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034F980 0034B620  4E 80 00 20 */	blr 
+/* 8034F980 0034B620  4E 80 00 20 */	blr
 
 .global "btu_hcif_connection_request_evt"
 "btu_hcif_connection_request_evt":
@@ -620,7 +620,7 @@ lbl_8034FA00:
 /* 8034FA00 0034B6A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034FA04 0034B6A4  7C 08 03 A6 */	mtlr r0
 /* 8034FA08 0034B6A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034FA0C 0034B6AC  4E 80 00 20 */	blr 
+/* 8034FA0C 0034B6AC  4E 80 00 20 */	blr
 
 .global "btu_hcif_qos_setup_comp_evt"
 "btu_hcif_qos_setup_comp_evt":
@@ -687,7 +687,7 @@ lbl_8034FA00:
 /* 8034FB00 0034B7A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034FB04 0034B7A4  7C 08 03 A6 */	mtlr r0
 /* 8034FB08 0034B7A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034FB0C 0034B7AC  4E 80 00 20 */	blr 
+/* 8034FB0C 0034B7AC  4E 80 00 20 */	blr
 
 .global "btu_hcif_esco_connection_comp_evt"
 "btu_hcif_esco_connection_comp_evt":
@@ -746,7 +746,7 @@ lbl_8034FA00:
 /* 8034FBE0 0034B880  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8034FBE4 0034B884  7C 08 03 A6 */	mtlr r0
 /* 8034FBE8 0034B888  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034FBEC 0034B88C  4E 80 00 20 */	blr 
+/* 8034FBEC 0034B88C  4E 80 00 20 */	blr
 
 .global "btu_hcif_hdl_command_complete"
 "btu_hcif_hdl_command_complete":
@@ -853,11 +853,11 @@ lbl_8034FD28:
 /* 8034FD28 0034B9C8  54 63 04 2A */	rlwinm r3, r3, 0, 0x10, 0x15
 /* 8034FD2C 0034B9CC  3C 03 00 00 */	addis r0, r3, 0
 /* 8034FD30 0034B9D0  28 00 FC 00 */	cmplwi r0, 0xfc00
-/* 8034FD34 0034B9D4  4C 82 00 20 */	bnelr 
+/* 8034FD34 0034B9D4  4C 82 00 20 */	bnelr
 /* 8034FD38 0034B9D8  7C 83 23 78 */	mr r3, r4
 /* 8034FD3C 0034B9DC  7C C4 33 78 */	mr r4, r6
 /* 8034FD40 0034B9E0  4B FF 86 2C */	b "btm_vsc_complete"
-/* 8034FD44 0034B9E4  4E 80 00 20 */	blr 
+/* 8034FD44 0034B9E4  4E 80 00 20 */	blr
 
 .global "btu_hcif_command_complete_evt"
 "btu_hcif_command_complete_evt":
@@ -935,7 +935,7 @@ lbl_8034FE40:
 /* 8034FE50 0034BAF0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8034FE54 0034BAF4  7C 08 03 A6 */	mtlr r0
 /* 8034FE58 0034BAF8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034FE5C 0034BAFC  4E 80 00 20 */	blr 
+/* 8034FE5C 0034BAFC  4E 80 00 20 */	blr
 
 .global "btu_hcif_hdl_command_status"
 "btu_hcif_hdl_command_status":
@@ -1080,7 +1080,7 @@ lbl_80350048:
 /* 80350050 0034BCF0  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80350054 0034BCF4  7C 08 03 A6 */	mtlr r0
 /* 80350058 0034BCF8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035005C 0034BCFC  4E 80 00 20 */	blr 
+/* 8035005C 0034BCFC  4E 80 00 20 */	blr
 
 .global "btu_hcif_command_status_evt"
 "btu_hcif_command_status_evt":
@@ -1161,7 +1161,7 @@ lbl_80350168:
 /* 80350178 0034BE18  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035017C 0034BE1C  7C 08 03 A6 */	mtlr r0
 /* 80350180 0034BE20  38 21 00 20 */	addi r1, r1, 0x20
-/* 80350184 0034BE24  4E 80 00 20 */	blr 
+/* 80350184 0034BE24  4E 80 00 20 */	blr
 
 .global "btu_hcif_cmd_timeout"
 "btu_hcif_cmd_timeout":
@@ -1259,7 +1259,7 @@ lbl_803502C4:
 /* 803502D0 0034BF70  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803502D4 0034BF74  7C 08 03 A6 */	mtlr r0
 /* 803502D8 0034BF78  38 21 00 20 */	addi r1, r1, 0x20
-/* 803502DC 0034BF7C  4E 80 00 20 */	blr 
+/* 803502DC 0034BF7C  4E 80 00 20 */	blr
 
 .global "btu_hcif_link_key_notification_evt"
 "btu_hcif_link_key_notification_evt":
@@ -1318,18 +1318,30 @@ lbl_803502C4:
 /* 803503B0 0034C050  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803503B4 0034C054  7C 08 03 A6 */	mtlr r0
 /* 803503B8 0034C058  38 21 00 20 */	addi r1, r1, 0x20
-/* 803503BC 0034C05C  4E 80 00 20 */	blr 
+/* 803503BC 0034C05C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80462DA8
 lbl_80462DA8:
-	.incbin "baserom.dol", 0x45EEA8, 0x18
+	# ROM: 0x45EEA8
+	.asciz "Ctlr H/w error event"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80462DC0
 lbl_80462DC0:
-	.incbin "baserom.dol", 0x45EEC0, 0x28
+	# ROM: 0x45EEC0
+	.asciz "Event mismatch opcode=%X cmd opcode=%X"
+	.byte 0x00
+
 .global lbl_80462DE8
 lbl_80462DE8:
-	.incbin "baserom.dol", 0x45EEE8, 0x20
+	# ROM: 0x45EEE8
+	.asciz "Cmd timeout; no cmd in queue"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80462E08
 lbl_80462E08:
-	.incbin "baserom.dol", 0x45EF08, 0x30
+	# ROM: 0x45EF08
+	.asciz "BTU HCI command timeout - cmd opcode = 0x%02x"
+	.byte 0x00, 0x00
+

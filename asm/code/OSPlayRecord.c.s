@@ -37,7 +37,7 @@ lbl_803E4D28:
 /* 803E4D48 003E09E8  38 84 37 8C */	addi r4, r4, lbl_8048378C@l
 /* 803E4D4C 003E09EC  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803E4D50 003E09F0  7C 89 03 A6 */	mtctr r4
-/* 803E4D54 003E09F4  4E 80 04 20 */	bctr 
+/* 803E4D54 003E09F4  4E 80 04 20 */	bctr
 /* 803E4D58 003E09F8  38 00 00 01 */	li r0, 1
 /* 803E4D5C 003E09FC  90 0D B0 F8 */	stw r0, "PlayRecordState"-_SDA_BASE_(r13)
 /* 803E4D60 003E0A00  48 00 01 E8 */	b lbl_803E4F48
@@ -335,7 +335,7 @@ lbl_803E517C:
 /* 803E5188 003E0E28  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E518C 003E0E2C  7C 08 03 A6 */	mtlr r0
 /* 803E5190 003E0E30  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E5194 003E0E34  4E 80 00 20 */	blr 
+/* 803E5194 003E0E34  4E 80 00 20 */	blr
 
 .global "__OSStartPlayRecord"
 "__OSStartPlayRecord":
@@ -360,7 +360,7 @@ lbl_803E51DC:
 /* 803E51DC 003E0E7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E51E0 003E0E80  7C 08 03 A6 */	mtlr r0
 /* 803E51E4 003E0E84  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E51E8 003E0E88  4E 80 00 20 */	blr 
+/* 803E51E8 003E0E88  4E 80 00 20 */	blr
 
 .global "__OSStopPlayRecord"
 "__OSStopPlayRecord":
@@ -498,15 +498,26 @@ lbl_803E53BC:
 /* 803E53C4 003E1064  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E53C8 003E1068  7C 08 03 A6 */	mtlr r0
 /* 803E53CC 003E106C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E53D0 003E1070  4E 80 00 20 */	blr 
+/* 803E53D0 003E1070  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80483760
 lbl_80483760:
-	.incbin "baserom.dol", 0x47F860, 0x2C
+	# ROM: 0x47F860
+	.asciz "/title/00000001/00000002/data/play_rec.dat"
+	.byte 0x00
+
 .global lbl_8048378C
 lbl_8048378C:
-	.incbin "baserom.dol", 0x47F88C, 0x1C
+	# ROM: 0x47F88C
+	.4byte 0x803E4D58 ;# ptr
+	.4byte 0x803E4D64 ;# ptr
+	.4byte 0x803E4DE0 ;# ptr
+	.4byte 0x803E4E24 ;# ptr
+	.4byte 0x803E4E4C ;# ptr
+	.4byte 0x803E4E58 ;# ptr
+	.4byte 0x803E4EE0 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "PlayRecord"
@@ -525,7 +536,10 @@ lbl_8048378C:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "PlayRecordState"
 "PlayRecordState":
-	.incbin "baserom.dol", 0x487358, 0x8
+	# ROM: 0x487358
+	.4byte 0x00000009
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "PlayRecordGet"

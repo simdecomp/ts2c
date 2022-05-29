@@ -11,7 +11,7 @@
 /* 8041516C 00410E0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80415170 00410E10  7C 08 03 A6 */	mtlr r0
 /* 80415174 00410E14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80415178 00410E18  4E 80 00 20 */	blr 
+/* 80415178 00410E18  4E 80 00 20 */	blr
 
 .global "MWEnterCriticalSection"
 "MWEnterCriticalSection":
@@ -26,8 +26,8 @@
 /* 8041519C 00410E3C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 804151A0 00410E40  7C 08 03 A6 */	mtlr r0
 /* 804151A4 00410E44  38 21 00 10 */	addi r1, r1, 0x10
-/* 804151A8 00410E48  4E 80 00 20 */	blr 
+/* 804151A8 00410E48  4E 80 00 20 */	blr
 
 .global "MWInitializeCriticalSection"
 "MWInitializeCriticalSection":
-/* 804151AC 00410E4C  4E 80 00 20 */	blr 
+/* 804151AC 00410E4C  4E 80 00 20 */	blr

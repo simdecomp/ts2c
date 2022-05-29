@@ -99,7 +99,7 @@ lbl_803A4714:
 /* 803A472C 003A03CC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803A4730 003A03D0  7C 08 03 A6 */	mtlr r0
 /* 803A4734 003A03D4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803A4738 003A03D8  4E 80 00 20 */	blr 
+/* 803A4738 003A03D8  4E 80 00 20 */	blr
 
 .global "RoundUp<Ul>__Q36nw4hbm2ut30@unnamed@snd_InstancePool_cpp@FUlUi_Ul"
 "RoundUp<Ul>__Q36nw4hbm2ut30@unnamed@snd_InstancePool_cpp@FUlUi_Ul":
@@ -108,7 +108,7 @@ lbl_803A4714:
 /* 803A4744 003A03E4  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A4748 003A03E8  38 03 FF FF */	addi r0, r3, -1
 /* 803A474C 003A03EC  7C 83 00 38 */	and r3, r4, r0
-/* 803A4750 003A03F0  4E 80 00 20 */	blr 
+/* 803A4750 003A03F0  4E 80 00 20 */	blr
 
 .global "RoundUp<v>__Q36nw4hbm2ut30@unnamed@snd_InstancePool_cpp@FPvUi_Pv"
 "RoundUp<v>__Q36nw4hbm2ut30@unnamed@snd_InstancePool_cpp@FPvUi_Pv":
@@ -117,7 +117,7 @@ lbl_803A4714:
 /* 803A475C 003A03FC  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A4760 003A0400  38 03 FF FF */	addi r0, r3, -1
 /* 803A4764 003A0404  7C 83 00 38 */	and r3, r4, r0
-/* 803A4768 003A0408  4E 80 00 20 */	blr 
+/* 803A4768 003A0408  4E 80 00 20 */	blr
 
 .global "AllocImpl__Q46nw4hbm3snd6detail8PoolImplFv"
 "AllocImpl__Q46nw4hbm3snd6detail8PoolImplFv":
@@ -150,7 +150,7 @@ lbl_803A47C4:
 /* 803A47CC 003A046C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A47D0 003A0470  7C 08 03 A6 */	mtlr r0
 /* 803A47D4 003A0474  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A47D8 003A0478  4E 80 00 20 */	blr 
+/* 803A47D8 003A0478  4E 80 00 20 */	blr
 
 .global "FreeImpl__Q46nw4hbm3snd6detail8PoolImplFPv"
 "FreeImpl__Q46nw4hbm3snd6detail8PoolImplFPv":
@@ -174,12 +174,19 @@ lbl_803A47C4:
 /* 803A4820 003A04C0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A4824 003A04C4  7C 08 03 A6 */	mtlr r0
 /* 803A4828 003A04C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A482C 003A04CC  4E 80 00 20 */	blr 
+/* 803A482C 003A04CC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E410
 lbl_8046E410:
-	.incbin "baserom.dol", 0x46A510, 0x18
+	# ROM: 0x46A510
+	.asciz "snd_InstancePool.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046E428
 lbl_8046E428:
-	.incbin "baserom.dol", 0x46A528, 0x30
+	# ROM: 0x46A528
+	.asciz "NW4HBM:Pointer must not be NULL (buffer)"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+

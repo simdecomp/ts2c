@@ -31,7 +31,7 @@ lbl_803E1914:
 /* 803E191C 003DD5BC  38 8D C7 68 */	addi r4, r13, "ShutdownFunctionQueue"-_SDA_BASE_
 /* 803E1920 003DD5C0  90 03 00 08 */	stw r0, 8(r3)
 /* 803E1924 003DD5C4  90 64 00 04 */	stw r3, 4(r4)
-/* 803E1928 003DD5C8  4E 80 00 20 */	blr 
+/* 803E1928 003DD5C8  4E 80 00 20 */	blr
 lbl_803E192C:
 /* 803E192C 003DD5CC  90 A3 00 08 */	stw r5, 8(r3)
 /* 803E1930 003DD5D0  80 85 00 0C */	lwz r4, 0xc(r5)
@@ -40,10 +40,10 @@ lbl_803E192C:
 /* 803E193C 003DD5DC  90 83 00 0C */	stw r4, 0xc(r3)
 /* 803E1940 003DD5E0  40 82 00 0C */	bne lbl_803E194C
 /* 803E1944 003DD5E4  90 6D C7 68 */	stw r3, "ShutdownFunctionQueue"-_SDA_BASE_(r13)
-/* 803E1948 003DD5E8  4E 80 00 20 */	blr 
+/* 803E1948 003DD5E8  4E 80 00 20 */	blr
 lbl_803E194C:
 /* 803E194C 003DD5EC  90 64 00 08 */	stw r3, 8(r4)
-/* 803E1950 003DD5F0  4E 80 00 20 */	blr 
+/* 803E1950 003DD5F0  4E 80 00 20 */	blr
 
 .global "__OSCallShutdownFunctions"
 "__OSCallShutdownFunctions":
@@ -71,7 +71,7 @@ lbl_803E199C:
 /* 803E19A0 003DD640  7F 83 E3 78 */	mr r3, r28
 /* 803E19A4 003DD644  7F A4 EB 78 */	mr r4, r29
 /* 803E19A8 003DD648  7D 89 03 A6 */	mtctr r12
-/* 803E19AC 003DD64C  4E 80 04 21 */	bctrl 
+/* 803E19AC 003DD64C  4E 80 04 21 */	bctrl
 /* 803E19B0 003DD650  7C 60 00 34 */	cntlzw r0, r3
 /* 803E19B4 003DD654  80 7F 00 04 */	lwz r3, 4(r31)
 /* 803E19B8 003DD658  54 00 D9 7E */	srwi r0, r0, 5
@@ -94,7 +94,7 @@ lbl_803E19CC:
 /* 803E19F4 003DD694  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E19F8 003DD698  7C 08 03 A6 */	mtlr r0
 /* 803E19FC 003DD69C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E1A00 003DD6A0  4E 80 00 20 */	blr 
+/* 803E1A00 003DD6A0  4E 80 00 20 */	blr
 
 .global "__OSShutdownDevices"
 "__OSShutdownDevices":
@@ -140,7 +140,7 @@ lbl_803E1A80:
 /* 803E1A84 003DD724  7F 64 DB 78 */	mr r4, r27
 /* 803E1A88 003DD728  38 60 00 00 */	li r3, 0
 /* 803E1A8C 003DD72C  7D 89 03 A6 */	mtctr r12
-/* 803E1A90 003DD730  4E 80 04 21 */	bctrl 
+/* 803E1A90 003DD730  4E 80 04 21 */	bctrl
 /* 803E1A94 003DD734  7C 60 00 34 */	cntlzw r0, r3
 /* 803E1A98 003DD738  80 7E 00 04 */	lwz r3, 4(r30)
 /* 803E1A9C 003DD73C  54 00 D9 7E */	srwi r0, r0, 5
@@ -175,7 +175,7 @@ lbl_803E1AF8:
 /* 803E1AFC 003DD79C  7F 64 DB 78 */	mr r4, r27
 /* 803E1B00 003DD7A0  38 60 00 01 */	li r3, 1
 /* 803E1B04 003DD7A4  7D 89 03 A6 */	mtctr r12
-/* 803E1B08 003DD7A8  4E 80 04 21 */	bctrl 
+/* 803E1B08 003DD7A8  4E 80 04 21 */	bctrl
 /* 803E1B0C 003DD7AC  7C 60 00 34 */	cntlzw r0, r3
 /* 803E1B10 003DD7B0  80 7F 00 04 */	lwz r3, 4(r31)
 /* 803E1B14 003DD7B4  54 00 D9 7E */	srwi r0, r0, 5
@@ -216,7 +216,7 @@ lbl_803E1B74:
 /* 803E1B84 003DD824  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E1B88 003DD828  7C 08 03 A6 */	mtlr r0
 /* 803E1B8C 003DD82C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E1B90 003DD830  4E 80 00 20 */	blr 
+/* 803E1B90 003DD830  4E 80 00 20 */	blr
 
 .global "OSShutdownSystem"
 "OSShutdownSystem":
@@ -297,7 +297,7 @@ lbl_803E1C98:
 /* 803E1C98 003DD938  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E1C9C 003DD93C  7C 08 03 A6 */	mtlr r0
 /* 803E1CA0 003DD940  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E1CA4 003DD944  4E 80 00 20 */	blr 
+/* 803E1CA4 003DD944  4E 80 00 20 */	blr
 
 .global "__OSRebootForNANDAPP"
 "__OSRebootForNANDAPP":
@@ -345,7 +345,7 @@ lbl_803E1D2C:
 /* 803E1D48 003DD9E8  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 803E1D4C 003DD9EC  7C 08 03 A6 */	mtlr r0
 /* 803E1D50 003DD9F0  38 21 00 30 */	addi r1, r1, 0x30
-/* 803E1D54 003DD9F4  4E 80 00 20 */	blr 
+/* 803E1D54 003DD9F4  4E 80 00 20 */	blr
 
 .global "OSRestart"
 "OSRestart":
@@ -385,7 +385,7 @@ lbl_803E1DBC:
 /* 803E1DD4 003DDA74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E1DD8 003DDA78  7C 08 03 A6 */	mtlr r0
 /* 803E1DDC 003DDA7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E1DE0 003DDA80  4E 80 00 20 */	blr 
+/* 803E1DE0 003DDA80  4E 80 00 20 */	blr
 
 .global "OSReturnToMenu"
 "OSReturnToMenu":
@@ -445,7 +445,7 @@ lbl_803E1E58:
 /* 803E1EA8 003DDB48  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E1EAC 003DDB4C  7C 08 03 A6 */	mtlr r0
 /* 803E1EB0 003DDB50  38 21 00 30 */	addi r1, r1, 0x30
-/* 803E1EB4 003DDB54  4E 80 00 20 */	blr 
+/* 803E1EB4 003DDB54  4E 80 00 20 */	blr
 
 .global "__OSReturnToMenuForError"
 "__OSReturnToMenuForError":
@@ -475,7 +475,7 @@ lbl_803E1E58:
 /* 803E1F14 003DDBB4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E1F18 003DDBB8  7C 08 03 A6 */	mtlr r0
 /* 803E1F1C 003DDBBC  38 21 00 30 */	addi r1, r1, 0x30
-/* 803E1F20 003DDBC0  4E 80 00 20 */	blr 
+/* 803E1F20 003DDBC0  4E 80 00 20 */	blr
 
 .global "OSGetResetCode"
 "OSGetResetCode":
@@ -486,12 +486,12 @@ lbl_803E1E58:
 /* 803E1F34 003DDBD4  38 63 29 40 */	addi r3, r3, 0x2940
 /* 803E1F38 003DDBD8  80 03 00 04 */	lwz r0, 4(r3)
 /* 803E1F3C 003DDBDC  64 03 80 00 */	oris r3, r0, 0x8000
-/* 803E1F40 003DDBE0  4E 80 00 20 */	blr 
+/* 803E1F40 003DDBE0  4E 80 00 20 */	blr
 lbl_803E1F44:
 /* 803E1F44 003DDBE4  3C 60 CC 00 */	lis r3, 0xCC003024@ha
 /* 803E1F48 003DDBE8  80 03 30 24 */	lwz r0, 0xCC003024@l(r3)
 /* 803E1F4C 003DDBEC  54 03 E8 FE */	srwi r3, r0, 3
-/* 803E1F50 003DDBF0  4E 80 00 20 */	blr 
+/* 803E1F50 003DDBF0  4E 80 00 20 */	blr
 
 .global "OSResetSystem"
 "OSResetSystem":
@@ -506,16 +506,29 @@ lbl_803E1F44:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80477748
 lbl_80477748:
-	.incbin "baserom.dol", 0x473848, 0xC
+	# ROM: 0x473848
+	.asciz "OSReset.c"
+	.byte 0x00, 0x00
+
 .global lbl_80477754
 lbl_80477754:
-	.incbin "baserom.dol", 0x473854, 0x30
+	# ROM: 0x473854
+	.asciz "OSReturnToMenu(): Falied to boot system menu.\n"
+	.byte 0x00
+
 .global lbl_80477784
 lbl_80477784:
-	.incbin "baserom.dol", 0x473884, 0x34
+	# ROM: 0x473884
+	.asciz "__OSReturnToMenu(): Falied to boot system menu.\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804777B8
 lbl_804777B8:
-	.incbin "baserom.dol", 0x4738B8, 0x40
+	# ROM: 0x4738B8
+	.asciz "OSResetSystem() is obsoleted. It doesn't work any longer.\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "bootThisDol"

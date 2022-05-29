@@ -24,7 +24,7 @@
 /* 803E2A44 003DE6E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E2A48 003DE6E8  7C 08 03 A6 */	mtlr r0
 /* 803E2A4C 003DE6EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E2A50 003DE6F0  4E 80 00 20 */	blr 
+/* 803E2A50 003DE6F0  4E 80 00 20 */	blr
 
 .global "OSWaitSemaphore"
 "OSWaitSemaphore":
@@ -57,7 +57,7 @@ lbl_803E2A84:
 /* 803E2AB4 003DE754  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E2AB8 003DE758  7C 08 03 A6 */	mtlr r0
 /* 803E2ABC 003DE75C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E2AC0 003DE760  4E 80 00 20 */	blr 
+/* 803E2AC0 003DE760  4E 80 00 20 */	blr
 
 .global "OSTryWaitSemaphore"
 "OSTryWaitSemaphore":
@@ -81,7 +81,7 @@ lbl_803E2AF4:
 /* 803E2B04 003DE7A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E2B08 003DE7A8  7C 08 03 A6 */	mtlr r0
 /* 803E2B0C 003DE7AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E2B10 003DE7B0  4E 80 00 20 */	blr 
+/* 803E2B10 003DE7B0  4E 80 00 20 */	blr
 
 .global "OSSignalSemaphore"
 "OSSignalSemaphore":
@@ -108,4 +108,4 @@ lbl_803E2AF4:
 /* 803E2B64 003DE804  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E2B68 003DE808  7C 08 03 A6 */	mtlr r0
 /* 803E2B6C 003DE80C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E2B70 003DE810  4E 80 00 20 */	blr 
+/* 803E2B70 003DE810  4E 80 00 20 */	blr

@@ -9,7 +9,7 @@
 /* 803C286C 003BE50C  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2870 003BE510  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 803C2874 003BE514  7D 89 03 A6 */	mtctr r12
-/* 803C2878 003BE518  4E 80 04 21 */	bctrl 
+/* 803C2878 003BE518  4E 80 04 21 */	bctrl
 /* 803C287C 003BE51C  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2880 003BE520  40 82 00 20 */	bne lbl_803C28A0
 /* 803C2884 003BE524  3C 60 80 47 */	lis r3, lbl_80473A88@ha
@@ -23,7 +23,7 @@ lbl_803C28A0:
 /* 803C28A0 003BE540  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C28A4 003BE544  7C 08 03 A6 */	mtlr r0
 /* 803C28A8 003BE548  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C28AC 003BE54C  4E 80 00 20 */	blr 
+/* 803C28AC 003BE54C  4E 80 00 20 */	blr
 
 .global "Cancel__Q36nw4hbm2ut10FileStreamFv"
 "Cancel__Q36nw4hbm2ut10FileStreamFv":
@@ -33,7 +33,7 @@ lbl_803C28A0:
 /* 803C28BC 003BE55C  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C28C0 003BE560  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 803C28C4 003BE564  7D 89 03 A6 */	mtctr r12
-/* 803C28C8 003BE568  4E 80 04 21 */	bctrl 
+/* 803C28C8 003BE568  4E 80 04 21 */	bctrl
 /* 803C28CC 003BE56C  2C 03 00 00 */	cmpwi r3, 0
 /* 803C28D0 003BE570  40 82 00 20 */	bne lbl_803C28F0
 /* 803C28D4 003BE574  3C 60 80 47 */	lis r3, lbl_80473A88@ha
@@ -47,7 +47,7 @@ lbl_803C28F0:
 /* 803C28F0 003BE590  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C28F4 003BE594  7C 08 03 A6 */	mtlr r0
 /* 803C28F8 003BE598  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C28FC 003BE59C  4E 80 00 20 */	blr 
+/* 803C28FC 003BE59C  4E 80 00 20 */	blr
 
 .global "CancelAsync__Q36nw4hbm2ut10FileStreamFPFlPQ36nw4hbm2ut8IOStreamPv_vPv"
 "CancelAsync__Q36nw4hbm2ut10FileStreamFPFlPQ36nw4hbm2ut8IOStreamPv_vPv":
@@ -62,7 +62,7 @@ lbl_803C28F0:
 /* 803C2920 003BE5C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2924 003BE5C4  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 803C2928 003BE5C8  7D 89 03 A6 */	mtctr r12
-/* 803C292C 003BE5CC  4E 80 04 21 */	bctrl 
+/* 803C292C 003BE5CC  4E 80 04 21 */	bctrl
 /* 803C2930 003BE5D0  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2934 003BE5D4  40 82 00 18 */	bne lbl_803C294C
 /* 803C2938 003BE5D8  38 7F 00 30 */	addi r3, r31, 0x30
@@ -75,7 +75,7 @@ lbl_803C294C:
 /* 803C2950 003BE5F0  7F C3 F3 78 */	mr r3, r30
 /* 803C2954 003BE5F4  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803C2958 003BE5F8  7D 89 03 A6 */	mtctr r12
-/* 803C295C 003BE5FC  4E 80 04 21 */	bctrl 
+/* 803C295C 003BE5FC  4E 80 04 21 */	bctrl
 /* 803C2960 003BE600  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2964 003BE604  40 82 00 18 */	bne lbl_803C297C
 /* 803C2968 003BE608  38 7F 00 30 */	addi r3, r31, 0x30
@@ -90,7 +90,7 @@ lbl_803C297C:
 /* 803C2988 003BE628  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C298C 003BE62C  7C 08 03 A6 */	mtlr r0
 /* 803C2990 003BE630  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2994 003BE634  4E 80 00 20 */	blr 
+/* 803C2994 003BE634  4E 80 00 20 */	blr
 
 .global "Skip__Q46nw4hbm2ut10FileStream12FilePositionFl"
 "Skip__Q46nw4hbm2ut10FileStream12FilePositionFl":
@@ -116,7 +116,7 @@ lbl_803C29D8:
 /* 803C29E0 003BE680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C29E4 003BE684  7C 08 03 A6 */	mtlr r0
 /* 803C29E8 003BE688  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C29EC 003BE68C  4E 80 00 20 */	blr 
+/* 803C29EC 003BE68C  4E 80 00 20 */	blr
 
 .global "Clamp<x>__Q36nw4hbm2ut27@unnamed@ut_FileStream_cpp@Fxxx_x"
 "Clamp<x>__Q36nw4hbm2ut27@unnamed@ut_FileStream_cpp@Fxxx_x":
@@ -129,7 +129,7 @@ lbl_803C29D8:
 /* 803C2A08 003BE6A8  41 82 00 10 */	beq lbl_803C2A18
 /* 803C2A0C 003BE6AC  7D 04 43 78 */	mr r4, r8
 /* 803C2A10 003BE6B0  7C E3 3B 78 */	mr r3, r7
-/* 803C2A14 003BE6B4  4E 80 00 20 */	blr 
+/* 803C2A14 003BE6B4  4E 80 00 20 */	blr
 lbl_803C2A18:
 /* 803C2A18 003BE6B8  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 803C2A1C 003BE6BC  6C A8 80 00 */	xoris r8, r5, 0x8000
@@ -137,10 +137,10 @@ lbl_803C2A18:
 /* 803C2A24 003BE6C4  7D 08 01 10 */	subfe r8, r8, r0
 /* 803C2A28 003BE6C8  7D 00 01 10 */	subfe r8, r0, r0
 /* 803C2A2C 003BE6CC  7D 08 00 D1 */	neg. r8, r8
-/* 803C2A30 003BE6D0  4D 82 00 20 */	beqlr 
+/* 803C2A30 003BE6D0  4D 82 00 20 */	beqlr
 /* 803C2A34 003BE6D4  7C C4 33 78 */	mr r4, r6
 /* 803C2A38 003BE6D8  7C A3 2B 78 */	mr r3, r5
-/* 803C2A3C 003BE6DC  4E 80 00 20 */	blr 
+/* 803C2A3C 003BE6DC  4E 80 00 20 */	blr
 
 .global "Seek__Q46nw4hbm2ut10FileStream12FilePositionFlUl"
 "Seek__Q46nw4hbm2ut10FileStream12FilePositionFlUl":
@@ -173,19 +173,67 @@ lbl_803C2A78:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473A58
 lbl_80473A58:
-	.incbin "baserom.dol", 0x46FB58, 0x30
+	# ROM: 0x46FB58
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+
 .global lbl_80473A88
 lbl_80473A88:
-	.incbin "baserom.dol", 0x46FB88, 0x14
+	# ROM: 0x46FB88
+	.asciz "ut_FileStream.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_80473A9C
 lbl_80473A9C:
-	.incbin "baserom.dol", 0x46FB9C, 0x24
+	# ROM: 0x46FB9C
+	.asciz "Stream don't support SEEK function\n"
+
 .global lbl_80473AC0
 lbl_80473AC0:
-	.incbin "baserom.dol", 0x46FBC0, 0x50
+	# ROM: 0x46FBC0
+	.asciz "Stream don't support CANCEL function\n"
+	.byte 0x00, 0x00
+	.asciz "Stream don't support ASYNC function\n"
+	.byte 0x00, 0x00, 0x00
+
 .global "__vt__Q36nw4hbm2ut10FileStream"
 "__vt__Q36nw4hbm2ut10FileStream":
-	.incbin "baserom.dol", 0x46FC10, 0x60
+	# ROM: 0x46FC10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm2ut10FileStreamCFv" ;# ptr (0x803A4BA8)
+	.4byte "__dt__Q36nw4hbm2ut10FileStreamFv" ;# ptr (0x803A4AB4)
+	.4byte 0x00000000
+	.4byte "Read__Q36nw4hbm2ut8IOStreamFPvUl" ;# ptr (0x803C2C4C)
+	.4byte "ReadAsync__Q36nw4hbm2ut8IOStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2CA0)
+	.4byte "Write__Q36nw4hbm2ut8IOStreamFPCvUl" ;# ptr (0x803C2D38)
+	.4byte "WriteAsync__Q36nw4hbm2ut8IOStreamFPCvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2D88)
+	.4byte "IsBusy__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803C2E20)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetOffsetAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BB0)
+	.4byte "GetSizeAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BB8)
+	.4byte "GetBufferAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BC0)
+	.4byte 0x00000000
+	.4byte "Seek__Q36nw4hbm2ut10FileStreamFlUl" ;# ptr (0x803C2860)
+	.4byte "Cancel__Q36nw4hbm2ut10FileStreamFv" ;# ptr (0x803C28B0)
+	.4byte "CancelAsync__Q36nw4hbm2ut10FileStreamFPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2900)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm2ut10FileStream"

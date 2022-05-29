@@ -19,7 +19,7 @@
 /* 803358EC 0033158C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803358F0 00331590  7C 08 03 A6 */	mtlr r0
 /* 803358F4 00331594  38 21 00 10 */	addi r1, r1, 0x10
-/* 803358F8 00331598  4E 80 00 20 */	blr 
+/* 803358F8 00331598  4E 80 00 20 */	blr
 
 .global "AIInitDMA"
 "AIInitDMA":
@@ -53,7 +53,7 @@
 /* 80335968 00331608  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033596C 0033160C  7C 08 03 A6 */	mtlr r0
 /* 80335970 00331610  38 21 00 10 */	addi r1, r1, 0x10
-/* 80335974 00331614  4E 80 00 20 */	blr 
+/* 80335974 00331614  4E 80 00 20 */	blr
 
 .global "AIStartDMA"
 "AIStartDMA":
@@ -61,7 +61,7 @@
 /* 8033597C 0033161C  A0 03 50 36 */	lhz r0, 0xCC005036@l(r3)
 /* 80335980 00331620  60 00 80 00 */	ori r0, r0, 0x8000
 /* 80335984 00331624  B0 03 50 36 */	sth r0, 0x5036(r3)
-/* 80335988 00331628  4E 80 00 20 */	blr 
+/* 80335988 00331628  4E 80 00 20 */	blr
 
 .global "AIStopDMA"
 "AIStopDMA":
@@ -69,14 +69,14 @@
 /* 80335990 00331630  A0 03 50 36 */	lhz r0, 0xCC005036@l(r3)
 /* 80335994 00331634  54 00 04 7E */	clrlwi r0, r0, 0x11
 /* 80335998 00331638  B0 03 50 36 */	sth r0, 0x5036(r3)
-/* 8033599C 0033163C  4E 80 00 20 */	blr 
+/* 8033599C 0033163C  4E 80 00 20 */	blr
 
 .global "AIGetDMABytesLeft"
 "AIGetDMABytesLeft":
 /* 803359A0 00331640  3C 60 CC 00 */	lis r3, 0xCC00503A@ha
 /* 803359A4 00331644  A0 03 50 3A */	lhz r0, 0xCC00503A@l(r3)
 /* 803359A8 00331648  54 03 2B 34 */	rlwinm r3, r0, 5, 0xc, 0x1a
-/* 803359AC 0033164C  4E 80 00 20 */	blr 
+/* 803359AC 0033164C  4E 80 00 20 */	blr
 
 .global "AIGetDMAStartAddr"
 "AIGetDMAStartAddr":
@@ -85,12 +85,12 @@
 /* 803359B8 00331658  A0 03 50 32 */	lhz r0, 0x5032(r3)
 /* 803359BC 0033165C  54 03 04 34 */	rlwinm r3, r0, 0, 0x10, 0x1a
 /* 803359C0 00331660  50 83 80 DE */	rlwimi r3, r4, 0x10, 3, 0xf
-/* 803359C4 00331664  4E 80 00 20 */	blr 
+/* 803359C4 00331664  4E 80 00 20 */	blr
 
 .global "AICheckInit"
 "AICheckInit":
 /* 803359C8 00331668  80 6D C1 A8 */	lwz r3, "__AI_init_flag"-_SDA_BASE_(r13)
-/* 803359CC 0033166C  4E 80 00 20 */	blr 
+/* 803359CC 0033166C  4E 80 00 20 */	blr
 
 .global "AIInit"
 "AIInit":
@@ -191,7 +191,7 @@ lbl_80335B34:
 /* 80335B40 003317E0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80335B44 003317E4  7C 08 03 A6 */	mtlr r0
 /* 80335B48 003317E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80335B4C 003317EC  4E 80 00 20 */	blr 
+/* 80335B4C 003317EC  4E 80 00 20 */	blr
 
 .global "__AIDHandler"
 "__AIDHandler":
@@ -226,7 +226,7 @@ lbl_80335B34:
 lbl_80335BC0:
 /* 80335BC0 00331860  7C 6C 1B 78 */	mr r12, r3
 /* 80335BC4 00331864  7D 89 03 A6 */	mtctr r12
-/* 80335BC8 00331868  4E 80 04 21 */	bctrl 
+/* 80335BC8 00331868  4E 80 04 21 */	bctrl
 lbl_80335BCC:
 /* 80335BCC 0033186C  38 00 00 00 */	li r0, 0
 /* 80335BD0 00331870  90 0D C1 AC */	stw r0, "__AID_Active"-_SDA_BASE_(r13)
@@ -239,7 +239,7 @@ lbl_80335BD4:
 /* 80335BE8 00331888  83 E1 02 DC */	lwz r31, 0x2dc(r1)
 /* 80335BEC 0033188C  7C 08 03 A6 */	mtlr r0
 /* 80335BF0 00331890  38 21 02 E0 */	addi r1, r1, 0x2e0
-/* 80335BF4 00331894  4E 80 00 20 */	blr 
+/* 80335BF4 00331894  4E 80 00 20 */	blr
 
 .global "__AICallbackStackSwitch"
 "__AICallbackStackSwitch":
@@ -257,7 +257,7 @@ lbl_80335BD4:
 /* 80335C24 003318C4  80 25 00 00 */	lwz r1, 0(r5)
 /* 80335C28 003318C8  38 21 FF F8 */	addi r1, r1, -8
 /* 80335C2C 003318CC  7F E8 03 A6 */	mtlr r31
-/* 80335C30 003318D0  4E 80 00 21 */	blrl 
+/* 80335C30 003318D0  4E 80 00 21 */	blrl
 /* 80335C34 003318D4  3C A0 80 5E */	lis r5, "__OldStack"@ha
 /* 80335C38 003318D8  38 A5 88 B8 */	addi r5, r5, "__OldStack"@l
 /* 80335C3C 003318DC  80 25 00 00 */	lwz r1, 0(r5)
@@ -267,7 +267,7 @@ lbl_80335BD4:
 /* 80335C4C 003318EC  80 0A 00 04 */	lwz r0, 4(r10)
 /* 80335C50 003318F0  7D 41 53 78 */	mr r1, r10
 /* 80335C54 003318F4  7C 08 03 A6 */	mtlr r0
-/* 80335C58 003318F8  4E 80 00 20 */	blr 
+/* 80335C58 003318F8  4E 80 00 20 */	blr
 
 .global "__AI_SRC_INIT"
 "__AI_SRC_INIT":
@@ -390,15 +390,21 @@ lbl_80335DE8:
 /* 80335E10 00331AB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80335E14 00331AB4  7C 08 03 A6 */	mtlr r0
 /* 80335E18 00331AB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80335E1C 00331ABC  4E 80 00 20 */	blr 
+/* 80335E1C 00331ABC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x458A40, 0x48
+	# ROM: 0x458A40
+	.asciz "<< RVL_SDK - AI \trelease build: Nov 30 2006 03:26:11 (0x4199_60831) >>"
+	.byte 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__AIVersion"
 "__AIVersion":
-	.incbin "baserom.dol", 0x486DB0, 0x8
+	# ROM: 0x486DB0
+	.4byte 0x8045C940 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__AI_init_flag"

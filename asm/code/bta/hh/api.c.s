@@ -37,7 +37,7 @@ lbl_803440B0:
 /* 803440BC 0033FD5C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803440C0 0033FD60  7C 08 03 A6 */	mtlr r0
 /* 803440C4 0033FD64  38 21 00 20 */	addi r1, r1, 0x20
-/* 803440C8 0033FD68  4E 80 00 20 */	blr 
+/* 803440C8 0033FD68  4E 80 00 20 */	blr
 
 .global "BTA_HhDisable"
 "BTA_HhDisable":
@@ -55,7 +55,7 @@ lbl_803440F4:
 /* 803440F4 0033FD94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803440F8 0033FD98  7C 08 03 A6 */	mtlr r0
 /* 803440FC 0033FD9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80344100 0033FDA0  4E 80 00 20 */	blr 
+/* 80344100 0033FDA0  4E 80 00 20 */	blr
 
 .global "BTA_HhClose"
 "BTA_HhClose":
@@ -84,7 +84,7 @@ lbl_80344150:
 /* 80344158 0033FDF8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034415C 0033FDFC  7C 08 03 A6 */	mtlr r0
 /* 80344160 0033FE00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80344164 0033FE04  4E 80 00 20 */	blr 
+/* 80344164 0033FE04  4E 80 00 20 */	blr
 
 .global "BTA_HhOpen"
 "BTA_HhOpen":
@@ -134,7 +134,7 @@ lbl_803441FC:
 /* 8034420C 0033FEAC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80344210 0033FEB0  7C 08 03 A6 */	mtlr r0
 /* 80344214 0033FEB4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80344218 0033FEB8  4E 80 00 20 */	blr 
+/* 80344218 0033FEB8  4E 80 00 20 */	blr
 
 .global "BTA_HhSendData"
 "BTA_HhSendData":
@@ -174,7 +174,7 @@ lbl_80344290:
 /* 8034429C 0033FF3C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803442A0 0033FF40  7C 08 03 A6 */	mtlr r0
 /* 803442A4 0033FF44  38 21 00 20 */	addi r1, r1, 0x20
-/* 803442A8 0033FF48  4E 80 00 20 */	blr 
+/* 803442A8 0033FF48  4E 80 00 20 */	blr
 
 .global "BTA_HhAddDev"
 "BTA_HhAddDev":
@@ -220,7 +220,7 @@ lbl_8034433C:
 /* 80344344 0033FFE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80344348 0033FFE8  7C 08 03 A6 */	mtlr r0
 /* 8034434C 0033FFEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80344350 0033FFF0  4E 80 00 20 */	blr 
+/* 80344350 0033FFF0  4E 80 00 20 */	blr
 
 .global "BTA_HhRemoveDev"
 "BTA_HhRemoveDev":
@@ -251,7 +251,7 @@ lbl_803443A8:
 /* 803443B0 00340050  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803443B4 00340054  7C 08 03 A6 */	mtlr r0
 /* 803443B8 00340058  38 21 00 10 */	addi r1, r1, 0x10
-/* 803443BC 0034005C  4E 80 00 20 */	blr 
+/* 803443BC 0034005C  4E 80 00 20 */	blr
 
 .global "BTA_HhGetAclQueueInfo"
 "BTA_HhGetAclQueueInfo":
@@ -276,14 +276,20 @@ lbl_80344400:
 /* 80344404 003400A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80344408 003400A8  7C 08 03 A6 */	mtlr r0
 /* 8034440C 003400AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80344410 003400B0  4E 80 00 20 */	blr 
+/* 80344410 003400B0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804611F8
 lbl_804611F8:
-	.incbin "baserom.dol", 0x45D2F8, 0x30
+	# ROM: 0x45D2F8
+	.asciz "No resource to send HID host Connect request."
+	.byte 0x00, 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "bta_hh_reg"
 "bta_hh_reg":
-	.incbin "baserom.dol", 0x489AA0, 0x8
+	# ROM: 0x489AA0
+	.4byte "bta_hh_hdl_event" ;# ptr (0x80344768)
+	.4byte "BTA_HhDisable" ;# ptr (0x803440CC)
+

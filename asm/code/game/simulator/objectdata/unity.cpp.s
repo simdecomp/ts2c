@@ -27,7 +27,7 @@
 /* 8015D4E8 00159188  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015D4EC 0015918C  7C 08 03 A6 */	mtlr r0
 /* 8015D4F0 00159190  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D4F4 00159194  4E 80 00 20 */	blr 
+/* 8015D4F4 00159194  4E 80 00 20 */	blr
 
 .global "__dt__27ObjectDataBehaviorConstantsFv"
 "__dt__27ObjectDataBehaviorConstantsFv":
@@ -71,13 +71,13 @@ lbl_8015D574:
 /* 8015D580 00159220  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015D584 00159224  7C 08 03 A6 */	mtlr r0
 /* 8015D588 00159228  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D58C 0015922C  4E 80 00 20 */	blr 
+/* 8015D58C 0015922C  4E 80 00 20 */	blr
 
 .global "CountValues__27ObjectDataBehaviorConstantsCFv"
 "CountValues__27ObjectDataBehaviorConstantsCFv":
 /* 8015D590 00159230  A8 03 00 04 */	lha r0, 4(r3)
 /* 8015D594 00159234  54 03 04 7E */	clrlwi r3, r0, 0x11
-/* 8015D598 00159238  4E 80 00 20 */	blr 
+/* 8015D598 00159238  4E 80 00 20 */	blr
 
 .global "SetValueCount__27ObjectDataBehaviorConstantsFi"
 "SetValueCount__27ObjectDataBehaviorConstantsFi":
@@ -133,13 +133,13 @@ lbl_8015D64C:
 /* 8015D654 001592F4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015D658 001592F8  7C 08 03 A6 */	mtlr r0
 /* 8015D65C 001592FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D660 00159300  4E 80 00 20 */	blr 
+/* 8015D660 00159300  4E 80 00 20 */	blr
 
 .global "IsTuning__27ObjectDataBehaviorConstantsCFv"
 "IsTuning__27ObjectDataBehaviorConstantsCFv":
 /* 8015D664 00159304  A8 03 00 04 */	lha r0, 4(r3)
 /* 8015D668 00159308  54 03 8F FE */	rlwinm r3, r0, 0x11, 0x1f, 0x1f
-/* 8015D66C 0015930C  4E 80 00 20 */	blr 
+/* 8015D66C 0015930C  4E 80 00 20 */	blr
 
 .global "SetIsTuning__27ObjectDataBehaviorConstantsFb"
 "SetIsTuning__27ObjectDataBehaviorConstantsFb":
@@ -147,11 +147,11 @@ lbl_8015D64C:
 /* 8015D674 00159314  2C 04 00 00 */	cmpwi r4, 0
 /* 8015D678 00159318  54 00 04 5E */	rlwinm r0, r0, 0, 0x11, 0xf
 /* 8015D67C 0015931C  B0 03 00 04 */	sth r0, 4(r3)
-/* 8015D680 00159320  4D 82 00 20 */	beqlr 
+/* 8015D680 00159320  4D 82 00 20 */	beqlr
 /* 8015D684 00159324  7C 00 07 34 */	extsh r0, r0
 /* 8015D688 00159328  60 00 80 00 */	ori r0, r0, 0x8000
 /* 8015D68C 0015932C  B0 03 00 04 */	sth r0, 4(r3)
-/* 8015D690 00159330  4E 80 00 20 */	blr 
+/* 8015D690 00159330  4E 80 00 20 */	blr
 
 .global "GetResourceName__27ObjectDataBehaviorConstantsCFR12StringBuffer"
 "GetResourceName__27ObjectDataBehaviorConstantsCFR12StringBuffer":
@@ -164,12 +164,12 @@ lbl_8015D64C:
 /* 8015D6AC 0015934C  38 60 00 01 */	li r3, 1
 /* 8015D6B0 00159350  7C 08 03 A6 */	mtlr r0
 /* 8015D6B4 00159354  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D6B8 00159358  4E 80 00 20 */	blr 
+/* 8015D6B8 00159358  4E 80 00 20 */	blr
 
 .global "SetResourceName__27ObjectDataBehaviorConstantsFRC12StringBuffer"
 "SetResourceName__27ObjectDataBehaviorConstantsFRC12StringBuffer":
 /* 8015D6BC 0015935C  38 60 00 00 */	li r3, 0
-/* 8015D6C0 00159360  4E 80 00 20 */	blr 
+/* 8015D6C0 00159360  4E 80 00 20 */	blr
 
 .global "__nw__26QuickDataBehaviorConstantsFUl"
 "__nw__26QuickDataBehaviorConstantsFUl":
@@ -196,7 +196,7 @@ lbl_8015D708:
 /* 8015D70C 001593AC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015D710 001593B0  7C 08 03 A6 */	mtlr r0
 /* 8015D714 001593B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D718 001593B8  4E 80 00 20 */	blr 
+/* 8015D718 001593B8  4E 80 00 20 */	blr
 
 .global "__dl__26QuickDataBehaviorConstantsFPv"
 "__dl__26QuickDataBehaviorConstantsFPv":
@@ -226,7 +226,7 @@ lbl_8015D768:
 /* 8015D770 00159410  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015D774 00159414  7C 08 03 A6 */	mtlr r0
 /* 8015D778 00159418  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D77C 0015941C  4E 80 00 20 */	blr 
+/* 8015D77C 0015941C  4E 80 00 20 */	blr
 
 .global "LoadFromIndex__26QuickDataBehaviorConstantsFUii"
 "LoadFromIndex__26QuickDataBehaviorConstantsFUii":
@@ -281,7 +281,7 @@ lbl_8015D824:
 /* 8015D834 001594D4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8015D838 001594D8  7C 08 03 A6 */	mtlr r0
 /* 8015D83C 001594DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015D840 001594E0  4E 80 00 20 */	blr 
+/* 8015D840 001594E0  4E 80 00 20 */	blr
 
 .global "LoadFromDataID__26QuickDataBehaviorConstantsFRC12ObjectDataID"
 "LoadFromDataID__26QuickDataBehaviorConstantsFRC12ObjectDataID":
@@ -334,11 +334,11 @@ lbl_8015D8E4:
 /* 8015D8F4 00159594  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8015D8F8 00159598  7C 08 03 A6 */	mtlr r0
 /* 8015D8FC 0015959C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015D900 001595A0  4E 80 00 20 */	blr 
+/* 8015D900 001595A0  4E 80 00 20 */	blr
 
 .global "SetValueCount__26QuickDataBehaviorConstantsFi"
 "SetValueCount__26QuickDataBehaviorConstantsFi":
-/* 8015D904 001595A4  4E 80 00 20 */	blr 
+/* 8015D904 001595A4  4E 80 00 20 */	blr
 
 .global "QueryInterface__26QuickDataBehaviorConstantsFUiPPv"
 "QueryInterface__26QuickDataBehaviorConstantsFUiPPv":
@@ -366,7 +366,7 @@ lbl_8015D954:
 /* 8015D954 001595F4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015D958 001595F8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015D95C 001595FC  7D 89 03 A6 */	mtctr r12
-/* 8015D960 00159600  4E 80 04 21 */	bctrl 
+/* 8015D960 00159600  4E 80 04 21 */	bctrl
 /* 8015D964 00159604  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015D968 00159608  38 60 00 01 */	li r3, 1
 /* 8015D96C 0015960C  48 00 00 24 */	b lbl_8015D990
@@ -374,7 +374,7 @@ lbl_8015D970:
 /* 8015D970 00159610  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015D974 00159614  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015D978 00159618  7D 89 03 A6 */	mtctr r12
-/* 8015D97C 0015961C  4E 80 04 21 */	bctrl 
+/* 8015D97C 0015961C  4E 80 04 21 */	bctrl
 /* 8015D980 00159620  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015D984 00159624  38 60 00 01 */	li r3, 1
 /* 8015D988 00159628  48 00 00 08 */	b lbl_8015D990
@@ -386,7 +386,7 @@ lbl_8015D990:
 /* 8015D998 00159638  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015D99C 0015963C  7C 08 03 A6 */	mtlr r0
 /* 8015D9A0 00159640  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015D9A4 00159644  4E 80 00 20 */	blr 
+/* 8015D9A4 00159644  4E 80 00 20 */	blr
 
 .global "AddRef__26QuickDataBehaviorConstantsFv"
 "AddRef__26QuickDataBehaviorConstantsFv":
@@ -394,7 +394,7 @@ lbl_8015D990:
 /* 8015D9AC 0015964C  38 04 00 01 */	addi r0, r4, 1
 /* 8015D9B0 00159650  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 8015D9B4 00159654  7C 03 03 78 */	mr r3, r0
-/* 8015D9B8 00159658  4E 80 00 20 */	blr 
+/* 8015D9B8 00159658  4E 80 00 20 */	blr
 
 .global "Release__26QuickDataBehaviorConstantsFv"
 "Release__26QuickDataBehaviorConstantsFv":
@@ -414,14 +414,14 @@ lbl_8015D9E0:
 /* 8015D9EC 0015968C  38 80 00 01 */	li r4, 1
 /* 8015D9F0 00159690  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8015D9F4 00159694  7D 89 03 A6 */	mtctr r12
-/* 8015D9F8 00159698  4E 80 04 21 */	bctrl 
+/* 8015D9F8 00159698  4E 80 04 21 */	bctrl
 lbl_8015D9FC:
 /* 8015D9FC 0015969C  38 60 00 00 */	li r3, 0
 lbl_8015DA00:
 /* 8015DA00 001596A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015DA04 001596A4  7C 08 03 A6 */	mtlr r0
 /* 8015DA08 001596A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015DA0C 001596AC  4E 80 00 20 */	blr 
+/* 8015DA0C 001596AC  4E 80 00 20 */	blr
 
 .global "LoadData__20IFFBehaviorConstantsFP8iResFilePQ26Memory10HandleNode"
 "LoadData__20IFFBehaviorConstantsFP8iResFilePQ26Memory10HandleNode":
@@ -443,7 +443,7 @@ lbl_8015DA00:
 /* 8015DA4C 001596EC  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8015DA50 001596F0  7F E4 07 34 */	extsh r4, r31
 /* 8015DA54 001596F4  7D 89 03 A6 */	mtctr r12
-/* 8015DA58 001596F8  4E 80 04 21 */	bctrl 
+/* 8015DA58 001596F8  4E 80 04 21 */	bctrl
 /* 8015DA5C 001596FC  7F C3 F3 78 */	mr r3, r30
 /* 8015DA60 00159700  48 00 09 75 */	bl "IsTuning__22EdithBehaviorConstantsCFv"
 /* 8015DA64 00159704  7C 64 1B 78 */	mr r4, r3
@@ -531,7 +531,7 @@ lbl_8015DB84:
 /* 8015DB98 00159838  81 9C 00 0C */	lwz r12, 0xc(r28)
 /* 8015DB9C 0015983C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8015DBA0 00159840  7D 89 03 A6 */	mtctr r12
-/* 8015DBA4 00159844  4E 80 04 21 */	bctrl 
+/* 8015DBA4 00159844  4E 80 04 21 */	bctrl
 /* 8015DBA8 00159848  7F A3 EB 78 */	mr r3, r29
 /* 8015DBAC 0015984C  4B F7 94 65 */	bl "HUnlock__6MemoryFPQ26Memory10HandleNode"
 /* 8015DBB0 00159850  A0 81 00 08 */	lhz r4, 8(r1)
@@ -542,7 +542,7 @@ lbl_8015DB84:
 /* 8015DBC4 00159864  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8015DBC8 00159868  7C 08 03 A6 */	mtlr r0
 /* 8015DBCC 0015986C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8015DBD0 00159870  4E 80 00 20 */	blr 
+/* 8015DBD0 00159870  4E 80 00 20 */	blr
 
 .global "LoadFromIndex__20IFFBehaviorConstantsFUii"
 "LoadFromIndex__20IFFBehaviorConstantsFUii":
@@ -567,7 +567,7 @@ lbl_8015DB84:
 /* 8015DC1C 001598BC  38 84 4F 4E */	addi r4, r4, 0x42434F4E@l
 /* 8015DC20 001598C0  38 C0 00 00 */	li r6, 0
 /* 8015DC24 001598C4  7D 89 03 A6 */	mtctr r12
-/* 8015DC28 001598C8  4E 80 04 21 */	bctrl 
+/* 8015DC28 001598C8  4E 80 04 21 */	bctrl
 /* 8015DC2C 001598CC  2C 03 00 00 */	cmpwi r3, 0
 /* 8015DC30 001598D0  7C 65 1B 78 */	mr r5, r3
 /* 8015DC34 001598D4  40 82 00 0C */	bne lbl_8015DC40
@@ -589,14 +589,14 @@ lbl_8015DC5C:
 /* 8015DC6C 0015990C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8015DC70 00159910  7C 08 03 A6 */	mtlr r0
 /* 8015DC74 00159914  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015DC78 00159918  4E 80 00 20 */	blr 
+/* 8015DC78 00159918  4E 80 00 20 */	blr
 
 .global "LoadOnlyNameAndIDFromIndex__20IFFBehaviorConstantsFUii"
 "LoadOnlyNameAndIDFromIndex__20IFFBehaviorConstantsFUii":
 /* 8015DC7C 0015991C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015DC80 00159920  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 8015DC84 00159924  7D 89 03 A6 */	mtctr r12
-/* 8015DC88 00159928  4E 80 04 20 */	bctr 
+/* 8015DC88 00159928  4E 80 04 20 */	bctr
 
 .global "LoadFromDataID__20IFFBehaviorConstantsFRC12ObjectDataID"
 "LoadFromDataID__20IFFBehaviorConstantsFRC12ObjectDataID":
@@ -627,7 +627,7 @@ lbl_8015DC5C:
 /* 8015DCEC 0015998C  38 84 4F 4E */	addi r4, r4, 0x42434F4E@l
 /* 8015DCF0 00159990  38 C0 00 00 */	li r6, 0
 /* 8015DCF4 00159994  7D 89 03 A6 */	mtctr r12
-/* 8015DCF8 00159998  4E 80 04 21 */	bctrl 
+/* 8015DCF8 00159998  4E 80 04 21 */	bctrl
 /* 8015DCFC 0015999C  2C 03 00 00 */	cmpwi r3, 0
 /* 8015DD00 001599A0  7C 65 1B 78 */	mr r5, r3
 /* 8015DD04 001599A4  40 82 00 0C */	bne lbl_8015DD10
@@ -645,7 +645,7 @@ lbl_8015DD20:
 /* 8015DD2C 001599CC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8015DD30 001599D0  7C 08 03 A6 */	mtlr r0
 /* 8015DD34 001599D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015DD38 001599D8  4E 80 00 20 */	blr 
+/* 8015DD38 001599D8  4E 80 00 20 */	blr
 
 .global "SaveDataByID__20IFFBehaviorConstantsFRC12ObjectDataID"
 "SaveDataByID__20IFFBehaviorConstantsFRC12ObjectDataID":
@@ -716,7 +716,7 @@ lbl_8015DDF8:
 /* 8015DE30 00159AD0  38 A5 4F 4E */	addi r5, r5, 0x42434F4E@l
 /* 8015DE34 00159AD4  39 00 00 00 */	li r8, 0
 /* 8015DE38 00159AD8  7D 89 03 A6 */	mtctr r12
-/* 8015DE3C 00159ADC  4E 80 04 21 */	bctrl 
+/* 8015DE3C 00159ADC  4E 80 04 21 */	bctrl
 /* 8015DE40 00159AE0  7F C3 F3 78 */	mr r3, r30
 /* 8015DE44 00159AE4  4B F7 9E 2D */	bl "GetError__8iResFileFv"
 /* 8015DE48 00159AE8  2C 03 00 00 */	cmpwi r3, 0
@@ -726,14 +726,14 @@ lbl_8015DDF8:
 /* 8015DE58 00159AF8  7F A4 EB 78 */	mr r4, r29
 /* 8015DE5C 00159AFC  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8015DE60 00159B00  7D 89 03 A6 */	mtctr r12
-/* 8015DE64 00159B04  4E 80 04 21 */	bctrl 
+/* 8015DE64 00159B04  4E 80 04 21 */	bctrl
 /* 8015DE68 00159B08  7F C3 F3 78 */	mr r3, r30
 /* 8015DE6C 00159B0C  4B F7 9E 05 */	bl "GetError__8iResFileFv"
 /* 8015DE70 00159B10  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015DE74 00159B14  7F C3 F3 78 */	mr r3, r30
 /* 8015DE78 00159B18  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8015DE7C 00159B1C  7D 89 03 A6 */	mtctr r12
-/* 8015DE80 00159B20  4E 80 04 21 */	bctrl 
+/* 8015DE80 00159B20  4E 80 04 21 */	bctrl
 lbl_8015DE84:
 /* 8015DE84 00159B24  7F A3 EB 78 */	mr r3, r29
 /* 8015DE88 00159B28  4B F7 91 89 */	bl "HUnlock__6MemoryFPQ26Memory10HandleNode"
@@ -744,7 +744,7 @@ lbl_8015DE90:
 /* 8015DE98 00159B38  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8015DE9C 00159B3C  7C 08 03 A6 */	mtlr r0
 /* 8015DEA0 00159B40  38 21 00 30 */	addi r1, r1, 0x30
-/* 8015DEA4 00159B44  4E 80 00 20 */	blr 
+/* 8015DEA4 00159B44  4E 80 00 20 */	blr
 
 .global "GetResourceName__20IFFBehaviorConstantsCFR12StringBuffer"
 "GetResourceName__20IFFBehaviorConstantsCFR12StringBuffer":
@@ -772,7 +772,7 @@ lbl_8015DEEC:
 /* 8015DEF4 00159B94  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015DEF8 00159B98  7C 08 03 A6 */	mtlr r0
 /* 8015DEFC 00159B9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015DF00 00159BA0  4E 80 00 20 */	blr 
+/* 8015DF00 00159BA0  4E 80 00 20 */	blr
 
 .global "SetResourceName__20IFFBehaviorConstantsFRC12StringBuffer"
 "SetResourceName__20IFFBehaviorConstantsFRC12StringBuffer":
@@ -785,7 +785,7 @@ lbl_8015DEEC:
 /* 8015DF1C 00159BBC  38 60 00 01 */	li r3, 1
 /* 8015DF20 00159BC0  7C 08 03 A6 */	mtlr r0
 /* 8015DF24 00159BC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015DF28 00159BC8  4E 80 00 20 */	blr 
+/* 8015DF28 00159BC8  4E 80 00 20 */	blr
 
 .global "QueryInterface__20IFFBehaviorConstantsFUiPPv"
 "QueryInterface__20IFFBehaviorConstantsFUiPPv":
@@ -813,7 +813,7 @@ lbl_8015DF78:
 /* 8015DF78 00159C18  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015DF7C 00159C1C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015DF80 00159C20  7D 89 03 A6 */	mtctr r12
-/* 8015DF84 00159C24  4E 80 04 21 */	bctrl 
+/* 8015DF84 00159C24  4E 80 04 21 */	bctrl
 /* 8015DF88 00159C28  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015DF8C 00159C2C  38 60 00 01 */	li r3, 1
 /* 8015DF90 00159C30  48 00 00 24 */	b lbl_8015DFB4
@@ -821,7 +821,7 @@ lbl_8015DF94:
 /* 8015DF94 00159C34  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015DF98 00159C38  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015DF9C 00159C3C  7D 89 03 A6 */	mtctr r12
-/* 8015DFA0 00159C40  4E 80 04 21 */	bctrl 
+/* 8015DFA0 00159C40  4E 80 04 21 */	bctrl
 /* 8015DFA4 00159C44  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015DFA8 00159C48  38 60 00 01 */	li r3, 1
 /* 8015DFAC 00159C4C  48 00 00 08 */	b lbl_8015DFB4
@@ -833,7 +833,7 @@ lbl_8015DFB4:
 /* 8015DFBC 00159C5C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015DFC0 00159C60  7C 08 03 A6 */	mtlr r0
 /* 8015DFC4 00159C64  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015DFC8 00159C68  4E 80 00 20 */	blr 
+/* 8015DFC8 00159C68  4E 80 00 20 */	blr
 
 .global "AddRef__20IFFBehaviorConstantsFv"
 "AddRef__20IFFBehaviorConstantsFv":
@@ -841,7 +841,7 @@ lbl_8015DFB4:
 /* 8015DFD0 00159C70  38 04 00 01 */	addi r0, r4, 1
 /* 8015DFD4 00159C74  90 03 00 60 */	stw r0, 0x60(r3)
 /* 8015DFD8 00159C78  7C 03 03 78 */	mr r3, r0
-/* 8015DFDC 00159C7C  4E 80 00 20 */	blr 
+/* 8015DFDC 00159C7C  4E 80 00 20 */	blr
 
 .global "Release__20IFFBehaviorConstantsFv"
 "Release__20IFFBehaviorConstantsFv":
@@ -861,14 +861,14 @@ lbl_8015E004:
 /* 8015E010 00159CB0  38 80 00 01 */	li r4, 1
 /* 8015E014 00159CB4  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8015E018 00159CB8  7D 89 03 A6 */	mtctr r12
-/* 8015E01C 00159CBC  4E 80 04 21 */	bctrl 
+/* 8015E01C 00159CBC  4E 80 04 21 */	bctrl
 lbl_8015E020:
 /* 8015E020 00159CC0  38 60 00 00 */	li r3, 0
 lbl_8015E024:
 /* 8015E024 00159CC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E028 00159CC8  7C 08 03 A6 */	mtlr r0
 /* 8015E02C 00159CCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E030 00159CD0  4E 80 00 20 */	blr 
+/* 8015E030 00159CD0  4E 80 00 20 */	blr
 
 .global "CountValues__17BehaviorConstantsCFv"
 "CountValues__17BehaviorConstantsCFv":
@@ -881,10 +881,10 @@ lbl_8015E024:
 /* 8015E040 00159CE0  2C 03 00 00 */	cmpwi r3, 0
 /* 8015E044 00159CE4  41 82 00 0C */	beq lbl_8015E050
 /* 8015E048 00159CE8  80 63 FF FC */	lwz r3, -4(r3)
-/* 8015E04C 00159CEC  4E 80 00 20 */	blr 
+/* 8015E04C 00159CEC  4E 80 00 20 */	blr
 lbl_8015E050:
 /* 8015E050 00159CF0  38 60 00 00 */	li r3, 0
-/* 8015E054 00159CF4  4E 80 00 20 */	blr 
+/* 8015E054 00159CF4  4E 80 00 20 */	blr
 
 .global "__vc__27VECTOR<17BehaviorConstants>CFUl"
 "__vc__27VECTOR<17BehaviorConstants>CFUl":
@@ -900,12 +900,12 @@ lbl_8015E050:
 /* 8015E07C 00159D1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E080 00159D20  7C 08 03 A6 */	mtlr r0
 /* 8015E084 00159D24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E088 00159D28  4E 80 00 20 */	blr 
+/* 8015E088 00159D28  4E 80 00 20 */	blr
 
 .global "begin__27VECTOR<17BehaviorConstants>CFv"
 "begin__27VECTOR<17BehaviorConstants>CFv":
 /* 8015E08C 00159D2C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8015E090 00159D30  4E 80 00 20 */	blr 
+/* 8015E090 00159D30  4E 80 00 20 */	blr
 
 .global "size__27VECTOR<17BehaviorConstants>CFv"
 "size__27VECTOR<17BehaviorConstants>CFv":
@@ -913,10 +913,10 @@ lbl_8015E050:
 /* 8015E098 00159D38  2C 03 00 00 */	cmpwi r3, 0
 /* 8015E09C 00159D3C  41 82 00 0C */	beq lbl_8015E0A8
 /* 8015E0A0 00159D40  80 63 FF FC */	lwz r3, -4(r3)
-/* 8015E0A4 00159D44  4E 80 00 20 */	blr 
+/* 8015E0A4 00159D44  4E 80 00 20 */	blr
 lbl_8015E0A8:
 /* 8015E0A8 00159D48  38 60 00 00 */	li r3, 0
-/* 8015E0AC 00159D4C  4E 80 00 20 */	blr 
+/* 8015E0AC 00159D4C  4E 80 00 20 */	blr
 
 .global "end__27VECTOR<17BehaviorConstants>CFv"
 "end__27VECTOR<17BehaviorConstants>CFv":
@@ -933,7 +933,7 @@ lbl_8015E0A8:
 /* 8015E0D8 00159D78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E0DC 00159D7C  7C 08 03 A6 */	mtlr r0
 /* 8015E0E0 00159D80  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E0E4 00159D84  4E 80 00 20 */	blr 
+/* 8015E0E4 00159D84  4E 80 00 20 */	blr
 
 .global "end__24VECTOR<P13ObjDefinition>CFv"
 "end__24VECTOR<P13ObjDefinition>CFv":
@@ -950,7 +950,7 @@ lbl_8015E0A8:
 /* 8015E110 00159DB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E114 00159DB4  7C 08 03 A6 */	mtlr r0
 /* 8015E118 00159DB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E11C 00159DBC  4E 80 00 20 */	blr 
+/* 8015E11C 00159DBC  4E 80 00 20 */	blr
 
 .global "size__21VECTOR<11TreeTableAd>CFv"
 "size__21VECTOR<11TreeTableAd>CFv":
@@ -958,10 +958,10 @@ lbl_8015E0A8:
 /* 8015E124 00159DC4  2C 03 00 00 */	cmpwi r3, 0
 /* 8015E128 00159DC8  41 82 00 0C */	beq lbl_8015E134
 /* 8015E12C 00159DCC  80 63 FF FC */	lwz r3, -4(r3)
-/* 8015E130 00159DD0  4E 80 00 20 */	blr 
+/* 8015E130 00159DD0  4E 80 00 20 */	blr
 lbl_8015E134:
 /* 8015E134 00159DD4  38 60 00 00 */	li r3, 0
-/* 8015E138 00159DD8  4E 80 00 20 */	blr 
+/* 8015E138 00159DD8  4E 80 00 20 */	blr
 
 .global "__vc__21VECTOR<11TreeTableAd>CFUl"
 "__vc__21VECTOR<11TreeTableAd>CFUl":
@@ -977,12 +977,12 @@ lbl_8015E134:
 /* 8015E160 00159E00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E164 00159E04  7C 08 03 A6 */	mtlr r0
 /* 8015E168 00159E08  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E16C 00159E0C  4E 80 00 20 */	blr 
+/* 8015E16C 00159E0C  4E 80 00 20 */	blr
 
 .global "begin__21VECTOR<11TreeTableAd>CFv"
 "begin__21VECTOR<11TreeTableAd>CFv":
 /* 8015E170 00159E10  80 63 00 00 */	lwz r3, 0(r3)
-/* 8015E174 00159E14  4E 80 00 20 */	blr 
+/* 8015E174 00159E14  4E 80 00 20 */	blr
 
 .global "end__18VECTOR<9TreeTable>CFv"
 "end__18VECTOR<9TreeTable>CFv":
@@ -999,7 +999,7 @@ lbl_8015E134:
 /* 8015E1A0 00159E40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E1A4 00159E44  7C 08 03 A6 */	mtlr r0
 /* 8015E1A8 00159E48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E1AC 00159E4C  4E 80 00 20 */	blr 
+/* 8015E1AC 00159E4C  4E 80 00 20 */	blr
 
 .global "size__18VECTOR<9TreeTable>CFv"
 "size__18VECTOR<9TreeTable>CFv":
@@ -1007,15 +1007,15 @@ lbl_8015E134:
 /* 8015E1B4 00159E54  2C 03 00 00 */	cmpwi r3, 0
 /* 8015E1B8 00159E58  41 82 00 0C */	beq lbl_8015E1C4
 /* 8015E1BC 00159E5C  80 63 FF FC */	lwz r3, -4(r3)
-/* 8015E1C0 00159E60  4E 80 00 20 */	blr 
+/* 8015E1C0 00159E60  4E 80 00 20 */	blr
 lbl_8015E1C4:
 /* 8015E1C4 00159E64  38 60 00 00 */	li r3, 0
-/* 8015E1C8 00159E68  4E 80 00 20 */	blr 
+/* 8015E1C8 00159E68  4E 80 00 20 */	blr
 
 .global "begin__18VECTOR<9TreeTable>CFv"
 "begin__18VECTOR<9TreeTable>CFv":
 /* 8015E1CC 00159E6C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8015E1D0 00159E70  4E 80 00 20 */	blr 
+/* 8015E1D0 00159E70  4E 80 00 20 */	blr
 
 .global "__vc__31VECTOR<21BehaviorConstantValue>CFUl"
 "__vc__31VECTOR<21BehaviorConstantValue>CFUl":
@@ -1031,12 +1031,12 @@ lbl_8015E1C4:
 /* 8015E1F8 00159E98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E1FC 00159E9C  7C 08 03 A6 */	mtlr r0
 /* 8015E200 00159EA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E204 00159EA4  4E 80 00 20 */	blr 
+/* 8015E204 00159EA4  4E 80 00 20 */	blr
 
 .global "begin__31VECTOR<21BehaviorConstantValue>CFv"
 "begin__31VECTOR<21BehaviorConstantValue>CFv":
 /* 8015E208 00159EA8  80 63 00 00 */	lwz r3, 0(r3)
-/* 8015E20C 00159EAC  4E 80 00 20 */	blr 
+/* 8015E20C 00159EAC  4E 80 00 20 */	blr
 
 .global "FindRes<C17BehaviorConstants>__FPC17BehaviorConstantsPC17BehaviorConstantsi_PC17BehaviorConstants"
 "FindRes<C17BehaviorConstants>__FPC17BehaviorConstantsPC17BehaviorConstantsi_PC17BehaviorConstants":
@@ -1045,15 +1045,15 @@ lbl_8015E1C4:
 /* 8015E218 00159EB8  7C C0 01 95 */	addze. r6, r0
 /* 8015E21C 00159EBC  41 81 00 0C */	bgt lbl_8015E228
 /* 8015E220 00159EC0  38 60 00 00 */	li r3, 0
-/* 8015E224 00159EC4  4E 80 00 20 */	blr 
+/* 8015E224 00159EC4  4E 80 00 20 */	blr
 lbl_8015E228:
 /* 8015E228 00159EC8  2C 06 00 01 */	cmpwi r6, 1
 /* 8015E22C 00159ECC  40 82 00 18 */	bne lbl_8015E244
 /* 8015E230 00159ED0  80 03 00 00 */	lwz r0, 0(r3)
 /* 8015E234 00159ED4  7C 00 28 00 */	cmpw r0, r5
-/* 8015E238 00159ED8  4D 82 00 20 */	beqlr 
+/* 8015E238 00159ED8  4D 82 00 20 */	beqlr
 /* 8015E23C 00159EDC  38 60 00 00 */	li r3, 0
-/* 8015E240 00159EE0  4E 80 00 20 */	blr 
+/* 8015E240 00159EE0  4E 80 00 20 */	blr
 lbl_8015E244:
 /* 8015E244 00159EE4  54 C0 0F FE */	srwi r0, r6, 0x1f
 /* 8015E248 00159EE8  7C 00 32 14 */	add r0, r0, r6
@@ -1063,7 +1063,7 @@ lbl_8015E244:
 /* 8015E258 00159EF8  7C 00 28 51 */	subf. r0, r0, r5
 /* 8015E25C 00159EFC  40 82 00 0C */	bne lbl_8015E268
 /* 8015E260 00159F00  7C C3 33 78 */	mr r3, r6
-/* 8015E264 00159F04  4E 80 00 20 */	blr 
+/* 8015E264 00159F04  4E 80 00 20 */	blr
 lbl_8015E268:
 /* 8015E268 00159F08  40 81 00 0C */	ble lbl_8015E274
 /* 8015E26C 00159F0C  38 66 00 10 */	addi r3, r6, 0x10
@@ -1071,7 +1071,7 @@ lbl_8015E268:
 lbl_8015E274:
 /* 8015E274 00159F14  7C C4 33 78 */	mr r4, r6
 /* 8015E278 00159F18  4B FF FF 98 */	b "FindRes<C17BehaviorConstants>__FPC17BehaviorConstantsPC17BehaviorConstantsi_PC17BehaviorConstants"
-/* 8015E27C 00159F1C  4E 80 00 20 */	blr 
+/* 8015E27C 00159F1C  4E 80 00 20 */	blr
 
 .global "FindResIndirect<CP13ObjDefinition>__FPCP13ObjDefinitionPCP13ObjDefinitioni_PCP13ObjDefinition"
 "FindResIndirect<CP13ObjDefinition>__FPCP13ObjDefinitionPCP13ObjDefinitioni_PCP13ObjDefinition":
@@ -1080,16 +1080,16 @@ lbl_8015E274:
 /* 8015E288 00159F28  7C C0 01 95 */	addze. r6, r0
 /* 8015E28C 00159F2C  41 81 00 0C */	bgt lbl_8015E298
 /* 8015E290 00159F30  38 60 00 00 */	li r3, 0
-/* 8015E294 00159F34  4E 80 00 20 */	blr 
+/* 8015E294 00159F34  4E 80 00 20 */	blr
 lbl_8015E298:
 /* 8015E298 00159F38  2C 06 00 01 */	cmpwi r6, 1
 /* 8015E29C 00159F3C  40 82 00 1C */	bne lbl_8015E2B8
 /* 8015E2A0 00159F40  80 83 00 00 */	lwz r4, 0(r3)
 /* 8015E2A4 00159F44  A8 04 00 BC */	lha r0, 0xbc(r4)
 /* 8015E2A8 00159F48  7C 00 28 00 */	cmpw r0, r5
-/* 8015E2AC 00159F4C  4D 82 00 20 */	beqlr 
+/* 8015E2AC 00159F4C  4D 82 00 20 */	beqlr
 /* 8015E2B0 00159F50  38 60 00 00 */	li r3, 0
-/* 8015E2B4 00159F54  4E 80 00 20 */	blr 
+/* 8015E2B4 00159F54  4E 80 00 20 */	blr
 lbl_8015E2B8:
 /* 8015E2B8 00159F58  54 C0 0F FE */	srwi r0, r6, 0x1f
 /* 8015E2BC 00159F5C  7C 00 32 14 */	add r0, r0, r6
@@ -1100,7 +1100,7 @@ lbl_8015E2B8:
 /* 8015E2D0 00159F70  7C 00 28 51 */	subf. r0, r0, r5
 /* 8015E2D4 00159F74  40 82 00 0C */	bne lbl_8015E2E0
 /* 8015E2D8 00159F78  7C E3 3B 78 */	mr r3, r7
-/* 8015E2DC 00159F7C  4E 80 00 20 */	blr 
+/* 8015E2DC 00159F7C  4E 80 00 20 */	blr
 lbl_8015E2E0:
 /* 8015E2E0 00159F80  40 81 00 0C */	ble lbl_8015E2EC
 /* 8015E2E4 00159F84  38 67 00 04 */	addi r3, r7, 4
@@ -1108,7 +1108,7 @@ lbl_8015E2E0:
 lbl_8015E2EC:
 /* 8015E2EC 00159F8C  7C E4 3B 78 */	mr r4, r7
 /* 8015E2F0 00159F90  4B FF FF 90 */	b "FindResIndirect<CP13ObjDefinition>__FPCP13ObjDefinitionPCP13ObjDefinitioni_PCP13ObjDefinition"
-/* 8015E2F4 00159F94  4E 80 00 20 */	blr 
+/* 8015E2F4 00159F94  4E 80 00 20 */	blr
 
 .global "FindRes<C9TreeTable>__FPC9TreeTablePC9TreeTablei_PC9TreeTable"
 "FindRes<C9TreeTable>__FPC9TreeTablePC9TreeTablei_PC9TreeTable":
@@ -1121,15 +1121,15 @@ lbl_8015E2EC:
 /* 8015E310 00159FB0  7C C0 32 15 */	add. r6, r0, r6
 /* 8015E314 00159FB4  41 81 00 0C */	bgt lbl_8015E320
 /* 8015E318 00159FB8  38 60 00 00 */	li r3, 0
-/* 8015E31C 00159FBC  4E 80 00 20 */	blr 
+/* 8015E31C 00159FBC  4E 80 00 20 */	blr
 lbl_8015E320:
 /* 8015E320 00159FC0  2C 06 00 01 */	cmpwi r6, 1
 /* 8015E324 00159FC4  40 82 00 18 */	bne lbl_8015E33C
 /* 8015E328 00159FC8  A8 03 00 06 */	lha r0, 6(r3)
 /* 8015E32C 00159FCC  7C 00 28 00 */	cmpw r0, r5
-/* 8015E330 00159FD0  4D 82 00 20 */	beqlr 
+/* 8015E330 00159FD0  4D 82 00 20 */	beqlr
 /* 8015E334 00159FD4  38 60 00 00 */	li r3, 0
-/* 8015E338 00159FD8  4E 80 00 20 */	blr 
+/* 8015E338 00159FD8  4E 80 00 20 */	blr
 lbl_8015E33C:
 /* 8015E33C 00159FDC  54 C0 0F FE */	srwi r0, r6, 0x1f
 /* 8015E340 00159FE0  7C 00 32 14 */	add r0, r0, r6
@@ -1140,7 +1140,7 @@ lbl_8015E33C:
 /* 8015E354 00159FF4  7C 00 28 51 */	subf. r0, r0, r5
 /* 8015E358 00159FF8  40 82 00 0C */	bne lbl_8015E364
 /* 8015E35C 00159FFC  7C C3 33 78 */	mr r3, r6
-/* 8015E360 0015A000  4E 80 00 20 */	blr 
+/* 8015E360 0015A000  4E 80 00 20 */	blr
 lbl_8015E364:
 /* 8015E364 0015A004  40 81 00 0C */	ble lbl_8015E370
 /* 8015E368 0015A008  38 66 00 0C */	addi r3, r6, 0xc
@@ -1148,7 +1148,7 @@ lbl_8015E364:
 lbl_8015E370:
 /* 8015E370 0015A010  7C C4 33 78 */	mr r4, r6
 /* 8015E374 0015A014  4B FF FF 84 */	b "FindRes<C9TreeTable>__FPC9TreeTablePC9TreeTablei_PC9TreeTable"
-/* 8015E378 0015A018  4E 80 00 20 */	blr 
+/* 8015E378 0015A018  4E 80 00 20 */	blr
 
 .global "__dt__26QuickDataBehaviorConstantsFv"
 "__dt__26QuickDataBehaviorConstantsFv":
@@ -1174,19 +1174,19 @@ lbl_8015E3B8:
 /* 8015E3C4 0015A064  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E3C8 0015A068  7C 08 03 A6 */	mtlr r0
 /* 8015E3CC 0015A06C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E3D0 0015A070  4E 80 00 20 */	blr 
+/* 8015E3D0 0015A070  4E 80 00 20 */	blr
 
 .global "IsTuning__22EdithBehaviorConstantsCFv"
 "IsTuning__22EdithBehaviorConstantsCFv":
 /* 8015E3D4 0015A074  A8 03 00 00 */	lha r0, 0(r3)
 /* 8015E3D8 0015A078  54 03 8F FE */	rlwinm r3, r0, 0x11, 0x1f, 0x1f
-/* 8015E3DC 0015A07C  4E 80 00 20 */	blr 
+/* 8015E3DC 0015A07C  4E 80 00 20 */	blr
 
 .global "CountValues__22EdithBehaviorConstantsCFv"
 "CountValues__22EdithBehaviorConstantsCFv":
 /* 8015E3E0 0015A080  A8 03 00 00 */	lha r0, 0(r3)
 /* 8015E3E4 0015A084  54 03 04 7E */	clrlwi r3, r0, 0x11
-/* 8015E3E8 0015A088  4E 80 00 20 */	blr 
+/* 8015E3E8 0015A088  4E 80 00 20 */	blr
 
 .global "SetIsTuning__22EdithBehaviorConstantsFb"
 "SetIsTuning__22EdithBehaviorConstantsFb":
@@ -1194,11 +1194,11 @@ lbl_8015E3B8:
 /* 8015E3F0 0015A090  2C 04 00 00 */	cmpwi r4, 0
 /* 8015E3F4 0015A094  54 00 04 5E */	rlwinm r0, r0, 0, 0x11, 0xf
 /* 8015E3F8 0015A098  B0 03 00 00 */	sth r0, 0(r3)
-/* 8015E3FC 0015A09C  4D 82 00 20 */	beqlr 
+/* 8015E3FC 0015A09C  4D 82 00 20 */	beqlr
 /* 8015E400 0015A0A0  7C 00 07 34 */	extsh r0, r0
 /* 8015E404 0015A0A4  60 00 80 00 */	ori r0, r0, 0x8000
 /* 8015E408 0015A0A8  B0 03 00 00 */	sth r0, 0(r3)
-/* 8015E40C 0015A0AC  4E 80 00 20 */	blr 
+/* 8015E40C 0015A0AC  4E 80 00 20 */	blr
 
 .global "SetValueCount__22EdithBehaviorConstantsFi"
 "SetValueCount__22EdithBehaviorConstantsFi":
@@ -1208,7 +1208,7 @@ lbl_8015E3B8:
 /* 8015E41C 0015A0BC  7C 84 07 34 */	extsh r4, r4
 /* 8015E420 0015A0C0  7C 80 03 78 */	or r0, r4, r0
 /* 8015E424 0015A0C4  B0 03 00 00 */	sth r0, 0(r3)
-/* 8015E428 0015A0C8  4E 80 00 20 */	blr 
+/* 8015E428 0015A0C8  4E 80 00 20 */	blr
 
 .global "__dt__20IFFBehaviorConstantsFv"
 "__dt__20IFFBehaviorConstantsFv":
@@ -1234,7 +1234,7 @@ lbl_8015E468:
 /* 8015E474 0015A114  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E478 0015A118  7C 08 03 A6 */	mtlr r0
 /* 8015E47C 0015A11C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E480 0015A120  4E 80 00 20 */	blr 
+/* 8015E480 0015A120  4E 80 00 20 */	blr
 
 .global "__ct__20IFFBehaviorConstantsFv"
 "__ct__20IFFBehaviorConstantsFv":
@@ -1257,7 +1257,7 @@ lbl_8015E468:
 /* 8015E4C4 0015A164  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E4C8 0015A168  7C 08 03 A6 */	mtlr r0
 /* 8015E4CC 0015A16C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E4D0 0015A170  4E 80 00 20 */	blr 
+/* 8015E4D0 0015A170  4E 80 00 20 */	blr
 
 .global "__ct__26QuickDataBehaviorConstantsFv"
 "__ct__26QuickDataBehaviorConstantsFv":
@@ -1277,7 +1277,7 @@ lbl_8015E468:
 /* 8015E508 0015A1A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E50C 0015A1AC  7C 08 03 A6 */	mtlr r0
 /* 8015E510 0015A1B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E514 0015A1B4  4E 80 00 20 */	blr 
+/* 8015E514 0015A1B4  4E 80 00 20 */	blr
 
 .global "__ct__39ObjectDataFactoryDatabase<10ITreeTable>Fv"
 "__ct__39ObjectDataFactoryDatabase<10ITreeTable>Fv":
@@ -1295,14 +1295,14 @@ lbl_8015E468:
 /* 8015E544 0015A1E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E548 0015A1E8  7C 08 03 A6 */	mtlr r0
 /* 8015E54C 0015A1EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E550 0015A1F0  4E 80 00 20 */	blr 
+/* 8015E550 0015A1F0  4E 80 00 20 */	blr
 
 .global "__ct__31ObjectDataFactory<10ITreeTable>Fv"
 "__ct__31ObjectDataFactory<10ITreeTable>Fv":
 /* 8015E554 0015A1F4  3C 80 80 43 */	lis r4, "__vt__31ObjectDataFactory<10ITreeTable>"@ha
 /* 8015E558 0015A1F8  38 84 C2 08 */	addi r4, r4, "__vt__31ObjectDataFactory<10ITreeTable>"@l
 /* 8015E55C 0015A1FC  90 83 00 00 */	stw r4, 0(r3)
-/* 8015E560 0015A200  4E 80 00 20 */	blr 
+/* 8015E560 0015A200  4E 80 00 20 */	blr
 
 .global "__ct__34ObjectDataFactoryIFF<10ITreeTable>Fv"
 "__ct__34ObjectDataFactoryIFF<10ITreeTable>Fv":
@@ -1320,7 +1320,7 @@ lbl_8015E468:
 /* 8015E590 0015A230  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E594 0015A234  7C 08 03 A6 */	mtlr r0
 /* 8015E598 0015A238  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E59C 0015A23C  4E 80 00 20 */	blr 
+/* 8015E59C 0015A23C  4E 80 00 20 */	blr
 
 .global "__ct__40ObjectDataFactoryQuickData<10ITreeTable>Fv"
 "__ct__40ObjectDataFactoryQuickData<10ITreeTable>Fv":
@@ -1338,7 +1338,7 @@ lbl_8015E468:
 /* 8015E5CC 0015A26C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E5D0 0015A270  7C 08 03 A6 */	mtlr r0
 /* 8015E5D4 0015A274  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E5D8 0015A278  4E 80 00 20 */	blr 
+/* 8015E5D8 0015A278  4E 80 00 20 */	blr
 
 .global "__ct__39ObjectDataFactoryDatabase<10ObjFnTable>Fv"
 "__ct__39ObjectDataFactoryDatabase<10ObjFnTable>Fv":
@@ -1356,14 +1356,14 @@ lbl_8015E468:
 /* 8015E608 0015A2A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E60C 0015A2AC  7C 08 03 A6 */	mtlr r0
 /* 8015E610 0015A2B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E614 0015A2B4  4E 80 00 20 */	blr 
+/* 8015E614 0015A2B4  4E 80 00 20 */	blr
 
 .global "__ct__31ObjectDataFactory<10ObjFnTable>Fv"
 "__ct__31ObjectDataFactory<10ObjFnTable>Fv":
 /* 8015E618 0015A2B8  3C 80 80 43 */	lis r4, "__vt__31ObjectDataFactory<10ObjFnTable>"@ha
 /* 8015E61C 0015A2BC  38 84 C2 48 */	addi r4, r4, "__vt__31ObjectDataFactory<10ObjFnTable>"@l
 /* 8015E620 0015A2C0  90 83 00 00 */	stw r4, 0(r3)
-/* 8015E624 0015A2C4  4E 80 00 20 */	blr 
+/* 8015E624 0015A2C4  4E 80 00 20 */	blr
 
 .global "__ct__34ObjectDataFactoryIFF<10ObjFnTable>Fv"
 "__ct__34ObjectDataFactoryIFF<10ObjFnTable>Fv":
@@ -1381,7 +1381,7 @@ lbl_8015E468:
 /* 8015E654 0015A2F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E658 0015A2F8  7C 08 03 A6 */	mtlr r0
 /* 8015E65C 0015A2FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E660 0015A300  4E 80 00 20 */	blr 
+/* 8015E660 0015A300  4E 80 00 20 */	blr
 
 .global "__ct__40ObjectDataFactoryQuickData<10ObjFnTable>Fv"
 "__ct__40ObjectDataFactoryQuickData<10ObjFnTable>Fv":
@@ -1399,7 +1399,7 @@ lbl_8015E468:
 /* 8015E690 0015A330  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E694 0015A334  7C 08 03 A6 */	mtlr r0
 /* 8015E698 0015A338  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E69C 0015A33C  4E 80 00 20 */	blr 
+/* 8015E69C 0015A33C  4E 80 00 20 */	blr
 
 .global "__ct__43ObjectDataFactoryDatabase<14FloatConstants>Fv"
 "__ct__43ObjectDataFactoryDatabase<14FloatConstants>Fv":
@@ -1417,14 +1417,14 @@ lbl_8015E468:
 /* 8015E6CC 0015A36C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E6D0 0015A370  7C 08 03 A6 */	mtlr r0
 /* 8015E6D4 0015A374  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E6D8 0015A378  4E 80 00 20 */	blr 
+/* 8015E6D8 0015A378  4E 80 00 20 */	blr
 
 .global "__ct__35ObjectDataFactory<14FloatConstants>Fv"
 "__ct__35ObjectDataFactory<14FloatConstants>Fv":
 /* 8015E6DC 0015A37C  3C 80 80 43 */	lis r4, "__vt__35ObjectDataFactory<14FloatConstants>"@ha
 /* 8015E6E0 0015A380  38 84 C2 88 */	addi r4, r4, "__vt__35ObjectDataFactory<14FloatConstants>"@l
 /* 8015E6E4 0015A384  90 83 00 00 */	stw r4, 0(r3)
-/* 8015E6E8 0015A388  4E 80 00 20 */	blr 
+/* 8015E6E8 0015A388  4E 80 00 20 */	blr
 
 .global "__ct__38ObjectDataFactoryIFF<14FloatConstants>Fv"
 "__ct__38ObjectDataFactoryIFF<14FloatConstants>Fv":
@@ -1442,7 +1442,7 @@ lbl_8015E468:
 /* 8015E718 0015A3B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E71C 0015A3BC  7C 08 03 A6 */	mtlr r0
 /* 8015E720 0015A3C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E724 0015A3C4  4E 80 00 20 */	blr 
+/* 8015E724 0015A3C4  4E 80 00 20 */	blr
 
 .global "__ct__44ObjectDataFactoryQuickData<14FloatConstants>Fv"
 "__ct__44ObjectDataFactoryQuickData<14FloatConstants>Fv":
@@ -1460,7 +1460,7 @@ lbl_8015E468:
 /* 8015E754 0015A3F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E758 0015A3F8  7C 08 03 A6 */	mtlr r0
 /* 8015E75C 0015A3FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E760 0015A400  4E 80 00 20 */	blr 
+/* 8015E760 0015A400  4E 80 00 20 */	blr
 
 .global "__ct__37ObjectDataFactoryDatabase<9StringSet>Fv"
 "__ct__37ObjectDataFactoryDatabase<9StringSet>Fv":
@@ -1478,14 +1478,14 @@ lbl_8015E468:
 /* 8015E790 0015A430  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E794 0015A434  7C 08 03 A6 */	mtlr r0
 /* 8015E798 0015A438  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E79C 0015A43C  4E 80 00 20 */	blr 
+/* 8015E79C 0015A43C  4E 80 00 20 */	blr
 
 .global "__ct__29ObjectDataFactory<9StringSet>Fv"
 "__ct__29ObjectDataFactory<9StringSet>Fv":
 /* 8015E7A0 0015A440  3C 80 80 43 */	lis r4, "__vt__29ObjectDataFactory<9StringSet>"@ha
 /* 8015E7A4 0015A444  38 84 C2 C8 */	addi r4, r4, "__vt__29ObjectDataFactory<9StringSet>"@l
 /* 8015E7A8 0015A448  90 83 00 00 */	stw r4, 0(r3)
-/* 8015E7AC 0015A44C  4E 80 00 20 */	blr 
+/* 8015E7AC 0015A44C  4E 80 00 20 */	blr
 
 .global "__ct__32ObjectDataFactoryIFF<9StringSet>Fv"
 "__ct__32ObjectDataFactoryIFF<9StringSet>Fv":
@@ -1503,7 +1503,7 @@ lbl_8015E468:
 /* 8015E7DC 0015A47C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E7E0 0015A480  7C 08 03 A6 */	mtlr r0
 /* 8015E7E4 0015A484  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E7E8 0015A488  4E 80 00 20 */	blr 
+/* 8015E7E8 0015A488  4E 80 00 20 */	blr
 
 .global "GetValue__26QuickDataBehaviorConstantsCFi"
 "GetValue__26QuickDataBehaviorConstantsCFi":
@@ -1523,27 +1523,27 @@ lbl_8015E818:
 /* 8015E818 0015A4B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E81C 0015A4BC  7C 08 03 A6 */	mtlr r0
 /* 8015E820 0015A4C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E824 0015A4C4  4E 80 00 20 */	blr 
+/* 8015E824 0015A4C4  4E 80 00 20 */	blr
 
 .global "SaveDataByID__26QuickDataBehaviorConstantsFRC12ObjectDataID"
 "SaveDataByID__26QuickDataBehaviorConstantsFRC12ObjectDataID":
 /* 8015E828 0015A4C8  38 60 00 00 */	li r3, 0
-/* 8015E82C 0015A4CC  4E 80 00 20 */	blr 
+/* 8015E82C 0015A4CC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__26QuickDataBehaviorConstantsCFv"
 "GetDataSourceType__26QuickDataBehaviorConstantsCFv":
 /* 8015E830 0015A4D0  38 60 00 01 */	li r3, 1
-/* 8015E834 0015A4D4  4E 80 00 20 */	blr 
+/* 8015E834 0015A4D4  4E 80 00 20 */	blr
 
 .global "LoadOnlyNameAndIDFromIndex__26QuickDataBehaviorConstantsFUii"
 "LoadOnlyNameAndIDFromIndex__26QuickDataBehaviorConstantsFUii":
 /* 8015E838 0015A4D8  38 60 00 00 */	li r3, 0
-/* 8015E83C 0015A4DC  4E 80 00 20 */	blr 
+/* 8015E83C 0015A4DC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__20IFFBehaviorConstantsCFv"
 "GetDataSourceType__20IFFBehaviorConstantsCFv":
 /* 8015E840 0015A4E0  38 60 00 02 */	li r3, 2
-/* 8015E844 0015A4E4  4E 80 00 20 */	blr 
+/* 8015E844 0015A4E4  4E 80 00 20 */	blr
 
 .global "GetDataID__27ObjectDataBehaviorConstantsCFv"
 "GetDataID__27ObjectDataBehaviorConstantsCFv":
@@ -1579,7 +1579,7 @@ lbl_8015E818:
 /* 8015E8B0 0015A550  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E8B4 0015A554  7C 08 03 A6 */	mtlr r0
 /* 8015E8B8 0015A558  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E8BC 0015A55C  4E 80 00 20 */	blr 
+/* 8015E8BC 0015A55C  4E 80 00 20 */	blr
 
 .global "__dt__22ObjectDataBehaviorTreeFv"
 "__dt__22ObjectDataBehaviorTreeFv":
@@ -1599,7 +1599,7 @@ lbl_8015E8E8:
 /* 8015E8F0 0015A590  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015E8F4 0015A594  7C 08 03 A6 */	mtlr r0
 /* 8015E8F8 0015A598  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E8FC 0015A59C  4E 80 00 20 */	blr 
+/* 8015E8FC 0015A59C  4E 80 00 20 */	blr
 
 .global "GetResourceName__22ObjectDataBehaviorTreeCFR12StringBuffer"
 "GetResourceName__22ObjectDataBehaviorTreeCFR12StringBuffer":
@@ -1627,7 +1627,7 @@ lbl_8015E944:
 /* 8015E94C 0015A5EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015E950 0015A5F0  7C 08 03 A6 */	mtlr r0
 /* 8015E954 0015A5F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E958 0015A5F8  4E 80 00 20 */	blr 
+/* 8015E958 0015A5F8  4E 80 00 20 */	blr
 
 .global "SetResourceName__22ObjectDataBehaviorTreeFRC12StringBuffer"
 "SetResourceName__22ObjectDataBehaviorTreeFRC12StringBuffer":
@@ -1640,25 +1640,25 @@ lbl_8015E944:
 /* 8015E974 0015A614  38 60 00 01 */	li r3, 1
 /* 8015E978 0015A618  7C 08 03 A6 */	mtlr r0
 /* 8015E97C 0015A61C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015E980 0015A620  4E 80 00 20 */	blr 
+/* 8015E980 0015A620  4E 80 00 20 */	blr
 
 .global "GetStructVersion__22ObjectDataBehaviorTreeCFv"
 "GetStructVersion__22ObjectDataBehaviorTreeCFv":
 /* 8015E984 0015A624  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8015E988 0015A628  A8 63 00 00 */	lha r3, 0(r3)
-/* 8015E98C 0015A62C  4E 80 00 20 */	blr 
+/* 8015E98C 0015A62C  4E 80 00 20 */	blr
 
 .global "GetNumNodes__22ObjectDataBehaviorTreeCFv"
 "GetNumNodes__22ObjectDataBehaviorTreeCFv":
 /* 8015E990 0015A630  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8015E994 0015A634  A8 63 00 02 */	lha r3, 2(r3)
-/* 8015E998 0015A638  4E 80 00 20 */	blr 
+/* 8015E998 0015A638  4E 80 00 20 */	blr
 
 .global "GetType__22ObjectDataBehaviorTreeCFv"
 "GetType__22ObjectDataBehaviorTreeCFv":
 /* 8015E99C 0015A63C  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8015E9A0 0015A640  88 63 00 04 */	lbz r3, 4(r3)
-/* 8015E9A4 0015A644  4E 80 00 20 */	blr 
+/* 8015E9A4 0015A644  4E 80 00 20 */	blr
 
 .global "GetNumParams__22ObjectDataBehaviorTreeCFv"
 "GetNumParams__22ObjectDataBehaviorTreeCFv":
@@ -1694,7 +1694,7 @@ lbl_8015EA0C:
 /* 8015EA10 0015A6B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015EA14 0015A6B4  7C 08 03 A6 */	mtlr r0
 /* 8015EA18 0015A6B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015EA1C 0015A6BC  4E 80 00 20 */	blr 
+/* 8015EA1C 0015A6BC  4E 80 00 20 */	blr
 
 .global "GetNumLocals__22ObjectDataBehaviorTreeCFv"
 "GetNumLocals__22ObjectDataBehaviorTreeCFv":
@@ -1730,14 +1730,14 @@ lbl_8015EA84:
 /* 8015EA88 0015A728  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015EA8C 0015A72C  7C 08 03 A6 */	mtlr r0
 /* 8015EA90 0015A730  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015EA94 0015A734  4E 80 00 20 */	blr 
+/* 8015EA94 0015A734  4E 80 00 20 */	blr
 
 .global "GetTreeVersion__22ObjectDataBehaviorTreeCFv"
 "GetTreeVersion__22ObjectDataBehaviorTreeCFv":
 /* 8015EA98 0015A738  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8015EA9C 0015A73C  80 03 00 08 */	lwz r0, 8(r3)
 /* 8015EAA0 0015A740  54 03 06 3E */	clrlwi r3, r0, 0x18
-/* 8015EAA4 0015A744  4E 80 00 20 */	blr 
+/* 8015EAA4 0015A744  4E 80 00 20 */	blr
 
 .global "GetNode__22ObjectDataBehaviorTreeCFUi"
 "GetNode__22ObjectDataBehaviorTreeCFUi":
@@ -1745,12 +1745,12 @@ lbl_8015EA84:
 /* 8015EAAC 0015A74C  80 63 00 50 */	lwz r3, 0x50(r3)
 /* 8015EAB0 0015A750  7C 63 02 14 */	add r3, r3, r0
 /* 8015EAB4 0015A754  38 63 00 0C */	addi r3, r3, 0xc
-/* 8015EAB8 0015A758  4E 80 00 20 */	blr 
+/* 8015EAB8 0015A758  4E 80 00 20 */	blr
 
 .global "SetResID__22ObjectDataBehaviorTreeFs"
 "SetResID__22ObjectDataBehaviorTreeFs":
 /* 8015EABC 0015A75C  B0 83 00 04 */	sth r4, 4(r3)
-/* 8015EAC0 0015A760  4E 80 00 20 */	blr 
+/* 8015EAC0 0015A760  4E 80 00 20 */	blr
 
 .global "__ct__20ResourceBehaviorTreeFv"
 "__ct__20ResourceBehaviorTreeFv":
@@ -1771,7 +1771,7 @@ lbl_8015EA84:
 /* 8015EAFC 0015A79C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015EB00 0015A7A0  7C 08 03 A6 */	mtlr r0
 /* 8015EB04 0015A7A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015EB08 0015A7A8  4E 80 00 20 */	blr 
+/* 8015EB08 0015A7A8  4E 80 00 20 */	blr
 
 .global "LoadFromIndex__20ResourceBehaviorTreeFUii"
 "LoadFromIndex__20ResourceBehaviorTreeFUii":
@@ -1864,14 +1864,14 @@ lbl_8015EC3C:
 /* 8015EC48 0015A8E8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8015EC4C 0015A8EC  7C 08 03 A6 */	mtlr r0
 /* 8015EC50 0015A8F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015EC54 0015A8F4  4E 80 00 20 */	blr 
+/* 8015EC54 0015A8F4  4E 80 00 20 */	blr
 
 .global "LoadOnlyNameAndIDFromIndex__20ResourceBehaviorTreeFUii"
 "LoadOnlyNameAndIDFromIndex__20ResourceBehaviorTreeFUii":
 /* 8015EC58 0015A8F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015EC5C 0015A8FC  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 8015EC60 0015A900  7D 89 03 A6 */	mtctr r12
-/* 8015EC64 0015A904  4E 80 04 20 */	bctr 
+/* 8015EC64 0015A904  4E 80 04 20 */	bctr
 
 .global "LoadFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID"
 "LoadFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID":
@@ -1968,7 +1968,7 @@ lbl_8015EDA8:
 /* 8015EDB4 0015AA54  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8015EDB8 0015AA58  7C 08 03 A6 */	mtlr r0
 /* 8015EDBC 0015AA5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015EDC0 0015AA60  4E 80 00 20 */	blr 
+/* 8015EDC0 0015AA60  4E 80 00 20 */	blr
 
 .global "GetFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID"
 "GetFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID":
@@ -2057,12 +2057,12 @@ lbl_8015EEE0:
 /* 8015EEF0 0015AB90  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8015EEF4 0015AB94  7C 08 03 A6 */	mtlr r0
 /* 8015EEF8 0015AB98  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015EEFC 0015AB9C  4E 80 00 20 */	blr 
+/* 8015EEFC 0015AB9C  4E 80 00 20 */	blr
 
 .global "SaveDataByID__20ResourceBehaviorTreeFRC12ObjectDataID"
 "SaveDataByID__20ResourceBehaviorTreeFRC12ObjectDataID":
 /* 8015EF00 0015ABA0  38 60 00 00 */	li r3, 0
-/* 8015EF04 0015ABA4  4E 80 00 20 */	blr 
+/* 8015EF04 0015ABA4  4E 80 00 20 */	blr
 
 .global "__dt__20ResourceBehaviorTreeFv"
 "__dt__20ResourceBehaviorTreeFv":
@@ -2106,7 +2106,7 @@ lbl_8015EF84:
 /* 8015EF90 0015AC30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015EF94 0015AC34  7C 08 03 A6 */	mtlr r0
 /* 8015EF98 0015AC38  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015EF9C 0015AC3C  4E 80 00 20 */	blr 
+/* 8015EF9C 0015AC3C  4E 80 00 20 */	blr
 
 .global "__nw__20ResourceBehaviorTreeFUl"
 "__nw__20ResourceBehaviorTreeFUl":
@@ -2133,7 +2133,7 @@ lbl_8015EFE4:
 /* 8015EFE8 0015AC88  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015EFEC 0015AC8C  7C 08 03 A6 */	mtlr r0
 /* 8015EFF0 0015AC90  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015EFF4 0015AC94  4E 80 00 20 */	blr 
+/* 8015EFF4 0015AC94  4E 80 00 20 */	blr
 
 .global "__dl__20ResourceBehaviorTreeFPv"
 "__dl__20ResourceBehaviorTreeFPv":
@@ -2163,7 +2163,7 @@ lbl_8015F044:
 /* 8015F04C 0015ACEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015F050 0015ACF0  7C 08 03 A6 */	mtlr r0
 /* 8015F054 0015ACF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F058 0015ACF8  4E 80 00 20 */	blr 
+/* 8015F058 0015ACF8  4E 80 00 20 */	blr
 
 .global "QueryInterface__20ResourceBehaviorTreeFUiPPv"
 "QueryInterface__20ResourceBehaviorTreeFUiPPv":
@@ -2191,7 +2191,7 @@ lbl_8015F0A8:
 /* 8015F0A8 0015AD48  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F0AC 0015AD4C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015F0B0 0015AD50  7D 89 03 A6 */	mtctr r12
-/* 8015F0B4 0015AD54  4E 80 04 21 */	bctrl 
+/* 8015F0B4 0015AD54  4E 80 04 21 */	bctrl
 /* 8015F0B8 0015AD58  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015F0BC 0015AD5C  38 60 00 01 */	li r3, 1
 /* 8015F0C0 0015AD60  48 00 00 24 */	b lbl_8015F0E4
@@ -2199,7 +2199,7 @@ lbl_8015F0C4:
 /* 8015F0C4 0015AD64  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F0C8 0015AD68  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015F0CC 0015AD6C  7D 89 03 A6 */	mtctr r12
-/* 8015F0D0 0015AD70  4E 80 04 21 */	bctrl 
+/* 8015F0D0 0015AD70  4E 80 04 21 */	bctrl
 /* 8015F0D4 0015AD74  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015F0D8 0015AD78  38 60 00 01 */	li r3, 1
 /* 8015F0DC 0015AD7C  48 00 00 08 */	b lbl_8015F0E4
@@ -2211,7 +2211,7 @@ lbl_8015F0E4:
 /* 8015F0EC 0015AD8C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015F0F0 0015AD90  7C 08 03 A6 */	mtlr r0
 /* 8015F0F4 0015AD94  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F0F8 0015AD98  4E 80 00 20 */	blr 
+/* 8015F0F8 0015AD98  4E 80 00 20 */	blr
 
 .global "AddRef__20ResourceBehaviorTreeFv"
 "AddRef__20ResourceBehaviorTreeFv":
@@ -2219,7 +2219,7 @@ lbl_8015F0E4:
 /* 8015F100 0015ADA0  38 04 00 01 */	addi r0, r4, 1
 /* 8015F104 0015ADA4  90 03 00 60 */	stw r0, 0x60(r3)
 /* 8015F108 0015ADA8  7C 03 03 78 */	mr r3, r0
-/* 8015F10C 0015ADAC  4E 80 00 20 */	blr 
+/* 8015F10C 0015ADAC  4E 80 00 20 */	blr
 
 .global "Release__20ResourceBehaviorTreeFv"
 "Release__20ResourceBehaviorTreeFv":
@@ -2239,14 +2239,14 @@ lbl_8015F134:
 /* 8015F140 0015ADE0  38 80 00 01 */	li r4, 1
 /* 8015F144 0015ADE4  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8015F148 0015ADE8  7D 89 03 A6 */	mtctr r12
-/* 8015F14C 0015ADEC  4E 80 04 21 */	bctrl 
+/* 8015F14C 0015ADEC  4E 80 04 21 */	bctrl
 lbl_8015F150:
 /* 8015F150 0015ADF0  38 60 00 00 */	li r3, 0
 lbl_8015F154:
 /* 8015F154 0015ADF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015F158 0015ADF8  7C 08 03 A6 */	mtlr r0
 /* 8015F15C 0015ADFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F160 0015AE00  4E 80 00 20 */	blr 
+/* 8015F160 0015AE00  4E 80 00 20 */	blr
 
 .global "__ct__15IFFBehaviorTreeFv"
 "__ct__15IFFBehaviorTreeFv":
@@ -2266,7 +2266,7 @@ lbl_8015F154:
 /* 8015F198 0015AE38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015F19C 0015AE3C  7C 08 03 A6 */	mtlr r0
 /* 8015F1A0 0015AE40  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F1A4 0015AE44  4E 80 00 20 */	blr 
+/* 8015F1A4 0015AE44  4E 80 00 20 */	blr
 
 .global "__dt__15IFFBehaviorTreeFv"
 "__dt__15IFFBehaviorTreeFv":
@@ -2304,7 +2304,7 @@ lbl_8015F210:
 /* 8015F21C 0015AEBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015F220 0015AEC0  7C 08 03 A6 */	mtlr r0
 /* 8015F224 0015AEC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F228 0015AEC8  4E 80 00 20 */	blr 
+/* 8015F228 0015AEC8  4E 80 00 20 */	blr
 
 .global "LoadFromIndex__15IFFBehaviorTreeFUii"
 "LoadFromIndex__15IFFBehaviorTreeFUii":
@@ -2332,7 +2332,7 @@ lbl_8015F26C:
 /* 8015F27C 0015AF1C  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 8015F280 0015AF20  38 C0 00 00 */	li r6, 0
 /* 8015F284 0015AF24  7D 89 03 A6 */	mtctr r12
-/* 8015F288 0015AF28  4E 80 04 21 */	bctrl 
+/* 8015F288 0015AF28  4E 80 04 21 */	bctrl
 /* 8015F28C 0015AF2C  2C 03 00 00 */	cmpwi r3, 0
 /* 8015F290 0015AF30  7C 7D 1B 78 */	mr r29, r3
 /* 8015F294 0015AF34  40 82 00 0C */	bne lbl_8015F2A0
@@ -2349,7 +2349,7 @@ lbl_8015F2A0:
 /* 8015F2BC 0015AF5C  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015F2C0 0015AF60  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 8015F2C4 0015AF64  7D 89 03 A6 */	mtctr r12
-/* 8015F2C8 0015AF68  4E 80 04 21 */	bctrl 
+/* 8015F2C8 0015AF68  4E 80 04 21 */	bctrl
 /* 8015F2CC 0015AF6C  B3 E1 00 08 */	sth r31, 8(r1)
 /* 8015F2D0 0015AF70  7F C3 F3 78 */	mr r3, r30
 /* 8015F2D4 0015AF74  7F A4 EB 78 */	mr r4, r29
@@ -2357,7 +2357,7 @@ lbl_8015F2A0:
 /* 8015F2DC 0015AF7C  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015F2E0 0015AF80  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8015F2E4 0015AF84  7D 89 03 A6 */	mtctr r12
-/* 8015F2E8 0015AF88  4E 80 04 21 */	bctrl 
+/* 8015F2E8 0015AF88  4E 80 04 21 */	bctrl
 /* 8015F2EC 0015AF8C  A8 81 00 08 */	lha r4, 8(r1)
 /* 8015F2F0 0015AF90  7F 63 DB 78 */	mr r3, r27
 /* 8015F2F4 0015AF94  4B FF F7 C9 */	bl "SetResID__22ObjectDataBehaviorTreeFs"
@@ -2376,14 +2376,14 @@ lbl_8015F31C:
 /* 8015F324 0015AFC4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8015F328 0015AFC8  7C 08 03 A6 */	mtlr r0
 /* 8015F32C 0015AFCC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8015F330 0015AFD0  4E 80 00 20 */	blr 
+/* 8015F330 0015AFD0  4E 80 00 20 */	blr
 
 .global "LoadOnlyNameAndIDFromIndex__15IFFBehaviorTreeFUii"
 "LoadOnlyNameAndIDFromIndex__15IFFBehaviorTreeFUii":
 /* 8015F334 0015AFD4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F338 0015AFD8  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 8015F33C 0015AFDC  7D 89 03 A6 */	mtctr r12
-/* 8015F340 0015AFE0  4E 80 04 20 */	bctr 
+/* 8015F340 0015AFE0  4E 80 04 20 */	bctr
 
 .global "LoadFromDataID__15IFFBehaviorTreeFRC12ObjectDataID"
 "LoadFromDataID__15IFFBehaviorTreeFRC12ObjectDataID":
@@ -2420,7 +2420,7 @@ lbl_8015F39C:
 /* 8015F3B8 0015B058  38 84 41 56 */	addi r4, r4, 0x42484156@l
 /* 8015F3BC 0015B05C  38 C0 00 00 */	li r6, 0
 /* 8015F3C0 0015B060  7D 89 03 A6 */	mtctr r12
-/* 8015F3C4 0015B064  4E 80 04 21 */	bctrl 
+/* 8015F3C4 0015B064  4E 80 04 21 */	bctrl
 /* 8015F3C8 0015B068  2C 03 00 00 */	cmpwi r3, 0
 /* 8015F3CC 0015B06C  7C 7D 1B 78 */	mr r29, r3
 /* 8015F3D0 0015B070  40 82 00 0C */	bne lbl_8015F3DC
@@ -2437,7 +2437,7 @@ lbl_8015F3DC:
 /* 8015F3F8 0015B098  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015F3FC 0015B09C  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 8015F400 0015B0A0  7D 89 03 A6 */	mtctr r12
-/* 8015F404 0015B0A4  4E 80 04 21 */	bctrl 
+/* 8015F404 0015B0A4  4E 80 04 21 */	bctrl
 /* 8015F408 0015B0A8  B3 E1 00 08 */	sth r31, 8(r1)
 /* 8015F40C 0015B0AC  7F C3 F3 78 */	mr r3, r30
 /* 8015F410 0015B0B0  7F A4 EB 78 */	mr r4, r29
@@ -2445,7 +2445,7 @@ lbl_8015F3DC:
 /* 8015F418 0015B0B8  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015F41C 0015B0BC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8015F420 0015B0C0  7D 89 03 A6 */	mtctr r12
-/* 8015F424 0015B0C4  4E 80 04 21 */	bctrl 
+/* 8015F424 0015B0C4  4E 80 04 21 */	bctrl
 /* 8015F428 0015B0C8  A8 81 00 08 */	lha r4, 8(r1)
 /* 8015F42C 0015B0CC  7F 83 E3 78 */	mr r3, r28
 /* 8015F430 0015B0D0  4B FF F6 8D */	bl "SetResID__22ObjectDataBehaviorTreeFs"
@@ -2460,14 +2460,14 @@ lbl_8015F440:
 /* 8015F450 0015B0F0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8015F454 0015B0F4  7C 08 03 A6 */	mtlr r0
 /* 8015F458 0015B0F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015F45C 0015B0FC  4E 80 00 20 */	blr 
+/* 8015F45C 0015B0FC  4E 80 00 20 */	blr
 
 .global "GetFromDataID__15IFFBehaviorTreeFRC12ObjectDataID"
 "GetFromDataID__15IFFBehaviorTreeFRC12ObjectDataID":
 /* 8015F460 0015B100  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F464 0015B104  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8015F468 0015B108  7D 89 03 A6 */	mtctr r12
-/* 8015F46C 0015B10C  4E 80 04 20 */	bctr 
+/* 8015F46C 0015B10C  4E 80 04 20 */	bctr
 
 .global "SaveDataByID__15IFFBehaviorTreeFRC12ObjectDataID"
 "SaveDataByID__15IFFBehaviorTreeFRC12ObjectDataID":
@@ -2553,7 +2553,7 @@ lbl_8015F568:
 /* 8015F5A0 0015B240  38 A5 41 56 */	addi r5, r5, 0x42484156@l
 /* 8015F5A4 0015B244  39 00 00 00 */	li r8, 0
 /* 8015F5A8 0015B248  7D 89 03 A6 */	mtctr r12
-/* 8015F5AC 0015B24C  4E 80 04 21 */	bctrl 
+/* 8015F5AC 0015B24C  4E 80 04 21 */	bctrl
 /* 8015F5B0 0015B250  7F A3 EB 78 */	mr r3, r29
 /* 8015F5B4 0015B254  4B F7 86 BD */	bl "GetError__8iResFileFv"
 /* 8015F5B8 0015B258  2C 03 00 00 */	cmpwi r3, 0
@@ -2563,14 +2563,14 @@ lbl_8015F568:
 /* 8015F5C8 0015B268  7F 84 E3 78 */	mr r4, r28
 /* 8015F5CC 0015B26C  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8015F5D0 0015B270  7D 89 03 A6 */	mtctr r12
-/* 8015F5D4 0015B274  4E 80 04 21 */	bctrl 
+/* 8015F5D4 0015B274  4E 80 04 21 */	bctrl
 /* 8015F5D8 0015B278  7F A3 EB 78 */	mr r3, r29
 /* 8015F5DC 0015B27C  4B F7 86 95 */	bl "GetError__8iResFileFv"
 /* 8015F5E0 0015B280  81 9D 00 0C */	lwz r12, 0xc(r29)
 /* 8015F5E4 0015B284  7F A3 EB 78 */	mr r3, r29
 /* 8015F5E8 0015B288  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8015F5EC 0015B28C  7D 89 03 A6 */	mtctr r12
-/* 8015F5F0 0015B290  4E 80 04 21 */	bctrl 
+/* 8015F5F0 0015B290  4E 80 04 21 */	bctrl
 lbl_8015F5F4:
 /* 8015F5F4 0015B294  7F 83 E3 78 */	mr r3, r28
 /* 8015F5F8 0015B298  4B F7 7A 19 */	bl "HUnlock__6MemoryFPQ26Memory10HandleNode"
@@ -2581,7 +2581,7 @@ lbl_8015F600:
 /* 8015F608 0015B2A8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8015F60C 0015B2AC  7C 08 03 A6 */	mtlr r0
 /* 8015F610 0015B2B0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8015F614 0015B2B4  4E 80 00 20 */	blr 
+/* 8015F614 0015B2B4  4E 80 00 20 */	blr
 
 .global "QueryInterface__15IFFBehaviorTreeFUiPPv"
 "QueryInterface__15IFFBehaviorTreeFUiPPv":
@@ -2609,7 +2609,7 @@ lbl_8015F664:
 /* 8015F664 0015B304  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F668 0015B308  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015F66C 0015B30C  7D 89 03 A6 */	mtctr r12
-/* 8015F670 0015B310  4E 80 04 21 */	bctrl 
+/* 8015F670 0015B310  4E 80 04 21 */	bctrl
 /* 8015F674 0015B314  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015F678 0015B318  38 60 00 01 */	li r3, 1
 /* 8015F67C 0015B31C  48 00 00 24 */	b lbl_8015F6A0
@@ -2617,7 +2617,7 @@ lbl_8015F680:
 /* 8015F680 0015B320  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015F684 0015B324  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015F688 0015B328  7D 89 03 A6 */	mtctr r12
-/* 8015F68C 0015B32C  4E 80 04 21 */	bctrl 
+/* 8015F68C 0015B32C  4E 80 04 21 */	bctrl
 /* 8015F690 0015B330  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015F694 0015B334  38 60 00 01 */	li r3, 1
 /* 8015F698 0015B338  48 00 00 08 */	b lbl_8015F6A0
@@ -2629,7 +2629,7 @@ lbl_8015F6A0:
 /* 8015F6A8 0015B348  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015F6AC 0015B34C  7C 08 03 A6 */	mtlr r0
 /* 8015F6B0 0015B350  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F6B4 0015B354  4E 80 00 20 */	blr 
+/* 8015F6B4 0015B354  4E 80 00 20 */	blr
 
 .global "AddRef__15IFFBehaviorTreeFv"
 "AddRef__15IFFBehaviorTreeFv":
@@ -2637,7 +2637,7 @@ lbl_8015F6A0:
 /* 8015F6BC 0015B35C  38 04 00 01 */	addi r0, r4, 1
 /* 8015F6C0 0015B360  90 03 00 5C */	stw r0, 0x5c(r3)
 /* 8015F6C4 0015B364  7C 03 03 78 */	mr r3, r0
-/* 8015F6C8 0015B368  4E 80 00 20 */	blr 
+/* 8015F6C8 0015B368  4E 80 00 20 */	blr
 
 .global "Release__15IFFBehaviorTreeFv"
 "Release__15IFFBehaviorTreeFv":
@@ -2657,20 +2657,20 @@ lbl_8015F6F0:
 /* 8015F6FC 0015B39C  38 80 00 01 */	li r4, 1
 /* 8015F700 0015B3A0  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8015F704 0015B3A4  7D 89 03 A6 */	mtctr r12
-/* 8015F708 0015B3A8  4E 80 04 21 */	bctrl 
+/* 8015F708 0015B3A8  4E 80 04 21 */	bctrl
 lbl_8015F70C:
 /* 8015F70C 0015B3AC  38 60 00 00 */	li r3, 0
 lbl_8015F710:
 /* 8015F710 0015B3B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015F714 0015B3B4  7C 08 03 A6 */	mtlr r0
 /* 8015F718 0015B3B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F71C 0015B3BC  4E 80 00 20 */	blr 
+/* 8015F71C 0015B3BC  4E 80 00 20 */	blr
 
 .global "__ct__12ObjectDataIDFUiUs"
 "__ct__12ObjectDataIDFUiUs":
 /* 8015F720 0015B3C0  90 83 00 00 */	stw r4, 0(r3)
 /* 8015F724 0015B3C4  B0 A3 00 04 */	sth r5, 4(r3)
-/* 8015F728 0015B3C8  4E 80 00 20 */	blr 
+/* 8015F728 0015B3C8  4E 80 00 20 */	blr
 
 .global "__ct__12ObjectDataIDFRC12ObjectDataID"
 "__ct__12ObjectDataIDFRC12ObjectDataID":
@@ -2678,7 +2678,7 @@ lbl_8015F710:
 /* 8015F730 0015B3D0  A0 04 00 04 */	lhz r0, 4(r4)
 /* 8015F734 0015B3D4  90 A3 00 00 */	stw r5, 0(r3)
 /* 8015F738 0015B3D8  B0 03 00 04 */	sth r0, 4(r3)
-/* 8015F73C 0015B3DC  4E 80 00 20 */	blr 
+/* 8015F73C 0015B3DC  4E 80 00 20 */	blr
 
 .global "__as__12ObjectDataIDFRC12ObjectDataID"
 "__as__12ObjectDataIDFRC12ObjectDataID":
@@ -2686,7 +2686,7 @@ lbl_8015F710:
 /* 8015F744 0015B3E4  A0 04 00 04 */	lhz r0, 4(r4)
 /* 8015F748 0015B3E8  90 A3 00 00 */	stw r5, 0(r3)
 /* 8015F74C 0015B3EC  B0 03 00 04 */	sth r0, 4(r3)
-/* 8015F750 0015B3F0  4E 80 00 20 */	blr 
+/* 8015F750 0015B3F0  4E 80 00 20 */	blr
 
 .global "__lt__12ObjectDataIDCFRC12ObjectDataID"
 "__lt__12ObjectDataIDCFRC12ObjectDataID":
@@ -2708,7 +2708,7 @@ lbl_8015F784:
 /* 8015F78C 0015B42C  38 C0 00 00 */	li r6, 0
 lbl_8015F790:
 /* 8015F790 0015B430  7C C3 33 78 */	mr r3, r6
-/* 8015F794 0015B434  4E 80 00 20 */	blr 
+/* 8015F794 0015B434  4E 80 00 20 */	blr
 
 .global "__eq__12ObjectDataIDCFRC12ObjectDataID"
 "__eq__12ObjectDataIDCFRC12ObjectDataID":
@@ -2724,17 +2724,17 @@ lbl_8015F790:
 /* 8015F7BC 0015B45C  38 C0 00 01 */	li r6, 1
 lbl_8015F7C0:
 /* 8015F7C0 0015B460  7C C3 33 78 */	mr r3, r6
-/* 8015F7C4 0015B464  4E 80 00 20 */	blr 
+/* 8015F7C4 0015B464  4E 80 00 20 */	blr
 
 .global "SetNamespaceID__12ObjectDataIDFUi"
 "SetNamespaceID__12ObjectDataIDFUi":
 /* 8015F7C8 0015B468  90 83 00 00 */	stw r4, 0(r3)
-/* 8015F7CC 0015B46C  4E 80 00 20 */	blr 
+/* 8015F7CC 0015B46C  4E 80 00 20 */	blr
 
 .global "SetResourceID__12ObjectDataIDFUs"
 "SetResourceID__12ObjectDataIDFUs":
 /* 8015F7D0 0015B470  B0 83 00 04 */	sth r4, 4(r3)
-/* 8015F7D4 0015B474  4E 80 00 20 */	blr 
+/* 8015F7D4 0015B474  4E 80 00 20 */	blr
 
 .global "__ct__23ObjectDataObjDefinitionFv"
 "__ct__23ObjectDataObjDefinitionFv":
@@ -2768,7 +2768,7 @@ lbl_8015F7C0:
 /* 8015F844 0015B4E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8015F848 0015B4E8  7C 08 03 A6 */	mtlr r0
 /* 8015F84C 0015B4EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015F850 0015B4F0  4E 80 00 20 */	blr 
+/* 8015F850 0015B4F0  4E 80 00 20 */	blr
 
 .global "__dt__23ObjectDataObjDefinitionFv"
 "__dt__23ObjectDataObjDefinitionFv":
@@ -2799,13 +2799,13 @@ lbl_8015F8A4:
 /* 8015F8B0 0015B550  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015F8B4 0015B554  7C 08 03 A6 */	mtlr r0
 /* 8015F8B8 0015B558  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F8BC 0015B55C  4E 80 00 20 */	blr 
+/* 8015F8BC 0015B55C  4E 80 00 20 */	blr
 
 .global "Detach__23ObjectDataObjDefinitionFv"
 "Detach__23ObjectDataObjDefinitionFv":
 /* 8015F8C0 0015B560  38 00 00 00 */	li r0, 0
 /* 8015F8C4 0015B564  98 03 00 1A */	stb r0, 0x1a(r3)
-/* 8015F8C8 0015B568  4E 80 00 20 */	blr 
+/* 8015F8C8 0015B568  4E 80 00 20 */	blr
 
 .global "Reset__23ObjectDataObjDefinitionFv"
 "Reset__23ObjectDataObjDefinitionFv":
@@ -2827,7 +2827,7 @@ lbl_8015F900:
 /* 8015F904 0015B5A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015F908 0015B5A8  7C 08 03 A6 */	mtlr r0
 /* 8015F90C 0015B5AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015F910 0015B5B0  4E 80 00 20 */	blr 
+/* 8015F910 0015B5B0  4E 80 00 20 */	blr
 
 .global "__as__23ObjectDataObjDefinitionFRC13ObjDefinition"
 "__as__23ObjectDataObjDefinitionFRC13ObjDefinition":
@@ -2856,7 +2856,7 @@ lbl_8015F900:
 /* 8015F96C 0015B60C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8015F970 0015B610  7C 08 03 A6 */	mtlr r0
 /* 8015F974 0015B614  38 21 00 60 */	addi r1, r1, 0x60
-/* 8015F978 0015B618  4E 80 00 20 */	blr 
+/* 8015F978 0015B618  4E 80 00 20 */	blr
 
 .global "SetOwnDefinition__23ObjectDataObjDefinitionFP13ObjDefinition"
 "SetOwnDefinition__23ObjectDataObjDefinitionFP13ObjDefinition":
@@ -2887,7 +2887,7 @@ lbl_8015F900:
 /* 8015F9DC 0015B67C  83 C1 00 58 */	lwz r30, 0x58(r1)
 /* 8015F9E0 0015B680  7C 08 03 A6 */	mtlr r0
 /* 8015F9E4 0015B684  38 21 00 60 */	addi r1, r1, 0x60
-/* 8015F9E8 0015B688  4E 80 00 20 */	blr 
+/* 8015F9E8 0015B688  4E 80 00 20 */	blr
 
 .global "GetResourceName__23ObjectDataObjDefinitionCFP12StringBuffer"
 "GetResourceName__23ObjectDataObjDefinitionCFP12StringBuffer":
@@ -2917,13 +2917,13 @@ lbl_8015FA38:
 /* 8015FA40 0015B6E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015FA44 0015B6E4  7C 08 03 A6 */	mtlr r0
 /* 8015FA48 0015B6E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FA4C 0015B6EC  4E 80 00 20 */	blr 
+/* 8015FA4C 0015B6EC  4E 80 00 20 */	blr
 
 .global "GetResourceType__23ObjectDataObjDefinitionCFv"
 "GetResourceType__23ObjectDataObjDefinitionCFv":
 /* 8015FA50 0015B6F0  3C 60 4F 42 */	lis r3, 0x4F424A44@ha
 /* 8015FA54 0015B6F4  38 63 4A 44 */	addi r3, r3, 0x4F424A44@l
-/* 8015FA58 0015B6F8  4E 80 00 20 */	blr 
+/* 8015FA58 0015B6F8  4E 80 00 20 */	blr
 
 .global "LoadFromQDataByID__23ObjectDataObjDefinitionFUis"
 "LoadFromQDataByID__23ObjectDataObjDefinitionFUis":
@@ -2961,7 +2961,7 @@ lbl_8015FA38:
 /* 8015FAD8 0015B778  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8015FADC 0015B77C  7C 08 03 A6 */	mtlr r0
 /* 8015FAE0 0015B780  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015FAE4 0015B784  4E 80 00 20 */	blr 
+/* 8015FAE4 0015B784  4E 80 00 20 */	blr
 
 .global "LoadFromIFFByID__23ObjectDataObjDefinitionFUis"
 "LoadFromIFFByID__23ObjectDataObjDefinitionFUis":
@@ -2986,7 +2986,7 @@ lbl_8015FA38:
 /* 8015FB30 0015B7D0  38 84 4A 44 */	addi r4, r4, 0x4F424A44@l
 /* 8015FB34 0015B7D4  38 C0 00 00 */	li r6, 0
 /* 8015FB38 0015B7D8  7D 89 03 A6 */	mtctr r12
-/* 8015FB3C 0015B7DC  4E 80 04 21 */	bctrl 
+/* 8015FB3C 0015B7DC  4E 80 04 21 */	bctrl
 /* 8015FB40 0015B7E0  2C 03 00 00 */	cmpwi r3, 0
 /* 8015FB44 0015B7E4  7C 7F 1B 78 */	mr r31, r3
 /* 8015FB48 0015B7E8  40 82 00 0C */	bne lbl_8015FB54
@@ -3005,7 +3005,7 @@ lbl_8015FB54:
 /* 8015FB78 0015B818  38 A1 00 10 */	addi r5, r1, 0x10
 /* 8015FB7C 0015B81C  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 8015FB80 0015B820  7D 89 03 A6 */	mtctr r12
-/* 8015FB84 0015B824  4E 80 04 21 */	bctrl 
+/* 8015FB84 0015B824  4E 80 04 21 */	bctrl
 /* 8015FB88 0015B828  38 61 00 10 */	addi r3, r1, 0x10
 /* 8015FB8C 0015B82C  48 00 92 1D */	bl "c_str__12StringBufferCFv"
 /* 8015FB90 0015B830  7C 64 1B 78 */	mr r4, r3
@@ -3019,7 +3019,7 @@ lbl_8015FB54:
 /* 8015FBB0 0015B850  81 9E 00 0C */	lwz r12, 0xc(r30)
 /* 8015FBB4 0015B854  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8015FBB8 0015B858  7D 89 03 A6 */	mtctr r12
-/* 8015FBBC 0015B85C  4E 80 04 21 */	bctrl 
+/* 8015FBBC 0015B85C  4E 80 04 21 */	bctrl
 /* 8015FBC0 0015B860  A8 81 00 08 */	lha r4, 8(r1)
 /* 8015FBC4 0015B864  7F A3 EB 78 */	mr r3, r29
 /* 8015FBC8 0015B868  48 00 02 79 */	bl "SetResID__23ObjectDataObjDefinitionFs"
@@ -3033,7 +3033,7 @@ lbl_8015FBD8:
 /* 8015FBE4 0015B884  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 8015FBE8 0015B888  7C 08 03 A6 */	mtlr r0
 /* 8015FBEC 0015B88C  38 21 00 70 */	addi r1, r1, 0x70
-/* 8015FBF0 0015B890  4E 80 00 20 */	blr 
+/* 8015FBF0 0015B890  4E 80 00 20 */	blr
 
 .global "SaveToIFFFile__23ObjectDataObjDefinitionFUisR12StringBuffer"
 "SaveToIFFFile__23ObjectDataObjDefinitionFUisR12StringBuffer":
@@ -3073,7 +3073,7 @@ lbl_8015FC48:
 /* 8015FC74 0015B914  38 A5 4A 44 */	addi r5, r5, 0x4F424A44@l
 /* 8015FC78 0015B918  39 00 00 00 */	li r8, 0
 /* 8015FC7C 0015B91C  7D 89 03 A6 */	mtctr r12
-/* 8015FC80 0015B920  4E 80 04 21 */	bctrl 
+/* 8015FC80 0015B920  4E 80 04 21 */	bctrl
 /* 8015FC84 0015B924  7F E3 FB 78 */	mr r3, r31
 /* 8015FC88 0015B928  4B F7 7F E9 */	bl "GetError__8iResFileFv"
 /* 8015FC8C 0015B92C  2C 03 00 00 */	cmpwi r3, 0
@@ -3083,14 +3083,14 @@ lbl_8015FC48:
 /* 8015FC9C 0015B93C  7F C4 F3 78 */	mr r4, r30
 /* 8015FCA0 0015B940  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8015FCA4 0015B944  7D 89 03 A6 */	mtctr r12
-/* 8015FCA8 0015B948  4E 80 04 21 */	bctrl 
+/* 8015FCA8 0015B948  4E 80 04 21 */	bctrl
 /* 8015FCAC 0015B94C  7F E3 FB 78 */	mr r3, r31
 /* 8015FCB0 0015B950  4B F7 7F C1 */	bl "GetError__8iResFileFv"
 /* 8015FCB4 0015B954  81 9F 00 0C */	lwz r12, 0xc(r31)
 /* 8015FCB8 0015B958  7F E3 FB 78 */	mr r3, r31
 /* 8015FCBC 0015B95C  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 8015FCC0 0015B960  7D 89 03 A6 */	mtctr r12
-/* 8015FCC4 0015B964  4E 80 04 21 */	bctrl 
+/* 8015FCC4 0015B964  4E 80 04 21 */	bctrl
 lbl_8015FCC8:
 /* 8015FCC8 0015B968  7F C3 F3 78 */	mr r3, r30
 /* 8015FCCC 0015B96C  4B F7 73 45 */	bl "HUnlock__6MemoryFPQ26Memory10HandleNode"
@@ -3101,17 +3101,17 @@ lbl_8015FCD4:
 /* 8015FCDC 0015B97C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8015FCE0 0015B980  7C 08 03 A6 */	mtlr r0
 /* 8015FCE4 0015B984  38 21 00 20 */	addi r1, r1, 0x20
-/* 8015FCE8 0015B988  4E 80 00 20 */	blr 
+/* 8015FCE8 0015B988  4E 80 00 20 */	blr
 
 .global "LoadFromDBByID__23ObjectDataObjDefinitionFUis"
 "LoadFromDBByID__23ObjectDataObjDefinitionFUis":
 /* 8015FCEC 0015B98C  38 60 00 00 */	li r3, 0
-/* 8015FCF0 0015B990  4E 80 00 20 */	blr 
+/* 8015FCF0 0015B990  4E 80 00 20 */	blr
 
 .global "SaveToDB__23ObjectDataObjDefinitionFUisR12StringBuffer"
 "SaveToDB__23ObjectDataObjDefinitionFUisR12StringBuffer":
 /* 8015FCF4 0015B994  38 60 00 00 */	li r3, 0
-/* 8015FCF8 0015B998  4E 80 00 20 */	blr 
+/* 8015FCF8 0015B998  4E 80 00 20 */	blr
 
 .global "QueryInterface__23ObjectDataObjDefinitionFUiPPv"
 "QueryInterface__23ObjectDataObjDefinitionFUiPPv":
@@ -3139,7 +3139,7 @@ lbl_8015FD48:
 /* 8015FD48 0015B9E8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015FD4C 0015B9EC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015FD50 0015B9F0  7D 89 03 A6 */	mtctr r12
-/* 8015FD54 0015B9F4  4E 80 04 21 */	bctrl 
+/* 8015FD54 0015B9F4  4E 80 04 21 */	bctrl
 /* 8015FD58 0015B9F8  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015FD5C 0015B9FC  38 60 00 01 */	li r3, 1
 /* 8015FD60 0015BA00  48 00 00 24 */	b lbl_8015FD84
@@ -3147,7 +3147,7 @@ lbl_8015FD64:
 /* 8015FD64 0015BA04  81 83 00 00 */	lwz r12, 0(r3)
 /* 8015FD68 0015BA08  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8015FD6C 0015BA0C  7D 89 03 A6 */	mtctr r12
-/* 8015FD70 0015BA10  4E 80 04 21 */	bctrl 
+/* 8015FD70 0015BA10  4E 80 04 21 */	bctrl
 /* 8015FD74 0015BA14  93 DF 00 00 */	stw r30, 0(r31)
 /* 8015FD78 0015BA18  38 60 00 01 */	li r3, 1
 /* 8015FD7C 0015BA1C  48 00 00 08 */	b lbl_8015FD84
@@ -3159,7 +3159,7 @@ lbl_8015FD84:
 /* 8015FD8C 0015BA2C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015FD90 0015BA30  7C 08 03 A6 */	mtlr r0
 /* 8015FD94 0015BA34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FD98 0015BA38  4E 80 00 20 */	blr 
+/* 8015FD98 0015BA38  4E 80 00 20 */	blr
 
 .global "AddRef__23ObjectDataObjDefinitionFv"
 "AddRef__23ObjectDataObjDefinitionFv":
@@ -3167,7 +3167,7 @@ lbl_8015FD84:
 /* 8015FDA0 0015BA40  38 04 00 01 */	addi r0, r4, 1
 /* 8015FDA4 0015BA44  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8015FDA8 0015BA48  7C 03 03 78 */	mr r3, r0
-/* 8015FDAC 0015BA4C  4E 80 00 20 */	blr 
+/* 8015FDAC 0015BA4C  4E 80 00 20 */	blr
 
 .global "Release__23ObjectDataObjDefinitionFv"
 "Release__23ObjectDataObjDefinitionFv":
@@ -3187,14 +3187,14 @@ lbl_8015FDD4:
 /* 8015FDE0 0015BA80  38 80 00 01 */	li r4, 1
 /* 8015FDE4 0015BA84  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 8015FDE8 0015BA88  7D 89 03 A6 */	mtctr r12
-/* 8015FDEC 0015BA8C  4E 80 04 21 */	bctrl 
+/* 8015FDEC 0015BA8C  4E 80 04 21 */	bctrl
 lbl_8015FDF0:
 /* 8015FDF0 0015BA90  38 60 00 00 */	li r3, 0
 lbl_8015FDF4:
 /* 8015FDF4 0015BA94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015FDF8 0015BA98  7C 08 03 A6 */	mtlr r0
 /* 8015FDFC 0015BA9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FE00 0015BAA0  4E 80 00 20 */	blr 
+/* 8015FE00 0015BAA0  4E 80 00 20 */	blr
 
 .global "SetResourceName__23ObjectDataObjDefinitionFP12StringBuffer"
 "SetResourceName__23ObjectDataObjDefinitionFP12StringBuffer":
@@ -3212,12 +3212,12 @@ lbl_8015FDF4:
 /* 8015FE30 0015BAD0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015FE34 0015BAD4  7C 08 03 A6 */	mtlr r0
 /* 8015FE38 0015BAD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FE3C 0015BADC  4E 80 00 20 */	blr 
+/* 8015FE3C 0015BADC  4E 80 00 20 */	blr
 
 .global "SetResID__23ObjectDataObjDefinitionFs"
 "SetResID__23ObjectDataObjDefinitionFs":
 /* 8015FE40 0015BAE0  B0 83 00 18 */	sth r4, 0x18(r3)
-/* 8015FE44 0015BAE4  4E 80 00 20 */	blr 
+/* 8015FE44 0015BAE4  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl34basic_string<c,Q25eastl9allocator>Fv"
 "__dt__Q25eastl34basic_string<c,Q25eastl9allocator>Fv":
@@ -3242,7 +3242,7 @@ lbl_8015FE80:
 /* 8015FE8C 0015BB2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015FE90 0015BB30  7C 08 03 A6 */	mtlr r0
 /* 8015FE94 0015BB34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FE98 0015BB38  4E 80 00 20 */	blr 
+/* 8015FE98 0015BB38  4E 80 00 20 */	blr
 
 .global "DeallocateSelf__Q25eastl34basic_string<c,Q25eastl9allocator>Fv"
 "DeallocateSelf__Q25eastl34basic_string<c,Q25eastl9allocator>Fv":
@@ -3250,17 +3250,17 @@ lbl_8015FE80:
 /* 8015FEA0 0015BB40  80 03 00 08 */	lwz r0, 8(r3)
 /* 8015FEA4 0015BB44  7C A4 00 50 */	subf r5, r4, r0
 /* 8015FEA8 0015BB48  2C 05 00 01 */	cmpwi r5, 1
-/* 8015FEAC 0015BB4C  4C 81 00 20 */	blelr 
+/* 8015FEAC 0015BB4C  4C 81 00 20 */	blelr
 /* 8015FEB0 0015BB50  48 00 00 08 */	b "DoFree__Q25eastl34basic_string<c,Q25eastl9allocator>FPcUl"
-/* 8015FEB4 0015BB54  4E 80 00 20 */	blr 
+/* 8015FEB4 0015BB54  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl34basic_string<c,Q25eastl9allocator>FPcUl"
 "DoFree__Q25eastl34basic_string<c,Q25eastl9allocator>FPcUl":
 /* 8015FEB8 0015BB58  2C 04 00 00 */	cmpwi r4, 0
-/* 8015FEBC 0015BB5C  4D 82 00 20 */	beqlr 
+/* 8015FEBC 0015BB5C  4D 82 00 20 */	beqlr
 /* 8015FEC0 0015BB60  38 63 00 0C */	addi r3, r3, 0xc
 /* 8015FEC4 0015BB64  4B EB 82 60 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8015FEC8 0015BB68  4E 80 00 20 */	blr 
+/* 8015FEC8 0015BB68  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl34basic_string<c,Q25eastl9allocator>FPCc"
 "__as__Q25eastl34basic_string<c,Q25eastl9allocator>FPCc":
@@ -3283,7 +3283,7 @@ lbl_8015FE80:
 /* 8015FF0C 0015BBAC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8015FF10 0015BBB0  7C 08 03 A6 */	mtlr r0
 /* 8015FF14 0015BBB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FF18 0015BBB8  4E 80 00 20 */	blr 
+/* 8015FF18 0015BBB8  4E 80 00 20 */	blr
 
 .global "CharStrlen__5eastlFPCc"
 "CharStrlen__5eastlFPCc":
@@ -3296,7 +3296,7 @@ lbl_8015FF28:
 /* 8015FF2C 0015BBCC  7C 00 07 75 */	extsb. r0, r0
 /* 8015FF30 0015BBD0  40 82 FF F4 */	bne lbl_8015FF24
 /* 8015FF34 0015BBD4  7C 63 20 50 */	subf r3, r3, r4
-/* 8015FF38 0015BBD8  4E 80 00 20 */	blr 
+/* 8015FF38 0015BBD8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl34basic_string<c,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl34basic_string<c,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -3318,7 +3318,7 @@ lbl_8015FF28:
 /* 8015FF78 0015BC18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015FF7C 0015BC1C  7C 08 03 A6 */	mtlr r0
 /* 8015FF80 0015BC20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8015FF84 0015BC24  4E 80 00 20 */	blr 
+/* 8015FF84 0015BC24  4E 80 00 20 */	blr
 
 .global "AllocateSelf__Q25eastl34basic_string<c,Q25eastl9allocator>Fv"
 "AllocateSelf__Q25eastl34basic_string<c,Q25eastl9allocator>Fv":
@@ -3327,19 +3327,19 @@ lbl_8015FF28:
 /* 8015FF90 0015BC30  90 83 00 00 */	stw r4, 0(r3)
 /* 8015FF94 0015BC34  90 83 00 04 */	stw r4, 4(r3)
 /* 8015FF98 0015BC38  90 03 00 08 */	stw r0, 8(r3)
-/* 8015FF9C 0015BC3C  4E 80 00 20 */	blr 
+/* 8015FF9C 0015BC3C  4E 80 00 20 */	blr
 
 .global "c_str__Q25eastl34basic_string<c,Q25eastl9allocator>CFv"
 "c_str__Q25eastl34basic_string<c,Q25eastl9allocator>CFv":
 /* 8015FFA0 0015BC40  80 63 00 00 */	lwz r3, 0(r3)
-/* 8015FFA4 0015BC44  4E 80 00 20 */	blr 
+/* 8015FFA4 0015BC44  4E 80 00 20 */	blr
 
 .global "length__Q25eastl34basic_string<c,Q25eastl9allocator>CFv"
 "length__Q25eastl34basic_string<c,Q25eastl9allocator>CFv":
 /* 8015FFA8 0015BC48  80 83 00 00 */	lwz r4, 0(r3)
 /* 8015FFAC 0015BC4C  80 03 00 04 */	lwz r0, 4(r3)
 /* 8015FFB0 0015BC50  7C 64 00 50 */	subf r3, r4, r0
-/* 8015FFB4 0015BC54  4E 80 00 20 */	blr 
+/* 8015FFB4 0015BC54  4E 80 00 20 */	blr
 
 .global "assign__Q25eastl34basic_string<c,Q25eastl9allocator>FPCcPCc"
 "assign__Q25eastl34basic_string<c,Q25eastl9allocator>FPCcPCc":
@@ -3387,7 +3387,7 @@ lbl_80160040:
 /* 80160054 0015BCF4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80160058 0015BCF8  7C 08 03 A6 */	mtlr r0
 /* 8016005C 0015BCFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80160060 0015BD00  4E 80 00 20 */	blr 
+/* 80160060 0015BD00  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl34basic_string<c,Q25eastl9allocator>FPcPc"
 "erase__Q25eastl34basic_string<c,Q25eastl9allocator>FPcPc":
@@ -3420,7 +3420,7 @@ lbl_801600B8:
 /* 801600C8 0015BD68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801600CC 0015BD6C  7C 08 03 A6 */	mtlr r0
 /* 801600D0 0015BD70  38 21 00 20 */	addi r1, r1, 0x20
-/* 801600D4 0015BD74  4E 80 00 20 */	blr 
+/* 801600D4 0015BD74  4E 80 00 20 */	blr
 
 .global "append__Q25eastl34basic_string<c,Q25eastl9allocator>FPCcPCc"
 "append__Q25eastl34basic_string<c,Q25eastl9allocator>FPCcPCc":
@@ -3496,7 +3496,7 @@ lbl_801601D8:
 /* 801601E4 0015BE84  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801601E8 0015BE88  7C 08 03 A6 */	mtlr r0
 /* 801601EC 0015BE8C  38 21 00 30 */	addi r1, r1, 0x30
-/* 801601F0 0015BE90  4E 80 00 20 */	blr 
+/* 801601F0 0015BE90  4E 80 00 20 */	blr
 
 .global "CharStringUninitializedCopy<c>__5eastlFPCcPCcPc_Pc"
 "CharStringUninitializedCopy<c>__5eastlFPCcPCcPc_Pc":
@@ -3518,7 +3518,7 @@ lbl_801601D8:
 /* 80160230 0015BED0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160234 0015BED4  7C 08 03 A6 */	mtlr r0
 /* 80160238 0015BED8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016023C 0015BEDC  4E 80 00 20 */	blr 
+/* 8016023C 0015BEDC  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl34basic_string<c,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl34basic_string<c,Q25eastl9allocator>FUl":
@@ -3530,9 +3530,9 @@ lbl_801601D8:
 "GetNewCapacity__Q25eastl34basic_string<c,Q25eastl9allocator>FUl":
 /* 8016024C 0015BEEC  28 04 00 08 */	cmplwi r4, 8
 /* 80160250 0015BEF0  38 60 00 08 */	li r3, 8
-/* 80160254 0015BEF4  4C 81 00 20 */	blelr 
+/* 80160254 0015BEF4  4C 81 00 20 */	blelr
 /* 80160258 0015BEF8  54 83 08 3C */	slwi r3, r4, 1
-/* 8016025C 0015BEFC  4E 80 00 20 */	blr 
+/* 8016025C 0015BEFC  4E 80 00 20 */	blr
 
 .global "__ct__19ObjectDataInterfaceFv"
 "__ct__19ObjectDataInterfaceFv":
@@ -3550,7 +3550,7 @@ lbl_801601D8:
 /* 8016028C 0015BF2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160290 0015BF30  7C 08 03 A6 */	mtlr r0
 /* 80160294 0015BF34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160298 0015BF38  4E 80 00 20 */	blr 
+/* 80160298 0015BF38  4E 80 00 20 */	blr
 
 .global "GetSmartDataFactory__Fv"
 "GetSmartDataFactory__Fv":
@@ -3572,7 +3572,7 @@ lbl_801602CC:
 /* 801602D0 0015BF70  80 6D B6 78 */	lwz r3, "gpSmartDataFactoryInstance"-_SDA_BASE_(r13)
 /* 801602D4 0015BF74  7C 08 03 A6 */	mtlr r0
 /* 801602D8 0015BF78  38 21 00 10 */	addi r1, r1, 0x10
-/* 801602DC 0015BF7C  4E 80 00 20 */	blr 
+/* 801602DC 0015BF7C  4E 80 00 20 */	blr
 
 .global "__ct__16SmartDataFactoryFv"
 "__ct__16SmartDataFactoryFv":
@@ -3599,7 +3599,7 @@ lbl_801602CC:
 /* 80160330 0015BFD0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80160334 0015BFD4  7C 08 03 A6 */	mtlr r0
 /* 80160338 0015BFD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016033C 0015BFDC  4E 80 00 20 */	blr 
+/* 8016033C 0015BFDC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl144map<Q25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl144map<Q25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator>Fv":
@@ -3625,7 +3625,7 @@ lbl_8016037C:
 /* 80160388 0015C028  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016038C 0015C02C  7C 08 03 A6 */	mtlr r0
 /* 80160390 0015C030  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160394 0015C034  4E 80 00 20 */	blr 
+/* 80160394 0015C034  4E 80 00 20 */	blr
 
 .global "__dt__16SmartDataFactoryFv"
 "__dt__16SmartDataFactoryFv":
@@ -3652,7 +3652,7 @@ lbl_801603D8:
 /* 801603E4 0015C084  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801603E8 0015C088  7C 08 03 A6 */	mtlr r0
 /* 801603EC 0015C08C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801603F0 0015C090  4E 80 00 20 */	blr 
+/* 801603F0 0015C090  4E 80 00 20 */	blr
 
 .global "QueryInterface__16SmartDataFactoryFUiPPv"
 "QueryInterface__16SmartDataFactoryFUiPPv":
@@ -3680,7 +3680,7 @@ lbl_80160440:
 /* 80160440 0015C0E0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80160444 0015C0E4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80160448 0015C0E8  7D 89 03 A6 */	mtctr r12
-/* 8016044C 0015C0EC  4E 80 04 21 */	bctrl 
+/* 8016044C 0015C0EC  4E 80 04 21 */	bctrl
 /* 80160450 0015C0F0  93 DF 00 00 */	stw r30, 0(r31)
 /* 80160454 0015C0F4  38 60 00 01 */	li r3, 1
 /* 80160458 0015C0F8  48 00 00 24 */	b lbl_8016047C
@@ -3688,7 +3688,7 @@ lbl_8016045C:
 /* 8016045C 0015C0FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80160460 0015C100  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80160464 0015C104  7D 89 03 A6 */	mtctr r12
-/* 80160468 0015C108  4E 80 04 21 */	bctrl 
+/* 80160468 0015C108  4E 80 04 21 */	bctrl
 /* 8016046C 0015C10C  93 DF 00 00 */	stw r30, 0(r31)
 /* 80160470 0015C110  38 60 00 01 */	li r3, 1
 /* 80160474 0015C114  48 00 00 08 */	b lbl_8016047C
@@ -3700,7 +3700,7 @@ lbl_8016047C:
 /* 80160484 0015C124  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80160488 0015C128  7C 08 03 A6 */	mtlr r0
 /* 8016048C 0015C12C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160490 0015C130  4E 80 00 20 */	blr 
+/* 80160490 0015C130  4E 80 00 20 */	blr
 
 .global "AddRef__16SmartDataFactoryFv"
 "AddRef__16SmartDataFactoryFv":
@@ -3708,7 +3708,7 @@ lbl_8016047C:
 /* 80160498 0015C138  38 04 00 01 */	addi r0, r4, 1
 /* 8016049C 0015C13C  90 03 00 20 */	stw r0, 0x20(r3)
 /* 801604A0 0015C140  7C 03 03 78 */	mr r3, r0
-/* 801604A4 0015C144  4E 80 00 20 */	blr 
+/* 801604A4 0015C144  4E 80 00 20 */	blr
 
 .global "Release__16SmartDataFactoryFv"
 "Release__16SmartDataFactoryFv":
@@ -3728,14 +3728,14 @@ lbl_801604CC:
 /* 801604D8 0015C178  38 80 00 01 */	li r4, 1
 /* 801604DC 0015C17C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 801604E0 0015C180  7D 89 03 A6 */	mtctr r12
-/* 801604E4 0015C184  4E 80 04 21 */	bctrl 
+/* 801604E4 0015C184  4E 80 04 21 */	bctrl
 lbl_801604E8:
 /* 801604E8 0015C188  38 60 00 00 */	li r3, 0
 lbl_801604EC:
 /* 801604EC 0015C18C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801604F0 0015C190  7C 08 03 A6 */	mtlr r0
 /* 801604F4 0015C194  38 21 00 10 */	addi r1, r1, 0x10
-/* 801604F8 0015C198  4E 80 00 20 */	blr 
+/* 801604F8 0015C198  4E 80 00 20 */	blr
 
 .global "GetDataProvider__16SmartDataFactoryCFUiRC12ObjectDataID"
 "GetDataProvider__16SmartDataFactoryCFUiRC12ObjectDataID":
@@ -3799,7 +3799,7 @@ lbl_801605C8:
 /* 801605D0 0015C270  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 801605D4 0015C274  7C 08 03 A6 */	mtlr r0
 /* 801605D8 0015C278  38 21 00 40 */	addi r1, r1, 0x40
-/* 801605DC 0015C27C  4E 80 00 20 */	blr 
+/* 801605DC 0015C27C  4E 80 00 20 */	blr
 
 .global "SetDataProvider__16SmartDataFactoryFUiRC12ObjectDataIDQ217ISmartDataFactory13tDataProvider"
 "SetDataProvider__16SmartDataFactoryFUiRC12ObjectDataIDQ217ISmartDataFactory13tDataProvider":
@@ -3849,7 +3849,7 @@ lbl_80160680:
 /* 80160684 0015C324  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 80160688 0015C328  7C 08 03 A6 */	mtlr r0
 /* 8016068C 0015C32C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80160690 0015C330  4E 80 00 20 */	blr 
+/* 80160690 0015C330  4E 80 00 20 */	blr
 
 .global "CreateObject__16SmartDataFactoryFUiUiPPv"
 "CreateObject__16SmartDataFactoryFUiUiPPv":
@@ -3873,14 +3873,14 @@ lbl_80160680:
 /* 801606D8 0015C378  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801606DC 0015C37C  7F E6 FB 78 */	mr r6, r31
 /* 801606E0 0015C380  7D 89 03 A6 */	mtctr r12
-/* 801606E4 0015C384  4E 80 04 21 */	bctrl 
+/* 801606E4 0015C384  4E 80 04 21 */	bctrl
 /* 801606E8 0015C388  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801606EC 0015C38C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801606F0 0015C390  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 801606F4 0015C394  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801606F8 0015C398  7C 08 03 A6 */	mtlr r0
 /* 801606FC 0015C39C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80160700 0015C3A0  4E 80 00 20 */	blr 
+/* 80160700 0015C3A0  4E 80 00 20 */	blr
 
 .global "CreateObject__16SmartDataFactoryFUiRC12ObjectDataIDPPv"
 "CreateObject__16SmartDataFactoryFUiRC12ObjectDataIDPPv":
@@ -3929,7 +3929,7 @@ lbl_8016078C:
 /* 80160798 0015C438  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8016079C 0015C43C  7C 08 03 A6 */	mtlr r0
 /* 801607A0 0015C440  38 21 00 20 */	addi r1, r1, 0x20
-/* 801607A4 0015C444  4E 80 00 20 */	blr 
+/* 801607A4 0015C444  4E 80 00 20 */	blr
 
 .global "CreateObjectFromProvider__16SmartDataFactoryFUiQ217ISmartDataFactory13tDataProviderPPv"
 "CreateObjectFromProvider__16SmartDataFactoryFUiQ217ISmartDataFactory13tDataProviderPPv":
@@ -4317,7 +4317,7 @@ lbl_80160CBC:
 /* 80160CCC 0015C96C  7F E5 FB 78 */	mr r5, r31
 /* 80160CD0 0015C970  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80160CD4 0015C974  7D 89 03 A6 */	mtctr r12
-/* 80160CD8 0015C978  4E 80 04 21 */	bctrl 
+/* 80160CD8 0015C978  4E 80 04 21 */	bctrl
 /* 80160CDC 0015C97C  7C 7D 1B 78 */	mr r29, r3
 /* 80160CE0 0015C980  38 61 00 38 */	addi r3, r1, 0x38
 /* 80160CE4 0015C984  38 80 FF FF */	li r4, -1
@@ -4330,7 +4330,7 @@ lbl_80160CF0:
 /* 80160CFC 0015C99C  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 80160D00 0015C9A0  7C 08 03 A6 */	mtlr r0
 /* 80160D04 0015C9A4  38 21 00 50 */	addi r1, r1, 0x50
-/* 80160D08 0015C9A8  4E 80 00 20 */	blr 
+/* 80160D08 0015C9A8  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv"
 "__dt__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv":
@@ -4356,7 +4356,7 @@ lbl_80160D48:
 /* 80160D54 0015C9F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160D58 0015C9F8  7C 08 03 A6 */	mtlr r0
 /* 80160D5C 0015C9FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160D60 0015CA00  4E 80 00 20 */	blr 
+/* 80160D60 0015CA00  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl9allocator"
 "__ct__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl9allocator":
@@ -4381,7 +4381,7 @@ lbl_80160D48:
 /* 80160DAC 0015CA4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160DB0 0015CA50  7C 08 03 A6 */	mtlr r0
 /* 80160DB4 0015CA54  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160DB8 0015CA58  4E 80 00 20 */	blr 
+/* 80160DB8 0015CA58  4E 80 00 20 */	blr
 
 .global "reset__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv"
 "reset__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv":
@@ -4392,11 +4392,11 @@ lbl_80160D48:
 /* 80160DCC 0015CA6C  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80160DD0 0015CA70  98 03 00 10 */	stb r0, 0x10(r3)
 /* 80160DD4 0015CA74  90 03 00 14 */	stw r0, 0x14(r3)
-/* 80160DD8 0015CA78  4E 80 00 20 */	blr 
+/* 80160DD8 0015CA78  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl614rb_base<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>>Fv"
 "__ct__Q25eastl614rb_base<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>>Fv":
-/* 80160DDC 0015CA7C  4E 80 00 20 */	blr 
+/* 80160DDC 0015CA7C  4E 80 00 20 */	blr
 
 .global "__ct__17ISmartDataFactoryFv"
 "__ct__17ISmartDataFactoryFv":
@@ -4414,7 +4414,7 @@ lbl_80160D48:
 /* 80160E0C 0015CAAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160E10 0015CAB0  7C 08 03 A6 */	mtlr r0
 /* 80160E14 0015CAB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160E18 0015CAB8  4E 80 00 20 */	blr 
+/* 80160E18 0015CAB8  4E 80 00 20 */	blr
 
 .global "__eq<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>__5eastlFRCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>_b"
 "__eq<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>__5eastlFRCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>_b":
@@ -4423,7 +4423,7 @@ lbl_80160D48:
 /* 80160E24 0015CAC4  7C 03 00 50 */	subf r0, r3, r0
 /* 80160E28 0015CAC8  7C 00 00 34 */	cntlzw r0, r0
 /* 80160E2C 0015CACC  54 03 D9 7E */	srwi r3, r0, 5
-/* 80160E30 0015CAD0  4E 80 00 20 */	blr 
+/* 80160E30 0015CAD0  4E 80 00 20 */	blr
 
 .global "end__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>CFv"
 "end__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>CFv":
@@ -4438,13 +4438,13 @@ lbl_80160D48:
 /* 80160E54 0015CAF4  80 63 00 00 */	lwz r3, 0(r3)
 /* 80160E58 0015CAF8  7C 08 03 A6 */	mtlr r0
 /* 80160E5C 0015CAFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160E60 0015CB00  4E 80 00 20 */	blr 
+/* 80160E60 0015CB00  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 80160E64 0015CB04  80 04 00 00 */	lwz r0, 0(r4)
 /* 80160E68 0015CB08  90 03 00 00 */	stw r0, 0(r3)
-/* 80160E6C 0015CB0C  4E 80 00 20 */	blr 
+/* 80160E6C 0015CB0C  4E 80 00 20 */	blr
 
 .global "find__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>CFRCQ25eastl23pair<Ui,12ObjectDataID>"
 "find__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>CFRCQ25eastl23pair<Ui,12ObjectDataID>":
@@ -4462,7 +4462,7 @@ lbl_80160D48:
 /* 80160E9C 0015CB3C  80 63 00 00 */	lwz r3, 0(r3)
 /* 80160EA0 0015CB40  7C 08 03 A6 */	mtlr r0
 /* 80160EA4 0015CB44  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160EA8 0015CB48  4E 80 00 20 */	blr 
+/* 80160EA8 0015CB48  4E 80 00 20 */	blr
 
 .global "rbinsert__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>"
 "rbinsert__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>":
@@ -4476,7 +4476,7 @@ lbl_80160D48:
 /* 80160EC8 0015CB68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80160ECC 0015CB6C  7C 08 03 A6 */	mtlr r0
 /* 80160ED0 0015CB70  38 21 00 10 */	addi r1, r1, 0x10
-/* 80160ED4 0015CB74  4E 80 00 20 */	blr 
+/* 80160ED4 0015CB74  4E 80 00 20 */	blr
 
 .global "__eq<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>__5eastlFRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>_b"
 "__eq<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>__5eastlFRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>_b":
@@ -4485,7 +4485,7 @@ lbl_80160D48:
 /* 80160EE0 0015CB80  7C 03 00 50 */	subf r0, r3, r0
 /* 80160EE4 0015CB84  7C 00 00 34 */	cntlzw r0, r0
 /* 80160EE8 0015CB88  54 03 D9 7E */	srwi r3, r0, 5
-/* 80160EEC 0015CB8C  4E 80 00 20 */	blr 
+/* 80160EEC 0015CB8C  4E 80 00 20 */	blr
 
 .global "end__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv"
 "end__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv":
@@ -4496,41 +4496,41 @@ lbl_80160D48:
 "__as__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 80160EF8 0015CB98  80 04 00 00 */	lwz r0, 0(r4)
 /* 80160EFC 0015CB9C  90 03 00 00 */	stw r0, 0(r3)
-/* 80160F00 0015CBA0  4E 80 00 20 */	blr 
+/* 80160F00 0015CBA0  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFv"
 "__ml__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFv":
 /* 80160F04 0015CBA4  80 63 00 00 */	lwz r3, 0(r3)
 /* 80160F08 0015CBA8  38 63 00 10 */	addi r3, r3, 0x10
-/* 80160F0C 0015CBAC  4E 80 00 20 */	blr 
+/* 80160F0C 0015CBAC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FPCQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FPCQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 80160F10 0015CBB0  90 83 00 00 */	stw r4, 0(r3)
-/* 80160F14 0015CBB4  4E 80 00 20 */	blr 
+/* 80160F14 0015CBB4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>Fv"
 "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>Fv":
 /* 80160F18 0015CBB8  38 00 00 00 */	li r0, 0
 /* 80160F1C 0015CBBC  90 03 00 00 */	stw r0, 0(r3)
-/* 80160F20 0015CBC0  4E 80 00 20 */	blr 
+/* 80160F20 0015CBC0  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFv"
 "__ml__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFv":
 /* 80160F24 0015CBC4  80 63 00 00 */	lwz r3, 0(r3)
 /* 80160F28 0015CBC8  38 63 00 10 */	addi r3, r3, 0x10
-/* 80160F2C 0015CBCC  4E 80 00 20 */	blr 
+/* 80160F2C 0015CBCC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 80160F30 0015CBD0  80 04 00 00 */	lwz r0, 0(r4)
 /* 80160F34 0015CBD4  90 03 00 00 */	stw r0, 0(r3)
-/* 80160F38 0015CBD8  4E 80 00 20 */	blr 
+/* 80160F38 0015CBD8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FPCQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "__ct__Q25eastl284rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FPCQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 80160F3C 0015CBDC  90 83 00 00 */	stw r4, 0(r3)
-/* 80160F40 0015CBE0  4E 80 00 20 */	blr 
+/* 80160F40 0015CBE0  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>Q25eastl22integral_constant<b,1>"
 "DoInsertValue__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>Q25eastl22integral_constant<b,1>":
@@ -4629,7 +4629,7 @@ lbl_80161090:
 /* 80161098 0015CD38  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8016109C 0015CD3C  7C 08 03 A6 */	mtlr r0
 /* 801610A0 0015CD40  38 21 00 30 */	addi r1, r1, 0x30
-/* 801610A4 0015CD44  4E 80 00 20 */	blr 
+/* 801610A4 0015CD44  4E 80 00 20 */	blr
 
 .global "DoNukeSubtree__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "DoNukeSubtree__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
@@ -4660,7 +4660,7 @@ lbl_801610EC:
 /* 80161100 0015CDA0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80161104 0015CDA4  7C 08 03 A6 */	mtlr r0
 /* 80161108 0015CDA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8016110C 0015CDAC  4E 80 00 20 */	blr 
+/* 8016110C 0015CDAC  4E 80 00 20 */	blr
 
 .global "DoFreeNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "DoFreeNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
@@ -4725,7 +4725,7 @@ lbl_801611D0:
 /* 801611D8 0015CE78  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801611DC 0015CE7C  7C 08 03 A6 */	mtlr r0
 /* 801611E0 0015CE80  38 21 00 30 */	addi r1, r1, 0x30
-/* 801611E4 0015CE84  4E 80 00 20 */	blr 
+/* 801611E4 0015CE84  4E 80 00 20 */	blr
 
 .global "DoInsertValueImpl__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>b"
 "DoInsertValueImpl__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FPQ25eastl100rbtree_node<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>b":
@@ -4781,13 +4781,13 @@ lbl_80161260:
 /* 801612A0 0015CF40  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801612A4 0015CF44  7C 08 03 A6 */	mtlr r0
 /* 801612A8 0015CF48  38 21 00 30 */	addi r1, r1, 0x30
-/* 801612AC 0015CF4C  4E 80 00 20 */	blr 
+/* 801612AC 0015CF4C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>"
 "__ct__Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>":
 /* 801612B0 0015CF50  80 04 00 00 */	lwz r0, 0(r4)
 /* 801612B4 0015CF54  90 03 00 00 */	stw r0, 0(r3)
-/* 801612B8 0015CF58  4E 80 00 20 */	blr 
+/* 801612B8 0015CF58  4E 80 00 20 */	blr
 
 .global "DoCreateNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>"
 "DoCreateNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>":
@@ -4813,7 +4813,7 @@ lbl_801612F8:
 /* 80161304 0015CFA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161308 0015CFA8  7C 08 03 A6 */	mtlr r0
 /* 8016130C 0015CFAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161310 0015CFB0  4E 80 00 20 */	blr 
+/* 80161310 0015CFB0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>"
 "__ct__Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>":
@@ -4833,7 +4833,7 @@ lbl_801612F8:
 /* 80161348 0015CFE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016134C 0015CFEC  7C 08 03 A6 */	mtlr r0
 /* 80161350 0015CFF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161354 0015CFF4  4E 80 00 20 */	blr 
+/* 80161354 0015CFF4  4E 80 00 20 */	blr
 
 .global "DoAllocateNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv"
 "DoAllocateNode__Q25eastl311rbtree<Q25eastl23pair<Ui,12ObjectDataID>,Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator,Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,1,1>Fv":
@@ -4856,7 +4856,7 @@ lbl_801612F8:
 /* 8016138C 0015D02C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161390 0015D030  7C 08 03 A6 */	mtlr r0
 /* 80161394 0015D034  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161398 0015D038  4E 80 00 20 */	blr 
+/* 80161398 0015D038  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl144map<Q25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>"
 "insert__Q25eastl144map<Q25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider,Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>,Q25eastl9allocator>FRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>":
@@ -4879,7 +4879,7 @@ lbl_801612F8:
 /* 801613D0 0015D070  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801613D4 0015D074  7C 08 03 A6 */	mtlr r0
 /* 801613D8 0015D078  38 21 00 10 */	addi r1, r1, 0x10
-/* 801613DC 0015D07C  4E 80 00 20 */	blr 
+/* 801613DC 0015D07C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>FRCQ25eastl23pair<Ui,12ObjectDataID>RCQ217ISmartDataFactory13tDataProvider"
 "__ct__Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>FRCQ25eastl23pair<Ui,12ObjectDataID>RCQ217ISmartDataFactory13tDataProvider":
@@ -4899,7 +4899,7 @@ lbl_801612F8:
 /* 80161414 0015D0B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161418 0015D0B8  7C 08 03 A6 */	mtlr r0
 /* 8016141C 0015D0BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161420 0015D0C0  4E 80 00 20 */	blr 
+/* 80161420 0015D0C0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl23pair<Ui,12ObjectDataID>FRCQ25eastl23pair<Ui,12ObjectDataID>"
 "__ct__Q25eastl23pair<Ui,12ObjectDataID>FRCQ25eastl23pair<Ui,12ObjectDataID>":
@@ -4918,7 +4918,7 @@ lbl_801612F8:
 /* 80161454 0015D0F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161458 0015D0F8  7C 08 03 A6 */	mtlr r0
 /* 8016145C 0015D0FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161460 0015D100  4E 80 00 20 */	blr 
+/* 80161460 0015D100  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl301pair<Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,b>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCb"
 "__ct__Q25eastl301pair<Q25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>,b>FRCQ25eastl282rbtree_iterator<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,PQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>,RQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>RCb":
@@ -4938,7 +4938,7 @@ lbl_801612F8:
 /* 80161498 0015D138  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016149C 0015D13C  7C 08 03 A6 */	mtlr r0
 /* 801614A0 0015D140  38 21 00 10 */	addi r1, r1, 0x10
-/* 801614A4 0015D144  4E 80 00 20 */	blr 
+/* 801614A4 0015D144  4E 80 00 20 */	blr
 
 .global "__lt<Ui,12ObjectDataID>__5eastlFRCQ25eastl23pair<Ui,12ObjectDataID>RCQ25eastl23pair<Ui,12ObjectDataID>_b"
 "__lt<Ui,12ObjectDataID>__5eastlFRCQ25eastl23pair<Ui,12ObjectDataID>RCQ25eastl23pair<Ui,12ObjectDataID>_b":
@@ -4972,17 +4972,17 @@ lbl_80161500:
 /* 8016150C 0015D1AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161510 0015D1B0  7C 08 03 A6 */	mtlr r0
 /* 80161514 0015D1B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161518 0015D1B8  4E 80 00 20 */	blr 
+/* 80161518 0015D1B8  4E 80 00 20 */	blr
 
 .global "__cl__Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>"
 "__cl__Q25eastl98use_first<Q25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>>CFRCQ25eastl77pair<CQ25eastl23pair<Ui,12ObjectDataID>,Q217ISmartDataFactory13tDataProvider>":
 /* 8016151C 0015D1BC  7C 83 23 78 */	mr r3, r4
-/* 80161520 0015D1C0  4E 80 00 20 */	blr 
+/* 80161520 0015D1C0  4E 80 00 20 */	blr
 
 .global "__rf__38ConsoleAutoRefCount<15IConsoleUnknown>CFv"
 "__rf__38ConsoleAutoRefCount<15IConsoleUnknown>CFv":
 /* 80161524 0015D1C4  80 63 00 00 */	lwz r3, 0(r3)
-/* 80161528 0015D1C8  4E 80 00 20 */	blr 
+/* 80161528 0015D1C8  4E 80 00 20 */	blr
 
 .global "__dt__38ConsoleAutoRefCount<15IConsoleUnknown>Fv"
 "__dt__38ConsoleAutoRefCount<15IConsoleUnknown>Fv":
@@ -5001,7 +5001,7 @@ lbl_80161500:
 /* 8016155C 0015D1FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80161560 0015D200  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80161564 0015D204  7D 89 03 A6 */	mtctr r12
-/* 80161568 0015D208  4E 80 04 21 */	bctrl 
+/* 80161568 0015D208  4E 80 04 21 */	bctrl
 lbl_8016156C:
 /* 8016156C 0015D20C  2C 1F 00 00 */	cmpwi r31, 0
 /* 80161570 0015D210  40 81 00 0C */	ble lbl_8016157C
@@ -5014,12 +5014,12 @@ lbl_8016157C:
 /* 80161588 0015D228  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016158C 0015D22C  7C 08 03 A6 */	mtlr r0
 /* 80161590 0015D230  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161594 0015D234  4E 80 00 20 */	blr 
+/* 80161594 0015D234  4E 80 00 20 */	blr
 
 .global "__opP15IConsoleUnknown__38ConsoleAutoRefCount<15IConsoleUnknown>CFv"
 "__opP15IConsoleUnknown__38ConsoleAutoRefCount<15IConsoleUnknown>CFv":
 /* 80161598 0015D238  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016159C 0015D23C  4E 80 00 20 */	blr 
+/* 8016159C 0015D23C  4E 80 00 20 */	blr
 
 .global "__as__38ConsoleAutoRefCount<15IConsoleUnknown>FP15IConsoleUnknown"
 "__as__38ConsoleAutoRefCount<15IConsoleUnknown>FP15IConsoleUnknown":
@@ -5039,7 +5039,7 @@ lbl_8016157C:
 /* 801615D4 0015D274  7F E3 FB 78 */	mr r3, r31
 /* 801615D8 0015D278  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801615DC 0015D27C  7D 89 03 A6 */	mtctr r12
-/* 801615E0 0015D280  4E 80 04 21 */	bctrl 
+/* 801615E0 0015D280  4E 80 04 21 */	bctrl
 lbl_801615E4:
 /* 801615E4 0015D284  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801615E8 0015D288  2C 03 00 00 */	cmpwi r3, 0
@@ -5047,7 +5047,7 @@ lbl_801615E4:
 /* 801615F0 0015D290  81 83 00 00 */	lwz r12, 0(r3)
 /* 801615F4 0015D294  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 801615F8 0015D298  7D 89 03 A6 */	mtctr r12
-/* 801615FC 0015D29C  4E 80 04 21 */	bctrl 
+/* 801615FC 0015D29C  4E 80 04 21 */	bctrl
 lbl_80161600:
 /* 80161600 0015D2A0  93 FE 00 00 */	stw r31, 0(r30)
 lbl_80161604:
@@ -5057,7 +5057,7 @@ lbl_80161604:
 /* 80161610 0015D2B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161614 0015D2B4  7C 08 03 A6 */	mtlr r0
 /* 80161618 0015D2B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016161C 0015D2BC  4E 80 00 20 */	blr 
+/* 8016161C 0015D2BC  4E 80 00 20 */	blr
 
 .global "__ct__38ObjectDataFactoryQuickData<9StringSet>Fv"
 "__ct__38ObjectDataFactoryQuickData<9StringSet>Fv":
@@ -5075,7 +5075,7 @@ lbl_80161604:
 /* 8016164C 0015D2EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161650 0015D2F0  7C 08 03 A6 */	mtlr r0
 /* 80161654 0015D2F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161658 0015D2F8  4E 80 00 20 */	blr 
+/* 80161658 0015D2F8  4E 80 00 20 */	blr
 
 .global "__ct__38ConsoleAutoRefCount<15IConsoleUnknown>FP15IConsoleUnknown"
 "__ct__38ConsoleAutoRefCount<15IConsoleUnknown>FP15IConsoleUnknown":
@@ -5091,14 +5091,14 @@ lbl_80161604:
 /* 80161680 0015D320  7C 83 23 78 */	mr r3, r4
 /* 80161684 0015D324  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80161688 0015D328  7D 89 03 A6 */	mtctr r12
-/* 8016168C 0015D32C  4E 80 04 21 */	bctrl 
+/* 8016168C 0015D32C  4E 80 04 21 */	bctrl
 lbl_80161690:
 /* 80161690 0015D330  7F E3 FB 78 */	mr r3, r31
 /* 80161694 0015D334  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80161698 0015D338  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016169C 0015D33C  7C 08 03 A6 */	mtlr r0
 /* 801616A0 0015D340  38 21 00 10 */	addi r1, r1, 0x10
-/* 801616A4 0015D344  4E 80 00 20 */	blr 
+/* 801616A4 0015D344  4E 80 00 20 */	blr
 
 .global "__dt__43ConsoleAutoRefCount<20TreeTableAdQuickData>Fv"
 "__dt__43ConsoleAutoRefCount<20TreeTableAdQuickData>Fv":
@@ -5117,7 +5117,7 @@ lbl_80161690:
 /* 801616D8 0015D378  81 83 00 00 */	lwz r12, 0(r3)
 /* 801616DC 0015D37C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 801616E0 0015D380  7D 89 03 A6 */	mtctr r12
-/* 801616E4 0015D384  4E 80 04 21 */	bctrl 
+/* 801616E4 0015D384  4E 80 04 21 */	bctrl
 lbl_801616E8:
 /* 801616E8 0015D388  2C 1F 00 00 */	cmpwi r31, 0
 /* 801616EC 0015D38C  40 81 00 0C */	ble lbl_801616F8
@@ -5130,7 +5130,7 @@ lbl_801616F8:
 /* 80161704 0015D3A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161708 0015D3A8  7C 08 03 A6 */	mtlr r0
 /* 8016170C 0015D3AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161710 0015D3B0  4E 80 00 20 */	blr 
+/* 80161710 0015D3B0  4E 80 00 20 */	blr
 
 .global "__as__43ConsoleAutoRefCount<20TreeTableAdQuickData>FRC43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "__as__43ConsoleAutoRefCount<20TreeTableAdQuickData>FRC43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -5149,7 +5149,7 @@ lbl_80161738:
 /* 80161740 0015D3E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161744 0015D3E4  7C 08 03 A6 */	mtlr r0
 /* 80161748 0015D3E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016174C 0015D3EC  4E 80 00 20 */	blr 
+/* 8016174C 0015D3EC  4E 80 00 20 */	blr
 
 .global "__as__43ConsoleAutoRefCount<20TreeTableAdQuickData>FP20TreeTableAdQuickData"
 "__as__43ConsoleAutoRefCount<20TreeTableAdQuickData>FP20TreeTableAdQuickData":
@@ -5169,7 +5169,7 @@ lbl_80161738:
 /* 80161784 0015D424  7F E3 FB 78 */	mr r3, r31
 /* 80161788 0015D428  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8016178C 0015D42C  7D 89 03 A6 */	mtctr r12
-/* 80161790 0015D430  4E 80 04 21 */	bctrl 
+/* 80161790 0015D430  4E 80 04 21 */	bctrl
 lbl_80161794:
 /* 80161794 0015D434  80 7E 00 00 */	lwz r3, 0(r30)
 /* 80161798 0015D438  2C 03 00 00 */	cmpwi r3, 0
@@ -5177,7 +5177,7 @@ lbl_80161794:
 /* 801617A0 0015D440  81 83 00 00 */	lwz r12, 0(r3)
 /* 801617A4 0015D444  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 801617A8 0015D448  7D 89 03 A6 */	mtctr r12
-/* 801617AC 0015D44C  4E 80 04 21 */	bctrl 
+/* 801617AC 0015D44C  4E 80 04 21 */	bctrl
 lbl_801617B0:
 /* 801617B0 0015D450  93 FE 00 00 */	stw r31, 0(r30)
 lbl_801617B4:
@@ -5187,7 +5187,7 @@ lbl_801617B4:
 /* 801617C0 0015D460  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801617C4 0015D464  7C 08 03 A6 */	mtlr r0
 /* 801617C8 0015D468  38 21 00 10 */	addi r1, r1, 0x10
-/* 801617CC 0015D46C  4E 80 00 20 */	blr 
+/* 801617CC 0015D46C  4E 80 00 20 */	blr
 
 .global "__ct__43ConsoleAutoRefCount<20TreeTableAdQuickData>FP20TreeTableAdQuickData"
 "__ct__43ConsoleAutoRefCount<20TreeTableAdQuickData>FP20TreeTableAdQuickData":
@@ -5203,19 +5203,19 @@ lbl_801617B4:
 /* 801617F4 0015D494  7C 83 23 78 */	mr r3, r4
 /* 801617F8 0015D498  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801617FC 0015D49C  7D 89 03 A6 */	mtctr r12
-/* 80161800 0015D4A0  4E 80 04 21 */	bctrl 
+/* 80161800 0015D4A0  4E 80 04 21 */	bctrl
 lbl_80161804:
 /* 80161804 0015D4A4  7F E3 FB 78 */	mr r3, r31
 /* 80161808 0015D4A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016180C 0015D4AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161810 0015D4B0  7C 08 03 A6 */	mtlr r0
 /* 80161814 0015D4B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161818 0015D4B8  4E 80 00 20 */	blr 
+/* 80161818 0015D4B8  4E 80 00 20 */	blr
 
 .global "__opP20TreeTableAdQuickData__43ConsoleAutoRefCount<20TreeTableAdQuickData>CFv"
 "__opP20TreeTableAdQuickData__43ConsoleAutoRefCount<20TreeTableAdQuickData>CFv":
 /* 8016181C 0015D4BC  80 63 00 00 */	lwz r3, 0(r3)
-/* 80161820 0015D4C0  4E 80 00 20 */	blr 
+/* 80161820 0015D4C0  4E 80 00 20 */	blr
 
 .global "__dt__46ConsoleAutoRefCount<23TreeTableEntryQuickData>Fv"
 "__dt__46ConsoleAutoRefCount<23TreeTableEntryQuickData>Fv":
@@ -5234,7 +5234,7 @@ lbl_80161804:
 /* 80161854 0015D4F4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80161858 0015D4F8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8016185C 0015D4FC  7D 89 03 A6 */	mtctr r12
-/* 80161860 0015D500  4E 80 04 21 */	bctrl 
+/* 80161860 0015D500  4E 80 04 21 */	bctrl
 lbl_80161864:
 /* 80161864 0015D504  2C 1F 00 00 */	cmpwi r31, 0
 /* 80161868 0015D508  40 81 00 0C */	ble lbl_80161874
@@ -5247,7 +5247,7 @@ lbl_80161874:
 /* 80161880 0015D520  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161884 0015D524  7C 08 03 A6 */	mtlr r0
 /* 80161888 0015D528  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016188C 0015D52C  4E 80 00 20 */	blr 
+/* 8016188C 0015D52C  4E 80 00 20 */	blr
 
 .global "__as__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "__as__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -5266,7 +5266,7 @@ lbl_801618B4:
 /* 801618BC 0015D55C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801618C0 0015D560  7C 08 03 A6 */	mtlr r0
 /* 801618C4 0015D564  38 21 00 10 */	addi r1, r1, 0x10
-/* 801618C8 0015D568  4E 80 00 20 */	blr 
+/* 801618C8 0015D568  4E 80 00 20 */	blr
 
 .global "__as__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FP23TreeTableEntryQuickData"
 "__as__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FP23TreeTableEntryQuickData":
@@ -5286,7 +5286,7 @@ lbl_801618B4:
 /* 80161900 0015D5A0  7F E3 FB 78 */	mr r3, r31
 /* 80161904 0015D5A4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80161908 0015D5A8  7D 89 03 A6 */	mtctr r12
-/* 8016190C 0015D5AC  4E 80 04 21 */	bctrl 
+/* 8016190C 0015D5AC  4E 80 04 21 */	bctrl
 lbl_80161910:
 /* 80161910 0015D5B0  80 7E 00 00 */	lwz r3, 0(r30)
 /* 80161914 0015D5B4  2C 03 00 00 */	cmpwi r3, 0
@@ -5294,7 +5294,7 @@ lbl_80161910:
 /* 8016191C 0015D5BC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80161920 0015D5C0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80161924 0015D5C4  7D 89 03 A6 */	mtctr r12
-/* 80161928 0015D5C8  4E 80 04 21 */	bctrl 
+/* 80161928 0015D5C8  4E 80 04 21 */	bctrl
 lbl_8016192C:
 /* 8016192C 0015D5CC  93 FE 00 00 */	stw r31, 0(r30)
 lbl_80161930:
@@ -5304,7 +5304,7 @@ lbl_80161930:
 /* 8016193C 0015D5DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161940 0015D5E0  7C 08 03 A6 */	mtlr r0
 /* 80161944 0015D5E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161948 0015D5E8  4E 80 00 20 */	blr 
+/* 80161948 0015D5E8  4E 80 00 20 */	blr
 
 .global "__ct__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FP23TreeTableEntryQuickData"
 "__ct__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FP23TreeTableEntryQuickData":
@@ -5320,19 +5320,19 @@ lbl_80161930:
 /* 80161970 0015D610  7C 83 23 78 */	mr r3, r4
 /* 80161974 0015D614  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80161978 0015D618  7D 89 03 A6 */	mtctr r12
-/* 8016197C 0015D61C  4E 80 04 21 */	bctrl 
+/* 8016197C 0015D61C  4E 80 04 21 */	bctrl
 lbl_80161980:
 /* 80161980 0015D620  7F E3 FB 78 */	mr r3, r31
 /* 80161984 0015D624  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80161988 0015D628  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016198C 0015D62C  7C 08 03 A6 */	mtlr r0
 /* 80161990 0015D630  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161994 0015D634  4E 80 00 20 */	blr 
+/* 80161994 0015D634  4E 80 00 20 */	blr
 
 .global "__opP23TreeTableEntryQuickData__46ConsoleAutoRefCount<23TreeTableEntryQuickData>CFv"
 "__opP23TreeTableEntryQuickData__46ConsoleAutoRefCount<23TreeTableEntryQuickData>CFv":
 /* 80161998 0015D638  80 63 00 00 */	lwz r3, 0(r3)
-/* 8016199C 0015D63C  4E 80 00 20 */	blr 
+/* 8016199C 0015D63C  4E 80 00 20 */	blr
 
 .global "__ct__43ConsoleAutoRefCount<20TreeTableAdQuickData>FRC43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "__ct__43ConsoleAutoRefCount<20TreeTableAdQuickData>FRC43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -5349,14 +5349,14 @@ lbl_80161980:
 /* 801619C8 0015D668  81 83 00 00 */	lwz r12, 0(r3)
 /* 801619CC 0015D66C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801619D0 0015D670  7D 89 03 A6 */	mtctr r12
-/* 801619D4 0015D674  4E 80 04 21 */	bctrl 
+/* 801619D4 0015D674  4E 80 04 21 */	bctrl
 lbl_801619D8:
 /* 801619D8 0015D678  7F E3 FB 78 */	mr r3, r31
 /* 801619DC 0015D67C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801619E0 0015D680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801619E4 0015D684  7C 08 03 A6 */	mtlr r0
 /* 801619E8 0015D688  38 21 00 10 */	addi r1, r1, 0x10
-/* 801619EC 0015D68C  4E 80 00 20 */	blr 
+/* 801619EC 0015D68C  4E 80 00 20 */	blr
 
 .global "__ct__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "__ct__46ConsoleAutoRefCount<23TreeTableEntryQuickData>FRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -5373,14 +5373,14 @@ lbl_801619D8:
 /* 80161A18 0015D6B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80161A1C 0015D6BC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80161A20 0015D6C0  7D 89 03 A6 */	mtctr r12
-/* 80161A24 0015D6C4  4E 80 04 21 */	bctrl 
+/* 80161A24 0015D6C4  4E 80 04 21 */	bctrl
 lbl_80161A28:
 /* 80161A28 0015D6C8  7F E3 FB 78 */	mr r3, r31
 /* 80161A2C 0015D6CC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80161A30 0015D6D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161A34 0015D6D4  7C 08 03 A6 */	mtlr r0
 /* 80161A38 0015D6D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161A3C 0015D6DC  4E 80 00 20 */	blr 
+/* 80161A3C 0015D6DC  4E 80 00 20 */	blr
 
 .global "__ct__15IFFSlotDescListFv"
 "__ct__15IFFSlotDescListFv":
@@ -5402,7 +5402,7 @@ lbl_80161A28:
 /* 80161A7C 0015D71C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161A80 0015D720  7C 08 03 A6 */	mtlr r0
 /* 80161A84 0015D724  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161A88 0015D728  4E 80 00 20 */	blr 
+/* 80161A88 0015D728  4E 80 00 20 */	blr
 
 .global "__ct__21QuickDataSlotDescListFv"
 "__ct__21QuickDataSlotDescListFv":
@@ -5422,7 +5422,7 @@ lbl_80161A28:
 /* 80161AC0 0015D760  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161AC4 0015D764  7C 08 03 A6 */	mtlr r0
 /* 80161AC8 0015D768  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161ACC 0015D76C  4E 80 00 20 */	blr 
+/* 80161ACC 0015D76C  4E 80 00 20 */	blr
 
 .global "__ct__18SlotDescriptorListFv"
 "__ct__18SlotDescriptorListFv":
@@ -5443,7 +5443,7 @@ lbl_80161A28:
 /* 80161B08 0015D7A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80161B0C 0015D7AC  7C 08 03 A6 */	mtlr r0
 /* 80161B10 0015D7B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80161B14 0015D7B4  4E 80 00 20 */	blr 
+/* 80161B14 0015D7B4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl43vector<14SlotDescriptor,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl43vector<14SlotDescriptor,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5458,7 +5458,7 @@ lbl_80161A28:
 /* 80161B38 0015D7D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161B3C 0015D7DC  7C 08 03 A6 */	mtlr r0
 /* 80161B40 0015D7E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161B44 0015D7E4  4E 80 00 20 */	blr 
+/* 80161B44 0015D7E4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl47VectorBase<14SlotDescriptor,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl47VectorBase<14SlotDescriptor,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5478,7 +5478,7 @@ lbl_80161A28:
 /* 80161B7C 0015D81C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161B80 0015D820  7C 08 03 A6 */	mtlr r0
 /* 80161B84 0015D824  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161B88 0015D828  4E 80 00 20 */	blr 
+/* 80161B88 0015D828  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv":
@@ -5508,7 +5508,7 @@ lbl_80161BD8:
 /* 80161BE4 0015D884  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161BE8 0015D888  7C 08 03 A6 */	mtlr r0
 /* 80161BEC 0015D88C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161BF0 0015D890  4E 80 00 20 */	blr 
+/* 80161BF0 0015D890  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv":
@@ -5543,7 +5543,7 @@ lbl_80161C50:
 /* 80161C5C 0015D8FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161C60 0015D900  7C 08 03 A6 */	mtlr r0
 /* 80161C64 0015D904  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161C68 0015D908  4E 80 00 20 */	blr 
+/* 80161C68 0015D908  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "DoDestroyValues__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -5568,7 +5568,7 @@ lbl_80161C9C:
 /* 80161CAC 0015D94C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80161CB0 0015D950  7C 08 03 A6 */	mtlr r0
 /* 80161CB4 0015D954  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161CB8 0015D958  4E 80 00 20 */	blr 
+/* 80161CB8 0015D958  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl"
 "resize__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl":
@@ -5612,7 +5612,7 @@ lbl_80161D40:
 /* 80161D48 0015D9E8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80161D4C 0015D9EC  7C 08 03 A6 */	mtlr r0
 /* 80161D50 0015D9F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80161D54 0015D9F4  4E 80 00 20 */	blr 
+/* 80161D54 0015D9F4  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "erase__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -5647,7 +5647,7 @@ lbl_80161D40:
 /* 80161DC8 0015DA68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80161DCC 0015DA6C  7C 08 03 A6 */	mtlr r0
 /* 80161DD0 0015DA70  38 21 00 20 */	addi r1, r1, 0x20
-/* 80161DD4 0015DA74  4E 80 00 20 */	blr 
+/* 80161DD4 0015DA74  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "insert__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -5666,7 +5666,7 @@ lbl_80161D40:
 /* 80161DFC 0015DA9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161E00 0015DAA0  7C 08 03 A6 */	mtlr r0
 /* 80161E04 0015DAA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161E08 0015DAA8  4E 80 00 20 */	blr 
+/* 80161E08 0015DAA8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5686,7 +5686,7 @@ lbl_80161D40:
 /* 80161E40 0015DAE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161E44 0015DAE4  7C 08 03 A6 */	mtlr r0
 /* 80161E48 0015DAE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161E4C 0015DAEC  4E 80 00 20 */	blr 
+/* 80161E4C 0015DAEC  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv"
 "clear__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>Fv":
@@ -5699,7 +5699,7 @@ lbl_80161D40:
 /* 80161E5C 0015DAFC  80 63 00 00 */	lwz r3, 0(r3)
 /* 80161E60 0015DB00  54 80 10 3A */	slwi r0, r4, 2
 /* 80161E64 0015DB04  7C 63 02 14 */	add r3, r3, r0
-/* 80161E68 0015DB08  4E 80 00 20 */	blr 
+/* 80161E68 0015DB08  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv":
@@ -5729,7 +5729,7 @@ lbl_80161EB8:
 /* 80161EC4 0015DB64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161EC8 0015DB68  7C 08 03 A6 */	mtlr r0
 /* 80161ECC 0015DB6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161ED0 0015DB70  4E 80 00 20 */	blr 
+/* 80161ED0 0015DB70  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv":
@@ -5764,7 +5764,7 @@ lbl_80161F30:
 /* 80161F3C 0015DBDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161F40 0015DBE0  7C 08 03 A6 */	mtlr r0
 /* 80161F44 0015DBE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161F48 0015DBE8  4E 80 00 20 */	blr 
+/* 80161F48 0015DBE8  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "DoDestroyValues__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -5789,7 +5789,7 @@ lbl_80161F7C:
 /* 80161F8C 0015DC2C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80161F90 0015DC30  7C 08 03 A6 */	mtlr r0
 /* 80161F94 0015DC34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161F98 0015DC38  4E 80 00 20 */	blr 
+/* 80161F98 0015DC38  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5804,7 +5804,7 @@ lbl_80161F7C:
 /* 80161FBC 0015DC5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80161FC0 0015DC60  7C 08 03 A6 */	mtlr r0
 /* 80161FC4 0015DC64  38 21 00 10 */	addi r1, r1, 0x10
-/* 80161FC8 0015DC68  4E 80 00 20 */	blr 
+/* 80161FC8 0015DC68  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5824,7 +5824,7 @@ lbl_80161F7C:
 /* 80162000 0015DCA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162004 0015DCA4  7C 08 03 A6 */	mtlr r0
 /* 80162008 0015DCA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016200C 0015DCAC  4E 80 00 20 */	blr 
+/* 8016200C 0015DCAC  4E 80 00 20 */	blr
 
 .global "__ct__10ITreeTableFv"
 "__ct__10ITreeTableFv":
@@ -5842,7 +5842,7 @@ lbl_80161F7C:
 /* 8016203C 0015DCDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162040 0015DCE0  7C 08 03 A6 */	mtlr r0
 /* 80162044 0015DCE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162048 0015DCE8  4E 80 00 20 */	blr 
+/* 80162048 0015DCE8  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv"
 "clear__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>Fv":
@@ -5883,7 +5883,7 @@ lbl_80161F7C:
 /* 801620C8 0015DD68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801620CC 0015DD6C  7C 08 03 A6 */	mtlr r0
 /* 801620D0 0015DD70  38 21 00 20 */	addi r1, r1, 0x20
-/* 801620D4 0015DD74  4E 80 00 20 */	blr 
+/* 801620D4 0015DD74  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl"
 "resize__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl":
@@ -5927,7 +5927,7 @@ lbl_8016215C:
 /* 80162164 0015DE04  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80162168 0015DE08  7C 08 03 A6 */	mtlr r0
 /* 8016216C 0015DE0C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162170 0015DE10  4E 80 00 20 */	blr 
+/* 80162170 0015DE10  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "insert__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -5938,7 +5938,7 @@ lbl_8016215C:
 /* 80162178 0015DE18  80 63 00 00 */	lwz r3, 0(r3)
 /* 8016217C 0015DE1C  54 80 10 3A */	slwi r0, r4, 2
 /* 80162180 0015DE20  7C 63 02 14 */	add r3, r3, r0
-/* 80162184 0015DE24  4E 80 00 20 */	blr 
+/* 80162184 0015DE24  4E 80 00 20 */	blr
 
 .global "size__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>CFv"
 "size__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>CFv":
@@ -5947,7 +5947,7 @@ lbl_8016215C:
 /* 80162190 0015DE30  7C 04 00 50 */	subf r0, r4, r0
 /* 80162194 0015DE34  7C 00 16 70 */	srawi r0, r0, 2
 /* 80162198 0015DE38  7C 60 01 94 */	addze r3, r0
-/* 8016219C 0015DE3C  4E 80 00 20 */	blr 
+/* 8016219C 0015DE3C  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "DoInsertValues__Q25eastl72vector<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -6073,16 +6073,16 @@ lbl_80162360:
 /* 80162368 0015E008  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8016236C 0015E00C  7C 08 03 A6 */	mtlr r0
 /* 80162370 0015E010  38 21 00 30 */	addi r1, r1, 0x30
-/* 80162374 0015E014  4E 80 00 20 */	blr 
+/* 80162374 0015E014  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>Ul"
 "DoFree__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FP43ConsoleAutoRefCount<20TreeTableAdQuickData>Ul":
 /* 80162378 0015E018  2C 04 00 00 */	cmpwi r4, 0
-/* 8016237C 0015E01C  4D 82 00 20 */	beqlr 
+/* 8016237C 0015E01C  4D 82 00 20 */	beqlr
 /* 80162380 0015E020  54 A5 10 3A */	slwi r5, r5, 2
 /* 80162384 0015E024  38 63 00 0C */	addi r3, r3, 0xc
 /* 80162388 0015E028  4B EB 5D 9C */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8016238C 0015E02C  4E 80 00 20 */	blr 
+/* 8016238C 0015E02C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl":
@@ -6095,15 +6095,15 @@ lbl_80162360:
 /* 801623A8 0015E048  4B EB 5D 8C */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_801623AC:
 /* 801623AC 0015E04C  38 60 00 00 */	li r3, 0
-/* 801623B0 0015E050  4E 80 00 20 */	blr 
+/* 801623B0 0015E050  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl76VectorBase<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Q25eastl9allocator>FUl":
 /* 801623B4 0015E054  2C 04 00 00 */	cmpwi r4, 0
 /* 801623B8 0015E058  38 60 00 01 */	li r3, 1
-/* 801623BC 0015E05C  4D 82 00 20 */	beqlr 
+/* 801623BC 0015E05C  4D 82 00 20 */	beqlr
 /* 801623C0 0015E060  54 83 08 3C */	slwi r3, r4, 1
-/* 801623C4 0015E064  4E 80 00 20 */	blr 
+/* 801623C4 0015E064  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "DoInsertValues__Q25eastl75vector<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -6229,16 +6229,16 @@ lbl_80162588:
 /* 80162590 0015E230  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80162594 0015E234  7C 08 03 A6 */	mtlr r0
 /* 80162598 0015E238  38 21 00 30 */	addi r1, r1, 0x30
-/* 8016259C 0015E23C  4E 80 00 20 */	blr 
+/* 8016259C 0015E23C  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>Ul"
 "DoFree__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FP46ConsoleAutoRefCount<23TreeTableEntryQuickData>Ul":
 /* 801625A0 0015E240  2C 04 00 00 */	cmpwi r4, 0
-/* 801625A4 0015E244  4D 82 00 20 */	beqlr 
+/* 801625A4 0015E244  4D 82 00 20 */	beqlr
 /* 801625A8 0015E248  54 A5 10 3A */	slwi r5, r5, 2
 /* 801625AC 0015E24C  38 63 00 0C */	addi r3, r3, 0xc
 /* 801625B0 0015E250  4B EB 5B 74 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 801625B4 0015E254  4E 80 00 20 */	blr 
+/* 801625B4 0015E254  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl":
@@ -6251,15 +6251,15 @@ lbl_80162588:
 /* 801625D0 0015E270  4B EB 5B 64 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_801625D4:
 /* 801625D4 0015E274  38 60 00 00 */	li r3, 0
-/* 801625D8 0015E278  4E 80 00 20 */	blr 
+/* 801625D8 0015E278  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl79VectorBase<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Q25eastl9allocator>FUl":
 /* 801625DC 0015E27C  2C 04 00 00 */	cmpwi r4, 0
 /* 801625E0 0015E280  38 60 00 01 */	li r3, 1
-/* 801625E4 0015E284  4D 82 00 20 */	beqlr 
+/* 801625E4 0015E284  4D 82 00 20 */	beqlr
 /* 801625E8 0015E288  54 83 08 3C */	slwi r3, r4, 1
-/* 801625EC 0015E28C  4E 80 00 20 */	blr 
+/* 801625EC 0015E28C  4E 80 00 20 */	blr
 
 .global "__ct__18QuickDataSoundInfoFv"
 "__ct__18QuickDataSoundInfoFv":
@@ -6279,7 +6279,7 @@ lbl_801625D4:
 /* 80162624 0015E2C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162628 0015E2C8  7C 08 03 A6 */	mtlr r0
 /* 8016262C 0015E2CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162630 0015E2D0  4E 80 00 20 */	blr 
+/* 80162630 0015E2D0  4E 80 00 20 */	blr
 
 .global "__ct__9SoundInfoFv"
 "__ct__9SoundInfoFv":
@@ -6306,7 +6306,7 @@ lbl_801625D4:
 /* 80162684 0015E324  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162688 0015E328  7C 08 03 A6 */	mtlr r0
 /* 8016268C 0015E32C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162690 0015E330  4E 80 00 20 */	blr 
+/* 80162690 0015E330  4E 80 00 20 */	blr
 
 .global "__ct__20TreeTableAdQuickDataFPC11TreeTableAd"
 "__ct__20TreeTableAdQuickDataFPC11TreeTableAd":
@@ -6330,7 +6330,7 @@ lbl_801625D4:
 /* 801626D8 0015E378  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801626DC 0015E37C  7C 08 03 A6 */	mtlr r0
 /* 801626E0 0015E380  38 21 00 10 */	addi r1, r1, 0x10
-/* 801626E4 0015E384  4E 80 00 20 */	blr 
+/* 801626E4 0015E384  4E 80 00 20 */	blr
 
 .global "__dt__20TreeTableAdQuickDataFv"
 "__dt__20TreeTableAdQuickDataFv":
@@ -6352,7 +6352,7 @@ lbl_80162718:
 /* 80162720 0015E3C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162724 0015E3C4  7C 08 03 A6 */	mtlr r0
 /* 80162728 0015E3C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016272C 0015E3CC  4E 80 00 20 */	blr 
+/* 8016272C 0015E3CC  4E 80 00 20 */	blr
 
 .global "__ct__23TreeTableEntryQuickDataFPC14TreeTableEntry"
 "__ct__23TreeTableEntryQuickDataFPC14TreeTableEntry":
@@ -6399,7 +6399,7 @@ lbl_801627C4:
 /* 801627C8 0015E468  81 83 00 00 */	lwz r12, 0(r3)
 /* 801627CC 0015E46C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801627D0 0015E470  7D 89 03 A6 */	mtctr r12
-/* 801627D4 0015E474  4E 80 04 21 */	bctrl 
+/* 801627D4 0015E474  4E 80 04 21 */	bctrl
 lbl_801627D8:
 /* 801627D8 0015E478  7F C3 F3 78 */	mr r3, r30
 /* 801627DC 0015E47C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -6407,7 +6407,7 @@ lbl_801627D8:
 /* 801627E4 0015E484  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801627E8 0015E488  7C 08 03 A6 */	mtlr r0
 /* 801627EC 0015E48C  38 21 00 20 */	addi r1, r1, 0x20
-/* 801627F0 0015E490  4E 80 00 20 */	blr 
+/* 801627F0 0015E490  4E 80 00 20 */	blr
 
 .global "__dt__23TreeTableEntryQuickDataFv"
 "__dt__23TreeTableEntryQuickDataFv":
@@ -6441,7 +6441,7 @@ lbl_80162850:
 /* 8016285C 0015E4FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162860 0015E500  7C 08 03 A6 */	mtlr r0
 /* 80162864 0015E504  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162868 0015E508  4E 80 00 20 */	blr 
+/* 80162868 0015E508  4E 80 00 20 */	blr
 
 .global "GetAd__23TreeTableEntryQuickDataCFi"
 "GetAd__23TreeTableEntryQuickDataCFi":
@@ -6511,7 +6511,7 @@ lbl_80162944:
 /* 80162954 0015E5F4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80162958 0015E5F8  7C 08 03 A6 */	mtlr r0
 /* 8016295C 0015E5FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162960 0015E600  4E 80 00 20 */	blr 
+/* 80162960 0015E600  4E 80 00 20 */	blr
 
 .global "GetName__23TreeTableEntryQuickDataCFv"
 "GetName__23TreeTableEntryQuickDataCFv":
@@ -6524,7 +6524,7 @@ lbl_80162944:
 /* 8016297C 0015E61C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162980 0015E620  7C 08 03 A6 */	mtlr r0
 /* 80162984 0015E624  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162988 0015E628  4E 80 00 20 */	blr 
+/* 80162988 0015E628  4E 80 00 20 */	blr
 
 .global "__ct__18TreeTableQuickDataFv"
 "__ct__18TreeTableQuickDataFv":
@@ -6558,7 +6558,7 @@ lbl_80162944:
 /* 801629F8 0015E698  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801629FC 0015E69C  7C 08 03 A6 */	mtlr r0
 /* 80162A00 0015E6A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162A04 0015E6A4  4E 80 00 20 */	blr 
+/* 80162A04 0015E6A4  4E 80 00 20 */	blr
 
 .global "__dt__18TreeTableQuickDataFv"
 "__dt__18TreeTableQuickDataFv":
@@ -6592,7 +6592,7 @@ lbl_80162A64:
 /* 80162A70 0015E710  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162A74 0015E714  7C 08 03 A6 */	mtlr r0
 /* 80162A78 0015E718  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162A7C 0015E71C  4E 80 00 20 */	blr 
+/* 80162A7C 0015E71C  4E 80 00 20 */	blr
 
 .global "GetDataID__18TreeTableQuickDataCFv"
 "GetDataID__18TreeTableQuickDataCFv":
@@ -6663,17 +6663,17 @@ lbl_80162B58:
 /* 80162B60 0015E800  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80162B64 0015E804  7C 08 03 A6 */	mtlr r0
 /* 80162B68 0015E808  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162B6C 0015E80C  4E 80 00 20 */	blr 
+/* 80162B6C 0015E80C  4E 80 00 20 */	blr
 
 .global "SaveDataByID__18TreeTableQuickDataFRC12ObjectDataID"
 "SaveDataByID__18TreeTableQuickDataFRC12ObjectDataID":
 /* 80162B70 0015E810  38 60 00 00 */	li r3, 0
-/* 80162B74 0015E814  4E 80 00 20 */	blr 
+/* 80162B74 0015E814  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__18TreeTableQuickDataCFv"
 "GetDataSourceType__18TreeTableQuickDataCFv":
 /* 80162B78 0015E818  38 60 00 01 */	li r3, 1
-/* 80162B7C 0015E81C  4E 80 00 20 */	blr 
+/* 80162B7C 0015E81C  4E 80 00 20 */	blr
 
 .global "Load__18TreeTableQuickDataFUis"
 "Load__18TreeTableQuickDataFUis":
@@ -6690,7 +6690,7 @@ lbl_80162B58:
 /* 80162BA8 0015E848  38 81 00 08 */	addi r4, r1, 8
 /* 80162BAC 0015E84C  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80162BB0 0015E850  7D 89 03 A6 */	mtctr r12
-/* 80162BB4 0015E854  4E 80 04 21 */	bctrl 
+/* 80162BB4 0015E854  4E 80 04 21 */	bctrl
 /* 80162BB8 0015E858  7C 83 00 D0 */	neg r4, r3
 /* 80162BBC 0015E85C  38 00 FF CE */	li r0, -50
 /* 80162BC0 0015E860  7C 83 1B 78 */	or r3, r4, r3
@@ -6700,7 +6700,7 @@ lbl_80162B58:
 /* 80162BD0 0015E870  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80162BD4 0015E874  7C 08 03 A6 */	mtlr r0
 /* 80162BD8 0015E878  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162BDC 0015E87C  4E 80 00 20 */	blr 
+/* 80162BDC 0015E87C  4E 80 00 20 */	blr
 
 .global "GetNthEntry__18TreeTableQuickDataCFi"
 "GetNthEntry__18TreeTableQuickDataCFi":
@@ -6770,7 +6770,7 @@ lbl_80162CB0:
 /* 80162CC0 0015E960  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80162CC4 0015E964  7C 08 03 A6 */	mtlr r0
 /* 80162CC8 0015E968  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162CCC 0015E96C  4E 80 00 20 */	blr 
+/* 80162CCC 0015E96C  4E 80 00 20 */	blr
 
 .global "GetEntryByIndex__18TreeTableQuickDataCFi"
 "GetEntryByIndex__18TreeTableQuickDataCFi":
@@ -6796,14 +6796,14 @@ lbl_80162D00:
 /* 80162D18 0015E9B8  7F C3 F3 78 */	mr r3, r30
 /* 80162D1C 0015E9BC  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80162D20 0015E9C0  7D 89 03 A6 */	mtctr r12
-/* 80162D24 0015E9C4  4E 80 04 21 */	bctrl 
+/* 80162D24 0015E9C4  4E 80 04 21 */	bctrl
 lbl_80162D28:
 /* 80162D28 0015E9C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162D2C 0015E9CC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80162D30 0015E9D0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80162D34 0015E9D4  7C 08 03 A6 */	mtlr r0
 /* 80162D38 0015E9D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162D3C 0015E9DC  4E 80 00 20 */	blr 
+/* 80162D3C 0015E9DC  4E 80 00 20 */	blr
 
 .global "GetEntryByTreeID__18TreeTableQuickDataCFss"
 "GetEntryByTreeID__18TreeTableQuickDataCFss":
@@ -6832,7 +6832,7 @@ lbl_80162D78:
 /* 80162D94 0015EA34  7F A3 EB 78 */	mr r3, r29
 /* 80162D98 0015EA38  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80162D9C 0015EA3C  7D 89 03 A6 */	mtctr r12
-/* 80162DA0 0015EA40  4E 80 04 21 */	bctrl 
+/* 80162DA0 0015EA40  4E 80 04 21 */	bctrl
 lbl_80162DA4:
 /* 80162DA4 0015EA44  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80162DA8 0015EA48  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -6840,7 +6840,7 @@ lbl_80162DA4:
 /* 80162DB0 0015EA50  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80162DB4 0015EA54  7C 08 03 A6 */	mtlr r0
 /* 80162DB8 0015EA58  38 21 00 20 */	addi r1, r1, 0x20
-/* 80162DBC 0015EA5C  4E 80 00 20 */	blr 
+/* 80162DBC 0015EA5C  4E 80 00 20 */	blr
 
 .global "GetNthOrderedEntry__18TreeTableQuickDataCFi"
 "GetNthOrderedEntry__18TreeTableQuickDataCFi":
@@ -6866,14 +6866,14 @@ lbl_80162DF0:
 /* 80162E08 0015EAA8  7F C3 F3 78 */	mr r3, r30
 /* 80162E0C 0015EAAC  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80162E10 0015EAB0  7D 89 03 A6 */	mtctr r12
-/* 80162E14 0015EAB4  4E 80 04 21 */	bctrl 
+/* 80162E14 0015EAB4  4E 80 04 21 */	bctrl
 lbl_80162E18:
 /* 80162E18 0015EAB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162E1C 0015EABC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80162E20 0015EAC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80162E24 0015EAC4  7C 08 03 A6 */	mtlr r0
 /* 80162E28 0015EAC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162E2C 0015EACC  4E 80 00 20 */	blr 
+/* 80162E2C 0015EACC  4E 80 00 20 */	blr
 
 .global "QueryInterface__20TreeTableAdQuickDataFUiPPv"
 "QueryInterface__20TreeTableAdQuickDataFUiPPv":
@@ -6901,7 +6901,7 @@ lbl_80162E7C:
 /* 80162E7C 0015EB1C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80162E80 0015EB20  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80162E84 0015EB24  7D 89 03 A6 */	mtctr r12
-/* 80162E88 0015EB28  4E 80 04 21 */	bctrl 
+/* 80162E88 0015EB28  4E 80 04 21 */	bctrl
 /* 80162E8C 0015EB2C  93 DF 00 00 */	stw r30, 0(r31)
 /* 80162E90 0015EB30  38 60 00 01 */	li r3, 1
 /* 80162E94 0015EB34  48 00 00 24 */	b lbl_80162EB8
@@ -6909,7 +6909,7 @@ lbl_80162E98:
 /* 80162E98 0015EB38  81 83 00 00 */	lwz r12, 0(r3)
 /* 80162E9C 0015EB3C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80162EA0 0015EB40  7D 89 03 A6 */	mtctr r12
-/* 80162EA4 0015EB44  4E 80 04 21 */	bctrl 
+/* 80162EA4 0015EB44  4E 80 04 21 */	bctrl
 /* 80162EA8 0015EB48  93 DF 00 00 */	stw r30, 0(r31)
 /* 80162EAC 0015EB4C  38 60 00 01 */	li r3, 1
 /* 80162EB0 0015EB50  48 00 00 08 */	b lbl_80162EB8
@@ -6921,7 +6921,7 @@ lbl_80162EB8:
 /* 80162EC0 0015EB60  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80162EC4 0015EB64  7C 08 03 A6 */	mtlr r0
 /* 80162EC8 0015EB68  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162ECC 0015EB6C  4E 80 00 20 */	blr 
+/* 80162ECC 0015EB6C  4E 80 00 20 */	blr
 
 .global "AddRef__20TreeTableAdQuickDataFv"
 "AddRef__20TreeTableAdQuickDataFv":
@@ -6929,7 +6929,7 @@ lbl_80162EB8:
 /* 80162ED4 0015EB74  38 04 00 01 */	addi r0, r4, 1
 /* 80162ED8 0015EB78  90 03 00 08 */	stw r0, 8(r3)
 /* 80162EDC 0015EB7C  7C 03 03 78 */	mr r3, r0
-/* 80162EE0 0015EB80  4E 80 00 20 */	blr 
+/* 80162EE0 0015EB80  4E 80 00 20 */	blr
 
 .global "Release__20TreeTableAdQuickDataFv"
 "Release__20TreeTableAdQuickDataFv":
@@ -6949,14 +6949,14 @@ lbl_80162F08:
 /* 80162F14 0015EBB4  38 80 00 01 */	li r4, 1
 /* 80162F18 0015EBB8  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 80162F1C 0015EBBC  7D 89 03 A6 */	mtctr r12
-/* 80162F20 0015EBC0  4E 80 04 21 */	bctrl 
+/* 80162F20 0015EBC0  4E 80 04 21 */	bctrl
 lbl_80162F24:
 /* 80162F24 0015EBC4  38 60 00 00 */	li r3, 0
 lbl_80162F28:
 /* 80162F28 0015EBC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162F2C 0015EBCC  7C 08 03 A6 */	mtlr r0
 /* 80162F30 0015EBD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162F34 0015EBD4  4E 80 00 20 */	blr 
+/* 80162F34 0015EBD4  4E 80 00 20 */	blr
 
 .global "QueryInterface__23TreeTableEntryQuickDataFUiPPv"
 "QueryInterface__23TreeTableEntryQuickDataFUiPPv":
@@ -6984,7 +6984,7 @@ lbl_80162F84:
 /* 80162F84 0015EC24  81 83 00 00 */	lwz r12, 0(r3)
 /* 80162F88 0015EC28  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80162F8C 0015EC2C  7D 89 03 A6 */	mtctr r12
-/* 80162F90 0015EC30  4E 80 04 21 */	bctrl 
+/* 80162F90 0015EC30  4E 80 04 21 */	bctrl
 /* 80162F94 0015EC34  93 DF 00 00 */	stw r30, 0(r31)
 /* 80162F98 0015EC38  38 60 00 01 */	li r3, 1
 /* 80162F9C 0015EC3C  48 00 00 24 */	b lbl_80162FC0
@@ -6992,7 +6992,7 @@ lbl_80162FA0:
 /* 80162FA0 0015EC40  81 83 00 00 */	lwz r12, 0(r3)
 /* 80162FA4 0015EC44  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80162FA8 0015EC48  7D 89 03 A6 */	mtctr r12
-/* 80162FAC 0015EC4C  4E 80 04 21 */	bctrl 
+/* 80162FAC 0015EC4C  4E 80 04 21 */	bctrl
 /* 80162FB0 0015EC50  93 DF 00 00 */	stw r30, 0(r31)
 /* 80162FB4 0015EC54  38 60 00 01 */	li r3, 1
 /* 80162FB8 0015EC58  48 00 00 08 */	b lbl_80162FC0
@@ -7004,7 +7004,7 @@ lbl_80162FC0:
 /* 80162FC8 0015EC68  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80162FCC 0015EC6C  7C 08 03 A6 */	mtlr r0
 /* 80162FD0 0015EC70  38 21 00 10 */	addi r1, r1, 0x10
-/* 80162FD4 0015EC74  4E 80 00 20 */	blr 
+/* 80162FD4 0015EC74  4E 80 00 20 */	blr
 
 .global "AddRef__23TreeTableEntryQuickDataFv"
 "AddRef__23TreeTableEntryQuickDataFv":
@@ -7012,7 +7012,7 @@ lbl_80162FC0:
 /* 80162FDC 0015EC7C  38 04 00 01 */	addi r0, r4, 1
 /* 80162FE0 0015EC80  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80162FE4 0015EC84  7C 03 03 78 */	mr r3, r0
-/* 80162FE8 0015EC88  4E 80 00 20 */	blr 
+/* 80162FE8 0015EC88  4E 80 00 20 */	blr
 
 .global "Release__23TreeTableEntryQuickDataFv"
 "Release__23TreeTableEntryQuickDataFv":
@@ -7032,14 +7032,14 @@ lbl_80163010:
 /* 8016301C 0015ECBC  38 80 00 01 */	li r4, 1
 /* 80163020 0015ECC0  81 8C 01 30 */	lwz r12, 0x130(r12)
 /* 80163024 0015ECC4  7D 89 03 A6 */	mtctr r12
-/* 80163028 0015ECC8  4E 80 04 21 */	bctrl 
+/* 80163028 0015ECC8  4E 80 04 21 */	bctrl
 lbl_8016302C:
 /* 8016302C 0015ECCC  38 60 00 00 */	li r3, 0
 lbl_80163030:
 /* 80163030 0015ECD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80163034 0015ECD4  7C 08 03 A6 */	mtlr r0
 /* 80163038 0015ECD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8016303C 0015ECDC  4E 80 00 20 */	blr 
+/* 8016303C 0015ECDC  4E 80 00 20 */	blr
 
 .global "QueryInterface__18TreeTableQuickDataFUiPPv"
 "QueryInterface__18TreeTableQuickDataFUiPPv":
@@ -7067,7 +7067,7 @@ lbl_8016308C:
 /* 8016308C 0015ED2C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80163090 0015ED30  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80163094 0015ED34  7D 89 03 A6 */	mtctr r12
-/* 80163098 0015ED38  4E 80 04 21 */	bctrl 
+/* 80163098 0015ED38  4E 80 04 21 */	bctrl
 /* 8016309C 0015ED3C  93 DF 00 00 */	stw r30, 0(r31)
 /* 801630A0 0015ED40  38 60 00 01 */	li r3, 1
 /* 801630A4 0015ED44  48 00 00 24 */	b lbl_801630C8
@@ -7075,7 +7075,7 @@ lbl_801630A8:
 /* 801630A8 0015ED48  81 83 00 00 */	lwz r12, 0(r3)
 /* 801630AC 0015ED4C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 801630B0 0015ED50  7D 89 03 A6 */	mtctr r12
-/* 801630B4 0015ED54  4E 80 04 21 */	bctrl 
+/* 801630B4 0015ED54  4E 80 04 21 */	bctrl
 /* 801630B8 0015ED58  93 DF 00 00 */	stw r30, 0(r31)
 /* 801630BC 0015ED5C  38 60 00 01 */	li r3, 1
 /* 801630C0 0015ED60  48 00 00 08 */	b lbl_801630C8
@@ -7087,7 +7087,7 @@ lbl_801630C8:
 /* 801630D0 0015ED70  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801630D4 0015ED74  7C 08 03 A6 */	mtlr r0
 /* 801630D8 0015ED78  38 21 00 10 */	addi r1, r1, 0x10
-/* 801630DC 0015ED7C  4E 80 00 20 */	blr 
+/* 801630DC 0015ED7C  4E 80 00 20 */	blr
 
 .global "AddRef__18TreeTableQuickDataFv"
 "AddRef__18TreeTableQuickDataFv":
@@ -7095,7 +7095,7 @@ lbl_801630C8:
 /* 801630E4 0015ED84  38 04 00 01 */	addi r0, r4, 1
 /* 801630E8 0015ED88  90 03 00 20 */	stw r0, 0x20(r3)
 /* 801630EC 0015ED8C  7C 03 03 78 */	mr r3, r0
-/* 801630F0 0015ED90  4E 80 00 20 */	blr 
+/* 801630F0 0015ED90  4E 80 00 20 */	blr
 
 .global "Release__18TreeTableQuickDataFv"
 "Release__18TreeTableQuickDataFv":
@@ -7115,14 +7115,14 @@ lbl_80163118:
 /* 80163124 0015EDC4  38 80 00 01 */	li r4, 1
 /* 80163128 0015EDC8  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8016312C 0015EDCC  7D 89 03 A6 */	mtctr r12
-/* 80163130 0015EDD0  4E 80 04 21 */	bctrl 
+/* 80163130 0015EDD0  4E 80 04 21 */	bctrl
 lbl_80163134:
 /* 80163134 0015EDD4  38 60 00 00 */	li r3, 0
 lbl_80163138:
 /* 80163138 0015EDD8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016313C 0015EDDC  7C 08 03 A6 */	mtlr r0
 /* 80163140 0015EDE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163144 0015EDE4  4E 80 00 20 */	blr 
+/* 80163144 0015EDE4  4E 80 00 20 */	blr
 
 .global "__sinit_game_simulator_objectdata_unity_cpp"
 "__sinit_game_simulator_objectdata_unity_cpp":
@@ -7166,7 +7166,7 @@ lbl_80163138:
 /* 801631DC 0015EE7C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801631E0 0015EE80  7C 08 03 A6 */	mtlr r0
 /* 801631E4 0015EE84  38 21 00 10 */	addi r1, r1, 0x10
-/* 801631E8 0015EE88  4E 80 00 20 */	blr 
+/* 801631E8 0015EE88  4E 80 00 20 */	blr
 
 .global "copy<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "copy<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -7208,7 +7208,7 @@ lbl_80163234:
 /* 8016324C 0015EEEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80163250 0015EEF0  7C 08 03 A6 */	mtlr r0
 /* 80163254 0015EEF4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163258 0015EEF8  4E 80 00 20 */	blr 
+/* 80163258 0015EEF8  4E 80 00 20 */	blr
 
 .global "copy<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "copy<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -7250,7 +7250,7 @@ lbl_801632A4:
 /* 801632BC 0015EF5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801632C0 0015EF60  7C 08 03 A6 */	mtlr r0
 /* 801632C4 0015EF64  38 21 00 20 */	addi r1, r1, 0x20
-/* 801632C8 0015EF68  4E 80 00 20 */	blr 
+/* 801632C8 0015EF68  4E 80 00 20 */	blr
 
 .global "fill<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>RC43ConsoleAutoRefCount<20TreeTableAdQuickData>_v"
 "fill<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>RC43ConsoleAutoRefCount<20TreeTableAdQuickData>_v":
@@ -7282,7 +7282,7 @@ lbl_80163308:
 /* 8016331C 0015EFBC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80163320 0015EFC0  7C 08 03 A6 */	mtlr r0
 /* 80163324 0015EFC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163328 0015EFC8  4E 80 00 20 */	blr 
+/* 80163328 0015EFC8  4E 80 00 20 */	blr
 
 .global "copy_backward<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "copy_backward<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -7324,7 +7324,7 @@ lbl_80163374:
 /* 8016338C 0015F02C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80163390 0015F030  7C 08 03 A6 */	mtlr r0
 /* 80163394 0015F034  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163398 0015F038  4E 80 00 20 */	blr 
+/* 80163398 0015F038  4E 80 00 20 */	blr
 
 .global "fill<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>RC46ConsoleAutoRefCount<23TreeTableEntryQuickData>_v"
 "fill<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>RC46ConsoleAutoRefCount<23TreeTableEntryQuickData>_v":
@@ -7356,7 +7356,7 @@ lbl_801633D8:
 /* 801633EC 0015F08C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801633F0 0015F090  7C 08 03 A6 */	mtlr r0
 /* 801633F4 0015F094  38 21 00 20 */	addi r1, r1, 0x20
-/* 801633F8 0015F098  4E 80 00 20 */	blr 
+/* 801633F8 0015F098  4E 80 00 20 */	blr
 
 .global "copy_backward<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "copy_backward<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -7398,21 +7398,21 @@ lbl_80163444:
 /* 8016345C 0015F0FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80163460 0015F100  7C 08 03 A6 */	mtlr r0
 /* 80163464 0015F104  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163468 0015F108  4E 80 00 20 */	blr 
+/* 80163468 0015F108  4E 80 00 20 */	blr
 
 .global "max_alt<Ul>__5eastlFRCUlRCUl_RCUl"
 "max_alt<Ul>__5eastlFRCUlRCUl_RCUl":
 /* 8016346C 0015F10C  80 A3 00 00 */	lwz r5, 0(r3)
 /* 80163470 0015F110  80 04 00 00 */	lwz r0, 0(r4)
 /* 80163474 0015F114  7C 05 00 40 */	cmplw r5, r0
-/* 80163478 0015F118  4C 80 00 20 */	bgelr 
+/* 80163478 0015F118  4C 80 00 20 */	bgelr
 /* 8016347C 0015F11C  7C 83 23 78 */	mr r3, r4
-/* 80163480 0015F120  4E 80 00 20 */	blr 
+/* 80163480 0015F120  4E 80 00 20 */	blr
 
 .global "CountAds__14TreeTableEntryCFv"
 "CountAds__14TreeTableEntryCFv":
 /* 80163484 0015F124  38 60 00 10 */	li r3, 0x10
-/* 80163488 0015F128  4E 80 00 20 */	blr 
+/* 80163488 0015F128  4E 80 00 20 */	blr
 
 .global "GetAdByID__14TreeTableEntryCFi"
 "GetAdByID__14TreeTableEntryCFi":
@@ -7460,12 +7460,12 @@ lbl_80163510:
 /* 8016351C 0015F1BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80163520 0015F1C0  7C 08 03 A6 */	mtlr r0
 /* 80163524 0015F1C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163528 0015F1C8  4E 80 00 20 */	blr 
+/* 80163528 0015F1C8  4E 80 00 20 */	blr
 
 .global "GetAdID__11TreeTableAdCFv"
 "GetAdID__11TreeTableAdCFv":
 /* 8016352C 0015F1CC  A8 63 00 06 */	lha r3, 6(r3)
-/* 80163530 0015F1D0  4E 80 00 20 */	blr 
+/* 80163530 0015F1D0  4E 80 00 20 */	blr
 
 .global "__ct__11TreeTableAdFv"
 "__ct__11TreeTableAdFv":
@@ -7474,12 +7474,12 @@ lbl_80163510:
 /* 8016353C 0015F1DC  B0 03 00 02 */	sth r0, 2(r3)
 /* 80163540 0015F1E0  B0 03 00 04 */	sth r0, 4(r3)
 /* 80163544 0015F1E4  B0 03 00 06 */	sth r0, 6(r3)
-/* 80163548 0015F1E8  4E 80 00 20 */	blr 
+/* 80163548 0015F1E8  4E 80 00 20 */	blr
 
 .global "GetName__14TreeTableEntryCFv"
 "GetName__14TreeTableEntryCFv":
 /* 8016354C 0015F1EC  38 63 00 1C */	addi r3, r3, 0x1c
-/* 80163550 0015F1F0  4E 80 00 20 */	blr 
+/* 80163550 0015F1F0  4E 80 00 20 */	blr
 
 .global "CountEntries__9TreeTableCFv"
 "CountEntries__9TreeTableCFv":
@@ -7488,64 +7488,64 @@ lbl_80163510:
 .global "GetPersonalityAd__11TreeTableAdCFv"
 "GetPersonalityAd__11TreeTableAdCFv":
 /* 80163558 0015F1F8  A8 63 00 00 */	lha r3, 0(r3)
-/* 8016355C 0015F1FC  4E 80 00 20 */	blr 
+/* 8016355C 0015F1FC  4E 80 00 20 */	blr
 
 .global "GetMin__11TreeTableAdCFv"
 "GetMin__11TreeTableAdCFv":
 /* 80163560 0015F200  A8 63 00 02 */	lha r3, 2(r3)
-/* 80163564 0015F204  4E 80 00 20 */	blr 
+/* 80163564 0015F204  4E 80 00 20 */	blr
 
 .global "GetMax__11TreeTableAdCFv"
 "GetMax__11TreeTableAdCFv":
 /* 80163568 0015F208  A8 83 00 02 */	lha r4, 2(r3)
 /* 8016356C 0015F20C  A8 03 00 04 */	lha r0, 4(r3)
 /* 80163570 0015F210  7C 64 02 14 */	add r3, r4, r0
-/* 80163574 0015F214  4E 80 00 20 */	blr 
+/* 80163574 0015F214  4E 80 00 20 */	blr
 
 .global "GetRange__11TreeTableAdCFv"
 "GetRange__11TreeTableAdCFv":
 /* 80163578 0015F218  A8 63 00 04 */	lha r3, 4(r3)
-/* 8016357C 0015F21C  4E 80 00 20 */	blr 
+/* 8016357C 0015F21C  4E 80 00 20 */	blr
 
 .global "GetIndex__14TreeTableEntryCFv"
 "GetIndex__14TreeTableEntryCFv":
 /* 80163580 0015F220  A8 63 00 14 */	lha r3, 0x14(r3)
-/* 80163584 0015F224  4E 80 00 20 */	blr 
+/* 80163584 0015F224  4E 80 00 20 */	blr
 
 .global "GetOrderIndex__14TreeTableEntryCFv"
 "GetOrderIndex__14TreeTableEntryCFv":
 /* 80163588 0015F228  A8 63 00 1A */	lha r3, 0x1a(r3)
-/* 8016358C 0015F22C  4E 80 00 20 */	blr 
+/* 8016358C 0015F22C  4E 80 00 20 */	blr
 
 .global "GetAvailableToVisitors__14TreeTableEntryCFv"
 "GetAvailableToVisitors__14TreeTableEntryCFv":
 /* 80163590 0015F230  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163594 0015F234  54 03 07 FE */	clrlwi r3, r0, 0x1f
-/* 80163598 0015F238  4E 80 00 20 */	blr 
+/* 80163598 0015F238  4E 80 00 20 */	blr
 
 .global "GetCanJoin__14TreeTableEntryCFv"
 "GetCanJoin__14TreeTableEntryCFv":
 /* 8016359C 0015F23C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635A0 0015F240  54 03 FF FE */	rlwinm r3, r0, 0x1f, 0x1f, 0x1f
-/* 801635A4 0015F244  4E 80 00 20 */	blr 
+/* 801635A4 0015F244  4E 80 00 20 */	blr
 
 .global "GetImmediate__14TreeTableEntryCFv"
 "GetImmediate__14TreeTableEntryCFv":
 /* 801635A8 0015F248  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635AC 0015F24C  54 03 F7 FE */	rlwinm r3, r0, 0x1e, 0x1f, 0x1f
-/* 801635B0 0015F250  4E 80 00 20 */	blr 
+/* 801635B0 0015F250  4E 80 00 20 */	blr
 
 .global "GetAllowConsecutive__14TreeTableEntryCFv"
 "GetAllowConsecutive__14TreeTableEntryCFv":
 /* 801635B4 0015F254  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635B8 0015F258  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 801635BC 0015F25C  4E 80 00 20 */	blr 
+/* 801635BC 0015F25C  4E 80 00 20 */	blr
 
 .global "GetAvailableToGhosts__14TreeTableEntryCFv"
 "GetAvailableToGhosts__14TreeTableEntryCFv":
 /* 801635C0 0015F260  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635C4 0015F264  54 03 E7 FE */	rlwinm r3, r0, 0x1c, 0x1f, 0x1f
-/* 801635C8 0015F268  4E 80 00 20 */	blr 
+/* 801635C8 0015F268  4E 80 00 20 */	blr
 
 .global "GetAvailableToAdults__14TreeTableEntryCFv"
 "GetAvailableToAdults__14TreeTableEntryCFv":
@@ -7553,54 +7553,54 @@ lbl_80163510:
 /* 801635D0 0015F270  54 00 06 72 */	rlwinm r0, r0, 0, 0x19, 0x19
 /* 801635D4 0015F274  7C 00 00 34 */	cntlzw r0, r0
 /* 801635D8 0015F278  54 03 D9 7E */	srwi r3, r0, 5
-/* 801635DC 0015F27C  4E 80 00 20 */	blr 
+/* 801635DC 0015F27C  4E 80 00 20 */	blr
 
 .global "GetAvailableToCats__14TreeTableEntryCFv"
 "GetAvailableToCats__14TreeTableEntryCFv":
 /* 801635E0 0015F280  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635E4 0015F284  54 03 9F FE */	rlwinm r3, r0, 0x13, 0x1f, 0x1f
-/* 801635E8 0015F288  4E 80 00 20 */	blr 
+/* 801635E8 0015F288  4E 80 00 20 */	blr
 
 .global "GetAvailableToLargeDogs__14TreeTableEntryCFv"
 "GetAvailableToLargeDogs__14TreeTableEntryCFv":
 /* 801635EC 0015F28C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635F0 0015F290  54 03 DF FE */	rlwinm r3, r0, 0x1b, 0x1f, 0x1f
-/* 801635F4 0015F294  4E 80 00 20 */	blr 
+/* 801635F4 0015F294  4E 80 00 20 */	blr
 
 .global "GetAvailableToSmallDogs__14TreeTableEntryCFv"
 "GetAvailableToSmallDogs__14TreeTableEntryCFv":
 /* 801635F8 0015F298  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801635FC 0015F29C  54 03 97 FE */	rlwinm r3, r0, 0x12, 0x1f, 0x1f
-/* 80163600 0015F2A0  4E 80 00 20 */	blr 
+/* 80163600 0015F2A0  4E 80 00 20 */	blr
 
 .global "GetAvailableToChimps__14TreeTableEntryCFv"
 "GetAvailableToChimps__14TreeTableEntryCFv":
 /* 80163604 0015F2A4  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163608 0015F2A8  54 03 77 FE */	rlwinm r3, r0, 0xe, 0x1f, 0x1f
-/* 8016360C 0015F2AC  4E 80 00 20 */	blr 
+/* 8016360C 0015F2AC  4E 80 00 20 */	blr
 
 .global "GetAvailableToBoars__14TreeTableEntryCFv"
 "GetAvailableToBoars__14TreeTableEntryCFv":
 /* 80163610 0015F2B0  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163614 0015F2B4  54 03 6F FE */	rlwinm r3, r0, 0xd, 0x1f, 0x1f
-/* 80163618 0015F2B8  4E 80 00 20 */	blr 
+/* 80163618 0015F2B8  4E 80 00 20 */	blr
 
 .global "GetAvailableInDemo__14TreeTableEntryCFv"
 "GetAvailableInDemo__14TreeTableEntryCFv":
 /* 8016361C 0015F2BC  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163620 0015F2C0  54 03 8F FE */	rlwinm r3, r0, 0x11, 0x1f, 0x1f
-/* 80163624 0015F2C4  4E 80 00 20 */	blr 
+/* 80163624 0015F2C4  4E 80 00 20 */	blr
 
 .global "GetAllowOnSelf__14TreeTableEntryCFv"
 "GetAllowOnSelf__14TreeTableEntryCFv":
 /* 80163628 0015F2C8  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 8016362C 0015F2CC  54 03 87 FE */	rlwinm r3, r0, 0x10, 0x1f, 0x1f
-/* 80163630 0015F2D0  4E 80 00 20 */	blr 
+/* 80163630 0015F2D0  4E 80 00 20 */	blr
 
 .global "GetJoinIndex__14TreeTableEntryCFv"
 "GetJoinIndex__14TreeTableEntryCFv":
 /* 80163634 0015F2D4  A8 63 00 18 */	lha r3, 0x18(r3)
-/* 80163638 0015F2D8  4E 80 00 20 */	blr 
+/* 80163638 0015F2D8  4E 80 00 20 */	blr
 
 .global "GetDebugOnly__14TreeTableEntryCFv"
 "GetDebugOnly__14TreeTableEntryCFv":
@@ -7625,19 +7625,19 @@ lbl_80163674:
 /* 8016367C 0015F31C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80163680 0015F320  7C 08 03 A6 */	mtlr r0
 /* 80163684 0015F324  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163688 0015F328  4E 80 00 20 */	blr 
+/* 80163688 0015F328  4E 80 00 20 */	blr
 
 .global "GetAutoFirstSelect__14TreeTableEntryCFv"
 "GetAutoFirstSelect__14TreeTableEntryCFv":
 /* 8016368C 0015F32C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163690 0015F330  54 03 C7 FE */	rlwinm r3, r0, 0x18, 0x1f, 0x1f
-/* 80163694 0015F334  4E 80 00 20 */	blr 
+/* 80163694 0015F334  4E 80 00 20 */	blr
 
 .global "GetAvailableToVisitingPlayers__14TreeTableEntryCFv"
 "GetAvailableToVisitingPlayers__14TreeTableEntryCFv":
 /* 80163698 0015F338  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 8016369C 0015F33C  54 03 BF FE */	rlwinm r3, r0, 0x17, 0x1f, 0x1f
-/* 801636A0 0015F340  4E 80 00 20 */	blr 
+/* 801636A0 0015F340  4E 80 00 20 */	blr
 
 .global "GetManualOnly__14TreeTableEntryCFv"
 "GetManualOnly__14TreeTableEntryCFv":
@@ -7647,25 +7647,25 @@ lbl_80163674:
 /* 801636B0 0015F350  7C A4 FE 70 */	srawi r4, r5, 0x1f
 /* 801636B4 0015F354  7C 00 28 10 */	subfc r0, r0, r5
 /* 801636B8 0015F358  7C 64 19 14 */	adde r3, r4, r3
-/* 801636BC 0015F35C  4E 80 00 20 */	blr 
+/* 801636BC 0015F35C  4E 80 00 20 */	blr
 
 .global "GetIgnorePrefixTree__14TreeTableEntryCFv"
 "GetIgnorePrefixTree__14TreeTableEntryCFv":
 /* 801636C0 0015F360  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801636C4 0015F364  54 03 B7 FE */	rlwinm r3, r0, 0x16, 0x1f, 0x1f
-/* 801636C8 0015F368  4E 80 00 20 */	blr 
+/* 801636C8 0015F368  4E 80 00 20 */	blr
 
 .global "GetMustRun__14TreeTableEntryCFv"
 "GetMustRun__14TreeTableEntryCFv":
 /* 801636CC 0015F36C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801636D0 0015F370  54 03 AF FE */	rlwinm r3, r0, 0x15, 0x1f, 0x1f
-/* 801636D4 0015F374  4E 80 00 20 */	blr 
+/* 801636D4 0015F374  4E 80 00 20 */	blr
 
 .global "GetAllowDynamicAds__14TreeTableEntryCFv"
 "GetAllowDynamicAds__14TreeTableEntryCFv":
 /* 801636D8 0015F378  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801636DC 0015F37C  54 03 7F FE */	rlwinm r3, r0, 0xf, 0x1f, 0x1f
-/* 801636E0 0015F380  4E 80 00 20 */	blr 
+/* 801636E0 0015F380  4E 80 00 20 */	blr
 
 .global "GetRangeRef__14TreeTableEntryCFi"
 "GetRangeRef__14TreeTableEntryCFi":
@@ -7678,7 +7678,7 @@ lbl_80163674:
 /* 801636FC 0015F39C  38 63 00 04 */	addi r3, r3, 4
 /* 80163700 0015F3A0  7C 08 03 A6 */	mtlr r0
 /* 80163704 0015F3A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163708 0015F3A8  4E 80 00 20 */	blr 
+/* 80163708 0015F3A8  4E 80 00 20 */	blr
 
 .global "GetMinRef__14TreeTableEntryCFi"
 "GetMinRef__14TreeTableEntryCFi":
@@ -7691,7 +7691,7 @@ lbl_80163674:
 /* 80163724 0015F3C4  38 63 00 02 */	addi r3, r3, 2
 /* 80163728 0015F3C8  7C 08 03 A6 */	mtlr r0
 /* 8016372C 0015F3CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163730 0015F3D0  4E 80 00 20 */	blr 
+/* 80163730 0015F3D0  4E 80 00 20 */	blr
 
 .global "GetPersonalityVarRef__14TreeTableEntryCFi"
 "GetPersonalityVarRef__14TreeTableEntryCFi":
@@ -7701,38 +7701,38 @@ lbl_80163674:
 .global "GetActionTreeID__14TreeTableEntryCFv"
 "GetActionTreeID__14TreeTableEntryCFv":
 /* 8016373C 0015F3DC  A8 63 00 02 */	lha r3, 2(r3)
-/* 80163740 0015F3E0  4E 80 00 20 */	blr 
+/* 80163740 0015F3E0  4E 80 00 20 */	blr
 
 .global "GetCheckTreeID__14TreeTableEntryCFv"
 "GetCheckTreeID__14TreeTableEntryCFv":
 /* 80163744 0015F3E4  A8 63 00 00 */	lha r3, 0(r3)
-/* 80163748 0015F3E8  4E 80 00 20 */	blr 
+/* 80163748 0015F3E8  4E 80 00 20 */	blr
 
 .global "GetAttenuation__14TreeTableEntryCFv"
 "GetAttenuation__14TreeTableEntryCFv":
 /* 8016374C 0015F3EC  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80163750 0015F3F0  4E 80 00 20 */	blr 
+/* 80163750 0015F3F0  4E 80 00 20 */	blr
 
 .global "GetCustomAttenuationValue__14TreeTableEntryCFv"
 "GetCustomAttenuationValue__14TreeTableEntryCFv":
 /* 80163754 0015F3F4  C0 23 00 08 */	lfs f1, 8(r3)
-/* 80163758 0015F3F8  4E 80 00 20 */	blr 
+/* 80163758 0015F3F8  4E 80 00 20 */	blr
 
 .global "GetAutonomyThreshold__14TreeTableEntryCFv"
 "GetAutonomyThreshold__14TreeTableEntryCFv":
 /* 8016375C 0015F3FC  A8 63 00 16 */	lha r3, 0x16(r3)
-/* 80163760 0015F400  4E 80 00 20 */	blr 
+/* 80163760 0015F400  4E 80 00 20 */	blr
 
 .global "GetFlags__14TreeTableEntryCFv"
 "GetFlags__14TreeTableEntryCFv":
 /* 80163764 0015F404  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 80163768 0015F408  4E 80 00 20 */	blr 
+/* 80163768 0015F408  4E 80 00 20 */	blr
 
 .global "GetUseCustomActivation__14TreeTableEntryCFv"
 "GetUseCustomActivation__14TreeTableEntryCFv":
 /* 8016376C 0015F40C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80163770 0015F410  54 03 A7 FE */	rlwinm r3, r0, 0x14, 0x1f, 0x1f
-/* 80163774 0015F414  4E 80 00 20 */	blr 
+/* 80163774 0015F414  4E 80 00 20 */	blr
 
 .global "GetActivationSubtile__14TreeTableEntryCFRUcRUc"
 "GetActivationSubtile__14TreeTableEntryCFRUcRUc":
@@ -7741,7 +7741,7 @@ lbl_80163674:
 /* 80163780 0015F420  54 00 E7 3E */	rlwinm r0, r0, 0x1c, 0x1c, 0x1f
 /* 80163784 0015F424  98 64 00 00 */	stb r3, 0(r4)
 /* 80163788 0015F428  98 05 00 00 */	stb r0, 0(r5)
-/* 8016378C 0015F42C  4E 80 00 20 */	blr 
+/* 8016378C 0015F42C  4E 80 00 20 */	blr
 
 .global "GetActivationExtents__14TreeTableEntryCFRUcRUcRUcRUc"
 "GetActivationExtents__14TreeTableEntryCFRUcRUcRUcRUc":
@@ -7754,32 +7754,32 @@ lbl_80163674:
 /* 801637A8 0015F448  99 05 00 00 */	stb r8, 0(r5)
 /* 801637AC 0015F44C  98 66 00 00 */	stb r3, 0(r6)
 /* 801637B0 0015F450  98 07 00 00 */	stb r0, 0(r7)
-/* 801637B4 0015F454  4E 80 00 20 */	blr 
+/* 801637B4 0015F454  4E 80 00 20 */	blr
 
 .global "GetID__9TreeTableCFv"
 "GetID__9TreeTableCFv":
 /* 801637B8 0015F458  A8 63 00 06 */	lha r3, 6(r3)
-/* 801637BC 0015F45C  4E 80 00 20 */	blr 
+/* 801637BC 0015F45C  4E 80 00 20 */	blr
 
 .global "CountMotiveAds__9TreeTableCFv"
 "CountMotiveAds__9TreeTableCFv":
 /* 801637C0 0015F460  A8 63 00 04 */	lha r3, 4(r3)
-/* 801637C4 0015F464  4E 80 00 20 */	blr 
+/* 801637C4 0015F464  4E 80 00 20 */	blr
 
 .global "GetPrefixCheckTreeID__9TreeTableCFv"
 "GetPrefixCheckTreeID__9TreeTableCFv":
 /* 801637C8 0015F468  A8 63 00 08 */	lha r3, 8(r3)
-/* 801637CC 0015F46C  4E 80 00 20 */	blr 
+/* 801637CC 0015F46C  4E 80 00 20 */	blr
 
 .global "GetImplementation__23TreeTableEntryQuickDataCFv"
 "GetImplementation__23TreeTableEntryQuickDataCFv":
 /* 801637D0 0015F470  80 63 00 04 */	lwz r3, 4(r3)
-/* 801637D4 0015F474  4E 80 00 20 */	blr 
+/* 801637D4 0015F474  4E 80 00 20 */	blr
 
 .global "GetImplementation__18TreeTableQuickDataCFv"
 "GetImplementation__18TreeTableQuickDataCFv":
 /* 801637D8 0015F478  80 63 00 04 */	lwz r3, 4(r3)
-/* 801637DC 0015F47C  4E 80 00 20 */	blr 
+/* 801637DC 0015F47C  4E 80 00 20 */	blr
 
 .global "GetPersonalityAd__20TreeTableAdQuickDataCFv"
 "GetPersonalityAd__20TreeTableAdQuickDataCFv":
@@ -7803,28 +7803,28 @@ lbl_80163674:
 
 .global "__as__20TreeTableAdQuickDataFRC12ITreeTableAd"
 "__as__20TreeTableAdQuickDataFRC12ITreeTableAd":
-/* 80163800 0015F4A0  4E 80 00 20 */	blr 
+/* 80163800 0015F4A0  4E 80 00 20 */	blr
 
 .global "SetPersonalityAd__20TreeTableAdQuickDataFi"
 "SetPersonalityAd__20TreeTableAdQuickDataFi":
-/* 80163804 0015F4A4  4E 80 00 20 */	blr 
+/* 80163804 0015F4A4  4E 80 00 20 */	blr
 
 .global "SetMin__20TreeTableAdQuickDataFi"
 "SetMin__20TreeTableAdQuickDataFi":
-/* 80163808 0015F4A8  4E 80 00 20 */	blr 
+/* 80163808 0015F4A8  4E 80 00 20 */	blr
 
 .global "SetMax__20TreeTableAdQuickDataFi"
 "SetMax__20TreeTableAdQuickDataFi":
-/* 8016380C 0015F4AC  4E 80 00 20 */	blr 
+/* 8016380C 0015F4AC  4E 80 00 20 */	blr
 
 .global "SetRange__20TreeTableAdQuickDataFi"
 "SetRange__20TreeTableAdQuickDataFi":
-/* 80163810 0015F4B0  4E 80 00 20 */	blr 
+/* 80163810 0015F4B0  4E 80 00 20 */	blr
 
 .global "GetAd__23TreeTableEntryQuickDataFi"
 "GetAd__23TreeTableEntryQuickDataFi":
 /* 80163814 0015F4B4  38 60 00 00 */	li r3, 0
-/* 80163818 0015F4B8  4E 80 00 20 */	blr 
+/* 80163818 0015F4B8  4E 80 00 20 */	blr
 
 .global "GetIndex__23TreeTableEntryQuickDataCFv"
 "GetIndex__23TreeTableEntryQuickDataCFv":
@@ -7982,7 +7982,7 @@ lbl_80163674:
 /* 8016391C 0015F5BC  54 63 04 3E */	clrlwi r3, r3, 0x10
 /* 80163920 0015F5C0  7C 08 03 A6 */	mtlr r0
 /* 80163924 0015F5C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163928 0015F5C8  4E 80 00 20 */	blr 
+/* 80163928 0015F5C8  4E 80 00 20 */	blr
 
 .global "GetAttenuationValue__23TreeTableEntryQuickDataCFb"
 "GetAttenuationValue__23TreeTableEntryQuickDataCFb":
@@ -8021,147 +8021,147 @@ lbl_80163674:
 
 .global "SetOrderIndex__23TreeTableEntryQuickDataFi"
 "SetOrderIndex__23TreeTableEntryQuickDataFi":
-/* 80163964 0015F604  4E 80 00 20 */	blr 
+/* 80163964 0015F604  4E 80 00 20 */	blr
 
 .global "SetAvailableToVisitors__23TreeTableEntryQuickDataFb"
 "SetAvailableToVisitors__23TreeTableEntryQuickDataFb":
-/* 80163968 0015F608  4E 80 00 20 */	blr 
+/* 80163968 0015F608  4E 80 00 20 */	blr
 
 .global "SetCanJoin__23TreeTableEntryQuickDataFb"
 "SetCanJoin__23TreeTableEntryQuickDataFb":
-/* 8016396C 0015F60C  4E 80 00 20 */	blr 
+/* 8016396C 0015F60C  4E 80 00 20 */	blr
 
 .global "SetImmediate__23TreeTableEntryQuickDataFb"
 "SetImmediate__23TreeTableEntryQuickDataFb":
-/* 80163970 0015F610  4E 80 00 20 */	blr 
+/* 80163970 0015F610  4E 80 00 20 */	blr
 
 .global "SetAllowConsecutive__23TreeTableEntryQuickDataFb"
 "SetAllowConsecutive__23TreeTableEntryQuickDataFb":
-/* 80163974 0015F614  4E 80 00 20 */	blr 
+/* 80163974 0015F614  4E 80 00 20 */	blr
 
 .global "SetAvailableToGhosts__23TreeTableEntryQuickDataFb"
 "SetAvailableToGhosts__23TreeTableEntryQuickDataFb":
-/* 80163978 0015F618  4E 80 00 20 */	blr 
+/* 80163978 0015F618  4E 80 00 20 */	blr
 
 .global "SetAvailableToAdults__23TreeTableEntryQuickDataFb"
 "SetAvailableToAdults__23TreeTableEntryQuickDataFb":
-/* 8016397C 0015F61C  4E 80 00 20 */	blr 
+/* 8016397C 0015F61C  4E 80 00 20 */	blr
 
 .global "SetAvailableToCats__23TreeTableEntryQuickDataFb"
 "SetAvailableToCats__23TreeTableEntryQuickDataFb":
-/* 80163980 0015F620  4E 80 00 20 */	blr 
+/* 80163980 0015F620  4E 80 00 20 */	blr
 
 .global "SetAvailableToLargeDogs__23TreeTableEntryQuickDataFb"
 "SetAvailableToLargeDogs__23TreeTableEntryQuickDataFb":
-/* 80163984 0015F624  4E 80 00 20 */	blr 
+/* 80163984 0015F624  4E 80 00 20 */	blr
 
 .global "SetAvailableToSmallDogs__23TreeTableEntryQuickDataFb"
 "SetAvailableToSmallDogs__23TreeTableEntryQuickDataFb":
-/* 80163988 0015F628  4E 80 00 20 */	blr 
+/* 80163988 0015F628  4E 80 00 20 */	blr
 
 .global "SetAvailableToChimps__23TreeTableEntryQuickDataFb"
 "SetAvailableToChimps__23TreeTableEntryQuickDataFb":
-/* 8016398C 0015F62C  4E 80 00 20 */	blr 
+/* 8016398C 0015F62C  4E 80 00 20 */	blr
 
 .global "SetAvailableToBoars__23TreeTableEntryQuickDataFb"
 "SetAvailableToBoars__23TreeTableEntryQuickDataFb":
-/* 80163990 0015F630  4E 80 00 20 */	blr 
+/* 80163990 0015F630  4E 80 00 20 */	blr
 
 .global "SetAvailableInDemo__23TreeTableEntryQuickDataFb"
 "SetAvailableInDemo__23TreeTableEntryQuickDataFb":
-/* 80163994 0015F634  4E 80 00 20 */	blr 
+/* 80163994 0015F634  4E 80 00 20 */	blr
 
 .global "SetAllowOnSelf__23TreeTableEntryQuickDataFb"
 "SetAllowOnSelf__23TreeTableEntryQuickDataFb":
-/* 80163998 0015F638  4E 80 00 20 */	blr 
+/* 80163998 0015F638  4E 80 00 20 */	blr
 
 .global "SetJoinIndex__23TreeTableEntryQuickDataFi"
 "SetJoinIndex__23TreeTableEntryQuickDataFi":
-/* 8016399C 0015F63C  4E 80 00 20 */	blr 
+/* 8016399C 0015F63C  4E 80 00 20 */	blr
 
 .global "SetDebugOnly__23TreeTableEntryQuickDataFb"
 "SetDebugOnly__23TreeTableEntryQuickDataFb":
-/* 801639A0 0015F640  4E 80 00 20 */	blr 
+/* 801639A0 0015F640  4E 80 00 20 */	blr
 
 .global "SetAutoFirstSelect__23TreeTableEntryQuickDataFb"
 "SetAutoFirstSelect__23TreeTableEntryQuickDataFb":
-/* 801639A4 0015F644  4E 80 00 20 */	blr 
+/* 801639A4 0015F644  4E 80 00 20 */	blr
 
 .global "SetAvailableToVisitingPlayers__23TreeTableEntryQuickDataFb"
 "SetAvailableToVisitingPlayers__23TreeTableEntryQuickDataFb":
-/* 801639A8 0015F648  4E 80 00 20 */	blr 
+/* 801639A8 0015F648  4E 80 00 20 */	blr
 
 .global "SetIgnorePrefixTree__23TreeTableEntryQuickDataFb"
 "SetIgnorePrefixTree__23TreeTableEntryQuickDataFb":
-/* 801639AC 0015F64C  4E 80 00 20 */	blr 
+/* 801639AC 0015F64C  4E 80 00 20 */	blr
 
 .global "SetMustRun__23TreeTableEntryQuickDataFb"
 "SetMustRun__23TreeTableEntryQuickDataFb":
-/* 801639B0 0015F650  4E 80 00 20 */	blr 
+/* 801639B0 0015F650  4E 80 00 20 */	blr
 
 .global "SetAllowDynamicAds__23TreeTableEntryQuickDataFb"
 "SetAllowDynamicAds__23TreeTableEntryQuickDataFb":
-/* 801639B4 0015F654  4E 80 00 20 */	blr 
+/* 801639B4 0015F654  4E 80 00 20 */	blr
 
 .global "SetAd__23TreeTableEntryQuickDataFiRC12ITreeTableAd"
 "SetAd__23TreeTableEntryQuickDataFiRC12ITreeTableAd":
-/* 801639B8 0015F658  4E 80 00 20 */	blr 
+/* 801639B8 0015F658  4E 80 00 20 */	blr
 
 .global "SetActionTreeID__23TreeTableEntryQuickDataFs"
 "SetActionTreeID__23TreeTableEntryQuickDataFs":
-/* 801639BC 0015F65C  4E 80 00 20 */	blr 
+/* 801639BC 0015F65C  4E 80 00 20 */	blr
 
 .global "SetCheckTreeID__23TreeTableEntryQuickDataFs"
 "SetCheckTreeID__23TreeTableEntryQuickDataFs":
-/* 801639C0 0015F660  4E 80 00 20 */	blr 
+/* 801639C0 0015F660  4E 80 00 20 */	blr
 
 .global "SetAttenuation__23TreeTableEntryQuickDataFQ215ITreeTableEntry11Attenuation"
 "SetAttenuation__23TreeTableEntryQuickDataFQ215ITreeTableEntry11Attenuation":
-/* 801639C4 0015F664  4E 80 00 20 */	blr 
+/* 801639C4 0015F664  4E 80 00 20 */	blr
 
 .global "SetCustomAttenuation__23TreeTableEntryQuickDataFf"
 "SetCustomAttenuation__23TreeTableEntryQuickDataFf":
-/* 801639C8 0015F668  4E 80 00 20 */	blr 
+/* 801639C8 0015F668  4E 80 00 20 */	blr
 
 .global "SetAutonomyThreshold__23TreeTableEntryQuickDataFs"
 "SetAutonomyThreshold__23TreeTableEntryQuickDataFs":
-/* 801639CC 0015F66C  4E 80 00 20 */	blr 
+/* 801639CC 0015F66C  4E 80 00 20 */	blr
 
 .global "SetName__23TreeTableEntryQuickDataFRC8BString2"
 "SetName__23TreeTableEntryQuickDataFRC8BString2":
-/* 801639D0 0015F670  4E 80 00 20 */	blr 
+/* 801639D0 0015F670  4E 80 00 20 */	blr
 
 .global "SetUseCustomActivation__23TreeTableEntryQuickDataFb"
 "SetUseCustomActivation__23TreeTableEntryQuickDataFb":
-/* 801639D4 0015F674  4E 80 00 20 */	blr 
+/* 801639D4 0015F674  4E 80 00 20 */	blr
 
 .global "SetActivationSubtile__23TreeTableEntryQuickDataFUcUc"
 "SetActivationSubtile__23TreeTableEntryQuickDataFUcUc":
-/* 801639D8 0015F678  4E 80 00 20 */	blr 
+/* 801639D8 0015F678  4E 80 00 20 */	blr
 
 .global "SetActivationExtents__23TreeTableEntryQuickDataFUcUcUcUc"
 "SetActivationExtents__23TreeTableEntryQuickDataFUcUcUcUc":
-/* 801639DC 0015F67C  4E 80 00 20 */	blr 
+/* 801639DC 0015F67C  4E 80 00 20 */	blr
 
 .global "LoadFromIndex__18TreeTableQuickDataFUii"
 "LoadFromIndex__18TreeTableQuickDataFUii":
 /* 801639E0 0015F680  38 60 00 00 */	li r3, 0
-/* 801639E4 0015F684  4E 80 00 20 */	blr 
+/* 801639E4 0015F684  4E 80 00 20 */	blr
 
 .global "GetResourceName__18TreeTableQuickDataCFR12StringBuffer"
 "GetResourceName__18TreeTableQuickDataCFR12StringBuffer":
 /* 801639E8 0015F688  38 60 00 00 */	li r3, 0
-/* 801639EC 0015F68C  4E 80 00 20 */	blr 
+/* 801639EC 0015F68C  4E 80 00 20 */	blr
 
 .global "SetResourceName__18TreeTableQuickDataFRC12StringBuffer"
 "SetResourceName__18TreeTableQuickDataFRC12StringBuffer":
 /* 801639F0 0015F690  38 60 00 00 */	li r3, 0
-/* 801639F4 0015F694  4E 80 00 20 */	blr 
+/* 801639F4 0015F694  4E 80 00 20 */	blr
 
 .global "LoadOnlyNameAndIDFromIndex__18TreeTableQuickDataFUii"
 "LoadOnlyNameAndIDFromIndex__18TreeTableQuickDataFUii":
 /* 801639F8 0015F698  38 60 00 00 */	li r3, 0
-/* 801639FC 0015F69C  4E 80 00 20 */	blr 
+/* 801639FC 0015F69C  4E 80 00 20 */	blr
 
 .global "GetID__18TreeTableQuickDataCFv"
 "GetID__18TreeTableQuickDataCFv":
@@ -8180,7 +8180,7 @@ lbl_80163A28:
 /* 80163A28 0015F6C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80163A2C 0015F6CC  7C 08 03 A6 */	mtlr r0
 /* 80163A30 0015F6D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163A34 0015F6D4  4E 80 00 20 */	blr 
+/* 80163A34 0015F6D4  4E 80 00 20 */	blr
 
 .global "CountMotiveAds__18TreeTableQuickDataCFv"
 "CountMotiveAds__18TreeTableQuickDataCFv":
@@ -8190,7 +8190,7 @@ lbl_80163A28:
 /* 80163A44 0015F6E4  4B FF FD 7C */	b "CountMotiveAds__9TreeTableCFv"
 lbl_80163A48:
 /* 80163A48 0015F6E8  38 60 00 00 */	li r3, 0
-/* 80163A4C 0015F6EC  4E 80 00 20 */	blr 
+/* 80163A4C 0015F6EC  4E 80 00 20 */	blr
 
 .global "CountEntries__18TreeTableQuickDataCFv"
 "CountEntries__18TreeTableQuickDataCFv":
@@ -8200,7 +8200,7 @@ lbl_80163A48:
 /* 80163A5C 0015F6FC  4B FF FA F8 */	b "CountEntries__9TreeTableCFv"
 lbl_80163A60:
 /* 80163A60 0015F700  38 60 00 00 */	li r3, 0
-/* 80163A64 0015F704  4E 80 00 20 */	blr 
+/* 80163A64 0015F704  4E 80 00 20 */	blr
 
 .global "GetPrefixCheckTreeID__18TreeTableQuickDataCFv"
 "GetPrefixCheckTreeID__18TreeTableQuickDataCFv":
@@ -8219,128 +8219,128 @@ lbl_80163A90:
 /* 80163A90 0015F730  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80163A94 0015F734  7C 08 03 A6 */	mtlr r0
 /* 80163A98 0015F738  38 21 00 10 */	addi r1, r1, 0x10
-/* 80163A9C 0015F73C  4E 80 00 20 */	blr 
+/* 80163A9C 0015F73C  4E 80 00 20 */	blr
 
 .global "GetNthEntry__18TreeTableQuickDataFi"
 "GetNthEntry__18TreeTableQuickDataFi":
 /* 80163AA0 0015F740  38 60 00 00 */	li r3, 0
-/* 80163AA4 0015F744  4E 80 00 20 */	blr 
+/* 80163AA4 0015F744  4E 80 00 20 */	blr
 
 .global "GetEntryByIndex__18TreeTableQuickDataFi"
 "GetEntryByIndex__18TreeTableQuickDataFi":
 /* 80163AA8 0015F748  38 60 00 00 */	li r3, 0
-/* 80163AAC 0015F74C  4E 80 00 20 */	blr 
+/* 80163AAC 0015F74C  4E 80 00 20 */	blr
 
 .global "GetNthOrderedEntry__18TreeTableQuickDataFi"
 "GetNthOrderedEntry__18TreeTableQuickDataFi":
 /* 80163AB0 0015F750  38 60 00 00 */	li r3, 0
-/* 80163AB4 0015F754  4E 80 00 20 */	blr 
+/* 80163AB4 0015F754  4E 80 00 20 */	blr
 
 .global "SwapEntries__18TreeTableQuickDataFii"
 "SwapEntries__18TreeTableQuickDataFii":
-/* 80163AB8 0015F758  4E 80 00 20 */	blr 
+/* 80163AB8 0015F758  4E 80 00 20 */	blr
 
 .global "SetName__18TreeTableQuickDataFRC12StringBuffer"
 "SetName__18TreeTableQuickDataFRC12StringBuffer":
-/* 80163ABC 0015F75C  4E 80 00 20 */	blr 
+/* 80163ABC 0015F75C  4E 80 00 20 */	blr
 
 .global "AreOrderIndicesValid__18TreeTableQuickDataCFv"
 "AreOrderIndicesValid__18TreeTableQuickDataCFv":
 /* 80163AC0 0015F760  38 60 00 01 */	li r3, 1
-/* 80163AC4 0015F764  4E 80 00 20 */	blr 
+/* 80163AC4 0015F764  4E 80 00 20 */	blr
 
 .global "Save__18TreeTableQuickDataFv"
 "Save__18TreeTableQuickDataFv":
 /* 80163AC8 0015F768  38 60 FF D3 */	li r3, -45
-/* 80163ACC 0015F76C  4E 80 00 20 */	blr 
+/* 80163ACC 0015F76C  4E 80 00 20 */	blr
 
 .global "Save__18TreeTableQuickDataFUis"
 "Save__18TreeTableQuickDataFUis":
 /* 80163AD0 0015F770  38 60 FF D3 */	li r3, -45
-/* 80163AD4 0015F774  4E 80 00 20 */	blr 
+/* 80163AD4 0015F774  4E 80 00 20 */	blr
 
 .global "GetIsTuned__18TreeTableQuickDataCFv"
 "GetIsTuned__18TreeTableQuickDataCFv":
 /* 80163AD8 0015F778  38 60 00 00 */	li r3, 0
-/* 80163ADC 0015F77C  4E 80 00 20 */	blr 
+/* 80163ADC 0015F77C  4E 80 00 20 */	blr
 
 .global "SetIsTuned__18TreeTableQuickDataFb"
 "SetIsTuned__18TreeTableQuickDataFb":
-/* 80163AE0 0015F780  4E 80 00 20 */	blr 
+/* 80163AE0 0015F780  4E 80 00 20 */	blr
 
 .global "AddEntry__18TreeTableQuickDataFss"
 "AddEntry__18TreeTableQuickDataFss":
 /* 80163AE4 0015F784  38 60 00 00 */	li r3, 0
-/* 80163AE8 0015F788  4E 80 00 20 */	blr 
+/* 80163AE8 0015F788  4E 80 00 20 */	blr
 
 .global "RemoveEntry__18TreeTableQuickDataFPC15ITreeTableEntry"
 "RemoveEntry__18TreeTableQuickDataFPC15ITreeTableEntry":
 /* 80163AEC 0015F78C  38 60 00 00 */	li r3, 0
-/* 80163AF0 0015F790  4E 80 00 20 */	blr 
+/* 80163AF0 0015F790  4E 80 00 20 */	blr
 
 .global "SetPrefixCheckTreeID__18TreeTableQuickDataFs"
 "SetPrefixCheckTreeID__18TreeTableQuickDataFs":
-/* 80163AF4 0015F794  4E 80 00 20 */	blr 
+/* 80163AF4 0015F794  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__39ObjectDataFactoryDatabase<10ITreeTable>CFv"
 "GetDataSourceType__39ObjectDataFactoryDatabase<10ITreeTable>CFv":
 /* 80163AF8 0015F798  38 60 00 04 */	li r3, 4
-/* 80163AFC 0015F79C  4E 80 00 20 */	blr 
+/* 80163AFC 0015F79C  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__39ObjectDataFactoryDatabase<10ObjFnTable>CFv"
 "GetDataSourceType__39ObjectDataFactoryDatabase<10ObjFnTable>CFv":
 /* 80163B00 0015F7A0  38 60 00 04 */	li r3, 4
-/* 80163B04 0015F7A4  4E 80 00 20 */	blr 
+/* 80163B04 0015F7A4  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__43ObjectDataFactoryDatabase<14FloatConstants>CFv"
 "GetDataSourceType__43ObjectDataFactoryDatabase<14FloatConstants>CFv":
 /* 80163B08 0015F7A8  38 60 00 04 */	li r3, 4
-/* 80163B0C 0015F7AC  4E 80 00 20 */	blr 
+/* 80163B0C 0015F7AC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__37ObjectDataFactoryDatabase<9StringSet>CFv"
 "GetDataSourceType__37ObjectDataFactoryDatabase<9StringSet>CFv":
 /* 80163B10 0015F7B0  38 60 00 04 */	li r3, 4
-/* 80163B14 0015F7B4  4E 80 00 20 */	blr 
+/* 80163B14 0015F7B4  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__34ObjectDataFactoryIFF<10ITreeTable>CFv"
 "GetDataSourceType__34ObjectDataFactoryIFF<10ITreeTable>CFv":
 /* 80163B18 0015F7B8  38 60 00 02 */	li r3, 2
-/* 80163B1C 0015F7BC  4E 80 00 20 */	blr 
+/* 80163B1C 0015F7BC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__34ObjectDataFactoryIFF<10ObjFnTable>CFv"
 "GetDataSourceType__34ObjectDataFactoryIFF<10ObjFnTable>CFv":
 /* 80163B20 0015F7C0  38 60 00 02 */	li r3, 2
-/* 80163B24 0015F7C4  4E 80 00 20 */	blr 
+/* 80163B24 0015F7C4  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__38ObjectDataFactoryIFF<14FloatConstants>CFv"
 "GetDataSourceType__38ObjectDataFactoryIFF<14FloatConstants>CFv":
 /* 80163B28 0015F7C8  38 60 00 02 */	li r3, 2
-/* 80163B2C 0015F7CC  4E 80 00 20 */	blr 
+/* 80163B2C 0015F7CC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__32ObjectDataFactoryIFF<9StringSet>CFv"
 "GetDataSourceType__32ObjectDataFactoryIFF<9StringSet>CFv":
 /* 80163B30 0015F7D0  38 60 00 02 */	li r3, 2
-/* 80163B34 0015F7D4  4E 80 00 20 */	blr 
+/* 80163B34 0015F7D4  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__40ObjectDataFactoryQuickData<10ITreeTable>CFv"
 "GetDataSourceType__40ObjectDataFactoryQuickData<10ITreeTable>CFv":
 /* 80163B38 0015F7D8  38 60 00 01 */	li r3, 1
-/* 80163B3C 0015F7DC  4E 80 00 20 */	blr 
+/* 80163B3C 0015F7DC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__40ObjectDataFactoryQuickData<10ObjFnTable>CFv"
 "GetDataSourceType__40ObjectDataFactoryQuickData<10ObjFnTable>CFv":
 /* 80163B40 0015F7E0  38 60 00 01 */	li r3, 1
-/* 80163B44 0015F7E4  4E 80 00 20 */	blr 
+/* 80163B44 0015F7E4  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__44ObjectDataFactoryQuickData<14FloatConstants>CFv"
 "GetDataSourceType__44ObjectDataFactoryQuickData<14FloatConstants>CFv":
 /* 80163B48 0015F7E8  38 60 00 01 */	li r3, 1
-/* 80163B4C 0015F7EC  4E 80 00 20 */	blr 
+/* 80163B4C 0015F7EC  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__38ObjectDataFactoryQuickData<9StringSet>CFv"
 "GetDataSourceType__38ObjectDataFactoryQuickData<9StringSet>CFv":
 /* 80163B50 0015F7F0  38 60 00 01 */	li r3, 1
-/* 80163B54 0015F7F4  4E 80 00 20 */	blr 
+/* 80163B54 0015F7F4  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Ul>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>_v"
 "uninitialized_fill_n_ptr<43ConsoleAutoRefCount<20TreeTableAdQuickData>,Ul>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>_v":
@@ -8372,7 +8372,7 @@ lbl_80163A90:
 /* 80163BBC 0015F85C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80163BC0 0015F860  7C 08 03 A6 */	mtlr r0
 /* 80163BC4 0015F864  38 21 00 30 */	addi r1, r1, 0x30
-/* 80163BC8 0015F868  4E 80 00 20 */	blr 
+/* 80163BC8 0015F868  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>,Ul,43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>Q25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>,Ul,43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>UlRC43ConsoleAutoRefCount<20TreeTableAdQuickData>Q25eastl22integral_constant<b,0>_v":
@@ -8410,7 +8410,7 @@ lbl_80163C2C:
 /* 80163C3C 0015F8DC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80163C40 0015F8E0  7C 08 03 A6 */	mtlr r0
 /* 80163C44 0015F8E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163C48 0015F8E8  4E 80 00 20 */	blr 
+/* 80163C48 0015F8E8  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "uninitialized_copy_ptr<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>,P43ConsoleAutoRefCount<20TreeTableAdQuickData>>__5eastlFP43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>P43ConsoleAutoRefCount<20TreeTableAdQuickData>_P43ConsoleAutoRefCount<20TreeTableAdQuickData>":
@@ -8455,7 +8455,7 @@ lbl_80163C2C:
 /* 80163CE4 0015F984  80 63 00 00 */	lwz r3, 0(r3)
 /* 80163CE8 0015F988  7C 08 03 A6 */	mtlr r0
 /* 80163CEC 0015F98C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80163CF0 0015F990  4E 80 00 20 */	blr 
+/* 80163CF0 0015F990  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>,Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>>__5eastlFQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl22integral_constant<b,0>_Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>"
 "uninitialized_copy_impl<Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>,Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>>__5eastlFQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Q25eastl22integral_constant<b,0>_Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>":
@@ -8503,7 +8503,7 @@ lbl_80163D68:
 /* 80163D8C 0015FA2C  80 61 00 08 */	lwz r3, 8(r1)
 /* 80163D90 0015FA30  7C 08 03 A6 */	mtlr r0
 /* 80163D94 0015FA34  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163D98 0015FA38  4E 80 00 20 */	blr 
+/* 80163D98 0015FA38  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Ul>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>_v"
 "uninitialized_fill_n_ptr<46ConsoleAutoRefCount<23TreeTableEntryQuickData>,Ul>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>_v":
@@ -8535,7 +8535,7 @@ lbl_80163D68:
 /* 80163E00 0015FAA0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80163E04 0015FAA4  7C 08 03 A6 */	mtlr r0
 /* 80163E08 0015FAA8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80163E0C 0015FAAC  4E 80 00 20 */	blr 
+/* 80163E0C 0015FAAC  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>,Ul,46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>Q25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>,Ul,46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>UlRC46ConsoleAutoRefCount<23TreeTableEntryQuickData>Q25eastl22integral_constant<b,0>_v":
@@ -8573,7 +8573,7 @@ lbl_80163E70:
 /* 80163E80 0015FB20  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80163E84 0015FB24  7C 08 03 A6 */	mtlr r0
 /* 80163E88 0015FB28  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163E8C 0015FB2C  4E 80 00 20 */	blr 
+/* 80163E8C 0015FB2C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "uninitialized_copy_ptr<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,P46ConsoleAutoRefCount<23TreeTableEntryQuickData>>__5eastlFP46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>P46ConsoleAutoRefCount<23TreeTableEntryQuickData>_P46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
@@ -8618,7 +8618,7 @@ lbl_80163E70:
 /* 80163F28 0015FBC8  80 63 00 00 */	lwz r3, 0(r3)
 /* 80163F2C 0015FBCC  7C 08 03 A6 */	mtlr r0
 /* 80163F30 0015FBD0  38 21 00 50 */	addi r1, r1, 0x50
-/* 80163F34 0015FBD4  4E 80 00 20 */	blr 
+/* 80163F34 0015FBD4  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>,Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>>__5eastlFQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl22integral_constant<b,0>_Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>"
 "uninitialized_copy_impl<Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>,Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>>__5eastlFQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Q25eastl22integral_constant<b,0>_Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>":
@@ -8666,35 +8666,35 @@ lbl_80163FAC:
 /* 80163FD0 0015FC70  80 61 00 08 */	lwz r3, 8(r1)
 /* 80163FD4 0015FC74  7C 08 03 A6 */	mtlr r0
 /* 80163FD8 0015FC78  38 21 00 20 */	addi r1, r1, 0x20
-/* 80163FDC 0015FC7C  4E 80 00 20 */	blr 
+/* 80163FDC 0015FC7C  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Fv"
 "__pp__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>Fv":
 /* 80163FE0 0015FC80  80 83 00 00 */	lwz r4, 0(r3)
 /* 80163FE4 0015FC84  38 04 00 04 */	addi r0, r4, 4
 /* 80163FE8 0015FC88  90 03 00 00 */	stw r0, 0(r3)
-/* 80163FEC 0015FC8C  4E 80 00 20 */	blr 
+/* 80163FEC 0015FC8C  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>CFv"
 "__ml__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>CFv":
 /* 80163FF0 0015FC90  80 63 00 00 */	lwz r3, 0(r3)
-/* 80163FF4 0015FC94  4E 80 00 20 */	blr 
+/* 80163FF4 0015FC94  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>FRCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>"
 "__ct__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>FRCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>":
 /* 80163FF8 0015FC98  80 04 00 00 */	lwz r0, 0(r4)
 /* 80163FFC 0015FC9C  90 03 00 00 */	stw r0, 0(r3)
-/* 80164000 0015FCA0  4E 80 00 20 */	blr 
+/* 80164000 0015FCA0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>FRCP43ConsoleAutoRefCount<20TreeTableAdQuickData>"
 "__ct__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>FRCP43ConsoleAutoRefCount<20TreeTableAdQuickData>":
 /* 80164004 0015FCA4  80 04 00 00 */	lwz r0, 0(r4)
 /* 80164008 0015FCA8  90 03 00 00 */	stw r0, 0(r3)
-/* 8016400C 0015FCAC  4E 80 00 20 */	blr 
+/* 8016400C 0015FCAC  4E 80 00 20 */	blr
 
 .global "base__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>CFv"
 "base__Q25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>CFv":
-/* 80164010 0015FCB0  4E 80 00 20 */	blr 
+/* 80164010 0015FCB0  4E 80 00 20 */	blr
 
 .global "__ne<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>__5eastlFRCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>RCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>_b"
 "__ne<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>__5eastlFRCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>RCQ25eastl66generic_iterator<P43ConsoleAutoRefCount<20TreeTableAdQuickData>,v>_b":
@@ -8719,35 +8719,35 @@ lbl_80163FAC:
 /* 8016405C 0015FCFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80164060 0015FD00  7C 08 03 A6 */	mtlr r0
 /* 80164064 0015FD04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80164068 0015FD08  4E 80 00 20 */	blr 
+/* 80164068 0015FD08  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Fv"
 "__pp__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>Fv":
 /* 8016406C 0015FD0C  80 83 00 00 */	lwz r4, 0(r3)
 /* 80164070 0015FD10  38 04 00 04 */	addi r0, r4, 4
 /* 80164074 0015FD14  90 03 00 00 */	stw r0, 0(r3)
-/* 80164078 0015FD18  4E 80 00 20 */	blr 
+/* 80164078 0015FD18  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>CFv"
 "__ml__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>CFv":
 /* 8016407C 0015FD1C  80 63 00 00 */	lwz r3, 0(r3)
-/* 80164080 0015FD20  4E 80 00 20 */	blr 
+/* 80164080 0015FD20  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>FRCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>"
 "__ct__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>FRCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>":
 /* 80164084 0015FD24  80 04 00 00 */	lwz r0, 0(r4)
 /* 80164088 0015FD28  90 03 00 00 */	stw r0, 0(r3)
-/* 8016408C 0015FD2C  4E 80 00 20 */	blr 
+/* 8016408C 0015FD2C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>FRCP46ConsoleAutoRefCount<23TreeTableEntryQuickData>"
 "__ct__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>FRCP46ConsoleAutoRefCount<23TreeTableEntryQuickData>":
 /* 80164090 0015FD30  80 04 00 00 */	lwz r0, 0(r4)
 /* 80164094 0015FD34  90 03 00 00 */	stw r0, 0(r3)
-/* 80164098 0015FD38  4E 80 00 20 */	blr 
+/* 80164098 0015FD38  4E 80 00 20 */	blr
 
 .global "base__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>CFv"
 "base__Q25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>CFv":
-/* 8016409C 0015FD3C  4E 80 00 20 */	blr 
+/* 8016409C 0015FD3C  4E 80 00 20 */	blr
 
 .global "__ne<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>__5eastlFRCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>RCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>_b"
 "__ne<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>__5eastlFRCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>RCQ25eastl69generic_iterator<P46ConsoleAutoRefCount<23TreeTableEntryQuickData>,v>_b":
@@ -8772,7 +8772,7 @@ lbl_80163FAC:
 /* 801640E8 0015FD88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801640EC 0015FD8C  7C 08 03 A6 */	mtlr r0
 /* 801640F0 0015FD90  38 21 00 10 */	addi r1, r1, 0x10
-/* 801640F4 0015FD94  4E 80 00 20 */	blr 
+/* 801640F4 0015FD94  4E 80 00 20 */	blr
 
 .global "__cl__Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>CFRCQ25eastl23pair<Ui,12ObjectDataID>RCQ25eastl23pair<Ui,12ObjectDataID>"
 "__cl__Q25eastl39less<Q25eastl23pair<Ui,12ObjectDataID>>CFRCQ25eastl23pair<Ui,12ObjectDataID>RCQ25eastl23pair<Ui,12ObjectDataID>":
@@ -8783,122 +8783,482 @@ lbl_80163FAC:
 .global "GetDataSourceType__20ResourceBehaviorTreeCFv"
 "GetDataSourceType__20ResourceBehaviorTreeCFv":
 /* 80164104 0015FDA4  38 60 00 08 */	li r3, 8
-/* 80164108 0015FDA8  4E 80 00 20 */	blr 
+/* 80164108 0015FDA8  4E 80 00 20 */	blr
 
 .global "GetDataSourceType__15IFFBehaviorTreeCFv"
 "GetDataSourceType__15IFFBehaviorTreeCFv":
 /* 8016410C 0015FDAC  38 60 00 02 */	li r3, 2
-/* 80164110 0015FDB0  4E 80 00 20 */	blr 
+/* 80164110 0015FDB0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042BF90
 lbl_8042BF90:
-	.incbin "baserom.dol", 0x428090, 0x14
+	# ROM: 0x428090
+	.asciz "EASTL basic_string"
+	.byte 0x00
+
 .global lbl_8042BFA4
 lbl_8042BFA4:
-	.incbin "baserom.dol", 0x4280A4, 0x14
+	# ROM: 0x4280A4
+	.asciz "??????????????????"
+	.byte 0x00
+
 .global lbl_8042BFB8
 lbl_8042BFB8:
-	.incbin "baserom.dol", 0x4280B8, 0xC
+	# ROM: 0x4280B8
+	.asciz "EASTL map"
+	.byte 0x00, 0x00
+
 .global lbl_8042BFC4
 lbl_8042BFC4:
-	.incbin "baserom.dol", 0x4280C4, 0x14
+	# ROM: 0x4280C4
+	.asciz "EASTL vector"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__vt__18TreeTableQuickData"
 "__vt__18TreeTableQuickData":
-	.incbin "baserom.dol", 0x4280D8, 0x90
+	# ROM: 0x4280D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__18TreeTableQuickDataFUiPPv" ;# ptr (0x80163040)
+	.4byte "AddRef__18TreeTableQuickDataFv" ;# ptr (0x801630E0)
+	.4byte "Release__18TreeTableQuickDataFv" ;# ptr (0x801630F4)
+	.4byte "GetDataID__18TreeTableQuickDataCFv" ;# ptr (0x80162A80)
+	.4byte "LoadFromDataID__18TreeTableQuickDataFRC12ObjectDataID" ;# ptr (0x80162A88)
+	.4byte "LoadFromIndex__18TreeTableQuickDataFUii" ;# ptr (0x801639E0)
+	.4byte "SaveDataByID__18TreeTableQuickDataFRC12ObjectDataID" ;# ptr (0x80162B70)
+	.4byte "GetResourceName__18TreeTableQuickDataCFR12StringBuffer" ;# ptr (0x801639E8)
+	.4byte "SetResourceName__18TreeTableQuickDataFRC12StringBuffer" ;# ptr (0x801639F0)
+	.4byte "GetDataSourceType__18TreeTableQuickDataCFv" ;# ptr (0x80162B78)
+	.4byte "LoadOnlyNameAndIDFromIndex__18TreeTableQuickDataFUii" ;# ptr (0x801639F8)
+	.4byte "GetID__18TreeTableQuickDataCFv" ;# ptr (0x80163A00)
+	.4byte "CountMotiveAds__18TreeTableQuickDataCFv" ;# ptr (0x80163A38)
+	.4byte "CountEntries__18TreeTableQuickDataCFv" ;# ptr (0x80163A50)
+	.4byte "GetNthEntry__18TreeTableQuickDataCFi" ;# ptr (0x80162BE0)
+	.4byte "GetNthEntry__18TreeTableQuickDataFi" ;# ptr (0x80163AA0)
+	.4byte "GetEntryByIndex__18TreeTableQuickDataCFi" ;# ptr (0x80162CD0)
+	.4byte "GetEntryByIndex__18TreeTableQuickDataFi" ;# ptr (0x80163AA8)
+	.4byte "GetEntryByTreeID__18TreeTableQuickDataCFss" ;# ptr (0x80162D40)
+	.4byte "GetNthOrderedEntry__18TreeTableQuickDataCFi" ;# ptr (0x80162DC0)
+	.4byte "GetNthOrderedEntry__18TreeTableQuickDataFi" ;# ptr (0x80163AB0)
+	.4byte "AddEntry__18TreeTableQuickDataFss" ;# ptr (0x80163AE4)
+	.4byte "RemoveEntry__18TreeTableQuickDataFPC15ITreeTableEntry" ;# ptr (0x80163AEC)
+	.4byte "GetPrefixCheckTreeID__18TreeTableQuickDataCFv" ;# ptr (0x80163A68)
+	.4byte "SetPrefixCheckTreeID__18TreeTableQuickDataFs" ;# ptr (0x80163AF4)
+	.4byte "SwapEntries__18TreeTableQuickDataFii" ;# ptr (0x80163AB8)
+	.4byte "AreOrderIndicesValid__18TreeTableQuickDataCFv" ;# ptr (0x80163AC0)
+	.4byte "SetName__18TreeTableQuickDataFRC12StringBuffer" ;# ptr (0x80163ABC)
+	.4byte "Save__18TreeTableQuickDataFUis" ;# ptr (0x80163AD0)
+	.4byte "Save__18TreeTableQuickDataFv" ;# ptr (0x80163AC8)
+	.4byte "GetIsTuned__18TreeTableQuickDataCFv" ;# ptr (0x80163AD8)
+	.4byte "SetIsTuned__18TreeTableQuickDataFb" ;# ptr (0x80163AE0)
+	.4byte "__dt__18TreeTableQuickDataFv" ;# ptr (0x80162A08)
+	.4byte "Load__18TreeTableQuickDataFUis" ;# ptr (0x80162B80)
+
 .global "__vt__23TreeTableEntryQuickData"
 "__vt__23TreeTableEntryQuickData":
-	.incbin "baserom.dol", 0x428168, 0x134
+	# ROM: 0x428168
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__23TreeTableEntryQuickDataFUiPPv" ;# ptr (0x80162F38)
+	.4byte "AddRef__23TreeTableEntryQuickDataFv" ;# ptr (0x80162FD8)
+	.4byte "Release__23TreeTableEntryQuickDataFv" ;# ptr (0x80162FEC)
+	.4byte "GetOrderIndex__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163824)
+	.4byte "SetOrderIndex__23TreeTableEntryQuickDataFi" ;# ptr (0x80163964)
+	.4byte "GetIndex__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016381C)
+	.4byte "GetAvailableToVisitors__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016382C)
+	.4byte "SetAvailableToVisitors__23TreeTableEntryQuickDataFb" ;# ptr (0x80163968)
+	.4byte "GetCanJoin__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163834)
+	.4byte "SetCanJoin__23TreeTableEntryQuickDataFb" ;# ptr (0x8016396C)
+	.4byte "GetImmediate__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016383C)
+	.4byte "SetImmediate__23TreeTableEntryQuickDataFb" ;# ptr (0x80163970)
+	.4byte "GetAllowConsecutive__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163844)
+	.4byte "SetAllowConsecutive__23TreeTableEntryQuickDataFb" ;# ptr (0x80163974)
+	.4byte "GetAvailableToGhosts__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016384C)
+	.4byte "SetAvailableToGhosts__23TreeTableEntryQuickDataFb" ;# ptr (0x80163978)
+	.4byte "GetAvailableToAdults__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163854)
+	.4byte "SetAvailableToAdults__23TreeTableEntryQuickDataFb" ;# ptr (0x8016397C)
+	.4byte "GetAvailableToVisitingPlayers__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638AC)
+	.4byte "SetAvailableToVisitingPlayers__23TreeTableEntryQuickDataFb" ;# ptr (0x801639A8)
+	.4byte "GetAvailableToCats__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016385C)
+	.4byte "SetAvailableToCats__23TreeTableEntryQuickDataFb" ;# ptr (0x80163980)
+	.4byte "GetAvailableToLargeDogs__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163864)
+	.4byte "SetAvailableToLargeDogs__23TreeTableEntryQuickDataFb" ;# ptr (0x80163984)
+	.4byte "GetAvailableToSmallDogs__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016386C)
+	.4byte "SetAvailableToSmallDogs__23TreeTableEntryQuickDataFb" ;# ptr (0x80163988)
+	.4byte "GetAvailableToChimps__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163874)
+	.4byte "SetAvailableToChimps__23TreeTableEntryQuickDataFb" ;# ptr (0x8016398C)
+	.4byte "GetAvailableToBoars__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016387C)
+	.4byte "SetAvailableToBoars__23TreeTableEntryQuickDataFb" ;# ptr (0x80163990)
+	.4byte "GetAvailableInDemo__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163884)
+	.4byte "SetAvailableInDemo__23TreeTableEntryQuickDataFb" ;# ptr (0x80163994)
+	.4byte "GetAllowOnSelf__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016388C)
+	.4byte "SetAllowOnSelf__23TreeTableEntryQuickDataFb" ;# ptr (0x80163998)
+	.4byte "GetJoinIndex__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163894)
+	.4byte "SetJoinIndex__23TreeTableEntryQuickDataFi" ;# ptr (0x8016399C)
+	.4byte "GetDebugOnly__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016389C)
+	.4byte "SetDebugOnly__23TreeTableEntryQuickDataFb" ;# ptr (0x801639A0)
+	.4byte "GetAllowDynamicAds__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638D4)
+	.4byte "SetAllowDynamicAds__23TreeTableEntryQuickDataFb" ;# ptr (0x801639B4)
+	.4byte "GetAutoFirstSelect__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638A4)
+	.4byte "SetAutoFirstSelect__23TreeTableEntryQuickDataFb" ;# ptr (0x801639A4)
+	.4byte "GetManualOnly__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638B4)
+	.4byte "CountAds__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638BC)
+	.4byte "GetRangeRef__23TreeTableEntryQuickDataCFi" ;# ptr (0x801638DC)
+	.4byte "GetMinRef__23TreeTableEntryQuickDataCFi" ;# ptr (0x801638E4)
+	.4byte "GetPersonalityVarRef__23TreeTableEntryQuickDataCFi" ;# ptr (0x801638EC)
+	.4byte "GetAd__23TreeTableEntryQuickDataCFi" ;# ptr (0x8016286C)
+	.4byte "GetAd__23TreeTableEntryQuickDataFi" ;# ptr (0x80163814)
+	.4byte "SetAd__23TreeTableEntryQuickDataFiRC12ITreeTableAd" ;# ptr (0x801639B8)
+	.4byte "GetActionTreeID__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638F4)
+	.4byte "SetActionTreeID__23TreeTableEntryQuickDataFs" ;# ptr (0x801639BC)
+	.4byte "GetCheckTreeID__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638FC)
+	.4byte "SetCheckTreeID__23TreeTableEntryQuickDataFs" ;# ptr (0x801639C0)
+	.4byte "GetAttenuation__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163904)
+	.4byte "SetAttenuation__23TreeTableEntryQuickDataFQ215ITreeTableEntry11Attenuation" ;# ptr (0x801639C4)
+	.4byte "GetAttenuationValue__23TreeTableEntryQuickDataCFb" ;# ptr (0x8016392C)
+	.4byte "GetCustomAttenuationValue__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163934)
+	.4byte "SetCustomAttenuation__23TreeTableEntryQuickDataFf" ;# ptr (0x801639C8)
+	.4byte "GetAutonomyThreshold__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016393C)
+	.4byte "SetAutonomyThreshold__23TreeTableEntryQuickDataFs" ;# ptr (0x801639CC)
+	.4byte "GetIgnorePrefixTree__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638C4)
+	.4byte "SetIgnorePrefixTree__23TreeTableEntryQuickDataFb" ;# ptr (0x801639AC)
+	.4byte "GetMustRun__23TreeTableEntryQuickDataCFv" ;# ptr (0x801638CC)
+	.4byte "SetMustRun__23TreeTableEntryQuickDataFb" ;# ptr (0x801639B0)
+	.4byte "GetName__23TreeTableEntryQuickDataCFv" ;# ptr (0x80162964)
+	.4byte "SetName__23TreeTableEntryQuickDataFRC8BString2" ;# ptr (0x801639D0)
+	.4byte "GetUseCustomActivation__23TreeTableEntryQuickDataCFv" ;# ptr (0x8016394C)
+	.4byte "SetUseCustomActivation__23TreeTableEntryQuickDataFb" ;# ptr (0x801639D4)
+	.4byte "GetActivationSubtile__23TreeTableEntryQuickDataCFRUcRUc" ;# ptr (0x80163954)
+	.4byte "SetActivationSubtile__23TreeTableEntryQuickDataFUcUc" ;# ptr (0x801639D8)
+	.4byte "GetActivationExtents__23TreeTableEntryQuickDataCFRUcRUcRUcRUc" ;# ptr (0x8016395C)
+	.4byte "SetActivationExtents__23TreeTableEntryQuickDataFUcUcUcUc" ;# ptr (0x801639DC)
+	.4byte "GetFlags__23TreeTableEntryQuickDataCFv" ;# ptr (0x80163944)
+	.4byte "__dt__23TreeTableEntryQuickDataFv" ;# ptr (0x801627F4)
+
 .global "__vt__20TreeTableAdQuickData"
 "__vt__20TreeTableAdQuickData":
-	.incbin "baserom.dol", 0x42829C, 0x3C
+	# ROM: 0x42829C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__20TreeTableAdQuickDataFUiPPv" ;# ptr (0x80162E30)
+	.4byte "AddRef__20TreeTableAdQuickDataFv" ;# ptr (0x80162ED0)
+	.4byte "Release__20TreeTableAdQuickDataFv" ;# ptr (0x80162EE4)
+	.4byte "__as__20TreeTableAdQuickDataFRC12ITreeTableAd" ;# ptr (0x80163800)
+	.4byte "GetPersonalityAd__20TreeTableAdQuickDataCFv" ;# ptr (0x801637E0)
+	.4byte "SetPersonalityAd__20TreeTableAdQuickDataFi" ;# ptr (0x80163804)
+	.4byte "GetMin__20TreeTableAdQuickDataCFv" ;# ptr (0x801637E8)
+	.4byte "SetMin__20TreeTableAdQuickDataFi" ;# ptr (0x80163808)
+	.4byte "GetMax__20TreeTableAdQuickDataCFv" ;# ptr (0x801637F0)
+	.4byte "SetMax__20TreeTableAdQuickDataFi" ;# ptr (0x8016380C)
+	.4byte "GetRange__20TreeTableAdQuickDataCFv" ;# ptr (0x801637F8)
+	.4byte "SetRange__20TreeTableAdQuickDataFi" ;# ptr (0x80163810)
+	.4byte "__dt__20TreeTableAdQuickDataFv" ;# ptr (0x801626E8)
+
 .global "__vt__39ObjectDataFactoryDatabase<10ITreeTable>"
 "__vt__39ObjectDataFactoryDatabase<10ITreeTable>":
-	.incbin "baserom.dol", 0x4282D8, 0x10
+	# ROM: 0x4282D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__39ObjectDataFactoryDatabase<10ITreeTable>CFv" ;# ptr (0x80007DD4)
+	.4byte "GetDataSourceType__39ObjectDataFactoryDatabase<10ITreeTable>CFv" ;# ptr (0x80163AF8)
+
 .global "__vt__34ObjectDataFactoryIFF<10ITreeTable>"
 "__vt__34ObjectDataFactoryIFF<10ITreeTable>":
-	.incbin "baserom.dol", 0x4282E8, 0x10
+	# ROM: 0x4282E8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__34ObjectDataFactoryIFF<10ITreeTable>CFv" ;# ptr (0x80007DCC)
+	.4byte "GetDataSourceType__34ObjectDataFactoryIFF<10ITreeTable>CFv" ;# ptr (0x80163B18)
+
 .global "__vt__40ObjectDataFactoryQuickData<10ITreeTable>"
 "__vt__40ObjectDataFactoryQuickData<10ITreeTable>":
-	.incbin "baserom.dol", 0x4282F8, 0x10
+	# ROM: 0x4282F8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__40ObjectDataFactoryQuickData<10ITreeTable>CFv" ;# ptr (0x80007D9C)
+	.4byte "GetDataSourceType__40ObjectDataFactoryQuickData<10ITreeTable>CFv" ;# ptr (0x80163B38)
+
 .global "__vt__31ObjectDataFactory<10ITreeTable>"
 "__vt__31ObjectDataFactory<10ITreeTable>":
-	.incbin "baserom.dol", 0x428308, 0x10
+	# ROM: 0x428308
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__39ObjectDataFactoryDatabase<10ObjFnTable>"
 "__vt__39ObjectDataFactoryDatabase<10ObjFnTable>":
-	.incbin "baserom.dol", 0x428318, 0x10
+	# ROM: 0x428318
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__39ObjectDataFactoryDatabase<10ObjFnTable>CFv" ;# ptr (0x80007D80)
+	.4byte "GetDataSourceType__39ObjectDataFactoryDatabase<10ObjFnTable>CFv" ;# ptr (0x80163B00)
+
 .global "__vt__34ObjectDataFactoryIFF<10ObjFnTable>"
 "__vt__34ObjectDataFactoryIFF<10ObjFnTable>":
-	.incbin "baserom.dol", 0x428328, 0x10
+	# ROM: 0x428328
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__34ObjectDataFactoryIFF<10ObjFnTable>CFv" ;# ptr (0x80007D78)
+	.4byte "GetDataSourceType__34ObjectDataFactoryIFF<10ObjFnTable>CFv" ;# ptr (0x80163B20)
+
 .global "__vt__40ObjectDataFactoryQuickData<10ObjFnTable>"
 "__vt__40ObjectDataFactoryQuickData<10ObjFnTable>":
-	.incbin "baserom.dol", 0x428338, 0x10
+	# ROM: 0x428338
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__40ObjectDataFactoryQuickData<10ObjFnTable>CFv" ;# ptr (0x80007D74)
+	.4byte "GetDataSourceType__40ObjectDataFactoryQuickData<10ObjFnTable>CFv" ;# ptr (0x80163B40)
+
 .global "__vt__31ObjectDataFactory<10ObjFnTable>"
 "__vt__31ObjectDataFactory<10ObjFnTable>":
-	.incbin "baserom.dol", 0x428348, 0x10
+	# ROM: 0x428348
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__43ObjectDataFactoryDatabase<14FloatConstants>"
 "__vt__43ObjectDataFactoryDatabase<14FloatConstants>":
-	.incbin "baserom.dol", 0x428358, 0x10
+	# ROM: 0x428358
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__43ObjectDataFactoryDatabase<14FloatConstants>CFv" ;# ptr (0x80007D94)
+	.4byte "GetDataSourceType__43ObjectDataFactoryDatabase<14FloatConstants>CFv" ;# ptr (0x80163B08)
+
 .global "__vt__38ObjectDataFactoryIFF<14FloatConstants>"
 "__vt__38ObjectDataFactoryIFF<14FloatConstants>":
-	.incbin "baserom.dol", 0x428368, 0x10
+	# ROM: 0x428368
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__38ObjectDataFactoryIFF<14FloatConstants>CFv" ;# ptr (0x80007D8C)
+	.4byte "GetDataSourceType__38ObjectDataFactoryIFF<14FloatConstants>CFv" ;# ptr (0x80163B28)
+
 .global "__vt__44ObjectDataFactoryQuickData<14FloatConstants>"
 "__vt__44ObjectDataFactoryQuickData<14FloatConstants>":
-	.incbin "baserom.dol", 0x428378, 0x10
+	# ROM: 0x428378
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__44ObjectDataFactoryQuickData<14FloatConstants>CFv" ;# ptr (0x80007D88)
+	.4byte "GetDataSourceType__44ObjectDataFactoryQuickData<14FloatConstants>CFv" ;# ptr (0x80163B48)
+
 .global "__vt__35ObjectDataFactory<14FloatConstants>"
 "__vt__35ObjectDataFactory<14FloatConstants>":
-	.incbin "baserom.dol", 0x428388, 0x10
+	# ROM: 0x428388
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__37ObjectDataFactoryDatabase<9StringSet>"
 "__vt__37ObjectDataFactoryDatabase<9StringSet>":
-	.incbin "baserom.dol", 0x428398, 0x10
+	# ROM: 0x428398
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__37ObjectDataFactoryDatabase<9StringSet>CFv" ;# ptr (0x80007D6C)
+	.4byte "GetDataSourceType__37ObjectDataFactoryDatabase<9StringSet>CFv" ;# ptr (0x80163B10)
+
 .global "__vt__32ObjectDataFactoryIFF<9StringSet>"
 "__vt__32ObjectDataFactoryIFF<9StringSet>":
-	.incbin "baserom.dol", 0x4283A8, 0x10
+	# ROM: 0x4283A8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__32ObjectDataFactoryIFF<9StringSet>CFv" ;# ptr (0x80007D64)
+	.4byte "GetDataSourceType__32ObjectDataFactoryIFF<9StringSet>CFv" ;# ptr (0x80163B30)
+
 .global "__vt__38ObjectDataFactoryQuickData<9StringSet>"
 "__vt__38ObjectDataFactoryQuickData<9StringSet>":
-	.incbin "baserom.dol", 0x4283B8, 0x10
+	# ROM: 0x4283B8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__cl__38ObjectDataFactoryQuickData<9StringSet>CFv" ;# ptr (0x80007D60)
+	.4byte "GetDataSourceType__38ObjectDataFactoryQuickData<9StringSet>CFv" ;# ptr (0x80163B50)
+
 .global "__vt__29ObjectDataFactory<9StringSet>"
 "__vt__29ObjectDataFactory<9StringSet>":
-	.incbin "baserom.dol", 0x4283C8, 0x10
+	# ROM: 0x4283C8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__9SoundInfo"
 "__vt__9SoundInfo":
-	.incbin "baserom.dol", 0x4283D8, 0x34
+	# ROM: 0x4283D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetDataID__9SoundInfoCFv" ;# ptr (0x800E2634)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetResourceName__9SoundInfoCFR12StringBuffer" ;# ptr (0x800E263C)
+	.4byte "SetResourceName__9SoundInfoFRC12StringBuffer" ;# ptr (0x800E267C)
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__16SmartDataFactory"
 "__vt__16SmartDataFactory":
-	.incbin "baserom.dol", 0x42840C, 0x24
+	# ROM: 0x42840C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__16SmartDataFactoryFUiPPv" ;# ptr (0x801603F4)
+	.4byte "AddRef__16SmartDataFactoryFv" ;# ptr (0x80160494)
+	.4byte "Release__16SmartDataFactoryFv" ;# ptr (0x801604A8)
+	.4byte "CreateObject__16SmartDataFactoryFUiRC12ObjectDataIDPPv" ;# ptr (0x80160704)
+	.4byte "CreateObject__16SmartDataFactoryFUiUiPPv" ;# ptr (0x80160694)
+	.4byte "SetDataProvider__16SmartDataFactoryFUiRC12ObjectDataIDQ217ISmartDataFactory13tDataProvider" ;# ptr (0x801605E0)
+	.4byte "__dt__16SmartDataFactoryFv" ;# ptr (0x80160398)
+
 .global "__vt__15IFFBehaviorTree"
 "__vt__15IFFBehaviorTree":
-	.incbin "baserom.dol", 0x428430, 0x3C
+	# ROM: 0x428430
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__15IFFBehaviorTreeFUiPPv" ;# ptr (0x8015F618)
+	.4byte "AddRef__15IFFBehaviorTreeFv" ;# ptr (0x8015F6B8)
+	.4byte "Release__15IFFBehaviorTreeFv" ;# ptr (0x8015F6CC)
+	.4byte "GetDataID__22ObjectDataBehaviorTreeCFv" ;# ptr (0x8015CF60)
+	.4byte "LoadFromDataID__15IFFBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015F344)
+	.4byte "LoadFromIndex__15IFFBehaviorTreeFUii" ;# ptr (0x8015F22C)
+	.4byte "SaveDataByID__15IFFBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015F470)
+	.4byte "GetResourceName__22ObjectDataBehaviorTreeCFR12StringBuffer" ;# ptr (0x8015E900)
+	.4byte "SetResourceName__22ObjectDataBehaviorTreeFRC12StringBuffer" ;# ptr (0x8015E95C)
+	.4byte "GetDataSourceType__15IFFBehaviorTreeCFv" ;# ptr (0x8016410C)
+	.4byte "LoadOnlyNameAndIDFromIndex__15IFFBehaviorTreeFUii" ;# ptr (0x8015F334)
+	.4byte "__dt__15IFFBehaviorTreeFv" ;# ptr (0x8015F1A8)
+	.4byte "GetFromDataID__15IFFBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015F460)
+
 .global "__vt__20ResourceBehaviorTree"
 "__vt__20ResourceBehaviorTree":
-	.incbin "baserom.dol", 0x42846C, 0x3C
+	# ROM: 0x42846C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__20ResourceBehaviorTreeFUiPPv" ;# ptr (0x8015F05C)
+	.4byte "AddRef__20ResourceBehaviorTreeFv" ;# ptr (0x8015F0FC)
+	.4byte "Release__20ResourceBehaviorTreeFv" ;# ptr (0x8015F110)
+	.4byte "GetDataID__22ObjectDataBehaviorTreeCFv" ;# ptr (0x8015CF60)
+	.4byte "LoadFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015EC68)
+	.4byte "LoadFromIndex__20ResourceBehaviorTreeFUii" ;# ptr (0x8015EB0C)
+	.4byte "SaveDataByID__20ResourceBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015EF00)
+	.4byte "GetResourceName__22ObjectDataBehaviorTreeCFR12StringBuffer" ;# ptr (0x8015E900)
+	.4byte "SetResourceName__22ObjectDataBehaviorTreeFRC12StringBuffer" ;# ptr (0x8015E95C)
+	.4byte "GetDataSourceType__20ResourceBehaviorTreeCFv" ;# ptr (0x80164104)
+	.4byte "LoadOnlyNameAndIDFromIndex__20ResourceBehaviorTreeFUii" ;# ptr (0x8015EC58)
+	.4byte "__dt__20ResourceBehaviorTreeFv" ;# ptr (0x8015EF08)
+	.4byte "GetFromDataID__20ResourceBehaviorTreeFRC12ObjectDataID" ;# ptr (0x8015EDC4)
+
 .global "__vt__22ObjectDataBehaviorTree"
 "__vt__22ObjectDataBehaviorTree":
-	.incbin "baserom.dol", 0x4284A8, 0x40
+	# ROM: 0x4284A8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetDataID__22ObjectDataBehaviorTreeCFv" ;# ptr (0x8015CF60)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetResourceName__22ObjectDataBehaviorTreeCFR12StringBuffer" ;# ptr (0x8015E900)
+	.4byte "SetResourceName__22ObjectDataBehaviorTreeFRC12StringBuffer" ;# ptr (0x8015E95C)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22ObjectDataBehaviorTreeFv" ;# ptr (0x8015E8C0)
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__17ISmartDataFactory"
 "__vt__17ISmartDataFactory":
-	.incbin "baserom.dol", 0x4284E8, 0x20
+	# ROM: 0x4284E8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__10ITreeTable"
 "__vt__10ITreeTable":
-	.incbin "baserom.dol", 0x428508, 0x88
+	# ROM: 0x428508
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "__vt__23ObjectDataObjDefinition"
 "__vt__23ObjectDataObjDefinition":
-	.incbin "baserom.dol", 0x428590, 0x38
+	# ROM: 0x428590
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__23ObjectDataObjDefinitionFUiPPv" ;# ptr (0x8015FCFC)
+	.4byte "AddRef__23ObjectDataObjDefinitionFv" ;# ptr (0x8015FD9C)
+	.4byte "Release__23ObjectDataObjDefinitionFv" ;# ptr (0x8015FDB0)
+	.4byte "GetResourceName__23ObjectDataObjDefinitionCFP12StringBuffer" ;# ptr (0x8015F9EC)
+	.4byte "GetResourceType__23ObjectDataObjDefinitionCFv" ;# ptr (0x8015FA50)
+	.4byte "LoadFromQDataByID__23ObjectDataObjDefinitionFUis" ;# ptr (0x8015FA5C)
+	.4byte "LoadFromIFFByID__23ObjectDataObjDefinitionFUis" ;# ptr (0x8015FAE8)
+	.4byte "SaveToIFFFile__23ObjectDataObjDefinitionFUisR12StringBuffer" ;# ptr (0x8015FBF4)
+	.4byte "LoadFromDBByID__23ObjectDataObjDefinitionFUis" ;# ptr (0x8015FCEC)
+	.4byte "SaveToDB__23ObjectDataObjDefinitionFUisR12StringBuffer" ;# ptr (0x8015FCF4)
+	.4byte "__dt__23ObjectDataObjDefinitionFv" ;# ptr (0x8015F854)
+	.4byte 0x00000000
+
 .global "__vt__20IFFBehaviorConstants"
 "__vt__20IFFBehaviorConstants":
-	.incbin "baserom.dol", 0x4285C8, 0x40
+	# ROM: 0x4285C8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__20IFFBehaviorConstantsFUiPPv" ;# ptr (0x8015DF2C)
+	.4byte "AddRef__20IFFBehaviorConstantsFv" ;# ptr (0x8015DFCC)
+	.4byte "Release__20IFFBehaviorConstantsFv" ;# ptr (0x8015DFE0)
+	.4byte "GetDataID__27ObjectDataBehaviorConstantsCFv" ;# ptr (0x8015E848)
+	.4byte "LoadFromDataID__20IFFBehaviorConstantsFRC12ObjectDataID" ;# ptr (0x8015DC8C)
+	.4byte "LoadFromIndex__20IFFBehaviorConstantsFUii" ;# ptr (0x8015DBD4)
+	.4byte "SaveDataByID__20IFFBehaviorConstantsFRC12ObjectDataID" ;# ptr (0x8015DD3C)
+	.4byte "GetResourceName__20IFFBehaviorConstantsCFR12StringBuffer" ;# ptr (0x8015DEA8)
+	.4byte "SetResourceName__20IFFBehaviorConstantsFRC12StringBuffer" ;# ptr (0x8015DF04)
+	.4byte "GetDataSourceType__20IFFBehaviorConstantsCFv" ;# ptr (0x8015E840)
+	.4byte "LoadOnlyNameAndIDFromIndex__20IFFBehaviorConstantsFUii" ;# ptr (0x8015DC7C)
+	.4byte "SetValueCount__27ObjectDataBehaviorConstantsFi" ;# ptr (0x8015D59C)
+	.4byte "GetValue__27ObjectDataBehaviorConstantsCFi" ;# ptr (0x80110FC0)
+	.4byte "__dt__20IFFBehaviorConstantsFv" ;# ptr (0x8015E42C)
+
 .global "__vt__26QuickDataBehaviorConstants"
 "__vt__26QuickDataBehaviorConstants":
-	.incbin "baserom.dol", 0x428608, 0x40
+	# ROM: 0x428608
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "QueryInterface__26QuickDataBehaviorConstantsFUiPPv" ;# ptr (0x8015D908)
+	.4byte "AddRef__26QuickDataBehaviorConstantsFv" ;# ptr (0x8015D9A8)
+	.4byte "Release__26QuickDataBehaviorConstantsFv" ;# ptr (0x8015D9BC)
+	.4byte "GetDataID__27ObjectDataBehaviorConstantsCFv" ;# ptr (0x8015E848)
+	.4byte "LoadFromDataID__26QuickDataBehaviorConstantsFRC12ObjectDataID" ;# ptr (0x8015D844)
+	.4byte "LoadFromIndex__26QuickDataBehaviorConstantsFUii" ;# ptr (0x8015D780)
+	.4byte "SaveDataByID__26QuickDataBehaviorConstantsFRC12ObjectDataID" ;# ptr (0x8015E828)
+	.4byte "GetResourceName__27ObjectDataBehaviorConstantsCFR12StringBuffer" ;# ptr (0x8015D694)
+	.4byte "SetResourceName__27ObjectDataBehaviorConstantsFRC12StringBuffer" ;# ptr (0x8015D6BC)
+	.4byte "GetDataSourceType__26QuickDataBehaviorConstantsCFv" ;# ptr (0x8015E830)
+	.4byte "LoadOnlyNameAndIDFromIndex__26QuickDataBehaviorConstantsFUii" ;# ptr (0x8015E838)
+	.4byte "SetValueCount__26QuickDataBehaviorConstantsFi" ;# ptr (0x8015D904)
+	.4byte "GetValue__26QuickDataBehaviorConstantsCFi" ;# ptr (0x8015E7EC)
+	.4byte "__dt__26QuickDataBehaviorConstantsFv" ;# ptr (0x8015E37C)
+
 .global "__vt__27ObjectDataBehaviorConstants"
 "__vt__27ObjectDataBehaviorConstants":
-	.incbin "baserom.dol", 0x428648, 0x40
+	# ROM: 0x428648
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetDataID__27ObjectDataBehaviorConstantsCFv" ;# ptr (0x8015E848)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetResourceName__27ObjectDataBehaviorConstantsCFR12StringBuffer" ;# ptr (0x8015D694)
+	.4byte "SetResourceName__27ObjectDataBehaviorConstantsFRC12StringBuffer" ;# ptr (0x8015D6BC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SetValueCount__27ObjectDataBehaviorConstantsFi" ;# ptr (0x8015D59C)
+	.4byte "GetValue__27ObjectDataBehaviorConstantsCFi" ;# ptr (0x80110FC0)
+	.4byte "__dt__27ObjectDataBehaviorConstantsFv" ;# ptr (0x8015D4F8)
+
 .global "__vt__19ObjectDataInterface"
 "__vt__19ObjectDataInterface":
-	.incbin "baserom.dol", 0x428688, 0x30
+	# ROM: 0x428688
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_8042C5B8
 lbl_8042C5B8:
-	.incbin "baserom.dol", 0x4286B8, 0x10
+	# ROM: 0x4286B8
+	.asciz "ResBehavTree"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "g_qdBconPoolBuffer"
@@ -8917,28 +9277,45 @@ lbl_8042C5B8:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D4D18
 lbl_805D4D18:
-	.incbin "baserom.dol", 0x484898, 0x4
+	# ROM: 0x484898
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4D1C
 lbl_805D4D1C:
-	.incbin "baserom.dol", 0x48489C, 0x5
+	# ROM: 0x48489C
+	.asciz "????"
+
 .global lbl_805D4D21
 lbl_805D4D21:
-	.incbin "baserom.dol", 0x4848A1, 0x1
+	# ROM: 0x4848A1
+	.byte 0x01
+
 .global lbl_805D4D22
 lbl_805D4D22:
-	.incbin "baserom.dol", 0x4848A2, 0x1
+	# ROM: 0x4848A2
+	.byte 0x01
+
 .global lbl_805D4D23
 lbl_805D4D23:
-	.incbin "baserom.dol", 0x4848A3, 0x1
+	# ROM: 0x4848A3
+	.byte 0x00
+
 .global lbl_805D4D24
 lbl_805D4D24:
-	.incbin "baserom.dol", 0x4848A4, 0x8
+	# ROM: 0x4848A4
+	.asciz "QdBcon"
+	.byte 0x00
+
 .global lbl_805D4D2C
 lbl_805D4D2C:
-	.incbin "baserom.dol", 0x4848AC, 0x4
+	# ROM: 0x4848AC
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4D30
 lbl_805D4D30:
-	.incbin "baserom.dol", 0x4848B0, 0x8
+	# ROM: 0x4848B0
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "gpSmartDataFactoryInstance"

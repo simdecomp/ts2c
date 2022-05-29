@@ -30,7 +30,7 @@ lbl_8032E538:
 /* 8032E540 0032A1E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032E544 0032A1E4  7C 08 03 A6 */	mtlr r0
 /* 8032E548 0032A1E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E54C 0032A1EC  4E 80 00 20 */	blr 
+/* 8032E54C 0032A1EC  4E 80 00 20 */	blr
 
 .global "objectMemberSet__9AptGlobalFP8AptValuePC9EAStringCP8AptValue"
 "objectMemberSet__9AptGlobalFP8AptValuePC9EAStringCP8AptValue":
@@ -63,7 +63,7 @@ lbl_8032E5A4:
 /* 8032E5B0 0032A250  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032E5B4 0032A254  7C 08 03 A6 */	mtlr r0
 /* 8032E5B8 0032A258  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E5BC 0032A25C  4E 80 00 20 */	blr 
+/* 8032E5BC 0032A25C  4E 80 00 20 */	blr
 
 .global "__dt__9AptGlobalFv"
 "__dt__9AptGlobalFv":
@@ -90,12 +90,31 @@ lbl_8032E600:
 /* 8032E60C 0032A2AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032E610 0032A2B0  7C 08 03 A6 */	mtlr r0
 /* 8032E614 0032A2B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E618 0032A2B8  4E 80 00 20 */	blr 
+/* 8032E618 0032A2B8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__9AptGlobal"
 "__vt__9AptGlobal":
-	.incbin "baserom.dol", 0x4576F8, 0x48
+	# ROM: 0x4576F8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptGlobalCFP8AptValuePC9EAStringC" ;# ptr (0x8032E4E8)
+	.4byte "objectMemberSet__9AptGlobalFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x8032E550)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__9AptGlobalFv" ;# ptr (0x8032E5C0)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "gpGlobalGlobalObject"

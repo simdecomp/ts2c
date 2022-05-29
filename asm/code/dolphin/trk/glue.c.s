@@ -42,7 +42,7 @@ lbl_80414704:
 
 .global "TRKUARTInterruptHandler"
 "TRKUARTInterruptHandler":
-/* 80414760 00410400  4E 80 00 20 */	blr 
+/* 80414760 00410400  4E 80 00 20 */	blr
 
 .global "InitializeProgramEndTrap"
 "InitializeProgramEndTrap":
@@ -67,7 +67,7 @@ lbl_80414704:
 /* 804147AC 0041044C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 804147B0 00410450  7C 08 03 A6 */	mtlr r0
 /* 804147B4 00410454  38 21 00 10 */	addi r1, r1, 0x10
-/* 804147B8 00410458  4E 80 00 20 */	blr 
+/* 804147B8 00410458  4E 80 00 20 */	blr
 
 .global "TRK_board_display"
 "TRK_board_display":
@@ -82,7 +82,7 @@ lbl_80414704:
 /* 804147DC 0041047C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804147E0 00410480  7C 08 03 A6 */	mtlr r0
 /* 804147E4 00410484  38 21 00 10 */	addi r1, r1, 0x10
-/* 804147E8 00410488  4E 80 00 20 */	blr 
+/* 804147E8 00410488  4E 80 00 20 */	blr
 
 .global "UnreserveEXI2Port"
 "UnreserveEXI2Port":
@@ -93,11 +93,11 @@ lbl_80414704:
 /* 804147FC 0041049C  38 63 80 D8 */	addi r3, r3, "gDBCommTable"@l
 /* 80414800 004104A0  81 83 00 20 */	lwz r12, 0x20(r3)
 /* 80414804 004104A4  7D 89 03 A6 */	mtctr r12
-/* 80414808 004104A8  4E 80 04 21 */	bctrl 
+/* 80414808 004104A8  4E 80 04 21 */	bctrl
 /* 8041480C 004104AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80414810 004104B0  7C 08 03 A6 */	mtlr r0
 /* 80414814 004104B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414818 004104B8  4E 80 00 20 */	blr 
+/* 80414818 004104B8  4E 80 00 20 */	blr
 
 .global "ReserveEXI2Port"
 "ReserveEXI2Port":
@@ -108,11 +108,11 @@ lbl_80414704:
 /* 8041482C 004104CC  38 63 80 D8 */	addi r3, r3, "gDBCommTable"@l
 /* 80414830 004104D0  81 83 00 24 */	lwz r12, 0x24(r3)
 /* 80414834 004104D4  7D 89 03 A6 */	mtctr r12
-/* 80414838 004104D8  4E 80 04 21 */	bctrl 
+/* 80414838 004104D8  4E 80 04 21 */	bctrl
 /* 8041483C 004104DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80414840 004104E0  7C 08 03 A6 */	mtlr r0
 /* 80414844 004104E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414848 004104E8  4E 80 00 20 */	blr 
+/* 80414848 004104E8  4E 80 00 20 */	blr
 
 .global "TRKWriteUARTN"
 "TRKWriteUARTN":
@@ -123,14 +123,14 @@ lbl_80414704:
 /* 8041485C 004104FC  38 A5 80 D8 */	addi r5, r5, "gDBCommTable"@l
 /* 80414860 00410500  81 85 00 14 */	lwz r12, 0x14(r5)
 /* 80414864 00410504  7D 89 03 A6 */	mtctr r12
-/* 80414868 00410508  4E 80 04 21 */	bctrl 
+/* 80414868 00410508  4E 80 04 21 */	bctrl
 /* 8041486C 0041050C  7C 03 00 D0 */	neg r0, r3
 /* 80414870 00410510  7C 00 1B 78 */	or r0, r0, r3
 /* 80414874 00410514  7C 03 FE 70 */	srawi r3, r0, 0x1f
 /* 80414878 00410518  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8041487C 0041051C  7C 08 03 A6 */	mtlr r0
 /* 80414880 00410520  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414884 00410524  4E 80 00 20 */	blr 
+/* 80414884 00410524  4E 80 00 20 */	blr
 
 .global "TRKReadUARTN"
 "TRKReadUARTN":
@@ -141,14 +141,14 @@ lbl_80414704:
 /* 80414898 00410538  38 A5 80 D8 */	addi r5, r5, "gDBCommTable"@l
 /* 8041489C 0041053C  81 85 00 10 */	lwz r12, 0x10(r5)
 /* 804148A0 00410540  7D 89 03 A6 */	mtctr r12
-/* 804148A4 00410544  4E 80 04 21 */	bctrl 
+/* 804148A4 00410544  4E 80 04 21 */	bctrl
 /* 804148A8 00410548  7C 03 00 D0 */	neg r0, r3
 /* 804148AC 0041054C  7C 00 1B 78 */	or r0, r0, r3
 /* 804148B0 00410550  7C 03 FE 70 */	srawi r3, r0, 0x1f
 /* 804148B4 00410554  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804148B8 00410558  7C 08 03 A6 */	mtlr r0
 /* 804148BC 0041055C  38 21 00 10 */	addi r1, r1, 0x10
-/* 804148C0 00410560  4E 80 00 20 */	blr 
+/* 804148C0 00410560  4E 80 00 20 */	blr
 
 .global "TRKPollUART"
 "TRKPollUART":
@@ -159,11 +159,11 @@ lbl_80414704:
 /* 804148D4 00410574  38 63 80 D8 */	addi r3, r3, "gDBCommTable"@l
 /* 804148D8 00410578  81 83 00 0C */	lwz r12, 0xc(r3)
 /* 804148DC 0041057C  7D 89 03 A6 */	mtctr r12
-/* 804148E0 00410580  4E 80 04 21 */	bctrl 
+/* 804148E0 00410580  4E 80 04 21 */	bctrl
 /* 804148E4 00410584  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804148E8 00410588  7C 08 03 A6 */	mtlr r0
 /* 804148EC 0041058C  38 21 00 10 */	addi r1, r1, 0x10
-/* 804148F0 00410590  4E 80 00 20 */	blr 
+/* 804148F0 00410590  4E 80 00 20 */	blr
 
 .global "EnableEXI2Interrupts"
 "EnableEXI2Interrupts":
@@ -180,12 +180,12 @@ lbl_80414704:
 /* 8041491C 004105BC  28 0C 00 00 */	cmplwi r12, 0
 /* 80414920 004105C0  41 82 00 0C */	beq lbl_8041492C
 /* 80414924 004105C4  7D 89 03 A6 */	mtctr r12
-/* 80414928 004105C8  4E 80 04 21 */	bctrl 
+/* 80414928 004105C8  4E 80 04 21 */	bctrl
 lbl_8041492C:
 /* 8041492C 004105CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80414930 004105D0  7C 08 03 A6 */	mtlr r0
 /* 80414934 004105D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414938 004105D8  4E 80 00 20 */	blr 
+/* 80414938 004105D8  4E 80 00 20 */	blr
 
 .global "TRKInitializeIntDrivenUART"
 "TRKInitializeIntDrivenUART":
@@ -198,17 +198,17 @@ lbl_8041492C:
 /* 80414954 004105F4  81 83 80 D8 */	lwz r12, "gDBCommTable"@l(r3)
 /* 80414958 004105F8  7C C3 33 78 */	mr r3, r6
 /* 8041495C 004105FC  7D 89 03 A6 */	mtctr r12
-/* 80414960 00410600  4E 80 04 21 */	bctrl 
+/* 80414960 00410600  4E 80 04 21 */	bctrl
 /* 80414964 00410604  3C 60 80 49 */	lis r3, "gDBCommTable"@ha
 /* 80414968 00410608  38 63 80 D8 */	addi r3, r3, "gDBCommTable"@l
 /* 8041496C 0041060C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80414970 00410610  7D 89 03 A6 */	mtctr r12
-/* 80414974 00410614  4E 80 04 21 */	bctrl 
+/* 80414974 00410614  4E 80 04 21 */	bctrl
 /* 80414978 00410618  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8041497C 0041061C  38 60 00 00 */	li r3, 0
 /* 80414980 00410620  7C 08 03 A6 */	mtlr r0
 /* 80414984 00410624  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414988 00410628  4E 80 00 20 */	blr 
+/* 80414988 00410628  4E 80 00 20 */	blr
 
 .global "InitMetroTRKCommTable"
 "InitMetroTRKCommTable":
@@ -331,7 +331,7 @@ lbl_80414B44:
 /* 80414B50 004107F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80414B54 004107F4  7C 08 03 A6 */	mtlr r0
 /* 80414B58 004107F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80414B5C 004107FC  4E 80 00 20 */	blr 
+/* 80414B5C 004107FC  4E 80 00 20 */	blr
 
 .global "TRKEXICallBack"
 "TRKEXICallBack":
@@ -348,20 +348,39 @@ lbl_80414B44:
 /* 80414B88 00410828  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80414B8C 0041082C  7C 08 03 A6 */	mtlr r0
 /* 80414B90 00410830  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414B94 00410834  4E 80 00 20 */	blr 
+/* 80414B94 00410834  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "EndofProgramInstruction$159"
 "EndofProgramInstruction$159":
-	.incbin "baserom.dol", 0x41BFB8, 0x4
+	# ROM: 0x41BFB8
+	.4byte 0x00454E44
+
 .global lbl_8041FEBC
 lbl_8041FEBC:
-	.incbin "baserom.dol", 0x41BFBC, 0x104
+	# ROM: 0x41BFBC
+	.4byte 0x25730A00
+	.asciz "Devkit set to : %ld\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MetroTRK : Sizeof Reply - %ld bytes\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MetroTRK : Set to BBA\n"
+	.byte 0x00
+	.asciz "MetroTRK : Set to NDEV hardware\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MetroTRK : Set to UNKNOWN hardware. (%ld)\n"
+	.byte 0x00
+	.asciz "MetroTRK : Invalid hardware ID passed from OS\n"
+	.byte 0x00
+	.asciz "MetroTRK : Defaulting to GDEV Hardware\n"
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "gDBCommTable"
 "gDBCommTable":
-	.incbin "baserom.dol", 0x4841D8, 0x28
+	# ROM: 0x4841D8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "TRK_Use_BBA"

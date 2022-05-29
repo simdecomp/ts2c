@@ -14,7 +14,7 @@ lbl_802FA978:
 /* 802FA978 002F6618  80 03 00 04 */	lwz r0, 4(r3)
 /* 802FA97C 002F661C  2C 00 00 00 */	cmpwi r0, 0
 /* 802FA980 002F6620  40 82 FF F4 */	bne lbl_802FA974
-/* 802FA984 002F6624  4E 80 00 20 */	blr 
+/* 802FA984 002F6624  4E 80 00 20 */	blr
 lbl_802FA988:
 /* 802FA988 002F6628  80 83 00 08 */	lwz r4, 8(r3)
 /* 802FA98C 002F662C  48 00 00 0C */	b lbl_802FA998
@@ -27,9 +27,9 @@ lbl_802FA998:
 /* 802FA9A0 002F6640  41 82 FF F0 */	beq lbl_802FA990
 /* 802FA9A4 002F6644  80 03 00 00 */	lwz r0, 0(r3)
 /* 802FA9A8 002F6648  7C 00 20 40 */	cmplw r0, r4
-/* 802FA9AC 002F664C  4D 82 00 20 */	beqlr 
+/* 802FA9AC 002F664C  4D 82 00 20 */	beqlr
 /* 802FA9B0 002F6650  7C 83 23 78 */	mr r3, r4
-/* 802FA9B4 002F6654  4E 80 00 20 */	blr 
+/* 802FA9B4 002F6654  4E 80 00 20 */	blr
 
 .global "RBTreeDecrement__5eastlFPCQ25eastl16rbtree_node_base"
 "RBTreeDecrement__5eastlFPCQ25eastl16rbtree_node_base":
@@ -41,7 +41,7 @@ lbl_802FA998:
 /* 802FA9CC 002F666C  7C 00 07 75 */	extsb. r0, r0
 /* 802FA9D0 002F6670  40 82 00 0C */	bne lbl_802FA9DC
 /* 802FA9D4 002F6674  80 63 00 00 */	lwz r3, 0(r3)
-/* 802FA9D8 002F6678  4E 80 00 20 */	blr 
+/* 802FA9D8 002F6678  4E 80 00 20 */	blr
 lbl_802FA9DC:
 /* 802FA9DC 002F667C  80 83 00 04 */	lwz r4, 4(r3)
 /* 802FA9E0 002F6680  2C 04 00 00 */	cmpwi r4, 0
@@ -54,7 +54,7 @@ lbl_802FA9F0:
 /* 802FA9F4 002F6694  2C 00 00 00 */	cmpwi r0, 0
 /* 802FA9F8 002F6698  40 82 FF F4 */	bne lbl_802FA9EC
 /* 802FA9FC 002F669C  7C 83 23 78 */	mr r3, r4
-/* 802FAA00 002F66A0  4E 80 00 20 */	blr 
+/* 802FAA00 002F66A0  4E 80 00 20 */	blr
 /* 802FAA04 002F66A4  48 00 00 0C */	b lbl_802FAA10
 lbl_802FAA08:
 /* 802FAA08 002F66A8  7C A3 2B 78 */	mr r3, r5
@@ -64,7 +64,7 @@ lbl_802FAA10:
 /* 802FAA14 002F66B4  7C 03 00 40 */	cmplw r3, r0
 /* 802FAA18 002F66B8  41 82 FF F0 */	beq lbl_802FAA08
 /* 802FAA1C 002F66BC  7C A3 2B 78 */	mr r3, r5
-/* 802FAA20 002F66C0  4E 80 00 20 */	blr 
+/* 802FAA20 002F66C0  4E 80 00 20 */	blr
 
 .global "RBTreeInsert__5eastlFPQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_baseQ25eastl10RBTreeSide"
 "RBTreeInsert__5eastlFPQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_baseQ25eastl10RBTreeSide":
@@ -263,7 +263,7 @@ lbl_802FACB8:
 /* 802FACB8 002F6958  80 65 00 08 */	lwz r3, 8(r5)
 /* 802FACBC 002F695C  38 00 00 01 */	li r0, 1
 /* 802FACC0 002F6960  98 03 00 0C */	stb r0, 0xc(r3)
-/* 802FACC4 002F6964  4E 80 00 20 */	blr 
+/* 802FACC4 002F6964  4E 80 00 20 */	blr
 
 .global "RBTreeErase__5eastlFPQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_base"
 "RBTreeErase__5eastlFPQ25eastl16rbtree_node_basePQ25eastl16rbtree_node_base":
@@ -397,7 +397,7 @@ lbl_802FAE50:
 lbl_802FAE68:
 /* 802FAE68 002F6B08  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 802FAE6C 002F6B0C  2C 00 00 01 */	cmpwi r0, 1
-/* 802FAE70 002F6B10  4C 82 00 20 */	bnelr 
+/* 802FAE70 002F6B10  4C 82 00 20 */	bnelr
 /* 802FAE74 002F6B14  39 00 00 01 */	li r8, 1
 /* 802FAE78 002F6B18  38 E0 00 00 */	li r7, 0
 /* 802FAE7C 002F6B1C  48 00 03 A4 */	b lbl_802FB220
@@ -684,7 +684,7 @@ lbl_802FB220:
 /* 802FB23C 002F6EDC  41 82 FC 44 */	beq lbl_802FAE80
 lbl_802FB240:
 /* 802FB240 002F6EE0  2C 05 00 00 */	cmpwi r5, 0
-/* 802FB244 002F6EE4  4D 82 00 20 */	beqlr 
+/* 802FB244 002F6EE4  4D 82 00 20 */	beqlr
 /* 802FB248 002F6EE8  38 00 00 01 */	li r0, 1
 /* 802FB24C 002F6EEC  98 05 00 0C */	stb r0, 0xc(r5)
-/* 802FB250 002F6EF0  4E 80 00 20 */	blr 
+/* 802FB250 002F6EF0  4E 80 00 20 */	blr

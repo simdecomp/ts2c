@@ -83,21 +83,21 @@ lbl_80246DF0:
 /* 80246E08 00242AA8  80 9B 00 74 */	lwz r4, 0x74(r27)
 /* 80246E0C 00242AAC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80246E10 00242AB0  7D 89 03 A6 */	mtctr r12
-/* 80246E14 00242AB4  4E 80 04 21 */	bctrl 
+/* 80246E14 00242AB4  4E 80 04 21 */	bctrl
 /* 80246E18 00242AB8  90 7B 00 48 */	stw r3, 0x48(r27)
 /* 80246E1C 00242ABC  3C 60 80 51 */	lis r3, 0x8051
 /* 80246E20 00242AC0  80 9B 00 78 */	lwz r4, 0x78(r27)
 /* 80246E24 00242AC4  85 83 6D 04 */	lwzu r12, 0x6d04(r3)
 /* 80246E28 00242AC8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80246E2C 00242ACC  7D 89 03 A6 */	mtctr r12
-/* 80246E30 00242AD0  4E 80 04 21 */	bctrl 
+/* 80246E30 00242AD0  4E 80 04 21 */	bctrl
 /* 80246E34 00242AD4  90 7B 00 40 */	stw r3, 0x40(r27)
 /* 80246E38 00242AD8  3C 60 80 51 */	lis r3, 0x8051
 /* 80246E3C 00242ADC  80 9B 00 7C */	lwz r4, 0x7c(r27)
 /* 80246E40 00242AE0  85 83 02 24 */	lwzu r12, 0x224(r3)
 /* 80246E44 00242AE4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80246E48 00242AE8  7D 89 03 A6 */	mtctr r12
-/* 80246E4C 00242AEC  4E 80 04 21 */	bctrl 
+/* 80246E4C 00242AEC  4E 80 04 21 */	bctrl
 /* 80246E50 00242AF0  80 1B 00 48 */	lwz r0, 0x48(r27)
 /* 80246E54 00242AF4  90 7B 00 4C */	stw r3, 0x4c(r27)
 /* 80246E58 00242AF8  2C 00 00 00 */	cmpwi r0, 0
@@ -120,7 +120,7 @@ lbl_80246E7C:
 /* 80246E98 00242B38  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80246E9C 00242B3C  7C 08 03 A6 */	mtlr r0
 /* 80246EA0 00242B40  38 21 00 70 */	addi r1, r1, 0x70
-/* 80246EA4 00242B44  4E 80 00 20 */	blr 
+/* 80246EA4 00242B44  4E 80 00 20 */	blr
 
 .global "__dt__10RainEffectFv"
 "__dt__10RainEffectFv":
@@ -160,7 +160,7 @@ lbl_80246F14:
 /* 80246F20 00242BC0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80246F24 00242BC4  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 80246F28 00242BC8  7D 89 03 A6 */	mtctr r12
-/* 80246F2C 00242BCC  4E 80 04 21 */	bctrl 
+/* 80246F2C 00242BCC  4E 80 04 21 */	bctrl
 /* 80246F30 00242BD0  38 00 00 00 */	li r0, 0
 /* 80246F34 00242BD4  90 1E 00 8C */	stw r0, 0x8c(r30)
 lbl_80246F38:
@@ -194,7 +194,7 @@ lbl_80246F8C:
 /* 80246F98 00242C38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80246F9C 00242C3C  7C 08 03 A6 */	mtlr r0
 /* 80246FA0 00242C40  38 21 00 10 */	addi r1, r1, 0x10
-/* 80246FA4 00242C44  4E 80 00 20 */	blr 
+/* 80246FA4 00242C44  4E 80 00 20 */	blr
 
 .global "UpdateAssetLoad__10RainEffectFv"
 "UpdateAssetLoad__10RainEffectFv":
@@ -295,7 +295,7 @@ lbl_802470F4:
 /* 802470F8 00242D98  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802470FC 00242D9C  7C 08 03 A6 */	mtlr r0
 /* 80247100 00242DA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247104 00242DA4  4E 80 00 20 */	blr 
+/* 80247104 00242DA4  4E 80 00 20 */	blr
 
 .global "CreateRainInstance__10RainEffectFv"
 "CreateRainInstance__10RainEffectFv":
@@ -355,7 +355,7 @@ lbl_802471CC:
 /* 802471D0 00242E70  83 E1 00 5C */	lwz r31, 0x5c(r1)
 /* 802471D4 00242E74  7C 08 03 A6 */	mtlr r0
 /* 802471D8 00242E78  38 21 00 60 */	addi r1, r1, 0x60
-/* 802471DC 00242E7C  4E 80 00 20 */	blr 
+/* 802471DC 00242E7C  4E 80 00 20 */	blr
 
 .global "SetRainShaderState__10RainEffectFv"
 "SetRainShaderState__10RainEffectFv":
@@ -369,7 +369,7 @@ lbl_802471CC:
 /* 802471FC 00242E9C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80247200 00242EA0  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 80247204 00242EA4  7D 89 03 A6 */	mtctr r12
-/* 80247208 00242EA8  4E 80 04 21 */	bctrl 
+/* 80247208 00242EA8  4E 80 04 21 */	bctrl
 /* 8024720C 00242EAC  2C 03 00 00 */	cmpwi r3, 0
 /* 80247210 00242EB0  7C 7F 1B 78 */	mr r31, r3
 /* 80247214 00242EB4  41 82 00 40 */	beq lbl_80247254
@@ -393,29 +393,29 @@ lbl_80247254:
 /* 80247258 00242EF8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024725C 00242EFC  7C 08 03 A6 */	mtlr r0
 /* 80247260 00242F00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247264 00242F04  4E 80 00 20 */	blr 
+/* 80247264 00242F04  4E 80 00 20 */	blr
 
 .global "Update__10RainEffectFv"
 "Update__10RainEffectFv":
 /* 80247268 00242F08  80 63 00 8C */	lwz r3, 0x8c(r3)
 /* 8024726C 00242F0C  2C 03 00 00 */	cmpwi r3, 0
-/* 80247270 00242F10  4D 82 00 20 */	beqlr 
+/* 80247270 00242F10  4D 82 00 20 */	beqlr
 /* 80247274 00242F14  81 83 00 00 */	lwz r12, 0(r3)
 /* 80247278 00242F18  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 8024727C 00242F1C  7D 89 03 A6 */	mtctr r12
-/* 80247280 00242F20  4E 80 04 20 */	bctr 
-/* 80247284 00242F24  4E 80 00 20 */	blr 
+/* 80247280 00242F20  4E 80 04 20 */	bctr
+/* 80247284 00242F24  4E 80 00 20 */	blr
 
 .global "DoAnimation__10RainEffectFv"
 "DoAnimation__10RainEffectFv":
 /* 80247288 00242F28  80 63 00 8C */	lwz r3, 0x8c(r3)
 /* 8024728C 00242F2C  2C 03 00 00 */	cmpwi r3, 0
-/* 80247290 00242F30  4D 82 00 20 */	beqlr 
+/* 80247290 00242F30  4D 82 00 20 */	beqlr
 /* 80247294 00242F34  81 83 00 00 */	lwz r12, 0(r3)
 /* 80247298 00242F38  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8024729C 00242F3C  7D 89 03 A6 */	mtctr r12
-/* 802472A0 00242F40  4E 80 04 20 */	bctr 
-/* 802472A4 00242F44  4E 80 00 20 */	blr 
+/* 802472A0 00242F40  4E 80 04 20 */	bctr
+/* 802472A4 00242F44  4E 80 00 20 */	blr
 
 .global "Draw__10RainEffectFP3ERC"
 "Draw__10RainEffectFP3ERC":
@@ -656,7 +656,7 @@ lbl_8024761C:
 /* 80247624 002432C4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80247628 002432C8  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 8024762C 002432CC  7D 89 03 A6 */	mtctr r12
-/* 80247630 002432D0  4E 80 04 21 */	bctrl 
+/* 80247630 002432D0  4E 80 04 21 */	bctrl
 lbl_80247634:
 /* 80247634 002432D4  E3 E1 00 F8 */	psq_l f31, 248(r1), 0, qr0
 /* 80247638 002432D8  CB E1 00 F0 */	lfd f31, 0xf0(r1)
@@ -669,17 +669,17 @@ lbl_80247634:
 /* 80247654 002432F4  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 80247658 002432F8  7C 08 03 A6 */	mtlr r0
 /* 8024765C 002432FC  38 21 01 00 */	addi r1, r1, 0x100
-/* 80247660 00243300  4E 80 00 20 */	blr 
+/* 80247660 00243300  4E 80 00 20 */	blr
 
 .global "SetRainRate__10RainEffectFUif"
 "SetRainRate__10RainEffectFUif":
 /* 80247664 00243304  80 03 00 7C */	lwz r0, 0x7c(r3)
 /* 80247668 00243308  7C 65 1B 78 */	mr r5, r3
 /* 8024766C 0024330C  7C 04 00 40 */	cmplw r4, r0
-/* 80247670 00243310  4D 82 00 20 */	beqlr 
+/* 80247670 00243310  4D 82 00 20 */	beqlr
 /* 80247674 00243314  2C 04 00 00 */	cmpwi r4, 0
 /* 80247678 00243318  40 82 00 08 */	bne lbl_80247680
-/* 8024767C 0024331C  4E 80 00 20 */	blr 
+/* 8024767C 0024331C  4E 80 00 20 */	blr
 lbl_80247680:
 /* 80247680 00243320  C0 02 9C E4 */	lfs f0, lbl_805DAF04-_SDA2_BASE_(r2)
 /* 80247684 00243324  90 83 00 90 */	stw r4, 0x90(r3)
@@ -695,8 +695,8 @@ lbl_80247698:
 /* 802476A4 00243344  85 83 02 24 */	lwzu r12, 0x224(r3)
 /* 802476A8 00243348  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802476AC 0024334C  7D 89 03 A6 */	mtctr r12
-/* 802476B0 00243350  4E 80 04 20 */	bctr 
-/* 802476B4 00243354  4E 80 00 20 */	blr 
+/* 802476B0 00243350  4E 80 04 20 */	bctr
+/* 802476B4 00243354  4E 80 00 20 */	blr
 
 .global "SetWindAcceleration__10RainEffectFv"
 "SetWindAcceleration__10RainEffectFv":
@@ -769,7 +769,7 @@ lbl_80247698:
 /* 802477C0 00243460  83 C1 00 78 */	lwz r30, 0x78(r1)
 /* 802477C4 00243464  7C 08 03 A6 */	mtlr r0
 /* 802477C8 00243468  38 21 00 90 */	addi r1, r1, 0x90
-/* 802477CC 0024346C  4E 80 00 20 */	blr 
+/* 802477CC 0024346C  4E 80 00 20 */	blr
 
 .global "GetPositionInFrontOfCamera__10RainEffectFf"
 "GetPositionInFrontOfCamera__10RainEffectFf":
@@ -816,7 +816,7 @@ lbl_80247698:
 /* 80247870 00243510  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80247874 00243514  7C 08 03 A6 */	mtlr r0
 /* 80247878 00243518  38 21 00 40 */	addi r1, r1, 0x40
-/* 8024787C 0024351C  4E 80 00 20 */	blr 
+/* 8024787C 0024351C  4E 80 00 20 */	blr
 
 .global "__dl__10RainEffectFPv"
 "__dl__10RainEffectFPv":
@@ -832,7 +832,7 @@ lbl_80247698:
 /* 802478A4 00243544  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802478A8 00243548  7C 08 03 A6 */	mtlr r0
 /* 802478AC 0024354C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802478B0 00243550  4E 80 00 20 */	blr 
+/* 802478B0 00243550  4E 80 00 20 */	blr
 
 .global "__nw__10RainEffectFUl"
 "__nw__10RainEffectFUl":
@@ -851,7 +851,7 @@ lbl_80247698:
 /* 802478E4 00243584  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802478E8 00243588  7C 08 03 A6 */	mtlr r0
 /* 802478EC 0024358C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802478F0 00243590  4E 80 00 20 */	blr 
+/* 802478F0 00243590  4E 80 00 20 */	blr
 
 .global "__ct__Q214WeatherManager12WeatherEventFv"
 "__ct__Q214WeatherManager12WeatherEventFv":
@@ -870,7 +870,7 @@ lbl_80247698:
 /* 80247924 002435C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80247928 002435C8  7C 08 03 A6 */	mtlr r0
 /* 8024792C 002435CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247930 002435D0  4E 80 00 20 */	blr 
+/* 80247930 002435D0  4E 80 00 20 */	blr
 
 .global "__dl__14WeatherManagerFPv"
 "__dl__14WeatherManagerFPv":
@@ -886,19 +886,19 @@ lbl_80247698:
 /* 80247958 002435F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024795C 002435FC  7C 08 03 A6 */	mtlr r0
 /* 80247960 00243600  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247964 00243604  4E 80 00 20 */	blr 
+/* 80247964 00243604  4E 80 00 20 */	blr
 
 .global "GetFogColor__14WeatherManagerFv"
 "GetFogColor__14WeatherManagerFv":
 /* 80247968 00243608  38 63 00 DC */	addi r3, r3, 0xdc
-/* 8024796C 0024360C  4E 80 00 20 */	blr 
+/* 8024796C 0024360C  4E 80 00 20 */	blr
 
 .global "__ct__Q214WeatherManager14WindyPlantInfoFv"
 "__ct__Q214WeatherManager14WindyPlantInfoFv":
 /* 80247970 00243610  38 00 00 00 */	li r0, 0
 /* 80247974 00243614  90 03 00 00 */	stw r0, 0(r3)
 /* 80247978 00243618  90 03 00 04 */	stw r0, 4(r3)
-/* 8024797C 0024361C  4E 80 00 20 */	blr 
+/* 8024797C 0024361C  4E 80 00 20 */	blr
 
 .global "Clamp__5EVec4Fff"
 "Clamp__5EVec4Fff":
@@ -946,12 +946,12 @@ lbl_80247A00:
 /* 80247A08 002436A8  FC 00 10 90 */	fmr f0, f2
 lbl_80247A0C:
 /* 80247A0C 002436AC  D0 03 00 04 */	stfs f0, 4(r3)
-/* 80247A10 002436B0  4E 80 00 20 */	blr 
+/* 80247A10 002436B0  4E 80 00 20 */	blr
 
 .global "GetCameraTerrainOffset__8ESimsCamCFv"
 "GetCameraTerrainOffset__8ESimsCamCFv":
 /* 80247A14 002436B4  C0 23 07 1C */	lfs f1, 0x71c(r3)
-/* 80247A18 002436B8  4E 80 00 20 */	blr 
+/* 80247A18 002436B8  4E 80 00 20 */	blr
 
 .global "__ct__14WeatherManagerFv"
 "__ct__14WeatherManagerFv":
@@ -1152,7 +1152,7 @@ lbl_80247CDC:
 /* 80247D10 002439B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80247D14 002439B4  7C 08 03 A6 */	mtlr r0
 /* 80247D18 002439B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80247D1C 002439BC  4E 80 00 20 */	blr 
+/* 80247D1C 002439BC  4E 80 00 20 */	blr
 
 .global "__dt__14WeatherManagerFv"
 "__dt__14WeatherManagerFv":
@@ -1287,7 +1287,7 @@ lbl_80247EFC:
 /* 80247F08 00243BA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80247F0C 00243BAC  7C 08 03 A6 */	mtlr r0
 /* 80247F10 00243BB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80247F14 00243BB4  4E 80 00 20 */	blr 
+/* 80247F14 00243BB4  4E 80 00 20 */	blr
 
 .global "DeallocateSunMoon__14WeatherManagerFv"
 "DeallocateSunMoon__14WeatherManagerFv":
@@ -1308,7 +1308,7 @@ lbl_80247EFC:
 /* 80247F50 00243BF0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80247F54 00243BF4  7C 08 03 A6 */	mtlr r0
 /* 80247F58 00243BF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247F5C 00243BFC  4E 80 00 20 */	blr 
+/* 80247F5C 00243BFC  4E 80 00 20 */	blr
 
 .global "DeallocateWindyPlantAssets__14WeatherManagerFv"
 "DeallocateWindyPlantAssets__14WeatherManagerFv":
@@ -1348,7 +1348,7 @@ lbl_80247FD8:
 /* 80247FDC 00243C7C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80247FE0 00243C80  7C 08 03 A6 */	mtlr r0
 /* 80247FE4 00243C84  38 21 00 10 */	addi r1, r1, 0x10
-/* 80247FE8 00243C88  4E 80 00 20 */	blr 
+/* 80247FE8 00243C88  4E 80 00 20 */	blr
 
 .global "Init__14WeatherManagerFv"
 "Init__14WeatherManagerFv":
@@ -1496,7 +1496,7 @@ lbl_802481E4:
 /* 802481F4 00243E94  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802481F8 00243E98  7C 08 03 A6 */	mtlr r0
 /* 802481FC 00243E9C  38 21 00 40 */	addi r1, r1, 0x40
-/* 80248200 00243EA0  4E 80 00 20 */	blr 
+/* 80248200 00243EA0  4E 80 00 20 */	blr
 
 .global "Reset__14WeatherManagerFv"
 "Reset__14WeatherManagerFv":
@@ -1523,7 +1523,7 @@ lbl_802481E4:
 /* 80248254 00243EF4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80248258 00243EF8  7C 08 03 A6 */	mtlr r0
 /* 8024825C 00243EFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80248260 00243F00  4E 80 00 20 */	blr 
+/* 80248260 00243F00  4E 80 00 20 */	blr
 
 .global "DoStream__14WeatherManagerFP11ReconBufferi"
 "DoStream__14WeatherManagerFP11ReconBufferi":
@@ -1688,7 +1688,7 @@ lbl_802484AC:
 /* 802484B4 00244154  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802484B8 00244158  7C 08 03 A6 */	mtlr r0
 /* 802484BC 0024415C  38 21 00 40 */	addi r1, r1, 0x40
-/* 802484C0 00244160  4E 80 00 20 */	blr 
+/* 802484C0 00244160  4E 80 00 20 */	blr
 
 .global "GetNumWeatherSequences__14WeatherManagerFPCc"
 "GetNumWeatherSequences__14WeatherManagerFPCc":
@@ -1718,7 +1718,7 @@ lbl_80248518:
 /* 80248518 002441B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024851C 002441BC  7C 08 03 A6 */	mtlr r0
 /* 80248520 002441C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248524 002441C4  4E 80 00 20 */	blr 
+/* 80248524 002441C4  4E 80 00 20 */	blr
 
 .global "SetWeatherState__14WeatherManagerFPCcib"
 "SetWeatherState__14WeatherManagerFPCcib":
@@ -1873,7 +1873,7 @@ lbl_80248750:
 /* 8024875C 002443FC  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80248760 00244400  7C 08 03 A6 */	mtlr r0
 /* 80248764 00244404  38 21 00 30 */	addi r1, r1, 0x30
-/* 80248768 00244408  4E 80 00 20 */	blr 
+/* 80248768 00244408  4E 80 00 20 */	blr
 
 .global "GetWeatherStateName__14WeatherManagerFi"
 "GetWeatherStateName__14WeatherManagerFi":
@@ -1896,7 +1896,7 @@ lbl_80248794:
 /* 802487A8 00244448  80 67 00 08 */	lwz r3, 8(r7)
 /* 802487AC 0024444C  55 00 10 3A */	slwi r0, r8, 2
 /* 802487B0 00244450  7C 63 00 2E */	lwzx r3, r3, r0
-/* 802487B4 00244454  4E 80 00 20 */	blr 
+/* 802487B4 00244454  4E 80 00 20 */	blr
 lbl_802487B8:
 /* 802487B8 00244458  38 A5 00 0C */	addi r5, r5, 0xc
 /* 802487BC 0024445C  39 08 00 01 */	addi r8, r8, 1
@@ -1905,7 +1905,7 @@ lbl_802487C0:
 /* 802487C4 00244464  40 82 FF D0 */	bne lbl_80248794
 lbl_802487C8:
 /* 802487C8 00244468  38 60 00 00 */	li r3, 0
-/* 802487CC 0024446C  4E 80 00 20 */	blr 
+/* 802487CC 0024446C  4E 80 00 20 */	blr
 
 .global "GetWeatherState__14WeatherManagerCFv"
 "GetWeatherState__14WeatherManagerCFv":
@@ -1913,10 +1913,10 @@ lbl_802487C8:
 /* 802487D4 00244474  2C 03 00 00 */	cmpwi r3, 0
 /* 802487D8 00244478  41 82 00 0C */	beq lbl_802487E4
 /* 802487DC 0024447C  80 63 00 08 */	lwz r3, 8(r3)
-/* 802487E0 00244480  4E 80 00 20 */	blr 
+/* 802487E0 00244480  4E 80 00 20 */	blr
 lbl_802487E4:
 /* 802487E4 00244484  38 60 00 00 */	li r3, 0
-/* 802487E8 00244488  4E 80 00 20 */	blr 
+/* 802487E8 00244488  4E 80 00 20 */	blr
 
 .global "SetToDefaultWeather__14WeatherManagerFv"
 "SetToDefaultWeather__14WeatherManagerFv":
@@ -1964,7 +1964,7 @@ lbl_8024886C:
 /* 80248880 00244520  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248884 00244524  7C 08 03 A6 */	mtlr r0
 /* 80248888 00244528  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024888C 0024452C  4E 80 00 20 */	blr 
+/* 8024888C 0024452C  4E 80 00 20 */	blr
 
 .global "Resume__14WeatherManagerF8GameTime"
 "Resume__14WeatherManagerF8GameTime":
@@ -2029,7 +2029,7 @@ lbl_8024895C:
 /* 80248964 00244604  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80248968 00244608  7C 08 03 A6 */	mtlr r0
 /* 8024896C 0024460C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248970 00244610  4E 80 00 20 */	blr 
+/* 80248970 00244610  4E 80 00 20 */	blr
 
 .global "SetCurrentTime__14WeatherManagerFRC8GameTime"
 "SetCurrentTime__14WeatherManagerFRC8GameTime":
@@ -2081,7 +2081,7 @@ lbl_802489FC:
 /* 80248A1C 002446BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80248A20 002446C0  7C 08 03 A6 */	mtlr r0
 /* 80248A24 002446C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80248A28 002446C8  4E 80 00 20 */	blr 
+/* 80248A28 002446C8  4E 80 00 20 */	blr
 
 .global "SetWaitTimes__14WeatherManagerFv"
 "SetWaitTimes__14WeatherManagerFv":
@@ -2119,7 +2119,7 @@ lbl_802489FC:
 /* 80248AA8 00244748  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80248AAC 0024474C  7C 08 03 A6 */	mtlr r0
 /* 80248AB0 00244750  38 21 00 20 */	addi r1, r1, 0x20
-/* 80248AB4 00244754  4E 80 00 20 */	blr 
+/* 80248AB4 00244754  4E 80 00 20 */	blr
 
 .global "SetLevelData__14WeatherManagerFi"
 "SetLevelData__14WeatherManagerFi":
@@ -2148,7 +2148,7 @@ lbl_80248B04:
 /* 80248B08 002447A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248B0C 002447AC  7C 08 03 A6 */	mtlr r0
 /* 80248B10 002447B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248B14 002447B4  4E 80 00 20 */	blr 
+/* 80248B14 002447B4  4E 80 00 20 */	blr
 
 .global "ResetDamageAccumulation__14WeatherManagerFv"
 "ResetDamageAccumulation__14WeatherManagerFv":
@@ -2157,7 +2157,7 @@ lbl_80248B04:
 /* 80248B20 002447C0  D0 03 00 F4 */	stfs f0, 0xf4(r3)
 /* 80248B24 002447C4  D0 03 00 F8 */	stfs f0, 0xf8(r3)
 /* 80248B28 002447C8  D0 03 00 FC */	stfs f0, 0xfc(r3)
-/* 80248B2C 002447CC  4E 80 00 20 */	blr 
+/* 80248B2C 002447CC  4E 80 00 20 */	blr
 
 .global "GetWindLevelForAmbientSound__14WeatherManagerCFv"
 "GetWindLevelForAmbientSound__14WeatherManagerCFv":
@@ -2186,7 +2186,7 @@ lbl_80248B7C:
 /* 80248B80 00244820  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248B84 00244824  7C 08 03 A6 */	mtlr r0
 /* 80248B88 00244828  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248B8C 0024482C  4E 80 00 20 */	blr 
+/* 80248B8C 0024482C  4E 80 00 20 */	blr
 
 .global "SetWindLevel__14WeatherManagerFQ27Weather9WindLevel"
 "SetWindLevel__14WeatherManagerFQ27Weather9WindLevel":
@@ -2235,7 +2235,7 @@ lbl_80248C28:
 /* 80248C30 002448D0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80248C34 002448D4  7C 08 03 A6 */	mtlr r0
 /* 80248C38 002448D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80248C3C 002448DC  4E 80 00 20 */	blr 
+/* 80248C3C 002448DC  4E 80 00 20 */	blr
 
 .global "IsRaining__14WeatherManagerCFv"
 "IsRaining__14WeatherManagerCFv":
@@ -2267,7 +2267,7 @@ lbl_80248C98:
 /* 80248C9C 0024493C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248CA0 00244940  7C 08 03 A6 */	mtlr r0
 /* 80248CA4 00244944  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248CA8 00244948  4E 80 00 20 */	blr 
+/* 80248CA8 00244948  4E 80 00 20 */	blr
 
 .global "GetRainLevelForAmbientSound__14WeatherManagerCFv"
 "GetRainLevelForAmbientSound__14WeatherManagerCFv":
@@ -2296,7 +2296,7 @@ lbl_80248CF8:
 /* 80248CFC 0024499C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248D00 002449A0  7C 08 03 A6 */	mtlr r0
 /* 80248D04 002449A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248D08 002449A8  4E 80 00 20 */	blr 
+/* 80248D08 002449A8  4E 80 00 20 */	blr
 
 .global "SetRainLevel__14WeatherManagerFQ27Weather9RainLevel"
 "SetRainLevel__14WeatherManagerFQ27Weather9RainLevel":
@@ -2363,23 +2363,23 @@ lbl_80248DE4:
 /* 80248DE8 00244A88  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80248DEC 00244A8C  7C 08 03 A6 */	mtlr r0
 /* 80248DF0 00244A90  38 21 00 10 */	addi r1, r1, 0x10
-/* 80248DF4 00244A94  4E 80 00 20 */	blr 
+/* 80248DF4 00244A94  4E 80 00 20 */	blr
 
 .global "SetGloomLevel__14WeatherManagerFf"
 "SetGloomLevel__14WeatherManagerFf":
 /* 80248DF8 00244A98  D0 23 00 C0 */	stfs f1, 0xc0(r3)
 /* 80248DFC 00244A9C  D0 23 00 C4 */	stfs f1, 0xc4(r3)
-/* 80248E00 00244AA0  4E 80 00 20 */	blr 
+/* 80248E00 00244AA0  4E 80 00 20 */	blr
 
 .global "SetTargetGloomLevel__14WeatherManagerFf"
 "SetTargetGloomLevel__14WeatherManagerFf":
 /* 80248E04 00244AA4  D0 23 00 C0 */	stfs f1, 0xc0(r3)
-/* 80248E08 00244AA8  4E 80 00 20 */	blr 
+/* 80248E08 00244AA8  4E 80 00 20 */	blr
 
 .global "SetCloudLevel__14WeatherManagerFQ27Weather10CloudLevel"
 "SetCloudLevel__14WeatherManagerFQ27Weather10CloudLevel":
 /* 80248E0C 00244AAC  90 83 00 C8 */	stw r4, 0xc8(r3)
-/* 80248E10 00244AB0  4E 80 00 20 */	blr 
+/* 80248E10 00244AB0  4E 80 00 20 */	blr
 
 .global "SetFogLevel__14WeatherManagerFQ27Weather8FogLevel"
 "SetFogLevel__14WeatherManagerFQ27Weather8FogLevel":
@@ -2458,7 +2458,7 @@ lbl_80248F14:
 /* 80248F30 00244BD0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80248F34 00244BD4  7C 08 03 A6 */	mtlr r0
 /* 80248F38 00244BD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80248F3C 00244BDC  4E 80 00 20 */	blr 
+/* 80248F3C 00244BDC  4E 80 00 20 */	blr
 
 .global "GetLastWeatherEvent__14WeatherManagerFv"
 "GetLastWeatherEvent__14WeatherManagerFv":
@@ -2466,7 +2466,7 @@ lbl_80248F14:
 /* 80248F44 00244BE4  2C 06 00 00 */	cmpwi r6, 0
 /* 80248F48 00244BE8  41 81 00 0C */	bgt lbl_80248F54
 /* 80248F4C 00244BEC  38 60 00 00 */	li r3, 0
-/* 80248F50 00244BF0  4E 80 00 20 */	blr 
+/* 80248F50 00244BF0  4E 80 00 20 */	blr
 lbl_80248F54:
 /* 80248F54 00244BF4  80 A3 04 2C */	lwz r5, 0x42c(r3)
 /* 80248F58 00244BF8  3C 80 51 EC */	lis r4, 0x51EB851F@ha
@@ -2482,7 +2482,7 @@ lbl_80248F54:
 /* 80248F80 00244C20  54 00 18 38 */	slwi r0, r0, 3
 /* 80248F84 00244C24  7C 63 02 14 */	add r3, r3, r0
 /* 80248F88 00244C28  38 63 01 0C */	addi r3, r3, 0x10c
-/* 80248F8C 00244C2C  4E 80 00 20 */	blr 
+/* 80248F8C 00244C2C  4E 80 00 20 */	blr
 
 .global "GetWeatherEvent__14WeatherManagerFi"
 "GetWeatherEvent__14WeatherManagerFi":
@@ -2499,7 +2499,7 @@ lbl_80248F54:
 /* 80248FB8 00244C58  54 00 18 38 */	slwi r0, r0, 3
 /* 80248FBC 00244C5C  7C 63 02 14 */	add r3, r3, r0
 /* 80248FC0 00244C60  38 63 01 0C */	addi r3, r3, 0x10c
-/* 80248FC4 00244C64  4E 80 00 20 */	blr 
+/* 80248FC4 00244C64  4E 80 00 20 */	blr
 
 .global "ClearWeatherEvents__14WeatherManagerFv"
 "ClearWeatherEvents__14WeatherManagerFv":
@@ -2519,7 +2519,7 @@ lbl_80248F54:
 /* 80248FFC 00244C9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80249000 00244CA0  7C 08 03 A6 */	mtlr r0
 /* 80249004 00244CA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80249008 00244CA8  4E 80 00 20 */	blr 
+/* 80249008 00244CA8  4E 80 00 20 */	blr
 
 .global "AddWeatherEvent__14WeatherManagerFRCQ214WeatherManager12WeatherEvent"
 "AddWeatherEvent__14WeatherManagerFRCQ214WeatherManager12WeatherEvent":
@@ -2575,7 +2575,7 @@ lbl_802490C0:
 /* 802490C8 00244D68  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802490CC 00244D6C  7C 08 03 A6 */	mtlr r0
 /* 802490D0 00244D70  38 21 00 10 */	addi r1, r1, 0x10
-/* 802490D4 00244D74  4E 80 00 20 */	blr 
+/* 802490D4 00244D74  4E 80 00 20 */	blr
 
 .global "AddPossibleWeatherEvent__14WeatherManagerF8GameTime"
 "AddPossibleWeatherEvent__14WeatherManagerF8GameTime":
@@ -2649,7 +2649,7 @@ lbl_802491C0:
 /* 802491D0 00244E70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802491D4 00244E74  7C 08 03 A6 */	mtlr r0
 /* 802491D8 00244E78  38 21 00 20 */	addi r1, r1, 0x20
-/* 802491DC 00244E7C  4E 80 00 20 */	blr 
+/* 802491DC 00244E7C  4E 80 00 20 */	blr
 
 .global "GetDamageEvents__14WeatherManagerFPQ214WeatherManager12WeatherEvent8GameTime8GameTimeiRQ25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>"
 "GetDamageEvents__14WeatherManagerFPQ214WeatherManager12WeatherEvent8GameTime8GameTimeiRQ25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>":
@@ -2864,7 +2864,7 @@ lbl_802494D8:
 /* 802494E8 00245188  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802494EC 0024518C  7C 08 03 A6 */	mtlr r0
 /* 802494F0 00245190  38 21 00 80 */	addi r1, r1, 0x80
-/* 802494F4 00245194  4E 80 00 20 */	blr 
+/* 802494F4 00245194  4E 80 00 20 */	blr
 
 .global "AdvanceTime__14WeatherManagerF8GameTime"
 "AdvanceTime__14WeatherManagerF8GameTime":
@@ -2941,7 +2941,7 @@ lbl_802495E8:
 /* 802495F8 00245298  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802495FC 0024529C  7C 08 03 A6 */	mtlr r0
 /* 80249600 002452A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80249604 002452A4  4E 80 00 20 */	blr 
+/* 80249604 002452A4  4E 80 00 20 */	blr
 
 .global "Update__14WeatherManagerFRC8GameTime"
 "Update__14WeatherManagerFRC8GameTime":
@@ -3272,7 +3272,7 @@ lbl_80249ABC:
 /* 80249ACC 0024576C  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 80249AD0 00245770  7C 08 03 A6 */	mtlr r0
 /* 80249AD4 00245774  38 21 00 50 */	addi r1, r1, 0x50
-/* 80249AD8 00245778  4E 80 00 20 */	blr 
+/* 80249AD8 00245778  4E 80 00 20 */	blr
 
 .global "Draw__14WeatherManagerFP3ERC"
 "Draw__14WeatherManagerFP3ERC":
@@ -3320,7 +3320,7 @@ lbl_80249B4C:
 /* 80249B7C 0024581C  7F E4 FB 78 */	mr r4, r31
 /* 80249B80 00245820  81 8C 01 3C */	lwz r12, 0x13c(r12)
 /* 80249B84 00245824  7D 89 03 A6 */	mtctr r12
-/* 80249B88 00245828  4E 80 04 21 */	bctrl 
+/* 80249B88 00245828  4E 80 04 21 */	bctrl
 lbl_80249B8C:
 /* 80249B8C 0024582C  C0 3D 00 AC */	lfs f1, 0xac(r29)
 /* 80249B90 00245830  C0 02 9C E4 */	lfs f0, lbl_805DAF04-_SDA2_BASE_(r2)
@@ -3386,7 +3386,7 @@ lbl_80249C48:
 /* 80249C64 00245904  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80249C68 00245908  7C 08 03 A6 */	mtlr r0
 /* 80249C6C 0024590C  38 21 00 40 */	addi r1, r1, 0x40
-/* 80249C70 00245910  4E 80 00 20 */	blr 
+/* 80249C70 00245910  4E 80 00 20 */	blr
 
 .global "ChooseNewWeatherState__14WeatherManagerFv"
 "ChooseNewWeatherState__14WeatherManagerFv":
@@ -3462,7 +3462,7 @@ lbl_80249D6C:
 /* 80249D74 00245A14  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80249D78 00245A18  7C 08 03 A6 */	mtlr r0
 /* 80249D7C 00245A1C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80249D80 00245A20  4E 80 00 20 */	blr 
+/* 80249D80 00245A20  4E 80 00 20 */	blr
 
 .global "TriggerLightningEffect__14WeatherManagerFv"
 "TriggerLightningEffect__14WeatherManagerFv":
@@ -3572,7 +3572,7 @@ lbl_80249F0C:
 /* 80249F14 00245BB4  83 C1 00 68 */	lwz r30, 0x68(r1)
 /* 80249F18 00245BB8  7C 08 03 A6 */	mtlr r0
 /* 80249F1C 00245BBC  38 21 00 70 */	addi r1, r1, 0x70
-/* 80249F20 00245BC0  4E 80 00 20 */	blr 
+/* 80249F20 00245BC0  4E 80 00 20 */	blr
 
 .global "TriggerEarthquakeEffect__14WeatherManagerFv"
 "TriggerEarthquakeEffect__14WeatherManagerFv":
@@ -3685,7 +3685,7 @@ lbl_8024A0A8:
 /* 8024A0BC 00245D5C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8024A0C0 00245D60  7C 08 03 A6 */	mtlr r0
 /* 8024A0C4 00245D64  38 21 00 40 */	addi r1, r1, 0x40
-/* 8024A0C8 00245D68  4E 80 00 20 */	blr 
+/* 8024A0C8 00245D68  4E 80 00 20 */	blr
 
 .global "SetTransitionVariables__14WeatherManagerFf"
 "SetTransitionVariables__14WeatherManagerFf":
@@ -3833,7 +3833,7 @@ lbl_8024A298:
 /* 8024A2D0 00245F70  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8024A2D4 00245F74  7C 08 03 A6 */	mtlr r0
 /* 8024A2D8 00245F78  38 21 00 60 */	addi r1, r1, 0x60
-/* 8024A2DC 00245F7C  4E 80 00 20 */	blr 
+/* 8024A2DC 00245F7C  4E 80 00 20 */	blr
 
 .global "ChangeWind__14WeatherManagerFv"
 "ChangeWind__14WeatherManagerFv":
@@ -3919,7 +3919,7 @@ lbl_8024A3F8:
 /* 8024A404 002460A4  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 8024A408 002460A8  7C 08 03 A6 */	mtlr r0
 /* 8024A40C 002460AC  38 21 00 80 */	addi r1, r1, 0x80
-/* 8024A410 002460B0  4E 80 00 20 */	blr 
+/* 8024A410 002460B0  4E 80 00 20 */	blr
 
 .global "LoadWindyPlants__14WeatherManagerFv"
 "LoadWindyPlants__14WeatherManagerFv":
@@ -3959,13 +3959,13 @@ lbl_8024A464:
 /* 8024A490 00246130  85 83 02 24 */	lwzu r12, 0x224(r3)
 /* 8024A494 00246134  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8024A498 00246138  7D 89 03 A6 */	mtctr r12
-/* 8024A49C 0024613C  4E 80 04 21 */	bctrl 
+/* 8024A49C 0024613C  4E 80 04 21 */	bctrl
 lbl_8024A4A0:
 /* 8024A4A0 00246140  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024A4A4 00246144  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024A4A8 00246148  7C 08 03 A6 */	mtlr r0
 /* 8024A4AC 0024614C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024A4B0 00246150  4E 80 00 20 */	blr 
+/* 8024A4B0 00246150  4E 80 00 20 */	blr
 
 .global "UpdateWindyPlantAssetLoad__14WeatherManagerFv"
 "UpdateWindyPlantAssetLoad__14WeatherManagerFv":
@@ -4060,7 +4060,7 @@ lbl_8024A5F8:
 /* 8024A604 002462A4  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 8024A608 002462A8  7C 08 03 A6 */	mtlr r0
 /* 8024A60C 002462AC  38 21 00 40 */	addi r1, r1, 0x40
-/* 8024A610 002462B0  4E 80 00 20 */	blr 
+/* 8024A610 002462B0  4E 80 00 20 */	blr
 
 .global "StartWindyPlantAnimation__14WeatherManagerFv"
 "StartWindyPlantAnimation__14WeatherManagerFv":
@@ -4168,7 +4168,7 @@ lbl_8024A76C:
 /* 8024A78C 0024642C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8024A790 00246430  7C 08 03 A6 */	mtlr r0
 /* 8024A794 00246434  38 21 00 60 */	addi r1, r1, 0x60
-/* 8024A798 00246438  4E 80 00 20 */	blr 
+/* 8024A798 00246438  4E 80 00 20 */	blr
 
 .global "ApplyGlobalDamage__14WeatherManagerFv"
 "ApplyGlobalDamage__14WeatherManagerFv":
@@ -4278,7 +4278,7 @@ lbl_8024A908:
 /* 8024A920 002465C0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8024A924 002465C4  7C 08 03 A6 */	mtlr r0
 /* 8024A928 002465C8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8024A92C 002465CC  4E 80 00 20 */	blr 
+/* 8024A92C 002465CC  4E 80 00 20 */	blr
 
 .global "UpdateSunMoon__14WeatherManagerFv"
 "UpdateSunMoon__14WeatherManagerFv":
@@ -4714,7 +4714,7 @@ lbl_8024AF88:
 /* 8024AFA4 00246C44  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 8024AFA8 00246C48  7C 08 03 A6 */	mtlr r0
 /* 8024AFAC 00246C4C  38 21 00 90 */	addi r1, r1, 0x90
-/* 8024AFB0 00246C50  4E 80 00 20 */	blr 
+/* 8024AFB0 00246C50  4E 80 00 20 */	blr
 
 .global "CalculateSunData__14WeatherManagerFsss"
 "CalculateSunData__14WeatherManagerFsss":
@@ -4861,7 +4861,7 @@ lbl_8024B1C0:
 /* 8024B1D8 00246E78  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8024B1DC 00246E7C  7C 08 03 A6 */	mtlr r0
 /* 8024B1E0 00246E80  38 21 00 70 */	addi r1, r1, 0x70
-/* 8024B1E4 00246E84  4E 80 00 20 */	blr 
+/* 8024B1E4 00246E84  4E 80 00 20 */	blr
 
 .global "CalculateMoonData__14WeatherManagerFsss"
 "CalculateMoonData__14WeatherManagerFsss":
@@ -4936,13 +4936,13 @@ lbl_8024B250:
 /* 8024B2F4 00246F94  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8024B2F8 00246F98  7C 08 03 A6 */	mtlr r0
 /* 8024B2FC 00246F9C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8024B300 00246FA0  4E 80 00 20 */	blr 
+/* 8024B300 00246FA0  4E 80 00 20 */	blr
 
 .global "__sinit_weather_unity_cpp"
 "__sinit_weather_unity_cpp":
 /* 8024B304 00246FA4  80 02 87 5C */	lwz r0, "SecondsInADay__8GameTime"-_SDA2_BASE_(r2)
 /* 8024B308 00246FA8  90 0D BA 50 */	stw r0, "SECONDS_BETWEEN_MOON_PHASE_UPDATE__14WeatherManager"-_SDA_BASE_(r13)
-/* 8024B30C 00246FAC  4E 80 00 20 */	blr 
+/* 8024B30C 00246FAC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv"
 "__dt__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv":
@@ -4972,7 +4972,7 @@ lbl_8024B35C:
 /* 8024B368 00247008  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024B36C 0024700C  7C 08 03 A6 */	mtlr r0
 /* 8024B370 00247010  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B374 00247014  4E 80 00 20 */	blr 
+/* 8024B374 00247014  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv"
 "__dt__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv":
@@ -5007,11 +5007,11 @@ lbl_8024B3D4:
 /* 8024B3E0 00247080  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024B3E4 00247084  7C 08 03 A6 */	mtlr r0
 /* 8024B3E8 00247088  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B3EC 0024708C  4E 80 00 20 */	blr 
+/* 8024B3EC 0024708C  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo"
 "DoDestroyValues__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo":
-/* 8024B3F0 00247090  4E 80 00 20 */	blr 
+/* 8024B3F0 00247090  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5026,7 +5026,7 @@ lbl_8024B3D4:
 /* 8024B414 002470B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024B418 002470B8  7C 08 03 A6 */	mtlr r0
 /* 8024B41C 002470BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B420 002470C0  4E 80 00 20 */	blr 
+/* 8024B420 002470C0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5046,7 +5046,7 @@ lbl_8024B3D4:
 /* 8024B458 002470F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024B45C 002470FC  7C 08 03 A6 */	mtlr r0
 /* 8024B460 00247100  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B464 00247104  4E 80 00 20 */	blr 
+/* 8024B464 00247104  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv"
 "clear__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv":
@@ -5087,7 +5087,7 @@ lbl_8024B3D4:
 /* 8024B4E4 00247184  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024B4E8 00247188  7C 08 03 A6 */	mtlr r0
 /* 8024B4EC 0024718C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024B4F0 00247190  4E 80 00 20 */	blr 
+/* 8024B4F0 00247190  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>FRCQ27Weather11DamageEvent"
 "push_back__Q25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>FRCQ27Weather11DamageEvent":
@@ -5119,7 +5119,7 @@ lbl_8024B54C:
 /* 8024B550 002471F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024B554 002471F4  7C 08 03 A6 */	mtlr r0
 /* 8024B558 002471F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B55C 002471FC  4E 80 00 20 */	blr 
+/* 8024B55C 002471FC  4E 80 00 20 */	blr
 
 .global "__ct__Q27Weather11DamageEventFRCQ27Weather11DamageEvent"
 "__ct__Q27Weather11DamageEventFRCQ27Weather11DamageEvent":
@@ -5131,7 +5131,7 @@ lbl_8024B54C:
 /* 8024B574 00247214  B0 C3 00 02 */	sth r6, 2(r3)
 /* 8024B578 00247218  B0 A3 00 04 */	sth r5, 4(r3)
 /* 8024B57C 0024721C  B0 03 00 06 */	sth r0, 6(r3)
-/* 8024B580 00247220  4E 80 00 20 */	blr 
+/* 8024B580 00247220  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ214WeatherManager14WindyPlantInfo"
 "push_back__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FRCQ214WeatherManager14WindyPlantInfo":
@@ -5163,7 +5163,7 @@ lbl_8024B5DC:
 /* 8024B5E0 00247280  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024B5E4 00247284  7C 08 03 A6 */	mtlr r0
 /* 8024B5E8 00247288  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B5EC 0024728C  4E 80 00 20 */	blr 
+/* 8024B5EC 0024728C  4E 80 00 20 */	blr
 
 .global "__ct__Q214WeatherManager14WindyPlantInfoFRCQ214WeatherManager14WindyPlantInfo"
 "__ct__Q214WeatherManager14WindyPlantInfoFRCQ214WeatherManager14WindyPlantInfo":
@@ -5171,17 +5171,17 @@ lbl_8024B5DC:
 /* 8024B5F4 00247294  80 04 00 04 */	lwz r0, 4(r4)
 /* 8024B5F8 00247298  90 A3 00 00 */	stw r5, 0(r3)
 /* 8024B5FC 0024729C  90 03 00 04 */	stw r0, 4(r3)
-/* 8024B600 002472A0  4E 80 00 20 */	blr 
+/* 8024B600 002472A0  4E 80 00 20 */	blr
 
 .global "end__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv"
 "end__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv":
 /* 8024B604 002472A4  80 63 00 04 */	lwz r3, 4(r3)
-/* 8024B608 002472A8  4E 80 00 20 */	blr 
+/* 8024B608 002472A8  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv"
 "begin__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>Fv":
 /* 8024B60C 002472AC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024B610 002472B0  4E 80 00 20 */	blr 
+/* 8024B610 002472B0  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>FPQ27Weather11DamageEventRCQ27Weather11DamageEvent"
 "DoInsertValue__Q25eastl50vector<Q27Weather11DamageEvent,Q25eastl9allocator>FPQ27Weather11DamageEventRCQ27Weather11DamageEvent":
@@ -5274,16 +5274,16 @@ lbl_8024B750:
 /* 8024B758 002473F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024B75C 002473FC  7C 08 03 A6 */	mtlr r0
 /* 8024B760 00247400  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024B764 00247404  4E 80 00 20 */	blr 
+/* 8024B764 00247404  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FPQ27Weather11DamageEventUl"
 "DoFree__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FPQ27Weather11DamageEventUl":
 /* 8024B768 00247408  2C 04 00 00 */	cmpwi r4, 0
-/* 8024B76C 0024740C  4D 82 00 20 */	beqlr 
+/* 8024B76C 0024740C  4D 82 00 20 */	beqlr
 /* 8024B770 00247410  54 A5 18 38 */	slwi r5, r5, 3
 /* 8024B774 00247414  38 63 00 0C */	addi r3, r3, 0xc
 /* 8024B778 00247418  4B DC C9 AC */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8024B77C 0024741C  4E 80 00 20 */	blr 
+/* 8024B77C 0024741C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FUl":
@@ -5296,15 +5296,15 @@ lbl_8024B750:
 /* 8024B798 00247438  4B DC C9 9C */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8024B79C:
 /* 8024B79C 0024743C  38 60 00 00 */	li r3, 0
-/* 8024B7A0 00247440  4E 80 00 20 */	blr 
+/* 8024B7A0 00247440  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl54VectorBase<Q27Weather11DamageEvent,Q25eastl9allocator>FUl":
 /* 8024B7A4 00247444  2C 04 00 00 */	cmpwi r4, 0
 /* 8024B7A8 00247448  38 60 00 01 */	li r3, 1
-/* 8024B7AC 0024744C  4D 82 00 20 */	beqlr 
+/* 8024B7AC 0024744C  4D 82 00 20 */	beqlr
 /* 8024B7B0 00247450  54 83 08 3C */	slwi r3, r4, 1
-/* 8024B7B4 00247454  4E 80 00 20 */	blr 
+/* 8024B7B4 00247454  4E 80 00 20 */	blr
 
 .global "__as__Q27Weather11DamageEventFRCQ27Weather11DamageEvent"
 "__as__Q27Weather11DamageEventFRCQ27Weather11DamageEvent":
@@ -5316,7 +5316,7 @@ lbl_8024B79C:
 /* 8024B7CC 0024746C  B0 C3 00 02 */	sth r6, 2(r3)
 /* 8024B7D0 00247470  B0 A3 00 04 */	sth r5, 4(r3)
 /* 8024B7D4 00247474  B0 03 00 06 */	sth r0, 6(r3)
-/* 8024B7D8 00247478  4E 80 00 20 */	blr 
+/* 8024B7D8 00247478  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoRCQ214WeatherManager14WindyPlantInfo"
 "DoInsertValue__Q25eastl61vector<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoRCQ214WeatherManager14WindyPlantInfo":
@@ -5409,16 +5409,16 @@ lbl_8024B918:
 /* 8024B920 002475C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024B924 002475C4  7C 08 03 A6 */	mtlr r0
 /* 8024B928 002475C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024B92C 002475CC  4E 80 00 20 */	blr 
+/* 8024B92C 002475CC  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoUl"
 "DoFree__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FPQ214WeatherManager14WindyPlantInfoUl":
 /* 8024B930 002475D0  2C 04 00 00 */	cmpwi r4, 0
-/* 8024B934 002475D4  4D 82 00 20 */	beqlr 
+/* 8024B934 002475D4  4D 82 00 20 */	beqlr
 /* 8024B938 002475D8  54 A5 18 38 */	slwi r5, r5, 3
 /* 8024B93C 002475DC  38 63 00 0C */	addi r3, r3, 0xc
 /* 8024B940 002475E0  4B DC C7 E4 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8024B944 002475E4  4E 80 00 20 */	blr 
+/* 8024B944 002475E4  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FUl":
@@ -5431,15 +5431,15 @@ lbl_8024B918:
 /* 8024B960 00247600  4B DC C7 D4 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8024B964:
 /* 8024B964 00247604  38 60 00 00 */	li r3, 0
-/* 8024B968 00247608  4E 80 00 20 */	blr 
+/* 8024B968 00247608  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl65VectorBase<Q214WeatherManager14WindyPlantInfo,Q25eastl9allocator>FUl":
 /* 8024B96C 0024760C  2C 04 00 00 */	cmpwi r4, 0
 /* 8024B970 00247610  38 60 00 01 */	li r3, 1
-/* 8024B974 00247614  4D 82 00 20 */	beqlr 
+/* 8024B974 00247614  4D 82 00 20 */	beqlr
 /* 8024B978 00247618  54 83 08 3C */	slwi r3, r4, 1
-/* 8024B97C 0024761C  4E 80 00 20 */	blr 
+/* 8024B97C 0024761C  4E 80 00 20 */	blr
 
 .global "__dt__Q214WeatherManager12WeatherEventFv"
 "__dt__Q214WeatherManager12WeatherEventFv":
@@ -5465,7 +5465,7 @@ lbl_8024B9BC:
 /* 8024B9C8 00247668  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024B9CC 0024766C  7C 08 03 A6 */	mtlr r0
 /* 8024B9D0 00247670  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024B9D4 00247674  4E 80 00 20 */	blr 
+/* 8024B9D4 00247674  4E 80 00 20 */	blr
 
 .global "__pl__8GameTimeCFRCi"
 "__pl__8GameTimeCFRCi":
@@ -5486,12 +5486,12 @@ lbl_8024B9BC:
 /* 8024BA10 002476B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BA14 002476B4  7C 08 03 A6 */	mtlr r0
 /* 8024BA18 002476B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BA1C 002476BC  4E 80 00 20 */	blr 
+/* 8024BA1C 002476BC  4E 80 00 20 */	blr
 
 .global "__opUs__12BitFlags<Us>CFv"
 "__opUs__12BitFlags<Us>CFv":
 /* 8024BA20 002476C0  A0 63 00 00 */	lhz r3, 0(r3)
-/* 8024BA24 002476C4  4E 80 00 20 */	blr 
+/* 8024BA24 002476C4  4E 80 00 20 */	blr
 
 .global "copy<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo"
 "copy<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo":
@@ -5533,7 +5533,7 @@ lbl_8024BA70:
 /* 8024BA88 00247728  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024BA8C 0024772C  7C 08 03 A6 */	mtlr r0
 /* 8024BA90 00247730  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024BA94 00247734  4E 80 00 20 */	blr 
+/* 8024BA94 00247734  4E 80 00 20 */	blr
 
 .global "__as__Q214WeatherManager14WindyPlantInfoFRCQ214WeatherManager14WindyPlantInfo"
 "__as__Q214WeatherManager14WindyPlantInfoFRCQ214WeatherManager14WindyPlantInfo":
@@ -5541,7 +5541,7 @@ lbl_8024BA70:
 /* 8024BA9C 0024773C  80 04 00 04 */	lwz r0, 4(r4)
 /* 8024BAA0 00247740  90 A3 00 00 */	stw r5, 0(r3)
 /* 8024BAA4 00247744  90 03 00 04 */	stw r0, 4(r3)
-/* 8024BAA8 00247748  4E 80 00 20 */	blr 
+/* 8024BAA8 00247748  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ27Weather11DamageEvent,PQ27Weather11DamageEvent>__5eastlFPQ27Weather11DamageEventPQ27Weather11DamageEventPQ27Weather11DamageEvent_PQ27Weather11DamageEvent"
 "copy_backward<PQ27Weather11DamageEvent,PQ27Weather11DamageEvent>__5eastlFPQ27Weather11DamageEventPQ27Weather11DamageEventPQ27Weather11DamageEvent_PQ27Weather11DamageEvent":
@@ -5583,7 +5583,7 @@ lbl_8024BAF4:
 /* 8024BB0C 002477AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024BB10 002477B0  7C 08 03 A6 */	mtlr r0
 /* 8024BB14 002477B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024BB18 002477B8  4E 80 00 20 */	blr 
+/* 8024BB18 002477B8  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo"
 "copy_backward<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo":
@@ -5625,7 +5625,7 @@ lbl_8024BB64:
 /* 8024BB7C 0024781C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024BB80 00247820  7C 08 03 A6 */	mtlr r0
 /* 8024BB84 00247824  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024BB88 00247828  4E 80 00 20 */	blr 
+/* 8024BB88 00247828  4E 80 00 20 */	blr
 
 .global "GetRow<Q27Weather12RainLevelRef>__11ERQuickdataFPC34ERQTable<Q27Weather12RainLevelRef>PCcPPCQ27Weather12RainLevelRef_b"
 "GetRow<Q27Weather12RainLevelRef>__11ERQuickdataFPC34ERQTable<Q27Weather12RainLevelRef>PCcPPCQ27Weather12RainLevelRef_b":
@@ -5646,7 +5646,7 @@ lbl_8024BBB0:
 /* 8024BBC0 00247860  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BBC4 00247864  7C 08 03 A6 */	mtlr r0
 /* 8024BBC8 00247868  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BBCC 0024786C  4E 80 00 20 */	blr 
+/* 8024BBCC 0024786C  4E 80 00 20 */	blr
 
 .global "GetTable<Q27Weather13WeatherSounds>__11ERQuickdataFPCcPPC35ERQTable<Q27Weather13WeatherSounds>_b"
 "GetTable<Q27Weather13WeatherSounds>__11ERQuickdataFPCcPPC35ERQTable<Q27Weather13WeatherSounds>_b":
@@ -5676,7 +5676,7 @@ lbl_8024BC18:
 /* 8024BC1C 002478BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024BC20 002478C0  7C 08 03 A6 */	mtlr r0
 /* 8024BC24 002478C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BC28 002478C8  4E 80 00 20 */	blr 
+/* 8024BC28 002478C8  4E 80 00 20 */	blr
 
 .global "GetTable<Q27Weather11FogLevelRef>__11ERQuickdataFPCcPPC33ERQTable<Q27Weather11FogLevelRef>_b"
 "GetTable<Q27Weather11FogLevelRef>__11ERQuickdataFPCcPPC33ERQTable<Q27Weather11FogLevelRef>_b":
@@ -5706,7 +5706,7 @@ lbl_8024BC74:
 /* 8024BC78 00247918  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024BC7C 0024791C  7C 08 03 A6 */	mtlr r0
 /* 8024BC80 00247920  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BC84 00247924  4E 80 00 20 */	blr 
+/* 8024BC84 00247924  4E 80 00 20 */	blr
 
 .global "GetTable<Q27Weather12WindLevelRef>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12WindLevelRef>_b"
 "GetTable<Q27Weather12WindLevelRef>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12WindLevelRef>_b":
@@ -5736,7 +5736,7 @@ lbl_8024BCD0:
 /* 8024BCD4 00247974  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024BCD8 00247978  7C 08 03 A6 */	mtlr r0
 /* 8024BCDC 0024797C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BCE0 00247980  4E 80 00 20 */	blr 
+/* 8024BCE0 00247980  4E 80 00 20 */	blr
 
 .global "GetTable<Q27Weather12RainLevelRef>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12RainLevelRef>_b"
 "GetTable<Q27Weather12RainLevelRef>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12RainLevelRef>_b":
@@ -5766,7 +5766,7 @@ lbl_8024BD2C:
 /* 8024BD30 002479D0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024BD34 002479D4  7C 08 03 A6 */	mtlr r0
 /* 8024BD38 002479D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BD3C 002479DC  4E 80 00 20 */	blr 
+/* 8024BD3C 002479DC  4E 80 00 20 */	blr
 
 .global "GetTable<Q27Weather12WeatherState>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12WeatherState>_b"
 "GetTable<Q27Weather12WeatherState>__11ERQuickdataFPCcPPC34ERQTable<Q27Weather12WeatherState>_b":
@@ -5796,7 +5796,7 @@ lbl_8024BD88:
 /* 8024BD8C 00247A2C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024BD90 00247A30  7C 08 03 A6 */	mtlr r0
 /* 8024BD94 00247A34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BD98 00247A38  4E 80 00 20 */	blr 
+/* 8024BD98 00247A38  4E 80 00 20 */	blr
 
 .global "GetRow<Q27Weather12WeatherState>__11ERQuickdataFPC34ERQTable<Q27Weather12WeatherState>PCcPPCQ27Weather12WeatherState_b"
 "GetRow<Q27Weather12WeatherState>__11ERQuickdataFPC34ERQTable<Q27Weather12WeatherState>PCcPPCQ27Weather12WeatherState_b":
@@ -5817,7 +5817,7 @@ lbl_8024BDC0:
 /* 8024BDD0 00247A70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BDD4 00247A74  7C 08 03 A6 */	mtlr r0
 /* 8024BDD8 00247A78  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BDDC 00247A7C  4E 80 00 20 */	blr 
+/* 8024BDDC 00247A7C  4E 80 00 20 */	blr
 
 .global "GetRowName<Q27Weather12WeatherState>__11ERQuickdataFPCQ27Weather12WeatherState_PCc"
 "GetRowName<Q27Weather12WeatherState>__11ERQuickdataFPCQ27Weather12WeatherState_PCc":
@@ -5832,7 +5832,7 @@ lbl_8024BDC0:
 /* 8024BE00 00247AA0  80 61 00 08 */	lwz r3, 8(r1)
 /* 8024BE04 00247AA4  7C 08 03 A6 */	mtlr r0
 /* 8024BE08 00247AA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BE0C 00247AAC  4E 80 00 20 */	blr 
+/* 8024BE0C 00247AAC  4E 80 00 20 */	blr
 
 .global "FindRow<Q27Weather12WeatherState>__11ERQuickdataFPCQ27Weather12WeatherStatePPC34ERQTable<Q27Weather12WeatherState>PPCcPUi_b"
 "FindRow<Q27Weather12WeatherState>__11ERQuickdataFPCQ27Weather12WeatherStatePPC34ERQTable<Q27Weather12WeatherState>PPCcPUi_b":
@@ -5898,7 +5898,7 @@ lbl_8024BECC:
 /* 8024BED8 00247B78  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8024BEDC 00247B7C  7C 08 03 A6 */	mtlr r0
 /* 8024BEE0 00247B80  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024BEE4 00247B84  4E 80 00 20 */	blr 
+/* 8024BEE4 00247B84  4E 80 00 20 */	blr
 
 .global "GetRow<Q27Weather12WindLevelRef>__11ERQuickdataFPC34ERQTable<Q27Weather12WindLevelRef>PCcPPCQ27Weather12WindLevelRef_b"
 "GetRow<Q27Weather12WindLevelRef>__11ERQuickdataFPC34ERQTable<Q27Weather12WindLevelRef>PCcPPCQ27Weather12WindLevelRef_b":
@@ -5919,7 +5919,7 @@ lbl_8024BF0C:
 /* 8024BF1C 00247BBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BF20 00247BC0  7C 08 03 A6 */	mtlr r0
 /* 8024BF24 00247BC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BF28 00247BC8  4E 80 00 20 */	blr 
+/* 8024BF28 00247BC8  4E 80 00 20 */	blr
 
 .global "GetRow<Q27Weather11FogLevelRef>__11ERQuickdataFPC33ERQTable<Q27Weather11FogLevelRef>PCcPPCQ27Weather11FogLevelRef_b"
 "GetRow<Q27Weather11FogLevelRef>__11ERQuickdataFPC33ERQTable<Q27Weather11FogLevelRef>PCcPPCQ27Weather11FogLevelRef_b":
@@ -5940,7 +5940,7 @@ lbl_8024BF50:
 /* 8024BF60 00247C00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BF64 00247C04  7C 08 03 A6 */	mtlr r0
 /* 8024BF68 00247C08  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BF6C 00247C0C  4E 80 00 20 */	blr 
+/* 8024BF6C 00247C0C  4E 80 00 20 */	blr
 
 .global "GetRow<Q27Weather13WeatherSounds>__11ERQuickdataFPC35ERQTable<Q27Weather13WeatherSounds>PCcPPCQ27Weather13WeatherSounds_b"
 "GetRow<Q27Weather13WeatherSounds>__11ERQuickdataFPC35ERQTable<Q27Weather13WeatherSounds>PCcPPCQ27Weather13WeatherSounds_b":
@@ -5961,7 +5961,7 @@ lbl_8024BF94:
 /* 8024BFA4 00247C44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BFA8 00247C48  7C 08 03 A6 */	mtlr r0
 /* 8024BFAC 00247C4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024BFB0 00247C50  4E 80 00 20 */	blr 
+/* 8024BFB0 00247C50  4E 80 00 20 */	blr
 
 .global "size__35VECTOR<Q27Weather15WeatherSequence>CFv"
 "size__35VECTOR<Q27Weather15WeatherSequence>CFv":
@@ -5969,10 +5969,10 @@ lbl_8024BF94:
 /* 8024BFB8 00247C58  2C 03 00 00 */	cmpwi r3, 0
 /* 8024BFBC 00247C5C  41 82 00 0C */	beq lbl_8024BFC8
 /* 8024BFC0 00247C60  80 63 FF FC */	lwz r3, -4(r3)
-/* 8024BFC4 00247C64  4E 80 00 20 */	blr 
+/* 8024BFC4 00247C64  4E 80 00 20 */	blr
 lbl_8024BFC8:
 /* 8024BFC8 00247C68  38 60 00 00 */	li r3, 0
-/* 8024BFCC 00247C6C  4E 80 00 20 */	blr 
+/* 8024BFCC 00247C6C  4E 80 00 20 */	blr
 
 .global "__vc__35VECTOR<Q27Weather15WeatherSequence>CFUl"
 "__vc__35VECTOR<Q27Weather15WeatherSequence>CFUl":
@@ -5988,12 +5988,12 @@ lbl_8024BFC8:
 /* 8024BFF4 00247C94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024BFF8 00247C98  7C 08 03 A6 */	mtlr r0
 /* 8024BFFC 00247C9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024C000 00247CA0  4E 80 00 20 */	blr 
+/* 8024C000 00247CA0  4E 80 00 20 */	blr
 
 .global "begin__35VECTOR<Q27Weather15WeatherSequence>CFv"
 "begin__35VECTOR<Q27Weather15WeatherSequence>CFv":
 /* 8024C004 00247CA4  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024C008 00247CA8  4E 80 00 20 */	blr 
+/* 8024C008 00247CA8  4E 80 00 20 */	blr
 
 .global "__vc__24VECTOR<Q25Level7DayData>CFUl"
 "__vc__24VECTOR<Q25Level7DayData>CFUl":
@@ -6009,12 +6009,12 @@ lbl_8024BFC8:
 /* 8024C030 00247CD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024C034 00247CD4  7C 08 03 A6 */	mtlr r0
 /* 8024C038 00247CD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024C03C 00247CDC  4E 80 00 20 */	blr 
+/* 8024C03C 00247CDC  4E 80 00 20 */	blr
 
 .global "begin__24VECTOR<Q25Level7DayData>CFv"
 "begin__24VECTOR<Q25Level7DayData>CFv":
 /* 8024C040 00247CE0  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024C044 00247CE4  4E 80 00 20 */	blr 
+/* 8024C044 00247CE4  4E 80 00 20 */	blr
 
 .global "__vc__26VECTOR<Q25Level9MonthData>CFUl"
 "__vc__26VECTOR<Q25Level9MonthData>CFUl":
@@ -6030,24 +6030,24 @@ lbl_8024BFC8:
 /* 8024C06C 00247D0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024C070 00247D10  7C 08 03 A6 */	mtlr r0
 /* 8024C074 00247D14  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024C078 00247D18  4E 80 00 20 */	blr 
+/* 8024C078 00247D18  4E 80 00 20 */	blr
 
 .global "begin__26VECTOR<Q25Level9MonthData>CFv"
 "begin__26VECTOR<Q25Level9MonthData>CFv":
 /* 8024C07C 00247D1C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024C080 00247D20  4E 80 00 20 */	blr 
+/* 8024C080 00247D20  4E 80 00 20 */	blr
 
 .global "SetRainBlend__7ERLevelFf"
 "SetRainBlend__7ERLevelFf":
 /* 8024C084 00247D24  3C 63 00 03 */	addis r3, r3, 3
 /* 8024C088 00247D28  D0 23 F6 98 */	stfs f1, -0x968(r3)
-/* 8024C08C 00247D2C  4E 80 00 20 */	blr 
+/* 8024C08C 00247D2C  4E 80 00 20 */	blr
 
 .global "SetSunTimes__7ERLevelFff"
 "SetSunTimes__7ERLevelFff":
 /* 8024C090 00247D30  3C 63 00 03 */	addis r3, r3, 3
 /* 8024C094 00247D34  D0 23 F8 A8 */	stfs f1, -0x758(r3)
-/* 8024C098 00247D38  4E 80 00 20 */	blr 
+/* 8024C098 00247D38  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ27Weather11DamageEvent,PQ27Weather11DamageEvent,PQ27Weather11DamageEvent>__5eastlFPQ27Weather11DamageEventPQ27Weather11DamageEventPQ27Weather11DamageEvent_PQ27Weather11DamageEvent"
 "uninitialized_copy_ptr<PQ27Weather11DamageEvent,PQ27Weather11DamageEvent,PQ27Weather11DamageEvent>__5eastlFPQ27Weather11DamageEventPQ27Weather11DamageEventPQ27Weather11DamageEvent_PQ27Weather11DamageEvent":
@@ -6092,7 +6092,7 @@ lbl_8024BFC8:
 /* 8024C134 00247DD4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8024C138 00247DD8  7C 08 03 A6 */	mtlr r0
 /* 8024C13C 00247DDC  38 21 00 50 */	addi r1, r1, 0x50
-/* 8024C140 00247DE0  4E 80 00 20 */	blr 
+/* 8024C140 00247DE0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>,Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>>__5eastlFQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl22integral_constant<b,0>_Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>"
 "uninitialized_copy_impl<Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>,Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>>__5eastlFQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Q25eastl22integral_constant<b,0>_Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>":
@@ -6140,7 +6140,7 @@ lbl_8024C1B8:
 /* 8024C1DC 00247E7C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8024C1E0 00247E80  7C 08 03 A6 */	mtlr r0
 /* 8024C1E4 00247E84  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024C1E8 00247E88  4E 80 00 20 */	blr 
+/* 8024C1E8 00247E88  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo"
 "uninitialized_copy_ptr<PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo,PQ214WeatherManager14WindyPlantInfo>__5eastlFPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfoPQ214WeatherManager14WindyPlantInfo_PQ214WeatherManager14WindyPlantInfo":
@@ -6185,7 +6185,7 @@ lbl_8024C1B8:
 /* 8024C284 00247F24  80 63 00 00 */	lwz r3, 0(r3)
 /* 8024C288 00247F28  7C 08 03 A6 */	mtlr r0
 /* 8024C28C 00247F2C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8024C290 00247F30  4E 80 00 20 */	blr 
+/* 8024C290 00247F30  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>,Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>>__5eastlFQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl22integral_constant<b,0>_Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>"
 "uninitialized_copy_impl<Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>,Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>>__5eastlFQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Q25eastl22integral_constant<b,0>_Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>":
@@ -6233,17 +6233,17 @@ lbl_8024C308:
 /* 8024C32C 00247FCC  80 61 00 08 */	lwz r3, 8(r1)
 /* 8024C330 00247FD0  7C 08 03 A6 */	mtlr r0
 /* 8024C334 00247FD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024C338 00247FD8  4E 80 00 20 */	blr 
+/* 8024C338 00247FD8  4E 80 00 20 */	blr
 
 .global "base__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>CFv"
 "base__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>CFv":
-/* 8024C33C 00247FDC  4E 80 00 20 */	blr 
+/* 8024C33C 00247FDC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>FRCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>"
 "__ct__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>FRCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>":
 /* 8024C340 00247FE0  80 04 00 00 */	lwz r0, 0(r4)
 /* 8024C344 00247FE4  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C348 00247FE8  4E 80 00 20 */	blr 
+/* 8024C348 00247FE8  4E 80 00 20 */	blr
 
 .global "__ne<PQ27Weather11DamageEvent,v>__5eastlFRCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>RCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>_b"
 "__ne<PQ27Weather11DamageEvent,v>__5eastlFRCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>RCQ25eastl44generic_iterator<PQ27Weather11DamageEvent,v>_b":
@@ -6268,35 +6268,35 @@ lbl_8024C308:
 /* 8024C394 00248034  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024C398 00248038  7C 08 03 A6 */	mtlr r0
 /* 8024C39C 0024803C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024C3A0 00248040  4E 80 00 20 */	blr 
+/* 8024C3A0 00248040  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Fv"
 "__pp__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>Fv":
 /* 8024C3A4 00248044  80 83 00 00 */	lwz r4, 0(r3)
 /* 8024C3A8 00248048  38 04 00 08 */	addi r0, r4, 8
 /* 8024C3AC 0024804C  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C3B0 00248050  4E 80 00 20 */	blr 
+/* 8024C3B0 00248050  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>CFv"
 "__ml__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>CFv":
 /* 8024C3B4 00248054  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024C3B8 00248058  4E 80 00 20 */	blr 
+/* 8024C3B8 00248058  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>FRCPQ27Weather11DamageEvent"
 "__ct__Q25eastl44generic_iterator<PQ27Weather11DamageEvent,v>FRCPQ27Weather11DamageEvent":
 /* 8024C3BC 0024805C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8024C3C0 00248060  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C3C4 00248064  4E 80 00 20 */	blr 
+/* 8024C3C4 00248064  4E 80 00 20 */	blr
 
 .global "base__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>CFv"
 "base__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>CFv":
-/* 8024C3C8 00248068  4E 80 00 20 */	blr 
+/* 8024C3C8 00248068  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>FRCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>"
 "__ct__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>FRCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>":
 /* 8024C3CC 0024806C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8024C3D0 00248070  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C3D4 00248074  4E 80 00 20 */	blr 
+/* 8024C3D4 00248074  4E 80 00 20 */	blr
 
 .global "__ne<PQ214WeatherManager14WindyPlantInfo,v>__5eastlFRCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>RCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>_b"
 "__ne<PQ214WeatherManager14WindyPlantInfo,v>__5eastlFRCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>RCQ25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>_b":
@@ -6321,74 +6321,177 @@ lbl_8024C308:
 /* 8024C420 002480C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024C424 002480C4  7C 08 03 A6 */	mtlr r0
 /* 8024C428 002480C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024C42C 002480CC  4E 80 00 20 */	blr 
+/* 8024C42C 002480CC  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Fv"
 "__pp__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>Fv":
 /* 8024C430 002480D0  80 83 00 00 */	lwz r4, 0(r3)
 /* 8024C434 002480D4  38 04 00 08 */	addi r0, r4, 8
 /* 8024C438 002480D8  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C43C 002480DC  4E 80 00 20 */	blr 
+/* 8024C43C 002480DC  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>CFv"
 "__ml__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>CFv":
 /* 8024C440 002480E0  80 63 00 00 */	lwz r3, 0(r3)
-/* 8024C444 002480E4  4E 80 00 20 */	blr 
+/* 8024C444 002480E4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>FRCPQ214WeatherManager14WindyPlantInfo"
 "__ct__Q25eastl55generic_iterator<PQ214WeatherManager14WindyPlantInfo,v>FRCPQ214WeatherManager14WindyPlantInfo":
 /* 8024C448 002480E8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8024C44C 002480EC  90 03 00 00 */	stw r0, 0(r3)
-/* 8024C450 002480F0  4E 80 00 20 */	blr 
+/* 8024C450 002480F0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044EA88
 lbl_8044EA88:
-	.incbin "baserom.dol", 0x44AB88, 0x10
+	# ROM: 0x44AB88
+	.asciz "hurricane"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "ms_szWeatherStateNames__14WeatherManager"
 "ms_szWeatherStateNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44AB98, 0x28
+	# ROM: 0x44AB98
+	.4byte 0x805D64F8 ;# ptr
+	.4byte 0x8044EA88 ;# ptr
+	.4byte 0x805D6500 ;# ptr
+	.4byte 0x805D6508 ;# ptr
+	.asciz "Moderate"
+	.byte 0x00, 0x00, 0x00
+	.asciz "VeryHeavy"
+	.byte 0x00, 0x00
+
 .global "ms_szWindLevelNames__14WeatherManager"
 "ms_szWindLevelNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44ABC0, 0x14
+	# ROM: 0x44ABC0
+	.4byte 0x805D6510 ;# ptr
+	.4byte 0x805D6518 ;# ptr
+	.4byte 0x8044EAA8 ;# ptr
+	.4byte 0x805D6520 ;# ptr
+	.4byte 0x8044EAB4 ;# ptr
+
 .global "ms_szRainLevelNames__14WeatherManager"
 "ms_szRainLevelNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44ABD4, 0x20
+	# ROM: 0x44ABD4
+	.4byte 0x805D6528 ;# ptr
+	.4byte 0x805D6518 ;# ptr
+	.4byte 0x8044EAA8 ;# ptr
+	.4byte 0x805D6520 ;# ptr
+	.4byte 0x8044EAB4 ;# ptr
+	.asciz "Overcast"
+	.byte 0x00, 0x00, 0x00
+
 .global "ms_szCloudLevelNames__14WeatherManager"
 "ms_szCloudLevelNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44ABF4, 0xC
+	# ROM: 0x44ABF4
+	.4byte 0x805D6530 ;# ptr
+	.4byte 0x8044EAE8 ;# ptr
+	.4byte 0x805D6538 ;# ptr
+
 .global "ms_szFogLevelNames__14WeatherManager"
 "ms_szFogLevelNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44AC00, 0x68
+	# ROM: 0x44AC00
+	.4byte 0x805D6528 ;# ptr
+	.4byte 0x805D6518 ;# ptr
+	.4byte 0x8044EAA8 ;# ptr
+	.4byte 0x805D6520 ;# ptr
+	.asciz "Crescent-Waxing"
+	.asciz "Half-Waxing"
+	.asciz "Gibbous-Waxing"
+	.byte 0x00
+	.asciz "Gibbous-Waning"
+	.byte 0x00
+	.asciz "Half-Waning"
+	.asciz "Crescent-Waning"
+
 .global "ms_szMoonPhaseNames__14WeatherManager"
 "ms_szMoonPhaseNames__14WeatherManager":
-	.incbin "baserom.dol", 0x44AC68, 0x20
+	# ROM: 0x44AC68
+	.4byte 0x805D6540 ;# ptr
+	.4byte 0x8044EB10 ;# ptr
+	.4byte 0x8044EB20 ;# ptr
+	.4byte 0x8044EB2C ;# ptr
+	.4byte 0x805D6544 ;# ptr
+	.4byte 0x8044EB3C ;# ptr
+	.4byte 0x8044EB4C ;# ptr
+	.4byte 0x8044EB58 ;# ptr
+
 .global lbl_8044EB88
 lbl_8044EB88:
-	.incbin "baserom.dol", 0x44AC88, 0x5C
+	# ROM: 0x44AC88
+	.asciz "EASTL vector"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WeatherState"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RainLevelRef"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WindLevelRef"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FogLevelRef"
+	.asciz "WeatherSounds"
+	.byte 0x00, 0x00
+
 .global lbl_8044EBE4
 lbl_8044EBE4:
-	.incbin "baserom.dol", 0x44ACE4, 0x10
+	# ROM: 0x44ACE4
+	.asciz "thunder-near"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8044EBF4
 lbl_8044EBF4:
-	.incbin "baserom.dol", 0x44ACF4, 0x24
+	# ROM: 0x44ACF4
+	.asciz "thunder-far"
+	.asciz "allocator.h"
+	.asciz "allocator.h"
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D64F8
 lbl_805D64F8:
-	.incbin "baserom.dol", 0x486078, 0x54
+	# ROM: 0x486078
+	.asciz "clear"
+	.byte 0x00, 0x00
+	.asciz "rainy"
+	.byte 0x00, 0x00
+	.asciz "stormy"
+	.byte 0x00
+	.asciz "Calm"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Light"
+	.byte 0x00, 0x00
+	.asciz "Heavy"
+	.byte 0x00, 0x00
+	.asciz "None"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Normal"
+	.byte 0x00
+	.asciz "Stormy"
+	.byte 0x00
+	.4byte 0x4E657700
+	.asciz "Full"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D654C
 lbl_805D654C:
-	.incbin "baserom.dol", 0x4860CC, 0x4
+	# ROM: 0x4860CC
+	.4byte 0x00000E10
+
 .global lbl_805D6550
 lbl_805D6550:
-	.incbin "baserom.dol", 0x4860D0, 0x4
+	# ROM: 0x4860D0
+	.4byte 0x00000E10
+
 .global lbl_805D6554
 lbl_805D6554:
-	.incbin "baserom.dol", 0x4860D4, 0x4
+	# ROM: 0x4860D4
+	.4byte 0x00000E10
+
 .global lbl_805D6558
 lbl_805D6558:
-	.incbin "baserom.dol", 0x4860D8, 0x8
+	# ROM: 0x4860D8
+	.4byte 0x0000000F
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "SECONDS_BETWEEN_MOON_PHASE_UPDATE__14WeatherManager"
@@ -6398,64 +6501,107 @@ lbl_805D6558:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DAF00
 lbl_805DAF00:
-	.incbin "baserom.dol", 0x489220, 0x4
+	# ROM: 0x489220
+	.4byte 0x41700000
+
 .global lbl_805DAF04
 lbl_805DAF04:
-	.incbin "baserom.dol", 0x489224, 0x4
+	# ROM: 0x489224
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DAF08
 lbl_805DAF08:
-	.incbin "baserom.dol", 0x489228, 0x4
+	# ROM: 0x489228
+	.4byte 0x3F800000
+
 .global lbl_805DAF0C
 lbl_805DAF0C:
-	.incbin "baserom.dol", 0x48922C, 0x4
+	# ROM: 0x48922C
+	.4byte 0x40000000
+
 .global lbl_805DAF10
 lbl_805DAF10:
-	.incbin "baserom.dol", 0x489230, 0x4
+	# ROM: 0x489230
+	.4byte 0x40400000
+
 .global lbl_805DAF14
 lbl_805DAF14:
-	.incbin "baserom.dol", 0x489234, 0x4
+	# ROM: 0x489234
+	.4byte 0x41500000
+
 .global lbl_805DAF18
 lbl_805DAF18:
-	.incbin "baserom.dol", 0x489238, 0x4
+	# ROM: 0x489238
+	.4byte 0xC2C80000
+
 .global lbl_805DAF1C
 lbl_805DAF1C:
-	.incbin "baserom.dol", 0x48923C, 0x4
+	# ROM: 0x48923C
+	.4byte 0xBF800000
+
 .global "MAX_WIND_SPEED__14WeatherManager"
 "MAX_WIND_SPEED__14WeatherManager":
-	.incbin "baserom.dol", 0x489240, 0x4
+	# ROM: 0x489240
+	.4byte 0x42C80000
+
 .global lbl_805DAF24
 lbl_805DAF24:
-	.incbin "baserom.dol", 0x489244, 0x4
+	# ROM: 0x489244
+	.4byte 0x3F000000
+
 .global lbl_805DAF28
 lbl_805DAF28:
-	.incbin "baserom.dol", 0x489248, 0x4
+	# ROM: 0x489248
+	.4byte 0x3E99999A
+
 .global lbl_805DAF2C
 lbl_805DAF2C:
-	.incbin "baserom.dol", 0x48924C, 0x4
+	# ROM: 0x48924C
+	.4byte 0x3F400000
+
 .global lbl_805DAF30
 lbl_805DAF30:
-	.incbin "baserom.dol", 0x489250, 0x8
+	# ROM: 0x489250
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DAF38
 lbl_805DAF38:
-	.incbin "baserom.dol", 0x489258, 0x4
+	# ROM: 0x489258
+	.4byte 0xBD99999A
+
 .global lbl_805DAF3C
 lbl_805DAF3C:
-	.incbin "baserom.dol", 0x48925C, 0x4
+	# ROM: 0x48925C
+	.4byte 0xBE19999A
+
 .global lbl_805DAF40
 lbl_805DAF40:
-	.incbin "baserom.dol", 0x489260, 0x4
+	# ROM: 0x489260
+	.4byte 0x3E800000
+
 .global lbl_805DAF44
 lbl_805DAF44:
-	.incbin "baserom.dol", 0x489264, 0x4
+	# ROM: 0x489264
+	.4byte 0x41200000
+
 .global lbl_805DAF48
 lbl_805DAF48:
-	.incbin "baserom.dol", 0x489268, 0x4
+	# ROM: 0x489268
+	.4byte 0x3FC90FDB
+
 .global lbl_805DAF4C
 lbl_805DAF4C:
-	.incbin "baserom.dol", 0x48926C, 0x4
+	# ROM: 0x48926C
+	.4byte 0x40490FDB
+
 .global lbl_805DAF50
 lbl_805DAF50:
-	.incbin "baserom.dol", 0x489270, 0x4
+	# ROM: 0x489270
+	.4byte 0x42C80000
+
 .global lbl_805DAF54
 lbl_805DAF54:
-	.incbin "baserom.dol", 0x489274, 0x4
+	# ROM: 0x489274
+	.4byte 0x42480000
+

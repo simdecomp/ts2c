@@ -21,7 +21,7 @@
 /* 803B1B60 003AD800  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B1B64 003AD804  7C 08 03 A6 */	mtlr r0
 /* 803B1B68 003AD808  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B1B6C 003AD80C  4E 80 00 20 */	blr 
+/* 803B1B6C 003AD80C  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3snd22SoundMemoryAllocatableFv"
 "__dt__Q36nw4hbm3snd22SoundMemoryAllocatableFv":
@@ -41,14 +41,14 @@ lbl_803B1B98:
 /* 803B1BA0 003AD840  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B1BA4 003AD844  7C 08 03 A6 */	mtlr r0
 /* 803B1BA8 003AD848  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B1BAC 003AD84C  4E 80 00 20 */	blr 
+/* 803B1BAC 003AD84C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3snd22SoundMemoryAllocatableFv"
 "__ct__Q36nw4hbm3snd22SoundMemoryAllocatableFv":
 /* 803B1BB0 003AD850  3C 80 80 47 */	lis r4, "__vt__Q36nw4hbm3snd22SoundMemoryAllocatable"@ha
 /* 803B1BB4 003AD854  38 84 0E F8 */	addi r4, r4, "__vt__Q36nw4hbm3snd22SoundMemoryAllocatable"@l
 /* 803B1BB8 003AD858  90 83 00 00 */	stw r4, 0(r3)
-/* 803B1BBC 003AD85C  4E 80 00 20 */	blr 
+/* 803B1BBC 003AD85C  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3snd9SoundHeapFv"
 "__dt__Q36nw4hbm3snd9SoundHeapFv":
@@ -82,7 +82,7 @@ lbl_803B1C1C:
 /* 803B1C28 003AD8C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B1C2C 003AD8CC  7C 08 03 A6 */	mtlr r0
 /* 803B1C30 003AD8D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B1C34 003AD8D4  4E 80 00 20 */	blr 
+/* 803B1C34 003AD8D4  4E 80 00 20 */	blr
 
 .global "Create__Q36nw4hbm3snd9SoundHeapFPvUl"
 "Create__Q36nw4hbm3snd9SoundHeapFPvUl":
@@ -134,7 +134,7 @@ lbl_803B1C1C:
 /* 803B1CC8 003AD968  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803B1CCC 003AD96C  7C 08 03 A6 */	mtlr r0
 /* 803B1CD0 003AD970  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B1CD4 003AD974  4E 80 00 20 */	blr 
+/* 803B1CD4 003AD974  4E 80 00 20 */	blr
 
 .global "DisposeCallbackFunc__Q36nw4hbm3snd9SoundHeapFPvUlPv"
 "DisposeCallbackFunc__Q36nw4hbm3snd9SoundHeapFPvUlPv":
@@ -158,12 +158,22 @@ lbl_803B1C1C:
 /* 803B1D1C 003AD9BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803B1D20 003AD9C0  7C 08 03 A6 */	mtlr r0
 /* 803B1D24 003AD9C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B1D28 003AD9C8  4E 80 00 20 */	blr 
+/* 803B1D28 003AD9C8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3snd9SoundHeap"
 "__vt__Q36nw4hbm3snd9SoundHeap":
-	.incbin "baserom.dol", 0x46CFE8, 0x10
+	# ROM: 0x46CFE8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3snd9SoundHeapFv" ;# ptr (0x803B1BC0)
+	.4byte "Alloc__Q36nw4hbm3snd9SoundHeapFUl" ;# ptr (0x803B1C48)
+
 .global "__vt__Q36nw4hbm3snd22SoundMemoryAllocatable"
 "__vt__Q36nw4hbm3snd22SoundMemoryAllocatable":
-	.incbin "baserom.dol", 0x46CFF8, 0x10
+	# ROM: 0x46CFF8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3snd22SoundMemoryAllocatableFv" ;# ptr (0x803B1B70)
+	.4byte 0x00000000
+

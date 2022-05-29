@@ -70,20 +70,20 @@ lbl_80373EDC:
 /* 80373EE8 0036FB88  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80373EEC 0036FB8C  7C 08 03 A6 */	mtlr r0
 /* 80373EF0 0036FB90  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373EF4 0036FB94  4E 80 00 20 */	blr 
+/* 80373EF4 0036FB94  4E 80 00 20 */	blr
 
 .global "__GXDefaultTlutRegionCallback"
 "__GXDefaultTlutRegionCallback":
 /* 80373EF8 0036FB98  28 03 00 14 */	cmplwi r3, 0x14
 /* 80373EFC 0036FB9C  41 80 00 0C */	blt lbl_80373F08
 /* 80373F00 0036FBA0  38 60 00 00 */	li r3, 0
-/* 80373F04 0036FBA4  4E 80 00 20 */	blr 
+/* 80373F04 0036FBA4  4E 80 00 20 */	blr
 lbl_80373F08:
 /* 80373F08 0036FBA8  80 82 A5 98 */	lwz r4, "__GXData"-_SDA2_BASE_(r2)
 /* 80373F0C 0036FBAC  54 60 20 36 */	slwi r0, r3, 4
 /* 80373F10 0036FBB0  7C 64 02 14 */	add r3, r4, r0
 /* 80373F14 0036FBB4  38 63 03 D8 */	addi r3, r3, 0x3d8
-/* 80373F18 0036FBB8  4E 80 00 20 */	blr 
+/* 80373F18 0036FBB8  4E 80 00 20 */	blr
 
 .global "__GXShutdown"
 "__GXShutdown":
@@ -184,7 +184,7 @@ lbl_80374074:
 /* 80374078 0036FD18  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8037407C 0036FD1C  7C 08 03 A6 */	mtlr r0
 /* 80374080 0036FD20  38 21 00 10 */	addi r1, r1, 0x10
-/* 80374084 0036FD24  4E 80 00 20 */	blr 
+/* 80374084 0036FD24  4E 80 00 20 */	blr
 
 .global "__GXInitRevisionBits"
 "__GXInitRevisionBits":
@@ -264,7 +264,7 @@ lbl_803740A0:
 /* 803741A8 0036FE48  90 C7 80 00 */	stw r6, -0x8000(r7)
 /* 803741AC 0036FE4C  98 07 80 00 */	stb r0, -0x8000(r7)
 /* 803741B0 0036FE50  90 87 80 00 */	stw r4, -0x8000(r7)
-/* 803741B4 0036FE54  4E 80 00 20 */	blr 
+/* 803741B4 0036FE54  4E 80 00 20 */	blr
 
 .global "GXInit"
 "GXInit":
@@ -594,7 +594,7 @@ lbl_803745EC:
 /* 803746AC 0037034C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803746B0 00370350  7C 08 03 A6 */	mtlr r0
 /* 803746B4 00370354  38 21 00 20 */	addi r1, r1, 0x20
-/* 803746B8 00370358  4E 80 00 20 */	blr 
+/* 803746B8 00370358  4E 80 00 20 */	blr
 
 .global "__GXInitGX"
 "__GXInitGX":
@@ -1190,27 +1190,154 @@ lbl_80374EBC:
 /* 80374FBC 00370C5C  83 81 00 90 */	lwz r28, 0x90(r1)
 /* 80374FC0 00370C60  7C 08 03 A6 */	mtlr r0
 /* 80374FC4 00370C64  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80374FC8 00370C68  4E 80 00 20 */	blr 
+/* 80374FC8 00370C68  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80467860
 lbl_80467860:
-	.incbin "baserom.dol", 0x463960, 0x60
+	# ROM: 0x463960
+	.asciz "<< RVL_SDK - GX \trelease build: Nov 30 2006 03:30:39 (0x4199_60831) >>"
+	.byte 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "DefaultTexData"
 "DefaultTexData":
-	.incbin "baserom.dol", 0x4639C0, 0x20
+	# ROM: 0x4639C0
+	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+
 .global "GXDefaultVATList"
 "GXDefaultVATList":
-	.incbin "baserom.dol", 0x4639E0, 0xD0
+	# ROM: 0x4639E0
+	.4byte 0x00000009
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x0000000A
+	.4byte 0x00000000
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x0000000B
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x0000000D
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x0000000E
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x0000000F
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x00000011
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x00000012
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x00000013
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000001
+	.4byte 0x00000004
+	.4byte 0x00000000
+	.4byte 0x000000FF
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "GXDefaultProjData"
 "GXDefaultProjData":
-	.incbin "baserom.dol", 0x463AB0, 0x20
+	# ROM: 0x463AB0
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0xC0000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "GXTexRegionAddrTable"
 "GXTexRegionAddrTable":
-	.incbin "baserom.dol", 0x463AD0, 0xC0
+	# ROM: 0x463AD0
+	.4byte 0x00000000
+	.4byte 0x00010000
+	.4byte 0x00020000
+	.4byte 0x00030000
+	.4byte 0x00040000
+	.4byte 0x00050000
+	.4byte 0x00060000
+	.4byte 0x00070000
+	.4byte 0x00008000
+	.4byte 0x00018000
+	.4byte 0x00028000
+	.4byte 0x00038000
+	.4byte 0x00048000
+	.4byte 0x00058000
+	.4byte 0x00068000
+	.4byte 0x00078000
+	.4byte 0x00000000
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00098000
+	.4byte 0x00060000
+	.4byte 0x000B8000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00088000
+	.4byte 0x00050000
+	.4byte 0x000A8000
+	.4byte 0x00070000
+	.4byte 0x00000000
+	.4byte 0x00090000
+	.4byte 0x00020000
+	.4byte 0x000B0000
+	.4byte 0x00040000
+	.4byte 0x00090000
+	.4byte 0x00060000
+	.4byte 0x000B0000
+	.4byte 0x00080000
+	.4byte 0x00010000
+	.4byte 0x000A0000
+	.4byte 0x00030000
+	.4byte 0x00080000
+	.4byte 0x00050000
+	.4byte 0x000A0000
+	.4byte 0x00070000
+
 .global "GXShutdownFuncInfo"
 "GXShutdownFuncInfo":
-	.incbin "baserom.dol", 0x463B90, 0x10
+	# ROM: 0x463B90
+	.4byte "__GXShutdown" ;# ptr (0x80373F1C)
+	.4byte 0x0000007F
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "FifoObj"
@@ -1223,7 +1350,10 @@ lbl_80467860:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__GXVersion"
 "__GXVersion":
-	.incbin "baserom.dol", 0x486EE0, 0x8
+	# ROM: 0x486EE0
+	.4byte 0x80467860 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__piReg"
@@ -1257,43 +1387,73 @@ lbl_805D8B9C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "__GXData"
 "__GXData":
-	.incbin "baserom.dol", 0x489AD8, 0x4
+	# ROM: 0x489AD8
+	.4byte 0x80591640 ;# ptr
+
 .global lbl_805DB7BC
 lbl_805DB7BC:
-	.incbin "baserom.dol", 0x489ADC, 0x4
+	# ROM: 0x489ADC
+	.4byte 0x4B800000
+
 .global lbl_805DB7C0
 lbl_805DB7C0:
-	.incbin "baserom.dol", 0x489AE0, 0x4
+	# ROM: 0x489AE0
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB7C4
 lbl_805DB7C4:
-	.incbin "baserom.dol", 0x489AE4, 0x1
+	# ROM: 0x489AE4
+	.byte 0x40
+
 .global lbl_805DB7C5
 lbl_805DB7C5:
-	.incbin "baserom.dol", 0x489AE5, 0x1
+	# ROM: 0x489AE5
+	.byte 0x40
+
 .global lbl_805DB7C6
 lbl_805DB7C6:
-	.incbin "baserom.dol", 0x489AE6, 0x1
+	# ROM: 0x489AE6
+	.byte 0x40
+
 .global lbl_805DB7C7
 lbl_805DB7C7:
-	.incbin "baserom.dol", 0x489AE7, 0x1
+	# ROM: 0x489AE7
+	.byte 0xFF
+
 .global lbl_805DB7C8
 lbl_805DB7C8:
-	.incbin "baserom.dol", 0x489AE8, 0x1
+	# ROM: 0x489AE8
+	.byte 0xFF
+
 .global lbl_805DB7C9
 lbl_805DB7C9:
-	.incbin "baserom.dol", 0x489AE9, 0x1
+	# ROM: 0x489AE9
+	.byte 0xFF
+
 .global lbl_805DB7CA
 lbl_805DB7CA:
-	.incbin "baserom.dol", 0x489AEA, 0x1
+	# ROM: 0x489AEA
+	.byte 0xFF
+
 .global lbl_805DB7CB
 lbl_805DB7CB:
-	.incbin "baserom.dol", 0x489AEB, 0x1
+	# ROM: 0x489AEB
+	.byte 0xFF
+
 .global lbl_805DB7CC
 lbl_805DB7CC:
-	.incbin "baserom.dol", 0x489AEC, 0x4
+	# ROM: 0x489AEC
+	.4byte 0x3F800000
+
 .global lbl_805DB7D0
 lbl_805DB7D0:
-	.incbin "baserom.dol", 0x489AF0, 0x8
+	# ROM: 0x489AF0
+	.4byte 0x3DCCCCCD
+	.4byte 0x00000000
+
 .global lbl_805DB7D8
 lbl_805DB7D8:
-	.incbin "baserom.dol", 0x489AF8, 0x8
+	# ROM: 0x489AF8
+	.4byte 0x43300000
+	.4byte 0x00000000
+

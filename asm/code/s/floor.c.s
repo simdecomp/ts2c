@@ -95,12 +95,17 @@ lbl_8040E574:
 /* 8040E57C 0040A21C  C8 21 00 08 */	lfd f1, 8(r1)
 lbl_8040E580:
 /* 8040E580 0040A220  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040E584 0040A224  4E 80 00 20 */	blr 
+/* 8040E584 0040A224  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC3A0
 lbl_805DC3A0:
-	.incbin "baserom.dol", 0x48A6C0, 0x8
+	# ROM: 0x48A6C0
+	.4byte 0x7E37E43C
+	.4byte 0x8800759C
+
 .global lbl_805DC3A8
 lbl_805DC3A8:
-	.incbin "baserom.dol", 0x48A6C8, 0x8
+	# ROM: 0x48A6C8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+

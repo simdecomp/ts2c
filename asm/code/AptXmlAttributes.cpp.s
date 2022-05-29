@@ -28,7 +28,7 @@ lbl_80330F98:
 /* 80330FA4 0032CC44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80330FA8 0032CC48  7C 08 03 A6 */	mtlr r0
 /* 80330FAC 0032CC4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80330FB0 0032CC50  4E 80 00 20 */	blr 
+/* 80330FB0 0032CC50  4E 80 00 20 */	blr
 
 .global "__ct__16AptXmlAttributesF31AptVirtualFunctionTable_IndicesP11IAptXmlNode"
 "__ct__16AptXmlAttributesF31AptVirtualFunctionTable_IndicesP11IAptXmlNode":
@@ -51,13 +51,13 @@ lbl_80330F98:
 /* 80330FF4 0032CC94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80330FF8 0032CC98  7C 08 03 A6 */	mtlr r0
 /* 80330FFC 0032CC9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80331000 0032CCA0  4E 80 00 20 */	blr 
+/* 80331000 0032CCA0  4E 80 00 20 */	blr
 
 .global "PreDestroy__16AptXmlAttributesFv"
 "PreDestroy__16AptXmlAttributesFv":
 /* 80331004 0032CCA4  38 00 00 00 */	li r0, 0
 /* 80331008 0032CCA8  90 03 00 24 */	stw r0, 0x24(r3)
-/* 8033100C 0032CCAC  4E 80 00 20 */	blr 
+/* 8033100C 0032CCAC  4E 80 00 20 */	blr
 
 .global "objectMemberSet__16AptXmlAttributesFP8AptValuePC9EAStringCP8AptValue"
 "objectMemberSet__16AptXmlAttributesFP8AptValuePC9EAStringCP8AptValue":
@@ -94,7 +94,7 @@ lbl_80330F98:
 /* 80331088 0032CD28  81 83 00 00 */	lwz r12, 0(r3)
 /* 8033108C 0032CD2C  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80331090 0032CD30  7D 89 03 A6 */	mtctr r12
-/* 80331094 0032CD34  4E 80 04 21 */	bctrl 
+/* 80331094 0032CD34  4E 80 04 21 */	bctrl
 lbl_80331098:
 /* 80331098 0032CD38  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8033109C 0032CD3C  38 60 00 01 */	li r3, 1
@@ -103,7 +103,7 @@ lbl_80331098:
 /* 803310A8 0032CD48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803310AC 0032CD4C  7C 08 03 A6 */	mtlr r0
 /* 803310B0 0032CD50  38 21 00 20 */	addi r1, r1, 0x20
-/* 803310B4 0032CD54  4E 80 00 20 */	blr 
+/* 803310B4 0032CD54  4E 80 00 20 */	blr
 
 .global "__dl__16AptXmlAttributesFPvUl"
 "__dl__16AptXmlAttributesFPvUl":
@@ -115,7 +115,7 @@ lbl_80331098:
 
 .global "c_xmlattributes__8AptValueCFv"
 "c_xmlattributes__8AptValueCFv":
-/* 803310CC 0032CD6C  4E 80 00 20 */	blr 
+/* 803310CC 0032CD6C  4E 80 00 20 */	blr
 
 .global "isXmlAttributes__8AptValueCFv"
 "isXmlAttributes__8AptValueCFv":
@@ -129,9 +129,28 @@ lbl_80331098:
 /* 803310EC 0032CD8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803310F0 0032CD90  7C 08 03 A6 */	mtlr r0
 /* 803310F4 0032CD94  38 21 00 10 */	addi r1, r1, 0x10
-/* 803310F8 0032CD98  4E 80 00 20 */	blr 
+/* 803310F8 0032CD98  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__16AptXmlAttributes"
 "__vt__16AptXmlAttributes":
-	.incbin "baserom.dol", 0x457E80, 0x48
+	# ROM: 0x457E80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__16AptXmlAttributesFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x80331010)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__16AptXmlAttributesFv" ;# ptr (0x80331004)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__16AptXmlAttributesFv" ;# ptr (0x80330F50)
+	.4byte 0x00000000
+

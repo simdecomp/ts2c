@@ -47,7 +47,7 @@ lbl_804032AC:
 /* 804032C0 003FEF60  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 804032C4 003FEF64  7C 08 03 A6 */	mtlr r0
 /* 804032C8 003FEF68  38 21 00 20 */	addi r1, r1, 0x20
-/* 804032CC 003FEF6C  4E 80 00 20 */	blr 
+/* 804032CC 003FEF6C  4E 80 00 20 */	blr
 
 .global "__flush_all"
 "__flush_all":
@@ -80,12 +80,93 @@ lbl_80403318:
 /* 8040332C 003FEFCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80403330 003FEFD0  7C 08 03 A6 */	mtlr r0
 /* 80403334 003FEFD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80403338 003FEFD8  4E 80 00 20 */	blr 
+/* 80403338 003FEFD8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__files"
 "__files":
-	.incbin "baserom.dol", 0x483988, 0x140
+	# ROM: 0x483988
+	.4byte 0x00000000
+	.4byte 0x0A800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D1FA0 ;# ptr
+	.4byte 0x00000100
+	.4byte 0x805D1FA0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__read_console" ;# ptr (0x804142BC)
+	.4byte "__write_console" ;# ptr (0x8040A47C)
+	.4byte "__close_console" ;# ptr (0x8040A54C)
+	.4byte 0x00000000
+	.4byte 0x804878D8 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x12800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D1EA0 ;# ptr
+	.4byte 0x00000100
+	.4byte 0x805D1EA0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__read_console" ;# ptr (0x804142BC)
+	.4byte "__write_console" ;# ptr (0x8040A47C)
+	.4byte "__close_console" ;# ptr (0x8040A54C)
+	.4byte 0x00000000
+	.4byte 0x80487928 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x10800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D1DA0 ;# ptr
+	.4byte 0x00000100
+	.4byte 0x805D1DA0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__read_console" ;# ptr (0x804142BC)
+	.4byte "__write_console" ;# ptr (0x8040A47C)
+	.4byte "__close_console" ;# ptr (0x8040A54C)
+	.4byte 0x00000000
+	.4byte 0x80487978 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "stderr_buff"

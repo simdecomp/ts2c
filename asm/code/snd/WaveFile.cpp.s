@@ -4,7 +4,7 @@
 .global "__ct__Q46nw4hbm3snd6detail14WaveFileReaderFPCQ56nw4hbm3snd6detail8WaveFile8WaveInfo"
 "__ct__Q46nw4hbm3snd6detail14WaveFileReaderFPCQ56nw4hbm3snd6detail8WaveFile8WaveInfo":
 /* 803B905C 003B4CFC  90 83 00 00 */	stw r4, 0(r3)
-/* 803B9060 003B4D00  4E 80 00 20 */	blr 
+/* 803B9060 003B4D00  4E 80 00 20 */	blr
 
 .global "ReadWaveParam__Q46nw4hbm3snd6detail14WaveFileReaderCFPQ46nw4hbm3snd6detail8WaveDataPCv"
 "ReadWaveParam__Q46nw4hbm3snd6detail14WaveFileReaderCFPQ46nw4hbm3snd6detail8WaveDataPCv":
@@ -95,7 +95,7 @@ lbl_803B918C:
 /* 803B91A8 003B4E48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803B91AC 003B4E4C  7C 08 03 A6 */	mtlr r0
 /* 803B91B0 003B4E50  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B91B4 003B4E54  4E 80 00 20 */	blr 
+/* 803B91B4 003B4E54  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_WaveFile_cpp@FPCvUl_PCv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_WaveFile_cpp@FPCvUl_PCv":
@@ -110,21 +110,21 @@ lbl_803B918C:
 /* 803B91D8 003B4E78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B91DC 003B4E7C  7C 08 03 A6 */	mtlr r0
 /* 803B91E0 003B4E80  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B91E4 003B4E84  4E 80 00 20 */	blr 
+/* 803B91E4 003B4E84  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_WaveFile_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_WaveFile_cpp@FPCv":
-/* 803B91E8 003B4E88  4E 80 00 20 */	blr 
+/* 803B91E8 003B4E88  4E 80 00 20 */	blr
 
 .global "WaveFormatToAxFormat__Q46nw4hbm3snd6detail14WaveFileReaderFUl"
 "WaveFormatToAxFormat__Q46nw4hbm3snd6detail14WaveFileReaderFUl":
 /* 803B91EC 003B4E8C  28 03 00 01 */	cmplwi r3, 1
 /* 803B91F0 003B4E90  40 82 00 0C */	bne lbl_803B91FC
 /* 803B91F4 003B4E94  38 60 00 0A */	li r3, 0xa
-/* 803B91F8 003B4E98  4E 80 00 20 */	blr 
+/* 803B91F8 003B4E98  4E 80 00 20 */	blr
 lbl_803B91FC:
 /* 803B91FC 003B4E9C  2C 03 00 00 */	cmpwi r3, 0
 /* 803B9200 003B4EA0  38 60 00 00 */	li r3, 0
-/* 803B9204 003B4EA4  4C 82 00 20 */	bnelr 
+/* 803B9204 003B4EA4  4C 82 00 20 */	bnelr
 /* 803B9208 003B4EA8  38 60 00 19 */	li r3, 0x19
-/* 803B920C 003B4EAC  4E 80 00 20 */	blr 
+/* 803B920C 003B4EAC  4E 80 00 20 */	blr

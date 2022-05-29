@@ -4,81 +4,81 @@
 .global "PPCMfmsr"
 "PPCMfmsr":
 /* 8033AD50 003369F0  7C 60 00 A6 */	mfmsr r3
-/* 8033AD54 003369F4  4E 80 00 20 */	blr 
+/* 8033AD54 003369F4  4E 80 00 20 */	blr
 
 .global "PPCMtmsr"
 "PPCMtmsr":
 /* 8033AD58 003369F8  7C 60 01 24 */	mtmsr r3
-/* 8033AD5C 003369FC  4E 80 00 20 */	blr 
+/* 8033AD5C 003369FC  4E 80 00 20 */	blr
 
 .global "PPCMfhid0"
 "PPCMfhid0":
 /* 8033AD60 00336A00  7C 70 FA A6 */	mfspr r3, 0x3f0
-/* 8033AD64 00336A04  4E 80 00 20 */	blr 
+/* 8033AD64 00336A04  4E 80 00 20 */	blr
 
 .global "PPCMthid0"
 "PPCMthid0":
 /* 8033AD68 00336A08  7C 70 FB A6 */	mtspr 0x3f0, r3
-/* 8033AD6C 00336A0C  4E 80 00 20 */	blr 
+/* 8033AD6C 00336A0C  4E 80 00 20 */	blr
 
 .global "PPCMfl2cr"
 "PPCMfl2cr":
 /* 8033AD70 00336A10  7C 79 FA A6 */	mfspr r3, 0x3f9
-/* 8033AD74 00336A14  4E 80 00 20 */	blr 
+/* 8033AD74 00336A14  4E 80 00 20 */	blr
 
 .global "PPCMtl2cr"
 "PPCMtl2cr":
 /* 8033AD78 00336A18  7C 79 FB A6 */	mtspr 0x3f9, r3
-/* 8033AD7C 00336A1C  4E 80 00 20 */	blr 
+/* 8033AD7C 00336A1C  4E 80 00 20 */	blr
 
 .global "PPCMtdec"
 "PPCMtdec":
 /* 8033AD80 00336A20  7C 76 03 A6 */	mtspr 0x16, r3
-/* 8033AD84 00336A24  4E 80 00 20 */	blr 
+/* 8033AD84 00336A24  4E 80 00 20 */	blr
 
 .global "PPCSync"
 "PPCSync":
-/* 8033AD88 00336A28  44 00 00 02 */	sc 
-/* 8033AD8C 00336A2C  4E 80 00 20 */	blr 
+/* 8033AD88 00336A28  44 00 00 02 */	sc
+/* 8033AD8C 00336A2C  4E 80 00 20 */	blr
 
 .global "PPCHalt"
 "PPCHalt":
 /* 8033AD90 00336A30  7C 00 04 AC */	sync 0
 lbl_8033AD94:
-/* 8033AD94 00336A34  60 00 00 00 */	nop 
+/* 8033AD94 00336A34  60 00 00 00 */	nop
 /* 8033AD98 00336A38  38 60 00 00 */	li r3, 0
-/* 8033AD9C 00336A3C  60 00 00 00 */	nop 
+/* 8033AD9C 00336A3C  60 00 00 00 */	nop
 /* 8033ADA0 00336A40  4B FF FF F4 */	b lbl_8033AD94
 
 .global "PPCMtmmcr0"
 "PPCMtmmcr0":
 /* 8033ADA4 00336A44  7C 78 EB A6 */	mtspr 0x3b8, r3
-/* 8033ADA8 00336A48  4E 80 00 20 */	blr 
+/* 8033ADA8 00336A48  4E 80 00 20 */	blr
 
 .global "PPCMtmmcr1"
 "PPCMtmmcr1":
 /* 8033ADAC 00336A4C  7C 7C EB A6 */	mtspr 0x3bc, r3
-/* 8033ADB0 00336A50  4E 80 00 20 */	blr 
+/* 8033ADB0 00336A50  4E 80 00 20 */	blr
 
 .global "PPCMtpmc1"
 "PPCMtpmc1":
 /* 8033ADB4 00336A54  7C 79 EB A6 */	mtspr 0x3b9, r3
-/* 8033ADB8 00336A58  4E 80 00 20 */	blr 
+/* 8033ADB8 00336A58  4E 80 00 20 */	blr
 
 .global "PPCMtpmc2"
 "PPCMtpmc2":
 /* 8033ADBC 00336A5C  7C 7A EB A6 */	mtspr 0x3ba, r3
-/* 8033ADC0 00336A60  4E 80 00 20 */	blr 
+/* 8033ADC0 00336A60  4E 80 00 20 */	blr
 
 .global "PPCMtpmc3"
 "PPCMtpmc3":
 /* 8033ADC4 00336A64  7C 7D EB A6 */	mtspr 0x3bd, r3
-/* 8033ADC8 00336A68  4E 80 00 20 */	blr 
+/* 8033ADC8 00336A68  4E 80 00 20 */	blr
 
 .global "PPCMtpmc4"
 "PPCMtpmc4":
 /* 8033ADCC 00336A6C  7C 7E EB A6 */	mtspr 0x3be, r3
-/* 8033ADD0 00336A70  4E 80 00 20 */	blr 
+/* 8033ADD0 00336A70  4E 80 00 20 */	blr
 
 .global "PPCMffpscr"
 "PPCMffpscr":
@@ -89,7 +89,7 @@ lbl_8033AD94:
 /* 8033ADE4 00336A84  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 8033ADE8 00336A88  80 61 00 0C */	lwz r3, 0xc(r1)
 /* 8033ADEC 00336A8C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033ADF0 00336A90  4E 80 00 20 */	blr 
+/* 8033ADF0 00336A90  4E 80 00 20 */	blr
 
 .global "PPCMtfpscr"
 "PPCMtfpscr":
@@ -102,22 +102,22 @@ lbl_8033AD94:
 /* 8033AE0C 00336AAC  FD FE FD 8E */	mtfsf 0xff, f31
 /* 8033AE10 00336AB0  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 8033AE14 00336AB4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033AE18 00336AB8  4E 80 00 20 */	blr 
+/* 8033AE18 00336AB8  4E 80 00 20 */	blr
 
 .global "PPCMfhid2"
 "PPCMfhid2":
 /* 8033AE1C 00336ABC  7C 78 E2 A6 */	mfspr r3, 0x398
-/* 8033AE20 00336AC0  4E 80 00 20 */	blr 
+/* 8033AE20 00336AC0  4E 80 00 20 */	blr
 
 .global "PPCMthid2"
 "PPCMthid2":
 /* 8033AE24 00336AC4  7C 78 E3 A6 */	mtspr 0x398, r3
-/* 8033AE28 00336AC8  4E 80 00 20 */	blr 
+/* 8033AE28 00336AC8  4E 80 00 20 */	blr
 
 .global "PPCMtwpar"
 "PPCMtwpar":
 /* 8033AE2C 00336ACC  7C 79 E3 A6 */	mtspr 0x399, r3
-/* 8033AE30 00336AD0  4E 80 00 20 */	blr 
+/* 8033AE30 00336AD0  4E 80 00 20 */	blr
 
 .global "PPCDisableSpeculation"
 "PPCDisableSpeculation":
@@ -130,12 +130,12 @@ lbl_8033AD94:
 /* 8033AE4C 00336AEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033AE50 00336AF0  7C 08 03 A6 */	mtlr r0
 /* 8033AE54 00336AF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033AE58 00336AF8  4E 80 00 20 */	blr 
+/* 8033AE58 00336AF8  4E 80 00 20 */	blr
 
 .global "PPCSetFpNonIEEEMode"
 "PPCSetFpNonIEEEMode":
 /* 8033AE5C 00336AFC  FF A0 00 4C */	mtfsb1 0x1d
-/* 8033AE60 00336B00  4E 80 00 20 */	blr 
+/* 8033AE60 00336B00  4E 80 00 20 */	blr
 
 .global "PPCMthid4"
 "PPCMthid4":
@@ -160,9 +160,12 @@ lbl_8033AEA0:
 /* 8033AEA4 00336B44  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033AEA8 00336B48  7C 08 03 A6 */	mtlr r0
 /* 8033AEAC 00336B4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033AEB0 00336B50  4E 80 00 20 */	blr 
+/* 8033AEB0 00336B50  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8045FC00
 lbl_8045FC00:
-	.incbin "baserom.dol", 0x45BD00, 0x38
+	# ROM: 0x45BD00
+	.asciz "H4A should not be cleared because of Broadway errata.\n"
+	.byte 0x00
+

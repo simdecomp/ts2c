@@ -53,7 +53,7 @@ lbl_8038628C:
 /* 803862A4 00381F44  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803862A8 00381F48  7C 08 03 A6 */	mtlr r0
 /* 803862AC 00381F4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803862B0 00381F50  4E 80 00 20 */	blr 
+/* 803862B0 00381F50  4E 80 00 20 */	blr
 
 .global "GetTextPtr___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadUsUs"
 "GetTextPtr___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadUsUs":
@@ -63,7 +63,7 @@ lbl_8038628C:
 /* 803862C0 00381F60  7C 60 21 D6 */	mullw r3, r0, r4
 /* 803862C4 00381F64  7C 07 2A 14 */	add r0, r7, r5
 /* 803862C8 00381F68  7C 63 02 14 */	add r3, r3, r0
-/* 803862CC 00381F6C  4E 80 00 20 */	blr 
+/* 803862CC 00381F6C  4E 80 00 20 */	blr
 
 .global "PutTab___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPUc"
 "PutTab___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPUc":
@@ -96,7 +96,7 @@ lbl_80386324:
 /* 80386330 00381FD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80386334 00381FD4  7C 08 03 A6 */	mtlr r0
 /* 80386338 00381FD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038633C 00381FDC  4E 80 00 20 */	blr 
+/* 8038633C 00381FDC  4E 80 00 20 */	blr
 
 .global "GetTabSize___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "GetTabSize___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -104,7 +104,7 @@ lbl_80386324:
 /* 80386344 00381FE4  38 60 00 02 */	li r3, 2
 /* 80386348 00381FE8  54 00 F7 BE */	rlwinm r0, r0, 0x1e, 0x1e, 0x1f
 /* 8038634C 00381FEC  7C 63 00 30 */	slw r3, r3, r0
-/* 80386350 00381FF0  4E 80 00 20 */	blr 
+/* 80386350 00381FF0  4E 80 00 20 */	blr
 
 .global "PutChar___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCUcPUc"
 "PutChar___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCUcPUc":
@@ -171,7 +171,7 @@ lbl_80386424:
 /* 80386430 003820D0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80386434 003820D4  7C 08 03 A6 */	mtlr r0
 /* 80386438 003820D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8038643C 003820DC  4E 80 00 20 */	blr 
+/* 8038643C 003820DC  4E 80 00 20 */	blr
 
 .global "CodeWidth___Q26nw4hbm2dbFPCUc"
 "CodeWidth___Q26nw4hbm2dbFPCUc":
@@ -183,7 +183,7 @@ lbl_80386424:
 /* 80386454 003820F4  7C 00 18 50 */	subf r0, r0, r3
 /* 80386458 003820F8  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 8038645C 003820FC  38 63 00 01 */	addi r3, r3, 1
-/* 80386460 00382100  4E 80 00 20 */	blr 
+/* 80386460 00382100  4E 80 00 20 */	blr
 
 .global "DoDrawString___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadUlPCUcPQ36nw4hbm2ut17TextWriterBase<c>"
 "DoDrawString___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadUlPCUcPQ36nw4hbm2ut17TextWriterBase<c>":
@@ -281,7 +281,7 @@ lbl_80386598:
 /* 803865A8 00382248  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803865AC 0038224C  7C 08 03 A6 */	mtlr r0
 /* 803865B0 00382250  38 21 00 20 */	addi r1, r1, 0x20
-/* 803865B4 00382254  4E 80 00 20 */	blr 
+/* 803865B4 00382254  4E 80 00 20 */	blr
 
 .global "GetActiveLines___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "GetActiveLines___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -302,7 +302,7 @@ lbl_803865E8:
 /* 803865EC 0038228C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803865F0 00382290  7C 08 03 A6 */	mtlr r0
 /* 803865F4 00382294  38 21 00 10 */	addi r1, r1, 0x10
-/* 803865F8 00382298  4E 80 00 20 */	blr 
+/* 803865F8 00382298  4E 80 00 20 */	blr
 
 .global "GetRingUsedLines___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "GetRingUsedLines___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -333,7 +333,7 @@ lbl_8038664C:
 /* 80386654 003822F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80386658 003822F8  7C 08 03 A6 */	mtlr r0
 /* 8038665C 003822FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80386660 00382300  4E 80 00 20 */	blr 
+/* 80386660 00382300  4E 80 00 20 */	blr
 
 .global "Console_DrawDirect__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "Console_DrawDirect__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -385,7 +385,7 @@ lbl_80386708:
 /* 80386710 003823B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80386714 003823B4  7C 08 03 A6 */	mtlr r0
 /* 80386718 003823B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038671C 003823BC  4E 80 00 20 */	blr 
+/* 8038671C 003823BC  4E 80 00 20 */	blr
 
 .global "PrintToBuffer___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCUc"
 "PrintToBuffer___Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCUc":
@@ -502,7 +502,7 @@ lbl_80386898:
 /* 803868A0 00382540  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803868A4 00382544  7C 08 03 A6 */	mtlr r0
 /* 803868A8 00382548  38 21 00 20 */	addi r1, r1, 0x20
-/* 803868AC 0038254C  4E 80 00 20 */	blr 
+/* 803868AC 0038254C  4E 80 00 20 */	blr
 
 .global "SearchEndOfLine___Q26nw4hbm2dbFPCUc"
 "SearchEndOfLine___Q26nw4hbm2dbFPCUc":
@@ -512,10 +512,10 @@ lbl_803868B4:
 lbl_803868B8:
 /* 803868B8 00382558  88 03 00 00 */	lbz r0, 0(r3)
 /* 803868BC 0038255C  2C 00 00 0A */	cmpwi r0, 0xa
-/* 803868C0 00382560  4D 82 00 20 */	beqlr 
+/* 803868C0 00382560  4D 82 00 20 */	beqlr
 /* 803868C4 00382564  2C 00 00 00 */	cmpwi r0, 0
 /* 803868C8 00382568  40 82 FF EC */	bne lbl_803868B4
-/* 803868CC 0038256C  4E 80 00 20 */	blr 
+/* 803868CC 0038256C  4E 80 00 20 */	blr
 
 .global "Console_Print___Q26nw4hbm2dbFQ36nw4hbm2db17ConsoleOutputTypePQ46nw4hbm2db6detail11ConsoleHeadPCUc"
 "Console_Print___Q26nw4hbm2dbFQ36nw4hbm2db17ConsoleOutputTypePQ46nw4hbm2db6detail11ConsoleHeadPCUc":
@@ -557,7 +557,7 @@ lbl_80386944:
 /* 80386950 003825F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80386954 003825F4  7C 08 03 A6 */	mtlr r0
 /* 80386958 003825F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8038695C 003825FC  4E 80 00 20 */	blr 
+/* 8038695C 003825FC  4E 80 00 20 */	blr
 
 .global "Console_VFPrintf__Q26nw4hbm2dbFQ36nw4hbm2db17ConsoleOutputTypePQ46nw4hbm2db6detail11ConsoleHeadPCcP16__va_list_struct"
 "Console_VFPrintf__Q26nw4hbm2dbFQ36nw4hbm2db17ConsoleOutputTypePQ46nw4hbm2db6detail11ConsoleHeadPCcP16__va_list_struct":
@@ -600,7 +600,7 @@ lbl_803869A8:
 /* 803869EC 0038268C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803869F0 00382690  7C 08 03 A6 */	mtlr r0
 /* 803869F4 00382694  38 21 00 20 */	addi r1, r1, 0x20
-/* 803869F8 00382698  4E 80 00 20 */	blr 
+/* 803869F8 00382698  4E 80 00 20 */	blr
 
 .global "Console_Printf__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCce"
 "Console_Printf__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHeadPCce":
@@ -648,7 +648,7 @@ lbl_80386A40:
 /* 80386A9C 0038273C  83 A1 00 84 */	lwz r29, 0x84(r1)
 /* 80386AA0 00382740  7C 08 03 A6 */	mtlr r0
 /* 80386AA4 00382744  38 21 00 90 */	addi r1, r1, 0x90
-/* 80386AA8 00382748  4E 80 00 20 */	blr 
+/* 80386AA8 00382748  4E 80 00 20 */	blr
 
 .global "Console_GetTotalLines__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead"
 "Console_GetTotalLines__Q26nw4hbm2dbFPQ46nw4hbm2db6detail11ConsoleHead":
@@ -684,18 +684,47 @@ lbl_80386AE8:
 /* 80386B1C 003827BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80386B20 003827C0  7C 08 03 A6 */	mtlr r0
 /* 80386B24 003827C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80386B28 003827C8  4E 80 00 20 */	blr 
+/* 80386B28 003827C8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80469518
 lbl_80469518:
-	.incbin "baserom.dol", 0x465618, 0x30
+	# ROM: 0x465618
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+
 .global lbl_80469548
 lbl_80469548:
-	.incbin "baserom.dol", 0x465648, 0x10
+	# ROM: 0x465648
+	.asciz "db_console.cpp"
+	.byte 0x00
+
 .global lbl_80469558
 lbl_80469558:
-	.incbin "baserom.dol", 0x465658, 0x110
+	# ROM: 0x465658
+	.asciz "NW4HBM:Pointer must not be NULL (console)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (pConsole)"
+	.byte 0x00
+	.asciz "illegal console handle"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (buffer)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nbuffer must be aligned to 4 bytes boundary."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (str)"
+	.byte 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "sMutex__Q26nw4hbm2db"
@@ -708,7 +737,11 @@ lbl_80469558:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7498
 lbl_805D7498:
-	.incbin "baserom.dol", 0x487018, 0x4
+	# ROM: 0x487018
+	.4byte 0x25730A00
+
 .global lbl_805D749C
 lbl_805D749C:
-	.incbin "baserom.dol", 0x48701C, 0x4
+	# ROM: 0x48701C
+	.4byte 0x25730000
+

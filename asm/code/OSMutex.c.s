@@ -16,7 +16,7 @@
 /* 803E1638 003DD2D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E163C 003DD2DC  7C 08 03 A6 */	mtlr r0
 /* 803E1640 003DD2E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E1644 003DD2E4  4E 80 00 20 */	blr 
+/* 803E1644 003DD2E4  4E 80 00 20 */	blr
 
 .global "OSLockMutex"
 "OSLockMutex":
@@ -80,7 +80,7 @@ lbl_803E16FC:
 /* 803E1714 003DD3B4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E1718 003DD3B8  7C 08 03 A6 */	mtlr r0
 /* 803E171C 003DD3BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E1720 003DD3C0  4E 80 00 20 */	blr 
+/* 803E1720 003DD3C0  4E 80 00 20 */	blr
 
 .global "OSUnlockMutex"
 "OSUnlockMutex":
@@ -139,7 +139,7 @@ lbl_803E17C8:
 /* 803E17DC 003DD47C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E17E0 003DD480  7C 08 03 A6 */	mtlr r0
 /* 803E17E4 003DD484  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E17E8 003DD488  4E 80 00 20 */	blr 
+/* 803E17E8 003DD488  4E 80 00 20 */	blr
 
 .global "__OSUnlockAllMutex"
 "__OSUnlockAllMutex":
@@ -173,4 +173,4 @@ lbl_803E1834:
 /* 803E1848 003DD4E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E184C 003DD4EC  7C 08 03 A6 */	mtlr r0
 /* 803E1850 003DD4F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E1854 003DD4F4  4E 80 00 20 */	blr 
+/* 803E1854 003DD4F4  4E 80 00 20 */	blr

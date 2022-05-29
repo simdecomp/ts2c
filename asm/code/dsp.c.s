@@ -6,14 +6,14 @@
 /* 80368E20 00364AC0  3C 60 CC 00 */	lis r3, 0xCC005000@ha
 /* 80368E24 00364AC4  A0 03 50 00 */	lhz r0, 0xCC005000@l(r3)
 /* 80368E28 00364AC8  54 03 8F FE */	rlwinm r3, r0, 0x11, 0x1f, 0x1f
-/* 80368E2C 00364ACC  4E 80 00 20 */	blr 
+/* 80368E2C 00364ACC  4E 80 00 20 */	blr
 
 .global "DSPCheckMailFromDSP"
 "DSPCheckMailFromDSP":
 /* 80368E30 00364AD0  3C 60 CC 00 */	lis r3, 0xCC005004@ha
 /* 80368E34 00364AD4  A0 03 50 04 */	lhz r0, 0xCC005004@l(r3)
 /* 80368E38 00364AD8  54 03 8F FE */	rlwinm r3, r0, 0x11, 0x1f, 0x1f
-/* 80368E3C 00364ADC  4E 80 00 20 */	blr 
+/* 80368E3C 00364ADC  4E 80 00 20 */	blr
 
 .global "DSPReadMailFromDSP"
 "DSPReadMailFromDSP":
@@ -21,7 +21,7 @@
 /* 80368E44 00364AE4  A0 03 50 04 */	lhz r0, 0xCC005004@l(r3)
 /* 80368E48 00364AE8  A0 63 50 06 */	lhz r3, 0x5006(r3)
 /* 80368E4C 00364AEC  50 03 80 1E */	rlwimi r3, r0, 0x10, 0, 0xf
-/* 80368E50 00364AF0  4E 80 00 20 */	blr 
+/* 80368E50 00364AF0  4E 80 00 20 */	blr
 
 .global "DSPSendMailToDSP"
 "DSPSendMailToDSP":
@@ -29,7 +29,7 @@
 /* 80368E58 00364AF8  54 60 84 3E */	srwi r0, r3, 0x10
 /* 80368E5C 00364AFC  B0 04 50 00 */	sth r0, 0xCC005000@l(r4)
 /* 80368E60 00364B00  B0 64 50 02 */	sth r3, 0x5002(r4)
-/* 80368E64 00364B04  4E 80 00 20 */	blr 
+/* 80368E64 00364B04  4E 80 00 20 */	blr
 
 .global "DSPInit"
 "DSPInit":
@@ -81,12 +81,12 @@ lbl_80368F14:
 /* 80368F18 00364BB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80368F1C 00364BBC  7C 08 03 A6 */	mtlr r0
 /* 80368F20 00364BC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80368F24 00364BC4  4E 80 00 20 */	blr 
+/* 80368F24 00364BC4  4E 80 00 20 */	blr
 
 .global "DSPCheckInit"
 "DSPCheckInit":
 /* 80368F28 00364BC8  80 6D C3 60 */	lwz r3, "__DSP_init_flag"-_SDA_BASE_(r13)
-/* 80368F2C 00364BCC  4E 80 00 20 */	blr 
+/* 80368F2C 00364BCC  4E 80 00 20 */	blr
 
 .global "DSPAddTask"
 "DSPAddTask":
@@ -118,7 +118,7 @@ lbl_80368F84:
 /* 80368F90 00364C30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80368F94 00364C34  7C 08 03 A6 */	mtlr r0
 /* 80368F98 00364C38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80368F9C 00364C3C  4E 80 00 20 */	blr 
+/* 80368F9C 00364C3C  4E 80 00 20 */	blr
 
 .global "DSPCancelTask"
 "DSPCancelTask":
@@ -137,7 +137,7 @@ lbl_80368F84:
 /* 80368FD0 00364C70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80368FD4 00364C74  7C 08 03 A6 */	mtlr r0
 /* 80368FD8 00364C78  38 21 00 10 */	addi r1, r1, 0x10
-/* 80368FDC 00364C7C  4E 80 00 20 */	blr 
+/* 80368FDC 00364C7C  4E 80 00 20 */	blr
 
 .global "DSPAssertTask"
 "DSPAssertTask":
@@ -191,17 +191,27 @@ lbl_80369084:
 /* 8036908C 00364D2C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80369090 00364D30  7C 08 03 A6 */	mtlr r0
 /* 80369094 00364D34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80369098 00364D38  4E 80 00 20 */	blr 
+/* 80369098 00364D38  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80466160
 lbl_80466160:
-	.incbin "baserom.dol", 0x462260, 0x80
+	# ROM: 0x462260
+	.asciz "<< RVL_SDK - DSP \trelease build: Nov 30 2006 03:26:46 (0x4199_60831) >>"
+	.asciz "DSPInit(): Build Date: %s %s\n"
+	.byte 0x00, 0x00
+	.asciz "Nov 30 2006"
+	.asciz "03:26:46"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__DSPVersion"
 "__DSPVersion":
-	.incbin "baserom.dol", 0x486E88, 0x8
+	# ROM: 0x486E88
+	.4byte 0x80466160 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__DSP_init_flag"

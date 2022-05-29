@@ -46,7 +46,7 @@ lbl_803EAFD0:
 /* 803EAFD4 003E6C74  83 E1 00 7C */	lwz r31, 0x7c(r1)
 /* 803EAFD8 003E6C78  7C 08 03 A6 */	mtlr r0
 /* 803EAFDC 003E6C7C  38 21 00 80 */	addi r1, r1, 0x80
-/* 803EAFE0 003E6C80  4E 80 00 20 */	blr 
+/* 803EAFE0 003E6C80  4E 80 00 20 */	blr
 
 .global "USB_ERR"
 "USB_ERR":
@@ -94,7 +94,7 @@ lbl_803EB07C:
 /* 803EB080 003E6D20  83 E1 00 7C */	lwz r31, 0x7c(r1)
 /* 803EB084 003E6D24  7C 08 03 A6 */	mtlr r0
 /* 803EB088 003E6D28  38 21 00 80 */	addi r1, r1, 0x80
-/* 803EB08C 003E6D2C  4E 80 00 20 */	blr 
+/* 803EB08C 003E6D2C  4E 80 00 20 */	blr
 
 .global "IUSB_OpenLib"
 "IUSB_OpenLib":
@@ -163,12 +163,12 @@ lbl_803EB160:
 /* 803EB178 003E6E18  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB17C 003E6E1C  7C 08 03 A6 */	mtlr r0
 /* 803EB180 003E6E20  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB184 003E6E24  4E 80 00 20 */	blr 
+/* 803EB184 003E6E24  4E 80 00 20 */	blr
 
 .global "IUSB_CloseLib"
 "IUSB_CloseLib":
 /* 803EB188 003E6E28  38 60 00 00 */	li r3, 0
-/* 803EB18C 003E6E2C  4E 80 00 20 */	blr 
+/* 803EB18C 003E6E2C  4E 80 00 20 */	blr
 
 .global "_intBlkCtrlCb"
 "_intBlkCtrlCb":
@@ -243,7 +243,7 @@ lbl_803EB26C:
 /* 803EB28C 003E6F2C  7F 43 D3 78 */	mr r3, r26
 /* 803EB290 003E6F30  80 9B 00 04 */	lwz r4, 4(r27)
 /* 803EB294 003E6F34  7D 89 03 A6 */	mtctr r12
-/* 803EB298 003E6F38  4E 80 04 21 */	bctrl 
+/* 803EB298 003E6F38  4E 80 04 21 */	bctrl
 lbl_803EB29C:
 /* 803EB29C 003E6F3C  2C 1B 00 00 */	cmpwi r27, 0
 /* 803EB2A0 003E6F40  41 82 00 30 */	beq lbl_803EB2D0
@@ -265,7 +265,7 @@ lbl_803EB2D0:
 /* 803EB2DC 003E6F7C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB2E0 003E6F80  7C 08 03 A6 */	mtlr r0
 /* 803EB2E4 003E6F84  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB2E8 003E6F88  4E 80 00 20 */	blr 
+/* 803EB2E8 003E6F88  4E 80 00 20 */	blr
 
 .global "IUSB_OpenDeviceIds"
 "IUSB_OpenDeviceIds":
@@ -350,7 +350,7 @@ lbl_803EB404:
 /* 803EB410 003E70B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB414 003E70B4  7C 08 03 A6 */	mtlr r0
 /* 803EB418 003E70B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB41C 003E70BC  4E 80 00 20 */	blr 
+/* 803EB41C 003E70BC  4E 80 00 20 */	blr
 
 .global "IUSB_CloseDeviceAsync"
 "IUSB_CloseDeviceAsync":
@@ -425,7 +425,7 @@ lbl_803EB518:
 /* 803EB524 003E71C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB528 003E71C8  7C 08 03 A6 */	mtlr r0
 /* 803EB52C 003E71CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB530 003E71D0  4E 80 00 20 */	blr 
+/* 803EB530 003E71D0  4E 80 00 20 */	blr
 
 .global "__IntrBlkMsgInt"
 "__IntrBlkMsgInt":
@@ -643,7 +643,7 @@ lbl_803EB844:
 /* 803EB850 003E74F0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803EB854 003E74F4  7C 08 03 A6 */	mtlr r0
 /* 803EB858 003E74F8  38 21 00 40 */	addi r1, r1, 0x40
-/* 803EB85C 003E74FC  4E 80 00 20 */	blr 
+/* 803EB85C 003E74FC  4E 80 00 20 */	blr
 
 .global "IUSB_ReadIntrMsgAsync"
 "IUSB_ReadIntrMsgAsync":
@@ -675,7 +675,7 @@ lbl_803EB844:
 /* 803EB8C4 003E7564  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB8C8 003E7568  7C 08 03 A6 */	mtlr r0
 /* 803EB8CC 003E756C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB8D0 003E7570  4E 80 00 20 */	blr 
+/* 803EB8D0 003E7570  4E 80 00 20 */	blr
 
 .global "IUSB_ReadBlkMsgAsync"
 "IUSB_ReadBlkMsgAsync":
@@ -707,7 +707,7 @@ lbl_803EB844:
 /* 803EB938 003E75D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB93C 003E75DC  7C 08 03 A6 */	mtlr r0
 /* 803EB940 003E75E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB944 003E75E4  4E 80 00 20 */	blr 
+/* 803EB944 003E75E4  4E 80 00 20 */	blr
 
 .global "IUSB_WriteBlkMsgAsync"
 "IUSB_WriteBlkMsgAsync":
@@ -739,7 +739,7 @@ lbl_803EB844:
 /* 803EB9AC 003E764C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EB9B0 003E7650  7C 08 03 A6 */	mtlr r0
 /* 803EB9B4 003E7654  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EB9B8 003E7658  4E 80 00 20 */	blr 
+/* 803EB9B8 003E7658  4E 80 00 20 */	blr
 
 .global "__CtrlMsgInt"
 "__CtrlMsgInt":
@@ -1122,7 +1122,7 @@ lbl_803EBF34:
 /* 803EBF40 003E7BE0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803EBF44 003E7BE4  7C 08 03 A6 */	mtlr r0
 /* 803EBF48 003E7BE8  38 21 00 50 */	addi r1, r1, 0x50
-/* 803EBF4C 003E7BEC  4E 80 00 20 */	blr 
+/* 803EBF4C 003E7BEC  4E 80 00 20 */	blr
 
 .global "IUSB_WriteCtrlMsgAsync"
 "IUSB_WriteCtrlMsgAsync":
@@ -1160,20 +1160,121 @@ lbl_803EBF34:
 /* 803EBFCC 003E7C6C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803EBFD0 003E7C70  7C 08 03 A6 */	mtlr r0
 /* 803EBFD4 003E7C74  38 21 00 40 */	addi r1, r1, 0x40
-/* 803EBFD8 003E7C78  4E 80 00 20 */	blr 
+/* 803EBFD8 003E7C78  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80483D00
 lbl_80483D00:
-	.incbin "baserom.dol", 0x47FE00, 0x620
+	# ROM: 0x47FE00
+	.asciz "USB ERR: "
+	.byte 0x00, 0x00
+	.asciz "Library is already initialized. Heap Id = %d\n"
+	.byte 0x00, 0x00
+	.asciz "iusb size: %d lo: %x hi: %x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Not enough IPC arena\n"
+	.byte 0x00, 0x00
+	.asciz "Not enough heaps\n"
+	.byte 0x00, 0x00
+	.asciz "_intrBlkCtrlCb returned: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_intrBlkCtrlCb: nclean = %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "__intBlkCtrlCb: got invalid nclean\n"
+	.4byte 0x00000000
+	.asciz "Freeing clean[%d] = %x\n"
+	.asciz "iosFree(%d, 0x%x) failed: %d\n"
+	.byte 0x00, 0x00
+	.asciz "cb = %x cbArg = %x\n"
+	.asciz "iosAllocAligned(%d, %u) failed: %d\n"
+	.asciz "OpenDeviceIds: Not enough memory\n"
+	.byte 0x00, 0x00
+	.asciz "/dev/usb/%s/%x/%x"
+	.byte 0x00, 0x00
+	.asciz "OpenDevice - %s\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "OpenDevice returned: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "OpenDevice\n"
+	.asciz "OpenDeviceIdsAsync: Not enough memory\n"
+	.byte 0x00
+	.asciz "CloseDevice\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "CloseDevice returned: %d\n"
+	.byte 0x00, 0x00
+	.asciz "CloseDeviceAsync: Not enough memory\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "openDevice: Not enough memory\n"
+	.byte 0x00
+	.asciz "getDeviceList: Not enough memory\n"
+	.byte 0x00, 0x00
+	.asciz "__IntrBlkMsgInt: Not enough memory\n"
+	.asciz "intr/blk ioctl returned: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "IntBlkMsgInt (async): Not enough memory\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "intrblkmsg: cb = 0x%x cbArg = 0x%x\n"
+	.asciz "ctrlmsg: bad data buffer\n"
+	.byte 0x00, 0x00
+	.asciz "Ctrl Msg: Not enough memory\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "CtrlMsgInt (async): Not enough memory\n"
+	.byte 0x00
+	.asciz "ctrlmsgint: cb = 0x%x cbArg = 0x%x\n"
+	.asciz "Ctrl Msg async returned: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "GetStrCb returned: %d\n"
+	.byte 0x00
+	.asciz "GetStrCb: buf = 0x%x buflen = %u\n"
+	.byte 0x00, 0x00
+	.asciz "Failed to convert buffer from unicode 2 ascii\n"
+	.byte 0x00
+	.asciz "calling cb 0x%x with arg 0x%x\n"
+	.byte 0x00
+	.asciz "Failed __CtrlMsg: %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Failed to convert unicode 2 ascii\n"
+	.byte 0x00
+	.asciz "GetStr - _GetStrCb\n"
+	.asciz " GetAsciiStrAsync: Not enough memory\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "__CtrlMsgInt failed %d\n"
+	.asciz "GetDescrCb returned: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "GetDevDescr\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "GetDevDescr: Not enough memory\n"
+	.asciz "GetDevDescr: %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "GetDevDescr - _GetDescrCb\n"
+	.byte 0x00
+	.asciz "GetDevDescrAsync: Not enough memory\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "DeviceRemovalNotifyAsync\n"
+	.byte 0x00, 0x00
+	.asciz "Invalid parameters for ISO transfer request\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "IUSB_IsoMsgAsync: Not enough memory\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Open(%s) failed\n"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "hId_805D7920"
 "hId_805D7920":
-	.incbin "baserom.dol", 0x4874A0, 0x4
+	# ROM: 0x4874A0
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global lbl_805D7924
 lbl_805D7924:
-	.incbin "baserom.dol", 0x4874A4, 0xC
+	# ROM: 0x4874A4
+	.asciz "USB: "
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "lo"

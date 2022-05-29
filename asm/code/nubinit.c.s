@@ -12,7 +12,7 @@
 /* 8040FDB4 0040BA54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040FDB8 0040BA58  7C 08 03 A6 */	mtlr r0
 /* 8040FDBC 0040BA5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040FDC0 0040BA60  4E 80 00 20 */	blr 
+/* 8040FDC0 0040BA60  4E 80 00 20 */	blr
 
 .global "TRKTerminateNub"
 "TRKTerminateNub":
@@ -24,7 +24,7 @@
 /* 8040FDD8 0040BA78  38 60 00 00 */	li r3, 0
 /* 8040FDDC 0040BA7C  7C 08 03 A6 */	mtlr r0
 /* 8040FDE0 0040BA80  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040FDE4 0040BA84  4E 80 00 20 */	blr 
+/* 8040FDE4 0040BA84  4E 80 00 20 */	blr
 
 .global "TRKInitializeNub"
 "TRKInitializeNub":
@@ -115,12 +115,15 @@ lbl_8040FF04:
 /* 8040FF10 0040BBB0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8040FF14 0040BBB4  7C 08 03 A6 */	mtlr r0
 /* 8040FF18 0040BBB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040FF1C 0040BBBC  4E 80 00 20 */	blr 
+/* 8040FF1C 0040BBBC  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041FDB8
 lbl_8041FDB8:
-	.incbin "baserom.dol", 0x41BEB8, 0x20
+	# ROM: 0x41BEB8
+	.asciz "MetroTRK for Revolution v0.1"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gTRKBigEndian"

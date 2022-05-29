@@ -29,12 +29,12 @@ lbl_803A6078:
 /* 803A6088 003A1D28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A608C 003A1D2C  7C 08 03 A6 */	mtlr r0
 /* 803A6090 003A1D30  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A6094 003A1D34  4E 80 00 20 */	blr 
+/* 803A6094 003A1D34  4E 80 00 20 */	blr
 
 .global "SetMmlParser__Q46nw4hbm3snd6detail11MmlSeqTrackFPCQ46nw4hbm3snd6detail9MmlParser"
 "SetMmlParser__Q46nw4hbm3snd6detail11MmlSeqTrackFPCQ46nw4hbm3snd6detail9MmlParser":
 /* 803A6098 003A1D38  90 83 00 BC */	stw r4, 0xbc(r3)
-/* 803A609C 003A1D3C  4E 80 00 20 */	blr 
+/* 803A609C 003A1D3C  4E 80 00 20 */	blr
 
 .global "Alloc__Q46nw4hbm3snd6detail47InstancePool<Q46nw4hbm3snd6detail11MmlSeqTrack>Fv"
 "Alloc__Q46nw4hbm3snd6detail47InstancePool<Q46nw4hbm3snd6detail11MmlSeqTrack>Fv":
@@ -57,7 +57,7 @@ lbl_803A60D8:
 /* 803A60D8 003A1D78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A60DC 003A1D7C  7C 08 03 A6 */	mtlr r0
 /* 803A60E0 003A1D80  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A60E4 003A1D84  4E 80 00 20 */	blr 
+/* 803A60E4 003A1D84  4E 80 00 20 */	blr
 
 .global "FreeTrack__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPQ46nw4hbm3snd6detail8SeqTrack"
 "FreeTrack__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPQ46nw4hbm3snd6detail8SeqTrack":
@@ -89,7 +89,7 @@ lbl_803A6128:
 /* 803A6148 003A1DE8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A614C 003A1DEC  7C 08 03 A6 */	mtlr r0
 /* 803A6150 003A1DF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6154 003A1DF4  4E 80 00 20 */	blr 
+/* 803A6154 003A1DF4  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail47InstancePool<Q46nw4hbm3snd6detail11MmlSeqTrack>FPQ46nw4hbm3snd6detail11MmlSeqTrack"
 "Free__Q46nw4hbm3snd6detail47InstancePool<Q46nw4hbm3snd6detail11MmlSeqTrack>FPQ46nw4hbm3snd6detail11MmlSeqTrack":
@@ -107,7 +107,7 @@ lbl_803A6128:
 /* 803A6184 003A1E24  38 80 FF FF */	li r4, -1
 /* 803A6188 003A1E28  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A618C 003A1E2C  7D 89 03 A6 */	mtctr r12
-/* 803A6190 003A1E30  4E 80 04 21 */	bctrl 
+/* 803A6190 003A1E30  4E 80 04 21 */	bctrl
 /* 803A6194 003A1E34  7F C3 F3 78 */	mr r3, r30
 /* 803A6198 003A1E38  7F E4 FB 78 */	mr r4, r31
 /* 803A619C 003A1E3C  4B FF E6 41 */	bl "FreeImpl__Q46nw4hbm3snd6detail8PoolImplFPv"
@@ -117,7 +117,7 @@ lbl_803A61A0:
 /* 803A61A8 003A1E48  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A61AC 003A1E4C  7C 08 03 A6 */	mtlr r0
 /* 803A61B0 003A1E50  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A61B4 003A1E54  4E 80 00 20 */	blr 
+/* 803A61B4 003A1E54  4E 80 00 20 */	blr
 
 .global "Create__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPvUl"
 "Create__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPvUl":
@@ -153,15 +153,27 @@ lbl_803A6204:
 /* 803A6210 003A1EB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6214 003A1EB4  7C 08 03 A6 */	mtlr r0
 /* 803A6218 003A1EB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A621C 003A1EBC  4E 80 00 20 */	blr 
+/* 803A621C 003A1EBC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E9B8
 lbl_8046E9B8:
-	.incbin "baserom.dol", 0x46AAB8, 0x20
+	# ROM: 0x46AAB8
+	.asciz "snd_MmlSeqTrackAllocator.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046E9D8
 lbl_8046E9D8:
-	.incbin "baserom.dol", 0x46AAD8, 0x28
+	# ROM: 0x46AAD8
+	.asciz "NW4HBM:Pointer must not be NULL (track)"
+
 .global "__vt__Q46nw4hbm3snd6detail20MmlSeqTrackAllocator"
 "__vt__Q46nw4hbm3snd6detail20MmlSeqTrackAllocator":
-	.incbin "baserom.dol", 0x46AB00, 0x18
+	# ROM: 0x46AB00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFv" ;# ptr (0x803A61C8)
+	.4byte "AllocTrack__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPQ46nw4hbm3snd6detail9SeqPlayer" ;# ptr (0x803A6030)
+	.4byte "FreeTrack__Q46nw4hbm3snd6detail20MmlSeqTrackAllocatorFPQ46nw4hbm3snd6detail8SeqTrack" ;# ptr (0x803A60E8)
+	.4byte 0x00000000
+

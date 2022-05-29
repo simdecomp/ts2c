@@ -26,7 +26,7 @@
 /* 803E18A8 003DD548  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803E18AC 003DD54C  7C 08 03 A6 */	mtlr r0
 /* 803E18B0 003DD550  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E18B4 003DD554  4E 80 00 20 */	blr 
+/* 803E18B4 003DD554  4E 80 00 20 */	blr
 
 .global "OSGetSaveRegion"
 "OSGetSaveRegion":
@@ -34,7 +34,7 @@
 /* 803E18BC 003DD55C  90 03 00 00 */	stw r0, 0(r3)
 /* 803E18C0 003DD560  80 0D C7 5C */	lwz r0, "SaveEnd"-_SDA_BASE_(r13)
 /* 803E18C4 003DD564  90 04 00 00 */	stw r0, 0(r4)
-/* 803E18C8 003DD568  4E 80 00 20 */	blr 
+/* 803E18C8 003DD568  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "SaveStart"

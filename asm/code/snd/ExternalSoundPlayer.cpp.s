@@ -18,7 +18,7 @@
 /* 803A3354 0039EFF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3358 0039EFF8  7C 08 03 A6 */	mtlr r0
 /* 803A335C 0039EFFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3360 0039F000  4E 80 00 20 */	blr 
+/* 803A3360 0039F000  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8Iterator":
@@ -35,7 +35,7 @@
 /* 803A338C 0039F02C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3390 0039F030  7C 08 03 A6 */	mtlr r0
 /* 803A3394 0039F034  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3398 0039F038  4E 80 00 20 */	blr 
+/* 803A3398 0039F038  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>Fv"
 "GetEndIter__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>Fv":
@@ -51,7 +51,7 @@
 /* 803A33C0 0039F060  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A33C4 0039F064  7C 08 03 A6 */	mtlr r0
 /* 803A33C8 0039F068  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A33CC 0039F06C  4E 80 00 20 */	blr 
+/* 803A33CC 0039F06C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -66,7 +66,7 @@
 /* 803A33F0 0039F090  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A33F4 0039F094  7C 08 03 A6 */	mtlr r0
 /* 803A33F8 0039F098  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A33FC 0039F09C  4E 80 00 20 */	blr 
+/* 803A33FC 0039F09C  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorCFv"
 "__rf__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorCFv":
@@ -78,7 +78,7 @@
 /* 803A3414 0039F0B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3418 0039F0B8  7C 08 03 A6 */	mtlr r0
 /* 803A341C 0039F0BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3420 0039F0C0  4E 80 00 20 */	blr 
+/* 803A3420 0039F0C0  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ36nw4hbm2ut12LinkListNode":
@@ -102,7 +102,7 @@ lbl_803A345C:
 /* 803A3464 0039F104  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3468 0039F108  7C 08 03 A6 */	mtlr r0
 /* 803A346C 0039F10C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3470 0039F110  4E 80 00 20 */	blr 
+/* 803A3470 0039F110  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFv"
 "__pp__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFv":
@@ -117,7 +117,7 @@ lbl_803A345C:
 /* 803A3494 0039F134  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3498 0039F138  7C 08 03 A6 */	mtlr r0
 /* 803A349C 0039F13C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A34A0 0039F140  4E 80 00 20 */	blr 
+/* 803A34A0 0039F140  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFRCQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8Iterator"
 "__ct__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorFRCQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8Iterator":
@@ -132,7 +132,7 @@ lbl_803A345C:
 /* 803A34C4 0039F164  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A34C8 0039F168  7C 08 03 A6 */	mtlr r0
 /* 803A34CC 0039F16C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A34D0 0039F170  4E 80 00 20 */	blr 
+/* 803A34D0 0039F170  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>Fv"
 "GetBeginIter__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>Fv":
@@ -148,12 +148,12 @@ lbl_803A345C:
 /* 803A34F8 0039F198  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A34FC 0039F19C  7C 08 03 A6 */	mtlr r0
 /* 803A3500 0039F1A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3504 0039F1A4  4E 80 00 20 */	blr 
+/* 803A3504 0039F1A4  4E 80 00 20 */	blr
 
 .global "GetPlayableSoundCount__Q46nw4hbm3snd6detail19ExternalSoundPlayerCFv"
 "GetPlayableSoundCount__Q46nw4hbm3snd6detail19ExternalSoundPlayerCFv":
 /* 803A3508 0039F1A8  A0 63 00 0C */	lhz r3, 0xc(r3)
-/* 803A350C 0039F1AC  4E 80 00 20 */	blr 
+/* 803A350C 0039F1AC  4E 80 00 20 */	blr
 
 .global "GetPlayingSoundCount__Q46nw4hbm3snd6detail19ExternalSoundPlayerCFv"
 "GetPlayingSoundCount__Q46nw4hbm3snd6detail19ExternalSoundPlayerCFv":
@@ -179,7 +179,7 @@ lbl_803A345C:
 /* 803A3544 0039F1E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3548 0039F1E8  7C 08 03 A6 */	mtlr r0
 /* 803A354C 0039F1EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3550 0039F1F0  4E 80 00 20 */	blr 
+/* 803A3550 0039F1F0  4E 80 00 20 */	blr
 
 .global "PushBack__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound"
 "PushBack__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound":
@@ -201,7 +201,7 @@ lbl_803A345C:
 /* 803A3590 0039F230  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A3594 0039F234  7C 08 03 A6 */	mtlr r0
 /* 803A3598 0039F238  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A359C 0039F23C  4E 80 00 20 */	blr 
+/* 803A359C 0039F23C  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorPQ46nw4hbm3snd6detail10BasicSound"
 "Insert__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FQ46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorPQ46nw4hbm3snd6detail10BasicSound":
@@ -227,7 +227,7 @@ lbl_803A345C:
 /* 803A35EC 0039F28C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A35F0 0039F290  7C 08 03 A6 */	mtlr r0
 /* 803A35F4 0039F294  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A35F8 0039F298  4E 80 00 20 */	blr 
+/* 803A35F8 0039F298  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound"
 "GetNodeFromPointer__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound":
@@ -251,7 +251,7 @@ lbl_803A3634:
 /* 803A363C 0039F2DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3640 0039F2E0  7C 08 03 A6 */	mtlr r0
 /* 803A3644 0039F2E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3648 0039F2E8  4E 80 00 20 */	blr 
+/* 803A3648 0039F2E8  4E 80 00 20 */	blr
 
 .global "RemoveSoundList__Q46nw4hbm3snd6detail19ExternalSoundPlayerFPQ46nw4hbm3snd6detail10BasicSound"
 "RemoveSoundList__Q46nw4hbm3snd6detail19ExternalSoundPlayerFPQ46nw4hbm3snd6detail10BasicSound":
@@ -267,7 +267,7 @@ lbl_803A3634:
 /* 803A3670 0039F310  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3674 0039F314  7C 08 03 A6 */	mtlr r0
 /* 803A3678 0039F318  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A367C 0039F31C  4E 80 00 20 */	blr 
+/* 803A367C 0039F31C  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound"
 "Erase__Q36nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>FPQ46nw4hbm3snd6detail10BasicSound":
@@ -290,7 +290,7 @@ lbl_803A3634:
 /* 803A36C0 0039F360  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A36C4 0039F364  7C 08 03 A6 */	mtlr r0
 /* 803A36C8 0039F368  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A36CC 0039F36C  4E 80 00 20 */	blr 
+/* 803A36CC 0039F36C  4E 80 00 20 */	blr
 
 .global "GetLowestPrioritySound__Q46nw4hbm3snd6detail19ExternalSoundPlayerFv"
 "GetLowestPrioritySound__Q46nw4hbm3snd6detail19ExternalSoundPlayerFv":
@@ -343,7 +343,7 @@ lbl_803A3740:
 /* 803A377C 0039F41C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803A3780 0039F420  7C 08 03 A6 */	mtlr r0
 /* 803A3784 0039F424  38 21 00 30 */	addi r1, r1, 0x30
-/* 803A3788 0039F428  4E 80 00 20 */	blr 
+/* 803A3788 0039F428  4E 80 00 20 */	blr
 
 .global "__ml__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorCFv"
 "__ml__Q46nw4hbm2ut46LinkList<Q46nw4hbm3snd6detail10BasicSound,208>8IteratorCFv":
@@ -368,7 +368,7 @@ lbl_803A37C8:
 /* 803A37D0 0039F470  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A37D4 0039F474  7C 08 03 A6 */	mtlr r0
 /* 803A37D8 0039F478  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A37DC 0039F47C  4E 80 00 20 */	blr 
+/* 803A37DC 0039F47C  4E 80 00 20 */	blr
 
 .global "CalcCurrentPlayerPriority__Q46nw4hbm3snd6detail10BasicSoundCFv"
 "CalcCurrentPlayerPriority__Q46nw4hbm3snd6detail10BasicSoundCFv":
@@ -384,29 +384,44 @@ lbl_803A37C8:
 /* 803A37F8 0039F498  7C 03 28 00 */	cmpw r3, r5
 /* 803A37FC 0039F49C  40 81 00 0C */	ble lbl_803A3808
 /* 803A3800 0039F4A0  7C A3 2B 78 */	mr r3, r5
-/* 803A3804 0039F4A4  4E 80 00 20 */	blr 
+/* 803A3804 0039F4A4  4E 80 00 20 */	blr
 lbl_803A3808:
 /* 803A3808 0039F4A8  7C 03 20 00 */	cmpw r3, r4
-/* 803A380C 0039F4AC  4C 80 00 20 */	bgelr 
+/* 803A380C 0039F4AC  4C 80 00 20 */	bgelr
 /* 803A3810 0039F4B0  7C 83 23 78 */	mr r3, r4
-/* 803A3814 0039F4B4  4E 80 00 20 */	blr 
+/* 803A3814 0039F4B4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E088
 lbl_8046E088:
-	.incbin "baserom.dol", 0x46A188, 0x24
+	# ROM: 0x46A188
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E0AC
 lbl_8046E0AC:
-	.incbin "baserom.dol", 0x46A1AC, 0xC
+	# ROM: 0x46A1AC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E0B8
 lbl_8046E0B8:
-	.incbin "baserom.dol", 0x46A1B8, 0x24
+	# ROM: 0x46A1B8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E0DC
 lbl_8046E0DC:
-	.incbin "baserom.dol", 0x46A1DC, 0xC
+	# ROM: 0x46A1DC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E0E8
 lbl_8046E0E8:
-	.incbin "baserom.dol", 0x46A1E8, 0x24
+	# ROM: 0x46A1E8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E10C
 lbl_8046E10C:
-	.incbin "baserom.dol", 0x46A20C, 0xC
+	# ROM: 0x46A20C
+	.asciz "LinkList.h"
+	.byte 0x00
+

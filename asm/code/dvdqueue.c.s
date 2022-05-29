@@ -16,7 +16,7 @@
 /* 8036E8D8 0036A578  90 86 00 14 */	stw r4, 0x14(r6)
 /* 8036E8DC 0036A57C  90 66 00 18 */	stw r3, 0x18(r6)
 /* 8036E8E0 0036A580  90 66 00 1C */	stw r3, 0x1c(r6)
-/* 8036E8E4 0036A584  4E 80 00 20 */	blr 
+/* 8036E8E4 0036A584  4E 80 00 20 */	blr
 
 .global "__DVDPushWaitingQueue"
 "__DVDPushWaitingQueue":
@@ -45,7 +45,7 @@
 /* 8036E940 0036A5E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036E944 0036A5E4  7C 08 03 A6 */	mtlr r0
 /* 8036E948 0036A5E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E94C 0036A5EC  4E 80 00 20 */	blr 
+/* 8036E94C 0036A5EC  4E 80 00 20 */	blr
 
 .global "__DVDPopWaitingQueue"
 "__DVDPopWaitingQueue":
@@ -91,7 +91,7 @@ lbl_8036E9DC:
 /* 8036E9E0 0036A680  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036E9E4 0036A684  7C 08 03 A6 */	mtlr r0
 /* 8036E9E8 0036A688  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E9EC 0036A68C  4E 80 00 20 */	blr 
+/* 8036E9EC 0036A68C  4E 80 00 20 */	blr
 
 .global "__DVDCheckWaitingQueue"
 "__DVDCheckWaitingQueue":
@@ -119,7 +119,7 @@ lbl_8036EA38:
 /* 8036EA38 0036A6D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036EA3C 0036A6DC  7C 08 03 A6 */	mtlr r0
 /* 8036EA40 0036A6E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036EA44 0036A6E4  4E 80 00 20 */	blr 
+/* 8036EA44 0036A6E4  4E 80 00 20 */	blr
 
 .global "__DVDGetNextWaitingQueue"
 "__DVDGetNextWaitingQueue":
@@ -149,7 +149,7 @@ lbl_8036EA94:
 /* 8036EA98 0036A738  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036EA9C 0036A73C  7C 08 03 A6 */	mtlr r0
 /* 8036EAA0 0036A740  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036EAA4 0036A744  4E 80 00 20 */	blr 
+/* 8036EAA4 0036A744  4E 80 00 20 */	blr
 
 .global "__DVDDequeueWaitingQueue"
 "__DVDDequeueWaitingQueue":
@@ -179,7 +179,7 @@ lbl_8036EAF4:
 /* 8036EAF8 0036A798  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036EAFC 0036A79C  7C 08 03 A6 */	mtlr r0
 /* 8036EB00 0036A7A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036EB04 0036A7A4  4E 80 00 20 */	blr 
+/* 8036EB04 0036A7A4  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "WaitingQueue"

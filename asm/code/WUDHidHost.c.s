@@ -21,7 +21,7 @@
 /* 8040220C 003FDEAC  38 A5 78 08 */	addi r5, r5, lbl_80487808@l
 /* 80402210 003FDEB0  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80402214 003FDEB4  7C A9 03 A6 */	mtctr r5
-/* 80402218 003FDEB8  4E 80 04 20 */	bctr 
+/* 80402218 003FDEB8  4E 80 04 20 */	bctr
 /* 8040221C 003FDEBC  38 7D 00 00 */	addi r3, r29, 0
 /* 80402220 003FDEC0  4C C6 31 82 */	crclr 6
 /* 80402224 003FDEC4  48 00 04 F9 */	bl "WUD_DEBUGPrint"
@@ -130,7 +130,7 @@ lbl_80402388:
 /* 804023A0 003FE040  88 7E 00 07 */	lbz r3, 7(r30)
 /* 804023A4 003FE044  38 80 00 01 */	li r4, 1
 /* 804023A8 003FE048  7D 89 03 A6 */	mtctr r12
-/* 804023AC 003FE04C  4E 80 04 21 */	bctrl 
+/* 804023AC 003FE04C  4E 80 04 21 */	bctrl
 /* 804023B0 003FE050  48 00 02 EC */	b lbl_8040269C
 lbl_804023B4:
 /* 804023B4 003FE054  38 7D 00 70 */	addi r3, r29, 0x70
@@ -218,7 +218,7 @@ lbl_804024A0:
 /* 804024EC 003FE18C  88 7E 00 01 */	lbz r3, 1(r30)
 /* 804024F0 003FE190  38 80 00 00 */	li r4, 0
 /* 804024F4 003FE194  7D 89 03 A6 */	mtctr r12
-/* 804024F8 003FE198  4E 80 04 21 */	bctrl 
+/* 804024F8 003FE198  4E 80 04 21 */	bctrl
 /* 804024FC 003FE19C  48 00 01 A0 */	b lbl_8040269C
 /* 80402500 003FE1A0  38 7D 00 B8 */	addi r3, r29, 0xb8
 /* 80402504 003FE1A4  4C C6 31 82 */	crclr 6
@@ -334,7 +334,7 @@ lbl_8040269C:
 /* 804026A8 003FE348  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 804026AC 003FE34C  7C 08 03 A6 */	mtlr r0
 /* 804026B0 003FE350  38 21 00 20 */	addi r1, r1, 0x20
-/* 804026B4 003FE354  4E 80 00 20 */	blr 
+/* 804026B4 003FE354  4E 80 00 20 */	blr
 
 .global "bta_hh_co_data"
 "bta_hh_co_data":
@@ -344,16 +344,16 @@ lbl_8040269C:
 /* 804026C4 003FE364  40 82 00 18 */	bne lbl_804026DC
 /* 804026C8 003FE368  81 86 06 EC */	lwz r12, 0x6ec(r6)
 /* 804026CC 003FE36C  2C 0C 00 00 */	cmpwi r12, 0
-/* 804026D0 003FE370  4D 82 00 20 */	beqlr 
+/* 804026D0 003FE370  4D 82 00 20 */	beqlr
 /* 804026D4 003FE374  7D 89 03 A6 */	mtctr r12
-/* 804026D8 003FE378  4E 80 04 20 */	bctr 
+/* 804026D8 003FE378  4E 80 04 20 */	bctr
 lbl_804026DC:
 /* 804026DC 003FE37C  3C 60 80 48 */	lis r3, lbl_80487848@ha
 /* 804026E0 003FE380  7D 04 43 78 */	mr r4, r8
 /* 804026E4 003FE384  38 63 78 48 */	addi r3, r3, lbl_80487848@l
 /* 804026E8 003FE388  4C C6 31 82 */	crclr 6
 /* 804026EC 003FE38C  48 00 00 30 */	b "WUD_DEBUGPrint"
-/* 804026F0 003FE390  4E 80 00 20 */	blr 
+/* 804026F0 003FE390  4E 80 00 20 */	blr
 
 .global "bta_hh_co_open"
 "bta_hh_co_open":
@@ -372,21 +372,80 @@ lbl_804026DC:
 .global "bta_dm_co_get_compress_memory"
 "bta_dm_co_get_compress_memory":
 /* 80402714 003FE3B4  38 60 00 00 */	li r3, 0
-/* 80402718 003FE3B8  4E 80 00 20 */	blr 
+/* 80402718 003FE3B8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80487608
 lbl_80487608:
-	.incbin "baserom.dol", 0x483708, 0x200
+	# ROM: 0x483708
+	.asciz "BTA_HH_ENABLE_EVT\n"
+	.byte 0x00
+	.asciz "BTA_HH_DISABLE_EVT\n"
+	.asciz "BTA_HH_OPEN_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "handle: %d, addr: %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "error code: %d\n"
+	.asciz "BTA_HH_CLOSE_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "device handle : %d   status = %d\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_SET_RPT_EVT\n"
+	.asciz "BTA_HH_GET_RPT_EVT\n"
+	.asciz "BTA_HH_SET_PROTO_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_GET_PROTO_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_SET_IDLE_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_GET_IDLE_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_GET_DCSP_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_ADD_DEV_EVT\n"
+	.asciz "result: %d, handle: %d, addr: %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_RMV_DEV_EVT\n"
+	.asciz "BTA_HH_VS_UNPLUG_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "WARNING: link num count is modified.\n"
+	.byte 0x00, 0x00
+
 .global lbl_80487808
 lbl_80487808:
-	.incbin "baserom.dol", 0x483908, 0x40
+	# ROM: 0x483908
+	.4byte 0x8040221C ;# ptr
+	.4byte 0x80402238 ;# ptr
+	.4byte 0x80402248 ;# ptr
+	.4byte 0x80402434 ;# ptr
+	.4byte 0x80402510 ;# ptr
+	.4byte 0x80402500 ;# ptr
+	.4byte 0x80402530 ;# ptr
+	.4byte 0x80402520 ;# ptr
+	.4byte 0x80402550 ;# ptr
+	.4byte 0x80402540 ;# ptr
+	.4byte 0x80402560 ;# ptr
+	.4byte 0x80402570 ;# ptr
+	.4byte 0x804025C0 ;# ptr
+	.4byte 0x80402600 ;# ptr
+	.4byte 0x8040269C ;# ptr
+	.4byte 0x80402610 ;# ptr
+
 .global lbl_80487848
 lbl_80487848:
-	.incbin "baserom.dol", 0x483948, 0x18
+	# ROM: 0x483948
+	.asciz "Invalid app_id [%d]\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80487860
 lbl_80487860:
-	.incbin "baserom.dol", 0x483960, 0x14
+	# ROM: 0x483960
+	.asciz "bta_hh_co_open()\n"
+	.byte 0x00, 0x00
+
 .global lbl_80487874
 lbl_80487874:
-	.incbin "baserom.dol", 0x483974, 0x14
+	# ROM: 0x483974
+	.asciz "bta_hh_co_close()\n"
+	.byte 0x00
+

@@ -71,7 +71,7 @@
 /* 8035A450 003560F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035A454 003560F4  7C 08 03 A6 */	mtlr r0
 /* 8035A458 003560F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035A45C 003560FC  4E 80 00 20 */	blr 
+/* 8035A45C 003560FC  4E 80 00 20 */	blr
 
 .global "l2c_rcv_acl_data"
 "l2c_rcv_acl_data":
@@ -296,7 +296,7 @@ lbl_8035A778:
 /* 8035A780 00356420  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035A784 00356424  7C 08 03 A6 */	mtlr r0
 /* 8035A788 00356428  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035A78C 0035642C  4E 80 00 20 */	blr 
+/* 8035A78C 0035642C  4E 80 00 20 */	blr
 
 .global "process_l2cap_cmd"
 "process_l2cap_cmd":
@@ -352,7 +352,7 @@ lbl_8035A840:
 /* 8035A84C 003564EC  54 E0 10 3A */	slwi r0, r7, 2
 /* 8035A850 003564F0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035A854 003564F4  7C 69 03 A6 */	mtctr r3
-/* 8035A858 003564F8  4E 80 04 20 */	bctr 
+/* 8035A858 003564F8  4E 80 04 20 */	bctr
 /* 8035A85C 003564FC  88 10 00 05 */	lbz r0, 5(r16)
 /* 8035A860 00356500  88 70 00 04 */	lbz r3, 4(r16)
 /* 8035A864 00356504  3A 10 00 06 */	addi r16, r16, 6
@@ -971,7 +971,7 @@ lbl_8035B150:
 /* 8035B174 00356E14  93 EF 00 54 */	stw r31, 0x54(r15)
 /* 8035B178 00356E18  38 60 00 00 */	li r3, 0
 /* 8035B17C 00356E1C  7D 89 03 A6 */	mtctr r12
-/* 8035B180 00356E20  4E 80 04 21 */	bctrl 
+/* 8035B180 00356E20  4E 80 04 21 */	bctrl
 /* 8035B184 00356E24  4B FF F6 58 */	b lbl_8035A7DC
 /* 8035B188 00356E28  88 10 00 05 */	lbz r0, 5(r16)
 /* 8035B18C 00356E2C  7D E3 7B 78 */	mr r3, r15
@@ -1005,7 +1005,7 @@ lbl_8035B1E8:
 /* 8035B1F0 00356E90  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 8035B1F4 00356E94  7C 08 03 A6 */	mtlr r0
 /* 8035B1F8 00356E98  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 8035B1FC 00356E9C  4E 80 00 20 */	blr 
+/* 8035B1FC 00356E9C  4E 80 00 20 */	blr
 
 .global "l2c_process_timeout"
 "l2c_process_timeout":
@@ -1016,11 +1016,11 @@ lbl_8035B1E8:
 /* 8035B210 00356EB0  2C 00 00 02 */	cmpwi r0, 2
 /* 8035B214 00356EB4  41 82 00 18 */	beq lbl_8035B22C
 /* 8035B218 00356EB8  40 80 00 1C */	bge lbl_8035B234
-/* 8035B21C 00356EBC  4E 80 00 20 */	blr 
+/* 8035B21C 00356EBC  4E 80 00 20 */	blr
 lbl_8035B220:
 /* 8035B220 00356EC0  2C 00 00 49 */	cmpwi r0, 0x49
-/* 8035B224 00356EC4  4D 82 00 20 */	beqlr 
-/* 8035B228 00356EC8  4E 80 00 20 */	blr 
+/* 8035B224 00356EC4  4D 82 00 20 */	beqlr
+/* 8035B228 00356EC8  4E 80 00 20 */	blr
 lbl_8035B22C:
 /* 8035B22C 00356ECC  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8035B230 00356ED0  4B FF E4 FC */	b "l2c_link_timeout"
@@ -1032,7 +1032,7 @@ lbl_8035B234:
 lbl_8035B244:
 /* 8035B244 00356EE4  38 60 00 01 */	li r3, 1
 /* 8035B248 00356EE8  48 00 00 08 */	b "l2c_process_held_packets"
-/* 8035B24C 00356EEC  4E 80 00 20 */	blr 
+/* 8035B24C 00356EEC  4E 80 00 20 */	blr
 
 .global "l2c_process_held_packets"
 "l2c_process_held_packets":
@@ -1117,18 +1117,65 @@ lbl_8035B364:
 /* 8035B36C 0035700C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035B370 00357010  7C 08 03 A6 */	mtlr r0
 /* 8035B374 00357014  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035B378 00357018  4E 80 00 20 */	blr 
+/* 8035B378 00357018  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80464980
 lbl_80464980:
-	.incbin "baserom.dol", 0x460A80, 0x2D4
+	# ROM: 0x460A80
+	.asciz "L2CAP - expected pkt start, got: %d"
+	.asciz "L2CAP - holding ACL for unknown handle:%d ls:%d cid:%d opcode:%d cur count:%d"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "L2CAP - unknown CID: %d"
+	.asciz "L2CAP - got incorrect hci header"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - bad length in pkt. Exp: %d  Act: %d"
+	.asciz "GOT CONNECTIONLESS DATA PSM:%d"
+	.byte 0x00
+	.asciz "Command len bad  pkt_len: %d  cmd_len: %d  code: %d"
+	.asciz "L2CAP - MTU rej Handle: %d MTU: %d"
+	.byte 0x00
+	.asciz "L2CAP - rej with CID invalid, LCID: %d RCID: %d"
+	.asciz "L2CAP - rcvd conn req for unknown PSM: %d"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - unable to allocate CCB"
+	.byte 0x00
+	.asciz "L2CAP - no CCB for conn rsp, LCID: %d RCID: %d"
+	.byte 0x00
+	.asciz "L2CAP - con rsp - bad ID. Exp: %d Got: %d"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - cfg rsp - bad ID. Exp: %d Got: %d"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - rcvd cfg rsp for unknown CID: %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - bad cmd code: %d"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x8035B1AC ;# ptr
+	.4byte 0x8035A85C ;# ptr
+	.4byte 0x8035A930 ;# ptr
+	.4byte 0x8035A9FC ;# ptr
+	.4byte 0x8035AAF4 ;# ptr
+	.4byte 0x8035ADA4 ;# ptr
+	.4byte 0x8035B054 ;# ptr
+	.4byte 0x8035B0C8 ;# ptr
+	.4byte 0x8035B128 ;# ptr
+	.4byte 0x8035B168 ;# ptr
+	.4byte 0x8035B188 ;# ptr
+	.4byte 0x8035A7DC ;# ptr
+
 .global lbl_80464C54
 lbl_80464C54:
-	.incbin "baserom.dol", 0x460D54, 0x14
+	# ROM: 0x460D54
+	.asciz "L2CAP HOLD CONTINUE"
+
 .global lbl_80464C68
 lbl_80464C68:
-	.incbin "baserom.dol", 0x460D68, 0x18
+	# ROM: 0x460D68
+	.asciz "L2CAP HOLD TIMEOUT"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "l2cb"

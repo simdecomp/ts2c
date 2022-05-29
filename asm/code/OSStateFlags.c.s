@@ -63,7 +63,7 @@ lbl_803E54A0:
 /* 803E54A8 003E1148  83 C1 00 98 */	lwz r30, 0x98(r1)
 /* 803E54AC 003E114C  7C 08 03 A6 */	mtlr r0
 /* 803E54B0 003E1150  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803E54B4 003E1154  4E 80 00 20 */	blr 
+/* 803E54B4 003E1154  4E 80 00 20 */	blr
 
 .global "__OSReadStateFlags"
 "__OSReadStateFlags":
@@ -144,12 +144,14 @@ lbl_803E55C0:
 /* 803E55D0 003E1270  83 81 00 A0 */	lwz r28, 0xa0(r1)
 /* 803E55D4 003E1274  7C 08 03 A6 */	mtlr r0
 /* 803E55D8 003E1278  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 803E55DC 003E127C  4E 80 00 20 */	blr 
+/* 803E55DC 003E127C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804837A8
 lbl_804837A8:
-	.incbin "baserom.dol", 0x47F8A8, 0x28
+	# ROM: 0x47F8A8
+	.asciz "/title/00000001/00000002/data/state.dat"
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "StateFlags"

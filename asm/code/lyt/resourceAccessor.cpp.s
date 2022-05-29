@@ -19,21 +19,28 @@ lbl_803938F0:
 /* 803938F8 0038F598  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803938FC 0038F59C  7C 08 03 A6 */	mtlr r0
 /* 80393900 0038F5A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80393904 0038F5A4  4E 80 00 20 */	blr 
+/* 80393904 0038F5A4  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3lyt16ResourceAccessorFv"
 "__ct__Q36nw4hbm3lyt16ResourceAccessorFv":
 /* 80393908 0038F5A8  3C 80 80 47 */	lis r4, "__vt__Q36nw4hbm3lyt16ResourceAccessor"@ha
 /* 8039390C 0038F5AC  38 84 B4 78 */	addi r4, r4, "__vt__Q36nw4hbm3lyt16ResourceAccessor"@l
 /* 80393910 0038F5B0  90 83 00 00 */	stw r4, 0(r3)
-/* 80393914 0038F5B4  4E 80 00 20 */	blr 
+/* 80393914 0038F5B4  4E 80 00 20 */	blr
 
 .global "GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc"
 "GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc":
 /* 80393918 0038F5B8  38 60 00 00 */	li r3, 0
-/* 8039391C 0038F5BC  4E 80 00 20 */	blr 
+/* 8039391C 0038F5BC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3lyt16ResourceAccessor"
 "__vt__Q36nw4hbm3lyt16ResourceAccessor":
-	.incbin "baserom.dol", 0x467578, 0x18
+	# ROM: 0x467578
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt16ResourceAccessorFv" ;# ptr (0x803938C8)
+	.4byte 0x00000000
+	.4byte "GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc" ;# ptr (0x80393918)
+	.4byte 0x00000000
+

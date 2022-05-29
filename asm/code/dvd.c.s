@@ -48,11 +48,11 @@ lbl_8036A404:
 /* 8036A46C 0036610C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A470 00366110  7C 08 03 A6 */	mtlr r0
 /* 8036A474 00366114  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036A478 00366118  4E 80 00 20 */	blr 
+/* 8036A478 00366118  4E 80 00 20 */	blr
 
 .global "defaultOptionalCommandChecker"
 "defaultOptionalCommandChecker":
-/* 8036A47C 0036611C  4E 80 00 20 */	blr 
+/* 8036A47C 0036611C  4E 80 00 20 */	blr
 
 .global "DVDInit"
 "DVDInit":
@@ -113,7 +113,7 @@ lbl_8036A54C:
 /* 8036A550 003661F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036A554 003661F4  7C 08 03 A6 */	mtlr r0
 /* 8036A558 003661F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036A55C 003661FC  4E 80 00 20 */	blr 
+/* 8036A55C 003661FC  4E 80 00 20 */	blr
 
 .global "stateReadingFST"
 "stateReadingFST":
@@ -212,7 +212,7 @@ lbl_8036A610:
 /* 8036A6C8 00366368  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8036A6CC 0036636C  7C 08 03 A6 */	mtlr r0
 /* 8036A6D0 00366370  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036A6D4 00366374  4E 80 00 20 */	blr 
+/* 8036A6D4 00366374  4E 80 00 20 */	blr
 
 .global "cbForStateReadingFST"
 "cbForStateReadingFST":
@@ -272,7 +272,7 @@ lbl_8036A76C:
 /* 8036A79C 0036643C  41 82 00 10 */	beq lbl_8036A7AC
 /* 8036A7A0 00366440  38 60 00 00 */	li r3, 0
 /* 8036A7A4 00366444  7D 89 03 A6 */	mtctr r12
-/* 8036A7A8 00366448  4E 80 04 21 */	bctrl 
+/* 8036A7A8 00366448  4E 80 04 21 */	bctrl
 lbl_8036A7AC:
 /* 8036A7AC 0036644C  48 00 25 A1 */	bl "stateReady"
 /* 8036A7B0 00366450  48 00 00 94 */	b lbl_8036A844
@@ -320,7 +320,7 @@ lbl_8036A844:
 /* 8036A84C 003664EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036A850 003664F0  7C 08 03 A6 */	mtlr r0
 /* 8036A854 003664F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036A858 003664F8  4E 80 00 20 */	blr 
+/* 8036A858 003664F8  4E 80 00 20 */	blr
 
 .global "FatalAlarmHandler"
 "FatalAlarmHandler":
@@ -380,7 +380,7 @@ lbl_8036A8F4:
 /* 8036A918 003665B8  7F E4 FB 78 */	mr r4, r31
 /* 8036A91C 003665BC  38 60 FF FF */	li r3, -1
 /* 8036A920 003665C0  7D 89 03 A6 */	mtctr r12
-/* 8036A924 003665C4  4E 80 04 21 */	bctrl 
+/* 8036A924 003665C4  4E 80 04 21 */	bctrl
 lbl_8036A928:
 /* 8036A928 003665C8  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
 /* 8036A92C 003665CC  2C 00 00 00 */	cmpwi r0, 0
@@ -393,7 +393,7 @@ lbl_8036A928:
 /* 8036A948 003665E8  7F E4 FB 78 */	mr r4, r31
 /* 8036A94C 003665EC  38 60 00 00 */	li r3, 0
 /* 8036A950 003665F0  7D 89 03 A6 */	mtctr r12
-/* 8036A954 003665F4  4E 80 04 21 */	bctrl 
+/* 8036A954 003665F4  4E 80 04 21 */	bctrl
 lbl_8036A958:
 /* 8036A958 003665F8  48 00 23 F5 */	bl "stateReady"
 lbl_8036A95C:
@@ -401,7 +401,7 @@ lbl_8036A95C:
 /* 8036A960 00366600  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036A964 00366604  7C 08 03 A6 */	mtlr r0
 /* 8036A968 00366608  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036A96C 0036660C  4E 80 00 20 */	blr 
+/* 8036A96C 0036660C  4E 80 00 20 */	blr
 
 .global "cbForStoreErrorCode1"
 "cbForStoreErrorCode1":
@@ -427,7 +427,7 @@ lbl_8036A95C:
 /* 8036A9B0 00366650  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036A9B4 00366654  7C 08 03 A6 */	mtlr r0
 /* 8036A9B8 00366658  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036A9BC 0036665C  4E 80 00 20 */	blr 
+/* 8036A9BC 0036665C  4E 80 00 20 */	blr
 
 .global "CategorizeError"
 "CategorizeError":
@@ -436,7 +436,7 @@ lbl_8036A95C:
 /* 8036A9C8 00366668  40 82 00 10 */	bne lbl_8036A9D8
 /* 8036A9CC 0036666C  90 6D C4 08 */	stw r3, "LastError"-_SDA_BASE_(r13)
 /* 8036A9D0 00366670  38 60 00 01 */	li r3, 1
-/* 8036A9D4 00366674  4E 80 00 20 */	blr 
+/* 8036A9D4 00366674  4E 80 00 20 */	blr
 lbl_8036A9D8:
 /* 8036A9D8 00366678  54 64 02 3E */	clrlwi r4, r3, 8
 /* 8036A9DC 0036667C  3C 04 FF FA */	addis r0, r4, 0xfffa
@@ -453,7 +453,7 @@ lbl_8036A9D8:
 /* 8036AA08 003666A8  40 82 00 0C */	bne lbl_8036AA14
 lbl_8036AA0C:
 /* 8036AA0C 003666AC  38 60 00 00 */	li r3, 0
-/* 8036AA10 003666B0  4E 80 00 20 */	blr 
+/* 8036AA10 003666B0  4E 80 00 20 */	blr
 lbl_8036AA14:
 /* 8036AA14 003666B4  28 03 20 00 */	cmplwi r3, 0x2000
 /* 8036AA18 003666B8  40 82 00 30 */	bne lbl_8036AA48
@@ -468,7 +468,7 @@ lbl_8036AA14:
 /* 8036AA3C 003666DC  40 82 00 0C */	bne lbl_8036AA48
 lbl_8036AA40:
 /* 8036AA40 003666E0  38 60 00 00 */	li r3, 0
-/* 8036AA44 003666E4  4E 80 00 20 */	blr 
+/* 8036AA44 003666E4  4E 80 00 20 */	blr
 lbl_8036AA48:
 /* 8036AA48 003666E8  80 6D C3 B8 */	lwz r3, "NumInternalRetry"-_SDA_BASE_(r13)
 /* 8036AA4C 003666EC  38 03 00 01 */	addi r0, r3, 1
@@ -481,11 +481,11 @@ lbl_8036AA48:
 /* 8036AA68 00366708  40 82 00 10 */	bne lbl_8036AA78
 /* 8036AA6C 0036670C  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
 /* 8036AA70 00366710  38 60 00 01 */	li r3, 1
-/* 8036AA74 00366714  4E 80 00 20 */	blr 
+/* 8036AA74 00366714  4E 80 00 20 */	blr
 lbl_8036AA78:
 /* 8036AA78 00366718  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
 /* 8036AA7C 0036671C  38 60 00 02 */	li r3, 2
-/* 8036AA80 00366720  4E 80 00 20 */	blr 
+/* 8036AA80 00366720  4E 80 00 20 */	blr
 lbl_8036AA84:
 /* 8036AA84 00366724  3C 04 FF FD */	addis r0, r4, 0xfffd
 /* 8036AA88 00366728  90 8D C4 08 */	stw r4, "LastError"-_SDA_BASE_(r13)
@@ -497,10 +497,10 @@ lbl_8036AA84:
 /* 8036AAA0 00366740  40 82 00 0C */	bne lbl_8036AAAC
 lbl_8036AAA4:
 /* 8036AAA4 00366744  38 60 00 02 */	li r3, 2
-/* 8036AAA8 00366748  4E 80 00 20 */	blr 
+/* 8036AAA8 00366748  4E 80 00 20 */	blr
 lbl_8036AAAC:
 /* 8036AAAC 0036674C  38 60 00 03 */	li r3, 3
-/* 8036AAB0 00366750  4E 80 00 20 */	blr 
+/* 8036AAB0 00366750  4E 80 00 20 */	blr
 
 .global "cbForStoreErrorCode3"
 "cbForStoreErrorCode3":
@@ -553,7 +553,7 @@ lbl_8036AAE4:
 /* 8036AB68 00366808  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036AB6C 0036680C  7C 08 03 A6 */	mtlr r0
 /* 8036AB70 00366810  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036AB74 00366814  4E 80 00 20 */	blr 
+/* 8036AB74 00366814  4E 80 00 20 */	blr
 
 .global "cbForStateGettingError"
 "cbForStateGettingError":
@@ -677,7 +677,7 @@ lbl_8036ACDC:
 /* 8036AD18 003669B8  7F E4 FB 78 */	mr r4, r31
 /* 8036AD1C 003669BC  38 60 FF FD */	li r3, -3
 /* 8036AD20 003669C0  7D 89 03 A6 */	mtctr r12
-/* 8036AD24 003669C4  4E 80 04 21 */	bctrl 
+/* 8036AD24 003669C4  4E 80 04 21 */	bctrl
 lbl_8036AD28:
 /* 8036AD28 003669C8  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036AD2C 003669CC  2C 0C 00 00 */	cmpwi r12, 0
@@ -685,7 +685,7 @@ lbl_8036AD28:
 /* 8036AD34 003669D4  7F E4 FB 78 */	mr r4, r31
 /* 8036AD38 003669D8  38 60 00 00 */	li r3, 0
 /* 8036AD3C 003669DC  7D 89 03 A6 */	mtctr r12
-/* 8036AD40 003669E0  4E 80 04 21 */	bctrl 
+/* 8036AD40 003669E0  4E 80 04 21 */	bctrl
 lbl_8036AD44:
 /* 8036AD44 003669E4  48 00 20 09 */	bl "stateReady"
 /* 8036AD48 003669E8  38 00 00 01 */	li r0, 1
@@ -755,7 +755,7 @@ lbl_8036AE34:
 /* 8036AE34 00366AD4  81 8D C4 24 */	lwz r12, "LastState"-_SDA_BASE_(r13)
 /* 8036AE38 00366AD8  80 6D C4 20 */	lwz r3, "executing"-_SDA_BASE_(r13)
 /* 8036AE3C 00366ADC  7D 89 03 A6 */	mtctr r12
-/* 8036AE40 00366AE0  4E 80 04 21 */	bctrl 
+/* 8036AE40 00366AE0  4E 80 04 21 */	bctrl
 /* 8036AE44 00366AE4  48 00 02 18 */	b lbl_8036B05C
 lbl_8036AE48:
 /* 8036AE48 00366AE8  3C 1C FF 00 */	addis r0, r28, 0xff00
@@ -905,7 +905,7 @@ lbl_8036B05C:
 /* 8036B06C 00366D0C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8036B070 00366D10  7C 08 03 A6 */	mtlr r0
 /* 8036B074 00366D14  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036B078 00366D18  4E 80 00 20 */	blr 
+/* 8036B078 00366D18  4E 80 00 20 */	blr
 
 .global "cbForUnrecoveredError"
 "cbForUnrecoveredError":
@@ -1036,7 +1036,7 @@ lbl_8036B244:
 /* 8036B24C 00366EEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036B250 00366EF0  7C 08 03 A6 */	mtlr r0
 /* 8036B254 00366EF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036B258 00366EF8  4E 80 00 20 */	blr 
+/* 8036B258 00366EF8  4E 80 00 20 */	blr
 
 .global "cbForUnrecoveredErrorRetry"
 "cbForUnrecoveredErrorRetry":
@@ -1098,7 +1098,7 @@ lbl_8036B31C:
 /* 8036B320 00366FC0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036B324 00366FC4  7C 08 03 A6 */	mtlr r0
 /* 8036B328 00366FC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036B32C 00366FCC  4E 80 00 20 */	blr 
+/* 8036B32C 00366FCC  4E 80 00 20 */	blr
 
 .global "cbForStateGoToRetry"
 "cbForStateGoToRetry":
@@ -1197,7 +1197,7 @@ lbl_8036B444:
 /* 8036B484 00367124  7F E4 FB 78 */	mr r4, r31
 /* 8036B488 00367128  38 60 FF FD */	li r3, -3
 /* 8036B48C 0036712C  7D 89 03 A6 */	mtctr r12
-/* 8036B490 00367130  4E 80 04 21 */	bctrl 
+/* 8036B490 00367130  4E 80 04 21 */	bctrl
 lbl_8036B494:
 /* 8036B494 00367134  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036B498 00367138  2C 0C 00 00 */	cmpwi r12, 0
@@ -1205,7 +1205,7 @@ lbl_8036B494:
 /* 8036B4A0 00367140  7F E4 FB 78 */	mr r4, r31
 /* 8036B4A4 00367144  38 60 00 00 */	li r3, 0
 /* 8036B4A8 00367148  7D 89 03 A6 */	mtctr r12
-/* 8036B4AC 0036714C  4E 80 04 21 */	bctrl 
+/* 8036B4AC 0036714C  4E 80 04 21 */	bctrl
 lbl_8036B4B0:
 /* 8036B4B0 00367150  48 00 18 9D */	bl "stateReady"
 /* 8036B4B4 00367154  38 00 00 01 */	li r0, 1
@@ -1251,7 +1251,7 @@ lbl_8036B544:
 /* 8036B548 003671E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036B54C 003671EC  7C 08 03 A6 */	mtlr r0
 /* 8036B550 003671F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036B554 003671F4  4E 80 00 20 */	blr 
+/* 8036B554 003671F4  4E 80 00 20 */	blr
 
 .global "stateCheckID"
 "stateCheckID":
@@ -1469,7 +1469,7 @@ lbl_8036B874:
 /* 8036B880 00367520  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036B884 00367524  7C 08 03 A6 */	mtlr r0
 /* 8036B888 00367528  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036B88C 0036752C  4E 80 00 20 */	blr 
+/* 8036B88C 0036752C  4E 80 00 20 */	blr
 
 .global "cbForStateReadingTOC"
 "cbForStateReadingTOC":
@@ -1583,7 +1583,7 @@ lbl_8036BA14:
 /* 8036BA20 003676C0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036BA24 003676C4  7C 08 03 A6 */	mtlr r0
 /* 8036BA28 003676C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036BA2C 003676CC  4E 80 00 20 */	blr 
+/* 8036BA2C 003676CC  4E 80 00 20 */	blr
 
 .global "cbForStateReadingPartitionInfo"
 "cbForStateReadingPartitionInfo":
@@ -1783,7 +1783,7 @@ lbl_8036BCC8:
 /* 8036BD04 003679A4  7F 84 E3 78 */	mr r4, r28
 /* 8036BD08 003679A8  38 60 FF FD */	li r3, -3
 /* 8036BD0C 003679AC  7D 89 03 A6 */	mtctr r12
-/* 8036BD10 003679B0  4E 80 04 21 */	bctrl 
+/* 8036BD10 003679B0  4E 80 04 21 */	bctrl
 lbl_8036BD14:
 /* 8036BD14 003679B4  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036BD18 003679B8  2C 0C 00 00 */	cmpwi r12, 0
@@ -1791,7 +1791,7 @@ lbl_8036BD14:
 /* 8036BD20 003679C0  7F 84 E3 78 */	mr r4, r28
 /* 8036BD24 003679C4  38 60 00 00 */	li r3, 0
 /* 8036BD28 003679C8  7D 89 03 A6 */	mtctr r12
-/* 8036BD2C 003679CC  4E 80 04 21 */	bctrl 
+/* 8036BD2C 003679CC  4E 80 04 21 */	bctrl
 lbl_8036BD30:
 /* 8036BD30 003679D0  48 00 10 1D */	bl "stateReady"
 /* 8036BD34 003679D4  38 00 00 01 */	li r0, 1
@@ -1848,7 +1848,7 @@ lbl_8036BDE0:
 /* 8036BDF0 00367A90  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8036BDF4 00367A94  7C 08 03 A6 */	mtlr r0
 /* 8036BDF8 00367A98  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036BDFC 00367A9C  4E 80 00 20 */	blr 
+/* 8036BDFC 00367A9C  4E 80 00 20 */	blr
 
 .global "cbForStateOpenPartition"
 "cbForStateOpenPartition":
@@ -1956,7 +1956,7 @@ lbl_8036BF70:
 /* 8036BF78 00367C18  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036BF7C 00367C1C  7C 08 03 A6 */	mtlr r0
 /* 8036BF80 00367C20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036BF84 00367C24  4E 80 00 20 */	blr 
+/* 8036BF84 00367C24  4E 80 00 20 */	blr
 
 .global "cbForStateOpenPartition2"
 "cbForStateOpenPartition2":
@@ -2021,7 +2021,7 @@ lbl_8036C018:
 /* 8036C060 00367D00  7F E4 FB 78 */	mr r4, r31
 /* 8036C064 00367D04  38 60 FF FD */	li r3, -3
 /* 8036C068 00367D08  7D 89 03 A6 */	mtctr r12
-/* 8036C06C 00367D0C  4E 80 04 21 */	bctrl 
+/* 8036C06C 00367D0C  4E 80 04 21 */	bctrl
 lbl_8036C070:
 /* 8036C070 00367D10  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036C074 00367D14  2C 0C 00 00 */	cmpwi r12, 0
@@ -2029,7 +2029,7 @@ lbl_8036C070:
 /* 8036C07C 00367D1C  7F E4 FB 78 */	mr r4, r31
 /* 8036C080 00367D20  38 60 00 00 */	li r3, 0
 /* 8036C084 00367D24  7D 89 03 A6 */	mtctr r12
-/* 8036C088 00367D28  4E 80 04 21 */	bctrl 
+/* 8036C088 00367D28  4E 80 04 21 */	bctrl
 lbl_8036C08C:
 /* 8036C08C 00367D2C  48 00 0C C1 */	bl "stateReady"
 /* 8036C090 00367D30  38 00 00 01 */	li r0, 1
@@ -2058,7 +2058,7 @@ lbl_8036C0D8:
 /* 8036C0DC 00367D7C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036C0E0 00367D80  7C 08 03 A6 */	mtlr r0
 /* 8036C0E4 00367D84  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C0E8 00367D88  4E 80 00 20 */	blr 
+/* 8036C0E8 00367D88  4E 80 00 20 */	blr
 
 .global "cbForStateCheckID1"
 "cbForStateCheckID1":
@@ -2131,7 +2131,7 @@ lbl_8036C19C:
 /* 8036C1E0 00367E80  7F E4 FB 78 */	mr r4, r31
 /* 8036C1E4 00367E84  38 60 FF FD */	li r3, -3
 /* 8036C1E8 00367E88  7D 89 03 A6 */	mtctr r12
-/* 8036C1EC 00367E8C  4E 80 04 21 */	bctrl 
+/* 8036C1EC 00367E8C  4E 80 04 21 */	bctrl
 lbl_8036C1F0:
 /* 8036C1F0 00367E90  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036C1F4 00367E94  2C 0C 00 00 */	cmpwi r12, 0
@@ -2139,7 +2139,7 @@ lbl_8036C1F0:
 /* 8036C1FC 00367E9C  7F E4 FB 78 */	mr r4, r31
 /* 8036C200 00367EA0  38 60 00 00 */	li r3, 0
 /* 8036C204 00367EA4  7D 89 03 A6 */	mtctr r12
-/* 8036C208 00367EA8  4E 80 04 21 */	bctrl 
+/* 8036C208 00367EA8  4E 80 04 21 */	bctrl
 lbl_8036C20C:
 /* 8036C20C 00367EAC  48 00 0B 41 */	bl "stateReady"
 /* 8036C210 00367EB0  38 00 00 01 */	li r0, 1
@@ -2185,7 +2185,7 @@ lbl_8036C2A0:
 /* 8036C2A4 00367F44  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036C2A8 00367F48  7C 08 03 A6 */	mtlr r0
 /* 8036C2AC 00367F4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C2B0 00367F50  4E 80 00 20 */	blr 
+/* 8036C2B0 00367F50  4E 80 00 20 */	blr
 
 .global "cbForStateCheckID2"
 "cbForStateCheckID2":
@@ -2296,7 +2296,7 @@ lbl_8036C434:
 /* 8036C438 003680D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036C43C 003680DC  7C 08 03 A6 */	mtlr r0
 /* 8036C440 003680E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C444 003680E4  4E 80 00 20 */	blr 
+/* 8036C444 003680E4  4E 80 00 20 */	blr
 
 .global "stateCoverClosed"
 "stateCoverClosed":
@@ -2313,7 +2313,7 @@ lbl_8036C434:
 /* 8036C470 00368110  38 63 65 04 */	addi r3, r3, lbl_80466504@l
 /* 8036C474 00368114  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8036C478 00368118  7C 69 03 A6 */	mtctr r3
-/* 8036C47C 0036811C  4E 80 04 20 */	bctr 
+/* 8036C47C 0036811C  4E 80 04 20 */	bctr
 /* 8036C480 00368120  48 00 24 31 */	bl "__DVDClearWaitingQueue"
 /* 8036C484 00368124  3C 60 80 59 */	lis r3, "DummyCommandBlock"@ha
 /* 8036C488 00368128  80 8D C4 20 */	lwz r4, "executing"-_SDA_BASE_(r13)
@@ -2324,7 +2324,7 @@ lbl_8036C434:
 /* 8036C49C 0036813C  41 82 00 10 */	beq lbl_8036C4AC
 /* 8036C4A0 00368140  38 60 FF FC */	li r3, -4
 /* 8036C4A4 00368144  7D 89 03 A6 */	mtctr r12
-/* 8036C4A8 00368148  4E 80 04 21 */	bctrl 
+/* 8036C4A8 00368148  4E 80 04 21 */	bctrl
 lbl_8036C4AC:
 /* 8036C4AC 0036814C  48 00 08 A1 */	bl "stateReady"
 /* 8036C4B0 00368150  48 00 00 4C */	b lbl_8036C4FC
@@ -2351,7 +2351,7 @@ lbl_8036C4FC:
 /* 8036C4FC 0036819C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036C500 003681A0  7C 08 03 A6 */	mtlr r0
 /* 8036C504 003681A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C508 003681A8  4E 80 00 20 */	blr 
+/* 8036C508 003681A8  4E 80 00 20 */	blr
 
 .global "ResetAlarmHandler"
 "ResetAlarmHandler":
@@ -2464,7 +2464,7 @@ lbl_8036C69C:
 /* 8036C6A4 00368344  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036C6A8 00368348  7C 08 03 A6 */	mtlr r0
 /* 8036C6AC 0036834C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C6B0 00368350  4E 80 00 20 */	blr 
+/* 8036C6B0 00368350  4E 80 00 20 */	blr
 
 .global "cbForStateReset"
 "cbForStateReset":
@@ -2528,7 +2528,7 @@ lbl_8036C784:
 /* 8036C788 00368428  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036C78C 0036842C  7C 08 03 A6 */	mtlr r0
 /* 8036C790 00368430  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C794 00368434  4E 80 00 20 */	blr 
+/* 8036C794 00368434  4E 80 00 20 */	blr
 
 .global "stateDownRotation"
 "stateDownRotation":
@@ -2582,7 +2582,7 @@ lbl_8036C7D0:
 /* 8036C850 003684F0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036C854 003684F4  7C 08 03 A6 */	mtlr r0
 /* 8036C858 003684F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C85C 003684FC  4E 80 00 20 */	blr 
+/* 8036C85C 003684FC  4E 80 00 20 */	blr
 
 .global "cbForStateDownRotation"
 "cbForStateDownRotation":
@@ -2694,7 +2694,7 @@ lbl_8036C9E0:
 /* 8036C9E8 00368688  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036C9EC 0036868C  7C 08 03 A6 */	mtlr r0
 /* 8036C9F0 00368690  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036C9F4 00368694  4E 80 00 20 */	blr 
+/* 8036C9F4 00368694  4E 80 00 20 */	blr
 
 .global "stateCoverClosed_CMD"
 "stateCoverClosed_CMD":
@@ -2750,7 +2750,7 @@ lbl_8036CA30:
 /* 8036CAB8 00368758  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036CABC 0036875C  7C 08 03 A6 */	mtlr r0
 /* 8036CAC0 00368760  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036CAC4 00368764  4E 80 00 20 */	blr 
+/* 8036CAC4 00368764  4E 80 00 20 */	blr
 
 .global "cbForStateCoverClosed"
 "cbForStateCoverClosed":
@@ -2813,7 +2813,7 @@ lbl_8036CB8C:
 /* 8036CB90 00368830  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036CB94 00368834  7C 08 03 A6 */	mtlr r0
 /* 8036CB98 00368838  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036CB9C 0036883C  4E 80 00 20 */	blr 
+/* 8036CB9C 0036883C  4E 80 00 20 */	blr
 
 .global "cbForPrepareCoverRegister"
 "cbForPrepareCoverRegister":
@@ -2924,19 +2924,19 @@ lbl_8036CD14:
 /* 8036CD18 003689B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036CD1C 003689BC  7C 08 03 A6 */	mtlr r0
 /* 8036CD20 003689C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036CD24 003689C4  4E 80 00 20 */	blr 
+/* 8036CD24 003689C4  4E 80 00 20 */	blr
 
 .global "CoverAlarmHandler"
 "CoverAlarmHandler":
 /* 8036CD28 003689C8  80 0D C3 D4 */	lwz r0, "PreparingCover"-_SDA_BASE_(r13)
 /* 8036CD2C 003689CC  2C 00 00 00 */	cmpwi r0, 0
-/* 8036CD30 003689D0  4C 82 00 20 */	bnelr 
+/* 8036CD30 003689D0  4C 82 00 20 */	bnelr
 /* 8036CD34 003689D4  38 00 00 01 */	li r0, 1
 /* 8036CD38 003689D8  3C 60 80 37 */	lis r3, "cbForPrepareCoverRegister"@ha
 /* 8036CD3C 003689DC  90 0D C3 D4 */	stw r0, "PreparingCover"-_SDA_BASE_(r13)
 /* 8036CD40 003689E0  38 63 CB A0 */	addi r3, r3, "cbForPrepareCoverRegister"@l
 /* 8036CD44 003689E4  48 00 39 F4 */	b "DVDLowPrepareCoverRegister"
-/* 8036CD48 003689E8  4E 80 00 20 */	blr 
+/* 8036CD48 003689E8  4E 80 00 20 */	blr
 
 .global "stateReady"
 "stateReady":
@@ -2976,7 +2976,7 @@ lbl_8036CD94:
 /* 8036CDC8 00368A68  41 82 00 10 */	beq lbl_8036CDD8
 /* 8036CDCC 00368A6C  38 60 FF FF */	li r3, -1
 /* 8036CDD0 00368A70  7D 89 03 A6 */	mtctr r12
-/* 8036CDD4 00368A74  4E 80 04 21 */	bctrl 
+/* 8036CDD4 00368A74  4E 80 04 21 */	bctrl
 lbl_8036CDD8:
 /* 8036CDD8 00368A78  4B FF FF 75 */	bl "stateReady"
 /* 8036CDDC 00368A7C  48 00 02 84 */	b lbl_8036D060
@@ -3160,7 +3160,7 @@ lbl_8036D060:
 /* 8036D064 00368D04  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036D068 00368D08  7C 08 03 A6 */	mtlr r0
 /* 8036D06C 00368D0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036D070 00368D10  4E 80 00 20 */	blr 
+/* 8036D070 00368D10  4E 80 00 20 */	blr
 
 .global "stateBusy"
 "stateBusy":
@@ -3239,7 +3239,7 @@ lbl_8036D16C:
 /* 8036D180 00368E20  38 63 65 A0 */	addi r3, r3, lbl_804665A0@l
 /* 8036D184 00368E24  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8036D188 00368E28  7C 69 03 A6 */	mtctr r3
-/* 8036D18C 00368E2C  4E 80 04 20 */	bctr 
+/* 8036D18C 00368E2C  4E 80 04 20 */	bctr
 /* 8036D190 00368E30  38 60 00 00 */	li r3, 0
 /* 8036D194 00368E34  48 00 37 29 */	bl "DVDLowClearCoverInterrupt"
 /* 8036D198 00368E38  38 00 00 20 */	li r0, 0x20
@@ -3263,7 +3263,7 @@ lbl_8036D16C:
 /* 8036D1E0 00368E80  41 82 00 10 */	beq lbl_8036D1F0
 /* 8036D1E4 00368E84  38 60 00 00 */	li r3, 0
 /* 8036D1E8 00368E88  7D 89 03 A6 */	mtctr r12
-/* 8036D1EC 00368E8C  4E 80 04 21 */	bctrl 
+/* 8036D1EC 00368E8C  4E 80 04 21 */	bctrl
 lbl_8036D1F0:
 /* 8036D1F0 00368E90  4B FF FB 5D */	bl "stateReady"
 /* 8036D1F4 00368E94  48 00 03 70 */	b lbl_8036D564
@@ -3391,7 +3391,7 @@ lbl_8036D250:
 /* 8036D3D0 00369070  41 82 00 10 */	beq lbl_8036D3E0
 /* 8036D3D4 00369074  38 60 00 00 */	li r3, 0
 /* 8036D3D8 00369078  7D 89 03 A6 */	mtctr r12
-/* 8036D3DC 0036907C  4E 80 04 21 */	bctrl 
+/* 8036D3DC 0036907C  4E 80 04 21 */	bctrl
 lbl_8036D3E0:
 /* 8036D3E0 00369080  4B FF F9 6D */	bl "stateReady"
 /* 8036D3E4 00369084  48 00 01 80 */	b lbl_8036D564
@@ -3493,14 +3493,14 @@ lbl_8036D54C:
 /* 8036D554 003691F4  7F A3 EB 78 */	mr r3, r29
 /* 8036D558 003691F8  38 84 D5 7C */	addi r4, r4, "cbForStateBusy"@l
 /* 8036D55C 003691FC  7D 89 03 A6 */	mtctr r12
-/* 8036D560 00369200  4E 80 04 21 */	bctrl 
+/* 8036D560 00369200  4E 80 04 21 */	bctrl
 lbl_8036D564:
 /* 8036D564 00369204  39 61 00 20 */	addi r11, r1, 0x20
 /* 8036D568 00369208  48 0A 1E 55 */	bl "_restgpr_26"
 /* 8036D56C 0036920C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036D570 00369210  7C 08 03 A6 */	mtlr r0
 /* 8036D574 00369214  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036D578 00369218  4E 80 00 20 */	blr 
+/* 8036D578 00369218  4E 80 00 20 */	blr
 
 .global "cbForStateBusy"
 "cbForStateBusy":
@@ -3588,7 +3588,7 @@ lbl_8036D664:
 /* 8036D6A4 00369344  7F E4 FB 78 */	mr r4, r31
 /* 8036D6A8 00369348  38 60 FF FD */	li r3, -3
 /* 8036D6AC 0036934C  7D 89 03 A6 */	mtctr r12
-/* 8036D6B0 00369350  4E 80 04 21 */	bctrl 
+/* 8036D6B0 00369350  4E 80 04 21 */	bctrl
 lbl_8036D6B4:
 /* 8036D6B4 00369354  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036D6B8 00369358  2C 0C 00 00 */	cmpwi r12, 0
@@ -3596,7 +3596,7 @@ lbl_8036D6B4:
 /* 8036D6C0 00369360  7F E4 FB 78 */	mr r4, r31
 /* 8036D6C4 00369364  38 60 00 00 */	li r3, 0
 /* 8036D6C8 00369368  7D 89 03 A6 */	mtctr r12
-/* 8036D6CC 0036936C  4E 80 04 21 */	bctrl 
+/* 8036D6CC 0036936C  4E 80 04 21 */	bctrl
 lbl_8036D6D0:
 /* 8036D6D0 00369370  4B FF F6 7D */	bl "stateReady"
 /* 8036D6D4 00369374  38 00 00 01 */	li r0, 1
@@ -3698,7 +3698,7 @@ lbl_8036D7F0:
 /* 8036D82C 003694CC  7F C4 F3 78 */	mr r4, r30
 /* 8036D830 003694D0  38 60 FF FD */	li r3, -3
 /* 8036D834 003694D4  7D 89 03 A6 */	mtctr r12
-/* 8036D838 003694D8  4E 80 04 21 */	bctrl 
+/* 8036D838 003694D8  4E 80 04 21 */	bctrl
 lbl_8036D83C:
 /* 8036D83C 003694DC  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036D840 003694E0  2C 0C 00 00 */	cmpwi r12, 0
@@ -3706,7 +3706,7 @@ lbl_8036D83C:
 /* 8036D848 003694E8  7F C4 F3 78 */	mr r4, r30
 /* 8036D84C 003694EC  38 60 00 00 */	li r3, 0
 /* 8036D850 003694F0  7D 89 03 A6 */	mtctr r12
-/* 8036D854 003694F4  4E 80 04 21 */	bctrl 
+/* 8036D854 003694F4  4E 80 04 21 */	bctrl
 lbl_8036D858:
 /* 8036D858 003694F8  4B FF F4 F5 */	bl "stateReady"
 /* 8036D85C 003694FC  48 00 05 3C */	b lbl_8036DD98
@@ -3734,7 +3734,7 @@ lbl_8036D860:
 /* 8036D8B0 00369550  41 82 00 10 */	beq lbl_8036D8C0
 /* 8036D8B4 00369554  38 60 00 00 */	li r3, 0
 /* 8036D8B8 00369558  7D 89 03 A6 */	mtctr r12
-/* 8036D8BC 0036955C  4E 80 04 21 */	bctrl 
+/* 8036D8BC 0036955C  4E 80 04 21 */	bctrl
 lbl_8036D8C0:
 /* 8036D8C0 00369560  4B FF F4 8D */	bl "stateReady"
 /* 8036D8C4 00369564  48 00 04 D4 */	b lbl_8036DD98
@@ -3758,7 +3758,7 @@ lbl_8036D8C8:
 /* 8036D908 003695A8  7C C4 33 78 */	mr r4, r6
 /* 8036D90C 003695AC  38 60 00 00 */	li r3, 0
 /* 8036D910 003695B0  7D 89 03 A6 */	mtctr r12
-/* 8036D914 003695B4  4E 80 04 21 */	bctrl 
+/* 8036D914 003695B4  4E 80 04 21 */	bctrl
 lbl_8036D918:
 /* 8036D918 003695B8  4B FF F4 35 */	bl "stateReady"
 /* 8036D91C 003695BC  48 00 04 7C */	b lbl_8036DD98
@@ -3780,7 +3780,7 @@ lbl_8036D920:
 /* 8036D958 003695F8  7F C4 F3 78 */	mr r4, r30
 /* 8036D95C 003695FC  38 60 FF FD */	li r3, -3
 /* 8036D960 00369600  7D 89 03 A6 */	mtctr r12
-/* 8036D964 00369604  4E 80 04 21 */	bctrl 
+/* 8036D964 00369604  4E 80 04 21 */	bctrl
 lbl_8036D968:
 /* 8036D968 00369608  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036D96C 0036960C  2C 0C 00 00 */	cmpwi r12, 0
@@ -3788,7 +3788,7 @@ lbl_8036D968:
 /* 8036D974 00369614  7F C4 F3 78 */	mr r4, r30
 /* 8036D978 00369618  38 60 00 00 */	li r3, 0
 /* 8036D97C 0036961C  7D 89 03 A6 */	mtctr r12
-/* 8036D980 00369620  4E 80 04 21 */	bctrl 
+/* 8036D980 00369620  4E 80 04 21 */	bctrl
 lbl_8036D984:
 /* 8036D984 00369624  4B FF F3 C9 */	bl "stateReady"
 /* 8036D988 00369628  38 00 00 01 */	li r0, 1
@@ -3842,7 +3842,7 @@ lbl_8036DA18:
 /* 8036DA38 003696D8  2C 0C 00 00 */	cmpwi r12, 0
 /* 8036DA3C 003696DC  41 82 00 0C */	beq lbl_8036DA48
 /* 8036DA40 003696E0  7D 89 03 A6 */	mtctr r12
-/* 8036DA44 003696E4  4E 80 04 21 */	bctrl 
+/* 8036DA44 003696E4  4E 80 04 21 */	bctrl
 lbl_8036DA48:
 /* 8036DA48 003696E8  4B FF F3 05 */	bl "stateReady"
 /* 8036DA4C 003696EC  48 00 03 4C */	b lbl_8036DD98
@@ -3874,7 +3874,7 @@ lbl_8036DA84:
 /* 8036DAA4 00369744  2C 0C 00 00 */	cmpwi r12, 0
 /* 8036DAA8 00369748  41 82 00 0C */	beq lbl_8036DAB4
 /* 8036DAAC 0036974C  7D 89 03 A6 */	mtctr r12
-/* 8036DAB0 00369750  4E 80 04 21 */	bctrl 
+/* 8036DAB0 00369750  4E 80 04 21 */	bctrl
 lbl_8036DAB4:
 /* 8036DAB4 00369754  4B FF F2 99 */	bl "stateReady"
 /* 8036DAB8 00369758  48 00 02 E0 */	b lbl_8036DD98
@@ -3923,7 +3923,7 @@ lbl_8036DB2C:
 /* 8036DB4C 003697EC  7C 64 1B 78 */	mr r4, r3
 /* 8036DB50 003697F0  80 63 00 20 */	lwz r3, 0x20(r3)
 /* 8036DB54 003697F4  7D 89 03 A6 */	mtctr r12
-/* 8036DB58 003697F8  4E 80 04 21 */	bctrl 
+/* 8036DB58 003697F8  4E 80 04 21 */	bctrl
 lbl_8036DB5C:
 /* 8036DB5C 003697FC  4B FF F1 F1 */	bl "stateReady"
 /* 8036DB60 00369800  48 00 02 38 */	b lbl_8036DD98
@@ -3978,7 +3978,7 @@ lbl_8036DBE8:
 /* 8036DC04 003698A4  2C 0C 00 00 */	cmpwi r12, 0
 /* 8036DC08 003698A8  41 82 00 0C */	beq lbl_8036DC14
 /* 8036DC0C 003698AC  7D 89 03 A6 */	mtctr r12
-/* 8036DC10 003698B0  4E 80 04 21 */	bctrl 
+/* 8036DC10 003698B0  4E 80 04 21 */	bctrl
 lbl_8036DC14:
 /* 8036DC14 003698B4  4B FF F1 39 */	bl "stateReady"
 /* 8036DC18 003698B8  48 00 01 80 */	b lbl_8036DD98
@@ -3994,7 +3994,7 @@ lbl_8036DC1C:
 /* 8036DC3C 003698DC  41 82 00 10 */	beq lbl_8036DC4C
 /* 8036DC40 003698E0  38 60 00 00 */	li r3, 0
 /* 8036DC44 003698E4  7D 89 03 A6 */	mtctr r12
-/* 8036DC48 003698E8  4E 80 04 21 */	bctrl 
+/* 8036DC48 003698E8  4E 80 04 21 */	bctrl
 lbl_8036DC4C:
 /* 8036DC4C 003698EC  4B FF F1 01 */	bl "stateReady"
 /* 8036DC50 003698F0  48 00 01 48 */	b lbl_8036DD98
@@ -4047,7 +4047,7 @@ lbl_8036DCB4:
 /* 8036DD00 003699A0  7F C4 F3 78 */	mr r4, r30
 /* 8036DD04 003699A4  38 60 FF FD */	li r3, -3
 /* 8036DD08 003699A8  7D 89 03 A6 */	mtctr r12
-/* 8036DD0C 003699AC  4E 80 04 21 */	bctrl 
+/* 8036DD0C 003699AC  4E 80 04 21 */	bctrl
 lbl_8036DD10:
 /* 8036DD10 003699B0  81 8D C4 10 */	lwz r12, "CancelCallback"-_SDA_BASE_(r13)
 /* 8036DD14 003699B4  2C 0C 00 00 */	cmpwi r12, 0
@@ -4055,7 +4055,7 @@ lbl_8036DD10:
 /* 8036DD1C 003699BC  7F C4 F3 78 */	mr r4, r30
 /* 8036DD20 003699C0  38 60 00 00 */	li r3, 0
 /* 8036DD24 003699C4  7D 89 03 A6 */	mtctr r12
-/* 8036DD28 003699C8  4E 80 04 21 */	bctrl 
+/* 8036DD28 003699C8  4E 80 04 21 */	bctrl
 lbl_8036DD2C:
 /* 8036DD2C 003699CC  4B FF F0 21 */	bl "stateReady"
 /* 8036DD30 003699D0  38 00 00 01 */	li r0, 1
@@ -4076,7 +4076,7 @@ lbl_8036DD3C:
 /* 8036DD64 00369A04  41 82 00 10 */	beq lbl_8036DD74
 /* 8036DD68 00369A08  80 64 00 20 */	lwz r3, 0x20(r4)
 /* 8036DD6C 00369A0C  7D 89 03 A6 */	mtctr r12
-/* 8036DD70 00369A10  4E 80 04 21 */	bctrl 
+/* 8036DD70 00369A10  4E 80 04 21 */	bctrl
 lbl_8036DD74:
 /* 8036DD74 00369A14  4B FF EF D9 */	bl "stateReady"
 /* 8036DD78 00369A18  48 00 00 20 */	b lbl_8036DD98
@@ -4094,7 +4094,7 @@ lbl_8036DD98:
 /* 8036DDA0 00369A40  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036DDA4 00369A44  7C 08 03 A6 */	mtlr r0
 /* 8036DDA8 00369A48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036DDAC 00369A4C  4E 80 00 20 */	blr 
+/* 8036DDAC 00369A4C  4E 80 00 20 */	blr
 
 .global "DVDReadAbsAsyncPrio"
 "DVDReadAbsAsyncPrio":
@@ -4157,7 +4157,7 @@ lbl_8036DE6C:
 /* 8036DE84 00369B24  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036DE88 00369B28  7C 08 03 A6 */	mtlr r0
 /* 8036DE8C 00369B2C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036DE90 00369B30  4E 80 00 20 */	blr 
+/* 8036DE90 00369B30  4E 80 00 20 */	blr
 
 .global "DVDInquiryAsync"
 "DVDInquiryAsync":
@@ -4217,7 +4217,7 @@ lbl_8036DF48:
 /* 8036DF5C 00369BFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036DF60 00369C00  7C 08 03 A6 */	mtlr r0
 /* 8036DF64 00369C04  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036DF68 00369C08  4E 80 00 20 */	blr 
+/* 8036DF68 00369C08  4E 80 00 20 */	blr
 
 .global "DVDGetCommandBlockStatus"
 "DVDGetCommandBlockStatus":
@@ -4277,7 +4277,7 @@ lbl_8036E00C:
 /* 8036E024 00369CC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036E028 00369CC8  7C 08 03 A6 */	mtlr r0
 /* 8036E02C 00369CCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036E030 00369CD0  4E 80 00 20 */	blr 
+/* 8036E030 00369CD0  4E 80 00 20 */	blr
 
 .global "DVDGetDriveStatus"
 "DVDGetDriveStatus":
@@ -4325,14 +4325,14 @@ lbl_8036E0AC:
 /* 8036E0C0 00369D60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036E0C4 00369D64  7C 08 03 A6 */	mtlr r0
 /* 8036E0C8 00369D68  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E0CC 00369D6C  4E 80 00 20 */	blr 
+/* 8036E0CC 00369D6C  4E 80 00 20 */	blr
 
 .global "DVDSetAutoInvalidation"
 "DVDSetAutoInvalidation":
 /* 8036E0D0 00369D70  7C 60 1B 78 */	mr r0, r3
 /* 8036E0D4 00369D74  80 6D AC 44 */	lwz r3, "autoInvalidation"-_SDA_BASE_(r13)
 /* 8036E0D8 00369D78  90 0D AC 44 */	stw r0, "autoInvalidation"-_SDA_BASE_(r13)
-/* 8036E0DC 00369D7C  4E 80 00 20 */	blr 
+/* 8036E0DC 00369D7C  4E 80 00 20 */	blr
 
 .global "DVDResume"
 "DVDResume":
@@ -4356,7 +4356,7 @@ lbl_8036E114:
 /* 8036E120 00369DC0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036E124 00369DC4  7C 08 03 A6 */	mtlr r0
 /* 8036E128 00369DC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E12C 00369DCC  4E 80 00 20 */	blr 
+/* 8036E12C 00369DCC  4E 80 00 20 */	blr
 
 .global "DVDCancelAsync"
 "DVDCancelAsync":
@@ -4379,14 +4379,14 @@ lbl_8036E114:
 /* 8036E170 00369E10  38 84 66 E0 */	addi r4, r4, lbl_804666E0@l
 /* 8036E174 00369E14  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8036E178 00369E18  7C 89 03 A6 */	mtctr r4
-/* 8036E17C 00369E1C  4E 80 04 20 */	bctr 
+/* 8036E17C 00369E1C  4E 80 04 20 */	bctr
 /* 8036E180 00369E20  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E184 00369E24  41 82 02 D8 */	beq lbl_8036E45C
 /* 8036E188 00369E28  7F CC F3 78 */	mr r12, r30
 /* 8036E18C 00369E2C  7F A4 EB 78 */	mr r4, r29
 /* 8036E190 00369E30  38 60 00 00 */	li r3, 0
 /* 8036E194 00369E34  7D 89 03 A6 */	mtctr r12
-/* 8036E198 00369E38  4E 80 04 21 */	bctrl 
+/* 8036E198 00369E38  4E 80 04 21 */	bctrl
 /* 8036E19C 00369E3C  48 00 02 C0 */	b lbl_8036E45C
 /* 8036E1A0 00369E40  80 0D C3 B0 */	lwz r0, "Canceling"-_SDA_BASE_(r13)
 /* 8036E1A4 00369E44  2C 00 00 00 */	cmpwi r0, 0
@@ -4421,7 +4421,7 @@ lbl_8036E1E8:
 /* 8036E210 00369EB0  7F A4 EB 78 */	mr r4, r29
 /* 8036E214 00369EB4  38 60 FF FD */	li r3, -3
 /* 8036E218 00369EB8  7D 89 03 A6 */	mtctr r12
-/* 8036E21C 00369EBC  4E 80 04 21 */	bctrl 
+/* 8036E21C 00369EBC  4E 80 04 21 */	bctrl
 lbl_8036E220:
 /* 8036E220 00369EC0  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E224 00369EC4  41 82 02 38 */	beq lbl_8036E45C
@@ -4429,7 +4429,7 @@ lbl_8036E220:
 /* 8036E22C 00369ECC  7F A4 EB 78 */	mr r4, r29
 /* 8036E230 00369ED0  38 60 00 00 */	li r3, 0
 /* 8036E234 00369ED4  7D 89 03 A6 */	mtctr r12
-/* 8036E238 00369ED8  4E 80 04 21 */	bctrl 
+/* 8036E238 00369ED8  4E 80 04 21 */	bctrl
 /* 8036E23C 00369EDC  48 00 02 20 */	b lbl_8036E45C
 /* 8036E240 00369EE0  80 1D 00 08 */	lwz r0, 8(r29)
 /* 8036E244 00369EE4  28 00 00 25 */	cmplwi r0, 0x25
@@ -4439,14 +4439,14 @@ lbl_8036E220:
 /* 8036E254 00369EF4  38 63 66 48 */	addi r3, r3, lbl_80466648@l
 /* 8036E258 00369EF8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8036E25C 00369EFC  7C 69 03 A6 */	mtctr r3
-/* 8036E260 00369F00  4E 80 04 20 */	bctr 
+/* 8036E260 00369F00  4E 80 04 20 */	bctr
 /* 8036E264 00369F04  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E268 00369F08  41 82 01 F4 */	beq lbl_8036E45C
 /* 8036E26C 00369F0C  7F CC F3 78 */	mr r12, r30
 /* 8036E270 00369F10  7F A4 EB 78 */	mr r4, r29
 /* 8036E274 00369F14  38 60 00 00 */	li r3, 0
 /* 8036E278 00369F18  7D 89 03 A6 */	mtctr r12
-/* 8036E27C 00369F1C  4E 80 04 21 */	bctrl 
+/* 8036E27C 00369F1C  4E 80 04 21 */	bctrl
 /* 8036E280 00369F20  48 00 01 DC */	b lbl_8036E45C
 /* 8036E284 00369F24  80 0D C6 B0 */	lwz r0, "__OSInIPL"-_SDA_BASE_(r13)
 /* 8036E288 00369F28  2C 00 00 00 */	cmpwi r0, 0
@@ -4462,7 +4462,7 @@ lbl_8036E220:
 /* 8036E2B0 00369F50  7F A4 EB 78 */	mr r4, r29
 /* 8036E2B4 00369F54  38 60 FF FD */	li r3, -3
 /* 8036E2B8 00369F58  7D 89 03 A6 */	mtctr r12
-/* 8036E2BC 00369F5C  4E 80 04 21 */	bctrl 
+/* 8036E2BC 00369F5C  4E 80 04 21 */	bctrl
 lbl_8036E2C0:
 /* 8036E2C0 00369F60  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E2C4 00369F64  41 82 00 18 */	beq lbl_8036E2DC
@@ -4470,7 +4470,7 @@ lbl_8036E2C0:
 /* 8036E2CC 00369F6C  7F A4 EB 78 */	mr r4, r29
 /* 8036E2D0 00369F70  38 60 00 00 */	li r3, 0
 /* 8036E2D4 00369F74  7D 89 03 A6 */	mtctr r12
-/* 8036E2D8 00369F78  4E 80 04 21 */	bctrl 
+/* 8036E2D8 00369F78  4E 80 04 21 */	bctrl
 lbl_8036E2DC:
 /* 8036E2DC 00369F7C  4B FF EA 71 */	bl "stateReady"
 /* 8036E2E0 00369F80  48 00 01 7C */	b lbl_8036E45C
@@ -4547,7 +4547,7 @@ lbl_8036E3B8:
 /* 8036E3D8 0036A078  7F A4 EB 78 */	mr r4, r29
 /* 8036E3DC 0036A07C  38 60 FF FD */	li r3, -3
 /* 8036E3E0 0036A080  7D 89 03 A6 */	mtctr r12
-/* 8036E3E4 0036A084  4E 80 04 21 */	bctrl 
+/* 8036E3E4 0036A084  4E 80 04 21 */	bctrl
 lbl_8036E3E8:
 /* 8036E3E8 0036A088  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E3EC 0036A08C  41 82 00 18 */	beq lbl_8036E404
@@ -4555,7 +4555,7 @@ lbl_8036E3E8:
 /* 8036E3F4 0036A094  7F A4 EB 78 */	mr r4, r29
 /* 8036E3F8 0036A098  38 60 00 00 */	li r3, 0
 /* 8036E3FC 0036A09C  7D 89 03 A6 */	mtctr r12
-/* 8036E400 0036A0A0  4E 80 04 21 */	bctrl 
+/* 8036E400 0036A0A0  4E 80 04 21 */	bctrl
 lbl_8036E404:
 /* 8036E404 0036A0A4  4B FF E9 49 */	bl "stateReady"
 /* 8036E408 0036A0A8  48 00 00 54 */	b lbl_8036E45C
@@ -4570,7 +4570,7 @@ lbl_8036E404:
 /* 8036E42C 0036A0CC  7F A4 EB 78 */	mr r4, r29
 /* 8036E430 0036A0D0  38 60 FF FD */	li r3, -3
 /* 8036E434 0036A0D4  7D 89 03 A6 */	mtctr r12
-/* 8036E438 0036A0D8  4E 80 04 21 */	bctrl 
+/* 8036E438 0036A0D8  4E 80 04 21 */	bctrl
 lbl_8036E43C:
 /* 8036E43C 0036A0DC  2C 1E 00 00 */	cmpwi r30, 0
 /* 8036E440 0036A0E0  41 82 00 18 */	beq lbl_8036E458
@@ -4578,7 +4578,7 @@ lbl_8036E43C:
 /* 8036E448 0036A0E8  7F A4 EB 78 */	mr r4, r29
 /* 8036E44C 0036A0EC  38 60 00 00 */	li r3, 0
 /* 8036E450 0036A0F0  7D 89 03 A6 */	mtctr r12
-/* 8036E454 0036A0F4  4E 80 04 21 */	bctrl 
+/* 8036E454 0036A0F4  4E 80 04 21 */	bctrl
 lbl_8036E458:
 /* 8036E458 0036A0F8  4B FF E8 F5 */	bl "stateReady"
 lbl_8036E45C:
@@ -4592,7 +4592,7 @@ lbl_8036E468:
 /* 8036E474 0036A114  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036E478 0036A118  7C 08 03 A6 */	mtlr r0
 /* 8036E47C 0036A11C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036E480 0036A120  4E 80 00 20 */	blr 
+/* 8036E480 0036A120  4E 80 00 20 */	blr
 
 .global "DVDCancel"
 "DVDCancel":
@@ -4651,7 +4651,7 @@ lbl_8036E538:
 /* 8036E540 0036A1E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036E544 0036A1E4  7C 08 03 A6 */	mtlr r0
 /* 8036E548 0036A1E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E54C 0036A1EC  4E 80 00 20 */	blr 
+/* 8036E54C 0036A1EC  4E 80 00 20 */	blr
 
 .global "cbForCancelSync"
 "cbForCancelSync":
@@ -4661,7 +4661,7 @@ lbl_8036E538:
 .global "__BS2DVDLowCallback"
 "__BS2DVDLowCallback":
 /* 8036E558 0036A1F8  90 6D C3 E0 */	stw r3, "__BS2DVDLowIntType"-_SDA_BASE_(r13)
-/* 8036E55C 0036A1FC  4E 80 00 20 */	blr 
+/* 8036E55C 0036A1FC  4E 80 00 20 */	blr
 
 .global "__DVDGetCoverStatus"
 "__DVDGetCoverStatus":
@@ -4718,7 +4718,7 @@ lbl_8036E614:
 /* 8036E618 0036A2B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036E61C 0036A2BC  7C 08 03 A6 */	mtlr r0
 /* 8036E620 0036A2C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036E624 0036A2C4  4E 80 00 20 */	blr 
+/* 8036E624 0036A2C4  4E 80 00 20 */	blr
 
 .global "__DVDPrepareResetAsync"
 "__DVDPrepareResetAsync":
@@ -4776,7 +4776,7 @@ lbl_8036E6D0:
 /* 8036E6DC 0036A37C  38 60 00 00 */	li r3, 0
 /* 8036E6E0 0036A380  38 80 00 00 */	li r4, 0
 /* 8036E6E4 0036A384  7D 89 03 A6 */	mtctr r12
-/* 8036E6E8 0036A388  4E 80 04 21 */	bctrl 
+/* 8036E6E8 0036A388  4E 80 04 21 */	bctrl
 lbl_8036E6EC:
 /* 8036E6EC 0036A38C  48 07 1D 71 */	bl "__RAS_OSDisableInterrupts_begin"
 /* 8036E6F0 0036A390  38 80 00 00 */	li r4, 0
@@ -4801,13 +4801,13 @@ lbl_8036E720:
 /* 8036E734 0036A3D4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036E738 0036A3D8  7C 08 03 A6 */	mtlr r0
 /* 8036E73C 0036A3DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036E740 0036A3E0  4E 80 00 20 */	blr 
+/* 8036E740 0036A3E0  4E 80 00 20 */	blr
 
 .global "Callback"
 "Callback":
 /* 8036E744 0036A3E4  38 00 00 01 */	li r0, 1
 /* 8036E748 0036A3E8  90 0D C3 E4 */	stw r0, "Prepared"-_SDA_BASE_(r13)
-/* 8036E74C 0036A3EC  4E 80 00 20 */	blr 
+/* 8036E74C 0036A3EC  4E 80 00 20 */	blr
 
 .global "__DVDPrepareReset"
 "__DVDPrepareReset":
@@ -4897,7 +4897,7 @@ lbl_8036E85C:
 /* 8036E874 0036A514  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8036E878 0036A518  7C 08 03 A6 */	mtlr r0
 /* 8036E87C 0036A51C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036E880 0036A520  4E 80 00 20 */	blr 
+/* 8036E880 0036A520  4E 80 00 20 */	blr
 
 .global "__DVDTestAlarm"
 "__DVDTestAlarm":
@@ -4906,40 +4906,180 @@ lbl_8036E85C:
 /* 8036E88C 0036A52C  7C 03 20 40 */	cmplw r3, r4
 /* 8036E890 0036A530  40 82 00 0C */	bne lbl_8036E89C
 /* 8036E894 0036A534  38 60 00 01 */	li r3, 1
-/* 8036E898 0036A538  4E 80 00 20 */	blr 
+/* 8036E898 0036A538  4E 80 00 20 */	blr
 lbl_8036E89C:
 /* 8036E89C 0036A53C  48 00 21 84 */	b "__DVDLowTestAlarm"
-/* 8036E8A0 0036A540  4E 80 00 20 */	blr 
+/* 8036E8A0 0036A540  4E 80 00 20 */	blr
 
 .global "__DVDStopMotorAsync"
 "__DVDStopMotorAsync":
 /* 8036E8A4 0036A544  38 60 00 01 */	li r3, 1
-/* 8036E8A8 0036A548  4E 80 00 20 */	blr 
+/* 8036E8A8 0036A548  4E 80 00 20 */	blr
 
 .global "__DVDRestartMotor"
 "__DVDRestartMotor":
-/* 8036E8AC 0036A54C  4E 80 00 20 */	blr 
+/* 8036E8AC 0036A54C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x462588, 0x48
+	# ROM: 0x462588
+	.asciz "<< RVL_SDK - DVD \trelease build: Apr 24 2007 11:44:29 (0x4199_60831) >>"
+
 .global lbl_804664D0
 lbl_804664D0:
-	.incbin "baserom.dol", 0x4625D0, 0x34
+	# ROM: 0x4625D0
+	.asciz "DVDChangeDisk(): FST in the new disc is too big.   "
+
 .global lbl_80466504
 lbl_80466504:
-	.incbin "baserom.dol", 0x462604, 0x9C
+	# ROM: 0x462604
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4D4 ;# ptr
+	.4byte 0x8036C4D4 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4E0 ;# ptr
+	.4byte 0x8036C4B4 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C4BC ;# ptr
+	.4byte 0x8036C4BC ;# ptr
+	.4byte 0x8036C480 ;# ptr
+	.4byte 0x8036C4BC ;# ptr
+
 .global lbl_804665A0
 lbl_804665A0:
-	.incbin "baserom.dol", 0x4626A0, 0x9C
+	# ROM: 0x4626A0
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D1B4 ;# ptr
+	.4byte 0x8036D2DC ;# ptr
+	.4byte 0x8036D2F8 ;# ptr
+	.4byte 0x8036D1B4 ;# ptr
+	.4byte 0x8036D190 ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D328 ;# ptr
+	.4byte 0x8036D348 ;# ptr
+	.4byte 0x8036D310 ;# ptr
+	.4byte 0x8036D36C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D54C ;# ptr
+	.4byte 0x8036D38C ;# ptr
+	.4byte 0x8036D3A4 ;# ptr
+	.4byte 0x8036D4CC ;# ptr
+	.4byte 0x8036D4F8 ;# ptr
+	.4byte 0x8036D520 ;# ptr
+	.4byte 0x8036D530 ;# ptr
+	.4byte 0x8036D510 ;# ptr
+
 .global "ImmCommand"
 "ImmCommand":
-	.incbin "baserom.dol", 0x46273C, 0xC
+	# ROM: 0x46273C
+	.byte 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+
 .global lbl_80466648
 lbl_80466648:
-	.incbin "baserom.dol", 0x462748, 0x98
+	# ROM: 0x462748
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E284 ;# ptr
+	.4byte 0x8036E284 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E2E4 ;# ptr
+	.4byte 0x8036E264 ;# ptr
+
 .global lbl_804666E0
 lbl_804666E0:
-	.incbin "baserom.dol", 0x4627E0, 0x38
+	# ROM: 0x4627E0
+	.4byte 0x8036E180 ;# ptr
+	.4byte 0x8036E180 ;# ptr
+	.4byte 0x8036E1A0 ;# ptr
+	.4byte 0x8036E1F4 ;# ptr
+	.4byte 0x8036E240 ;# ptr
+	.4byte 0x8036E310 ;# ptr
+	.4byte 0x8036E310 ;# ptr
+	.4byte 0x8036E310 ;# ptr
+	.4byte 0x8036E310 ;# ptr
+	.4byte 0x8036E45C ;# ptr
+	.4byte 0x8036E45C ;# ptr
+	.4byte 0x8036E180 ;# ptr
+	.4byte 0x8036E310 ;# ptr
+	.4byte 0x8036E40C ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "BB2"
@@ -4982,19 +5122,30 @@ lbl_80590004:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__DVDVersion"
 "__DVDVersion":
-	.incbin "baserom.dol", 0x486EA0, 0x4
+	# ROM: 0x486EA0
+	.4byte 0x80466488 ;# ptr
+
 .global "autoInvalidation"
 "autoInvalidation":
-	.incbin "baserom.dol", 0x486EA4, 0x4
+	# ROM: 0x486EA4
+	.4byte 0x00000001
+
 .global "checkOptionalCommand"
 "checkOptionalCommand":
-	.incbin "baserom.dol", 0x486EA8, 0x4
+	# ROM: 0x486EA8
+	.4byte "defaultOptionalCommandChecker" ;# ptr (0x8036A47C)
+
 .global lbl_805D732C
 lbl_805D732C:
-	.incbin "baserom.dol", 0x486EAC, 0x8
+	# ROM: 0x486EAC
+	.asciz "dvd.c"
+	.byte 0x00, 0x00
+
 .global "DmaCommand"
 "DmaCommand":
-	.incbin "baserom.dol", 0x486EB4, 0x4
+	# ROM: 0x486EB4
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "CommandInfoCounter"

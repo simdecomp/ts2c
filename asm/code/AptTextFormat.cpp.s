@@ -34,7 +34,7 @@ lbl_8032A57C:
 /* 8032A598 00326238  38 63 A5 10 */	addi r3, r3, lbl_8045A510@l
 /* 8032A59C 0032623C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8032A5A0 00326240  7C 69 03 A6 */	mtctr r3
-/* 8032A5A4 00326244  4E 80 04 20 */	bctr 
+/* 8032A5A4 00326244  4E 80 04 20 */	bctr
 /* 8032A5A8 00326248  4B FD 43 2D */	bl "Create__9AptStringFv"
 /* 8032A5AC 0032624C  80 1D 00 30 */	lwz r0, 0x30(r29)
 /* 8032A5B0 00326250  7C 7F 1B 78 */	mr r31, r3
@@ -194,7 +194,7 @@ lbl_8032A7B8:
 /* 8032A7C4 00326464  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032A7C8 00326468  7C 08 03 A6 */	mtlr r0
 /* 8032A7CC 0032646C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032A7D0 00326470  4E 80 00 20 */	blr 
+/* 8032A7D0 00326470  4E 80 00 20 */	blr
 
 .global "objectMemberSet__13AptTextFormatFP8AptValuePC9EAStringCP8AptValue"
 "objectMemberSet__13AptTextFormatFP8AptValuePC9EAStringCP8AptValue":
@@ -231,7 +231,7 @@ lbl_8032A828:
 /* 8032A844 003264E4  38 63 A5 50 */	addi r3, r3, lbl_8045A550@l
 /* 8032A848 003264E8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8032A84C 003264EC  7C 69 03 A6 */	mtctr r3
-/* 8032A850 003264F0  4E 80 04 20 */	bctr 
+/* 8032A850 003264F0  4E 80 04 20 */	bctr
 /* 8032A854 003264F4  38 61 00 14 */	addi r3, r1, 0x14
 /* 8032A858 003264F8  4B FD 2D 55 */	bl "__ct__9EAStringCFv"
 /* 8032A85C 003264FC  7F A3 EB 78 */	mr r3, r29
@@ -456,7 +456,7 @@ lbl_8032AB78:
 /* 8032AB88 00326828  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 8032AB8C 0032682C  7C 08 03 A6 */	mtlr r0
 /* 8032AB90 00326830  38 21 00 30 */	addi r1, r1, 0x30
-/* 8032AB94 00326834  4E 80 00 20 */	blr 
+/* 8032AB94 00326834  4E 80 00 20 */	blr
 
 .global "in_word_set__22TextFormatMembersIndexFPCcUi"
 "in_word_set__22TextFormatMembersIndexFPCcUi":
@@ -501,7 +501,7 @@ lbl_8032AC20:
 /* 8032AC28 003268C8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032AC2C 003268CC  7C 08 03 A6 */	mtlr r0
 /* 8032AC30 003268D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032AC34 003268D4  4E 80 00 20 */	blr 
+/* 8032AC34 003268D4  4E 80 00 20 */	blr
 
 .global "hash__22TextFormatMembersIndexFPCcUi"
 "hash__22TextFormatMembersIndexFPCcUi":
@@ -541,7 +541,7 @@ lbl_8032ACA4:
 /* 8032ACAC 0032694C  7C 03 00 AE */	lbzx r0, r3, r0
 /* 8032ACB0 00326950  7C 64 02 14 */	add r3, r4, r0
 /* 8032ACB4 00326954  38 21 01 10 */	addi r1, r1, 0x110
-/* 8032ACB8 00326958  4E 80 00 20 */	blr 
+/* 8032ACB8 00326958  4E 80 00 20 */	blr
 
 .global "__dt__13AptTextFormatFv"
 "__dt__13AptTextFormatFv":
@@ -572,7 +572,7 @@ lbl_8032AD0C:
 /* 8032AD18 003269B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032AD1C 003269BC  7C 08 03 A6 */	mtlr r0
 /* 8032AD20 003269C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032AD24 003269C4  4E 80 00 20 */	blr 
+/* 8032AD24 003269C4  4E 80 00 20 */	blr
 
 .global "__dl__13AptTextFormatFPvUl"
 "__dl__13AptTextFormatFPvUl":
@@ -585,45 +585,273 @@ lbl_8032AD0C:
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041C470
 lbl_8041C470:
-	.incbin "baserom.dol", 0x418570, 0x100
+	# ROM: 0x418570
+	.asciz "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n%%%"
+	.byte 0x25, 0x25
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25050F0A
+	.4byte 0x00250A05
+	.asciz "%\n%%"
+	.byte 0x25, 0x00, 0x00
+	.4byte 0x25250000
+	.4byte 0x00002525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+	.4byte 0x25252525
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x4564A8, 0x40
+	# ROM: 0x4564A8
+	.asciz "tabStops"
+	.byte 0x00, 0x00, 0x00
+	.asciz "underline"
+	.byte 0x00, 0x00
+	.asciz "rightMargin"
+	.asciz "leftMargin"
+	.byte 0x00
+	.asciz "blockIndent"
+	.4byte 0x00000000
+
 .global "wordlist$6288_8045A3E8"
 "wordlist$6288_8045A3E8":
-	.incbin "baserom.dol", 0x4564E8, 0x128
+	# ROM: 0x4564E8
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DAC ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D6DB0 ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DB8 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6DC0 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x8045A3A8 ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x8045A3B4 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x805D6DC8 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x8045A3C0 ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DD0 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6DD8 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D6DE0 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DE8 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x8045A3CC ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D6DF0 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DF8 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6DA8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045A3D8 ;# ptr
+	.4byte 0x00000002
+
 .global lbl_8045A510
 lbl_8045A510:
-	.incbin "baserom.dol", 0x456610, 0x40
+	# ROM: 0x456610
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A5A8 ;# ptr
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A63C ;# ptr
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A674 ;# ptr
+	.4byte 0x8032A694 ;# ptr
+	.4byte 0x8032A6D0 ;# ptr
+	.4byte 0x8032A6EC ;# ptr
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A724 ;# ptr
+	.4byte 0x8032A740 ;# ptr
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A7B4 ;# ptr
+	.4byte 0x8032A75C ;# ptr
+	.4byte 0x8032A77C ;# ptr
+
 .global lbl_8045A550
 lbl_8045A550:
-	.incbin "baserom.dol", 0x456650, 0x44
+	# ROM: 0x456650
+	.4byte 0x8032AB74 ;# ptr
+	.4byte 0x8032A854 ;# ptr
+	.4byte 0x8032A94C ;# ptr
+	.4byte 0x8032A954 ;# ptr
+	.4byte 0x8032A9D4 ;# ptr
+	.4byte 0x8032A920 ;# ptr
+	.4byte 0x8032A938 ;# ptr
+	.4byte 0x8032A9DC ;# ptr
+	.4byte 0x8032A9F0 ;# ptr
+	.4byte 0x8032AA88 ;# ptr
+	.4byte 0x8032AA90 ;# ptr
+	.4byte 0x8032AAA4 ;# ptr
+	.4byte 0x8032AAB8 ;# ptr
+	.4byte 0x8032AAB8 ;# ptr
+	.4byte 0x8032AB60 ;# ptr
+	.4byte 0x8032AAC0 ;# ptr
+	.4byte 0x8032AB58 ;# ptr
+
 .global "__vt__13AptTextFormat"
 "__vt__13AptTextFormat":
-	.incbin "baserom.dol", 0x456694, 0x44
+	# ROM: 0x456694
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__13AptTextFormatCFP8AptValuePC9EAStringC" ;# ptr (0x8032A530)
+	.4byte "objectMemberSet__13AptTextFormatFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x8032A7D4)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__13AptTextFormatFv" ;# ptr (0x8032ACBC)
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x486928, 0x58
+	# ROM: 0x486928
+	.4byte 0x00000000
+	.4byte 0x75726C00
+	.asciz "size"
+	.byte 0x00, 0x00, 0x00
+	.asciz "target"
+	.byte 0x00
+	.asciz "leading"
+	.asciz "align"
+	.byte 0x00, 0x00
+	.asciz "font"
+	.byte 0x00, 0x00, 0x00
+	.asciz "color"
+	.byte 0x00, 0x00
+	.asciz "indent"
+	.byte 0x00
+	.asciz "bold"
+	.byte 0x00, 0x00, 0x00
+	.asciz "bullet"
+	.byte 0x00
+	.asciz "italic"
+	.byte 0x00
+
 .global lbl_805D6E00
 lbl_805D6E00:
-	.incbin "baserom.dol", 0x486980, 0x8
+	# ROM: 0x486980
+	.asciz "left"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6E08
 lbl_805D6E08:
-	.incbin "baserom.dol", 0x486988, 0x8
+	# ROM: 0x486988
+	.asciz "true"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6E10
 lbl_805D6E10:
-	.incbin "baserom.dol", 0x486990, 0x8
+	# ROM: 0x486990
+	.asciz "center"
+	.byte 0x00
+
 .global lbl_805D6E18
 lbl_805D6E18:
-	.incbin "baserom.dol", 0x486998, 0x8
+	# ROM: 0x486998
+	.asciz "right"
+	.byte 0x00, 0x00
+
 .global lbl_805D6E20
 lbl_805D6E20:
-	.incbin "baserom.dol", 0x4869A0, 0x8
+	# ROM: 0x4869A0
+	.asciz "false"
+	.byte 0x00, 0x00
+
 .global lbl_805D6E28
 lbl_805D6E28:
-	.incbin "baserom.dol", 0x4869A8, 0x8
+	# ROM: 0x4869A8
+	.asciz "none"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB6B8
 lbl_805DB6B8:
-	.incbin "baserom.dol", 0x4899D8, 0x8
+	# ROM: 0x4899D8
+	.4byte 0xBF800000
+	.4byte 0x00000000
+

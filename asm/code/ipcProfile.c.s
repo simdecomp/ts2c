@@ -49,7 +49,7 @@ lbl_803CFCB0:
 /* 803CFD30 003CB9D0  90 66 00 3C */	stw r3, 0x3c(r6)
 /* 803CFD34 003CB9D4  38 C6 00 40 */	addi r6, r6, 0x40
 /* 803CFD38 003CB9D8  42 00 FF 78 */	bdnz lbl_803CFCB0
-/* 803CFD3C 003CB9DC  4E 80 00 20 */	blr 
+/* 803CFD3C 003CB9DC  4E 80 00 20 */	blr
 
 .global "IPCiProfQueueReq"
 "IPCiProfQueueReq":
@@ -80,20 +80,20 @@ lbl_803CFD74:
 /* 803CFD9C 003CBA3C  38 A5 CF B0 */	addi r5, r5, "IpcFdArray"@l
 /* 803CFDA0 003CBA40  7C 66 01 2E */	stwx r3, r6, r0
 /* 803CFDA4 003CBA44  7C 85 01 2E */	stwx r4, r5, r0
-/* 803CFDA8 003CBA48  4E 80 00 20 */	blr 
+/* 803CFDA8 003CBA48  4E 80 00 20 */	blr
 lbl_803CFDAC:
 /* 803CFDAC 003CBA4C  39 08 00 04 */	addi r8, r8, 4
 /* 803CFDB0 003CBA50  39 29 00 04 */	addi r9, r9, 4
 /* 803CFDB4 003CBA54  38 E7 00 01 */	addi r7, r7, 1
 /* 803CFDB8 003CBA58  42 00 FF BC */	bdnz lbl_803CFD74
-/* 803CFDBC 003CBA5C  4E 80 00 20 */	blr 
+/* 803CFDBC 003CBA5C  4E 80 00 20 */	blr
 
 .global "IPCiProfAck"
 "IPCiProfAck":
 /* 803CFDC0 003CBA60  80 6D C6 64 */	lwz r3, "IpcNumUnIssuedReqs"-_SDA_BASE_(r13)
 /* 803CFDC4 003CBA64  38 03 FF FF */	addi r0, r3, -1
 /* 803CFDC8 003CBA68  90 0D C6 64 */	stw r0, "IpcNumUnIssuedReqs"-_SDA_BASE_(r13)
-/* 803CFDCC 003CBA6C  4E 80 00 20 */	blr 
+/* 803CFDCC 003CBA6C  4E 80 00 20 */	blr
 
 .global "IPCiProfReply"
 "IPCiProfReply":
@@ -123,13 +123,13 @@ lbl_803CFDF8:
 /* 803CFE28 003CBAC8  38 00 FF FF */	li r0, -1
 /* 803CFE2C 003CBACC  7C A4 31 2E */	stwx r5, r4, r6
 /* 803CFE30 003CBAD0  7C 03 31 2E */	stwx r0, r3, r6
-/* 803CFE34 003CBAD4  4E 80 00 20 */	blr 
+/* 803CFE34 003CBAD4  4E 80 00 20 */	blr
 lbl_803CFE38:
 /* 803CFE38 003CBAD8  38 C6 00 04 */	addi r6, r6, 4
 /* 803CFE3C 003CBADC  38 E7 00 04 */	addi r7, r7, 4
 /* 803CFE40 003CBAE0  38 A5 00 01 */	addi r5, r5, 1
 /* 803CFE44 003CBAE4  42 00 FF B4 */	bdnz lbl_803CFDF8
-/* 803CFE48 003CBAE8  4E 80 00 20 */	blr 
+/* 803CFE48 003CBAE8  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "IpcFdArray"

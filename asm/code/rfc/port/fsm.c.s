@@ -10,14 +10,14 @@
 /* 803601EC 0035BE8C  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 803601F0 0035BE90  88 03 04 14 */	lbz r0, 0x414(r3)
 /* 803601F4 0035BE94  28 00 00 02 */	cmplwi r0, 2
-/* 803601F8 0035BE98  4D 80 00 20 */	bltlr 
+/* 803601F8 0035BE98  4D 80 00 20 */	bltlr
 /* 803601FC 0035BE9C  3C 60 00 09 */	lis r3, 0x00090001@ha
 /* 80360200 0035BEA0  3C 80 80 46 */	lis r4, lbl_804655D8@ha
 /* 80360204 0035BEA4  7C C5 33 78 */	mr r5, r6
 /* 80360208 0035BEA8  38 63 00 01 */	addi r3, r3, 0x00090001@l
 /* 8036020C 0035BEAC  38 84 55 D8 */	addi r4, r4, lbl_804655D8@l
 /* 80360210 0035BEB0  4B FD E6 00 */	b "LogMsg_1"
-/* 80360214 0035BEB4  4E 80 00 20 */	blr 
+/* 80360214 0035BEB4  4E 80 00 20 */	blr
 lbl_80360218:
 /* 80360218 0035BEB8  88 03 00 68 */	lbz r0, 0x68(r3)
 /* 8036021C 0035BEBC  2C 00 00 03 */	cmpwi r0, 3
@@ -28,11 +28,11 @@ lbl_80360218:
 /* 80360230 0035BED0  40 80 00 28 */	bge lbl_80360258
 /* 80360234 0035BED4  2C 00 00 00 */	cmpwi r0, 0
 /* 80360238 0035BED8  40 80 00 18 */	bge lbl_80360250
-/* 8036023C 0035BEDC  4E 80 00 20 */	blr 
+/* 8036023C 0035BEDC  4E 80 00 20 */	blr
 lbl_80360240:
 /* 80360240 0035BEE0  2C 00 00 05 */	cmpwi r0, 5
 /* 80360244 0035BEE4  41 82 00 20 */	beq lbl_80360264
-/* 80360248 0035BEE8  4C 80 00 20 */	bgelr 
+/* 80360248 0035BEE8  4C 80 00 20 */	bgelr
 /* 8036024C 0035BEEC  48 00 00 14 */	b lbl_80360260
 lbl_80360250:
 /* 80360250 0035BEF0  48 00 00 1C */	b "rfc_port_sm_state_closed"
@@ -46,7 +46,7 @@ lbl_80360260:
 /* 80360260 0035BF00  48 00 06 28 */	b "rfc_port_sm_opened"
 lbl_80360264:
 /* 80360264 0035BF04  48 00 08 10 */	b "rfc_port_sm_disc_wait_ua"
-/* 80360268 0035BF08  4E 80 00 20 */	blr 
+/* 80360268 0035BF08  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_state_closed"
 "rfc_port_sm_state_closed":
@@ -64,7 +64,7 @@ lbl_80360264:
 /* 80360298 0035BF38  38 C6 56 30 */	addi r6, r6, lbl_80465630@l
 /* 8036029C 0035BF3C  7C C6 00 2E */	lwzx r6, r6, r0
 /* 803602A0 0035BF40  7C C9 03 A6 */	mtctr r6
-/* 803602A4 0035BF44  4E 80 04 20 */	bctr 
+/* 803602A4 0035BF44  4E 80 04 20 */	bctr
 /* 803602A8 0035BF48  88 1E 00 0D */	lbz r0, 0xd(r30)
 /* 803602AC 0035BF4C  38 A0 00 02 */	li r5, 2
 /* 803602B0 0035BF50  3D 00 80 36 */	lis r8, "rfc_sec_check_complete"@ha
@@ -144,7 +144,7 @@ lbl_803603C8:
 /* 803603D0 0035C070  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803603D4 0035C074  7C 08 03 A6 */	mtlr r0
 /* 803603D8 0035C078  38 21 00 10 */	addi r1, r1, 0x10
-/* 803603DC 0035C07C  4E 80 00 20 */	blr 
+/* 803603DC 0035C07C  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_sabme_wait_ua"
 "rfc_port_sm_sabme_wait_ua":
@@ -162,7 +162,7 @@ lbl_803603C8:
 /* 8036040C 0035C0AC  38 C6 56 98 */	addi r6, r6, lbl_80465698@l
 /* 80360410 0035C0B0  7C C6 00 2E */	lwzx r6, r6, r0
 /* 80360414 0035C0B4  7C C9 03 A6 */	mtctr r6
-/* 80360418 0035C0B8  4E 80 04 20 */	bctr 
+/* 80360418 0035C0B8  4E 80 04 20 */	bctr
 /* 8036041C 0035C0BC  3C 60 80 58 */	lis r3, "rfc_cb"@ha
 /* 80360420 0035C0C0  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 80360424 0035C0C4  88 03 04 14 */	lbz r0, 0x414(r3)
@@ -252,7 +252,7 @@ lbl_80360564:
 /* 8036056C 0035C20C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80360570 0035C210  7C 08 03 A6 */	mtlr r0
 /* 80360574 0035C214  38 21 00 10 */	addi r1, r1, 0x10
-/* 80360578 0035C218  4E 80 00 20 */	blr 
+/* 80360578 0035C218  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_term_wait_sec_check"
 "rfc_port_sm_term_wait_sec_check":
@@ -272,7 +272,7 @@ lbl_80360564:
 /* 803605B0 0035C250  38 C6 57 30 */	addi r6, r6, lbl_80465730@l
 /* 803605B4 0035C254  7C C6 00 2E */	lwzx r6, r6, r0
 /* 803605B8 0035C258  7C C9 03 A6 */	mtctr r6
-/* 803605BC 0035C25C  4E 80 04 20 */	bctr 
+/* 803605BC 0035C25C  4E 80 04 20 */	bctr
 /* 803605C0 0035C260  88 05 00 00 */	lbz r0, 0(r5)
 /* 803605C4 0035C264  2C 00 00 00 */	cmpwi r0, 0
 /* 803605C8 0035C268  41 82 00 2C */	beq lbl_803605F4
@@ -371,7 +371,7 @@ lbl_80360720:
 /* 80360728 0035C3C8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036072C 0035C3CC  7C 08 03 A6 */	mtlr r0
 /* 80360730 0035C3D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80360734 0035C3D4  4E 80 00 20 */	blr 
+/* 80360734 0035C3D4  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_orig_wait_sec_check"
 "rfc_port_sm_orig_wait_sec_check":
@@ -391,7 +391,7 @@ lbl_80360720:
 /* 8036076C 0035C40C  38 C6 57 D0 */	addi r6, r6, lbl_804657D0@l
 /* 80360770 0035C410  7C C6 00 2E */	lwzx r6, r6, r0
 /* 80360774 0035C414  7C C9 03 A6 */	mtctr r6
-/* 80360778 0035C418  4E 80 04 20 */	bctr 
+/* 80360778 0035C418  4E 80 04 20 */	bctr
 /* 8036077C 0035C41C  88 05 00 00 */	lbz r0, 0(r5)
 /* 80360780 0035C420  2C 00 00 00 */	cmpwi r0, 0
 /* 80360784 0035C424  41 82 00 24 */	beq lbl_803607A8
@@ -462,7 +462,7 @@ lbl_80360870:
 /* 80360878 0035C518  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8036087C 0035C51C  7C 08 03 A6 */	mtlr r0
 /* 80360880 0035C520  38 21 00 10 */	addi r1, r1, 0x10
-/* 80360884 0035C524  4E 80 00 20 */	blr 
+/* 80360884 0035C524  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_opened"
 "rfc_port_sm_opened":
@@ -480,7 +480,7 @@ lbl_80360870:
 /* 803608B4 0035C554  38 C6 58 34 */	addi r6, r6, lbl_80465834@l
 /* 803608B8 0035C558  7C C6 00 2E */	lwzx r6, r6, r0
 /* 803608BC 0035C55C  7C C9 03 A6 */	mtctr r6
-/* 803608C0 0035C560  4E 80 04 20 */	bctr 
+/* 803608C0 0035C560  4E 80 04 20 */	bctr
 /* 803608C4 0035C564  3C 60 80 58 */	lis r3, "rfc_cb"@ha
 /* 803608C8 0035C568  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 803608CC 0035C56C  88 03 04 14 */	lbz r0, 0x414(r3)
@@ -592,7 +592,7 @@ lbl_80360A5C:
 /* 80360A64 0035C704  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80360A68 0035C708  7C 08 03 A6 */	mtlr r0
 /* 80360A6C 0035C70C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80360A70 0035C710  4E 80 00 20 */	blr 
+/* 80360A70 0035C710  4E 80 00 20 */	blr
 
 .global "rfc_port_sm_disc_wait_ua"
 "rfc_port_sm_disc_wait_ua":
@@ -609,7 +609,7 @@ lbl_80360A5C:
 /* 80360A9C 0035C73C  38 E7 58 9C */	addi r7, r7, lbl_8046589C@l
 /* 80360AA0 0035C740  7C E7 00 2E */	lwzx r7, r7, r0
 /* 80360AA4 0035C744  7C E9 03 A6 */	mtctr r7
-/* 80360AA8 0035C748  4E 80 04 20 */	bctr 
+/* 80360AA8 0035C748  4E 80 04 20 */	bctr
 /* 80360AAC 0035C74C  3C 60 80 58 */	lis r3, "rfc_cb"@ha
 /* 80360AB0 0035C750  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 80360AB4 0035C754  88 03 04 14 */	lbz r0, 0x414(r3)
@@ -668,7 +668,7 @@ lbl_80360B7C:
 /* 80360B80 0035C820  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80360B84 0035C824  7C 08 03 A6 */	mtlr r0
 /* 80360B88 0035C828  38 21 00 10 */	addi r1, r1, 0x10
-/* 80360B8C 0035C82C  4E 80 00 20 */	blr 
+/* 80360B8C 0035C82C  4E 80 00 20 */	blr
 
 .global "rfc_process_pn"
 "rfc_process_pn":
@@ -733,7 +733,7 @@ lbl_80360C5C:
 /* 80360C68 0035C908  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80360C6C 0035C90C  7C 08 03 A6 */	mtlr r0
 /* 80360C70 0035C910  38 21 00 20 */	addi r1, r1, 0x20
-/* 80360C74 0035C914  4E 80 00 20 */	blr 
+/* 80360C74 0035C914  4E 80 00 20 */	blr
 
 .global "rfc_process_rpn"
 "rfc_process_rpn":
@@ -943,7 +943,7 @@ lbl_80360F64:
 /* 80360F74 0035CC14  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80360F78 0035CC18  7C 08 03 A6 */	mtlr r0
 /* 80360F7C 0035CC1C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80360F80 0035CC20  4E 80 00 20 */	blr 
+/* 80360F80 0035CC20  4E 80 00 20 */	blr
 
 .global "rfc_process_msc"
 "rfc_process_msc":
@@ -1046,7 +1046,7 @@ lbl_803610D8:
 /* 803610E0 0035CD80  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803610E4 0035CD84  7C 08 03 A6 */	mtlr r0
 /* 803610E8 0035CD88  38 21 00 30 */	addi r1, r1, 0x30
-/* 803610EC 0035CD8C  4E 80 00 20 */	blr 
+/* 803610EC 0035CD8C  4E 80 00 20 */	blr
 
 .global "rfc_process_rls"
 "rfc_process_rls":
@@ -1087,11 +1087,11 @@ lbl_80361164:
 /* 8036116C 0035CE0C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80361170 0035CE10  7C 08 03 A6 */	mtlr r0
 /* 80361174 0035CE14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80361178 0035CE18  4E 80 00 20 */	blr 
+/* 80361178 0035CE18  4E 80 00 20 */	blr
 
 .global "rfc_process_nsc"
 "rfc_process_nsc":
-/* 8036117C 0035CE1C  4E 80 00 20 */	blr 
+/* 8036117C 0035CE1C  4E 80 00 20 */	blr
 
 .global "rfc_process_test_rsp"
 "rfc_process_test_rsp":
@@ -1125,7 +1125,7 @@ lbl_803611D8:
 /* 803611DC 0035CE7C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803611E0 0035CE80  7C 08 03 A6 */	mtlr r0
 /* 803611E4 0035CE84  38 21 00 10 */	addi r1, r1, 0x10
-/* 803611E8 0035CE88  4E 80 00 20 */	blr 
+/* 803611E8 0035CE88  4E 80 00 20 */	blr
 
 .global "rfc_process_fcoff"
 "rfc_process_fcoff":
@@ -1155,7 +1155,7 @@ lbl_8036123C:
 /* 80361240 0035CEE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80361244 0035CEE4  7C 08 03 A6 */	mtlr r0
 /* 80361248 0035CEE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036124C 0035CEEC  4E 80 00 20 */	blr 
+/* 8036124C 0035CEEC  4E 80 00 20 */	blr
 
 .global "rfc_process_l2cap_congestion"
 "rfc_process_l2cap_congestion":
@@ -1195,7 +1195,7 @@ lbl_803612C0:
 /* 803612C8 0035CF68  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803612CC 0035CF6C  7C 08 03 A6 */	mtlr r0
 /* 803612D0 0035CF70  38 21 00 10 */	addi r1, r1, 0x10
-/* 803612D4 0035CF74  4E 80 00 20 */	blr 
+/* 803612D4 0035CF74  4E 80 00 20 */	blr
 
 .global "rfc_set_port_state"
 "rfc_set_port_state":
@@ -1243,48 +1243,174 @@ lbl_80361350:
 lbl_80361364:
 /* 80361364 0035D004  A0 04 00 12 */	lhz r0, 0x12(r4)
 /* 80361368 0035D008  54 00 06 73 */	rlwinm. r0, r0, 0, 0x19, 0x19
-/* 8036136C 0035D00C  4D 82 00 20 */	beqlr 
+/* 8036136C 0035D00C  4D 82 00 20 */	beqlr
 /* 80361370 0035D010  88 04 00 11 */	lbz r0, 0x11(r4)
 /* 80361374 0035D014  98 03 00 08 */	stb r0, 8(r3)
-/* 80361378 0035D018  4E 80 00 20 */	blr 
+/* 80361378 0035D018  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804655D8
 lbl_804655D8:
-	.incbin "baserom.dol", 0x4616D8, 0x14
+	# ROM: 0x4616D8
+	.asciz "NULL port event %d"
+	.byte 0x00
+
 .global lbl_804655EC
 lbl_804655EC:
-	.incbin "baserom.dol", 0x4616EC, 0x20
+	# ROM: 0x4616EC
+	.asciz "Port error state %d event %d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046560C
 lbl_8046560C:
-	.incbin "baserom.dol", 0x46170C, 0x24
+	# ROM: 0x46170C
+	.asciz "Port state closed Event ignored %d"
+	.byte 0x00
+
 .global lbl_80465630
 lbl_80465630:
-	.incbin "baserom.dol", 0x461730, 0x3C
+	# ROM: 0x461730
+	.4byte 0x803602F0 ;# ptr
+	.4byte 0x80360328 ;# ptr
+	.4byte 0x8036032C ;# ptr
+	.4byte 0x80360350 ;# ptr
+	.4byte 0x80360334 ;# ptr
+	.4byte 0x80360364 ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x803602A8 ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x8036039C ;# ptr
+	.4byte 0x803602E0 ;# ptr
+	.4byte 0x803602E4 ;# ptr
+
 .global lbl_8046566C
 lbl_8046566C:
-	.incbin "baserom.dol", 0x46176C, 0x2C
+	# ROM: 0x46176C
+	.asciz "Port state sabme_wait_ua Event ignored %d"
+	.byte 0x00, 0x00
+
 .global lbl_80465698
 lbl_80465698:
-	.incbin "baserom.dol", 0x461798, 0x98
+	# ROM: 0x461798
+	.4byte 0x803604F8 ;# ptr
+	.4byte 0x80360488 ;# ptr
+	.4byte 0x803604AC ;# ptr
+	.4byte 0x803604CC ;# ptr
+	.4byte 0x80360508 ;# ptr
+	.4byte 0x80360514 ;# ptr
+	.4byte 0x80360538 ;# ptr
+	.4byte 0x80360538 ;# ptr
+	.4byte 0x80360538 ;# ptr
+	.4byte 0x8036041C ;# ptr
+	.4byte 0x80360538 ;# ptr
+	.4byte 0x8036041C ;# ptr
+	.4byte 0x8036044C ;# ptr
+	.4byte 0x80360474 ;# ptr
+	.4byte 0x8036047C ;# ptr
+	.asciz "Port error state Term Wait Sec event Data"
+	.byte 0x00, 0x00
+	.asciz "Port state term_wait_sec_check Event ignored %d"
+
 .global lbl_80465730
 lbl_80465730:
-	.incbin "baserom.dol", 0x461830, 0xA0
+	# ROM: 0x461830
+	.4byte 0x80360678 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x8036067C ;# ptr
+	.4byte 0x803606AC ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x80360608 ;# ptr
+	.4byte 0x803606F8 ;# ptr
+	.4byte 0x803606B8 ;# ptr
+	.4byte 0x80360608 ;# ptr
+	.4byte 0x80360634 ;# ptr
+	.4byte 0x8036064C ;# ptr
+	.4byte 0x803605C0 ;# ptr
+	.asciz "Port error state Orig Wait Sec event Data"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "Port state orig_wait_sec_check Event ignored %d"
+
 .global lbl_804657D0
 lbl_804657D0:
-	.incbin "baserom.dol", 0x4618D0, 0x40
+	# ROM: 0x4618D0
+	.4byte 0x803607CC ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x8036083C ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x803607CC ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x803607F8 ;# ptr
+	.4byte 0x80360848 ;# ptr
+	.4byte 0x80360810 ;# ptr
+	.4byte 0x8036077C ;# ptr
+
 .global lbl_80465810
 lbl_80465810:
-	.incbin "baserom.dol", 0x461910, 0x24
+	# ROM: 0x461910
+	.asciz "Port state opened Event ignored %d"
+	.byte 0x00
+
 .global lbl_80465834
 lbl_80465834:
-	.incbin "baserom.dol", 0x461934, 0x3C
+	# ROM: 0x461934
+	.4byte 0x8036099C ;# ptr
+	.4byte 0x80360998 ;# ptr
+	.4byte 0x803609AC ;# ptr
+	.4byte 0x803609C4 ;# ptr
+	.4byte 0x803609E8 ;# ptr
+	.4byte 0x803609F8 ;# ptr
+	.4byte 0x80360A30 ;# ptr
+	.4byte 0x80360A30 ;# ptr
+	.4byte 0x80360A30 ;# ptr
+	.4byte 0x803608C4 ;# ptr
+	.4byte 0x80360A30 ;# ptr
+	.4byte 0x80360A30 ;# ptr
+	.4byte 0x803608F4 ;# ptr
+	.4byte 0x8036091C ;# ptr
+	.4byte 0x80360924 ;# ptr
+
 .global lbl_80465870
 lbl_80465870:
-	.incbin "baserom.dol", 0x461970, 0x2C
+	# ROM: 0x461970
+	.asciz "Port state disc_wait_ua Event ignored %d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046589C
 lbl_8046589C:
-	.incbin "baserom.dol", 0x46199C, 0x3C
+	# ROM: 0x46199C
+	.4byte 0x80360B04 ;# ptr
+	.4byte 0x80360AEC ;# ptr
+	.4byte 0x80360AF8 ;# ptr
+	.4byte 0x80360B18 ;# ptr
+	.4byte 0x80360B2C ;# ptr
+	.4byte 0x80360B48 ;# ptr
+	.4byte 0x80360B50 ;# ptr
+	.4byte 0x80360B50 ;# ptr
+	.4byte 0x80360B50 ;# ptr
+	.4byte 0x80360AAC ;# ptr
+	.4byte 0x80360B50 ;# ptr
+	.4byte 0x80360AAC ;# ptr
+	.4byte 0x80360B50 ;# ptr
+	.4byte 0x80360AD8 ;# ptr
+	.4byte 0x80360AE0 ;# ptr
+
 .global lbl_804658D8
 lbl_804658D8:
-	.incbin "baserom.dol", 0x4619D8, 0x28
+	# ROM: 0x4619D8
+	.asciz "***** MX PN while disconnecting *****"
+	.byte 0x00, 0x00
+

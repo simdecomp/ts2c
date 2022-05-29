@@ -29,7 +29,7 @@ lbl_80341DB4:
 /* 80341DD8 0033DA78  7F 83 E3 78 */	mr r3, r28
 /* 80341DDC 0033DA7C  7D 9F 00 2E */	lwzx r12, r31, r0
 /* 80341DE0 0033DA80  7D 89 03 A6 */	mtctr r12
-/* 80341DE4 0033DA84  4E 80 04 21 */	bctrl 
+/* 80341DE4 0033DA84  4E 80 04 21 */	bctrl
 /* 80341DE8 0033DA88  3B BD 00 01 */	addi r29, r29, 1
 /* 80341DEC 0033DA8C  2C 1D 00 02 */	cmpwi r29, 2
 /* 80341DF0 0033DA90  41 80 FF C4 */	blt lbl_80341DB4
@@ -42,7 +42,7 @@ lbl_80341DF4:
 /* 80341E08 0033DAA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80341E0C 0033DAAC  7C 08 03 A6 */	mtlr r0
 /* 80341E10 0033DAB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341E14 0033DAB4  4E 80 00 20 */	blr 
+/* 80341E14 0033DAB4  4E 80 00 20 */	blr
 
 .global "bta_dm_search_sm_execute"
 "bta_dm_search_sm_execute":
@@ -84,7 +84,7 @@ lbl_80341E7C:
 /* 80341EA0 0033DB40  7F 83 E3 78 */	mr r3, r28
 /* 80341EA4 0033DB44  7D 9F 00 2E */	lwzx r12, r31, r0
 /* 80341EA8 0033DB48  7D 89 03 A6 */	mtctr r12
-/* 80341EAC 0033DB4C  4E 80 04 21 */	bctrl 
+/* 80341EAC 0033DB4C  4E 80 04 21 */	bctrl
 /* 80341EB0 0033DB50  3B BD 00 01 */	addi r29, r29, 1
 /* 80341EB4 0033DB54  2C 1D 00 02 */	cmpwi r29, 2
 /* 80341EB8 0033DB58  41 80 FF C4 */	blt lbl_80341E7C
@@ -97,33 +97,115 @@ lbl_80341EBC:
 /* 80341ED0 0033DB70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80341ED4 0033DB74  7C 08 03 A6 */	mtlr r0
 /* 80341ED8 0033DB78  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341EDC 0033DB7C  4E 80 00 20 */	blr 
+/* 80341EDC 0033DB7C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "bta_dm_action"
 "bta_dm_action":
-	.incbin "baserom.dol", 0x4189D0, 0x34
+	# ROM: 0x4189D0
+	.4byte "bta_dm_enable" ;# ptr (0x8033F5D8)
+	.4byte "bta_dm_disable" ;# ptr (0x8033F6E8)
+	.4byte "bta_dm_set_dev_name" ;# ptr (0x8033F854)
+	.4byte "bta_dm_set_visibility" ;# ptr (0x8033F85C)
+	.4byte "bta_dm_bond" ;# ptr (0x8033F8A4)
+	.4byte "bta_dm_pin_reply" ;# ptr (0x8033F914)
+	.4byte "bta_dm_auth_reply" ;# ptr (0x8033F9B0)
+	.4byte "bta_dm_signal_strength" ;# ptr (0x80340EE8)
+	.4byte "bta_dm_acl_change" ;# ptr (0x80341088)
+	.4byte "bta_dm_pm_btm_status" ;# ptr (0x803427D0)
+	.4byte "bta_dm_pm_timer" ;# ptr (0x803428F0)
+	.4byte "bta_dm_keep_acl" ;# ptr (0x80341820)
+	.4byte "bta_dm_send_hci_reset" ;# ptr (0x803418C4)
+
 .global "bta_dm_st_table"
 "bta_dm_st_table":
-	.incbin "baserom.dol", 0x418A04, 0x2C
+	# ROM: 0x418A04
+	.4byte 0x000D0001
+	.4byte 0x0D00020D
+	.4byte 0x00030D00
+	.4byte 0x070D0008
+	.4byte 0x0D00040D
+	.4byte 0x00050D00
+	.4byte 0x060D0009
+	.4byte 0x0D000A0D
+	.4byte 0x000B0D00
+	.4byte 0x0C0D0000
+	.4byte 0x00000000
+
 .global "bta_dm_search_action"
 "bta_dm_search_action":
-	.incbin "baserom.dol", 0x418A30, 0x48
+	# ROM: 0x418A30
+	.4byte "bta_dm_search_start" ;# ptr (0x8033FA84)
+	.4byte "bta_dm_search_cancel" ;# ptr (0x8033FAE4)
+	.4byte "bta_dm_discover" ;# ptr (0x8033FB68)
+	.4byte "bta_dm_inq_cmpl" ;# ptr (0x8033FC7C)
+	.4byte "bta_dm_rmt_name" ;# ptr (0x8033FEA0)
+	.4byte "bta_dm_sdp_result" ;# ptr (0x80340070)
+	.4byte "bta_dm_search_cmpl" ;# ptr (0x803402D8)
+	.4byte "bta_dm_free_sdp_db" ;# ptr (0x80340414)
+	.4byte "bta_dm_disc_result" ;# ptr (0x803402F0)
+	.4byte "bta_dm_search_result" ;# ptr (0x80340340)
+	.4byte "bta_dm_queue_search" ;# ptr (0x80340458)
+	.4byte "bta_dm_queue_disc" ;# ptr (0x803404A0)
+	.4byte "bta_dm_search_clear_queue" ;# ptr (0x803404E8)
+	.4byte "bta_dm_search_cancel_cmpl" ;# ptr (0x8034052C)
+	.4byte "bta_dm_search_cancel_notify" ;# ptr (0x803405CC)
+	.4byte "bta_dm_search_cancel_transac_cmpl" ;# ptr (0x80340570)
+	.4byte "bta_dm_disc_rmt_name" ;# ptr (0x8034000C)
+	.4byte "bta_dm_cancel_rmt_name" ;# ptr (0x80340ADC)
+
 .global "bta_dm_search_idle_st_table"
 "bta_dm_search_idle_st_table":
-	.incbin "baserom.dol", 0x418A78, 0x1C
+	# ROM: 0x418A78
+	.4byte 0x0012010E
+	.4byte 0x12000212
+	.4byte 0x03121200
+	.4byte 0x12120012
+	.4byte 0x12000712
+	.4byte 0x00121200
+	.4byte 0x12120000
+
 .global "bta_dm_search_search_active_st_table"
 "bta_dm_search_search_active_st_table":
-	.incbin "baserom.dol", 0x418A94, 0x1C
+	# ROM: 0x418A94
+	.4byte 0x12120101
+	.4byte 0x12021212
+	.4byte 0x01031201
+	.4byte 0x04120111
+	.4byte 0x12010512
+	.4byte 0x01061200
+	.4byte 0x09120100
+
 .global "bta_dm_search_search_cancelling_st_table"
 "bta_dm_search_search_cancelling_st_table":
-	.incbin "baserom.dol", 0x418AB0, 0x1C
+	# ROM: 0x418AB0
+	.4byte 0x0A12020C
+	.4byte 0x0E020B12
+	.4byte 0x020D1200
+	.4byte 0x0F0D0012
+	.4byte 0x12020F0D
+	.4byte 0x000D1200
+	.4byte 0x0D120000
+
 .global "bta_dm_search_disc_active_st_table"
 "bta_dm_search_disc_active_st_table":
-	.incbin "baserom.dol", 0x418ACC, 0x1C
+	# ROM: 0x418ACC
+	.4byte 0x1212030E
+	.4byte 0x12031212
+	.4byte 0x03121203
+	.4byte 0x10120311
+	.4byte 0x12030512
+	.4byte 0x03121200
+	.4byte 0x08120300
+
 .global "bta_dm_search_st_tbl"
 "bta_dm_search_st_tbl":
-	.incbin "baserom.dol", 0x418AE8, 0x10
+	# ROM: 0x418AE8
+	.4byte 0x8041C978 ;# ptr
+	.4byte 0x8041C994 ;# ptr
+	.4byte 0x8041C9B0 ;# ptr
+	.4byte 0x8041C9CC ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "bta_dm_search_cb"

@@ -24,7 +24,7 @@ lbl_80336370:
 /* 80336370 00332010  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80336374 00332014  7C 08 03 A6 */	mtlr r0
 /* 80336378 00332018  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033637C 0033201C  4E 80 00 20 */	blr 
+/* 8033637C 0033201C  4E 80 00 20 */	blr
 
 .global "AXQuit"
 "AXQuit":
@@ -46,20 +46,26 @@ lbl_803363B8:
 /* 803363B8 00332058  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803363BC 0033205C  7C 08 03 A6 */	mtlr r0
 /* 803363C0 00332060  38 21 00 10 */	addi r1, r1, 0x10
-/* 803363C4 00332064  4E 80 00 20 */	blr 
+/* 803363C4 00332064  4E 80 00 20 */	blr
 
 .global "AXIsInit"
 "AXIsInit":
 /* 803363C8 00332068  80 6D C1 E8 */	lwz r3, "__init"-_SDA_BASE_(r13)
-/* 803363CC 0033206C  4E 80 00 20 */	blr 
+/* 803363CC 0033206C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x458AB0, 0x48
+	# ROM: 0x458AB0
+	.asciz "<< RVL_SDK - AX \trelease build: Dec 18 2006 15:43:48 (0x4199_60831) >>"
+	.byte 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__AXVersion"
 "__AXVersion":
-	.incbin "baserom.dol", 0x486DC0, 0x8
+	# ROM: 0x486DC0
+	.4byte 0x8045C9B0 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__init"

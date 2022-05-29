@@ -90,7 +90,7 @@ lbl_80344A8C:
 /* 80344A94 00340734  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80344A98 00340738  7C 08 03 A6 */	mtlr r0
 /* 80344A9C 0034073C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80344AA0 00340740  4E 80 00 20 */	blr 
+/* 80344AA0 00340740  4E 80 00 20 */	blr
 
 .global "bta_hh_clean_up_kdev"
 "bta_hh_clean_up_kdev":
@@ -126,7 +126,7 @@ lbl_80344ADC:
 /* 80344B14 003407B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80344B18 003407B8  7C 08 03 A6 */	mtlr r0
 /* 80344B1C 003407BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80344B20 003407C0  4E 80 00 20 */	blr 
+/* 80344B20 003407C0  4E 80 00 20 */	blr
 
 .global "bta_hh_add_device_to_list"
 "bta_hh_add_device_to_list":
@@ -178,7 +178,7 @@ lbl_80344BC8:
 /* 80344BD0 00340870  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80344BD4 00340874  7C 08 03 A6 */	mtlr r0
 /* 80344BD8 00340878  38 21 00 20 */	addi r1, r1, 0x20
-/* 80344BDC 0034087C  4E 80 00 20 */	blr 
+/* 80344BDC 0034087C  4E 80 00 20 */	blr
 
 .global "bta_hh_tod_spt"
 "bta_hh_tod_spt":
@@ -197,7 +197,7 @@ lbl_80344BF4:
 /* 80344C0C 003408AC  88 04 00 01 */	lbz r0, 1(r4)
 /* 80344C10 003408B0  98 03 00 15 */	stb r0, 0x15(r3)
 /* 80344C14 003408B4  38 60 00 01 */	li r3, 1
-/* 80344C18 003408B8  4E 80 00 20 */	blr 
+/* 80344C18 003408B8  4E 80 00 20 */	blr
 lbl_80344C1C:
 /* 80344C1C 003408BC  39 08 00 01 */	addi r8, r8, 1
 lbl_80344C20:
@@ -205,7 +205,7 @@ lbl_80344C20:
 /* 80344C24 003408C4  7C 00 28 40 */	cmplw r0, r5
 /* 80344C28 003408C8  41 80 FF CC */	blt lbl_80344BF4
 /* 80344C2C 003408CC  38 60 00 00 */	li r3, 0
-/* 80344C30 003408D0  4E 80 00 20 */	blr 
+/* 80344C30 003408D0  4E 80 00 20 */	blr
 
 .global "bta_hh_trace_dev_db"
 "bta_hh_trace_dev_db":
@@ -269,12 +269,43 @@ lbl_80344CF8:
 /* 80344D04 003409A4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80344D08 003409A8  7C 08 03 A6 */	mtlr r0
 /* 80344D0C 003409AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80344D10 003409B0  4E 80 00 20 */	blr 
+/* 80344D10 003409B0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80461508
 lbl_80461508:
-	.incbin "baserom.dol", 0x45D608, 0x84
+	# ROM: 0x45D608
+	.asciz "found kdev_cb[%d] hid_handle = %d "
+	.byte 0x00
+	.asciz "in_use ? [%d] kdev[%d].hid_handle = %d state = [%d]"
+	.asciz "bta_hh_find_cb:: index = %d while max = %d"
+	.byte 0x00
+
 .global lbl_8046158C
 lbl_8046158C:
-	.incbin "baserom.dol", 0x45D68C, 0x23C
+	# ROM: 0x45D68C
+	.asciz "subclass = 0x%2x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "bta_hh_parse_keybd_rpt:  (report=%p, report_len=%d) called"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "Alt key pressed"
+	.asciz "Alt key not pressed"
+	.asciz "this_char = %02x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HhParseKeybdRpt:  Cannot interpret scan code                 0x%02x"
+	.asciz "bta_hh_parse_mice_rpt:  bta_keybd_rpt_rcvd(report=%p,                 report_len=%d) called"
+	.asciz "mice button: 0x%2x"
+	.byte 0x00
+	.asciz "mice move: x = %d y = %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "bta_hh_trace_dev_db:: Device DB list********************"
+	.byte 0x00, 0x00, 0x00
+	.asciz "kdev[%d] in_use[%d]  handle[%d] "
+	.byte 0x00, 0x00, 0x00
+	.asciz "\t\t\t attr_mask[%04x] state [%d] sub_class[%02x] index = %d"
+	.byte 0x00, 0x00
+	.asciz "*********************************************************"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

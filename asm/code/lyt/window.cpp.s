@@ -27,7 +27,7 @@ lbl_803969CC:
 /* 803969E0 00392680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803969E4 00392684  7C 08 03 A6 */	mtlr r0
 /* 803969E8 00392688  38 21 00 10 */	addi r1, r1, 0x10
-/* 803969EC 0039268C  4E 80 00 20 */	blr 
+/* 803969EC 0039268C  4E 80 00 20 */	blr
 
 .global "GetLTFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize"
 "GetLTFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize":
@@ -54,7 +54,7 @@ lbl_803969CC:
 /* 80396A40 003926E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80396A44 003926E4  7C 08 03 A6 */	mtlr r0
 /* 80396A48 003926E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80396A4C 003926EC  4E 80 00 20 */	blr 
+/* 80396A4C 003926EC  4E 80 00 20 */	blr
 
 .global "GetLTTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc"
 "GetLTTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc":
@@ -163,15 +163,15 @@ lbl_803969CC:
 /* 80396BE8 00392888  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80396BEC 0039288C  7C 08 03 A6 */	mtlr r0
 /* 80396BF0 00392890  38 21 00 50 */	addi r1, r1, 0x50
-/* 80396BF4 00392894  4E 80 00 20 */	blr 
+/* 80396BF4 00392894  4E 80 00 20 */	blr
 
 .global "__opPCf__Q36nw4hbm4math4VEC2CFv"
 "__opPCf__Q36nw4hbm4math4VEC2CFv":
-/* 80396BF8 00392898  4E 80 00 20 */	blr 
+/* 80396BF8 00392898  4E 80 00 20 */	blr
 
 .global "__opPf__Q36nw4hbm4math4VEC2Fv"
 "__opPf__Q36nw4hbm4math4VEC2Fv":
-/* 80396BFC 0039289C  4E 80 00 20 */	blr 
+/* 80396BFC 0039289C  4E 80 00 20 */	blr
 
 .global "GetRTFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize"
 "GetRTFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize":
@@ -210,7 +210,7 @@ lbl_803969CC:
 /* 80396C80 00392920  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80396C84 00392924  7C 08 03 A6 */	mtlr r0
 /* 80396C88 00392928  38 21 00 20 */	addi r1, r1, 0x20
-/* 80396C8C 0039292C  4E 80 00 20 */	blr 
+/* 80396C8C 0039292C  4E 80 00 20 */	blr
 
 .global "GetRTTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc"
 "GetRTTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc":
@@ -319,7 +319,7 @@ lbl_803969CC:
 /* 80396E28 00392AC8  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80396E2C 00392ACC  7C 08 03 A6 */	mtlr r0
 /* 80396E30 00392AD0  38 21 00 60 */	addi r1, r1, 0x60
-/* 80396E34 00392AD4  4E 80 00 20 */	blr 
+/* 80396E34 00392AD4  4E 80 00 20 */	blr
 
 .global "GetLBFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize"
 "GetLBFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize":
@@ -356,7 +356,7 @@ lbl_803969CC:
 /* 80396EB0 00392B50  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80396EB4 00392B54  7C 08 03 A6 */	mtlr r0
 /* 80396EB8 00392B58  38 21 00 20 */	addi r1, r1, 0x20
-/* 80396EBC 00392B5C  4E 80 00 20 */	blr 
+/* 80396EBC 00392B5C  4E 80 00 20 */	blr
 
 .global "GetLBTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc"
 "GetLBTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc":
@@ -466,7 +466,7 @@ lbl_803969CC:
 /* 8039705C 00392CFC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80397060 00392D00  7C 08 03 A6 */	mtlr r0
 /* 80397064 00392D04  38 21 00 60 */	addi r1, r1, 0x60
-/* 80397068 00392D08  4E 80 00 20 */	blr 
+/* 80397068 00392D08  4E 80 00 20 */	blr
 
 .global "GetRBFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize"
 "GetRBFrameSize__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2PQ36nw4hbm3lyt4SizeRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt15WindowFrameSize":
@@ -507,7 +507,7 @@ lbl_803969CC:
 /* 803970F4 00392D94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803970F8 00392D98  7C 08 03 A6 */	mtlr r0
 /* 803970FC 00392D9C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397100 00392DA0  4E 80 00 20 */	blr 
+/* 80397100 00392DA0  4E 80 00 20 */	blr
 
 .global "GetRBTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc"
 "GetRBTexCoord__24@unnamed@lyt_window_cpp@FPQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4SizeUc":
@@ -617,7 +617,7 @@ lbl_803969CC:
 /* 803972A0 00392F40  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803972A4 00392F44  7C 08 03 A6 */	mtlr r0
 /* 803972A8 00392F48  38 21 00 60 */	addi r1, r1, 0x60
-/* 803972AC 00392F4C  4E 80 00 20 */	blr 
+/* 803972AC 00392F4C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet"
 "__ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet":
@@ -778,7 +778,7 @@ lbl_803974E4:
 /* 803974F0 00393190  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803974F4 00393194  7C 08 03 A6 */	mtlr r0
 /* 803974F8 00393198  38 21 00 30 */	addi r1, r1, 0x30
-/* 803974FC 0039319C  4E 80 00 20 */	blr 
+/* 803974FC 0039319C  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3lyt6Window7ContentFv"
 "__dt__Q46nw4hbm3lyt6Window7ContentFv":
@@ -807,24 +807,24 @@ lbl_80397548:
 /* 80397554 003931F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80397558 003931F8  7C 08 03 A6 */	mtlr r0
 /* 8039755C 003931FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80397560 00393200  4E 80 00 20 */	blr 
+/* 80397560 00393200  4E 80 00 20 */	blr
 
 .global "ConvertOffsToPtr<Q46nw4hbm3lyt3res11WindowFrame>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res11WindowFrame"
 "ConvertOffsToPtr<Q46nw4hbm3lyt3res11WindowFrame>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res11WindowFrame":
 /* 80397564 00393204  7C 63 22 14 */	add r3, r3, r4
-/* 80397568 00393208  4E 80 00 20 */	blr 
+/* 80397568 00393208  4E 80 00 20 */	blr
 
 .global "Min<Uc>__Q36nw4hbm2ut24@unnamed@lyt_window_cpp@FUcUc_Uc"
 "Min<Uc>__Q36nw4hbm2ut24@unnamed@lyt_window_cpp@FUcUc_Uc":
 /* 8039756C 0039320C  7C 03 20 40 */	cmplw r3, r4
-/* 80397570 00393210  4C 81 00 20 */	blelr 
+/* 80397570 00393210  4C 81 00 20 */	blelr
 /* 80397574 00393214  7C 83 23 78 */	mr r3, r4
-/* 80397578 00393218  4E 80 00 20 */	blr 
+/* 80397578 00393218  4E 80 00 20 */	blr
 
 .global "ConvertOffsToPtr<Q46nw4hbm3lyt3res13WindowContent>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res13WindowContent"
 "ConvertOffsToPtr<Q46nw4hbm3lyt3res13WindowContent>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res13WindowContent":
 /* 8039757C 0039321C  7C 63 22 14 */	add r3, r3, r4
-/* 80397580 00393220  4E 80 00 20 */	blr 
+/* 80397580 00393220  4E 80 00 20 */	blr
 
 .global "__as__Q36nw4hbm3lyt13InflationLRTBFRCQ36nw4hbm3lyt13InflationLRTB"
 "__as__Q36nw4hbm3lyt13InflationLRTBFRCQ36nw4hbm3lyt13InflationLRTB":
@@ -836,7 +836,7 @@ lbl_80397548:
 /* 80397598 00393238  D0 43 00 04 */	stfs f2, 4(r3)
 /* 8039759C 0039323C  D0 23 00 08 */	stfs f1, 8(r3)
 /* 803975A0 00393240  D0 03 00 0C */	stfs f0, 0xc(r3)
-/* 803975A4 00393244  4E 80 00 20 */	blr 
+/* 803975A4 00393244  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3lyt6Window7ContentFv"
 "__ct__Q46nw4hbm3lyt6Window7ContentFv":
@@ -859,7 +859,7 @@ lbl_80397548:
 /* 803975E8 00393288  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803975EC 0039328C  7C 08 03 A6 */	mtlr r0
 /* 803975F0 00393290  38 21 00 10 */	addi r1, r1, 0x10
-/* 803975F4 00393294  4E 80 00 20 */	blr 
+/* 803975F4 00393294  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt6WindowFv"
 "__dt__Q36nw4hbm3lyt6WindowFv":
@@ -891,7 +891,7 @@ lbl_80397648:
 /* 80397658 003932F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8039765C 003932FC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80397660 00393300  7D 89 03 A6 */	mtctr r12
-/* 80397664 00393304  4E 80 04 21 */	bctrl 
+/* 80397664 00393304  4E 80 04 21 */	bctrl
 /* 80397668 00393308  80 1C 00 FC */	lwz r0, 0xfc(r28)
 /* 8039766C 0039330C  7C 60 FA 14 */	add r3, r0, r31
 /* 80397670 00393310  80 63 00 04 */	lwz r3, 4(r3)
@@ -916,7 +916,7 @@ lbl_80397694:
 /* 803976B4 00393354  81 83 00 00 */	lwz r12, 0(r3)
 /* 803976B8 00393358  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803976BC 0039335C  7D 89 03 A6 */	mtctr r12
-/* 803976C0 00393360  4E 80 04 21 */	bctrl 
+/* 803976C0 00393360  4E 80 04 21 */	bctrl
 /* 803976C4 00393364  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 803976C8 00393368  4B FF 19 C5 */	bl "FreeMemory__Q36nw4hbm3lyt6LayoutFPv"
 /* 803976CC 0039336C  38 00 00 00 */	li r0, 0
@@ -943,7 +943,7 @@ lbl_80397704:
 /* 80397718 003933B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039771C 003933BC  7C 08 03 A6 */	mtlr r0
 /* 80397720 003933C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397724 003933C4  4E 80 00 20 */	blr 
+/* 80397724 003933C4  4E 80 00 20 */	blr
 
 .global "FindMaterialByName__Q36nw4hbm3lyt6WindowFPCcb"
 "FindMaterialByName__Q36nw4hbm3lyt6WindowFPCcb":
@@ -1008,7 +1008,7 @@ lbl_803977EC:
 /* 803977FC 0039349C  38 A0 00 01 */	li r5, 1
 /* 80397800 003934A0  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80397804 003934A4  7D 89 03 A6 */	mtctr r12
-/* 80397808 003934A8  4E 80 04 21 */	bctrl 
+/* 80397808 003934A8  4E 80 04 21 */	bctrl
 /* 8039780C 003934AC  2C 03 00 00 */	cmpwi r3, 0
 /* 80397810 003934B0  41 82 00 08 */	beq lbl_80397818
 /* 80397814 003934B4  48 00 00 38 */	b lbl_8039784C
@@ -1034,7 +1034,7 @@ lbl_8039784C:
 /* 80397854 003934F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80397858 003934F8  7C 08 03 A6 */	mtlr r0
 /* 8039785C 003934FC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80397860 00393500  4E 80 00 20 */	blr 
+/* 80397860 00393500  4E 80 00 20 */	blr
 
 .global "FindAnimationLink__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform"
 "FindAnimationLink__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform":
@@ -1063,7 +1063,7 @@ lbl_803978A4:
 /* 803978B4 00393554  81 83 00 00 */	lwz r12, 0(r3)
 /* 803978B8 00393558  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 803978BC 0039355C  7D 89 03 A6 */	mtctr r12
-/* 803978C0 00393560  4E 80 04 21 */	bctrl 
+/* 803978C0 00393560  4E 80 04 21 */	bctrl
 /* 803978C4 00393564  2C 03 00 00 */	cmpwi r3, 0
 /* 803978C8 00393568  41 82 00 08 */	beq lbl_803978D0
 /* 803978CC 0039356C  48 00 00 1C */	b lbl_803978E8
@@ -1083,7 +1083,7 @@ lbl_803978E8:
 /* 803978F8 00393598  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803978FC 0039359C  7C 08 03 A6 */	mtlr r0
 /* 80397900 003935A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397904 003935A4  4E 80 00 20 */	blr 
+/* 80397904 003935A4  4E 80 00 20 */	blr
 
 .global "SetAnimationEnable__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransformbb"
 "SetAnimationEnable__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransformbb":
@@ -1108,7 +1108,7 @@ lbl_80397938:
 /* 8039794C 003935EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397950 003935F0  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80397954 003935F4  7D 89 03 A6 */	mtctr r12
-/* 80397958 003935F8  4E 80 04 21 */	bctrl 
+/* 80397958 003935F8  4E 80 04 21 */	bctrl
 /* 8039795C 003935FC  3B FF 00 08 */	addi r31, r31, 8
 /* 80397960 00393600  3B DE 00 01 */	addi r30, r30, 1
 lbl_80397964:
@@ -1125,7 +1125,7 @@ lbl_80397964:
 /* 8039798C 0039362C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80397990 00393630  7C 08 03 A6 */	mtlr r0
 /* 80397994 00393634  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397998 00393638  4E 80 00 20 */	blr 
+/* 80397998 00393638  4E 80 00 20 */	blr
 
 .global "GetVtxColor__Q36nw4hbm3lyt6WindowCFUl"
 "GetVtxColor__Q36nw4hbm3lyt6WindowCFUl":
@@ -1159,7 +1159,7 @@ lbl_803979E4:
 /* 80397A04 003936A4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80397A08 003936A8  7C 08 03 A6 */	mtlr r0
 /* 80397A0C 003936AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397A10 003936B0  4E 80 00 20 */	blr 
+/* 80397A10 003936B0  4E 80 00 20 */	blr
 
 .global "SetVtxColor__Q36nw4hbm3lyt6WindowFUlQ36nw4hbm2ut5Color"
 "SetVtxColor__Q36nw4hbm3lyt6WindowFUlQ36nw4hbm2ut5Color":
@@ -1193,7 +1193,7 @@ lbl_80397A5C:
 /* 80397A7C 0039371C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80397A80 00393720  7C 08 03 A6 */	mtlr r0
 /* 80397A84 00393724  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397A88 00393728  4E 80 00 20 */	blr 
+/* 80397A88 00393728  4E 80 00 20 */	blr
 
 .global "GetVtxColorElement__Q36nw4hbm3lyt6WindowCFUl"
 "GetVtxColorElement__Q36nw4hbm3lyt6WindowCFUl":
@@ -1215,7 +1215,7 @@ lbl_80397A5C:
 /* 80397AB0 00393750  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397AB4 00393754  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 80397AB8 00393758  7D 89 03 A6 */	mtctr r12
-/* 80397ABC 0039375C  4E 80 04 21 */	bctrl 
+/* 80397ABC 0039375C  4E 80 04 21 */	bctrl
 /* 80397AC0 00393760  88 BF 01 00 */	lbz r5, 0x100(r31)
 /* 80397AC4 00393764  7F E4 FB 78 */	mr r4, r31
 /* 80397AC8 00393768  80 DF 00 FC */	lwz r6, 0xfc(r31)
@@ -1243,7 +1243,7 @@ lbl_80397A5C:
 /* 80397B20 003937C0  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 80397B24 003937C4  88 DF 00 CE */	lbz r6, 0xce(r31)
 /* 80397B28 003937C8  7D 89 03 A6 */	mtctr r12
-/* 80397B2C 003937CC  4E 80 04 21 */	bctrl 
+/* 80397B2C 003937CC  4E 80 04 21 */	bctrl
 /* 80397B30 003937D0  88 1F 01 00 */	lbz r0, 0x100(r31)
 /* 80397B34 003937D4  2C 00 00 04 */	cmpwi r0, 4
 /* 80397B38 003937D8  41 82 00 48 */	beq lbl_80397B80
@@ -1264,7 +1264,7 @@ lbl_80397B58:
 /* 80397B6C 0039380C  80 BF 00 FC */	lwz r5, 0xfc(r31)
 /* 80397B70 00393810  88 FF 00 CE */	lbz r7, 0xce(r31)
 /* 80397B74 00393814  7D 89 03 A6 */	mtctr r12
-/* 80397B78 00393818  4E 80 04 21 */	bctrl 
+/* 80397B78 00393818  4E 80 04 21 */	bctrl
 /* 80397B7C 0039381C  48 00 00 50 */	b lbl_80397BCC
 lbl_80397B80:
 /* 80397B80 00393820  81 9F 00 00 */	lwz r12, 0(r31)
@@ -1275,7 +1275,7 @@ lbl_80397B80:
 /* 80397B94 00393834  80 BF 00 FC */	lwz r5, 0xfc(r31)
 /* 80397B98 00393838  88 FF 00 CE */	lbz r7, 0xce(r31)
 /* 80397B9C 0039383C  7D 89 03 A6 */	mtctr r12
-/* 80397BA0 00393840  4E 80 04 21 */	bctrl 
+/* 80397BA0 00393840  4E 80 04 21 */	bctrl
 /* 80397BA4 00393844  48 00 00 28 */	b lbl_80397BCC
 lbl_80397BA8:
 /* 80397BA8 00393848  81 9F 00 00 */	lwz r12, 0(r31)
@@ -1286,13 +1286,13 @@ lbl_80397BA8:
 /* 80397BBC 0039385C  80 BF 00 FC */	lwz r5, 0xfc(r31)
 /* 80397BC0 00393860  88 FF 00 CE */	lbz r7, 0xce(r31)
 /* 80397BC4 00393864  7D 89 03 A6 */	mtctr r12
-/* 80397BC8 00393868  4E 80 04 21 */	bctrl 
+/* 80397BC8 00393868  4E 80 04 21 */	bctrl
 lbl_80397BCC:
 /* 80397BCC 0039386C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80397BD0 00393870  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 80397BD4 00393874  7C 08 03 A6 */	mtlr r0
 /* 80397BD8 00393878  38 21 00 40 */	addi r1, r1, 0x40
-/* 80397BDC 0039387C  4E 80 00 20 */	blr 
+/* 80397BDC 0039387C  4E 80 00 20 */	blr
 
 .global "AnimateSelf__Q36nw4hbm3lyt6WindowFUl"
 "AnimateSelf__Q36nw4hbm3lyt6WindowFUl":
@@ -1323,7 +1323,7 @@ lbl_80397C2C:
 /* 80397C38 003938D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397C3C 003938DC  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80397C40 003938E0  7D 89 03 A6 */	mtctr r12
-/* 80397C44 003938E4  4E 80 04 21 */	bctrl 
+/* 80397C44 003938E4  4E 80 04 21 */	bctrl
 /* 80397C48 003938E8  3B FF 00 08 */	addi r31, r31, 8
 /* 80397C4C 003938EC  3B DE 00 01 */	addi r30, r30, 1
 lbl_80397C50:
@@ -1337,7 +1337,7 @@ lbl_80397C5C:
 /* 80397C68 00393908  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80397C6C 0039390C  7C 08 03 A6 */	mtlr r0
 /* 80397C70 00393910  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397C74 00393914  4E 80 00 20 */	blr 
+/* 80397C74 00393914  4E 80 00 20 */	blr
 
 .global "UnbindAnimationSelf__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform"
 "UnbindAnimationSelf__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform":
@@ -1361,7 +1361,7 @@ lbl_80397CA8:
 /* 80397CB8 00393958  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397CBC 0039395C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80397CC0 00393960  7D 89 03 A6 */	mtctr r12
-/* 80397CC4 00393964  4E 80 04 21 */	bctrl 
+/* 80397CC4 00393964  4E 80 04 21 */	bctrl
 /* 80397CC8 00393968  3B FF 00 08 */	addi r31, r31, 8
 /* 80397CCC 0039396C  3B DE 00 01 */	addi r30, r30, 1
 lbl_80397CD0:
@@ -1378,7 +1378,7 @@ lbl_80397CD0:
 /* 80397CF8 00393998  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80397CFC 0039399C  7C 08 03 A6 */	mtlr r0
 /* 80397D00 003939A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80397D04 003939A4  4E 80 00 20 */	blr 
+/* 80397D04 003939A4  4E 80 00 20 */	blr
 
 .global "DrawContent__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt15WindowFrameSizeUc"
 "DrawContent__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt15WindowFrameSizeUc":
@@ -1400,7 +1400,7 @@ lbl_80397CD0:
 /* 80397D44 003939E4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397D48 003939E8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80397D4C 003939EC  7D 89 03 A6 */	mtctr r12
-/* 80397D50 003939F0  4E 80 04 21 */	bctrl 
+/* 80397D50 003939F0  4E 80 04 21 */	bctrl
 /* 80397D54 003939F4  7C 7C 1B 78 */	mr r28, r3
 /* 80397D58 003939F8  38 78 00 F4 */	addi r3, r24, 0xf4
 /* 80397D5C 003939FC  4B FF B8 71 */	bl "GetSize__Q46nw4hbm3lyt6detail11TexCoordAryCFv"
@@ -1465,7 +1465,7 @@ lbl_80397D84:
 /* 80397E40 00393AE0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80397E44 00393AE4  7C 08 03 A6 */	mtlr r0
 /* 80397E48 00393AE8  38 21 00 40 */	addi r1, r1, 0x40
-/* 80397E4C 00393AEC  4E 80 00 20 */	blr 
+/* 80397E4C 00393AEC  4E 80 00 20 */	blr
 
 .global "DrawFrame__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc"
 "DrawFrame__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc":
@@ -1488,7 +1488,7 @@ lbl_80397D84:
 /* 80397E90 00393B30  81 83 00 00 */	lwz r12, 0(r3)
 /* 80397E94 00393B34  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80397E98 00393B38  7D 89 03 A6 */	mtctr r12
-/* 80397E9C 00393B3C  4E 80 04 21 */	bctrl 
+/* 80397E9C 00393B3C  4E 80 04 21 */	bctrl
 /* 80397EA0 00393B40  7C 7E 1B 78 */	mr r30, r3
 /* 80397EA4 00393B44  38 80 00 01 */	li r4, 1
 /* 80397EA8 00393B48  4B FF 2D F5 */	bl "SetVertexFormat__Q36nw4hbm3lyt6detailFbUc"
@@ -1618,7 +1618,7 @@ lbl_80397D84:
 /* 80398098 00393D38  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8039809C 00393D3C  7C 08 03 A6 */	mtlr r0
 /* 803980A0 00393D40  38 21 00 70 */	addi r1, r1, 0x70
-/* 803980A4 00393D44  4E 80 00 20 */	blr 
+/* 803980A4 00393D44  4E 80 00 20 */	blr
 
 .global "DrawFrame4__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc"
 "DrawFrame4__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc":
@@ -1662,7 +1662,7 @@ lbl_80397D84:
 /* 8039813C 00393DDC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398140 00393DE0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398144 00393DE4  7D 89 03 A6 */	mtctr r12
-/* 80398148 00393DE8  4E 80 04 21 */	bctrl 
+/* 80398148 00393DE8  4E 80 04 21 */	bctrl
 /* 8039814C 00393DEC  7C 78 1B 78 */	mr r24, r3
 /* 80398150 00393DF0  7F 85 E3 78 */	mr r5, r28
 /* 80398154 00393DF4  7F C7 F3 78 */	mr r7, r30
@@ -1699,7 +1699,7 @@ lbl_80397D84:
 /* 803981D0 00393E70  81 83 00 00 */	lwz r12, 0(r3)
 /* 803981D4 00393E74  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803981D8 00393E78  7D 89 03 A6 */	mtctr r12
-/* 803981DC 00393E7C  4E 80 04 21 */	bctrl 
+/* 803981DC 00393E7C  4E 80 04 21 */	bctrl
 /* 803981E0 00393E80  7C 78 1B 78 */	mr r24, r3
 /* 803981E4 00393E84  7F 85 E3 78 */	mr r5, r28
 /* 803981E8 00393E88  7F C7 F3 78 */	mr r7, r30
@@ -1735,7 +1735,7 @@ lbl_80397D84:
 /* 80398260 00393F00  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398264 00393F04  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398268 00393F08  7D 89 03 A6 */	mtctr r12
-/* 8039826C 00393F0C  4E 80 04 21 */	bctrl 
+/* 8039826C 00393F0C  4E 80 04 21 */	bctrl
 /* 80398270 00393F10  7C 78 1B 78 */	mr r24, r3
 /* 80398274 00393F14  7F 85 E3 78 */	mr r5, r28
 /* 80398278 00393F18  7F C7 F3 78 */	mr r7, r30
@@ -1771,7 +1771,7 @@ lbl_80397D84:
 /* 803982F0 00393F90  81 83 00 00 */	lwz r12, 0(r3)
 /* 803982F4 00393F94  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803982F8 00393F98  7D 89 03 A6 */	mtctr r12
-/* 803982FC 00393F9C  4E 80 04 21 */	bctrl 
+/* 803982FC 00393F9C  4E 80 04 21 */	bctrl
 /* 80398300 00393FA0  7C 78 1B 78 */	mr r24, r3
 /* 80398304 00393FA4  7F 85 E3 78 */	mr r5, r28
 /* 80398308 00393FA8  7F C7 F3 78 */	mr r7, r30
@@ -1818,7 +1818,7 @@ lbl_80397D84:
 /* 803983AC 0039404C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803983B0 00394050  7C 08 03 A6 */	mtlr r0
 /* 803983B4 00394054  38 21 00 90 */	addi r1, r1, 0x90
-/* 803983B8 00394058  4E 80 00 20 */	blr 
+/* 803983B8 00394058  4E 80 00 20 */	blr
 
 .global "DrawFrame8__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc"
 "DrawFrame8__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc":
@@ -1860,7 +1860,7 @@ lbl_80397D84:
 /* 80398448 003940E8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8039844C 003940EC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398450 003940F0  7D 89 03 A6 */	mtctr r12
-/* 80398454 003940F4  4E 80 04 21 */	bctrl 
+/* 80398454 003940F4  4E 80 04 21 */	bctrl
 /* 80398458 003940F8  C0 3C 00 00 */	lfs f1, 0(r28)
 /* 8039845C 003940FC  7C 78 1B 78 */	mr r24, r3
 /* 80398460 00394100  C0 5C 00 08 */	lfs f2, 8(r28)
@@ -1898,7 +1898,7 @@ lbl_80397D84:
 /* 803984E0 00394180  81 83 00 00 */	lwz r12, 0(r3)
 /* 803984E4 00394184  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803984E8 00394188  7D 89 03 A6 */	mtctr r12
-/* 803984EC 0039418C  4E 80 04 21 */	bctrl 
+/* 803984EC 0039418C  4E 80 04 21 */	bctrl
 /* 803984F0 00394190  C0 59 00 4C */	lfs f2, 0x4c(r25)
 /* 803984F4 00394194  7C 78 1B 78 */	mr r24, r3
 /* 803984F8 00394198  C0 3C 00 00 */	lfs f1, 0(r28)
@@ -1945,7 +1945,7 @@ lbl_80397D84:
 /* 8039859C 0039423C  81 83 00 00 */	lwz r12, 0(r3)
 /* 803985A0 00394240  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803985A4 00394244  7D 89 03 A6 */	mtctr r12
-/* 803985A8 00394248  4E 80 04 21 */	bctrl 
+/* 803985A8 00394248  4E 80 04 21 */	bctrl
 /* 803985AC 0039424C  C0 3C 00 04 */	lfs f1, 4(r28)
 /* 803985B0 00394250  7C 78 1B 78 */	mr r24, r3
 /* 803985B4 00394254  C0 5C 00 08 */	lfs f2, 8(r28)
@@ -1990,7 +1990,7 @@ lbl_80397D84:
 /* 80398650 003942F0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398654 003942F4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398658 003942F8  7D 89 03 A6 */	mtctr r12
-/* 8039865C 003942FC  4E 80 04 21 */	bctrl 
+/* 8039865C 003942FC  4E 80 04 21 */	bctrl
 /* 80398660 00394300  C0 59 00 50 */	lfs f2, 0x50(r25)
 /* 80398664 00394304  7C 78 1B 78 */	mr r24, r3
 /* 80398668 00394308  C0 3C 00 08 */	lfs f1, 8(r28)
@@ -2041,7 +2041,7 @@ lbl_80397D84:
 /* 8039871C 003943BC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398720 003943C0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398724 003943C4  7D 89 03 A6 */	mtctr r12
-/* 80398728 003943C8  4E 80 04 21 */	bctrl 
+/* 80398728 003943C8  4E 80 04 21 */	bctrl
 /* 8039872C 003943CC  C0 3C 00 04 */	lfs f1, 4(r28)
 /* 80398730 003943D0  7C 78 1B 78 */	mr r24, r3
 /* 80398734 003943D4  C0 5C 00 0C */	lfs f2, 0xc(r28)
@@ -2090,7 +2090,7 @@ lbl_80397D84:
 /* 803987E0 00394480  81 83 00 00 */	lwz r12, 0(r3)
 /* 803987E4 00394484  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803987E8 00394488  7D 89 03 A6 */	mtctr r12
-/* 803987EC 0039448C  4E 80 04 21 */	bctrl 
+/* 803987EC 0039448C  4E 80 04 21 */	bctrl
 /* 803987F0 00394490  C0 59 00 4C */	lfs f2, 0x4c(r25)
 /* 803987F4 00394494  7C 78 1B 78 */	mr r24, r3
 /* 803987F8 00394498  C0 3C 00 00 */	lfs f1, 0(r28)
@@ -2141,7 +2141,7 @@ lbl_80397D84:
 /* 803988AC 0039454C  81 83 00 00 */	lwz r12, 0(r3)
 /* 803988B0 00394550  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803988B4 00394554  7D 89 03 A6 */	mtctr r12
-/* 803988B8 00394558  4E 80 04 21 */	bctrl 
+/* 803988B8 00394558  4E 80 04 21 */	bctrl
 /* 803988BC 0039455C  C0 3C 00 00 */	lfs f1, 0(r28)
 /* 803988C0 00394560  7C 78 1B 78 */	mr r24, r3
 /* 803988C4 00394564  C0 5C 00 0C */	lfs f2, 0xc(r28)
@@ -2186,7 +2186,7 @@ lbl_80397D84:
 /* 80398960 00394600  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398964 00394604  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80398968 00394608  7D 89 03 A6 */	mtctr r12
-/* 8039896C 0039460C  4E 80 04 21 */	bctrl 
+/* 8039896C 0039460C  4E 80 04 21 */	bctrl
 /* 80398970 00394610  C0 59 00 50 */	lfs f2, 0x50(r25)
 /* 80398974 00394614  7C 78 1B 78 */	mr r24, r3
 /* 80398978 00394618  C0 3C 00 08 */	lfs f1, 8(r28)
@@ -2244,7 +2244,7 @@ lbl_80397D84:
 /* 80398A48 003946E8  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80398A4C 003946EC  7C 08 03 A6 */	mtlr r0
 /* 80398A50 003946F0  38 21 01 20 */	addi r1, r1, 0x120
-/* 80398A54 003946F4  4E 80 00 20 */	blr 
+/* 80398A54 003946F4  4E 80 00 20 */	blr
 
 .global "GetFrameSize__Q36nw4hbm3lyt6WindowFUcPCQ46nw4hbm3lyt6Window5Frame"
 "GetFrameSize__Q36nw4hbm3lyt6WindowFUcPCQ46nw4hbm3lyt6Window5Frame":
@@ -2316,7 +2316,7 @@ lbl_80398B24:
 /* 80398B4C 003947EC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80398B50 003947F0  7C 08 03 A6 */	mtlr r0
 /* 80398B54 003947F4  38 21 00 40 */	addi r1, r1, 0x40
-/* 80398B58 003947F8  4E 80 00 20 */	blr 
+/* 80398B58 003947F8  4E 80 00 20 */	blr
 
 .global "GetFrameMaterial__Q36nw4hbm3lyt6WindowCFUl"
 "GetFrameMaterial__Q36nw4hbm3lyt6WindowCFUl":
@@ -2353,19 +2353,19 @@ lbl_80398BC0:
 /* 80398BC8 00394868  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80398BCC 0039486C  7C 08 03 A6 */	mtlr r0
 /* 80398BD0 00394870  38 21 00 10 */	addi r1, r1, 0x10
-/* 80398BD4 00394874  4E 80 00 20 */	blr 
+/* 80398BD4 00394874  4E 80 00 20 */	blr
 
 .global "GetContentMaterial__Q36nw4hbm3lyt6WindowCFv"
 "GetContentMaterial__Q36nw4hbm3lyt6WindowCFv":
 /* 80398BD8 00394878  81 83 00 00 */	lwz r12, 0(r3)
 /* 80398BDC 0039487C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80398BE0 00394880  7D 89 03 A6 */	mtctr r12
-/* 80398BE4 00394884  4E 80 04 20 */	bctr 
+/* 80398BE4 00394884  4E 80 04 20 */	bctr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm3lyt6WindowCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm3lyt6WindowCFv":
 /* 80398BE8 00394888  38 6D C5 78 */	addi r3, r13, "typeInfo__Q36nw4hbm3lyt6Window"-_SDA_BASE_
-/* 80398BEC 0039488C  4E 80 00 20 */	blr 
+/* 80398BEC 0039488C  4E 80 00 20 */	blr
 
 .global "__sinit_lyt_window_cpp"
 "__sinit_lyt_window_cpp":
@@ -2376,22 +2376,94 @@ lbl_80398BC0:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "flipInfos$7609"
 "flipInfos$7609":
-	.incbin "baserom.dol", 0x467CE0, 0x3C
+	# ROM: 0x467CE0
+	.4byte 0x00000100
+	.4byte 0x00010101
+	.4byte 0x00010100
+	.4byte 0x00000101
+	.4byte 0x00010001
+	.4byte 0x00010101
+	.4byte 0x00000100
+	.4byte 0x00010001
+	.4byte 0x00000101
+	.4byte 0x01000100
+	.4byte 0x01010001
+	.4byte 0x01000000
+	.4byte 0x00010100
+	.4byte 0x01010000
+	.4byte 0x00010100
+
 .global lbl_8046BC1C
 lbl_8046BC1C:
-	.incbin "baserom.dol", 0x467D1C, 0x48
+	# ROM: 0x467D1C
+	.asciz "lyt_window.cpp"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion textureFlip < TEXTUREFLIP_MAX"
+	.byte 0x00, 0x00
+
 .global lbl_8046BC64
 lbl_8046BC64:
-	.incbin "baserom.dol", 0x467D64, 0x3C
+	# ROM: 0x467D64
+	.asciz "NW4HBM:Pointer must not be NULL (resBlockSet.pMaterialList)"
+
 .global lbl_8046BCA0
 lbl_8046BCA0:
-	.incbin "baserom.dol", 0x467DA0, 0x30
+	# ROM: 0x467DA0
+	.asciz "NW4HBM:Failed assertion idx < VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00
+
 .global lbl_8046BCD0
 lbl_8046BCD0:
-	.incbin "baserom.dol", 0x467DD0, 0x34
+	# ROM: 0x467DD0
+	.asciz "NW4HBM:Failed assertion frameIdx < WINDOWFRAME_MAX"
+	.byte 0x00
+
 .global "__vt__Q36nw4hbm3lyt6Window"
 "__vt__Q36nw4hbm3lyt6Window":
-	.incbin "baserom.dol", 0x467E04, 0x13C
+	# ROM: 0x467E04
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt6WindowFv" ;# ptr (0x803975F8)
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm3lyt6WindowCFv" ;# ptr (0x80398BE8)
+	.4byte "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803921C0)
+	.4byte "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803926D0)
+	.4byte "DrawSelf__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80397A9C)
+	.4byte "Animate__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x8039283C)
+	.4byte "AnimateSelf__Q36nw4hbm3lyt6WindowFUl" ;# ptr (0x80397BE0)
+	.4byte "GetVtxColor__Q36nw4hbm3lyt6WindowCFUl" ;# ptr (0x8039799C)
+	.4byte "SetVtxColor__Q36nw4hbm3lyt6WindowFUlQ36nw4hbm2ut5Color" ;# ptr (0x80397A14)
+	.4byte "GetColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391ED0)
+	.4byte "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391F54)
+	.4byte "GetVtxColorElement__Q36nw4hbm3lyt6WindowCFUl" ;# ptr (0x80397A8C)
+	.4byte "SetVtxColorElement__Q36nw4hbm3lyt6WindowFUlUc" ;# ptr (0x80397A94)
+	.4byte "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x80391FF4)
+	.4byte "FindMaterialByName__Q36nw4hbm3lyt6WindowFPCcb" ;# ptr (0x80397728)
+	.4byte "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A10)
+	.4byte "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A90)
+	.4byte "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb" ;# ptr (0x80392B54)
+	.4byte "UnbindAnimationSelf__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80397C78)
+	.4byte "FindAnimationLink__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80397864)
+	.4byte "SetAnimationEnable__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransformbb" ;# ptr (0x80397908)
+	.4byte "GetMaterial__Q36nw4hbm3lyt4PaneCFv" ;# ptr (0x80393070)
+	.4byte "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80392E38)
+	.4byte "GetContentMaterial__Q36nw4hbm3lyt6WindowCFv" ;# ptr (0x80398BD8)
+	.4byte "GetFrameMaterial__Q36nw4hbm3lyt6WindowCFUl" ;# ptr (0x80398B5C)
+	.4byte "DrawContent__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt15WindowFrameSizeUc" ;# ptr (0x80397D08)
+	.4byte "DrawFrame__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc" ;# ptr (0x80397E50)
+	.4byte "DrawFrame4__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc" ;# ptr (0x803980A8)
+	.4byte "DrawFrame8__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc" ;# ptr (0x803983BC)
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion idx < ANIMTARGET_VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00, 0x00
+	.asciz "common.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion idx < ANIMTARGET_VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00, 0x00
+	.asciz "common.h"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm3lyt6Window"
@@ -2401,7 +2473,13 @@ lbl_8046BCD0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBA18
 lbl_805DBA18:
-	.incbin "baserom.dol", 0x489D38, 0x8
+	# ROM: 0x489D38
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DBA20
 lbl_805DBA20:
-	.incbin "baserom.dol", 0x489D40, 0x8
+	# ROM: 0x489D40
+	.4byte 0x43300000
+	.4byte 0x80000000
+

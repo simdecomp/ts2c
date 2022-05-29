@@ -94,7 +94,7 @@ lbl_8036711C:
 /* 8036712C 00362DCC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80367130 00362DD0  7C 08 03 A6 */	mtlr r0
 /* 80367134 00362DD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80367138 00362DD8  4E 80 00 20 */	blr 
+/* 80367138 00362DD8  4E 80 00 20 */	blr
 
 .global "process_service_search"
 "process_service_search":
@@ -379,7 +379,7 @@ lbl_80367534:
 /* 8036753C 003631DC  80 01 01 D4 */	lwz r0, 0x1d4(r1)
 /* 80367540 003631E0  7C 08 03 A6 */	mtlr r0
 /* 80367544 003631E4  38 21 01 D0 */	addi r1, r1, 0x1d0
-/* 80367548 003631E8  4E 80 00 20 */	blr 
+/* 80367548 003631E8  4E 80 00 20 */	blr
 
 .global "process_service_attr_req"
 "process_service_attr_req":
@@ -628,7 +628,7 @@ lbl_803678C4:
 /* 803678CC 0036356C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803678D0 00363570  7C 08 03 A6 */	mtlr r0
 /* 803678D4 00363574  38 21 00 70 */	addi r1, r1, 0x70
-/* 803678D8 00363578  4E 80 00 20 */	blr 
+/* 803678D8 00363578  4E 80 00 20 */	blr
 
 .global "process_service_search_attr_req"
 "process_service_search_attr_req":
@@ -920,12 +920,17 @@ lbl_80367CE0:
 /* 80367CE8 00363988  80 01 01 F4 */	lwz r0, 0x1f4(r1)
 /* 80367CEC 0036398C  7C 08 03 A6 */	mtlr r0
 /* 80367CF0 00363990  38 21 01 F0 */	addi r1, r1, 0x1f0
-/* 80367CF4 00363994  4E 80 00 20 */	blr 
+/* 80367CF4 00363994  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80466010
 lbl_80466010:
-	.incbin "baserom.dol", 0x462110, 0x24
+	# ROM: 0x462110
+	.asciz "SDP - server got unknown PDU: 0x%x"
+	.byte 0x00
+
 .global lbl_80466034
 lbl_80466034:
-	.incbin "baserom.dol", 0x462134, 0x1C
+	# ROM: 0x462134
+	.asciz "SDP - no buf for search rsp"
+

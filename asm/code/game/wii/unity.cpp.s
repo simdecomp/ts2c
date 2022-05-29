@@ -5,7 +5,7 @@
 "__ct__14PetsHomeButtonFv":
 /* 80244F5C 00240BFC  38 00 00 00 */	li r0, 0
 /* 80244F60 00240C00  90 03 00 00 */	stw r0, 0(r3)
-/* 80244F64 00240C04  4E 80 00 20 */	blr 
+/* 80244F64 00240C04  4E 80 00 20 */	blr
 
 .global "__dt__14PetsHomeButtonFv"
 "__dt__14PetsHomeButtonFv":
@@ -33,7 +33,7 @@ lbl_80244FAC:
 /* 80244FB8 00240C58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80244FBC 00240C5C  7C 08 03 A6 */	mtlr r0
 /* 80244FC0 00240C60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80244FC4 00240C64  4E 80 00 20 */	blr 
+/* 80244FC4 00240C64  4E 80 00 20 */	blr
 
 .global "Init__14PetsHomeButtonFv"
 "Init__14PetsHomeButtonFv":
@@ -75,7 +75,7 @@ lbl_80245048:
 /* 8024504C 00240CEC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80245050 00240CF0  7C 08 03 A6 */	mtlr r0
 /* 80245054 00240CF4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80245058 00240CF8  4E 80 00 20 */	blr 
+/* 80245058 00240CF8  4E 80 00 20 */	blr
 
 .global "PostRenderRestoreStates__14PetsHomeButtonFv"
 "PostRenderRestoreStates__14PetsHomeButtonFv":
@@ -97,7 +97,7 @@ lbl_80245048:
 /* 80245098 00240D38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024509C 00240D3C  7C 08 03 A6 */	mtlr r0
 /* 802450A0 00240D40  38 21 00 10 */	addi r1, r1, 0x10
-/* 802450A4 00240D44  4E 80 00 20 */	blr 
+/* 802450A4 00240D44  4E 80 00 20 */	blr
 
 .global "PauseAllSounds__Fb"
 "PauseAllSounds__Fb":
@@ -120,28 +120,28 @@ lbl_802450D8:
 /* 802450E4 00240D84  81 83 00 00 */	lwz r12, 0(r3)
 /* 802450E8 00240D88  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802450EC 00240D8C  7D 89 03 A6 */	mtctr r12
-/* 802450F0 00240D90  4E 80 04 21 */	bctrl 
+/* 802450F0 00240D90  4E 80 04 21 */	bctrl
 /* 802450F4 00240D94  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 802450F8 00240D98  81 83 00 00 */	lwz r12, 0(r3)
 /* 802450FC 00240D9C  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 80245100 00240DA0  7D 89 03 A6 */	mtctr r12
-/* 80245104 00240DA4  4E 80 04 21 */	bctrl 
+/* 80245104 00240DA4  4E 80 04 21 */	bctrl
 /* 80245108 00240DA8  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 8024510C 00240DAC  38 80 00 01 */	li r4, 1
 /* 80245110 00240DB0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80245114 00240DB4  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80245118 00240DB8  7D 89 03 A6 */	mtctr r12
-/* 8024511C 00240DBC  4E 80 04 21 */	bctrl 
+/* 8024511C 00240DBC  4E 80 04 21 */	bctrl
 /* 80245120 00240DC0  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 80245124 00240DC4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80245128 00240DC8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8024512C 00240DCC  7D 89 03 A6 */	mtctr r12
-/* 80245130 00240DD0  4E 80 04 21 */	bctrl 
+/* 80245130 00240DD0  4E 80 04 21 */	bctrl
 /* 80245134 00240DD4  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 80245138 00240DD8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8024513C 00240DDC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80245140 00240DE0  7D 89 03 A6 */	mtctr r12
-/* 80245144 00240DE4  4E 80 04 21 */	bctrl 
+/* 80245144 00240DE4  4E 80 04 21 */	bctrl
 lbl_80245148:
 /* 80245148 00240DE8  38 60 00 01 */	li r3, 1
 /* 8024514C 00240DEC  48 07 00 0D */	bl "PauseSound__9ENgcMovieFb"
@@ -165,12 +165,12 @@ lbl_80245180:
 /* 8024518C 00240E2C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80245190 00240E30  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 80245194 00240E34  7D 89 03 A6 */	mtctr r12
-/* 80245198 00240E38  4E 80 04 21 */	bctrl 
+/* 80245198 00240E38  4E 80 04 21 */	bctrl
 /* 8024519C 00240E3C  80 6D BC 20 */	lwz r3, "_pActualAudio"-_SDA_BASE_(r13)
 /* 802451A0 00240E40  81 83 00 00 */	lwz r12, 0(r3)
 /* 802451A4 00240E44  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802451A8 00240E48  7D 89 03 A6 */	mtctr r12
-/* 802451AC 00240E4C  4E 80 04 21 */	bctrl 
+/* 802451AC 00240E4C  4E 80 04 21 */	bctrl
 lbl_802451B0:
 /* 802451B0 00240E50  38 60 00 00 */	li r3, 0
 /* 802451B4 00240E54  48 06 FF A5 */	bl "PauseSound__9ENgcMovieFb"
@@ -178,7 +178,7 @@ lbl_802451B8:
 /* 802451B8 00240E58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802451BC 00240E5C  7C 08 03 A6 */	mtlr r0
 /* 802451C0 00240E60  38 21 00 10 */	addi r1, r1, 0x10
-/* 802451C4 00240E64  4E 80 00 20 */	blr 
+/* 802451C4 00240E64  4E 80 00 20 */	blr
 
 .global "UpdateDraw__14PetsHomeButtonFb"
 "UpdateDraw__14PetsHomeButtonFb":
@@ -234,7 +234,7 @@ lbl_80245274:
 /* 8024527C 00240F1C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80245280 00240F20  7C 08 03 A6 */	mtlr r0
 /* 80245284 00240F24  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245288 00240F28  4E 80 00 20 */	blr 
+/* 80245288 00240F28  4E 80 00 20 */	blr
 
 .global "PostFrameUpdate__14PetsHomeButtonFb"
 "PostFrameUpdate__14PetsHomeButtonFb":
@@ -265,14 +265,14 @@ lbl_802452D0:
 /* 802452E8 00240F88  81 83 00 00 */	lwz r12, 0(r3)
 /* 802452EC 00240F8C  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802452F0 00240F90  7D 89 03 A6 */	mtctr r12
-/* 802452F4 00240F94  4E 80 04 21 */	bctrl 
+/* 802452F4 00240F94  4E 80 04 21 */	bctrl
 /* 802452F8 00240F98  98 7B 00 04 */	stb r3, 4(r27)
 /* 802452FC 00240F9C  38 80 00 01 */	li r4, 1
 /* 80245300 00240FA0  80 6D BC 04 */	lwz r3, "_pCtrlMan"-_SDA_BASE_(r13)
 /* 80245304 00240FA4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80245308 00240FA8  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8024530C 00240FAC  7D 89 03 A6 */	mtctr r12
-/* 80245310 00240FB0  4E 80 04 21 */	bctrl 
+/* 80245310 00240FB0  4E 80 04 21 */	bctrl
 /* 80245314 00240FB4  80 7B 00 00 */	lwz r3, 0(r27)
 /* 80245318 00240FB8  48 00 05 11 */	bl "GetHomeMenuState__13TRCHomeButtonFv"
 /* 8024531C 00240FBC  2C 03 00 01 */	cmpwi r3, 1
@@ -292,13 +292,13 @@ lbl_8024534C:
 /* 80245350 00240FF0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80245354 00240FF4  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80245358 00240FF8  7D 89 03 A6 */	mtctr r12
-/* 8024535C 00240FFC  4E 80 04 21 */	bctrl 
+/* 8024535C 00240FFC  4E 80 04 21 */	bctrl
 /* 80245360 00241000  48 03 C8 79 */	bl "DrawPrevFrameBufferToScreen__Fv"
 /* 80245364 00241004  4B FB 47 05 */	bl "GetCurrentRenderer__Fv"
 /* 80245368 00241008  81 83 00 00 */	lwz r12, 0(r3)
 /* 8024536C 0024100C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80245370 00241010  7D 89 03 A6 */	mtctr r12
-/* 80245374 00241014  4E 80 04 21 */	bctrl 
+/* 80245374 00241014  4E 80 04 21 */	bctrl
 /* 80245378 00241018  7C 7F 1B 78 */	mr r31, r3
 /* 8024537C 0024101C  3B 80 00 00 */	li r28, 0
 /* 80245380 00241020  48 00 00 40 */	b lbl_802453C0
@@ -308,7 +308,7 @@ lbl_80245384:
 /* 8024538C 0024102C  7F 84 E3 78 */	mr r4, r28
 /* 80245390 00241030  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80245394 00241034  7D 89 03 A6 */	mtctr r12
-/* 80245398 00241038  4E 80 04 21 */	bctrl 
+/* 80245398 00241038  4E 80 04 21 */	bctrl
 /* 8024539C 0024103C  80 7B 00 00 */	lwz r3, 0(r27)
 /* 802453A0 00241040  48 00 0F B5 */	bl "Update__13TRCHomeButtonFv"
 /* 802453A4 00241044  4B FB 46 C5 */	bl "GetCurrentRenderer__Fv"
@@ -316,7 +316,7 @@ lbl_80245384:
 /* 802453AC 0024104C  7F 84 E3 78 */	mr r4, r28
 /* 802453B0 00241050  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802453B4 00241054  7D 89 03 A6 */	mtctr r12
-/* 802453B8 00241058  4E 80 04 21 */	bctrl 
+/* 802453B8 00241058  4E 80 04 21 */	bctrl
 /* 802453BC 0024105C  3B 9C 00 01 */	addi r28, r28, 1
 lbl_802453C0:
 /* 802453C0 00241060  7C 1C F8 00 */	cmpw r28, r31
@@ -328,7 +328,7 @@ lbl_802453C0:
 /* 802453D8 00241078  81 83 00 00 */	lwz r12, 0(r3)
 /* 802453DC 0024107C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802453E0 00241080  7D 89 03 A6 */	mtctr r12
-/* 802453E4 00241084  4E 80 04 21 */	bctrl 
+/* 802453E4 00241084  4E 80 04 21 */	bctrl
 lbl_802453E8:
 /* 802453E8 00241088  80 7B 00 00 */	lwz r3, 0(r27)
 /* 802453EC 0024108C  48 00 04 3D */	bl "GetHomeMenuState__13TRCHomeButtonFv"
@@ -364,7 +364,7 @@ lbl_80245450:
 /* 80245458 002410F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8024545C 002410FC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80245460 00241100  7D 89 03 A6 */	mtctr r12
-/* 80245464 00241104  4E 80 04 21 */	bctrl 
+/* 80245464 00241104  4E 80 04 21 */	bctrl
 /* 80245468 00241108  38 60 00 00 */	li r3, 0
 /* 8024546C 0024110C  4B FF FC 3D */	bl "PauseAllSounds__Fb"
 lbl_80245470:
@@ -373,7 +373,7 @@ lbl_80245470:
 /* 80245478 00241118  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024547C 0024111C  7C 08 03 A6 */	mtlr r0
 /* 80245480 00241120  38 21 00 20 */	addi r1, r1, 0x20
-/* 80245484 00241124  4E 80 00 20 */	blr 
+/* 80245484 00241124  4E 80 00 20 */	blr
 
 .global "HBAllocFuncAlign__FPCcii"
 "HBAllocFuncAlign__FPCcii":
@@ -395,7 +395,7 @@ lbl_80245470:
 /* 802454C4 00241164  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802454C8 00241168  7C 08 03 A6 */	mtlr r0
 /* 802454CC 0024116C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802454D0 00241170  4E 80 00 20 */	blr 
+/* 802454D0 00241170  4E 80 00 20 */	blr
 
 .global "HBAllocFunc__FPCci"
 "HBAllocFunc__FPCci":
@@ -412,7 +412,7 @@ lbl_80245470:
 /* 802454FC 0024119C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80245500 002411A0  7C 08 03 A6 */	mtlr r0
 /* 80245504 002411A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245508 002411A8  4E 80 00 20 */	blr 
+/* 80245508 002411A8  4E 80 00 20 */	blr
 
 .global "HBFreeFunc__FPv"
 "HBFreeFunc__FPv":
@@ -429,7 +429,7 @@ lbl_80245470:
 /* 80245534 002411D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80245538 002411D8  7C 08 03 A6 */	mtlr r0
 /* 8024553C 002411DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245540 002411E0  4E 80 00 20 */	blr 
+/* 80245540 002411E0  4E 80 00 20 */	blr
 
 .global "DrawBanIconToFB__FPUciiiif"
 "DrawBanIconToFB__FPUciiiif":
@@ -541,7 +541,7 @@ lbl_802456B0:
 /* 802456D8 00241378  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802456DC 0024137C  7C 08 03 A6 */	mtlr r0
 /* 802456E0 00241380  38 21 00 90 */	addi r1, r1, 0x90
-/* 802456E4 00241384  4E 80 00 20 */	blr 
+/* 802456E4 00241384  4E 80 00 20 */	blr
 
 .global "HomeButton_DiskEjectUpdate__Fv"
 "HomeButton_DiskEjectUpdate__Fv":
@@ -590,7 +590,7 @@ lbl_8024577C:
 /* 80245784 00241424  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 80245788 00241428  7C 08 03 A6 */	mtlr r0
 /* 8024578C 0024142C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80245790 00241430  4E 80 00 20 */	blr 
+/* 80245790 00241430  4E 80 00 20 */	blr
 
 .global "__sinit_game_wii_unity_cpp"
 "__sinit_game_wii_unity_cpp":
@@ -611,7 +611,7 @@ lbl_8024577C:
 /* 802457CC 0024146C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802457D0 00241470  7C 08 03 A6 */	mtlr r0
 /* 802457D4 00241474  38 21 00 10 */	addi r1, r1, 0x10
-/* 802457D8 00241478  4E 80 00 20 */	blr 
+/* 802457D8 00241478  4E 80 00 20 */	blr
 
 .global "__ct__10TRCWiiInitFv"
 "__ct__10TRCWiiInitFv":
@@ -619,21 +619,21 @@ lbl_8024577C:
 /* 802457E0 00241480  90 03 00 00 */	stw r0, 0(r3)
 /* 802457E4 00241484  90 03 00 04 */	stw r0, 4(r3)
 /* 802457E8 00241488  90 03 00 08 */	stw r0, 8(r3)
-/* 802457EC 0024148C  4E 80 00 20 */	blr 
+/* 802457EC 0024148C  4E 80 00 20 */	blr
 
 .global "ResumeFX__6EAudioFv"
 "ResumeFX__6EAudioFv":
-/* 802457F0 00241490  4E 80 00 20 */	blr 
+/* 802457F0 00241490  4E 80 00 20 */	blr
 
 .global "PauseFX__6EAudioFv"
 "PauseFX__6EAudioFv":
-/* 802457F4 00241494  4E 80 00 20 */	blr 
+/* 802457F4 00241494  4E 80 00 20 */	blr
 
 .global "Invalidate__20ENgcRenderStateCacheFv"
 "Invalidate__20ENgcRenderStateCacheFv":
 /* 802457F8 00241498  38 00 FF FF */	li r0, -1
 /* 802457FC 0024149C  90 03 0D 94 */	stw r0, 0xd94(r3)
-/* 80245800 002414A0  4E 80 00 20 */	blr 
+/* 80245800 002414A0  4E 80 00 20 */	blr
 
 .global "IsBanIconActive__13TRCHomeButtonFv"
 "IsBanIconActive__13TRCHomeButtonFv":
@@ -641,22 +641,22 @@ lbl_8024577C:
 /* 80245808 002414A8  38 03 FF FF */	addi r0, r3, -1
 /* 8024580C 002414AC  7C 00 00 34 */	cntlzw r0, r0
 /* 80245810 002414B0  54 03 D9 7E */	srwi r3, r0, 5
-/* 80245814 002414B4  4E 80 00 20 */	blr 
+/* 80245814 002414B4  4E 80 00 20 */	blr
 
 .global "IsEnabled__13TRCHomeButtonFv"
 "IsEnabled__13TRCHomeButtonFv":
 /* 80245818 002414B8  88 63 00 D1 */	lbz r3, 0xd1(r3)
-/* 8024581C 002414BC  4E 80 00 20 */	blr 
+/* 8024581C 002414BC  4E 80 00 20 */	blr
 
 .global "GetShutdownButton__13TRCHomeButtonFv"
 "GetShutdownButton__13TRCHomeButtonFv":
 /* 80245820 002414C0  80 63 00 D4 */	lwz r3, 0xd4(r3)
-/* 80245824 002414C4  4E 80 00 20 */	blr 
+/* 80245824 002414C4  4E 80 00 20 */	blr
 
 .global "GetHomeMenuState__13TRCHomeButtonFv"
 "GetHomeMenuState__13TRCHomeButtonFv":
 /* 80245828 002414C8  80 63 00 24 */	lwz r3, 0x24(r3)
-/* 8024582C 002414CC  4E 80 00 20 */	blr 
+/* 8024582C 002414CC  4E 80 00 20 */	blr
 
 .global "GetBanIconData__13TRCHomeButtonFv"
 "GetBanIconData__13TRCHomeButtonFv":
@@ -664,10 +664,10 @@ lbl_8024577C:
 /* 80245834 002414D4  2C 03 00 00 */	cmpwi r3, 0
 /* 80245838 002414D8  41 82 00 0C */	beq lbl_80245844
 /* 8024583C 002414DC  38 63 00 36 */	addi r3, r3, 0x36
-/* 80245840 002414E0  4E 80 00 20 */	blr 
+/* 80245840 002414E0  4E 80 00 20 */	blr
 lbl_80245844:
 /* 80245844 002414E4  38 60 00 00 */	li r3, 0
-/* 80245848 002414E8  4E 80 00 20 */	blr 
+/* 80245848 002414E8  4E 80 00 20 */	blr
 
 .global "__nw__13TRCHomeButtonFUl"
 "__nw__13TRCHomeButtonFUl":
@@ -678,7 +678,7 @@ lbl_80245844:
 /* 8024585C 002414FC  81 85 00 04 */	lwz r12, 4(r5)
 /* 80245860 00241500  38 66 EA 70 */	addi r3, r6, lbl_8044EA70@l
 /* 80245864 00241504  7D 89 03 A6 */	mtctr r12
-/* 80245868 00241508  4E 80 04 20 */	bctr 
+/* 80245868 00241508  4E 80 04 20 */	bctr
 
 .global "__as__10TRCWiiInitFRC10TRCWiiInit"
 "__as__10TRCWiiInitFRC10TRCWiiInit":
@@ -688,7 +688,7 @@ lbl_80245844:
 /* 80245878 00241518  90 C3 00 00 */	stw r6, 0(r3)
 /* 8024587C 0024151C  90 A3 00 04 */	stw r5, 4(r3)
 /* 80245880 00241520  90 03 00 08 */	stw r0, 8(r3)
-/* 80245884 00241524  4E 80 00 20 */	blr 
+/* 80245884 00241524  4E 80 00 20 */	blr
 
 .global "__dl__13TRCHomeButtonFPvUl"
 "__dl__13TRCHomeButtonFPvUl":
@@ -696,17 +696,17 @@ lbl_80245844:
 /* 8024588C 0024152C  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245890 00241530  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245894 00241534  7D 89 03 A6 */	mtctr r12
-/* 80245898 00241538  4E 80 04 20 */	bctr 
+/* 80245898 00241538  4E 80 04 20 */	bctr
 
 .global "IsDPDEnabled__18EControllerManagerFv"
 "IsDPDEnabled__18EControllerManagerFv":
 /* 8024589C 0024153C  38 60 00 00 */	li r3, 0
-/* 802458A0 00241540  4E 80 00 20 */	blr 
+/* 802458A0 00241540  4E 80 00 20 */	blr
 
 .global "GetTRCHomeButton__14PetsHomeButtonFv"
 "GetTRCHomeButton__14PetsHomeButtonFv":
 /* 802458A4 00241544  80 63 00 00 */	lwz r3, 0(r3)
-/* 802458A8 00241548  4E 80 00 20 */	blr 
+/* 802458A8 00241548  4E 80 00 20 */	blr
 
 .global "Create__13TRCHomeButtonFP10TRCWiiInit"
 "Create__13TRCHomeButtonFP10TRCWiiInit":
@@ -732,15 +732,15 @@ lbl_802458F0:
 /* 802458F0 00241590  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802458F4 00241594  7C 08 03 A6 */	mtlr r0
 /* 802458F8 00241598  38 21 00 10 */	addi r1, r1, 0x10
-/* 802458FC 0024159C  4E 80 00 20 */	blr 
+/* 802458FC 0024159C  4E 80 00 20 */	blr
 
 .global "Destroy__13TRCHomeButtonFP13TRCHomeButton"
 "Destroy__13TRCHomeButtonFP13TRCHomeButton":
 /* 80245900 002415A0  2C 03 00 00 */	cmpwi r3, 0
-/* 80245904 002415A4  4D 82 00 20 */	beqlr 
+/* 80245904 002415A4  4D 82 00 20 */	beqlr
 /* 80245908 002415A8  38 80 00 01 */	li r4, 1
 /* 8024590C 002415AC  48 00 01 04 */	b "__dt__13TRCHomeButtonFv"
-/* 80245910 002415B0  4E 80 00 20 */	blr 
+/* 80245910 002415B0  4E 80 00 20 */	blr
 
 .global "__ct__13TRCHomeButtonFv"
 "__ct__13TRCHomeButtonFv":
@@ -806,7 +806,7 @@ lbl_802458F0:
 /* 80245A00 002416A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80245A04 002416A4  7C 08 03 A6 */	mtlr r0
 /* 80245A08 002416A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245A0C 002416AC  4E 80 00 20 */	blr 
+/* 80245A0C 002416AC  4E 80 00 20 */	blr
 
 .global "__dt__13TRCHomeButtonFv"
 "__dt__13TRCHomeButtonFv":
@@ -834,7 +834,7 @@ lbl_80245A54:
 /* 80245A60 00241700  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80245A64 00241704  7C 08 03 A6 */	mtlr r0
 /* 80245A68 00241708  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245A6C 0024170C  4E 80 00 20 */	blr 
+/* 80245A6C 0024170C  4E 80 00 20 */	blr
 
 .global "LoadData__13TRCHomeButtonFPCcPCciPUl"
 "LoadData__13TRCHomeButtonFPCcPCciPUl":
@@ -864,7 +864,7 @@ lbl_80245A54:
 /* 80245ACC 0024176C  7F A4 EB 78 */	mr r4, r29
 /* 80245AD0 00241770  7F 65 DB 78 */	mr r5, r27
 /* 80245AD4 00241774  7D 89 03 A6 */	mtctr r12
-/* 80245AD8 00241778  4E 80 04 21 */	bctrl 
+/* 80245AD8 00241778  4E 80 04 21 */	bctrl
 /* 80245ADC 0024177C  81 9E 00 00 */	lwz r12, 0(r30)
 /* 80245AE0 00241780  7C 7F 1B 78 */	mr r31, r3
 /* 80245AE4 00241784  7F C3 F3 78 */	mr r3, r30
@@ -872,7 +872,7 @@ lbl_80245A54:
 /* 80245AEC 0024178C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80245AF0 00241790  7F E4 FB 78 */	mr r4, r31
 /* 80245AF4 00241794  7D 89 03 A6 */	mtctr r12
-/* 80245AF8 00241798  4E 80 04 21 */	bctrl 
+/* 80245AF8 00241798  4E 80 04 21 */	bctrl
 /* 80245AFC 0024179C  2C 1C 00 00 */	cmpwi r28, 0
 /* 80245B00 002417A0  41 82 00 08 */	beq lbl_80245B08
 /* 80245B04 002417A4  93 BC 00 00 */	stw r29, 0(r28)
@@ -881,7 +881,7 @@ lbl_80245B08:
 /* 80245B0C 002417AC  7F C3 F3 78 */	mr r3, r30
 /* 80245B10 002417B0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80245B14 002417B4  7D 89 03 A6 */	mtctr r12
-/* 80245B18 002417B8  4E 80 04 21 */	bctrl 
+/* 80245B18 002417B8  4E 80 04 21 */	bctrl
 lbl_80245B1C:
 /* 80245B1C 002417BC  39 61 00 20 */	addi r11, r1, 0x20
 /* 80245B20 002417C0  7F E3 FB 78 */	mr r3, r31
@@ -889,7 +889,7 @@ lbl_80245B1C:
 /* 80245B28 002417C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80245B2C 002417CC  7C 08 03 A6 */	mtlr r0
 /* 80245B30 002417D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80245B34 002417D4  4E 80 00 20 */	blr 
+/* 80245B34 002417D4  4E 80 00 20 */	blr
 
 .global "Init__13TRCHomeButtonFPCcQ213TRCHomeButton13HomeInputType"
 "Init__13TRCHomeButtonFPCcQ213TRCHomeButton13HomeInputType":
@@ -941,7 +941,7 @@ lbl_80245BDC:
 /* 80245BE8 00241888  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80245BEC 0024188C  7C 08 03 A6 */	mtlr r0
 /* 80245BF0 00241890  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245BF4 00241894  4E 80 00 20 */	blr 
+/* 80245BF4 00241894  4E 80 00 20 */	blr
 
 .global "LoadBanIcon__13TRCHomeButtonFPCc"
 "LoadBanIcon__13TRCHomeButtonFPCc":
@@ -1011,7 +1011,7 @@ lbl_80245CE0:
 /* 80245CEC 0024198C  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 80245CF0 00241990  7C 08 03 A6 */	mtlr r0
 /* 80245CF4 00241994  38 21 00 60 */	addi r1, r1, 0x60
-/* 80245CF8 00241998  4E 80 00 20 */	blr 
+/* 80245CF8 00241998  4E 80 00 20 */	blr
 
 .global "Restore__13TRCHomeButtonFv"
 "Restore__13TRCHomeButtonFv":
@@ -1032,7 +1032,7 @@ lbl_80245D20:
 /* 80245D30 002419D0  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245D34 002419D4  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245D38 002419D8  7D 89 03 A6 */	mtctr r12
-/* 80245D3C 002419DC  4E 80 04 21 */	bctrl 
+/* 80245D3C 002419DC  4E 80 04 21 */	bctrl
 /* 80245D40 002419E0  38 00 00 00 */	li r0, 0
 /* 80245D44 002419E4  90 1F 00 B0 */	stw r0, 0xb0(r31)
 lbl_80245D48:
@@ -1043,7 +1043,7 @@ lbl_80245D48:
 /* 80245D58 002419F8  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245D5C 002419FC  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245D60 00241A00  7D 89 03 A6 */	mtctr r12
-/* 80245D64 00241A04  4E 80 04 21 */	bctrl 
+/* 80245D64 00241A04  4E 80 04 21 */	bctrl
 /* 80245D68 00241A08  38 00 00 00 */	li r0, 0
 /* 80245D6C 00241A0C  90 1F 00 28 */	stw r0, 0x28(r31)
 lbl_80245D70:
@@ -1054,7 +1054,7 @@ lbl_80245D70:
 /* 80245D80 00241A20  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245D84 00241A24  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245D88 00241A28  7D 89 03 A6 */	mtctr r12
-/* 80245D8C 00241A2C  4E 80 04 21 */	bctrl 
+/* 80245D8C 00241A2C  4E 80 04 21 */	bctrl
 /* 80245D90 00241A30  38 00 00 00 */	li r0, 0
 /* 80245D94 00241A34  90 1F 00 2C */	stw r0, 0x2c(r31)
 lbl_80245D98:
@@ -1065,7 +1065,7 @@ lbl_80245D98:
 /* 80245DA8 00241A48  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245DAC 00241A4C  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245DB0 00241A50  7D 89 03 A6 */	mtctr r12
-/* 80245DB4 00241A54  4E 80 04 21 */	bctrl 
+/* 80245DB4 00241A54  4E 80 04 21 */	bctrl
 /* 80245DB8 00241A58  38 00 00 00 */	li r0, 0
 /* 80245DBC 00241A5C  90 1F 00 30 */	stw r0, 0x30(r31)
 lbl_80245DC0:
@@ -1076,7 +1076,7 @@ lbl_80245DC0:
 /* 80245DD0 00241A70  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245DD4 00241A74  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245DD8 00241A78  7D 89 03 A6 */	mtctr r12
-/* 80245DDC 00241A7C  4E 80 04 21 */	bctrl 
+/* 80245DDC 00241A7C  4E 80 04 21 */	bctrl
 /* 80245DE0 00241A80  38 00 00 00 */	li r0, 0
 /* 80245DE4 00241A84  90 1F 00 34 */	stw r0, 0x34(r31)
 lbl_80245DE8:
@@ -1087,7 +1087,7 @@ lbl_80245DE8:
 /* 80245DF8 00241A98  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245DFC 00241A9C  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245E00 00241AA0  7D 89 03 A6 */	mtctr r12
-/* 80245E04 00241AA4  4E 80 04 21 */	bctrl 
+/* 80245E04 00241AA4  4E 80 04 21 */	bctrl
 /* 80245E08 00241AA8  38 00 00 00 */	li r0, 0
 /* 80245E0C 00241AAC  90 1F 00 68 */	stw r0, 0x68(r31)
 lbl_80245E10:
@@ -1098,7 +1098,7 @@ lbl_80245E10:
 /* 80245E20 00241AC0  38 84 47 54 */	addi r4, r4, "msInitParams__13TRCHomeButton"@l
 /* 80245E24 00241AC4  81 84 00 08 */	lwz r12, 8(r4)
 /* 80245E28 00241AC8  7D 89 03 A6 */	mtctr r12
-/* 80245E2C 00241ACC  4E 80 04 21 */	bctrl 
+/* 80245E2C 00241ACC  4E 80 04 21 */	bctrl
 /* 80245E30 00241AD0  38 00 00 00 */	li r0, 0
 /* 80245E34 00241AD4  90 1F 00 38 */	stw r0, 0x38(r31)
 lbl_80245E38:
@@ -1106,7 +1106,7 @@ lbl_80245E38:
 /* 80245E3C 00241ADC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80245E40 00241AE0  7C 08 03 A6 */	mtlr r0
 /* 80245E44 00241AE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80245E48 00241AE8  4E 80 00 20 */	blr 
+/* 80245E48 00241AE8  4E 80 00 20 */	blr
 
 .global "InitInfo__13TRCHomeButtonFv"
 "InitInfo__13TRCHomeButtonFv":
@@ -1148,7 +1148,7 @@ lbl_80245E38:
 /* 80245ED8 00241B78  38 63 EA 1C */	addi r3, r3, lbl_8044EA1C@l
 /* 80245EDC 00241B7C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80245EE0 00241B80  7C 69 03 A6 */	mtctr r3
-/* 80245EE4 00241B84  4E 80 04 20 */	bctr 
+/* 80245EE4 00241B84  4E 80 04 20 */	bctr
 /* 80245EE8 00241B88  38 61 00 08 */	addi r3, r1, 8
 /* 80245EEC 00241B8C  38 9F 00 60 */	addi r4, r31, 0x60
 /* 80245EF0 00241B90  48 1C 26 85 */	bl "strcat"
@@ -1270,7 +1270,7 @@ lbl_802460A4:
 /* 802460AC 00241D4C  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 802460B0 00241D50  7C 08 03 A6 */	mtlr r0
 /* 802460B4 00241D54  38 21 00 50 */	addi r1, r1, 0x50
-/* 802460B8 00241D58  4E 80 00 20 */	blr 
+/* 802460B8 00241D58  4E 80 00 20 */	blr
 
 .global "InitHBMLibrary__13TRCHomeButtonFv"
 "InitHBMLibrary__13TRCHomeButtonFv":
@@ -1286,7 +1286,7 @@ lbl_802460A4:
 /* 802460E0 00241D80  81 84 47 54 */	lwz r12, "msInitParams__13TRCHomeButton"@l(r4)
 /* 802460E4 00241D84  3C 80 00 08 */	lis r4, 8
 /* 802460E8 00241D88  7D 89 03 A6 */	mtctr r12
-/* 802460EC 00241D8C  4E 80 04 21 */	bctrl 
+/* 802460EC 00241D8C  4E 80 04 21 */	bctrl
 /* 802460F0 00241D90  38 00 00 00 */	li r0, 0
 /* 802460F4 00241D94  3C 80 00 08 */	lis r4, 8
 /* 802460F8 00241D98  90 7F 00 38 */	stw r3, 0x38(r31)
@@ -1300,7 +1300,7 @@ lbl_802460A4:
 /* 80246118 00241DB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8024611C 00241DBC  7C 08 03 A6 */	mtlr r0
 /* 80246120 00241DC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80246124 00241DC4  4E 80 00 20 */	blr 
+/* 80246124 00241DC4  4E 80 00 20 */	blr
 
 .global "InitSound__13TRCHomeButtonFv"
 "InitSound__13TRCHomeButtonFv":
@@ -1340,7 +1340,7 @@ lbl_802460A4:
 /* 802461AC 00241E4C  3C 80 00 0A */	lis r4, 0xa
 /* 802461B0 00241E50  38 A0 00 40 */	li r5, 0x40
 /* 802461B4 00241E54  7D 89 03 A6 */	mtctr r12
-/* 802461B8 00241E58  4E 80 04 21 */	bctrl 
+/* 802461B8 00241E58  4E 80 04 21 */	bctrl
 /* 802461BC 00241E5C  90 7F 00 B0 */	stw r3, 0xb0(r31)
 /* 802461C0 00241E60  7C 64 1B 78 */	mr r4, r3
 /* 802461C4 00241E64  38 61 00 08 */	addi r3, r1, 8
@@ -1351,7 +1351,7 @@ lbl_802460A4:
 /* 802461D8 00241E78  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802461DC 00241E7C  7C 08 03 A6 */	mtlr r0
 /* 802461E0 00241E80  38 21 00 50 */	addi r1, r1, 0x50
-/* 802461E4 00241E84  4E 80 00 20 */	blr 
+/* 802461E4 00241E84  4E 80 00 20 */	blr
 
 .global "InitHomeMenu__13TRCHomeButtonFv"
 "InitHomeMenu__13TRCHomeButtonFv":
@@ -1384,12 +1384,12 @@ lbl_802460A4:
 /* 80246250 00241EF0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80246254 00241EF4  7C 08 03 A6 */	mtlr r0
 /* 80246258 00241EF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024625C 00241EFC  4E 80 00 20 */	blr 
+/* 8024625C 00241EFC  4E 80 00 20 */	blr
 
 .global "SoundCallback__13TRCHomeButtonFii"
 "SoundCallback__13TRCHomeButtonFii":
 /* 80246260 00241F00  38 60 00 00 */	li r3, 0
-/* 80246264 00241F04  4E 80 00 20 */	blr 
+/* 80246264 00241F04  4E 80 00 20 */	blr
 
 .global "WasHomeButtonPressedThisFrame__13TRCHomeButtonFv"
 "WasHomeButtonPressedThisFrame__13TRCHomeButtonFv":
@@ -1430,7 +1430,7 @@ lbl_802462D8:
 /* 802462DC 00241F7C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802462E0 00241F80  7C 08 03 A6 */	mtlr r0
 /* 802462E4 00241F84  38 21 00 10 */	addi r1, r1, 0x10
-/* 802462E8 00241F88  4E 80 00 20 */	blr 
+/* 802462E8 00241F88  4E 80 00 20 */	blr
 
 .global "StartUpHomeMenu__13TRCHomeButtonFb"
 "StartUpHomeMenu__13TRCHomeButtonFb":
@@ -1446,27 +1446,27 @@ lbl_802462D8:
 lbl_80246310:
 /* 80246310 00241FB0  80 03 00 B8 */	lwz r0, 0xb8(r3)
 /* 80246314 00241FB4  2C 00 00 00 */	cmpwi r0, 0
-/* 80246318 00241FB8  4C 82 00 20 */	bnelr 
+/* 80246318 00241FB8  4C 82 00 20 */	bnelr
 /* 8024631C 00241FBC  38 00 00 01 */	li r0, 1
 /* 80246320 00241FC0  90 03 00 B8 */	stw r0, 0xb8(r3)
 /* 80246324 00241FC4  90 03 00 24 */	stw r0, 0x24(r3)
 /* 80246328 00241FC8  4B FF FE C0 */	b "InitHomeMenu__13TRCHomeButtonFv"
-/* 8024632C 00241FCC  4E 80 00 20 */	blr 
+/* 8024632C 00241FCC  4E 80 00 20 */	blr
 
 .global "RestoreHomeMenu__13TRCHomeButtonFv"
 "RestoreHomeMenu__13TRCHomeButtonFv":
-/* 80246330 00241FD0  4E 80 00 20 */	blr 
+/* 80246330 00241FD0  4E 80 00 20 */	blr
 
 .global "ShutDownHomeMenu__13TRCHomeButtonFv"
 "ShutDownHomeMenu__13TRCHomeButtonFv":
 /* 80246334 00241FD4  80 03 00 B8 */	lwz r0, 0xb8(r3)
 /* 80246338 00241FD8  2C 00 00 01 */	cmpwi r0, 1
-/* 8024633C 00241FDC  4C 82 00 20 */	bnelr 
+/* 8024633C 00241FDC  4C 82 00 20 */	bnelr
 /* 80246340 00241FE0  38 00 00 00 */	li r0, 0
 /* 80246344 00241FE4  90 03 00 B8 */	stw r0, 0xb8(r3)
 /* 80246348 00241FE8  90 03 00 24 */	stw r0, 0x24(r3)
 /* 8024634C 00241FEC  4B FF FF E4 */	b "RestoreHomeMenu__13TRCHomeButtonFv"
-/* 80246350 00241FF0  4E 80 00 20 */	blr 
+/* 80246350 00241FF0  4E 80 00 20 */	blr
 
 .global "Update__13TRCHomeButtonFv"
 "Update__13TRCHomeButtonFv":
@@ -1497,7 +1497,7 @@ lbl_802463A8:
 /* 802463AC 0024204C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802463B0 00242050  7C 08 03 A6 */	mtlr r0
 /* 802463B4 00242054  38 21 00 10 */	addi r1, r1, 0x10
-/* 802463B8 00242058  4E 80 00 20 */	blr 
+/* 802463B8 00242058  4E 80 00 20 */	blr
 
 .global "ClearInputHistory__13TRCHomeButtonFv"
 "ClearInputHistory__13TRCHomeButtonFv":
@@ -1528,7 +1528,7 @@ lbl_802463A8:
 /* 8024641C 002420BC  D0 03 31 98 */	stfs f0, 0x3198(r3)
 /* 80246420 002420C0  D0 03 31 AC */	stfs f0, 0x31ac(r3)
 /* 80246424 002420C4  D0 03 31 B0 */	stfs f0, 0x31b0(r3)
-/* 80246428 002420C8  4E 80 00 20 */	blr 
+/* 80246428 002420C8  4E 80 00 20 */	blr
 
 .global "UpdateControllersKPAD__13TRCHomeButtonFv"
 "UpdateControllersKPAD__13TRCHomeButtonFv":
@@ -1644,7 +1644,7 @@ lbl_8024659C:
 /* 802465BC 0024225C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802465C0 00242260  7C 08 03 A6 */	mtlr r0
 /* 802465C4 00242264  38 21 00 30 */	addi r1, r1, 0x30
-/* 802465C8 00242268  4E 80 00 20 */	blr 
+/* 802465C8 00242268  4E 80 00 20 */	blr
 
 .global "ProcessController__13TRCHomeButtonFv"
 "ProcessController__13TRCHomeButtonFv":
@@ -1669,7 +1669,7 @@ lbl_80246608:
 /* 80246610 002422B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80246614 002422B4  7C 08 03 A6 */	mtlr r0
 /* 80246618 002422B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8024661C 002422BC  4E 80 00 20 */	blr 
+/* 8024661C 002422BC  4E 80 00 20 */	blr
 
 .global "PreRender__13TRCHomeButtonFv"
 "PreRender__13TRCHomeButtonFv":
@@ -1760,7 +1760,7 @@ lbl_802466C8:
 /* 80246764 00242404  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80246768 00242408  7C 08 03 A6 */	mtlr r0
 /* 8024676C 0024240C  38 21 00 90 */	addi r1, r1, 0x90
-/* 80246770 00242410  4E 80 00 20 */	blr 
+/* 80246770 00242410  4E 80 00 20 */	blr
 
 .global "PostRender__13TRCHomeButtonFv"
 "PostRender__13TRCHomeButtonFv":
@@ -1803,7 +1803,7 @@ lbl_802467A0:
 /* 80246800 002424A0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80246804 002424A4  7C 08 03 A6 */	mtlr r0
 /* 80246808 002424A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8024680C 002424AC  4E 80 00 20 */	blr 
+/* 8024680C 002424AC  4E 80 00 20 */	blr
 
 .global "RenderHomeMenu__13TRCHomeButtonFv"
 "RenderHomeMenu__13TRCHomeButtonFv":
@@ -1820,7 +1820,7 @@ lbl_802467A0:
 /* 80246838 002424D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8024683C 002424DC  7C 08 03 A6 */	mtlr r0
 /* 80246840 002424E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80246844 002424E4  4E 80 00 20 */	blr 
+/* 80246844 002424E4  4E 80 00 20 */	blr
 
 .global "TriggerHomeMenuBanIcon__13TRCHomeButtonFv"
 "TriggerHomeMenuBanIcon__13TRCHomeButtonFv":
@@ -1850,7 +1850,7 @@ lbl_8024689C:
 /* 802468A0 00242540  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802468A4 00242544  7C 08 03 A6 */	mtlr r0
 /* 802468A8 00242548  38 21 00 10 */	addi r1, r1, 0x10
-/* 802468AC 0024254C  4E 80 00 20 */	blr 
+/* 802468AC 0024254C  4E 80 00 20 */	blr
 
 .global "UpdateBanIconAlpha__13TRCHomeButtonFv"
 "UpdateBanIconAlpha__13TRCHomeButtonFv":
@@ -1946,7 +1946,7 @@ lbl_802469D8:
 /* 80246A00 002426A0  EC 21 00 24 */	fdivs f1, f1, f0
 /* 80246A04 002426A4  7C 08 03 A6 */	mtlr r0
 /* 80246A08 002426A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80246A0C 002426AC  4E 80 00 20 */	blr 
+/* 80246A0C 002426AC  4E 80 00 20 */	blr
 
 .global "DisableHomeMenu__13TRCHomeButtonFii"
 "DisableHomeMenu__13TRCHomeButtonFii":
@@ -1955,7 +1955,7 @@ lbl_802469D8:
 /* 80246A18 002426B8  90 A3 31 C0 */	stw r5, 0x31c0(r3)
 /* 80246A1C 002426BC  98 03 00 D1 */	stb r0, 0xd1(r3)
 /* 80246A20 002426C0  90 03 00 C4 */	stw r0, 0xc4(r3)
-/* 80246A24 002426C4  4E 80 00 20 */	blr 
+/* 80246A24 002426C4  4E 80 00 20 */	blr
 
 .global "RenderBanIcon__13TRCHomeButtonFv"
 "RenderBanIcon__13TRCHomeButtonFv":
@@ -2118,11 +2118,11 @@ lbl_802469D8:
 /* 80246C98 00242938  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 80246C9C 0024293C  7C 08 03 A6 */	mtlr r0
 /* 80246CA0 00242940  38 21 00 40 */	addi r1, r1, 0x40
-/* 80246CA4 00242944  4E 80 00 20 */	blr 
+/* 80246CA4 00242944  4E 80 00 20 */	blr
 
 .global "GXEnd"
 "GXEnd":
-/* 80246CA8 00242948  4E 80 00 20 */	blr 
+/* 80246CA8 00242948  4E 80 00 20 */	blr
 
 .global "GXSetTexCoordGen"
 "GXSetTexCoordGen":
@@ -2135,34 +2135,90 @@ lbl_802469D8:
 /* 80246CB8 00242958  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 80246CBC 0024295C  B0 65 80 00 */	sth r3, 0xCC008000@l(r5)
 /* 80246CC0 00242960  B0 85 80 00 */	sth r4, -0x8000(r5)
-/* 80246CC4 00242964  4E 80 00 20 */	blr 
+/* 80246CC4 00242964  4E 80 00 20 */	blr
 
 .global "GXPosition2s16"
 "GXPosition2s16":
 /* 80246CC8 00242968  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 80246CCC 0024296C  B0 65 80 00 */	sth r3, 0xCC008000@l(r5)
 /* 80246CD0 00242970  B0 85 80 00 */	sth r4, -0x8000(r5)
-/* 80246CD4 00242974  4E 80 00 20 */	blr 
+/* 80246CD4 00242974  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8044E8C8
 lbl_8044E8C8:
-	.incbin "baserom.dol", 0x44A9C8, 0x154
+	# ROM: 0x44A9C8
+	.asciz "data/HomeButton2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtnIcon.tpl"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HomeBtn_Icon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtnIcon.dat"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "HomeBtn_BmpIcon"
+	.asciz "/homeBtn.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_ENG.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_GER.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_FRA.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_SPA.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_ITA.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "/homeBtn_NED.arc"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HomeBtn_Layout"
+	.byte 0x00
+	.asciz "/SpeakerSe.arc"
+	.byte 0x00
+	.asciz "HomeBtn_Speaker"
+	.asciz "/home.csv"
+	.byte 0x00, 0x00
+	.asciz "HomeBtn_MsgBuf"
+	.byte 0x00
+	.asciz "/config.txt"
+	.asciz "HomeBtn_ConfigBuf"
+	.byte 0x00, 0x00
+
 .global lbl_8044EA1C
 lbl_8044EA1C:
-	.incbin "baserom.dol", 0x44AB1C, 0x1C
+	# ROM: 0x44AB1C
+	.4byte 0x80245EE8 ;# ptr
+	.4byte 0x80245EF8 ;# ptr
+	.4byte 0x80245F08 ;# ptr
+	.4byte 0x80245F18 ;# ptr
+	.4byte 0x80245F28 ;# ptr
+	.4byte 0x80245F38 ;# ptr
+	.4byte 0x80245F48 ;# ptr
+
 .global lbl_8044EA38
 lbl_8044EA38:
-	.incbin "baserom.dol", 0x44AB38, 0x10
+	# ROM: 0x44AB38
+	.asciz "HomeBtnInfo_Mem"
+
 .global lbl_8044EA48
 lbl_8044EA48:
-	.incbin "baserom.dol", 0x44AB48, 0x14
+	# ROM: 0x44AB48
+	.asciz "/HomeButtonSe.brsar"
+
 .global lbl_8044EA5C
 lbl_8044EA5C:
-	.incbin "baserom.dol", 0x44AB5C, 0x14
+	# ROM: 0x44AB5C
+	.asciz "HomeMenu_SoundBuff"
+	.byte 0x00
+
 .global lbl_8044EA70
 lbl_8044EA70:
-	.incbin "baserom.dol", 0x44AB70, 0x18
+	# ROM: 0x44AB70
+	.asciz "TRC_HOMEBUTTON_NEW"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_804A4748
@@ -2175,7 +2231,10 @@ lbl_804A4748:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D64F0
 lbl_805D64F0:
-	.incbin "baserom.dol", 0x486070, 0x8
+	# ROM: 0x486070
+	.4byte 0x72620000
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_wiiHomeButton"
@@ -2191,67 +2250,114 @@ lbl_805D64F0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DAEB0
 lbl_805DAEB0:
-	.incbin "baserom.dol", 0x4891D0, 0x8
+	# ROM: 0x4891D0
+	.4byte 0x3F800000
+	.4byte 0x00000000
+
 .global lbl_805DAEB8
 lbl_805DAEB8:
-	.incbin "baserom.dol", 0x4891D8, 0x8
+	# ROM: 0x4891D8
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DAEC0
 lbl_805DAEC0:
-	.incbin "baserom.dol", 0x4891E0, 0x4
+	# ROM: 0x4891E0
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DAEC4
 lbl_805DAEC4:
-	.incbin "baserom.dol", 0x4891E4, 0x4
+	# ROM: 0x4891E4
+	.4byte 0x3FAF286C
+
 .global lbl_805DAEC8
 lbl_805DAEC8:
-	.incbin "baserom.dol", 0x4891E8, 0x1
+	# ROM: 0x4891E8
+	.byte 0xFF
+
 .global lbl_805DAEC9
 lbl_805DAEC9:
-	.incbin "baserom.dol", 0x4891E9, 0x1
+	# ROM: 0x4891E9
+	.byte 0xFF
+
 .global lbl_805DAECA
 lbl_805DAECA:
-	.incbin "baserom.dol", 0x4891EA, 0x1
+	# ROM: 0x4891EA
+	.byte 0xFF
+
 .global lbl_805DAECB
 lbl_805DAECB:
-	.incbin "baserom.dol", 0x4891EB, 0x1
+	# ROM: 0x4891EB
+	.byte 0xFF
+
 .global lbl_805DAECC
 lbl_805DAECC:
-	.incbin "baserom.dol", 0x4891EC, 0x4
+	# ROM: 0x4891EC
+	.4byte 0x43640000
+
 .global lbl_805DAED0
 lbl_805DAED0:
-	.incbin "baserom.dol", 0x4891F0, 0x4
+	# ROM: 0x4891F0
+	.4byte 0xC3640000
+
 .global lbl_805DAED4
 lbl_805DAED4:
-	.incbin "baserom.dol", 0x4891F4, 0x4
+	# ROM: 0x4891F4
+	.4byte 0xC3D00000
+
 .global lbl_805DAED8
 lbl_805DAED8:
-	.incbin "baserom.dol", 0x4891F8, 0x4
+	# ROM: 0x4891F8
+	.4byte 0x43D00000
+
 .global lbl_805DAEDC
 lbl_805DAEDC:
-	.incbin "baserom.dol", 0x4891FC, 0x4
+	# ROM: 0x4891FC
+	.4byte 0x43FA0000
+
 .global lbl_805DAEE0
 lbl_805DAEE0:
-	.incbin "baserom.dol", 0x489200, 0x4
+	# ROM: 0x489200
+	.4byte 0xC3980000
+
 .global lbl_805DAEE4
 lbl_805DAEE4:
-	.incbin "baserom.dol", 0x489204, 0x4
+	# ROM: 0x489204
+	.4byte 0x43980000
+
 .global lbl_805DAEE8
 lbl_805DAEE8:
-	.incbin "baserom.dol", 0x489208, 0x4
+	# ROM: 0x489208
+	.4byte 0x437FE666
+
 .global lbl_805DAEEC
 lbl_805DAEEC:
-	.incbin "baserom.dol", 0x48920C, 0x4
+	# ROM: 0x48920C
+	.4byte 0x437A0000
+
 .global lbl_805DAEF0
 lbl_805DAEF0:
-	.incbin "baserom.dol", 0x489210, 0x4
+	# ROM: 0x489210
+	.4byte 0x447A0000
+
 .global lbl_805DAEF4
 lbl_805DAEF4:
-	.incbin "baserom.dol", 0x489214, 0x4
+	# ROM: 0x489214
+	.4byte 0x437F0000
+
 .global lbl_805DAEF8
 lbl_805DAEF8:
-	.incbin "baserom.dol", 0x489218, 0x1
+	# ROM: 0x489218
+	.byte 0xFF
+
 .global lbl_805DAEF9
 lbl_805DAEF9:
-	.incbin "baserom.dol", 0x489219, 0x1
+	# ROM: 0x489219
+	.byte 0xFF
+
 .global lbl_805DAEFA
 lbl_805DAEFA:
-	.incbin "baserom.dol", 0x48921A, 0x6
+	# ROM: 0x48921A
+	.byte 0xFF, 0x00
+	.4byte 0x00000000
+

@@ -71,14 +71,14 @@ lbl_803B4B40:
 /* 803B4B48 003B07E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B4B4C 003B07EC  7C 08 03 A6 */	mtlr r0
 /* 803B4B50 003B07F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4B54 003B07F4  4E 80 00 20 */	blr 
+/* 803B4B54 003B07F4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail14StrmFileReaderFv"
 "__ct__Q46nw4hbm3snd6detail14StrmFileReaderFv":
 /* 803B4B58 003B07F8  38 00 00 00 */	li r0, 0
 /* 803B4B5C 003B07FC  90 03 00 00 */	stw r0, 0(r3)
 /* 803B4B60 003B0800  90 03 00 04 */	stw r0, 4(r3)
-/* 803B4B64 003B0804  4E 80 00 20 */	blr 
+/* 803B4B64 003B0804  4E 80 00 20 */	blr
 
 .global "Setup__Q46nw4hbm3snd6detail14StrmFileReaderFPCv"
 "Setup__Q46nw4hbm3snd6detail14StrmFileReaderFPCv":
@@ -138,7 +138,7 @@ lbl_803B4C24:
 /* 803B4C30 003B08D0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803B4C34 003B08D4  7C 08 03 A6 */	mtlr r0
 /* 803B4C38 003B08D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B4C3C 003B08DC  4E 80 00 20 */	blr 
+/* 803B4C3C 003B08DC  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile12StrmDataInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util58DataRef<Q56nw4hbm3snd6detail8StrmFile12StrmDataInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile12StrmDataInfo"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile12StrmDataInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util58DataRef<Q56nw4hbm3snd6detail8StrmFile12StrmDataInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile12StrmDataInfo":
@@ -168,7 +168,7 @@ lbl_803B4C80:
 /* 803B4C98 003B0938  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B4C9C 003B093C  7C 08 03 A6 */	mtlr r0
 /* 803B4CA0 003B0940  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4CA4 003B0944  4E 80 00 20 */	blr 
+/* 803B4CA4 003B0944  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPCvUl_PCv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPCvUl_PCv":
@@ -183,11 +183,11 @@ lbl_803B4C80:
 /* 803B4CC8 003B0968  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4CCC 003B096C  7C 08 03 A6 */	mtlr r0
 /* 803B4CD0 003B0970  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4CD4 003B0974  4E 80 00 20 */	blr 
+/* 803B4CD4 003B0974  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPCv":
-/* 803B4CD8 003B0978  4E 80 00 20 */	blr 
+/* 803B4CD8 003B0978  4E 80 00 20 */	blr
 
 .global "ReadStrmInfo__Q46nw4hbm3snd6detail14StrmFileReaderCFPQ46nw4hbm3snd6detail8StrmInfo"
 "ReadStrmInfo__Q46nw4hbm3snd6detail14StrmFileReaderCFPQ46nw4hbm3snd6detail8StrmInfo":
@@ -254,7 +254,7 @@ lbl_803B4D20:
 /* 803B4DC8 003B0A68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4DCC 003B0A6C  7C 08 03 A6 */	mtlr r0
 /* 803B4DD0 003B0A70  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4DD4 003B0A74  4E 80 00 20 */	blr 
+/* 803B4DD4 003B0A74  4E 80 00 20 */	blr
 
 .global "ReadAdpcmInfo__Q46nw4hbm3snd6detail14StrmFileReaderCFPQ46nw4hbm3snd6detail9AdpcmInfoi"
 "ReadAdpcmInfo__Q46nw4hbm3snd6detail14StrmFileReaderCFPQ46nw4hbm3snd6detail9AdpcmInfoi":
@@ -318,7 +318,7 @@ lbl_803B4EA0:
 /* 803B4EAC 003B0B4C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803B4EB0 003B0B50  7C 08 03 A6 */	mtlr r0
 /* 803B4EB4 003B0B54  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B4EB8 003B0B58  4E 80 00 20 */	blr 
+/* 803B4EB8 003B0B58  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q46nw4hbm3snd6detail9AdpcmInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util45DataRef<Q46nw4hbm3snd6detail9AdpcmInfo,v,v,v>PCv_PCQ46nw4hbm3snd6detail9AdpcmInfo"
 "GetDataRefAddress0<Q46nw4hbm3snd6detail9AdpcmInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util45DataRef<Q46nw4hbm3snd6detail9AdpcmInfo,v,v,v>PCv_PCQ46nw4hbm3snd6detail9AdpcmInfo":
@@ -348,7 +348,7 @@ lbl_803B4EFC:
 /* 803B4F14 003B0BB4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B4F18 003B0BB8  7C 08 03 A6 */	mtlr r0
 /* 803B4F1C 003B0BBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4F20 003B0BC0  4E 80 00 20 */	blr 
+/* 803B4F20 003B0BC0  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile11ChannelInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util57DataRef<Q56nw4hbm3snd6detail8StrmFile11ChannelInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile11ChannelInfo"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile11ChannelInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util57DataRef<Q56nw4hbm3snd6detail8StrmFile11ChannelInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile11ChannelInfo":
@@ -378,7 +378,7 @@ lbl_803B4F64:
 /* 803B4F7C 003B0C1C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B4F80 003B0C20  7C 08 03 A6 */	mtlr r0
 /* 803B4F84 003B0C24  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4F88 003B0C28  4E 80 00 20 */	blr 
+/* 803B4F88 003B0C28  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile12ChannelTable,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util58DataRef<Q56nw4hbm3snd6detail8StrmFile12ChannelTable,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile12ChannelTable"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail8StrmFile12ChannelTable,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util58DataRef<Q56nw4hbm3snd6detail8StrmFile12ChannelTable,v,v,v>PCv_PCQ56nw4hbm3snd6detail8StrmFile12ChannelTable":
@@ -408,7 +408,7 @@ lbl_803B4FCC:
 /* 803B4FE4 003B0C84  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B4FE8 003B0C88  7C 08 03 A6 */	mtlr r0
 /* 803B4FEC 003B0C8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4FF0 003B0C90  4E 80 00 20 */	blr 
+/* 803B4FF0 003B0C90  4E 80 00 20 */	blr
 
 .global "LoadFileHeader__Q46nw4hbm3snd6detail14StrmFileLoaderFPvUl"
 "LoadFileHeader__Q46nw4hbm3snd6detail14StrmFileLoaderFPvUl":
@@ -428,7 +428,7 @@ lbl_803B4FCC:
 /* 803B5028 003B0CC8  81 83 00 00 */	lwz r12, 0(r3)
 /* 803B502C 003B0CCC  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 803B5030 003B0CD0  7D 89 03 A6 */	mtctr r12
-/* 803B5034 003B0CD4  4E 80 04 21 */	bctrl 
+/* 803B5034 003B0CD4  4E 80 04 21 */	bctrl
 /* 803B5038 003B0CD8  38 61 00 10 */	addi r3, r1, 0x10
 /* 803B503C 003B0CDC  38 80 00 20 */	li r4, 0x20
 /* 803B5040 003B0CE0  48 00 00 F9 */	bl "RoundUp<Uc>__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPUcUi_Pv"
@@ -438,7 +438,7 @@ lbl_803B4FCC:
 /* 803B5050 003B0CF0  81 83 00 00 */	lwz r12, 0(r3)
 /* 803B5054 003B0CF4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 803B5058 003B0CF8  7D 89 03 A6 */	mtctr r12
-/* 803B505C 003B0CFC  4E 80 04 21 */	bctrl 
+/* 803B505C 003B0CFC  4E 80 04 21 */	bctrl
 /* 803B5060 003B0D00  28 03 00 40 */	cmplwi r3, 0x40
 /* 803B5064 003B0D04  41 82 00 0C */	beq lbl_803B5070
 /* 803B5068 003B0D08  38 60 00 00 */	li r3, 0
@@ -472,14 +472,14 @@ lbl_803B50B4:
 /* 803B50CC 003B0D6C  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 803B50D0 003B0D70  7F E6 02 14 */	add r31, r6, r0
 /* 803B50D4 003B0D74  7D 89 03 A6 */	mtctr r12
-/* 803B50D8 003B0D78  4E 80 04 21 */	bctrl 
+/* 803B50D8 003B0D78  4E 80 04 21 */	bctrl
 /* 803B50DC 003B0D7C  80 7C 00 00 */	lwz r3, 0(r28)
 /* 803B50E0 003B0D80  7F A4 EB 78 */	mr r4, r29
 /* 803B50E4 003B0D84  7F E5 FB 78 */	mr r5, r31
 /* 803B50E8 003B0D88  81 83 00 00 */	lwz r12, 0(r3)
 /* 803B50EC 003B0D8C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 803B50F0 003B0D90  7D 89 03 A6 */	mtctr r12
-/* 803B50F4 003B0D94  4E 80 04 21 */	bctrl 
+/* 803B50F4 003B0D94  4E 80 04 21 */	bctrl
 /* 803B50F8 003B0D98  7C 03 F8 40 */	cmplw r3, r31
 /* 803B50FC 003B0D9C  41 82 00 0C */	beq lbl_803B5108
 /* 803B5100 003B0DA0  38 60 00 00 */	li r3, 0
@@ -497,7 +497,7 @@ lbl_803B5118:
 /* 803B5128 003B0DC8  83 81 00 70 */	lwz r28, 0x70(r1)
 /* 803B512C 003B0DCC  7C 08 03 A6 */	mtlr r0
 /* 803B5130 003B0DD0  38 21 00 80 */	addi r1, r1, 0x80
-/* 803B5134 003B0DD4  4E 80 00 20 */	blr 
+/* 803B5134 003B0DD4  4E 80 00 20 */	blr
 
 .global "RoundUp<Uc>__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPUcUi_Pv"
 "RoundUp<Uc>__Q36nw4hbm2ut26@unnamed@snd_StrmFile_cpp@FPUcUi_Pv":
@@ -506,38 +506,79 @@ lbl_803B5118:
 /* 803B5140 003B0DE0  7C 04 00 F8 */	nor r4, r0, r0
 /* 803B5144 003B0DE4  38 03 FF FF */	addi r0, r3, -1
 /* 803B5148 003B0DE8  7C 83 00 38 */	and r3, r4, r0
-/* 803B514C 003B0DEC  4E 80 00 20 */	blr 
+/* 803B514C 003B0DEC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804717A8
 lbl_804717A8:
-	.incbin "baserom.dol", 0x46D8A8, 0x170
+	# ROM: 0x46D8A8
+	.asciz "snd_StrmFile.cpp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (strmData)"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion fileHeader->signature == StrmFile::SIGNATURE_FILE"
+	.byte 0x00, 0x00
+	.asciz "strm file is not supported version.\n  please reconvert file using new version tools.\n"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mHeadBlock->blockHeader.kind == StrmFile::SIGNATURE_HEAD_BLOCK"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion info->blockSize % 32 == 0"
+	.byte 0x00, 0x00
+
 .global lbl_80471918
 lbl_80471918:
-	.incbin "baserom.dol", 0x46DA18, 0x2C
+	# ROM: 0x46DA18
+	.asciz "NW4HBM:Pointer must not be NULL (mHeader)"
+	.byte 0x00, 0x00
+
 .global lbl_80471944
 lbl_80471944:
-	.incbin "baserom.dol", 0x46DA44, 0x2C
+	# ROM: 0x46DA44
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_80471970
 lbl_80471970:
-	.incbin "baserom.dol", 0x46DA70, 0x2C
+	# ROM: 0x46DA70
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_8047199C
 lbl_8047199C:
-	.incbin "baserom.dol", 0x46DA9C, 0x2C
+	# ROM: 0x46DA9C
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_804719C8
 lbl_804719C8:
-	.incbin "baserom.dol", 0x46DAC8, 0x30
+	# ROM: 0x46DAC8
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7660
 lbl_805D7660:
-	.incbin "baserom.dol", 0x4871E0, 0x8
+	# ROM: 0x4871E0
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D7668
 lbl_805D7668:
-	.incbin "baserom.dol", 0x4871E8, 0x8
+	# ROM: 0x4871E8
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D7670
 lbl_805D7670:
-	.incbin "baserom.dol", 0x4871F0, 0x8
+	# ROM: 0x4871F0
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D7678
 lbl_805D7678:
-	.incbin "baserom.dol", 0x4871F8, 0x8
+	# ROM: 0x4871F8
+	.asciz "Util.h"
+	.byte 0x00
+

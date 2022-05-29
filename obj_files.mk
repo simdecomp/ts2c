@@ -4,7 +4,7 @@ $(BUILD_DIR)/asm/code/__mem.c.o \
 $(BUILD_DIR)/asm/code/mem/TRK.c.o \
 $(BUILD_DIR)/asm/code/__exception.s.o \
 $(BUILD_DIR)/asm/code/dolphin/trk.c.o \
-$(BUILD_DIR)/asm/code/THPAudio.c.o \
+$(BUILD_DIR)/asm/code/rom_copy_info.o \
 $(BUILD_DIR)/asm/extab.o \
 $(BUILD_DIR)/asm/extabindex.o \
 $(BUILD_DIR)/asm/code/syncaudio.cpp.o \
@@ -457,6 +457,7 @@ $(BUILD_DIR)/asm/code/CircleBuffer.c.o \
 $(BUILD_DIR)/asm/code/MWCriticalSection/gc.cpp.o \
 $(BUILD_DIR)/asm/code/GDBase.c.o \
 $(BUILD_DIR)/asm/code/THPDec.c.o \
+$(BUILD_DIR)/asm/code/THPAudio.c.o \
 $(BUILD_DIR)/asm/ctors.o \
 $(BUILD_DIR)/asm/dtors.o \
 $(BUILD_DIR)/asm/code/bta/dm/cfg.c.o \

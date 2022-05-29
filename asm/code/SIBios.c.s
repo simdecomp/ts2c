@@ -9,7 +9,7 @@
 /* 803E96D4 003E5374  38 04 00 01 */	addi r0, r4, 1
 /* 803E96D8 003E5378  7C 60 03 78 */	or r0, r3, r0
 /* 803E96DC 003E537C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803E96E0 003E5380  4E 80 00 20 */	blr 
+/* 803E96E0 003E5380  4E 80 00 20 */	blr
 
 .global "SIIsChanBusy"
 "SIIsChanBusy":
@@ -28,7 +28,7 @@ lbl_803E9710:
 /* 803E9710 003E53B0  38 A0 00 01 */	li r5, 1
 lbl_803E9714:
 /* 803E9714 003E53B4  7C A3 2B 78 */	mr r3, r5
-/* 803E9718 003E53B8  4E 80 00 20 */	blr 
+/* 803E9718 003E53B8  4E 80 00 20 */	blr
 
 .global "CompleteTransfer"
 "CompleteTransfer":
@@ -232,7 +232,7 @@ lbl_803E99F0:
 /* 803E9A00 003E56A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E9A04 003E56A4  7C 08 03 A6 */	mtlr r0
 /* 803E9A08 003E56A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E9A0C 003E56AC  4E 80 00 20 */	blr 
+/* 803E9A0C 003E56AC  4E 80 00 20 */	blr
 
 .global "SIInterruptHandler"
 "SIInterruptHandler":
@@ -312,7 +312,7 @@ lbl_803E9B18:
 /* 803E9B28 003E57C8  7E E4 BB 78 */	mr r4, r23
 /* 803E9B2C 003E57CC  7F E5 FB 78 */	mr r5, r31
 /* 803E9B30 003E57D0  7D 89 03 A6 */	mtctr r12
-/* 803E9B34 003E57D4  4E 80 04 21 */	bctrl 
+/* 803E9B34 003E57D4  4E 80 04 21 */	bctrl
 lbl_803E9B38:
 /* 803E9B38 003E57D8  3C A0 CD 00 */	lis r5, 0xCD006438@ha
 /* 803E9B3C 003E57DC  3C 60 80 48 */	lis r3, "Type_80483C28"@ha
@@ -493,7 +493,7 @@ lbl_803E9DB8:
 /* 803E9DC4 003E5A64  7F C3 F3 78 */	mr r3, r30
 /* 803E9DC8 003E5A68  7F E4 FB 78 */	mr r4, r31
 /* 803E9DCC 003E5A6C  7D 89 03 A6 */	mtctr r12
-/* 803E9DD0 003E5A70  4E 80 04 21 */	bctrl 
+/* 803E9DD0 003E5A70  4E 80 04 21 */	bctrl
 lbl_803E9DD4:
 /* 803E9DD4 003E5A74  3A 52 00 01 */	addi r18, r18, 1
 /* 803E9DD8 003E5A78  3A 31 00 04 */	addi r17, r17, 4
@@ -505,7 +505,7 @@ lbl_803E9DE4:
 /* 803E9DEC 003E5A8C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E9DF0 003E5A90  7C 08 03 A6 */	mtlr r0
 /* 803E9DF4 003E5A94  38 21 00 50 */	addi r1, r1, 0x50
-/* 803E9DF8 003E5A98  4E 80 00 20 */	blr 
+/* 803E9DF8 003E5A98  4E 80 00 20 */	blr
 
 .global "SIEnablePollingInterrupt"
 "SIEnablePollingInterrupt":
@@ -540,7 +540,7 @@ lbl_803E9E4C:
 /* 803E9E64 003E5B04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E9E68 003E5B08  7C 08 03 A6 */	mtlr r0
 /* 803E9E6C 003E5B0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9E70 003E5B10  4E 80 00 20 */	blr 
+/* 803E9E70 003E5B10  4E 80 00 20 */	blr
 
 .global "SIUnregisterPollingHandler"
 "SIUnregisterPollingHandler":
@@ -606,7 +606,7 @@ lbl_803E9F44:
 /* 803E9F4C 003E5BEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E9F50 003E5BF0  7C 08 03 A6 */	mtlr r0
 /* 803E9F54 003E5BF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9F58 003E5BF8  4E 80 00 20 */	blr 
+/* 803E9F58 003E5BF8  4E 80 00 20 */	blr
 
 .global "SIInit"
 "SIInit":
@@ -659,7 +659,7 @@ lbl_803EA00C:
 /* 803EA00C 003E5CAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EA010 003E5CB0  7C 08 03 A6 */	mtlr r0
 /* 803EA014 003E5CB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA018 003E5CB8  4E 80 00 20 */	blr 
+/* 803EA018 003E5CB8  4E 80 00 20 */	blr
 
 .global "__SITransfer"
 "__SITransfer":
@@ -776,7 +776,7 @@ lbl_803EA1B4:
 /* 803EA1BC 003E5E5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EA1C0 003E5E60  7C 08 03 A6 */	mtlr r0
 /* 803EA1C4 003E5E64  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EA1C8 003E5E68  4E 80 00 20 */	blr 
+/* 803EA1C8 003E5E68  4E 80 00 20 */	blr
 
 .global "SIGetStatus"
 "SIGetStatus":
@@ -810,7 +810,7 @@ lbl_803EA224:
 /* 803EA234 003E5ED4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EA238 003E5ED8  7C 08 03 A6 */	mtlr r0
 /* 803EA23C 003E5EDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA240 003E5EE0  4E 80 00 20 */	blr 
+/* 803EA240 003E5EE0  4E 80 00 20 */	blr
 
 .global "SISetCommand"
 "SISetCommand":
@@ -818,14 +818,14 @@ lbl_803EA224:
 /* 803EA248 003E5EE8  3C 00 CD 00 */	lis r0, 0xcd00
 /* 803EA24C 003E5EEC  7C 60 1A 14 */	add r3, r0, r3
 /* 803EA250 003E5EF0  90 83 64 00 */	stw r4, 0x6400(r3)
-/* 803EA254 003E5EF4  4E 80 00 20 */	blr 
+/* 803EA254 003E5EF4  4E 80 00 20 */	blr
 
 .global "SITransferCommands"
 "SITransferCommands":
 /* 803EA258 003E5EF8  3C 00 80 00 */	lis r0, 0x8000
 /* 803EA25C 003E5EFC  3C 60 CD 00 */	lis r3, 0xCD006438@ha
 /* 803EA260 003E5F00  90 03 64 38 */	stw r0, 0xCD006438@l(r3)
-/* 803EA264 003E5F04  4E 80 00 20 */	blr 
+/* 803EA264 003E5F04  4E 80 00 20 */	blr
 
 .global "SISetXY"
 "SISetXY":
@@ -851,7 +851,7 @@ lbl_803EA224:
 /* 803EA2B4 003E5F54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803EA2B8 003E5F58  7C 08 03 A6 */	mtlr r0
 /* 803EA2BC 003E5F5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA2C0 003E5F60  4E 80 00 20 */	blr 
+/* 803EA2C0 003E5F60  4E 80 00 20 */	blr
 
 .global "SIEnablePolling"
 "SIEnablePolling":
@@ -890,7 +890,7 @@ lbl_803EA338:
 /* 803EA33C 003E5FDC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803EA340 003E5FE0  7C 08 03 A6 */	mtlr r0
 /* 803EA344 003E5FE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA348 003E5FE8  4E 80 00 20 */	blr 
+/* 803EA348 003E5FE8  4E 80 00 20 */	blr
 
 .global "SIDisablePolling"
 "SIDisablePolling":
@@ -922,7 +922,7 @@ lbl_803EA3A4:
 /* 803EA3A8 003E6048  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803EA3AC 003E604C  7C 08 03 A6 */	mtlr r0
 /* 803EA3B0 003E6050  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA3B4 003E6054  4E 80 00 20 */	blr 
+/* 803EA3B4 003E6054  4E 80 00 20 */	blr
 
 .global "SIGetResponse"
 "SIGetResponse":
@@ -1001,7 +1001,7 @@ lbl_803EA4B0:
 /* 803EA4CC 003E616C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EA4D0 003E6170  7C 08 03 A6 */	mtlr r0
 /* 803EA4D4 003E6174  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EA4D8 003E6178  4E 80 00 20 */	blr 
+/* 803EA4D8 003E6178  4E 80 00 20 */	blr
 
 .global "AlarmHandler"
 "AlarmHandler":
@@ -1040,7 +1040,7 @@ lbl_803EA554:
 /* 803EA558 003E61F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803EA55C 003E61FC  7C 08 03 A6 */	mtlr r0
 /* 803EA560 003E6200  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EA564 003E6204  4E 80 00 20 */	blr 
+/* 803EA564 003E6204  4E 80 00 20 */	blr
 
 .global "SITransfer"
 "SITransfer":
@@ -1141,7 +1141,7 @@ lbl_803EA6BC:
 /* 803EA6C4 003E6364  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803EA6C8 003E6368  7C 08 03 A6 */	mtlr r0
 /* 803EA6CC 003E636C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803EA6D0 003E6370  4E 80 00 20 */	blr 
+/* 803EA6D0 003E6370  4E 80 00 20 */	blr
 
 .global "GetTypeCallback"
 "GetTypeCallback":
@@ -1202,7 +1202,7 @@ lbl_803EA794:
 /* 803EA7A4 003E6444  7F 84 E3 78 */	mr r4, r28
 /* 803EA7A8 003E6448  93 7E 00 00 */	stw r27, 0(r30)
 /* 803EA7AC 003E644C  7D 89 03 A6 */	mtctr r12
-/* 803EA7B0 003E6450  4E 80 04 21 */	bctrl 
+/* 803EA7B0 003E6450  4E 80 04 21 */	bctrl
 lbl_803EA7B4:
 /* 803EA7B4 003E6454  3B BD 00 01 */	addi r29, r29, 1
 /* 803EA7B8 003E6458  3B DE 00 04 */	addi r30, r30, 4
@@ -1316,7 +1316,7 @@ lbl_803EA93C:
 /* 803EA94C 003E65EC  7F 84 E3 78 */	mr r4, r28
 /* 803EA950 003E65F0  93 7E 00 00 */	stw r27, 0(r30)
 /* 803EA954 003E65F4  7D 89 03 A6 */	mtctr r12
-/* 803EA958 003E65F8  4E 80 04 21 */	bctrl 
+/* 803EA958 003E65F8  4E 80 04 21 */	bctrl
 lbl_803EA95C:
 /* 803EA95C 003E65FC  3B BD 00 01 */	addi r29, r29, 1
 /* 803EA960 003E6600  3B DE 00 04 */	addi r30, r30, 4
@@ -1328,7 +1328,7 @@ lbl_803EA96C:
 /* 803EA974 003E6614  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EA978 003E6618  7C 08 03 A6 */	mtlr r0
 /* 803EA97C 003E661C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EA980 003E6620  4E 80 00 20 */	blr 
+/* 803EA980 003E6620  4E 80 00 20 */	blr
 
 .global "SIGetType"
 "SIGetType":
@@ -1446,7 +1446,7 @@ lbl_803EAB20:
 /* 803EAB28 003E67C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EAB2C 003E67CC  7C 08 03 A6 */	mtlr r0
 /* 803EAB30 003E67D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EAB34 003E67D4  4E 80 00 20 */	blr 
+/* 803EAB34 003E67D4  4E 80 00 20 */	blr
 
 .global "SIGetTypeAsync"
 "SIGetTypeAsync":
@@ -1510,7 +1510,7 @@ lbl_803EAC08:
 /* 803EAC0C 003E68AC  7F 83 E3 78 */	mr r3, r28
 /* 803EAC10 003E68B0  7F C4 F3 78 */	mr r4, r30
 /* 803EAC14 003E68B4  7D 89 03 A6 */	mtctr r12
-/* 803EAC18 003E68B8  4E 80 04 21 */	bctrl 
+/* 803EAC18 003E68B8  4E 80 04 21 */	bctrl
 lbl_803EAC1C:
 /* 803EAC1C 003E68BC  7F E3 FB 78 */	mr r3, r31
 /* 803EAC20 003E68C0  4B FF 58 65 */	bl "OSRestoreInterrupts"
@@ -1522,16 +1522,31 @@ lbl_803EAC1C:
 /* 803EAC38 003E68D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EAC3C 003E68DC  7C 08 03 A6 */	mtlr r0
 /* 803EAC40 003E68E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EAC44 003E68E4  4E 80 00 20 */	blr 
+/* 803EAC44 003E68E4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x47FCC8, 0x48
+	# ROM: 0x47FCC8
+	.asciz "<< RVL_SDK - SI \trelease build: Nov 30 2006 03:31:44 (0x4199_60831) >>"
+	.byte 0x00
+
 .global "Si"
 "Si":
-	.incbin "baserom.dol", 0x47FD10, 0x18
+	# ROM: 0x47FD10
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "Type_80483C28"
 "Type_80483C28":
-	.incbin "baserom.dol", 0x47FD28, 0x10
+	# ROM: 0x47FD28
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+	.4byte 0x00000008
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "Packet"
@@ -1568,7 +1583,10 @@ lbl_803EAC1C:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__SIVersion"
 "__SIVersion":
-	.incbin "baserom.dol", 0x487490, 0x8
+	# ROM: 0x487490
+	.4byte 0x80483BC8 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "cmdTypeAndStatus$598"

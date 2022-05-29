@@ -64,7 +64,7 @@ lbl_803BAB68:
 /* 803BAB70 003B6810  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BAB74 003B6814  7C 08 03 A6 */	mtlr r0
 /* 803BAB78 003B6818  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BAB7C 003B681C  4E 80 00 20 */	blr 
+/* 803BAB7C 003B681C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail13WsdFileReaderFPCv"
 "__ct__Q46nw4hbm3snd6detail13WsdFileReaderFPCv":
@@ -134,7 +134,7 @@ lbl_803BAC5C:
 /* 803BAC68 003B6908  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803BAC6C 003B690C  7C 08 03 A6 */	mtlr r0
 /* 803BAC70 003B6910  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BAC74 003B6914  4E 80 00 20 */	blr 
+/* 803BAC74 003B6914  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut25@unnamed@snd_WsdFile_cpp@FPCvUl_PCv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut25@unnamed@snd_WsdFile_cpp@FPCvUl_PCv":
@@ -149,11 +149,11 @@ lbl_803BAC5C:
 /* 803BAC98 003B6938  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BAC9C 003B693C  7C 08 03 A6 */	mtlr r0
 /* 803BACA0 003B6940  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BACA4 003B6944  4E 80 00 20 */	blr 
+/* 803BACA4 003B6944  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut25@unnamed@snd_WsdFile_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut25@unnamed@snd_WsdFile_cpp@FPCv":
-/* 803BACA8 003B6948  4E 80 00 20 */	blr 
+/* 803BACA8 003B6948  4E 80 00 20 */	blr
 
 .global "ReadWaveSoundInfo__Q46nw4hbm3snd6detail13WsdFileReaderCFPQ46nw4hbm3snd6detail13WaveSoundInfoi"
 "ReadWaveSoundInfo__Q46nw4hbm3snd6detail13WsdFileReaderCFPQ46nw4hbm3snd6detail13WaveSoundInfoi":
@@ -227,7 +227,7 @@ lbl_803BADA0:
 /* 803BADAC 003B6A4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BADB0 003B6A50  7C 08 03 A6 */	mtlr r0
 /* 803BADB4 003B6A54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BADB8 003B6A58  4E 80 00 20 */	blr 
+/* 803BADB8 003B6A58  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile7WsdInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util51DataRef<Q56nw4hbm3snd6detail7WsdFile7WsdInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile7WsdInfo"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile7WsdInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util51DataRef<Q56nw4hbm3snd6detail7WsdFile7WsdInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile7WsdInfo":
@@ -257,7 +257,7 @@ lbl_803BADFC:
 /* 803BAE14 003B6AB4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BAE18 003B6AB8  7C 08 03 A6 */	mtlr r0
 /* 803BAE1C 003B6ABC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BAE20 003B6AC0  4E 80 00 20 */	blr 
+/* 803BAE20 003B6AC0  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile3Wsd,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util47DataRef<Q56nw4hbm3snd6detail7WsdFile3Wsd,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile3Wsd"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile3Wsd,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util47DataRef<Q56nw4hbm3snd6detail7WsdFile3Wsd,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile3Wsd":
@@ -287,7 +287,7 @@ lbl_803BAE64:
 /* 803BAE7C 003B6B1C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BAE80 003B6B20  7C 08 03 A6 */	mtlr r0
 /* 803BAE84 003B6B24  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BAE88 003B6B28  4E 80 00 20 */	blr 
+/* 803BAE88 003B6B28  4E 80 00 20 */	blr
 
 .global "ReadWaveSoundNoteInfo__Q46nw4hbm3snd6detail13WsdFileReaderCFPQ46nw4hbm3snd6detail17WaveSoundNoteInfoii"
 "ReadWaveSoundNoteInfo__Q46nw4hbm3snd6detail13WsdFileReaderCFPQ46nw4hbm3snd6detail17WaveSoundNoteInfoii":
@@ -356,7 +356,7 @@ lbl_803BAF6C:
 /* 803BAF7C 003B6C1C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803BAF80 003B6C20  7C 08 03 A6 */	mtlr r0
 /* 803BAF84 003B6C24  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BAF88 003B6C28  4E 80 00 20 */	blr 
+/* 803BAF88 003B6C28  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile8NoteInfo"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail7WsdFile8NoteInfo":
@@ -386,7 +386,7 @@ lbl_803BAFCC:
 /* 803BAFE4 003B6C84  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BAFE8 003B6C88  7C 08 03 A6 */	mtlr r0
 /* 803BAFEC 003B6C8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BAFF0 003B6C90  4E 80 00 20 */	blr 
+/* 803BAFF0 003B6C90  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util128DataRef<Q56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>,v,v,v>PCv_PCQ56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util128DataRef<Q56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>,v,v,v>PCv_PCQ56nw4hbm3snd6detail4Util86Table<Q56nw4hbm3snd6detail4Util52DataRef<Q56nw4hbm3snd6detail7WsdFile8NoteInfo,v,v,v>>":
@@ -416,7 +416,7 @@ lbl_803BB034:
 /* 803BB04C 003B6CEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803BB050 003B6CF0  7C 08 03 A6 */	mtlr r0
 /* 803BB054 003B6CF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BB058 003B6CF8  4E 80 00 20 */	blr 
+/* 803BB058 003B6CF8  4E 80 00 20 */	blr
 
 .global "ReadWaveParam__Q46nw4hbm3snd6detail13WsdFileReaderCFiPQ46nw4hbm3snd6detail8WaveDataPCv"
 "ReadWaveParam__Q46nw4hbm3snd6detail13WsdFileReaderCFiPQ46nw4hbm3snd6detail8WaveDataPCv":
@@ -463,40 +463,79 @@ lbl_803BB0E4:
 /* 803BB0EC 003B6D8C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803BB0F0 003B6D90  7C 08 03 A6 */	mtlr r0
 /* 803BB0F4 003B6D94  38 21 00 20 */	addi r1, r1, 0x20
-/* 803BB0F8 003B6D98  4E 80 00 20 */	blr 
+/* 803BB0F8 003B6D98  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472948
 lbl_80472948:
-	.incbin "baserom.dol", 0x46EA48, 0x190
+	# ROM: 0x46EA48
+	.asciz "snd_WsdFile.cpp"
+	.asciz "NW4HBM:Failed assertion fileHeader->signature == WsdFile::SIGNATURE_FILE"
+	.byte 0x00, 0x00, 0x00
+	.asciz "wsd file is not supported version.\n  please reconvert file using new version tools.\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (wsdData)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mDataBlock->blockHeader.kind == WsdFile::SIGNATURE_DATA_BLOCK"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mWaveBlock->blockHeader.kind == WsdFile::SIGNATURE_WAVE_BLOCK"
+	.byte 0x00, 0x00
+
 .global lbl_80472AD8
 lbl_80472AD8:
-	.incbin "baserom.dol", 0x46EBD8, 0x2C
+	# ROM: 0x46EBD8
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_80472B04
 lbl_80472B04:
-	.incbin "baserom.dol", 0x46EC04, 0x2C
+	# ROM: 0x46EC04
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_80472B30
 lbl_80472B30:
-	.incbin "baserom.dol", 0x46EC30, 0x2C
+	# ROM: 0x46EC30
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_80472B5C
 lbl_80472B5C:
-	.incbin "baserom.dol", 0x46EC5C, 0x2C
+	# ROM: 0x46EC5C
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7688
 lbl_805D7688:
-	.incbin "baserom.dol", 0x487208, 0x8
+	# ROM: 0x487208
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D7690
 lbl_805D7690:
-	.incbin "baserom.dol", 0x487210, 0x8
+	# ROM: 0x487210
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D7698
 lbl_805D7698:
-	.incbin "baserom.dol", 0x487218, 0x8
+	# ROM: 0x487218
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D76A0
 lbl_805D76A0:
-	.incbin "baserom.dol", 0x487220, 0x8
+	# ROM: 0x487220
+	.asciz "Util.h"
+	.byte 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBC40
 lbl_805DBC40:
-	.incbin "baserom.dol", 0x489F60, 0x8
+	# ROM: 0x489F60
+	.4byte 0x3F800000
+	.4byte 0x00000000
+

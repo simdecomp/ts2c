@@ -20,13 +20,13 @@ lbl_803B8B1C:
 /* 803B8B24 003B47C4  38 63 AA F8 */	addi r3, r3, "instance$1100"@l
 /* 803B8B28 003B47C8  7C 08 03 A6 */	mtlr r0
 /* 803B8B2C 003B47CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8B30 003B47D0  4E 80 00 20 */	blr 
+/* 803B8B30 003B47D0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail10TaskThreadFv"
 "__ct__Q46nw4hbm3snd6detail10TaskThreadFv":
 /* 803B8B34 003B47D4  38 00 00 00 */	li r0, 0
 /* 803B8B38 003B47D8  98 03 23 60 */	stb r0, 0x2360(r3)
-/* 803B8B3C 003B47DC  4E 80 00 20 */	blr 
+/* 803B8B3C 003B47DC  4E 80 00 20 */	blr
 
 .global "Create__Q46nw4hbm3snd6detail10TaskThreadFl"
 "Create__Q46nw4hbm3snd6detail10TaskThreadFl":
@@ -72,7 +72,7 @@ lbl_803B8BC8:
 /* 803B8BD0 003B4870  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B8BD4 003B4874  7C 08 03 A6 */	mtlr r0
 /* 803B8BD8 003B4878  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8BDC 003B487C  4E 80 00 20 */	blr 
+/* 803B8BDC 003B487C  4E 80 00 20 */	blr
 
 .global "SendWakeupMessage__Q46nw4hbm3snd6detail10TaskThreadFv"
 "SendWakeupMessage__Q46nw4hbm3snd6detail10TaskThreadFv":
@@ -99,7 +99,7 @@ lbl_803B8BC8:
 /* 803B8C24 003B48C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8C28 003B48C8  7C 08 03 A6 */	mtlr r0
 /* 803B8C2C 003B48CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8C30 003B48D0  4E 80 00 20 */	blr 
+/* 803B8C30 003B48D0  4E 80 00 20 */	blr
 
 .global "ThreadProc__Q46nw4hbm3snd6detail10TaskThreadFv"
 "ThreadProc__Q46nw4hbm3snd6detail10TaskThreadFv":
@@ -126,7 +126,7 @@ lbl_803B8C70:
 /* 803B8C7C 003B491C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803B8C80 003B4920  7C 08 03 A6 */	mtlr r0
 /* 803B8C84 003B4924  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8C88 003B4928  4E 80 00 20 */	blr 
+/* 803B8C88 003B4928  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "instance$1100"

@@ -6,7 +6,7 @@
 /* 803C7904 003C35A4  3C 80 80 47 */	lis r4, "__vt__Q36nw4hbm2ut19TagProcessorBase<c>"@ha
 /* 803C7908 003C35A8  38 84 4C 3C */	addi r4, r4, "__vt__Q36nw4hbm2ut19TagProcessorBase<c>"@l
 /* 803C790C 003C35AC  90 83 00 00 */	stw r4, 0(r3)
-/* 803C7910 003C35B0  4E 80 00 20 */	blr 
+/* 803C7910 003C35B0  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut19TagProcessorBase<c>Fv"
 "__dt__Q36nw4hbm2ut19TagProcessorBase<c>Fv":
@@ -26,7 +26,7 @@ lbl_803C793C:
 /* 803C7944 003C35E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C7948 003C35E8  7C 08 03 A6 */	mtlr r0
 /* 803C794C 003C35EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C7950 003C35F0  4E 80 00 20 */	blr 
+/* 803C7950 003C35F0  4E 80 00 20 */	blr
 
 .global "Process__Q36nw4hbm2ut19TagProcessorBase<c>FUsPQ36nw4hbm2ut15PrintContext<c>"
 "Process__Q36nw4hbm2ut19TagProcessorBase<c>FUsPQ36nw4hbm2ut15PrintContext<c>":
@@ -142,7 +142,7 @@ lbl_803C7AC8:
 /* 803C7AD8 003C3778  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803C7ADC 003C377C  7C 08 03 A6 */	mtlr r0
 /* 803C7AE0 003C3780  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C7AE4 003C3784  4E 80 00 20 */	blr 
+/* 803C7AE4 003C3784  4E 80 00 20 */	blr
 
 .global "CalcRect__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<c>"
 "CalcRect__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<c>":
@@ -359,7 +359,7 @@ lbl_803C7DD4:
 /* 803C7DE4 003C3A84  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C7DE8 003C3A88  7C 08 03 A6 */	mtlr r0
 /* 803C7DEC 003C3A8C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C7DF0 003C3A90  4E 80 00 20 */	blr 
+/* 803C7DF0 003C3A90  4E 80 00 20 */	blr
 
 .global "ProcessLinefeed__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut15PrintContext<c>"
 "ProcessLinefeed__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut15PrintContext<c>":
@@ -459,7 +459,7 @@ lbl_803C7F08:
 /* 803C7F4C 003C3BEC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803C7F50 003C3BF0  7C 08 03 A6 */	mtlr r0
 /* 803C7F54 003C3BF4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C7F58 003C3BF8  4E 80 00 20 */	blr 
+/* 803C7F58 003C3BF8  4E 80 00 20 */	blr
 
 .global "ProcessTab__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut15PrintContext<c>"
 "ProcessTab__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut15PrintContext<c>":
@@ -592,7 +592,7 @@ lbl_803C8118:
 /* 803C812C 003C3DCC  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803C8130 003C3DD0  7C 08 03 A6 */	mtlr r0
 /* 803C8134 003C3DD4  38 21 00 40 */	addi r1, r1, 0x40
-/* 803C8138 003C3DD8  4E 80 00 20 */	blr 
+/* 803C8138 003C3DD8  4E 80 00 20 */	blr
 
 .global "Normalize__Q36nw4hbm2ut4RectFv"
 "Normalize__Q36nw4hbm2ut4RectFv":
@@ -645,14 +645,14 @@ lbl_803C8118:
 /* 803C81F4 003C3E94  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803C81F8 003C3E98  7C 08 03 A6 */	mtlr r0
 /* 803C81FC 003C3E9C  38 21 00 50 */	addi r1, r1, 0x50
-/* 803C8200 003C3EA0  4E 80 00 20 */	blr 
+/* 803C8200 003C3EA0  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut19TagProcessorBase<w>Fv"
 "__ct__Q36nw4hbm2ut19TagProcessorBase<w>Fv":
 /* 803C8204 003C3EA4  3C 80 80 47 */	lis r4, "__vt__Q36nw4hbm2ut19TagProcessorBase<w>"@ha
 /* 803C8208 003C3EA8  38 84 4C 28 */	addi r4, r4, "__vt__Q36nw4hbm2ut19TagProcessorBase<w>"@l
 /* 803C820C 003C3EAC  90 83 00 00 */	stw r4, 0(r3)
-/* 803C8210 003C3EB0  4E 80 00 20 */	blr 
+/* 803C8210 003C3EB0  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut19TagProcessorBase<w>Fv"
 "__dt__Q36nw4hbm2ut19TagProcessorBase<w>Fv":
@@ -672,7 +672,7 @@ lbl_803C823C:
 /* 803C8244 003C3EE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C8248 003C3EE8  7C 08 03 A6 */	mtlr r0
 /* 803C824C 003C3EEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C8250 003C3EF0  4E 80 00 20 */	blr 
+/* 803C8250 003C3EF0  4E 80 00 20 */	blr
 
 .global "Process__Q36nw4hbm2ut19TagProcessorBase<w>FUsPQ36nw4hbm2ut15PrintContext<w>"
 "Process__Q36nw4hbm2ut19TagProcessorBase<w>FUsPQ36nw4hbm2ut15PrintContext<w>":
@@ -788,7 +788,7 @@ lbl_803C83C8:
 /* 803C83D8 003C4078  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803C83DC 003C407C  7C 08 03 A6 */	mtlr r0
 /* 803C83E0 003C4080  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C83E4 003C4084  4E 80 00 20 */	blr 
+/* 803C83E4 003C4084  4E 80 00 20 */	blr
 
 .global "CalcRect__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<w>"
 "CalcRect__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<w>":
@@ -1005,7 +1005,7 @@ lbl_803C86D4:
 /* 803C86E4 003C4384  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C86E8 003C4388  7C 08 03 A6 */	mtlr r0
 /* 803C86EC 003C438C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C86F0 003C4390  4E 80 00 20 */	blr 
+/* 803C86F0 003C4390  4E 80 00 20 */	blr
 
 .global "ProcessLinefeed__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut15PrintContext<w>"
 "ProcessLinefeed__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut15PrintContext<w>":
@@ -1105,7 +1105,7 @@ lbl_803C8808:
 /* 803C884C 003C44EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803C8850 003C44F0  7C 08 03 A6 */	mtlr r0
 /* 803C8854 003C44F4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C8858 003C44F8  4E 80 00 20 */	blr 
+/* 803C8858 003C44F8  4E 80 00 20 */	blr
 
 .global "ProcessTab__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut15PrintContext<w>"
 "ProcessTab__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut15PrintContext<w>":
@@ -1238,26 +1238,63 @@ lbl_803C8A18:
 /* 803C8A2C 003C46CC  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803C8A30 003C46D0  7C 08 03 A6 */	mtlr r0
 /* 803C8A34 003C46D4  38 21 00 40 */	addi r1, r1, 0x40
-/* 803C8A38 003C46D8  4E 80 00 20 */	blr 
+/* 803C8A38 003C46D8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80474B48
 lbl_80474B48:
-	.incbin "baserom.dol", 0x470C48, 0x30
+	# ROM: 0x470C48
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+
 .global lbl_80474B78
 lbl_80474B78:
-	.incbin "baserom.dol", 0x470C78, 0x40
+	# ROM: 0x470C78
+	.asciz "ut_TagProcessorBase.cpp"
+	.asciz "NW4HBM:Failed assertion code < ' '"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_80474BB8
 lbl_80474BB8:
-	.incbin "baserom.dol", 0x470CB8, 0x70
+	# ROM: 0x470CB8
+	.asciz "NW4HBM:Pointer Error\ncontext(=%p) is not valid pointer."
+	.asciz "NW4HBM:Pointer Error\npRect(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+
 .global "__vt__Q36nw4hbm2ut19TagProcessorBase<w>"
 "__vt__Q36nw4hbm2ut19TagProcessorBase<w>":
-	.incbin "baserom.dol", 0x470D28, 0x14
+	# ROM: 0x470D28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm2ut19TagProcessorBase<w>Fv" ;# ptr (0x803C8214)
+	.4byte "Process__Q36nw4hbm2ut19TagProcessorBase<w>FUsPQ36nw4hbm2ut15PrintContext<w>" ;# ptr (0x803C8254)
+	.4byte "CalcRect__Q36nw4hbm2ut19TagProcessorBase<w>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<w>" ;# ptr (0x803C83E8)
+
 .global "__vt__Q36nw4hbm2ut19TagProcessorBase<c>"
 "__vt__Q36nw4hbm2ut19TagProcessorBase<c>":
-	.incbin "baserom.dol", 0x470D3C, 0x14
+	# ROM: 0x470D3C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm2ut19TagProcessorBase<c>Fv" ;# ptr (0x803C7914)
+	.4byte "Process__Q36nw4hbm2ut19TagProcessorBase<c>FUsPQ36nw4hbm2ut15PrintContext<c>" ;# ptr (0x803C7954)
+	.4byte "CalcRect__Q36nw4hbm2ut19TagProcessorBase<c>FPQ36nw4hbm2ut4RectUsPQ36nw4hbm2ut15PrintContext<c>" ;# ptr (0x803C7AE8)
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBC98
 lbl_805DBC98:
-	.incbin "baserom.dol", 0x489FB8, 0x8
+	# ROM: 0x489FB8
+	.4byte 0x43300000
+	.4byte 0x80000000
+

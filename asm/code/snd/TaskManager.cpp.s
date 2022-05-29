@@ -28,7 +28,7 @@ lbl_803B8024:
 /* 803B8030 003B3CD0  38 63 AA B0 */	addi r3, r3, "instance$1096"@l
 /* 803B8034 003B3CD4  7C 08 03 A6 */	mtlr r0
 /* 803B8038 003B3CD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B803C 003B3CDC  4E 80 00 20 */	blr 
+/* 803B803C 003B3CDC  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail11TaskManagerFv"
 "__dt__Q46nw4hbm3snd6detail11TaskManagerFv":
@@ -58,7 +58,7 @@ lbl_803B808C:
 /* 803B8098 003B3D38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B809C 003B3D3C  7C 08 03 A6 */	mtlr r0
 /* 803B80A0 003B3D40  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B80A4 003B3D44  4E 80 00 20 */	blr 
+/* 803B80A4 003B3D44  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv"
 "__dt__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv":
@@ -84,7 +84,7 @@ lbl_803B80E4:
 /* 803B80F0 003B3D90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B80F4 003B3D94  7C 08 03 A6 */	mtlr r0
 /* 803B80F8 003B3D98  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B80FC 003B3D9C  4E 80 00 20 */	blr 
+/* 803B80FC 003B3D9C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail11TaskManagerFv"
 "__ct__Q46nw4hbm3snd6detail11TaskManagerFv":
@@ -127,7 +127,7 @@ lbl_803B8184:
 /* 803B818C 003B3E2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8190 003B3E30  7C 08 03 A6 */	mtlr r0
 /* 803B8194 003B3E34  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8198 003B3E38  4E 80 00 20 */	blr 
+/* 803B8198 003B3E38  4E 80 00 20 */	blr
 
 .global "MEMCreateUnitHeap"
 "MEMCreateUnitHeap":
@@ -148,7 +148,7 @@ lbl_803B8184:
 /* 803B81C8 003B3E68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B81CC 003B3E6C  7C 08 03 A6 */	mtlr r0
 /* 803B81D0 003B3E70  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B81D4 003B3E74  4E 80 00 20 */	blr 
+/* 803B81D4 003B3E74  4E 80 00 20 */	blr
 
 .global "Alloc__Q46nw4hbm3snd6detail11TaskManagerFv"
 "Alloc__Q46nw4hbm3snd6detail11TaskManagerFv":
@@ -203,7 +203,7 @@ lbl_803B8264:
 /* 803B8288 003B3F28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803B828C 003B3F2C  7C 08 03 A6 */	mtlr r0
 /* 803B8290 003B3F30  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8294 003B3F34  4E 80 00 20 */	blr 
+/* 803B8294 003B3F34  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail11TaskManagerFPv"
 "Free__Q46nw4hbm3snd6detail11TaskManagerFPv":
@@ -238,7 +238,7 @@ lbl_803B82DC:
 /* 803B8304 003B3FA4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803B8308 003B3FA8  7C 08 03 A6 */	mtlr r0
 /* 803B830C 003B3FAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8310 003B3FB0  4E 80 00 20 */	blr 
+/* 803B8310 003B3FB0  4E 80 00 20 */	blr
 
 .global "GetTaskBufferSize__Q46nw4hbm3snd6detail11TaskManagerCFv"
 "GetTaskBufferSize__Q46nw4hbm3snd6detail11TaskManagerCFv":
@@ -248,7 +248,7 @@ lbl_803B82DC:
 .global "MEMGetMemBlockSizeForUnitHeap"
 "MEMGetMemBlockSizeForUnitHeap":
 /* 803B831C 003B3FBC  80 63 00 40 */	lwz r3, 0x40(r3)
-/* 803B8320 003B3FC0  4E 80 00 20 */	blr 
+/* 803B8320 003B3FC0  4E 80 00 20 */	blr
 
 .global "AppendTask__Q46nw4hbm3snd6detail11TaskManagerFPQ46nw4hbm3snd6detail4TaskQ56nw4hbm3snd6detail11TaskManager12TaskPriority"
 "AppendTask__Q46nw4hbm3snd6detail11TaskManagerFPQ46nw4hbm3snd6detail4TaskQ56nw4hbm3snd6detail11TaskManager12TaskPriority":
@@ -297,7 +297,7 @@ lbl_803B8390:
 /* 803B83C4 003B4064  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803B83C8 003B4068  7C 08 03 A6 */	mtlr r0
 /* 803B83CC 003B406C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B83D0 003B4070  4E 80 00 20 */	blr 
+/* 803B83D0 003B4070  4E 80 00 20 */	blr
 
 .global "PushBack__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ46nw4hbm3snd6detail4Task"
 "PushBack__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ46nw4hbm3snd6detail4Task":
@@ -319,7 +319,7 @@ lbl_803B8390:
 /* 803B8410 003B40B0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803B8414 003B40B4  7C 08 03 A6 */	mtlr r0
 /* 803B8418 003B40B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B841C 003B40BC  4E 80 00 20 */	blr 
+/* 803B841C 003B40BC  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorPQ46nw4hbm3snd6detail4Task"
 "Insert__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorPQ46nw4hbm3snd6detail4Task":
@@ -345,7 +345,7 @@ lbl_803B8390:
 /* 803B846C 003B410C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B8470 003B4110  7C 08 03 A6 */	mtlr r0
 /* 803B8474 003B4114  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8478 003B4118  4E 80 00 20 */	blr 
+/* 803B8478 003B4118  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -360,7 +360,7 @@ lbl_803B8390:
 /* 803B849C 003B413C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B84A0 003B4140  7C 08 03 A6 */	mtlr r0
 /* 803B84A4 003B4144  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B84A8 003B4148  4E 80 00 20 */	blr 
+/* 803B84A8 003B4148  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ46nw4hbm3snd6detail4Task"
 "GetNodeFromPointer__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ46nw4hbm3snd6detail4Task":
@@ -384,7 +384,7 @@ lbl_803B84E4:
 /* 803B84EC 003B418C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B84F0 003B4190  7C 08 03 A6 */	mtlr r0
 /* 803B84F4 003B4194  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B84F8 003B4198  4E 80 00 20 */	blr 
+/* 803B84F8 003B4198  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv"
 "GetEndIter__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv":
@@ -400,7 +400,7 @@ lbl_803B84E4:
 /* 803B8520 003B41C0  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B8524 003B41C4  7C 08 03 A6 */	mtlr r0
 /* 803B8528 003B41C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B852C 003B41CC  4E 80 00 20 */	blr 
+/* 803B852C 003B41CC  4E 80 00 20 */	blr
 
 .global "PopTask__Q46nw4hbm3snd6detail11TaskManagerFQ56nw4hbm3snd6detail11TaskManager12TaskPriority"
 "PopTask__Q46nw4hbm3snd6detail11TaskManagerFQ56nw4hbm3snd6detail11TaskManager12TaskPriority":
@@ -461,7 +461,7 @@ lbl_803B85F0:
 /* 803B85F8 003B4298  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803B85FC 003B429C  7C 08 03 A6 */	mtlr r0
 /* 803B8600 003B42A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8604 003B42A4  4E 80 00 20 */	blr 
+/* 803B8604 003B42A4  4E 80 00 20 */	blr
 
 .global "GetFront__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv"
 "GetFront__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv":
@@ -490,7 +490,7 @@ lbl_803B8644:
 /* 803B865C 003B42FC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803B8660 003B4300  7C 08 03 A6 */	mtlr r0
 /* 803B8664 003B4304  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8668 003B4308  4E 80 00 20 */	blr 
+/* 803B8668 003B4308  4E 80 00 20 */	blr
 
 .global "__ml__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorCFv"
 "__ml__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorCFv":
@@ -515,7 +515,7 @@ lbl_803B86A8:
 /* 803B86B0 003B4350  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B86B4 003B4354  7C 08 03 A6 */	mtlr r0
 /* 803B86B8 003B4358  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B86BC 003B435C  4E 80 00 20 */	blr 
+/* 803B86BC 003B435C  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorCFv"
 "__rf__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorCFv":
@@ -527,7 +527,7 @@ lbl_803B86A8:
 /* 803B86D4 003B4374  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B86D8 003B4378  7C 08 03 A6 */	mtlr r0
 /* 803B86DC 003B437C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B86E0 003B4380  4E 80 00 20 */	blr 
+/* 803B86E0 003B4380  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FPQ36nw4hbm2ut12LinkListNode":
@@ -551,7 +551,7 @@ lbl_803B871C:
 /* 803B8724 003B43C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8728 003B43C8  7C 08 03 A6 */	mtlr r0
 /* 803B872C 003B43CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8730 003B43D0  4E 80 00 20 */	blr 
+/* 803B8730 003B43D0  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv"
 "GetBeginIter__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>Fv":
@@ -567,7 +567,7 @@ lbl_803B871C:
 /* 803B8758 003B43F8  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B875C 003B43FC  7C 08 03 A6 */	mtlr r0
 /* 803B8760 003B4400  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8764 003B4404  4E 80 00 20 */	blr 
+/* 803B8764 003B4404  4E 80 00 20 */	blr
 
 .global "Execute__Q46nw4hbm3snd6detail11TaskManagerFv"
 "Execute__Q46nw4hbm3snd6detail11TaskManagerFv":
@@ -585,7 +585,7 @@ lbl_803B877C:
 /* 803B8790 003B4430  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803B8794 003B4434  7C 08 03 A6 */	mtlr r0
 /* 803B8798 003B4438  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B879C 003B443C  4E 80 00 20 */	blr 
+/* 803B879C 003B443C  4E 80 00 20 */	blr
 
 .global "ExecuteSingle__Q46nw4hbm3snd6detail11TaskManagerFv"
 "ExecuteSingle__Q46nw4hbm3snd6detail11TaskManagerFv":
@@ -625,7 +625,7 @@ lbl_803B881C:
 /* 803B8820 003B44C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 803B8824 003B44C4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803B8828 003B44C8  7D 89 03 A6 */	mtctr r12
-/* 803B882C 003B44CC  4E 80 04 21 */	bctrl 
+/* 803B882C 003B44CC  4E 80 04 21 */	bctrl
 /* 803B8830 003B44D0  80 9F 00 1C */	lwz r4, 0x1c(r31)
 /* 803B8834 003B44D4  7F E3 FB 78 */	mr r3, r31
 /* 803B8838 003B44D8  4B FF FA 61 */	bl "Free__Q46nw4hbm3snd6detail11TaskManagerFPv"
@@ -640,7 +640,7 @@ lbl_803B8854:
 /* 803B8858 003B44F8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803B885C 003B44FC  7C 08 03 A6 */	mtlr r0
 /* 803B8860 003B4500  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8864 003B4504  4E 80 00 20 */	blr 
+/* 803B8864 003B4504  4E 80 00 20 */	blr
 
 .global "CancelByTaskId__Q46nw4hbm3snd6detail11TaskManagerFUl"
 "CancelByTaskId__Q46nw4hbm3snd6detail11TaskManagerFUl":
@@ -713,7 +713,7 @@ lbl_803B8910:
 /* 803B8964 003B4604  81 83 00 00 */	lwz r12, 0(r3)
 /* 803B8968 003B4608  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803B896C 003B460C  7D 89 03 A6 */	mtctr r12
-/* 803B8970 003B4610  4E 80 04 21 */	bctrl 
+/* 803B8970 003B4610  4E 80 04 21 */	bctrl
 lbl_803B8974:
 /* 803B8974 003B4614  38 61 00 24 */	addi r3, r1, 0x24
 /* 803B8978 003B4618  38 80 FF FF */	li r4, -1
@@ -723,7 +723,7 @@ lbl_803B8974:
 /* 803B8988 003B4628  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803B898C 003B462C  7C 08 03 A6 */	mtlr r0
 /* 803B8990 003B4630  38 21 00 40 */	addi r1, r1, 0x40
-/* 803B8994 003B4634  4E 80 00 20 */	blr 
+/* 803B8994 003B4634  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator":
@@ -742,7 +742,7 @@ lbl_803B8974:
 /* 803B89C8 003B4668  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B89CC 003B466C  7C 08 03 A6 */	mtlr r0
 /* 803B89D0 003B4670  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B89D4 003B4674  4E 80 00 20 */	blr 
+/* 803B89D4 003B4674  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator":
@@ -759,7 +759,7 @@ lbl_803B8974:
 /* 803B8A00 003B46A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8A04 003B46A4  7C 08 03 A6 */	mtlr r0
 /* 803B8A08 003B46A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8A0C 003B46AC  4E 80 00 20 */	blr 
+/* 803B8A0C 003B46AC  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator"
 "Erase__Q36nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>FQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator":
@@ -778,7 +778,7 @@ lbl_803B8974:
 /* 803B8A40 003B46E0  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B8A44 003B46E4  7C 08 03 A6 */	mtlr r0
 /* 803B8A48 003B46E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8A4C 003B46EC  4E 80 00 20 */	blr 
+/* 803B8A4C 003B46EC  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFi"
 "__pp__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFi":
@@ -797,7 +797,7 @@ lbl_803B8974:
 /* 803B8A80 003B4720  80 61 00 08 */	lwz r3, 8(r1)
 /* 803B8A84 003B4724  7C 08 03 A6 */	mtlr r0
 /* 803B8A88 003B4728  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B8A8C 003B472C  4E 80 00 20 */	blr 
+/* 803B8A8C 003B472C  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFv"
 "__pp__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFv":
@@ -812,7 +812,7 @@ lbl_803B8974:
 /* 803B8AB0 003B4750  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8AB4 003B4754  7C 08 03 A6 */	mtlr r0
 /* 803B8AB8 003B4758  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8ABC 003B475C  4E 80 00 20 */	blr 
+/* 803B8ABC 003B475C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFRCQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator"
 "__ct__Q46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8IteratorFRCQ46nw4hbm2ut37LinkList<Q46nw4hbm3snd6detail4Task,4>8Iterator":
@@ -827,45 +827,80 @@ lbl_803B8974:
 /* 803B8AE0 003B4780  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B8AE4 003B4784  7C 08 03 A6 */	mtlr r0
 /* 803B8AE8 003B4788  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B8AEC 003B478C  4E 80 00 20 */	blr 
+/* 803B8AEC 003B478C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80472098
 lbl_80472098:
-	.incbin "baserom.dol", 0x46E198, 0x18
+	# ROM: 0x46E198
+	.asciz "snd_TaskManager.cpp"
+	.4byte 0x00000000
+
 .global lbl_804720B0
 lbl_804720B0:
-	.incbin "baserom.dol", 0x46E1B0, 0x50
+	# ROM: 0x46E1B0
+	.asciz "NW4HBM:Failed assertion MEMCountFreeBlockForUnitHeap( mHeapHandle ) >= TASK_NUM"
+
 .global lbl_80472100
 lbl_80472100:
-	.incbin "baserom.dol", 0x46E200, 0x60
+	# ROM: 0x46E200
+	.asciz "NW4HBM:Failed assertion mHeapHandle != MEM_HEAP_INVALID_HANDLE"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion result"
+	.byte 0x00
+
 .global lbl_80472160
 lbl_80472160:
-	.incbin "baserom.dol", 0x46E260, 0x44
+	# ROM: 0x46E260
+	.asciz "priority is out of bounds(%d)\n%d <= priority < %d not satisfied."
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804721A4
 lbl_804721A4:
-	.incbin "baserom.dol", 0x46E2A4, 0x24
+	# ROM: 0x46E2A4
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_804721C8
 lbl_804721C8:
-	.incbin "baserom.dol", 0x46E2C8, 0xC
+	# ROM: 0x46E2C8
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_804721D4
 lbl_804721D4:
-	.incbin "baserom.dol", 0x46E2D4, 0x24
+	# ROM: 0x46E2D4
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_804721F8
 lbl_804721F8:
-	.incbin "baserom.dol", 0x46E2F8, 0xC
+	# ROM: 0x46E2F8
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_80472204
 lbl_80472204:
-	.incbin "baserom.dol", 0x46E304, 0x24
+	# ROM: 0x46E304
+	.asciz "NW4HBM:Failed assertion !IsEmpty()"
+	.byte 0x00
+
 .global lbl_80472228
 lbl_80472228:
-	.incbin "baserom.dol", 0x46E328, 0xC
+	# ROM: 0x46E328
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_80472234
 lbl_80472234:
-	.incbin "baserom.dol", 0x46E334, 0x24
+	# ROM: 0x46E334
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_80472258
 lbl_80472258:
-	.incbin "baserom.dol", 0x46E358, 0x10
+	# ROM: 0x46E358
+	.asciz "LinkList.h"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "mTaskArea__Q46nw4hbm3snd6detail11TaskManager"

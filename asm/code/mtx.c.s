@@ -13,7 +13,7 @@
 /* 803D7564 003D3204  F0 23 00 10 */	psq_st f1, 16(r3), 0, qr0
 /* 803D7568 003D3208  F0 43 00 00 */	psq_st f2, 0(r3), 0, qr0
 /* 803D756C 003D320C  F0 43 00 28 */	psq_st f2, 40(r3), 0, qr0
-/* 803D7570 003D3210  4E 80 00 20 */	blr 
+/* 803D7570 003D3210  4E 80 00 20 */	blr
 
 .global "PSMTXCopy"
 "PSMTXCopy":
@@ -29,7 +29,7 @@
 /* 803D7598 003D3238  F0 84 00 20 */	psq_st f4, 32(r4), 0, qr0
 /* 803D759C 003D323C  E0 A3 00 28 */	psq_l f5, 40(r3), 0, qr0
 /* 803D75A0 003D3240  F0 A4 00 28 */	psq_st f5, 40(r4), 0, qr0
-/* 803D75A4 003D3244  4E 80 00 20 */	blr 
+/* 803D75A4 003D3244  4E 80 00 20 */	blr
 
 .global "PSMTXConcat"
 "PSMTXConcat":
@@ -83,7 +83,7 @@
 /* 803D7664 003D3304  F0 05 00 28 */	psq_st f0, 40(r5), 0, qr0
 /* 803D7668 003D3308  CB E1 00 28 */	lfd f31, 0x28(r1)
 /* 803D766C 003D330C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803D7670 003D3310  4E 80 00 20 */	blr 
+/* 803D7670 003D3310  4E 80 00 20 */	blr
 
 .global "PSMTXTranspose"
 "PSMTXTranspose":
@@ -106,7 +106,7 @@
 /* 803D76B4 003D3354  F0 84 00 08 */	psq_st f4, 8(r4), 0, qr0
 /* 803D76B8 003D3358  F0 A4 00 18 */	psq_st f5, 24(r4), 0, qr0
 /* 803D76BC 003D335C  D0 64 00 28 */	stfs f3, 0x28(r4)
-/* 803D76C0 003D3360  4E 80 00 20 */	blr 
+/* 803D76C0 003D3360  4E 80 00 20 */	blr
 
 .global "PSMTXInverse"
 "PSMTXInverse":
@@ -138,7 +138,7 @@
 /* 803D7728 003D33C8  10 07 30 40 */	ps_cmpo0 cr0, f7, f6
 /* 803D772C 003D33CC  40 82 00 0C */	bne lbl_803D7738
 /* 803D7730 003D33D0  38 60 00 00 */	li r3, 0
-/* 803D7734 003D33D4  4E 80 00 20 */	blr 
+/* 803D7734 003D33D4  4E 80 00 20 */	blr
 lbl_803D7738:
 /* 803D7738 003D33D8  EC 00 38 30 */	fres f0, f7
 /* 803D773C 003D33DC  10 C0 00 2A */	ps_add f6, f0, f0
@@ -172,7 +172,7 @@ lbl_803D7738:
 /* 803D77AC 003D344C  10 E8 38 FE */	ps_nmadd f7, f8, f3, f7
 /* 803D77B0 003D3450  38 60 00 01 */	li r3, 1
 /* 803D77B4 003D3454  F0 E4 80 2C */	psq_st f7, 44(r4), 1, qr0
-/* 803D77B8 003D3458  4E 80 00 20 */	blr 
+/* 803D77B8 003D3458  4E 80 00 20 */	blr
 
 .global "PSMTXInvXpose"
 "PSMTXInvXpose":
@@ -204,7 +204,7 @@ lbl_803D7738:
 /* 803D7820 003D34C0  10 07 08 40 */	ps_cmpo0 cr0, f7, f1
 /* 803D7824 003D34C4  40 82 00 0C */	bne lbl_803D7830
 /* 803D7828 003D34C8  38 60 00 00 */	li r3, 0
-/* 803D782C 003D34CC  4E 80 00 20 */	blr 
+/* 803D782C 003D34CC  4E 80 00 20 */	blr
 lbl_803D7830:
 /* 803D7830 003D34D0  EC 00 38 30 */	fres f0, f7
 /* 803D7834 003D34D4  F0 24 80 0C */	psq_st f1, 12(r4), 1, qr0
@@ -226,7 +226,7 @@ lbl_803D7830:
 /* 803D7874 003D3514  38 60 00 01 */	li r3, 1
 /* 803D7878 003D3518  F1 24 80 18 */	psq_st f9, 24(r4), 1, qr0
 /* 803D787C 003D351C  F1 04 80 28 */	psq_st f8, 40(r4), 1, qr0
-/* 803D7880 003D3520  4E 80 00 20 */	blr 
+/* 803D7880 003D3520  4E 80 00 20 */	blr
 
 .global "PSMTXRotRad"
 "PSMTXRotRad":
@@ -260,7 +260,7 @@ lbl_803D7830:
 /* 803D78F0 003D3590  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D78F4 003D3594  7C 08 03 A6 */	mtlr r0
 /* 803D78F8 003D3598  38 21 00 30 */	addi r1, r1, 0x30
-/* 803D78FC 003D359C  4E 80 00 20 */	blr 
+/* 803D78FC 003D359C  4E 80 00 20 */	blr
 
 .global "PSMTXRotTrig"
 "PSMTXRotTrig":
@@ -276,7 +276,7 @@ lbl_803D7830:
 /* 803D7924 003D35C4  41 82 00 38 */	beq lbl_803D795C
 /* 803D7928 003D35C8  28 00 00 7A */	cmplwi r0, 0x7a
 /* 803D792C 003D35CC  41 82 00 5C */	beq lbl_803D7988
-/* 803D7930 003D35D0  4E 80 00 20 */	blr 
+/* 803D7930 003D35D0  4E 80 00 20 */	blr
 lbl_803D7934:
 /* 803D7934 003D35D4  10 65 24 20 */	ps_merge00 f3, f5, f4
 /* 803D7938 003D35D8  F0 23 80 00 */	psq_st f1, 0(r3), 1, qr0
@@ -287,7 +287,7 @@ lbl_803D7934:
 /* 803D794C 003D35EC  F0 03 80 2C */	psq_st f0, 44(r3), 1, qr0
 /* 803D7950 003D35F0  F0 63 00 24 */	psq_st f3, 36(r3), 0, qr0
 /* 803D7954 003D35F4  F0 23 00 14 */	psq_st f1, 20(r3), 0, qr0
-/* 803D7958 003D35F8  4E 80 00 20 */	blr 
+/* 803D7958 003D35F8  4E 80 00 20 */	blr
 lbl_803D795C:
 /* 803D795C 003D35FC  10 64 04 20 */	ps_merge00 f3, f4, f0
 /* 803D7960 003D3600  F0 03 00 18 */	psq_st f0, 24(r3), 0, qr0
@@ -299,7 +299,7 @@ lbl_803D795C:
 /* 803D7978 003D3618  F0 23 00 10 */	psq_st f1, 16(r3), 0, qr0
 /* 803D797C 003D361C  F0 03 00 08 */	psq_st f0, 8(r3), 0, qr0
 /* 803D7980 003D3620  F0 43 00 20 */	psq_st f2, 32(r3), 0, qr0
-/* 803D7984 003D3624  4E 80 00 20 */	blr 
+/* 803D7984 003D3624  4E 80 00 20 */	blr
 lbl_803D7988:
 /* 803D7988 003D3628  10 65 24 20 */	ps_merge00 f3, f5, f4
 /* 803D798C 003D362C  F0 03 00 08 */	psq_st f0, 8(r3), 0, qr0
@@ -310,7 +310,7 @@ lbl_803D7988:
 /* 803D79A0 003D3640  F0 63 00 10 */	psq_st f3, 16(r3), 0, qr0
 /* 803D79A4 003D3644  F0 43 00 00 */	psq_st f2, 0(r3), 0, qr0
 /* 803D79A8 003D3648  F0 23 00 28 */	psq_st f1, 40(r3), 0, qr0
-/* 803D79AC 003D364C  4E 80 00 20 */	blr 
+/* 803D79AC 003D364C  4E 80 00 20 */	blr
 
 .global "PSMTXTrans"
 "PSMTXTrans":
@@ -326,7 +326,7 @@ lbl_803D7988:
 /* 803D79D4 003D3674  D0 83 00 28 */	stfs f4, 0x28(r3)
 /* 803D79D8 003D3678  D0 63 00 2C */	stfs f3, 0x2c(r3)
 /* 803D79DC 003D367C  D0 83 00 00 */	stfs f4, 0(r3)
-/* 803D79E0 003D3680  4E 80 00 20 */	blr 
+/* 803D79E0 003D3680  4E 80 00 20 */	blr
 
 .global "PSMTXTransApply"
 "PSMTXTransApply":
@@ -348,7 +348,7 @@ lbl_803D7988:
 /* 803D7A20 003D36C0  F0 E4 00 18 */	psq_st f7, 24(r4), 0, qr0
 /* 803D7A24 003D36C4  F1 24 00 20 */	psq_st f9, 32(r4), 0, qr0
 /* 803D7A28 003D36C8  F1 04 00 28 */	psq_st f8, 40(r4), 0, qr0
-/* 803D7A2C 003D36CC  4E 80 00 20 */	blr 
+/* 803D7A2C 003D36CC  4E 80 00 20 */	blr
 
 .global "PSMTXScale"
 "PSMTXScale":
@@ -361,17 +361,24 @@ lbl_803D7988:
 /* 803D7A48 003D36E8  F0 03 00 20 */	psq_st f0, 32(r3), 0, qr0
 /* 803D7A4C 003D36EC  D0 63 00 28 */	stfs f3, 0x28(r3)
 /* 803D7A50 003D36F0  D0 03 00 2C */	stfs f0, 0x2c(r3)
-/* 803D7A54 003D36F4  4E 80 00 20 */	blr 
+/* 803D7A54 003D36F4  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "Unit01"
 "Unit01":
-	.incbin "baserom.dol", 0x4872A8, 0x8
+	# ROM: 0x4872A8
+	.4byte 0x00000000
+	.4byte 0x3F800000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBD28
 lbl_805DBD28:
-	.incbin "baserom.dol", 0x48A048, 0x4
+	# ROM: 0x48A048
+	.4byte 0x3F800000
+
 .global lbl_805DBD2C
 lbl_805DBD2C:
-	.incbin "baserom.dol", 0x48A04C, 0x4
+	# ROM: 0x48A04C
+	.byte 0x00, 0x00, 0x00, 0x00
+

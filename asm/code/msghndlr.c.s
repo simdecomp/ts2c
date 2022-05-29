@@ -56,7 +56,7 @@ lbl_80410B60:
 /* 80410BC4 0040C864  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 80410BC8 0040C868  7C 08 03 A6 */	mtlr r0
 /* 80410BCC 0040C86C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80410BD0 0040C870  4E 80 00 20 */	blr 
+/* 80410BD0 0040C870  4E 80 00 20 */	blr
 
 .global "TRKDoStop"
 "TRKDoStop":
@@ -117,7 +117,7 @@ lbl_80410C34:
 /* 80410C90 0040C930  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 80410C94 0040C934  7C 08 03 A6 */	mtlr r0
 /* 80410C98 0040C938  38 21 00 50 */	addi r1, r1, 0x50
-/* 80410C9C 0040C93C  4E 80 00 20 */	blr 
+/* 80410C9C 0040C93C  4E 80 00 20 */	blr
 
 .global "TRKDoStep"
 "TRKDoStep":
@@ -312,7 +312,7 @@ lbl_80410F60:
 /* 80410F64 0040CC04  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 80410F68 0040CC08  7C 08 03 A6 */	mtlr r0
 /* 80410F6C 0040CC0C  38 21 01 60 */	addi r1, r1, 0x160
-/* 80410F70 0040CC10  4E 80 00 20 */	blr 
+/* 80410F70 0040CC10  4E 80 00 20 */	blr
 
 .global "TRKDoContinue"
 "TRKDoContinue":
@@ -374,7 +374,7 @@ lbl_80411048:
 /* 80411048 0040CCE8  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8041104C 0040CCEC  7C 08 03 A6 */	mtlr r0
 /* 80411050 0040CCF0  38 21 00 90 */	addi r1, r1, 0x90
-/* 80411054 0040CCF4  4E 80 00 20 */	blr 
+/* 80411054 0040CCF4  4E 80 00 20 */	blr
 
 .global "TRKDoWriteRegisters"
 "TRKDoWriteRegisters":
@@ -573,7 +573,7 @@ lbl_804112F4:
 /* 80411304 0040CFA4  83 81 00 D0 */	lwz r28, 0xd0(r1)
 /* 80411308 0040CFA8  7C 08 03 A6 */	mtlr r0
 /* 8041130C 0040CFAC  38 21 00 E0 */	addi r1, r1, 0xe0
-/* 80411310 0040CFB0  4E 80 00 20 */	blr 
+/* 80411310 0040CFB0  4E 80 00 20 */	blr
 
 .global "TRKDoReadRegisters"
 "TRKDoReadRegisters":
@@ -728,7 +728,7 @@ lbl_80411524:
 /* 80411528 0040D1C8  83 E1 00 DC */	lwz r31, 0xdc(r1)
 /* 8041152C 0040D1CC  7C 08 03 A6 */	mtlr r0
 /* 80411530 0040D1D0  38 21 00 E0 */	addi r1, r1, 0xe0
-/* 80411534 0040D1D4  4E 80 00 20 */	blr 
+/* 80411534 0040D1D4  4E 80 00 20 */	blr
 
 .global "TRKDoWriteMemory"
 "TRKDoWriteMemory":
@@ -824,7 +824,7 @@ lbl_80411678:
 /* 80411694 0040D334  38 63 80 30 */	addi r3, r3, lbl_80488030@l
 /* 80411698 0040D338  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8041169C 0040D33C  7C 09 03 A6 */	mtctr r0
-/* 804116A0 0040D340  4E 80 04 20 */	bctr 
+/* 804116A0 0040D340  4E 80 04 20 */	bctr
 /* 804116A4 0040D344  3B E0 00 15 */	li r31, 0x15
 /* 804116A8 0040D348  48 00 00 28 */	b lbl_804116D0
 /* 804116AC 0040D34C  3B E0 00 13 */	li r31, 0x13
@@ -872,7 +872,7 @@ lbl_80411734:
 /* 80411744 0040D3E4  83 AA FF F4 */	lwz r29, -0xc(r10)
 /* 80411748 0040D3E8  7C 08 03 A6 */	mtlr r0
 /* 8041174C 0040D3EC  7D 41 53 78 */	mr r1, r10
-/* 80411750 0040D3F0  4E 80 00 20 */	blr 
+/* 80411750 0040D3F0  4E 80 00 20 */	blr
 
 .global "TRKDoReadMemory"
 "TRKDoReadMemory":
@@ -979,7 +979,7 @@ lbl_804118BC:
 /* 804118D8 0040D578  38 63 80 4C */	addi r3, r3, lbl_8048804C@l
 /* 804118DC 0040D57C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 804118E0 0040D580  7C 09 03 A6 */	mtctr r0
-/* 804118E4 0040D584  4E 80 04 20 */	bctr 
+/* 804118E4 0040D584  4E 80 04 20 */	bctr
 /* 804118E8 0040D588  3B A0 00 15 */	li r29, 0x15
 /* 804118EC 0040D58C  48 00 00 28 */	b lbl_80411914
 /* 804118F0 0040D590  3B A0 00 13 */	li r29, 0x13
@@ -1028,17 +1028,17 @@ lbl_80411978:
 /* 8041198C 0040D62C  83 8A FF F0 */	lwz r28, -0x10(r10)
 /* 80411990 0040D630  7C 08 03 A6 */	mtlr r0
 /* 80411994 0040D634  7D 41 53 78 */	mr r1, r10
-/* 80411998 0040D638  4E 80 00 20 */	blr 
+/* 80411998 0040D638  4E 80 00 20 */	blr
 
 .global "TRKDoSupportMask"
 "TRKDoSupportMask":
 /* 8041199C 0040D63C  38 60 00 00 */	li r3, 0
-/* 804119A0 0040D640  4E 80 00 20 */	blr 
+/* 804119A0 0040D640  4E 80 00 20 */	blr
 
 .global "TRKDoVersions"
 "TRKDoVersions":
 /* 804119A4 0040D644  38 60 00 00 */	li r3, 0
-/* 804119A8 0040D648  4E 80 00 20 */	blr 
+/* 804119A8 0040D648  4E 80 00 20 */	blr
 
 .global "TRKDoOverride"
 "TRKDoOverride":
@@ -1072,7 +1072,7 @@ lbl_80411978:
 /* 80411A18 0040D6B8  38 60 00 00 */	li r3, 0
 /* 80411A1C 0040D6BC  7C 08 03 A6 */	mtlr r0
 /* 80411A20 0040D6C0  38 21 00 50 */	addi r1, r1, 0x50
-/* 80411A24 0040D6C4  4E 80 00 20 */	blr 
+/* 80411A24 0040D6C4  4E 80 00 20 */	blr
 
 .global "TRKDoReset"
 "TRKDoReset":
@@ -1106,7 +1106,7 @@ lbl_80411978:
 /* 80411A94 0040D734  38 60 00 00 */	li r3, 0
 /* 80411A98 0040D738  7C 08 03 A6 */	mtlr r0
 /* 80411A9C 0040D73C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80411AA0 0040D740  4E 80 00 20 */	blr 
+/* 80411AA0 0040D740  4E 80 00 20 */	blr
 
 .global "TRKDoDisconnect"
 "TRKDoDisconnect":
@@ -1148,7 +1148,7 @@ lbl_80411978:
 /* 80411B30 0040D7D0  38 60 00 00 */	li r3, 0
 /* 80411B34 0040D7D4  7C 08 03 A6 */	mtlr r0
 /* 80411B38 0040D7D8  38 21 00 60 */	addi r1, r1, 0x60
-/* 80411B3C 0040D7DC  4E 80 00 20 */	blr 
+/* 80411B3C 0040D7DC  4E 80 00 20 */	blr
 
 .global "TRKDoConnect"
 "TRKDoConnect":
@@ -1185,33 +1185,56 @@ lbl_80411978:
 /* 80411BB8 0040D858  38 60 00 00 */	li r3, 0
 /* 80411BBC 0040D85C  7C 08 03 A6 */	mtlr r0
 /* 80411BC0 0040D860  38 21 00 50 */	addi r1, r1, 0x50
-/* 80411BC4 0040D864  4E 80 00 20 */	blr 
+/* 80411BC4 0040D864  4E 80 00 20 */	blr
 
 .global "SetTRKConnected"
 "SetTRKConnected":
 /* 80411BC8 0040D868  3C 80 80 5D */	lis r4, "IsTRKConnected"@ha
 /* 80411BCC 0040D86C  90 64 3A AC */	stw r3, "IsTRKConnected"@l(r4)
-/* 80411BD0 0040D870  4E 80 00 20 */	blr 
+/* 80411BD0 0040D870  4E 80 00 20 */	blr
 
 .global "GetTRKConnected"
 "GetTRKConnected":
 /* 80411BD4 0040D874  3C 60 80 5D */	lis r3, "IsTRKConnected"@ha
 /* 80411BD8 0040D878  38 63 3A AC */	addi r3, r3, "IsTRKConnected"@l
 /* 80411BDC 0040D87C  80 63 00 00 */	lwz r3, 0(r3)
-/* 80411BE0 0040D880  4E 80 00 20 */	blr 
+/* 80411BE0 0040D880  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041FDF8
 lbl_8041FDF8:
-	.incbin "baserom.dol", 0x41BEF8, 0x38
+	# ROM: 0x41BEF8
+	.asciz "\nMetroTRK Option : SerialIO - "
+	.byte 0x00
+	.asciz "Enable\n"
+	.asciz "Disable\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80488030
 lbl_80488030:
-	.incbin "baserom.dol", 0x484130, 0x1C
+	# ROM: 0x484130
+	.4byte 0x804116AC ;# ptr
+	.4byte 0x804116CC ;# ptr
+	.4byte 0x804116A4 ;# ptr
+	.4byte 0x804116CC ;# ptr
+	.4byte 0x804116B4 ;# ptr
+	.4byte 0x804116BC ;# ptr
+	.4byte 0x804116C4 ;# ptr
+
 .global lbl_8048804C
 lbl_8048804C:
-	.incbin "baserom.dol", 0x48414C, 0x1C
+	# ROM: 0x48414C
+	.4byte 0x804118F0 ;# ptr
+	.4byte 0x80411910 ;# ptr
+	.4byte 0x804118E8 ;# ptr
+	.4byte 0x80411910 ;# ptr
+	.4byte 0x804118F8 ;# ptr
+	.4byte 0x80411900 ;# ptr
+	.4byte 0x80411908 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "g_CurrentSequence"

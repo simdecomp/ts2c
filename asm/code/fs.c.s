@@ -82,7 +82,7 @@ lbl_80372BF8:
 /* 80372C04 0036E8A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80372C08 0036E8A8  7C 08 03 A6 */	mtlr r0
 /* 80372C0C 0036E8AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80372C10 0036E8B0  4E 80 00 20 */	blr 
+/* 80372C10 0036E8B0  4E 80 00 20 */	blr
 
 .global "_isfsFuncCb"
 "_isfsFuncCb":
@@ -169,7 +169,7 @@ lbl_80372D28:
 /* 80372D3C 0036E9DC  7F C3 F3 78 */	mr r3, r30
 /* 80372D40 0036E9E0  80 9F 01 04 */	lwz r4, 0x104(r31)
 /* 80372D44 0036E9E4  7D 89 03 A6 */	mtctr r12
-/* 80372D48 0036E9E8  4E 80 04 21 */	bctrl 
+/* 80372D48 0036E9E8  4E 80 04 21 */	bctrl
 lbl_80372D4C:
 /* 80372D4C 0036E9EC  2C 1F 00 00 */	cmpwi r31, 0
 /* 80372D50 0036E9F0  41 82 00 10 */	beq lbl_80372D60
@@ -183,7 +183,7 @@ lbl_80372D60:
 /* 80372D6C 0036EA0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80372D70 0036EA10  7C 08 03 A6 */	mtlr r0
 /* 80372D74 0036EA14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80372D78 0036EA18  4E 80 00 20 */	blr 
+/* 80372D78 0036EA18  4E 80 00 20 */	blr
 
 .global "ISFS_CreateDir"
 "ISFS_CreateDir":
@@ -252,7 +252,7 @@ lbl_80372E54:
 /* 80372E60 0036EB00  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80372E64 0036EB04  7C 08 03 A6 */	mtlr r0
 /* 80372E68 0036EB08  38 21 00 30 */	addi r1, r1, 0x30
-/* 80372E6C 0036EB0C  4E 80 00 20 */	blr 
+/* 80372E6C 0036EB0C  4E 80 00 20 */	blr
 
 .global "ISFS_CreateDirAsync"
 "ISFS_CreateDirAsync":
@@ -320,7 +320,7 @@ lbl_80372F4C:
 /* 80372F54 0036EBF4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80372F58 0036EBF8  7C 08 03 A6 */	mtlr r0
 /* 80372F5C 0036EBFC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80372F60 0036EC00  4E 80 00 20 */	blr 
+/* 80372F60 0036EC00  4E 80 00 20 */	blr
 
 .global "ISFS_ReadDir"
 "ISFS_ReadDir":
@@ -415,7 +415,7 @@ lbl_8037309C:
 /* 803730A8 0036ED48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803730AC 0036ED4C  7C 08 03 A6 */	mtlr r0
 /* 803730B0 0036ED50  38 21 00 20 */	addi r1, r1, 0x20
-/* 803730B4 0036ED54  4E 80 00 20 */	blr 
+/* 803730B4 0036ED54  4E 80 00 20 */	blr
 
 .global "ISFS_ReadDirAsync"
 "ISFS_ReadDirAsync":
@@ -506,7 +506,7 @@ lbl_803731E8:
 /* 803731F0 0036EE90  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803731F4 0036EE94  7C 08 03 A6 */	mtlr r0
 /* 803731F8 0036EE98  38 21 00 30 */	addi r1, r1, 0x30
-/* 803731FC 0036EE9C  4E 80 00 20 */	blr 
+/* 803731FC 0036EE9C  4E 80 00 20 */	blr
 
 .global "ISFS_GetAttr"
 "ISFS_GetAttr":
@@ -600,7 +600,7 @@ lbl_8037333C:
 /* 80373348 0036EFE8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8037334C 0036EFEC  7C 08 03 A6 */	mtlr r0
 /* 80373350 0036EFF0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80373354 0036EFF4  4E 80 00 20 */	blr 
+/* 80373354 0036EFF4  4E 80 00 20 */	blr
 
 .global "ISFS_GetAttrAsync"
 "ISFS_GetAttrAsync":
@@ -684,7 +684,7 @@ lbl_80373474:
 /* 8037347C 0036F11C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80373480 0036F120  7C 08 03 A6 */	mtlr r0
 /* 80373484 0036F124  38 21 00 40 */	addi r1, r1, 0x40
-/* 80373488 0036F128  4E 80 00 20 */	blr 
+/* 80373488 0036F128  4E 80 00 20 */	blr
 
 .global "ISFS_Delete"
 "ISFS_Delete":
@@ -746,7 +746,7 @@ lbl_80373544:
 /* 80373554 0036F1F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373558 0036F1F8  7C 08 03 A6 */	mtlr r0
 /* 8037355C 0036F1FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373560 0036F200  4E 80 00 20 */	blr 
+/* 80373560 0036F200  4E 80 00 20 */	blr
 
 .global "ISFS_DeleteAsync"
 "ISFS_DeleteAsync":
@@ -805,7 +805,7 @@ lbl_8037361C:
 /* 80373624 0036F2C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373628 0036F2C8  7C 08 03 A6 */	mtlr r0
 /* 8037362C 0036F2CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373630 0036F2D0  4E 80 00 20 */	blr 
+/* 80373630 0036F2D0  4E 80 00 20 */	blr
 
 .global "ISFS_GetUsage"
 "ISFS_GetUsage":
@@ -891,7 +891,7 @@ lbl_80373750:
 /* 8037375C 0036F3FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373760 0036F400  7C 08 03 A6 */	mtlr r0
 /* 80373764 0036F404  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373768 0036F408  4E 80 00 20 */	blr 
+/* 80373768 0036F408  4E 80 00 20 */	blr
 
 .global "ISFS_CreateFile"
 "ISFS_CreateFile":
@@ -960,7 +960,7 @@ lbl_80373844:
 /* 80373850 0036F4F0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80373854 0036F4F4  7C 08 03 A6 */	mtlr r0
 /* 80373858 0036F4F8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8037385C 0036F4FC  4E 80 00 20 */	blr 
+/* 8037385C 0036F4FC  4E 80 00 20 */	blr
 
 .global "ISFS_CreateFileAsync"
 "ISFS_CreateFileAsync":
@@ -1028,7 +1028,7 @@ lbl_8037393C:
 /* 80373944 0036F5E4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80373948 0036F5E8  7C 08 03 A6 */	mtlr r0
 /* 8037394C 0036F5EC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80373950 0036F5F0  4E 80 00 20 */	blr 
+/* 80373950 0036F5F0  4E 80 00 20 */	blr
 
 .global "ISFS_Open"
 "ISFS_Open":
@@ -1086,7 +1086,7 @@ lbl_803739F8:
 /* 80373A0C 0036F6AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373A10 0036F6B0  7C 08 03 A6 */	mtlr r0
 /* 80373A14 0036F6B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373A18 0036F6B8  4E 80 00 20 */	blr 
+/* 80373A18 0036F6B8  4E 80 00 20 */	blr
 
 .global "ISFS_OpenAsync"
 "ISFS_OpenAsync":
@@ -1139,7 +1139,7 @@ lbl_80373ABC:
 /* 80373AC4 0036F764  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373AC8 0036F768  7C 08 03 A6 */	mtlr r0
 /* 80373ACC 0036F76C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373AD0 0036F770  4E 80 00 20 */	blr 
+/* 80373AD0 0036F770  4E 80 00 20 */	blr
 
 .global "ISFS_Seek"
 "ISFS_Seek":
@@ -1183,7 +1183,7 @@ lbl_80373B4C:
 /* 80373B54 0036F7F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373B58 0036F7F8  7C 08 03 A6 */	mtlr r0
 /* 80373B5C 0036F7FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373B60 0036F800  4E 80 00 20 */	blr 
+/* 80373B60 0036F800  4E 80 00 20 */	blr
 
 .global "ISFS_Read"
 "ISFS_Read":
@@ -1193,10 +1193,10 @@ lbl_80373B4C:
 /* 80373B70 0036F810  41 82 00 0C */	beq lbl_80373B7C
 lbl_80373B74:
 /* 80373B74 0036F814  38 60 FF 9B */	li r3, -101
-/* 80373B78 0036F818  4E 80 00 20 */	blr 
+/* 80373B78 0036F818  4E 80 00 20 */	blr
 lbl_80373B7C:
 /* 80373B7C 0036F81C  48 05 B0 C4 */	b "IOS_Read"
-/* 80373B80 0036F820  4E 80 00 20 */	blr 
+/* 80373B80 0036F820  4E 80 00 20 */	blr
 
 .global "ISFS_ReadAsync"
 "ISFS_ReadAsync":
@@ -1244,7 +1244,7 @@ lbl_80373C10:
 /* 80373C18 0036F8B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373C1C 0036F8BC  7C 08 03 A6 */	mtlr r0
 /* 80373C20 0036F8C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373C24 0036F8C4  4E 80 00 20 */	blr 
+/* 80373C24 0036F8C4  4E 80 00 20 */	blr
 
 .global "ISFS_Write"
 "ISFS_Write":
@@ -1254,10 +1254,10 @@ lbl_80373C10:
 /* 80373C34 0036F8D4  41 82 00 0C */	beq lbl_80373C40
 lbl_80373C38:
 /* 80373C38 0036F8D8  38 60 FF 9B */	li r3, -101
-/* 80373C3C 0036F8DC  4E 80 00 20 */	blr 
+/* 80373C3C 0036F8DC  4E 80 00 20 */	blr
 lbl_80373C40:
 /* 80373C40 0036F8E0  48 05 B2 08 */	b "IOS_Write"
-/* 80373C44 0036F8E4  4E 80 00 20 */	blr 
+/* 80373C44 0036F8E4  4E 80 00 20 */	blr
 
 .global "ISFS_WriteAsync"
 "ISFS_WriteAsync":
@@ -1305,7 +1305,7 @@ lbl_80373CD4:
 /* 80373CDC 0036F97C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80373CE0 0036F980  7C 08 03 A6 */	mtlr r0
 /* 80373CE4 0036F984  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373CE8 0036F988  4E 80 00 20 */	blr 
+/* 80373CE8 0036F988  4E 80 00 20 */	blr
 
 .global "ISFS_Close"
 "ISFS_Close":
@@ -1347,7 +1347,7 @@ lbl_80373D58:
 /* 80373D64 0036FA04  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80373D68 0036FA08  7C 08 03 A6 */	mtlr r0
 /* 80373D6C 0036FA0C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80373D70 0036FA10  4E 80 00 20 */	blr 
+/* 80373D70 0036FA10  4E 80 00 20 */	blr
 
 .global "ISFS_ShutdownAsync"
 "ISFS_ShutdownAsync":
@@ -1388,23 +1388,33 @@ lbl_80373DEC:
 /* 80373DF4 0036FA94  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80373DF8 0036FA98  7C 08 03 A6 */	mtlr r0
 /* 80373DFC 0036FA9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80373E00 0036FAA0  4E 80 00 20 */	blr 
+/* 80373E00 0036FAA0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80467838
 lbl_80467838:
-	.incbin "baserom.dol", 0x463938, 0x28
+	# ROM: 0x463938
+	.asciz "APP ERROR: Not enough IPC arena\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__fsFd"
 "__fsFd":
-	.incbin "baserom.dol", 0x486ED0, 0x4
+	# ROM: 0x486ED0
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global "firstFl$691"
 "firstFl$691":
-	.incbin "baserom.dol", 0x486ED4, 0x4
+	# ROM: 0x486ED4
+	.4byte 0x00000001
+
 .global lbl_805D7358
 lbl_805D7358:
-	.incbin "baserom.dol", 0x486ED8, 0x8
+	# ROM: 0x486ED8
+	.asciz "/dev/fs"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__devfs"

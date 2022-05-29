@@ -9,7 +9,7 @@
 /* 803C2C58 003BE8F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2C5C 003BE8FC  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 803C2C60 003BE900  7D 89 03 A6 */	mtctr r12
-/* 803C2C64 003BE904  4E 80 04 21 */	bctrl 
+/* 803C2C64 003BE904  4E 80 04 21 */	bctrl
 /* 803C2C68 003BE908  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2C6C 003BE90C  40 82 00 20 */	bne lbl_803C2C8C
 /* 803C2C70 003BE910  3C 60 80 47 */	lis r3, lbl_80473C48@ha
@@ -24,7 +24,7 @@ lbl_803C2C8C:
 /* 803C2C90 003BE930  38 60 00 00 */	li r3, 0
 /* 803C2C94 003BE934  7C 08 03 A6 */	mtlr r0
 /* 803C2C98 003BE938  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2C9C 003BE93C  4E 80 00 20 */	blr 
+/* 803C2C9C 003BE93C  4E 80 00 20 */	blr
 
 .global "ReadAsync__Q36nw4hbm2ut8IOStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv"
 "ReadAsync__Q36nw4hbm2ut8IOStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv":
@@ -39,7 +39,7 @@ lbl_803C2C8C:
 /* 803C2CC0 003BE960  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2CC4 003BE964  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 803C2CC8 003BE968  7D 89 03 A6 */	mtctr r12
-/* 803C2CCC 003BE96C  4E 80 04 21 */	bctrl 
+/* 803C2CCC 003BE96C  4E 80 04 21 */	bctrl
 /* 803C2CD0 003BE970  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2CD4 003BE974  40 82 00 18 */	bne lbl_803C2CEC
 /* 803C2CD8 003BE978  38 7F 00 30 */	addi r3, r31, 0x30
@@ -52,7 +52,7 @@ lbl_803C2CEC:
 /* 803C2CF0 003BE990  7F C3 F3 78 */	mr r3, r30
 /* 803C2CF4 003BE994  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803C2CF8 003BE998  7D 89 03 A6 */	mtctr r12
-/* 803C2CFC 003BE99C  4E 80 04 21 */	bctrl 
+/* 803C2CFC 003BE99C  4E 80 04 21 */	bctrl
 /* 803C2D00 003BE9A0  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2D04 003BE9A4  40 82 00 18 */	bne lbl_803C2D1C
 /* 803C2D08 003BE9A8  38 7F 00 30 */	addi r3, r31, 0x30
@@ -67,7 +67,7 @@ lbl_803C2D1C:
 /* 803C2D28 003BE9C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C2D2C 003BE9CC  7C 08 03 A6 */	mtlr r0
 /* 803C2D30 003BE9D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2D34 003BE9D4  4E 80 00 20 */	blr 
+/* 803C2D34 003BE9D4  4E 80 00 20 */	blr
 
 .global "Write__Q36nw4hbm2ut8IOStreamFPCvUl"
 "Write__Q36nw4hbm2ut8IOStreamFPCvUl":
@@ -77,7 +77,7 @@ lbl_803C2D1C:
 /* 803C2D44 003BE9E4  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2D48 003BE9E8  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 803C2D4C 003BE9EC  7D 89 03 A6 */	mtctr r12
-/* 803C2D50 003BE9F0  4E 80 04 21 */	bctrl 
+/* 803C2D50 003BE9F0  4E 80 04 21 */	bctrl
 /* 803C2D54 003BE9F4  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2D58 003BE9F8  40 82 00 20 */	bne lbl_803C2D78
 /* 803C2D5C 003BE9FC  3C 60 80 47 */	lis r3, lbl_80473C48@ha
@@ -91,7 +91,7 @@ lbl_803C2D78:
 /* 803C2D78 003BEA18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C2D7C 003BEA1C  7C 08 03 A6 */	mtlr r0
 /* 803C2D80 003BEA20  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2D84 003BEA24  4E 80 00 20 */	blr 
+/* 803C2D84 003BEA24  4E 80 00 20 */	blr
 
 .global "WriteAsync__Q36nw4hbm2ut8IOStreamFPCvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv"
 "WriteAsync__Q36nw4hbm2ut8IOStreamFPCvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv":
@@ -106,7 +106,7 @@ lbl_803C2D78:
 /* 803C2DA8 003BEA48  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2DAC 003BEA4C  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 803C2DB0 003BEA50  7D 89 03 A6 */	mtctr r12
-/* 803C2DB4 003BEA54  4E 80 04 21 */	bctrl 
+/* 803C2DB4 003BEA54  4E 80 04 21 */	bctrl
 /* 803C2DB8 003BEA58  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2DBC 003BEA5C  40 82 00 18 */	bne lbl_803C2DD4
 /* 803C2DC0 003BEA60  38 7F 00 30 */	addi r3, r31, 0x30
@@ -119,7 +119,7 @@ lbl_803C2DD4:
 /* 803C2DD8 003BEA78  7F C3 F3 78 */	mr r3, r30
 /* 803C2DDC 003BEA7C  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803C2DE0 003BEA80  7D 89 03 A6 */	mtctr r12
-/* 803C2DE4 003BEA84  4E 80 04 21 */	bctrl 
+/* 803C2DE4 003BEA84  4E 80 04 21 */	bctrl
 /* 803C2DE8 003BEA88  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2DEC 003BEA8C  40 82 00 18 */	bne lbl_803C2E04
 /* 803C2DF0 003BEA90  38 7F 00 30 */	addi r3, r31, 0x30
@@ -134,7 +134,7 @@ lbl_803C2E04:
 /* 803C2E10 003BEAB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C2E14 003BEAB4  7C 08 03 A6 */	mtlr r0
 /* 803C2E18 003BEAB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2E1C 003BEABC  4E 80 00 20 */	blr 
+/* 803C2E1C 003BEABC  4E 80 00 20 */	blr
 
 .global "IsBusy__Q36nw4hbm2ut8IOStreamCFv"
 "IsBusy__Q36nw4hbm2ut8IOStreamCFv":
@@ -144,7 +144,7 @@ lbl_803C2E04:
 /* 803C2E2C 003BEACC  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C2E30 003BEAD0  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803C2E34 003BEAD4  7D 89 03 A6 */	mtctr r12
-/* 803C2E38 003BEAD8  4E 80 04 21 */	bctrl 
+/* 803C2E38 003BEAD8  4E 80 04 21 */	bctrl
 /* 803C2E3C 003BEADC  2C 03 00 00 */	cmpwi r3, 0
 /* 803C2E40 003BEAE0  40 82 00 20 */	bne lbl_803C2E60
 /* 803C2E44 003BEAE4  3C 60 80 47 */	lis r3, lbl_80473C48@ha
@@ -159,12 +159,12 @@ lbl_803C2E60:
 /* 803C2E64 003BEB04  38 60 00 00 */	li r3, 0
 /* 803C2E68 003BEB08  7C 08 03 A6 */	mtlr r0
 /* 803C2E6C 003BEB0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2E70 003BEB10  4E 80 00 20 */	blr 
+/* 803C2E70 003BEB10  4E 80 00 20 */	blr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm2ut8IOStreamCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm2ut8IOStreamCFv":
 /* 803C2E74 003BEB14  38 6D C6 20 */	addi r3, r13, "typeInfo__Q36nw4hbm2ut8IOStream"-_SDA_BASE_
-/* 803C2E78 003BEB18  4E 80 00 20 */	blr 
+/* 803C2E78 003BEB18  4E 80 00 20 */	blr
 
 .global "__sinit_ut_IOStream_cpp"
 "__sinit_ut_IOStream_cpp":
@@ -175,22 +175,63 @@ lbl_803C2E60:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473C18
 lbl_80473C18:
-	.incbin "baserom.dol", 0x46FD18, 0x30
+	# ROM: 0x46FD18
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+
 .global lbl_80473C48
 lbl_80473C48:
-	.incbin "baserom.dol", 0x46FD48, 0x10
+	# ROM: 0x46FD48
+	.asciz "ut_IOStream.cpp"
+
 .global lbl_80473C58
 lbl_80473C58:
-	.incbin "baserom.dol", 0x46FD58, 0x24
+	# ROM: 0x46FD58
+	.asciz "Stream don't support READ function\n"
+
 .global lbl_80473C7C
 lbl_80473C7C:
-	.incbin "baserom.dol", 0x46FD7C, 0x28
+	# ROM: 0x46FD7C
+	.asciz "Stream don't support ASYNC function\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80473CA4
 lbl_80473CA4:
-	.incbin "baserom.dol", 0x46FDA4, 0x2C
+	# ROM: 0x46FDA4
+	.asciz "Stream don't support WRITE function\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__vt__Q36nw4hbm2ut8IOStream"
 "__vt__Q36nw4hbm2ut8IOStream":
-	.incbin "baserom.dol", 0x46FDD0, 0x40
+	# ROM: 0x46FDD0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803C2E74)
+	.4byte "__dt__Q36nw4hbm2ut8IOStreamFv" ;# ptr (0x803A4B0C)
+	.4byte 0x00000000
+	.4byte "Read__Q36nw4hbm2ut8IOStreamFPvUl" ;# ptr (0x803C2C4C)
+	.4byte "ReadAsync__Q36nw4hbm2ut8IOStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2CA0)
+	.4byte "Write__Q36nw4hbm2ut8IOStreamFPCvUl" ;# ptr (0x803C2D38)
+	.4byte "WriteAsync__Q36nw4hbm2ut8IOStreamFPCvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2D88)
+	.4byte "IsBusy__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803C2E20)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetOffsetAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BB0)
+	.4byte "GetSizeAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BB8)
+	.4byte "GetBufferAlign__Q36nw4hbm2ut8IOStreamCFv" ;# ptr (0x803A4BC0)
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm2ut8IOStream"

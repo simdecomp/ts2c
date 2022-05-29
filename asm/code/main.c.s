@@ -11,7 +11,7 @@
 /* 80414C44 004108E4  38 60 00 00 */	li r3, 0
 /* 80414C48 004108E8  7C 08 03 A6 */	mtlr r0
 /* 80414C4C 004108EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414C50 004108F0  4E 80 00 20 */	blr 
+/* 80414C50 004108F0  4E 80 00 20 */	blr
 
 .global "gdev_cc_peek"
 "gdev_cc_peek":
@@ -46,7 +46,7 @@ lbl_80414CB0:
 /* 80414CB4 00410954  83 E1 05 0C */	lwz r31, 0x50c(r1)
 /* 80414CB8 00410958  7C 08 03 A6 */	mtlr r0
 /* 80414CBC 0041095C  38 21 05 10 */	addi r1, r1, 0x510
-/* 80414CC0 00410960  4E 80 00 20 */	blr 
+/* 80414CC0 00410960  4E 80 00 20 */	blr
 
 .global "gdev_cc_post_stop"
 "gdev_cc_post_stop":
@@ -58,7 +58,7 @@ lbl_80414CB0:
 /* 80414CD8 00410978  38 60 00 00 */	li r3, 0
 /* 80414CDC 0041097C  7C 08 03 A6 */	mtlr r0
 /* 80414CE0 00410980  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414CE4 00410984  4E 80 00 20 */	blr 
+/* 80414CE4 00410984  4E 80 00 20 */	blr
 
 .global "gdev_cc_pre_continue"
 "gdev_cc_pre_continue":
@@ -70,7 +70,7 @@ lbl_80414CB0:
 /* 80414CFC 0041099C  38 60 00 00 */	li r3, 0
 /* 80414D00 004109A0  7C 08 03 A6 */	mtlr r0
 /* 80414D04 004109A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414D08 004109A8  4E 80 00 20 */	blr 
+/* 80414D08 004109A8  4E 80 00 20 */	blr
 
 .global "gdev_cc_write"
 "gdev_cc_write":
@@ -106,7 +106,7 @@ lbl_80414D68:
 /* 80414D70 00410A10  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80414D74 00410A14  7C 08 03 A6 */	mtlr r0
 /* 80414D78 00410A18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414D7C 00410A1C  4E 80 00 20 */	blr 
+/* 80414D7C 00410A1C  4E 80 00 20 */	blr
 
 .global "gdev_cc_read"
 "gdev_cc_read":
@@ -159,12 +159,12 @@ lbl_80414E20:
 /* 80414E24 00410AC4  80 01 05 24 */	lwz r0, 0x524(r1)
 /* 80414E28 00410AC8  7C 08 03 A6 */	mtlr r0
 /* 80414E2C 00410ACC  38 21 05 20 */	addi r1, r1, 0x520
-/* 80414E30 00410AD0  4E 80 00 20 */	blr 
+/* 80414E30 00410AD0  4E 80 00 20 */	blr
 
 .global "gdev_cc_close"
 "gdev_cc_close":
 /* 80414E34 00410AD4  38 60 00 00 */	li r3, 0
-/* 80414E38 00410AD8  4E 80 00 20 */	blr 
+/* 80414E38 00410AD8  4E 80 00 20 */	blr
 
 .global "gdev_cc_open"
 "gdev_cc_open":
@@ -172,17 +172,17 @@ lbl_80414E20:
 /* 80414E40 00410AE0  2C 00 00 00 */	cmpwi r0, 0
 /* 80414E44 00410AE4  41 82 00 0C */	beq lbl_80414E50
 /* 80414E48 00410AE8  38 60 D8 EB */	li r3, -10005
-/* 80414E4C 00410AEC  4E 80 00 20 */	blr 
+/* 80414E4C 00410AEC  4E 80 00 20 */	blr
 lbl_80414E50:
 /* 80414E50 00410AF0  38 00 00 01 */	li r0, 1
 /* 80414E54 00410AF4  38 60 00 00 */	li r3, 0
 /* 80414E58 00410AF8  90 0D C9 E8 */	stw r0, "gIsInitialized"-_SDA_BASE_(r13)
-/* 80414E5C 00410AFC  4E 80 00 20 */	blr 
+/* 80414E5C 00410AFC  4E 80 00 20 */	blr
 
 .global "gdev_cc_shutdown"
 "gdev_cc_shutdown":
 /* 80414E60 00410B00  38 60 00 00 */	li r3, 0
-/* 80414E64 00410B04  4E 80 00 20 */	blr 
+/* 80414E64 00410B04  4E 80 00 20 */	blr
 
 .global "gdev_cc_initialize"
 "gdev_cc_initialize":
@@ -200,13 +200,13 @@ lbl_80414E50:
 /* 80414E94 00410B34  38 60 00 00 */	li r3, 0
 /* 80414E98 00410B38  7C 08 03 A6 */	mtlr r0
 /* 80414E9C 00410B3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80414EA0 00410B40  4E 80 00 20 */	blr 
+/* 80414EA0 00410B40  4E 80 00 20 */	blr
 
 .global "OutputData"
 "OutputData":
 /* 80414EA4 00410B44  2C 04 00 00 */	cmpwi r4, 0
 /* 80414EA8 00410B48  38 A0 00 00 */	li r5, 0
-/* 80414EAC 00410B4C  4C 81 00 20 */	blelr 
+/* 80414EAC 00410B4C  4C 81 00 20 */	blelr
 /* 80414EB0 00410B50  2C 04 00 08 */	cmpwi r4, 8
 /* 80414EB4 00410B54  38 64 FF F8 */	addi r3, r4, -8
 /* 80414EB8 00410B58  40 81 00 20 */	ble lbl_80414ED8
@@ -222,10 +222,10 @@ lbl_80414ED8:
 /* 80414ED8 00410B78  7C 05 20 50 */	subf r0, r5, r4
 /* 80414EDC 00410B7C  7C 09 03 A6 */	mtctr r0
 /* 80414EE0 00410B80  7C 05 20 00 */	cmpw r5, r4
-/* 80414EE4 00410B84  4C 80 00 20 */	bgelr 
+/* 80414EE4 00410B84  4C 80 00 20 */	bgelr
 lbl_80414EE8:
 /* 80414EE8 00410B88  42 00 00 00 */	bdnz lbl_80414EE8
-/* 80414EEC 00410B8C  4E 80 00 20 */	blr 
+/* 80414EEC 00410B8C  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gRecvBuf"

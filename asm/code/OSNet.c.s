@@ -47,7 +47,7 @@ lbl_803E5670:
 /* 803E5674 003E1314  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803E5678 003E1318  7C 08 03 A6 */	mtlr r0
 /* 803E567C 003E131C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E5680 003E1320  4E 80 00 20 */	blr 
+/* 803E5680 003E1320  4E 80 00 20 */	blr
 
 .global "NWC24iPrepareShutdown"
 "NWC24iPrepareShutdown":
@@ -101,7 +101,7 @@ lbl_803E5724:
 /* 803E572C 003E13CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E5730 003E13D0  7C 08 03 A6 */	mtlr r0
 /* 803E5734 003E13D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5738 003E13D8  4E 80 00 20 */	blr 
+/* 803E5738 003E13D8  4E 80 00 20 */	blr
 
 .global "NWC24iSynchronizeRtcCounter"
 "NWC24iSynchronizeRtcCounter":
@@ -167,7 +167,7 @@ lbl_803E580C:
 /* 803E5810 003E14B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E5814 003E14B4  7C 08 03 A6 */	mtlr r0
 /* 803E5818 003E14B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E581C 003E14BC  4E 80 00 20 */	blr 
+/* 803E581C 003E14BC  4E 80 00 20 */	blr
 
 .global "NWC24SuspendScheduler"
 "NWC24SuspendScheduler":
@@ -247,7 +247,7 @@ lbl_803E5908:
 /* 803E5910 003E15B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E5914 003E15B4  7C 08 03 A6 */	mtlr r0
 /* 803E5918 003E15B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E591C 003E15BC  4E 80 00 20 */	blr 
+/* 803E591C 003E15BC  4E 80 00 20 */	blr
 
 .global "NWC24iRequestShutdown"
 "NWC24iRequestShutdown":
@@ -279,7 +279,7 @@ lbl_803E597C:
 /* 803E597C 003E161C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E5980 003E1620  7C 08 03 A6 */	mtlr r0
 /* 803E5984 003E1624  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5988 003E1628  4E 80 00 20 */	blr 
+/* 803E5988 003E1628  4E 80 00 20 */	blr
 
 .global "NWC24Shutdown_"
 "NWC24Shutdown_":
@@ -335,7 +335,7 @@ lbl_803E5A34:
 /* 803E5A34 003E16D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E5A38 003E16D8  7C 08 03 A6 */	mtlr r0
 /* 803E5A3C 003E16DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5A40 003E16E0  4E 80 00 20 */	blr 
+/* 803E5A40 003E16E0  4E 80 00 20 */	blr
 
 .global "NWC24iSetRtcCounter_"
 "NWC24iSetRtcCounter_":
@@ -420,7 +420,7 @@ lbl_803E5B3C:
 /* 803E5B48 003E17E8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E5B4C 003E17EC  7C 08 03 A6 */	mtlr r0
 /* 803E5B50 003E17F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E5B54 003E17F4  4E 80 00 20 */	blr 
+/* 803E5B54 003E17F4  4E 80 00 20 */	blr
 
 .global "CallbackAsyncIpc"
 "CallbackAsyncIpc":
@@ -431,36 +431,67 @@ lbl_803E5B64:
 /* 803E5B64 003E1804  38 00 00 00 */	li r0, 0
 /* 803E5B68 003E1808  38 60 00 00 */	li r3, 0
 /* 803E5B6C 003E180C  90 0D C7 D4 */	stw r0, "NWC24iIsRequestPending"-_SDA_BASE_(r13)
-/* 803E5B70 003E1810  4E 80 00 20 */	blr 
+/* 803E5B70 003E1810  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804837D0
 lbl_804837D0:
-	.incbin "baserom.dol", 0x47F8D0, 0xA8
+	# ROM: 0x47F8D0
+	.asciz "Failed to register network shutdown function. %d\n"
+	.byte 0x00, 0x00
+	.asciz "Failed to suspend the WiiConnect24 scheduler. %d\n"
+	.byte 0x00, 0x00
+	.asciz "Failed to synchronize time with network resource managers. %d\n"
+	.byte 0x00
+
 .global "__FUNCTION__$657"
 "__FUNCTION__$657":
-	.incbin "baserom.dol", 0x47F978, 0x18
+	# ROM: 0x47F978
+	.asciz "NWC24iPrepareShutdown"
+	.byte 0x00, 0x00
+
 .global lbl_80483890
 lbl_80483890:
-	.incbin "baserom.dol", 0x47F990, 0x14
+	# ROM: 0x47F990
+	.asciz "/dev/net/kd/request"
+
 .global "__FUNCTION__$677"
 "__FUNCTION__$677":
-	.incbin "baserom.dol", 0x47F9A4, 0x18
+	# ROM: 0x47F9A4
+	.asciz "NWC24SuspendScheduler"
+	.byte 0x00, 0x00
+
 .global "__FUNCTION__$692"
 "__FUNCTION__$692":
-	.incbin "baserom.dol", 0x47F9BC, 0x18
+	# ROM: 0x47F9BC
+	.asciz "NWC24ResumeScheduler"
+	.byte 0x00, 0x00, 0x00
+
 .global "__FUNCTION__$709"
 "__FUNCTION__$709":
-	.incbin "baserom.dol", 0x47F9D4, 0x18
+	# ROM: 0x47F9D4
+	.asciz "NWC24iRequestShutdown"
+	.byte 0x00, 0x00
+
 .global lbl_804838EC
 lbl_804838EC:
-	.incbin "baserom.dol", 0x47F9EC, 0x1C
+	# ROM: 0x47F9EC
+	.asciz "NWC24Shutdown_: Give up!\n"
+	.byte 0x00, 0x00
+
 .global "__FUNCTION__$741"
 "__FUNCTION__$741":
-	.incbin "baserom.dol", 0x47FA08, 0x18
+	# ROM: 0x47FA08
+	.asciz "NWC24iSetRtcCounter_"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80483920
 lbl_80483920:
-	.incbin "baserom.dol", 0x47FA20, 0x18
+	# ROM: 0x47FA20
+	.asciz "/dev/net/kd/time"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "ShutdownFuncInfo"
@@ -485,7 +516,10 @@ lbl_80483920:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "nwc24ShtFd"
 "nwc24ShtFd":
-	.incbin "baserom.dol", 0x487360, 0x8
+	# ROM: 0x487360
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "nwc24ShtRetryRest"

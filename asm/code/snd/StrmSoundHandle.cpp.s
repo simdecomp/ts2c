@@ -28,7 +28,7 @@ lbl_803B7FB4:
 /* 803B7FB8 003B3C58  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803B7FBC 003B3C5C  7C 08 03 A6 */	mtlr r0
 /* 803B7FC0 003B3C60  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B7FC4 003B3C64  4E 80 00 20 */	blr 
+/* 803B7FC4 003B3C64  4E 80 00 20 */	blr
 
 .global "IsAttachedSound__Q36nw4hbm3snd15StrmSoundHandleCFv"
 "IsAttachedSound__Q36nw4hbm3snd15StrmSoundHandleCFv":
@@ -36,4 +36,4 @@ lbl_803B7FB4:
 /* 803B7FCC 003B3C6C  7C 03 00 D0 */	neg r0, r3
 /* 803B7FD0 003B3C70  7C 00 1B 78 */	or r0, r0, r3
 /* 803B7FD4 003B3C74  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803B7FD8 003B3C78  4E 80 00 20 */	blr 
+/* 803B7FD8 003B3C78  4E 80 00 20 */	blr

@@ -17,7 +17,7 @@
 "AXFXSetHooks":
 /* 8033AD30 003369D0  90 6D AB 70 */	stw r3, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033AD34 003369D4  90 8D AB 74 */	stw r4, "__AXFXFree"-_SDA_BASE_(r13)
-/* 8033AD38 003369D8  4E 80 00 20 */	blr 
+/* 8033AD38 003369D8  4E 80 00 20 */	blr
 
 .global "AXFXGetHooks"
 "AXFXGetHooks":
@@ -25,12 +25,16 @@
 /* 8033AD40 003369E0  90 03 00 00 */	stw r0, 0(r3)
 /* 8033AD44 003369E4  80 0D AB 74 */	lwz r0, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033AD48 003369E8  90 04 00 00 */	stw r0, 0(r4)
-/* 8033AD4C 003369EC  4E 80 00 20 */	blr 
+/* 8033AD4C 003369EC  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__AXFXAlloc"
 "__AXFXAlloc":
-	.incbin "baserom.dol", 0x486DD0, 0x4
+	# ROM: 0x486DD0
+	.4byte "__AXFXAllocFunction" ;# ptr (0x8033AD18)
+
 .global "__AXFXFree"
 "__AXFXFree":
-	.incbin "baserom.dol", 0x486DD4, 0x4
+	# ROM: 0x486DD4
+	.4byte "__AXFXFreeFunction" ;# ptr (0x8033AD24)
+

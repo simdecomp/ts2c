@@ -11,7 +11,7 @@
 /* 803D7CB0 003D3950  E0 A4 80 08 */	psq_l f5, 8(r4), 1, qr0
 /* 803D7CB4 003D3954  10 E3 28 2A */	ps_add f7, f3, f5
 /* 803D7CB8 003D3958  F0 E5 80 08 */	psq_st f7, 8(r5), 1, qr0
-/* 803D7CBC 003D395C  4E 80 00 20 */	blr 
+/* 803D7CBC 003D395C  4E 80 00 20 */	blr
 
 .global "PSVECSubtract"
 "PSVECSubtract":
@@ -23,7 +23,7 @@
 /* 803D7CD4 003D3974  E0 A4 80 08 */	psq_l f5, 8(r4), 1, qr0
 /* 803D7CD8 003D3978  10 E3 28 28 */	ps_sub f7, f3, f5
 /* 803D7CDC 003D397C  F0 E5 80 08 */	psq_st f7, 8(r5), 1, qr0
-/* 803D7CE0 003D3980  4E 80 00 20 */	blr 
+/* 803D7CE0 003D3980  4E 80 00 20 */	blr
 
 .global "PSVECScale"
 "PSVECScale":
@@ -33,7 +33,7 @@
 /* 803D7CF0 003D3990  10 22 00 58 */	ps_muls0 f1, f2, f1
 /* 803D7CF4 003D3994  F0 04 00 00 */	psq_st f0, 0(r4), 0, qr0
 /* 803D7CF8 003D3998  F0 24 80 08 */	psq_st f1, 8(r4), 1, qr0
-/* 803D7CFC 003D399C  4E 80 00 20 */	blr 
+/* 803D7CFC 003D399C  4E 80 00 20 */	blr
 
 .global "PSVECNormalize"
 "PSVECNormalize":
@@ -53,7 +53,7 @@
 /* 803D7D34 003D39D4  10 63 01 58 */	ps_muls0 f3, f3, f5
 /* 803D7D38 003D39D8  F0 44 00 00 */	psq_st f2, 0(r4), 0, qr0
 /* 803D7D3C 003D39DC  F0 64 80 08 */	psq_st f3, 8(r4), 1, qr0
-/* 803D7D40 003D39E0  4E 80 00 20 */	blr 
+/* 803D7D40 003D39E0  4E 80 00 20 */	blr
 
 .global "PSVECSquareMag"
 "PSVECSquareMag":
@@ -62,7 +62,7 @@
 /* 803D7D4C 003D39EC  10 00 00 32 */	ps_mul f0, f0, f0
 /* 803D7D50 003D39F0  10 21 00 7A */	ps_madd f1, f1, f1, f0
 /* 803D7D54 003D39F4  10 21 00 14 */	ps_sum0 f1, f1, f0, f0
-/* 803D7D58 003D39F8  4E 80 00 20 */	blr 
+/* 803D7D58 003D39F8  4E 80 00 20 */	blr
 
 .global "PSVECMag"
 "PSVECMag":
@@ -74,7 +74,7 @@
 /* 803D7D70 003D3A10  10 21 00 7A */	ps_madd f1, f1, f1, f0
 /* 803D7D74 003D3A14  10 21 00 14 */	ps_sum0 f1, f1, f0, f0
 /* 803D7D78 003D3A18  FC 01 10 00 */	fcmpu cr0, f1, f2
-/* 803D7D7C 003D3A1C  4D 82 00 20 */	beqlr 
+/* 803D7D7C 003D3A1C  4D 82 00 20 */	beqlr
 /* 803D7D80 003D3A20  FC 00 08 34 */	frsqrte f0, f1
 /* 803D7D84 003D3A24  C0 62 AB 24 */	lfs f3, lbl_805DBD44-_SDA2_BASE_(r2)
 /* 803D7D88 003D3A28  EC 40 00 32 */	fmuls f2, f0, f0
@@ -82,7 +82,7 @@
 /* 803D7D90 003D3A30  EC 42 18 7C */	fnmsubs f2, f2, f1, f3
 /* 803D7D94 003D3A34  EC 02 00 32 */	fmuls f0, f2, f0
 /* 803D7D98 003D3A38  EC 21 00 32 */	fmuls f1, f1, f0
-/* 803D7D9C 003D3A3C  4E 80 00 20 */	blr 
+/* 803D7D9C 003D3A3C  4E 80 00 20 */	blr
 
 .global "PSVECDotProduct"
 "PSVECDotProduct":
@@ -93,12 +93,16 @@
 /* 803D7DB0 003D3A50  E0 84 00 00 */	psq_l f4, 0(r4), 0, qr0
 /* 803D7DB4 003D3A54  10 65 11 3A */	ps_madd f3, f5, f4, f2
 /* 803D7DB8 003D3A58  10 23 10 94 */	ps_sum0 f1, f3, f2, f2
-/* 803D7DBC 003D3A5C  4E 80 00 20 */	blr 
+/* 803D7DBC 003D3A5C  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBD40
 lbl_805DBD40:
-	.incbin "baserom.dol", 0x48A060, 0x4
+	# ROM: 0x48A060
+	.4byte 0x3F000000
+
 .global lbl_805DBD44
 lbl_805DBD44:
-	.incbin "baserom.dol", 0x48A064, 0x4
+	# ROM: 0x48A064
+	.4byte 0x40400000
+

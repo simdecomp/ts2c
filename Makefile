@@ -1,5 +1,5 @@
 #TODO: Update this Makefile to be consistent with the Makefiles in the latest commits of the doldecomp projects
-
+MAKEFLAGS += --silent
 # If defined, wine is not used.
 NOWINE ?= 0
 
@@ -64,7 +64,7 @@ INCLUDES := -i include/
 
 ASFLAGS := -mgekko -I asm -I include
 LDFLAGS := -map $(MAP) -fp hard -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -O4,p -lang=c -nodefaults -msgstyle gcc $(INCLUDES)
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -O4,p -nodefaults -msgstyle gcc $(INCLUDES)
 
 # RECIPES
 
@@ -101,6 +101,9 @@ $(BUILD_DIR)/%.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
 
 $(BUILD_DIR)/%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILD_DIR)/%.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 print-% : ; $(info $* is a $(flavor $*) variable set to [$($*)]) @true

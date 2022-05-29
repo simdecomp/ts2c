@@ -14,7 +14,7 @@ lbl_80331E00:
 /* 80331E04 0032DAA4  83 E3 00 0C */	lwz r31, 0xc(r3)
 /* 80331E08 0032DAA8  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 80331E0C 0032DAAC  7D 89 03 A6 */	mtctr r12
-/* 80331E10 0032DAB0  4E 80 04 21 */	bctrl 
+/* 80331E10 0032DAB0  4E 80 04 21 */	bctrl
 /* 80331E14 0032DAB4  80 6D C1 78 */	lwz r3, "spFirstFree__10AptBoolean"-_SDA_BASE_(r13)
 /* 80331E18 0032DAB8  2C 03 00 00 */	cmpwi r3, 0
 /* 80331E1C 0032DABC  41 82 00 18 */	beq lbl_80331E34
@@ -22,7 +22,7 @@ lbl_80331E00:
 /* 80331E24 0032DAC4  38 80 00 01 */	li r4, 1
 /* 80331E28 0032DAC8  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80331E2C 0032DACC  7D 89 03 A6 */	mtctr r12
-/* 80331E30 0032DAD0  4E 80 04 21 */	bctrl 
+/* 80331E30 0032DAD0  4E 80 04 21 */	bctrl
 lbl_80331E34:
 /* 80331E34 0032DAD4  93 ED C1 78 */	stw r31, "spFirstFree__10AptBoolean"-_SDA_BASE_(r13)
 /* 80331E38 0032DAD8  7F E3 FB 78 */	mr r3, r31
@@ -33,7 +33,7 @@ lbl_80331E3C:
 /* 80331E48 0032DAE8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80331E4C 0032DAEC  7C 08 03 A6 */	mtlr r0
 /* 80331E50 0032DAF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80331E54 0032DAF4  4E 80 00 20 */	blr 
+/* 80331E54 0032DAF4  4E 80 00 20 */	blr
 
 .global "DeleteThis__10AptBooleanFv"
 "DeleteThis__10AptBooleanFv":
@@ -68,7 +68,7 @@ lbl_80331EA0:
 /* 80331EAC 0032DB4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80331EB0 0032DB50  7C 08 03 A6 */	mtlr r0
 /* 80331EB4 0032DB54  38 21 00 10 */	addi r1, r1, 0x10
-/* 80331EB8 0032DB58  4E 80 00 20 */	blr 
+/* 80331EB8 0032DB58  4E 80 00 20 */	blr
 
 .global "__dl__10AptBooleanFPvUl"
 "__dl__10AptBooleanFPvUl":
@@ -83,12 +83,31 @@ lbl_80331EA0:
 /* 80331ED0 0032DB70  80 0D C1 78 */	lwz r0, "spFirstFree__10AptBoolean"-_SDA_BASE_(r13)
 /* 80331ED4 0032DB74  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80331ED8 0032DB78  90 6D C1 78 */	stw r3, "spFirstFree__10AptBoolean"-_SDA_BASE_(r13)
-/* 80331EDC 0032DB7C  4E 80 00 20 */	blr 
+/* 80331EDC 0032DB7C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__10AptBoolean"
 "__vt__10AptBoolean":
-	.incbin "baserom.dol", 0x457FF0, 0x48
+	# ROM: 0x457FF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__10AptBooleanFv" ;# ptr (0x80331E5C)
+	.4byte "GetNativeHashVirtual__8AptValueFv" ;# ptr (0x802FE760)
+	.4byte "ContainsNativeHashVirtual__8AptValueCFv" ;# ptr (0x802FE768)
+	.4byte "getHasClass__8AptValueCFv" ;# ptr (0x802FE770)
+	.4byte "setHasClass__8AptValueFi" ;# ptr (0x802FE778)
+	.4byte "objectMemberLookup__8AptValueCFP8AptValuePC9EAStringC" ;# ptr (0x802FE77C)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__10AptBooleanFv" ;# ptr (0x80331E58)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__8AptValueFv" ;# ptr (0x802FE7B0)
+	.4byte "IsGarbageCollected__12AptValueNoGCCFv" ;# ptr (0x803099EC)
+	.4byte "RegisterReferences__12AptValueNoGCCFv" ;# ptr (0x803099F4)
+	.4byte "__dt__10AptBooleanFv" ;# ptr (0x80331E60)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "spFirstFree__10AptBoolean"

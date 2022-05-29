@@ -27,7 +27,7 @@
 /* 803A86C0 003A4360  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A86C4 003A4364  7C 08 03 A6 */	mtlr r0
 /* 803A86C8 003A4368  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A86CC 003A436C  4E 80 00 20 */	blr 
+/* 803A86CC 003A436C  4E 80 00 20 */	blr
 
 .global "InitParam__Q46nw4hbm3snd6detail8SeqSoundFv"
 "InitParam__Q46nw4hbm3snd6detail8SeqSoundFv":
@@ -44,7 +44,7 @@
 /* 803A86F8 003A4398  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A86FC 003A439C  7C 08 03 A6 */	mtlr r0
 /* 803A8700 003A43A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8704 003A43A4  4E 80 00 20 */	blr 
+/* 803A8704 003A43A4  4E 80 00 20 */	blr
 
 .global "Setup__Q46nw4hbm3snd6detail8SeqSoundFPQ46nw4hbm3snd6detail17SeqTrackAllocatorUliPQ46nw4hbm3snd6detail14NoteOnCallback"
 "Setup__Q46nw4hbm3snd6detail8SeqSoundFPQ46nw4hbm3snd6detail17SeqTrackAllocatorUliPQ46nw4hbm3snd6detail14NoteOnCallback":
@@ -82,7 +82,7 @@ lbl_803A8778:
 /* 803A877C 003A441C  7F 43 D3 78 */	mr r3, r26
 /* 803A8780 003A4420  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 803A8784 003A4424  7D 89 03 A6 */	mtctr r12
-/* 803A8788 003A4428  4E 80 04 21 */	bctrl 
+/* 803A8788 003A4428  4E 80 04 21 */	bctrl
 /* 803A878C 003A442C  7F 64 DB 78 */	mr r4, r27
 /* 803A8790 003A4430  7F 85 E3 78 */	mr r5, r28
 /* 803A8794 003A4434  7F A6 EB 78 */	mr r6, r29
@@ -94,7 +94,7 @@ lbl_803A8778:
 /* 803A87AC 003A444C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A87B0 003A4450  7C 08 03 A6 */	mtlr r0
 /* 803A87B4 003A4454  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A87B8 003A4458  4E 80 00 20 */	blr 
+/* 803A87B8 003A4458  4E 80 00 20 */	blr
 
 .global "Prepare__Q46nw4hbm3snd6detail8SeqSoundFPCvl"
 "Prepare__Q46nw4hbm3snd6detail8SeqSoundFPCvl":
@@ -127,7 +127,7 @@ lbl_803A8804:
 /* 803A8820 003A44C0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A8824 003A44C4  7C 08 03 A6 */	mtlr r0
 /* 803A8828 003A44C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A882C 003A44CC  4E 80 00 20 */	blr 
+/* 803A882C 003A44CC  4E 80 00 20 */	blr
 
 .global "Prepare__Q46nw4hbm3snd6detail8SeqSoundFPCQ56nw4hbm3snd6detail8SeqSound15SeqLoadCallbackUl"
 "Prepare__Q46nw4hbm3snd6detail8SeqSoundFPCQ56nw4hbm3snd6detail8SeqSound15SeqLoadCallbackUl":
@@ -160,7 +160,7 @@ lbl_803A8878:
 /* 803A8894 003A4534  7F E6 FB 78 */	mr r6, r31
 /* 803A8898 003A4538  38 84 88 D0 */	addi r4, r4, "NotifyLoadAsyncEndSeqData__Q46nw4hbm3snd6detail8SeqSoundFbPCvlPv"@l
 /* 803A889C 003A453C  7D 89 03 A6 */	mtctr r12
-/* 803A88A0 003A4540  4E 80 04 21 */	bctrl 
+/* 803A88A0 003A4540  4E 80 04 21 */	bctrl
 /* 803A88A4 003A4544  38 00 00 01 */	li r0, 1
 /* 803A88A8 003A4548  93 DD 01 EC */	stw r30, 0x1ec(r29)
 /* 803A88AC 003A454C  93 FD 01 F0 */	stw r31, 0x1f0(r29)
@@ -172,7 +172,7 @@ lbl_803A88B4:
 /* 803A88C0 003A4560  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A88C4 003A4564  7C 08 03 A6 */	mtlr r0
 /* 803A88C8 003A4568  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A88CC 003A456C  4E 80 00 20 */	blr 
+/* 803A88CC 003A456C  4E 80 00 20 */	blr
 
 .global "NotifyLoadAsyncEndSeqData__Q46nw4hbm3snd6detail8SeqSoundFbPCvlPv"
 "NotifyLoadAsyncEndSeqData__Q46nw4hbm3snd6detail8SeqSoundFbPCvlPv":
@@ -206,7 +206,7 @@ lbl_803A8920:
 /* 803A8938 003A45D8  38 80 00 00 */	li r4, 0
 /* 803A893C 003A45DC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 803A8940 003A45E0  7D 89 03 A6 */	mtctr r12
-/* 803A8944 003A45E4  4E 80 04 21 */	bctrl 
+/* 803A8944 003A45E4  4E 80 04 21 */	bctrl
 /* 803A8948 003A45E8  48 00 00 14 */	b lbl_803A895C
 lbl_803A894C:
 /* 803A894C 003A45EC  7F E3 FB 78 */	mr r3, r31
@@ -221,7 +221,7 @@ lbl_803A895C:
 /* 803A896C 003A460C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803A8970 003A4610  7C 08 03 A6 */	mtlr r0
 /* 803A8974 003A4614  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A8978 003A4618  4E 80 00 20 */	blr 
+/* 803A8978 003A4618  4E 80 00 20 */	blr
 
 .global "Shutdown__Q46nw4hbm3snd6detail8SeqSoundFv"
 "Shutdown__Q46nw4hbm3snd6detail8SeqSoundFv":
@@ -240,7 +240,7 @@ lbl_803A895C:
 /* 803A89AC 003A464C  80 9F 01 F0 */	lwz r4, 0x1f0(r31)
 /* 803A89B0 003A4650  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803A89B4 003A4654  7D 89 03 A6 */	mtctr r12
-/* 803A89B8 003A4658  4E 80 04 21 */	bctrl 
+/* 803A89B8 003A4658  4E 80 04 21 */	bctrl
 lbl_803A89BC:
 /* 803A89BC 003A465C  7F E3 FB 78 */	mr r3, r31
 /* 803A89C0 003A4660  4B FF 74 D1 */	bl "Shutdown__Q46nw4hbm3snd6detail10BasicSoundFv"
@@ -251,7 +251,7 @@ lbl_803A89BC:
 /* 803A89D4 003A4674  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A89D8 003A4678  7C 08 03 A6 */	mtlr r0
 /* 803A89DC 003A467C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A89E0 003A4680  4E 80 00 20 */	blr 
+/* 803A89E0 003A4680  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound"
 "Free__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound":
@@ -291,7 +291,7 @@ lbl_803A8A4C:
 /* 803A8A60 003A4700  38 80 FF FF */	li r4, -1
 /* 803A8A64 003A4704  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803A8A68 003A4708  7D 89 03 A6 */	mtctr r12
-/* 803A8A6C 003A470C  4E 80 04 21 */	bctrl 
+/* 803A8A6C 003A470C  4E 80 04 21 */	bctrl
 /* 803A8A70 003A4710  7F C3 F3 78 */	mr r3, r30
 /* 803A8A74 003A4714  7F E4 FB 78 */	mr r4, r31
 /* 803A8A78 003A4718  48 00 00 29 */	bl "Free__Q46nw4hbm3snd6detail41MemoryPool<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound"
@@ -304,7 +304,7 @@ lbl_803A8A88:
 /* 803A8A90 003A4730  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A8A94 003A4734  7C 08 03 A6 */	mtlr r0
 /* 803A8A98 003A4738  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A8A9C 003A473C  4E 80 00 20 */	blr 
+/* 803A8A9C 003A473C  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail41MemoryPool<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound"
 "Free__Q46nw4hbm3snd6detail41MemoryPool<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound":
@@ -338,7 +338,7 @@ lbl_803A8AF0:
 /* 803A8AFC 003A479C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8B00 003A47A0  7C 08 03 A6 */	mtlr r0
 /* 803A8B04 003A47A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8B08 003A47A8  4E 80 00 20 */	blr 
+/* 803A8B08 003A47A8  4E 80 00 20 */	blr
 
 .global "RemovePriorityList__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound"
 "RemovePriorityList__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSound":
@@ -366,7 +366,7 @@ lbl_803A8AF0:
 /* 803A8B54 003A47F4  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A8B58 003A47F8  7C 08 03 A6 */	mtlr r0
 /* 803A8B5C 003A47FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A8B60 003A4800  4E 80 00 20 */	blr 
+/* 803A8B60 003A4800  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -381,7 +381,7 @@ lbl_803A8AF0:
 /* 803A8B84 003A4824  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8B88 003A4828  7C 08 03 A6 */	mtlr r0
 /* 803A8B8C 003A482C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8B90 003A4830  4E 80 00 20 */	blr 
+/* 803A8B90 003A4830  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FPQ46nw4hbm3snd6detail8SeqSound"
 "GetNodeFromPointer__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FPQ46nw4hbm3snd6detail8SeqSound":
@@ -405,7 +405,7 @@ lbl_803A8BCC:
 /* 803A8BD4 003A4874  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8BD8 003A4878  7C 08 03 A6 */	mtlr r0
 /* 803A8BDC 003A487C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8BE0 003A4880  4E 80 00 20 */	blr 
+/* 803A8BE0 003A4880  4E 80 00 20 */	blr
 
 .global "SetChannelPriority__Q46nw4hbm3snd6detail8SeqSoundFi"
 "SetChannelPriority__Q46nw4hbm3snd6detail8SeqSoundFi":
@@ -444,7 +444,7 @@ lbl_803A8C48:
 /* 803A8C5C 003A48FC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A8C60 003A4900  7C 08 03 A6 */	mtlr r0
 /* 803A8C64 003A4904  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8C68 003A4908  4E 80 00 20 */	blr 
+/* 803A8C68 003A4908  4E 80 00 20 */	blr
 
 .global "SetPlayerPriority__Q46nw4hbm3snd6detail8SeqSoundFi"
 "SetPlayerPriority__Q46nw4hbm3snd6detail8SeqSoundFi":
@@ -464,7 +464,7 @@ lbl_803A8C48:
 /* 803A8CA0 003A4940  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A8CA4 003A4944  7C 08 03 A6 */	mtlr r0
 /* 803A8CA8 003A4948  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8CAC 003A494C  4E 80 00 20 */	blr 
+/* 803A8CAC 003A494C  4E 80 00 20 */	blr
 
 .global "UpdatePriority__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSoundi"
 "UpdatePriority__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSoundi":
@@ -488,7 +488,7 @@ lbl_803A8C48:
 /* 803A8CF4 003A4994  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A8CF8 003A4998  7C 08 03 A6 */	mtlr r0
 /* 803A8CFC 003A499C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A8D00 003A49A0  4E 80 00 20 */	blr 
+/* 803A8D00 003A49A0  4E 80 00 20 */	blr
 
 .global "InsertPriorityList__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSoundi"
 "InsertPriorityList__Q46nw4hbm3snd6detail51SoundInstanceManager<Q46nw4hbm3snd6detail8SeqSound>FPQ46nw4hbm3snd6detail8SeqSoundi":
@@ -540,7 +540,7 @@ lbl_803A8D88:
 /* 803A8DAC 003A4A4C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803A8DB0 003A4A50  7C 08 03 A6 */	mtlr r0
 /* 803A8DB4 003A4A54  38 21 00 30 */	addi r1, r1, 0x30
-/* 803A8DB8 003A4A58  4E 80 00 20 */	blr 
+/* 803A8DB8 003A4A58  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorPQ46nw4hbm3snd6detail8SeqSound"
 "Insert__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorPQ46nw4hbm3snd6detail8SeqSound":
@@ -566,7 +566,7 @@ lbl_803A8D88:
 /* 803A8E08 003A4AA8  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A8E0C 003A4AAC  7C 08 03 A6 */	mtlr r0
 /* 803A8E10 003A4AB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A8E14 003A4AB4  4E 80 00 20 */	blr 
+/* 803A8E14 003A4AB4  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator":
@@ -585,7 +585,7 @@ lbl_803A8D88:
 /* 803A8E48 003A4AE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8E4C 003A4AEC  7C 08 03 A6 */	mtlr r0
 /* 803A8E50 003A4AF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8E54 003A4AF4  4E 80 00 20 */	blr 
+/* 803A8E54 003A4AF4  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator":
@@ -602,7 +602,7 @@ lbl_803A8D88:
 /* 803A8E80 003A4B20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8E84 003A4B24  7C 08 03 A6 */	mtlr r0
 /* 803A8E88 003A4B28  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8E8C 003A4B2C  4E 80 00 20 */	blr 
+/* 803A8E8C 003A4B2C  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>Fv"
 "GetEndIter__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>Fv":
@@ -618,7 +618,7 @@ lbl_803A8D88:
 /* 803A8EB4 003A4B54  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A8EB8 003A4B58  7C 08 03 A6 */	mtlr r0
 /* 803A8EBC 003A4B5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8EC0 003A4B60  4E 80 00 20 */	blr 
+/* 803A8EC0 003A4B60  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFv"
 "__pp__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFv":
@@ -633,7 +633,7 @@ lbl_803A8D88:
 /* 803A8EE4 003A4B84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8EE8 003A4B88  7C 08 03 A6 */	mtlr r0
 /* 803A8EEC 003A4B8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8EF0 003A4B90  4E 80 00 20 */	blr 
+/* 803A8EF0 003A4B90  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorCFv"
 "__rf__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorCFv":
@@ -645,7 +645,7 @@ lbl_803A8D88:
 /* 803A8F08 003A4BA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8F0C 003A4BAC  7C 08 03 A6 */	mtlr r0
 /* 803A8F10 003A4BB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8F14 003A4BB4  4E 80 00 20 */	blr 
+/* 803A8F14 003A4BB4  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>FPQ36nw4hbm2ut12LinkListNode":
@@ -669,7 +669,7 @@ lbl_803A8F50:
 /* 803A8F58 003A4BF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8F5C 003A4BFC  7C 08 03 A6 */	mtlr r0
 /* 803A8F60 003A4C00  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8F64 003A4C04  4E 80 00 20 */	blr 
+/* 803A8F64 003A4C04  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFRCQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator"
 "__ct__Q46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8IteratorFRCQ46nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>8Iterator":
@@ -684,7 +684,7 @@ lbl_803A8F50:
 /* 803A8F88 003A4C28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A8F8C 003A4C2C  7C 08 03 A6 */	mtlr r0
 /* 803A8F90 003A4C30  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8F94 003A4C34  4E 80 00 20 */	blr 
+/* 803A8F94 003A4C34  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>Fv"
 "GetBeginIter__Q36nw4hbm2ut43LinkList<Q46nw4hbm3snd6detail8SeqSound,184>Fv":
@@ -700,7 +700,7 @@ lbl_803A8F50:
 /* 803A8FBC 003A4C5C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A8FC0 003A4C60  7C 08 03 A6 */	mtlr r0
 /* 803A8FC4 003A4C64  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A8FC8 003A4C68  4E 80 00 20 */	blr 
+/* 803A8FC8 003A4C68  4E 80 00 20 */	blr
 
 .global "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv"
 "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv":
@@ -708,7 +708,7 @@ lbl_803A8F50:
 /* 803A8FD0 003A4C70  7C 03 00 D0 */	neg r0, r3
 /* 803A8FD4 003A4C74  7C 00 1B 78 */	or r0, r0, r3
 /* 803A8FD8 003A4C78  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803A8FDC 003A4C7C  4E 80 00 20 */	blr 
+/* 803A8FDC 003A4C7C  4E 80 00 20 */	blr
 
 .global "DetachTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv"
 "DetachTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv":
@@ -718,17 +718,17 @@ lbl_803A8F50:
 .global "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail8SeqSoundCFv"
 "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail8SeqSoundCFv":
 /* 803A8FE8 003A4C88  38 6D C5 B8 */	addi r3, r13, "typeInfo__Q46nw4hbm3snd6detail8SeqSound"-_SDA_BASE_
-/* 803A8FEC 003A4C8C  4E 80 00 20 */	blr 
+/* 803A8FEC 003A4C8C  4E 80 00 20 */	blr
 
 .global "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundCFv"
 "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundCFv":
 /* 803A8FF0 003A4C90  38 63 00 D8 */	addi r3, r3, 0xd8
-/* 803A8FF4 003A4C94  4E 80 00 20 */	blr 
+/* 803A8FF4 003A4C94  4E 80 00 20 */	blr
 
 .global "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundFv"
 "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundFv":
 /* 803A8FF8 003A4C98  38 63 00 D8 */	addi r3, r3, 0xd8
-/* 803A8FFC 003A4C9C  4E 80 00 20 */	blr 
+/* 803A8FFC 003A4C9C  4E 80 00 20 */	blr
 
 .global "__sinit_snd_SeqSound_cpp"
 "__sinit_snd_SeqSound_cpp":
@@ -739,40 +739,109 @@ lbl_803A8F50:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046F268
 lbl_8046F268:
-	.incbin "baserom.dol", 0x46B368, 0x14
+	# ROM: 0x46B368
+	.asciz "snd_SeqSound.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046F27C
 lbl_8046F27C:
-	.incbin "baserom.dol", 0x46B37C, 0x60
+	# ROM: 0x46B37C
+	.asciz "NW4HBM:Pointer must not be NULL (callback)"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (GetSoundPlayer())"
+	.byte 0x00
+
 .global lbl_8046F2DC
 lbl_8046F2DC:
-	.incbin "baserom.dol", 0x46B3DC, 0x2C
+	# ROM: 0x46B3DC
+	.asciz "NW4HBM:Pointer must not be NULL (seqBase)"
+	.byte 0x00, 0x00
+
 .global lbl_8046F308
 lbl_8046F308:
-	.incbin "baserom.dol", 0x46B408, 0x54
+	# ROM: 0x46B408
+	.asciz "NW4HBM:Pointer must not be NULL (sound)"
+	.asciz "NW4HBM:Failed assertion tempoRatio >= 0.0f"
+	.byte 0x00
+
 .global lbl_8046F35C
 lbl_8046F35C:
-	.incbin "baserom.dol", 0x46B45C, 0x138
+	# ROM: 0x46B45C
+	.asciz "priority is out of bounds(%d)\n%d <= priority <= %d not satisfied."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion volume >= 0.0f"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion pitch >= 0.0f"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (var)"
+	.byte 0x00, 0x00
+	.asciz "varNo is out of bounds(%d)\n%d <= varNo < %d not satisfied."
+	.byte 0x00
+	.asciz "trackNo is out of bounds(%d)\n%d <= trackNo < %d not satisfied."
+	.byte 0x00
+
 .global "__vt__Q46nw4hbm3snd6detail8SeqSound"
 "__vt__Q46nw4hbm3snd6detail8SeqSound":
-	.incbin "baserom.dol", 0x46B594, 0x64
+	# ROM: 0x46B594
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetRuntimeTypeInfo__Q46nw4hbm3snd6detail8SeqSoundCFv" ;# ptr (0x803A8FE8)
+	.4byte "__dt__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A8AA4)
+	.4byte "Update__Q46nw4hbm3snd6detail10BasicSoundFv" ;# ptr (0x8039F87C)
+	.4byte "StartPrepared__Q46nw4hbm3snd6detail10BasicSoundFv" ;# ptr (0x8039F508)
+	.4byte "Stop__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F520)
+	.4byte "Pause__Q46nw4hbm3snd6detail10BasicSoundFbi" ;# ptr (0x8039F650)
+	.4byte "SetAutoStopCounter__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F78C)
+	.4byte "FadeIn__Q46nw4hbm3snd6detail10BasicSoundFi" ;# ptr (0x8039F7A4)
+	.4byte "Shutdown__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A897C)
+	.4byte "IsPrepared__Q46nw4hbm3snd6detail10BasicSoundCFv" ;# ptr (0x8039F82C)
+	.4byte "IsPause__Q46nw4hbm3snd6detail10BasicSoundCFv" ;# ptr (0x8039F868)
+	.4byte "SetInitialVolume__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A00AC)
+	.4byte "SetVolume__Q46nw4hbm3snd6detail10BasicSoundFfi" ;# ptr (0x803A0118)
+	.4byte "SetPitch__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A019C)
+	.4byte "SetPan__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0208)
+	.4byte "SetSurroundPan__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0210)
+	.4byte "SetLpfFreq__Q46nw4hbm3snd6detail10BasicSoundFf" ;# ptr (0x803A0218)
+	.4byte "SetPlayerPriority__Q46nw4hbm3snd6detail8SeqSoundFi" ;# ptr (0x803A8C6C)
+	.4byte "IsAttachedTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A8FCC)
+	.4byte "DetachTempSpecialHandle__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A8FE0)
+	.4byte "InitParam__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A86D0)
+	.4byte "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundFv" ;# ptr (0x803A8FF8)
+	.4byte "GetBasicPlayer__Q46nw4hbm3snd6detail8SeqSoundCFv" ;# ptr (0x803A8FF0)
+
 .global lbl_8046F4F8
 lbl_8046F4F8:
-	.incbin "baserom.dol", 0x46B5F8, 0x24
+	# ROM: 0x46B5F8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046F51C
 lbl_8046F51C:
-	.incbin "baserom.dol", 0x46B61C, 0xC
+	# ROM: 0x46B61C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046F528
 lbl_8046F528:
-	.incbin "baserom.dol", 0x46B628, 0x24
+	# ROM: 0x46B628
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046F54C
 lbl_8046F54C:
-	.incbin "baserom.dol", 0x46B64C, 0xC
+	# ROM: 0x46B64C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046F558
 lbl_8046F558:
-	.incbin "baserom.dol", 0x46B658, 0x28
+	# ROM: 0x46B658
+	.asciz "NW4HBM:Pointer must not be NULL (sound)"
+
 .global lbl_8046F580
 lbl_8046F580:
-	.incbin "baserom.dol", 0x46B680, 0x18
+	# ROM: 0x46B680
+	.asciz "SoundInstanceManager.h"
+	.byte 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q46nw4hbm3snd6detail8SeqSound"

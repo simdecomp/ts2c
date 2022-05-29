@@ -38,7 +38,7 @@ lbl_803D3950:
 /* 803D3954 003CF5F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D3958 003CF5F8  7C 08 03 A6 */	mtlr r0
 /* 803D395C 003CF5FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3960 003CF600  4E 80 00 20 */	blr 
+/* 803D3960 003CF600  4E 80 00 20 */	blr
 
 .global "MEMDestroyFrmHeap"
 "MEMDestroyFrmHeap":
@@ -53,7 +53,7 @@ lbl_803D3950:
 /* 803D3984 003CF624  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D3988 003CF628  7C 08 03 A6 */	mtlr r0
 /* 803D398C 003CF62C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3990 003CF630  4E 80 00 20 */	blr 
+/* 803D3990 003CF630  4E 80 00 20 */	blr
 
 .global "MEMAllocFromFrmHeapEx"
 "MEMAllocFromFrmHeapEx":
@@ -137,7 +137,7 @@ lbl_803D3A94:
 /* 803D3AA4 003CF744  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D3AA8 003CF748  7C 08 03 A6 */	mtlr r0
 /* 803D3AAC 003CF74C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3AB0 003CF750  4E 80 00 20 */	blr 
+/* 803D3AB0 003CF750  4E 80 00 20 */	blr
 
 .global "MEMFreeToFrmHeap"
 "MEMFreeToFrmHeap":
@@ -186,7 +186,7 @@ lbl_803D3B3C:
 /* 803D3B44 003CF7E4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D3B48 003CF7E8  7C 08 03 A6 */	mtlr r0
 /* 803D3B4C 003CF7EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3B50 003CF7F0  4E 80 00 20 */	blr 
+/* 803D3B50 003CF7F0  4E 80 00 20 */	blr
 
 .global "MEMGetAllocatableSizeForFrmHeapEx"
 "MEMGetAllocatableSizeForFrmHeapEx":
@@ -221,4 +221,4 @@ lbl_803D3BAC:
 /* 803D3BBC 003CF85C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D3BC0 003CF860  7C 08 03 A6 */	mtlr r0
 /* 803D3BC4 003CF864  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3BC8 003CF868  4E 80 00 20 */	blr 
+/* 803D3BC8 003CF868  4E 80 00 20 */	blr

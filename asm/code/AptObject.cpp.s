@@ -20,7 +20,7 @@
 /* 8032E654 0032A2F4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032E658 0032A2F8  38 A5 B6 64 */	addi r5, r5, lbl_8045B664@l
 /* 8032E65C 0032A2FC  7D 89 03 A6 */	mtctr r12
-/* 8032E660 0032A300  4E 80 04 21 */	bctrl 
+/* 8032E660 0032A300  4E 80 04 21 */	bctrl
 lbl_8032E664:
 /* 8032E664 0032A304  38 00 00 00 */	li r0, 0
 /* 8032E668 0032A308  7F E3 FB 78 */	mr r3, r31
@@ -30,7 +30,7 @@ lbl_8032E664:
 /* 8032E678 0032A318  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032E67C 0032A31C  7C 08 03 A6 */	mtlr r0
 /* 8032E680 0032A320  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E684 0032A324  4E 80 00 20 */	blr 
+/* 8032E684 0032A324  4E 80 00 20 */	blr
 
 .global "RegisterReferences__12AptPrototypeCFv"
 "RegisterReferences__12AptPrototypeCFv":
@@ -48,13 +48,13 @@ lbl_8032E664:
 /* 8032E6B4 0032A354  7F E3 FB 78 */	mr r3, r31
 /* 8032E6B8 0032A358  38 A5 B6 74 */	addi r5, r5, lbl_8045B674@l
 /* 8032E6BC 0032A35C  7D 89 03 A6 */	mtctr r12
-/* 8032E6C0 0032A360  4E 80 04 21 */	bctrl 
+/* 8032E6C0 0032A360  4E 80 04 21 */	bctrl
 lbl_8032E6C4:
 /* 8032E6C4 0032A364  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032E6C8 0032A368  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032E6CC 0032A36C  7C 08 03 A6 */	mtlr r0
 /* 8032E6D0 0032A370  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E6D4 0032A374  4E 80 00 20 */	blr 
+/* 8032E6D4 0032A374  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC"
 "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC":
@@ -75,7 +75,7 @@ lbl_8032E708:
 /* 8032E708 0032A3A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032E70C 0032A3AC  7C 08 03 A6 */	mtlr r0
 /* 8032E710 0032A3B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E714 0032A3B4  4E 80 00 20 */	blr 
+/* 8032E714 0032A3B4  4E 80 00 20 */	blr
 
 .global "RegisterReferences__9AptObjectCFv"
 "RegisterReferences__9AptObjectCFv":
@@ -117,7 +117,7 @@ lbl_8032E708:
 /* 8032E78C 0032A42C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032E790 0032A430  7C 08 03 A6 */	mtlr r0
 /* 8032E794 0032A434  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E798 0032A438  4E 80 00 20 */	blr 
+/* 8032E798 0032A438  4E 80 00 20 */	blr
 
 .global "GetImplementedObjects__9AptObjectCFPi"
 "GetImplementedObjects__9AptObjectCFPi":
@@ -151,7 +151,7 @@ lbl_8032E7FC:
 /* 8032E800 0032A4A0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8032E804 0032A4A4  7C 08 03 A6 */	mtlr r0
 /* 8032E808 0032A4A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E80C 0032A4AC  4E 80 00 20 */	blr 
+/* 8032E80C 0032A4AC  4E 80 00 20 */	blr
 
 .global "DoesImplementObject__9AptObjectCFP8AptValue"
 "DoesImplementObject__9AptObjectCFP8AptValue":
@@ -178,14 +178,14 @@ lbl_8032E854:
 /* 8032E858 0032A4F8  7F E3 FB 78 */	mr r3, r31
 /* 8032E85C 0032A4FC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8032E860 0032A500  7D 89 03 A6 */	mtctr r12
-/* 8032E864 0032A504  4E 80 04 21 */	bctrl 
+/* 8032E864 0032A504  4E 80 04 21 */	bctrl
 /* 8032E868 0032A508  2C 03 00 00 */	cmpwi r3, 0
 /* 8032E86C 0032A50C  41 82 00 28 */	beq lbl_8032E894
 /* 8032E870 0032A510  81 9F 00 00 */	lwz r12, 0(r31)
 /* 8032E874 0032A514  7F E3 FB 78 */	mr r3, r31
 /* 8032E878 0032A518  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8032E87C 0032A51C  7D 89 03 A6 */	mtctr r12
-/* 8032E880 0032A520  4E 80 04 21 */	bctrl 
+/* 8032E880 0032A520  4E 80 04 21 */	bctrl
 /* 8032E884 0032A524  4B FD C6 BD */	bl "Get__Proto____13AptNativeHashCFv"
 /* 8032E888 0032A528  7C 7F 1B 78 */	mr r31, r3
 lbl_8032E88C:
@@ -237,7 +237,7 @@ lbl_8032E918:
 /* 8032E928 0032A5C8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8032E92C 0032A5CC  7C 08 03 A6 */	mtlr r0
 /* 8032E930 0032A5D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E934 0032A5D4  4E 80 00 20 */	blr 
+/* 8032E934 0032A5D4  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__12AptPrototypeCFP8AptValuePC9EAStringC"
 "objectMemberLookup__12AptPrototypeCFP8AptValuePC9EAStringC":
@@ -271,7 +271,7 @@ lbl_8032E990:
 /* 8032E99C 0032A63C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032E9A0 0032A640  7C 08 03 A6 */	mtlr r0
 /* 8032E9A4 0032A644  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E9A8 0032A648  4E 80 00 20 */	blr 
+/* 8032E9A8 0032A648  4E 80 00 20 */	blr
 
 .global "objectMemberSet__12AptPrototypeFP8AptValuePC9EAStringCP8AptValue"
 "objectMemberSet__12AptPrototypeFP8AptValuePC9EAStringCP8AptValue":
@@ -311,7 +311,7 @@ lbl_8032EA18:
 /* 8032EA28 0032A6C8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8032EA2C 0032A6CC  7C 08 03 A6 */	mtlr r0
 /* 8032EA30 0032A6D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032EA34 0032A6D4  4E 80 00 20 */	blr 
+/* 8032EA34 0032A6D4  4E 80 00 20 */	blr
 
 .global "__dt__12AptPrototypeFv"
 "__dt__12AptPrototypeFv":
@@ -338,36 +338,94 @@ lbl_8032EA78:
 /* 8032EA84 0032A724  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032EA88 0032A728  7C 08 03 A6 */	mtlr r0
 /* 8032EA8C 0032A72C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032EA90 0032A730  4E 80 00 20 */	blr 
+/* 8032EA90 0032A730  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$7454"
 "__PRETTY_FUNCTION__$7454":
-	.incbin "baserom.dol", 0x457740, 0x24
+	# ROM: 0x457740
+	.asciz "AptPrototype::DestroyGCPointers()"
+	.byte 0x00, 0x00
+
 .global lbl_8045B664
 lbl_8045B664:
-	.incbin "baserom.dol", 0x457764, 0x10
+	# ROM: 0x457764
+	.asciz "AptObject.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_8045B674
 lbl_8045B674:
-	.incbin "baserom.dol", 0x457774, 0x14
+	# ROM: 0x457774
+	.asciz "SuperConstructor"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045B688
 lbl_8045B688:
-	.incbin "baserom.dol", 0x457788, 0x10
+	# ROM: 0x457788
+	.asciz "registerClass"
+	.byte 0x00, 0x00
+
 .global lbl_8045B698
 lbl_8045B698:
-	.incbin "baserom.dol", 0x457798, 0x10
+	# ROM: 0x457798
+	.asciz "__INTERFACEs__"
+	.byte 0x00
+
 .global lbl_8045B6A8
 lbl_8045B6A8:
-	.incbin "baserom.dol", 0x4577A8, 0x10
+	# ROM: 0x4577A8
+	.asciz "__INTERFACES__"
+	.byte 0x00
+
 .global "__vt__9AptObject"
 "__vt__9AptObject":
-	.incbin "baserom.dol", 0x4577B8, 0x44
+	# ROM: 0x4577B8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__9AptObjectFv" ;# ptr (0x8030AB28)
+
 .global "__vt__12AptPrototype"
 "__vt__12AptPrototype":
-	.incbin "baserom.dol", 0x4577FC, 0x44
+	# ROM: 0x4577FC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__8AptValueCFv" ;# ptr (0x802FE770)
+	.4byte "setHasClass__8AptValueFi" ;# ptr (0x802FE778)
+	.4byte "objectMemberLookup__12AptPrototypeCFP8AptValuePC9EAStringC" ;# ptr (0x8032E938)
+	.4byte "objectMemberSet__12AptPrototypeFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x8032E9AC)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__12AptPrototypeFv" ;# ptr (0x8032E61C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__12AptPrototypeCFv" ;# ptr (0x8032E688)
+	.4byte "__dt__12AptPrototypeFv" ;# ptr (0x8032EA38)
+
 .global lbl_8045B740
 lbl_8045B740:
-	.incbin "baserom.dol", 0x457840, 0x10
+	# ROM: 0x457840
+	.asciz "__constructor__"
+
 .global lbl_8045B750
 lbl_8045B750:
-	.incbin "baserom.dol", 0x457850, 0x10
+	# ROM: 0x457850
+	.asciz "__constructor__"
+

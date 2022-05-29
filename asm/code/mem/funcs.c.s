@@ -50,13 +50,13 @@ lbl_80405ADC:
 /* 80405ADC 0040177C  54 A5 07 BF */	clrlwi. r5, r5, 0x1e
 /* 80405AE0 00401780  38 C7 00 03 */	addi r6, r7, 3
 /* 80405AE4 00401784  38 64 00 03 */	addi r3, r4, 3
-/* 80405AE8 00401788  4D 82 00 20 */	beqlr 
+/* 80405AE8 00401788  4D 82 00 20 */	beqlr
 lbl_80405AEC:
 /* 80405AEC 0040178C  8C 06 00 01 */	lbzu r0, 1(r6)
 /* 80405AF0 00401790  34 A5 FF FF */	addic. r5, r5, -1
 /* 80405AF4 00401794  9C 03 00 01 */	stbu r0, 1(r3)
 /* 80405AF8 00401798  40 82 FF F4 */	bne lbl_80405AEC
-/* 80405AFC 0040179C  4E 80 00 20 */	blr 
+/* 80405AFC 0040179C  4E 80 00 20 */	blr
 
 .global "__copy_longs_rev_aligned"
 "__copy_longs_rev_aligned":
@@ -102,13 +102,13 @@ lbl_80405B7C:
 /* 80405B88 00401828  40 82 FF F4 */	bne lbl_80405B7C
 lbl_80405B8C:
 /* 80405B8C 0040182C  54 A5 07 BF */	clrlwi. r5, r5, 0x1e
-/* 80405B90 00401830  4D 82 00 20 */	beqlr 
+/* 80405B90 00401830  4D 82 00 20 */	beqlr
 lbl_80405B94:
 /* 80405B94 00401834  8C 06 FF FF */	lbzu r0, -1(r6)
 /* 80405B98 00401838  34 A5 FF FF */	addic. r5, r5, -1
 /* 80405B9C 0040183C  9C 07 FF FF */	stbu r0, -1(r7)
 /* 80405BA0 00401840  40 82 FF F4 */	bne lbl_80405B94
-/* 80405BA4 00401844  4E 80 00 20 */	blr 
+/* 80405BA4 00401844  4E 80 00 20 */	blr
 
 .global "__copy_longs_unaligned"
 "__copy_longs_unaligned":
@@ -156,7 +156,7 @@ lbl_80405C3C:
 /* 80405C3C 004018DC  54 A5 07 BF */	clrlwi. r5, r5, 0x1e
 /* 80405C40 004018E0  38 88 00 03 */	addi r4, r8, 3
 /* 80405C44 004018E4  38 66 00 03 */	addi r3, r6, 3
-/* 80405C48 004018E8  4D 82 00 20 */	beqlr 
+/* 80405C48 004018E8  4D 82 00 20 */	beqlr
 /* 80405C4C 004018EC  20 09 00 04 */	subfic r0, r9, 4
 /* 80405C50 004018F0  7C 80 20 50 */	subf r4, r0, r4
 lbl_80405C54:
@@ -164,7 +164,7 @@ lbl_80405C54:
 /* 80405C58 004018F8  34 A5 FF FF */	addic. r5, r5, -1
 /* 80405C5C 004018FC  9C 03 00 01 */	stbu r0, 1(r3)
 /* 80405C60 00401900  40 82 FF F4 */	bne lbl_80405C54
-/* 80405C64 00401904  4E 80 00 20 */	blr 
+/* 80405C64 00401904  4E 80 00 20 */	blr
 
 .global "__copy_longs_rev_unaligned"
 "__copy_longs_rev_unaligned":
@@ -208,11 +208,11 @@ lbl_80405CA8:
 /* 80405CF0 00401990  94 0B FF FC */	stwu r0, -4(r11)
 lbl_80405CF4:
 /* 80405CF4 00401994  54 A5 07 BF */	clrlwi. r5, r5, 0x1e
-/* 80405CF8 00401998  4D 82 00 20 */	beqlr 
+/* 80405CF8 00401998  4D 82 00 20 */	beqlr
 /* 80405CFC 0040199C  7D 4A 3A 14 */	add r10, r10, r7
 lbl_80405D00:
 /* 80405D00 004019A0  8C 0A FF FF */	lbzu r0, -1(r10)
 /* 80405D04 004019A4  34 A5 FF FF */	addic. r5, r5, -1
 /* 80405D08 004019A8  9C 0B FF FF */	stbu r0, -1(r11)
 /* 80405D0C 004019AC  40 82 FF F4 */	bne lbl_80405D00
-/* 80405D10 004019B0  4E 80 00 20 */	blr 
+/* 80405D10 004019B0  4E 80 00 20 */	blr

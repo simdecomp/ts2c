@@ -8,7 +8,7 @@
 /* 804151B8 00410E58  90 83 00 08 */	stw r4, 8(r3)
 /* 804151BC 00410E5C  90 03 00 0C */	stw r0, 0xc(r3)
 /* 804151C0 00410E60  90 A3 00 04 */	stw r5, 4(r3)
-/* 804151C4 00410E64  4E 80 00 20 */	blr 
+/* 804151C4 00410E64  4E 80 00 20 */	blr
 
 .global "GDFlushCurrToMem"
 "GDFlushCurrToMem":
@@ -22,7 +22,7 @@
 /* 804151D8 00410E78  80 6D C9 F0 */	lwz r3, "__GDCurrentDL"-_SDA_BASE_(r13)
 /* 804151DC 00410E7C  80 03 00 08 */	lwz r0, 8(r3)
 /* 804151E0 00410E80  54 03 06 FF */	clrlwi. r3, r0, 0x1b
-/* 804151E4 00410E84  4D 82 00 20 */	beqlr 
+/* 804151E4 00410E84  4D 82 00 20 */	beqlr
 /* 804151E8 00410E88  28 83 00 20 */	cmplwi cr1, r3, 0x20
 /* 804151EC 00410E8C  4C 84 00 20 */	bgelr cr1
 /* 804151F0 00410E90  20 03 00 20 */	subfic r0, r3, 0x20
@@ -83,7 +83,7 @@ lbl_804152C0:
 /* 804152C4 00410F64  38 A0 00 00 */	li r5, 0
 /* 804152C8 00410F68  7C 09 03 A6 */	mtctr r0
 /* 804152CC 00410F6C  28 03 00 20 */	cmplwi r3, 0x20
-/* 804152D0 00410F70  4C 80 00 20 */	bgelr 
+/* 804152D0 00410F70  4C 80 00 20 */	bgelr
 lbl_804152D4:
 /* 804152D4 00410F74  80 8D C9 F0 */	lwz r4, "__GDCurrentDL"-_SDA_BASE_(r13)
 /* 804152D8 00410F78  80 64 00 08 */	lwz r3, 8(r4)
@@ -91,16 +91,16 @@ lbl_804152D4:
 /* 804152E0 00410F80  38 03 00 01 */	addi r0, r3, 1
 /* 804152E4 00410F84  90 04 00 08 */	stw r0, 8(r4)
 /* 804152E8 00410F88  42 00 FF EC */	bdnz lbl_804152D4
-/* 804152EC 00410F8C  4E 80 00 20 */	blr 
+/* 804152EC 00410F8C  4E 80 00 20 */	blr
 
 .global "GDOverflowed"
 "GDOverflowed":
 /* 804152F0 00410F90  81 8D C9 F4 */	lwz r12, "overflowcb"-_SDA_BASE_(r13)
 /* 804152F4 00410F94  2C 0C 00 00 */	cmpwi r12, 0
-/* 804152F8 00410F98  4D 82 00 20 */	beqlr 
+/* 804152F8 00410F98  4D 82 00 20 */	beqlr
 /* 804152FC 00410F9C  7D 89 03 A6 */	mtctr r12
-/* 80415300 00410FA0  4E 80 04 20 */	bctr 
-/* 80415304 00410FA4  4E 80 00 20 */	blr 
+/* 80415300 00410FA0  4E 80 04 20 */	bctr
+/* 80415304 00410FA4  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__GDCurrentDL"

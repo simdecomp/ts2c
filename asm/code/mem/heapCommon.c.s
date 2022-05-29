@@ -94,7 +94,7 @@ lbl_803D2E28:
 /* 803D2E38 003CEAD8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803D2E3C 003CEADC  7C 08 03 A6 */	mtlr r0
 /* 803D2E40 003CEAE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D2E44 003CEAE4  4E 80 00 20 */	blr 
+/* 803D2E44 003CEAE4  4E 80 00 20 */	blr
 
 .global "MEMiInitHeapHead"
 "MEMiInitHeapHead":
@@ -223,7 +223,7 @@ lbl_803D2FD8:
 /* 803D2FF8 003CEC98  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D2FFC 003CEC9C  7C 08 03 A6 */	mtlr r0
 /* 803D3000 003CECA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3004 003CECA4  4E 80 00 20 */	blr 
+/* 803D3004 003CECA4  4E 80 00 20 */	blr
 
 .global "MEMiFinalizeHeap"
 "MEMiFinalizeHeap":
@@ -330,7 +330,7 @@ lbl_803D313C:
 /* 803D3164 003CEE04  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D3168 003CEE08  7C 08 03 A6 */	mtlr r0
 /* 803D316C 003CEE0C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3170 003CEE10  4E 80 00 20 */	blr 
+/* 803D3170 003CEE10  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "sRootList"

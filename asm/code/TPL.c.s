@@ -76,7 +76,7 @@ lbl_803EAE18:
 /* 803EAE2C 003E6ACC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803EAE30 003E6AD0  7C 08 03 A6 */	mtlr r0
 /* 803EAE34 003E6AD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803EAE38 003E6AD8  4E 80 00 20 */	blr 
+/* 803EAE38 003E6AD8  4E 80 00 20 */	blr
 
 .global "TPLGet"
 "TPLGet":
@@ -87,7 +87,7 @@ lbl_803EAE18:
 /* 803EAE4C 003E6AEC  7C 00 20 50 */	subf r0, r0, r4
 /* 803EAE50 003E6AF0  54 00 18 38 */	slwi r0, r0, 3
 /* 803EAE54 003E6AF4  7C 63 02 14 */	add r3, r3, r0
-/* 803EAE58 003E6AF8  4E 80 00 20 */	blr 
+/* 803EAE58 003E6AF8  4E 80 00 20 */	blr
 
 .global "TPLGetGXTexObjFromPalette"
 "TPLGetGXTexObjFromPalette":
@@ -146,19 +146,29 @@ lbl_803EAE18:
 /* 803EAF2C 003E6BCC  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803EAF30 003E6BD0  7C 08 03 A6 */	mtlr r0
 /* 803EAF34 003E6BD4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803EAF38 003E6BD8  4E 80 00 20 */	blr 
+/* 803EAF38 003E6BD8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80483CD0
 lbl_80483CD0:
-	.incbin "baserom.dol", 0x47FDD0, 0x30
+	# ROM: 0x47FDD0
+	.asciz "invalid version number for texture palette"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7918
 lbl_805D7918:
-	.incbin "baserom.dol", 0x487498, 0x8
+	# ROM: 0x487498
+	.asciz "TPL.c"
+	.byte 0x00, 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBD98
 lbl_805DBD98:
-	.incbin "baserom.dol", 0x48A0B8, 0x8
+	# ROM: 0x48A0B8
+	.4byte 0x43300000
+	.4byte 0x00000000
+

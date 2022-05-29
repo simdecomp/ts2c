@@ -38,7 +38,7 @@ lbl_803DD0EC:
 /* 803DD134 003D8DD4  83 E1 00 7C */	lwz r31, 0x7c(r1)
 /* 803DD138 003D8DD8  7C 08 03 A6 */	mtlr r0
 /* 803DD13C 003D8DDC  38 21 00 80 */	addi r1, r1, 0x80
-/* 803DD140 003D8DE0  4E 80 00 20 */	blr 
+/* 803DD140 003D8DE0  4E 80 00 20 */	blr
 
 .global "OSVReport"
 "OSVReport":
@@ -124,7 +124,7 @@ lbl_803DD250:
 /* 803DD264 003D8F04  83 81 00 80 */	lwz r28, 0x80(r1)
 /* 803DD268 003D8F08  7C 08 03 A6 */	mtlr r0
 /* 803DD26C 003D8F0C  38 21 00 90 */	addi r1, r1, 0x90
-/* 803DD270 003D8F10  4E 80 00 20 */	blr 
+/* 803DD270 003D8F10  4E 80 00 20 */	blr
 
 .global "OSSetErrorHandler"
 "OSSetErrorHandler":
@@ -298,7 +298,7 @@ lbl_803DD4D0:
 /* 803DD4EC 003D918C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803DD4F0 003D9190  7C 08 03 A6 */	mtlr r0
 /* 803DD4F4 003D9194  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DD4F8 003D9198  4E 80 00 20 */	blr 
+/* 803DD4F8 003D9198  4E 80 00 20 */	blr
 
 .global "__OSUnhandledException"
 "__OSUnhandledException":
@@ -366,7 +366,7 @@ lbl_803DD5A0:
 /* 803DD5E8 003D9288  38 E7 29 B0 */	addi r7, r7, "__OSErrorTable"@l
 /* 803DD5EC 003D928C  81 87 00 40 */	lwz r12, 0x40(r7)
 /* 803DD5F0 003D9290  7D 89 03 A6 */	mtctr r12
-/* 803DD5F4 003D9294  4E 80 04 21 */	bctrl 
+/* 803DD5F4 003D9294  4E 80 04 21 */	bctrl
 /* 803DD5F8 003D9298  80 9A 01 9C */	lwz r4, 0x19c(r26)
 /* 803DD5FC 003D929C  38 60 00 00 */	li r3, 0
 /* 803DD600 003D92A0  38 18 F8 FF */	addi r0, r24, -1793
@@ -403,7 +403,7 @@ lbl_803DD644:
 /* 803DD670 003D9310  4C C6 31 82 */	crclr 6
 /* 803DD674 003D9314  7D 98 B8 2E */	lwzx r12, r24, r23
 /* 803DD678 003D9318  7D 89 03 A6 */	mtctr r12
-/* 803DD67C 003D931C  4E 80 04 21 */	bctrl 
+/* 803DD67C 003D931C  4E 80 04 21 */	bctrl
 /* 803DD680 003D9320  48 00 58 55 */	bl "OSEnableScheduler"
 /* 803DD684 003D9324  48 00 5D 5D */	bl "__OSReschedule"
 /* 803DD688 003D9328  7F 43 D3 78 */	mr r3, r26
@@ -441,7 +441,7 @@ lbl_803DD6B0:
 /* 803DD6FC 003D939C  38 63 6B 84 */	addi r3, r3, lbl_80476B84@l
 /* 803DD700 003D93A0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803DD704 003D93A4  7C 69 03 A6 */	mtctr r3
-/* 803DD708 003D93A8  4E 80 04 20 */	bctr 
+/* 803DD708 003D93A8  4E 80 04 20 */	bctr
 /* 803DD70C 003D93AC  80 9A 01 98 */	lwz r4, 0x198(r26)
 /* 803DD710 003D93B0  7F 85 E3 78 */	mr r5, r28
 /* 803DD714 003D93B4  38 7F 00 D8 */	addi r3, r31, 0xd8
@@ -498,15 +498,59 @@ lbl_803DD7B4:
 /* 803DD7DC 003D947C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803DD7E0 003D9480  7C 08 03 A6 */	mtlr r0
 /* 803DD7E4 003D9484  38 21 00 30 */	addi r1, r1, 0x30
-/* 803DD7E8 003D9488  4E 80 00 20 */	blr 
+/* 803DD7E8 003D9488  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804768A8
 lbl_804768A8:
-	.incbin "baserom.dol", 0x4729A8, 0x2DC
+	# ROM: 0x4729A8
+	.asciz " in \"%s\" on line %d.\n"
+	.byte 0x00, 0x00
+	.asciz "\nAddress:      Back Chain    LR Save\n"
+	.byte 0x00, 0x00
+	.asciz "0x%08x:   0x%08x    0x%08x\n"
+	.asciz "Non-recoverable Exception %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Unhandled Exception %d"
+	.byte 0x00
+	.asciz "\nDSISR = 0x%08x                   DAR  = 0x%08x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TB = 0x%016llx\n"
+	.asciz "\nInstruction at 0x%x (read from SRR0) attempted to access invalid address 0x%x (read from DAR)\n"
+	.asciz "\nAttempted to fetch instruction from invalid address 0x%x (read from SRR0)\n"
+	.asciz "\nInstruction at 0x%x (read from SRR0) attempted to access unaligned address 0x%x (read from DAR)\n"
+	.byte 0x00, 0x00
+	.asciz "\nProgram exception : Possible illegal instruction/operation at or around 0x%x (read from SRR0)\n"
+	.asciz "AI DMA Address =   0x%04x%04x\n"
+	.byte 0x00
+	.asciz "ARAM DMA Address = 0x%04x%04x\n"
+	.byte 0x00
+	.asciz "DI DMA Address =   0x%08x\n"
+	.byte 0x00
+	.asciz "\nLast interrupt (%d): SRR0 = 0x%08x  TB = 0x%016llx\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80476B84
 lbl_80476B84:
-	.incbin "baserom.dol", 0x472C84, 0x44
+	# ROM: 0x472C84
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD70C ;# ptr
+	.4byte 0x803DD724 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD738 ;# ptr
+	.4byte 0x803DD750 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD7B4 ;# ptr
+	.4byte 0x803DD768 ;# ptr
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__OSErrorTable"
@@ -516,7 +560,11 @@ lbl_80476B84:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__OSFpscrEnableBits"
 "__OSFpscrEnableBits":
-	.incbin "baserom.dol", 0x487320, 0x4
+	# ROM: 0x487320
+	.4byte 0x000000F8
+
 .global lbl_805D77A4
 lbl_805D77A4:
-	.incbin "baserom.dol", 0x487324, 0x4
+	# ROM: 0x487324
+	.4byte 0x0A000000
+

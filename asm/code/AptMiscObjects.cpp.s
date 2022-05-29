@@ -17,7 +17,7 @@
 /* 80322DA4 0031EA44  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322DA8 0031EA48  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322DAC 0031EA4C  7D 89 03 A6 */	mtctr r12
-/* 80322DB0 0031EA50  4E 80 04 21 */	bctrl 
+/* 80322DB0 0031EA50  4E 80 04 21 */	bctrl
 /* 80322DB4 0031EA54  38 00 00 00 */	li r0, 0
 /* 80322DB8 0031EA58  90 0D BF E0 */	stw r0, "psMethod_sin__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322DBC:
@@ -32,7 +32,7 @@ lbl_80322DBC:
 /* 80322DDC 0031EA7C  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322DE0 0031EA80  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322DE4 0031EA84  7D 89 03 A6 */	mtctr r12
-/* 80322DE8 0031EA88  4E 80 04 21 */	bctrl 
+/* 80322DE8 0031EA88  4E 80 04 21 */	bctrl
 /* 80322DEC 0031EA8C  38 00 00 00 */	li r0, 0
 /* 80322DF0 0031EA90  90 0D BF E4 */	stw r0, "psMethod_cos__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322DF4:
@@ -47,7 +47,7 @@ lbl_80322DF4:
 /* 80322E14 0031EAB4  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322E18 0031EAB8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322E1C 0031EABC  7D 89 03 A6 */	mtctr r12
-/* 80322E20 0031EAC0  4E 80 04 21 */	bctrl 
+/* 80322E20 0031EAC0  4E 80 04 21 */	bctrl
 /* 80322E24 0031EAC4  38 00 00 00 */	li r0, 0
 /* 80322E28 0031EAC8  90 0D BF E8 */	stw r0, "psMethod_atan2__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322E2C:
@@ -62,7 +62,7 @@ lbl_80322E2C:
 /* 80322E4C 0031EAEC  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322E50 0031EAF0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322E54 0031EAF4  7D 89 03 A6 */	mtctr r12
-/* 80322E58 0031EAF8  4E 80 04 21 */	bctrl 
+/* 80322E58 0031EAF8  4E 80 04 21 */	bctrl
 /* 80322E5C 0031EAFC  38 00 00 00 */	li r0, 0
 /* 80322E60 0031EB00  90 0D BF EC */	stw r0, "psMethod_round__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322E64:
@@ -77,7 +77,7 @@ lbl_80322E64:
 /* 80322E84 0031EB24  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322E88 0031EB28  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322E8C 0031EB2C  7D 89 03 A6 */	mtctr r12
-/* 80322E90 0031EB30  4E 80 04 21 */	bctrl 
+/* 80322E90 0031EB30  4E 80 04 21 */	bctrl
 /* 80322E94 0031EB34  38 00 00 00 */	li r0, 0
 /* 80322E98 0031EB38  90 0D BF F0 */	stw r0, "psMethod_min__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322E9C:
@@ -92,7 +92,7 @@ lbl_80322E9C:
 /* 80322EBC 0031EB5C  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322EC0 0031EB60  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322EC4 0031EB64  7D 89 03 A6 */	mtctr r12
-/* 80322EC8 0031EB68  4E 80 04 21 */	bctrl 
+/* 80322EC8 0031EB68  4E 80 04 21 */	bctrl
 /* 80322ECC 0031EB6C  38 00 00 00 */	li r0, 0
 /* 80322ED0 0031EB70  90 0D BF F4 */	stw r0, "psMethod_max__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322ED4:
@@ -107,7 +107,7 @@ lbl_80322ED4:
 /* 80322EF4 0031EB94  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322EF8 0031EB98  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322EFC 0031EB9C  7D 89 03 A6 */	mtctr r12
-/* 80322F00 0031EBA0  4E 80 04 21 */	bctrl 
+/* 80322F00 0031EBA0  4E 80 04 21 */	bctrl
 /* 80322F04 0031EBA4  38 00 00 00 */	li r0, 0
 /* 80322F08 0031EBA8  90 0D BF F8 */	stw r0, "psMethod_abs__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322F0C:
@@ -122,7 +122,7 @@ lbl_80322F0C:
 /* 80322F2C 0031EBCC  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322F30 0031EBD0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322F34 0031EBD4  7D 89 03 A6 */	mtctr r12
-/* 80322F38 0031EBD8  4E 80 04 21 */	bctrl 
+/* 80322F38 0031EBD8  4E 80 04 21 */	bctrl
 /* 80322F3C 0031EBDC  38 00 00 00 */	li r0, 0
 /* 80322F40 0031EBE0  90 0D BF FC */	stw r0, "psMethod_acos__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322F44:
@@ -137,7 +137,7 @@ lbl_80322F44:
 /* 80322F64 0031EC04  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322F68 0031EC08  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322F6C 0031EC0C  7D 89 03 A6 */	mtctr r12
-/* 80322F70 0031EC10  4E 80 04 21 */	bctrl 
+/* 80322F70 0031EC10  4E 80 04 21 */	bctrl
 /* 80322F74 0031EC14  38 00 00 00 */	li r0, 0
 /* 80322F78 0031EC18  90 0D C0 00 */	stw r0, "psMethod_asin__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322F7C:
@@ -152,7 +152,7 @@ lbl_80322F7C:
 /* 80322F9C 0031EC3C  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322FA0 0031EC40  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322FA4 0031EC44  7D 89 03 A6 */	mtctr r12
-/* 80322FA8 0031EC48  4E 80 04 21 */	bctrl 
+/* 80322FA8 0031EC48  4E 80 04 21 */	bctrl
 /* 80322FAC 0031EC4C  38 00 00 00 */	li r0, 0
 /* 80322FB0 0031EC50  90 0D C0 04 */	stw r0, "psMethod_atan__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322FB4:
@@ -167,7 +167,7 @@ lbl_80322FB4:
 /* 80322FD4 0031EC74  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80322FD8 0031EC78  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80322FDC 0031EC7C  7D 89 03 A6 */	mtctr r12
-/* 80322FE0 0031EC80  4E 80 04 21 */	bctrl 
+/* 80322FE0 0031EC80  4E 80 04 21 */	bctrl
 /* 80322FE4 0031EC84  38 00 00 00 */	li r0, 0
 /* 80322FE8 0031EC88  90 0D C0 08 */	stw r0, "psMethod_ceil__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80322FEC:
@@ -182,7 +182,7 @@ lbl_80322FEC:
 /* 8032300C 0031ECAC  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80323010 0031ECB0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323014 0031ECB4  7D 89 03 A6 */	mtctr r12
-/* 80323018 0031ECB8  4E 80 04 21 */	bctrl 
+/* 80323018 0031ECB8  4E 80 04 21 */	bctrl
 /* 8032301C 0031ECBC  38 00 00 00 */	li r0, 0
 /* 80323020 0031ECC0  90 0D C0 0C */	stw r0, "psMethod_exp__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80323024:
@@ -197,7 +197,7 @@ lbl_80323024:
 /* 80323044 0031ECE4  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80323048 0031ECE8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032304C 0031ECEC  7D 89 03 A6 */	mtctr r12
-/* 80323050 0031ECF0  4E 80 04 21 */	bctrl 
+/* 80323050 0031ECF0  4E 80 04 21 */	bctrl
 /* 80323054 0031ECF4  38 00 00 00 */	li r0, 0
 /* 80323058 0031ECF8  90 0D C0 10 */	stw r0, "psMethod_floor__10AptMathObj"-_SDA_BASE_(r13)
 lbl_8032305C:
@@ -212,7 +212,7 @@ lbl_8032305C:
 /* 8032307C 0031ED1C  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80323080 0031ED20  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323084 0031ED24  7D 89 03 A6 */	mtctr r12
-/* 80323088 0031ED28  4E 80 04 21 */	bctrl 
+/* 80323088 0031ED28  4E 80 04 21 */	bctrl
 /* 8032308C 0031ED2C  38 00 00 00 */	li r0, 0
 /* 80323090 0031ED30  90 0D C0 14 */	stw r0, "psMethod_log__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80323094:
@@ -227,7 +227,7 @@ lbl_80323094:
 /* 803230B4 0031ED54  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 803230B8 0031ED58  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803230BC 0031ED5C  7D 89 03 A6 */	mtctr r12
-/* 803230C0 0031ED60  4E 80 04 21 */	bctrl 
+/* 803230C0 0031ED60  4E 80 04 21 */	bctrl
 /* 803230C4 0031ED64  38 00 00 00 */	li r0, 0
 /* 803230C8 0031ED68  90 0D C0 18 */	stw r0, "psMethod_pow__10AptMathObj"-_SDA_BASE_(r13)
 lbl_803230CC:
@@ -242,7 +242,7 @@ lbl_803230CC:
 /* 803230EC 0031ED8C  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 803230F0 0031ED90  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803230F4 0031ED94  7D 89 03 A6 */	mtctr r12
-/* 803230F8 0031ED98  4E 80 04 21 */	bctrl 
+/* 803230F8 0031ED98  4E 80 04 21 */	bctrl
 /* 803230FC 0031ED9C  38 00 00 00 */	li r0, 0
 /* 80323100 0031EDA0  90 0D C0 1C */	stw r0, "psMethod_random__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80323104:
@@ -257,7 +257,7 @@ lbl_80323104:
 /* 80323124 0031EDC4  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80323128 0031EDC8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032312C 0031EDCC  7D 89 03 A6 */	mtctr r12
-/* 80323130 0031EDD0  4E 80 04 21 */	bctrl 
+/* 80323130 0031EDD0  4E 80 04 21 */	bctrl
 /* 80323134 0031EDD4  38 00 00 00 */	li r0, 0
 /* 80323138 0031EDD8  90 0D C0 20 */	stw r0, "psMethod_sqrt__10AptMathObj"-_SDA_BASE_(r13)
 lbl_8032313C:
@@ -272,14 +272,14 @@ lbl_8032313C:
 /* 8032315C 0031EDFC  38 84 90 0C */	addi r4, r4, "__PRETTY_FUNCTION__$7668"@l
 /* 80323160 0031EE00  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323164 0031EE04  7D 89 03 A6 */	mtctr r12
-/* 80323168 0031EE08  4E 80 04 21 */	bctrl 
+/* 80323168 0031EE08  4E 80 04 21 */	bctrl
 /* 8032316C 0031EE0C  38 00 00 00 */	li r0, 0
 /* 80323170 0031EE10  90 0D C0 24 */	stw r0, "psMethod_tan__10AptMathObj"-_SDA_BASE_(r13)
 lbl_80323174:
 /* 80323174 0031EE14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323178 0031EE18  7C 08 03 A6 */	mtlr r0
 /* 8032317C 0031EE1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323180 0031EE20  4E 80 00 20 */	blr 
+/* 80323180 0031EE20  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__10AptMathObjCFP8AptValuePC9EAStringC"
 "objectMemberLookup__10AptMathObjCFP8AptValuePC9EAStringC":
@@ -312,7 +312,7 @@ lbl_803231C8:
 /* 803231E4 0031EE84  38 63 90 98 */	addi r3, r3, lbl_80459098@l
 /* 803231E8 0031EE88  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803231EC 0031EE8C  7C 69 03 A6 */	mtctr r3
-/* 803231F0 0031EE90  4E 80 04 20 */	bctr 
+/* 803231F0 0031EE90  4E 80 04 20 */	bctr
 /* 803231F4 0031EE94  80 0D BF E0 */	lwz r0, "psMethod_sin__10AptMathObj"-_SDA_BASE_(r13)
 /* 803231F8 0031EE98  2C 00 00 00 */	cmpwi r0, 0
 /* 803231FC 0031EE9C  40 82 00 54 */	bne lbl_80323250
@@ -336,7 +336,7 @@ lbl_8032321C:
 /* 80323240 0031EEE0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323244 0031EEE4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323248 0031EEE8  7D 89 03 A6 */	mtctr r12
-/* 8032324C 0031EEEC  4E 80 04 21 */	bctrl 
+/* 8032324C 0031EEEC  4E 80 04 21 */	bctrl
 lbl_80323250:
 /* 80323250 0031EEF0  80 6D BF E0 */	lwz r3, "psMethod_sin__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323254 0031EEF4  48 00 06 AC */	b lbl_80323900
@@ -363,7 +363,7 @@ lbl_80323280:
 /* 803232A4 0031EF44  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803232A8 0031EF48  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803232AC 0031EF4C  7D 89 03 A6 */	mtctr r12
-/* 803232B0 0031EF50  4E 80 04 21 */	bctrl 
+/* 803232B0 0031EF50  4E 80 04 21 */	bctrl
 lbl_803232B4:
 /* 803232B4 0031EF54  80 6D BF E4 */	lwz r3, "psMethod_cos__10AptMathObj"-_SDA_BASE_(r13)
 /* 803232B8 0031EF58  48 00 06 48 */	b lbl_80323900
@@ -390,7 +390,7 @@ lbl_803232E4:
 /* 80323308 0031EFA8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032330C 0031EFAC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323310 0031EFB0  7D 89 03 A6 */	mtctr r12
-/* 80323314 0031EFB4  4E 80 04 21 */	bctrl 
+/* 80323314 0031EFB4  4E 80 04 21 */	bctrl
 lbl_80323318:
 /* 80323318 0031EFB8  80 6D BF E8 */	lwz r3, "psMethod_atan2__10AptMathObj"-_SDA_BASE_(r13)
 /* 8032331C 0031EFBC  48 00 05 E4 */	b lbl_80323900
@@ -417,7 +417,7 @@ lbl_80323348:
 /* 8032336C 0031F00C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323370 0031F010  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323374 0031F014  7D 89 03 A6 */	mtctr r12
-/* 80323378 0031F018  4E 80 04 21 */	bctrl 
+/* 80323378 0031F018  4E 80 04 21 */	bctrl
 lbl_8032337C:
 /* 8032337C 0031F01C  80 6D BF EC */	lwz r3, "psMethod_round__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323380 0031F020  48 00 05 80 */	b lbl_80323900
@@ -444,7 +444,7 @@ lbl_803233AC:
 /* 803233D0 0031F070  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803233D4 0031F074  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803233D8 0031F078  7D 89 03 A6 */	mtctr r12
-/* 803233DC 0031F07C  4E 80 04 21 */	bctrl 
+/* 803233DC 0031F07C  4E 80 04 21 */	bctrl
 lbl_803233E0:
 /* 803233E0 0031F080  80 6D BF F0 */	lwz r3, "psMethod_min__10AptMathObj"-_SDA_BASE_(r13)
 /* 803233E4 0031F084  48 00 05 1C */	b lbl_80323900
@@ -471,7 +471,7 @@ lbl_80323410:
 /* 80323434 0031F0D4  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323438 0031F0D8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032343C 0031F0DC  7D 89 03 A6 */	mtctr r12
-/* 80323440 0031F0E0  4E 80 04 21 */	bctrl 
+/* 80323440 0031F0E0  4E 80 04 21 */	bctrl
 lbl_80323444:
 /* 80323444 0031F0E4  80 6D BF F4 */	lwz r3, "psMethod_max__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323448 0031F0E8  48 00 04 B8 */	b lbl_80323900
@@ -498,7 +498,7 @@ lbl_80323474:
 /* 80323498 0031F138  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032349C 0031F13C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803234A0 0031F140  7D 89 03 A6 */	mtctr r12
-/* 803234A4 0031F144  4E 80 04 21 */	bctrl 
+/* 803234A4 0031F144  4E 80 04 21 */	bctrl
 lbl_803234A8:
 /* 803234A8 0031F148  80 6D BF F8 */	lwz r3, "psMethod_abs__10AptMathObj"-_SDA_BASE_(r13)
 /* 803234AC 0031F14C  48 00 04 54 */	b lbl_80323900
@@ -525,7 +525,7 @@ lbl_803234D8:
 /* 803234FC 0031F19C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323500 0031F1A0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323504 0031F1A4  7D 89 03 A6 */	mtctr r12
-/* 80323508 0031F1A8  4E 80 04 21 */	bctrl 
+/* 80323508 0031F1A8  4E 80 04 21 */	bctrl
 lbl_8032350C:
 /* 8032350C 0031F1AC  80 6D BF FC */	lwz r3, "psMethod_acos__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323510 0031F1B0  48 00 03 F0 */	b lbl_80323900
@@ -552,7 +552,7 @@ lbl_8032353C:
 /* 80323560 0031F200  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323564 0031F204  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323568 0031F208  7D 89 03 A6 */	mtctr r12
-/* 8032356C 0031F20C  4E 80 04 21 */	bctrl 
+/* 8032356C 0031F20C  4E 80 04 21 */	bctrl
 lbl_80323570:
 /* 80323570 0031F210  80 6D C0 00 */	lwz r3, "psMethod_asin__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323574 0031F214  48 00 03 8C */	b lbl_80323900
@@ -579,7 +579,7 @@ lbl_803235A0:
 /* 803235C4 0031F264  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803235C8 0031F268  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803235CC 0031F26C  7D 89 03 A6 */	mtctr r12
-/* 803235D0 0031F270  4E 80 04 21 */	bctrl 
+/* 803235D0 0031F270  4E 80 04 21 */	bctrl
 lbl_803235D4:
 /* 803235D4 0031F274  80 6D C0 04 */	lwz r3, "psMethod_atan__10AptMathObj"-_SDA_BASE_(r13)
 /* 803235D8 0031F278  48 00 03 28 */	b lbl_80323900
@@ -606,7 +606,7 @@ lbl_80323604:
 /* 80323628 0031F2C8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032362C 0031F2CC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323630 0031F2D0  7D 89 03 A6 */	mtctr r12
-/* 80323634 0031F2D4  4E 80 04 21 */	bctrl 
+/* 80323634 0031F2D4  4E 80 04 21 */	bctrl
 lbl_80323638:
 /* 80323638 0031F2D8  80 6D C0 08 */	lwz r3, "psMethod_ceil__10AptMathObj"-_SDA_BASE_(r13)
 /* 8032363C 0031F2DC  48 00 02 C4 */	b lbl_80323900
@@ -633,7 +633,7 @@ lbl_80323668:
 /* 8032368C 0031F32C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323690 0031F330  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323694 0031F334  7D 89 03 A6 */	mtctr r12
-/* 80323698 0031F338  4E 80 04 21 */	bctrl 
+/* 80323698 0031F338  4E 80 04 21 */	bctrl
 lbl_8032369C:
 /* 8032369C 0031F33C  80 6D C0 0C */	lwz r3, "psMethod_exp__10AptMathObj"-_SDA_BASE_(r13)
 /* 803236A0 0031F340  48 00 02 60 */	b lbl_80323900
@@ -660,7 +660,7 @@ lbl_803236CC:
 /* 803236F0 0031F390  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803236F4 0031F394  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803236F8 0031F398  7D 89 03 A6 */	mtctr r12
-/* 803236FC 0031F39C  4E 80 04 21 */	bctrl 
+/* 803236FC 0031F39C  4E 80 04 21 */	bctrl
 lbl_80323700:
 /* 80323700 0031F3A0  80 6D C0 10 */	lwz r3, "psMethod_floor__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323704 0031F3A4  48 00 01 FC */	b lbl_80323900
@@ -687,7 +687,7 @@ lbl_80323730:
 /* 80323754 0031F3F4  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323758 0031F3F8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032375C 0031F3FC  7D 89 03 A6 */	mtctr r12
-/* 80323760 0031F400  4E 80 04 21 */	bctrl 
+/* 80323760 0031F400  4E 80 04 21 */	bctrl
 lbl_80323764:
 /* 80323764 0031F404  80 6D C0 14 */	lwz r3, "psMethod_log__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323768 0031F408  48 00 01 98 */	b lbl_80323900
@@ -714,7 +714,7 @@ lbl_80323794:
 /* 803237B8 0031F458  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803237BC 0031F45C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803237C0 0031F460  7D 89 03 A6 */	mtctr r12
-/* 803237C4 0031F464  4E 80 04 21 */	bctrl 
+/* 803237C4 0031F464  4E 80 04 21 */	bctrl
 lbl_803237C8:
 /* 803237C8 0031F468  80 6D C0 18 */	lwz r3, "psMethod_pow__10AptMathObj"-_SDA_BASE_(r13)
 /* 803237CC 0031F46C  48 00 01 34 */	b lbl_80323900
@@ -741,7 +741,7 @@ lbl_803237F8:
 /* 8032381C 0031F4BC  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323820 0031F4C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323824 0031F4C4  7D 89 03 A6 */	mtctr r12
-/* 80323828 0031F4C8  4E 80 04 21 */	bctrl 
+/* 80323828 0031F4C8  4E 80 04 21 */	bctrl
 lbl_8032382C:
 /* 8032382C 0031F4CC  80 6D C0 1C */	lwz r3, "psMethod_random__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323830 0031F4D0  48 00 00 D0 */	b lbl_80323900
@@ -768,7 +768,7 @@ lbl_8032385C:
 /* 80323880 0031F520  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323884 0031F524  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80323888 0031F528  7D 89 03 A6 */	mtctr r12
-/* 8032388C 0031F52C  4E 80 04 21 */	bctrl 
+/* 8032388C 0031F52C  4E 80 04 21 */	bctrl
 lbl_80323890:
 /* 80323890 0031F530  80 6D C0 20 */	lwz r3, "psMethod_sqrt__10AptMathObj"-_SDA_BASE_(r13)
 /* 80323894 0031F534  48 00 00 6C */	b lbl_80323900
@@ -795,7 +795,7 @@ lbl_803238C0:
 /* 803238E4 0031F584  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803238E8 0031F588  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803238EC 0031F58C  7D 89 03 A6 */	mtctr r12
-/* 803238F0 0031F590  4E 80 04 21 */	bctrl 
+/* 803238F0 0031F590  4E 80 04 21 */	bctrl
 lbl_803238F4:
 /* 803238F4 0031F594  80 6D C0 24 */	lwz r3, "psMethod_tan__10AptMathObj"-_SDA_BASE_(r13)
 /* 803238F8 0031F598  48 00 00 08 */	b lbl_80323900
@@ -807,7 +807,7 @@ lbl_80323900:
 /* 80323908 0031F5A8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032390C 0031F5AC  7C 08 03 A6 */	mtlr r0
 /* 80323910 0031F5B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323914 0031F5B4  4E 80 00 20 */	blr 
+/* 80323914 0031F5B4  4E 80 00 20 */	blr
 
 .global "sMethod_sin__10AptMathObjFP8AptValuei"
 "sMethod_sin__10AptMathObjFP8AptValuei":
@@ -830,7 +830,7 @@ lbl_80323950:
 /* 80323950 0031F5F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323954 0031F5F4  7C 08 03 A6 */	mtlr r0
 /* 80323958 0031F5F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032395C 0031F5FC  4E 80 00 20 */	blr 
+/* 8032395C 0031F5FC  4E 80 00 20 */	blr
 
 .global "sMethod_cos__10AptMathObjFP8AptValuei"
 "sMethod_cos__10AptMathObjFP8AptValuei":
@@ -853,7 +853,7 @@ lbl_80323998:
 /* 80323998 0031F638  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032399C 0031F63C  7C 08 03 A6 */	mtlr r0
 /* 803239A0 0031F640  38 21 00 10 */	addi r1, r1, 0x10
-/* 803239A4 0031F644  4E 80 00 20 */	blr 
+/* 803239A4 0031F644  4E 80 00 20 */	blr
 
 .global "sMethod_atan2__10AptMathObjFP8AptValuei"
 "sMethod_atan2__10AptMathObjFP8AptValuei":
@@ -890,7 +890,7 @@ lbl_80323A0C:
 /* 80323A18 0031F6B8  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 80323A1C 0031F6BC  7C 08 03 A6 */	mtlr r0
 /* 80323A20 0031F6C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80323A24 0031F6C4  4E 80 00 20 */	blr 
+/* 80323A24 0031F6C4  4E 80 00 20 */	blr
 
 .global "sMethod_round__10AptMathObjFP8AptValuei"
 "sMethod_round__10AptMathObjFP8AptValuei":
@@ -928,7 +928,7 @@ lbl_80323A94:
 /* 80323A94 0031F734  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80323A98 0031F738  7C 08 03 A6 */	mtlr r0
 /* 80323A9C 0031F73C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80323AA0 0031F740  4E 80 00 20 */	blr 
+/* 80323AA0 0031F740  4E 80 00 20 */	blr
 
 .global "sMethod_min__10AptMathObjFP8AptValuei"
 "sMethod_min__10AptMathObjFP8AptValuei":
@@ -973,7 +973,7 @@ lbl_80323B20:
 /* 80323B2C 0031F7CC  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 80323B30 0031F7D0  7C 08 03 A6 */	mtlr r0
 /* 80323B34 0031F7D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80323B38 0031F7D8  4E 80 00 20 */	blr 
+/* 80323B38 0031F7D8  4E 80 00 20 */	blr
 
 .global "sMethod_max__10AptMathObjFP8AptValuei"
 "sMethod_max__10AptMathObjFP8AptValuei":
@@ -1018,7 +1018,7 @@ lbl_80323BB8:
 /* 80323BC4 0031F864  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 80323BC8 0031F868  7C 08 03 A6 */	mtlr r0
 /* 80323BCC 0031F86C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80323BD0 0031F870  4E 80 00 20 */	blr 
+/* 80323BD0 0031F870  4E 80 00 20 */	blr
 
 .global "sMethod_abs__10AptMathObjFP8AptValuei"
 "sMethod_abs__10AptMathObjFP8AptValuei":
@@ -1054,7 +1054,7 @@ lbl_80323C38:
 /* 80323C3C 0031F8DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80323C40 0031F8E0  7C 08 03 A6 */	mtlr r0
 /* 80323C44 0031F8E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323C48 0031F8E8  4E 80 00 20 */	blr 
+/* 80323C48 0031F8E8  4E 80 00 20 */	blr
 
 .global "sMethod_acos__10AptMathObjFP8AptValuei"
 "sMethod_acos__10AptMathObjFP8AptValuei":
@@ -1077,7 +1077,7 @@ lbl_80323C84:
 /* 80323C84 0031F924  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323C88 0031F928  7C 08 03 A6 */	mtlr r0
 /* 80323C8C 0031F92C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323C90 0031F930  4E 80 00 20 */	blr 
+/* 80323C90 0031F930  4E 80 00 20 */	blr
 
 .global "sMethod_asin__10AptMathObjFP8AptValuei"
 "sMethod_asin__10AptMathObjFP8AptValuei":
@@ -1100,7 +1100,7 @@ lbl_80323CCC:
 /* 80323CCC 0031F96C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323CD0 0031F970  7C 08 03 A6 */	mtlr r0
 /* 80323CD4 0031F974  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323CD8 0031F978  4E 80 00 20 */	blr 
+/* 80323CD8 0031F978  4E 80 00 20 */	blr
 
 .global "sMethod_atan__10AptMathObjFP8AptValuei"
 "sMethod_atan__10AptMathObjFP8AptValuei":
@@ -1123,7 +1123,7 @@ lbl_80323D14:
 /* 80323D14 0031F9B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323D18 0031F9B8  7C 08 03 A6 */	mtlr r0
 /* 80323D1C 0031F9BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323D20 0031F9C0  4E 80 00 20 */	blr 
+/* 80323D20 0031F9C0  4E 80 00 20 */	blr
 
 .global "sMethod_ceil__10AptMathObjFP8AptValuei"
 "sMethod_ceil__10AptMathObjFP8AptValuei":
@@ -1146,7 +1146,7 @@ lbl_80323D5C:
 /* 80323D5C 0031F9FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323D60 0031FA00  7C 08 03 A6 */	mtlr r0
 /* 80323D64 0031FA04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323D68 0031FA08  4E 80 00 20 */	blr 
+/* 80323D68 0031FA08  4E 80 00 20 */	blr
 
 .global "sMethod_exp__10AptMathObjFP8AptValuei"
 "sMethod_exp__10AptMathObjFP8AptValuei":
@@ -1169,7 +1169,7 @@ lbl_80323DA4:
 /* 80323DA4 0031FA44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323DA8 0031FA48  7C 08 03 A6 */	mtlr r0
 /* 80323DAC 0031FA4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323DB0 0031FA50  4E 80 00 20 */	blr 
+/* 80323DB0 0031FA50  4E 80 00 20 */	blr
 
 .global "sMethod_floor__10AptMathObjFP8AptValuei"
 "sMethod_floor__10AptMathObjFP8AptValuei":
@@ -1192,7 +1192,7 @@ lbl_80323DEC:
 /* 80323DEC 0031FA8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323DF0 0031FA90  7C 08 03 A6 */	mtlr r0
 /* 80323DF4 0031FA94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323DF8 0031FA98  4E 80 00 20 */	blr 
+/* 80323DF8 0031FA98  4E 80 00 20 */	blr
 
 .global "sMethod_log__10AptMathObjFP8AptValuei"
 "sMethod_log__10AptMathObjFP8AptValuei":
@@ -1215,7 +1215,7 @@ lbl_80323E34:
 /* 80323E34 0031FAD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323E38 0031FAD8  7C 08 03 A6 */	mtlr r0
 /* 80323E3C 0031FADC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323E40 0031FAE0  4E 80 00 20 */	blr 
+/* 80323E40 0031FAE0  4E 80 00 20 */	blr
 
 .global "sMethod_pow__10AptMathObjFP8AptValuei"
 "sMethod_pow__10AptMathObjFP8AptValuei":
@@ -1252,7 +1252,7 @@ lbl_80323EA8:
 /* 80323EB4 0031FB54  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 80323EB8 0031FB58  7C 08 03 A6 */	mtlr r0
 /* 80323EBC 0031FB5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80323EC0 0031FB60  4E 80 00 20 */	blr 
+/* 80323EC0 0031FB60  4E 80 00 20 */	blr
 
 .global "sMethod_random__10AptMathObjFP8AptValuei"
 "sMethod_random__10AptMathObjFP8AptValuei":
@@ -1272,7 +1272,7 @@ lbl_80323EA8:
 /* 80323EF8 0031FB98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323EFC 0031FB9C  7C 08 03 A6 */	mtlr r0
 /* 80323F00 0031FBA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323F04 0031FBA4  4E 80 00 20 */	blr 
+/* 80323F04 0031FBA4  4E 80 00 20 */	blr
 
 .global "sMethod_sqrt__10AptMathObjFP8AptValuei"
 "sMethod_sqrt__10AptMathObjFP8AptValuei":
@@ -1295,7 +1295,7 @@ lbl_80323F40:
 /* 80323F40 0031FBE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323F44 0031FBE4  7C 08 03 A6 */	mtlr r0
 /* 80323F48 0031FBE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323F4C 0031FBEC  4E 80 00 20 */	blr 
+/* 80323F4C 0031FBEC  4E 80 00 20 */	blr
 
 .global "sMethod_tan__10AptMathObjFP8AptValuei"
 "sMethod_tan__10AptMathObjFP8AptValuei":
@@ -1318,7 +1318,7 @@ lbl_80323F88:
 /* 80323F88 0031FC28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80323F8C 0031FC2C  7C 08 03 A6 */	mtlr r0
 /* 80323F90 0031FC30  38 21 00 10 */	addi r1, r1, 0x10
-/* 80323F94 0031FC34  4E 80 00 20 */	blr 
+/* 80323F94 0031FC34  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__6AptKeyFv"
 "CleanNativeFunctions__6AptKeyFv":
@@ -1336,7 +1336,7 @@ lbl_80323F88:
 /* 80323FC4 0031FC64  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80323FC8 0031FC68  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80323FCC 0031FC6C  7D 89 03 A6 */	mtctr r12
-/* 80323FD0 0031FC70  4E 80 04 21 */	bctrl 
+/* 80323FD0 0031FC70  4E 80 04 21 */	bctrl
 /* 80323FD4 0031FC74  38 00 00 00 */	li r0, 0
 /* 80323FD8 0031FC78  90 0D C0 28 */	stw r0, "psMethod_isDown__6AptKey"-_SDA_BASE_(r13)
 lbl_80323FDC:
@@ -1351,7 +1351,7 @@ lbl_80323FDC:
 /* 80323FFC 0031FC9C  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80324000 0031FCA0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324004 0031FCA4  7D 89 03 A6 */	mtctr r12
-/* 80324008 0031FCA8  4E 80 04 21 */	bctrl 
+/* 80324008 0031FCA8  4E 80 04 21 */	bctrl
 /* 8032400C 0031FCAC  38 00 00 00 */	li r0, 0
 /* 80324010 0031FCB0  90 0D C0 2C */	stw r0, "psMethod_isToggled__6AptKey"-_SDA_BASE_(r13)
 lbl_80324014:
@@ -1366,7 +1366,7 @@ lbl_80324014:
 /* 80324034 0031FCD4  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80324038 0031FCD8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032403C 0031FCDC  7D 89 03 A6 */	mtctr r12
-/* 80324040 0031FCE0  4E 80 04 21 */	bctrl 
+/* 80324040 0031FCE0  4E 80 04 21 */	bctrl
 /* 80324044 0031FCE4  38 00 00 00 */	li r0, 0
 /* 80324048 0031FCE8  90 0D C0 30 */	stw r0, "psMethod_getCode__6AptKey"-_SDA_BASE_(r13)
 lbl_8032404C:
@@ -1381,7 +1381,7 @@ lbl_8032404C:
 /* 8032406C 0031FD0C  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80324070 0031FD10  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324074 0031FD14  7D 89 03 A6 */	mtctr r12
-/* 80324078 0031FD18  4E 80 04 21 */	bctrl 
+/* 80324078 0031FD18  4E 80 04 21 */	bctrl
 /* 8032407C 0031FD1C  38 00 00 00 */	li r0, 0
 /* 80324080 0031FD20  90 0D C0 38 */	stw r0, "psMethod_getController__6AptKey"-_SDA_BASE_(r13)
 lbl_80324084:
@@ -1396,7 +1396,7 @@ lbl_80324084:
 /* 803240A4 0031FD44  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 803240A8 0031FD48  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803240AC 0031FD4C  7D 89 03 A6 */	mtctr r12
-/* 803240B0 0031FD50  4E 80 04 21 */	bctrl 
+/* 803240B0 0031FD50  4E 80 04 21 */	bctrl
 /* 803240B4 0031FD54  38 00 00 00 */	li r0, 0
 /* 803240B8 0031FD58  90 0D C0 3C */	stw r0, "psMethod_addListener__6AptKey"-_SDA_BASE_(r13)
 lbl_803240BC:
@@ -1411,7 +1411,7 @@ lbl_803240BC:
 /* 803240DC 0031FD7C  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 803240E0 0031FD80  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803240E4 0031FD84  7D 89 03 A6 */	mtctr r12
-/* 803240E8 0031FD88  4E 80 04 21 */	bctrl 
+/* 803240E8 0031FD88  4E 80 04 21 */	bctrl
 /* 803240EC 0031FD8C  38 00 00 00 */	li r0, 0
 /* 803240F0 0031FD90  90 0D C0 40 */	stw r0, "psMethod_removeListener__6AptKey"-_SDA_BASE_(r13)
 lbl_803240F4:
@@ -1426,7 +1426,7 @@ lbl_803240F4:
 /* 80324114 0031FDB4  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80324118 0031FDB8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032411C 0031FDBC  7D 89 03 A6 */	mtctr r12
-/* 80324120 0031FDC0  4E 80 04 21 */	bctrl 
+/* 80324120 0031FDC0  4E 80 04 21 */	bctrl
 /* 80324124 0031FDC4  38 00 00 00 */	li r0, 0
 /* 80324128 0031FDC8  90 0D C0 44 */	stw r0, "psMethod_getAnalogStickInfo__6AptKey"-_SDA_BASE_(r13)
 lbl_8032412C:
@@ -1441,14 +1441,14 @@ lbl_8032412C:
 /* 8032414C 0031FDEC  38 84 90 E4 */	addi r4, r4, "__PRETTY_FUNCTION__$8258"@l
 /* 80324150 0031FDF0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324154 0031FDF4  7D 89 03 A6 */	mtctr r12
-/* 80324158 0031FDF8  4E 80 04 21 */	bctrl 
+/* 80324158 0031FDF8  4E 80 04 21 */	bctrl
 /* 8032415C 0031FDFC  38 00 00 00 */	li r0, 0
 /* 80324160 0031FE00  90 0D C0 34 */	stw r0, "psMethod_getAscii__6AptKey"-_SDA_BASE_(r13)
 lbl_80324164:
 /* 80324164 0031FE04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80324168 0031FE08  7C 08 03 A6 */	mtlr r0
 /* 8032416C 0031FE0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80324170 0031FE10  4E 80 00 20 */	blr 
+/* 80324170 0031FE10  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__6AptKeyCFP8AptValuePC9EAStringC"
 "objectMemberLookup__6AptKeyCFP8AptValuePC9EAStringC":
@@ -1637,7 +1637,7 @@ lbl_803243B0:
 /* 803243D4 00320074  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803243D8 00320078  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803243DC 0032007C  7D 89 03 A6 */	mtctr r12
-/* 803243E0 00320080  4E 80 04 21 */	bctrl 
+/* 803243E0 00320080  4E 80 04 21 */	bctrl
 lbl_803243E4:
 /* 803243E4 00320084  80 6D C0 28 */	lwz r3, "psMethod_isDown__6AptKey"-_SDA_BASE_(r13)
 /* 803243E8 00320088  48 00 02 C4 */	b lbl_803246AC
@@ -1665,7 +1665,7 @@ lbl_80324414:
 /* 80324438 003200D8  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 8032443C 003200DC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324440 003200E0  7D 89 03 A6 */	mtctr r12
-/* 80324444 003200E4  4E 80 04 21 */	bctrl 
+/* 80324444 003200E4  4E 80 04 21 */	bctrl
 lbl_80324448:
 /* 80324448 003200E8  80 6D C0 2C */	lwz r3, "psMethod_isToggled__6AptKey"-_SDA_BASE_(r13)
 /* 8032444C 003200EC  48 00 02 60 */	b lbl_803246AC
@@ -1693,7 +1693,7 @@ lbl_80324478:
 /* 8032449C 0032013C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803244A0 00320140  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803244A4 00320144  7D 89 03 A6 */	mtctr r12
-/* 803244A8 00320148  4E 80 04 21 */	bctrl 
+/* 803244A8 00320148  4E 80 04 21 */	bctrl
 lbl_803244AC:
 /* 803244AC 0032014C  80 6D C0 30 */	lwz r3, "psMethod_getCode__6AptKey"-_SDA_BASE_(r13)
 /* 803244B0 00320150  48 00 01 FC */	b lbl_803246AC
@@ -1721,7 +1721,7 @@ lbl_803244DC:
 /* 80324500 003201A0  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324504 003201A4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324508 003201A8  7D 89 03 A6 */	mtctr r12
-/* 8032450C 003201AC  4E 80 04 21 */	bctrl 
+/* 8032450C 003201AC  4E 80 04 21 */	bctrl
 lbl_80324510:
 /* 80324510 003201B0  80 6D C0 38 */	lwz r3, "psMethod_getController__6AptKey"-_SDA_BASE_(r13)
 /* 80324514 003201B4  48 00 01 98 */	b lbl_803246AC
@@ -1749,7 +1749,7 @@ lbl_80324540:
 /* 80324564 00320204  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324568 00320208  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032456C 0032020C  7D 89 03 A6 */	mtctr r12
-/* 80324570 00320210  4E 80 04 21 */	bctrl 
+/* 80324570 00320210  4E 80 04 21 */	bctrl
 lbl_80324574:
 /* 80324574 00320214  80 6D C0 3C */	lwz r3, "psMethod_addListener__6AptKey"-_SDA_BASE_(r13)
 /* 80324578 00320218  48 00 01 34 */	b lbl_803246AC
@@ -1777,7 +1777,7 @@ lbl_803245A4:
 /* 803245C8 00320268  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 803245CC 0032026C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803245D0 00320270  7D 89 03 A6 */	mtctr r12
-/* 803245D4 00320274  4E 80 04 21 */	bctrl 
+/* 803245D4 00320274  4E 80 04 21 */	bctrl
 lbl_803245D8:
 /* 803245D8 00320278  80 6D C0 40 */	lwz r3, "psMethod_removeListener__6AptKey"-_SDA_BASE_(r13)
 /* 803245DC 0032027C  48 00 00 D0 */	b lbl_803246AC
@@ -1805,7 +1805,7 @@ lbl_80324608:
 /* 8032462C 003202CC  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324630 003202D0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324634 003202D4  7D 89 03 A6 */	mtctr r12
-/* 80324638 003202D8  4E 80 04 21 */	bctrl 
+/* 80324638 003202D8  4E 80 04 21 */	bctrl
 lbl_8032463C:
 /* 8032463C 003202DC  80 6D C0 44 */	lwz r3, "psMethod_getAnalogStickInfo__6AptKey"-_SDA_BASE_(r13)
 /* 80324640 003202E0  48 00 00 6C */	b lbl_803246AC
@@ -1833,7 +1833,7 @@ lbl_8032466C:
 /* 80324690 00320330  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324694 00320334  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324698 00320338  7D 89 03 A6 */	mtctr r12
-/* 8032469C 0032033C  4E 80 04 21 */	bctrl 
+/* 8032469C 0032033C  4E 80 04 21 */	bctrl
 lbl_803246A0:
 /* 803246A0 00320340  80 6D C0 34 */	lwz r3, "psMethod_getAscii__6AptKey"-_SDA_BASE_(r13)
 /* 803246A4 00320344  48 00 00 08 */	b lbl_803246AC
@@ -1845,7 +1845,7 @@ lbl_803246AC:
 /* 803246B4 00320354  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803246B8 00320358  7C 08 03 A6 */	mtlr r0
 /* 803246BC 0032035C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803246C0 00320360  4E 80 00 20 */	blr 
+/* 803246C0 00320360  4E 80 00 20 */	blr
 
 .global "sMethod_isDown__6AptKeyFP8AptValuei"
 "sMethod_isDown__6AptKeyFP8AptValuei":
@@ -1897,7 +1897,7 @@ lbl_80324760:
 /* 80324768 00320408  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032476C 0032040C  7C 08 03 A6 */	mtlr r0
 /* 80324770 00320410  38 21 00 10 */	addi r1, r1, 0x10
-/* 80324774 00320414  4E 80 00 20 */	blr 
+/* 80324774 00320414  4E 80 00 20 */	blr
 
 .global "sMethod_isToggled__6AptKeyFP8AptValuei"
 "sMethod_isToggled__6AptKeyFP8AptValuei":
@@ -1931,7 +1931,7 @@ lbl_803247CC:
 /* 803247D0 00320470  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803247D4 00320474  7C 08 03 A6 */	mtlr r0
 /* 803247D8 00320478  38 21 00 10 */	addi r1, r1, 0x10
-/* 803247DC 0032047C  4E 80 00 20 */	blr 
+/* 803247DC 0032047C  4E 80 00 20 */	blr
 
 .global "sMethod_getAscii__6AptKeyFP8AptValuei"
 "sMethod_getAscii__6AptKeyFP8AptValuei":
@@ -2009,7 +2009,7 @@ lbl_803248C8:
 /* 803248CC 0032056C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803248D0 00320570  7C 08 03 A6 */	mtlr r0
 /* 803248D4 00320574  38 21 00 10 */	addi r1, r1, 0x10
-/* 803248D8 00320578  4E 80 00 20 */	blr 
+/* 803248D8 00320578  4E 80 00 20 */	blr
 
 .global "sMethod_removeListener__6AptKeyFP8AptValuei"
 "sMethod_removeListener__6AptKeyFP8AptValuei":
@@ -2052,7 +2052,7 @@ lbl_8032495C:
 /* 80324960 00320600  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80324964 00320604  7C 08 03 A6 */	mtlr r0
 /* 80324968 00320608  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032496C 0032060C  4E 80 00 20 */	blr 
+/* 8032496C 0032060C  4E 80 00 20 */	blr
 
 .global "sMethod_getAnalogStickInfo__6AptKeyFP8AptValuei"
 "sMethod_getAnalogStickInfo__6AptKeyFP8AptValuei":
@@ -2175,7 +2175,7 @@ lbl_80324B10:
 /* 80324B30 003207D0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80324B34 003207D4  7C 08 03 A6 */	mtlr r0
 /* 80324B38 003207D8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80324B3C 003207DC  4E 80 00 20 */	blr 
+/* 80324B3C 003207DC  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__11AptLoadVarsCFP8AptValuePC9EAStringC"
 "objectMemberLookup__11AptLoadVarsCFP8AptValuePC9EAStringC":
@@ -2213,7 +2213,7 @@ lbl_80324B98:
 /* 80324BB4 00320854  38 63 92 38 */	addi r3, r3, lbl_80459238@l
 /* 80324BB8 00320858  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80324BBC 0032085C  7C 69 03 A6 */	mtctr r3
-/* 80324BC0 00320860  4E 80 04 20 */	bctr 
+/* 80324BC0 00320860  4E 80 04 20 */	bctr
 /* 80324BC4 00320864  80 0D C0 48 */	lwz r0, "psMethod_load__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324BC8 00320868  2C 00 00 00 */	cmpwi r0, 0
 /* 80324BCC 0032086C  40 82 00 4C */	bne lbl_80324C18
@@ -2235,7 +2235,7 @@ lbl_80324BEC:
 /* 80324C08 003208A8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324C0C 003208AC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324C10 003208B0  7D 89 03 A6 */	mtctr r12
-/* 80324C14 003208B4  4E 80 04 21 */	bctrl 
+/* 80324C14 003208B4  4E 80 04 21 */	bctrl
 lbl_80324C18:
 /* 80324C18 003208B8  80 6D C0 48 */	lwz r3, "psMethod_load__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324C1C 003208BC  48 00 02 04 */	b lbl_80324E20
@@ -2260,7 +2260,7 @@ lbl_80324C48:
 /* 80324C64 00320904  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324C68 00320908  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324C6C 0032090C  7D 89 03 A6 */	mtctr r12
-/* 80324C70 00320910  4E 80 04 21 */	bctrl 
+/* 80324C70 00320910  4E 80 04 21 */	bctrl
 lbl_80324C74:
 /* 80324C74 00320914  80 6D C0 4C */	lwz r3, "psMethod_send__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324C78 00320918  48 00 01 A8 */	b lbl_80324E20
@@ -2285,7 +2285,7 @@ lbl_80324CA4:
 /* 80324CC0 00320960  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324CC4 00320964  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324CC8 00320968  7D 89 03 A6 */	mtctr r12
-/* 80324CCC 0032096C  4E 80 04 21 */	bctrl 
+/* 80324CCC 0032096C  4E 80 04 21 */	bctrl
 lbl_80324CD0:
 /* 80324CD0 00320970  80 6D C0 50 */	lwz r3, "psMethod_sendAndLoad__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324CD4 00320974  48 00 01 4C */	b lbl_80324E20
@@ -2310,7 +2310,7 @@ lbl_80324D00:
 /* 80324D1C 003209BC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324D20 003209C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324D24 003209C4  7D 89 03 A6 */	mtctr r12
-/* 80324D28 003209C8  4E 80 04 21 */	bctrl 
+/* 80324D28 003209C8  4E 80 04 21 */	bctrl
 lbl_80324D2C:
 /* 80324D2C 003209CC  80 6D C0 54 */	lwz r3, "psMethod_getBytesTotal__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324D30 003209D0  48 00 00 F0 */	b lbl_80324E20
@@ -2335,7 +2335,7 @@ lbl_80324D5C:
 /* 80324D78 00320A18  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324D7C 00320A1C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324D80 00320A20  7D 89 03 A6 */	mtctr r12
-/* 80324D84 00320A24  4E 80 04 21 */	bctrl 
+/* 80324D84 00320A24  4E 80 04 21 */	bctrl
 lbl_80324D88:
 /* 80324D88 00320A28  80 6D C0 58 */	lwz r3, "psMethod_getBytesLoaded__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324D8C 00320A2C  48 00 00 94 */	b lbl_80324E20
@@ -2366,7 +2366,7 @@ lbl_80324DD0:
 /* 80324DEC 00320A8C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80324DF0 00320A90  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80324DF4 00320A94  7D 89 03 A6 */	mtctr r12
-/* 80324DF8 00320A98  4E 80 04 21 */	bctrl 
+/* 80324DF8 00320A98  4E 80 04 21 */	bctrl
 lbl_80324DFC:
 /* 80324DFC 00320A9C  80 6D C0 5C */	lwz r3, "psMethod_toString__11AptLoadVars"-_SDA_BASE_(r13)
 /* 80324E00 00320AA0  48 00 00 20 */	b lbl_80324E20
@@ -2386,7 +2386,7 @@ lbl_80324E20:
 /* 80324E30 00320AD0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80324E34 00320AD4  7C 08 03 A6 */	mtlr r0
 /* 80324E38 00320AD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80324E3C 00320ADC  4E 80 00 20 */	blr 
+/* 80324E3C 00320ADC  4E 80 00 20 */	blr
 
 .global "__dt__11AptLoadVarsFv"
 "__dt__11AptLoadVarsFv":
@@ -2413,7 +2413,7 @@ lbl_80324E80:
 /* 80324E8C 00320B2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80324E90 00320B30  7C 08 03 A6 */	mtlr r0
 /* 80324E94 00320B34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80324E98 00320B38  4E 80 00 20 */	blr 
+/* 80324E98 00320B38  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__11AptLoadVarsFv"
 "CleanNativeFunctions__11AptLoadVarsFv":
@@ -2431,7 +2431,7 @@ lbl_80324E80:
 /* 80324EC8 00320B68  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324ECC 00320B6C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324ED0 00320B70  7D 89 03 A6 */	mtctr r12
-/* 80324ED4 00320B74  4E 80 04 21 */	bctrl 
+/* 80324ED4 00320B74  4E 80 04 21 */	bctrl
 /* 80324ED8 00320B78  38 00 00 00 */	li r0, 0
 /* 80324EDC 00320B7C  90 0D C0 48 */	stw r0, "psMethod_load__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324EE0:
@@ -2446,7 +2446,7 @@ lbl_80324EE0:
 /* 80324F00 00320BA0  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324F04 00320BA4  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324F08 00320BA8  7D 89 03 A6 */	mtctr r12
-/* 80324F0C 00320BAC  4E 80 04 21 */	bctrl 
+/* 80324F0C 00320BAC  4E 80 04 21 */	bctrl
 /* 80324F10 00320BB0  38 00 00 00 */	li r0, 0
 /* 80324F14 00320BB4  90 0D C0 4C */	stw r0, "psMethod_send__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324F18:
@@ -2461,7 +2461,7 @@ lbl_80324F18:
 /* 80324F38 00320BD8  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324F3C 00320BDC  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324F40 00320BE0  7D 89 03 A6 */	mtctr r12
-/* 80324F44 00320BE4  4E 80 04 21 */	bctrl 
+/* 80324F44 00320BE4  4E 80 04 21 */	bctrl
 /* 80324F48 00320BE8  38 00 00 00 */	li r0, 0
 /* 80324F4C 00320BEC  90 0D C0 50 */	stw r0, "psMethod_sendAndLoad__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324F50:
@@ -2476,7 +2476,7 @@ lbl_80324F50:
 /* 80324F70 00320C10  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324F74 00320C14  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324F78 00320C18  7D 89 03 A6 */	mtctr r12
-/* 80324F7C 00320C1C  4E 80 04 21 */	bctrl 
+/* 80324F7C 00320C1C  4E 80 04 21 */	bctrl
 /* 80324F80 00320C20  38 00 00 00 */	li r0, 0
 /* 80324F84 00320C24  90 0D C0 54 */	stw r0, "psMethod_getBytesTotal__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324F88:
@@ -2491,7 +2491,7 @@ lbl_80324F88:
 /* 80324FA8 00320C48  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324FAC 00320C4C  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324FB0 00320C50  7D 89 03 A6 */	mtctr r12
-/* 80324FB4 00320C54  4E 80 04 21 */	bctrl 
+/* 80324FB4 00320C54  4E 80 04 21 */	bctrl
 /* 80324FB8 00320C58  38 00 00 00 */	li r0, 0
 /* 80324FBC 00320C5C  90 0D C0 58 */	stw r0, "psMethod_getBytesLoaded__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324FC0:
@@ -2506,14 +2506,14 @@ lbl_80324FC0:
 /* 80324FE0 00320C80  38 84 92 5C */	addi r4, r4, "__PRETTY_FUNCTION__$8790"@l
 /* 80324FE4 00320C84  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80324FE8 00320C88  7D 89 03 A6 */	mtctr r12
-/* 80324FEC 00320C8C  4E 80 04 21 */	bctrl 
+/* 80324FEC 00320C8C  4E 80 04 21 */	bctrl
 /* 80324FF0 00320C90  38 00 00 00 */	li r0, 0
 /* 80324FF4 00320C94  90 0D C0 5C */	stw r0, "psMethod_toString__11AptLoadVars"-_SDA_BASE_(r13)
 lbl_80324FF8:
 /* 80324FF8 00320C98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80324FFC 00320C9C  7C 08 03 A6 */	mtlr r0
 /* 80325000 00320CA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325004 00320CA4  4E 80 00 20 */	blr 
+/* 80325004 00320CA4  4E 80 00 20 */	blr
 
 .global "sMethod_load__11AptLoadVarsFP8AptValuei"
 "sMethod_load__11AptLoadVarsFP8AptValuei":
@@ -2551,7 +2551,7 @@ lbl_80325050:
 /* 8032507C 00320D1C  7F A3 EB 78 */	mr r3, r29
 /* 80325080 00320D20  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80325084 00320D24  7D 89 03 A6 */	mtctr r12
-/* 80325088 00320D28  4E 80 04 21 */	bctrl 
+/* 80325088 00320D28  4E 80 04 21 */	bctrl
 /* 8032508C 00320D2C  2C 03 00 00 */	cmpwi r3, 0
 /* 80325090 00320D30  7C 7F 1B 78 */	mr r31, r3
 /* 80325094 00320D34  40 82 00 24 */	bne lbl_803250B8
@@ -2617,7 +2617,7 @@ lbl_80325164:
 /* 80325170 00320E10  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80325174 00320E14  7C 08 03 A6 */	mtlr r0
 /* 80325178 00320E18  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032517C 00320E1C  4E 80 00 20 */	blr 
+/* 8032517C 00320E1C  4E 80 00 20 */	blr
 
 .global "sMethod_send__11AptLoadVarsFP8AptValuei"
 "sMethod_send__11AptLoadVarsFP8AptValuei":
@@ -2692,7 +2692,7 @@ lbl_80325234:
 /* 80325280 00320F20  7F A6 EB 78 */	mr r6, r29
 /* 80325284 00320F24  38 E0 00 00 */	li r7, 0
 /* 80325288 00320F28  7D 89 03 A6 */	mtctr r12
-/* 8032528C 00320F2C  4E 80 04 21 */	bctrl 
+/* 8032528C 00320F2C  4E 80 04 21 */	bctrl
 /* 80325290 00320F30  38 60 00 01 */	li r3, 1
 /* 80325294 00320F34  4B FE 4D 19 */	bl "Create__10AptBooleanFb"
 /* 80325298 00320F38  7C 7D 1B 78 */	mr r29, r3
@@ -2717,7 +2717,7 @@ lbl_803252D0:
 /* 803252E0 00320F80  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 803252E4 00320F84  7C 08 03 A6 */	mtlr r0
 /* 803252E8 00320F88  38 21 00 30 */	addi r1, r1, 0x30
-/* 803252EC 00320F8C  4E 80 00 20 */	blr 
+/* 803252EC 00320F8C  4E 80 00 20 */	blr
 
 .global "sMethod_sendAndLoad__11AptLoadVarsFP8AptValuei"
 "sMethod_sendAndLoad__11AptLoadVarsFP8AptValuei":
@@ -2793,12 +2793,12 @@ lbl_803253A8:
 /* 803253F4 00321094  7F A6 EB 78 */	mr r6, r29
 /* 803253F8 00321098  38 E0 00 01 */	li r7, 1
 /* 803253FC 0032109C  7D 89 03 A6 */	mtctr r12
-/* 80325400 003210A0  4E 80 04 21 */	bctrl 
+/* 80325400 003210A0  4E 80 04 21 */	bctrl
 /* 80325404 003210A4  81 9B 00 00 */	lwz r12, 0(r27)
 /* 80325408 003210A8  7F 63 DB 78 */	mr r3, r27
 /* 8032540C 003210AC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80325410 003210B0  7D 89 03 A6 */	mtctr r12
-/* 80325414 003210B4  4E 80 04 21 */	bctrl 
+/* 80325414 003210B4  4E 80 04 21 */	bctrl
 /* 80325418 003210B8  2C 03 00 00 */	cmpwi r3, 0
 /* 8032541C 003210BC  7C 7D 1B 78 */	mr r29, r3
 /* 80325420 003210C0  40 82 00 48 */	bne lbl_80325468
@@ -2881,7 +2881,7 @@ lbl_80325538:
 /* 80325540 003211E0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80325544 003211E4  7C 08 03 A6 */	mtlr r0
 /* 80325548 003211E8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8032554C 003211EC  4E 80 00 20 */	blr 
+/* 8032554C 003211EC  4E 80 00 20 */	blr
 
 .global "sMethod_getBytesTotal__11AptLoadVarsFP8AptValuei"
 "sMethod_getBytesTotal__11AptLoadVarsFP8AptValuei":
@@ -2894,7 +2894,7 @@ lbl_80325538:
 /* 80325568 00321208  38 80 00 03 */	li r4, 3
 /* 8032556C 0032120C  81 85 00 94 */	lwz r12, 0x94(r5)
 /* 80325570 00321210  7D 89 03 A6 */	mtctr r12
-/* 80325574 00321214  4E 80 04 21 */	bctrl 
+/* 80325574 00321214  4E 80 04 21 */	bctrl
 /* 80325578 00321218  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8032557C 0032121C  3C 00 43 30 */	lis r0, 0x4330
 /* 80325580 00321220  90 61 00 0C */	stw r3, 0xc(r1)
@@ -2906,7 +2906,7 @@ lbl_80325538:
 /* 80325598 00321238  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032559C 0032123C  7C 08 03 A6 */	mtlr r0
 /* 803255A0 00321240  38 21 00 10 */	addi r1, r1, 0x10
-/* 803255A4 00321244  4E 80 00 20 */	blr 
+/* 803255A4 00321244  4E 80 00 20 */	blr
 
 .global "sMethod_getBytesLoaded__11AptLoadVarsFP8AptValuei"
 "sMethod_getBytesLoaded__11AptLoadVarsFP8AptValuei":
@@ -2919,7 +2919,7 @@ lbl_80325538:
 /* 803255C0 00321260  38 80 00 03 */	li r4, 3
 /* 803255C4 00321264  81 85 00 98 */	lwz r12, 0x98(r5)
 /* 803255C8 00321268  7D 89 03 A6 */	mtctr r12
-/* 803255CC 0032126C  4E 80 04 21 */	bctrl 
+/* 803255CC 0032126C  4E 80 04 21 */	bctrl
 /* 803255D0 00321270  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 803255D4 00321274  3C 00 43 30 */	lis r0, 0x4330
 /* 803255D8 00321278  90 61 00 0C */	stw r3, 0xc(r1)
@@ -2931,7 +2931,7 @@ lbl_80325538:
 /* 803255F0 00321290  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803255F4 00321294  7C 08 03 A6 */	mtlr r0
 /* 803255F8 00321298  38 21 00 10 */	addi r1, r1, 0x10
-/* 803255FC 0032129C  4E 80 00 20 */	blr 
+/* 803255FC 0032129C  4E 80 00 20 */	blr
 
 .global "sMethod_toString__11AptLoadVarsFP8AptValuei"
 "sMethod_toString__11AptLoadVarsFP8AptValuei":
@@ -2960,7 +2960,7 @@ lbl_80325538:
 /* 80325658 003212F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032565C 003212FC  7C 08 03 A6 */	mtlr r0
 /* 80325660 00321300  38 21 00 20 */	addi r1, r1, 0x20
-/* 80325664 00321304  4E 80 00 20 */	blr 
+/* 80325664 00321304  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__8AptErrorCFP8AptValuePC9EAStringC"
 "objectMemberLookup__8AptErrorCFP8AptValuePC9EAStringC":
@@ -3030,7 +3030,7 @@ lbl_8032573C:
 /* 80325758 003213F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032575C 003213FC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80325760 00321400  7D 89 03 A6 */	mtctr r12
-/* 80325764 00321404  4E 80 04 21 */	bctrl 
+/* 80325764 00321404  4E 80 04 21 */	bctrl
 lbl_80325768:
 /* 80325768 00321408  80 6D C0 60 */	lwz r3, "psMethod_toString__8AptError"-_SDA_BASE_(r13)
 /* 8032576C 0032140C  48 00 00 08 */	b lbl_80325774
@@ -3043,7 +3043,7 @@ lbl_80325774:
 /* 80325780 00321420  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80325784 00321424  7C 08 03 A6 */	mtlr r0
 /* 80325788 00321428  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032578C 0032142C  4E 80 00 20 */	blr 
+/* 8032578C 0032142C  4E 80 00 20 */	blr
 
 .global "objectMemberSet__8AptErrorFP8AptValuePC9EAStringCP8AptValue"
 "objectMemberSet__8AptErrorFP8AptValuePC9EAStringCP8AptValue":
@@ -3102,7 +3102,7 @@ lbl_80325848:
 /* 80325854 003214F4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80325858 003214F8  7C 08 03 A6 */	mtlr r0
 /* 8032585C 003214FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80325860 00321500  4E 80 00 20 */	blr 
+/* 80325860 00321500  4E 80 00 20 */	blr
 
 .global "__dt__8AptErrorFv"
 "__dt__8AptErrorFv":
@@ -3136,7 +3136,7 @@ lbl_803258C0:
 /* 803258CC 0032156C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803258D0 00321570  7C 08 03 A6 */	mtlr r0
 /* 803258D4 00321574  38 21 00 10 */	addi r1, r1, 0x10
-/* 803258D8 00321578  4E 80 00 20 */	blr 
+/* 803258D8 00321578  4E 80 00 20 */	blr
 
 .global "sMethod_toString__8AptErrorFP8AptValuei"
 "sMethod_toString__8AptErrorFP8AptValuei":
@@ -3165,7 +3165,7 @@ lbl_803258C0:
 /* 80325934 003215D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80325938 003215D8  7C 08 03 A6 */	mtlr r0
 /* 8032593C 003215DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80325940 003215E0  4E 80 00 20 */	blr 
+/* 80325940 003215E0  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__8AptErrorFv"
 "CleanNativeFunctions__8AptErrorFv":
@@ -3183,14 +3183,14 @@ lbl_803258C0:
 /* 80325970 00321610  38 84 92 D0 */	addi r4, r4, "__PRETTY_FUNCTION__$9034"@l
 /* 80325974 00321614  38 A5 90 30 */	addi r5, r5, lbl_80459030@l
 /* 80325978 00321618  7D 89 03 A6 */	mtctr r12
-/* 8032597C 0032161C  4E 80 04 21 */	bctrl 
+/* 8032597C 0032161C  4E 80 04 21 */	bctrl
 /* 80325980 00321620  38 00 00 00 */	li r0, 0
 /* 80325984 00321624  90 0D C0 60 */	stw r0, "psMethod_toString__8AptError"-_SDA_BASE_(r13)
 lbl_80325988:
 /* 80325988 00321628  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032598C 0032162C  7C 08 03 A6 */	mtlr r0
 /* 80325990 00321630  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325994 00321634  4E 80 00 20 */	blr 
+/* 80325994 00321634  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__8AptStageCFP8AptValuePC9EAStringC"
 "objectMemberLookup__8AptStageCFP8AptValuePC9EAStringC":
@@ -3237,7 +3237,7 @@ lbl_80325A20:
 /* 80325A24 003216C4  38 63 12 68 */	addi r3, r3, "gAptFuncs"@l
 /* 80325A28 003216C8  81 83 00 A0 */	lwz r12, 0xa0(r3)
 /* 80325A2C 003216CC  7D 89 03 A6 */	mtctr r12
-/* 80325A30 003216D0  4E 80 04 21 */	bctrl 
+/* 80325A30 003216D0  4E 80 04 21 */	bctrl
 /* 80325A34 003216D4  4B FE 47 E5 */	bl "Create__8AptFloatFf"
 /* 80325A38 003216D8  48 00 00 2C */	b lbl_80325A64
 lbl_80325A3C:
@@ -3245,7 +3245,7 @@ lbl_80325A3C:
 /* 80325A40 003216E0  38 63 12 68 */	addi r3, r3, "gAptFuncs"@l
 /* 80325A44 003216E4  81 83 00 A4 */	lwz r12, 0xa4(r3)
 /* 80325A48 003216E8  7D 89 03 A6 */	mtctr r12
-/* 80325A4C 003216EC  4E 80 04 21 */	bctrl 
+/* 80325A4C 003216EC  4E 80 04 21 */	bctrl
 /* 80325A50 003216F0  4B FE 47 C9 */	bl "Create__8AptFloatFf"
 /* 80325A54 003216F4  48 00 00 10 */	b lbl_80325A64
 lbl_80325A58:
@@ -3259,7 +3259,7 @@ lbl_80325A64:
 /* 80325A6C 0032170C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80325A70 00321710  7C 08 03 A6 */	mtlr r0
 /* 80325A74 00321714  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325A78 00321718  4E 80 00 20 */	blr 
+/* 80325A78 00321718  4E 80 00 20 */	blr
 
 .global "in_word_set__15KeyMembersIndexFPCcUi"
 "in_word_set__15KeyMembersIndexFPCcUi":
@@ -3317,7 +3317,7 @@ lbl_80325B34:
 /* 80325B40 003217E0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80325B44 003217E4  7C 08 03 A6 */	mtlr r0
 /* 80325B48 003217E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80325B4C 003217EC  4E 80 00 20 */	blr 
+/* 80325B4C 003217EC  4E 80 00 20 */	blr
 
 .global "hash__15KeyMembersIndexFPCcUi"
 "hash__15KeyMembersIndexFPCcUi":
@@ -3357,7 +3357,7 @@ lbl_80325BBC:
 /* 80325BC4 00321864  7C 03 00 AE */	lbzx r0, r3, r0
 /* 80325BC8 00321868  7C 64 02 14 */	add r3, r4, r0
 /* 80325BCC 0032186C  38 21 01 10 */	addi r1, r1, 0x110
-/* 80325BD0 00321870  4E 80 00 20 */	blr 
+/* 80325BD0 00321870  4E 80 00 20 */	blr
 
 .global "in_word_set__16MathMembersIndexFPCcUi"
 "in_word_set__16MathMembersIndexFPCcUi":
@@ -3447,7 +3447,7 @@ lbl_80325CFC:
 /* 80325D08 003219A8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80325D0C 003219AC  7C 08 03 A6 */	mtlr r0
 /* 80325D10 003219B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80325D14 003219B4  4E 80 00 20 */	blr 
+/* 80325D14 003219B4  4E 80 00 20 */	blr
 
 .global "hash__16MathMembersIndexFPCcUi"
 "hash__16MathMembersIndexFPCcUi":
@@ -3473,7 +3473,7 @@ lbl_80325D34:
 /* 80325D60 00321A00  7C 05 22 14 */	add r0, r5, r4
 /* 80325D64 00321A04  7C 63 02 14 */	add r3, r3, r0
 /* 80325D68 00321A08  38 21 01 10 */	addi r1, r1, 0x110
-/* 80325D6C 00321A0C  4E 80 00 20 */	blr 
+/* 80325D6C 00321A0C  4E 80 00 20 */	blr
 
 .global "in_word_set__20LoadVarsMembersIndexFPCcUi"
 "in_word_set__20LoadVarsMembersIndexFPCcUi":
@@ -3518,7 +3518,7 @@ lbl_80325DF8:
 /* 80325E00 00321AA0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80325E04 00321AA4  7C 08 03 A6 */	mtlr r0
 /* 80325E08 00321AA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325E0C 00321AAC  4E 80 00 20 */	blr 
+/* 80325E0C 00321AAC  4E 80 00 20 */	blr
 
 .global "hash__20LoadVarsMembersIndexFPCcUi"
 "hash__20LoadVarsMembersIndexFPCcUi":
@@ -3544,7 +3544,7 @@ lbl_80325E2C:
 /* 80325E58 00321AF8  7C 05 22 14 */	add r0, r5, r4
 /* 80325E5C 00321AFC  7C 63 02 14 */	add r3, r3, r0
 /* 80325E60 00321B00  38 21 01 10 */	addi r1, r1, 0x110
-/* 80325E64 00321B04  4E 80 00 20 */	blr 
+/* 80325E64 00321B04  4E 80 00 20 */	blr
 
 .global "isKey__8AptValueCFv"
 "isKey__8AptValueCFv":
@@ -3570,11 +3570,11 @@ lbl_80325EA4:
 /* 80325EB0 00321B50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80325EB4 00321B54  7C 08 03 A6 */	mtlr r0
 /* 80325EB8 00321B58  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325EBC 00321B5C  4E 80 00 20 */	blr 
+/* 80325EBC 00321B5C  4E 80 00 20 */	blr
 
 .global "c_loadvars__8AptValueCFv"
 "c_loadvars__8AptValueCFv":
-/* 80325EC0 00321B60  4E 80 00 20 */	blr 
+/* 80325EC0 00321B60  4E 80 00 20 */	blr
 
 .global "Equal__9EAStringCCFPCc"
 "Equal__9EAStringCCFPCc":
@@ -3592,7 +3592,7 @@ lbl_80325EA4:
 /* 80325EF0 00321B90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80325EF4 00321B94  7C 08 03 A6 */	mtlr r0
 /* 80325EF8 00321B98  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325EFC 00321B9C  4E 80 00 20 */	blr 
+/* 80325EFC 00321B9C  4E 80 00 20 */	blr
 
 .global "add__23AptValueSet<P8AptValue>FP8AptValue"
 "add__23AptValueSet<P8AptValue>FP8AptValue":
@@ -3624,7 +3624,7 @@ lbl_80325F2C:
 /* 80325F58 00321BF8  38 C0 00 38 */	li r6, 0x38
 /* 80325F5C 00321BFC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80325F60 00321C00  7D 89 03 A6 */	mtctr r12
-/* 80325F64 00321C04  4E 80 04 20 */	bctr 
+/* 80325F64 00321C04  4E 80 04 20 */	bctr
 
 .global "has__23AptValueSet<P8AptValue>FP8AptValue"
 "has__23AptValueSet<P8AptValue>FP8AptValue":
@@ -3639,13 +3639,13 @@ lbl_80325F7C:
 /* 80325F84 00321C24  7C 00 20 40 */	cmplw r0, r4
 /* 80325F88 00321C28  40 82 00 0C */	bne lbl_80325F94
 /* 80325F8C 00321C2C  38 60 00 01 */	li r3, 1
-/* 80325F90 00321C30  4E 80 00 20 */	blr 
+/* 80325F90 00321C30  4E 80 00 20 */	blr
 lbl_80325F94:
 /* 80325F94 00321C34  38 C6 00 04 */	addi r6, r6, 4
 /* 80325F98 00321C38  42 00 FF E4 */	bdnz lbl_80325F7C
 lbl_80325F9C:
 /* 80325F9C 00321C3C  38 60 00 00 */	li r3, 0
-/* 80325FA0 00321C40  4E 80 00 20 */	blr 
+/* 80325FA0 00321C40  4E 80 00 20 */	blr
 
 .global "__dt__10AptMathObjFv"
 "__dt__10AptMathObjFv":
@@ -3672,7 +3672,7 @@ lbl_80325FE4:
 /* 80325FF0 00321C90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80325FF4 00321C94  7C 08 03 A6 */	mtlr r0
 /* 80325FF8 00321C98  38 21 00 10 */	addi r1, r1, 0x10
-/* 80325FFC 00321C9C  4E 80 00 20 */	blr 
+/* 80325FFC 00321C9C  4E 80 00 20 */	blr
 
 .global "__dt__6AptKeyFv"
 "__dt__6AptKeyFv":
@@ -3699,7 +3699,7 @@ lbl_80326040:
 /* 8032604C 00321CEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80326050 00321CF0  7C 08 03 A6 */	mtlr r0
 /* 80326054 00321CF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80326058 00321CF8  4E 80 00 20 */	blr 
+/* 80326058 00321CF8  4E 80 00 20 */	blr
 
 .global "__dt__8AptStageFv"
 "__dt__8AptStageFv":
@@ -3726,194 +3726,937 @@ lbl_8032609C:
 /* 803260A8 00321D48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803260AC 00321D4C  7C 08 03 A6 */	mtlr r0
 /* 803260B0 00321D50  38 21 00 10 */	addi r1, r1, 0x10
-/* 803260B4 00321D54  4E 80 00 20 */	blr 
+/* 803260B4 00321D54  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041BCD0
 lbl_8041BCD0:
-	.incbin "baserom.dol", 0x417DD0, 0x100
+	# ROM: 0x417DD0
+	.asciz "22222222222222222222222222222222222222222222222222222222222222222"
+	.byte 0x32, 0x00
+	.4byte 0x32000519
+	.4byte 0x000A321E
+	.4byte 0x00321400
+	.4byte 0x00323205
+	.4byte 0x0F323232
+	.asciz "222222222222"
+	.byte 0x00, 0x32, 0x32
+	.4byte 0x32003232
+	.4byte 0x32323200
+	.4byte 0x32320019
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+
 .global lbl_8041BDD0
 lbl_8041BDD0:
-	.incbin "baserom.dol", 0x417ED0, 0x100
+	# ROM: 0x417ED0
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32320532
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32143205
+	.4byte 0x050A001E
+	.asciz "2222"
+	.byte 0x0A, 0x19, 0x32
+	.4byte 0x00320000
+	.4byte 0x0F323200
+	.4byte 0x05323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+	.4byte 0x32323232
+
 .global lbl_8041BED0
 lbl_8041BED0:
-	.incbin "baserom.dol", 0x417FD0, 0x100
+	# ROM: 0x417FD0
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111100
+	.4byte 0x00001100
+	.4byte 0x11111111
+	.4byte 0x00111111
+	.4byte 0x11111105
+	.4byte 0x00111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+	.4byte 0x11111111
+
 .global "BUTTONACTIONCODE_TO_KEYCODE"
 "BUTTONACTIONCODE_TO_KEYCODE":
-	.incbin "baserom.dol", 0x4180D0, 0x50
+	# ROM: 0x4180D0
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000025
+	.4byte 0x00000027
+	.4byte 0x00000024
+	.4byte 0x00000023
+	.4byte 0x0000002D
+	.4byte 0x0000002E
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000008
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0x0000000D
+	.4byte 0x00000026
+	.4byte 0x00000028
+	.4byte 0x00000021
+	.4byte 0x00000022
+	.4byte 0x00000009
+	.4byte 0x0000001B
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_80458808"
 "__PRETTY_FUNCTION__$1864_80458808":
-	.incbin "baserom.dol", 0x454908, 0x50
+	# ROM: 0x454908
+	.asciz "AptCIH::AptCIH(AptVirtualFunctionTable_Indices, AptCharacterInst *, AptCIH *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2185_80458858"
 "__PRETTY_FUNCTION__$2185_80458858":
-	.incbin "baserom.dol", 0x454958, 0x2C
+	# ROM: 0x454958
+	.asciz "AptNativeHash::UnsetAt(AptHashItem *const )"
+
 .global "__PRETTY_FUNCTION__$2191_80458884"
 "__PRETTY_FUNCTION__$2191_80458884":
-	.incbin "baserom.dol", 0x454984, 0x3C
+	# ROM: 0x454984
+	.asciz "AptNativeHash::OverwriteAt(AptHashItem *const , AptValue *)"
+
 .global "__PRETTY_FUNCTION__$2198_804588C0"
 "__PRETTY_FUNCTION__$2198_804588C0":
-	.incbin "baserom.dol", 0x4549C0, 0x34
+	# ROM: 0x4549C0
+	.asciz "AptNativeHash::OverwriteAt(const int, AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2204_804588F4"
 "__PRETTY_FUNCTION__$2204_804588F4":
-	.incbin "baserom.dol", 0x4549F4, 0x3C
+	# ROM: 0x4549F4
+	.asciz "AptNativeHash::SetAt(AptHashItem *const , AptValue *const )"
+
 .global "__PRETTY_FUNCTION__$2215_80458930"
 "__PRETTY_FUNCTION__$2215_80458930":
-	.incbin "baserom.dol", 0x454A30, 0x38
+	# ROM: 0x454A30
+	.asciz "AptNativeHash::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$2252_80458968"
 "__PRETTY_FUNCTION__$2252_80458968":
-	.incbin "baserom.dol", 0x454A68, 0x20
+	# ROM: 0x454A68
+	.asciz "AptNativeHash::UnsetPrototype()"
+
 .global "__PRETTY_FUNCTION__$2260_80458988"
 "__PRETTY_FUNCTION__$2260_80458988":
-	.incbin "baserom.dol", 0x454A88, 0x30
+	# ROM: 0x454A88
+	.asciz "AptNativeHash::SetPrototype(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2274_804589B8"
 "__PRETTY_FUNCTION__$2274_804589B8":
-	.incbin "baserom.dol", 0x454AB8, 0x20
+	# ROM: 0x454AB8
+	.asciz "AptNativeHash::Unset__Proto__()"
+
 .global "__PRETTY_FUNCTION__$2282_804589D8"
 "__PRETTY_FUNCTION__$2282_804589D8":
-	.incbin "baserom.dol", 0x454AD8, 0x30
+	# ROM: 0x454AD8
+	.asciz "AptNativeHash::Set__Proto__(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2368_80458A08"
 "__PRETTY_FUNCTION__$2368_80458A08":
-	.incbin "baserom.dol", 0x454B08, 0x30
+	# ROM: 0x454B08
+	.asciz "AptPrototype::SetSuperConstructor(AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2520_80458A38"
 "__PRETTY_FUNCTION__$2520_80458A38":
-	.incbin "baserom.dol", 0x454B38, 0x24
+	# ROM: 0x454B38
+	.asciz "AptFrameStack::DestroyGCPointers()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2587_80458A5C"
 "__PRETTY_FUNCTION__$2587_80458A5C":
-	.incbin "baserom.dol", 0x454B5C, 0x34
+	# ROM: 0x454B5C
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *, int)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2595_80458A90"
 "__PRETTY_FUNCTION__$2595_80458A90":
-	.incbin "baserom.dol", 0x454B90, 0x30
+	# ROM: 0x454B90
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3023_80458AC0"
 "__PRETTY_FUNCTION__$3023_80458AC0":
-	.incbin "baserom.dol", 0x454BC0, 0x2C
+	# ROM: 0x454BC0
+	.asciz "AptActionInterpreter::clearThrownValue()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3029_80458AEC"
 "__PRETTY_FUNCTION__$3029_80458AEC":
-	.incbin "baserom.dol", 0x454BEC, 0x30
+	# ROM: 0x454BEC
+	.asciz "AptActionInterpreter::throwValue(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3076_80458B1C"
 "__PRETTY_FUNCTION__$3076_80458B1C":
-	.incbin "baserom.dol", 0x454C1C, 0x2C
+	# ROM: 0x454C1C
+	.asciz "AptScriptFunctionBase::CreateFrameStack()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3392_80458B48"
 "__PRETTY_FUNCTION__$3392_80458B48":
-	.incbin "baserom.dol", 0x454C48, 0x24
+	# ROM: 0x454C48
+	.asciz "AptValuePtrStack<AptValue>::pop()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3477_80458B6C"
 "__PRETTY_FUNCTION__$3477_80458B6C":
-	.incbin "baserom.dol", 0x454C6C, 0x34
+	# ROM: 0x454C6C
+	.asciz "AptArray::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$3509_80458BA0"
 "__PRETTY_FUNCTION__$3509_80458BA0":
-	.incbin "baserom.dol", 0x454CA0, 0x28
+	# ROM: 0x454CA0
+	.asciz "AptStringObject::setString(AptString *)"
+
 .global "__PRETTY_FUNCTION__$3515_80458BC8"
 "__PRETTY_FUNCTION__$3515_80458BC8":
-	.incbin "baserom.dol", 0x454CC8, 0x24
+	# ROM: 0x454CC8
+	.asciz "AptStringObject::~AptStringObject()"
+
 .global "lengthtable$6287"
 "lengthtable$6287":
-	.incbin "baserom.dol", 0x454CEC, 0x9C
+	# ROM: 0x454CEC
+	.4byte 0x02030405
+	.4byte 0x07080905
+	.4byte 0x0B070D0E
+	.4byte 0x05120407
+	.4byte 0x03040506
+	.4byte 0x04060909
+	.4byte 0x08040000
+	.asciz "getAscii"
+	.byte 0x00, 0x00, 0x00
+	.asciz "DELETEKEY"
+	.byte 0x00, 0x00
+	.asciz "addListener"
+	.asciz "getController"
+	.byte 0x00, 0x00
+	.asciz "removeListener"
+	.byte 0x00
+	.asciz "getAnalogStickInfo"
+	.byte 0x00
+	.asciz "isToggled"
+	.byte 0x00, 0x00
+	.asciz "BACKSPACE"
+	.byte 0x00, 0x00
+	.asciz "CAPSLOCK"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "wordlist$6288"
 "wordlist$6288":
-	.incbin "baserom.dol", 0x454D88, 0xD0
+	# ROM: 0x454D88
+	.4byte 0x805D6B40 ;# ptr
+	.4byte 0x00000012
+	.4byte 0x805D6B44 ;# ptr
+	.4byte 0x00000011
+	.4byte 0x805D6B48 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x805D6B50 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D6B58 ;# ptr
+	.4byte 0x00000066
+	.4byte 0x80458C08 ;# ptr
+	.4byte 0x0000006B
+	.4byte 0x80458C14 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D6B60 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x80458C20 ;# ptr
+	.4byte 0x00000068
+	.4byte 0x805D6B68 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x80458C2C ;# ptr
+	.4byte 0x00000067
+	.4byte 0x80458C3C ;# ptr
+	.4byte 0x00000069
+	.4byte 0x805D6B70 ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x80458C4C ;# ptr
+	.4byte 0x0000006A
+	.4byte 0x805D6B78 ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D6B80 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D6B88 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6B8C ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D6B94 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D6B9C ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D6BA4 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6BAC ;# ptr
+	.4byte 0x00000064
+	.4byte 0x80458C60 ;# ptr
+	.4byte 0x00000065
+	.4byte 0x80458C6C ;# ptr
+	.4byte 0x00000001
+	.4byte 0x80458C78 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D6BB4 ;# ptr
+	.4byte 0x0000000C
+
 .global "lookup$6315"
 "lookup$6315":
-	.incbin "baserom.dol", 0x454E58, 0x38
+	# ROM: 0x454E58
+	.4byte 0xFFFF0001
+	.4byte 0x0203FF04
+	.4byte 0x05060708
+	.4byte 0x090A0B0C
+	.4byte 0xFFFF0D0E
+	.4byte 0xFFFF0F10
+	.4byte 0x111213FF
+	.4byte 0xFF14FF15
+	.4byte 0xFFFF16FF
+	.4byte 0xFFFFFF17
+	.4byte 0xFFFFFF18
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF190000
+	.4byte 0x00000000
+
 .global "wordlist$6366"
 "wordlist$6366":
-	.incbin "baserom.dol", 0x454E90, 0x90
+	# ROM: 0x454E90
+	.4byte 0x805D6BBC ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x805D6BC0 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6BC8 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D6BCC ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D6BD4 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D6BDC ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x805D6BE0 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D6BE8 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6BEC ;# ptr
+	.4byte 0x00000011
+	.4byte 0x805D6BF4 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D6BF8 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D6C00 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6C04 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D6C0C ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x805D6C10 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D6C14 ;# ptr
+	.4byte 0x00000012
+	.4byte 0x805D6C18 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x805D6C20 ;# ptr
+	.4byte 0x0000000A
+
 .global "lookup$6385"
 "lookup$6385":
-	.incbin "baserom.dol", 0x454F20, 0x78
+	# ROM: 0x454F20
+	.4byte 0xFFFFFF00
+	.4byte 0xFF01FFFF
+	.4byte 0x020304FF
+	.4byte 0xFF05FFFF
+	.4byte 0x06FF0708
+	.4byte 0xFFFFFF09
+	.4byte 0x0AFFFFFF
+	.4byte 0x0BFF0CFF
+	.4byte 0xFF0DFFFF
+	.4byte 0xFFFF0EFF
+	.4byte 0xFFFFFF0F
+	.4byte 0xFFFFFFFE
+	.4byte 0xFEBE0000
+	.asciz "toString"
+	.byte 0x00, 0x00, 0x00
+	.asciz "contentType"
+	.asciz "getBytesTotal"
+	.byte 0x00, 0x00
+	.asciz "getBytesLoaded"
+	.byte 0x00
+	.asciz "sendAndLoad"
+
 .global "wordlist$6441"
 "wordlist$6441":
-	.incbin "baserom.dol", 0x454F98, 0x88
+	# ROM: 0x454F98
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C2C ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C34 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80458E54 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D6C3C ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80458E60 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80458E6C ;# ptr
+	.4byte 0x00000004
+	.4byte 0x80458E7C ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D6C28 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80458E8C ;# ptr
+	.4byte 0x00000003
+
 .global "__PRETTY_FUNCTION__$6887"
 "__PRETTY_FUNCTION__$6887":
-	.incbin "baserom.dol", 0x455020, 0x2C
+	# ROM: 0x455020
+	.asciz "AptBasePtrStack<AptValue>::Push(AptValue *)"
+
 .global "__PRETTY_FUNCTION__$6927"
 "__PRETTY_FUNCTION__$6927":
-	.incbin "baserom.dol", 0x45504C, 0x40
+	# ROM: 0x45504C
+	.asciz "AptBasePtrStack<AptValue>::PopAndPush(const int, AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6948"
 "__PRETTY_FUNCTION__$6948":
-	.incbin "baserom.dol", 0x45508C, 0x24
+	# ROM: 0x45508C
+	.asciz "AptBasePtrStack<AptValue>::Pop()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6963"
 "__PRETTY_FUNCTION__$6963":
-	.incbin "baserom.dol", 0x4550B0, 0x2C
+	# ROM: 0x4550B0
+	.asciz "AptBasePtrStack<AptValue>::Pop(const int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6984"
 "__PRETTY_FUNCTION__$6984":
-	.incbin "baserom.dol", 0x4550DC, 0x30
+	# ROM: 0x4550DC
+	.asciz "AptBasePtrStack<AptValue>::SafePop(const int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$7668"
 "__PRETTY_FUNCTION__$7668":
-	.incbin "baserom.dol", 0x45510C, 0x24
+	# ROM: 0x45510C
+	.asciz "AptMathObj::CleanNativeFunctions()"
+	.byte 0x00
+
 .global lbl_80459030
 lbl_80459030:
-	.incbin "baserom.dol", 0x455130, 0x18
+	# ROM: 0x455130
+	.asciz "AptMiscObjects.cpp"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$7784"
 "__PRETTY_FUNCTION__$7784":
-	.incbin "baserom.dol", 0x455148, 0x50
+	# ROM: 0x455148
+	.asciz "AptMathObj::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+
 .global lbl_80459098
 lbl_80459098:
-	.incbin "baserom.dol", 0x455198, 0x4C
+	# ROM: 0x455198
+	.4byte 0x803238FC ;# ptr
+	.4byte 0x803231F4 ;# ptr
+	.4byte 0x80323258 ;# ptr
+	.4byte 0x803232BC ;# ptr
+	.4byte 0x80323320 ;# ptr
+	.4byte 0x80323384 ;# ptr
+	.4byte 0x803233E8 ;# ptr
+	.4byte 0x8032344C ;# ptr
+	.4byte 0x803234B0 ;# ptr
+	.4byte 0x80323514 ;# ptr
+	.4byte 0x80323578 ;# ptr
+	.4byte 0x803235DC ;# ptr
+	.4byte 0x80323640 ;# ptr
+	.4byte 0x803236A4 ;# ptr
+	.4byte 0x80323708 ;# ptr
+	.4byte 0x8032376C ;# ptr
+	.4byte 0x803237D0 ;# ptr
+	.4byte 0x80323834 ;# ptr
+	.4byte 0x80323898 ;# ptr
+
 .global "__PRETTY_FUNCTION__$8258"
 "__PRETTY_FUNCTION__$8258":
-	.incbin "baserom.dol", 0x4551E4, 0x20
+	# ROM: 0x4551E4
+	.asciz "AptKey::CleanNativeFunctions()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$8313"
 "__PRETTY_FUNCTION__$8313":
-	.incbin "baserom.dol", 0x455204, 0x4C
+	# ROM: 0x455204
+	.asciz "AptKey::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+
 .global "__PRETTY_FUNCTION__$8525"
 "__PRETTY_FUNCTION__$8525":
-	.incbin "baserom.dol", 0x455250, 0x2C
+	# ROM: 0x455250
+	.asciz "AptValueSet<AptValue *>::add(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$8594"
 "__PRETTY_FUNCTION__$8594":
-	.incbin "baserom.dol", 0x45527C, 0x2C
+	# ROM: 0x45527C
+	.asciz "AptValueSet<AptValue *>::remove(AptValue *)"
+
 .global lbl_804591A8
 lbl_804591A8:
-	.incbin "baserom.dol", 0x4552A8, 0xC
+	# ROM: 0x4552A8
+	.asciz "fXAxisValue"
+
 .global lbl_804591B4
 lbl_804591B4:
-	.incbin "baserom.dol", 0x4552B4, 0xC
+	# ROM: 0x4552B4
+	.asciz "fYAxisValue"
+
 .global "__PRETTY_FUNCTION__$8697"
 "__PRETTY_FUNCTION__$8697":
-	.incbin "baserom.dol", 0x4552C0, 0x78
+	# ROM: 0x4552C0
+	.asciz "AptLoadVars::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+	.byte 0x00, 0x00, 0x00
+	.asciz "application/x-www-form-urlencoded"
+	.byte 0x00, 0x00
+
 .global lbl_80459238
 lbl_80459238:
-	.incbin "baserom.dol", 0x455338, 0x24
+	# ROM: 0x455338
+	.4byte 0x80324E1C ;# ptr
+	.4byte 0x80324BC4 ;# ptr
+	.4byte 0x80324C20 ;# ptr
+	.4byte 0x80324C7C ;# ptr
+	.4byte 0x80324CD8 ;# ptr
+	.4byte 0x80324D34 ;# ptr
+	.4byte 0x80324D90 ;# ptr
+	.4byte 0x80324DA8 ;# ptr
+	.4byte 0x80324E04 ;# ptr
+
 .global "__PRETTY_FUNCTION__$8790"
 "__PRETTY_FUNCTION__$8790":
-	.incbin "baserom.dol", 0x45535C, 0x24
+	# ROM: 0x45535C
+	.asciz "AptLoadVars::CleanNativeFunctions()"
+
 .global "__PRETTY_FUNCTION__$8964"
 "__PRETTY_FUNCTION__$8964":
-	.incbin "baserom.dol", 0x455380, 0x50
+	# ROM: 0x455380
+	.asciz "AptError::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9034"
 "__PRETTY_FUNCTION__$9034":
-	.incbin "baserom.dol", 0x4553D0, 0x24
+	# ROM: 0x4553D0
+	.asciz "AptError::CleanNativeFunctions()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9044"
 "__PRETTY_FUNCTION__$9044":
-	.incbin "baserom.dol", 0x4553F4, 0x24
+	# ROM: 0x4553F4
+	.asciz "AptStage::CleanNativeFunctions()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__vt__8AptStage"
 "__vt__8AptStage":
-	.incbin "baserom.dol", 0x455418, 0x44
+	# ROM: 0x455418
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__8AptStageCFP8AptValuePC9EAStringC" ;# ptr (0x80325998)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__8AptStageFv" ;# ptr (0x8032605C)
+
 .global "__vt__8AptError"
 "__vt__8AptError":
-	.incbin "baserom.dol", 0x45545C, 0x44
+	# ROM: 0x45545C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__8AptErrorCFP8AptValuePC9EAStringC" ;# ptr (0x80325668)
+	.4byte "objectMemberSet__8AptErrorFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x80325790)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__8AptErrorFv" ;# ptr (0x80325864)
+
 .global "__vt__11AptLoadVars"
 "__vt__11AptLoadVars":
-	.incbin "baserom.dol", 0x4554A0, 0x44
+	# ROM: 0x4554A0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__11AptLoadVarsCFP8AptValuePC9EAStringC" ;# ptr (0x80324B40)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__11AptLoadVarsFv" ;# ptr (0x80324E40)
+
 .global "__vt__6AptKey"
 "__vt__6AptKey":
-	.incbin "baserom.dol", 0x4554E4, 0x44
+	# ROM: 0x4554E4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__6AptKeyCFP8AptValuePC9EAStringC" ;# ptr (0x80324174)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__6AptKeyFv" ;# ptr (0x80326000)
+
 .global "__vt__10AptMathObj"
 "__vt__10AptMathObj":
-	.incbin "baserom.dol", 0x455528, 0x11C
+	# ROM: 0x455528
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__10AptMathObjCFP8AptValuePC9EAStringC" ;# ptr (0x80323184)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__10AptMathObjFv" ;# ptr (0x80325FA4)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.asciz "_AptSet.h"
+	.byte 0x00, 0x00
+
 .global lbl_80459544
 lbl_80459544:
-	.incbin "baserom.dol", 0x455644, 0xC
+	# ROM: 0x455644
+	.asciz "_AptSet.h"
+	.byte 0x00, 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x4866C0, 0x108
+	# ROM: 0x4866C0
+	.4byte 0x55500000
+	.4byte 0x54414200
+	.asciz "HOME"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SPACE"
+	.byte 0x00, 0x00
+	.asciz "getCode"
+	.asciz "SHIFT"
+	.byte 0x00, 0x00
+	.asciz "ESCAPED"
+	.asciz "RIGHT"
+	.byte 0x00, 0x00
+	.asciz "LEFT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "CONTROL"
+	.4byte 0x454E4400
+	.asciz "DOWN"
+	.byte 0x00, 0x00, 0x00
+	.asciz "ENTER"
+	.byte 0x00, 0x00
+	.asciz "INSERT"
+	.byte 0x00
+	.asciz "PGUP"
+	.byte 0x00, 0x00, 0x00
+	.asciz "isDown"
+	.byte 0x00
+	.asciz "PGDN"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x706F7700
+	.asciz "floor"
+	.byte 0x00, 0x00
+	.4byte 0x636F7300
+	.asciz "ceil"
+	.byte 0x00, 0x00, 0x00
+	.asciz "round"
+	.byte 0x00, 0x00
+	.4byte 0x65787000
+	.asciz "random"
+	.byte 0x00
+	.4byte 0x6D617800
+	.asciz "sqrt"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x61627300
+	.asciz "acos"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x73696E00
+	.asciz "atan2"
+	.byte 0x00, 0x00
+	.4byte 0x6C6F6700
+	.4byte 0x6D696E00
+	.4byte 0x74616E00
+	.asciz "asin"
+	.byte 0x00, 0x00, 0x00
+	.asciz "atan"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "load"
+	.byte 0x00, 0x00, 0x00
+	.asciz "loaded"
+	.byte 0x00
+	.asciz "send"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_805D6C48
 lbl_805D6C48:
-	.incbin "baserom.dol", 0x4867C8, 0x8
+	# ROM: 0x4867C8
+	.asciz "message"
+
 .global lbl_805D6C50
 lbl_805D6C50:
-	.incbin "baserom.dol", 0x4867D0, 0x8
+	# ROM: 0x4867D0
+	.asciz "name"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "psMethod_sin__10AptMathObj"
@@ -4019,16 +4762,29 @@ lbl_805D6C50:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB690
 lbl_805DB690:
-	.incbin "baserom.dol", 0x4899B0, 0x4
+	# ROM: 0x4899B0
+	.4byte 0x3F000000
+
 .global lbl_805DB694
 lbl_805DB694:
-	.incbin "baserom.dol", 0x4899B4, 0x4
+	# ROM: 0x4899B4
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB698
 lbl_805DB698:
-	.incbin "baserom.dol", 0x4899B8, 0x8
+	# ROM: 0x4899B8
+	.4byte 0x4F800000
+	.4byte 0x00000000
+
 .global lbl_805DB6A0
 lbl_805DB6A0:
-	.incbin "baserom.dol", 0x4899C0, 0x8
+	# ROM: 0x4899C0
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DB6A8
 lbl_805DB6A8:
-	.incbin "baserom.dol", 0x4899C8, 0x8
+	# ROM: 0x4899C8
+	.4byte 0x43300000
+	.4byte 0x80000000
+

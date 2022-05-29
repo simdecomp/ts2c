@@ -44,7 +44,7 @@ lbl_8032EB0C:
 /* 8032EB28 0032A7C8  38 C0 00 39 */	li r6, 0x39
 /* 8032EB2C 0032A7CC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032EB30 0032A7D0  7D 89 03 A6 */	mtctr r12
-/* 8032EB34 0032A7D4  4E 80 04 21 */	bctrl 
+/* 8032EB34 0032A7D4  4E 80 04 21 */	bctrl
 /* 8032EB38 0032A7D8  48 00 00 0C */	b lbl_8032EB44
 lbl_8032EB3C:
 /* 8032EB3C 0032A7DC  38 00 00 00 */	li r0, 0
@@ -56,7 +56,7 @@ lbl_8032EB44:
 /* 8032EB50 0032A7F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032EB54 0032A7F4  7C 08 03 A6 */	mtlr r0
 /* 8032EB58 0032A7F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032EB5C 0032A7FC  4E 80 00 20 */	blr 
+/* 8032EB5C 0032A7FC  4E 80 00 20 */	blr
 
 .global "__dt__15AptScriptColourFv"
 "__dt__15AptScriptColourFv":
@@ -83,7 +83,7 @@ lbl_8032EBA0:
 /* 8032EBAC 0032A84C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032EBB0 0032A850  7C 08 03 A6 */	mtlr r0
 /* 8032EBB4 0032A854  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032EBB8 0032A858  4E 80 00 20 */	blr 
+/* 8032EBB8 0032A858  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__15AptScriptColourFv"
 "CleanNativeFunctions__15AptScriptColourFv":
@@ -101,7 +101,7 @@ lbl_8032EBA0:
 /* 8032EBE8 0032A888  38 84 B7 A8 */	addi r4, r4, "__PRETTY_FUNCTION__$7590_8045B7A8"@l
 /* 8032EBEC 0032A88C  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EBF0 0032A890  7D 89 03 A6 */	mtctr r12
-/* 8032EBF4 0032A894  4E 80 04 21 */	bctrl 
+/* 8032EBF4 0032A894  4E 80 04 21 */	bctrl
 /* 8032EBF8 0032A898  38 00 00 00 */	li r0, 0
 /* 8032EBFC 0032A89C  90 0D C1 28 */	stw r0, "psMethod_setRGB__15AptScriptColour"-_SDA_BASE_(r13)
 lbl_8032EC00:
@@ -116,7 +116,7 @@ lbl_8032EC00:
 /* 8032EC20 0032A8C0  38 84 B7 A8 */	addi r4, r4, "__PRETTY_FUNCTION__$7590_8045B7A8"@l
 /* 8032EC24 0032A8C4  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EC28 0032A8C8  7D 89 03 A6 */	mtctr r12
-/* 8032EC2C 0032A8CC  4E 80 04 21 */	bctrl 
+/* 8032EC2C 0032A8CC  4E 80 04 21 */	bctrl
 /* 8032EC30 0032A8D0  38 00 00 00 */	li r0, 0
 /* 8032EC34 0032A8D4  90 0D C1 2C */	stw r0, "psMethod_getRGB__15AptScriptColour"-_SDA_BASE_(r13)
 lbl_8032EC38:
@@ -131,7 +131,7 @@ lbl_8032EC38:
 /* 8032EC58 0032A8F8  38 84 B7 A8 */	addi r4, r4, "__PRETTY_FUNCTION__$7590_8045B7A8"@l
 /* 8032EC5C 0032A8FC  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EC60 0032A900  7D 89 03 A6 */	mtctr r12
-/* 8032EC64 0032A904  4E 80 04 21 */	bctrl 
+/* 8032EC64 0032A904  4E 80 04 21 */	bctrl
 /* 8032EC68 0032A908  38 00 00 00 */	li r0, 0
 /* 8032EC6C 0032A90C  90 0D C1 30 */	stw r0, "psMethod_getTransform__15AptScriptColour"-_SDA_BASE_(r13)
 lbl_8032EC70:
@@ -146,14 +146,14 @@ lbl_8032EC70:
 /* 8032EC90 0032A930  38 84 B7 A8 */	addi r4, r4, "__PRETTY_FUNCTION__$7590_8045B7A8"@l
 /* 8032EC94 0032A934  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EC98 0032A938  7D 89 03 A6 */	mtctr r12
-/* 8032EC9C 0032A93C  4E 80 04 21 */	bctrl 
+/* 8032EC9C 0032A93C  4E 80 04 21 */	bctrl
 /* 8032ECA0 0032A940  38 00 00 00 */	li r0, 0
 /* 8032ECA4 0032A944  90 0D C1 34 */	stw r0, "psMethod_setTransform__15AptScriptColour"-_SDA_BASE_(r13)
 lbl_8032ECA8:
 /* 8032ECA8 0032A948  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032ECAC 0032A94C  7C 08 03 A6 */	mtlr r0
 /* 8032ECB0 0032A950  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032ECB4 0032A954  4E 80 00 20 */	blr 
+/* 8032ECB4 0032A954  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__15AptScriptColourCFP8AptValuePC9EAStringC"
 "objectMemberLookup__15AptScriptColourCFP8AptValuePC9EAStringC":
@@ -192,7 +192,7 @@ lbl_8032ED10:
 /* 8032ED34 0032A9D4  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032ED38 0032A9D8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032ED3C 0032A9DC  7D 89 03 A6 */	mtctr r12
-/* 8032ED40 0032A9E0  4E 80 04 21 */	bctrl 
+/* 8032ED40 0032A9E0  4E 80 04 21 */	bctrl
 lbl_8032ED44:
 /* 8032ED44 0032A9E4  80 6D C1 28 */	lwz r3, "psMethod_setRGB__15AptScriptColour"-_SDA_BASE_(r13)
 /* 8032ED48 0032A9E8  48 00 01 88 */	b lbl_8032EED0
@@ -227,7 +227,7 @@ lbl_8032ED90:
 /* 8032EDB4 0032AA54  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EDB8 0032AA58  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032EDBC 0032AA5C  7D 89 03 A6 */	mtctr r12
-/* 8032EDC0 0032AA60  4E 80 04 21 */	bctrl 
+/* 8032EDC0 0032AA60  4E 80 04 21 */	bctrl
 lbl_8032EDC4:
 /* 8032EDC4 0032AA64  80 6D C1 2C */	lwz r3, "psMethod_getRGB__15AptScriptColour"-_SDA_BASE_(r13)
 /* 8032EDC8 0032AA68  48 00 01 08 */	b lbl_8032EED0
@@ -262,7 +262,7 @@ lbl_8032EE10:
 /* 8032EE34 0032AAD4  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EE38 0032AAD8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032EE3C 0032AADC  7D 89 03 A6 */	mtctr r12
-/* 8032EE40 0032AAE0  4E 80 04 21 */	bctrl 
+/* 8032EE40 0032AAE0  4E 80 04 21 */	bctrl
 lbl_8032EE44:
 /* 8032EE44 0032AAE4  80 6D C1 30 */	lwz r3, "psMethod_getTransform__15AptScriptColour"-_SDA_BASE_(r13)
 /* 8032EE48 0032AAE8  48 00 00 88 */	b lbl_8032EED0
@@ -297,7 +297,7 @@ lbl_8032EE90:
 /* 8032EEB4 0032AB54  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032EEB8 0032AB58  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032EEBC 0032AB5C  7D 89 03 A6 */	mtctr r12
-/* 8032EEC0 0032AB60  4E 80 04 21 */	bctrl 
+/* 8032EEC0 0032AB60  4E 80 04 21 */	bctrl
 lbl_8032EEC4:
 /* 8032EEC4 0032AB64  80 6D C1 34 */	lwz r3, "psMethod_setTransform__15AptScriptColour"-_SDA_BASE_(r13)
 /* 8032EEC8 0032AB68  48 00 00 08 */	b lbl_8032EED0
@@ -308,7 +308,7 @@ lbl_8032EED0:
 /* 8032EED4 0032AB74  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032EED8 0032AB78  7C 08 03 A6 */	mtlr r0
 /* 8032EEDC 0032AB7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032EEE0 0032AB80  4E 80 00 20 */	blr 
+/* 8032EEE0 0032AB80  4E 80 00 20 */	blr
 
 .global "sMethod_setRGB__15AptScriptColourFP8AptValuei"
 "sMethod_setRGB__15AptScriptColourFP8AptValuei":
@@ -386,7 +386,7 @@ lbl_8032EFE0:
 /* 8032EFFC 0032AC9C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8032F000 0032ACA0  7C 08 03 A6 */	mtlr r0
 /* 8032F004 0032ACA4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8032F008 0032ACA8  4E 80 00 20 */	blr 
+/* 8032F008 0032ACA8  4E 80 00 20 */	blr
 
 .global "sMethod_getRGB__15AptScriptColourFP8AptValuei"
 "sMethod_getRGB__15AptScriptColourFP8AptValuei":
@@ -431,7 +431,7 @@ lbl_8032F094:
 /* 8032F09C 0032AD3C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8032F0A0 0032AD40  7C 08 03 A6 */	mtlr r0
 /* 8032F0A4 0032AD44  38 21 00 30 */	addi r1, r1, 0x30
-/* 8032F0A8 0032AD48  4E 80 00 20 */	blr 
+/* 8032F0A8 0032AD48  4E 80 00 20 */	blr
 
 .global "sMethod_getTransform__15AptScriptColourFP8AptValuei"
 "sMethod_getTransform__15AptScriptColourFP8AptValuei":
@@ -585,7 +585,7 @@ lbl_8032F2DC:
 /* 8032F2E8 0032AF88  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 8032F2EC 0032AF8C  7C 08 03 A6 */	mtlr r0
 /* 8032F2F0 0032AF90  38 21 00 60 */	addi r1, r1, 0x60
-/* 8032F2F4 0032AF94  4E 80 00 20 */	blr 
+/* 8032F2F4 0032AF94  4E 80 00 20 */	blr
 
 .global "sMethod_setTransform__15AptScriptColourFP8AptValuei"
 "sMethod_setTransform__15AptScriptColourFP8AptValuei":
@@ -772,7 +772,7 @@ lbl_8032F594:
 /* 8032F59C 0032B23C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8032F5A0 0032B240  7C 08 03 A6 */	mtlr r0
 /* 8032F5A4 0032B244  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032F5A8 0032B248  4E 80 00 20 */	blr 
+/* 8032F5A8 0032B248  4E 80 00 20 */	blr
 
 .global "RegisterReferences__15AptScriptColourCFv"
 "RegisterReferences__15AptScriptColourCFv":
@@ -789,13 +789,13 @@ lbl_8032F594:
 /* 8032F5D4 0032B274  7F E3 FB 78 */	mr r3, r31
 /* 8032F5D8 0032B278  38 AD A8 58 */	addi r5, r13, lbl_805D6F38-_SDA_BASE_
 /* 8032F5DC 0032B27C  7D 89 03 A6 */	mtctr r12
-/* 8032F5E0 0032B280  4E 80 04 21 */	bctrl 
+/* 8032F5E0 0032B280  4E 80 04 21 */	bctrl
 lbl_8032F5E4:
 /* 8032F5E4 0032B284  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032F5E8 0032B288  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032F5EC 0032B28C  7C 08 03 A6 */	mtlr r0
 /* 8032F5F0 0032B290  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032F5F4 0032B294  4E 80 00 20 */	blr 
+/* 8032F5F4 0032B294  4E 80 00 20 */	blr
 
 .global "DestroyGCPointers__15AptScriptColourFv"
 "DestroyGCPointers__15AptScriptColourFv":
@@ -816,7 +816,7 @@ lbl_8032F5E4:
 /* 8032F630 0032B2D0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032F634 0032B2D4  38 A5 B7 94 */	addi r5, r5, lbl_8045B794@l
 /* 8032F638 0032B2D8  7D 89 03 A6 */	mtctr r12
-/* 8032F63C 0032B2DC  4E 80 04 21 */	bctrl 
+/* 8032F63C 0032B2DC  4E 80 04 21 */	bctrl
 lbl_8032F640:
 /* 8032F640 0032B2E0  38 00 00 00 */	li r0, 0
 /* 8032F644 0032B2E4  7F E3 FB 78 */	mr r3, r31
@@ -826,11 +826,11 @@ lbl_8032F640:
 /* 8032F654 0032B2F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032F658 0032B2F8  7C 08 03 A6 */	mtlr r0
 /* 8032F65C 0032B2FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032F660 0032B300  4E 80 00 20 */	blr 
+/* 8032F660 0032B300  4E 80 00 20 */	blr
 
 .global "c_scriptcolour__8AptValueCFv"
 "c_scriptcolour__8AptValueCFv":
-/* 8032F664 0032B304  4E 80 00 20 */	blr 
+/* 8032F664 0032B304  4E 80 00 20 */	blr
 
 .global "CompareNoCase__9EAStringCCFRC9EAStringC"
 "CompareNoCase__9EAStringCCFRC9EAStringC":
@@ -860,32 +860,67 @@ lbl_8032F6B4:
 /* 8032F6BC 0032B35C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032F6C0 0032B360  7C 08 03 A6 */	mtlr r0
 /* 8032F6C4 0032B364  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032F6C8 0032B368  4E 80 00 20 */	blr 
+/* 8032F6C8 0032B368  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$7453"
 "__PRETTY_FUNCTION__$7453":
-	.incbin "baserom.dol", 0x457860, 0x34
+	# ROM: 0x457860
+	.asciz "AptScriptColour::AptScriptColour(AptValue *const )"
+	.byte 0x00
+
 .global lbl_8045B794
 lbl_8045B794:
-	.incbin "baserom.dol", 0x457894, 0x14
+	# ROM: 0x457894
+	.asciz "AptScriptColour.cpp"
+
 .global "__PRETTY_FUNCTION__$7590_8045B7A8"
 "__PRETTY_FUNCTION__$7590_8045B7A8":
-	.incbin "baserom.dol", 0x4578A8, 0x28
+	# ROM: 0x4578A8
+	.asciz "AptScriptColour::CleanNativeFunctions()"
+
 .global "__PRETTY_FUNCTION__$7621"
 "__PRETTY_FUNCTION__$7621":
-	.incbin "baserom.dol", 0x4578D0, 0x58
+	# ROM: 0x4578D0
+	.asciz "AptScriptColour::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$7871"
 "__PRETTY_FUNCTION__$7871":
-	.incbin "baserom.dol", 0x457928, 0x28
+	# ROM: 0x457928
+	.asciz "AptScriptColour::DestroyGCPointers()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__vt__15AptScriptColour"
 "__vt__15AptScriptColour":
-	.incbin "baserom.dol", 0x457950, 0x48
+	# ROM: 0x457950
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__15AptScriptColourCFP8AptValuePC9EAStringC" ;# ptr (0x8032ECB8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__15AptScriptColourFv" ;# ptr (0x8032F5F8)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__15AptScriptColourCFv" ;# ptr (0x8032F5AC)
+	.4byte "__dt__15AptScriptColourFv" ;# ptr (0x8032EB60)
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D6F38
 lbl_805D6F38:
-	.incbin "baserom.dol", 0x486AB8, 0x8
+	# ROM: 0x486AB8
+	.4byte 0x43494800
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "psMethod_setRGB__15AptScriptColour"
@@ -904,13 +939,22 @@ lbl_805D6F38:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB6D0
 lbl_805DB6D0:
-	.incbin "baserom.dol", 0x4899F0, 0x8
+	# ROM: 0x4899F0
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB6D8
 lbl_805DB6D8:
-	.incbin "baserom.dol", 0x4899F8, 0x8
+	# ROM: 0x4899F8
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB6E0
 lbl_805DB6E0:
-	.incbin "baserom.dol", 0x489A00, 0x4
+	# ROM: 0x489A00
+	.4byte 0x42C80000
+
 .global lbl_805DB6E4
 lbl_805DB6E4:
-	.incbin "baserom.dol", 0x489A04, 0x4
+	# ROM: 0x489A04
+	.4byte 0x437F0000
+

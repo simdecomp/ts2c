@@ -13,7 +13,7 @@
 /* 803503DC 0034C07C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803503E0 0034C080  7C 08 03 A6 */	mtlr r0
 /* 803503E4 0034C084  38 21 00 10 */	addi r1, r1, 0x10
-/* 803503E8 0034C088  4E 80 00 20 */	blr 
+/* 803503E8 0034C088  4E 80 00 20 */	blr
 
 .global "BTE_Init"
 "BTE_Init":
@@ -35,9 +35,12 @@
 /* 80350428 0034C0C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035042C 0034C0CC  7C 08 03 A6 */	mtlr r0
 /* 80350430 0034C0D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80350434 0034C0D4  4E 80 00 20 */	blr 
+/* 80350434 0034C0D4  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "BT_BD_ANY"
 "BT_BD_ANY":
-	.incbin "baserom.dol", 0x489AC0, 0x8
+	# ROM: 0x489AC0
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFF0000
+

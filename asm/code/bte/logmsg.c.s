@@ -50,70 +50,70 @@ lbl_8033E774:
 /* 8033E7E8 0033A488  83 C1 00 78 */	lwz r30, 0x78(r1)
 /* 8033E7EC 0033A48C  7C 08 03 A6 */	mtlr r0
 /* 8033E7F0 0033A490  38 21 00 80 */	addi r1, r1, 0x80
-/* 8033E7F4 0033A494  4E 80 00 20 */	blr 
+/* 8033E7F4 0033A494  4E 80 00 20 */	blr
 
 .global "LogMsg_0"
 "LogMsg_0":
 /* 8033E7F8 0033A498  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E7FC 0033A49C  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E800 0033A4A0  4C 82 00 20 */	bnelr 
+/* 8033E800 0033A4A0  4C 82 00 20 */	bnelr
 /* 8033E804 0033A4A4  4C C6 31 82 */	crclr 6
 /* 8033E808 0033A4A8  4B FF FF 34 */	b "LogMsg"
-/* 8033E80C 0033A4AC  4E 80 00 20 */	blr 
+/* 8033E80C 0033A4AC  4E 80 00 20 */	blr
 
 .global "LogMsg_1"
 "LogMsg_1":
 /* 8033E810 0033A4B0  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E814 0033A4B4  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E818 0033A4B8  4C 82 00 20 */	bnelr 
+/* 8033E818 0033A4B8  4C 82 00 20 */	bnelr
 /* 8033E81C 0033A4BC  4C C6 31 82 */	crclr 6
 /* 8033E820 0033A4C0  4B FF FF 1C */	b "LogMsg"
-/* 8033E824 0033A4C4  4E 80 00 20 */	blr 
+/* 8033E824 0033A4C4  4E 80 00 20 */	blr
 
 .global "LogMsg_2"
 "LogMsg_2":
 /* 8033E828 0033A4C8  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E82C 0033A4CC  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E830 0033A4D0  4C 82 00 20 */	bnelr 
+/* 8033E830 0033A4D0  4C 82 00 20 */	bnelr
 /* 8033E834 0033A4D4  4C C6 31 82 */	crclr 6
 /* 8033E838 0033A4D8  4B FF FF 04 */	b "LogMsg"
-/* 8033E83C 0033A4DC  4E 80 00 20 */	blr 
+/* 8033E83C 0033A4DC  4E 80 00 20 */	blr
 
 .global "LogMsg_3"
 "LogMsg_3":
 /* 8033E840 0033A4E0  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E844 0033A4E4  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E848 0033A4E8  4C 82 00 20 */	bnelr 
+/* 8033E848 0033A4E8  4C 82 00 20 */	bnelr
 /* 8033E84C 0033A4EC  4C C6 31 82 */	crclr 6
 /* 8033E850 0033A4F0  4B FF FE EC */	b "LogMsg"
-/* 8033E854 0033A4F4  4E 80 00 20 */	blr 
+/* 8033E854 0033A4F4  4E 80 00 20 */	blr
 
 .global "LogMsg_4"
 "LogMsg_4":
 /* 8033E858 0033A4F8  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E85C 0033A4FC  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E860 0033A500  4C 82 00 20 */	bnelr 
+/* 8033E860 0033A500  4C 82 00 20 */	bnelr
 /* 8033E864 0033A504  4C C6 31 82 */	crclr 6
 /* 8033E868 0033A508  4B FF FE D4 */	b "LogMsg"
-/* 8033E86C 0033A50C  4E 80 00 20 */	blr 
+/* 8033E86C 0033A50C  4E 80 00 20 */	blr
 
 .global "LogMsg_5"
 "LogMsg_5":
 /* 8033E870 0033A510  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E874 0033A514  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E878 0033A518  4C 82 00 20 */	bnelr 
+/* 8033E878 0033A518  4C 82 00 20 */	bnelr
 /* 8033E87C 0033A51C  4C C6 31 82 */	crclr 6
 /* 8033E880 0033A520  4B FF FE BC */	b "LogMsg"
-/* 8033E884 0033A524  4E 80 00 20 */	blr 
+/* 8033E884 0033A524  4E 80 00 20 */	blr
 
 .global "LogMsg_6"
 "LogMsg_6":
 /* 8033E888 0033A528  88 0D C3 40 */	lbz r0, "bte_target_mode"-_SDA_BASE_(r13)
 /* 8033E88C 0033A52C  2C 00 00 00 */	cmpwi r0, 0
-/* 8033E890 0033A530  4C 82 00 20 */	bnelr 
+/* 8033E890 0033A530  4C 82 00 20 */	bnelr
 /* 8033E894 0033A534  4C C6 31 82 */	crclr 6
 /* 8033E898 0033A538  4B FF FE A4 */	b "LogMsg"
-/* 8033E89C 0033A53C  4E 80 00 20 */	blr 
+/* 8033E89C 0033A53C  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "tmp$2236"
@@ -123,4 +123,7 @@ lbl_8033E774:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D72A8
 lbl_805D72A8:
-	.incbin "baserom.dol", 0x486E28, 0x8
+	# ROM: 0x486E28
+	.4byte 0x25730A00
+	.4byte 0x00000000
+

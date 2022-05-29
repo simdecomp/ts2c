@@ -300,7 +300,7 @@ lbl_803D74D8:
 /* 803D74E0 003D3180  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D74E4 003D3184  7C 08 03 A6 */	mtlr r0
 /* 803D74E8 003D3188  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D74EC 003D318C  4E 80 00 20 */	blr 
+/* 803D74EC 003D318C  4E 80 00 20 */	blr
 
 .global "__MIXRmtResetChannel"
 "__MIXRmtResetChannel":
@@ -325,7 +325,7 @@ lbl_803D74D8:
 /* 803D7538 003D31D8  B0 64 00 2C */	sth r3, 0x2c(r4)
 /* 803D753C 003D31DC  B0 64 00 28 */	sth r3, 0x28(r4)
 /* 803D7540 003D31E0  B0 64 00 24 */	sth r3, 0x24(r4)
-/* 803D7544 003D31E4  4E 80 00 20 */	blr 
+/* 803D7544 003D31E4  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__s_MIXRmtChannel"

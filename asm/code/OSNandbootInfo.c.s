@@ -92,7 +92,7 @@ lbl_803E5CB8:
 /* 803E5CBC 003E195C  83 E1 00 9C */	lwz r31, 0x9c(r1)
 /* 803E5CC0 003E1960  7C 08 03 A6 */	mtlr r0
 /* 803E5CC4 003E1964  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803E5CC8 003E1968  4E 80 00 20 */	blr 
+/* 803E5CC8 003E1968  4E 80 00 20 */	blr
 
 .global "__OSReadNandbootInfo"
 "__OSReadNandbootInfo":
@@ -202,9 +202,13 @@ lbl_803E5E4C:
 /* 803E5E54 003E1AF4  83 C1 00 98 */	lwz r30, 0x98(r1)
 /* 803E5E58 003E1AF8  7C 08 03 A6 */	mtlr r0
 /* 803E5E5C 003E1AFC  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803E5E60 003E1B00  4E 80 00 20 */	blr 
+/* 803E5E60 003E1B00  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80483938
 lbl_80483938:
-	.incbin "baserom.dol", 0x47FA38, 0x20
+	# ROM: 0x47FA38
+	.asciz "/shared2/sys/NANDBOOTINFO"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

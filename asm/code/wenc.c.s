@@ -198,12 +198,32 @@ lbl_803F0CD8:
 /* 803F0CFC 003EC99C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803F0D00 003EC9A0  7C 08 03 A6 */	mtlr r0
 /* 803F0D04 003EC9A4  38 21 00 90 */	addi r1, r1, 0x90
-/* 803F0D08 003EC9A8  4E 80 00 20 */	blr 
+/* 803F0D08 003EC9A8  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
-	.incbin "baserom.dol", 0x41AEA0, 0x40
+	# ROM: 0x41AEA0
+	.4byte 0x3FECC000
+	.4byte 0x00000000
+	.4byte 0x3FECC000
+	.4byte 0x00000000
+	.4byte 0x3FECC000
+	.4byte 0x00000000
+	.4byte 0x3FECC000
+	.4byte 0x00000000
+	.4byte 0x3FF33000
+	.4byte 0x00000000
+	.4byte 0x3FF99000
+	.4byte 0x00000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0x40033000
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBDA0
 lbl_805DBDA0:
-	.incbin "baserom.dol", 0x48A0C0, 0x8
+	# ROM: 0x48A0C0
+	.4byte 0x43300000
+	.4byte 0x80000000
+

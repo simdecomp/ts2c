@@ -54,12 +54,17 @@ lbl_80353EF8:
 /* 80353F04 0034FBA4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80353F08 0034FBA8  7C 08 03 A6 */	mtlr r0
 /* 80353F0C 0034FBAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80353F10 0034FBB0  4E 80 00 20 */	blr 
+/* 80353F10 0034FBB0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804631F8
 lbl_804631F8:
-	.incbin "baserom.dol", 0x45F2F8, 0x18
+	# ROM: 0x45F2F8
+	.asciz "HID - Originate started"
+
 .global lbl_80463210
 lbl_80463210:
-	.incbin "baserom.dol", 0x45F310, 0x18
+	# ROM: 0x45F310
+	.asciz "HID - Originate failed"
+	.byte 0x00
+

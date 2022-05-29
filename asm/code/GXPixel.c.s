@@ -153,7 +153,7 @@ lbl_8037A800:
 /* 8037A8A8 00376548  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8037A8AC 0037654C  7C 08 03 A6 */	mtlr r0
 /* 8037A8B0 00376550  38 21 00 40 */	addi r1, r1, 0x40
-/* 8037A8B4 00376554  4E 80 00 20 */	blr 
+/* 8037A8B4 00376554  4E 80 00 20 */	blr
 
 .global "GXSetFogRangeAdj"
 "GXSetFogRangeAdj":
@@ -230,7 +230,7 @@ lbl_8037A9A4:
 /* 8037A9CC 0037666C  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037A9D0 00376670  38 00 00 00 */	li r0, 0
 /* 8037A9D4 00376674  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037A9D8 00376678  4E 80 00 20 */	blr 
+/* 8037A9D8 00376678  4E 80 00 20 */	blr
 
 .global "GXSetBlendMode"
 "GXSetBlendMode":
@@ -253,7 +253,7 @@ lbl_8037A9A4:
 /* 8037AA1C 003766BC  91 27 80 00 */	stw r9, -0x8000(r7)
 /* 8037AA20 003766C0  91 2A 02 20 */	stw r9, 0x220(r10)
 /* 8037AA24 003766C4  B0 0A 00 02 */	sth r0, 2(r10)
-/* 8037AA28 003766C8  4E 80 00 20 */	blr 
+/* 8037AA28 003766C8  4E 80 00 20 */	blr
 
 .global "GXSetColorUpdate"
 "GXSetColorUpdate":
@@ -267,7 +267,7 @@ lbl_8037A9A4:
 /* 8037AA48 003766E8  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037AA4C 003766EC  90 C7 02 20 */	stw r6, 0x220(r7)
 /* 8037AA50 003766F0  B0 07 00 02 */	sth r0, 2(r7)
-/* 8037AA54 003766F4  4E 80 00 20 */	blr 
+/* 8037AA54 003766F4  4E 80 00 20 */	blr
 
 .global "GXSetAlphaUpdate"
 "GXSetAlphaUpdate":
@@ -281,7 +281,7 @@ lbl_8037A9A4:
 /* 8037AA74 00376714  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037AA78 00376718  90 C7 02 20 */	stw r6, 0x220(r7)
 /* 8037AA7C 0037671C  B0 07 00 02 */	sth r0, 2(r7)
-/* 8037AA80 00376720  4E 80 00 20 */	blr 
+/* 8037AA80 00376720  4E 80 00 20 */	blr
 
 .global "GXSetZMode"
 "GXSetZMode":
@@ -297,7 +297,7 @@ lbl_8037A9A4:
 /* 8037AAA8 00376748  91 06 80 00 */	stw r8, -0x8000(r6)
 /* 8037AAAC 0037674C  91 09 02 28 */	stw r8, 0x228(r9)
 /* 8037AAB0 00376750  B0 09 00 02 */	sth r0, 2(r9)
-/* 8037AAB4 00376754  4E 80 00 20 */	blr 
+/* 8037AAB4 00376754  4E 80 00 20 */	blr
 
 .global "GXSetZCompLoc"
 "GXSetZCompLoc":
@@ -312,7 +312,7 @@ lbl_8037A9A4:
 /* 8037AAD8 00376778  80 67 02 2C */	lwz r3, 0x22c(r7)
 /* 8037AADC 0037677C  90 64 80 00 */	stw r3, -0x8000(r4)
 /* 8037AAE0 00376780  B0 07 00 02 */	sth r0, 2(r7)
-/* 8037AAE4 00376784  4E 80 00 20 */	blr 
+/* 8037AAE4 00376784  4E 80 00 20 */	blr
 
 .global "GXSetPixelFmt"
 "GXSetPixelFmt":
@@ -359,7 +359,7 @@ lbl_8037AB4C:
 lbl_8037AB84:
 /* 8037AB84 00376824  38 00 00 00 */	li r0, 0
 /* 8037AB88 00376828  B0 09 00 02 */	sth r0, 2(r9)
-/* 8037AB8C 0037682C  4E 80 00 20 */	blr 
+/* 8037AB8C 0037682C  4E 80 00 20 */	blr
 
 .global "GXSetDither"
 "GXSetDither":
@@ -373,7 +373,7 @@ lbl_8037AB84:
 /* 8037ABAC 0037684C  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037ABB0 00376850  90 C7 02 20 */	stw r6, 0x220(r7)
 /* 8037ABB4 00376854  B0 07 00 02 */	sth r0, 2(r7)
-/* 8037ABB8 00376858  4E 80 00 20 */	blr 
+/* 8037ABB8 00376858  4E 80 00 20 */	blr
 
 .global "GXSetDstAlpha"
 "GXSetDstAlpha":
@@ -388,7 +388,7 @@ lbl_8037AB84:
 /* 8037ABDC 0037687C  90 E5 80 00 */	stw r7, -0x8000(r5)
 /* 8037ABE0 00376880  90 E8 02 24 */	stw r7, 0x224(r8)
 /* 8037ABE4 00376884  B0 08 00 02 */	sth r0, 2(r8)
-/* 8037ABE8 00376888  4E 80 00 20 */	blr 
+/* 8037ABE8 00376888  4E 80 00 20 */	blr
 
 .global "GXSetFieldMask"
 "GXSetFieldMask":
@@ -404,7 +404,7 @@ lbl_8037AB84:
 /* 8037AC10 003768B0  38 00 00 00 */	li r0, 0
 /* 8037AC14 003768B4  90 C5 80 00 */	stw r6, -0x8000(r5)
 /* 8037AC18 003768B8  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037AC1C 003768BC  4E 80 00 20 */	blr 
+/* 8037AC1C 003768BC  4E 80 00 20 */	blr
 
 .global "GXSetFieldMode"
 "GXSetFieldMode":
@@ -435,35 +435,66 @@ lbl_8037AB84:
 /* 8037AC80 00376920  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8037AC84 00376924  7C 08 03 A6 */	mtlr r0
 /* 8037AC88 00376928  38 21 00 20 */	addi r1, r1, 0x20
-/* 8037AC8C 0037692C  4E 80 00 20 */	blr 
+/* 8037AC8C 0037692C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "p2f$2915"
 "p2f$2915":
-	.incbin "baserom.dol", 0x464238, 0x20
+	# ROM: 0x464238
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000004
+	.4byte 0x00000005
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB850
 lbl_805DB850:
-	.incbin "baserom.dol", 0x489B70, 0x4
+	# ROM: 0x489B70
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB854
 lbl_805DB854:
-	.incbin "baserom.dol", 0x489B74, 0x4
+	# ROM: 0x489B74
+	.4byte 0x3F800000
+
 .global lbl_805DB858
 lbl_805DB858:
-	.incbin "baserom.dol", 0x489B78, 0x8
+	# ROM: 0x489B78
+	.4byte 0x3F000000
+	.4byte 0x00000000
+
 .global lbl_805DB860
 lbl_805DB860:
-	.incbin "baserom.dol", 0x489B80, 0x8
+	# ROM: 0x489B80
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+
 .global lbl_805DB868
 lbl_805DB868:
-	.incbin "baserom.dol", 0x489B88, 0x8
+	# ROM: 0x489B88
+	.4byte 0x40000000
+	.4byte 0x00000000
+
 .global lbl_805DB870
 lbl_805DB870:
-	.incbin "baserom.dol", 0x489B90, 0x8
+	# ROM: 0x489B90
+	.4byte 0x3FE00000
+	.4byte 0x00000000
+
 .global lbl_805DB878
 lbl_805DB878:
-	.incbin "baserom.dol", 0x489B98, 0x8
+	# ROM: 0x489B98
+	.4byte 0x4B00001E
+	.4byte 0x00000000
+
 .global lbl_805DB880
 lbl_805DB880:
-	.incbin "baserom.dol", 0x489BA0, 0x8
+	# ROM: 0x489BA0
+	.4byte 0x43300000
+	.4byte 0x80000000
+

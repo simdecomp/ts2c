@@ -8,7 +8,7 @@
 /* 803D3F30 003CFBD0  90 03 00 00 */	stw r0, 0(r3)
 /* 803D3F34 003CFBD4  90 03 00 04 */	stw r0, 4(r3)
 /* 803D3F38 003CFBD8  B0 03 00 08 */	sth r0, 8(r3)
-/* 803D3F3C 003CFBDC  4E 80 00 20 */	blr 
+/* 803D3F3C 003CFBDC  4E 80 00 20 */	blr
 
 .global "MEMAppendListObject"
 "MEMAppendListObject":
@@ -25,7 +25,7 @@
 /* 803D3F68 003CFC08  38 05 00 01 */	addi r0, r5, 1
 /* 803D3F6C 003CFC0C  90 83 00 04 */	stw r4, 4(r3)
 /* 803D3F70 003CFC10  B0 03 00 08 */	sth r0, 8(r3)
-/* 803D3F74 003CFC14  4E 80 00 20 */	blr 
+/* 803D3F74 003CFC14  4E 80 00 20 */	blr
 lbl_803D3F78:
 /* 803D3F78 003CFC18  A0 C3 00 0A */	lhz r6, 0xa(r3)
 /* 803D3F7C 003CFC1C  38 00 00 00 */	li r0, 0
@@ -40,7 +40,7 @@ lbl_803D3F78:
 /* 803D3FA0 003CFC40  90 83 00 04 */	stw r4, 4(r3)
 /* 803D3FA4 003CFC44  38 05 00 01 */	addi r0, r5, 1
 /* 803D3FA8 003CFC48  B0 03 00 08 */	sth r0, 8(r3)
-/* 803D3FAC 003CFC4C  4E 80 00 20 */	blr 
+/* 803D3FAC 003CFC4C  4E 80 00 20 */	blr
 
 .global "MEMRemoveListObject"
 "MEMRemoveListObject":
@@ -74,16 +74,16 @@ lbl_803D4000:
 /* 803D400C 003CFCAC  A0 83 00 08 */	lhz r4, 8(r3)
 /* 803D4010 003CFCB0  38 04 FF FF */	addi r0, r4, -1
 /* 803D4014 003CFCB4  B0 03 00 08 */	sth r0, 8(r3)
-/* 803D4018 003CFCB8  4E 80 00 20 */	blr 
+/* 803D4018 003CFCB8  4E 80 00 20 */	blr
 
 .global "MEMGetNextListObject"
 "MEMGetNextListObject":
 /* 803D401C 003CFCBC  2C 04 00 00 */	cmpwi r4, 0
 /* 803D4020 003CFCC0  40 82 00 0C */	bne lbl_803D402C
 /* 803D4024 003CFCC4  80 63 00 00 */	lwz r3, 0(r3)
-/* 803D4028 003CFCC8  4E 80 00 20 */	blr 
+/* 803D4028 003CFCC8  4E 80 00 20 */	blr
 lbl_803D402C:
 /* 803D402C 003CFCCC  A0 03 00 0A */	lhz r0, 0xa(r3)
 /* 803D4030 003CFCD0  7C 64 02 14 */	add r3, r4, r0
 /* 803D4034 003CFCD4  80 63 00 04 */	lwz r3, 4(r3)
-/* 803D4038 003CFCD8  4E 80 00 20 */	blr 
+/* 803D4038 003CFCD8  4E 80 00 20 */	blr

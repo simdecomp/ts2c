@@ -8,13 +8,13 @@
 /* 80369988 00365628  80 83 00 38 */	lwz r4, 0x80000038@l(r3)
 /* 8036998C 0036562C  2C 04 00 00 */	cmpwi r4, 0
 /* 80369990 00365630  90 8D C3 98 */	stw r4, "FstStart"-_SDA_BASE_(r13)
-/* 80369994 00365634  4D 82 00 20 */	beqlr 
+/* 80369994 00365634  4D 82 00 20 */	beqlr
 /* 80369998 00365638  80 64 00 08 */	lwz r3, 8(r4)
 /* 8036999C 0036563C  1C 03 00 0C */	mulli r0, r3, 0xc
 /* 803699A0 00365640  90 6D C3 90 */	stw r3, "MaxEntryNum"-_SDA_BASE_(r13)
 /* 803699A4 00365644  7C 04 02 14 */	add r0, r4, r0
 /* 803699A8 00365648  90 0D C3 94 */	stw r0, "FstStringStart"-_SDA_BASE_(r13)
-/* 803699AC 0036564C  4E 80 00 20 */	blr 
+/* 803699AC 0036564C  4E 80 00 20 */	blr
 
 .global "DVDConvertPathToEntrynum"
 "DVDConvertPathToEntrynum":
@@ -251,7 +251,7 @@ lbl_80369CA0:
 /* 80369CA8 00365948  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80369CAC 0036594C  7C 08 03 A6 */	mtlr r0
 /* 80369CB0 00365950  38 21 00 30 */	addi r1, r1, 0x30
-/* 80369CB4 00365954  4E 80 00 20 */	blr 
+/* 80369CB4 00365954  4E 80 00 20 */	blr
 
 .global "DVDFastOpen"
 "DVDFastOpen":
@@ -267,7 +267,7 @@ lbl_80369CA0:
 /* 80369CDC 0036597C  41 82 00 0C */	beq lbl_80369CE8
 lbl_80369CE0:
 /* 80369CE0 00365980  38 60 00 00 */	li r3, 0
-/* 80369CE4 00365984  4E 80 00 20 */	blr 
+/* 80369CE4 00365984  4E 80 00 20 */	blr
 lbl_80369CE8:
 /* 80369CE8 00365988  7C 63 3A 14 */	add r3, r3, r7
 /* 80369CEC 0036598C  80 AD C3 D8 */	lwz r5, "__DVDLayoutFormat"-_SDA_BASE_(r13)
@@ -282,7 +282,7 @@ lbl_80369CE8:
 /* 80369D10 003659B0  90 A4 00 34 */	stw r5, 0x34(r4)
 /* 80369D14 003659B4  90 04 00 38 */	stw r0, 0x38(r4)
 /* 80369D18 003659B8  90 04 00 0C */	stw r0, 0xc(r4)
-/* 80369D1C 003659BC  4E 80 00 20 */	blr 
+/* 80369D1C 003659BC  4E 80 00 20 */	blr
 
 .global "DVDOpen"
 "DVDOpen":
@@ -481,7 +481,7 @@ lbl_80369FB4:
 /* 80369FBC 00365C5C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 80369FC0 00365C60  7C 08 03 A6 */	mtlr r0
 /* 80369FC4 00365C64  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80369FC8 00365C68  4E 80 00 20 */	blr 
+/* 80369FC8 00365C68  4E 80 00 20 */	blr
 
 .global "DVDClose"
 "DVDClose":
@@ -493,7 +493,7 @@ lbl_80369FB4:
 /* 80369FE0 00365C80  38 60 00 01 */	li r3, 1
 /* 80369FE4 00365C84  7C 08 03 A6 */	mtlr r0
 /* 80369FE8 00365C88  38 21 00 10 */	addi r1, r1, 0x10
-/* 80369FEC 00365C8C  4E 80 00 20 */	blr 
+/* 80369FEC 00365C8C  4E 80 00 20 */	blr
 
 .global "entryToPath"
 "entryToPath":
@@ -626,7 +626,7 @@ lbl_8036A198:
 /* 8036A1A0 00365E40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A1A4 00365E44  7C 08 03 A6 */	mtlr r0
 /* 8036A1A8 00365E48  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036A1AC 00365E4C  4E 80 00 20 */	blr 
+/* 8036A1AC 00365E4C  4E 80 00 20 */	blr
 
 .global "DVDReadAsyncPrio"
 "DVDReadAsyncPrio":
@@ -685,16 +685,16 @@ lbl_8036A238:
 /* 8036A270 00365F10  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A274 00365F14  7C 08 03 A6 */	mtlr r0
 /* 8036A278 00365F18  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036A27C 00365F1C  4E 80 00 20 */	blr 
+/* 8036A27C 00365F1C  4E 80 00 20 */	blr
 
 .global "cbForReadAsync"
 "cbForReadAsync":
 /* 8036A280 00365F20  81 84 00 38 */	lwz r12, 0x38(r4)
 /* 8036A284 00365F24  2C 0C 00 00 */	cmpwi r12, 0
-/* 8036A288 00365F28  4D 82 00 20 */	beqlr 
+/* 8036A288 00365F28  4D 82 00 20 */	beqlr
 /* 8036A28C 00365F2C  7D 89 03 A6 */	mtctr r12
-/* 8036A290 00365F30  4E 80 04 20 */	bctr 
-/* 8036A294 00365F34  4E 80 00 20 */	blr 
+/* 8036A290 00365F30  4E 80 04 20 */	bctr
+/* 8036A294 00365F34  4E 80 00 20 */	blr
 
 .global "DVDReadPrio"
 "DVDReadPrio":
@@ -782,7 +782,7 @@ lbl_8036A3A8:
 /* 8036A3B0 00366050  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A3B4 00366054  7C 08 03 A6 */	mtlr r0
 /* 8036A3B8 00366058  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036A3BC 0036605C  4E 80 00 20 */	blr 
+/* 8036A3BC 0036605C  4E 80 00 20 */	blr
 
 .global "cbForReadSync"
 "cbForReadSync":
@@ -790,24 +790,40 @@ lbl_8036A3A8:
 /* 8036A3C4 00366064  48 07 9A 74 */	b "OSWakeupThread"
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x462420, 0xC8
+	# ROM: 0x462420
+	.asciz "DVDConvertEntrynumToPath(possibly DVDOpen or DVDChangeDir or DVDOpenDir): specified directory or file (%s) doesn't match standard 8.3 format. This is a temporary restriction and will be removed soon\n"
+
 .global lbl_804663E8
 lbl_804663E8:
-	.incbin "baserom.dol", 0x4624E8, 0x38
+	# ROM: 0x4624E8
+	.asciz "Warning: DVDOpen(): file '%s' was not found under %s.\n"
+	.byte 0x00
+
 .global lbl_80466420
 lbl_80466420:
-	.incbin "baserom.dol", 0x462520, 0x34
+	# ROM: 0x462520
+	.asciz "DVDReadAsync(): specified area is out of the file  "
+
 .global lbl_80466454
 lbl_80466454:
-	.incbin "baserom.dol", 0x462554, 0x34
+	# ROM: 0x462554
+	.asciz "DVDRead(): specified area is out of the file  "
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__DVDLongFileNameFlag"
 "__DVDLongFileNameFlag":
-	.incbin "baserom.dol", 0x486E90, 0x8
+	# ROM: 0x486E90
+	.4byte 0x00000001
+	.4byte 0x00000000
+
 .global lbl_805D7318
 lbl_805D7318:
-	.incbin "baserom.dol", 0x486E98, 0x8
+	# ROM: 0x486E98
+	.asciz "dvdfs.c"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "currentDirectory"

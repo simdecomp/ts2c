@@ -8,23 +8,23 @@
 /* 80004004 00000104  A0 03 30 E4 */	lhz r0, 0x800030E4@l(r3)
 /* 80004008 00000108  70 00 0E EF */	andi. r0, r0, 0xeef
 /* 8000400C 0000010C  2C 00 0E EF */	cmpwi r0, 0xeef
-/* 80004010 00000110  4C 82 00 20 */	bnelr 
+/* 80004010 00000110  4C 82 00 20 */	bnelr
 /* 80004014 00000114  38 60 00 00 */	li r3, 0
 /* 80004018 00000118  38 80 00 00 */	li r4, 0
 /* 8000401C 0000011C  38 A0 00 00 */	li r5, 0
 /* 80004020 00000120  48 3D DF 34 */	b "OSResetSystem"
-/* 80004024 00000124  4E 80 00 20 */	blr 
+/* 80004024 00000124  4E 80 00 20 */	blr
 
 .global "__set_debug_bba"
 "__set_debug_bba":
 /* 80004028 00000128  38 00 00 01 */	li r0, 1
 /* 8000402C 0000012C  98 0D C7 A8 */	stb r0, "Debug_BBA"-_SDA_BASE_(r13)
-/* 80004030 00000130  4E 80 00 20 */	blr 
+/* 80004030 00000130  4E 80 00 20 */	blr
 
 .global "__get_debug_bba"
 "__get_debug_bba":
 /* 80004034 00000134  88 6D C7 A8 */	lbz r3, "Debug_BBA"-_SDA_BASE_(r13)
-/* 80004038 00000138  4E 80 00 20 */	blr 
+/* 80004038 00000138  4E 80 00 20 */	blr
 
 .global "__start"
 "__start":
@@ -71,7 +71,7 @@ lbl_800040D0:
 /* 800040D0 000001D0  3C C0 80 41 */	lis r6, "InitMetroTRK"@ha
 /* 800040D4 000001D4  38 C6 43 78 */	addi r6, r6, "InitMetroTRK"@l
 /* 800040D8 000001D8  7C C8 03 A6 */	mtlr r6
-/* 800040DC 000001DC  4E 80 00 21 */	blrl 
+/* 800040DC 000001DC  4E 80 00 21 */	blrl
 lbl_800040E0:
 /* 800040E0 000001E0  3C C0 80 00 */	lis r6, 0x800000F4@ha
 /* 800040E4 000001E4  38 C6 00 F4 */	addi r6, r6, 0x800000F4@l
@@ -167,7 +167,7 @@ lbl_80004194:
 /* 80004228 00000328  60 42 12 20 */	ori r2, r2, "_SDA2_BASE_"@l
 /* 8000422C 0000032C  3D A0 80 5D */	lis r13, "_SDA_BASE_"@h
 /* 80004230 00000330  61 AD C6 E0 */	ori r13, r13, "_SDA_BASE_"@l
-/* 80004234 00000334  4E 80 00 20 */	blr 
+/* 80004234 00000334  4E 80 00 20 */	blr
 
 .global "__init_data"
 "__init_data":
@@ -218,7 +218,7 @@ lbl_800042C4:
 /* 800042D0 000003D0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800042D4 000003D4  7C 08 03 A6 */	mtlr r0
 /* 800042D8 000003D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 800042DC 000003DC  4E 80 00 20 */	blr 
+/* 800042DC 000003DC  4E 80 00 20 */	blr
 
 .global "__init_hardware"
 "__init_hardware":
@@ -230,7 +230,7 @@ lbl_800042C4:
 /* 800042F4 000003F4  48 3D 5C C1 */	bl "__OSFPRInit"
 /* 800042F8 000003F8  48 3D 84 01 */	bl "__OSCacheInit"
 /* 800042FC 000003FC  7F E8 03 A6 */	mtlr r31
-/* 80004300 00000400  4E 80 00 20 */	blr 
+/* 80004300 00000400  4E 80 00 20 */	blr
 
 .global "__flush_cache"
 "__flush_cache":
@@ -246,8 +246,8 @@ lbl_80004318:
 /* 80004324 00000424  30 A5 00 08 */	addic r5, r5, 8
 /* 80004328 00000428  34 84 FF F8 */	addic. r4, r4, -8
 /* 8000432C 0000042C  40 80 FF EC */	bge lbl_80004318
-/* 80004330 00000430  4C 00 01 2C */	isync 
-/* 80004334 00000434  4E 80 00 20 */	blr 
+/* 80004330 00000430  4C 00 01 2C */	isync
+/* 80004334 00000434  4E 80 00 20 */	blr
 
 .global "memcpy"
 "memcpy":
@@ -263,7 +263,7 @@ lbl_80004350:
 lbl_80004358:
 /* 80004358 00000458  34 A5 FF FF */	addic. r5, r5, -1
 /* 8000435C 0000045C  40 82 FF F4 */	bne lbl_80004350
-/* 80004360 00000460  4E 80 00 20 */	blr 
+/* 80004360 00000460  4E 80 00 20 */	blr
 lbl_80004364:
 /* 80004364 00000464  7C 84 2A 14 */	add r4, r4, r5
 /* 80004368 00000468  7C C3 2A 14 */	add r6, r3, r5
@@ -275,7 +275,7 @@ lbl_80004374:
 lbl_8000437C:
 /* 8000437C 0000047C  34 A5 FF FF */	addic. r5, r5, -1
 /* 80004380 00000480  40 82 FF F4 */	bne lbl_80004374
-/* 80004384 00000484  4E 80 00 20 */	blr 
+/* 80004384 00000484  4E 80 00 20 */	blr
 
 .global "__fill_mem"
 "__fill_mem":
@@ -327,12 +327,12 @@ lbl_8000441C:
 /* 80004420 00000520  54 A5 07 BE */	clrlwi r5, r5, 0x1e
 lbl_80004424:
 /* 80004424 00000524  2C 05 00 00 */	cmpwi r5, 0
-/* 80004428 00000528  4D 82 00 20 */	beqlr 
+/* 80004428 00000528  4D 82 00 20 */	beqlr
 lbl_8000442C:
 /* 8000442C 0000052C  34 A5 FF FF */	addic. r5, r5, -1
 /* 80004430 00000530  9C E6 00 01 */	stbu r7, 1(r6)
 /* 80004434 00000534  40 82 FF F8 */	bne lbl_8000442C
-/* 80004438 00000538  4E 80 00 20 */	blr 
+/* 80004438 00000538  4E 80 00 20 */	blr
 
 .global "memset"
 "memset":
@@ -347,7 +347,7 @@ lbl_8000442C:
 /* 8000445C 0000055C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80004460 00000560  7C 08 03 A6 */	mtlr r0
 /* 80004464 00000564  38 21 00 10 */	addi r1, r1, 0x10
-/* 80004468 00000568  4E 80 00 20 */	blr 
+/* 80004468 00000568  4E 80 00 20 */	blr
 
 .global "TRK_memset"
 "TRK_memset":
@@ -362,7 +362,7 @@ lbl_8000442C:
 /* 8000448C 0000058C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80004490 00000590  7C 08 03 A6 */	mtlr r0
 /* 80004494 00000594  38 21 00 10 */	addi r1, r1, 0x10
-/* 80004498 00000598  4E 80 00 20 */	blr 
+/* 80004498 00000598  4E 80 00 20 */	blr
 
 .global "TRK_memcpy"
 "TRK_memcpy":
@@ -376,7 +376,7 @@ lbl_800044AC:
 lbl_800044B4:
 /* 800044B4 000005B4  34 A5 FF FF */	addic. r5, r5, -1
 /* 800044B8 000005B8  40 82 FF F4 */	bne lbl_800044AC
-/* 800044BC 000005BC  4E 80 00 20 */	blr 
+/* 800044BC 000005BC  4E 80 00 20 */	blr
 
 .global "gTRKInterruptVectorTable"
 "gTRKInterruptVectorTable":
@@ -527,7 +527,7 @@ lbl_800044EC:
 /* 800046FC 000007FC  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80004700 00000800  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80004704 00000804  38 60 02 00 */	li r3, 0x200
-/* 80004708 00000808  4C 00 00 64 */	rfi 
+/* 80004708 00000808  4C 00 00 64 */	rfi
 /* 8000470C 0000080C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004710 00000810  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004714 00000814  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -585,7 +585,7 @@ lbl_800044EC:
 /* 800047E4 000008E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800047E8 000008E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800047EC 000008EC  38 60 03 00 */	li r3, 0x300
-/* 800047F0 000008F0  4C 00 00 64 */	rfi 
+/* 800047F0 000008F0  4C 00 00 64 */	rfi
 /* 800047F4 000008F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800047F8 000008F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800047FC 000008FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -649,7 +649,7 @@ lbl_800044EC:
 /* 800048E4 000009E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800048E8 000009E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800048EC 000009EC  38 60 04 00 */	li r3, 0x400
-/* 800048F0 000009F0  4C 00 00 64 */	rfi 
+/* 800048F0 000009F0  4C 00 00 64 */	rfi
 /* 800048F4 000009F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800048F8 000009F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800048FC 000009FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -713,7 +713,7 @@ lbl_800044EC:
 /* 800049E4 00000AE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800049E8 00000AE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800049EC 00000AEC  38 60 05 00 */	li r3, 0x500
-/* 800049F0 00000AF0  4C 00 00 64 */	rfi 
+/* 800049F0 00000AF0  4C 00 00 64 */	rfi
 /* 800049F4 00000AF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800049F8 00000AF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800049FC 00000AFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -777,7 +777,7 @@ lbl_800044EC:
 /* 80004AE4 00000BE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80004AE8 00000BE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80004AEC 00000BEC  38 60 06 00 */	li r3, 0x600
-/* 80004AF0 00000BF0  4C 00 00 64 */	rfi 
+/* 80004AF0 00000BF0  4C 00 00 64 */	rfi
 /* 80004AF4 00000BF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004AF8 00000BF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004AFC 00000BFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -841,7 +841,7 @@ lbl_800044EC:
 /* 80004BE4 00000CE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80004BE8 00000CE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80004BEC 00000CEC  38 60 07 00 */	li r3, 0x700
-/* 80004BF0 00000CF0  4C 00 00 64 */	rfi 
+/* 80004BF0 00000CF0  4C 00 00 64 */	rfi
 /* 80004BF4 00000CF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004BF8 00000CF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004BFC 00000CFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -905,7 +905,7 @@ lbl_800044EC:
 /* 80004CE4 00000DE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80004CE8 00000DE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80004CEC 00000DEC  38 60 08 00 */	li r3, 0x800
-/* 80004CF0 00000DF0  4C 00 00 64 */	rfi 
+/* 80004CF0 00000DF0  4C 00 00 64 */	rfi
 /* 80004CF4 00000DF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004CF8 00000DF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004CFC 00000DFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -969,7 +969,7 @@ lbl_800044EC:
 /* 80004DE4 00000EE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80004DE8 00000EE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80004DEC 00000EEC  38 60 09 00 */	li r3, 0x900
-/* 80004DF0 00000EF0  4C 00 00 64 */	rfi 
+/* 80004DF0 00000EF0  4C 00 00 64 */	rfi
 /* 80004DF4 00000EF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004DF8 00000EF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80004DFC 00000EFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1161,7 +1161,7 @@ lbl_800044EC:
 /* 800050E4 000011E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800050E8 000011E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800050EC 000011EC  38 60 0C 00 */	li r3, 0xc00
-/* 800050F0 000011F0  4C 00 00 64 */	rfi 
+/* 800050F0 000011F0  4C 00 00 64 */	rfi
 /* 800050F4 000011F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800050F8 000011F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800050FC 000011FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1225,7 +1225,7 @@ lbl_800044EC:
 /* 800051E4 000012E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800051E8 000012E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800051EC 000012EC  38 60 0D 00 */	li r3, 0xd00
-/* 800051F0 000012F0  4C 00 00 64 */	rfi 
+/* 800051F0 000012F0  4C 00 00 64 */	rfi
 /* 800051F4 000012F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800051F8 000012F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800051FC 000012FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1289,7 +1289,7 @@ lbl_800044EC:
 /* 800052E4 000013E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800052E8 000013E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800052EC 000013EC  38 60 0E 00 */	li r3, 0xe00
-/* 800052F0 000013F0  4C 00 00 64 */	rfi 
+/* 800052F0 000013F0  4C 00 00 64 */	rfi
 /* 800052F4 000013F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800052F8 000013F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800052FC 000013FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1361,7 +1361,7 @@ lbl_800044EC:
 /* 80005404 00001504  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005408 00001508  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 8000540C 0000150C  38 60 0F 20 */	li r3, 0xf20
-/* 80005410 00001510  4C 00 00 64 */	rfi 
+/* 80005410 00001510  4C 00 00 64 */	rfi
 lbl_80005414:
 /* 80005414 00001514  7C 51 43 A6 */	mtspr 0x111, r2
 /* 80005418 00001518  7C 72 43 A6 */	mtspr 0x112, r3
@@ -1375,7 +1375,7 @@ lbl_80005414:
 /* 80005438 00001538  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 8000543C 0000153C  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005440 00001540  38 60 0F 00 */	li r3, 0xf00
-/* 80005444 00001544  4C 00 00 64 */	rfi 
+/* 80005444 00001544  4C 00 00 64 */	rfi
 /* 80005448 00001548  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 8000544C 0000154C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005450 00001550  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1434,7 +1434,7 @@ lbl_800054F0:
 /* 80005520 00001620  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005524 00001624  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005528 00001628  38 60 10 00 */	li r3, 0x1000
-/* 8000552C 0000162C  4C 00 00 64 */	rfi 
+/* 8000552C 0000162C  4C 00 00 64 */	rfi
 /* 80005530 00001630  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005534 00001634  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005538 00001638  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1499,7 +1499,7 @@ lbl_800055F0:
 /* 80005620 00001720  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005624 00001724  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005628 00001728  38 60 11 00 */	li r3, 0x1100
-/* 8000562C 0000172C  4C 00 00 64 */	rfi 
+/* 8000562C 0000172C  4C 00 00 64 */	rfi
 /* 80005630 00001730  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005634 00001734  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005638 00001738  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1564,7 +1564,7 @@ lbl_800056F0:
 /* 80005720 00001820  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005724 00001824  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005728 00001828  38 60 12 00 */	li r3, 0x1200
-/* 8000572C 0000182C  4C 00 00 64 */	rfi 
+/* 8000572C 0000182C  4C 00 00 64 */	rfi
 /* 80005730 00001830  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005734 00001834  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005738 00001838  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1613,7 +1613,7 @@ lbl_800056F0:
 /* 800057E4 000018E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800057E8 000018E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800057EC 000018EC  38 60 13 00 */	li r3, 0x1300
-/* 800057F0 000018F0  4C 00 00 64 */	rfi 
+/* 800057F0 000018F0  4C 00 00 64 */	rfi
 /* 800057F4 000018F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800057F8 000018F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800057FC 000018FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1677,7 +1677,7 @@ lbl_800056F0:
 /* 800058E4 000019E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800058E8 000019E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800058EC 000019EC  38 60 14 00 */	li r3, 0x1400
-/* 800058F0 000019F0  4C 00 00 64 */	rfi 
+/* 800058F0 000019F0  4C 00 00 64 */	rfi
 /* 800058F4 000019F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800058F8 000019F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800058FC 000019FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1805,7 +1805,7 @@ lbl_800056F0:
 /* 80005AE4 00001BE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005AE8 00001BE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005AEC 00001BEC  38 60 16 00 */	li r3, 0x1600
-/* 80005AF0 00001BF0  4C 00 00 64 */	rfi 
+/* 80005AF0 00001BF0  4C 00 00 64 */	rfi
 /* 80005AF4 00001BF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005AF8 00001BF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005AFC 00001BFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -1869,7 +1869,7 @@ lbl_800056F0:
 /* 80005BE4 00001CE4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 80005BE8 00001CE8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 80005BEC 00001CEC  38 60 17 00 */	li r3, 0x1700
-/* 80005BF0 00001CF0  4C 00 00 64 */	rfi 
+/* 80005BF0 00001CF0  4C 00 00 64 */	rfi
 /* 80005BF4 00001CF4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005BF8 00001CF8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 80005BFC 00001CFC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -2189,7 +2189,7 @@ lbl_800056F0:
 /* 800060E4 000021E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800060E8 000021E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800060EC 000021EC  38 60 1C 00 */	li r3, 0x1c00
-/* 800060F0 000021F0  4C 00 00 64 */	rfi 
+/* 800060F0 000021F0  4C 00 00 64 */	rfi
 /* 800060F4 000021F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800060F8 000021F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800060FC 000021FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -2253,7 +2253,7 @@ lbl_800056F0:
 /* 800061E4 000022E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800061E8 000022E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800061EC 000022EC  38 60 1D 00 */	li r3, 0x1d00
-/* 800061F0 000022F0  4C 00 00 64 */	rfi 
+/* 800061F0 000022F0  4C 00 00 64 */	rfi
 /* 800061F4 000022F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800061F8 000022F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800061FC 000022FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -2317,7 +2317,7 @@ lbl_800056F0:
 /* 800062E4 000023E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800062E8 000023E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800062EC 000023EC  38 60 1E 00 */	li r3, 0x1e00
-/* 800062F0 000023F0  4C 00 00 64 */	rfi 
+/* 800062F0 000023F0  4C 00 00 64 */	rfi
 /* 800062F4 000023F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800062F8 000023F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800062FC 000023FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
@@ -2381,7 +2381,7 @@ lbl_800056F0:
 /* 800063E4 000024E4  60 63 24 A0 */	ori r3, r3, "TRKInterruptHandler"@l
 /* 800063E8 000024E8  7C 7A 03 A6 */	mtspr 0x1a, r3
 /* 800063EC 000024EC  38 60 1F 00 */	li r3, 0x1f00
-/* 800063F0 000024F0  4C 00 00 64 */	rfi 
+/* 800063F0 000024F0  4C 00 00 64 */	rfi
 
 .global "__TRK_reset"
 "__TRK_reset":
@@ -2395,7 +2395,7 @@ lbl_800056F0:
 /* 80006410 00002510  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80006414 00002514  7C 08 03 A6 */	mtlr r0
 /* 80006418 00002518  38 21 00 10 */	addi r1, r1, 0x10
-/* 8000641C 0000251C  4E 80 00 20 */	blr 
+/* 8000641C 0000251C  4E 80 00 20 */	blr
 
 .global "rom_copy_info"
 "rom_copy_info":
@@ -2436,7 +2436,7 @@ lbl_800056F0:
 .global "bss_init_info"
 "bss_init_info":
 /* 800064A4 000025A4  80 48 81 80 */	.4byte _f_bss
-/* 800064A8 000025A8  00 14 C5 4C */	.4byte 0x0014C54C 
+/* 800064A8 000025A8  00 14 C5 4C */	.4byte 0x0014C54C
 /* 800064AC 000025AC  80 5D 79 C0 */	.4byte _f_sbss
 /* 800064B0 000025B0  00 00 18 44 */	.4byte 0x00001844
 /* 800064B4 000025B4  80 5D C4 20 */	.4byte _f_sbss2

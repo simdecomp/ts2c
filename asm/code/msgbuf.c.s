@@ -69,7 +69,7 @@ lbl_80410028:
 /* 8041002C 0040BCCC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80410030 0040BCD0  7C 08 03 A6 */	mtlr r0
 /* 80410034 0040BCD4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80410038 0040BCD8  4E 80 00 20 */	blr 
+/* 80410038 0040BCD8  4E 80 00 20 */	blr
 
 .global "TRKReadBuffer_ui8"
 "TRKReadBuffer_ui8":
@@ -114,7 +114,7 @@ lbl_804100C0:
 /* 804100C4 0040BD64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804100C8 0040BD68  7C 08 03 A6 */	mtlr r0
 /* 804100CC 0040BD6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 804100D0 0040BD70  4E 80 00 20 */	blr 
+/* 804100D0 0040BD70  4E 80 00 20 */	blr
 
 .global "TRKReadBuffer1_ui64"
 "TRKReadBuffer1_ui64":
@@ -179,7 +179,7 @@ lbl_804101A4:
 /* 804101AC 0040BE4C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 804101B0 0040BE50  7C 08 03 A6 */	mtlr r0
 /* 804101B4 0040BE54  38 21 00 30 */	addi r1, r1, 0x30
-/* 804101B8 0040BE58  4E 80 00 20 */	blr 
+/* 804101B8 0040BE58  4E 80 00 20 */	blr
 
 .global "TRKAppendBuffer_ui32"
 "TRKAppendBuffer_ui32":
@@ -253,7 +253,7 @@ lbl_804102A4:
 /* 804102A8 0040BF48  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 804102AC 0040BF4C  7C 08 03 A6 */	mtlr r0
 /* 804102B0 0040BF50  38 21 00 30 */	addi r1, r1, 0x30
-/* 804102B4 0040BF54  4E 80 00 20 */	blr 
+/* 804102B4 0040BF54  4E 80 00 20 */	blr
 
 .global "TRKAppendBuffer_ui8"
 "TRKAppendBuffer_ui8":
@@ -287,7 +287,7 @@ lbl_80410308:
 /* 80410314 0040BFB4  41 80 FF B0 */	blt lbl_804102C4
 lbl_80410318:
 /* 80410318 0040BFB8  7C 03 03 78 */	mr r3, r0
-/* 8041031C 0040BFBC  4E 80 00 20 */	blr 
+/* 8041031C 0040BFBC  4E 80 00 20 */	blr
 
 .global "TRKAppendBuffer1_ui64"
 "TRKAppendBuffer1_ui64":
@@ -358,7 +358,7 @@ lbl_804103E8:
 /* 8041040C 0040C0AC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80410410 0040C0B0  7C 08 03 A6 */	mtlr r0
 /* 80410414 0040C0B4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80410418 0040C0B8  4E 80 00 20 */	blr 
+/* 80410418 0040C0B8  4E 80 00 20 */	blr
 
 .global "TRKReadBuffer"
 "TRKReadBuffer":
@@ -399,7 +399,7 @@ lbl_8041048C:
 /* 80410498 0040C138  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8041049C 0040C13C  7C 08 03 A6 */	mtlr r0
 /* 804104A0 0040C140  38 21 00 20 */	addi r1, r1, 0x20
-/* 804104A4 0040C144  4E 80 00 20 */	blr 
+/* 804104A4 0040C144  4E 80 00 20 */	blr
 
 .global "TRKAppendBuffer"
 "TRKAppendBuffer":
@@ -448,7 +448,7 @@ lbl_80410530:
 /* 8041053C 0040C1DC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80410540 0040C1E0  7C 08 03 A6 */	mtlr r0
 /* 80410544 0040C1E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80410548 0040C1E8  4E 80 00 20 */	blr 
+/* 80410548 0040C1E8  4E 80 00 20 */	blr
 
 .global "TRKSetBufferPosition"
 "TRKSetBufferPosition":
@@ -465,7 +465,7 @@ lbl_80410560:
 /* 80410570 0040C210  90 83 00 08 */	stw r4, 8(r3)
 lbl_80410574:
 /* 80410574 0040C214  7C A3 2B 78 */	mr r3, r5
-/* 80410578 0040C218  4E 80 00 20 */	blr 
+/* 80410578 0040C218  4E 80 00 20 */	blr
 
 .global "TRKResetBuffer"
 "TRKResetBuffer":
@@ -485,7 +485,7 @@ lbl_804105AC:
 /* 804105AC 0040C24C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804105B0 0040C250  7C 08 03 A6 */	mtlr r0
 /* 804105B4 0040C254  38 21 00 10 */	addi r1, r1, 0x10
-/* 804105B8 0040C258  4E 80 00 20 */	blr 
+/* 804105B8 0040C258  4E 80 00 20 */	blr
 
 .global "TRKReleaseBuffer"
 "TRKReleaseBuffer":
@@ -514,7 +514,7 @@ lbl_8041060C:
 /* 80410610 0040C2B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80410614 0040C2B4  7C 08 03 A6 */	mtlr r0
 /* 80410618 0040C2B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8041061C 0040C2BC  4E 80 00 20 */	blr 
+/* 8041061C 0040C2BC  4E 80 00 20 */	blr
 
 .global "TRKGetBuffer"
 "TRKGetBuffer":
@@ -529,7 +529,7 @@ lbl_8041060C:
 /* 80410640 0040C2E0  7C 00 22 14 */	add r0, r0, r4
 lbl_80410644:
 /* 80410644 0040C2E4  7C 03 03 78 */	mr r3, r0
-/* 80410648 0040C2E8  4E 80 00 20 */	blr 
+/* 80410648 0040C2E8  4E 80 00 20 */	blr
 
 .global "TRKGetFreeBuffer"
 "TRKGetFreeBuffer":
@@ -587,7 +587,7 @@ lbl_804106FC:
 /* 80410704 0040C3A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80410708 0040C3A8  7C 08 03 A6 */	mtlr r0
 /* 8041070C 0040C3AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80410710 0040C3B0  4E 80 00 20 */	blr 
+/* 80410710 0040C3B0  4E 80 00 20 */	blr
 
 .global "TRKInitializeMessageBuffers"
 "TRKInitializeMessageBuffers":
@@ -620,12 +620,15 @@ lbl_8041073C:
 /* 80410778 0040C418  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8041077C 0040C41C  7C 08 03 A6 */	mtlr r0
 /* 80410780 0040C420  38 21 00 20 */	addi r1, r1, 0x20
-/* 80410784 0040C424  4E 80 00 20 */	blr 
+/* 80410784 0040C424  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041FDD8
 lbl_8041FDD8:
-	.incbin "baserom.dol", 0x41BED8, 0x20
+	# ROM: 0x41BED8
+	.asciz "ERROR : No buffer available\n"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gTRKMsgBufs"

@@ -6,7 +6,7 @@
 /* 8032DEE0 00329B80  3C 80 80 54 */	lis r4, "gAptFuncs"@ha
 /* 8032DEE4 00329B84  81 84 12 68 */	lwz r12, "gAptFuncs"@l(r4)
 /* 8032DEE8 00329B88  7D 89 03 A6 */	mtctr r12
-/* 8032DEEC 00329B8C  4E 80 04 20 */	bctr 
+/* 8032DEEC 00329B8C  4E 80 04 20 */	bctr
 
 .global "__dl__17DOGMA_PoolManagerFPvUl"
 "__dl__17DOGMA_PoolManagerFPvUl":
@@ -14,7 +14,7 @@
 /* 8032DEF4 00329B94  38 A5 12 68 */	addi r5, r5, "gAptFuncs"@l
 /* 8032DEF8 00329B98  81 85 00 08 */	lwz r12, 8(r5)
 /* 8032DEFC 00329B9C  7D 89 03 A6 */	mtctr r12
-/* 8032DF00 00329BA0  4E 80 04 20 */	bctr 
+/* 8032DF00 00329BA0  4E 80 04 20 */	bctr
 
 .global "__ct__17DOGMA_PoolManagerFUlUlUlUlUcbUcbUcb"
 "__ct__17DOGMA_PoolManagerFUlUlUlUlUcbUcbUcb":
@@ -48,7 +48,7 @@
 /* 8032DF70 00329C10  38 67 00 04 */	addi r3, r7, 4
 /* 8032DF74 00329C14  81 86 12 68 */	lwz r12, "gAptFuncs"@l(r6)
 /* 8032DF78 00329C18  7D 89 03 A6 */	mtctr r12
-/* 8032DF7C 00329C1C  4E 80 04 21 */	bctrl 
+/* 8032DF7C 00329C1C  4E 80 04 21 */	bctrl
 /* 8032DF80 00329C20  28 1B 00 10 */	cmplwi r27, 0x10
 /* 8032DF84 00329C24  90 7A 00 00 */	stw r3, 0(r26)
 /* 8032DF88 00329C28  40 80 00 08 */	bge lbl_8032DF90
@@ -58,7 +58,7 @@ lbl_8032DF90:
 /* 8032DF94 00329C34  7F 63 DB 78 */	mr r3, r27
 /* 8032DF98 00329C38  81 84 12 68 */	lwz r12, "gAptFuncs"@l(r4)
 /* 8032DF9C 00329C3C  7D 89 03 A6 */	mtctr r12
-/* 8032DFA0 00329C40  4E 80 04 21 */	bctrl 
+/* 8032DFA0 00329C40  4E 80 04 21 */	bctrl
 /* 8032DFA4 00329C44  80 BA 00 0C */	lwz r5, 0xc(r26)
 /* 8032DFA8 00329C48  38 80 00 00 */	li r4, 0
 /* 8032DFAC 00329C4C  90 7A 00 04 */	stw r3, 4(r26)
@@ -89,7 +89,7 @@ lbl_8032DFF4:
 /* 8032E00C 00329CAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032E010 00329CB0  7C 08 03 A6 */	mtlr r0
 /* 8032E014 00329CB4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E018 00329CB8  4E 80 00 20 */	blr 
+/* 8032E018 00329CB8  4E 80 00 20 */	blr
 
 .global "__dt__17DOGMA_PoolManagerFv"
 "__dt__17DOGMA_PoolManagerFv":
@@ -109,7 +109,7 @@ lbl_8032DFF4:
 /* 8032E050 00329CF0  81 9F 00 08 */	lwz r12, 8(r31)
 /* 8032E054 00329CF4  38 85 00 04 */	addi r4, r5, 4
 /* 8032E058 00329CF8  7D 89 03 A6 */	mtctr r12
-/* 8032E05C 00329CFC  4E 80 04 21 */	bctrl 
+/* 8032E05C 00329CFC  4E 80 04 21 */	bctrl
 /* 8032E060 00329D00  83 DB 00 04 */	lwz r30, 4(r27)
 lbl_8032E064:
 /* 8032E064 00329D04  7F C3 F3 78 */	mr r3, r30
@@ -118,7 +118,7 @@ lbl_8032E064:
 /* 8032E070 00329D10  7C 7D 1B 78 */	mr r29, r3
 /* 8032E074 00329D14  7F C3 F3 78 */	mr r3, r30
 /* 8032E078 00329D18  7D 89 03 A6 */	mtctr r12
-/* 8032E07C 00329D1C  4E 80 04 21 */	bctrl 
+/* 8032E07C 00329D1C  4E 80 04 21 */	bctrl
 /* 8032E080 00329D20  2C 1D 00 00 */	cmpwi r29, 0
 /* 8032E084 00329D24  7F BE EB 78 */	mr r30, r29
 /* 8032E088 00329D28  40 82 FF DC */	bne lbl_8032E064
@@ -130,7 +130,7 @@ lbl_8032E09C:
 /* 8032E09C 00329D3C  81 9F 00 04 */	lwz r12, 4(r31)
 /* 8032E0A0 00329D40  83 A3 00 00 */	lwz r29, 0(r3)
 /* 8032E0A4 00329D44  7D 89 03 A6 */	mtctr r12
-/* 8032E0A8 00329D48  4E 80 04 21 */	bctrl 
+/* 8032E0A8 00329D48  4E 80 04 21 */	bctrl
 /* 8032E0AC 00329D4C  7F A3 EB 78 */	mr r3, r29
 lbl_8032E0B0:
 /* 8032E0B0 00329D50  2C 03 00 00 */	cmpwi r3, 0
@@ -147,7 +147,7 @@ lbl_8032E0CC:
 /* 8032E0D8 00329D78  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032E0DC 00329D7C  7C 08 03 A6 */	mtlr r0
 /* 8032E0E0 00329D80  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E0E4 00329D84  4E 80 00 20 */	blr 
+/* 8032E0E4 00329D84  4E 80 00 20 */	blr
 
 .global "GetFirstOutsideAllocation__17DOGMA_PoolManagerFv"
 "GetFirstOutsideAllocation__17DOGMA_PoolManagerFv":
@@ -155,10 +155,10 @@ lbl_8032E0CC:
 /* 8032E0EC 00329D8C  2C 03 00 00 */	cmpwi r3, 0
 /* 8032E0F0 00329D90  40 82 00 0C */	bne lbl_8032E0FC
 /* 8032E0F4 00329D94  38 60 00 00 */	li r3, 0
-/* 8032E0F8 00329D98  4E 80 00 20 */	blr 
+/* 8032E0F8 00329D98  4E 80 00 20 */	blr
 lbl_8032E0FC:
 /* 8032E0FC 00329D9C  48 00 03 54 */	b "GetReturnedPointer__Q217DOGMA_PoolManager19_OutsideAllocationTFv"
-/* 8032E100 00329DA0  4E 80 00 20 */	blr 
+/* 8032E100 00329DA0  4E 80 00 20 */	blr
 
 .global "GetNextOutsideAllocation__17DOGMA_PoolManagerFPCv"
 "GetNextOutsideAllocation__17DOGMA_PoolManagerFPCv":
@@ -178,7 +178,7 @@ lbl_8032E130:
 /* 8032E130 00329DD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032E134 00329DD4  7C 08 03 A6 */	mtlr r0
 /* 8032E138 00329DD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E13C 00329DDC  4E 80 00 20 */	blr 
+/* 8032E13C 00329DDC  4E 80 00 20 */	blr
 
 .global "Allocate__17DOGMA_PoolManagerFUl"
 "Allocate__17DOGMA_PoolManagerFUl":
@@ -203,7 +203,7 @@ lbl_8032E130:
 /* 8032E188 00329E28  7C 7E 1A 14 */	add r3, r30, r3
 /* 8032E18C 00329E2C  81 84 12 68 */	lwz r12, "gAptFuncs"@l(r4)
 /* 8032E190 00329E30  7D 89 03 A6 */	mtctr r12
-/* 8032E194 00329E34  4E 80 04 21 */	bctrl 
+/* 8032E194 00329E34  4E 80 04 21 */	bctrl
 /* 8032E198 00329E38  38 00 00 00 */	li r0, 0
 /* 8032E19C 00329E3C  90 03 00 04 */	stw r0, 4(r3)
 /* 8032E1A0 00329E40  80 1D 00 14 */	lwz r0, 0x14(r29)
@@ -248,7 +248,7 @@ lbl_8032E210:
 /* 8032E228 00329EC8  80 7D 00 08 */	lwz r3, 8(r29)
 /* 8032E22C 00329ECC  81 84 12 68 */	lwz r12, "gAptFuncs"@l(r4)
 /* 8032E230 00329ED0  7D 89 03 A6 */	mtctr r12
-/* 8032E234 00329ED4  4E 80 04 21 */	bctrl 
+/* 8032E234 00329ED4  4E 80 04 21 */	bctrl
 /* 8032E238 00329ED8  80 9D 00 04 */	lwz r4, 4(r29)
 /* 8032E23C 00329EDC  7C 7E 1B 78 */	mr r30, r3
 /* 8032E240 00329EE0  80 BD 00 08 */	lwz r5, 8(r29)
@@ -264,7 +264,7 @@ lbl_8032E258:
 /* 8032E264 00329F04  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032E268 00329F08  7C 08 03 A6 */	mtlr r0
 /* 8032E26C 00329F0C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E270 00329F10  4E 80 00 20 */	blr 
+/* 8032E270 00329F10  4E 80 00 20 */	blr
 
 .global "Deallocate__17DOGMA_PoolManagerFPvUl"
 "Deallocate__17DOGMA_PoolManagerFPvUl":
@@ -313,7 +313,7 @@ lbl_8032E308:
 /* 8032E310 00329FB0  38 A5 12 68 */	addi r5, r5, "gAptFuncs"@l
 /* 8032E314 00329FB4  81 85 00 08 */	lwz r12, 8(r5)
 /* 8032E318 00329FB8  7D 89 03 A6 */	mtctr r12
-/* 8032E31C 00329FBC  4E 80 04 21 */	bctrl 
+/* 8032E31C 00329FBC  4E 80 04 21 */	bctrl
 /* 8032E320 00329FC0  38 60 00 00 */	li r3, 0
 /* 8032E324 00329FC4  48 00 00 14 */	b lbl_8032E338
 lbl_8032E328:
@@ -328,7 +328,7 @@ lbl_8032E338:
 /* 8032E344 00329FE4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032E348 00329FE8  7C 08 03 A6 */	mtlr r0
 /* 8032E34C 00329FEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032E350 00329FF0  4E 80 00 20 */	blr 
+/* 8032E350 00329FF0  4E 80 00 20 */	blr
 
 .global "ConsumeFreeBlockBySize__17DOGMA_PoolManagerFUl"
 "ConsumeFreeBlockBySize__17DOGMA_PoolManagerFUl":
@@ -352,7 +352,7 @@ lbl_8032E338:
 /* 8032E398 0032A038  7C 68 01 2E */	stwx r3, r8, r0
 lbl_8032E39C:
 /* 8032E39C 0032A03C  7C E3 3B 78 */	mr r3, r7
-/* 8032E3A0 0032A040  4E 80 00 20 */	blr 
+/* 8032E3A0 0032A040  4E 80 00 20 */	blr
 
 .global "AddFreeBlockBySize__17DOGMA_PoolManagerFPvUl"
 "AddFreeBlockBySize__17DOGMA_PoolManagerFPvUl":
@@ -374,7 +374,7 @@ lbl_8032E39C:
 lbl_8032E3E0:
 /* 8032E3E0 0032A080  80 A3 00 10 */	lwz r5, 0x10(r3)
 /* 8032E3E4 0032A084  54 A0 F7 FF */	rlwinm. r0, r5, 0x1e, 0x1f, 0x1f
-/* 8032E3E8 0032A088  4D 82 00 20 */	beqlr 
+/* 8032E3E8 0032A088  4D 82 00 20 */	beqlr
 /* 8032E3EC 0032A08C  2C 09 00 00 */	cmpwi r9, 0
 /* 8032E3F0 0032A090  41 82 00 0C */	beq lbl_8032E3FC
 /* 8032E3F4 0032A094  54 A0 D5 BA */	rlwinm r0, r5, 0x1a, 0x16, 0x1d
@@ -384,7 +384,7 @@ lbl_8032E3FC:
 /* 8032E400 0032A0A0  38 60 00 00 */	li r3, 0
 /* 8032E404 0032A0A4  54 00 D5 BA */	rlwinm r0, r0, 0x1a, 0x16, 0x1d
 /* 8032E408 0032A0A8  7C 64 01 2E */	stwx r3, r4, r0
-/* 8032E40C 0032A0AC  4E 80 00 20 */	blr 
+/* 8032E40C 0032A0AC  4E 80 00 20 */	blr
 
 .global "ToNextValidSize__17DOGMA_PoolManagerFUl"
 "ToNextValidSize__17DOGMA_PoolManagerFUl":
@@ -400,7 +400,7 @@ lbl_8032E420:
 /* 8032E430 0032A0D0  7C 04 03 78 */	mr r4, r0
 lbl_8032E434:
 /* 8032E434 0032A0D4  7C 83 23 78 */	mr r3, r4
-/* 8032E438 0032A0D8  4E 80 00 20 */	blr 
+/* 8032E438 0032A0D8  4E 80 00 20 */	blr
 
 .global "SetupPool__14_DOGMA_MemPoolFP14_DOGMA_MemPoolUl"
 "SetupPool__14_DOGMA_MemPoolFP14_DOGMA_MemPoolUl":
@@ -408,12 +408,12 @@ lbl_8032E434:
 /* 8032E440 0032A0E0  90 83 00 00 */	stw r4, 0(r3)
 /* 8032E444 0032A0E4  90 03 00 04 */	stw r0, 4(r3)
 /* 8032E448 0032A0E8  90 03 00 08 */	stw r0, 8(r3)
-/* 8032E44C 0032A0EC  4E 80 00 20 */	blr 
+/* 8032E44C 0032A0EC  4E 80 00 20 */	blr
 
 .global "GetReturnedPointer__Q217DOGMA_PoolManager19_OutsideAllocationTFv"
 "GetReturnedPointer__Q217DOGMA_PoolManager19_OutsideAllocationTFv":
 /* 8032E450 0032A0F0  38 63 00 08 */	addi r3, r3, 8
-/* 8032E454 0032A0F4  4E 80 00 20 */	blr 
+/* 8032E454 0032A0F4  4E 80 00 20 */	blr
 
 .global "GetStructPointerFromReturnedPointer__Q217DOGMA_PoolManager19_OutsideAllocationTFPCv"
 "GetStructPointerFromReturnedPointer__Q217DOGMA_PoolManager19_OutsideAllocationTFPCv":
@@ -428,12 +428,12 @@ lbl_8032E434:
 /* 8032E478 0032A118  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032E47C 0032A11C  7C 08 03 A6 */	mtlr r0
 /* 8032E480 0032A120  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032E484 0032A124  4E 80 00 20 */	blr 
+/* 8032E484 0032A124  4E 80 00 20 */	blr
 
 .global "GetStructOverHead__Q217DOGMA_PoolManager19_OutsideAllocationTFv"
 "GetStructOverHead__Q217DOGMA_PoolManager19_OutsideAllocationTFv":
 /* 8032E488 0032A128  38 60 00 08 */	li r3, 8
-/* 8032E48C 0032A12C  4E 80 00 20 */	blr 
+/* 8032E48C 0032A12C  4E 80 00 20 */	blr
 
 .global "ConsumeBytes__14_DOGMA_MemPoolFUl"
 "ConsumeBytes__14_DOGMA_MemPoolFUl":
@@ -444,7 +444,7 @@ lbl_8032E434:
 /* 8032E4A0 0032A140  90 83 00 08 */	stw r4, 8(r3)
 /* 8032E4A4 0032A144  7C 63 02 14 */	add r3, r3, r0
 /* 8032E4A8 0032A148  38 63 00 0C */	addi r3, r3, 0xc
-/* 8032E4AC 0032A14C  4E 80 00 20 */	blr 
+/* 8032E4AC 0032A14C  4E 80 00 20 */	blr
 
 .global "CanFitBytes__14_DOGMA_MemPoolCFUl"
 "CanFitBytes__14_DOGMA_MemPoolCFUl":
@@ -454,7 +454,7 @@ lbl_8032E434:
 /* 8032E4BC 0032A15C  54 00 F8 7E */	srwi r0, r0, 1
 /* 8032E4C0 0032A160  7C 00 18 50 */	subf r0, r0, r3
 /* 8032E4C4 0032A164  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8032E4C8 0032A168  4E 80 00 20 */	blr 
+/* 8032E4C8 0032A168  4E 80 00 20 */	blr
 
 .global "HasFreeBlockBySize__17DOGMA_PoolManagerFUl"
 "HasFreeBlockBySize__17DOGMA_PoolManagerFUl":
@@ -464,4 +464,4 @@ lbl_8032E434:
 /* 8032E4D8 0032A178  7C 03 00 D0 */	neg r0, r3
 /* 8032E4DC 0032A17C  7C 00 1B 78 */	or r0, r0, r3
 /* 8032E4E0 0032A180  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8032E4E4 0032A184  4E 80 00 20 */	blr 
+/* 8032E4E4 0032A184  4E 80 00 20 */	blr

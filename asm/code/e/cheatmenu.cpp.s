@@ -19,7 +19,7 @@ lbl_802798F4:
 /* 802798FC 0027559C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80279900 002755A0  7C 08 03 A6 */	mtlr r0
 /* 80279904 002755A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80279908 002755A8  4E 80 00 20 */	blr 
+/* 80279908 002755A8  4E 80 00 20 */	blr
 
 .global "Add__15CheatMenuParamsFR14EDebugMenuItem"
 "Add__15CheatMenuParamsFR14EDebugMenuItem":
@@ -39,13 +39,13 @@ lbl_8027992C:
 /* 80279938 002755D8  90 83 00 04 */	stw r4, 4(r3)
 /* 8027993C 002755DC  38 05 00 01 */	addi r0, r5, 1
 /* 80279940 002755E0  90 03 00 08 */	stw r0, 8(r3)
-/* 80279944 002755E4  4E 80 00 20 */	blr 
+/* 80279944 002755E4  4E 80 00 20 */	blr
 
 .global "Remove__15CheatMenuParamsFR14EDebugMenuItem"
 "Remove__15CheatMenuParamsFR14EDebugMenuItem":
 /* 80279948 002755E8  80 03 00 08 */	lwz r0, 8(r3)
 /* 8027994C 002755EC  2C 00 00 00 */	cmpwi r0, 0
-/* 80279950 002755F0  4D 82 00 20 */	beqlr 
+/* 80279950 002755F0  4D 82 00 20 */	beqlr
 /* 80279954 002755F4  80 03 00 00 */	lwz r0, 0(r3)
 /* 80279958 002755F8  7C 00 20 40 */	cmplw r0, r4
 /* 8027995C 002755FC  40 82 00 14 */	bne lbl_80279970
@@ -73,7 +73,7 @@ lbl_802799A4:
 /* 802799A4 00275644  80 83 00 08 */	lwz r4, 8(r3)
 /* 802799A8 00275648  38 04 FF FF */	addi r0, r4, -1
 /* 802799AC 0027564C  90 03 00 08 */	stw r0, 8(r3)
-/* 802799B0 00275650  4E 80 00 20 */	blr 
+/* 802799B0 00275650  4E 80 00 20 */	blr
 
 .global "__sinit_e_cheatmenu_cpp"
 "__sinit_e_cheatmenu_cpp":

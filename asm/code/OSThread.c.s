@@ -3,7 +3,7 @@
 .section .text, "ax"  # 0x80006940 - 0x80418B80
 .global "DefaultSwitchThreadCallback"
 "DefaultSwitchThreadCallback":
-/* 803E2BF4 003DE894  4E 80 00 20 */	blr 
+/* 803E2BF4 003DE894  4E 80 00 20 */	blr
 
 .global "__OSThreadInit"
 "__OSThreadInit":
@@ -51,7 +51,7 @@
 /* 803E2C9C 003DE93C  81 8D B0 E8 */	lwz r12, "SwitchThreadCallback"-_SDA_BASE_(r13)
 /* 803E2CA0 003DE940  80 7D 00 E4 */	lwz r3, 0xe4(r29)
 /* 803E2CA4 003DE944  7D 89 03 A6 */	mtctr r12
-/* 803E2CA8 003DE948  4E 80 04 21 */	bctrl 
+/* 803E2CA8 003DE948  4E 80 04 21 */	bctrl
 /* 803E2CAC 003DE94C  93 DD 00 E4 */	stw r30, 0xe4(r29)
 /* 803E2CB0 003DE950  4B FF 9F 95 */	bl "OSGetStackPointer"
 /* 803E2CB4 003DE954  80 9D 00 E4 */	lwz r4, 0xe4(r29)
@@ -175,20 +175,20 @@ lbl_803E2E40:
 /* 803E2E6C 003DEB0C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E2E70 003DEB10  7C 08 03 A6 */	mtlr r0
 /* 803E2E74 003DEB14  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E2E78 003DEB18  4E 80 00 20 */	blr 
+/* 803E2E78 003DEB18  4E 80 00 20 */	blr
 
 .global "OSInitThreadQueue"
 "OSInitThreadQueue":
 /* 803E2E7C 003DEB1C  38 00 00 00 */	li r0, 0
 /* 803E2E80 003DEB20  90 03 00 04 */	stw r0, 4(r3)
 /* 803E2E84 003DEB24  90 03 00 00 */	stw r0, 0(r3)
-/* 803E2E88 003DEB28  4E 80 00 20 */	blr 
+/* 803E2E88 003DEB28  4E 80 00 20 */	blr
 
 .global "OSGetCurrentThread"
 "OSGetCurrentThread":
 /* 803E2E8C 003DEB2C  3C 60 80 00 */	lis r3, 0x800000E4@ha
 /* 803E2E90 003DEB30  80 63 00 E4 */	lwz r3, 0x800000E4@l(r3)
-/* 803E2E94 003DEB34  4E 80 00 20 */	blr 
+/* 803E2E94 003DEB34  4E 80 00 20 */	blr
 
 .global "OSDisableScheduler"
 "OSDisableScheduler":
@@ -206,7 +206,7 @@ lbl_803E2E40:
 /* 803E2EC4 003DEB64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E2EC8 003DEB68  7C 08 03 A6 */	mtlr r0
 /* 803E2ECC 003DEB6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E2ED0 003DEB70  4E 80 00 20 */	blr 
+/* 803E2ED0 003DEB70  4E 80 00 20 */	blr
 
 .global "OSEnableScheduler"
 "OSEnableScheduler":
@@ -224,7 +224,7 @@ lbl_803E2E40:
 /* 803E2F00 003DEBA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E2F04 003DEBA4  7C 08 03 A6 */	mtlr r0
 /* 803E2F08 003DEBA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E2F0C 003DEBAC  4E 80 00 20 */	blr 
+/* 803E2F0C 003DEBAC  4E 80 00 20 */	blr
 
 .global "UnsetRun"
 "UnsetRun":
@@ -258,7 +258,7 @@ lbl_803E2F44:
 lbl_803E2F6C:
 /* 803E2F6C 003DEC0C  38 00 00 00 */	li r0, 0
 /* 803E2F70 003DEC10  90 03 02 DC */	stw r0, 0x2dc(r3)
-/* 803E2F74 003DEC14  4E 80 00 20 */	blr 
+/* 803E2F74 003DEC14  4E 80 00 20 */	blr
 
 .global "__OSGetEffectivePriority"
 "__OSGetEffectivePriority":
@@ -279,7 +279,7 @@ lbl_803E2FA4:
 /* 803E2FA4 003DEC44  2C 03 00 00 */	cmpwi r3, 0
 /* 803E2FA8 003DEC48  40 82 FF DC */	bne lbl_803E2F84
 /* 803E2FAC 003DEC4C  7C 83 23 78 */	mr r3, r4
-/* 803E2FB0 003DEC50  4E 80 00 20 */	blr 
+/* 803E2FB0 003DEC50  4E 80 00 20 */	blr
 
 .global "SetEffectivePriority"
 "SetEffectivePriority":
@@ -411,7 +411,7 @@ lbl_803E3150:
 /* 803E3158 003DEDF8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E315C 003DEDFC  7C 08 03 A6 */	mtlr r0
 /* 803E3160 003DEE00  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E3164 003DEE04  4E 80 00 20 */	blr 
+/* 803E3164 003DEE04  4E 80 00 20 */	blr
 
 .global "__OSPromoteThread"
 "__OSPromoteThread":
@@ -436,7 +436,7 @@ lbl_803E31A4:
 /* 803E31A8 003DEE48  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E31AC 003DEE4C  7C 08 03 A6 */	mtlr r0
 /* 803E31B0 003DEE50  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E31B4 003DEE54  4E 80 00 20 */	blr 
+/* 803E31B4 003DEE54  4E 80 00 20 */	blr
 
 .global "SelectThread"
 "SelectThread":
@@ -523,7 +523,7 @@ lbl_803E32C8:
 /* 803E32DC 003DEF7C  80 7F 00 E4 */	lwz r3, 0x800000E4@l(r31)
 /* 803E32E0 003DEF80  38 80 00 00 */	li r4, 0
 /* 803E32E4 003DEF84  7D 89 03 A6 */	mtctr r12
-/* 803E32E8 003DEF88  4E 80 04 21 */	bctrl 
+/* 803E32E8 003DEF88  4E 80 04 21 */	bctrl
 /* 803E32EC 003DEF8C  38 00 00 00 */	li r0, 0
 /* 803E32F0 003DEF90  3C 60 80 5C */	lis r3, "IdleContext"@ha
 /* 803E32F4 003DEF94  90 1F 00 E4 */	stw r0, 0xe4(r31)
@@ -578,7 +578,7 @@ lbl_803E3388:
 /* 803E33A0 003DF040  81 8D B0 E8 */	lwz r12, "SwitchThreadCallback"-_SDA_BASE_(r13)
 /* 803E33A4 003DF044  80 7F 00 E4 */	lwz r3, 0x800000E4@l(r31)
 /* 803E33A8 003DF048  7D 89 03 A6 */	mtctr r12
-/* 803E33AC 003DF04C  4E 80 04 21 */	bctrl 
+/* 803E33AC 003DF04C  4E 80 04 21 */	bctrl
 /* 803E33B0 003DF050  93 DF 00 E4 */	stw r30, 0xe4(r31)
 /* 803E33B4 003DF054  7F C3 F3 78 */	mr r3, r30
 /* 803E33B8 003DF058  4B FF 96 CD */	bl "OSSetCurrentContext"
@@ -591,16 +591,16 @@ lbl_803E33C8:
 /* 803E33D0 003DF070  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E33D4 003DF074  7C 08 03 A6 */	mtlr r0
 /* 803E33D8 003DF078  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E33DC 003DF07C  4E 80 00 20 */	blr 
+/* 803E33DC 003DF07C  4E 80 00 20 */	blr
 
 .global "__OSReschedule"
 "__OSReschedule":
 /* 803E33E0 003DF080  80 0D C7 74 */	lwz r0, "RunQueueHint"-_SDA_BASE_(r13)
 /* 803E33E4 003DF084  2C 00 00 00 */	cmpwi r0, 0
-/* 803E33E8 003DF088  4D 82 00 20 */	beqlr 
+/* 803E33E8 003DF088  4D 82 00 20 */	beqlr
 /* 803E33EC 003DF08C  38 60 00 00 */	li r3, 0
 /* 803E33F0 003DF090  4B FF FD C8 */	b "SelectThread"
-/* 803E33F4 003DF094  4E 80 00 20 */	blr 
+/* 803E33F4 003DF094  4E 80 00 20 */	blr
 
 .global "OSCreateThread"
 "OSCreateThread":
@@ -765,7 +765,7 @@ lbl_803E364C:
 /* 803E3654 003DF2F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E3658 003DF2F8  7C 08 03 A6 */	mtlr r0
 /* 803E365C 003DF2FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E3660 003DF300  4E 80 00 20 */	blr 
+/* 803E3660 003DF300  4E 80 00 20 */	blr
 
 .global "OSExitThread"
 "OSExitThread":
@@ -832,7 +832,7 @@ lbl_803E3720:
 /* 803E3738 003DF3D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E373C 003DF3DC  7C 08 03 A6 */	mtlr r0
 /* 803E3740 003DF3E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E3744 003DF3E4  4E 80 00 20 */	blr 
+/* 803E3744 003DF3E4  4E 80 00 20 */	blr
 
 .global "OSCancelThread"
 "OSCancelThread":
@@ -975,7 +975,7 @@ lbl_803E3908:
 /* 803E3910 003DF5B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E3914 003DF5B4  7C 08 03 A6 */	mtlr r0
 /* 803E3918 003DF5B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E391C 003DF5BC  4E 80 00 20 */	blr 
+/* 803E391C 003DF5BC  4E 80 00 20 */	blr
 
 .global "OSResumeThread"
 "OSResumeThread":
@@ -1173,7 +1173,7 @@ lbl_803E3B90:
 /* 803E3BA8 003DF848  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E3BAC 003DF84C  7C 08 03 A6 */	mtlr r0
 /* 803E3BB0 003DF850  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E3BB4 003DF854  4E 80 00 20 */	blr 
+/* 803E3BB4 003DF854  4E 80 00 20 */	blr
 
 .global "OSSuspendThread"
 "OSSuspendThread":
@@ -1293,7 +1293,7 @@ lbl_803E3D24:
 /* 803E3D3C 003DF9DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E3D40 003DF9E0  7C 08 03 A6 */	mtlr r0
 /* 803E3D44 003DF9E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E3D48 003DF9E8  4E 80 00 20 */	blr 
+/* 803E3D48 003DF9E8  4E 80 00 20 */	blr
 
 .global "OSSleepThread"
 "OSSleepThread":
@@ -1364,7 +1364,7 @@ lbl_803E3E18:
 /* 803E3E28 003DFAC8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E3E2C 003DFACC  7C 08 03 A6 */	mtlr r0
 /* 803E3E30 003DFAD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E3E34 003DFAD4  4E 80 00 20 */	blr 
+/* 803E3E34 003DFAD4  4E 80 00 20 */	blr
 
 .global "OSWakeupThread"
 "OSWakeupThread":
@@ -1435,7 +1435,7 @@ lbl_803E3F0C:
 /* 803E3F1C 003DFBBC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E3F20 003DFBC0  7C 08 03 A6 */	mtlr r0
 /* 803E3F24 003DFBC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E3F28 003DFBC8  4E 80 00 20 */	blr 
+/* 803E3F28 003DFBC8  4E 80 00 20 */	blr
 
 .global "OSSetThreadPriority"
 "OSSetThreadPriority":
@@ -1506,7 +1506,7 @@ lbl_803E3FFC:
 /* 803E4008 003DFCA8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E400C 003DFCAC  7C 08 03 A6 */	mtlr r0
 /* 803E4010 003DFCB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4014 003DFCB4  4E 80 00 20 */	blr 
+/* 803E4014 003DFCB4  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "DefaultThread"
@@ -1525,7 +1525,10 @@ lbl_803E3FFC:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "SwitchThreadCallback"
 "SwitchThreadCallback":
-	.incbin "baserom.dol", 0x487348, 0x8
+	# ROM: 0x487348
+	.4byte "DefaultSwitchThreadCallback" ;# ptr (0x803E2BF4)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "Reschedule"

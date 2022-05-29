@@ -3,7 +3,7 @@
 .section .text, "ax"  # 0x80006940 - 0x80418B80
 .global "Initialize__5AptGCFv"
 "Initialize__5AptGCFv":
-/* 8031E9F4 0031A694  4E 80 00 20 */	blr 
+/* 8031E9F4 0031A694  4E 80 00 20 */	blr
 
 .global "sReferenceRegistrationCb__5AptGCFPC8AptValueP8AptValuePCc"
 "sReferenceRegistrationCb__5AptGCFPC8AptValueP8AptValuePCc":
@@ -23,13 +23,13 @@
 /* 8031EA2C 0031A6CC  7F E3 FB 78 */	mr r3, r31
 /* 8031EA30 0031A6D0  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8031EA34 0031A6D4  7D 89 03 A6 */	mtctr r12
-/* 8031EA38 0031A6D8  4E 80 04 21 */	bctrl 
+/* 8031EA38 0031A6D8  4E 80 04 21 */	bctrl
 lbl_8031EA3C:
 /* 8031EA3C 0031A6DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8031EA40 0031A6E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8031EA44 0031A6E4  7C 08 03 A6 */	mtlr r0
 /* 8031EA48 0031A6E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031EA4C 0031A6EC  4E 80 00 20 */	blr 
+/* 8031EA4C 0031A6EC  4E 80 00 20 */	blr
 
 .global "CleanUnreachable__5AptGCFv"
 "CleanUnreachable__5AptGCFv":
@@ -68,7 +68,7 @@ lbl_8031EA8C:
 /* 8031EACC 0031A76C  7F E3 FB 78 */	mr r3, r31
 /* 8031EAD0 0031A770  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8031EAD4 0031A774  7D 89 03 A6 */	mtctr r12
-/* 8031EAD8 0031A778  4E 80 04 21 */	bctrl 
+/* 8031EAD8 0031A778  4E 80 04 21 */	bctrl
 lbl_8031EADC:
 /* 8031EADC 0031A77C  80 6D BE 64 */	lwz r3, "gpGCPoolManager"-_SDA_BASE_(r13)
 /* 8031EAE0 0031A780  7F E4 FB 78 */	mr r4, r31
@@ -95,12 +95,12 @@ lbl_8031EB18:
 /* 8031EB2C 0031A7CC  7F C3 F3 78 */	mr r3, r30
 /* 8031EB30 0031A7D0  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 8031EB34 0031A7D4  7D 89 03 A6 */	mtctr r12
-/* 8031EB38 0031A7D8  4E 80 04 21 */	bctrl 
+/* 8031EB38 0031A7D8  4E 80 04 21 */	bctrl
 /* 8031EB3C 0031A7DC  81 9E 00 00 */	lwz r12, 0(r30)
 /* 8031EB40 0031A7E0  7F C3 F3 78 */	mr r3, r30
 /* 8031EB44 0031A7E4  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8031EB48 0031A7E8  7D 89 03 A6 */	mtctr r12
-/* 8031EB4C 0031A7EC  4E 80 04 21 */	bctrl 
+/* 8031EB4C 0031A7EC  4E 80 04 21 */	bctrl
 lbl_8031EB50:
 /* 8031EB50 0031A7F0  80 6D BE 64 */	lwz r3, "gpGCPoolManager"-_SDA_BASE_(r13)
 /* 8031EB54 0031A7F4  7F C4 F3 78 */	mr r4, r30
@@ -123,7 +123,7 @@ lbl_8031EB7C:
 /* 8031EB90 0031A830  7F C3 F3 78 */	mr r3, r30
 /* 8031EB94 0031A834  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 8031EB98 0031A838  7D 89 03 A6 */	mtctr r12
-/* 8031EB9C 0031A83C  4E 80 04 21 */	bctrl 
+/* 8031EB9C 0031A83C  4E 80 04 21 */	bctrl
 /* 8031EBA0 0031A840  80 6D BE 64 */	lwz r3, "gpGCPoolManager"-_SDA_BASE_(r13)
 /* 8031EBA4 0031A844  7F C4 F3 78 */	mr r4, r30
 /* 8031EBA8 0031A848  48 00 EE BD */	bl "GetNextAptValue__22AptValueGC_PoolManagerFPC8AptValue"
@@ -151,7 +151,7 @@ lbl_8031EBD0:
 /* 8031EBF8 0031A898  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8031EBFC 0031A89C  7C 08 03 A6 */	mtlr r0
 /* 8031EC00 0031A8A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031EC04 0031A8A4  4E 80 00 20 */	blr 
+/* 8031EC04 0031A8A4  4E 80 00 20 */	blr
 
 .global "CleanAll__5AptGCFv"
 "CleanAll__5AptGCFv":
@@ -174,12 +174,12 @@ lbl_8031EC40:
 /* 8031EC44 0031A8E4  7F E3 FB 78 */	mr r3, r31
 /* 8031EC48 0031A8E8  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 8031EC4C 0031A8EC  7D 89 03 A6 */	mtctr r12
-/* 8031EC50 0031A8F0  4E 80 04 21 */	bctrl 
+/* 8031EC50 0031A8F0  4E 80 04 21 */	bctrl
 /* 8031EC54 0031A8F4  81 9F 00 00 */	lwz r12, 0(r31)
 /* 8031EC58 0031A8F8  7F E3 FB 78 */	mr r3, r31
 /* 8031EC5C 0031A8FC  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8031EC60 0031A900  7D 89 03 A6 */	mtctr r12
-/* 8031EC64 0031A904  4E 80 04 21 */	bctrl 
+/* 8031EC64 0031A904  4E 80 04 21 */	bctrl
 /* 8031EC68 0031A908  80 6D BE 64 */	lwz r3, "gpGCPoolManager"-_SDA_BASE_(r13)
 /* 8031EC6C 0031A90C  7F E4 FB 78 */	mr r4, r31
 /* 8031EC70 0031A910  48 00 ED F5 */	bl "GetNextAptValue__22AptValueGC_PoolManagerFPC8AptValue"
@@ -199,7 +199,7 @@ lbl_8031EC9C:
 /* 8031ECA0 0031A940  7F E3 FB 78 */	mr r3, r31
 /* 8031ECA4 0031A944  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 8031ECA8 0031A948  7D 89 03 A6 */	mtctr r12
-/* 8031ECAC 0031A94C  4E 80 04 21 */	bctrl 
+/* 8031ECAC 0031A94C  4E 80 04 21 */	bctrl
 /* 8031ECB0 0031A950  80 6D BE 64 */	lwz r3, "gpGCPoolManager"-_SDA_BASE_(r13)
 /* 8031ECB4 0031A954  7F E4 FB 78 */	mr r4, r31
 /* 8031ECB8 0031A958  48 00 ED AD */	bl "GetNextAptValue__22AptValueGC_PoolManagerFPC8AptValue"
@@ -218,16 +218,16 @@ lbl_8031ECC0:
 /* 8031ECE8 0031A988  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8031ECEC 0031A98C  7C 08 03 A6 */	mtlr r0
 /* 8031ECF0 0031A990  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031ECF4 0031A994  4E 80 00 20 */	blr 
+/* 8031ECF4 0031A994  4E 80 00 20 */	blr
 
 .global "getGCMark__8AptValueCFv"
 "getGCMark__8AptValueCFv":
 /* 8031ECF8 0031A998  80 03 00 04 */	lwz r0, 4(r3)
 /* 8031ECFC 0031A99C  54 03 17 FE */	rlwinm r3, r0, 2, 0x1f, 0x1f
-/* 8031ED00 0031A9A0  4E 80 00 20 */	blr 
+/* 8031ED00 0031A9A0  4E 80 00 20 */	blr
 
 .global "getGCRoot__8AptValueCFv"
 "getGCRoot__8AptValueCFv":
 /* 8031ED04 0031A9A4  80 03 00 04 */	lwz r0, 4(r3)
 /* 8031ED08 0031A9A8  54 03 C6 BE */	rlwinm r3, r0, 0x18, 0x1a, 0x1f
-/* 8031ED0C 0031A9AC  4E 80 00 20 */	blr 
+/* 8031ED0C 0031A9AC  4E 80 00 20 */	blr

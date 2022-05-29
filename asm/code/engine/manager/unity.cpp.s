@@ -36,7 +36,7 @@ lbl_802A587C:
 /* 802A589C 002A153C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A58A0 002A1540  7C 08 03 A6 */	mtlr r0
 /* 802A58A4 002A1544  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A58A8 002A1548  4E 80 00 20 */	blr 
+/* 802A58A8 002A1548  4E 80 00 20 */	blr
 
 .global "__sinit_engine_manager_unity_cpp"
 "__sinit_engine_manager_unity_cpp":
@@ -852,7 +852,7 @@ lbl_802A587C:
 /* 802A6550 002A21F0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802A6554 002A21F4  7C 08 03 A6 */	mtlr r0
 /* 802A6558 002A21F8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802A655C 002A21FC  4E 80 00 20 */	blr 
+/* 802A655C 002A21FC  4E 80 00 20 */	blr
 
 .global "__arraydtor$12096"
 "__arraydtor$12096":
@@ -895,7 +895,7 @@ lbl_802A65C0:
 /* 802A65E0 002A2280  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A65E4 002A2284  7C 08 03 A6 */	mtlr r0
 /* 802A65E8 002A2288  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A65EC 002A228C  4E 80 00 20 */	blr 
+/* 802A65EC 002A228C  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__23EffectsSequencerManagerFP5EFileUiUi"
 "AllocateAndLoadResource__23EffectsSequencerManagerFP5EFileUiUi":
@@ -928,7 +928,7 @@ lbl_802A6634:
 /* 802A6654 002A22F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6658 002A22F8  7C 08 03 A6 */	mtlr r0
 /* 802A665C 002A22FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6660 002A2300  4E 80 00 20 */	blr 
+/* 802A6660 002A2300  4E 80 00 20 */	blr
 
 .global "GetHeap__20EAmbientScoreManagerFv"
 "GetHeap__20EAmbientScoreManagerFv":
@@ -966,7 +966,7 @@ lbl_802A66AC:
 /* 802A66D0 002A2370  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A66D4 002A2374  7C 08 03 A6 */	mtlr r0
 /* 802A66D8 002A2378  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A66DC 002A237C  4E 80 00 20 */	blr 
+/* 802A66DC 002A237C  4E 80 00 20 */	blr
 
 .global "GetHeap__12EAnimManagerFv"
 "GetHeap__12EAnimManagerFv":
@@ -1004,7 +1004,7 @@ lbl_802A672C:
 /* 802A674C 002A23EC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6750 002A23F0  7C 08 03 A6 */	mtlr r0
 /* 802A6754 002A23F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6758 002A23F8  4E 80 00 20 */	blr 
+/* 802A6758 002A23F8  4E 80 00 20 */	blr
 
 .global "Init__19EAudioSampleManagerFPCc"
 "Init__19EAudioSampleManagerFPCc":
@@ -1036,7 +1036,7 @@ lbl_802A679C:
 /* 802A67A0 002A2440  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A67A4 002A2444  7C 08 03 A6 */	mtlr r0
 /* 802A67A8 002A2448  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A67AC 002A244C  4E 80 00 20 */	blr 
+/* 802A67AC 002A244C  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__19EAudioStreamManagerFP5EFileUiUi"
 "AllocateAndLoadResource__19EAudioStreamManagerFP5EFileUiUi":
@@ -1052,7 +1052,7 @@ lbl_802A679C:
 /* 802A67D4 002A2474  7C DD 33 78 */	mr r29, r6
 /* 802A67D8 002A2478  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802A67DC 002A247C  7D 89 03 A6 */	mtctr r12
-/* 802A67E0 002A2480  4E 80 04 21 */	bctrl 
+/* 802A67E0 002A2480  4E 80 04 21 */	bctrl
 /* 802A67E4 002A2484  7C 7F 1B 78 */	mr r31, r3
 /* 802A67E8 002A2488  4B FA B9 19 */	bl "MainHeap__Fv"
 /* 802A67EC 002A248C  38 80 00 20 */	li r4, 0x20
@@ -1078,14 +1078,14 @@ lbl_802A6828:
 /* 802A6838 002A24D8  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802A683C 002A24DC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802A6840 002A24E0  7D 89 03 A6 */	mtctr r12
-/* 802A6844 002A24E4  4E 80 04 21 */	bctrl 
+/* 802A6844 002A24E4  4E 80 04 21 */	bctrl
 /* 802A6848 002A24E8  39 61 00 20 */	addi r11, r1, 0x20
 /* 802A684C 002A24EC  7F C3 F3 78 */	mr r3, r30
 /* 802A6850 002A24F0  48 16 8B 71 */	bl "_restgpr_27"
 /* 802A6854 002A24F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6858 002A24F8  7C 08 03 A6 */	mtlr r0
 /* 802A685C 002A24FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6860 002A2500  4E 80 00 20 */	blr 
+/* 802A6860 002A2500  4E 80 00 20 */	blr
 
 .global "GetHeap__14EBinaryManagerFv"
 "GetHeap__14EBinaryManagerFv":
@@ -1126,7 +1126,7 @@ lbl_802A68B4:
 /* 802A68DC 002A257C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A68E0 002A2580  7C 08 03 A6 */	mtlr r0
 /* 802A68E4 002A2584  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A68E8 002A2588  4E 80 00 20 */	blr 
+/* 802A68E8 002A2588  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__17ECharacterManagerFP5EFileUiUi"
 "AllocateAndLoadResource__17ECharacterManagerFP5EFileUiUi":
@@ -1155,7 +1155,7 @@ lbl_802A6934:
 /* 802A6940 002A25E0  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A6944 002A25E4  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802A6948 002A25E8  7D 89 03 A6 */	mtctr r12
-/* 802A694C 002A25EC  4E 80 04 21 */	bctrl 
+/* 802A694C 002A25EC  4E 80 04 21 */	bctrl
 /* 802A6950 002A25F0  7F E3 FB 78 */	mr r3, r31
 /* 802A6954 002A25F4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802A6958 002A25F8  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1163,7 +1163,7 @@ lbl_802A6934:
 /* 802A6960 002A2600  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6964 002A2604  7C 08 03 A6 */	mtlr r0
 /* 802A6968 002A2608  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A696C 002A260C  4E 80 00 20 */	blr 
+/* 802A696C 002A260C  4E 80 00 20 */	blr
 
 .global "__ct__18EControllerManagerFv"
 "__ct__18EControllerManagerFv":
@@ -1172,7 +1172,7 @@ lbl_802A6934:
 /* 802A6978 002A2618  38 84 0C 40 */	addi r4, r4, "__vt__18EControllerManager"@l
 /* 802A697C 002A261C  98 03 00 08 */	stb r0, 8(r3)
 /* 802A6980 002A2620  90 83 00 00 */	stw r4, 0(r3)
-/* 802A6984 002A2624  4E 80 00 20 */	blr 
+/* 802A6984 002A2624  4E 80 00 20 */	blr
 
 .global "Init__18EControllerManagerFv"
 "Init__18EControllerManagerFv":
@@ -1181,7 +1181,7 @@ lbl_802A6934:
 /* 802A6990 002A2630  90 83 00 04 */	stw r4, 4(r3)
 /* 802A6994 002A2634  98 03 00 08 */	stb r0, 8(r3)
 /* 802A6998 002A2638  38 60 00 01 */	li r3, 1
-/* 802A699C 002A263C  4E 80 00 20 */	blr 
+/* 802A699C 002A263C  4E 80 00 20 */	blr
 
 .global "Update__18EControllerManagerFv"
 "Update__18EControllerManagerFv":
@@ -1198,7 +1198,7 @@ lbl_802A69C0:
 /* 802A69C4 002A2664  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A69C8 002A2668  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 802A69CC 002A266C  7D 89 03 A6 */	mtctr r12
-/* 802A69D0 002A2670  4E 80 04 21 */	bctrl 
+/* 802A69D0 002A2670  4E 80 04 21 */	bctrl
 /* 802A69D4 002A2674  3B DE 00 01 */	addi r30, r30, 1
 /* 802A69D8 002A2678  3B FF 00 04 */	addi r31, r31, 4
 /* 802A69DC 002A267C  2C 1E 00 04 */	cmpwi r30, 4
@@ -1208,49 +1208,49 @@ lbl_802A69C0:
 /* 802A69EC 002A268C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A69F0 002A2690  7C 08 03 A6 */	mtlr r0
 /* 802A69F4 002A2694  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A69F8 002A2698  4E 80 00 20 */	blr 
+/* 802A69F8 002A2698  4E 80 00 20 */	blr
 
 .global "Shutdown__18EControllerManagerFv"
 "Shutdown__18EControllerManagerFv":
-/* 802A69FC 002A269C  4E 80 00 20 */	blr 
+/* 802A69FC 002A269C  4E 80 00 20 */	blr
 
 .global "MapPlayerToController__18EControllerManagerFUi"
 "MapPlayerToController__18EControllerManagerFUi":
 /* 802A6A00 002A26A0  38 00 00 01 */	li r0, 1
 /* 802A6A04 002A26A4  90 83 00 04 */	stw r4, 4(r3)
 /* 802A6A08 002A26A8  98 03 00 08 */	stb r0, 8(r3)
-/* 802A6A0C 002A26AC  4E 80 00 20 */	blr 
+/* 802A6A0C 002A26AC  4E 80 00 20 */	blr
 
 .global "SwapPlayerControls__18EControllerManagerFUiUi"
 "SwapPlayerControls__18EControllerManagerFUiUi":
-/* 802A6A10 002A26B0  4E 80 00 20 */	blr 
+/* 802A6A10 002A26B0  4E 80 00 20 */	blr
 
 .global "UnmapPlayer__18EControllerManagerFv"
 "UnmapPlayer__18EControllerManagerFv":
 /* 802A6A14 002A26B4  38 00 00 00 */	li r0, 0
 /* 802A6A18 002A26B8  98 03 00 08 */	stb r0, 8(r3)
-/* 802A6A1C 002A26BC  4E 80 00 20 */	blr 
+/* 802A6A1C 002A26BC  4E 80 00 20 */	blr
 
 .global "GetPlayerMapped__18EControllerManagerFv"
 "GetPlayerMapped__18EControllerManagerFv":
 /* 802A6A20 002A26C0  88 63 00 08 */	lbz r3, 8(r3)
-/* 802A6A24 002A26C4  4E 80 00 20 */	blr 
+/* 802A6A24 002A26C4  4E 80 00 20 */	blr
 
 .global "GetController__18EControllerManagerFUi"
 "GetController__18EControllerManagerFUi":
 /* 802A6A28 002A26C8  2C 04 00 04 */	cmpwi r4, 4
 /* 802A6A2C 002A26CC  38 60 00 00 */	li r3, 0
-/* 802A6A30 002A26D0  4C 80 00 20 */	bgelr 
+/* 802A6A30 002A26D0  4C 80 00 20 */	bgelr
 /* 802A6A34 002A26D4  3C 60 80 51 */	lis r3, "_ctrlPads__18EControllerManager"@ha
 /* 802A6A38 002A26D8  54 80 10 3A */	slwi r0, r4, 2
 /* 802A6A3C 002A26DC  38 63 37 58 */	addi r3, r3, "_ctrlPads__18EControllerManager"@l
 /* 802A6A40 002A26E0  7C 63 00 2E */	lwzx r3, r3, r0
-/* 802A6A44 002A26E4  4E 80 00 20 */	blr 
+/* 802A6A44 002A26E4  4E 80 00 20 */	blr
 
 .global "GetPlayerControllerIndex__18EControllerManagerFv"
 "GetPlayerControllerIndex__18EControllerManagerFv":
 /* 802A6A48 002A26E8  80 63 00 04 */	lwz r3, 4(r3)
-/* 802A6A4C 002A26EC  4E 80 00 20 */	blr 
+/* 802A6A4C 002A26EC  4E 80 00 20 */	blr
 
 .global "GetPlayerController__18EControllerManagerFv"
 "GetPlayerController__18EControllerManagerFv":
@@ -1258,13 +1258,13 @@ lbl_802A69C0:
 /* 802A6A54 002A26F4  2C 00 FF FF */	cmpwi r0, -1
 /* 802A6A58 002A26F8  40 82 00 0C */	bne lbl_802A6A64
 /* 802A6A5C 002A26FC  38 60 00 00 */	li r3, 0
-/* 802A6A60 002A2700  4E 80 00 20 */	blr 
+/* 802A6A60 002A2700  4E 80 00 20 */	blr
 lbl_802A6A64:
 /* 802A6A64 002A2704  3C 60 80 51 */	lis r3, "_ctrlPads__18EControllerManager"@ha
 /* 802A6A68 002A2708  54 00 10 3A */	slwi r0, r0, 2
 /* 802A6A6C 002A270C  38 63 37 58 */	addi r3, r3, "_ctrlPads__18EControllerManager"@l
 /* 802A6A70 002A2710  7C 63 00 2E */	lwzx r3, r3, r0
-/* 802A6A74 002A2714  4E 80 00 20 */	blr 
+/* 802A6A74 002A2714  4E 80 00 20 */	blr
 
 .global "FindActiveController__18EControllerManagerFv"
 "FindActiveController__18EControllerManagerFv":
@@ -1298,7 +1298,7 @@ lbl_802A6AC8:
 /* 802A6AD8 002A2778  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6ADC 002A277C  7C 08 03 A6 */	mtlr r0
 /* 802A6AE0 002A2780  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6AE4 002A2784  4E 80 00 20 */	blr 
+/* 802A6AE4 002A2784  4E 80 00 20 */	blr
 
 .global "Flush__18EControllerManagerFv"
 "Flush__18EControllerManagerFv":
@@ -1315,7 +1315,7 @@ lbl_802A6B08:
 /* 802A6B0C 002A27AC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A6B10 002A27B0  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 802A6B14 002A27B4  7D 89 03 A6 */	mtctr r12
-/* 802A6B18 002A27B8  4E 80 04 21 */	bctrl 
+/* 802A6B18 002A27B8  4E 80 04 21 */	bctrl
 /* 802A6B1C 002A27BC  3B DE 00 01 */	addi r30, r30, 1
 /* 802A6B20 002A27C0  3B FF 00 04 */	addi r31, r31, 4
 /* 802A6B24 002A27C4  2C 1E 00 04 */	cmpwi r30, 4
@@ -1325,7 +1325,7 @@ lbl_802A6B08:
 /* 802A6B34 002A27D4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A6B38 002A27D8  7C 08 03 A6 */	mtlr r0
 /* 802A6B3C 002A27DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A6B40 002A27E0  4E 80 00 20 */	blr 
+/* 802A6B40 002A27E0  4E 80 00 20 */	blr
 
 .global "GetCmdResultAllCtrl__18EControllerManagerFUiM11EControllerFPCvPvUi_UiM11EControllerFPCvPvUi_UibPUiUi"
 "GetCmdResultAllCtrl__18EControllerManagerFUiM11EControllerFPCvPvUi_UiM11EControllerFPCvPvUi_UibPUiUi":
@@ -1356,13 +1356,13 @@ lbl_802A6B98:
 /* 802A6B9C 002A283C  7F 44 D3 78 */	mr r4, r26
 /* 802A6BA0 002A2840  7E EC BB 78 */	mr r12, r23
 /* 802A6BA4 002A2844  48 16 86 81 */	bl "__ptmf_scall"
-/* 802A6BA8 002A2848  60 00 00 00 */	nop 
+/* 802A6BA8 002A2848  60 00 00 00 */	nop
 /* 802A6BAC 002A284C  7C 7E 1B 78 */	mr r30, r3
 /* 802A6BB0 002A2850  7F 83 E3 78 */	mr r3, r28
 /* 802A6BB4 002A2854  7F 44 D3 78 */	mr r4, r26
 /* 802A6BB8 002A2858  7E CC B3 78 */	mr r12, r22
 /* 802A6BBC 002A285C  48 16 86 69 */	bl "__ptmf_scall"
-/* 802A6BC0 002A2860  60 00 00 00 */	nop 
+/* 802A6BC0 002A2860  60 00 00 00 */	nop
 /* 802A6BC4 002A2864  7C 65 1B 78 */	mr r5, r3
 /* 802A6BC8 002A2868  7F 83 E3 78 */	mr r3, r28
 /* 802A6BCC 002A286C  7E A4 AB 78 */	mr r4, r21
@@ -1388,7 +1388,7 @@ lbl_802A6C08:
 /* 802A6C10 002A28B0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A6C14 002A28B4  7C 08 03 A6 */	mtlr r0
 /* 802A6C18 002A28B8  38 21 00 40 */	addi r1, r1, 0x40
-/* 802A6C1C 002A28BC  4E 80 00 20 */	blr 
+/* 802A6C1C 002A28BC  4E 80 00 20 */	blr
 
 .global "MapControllerCommands__18EControllerManagerFP14EBtnToCmdAssoci"
 "MapControllerCommands__18EControllerManagerFP14EBtnToCmdAssoci":
@@ -1406,7 +1406,7 @@ lbl_802A6C08:
 /* 802A6C4C 002A28EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A6C50 002A28F0  7C 08 03 A6 */	mtlr r0
 /* 802A6C54 002A28F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A6C58 002A28F8  4E 80 00 20 */	blr 
+/* 802A6C58 002A28F8  4E 80 00 20 */	blr
 
 .global "AddRef__15EDatasetManagerFPCcP5EFilei"
 "AddRef__15EDatasetManagerFPCcP5EFilei":
@@ -1418,7 +1418,7 @@ lbl_802A6C08:
 /* 802A6C70 002A2910  48 00 1A 9C */	b "AddRef__16EResourceManagerFPCcP5EFilei"
 lbl_802A6C74:
 /* 802A6C74 002A2914  38 60 00 01 */	li r3, 1
-/* 802A6C78 002A2918  4E 80 00 20 */	blr 
+/* 802A6C78 002A2918  4E 80 00 20 */	blr
 
 .global "AddRefAsync__15EDatasetManagerFPCc"
 "AddRefAsync__15EDatasetManagerFPCc":
@@ -1428,7 +1428,7 @@ lbl_802A6C74:
 /* 802A6C88 002A2928  48 00 1A E8 */	b "AddRefAsync__16EResourceManagerFPCc"
 lbl_802A6C8C:
 /* 802A6C8C 002A292C  38 60 00 01 */	li r3, 1
-/* 802A6C90 002A2930  4E 80 00 20 */	blr 
+/* 802A6C90 002A2930  4E 80 00 20 */	blr
 
 .global "AddRefAsyncIfNotLoaded__15EDatasetManagerFPCc"
 "AddRefAsyncIfNotLoaded__15EDatasetManagerFPCc":
@@ -1446,29 +1446,29 @@ lbl_802A6C8C:
 /* 802A6CC0 002A2960  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A6CC4 002A2964  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 802A6CC8 002A2968  7D 89 03 A6 */	mtctr r12
-/* 802A6CCC 002A296C  4E 80 04 21 */	bctrl 
+/* 802A6CCC 002A296C  4E 80 04 21 */	bctrl
 /* 802A6CD0 002A2970  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802A6CD4 002A2974  7F C3 F3 78 */	mr r3, r30
 /* 802A6CD8 002A2978  7F E4 FB 78 */	mr r4, r31
 /* 802A6CDC 002A297C  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802A6CE0 002A2980  7D 89 03 A6 */	mtctr r12
-/* 802A6CE4 002A2984  4E 80 04 21 */	bctrl 
+/* 802A6CE4 002A2984  4E 80 04 21 */	bctrl
 lbl_802A6CE8:
 /* 802A6CE8 002A2988  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A6CEC 002A298C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A6CF0 002A2990  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A6CF4 002A2994  7C 08 03 A6 */	mtlr r0
 /* 802A6CF8 002A2998  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A6CFC 002A299C  4E 80 00 20 */	blr 
+/* 802A6CFC 002A299C  4E 80 00 20 */	blr
 
 .global "DelRef__15EDatasetManagerFP9EResourceQ216EResourceManager10DelRefMode"
 "DelRef__15EDatasetManagerFP9EResourceQ216EResourceManager10DelRefMode":
 /* 802A6D00 002A29A0  2C 04 00 00 */	cmpwi r4, 0
-/* 802A6D04 002A29A4  4D 82 00 20 */	beqlr 
+/* 802A6D04 002A29A4  4D 82 00 20 */	beqlr
 /* 802A6D08 002A29A8  28 04 00 01 */	cmplwi r4, 1
-/* 802A6D0C 002A29AC  4D 82 00 20 */	beqlr 
+/* 802A6D0C 002A29AC  4D 82 00 20 */	beqlr
 /* 802A6D10 002A29B0  48 00 1D DC */	b "DelRef__16EResourceManagerFP9EResourceQ216EResourceManager10DelRefMode"
-/* 802A6D14 002A29B4  4E 80 00 20 */	blr 
+/* 802A6D14 002A29B4  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__15EDatasetManagerFP5EFileUiUi"
 "AllocateAndLoadResource__15EDatasetManagerFP5EFileUiUi":
@@ -1505,12 +1505,12 @@ lbl_802A6D60:
 /* 802A6D8C 002A2A2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6D90 002A2A30  7C 08 03 A6 */	mtlr r0
 /* 802A6D94 002A2A34  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6D98 002A2A38  4E 80 00 20 */	blr 
+/* 802A6D98 002A2A38  4E 80 00 20 */	blr
 
 .global "SetLoadProgress__15EDatasetManagerFf"
 "SetLoadProgress__15EDatasetManagerFf":
 /* 802A6D9C 002A2A3C  D0 23 0D 50 */	stfs f1, 0xd50(r3)
-/* 802A6DA0 002A2A40  4E 80 00 20 */	blr 
+/* 802A6DA0 002A2A40  4E 80 00 20 */	blr
 
 .global "PreloadResource__15EDatasetManagerFPCc"
 "PreloadResource__15EDatasetManagerFPCc":
@@ -1520,7 +1520,7 @@ lbl_802A6D60:
 /* 802A6DB0 002A2A50  48 00 14 80 */	b "PreloadResource__16EResourceManagerFPCc"
 lbl_802A6DB4:
 /* 802A6DB4 002A2A54  38 60 00 01 */	li r3, 1
-/* 802A6DB8 002A2A58  4E 80 00 20 */	blr 
+/* 802A6DB8 002A2A58  4E 80 00 20 */	blr
 
 .global "GetRef__15EDatasetManagerFPCc"
 "GetRef__15EDatasetManagerFPCc":
@@ -1539,7 +1539,7 @@ lbl_802A6DB4:
 /* 802A6DEC 002A2A8C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A6DF0 002A2A90  7C 08 03 A6 */	mtlr r0
 /* 802A6DF4 002A2A94  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A6DF8 002A2A98  4E 80 00 20 */	blr 
+/* 802A6DF8 002A2A98  4E 80 00 20 */	blr
 
 .global "GetRef__15EDatasetManagerFUi"
 "GetRef__15EDatasetManagerFUi":
@@ -1549,7 +1549,7 @@ lbl_802A6DB4:
 /* 802A6E08 002A2AA8  48 00 12 44 */	b "GetRef__16EResourceManagerFUi"
 lbl_802A6E0C:
 /* 802A6E0C 002A2AAC  38 60 00 01 */	li r3, 1
-/* 802A6E10 002A2AB0  4E 80 00 20 */	blr 
+/* 802A6E10 002A2AB0  4E 80 00 20 */	blr
 
 .global "GetHeap__16EEdithTreeSetManFv"
 "GetHeap__16EEdithTreeSetManFv":
@@ -1590,7 +1590,7 @@ lbl_802A6E64:
 /* 802A6E8C 002A2B2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6E90 002A2B30  7C 08 03 A6 */	mtlr r0
 /* 802A6E94 002A2B34  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6E98 002A2B38  4E 80 00 20 */	blr 
+/* 802A6E98 002A2B38  4E 80 00 20 */	blr
 
 .global "GetHeap__13EFlashManagerFv"
 "GetHeap__13EFlashManagerFv":
@@ -1632,7 +1632,7 @@ lbl_802A6EF0:
 /* 802A6F18 002A2BB8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6F1C 002A2BBC  7C 08 03 A6 */	mtlr r0
 /* 802A6F20 002A2BC0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6F24 002A2BC4  4E 80 00 20 */	blr 
+/* 802A6F24 002A2BC4  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__12EFontManagerFP5EFileUiUi"
 "AllocateAndLoadResource__12EFontManagerFP5EFileUiUi":
@@ -1662,7 +1662,7 @@ lbl_802A6F74:
 /* 802A6F80 002A2C20  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A6F84 002A2C24  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802A6F88 002A2C28  7D 89 03 A6 */	mtctr r12
-/* 802A6F8C 002A2C2C  4E 80 04 21 */	bctrl 
+/* 802A6F8C 002A2C2C  4E 80 04 21 */	bctrl
 /* 802A6F90 002A2C30  7F E3 FB 78 */	mr r3, r31
 /* 802A6F94 002A2C34  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802A6F98 002A2C38  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1670,7 +1670,7 @@ lbl_802A6F74:
 /* 802A6FA0 002A2C40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6FA4 002A2C44  7C 08 03 A6 */	mtlr r0
 /* 802A6FA8 002A2C48  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A6FAC 002A2C4C  4E 80 00 20 */	blr 
+/* 802A6FAC 002A2C4C  4E 80 00 20 */	blr
 
 .global "GetHeap__13EModelManagerFv"
 "GetHeap__13EModelManagerFv":
@@ -1708,7 +1708,7 @@ lbl_802A6FFC:
 /* 802A701C 002A2CBC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A7020 002A2CC0  7C 08 03 A6 */	mtlr r0
 /* 802A7024 002A2CC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A7028 002A2CC8  4E 80 00 20 */	blr 
+/* 802A7028 002A2CC8  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__9EMovieManFP5EFileUiUi"
 "AllocateAndLoadResource__9EMovieManFP5EFileUiUi":
@@ -1725,7 +1725,7 @@ lbl_802A6FFC:
 /* 802A7054 002A2CF4  7C DD 33 78 */	mr r29, r6
 /* 802A7058 002A2CF8  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802A705C 002A2CFC  7D 89 03 A6 */	mtctr r12
-/* 802A7060 002A2D00  4E 80 04 21 */	bctrl 
+/* 802A7060 002A2D00  4E 80 04 21 */	bctrl
 /* 802A7064 002A2D04  7C 7E 1B 78 */	mr r30, r3
 /* 802A7068 002A2D08  4B FA B0 99 */	bl "MainHeap__Fv"
 /* 802A706C 002A2D0C  38 80 00 28 */	li r4, 0x28
@@ -1746,7 +1746,7 @@ lbl_802A709C:
 /* 802A70A4 002A2D44  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802A70A8 002A2D48  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802A70AC 002A2D4C  7D 89 03 A6 */	mtctr r12
-/* 802A70B0 002A2D50  4E 80 04 21 */	bctrl 
+/* 802A70B0 002A2D50  4E 80 04 21 */	bctrl
 /* 802A70B4 002A2D54  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802A70B8 002A2D58  7C 60 1B 78 */	mr r0, r3
 /* 802A70BC 002A2D5C  7C 1E 00 50 */	subf r0, r30, r0
@@ -1755,14 +1755,14 @@ lbl_802A709C:
 /* 802A70C8 002A2D68  7C 80 E0 50 */	subf r4, r0, r28
 /* 802A70CC 002A2D6C  38 A0 00 01 */	li r5, 1
 /* 802A70D0 002A2D70  7D 89 03 A6 */	mtctr r12
-/* 802A70D4 002A2D74  4E 80 04 21 */	bctrl 
+/* 802A70D4 002A2D74  4E 80 04 21 */	bctrl
 /* 802A70D8 002A2D78  39 61 00 20 */	addi r11, r1, 0x20
 /* 802A70DC 002A2D7C  7F E3 FB 78 */	mr r3, r31
 /* 802A70E0 002A2D80  48 16 82 DD */	bl "_restgpr_26"
 /* 802A70E4 002A2D84  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A70E8 002A2D88  7C 08 03 A6 */	mtlr r0
 /* 802A70EC 002A2D8C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A70F0 002A2D90  4E 80 00 20 */	blr 
+/* 802A70F0 002A2D90  4E 80 00 20 */	blr
 
 .global "GetHeap__17EQuickdataManagerFv"
 "GetHeap__17EQuickdataManagerFv":
@@ -1795,7 +1795,7 @@ lbl_802A7144:
 /* 802A714C 002A2DEC  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802A7150 002A2DF0  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802A7154 002A2DF4  7D 89 03 A6 */	mtctr r12
-/* 802A7158 002A2DF8  4E 80 04 21 */	bctrl 
+/* 802A7158 002A2DF8  4E 80 04 21 */	bctrl
 /* 802A715C 002A2DFC  80 BB 0D 44 */	lwz r5, 0xd44(r27)
 /* 802A7160 002A2E00  7C 7F 1B 78 */	mr r31, r3
 /* 802A7164 002A2E04  7F C3 F3 78 */	mr r3, r30
@@ -1807,14 +1807,14 @@ lbl_802A7144:
 /* 802A717C 002A2E1C  38 A0 00 00 */	li r5, 0
 /* 802A7180 002A2E20  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802A7184 002A2E24  7D 89 03 A6 */	mtctr r12
-/* 802A7188 002A2E28  4E 80 04 21 */	bctrl 
+/* 802A7188 002A2E28  4E 80 04 21 */	bctrl
 /* 802A718C 002A2E2C  39 61 00 20 */	addi r11, r1, 0x20
 /* 802A7190 002A2E30  7F C3 F3 78 */	mr r3, r30
 /* 802A7194 002A2E34  48 16 82 2D */	bl "_restgpr_27"
 /* 802A7198 002A2E38  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A719C 002A2E3C  7C 08 03 A6 */	mtlr r0
 /* 802A71A0 002A2E40  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A71A4 002A2E44  4E 80 00 20 */	blr 
+/* 802A71A4 002A2E44  4E 80 00 20 */	blr
 
 .global "__ct__16EResourceManagerFv"
 "__ct__16EResourceManagerFv":
@@ -1854,7 +1854,7 @@ lbl_802A7144:
 /* 802A722C 002A2ECC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A7230 002A2ED0  7C 08 03 A6 */	mtlr r0
 /* 802A7234 002A2ED4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A7238 002A2ED8  4E 80 00 20 */	blr 
+/* 802A7238 002A2ED8  4E 80 00 20 */	blr
 
 .global "__dt__16EResourceManagerFv"
 "__dt__16EResourceManagerFv":
@@ -1876,7 +1876,7 @@ lbl_802A7144:
 /* 802A7278 002A2F18  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A727C 002A2F1C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A7280 002A2F20  7D 89 03 A6 */	mtctr r12
-/* 802A7284 002A2F24  4E 80 04 21 */	bctrl 
+/* 802A7284 002A2F24  4E 80 04 21 */	bctrl
 lbl_802A7288:
 /* 802A7288 002A2F28  34 7E 0D 28 */	addic. r3, r30, 0xd28
 /* 802A728C 002A2F2C  41 82 00 10 */	beq lbl_802A729C
@@ -1917,7 +1917,7 @@ lbl_802A72F8:
 /* 802A7304 002A2FA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A7308 002A2FA8  7C 08 03 A6 */	mtlr r0
 /* 802A730C 002A2FAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A7310 002A2FB0  4E 80 00 20 */	blr 
+/* 802A7310 002A2FB0  4E 80 00 20 */	blr
 
 .global "Shutdown__16EResourceManagerFv"
 "Shutdown__16EResourceManagerFv":
@@ -1937,7 +1937,7 @@ lbl_802A72F8:
 /* 802A7348 002A2FE8  7F E4 FB 78 */	mr r4, r31
 /* 802A734C 002A2FEC  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802A7350 002A2FF0  7D 89 03 A6 */	mtctr r12
-/* 802A7354 002A2FF4  4E 80 04 21 */	bctrl 
+/* 802A7354 002A2FF4  4E 80 04 21 */	bctrl
 lbl_802A7358:
 /* 802A7358 002A2FF8  7F E3 FB 78 */	mr r3, r31
 /* 802A735C 002A2FFC  48 00 07 19 */	bl "CloseArchiveFile__16EResourceManagerFv"
@@ -1947,7 +1947,7 @@ lbl_802A7358:
 /* 802A736C 002A300C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A7370 002A3010  7C 08 03 A6 */	mtlr r0
 /* 802A7374 002A3014  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A7378 002A3018  4E 80 00 20 */	blr 
+/* 802A7378 002A3018  4E 80 00 20 */	blr
 
 .global "Init__16EResourceManagerFPCc"
 "Init__16EResourceManagerFPCc":
@@ -1967,7 +1967,7 @@ lbl_802A7358:
 /* 802A73B0 002A3050  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A73B4 002A3054  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802A73B8 002A3058  7D 89 03 A6 */	mtctr r12
-/* 802A73BC 002A305C  4E 80 04 21 */	bctrl 
+/* 802A73BC 002A305C  4E 80 04 21 */	bctrl
 /* 802A73C0 002A3060  83 BF 00 44 */	lwz r29, 0x44(r31)
 /* 802A73C4 002A3064  90 7F 00 54 */	stw r3, 0x54(r31)
 /* 802A73C8 002A3068  38 6D A0 38 */	addi r3, r13, lbl_805D6718-_SDA_BASE_
@@ -2293,7 +2293,7 @@ lbl_802A7854:
 /* 802A7868 002A3508  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802A786C 002A350C  7C 08 03 A6 */	mtlr r0
 /* 802A7870 002A3510  38 21 00 30 */	addi r1, r1, 0x30
-/* 802A7874 002A3514  4E 80 00 20 */	blr 
+/* 802A7874 002A3514  4E 80 00 20 */	blr
 
 .global "CalcPath__16EResourceManagerFv"
 "CalcPath__16EResourceManagerFv":
@@ -2351,7 +2351,7 @@ lbl_802A78D0:
 /* 802A7940 002A35E0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802A7944 002A35E4  7C 08 03 A6 */	mtlr r0
 /* 802A7948 002A35E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A794C 002A35EC  4E 80 00 20 */	blr 
+/* 802A794C 002A35EC  4E 80 00 20 */	blr
 
 .global "GetArchiveFile__16EResourceManagerFv"
 "GetArchiveFile__16EResourceManagerFv":
@@ -2371,7 +2371,7 @@ lbl_802A7978:
 /* 802A7980 002A3620  38 80 FF FF */	li r4, -1
 /* 802A7984 002A3624  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A7988 002A3628  7D 89 03 A6 */	mtctr r12
-/* 802A798C 002A362C  4E 80 04 21 */	bctrl 
+/* 802A798C 002A362C  4E 80 04 21 */	bctrl
 /* 802A7990 002A3630  88 9B 00 5C */	lbz r4, 0x5c(r27)
 /* 802A7994 002A3634  38 7E 7C 58 */	addi r3, r30, 0x7c58
 /* 802A7998 002A3638  7C 04 00 D0 */	neg r0, r4
@@ -2402,7 +2402,7 @@ lbl_802A7978:
 /* 802A79FC 002A369C  38 E0 00 00 */	li r7, 0
 /* 802A7A00 002A36A0  39 20 00 00 */	li r9, 0
 /* 802A7A04 002A36A4  7D 89 03 A6 */	mtctr r12
-/* 802A7A08 002A36A8  4E 80 04 21 */	bctrl 
+/* 802A7A08 002A36A8  4E 80 04 21 */	bctrl
 /* 802A7A0C 002A36AC  48 00 00 30 */	b lbl_802A7A3C
 lbl_802A7A10:
 /* 802A7A10 002A36B0  38 7E 7C 58 */	addi r3, r30, 0x7c58
@@ -2415,13 +2415,13 @@ lbl_802A7A10:
 /* 802A7A2C 002A36CC  3C E0 80 00 */	lis r7, 0x8000
 /* 802A7A30 002A36D0  39 20 00 00 */	li r9, 0
 /* 802A7A34 002A36D4  7D 89 03 A6 */	mtctr r12
-/* 802A7A38 002A36D8  4E 80 04 21 */	bctrl 
+/* 802A7A38 002A36D8  4E 80 04 21 */	bctrl
 lbl_802A7A3C:
 /* 802A7A3C 002A36DC  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802A7A40 002A36E0  7F A3 EB 78 */	mr r3, r29
 /* 802A7A44 002A36E4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A7A48 002A36E8  7D 89 03 A6 */	mtctr r12
-/* 802A7A4C 002A36EC  4E 80 04 21 */	bctrl 
+/* 802A7A4C 002A36EC  4E 80 04 21 */	bctrl
 lbl_802A7A50:
 /* 802A7A50 002A36F0  80 7B 00 58 */	lwz r3, 0x58(r27)
 /* 802A7A54 002A36F4  2C 03 00 00 */	cmpwi r3, 0
@@ -2431,7 +2431,7 @@ lbl_802A7A50:
 /* 802A7A64 002A3704  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A7A68 002A3708  7C 08 03 A6 */	mtlr r0
 /* 802A7A6C 002A370C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A7A70 002A3710  4E 80 00 20 */	blr 
+/* 802A7A70 002A3710  4E 80 00 20 */	blr
 
 .global "CloseArchiveFile__16EResourceManagerFv"
 "CloseArchiveFile__16EResourceManagerFv":
@@ -2445,7 +2445,7 @@ lbl_802A7A50:
 /* 802A7A90 002A3730  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A7A94 002A3734  7D 89 03 A6 */	mtctr r12
 /* 802A7A98 002A3738  38 63 00 04 */	addi r3, r3, 4
-/* 802A7A9C 002A373C  4E 80 04 21 */	bctrl 
+/* 802A7A9C 002A373C  4E 80 04 21 */	bctrl
 /* 802A7AA0 002A3740  80 9F 00 58 */	lwz r4, 0x58(r31)
 /* 802A7AA4 002A3744  38 00 00 00 */	li r0, 0
 /* 802A7AA8 002A3748  38 7F 00 04 */	addi r3, r31, 4
@@ -2454,7 +2454,7 @@ lbl_802A7A50:
 /* 802A7AB4 002A3754  81 9F 00 04 */	lwz r12, 4(r31)
 /* 802A7AB8 002A3758  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A7ABC 002A375C  7D 89 03 A6 */	mtctr r12
-/* 802A7AC0 002A3760  4E 80 04 21 */	bctrl 
+/* 802A7AC0 002A3760  4E 80 04 21 */	bctrl
 /* 802A7AC4 002A3764  80 01 00 08 */	lwz r0, 8(r1)
 /* 802A7AC8 002A3768  2C 00 00 00 */	cmpwi r0, 0
 /* 802A7ACC 002A376C  41 82 00 14 */	beq lbl_802A7AE0
@@ -2467,7 +2467,7 @@ lbl_802A7AE0:
 /* 802A7AE4 002A3784  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802A7AE8 002A3788  7C 08 03 A6 */	mtlr r0
 /* 802A7AEC 002A378C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A7AF0 002A3790  4E 80 00 20 */	blr 
+/* 802A7AF0 002A3790  4E 80 00 20 */	blr
 
 .global "BinarySearch__16EResourceManagerFUiPUii"
 "BinarySearch__16EResourceManagerFUiPUii":
@@ -2501,10 +2501,10 @@ lbl_802A7B38:
 /* 802A7B54 002A37F4  7C C5 33 78 */	mr r5, r6
 lbl_802A7B58:
 /* 802A7B58 002A37F8  7C A3 2B 78 */	mr r3, r5
-/* 802A7B5C 002A37FC  4E 80 00 20 */	blr 
+/* 802A7B5C 002A37FC  4E 80 00 20 */	blr
 lbl_802A7B60:
 /* 802A7B60 002A3800  38 60 FF FF */	li r3, -1
-/* 802A7B64 002A3804  4E 80 00 20 */	blr 
+/* 802A7B64 002A3804  4E 80 00 20 */	blr
 
 .global "LookupId__16EResourceManagerFUiRUiRUi"
 "LookupId__16EResourceManagerFUiRUiRUi":
@@ -2572,7 +2572,7 @@ lbl_802A7C34:
 /* 802A7C40 002A38E0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A7C44 002A38E4  7C 08 03 A6 */	mtlr r0
 /* 802A7C48 002A38E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A7C4C 002A38EC  4E 80 00 20 */	blr 
+/* 802A7C4C 002A38EC  4E 80 00 20 */	blr
 
 .global "AddRefAll__16EResourceManagerFv"
 "AddRefAll__16EResourceManagerFv":
@@ -2691,7 +2691,7 @@ lbl_802A7DD8:
 /* 802A7DE0 002A3A80  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A7DE4 002A3A84  7C 08 03 A6 */	mtlr r0
 /* 802A7DE8 002A3A88  38 21 00 40 */	addi r1, r1, 0x40
-/* 802A7DEC 002A3A8C  4E 80 00 20 */	blr 
+/* 802A7DEC 002A3A8C  4E 80 00 20 */	blr
 
 .global "AddDelRefAll__16EResourceManagerFv"
 "AddDelRefAll__16EResourceManagerFv":
@@ -2815,7 +2815,7 @@ lbl_802A7F8C:
 /* 802A7F94 002A3C34  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A7F98 002A3C38  7C 08 03 A6 */	mtlr r0
 /* 802A7F9C 002A3C3C  38 21 00 40 */	addi r1, r1, 0x40
-/* 802A7FA0 002A3C40  4E 80 00 20 */	blr 
+/* 802A7FA0 002A3C40  4E 80 00 20 */	blr
 
 .global "DelRefAll__16EResourceManagerFv"
 "DelRefAll__16EResourceManagerFv":
@@ -2865,7 +2865,7 @@ lbl_802A802C:
 /* 802A803C 002A3CDC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802A8040 002A3CE0  7C 08 03 A6 */	mtlr r0
 /* 802A8044 002A3CE4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8048 002A3CE8  4E 80 00 20 */	blr 
+/* 802A8048 002A3CE8  4E 80 00 20 */	blr
 
 .global "GetRef__16EResourceManagerFUi"
 "GetRef__16EResourceManagerFUi":
@@ -2887,7 +2887,7 @@ lbl_802A807C:
 /* 802A8084 002A3D24  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8088 002A3D28  7C 7F 1B 78 */	mr r31, r3
 /* 802A808C 002A3D2C  7D 89 03 A6 */	mtctr r12
-/* 802A8090 002A3D30  4E 80 04 21 */	bctrl 
+/* 802A8090 002A3D30  4E 80 04 21 */	bctrl
 /* 802A8094 002A3D34  7F C4 F3 78 */	mr r4, r30
 /* 802A8098 002A3D38  38 7D 0D 14 */	addi r3, r29, 0xd14
 /* 802A809C 002A3D3C  38 A1 00 08 */	addi r5, r1, 8
@@ -2902,7 +2902,7 @@ lbl_802A807C:
 /* 802A80C0 002A3D60  7F E3 FB 78 */	mr r3, r31
 /* 802A80C4 002A3D64  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A80C8 002A3D68  7D 89 03 A6 */	mtctr r12
-/* 802A80CC 002A3D6C  4E 80 04 21 */	bctrl 
+/* 802A80CC 002A3D6C  4E 80 04 21 */	bctrl
 /* 802A80D0 002A3D70  7F C3 F3 78 */	mr r3, r30
 /* 802A80D4 002A3D74  48 00 00 1C */	b lbl_802A80F0
 lbl_802A80D8:
@@ -2910,7 +2910,7 @@ lbl_802A80D8:
 /* 802A80DC 002A3D7C  7F E3 FB 78 */	mr r3, r31
 /* 802A80E0 002A3D80  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A80E4 002A3D84  7D 89 03 A6 */	mtctr r12
-/* 802A80E8 002A3D88  4E 80 04 21 */	bctrl 
+/* 802A80E8 002A3D88  4E 80 04 21 */	bctrl
 /* 802A80EC 002A3D8C  38 60 00 00 */	li r3, 0
 lbl_802A80F0:
 /* 802A80F0 002A3D90  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -2919,7 +2919,7 @@ lbl_802A80F0:
 /* 802A80FC 002A3D9C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A8100 002A3DA0  7C 08 03 A6 */	mtlr r0
 /* 802A8104 002A3DA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8108 002A3DA8  4E 80 00 20 */	blr 
+/* 802A8108 002A3DA8  4E 80 00 20 */	blr
 
 .global "GetRef__16EResourceManagerFPCc"
 "GetRef__16EResourceManagerFPCc":
@@ -2938,7 +2938,7 @@ lbl_802A80F0:
 /* 802A813C 002A3DDC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A8140 002A3DE0  7C 08 03 A6 */	mtlr r0
 /* 802A8144 002A3DE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8148 002A3DE8  4E 80 00 20 */	blr 
+/* 802A8148 002A3DE8  4E 80 00 20 */	blr
 
 .global "ReadData__16EResourceManagerFPvUiUi"
 "ReadData__16EResourceManagerFPvUiUi":
@@ -2955,7 +2955,7 @@ lbl_802A80F0:
 /* 802A8174 002A3E14  39 00 00 01 */	li r8, 1
 /* 802A8178 002A3E18  39 20 00 00 */	li r9, 0
 /* 802A817C 002A3E1C  7D 89 03 A6 */	mtctr r12
-/* 802A8180 002A3E20  4E 80 04 20 */	bctr 
+/* 802A8180 002A3E20  4E 80 04 20 */	bctr
 
 .global "PreloadResource__16EResourceManagerFUi"
 "PreloadResource__16EResourceManagerFUi":
@@ -2978,7 +2978,7 @@ lbl_802A81B4:
 /* 802A81C0 002A3E60  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A81C4 002A3E64  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802A81C8 002A3E68  7D 89 03 A6 */	mtctr r12
-/* 802A81CC 002A3E6C  4E 80 04 21 */	bctrl 
+/* 802A81CC 002A3E6C  4E 80 04 21 */	bctrl
 /* 802A81D0 002A3E70  2C 03 00 00 */	cmpwi r3, 0
 /* 802A81D4 002A3E74  40 82 00 38 */	bne lbl_802A820C
 /* 802A81D8 002A3E78  81 9E 00 00 */	lwz r12, 0(r30)
@@ -2986,14 +2986,14 @@ lbl_802A81B4:
 /* 802A81E0 002A3E80  7F E4 FB 78 */	mr r4, r31
 /* 802A81E4 002A3E84  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802A81E8 002A3E88  7D 89 03 A6 */	mtctr r12
-/* 802A81EC 002A3E8C  4E 80 04 21 */	bctrl 
+/* 802A81EC 002A3E8C  4E 80 04 21 */	bctrl
 /* 802A81F0 002A3E90  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
 /* 802A81F4 002A3E94  7F C4 F3 78 */	mr r4, r30
 /* 802A81F8 002A3E98  7F E5 FB 78 */	mr r5, r31
 /* 802A81FC 002A3E9C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A8200 002A3EA0  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802A8204 002A3EA4  7D 89 03 A6 */	mtctr r12
-/* 802A8208 002A3EA8  4E 80 04 21 */	bctrl 
+/* 802A8208 002A3EA8  4E 80 04 21 */	bctrl
 lbl_802A820C:
 /* 802A820C 002A3EAC  7F C3 F3 78 */	mr r3, r30
 /* 802A8210 002A3EB0  7F E4 FB 78 */	mr r4, r31
@@ -3004,7 +3004,7 @@ lbl_802A8218:
 /* 802A8220 002A3EC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A8224 002A3EC4  7C 08 03 A6 */	mtlr r0
 /* 802A8228 002A3EC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A822C 002A3ECC  4E 80 00 20 */	blr 
+/* 802A822C 002A3ECC  4E 80 00 20 */	blr
 
 .global "PreloadResource__16EResourceManagerFPCc"
 "PreloadResource__16EResourceManagerFPCc":
@@ -3032,7 +3032,7 @@ lbl_802A8274:
 /* 802A8280 002A3F20  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A8284 002A3F24  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802A8288 002A3F28  7D 89 03 A6 */	mtctr r12
-/* 802A828C 002A3F2C  4E 80 04 21 */	bctrl 
+/* 802A828C 002A3F2C  4E 80 04 21 */	bctrl
 /* 802A8290 002A3F30  2C 03 00 00 */	cmpwi r3, 0
 /* 802A8294 002A3F34  40 82 00 38 */	bne lbl_802A82CC
 /* 802A8298 002A3F38  81 9E 00 00 */	lwz r12, 0(r30)
@@ -3040,14 +3040,14 @@ lbl_802A8274:
 /* 802A82A0 002A3F40  7F E4 FB 78 */	mr r4, r31
 /* 802A82A4 002A3F44  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802A82A8 002A3F48  7D 89 03 A6 */	mtctr r12
-/* 802A82AC 002A3F4C  4E 80 04 21 */	bctrl 
+/* 802A82AC 002A3F4C  4E 80 04 21 */	bctrl
 /* 802A82B0 002A3F50  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
 /* 802A82B4 002A3F54  7F C4 F3 78 */	mr r4, r30
 /* 802A82B8 002A3F58  7F E5 FB 78 */	mr r5, r31
 /* 802A82BC 002A3F5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A82C0 002A3F60  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802A82C4 002A3F64  7D 89 03 A6 */	mtctr r12
-/* 802A82C8 002A3F68  4E 80 04 21 */	bctrl 
+/* 802A82C8 002A3F68  4E 80 04 21 */	bctrl
 lbl_802A82CC:
 /* 802A82CC 002A3F6C  7F C3 F3 78 */	mr r3, r30
 /* 802A82D0 002A3F70  7F E4 FB 78 */	mr r4, r31
@@ -3058,7 +3058,7 @@ lbl_802A82D8:
 /* 802A82E0 002A3F80  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A82E4 002A3F84  7C 08 03 A6 */	mtlr r0
 /* 802A82E8 002A3F88  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A82EC 002A3F8C  4E 80 00 20 */	blr 
+/* 802A82EC 002A3F8C  4E 80 00 20 */	blr
 
 .global "addRef__16EResourceManagerFUiP5EFileUib"
 "addRef__16EResourceManagerFUiP5EFileUib":
@@ -3084,7 +3084,7 @@ lbl_802A8334:
 /* 802A8338 002A3FD8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A833C 002A3FDC  81 8C 00 84 */	lwz r12, 0x84(r12)
 /* 802A8340 002A3FE0  7D 89 03 A6 */	mtctr r12
-/* 802A8344 002A3FE4  4E 80 04 21 */	bctrl 
+/* 802A8344 002A3FE4  4E 80 04 21 */	bctrl
 /* 802A8348 002A3FE8  80 01 00 08 */	lwz r0, 8(r1)
 /* 802A834C 002A3FEC  2C 00 00 00 */	cmpwi r0, 0
 /* 802A8350 002A3FF0  40 82 00 0C */	bne lbl_802A835C
@@ -3125,7 +3125,7 @@ lbl_802A8398:
 /* 802A83D4 002A4074  38 A0 00 01 */	li r5, 1
 /* 802A83D8 002A4078  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802A83DC 002A407C  7D 89 03 A6 */	mtctr r12
-/* 802A83E0 002A4080  4E 80 04 21 */	bctrl 
+/* 802A83E0 002A4080  4E 80 04 21 */	bctrl
 /* 802A83E4 002A4084  48 00 00 34 */	b lbl_802A8418
 lbl_802A83E8:
 /* 802A83E8 002A4088  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
@@ -3138,7 +3138,7 @@ lbl_802A83E8:
 /* 802A8404 002A40A4  38 E0 00 00 */	li r7, 0
 /* 802A8408 002A40A8  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802A840C 002A40AC  7D 89 03 A6 */	mtctr r12
-/* 802A8410 002A40B0  4E 80 04 21 */	bctrl 
+/* 802A8410 002A40B0  4E 80 04 21 */	bctrl
 /* 802A8414 002A40B4  90 61 00 10 */	stw r3, 0x10(r1)
 lbl_802A8418:
 /* 802A8418 002A40B8  80 61 00 10 */	lwz r3, 0x10(r1)
@@ -3150,7 +3150,7 @@ lbl_802A841C:
 /* 802A842C 002A40CC  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 802A8430 002A40D0  7C 08 03 A6 */	mtlr r0
 /* 802A8434 002A40D4  38 21 00 30 */	addi r1, r1, 0x30
-/* 802A8438 002A40D8  4E 80 00 20 */	blr 
+/* 802A8438 002A40D8  4E 80 00 20 */	blr
 
 .global "TryIncrementResource__16EResourceManagerFUiPP9EResource"
 "TryIncrementResource__16EResourceManagerFUiPP9EResource":
@@ -3170,7 +3170,7 @@ lbl_802A841C:
 /* 802A8470 002A4110  85 83 00 04 */	lwzu r12, 4(r3)
 /* 802A8474 002A4114  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8478 002A4118  7D 89 03 A6 */	mtctr r12
-/* 802A847C 002A411C  4E 80 04 21 */	bctrl 
+/* 802A847C 002A411C  4E 80 04 21 */	bctrl
 /* 802A8480 002A4120  7F 84 E3 78 */	mr r4, r28
 /* 802A8484 002A4124  7F C5 F3 78 */	mr r5, r30
 /* 802A8488 002A4128  38 7D 0D 14 */	addi r3, r29, 0xd14
@@ -3186,7 +3186,7 @@ lbl_802A841C:
 /* 802A84B0 002A4150  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A84B4 002A4154  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802A84B8 002A4158  7D 89 03 A6 */	mtctr r12
-/* 802A84BC 002A415C  4E 80 04 21 */	bctrl 
+/* 802A84BC 002A415C  4E 80 04 21 */	bctrl
 /* 802A84C0 002A4160  2C 03 00 00 */	cmpwi r3, 0
 /* 802A84C4 002A4164  41 82 00 94 */	beq lbl_802A8558
 /* 802A84C8 002A4168  80 9E 00 00 */	lwz r4, 0(r30)
@@ -3204,18 +3204,18 @@ lbl_802A84E0:
 /* 802A84F4 002A4194  81 9D 00 04 */	lwz r12, 4(r29)
 /* 802A84F8 002A4198  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A84FC 002A419C  7D 89 03 A6 */	mtctr r12
-/* 802A8500 002A41A0  4E 80 04 21 */	bctrl 
+/* 802A8500 002A41A0  4E 80 04 21 */	bctrl
 /* 802A8504 002A41A4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 802A8508 002A41A8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A850C 002A41AC  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802A8510 002A41B0  7D 89 03 A6 */	mtctr r12
-/* 802A8514 002A41B4  4E 80 04 21 */	bctrl 
+/* 802A8514 002A41B4  4E 80 04 21 */	bctrl
 /* 802A8518 002A41B8  81 9D 00 04 */	lwz r12, 4(r29)
 /* 802A851C 002A41BC  38 7D 00 04 */	addi r3, r29, 4
 /* 802A8520 002A41C0  38 80 FF FF */	li r4, -1
 /* 802A8524 002A41C4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8528 002A41C8  7D 89 03 A6 */	mtctr r12
-/* 802A852C 002A41CC  4E 80 04 21 */	bctrl 
+/* 802A852C 002A41CC  4E 80 04 21 */	bctrl
 /* 802A8530 002A41D0  80 9E 00 00 */	lwz r4, 0(r30)
 /* 802A8534 002A41D4  3B E0 00 01 */	li r31, 1
 /* 802A8538 002A41D8  A8 64 00 0C */	lha r3, 0xc(r4)
@@ -3238,7 +3238,7 @@ lbl_802A8558:
 /* 802A8578 002A4218  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A857C 002A421C  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 802A8580 002A4220  7D 89 03 A6 */	mtctr r12
-/* 802A8584 002A4224  4E 80 04 21 */	bctrl 
+/* 802A8584 002A4224  4E 80 04 21 */	bctrl
 /* 802A8588 002A4228  2C 03 00 00 */	cmpwi r3, 0
 /* 802A858C 002A422C  41 82 00 1C */	beq lbl_802A85A8
 /* 802A8590 002A4230  80 9E 00 00 */	lwz r4, 0(r30)
@@ -3264,7 +3264,7 @@ lbl_802A85D0:
 /* 802A85D4 002A4274  38 7D 00 04 */	addi r3, r29, 4
 /* 802A85D8 002A4278  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A85DC 002A427C  7D 89 03 A6 */	mtctr r12
-/* 802A85E0 002A4280  4E 80 04 21 */	bctrl 
+/* 802A85E0 002A4280  4E 80 04 21 */	bctrl
 /* 802A85E4 002A4284  2C 1F 00 00 */	cmpwi r31, 0
 /* 802A85E8 002A4288  40 82 00 0C */	bne lbl_802A85F4
 /* 802A85EC 002A428C  38 00 00 00 */	li r0, 0
@@ -3278,7 +3278,7 @@ lbl_802A85F4:
 /* 802A8608 002A42A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A860C 002A42AC  7C 08 03 A6 */	mtlr r0
 /* 802A8610 002A42B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8614 002A42B4  4E 80 00 20 */	blr 
+/* 802A8614 002A42B4  4E 80 00 20 */	blr
 
 .global "AddResource__16EResourceManagerFP9EResourceUi"
 "AddResource__16EResourceManagerFP9EResourceUi":
@@ -3287,7 +3287,7 @@ lbl_802A85F4:
 
 .global "LogResourceLoad__16EResourceManagerFP9EResource"
 "LogResourceLoad__16EResourceManagerFP9EResource":
-/* 802A8620 002A42C0  4E 80 00 20 */	blr 
+/* 802A8620 002A42C0  4E 80 00 20 */	blr
 
 .global "AddResource__16EResourceManagerFP9EResourceUib"
 "AddResource__16EResourceManagerFP9EResourceUib":
@@ -3307,7 +3307,7 @@ lbl_802A85F4:
 /* 802A8658 002A42F8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A865C 002A42FC  7C 7F 1B 78 */	mr r31, r3
 /* 802A8660 002A4300  7D 89 03 A6 */	mtctr r12
-/* 802A8664 002A4304  4E 80 04 21 */	bctrl 
+/* 802A8664 002A4304  4E 80 04 21 */	bctrl
 /* 802A8668 002A4308  80 FB 00 44 */	lwz r7, 0x44(r27)
 /* 802A866C 002A430C  7F 64 DB 78 */	mr r4, r27
 /* 802A8670 002A4310  7F A5 EB 78 */	mr r5, r29
@@ -3337,19 +3337,19 @@ lbl_802A86C4:
 /* 802A86C8 002A4368  7F 83 E3 78 */	mr r3, r28
 /* 802A86CC 002A436C  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802A86D0 002A4370  7D 89 03 A6 */	mtctr r12
-/* 802A86D4 002A4374  4E 80 04 21 */	bctrl 
+/* 802A86D4 002A4374  4E 80 04 21 */	bctrl
 /* 802A86D8 002A4378  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A86DC 002A437C  7F E3 FB 78 */	mr r3, r31
 /* 802A86E0 002A4380  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A86E4 002A4384  7D 89 03 A6 */	mtctr r12
-/* 802A86E8 002A4388  4E 80 04 21 */	bctrl 
+/* 802A86E8 002A4388  4E 80 04 21 */	bctrl
 lbl_802A86EC:
 /* 802A86EC 002A438C  39 61 00 30 */	addi r11, r1, 0x30
 /* 802A86F0 002A4390  48 16 6C D1 */	bl "_restgpr_27"
 /* 802A86F4 002A4394  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802A86F8 002A4398  7C 08 03 A6 */	mtlr r0
 /* 802A86FC 002A439C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802A8700 002A43A0  4E 80 00 20 */	blr 
+/* 802A8700 002A43A0  4E 80 00 20 */	blr
 
 .global "AddRef__16EResourceManagerFUiP5EFilei"
 "AddRef__16EResourceManagerFUiP5EFilei":
@@ -3382,7 +3382,7 @@ lbl_802A86EC:
 /* 802A8760 002A4400  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A8764 002A4404  7C 08 03 A6 */	mtlr r0
 /* 802A8768 002A4408  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A876C 002A440C  4E 80 00 20 */	blr 
+/* 802A876C 002A440C  4E 80 00 20 */	blr
 
 .global "AddRefAsync__16EResourceManagerFPCc"
 "AddRefAsync__16EResourceManagerFPCc":
@@ -3404,7 +3404,7 @@ lbl_802A86EC:
 /* 802A87AC 002A444C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A87B0 002A4450  7C 08 03 A6 */	mtlr r0
 /* 802A87B4 002A4454  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A87B8 002A4458  4E 80 00 20 */	blr 
+/* 802A87B8 002A4458  4E 80 00 20 */	blr
 
 .global "AddRefAsync__16EResourceManagerFUi"
 "AddRefAsync__16EResourceManagerFUi":
@@ -3426,7 +3426,7 @@ lbl_802A86EC:
 /* 802A87EC 002A448C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A87F0 002A4490  7C 7F 1B 78 */	mr r31, r3
 /* 802A87F4 002A4494  7D 89 03 A6 */	mtctr r12
-/* 802A87F8 002A4498  4E 80 04 21 */	bctrl 
+/* 802A87F8 002A4498  4E 80 04 21 */	bctrl
 /* 802A87FC 002A449C  A8 9E 00 0C */	lha r4, 0xc(r30)
 /* 802A8800 002A44A0  7F E3 FB 78 */	mr r3, r31
 /* 802A8804 002A44A4  38 04 00 01 */	addi r0, r4, 1
@@ -3434,13 +3434,13 @@ lbl_802A86EC:
 /* 802A880C 002A44AC  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A8810 002A44B0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8814 002A44B4  7D 89 03 A6 */	mtctr r12
-/* 802A8818 002A44B8  4E 80 04 21 */	bctrl 
+/* 802A8818 002A44B8  4E 80 04 21 */	bctrl
 /* 802A881C 002A44BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A8820 002A44C0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A8824 002A44C4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A8828 002A44C8  7C 08 03 A6 */	mtlr r0
 /* 802A882C 002A44CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8830 002A44D0  4E 80 00 20 */	blr 
+/* 802A8830 002A44D0  4E 80 00 20 */	blr
 
 .global "DelRef__16EResourceManagerFUiQ216EResourceManager10DelRefMode"
 "DelRef__16EResourceManagerFUiQ216EResourceManager10DelRefMode":
@@ -3461,7 +3461,7 @@ lbl_802A86EC:
 /* 802A886C 002A450C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A8870 002A4510  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8874 002A4514  7D 89 03 A6 */	mtctr r12
-/* 802A8878 002A4518  4E 80 04 21 */	bctrl 
+/* 802A8878 002A4518  4E 80 04 21 */	bctrl
 /* 802A887C 002A451C  38 61 00 10 */	addi r3, r1, 0x10
 /* 802A8880 002A4520  38 9D 0D 28 */	addi r4, r29, 0xd28
 /* 802A8884 002A4524  38 A1 00 08 */	addi r5, r1, 8
@@ -3489,7 +3489,7 @@ lbl_802A88B8:
 /* 802A88D8 002A4578  7F E3 FB 78 */	mr r3, r31
 /* 802A88DC 002A457C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A88E0 002A4580  7D 89 03 A6 */	mtctr r12
-/* 802A88E4 002A4584  4E 80 04 21 */	bctrl 
+/* 802A88E4 002A4584  4E 80 04 21 */	bctrl
 /* 802A88E8 002A4588  48 00 00 24 */	b lbl_802A890C
 lbl_802A88EC:
 /* 802A88EC 002A458C  7F A3 EB 78 */	mr r3, r29
@@ -3499,7 +3499,7 @@ lbl_802A88EC:
 /* 802A88FC 002A459C  7F E3 FB 78 */	mr r3, r31
 /* 802A8900 002A45A0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8904 002A45A4  7D 89 03 A6 */	mtctr r12
-/* 802A8908 002A45A8  4E 80 04 21 */	bctrl 
+/* 802A8908 002A45A8  4E 80 04 21 */	bctrl
 lbl_802A890C:
 /* 802A890C 002A45AC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802A8910 002A45B0  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -3507,7 +3507,7 @@ lbl_802A890C:
 /* 802A8918 002A45B8  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 802A891C 002A45BC  7C 08 03 A6 */	mtlr r0
 /* 802A8920 002A45C0  38 21 00 30 */	addi r1, r1, 0x30
-/* 802A8924 002A45C4  4E 80 00 20 */	blr 
+/* 802A8924 002A45C4  4E 80 00 20 */	blr
 
 .global "DelRef__16EResourceManagerFPCcQ216EResourceManager10DelRefMode"
 "DelRef__16EResourceManagerFPCcQ216EResourceManager10DelRefMode":
@@ -3530,7 +3530,7 @@ lbl_802A890C:
 /* 802A8968 002A4608  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A896C 002A460C  7C 08 03 A6 */	mtlr r0
 /* 802A8970 002A4610  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8974 002A4614  4E 80 00 20 */	blr 
+/* 802A8974 002A4614  4E 80 00 20 */	blr
 
 .global "DelRefAsync__16EResourceManagerFPCcQ216EResourceManager10DelRefMode"
 "DelRefAsync__16EResourceManagerFPCcQ216EResourceManager10DelRefMode":
@@ -3553,7 +3553,7 @@ lbl_802A890C:
 /* 802A89B8 002A4658  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A89BC 002A465C  7C 08 03 A6 */	mtlr r0
 /* 802A89C0 002A4660  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A89C4 002A4664  4E 80 00 20 */	blr 
+/* 802A89C4 002A4664  4E 80 00 20 */	blr
 
 .global "DelRefAsync__16EResourceManagerFUiQ216EResourceManager10DelRefMode"
 "DelRefAsync__16EResourceManagerFUiQ216EResourceManager10DelRefMode":
@@ -3576,7 +3576,7 @@ lbl_802A890C:
 /* 802A8A08 002A46A8  7F A5 EB 78 */	mr r5, r29
 /* 802A8A0C 002A46AC  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802A8A10 002A46B0  7D 89 03 A6 */	mtctr r12
-/* 802A8A14 002A46B4  4E 80 04 21 */	bctrl 
+/* 802A8A14 002A46B4  4E 80 04 21 */	bctrl
 /* 802A8A18 002A46B8  2C 03 00 00 */	cmpwi r3, 0
 /* 802A8A1C 002A46BC  40 82 00 B0 */	bne lbl_802A8ACC
 lbl_802A8A20:
@@ -3588,7 +3588,7 @@ lbl_802A8A20:
 /* 802A8A34 002A46D4  81 9C 00 04 */	lwz r12, 4(r28)
 /* 802A8A38 002A46D8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8A3C 002A46DC  7D 89 03 A6 */	mtctr r12
-/* 802A8A40 002A46E0  4E 80 04 21 */	bctrl 
+/* 802A8A40 002A46E0  4E 80 04 21 */	bctrl
 /* 802A8A44 002A46E4  7F A4 EB 78 */	mr r4, r29
 /* 802A8A48 002A46E8  38 7C 0D 14 */	addi r3, r28, 0xd14
 /* 802A8A4C 002A46EC  38 A1 00 08 */	addi r5, r1, 8
@@ -3609,21 +3609,21 @@ lbl_802A8A20:
 /* 802A8A88 002A4728  7F E3 FB 78 */	mr r3, r31
 /* 802A8A8C 002A472C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8A90 002A4730  7D 89 03 A6 */	mtctr r12
-/* 802A8A94 002A4734  4E 80 04 21 */	bctrl 
+/* 802A8A94 002A4734  4E 80 04 21 */	bctrl
 /* 802A8A98 002A4738  48 00 00 34 */	b lbl_802A8ACC
 lbl_802A8A9C:
 /* 802A8A9C 002A473C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A8AA0 002A4740  7F E3 FB 78 */	mr r3, r31
 /* 802A8AA4 002A4744  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8AA8 002A4748  7D 89 03 A6 */	mtctr r12
-/* 802A8AAC 002A474C  4E 80 04 21 */	bctrl 
+/* 802A8AAC 002A474C  4E 80 04 21 */	bctrl
 /* 802A8AB0 002A4750  80 6D BD 94 */	lwz r3, "_pResLoader"-_SDA_BASE_(r13)
 /* 802A8AB4 002A4754  7F 84 E3 78 */	mr r4, r28
 /* 802A8AB8 002A4758  7F A5 EB 78 */	mr r5, r29
 /* 802A8ABC 002A475C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A8AC0 002A4760  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802A8AC4 002A4764  7D 89 03 A6 */	mtctr r12
-/* 802A8AC8 002A4768  4E 80 04 21 */	bctrl 
+/* 802A8AC8 002A4768  4E 80 04 21 */	bctrl
 lbl_802A8ACC:
 /* 802A8ACC 002A476C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A8AD0 002A4770  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -3632,7 +3632,7 @@ lbl_802A8ACC:
 /* 802A8ADC 002A477C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802A8AE0 002A4780  7C 08 03 A6 */	mtlr r0
 /* 802A8AE4 002A4784  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8AE8 002A4788  4E 80 00 20 */	blr 
+/* 802A8AE8 002A4788  4E 80 00 20 */	blr
 
 .global "DelRef__16EResourceManagerFP9EResourceQ216EResourceManager10DelRefMode"
 "DelRef__16EResourceManagerFP9EResourceQ216EResourceManager10DelRefMode":
@@ -3654,7 +3654,7 @@ lbl_802A8ACC:
 /* 802A8B28 002A47C8  80 BE 00 08 */	lwz r5, 8(r30)
 /* 802A8B2C 002A47CC  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802A8B30 002A47D0  7D 89 03 A6 */	mtctr r12
-/* 802A8B34 002A47D4  4E 80 04 21 */	bctrl 
+/* 802A8B34 002A47D4  4E 80 04 21 */	bctrl
 /* 802A8B38 002A47D8  2C 03 00 00 */	cmpwi r3, 0
 /* 802A8B3C 002A47DC  40 82 01 28 */	bne lbl_802A8C64
 lbl_802A8B40:
@@ -3666,7 +3666,7 @@ lbl_802A8B40:
 /* 802A8B54 002A47F4  38 80 FF FF */	li r4, -1
 /* 802A8B58 002A47F8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8B5C 002A47FC  7D 89 03 A6 */	mtctr r12
-/* 802A8B60 002A4800  4E 80 04 21 */	bctrl 
+/* 802A8B60 002A4800  4E 80 04 21 */	bctrl
 /* 802A8B64 002A4804  A8 1E 00 0C */	lha r0, 0xc(r30)
 /* 802A8B68 002A4808  2C 00 00 00 */	cmpwi r0, 0
 /* 802A8B6C 002A480C  41 81 00 1C */	bgt lbl_802A8B88
@@ -3674,7 +3674,7 @@ lbl_802A8B40:
 /* 802A8B74 002A4814  38 7D 00 04 */	addi r3, r29, 4
 /* 802A8B78 002A4818  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8B7C 002A481C  7D 89 03 A6 */	mtctr r12
-/* 802A8B80 002A4820  4E 80 04 21 */	bctrl 
+/* 802A8B80 002A4820  4E 80 04 21 */	bctrl
 /* 802A8B84 002A4824  48 00 00 E0 */	b lbl_802A8C64
 lbl_802A8B88:
 /* 802A8B88 002A4828  A8 BE 00 0C */	lha r5, 0xc(r30)
@@ -3685,7 +3685,7 @@ lbl_802A8B88:
 /* 802A8B9C 002A483C  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802A8BA0 002A4840  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802A8BA4 002A4844  7D 89 03 A6 */	mtctr r12
-/* 802A8BA8 002A4848  4E 80 04 21 */	bctrl 
+/* 802A8BA8 002A4848  4E 80 04 21 */	bctrl
 /* 802A8BAC 002A484C  2C 03 00 00 */	cmpwi r3, 0
 /* 802A8BB0 002A4850  41 82 00 5C */	beq lbl_802A8C0C
 /* 802A8BB4 002A4854  2C 1F 00 00 */	cmpwi r31, 0
@@ -3697,7 +3697,7 @@ lbl_802A8B88:
 /* 802A8BCC 002A486C  7F C3 F3 78 */	mr r3, r30
 /* 802A8BD0 002A4870  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802A8BD4 002A4874  7D 89 03 A6 */	mtctr r12
-/* 802A8BD8 002A4878  4E 80 04 21 */	bctrl 
+/* 802A8BD8 002A4878  4E 80 04 21 */	bctrl
 /* 802A8BDC 002A487C  A8 1E 00 0E */	lha r0, 0xe(r30)
 /* 802A8BE0 002A4880  2C 00 00 00 */	cmpwi r0, 0
 /* 802A8BE4 002A4884  40 82 00 10 */	bne lbl_802A8BF4
@@ -3709,7 +3709,7 @@ lbl_802A8BF4:
 /* 802A8BF8 002A4898  38 7D 00 04 */	addi r3, r29, 4
 /* 802A8BFC 002A489C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8C00 002A48A0  7D 89 03 A6 */	mtctr r12
-/* 802A8C04 002A48A4  4E 80 04 21 */	bctrl 
+/* 802A8C04 002A48A4  4E 80 04 21 */	bctrl
 /* 802A8C08 002A48A8  48 00 00 5C */	b lbl_802A8C64
 lbl_802A8C0C:
 /* 802A8C0C 002A48AC  A8 1E 00 0C */	lha r0, 0xc(r30)
@@ -3719,7 +3719,7 @@ lbl_802A8C0C:
 /* 802A8C1C 002A48BC  38 7D 00 04 */	addi r3, r29, 4
 /* 802A8C20 002A48C0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8C24 002A48C4  7D 89 03 A6 */	mtctr r12
-/* 802A8C28 002A48C8  4E 80 04 21 */	bctrl 
+/* 802A8C28 002A48C8  4E 80 04 21 */	bctrl
 /* 802A8C2C 002A48CC  48 00 00 38 */	b lbl_802A8C64
 lbl_802A8C30:
 /* 802A8C30 002A48D0  80 9E 00 08 */	lwz r4, 8(r30)
@@ -3729,12 +3729,12 @@ lbl_802A8C30:
 /* 802A8C40 002A48E0  38 7D 00 04 */	addi r3, r29, 4
 /* 802A8C44 002A48E4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8C48 002A48E8  7D 89 03 A6 */	mtctr r12
-/* 802A8C4C 002A48EC  4E 80 04 21 */	bctrl 
+/* 802A8C4C 002A48EC  4E 80 04 21 */	bctrl
 /* 802A8C50 002A48F0  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802A8C54 002A48F4  7F C3 F3 78 */	mr r3, r30
 /* 802A8C58 002A48F8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802A8C5C 002A48FC  7D 89 03 A6 */	mtctr r12
-/* 802A8C60 002A4900  4E 80 04 21 */	bctrl 
+/* 802A8C60 002A4900  4E 80 04 21 */	bctrl
 lbl_802A8C64:
 /* 802A8C64 002A4904  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A8C68 002A4908  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -3742,7 +3742,7 @@ lbl_802A8C64:
 /* 802A8C70 002A4910  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A8C74 002A4914  7C 08 03 A6 */	mtlr r0
 /* 802A8C78 002A4918  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8C7C 002A491C  4E 80 00 20 */	blr 
+/* 802A8C7C 002A491C  4E 80 00 20 */	blr
 
 .global "Detach__16EResourceManagerFP9EResource"
 "Detach__16EResourceManagerFP9EResource":
@@ -3760,7 +3760,7 @@ lbl_802A8C64:
 /* 802A8CAC 002A494C  38 80 FF FF */	li r4, -1
 /* 802A8CB0 002A4950  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8CB4 002A4954  7D 89 03 A6 */	mtctr r12
-/* 802A8CB8 002A4958  4E 80 04 21 */	bctrl 
+/* 802A8CB8 002A4958  4E 80 04 21 */	bctrl
 /* 802A8CBC 002A495C  80 9F 00 08 */	lwz r4, 8(r31)
 /* 802A8CC0 002A4960  38 7E 0D 14 */	addi r3, r30, 0xd14
 /* 802A8CC4 002A4964  48 00 0F 61 */	bl "Remove__12EResourceMapFUi"
@@ -3768,14 +3768,14 @@ lbl_802A8C64:
 /* 802A8CCC 002A496C  38 7E 00 04 */	addi r3, r30, 4
 /* 802A8CD0 002A4970  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8CD4 002A4974  7D 89 03 A6 */	mtctr r12
-/* 802A8CD8 002A4978  4E 80 04 21 */	bctrl 
+/* 802A8CD8 002A4978  4E 80 04 21 */	bctrl
 lbl_802A8CDC:
 /* 802A8CDC 002A497C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A8CE0 002A4980  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A8CE4 002A4984  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802A8CE8 002A4988  7C 08 03 A6 */	mtlr r0
 /* 802A8CEC 002A498C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8CF0 002A4990  4E 80 00 20 */	blr 
+/* 802A8CF0 002A4990  4E 80 00 20 */	blr
 
 .global "GetPos__16EResourceManagerFUi"
 "GetPos__16EResourceManagerFUi":
@@ -3833,7 +3833,7 @@ lbl_802A8DA0:
 /* 802A8DAC 002A4A4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A8DB0 002A4A50  7C 08 03 A6 */	mtlr r0
 /* 802A8DB4 002A4A54  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8DB8 002A4A58  4E 80 00 20 */	blr 
+/* 802A8DB8 002A4A58  4E 80 00 20 */	blr
 
 .global "GetSize__16EResourceManagerFUi"
 "GetSize__16EResourceManagerFUi":
@@ -3892,7 +3892,7 @@ lbl_802A8E6C:
 /* 802A8E78 002A4B18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A8E7C 002A4B1C  7C 08 03 A6 */	mtlr r0
 /* 802A8E80 002A4B20  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8E84 002A4B24  4E 80 00 20 */	blr 
+/* 802A8E84 002A4B24  4E 80 00 20 */	blr
 
 .global "IsLoaded__16EResourceManagerFUi"
 "IsLoaded__16EResourceManagerFUi":
@@ -3910,7 +3910,7 @@ lbl_802A8E6C:
 /* 802A8EB4 002A4B54  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802A8EB8 002A4B58  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802A8EBC 002A4B5C  7D 89 03 A6 */	mtctr r12
-/* 802A8EC0 002A4B60  4E 80 04 21 */	bctrl 
+/* 802A8EC0 002A4B60  4E 80 04 21 */	bctrl
 /* 802A8EC4 002A4B64  7F C4 F3 78 */	mr r4, r30
 /* 802A8EC8 002A4B68  38 7D 0D 14 */	addi r3, r29, 0xd14
 /* 802A8ECC 002A4B6C  38 A0 00 00 */	li r5, 0
@@ -3920,7 +3920,7 @@ lbl_802A8E6C:
 /* 802A8EDC 002A4B7C  7F E3 FB 78 */	mr r3, r31
 /* 802A8EE0 002A4B80  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802A8EE4 002A4B84  7D 89 03 A6 */	mtctr r12
-/* 802A8EE8 002A4B88  4E 80 04 21 */	bctrl 
+/* 802A8EE8 002A4B88  4E 80 04 21 */	bctrl
 /* 802A8EEC 002A4B8C  7F C3 F3 78 */	mr r3, r30
 /* 802A8EF0 002A4B90  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802A8EF4 002A4B94  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -3928,11 +3928,11 @@ lbl_802A8E6C:
 /* 802A8EFC 002A4B9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A8F00 002A4BA0  7C 08 03 A6 */	mtlr r0
 /* 802A8F04 002A4BA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A8F08 002A4BA8  4E 80 00 20 */	blr 
+/* 802A8F08 002A4BA8  4E 80 00 20 */	blr
 
 .global "ResourceDestructing__16EResourceManagerFP9EResource"
 "ResourceDestructing__16EResourceManagerFP9EResource":
-/* 802A8F0C 002A4BAC  4E 80 00 20 */	blr 
+/* 802A8F0C 002A4BAC  4E 80 00 20 */	blr
 
 .global "CalcId__16EResourceManagerFPCcb"
 "CalcId__16EResourceManagerFPCcb":
@@ -3962,7 +3962,7 @@ lbl_802A8F5C:
 /* 802A8F60 002A4C00  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A8F64 002A4C04  7C 08 03 A6 */	mtlr r0
 /* 802A8F68 002A4C08  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8F6C 002A4C0C  4E 80 00 20 */	blr 
+/* 802A8F6C 002A4C0C  4E 80 00 20 */	blr
 
 .global "GetHeap__16EResourceManagerFv"
 "GetHeap__16EResourceManagerFv":
@@ -3990,7 +3990,7 @@ lbl_802A8FAC:
 /* 802A8FB0 002A4C50  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A8FB4 002A4C54  7C 08 03 A6 */	mtlr r0
 /* 802A8FB8 002A4C58  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A8FBC 002A4C5C  4E 80 00 20 */	blr 
+/* 802A8FBC 002A4C5C  4E 80 00 20 */	blr
 
 .global "FreeOverFlowUnreferencedResources__16EResourceManagerFv"
 "FreeOverFlowUnreferencedResources__16EResourceManagerFv":
@@ -4002,7 +4002,7 @@ lbl_802A8FAC:
 /* 802A8FD4 002A4C74  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A8FD8 002A4C78  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802A8FDC 002A4C7C  7D 89 03 A6 */	mtctr r12
-/* 802A8FE0 002A4C80  4E 80 04 21 */	bctrl 
+/* 802A8FE0 002A4C80  4E 80 04 21 */	bctrl
 /* 802A8FE4 002A4C84  3C A0 00 80 */	lis r5, 0x007FFFFF@ha
 /* 802A8FE8 002A4C88  7C 64 1B 78 */	mr r4, r3
 /* 802A8FEC 002A4C8C  38 7F 00 60 */	addi r3, r31, 0x60
@@ -4015,7 +4015,7 @@ lbl_802A8FAC:
 /* 802A9008 002A4CA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A900C 002A4CAC  7C 08 03 A6 */	mtlr r0
 /* 802A9010 002A4CB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9014 002A4CB4  4E 80 00 20 */	blr 
+/* 802A9014 002A4CB4  4E 80 00 20 */	blr
 
 .global "FreeUnreferencedResources__16EResourceManagerFv"
 "FreeUnreferencedResources__16EResourceManagerFv":
@@ -4032,7 +4032,7 @@ lbl_802A8FAC:
 /* 802A9040 002A4CE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9044 002A4CE4  7C 08 03 A6 */	mtlr r0
 /* 802A9048 002A4CE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A904C 002A4CEC  4E 80 00 20 */	blr 
+/* 802A904C 002A4CEC  4E 80 00 20 */	blr
 
 .global "GetUnreferencedResourceCount__16EResourceManagerFv"
 "GetUnreferencedResourceCount__16EResourceManagerFv":
@@ -4054,13 +4054,13 @@ lbl_802A8FAC:
 /* 802A9080 002A4D20  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A9084 002A4D24  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802A9088 002A4D28  7D 89 03 A6 */	mtctr r12
-/* 802A908C 002A4D2C  4E 80 04 21 */	bctrl 
+/* 802A908C 002A4D2C  4E 80 04 21 */	bctrl
 /* 802A9090 002A4D30  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802A9094 002A4D34  7C 7F 1B 78 */	mr r31, r3
 /* 802A9098 002A4D38  7F 83 E3 78 */	mr r3, r28
 /* 802A909C 002A4D3C  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802A90A0 002A4D40  7D 89 03 A6 */	mtctr r12
-/* 802A90A4 002A4D44  4E 80 04 21 */	bctrl 
+/* 802A90A4 002A4D44  4E 80 04 21 */	bctrl
 /* 802A90A8 002A4D48  7C 67 1B 78 */	mr r7, r3
 /* 802A90AC 002A4D4C  7F E3 FB 78 */	mr r3, r31
 /* 802A90B0 002A4D50  7F A4 EB 78 */	mr r4, r29
@@ -4074,7 +4074,7 @@ lbl_802A8FAC:
 /* 802A90D0 002A4D70  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802A90D4 002A4D74  7C 08 03 A6 */	mtlr r0
 /* 802A90D8 002A4D78  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A90DC 002A4D7C  4E 80 00 20 */	blr 
+/* 802A90DC 002A4D7C  4E 80 00 20 */	blr
 
 .global "Free__16EResourceManagerFPv"
 "Free__16EResourceManagerFPv":
@@ -4088,7 +4088,7 @@ lbl_802A8FAC:
 /* 802A90FC 002A4D9C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A9100 002A4DA0  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802A9104 002A4DA4  7D 89 03 A6 */	mtctr r12
-/* 802A9108 002A4DA8  4E 80 04 21 */	bctrl 
+/* 802A9108 002A4DA8  4E 80 04 21 */	bctrl
 /* 802A910C 002A4DAC  7F E4 FB 78 */	mr r4, r31
 /* 802A9110 002A4DB0  4B FA FF 2D */	bl "Free__6EAHeapFPv"
 lbl_802A9114:
@@ -4096,7 +4096,7 @@ lbl_802A9114:
 /* 802A9118 002A4DB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802A911C 002A4DBC  7C 08 03 A6 */	mtlr r0
 /* 802A9120 002A4DC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9124 002A4DC4  4E 80 00 20 */	blr 
+/* 802A9124 002A4DC4  4E 80 00 20 */	blr
 
 .global "ResourceHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "ResourceHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4107,14 +4107,14 @@ lbl_802A9114:
 /* 802A9138 002A4DD8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A913C 002A4DDC  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 802A9140 002A4DE0  7D 89 03 A6 */	mtctr r12
-/* 802A9144 002A4DE4  4E 80 04 21 */	bctrl 
+/* 802A9144 002A4DE4  4E 80 04 21 */	bctrl
 /* 802A9148 002A4DE8  2C 03 00 00 */	cmpwi r3, 0
 /* 802A914C 002A4DEC  41 82 00 20 */	beq lbl_802A916C
 /* 802A9150 002A4DF0  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 802A9154 002A4DF4  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A9158 002A4DF8  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802A915C 002A4DFC  7D 89 03 A6 */	mtctr r12
-/* 802A9160 002A4E00  4E 80 04 21 */	bctrl 
+/* 802A9160 002A4E00  4E 80 04 21 */	bctrl
 /* 802A9164 002A4E04  38 60 00 01 */	li r3, 1
 /* 802A9168 002A4E08  48 00 00 08 */	b lbl_802A9170
 lbl_802A916C:
@@ -4123,7 +4123,7 @@ lbl_802A9170:
 /* 802A9170 002A4E10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9174 002A4E14  7C 08 03 A6 */	mtlr r0
 /* 802A9178 002A4E18  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A917C 002A4E1C  4E 80 00 20 */	blr 
+/* 802A917C 002A4E1C  4E 80 00 20 */	blr
 
 .global "AudioHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "AudioHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4164,7 +4164,7 @@ lbl_802A91E0:
 /* 802A91F8 002A4E98  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A91FC 002A4E9C  7C 08 03 A6 */	mtlr r0
 /* 802A9200 002A4EA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A9204 002A4EA4  4E 80 00 20 */	blr 
+/* 802A9204 002A4EA4  4E 80 00 20 */	blr
 
 .global "ShaderHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "ShaderHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4213,7 +4213,7 @@ lbl_802A928C:
 /* 802A9298 002A4F38  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A929C 002A4F3C  7C 08 03 A6 */	mtlr r0
 /* 802A92A0 002A4F40  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A92A4 002A4F44  4E 80 00 20 */	blr 
+/* 802A92A4 002A4F44  4E 80 00 20 */	blr
 
 .global "TextureHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "TextureHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4262,7 +4262,7 @@ lbl_802A932C:
 /* 802A9338 002A4FD8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A933C 002A4FDC  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802A9340 002A4FE0  7D 89 03 A6 */	mtctr r12
-/* 802A9344 002A4FE4  4E 80 04 21 */	bctrl 
+/* 802A9344 002A4FE4  4E 80 04 21 */	bctrl
 /* 802A9348 002A4FE8  38 60 00 01 */	li r3, 1
 /* 802A934C 002A4FEC  48 00 00 08 */	b lbl_802A9354
 lbl_802A9350:
@@ -4274,7 +4274,7 @@ lbl_802A9354:
 /* 802A9360 002A5000  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A9364 002A5004  7C 08 03 A6 */	mtlr r0
 /* 802A9368 002A5008  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A936C 002A500C  4E 80 00 20 */	blr 
+/* 802A936C 002A500C  4E 80 00 20 */	blr
 
 .global "AnimationHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "AnimationHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4323,7 +4323,7 @@ lbl_802A93F4:
 /* 802A9400 002A50A0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A9404 002A50A4  7C 08 03 A6 */	mtlr r0
 /* 802A9408 002A50A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A940C 002A50AC  4E 80 00 20 */	blr 
+/* 802A940C 002A50AC  4E 80 00 20 */	blr
 
 .global "ModelHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "ModelHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4372,7 +4372,7 @@ lbl_802A9494:
 /* 802A94A0 002A5140  81 83 00 00 */	lwz r12, 0(r3)
 /* 802A94A4 002A5144  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802A94A8 002A5148  7D 89 03 A6 */	mtctr r12
-/* 802A94AC 002A514C  4E 80 04 21 */	bctrl 
+/* 802A94AC 002A514C  4E 80 04 21 */	bctrl
 /* 802A94B0 002A5150  38 60 00 01 */	li r3, 1
 /* 802A94B4 002A5154  48 00 00 08 */	b lbl_802A94BC
 lbl_802A94B8:
@@ -4384,7 +4384,7 @@ lbl_802A94BC:
 /* 802A94C8 002A5168  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A94CC 002A516C  7C 08 03 A6 */	mtlr r0
 /* 802A94D0 002A5170  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A94D4 002A5174  4E 80 00 20 */	blr 
+/* 802A94D4 002A5174  4E 80 00 20 */	blr
 
 .global "FlashesHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "FlashesHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4433,7 +4433,7 @@ lbl_802A955C:
 /* 802A9568 002A5208  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A956C 002A520C  7C 08 03 A6 */	mtlr r0
 /* 802A9570 002A5210  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A9574 002A5214  4E 80 00 20 */	blr 
+/* 802A9574 002A5214  4E 80 00 20 */	blr
 
 .global "AptHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv"
 "AptHeapFreeMemory__FPQ32EA9Allocator16GeneralAllocatorUlUlPv":
@@ -4482,7 +4482,7 @@ lbl_802A95FC:
 /* 802A9608 002A52A8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A960C 002A52AC  7C 08 03 A6 */	mtlr r0
 /* 802A9610 002A52B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A9614 002A52B4  4E 80 00 20 */	blr 
+/* 802A9614 002A52B4  4E 80 00 20 */	blr
 
 .global "__ct__12EResourceMapFv"
 "__ct__12EResourceMapFv":
@@ -4492,7 +4492,7 @@ lbl_802A95FC:
 /* 802A9624 002A52C4  90 03 00 08 */	stw r0, 8(r3)
 /* 802A9628 002A52C8  90 03 00 0C */	stw r0, 0xc(r3)
 /* 802A962C 002A52CC  90 03 00 10 */	stw r0, 0x10(r3)
-/* 802A9630 002A52D0  4E 80 00 20 */	blr 
+/* 802A9630 002A52D0  4E 80 00 20 */	blr
 
 .global "__dt__12EResourceMapFv"
 "__dt__12EResourceMapFv":
@@ -4517,7 +4517,7 @@ lbl_802A966C:
 /* 802A9678 002A5318  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A967C 002A531C  7C 08 03 A6 */	mtlr r0
 /* 802A9680 002A5320  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9684 002A5324  4E 80 00 20 */	blr 
+/* 802A9684 002A5324  4E 80 00 20 */	blr
 
 .global "Find__12EResourceMapFUiPP9EResource"
 "Find__12EResourceMapFUiPP9EResource":
@@ -4559,10 +4559,10 @@ lbl_802A96D8:
 /* 802A9704 002A53A4  90 05 00 00 */	stw r0, 0(r5)
 lbl_802A9708:
 /* 802A9708 002A53A8  38 60 00 01 */	li r3, 1
-/* 802A970C 002A53AC  4E 80 00 20 */	blr 
+/* 802A970C 002A53AC  4E 80 00 20 */	blr
 lbl_802A9710:
 /* 802A9710 002A53B0  38 60 00 00 */	li r3, 0
-/* 802A9714 002A53B4  4E 80 00 20 */	blr 
+/* 802A9714 002A53B4  4E 80 00 20 */	blr
 
 .global "SetCapacity__12EResourceMapFiPCc"
 "SetCapacity__12EResourceMapFiPCc":
@@ -4600,7 +4600,7 @@ lbl_802A9784:
 /* 802A9790 002A5430  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802A9794 002A5434  7C 08 03 A6 */	mtlr r0
 /* 802A9798 002A5438  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A979C 002A543C  4E 80 00 20 */	blr 
+/* 802A979C 002A543C  4E 80 00 20 */	blr
 
 .global "Insert__12EResourceMapFP16EResourceManagerUiP9EResourcePCc"
 "Insert__12EResourceMapFP16EResourceManagerUiP9EResourcePCc":
@@ -4915,7 +4915,7 @@ lbl_802A9C0C:
 /* 802A9C14 002A58B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A9C18 002A58B8  7C 08 03 A6 */	mtlr r0
 /* 802A9C1C 002A58BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802A9C20 002A58C0  4E 80 00 20 */	blr 
+/* 802A9C20 002A58C0  4E 80 00 20 */	blr
 
 .global "Remove__12EResourceMapFUi"
 "Remove__12EResourceMapFUi":
@@ -4948,7 +4948,7 @@ lbl_802A9C70:
 /* 802A9C7C 002A591C  7C 04 00 40 */	cmplw r4, r0
 /* 802A9C80 002A5920  41 82 00 0C */	beq lbl_802A9C8C
 /* 802A9C84 002A5924  38 60 00 00 */	li r3, 0
-/* 802A9C88 002A5928  4E 80 00 20 */	blr 
+/* 802A9C88 002A5928  4E 80 00 20 */	blr
 lbl_802A9C8C:
 /* 802A9C8C 002A592C  7C 85 32 14 */	add r4, r5, r6
 /* 802A9C90 002A5930  38 00 00 00 */	li r0, 0
@@ -4982,7 +4982,7 @@ lbl_802A9CC8:
 /* 802A9CF8 002A5998  54 00 18 38 */	slwi r0, r0, 3
 /* 802A9CFC 002A599C  7C 84 02 14 */	add r4, r4, r0
 /* 802A9D00 002A59A0  90 A4 00 04 */	stw r5, 4(r4)
-/* 802A9D04 002A59A4  4E 80 00 20 */	blr 
+/* 802A9D04 002A59A4  4E 80 00 20 */	blr
 
 .global "RemoveAll__12EResourceMapFv"
 "RemoveAll__12EResourceMapFv":
@@ -5010,7 +5010,7 @@ lbl_802A9D38:
 /* 802A9D58 002A59F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9D5C 002A59FC  7C 08 03 A6 */	mtlr r0
 /* 802A9D60 002A5A00  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9D64 002A5A04  4E 80 00 20 */	blr 
+/* 802A9D64 002A5A04  4E 80 00 20 */	blr
 
 .global "__dt__15ParticleManagerFv"
 "__dt__15ParticleManagerFv":
@@ -5036,7 +5036,7 @@ lbl_802A9DA4:
 /* 802A9DB0 002A5A50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9DB4 002A5A54  7C 08 03 A6 */	mtlr r0
 /* 802A9DB8 002A5A58  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9DBC 002A5A5C  4E 80 00 20 */	blr 
+/* 802A9DBC 002A5A5C  4E 80 00 20 */	blr
 
 .global "__dt__22ESoundTrackDataManagerFv"
 "__dt__22ESoundTrackDataManagerFv":
@@ -5062,7 +5062,7 @@ lbl_802A9DFC:
 /* 802A9E08 002A5AA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9E0C 002A5AAC  7C 08 03 A6 */	mtlr r0
 /* 802A9E10 002A5AB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9E14 002A5AB4  4E 80 00 20 */	blr 
+/* 802A9E14 002A5AB4  4E 80 00 20 */	blr
 
 .global "__dt__26ESocialAnimationSetManagerFv"
 "__dt__26ESocialAnimationSetManagerFv":
@@ -5088,7 +5088,7 @@ lbl_802A9E54:
 /* 802A9E60 002A5B00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9E64 002A5B04  7C 08 03 A6 */	mtlr r0
 /* 802A9E68 002A5B08  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9E6C 002A5B0C  4E 80 00 20 */	blr 
+/* 802A9E6C 002A5B0C  4E 80 00 20 */	blr
 
 .global "__dt__18ESoundEventManagerFv"
 "__dt__18ESoundEventManagerFv":
@@ -5114,7 +5114,7 @@ lbl_802A9EAC:
 /* 802A9EB8 002A5B58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9EBC 002A5B5C  7C 08 03 A6 */	mtlr r0
 /* 802A9EC0 002A5B60  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9EC4 002A5B64  4E 80 00 20 */	blr 
+/* 802A9EC4 002A5B64  4E 80 00 20 */	blr
 
 .global "__dt__17EQuickdataManagerFv"
 "__dt__17EQuickdataManagerFv":
@@ -5140,7 +5140,7 @@ lbl_802A9F04:
 /* 802A9F10 002A5BB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9F14 002A5BB4  7C 08 03 A6 */	mtlr r0
 /* 802A9F18 002A5BB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9F1C 002A5BBC  4E 80 00 20 */	blr 
+/* 802A9F1C 002A5BBC  4E 80 00 20 */	blr
 
 .global "__dt__9EMovieManFv"
 "__dt__9EMovieManFv":
@@ -5166,7 +5166,7 @@ lbl_802A9F5C:
 /* 802A9F68 002A5C08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9F6C 002A5C0C  7C 08 03 A6 */	mtlr r0
 /* 802A9F70 002A5C10  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9F74 002A5C14  4E 80 00 20 */	blr 
+/* 802A9F74 002A5C14  4E 80 00 20 */	blr
 
 .global "__dt__14EShaderManagerFv"
 "__dt__14EShaderManagerFv":
@@ -5192,7 +5192,7 @@ lbl_802A9FB4:
 /* 802A9FC0 002A5C60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802A9FC4 002A5C64  7C 08 03 A6 */	mtlr r0
 /* 802A9FC8 002A5C68  38 21 00 10 */	addi r1, r1, 0x10
-/* 802A9FCC 002A5C6C  4E 80 00 20 */	blr 
+/* 802A9FCC 002A5C6C  4E 80 00 20 */	blr
 
 .global "__dt__15ETextureManagerFv"
 "__dt__15ETextureManagerFv":
@@ -5218,7 +5218,7 @@ lbl_802AA00C:
 /* 802AA018 002A5CB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA01C 002A5CBC  7C 08 03 A6 */	mtlr r0
 /* 802AA020 002A5CC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA024 002A5CC4  4E 80 00 20 */	blr 
+/* 802AA024 002A5CC4  4E 80 00 20 */	blr
 
 .global "__dt__13EModelManagerFv"
 "__dt__13EModelManagerFv":
@@ -5244,7 +5244,7 @@ lbl_802AA064:
 /* 802AA070 002A5D10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA074 002A5D14  7C 08 03 A6 */	mtlr r0
 /* 802AA078 002A5D18  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA07C 002A5D1C  4E 80 00 20 */	blr 
+/* 802AA07C 002A5D1C  4E 80 00 20 */	blr
 
 .global "__dt__12EFontManagerFv"
 "__dt__12EFontManagerFv":
@@ -5270,7 +5270,7 @@ lbl_802AA0BC:
 /* 802AA0C8 002A5D68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA0CC 002A5D6C  7C 08 03 A6 */	mtlr r0
 /* 802AA0D0 002A5D70  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA0D4 002A5D74  4E 80 00 20 */	blr 
+/* 802AA0D4 002A5D74  4E 80 00 20 */	blr
 
 .global "__dt__13EFlashManagerFv"
 "__dt__13EFlashManagerFv":
@@ -5296,7 +5296,7 @@ lbl_802AA114:
 /* 802AA120 002A5DC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA124 002A5DC4  7C 08 03 A6 */	mtlr r0
 /* 802AA128 002A5DC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA12C 002A5DCC  4E 80 00 20 */	blr 
+/* 802AA12C 002A5DCC  4E 80 00 20 */	blr
 
 .global "__dt__16EEdithTreeSetManFv"
 "__dt__16EEdithTreeSetManFv":
@@ -5322,7 +5322,7 @@ lbl_802AA16C:
 /* 802AA178 002A5E18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA17C 002A5E1C  7C 08 03 A6 */	mtlr r0
 /* 802AA180 002A5E20  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA184 002A5E24  4E 80 00 20 */	blr 
+/* 802AA184 002A5E24  4E 80 00 20 */	blr
 
 .global "__dt__15EDatasetManagerFv"
 "__dt__15EDatasetManagerFv":
@@ -5348,7 +5348,7 @@ lbl_802AA1C4:
 /* 802AA1D0 002A5E70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA1D4 002A5E74  7C 08 03 A6 */	mtlr r0
 /* 802AA1D8 002A5E78  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA1DC 002A5E7C  4E 80 00 20 */	blr 
+/* 802AA1DC 002A5E7C  4E 80 00 20 */	blr
 
 .global "__dt__17ECharacterManagerFv"
 "__dt__17ECharacterManagerFv":
@@ -5374,7 +5374,7 @@ lbl_802AA21C:
 /* 802AA228 002A5EC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA22C 002A5ECC  7C 08 03 A6 */	mtlr r0
 /* 802AA230 002A5ED0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA234 002A5ED4  4E 80 00 20 */	blr 
+/* 802AA234 002A5ED4  4E 80 00 20 */	blr
 
 .global "__dt__14EBinaryManagerFv"
 "__dt__14EBinaryManagerFv":
@@ -5400,7 +5400,7 @@ lbl_802AA274:
 /* 802AA280 002A5F20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA284 002A5F24  7C 08 03 A6 */	mtlr r0
 /* 802AA288 002A5F28  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA28C 002A5F2C  4E 80 00 20 */	blr 
+/* 802AA28C 002A5F2C  4E 80 00 20 */	blr
 
 .global "__dt__19EAudioStreamManagerFv"
 "__dt__19EAudioStreamManagerFv":
@@ -5426,7 +5426,7 @@ lbl_802AA2CC:
 /* 802AA2D8 002A5F78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA2DC 002A5F7C  7C 08 03 A6 */	mtlr r0
 /* 802AA2E0 002A5F80  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA2E4 002A5F84  4E 80 00 20 */	blr 
+/* 802AA2E4 002A5F84  4E 80 00 20 */	blr
 
 .global "__dt__12EAnimManagerFv"
 "__dt__12EAnimManagerFv":
@@ -5452,7 +5452,7 @@ lbl_802AA324:
 /* 802AA330 002A5FD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA334 002A5FD4  7C 08 03 A6 */	mtlr r0
 /* 802AA338 002A5FD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA33C 002A5FDC  4E 80 00 20 */	blr 
+/* 802AA33C 002A5FDC  4E 80 00 20 */	blr
 
 .global "__dt__20EAmbientScoreManagerFv"
 "__dt__20EAmbientScoreManagerFv":
@@ -5478,7 +5478,7 @@ lbl_802AA37C:
 /* 802AA388 002A6028  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA38C 002A602C  7C 08 03 A6 */	mtlr r0
 /* 802AA390 002A6030  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA394 002A6034  4E 80 00 20 */	blr 
+/* 802AA394 002A6034  4E 80 00 20 */	blr
 
 .global "__dt__23EffectsSequencerManagerFv"
 "__dt__23EffectsSequencerManagerFv":
@@ -5504,7 +5504,7 @@ lbl_802AA3D4:
 /* 802AA3E0 002A6080  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA3E4 002A6084  7C 08 03 A6 */	mtlr r0
 /* 802AA3E8 002A6088  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA3EC 002A608C  4E 80 00 20 */	blr 
+/* 802AA3EC 002A608C  4E 80 00 20 */	blr
 
 .global "__dt__21EffectsEmitterManagerFv"
 "__dt__21EffectsEmitterManagerFv":
@@ -5530,7 +5530,7 @@ lbl_802AA42C:
 /* 802AA438 002A60D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA43C 002A60DC  7C 08 03 A6 */	mtlr r0
 /* 802AA440 002A60E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA444 002A60E4  4E 80 00 20 */	blr 
+/* 802AA444 002A60E4  4E 80 00 20 */	blr
 
 .global "__dt__24EffectsAttachmentManagerFv"
 "__dt__24EffectsAttachmentManagerFv":
@@ -5556,18 +5556,18 @@ lbl_802AA484:
 /* 802AA490 002A6130  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AA494 002A6134  7C 08 03 A6 */	mtlr r0
 /* 802AA498 002A6138  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA49C 002A613C  4E 80 00 20 */	blr 
+/* 802AA49C 002A613C  4E 80 00 20 */	blr
 
 .global "__rf__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>CFv"
 "__rf__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>CFv":
 /* 802AA4A0 002A6140  80 63 00 00 */	lwz r3, 0(r3)
 /* 802AA4A4 002A6144  38 63 00 10 */	addi r3, r3, 0x10
-/* 802AA4A8 002A6148  4E 80 00 20 */	blr 
+/* 802AA4A8 002A6148  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>FPCQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>"
 "__ct__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>FPCQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>":
 /* 802AA4AC 002A614C  90 83 00 00 */	stw r4, 0(r3)
-/* 802AA4B0 002A6150  4E 80 00 20 */	blr 
+/* 802AA4B0 002A6150  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FRCQ25eastl12pair<CUi,Ui>Q25eastl22integral_constant<b,1>"
 "DoInsertValue__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FRCQ25eastl12pair<CUi,Ui>Q25eastl22integral_constant<b,1>":
@@ -5654,7 +5654,7 @@ lbl_802AA5C8:
 /* 802AA5D8 002A6278  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 802AA5DC 002A627C  7C 08 03 A6 */	mtlr r0
 /* 802AA5E0 002A6280  38 21 00 30 */	addi r1, r1, 0x30
-/* 802AA5E4 002A6284  4E 80 00 20 */	blr 
+/* 802AA5E4 002A6284  4E 80 00 20 */	blr
 
 .global "DoNukeSubtree__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>"
 "DoNukeSubtree__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>":
@@ -5765,7 +5765,7 @@ lbl_802AA730:
 /* 802AA740 002A63E0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802AA744 002A63E4  7C 08 03 A6 */	mtlr r0
 /* 802AA748 002A63E8  38 21 00 40 */	addi r1, r1, 0x40
-/* 802AA74C 002A63EC  4E 80 00 20 */	blr 
+/* 802AA74C 002A63EC  4E 80 00 20 */	blr
 
 .global "DoFreeNode__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>"
 "DoFreeNode__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>":
@@ -5798,11 +5798,11 @@ lbl_802AA784:
 /* 802AA7A0 002A6440  7C 05 00 40 */	cmplw r5, r0
 /* 802AA7A4 002A6444  41 80 00 0C */	blt lbl_802AA7B0
 /* 802AA7A8 002A6448  91 03 00 00 */	stw r8, 0(r3)
-/* 802AA7AC 002A644C  4E 80 00 20 */	blr 
+/* 802AA7AC 002A644C  4E 80 00 20 */	blr
 lbl_802AA7B0:
 /* 802AA7B0 002A6450  38 04 00 04 */	addi r0, r4, 4
 /* 802AA7B4 002A6454  90 03 00 00 */	stw r0, 0(r3)
-/* 802AA7B8 002A6458  4E 80 00 20 */	blr 
+/* 802AA7B8 002A6458  4E 80 00 20 */	blr
 
 .global "DoInsertValueImpl__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>RCQ25eastl12pair<CUi,Ui>b"
 "DoInsertValueImpl__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FPQ25eastl35rbtree_node<Q25eastl12pair<CUi,Ui>>RCQ25eastl12pair<CUi,Ui>b":
@@ -5846,13 +5846,13 @@ lbl_802AA80C:
 /* 802AA844 002A64E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AA848 002A64E8  7C 08 03 A6 */	mtlr r0
 /* 802AA84C 002A64EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AA850 002A64F0  4E 80 00 20 */	blr 
+/* 802AA850 002A64F0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>FRCQ25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>"
 "__ct__Q25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>FRCQ25eastl87rbtree_iterator<Q25eastl12pair<CUi,Ui>,PQ25eastl12pair<CUi,Ui>,RQ25eastl12pair<CUi,Ui>>":
 /* 802AA854 002A64F4  80 04 00 00 */	lwz r0, 0(r4)
 /* 802AA858 002A64F8  90 03 00 00 */	stw r0, 0(r3)
-/* 802AA85C 002A64FC  4E 80 00 20 */	blr 
+/* 802AA85C 002A64FC  4E 80 00 20 */	blr
 
 .global "DoCreateNode__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FRCQ25eastl12pair<CUi,Ui>"
 "DoCreateNode__Q25eastl118rbtree<Ui,Q25eastl12pair<CUi,Ui>,Q25eastl8less<Ui>,Q25eastl9allocator,Q25eastl33use_first<Q25eastl12pair<CUi,Ui>>,1,1>FRCQ25eastl12pair<CUi,Ui>":
@@ -5880,7 +5880,7 @@ lbl_802AA8AC:
 /* 802AA8B0 002A6550  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802AA8B4 002A6554  7C 08 03 A6 */	mtlr r0
 /* 802AA8B8 002A6558  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AA8BC 002A655C  4E 80 00 20 */	blr 
+/* 802AA8BC 002A655C  4E 80 00 20 */	blr
 
 .global "__pl__7EStringCFRC7EString"
 "__pl__7EStringCFRC7EString":
@@ -6001,7 +6001,7 @@ lbl_802AAA54:
 /* 802AAA58 002A66F8  7F 24 CB 78 */	mr r4, r25
 /* 802AAA5C 002A66FC  38 61 00 14 */	addi r3, r1, 0x14
 /* 802AAA60 002A6700  7D 89 03 A6 */	mtctr r12
-/* 802AAA64 002A6704  4E 80 04 21 */	bctrl 
+/* 802AAA64 002A6704  4E 80 04 21 */	bctrl
 /* 802AAA68 002A6708  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAA6C 002A670C  40 82 FF C8 */	bne lbl_802AAA34
 /* 802AAA70 002A6710  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -6026,7 +6026,7 @@ lbl_802AAAA8:
 /* 802AAAB0 002A6750  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802AAAB4 002A6754  7C 08 03 A6 */	mtlr r0
 /* 802AAAB8 002A6758  38 21 00 40 */	addi r1, r1, 0x40
-/* 802AAABC 002A675C  4E 80 00 20 */	blr 
+/* 802AAABC 002A675C  4E 80 00 20 */	blr
 
 .global "insertion_sort<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "insertion_sort<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -6068,7 +6068,7 @@ lbl_802AAB34:
 /* 802AAB40 002A67E0  7F E4 FB 78 */	mr r4, r31
 /* 802AAB44 002A67E4  38 61 00 08 */	addi r3, r1, 8
 /* 802AAB48 002A67E8  7D 89 03 A6 */	mtctr r12
-/* 802AAB4C 002A67EC  4E 80 04 21 */	bctrl 
+/* 802AAB4C 002A67EC  4E 80 04 21 */	bctrl
 /* 802AAB50 002A67F0  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAB54 002A67F4  40 82 FF C0 */	bne lbl_802AAB14
 lbl_802AAB58:
@@ -6088,7 +6088,7 @@ lbl_802AAB7C:
 /* 802AAB84 002A6824  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802AAB88 002A6828  7C 08 03 A6 */	mtlr r0
 /* 802AAB8C 002A682C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802AAB90 002A6830  4E 80 00 20 */	blr 
+/* 802AAB90 002A6830  4E 80 00 20 */	blr
 
 .global "partial_sort<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "partial_sort<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -6117,7 +6117,7 @@ lbl_802AABE4:
 /* 802AABE8 002A6888  7F 43 D3 78 */	mr r3, r26
 /* 802AABEC 002A688C  7F 84 E3 78 */	mr r4, r28
 /* 802AABF0 002A6890  7D 89 03 A6 */	mtctr r12
-/* 802AABF4 002A6894  4E 80 04 21 */	bctrl 
+/* 802AABF4 002A6894  4E 80 04 21 */	bctrl
 /* 802AABF8 002A6898  2C 03 00 00 */	cmpwi r3, 0
 /* 802AABFC 002A689C  41 82 00 5C */	beq lbl_802AAC58
 /* 802AAC00 002A68A0  81 7A 00 00 */	lwz r11, 0(r26)
@@ -6187,7 +6187,7 @@ lbl_802AACCC:
 /* 802AACF0 002A6990  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802AACF4 002A6994  7C 08 03 A6 */	mtlr r0
 /* 802AACF8 002A6998  38 21 00 50 */	addi r1, r1, 0x50
-/* 802AACFC 002A699C  4E 80 00 20 */	blr 
+/* 802AACFC 002A699C  4E 80 00 20 */	blr
 
 .global "quick_sort_impl<PQ216EResourceManager19ResourceIndexRecord,l,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordlPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "quick_sort_impl<PQ216EResourceManager19ResourceIndexRecord,l,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordlPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -6213,14 +6213,14 @@ lbl_802AAD30:
 /* 802AAD48 002A69E8  7E 7C 02 14 */	add r19, r28, r0
 /* 802AAD4C 002A69EC  7E 64 9B 78 */	mr r4, r19
 /* 802AAD50 002A69F0  7D 89 03 A6 */	mtctr r12
-/* 802AAD54 002A69F4  4E 80 04 21 */	bctrl 
+/* 802AAD54 002A69F4  4E 80 04 21 */	bctrl
 /* 802AAD58 002A69F8  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAD5C 002A69FC  41 82 00 50 */	beq lbl_802AADAC
 /* 802AAD60 002A6A00  7F EC FB 78 */	mr r12, r31
 /* 802AAD64 002A6A04  7E 63 9B 78 */	mr r3, r19
 /* 802AAD68 002A6A08  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAD6C 002A6A0C  7D 89 03 A6 */	mtctr r12
-/* 802AAD70 002A6A10  4E 80 04 21 */	bctrl 
+/* 802AAD70 002A6A10  4E 80 04 21 */	bctrl
 /* 802AAD74 002A6A14  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAD78 002A6A18  41 82 00 08 */	beq lbl_802AAD80
 /* 802AAD7C 002A6A1C  48 00 00 74 */	b lbl_802AADF0
@@ -6229,7 +6229,7 @@ lbl_802AAD80:
 /* 802AAD84 002A6A24  7F 83 E3 78 */	mr r3, r28
 /* 802AAD88 002A6A28  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAD8C 002A6A2C  7D 89 03 A6 */	mtctr r12
-/* 802AAD90 002A6A30  4E 80 04 21 */	bctrl 
+/* 802AAD90 002A6A30  4E 80 04 21 */	bctrl
 /* 802AAD94 002A6A34  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAD98 002A6A38  41 82 00 0C */	beq lbl_802AADA4
 /* 802AAD9C 002A6A3C  3A 7D FF F4 */	addi r19, r29, -12
@@ -6242,7 +6242,7 @@ lbl_802AADAC:
 /* 802AADB0 002A6A50  7F 83 E3 78 */	mr r3, r28
 /* 802AADB4 002A6A54  38 9D FF F4 */	addi r4, r29, -12
 /* 802AADB8 002A6A58  7D 89 03 A6 */	mtctr r12
-/* 802AADBC 002A6A5C  4E 80 04 21 */	bctrl 
+/* 802AADBC 002A6A5C  4E 80 04 21 */	bctrl
 /* 802AADC0 002A6A60  2C 03 00 00 */	cmpwi r3, 0
 /* 802AADC4 002A6A64  41 82 00 0C */	beq lbl_802AADD0
 /* 802AADC8 002A6A68  7F 93 E3 78 */	mr r19, r28
@@ -6252,7 +6252,7 @@ lbl_802AADD0:
 /* 802AADD4 002A6A74  7E 63 9B 78 */	mr r3, r19
 /* 802AADD8 002A6A78  38 9D FF F4 */	addi r4, r29, -12
 /* 802AADDC 002A6A7C  7D 89 03 A6 */	mtctr r12
-/* 802AADE0 002A6A80  4E 80 04 21 */	bctrl 
+/* 802AADE0 002A6A80  4E 80 04 21 */	bctrl
 /* 802AADE4 002A6A84  2C 03 00 00 */	cmpwi r3, 0
 /* 802AADE8 002A6A88  41 82 00 08 */	beq lbl_802AADF0
 /* 802AADEC 002A6A8C  3A 7D FF F4 */	addi r19, r29, -12
@@ -6273,7 +6273,7 @@ lbl_802AAE18:
 /* 802AAE1C 002A6ABC  7E 83 A3 78 */	mr r3, r20
 /* 802AAE20 002A6AC0  38 81 00 BC */	addi r4, r1, 0xbc
 /* 802AAE24 002A6AC4  7D 89 03 A6 */	mtctr r12
-/* 802AAE28 002A6AC8  4E 80 04 21 */	bctrl 
+/* 802AAE28 002A6AC8  4E 80 04 21 */	bctrl
 /* 802AAE2C 002A6ACC  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAE30 002A6AD0  40 82 FF E4 */	bne lbl_802AAE14
 /* 802AAE34 002A6AD4  3A B5 FF F4 */	addi r21, r21, -12
@@ -6285,7 +6285,7 @@ lbl_802AAE40:
 /* 802AAE44 002A6AE4  7E A4 AB 78 */	mr r4, r21
 /* 802AAE48 002A6AE8  38 61 00 BC */	addi r3, r1, 0xbc
 /* 802AAE4C 002A6AEC  7D 89 03 A6 */	mtctr r12
-/* 802AAE50 002A6AF0  4E 80 04 21 */	bctrl 
+/* 802AAE50 002A6AF0  4E 80 04 21 */	bctrl
 /* 802AAE54 002A6AF4  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAE58 002A6AF8  40 82 FF E4 */	bne lbl_802AAE3C
 /* 802AAE5C 002A6AFC  7C 14 A8 40 */	cmplw r20, r21
@@ -6321,14 +6321,14 @@ lbl_802AAEB4:
 /* 802AAECC 002A6B6C  7E 74 02 14 */	add r19, r20, r0
 /* 802AAED0 002A6B70  7E 64 9B 78 */	mr r4, r19
 /* 802AAED4 002A6B74  7D 89 03 A6 */	mtctr r12
-/* 802AAED8 002A6B78  4E 80 04 21 */	bctrl 
+/* 802AAED8 002A6B78  4E 80 04 21 */	bctrl
 /* 802AAEDC 002A6B7C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAEE0 002A6B80  41 82 00 50 */	beq lbl_802AAF30
 /* 802AAEE4 002A6B84  7F EC FB 78 */	mr r12, r31
 /* 802AAEE8 002A6B88  7E 63 9B 78 */	mr r3, r19
 /* 802AAEEC 002A6B8C  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAEF0 002A6B90  7D 89 03 A6 */	mtctr r12
-/* 802AAEF4 002A6B94  4E 80 04 21 */	bctrl 
+/* 802AAEF4 002A6B94  4E 80 04 21 */	bctrl
 /* 802AAEF8 002A6B98  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAEFC 002A6B9C  41 82 00 08 */	beq lbl_802AAF04
 /* 802AAF00 002A6BA0  48 00 00 74 */	b lbl_802AAF74
@@ -6337,7 +6337,7 @@ lbl_802AAF04:
 /* 802AAF08 002A6BA8  7E 83 A3 78 */	mr r3, r20
 /* 802AAF0C 002A6BAC  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAF10 002A6BB0  7D 89 03 A6 */	mtctr r12
-/* 802AAF14 002A6BB4  4E 80 04 21 */	bctrl 
+/* 802AAF14 002A6BB4  4E 80 04 21 */	bctrl
 /* 802AAF18 002A6BB8  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAF1C 002A6BBC  41 82 00 0C */	beq lbl_802AAF28
 /* 802AAF20 002A6BC0  3A 7D FF F4 */	addi r19, r29, -12
@@ -6350,7 +6350,7 @@ lbl_802AAF30:
 /* 802AAF34 002A6BD4  7E 83 A3 78 */	mr r3, r20
 /* 802AAF38 002A6BD8  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAF3C 002A6BDC  7D 89 03 A6 */	mtctr r12
-/* 802AAF40 002A6BE0  4E 80 04 21 */	bctrl 
+/* 802AAF40 002A6BE0  4E 80 04 21 */	bctrl
 /* 802AAF44 002A6BE4  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAF48 002A6BE8  41 82 00 0C */	beq lbl_802AAF54
 /* 802AAF4C 002A6BEC  7E 93 A3 78 */	mr r19, r20
@@ -6360,7 +6360,7 @@ lbl_802AAF54:
 /* 802AAF58 002A6BF8  7E 63 9B 78 */	mr r3, r19
 /* 802AAF5C 002A6BFC  38 9D FF F4 */	addi r4, r29, -12
 /* 802AAF60 002A6C00  7D 89 03 A6 */	mtctr r12
-/* 802AAF64 002A6C04  4E 80 04 21 */	bctrl 
+/* 802AAF64 002A6C04  4E 80 04 21 */	bctrl
 /* 802AAF68 002A6C08  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAF6C 002A6C0C  41 82 00 08 */	beq lbl_802AAF74
 /* 802AAF70 002A6C10  3A 7D FF F4 */	addi r19, r29, -12
@@ -6381,7 +6381,7 @@ lbl_802AAF9C:
 /* 802AAFA0 002A6C40  7F 03 C3 78 */	mr r3, r24
 /* 802AAFA4 002A6C44  38 81 00 80 */	addi r4, r1, 0x80
 /* 802AAFA8 002A6C48  7D 89 03 A6 */	mtctr r12
-/* 802AAFAC 002A6C4C  4E 80 04 21 */	bctrl 
+/* 802AAFAC 002A6C4C  4E 80 04 21 */	bctrl
 /* 802AAFB0 002A6C50  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAFB4 002A6C54  40 82 FF E4 */	bne lbl_802AAF98
 /* 802AAFB8 002A6C58  3A B5 FF F4 */	addi r21, r21, -12
@@ -6393,7 +6393,7 @@ lbl_802AAFC4:
 /* 802AAFC8 002A6C68  7E A4 AB 78 */	mr r4, r21
 /* 802AAFCC 002A6C6C  38 61 00 80 */	addi r3, r1, 0x80
 /* 802AAFD0 002A6C70  7D 89 03 A6 */	mtctr r12
-/* 802AAFD4 002A6C74  4E 80 04 21 */	bctrl 
+/* 802AAFD4 002A6C74  4E 80 04 21 */	bctrl
 /* 802AAFD8 002A6C78  2C 03 00 00 */	cmpwi r3, 0
 /* 802AAFDC 002A6C7C  40 82 FF E4 */	bne lbl_802AAFC0
 /* 802AAFE0 002A6C80  7C 18 A8 40 */	cmplw r24, r21
@@ -6417,14 +6417,14 @@ lbl_802AB008:
 /* 802AB020 002A6CC0  7E 78 02 14 */	add r19, r24, r0
 /* 802AB024 002A6CC4  7E 64 9B 78 */	mr r4, r19
 /* 802AB028 002A6CC8  7D 89 03 A6 */	mtctr r12
-/* 802AB02C 002A6CCC  4E 80 04 21 */	bctrl 
+/* 802AB02C 002A6CCC  4E 80 04 21 */	bctrl
 /* 802AB030 002A6CD0  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB034 002A6CD4  41 82 00 50 */	beq lbl_802AB084
 /* 802AB038 002A6CD8  7F EC FB 78 */	mr r12, r31
 /* 802AB03C 002A6CDC  7E 63 9B 78 */	mr r3, r19
 /* 802AB040 002A6CE0  38 9D FF F4 */	addi r4, r29, -12
 /* 802AB044 002A6CE4  7D 89 03 A6 */	mtctr r12
-/* 802AB048 002A6CE8  4E 80 04 21 */	bctrl 
+/* 802AB048 002A6CE8  4E 80 04 21 */	bctrl
 /* 802AB04C 002A6CEC  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB050 002A6CF0  41 82 00 08 */	beq lbl_802AB058
 /* 802AB054 002A6CF4  48 00 00 74 */	b lbl_802AB0C8
@@ -6433,7 +6433,7 @@ lbl_802AB058:
 /* 802AB05C 002A6CFC  7F 03 C3 78 */	mr r3, r24
 /* 802AB060 002A6D00  38 9D FF F4 */	addi r4, r29, -12
 /* 802AB064 002A6D04  7D 89 03 A6 */	mtctr r12
-/* 802AB068 002A6D08  4E 80 04 21 */	bctrl 
+/* 802AB068 002A6D08  4E 80 04 21 */	bctrl
 /* 802AB06C 002A6D0C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB070 002A6D10  41 82 00 0C */	beq lbl_802AB07C
 /* 802AB074 002A6D14  3A 7D FF F4 */	addi r19, r29, -12
@@ -6446,7 +6446,7 @@ lbl_802AB084:
 /* 802AB088 002A6D28  7F 03 C3 78 */	mr r3, r24
 /* 802AB08C 002A6D2C  38 9D FF F4 */	addi r4, r29, -12
 /* 802AB090 002A6D30  7D 89 03 A6 */	mtctr r12
-/* 802AB094 002A6D34  4E 80 04 21 */	bctrl 
+/* 802AB094 002A6D34  4E 80 04 21 */	bctrl
 /* 802AB098 002A6D38  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB09C 002A6D3C  41 82 00 0C */	beq lbl_802AB0A8
 /* 802AB0A0 002A6D40  7F 13 C3 78 */	mr r19, r24
@@ -6456,7 +6456,7 @@ lbl_802AB0A8:
 /* 802AB0AC 002A6D4C  7E 63 9B 78 */	mr r3, r19
 /* 802AB0B0 002A6D50  38 9D FF F4 */	addi r4, r29, -12
 /* 802AB0B4 002A6D54  7D 89 03 A6 */	mtctr r12
-/* 802AB0B8 002A6D58  4E 80 04 21 */	bctrl 
+/* 802AB0B8 002A6D58  4E 80 04 21 */	bctrl
 /* 802AB0BC 002A6D5C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB0C0 002A6D60  41 82 00 08 */	beq lbl_802AB0C8
 /* 802AB0C4 002A6D64  3A 7D FF F4 */	addi r19, r29, -12
@@ -6477,7 +6477,7 @@ lbl_802AB0F0:
 /* 802AB0F4 002A6D94  7E C3 B3 78 */	mr r3, r22
 /* 802AB0F8 002A6D98  38 81 00 5C */	addi r4, r1, 0x5c
 /* 802AB0FC 002A6D9C  7D 89 03 A6 */	mtctr r12
-/* 802AB100 002A6DA0  4E 80 04 21 */	bctrl 
+/* 802AB100 002A6DA0  4E 80 04 21 */	bctrl
 /* 802AB104 002A6DA4  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB108 002A6DA8  40 82 FF E4 */	bne lbl_802AB0EC
 /* 802AB10C 002A6DAC  3A B5 FF F4 */	addi r21, r21, -12
@@ -6489,7 +6489,7 @@ lbl_802AB118:
 /* 802AB11C 002A6DBC  7E A4 AB 78 */	mr r4, r21
 /* 802AB120 002A6DC0  38 61 00 5C */	addi r3, r1, 0x5c
 /* 802AB124 002A6DC4  7D 89 03 A6 */	mtctr r12
-/* 802AB128 002A6DC8  4E 80 04 21 */	bctrl 
+/* 802AB128 002A6DC8  4E 80 04 21 */	bctrl
 /* 802AB12C 002A6DCC  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB130 002A6DD0  40 82 FF E4 */	bne lbl_802AB114
 /* 802AB134 002A6DD4  7C 16 A8 40 */	cmplw r22, r21
@@ -6575,7 +6575,7 @@ lbl_802AB250:
 /* 802AB254 002A6EF4  7E 63 9B 78 */	mr r3, r19
 /* 802AB258 002A6EF8  7F 04 C3 78 */	mr r4, r24
 /* 802AB25C 002A6EFC  7D 89 03 A6 */	mtctr r12
-/* 802AB260 002A6F00  4E 80 04 21 */	bctrl 
+/* 802AB260 002A6F00  4E 80 04 21 */	bctrl
 /* 802AB264 002A6F04  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB268 002A6F08  41 82 00 5C */	beq lbl_802AB2C4
 /* 802AB26C 002A6F0C  80 D3 00 00 */	lwz r6, 0(r19)
@@ -6662,7 +6662,7 @@ lbl_802AB38C:
 /* 802AB390 002A7030  7E E3 BB 78 */	mr r3, r23
 /* 802AB394 002A7034  7E 84 A3 78 */	mr r4, r20
 /* 802AB398 002A7038  7D 89 03 A6 */	mtctr r12
-/* 802AB39C 002A703C  4E 80 04 21 */	bctrl 
+/* 802AB39C 002A703C  4E 80 04 21 */	bctrl
 /* 802AB3A0 002A7040  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB3A4 002A7044  41 82 00 E4 */	beq lbl_802AB488
 /* 802AB3A8 002A7048  80 B7 00 00 */	lwz r5, 0(r23)
@@ -6688,7 +6688,7 @@ lbl_802AB3E4:
 /* 802AB3F4 002A7094  7C 74 1A 14 */	add r3, r20, r3
 /* 802AB3F8 002A7098  7C 94 02 14 */	add r4, r20, r0
 /* 802AB3FC 002A709C  7D 89 03 A6 */	mtctr r12
-/* 802AB400 002A70A0  4E 80 04 21 */	bctrl 
+/* 802AB400 002A70A0  4E 80 04 21 */	bctrl
 /* 802AB404 002A70A4  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB408 002A70A8  41 82 00 08 */	beq lbl_802AB410
 /* 802AB40C 002A70AC  3A D6 FF FF */	addi r22, r22, -1
@@ -6797,7 +6797,7 @@ lbl_802AB568:
 /* 802AB578 002A7218  7C 7C 1A 14 */	add r3, r28, r3
 /* 802AB57C 002A721C  7C 9C 02 14 */	add r4, r28, r0
 /* 802AB580 002A7220  7D 89 03 A6 */	mtctr r12
-/* 802AB584 002A7224  4E 80 04 21 */	bctrl 
+/* 802AB584 002A7224  4E 80 04 21 */	bctrl
 /* 802AB588 002A7228  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB58C 002A722C  41 82 00 08 */	beq lbl_802AB594
 /* 802AB590 002A7230  3B 39 FF FF */	addi r25, r25, -1
@@ -6859,7 +6859,7 @@ lbl_802AB648:
 /* 802AB65C 002A72FC  7E 7C 02 14 */	add r19, r28, r0
 /* 802AB660 002A7300  7E 63 9B 78 */	mr r3, r19
 /* 802AB664 002A7304  7D 89 03 A6 */	mtctr r12
-/* 802AB668 002A7308  4E 80 04 21 */	bctrl 
+/* 802AB668 002A7308  4E 80 04 21 */	bctrl
 /* 802AB66C 002A730C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB670 002A7310  40 82 FF B0 */	bne lbl_802AB620
 lbl_802AB674:
@@ -6880,7 +6880,7 @@ lbl_802AB6A0:
 /* 802AB6A4 002A7344  7F 43 D3 78 */	mr r3, r26
 /* 802AB6A8 002A7348  7F 84 E3 78 */	mr r4, r28
 /* 802AB6AC 002A734C  7D 89 03 A6 */	mtctr r12
-/* 802AB6B0 002A7350  4E 80 04 21 */	bctrl 
+/* 802AB6B0 002A7350  4E 80 04 21 */	bctrl
 /* 802AB6B4 002A7354  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB6B8 002A7358  41 82 01 68 */	beq lbl_802AB820
 /* 802AB6BC 002A735C  80 BA 00 00 */	lwz r5, 0(r26)
@@ -6906,7 +6906,7 @@ lbl_802AB6F8:
 /* 802AB708 002A73A8  7C 7C 1A 14 */	add r3, r28, r3
 /* 802AB70C 002A73AC  7C 9C 02 14 */	add r4, r28, r0
 /* 802AB710 002A73B0  7D 89 03 A6 */	mtctr r12
-/* 802AB714 002A73B4  4E 80 04 21 */	bctrl 
+/* 802AB714 002A73B4  4E 80 04 21 */	bctrl
 /* 802AB718 002A73B8  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB71C 002A73BC  41 82 00 08 */	beq lbl_802AB724
 /* 802AB720 002A73C0  3B 7B FF FF */	addi r27, r27, -1
@@ -6968,7 +6968,7 @@ lbl_802AB7D8:
 /* 802AB7EC 002A748C  7E 7C 02 14 */	add r19, r28, r0
 /* 802AB7F0 002A7490  7E 63 9B 78 */	mr r3, r19
 /* 802AB7F4 002A7494  7D 89 03 A6 */	mtctr r12
-/* 802AB7F8 002A7498  4E 80 04 21 */	bctrl 
+/* 802AB7F8 002A7498  4E 80 04 21 */	bctrl
 /* 802AB7FC 002A749C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB800 002A74A0  40 82 FF B0 */	bne lbl_802AB7B0
 lbl_802AB804:
@@ -7012,7 +7012,7 @@ lbl_802AB878:
 /* 802AB888 002A7528  7C 7C 1A 14 */	add r3, r28, r3
 /* 802AB88C 002A752C  7C 9C 02 14 */	add r4, r28, r0
 /* 802AB890 002A7530  7D 89 03 A6 */	mtctr r12
-/* 802AB894 002A7534  4E 80 04 21 */	bctrl 
+/* 802AB894 002A7534  4E 80 04 21 */	bctrl
 /* 802AB898 002A7538  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB89C 002A753C  41 82 00 08 */	beq lbl_802AB8A4
 /* 802AB8A0 002A7540  3A F7 FF FF */	addi r23, r23, -1
@@ -7073,7 +7073,7 @@ lbl_802AB954:
 /* 802AB968 002A7608  7E 9C 02 14 */	add r20, r28, r0
 /* 802AB96C 002A760C  7E 83 A3 78 */	mr r3, r20
 /* 802AB970 002A7610  7D 89 03 A6 */	mtctr r12
-/* 802AB974 002A7614  4E 80 04 21 */	bctrl 
+/* 802AB974 002A7614  4E 80 04 21 */	bctrl
 /* 802AB978 002A7618  2C 03 00 00 */	cmpwi r3, 0
 /* 802AB97C 002A761C  40 82 FF BC */	bne lbl_802AB938
 lbl_802AB980:
@@ -7096,7 +7096,7 @@ lbl_802AB9B0:
 /* 802AB9B8 002A7658  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 802AB9BC 002A765C  7C 08 03 A6 */	mtlr r0
 /* 802AB9C0 002A7660  38 21 01 00 */	addi r1, r1, 0x100
-/* 802AB9C4 002A7664  4E 80 00 20 */	blr 
+/* 802AB9C4 002A7664  4E 80 00 20 */	blr
 
 .global "get_partition<PQ216EResourceManager19ResourceIndexRecord,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_PQ216EResourceManager19ResourceIndexRecord"
 "get_partition<PQ216EResourceManager19ResourceIndexRecord,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_PQ216EResourceManager19ResourceIndexRecord":
@@ -7119,7 +7119,7 @@ lbl_802AB9FC:
 /* 802ABA00 002A76A0  7F 83 E3 78 */	mr r3, r28
 /* 802ABA04 002A76A4  7F C4 F3 78 */	mr r4, r30
 /* 802ABA08 002A76A8  7D 89 03 A6 */	mtctr r12
-/* 802ABA0C 002A76AC  4E 80 04 21 */	bctrl 
+/* 802ABA0C 002A76AC  4E 80 04 21 */	bctrl
 /* 802ABA10 002A76B0  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABA14 002A76B4  40 82 FF E4 */	bne lbl_802AB9F8
 /* 802ABA18 002A76B8  3B BD FF F4 */	addi r29, r29, -12
@@ -7131,7 +7131,7 @@ lbl_802ABA24:
 /* 802ABA28 002A76C8  7F C3 F3 78 */	mr r3, r30
 /* 802ABA2C 002A76CC  7F A4 EB 78 */	mr r4, r29
 /* 802ABA30 002A76D0  7D 89 03 A6 */	mtctr r12
-/* 802ABA34 002A76D4  4E 80 04 21 */	bctrl 
+/* 802ABA34 002A76D4  4E 80 04 21 */	bctrl
 /* 802ABA38 002A76D8  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABA3C 002A76DC  40 82 FF E4 */	bne lbl_802ABA20
 /* 802ABA40 002A76E0  7C 1C E8 40 */	cmplw r28, r29
@@ -7164,7 +7164,7 @@ lbl_802ABA94:
 /* 802ABAA4 002A7744  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 802ABAA8 002A7748  7C 08 03 A6 */	mtlr r0
 /* 802ABAAC 002A774C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802ABAB0 002A7750  4E 80 00 20 */	blr 
+/* 802ABAB0 002A7750  4E 80 00 20 */	blr
 
 .global "make_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "make_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -7212,7 +7212,7 @@ lbl_802ABB40:
 /* 802ABB50 002A77F0  7C 78 1A 14 */	add r3, r24, r3
 /* 802ABB54 002A77F4  7C 98 02 14 */	add r4, r24, r0
 /* 802ABB58 002A77F8  7D 89 03 A6 */	mtctr r12
-/* 802ABB5C 002A77FC  4E 80 04 21 */	bctrl 
+/* 802ABB5C 002A77FC  4E 80 04 21 */	bctrl
 /* 802ABB60 002A7800  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABB64 002A7804  41 82 00 08 */	beq lbl_802ABB6C
 /* 802ABB68 002A7808  3B FF FF FF */	addi r31, r31, -1
@@ -7274,7 +7274,7 @@ lbl_802ABC20:
 /* 802ABC34 002A78D4  7E F8 02 14 */	add r23, r24, r0
 /* 802ABC38 002A78D8  7E E3 BB 78 */	mr r3, r23
 /* 802ABC3C 002A78DC  7D 89 03 A6 */	mtctr r12
-/* 802ABC40 002A78E0  4E 80 04 21 */	bctrl 
+/* 802ABC40 002A78E0  4E 80 04 21 */	bctrl
 /* 802ABC44 002A78E4  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABC48 002A78E8  40 82 FF B0 */	bne lbl_802ABBF8
 lbl_802ABC4C:
@@ -7293,7 +7293,7 @@ lbl_802ABC70:
 /* 802ABC78 002A7918  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802ABC7C 002A791C  7C 08 03 A6 */	mtlr r0
 /* 802ABC80 002A7920  38 21 00 50 */	addi r1, r1, 0x50
-/* 802ABC84 002A7924  4E 80 00 20 */	blr 
+/* 802ABC84 002A7924  4E 80 00 20 */	blr
 
 .global "adjust_heap<PQ216EResourceManager19ResourceIndexRecord,l,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordlllQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "adjust_heap<PQ216EResourceManager19ResourceIndexRecord,l,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordlllQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -7319,7 +7319,7 @@ lbl_802ABCC0:
 /* 802ABCD0 002A7970  7C 79 1A 14 */	add r3, r25, r3
 /* 802ABCD4 002A7974  7C 99 02 14 */	add r4, r25, r0
 /* 802ABCD8 002A7978  7D 89 03 A6 */	mtctr r12
-/* 802ABCDC 002A797C  4E 80 04 21 */	bctrl 
+/* 802ABCDC 002A797C  4E 80 04 21 */	bctrl
 /* 802ABCE0 002A7980  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABCE4 002A7984  41 82 00 08 */	beq lbl_802ABCEC
 /* 802ABCE8 002A7988  3B FF FF FF */	addi r31, r31, -1
@@ -7382,7 +7382,7 @@ lbl_802ABDA4:
 /* 802ABDB8 002A7A58  7F B9 02 14 */	add r29, r25, r0
 /* 802ABDBC 002A7A5C  7F A3 EB 78 */	mr r3, r29
 /* 802ABDC0 002A7A60  7D 89 03 A6 */	mtctr r12
-/* 802ABDC4 002A7A64  4E 80 04 21 */	bctrl 
+/* 802ABDC4 002A7A64  4E 80 04 21 */	bctrl
 /* 802ABDC8 002A7A68  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABDCC 002A7A6C  40 82 FF B0 */	bne lbl_802ABD7C
 lbl_802ABDD0:
@@ -7399,7 +7399,7 @@ lbl_802ABDD0:
 /* 802ABDF8 002A7A98  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802ABDFC 002A7A9C  7C 08 03 A6 */	mtlr r0
 /* 802ABE00 002A7AA0  38 21 00 40 */	addi r1, r1, 0x40
-/* 802ABE04 002A7AA4  4E 80 00 20 */	blr 
+/* 802ABE04 002A7AA4  4E 80 00 20 */	blr
 
 .global "pop_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "pop_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -7441,7 +7441,7 @@ lbl_802ABE80:
 /* 802ABE90 002A7B30  7C 7C 1A 14 */	add r3, r28, r3
 /* 802ABE94 002A7B34  7C 9C 02 14 */	add r4, r28, r0
 /* 802ABE98 002A7B38  7D 89 03 A6 */	mtctr r12
-/* 802ABE9C 002A7B3C  4E 80 04 21 */	bctrl 
+/* 802ABE9C 002A7B3C  4E 80 04 21 */	bctrl
 /* 802ABEA0 002A7B40  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABEA4 002A7B44  41 82 00 08 */	beq lbl_802ABEAC
 /* 802ABEA8 002A7B48  3B 7B FF FF */	addi r27, r27, -1
@@ -7504,7 +7504,7 @@ lbl_802ABF64:
 /* 802ABF78 002A7C18  7F DC 02 14 */	add r30, r28, r0
 /* 802ABF7C 002A7C1C  7F C3 F3 78 */	mr r3, r30
 /* 802ABF80 002A7C20  7D 89 03 A6 */	mtctr r12
-/* 802ABF84 002A7C24  4E 80 04 21 */	bctrl 
+/* 802ABF84 002A7C24  4E 80 04 21 */	bctrl
 /* 802ABF88 002A7C28  2C 03 00 00 */	cmpwi r3, 0
 /* 802ABF8C 002A7C2C  40 82 FF B0 */	bne lbl_802ABF3C
 lbl_802ABF90:
@@ -7521,7 +7521,7 @@ lbl_802ABF90:
 /* 802ABFB8 002A7C58  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802ABFBC 002A7C5C  7C 08 03 A6 */	mtlr r0
 /* 802ABFC0 002A7C60  38 21 00 40 */	addi r1, r1, 0x40
-/* 802ABFC4 002A7C64  4E 80 00 20 */	blr 
+/* 802ABFC4 002A7C64  4E 80 00 20 */	blr
 
 .global "promote_heap<PQ216EResourceManager19ResourceIndexRecord,l,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordllQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "promote_heap<PQ216EResourceManager19ResourceIndexRecord,l,Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordllQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -7558,7 +7558,7 @@ lbl_802AC024:
 /* 802AC038 002A7CD8  7F F9 02 14 */	add r31, r25, r0
 /* 802AC03C 002A7CDC  7F E3 FB 78 */	mr r3, r31
 /* 802AC040 002A7CE0  7D 89 03 A6 */	mtctr r12
-/* 802AC044 002A7CE4  4E 80 04 21 */	bctrl 
+/* 802AC044 002A7CE4  4E 80 04 21 */	bctrl
 /* 802AC048 002A7CE8  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC04C 002A7CEC  40 82 FF B0 */	bne lbl_802ABFFC
 lbl_802AC050:
@@ -7575,7 +7575,7 @@ lbl_802AC050:
 /* 802AC078 002A7D18  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802AC07C 002A7D1C  7C 08 03 A6 */	mtlr r0
 /* 802AC080 002A7D20  38 21 00 30 */	addi r1, r1, 0x30
-/* 802AC084 002A7D24  4E 80 00 20 */	blr 
+/* 802AC084 002A7D24  4E 80 00 20 */	blr
 
 .global "sort_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v"
 "sort_heap<PQ216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_v":
@@ -7615,7 +7615,7 @@ lbl_802AC0F4:
 /* 802AC104 002A7DA4  7C 79 1A 14 */	add r3, r25, r3
 /* 802AC108 002A7DA8  7C 99 02 14 */	add r4, r25, r0
 /* 802AC10C 002A7DAC  7D 89 03 A6 */	mtctr r12
-/* 802AC110 002A7DB0  4E 80 04 21 */	bctrl 
+/* 802AC110 002A7DB0  4E 80 04 21 */	bctrl
 /* 802AC114 002A7DB4  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC118 002A7DB8  41 82 00 08 */	beq lbl_802AC120
 /* 802AC11C 002A7DBC  3B FF FF FF */	addi r31, r31, -1
@@ -7679,7 +7679,7 @@ lbl_802AC1DC:
 /* 802AC1F0 002A7E90  7F B9 02 14 */	add r29, r25, r0
 /* 802AC1F4 002A7E94  7F A3 EB 78 */	mr r3, r29
 /* 802AC1F8 002A7E98  7D 89 03 A6 */	mtctr r12
-/* 802AC1FC 002A7E9C  4E 80 04 21 */	bctrl 
+/* 802AC1FC 002A7E9C  4E 80 04 21 */	bctrl
 /* 802AC200 002A7EA0  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC204 002A7EA4  40 82 FF B0 */	bne lbl_802AC1B4
 lbl_802AC208:
@@ -7704,7 +7704,7 @@ lbl_802AC228:
 /* 802AC24C 002A7EEC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802AC250 002A7EF0  7C 08 03 A6 */	mtlr r0
 /* 802AC254 002A7EF4  38 21 00 40 */	addi r1, r1, 0x40
-/* 802AC258 002A7EF8  4E 80 00 20 */	blr 
+/* 802AC258 002A7EF8  4E 80 00 20 */	blr
 
 .global "__as__Q216EResourceManager19ResourceIndexRecordFRCQ216EResourceManager19ResourceIndexRecord"
 "__as__Q216EResourceManager19ResourceIndexRecordFRCQ216EResourceManager19ResourceIndexRecord":
@@ -7714,7 +7714,7 @@ lbl_802AC228:
 /* 802AC268 002A7F08  90 C3 00 00 */	stw r6, 0(r3)
 /* 802AC26C 002A7F0C  90 A3 00 04 */	stw r5, 4(r3)
 /* 802AC270 002A7F10  90 03 00 08 */	stw r0, 8(r3)
-/* 802AC274 002A7F14  4E 80 00 20 */	blr 
+/* 802AC274 002A7F14  4E 80 00 20 */	blr
 
 .global "iter_swap<PQ216EResourceManager19ResourceIndexRecord,PQ216EResourceManager19ResourceIndexRecord>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecord_v"
 "iter_swap<PQ216EResourceManager19ResourceIndexRecord,PQ216EResourceManager19ResourceIndexRecord>__5eastlFPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecord_v":
@@ -7735,7 +7735,7 @@ lbl_802AC228:
 /* 802AC2B0 002A7F50  90 C4 00 04 */	stw r6, 4(r4)
 /* 802AC2B4 002A7F54  90 A4 00 08 */	stw r5, 8(r4)
 /* 802AC2B8 002A7F58  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC2BC 002A7F5C  4E 80 00 20 */	blr 
+/* 802AC2BC 002A7F5C  4E 80 00 20 */	blr
 
 .global "iter_swap<PQ216EResourceManager19ResourceIndexRecord,PQ216EResourceManager19ResourceIndexRecord>__Q25eastl17iter_swap_impl<1>FPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecord_v"
 "iter_swap<PQ216EResourceManager19ResourceIndexRecord,PQ216EResourceManager19ResourceIndexRecord>__Q25eastl17iter_swap_impl<1>FPQ216EResourceManager19ResourceIndexRecordPQ216EResourceManager19ResourceIndexRecord_v":
@@ -7756,7 +7756,7 @@ lbl_802AC228:
 /* 802AC2F8 002A7F98  90 C4 00 04 */	stw r6, 4(r4)
 /* 802AC2FC 002A7F9C  90 A4 00 08 */	stw r5, 8(r4)
 /* 802AC300 002A7FA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC304 002A7FA4  4E 80 00 20 */	blr 
+/* 802AC304 002A7FA4  4E 80 00 20 */	blr
 
 .global "median<Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_RCQ216EResourceManager19ResourceIndexRecord"
 "median<Q216EResourceManager19ResourceIndexRecord,PFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b>__5eastlFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecordPFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord_b_RCQ216EResourceManager19ResourceIndexRecord":
@@ -7773,14 +7773,14 @@ lbl_802AC228:
 /* 802AC330 002A7FD0  93 81 00 10 */	stw r28, 0x10(r1)
 /* 802AC334 002A7FD4  7C 7C 1B 78 */	mr r28, r3
 /* 802AC338 002A7FD8  7D 89 03 A6 */	mtctr r12
-/* 802AC33C 002A7FDC  4E 80 04 21 */	bctrl 
+/* 802AC33C 002A7FDC  4E 80 04 21 */	bctrl
 /* 802AC340 002A7FE0  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC344 002A7FE4  41 82 00 54 */	beq lbl_802AC398
 /* 802AC348 002A7FE8  7F EC FB 78 */	mr r12, r31
 /* 802AC34C 002A7FEC  7F A3 EB 78 */	mr r3, r29
 /* 802AC350 002A7FF0  7F C4 F3 78 */	mr r4, r30
 /* 802AC354 002A7FF4  7D 89 03 A6 */	mtctr r12
-/* 802AC358 002A7FF8  4E 80 04 21 */	bctrl 
+/* 802AC358 002A7FF8  4E 80 04 21 */	bctrl
 /* 802AC35C 002A7FFC  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC360 002A8000  41 82 00 0C */	beq lbl_802AC36C
 /* 802AC364 002A8004  7F A3 EB 78 */	mr r3, r29
@@ -7790,7 +7790,7 @@ lbl_802AC36C:
 /* 802AC370 002A8010  7F 83 E3 78 */	mr r3, r28
 /* 802AC374 002A8014  7F C4 F3 78 */	mr r4, r30
 /* 802AC378 002A8018  7D 89 03 A6 */	mtctr r12
-/* 802AC37C 002A801C  4E 80 04 21 */	bctrl 
+/* 802AC37C 002A801C  4E 80 04 21 */	bctrl
 /* 802AC380 002A8020  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC384 002A8024  41 82 00 0C */	beq lbl_802AC390
 /* 802AC388 002A8028  7F C3 F3 78 */	mr r3, r30
@@ -7803,7 +7803,7 @@ lbl_802AC398:
 /* 802AC39C 002A803C  7F 83 E3 78 */	mr r3, r28
 /* 802AC3A0 002A8040  7F C4 F3 78 */	mr r4, r30
 /* 802AC3A4 002A8044  7D 89 03 A6 */	mtctr r12
-/* 802AC3A8 002A8048  4E 80 04 21 */	bctrl 
+/* 802AC3A8 002A8048  4E 80 04 21 */	bctrl
 /* 802AC3AC 002A804C  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC3B0 002A8050  41 82 00 0C */	beq lbl_802AC3BC
 /* 802AC3B4 002A8054  7F 83 E3 78 */	mr r3, r28
@@ -7813,7 +7813,7 @@ lbl_802AC3BC:
 /* 802AC3C0 002A8060  7F A3 EB 78 */	mr r3, r29
 /* 802AC3C4 002A8064  7F C4 F3 78 */	mr r4, r30
 /* 802AC3C8 002A8068  7D 89 03 A6 */	mtctr r12
-/* 802AC3CC 002A806C  4E 80 04 21 */	bctrl 
+/* 802AC3CC 002A806C  4E 80 04 21 */	bctrl
 /* 802AC3D0 002A8070  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC3D4 002A8074  41 82 00 0C */	beq lbl_802AC3E0
 /* 802AC3D8 002A8078  7F C3 F3 78 */	mr r3, r30
@@ -7828,7 +7828,7 @@ lbl_802AC3E4:
 /* 802AC3F4 002A8094  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802AC3F8 002A8098  7C 08 03 A6 */	mtlr r0
 /* 802AC3FC 002A809C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC400 002A80A0  4E 80 00 20 */	blr 
+/* 802AC400 002A80A0  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl68vector<Q216EResourceManager19ResourceIndexRecord,Q25eastl9allocator>FPQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord"
 "DoInsertValue__Q25eastl68vector<Q216EResourceManager19ResourceIndexRecord,Q25eastl9allocator>FPQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord":
@@ -7970,7 +7970,7 @@ lbl_802AC5D4:
 /* 802AC5DC 002A827C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AC5E0 002A8280  7C 08 03 A6 */	mtlr r0
 /* 802AC5E4 002A8284  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC5E8 002A8288  4E 80 00 20 */	blr 
+/* 802AC5E8 002A8288  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl68vector<Q216EResourceManager19ResourceIndexRecord,Q25eastl9allocator>FUl"
 "reserve__Q25eastl68vector<Q216EResourceManager19ResourceIndexRecord,Q25eastl9allocator>FUl":
@@ -8052,7 +8052,7 @@ lbl_802AC6F4:
 /* 802AC6FC 002A839C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AC700 002A83A0  7C 08 03 A6 */	mtlr r0
 /* 802AC704 002A83A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC708 002A83A8  4E 80 00 20 */	blr 
+/* 802AC708 002A83A8  4E 80 00 20 */	blr
 
 .global "CheckPos__Q216EResourceManager19ResourceIndexRecordFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord"
 "CheckPos__Q216EResourceManager19ResourceIndexRecordFRCQ216EResourceManager19ResourceIndexRecordRCQ216EResourceManager19ResourceIndexRecord":
@@ -8062,53 +8062,53 @@ lbl_802AC6F4:
 /* 802AC718 002A83B8  7C 00 00 34 */	cntlzw r0, r0
 /* 802AC71C 002A83BC  7C 60 00 30 */	slw r0, r3, r0
 /* 802AC720 002A83C0  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 802AC724 002A83C4  4E 80 00 20 */	blr 
+/* 802AC724 002A83C4  4E 80 00 20 */	blr
 
 .global "Init__9EResourceFv"
 "Init__9EResourceFv":
-/* 802AC728 002A83C8  4E 80 00 20 */	blr 
+/* 802AC728 002A83C8  4E 80 00 20 */	blr
 
 .global "Refresh__9EResourceFP5EFile"
 "Refresh__9EResourceFP5EFile":
-/* 802AC72C 002A83CC  4E 80 00 20 */	blr 
+/* 802AC72C 002A83CC  4E 80 00 20 */	blr
 
 .global "SafeDelete__9EResourceFv"
 "SafeDelete__9EResourceFv":
 /* 802AC730 002A83D0  2C 03 00 00 */	cmpwi r3, 0
-/* 802AC734 002A83D4  4D 82 00 20 */	beqlr 
+/* 802AC734 002A83D4  4D 82 00 20 */	beqlr
 /* 802AC738 002A83D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AC73C 002A83DC  38 80 00 01 */	li r4, 1
 /* 802AC740 002A83E0  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802AC744 002A83E4  7D 89 03 A6 */	mtctr r12
-/* 802AC748 002A83E8  4E 80 04 20 */	bctr 
-/* 802AC74C 002A83EC  4E 80 00 20 */	blr 
+/* 802AC748 002A83E8  4E 80 04 20 */	bctr
+/* 802AC74C 002A83EC  4E 80 00 20 */	blr
 
 .global "GetTypeInfo__9EResourceCFv"
 "GetTypeInfo__9EResourceCFv":
 /* 802AC750 002A83F0  3C 60 80 54 */	lis r3, "m_typeInfo__9EResource"@ha
 /* 802AC754 002A83F4  38 63 03 40 */	addi r3, r3, "m_typeInfo__9EResource"@l
-/* 802AC758 002A83F8  4E 80 00 20 */	blr 
+/* 802AC758 002A83F8  4E 80 00 20 */	blr
 
 .global "GetTypeName__9EResourceCFv"
 "GetTypeName__9EResourceCFv":
 /* 802AC75C 002A83FC  3C 60 80 54 */	lis r3, "m_typeInfo__9EResource"@ha
 /* 802AC760 002A8400  38 63 03 40 */	addi r3, r3, "m_typeInfo__9EResource"@l
 /* 802AC764 002A8404  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 802AC768 002A8408  4E 80 00 20 */	blr 
+/* 802AC768 002A8408  4E 80 00 20 */	blr
 
 .global "GetTypeKey__9EResourceCFv"
 "GetTypeKey__9EResourceCFv":
 /* 802AC76C 002A840C  3C 60 80 54 */	lis r3, "m_typeInfo__9EResource"@ha
 /* 802AC770 002A8410  38 63 03 40 */	addi r3, r3, "m_typeInfo__9EResource"@l
 /* 802AC774 002A8414  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 802AC778 002A8418  4E 80 00 20 */	blr 
+/* 802AC778 002A8418  4E 80 00 20 */	blr
 
 .global "GetTypeVersion__9EResourceCFv"
 "GetTypeVersion__9EResourceCFv":
 /* 802AC77C 002A841C  3C 60 80 54 */	lis r3, "m_typeInfo__9EResource"@ha
 /* 802AC780 002A8420  38 63 03 40 */	addi r3, r3, "m_typeInfo__9EResource"@l
 /* 802AC784 002A8424  A0 63 00 14 */	lhz r3, 0x14(r3)
-/* 802AC788 002A8428  4E 80 00 20 */	blr 
+/* 802AC788 002A8428  4E 80 00 20 */	blr
 
 .global "__dt__15EScratchBuffManFv"
 "__dt__15EScratchBuffManFv":
@@ -8137,7 +8137,7 @@ lbl_802AC7D4:
 /* 802AC7E0 002A8480  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AC7E4 002A8484  7C 08 03 A6 */	mtlr r0
 /* 802AC7E8 002A8488  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AC7EC 002A848C  4E 80 00 20 */	blr 
+/* 802AC7EC 002A848C  4E 80 00 20 */	blr
 
 .global "Init__15EScratchBuffManFv"
 "Init__15EScratchBuffManFv":
@@ -8154,7 +8154,7 @@ lbl_802AC7D4:
 /* 802AC818 002A84B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AC81C 002A84BC  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802AC820 002A84C0  7D 89 03 A6 */	mtctr r12
-/* 802AC824 002A84C4  4E 80 04 21 */	bctrl 
+/* 802AC824 002A84C4  4E 80 04 21 */	bctrl
 /* 802AC828 002A84C8  2C 03 00 00 */	cmpwi r3, 0
 /* 802AC82C 002A84CC  90 7E 00 10 */	stw r3, 0x10(r30)
 /* 802AC830 002A84D0  7C 7F 1B 78 */	mr r31, r3
@@ -8172,7 +8172,7 @@ lbl_802AC854:
 /* 802AC85C 002A84FC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802AC860 002A8500  7C 08 03 A6 */	mtlr r0
 /* 802AC864 002A8504  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AC868 002A8508  4E 80 00 20 */	blr 
+/* 802AC868 002A8508  4E 80 00 20 */	blr
 
 .global "TryAcquireBuffer__15EScratchBuffManFP16EScratchBuffUserPCci"
 "TryAcquireBuffer__15EScratchBuffManFP16EScratchBuffUserPCci":
@@ -8196,7 +8196,7 @@ lbl_802AC854:
 /* 802AC8B0 002A8550  38 A0 00 00 */	li r5, 0
 /* 802AC8B4 002A8554  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802AC8B8 002A8558  7D 89 03 A6 */	mtctr r12
-/* 802AC8BC 002A855C  4E 80 04 21 */	bctrl 
+/* 802AC8BC 002A855C  4E 80 04 21 */	bctrl
 lbl_802AC8C0:
 /* 802AC8C0 002A8560  80 1C 00 08 */	lwz r0, 8(r28)
 /* 802AC8C4 002A8564  2C 00 00 00 */	cmpwi r0, 0
@@ -8207,7 +8207,7 @@ lbl_802AC8C0:
 /* 802AC8D8 002A8578  38 A0 00 02 */	li r5, 2
 /* 802AC8DC 002A857C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802AC8E0 002A8580  7D 89 03 A6 */	mtctr r12
-/* 802AC8E4 002A8584  4E 80 04 21 */	bctrl 
+/* 802AC8E4 002A8584  4E 80 04 21 */	bctrl
 lbl_802AC8E8:
 /* 802AC8E8 002A8588  93 BC 00 08 */	stw r29, 8(r28)
 /* 802AC8EC 002A858C  7F A3 EB 78 */	mr r3, r29
@@ -8218,7 +8218,7 @@ lbl_802AC8E8:
 /* 802AC900 002A85A0  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802AC904 002A85A4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802AC908 002A85A8  7D 89 03 A6 */	mtctr r12
-/* 802AC90C 002A85AC  4E 80 04 21 */	bctrl 
+/* 802AC90C 002A85AC  4E 80 04 21 */	bctrl
 /* 802AC910 002A85B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AC914 002A85B4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802AC918 002A85B8  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -8226,7 +8226,7 @@ lbl_802AC8E8:
 /* 802AC920 002A85C0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802AC924 002A85C4  7C 08 03 A6 */	mtlr r0
 /* 802AC928 002A85C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AC92C 002A85CC  4E 80 00 20 */	blr 
+/* 802AC92C 002A85CC  4E 80 00 20 */	blr
 
 .global "ReleaseBuffer__15EScratchBuffManFP16EScratchBuffUser"
 "ReleaseBuffer__15EScratchBuffManFP16EScratchBuffUser":
@@ -8239,7 +8239,7 @@ lbl_802AC8E8:
 /* 802AC948 002A85E8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AC94C 002A85EC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802AC950 002A85F0  7D 89 03 A6 */	mtctr r12
-/* 802AC954 002A85F4  4E 80 04 21 */	bctrl 
+/* 802AC954 002A85F4  4E 80 04 21 */	bctrl
 /* 802AC958 002A85F8  38 00 00 00 */	li r0, 0
 /* 802AC95C 002A85FC  38 60 00 01 */	li r3, 1
 /* 802AC960 002A8600  90 1F 00 08 */	stw r0, 8(r31)
@@ -8249,15 +8249,15 @@ lbl_802AC8E8:
 /* 802AC970 002A8610  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AC974 002A8614  7C 08 03 A6 */	mtlr r0
 /* 802AC978 002A8618  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AC97C 002A861C  4E 80 00 20 */	blr 
+/* 802AC97C 002A861C  4E 80 00 20 */	blr
 
 .global "AcquireBuffer__16EScratchBuffUserFPvUi"
 "AcquireBuffer__16EScratchBuffUserFPvUi":
-/* 802AC980 002A8620  4E 80 00 20 */	blr 
+/* 802AC980 002A8620  4E 80 00 20 */	blr
 
 .global "ReleasedBuffer__16EScratchBuffUserFP16EScratchBuffUser"
 "ReleasedBuffer__16EScratchBuffUserFP16EScratchBuffUser":
-/* 802AC984 002A8624  4E 80 00 20 */	blr 
+/* 802AC984 002A8624  4E 80 00 20 */	blr
 
 .global "GetHeap__14EShaderManagerFv"
 "GetHeap__14EShaderManagerFv":
@@ -8279,13 +8279,13 @@ lbl_802AC8E8:
 /* 802AC9B8 002A8658  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AC9BC 002A865C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802AC9C0 002A8660  7D 89 03 A6 */	mtctr r12
-/* 802AC9C4 002A8664  4E 80 04 21 */	bctrl 
+/* 802AC9C4 002A8664  4E 80 04 21 */	bctrl
 /* 802AC9C8 002A8668  7C 7E 1B 78 */	mr r30, r3
 /* 802AC9CC 002A866C  38 7F 95 24 */	addi r3, r31, -27356
 /* 802AC9D0 002A8670  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AC9D4 002A8674  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802AC9D8 002A8678  7D 89 03 A6 */	mtctr r12
-/* 802AC9DC 002A867C  4E 80 04 21 */	bctrl 
+/* 802AC9DC 002A867C  4E 80 04 21 */	bctrl
 /* 802AC9E0 002A8680  7C 67 1B 78 */	mr r7, r3
 /* 802AC9E4 002A8684  7F C3 F3 78 */	mr r3, r30
 /* 802AC9E8 002A8688  38 80 00 74 */	li r4, 0x74
@@ -8304,7 +8304,7 @@ lbl_802ACA0C:
 /* 802ACA18 002A86B8  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802ACA1C 002A86BC  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802ACA20 002A86C0  7D 89 03 A6 */	mtctr r12
-/* 802ACA24 002A86C4  4E 80 04 21 */	bctrl 
+/* 802ACA24 002A86C4  4E 80 04 21 */	bctrl
 /* 802ACA28 002A86C8  7F C3 F3 78 */	mr r3, r30
 /* 802ACA2C 002A86CC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802ACA30 002A86D0  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -8313,7 +8313,7 @@ lbl_802ACA0C:
 /* 802ACA3C 002A86DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ACA40 002A86E0  7C 08 03 A6 */	mtlr r0
 /* 802ACA44 002A86E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ACA48 002A86E8  4E 80 00 20 */	blr 
+/* 802ACA48 002A86E8  4E 80 00 20 */	blr
 
 .global "GetHeap__26ESocialAnimationSetManagerFv"
 "GetHeap__26ESocialAnimationSetManagerFv":
@@ -8350,7 +8350,7 @@ lbl_802ACA94:
 /* 802ACAB4 002A8754  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ACAB8 002A8758  7C 08 03 A6 */	mtlr r0
 /* 802ACABC 002A875C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ACAC0 002A8760  4E 80 00 20 */	blr 
+/* 802ACAC0 002A8760  4E 80 00 20 */	blr
 
 .global "GetHeap__18ESoundEventManagerFv"
 "GetHeap__18ESoundEventManagerFv":
@@ -8372,13 +8372,13 @@ lbl_802ACA94:
 /* 802ACAF4 002A8794  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACAF8 002A8798  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802ACAFC 002A879C  7D 89 03 A6 */	mtctr r12
-/* 802ACB00 002A87A0  4E 80 04 21 */	bctrl 
+/* 802ACB00 002A87A0  4E 80 04 21 */	bctrl
 /* 802ACB04 002A87A4  7C 7E 1B 78 */	mr r30, r3
 /* 802ACB08 002A87A8  38 7F AF C4 */	addi r3, r31, -20540
 /* 802ACB0C 002A87AC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACB10 002A87B0  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802ACB14 002A87B4  7D 89 03 A6 */	mtctr r12
-/* 802ACB18 002A87B8  4E 80 04 21 */	bctrl 
+/* 802ACB18 002A87B8  4E 80 04 21 */	bctrl
 /* 802ACB1C 002A87BC  7C 67 1B 78 */	mr r7, r3
 /* 802ACB20 002A87C0  7F C3 F3 78 */	mr r3, r30
 /* 802ACB24 002A87C4  38 80 00 30 */	li r4, 0x30
@@ -8403,7 +8403,7 @@ lbl_802ACB48:
 /* 802ACB6C 002A880C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ACB70 002A8810  7C 08 03 A6 */	mtlr r0
 /* 802ACB74 002A8814  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ACB78 002A8818  4E 80 00 20 */	blr 
+/* 802ACB78 002A8818  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__22ESoundTrackDataManagerFP5EFileUiUi"
 "AllocateAndLoadResource__22ESoundTrackDataManagerFP5EFileUiUi":
@@ -8436,7 +8436,7 @@ lbl_802ACBC0:
 /* 802ACBE0 002A8880  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ACBE4 002A8884  7C 08 03 A6 */	mtlr r0
 /* 802ACBE8 002A8888  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ACBEC 002A888C  4E 80 00 20 */	blr 
+/* 802ACBEC 002A888C  4E 80 00 20 */	blr
 
 .global "GetHeap__15ETextureManagerFv"
 "GetHeap__15ETextureManagerFv":
@@ -8458,13 +8458,13 @@ lbl_802ACBC0:
 /* 802ACC20 002A88C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACC24 002A88C4  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802ACC28 002A88C8  7D 89 03 A6 */	mtctr r12
-/* 802ACC2C 002A88CC  4E 80 04 21 */	bctrl 
+/* 802ACC2C 002A88CC  4E 80 04 21 */	bctrl
 /* 802ACC30 002A88D0  7C 7E 1B 78 */	mr r30, r3
 /* 802ACC34 002A88D4  38 7F CA 64 */	addi r3, r31, -13724
 /* 802ACC38 002A88D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACC3C 002A88DC  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802ACC40 002A88E0  7D 89 03 A6 */	mtctr r12
-/* 802ACC44 002A88E4  4E 80 04 21 */	bctrl 
+/* 802ACC44 002A88E4  4E 80 04 21 */	bctrl
 /* 802ACC48 002A88E8  7C 67 1B 78 */	mr r7, r3
 /* 802ACC4C 002A88EC  7F C3 F3 78 */	mr r3, r30
 /* 802ACC50 002A88F0  38 80 00 18 */	li r4, 0x18
@@ -8483,7 +8483,7 @@ lbl_802ACC74:
 /* 802ACC80 002A8920  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802ACC84 002A8924  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802ACC88 002A8928  7D 89 03 A6 */	mtctr r12
-/* 802ACC8C 002A892C  4E 80 04 21 */	bctrl 
+/* 802ACC8C 002A892C  4E 80 04 21 */	bctrl
 /* 802ACC90 002A8930  7F C3 F3 78 */	mr r3, r30
 /* 802ACC94 002A8934  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802ACC98 002A8938  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -8492,7 +8492,7 @@ lbl_802ACC74:
 /* 802ACCA4 002A8944  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ACCA8 002A8948  7C 08 03 A6 */	mtlr r0
 /* 802ACCAC 002A894C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ACCB0 002A8950  4E 80 00 20 */	blr 
+/* 802ACCB0 002A8950  4E 80 00 20 */	blr
 
 .global "__ct__19FreeResourceManagerFP12EThreadMutex"
 "__ct__19FreeResourceManagerFP12EThreadMutex":
@@ -8515,7 +8515,7 @@ lbl_802ACC74:
 /* 802ACCF4 002A8994  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802ACCF8 002A8998  7C 08 03 A6 */	mtlr r0
 /* 802ACCFC 002A899C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ACD00 002A89A0  4E 80 00 20 */	blr 
+/* 802ACD00 002A89A0  4E 80 00 20 */	blr
 
 .global "AddItem__19FreeResourceManagerFP9EResource"
 "AddItem__19FreeResourceManagerFP9EResource":
@@ -8533,7 +8533,7 @@ lbl_802ACC74:
 /* 802ACD30 002A89D0  38 80 FF FF */	li r4, -1
 /* 802ACD34 002A89D4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ACD38 002A89D8  7D 89 03 A6 */	mtctr r12
-/* 802ACD3C 002A89DC  4E 80 04 21 */	bctrl 
+/* 802ACD3C 002A89DC  4E 80 04 21 */	bctrl
 /* 802ACD40 002A89E0  80 7E 0C A0 */	lwz r3, 0xca0(r30)
 /* 802ACD44 002A89E4  80 1E 0C A4 */	lwz r0, 0xca4(r30)
 /* 802ACD48 002A89E8  7C 03 00 00 */	cmpw r3, r0
@@ -8542,7 +8542,7 @@ lbl_802ACC74:
 /* 802ACD54 002A89F4  7F C3 F3 78 */	mr r3, r30
 /* 802ACD58 002A89F8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802ACD5C 002A89FC  7D 89 03 A6 */	mtctr r12
-/* 802ACD60 002A8A00  4E 80 04 21 */	bctrl 
+/* 802ACD60 002A8A00  4E 80 04 21 */	bctrl
 /* 802ACD64 002A8A04  7F C3 F3 78 */	mr r3, r30
 /* 802ACD68 002A8A08  38 80 00 05 */	li r4, 5
 /* 802ACD6C 002A8A0C  48 00 03 7D */	bl "MakeSpace__19FreeResourceManagerFi"
@@ -8551,7 +8551,7 @@ lbl_802ACC74:
 /* 802ACD78 002A8A18  38 80 FF FF */	li r4, -1
 /* 802ACD7C 002A8A1C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ACD80 002A8A20  7D 89 03 A6 */	mtctr r12
-/* 802ACD84 002A8A24  4E 80 04 21 */	bctrl 
+/* 802ACD84 002A8A24  4E 80 04 21 */	bctrl
 /* 802ACD88 002A8A28  80 7E 0C A0 */	lwz r3, 0xca0(r30)
 /* 802ACD8C 002A8A2C  80 1E 0C A4 */	lwz r0, 0xca4(r30)
 /* 802ACD90 002A8A30  7C 03 00 00 */	cmpw r3, r0
@@ -8560,12 +8560,12 @@ lbl_802ACC74:
 /* 802ACD9C 002A8A3C  7F C3 F3 78 */	mr r3, r30
 /* 802ACDA0 002A8A40  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802ACDA4 002A8A44  7D 89 03 A6 */	mtctr r12
-/* 802ACDA8 002A8A48  4E 80 04 21 */	bctrl 
+/* 802ACDA8 002A8A48  4E 80 04 21 */	bctrl
 /* 802ACDAC 002A8A4C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802ACDB0 002A8A50  7F E3 FB 78 */	mr r3, r31
 /* 802ACDB4 002A8A54  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802ACDB8 002A8A58  7D 89 03 A6 */	mtctr r12
-/* 802ACDBC 002A8A5C  4E 80 04 21 */	bctrl 
+/* 802ACDBC 002A8A5C  4E 80 04 21 */	bctrl
 /* 802ACDC0 002A8A60  48 00 00 30 */	b lbl_802ACDF0
 lbl_802ACDC4:
 /* 802ACDC4 002A8A64  54 60 10 3A */	slwi r0, r3, 2
@@ -8578,14 +8578,14 @@ lbl_802ACDC4:
 /* 802ACDE0 002A8A80  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802ACDE4 002A8A84  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802ACDE8 002A8A88  7D 89 03 A6 */	mtctr r12
-/* 802ACDEC 002A8A8C  4E 80 04 21 */	bctrl 
+/* 802ACDEC 002A8A8C  4E 80 04 21 */	bctrl
 lbl_802ACDF0:
 /* 802ACDF0 002A8A90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802ACDF4 002A8A94  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802ACDF8 002A8A98  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802ACDFC 002A8A9C  7C 08 03 A6 */	mtlr r0
 /* 802ACE00 002A8AA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ACE04 002A8AA4  4E 80 00 20 */	blr 
+/* 802ACE04 002A8AA4  4E 80 00 20 */	blr
 
 .global "RemoveItem__19FreeResourceManagerFP9EResource"
 "RemoveItem__19FreeResourceManagerFP9EResource":
@@ -8600,7 +8600,7 @@ lbl_802ACDF0:
 /* 802ACE28 002A8AC8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACE2C 002A8ACC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ACE30 002A8AD0  7D 89 03 A6 */	mtctr r12
-/* 802ACE34 002A8AD4  4E 80 04 21 */	bctrl 
+/* 802ACE34 002A8AD4  4E 80 04 21 */	bctrl
 /* 802ACE38 002A8AD8  80 9E 0C A0 */	lwz r4, 0xca0(r30)
 /* 802ACE3C 002A8ADC  7F C3 F3 78 */	mr r3, r30
 /* 802ACE40 002A8AE0  38 A0 00 00 */	li r5, 0
@@ -8621,7 +8621,7 @@ lbl_802ACE68:
 /* 802ACE74 002A8B14  7F C3 F3 78 */	mr r3, r30
 /* 802ACE78 002A8B18  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802ACE7C 002A8B1C  7D 89 03 A6 */	mtctr r12
-/* 802ACE80 002A8B20  4E 80 04 21 */	bctrl 
+/* 802ACE80 002A8B20  4E 80 04 21 */	bctrl
 /* 802ACE84 002A8B24  38 60 00 00 */	li r3, 0
 /* 802ACE88 002A8B28  48 00 00 4C */	b lbl_802ACED4
 lbl_802ACE8C:
@@ -8643,7 +8643,7 @@ lbl_802ACEA8:
 /* 802ACEC0 002A8B60  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802ACEC4 002A8B64  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802ACEC8 002A8B68  7D 89 03 A6 */	mtctr r12
-/* 802ACECC 002A8B6C  4E 80 04 21 */	bctrl 
+/* 802ACECC 002A8B6C  4E 80 04 21 */	bctrl
 /* 802ACED0 002A8B70  38 60 00 01 */	li r3, 1
 lbl_802ACED4:
 /* 802ACED4 002A8B74  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -8651,7 +8651,7 @@ lbl_802ACED4:
 /* 802ACEDC 002A8B7C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802ACEE0 002A8B80  7C 08 03 A6 */	mtlr r0
 /* 802ACEE4 002A8B84  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ACEE8 002A8B88  4E 80 00 20 */	blr 
+/* 802ACEE8 002A8B88  4E 80 00 20 */	blr
 
 .global "MakeSpaceExceptInThisHeap__19FreeResourceManagerFP6EAHeapi"
 "MakeSpaceExceptInThisHeap__19FreeResourceManagerFP6EAHeapi":
@@ -8674,13 +8674,13 @@ lbl_802ACF20:
 /* 802ACF28 002A8BC8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ACF2C 002A8BCC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ACF30 002A8BD0  7D 89 03 A6 */	mtctr r12
-/* 802ACF34 002A8BD4  4E 80 04 21 */	bctrl 
+/* 802ACF34 002A8BD4  4E 80 04 21 */	bctrl
 /* 802ACF38 002A8BD8  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802ACF3C 002A8BDC  7F A3 EB 78 */	mr r3, r29
 /* 802ACF40 002A8BE0  38 80 FF FF */	li r4, -1
 /* 802ACF44 002A8BE4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ACF48 002A8BE8  7D 89 03 A6 */	mtctr r12
-/* 802ACF4C 002A8BEC  4E 80 04 21 */	bctrl 
+/* 802ACF4C 002A8BEC  4E 80 04 21 */	bctrl
 /* 802ACF50 002A8BF0  80 1D 0C A0 */	lwz r0, 0xca0(r29)
 /* 802ACF54 002A8BF4  7C 18 00 00 */	cmpw r24, r0
 /* 802ACF58 002A8BF8  40 80 00 08 */	bge lbl_802ACF60
@@ -8715,7 +8715,7 @@ lbl_802ACFB8:
 /* 802ACFBC 002A8C5C  7F 03 C3 78 */	mr r3, r24
 /* 802ACFC0 002A8C60  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802ACFC4 002A8C64  7D 89 03 A6 */	mtctr r12
-/* 802ACFC8 002A8C68  4E 80 04 21 */	bctrl 
+/* 802ACFC8 002A8C68  4E 80 04 21 */	bctrl
 /* 802ACFCC 002A8C6C  2C 03 00 00 */	cmpwi r3, 0
 /* 802ACFD0 002A8C70  40 82 00 34 */	bne lbl_802AD004
 lbl_802ACFD4:
@@ -8763,12 +8763,12 @@ lbl_802AD04C:
 /* 802AD064 002A8D04  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AD068 002A8D08  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802AD06C 002A8D0C  7D 89 03 A6 */	mtctr r12
-/* 802AD070 002A8D10  4E 80 04 21 */	bctrl 
+/* 802AD070 002A8D10  4E 80 04 21 */	bctrl
 /* 802AD074 002A8D14  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802AD078 002A8D18  7F A3 EB 78 */	mr r3, r29
 /* 802AD07C 002A8D1C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802AD080 002A8D20  7D 89 03 A6 */	mtctr r12
-/* 802AD084 002A8D24  4E 80 04 21 */	bctrl 
+/* 802AD084 002A8D24  4E 80 04 21 */	bctrl
 /* 802AD088 002A8D28  3B 81 00 08 */	addi r28, r1, 8
 /* 802AD08C 002A8D2C  3B 00 00 00 */	li r24, 0
 /* 802AD090 002A8D30  3B 40 00 00 */	li r26, 0
@@ -8782,7 +8782,7 @@ lbl_802AD098:
 /* 802AD0AC 002A8D4C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802AD0B0 002A8D50  3B 04 00 01 */	addi r24, r4, 1
 /* 802AD0B4 002A8D54  7D 89 03 A6 */	mtctr r12
-/* 802AD0B8 002A8D58  4E 80 04 21 */	bctrl 
+/* 802AD0B8 002A8D58  4E 80 04 21 */	bctrl
 /* 802AD0BC 002A8D5C  3B 9C 00 04 */	addi r28, r28, 4
 /* 802AD0C0 002A8D60  3B 5A 00 01 */	addi r26, r26, 1
 lbl_802AD0C4:
@@ -8795,7 +8795,7 @@ lbl_802AD0D0:
 /* 802AD0D8 002A8D78  80 01 04 34 */	lwz r0, 0x434(r1)
 /* 802AD0DC 002A8D7C  7C 08 03 A6 */	mtlr r0
 /* 802AD0E0 002A8D80  38 21 04 30 */	addi r1, r1, 0x430
-/* 802AD0E4 002A8D84  4E 80 00 20 */	blr 
+/* 802AD0E4 002A8D84  4E 80 00 20 */	blr
 
 .global "MakeSpace__19FreeResourceManagerFi"
 "MakeSpace__19FreeResourceManagerFi":
@@ -8806,7 +8806,7 @@ lbl_802AD0D0:
 .global "GetUnreferencedResourceCount__19FreeResourceManagerFv"
 "GetUnreferencedResourceCount__19FreeResourceManagerFv":
 /* 802AD0F4 002A8D94  80 63 0C A0 */	lwz r3, 0xca0(r3)
-/* 802AD0F8 002A8D98  4E 80 00 20 */	blr 
+/* 802AD0F8 002A8D98  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__15ParticleManagerFP5EFileUiUi"
 "AllocateAndLoadResource__15ParticleManagerFP5EFileUiUi":
@@ -8823,13 +8823,13 @@ lbl_802AD0D0:
 /* 802AD124 002A8DC4  7C DD 33 78 */	mr r29, r6
 /* 802AD128 002A8DC8  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802AD12C 002A8DCC  7D 89 03 A6 */	mtctr r12
-/* 802AD130 002A8DD0  4E 80 04 21 */	bctrl 
+/* 802AD130 002A8DD0  4E 80 04 21 */	bctrl
 /* 802AD134 002A8DD4  7C 7E 1B 78 */	mr r30, r3
 /* 802AD138 002A8DD8  38 7F D7 B4 */	addi r3, r31, -10316
 /* 802AD13C 002A8DDC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AD140 002A8DE0  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802AD144 002A8DE4  7D 89 03 A6 */	mtctr r12
-/* 802AD148 002A8DE8  4E 80 04 21 */	bctrl 
+/* 802AD148 002A8DE8  4E 80 04 21 */	bctrl
 /* 802AD14C 002A8DEC  7C 67 1B 78 */	mr r7, r3
 /* 802AD150 002A8DF0  7F C3 F3 78 */	mr r3, r30
 /* 802AD154 002A8DF4  38 80 00 3C */	li r4, 0x3c
@@ -8853,22 +8853,22 @@ lbl_802AD178:
 /* 802AD198 002A8E38  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AD19C 002A8E3C  7C 08 03 A6 */	mtlr r0
 /* 802AD1A0 002A8E40  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AD1A4 002A8E44  4E 80 00 20 */	blr 
+/* 802AD1A4 002A8E44  4E 80 00 20 */	blr
 
 .global "CanCache__24EffectsAttachmentManagerFP9EResource"
 "CanCache__24EffectsAttachmentManagerFP9EResource":
 /* 802AD1A8 002A8E48  38 60 00 01 */	li r3, 1
-/* 802AD1AC 002A8E4C  4E 80 00 20 */	blr 
+/* 802AD1AC 002A8E4C  4E 80 00 20 */	blr
 
 .global "CanCache__20EAmbientScoreManagerFP9EResource"
 "CanCache__20EAmbientScoreManagerFP9EResource":
 /* 802AD1B0 002A8E50  38 60 00 01 */	li r3, 1
-/* 802AD1B4 002A8E54  4E 80 00 20 */	blr 
+/* 802AD1B4 002A8E54  4E 80 00 20 */	blr
 
 .global "CanCache__12EAnimManagerFP9EResource"
 "CanCache__12EAnimManagerFP9EResource":
 /* 802AD1B8 002A8E58  38 60 00 01 */	li r3, 1
-/* 802AD1BC 002A8E5C  4E 80 00 20 */	blr 
+/* 802AD1BC 002A8E5C  4E 80 00 20 */	blr
 
 .global "__dt__13ERAudioStreamFv"
 "__dt__13ERAudioStreamFv":
@@ -8895,12 +8895,12 @@ lbl_802AD200:
 /* 802AD20C 002A8EAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AD210 002A8EB0  7C 08 03 A6 */	mtlr r0
 /* 802AD214 002A8EB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD218 002A8EB8  4E 80 00 20 */	blr 
+/* 802AD218 002A8EB8  4E 80 00 20 */	blr
 
 .global "CanCache__17ECharacterManagerFP9EResource"
 "CanCache__17ECharacterManagerFP9EResource":
 /* 802AD21C 002A8EBC  38 60 00 01 */	li r3, 1
-/* 802AD220 002A8EC0  4E 80 00 20 */	blr 
+/* 802AD220 002A8EC0  4E 80 00 20 */	blr
 
 .global "__dt__18EControllerManagerFv"
 "__dt__18EControllerManagerFv":
@@ -8920,142 +8920,516 @@ lbl_802AD24C:
 /* 802AD254 002A8EF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AD258 002A8EF8  7C 08 03 A6 */	mtlr r0
 /* 802AD25C 002A8EFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD260 002A8F00  4E 80 00 20 */	blr 
+/* 802AD260 002A8F00  4E 80 00 20 */	blr
 
 .global "CanCache__15EDatasetManagerFP9EResource"
 "CanCache__15EDatasetManagerFP9EResource":
 /* 802AD264 002A8F04  38 60 00 01 */	li r3, 1
-/* 802AD268 002A8F08  4E 80 00 20 */	blr 
+/* 802AD268 002A8F08  4E 80 00 20 */	blr
 
 .global "CanCache__16EEdithTreeSetManFP9EResource"
 "CanCache__16EEdithTreeSetManFP9EResource":
 /* 802AD26C 002A8F0C  38 60 00 01 */	li r3, 1
-/* 802AD270 002A8F10  4E 80 00 20 */	blr 
+/* 802AD270 002A8F10  4E 80 00 20 */	blr
 
 .global "CanCache__13EFlashManagerFP9EResource"
 "CanCache__13EFlashManagerFP9EResource":
 /* 802AD274 002A8F14  38 60 00 01 */	li r3, 1
-/* 802AD278 002A8F18  4E 80 00 20 */	blr 
+/* 802AD278 002A8F18  4E 80 00 20 */	blr
 
 .global "CanCache__13EModelManagerFP9EResource"
 "CanCache__13EModelManagerFP9EResource":
 /* 802AD27C 002A8F1C  38 60 00 01 */	li r3, 1
-/* 802AD280 002A8F20  4E 80 00 20 */	blr 
+/* 802AD280 002A8F20  4E 80 00 20 */	blr
 
 .global "CanCache__15ETextureManagerFP9EResource"
 "CanCache__15ETextureManagerFP9EResource":
 /* 802AD284 002A8F24  38 60 00 01 */	li r3, 1
-/* 802AD288 002A8F28  4E 80 00 20 */	blr 
+/* 802AD288 002A8F28  4E 80 00 20 */	blr
 
 .global "CanCache__14EShaderManagerFP9EResource"
 "CanCache__14EShaderManagerFP9EResource":
 /* 802AD28C 002A8F2C  38 60 00 01 */	li r3, 1
-/* 802AD290 002A8F30  4E 80 00 20 */	blr 
+/* 802AD290 002A8F30  4E 80 00 20 */	blr
 
 .global "CanCache__17EQuickdataManagerFP9EResource"
 "CanCache__17EQuickdataManagerFP9EResource":
 /* 802AD294 002A8F34  38 60 00 01 */	li r3, 1
-/* 802AD298 002A8F38  4E 80 00 20 */	blr 
+/* 802AD298 002A8F38  4E 80 00 20 */	blr
 
 .global "CanCache__18ESoundEventManagerFP9EResource"
 "CanCache__18ESoundEventManagerFP9EResource":
 /* 802AD29C 002A8F3C  38 60 00 01 */	li r3, 1
-/* 802AD2A0 002A8F40  4E 80 00 20 */	blr 
+/* 802AD2A0 002A8F40  4E 80 00 20 */	blr
 
 .global "CanCache__26ESocialAnimationSetManagerFP9EResource"
 "CanCache__26ESocialAnimationSetManagerFP9EResource":
 /* 802AD2A4 002A8F44  38 60 00 00 */	li r3, 0
-/* 802AD2A8 002A8F48  4E 80 00 20 */	blr 
+/* 802AD2A8 002A8F48  4E 80 00 20 */	blr
 
 .global "CanCache__22ESoundTrackDataManagerFP9EResource"
 "CanCache__22ESoundTrackDataManagerFP9EResource":
 /* 802AD2AC 002A8F4C  38 60 00 01 */	li r3, 1
-/* 802AD2B0 002A8F50  4E 80 00 20 */	blr 
+/* 802AD2B0 002A8F50  4E 80 00 20 */	blr
 
 .global "CanCache__15ParticleManagerFP9EResource"
 "CanCache__15ParticleManagerFP9EResource":
 /* 802AD2B4 002A8F54  38 60 00 01 */	li r3, 1
-/* 802AD2B8 002A8F58  4E 80 00 20 */	blr 
+/* 802AD2B8 002A8F58  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804508A0
 lbl_804508A0:
-	.incbin "baserom.dol", 0x44C9A0, 0xF0
+	# ROM: 0x44C9A0
+	.asciz "textures"
+	.byte 0x00, 0x00, 0x00
+	.asciz "animations"
+	.byte 0x00
+	.asciz "characters"
+	.byte 0x00
+	.asciz "datasets"
+	.byte 0x00, 0x00, 0x00
+	.asciz "quickdatas"
+	.byte 0x00
+	.asciz "emitters"
+	.byte 0x00, 0x00, 0x00
+	.asciz "effectsAttachments"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "effectsEmitters"
+	.asciz "effectsSequencers"
+	.byte 0x00, 0x00
+	.asciz "edithtreesets"
+	.byte 0x00, 0x00
+	.asciz "audiostreams"
+	.byte 0x00, 0x00, 0x00
+	.asciz "binaries"
+	.byte 0x00, 0x00, 0x00
+	.asciz "ambientscores"
+	.byte 0x00, 0x00
+	.asciz "soundtrackdatas"
+	.asciz "socialanimationsets"
+	.asciz "soundevents"
+
 .global lbl_80450990
 lbl_80450990:
-	.incbin "baserom.dol", 0x44CA90, 0xC
+	# ROM: 0x44CA90
+	.asciz "undefined"
+	.byte 0x00, 0x00
+
 .global "__vt__15ParticleManager"
 "__vt__15ParticleManager":
-	.incbin "baserom.dol", 0x44CA9C, 0x34
+	# ROM: 0x44CA9C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15ParticleManagerFv" ;# ptr (0x802A9D68)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__15ParticleManagerFP9EResource" ;# ptr (0x802AD2B4)
+	.4byte "AllocateAndLoadResource__15ParticleManagerFP5EFileUiUi" ;# ptr (0x802AD0FC)
+
 .global "__vt__22ESoundTrackDataManager"
 "__vt__22ESoundTrackDataManager":
-	.incbin "baserom.dol", 0x44CAD0, 0x34
+	# ROM: 0x44CAD0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22ESoundTrackDataManagerFv" ;# ptr (0x802A9DC0)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__22ESoundTrackDataManagerFP9EResource" ;# ptr (0x802AD2AC)
+	.4byte "AllocateAndLoadResource__22ESoundTrackDataManagerFP5EFileUiUi" ;# ptr (0x802ACB7C)
+
 .global "__vt__26ESocialAnimationSetManager"
 "__vt__26ESocialAnimationSetManager":
-	.incbin "baserom.dol", 0x44CB04, 0x34
+	# ROM: 0x44CB04
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__26ESocialAnimationSetManagerFv" ;# ptr (0x802A9E18)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__26ESocialAnimationSetManagerFv" ;# ptr (0x802ACA4C)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__26ESocialAnimationSetManagerFP9EResource" ;# ptr (0x802AD2A4)
+	.4byte "AllocateAndLoadResource__26ESocialAnimationSetManagerFP5EFileUiUi" ;# ptr (0x802ACA50)
+
 .global "__vt__18ESoundEventManager"
 "__vt__18ESoundEventManager":
-	.incbin "baserom.dol", 0x44CB38, 0x34
+	# ROM: 0x44CB38
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__18ESoundEventManagerFv" ;# ptr (0x802A9E70)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__18ESoundEventManagerFv" ;# ptr (0x802ACAC4)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__18ESoundEventManagerFP9EResource" ;# ptr (0x802AD29C)
+	.4byte "AllocateAndLoadResource__18ESoundEventManagerFP5EFileUiUi" ;# ptr (0x802ACAC8)
+
 .global "__vt__17EQuickdataManager"
 "__vt__17EQuickdataManager":
-	.incbin "baserom.dol", 0x44CB6C, 0x34
+	# ROM: 0x44CB6C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17EQuickdataManagerFv" ;# ptr (0x802A9EC8)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__17EQuickdataManagerFv" ;# ptr (0x802A70F4)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__17EQuickdataManagerFP9EResource" ;# ptr (0x802AD294)
+	.4byte "AllocateAndLoadResource__17EQuickdataManagerFP5EFileUiUi" ;# ptr (0x802A70F8)
+
 .global "__vt__9EMovieMan"
 "__vt__9EMovieMan":
-	.incbin "baserom.dol", 0x44CBA0, 0x34
+	# ROM: 0x44CBA0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9EMovieManFv" ;# ptr (0x802A9F20)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__9EMovieManFP5EFileUiUi" ;# ptr (0x802A702C)
+
 .global "__vt__14EShaderManager"
 "__vt__14EShaderManager":
-	.incbin "baserom.dol", 0x44CBD4, 0x34
+	# ROM: 0x44CBD4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14EShaderManagerFv" ;# ptr (0x802A9F78)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__14EShaderManagerFv" ;# ptr (0x802AC988)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__14EShaderManagerFP9EResource" ;# ptr (0x802AD28C)
+	.4byte "AllocateAndLoadResource__14EShaderManagerFP5EFileUiUi" ;# ptr (0x802AC98C)
+
 .global "__vt__15ETextureManager"
 "__vt__15ETextureManager":
-	.incbin "baserom.dol", 0x44CC08, 0x34
+	# ROM: 0x44CC08
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15ETextureManagerFv" ;# ptr (0x802A9FD0)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__15ETextureManagerFv" ;# ptr (0x802ACBF0)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__15ETextureManagerFP9EResource" ;# ptr (0x802AD284)
+	.4byte "AllocateAndLoadResource__15ETextureManagerFP5EFileUiUi" ;# ptr (0x802ACBF4)
+
 .global "__vt__13EModelManager"
 "__vt__13EModelManager":
-	.incbin "baserom.dol", 0x44CC3C, 0x34
+	# ROM: 0x44CC3C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13EModelManagerFv" ;# ptr (0x802AA028)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__13EModelManagerFv" ;# ptr (0x802A6FB0)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__13EModelManagerFP9EResource" ;# ptr (0x802AD27C)
+	.4byte "AllocateAndLoadResource__13EModelManagerFP5EFileUiUi" ;# ptr (0x802A6FB4)
+
 .global "__vt__12EFontManager"
 "__vt__12EFontManager":
-	.incbin "baserom.dol", 0x44CC70, 0x34
+	# ROM: 0x44CC70
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12EFontManagerFv" ;# ptr (0x802AA080)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__12EFontManagerFP5EFileUiUi" ;# ptr (0x802A6F28)
+
 .global "__vt__13EFlashManager"
 "__vt__13EFlashManager":
-	.incbin "baserom.dol", 0x44CCA4, 0x34
+	# ROM: 0x44CCA4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13EFlashManagerFv" ;# ptr (0x802AA0D8)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__13EFlashManagerFv" ;# ptr (0x802A6E9C)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__13EFlashManagerFP9EResource" ;# ptr (0x802AD274)
+	.4byte "AllocateAndLoadResource__13EFlashManagerFP5EFileUiUi" ;# ptr (0x802A6EA0)
+
 .global "__vt__16EEdithTreeSetMan"
 "__vt__16EEdithTreeSetMan":
-	.incbin "baserom.dol", 0x44CCD8, 0x34
+	# ROM: 0x44CCD8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16EEdithTreeSetManFv" ;# ptr (0x802AA130)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EEdithTreeSetManFv" ;# ptr (0x802A6E14)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EEdithTreeSetManFP9EResource" ;# ptr (0x802AD26C)
+	.4byte "AllocateAndLoadResource__16EEdithTreeSetManFP5EFileUiUi" ;# ptr (0x802A6E18)
+
 .global "__vt__15EDatasetManager"
 "__vt__15EDatasetManager":
-	.incbin "baserom.dol", 0x44CD0C, 0x34
+	# ROM: 0x44CD0C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15EDatasetManagerFv" ;# ptr (0x802AA188)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__15EDatasetManagerFUi" ;# ptr (0x8012042C)
+	.4byte "AddRefAsync__15EDatasetManagerFPCc" ;# ptr (0x802A6C7C)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__15EDatasetManagerFP9EResource" ;# ptr (0x802AD264)
+	.4byte "AllocateAndLoadResource__15EDatasetManagerFP5EFileUiUi" ;# ptr (0x802A6D18)
+
 .global "__vt__18EControllerManager"
 "__vt__18EControllerManager":
-	.incbin "baserom.dol", 0x44CD40, 0x24
+	# ROM: 0x44CD40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__18EControllerManagerFv" ;# ptr (0x802AD224)
+	.4byte "Update__18EControllerManagerFv" ;# ptr (0x802A69A0)
+	.4byte "Init__18EControllerManagerFv" ;# ptr (0x802A6988)
+	.4byte "Shutdown__18EControllerManagerFv" ;# ptr (0x802A69FC)
+	.4byte "ToggleDPD__18EControllerManagerFb" ;# ptr (0x801869DC)
+	.4byte "IsDPDEnabled__18EControllerManagerFv" ;# ptr (0x8024589C)
+	.4byte "Flush__18EControllerManagerFv" ;# ptr (0x802A6AE8)
+
 .global "__vt__17ECharacterManager"
 "__vt__17ECharacterManager":
-	.incbin "baserom.dol", 0x44CD64, 0x34
+	# ROM: 0x44CD64
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17ECharacterManagerFv" ;# ptr (0x802AA1E0)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__17ECharacterManagerFP9EResource" ;# ptr (0x802AD21C)
+	.4byte "AllocateAndLoadResource__17ECharacterManagerFP5EFileUiUi" ;# ptr (0x802A68EC)
+
 .global "__vt__14EBinaryManager"
 "__vt__14EBinaryManager":
-	.incbin "baserom.dol", 0x44CD98, 0x34
+	# ROM: 0x44CD98
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14EBinaryManagerFv" ;# ptr (0x802AA238)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__14EBinaryManagerFv" ;# ptr (0x802A6864)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__14EBinaryManagerFP5EFileUiUi" ;# ptr (0x802A6868)
+
 .global "__vt__19EAudioStreamManager"
 "__vt__19EAudioStreamManager":
-	.incbin "baserom.dol", 0x44CDCC, 0x34
+	# ROM: 0x44CDCC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__19EAudioStreamManagerFv" ;# ptr (0x802AA290)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__19EAudioStreamManagerFP5EFileUiUi" ;# ptr (0x802A67B0)
+
 .global "__vt__13ERAudioStream"
 "__vt__13ERAudioStream":
-	.incbin "baserom.dol", 0x44CE00, 0x48
+	# ROM: 0x44CE00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SafeDelete__9EResourceFv" ;# ptr (0x802AC730)
+	.4byte "GetTypeInfo__9EResourceCFv" ;# ptr (0x802AC750)
+	.4byte "GetTypeName__9EResourceCFv" ;# ptr (0x802AC75C)
+	.4byte "GetTypeKey__9EResourceCFv" ;# ptr (0x802AC76C)
+	.4byte "GetTypeVersion__9EResourceCFv" ;# ptr (0x802AC77C)
+	.4byte "__dt__13ERAudioStreamFv" ;# ptr (0x802AD1C0)
+	.4byte "Read__9EResourceFR7EStream" ;# ptr (0x802DA19C)
+	.4byte "Write__9EResourceFR7EStream" ;# ptr (0x802DA150)
+	.4byte "Load__9EResourceFR5EFile" ;# ptr (0x802DA1FC)
+	.4byte "IsSafeToDelete__9EResourceFv" ;# ptr (0x8008888C)
+	.4byte "Init__9EResourceFv" ;# ptr (0x802AC728)
+	.4byte "Refresh__9EResourceFP5EFile" ;# ptr (0x802AC72C)
+	.4byte "DelRefSubResources__9EResourceFv" ;# ptr (0x80088894)
+	.4byte "AddRefSubResources__9EResourceFv" ;# ptr (0x80088898)
+	.4byte "TryIncrementSubResources__9EResourceFv" ;# ptr (0x8008889C)
+	.4byte "DetachClone__9EResourceFv" ;# ptr (0x800888A4)
+
 .global "__vt__12EAnimManager"
 "__vt__12EAnimManager":
-	.incbin "baserom.dol", 0x44CE48, 0x34
+	# ROM: 0x44CE48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12EAnimManagerFv" ;# ptr (0x802AA2E8)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__12EAnimManagerFv" ;# ptr (0x802A66E0)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__12EAnimManagerFP9EResource" ;# ptr (0x802AD1B8)
+	.4byte "AllocateAndLoadResource__12EAnimManagerFP5EFileUiUi" ;# ptr (0x802A66E4)
+
 .global "__vt__20EAmbientScoreManager"
 "__vt__20EAmbientScoreManager":
-	.incbin "baserom.dol", 0x44CE7C, 0x34
+	# ROM: 0x44CE7C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__20EAmbientScoreManagerFv" ;# ptr (0x802AA340)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__20EAmbientScoreManagerFv" ;# ptr (0x802A6664)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__20EAmbientScoreManagerFP9EResource" ;# ptr (0x802AD1B0)
+	.4byte "AllocateAndLoadResource__20EAmbientScoreManagerFP5EFileUiUi" ;# ptr (0x802A6668)
+
 .global "__vt__23EffectsSequencerManager"
 "__vt__23EffectsSequencerManager":
-	.incbin "baserom.dol", 0x44CEB0, 0x34
+	# ROM: 0x44CEB0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__23EffectsSequencerManagerFv" ;# ptr (0x802AA398)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__23EffectsSequencerManagerFP5EFileUiUi" ;# ptr (0x802A65F0)
+
 .global "__vt__21EffectsEmitterManager"
 "__vt__21EffectsEmitterManager":
-	.incbin "baserom.dol", 0x44CEE4, 0x34
+	# ROM: 0x44CEE4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21EffectsEmitterManagerFv" ;# ptr (0x802AA3F0)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte "AllocateAndLoadResource__21EffectsEmitterManagerFP5EFileUiUi" ;# ptr (0x802A657C)
+
 .global "__vt__24EffectsAttachmentManager"
 "__vt__24EffectsAttachmentManager":
-	.incbin "baserom.dol", 0x44CF18, 0x34
+	# ROM: 0x44CF18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__24EffectsAttachmentManagerFv" ;# ptr (0x802AA448)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__24EffectsAttachmentManagerFv" ;# ptr (0x802A5834)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__24EffectsAttachmentManagerFP9EResource" ;# ptr (0x802AD1A8)
+	.4byte "AllocateAndLoadResource__24EffectsAttachmentManagerFP5EFileUiUi" ;# ptr (0x802A5838)
+
 .global "__vt__16EResourceManager"
 "__vt__16EResourceManager":
-	.incbin "baserom.dol", 0x44CF4C, 0x54
+	# ROM: 0x44CF4C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16EResourceManagerFv" ;# ptr (0x802A723C)
+	.4byte "Init__16EResourceManagerFPCc" ;# ptr (0x802A737C)
+	.4byte "Shutdown__16EResourceManagerFv" ;# ptr (0x802A7314)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__16EResourceManagerFv" ;# ptr (0x802A8F70)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__16EResourceManagerFP9EResource" ;# ptr (0x8009B620)
+	.4byte 0x00000000
+	.asciz "allocator.h"
+	.asciz "allocator.h"
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_8050CCD8
@@ -9155,52 +9529,91 @@ lbl_80510698:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "m_loadEnabled__15EDatasetManager"
 "m_loadEnabled__15EDatasetManager":
-	.incbin "baserom.dol", 0x486288, 0x4
+	# ROM: 0x486288
+	.4byte 0x01000000
+
 .global lbl_805D670C
 lbl_805D670C:
-	.incbin "baserom.dol", 0x48628C, 0x4
+	# ROM: 0x48628C
+	.4byte 0xCFADA744
+
 .global lbl_805D6710
 lbl_805D6710:
-	.incbin "baserom.dol", 0x486290, 0x8
+	# ROM: 0x486290
+	.4byte 0x2D516CAF
+	.4byte 0x00000000
+
 .global lbl_805D6718
 lbl_805D6718:
-	.incbin "baserom.dol", 0x486298, 0x8
+	# ROM: 0x486298
+	.asciz "shaders"
+
 .global lbl_805D6720
 lbl_805D6720:
-	.incbin "baserom.dol", 0x4862A0, 0x8
+	# ROM: 0x4862A0
+	.asciz "models"
+	.byte 0x00
+
 .global lbl_805D6728
 lbl_805D6728:
-	.incbin "baserom.dol", 0x4862A8, 0x8
+	# ROM: 0x4862A8
+	.asciz "samples"
+
 .global lbl_805D6730
 lbl_805D6730:
-	.incbin "baserom.dol", 0x4862B0, 0x8
+	# ROM: 0x4862B0
+	.asciz "flashes"
+
 .global lbl_805D6738
 lbl_805D6738:
-	.incbin "baserom.dol", 0x4862B8, 0x8
+	# ROM: 0x4862B8
+	.asciz "fonts"
+	.byte 0x00, 0x00
+
 .global lbl_805D6740
 lbl_805D6740:
-	.incbin "baserom.dol", 0x4862C0, 0x8
+	# ROM: 0x4862C0
+	.asciz "movies"
+	.byte 0x00
+
 .global lbl_805D6748
 lbl_805D6748:
-	.incbin "baserom.dol", 0x4862C8, 0x8
+	# ROM: 0x4862C8
+	.asciz "levels"
+	.byte 0x00
+
 .global lbl_805D6750
 lbl_805D6750:
-	.incbin "baserom.dol", 0x4862D0, 0x8
+	# ROM: 0x4862D0
+	.asciz "DATA/"
+	.byte 0x00, 0x00
+
 .global lbl_805D6758
 lbl_805D6758:
-	.incbin "baserom.dol", 0x4862D8, 0x8
+	# ROM: 0x4862D8
+	.asciz ".arc"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6760
 lbl_805D6760:
-	.incbin "baserom.dol", 0x4862E0, 0x3
+	# ROM: 0x4862E0
+	.byte 0x72, 0x62, 0x00
+
 .global lbl_805D6763
 lbl_805D6763:
-	.incbin "baserom.dol", 0x4862E3, 0x1
+	# ROM: 0x4862E3
+	.byte 0x01
+
 .global lbl_805D6764
 lbl_805D6764:
-	.incbin "baserom.dol", 0x4862E4, 0x1
+	# ROM: 0x4862E4
+	.byte 0x01
+
 .global lbl_805D6765
 lbl_805D6765:
-	.incbin "baserom.dol", 0x4862E5, 0x3
+	# ROM: 0x4862E5
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_lastCtrlUpdate"
@@ -9213,7 +9626,11 @@ lbl_805D6765:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB208
 lbl_805DB208:
-	.incbin "baserom.dol", 0x489528, 0x4
+	# ROM: 0x489528
+	.4byte 0xBF800000
+
 .global lbl_805DB20C
 lbl_805DB20C:
-	.incbin "baserom.dol", 0x48952C, 0x4
+	# ROM: 0x48952C
+	.byte 0x00, 0x00, 0x00, 0x00
+

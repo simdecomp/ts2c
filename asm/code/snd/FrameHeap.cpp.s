@@ -17,7 +17,7 @@
 /* 803A3844 0039F4E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3848 0039F4E8  7C 08 03 A6 */	mtlr r0
 /* 803A384C 0039F4EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3850 0039F4F0  4E 80 00 20 */	blr 
+/* 803A3850 0039F4F0  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv"
 "__dt__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv":
@@ -43,7 +43,7 @@ lbl_803A3890:
 /* 803A389C 0039F53C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A38A0 0039F540  7C 08 03 A6 */	mtlr r0
 /* 803A38A4 0039F544  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A38A8 0039F548  4E 80 00 20 */	blr 
+/* 803A38A8 0039F548  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv"
 "__ct__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv":
@@ -58,7 +58,7 @@ lbl_803A3890:
 /* 803A38CC 0039F56C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A38D0 0039F570  7C 08 03 A6 */	mtlr r0
 /* 803A38D4 0039F574  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A38D8 0039F578  4E 80 00 20 */	blr 
+/* 803A38D8 0039F578  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail9FrameHeapFv"
 "__dt__Q46nw4hbm3snd6detail9FrameHeapFv":
@@ -91,7 +91,7 @@ lbl_803A3930:
 /* 803A393C 0039F5DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3940 0039F5E0  7C 08 03 A6 */	mtlr r0
 /* 803A3944 0039F5E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3948 0039F5E8  4E 80 00 20 */	blr 
+/* 803A3948 0039F5E8  4E 80 00 20 */	blr
 
 .global "Create__Q46nw4hbm3snd6detail9FrameHeapFPvUl"
 "Create__Q46nw4hbm3snd6detail9FrameHeapFPvUl":
@@ -147,7 +147,7 @@ lbl_803A39F0:
 /* 803A39FC 0039F69C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A3A00 0039F6A0  7C 08 03 A6 */	mtlr r0
 /* 803A3A04 0039F6A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3A08 0039F6A8  4E 80 00 20 */	blr 
+/* 803A3A08 0039F6A8  4E 80 00 20 */	blr
 
 .global "MEMCreateFrmHeap_803A3A0C"
 "MEMCreateFrmHeap_803A3A0C":
@@ -161,7 +161,7 @@ lbl_803A39F0:
 /* 803A3A1C 0039F6BC  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A3A20 0039F6C0  38 03 FF FF */	addi r0, r3, -1
 /* 803A3A24 0039F6C4  7C 83 00 38 */	and r3, r4, r0
-/* 803A3A28 0039F6C8  4E 80 00 20 */	blr 
+/* 803A3A28 0039F6C8  4E 80 00 20 */	blr
 
 .global "Destroy__Q46nw4hbm3snd6detail9FrameHeapFv"
 "Destroy__Q46nw4hbm3snd6detail9FrameHeapFv":
@@ -187,7 +187,7 @@ lbl_803A3A70:
 /* 803A3A74 0039F714  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A3A78 0039F718  7C 08 03 A6 */	mtlr r0
 /* 803A3A7C 0039F71C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3A80 0039F720  4E 80 00 20 */	blr 
+/* 803A3A80 0039F720  4E 80 00 20 */	blr
 
 .global "Clear__Q46nw4hbm3snd6detail9FrameHeapFv"
 "Clear__Q46nw4hbm3snd6detail9FrameHeapFv":
@@ -228,7 +228,7 @@ lbl_803A3AFC:
 /* 803A3B04 0039F7A4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A3B08 0039F7A8  7C 08 03 A6 */	mtlr r0
 /* 803A3B0C 0039F7AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3B10 0039F7B0  4E 80 00 20 */	blr 
+/* 803A3B10 0039F7B0  4E 80 00 20 */	blr
 
 .global "Alloc__Q46nw4hbm3snd6detail9FrameHeapFUlPFPvUlPv_vPv"
 "Alloc__Q46nw4hbm3snd6detail9FrameHeapFUlPFPvUlPv_vPv":
@@ -299,12 +299,12 @@ lbl_803A3BF8:
 /* 803A3C00 0039F8A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A3C04 0039F8A4  7C 08 03 A6 */	mtlr r0
 /* 803A3C08 0039F8A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3C0C 0039F8AC  4E 80 00 20 */	blr 
+/* 803A3C0C 0039F8AC  4E 80 00 20 */	blr
 
 .global "GetBufferAddr__Q56nw4hbm3snd6detail9FrameHeap5BlockFv"
 "GetBufferAddr__Q56nw4hbm3snd6detail9FrameHeap5BlockFv":
 /* 803A3C10 0039F8B0  38 63 00 20 */	addi r3, r3, 0x20
-/* 803A3C14 0039F8B4  4E 80 00 20 */	blr 
+/* 803A3C14 0039F8B4  4E 80 00 20 */	blr
 
 .global "AppendBlock__Q56nw4hbm3snd6detail9FrameHeap7SectionFPQ56nw4hbm3snd6detail9FrameHeap5Block"
 "AppendBlock__Q56nw4hbm3snd6detail9FrameHeap7SectionFPQ56nw4hbm3snd6detail9FrameHeap5Block":
@@ -331,7 +331,7 @@ lbl_803A3BF8:
 /* 803A3C5C 0039F8FC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A3C60 0039F900  7C 08 03 A6 */	mtlr r0
 /* 803A3C64 0039F904  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3C68 0039F908  4E 80 00 20 */	blr 
+/* 803A3C68 0039F908  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorPQ56nw4hbm3snd6detail9FrameHeap5Block"
 "Insert__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorPQ56nw4hbm3snd6detail9FrameHeap5Block":
@@ -357,7 +357,7 @@ lbl_803A3BF8:
 /* 803A3CB8 0039F958  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A3CBC 0039F95C  7C 08 03 A6 */	mtlr r0
 /* 803A3CC0 0039F960  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3CC4 0039F964  4E 80 00 20 */	blr 
+/* 803A3CC4 0039F964  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -372,7 +372,7 @@ lbl_803A3BF8:
 /* 803A3CE8 0039F988  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3CEC 0039F98C  7C 08 03 A6 */	mtlr r0
 /* 803A3CF0 0039F990  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3CF4 0039F994  4E 80 00 20 */	blr 
+/* 803A3CF4 0039F994  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FPQ56nw4hbm3snd6detail9FrameHeap5Block"
 "GetNodeFromPointer__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FPQ56nw4hbm3snd6detail9FrameHeap5Block":
@@ -396,7 +396,7 @@ lbl_803A3D30:
 /* 803A3D38 0039F9D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3D3C 0039F9DC  7C 08 03 A6 */	mtlr r0
 /* 803A3D40 0039F9E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3D44 0039F9E4  4E 80 00 20 */	blr 
+/* 803A3D44 0039F9E4  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv"
 "GetEndIter__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv":
@@ -412,7 +412,7 @@ lbl_803A3D30:
 /* 803A3D6C 0039FA0C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A3D70 0039FA10  7C 08 03 A6 */	mtlr r0
 /* 803A3D74 0039FA14  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3D78 0039FA18  4E 80 00 20 */	blr 
+/* 803A3D78 0039FA18  4E 80 00 20 */	blr
 
 .global "GetBack__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv"
 "GetBack__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv":
@@ -442,7 +442,7 @@ lbl_803A3DB8:
 /* 803A3DD4 0039FA74  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803A3DD8 0039FA78  7C 08 03 A6 */	mtlr r0
 /* 803A3DDC 0039FA7C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3DE0 0039FA80  4E 80 00 20 */	blr 
+/* 803A3DE0 0039FA80  4E 80 00 20 */	blr
 
 .global "__ml__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorCFv"
 "__ml__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorCFv":
@@ -467,7 +467,7 @@ lbl_803A3E20:
 /* 803A3E28 0039FAC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3E2C 0039FACC  7C 08 03 A6 */	mtlr r0
 /* 803A3E30 0039FAD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3E34 0039FAD4  4E 80 00 20 */	blr 
+/* 803A3E34 0039FAD4  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorCFv":
@@ -479,7 +479,7 @@ lbl_803A3E20:
 /* 803A3E4C 0039FAEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3E50 0039FAF0  7C 08 03 A6 */	mtlr r0
 /* 803A3E54 0039FAF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3E58 0039FAF8  4E 80 00 20 */	blr 
+/* 803A3E58 0039FAF8  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -503,7 +503,7 @@ lbl_803A3E94:
 /* 803A3E9C 0039FB3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3EA0 0039FB40  7C 08 03 A6 */	mtlr r0
 /* 803A3EA4 0039FB44  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3EA8 0039FB48  4E 80 00 20 */	blr 
+/* 803A3EA8 0039FB48  4E 80 00 20 */	blr
 
 .global "__mm__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorFv"
 "__mm__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorFv":
@@ -518,7 +518,7 @@ lbl_803A3E94:
 /* 803A3ECC 0039FB6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3ED0 0039FB70  7C 08 03 A6 */	mtlr r0
 /* 803A3ED4 0039FB74  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3ED8 0039FB78  4E 80 00 20 */	blr 
+/* 803A3ED8 0039FB78  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv"
 "GetEndIter__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>Fv":
@@ -534,7 +534,7 @@ lbl_803A3E94:
 /* 803A3F00 0039FBA0  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A3F04 0039FBA4  7C 08 03 A6 */	mtlr r0
 /* 803A3F08 0039FBA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3F0C 0039FBAC  4E 80 00 20 */	blr 
+/* 803A3F0C 0039FBAC  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -549,7 +549,7 @@ lbl_803A3E94:
 /* 803A3F30 0039FBD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3F34 0039FBD4  7C 08 03 A6 */	mtlr r0
 /* 803A3F38 0039FBD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3F3C 0039FBDC  4E 80 00 20 */	blr 
+/* 803A3F3C 0039FBDC  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm3snd6detail9FrameHeap5BlockFUlPFPvUlPv_vPv"
 "__ct__Q56nw4hbm3snd6detail9FrameHeap5BlockFUlPFPvUlPv_vPv":
@@ -576,7 +576,7 @@ lbl_803A3E94:
 /* 803A3F90 0039FC30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A3F94 0039FC34  7C 08 03 A6 */	mtlr r0
 /* 803A3F98 0039FC38  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3F9C 0039FC3C  4E 80 00 20 */	blr 
+/* 803A3F9C 0039FC3C  4E 80 00 20 */	blr
 
 .global "RoundUp<Ul>__Q36nw4hbm2ut27@unnamed@snd_FrameHeap_cpp@FUlUi_Ul"
 "RoundUp<Ul>__Q36nw4hbm2ut27@unnamed@snd_FrameHeap_cpp@FUlUi_Ul":
@@ -585,7 +585,7 @@ lbl_803A3E94:
 /* 803A3FA8 0039FC48  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A3FAC 0039FC4C  38 03 FF FF */	addi r0, r3, -1
 /* 803A3FB0 0039FC50  7C 83 00 38 */	and r3, r4, r0
-/* 803A3FB4 0039FC54  4E 80 00 20 */	blr 
+/* 803A3FB4 0039FC54  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section"
 "Erase__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section":
@@ -608,7 +608,7 @@ lbl_803A3E94:
 /* 803A3FF8 0039FC98  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A3FFC 0039FC9C  7C 08 03 A6 */	mtlr r0
 /* 803A4000 0039FCA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A4004 0039FCA4  4E 80 00 20 */	blr 
+/* 803A4004 0039FCA4  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section"
 "GetNodeFromPointer__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section":
@@ -632,7 +632,7 @@ lbl_803A4040:
 /* 803A4048 0039FCE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A404C 0039FCEC  7C 08 03 A6 */	mtlr r0
 /* 803A4050 0039FCF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4054 0039FCF4  4E 80 00 20 */	blr 
+/* 803A4054 0039FCF4  4E 80 00 20 */	blr
 
 .global "GetFreeSize__Q46nw4hbm3snd6detail9FrameHeapCFv"
 "GetFreeSize__Q46nw4hbm3snd6detail9FrameHeapCFv":
@@ -667,7 +667,7 @@ lbl_803A40B8:
 /* 803A40BC 0039FD5C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A40C0 0039FD60  7C 08 03 A6 */	mtlr r0
 /* 803A40C4 0039FD64  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A40C8 0039FD68  4E 80 00 20 */	blr 
+/* 803A40C8 0039FD68  4E 80 00 20 */	blr
 
 .global "NewSection__Q46nw4hbm3snd6detail9FrameHeapFv"
 "NewSection__Q46nw4hbm3snd6detail9FrameHeapFv":
@@ -700,7 +700,7 @@ lbl_803A4124:
 /* 803A4128 0039FDC8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A412C 0039FDCC  7C 08 03 A6 */	mtlr r0
 /* 803A4130 0039FDD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4134 0039FDD4  4E 80 00 20 */	blr 
+/* 803A4134 0039FDD4  4E 80 00 20 */	blr
 
 .global "PushBack__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section"
 "PushBack__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FPQ56nw4hbm3snd6detail9FrameHeap7Section":
@@ -722,7 +722,7 @@ lbl_803A4124:
 /* 803A4174 0039FE14  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A4178 0039FE18  7C 08 03 A6 */	mtlr r0
 /* 803A417C 0039FE1C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A4180 0039FE20  4E 80 00 20 */	blr 
+/* 803A4180 0039FE20  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FQ46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorPQ56nw4hbm3snd6detail9FrameHeap7Section"
 "Insert__Q36nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>FQ46nw4hbm2ut50LinkList<Q56nw4hbm3snd6detail9FrameHeap7Section,0>8IteratorPQ56nw4hbm3snd6detail9FrameHeap7Section":
@@ -748,7 +748,7 @@ lbl_803A4124:
 /* 803A41D0 0039FE70  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A41D4 0039FE74  7C 08 03 A6 */	mtlr r0
 /* 803A41D8 0039FE78  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A41DC 0039FE7C  4E 80 00 20 */	blr 
+/* 803A41DC 0039FE7C  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm3snd6detail9FrameHeap7SectionFv"
 "__ct__Q56nw4hbm3snd6detail9FrameHeap7SectionFv":
@@ -765,7 +765,7 @@ lbl_803A4124:
 /* 803A4208 0039FEA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A420C 0039FEAC  7C 08 03 A6 */	mtlr r0
 /* 803A4210 0039FEB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4214 0039FEB4  4E 80 00 20 */	blr 
+/* 803A4214 0039FEB4  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv"
 "__dt__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv":
@@ -791,7 +791,7 @@ lbl_803A4254:
 /* 803A4260 0039FF00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4264 0039FF04  7C 08 03 A6 */	mtlr r0
 /* 803A4268 0039FF08  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A426C 0039FF0C  4E 80 00 20 */	blr 
+/* 803A426C 0039FF0C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv"
 "__ct__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv":
@@ -806,7 +806,7 @@ lbl_803A4254:
 /* 803A4290 0039FF30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4294 0039FF34  7C 08 03 A6 */	mtlr r0
 /* 803A4298 0039FF38  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A429C 0039FF3C  4E 80 00 20 */	blr 
+/* 803A429C 0039FF3C  4E 80 00 20 */	blr
 
 .global "MEMAllocFromFrmHeap"
 "MEMAllocFromFrmHeap":
@@ -841,7 +841,7 @@ lbl_803A42E4:
 /* 803A42FC 0039FF9C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A4300 0039FFA0  7C 08 03 A6 */	mtlr r0
 /* 803A4304 0039FFA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4308 0039FFA8  4E 80 00 20 */	blr 
+/* 803A4308 0039FFA8  4E 80 00 20 */	blr
 
 .global "__dt__Q56nw4hbm3snd6detail9FrameHeap7SectionFv"
 "__dt__Q56nw4hbm3snd6detail9FrameHeap7SectionFv":
@@ -896,7 +896,7 @@ lbl_803A43B4:
 /* 803A43C0 003A0060  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A43C4 003A0064  7C 08 03 A6 */	mtlr r0
 /* 803A43C8 003A0068  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A43CC 003A006C  4E 80 00 20 */	blr 
+/* 803A43CC 003A006C  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator":
@@ -915,7 +915,7 @@ lbl_803A43B4:
 /* 803A4400 003A00A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4404 003A00A4  7C 08 03 A6 */	mtlr r0
 /* 803A4408 003A00A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A440C 003A00AC  4E 80 00 20 */	blr 
+/* 803A440C 003A00AC  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator":
@@ -932,7 +932,7 @@ lbl_803A43B4:
 /* 803A4438 003A00D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A443C 003A00DC  7C 08 03 A6 */	mtlr r0
 /* 803A4440 003A00E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4444 003A00E4  4E 80 00 20 */	blr 
+/* 803A4444 003A00E4  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv"
 "GetBeginIter__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>Fv":
@@ -948,7 +948,7 @@ lbl_803A43B4:
 /* 803A446C 003A010C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803A4470 003A0110  7C 08 03 A6 */	mtlr r0
 /* 803A4474 003A0114  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4478 003A0118  4E 80 00 20 */	blr 
+/* 803A4478 003A0118  4E 80 00 20 */	blr
 
 .global "__dt__Q56nw4hbm3snd6detail9FrameHeap5BlockFv"
 "__dt__Q56nw4hbm3snd6detail9FrameHeap5BlockFv":
@@ -968,7 +968,7 @@ lbl_803A43B4:
 /* 803A44B0 003A0150  80 A3 00 10 */	lwz r5, 0x10(r3)
 /* 803A44B4 003A0154  7D 89 03 A6 */	mtctr r12
 /* 803A44B8 003A0158  38 63 00 20 */	addi r3, r3, 0x20
-/* 803A44BC 003A015C  4E 80 04 21 */	bctrl 
+/* 803A44BC 003A015C  4E 80 04 21 */	bctrl
 lbl_803A44C0:
 /* 803A44C0 003A0160  7F C3 F3 78 */	mr r3, r30
 /* 803A44C4 003A0164  38 80 FF FF */	li r4, -1
@@ -984,7 +984,7 @@ lbl_803A44DC:
 /* 803A44E8 003A0188  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A44EC 003A018C  7C 08 03 A6 */	mtlr r0
 /* 803A44F0 003A0190  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A44F4 003A0194  4E 80 00 20 */	blr 
+/* 803A44F4 003A0194  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorCFv":
@@ -996,7 +996,7 @@ lbl_803A44DC:
 /* 803A450C 003A01AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4510 003A01B0  7C 08 03 A6 */	mtlr r0
 /* 803A4514 003A01B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4518 003A01B8  4E 80 00 20 */	blr 
+/* 803A4518 003A01B8  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -1020,7 +1020,7 @@ lbl_803A4554:
 /* 803A455C 003A01FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4560 003A0200  7C 08 03 A6 */	mtlr r0
 /* 803A4564 003A0204  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4568 003A0208  4E 80 00 20 */	blr 
+/* 803A4568 003A0208  4E 80 00 20 */	blr
 
 .global "__mm__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFv"
 "__mm__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFv":
@@ -1035,7 +1035,7 @@ lbl_803A4554:
 /* 803A458C 003A022C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4590 003A0230  7C 08 03 A6 */	mtlr r0
 /* 803A4594 003A0234  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4598 003A0238  4E 80 00 20 */	blr 
+/* 803A4598 003A0238  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFRCQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator"
 "__ct__Q46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8IteratorFRCQ46nw4hbm2ut48LinkList<Q56nw4hbm3snd6detail9FrameHeap5Block,0>8Iterator":
@@ -1050,51 +1050,105 @@ lbl_803A4554:
 /* 803A45BC 003A025C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A45C0 003A0260  7C 08 03 A6 */	mtlr r0
 /* 803A45C4 003A0264  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A45C8 003A0268  4E 80 00 20 */	blr 
+/* 803A45C8 003A0268  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E118
 lbl_8046E118:
-	.incbin "baserom.dol", 0x46A218, 0x14
+	# ROM: 0x46A218
+	.asciz "snd_FrameHeap.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_8046E12C
 lbl_8046E12C:
-	.incbin "baserom.dol", 0x46A22C, 0x30
+	# ROM: 0x46A22C
+	.asciz "NW4HBM:Pointer must not be NULL (startAddress)"
+	.byte 0x00
+
 .global lbl_8046E15C
 lbl_8046E15C:
-	.incbin "baserom.dol", 0x46A25C, 0x194
+	# ROM: 0x46A25C
+	.asciz "NW4HBM:Failed assertion IsValid()"
+	.byte 0x00, 0x00
+	.asciz "FrameHeap::Clear(): NewSection is Failed"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FrameHeap::Alloc: Internal Error"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FrameHeap::SaveState(): MEMFreeByStateToFrmHeap is Failed"
+	.byte 0x00, 0x00
+	.asciz "level is out of bounds(%d)\n%d <= level < %d not satisfied."
+	.byte 0x00
+	.asciz "FrameHeap::LoadState(): MEMFreeByStateToFrmHeap is Failed"
+	.byte 0x00, 0x00
+	.asciz "FrameHeap::LoadState(): MEMRecordStateForFrmHeap is Failed"
+	.byte 0x00
+	.asciz "FrameHeap::LoadState(): NewSection is Failed"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046E2F0
 lbl_8046E2F0:
-	.incbin "baserom.dol", 0x46A3F0, 0x24
+	# ROM: 0x46A3F0
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E314
 lbl_8046E314:
-	.incbin "baserom.dol", 0x46A414, 0xC
+	# ROM: 0x46A414
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E320
 lbl_8046E320:
-	.incbin "baserom.dol", 0x46A420, 0x24
+	# ROM: 0x46A420
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E344
 lbl_8046E344:
-	.incbin "baserom.dol", 0x46A444, 0xC
+	# ROM: 0x46A444
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E350
 lbl_8046E350:
-	.incbin "baserom.dol", 0x46A450, 0x24
+	# ROM: 0x46A450
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E374
 lbl_8046E374:
-	.incbin "baserom.dol", 0x46A474, 0xC
+	# ROM: 0x46A474
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E380
 lbl_8046E380:
-	.incbin "baserom.dol", 0x46A480, 0x24
+	# ROM: 0x46A480
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E3A4
 lbl_8046E3A4:
-	.incbin "baserom.dol", 0x46A4A4, 0xC
+	# ROM: 0x46A4A4
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E3B0
 lbl_8046E3B0:
-	.incbin "baserom.dol", 0x46A4B0, 0x24
+	# ROM: 0x46A4B0
+	.asciz "NW4HBM:Failed assertion !IsEmpty()"
+	.byte 0x00
+
 .global lbl_8046E3D4
 lbl_8046E3D4:
-	.incbin "baserom.dol", 0x46A4D4, 0xC
+	# ROM: 0x46A4D4
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046E3E0
 lbl_8046E3E0:
-	.incbin "baserom.dol", 0x46A4E0, 0x24
+	# ROM: 0x46A4E0
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046E404
 lbl_8046E404:
-	.incbin "baserom.dol", 0x46A504, 0xC
+	# ROM: 0x46A504
+	.asciz "LinkList.h"
+	.byte 0x00
+

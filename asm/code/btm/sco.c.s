@@ -19,7 +19,7 @@
 /* 8034B39C 0034703C  90 87 19 00 */	stw r4, 0x1900(r7)
 /* 8034B3A0 00347040  90 67 19 04 */	stw r3, 0x1904(r7)
 /* 8034B3A4 00347044  98 07 19 09 */	stb r0, 0x1909(r7)
-/* 8034B3A8 00347048  4E 80 00 20 */	blr 
+/* 8034B3A8 00347048  4E 80 00 20 */	blr
 
 .global "btm_esco_conn_rsp"
 "btm_esco_conn_rsp":
@@ -151,7 +151,7 @@ lbl_8034B570:
 /* 8034B578 00347218  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034B57C 0034721C  7C 08 03 A6 */	mtlr r0
 /* 8034B580 00347220  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034B584 00347224  4E 80 00 20 */	blr 
+/* 8034B584 00347224  4E 80 00 20 */	blr
 
 .global "btm_sco_chk_pend_unpark"
 "btm_sco_chk_pend_unpark":
@@ -262,7 +262,7 @@ lbl_8034B6EC:
 /* 8034B704 003473A4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8034B708 003473A8  7C 08 03 A6 */	mtlr r0
 /* 8034B70C 003473AC  38 21 00 40 */	addi r1, r1, 0x40
-/* 8034B710 003473B0  4E 80 00 20 */	blr 
+/* 8034B710 003473B0  4E 80 00 20 */	blr
 
 .global "btm_sco_conn_req"
 "btm_sco_conn_req":
@@ -328,7 +328,7 @@ lbl_8034B7BC:
 /* 8034B7F0 00347490  81 9B 00 10 */	lwz r12, 0x10(r27)
 /* 8034B7F4 00347494  B3 81 00 08 */	sth r28, 8(r1)
 /* 8034B7F8 00347498  7D 89 03 A6 */	mtctr r12
-/* 8034B7FC 0034749C  4E 80 04 21 */	bctrl 
+/* 8034B7FC 0034749C  4E 80 04 21 */	bctrl
 /* 8034B800 003474A0  48 00 00 DC */	b lbl_8034B8DC
 lbl_8034B804:
 /* 8034B804 003474A4  3B 9C 00 01 */	addi r28, r28, 1
@@ -371,7 +371,7 @@ lbl_8034B87C:
 /* 8034B88C 0034752C  38 84 42 98 */	addi r4, r4, "btm_cb"@l
 /* 8034B890 00347530  81 84 18 50 */	lwz r12, 0x1850(r4)
 /* 8034B894 00347534  7D 89 03 A6 */	mtctr r12
-/* 8034B898 00347538  4E 80 04 21 */	bctrl 
+/* 8034B898 00347538  4E 80 04 21 */	bctrl
 /* 8034B89C 0034753C  48 00 00 40 */	b lbl_8034B8DC
 lbl_8034B8A0:
 /* 8034B8A0 00347540  3C 60 80 58 */	lis r3, "btm_cb"@ha
@@ -396,7 +396,7 @@ lbl_8034B8DC:
 /* 8034B8E4 00347584  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034B8E8 00347588  7C 08 03 A6 */	mtlr r0
 /* 8034B8EC 0034758C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034B8F0 00347590  4E 80 00 20 */	blr 
+/* 8034B8F0 00347590  4E 80 00 20 */	blr
 
 .global "btm_sco_connected"
 "btm_sco_connected":
@@ -445,7 +445,7 @@ lbl_8034B974:
 /* 8034B994 00347634  B0 1F 00 08 */	sth r0, 8(r31)
 /* 8034B998 00347638  81 9F 00 04 */	lwz r12, 4(r31)
 /* 8034B99C 0034763C  7D 89 03 A6 */	mtctr r12
-/* 8034B9A0 00347640  4E 80 04 21 */	bctrl 
+/* 8034B9A0 00347640  4E 80 04 21 */	bctrl
 /* 8034B9A4 00347644  48 00 00 D8 */	b lbl_8034BA7C
 lbl_8034B9A8:
 /* 8034B9A8 00347648  38 00 00 01 */	li r0, 1
@@ -499,7 +499,7 @@ lbl_8034BA58:
 /* 8034BA58 003476F8  81 9F 00 00 */	lwz r12, 0(r31)
 /* 8034BA5C 003476FC  57 C3 04 3E */	clrlwi r3, r30, 0x10
 /* 8034BA60 00347700  7D 89 03 A6 */	mtctr r12
-/* 8034BA64 00347704  4E 80 04 21 */	bctrl 
+/* 8034BA64 00347704  4E 80 04 21 */	bctrl
 /* 8034BA68 00347708  48 00 00 14 */	b lbl_8034BA7C
 lbl_8034BA6C:
 /* 8034BA6C 0034770C  3B DE 00 01 */	addi r30, r30, 1
@@ -512,7 +512,7 @@ lbl_8034BA7C:
 /* 8034BA84 00347724  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034BA88 00347728  7C 08 03 A6 */	mtlr r0
 /* 8034BA8C 0034772C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034BA90 00347730  4E 80 00 20 */	blr 
+/* 8034BA90 00347730  4E 80 00 20 */	blr
 
 .global "BTM_RemoveSco"
 "BTM_RemoveSco":
@@ -567,7 +567,7 @@ lbl_8034BB34:
 /* 8034BB3C 003477DC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034BB40 003477E0  7C 08 03 A6 */	mtlr r0
 /* 8034BB44 003477E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034BB48 003477E8  4E 80 00 20 */	blr 
+/* 8034BB48 003477E8  4E 80 00 20 */	blr
 
 .global "btm_remove_sco_links"
 "btm_remove_sco_links":
@@ -605,7 +605,7 @@ lbl_8034BBA4:
 /* 8034BBC0 00347860  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034BBC4 00347864  7C 08 03 A6 */	mtlr r0
 /* 8034BBC8 00347868  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034BBCC 0034786C  4E 80 00 20 */	blr 
+/* 8034BBCC 0034786C  4E 80 00 20 */	blr
 
 .global "btm_sco_removed"
 "btm_sco_removed":
@@ -676,7 +676,7 @@ lbl_8034BC74:
 /* 8034BCB0 00347950  90 85 00 10 */	stw r4, 0x10(r5)
 /* 8034BCB4 00347954  81 85 00 04 */	lwz r12, 4(r5)
 /* 8034BCB8 00347958  7D 89 03 A6 */	mtctr r12
-/* 8034BCBC 0034795C  4E 80 04 21 */	bctrl 
+/* 8034BCBC 0034795C  4E 80 04 21 */	bctrl
 /* 8034BCC0 00347960  48 00 00 10 */	b lbl_8034BCD0
 lbl_8034BCC4:
 /* 8034BCC4 00347964  38 C6 00 01 */	addi r6, r6, 1
@@ -687,7 +687,7 @@ lbl_8034BCD0:
 /* 8034BCD4 00347974  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034BCD8 00347978  7C 08 03 A6 */	mtlr r0
 /* 8034BCDC 0034797C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034BCE0 00347980  4E 80 00 20 */	blr 
+/* 8034BCE0 00347980  4E 80 00 20 */	blr
 
 .global "btm_sco_acl_removed"
 "btm_sco_acl_removed":
@@ -725,7 +725,7 @@ lbl_8034BD50:
 /* 8034BD58 003479F8  93 FE 00 10 */	stw r31, 0x10(r30)
 /* 8034BD5C 003479FC  81 9E 00 04 */	lwz r12, 4(r30)
 /* 8034BD60 00347A00  7D 89 03 A6 */	mtctr r12
-/* 8034BD64 00347A04  4E 80 04 21 */	bctrl 
+/* 8034BD64 00347A04  4E 80 04 21 */	bctrl
 lbl_8034BD68:
 /* 8034BD68 00347A08  3B BD 00 01 */	addi r29, r29, 1
 /* 8034BD6C 00347A0C  3B DE 00 34 */	addi r30, r30, 0x34
@@ -738,7 +738,7 @@ lbl_8034BD68:
 /* 8034BD88 00347A28  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8034BD8C 00347A2C  7C 08 03 A6 */	mtlr r0
 /* 8034BD90 00347A30  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034BD94 00347A34  4E 80 00 20 */	blr 
+/* 8034BD94 00347A34  4E 80 00 20 */	blr
 
 .global "btm_route_sco_data"
 "btm_route_sco_data":
@@ -862,7 +862,7 @@ lbl_8034BF2C:
 /* 8034BF34 00347BD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034BF38 00347BD8  7C 08 03 A6 */	mtlr r0
 /* 8034BF3C 00347BDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034BF40 00347BE0  4E 80 00 20 */	blr 
+/* 8034BF40 00347BE0  4E 80 00 20 */	blr
 
 .global "btm_esco_proc_conn_chg"
 "btm_esco_proc_conn_chg":
@@ -922,7 +922,7 @@ lbl_8034BFB0:
 /* 8034C010 00347CB0  9B 41 00 15 */	stb r26, 0x15(r1)
 /* 8034C014 00347CB4  9B 61 00 16 */	stb r27, 0x16(r1)
 /* 8034C018 00347CB8  7D 89 03 A6 */	mtctr r12
-/* 8034C01C 00347CBC  4E 80 04 21 */	bctrl 
+/* 8034C01C 00347CBC  4E 80 04 21 */	bctrl
 /* 8034C020 00347CC0  48 00 00 10 */	b lbl_8034C030
 lbl_8034C024:
 /* 8034C024 00347CC4  3B DE 00 01 */	addi r30, r30, 1
@@ -934,7 +934,7 @@ lbl_8034C030:
 /* 8034C038 00347CD8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8034C03C 00347CDC  7C 08 03 A6 */	mtlr r0
 /* 8034C040 00347CE0  38 21 00 40 */	addi r1, r1, 0x40
-/* 8034C044 00347CE4  4E 80 00 20 */	blr 
+/* 8034C044 00347CE4  4E 80 00 20 */	blr
 
 .global "btm_is_sco_active"
 "btm_is_sco_active":
@@ -947,7 +947,7 @@ lbl_8034C030:
 /* 8034C060 00347D00  28 00 00 04 */	cmplwi r0, 4
 /* 8034C064 00347D04  40 82 00 0C */	bne lbl_8034C070
 /* 8034C068 00347D08  38 60 00 01 */	li r3, 1
-/* 8034C06C 00347D0C  4E 80 00 20 */	blr 
+/* 8034C06C 00347D0C  4E 80 00 20 */	blr
 lbl_8034C070:
 /* 8034C070 00347D10  A0 04 18 92 */	lhz r0, 0x1892(r4)
 /* 8034C074 00347D14  7C 03 00 40 */	cmplw r3, r0
@@ -956,7 +956,7 @@ lbl_8034C070:
 /* 8034C080 00347D20  28 00 00 04 */	cmplwi r0, 4
 /* 8034C084 00347D24  40 82 00 0C */	bne lbl_8034C090
 /* 8034C088 00347D28  38 60 00 01 */	li r3, 1
-/* 8034C08C 00347D2C  4E 80 00 20 */	blr 
+/* 8034C08C 00347D2C  4E 80 00 20 */	blr
 lbl_8034C090:
 /* 8034C090 00347D30  A0 04 18 C6 */	lhz r0, 0x18c6(r4)
 /* 8034C094 00347D34  7C 03 00 40 */	cmplw r3, r0
@@ -965,10 +965,10 @@ lbl_8034C090:
 /* 8034C0A0 00347D40  28 00 00 04 */	cmplwi r0, 4
 /* 8034C0A4 00347D44  40 82 00 0C */	bne lbl_8034C0B0
 /* 8034C0A8 00347D48  38 60 00 01 */	li r3, 1
-/* 8034C0AC 00347D4C  4E 80 00 20 */	blr 
+/* 8034C0AC 00347D4C  4E 80 00 20 */	blr
 lbl_8034C0B0:
 /* 8034C0B0 00347D50  38 60 00 00 */	li r3, 0
-/* 8034C0B4 00347D54  4E 80 00 20 */	blr 
+/* 8034C0B4 00347D54  4E 80 00 20 */	blr
 
 .global "btm_num_sco_links_active"
 "btm_num_sco_links_active":
@@ -995,11 +995,11 @@ lbl_8034C0F8:
 lbl_8034C0FC:
 /* 8034C0FC 00347D9C  A0 04 18 C4 */	lhz r0, 0x18c4(r4)
 /* 8034C100 00347DA0  2C 00 00 07 */	cmpwi r0, 7
-/* 8034C104 00347DA4  4C 80 00 20 */	bgelr 
+/* 8034C104 00347DA4  4C 80 00 20 */	bgelr
 /* 8034C108 00347DA8  2C 00 00 02 */	cmpwi r0, 2
-/* 8034C10C 00347DAC  4D 80 00 20 */	bltlr 
+/* 8034C10C 00347DAC  4D 80 00 20 */	bltlr
 /* 8034C110 00347DB0  38 63 00 01 */	addi r3, r3, 1
-/* 8034C114 00347DB4  4E 80 00 20 */	blr 
+/* 8034C114 00347DB4  4E 80 00 20 */	blr
 
 .global "btm_is_sco_active_by_bdaddr"
 "btm_is_sco_active_by_bdaddr":
@@ -1039,20 +1039,53 @@ lbl_8034C184:
 /* 8034C190 00347E30  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034C194 00347E34  7C 08 03 A6 */	mtlr r0
 /* 8034C198 00347E38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034C19C 00347E3C  4E 80 00 20 */	blr 
+/* 8034C19C 00347E3C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "btm_esco_defaults"
 "btm_esco_defaults":
-	.incbin "baserom.dol", 0x418B90, 0x10
+	# ROM: 0x418B90
+	.4byte 0x00001F40
+	.4byte 0x00001F40
+	.4byte 0x000A0060
+	.4byte 0x003F0100
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80462098
 lbl_80462098:
-	.incbin "baserom.dol", 0x45E198, 0x12C
+	# ROM: 0x45E198
+	.asciz "btm_esco_conn_rsp -> No Resources"
+	.byte 0x00, 0x00
+	.asciz "TCS accept SCO: Packet Types 0x%04x"
+	.asciz "BTM_CreateSco -> (e)SCO Link for ACL handle 0x%04x, Desired Type %d"
+	.asciz "      txbw 0x%x, rxbw 0x%x, lat 0x%x, voice 0x%x, retrans 0x%02x, pkt 0x%04x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "btm_sco_chk_pend_unpark -> (e)SCO Link for ACL handle 0x%04x, Desired Type %d"
+	.byte 0x00, 0x00
+
 .global lbl_804621C4
 lbl_804621C4:
-	.incbin "baserom.dol", 0x45E2C4, 0x198
+	# ROM: 0x45E2C4
+	.asciz "btm_sco_conn_req: No one wants this SCO connection; rejecting it"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTM_SetEScoMode -> mode %d"
+	.byte 0x00
+	.asciz "BTM_SetEScoMode -> mode SCO (eSCO not supported)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "    txbw 0x%08x, rxbw 0x%08x, max_lat 0x%04x, voice 0x%04x, pkt 0x%04x, rtx effort 0x%02x"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "BTM_ReadEScoLinkParms -> sco_inx 0x%04x"
+	.asciz "BTM_ChangeEScoLinkParms -> SCO Link for handle 0x%04x, pkt 0x%04x"
+	.byte 0x00, 0x00
+	.asciz "BTM_ChangeEScoLinkParms -> eSCO Link for handle 0x%04x"
+	.byte 0x00
+
 .global lbl_8046235C
 lbl_8046235C:
-	.incbin "baserom.dol", 0x45E45C, 0x3C
+	# ROM: 0x45E45C
+	.asciz "btm_esco_proc_conn_chg -> handle 0x%04x, status 0x%02x"
+	.byte 0x00
+	.4byte 0x00000000
+

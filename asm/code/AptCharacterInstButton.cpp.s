@@ -35,7 +35,7 @@ lbl_80315CC4:
 /* 80315CD0 00311970  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80315CD4 00311974  7C 08 03 A6 */	mtlr r0
 /* 80315CD8 00311978  38 21 00 10 */	addi r1, r1, 0x10
-/* 80315CDC 0031197C  4E 80 00 20 */	blr 
+/* 80315CDC 0031197C  4E 80 00 20 */	blr
 
 .global "__dl__22AptCharacterButtonInstFPvUl"
 "__dl__22AptCharacterButtonInstFPvUl":
@@ -48,4 +48,11 @@ lbl_80315CC4:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__22AptCharacterButtonInst"
 "__vt__22AptCharacterButtonInst":
-	.incbin "baserom.dol", 0x453308, 0x18
+	# ROM: 0x453308
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "PreDestroy__22AptCharacterButtonInstFv" ;# ptr (0x80315C6C)
+	.4byte "__dt__22AptCharacterButtonInstFv" ;# ptr (0x80315C74)
+	.4byte "DestroyGCPointers__16AptCharacterInstFv" ;# ptr (0x802FC5A4)
+	.4byte 0x00000000
+

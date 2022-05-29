@@ -36,7 +36,7 @@ lbl_80353F4C:
 /* 80353F88 0034FC28  38 80 00 00 */	li r4, 0
 /* 80353F8C 0034FC2C  38 A0 00 00 */	li r5, 0
 /* 80353F90 0034FC30  7D 89 03 A6 */	mtctr r12
-/* 80353F94 0034FC34  4E 80 04 21 */	bctrl 
+/* 80353F94 0034FC34  4E 80 04 21 */	bctrl
 /* 80353F98 0034FC38  48 00 00 30 */	b lbl_80353FC8
 lbl_80353F9C:
 /* 80353F9C 0034FC3C  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -50,18 +50,22 @@ lbl_80353FB0:
 /* 80353FB8 0034FC58  88 9F 00 09 */	lbz r4, 9(r31)
 /* 80353FBC 0034FC5C  38 A0 00 00 */	li r5, 0
 /* 80353FC0 0034FC60  7D 89 03 A6 */	mtctr r12
-/* 80353FC4 0034FC64  4E 80 04 21 */	bctrl 
+/* 80353FC4 0034FC64  4E 80 04 21 */	bctrl
 lbl_80353FC8:
 /* 80353FC8 0034FC68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80353FCC 0034FC6C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80353FD0 0034FC70  7C 08 03 A6 */	mtlr r0
 /* 80353FD4 0034FC74  38 21 00 10 */	addi r1, r1, 0x10
-/* 80353FD8 0034FC78  4E 80 00 20 */	blr 
+/* 80353FD8 0034FC78  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80463228
 lbl_80463228:
-	.incbin "baserom.dol", 0x45F328, 0x20
+	# ROM: 0x45F328
+	.asciz "hidd_proc_repage_timeout"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "hd_cb"

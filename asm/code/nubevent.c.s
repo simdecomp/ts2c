@@ -11,7 +11,7 @@
 /* 8040FB88 0040B828  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040FB8C 0040B82C  7C 08 03 A6 */	mtlr r0
 /* 8040FB90 0040B830  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040FB94 0040B834  4E 80 00 20 */	blr 
+/* 8040FB94 0040B834  4E 80 00 20 */	blr
 
 .global "TRKConstructEvent"
 "TRKConstructEvent":
@@ -20,7 +20,7 @@
 /* 8040FBA0 0040B840  38 00 FF FF */	li r0, -1
 /* 8040FBA4 0040B844  90 83 00 04 */	stw r4, 4(r3)
 /* 8040FBA8 0040B848  90 03 00 08 */	stw r0, 8(r3)
-/* 8040FBAC 0040B84C  4E 80 00 20 */	blr 
+/* 8040FBAC 0040B84C  4E 80 00 20 */	blr
 
 .global "TRKPostEvent"
 "TRKPostEvent":
@@ -82,7 +82,7 @@ lbl_8040FC64:
 /* 8040FC80 0040B920  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8040FC84 0040B924  7C 08 03 A6 */	mtlr r0
 /* 8040FC88 0040B928  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040FC8C 0040B92C  4E 80 00 20 */	blr 
+/* 8040FC8C 0040B92C  4E 80 00 20 */	blr
 
 .global "TRKGetNextEvent"
 "TRKGetNextEvent":
@@ -132,7 +132,7 @@ lbl_8040FD18:
 /* 8040FD34 0040B9D4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8040FD38 0040B9D8  7C 08 03 A6 */	mtlr r0
 /* 8040FD3C 0040B9DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040FD40 0040B9E0  4E 80 00 20 */	blr 
+/* 8040FD40 0040B9E0  4E 80 00 20 */	blr
 
 .global "TRKInitializeEventQueue"
 "TRKInitializeEventQueue":
@@ -157,7 +157,7 @@ lbl_8040FD18:
 /* 8040FD8C 0040BA2C  38 60 00 00 */	li r3, 0
 /* 8040FD90 0040BA30  7C 08 03 A6 */	mtlr r0
 /* 8040FD94 0040BA34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040FD98 0040BA38  4E 80 00 20 */	blr 
+/* 8040FD98 0040BA38  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gTRKEventQueue"

@@ -94,7 +94,7 @@ lbl_8036465C:
 /* 80364664 00360304  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80364668 00360308  7C 08 03 A6 */	mtlr r0
 /* 8036466C 0036030C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80364670 00360310  4E 80 00 20 */	blr 
+/* 80364670 00360310  4E 80 00 20 */	blr
 
 .global "find_uuid_in_seq"
 "find_uuid_in_seq":
@@ -156,7 +156,7 @@ lbl_80364734:
 /* 8036473C 003603DC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80364740 003603E0  7C 08 03 A6 */	mtlr r0
 /* 80364744 003603E4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80364748 003603E8  4E 80 00 20 */	blr 
+/* 80364748 003603E8  4E 80 00 20 */	blr
 
 .global "sdp_db_find_record"
 "sdp_db_find_record":
@@ -179,13 +179,13 @@ lbl_80364784:
 /* 80364788 00360428  7C 00 18 40 */	cmplw r0, r3
 /* 8036478C 0036042C  40 82 00 0C */	bne lbl_80364798
 /* 80364790 00360430  7C C3 33 78 */	mr r3, r6
-/* 80364794 00360434  4E 80 00 20 */	blr 
+/* 80364794 00360434  4E 80 00 20 */	blr
 lbl_80364798:
 /* 80364798 00360438  38 C6 02 98 */	addi r6, r6, 0x298
 /* 8036479C 0036043C  42 00 FF E8 */	bdnz lbl_80364784
 lbl_803647A0:
 /* 803647A0 00360440  38 60 00 00 */	li r3, 0
-/* 803647A4 00360444  4E 80 00 20 */	blr 
+/* 803647A4 00360444  4E 80 00 20 */	blr
 
 .global "sdp_db_find_attr_in_rec"
 "sdp_db_find_attr_in_rec":
@@ -198,7 +198,7 @@ lbl_803647B8:
 /* 803647BC 0036045C  7C 00 20 40 */	cmplw r0, r4
 /* 803647C0 00360460  41 80 00 0C */	blt lbl_803647CC
 /* 803647C4 00360464  7C 00 28 40 */	cmplw r0, r5
-/* 803647C8 00360468  4C 81 00 20 */	blelr 
+/* 803647C8 00360468  4C 81 00 20 */	blelr
 lbl_803647CC:
 /* 803647CC 0036046C  38 E7 00 01 */	addi r7, r7, 1
 /* 803647D0 00360470  38 63 00 0C */	addi r3, r3, 0xc
@@ -207,7 +207,7 @@ lbl_803647D4:
 /* 803647D8 00360478  7C 00 30 40 */	cmplw r0, r6
 /* 803647DC 0036047C  41 80 FF DC */	blt lbl_803647B8
 /* 803647E0 00360480  38 60 00 00 */	li r3, 0
-/* 803647E4 00360484  4E 80 00 20 */	blr 
+/* 803647E4 00360484  4E 80 00 20 */	blr
 
 .global "SDP_CreateRecord"
 "SDP_CreateRecord":
@@ -270,7 +270,7 @@ lbl_803648B4:
 /* 803648B8 00360558  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803648BC 0036055C  7C 08 03 A6 */	mtlr r0
 /* 803648C0 00360560  38 21 00 20 */	addi r1, r1, 0x20
-/* 803648C4 00360564  4E 80 00 20 */	blr 
+/* 803648C4 00360564  4E 80 00 20 */	blr
 
 .global "SDP_DeleteRecord"
 "SDP_DeleteRecord":
@@ -290,7 +290,7 @@ lbl_803648E8:
 /* 803648F8 00360598  B0 04 12 22 */	sth r0, 0x1222(r4)
 /* 803648FC 0036059C  90 04 12 1C */	stw r0, 0x121c(r4)
 /* 80364900 003605A0  98 04 12 20 */	stb r0, 0x1220(r4)
-/* 80364904 003605A4  4E 80 00 20 */	blr 
+/* 80364904 003605A4  4E 80 00 20 */	blr
 lbl_80364908:
 /* 80364908 003605A8  39 20 00 00 */	li r9, 0
 /* 8036490C 003605AC  48 00 00 BC */	b lbl_803649C8
@@ -344,7 +344,7 @@ lbl_80364988:
 /* 803649B4 00360654  98 05 12 20 */	stb r0, 0x1220(r5)
 lbl_803649B8:
 /* 803649B8 00360658  38 60 00 01 */	li r3, 1
-/* 803649BC 0036065C  4E 80 00 20 */	blr 
+/* 803649BC 0036065C  4E 80 00 20 */	blr
 lbl_803649C0:
 /* 803649C0 00360660  39 29 00 01 */	addi r9, r9, 1
 /* 803649C4 00360664  39 4A 02 98 */	addi r10, r10, 0x298
@@ -353,7 +353,7 @@ lbl_803649C8:
 /* 803649CC 0036066C  7C 00 20 40 */	cmplw r0, r4
 /* 803649D0 00360670  41 80 FF 40 */	blt lbl_80364910
 /* 803649D4 00360674  38 60 00 00 */	li r3, 0
-/* 803649D8 00360678  4E 80 00 20 */	blr 
+/* 803649D8 00360678  4E 80 00 20 */	blr
 
 .global "SDP_AddAttribute"
 "SDP_AddAttribute":
@@ -604,7 +604,7 @@ lbl_80364D5C:
 /* 80364D64 00360A04  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80364D68 00360A08  7C 08 03 A6 */	mtlr r0
 /* 80364D6C 00360A0C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80364D70 00360A10  4E 80 00 20 */	blr 
+/* 80364D70 00360A10  4E 80 00 20 */	blr
 
 .global "SDP_AddUuidSequence"
 "SDP_AddUuidSequence":
@@ -664,7 +664,7 @@ lbl_80364E18:
 /* 80364E3C 00360ADC  83 A1 00 B4 */	lwz r29, 0xb4(r1)
 /* 80364E40 00360AE0  7C 08 03 A6 */	mtlr r0
 /* 80364E44 00360AE4  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 80364E48 00360AE8  4E 80 00 20 */	blr 
+/* 80364E48 00360AE8  4E 80 00 20 */	blr
 
 .global "SDP_AddServiceClassIdList"
 "SDP_AddServiceClassIdList":
@@ -766,7 +766,7 @@ lbl_80364FA4:
 /* 80364FB8 00360C58  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80364FBC 00360C5C  7C 08 03 A6 */	mtlr r0
 /* 80364FC0 00360C60  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80364FC4 00360C64  4E 80 00 20 */	blr 
+/* 80364FC4 00360C64  4E 80 00 20 */	blr
 
 .global "SDP_DeleteAttribute"
 "SDP_DeleteAttribute":
@@ -931,12 +931,19 @@ lbl_803651EC:
 /* 803651F4 00360E94  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803651F8 00360E98  7C 08 03 A6 */	mtlr r0
 /* 803651FC 00360E9C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80365200 00360EA0  4E 80 00 20 */	blr 
+/* 80365200 00360EA0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465AB8
 lbl_80465AB8:
-	.incbin "baserom.dol", 0x461BB8, 0x3C
+	# ROM: 0x461BB8
+	.asciz "SDP_AddAttribute: attr_len:%d too long. truncate to (%d)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465AF4
 lbl_80465AF4:
-	.incbin "baserom.dol", 0x461BF4, 0x5C
+	# ROM: 0x461BF4
+	.asciz "SDP_AddUuidSequence - too long, add %d uuids of %d"
+	.byte 0x00
+	.asciz "Deleting attr_id 0x%04x for handle 0x%x"
+

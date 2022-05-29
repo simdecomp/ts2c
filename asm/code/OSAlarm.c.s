@@ -25,14 +25,14 @@ lbl_803DB330:
 /* 803DB330 003D6FD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DB334 003D6FD4  7C 08 03 A6 */	mtlr r0
 /* 803DB338 003D6FD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DB33C 003D6FDC  4E 80 00 20 */	blr 
+/* 803DB33C 003D6FDC  4E 80 00 20 */	blr
 
 .global "OSCreateAlarm"
 "OSCreateAlarm":
 /* 803DB340 003D6FE0  38 00 00 00 */	li r0, 0
 /* 803DB344 003D6FE4  90 03 00 00 */	stw r0, 0(r3)
 /* 803DB348 003D6FE8  90 03 00 04 */	stw r0, 4(r3)
-/* 803DB34C 003D6FEC  4E 80 00 20 */	blr 
+/* 803DB34C 003D6FEC  4E 80 00 20 */	blr
 
 .global "InsertAlarm"
 "InsertAlarm":
@@ -194,7 +194,7 @@ lbl_803DB588:
 /* 803DB590 003D7230  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803DB594 003D7234  7C 08 03 A6 */	mtlr r0
 /* 803DB598 003D7238  38 21 00 30 */	addi r1, r1, 0x30
-/* 803DB59C 003D723C  4E 80 00 20 */	blr 
+/* 803DB59C 003D723C  4E 80 00 20 */	blr
 
 .global "OSSetAlarm"
 "OSSetAlarm":
@@ -225,7 +225,7 @@ lbl_803DB588:
 /* 803DB600 003D72A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803DB604 003D72A4  7C 08 03 A6 */	mtlr r0
 /* 803DB608 003D72A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DB60C 003D72AC  4E 80 00 20 */	blr 
+/* 803DB60C 003D72AC  4E 80 00 20 */	blr
 
 .global "OSSetPeriodicAlarm"
 "OSSetPeriodicAlarm":
@@ -261,7 +261,7 @@ lbl_803DB588:
 /* 803DB684 003D7324  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803DB688 003D7328  7C 08 03 A6 */	mtlr r0
 /* 803DB68C 003D732C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DB690 003D7330  4E 80 00 20 */	blr 
+/* 803DB690 003D7330  4E 80 00 20 */	blr
 
 .global "OSCancelAlarm"
 "OSCancelAlarm":
@@ -342,7 +342,7 @@ lbl_803DB790:
 /* 803DB79C 003D743C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803DB7A0 003D7440  7C 08 03 A6 */	mtlr r0
 /* 803DB7A4 003D7444  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DB7A8 003D7448  4E 80 00 20 */	blr 
+/* 803DB7A8 003D7448  4E 80 00 20 */	blr
 
 .global "DecrementerExceptionCallback"
 "DecrementerExceptionCallback":
@@ -479,7 +479,7 @@ lbl_803DB970:
 /* 803DB988 003D7628  7F E3 FB 78 */	mr r3, r31
 /* 803DB98C 003D762C  7F A4 EB 78 */	mr r4, r29
 /* 803DB990 003D7630  7D 89 03 A6 */	mtctr r12
-/* 803DB994 003D7634  4E 80 04 21 */	bctrl 
+/* 803DB994 003D7634  4E 80 04 21 */	bctrl
 /* 803DB998 003D7638  38 61 00 08 */	addi r3, r1, 8
 /* 803DB99C 003D763C  48 00 13 11 */	bl "OSClearContext"
 /* 803DB9A0 003D7640  7F A3 EB 78 */	mr r3, r29
@@ -495,7 +495,7 @@ lbl_803DB970:
 /* 803DB9C8 003D7668  83 81 02 D0 */	lwz r28, 0x2d0(r1)
 /* 803DB9CC 003D766C  7C 08 03 A6 */	mtlr r0
 /* 803DB9D0 003D7670  38 21 02 E0 */	addi r1, r1, 0x2e0
-/* 803DB9D4 003D7674  4E 80 00 20 */	blr 
+/* 803DB9D4 003D7674  4E 80 00 20 */	blr
 
 .global "DecrementerExceptionHandler"
 "DecrementerExceptionHandler":
@@ -523,7 +523,7 @@ lbl_803DB970:
 .global "OSSetAlarmTag"
 "OSSetAlarmTag":
 /* 803DBA28 003D76C8  90 83 00 04 */	stw r4, 4(r3)
-/* 803DBA2C 003D76CC  4E 80 00 20 */	blr 
+/* 803DBA2C 003D76CC  4E 80 00 20 */	blr
 
 .global "OnReset"
 "OnReset":
@@ -567,22 +567,27 @@ lbl_803DBAA0:
 /* 803DBAAC 003D774C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DBAB0 003D7750  7C 08 03 A6 */	mtlr r0
 /* 803DBAB4 003D7754  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DBAB8 003D7758  4E 80 00 20 */	blr 
+/* 803DBAB8 003D7758  4E 80 00 20 */	blr
 
 .global "OSSetAlarmUserData"
 "OSSetAlarmUserData":
 /* 803DBABC 003D775C  90 83 00 28 */	stw r4, 0x28(r3)
-/* 803DBAC0 003D7760  4E 80 00 20 */	blr 
+/* 803DBAC0 003D7760  4E 80 00 20 */	blr
 
 .global "OSGetAlarmUserData"
 "OSGetAlarmUserData":
 /* 803DBAC4 003D7764  80 63 00 28 */	lwz r3, 0x28(r3)
-/* 803DBAC8 003D7768  4E 80 00 20 */	blr 
+/* 803DBAC8 003D7768  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "ShutdownFunctionInfo"
 "ShutdownFunctionInfo":
-	.incbin "baserom.dol", 0x472500, 0x10
+	# ROM: 0x472500
+	.4byte "OnReset" ;# ptr (0x803DBA30)
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "AlarmQueue"

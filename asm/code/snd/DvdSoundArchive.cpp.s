@@ -21,7 +21,7 @@
 /* 803A2278 0039DF18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A227C 0039DF1C  7C 08 03 A6 */	mtlr r0
 /* 803A2280 0039DF20  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2284 0039DF24  4E 80 00 20 */	blr 
+/* 803A2284 0039DF24  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail22SoundArchiveFileReaderFv"
 "__dt__Q46nw4hbm3snd6detail22SoundArchiveFileReaderFv":
@@ -41,7 +41,7 @@ lbl_803A22B0:
 /* 803A22B8 0039DF58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A22BC 0039DF5C  7C 08 03 A6 */	mtlr r0
 /* 803A22C0 0039DF60  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A22C4 0039DF64  4E 80 00 20 */	blr 
+/* 803A22C4 0039DF64  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3snd15DvdSoundArchiveFv"
 "__dt__Q36nw4hbm3snd15DvdSoundArchiveFv":
@@ -75,7 +75,7 @@ lbl_803A2324:
 /* 803A2330 0039DFD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A2334 0039DFD4  7C 08 03 A6 */	mtlr r0
 /* 803A2338 0039DFD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A233C 0039DFDC  4E 80 00 20 */	blr 
+/* 803A233C 0039DFDC  4E 80 00 20 */	blr
 
 .global "Open__Q36nw4hbm3snd15DvdSoundArchiveFl"
 "Open__Q36nw4hbm3snd15DvdSoundArchiveFl":
@@ -127,7 +127,7 @@ lbl_803A23D8:
 /* 803A23E4 0039E084  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A23E8 0039E088  7C 08 03 A6 */	mtlr r0
 /* 803A23EC 0039E08C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A23F0 0039E090  4E 80 00 20 */	blr 
+/* 803A23F0 0039E090  4E 80 00 20 */	blr
 
 .global "Open__Q36nw4hbm3snd15DvdSoundArchiveFPCc"
 "Open__Q36nw4hbm3snd15DvdSoundArchiveFPCc":
@@ -212,7 +212,7 @@ lbl_803A24F8:
 /* 803A2508 0039E1A8  83 81 01 10 */	lwz r28, 0x110(r1)
 /* 803A250C 0039E1AC  7C 08 03 A6 */	mtlr r0
 /* 803A2510 0039E1B0  38 21 01 20 */	addi r1, r1, 0x120
-/* 803A2514 0039E1B4  4E 80 00 20 */	blr 
+/* 803A2514 0039E1B4  4E 80 00 20 */	blr
 
 .global "Close__Q36nw4hbm3snd15DvdSoundArchiveFv"
 "Close__Q36nw4hbm3snd15DvdSoundArchiveFv":
@@ -231,7 +231,7 @@ lbl_803A24F8:
 /* 803A2548 0039E1E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A254C 0039E1EC  7C 08 03 A6 */	mtlr r0
 /* 803A2550 0039E1F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2554 0039E1F4  4E 80 00 20 */	blr 
+/* 803A2554 0039E1F4  4E 80 00 20 */	blr
 
 .global "OpenStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviUlUl"
 "OpenStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviUlUl":
@@ -270,7 +270,7 @@ lbl_803A25C0:
 /* 803A25CC 0039E26C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A25D0 0039E270  7C 08 03 A6 */	mtlr r0
 /* 803A25D4 0039E274  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A25D8 0039E278  4E 80 00 20 */	blr 
+/* 803A25D8 0039E278  4E 80 00 20 */	blr
 
 .global "OpenExtStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviPCcUlUl"
 "OpenExtStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviPCcUlUl":
@@ -325,12 +325,12 @@ lbl_803A2684:
 /* 803A268C 0039E32C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A2690 0039E330  7C 08 03 A6 */	mtlr r0
 /* 803A2694 0039E334  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A2698 0039E338  4E 80 00 20 */	blr 
+/* 803A2698 0039E338  4E 80 00 20 */	blr
 
 .global "detail_GetRequiredStreamBufferSize__Q36nw4hbm3snd15DvdSoundArchiveCFv"
 "detail_GetRequiredStreamBufferSize__Q36nw4hbm3snd15DvdSoundArchiveCFv":
 /* 803A269C 0039E33C  38 60 00 78 */	li r3, 0x78
-/* 803A26A0 0039E340  4E 80 00 20 */	blr 
+/* 803A26A0 0039E340  4E 80 00 20 */	blr
 
 .global "LoadFileHeader__Q36nw4hbm3snd15DvdSoundArchiveFv"
 "LoadFileHeader__Q36nw4hbm3snd15DvdSoundArchiveFv":
@@ -399,7 +399,7 @@ lbl_803A277C:
 /* 803A278C 0039E42C  83 81 00 70 */	lwz r28, 0x70(r1)
 /* 803A2790 0039E430  7C 08 03 A6 */	mtlr r0
 /* 803A2794 0039E434  38 21 00 80 */	addi r1, r1, 0x80
-/* 803A2798 0039E438  4E 80 00 20 */	blr 
+/* 803A2798 0039E438  4E 80 00 20 */	blr
 
 .global "RoundUp<Uc>__Q36nw4hbm2ut33@unnamed@snd_DvdSoundArchive_cpp@FPUcUi_Pv"
 "RoundUp<Uc>__Q36nw4hbm2ut33@unnamed@snd_DvdSoundArchive_cpp@FPUcUi_Pv":
@@ -408,7 +408,7 @@ lbl_803A277C:
 /* 803A27A4 0039E444  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A27A8 0039E448  38 03 FF FF */	addi r0, r3, -1
 /* 803A27AC 0039E44C  7C 83 00 38 */	and r3, r4, r0
-/* 803A27B0 0039E450  4E 80 00 20 */	blr 
+/* 803A27B0 0039E450  4E 80 00 20 */	blr
 
 .global "RoundUp<Ul>__Q36nw4hbm2ut33@unnamed@snd_DvdSoundArchive_cpp@FUlUi_Ul"
 "RoundUp<Ul>__Q36nw4hbm2ut33@unnamed@snd_DvdSoundArchive_cpp@FUlUi_Ul":
@@ -417,7 +417,7 @@ lbl_803A277C:
 /* 803A27BC 0039E45C  7C 04 00 F8 */	nor r4, r0, r0
 /* 803A27C0 0039E460  38 03 FF FF */	addi r0, r3, -1
 /* 803A27C4 0039E464  7C 83 00 38 */	and r3, r4, r0
-/* 803A27C8 0039E468  4E 80 00 20 */	blr 
+/* 803A27C8 0039E468  4E 80 00 20 */	blr
 
 .global "LoadHeader__Q36nw4hbm3snd15DvdSoundArchiveFPvUl"
 "LoadHeader__Q36nw4hbm3snd15DvdSoundArchiveFPvUl":
@@ -485,12 +485,12 @@ lbl_803A28A4:
 /* 803A28AC 0039E54C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A28B0 0039E550  7C 08 03 A6 */	mtlr r0
 /* 803A28B4 0039E554  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A28B8 0039E558  4E 80 00 20 */	blr 
+/* 803A28B8 0039E558  4E 80 00 20 */	blr
 
 .global "GetInfoChunkOffset__Q46nw4hbm3snd6detail22SoundArchiveFileReaderCFv"
 "GetInfoChunkOffset__Q46nw4hbm3snd6detail22SoundArchiveFileReaderCFv":
 /* 803A28BC 0039E55C  80 63 00 18 */	lwz r3, 0x18(r3)
-/* 803A28C0 0039E560  4E 80 00 20 */	blr 
+/* 803A28C0 0039E560  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFlUlUl"
 "__ct__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFlUlUl":
@@ -526,7 +526,7 @@ lbl_803A2914:
 /* 803A2934 0039E5D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A2938 0039E5D8  7C 08 03 A6 */	mtlr r0
 /* 803A293C 0039E5DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A2940 0039E5E0  4E 80 00 20 */	blr 
+/* 803A2940 0039E5E0  4E 80 00 20 */	blr
 
 .global "GetSize__Q36nw4hbm2ut13DvdFileStreamCFv"
 "GetSize__Q36nw4hbm2ut13DvdFileStreamCFv":
@@ -536,7 +536,7 @@ lbl_803A2914:
 .global "GetFileSize__Q46nw4hbm2ut10FileStream12FilePositionCFv"
 "GetFileSize__Q46nw4hbm2ut10FileStream12FilePositionCFv":
 /* 803A294C 0039E5EC  80 63 00 00 */	lwz r3, 0(r3)
-/* 803A2950 0039E5F0  4E 80 00 20 */	blr 
+/* 803A2950 0039E5F0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFPC11DVDFileInfoUlUl"
 "__ct__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFPC11DVDFileInfoUlUl":
@@ -573,7 +573,7 @@ lbl_803A29A8:
 /* 803A29C8 0039E668  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A29CC 0039E66C  7C 08 03 A6 */	mtlr r0
 /* 803A29D0 0039E670  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A29D4 0039E674  4E 80 00 20 */	blr 
+/* 803A29D4 0039E674  4E 80 00 20 */	blr
 
 .global "Read__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFPvUl"
 "Read__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFPvUl":
@@ -631,7 +631,7 @@ lbl_803A2A78:
 /* 803A2A98 0039E738  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803A2A9C 0039E73C  7C 08 03 A6 */	mtlr r0
 /* 803A2AA0 0039E740  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A2AA4 0039E744  4E 80 00 20 */	blr 
+/* 803A2AA4 0039E744  4E 80 00 20 */	blr
 
 .global "Tell__Q36nw4hbm2ut13DvdFileStreamCFv"
 "Tell__Q36nw4hbm2ut13DvdFileStreamCFv":
@@ -641,7 +641,7 @@ lbl_803A2A78:
 .global "Tell__Q46nw4hbm2ut10FileStream12FilePositionCFv"
 "Tell__Q46nw4hbm2ut10FileStream12FilePositionCFv":
 /* 803A2AB0 0039E750  80 63 00 04 */	lwz r3, 4(r3)
-/* 803A2AB4 0039E754  4E 80 00 20 */	blr 
+/* 803A2AB4 0039E754  4E 80 00 20 */	blr
 
 .global "Seek__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFlUl"
 "Seek__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFlUl":
@@ -708,7 +708,7 @@ lbl_803A2B7C:
 /* 803A2B84 0039E824  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A2B88 0039E828  7C 08 03 A6 */	mtlr r0
 /* 803A2B8C 0039E82C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2B90 0039E830  4E 80 00 20 */	blr 
+/* 803A2B90 0039E830  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFv"
 "__dt__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFv":
@@ -734,17 +734,17 @@ lbl_803A2BD0:
 /* 803A2BDC 0039E87C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A2BE0 0039E880  7C 08 03 A6 */	mtlr r0
 /* 803A2BE4 0039E884  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2BE8 0039E888  4E 80 00 20 */	blr 
+/* 803A2BE8 0039E888  4E 80 00 20 */	blr
 
 .global "detail_GetFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl"
 "detail_GetFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl":
 /* 803A2BEC 0039E88C  38 60 00 00 */	li r3, 0
-/* 803A2BF0 0039E890  4E 80 00 20 */	blr 
+/* 803A2BF0 0039E890  4E 80 00 20 */	blr
 
 .global "detail_GetWaveDataFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl"
 "detail_GetWaveDataFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl":
 /* 803A2BF4 0039E894  38 60 00 00 */	li r3, 0
-/* 803A2BF8 0039E898  4E 80 00 20 */	blr 
+/* 803A2BF8 0039E898  4E 80 00 20 */	blr
 
 .global "Tell__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv"
 "Tell__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv":
@@ -760,17 +760,17 @@ lbl_803A2BD0:
 /* 803A2C20 0039E8C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A2C24 0039E8C4  7C 08 03 A6 */	mtlr r0
 /* 803A2C28 0039E8C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2C2C 0039E8CC  4E 80 00 20 */	blr 
+/* 803A2C2C 0039E8CC  4E 80 00 20 */	blr
 
 .global "GetSize__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv"
 "GetSize__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv":
 /* 803A2C30 0039E8D0  80 63 00 74 */	lwz r3, 0x74(r3)
-/* 803A2C34 0039E8D4  4E 80 00 20 */	blr 
+/* 803A2C34 0039E8D4  4E 80 00 20 */	blr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm2ut19DvdLockedFileStreamCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm2ut19DvdLockedFileStreamCFv":
 /* 803A2C38 0039E8D8  38 6D C6 10 */	addi r3, r13, "typeInfo__Q36nw4hbm2ut19DvdLockedFileStream"-_SDA_BASE_
-/* 803A2C3C 0039E8DC  4E 80 00 20 */	blr 
+/* 803A2C3C 0039E8DC  4E 80 00 20 */	blr
 
 .global "ReadAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv"
 "ReadAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv":
@@ -780,7 +780,7 @@ lbl_803A2BD0:
 /* 803A2C4C 0039E8EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 803A2C50 0039E8F0  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803A2C54 0039E8F4  7D 89 03 A6 */	mtctr r12
-/* 803A2C58 0039E8F8  4E 80 04 21 */	bctrl 
+/* 803A2C58 0039E8F8  4E 80 04 21 */	bctrl
 /* 803A2C5C 0039E8FC  2C 03 00 00 */	cmpwi r3, 0
 /* 803A2C60 0039E900  40 82 00 20 */	bne lbl_803A2C80
 /* 803A2C64 0039E904  3C 60 80 47 */	lis r3, lbl_8046DED4@ha
@@ -795,7 +795,7 @@ lbl_803A2C80:
 /* 803A2C84 0039E924  38 60 00 00 */	li r3, 0
 /* 803A2C88 0039E928  7C 08 03 A6 */	mtlr r0
 /* 803A2C8C 0039E92C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2C90 0039E930  4E 80 00 20 */	blr 
+/* 803A2C90 0039E930  4E 80 00 20 */	blr
 
 .global "PeekAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv"
 "PeekAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv":
@@ -805,7 +805,7 @@ lbl_803A2C80:
 /* 803A2CA0 0039E940  81 83 00 00 */	lwz r12, 0(r3)
 /* 803A2CA4 0039E944  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 803A2CA8 0039E948  7D 89 03 A6 */	mtctr r12
-/* 803A2CAC 0039E94C  4E 80 04 21 */	bctrl 
+/* 803A2CAC 0039E94C  4E 80 04 21 */	bctrl
 /* 803A2CB0 0039E950  2C 03 00 00 */	cmpwi r3, 0
 /* 803A2CB4 0039E954  40 82 00 20 */	bne lbl_803A2CD4
 /* 803A2CB8 0039E958  3C 60 80 47 */	lis r3, lbl_8046DF18@ha
@@ -820,81 +820,160 @@ lbl_803A2CD4:
 /* 803A2CD8 0039E978  38 60 00 00 */	li r3, 0
 /* 803A2CDC 0039E97C  7C 08 03 A6 */	mtlr r0
 /* 803A2CE0 0039E980  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2CE4 0039E984  4E 80 00 20 */	blr 
+/* 803A2CE4 0039E984  4E 80 00 20 */	blr
 
 .global "CanAsync__Q36nw4hbm2ut19DvdLockedFileStreamCFv"
 "CanAsync__Q36nw4hbm2ut19DvdLockedFileStreamCFv":
 /* 803A2CE8 0039E988  38 60 00 00 */	li r3, 0
-/* 803A2CEC 0039E98C  4E 80 00 20 */	blr 
+/* 803A2CEC 0039E98C  4E 80 00 20 */	blr
 
 .global "IsBusy__Q36nw4hbm2ut13DvdFileStreamCFv"
 "IsBusy__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2CF0 0039E990  88 63 00 6C */	lbz r3, 0x6c(r3)
-/* 803A2CF4 0039E994  4E 80 00 20 */	blr 
+/* 803A2CF4 0039E994  4E 80 00 20 */	blr
 
 .global "CanSeek__Q36nw4hbm2ut13DvdFileStreamCFv"
 "CanSeek__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2CF8 0039E998  38 60 00 01 */	li r3, 1
-/* 803A2CFC 0039E99C  4E 80 00 20 */	blr 
+/* 803A2CFC 0039E99C  4E 80 00 20 */	blr
 
 .global "CanRead__Q36nw4hbm2ut13DvdFileStreamCFv"
 "CanRead__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D00 0039E9A0  38 60 00 01 */	li r3, 1
-/* 803A2D04 0039E9A4  4E 80 00 20 */	blr 
+/* 803A2D04 0039E9A4  4E 80 00 20 */	blr
 
 .global "CanWrite__Q36nw4hbm2ut13DvdFileStreamCFv"
 "CanWrite__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D08 0039E9A8  38 60 00 00 */	li r3, 0
-/* 803A2D0C 0039E9AC  4E 80 00 20 */	blr 
+/* 803A2D0C 0039E9AC  4E 80 00 20 */	blr
 
 .global "CanCancel__Q36nw4hbm2ut13DvdFileStreamCFv"
 "CanCancel__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D10 0039E9B0  38 60 00 01 */	li r3, 1
-/* 803A2D14 0039E9B4  4E 80 00 20 */	blr 
+/* 803A2D14 0039E9B4  4E 80 00 20 */	blr
 
 .global "GetOffsetAlign__Q36nw4hbm2ut13DvdFileStreamCFv"
 "GetOffsetAlign__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D18 0039E9B8  38 60 00 04 */	li r3, 4
-/* 803A2D1C 0039E9BC  4E 80 00 20 */	blr 
+/* 803A2D1C 0039E9BC  4E 80 00 20 */	blr
 
 .global "GetSizeAlign__Q36nw4hbm2ut13DvdFileStreamCFv"
 "GetSizeAlign__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D20 0039E9C0  38 60 00 20 */	li r3, 0x20
-/* 803A2D24 0039E9C4  4E 80 00 20 */	blr 
+/* 803A2D24 0039E9C4  4E 80 00 20 */	blr
 
 .global "GetBufferAlign__Q36nw4hbm2ut13DvdFileStreamCFv"
 "GetBufferAlign__Q36nw4hbm2ut13DvdFileStreamCFv":
 /* 803A2D28 0039E9C8  38 60 00 20 */	li r3, 0x20
-/* 803A2D2C 0039E9CC  4E 80 00 20 */	blr 
+/* 803A2D2C 0039E9CC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046DB88
 lbl_8046DB88:
-	.incbin "baserom.dol", 0x469C88, 0x88
+	# ROM: 0x469C88
+	.asciz "snd_DvdSoundArchive.cpp"
+	.asciz "Cannot open file %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Cannot load header\n"
+	.asciz "Cannot find file %s\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion i < FILE_PATH_MAX"
+	.byte 0x00, 0x00
+
 .global lbl_8046DC10
 lbl_8046DC10:
-	.incbin "baserom.dol", 0x469D10, 0x1F8
+	# ROM: 0x469D10
+	.asciz "OpenExtStream: Cannot open file \"%s\""
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mOpen"
+	.byte 0x00, 0x00
+	.asciz "DvdSoundArchive::LoadFileHeader cannot read file.\n"
+	.byte 0x00
+	.asciz "DvdSoundArchive::LoadHeader buffer size is too small.\n"
+	.byte 0x00
+	.asciz "DvdSoundArchive::LoadHeader cannot read file.\n"
+	.byte 0x00
+	.asciz "DvdSoundArchive::LoadLabelStringData buffer size is too small."
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "DvdSoundArchive::LoadLabelStringData cannot read file.\n"
+	.asciz "NW4HBM:Alignment Error(0x%x)\nbuf must be aligned to 32 bytes boundary."
+	.byte 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nlength must be aligned to 32 bytes boundary."
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_8046DE08
 lbl_8046DE08:
-	.incbin "baserom.dol", 0x469F08, 0x18
+	# ROM: 0x469F08
+	.asciz "Unsupported Seek origin"
+
 .global "__vt__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStream"
 "__vt__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStream":
-	.incbin "baserom.dol", 0x469F20, 0x68
+	# ROM: 0x469F20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm2ut19DvdLockedFileStreamCFv" ;# ptr (0x803A2C38)
+	.4byte "__dt__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFv" ;# ptr (0x803A2B94)
+	.4byte "Close__Q36nw4hbm2ut13DvdFileStreamFv" ;# ptr (0x803C1E24)
+	.4byte "Read__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFPvUl" ;# ptr (0x803A29D8)
+	.4byte "ReadAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803A2C40)
+	.4byte "Write__Q36nw4hbm2ut8IOStreamFPCvUl" ;# ptr (0x803C2D38)
+	.4byte "WriteAsync__Q36nw4hbm2ut8IOStreamFPCvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C2D88)
+	.4byte "IsBusy__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2CF0)
+	.4byte "CanAsync__Q36nw4hbm2ut19DvdLockedFileStreamCFv" ;# ptr (0x803A2CE8)
+	.4byte "CanRead__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D00)
+	.4byte "CanWrite__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D08)
+	.4byte "GetOffsetAlign__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D18)
+	.4byte "GetSizeAlign__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D20)
+	.4byte "GetBufferAlign__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D28)
+	.4byte "GetSize__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv" ;# ptr (0x803A2C30)
+	.4byte "Seek__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamFlUl" ;# ptr (0x803A2AB8)
+	.4byte "Cancel__Q36nw4hbm2ut13DvdFileStreamFv" ;# ptr (0x803C2420)
+	.4byte "CancelAsync__Q36nw4hbm2ut13DvdFileStreamFPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803C24AC)
+	.4byte "CanSeek__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2CF8)
+	.4byte "CanCancel__Q36nw4hbm2ut13DvdFileStreamCFv" ;# ptr (0x803A2D10)
+	.4byte "Tell__Q46nw4hbm3snd15DvdSoundArchive13DvdFileStreamCFv" ;# ptr (0x803A2BFC)
+	.4byte "Peek__Q36nw4hbm2ut19DvdLockedFileStreamFPvUl" ;# ptr (0x803C27E0)
+	.4byte "PeekAsync__Q36nw4hbm2ut19DvdLockedFileStreamFPvUlPFlPQ36nw4hbm2ut8IOStreamPv_vPv" ;# ptr (0x803A2C94)
+	.4byte 0x00000000
+
 .global "__vt__Q36nw4hbm3snd15DvdSoundArchive"
 "__vt__Q36nw4hbm3snd15DvdSoundArchive":
-	.incbin "baserom.dol", 0x469F88, 0x20
+	# ROM: 0x469F88
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3snd15DvdSoundArchiveFv" ;# ptr (0x803A22C8)
+	.4byte "detail_GetFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl" ;# ptr (0x803A2BEC)
+	.4byte "detail_GetWaveDataFileAddress__Q36nw4hbm3snd15DvdSoundArchiveCFUl" ;# ptr (0x803A2BF4)
+	.4byte "detail_GetRequiredStreamBufferSize__Q36nw4hbm3snd15DvdSoundArchiveCFv" ;# ptr (0x803A269C)
+	.4byte "OpenStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviUlUl" ;# ptr (0x803A2558)
+	.4byte "OpenExtStream__Q36nw4hbm3snd15DvdSoundArchiveCFPviPCcUlUl" ;# ptr (0x803A25DC)
+
 .global lbl_8046DEA8
 lbl_8046DEA8:
-	.incbin "baserom.dol", 0x469FA8, 0x2C
+	# ROM: 0x469FA8
+	.asciz "NW4HBM:Failed assertion this->CanAsync()"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046DED4
 lbl_8046DED4:
-	.incbin "baserom.dol", 0x469FD4, 0x18
+	# ROM: 0x469FD4
+	.asciz "DvdLockedFileStream.h"
+	.byte 0x00, 0x00
+
 .global lbl_8046DEEC
 lbl_8046DEEC:
-	.incbin "baserom.dol", 0x469FEC, 0x2C
+	# ROM: 0x469FEC
+	.asciz "NW4HBM:Failed assertion this->CanAsync()"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046DF18
 lbl_8046DF18:
-	.incbin "baserom.dol", 0x46A018, 0x18
+	# ROM: 0x46A018
+	.asciz "DvdLockedFileStream.h"
+	.byte 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "headerAlignSize$3161"

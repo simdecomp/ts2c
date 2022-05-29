@@ -103,7 +103,7 @@ lbl_8035E7F0:
 /* 8035E7F8 0035A498  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035E7FC 0035A49C  7C 08 03 A6 */	mtlr r0
 /* 8035E800 0035A4A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035E804 0035A4A4  4E 80 00 20 */	blr 
+/* 8035E804 0035A4A4  4E 80 00 20 */	blr
 
 .global "port_release_port"
 "port_release_port":
@@ -168,26 +168,26 @@ lbl_8035E8D0:
 /* 8035E8D4 0035A574  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035E8D8 0035A578  7C 08 03 A6 */	mtlr r0
 /* 8035E8DC 0035A57C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035E8E0 0035A580  4E 80 00 20 */	blr 
+/* 8035E8E0 0035A580  4E 80 00 20 */	blr
 
 .global "port_find_mcb_dlci_port"
 "port_find_mcb_dlci_port":
 /* 8035E8E4 0035A584  2C 03 00 00 */	cmpwi r3, 0
 /* 8035E8E8 0035A588  40 82 00 0C */	bne lbl_8035E8F4
 /* 8035E8EC 0035A58C  38 60 00 00 */	li r3, 0
-/* 8035E8F0 0035A590  4E 80 00 20 */	blr 
+/* 8035E8F0 0035A590  4E 80 00 20 */	blr
 lbl_8035E8F4:
 /* 8035E8F4 0035A594  28 04 00 3D */	cmplwi r4, 0x3d
 /* 8035E8F8 0035A598  40 81 00 0C */	ble lbl_8035E904
 /* 8035E8FC 0035A59C  38 60 00 00 */	li r3, 0
-/* 8035E900 0035A5A0  4E 80 00 20 */	blr 
+/* 8035E900 0035A5A0  4E 80 00 20 */	blr
 lbl_8035E904:
 /* 8035E904 0035A5A4  7C 63 22 14 */	add r3, r3, r4
 /* 8035E908 0035A5A8  88 63 00 24 */	lbz r3, 0x24(r3)
 /* 8035E90C 0035A5AC  2C 03 00 00 */	cmpwi r3, 0
 /* 8035E910 0035A5B0  40 82 00 0C */	bne lbl_8035E91C
 /* 8035E914 0035A5B4  38 60 00 00 */	li r3, 0
-/* 8035E918 0035A5B8  4E 80 00 20 */	blr 
+/* 8035E918 0035A5B8  4E 80 00 20 */	blr
 lbl_8035E91C:
 /* 8035E91C 0035A5BC  38 03 FF FF */	addi r0, r3, -1
 /* 8035E920 0035A5C0  3C 60 80 58 */	lis r3, "rfc_cb"@ha
@@ -195,7 +195,7 @@ lbl_8035E91C:
 /* 8035E928 0035A5C8  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 8035E92C 0035A5CC  7C 63 02 14 */	add r3, r3, r0
 /* 8035E930 0035A5D0  38 63 00 68 */	addi r3, r3, 0x68
-/* 8035E934 0035A5D4  4E 80 00 20 */	blr 
+/* 8035E934 0035A5D4  4E 80 00 20 */	blr
 
 .global "port_find_dlci_port"
 "port_find_dlci_port":
@@ -221,7 +221,7 @@ lbl_8035E954:
 /* 8035E980 0035A620  7C 04 18 40 */	cmplw r4, r3
 /* 8035E984 0035A624  40 82 00 0C */	bne lbl_8035E990
 /* 8035E988 0035A628  7D 23 4B 78 */	mr r3, r9
-/* 8035E98C 0035A62C  4E 80 00 20 */	blr 
+/* 8035E98C 0035A62C  4E 80 00 20 */	blr
 lbl_8035E990:
 /* 8035E990 0035A630  2C 06 00 00 */	cmpwi r6, 0
 /* 8035E994 0035A634  41 82 00 1C */	beq lbl_8035E9B0
@@ -230,12 +230,12 @@ lbl_8035E990:
 /* 8035E9A0 0035A640  38 04 00 01 */	addi r0, r4, 1
 /* 8035E9A4 0035A644  7D 23 4B 78 */	mr r3, r9
 /* 8035E9A8 0035A648  98 09 00 0D */	stb r0, 0xd(r9)
-/* 8035E9AC 0035A64C  4E 80 00 20 */	blr 
+/* 8035E9AC 0035A64C  4E 80 00 20 */	blr
 lbl_8035E9B0:
 /* 8035E9B0 0035A650  39 08 00 01 */	addi r8, r8, 1
 /* 8035E9B4 0035A654  42 00 FF A0 */	bdnz lbl_8035E954
 /* 8035E9B8 0035A658  38 60 00 00 */	li r3, 0
-/* 8035E9BC 0035A65C  4E 80 00 20 */	blr 
+/* 8035E9BC 0035A65C  4E 80 00 20 */	blr
 
 .global "port_flow_control_user"
 "port_flow_control_user":
@@ -262,14 +262,14 @@ lbl_8035EA04:
 /* 8035EA08 0035A6A8  7C 00 28 40 */	cmplw r0, r5
 /* 8035EA0C 0035A6AC  40 82 00 0C */	bne lbl_8035EA18
 /* 8035EA10 0035A6B0  38 60 00 00 */	li r3, 0
-/* 8035EA14 0035A6B4  4E 80 00 20 */	blr 
+/* 8035EA14 0035A6B4  4E 80 00 20 */	blr
 lbl_8035EA18:
 /* 8035EA18 0035A6B8  2C 05 00 00 */	cmpwi r5, 0
 /* 8035EA1C 0035A6BC  98 A3 00 25 */	stb r5, 0x25(r3)
 /* 8035EA20 0035A6C0  3C 60 00 03 */	lis r3, 3
-/* 8035EA24 0035A6C4  4D 82 00 20 */	beqlr 
+/* 8035EA24 0035A6C4  4D 82 00 20 */	beqlr
 /* 8035EA28 0035A6C8  3C 60 00 01 */	lis r3, 1
-/* 8035EA2C 0035A6CC  4E 80 00 20 */	blr 
+/* 8035EA2C 0035A6CC  4E 80 00 20 */	blr
 
 .global "port_get_signal_changes"
 "port_get_signal_changes":
@@ -302,7 +302,7 @@ lbl_8035EA74:
 lbl_8035EA8C:
 /* 8035EA8C 0035A72C  80 03 00 88 */	lwz r0, 0x88(r3)
 /* 8035EA90 0035A730  7C 03 30 38 */	and r3, r0, r6
-/* 8035EA94 0035A734  4E 80 00 20 */	blr 
+/* 8035EA94 0035A734  4E 80 00 20 */	blr
 
 .global "port_flow_control_peer"
 "port_flow_control_peer":
@@ -430,15 +430,30 @@ lbl_8035EC50:
 /* 8035EC54 0035A8F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035EC58 0035A8F8  7C 08 03 A6 */	mtlr r0
 /* 8035EC5C 0035A8FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035EC60 0035A900  4E 80 00 20 */	blr 
+/* 8035EC60 0035A900  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465098
 lbl_80465098:
-	.incbin "baserom.dol", 0x461198, 0x100
+	# ROM: 0x461198
+	.asciz "port_select_mtu bad packet size"
+	.asciz "port_select_mtu selected %d based on connection speed"
+	.byte 0x00, 0x00
+	.asciz "port_select_mtu selected %d based on l2cap PDU size"
+	.4byte 0x00000000
+	.asciz "port_select_mtu application selected %d"
+	.asciz "port_select_mtu credit_rx_max %d, credit_rx_low %d, rx_buf_critical %d"
+	.byte 0x00
+
 .global lbl_80465198
 lbl_80465198:
-	.incbin "baserom.dol", 0x461298, 0x18
+	# ROM: 0x461298
+	.asciz "rfc_port_closed DONE"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804651B0
 lbl_804651B0:
-	.incbin "baserom.dol", 0x4612B0, 0x30
+	# ROM: 0x4612B0
+	.asciz "PORT_DataInd Data reached HW. Sending FC set."
+	.byte 0x00, 0x00
+

@@ -95,7 +95,7 @@ lbl_803E960C:
 /* 803E9618 003E52B8  38 84 00 01 */	addi r4, r4, 1
 /* 803E961C 003E52BC  40 82 00 0C */	bne lbl_803E9628
 /* 803E9620 003E52C0  38 60 00 01 */	li r3, 1
-/* 803E9624 003E52C4  4E 80 00 20 */	blr 
+/* 803E9624 003E52C4  4E 80 00 20 */	blr
 lbl_803E9628:
 /* 803E9628 003E52C8  39 4A 00 01 */	addi r10, r10, 1
 lbl_803E962C:
@@ -105,7 +105,7 @@ lbl_803E962C:
 /* 803E9638 003E52D8  41 80 FF 9C */	blt lbl_803E95D4
 lbl_803E963C:
 /* 803E963C 003E52DC  38 60 00 00 */	li r3, 0
-/* 803E9640 003E52E0  4E 80 00 20 */	blr 
+/* 803E9640 003E52E0  4E 80 00 20 */	blr
 
 .global "SCGetProductArea"
 "SCGetProductArea":
@@ -146,14 +146,36 @@ lbl_803E96B0:
 /* 803E96B8 003E5358  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803E96BC 003E535C  7C 08 03 A6 */	mtlr r0
 /* 803E96C0 003E5360  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E96C4 003E5364  4E 80 00 20 */	blr 
+/* 803E96C4 003E5364  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "ProductAreaAndStringTbl"
 "ProductAreaAndStringTbl":
-	.incbin "baserom.dol", 0x47FC80, 0x48
+	# ROM: 0x47FC80
+	.4byte 0x004A504E
+	.4byte 0x00015553
+	.4byte 0x41000245
+	.4byte 0x55520003
+	.4byte 0x41555300
+	.4byte 0x04425241
+	.4byte 0x00055457
+	.4byte 0x4E000552
+	.4byte 0x4F430006
+	.4byte 0x4B4F5200
+	.4byte 0x07484B47
+	.4byte 0x00084153
+	.4byte 0x4900094C
+	.4byte 0x544E000A
+	.4byte 0x53414600
+	.4byte 0xFF000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7908
 lbl_805D7908:
-	.incbin "baserom.dol", 0x487488, 0x8
+	# ROM: 0x487488
+	.asciz "AREA"
+	.byte 0x00, 0x00, 0x00
+

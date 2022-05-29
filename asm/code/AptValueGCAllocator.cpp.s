@@ -17,7 +17,7 @@
 /* 8032DA10 003296B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032DA14 003296B4  7C 08 03 A6 */	mtlr r0
 /* 8032DA18 003296B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032DA1C 003296BC  4E 80 00 20 */	blr 
+/* 8032DA1C 003296BC  4E 80 00 20 */	blr
 
 .global "DeallocateAptValueGC__22AptValueGC_PoolManagerFP10AptValueGCUl"
 "DeallocateAptValueGC__22AptValueGC_PoolManagerFP10AptValueGCUl":
@@ -38,7 +38,7 @@ lbl_8032DA50:
 /* 8032DA54 003296F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032DA58 003296F8  7C 08 03 A6 */	mtlr r0
 /* 8032DA5C 003296FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032DA60 00329700  4E 80 00 20 */	blr 
+/* 8032DA60 00329700  4E 80 00 20 */	blr
 
 .global "GetNextAptValue__22AptValueGC_PoolManagerFPC8AptValue"
 "GetNextAptValue__22AptValueGC_PoolManagerFPC8AptValue":
@@ -134,7 +134,7 @@ lbl_8032DB94:
 /* 8032DBA0 00329840  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8032DBA4 00329844  7C 08 03 A6 */	mtlr r0
 /* 8032DBA8 00329848  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032DBAC 0032984C  4E 80 00 20 */	blr 
+/* 8032DBAC 0032984C  4E 80 00 20 */	blr
 
 .global "GetFirstAptValue__22AptValueGC_PoolManagerFv"
 "GetFirstAptValue__22AptValueGC_PoolManagerFv":
@@ -180,7 +180,7 @@ lbl_8032DC30:
 /* 8032DC38 003298D8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8032DC3C 003298DC  7C 08 03 A6 */	mtlr r0
 /* 8032DC40 003298E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032DC44 003298E4  4E 80 00 20 */	blr 
+/* 8032DC44 003298E4  4E 80 00 20 */	blr
 
 .global "StaticInitialize__22AptValueGC_PoolManagerFv"
 "StaticInitialize__22AptValueGC_PoolManagerFv":
@@ -228,7 +228,7 @@ lbl_8032DCBC:
 /* 8032DCD8 00329978  38 E0 00 0C */	li r7, 0xc
 lbl_8032DCDC:
 /* 8032DCDC 0032997C  98 ED C1 13 */	stb r7, "snMinAllocation__22AptValueGC_PoolManager"-_SDA_BASE_(r13)
-/* 8032DCE0 00329980  4E 80 00 20 */	blr 
+/* 8032DCE0 00329980  4E 80 00 20 */	blr
 
 .global "SetIsAllocated__19_AptValueGC_MemItemFUib"
 "SetIsAllocated__19_AptValueGC_MemItemFUib":
@@ -237,14 +237,14 @@ lbl_8032DCDC:
 /* 8032DCEC 0032998C  80 03 00 04 */	lwz r0, 4(r3)
 /* 8032DCF0 00329990  50 A0 F8 00 */	rlwimi r0, r5, 0x1f, 0, 0
 /* 8032DCF4 00329994  90 03 00 04 */	stw r0, 4(r3)
-/* 8032DCF8 00329998  4E 80 00 20 */	blr 
+/* 8032DCF8 00329998  4E 80 00 20 */	blr
 lbl_8032DCFC:
 /* 8032DCFC 0032999C  2C 04 00 00 */	cmpwi r4, 0
-/* 8032DD00 003299A0  4C 82 00 20 */	bnelr 
+/* 8032DD00 003299A0  4C 82 00 20 */	bnelr
 /* 8032DD04 003299A4  80 03 00 00 */	lwz r0, 0(r3)
 /* 8032DD08 003299A8  50 A0 F8 00 */	rlwimi r0, r5, 0x1f, 0, 0
 /* 8032DD0C 003299AC  90 03 00 00 */	stw r0, 0(r3)
-/* 8032DD10 003299B0  4E 80 00 20 */	blr 
+/* 8032DD10 003299B0  4E 80 00 20 */	blr
 
 .global "GetSize__19_AptValueGC_MemItemFUi"
 "GetSize__19_AptValueGC_MemItemFUi":
@@ -252,16 +252,16 @@ lbl_8032DCFC:
 /* 8032DD18 003299B8  40 82 00 10 */	bne lbl_8032DD28
 /* 8032DD1C 003299BC  80 03 00 04 */	lwz r0, 4(r3)
 /* 8032DD20 003299C0  54 03 00 7E */	clrlwi r3, r0, 1
-/* 8032DD24 003299C4  4E 80 00 20 */	blr 
+/* 8032DD24 003299C4  4E 80 00 20 */	blr
 lbl_8032DD28:
 /* 8032DD28 003299C8  2C 04 00 00 */	cmpwi r4, 0
 /* 8032DD2C 003299CC  40 82 00 10 */	bne lbl_8032DD3C
 /* 8032DD30 003299D0  80 03 00 00 */	lwz r0, 0(r3)
 /* 8032DD34 003299D4  54 03 00 7E */	clrlwi r3, r0, 1
-/* 8032DD38 003299D8  4E 80 00 20 */	blr 
+/* 8032DD38 003299D8  4E 80 00 20 */	blr
 lbl_8032DD3C:
 /* 8032DD3C 003299DC  38 60 00 00 */	li r3, 0
-/* 8032DD40 003299E0  4E 80 00 20 */	blr 
+/* 8032DD40 003299E0  4E 80 00 20 */	blr
 
 .global "IsAllocated__19_AptValueGC_MemItemFUi"
 "IsAllocated__19_AptValueGC_MemItemFUi":
@@ -269,26 +269,26 @@ lbl_8032DD3C:
 /* 8032DD48 003299E8  40 82 00 10 */	bne lbl_8032DD58
 /* 8032DD4C 003299EC  80 03 00 04 */	lwz r0, 4(r3)
 /* 8032DD50 003299F0  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8032DD54 003299F4  4E 80 00 20 */	blr 
+/* 8032DD54 003299F4  4E 80 00 20 */	blr
 lbl_8032DD58:
 /* 8032DD58 003299F8  2C 04 00 00 */	cmpwi r4, 0
 /* 8032DD5C 003299FC  40 82 00 10 */	bne lbl_8032DD6C
 /* 8032DD60 00329A00  80 03 00 00 */	lwz r0, 0(r3)
 /* 8032DD64 00329A04  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8032DD68 00329A08  4E 80 00 20 */	blr 
+/* 8032DD68 00329A08  4E 80 00 20 */	blr
 lbl_8032DD6C:
 /* 8032DD6C 00329A0C  38 60 00 00 */	li r3, 0
-/* 8032DD70 00329A10  4E 80 00 20 */	blr 
+/* 8032DD70 00329A10  4E 80 00 20 */	blr
 
 .global "GetFirstItem__14_DOGMA_MemPoolFv"
 "GetFirstItem__14_DOGMA_MemPoolFv":
 /* 8032DD74 00329A14  38 63 00 0C */	addi r3, r3, 0xc
-/* 8032DD78 00329A18  4E 80 00 20 */	blr 
+/* 8032DD78 00329A18  4E 80 00 20 */	blr
 
 .global "GetNextPool__14_DOGMA_MemPoolCFv"
 "GetNextPool__14_DOGMA_MemPoolCFv":
 /* 8032DD7C 00329A1C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8032DD80 00329A20  4E 80 00 20 */	blr 
+/* 8032DD80 00329A20  4E 80 00 20 */	blr
 
 .global "PtrIsInThisPool__14_DOGMA_MemPoolCFPCv"
 "PtrIsInThisPool__14_DOGMA_MemPoolCFPCv":
@@ -303,10 +303,10 @@ lbl_8032DD6C:
 /* 8032DDA4 00329A44  7C 04 00 40 */	cmplw r4, r0
 /* 8032DDA8 00329A48  40 80 00 0C */	bge lbl_8032DDB4
 /* 8032DDAC 00329A4C  38 60 00 01 */	li r3, 1
-/* 8032DDB0 00329A50  4E 80 00 20 */	blr 
+/* 8032DDB0 00329A50  4E 80 00 20 */	blr
 lbl_8032DDB4:
 /* 8032DDB4 00329A54  38 60 00 00 */	li r3, 0
-/* 8032DDB8 00329A58  4E 80 00 20 */	blr 
+/* 8032DDB8 00329A58  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "snOffsetToStoreNext__22AptValueGC_PoolManager"

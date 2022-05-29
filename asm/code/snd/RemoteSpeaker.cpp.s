@@ -32,7 +32,7 @@
 /* 803A6310 003A1FB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6314 003A1FB4  7C 08 03 A6 */	mtlr r0
 /* 803A6318 003A1FB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A631C 003A1FBC  4E 80 00 20 */	blr 
+/* 803A631C 003A1FBC  4E 80 00 20 */	blr
 
 .global "InitParam__Q36nw4hbm3snd13RemoteSpeakerFv"
 "InitParam__Q36nw4hbm3snd13RemoteSpeakerFv":
@@ -60,7 +60,7 @@
 /* 803A6374 003A2014  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6378 003A2018  7C 08 03 A6 */	mtlr r0
 /* 803A637C 003A201C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A6380 003A2020  4E 80 00 20 */	blr 
+/* 803A6380 003A2020  4E 80 00 20 */	blr
 
 .global "ClearParam__Q36nw4hbm3snd13RemoteSpeakerFv"
 "ClearParam__Q36nw4hbm3snd13RemoteSpeakerFv":
@@ -84,12 +84,12 @@
 /* 803A63C8 003A2068  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803A63CC 003A206C  7C 08 03 A6 */	mtlr r0
 /* 803A63D0 003A2070  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A63D4 003A2074  4E 80 00 20 */	blr 
+/* 803A63D4 003A2074  4E 80 00 20 */	blr
 
 .global "IsAvailable__Q36nw4hbm3snd13RemoteSpeakerCFv"
 "IsAvailable__Q36nw4hbm3snd13RemoteSpeakerCFv":
 /* 803A63D8 003A2078  88 63 00 01 */	lbz r3, 1(r3)
-/* 803A63DC 003A207C  4E 80 00 20 */	blr 
+/* 803A63DC 003A207C  4E 80 00 20 */	blr
 
 .global "Update__Q36nw4hbm3snd13RemoteSpeakerFPCs"
 "Update__Q36nw4hbm3snd13RemoteSpeakerFPCs":
@@ -260,7 +260,7 @@ lbl_803A6628:
 /* 803A6630 003A22D0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A6634 003A22D4  7C 08 03 A6 */	mtlr r0
 /* 803A6638 003A22D8  38 21 00 40 */	addi r1, r1, 0x40
-/* 803A663C 003A22DC  4E 80 00 20 */	blr 
+/* 803A663C 003A22DC  4E 80 00 20 */	blr
 
 .global "IsAllSampleZero__Q36nw4hbm3snd13RemoteSpeakerFPCs"
 "IsAllSampleZero__Q36nw4hbm3snd13RemoteSpeakerFPCs":
@@ -273,66 +273,66 @@ lbl_803A6650:
 /* 803A6654 003A22F4  2C 00 00 00 */	cmpwi r0, 0
 /* 803A6658 003A22F8  41 82 00 0C */	beq lbl_803A6664
 /* 803A665C 003A22FC  38 60 00 00 */	li r3, 0
-/* 803A6660 003A2300  4E 80 00 20 */	blr 
+/* 803A6660 003A2300  4E 80 00 20 */	blr
 lbl_803A6664:
 /* 803A6664 003A2304  80 04 00 04 */	lwz r0, 4(r4)
 /* 803A6668 003A2308  2C 00 00 00 */	cmpwi r0, 0
 /* 803A666C 003A230C  41 82 00 0C */	beq lbl_803A6678
 /* 803A6670 003A2310  38 60 00 00 */	li r3, 0
-/* 803A6674 003A2314  4E 80 00 20 */	blr 
+/* 803A6674 003A2314  4E 80 00 20 */	blr
 lbl_803A6678:
 /* 803A6678 003A2318  80 04 00 08 */	lwz r0, 8(r4)
 /* 803A667C 003A231C  2C 00 00 00 */	cmpwi r0, 0
 /* 803A6680 003A2320  41 82 00 0C */	beq lbl_803A668C
 /* 803A6684 003A2324  38 60 00 00 */	li r3, 0
-/* 803A6688 003A2328  4E 80 00 20 */	blr 
+/* 803A6688 003A2328  4E 80 00 20 */	blr
 lbl_803A668C:
 /* 803A668C 003A232C  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 803A6690 003A2330  2C 00 00 00 */	cmpwi r0, 0
 /* 803A6694 003A2334  41 82 00 0C */	beq lbl_803A66A0
 /* 803A6698 003A2338  38 60 00 00 */	li r3, 0
-/* 803A669C 003A233C  4E 80 00 20 */	blr 
+/* 803A669C 003A233C  4E 80 00 20 */	blr
 lbl_803A66A0:
 /* 803A66A0 003A2340  80 04 00 10 */	lwz r0, 0x10(r4)
 /* 803A66A4 003A2344  2C 00 00 00 */	cmpwi r0, 0
 /* 803A66A8 003A2348  41 82 00 0C */	beq lbl_803A66B4
 /* 803A66AC 003A234C  38 60 00 00 */	li r3, 0
-/* 803A66B0 003A2350  4E 80 00 20 */	blr 
+/* 803A66B0 003A2350  4E 80 00 20 */	blr
 lbl_803A66B4:
 /* 803A66B4 003A2354  80 04 00 14 */	lwz r0, 0x14(r4)
 /* 803A66B8 003A2358  2C 00 00 00 */	cmpwi r0, 0
 /* 803A66BC 003A235C  41 82 00 0C */	beq lbl_803A66C8
 /* 803A66C0 003A2360  38 60 00 00 */	li r3, 0
-/* 803A66C4 003A2364  4E 80 00 20 */	blr 
+/* 803A66C4 003A2364  4E 80 00 20 */	blr
 lbl_803A66C8:
 /* 803A66C8 003A2368  80 04 00 18 */	lwz r0, 0x18(r4)
 /* 803A66CC 003A236C  2C 00 00 00 */	cmpwi r0, 0
 /* 803A66D0 003A2370  41 82 00 0C */	beq lbl_803A66DC
 /* 803A66D4 003A2374  38 60 00 00 */	li r3, 0
-/* 803A66D8 003A2378  4E 80 00 20 */	blr 
+/* 803A66D8 003A2378  4E 80 00 20 */	blr
 lbl_803A66DC:
 /* 803A66DC 003A237C  80 04 00 1C */	lwz r0, 0x1c(r4)
 /* 803A66E0 003A2380  2C 00 00 00 */	cmpwi r0, 0
 /* 803A66E4 003A2384  41 82 00 0C */	beq lbl_803A66F0
 /* 803A66E8 003A2388  38 60 00 00 */	li r3, 0
-/* 803A66EC 003A238C  4E 80 00 20 */	blr 
+/* 803A66EC 003A238C  4E 80 00 20 */	blr
 lbl_803A66F0:
 /* 803A66F0 003A2390  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 803A66F4 003A2394  2C 00 00 00 */	cmpwi r0, 0
 /* 803A66F8 003A2398  41 82 00 0C */	beq lbl_803A6704
 /* 803A66FC 003A239C  38 60 00 00 */	li r3, 0
-/* 803A6700 003A23A0  4E 80 00 20 */	blr 
+/* 803A6700 003A23A0  4E 80 00 20 */	blr
 lbl_803A6704:
 /* 803A6704 003A23A4  80 04 00 24 */	lwz r0, 0x24(r4)
 /* 803A6708 003A23A8  2C 00 00 00 */	cmpwi r0, 0
 /* 803A670C 003A23AC  41 82 00 0C */	beq lbl_803A6718
 /* 803A6710 003A23B0  38 60 00 00 */	li r3, 0
-/* 803A6714 003A23B4  4E 80 00 20 */	blr 
+/* 803A6714 003A23B4  4E 80 00 20 */	blr
 lbl_803A6718:
 /* 803A6718 003A23B8  38 84 00 28 */	addi r4, r4, 0x28
 /* 803A671C 003A23BC  38 A5 00 09 */	addi r5, r5, 9
 /* 803A6720 003A23C0  42 00 FF 30 */	bdnz lbl_803A6650
-/* 803A6724 003A23C4  4E 80 00 20 */	blr 
+/* 803A6724 003A23C4  4E 80 00 20 */	blr
 
 .global "ContinueAlarmHandler__Q36nw4hbm3snd13RemoteSpeakerFP7OSAlarmP9OSContext"
 "ContinueAlarmHandler__Q36nw4hbm3snd13RemoteSpeakerFP7OSAlarmP9OSContext":
@@ -365,7 +365,7 @@ lbl_803A6718:
 /* 803A6790 003A2430  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803A6794 003A2434  7C 08 03 A6 */	mtlr r0
 /* 803A6798 003A2438  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A679C 003A243C  4E 80 00 20 */	blr 
+/* 803A679C 003A243C  4E 80 00 20 */	blr
 
 .global "IntervalAlarmHandler__Q36nw4hbm3snd13RemoteSpeakerFP7OSAlarmP9OSContext"
 "IntervalAlarmHandler__Q36nw4hbm3snd13RemoteSpeakerFP7OSAlarmP9OSContext":
@@ -397,12 +397,24 @@ lbl_803A67E8:
 /* 803A6800 003A24A0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803A6804 003A24A4  7C 08 03 A6 */	mtlr r0
 /* 803A6808 003A24A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A680C 003A24AC  4E 80 00 20 */	blr 
+/* 803A680C 003A24AC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046EA48
 lbl_8046EA48:
-	.incbin "baserom.dol", 0x46AB48, 0x80
+	# ROM: 0x46AB48
+	.asciz "snd_RemoteSpeaker.cpp"
+	.byte 0x00, 0x00
+	.asciz "RemoteSpeaker::Setup is busy."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion IsAvailable()"
+	.byte 0x00, 0x00
+	.asciz "WPADSendStreamData failed. %d"
+	.byte 0x00, 0x00
+
 .global lbl_8046EAC8
 lbl_8046EAC8:
-	.incbin "baserom.dol", 0x46ABC8, 0x38
+	# ROM: 0x46ABC8
+	.asciz "Playing time of remote speaker(%d) is over 8 minutes."
+	.byte 0x00, 0x00
+

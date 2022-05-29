@@ -73,7 +73,7 @@ lbl_80414FD8:
 /* 80414FE8 00410C88  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80414FEC 00410C8C  7C 08 03 A6 */	mtlr r0
 /* 80414FF0 00410C90  38 21 00 20 */	addi r1, r1, 0x20
-/* 80414FF4 00410C94  4E 80 00 20 */	blr 
+/* 80414FF4 00410C94  4E 80 00 20 */	blr
 
 .global "CircleBufferWriteBytes"
 "CircleBufferWriteBytes":
@@ -147,7 +147,7 @@ lbl_804150E0:
 /* 804150F0 00410D90  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 804150F4 00410D94  7C 08 03 A6 */	mtlr r0
 /* 804150F8 00410D98  38 21 00 20 */	addi r1, r1, 0x20
-/* 804150FC 00410D9C  4E 80 00 20 */	blr 
+/* 804150FC 00410D9C  4E 80 00 20 */	blr
 
 .global "CircleBufferInitialize"
 "CircleBufferInitialize":
@@ -170,9 +170,9 @@ lbl_804150E0:
 /* 80415140 00410DE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80415144 00410DE4  7C 08 03 A6 */	mtlr r0
 /* 80415148 00410DE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8041514C 00410DEC  4E 80 00 20 */	blr 
+/* 8041514C 00410DEC  4E 80 00 20 */	blr
 
 .global "CBGetBytesAvailableForRead"
 "CBGetBytesAvailableForRead":
 /* 80415150 00410DF0  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 80415154 00410DF4  4E 80 00 20 */	blr 
+/* 80415154 00410DF4  4E 80 00 20 */	blr

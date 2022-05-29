@@ -5,14 +5,14 @@
 "hcisu_h2_usb_cback":
 /* 8033CAE0 00338780  2C 03 00 04 */	cmpwi r3, 4
 /* 8033CAE4 00338784  41 82 00 14 */	beq lbl_8033CAF8
-/* 8033CAE8 00338788  4C 80 00 20 */	bgelr 
+/* 8033CAE8 00338788  4C 80 00 20 */	bgelr
 /* 8033CAEC 0033878C  2C 03 00 00 */	cmpwi r3, 0
-/* 8033CAF0 00338790  4D 82 00 20 */	beqlr 
-/* 8033CAF4 00338794  4E 80 00 20 */	blr 
+/* 8033CAF0 00338790  4D 82 00 20 */	beqlr
+/* 8033CAF4 00338794  4E 80 00 20 */	blr
 lbl_8033CAF8:
 /* 8033CAF8 00338798  7C 83 07 74 */	extsb r3, r4
 /* 8033CAFC 0033879C  48 00 1E CC */	b "bta_usb_close_evt"
-/* 8033CB00 003387A0  4E 80 00 20 */	blr 
+/* 8033CB00 003387A0  4E 80 00 20 */	blr
 
 .global "hcisu_h2_receive_msg"
 "hcisu_h2_receive_msg":
@@ -269,7 +269,7 @@ lbl_8033CE84:
 /* 8033CE8C 00338B2C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8033CE90 00338B30  7C 08 03 A6 */	mtlr r0
 /* 8033CE94 00338B34  38 21 00 60 */	addi r1, r1, 0x60
-/* 8033CE98 00338B38  4E 80 00 20 */	blr 
+/* 8033CE98 00338B38  4E 80 00 20 */	blr
 
 .global "hcisu_h2_send_msg_now"
 "hcisu_h2_send_msg_now":
@@ -388,7 +388,7 @@ lbl_8033D030:
 /* 8033D038 00338CD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033D03C 00338CDC  7C 08 03 A6 */	mtlr r0
 /* 8033D040 00338CE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D044 00338CE4  4E 80 00 20 */	blr 
+/* 8033D044 00338CE4  4E 80 00 20 */	blr
 
 .global "hcisu_h2_init"
 "hcisu_h2_init":
@@ -402,7 +402,7 @@ lbl_8033D030:
 /* 8033D064 00338D04  98 66 00 1F */	stb r3, 0x1f(r6)
 /* 8033D068 00338D08  98 86 00 20 */	stb r4, 0x20(r6)
 /* 8033D06C 00338D0C  B0 A6 00 12 */	sth r5, 0x12(r6)
-/* 8033D070 00338D10  4E 80 00 20 */	blr 
+/* 8033D070 00338D10  4E 80 00 20 */	blr
 
 .global "hcisu_h2_open"
 "hcisu_h2_open":
@@ -431,7 +431,7 @@ lbl_8033D030:
 /* 8033D0CC 00338D6C  38 60 00 01 */	li r3, 1
 /* 8033D0D0 00338D70  7C 08 03 A6 */	mtlr r0
 /* 8033D0D4 00338D74  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033D0D8 00338D78  4E 80 00 20 */	blr 
+/* 8033D0D8 00338D78  4E 80 00 20 */	blr
 
 .global "hcisu_h2_close"
 "hcisu_h2_close":
@@ -447,7 +447,7 @@ lbl_8033D030:
 /* 8033D100 00338DA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033D104 00338DA4  7C 08 03 A6 */	mtlr r0
 /* 8033D108 00338DA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033D10C 00338DAC  4E 80 00 20 */	blr 
+/* 8033D10C 00338DAC  4E 80 00 20 */	blr
 
 .global "hcisu_h2_send"
 "hcisu_h2_send":
@@ -462,7 +462,7 @@ lbl_8033D030:
 /* 8033D130 00338DD0  38 60 00 01 */	li r3, 1
 /* 8033D134 00338DD4  7C 08 03 A6 */	mtlr r0
 /* 8033D138 00338DD8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033D13C 00338DDC  4E 80 00 20 */	blr 
+/* 8033D13C 00338DDC  4E 80 00 20 */	blr
 
 .global "hcisu_h2_handle_event"
 "hcisu_h2_handle_event":
@@ -480,18 +480,32 @@ lbl_8033D030:
 /* 8033D16C 00338E0C  38 60 00 00 */	li r3, 0
 /* 8033D170 00338E10  7C 08 03 A6 */	mtlr r0
 /* 8033D174 00338E14  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033D178 00338E18  4E 80 00 20 */	blr 
+/* 8033D178 00338E18  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "hcisu_h2"
 "hcisu_h2":
-	.incbin "baserom.dol", 0x418870, 0x18
+	# ROM: 0x418870
+	.4byte "hcisu_h2_init" ;# ptr (0x8033D048)
+	.4byte "hcisu_h2_open" ;# ptr (0x8033D074)
+	.4byte "hcisu_h2_close" ;# ptr (0x8033D0DC)
+	.4byte "hcisu_h2_send" ;# ptr (0x8033D110)
+	.4byte "hcisu_h2_handle_event" ;# ptr (0x8033D140)
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x45BE80, 0x3C
+	# ROM: 0x45BE80
+	.asciz "HCIS: Unable to allocate buffer for incoming HCI message."
+	.byte 0x00, 0x00
+
 .global lbl_8045FDBC
 lbl_8045FDBC:
-	.incbin "baserom.dol", 0x45BEBC, 0x34
+	# ROM: 0x45BEBC
+	.asciz "HCIS: Invalid length for incoming HCI message."
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "hcisu_h2_cb"
@@ -501,7 +515,13 @@ lbl_8045FDBC:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "hcisu_preamble_table"
 "hcisu_preamble_table":
-	.incbin "baserom.dol", 0x489A70, 0x8
+	# ROM: 0x489A70
+	.4byte 0x03040302
+	.4byte 0x00000000
+
 .global "hcisu_msg_evt_table"
 "hcisu_msg_evt_table":
-	.incbin "baserom.dol", 0x489A78, 0x8
+	# ROM: 0x489A78
+	.4byte 0x13001100
+	.4byte 0x12001000
+

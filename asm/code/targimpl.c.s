@@ -4,12 +4,12 @@
 .global "__TRK_get_MSR"
 "__TRK_get_MSR":
 /* 80412454 0040E0F4  7C 60 00 A6 */	mfmsr r3
-/* 80412458 0040E0F8  4E 80 00 20 */	blr 
+/* 80412458 0040E0F8  4E 80 00 20 */	blr
 
 .global "__TRK_set_MSR"
 "__TRK_set_MSR":
 /* 8041245C 0040E0FC  7C 60 01 24 */	mtmsr r3
-/* 80412460 0040E100  4E 80 00 20 */	blr 
+/* 80412460 0040E100  4E 80 00 20 */	blr
 
 .global "TRK_ppc_memcpy"
 "TRK_ppc_memcpy":
@@ -29,7 +29,7 @@ lbl_8041246C:
 lbl_80412494:
 /* 80412494 0040E134  7D 00 01 24 */	mtmsr r8
 /* 80412498 0040E138  7C 00 04 AC */	sync 0
-/* 8041249C 0040E13C  4E 80 00 20 */	blr 
+/* 8041249C 0040E13C  4E 80 00 20 */	blr
 
 .global "TRKInterruptHandler"
 "TRKInterruptHandler":
@@ -83,7 +83,7 @@ lbl_8041254C:
 /* 80412558 0040E1F8  7C 6F F1 20 */	mtcrf 0xff, r3
 /* 8041255C 0040E1FC  80 62 00 0C */	lwz r3, 0xc(r2)
 /* 80412560 0040E200  80 42 00 08 */	lwz r2, 8(r2)
-/* 80412564 0040E204  4C 00 00 64 */	rfi 
+/* 80412564 0040E204  4C 00 00 64 */	rfi
 lbl_80412568:
 /* 80412568 0040E208  3C 40 80 5D */	lis r2, "TRK_saved_exceptionID"@h
 /* 8041256C 0040E20C  60 42 3A B0 */	ori r2, r2, "TRK_saved_exceptionID"@l
@@ -179,7 +179,7 @@ lbl_804126AC:
 /* 804126C0 0040E360  7C 6F F1 20 */	mtcrf 0xff, r3
 /* 804126C4 0040E364  7C 51 42 A6 */	mfspr r2, 0x111
 /* 804126C8 0040E368  7C 72 42 A6 */	mfspr r3, 0x112
-/* 804126CC 0040E36C  4C 00 00 64 */	rfi 
+/* 804126CC 0040E36C  4C 00 00 64 */	rfi
 
 .global "TRKSwapAndGo"
 "TRKSwapAndGo":
@@ -232,7 +232,7 @@ lbl_8041274C:
 /* 80412784 0040E424  80 02 00 00 */	lwz r0, "_SDA2_BASE_"-_SDA2_BASE_(r2)
 /* 80412788 0040E428  80 22 00 04 */	lwz r1, 4(r2)
 /* 8041278C 0040E42C  80 42 00 08 */	lwz r2, 8(r2)
-/* 80412790 0040E430  4C 00 00 64 */	rfi 
+/* 80412790 0040E430  4C 00 00 64 */	rfi
 
 .global "TRKInterruptHandlerEnableInterrupts"
 "TRKInterruptHandlerEnableInterrupts":
@@ -268,7 +268,7 @@ lbl_8041274C:
 /* 804127FC 0040E49C  E3 E1 00 20 */	psq_l f31, 32(r1), 0, qr0
 /* 80412800 0040E4A0  CB E1 00 10 */	lfd f31, 0x10(r1)
 /* 80412804 0040E4A4  38 21 00 40 */	addi r1, r1, 0x40
-/* 80412808 0040E4A8  4E 80 00 20 */	blr 
+/* 80412808 0040E4A8  4E 80 00 20 */	blr
 
 .global "WriteFPSCR"
 "WriteFPSCR":
@@ -280,14 +280,14 @@ lbl_8041274C:
 /* 80412820 0040E4C0  E3 E1 00 20 */	psq_l f31, 32(r1), 0, qr0
 /* 80412824 0040E4C4  CB E1 00 10 */	lfd f31, 0x10(r1)
 /* 80412828 0040E4C8  38 21 00 40 */	addi r1, r1, 0x40
-/* 8041282C 0040E4CC  4E 80 00 20 */	blr 
+/* 8041282C 0040E4CC  4E 80 00 20 */	blr
 
 .global "TRKTargetSetInputPendingPtr"
 "TRKTargetSetInputPendingPtr":
 /* 80412830 0040E4D0  3C 80 80 5D */	lis r4, "gTRKState"@ha
 /* 80412834 0040E4D4  38 84 3A B4 */	addi r4, r4, "gTRKState"@l
 /* 80412838 0040E4D8  90 64 00 A0 */	stw r3, 0xa0(r4)
-/* 8041283C 0040E4DC  4E 80 00 20 */	blr 
+/* 8041283C 0040E4DC  4E 80 00 20 */	blr
 
 .global "TRKTargetStop"
 "TRKTargetStop":
@@ -296,21 +296,21 @@ lbl_8041274C:
 /* 80412848 0040E4E8  38 83 3A B4 */	addi r4, r3, "gTRKState"@l
 /* 8041284C 0040E4EC  38 60 00 00 */	li r3, 0
 /* 80412850 0040E4F0  90 04 00 98 */	stw r0, 0x98(r4)
-/* 80412854 0040E4F4  4E 80 00 20 */	blr 
+/* 80412854 0040E4F4  4E 80 00 20 */	blr
 
 .global "TRKTargetSetStopped"
 "TRKTargetSetStopped":
 /* 80412858 0040E4F8  3C 80 80 5D */	lis r4, "gTRKState"@ha
 /* 8041285C 0040E4FC  38 84 3A B4 */	addi r4, r4, "gTRKState"@l
 /* 80412860 0040E500  90 64 00 98 */	stw r3, 0x98(r4)
-/* 80412864 0040E504  4E 80 00 20 */	blr 
+/* 80412864 0040E504  4E 80 00 20 */	blr
 
 .global "TRKTargetStopped"
 "TRKTargetStopped":
 /* 80412868 0040E508  3C 60 80 5D */	lis r3, "gTRKState"@ha
 /* 8041286C 0040E50C  38 63 3A B4 */	addi r3, r3, "gTRKState"@l
 /* 80412870 0040E510  80 63 00 98 */	lwz r3, 0x98(r3)
-/* 80412874 0040E514  4E 80 00 20 */	blr 
+/* 80412874 0040E514  4E 80 00 20 */	blr
 
 .global "TRKTargetSupportRequest"
 "TRKTargetSupportRequest":
@@ -451,21 +451,21 @@ lbl_80412A64:
 /* 80412A68 0040E708  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80412A6C 0040E70C  7C 08 03 A6 */	mtlr r0
 /* 80412A70 0040E710  38 21 00 40 */	addi r1, r1, 0x40
-/* 80412A74 0040E714  4E 80 00 20 */	blr 
+/* 80412A74 0040E714  4E 80 00 20 */	blr
 
 .global "TRKTargetGetPC"
 "TRKTargetGetPC":
 /* 80412A78 0040E718  3C 60 80 5D */	lis r3, "gTRKCPUState"@ha
 /* 80412A7C 0040E71C  38 63 3B 58 */	addi r3, r3, "gTRKCPUState"@l
 /* 80412A80 0040E720  80 63 00 80 */	lwz r3, 0x80(r3)
-/* 80412A84 0040E724  4E 80 00 20 */	blr 
+/* 80412A84 0040E724  4E 80 00 20 */	blr
 
 .global "TRKTargetStepOutOfRange"
 "TRKTargetStepOutOfRange":
 /* 80412A88 0040E728  2C 05 00 00 */	cmpwi r5, 0
 /* 80412A8C 0040E72C  41 82 00 0C */	beq lbl_80412A98
 /* 80412A90 0040E730  38 60 07 03 */	li r3, 0x703
-/* 80412A94 0040E734  4E 80 00 20 */	blr 
+/* 80412A94 0040E734  4E 80 00 20 */	blr
 lbl_80412A98:
 /* 80412A98 0040E738  3C A0 80 5D */	lis r5, "gTRKCPUState"@ha
 /* 80412A9C 0040E73C  38 E0 00 01 */	li r7, 1
@@ -495,14 +495,14 @@ lbl_80412AEC:
 /* 80412AF4 0040E794  38 83 3A B4 */	addi r4, r3, "gTRKState"@l
 /* 80412AF8 0040E798  38 60 00 00 */	li r3, 0
 /* 80412AFC 0040E79C  90 04 00 98 */	stw r0, 0x98(r4)
-/* 80412B00 0040E7A0  4E 80 00 20 */	blr 
+/* 80412B00 0040E7A0  4E 80 00 20 */	blr
 
 .global "TRKTargetSingleStep"
 "TRKTargetSingleStep":
 /* 80412B04 0040E7A4  2C 04 00 00 */	cmpwi r4, 0
 /* 80412B08 0040E7A8  41 82 00 0C */	beq lbl_80412B14
 /* 80412B0C 0040E7AC  38 60 07 03 */	li r3, 0x703
-/* 80412B10 0040E7B0  4E 80 00 20 */	blr 
+/* 80412B10 0040E7B0  4E 80 00 20 */	blr
 lbl_80412B14:
 /* 80412B14 0040E7B4  3C 80 80 5D */	lis r4, "gTRKCPUState"@ha
 /* 80412B18 0040E7B8  3C A0 80 49 */	lis r5, "gTRKStepStatus"@ha
@@ -528,7 +528,7 @@ lbl_80412B58:
 /* 80412B60 0040E800  38 83 3A B4 */	addi r4, r3, "gTRKState"@l
 /* 80412B64 0040E804  38 60 00 00 */	li r3, 0
 /* 80412B68 0040E808  90 04 00 98 */	stw r0, 0x98(r4)
-/* 80412B6C 0040E80C  4E 80 00 20 */	blr 
+/* 80412B6C 0040E80C  4E 80 00 20 */	blr
 
 .global "TRKTargetAddExceptionInfo"
 "TRKTargetAddExceptionInfo":
@@ -564,7 +564,7 @@ lbl_80412B58:
 /* 80412BE4 0040E884  83 E1 00 5C */	lwz r31, 0x5c(r1)
 /* 80412BE8 0040E888  7C 08 03 A6 */	mtlr r0
 /* 80412BEC 0040E88C  38 21 00 60 */	addi r1, r1, 0x60
-/* 80412BF0 0040E890  4E 80 00 20 */	blr 
+/* 80412BF0 0040E890  4E 80 00 20 */	blr
 
 .global "TRKTargetAddStopInfo"
 "TRKTargetAddStopInfo":
@@ -602,7 +602,7 @@ lbl_80412B58:
 /* 80412C70 0040E910  83 E1 00 5C */	lwz r31, 0x5c(r1)
 /* 80412C74 0040E914  7C 08 03 A6 */	mtlr r0
 /* 80412C78 0040E918  38 21 00 60 */	addi r1, r1, 0x60
-/* 80412C7C 0040E91C  4E 80 00 20 */	blr 
+/* 80412C7C 0040E91C  4E 80 00 20 */	blr
 
 .global "TRKTargetInterrupt"
 "TRKTargetInterrupt":
@@ -701,7 +701,7 @@ lbl_80412DCC:
 /* 80412DCC 0040EA6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80412DD0 0040EA70  7C 08 03 A6 */	mtlr r0
 /* 80412DD4 0040EA74  38 21 00 10 */	addi r1, r1, 0x10
-/* 80412DD8 0040EA78  4E 80 00 20 */	blr 
+/* 80412DD8 0040EA78  4E 80 00 20 */	blr
 
 .global "TRKPostInterruptEvent"
 "TRKPostInterruptEvent":
@@ -753,7 +753,7 @@ lbl_80412E78:
 /* 80412E78 0040EB18  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80412E7C 0040EB1C  7C 08 03 A6 */	mtlr r0
 /* 80412E80 0040EB20  38 21 00 20 */	addi r1, r1, 0x20
-/* 80412E84 0040EB24  4E 80 00 20 */	blr 
+/* 80412E84 0040EB24  4E 80 00 20 */	blr
 
 .global "TRKTargetAccessExtended2"
 "TRKTargetAccessExtended2":
@@ -821,7 +821,7 @@ lbl_80412EBC:
 /* 80412F78 0040EC18  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80412F7C 0040EC1C  38 61 00 08 */	addi r3, r1, 8
 /* 80412F80 0040EC20  7D 89 03 A6 */	mtctr r12
-/* 80412F84 0040EC24  4E 80 04 21 */	bctrl 
+/* 80412F84 0040EC24  4E 80 04 21 */	bctrl
 /* 80412F88 0040EC28  3C 60 80 42 */	lis r3, lbl_8041FE40@ha
 /* 80412F8C 0040EC2C  80 A1 00 08 */	lwz r5, 8(r1)
 /* 80412F90 0040EC30  3B A3 FE 40 */	addi r29, r3, lbl_8041FE40@l
@@ -863,7 +863,7 @@ lbl_80412EBC:
 /* 80413020 0040ECC0  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413024 0040ECC4  38 61 00 08 */	addi r3, r1, 8
 /* 80413028 0040ECC8  7D 89 03 A6 */	mtctr r12
-/* 8041302C 0040ECCC  4E 80 04 21 */	bctrl 
+/* 8041302C 0040ECCC  4E 80 04 21 */	bctrl
 /* 80413030 0040ECD0  3C 60 80 42 */	lis r3, lbl_8041FE40@ha
 /* 80413034 0040ECD4  3C 80 7C 91 */	lis r4, 0x7C90E3A6@ha
 /* 80413038 0040ECD8  3B A3 FE 40 */	addi r29, r3, lbl_8041FE40@l
@@ -904,7 +904,7 @@ lbl_80412EBC:
 /* 804130C4 0040ED64  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 804130C8 0040ED68  38 61 00 08 */	addi r3, r1, 8
 /* 804130CC 0040ED6C  7D 89 03 A6 */	mtctr r12
-/* 804130D0 0040ED70  4E 80 04 21 */	bctrl 
+/* 804130D0 0040ED70  4E 80 04 21 */	bctrl
 /* 804130D4 0040ED74  38 00 00 00 */	li r0, 0
 /* 804130D8 0040ED78  57 7E A8 14 */	slwi r30, r27, 0x15
 /* 804130DC 0040ED7C  90 19 00 00 */	stw r0, 0(r25)
@@ -952,7 +952,7 @@ lbl_80413158:
 /* 8041317C 0040EE1C  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413180 0040EE20  38 61 00 0C */	addi r3, r1, 0xc
 /* 80413184 0040EE24  7D 89 03 A6 */	mtctr r12
-/* 80413188 0040EE28  4E 80 04 21 */	bctrl 
+/* 80413188 0040EE28  4E 80 04 21 */	bctrl
 /* 8041318C 0040EE2C  80 A1 00 0C */	lwz r5, 0xc(r1)
 /* 80413190 0040EE30  7F 03 C3 78 */	mr r3, r24
 /* 80413194 0040EE34  80 C1 00 10 */	lwz r6, 0x10(r1)
@@ -1000,7 +1000,7 @@ lbl_80413210:
 /* 80413234 0040EED4  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413238 0040EED8  38 61 00 0C */	addi r3, r1, 0xc
 /* 8041323C 0040EEDC  7D 89 03 A6 */	mtctr r12
-/* 80413240 0040EEE0  4E 80 04 21 */	bctrl 
+/* 80413240 0040EEE0  4E 80 04 21 */	bctrl
 /* 80413244 0040EEE4  38 60 00 00 */	li r3, 0
 lbl_80413248:
 /* 80413248 0040EEE8  80 99 00 00 */	lwz r4, 0(r25)
@@ -1036,7 +1036,7 @@ lbl_804132AC:
 /* 804132B0 0040EF50  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 804132B4 0040EF54  7C 08 03 A6 */	mtlr r0
 /* 804132B8 0040EF58  38 21 01 30 */	addi r1, r1, 0x130
-/* 804132BC 0040EF5C  4E 80 00 20 */	blr 
+/* 804132BC 0040EF5C  4E 80 00 20 */	blr
 
 .global "TRKTargetAccessExtended1"
 "TRKTargetAccessExtended1":
@@ -1138,7 +1138,7 @@ lbl_80413418:
 /* 80413420 0040F0C0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80413424 0040F0C4  7C 08 03 A6 */	mtlr r0
 /* 80413428 0040F0C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8041342C 0040F0CC  4E 80 00 20 */	blr 
+/* 8041342C 0040F0CC  4E 80 00 20 */	blr
 
 .global "TRKTargetAccessFP"
 "TRKTargetAccessFP":
@@ -1225,7 +1225,7 @@ lbl_80413540:
 /* 80413564 0040F204  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413568 0040F208  38 61 00 08 */	addi r3, r1, 8
 /* 8041356C 0040F20C  7D 89 03 A6 */	mtctr r12
-/* 80413570 0040F210  4E 80 04 21 */	bctrl 
+/* 80413570 0040F210  4E 80 04 21 */	bctrl
 /* 80413574 0040F214  48 00 01 40 */	b lbl_804136B4
 lbl_80413578:
 /* 80413578 0040F218  40 82 00 44 */	bne lbl_804135BC
@@ -1303,7 +1303,7 @@ lbl_80413660:
 /* 80413680 0040F320  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413684 0040F324  38 61 00 08 */	addi r3, r1, 8
 /* 80413688 0040F328  7D 89 03 A6 */	mtctr r12
-/* 8041368C 0040F32C  4E 80 04 21 */	bctrl 
+/* 8041368C 0040F32C  4E 80 04 21 */	bctrl
 /* 80413690 0040F330  2C 1F 00 00 */	cmpwi r31, 0
 /* 80413694 0040F334  41 82 00 20 */	beq lbl_804136B4
 /* 80413698 0040F338  80 61 00 08 */	lwz r3, 8(r1)
@@ -1365,7 +1365,7 @@ lbl_80413748:
 /* 8041376C 0040F40C  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413770 0040F410  38 61 00 08 */	addi r3, r1, 8
 /* 80413774 0040F414  7D 89 03 A6 */	mtctr r12
-/* 80413778 0040F418  4E 80 04 21 */	bctrl 
+/* 80413778 0040F418  4E 80 04 21 */	bctrl
 /* 8041377C 0040F41C  3A 80 00 00 */	li r20, 0
 /* 80413780 0040F420  48 00 01 40 */	b lbl_804138C0
 lbl_80413784:
@@ -1444,7 +1444,7 @@ lbl_8041386C:
 /* 8041388C 0040F52C  38 83 40 1C */	addi r4, r3, "TRKvalue128_temp"@l
 /* 80413890 0040F530  38 61 00 08 */	addi r3, r1, 8
 /* 80413894 0040F534  7D 89 03 A6 */	mtctr r12
-/* 80413898 0040F538  4E 80 04 21 */	bctrl 
+/* 80413898 0040F538  4E 80 04 21 */	bctrl
 /* 8041389C 0040F53C  2C 1F 00 00 */	cmpwi r31, 0
 /* 804138A0 0040F540  3A 80 00 00 */	li r20, 0
 /* 804138A4 0040F544  41 82 00 1C */	beq lbl_804138C0
@@ -1490,7 +1490,7 @@ lbl_80413928:
 /* 8041392C 0040F5CC  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80413930 0040F5D0  7C 08 03 A6 */	mtlr r0
 /* 80413934 0040F5D4  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 80413938 0040F5D8  4E 80 00 20 */	blr 
+/* 80413938 0040F5D8  4E 80 00 20 */	blr
 
 .global "TRKTargetAccessDefault"
 "TRKTargetAccessDefault":
@@ -1559,7 +1559,7 @@ lbl_80413A18:
 /* 80413A20 0040F6C0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80413A24 0040F6C4  7C 08 03 A6 */	mtlr r0
 /* 80413A28 0040F6C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80413A2C 0040F6CC  4E 80 00 20 */	blr 
+/* 80413A2C 0040F6CC  4E 80 00 20 */	blr
 
 .global "TRKTargetReadInstruction"
 "TRKTargetReadInstruction":
@@ -1582,7 +1582,7 @@ lbl_80413A6C:
 /* 80413A6C 0040F70C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80413A70 0040F710  7C 08 03 A6 */	mtlr r0
 /* 80413A74 0040F714  38 21 00 10 */	addi r1, r1, 0x10
-/* 80413A78 0040F718  4E 80 00 20 */	blr 
+/* 80413A78 0040F718  4E 80 00 20 */	blr
 
 .global "TRKTargetAccessMemory"
 "TRKTargetAccessMemory":
@@ -1672,7 +1672,7 @@ lbl_80413B88:
 /* 80413BB8 0040F858  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80413BBC 0040F85C  7C 08 03 A6 */	mtlr r0
 /* 80413BC0 0040F860  38 21 00 40 */	addi r1, r1, 0x40
-/* 80413BC4 0040F864  4E 80 00 20 */	blr 
+/* 80413BC4 0040F864  4E 80 00 20 */	blr
 
 .global "TRKValidMemory32"
 "TRKValidMemory32":
@@ -1863,30 +1863,76 @@ lbl_80413E58:
 /* 80413E5C 0040FAFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80413E60 0040FB00  7C 08 03 A6 */	mtlr r0
 /* 80413E64 0040FB04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80413E68 0040FB08  4E 80 00 20 */	blr 
+/* 80413E68 0040FB08  4E 80 00 20 */	blr
 /* 80413E6C 0040FB0C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "gTRKMemMap"
 "gTRKMemMap":
-	.incbin "baserom.dol", 0x41BF30, 0x10
+	# ROM: 0x41BF30
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000001
+
 .global lbl_8041FE40
 lbl_8041FE40:
-	.incbin "baserom.dol", 0x41BF40, 0x50
+	# ROM: 0x41BF40
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+
 .global lbl_8041FE90
 lbl_8041FE90:
-	.incbin "baserom.dol", 0x41BF90, 0x28
+	# ROM: 0x41BF90
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "gTRKRestoreFlags"
 "gTRKRestoreFlags":
-	.incbin "baserom.dol", 0x484168, 0xC
+	# ROM: 0x484168
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global "gTRKExceptionStatus"
 "gTRKExceptionStatus":
-	.incbin "baserom.dol", 0x484174, 0x10
+	# ROM: 0x484174
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x01000000
+
 .global "gTRKStepStatus"
 "gTRKStepStatus":
-	.incbin "baserom.dol", 0x484184, 0x14
+	# ROM: 0x484184
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "TRK_saved_exceptionID"

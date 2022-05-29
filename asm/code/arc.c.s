@@ -43,7 +43,7 @@ lbl_80335E64:
 /* 80335EB0 00331B50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80335EB4 00331B54  7C 08 03 A6 */	mtlr r0
 /* 80335EB8 00331B58  38 21 00 10 */	addi r1, r1, 0x10
-/* 80335EBC 00331B5C  4E 80 00 20 */	blr 
+/* 80335EBC 00331B5C  4E 80 00 20 */	blr
 
 .global "ARCFastOpen"
 "ARCFastOpen":
@@ -59,7 +59,7 @@ lbl_80335E64:
 /* 80335EE4 00331B84  41 82 00 0C */	beq lbl_80335EF0
 lbl_80335EE8:
 /* 80335EE8 00331B88  38 60 00 00 */	li r3, 0
-/* 80335EEC 00331B8C  4E 80 00 20 */	blr 
+/* 80335EEC 00331B8C  4E 80 00 20 */	blr
 lbl_80335EF0:
 /* 80335EF0 00331B90  90 65 00 00 */	stw r3, 0(r5)
 /* 80335EF4 00331B94  7C 86 22 14 */	add r4, r6, r4
@@ -68,7 +68,7 @@ lbl_80335EF0:
 /* 80335F00 00331BA0  90 05 00 04 */	stw r0, 4(r5)
 /* 80335F04 00331BA4  80 04 00 08 */	lwz r0, 8(r4)
 /* 80335F08 00331BA8  90 05 00 08 */	stw r0, 8(r5)
-/* 80335F0C 00331BAC  4E 80 00 20 */	blr 
+/* 80335F0C 00331BAC  4E 80 00 20 */	blr
 
 .global "ARCConvertPathToEntrynum"
 "ARCConvertPathToEntrynum":
@@ -257,7 +257,7 @@ lbl_80336164:
 /* 80336164 00331E04  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80336168 00331E08  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033616C 00331E0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80336170 00331E10  4E 80 00 20 */	blr 
+/* 80336170 00331E10  4E 80 00 20 */	blr
 
 .global "ARCGetStartAddrInMem"
 "ARCGetStartAddrInMem":
@@ -265,17 +265,17 @@ lbl_80336164:
 /* 80336178 00331E18  80 03 00 04 */	lwz r0, 4(r3)
 /* 8033617C 00331E1C  80 64 00 00 */	lwz r3, 0(r4)
 /* 80336180 00331E20  7C 63 02 14 */	add r3, r3, r0
-/* 80336184 00331E24  4E 80 00 20 */	blr 
+/* 80336184 00331E24  4E 80 00 20 */	blr
 
 .global "ARCGetLength"
 "ARCGetLength":
 /* 80336188 00331E28  80 63 00 08 */	lwz r3, 8(r3)
-/* 8033618C 00331E2C  4E 80 00 20 */	blr 
+/* 8033618C 00331E2C  4E 80 00 20 */	blr
 
 .global "ARCClose"
 "ARCClose":
 /* 80336190 00331E30  38 60 00 01 */	li r3, 1
-/* 80336194 00331E34  4E 80 00 20 */	blr 
+/* 80336194 00331E34  4E 80 00 20 */	blr
 
 .global "ARCChangeDir"
 "ARCChangeDir":
@@ -303,7 +303,7 @@ lbl_803361DC:
 /* 803361E0 00331E80  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803361E4 00331E84  7C 08 03 A6 */	mtlr r0
 /* 803361E8 00331E88  38 21 00 10 */	addi r1, r1, 0x10
-/* 803361EC 00331E8C  4E 80 00 20 */	blr 
+/* 803361EC 00331E8C  4E 80 00 20 */	blr
 
 .global "ARCOpenDir"
 "ARCOpenDir":
@@ -340,7 +340,7 @@ lbl_80336254:
 /* 8033625C 00331EFC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80336260 00331F00  7C 08 03 A6 */	mtlr r0
 /* 80336264 00331F04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80336268 00331F08  4E 80 00 20 */	blr 
+/* 80336268 00331F08  4E 80 00 20 */	blr
 
 .global "ARCReadDir"
 "ARCReadDir":
@@ -358,7 +358,7 @@ lbl_80336280:
 /* 80336294 00331F34  41 81 00 0C */	bgt lbl_803362A0
 lbl_80336298:
 /* 80336298 00331F38  38 60 00 00 */	li r3, 0
-/* 8033629C 00331F3C  4E 80 00 20 */	blr 
+/* 8033629C 00331F3C  4E 80 00 20 */	blr
 lbl_803362A0:
 /* 803362A0 00331F40  91 24 00 00 */	stw r9, 0(r4)
 /* 803362A4 00331F44  90 E4 00 04 */	stw r7, 4(r4)
@@ -395,19 +395,26 @@ lbl_80336314:
 lbl_80336318:
 /* 80336318 00331FB8  90 03 00 08 */	stw r0, 8(r3)
 /* 8033631C 00331FBC  38 60 00 01 */	li r3, 1
-/* 80336320 00331FC0  4E 80 00 20 */	blr 
+/* 80336320 00331FC0  4E 80 00 20 */	blr
 
 .global "ARCCloseDir"
 "ARCCloseDir":
 /* 80336324 00331FC4  38 60 00 01 */	li r3, 1
-/* 80336328 00331FC8  4E 80 00 20 */	blr 
+/* 80336328 00331FC8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8045C988
 lbl_8045C988:
-	.incbin "baserom.dol", 0x458A88, 0x28
+	# ROM: 0x458A88
+	.asciz "ARCInitHandle: bad archive format"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7238
 lbl_805D7238:
-	.incbin "baserom.dol", 0x486DB8, 0x8
+	# ROM: 0x486DB8
+	.asciz "arc.c"
+	.byte 0x00, 0x00
+

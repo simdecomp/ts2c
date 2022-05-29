@@ -93,7 +93,7 @@ lbl_80355218:
 /* 80355220 00350EC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80355224 00350EC4  7C 08 03 A6 */	mtlr r0
 /* 80355228 00350EC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035522C 00350ECC  4E 80 00 20 */	blr 
+/* 8035522C 00350ECC  4E 80 00 20 */	blr
 
 .global "hidh_conn_disconnect"
 "hidh_conn_disconnect":
@@ -142,7 +142,7 @@ lbl_803552BC:
 /* 803552C4 00350F64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803552C8 00350F68  7C 08 03 A6 */	mtlr r0
 /* 803552CC 00350F6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803552D0 00350F70  4E 80 00 20 */	blr 
+/* 803552D0 00350F70  4E 80 00 20 */	blr
 
 .global "hidh_sec_check_complete_term"
 "hidh_sec_check_complete_term":
@@ -227,7 +227,7 @@ lbl_803553EC:
 /* 803553F4 00351094  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803553F8 00351098  7C 08 03 A6 */	mtlr r0
 /* 803553FC 0035109C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80355400 003510A0  4E 80 00 20 */	blr 
+/* 80355400 003510A0  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_connect_ind"
 "hidh_l2cif_connect_ind":
@@ -394,7 +394,7 @@ lbl_80355644:
 /* 8035564C 003512EC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80355650 003512F0  7C 08 03 A6 */	mtlr r0
 /* 80355654 003512F4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80355658 003512F8  4E 80 00 20 */	blr 
+/* 80355658 003512F8  4E 80 00 20 */	blr
 
 .global "hidh_proc_repage_timeout"
 "hidh_proc_repage_timeout":
@@ -453,7 +453,7 @@ lbl_803556F4:
 /* 80355728 003513C8  7C 07 00 16 */	mulhwu r0, r7, r0
 /* 8035572C 003513CC  54 03 E6 3E */	rlwinm r3, r0, 0x1c, 0x18, 0x1f
 /* 80355730 003513D0  7D 89 03 A6 */	mtctr r12
-/* 80355734 003513D4  4E 80 04 21 */	bctrl 
+/* 80355734 003513D4  4E 80 04 21 */	bctrl
 /* 80355738 003513D8  48 00 00 08 */	b lbl_80355740
 lbl_8035573C:
 /* 8035573C 003513DC  9B DC 00 10 */	stb r30, 0x10(r28)
@@ -475,7 +475,7 @@ lbl_80355740:
 /* 80355778 00351418  7C A7 02 14 */	add r5, r7, r0
 /* 8035577C 0035141C  88 A5 00 0C */	lbz r5, 0xc(r5)
 /* 80355780 00351420  7D 89 03 A6 */	mtctr r12
-/* 80355784 00351424  4E 80 04 21 */	bctrl 
+/* 80355784 00351424  4E 80 04 21 */	bctrl
 /* 80355788 00351428  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035578C 0035142C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80355790 00351430  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -483,7 +483,7 @@ lbl_80355740:
 /* 80355798 00351438  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035579C 0035143C  7C 08 03 A6 */	mtlr r0
 /* 803557A0 00351440  38 21 00 20 */	addi r1, r1, 0x20
-/* 803557A4 00351444  4E 80 00 20 */	blr 
+/* 803557A4 00351444  4E 80 00 20 */	blr
 
 .global "hidh_sec_check_complete_orig"
 "hidh_sec_check_complete_orig":
@@ -580,7 +580,7 @@ lbl_803558E0:
 /* 803558F4 00351594  38 A0 02 00 */	li r5, 0x200
 /* 803558F8 00351598  38 C0 00 00 */	li r6, 0
 /* 803558FC 0035159C  7D 89 03 A6 */	mtctr r12
-/* 80355900 003515A0  4E 80 04 21 */	bctrl 
+/* 80355900 003515A0  4E 80 04 21 */	bctrl
 /* 80355904 003515A4  48 00 00 A0 */	b lbl_803559A4
 lbl_80355908:
 /* 80355908 003515A8  38 00 00 02 */	li r0, 2
@@ -633,7 +633,7 @@ lbl_803559A4:
 /* 803559AC 0035164C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803559B0 00351650  7C 08 03 A6 */	mtlr r0
 /* 803559B4 00351654  38 21 00 20 */	addi r1, r1, 0x20
-/* 803559B8 00351658  4E 80 00 20 */	blr 
+/* 803559B8 00351658  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_connect_cfm"
 "hidh_l2cif_connect_cfm":
@@ -821,7 +821,7 @@ lbl_80355C38:
 /* 80355C4C 003518EC  38 80 00 01 */	li r4, 1
 /* 80355C50 003518F0  38 C0 00 00 */	li r6, 0
 /* 80355C54 003518F4  7D 89 03 A6 */	mtctr r12
-/* 80355C58 003518F8  4E 80 04 21 */	bctrl 
+/* 80355C58 003518F8  4E 80 04 21 */	bctrl
 /* 80355C5C 003518FC  48 00 00 88 */	b lbl_80355CE4
 lbl_80355C60:
 /* 80355C60 00351900  7C 03 30 40 */	cmplw r3, r6
@@ -867,7 +867,7 @@ lbl_80355CE4:
 /* 80355CF4 00351994  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80355CF8 00351998  7C 08 03 A6 */	mtlr r0
 /* 80355CFC 0035199C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80355D00 003519A0  4E 80 00 20 */	blr 
+/* 80355D00 003519A0  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_config_ind"
 "hidh_l2cif_config_ind":
@@ -1046,7 +1046,7 @@ lbl_80355F34:
 /* 80355F7C 00351C1C  81 86 03 40 */	lwz r12, 0x340(r6)
 /* 80355F80 00351C20  38 C0 00 00 */	li r6, 0
 /* 80355F84 00351C24  7D 89 03 A6 */	mtctr r12
-/* 80355F88 00351C28  4E 80 04 21 */	bctrl 
+/* 80355F88 00351C28  4E 80 04 21 */	bctrl
 lbl_80355F8C:
 /* 80355F8C 00351C2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80355F90 00351C30  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1055,7 +1055,7 @@ lbl_80355F8C:
 /* 80355F9C 00351C3C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80355FA0 00351C40  7C 08 03 A6 */	mtlr r0
 /* 80355FA4 00351C44  38 21 00 20 */	addi r1, r1, 0x20
-/* 80355FA8 00351C48  4E 80 00 20 */	blr 
+/* 80355FA8 00351C48  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_config_cfm"
 "hidh_l2cif_config_cfm":
@@ -1228,7 +1228,7 @@ lbl_803561F4:
 /* 8035620C 00351EAC  38 80 00 01 */	li r4, 1
 /* 80356210 00351EB0  38 C0 00 00 */	li r6, 0
 /* 80356214 00351EB4  7D 89 03 A6 */	mtctr r12
-/* 80356218 00351EB8  4E 80 04 21 */	bctrl 
+/* 80356218 00351EB8  4E 80 04 21 */	bctrl
 /* 8035621C 00351EBC  48 00 00 84 */	b lbl_803562A0
 lbl_80356220:
 /* 80356220 00351EC0  A0 1D 00 04 */	lhz r0, 4(r29)
@@ -1264,14 +1264,14 @@ lbl_80356248:
 /* 80356290 00351F30  81 86 03 40 */	lwz r12, 0x340(r6)
 /* 80356294 00351F34  38 C0 00 00 */	li r6, 0
 /* 80356298 00351F38  7D 89 03 A6 */	mtctr r12
-/* 8035629C 00351F3C  4E 80 04 21 */	bctrl 
+/* 8035629C 00351F3C  4E 80 04 21 */	bctrl
 lbl_803562A0:
 /* 803562A0 00351F40  39 61 00 20 */	addi r11, r1, 0x20
 /* 803562A4 00351F44  48 0B 91 1D */	bl "_restgpr_27"
 /* 803562A8 00351F48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803562AC 00351F4C  7C 08 03 A6 */	mtlr r0
 /* 803562B0 00351F50  38 21 00 20 */	addi r1, r1, 0x20
-/* 803562B4 00351F54  4E 80 00 20 */	blr 
+/* 803562B4 00351F54  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_disconnect_ind"
 "hidh_l2cif_disconnect_ind":
@@ -1460,14 +1460,14 @@ lbl_80356544:
 /* 80356554 003521F4  81 84 03 40 */	lwz r12, 0x340(r4)
 /* 80356558 003521F8  38 80 00 01 */	li r4, 1
 /* 8035655C 003521FC  7D 89 03 A6 */	mtctr r12
-/* 80356560 00352200  4E 80 04 21 */	bctrl 
+/* 80356560 00352200  4E 80 04 21 */	bctrl
 lbl_80356564:
 /* 80356564 00352204  39 61 00 20 */	addi r11, r1, 0x20
 /* 80356568 00352208  48 0B 8E 59 */	bl "_restgpr_27"
 /* 8035656C 0035220C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80356570 00352210  7C 08 03 A6 */	mtlr r0
 /* 80356574 00352214  38 21 00 20 */	addi r1, r1, 0x20
-/* 80356578 00352218  4E 80 00 20 */	blr 
+/* 80356578 00352218  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_disconnect_cfm"
 "hidh_l2cif_disconnect_cfm":
@@ -1620,7 +1620,7 @@ lbl_80356758:
 /* 80356798 00352438  81 87 03 40 */	lwz r12, 0x340(r7)
 /* 8035679C 0035243C  A0 BE 00 0A */	lhz r5, 0xa(r30)
 /* 803567A0 00352440  7D 89 03 A6 */	mtctr r12
-/* 803567A4 00352444  4E 80 04 21 */	bctrl 
+/* 803567A4 00352444  4E 80 04 21 */	bctrl
 lbl_803567A8:
 /* 803567A8 00352448  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803567AC 0035244C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1628,7 +1628,7 @@ lbl_803567A8:
 /* 803567B4 00352454  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803567B8 00352458  7C 08 03 A6 */	mtlr r0
 /* 803567BC 0035245C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803567C0 00352460  4E 80 00 20 */	blr 
+/* 803567C0 00352460  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_cong_ind"
 "hidh_l2cif_cong_ind":
@@ -1768,7 +1768,7 @@ lbl_803569A4:
 /* 803569AC 0035264C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803569B0 00352650  7C 08 03 A6 */	mtlr r0
 /* 803569B4 00352654  38 21 00 10 */	addi r1, r1, 0x10
-/* 803569B8 00352658  4E 80 00 20 */	blr 
+/* 803569B8 00352658  4E 80 00 20 */	blr
 
 .global "hidh_l2cif_data_ind"
 "hidh_l2cif_data_ind":
@@ -1917,7 +1917,7 @@ lbl_80356BB4:
 /* 80356BC8 00352868  38 80 00 07 */	li r4, 7
 /* 80356BCC 0035286C  38 C0 00 00 */	li r6, 0
 /* 80356BD0 00352870  7D 89 03 A6 */	mtctr r12
-/* 80356BD4 00352874  4E 80 04 21 */	bctrl 
+/* 80356BD4 00352874  4E 80 04 21 */	bctrl
 /* 80356BD8 00352878  7F C3 F3 78 */	mr r3, r30
 /* 80356BDC 0035287C  4B FE 4A 41 */	bl "GKI_freebuf"
 /* 80356BE0 00352880  48 00 01 58 */	b lbl_80356D38
@@ -1971,7 +1971,7 @@ lbl_80356C70:
 /* 80356C84 00352924  38 A0 00 00 */	li r5, 0
 /* 80356C88 00352928  38 C0 00 00 */	li r6, 0
 /* 80356C8C 0035292C  7D 89 03 A6 */	mtctr r12
-/* 80356C90 00352930  4E 80 04 21 */	bctrl 
+/* 80356C90 00352930  4E 80 04 21 */	bctrl
 lbl_80356C94:
 /* 80356C94 00352934  7F C3 F3 78 */	mr r3, r30
 /* 80356C98 00352938  4B FE 49 85 */	bl "GKI_freebuf"
@@ -1994,7 +1994,7 @@ lbl_80356CC8:
 /* 80356CD4 00352974  81 86 03 40 */	lwz r12, 0x340(r6)
 /* 80356CD8 00352978  7F C6 F3 78 */	mr r6, r30
 /* 80356CDC 0035297C  7D 89 03 A6 */	mtctr r12
-/* 80356CE0 00352980  4E 80 04 21 */	bctrl 
+/* 80356CE0 00352980  4E 80 04 21 */	bctrl
 /* 80356CE4 00352984  48 00 00 54 */	b lbl_80356D38
 lbl_80356CE8:
 /* 80356CE8 00352988  57 E3 06 3E */	clrlwi r3, r31, 0x18
@@ -2014,7 +2014,7 @@ lbl_80356D10:
 /* 80356D1C 003529BC  81 86 03 40 */	lwz r12, 0x340(r6)
 /* 80356D20 003529C0  7F C6 F3 78 */	mr r6, r30
 /* 80356D24 003529C4  7D 89 03 A6 */	mtctr r12
-/* 80356D28 003529C8  4E 80 04 21 */	bctrl 
+/* 80356D28 003529C8  4E 80 04 21 */	bctrl
 /* 80356D2C 003529CC  48 00 00 0C */	b lbl_80356D38
 lbl_80356D30:
 /* 80356D30 003529D0  7F C3 F3 78 */	mr r3, r30
@@ -2026,7 +2026,7 @@ lbl_80356D38:
 /* 80356D44 003529E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80356D48 003529E8  7C 08 03 A6 */	mtlr r0
 /* 80356D4C 003529EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80356D50 003529F0  4E 80 00 20 */	blr 
+/* 80356D50 003529F0  4E 80 00 20 */	blr
 
 .global "hidh_conn_snd_data"
 "hidh_conn_snd_data":
@@ -2221,7 +2221,7 @@ lbl_80356FD8:
 /* 80356FE0 00352C80  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80356FE4 00352C84  7C 08 03 A6 */	mtlr r0
 /* 80356FE8 00352C88  38 21 00 50 */	addi r1, r1, 0x50
-/* 80356FEC 00352C8C  4E 80 00 20 */	blr 
+/* 80356FEC 00352C8C  4E 80 00 20 */	blr
 
 .global "hidh_conn_initiate"
 "hidh_conn_initiate":
@@ -2279,7 +2279,7 @@ lbl_80357080:
 /* 803570B4 00352D54  7C 07 00 16 */	mulhwu r0, r7, r0
 /* 803570B8 00352D58  54 03 E6 3E */	rlwinm r3, r0, 0x1c, 0x18, 0x1f
 /* 803570BC 00352D5C  7D 89 03 A6 */	mtctr r12
-/* 803570C0 00352D60  4E 80 04 21 */	bctrl 
+/* 803570C0 00352D60  4E 80 04 21 */	bctrl
 /* 803570C4 00352D64  48 00 00 08 */	b lbl_803570CC
 lbl_803570C8:
 /* 803570C8 00352D68  9B FD 00 10 */	stb r31, 0x10(r29)
@@ -2292,7 +2292,7 @@ lbl_803570D0:
 /* 803570DC 00352D7C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803570E0 00352D80  7C 08 03 A6 */	mtlr r0
 /* 803570E4 00352D84  38 21 00 20 */	addi r1, r1, 0x20
-/* 803570E8 00352D88  4E 80 00 20 */	blr 
+/* 803570E8 00352D88  4E 80 00 20 */	blr
 
 .global "hidh_conn_dereg"
 "hidh_conn_dereg":
@@ -2306,50 +2306,115 @@ lbl_803570D0:
 /* 80357108 00352DA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035710C 00352DAC  7C 08 03 A6 */	mtlr r0
 /* 80357110 00352DB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80357114 00352DB4  4E 80 00 20 */	blr 
+/* 80357114 00352DB4  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "hst_reg_info"
 "hst_reg_info":
-	.incbin "baserom.dol", 0x418BB0, 0x28
+	# ROM: 0x418BB0
+	.4byte "hidh_l2cif_connect_ind" ;# ptr (0x80355404)
+	.4byte "hidh_l2cif_connect_cfm" ;# ptr (0x803559BC)
+	.4byte 0x00000000
+	.4byte "hidh_l2cif_config_ind" ;# ptr (0x80355D04)
+	.4byte "hidh_l2cif_config_cfm" ;# ptr (0x80355FAC)
+	.4byte "hidh_l2cif_disconnect_ind" ;# ptr (0x803562B8)
+	.4byte "hidh_l2cif_disconnect_cfm" ;# ptr (0x8035657C)
+	.4byte 0x00000000
+	.4byte "hidh_l2cif_data_ind" ;# ptr (0x803569BC)
+	.4byte "hidh_l2cif_cong_ind" ;# ptr (0x803567C4)
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80463360
 lbl_80463360:
-	.incbin "baserom.dol", 0x45F460, 0x20
+	# ROM: 0x45F460
+	.asciz "HID Control Registration failed"
+
 .global lbl_80463380
 lbl_80463380:
-	.incbin "baserom.dol", 0x45F480, 0x24
+	# ROM: 0x45F480
+	.asciz "HID Interrupt Registration failed"
+	.byte 0x00, 0x00
+
 .global lbl_804633A4
 lbl_804633A4:
-	.incbin "baserom.dol", 0x45F4A4, 0x120
+	# ROM: 0x45F4A4
+	.asciz "HID - disconnect"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HID - Rcvd L2CAP conn ind, PSM: 0x%04x  CID 0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HID - Rcvd INTR L2CAP conn ind, but no CTL channel"
+	.byte 0x00
+	.asciz "HID - Rcvd INTR L2CAP conn ind, wrong state: %d"
+	.asciz "HID - Rcvd CTL L2CAP conn ind, wrong state: %d"
+	.byte 0x00
+	.asciz "HID - Rcvd L2CAP conn ind, sent config req, PSM: 0x%04x  CID 0x%x"
+	.byte 0x00, 0x00
+
 .global lbl_804634C4
 lbl_804634C4:
-	.incbin "baserom.dol", 0x45F5C4, 0xB8
+	# ROM: 0x45F5C4
+	.asciz "HID - Originate failed"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "HID - Originator security pass."
+	.asciz "HID - INTR Originate failed"
+	.asciz "HID - Rcvd unexpected conn cnf, CID 0x%x "
+	.byte 0x00, 0x00
+	.asciz "HID - got CTRL conn cnf, sent cfg req, CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046357C
 lbl_8046357C:
-	.incbin "baserom.dol", 0x45F67C, 0x2C
+	# ROM: 0x45F67C
+	.asciz "HID - Rcvd L2CAP cfg ind, unknown CID: 0x%x"
+
 .global lbl_804635A8
 lbl_804635A8:
-	.incbin "baserom.dol", 0x45F6A8, 0x58
+	# ROM: 0x45F6A8
+	.asciz "HID - Rcvd cfg ind, sent cfg cfm, CID: 0x%x"
+	.asciz "HID - Rcvd cfg cfm, CID: 0x%x  Result: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80463600
 lbl_80463600:
-	.incbin "baserom.dol", 0x45F700, 0x2C
+	# ROM: 0x45F700
+	.asciz "HID - Rcvd L2CAP disc, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046362C
 lbl_8046362C:
-	.incbin "baserom.dol", 0x45F72C, 0x24
+	# ROM: 0x45F72C
+	.asciz "HID - Rcvd L2CAP disc, CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463650
 lbl_80463650:
-	.incbin "baserom.dol", 0x45F750, 0x30
+	# ROM: 0x45F750
+	.asciz "HID - Rcvd L2CAP disc cfm, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463680
 lbl_80463680:
-	.incbin "baserom.dol", 0x45F780, 0x28
+	# ROM: 0x45F780
+	.asciz "HID - Rcvd L2CAP disc cfm, CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804636A8
 lbl_804636A8:
-	.incbin "baserom.dol", 0x45F7A8, 0x38
+	# ROM: 0x45F7A8
+	.asciz "HID - Rcvd L2CAP congestion status, unknown CID: 0x%x"
+	.byte 0x00, 0x00
+
 .global lbl_804636E0
 lbl_804636E0:
-	.incbin "baserom.dol", 0x45F7E0, 0x38
+	# ROM: 0x45F7E0
+	.asciz "HID - Rcvd L2CAP congestion status, CID: 0x%x  Cong: %d"
+
 .global lbl_80463718
 lbl_80463718:
-	.incbin "baserom.dol", 0x45F818, 0x30
+	# ROM: 0x45F818
+	.asciz "HID - Rcvd L2CAP data, unknown CID: 0x%x"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+

@@ -10,7 +10,7 @@
 /* 80375C3C 003718DC  38 A5 7A D0 */	addi r5, r5, lbl_80467AD0@l
 /* 80375C40 003718E0  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80375C44 003718E4  7C A9 03 A6 */	mtctr r5
-/* 80375C48 003718E8  4E 80 04 20 */	bctr 
+/* 80375C48 003718E8  4E 80 04 20 */	bctr
 /* 80375C4C 003718EC  80 62 A5 98 */	lwz r3, "__GXData"-_SDA2_BASE_(r2)
 /* 80375C50 003718F0  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80375C54 003718F4  50 80 07 FE */	rlwimi r0, r4, 0, 0x1f, 0x1f
@@ -161,7 +161,7 @@ lbl_80375E80:
 /* 80375E80 00371B20  80 04 05 FC */	lwz r0, 0x5fc(r4)
 /* 80375E84 00371B24  60 00 00 08 */	ori r0, r0, 8
 /* 80375E88 00371B28  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 80375E8C 00371B2C  4E 80 00 20 */	blr 
+/* 80375E8C 00371B2C  4E 80 00 20 */	blr
 
 .global "GXSetVtxDescv"
 "GXSetVtxDescv":
@@ -179,7 +179,7 @@ lbl_80375EA4:
 /* 80375EB8 00371B58  54 C6 10 3A */	slwi r6, r6, 2
 /* 80375EBC 00371B5C  7D 29 30 2E */	lwzx r9, r9, r6
 /* 80375EC0 00371B60  7D 29 03 A6 */	mtctr r9
-/* 80375EC4 00371B64  4E 80 04 20 */	bctr 
+/* 80375EC4 00371B64  4E 80 04 20 */	bctr
 /* 80375EC8 00371B68  80 C5 00 14 */	lwz r6, 0x14(r5)
 /* 80375ECC 00371B6C  50 06 07 FE */	rlwimi r6, r0, 0, 0x1f, 0x1f
 /* 80375ED0 00371B70  90 C5 00 14 */	stw r6, 0x14(r5)
@@ -303,7 +303,7 @@ lbl_8037608C:
 /* 8037608C 00371D2C  80 05 05 FC */	lwz r0, 0x5fc(r5)
 /* 80376090 00371D30  60 00 00 08 */	ori r0, r0, 8
 /* 80376094 00371D34  90 05 05 FC */	stw r0, 0x5fc(r5)
-/* 80376098 00371D38  4E 80 00 20 */	blr 
+/* 80376098 00371D38  4E 80 00 20 */	blr
 
 .global "__GXSetVCD"
 "__GXSetVCD":
@@ -352,7 +352,7 @@ lbl_803760F4:
 /* 8037613C 00371DDC  38 00 00 01 */	li r0, 1
 /* 80376140 00371DE0  90 86 80 00 */	stw r4, -0x8000(r6)
 /* 80376144 00371DE4  B0 03 00 02 */	sth r0, 2(r3)
-/* 80376148 00371DE8  4E 80 00 20 */	blr 
+/* 80376148 00371DE8  4E 80 00 20 */	blr
 
 .global "__GXCalculateVLim"
 "__GXCalculateVLim":
@@ -432,7 +432,7 @@ lbl_803761E0:
 lbl_8037626C:
 /* 8037626C 00371F0C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80376270 00371F10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80376274 00371F14  4E 80 00 20 */	blr 
+/* 80376274 00371F14  4E 80 00 20 */	blr
 
 .global "GXGetVtxDesc"
 "GXGetVtxDesc":
@@ -443,7 +443,7 @@ lbl_8037626C:
 /* 80376288 00371F28  38 A5 7B A0 */	addi r5, r5, lbl_80467BA0@l
 /* 8037628C 00371F2C  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80376290 00371F30  7C A9 03 A6 */	mtctr r5
-/* 80376294 00371F34  4E 80 04 20 */	bctr 
+/* 80376294 00371F34  4E 80 04 20 */	bctr
 /* 80376298 00371F38  80 62 A5 98 */	lwz r3, "__GXData"-_SDA2_BASE_(r2)
 /* 8037629C 00371F3C  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 803762A0 00371F40  54 00 07 FE */	clrlwi r0, r0, 0x1f
@@ -548,7 +548,7 @@ lbl_80376420:
 /* 80376420 003720C0  38 00 00 00 */	li r0, 0
 lbl_80376424:
 /* 80376424 003720C4  90 04 00 00 */	stw r0, 0(r4)
-/* 80376428 003720C8  4E 80 00 20 */	blr 
+/* 80376428 003720C8  4E 80 00 20 */	blr
 
 .global "GXGetVtxDescv"
 "GXGetVtxDescv":
@@ -588,7 +588,7 @@ lbl_80376450:
 /* 803764AC 0037214C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803764B0 00372150  7C 08 03 A6 */	mtlr r0
 /* 803764B4 00372154  38 21 00 20 */	addi r1, r1, 0x20
-/* 803764B8 00372158  4E 80 00 20 */	blr 
+/* 803764B8 00372158  4E 80 00 20 */	blr
 
 .global "GXClearVtxDesc"
 "GXClearVtxDesc":
@@ -604,7 +604,7 @@ lbl_80376450:
 /* 803764E0 00372180  80 05 05 FC */	lwz r0, 0x5fc(r5)
 /* 803764E4 00372184  60 00 00 08 */	ori r0, r0, 8
 /* 803764E8 00372188  90 05 05 FC */	stw r0, 0x5fc(r5)
-/* 803764EC 0037218C  4E 80 00 20 */	blr 
+/* 803764EC 0037218C  4E 80 00 20 */	blr
 
 .global "GXSetVtxAttrFmt"
 "GXSetVtxAttrFmt":
@@ -619,7 +619,7 @@ lbl_80376450:
 /* 80376510 003721B0  38 84 7C 08 */	addi r4, r4, lbl_80467C08@l
 /* 80376514 003721B4  7C 84 00 2E */	lwzx r4, r4, r0
 /* 80376518 003721B8  7C 89 03 A6 */	mtctr r4
-/* 8037651C 003721BC  4E 80 04 20 */	bctr 
+/* 8037651C 003721BC  4E 80 04 20 */	bctr
 /* 80376520 003721C0  80 08 00 1C */	lwz r0, 0x1c(r8)
 /* 80376524 003721C4  50 A0 07 FE */	rlwimi r0, r5, 0, 0x1f, 0x1f
 /* 80376528 003721C8  50 C0 0F 3C */	rlwimi r0, r6, 1, 0x1c, 0x1e
@@ -713,7 +713,7 @@ lbl_80376660:
 /* 80376680 00372320  88 65 05 FB */	lbz r3, 0x5fb(r5)
 /* 80376684 00372324  7C 60 03 78 */	or r0, r3, r0
 /* 80376688 00372328  98 05 05 FB */	stb r0, 0x5fb(r5)
-/* 8037668C 0037232C  4E 80 00 20 */	blr 
+/* 8037668C 0037232C  4E 80 00 20 */	blr
 
 .global "GXSetVtxAttrFmtv"
 "GXSetVtxAttrFmtv":
@@ -734,7 +734,7 @@ lbl_803766A4:
 /* 803766C4 00372364  54 00 10 3A */	slwi r0, r0, 2
 /* 803766C8 00372368  7C C6 00 2E */	lwzx r6, r6, r0
 /* 803766CC 0037236C  7C C9 03 A6 */	mtctr r6
-/* 803766D0 00372370  4E 80 04 20 */	bctr 
+/* 803766D0 00372370  4E 80 04 20 */	bctr
 /* 803766D4 00372374  80 08 00 1C */	lwz r0, 0x1c(r8)
 /* 803766D8 00372378  51 20 07 FE */	rlwimi r0, r9, 0, 0x1f, 0x1f
 /* 803766DC 0037237C  51 40 0F 3C */	rlwimi r0, r10, 1, 0x1c, 0x1e
@@ -833,7 +833,7 @@ lbl_80376818:
 /* 80376844 003724E4  88 65 05 FB */	lbz r3, 0x5fb(r5)
 /* 80376848 003724E8  7C 60 03 78 */	or r0, r3, r0
 /* 8037684C 003724EC  98 05 05 FB */	stb r0, 0x5fb(r5)
-/* 80376850 003724F0  4E 80 00 20 */	blr 
+/* 80376850 003724F0  4E 80 00 20 */	blr
 
 .global "__GXSetVAT"
 "__GXSetVAT":
@@ -870,7 +870,7 @@ lbl_803768B0:
 /* 803768C4 00372564  3C 60 CC 01 */	lis r3, 0xCC008000@ha
 /* 803768C8 00372568  98 03 80 00 */	stb r0, 0xCC008000@l(r3)
 /* 803768CC 0037256C  98 08 05 FB */	stb r0, 0x5fb(r8)
-/* 803768D0 00372570  4E 80 00 20 */	blr 
+/* 803768D0 00372570  4E 80 00 20 */	blr
 
 .global "GXGetVtxAttrFmt"
 "GXGetVtxAttrFmt":
@@ -885,7 +885,7 @@ lbl_803768B0:
 /* 803768F4 00372594  38 84 7C 90 */	addi r4, r4, lbl_80467C90@l
 /* 803768F8 00372598  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803768FC 0037259C  7C 89 03 A6 */	mtctr r4
-/* 80376900 003725A0  4E 80 04 20 */	bctr 
+/* 80376900 003725A0  4E 80 04 20 */	bctr
 /* 80376904 003725A4  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 80376908 003725A8  54 00 07 FE */	clrlwi r0, r0, 0x1f
 /* 8037690C 003725AC  90 05 00 00 */	stw r0, 0(r5)
@@ -895,7 +895,7 @@ lbl_803768B0:
 /* 8037691C 003725BC  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 80376920 003725C0  54 00 E6 FE */	rlwinm r0, r0, 0x1c, 0x1b, 0x1f
 /* 80376924 003725C4  98 07 00 00 */	stb r0, 0(r7)
-/* 80376928 003725C8  4E 80 00 20 */	blr 
+/* 80376928 003725C8  4E 80 00 20 */	blr
 /* 8037692C 003725CC  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 80376930 003725D0  54 00 BF FE */	rlwinm r0, r0, 0x17, 0x1f, 0x1f
 /* 80376934 003725D4  2C 00 00 01 */	cmpwi r0, 1
@@ -930,7 +930,7 @@ lbl_80376994:
 /* 80376994 00372634  38 00 00 00 */	li r0, 0
 lbl_80376998:
 /* 80376998 00372638  98 07 00 00 */	stb r0, 0(r7)
-/* 8037699C 0037263C  4E 80 00 20 */	blr 
+/* 8037699C 0037263C  4E 80 00 20 */	blr
 /* 803769A0 00372640  80 83 00 1C */	lwz r4, 0x1c(r3)
 /* 803769A4 00372644  38 00 00 00 */	li r0, 0
 /* 803769A8 00372648  54 84 9F FE */	rlwinm r4, r4, 0x13, 0x1f, 0x1f
@@ -939,7 +939,7 @@ lbl_80376998:
 /* 803769B4 00372654  54 63 97 7E */	rlwinm r3, r3, 0x12, 0x1d, 0x1f
 /* 803769B8 00372658  90 66 00 00 */	stw r3, 0(r6)
 /* 803769BC 0037265C  98 07 00 00 */	stb r0, 0(r7)
-/* 803769C0 00372660  4E 80 00 20 */	blr 
+/* 803769C0 00372660  4E 80 00 20 */	blr
 /* 803769C4 00372664  80 83 00 1C */	lwz r4, 0x1c(r3)
 /* 803769C8 00372668  38 00 00 00 */	li r0, 0
 /* 803769CC 0037266C  54 84 7F FE */	rlwinm r4, r4, 0xf, 0x1f, 0x1f
@@ -948,7 +948,7 @@ lbl_80376998:
 /* 803769D8 00372678  54 63 77 7E */	rlwinm r3, r3, 0xe, 0x1d, 0x1f
 /* 803769DC 0037267C  90 66 00 00 */	stw r3, 0(r6)
 /* 803769E0 00372680  98 07 00 00 */	stb r0, 0(r7)
-/* 803769E4 00372684  4E 80 00 20 */	blr 
+/* 803769E4 00372684  4E 80 00 20 */	blr
 /* 803769E8 00372688  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 803769EC 0037268C  54 00 5F FE */	rlwinm r0, r0, 0xb, 0x1f, 0x1f
 /* 803769F0 00372690  90 05 00 00 */	stw r0, 0(r5)
@@ -958,7 +958,7 @@ lbl_80376998:
 /* 80376A00 003726A0  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 80376A04 003726A4  54 00 3E FE */	rlwinm r0, r0, 7, 0x1b, 0x1f
 /* 80376A08 003726A8  98 07 00 00 */	stb r0, 0(r7)
-/* 80376A0C 003726AC  4E 80 00 20 */	blr 
+/* 80376A0C 003726AC  4E 80 00 20 */	blr
 /* 80376A10 003726B0  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A14 003726B4  54 00 07 FE */	clrlwi r0, r0, 0x1f
 /* 80376A18 003726B8  90 05 00 00 */	stw r0, 0(r5)
@@ -968,7 +968,7 @@ lbl_80376998:
 /* 80376A28 003726C8  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A2C 003726CC  54 00 E6 FE */	rlwinm r0, r0, 0x1c, 0x1b, 0x1f
 /* 80376A30 003726D0  98 07 00 00 */	stb r0, 0(r7)
-/* 80376A34 003726D4  4E 80 00 20 */	blr 
+/* 80376A34 003726D4  4E 80 00 20 */	blr
 /* 80376A38 003726D8  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A3C 003726DC  54 00 BF FE */	rlwinm r0, r0, 0x17, 0x1f, 0x1f
 /* 80376A40 003726E0  90 05 00 00 */	stw r0, 0(r5)
@@ -978,7 +978,7 @@ lbl_80376998:
 /* 80376A50 003726F0  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A54 003726F4  54 00 9E FE */	rlwinm r0, r0, 0x13, 0x1b, 0x1f
 /* 80376A58 003726F8  98 07 00 00 */	stb r0, 0(r7)
-/* 80376A5C 003726FC  4E 80 00 20 */	blr 
+/* 80376A5C 003726FC  4E 80 00 20 */	blr
 /* 80376A60 00372700  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A64 00372704  54 00 77 FE */	rlwinm r0, r0, 0xe, 0x1f, 0x1f
 /* 80376A68 00372708  90 05 00 00 */	stw r0, 0(r5)
@@ -988,7 +988,7 @@ lbl_80376998:
 /* 80376A78 00372718  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A7C 0037271C  54 00 56 FE */	rlwinm r0, r0, 0xa, 0x1b, 0x1f
 /* 80376A80 00372720  98 07 00 00 */	stb r0, 0(r7)
-/* 80376A84 00372724  4E 80 00 20 */	blr 
+/* 80376A84 00372724  4E 80 00 20 */	blr
 /* 80376A88 00372728  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80376A8C 0037272C  54 00 2F FE */	rlwinm r0, r0, 5, 0x1f, 0x1f
 /* 80376A90 00372730  90 05 00 00 */	stw r0, 0(r5)
@@ -998,7 +998,7 @@ lbl_80376998:
 /* 80376AA0 00372740  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376AA4 00372744  54 00 06 FE */	clrlwi r0, r0, 0x1b
 /* 80376AA8 00372748  98 07 00 00 */	stb r0, 0(r7)
-/* 80376AAC 0037274C  4E 80 00 20 */	blr 
+/* 80376AAC 0037274C  4E 80 00 20 */	blr
 /* 80376AB0 00372750  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376AB4 00372754  54 00 DF FE */	rlwinm r0, r0, 0x1b, 0x1f, 0x1f
 /* 80376AB8 00372758  90 05 00 00 */	stw r0, 0(r5)
@@ -1008,7 +1008,7 @@ lbl_80376998:
 /* 80376AC8 00372768  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376ACC 0037276C  54 00 BE FE */	rlwinm r0, r0, 0x17, 0x1b, 0x1f
 /* 80376AD0 00372770  98 07 00 00 */	stb r0, 0(r7)
-/* 80376AD4 00372774  4E 80 00 20 */	blr 
+/* 80376AD4 00372774  4E 80 00 20 */	blr
 /* 80376AD8 00372778  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376ADC 0037277C  54 00 97 FE */	rlwinm r0, r0, 0x12, 0x1f, 0x1f
 /* 80376AE0 00372780  90 05 00 00 */	stw r0, 0(r5)
@@ -1018,7 +1018,7 @@ lbl_80376998:
 /* 80376AF0 00372790  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376AF4 00372794  54 00 76 FE */	rlwinm r0, r0, 0xe, 0x1b, 0x1f
 /* 80376AF8 00372798  98 07 00 00 */	stb r0, 0(r7)
-/* 80376AFC 0037279C  4E 80 00 20 */	blr 
+/* 80376AFC 0037279C  4E 80 00 20 */	blr
 /* 80376B00 003727A0  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376B04 003727A4  54 00 4F FE */	rlwinm r0, r0, 9, 0x1f, 0x1f
 /* 80376B08 003727A8  90 05 00 00 */	stw r0, 0(r5)
@@ -1028,14 +1028,14 @@ lbl_80376998:
 /* 80376B18 003727B8  80 03 00 5C */	lwz r0, 0x5c(r3)
 /* 80376B1C 003727BC  54 00 2E FE */	srwi r0, r0, 0x1b
 /* 80376B20 003727C0  98 07 00 00 */	stb r0, 0(r7)
-/* 80376B24 003727C4  4E 80 00 20 */	blr 
+/* 80376B24 003727C4  4E 80 00 20 */	blr
 lbl_80376B28:
 /* 80376B28 003727C8  38 60 00 01 */	li r3, 1
 /* 80376B2C 003727CC  38 00 00 00 */	li r0, 0
 /* 80376B30 003727D0  90 65 00 00 */	stw r3, 0(r5)
 /* 80376B34 003727D4  90 06 00 00 */	stw r0, 0(r6)
 /* 80376B38 003727D8  98 07 00 00 */	stb r0, 0(r7)
-/* 80376B3C 003727DC  4E 80 00 20 */	blr 
+/* 80376B3C 003727DC  4E 80 00 20 */	blr
 
 .global "GXGetVtxAttrFmtv"
 "GXGetVtxAttrFmtv":
@@ -1068,7 +1068,7 @@ lbl_80376B64:
 /* 80376BA4 00372844  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80376BA8 00372848  7C 08 03 A6 */	mtlr r0
 /* 80376BAC 0037284C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80376BB0 00372850  4E 80 00 20 */	blr 
+/* 80376BB0 00372850  4E 80 00 20 */	blr
 
 .global "GXSetArray"
 "GXSetArray":
@@ -1088,14 +1088,14 @@ lbl_80376BC0:
 /* 80376BE4 00372884  98 E6 80 00 */	stb r7, -0x8000(r6)
 /* 80376BE8 00372888  98 06 80 00 */	stb r0, -0x8000(r6)
 /* 80376BEC 0037288C  90 A6 80 00 */	stw r5, -0x8000(r6)
-/* 80376BF0 00372890  4E 80 00 20 */	blr 
+/* 80376BF0 00372890  4E 80 00 20 */	blr
 
 .global "GXInvalidateVtxCache"
 "GXInvalidateVtxCache":
 /* 80376BF4 00372894  38 00 00 48 */	li r0, 0x48
 /* 80376BF8 00372898  3C 60 CC 01 */	lis r3, 0xCC008000@ha
 /* 80376BFC 0037289C  98 03 80 00 */	stb r0, 0xCC008000@l(r3)
-/* 80376C00 003728A0  4E 80 00 20 */	blr 
+/* 80376C00 003728A0  4E 80 00 20 */	blr
 
 .global "GXSetTexCoordGen2"
 "GXSetTexCoordGen2":
@@ -1109,7 +1109,7 @@ lbl_80376BC0:
 /* 80376C20 003728C0  39 29 7C F0 */	addi r9, r9, lbl_80467CF0@l
 /* 80376C24 003728C4  7D 29 00 2E */	lwzx r9, r9, r0
 /* 80376C28 003728C8  7D 29 03 A6 */	mtctr r9
-/* 80376C2C 003728CC  4E 80 04 20 */	bctr 
+/* 80376C2C 003728CC  4E 80 04 20 */	bctr
 /* 80376C30 003728D0  39 40 00 00 */	li r10, 0
 /* 80376C34 003728D4  39 80 00 01 */	li r12, 1
 /* 80376C38 003728D8  48 00 00 74 */	b lbl_80376CAC
@@ -1210,7 +1210,7 @@ lbl_80376D4C:
 /* 80376D90 00372A30  38 63 7C D4 */	addi r3, r3, lbl_80467CD4@l
 /* 80376D94 00372A34  7C 63 48 2E */	lwzx r3, r3, r9
 /* 80376D98 00372A38  7C 69 03 A6 */	mtctr r3
-/* 80376D9C 00372A3C  4E 80 04 20 */	bctr 
+/* 80376D9C 00372A3C  4E 80 04 20 */	bctr
 /* 80376DA0 00372A40  80 0A 00 80 */	lwz r0, 0x80(r10)
 /* 80376DA4 00372A44  50 C0 35 32 */	rlwimi r0, r6, 6, 0x14, 0x19
 /* 80376DA8 00372A48  90 0A 00 80 */	stw r0, 0x80(r10)
@@ -1247,7 +1247,7 @@ lbl_80376E1C:
 /* 80376E1C 00372ABC  80 0A 05 FC */	lwz r0, 0x5fc(r10)
 /* 80376E20 00372AC0  64 00 04 00 */	oris r0, r0, 0x400
 /* 80376E24 00372AC4  90 0A 05 FC */	stw r0, 0x5fc(r10)
-/* 80376E28 00372AC8  4E 80 00 20 */	blr 
+/* 80376E28 00372AC8  4E 80 00 20 */	blr
 
 .global "GXSetNumTexGens"
 "GXSetNumTexGens":
@@ -1259,35 +1259,206 @@ lbl_80376E1C:
 /* 80376E40 00372AE0  64 00 02 00 */	oris r0, r0, 0x200
 /* 80376E44 00372AE4  60 00 00 04 */	ori r0, r0, 4
 /* 80376E48 00372AE8  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 80376E4C 00372AEC  4E 80 00 20 */	blr 
+/* 80376E4C 00372AEC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80467AD0
 lbl_80467AD0:
-	.incbin "baserom.dol", 0x463BD0, 0xD0
+	# ROM: 0x463BD0
+	.4byte 0x80375C4C ;# ptr
+	.4byte 0x80375C60 ;# ptr
+	.4byte 0x80375C74 ;# ptr
+	.4byte 0x80375C88 ;# ptr
+	.4byte 0x80375C9C ;# ptr
+	.4byte 0x80375CB0 ;# ptr
+	.4byte 0x80375CC4 ;# ptr
+	.4byte 0x80375CD8 ;# ptr
+	.4byte 0x80375CEC ;# ptr
+	.4byte 0x80375D00 ;# ptr
+	.4byte 0x80375D14 ;# ptr
+	.4byte 0x80375D7C ;# ptr
+	.4byte 0x80375D90 ;# ptr
+	.4byte 0x80375DA4 ;# ptr
+	.4byte 0x80375DB8 ;# ptr
+	.4byte 0x80375DCC ;# ptr
+	.4byte 0x80375DE0 ;# ptr
+	.4byte 0x80375DF4 ;# ptr
+	.4byte 0x80375E08 ;# ptr
+	.4byte 0x80375E1C ;# ptr
+	.4byte 0x80375E30 ;# ptr
+	.4byte 0x80375E40 ;# ptr
+	.4byte 0x80375E40 ;# ptr
+	.4byte 0x80375E40 ;# ptr
+	.4byte 0x80375E40 ;# ptr
+	.4byte 0x80375D48 ;# ptr
+	.4byte 0x80375EC8 ;# ptr
+	.4byte 0x80375ED8 ;# ptr
+	.4byte 0x80375EE8 ;# ptr
+	.4byte 0x80375EF8 ;# ptr
+	.4byte 0x80375F08 ;# ptr
+	.4byte 0x80375F18 ;# ptr
+	.4byte 0x80375F28 ;# ptr
+	.4byte 0x80375F38 ;# ptr
+	.4byte 0x80375F48 ;# ptr
+	.4byte 0x80375F58 ;# ptr
+	.4byte 0x80375F68 ;# ptr
+	.4byte 0x80375FA8 ;# ptr
+	.4byte 0x80375FB8 ;# ptr
+	.4byte 0x80375FC8 ;# ptr
+	.4byte 0x80375FD8 ;# ptr
+	.4byte 0x80375FE8 ;# ptr
+	.4byte 0x80375FF8 ;# ptr
+	.4byte 0x80376008 ;# ptr
+	.4byte 0x80376018 ;# ptr
+	.4byte 0x80376028 ;# ptr
+	.4byte 0x80376038 ;# ptr
+	.4byte 0x80376044 ;# ptr
+	.4byte 0x80376044 ;# ptr
+	.4byte 0x80376044 ;# ptr
+	.4byte 0x80376044 ;# ptr
+	.4byte 0x80375F88 ;# ptr
+
 .global lbl_80467BA0
 lbl_80467BA0:
-	.incbin "baserom.dol", 0x463CA0, 0x68
+	# ROM: 0x463CA0
+	.4byte 0x80376298 ;# ptr
+	.4byte 0x803762A8 ;# ptr
+	.4byte 0x803762B8 ;# ptr
+	.4byte 0x803762C8 ;# ptr
+	.4byte 0x803762D8 ;# ptr
+	.4byte 0x803762E8 ;# ptr
+	.4byte 0x803762F8 ;# ptr
+	.4byte 0x80376308 ;# ptr
+	.4byte 0x80376318 ;# ptr
+	.4byte 0x80376328 ;# ptr
+	.4byte 0x80376338 ;# ptr
+	.4byte 0x80376380 ;# ptr
+	.4byte 0x80376390 ;# ptr
+	.4byte 0x803763A0 ;# ptr
+	.4byte 0x803763B0 ;# ptr
+	.4byte 0x803763C0 ;# ptr
+	.4byte 0x803763D0 ;# ptr
+	.4byte 0x803763E0 ;# ptr
+	.4byte 0x803763F0 ;# ptr
+	.4byte 0x80376400 ;# ptr
+	.4byte 0x80376410 ;# ptr
+	.4byte 0x80376420 ;# ptr
+	.4byte 0x80376420 ;# ptr
+	.4byte 0x80376420 ;# ptr
+	.4byte 0x80376420 ;# ptr
+	.4byte 0x8037635C ;# ptr
+
 .global lbl_80467C08
 lbl_80467C08:
-	.incbin "baserom.dol", 0x463D08, 0x88
+	# ROM: 0x463D08
+	.4byte 0x80376520 ;# ptr
+	.4byte 0x80376538 ;# ptr
+	.4byte 0x80376574 ;# ptr
+	.4byte 0x80376588 ;# ptr
+	.4byte 0x8037659C ;# ptr
+	.4byte 0x803765B4 ;# ptr
+	.4byte 0x803765CC ;# ptr
+	.4byte 0x803765E4 ;# ptr
+	.4byte 0x803765FC ;# ptr
+	.4byte 0x8037661C ;# ptr
+	.4byte 0x80376634 ;# ptr
+	.4byte 0x8037664C ;# ptr
+	.4byte 0x80376660 ;# ptr
+	.4byte 0x80376660 ;# ptr
+	.4byte 0x80376660 ;# ptr
+	.4byte 0x80376660 ;# ptr
+	.4byte 0x80376538 ;# ptr
+	.4byte 0x803766D4 ;# ptr
+	.4byte 0x803766EC ;# ptr
+	.4byte 0x80376728 ;# ptr
+	.4byte 0x8037673C ;# ptr
+	.4byte 0x80376750 ;# ptr
+	.4byte 0x80376768 ;# ptr
+	.4byte 0x80376780 ;# ptr
+	.4byte 0x80376798 ;# ptr
+	.4byte 0x803767B0 ;# ptr
+	.4byte 0x803767D0 ;# ptr
+	.4byte 0x803767E8 ;# ptr
+	.4byte 0x80376800 ;# ptr
+	.4byte 0x80376814 ;# ptr
+	.4byte 0x80376814 ;# ptr
+	.4byte 0x80376814 ;# ptr
+	.4byte 0x80376814 ;# ptr
+	.4byte 0x803766EC ;# ptr
+
 .global lbl_80467C90
 lbl_80467C90:
-	.incbin "baserom.dol", 0x463D90, 0x44
+	# ROM: 0x463D90
+	.4byte 0x80376904 ;# ptr
+	.4byte 0x8037692C ;# ptr
+	.4byte 0x803769A0 ;# ptr
+	.4byte 0x803769C4 ;# ptr
+	.4byte 0x803769E8 ;# ptr
+	.4byte 0x80376A10 ;# ptr
+	.4byte 0x80376A38 ;# ptr
+	.4byte 0x80376A60 ;# ptr
+	.4byte 0x80376A88 ;# ptr
+	.4byte 0x80376AB0 ;# ptr
+	.4byte 0x80376AD8 ;# ptr
+	.4byte 0x80376B00 ;# ptr
+	.4byte 0x80376B28 ;# ptr
+	.4byte 0x80376B28 ;# ptr
+	.4byte 0x80376B28 ;# ptr
+	.4byte 0x80376B28 ;# ptr
+	.4byte 0x8037692C ;# ptr
+
 .global lbl_80467CD4
 lbl_80467CD4:
-	.incbin "baserom.dol", 0x463DD4, 0x1C
+	# ROM: 0x463DD4
+	.4byte 0x80376DA0 ;# ptr
+	.4byte 0x80376DB0 ;# ptr
+	.4byte 0x80376DC0 ;# ptr
+	.4byte 0x80376DD0 ;# ptr
+	.4byte 0x80376DE0 ;# ptr
+	.4byte 0x80376DF0 ;# ptr
+	.4byte 0x80376E00 ;# ptr
+
 .global lbl_80467CF0
 lbl_80467CF0:
-	.incbin "baserom.dol", 0x463DF0, 0x58
+	# ROM: 0x463DF0
+	.4byte 0x80376C30 ;# ptr
+	.4byte 0x80376C3C ;# ptr
+	.4byte 0x80376C48 ;# ptr
+	.4byte 0x80376C54 ;# ptr
+	.4byte 0x80376C70 ;# ptr
+	.4byte 0x80376C78 ;# ptr
+	.4byte 0x80376C80 ;# ptr
+	.4byte 0x80376C88 ;# ptr
+	.4byte 0x80376C90 ;# ptr
+	.4byte 0x80376C98 ;# ptr
+	.4byte 0x80376CA0 ;# ptr
+	.4byte 0x80376CA8 ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376CAC ;# ptr
+	.4byte 0x80376C60 ;# ptr
+	.4byte 0x80376C68 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "tbl1$2354"
 "tbl1$2354":
-	.incbin "baserom.dol", 0x486EE8, 0x4
+	# ROM: 0x486EE8
+	.4byte 0x00040102
+
 .global "tbl2$2355"
 "tbl2$2355":
-	.incbin "baserom.dol", 0x486EEC, 0x4
+	# ROM: 0x486EEC
+	.4byte 0x00080102
+
 .global "tbl3$2356"
 "tbl3$2356":
-	.incbin "baserom.dol", 0x486EF0, 0x8
+	# ROM: 0x486EF0
+	.4byte 0x000C0102
+	.4byte 0x00000000
+

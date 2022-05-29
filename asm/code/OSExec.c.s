@@ -106,7 +106,7 @@ lbl_803DD950:
 /* 803DD95C 003D95FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803DD960 003D9600  7C 08 03 A6 */	mtlr r0
 /* 803DD964 003D9604  38 21 00 30 */	addi r1, r1, 0x30
-/* 803DD968 003D9608  4E 80 00 20 */	blr 
+/* 803DD968 003D9608  4E 80 00 20 */	blr
 
 .global "Run"
 "Run":
@@ -117,20 +117,20 @@ lbl_803DD950:
 /* 803DD97C 003D961C  7C 7F 1B 78 */	mr r31, r3
 /* 803DD980 003D9620  4B FF EA 09 */	bl "ICFlashInvalidate"
 /* 803DD984 003D9624  7C 00 04 AC */	sync 0
-/* 803DD988 003D9628  4C 00 01 2C */	isync 
+/* 803DD988 003D9628  4C 00 01 2C */	isync
 /* 803DD98C 003D962C  7F E9 03 A6 */	mtctr r31
-/* 803DD990 003D9630  4E 80 04 20 */	bctr 
+/* 803DD990 003D9630  4E 80 04 20 */	bctr
 /* 803DD994 003D9634  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803DD998 003D9638  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DD99C 003D963C  7C 08 03 A6 */	mtlr r0
 /* 803DD9A0 003D9640  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DD9A4 003D9644  4E 80 00 20 */	blr 
+/* 803DD9A4 003D9644  4E 80 00 20 */	blr
 
 .global "Callback_803DD9A8"
 "Callback_803DD9A8":
 /* 803DD9A8 003D9648  38 00 00 01 */	li r0, 1
 /* 803DD9AC 003D964C  90 0D C7 2C */	stw r0, "Prepared_805D8E0C"-_SDA_BASE_(r13)
-/* 803DD9B0 003D9650  4E 80 00 20 */	blr 
+/* 803DD9B0 003D9650  4E 80 00 20 */	blr
 
 .global "__OSGetExecParams"
 "__OSGetExecParams":
@@ -143,12 +143,12 @@ lbl_803DD950:
 lbl_803DD9CC:
 /* 803DD9CC 003D966C  38 00 00 00 */	li r0, 0
 /* 803DD9D0 003D9670  90 03 00 00 */	stw r0, 0(r3)
-/* 803DD9D4 003D9674  4E 80 00 20 */	blr 
+/* 803DD9D4 003D9674  4E 80 00 20 */	blr
 
 .global "callback"
 "callback":
 /* 803DD9D8 003D9678  90 6D C7 14 */	stw r3, "DVDLowIntType"-_SDA_BASE_(r13)
-/* 803DD9DC 003D967C  4E 80 00 20 */	blr 
+/* 803DD9DC 003D967C  4E 80 00 20 */	blr
 
 .global "__OSReLaunchFirmware"
 "__OSReLaunchFirmware":
@@ -500,7 +500,7 @@ lbl_803DDEC0:
 /* 803DDEC8 003D9B68  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803DDECC 003D9B6C  7C 08 03 A6 */	mtlr r0
 /* 803DDED0 003D9B70  38 21 00 30 */	addi r1, r1, 0x30
-/* 803DDED4 003D9B74  4E 80 00 20 */	blr 
+/* 803DDED4 003D9B74  4E 80 00 20 */	blr
 
 .global "__OSLaunchMenu"
 "__OSLaunchMenu":
@@ -570,7 +570,7 @@ lbl_803DDFBC:
 /* 803DDFC4 003D9C64  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803DDFC8 003D9C68  7C 08 03 A6 */	mtlr r0
 /* 803DDFCC 003D9C6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803DDFD0 003D9C70  4E 80 00 20 */	blr 
+/* 803DDFD0 003D9C70  4E 80 00 20 */	blr
 
 .global "__OSRelaunchTitle"
 "__OSRelaunchTitle":
@@ -662,7 +662,7 @@ lbl_803DE108:
 /* 803DE110 003D9DB0  83 EA FF FC */	lwz r31, -4(r10)
 /* 803DE114 003D9DB4  7C 08 03 A6 */	mtlr r0
 /* 803DE118 003D9DB8  7D 41 53 78 */	mr r1, r10
-/* 803DE11C 003D9DBC  4E 80 00 20 */	blr 
+/* 803DE11C 003D9DBC  4E 80 00 20 */	blr
 
 .global "__OSBootDolSimple"
 "__OSBootDolSimple":
@@ -946,7 +946,7 @@ lbl_803DE4FC:
 /* 803DE508 003DA1A8  38 A1 00 10 */	addi r5, r1, 0x10
 /* 803DE50C 003DA1AC  81 9F 00 10 */	lwz r12, 0x10(r31)
 /* 803DE510 003DA1B0  7D 89 03 A6 */	mtctr r12
-/* 803DE514 003DA1B4  4E 80 04 21 */	bctrl 
+/* 803DE514 003DA1B4  4E 80 04 21 */	bctrl
 /* 803DE518 003DA1B8  38 60 00 1C */	li r3, 0x1c
 /* 803DE51C 003DA1BC  38 80 00 01 */	li r4, 1
 /* 803DE520 003DA1C0  4B FF D8 29 */	bl "OSAllocFromMEM1ArenaLo"
@@ -960,7 +960,7 @@ lbl_803DE4FC:
 /* 803DE540 003DA1E0  38 63 D0 B8 */	addi r3, r3, "OSReport"@l
 /* 803DE544 003DA1E4  81 81 00 08 */	lwz r12, 8(r1)
 /* 803DE548 003DA1E8  7D 89 03 A6 */	mtctr r12
-/* 803DE54C 003DA1EC  4E 80 04 21 */	bctrl 
+/* 803DE54C 003DA1EC  4E 80 04 21 */	bctrl
 /* 803DE550 003DA1F0  7F 43 D3 78 */	mr r3, r26
 /* 803DE554 003DA1F4  4B FF D7 ED */	bl "OSSetArenaLo"
 /* 803DE558 003DA1F8  48 00 00 60 */	b lbl_803DE5B8
@@ -997,12 +997,12 @@ lbl_803DE5B8:
 /* 803DE5C0 003DA260  38 81 00 18 */	addi r4, r1, 0x18
 /* 803DE5C4 003DA264  38 A1 00 1C */	addi r5, r1, 0x1c
 /* 803DE5C8 003DA268  7D 89 03 A6 */	mtctr r12
-/* 803DE5CC 003DA26C  4E 80 04 21 */	bctrl 
+/* 803DE5CC 003DA26C  4E 80 04 21 */	bctrl
 /* 803DE5D0 003DA270  2C 03 00 00 */	cmpwi r3, 0
 /* 803DE5D4 003DA274  40 82 FF 88 */	bne lbl_803DE55C
 /* 803DE5D8 003DA278  81 81 00 10 */	lwz r12, 0x10(r1)
 /* 803DE5DC 003DA27C  7D 89 03 A6 */	mtctr r12
-/* 803DE5E0 003DA280  4E 80 04 21 */	bctrl 
+/* 803DE5E0 003DA280  4E 80 04 21 */	bctrl
 /* 803DE5E4 003DA284  7C 7A 1B 78 */	mr r26, r3
 /* 803DE5E8 003DA288  38 60 00 1C */	li r3, 0x1c
 /* 803DE5EC 003DA28C  38 80 00 01 */	li r4, 1
@@ -1119,7 +1119,7 @@ lbl_803DE774:
 /* 803DE77C 003DA41C  80 01 01 C4 */	lwz r0, 0x1c4(r1)
 /* 803DE780 003DA420  7C 08 03 A6 */	mtlr r0
 /* 803DE784 003DA424  38 21 01 C0 */	addi r1, r1, 0x1c0
-/* 803DE788 003DA428  4E 80 00 20 */	blr 
+/* 803DE788 003DA428  4E 80 00 20 */	blr
 
 .global "__OSBootDol"
 "__OSBootDol":
@@ -1252,7 +1252,7 @@ lbl_803DE930:
 /* 803DE95C 003DA5FC  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 803DE960 003DA600  7C 08 03 A6 */	mtlr r0
 /* 803DE964 003DA604  38 21 00 40 */	addi r1, r1, 0x40
-/* 803DE968 003DA608  4E 80 00 20 */	blr 
+/* 803DE968 003DA608  4E 80 00 20 */	blr
 
 .global "_ES_GetTicketViews"
 "_ES_GetTicketViews":
@@ -1333,7 +1333,7 @@ lbl_803DEA74:
 /* 803DEA7C 003DA71C  83 EA FF FC */	lwz r31, -4(r10)
 /* 803DEA80 003DA720  7C 08 03 A6 */	mtlr r0
 /* 803DEA84 003DA724  7D 41 53 78 */	mr r1, r10
-/* 803DEA88 003DA728  4E 80 00 20 */	blr 
+/* 803DEA88 003DA728  4E 80 00 20 */	blr
 
 .global "_ES_LaunchTitle"
 "_ES_LaunchTitle":
@@ -1375,15 +1375,21 @@ lbl_803DEB08:
 /* 803DEB0C 003DA7AC  80 0A 00 04 */	lwz r0, 4(r10)
 /* 803DEB10 003DA7B0  7C 08 03 A6 */	mtlr r0
 /* 803DEB14 003DA7B4  7D 41 53 78 */	mr r1, r10
-/* 803DEB18 003DA7B8  4E 80 00 20 */	blr 
+/* 803DEB18 003DA7B8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80476BC8
 lbl_80476BC8:
-	.incbin "baserom.dol", 0x472CC8, 0x24
+	# ROM: 0x472CC8
+	.asciz "\nsecurity error(%d) has occurred"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80476BEC
 lbl_80476BEC:
-	.incbin "baserom.dol", 0x472CEC, 0xC
+	# ROM: 0x472CEC
+	.asciz "2004/02/01"
+	.byte 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "views"
@@ -1405,10 +1411,15 @@ lbl_80476BEC:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D77A8
 lbl_805D77A8:
-	.incbin "baserom.dol", 0x487328, 0x8
+	# ROM: 0x487328
+	.asciz "/dev/es"
+
 .global lbl_805D77B0
 lbl_805D77B0:
-	.incbin "baserom.dol", 0x487330, 0x8
+	# ROM: 0x487330
+	.4byte 0x25640000
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "apploaderPosition$742"
@@ -1439,25 +1450,41 @@ lbl_805D77B0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBD48
 lbl_805DBD48:
-	.incbin "baserom.dol", 0x48A068, 0x1
+	# ROM: 0x48A068
+	.byte 0xFF
+
 .global lbl_805DBD49
 lbl_805DBD49:
-	.incbin "baserom.dol", 0x48A069, 0x1
+	# ROM: 0x48A069
+	.byte 0xFF
+
 .global lbl_805DBD4A
 lbl_805DBD4A:
-	.incbin "baserom.dol", 0x48A06A, 0x1
+	# ROM: 0x48A06A
+	.byte 0xFF
+
 .global lbl_805DBD4B
 lbl_805DBD4B:
-	.incbin "baserom.dol", 0x48A06B, 0x1
+	# ROM: 0x48A06B
+	.byte 0x00
+
 .global lbl_805DBD4C
 lbl_805DBD4C:
-	.incbin "baserom.dol", 0x48A06C, 0x1
+	# ROM: 0x48A06C
+	.byte 0xFF
+
 .global lbl_805DBD4D
 lbl_805DBD4D:
-	.incbin "baserom.dol", 0x48A06D, 0x1
+	# ROM: 0x48A06D
+	.byte 0xFF
+
 .global lbl_805DBD4E
 lbl_805DBD4E:
-	.incbin "baserom.dol", 0x48A06E, 0x1
+	# ROM: 0x48A06E
+	.byte 0xFF
+
 .global lbl_805DBD4F
 lbl_805DBD4F:
-	.incbin "baserom.dol", 0x48A06F, 0x1
+	# ROM: 0x48A06F
+	.byte 0x00
+

@@ -28,7 +28,7 @@
 /* 80379C18 003758B8  B0 03 00 02 */	sth r0, 2(r3)
 /* 80379C1C 003758BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80379C20 003758C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80379C24 003758C4  4E 80 00 20 */	blr 
+/* 80379C24 003758C4  4E 80 00 20 */	blr
 
 .global "GXSetIndTexMtx"
 "GXSetIndTexMtx":
@@ -122,7 +122,7 @@ lbl_80379C78:
 /* 80379D6C 00375A0C  90 A6 80 00 */	stw r5, -0x8000(r6)
 /* 80379D70 00375A10  B0 03 00 02 */	sth r0, 2(r3)
 /* 80379D74 00375A14  38 21 00 40 */	addi r1, r1, 0x40
-/* 80379D78 00375A18  4E 80 00 20 */	blr 
+/* 80379D78 00375A18  4E 80 00 20 */	blr
 
 .global "GXSetIndTexCoordScale"
 "GXSetIndTexCoordScale":
@@ -196,7 +196,7 @@ lbl_80379E70:
 /* 80379E70 00375B10  80 62 A5 98 */	lwz r3, "__GXData"-_SDA2_BASE_(r2)
 /* 80379E74 00375B14  38 00 00 00 */	li r0, 0
 /* 80379E78 00375B18  B0 03 00 02 */	sth r0, 2(r3)
-/* 80379E7C 00375B1C  4E 80 00 20 */	blr 
+/* 80379E7C 00375B1C  4E 80 00 20 */	blr
 
 .global "GXSetIndTexOrder"
 "GXSetIndTexOrder":
@@ -258,7 +258,7 @@ lbl_80379F1C:
 /* 80379F3C 00375BDC  60 63 00 03 */	ori r3, r3, 3
 /* 80379F40 00375BE0  90 65 05 FC */	stw r3, 0x5fc(r5)
 /* 80379F44 00375BE4  B0 05 00 02 */	sth r0, 2(r5)
-/* 80379F48 00375BE8  4E 80 00 20 */	blr 
+/* 80379F48 00375BE8  4E 80 00 20 */	blr
 
 .global "GXSetNumIndStages"
 "GXSetNumIndStages":
@@ -269,7 +269,7 @@ lbl_80379F1C:
 /* 80379F5C 00375BFC  80 04 05 FC */	lwz r0, 0x5fc(r4)
 /* 80379F60 00375C00  60 00 00 06 */	ori r0, r0, 6
 /* 80379F64 00375C04  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 80379F68 00375C08  4E 80 00 20 */	blr 
+/* 80379F68 00375C08  4E 80 00 20 */	blr
 
 .global "GXSetTevDirect"
 "GXSetTevDirect":
@@ -290,11 +290,11 @@ lbl_80379F1C:
 /* 80379FA4 00375C44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80379FA8 00375C48  7C 08 03 A6 */	mtlr r0
 /* 80379FAC 00375C4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80379FB0 00375C50  4E 80 00 20 */	blr 
+/* 80379FB0 00375C50  4E 80 00 20 */	blr
 
 .global "__GXUpdateBPMask"
 "__GXUpdateBPMask":
-/* 80379FB4 00375C54  4E 80 00 20 */	blr 
+/* 80379FB4 00375C54  4E 80 00 20 */	blr
 
 .global "__GXSetIndirectMask"
 "__GXSetIndirectMask":
@@ -309,7 +309,7 @@ lbl_80379F1C:
 /* 80379FD8 00375C78  80 67 01 74 */	lwz r3, 0x174(r7)
 /* 80379FDC 00375C7C  90 64 80 00 */	stw r3, -0x8000(r4)
 /* 80379FE0 00375C80  B0 07 00 02 */	sth r0, 2(r7)
-/* 80379FE4 00375C84  4E 80 00 20 */	blr 
+/* 80379FE4 00375C84  4E 80 00 20 */	blr
 
 .global "__GXFlushTextureState"
 "__GXFlushTextureState":
@@ -321,9 +321,12 @@ lbl_80379F1C:
 /* 80379FFC 00375C9C  80 65 01 74 */	lwz r3, 0x174(r5)
 /* 8037A000 00375CA0  90 64 80 00 */	stw r3, -0x8000(r4)
 /* 8037A004 00375CA4  B0 05 00 02 */	sth r0, 2(r5)
-/* 8037A008 00375CA8  4E 80 00 20 */	blr 
+/* 8037A008 00375CA8  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB848
 lbl_805DB848:
-	.incbin "baserom.dol", 0x489B68, 0x8
+	# ROM: 0x489B68
+	.4byte 0x44800000
+	.4byte 0x00000000
+

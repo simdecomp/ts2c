@@ -4,7 +4,7 @@
 .global "__AXGetNumVoices"
 "__AXGetNumVoices":
 /* 80338844 003344E4  80 6D C3 00 */	lwz r3, "__AXNumVoices"-_SDA_BASE_(r13)
-/* 80338848 003344E8  4E 80 00 20 */	blr 
+/* 80338848 003344E8  4E 80 00 20 */	blr
 
 .global "__AXServiceVPB"
 "__AXServiceVPB":
@@ -383,7 +383,7 @@ lbl_80338D7C:
 /* 80338D8C 00334A2C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80338D90 00334A30  7C 08 03 A6 */	mtlr r0
 /* 80338D94 00334A34  38 21 00 20 */	addi r1, r1, 0x20
-/* 80338D98 00334A38  4E 80 00 20 */	blr 
+/* 80338D98 00334A38  4E 80 00 20 */	blr
 
 .global "__AXSyncPBs"
 "__AXSyncPBs":
@@ -602,12 +602,12 @@ lbl_8033906C:
 /* 8033909C 00334D3C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803390A0 00334D40  7C 08 03 A6 */	mtlr r0
 /* 803390A4 00334D44  38 21 00 30 */	addi r1, r1, 0x30
-/* 803390A8 00334D48  4E 80 00 20 */	blr 
+/* 803390A8 00334D48  4E 80 00 20 */	blr
 
 .global "__AXGetPBs"
 "__AXGetPBs":
 /* 803390AC 00334D4C  80 6D C2 F0 */	lwz r3, "__AXPB"-_SDA_BASE_(r13)
-/* 803390B0 00334D50  4E 80 00 20 */	blr 
+/* 803390B0 00334D50  4E 80 00 20 */	blr
 
 .global "__AXSetPBDefault"
 "__AXSetPBDefault":
@@ -626,7 +626,7 @@ lbl_8033906C:
 /* 803390E4 00334D84  B0 A3 01 36 */	sth r5, 0x136(r3)
 /* 803390E8 00334D88  B0 A3 01 38 */	sth r5, 0x138(r3)
 /* 803390EC 00334D8C  B0 A3 01 3A */	sth r5, 0x13a(r3)
-/* 803390F0 00334D90  4E 80 00 20 */	blr 
+/* 803390F0 00334D90  4E 80 00 20 */	blr
 
 .global "__AXVPBInit"
 "__AXVPBInit":
@@ -822,7 +822,7 @@ lbl_8033937C:
 /* 8033939C 0033503C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803393A0 00335040  7C 08 03 A6 */	mtlr r0
 /* 803393A4 00335044  38 21 00 30 */	addi r1, r1, 0x30
-/* 803393A8 00335048  4E 80 00 20 */	blr 
+/* 803393A8 00335048  4E 80 00 20 */	blr
 
 .global "__AXVPBQuit"
 "__AXVPBQuit":
@@ -831,7 +831,7 @@ lbl_8033937C:
 /* 803393B4 00335054  90 0D C2 F4 */	stw r0, "__AXITD"-_SDA_BASE_(r13)
 /* 803393B8 00335058  90 0D C2 F8 */	stw r0, "__AXVPB"-_SDA_BASE_(r13)
 /* 803393BC 0033505C  90 0D C2 FC */	stw r0, "__AXMaxVoices"-_SDA_BASE_(r13)
-/* 803393C0 00335060  4E 80 00 20 */	blr 
+/* 803393C0 00335060  4E 80 00 20 */	blr
 
 .global "AXSetVoiceSrcType"
 "AXSetVoiceSrcType":
@@ -889,7 +889,7 @@ lbl_8033945C:
 /* 80339474 00335114  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339478 00335118  7C 08 03 A6 */	mtlr r0
 /* 8033947C 0033511C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339480 00335120  4E 80 00 20 */	blr 
+/* 80339480 00335120  4E 80 00 20 */	blr
 
 .global "AXSetVoiceState"
 "AXSetVoiceState":
@@ -923,7 +923,7 @@ lbl_803394DC:
 /* 803394E4 00335184  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803394E8 00335188  7C 08 03 A6 */	mtlr r0
 /* 803394EC 0033518C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803394F0 00335190  4E 80 00 20 */	blr 
+/* 803394F0 00335190  4E 80 00 20 */	blr
 
 .global "AXSetVoiceType"
 "AXSetVoiceType":
@@ -945,7 +945,7 @@ lbl_803394DC:
 /* 80339530 003351D0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339534 003351D4  7C 08 03 A6 */	mtlr r0
 /* 80339538 003351D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033953C 003351DC  4E 80 00 20 */	blr 
+/* 8033953C 003351DC  4E 80 00 20 */	blr
 
 .global "AXSetVoiceMix"
 "AXSetVoiceMix":
@@ -1116,7 +1116,7 @@ lbl_80339750:
 /* 80339770 00335410  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80339774 00335414  7C 08 03 A6 */	mtlr r0
 /* 80339778 00335418  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033977C 0033541C  4E 80 00 20 */	blr 
+/* 8033977C 0033541C  4E 80 00 20 */	blr
 
 .global "AXSetVoiceVe"
 "AXSetVoiceVe":
@@ -1141,7 +1141,7 @@ lbl_80339750:
 /* 803397C8 00335468  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803397CC 0033546C  7C 08 03 A6 */	mtlr r0
 /* 803397D0 00335470  38 21 00 10 */	addi r1, r1, 0x10
-/* 803397D4 00335474  4E 80 00 20 */	blr 
+/* 803397D4 00335474  4E 80 00 20 */	blr
 
 .global "AXSetVoiceAddr"
 "AXSetVoiceAddr":
@@ -1210,7 +1210,7 @@ lbl_803398A4:
 /* 803398C0 00335560  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803398C4 00335564  7C 08 03 A6 */	mtlr r0
 /* 803398C8 00335568  38 21 00 10 */	addi r1, r1, 0x10
-/* 803398CC 0033556C  4E 80 00 20 */	blr 
+/* 803398CC 0033556C  4E 80 00 20 */	blr
 
 .global "AXSetVoiceAdpcm"
 "AXSetVoiceAdpcm":
@@ -1251,7 +1251,7 @@ lbl_803398A4:
 /* 80339958 003355F8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033995C 003355FC  7C 08 03 A6 */	mtlr r0
 /* 80339960 00335600  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339964 00335604  4E 80 00 20 */	blr 
+/* 80339964 00335604  4E 80 00 20 */	blr
 
 .global "AXSetVoiceSrc"
 "AXSetVoiceSrc":
@@ -1287,7 +1287,7 @@ lbl_803398A4:
 /* 803399DC 0033567C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803399E0 00335680  7C 08 03 A6 */	mtlr r0
 /* 803399E4 00335684  38 21 00 10 */	addi r1, r1, 0x10
-/* 803399E8 00335688  4E 80 00 20 */	blr 
+/* 803399E8 00335688  4E 80 00 20 */	blr
 
 .global "AXSetVoiceSrcRatio"
 "AXSetVoiceSrcRatio":
@@ -1320,7 +1320,7 @@ lbl_803398A4:
 /* 80339A54 003356F4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339A58 003356F8  7C 08 03 A6 */	mtlr r0
 /* 80339A5C 003356FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80339A60 00335700  4E 80 00 20 */	blr 
+/* 80339A60 00335700  4E 80 00 20 */	blr
 
 .global "AXSetVoiceAdpcmLoop"
 "AXSetVoiceAdpcmLoop":
@@ -1347,7 +1347,7 @@ lbl_803398A4:
 /* 80339AB4 00335754  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339AB8 00335758  7C 08 03 A6 */	mtlr r0
 /* 80339ABC 0033575C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339AC0 00335760  4E 80 00 20 */	blr 
+/* 80339AC0 00335760  4E 80 00 20 */	blr
 
 .global "AXSetVoiceLpf"
 "AXSetVoiceLpf":
@@ -1376,7 +1376,7 @@ lbl_803398A4:
 /* 80339B1C 003357BC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339B20 003357C0  7C 08 03 A6 */	mtlr r0
 /* 80339B24 003357C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339B28 003357C8  4E 80 00 20 */	blr 
+/* 80339B28 003357C8  4E 80 00 20 */	blr
 
 .global "AXSetVoiceLpfCoefs"
 "AXSetVoiceLpfCoefs":
@@ -1402,7 +1402,7 @@ lbl_803398A4:
 /* 80339B78 00335818  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80339B7C 0033581C  7C 08 03 A6 */	mtlr r0
 /* 80339B80 00335820  38 21 00 20 */	addi r1, r1, 0x20
-/* 80339B84 00335824  4E 80 00 20 */	blr 
+/* 80339B84 00335824  4E 80 00 20 */	blr
 
 .global "AXGetLpfCoefs"
 "AXGetLpfCoefs":
@@ -1452,7 +1452,7 @@ lbl_803398A4:
 /* 80339C34 003358D4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80339C38 003358D8  7C 08 03 A6 */	mtlr r0
 /* 80339C3C 003358DC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80339C40 003358E0  4E 80 00 20 */	blr 
+/* 80339C40 003358E0  4E 80 00 20 */	blr
 
 .global "AXSetVoiceRmtOn"
 "AXSetVoiceRmtOn":
@@ -1474,7 +1474,7 @@ lbl_803398A4:
 /* 80339C80 00335920  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80339C84 00335924  7C 08 03 A6 */	mtlr r0
 /* 80339C88 00335928  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339C8C 0033592C  4E 80 00 20 */	blr 
+/* 80339C8C 0033592C  4E 80 00 20 */	blr
 
 .global "AXSetVoiceRmtMix"
 "AXSetVoiceRmtMix":
@@ -1612,20 +1612,64 @@ lbl_80339E3C:
 /* 80339E5C 00335AFC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80339E60 00335B00  7C 08 03 A6 */	mtlr r0
 /* 80339E64 00335B04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80339E68 00335B08  4E 80 00 20 */	blr 
+/* 80339E68 00335B08  4E 80 00 20 */	blr
 
 .global "AXGetMaxVoices"
 "AXGetMaxVoices":
 /* 80339E6C 00335B0C  80 6D C2 FC */	lwz r3, "__AXMaxVoices"-_SDA_BASE_(r13)
-/* 80339E70 00335B10  4E 80 00 20 */	blr 
+/* 80339E70 00335B10  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__AXMixCycles"
 "__AXMixCycles":
-	.incbin "baserom.dol", 0x458AF8, 0x80
+	# ROM: 0x458AF8
+	.4byte 0x00000002
+	.4byte 0x00000198
+	.4byte 0x00000198
+	.4byte 0x0000032A
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x0000057C
+	.4byte 0x00000198
+	.4byte 0x00000330
+	.4byte 0x00000330
+	.4byte 0x000004C2
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x00000714
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x000002C3
+	.4byte 0x0000045B
+	.4byte 0x0000045B
+	.4byte 0x000005ED
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+	.4byte 0x0000083F
+
 .global "__AXRmtMixCycles"
 "__AXRmtMixCycles":
-	.incbin "baserom.dol", 0x458B78, 0x28
+	# ROM: 0x458B78
+	.4byte 0x00000004
+	.4byte 0x00000056
+	.4byte 0x00000097
+	.4byte 0x00000097
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__s_AXPB"
@@ -1664,22 +1708,37 @@ lbl_80339E3C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB6E8
 lbl_805DB6E8:
-	.incbin "baserom.dol", 0x489A08, 0x4
+	# ROM: 0x489A08
+	.4byte 0x47800000
+
 .global lbl_805DB6EC
 lbl_805DB6EC:
-	.incbin "baserom.dol", 0x489A0C, 0x4
+	# ROM: 0x489A0C
+	.4byte 0x40000000
+
 .global lbl_805DB6F0
 lbl_805DB6F0:
-	.incbin "baserom.dol", 0x489A10, 0x4
+	# ROM: 0x489A10
+	.4byte 0x40C90FDB
+
 .global lbl_805DB6F4
 lbl_805DB6F4:
-	.incbin "baserom.dol", 0x489A14, 0x4
+	# ROM: 0x489A14
+	.4byte 0x46FA0000
+
 .global lbl_805DB6F8
 lbl_805DB6F8:
-	.incbin "baserom.dol", 0x489A18, 0x4
+	# ROM: 0x489A18
+	.4byte 0x3F800000
+
 .global lbl_805DB6FC
 lbl_805DB6FC:
-	.incbin "baserom.dol", 0x489A1C, 0x4
+	# ROM: 0x489A1C
+	.4byte 0x47000000
+
 .global lbl_805DB700
 lbl_805DB700:
-	.incbin "baserom.dol", 0x489A20, 0x8
+	# ROM: 0x489A20
+	.4byte 0x43300000
+	.4byte 0x00000000
+

@@ -26,7 +26,7 @@
 /* 803E0C48 003DC8E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E0C4C 003DC8EC  7C 08 03 A6 */	mtlr r0
 /* 803E0C50 003DC8F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E0C54 003DC8F4  4E 80 00 20 */	blr 
+/* 803E0C54 003DC8F4  4E 80 00 20 */	blr
 
 .global "OSSendMessage"
 "OSSendMessage":
@@ -83,7 +83,7 @@ lbl_803E0D00:
 /* 803E0D10 003DC9B0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E0D14 003DC9B4  7C 08 03 A6 */	mtlr r0
 /* 803E0D18 003DC9B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E0D1C 003DC9BC  4E 80 00 20 */	blr 
+/* 803E0D1C 003DC9BC  4E 80 00 20 */	blr
 
 .global "OSReceiveMessage"
 "OSReceiveMessage":
@@ -146,4 +146,4 @@ lbl_803E0DDC:
 /* 803E0DEC 003DCA8C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E0DF0 003DCA90  7C 08 03 A6 */	mtlr r0
 /* 803E0DF4 003DCA94  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E0DF8 003DCA98  4E 80 00 20 */	blr 
+/* 803E0DF8 003DCA98  4E 80 00 20 */	blr

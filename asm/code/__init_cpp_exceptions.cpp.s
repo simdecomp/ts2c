@@ -18,7 +18,7 @@ lbl_8040F9D4:
 /* 8040F9D4 0040B674  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040F9D8 0040B678  7C 08 03 A6 */	mtlr r0
 /* 8040F9DC 0040B67C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040F9E0 0040B680  4E 80 00 20 */	blr 
+/* 8040F9E0 0040B680  4E 80 00 20 */	blr
 
 .global "__fini_cpp_exceptions"
 "__fini_cpp_exceptions":
@@ -35,9 +35,12 @@ lbl_8040FA08:
 /* 8040FA08 0040B6A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040FA0C 0040B6AC  7C 08 03 A6 */	mtlr r0
 /* 8040FA10 0040B6B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040FA14 0040B6B4  4E 80 00 20 */	blr 
+/* 8040FA14 0040B6B4  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "fragmentID"
 "fragmentID":
-	.incbin "baserom.dol", 0x487530, 0x8
+	# ROM: 0x487530
+	.4byte 0xFFFFFFFE
+	.4byte 0x00000000
+

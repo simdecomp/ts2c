@@ -114,7 +114,7 @@ lbl_80357298:
 /* 803572A4 00352F44  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803572A8 00352F48  7C 08 03 A6 */	mtlr r0
 /* 803572AC 00352F4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803572B0 00352F50  4E 80 00 20 */	blr 
+/* 803572B0 00352F50  4E 80 00 20 */	blr
 
 .global "L2CA_Deregister"
 "L2CA_Deregister":
@@ -156,7 +156,7 @@ lbl_80357330:
 /* 80357334 00352FD4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80357338 00352FD8  7C 08 03 A6 */	mtlr r0
 /* 8035733C 00352FDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80357340 00352FE0  4E 80 00 20 */	blr 
+/* 80357340 00352FE0  4E 80 00 20 */	blr
 
 .global "L2CA_ConnectReq"
 "L2CA_ConnectReq":
@@ -316,7 +316,7 @@ lbl_80357558:
 /* 80357568 00353208  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035756C 0035320C  7C 08 03 A6 */	mtlr r0
 /* 80357570 00353210  38 21 00 20 */	addi r1, r1, 0x20
-/* 80357574 00353214  4E 80 00 20 */	blr 
+/* 80357574 00353214  4E 80 00 20 */	blr
 
 .global "L2CA_ConnectRsp"
 "L2CA_ConnectRsp":
@@ -431,7 +431,7 @@ lbl_803576F0:
 /* 803576F8 00353398  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803576FC 0035339C  7C 08 03 A6 */	mtlr r0
 /* 80357700 003533A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80357704 003533A4  4E 80 00 20 */	blr 
+/* 80357704 003533A4  4E 80 00 20 */	blr
 
 .global "L2CA_ConfigReq"
 "L2CA_ConfigReq":
@@ -484,7 +484,7 @@ lbl_803577A8:
 /* 803577B0 00353450  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803577B4 00353454  7C 08 03 A6 */	mtlr r0
 /* 803577B8 00353458  38 21 00 10 */	addi r1, r1, 0x10
-/* 803577BC 0035345C  4E 80 00 20 */	blr 
+/* 803577BC 0035345C  4E 80 00 20 */	blr
 
 .global "L2CA_ConfigRsp"
 "L2CA_ConfigRsp":
@@ -545,7 +545,7 @@ lbl_80357878:
 /* 80357880 00353520  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80357884 00353524  7C 08 03 A6 */	mtlr r0
 /* 80357888 00353528  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035788C 0035352C  4E 80 00 20 */	blr 
+/* 8035788C 0035352C  4E 80 00 20 */	blr
 
 .global "L2CA_DisconnectReq"
 "L2CA_DisconnectReq":
@@ -593,7 +593,7 @@ lbl_80357920:
 /* 80357924 003535C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80357928 003535C8  7C 08 03 A6 */	mtlr r0
 /* 8035792C 003535CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80357930 003535D0  4E 80 00 20 */	blr 
+/* 80357930 003535D0  4E 80 00 20 */	blr
 
 .global "L2CA_DisconnectRsp"
 "L2CA_DisconnectRsp":
@@ -641,7 +641,7 @@ lbl_803579C4:
 /* 803579C8 00353668  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803579CC 0035366C  7C 08 03 A6 */	mtlr r0
 /* 803579D0 00353670  38 21 00 10 */	addi r1, r1, 0x10
-/* 803579D4 00353674  4E 80 00 20 */	blr 
+/* 803579D4 00353674  4E 80 00 20 */	blr
 
 .global "L2CA_DataWrite"
 "L2CA_DataWrite":
@@ -723,7 +723,7 @@ lbl_80357ADC:
 /* 80357AEC 0035378C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80357AF0 00353790  7C 08 03 A6 */	mtlr r0
 /* 80357AF4 00353794  38 21 00 20 */	addi r1, r1, 0x20
-/* 80357AF8 00353798  4E 80 00 20 */	blr 
+/* 80357AF8 00353798  4E 80 00 20 */	blr
 
 .global "L2CA_SetIdleTimeout"
 "L2CA_SetIdleTimeout":
@@ -782,7 +782,7 @@ lbl_80357BAC:
 /* 80357BB4 00353854  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80357BB8 00353858  7C 08 03 A6 */	mtlr r0
 /* 80357BBC 0035385C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80357BC0 00353860  4E 80 00 20 */	blr 
+/* 80357BC0 00353860  4E 80 00 20 */	blr
 
 .global "L2CA_SetIdleTimeoutByBdAddr"
 "L2CA_SetIdleTimeoutByBdAddr":
@@ -856,7 +856,7 @@ lbl_80357CAC:
 /* 80357CB4 00353954  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80357CB8 00353958  7C 08 03 A6 */	mtlr r0
 /* 80357CBC 0035395C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80357CC0 00353960  4E 80 00 20 */	blr 
+/* 80357CC0 00353960  4E 80 00 20 */	blr
 
 .global "L2CA_SetTraceLevel"
 "L2CA_SetTraceLevel":
@@ -867,46 +867,137 @@ lbl_80357CAC:
 lbl_80357CD4:
 /* 80357CD4 00353974  3C 60 80 58 */	lis r3, "l2cb"@ha
 /* 80357CD8 00353978  88 63 73 60 */	lbz r3, "l2cb"@l(r3)
-/* 80357CDC 0035397C  4E 80 00 20 */	blr 
+/* 80357CDC 0035397C  4E 80 00 20 */	blr
 
 .global "L2CA_RegisterCompression"
 "L2CA_RegisterCompression":
-/* 80357CE0 00353980  4E 80 00 20 */	blr 
+/* 80357CE0 00353980  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80463748
 lbl_80463748:
-	.incbin "baserom.dol", 0x45F848, 0xA8
+	# ROM: 0x45F848
+	.asciz "L2CAP - L2CA_Register() called for PSM: 0x%04x"
+	.byte 0x00
+	.asciz "L2CAP - no cb registering PSM: 0x%04x"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - invalid PSM value, PSM: 0x%04x"
+	.byte 0x00
+	.asciz "L2CAP - no RCB available, PSM: 0x%04x"
+	.byte 0x00, 0x00
+
 .global lbl_804637F0
 lbl_804637F0:
-	.incbin "baserom.dol", 0x45F8F0, 0x34
+	# ROM: 0x45F8F0
+	.asciz "L2CAP - L2CA_Deregister() called for PSM: 0x%04x"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463824
 lbl_80463824:
-	.incbin "baserom.dol", 0x45F924, 0x27C
+	# ROM: 0x45F924
+	.asciz "L2CAP - PSM: 0x%04x not found for deregistration"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CA_ConnectReq()  PSM: 0x%04x"
+	.byte 0x00
+	.asciz "L2CA_ConnectReq()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
+	.byte 0x00, 0x00
+	.asciz "L2CAP connect req - BTU not ready"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - no RCB for L2CA_conn_req, PSM: 0x%04x"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - no LCB for L2CA_conn_req"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP API - L2CA_conn_req rejected - link disconnecting"
+	.asciz "L2CAP - no CCB for L2CA_conn_req"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - L2CA_conn_req() returned CID: 0x%04x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CA_ConnectRsp()  CID: 0x%04x  Result: %d  Status: %d"
+	.byte 0x00
+	.asciz "L2CA_ConnectRsp()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
+	.byte 0x00, 0x00
+	.asciz "L2CAP - no LCB for L2CA_conn_rsp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - no CCB for L2CA_conn_rsp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - bad id in L2CA_conn_rsp. Exp: %d  Got: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80463AA0
 lbl_80463AA0:
-	.incbin "baserom.dol", 0x45FBA0, 0x20
+	# ROM: 0x45FBA0
+	.asciz "L2CA_ConfigReq()  CID: 0x%04x"
+	.byte 0x00, 0x00
+
 .global lbl_80463AC0
 lbl_80463AC0:
-	.incbin "baserom.dol", 0x45FBC0, 0x2C
+	# ROM: 0x45FBC0
+	.asciz "L2CAP - no CCB for L2CA_cfg_req, CID: %d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463AEC
 lbl_80463AEC:
-	.incbin "baserom.dol", 0x45FBEC, 0x2C
+	# ROM: 0x45FBEC
+	.asciz "L2CA_ConfigRsp()  CID: 0x%04x  Result: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80463B18
 lbl_80463B18:
-	.incbin "baserom.dol", 0x45FC18, 0x2C
+	# ROM: 0x45FC18
+	.asciz "L2CAP - no CCB for L2CA_cfg_rsp, CID: %d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463B44
 lbl_80463B44:
-	.incbin "baserom.dol", 0x45FC44, 0x24
+	# ROM: 0x45FC44
+	.asciz "L2CA_DisconnectReq()  CID: 0x%04x"
+	.byte 0x00, 0x00
+
 .global lbl_80463B68
 lbl_80463B68:
-	.incbin "baserom.dol", 0x45FC68, 0x2C
+	# ROM: 0x45FC68
+	.asciz "L2CAP - no CCB for L2CA_disc_req, CID: %d"
+	.byte 0x00, 0x00
+
 .global lbl_80463B94
 lbl_80463B94:
-	.incbin "baserom.dol", 0x45FC94, 0x24
+	# ROM: 0x45FC94
+	.asciz "L2CA_DisconnectRsp()  CID: 0x%04x"
+	.byte 0x00, 0x00
+
 .global lbl_80463BB8
 lbl_80463BB8:
-	.incbin "baserom.dol", 0x45FCB8, 0x160
+	# ROM: 0x45FCB8
+	.asciz "L2CAP - no CCB for L2CA_disc_rsp, CID: %d"
+	.byte 0x00, 0x00
+	.asciz "L2CA_DataWrite()  CID: 0x%04x  Len: %d"
+	.byte 0x00
+	.asciz "L2CAP - no CCB for L2CA_DataWrite, CID: %d"
+	.byte 0x00
+	.asciz "L2CAP - cannot send message bigger than peer's mtu size"
+	.asciz "L2CA_Ping()  BDA: %02x-%02x-%02x-%02x-%02x-%02x"
+	.asciz "L2CAP - no LCB for L2CA_ping"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - rejected second L2CA_ping"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "L2CAP - L2CA_ping rejected - link disconnecting"
+
 .global lbl_80463D18
 lbl_80463D18:
-	.incbin "baserom.dol", 0x45FE18, 0x1C0
+	# ROM: 0x45FE18
+	.asciz "L2CAP - no CCB for L2CA_SetIdleTimeout, CID: %d"
+	.asciz "L2CA_SetAclPriority()  bdaddr: %02x%02x%02x%02x%02x%02x"
+	.asciz "L2CAP - no LCB for L2CA_SetAclPriority"
+	.byte 0x00
+	.asciz "L2CA_SetCompression() local cid %d, direction %d, pe_type %d, mem_level %d, wbits %d, enable %d"
+	.asciz "L2CAP - no CCB for L2CA_Flush, CID: %d"
+	.byte 0x00
+	.asciz "L2CA_Flush()  CID: 0x%04x flushed %d buffers"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CA_GetNumQueuedBufs()  CID: 0x%04x  abmormally returning 0"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CA_GetNumQueuedBufs()  CID: 0x%04x  returning %d"
+	.byte 0x00
+	.4byte 0x00000000
+

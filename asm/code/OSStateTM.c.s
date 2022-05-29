@@ -52,7 +52,7 @@ lbl_803E4720:
 /* 803E4738 003E03D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E473C 003E03DC  7C 08 03 A6 */	mtlr r0
 /* 803E4740 003E03E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4744 003E03E4  4E 80 00 20 */	blr 
+/* 803E4744 003E03E4  4E 80 00 20 */	blr
 
 .global "OSSetPowerCallback"
 "OSSetPowerCallback":
@@ -105,7 +105,7 @@ lbl_803E47DC:
 /* 803E47F4 003E0494  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E47F8 003E0498  7C 08 03 A6 */	mtlr r0
 /* 803E47FC 003E049C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4800 003E04A0  4E 80 00 20 */	blr 
+/* 803E4800 003E04A0  4E 80 00 20 */	blr
 
 .global "__OSInitSTM"
 "__OSInitSTM":
@@ -184,7 +184,7 @@ lbl_803E4904:
 /* 803E490C 003E05AC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E4910 003E05B0  7C 08 03 A6 */	mtlr r0
 /* 803E4914 003E05B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E4918 003E05B8  4E 80 00 20 */	blr 
+/* 803E4918 003E05B8  4E 80 00 20 */	blr
 
 .global "__OSShutdownToSBY"
 "__OSShutdownToSBY":
@@ -321,7 +321,7 @@ lbl_803E4AE0:
 /* 803E4AEC 003E078C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E4AF0 003E0790  7C 08 03 A6 */	mtlr r0
 /* 803E4AF4 003E0794  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4AF8 003E0798  4E 80 00 20 */	blr 
+/* 803E4AF8 003E0798  4E 80 00 20 */	blr
 
 .global "__OSUnRegisterStateEvent"
 "__OSUnRegisterStateEvent":
@@ -357,22 +357,22 @@ lbl_803E4B64:
 /* 803E4B64 003E0804  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E4B68 003E0808  7C 08 03 A6 */	mtlr r0
 /* 803E4B6C 003E080C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E4B70 003E0810  4E 80 00 20 */	blr 
+/* 803E4B70 003E0810  4E 80 00 20 */	blr
 
 .global "__OSVIDimReplyHandler"
 "__OSVIDimReplyHandler":
 /* 803E4B74 003E0814  38 00 00 00 */	li r0, 0
 /* 803E4B78 003E0818  38 60 00 00 */	li r3, 0
 /* 803E4B7C 003E081C  90 0D C7 9C */	stw r0, "StmVdInUse"-_SDA_BASE_(r13)
-/* 803E4B80 003E0820  4E 80 00 20 */	blr 
+/* 803E4B80 003E0820  4E 80 00 20 */	blr
 
 .global "__OSDefaultResetCallback"
 "__OSDefaultResetCallback":
-/* 803E4B84 003E0824  4E 80 00 20 */	blr 
+/* 803E4B84 003E0824  4E 80 00 20 */	blr
 
 .global "__OSDefaultPowerCallback"
 "__OSDefaultPowerCallback":
-/* 803E4B88 003E0828  4E 80 00 20 */	blr 
+/* 803E4B88 003E0828  4E 80 00 20 */	blr
 
 .global "__OSStateEventHandler"
 "__OSStateEventHandler":
@@ -417,7 +417,7 @@ lbl_803E4BF8:
 /* 803E4C18 003E08B8  90 0D C7 88 */	stw r0, "ResetDown"-_SDA_BASE_(r13)
 /* 803E4C1C 003E08BC  90 8D C7 A4 */	stw r4, "ResetCallback"-_SDA_BASE_(r13)
 /* 803E4C20 003E08C0  7D 89 03 A6 */	mtctr r12
-/* 803E4C24 003E08C4  4E 80 04 21 */	bctrl 
+/* 803E4C24 003E08C4  4E 80 04 21 */	bctrl
 /* 803E4C28 003E08C8  7F E3 FB 78 */	mr r3, r31
 /* 803E4C2C 003E08CC  4B FF B8 59 */	bl "OSRestoreInterrupts"
 lbl_803E4C30:
@@ -458,7 +458,7 @@ lbl_803E4C8C:
 /* 803E4CAC 003E094C  7C 7F 1B 78 */	mr r31, r3
 /* 803E4CB0 003E0950  90 8D C7 A0 */	stw r4, "PowerCallback"-_SDA_BASE_(r13)
 /* 803E4CB4 003E0954  7D 89 03 A6 */	mtctr r12
-/* 803E4CB8 003E0958  4E 80 04 21 */	bctrl 
+/* 803E4CB8 003E0958  4E 80 04 21 */	bctrl
 /* 803E4CBC 003E095C  7F E3 FB 78 */	mr r3, r31
 /* 803E4CC0 003E0960  4B FF B7 C5 */	bl "OSRestoreInterrupts"
 lbl_803E4CC4:
@@ -467,27 +467,44 @@ lbl_803E4CC4:
 /* 803E4CCC 003E096C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E4CD0 003E0970  7C 08 03 A6 */	mtlr r0
 /* 803E4CD4 003E0974  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E4CD8 003E0978  4E 80 00 20 */	blr 
+/* 803E4CD8 003E0978  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80483698
 lbl_80483698:
-	.incbin "baserom.dol", 0x47F798, 0x14
+	# ROM: 0x47F798
+	.asciz "/dev/stm/immediate"
+	.byte 0x00
+
 .global lbl_804836AC
 lbl_804836AC:
-	.incbin "baserom.dol", 0x47F7AC, 0x14
+	# ROM: 0x47F7AC
+	.asciz "/dev/stm/eventhook"
+	.byte 0x00
+
 .global lbl_804836C0
 lbl_804836C0:
-	.incbin "baserom.dol", 0x47F7C0, 0xC
+	# ROM: 0x47F7C0
+	.asciz "OSStateTM.c"
+
 .global lbl_804836CC
 lbl_804836CC:
-	.incbin "baserom.dol", 0x47F7CC, 0x38
+	# ROM: 0x47F7CC
+	.asciz "Error: The firmware doesn't support shutdown feature.\n"
+	.byte 0x00
+
 .global lbl_80483704
 lbl_80483704:
-	.incbin "baserom.dol", 0x47F804, 0x38
+	# ROM: 0x47F804
+	.asciz "Error: The firmware doesn't support reboot feature.\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8048373C
 lbl_8048373C:
-	.incbin "baserom.dol", 0x47F83C, 0x24
+	# ROM: 0x47F83C
+	.asciz "Error on STM state event handler\n"
+	.byte 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "StmEhInBuf"

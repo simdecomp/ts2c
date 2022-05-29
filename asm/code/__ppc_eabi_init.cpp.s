@@ -11,7 +11,7 @@
 /* 800042F4 000003F4  48 3D 5C C1 */	bl "__OSFPRInit"
 /* 800042F8 000003F8  48 3D 84 01 */	bl "__OSCacheInit"
 /* 800042FC 000003FC  7F E8 03 A6 */	mtlr r31
-/* 80004300 00000400  4E 80 00 20 */	blr 
+/* 80004300 00000400  4E 80 00 20 */	blr
 
 .global "__flush_cache"
 "__flush_cache":
@@ -27,8 +27,8 @@ lbl_80004318:
 /* 80004324 00000424  30 A5 00 08 */	addic r5, r5, 8
 /* 80004328 00000428  34 84 FF F8 */	addic. r4, r4, -8
 /* 8000432C 0000042C  40 80 FF EC */	bge lbl_80004318
-/* 80004330 00000430  4C 00 01 2C */	isync 
-/* 80004334 00000434  4E 80 00 20 */	blr 
+/* 80004330 00000430  4C 00 01 2C */	isync
+/* 80004334 00000434  4E 80 00 20 */	blr
 
 .section .text, "ax"  # 0x80006940 - 0x80418B80
 .global "__init_user"
@@ -40,7 +40,7 @@ lbl_80004318:
 /* 803E5E74 003E1B14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E5E78 003E1B18  7C 08 03 A6 */	mtlr r0
 /* 803E5E7C 003E1B1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5E80 003E1B20  4E 80 00 20 */	blr 
+/* 803E5E80 003E1B20  4E 80 00 20 */	blr
 
 .global "__init_cpp"
 "__init_cpp":
@@ -53,7 +53,7 @@ lbl_80004318:
 /* 803E5E9C 003E1B3C  48 00 00 10 */	b lbl_803E5EAC
 lbl_803E5EA0:
 /* 803E5EA0 003E1B40  7D 89 03 A6 */	mtctr r12
-/* 803E5EA4 003E1B44  4E 80 04 21 */	bctrl 
+/* 803E5EA4 003E1B44  4E 80 04 21 */	bctrl
 /* 803E5EA8 003E1B48  3B FF 00 04 */	addi r31, r31, 4
 lbl_803E5EAC:
 /* 803E5EAC 003E1B4C  81 9F 00 00 */	lwz r12, 0(r31)
@@ -63,7 +63,7 @@ lbl_803E5EAC:
 /* 803E5EBC 003E1B5C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E5EC0 003E1B60  7C 08 03 A6 */	mtlr r0
 /* 803E5EC4 003E1B64  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5EC8 003E1B68  4E 80 00 20 */	blr 
+/* 803E5EC8 003E1B68  4E 80 00 20 */	blr
 
 .global "exit"
 "exit":
@@ -76,7 +76,7 @@ lbl_803E5EAC:
 /* 803E5EE4 003E1B84  48 00 00 10 */	b lbl_803E5EF4
 lbl_803E5EE8:
 /* 803E5EE8 003E1B88  7D 89 03 A6 */	mtctr r12
-/* 803E5EEC 003E1B8C  4E 80 04 21 */	bctrl 
+/* 803E5EEC 003E1B8C  4E 80 04 21 */	bctrl
 /* 803E5EF0 003E1B90  3B FF 00 04 */	addi r31, r31, 4
 lbl_803E5EF4:
 /* 803E5EF4 003E1B94  81 9F 00 00 */	lwz r12, 0(r31)
@@ -87,4 +87,4 @@ lbl_803E5EF4:
 /* 803E5F08 003E1BA8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E5F0C 003E1BAC  7C 08 03 A6 */	mtlr r0
 /* 803E5F10 003E1BB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E5F14 003E1BB4  4E 80 00 20 */	blr 
+/* 803E5F14 003E1BB4  4E 80 00 20 */	blr

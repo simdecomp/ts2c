@@ -41,7 +41,7 @@ lbl_803EE9A4:
 /* 803EE9FC 003EA69C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EEA00 003EA6A0  7C 08 03 A6 */	mtlr r0
 /* 803EEA04 003EA6A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EEA08 003EA6A8  4E 80 00 20 */	blr 
+/* 803EEA08 003EA6A8  4E 80 00 20 */	blr
 
 .global "sendSlaveAddr"
 "sendSlaveAddr":
@@ -297,7 +297,7 @@ lbl_803EEDA8:
 /* 803EEDB0 003EAA50  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803EEDB4 003EAA54  7C 08 03 A6 */	mtlr r0
 /* 803EEDB8 003EAA58  38 21 00 30 */	addi r1, r1, 0x30
-/* 803EEDBC 003EAA5C  4E 80 00 20 */	blr 
+/* 803EEDBC 003EAA5C  4E 80 00 20 */	blr
 
 .global "__VISendI2CData"
 "__VISendI2CData":
@@ -699,12 +699,15 @@ lbl_803EF378:
 /* 803EF380 003EB020  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803EF384 003EB024  7C 08 03 A6 */	mtlr r0
 /* 803EF388 003EB028  38 21 00 40 */	addi r1, r1, 0x40
-/* 803EF38C 003EB02C  4E 80 00 20 */	blr 
+/* 803EF38C 003EB02C  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__i2c_ident_flag"
 "__i2c_ident_flag":
-	.incbin "baserom.dol", 0x4874D0, 0x8
+	# ROM: 0x4874D0
+	.4byte 0x00000001
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__i2c_ident_first"

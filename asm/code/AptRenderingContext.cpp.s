@@ -22,7 +22,7 @@
 /* 80327F78 00323C18  D0 03 00 34 */	stfs f0, 0x34(r3)
 /* 80327F7C 00323C1C  90 03 03 B8 */	stw r0, 0x3b8(r3)
 /* 80327F80 00323C20  90 03 03 BC */	stw r0, 0x3bc(r3)
-/* 80327F84 00323C24  4E 80 00 20 */	blr 
+/* 80327F84 00323C24  4E 80 00 20 */	blr
 
 .global "pushColourTransform__19AptRenderingContextFv"
 "pushColourTransform__19AptRenderingContextFv":
@@ -83,7 +83,7 @@
 /* 80328048 00323CE8  D0 03 00 1C */	stfs f0, 0x1c(r3)
 /* 8032804C 00323CEC  81 85 00 7C */	lwz r12, 0x7c(r5)
 /* 80328050 00323CF0  7D 89 03 A6 */	mtctr r12
-/* 80328054 00323CF4  4E 80 04 20 */	bctr 
+/* 80328054 00323CF4  4E 80 04 20 */	bctr
 
 .global "getVertexMatrix__19AptRenderingContextFP9AptMatrix"
 "getVertexMatrix__19AptRenderingContextFP9AptMatrix":
@@ -130,12 +130,12 @@ lbl_80328074:
 /* 803280DC 00323D7C  38 84 12 68 */	addi r4, r4, "gAptFuncs"@l
 /* 803280E0 00323D80  81 84 00 78 */	lwz r12, 0x78(r4)
 /* 803280E4 00323D84  7D 89 03 A6 */	mtctr r12
-/* 803280E8 00323D88  4E 80 04 21 */	bctrl 
+/* 803280E8 00323D88  4E 80 04 21 */	bctrl
 /* 803280EC 00323D8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803280F0 00323D90  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803280F4 00323D94  7C 08 03 A6 */	mtlr r0
 /* 803280F8 00323D98  38 21 00 10 */	addi r1, r1, 0x10
-/* 803280FC 00323D9C  4E 80 00 20 */	blr 
+/* 803280FC 00323D9C  4E 80 00 20 */	blr
 
 .global "multMatrix__19AptRenderingContextFP9AptMatrixP9AptMatrixP9AptMatrix"
 "multMatrix__19AptRenderingContextFP9AptMatrixP9AptMatrixP9AptMatrix":
@@ -203,7 +203,7 @@ lbl_80328074:
 /* 803281F4 00323E94  D0 65 00 10 */	stfs f3, 0x10(r5)
 /* 803281F8 00323E98  D0 05 00 14 */	stfs f0, 0x14(r5)
 /* 803281FC 00323E9C  38 21 00 40 */	addi r1, r1, 0x40
-/* 80328200 00323EA0  4E 80 00 20 */	blr 
+/* 80328200 00323EA0  4E 80 00 20 */	blr
 
 .global "appendVertexMatrix__19AptRenderingContextFP9AptMatrix"
 "appendVertexMatrix__19AptRenderingContextFP9AptMatrix":
@@ -220,12 +220,12 @@ lbl_80328074:
 /* 8032822C 00323ECC  38 84 12 68 */	addi r4, r4, "gAptFuncs"@l
 /* 80328230 00323ED0  81 84 00 78 */	lwz r12, 0x78(r4)
 /* 80328234 00323ED4  7D 89 03 A6 */	mtctr r12
-/* 80328238 00323ED8  4E 80 04 21 */	bctrl 
+/* 80328238 00323ED8  4E 80 04 21 */	bctrl
 /* 8032823C 00323EDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80328240 00323EE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80328244 00323EE4  7C 08 03 A6 */	mtlr r0
 /* 80328248 00323EE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032824C 00323EEC  4E 80 00 20 */	blr 
+/* 8032824C 00323EEC  4E 80 00 20 */	blr
 
 .global "expandBoundingRect__19AptRenderingContextFP7AptRectP7AptRect"
 "expandBoundingRect__19AptRenderingContextFP7AptRectP7AptRect":
@@ -347,12 +347,16 @@ lbl_803283E0:
 /* 803283F8 00324098  E3 C1 00 58 */	psq_l f30, 88(r1), 0, qr0
 /* 803283FC 0032409C  CB C1 00 50 */	lfd f30, 0x50(r1)
 /* 80328400 003240A0  38 21 00 70 */	addi r1, r1, 0x70
-/* 80328404 003240A4  4E 80 00 20 */	blr 
+/* 80328404 003240A4  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB6B0
 lbl_805DB6B0:
-	.incbin "baserom.dol", 0x4899D0, 0x4
+	# ROM: 0x4899D0
+	.4byte 0x3F800000
+
 .global lbl_805DB6B4
 lbl_805DB6B4:
-	.incbin "baserom.dol", 0x4899D4, 0x4
+	# ROM: 0x4899D4
+	.byte 0x00, 0x00, 0x00, 0x00
+

@@ -58,7 +58,7 @@ lbl_8035B438:
 /* 8035B440 003570E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035B444 003570E4  7C 08 03 A6 */	mtlr r0
 /* 8035B448 003570E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035B44C 003570EC  4E 80 00 20 */	blr 
+/* 8035B44C 003570EC  4E 80 00 20 */	blr
 
 .global "l2cu_release_lcb"
 "l2cu_release_lcb":
@@ -125,14 +125,14 @@ lbl_8035B4FC:
 /* 8035B528 003571C8  38 60 00 01 */	li r3, 1
 /* 8035B52C 003571CC  90 1E 00 54 */	stw r0, 0x54(r30)
 /* 8035B530 003571D0  7D 89 03 A6 */	mtctr r12
-/* 8035B534 003571D4  4E 80 04 21 */	bctrl 
+/* 8035B534 003571D4  4E 80 04 21 */	bctrl
 lbl_8035B538:
 /* 8035B538 003571D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035B53C 003571DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035B540 003571E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035B544 003571E4  7C 08 03 A6 */	mtlr r0
 /* 8035B548 003571E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035B54C 003571EC  4E 80 00 20 */	blr 
+/* 8035B54C 003571EC  4E 80 00 20 */	blr
 
 .global "l2cu_find_lcb_by_bd_addr"
 "l2cu_find_lcb_by_bd_addr":
@@ -172,7 +172,7 @@ lbl_8035B5BC:
 /* 8035B5C8 00357268  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035B5CC 0035726C  7C 08 03 A6 */	mtlr r0
 /* 8035B5D0 00357270  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035B5D4 00357274  4E 80 00 20 */	blr 
+/* 8035B5D4 00357274  4E 80 00 20 */	blr
 
 .global "l2cu_find_lcb_by_handle"
 "l2cu_find_lcb_by_handle":
@@ -185,7 +185,7 @@ lbl_8035B5BC:
 /* 8035B5F0 00357290  7C 00 18 40 */	cmplw r0, r3
 /* 8035B5F4 00357294  40 82 00 0C */	bne lbl_8035B600
 /* 8035B5F8 00357298  7C 83 23 78 */	mr r3, r4
-/* 8035B5FC 0035729C  4E 80 00 20 */	blr 
+/* 8035B5FC 0035729C  4E 80 00 20 */	blr
 lbl_8035B600:
 /* 8035B600 003572A0  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035B604 003572A4  2C 00 00 00 */	cmpwi r0, 0
@@ -194,7 +194,7 @@ lbl_8035B600:
 /* 8035B610 003572B0  7C 00 18 40 */	cmplw r0, r3
 /* 8035B614 003572B4  40 82 00 0C */	bne lbl_8035B620
 /* 8035B618 003572B8  7C 83 23 78 */	mr r3, r4
-/* 8035B61C 003572BC  4E 80 00 20 */	blr 
+/* 8035B61C 003572BC  4E 80 00 20 */	blr
 lbl_8035B620:
 /* 8035B620 003572C0  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035B624 003572C4  2C 00 00 00 */	cmpwi r0, 0
@@ -203,7 +203,7 @@ lbl_8035B620:
 /* 8035B630 003572D0  7C 00 18 40 */	cmplw r0, r3
 /* 8035B634 003572D4  40 82 00 0C */	bne lbl_8035B640
 /* 8035B638 003572D8  7C 83 23 78 */	mr r3, r4
-/* 8035B63C 003572DC  4E 80 00 20 */	blr 
+/* 8035B63C 003572DC  4E 80 00 20 */	blr
 lbl_8035B640:
 /* 8035B640 003572E0  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035B644 003572E4  2C 00 00 00 */	cmpwi r0, 0
@@ -212,17 +212,17 @@ lbl_8035B640:
 /* 8035B650 003572F0  7C 00 18 40 */	cmplw r0, r3
 /* 8035B654 003572F4  40 82 00 0C */	bne lbl_8035B660
 /* 8035B658 003572F8  7C 83 23 78 */	mr r3, r4
-/* 8035B65C 003572FC  4E 80 00 20 */	blr 
+/* 8035B65C 003572FC  4E 80 00 20 */	blr
 lbl_8035B660:
 /* 8035B660 00357300  38 60 00 00 */	li r3, 0
-/* 8035B664 00357304  4E 80 00 20 */	blr 
+/* 8035B664 00357304  4E 80 00 20 */	blr
 
 .global "l2cu_get_conn_role"
 "l2cu_get_conn_role":
 /* 8035B668 00357308  3C 60 80 58 */	lis r3, "l2cb"@ha
 /* 8035B66C 0035730C  38 63 73 60 */	addi r3, r3, "l2cb"@l
 /* 8035B670 00357310  88 63 00 01 */	lbz r3, 1(r3)
-/* 8035B674 00357314  4E 80 00 20 */	blr 
+/* 8035B674 00357314  4E 80 00 20 */	blr
 
 .global "l2cu_build_header"
 "l2cu_build_header":
@@ -276,7 +276,7 @@ lbl_8035B71C:
 /* 8035B72C 003573CC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035B730 003573D0  7C 08 03 A6 */	mtlr r0
 /* 8035B734 003573D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035B738 003573D8  4E 80 00 20 */	blr 
+/* 8035B738 003573D8  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_cmd_reject"
 "l2cu_send_peer_cmd_reject":
@@ -348,7 +348,7 @@ lbl_8035B820:
 /* 8035B828 003574C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035B82C 003574CC  7C 08 03 A6 */	mtlr r0
 /* 8035B830 003574D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035B834 003574D4  4E 80 00 20 */	blr 
+/* 8035B834 003574D4  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_connect_req"
 "l2cu_send_peer_connect_req":
@@ -402,7 +402,7 @@ lbl_8035B8E8:
 /* 8035B8EC 0035758C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035B8F0 00357590  7C 08 03 A6 */	mtlr r0
 /* 8035B8F4 00357594  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035B8F8 00357598  4E 80 00 20 */	blr 
+/* 8035B8F8 00357598  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_connect_rsp"
 "l2cu_send_peer_connect_rsp":
@@ -461,7 +461,7 @@ lbl_8035B9B8:
 /* 8035B9C4 00357664  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035B9C8 00357668  7C 08 03 A6 */	mtlr r0
 /* 8035B9CC 0035766C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035B9D0 00357670  4E 80 00 20 */	blr 
+/* 8035B9D0 00357670  4E 80 00 20 */	blr
 
 .global "l2cu_reject_connection"
 "l2cu_reject_connection":
@@ -514,7 +514,7 @@ lbl_8035BA78:
 /* 8035BA84 00357724  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035BA88 00357728  7C 08 03 A6 */	mtlr r0
 /* 8035BA8C 0035772C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035BA90 00357730  4E 80 00 20 */	blr 
+/* 8035BA90 00357730  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_config_req"
 "l2cu_send_peer_config_req":
@@ -717,7 +717,7 @@ lbl_8035BD74:
 /* 8035BD7C 00357A1C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035BD80 00357A20  7C 08 03 A6 */	mtlr r0
 /* 8035BD84 00357A24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035BD88 00357A28  4E 80 00 20 */	blr 
+/* 8035BD88 00357A28  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_config_rsp"
 "l2cu_send_peer_config_rsp":
@@ -920,7 +920,7 @@ lbl_8035C06C:
 /* 8035C074 00357D14  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035C078 00357D18  7C 08 03 A6 */	mtlr r0
 /* 8035C07C 00357D1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035C080 00357D20  4E 80 00 20 */	blr 
+/* 8035C080 00357D20  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_config_rej"
 "l2cu_send_peer_config_rej":
@@ -1040,7 +1040,7 @@ lbl_8035C220:
 /* 8035C228 00357EC8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035C22C 00357ECC  7C 08 03 A6 */	mtlr r0
 /* 8035C230 00357ED0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035C234 00357ED4  4E 80 00 20 */	blr 
+/* 8035C234 00357ED4  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_disc_req"
 "l2cu_send_peer_disc_req":
@@ -1098,7 +1098,7 @@ lbl_8035C2F8:
 /* 8035C2FC 00357F9C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035C300 00357FA0  7C 08 03 A6 */	mtlr r0
 /* 8035C304 00357FA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035C308 00357FA8  4E 80 00 20 */	blr 
+/* 8035C308 00357FA8  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_disc_rsp"
 "l2cu_send_peer_disc_rsp":
@@ -1151,7 +1151,7 @@ lbl_8035C3B0:
 /* 8035C3BC 0035805C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035C3C0 00358060  7C 08 03 A6 */	mtlr r0
 /* 8035C3C4 00358064  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035C3C8 00358068  4E 80 00 20 */	blr 
+/* 8035C3C8 00358068  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_echo_req"
 "l2cu_send_peer_echo_req":
@@ -1253,7 +1253,7 @@ lbl_8035C520:
 /* 8035C52C 003581CC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035C530 003581D0  7C 08 03 A6 */	mtlr r0
 /* 8035C534 003581D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035C538 003581D8  4E 80 00 20 */	blr 
+/* 8035C538 003581D8  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_echo_rsp"
 "l2cu_send_peer_echo_rsp":
@@ -1369,7 +1369,7 @@ lbl_8035C6BC:
 /* 8035C6C8 00358368  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035C6CC 0035836C  7C 08 03 A6 */	mtlr r0
 /* 8035C6D0 00358370  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035C6D4 00358374  4E 80 00 20 */	blr 
+/* 8035C6D4 00358374  4E 80 00 20 */	blr
 
 .global "l2cu_send_peer_info_rsp"
 "l2cu_send_peer_info_rsp":
@@ -1415,7 +1415,7 @@ lbl_8035C764:
 /* 8035C76C 0035840C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035C770 00358410  7C 08 03 A6 */	mtlr r0
 /* 8035C774 00358414  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035C778 00358418  4E 80 00 20 */	blr 
+/* 8035C778 00358418  4E 80 00 20 */	blr
 
 .global "l2cu_allocate_ccb"
 "l2cu_allocate_ccb":
@@ -1425,7 +1425,7 @@ lbl_8035C764:
 /* 8035C788 00358428  2C 08 00 00 */	cmpwi r8, 0
 /* 8035C78C 0035842C  40 82 00 0C */	bne lbl_8035C798
 /* 8035C790 00358430  38 60 00 00 */	li r3, 0
-/* 8035C794 00358434  4E 80 00 20 */	blr 
+/* 8035C794 00358434  4E 80 00 20 */	blr
 lbl_8035C798:
 /* 8035C798 00358438  38 07 01 78 */	addi r0, r7, 0x178
 /* 8035C79C 0035843C  3C 80 84 21 */	lis r4, 0x84210843@ha
@@ -1488,7 +1488,7 @@ lbl_8035C81C:
 /* 8035C878 00358518  90 88 00 04 */	stw r4, 4(r8)
 /* 8035C87C 0035851C  98 A8 00 37 */	stb r5, 0x37(r8)
 /* 8035C880 00358520  91 08 00 28 */	stw r8, 0x28(r8)
-/* 8035C884 00358524  4E 80 00 20 */	blr 
+/* 8035C884 00358524  4E 80 00 20 */	blr
 
 .global "l2cu_release_ccb"
 "l2cu_release_ccb":
@@ -1607,7 +1607,7 @@ lbl_8035CA14:
 /* 8035CA1C 003586BC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035CA20 003586C0  7C 08 03 A6 */	mtlr r0
 /* 8035CA24 003586C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035CA28 003586C8  4E 80 00 20 */	blr 
+/* 8035CA28 003586C8  4E 80 00 20 */	blr
 
 .global "l2cu_find_ccb_by_cid"
 "l2cu_find_ccb_by_cid":
@@ -1635,7 +1635,7 @@ lbl_8035CA68:
 /* 8035CA7C 0035871C  38 A0 00 00 */	li r5, 0
 lbl_8035CA80:
 /* 8035CA80 00358720  7C A3 2B 78 */	mr r3, r5
-/* 8035CA84 00358724  4E 80 00 20 */	blr 
+/* 8035CA84 00358724  4E 80 00 20 */	blr
 
 .global "l2cu_allocate_rcb"
 "l2cu_allocate_rcb":
@@ -1653,20 +1653,20 @@ lbl_8035CAA0:
 /* 8035CAB0 00358750  98 04 00 00 */	stb r0, 0(r4)
 /* 8035CAB4 00358754  B0 64 00 02 */	sth r3, 2(r4)
 /* 8035CAB8 00358758  7C 83 23 78 */	mr r3, r4
-/* 8035CABC 0035875C  4E 80 00 20 */	blr 
+/* 8035CABC 0035875C  4E 80 00 20 */	blr
 lbl_8035CAC0:
 /* 8035CAC0 00358760  38 A5 00 01 */	addi r5, r5, 1
 /* 8035CAC4 00358764  38 84 00 2C */	addi r4, r4, 0x2c
 /* 8035CAC8 00358768  42 00 FF D8 */	bdnz lbl_8035CAA0
 /* 8035CACC 0035876C  38 60 00 00 */	li r3, 0
-/* 8035CAD0 00358770  4E 80 00 20 */	blr 
+/* 8035CAD0 00358770  4E 80 00 20 */	blr
 
 .global "l2cu_release_rcb"
 "l2cu_release_rcb":
 /* 8035CAD4 00358774  38 00 00 00 */	li r0, 0
 /* 8035CAD8 00358778  98 03 00 00 */	stb r0, 0(r3)
 /* 8035CADC 0035877C  B0 03 00 02 */	sth r0, 2(r3)
-/* 8035CAE0 00358780  4E 80 00 20 */	blr 
+/* 8035CAE0 00358780  4E 80 00 20 */	blr
 
 .global "l2cu_find_rcb_by_psm"
 "l2cu_find_rcb_by_psm":
@@ -1684,7 +1684,7 @@ lbl_8035CAFC:
 /* 8035CB0C 003587AC  7C 00 18 40 */	cmplw r0, r3
 /* 8035CB10 003587B0  40 82 00 0C */	bne lbl_8035CB1C
 /* 8035CB14 003587B4  7C 83 23 78 */	mr r3, r4
-/* 8035CB18 003587B8  4E 80 00 20 */	blr 
+/* 8035CB18 003587B8  4E 80 00 20 */	blr
 lbl_8035CB1C:
 /* 8035CB1C 003587BC  8C 04 00 2C */	lbzu r0, 0x2c(r4)
 /* 8035CB20 003587C0  38 A5 00 01 */	addi r5, r5, 1
@@ -1694,7 +1694,7 @@ lbl_8035CB1C:
 /* 8035CB30 003587D0  7C 00 18 40 */	cmplw r0, r3
 /* 8035CB34 003587D4  40 82 00 0C */	bne lbl_8035CB40
 /* 8035CB38 003587D8  7C 83 23 78 */	mr r3, r4
-/* 8035CB3C 003587DC  4E 80 00 20 */	blr 
+/* 8035CB3C 003587DC  4E 80 00 20 */	blr
 lbl_8035CB40:
 /* 8035CB40 003587E0  8C 04 00 2C */	lbzu r0, 0x2c(r4)
 /* 8035CB44 003587E4  38 A5 00 01 */	addi r5, r5, 1
@@ -1704,7 +1704,7 @@ lbl_8035CB40:
 /* 8035CB54 003587F4  7C 00 18 40 */	cmplw r0, r3
 /* 8035CB58 003587F8  40 82 00 0C */	bne lbl_8035CB64
 /* 8035CB5C 003587FC  7C 83 23 78 */	mr r3, r4
-/* 8035CB60 00358800  4E 80 00 20 */	blr 
+/* 8035CB60 00358800  4E 80 00 20 */	blr
 lbl_8035CB64:
 /* 8035CB64 00358804  8C 04 00 2C */	lbzu r0, 0x2c(r4)
 /* 8035CB68 00358808  38 A5 00 01 */	addi r5, r5, 1
@@ -1714,13 +1714,13 @@ lbl_8035CB64:
 /* 8035CB78 00358818  7C 00 18 40 */	cmplw r0, r3
 /* 8035CB7C 0035881C  40 82 00 0C */	bne lbl_8035CB88
 /* 8035CB80 00358820  7C 83 23 78 */	mr r3, r4
-/* 8035CB84 00358824  4E 80 00 20 */	blr 
+/* 8035CB84 00358824  4E 80 00 20 */	blr
 lbl_8035CB88:
 /* 8035CB88 00358828  38 A5 00 01 */	addi r5, r5, 1
 /* 8035CB8C 0035882C  38 84 00 2C */	addi r4, r4, 0x2c
 /* 8035CB90 00358830  42 00 FF 6C */	bdnz lbl_8035CAFC
 /* 8035CB94 00358834  38 60 00 00 */	li r3, 0
-/* 8035CB98 00358838  4E 80 00 20 */	blr 
+/* 8035CB98 00358838  4E 80 00 20 */	blr
 
 .global "l2cu_process_peer_cfg_req"
 "l2cu_process_peer_cfg_req":
@@ -1795,7 +1795,7 @@ lbl_8035CC8C:
 /* 8035CC94 00358934  38 60 00 01 */	li r3, 1
 lbl_8035CC98:
 /* 8035CC98 00358938  2C 03 00 00 */	cmpwi r3, 0
-/* 8035CC9C 0035893C  4C 82 00 20 */	bnelr 
+/* 8035CC9C 0035893C  4C 82 00 20 */	bnelr
 /* 8035CCA0 00358940  38 00 00 01 */	li r0, 1
 /* 8035CCA4 00358944  2C 06 00 00 */	cmpwi r6, 0
 /* 8035CCA8 00358948  B0 04 00 00 */	sth r0, 0(r4)
@@ -1815,13 +1815,13 @@ lbl_8035CCC8:
 lbl_8035CCD8:
 /* 8035CCD8 00358978  38 00 00 00 */	li r0, 0
 /* 8035CCDC 0035897C  98 04 00 24 */	stb r0, 0x24(r4)
-/* 8035CCE0 00358980  4E 80 00 20 */	blr 
+/* 8035CCE0 00358980  4E 80 00 20 */	blr
 
 .global "l2cu_process_peer_cfg_rsp"
 "l2cu_process_peer_cfg_rsp":
 /* 8035CCE4 00358984  88 04 00 06 */	lbz r0, 6(r4)
 /* 8035CCE8 00358988  2C 00 00 00 */	cmpwi r0, 0
-/* 8035CCEC 0035898C  4D 82 00 20 */	beqlr 
+/* 8035CCEC 0035898C  4D 82 00 20 */	beqlr
 /* 8035CCF0 00358990  80 A4 00 08 */	lwz r5, 8(r4)
 /* 8035CCF4 00358994  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 8035CCF8 00358998  90 A3 00 58 */	stw r5, 0x58(r3)
@@ -1834,7 +1834,7 @@ lbl_8035CCD8:
 /* 8035CD14 003589B4  80 04 00 1C */	lwz r0, 0x1c(r4)
 /* 8035CD18 003589B8  90 A3 00 68 */	stw r5, 0x68(r3)
 /* 8035CD1C 003589BC  90 03 00 6C */	stw r0, 0x6c(r3)
-/* 8035CD20 003589C0  4E 80 00 20 */	blr 
+/* 8035CD20 003589C0  4E 80 00 20 */	blr
 
 .global "l2cu_process_our_cfg_req"
 "l2cu_process_our_cfg_req":
@@ -1908,13 +1908,13 @@ lbl_8035CE1C:
 /* 8035CE24 00358AC4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035CE28 00358AC8  7C 08 03 A6 */	mtlr r0
 /* 8035CE2C 00358ACC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035CE30 00358AD0  4E 80 00 20 */	blr 
+/* 8035CE30 00358AD0  4E 80 00 20 */	blr
 
 .global "l2cu_process_our_cfg_rsp"
 "l2cu_process_our_cfg_rsp":
 /* 8035CE34 00358AD4  88 04 00 06 */	lbz r0, 6(r4)
 /* 8035CE38 00358AD8  2C 00 00 00 */	cmpwi r0, 0
-/* 8035CE3C 00358ADC  4D 82 00 20 */	beqlr 
+/* 8035CE3C 00358ADC  4D 82 00 20 */	beqlr
 /* 8035CE40 00358AE0  80 A4 00 08 */	lwz r5, 8(r4)
 /* 8035CE44 00358AE4  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 8035CE48 00358AE8  90 A3 00 40 */	stw r5, 0x40(r3)
@@ -1927,7 +1927,7 @@ lbl_8035CE1C:
 /* 8035CE64 00358B04  80 04 00 1C */	lwz r0, 0x1c(r4)
 /* 8035CE68 00358B08  90 A3 00 50 */	stw r5, 0x50(r3)
 /* 8035CE6C 00358B0C  90 03 00 54 */	stw r0, 0x54(r3)
-/* 8035CE70 00358B10  4E 80 00 20 */	blr 
+/* 8035CE70 00358B10  4E 80 00 20 */	blr
 
 .global "l2cu_device_reset"
 "l2cu_device_reset":
@@ -1959,7 +1959,7 @@ lbl_8035CEB8:
 /* 8035CED0 00358B70  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035CED4 00358B74  7C 08 03 A6 */	mtlr r0
 /* 8035CED8 00358B78  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035CEDC 00358B7C  4E 80 00 20 */	blr 
+/* 8035CEDC 00358B7C  4E 80 00 20 */	blr
 
 .global "l2cu_create_conn"
 "l2cu_create_conn":
@@ -2037,7 +2037,7 @@ lbl_8035CFE0:
 /* 8035CFE8 00358C88  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035CFEC 00358C8C  7C 08 03 A6 */	mtlr r0
 /* 8035CFF0 00358C90  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035CFF4 00358C94  4E 80 00 20 */	blr 
+/* 8035CFF4 00358C94  4E 80 00 20 */	blr
 
 .global "l2cu_create_conn_after_switch"
 "l2cu_create_conn_after_switch":
@@ -2097,7 +2097,7 @@ lbl_8035D0B0:
 /* 8035D0B8 00358D58  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035D0BC 00358D5C  7C 08 03 A6 */	mtlr r0
 /* 8035D0C0 00358D60  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035D0C4 00358D64  4E 80 00 20 */	blr 
+/* 8035D0C4 00358D64  4E 80 00 20 */	blr
 
 .global "l2cu_find_lcb_by_state"
 "l2cu_find_lcb_by_state":
@@ -2110,7 +2110,7 @@ lbl_8035D0B0:
 /* 8035D0E0 00358D80  7C 00 18 00 */	cmpw r0, r3
 /* 8035D0E4 00358D84  40 82 00 0C */	bne lbl_8035D0F0
 /* 8035D0E8 00358D88  7C 83 23 78 */	mr r3, r4
-/* 8035D0EC 00358D8C  4E 80 00 20 */	blr 
+/* 8035D0EC 00358D8C  4E 80 00 20 */	blr
 lbl_8035D0F0:
 /* 8035D0F0 00358D90  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035D0F4 00358D94  2C 00 00 00 */	cmpwi r0, 0
@@ -2119,7 +2119,7 @@ lbl_8035D0F0:
 /* 8035D100 00358DA0  7C 00 18 00 */	cmpw r0, r3
 /* 8035D104 00358DA4  40 82 00 0C */	bne lbl_8035D110
 /* 8035D108 00358DA8  7C 83 23 78 */	mr r3, r4
-/* 8035D10C 00358DAC  4E 80 00 20 */	blr 
+/* 8035D10C 00358DAC  4E 80 00 20 */	blr
 lbl_8035D110:
 /* 8035D110 00358DB0  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035D114 00358DB4  2C 00 00 00 */	cmpwi r0, 0
@@ -2128,7 +2128,7 @@ lbl_8035D110:
 /* 8035D120 00358DC0  7C 00 18 00 */	cmpw r0, r3
 /* 8035D124 00358DC4  40 82 00 0C */	bne lbl_8035D130
 /* 8035D128 00358DC8  7C 83 23 78 */	mr r3, r4
-/* 8035D12C 00358DCC  4E 80 00 20 */	blr 
+/* 8035D12C 00358DCC  4E 80 00 20 */	blr
 lbl_8035D130:
 /* 8035D130 00358DD0  8C 04 00 5C */	lbzu r0, 0x5c(r4)
 /* 8035D134 00358DD4  2C 00 00 00 */	cmpwi r0, 0
@@ -2137,10 +2137,10 @@ lbl_8035D130:
 /* 8035D140 00358DE0  7C 00 18 00 */	cmpw r0, r3
 /* 8035D144 00358DE4  40 82 00 0C */	bne lbl_8035D150
 /* 8035D148 00358DE8  7C 83 23 78 */	mr r3, r4
-/* 8035D14C 00358DEC  4E 80 00 20 */	blr 
+/* 8035D14C 00358DEC  4E 80 00 20 */	blr
 lbl_8035D150:
 /* 8035D150 00358DF0  38 60 00 00 */	li r3, 0
-/* 8035D154 00358DF4  4E 80 00 20 */	blr 
+/* 8035D154 00358DF4  4E 80 00 20 */	blr
 
 .global "l2cu_lcb_disconnecting"
 "l2cu_lcb_disconnecting":
@@ -2163,7 +2163,7 @@ lbl_8035D174:
 /* 8035D194 00358E34  40 82 00 0C */	bne lbl_8035D1A0
 lbl_8035D198:
 /* 8035D198 00358E38  38 60 00 01 */	li r3, 1
-/* 8035D19C 00358E3C  4E 80 00 20 */	blr 
+/* 8035D19C 00358E3C  4E 80 00 20 */	blr
 lbl_8035D1A0:
 /* 8035D1A0 00358E40  80 05 00 0C */	lwz r0, 0xc(r5)
 /* 8035D1A4 00358E44  7C 04 00 40 */	cmplw r4, r0
@@ -2176,7 +2176,7 @@ lbl_8035D1A0:
 /* 8035D1C0 00358E60  28 00 00 01 */	cmplwi r0, 1
 /* 8035D1C4 00358E64  41 81 00 0C */	bgt lbl_8035D1D0
 /* 8035D1C8 00358E68  38 60 00 01 */	li r3, 1
-/* 8035D1CC 00358E6C  4E 80 00 20 */	blr 
+/* 8035D1CC 00358E6C  4E 80 00 20 */	blr
 lbl_8035D1D0:
 /* 8035D1D0 00358E70  88 05 00 5C */	lbz r0, 0x5c(r5)
 /* 8035D1D4 00358E74  38 C6 00 01 */	addi r6, r6, 1
@@ -2190,7 +2190,7 @@ lbl_8035D1D0:
 /* 8035D1F4 00358E94  40 82 00 0C */	bne lbl_8035D200
 lbl_8035D1F8:
 /* 8035D1F8 00358E98  38 60 00 01 */	li r3, 1
-/* 8035D1FC 00358E9C  4E 80 00 20 */	blr 
+/* 8035D1FC 00358E9C  4E 80 00 20 */	blr
 lbl_8035D200:
 /* 8035D200 00358EA0  80 05 00 68 */	lwz r0, 0x68(r5)
 /* 8035D204 00358EA4  7C 04 00 40 */	cmplw r4, r0
@@ -2203,34 +2203,56 @@ lbl_8035D200:
 /* 8035D220 00358EC0  28 00 00 01 */	cmplwi r0, 1
 /* 8035D224 00358EC4  41 81 00 0C */	bgt lbl_8035D230
 /* 8035D228 00358EC8  38 60 00 01 */	li r3, 1
-/* 8035D22C 00358ECC  4E 80 00 20 */	blr 
+/* 8035D22C 00358ECC  4E 80 00 20 */	blr
 lbl_8035D230:
 /* 8035D230 00358ED0  38 C6 00 01 */	addi r6, r6, 1
 /* 8035D234 00358ED4  38 A5 00 B8 */	addi r5, r5, 0xb8
 /* 8035D238 00358ED8  42 00 FF 3C */	bdnz lbl_8035D174
-/* 8035D23C 00358EDC  4E 80 00 20 */	blr 
+/* 8035D23C 00358EDC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80464C80
 lbl_80464C80:
-	.incbin "baserom.dol", 0x460D80, 0x1C
+	# ROM: 0x460D80
+	.asciz "L2CAP - no buffer cmd_rej"
+	.byte 0x00, 0x00
+
 .global lbl_80464C9C
 lbl_80464C9C:
-	.incbin "baserom.dol", 0x460D9C, 0x20
+	# ROM: 0x460D9C
+	.asciz "L2CAP - no buffer for conn_req"
+	.byte 0x00
+
 .global lbl_80464CBC
 lbl_80464CBC:
-	.incbin "baserom.dol", 0x460DBC, 0x20
+	# ROM: 0x460DBC
+	.asciz "L2CAP - no buffer for cfg_rej"
+	.byte 0x00, 0x00
+
 .global lbl_80464CDC
 lbl_80464CDC:
-	.incbin "baserom.dol", 0x460DDC, 0x64
+	# ROM: 0x460DDC
+	.asciz "L2CAP - no buffer for echo_req"
+	.byte 0x00
+	.asciz "l2cu_create_conn - btm_is_sco_active_by_bdaddr() is_sco_active = %s"
+
 .global lbl_80464D40
 lbl_80464D40:
-	.incbin "baserom.dol", 0x460E40, 0x28
+	# ROM: 0x460E40
+	.asciz "L2CAP - no buffer for l2cu_create_conn"
+	.byte 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D72E8
 lbl_805D72E8:
-	.incbin "baserom.dol", 0x486E68, 0x8
+	# ROM: 0x486E68
+	.asciz "TRUE"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D72F0
 lbl_805D72F0:
-	.incbin "baserom.dol", 0x486E70, 0x8
+	# ROM: 0x486E70
+	.asciz "FALSE"
+	.byte 0x00, 0x00
+

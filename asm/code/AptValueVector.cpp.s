@@ -20,7 +20,7 @@
 /* 80332108 0032DDA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033210C 0032DDAC  7C 08 03 A6 */	mtlr r0
 /* 80332110 0032DDB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80332114 0032DDB4  4E 80 00 20 */	blr 
+/* 80332114 0032DDB4  4E 80 00 20 */	blr
 
 .global "__dt__14AptValueVectorFv"
 "__dt__14AptValueVectorFv":
@@ -50,7 +50,7 @@ lbl_80332164:
 /* 80332170 0032DE10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80332174 0032DE14  7C 08 03 A6 */	mtlr r0
 /* 80332178 0032DE18  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033217C 0032DE1C  4E 80 00 20 */	blr 
+/* 8033217C 0032DE1C  4E 80 00 20 */	blr
 
 .global "ReleaseValues__14AptValueVectorFv"
 "ReleaseValues__14AptValueVectorFv":
@@ -76,7 +76,7 @@ lbl_803321C0:
 /* 803321C4 0032DE64  7F E3 FB 78 */	mr r3, r31
 /* 803321C8 0032DE68  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803321CC 0032DE6C  7D 89 03 A6 */	mtctr r12
-/* 803321D0 0032DE70  4E 80 04 21 */	bctrl 
+/* 803321D0 0032DE70  4E 80 04 21 */	bctrl
 lbl_803321D4:
 /* 803321D4 0032DE74  80 1E 00 04 */	lwz r0, 4(r30)
 /* 803321D8 0032DE78  2C 00 00 00 */	cmpwi r0, 0
@@ -86,7 +86,7 @@ lbl_803321D4:
 /* 803321E8 0032DE88  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803321EC 0032DE8C  7C 08 03 A6 */	mtlr r0
 /* 803321F0 0032DE90  38 21 00 10 */	addi r1, r1, 0x10
-/* 803321F4 0032DE94  4E 80 00 20 */	blr 
+/* 803321F4 0032DE94  4E 80 00 20 */	blr
 
 .global "__dl__14AptValueVectorFPvUl"
 "__dl__14AptValueVectorFPvUl":
@@ -104,4 +104,4 @@ lbl_803321D4:
 /* 80332218 0032DEB8  90 03 00 04 */	stw r0, 4(r3)
 /* 8033221C 0032DEBC  54 00 10 3A */	slwi r0, r0, 2
 /* 80332220 0032DEC0  7C 65 00 2E */	lwzx r3, r5, r0
-/* 80332224 0032DEC4  4E 80 00 20 */	blr 
+/* 80332224 0032DEC4  4E 80 00 20 */	blr

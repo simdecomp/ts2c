@@ -17,7 +17,7 @@
 /* 8038A57C 0038621C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A580 00386220  7C 08 03 A6 */	mtlr r0
 /* 8038A584 00386224  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A588 00386228  4E 80 00 20 */	blr 
+/* 8038A588 00386228  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt8BoundingFv"
 "__dt__Q36nw4hbm3lyt8BoundingFv":
@@ -43,7 +43,7 @@ lbl_8038A5C8:
 /* 8038A5D4 00386274  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A5D8 00386278  7C 08 03 A6 */	mtlr r0
 /* 8038A5DC 0038627C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A5E0 00386280  4E 80 00 20 */	blr 
+/* 8038A5E0 00386280  4E 80 00 20 */	blr
 
 .global "DrawSelf__Q36nw4hbm3lyt8BoundingFRCQ36nw4hbm3lyt8DrawInfo"
 "DrawSelf__Q36nw4hbm3lyt8BoundingFRCQ36nw4hbm3lyt8DrawInfo":
@@ -63,7 +63,7 @@ lbl_8038A5C8:
 /* 8038A618 003862B8  7F E4 FB 78 */	mr r4, r31
 /* 8038A61C 003862BC  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 8038A620 003862C0  7D 89 03 A6 */	mtctr r12
-/* 8038A624 003862C4  4E 80 04 21 */	bctrl 
+/* 8038A624 003862C4  4E 80 04 21 */	bctrl
 /* 8038A628 003862C8  3C 80 00 FF */	lis r4, 0x00FF00FF@ha
 /* 8038A62C 003862CC  38 61 00 08 */	addi r3, r1, 8
 /* 8038A630 003862D0  38 84 00 FF */	addi r4, r4, 0x00FF00FF@l
@@ -85,7 +85,7 @@ lbl_8038A664:
 /* 8038A66C 0038630C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8038A670 00386310  7C 08 03 A6 */	mtlr r0
 /* 8038A674 00386314  38 21 00 20 */	addi r1, r1, 0x20
-/* 8038A678 00386318  4E 80 00 20 */	blr 
+/* 8038A678 00386318  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut5ColorFUl"
 "__ct__Q36nw4hbm2ut5ColorFUl":
@@ -100,7 +100,7 @@ lbl_8038A664:
 /* 8038A69C 0038633C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A6A0 00386340  7C 08 03 A6 */	mtlr r0
 /* 8038A6A4 00386344  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A6A8 00386348  4E 80 00 20 */	blr 
+/* 8038A6A8 00386348  4E 80 00 20 */	blr
 
 .global "__as__Q36nw4hbm2ut5ColorFUl"
 "__as__Q36nw4hbm2ut5ColorFUl":
@@ -119,11 +119,11 @@ lbl_8038A664:
 /* 8038A6DC 0038637C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038A6E0 00386380  7C 08 03 A6 */	mtlr r0
 /* 8038A6E4 00386384  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038A6E8 00386388  4E 80 00 20 */	blr 
+/* 8038A6E8 00386388  4E 80 00 20 */	blr
 
 .global "ToU32ref__Q36nw4hbm2ut5ColorFv"
 "ToU32ref__Q36nw4hbm2ut5ColorFv":
-/* 8038A6EC 0038638C  4E 80 00 20 */	blr 
+/* 8038A6EC 0038638C  4E 80 00 20 */	blr
 
 .global "IsDebugDrawMode__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsDebugDrawMode__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -132,12 +132,12 @@ lbl_8038A664:
 /* 8038A6F8 00386398  7C 03 00 D0 */	neg r0, r3
 /* 8038A6FC 0038639C  7C 00 1B 78 */	or r0, r0, r3
 /* 8038A700 003863A0  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8038A704 003863A4  4E 80 00 20 */	blr 
+/* 8038A704 003863A4  4E 80 00 20 */	blr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm3lyt8BoundingCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm3lyt8BoundingCFv":
 /* 8038A708 003863A8  38 6D C5 48 */	addi r3, r13, "typeInfo__Q36nw4hbm3lyt8Bounding"-_SDA_BASE_
-/* 8038A70C 003863AC  4E 80 00 20 */	blr 
+/* 8038A70C 003863AC  4E 80 00 20 */	blr
 
 .global "__sinit_lyt_bounding_cpp"
 "__sinit_lyt_bounding_cpp":
@@ -148,12 +148,39 @@ lbl_8038A664:
 .global "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo"
 "__ct__Q46nw4hbm2ut6detail15RuntimeTypeInfoFPCQ46nw4hbm2ut6detail15RuntimeTypeInfo":
 /* 8038A71C 003863BC  90 83 00 00 */	stw r4, 0(r3)
-/* 8038A720 003863C0  4E 80 00 20 */	blr 
+/* 8038A720 003863C0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3lyt8Bounding"
 "__vt__Q36nw4hbm3lyt8Bounding":
-	.incbin "baserom.dol", 0x466108, 0x68
+	# ROM: 0x466108
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt8BoundingFv" ;# ptr (0x8038A58C)
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm3lyt8BoundingCFv" ;# ptr (0x8038A708)
+	.4byte "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803921C0)
+	.4byte "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803926D0)
+	.4byte "DrawSelf__Q36nw4hbm3lyt8BoundingFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x8038A5E4)
+	.4byte "Animate__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x8039283C)
+	.4byte "AnimateSelf__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x80392904)
+	.4byte "GetVtxColor__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391EC4)
+	.4byte "SetVtxColor__Q36nw4hbm3lyt4PaneFUlQ36nw4hbm2ut5Color" ;# ptr (0x80391ECC)
+	.4byte "GetColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391ED0)
+	.4byte "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391F54)
+	.4byte "GetVtxColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391FE8)
+	.4byte "SetVtxColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391FF0)
+	.4byte "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x80391FF4)
+	.4byte "FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x803920D0)
+	.4byte "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A10)
+	.4byte "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A90)
+	.4byte "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb" ;# ptr (0x80392B54)
+	.4byte "UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392B6C)
+	.4byte "FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392CC0)
+	.4byte "SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb" ;# ptr (0x80392D38)
+	.4byte "GetMaterial__Q36nw4hbm3lyt4PaneCFv" ;# ptr (0x80393070)
+	.4byte "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80392E38)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm3lyt8Bounding"

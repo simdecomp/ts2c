@@ -46,7 +46,7 @@ lbl_803E783C:
 /* 803E7840 003E34E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E7844 003E34E4  7C 08 03 A6 */	mtlr r0
 /* 803E7848 003E34E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E784C 003E34EC  4E 80 00 20 */	blr 
+/* 803E784C 003E34EC  4E 80 00 20 */	blr
 
 .global "SCCheckStatus"
 "SCCheckStatus":
@@ -126,7 +126,7 @@ lbl_803E794C:
 /* 803E795C 003E35FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E7960 003E3600  7C 08 03 A6 */	mtlr r0
 /* 803E7964 003E3604  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E7968 003E3608  4E 80 00 20 */	blr 
+/* 803E7968 003E3608  4E 80 00 20 */	blr
 
 .global "SCReloadConfFileAsync"
 "SCReloadConfFileAsync":
@@ -200,7 +200,7 @@ lbl_803E7A64:
 /* 803E7A70 003E3710  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E7A74 003E3714  7C 08 03 A6 */	mtlr r0
 /* 803E7A78 003E3718  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E7A7C 003E371C  4E 80 00 20 */	blr 
+/* 803E7A7C 003E371C  4E 80 00 20 */	blr
 
 .global "OpenCallbackFromReload"
 "OpenCallbackFromReload":
@@ -259,7 +259,7 @@ lbl_803E7B3C:
 /* 803E7B40 003E37E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E7B44 003E37E4  7C 08 03 A6 */	mtlr r0
 /* 803E7B48 003E37E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E7B4C 003E37EC  4E 80 00 20 */	blr 
+/* 803E7B4C 003E37EC  4E 80 00 20 */	blr
 
 .global "ReadCallbackFromReload"
 "ReadCallbackFromReload":
@@ -325,7 +325,7 @@ lbl_803E7C24:
 /* 803E7C28 003E38C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E7C2C 003E38CC  7C 08 03 A6 */	mtlr r0
 /* 803E7C30 003E38D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E7C34 003E38D4  4E 80 00 20 */	blr 
+/* 803E7C34 003E38D4  4E 80 00 20 */	blr
 
 .global "CloseCallbackFromReload"
 "CloseCallbackFromReload":
@@ -367,7 +367,7 @@ lbl_803E7CB4:
 /* 803E7CB4 003E3954  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E7CB8 003E3958  7C 08 03 A6 */	mtlr r0
 /* 803E7CBC 003E395C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E7CC0 003E3960  4E 80 00 20 */	blr 
+/* 803E7CC0 003E3960  4E 80 00 20 */	blr
 
 .global "FinishFromReload"
 "FinishFromReload":
@@ -444,7 +444,7 @@ lbl_803E7DAC:
 /* 803E7DC8 003E3A68  41 82 00 14 */	beq lbl_803E7DDC
 /* 803E7DCC 003E3A6C  80 7F 01 5C */	lwz r3, 0x15c(r31)
 /* 803E7DD0 003E3A70  7D 89 03 A6 */	mtctr r12
-/* 803E7DD4 003E3A74  4E 80 04 21 */	bctrl 
+/* 803E7DD4 003E3A74  4E 80 04 21 */	bctrl
 /* 803E7DD8 003E3A78  93 DF 01 58 */	stw r30, 0x158(r31)
 lbl_803E7DDC:
 /* 803E7DDC 003E3A7C  9B 8D C8 18 */	stb r28, "BgJobStatus"-_SDA_BASE_(r13)
@@ -456,7 +456,7 @@ lbl_803E7DE0:
 /* 803E7DF0 003E3A90  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E7DF4 003E3A94  7C 08 03 A6 */	mtlr r0
 /* 803E7DF8 003E3A98  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E7DFC 003E3A9C  4E 80 00 20 */	blr 
+/* 803E7DFC 003E3A9C  4E 80 00 20 */	blr
 
 .global "CloseCallbackFromReloadError"
 "CloseCallbackFromReloadError":
@@ -624,7 +624,7 @@ lbl_803E8038:
 /* 803E8040 003E3CE0  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803E8044 003E3CE4  7C 08 03 A6 */	mtlr r0
 /* 803E8048 003E3CE8  38 21 00 60 */	addi r1, r1, 0x60
-/* 803E804C 003E3CEC  4E 80 00 20 */	blr 
+/* 803E804C 003E3CEC  4E 80 00 20 */	blr
 
 .global "UnpackItem"
 "UnpackItem":
@@ -743,7 +743,7 @@ lbl_803E81C0:
 /* 803E81D8 003E3E78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E81DC 003E3E7C  7C 08 03 A6 */	mtlr r0
 /* 803E81E0 003E3E80  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E81E4 003E3E84  4E 80 00 20 */	blr 
+/* 803E81E4 003E3E84  4E 80 00 20 */	blr
 
 .global "DeleteItemByID"
 "DeleteItemByID":
@@ -855,7 +855,7 @@ lbl_803E8360:
 /* 803E8368 003E4008  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E836C 003E400C  7C 08 03 A6 */	mtlr r0
 /* 803E8370 003E4010  38 21 00 30 */	addi r1, r1, 0x30
-/* 803E8374 003E4014  4E 80 00 20 */	blr 
+/* 803E8374 003E4014  4E 80 00 20 */	blr
 
 .global "CreateItemByID"
 "CreateItemByID":
@@ -1033,7 +1033,7 @@ lbl_803E85D8:
 /* 803E85E0 003E4280  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E85E4 003E4284  7C 08 03 A6 */	mtlr r0
 /* 803E85E8 003E4288  38 21 00 30 */	addi r1, r1, 0x30
-/* 803E85EC 003E428C  4E 80 00 20 */	blr 
+/* 803E85EC 003E428C  4E 80 00 20 */	blr
 
 .global "SCFindByteArrayItem"
 "SCFindByteArrayItem":
@@ -1095,7 +1095,7 @@ lbl_803E86AC:
 /* 803E86C0 003E4360  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E86C4 003E4364  7C 08 03 A6 */	mtlr r0
 /* 803E86C8 003E4368  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E86CC 003E436C  4E 80 00 20 */	blr 
+/* 803E86CC 003E436C  4E 80 00 20 */	blr
 
 .global "SCReplaceByteArrayItem"
 "SCReplaceByteArrayItem":
@@ -1177,7 +1177,7 @@ lbl_803E87D0:
 /* 803E87E4 003E4484  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E87E8 003E4488  7C 08 03 A6 */	mtlr r0
 /* 803E87EC 003E448C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E87F0 003E4490  4E 80 00 20 */	blr 
+/* 803E87F0 003E4490  4E 80 00 20 */	blr
 
 .global "SCReplaceIntegerItem"
 "SCReplaceIntegerItem":
@@ -1256,7 +1256,7 @@ lbl_803E88E0:
 /* 803E88FC 003E459C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E8900 003E45A0  7C 08 03 A6 */	mtlr r0
 /* 803E8904 003E45A4  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E8908 003E45A8  4E 80 00 20 */	blr 
+/* 803E8908 003E45A8  4E 80 00 20 */	blr
 
 .global "SCFindU8Item"
 "SCFindU8Item":
@@ -1315,7 +1315,7 @@ lbl_803E89B4:
 /* 803E89D0 003E4670  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E89D4 003E4674  7C 08 03 A6 */	mtlr r0
 /* 803E89D8 003E4678  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E89DC 003E467C  4E 80 00 20 */	blr 
+/* 803E89DC 003E467C  4E 80 00 20 */	blr
 
 .global "SCFindS8Item"
 "SCFindS8Item":
@@ -1374,7 +1374,7 @@ lbl_803E8A88:
 /* 803E8AA4 003E4744  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E8AA8 003E4748  7C 08 03 A6 */	mtlr r0
 /* 803E8AAC 003E474C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E8AB0 003E4750  4E 80 00 20 */	blr 
+/* 803E8AB0 003E4750  4E 80 00 20 */	blr
 
 .global "SCFindU32Item"
 "SCFindU32Item":
@@ -1433,7 +1433,7 @@ lbl_803E8B5C:
 /* 803E8B78 003E4818  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E8B7C 003E481C  7C 08 03 A6 */	mtlr r0
 /* 803E8B80 003E4820  38 21 00 40 */	addi r1, r1, 0x40
-/* 803E8B84 003E4824  4E 80 00 20 */	blr 
+/* 803E8B84 003E4824  4E 80 00 20 */	blr
 
 .global "SCReplaceU8Item"
 "SCReplaceU8Item":
@@ -1447,7 +1447,7 @@ lbl_803E8B5C:
 /* 803E8BA4 003E4844  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E8BA8 003E4848  7C 08 03 A6 */	mtlr r0
 /* 803E8BAC 003E484C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E8BB0 003E4850  4E 80 00 20 */	blr 
+/* 803E8BB0 003E4850  4E 80 00 20 */	blr
 
 .global "__SCFlushSyncCallback"
 "__SCFlushSyncCallback":
@@ -1513,7 +1513,7 @@ lbl_803E8C74:
 /* 803E8C84 003E4924  80 7D 01 84 */	lwz r3, 0x184(r29)
 /* 803E8C88 003E4928  93 DD 01 80 */	stw r30, 0x180(r29)
 /* 803E8C8C 003E492C  7D 89 03 A6 */	mtctr r12
-/* 803E8C90 003E4930  4E 80 04 21 */	bctrl 
+/* 803E8C90 003E4930  4E 80 04 21 */	bctrl
 /* 803E8C94 003E4934  80 1D 00 00 */	lwz r0, 0(r29)
 /* 803E8C98 003E4938  7C 00 F0 40 */	cmplw r0, r30
 /* 803E8C9C 003E493C  41 82 00 0C */	beq lbl_803E8CA8
@@ -1571,7 +1571,7 @@ lbl_803E8D4C:
 /* 803E8D5C 003E49FC  80 7D 01 84 */	lwz r3, 0x184(r29)
 /* 803E8D60 003E4A00  93 FD 01 80 */	stw r31, 0x180(r29)
 /* 803E8D64 003E4A04  7D 89 03 A6 */	mtctr r12
-/* 803E8D68 003E4A08  4E 80 04 21 */	bctrl 
+/* 803E8D68 003E4A08  4E 80 04 21 */	bctrl
 /* 803E8D6C 003E4A0C  80 1D 00 00 */	lwz r0, 0(r29)
 /* 803E8D70 003E4A10  7C 00 F8 40 */	cmplw r0, r31
 /* 803E8D74 003E4A14  41 82 00 0C */	beq lbl_803E8D80
@@ -1593,7 +1593,7 @@ lbl_803E8DA4:
 /* 803E8DA4 003E4A44  7F CC F3 78 */	mr r12, r30
 /* 803E8DA8 003E4A48  7C 03 03 78 */	mr r3, r0
 /* 803E8DAC 003E4A4C  7D 89 03 A6 */	mtctr r12
-/* 803E8DB0 003E4A50  4E 80 04 21 */	bctrl 
+/* 803E8DB0 003E4A50  4E 80 04 21 */	bctrl
 lbl_803E8DB4:
 /* 803E8DB4 003E4A54  7F E3 FB 78 */	mr r3, r31
 /* 803E8DB8 003E4A58  4B FF 76 CD */	bl "OSRestoreInterrupts"
@@ -1605,7 +1605,7 @@ lbl_803E8DBC:
 /* 803E8DCC 003E4A6C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803E8DD0 003E4A70  7C 08 03 A6 */	mtlr r0
 /* 803E8DD4 003E4A74  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E8DD8 003E4A78  4E 80 00 20 */	blr 
+/* 803E8DD8 003E4A78  4E 80 00 20 */	blr
 
 .global "MyNandCallback"
 "MyNandCallback":
@@ -1624,7 +1624,7 @@ lbl_803E8DBC:
 /* 803E8E0C 003E4AAC  38 84 3B 58 */	addi r4, r4, lbl_80483B58@l
 /* 803E8E10 003E4AB0  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803E8E14 003E4AB4  7C 89 03 A6 */	mtctr r4
-/* 803E8E18 003E4AB8  4E 80 04 20 */	bctr 
+/* 803E8E18 003E4AB8  4E 80 04 20 */	bctr
 /* 803E8E1C 003E4ABC  2C 03 00 00 */	cmpwi r3, 0
 /* 803E8E20 003E4AC0  40 82 00 54 */	bne lbl_803E8E74
 /* 803E8E24 003E4AC4  88 07 01 4C */	lbz r0, 0x14c(r7)
@@ -1767,7 +1767,7 @@ lbl_803E9024:
 /* 803E9034 003E4CD4  80 7E 01 84 */	lwz r3, 0x184(r30)
 /* 803E9038 003E4CD8  93 FE 01 80 */	stw r31, 0x180(r30)
 /* 803E903C 003E4CDC  7D 89 03 A6 */	mtctr r12
-/* 803E9040 003E4CE0  4E 80 04 21 */	bctrl 
+/* 803E9040 003E4CE0  4E 80 04 21 */	bctrl
 /* 803E9044 003E4CE4  80 1E 00 00 */	lwz r0, 0(r30)
 /* 803E9048 003E4CE8  7C 00 F8 40 */	cmplw r0, r31
 /* 803E904C 003E4CEC  41 82 00 0C */	beq lbl_803E9058
@@ -1810,7 +1810,7 @@ lbl_803E90C0:
 /* 803E90D0 003E4D70  80 7E 01 84 */	lwz r3, 0x184(r30)
 /* 803E90D4 003E4D74  93 FE 01 80 */	stw r31, 0x180(r30)
 /* 803E90D8 003E4D78  7D 89 03 A6 */	mtctr r12
-/* 803E90DC 003E4D7C  4E 80 04 21 */	bctrl 
+/* 803E90DC 003E4D7C  4E 80 04 21 */	bctrl
 /* 803E90E0 003E4D80  80 1E 00 00 */	lwz r0, 0(r30)
 /* 803E90E4 003E4D84  7C 00 F8 40 */	cmplw r0, r31
 /* 803E90E8 003E4D88  41 82 00 0C */	beq lbl_803E90F4
@@ -1825,27 +1825,134 @@ lbl_803E90FC:
 /* 803E9104 003E4DA4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E9108 003E4DA8  7C 08 03 A6 */	mtlr r0
 /* 803E910C 003E4DAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9110 003E4DB0  4E 80 00 20 */	blr 
+/* 803E9110 003E4DB0  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "ConfDirName"
 "ConfDirName":
-	.incbin "baserom.dol", 0x41AE48, 0x10
+	# ROM: 0x41AE48
+	.asciz "/shared2/sys"
+	.byte 0x00, 0x00, 0x00
+
 .global "ConfFileName"
 "ConfFileName":
-	.incbin "baserom.dol", 0x41AE58, 0x18
+	# ROM: 0x41AE58
+	.asciz "/shared2/sys/SYSCONF"
+	.byte 0x00, 0x00, 0x00
+
 .global "ProductInfoFileName"
 "ProductInfoFileName":
-	.incbin "baserom.dol", 0x41AE70, 0x30
+	# ROM: 0x41AE70
+	.asciz "/title/00000001/00000002/data/setting.txt"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x47FAB0, 0x90
+	# ROM: 0x47FAB0
+	.asciz "<< RVL_SDK - SC \trelease build: Nov 30 2006 03:33:00 (0x4199_60831) >>"
+	.byte 0x00
+	.asciz "IPL.EULA"
+	.byte 0x00, 0x00, 0x00
+	.asciz "IPL.SADR"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NET.CTPC"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NET.PROF"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NET.WCPC"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NET.WCFG"
+	.byte 0x00, 0x00, 0x00
+
 .global "NameAndIDTbl"
 "NameAndIDTbl":
-	.incbin "baserom.dol", 0x47FB40, 0x118
+	# ROM: 0x47FB40
+	.4byte 0x805D780C ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D7814 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D7820 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D7828 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D7830 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D7838 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D7840 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x804839F8 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D7848 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D7850 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x805D7858 ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D7860 ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D7868 ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x805D7870 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D7878 ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x805D7880 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x80483A04 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D7888 ;# ptr
+	.4byte 0x00000011
+	.4byte 0x805D7890 ;# ptr
+	.4byte 0x00000012
+	.4byte 0x805D7898 ;# ptr
+	.4byte 0x00000013
+	.4byte 0x80483A10 ;# ptr
+	.4byte 0x00000014
+	.4byte 0x80483A1C ;# ptr
+	.4byte 0x00000015
+	.4byte 0x80483A28 ;# ptr
+	.4byte 0x00000016
+	.4byte 0x80483A34 ;# ptr
+	.4byte 0x00000017
+	.4byte 0x805D78A0 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x805D78A8 ;# ptr
+	.4byte 0x00000019
+	.4byte 0x805D78B0 ;# ptr
+	.4byte 0x0000001A
+	.4byte 0x805D78B8 ;# ptr
+	.4byte 0x0000001B
+	.4byte 0x805D78C0 ;# ptr
+	.4byte 0x0000001C
+	.4byte 0x805D78C8 ;# ptr
+	.4byte 0x0000001D
+	.4byte 0x805D78D0 ;# ptr
+	.4byte 0x0000001E
+	.4byte 0x805D78D8 ;# ptr
+	.4byte 0x0000001F
+	.4byte 0x805D78E0 ;# ptr
+	.4byte 0x00000020
+	.4byte 0x805D78E8 ;# ptr
+	.4byte 0x00000021
+	.4byte 0x805D78F0 ;# ptr
+	.4byte 0x00000022
+
 .global lbl_80483B58
 lbl_80483B58:
-	.incbin "baserom.dol", 0x47FC58, 0x28
+	# ROM: 0x47FC58
+	.4byte 0x803E8E1C ;# ptr
+	.4byte 0x803E8E60 ;# ptr
+	.4byte 0x803E8EA0 ;# ptr
+	.4byte 0x803E8ED0 ;# ptr
+	.4byte 0x803E8F18 ;# ptr
+	.4byte 0x803E8F4C ;# ptr
+	.4byte 0x803E8F80 ;# ptr
+	.4byte 0x803E8FC4 ;# ptr
+	.4byte 0x803E9000 ;# ptr
+	.4byte 0x803E9008 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "Control"
@@ -1861,13 +1968,58 @@ lbl_80483B58:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__SCVersion"
 "__SCVersion":
-	.incbin "baserom.dol", 0x487388, 0xF0
+	# ROM: 0x487388
+	.4byte 0x804839B0 ;# ptr
+	.asciz "IPL.CB"
+	.byte 0x00
+	.asciz "IPL.AR"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "IPL.ARN"
+	.asciz "IPL.CD"
+	.byte 0x00
+	.asciz "IPL.CD2"
+	.asciz "IPL.DH"
+	.byte 0x00
+	.asciz "IPL.E60"
+	.asciz "IPL.FRC"
+	.asciz "IPL.IDL"
+	.asciz "IPL.INC"
+	.asciz "IPL.LNG"
+	.asciz "IPL.NIK"
+	.asciz "IPL.PC"
+	.byte 0x00
+	.asciz "IPL.PGS"
+	.asciz "IPL.SSV"
+	.asciz "IPL.SND"
+	.asciz "IPL.UPT"
+	.asciz "NET.CNF"
+	.asciz "DEV.BTM"
+	.asciz "DEV.VIM"
+	.asciz "DEV.CTC"
+	.asciz "DEV.DSM"
+	.asciz "BT.DINF"
+	.asciz "BT.SENS"
+	.asciz "BT.SPKV"
+	.asciz "BT.MOT"
+	.byte 0x00
+	.asciz "BT.BAR"
+	.byte 0x00
+	.asciz "DVD.CNF"
+	.asciz "WWW.RST"
+
 .global lbl_805D78F8
 lbl_805D78F8:
-	.incbin "baserom.dol", 0x487478, 0x8
+	# ROM: 0x487478
+	.asciz "SCv0"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D7900
 lbl_805D7900:
-	.incbin "baserom.dol", 0x487480, 0x8
+	# ROM: 0x487480
+	.asciz "SCed"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "BgJobStatus"

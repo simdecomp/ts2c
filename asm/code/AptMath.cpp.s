@@ -51,7 +51,7 @@
 /* 80322C9C 0031E93C  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 80322CA0 0031E940  7C 08 03 A6 */	mtlr r0
 /* 80322CA4 0031E944  38 21 00 30 */	addi r1, r1, 0x30
-/* 80322CA8 0031E948  4E 80 00 20 */	blr 
+/* 80322CA8 0031E948  4E 80 00 20 */	blr
 
 .global "ClipStackPushUnit__7AptMathFv"
 "ClipStackPushUnit__7AptMathFv":
@@ -63,7 +63,7 @@
 /* 80322CC0 0031E960  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80322CC4 0031E964  7C 08 03 A6 */	mtlr r0
 /* 80322CC8 0031E968  38 21 00 10 */	addi r1, r1, 0x10
-/* 80322CCC 0031E96C  4E 80 00 20 */	blr 
+/* 80322CCC 0031E96C  4E 80 00 20 */	blr
 
 .global "ClipStackInit__7AptMathFUi"
 "ClipStackInit__7AptMathFUi":
@@ -91,7 +91,7 @@ lbl_80322D08:
 /* 80322D20 0031E9C0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80322D24 0031E9C4  7C 08 03 A6 */	mtlr r0
 /* 80322D28 0031E9C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80322D2C 0031E9CC  4E 80 00 20 */	blr 
+/* 80322D2C 0031E9CC  4E 80 00 20 */	blr
 
 .global "ClipStackShutdown__7AptMathFv"
 "ClipStackShutdown__7AptMathFv":
@@ -113,10 +113,15 @@ lbl_80322D60:
 /* 80322D68 0031EA08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80322D6C 0031EA0C  7C 08 03 A6 */	mtlr r0
 /* 80322D70 0031EA10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80322D74 0031EA14  4E 80 00 20 */	blr 
+/* 80322D74 0031EA14  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
-	.incbin "baserom.dol", 0x417DC0, 0x10
+	# ROM: 0x417DC0
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "m_pStackBase__7AptMath"
@@ -135,7 +140,11 @@ lbl_80322D60:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB688
 lbl_805DB688:
-	.incbin "baserom.dol", 0x4899A8, 0x4
+	# ROM: 0x4899A8
+	.4byte 0x3F800000
+
 .global lbl_805DB68C
 lbl_805DB68C:
-	.incbin "baserom.dol", 0x4899AC, 0x4
+	# ROM: 0x4899AC
+	.byte 0x00, 0x00, 0x00, 0x00
+

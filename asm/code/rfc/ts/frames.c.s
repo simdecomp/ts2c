@@ -48,7 +48,7 @@ lbl_80361940:
 /* 80361948 0035D5E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036194C 0035D5EC  7C 08 03 A6 */	mtlr r0
 /* 80361950 0035D5F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361954 0035D5F4  4E 80 00 20 */	blr 
+/* 80361954 0035D5F4  4E 80 00 20 */	blr
 
 .global "rfc_send_ua"
 "rfc_send_ua":
@@ -97,7 +97,7 @@ lbl_803619F0:
 /* 803619F8 0035D698  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803619FC 0035D69C  7C 08 03 A6 */	mtlr r0
 /* 80361A00 0035D6A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361A04 0035D6A4  4E 80 00 20 */	blr 
+/* 80361A04 0035D6A4  4E 80 00 20 */	blr
 
 .global "rfc_send_dm"
 "rfc_send_dm":
@@ -151,7 +151,7 @@ lbl_80361AB4:
 /* 80361ABC 0035D75C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80361AC0 0035D760  7C 08 03 A6 */	mtlr r0
 /* 80361AC4 0035D764  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361AC8 0035D768  4E 80 00 20 */	blr 
+/* 80361AC8 0035D768  4E 80 00 20 */	blr
 
 .global "rfc_send_disc"
 "rfc_send_disc":
@@ -200,7 +200,7 @@ lbl_80361B64:
 /* 80361B6C 0035D80C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80361B70 0035D810  7C 08 03 A6 */	mtlr r0
 /* 80361B74 0035D814  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361B78 0035D818  4E 80 00 20 */	blr 
+/* 80361B78 0035D818  4E 80 00 20 */	blr
 
 .global "rfc_send_buf_uih"
 "rfc_send_buf_uih":
@@ -315,7 +315,7 @@ lbl_80361CF4:
 /* 80361D04 0035D9A4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80361D08 0035D9A8  7C 08 03 A6 */	mtlr r0
 /* 80361D0C 0035D9AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361D10 0035D9B0  4E 80 00 20 */	blr 
+/* 80361D10 0035D9B0  4E 80 00 20 */	blr
 
 .global "rfc_send_pn"
 "rfc_send_pn":
@@ -379,7 +379,7 @@ lbl_80361DE4:
 /* 80361DEC 0035DA8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80361DF0 0035DA90  7C 08 03 A6 */	mtlr r0
 /* 80361DF4 0035DA94  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361DF8 0035DA98  4E 80 00 20 */	blr 
+/* 80361DF8 0035DA98  4E 80 00 20 */	blr
 
 .global "rfc_send_fcon"
 "rfc_send_fcon":
@@ -416,7 +416,7 @@ lbl_80361E68:
 /* 80361E70 0035DB10  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80361E74 0035DB14  7C 08 03 A6 */	mtlr r0
 /* 80361E78 0035DB18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80361E7C 0035DB1C  4E 80 00 20 */	blr 
+/* 80361E7C 0035DB1C  4E 80 00 20 */	blr
 
 .global "rfc_send_fcoff"
 "rfc_send_fcoff":
@@ -453,7 +453,7 @@ lbl_80361EEC:
 /* 80361EF4 0035DB94  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80361EF8 0035DB98  7C 08 03 A6 */	mtlr r0
 /* 80361EFC 0035DB9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80361F00 0035DBA0  4E 80 00 20 */	blr 
+/* 80361F00 0035DBA0  4E 80 00 20 */	blr
 
 .global "rfc_send_msc"
 "rfc_send_msc":
@@ -530,7 +530,7 @@ lbl_8036200C:
 /* 80362014 0035DCB4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80362018 0035DCB8  7C 08 03 A6 */	mtlr r0
 /* 8036201C 0035DCBC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80362020 0035DCC0  4E 80 00 20 */	blr 
+/* 80362020 0035DCC0  4E 80 00 20 */	blr
 
 .global "rfc_send_rls"
 "rfc_send_rls":
@@ -578,7 +578,7 @@ lbl_803620B4:
 /* 803620C4 0035DD64  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803620C8 0035DD68  7C 08 03 A6 */	mtlr r0
 /* 803620CC 0035DD6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803620D0 0035DD70  4E 80 00 20 */	blr 
+/* 803620D0 0035DD70  4E 80 00 20 */	blr
 
 .global "rfc_send_rpn"
 "rfc_send_rpn":
@@ -655,7 +655,7 @@ lbl_803621D8:
 /* 803621E0 0035DE80  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803621E4 0035DE84  7C 08 03 A6 */	mtlr r0
 /* 803621E8 0035DE88  38 21 00 20 */	addi r1, r1, 0x20
-/* 803621EC 0035DE8C  4E 80 00 20 */	blr 
+/* 803621EC 0035DE8C  4E 80 00 20 */	blr
 
 .global "rfc_send_test"
 "rfc_send_test":
@@ -756,7 +756,7 @@ lbl_80362340:
 /* 80362348 0035DFE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036234C 0035DFEC  7C 08 03 A6 */	mtlr r0
 /* 80362350 0035DFF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80362354 0035DFF4  4E 80 00 20 */	blr 
+/* 80362354 0035DFF4  4E 80 00 20 */	blr
 
 .global "rfc_parse_data"
 "rfc_parse_data":
@@ -1157,7 +1157,7 @@ lbl_803628B0:
 /* 803628BC 0035E55C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803628C0 0035E560  7C 08 03 A6 */	mtlr r0
 /* 803628C4 0035E564  38 21 00 20 */	addi r1, r1, 0x20
-/* 803628C8 0035E568  4E 80 00 20 */	blr 
+/* 803628C8 0035E568  4E 80 00 20 */	blr
 
 .global "rfc_process_mx_message"
 "rfc_process_mx_message":
@@ -1586,17 +1586,47 @@ lbl_80362ED0:
 /* 80362EE0 0035EB80  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80362EE4 0035EB84  7C 08 03 A6 */	mtlr r0
 /* 80362EE8 0035EB88  38 21 00 20 */	addi r1, r1, 0x20
-/* 80362EEC 0035EB8C  4E 80 00 20 */	blr 
+/* 80362EEC 0035EB8C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465900
 lbl_80465900:
-	.incbin "baserom.dol", 0x461A00, 0xD8
+	# ROM: 0x461A00
+	.asciz "Bad Length1: %d"
+	.asciz "Bad Length2 %d %d"
+	.byte 0x00, 0x00
+	.asciz "Bad SABME"
+	.byte 0x00, 0x00
+	.asciz "Bad DISC"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Bad UIH - invalid DLCI"
+	.byte 0x00
+	.asciz "Bad UIH - FCS"
+	.byte 0x00, 0x00
+	.asciz "Bad UIH - response"
+	.byte 0x00
+	.asciz "Illegal MX Frame ea:%d len:%d"
+	.byte 0x00, 0x00
+	.asciz "Bad MX frame"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Bad PN frame"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Bad MSC frame"
+	.byte 0x00, 0x00
+	.asciz "Bad RPN frame"
+	.byte 0x00, 0x00
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D72F8
 lbl_805D72F8:
-	.incbin "baserom.dol", 0x486E78, 0x8
+	# ROM: 0x486E78
+	.asciz "Bad UA"
+	.byte 0x00
+
 .global lbl_805D7300
 lbl_805D7300:
-	.incbin "baserom.dol", 0x486E80, 0x8
+	# ROM: 0x486E80
+	.asciz "Bad DM"
+	.byte 0x00
+

@@ -86,7 +86,7 @@ lbl_8031EE1C:
 /* 8031EE2C 0031AACC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031EE30 0031AAD0  7C 08 03 A6 */	mtlr r0
 /* 8031EE34 0031AAD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031EE38 0031AAD8  4E 80 00 20 */	blr 
+/* 8031EE38 0031AAD8  4E 80 00 20 */	blr
 
 .global "_getButtonScore__F12AptInputTypeiiii"
 "_getButtonScore__F12AptInputTypeiiii":
@@ -213,7 +213,7 @@ lbl_8031EFF4:
 /* 8031EFF4 0031AC94  C0 22 A4 40 */	lfs f1, lbl_805DB660-_SDA2_BASE_(r2)
 lbl_8031EFF8:
 /* 8031EFF8 0031AC98  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031EFFC 0031AC9C  4E 80 00 20 */	blr 
+/* 8031EFFC 0031AC9C  4E 80 00 20 */	blr
 
 .global "_getBestButton__F12AptInputTypeP6AptCIHP6AptCIH"
 "_getBestButton__F12AptInputTypeP6AptCIHP6AptCIH":
@@ -344,7 +344,7 @@ lbl_8031F1AC:
 /* 8031F1C4 0031AE64  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8031F1C8 0031AE68  7C 08 03 A6 */	mtlr r0
 /* 8031F1CC 0031AE6C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8031F1D0 0031AE70  4E 80 00 20 */	blr 
+/* 8031F1D0 0031AE70  4E 80 00 20 */	blr
 
 .global "_ActionConditionFlagToActionEventFlags__Fi"
 "_ActionConditionFlagToActionEventFlags__Fi":
@@ -378,7 +378,7 @@ lbl_8031F220:
 /* 8031F228 0031AEC8  64 84 00 01 */	oris r4, r4, 1
 lbl_8031F22C:
 /* 8031F22C 0031AECC  7C 83 23 78 */	mr r3, r4
-/* 8031F230 0031AED0  4E 80 00 20 */	blr 
+/* 8031F230 0031AED0  4E 80 00 20 */	blr
 
 .global "_doButtonActions__20AptAnimationPoolDataFP6AptCIHi"
 "_doButtonActions__20AptAnimationPoolDataFP6AptCIHi":
@@ -420,7 +420,7 @@ lbl_8031F298:
 /* 8031F2B4 0031AF54  7F C3 F3 78 */	mr r3, r30
 /* 8031F2B8 0031AF58  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8031F2BC 0031AF5C  7D 89 03 A6 */	mtctr r12
-/* 8031F2C0 0031AF60  4E 80 04 21 */	bctrl 
+/* 8031F2C0 0031AF60  4E 80 04 21 */	bctrl
 /* 8031F2C4 0031AF64  7F 04 C3 78 */	mr r4, r24
 /* 8031F2C8 0031AF68  4B FF 95 99 */	bl "HasEventHandler__13AptNativeHashFi"
 /* 8031F2CC 0031AF6C  2C 03 00 00 */	cmpwi r3, 0
@@ -481,7 +481,7 @@ lbl_8031F37C:
 /* 8031F394 0031B034  38 80 00 00 */	li r4, 0
 /* 8031F398 0031B038  81 85 00 5C */	lwz r12, 0x5c(r5)
 /* 8031F39C 0031B03C  7D 89 03 A6 */	mtctr r12
-/* 8031F3A0 0031B040  4E 80 04 21 */	bctrl 
+/* 8031F3A0 0031B040  4E 80 04 21 */	bctrl
 /* 8031F3A4 0031B044  48 00 00 84 */	b lbl_8031F428
 lbl_8031F3A8:
 /* 8031F3A8 0031B048  80 63 00 04 */	lwz r3, 4(r3)
@@ -493,7 +493,7 @@ lbl_8031F3A8:
 /* 8031F3C0 0031B060  38 80 00 00 */	li r4, 0
 /* 8031F3C4 0031B064  81 85 00 5C */	lwz r12, 0x5c(r5)
 /* 8031F3C8 0031B068  7D 89 03 A6 */	mtctr r12
-/* 8031F3CC 0031B06C  4E 80 04 21 */	bctrl 
+/* 8031F3CC 0031B06C  4E 80 04 21 */	bctrl
 /* 8031F3D0 0031B070  48 00 00 58 */	b lbl_8031F428
 lbl_8031F3D4:
 /* 8031F3D4 0031B074  80 63 00 08 */	lwz r3, 8(r3)
@@ -505,7 +505,7 @@ lbl_8031F3D4:
 /* 8031F3EC 0031B08C  38 80 00 00 */	li r4, 0
 /* 8031F3F0 0031B090  81 85 00 5C */	lwz r12, 0x5c(r5)
 /* 8031F3F4 0031B094  7D 89 03 A6 */	mtctr r12
-/* 8031F3F8 0031B098  4E 80 04 21 */	bctrl 
+/* 8031F3F8 0031B098  4E 80 04 21 */	bctrl
 /* 8031F3FC 0031B09C  48 00 00 2C */	b lbl_8031F428
 lbl_8031F400:
 /* 8031F400 0031B0A0  80 63 00 0C */	lwz r3, 0xc(r3)
@@ -517,7 +517,7 @@ lbl_8031F400:
 /* 8031F418 0031B0B8  38 80 00 00 */	li r4, 0
 /* 8031F41C 0031B0BC  81 85 00 5C */	lwz r12, 0x5c(r5)
 /* 8031F420 0031B0C0  7D 89 03 A6 */	mtctr r12
-/* 8031F424 0031B0C4  4E 80 04 21 */	bctrl 
+/* 8031F424 0031B0C4  4E 80 04 21 */	bctrl
 lbl_8031F428:
 /* 8031F428 0031B0C8  7F A3 EB 78 */	mr r3, r29
 /* 8031F42C 0031B0CC  4B FE DA ED */	bl "runActions__20AptAnimationPoolDataFv"
@@ -526,7 +526,7 @@ lbl_8031F428:
 /* 8031F438 0031B0D8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8031F43C 0031B0DC  7C 08 03 A6 */	mtlr r0
 /* 8031F440 0031B0E0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8031F444 0031B0E4  4E 80 00 20 */	blr 
+/* 8031F444 0031B0E4  4E 80 00 20 */	blr
 
 .global "setValidFocusButton__20AptAnimationPoolDataFv"
 "setValidFocusButton__20AptAnimationPoolDataFv":
@@ -569,7 +569,7 @@ lbl_8031F4B0:
 /* 8031F4D0 0031B170  38 84 86 20 */	addi r4, r4, "__PRETTY_FUNCTION__$7809"@l
 /* 8031F4D4 0031B174  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031F4D8 0031B178  7D 89 03 A6 */	mtctr r12
-/* 8031F4DC 0031B17C  4E 80 04 21 */	bctrl 
+/* 8031F4DC 0031B17C  4E 80 04 21 */	bctrl
 lbl_8031F4E0:
 /* 8031F4E0 0031B180  38 00 00 00 */	li r0, 0
 /* 8031F4E4 0031B184  3B A0 00 00 */	li r29, 0
@@ -609,7 +609,7 @@ lbl_8031F4F8:
 /* 8031F568 0031B208  81 83 00 00 */	lwz r12, 0(r3)
 /* 8031F56C 0031B20C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031F570 0031B210  7D 89 03 A6 */	mtctr r12
-/* 8031F574 0031B214  4E 80 04 21 */	bctrl 
+/* 8031F574 0031B214  4E 80 04 21 */	bctrl
 /* 8031F578 0031B218  48 00 00 20 */	b lbl_8031F598
 lbl_8031F57C:
 /* 8031F57C 0031B21C  3B BD 00 01 */	addi r29, r29, 1
@@ -639,7 +639,7 @@ lbl_8031F5BC:
 /* 8031F5CC 0031B26C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031F5D0 0031B270  7C 08 03 A6 */	mtlr r0
 /* 8031F5D4 0031B274  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031F5D8 0031B278  4E 80 00 20 */	blr 
+/* 8031F5D8 0031B278  4E 80 00 20 */	blr
 
 .global "ProcessInputSet__20AptAnimationPoolDataF12AptInputType13AptInputStateUi18AptInputControllerb"
 "ProcessInputSet__20AptAnimationPoolDataF12AptInputType13AptInputStateUi18AptInputControllerb":
@@ -797,7 +797,7 @@ lbl_8031F7EC:
 /* 8031F7F4 0031B494  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8031F7F8 0031B498  7C 08 03 A6 */	mtlr r0
 /* 8031F7FC 0031B49C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8031F800 0031B4A0  4E 80 00 20 */	blr 
+/* 8031F800 0031B4A0  4E 80 00 20 */	blr
 
 .global "ProcessListenerEvents__20AptAnimationPoolDataF12AptInputType13AptInputStateUi18AptInputController"
 "ProcessListenerEvents__20AptAnimationPoolDataF12AptInputType13AptInputStateUi18AptInputController":
@@ -856,7 +856,7 @@ lbl_8031F8B0:
 /* 8031F8B8 0031B558  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031F8BC 0031B55C  7C 08 03 A6 */	mtlr r0
 /* 8031F8C0 0031B560  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031F8C4 0031B564  4E 80 00 20 */	blr 
+/* 8031F8C4 0031B564  4E 80 00 20 */	blr
 
 .global "AddListenerToQueue__20AptAnimationPoolDataFP8AptValueiUi"
 "AddListenerToQueue__20AptAnimationPoolDataFP8AptValueiUi":
@@ -887,7 +887,7 @@ lbl_8031F920:
 /* 8031F924 0031B5C4  7F 03 C3 78 */	mr r3, r24
 /* 8031F928 0031B5C8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8031F92C 0031B5CC  7D 89 03 A6 */	mtctr r12
-/* 8031F930 0031B5D0  4E 80 04 21 */	bctrl 
+/* 8031F930 0031B5D0  4E 80 04 21 */	bctrl
 /* 8031F934 0031B5D4  7C 7D 1B 78 */	mr r29, r3
 /* 8031F938 0031B5D8  7F 03 C3 78 */	mr r3, r24
 /* 8031F93C 0031B5DC  38 80 00 00 */	li r4, 0
@@ -905,7 +905,7 @@ lbl_8031F920:
 /* 8031F96C 0031B60C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8031F970 0031B610  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8031F974 0031B614  7D 89 03 A6 */	mtctr r12
-/* 8031F978 0031B618  4E 80 04 21 */	bctrl 
+/* 8031F978 0031B618  4E 80 04 21 */	bctrl
 /* 8031F97C 0031B61C  7F 24 CB 78 */	mr r4, r25
 /* 8031F980 0031B620  4B FF 8E E1 */	bl "HasEventHandler__13AptNativeHashFi"
 /* 8031F984 0031B624  2C 03 00 00 */	cmpwi r3, 0
@@ -943,7 +943,7 @@ lbl_8031F994:
 /* 8031F9FC 0031B69C  7F 04 C3 78 */	mr r4, r24
 /* 8031FA00 0031B6A0  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8031FA04 0031B6A4  7D 89 03 A6 */	mtctr r12
-/* 8031FA08 0031B6A8  4E 80 04 21 */	bctrl 
+/* 8031FA08 0031B6A8  4E 80 04 21 */	bctrl
 /* 8031FA0C 0031B6AC  7C 7B 1B 78 */	mr r27, r3
 /* 8031FA10 0031B6B0  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 8031FA14 0031B6B4  4B FF 89 69 */	bl "decZombieCount__6AptCIHFv"
@@ -954,7 +954,7 @@ lbl_8031F994:
 /* 8031FA28 0031B6C8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8031FA2C 0031B6CC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8031FA30 0031B6D0  7D 89 03 A6 */	mtctr r12
-/* 8031FA34 0031B6D4  4E 80 04 21 */	bctrl 
+/* 8031FA34 0031B6D4  4E 80 04 21 */	bctrl
 /* 8031FA38 0031B6D8  93 BB 00 28 */	stw r29, 0x28(r27)
 /* 8031FA3C 0031B6DC  7F A3 EB 78 */	mr r3, r29
 /* 8031FA40 0031B6E0  48 00 06 65 */	bl "incZombieCount__6AptCIHFv"
@@ -965,7 +965,7 @@ lbl_8031F994:
 /* 8031FA54 0031B6F4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8031FA58 0031B6F8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031FA5C 0031B6FC  7D 89 03 A6 */	mtctr r12
-/* 8031FA60 0031B700  4E 80 04 21 */	bctrl 
+/* 8031FA60 0031B700  4E 80 04 21 */	bctrl
 /* 8031FA64 0031B704  7F 63 DB 78 */	mr r3, r27
 /* 8031FA68 0031B708  38 80 00 01 */	li r4, 1
 /* 8031FA6C 0031B70C  4B FD E7 AD */	bl "setGCRoot__8AptValueFUi"
@@ -974,7 +974,7 @@ lbl_8031FA70:
 /* 8031FA74 0031B714  7F 63 DB 78 */	mr r3, r27
 /* 8031FA78 0031B718  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 8031FA7C 0031B71C  7D 89 03 A6 */	mtctr r12
-/* 8031FA80 0031B720  4E 80 04 21 */	bctrl 
+/* 8031FA80 0031B720  4E 80 04 21 */	bctrl
 /* 8031FA84 0031B724  7C 66 1B 78 */	mr r6, r3
 /* 8031FA88 0031B728  80 6D BE 74 */	lwz r3, "gpPool"-_SDA_BASE_(r13)
 /* 8031FA8C 0031B72C  7F 04 C3 78 */	mr r4, r24
@@ -992,7 +992,7 @@ lbl_8031FAAC:
 /* 8031FAB4 0031B754  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8031FAB8 0031B758  7C 08 03 A6 */	mtlr r0
 /* 8031FABC 0031B75C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8031FAC0 0031B760  4E 80 00 20 */	blr 
+/* 8031FAC0 0031B760  4E 80 00 20 */	blr
 
 .global "HandleFocusButton__20AptAnimationPoolDataF12AptInputType13AptInputStatePP6AptCIH"
 "HandleFocusButton__20AptAnimationPoolDataF12AptInputType13AptInputStatePP6AptCIH":
@@ -1160,7 +1160,7 @@ lbl_8031FC90:
 /* 8031FD10 0031B9B0  38 C0 05 15 */	li r6, 0x515
 /* 8031FD14 0031B9B4  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031FD18 0031B9B8  7D 89 03 A6 */	mtctr r12
-/* 8031FD1C 0031B9BC  4E 80 04 21 */	bctrl 
+/* 8031FD1C 0031B9BC  4E 80 04 21 */	bctrl
 /* 8031FD20 0031B9C0  38 7F 13 80 */	addi r3, r31, 0x1380
 /* 8031FD24 0031B9C4  4B FD EC 6D */	bl "stackPop__20AptActionInterpreterFv"
 /* 8031FD28 0031B9C8  48 00 00 3C */	b lbl_8031FD64
@@ -1179,7 +1179,7 @@ lbl_8031FD3C:
 /* 8031FD54 0031B9F4  38 C0 05 21 */	li r6, 0x521
 /* 8031FD58 0031B9F8  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031FD5C 0031B9FC  7D 89 03 A6 */	mtctr r12
-/* 8031FD60 0031BA00  4E 80 04 21 */	bctrl 
+/* 8031FD60 0031BA00  4E 80 04 21 */	bctrl
 lbl_8031FD64:
 /* 8031FD64 0031BA04  7F 83 E3 78 */	mr r3, r28
 /* 8031FD68 0031BA08  38 80 00 00 */	li r4, 0
@@ -1218,7 +1218,7 @@ lbl_8031FDCC:
 /* 8031FDE4 0031BA84  38 C0 05 29 */	li r6, 0x529
 /* 8031FDE8 0031BA88  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031FDEC 0031BA8C  7D 89 03 A6 */	mtctr r12
-/* 8031FDF0 0031BA90  4E 80 04 21 */	bctrl 
+/* 8031FDF0 0031BA90  4E 80 04 21 */	bctrl
 /* 8031FDF4 0031BA94  38 60 00 00 */	li r3, 0
 lbl_8031FDF8:
 /* 8031FDF8 0031BA98  39 61 00 30 */	addi r11, r1, 0x30
@@ -1226,7 +1226,7 @@ lbl_8031FDF8:
 /* 8031FE00 0031BAA0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8031FE04 0031BAA4  7C 08 03 A6 */	mtlr r0
 /* 8031FE08 0031BAA8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8031FE0C 0031BAAC  4E 80 00 20 */	blr 
+/* 8031FE0C 0031BAAC  4E 80 00 20 */	blr
 
 .global "HandleAutoNav__20AptAnimationPoolDataFP6AptCIH12AptInputType13AptInputState"
 "HandleAutoNav__20AptAnimationPoolDataFP6AptCIH12AptInputType13AptInputState":
@@ -1306,7 +1306,7 @@ lbl_8031FEC4:
 /* 8031FF24 0031BBC4  38 84 86 F8 */	addi r4, r4, "__PRETTY_FUNCTION__$8304"@l
 /* 8031FF28 0031BBC8  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031FF2C 0031BBCC  7D 89 03 A6 */	mtctr r12
-/* 8031FF30 0031BBD0  4E 80 04 21 */	bctrl 
+/* 8031FF30 0031BBD0  4E 80 04 21 */	bctrl
 lbl_8031FF34:
 /* 8031FF34 0031BBD4  2C 1E 00 00 */	cmpwi r30, 0
 /* 8031FF38 0031BBD8  93 DD 00 64 */	stw r30, 0x64(r29)
@@ -1320,7 +1320,7 @@ lbl_8031FF34:
 /* 8031FF58 0031BBF8  38 C0 05 6D */	li r6, 0x56d
 /* 8031FF5C 0031BBFC  38 A5 86 4C */	addi r5, r5, lbl_8045864C@l
 /* 8031FF60 0031BC00  7D 89 03 A6 */	mtctr r12
-/* 8031FF64 0031BC04  4E 80 04 21 */	bctrl 
+/* 8031FF64 0031BC04  4E 80 04 21 */	bctrl
 lbl_8031FF68:
 /* 8031FF68 0031BC08  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031FF6C 0031BC0C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1328,7 +1328,7 @@ lbl_8031FF68:
 /* 8031FF74 0031BC14  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8031FF78 0031BC18  7C 08 03 A6 */	mtlr r0
 /* 8031FF7C 0031BC1C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031FF80 0031BC20  4E 80 00 20 */	blr 
+/* 8031FF80 0031BC20  4E 80 00 20 */	blr
 
 .global "ProcessAptInput__20AptAnimationPoolDataFUib"
 "ProcessAptInput__20AptAnimationPoolDataFUib":
@@ -1374,7 +1374,7 @@ lbl_80320014:
 /* 8032001C 0031BCBC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80320020 0031BCC0  7C 08 03 A6 */	mtlr r0
 /* 80320024 0031BCC4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80320028 0031BCC8  4E 80 00 20 */	blr 
+/* 80320028 0031BCC8  4E 80 00 20 */	blr
 
 .global "ProcessInputs__20AptAnimationPoolDataFv"
 "ProcessInputs__20AptAnimationPoolDataFv":
@@ -1409,7 +1409,7 @@ lbl_80320074:
 /* 80320094 0031BD34  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80320098 0031BD38  7C 08 03 A6 */	mtlr r0
 /* 8032009C 0031BD3C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803200A0 0031BD40  4E 80 00 20 */	blr 
+/* 803200A0 0031BD40  4E 80 00 20 */	blr
 
 .global "incZombieCount__6AptCIHFv"
 "incZombieCount__6AptCIHFv":
@@ -1418,122 +1418,256 @@ lbl_80320074:
 /* 803200AC 0031BD4C  38 04 00 01 */	addi r0, r4, 1
 /* 803200B0 0031BD50  50 05 80 1E */	rlwimi r5, r0, 0x10, 0, 0xf
 /* 803200B4 0031BD54  90 A3 00 5C */	stw r5, 0x5c(r3)
-/* 803200B8 0031BD58  4E 80 00 20 */	blr 
+/* 803200B8 0031BD58  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_804580C8"
 "__PRETTY_FUNCTION__$1864_804580C8":
-	.incbin "baserom.dol", 0x4541C8, 0x50
+	# ROM: 0x4541C8
+	.asciz "AptCIH::AptCIH(AptVirtualFunctionTable_Indices, AptCharacterInst *, AptCIH *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2185_80458118"
 "__PRETTY_FUNCTION__$2185_80458118":
-	.incbin "baserom.dol", 0x454218, 0x2C
+	# ROM: 0x454218
+	.asciz "AptNativeHash::UnsetAt(AptHashItem *const )"
+
 .global "__PRETTY_FUNCTION__$2191_80458144"
 "__PRETTY_FUNCTION__$2191_80458144":
-	.incbin "baserom.dol", 0x454244, 0x3C
+	# ROM: 0x454244
+	.asciz "AptNativeHash::OverwriteAt(AptHashItem *const , AptValue *)"
+
 .global "__PRETTY_FUNCTION__$2198_80458180"
 "__PRETTY_FUNCTION__$2198_80458180":
-	.incbin "baserom.dol", 0x454280, 0x34
+	# ROM: 0x454280
+	.asciz "AptNativeHash::OverwriteAt(const int, AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2204_804581B4"
 "__PRETTY_FUNCTION__$2204_804581B4":
-	.incbin "baserom.dol", 0x4542B4, 0x3C
+	# ROM: 0x4542B4
+	.asciz "AptNativeHash::SetAt(AptHashItem *const , AptValue *const )"
+
 .global "__PRETTY_FUNCTION__$2215_804581F0"
 "__PRETTY_FUNCTION__$2215_804581F0":
-	.incbin "baserom.dol", 0x4542F0, 0x38
+	# ROM: 0x4542F0
+	.asciz "AptNativeHash::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$2252_80458228"
 "__PRETTY_FUNCTION__$2252_80458228":
-	.incbin "baserom.dol", 0x454328, 0x20
+	# ROM: 0x454328
+	.asciz "AptNativeHash::UnsetPrototype()"
+
 .global "__PRETTY_FUNCTION__$2260_80458248"
 "__PRETTY_FUNCTION__$2260_80458248":
-	.incbin "baserom.dol", 0x454348, 0x30
+	# ROM: 0x454348
+	.asciz "AptNativeHash::SetPrototype(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2274_80458278"
 "__PRETTY_FUNCTION__$2274_80458278":
-	.incbin "baserom.dol", 0x454378, 0x20
+	# ROM: 0x454378
+	.asciz "AptNativeHash::Unset__Proto__()"
+
 .global "__PRETTY_FUNCTION__$2282_80458298"
 "__PRETTY_FUNCTION__$2282_80458298":
-	.incbin "baserom.dol", 0x454398, 0x30
+	# ROM: 0x454398
+	.asciz "AptNativeHash::Set__Proto__(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2368_804582C8"
 "__PRETTY_FUNCTION__$2368_804582C8":
-	.incbin "baserom.dol", 0x4543C8, 0x30
+	# ROM: 0x4543C8
+	.asciz "AptPrototype::SetSuperConstructor(AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2520_804582F8"
 "__PRETTY_FUNCTION__$2520_804582F8":
-	.incbin "baserom.dol", 0x4543F8, 0x24
+	# ROM: 0x4543F8
+	.asciz "AptFrameStack::DestroyGCPointers()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2587_8045831C"
 "__PRETTY_FUNCTION__$2587_8045831C":
-	.incbin "baserom.dol", 0x45441C, 0x34
+	# ROM: 0x45441C
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *, int)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2595_80458350"
 "__PRETTY_FUNCTION__$2595_80458350":
-	.incbin "baserom.dol", 0x454450, 0x30
+	# ROM: 0x454450
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3023_80458380"
 "__PRETTY_FUNCTION__$3023_80458380":
-	.incbin "baserom.dol", 0x454480, 0x2C
+	# ROM: 0x454480
+	.asciz "AptActionInterpreter::clearThrownValue()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3029_804583AC"
 "__PRETTY_FUNCTION__$3029_804583AC":
-	.incbin "baserom.dol", 0x4544AC, 0x30
+	# ROM: 0x4544AC
+	.asciz "AptActionInterpreter::throwValue(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3076_804583DC"
 "__PRETTY_FUNCTION__$3076_804583DC":
-	.incbin "baserom.dol", 0x4544DC, 0x2C
+	# ROM: 0x4544DC
+	.asciz "AptScriptFunctionBase::CreateFrameStack()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3392_80458408"
 "__PRETTY_FUNCTION__$3392_80458408":
-	.incbin "baserom.dol", 0x454508, 0x24
+	# ROM: 0x454508
+	.asciz "AptValuePtrStack<AptValue>::pop()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3477_8045842C"
 "__PRETTY_FUNCTION__$3477_8045842C":
-	.incbin "baserom.dol", 0x45452C, 0x34
+	# ROM: 0x45452C
+	.asciz "AptArray::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$3509_80458460"
 "__PRETTY_FUNCTION__$3509_80458460":
-	.incbin "baserom.dol", 0x454560, 0x28
+	# ROM: 0x454560
+	.asciz "AptStringObject::setString(AptString *)"
+
 .global "__PRETTY_FUNCTION__$3515_80458488"
 "__PRETTY_FUNCTION__$3515_80458488":
-	.incbin "baserom.dol", 0x454588, 0x24
+	# ROM: 0x454588
+	.asciz "AptStringObject::~AptStringObject()"
+
 .global "__PRETTY_FUNCTION__$6702_804584AC"
 "__PRETTY_FUNCTION__$6702_804584AC":
-	.incbin "baserom.dol", 0x4545AC, 0x2C
+	# ROM: 0x4545AC
+	.asciz "AptBasePtrStack<AptValue>::Push(AptValue *)"
+
 .global "__PRETTY_FUNCTION__$6742_804584D8"
 "__PRETTY_FUNCTION__$6742_804584D8":
-	.incbin "baserom.dol", 0x4545D8, 0x40
+	# ROM: 0x4545D8
+	.asciz "AptBasePtrStack<AptValue>::PopAndPush(const int, AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6763_80458518"
 "__PRETTY_FUNCTION__$6763_80458518":
-	.incbin "baserom.dol", 0x454618, 0x24
+	# ROM: 0x454618
+	.asciz "AptBasePtrStack<AptValue>::Pop()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6778_8045853C"
 "__PRETTY_FUNCTION__$6778_8045853C":
-	.incbin "baserom.dol", 0x45463C, 0x2C
+	# ROM: 0x45463C
+	.asciz "AptBasePtrStack<AptValue>::Pop(const int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6799_80458568"
 "__PRETTY_FUNCTION__$6799_80458568":
-	.incbin "baserom.dol", 0x454668, 0x30
+	# ROM: 0x454668
+	.asciz "AptBasePtrStack<AptValue>::SafePop(const int)"
+	.byte 0x00, 0x00
+
 .global "_aInputFlags"
 "_aInputFlags":
-	.incbin "baserom.dol", 0x454698, 0x58
+	# ROM: 0x454698
+	.4byte 0x00000800
+	.4byte 0x00000071
+	.4byte 0x00000001
+	.4byte 0x00000400
+	.4byte 0x00000070
+	.4byte 0x00000000
+	.4byte 0x00001000
+	.4byte 0x00000072
+	.4byte 0x00000001
+	.4byte 0x00002000
+	.4byte 0x00000074
+	.4byte 0x00000001
+	.4byte 0x00004000
+	.4byte 0x00000073
+	.4byte 0x00000001
+	.4byte 0x00008000
+	.4byte 0x00000067
+	.4byte 0x00000000
+	.4byte 0x00010000
+	.4byte 0x00000066
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "_aListenerEvents"
 "_aListenerEvents":
-	.incbin "baserom.dol", 0x4546F0, 0x30
+	# ROM: 0x4546F0
+	.4byte 0x00000080
+	.4byte 0x0000006A
+	.4byte 0x00000040
+	.4byte 0x00000069
+	.4byte 0x00000010
+	.4byte 0x0000006C
+	.4byte 0x00000020
+	.4byte 0x0000006E
+	.4byte 0x00000008
+	.4byte 0x0000006D
+	.4byte 0x00080000
+	.4byte 0x0000006F
+
 .global "__PRETTY_FUNCTION__$7809"
 "__PRETTY_FUNCTION__$7809":
-	.incbin "baserom.dol", 0x454720, 0x2C
+	# ROM: 0x454720
+	.asciz "AptAnimationPoolData::setValidFocusButton()"
+
 .global lbl_8045864C
 lbl_8045864C:
-	.incbin "baserom.dol", 0x45474C, 0x14
+	# ROM: 0x45474C
+	.asciz "AptInput.cpp"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$8139"
 "__PRETTY_FUNCTION__$8139":
-	.incbin "baserom.dol", 0x454760, 0x48
+	# ROM: 0x454760
+	.asciz "AptAnimationPoolData::AddListenerToQueue(AptValue *, int, unsigned int)"
+
 .global "__PRETTY_FUNCTION__$8200"
 "__PRETTY_FUNCTION__$8200":
-	.incbin "baserom.dol", 0x4547A8, 0x50
+	# ROM: 0x4547A8
+	.asciz "AptAnimationPoolData::HandleFocusButton(AptInputType, AptInputState, AptCIH **)"
+
 .global "__PRETTY_FUNCTION__$8304"
 "__PRETTY_FUNCTION__$8304":
-	.incbin "baserom.dol", 0x4547F8, 0x60
+	# ROM: 0x4547F8
+	.asciz "AptAnimationPoolData::HandleAutoNav(AptCIH *, AptInputType, AptInputState)"
+	.byte 0x00
+	.asciz "_AptBasePtrStack.h"
+	.byte 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB660
 lbl_805DB660:
-	.incbin "baserom.dol", 0x489980, 0x4
+	# ROM: 0x489980
+	.4byte 0xBF800000
+
 .global lbl_805DB664
 lbl_805DB664:
-	.incbin "baserom.dol", 0x489984, 0x4
+	# ROM: 0x489984
+	.4byte 0x41200000
+
 .global lbl_805DB668
 lbl_805DB668:
-	.incbin "baserom.dol", 0x489988, 0x8
+	# ROM: 0x489988
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB670
 lbl_805DB670:
-	.incbin "baserom.dol", 0x489990, 0x4
+	# ROM: 0x489990
+	.4byte 0x4E6E6B28
+
 .global lbl_805DB674
 lbl_805DB674:
-	.incbin "baserom.dol", 0x489994, 0x4
+	# ROM: 0x489994
+	.byte 0x00, 0x00, 0x00, 0x00
+

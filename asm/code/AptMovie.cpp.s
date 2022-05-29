@@ -198,7 +198,7 @@ lbl_80326348:
 /* 8032635C 00321FFC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80326360 00322000  7C 08 03 A6 */	mtlr r0
 /* 80326364 00322004  38 21 00 40 */	addi r1, r1, 0x40
-/* 80326368 00322008  4E 80 00 20 */	blr 
+/* 80326368 00322008  4E 80 00 20 */	blr
 
 .global "unresolve__8AptMovieFPUcPi"
 "unresolve__8AptMovieFPUcPi":
@@ -383,7 +383,7 @@ lbl_803265DC:
 /* 803265E4 00322284  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803265E8 00322288  7C 08 03 A6 */	mtlr r0
 /* 803265EC 0032228C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803265F0 00322290  4E 80 00 20 */	blr 
+/* 803265F0 00322290  4E 80 00 20 */	blr
 
 .global "DoTemporaryFrameControls__8AptMovieFP20AptPseudoDisplayListi"
 "DoTemporaryFrameControls__8AptMovieFP20AptPseudoDisplayListi":
@@ -552,7 +552,7 @@ lbl_80326808:
 /* 80326838 003224D8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8032683C 003224DC  80 63 00 08 */	lwz r3, 8(r3)
 /* 80326840 003224E0  7D 89 03 A6 */	mtctr r12
-/* 80326844 003224E4  4E 80 04 21 */	bctrl 
+/* 80326844 003224E4  4E 80 04 21 */	bctrl
 lbl_80326848:
 /* 80326848 003224E8  3B DE 00 04 */	addi r30, r30, 4
 /* 8032684C 003224EC  3B 9C 00 01 */	addi r28, r28, 1
@@ -567,7 +567,7 @@ lbl_80326850:
 /* 8032686C 0032250C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80326870 00322510  7C 08 03 A6 */	mtlr r0
 /* 80326874 00322514  38 21 00 40 */	addi r1, r1, 0x40
-/* 80326878 00322518  4E 80 00 20 */	blr 
+/* 80326878 00322518  4E 80 00 20 */	blr
 
 .global "doFrameControls__8AptMovieFP14AptDisplayListP6AptCIHi"
 "doFrameControls__8AptMovieFP14AptDisplayListP6AptCIHi":
@@ -658,7 +658,7 @@ lbl_803269A0:
 /* 803269AC 0032264C  81 9E 00 10 */	lwz r12, 0x10(r30)
 /* 803269B0 00322650  80 77 00 04 */	lwz r3, 4(r23)
 /* 803269B4 00322654  7D 89 03 A6 */	mtctr r12
-/* 803269B8 00322658  4E 80 04 21 */	bctrl 
+/* 803269B8 00322658  4E 80 04 21 */	bctrl
 /* 803269BC 0032265C  9B ED BE 5C */	stb r31, "gbBackgroundColorSet"-_SDA_BASE_(r13)
 /* 803269C0 00322660  48 00 00 74 */	b lbl_80326A34
 lbl_803269C4:
@@ -691,7 +691,7 @@ lbl_80326A04:
 /* 80326A24 003226C4  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80326A28 003226C8  80 63 00 08 */	lwz r3, 8(r3)
 /* 80326A2C 003226CC  7D 89 03 A6 */	mtctr r12
-/* 80326A30 003226D0  4E 80 04 21 */	bctrl 
+/* 80326A30 003226D0  4E 80 04 21 */	bctrl
 lbl_80326A34:
 /* 80326A34 003226D4  3B BD 00 04 */	addi r29, r29, 4
 /* 80326A38 003226D8  3B 7B 00 01 */	addi r27, r27, 1
@@ -706,7 +706,7 @@ lbl_80326A3C:
 /* 80326A58 003226F8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80326A5C 003226FC  7C 08 03 A6 */	mtlr r0
 /* 80326A60 00322700  38 21 00 40 */	addi r1, r1, 0x40
-/* 80326A64 00322704  4E 80 00 20 */	blr 
+/* 80326A64 00322704  4E 80 00 20 */	blr
 
 .global "runFrameActions__8AptMovieFP6AptCIHi"
 "runFrameActions__8AptMovieFP6AptCIHi":
@@ -765,7 +765,7 @@ lbl_80326B08:
 /* 80326B24 003227C4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80326B28 003227C8  7C 08 03 A6 */	mtlr r0
 /* 80326B2C 003227CC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80326B30 003227D0  4E 80 00 20 */	blr 
+/* 80326B30 003227D0  4E 80 00 20 */	blr
 
 .global "queueFrameActions__8AptMovieFP6AptCIHi"
 "queueFrameActions__8AptMovieFP6AptCIHi":
@@ -805,7 +805,7 @@ lbl_80326B90:
 /* 80326BAC 0032284C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80326BB0 00322850  7C 08 03 A6 */	mtlr r0
 /* 80326BB4 00322854  38 21 00 20 */	addi r1, r1, 0x20
-/* 80326BB8 00322858  4E 80 00 20 */	blr 
+/* 80326BB8 00322858  4E 80 00 20 */	blr
 
 .global "labelToFrame__8AptMovieFPC9EAStringC"
 "labelToFrame__8AptMovieFPC9EAStringC":
@@ -824,4 +824,4 @@ lbl_80326BE4:
 /* 80326BE4 00322884  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80326BE8 00322888  7C 08 03 A6 */	mtlr r0
 /* 80326BEC 0032288C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80326BF0 00322890  4E 80 00 20 */	blr 
+/* 80326BF0 00322890  4E 80 00 20 */	blr

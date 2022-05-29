@@ -64,7 +64,7 @@ lbl_8039EC5C:
 /* 8039EC64 0039A904  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039EC68 0039A908  7C 08 03 A6 */	mtlr r0
 /* 8039EC6C 0039A90C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039EC70 0039A910  4E 80 00 20 */	blr 
+/* 8039EC70 0039A910  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail14BankFileReaderFPCv"
 "__ct__Q46nw4hbm3snd6detail14BankFileReaderFPCv":
@@ -134,7 +134,7 @@ lbl_8039ED50:
 /* 8039ED5C 0039A9FC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039ED60 0039AA00  7C 08 03 A6 */	mtlr r0
 /* 8039ED64 0039AA04  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039ED68 0039AA08  4E 80 00 20 */	blr 
+/* 8039ED68 0039AA08  4E 80 00 20 */	blr
 
 .global "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FPCvUl_PCv"
 "AddOffsetToPtr<Ul>__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FPCvUl_PCv":
@@ -149,11 +149,11 @@ lbl_8039ED50:
 /* 8039ED8C 0039AA2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039ED90 0039AA30  7C 08 03 A6 */	mtlr r0
 /* 8039ED94 0039AA34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039ED98 0039AA38  4E 80 00 20 */	blr 
+/* 8039ED98 0039AA38  4E 80 00 20 */	blr
 
 .global "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FPCv"
 "GetIntPtr__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FPCv":
-/* 8039ED9C 0039AA3C  4E 80 00 20 */	blr 
+/* 8039ED9C 0039AA3C  4E 80 00 20 */	blr
 
 .global "ReadInstInfo__Q46nw4hbm3snd6detail14BankFileReaderCFPQ46nw4hbm3snd6detail8InstInfoiii"
 "ReadInstInfo__Q46nw4hbm3snd6detail14BankFileReaderCFPQ46nw4hbm3snd6detail8InstInfoiii":
@@ -295,7 +295,7 @@ lbl_8039EF78:
 /* 8039EF80 0039AC20  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039EF84 0039AC24  7C 08 03 A6 */	mtlr r0
 /* 8039EF88 0039AC28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039EF8C 0039AC2C  4E 80 00 20 */	blr 
+/* 8039EF8C 0039AC2C  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress1<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile9InstParam"
 "GetDataRefAddress1<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile9InstParam":
@@ -325,7 +325,7 @@ lbl_8039EFD0:
 /* 8039EFE8 0039AC88  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039EFEC 0039AC8C  7C 08 03 A6 */	mtlr r0
 /* 8039EFF0 0039AC90  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039EFF4 0039AC94  4E 80 00 20 */	blr 
+/* 8039EFF4 0039AC94  4E 80 00 20 */	blr
 
 .global "GetReferenceToSubRegion__Q46nw4hbm3snd6detail14BankFileReaderCFPCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>i"
 "GetReferenceToSubRegion__Q46nw4hbm3snd6detail14BankFileReaderCFPCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>i":
@@ -422,7 +422,7 @@ lbl_8039F124:
 /* 8039F130 0039ADD0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039F134 0039ADD4  7C 08 03 A6 */	mtlr r0
 /* 8039F138 0039ADD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039F13C 0039ADDC  4E 80 00 20 */	blr 
+/* 8039F13C 0039ADDC  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress3<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile10IndexTable"
 "GetDataRefAddress3<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile10IndexTable":
@@ -452,7 +452,7 @@ lbl_8039F180:
 /* 8039F198 0039AE38  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039F19C 0039AE3C  7C 08 03 A6 */	mtlr r0
 /* 8039F1A0 0039AE40  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039F1A4 0039AE44  4E 80 00 20 */	blr 
+/* 8039F1A4 0039AE44  4E 80 00 20 */	blr
 
 .global "RoundUp<Ul>__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FUlUi_Ul"
 "RoundUp<Ul>__Q36nw4hbm2ut26@unnamed@snd_BankFile_cpp@FUlUi_Ul":
@@ -461,12 +461,12 @@ lbl_8039F180:
 /* 8039F1B0 0039AE50  7C 04 00 F8 */	nor r4, r0, r0
 /* 8039F1B4 0039AE54  38 03 FF FF */	addi r0, r3, -1
 /* 8039F1B8 0039AE58  7C 83 00 38 */	and r3, r4, r0
-/* 8039F1BC 0039AE5C  4E 80 00 20 */	blr 
+/* 8039F1BC 0039AE5C  4E 80 00 20 */	blr
 
 .global "ReadByte__Q36nw4hbm3snd6detailFPCv"
 "ReadByte__Q36nw4hbm3snd6detailFPCv":
 /* 8039F1C0 0039AE60  88 63 00 00 */	lbz r3, 0(r3)
-/* 8039F1C4 0039AE64  4E 80 00 20 */	blr 
+/* 8039F1C4 0039AE64  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress2<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile10RangeTable"
 "GetDataRefAddress2<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util134DataRef<v,Q56nw4hbm3snd6detail8BankFile9InstParam,Q56nw4hbm3snd6detail8BankFile10RangeTable,Q56nw4hbm3snd6detail8BankFile10IndexTable>PCv_PCQ56nw4hbm3snd6detail8BankFile10RangeTable":
@@ -496,7 +496,7 @@ lbl_8039F208:
 /* 8039F220 0039AEC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039F224 0039AEC4  7C 08 03 A6 */	mtlr r0
 /* 8039F228 0039AEC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039F22C 0039AECC  4E 80 00 20 */	blr 
+/* 8039F22C 0039AECC  4E 80 00 20 */	blr
 
 .global "ReadWaveParam__Q46nw4hbm3snd6detail14BankFileReaderCFPQ46nw4hbm3snd6detail8WaveDataiPCv"
 "ReadWaveParam__Q46nw4hbm3snd6detail14BankFileReaderCFPQ46nw4hbm3snd6detail8WaveDataiPCv":
@@ -565,7 +565,7 @@ lbl_8039F300:
 /* 8039F310 0039AFB0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8039F314 0039AFB4  7C 08 03 A6 */	mtlr r0
 /* 8039F318 0039AFB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039F31C 0039AFBC  4E 80 00 20 */	blr 
+/* 8039F31C 0039AFBC  4E 80 00 20 */	blr
 
 .global "GetDataRefAddress0<Q56nw4hbm3snd6detail8WaveFile8WaveInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util53DataRef<Q56nw4hbm3snd6detail8WaveFile8WaveInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8WaveFile8WaveInfo"
 "GetDataRefAddress0<Q56nw4hbm3snd6detail8WaveFile8WaveInfo,v,v,v>__Q46nw4hbm3snd6detail4UtilFRCQ56nw4hbm3snd6detail4Util53DataRef<Q56nw4hbm3snd6detail8WaveFile8WaveInfo,v,v,v>PCv_PCQ56nw4hbm3snd6detail8WaveFile8WaveInfo":
@@ -595,43 +595,89 @@ lbl_8039F360:
 /* 8039F378 0039B018  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039F37C 0039B01C  7C 08 03 A6 */	mtlr r0
 /* 8039F380 0039B020  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039F384 0039B024  4E 80 00 20 */	blr 
+/* 8039F384 0039B024  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046D4F8
 lbl_8046D4F8:
-	.incbin "baserom.dol", 0x4695F8, 0x1C0
+	# ROM: 0x4695F8
+	.asciz "snd_BankFile.cpp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion fileHeader->signature == BankFile::SIGNATURE_FILE"
+	.byte 0x00, 0x00
+	.asciz "bank file is not supported version.\n  please reconvert file using new version tools.\n"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (bankData)"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion mDataBlock->blockHeader.kind == BankFile::SIGNATURE_DATA_BLOCK"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion mWaveBlock->blockHeader.kind == BankFile::SIGNATURE_WAVE_BLOCK"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (instInfo)"
+	.byte 0x00
+
 .global lbl_8046D6B8
 lbl_8046D6B8:
-	.incbin "baserom.dol", 0x4697B8, 0x2C
+	# ROM: 0x4697B8
+	.asciz "NW4HBM:Pointer must not be NULL (mHeader)"
+	.byte 0x00, 0x00
+
 .global lbl_8046D6E4
 lbl_8046D6E4:
-	.incbin "baserom.dol", 0x4697E4, 0x2C
+	# ROM: 0x4697E4
+	.asciz "NW4HBM:Failed assertion ref.dataType == 0"
+	.byte 0x00, 0x00
+
 .global lbl_8046D710
 lbl_8046D710:
-	.incbin "baserom.dol", 0x469810, 0x2C
+	# ROM: 0x469810
+	.asciz "NW4HBM:Failed assertion ref.dataType == 3"
+	.byte 0x00, 0x00
+
 .global lbl_8046D73C
 lbl_8046D73C:
-	.incbin "baserom.dol", 0x46983C, 0x2C
+	# ROM: 0x46983C
+	.asciz "NW4HBM:Failed assertion ref.dataType == 2"
+	.byte 0x00, 0x00
+
 .global lbl_8046D768
 lbl_8046D768:
-	.incbin "baserom.dol", 0x469868, 0x30
+	# ROM: 0x469868
+	.asciz "NW4HBM:Failed assertion ref.dataType == 1"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7598
 lbl_805D7598:
-	.incbin "baserom.dol", 0x487118, 0x8
+	# ROM: 0x487118
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D75A0
 lbl_805D75A0:
-	.incbin "baserom.dol", 0x487120, 0x8
+	# ROM: 0x487120
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D75A8
 lbl_805D75A8:
-	.incbin "baserom.dol", 0x487128, 0x8
+	# ROM: 0x487128
+	.asciz "Util.h"
+	.byte 0x00
+
 .global lbl_805D75B0
 lbl_805D75B0:
-	.incbin "baserom.dol", 0x487130, 0x8
+	# ROM: 0x487130
+	.asciz "Util.h"
+	.byte 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBAD0
 lbl_805DBAD0:
-	.incbin "baserom.dol", 0x489DF0, 0x8
+	# ROM: 0x489DF0
+	.4byte 0x3F800000
+	.4byte 0x00000000
+

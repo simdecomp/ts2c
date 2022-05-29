@@ -23,7 +23,7 @@
 /* 803D7A9C 003D373C  10 A3 20 7A */	ps_madd f5, f3, f1, f4
 /* 803D7AA0 003D3740  10 C5 29 94 */	ps_sum0 f6, f5, f6, f5
 /* 803D7AA4 003D3744  F0 C5 80 08 */	psq_st f6, 8(r5), 1, qr0
-/* 803D7AA8 003D3748  4E 80 00 20 */	blr 
+/* 803D7AA8 003D3748  4E 80 00 20 */	blr
 
 .global "PSMTXMultVecSR"
 "PSMTXMultVecSR":
@@ -47,4 +47,4 @@
 /* 803D7AF0 003D3790  F1 65 80 04 */	psq_st f11, 4(r5), 1, qr0
 /* 803D7AF4 003D3794  11 A5 61 FA */	ps_madd f13, f5, f7, f12
 /* 803D7AF8 003D3798  F1 A5 80 08 */	psq_st f13, 8(r5), 1, qr0
-/* 803D7AFC 003D379C  4E 80 00 20 */	blr 
+/* 803D7AFC 003D379C  4E 80 00 20 */	blr

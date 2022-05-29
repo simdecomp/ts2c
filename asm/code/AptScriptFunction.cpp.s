@@ -30,7 +30,7 @@ lbl_8032F710:
 /* 8032F724 0032B3C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032F728 0032B3C8  7C 08 03 A6 */	mtlr r0
 /* 8032F72C 0032B3CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032F730 0032B3D0  4E 80 00 20 */	blr 
+/* 8032F730 0032B3D0  4E 80 00 20 */	blr
 
 .global "ShutdownStaticData__21AptScriptFunctionBaseFv"
 "ShutdownStaticData__21AptScriptFunctionBaseFv":
@@ -45,7 +45,7 @@ lbl_8032F710:
 /* 8032F754 0032B3F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032F758 0032B3F8  7C 08 03 A6 */	mtlr r0
 /* 8032F75C 0032B3FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032F760 0032B400  4E 80 00 20 */	blr 
+/* 8032F760 0032B400  4E 80 00 20 */	blr
 
 .global "PushStaticData__21AptScriptFunctionBaseFv"
 "PushStaticData__21AptScriptFunctionBaseFv":
@@ -56,7 +56,7 @@ lbl_8032F710:
 /* 8032F774 0032B414  90 0D C1 40 */	stw r0, "snRegBlockCurrentFrameCount__21AptScriptFunctionBase"-_SDA_BASE_(r13)
 /* 8032F778 0032B418  7C 03 22 14 */	add r0, r3, r4
 /* 8032F77C 0032B41C  90 0D C1 3C */	stw r0, "spRegBlockCurrentFrameBase__21AptScriptFunctionBase"-_SDA_BASE_(r13)
-/* 8032F780 0032B420  4E 80 00 20 */	blr 
+/* 8032F780 0032B420  4E 80 00 20 */	blr
 
 .global "PopStaticData__21AptScriptFunctionBaseFPv"
 "PopStaticData__21AptScriptFunctionBaseFPv":
@@ -82,7 +82,7 @@ lbl_8032F7B0:
 /* 8032F7CC 0032B46C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032F7D0 0032B470  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032F7D4 0032B474  7D 89 03 A6 */	mtctr r12
-/* 8032F7D8 0032B478  4E 80 04 21 */	bctrl 
+/* 8032F7D8 0032B478  4E 80 04 21 */	bctrl
 /* 8032F7DC 0032B47C  3B BD 00 04 */	addi r29, r29, 4
 /* 8032F7E0 0032B480  3B 9C 00 01 */	addi r28, r28, 1
 lbl_8032F7E4:
@@ -100,7 +100,7 @@ lbl_8032F7E4:
 /* 8032F810 0032B4B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F814 0032B4B4  7C 08 03 A6 */	mtlr r0
 /* 8032F818 0032B4B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032F81C 0032B4BC  4E 80 00 20 */	blr 
+/* 8032F81C 0032B4BC  4E 80 00 20 */	blr
 
 .global "__ct__21AptScriptFunctionBaseF31AptVirtualFunctionTable_IndicesP21AptScriptFunctionBaseP6AptCIHb"
 "__ct__21AptScriptFunctionBaseF31AptVirtualFunctionTable_IndicesP21AptScriptFunctionBaseP6AptCIHb":
@@ -131,7 +131,7 @@ lbl_8032F7E4:
 /* 8032F880 0032B520  7F E3 FB 78 */	mr r3, r31
 /* 8032F884 0032B524  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 8032F888 0032B528  7D 89 03 A6 */	mtctr r12
-/* 8032F88C 0032B52C  4E 80 04 21 */	bctrl 
+/* 8032F88C 0032B52C  4E 80 04 21 */	bctrl
 /* 8032F890 0032B530  80 6D C1 48 */	lwz r3, "spFrameStack__21AptScriptFunctionBase"-_SDA_BASE_(r13)
 /* 8032F894 0032B534  2C 03 00 00 */	cmpwi r3, 0
 /* 8032F898 0032B538  90 7C 00 2C */	stw r3, 0x2c(r28)
@@ -144,7 +144,7 @@ lbl_8032F7E4:
 /* 8032F8B4 0032B554  38 84 B8 E0 */	addi r4, r4, "__PRETTY_FUNCTION__$7502"@l
 /* 8032F8B8 0032B558  38 A5 B8 C8 */	addi r5, r5, lbl_8045B8C8@l
 /* 8032F8BC 0032B55C  7D 89 03 A6 */	mtctr r12
-/* 8032F8C0 0032B560  4E 80 04 21 */	bctrl 
+/* 8032F8C0 0032B560  4E 80 04 21 */	bctrl
 lbl_8032F8C4:
 /* 8032F8C4 0032B564  7F C3 F3 78 */	mr r3, r30
 /* 8032F8C8 0032B568  38 80 00 00 */	li r4, 0
@@ -169,7 +169,7 @@ lbl_8032F8F4:
 /* 8032F90C 0032B5AC  38 BF B8 C8 */	addi r5, r31, lbl_8045B8C8@l
 /* 8032F910 0032B5B0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032F914 0032B5B4  7D 89 03 A6 */	mtctr r12
-/* 8032F918 0032B5B8  4E 80 04 21 */	bctrl 
+/* 8032F918 0032B5B8  4E 80 04 21 */	bctrl
 /* 8032F91C 0032B5BC  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 8032F920 0032B5C0  38 9E B8 E0 */	addi r4, r30, -18208
 /* 8032F924 0032B5C4  38 BF B8 C8 */	addi r5, r31, -18232
@@ -177,7 +177,7 @@ lbl_8032F8F4:
 /* 8032F92C 0032B5CC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032F930 0032B5D0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032F934 0032B5D4  7D 89 03 A6 */	mtctr r12
-/* 8032F938 0032B5D8  4E 80 04 21 */	bctrl 
+/* 8032F938 0032B5D8  4E 80 04 21 */	bctrl
 /* 8032F93C 0032B5DC  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 8032F940 0032B5E0  4B FF 07 65 */	bl "incZombieCount__6AptCIHFv"
 /* 8032F944 0032B5E4  2C 1D 00 00 */	cmpwi r29, 0
@@ -197,7 +197,7 @@ lbl_8032F968:
 /* 8032F978 0032B618  7F C3 F3 78 */	mr r3, r30
 /* 8032F97C 0032B61C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8032F980 0032B620  7D 89 03 A6 */	mtctr r12
-/* 8032F984 0032B624  4E 80 04 21 */	bctrl 
+/* 8032F984 0032B624  4E 80 04 21 */	bctrl
 /* 8032F988 0032B628  80 8D C1 04 */	lwz r4, "gpObjectPrototype"-_SDA_BASE_(r13)
 /* 8032F98C 0032B62C  4B FD B4 7D */	bl "Set__Proto____13AptNativeHashFP8AptValue"
 lbl_8032F990:
@@ -209,7 +209,7 @@ lbl_8032F990:
 /* 8032F9A4 0032B644  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F9A8 0032B648  7C 08 03 A6 */	mtlr r0
 /* 8032F9AC 0032B64C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032F9B0 0032B650  4E 80 00 20 */	blr 
+/* 8032F9B0 0032B650  4E 80 00 20 */	blr
 
 .global "__ct__21AptScriptFunctionBaseF31AptVirtualFunctionTable_IndicesP21AptScriptFunctionBaseP6AptCIH"
 "__ct__21AptScriptFunctionBaseF31AptVirtualFunctionTable_IndicesP21AptScriptFunctionBaseP6AptCIH":
@@ -259,7 +259,7 @@ lbl_8032FA38:
 /* 8032FA58 0032B6F8  38 84 B9 58 */	addi r4, r4, "__PRETTY_FUNCTION__$7662"@l
 /* 8032FA5C 0032B6FC  38 A5 B8 C8 */	addi r5, r5, lbl_8045B8C8@l
 /* 8032FA60 0032B700  7D 89 03 A6 */	mtctr r12
-/* 8032FA64 0032B704  4E 80 04 21 */	bctrl 
+/* 8032FA64 0032B704  4E 80 04 21 */	bctrl
 lbl_8032FA68:
 /* 8032FA68 0032B708  80 7C 00 24 */	lwz r3, 0x24(r28)
 /* 8032FA6C 0032B70C  3F C0 80 46 */	lis r30, "__PRETTY_FUNCTION__$7662"@ha
@@ -270,7 +270,7 @@ lbl_8032FA68:
 /* 8032FA80 0032B720  38 BF B8 C8 */	addi r5, r31, lbl_8045B8C8@l
 /* 8032FA84 0032B724  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032FA88 0032B728  7D 89 03 A6 */	mtctr r12
-/* 8032FA8C 0032B72C  4E 80 04 21 */	bctrl 
+/* 8032FA8C 0032B72C  4E 80 04 21 */	bctrl
 /* 8032FA90 0032B730  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 8032FA94 0032B734  38 9E B9 58 */	addi r4, r30, -18088
 /* 8032FA98 0032B738  38 BF B8 C8 */	addi r5, r31, -18232
@@ -278,7 +278,7 @@ lbl_8032FA68:
 /* 8032FAA0 0032B740  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032FAA4 0032B744  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032FAA8 0032B748  7D 89 03 A6 */	mtctr r12
-/* 8032FAAC 0032B74C  4E 80 04 21 */	bctrl 
+/* 8032FAAC 0032B74C  4E 80 04 21 */	bctrl
 /* 8032FAB0 0032B750  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 8032FAB4 0032B754  4B FF 05 F1 */	bl "incZombieCount__6AptCIHFv"
 /* 8032FAB8 0032B758  38 7D 00 0C */	addi r3, r29, 0xc
@@ -299,7 +299,7 @@ lbl_8032FA68:
 /* 8032FAF4 0032B794  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032FAF8 0032B798  7C 08 03 A6 */	mtlr r0
 /* 8032FAFC 0032B79C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032FB00 0032B7A0  4E 80 00 20 */	blr 
+/* 8032FB00 0032B7A0  4E 80 00 20 */	blr
 
 .global "__dt__21AptScriptFunctionBaseFv"
 "__dt__21AptScriptFunctionBaseFv":
@@ -326,7 +326,7 @@ lbl_8032FB44:
 /* 8032FB50 0032B7F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FB54 0032B7F4  7C 08 03 A6 */	mtlr r0
 /* 8032FB58 0032B7F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FB5C 0032B7FC  4E 80 00 20 */	blr 
+/* 8032FB5C 0032B7FC  4E 80 00 20 */	blr
 
 .global "__ct__18AptScriptFunction1FP21AptScriptFunctionBasePC24AptAction_DefineFunctionP6AptCIH"
 "__ct__18AptScriptFunction1FP21AptScriptFunctionBasePC24AptAction_DefineFunctionP6AptCIH":
@@ -352,7 +352,7 @@ lbl_8032FB44:
 /* 8032FBAC 0032B84C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FBB0 0032B850  7C 08 03 A6 */	mtlr r0
 /* 8032FBB4 0032B854  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FBB8 0032B858  4E 80 00 20 */	blr 
+/* 8032FBB8 0032B858  4E 80 00 20 */	blr
 
 .global "__ct__18AptScriptFunction1FP18AptScriptFunction1P6AptCIH"
 "__ct__18AptScriptFunction1FP18AptScriptFunction1P6AptCIH":
@@ -378,7 +378,7 @@ lbl_8032FB44:
 /* 8032FC08 0032B8A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FC0C 0032B8AC  7C 08 03 A6 */	mtlr r0
 /* 8032FC10 0032B8B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FC14 0032B8B4  4E 80 00 20 */	blr 
+/* 8032FC14 0032B8B4  4E 80 00 20 */	blr
 
 .global "__ct__18AptScriptFunction2FP21AptScriptFunctionBasePC25AptAction_DefineFunction2P6AptCIH"
 "__ct__18AptScriptFunction2FP21AptScriptFunctionBasePC25AptAction_DefineFunction2P6AptCIH":
@@ -404,7 +404,7 @@ lbl_8032FB44:
 /* 8032FC64 0032B904  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FC68 0032B908  7C 08 03 A6 */	mtlr r0
 /* 8032FC6C 0032B90C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FC70 0032B910  4E 80 00 20 */	blr 
+/* 8032FC70 0032B910  4E 80 00 20 */	blr
 
 .global "__ct__18AptScriptFunction2FP18AptScriptFunction2P6AptCIH"
 "__ct__18AptScriptFunction2FP18AptScriptFunction2P6AptCIH":
@@ -430,7 +430,7 @@ lbl_8032FB44:
 /* 8032FCC0 0032B960  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FCC4 0032B964  7C 08 03 A6 */	mtlr r0
 /* 8032FCC8 0032B968  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FCCC 0032B96C  4E 80 00 20 */	blr 
+/* 8032FCCC 0032B96C  4E 80 00 20 */	blr
 
 .global "__dt__18AptScriptFunction1Fv"
 "__dt__18AptScriptFunction1Fv":
@@ -457,7 +457,7 @@ lbl_8032FD10:
 /* 8032FD1C 0032B9BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FD20 0032B9C0  7C 08 03 A6 */	mtlr r0
 /* 8032FD24 0032B9C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FD28 0032B9C8  4E 80 00 20 */	blr 
+/* 8032FD28 0032B9C8  4E 80 00 20 */	blr
 
 .global "__dt__18AptScriptFunction2Fv"
 "__dt__18AptScriptFunction2Fv":
@@ -484,11 +484,11 @@ lbl_8032FD6C:
 /* 8032FD78 0032BA18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FD7C 0032BA1C  7C 08 03 A6 */	mtlr r0
 /* 8032FD80 0032BA20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FD84 0032BA24  4E 80 00 20 */	blr 
+/* 8032FD84 0032BA24  4E 80 00 20 */	blr
 
 .global "PreDestroy__21AptScriptFunctionBaseFv"
 "PreDestroy__21AptScriptFunctionBaseFv":
-/* 8032FD88 0032BA28  4E 80 00 20 */	blr 
+/* 8032FD88 0032BA28  4E 80 00 20 */	blr
 
 .global "RegisterReferences__21AptScriptFunctionBaseCFv"
 "RegisterReferences__21AptScriptFunctionBaseCFv":
@@ -506,7 +506,7 @@ lbl_8032FD6C:
 /* 8032FDB8 0032BA58  7F E3 FB 78 */	mr r3, r31
 /* 8032FDBC 0032BA5C  38 A5 B9 CC */	addi r5, r5, lbl_8045B9CC@l
 /* 8032FDC0 0032BA60  7D 89 03 A6 */	mtctr r12
-/* 8032FDC4 0032BA64  4E 80 04 21 */	bctrl 
+/* 8032FDC4 0032BA64  4E 80 04 21 */	bctrl
 lbl_8032FDC8:
 /* 8032FDC8 0032BA68  80 9F 00 24 */	lwz r4, 0x24(r31)
 /* 8032FDCC 0032BA6C  2C 04 00 00 */	cmpwi r4, 0
@@ -515,7 +515,7 @@ lbl_8032FDC8:
 /* 8032FDD8 0032BA78  7F E3 FB 78 */	mr r3, r31
 /* 8032FDDC 0032BA7C  38 AD A8 60 */	addi r5, r13, lbl_805D6F40-_SDA_BASE_
 /* 8032FDE0 0032BA80  7D 89 03 A6 */	mtctr r12
-/* 8032FDE4 0032BA84  4E 80 04 21 */	bctrl 
+/* 8032FDE4 0032BA84  4E 80 04 21 */	bctrl
 lbl_8032FDE8:
 /* 8032FDE8 0032BA88  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 8032FDEC 0032BA8C  2C 04 00 00 */	cmpwi r4, 0
@@ -525,13 +525,13 @@ lbl_8032FDE8:
 /* 8032FDFC 0032BA9C  7F E3 FB 78 */	mr r3, r31
 /* 8032FE00 0032BAA0  38 A5 B9 D8 */	addi r5, r5, lbl_8045B9D8@l
 /* 8032FE04 0032BAA4  7D 89 03 A6 */	mtctr r12
-/* 8032FE08 0032BAA8  4E 80 04 21 */	bctrl 
+/* 8032FE08 0032BAA8  4E 80 04 21 */	bctrl
 lbl_8032FE0C:
 /* 8032FE0C 0032BAAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FE10 0032BAB0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8032FE14 0032BAB4  7C 08 03 A6 */	mtlr r0
 /* 8032FE18 0032BAB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FE1C 0032BABC  4E 80 00 20 */	blr 
+/* 8032FE1C 0032BABC  4E 80 00 20 */	blr
 
 .global "DestroyGCPointers__21AptScriptFunctionBaseFv"
 "DestroyGCPointers__21AptScriptFunctionBaseFv":
@@ -555,7 +555,7 @@ lbl_8032FE0C:
 /* 8032FE64 0032BB04  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032FE68 0032BB08  38 A5 B8 C8 */	addi r5, r5, lbl_8045B8C8@l
 /* 8032FE6C 0032BB0C  7D 89 03 A6 */	mtctr r12
-/* 8032FE70 0032BB10  4E 80 04 21 */	bctrl 
+/* 8032FE70 0032BB10  4E 80 04 21 */	bctrl
 lbl_8032FE74:
 /* 8032FE74 0032BB14  3B A0 00 00 */	li r29, 0
 /* 8032FE78 0032BB18  3F C0 80 46 */	lis r30, "__PRETTY_FUNCTION__$7783"@ha
@@ -568,7 +568,7 @@ lbl_8032FE74:
 /* 8032FE94 0032BB34  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032FE98 0032BB38  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032FE9C 0032BB3C  7D 89 03 A6 */	mtctr r12
-/* 8032FEA0 0032BB40  4E 80 04 21 */	bctrl 
+/* 8032FEA0 0032BB40  4E 80 04 21 */	bctrl
 /* 8032FEA4 0032BB44  93 BC 00 24 */	stw r29, 0x24(r28)
 /* 8032FEA8 0032BB48  80 7C 00 28 */	lwz r3, 0x28(r28)
 /* 8032FEAC 0032BB4C  4B FE 84 D1 */	bl "decZombieCount__6AptCIHFv"
@@ -579,7 +579,7 @@ lbl_8032FE74:
 /* 8032FEC0 0032BB60  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032FEC4 0032BB64  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032FEC8 0032BB68  7D 89 03 A6 */	mtctr r12
-/* 8032FECC 0032BB6C  4E 80 04 21 */	bctrl 
+/* 8032FECC 0032BB6C  4E 80 04 21 */	bctrl
 /* 8032FED0 0032BB70  93 BC 00 28 */	stw r29, 0x28(r28)
 /* 8032FED4 0032BB74  7F 83 E3 78 */	mr r3, r28
 /* 8032FED8 0032BB78  4B FF E8 45 */	bl "DestroyGCPointers__9AptObjectFv"
@@ -590,7 +590,7 @@ lbl_8032FE74:
 /* 8032FEEC 0032BB8C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8032FEF0 0032BB90  7C 08 03 A6 */	mtlr r0
 /* 8032FEF4 0032BB94  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032FEF8 0032BB98  4E 80 00 20 */	blr 
+/* 8032FEF8 0032BB98  4E 80 00 20 */	blr
 
 .global "SetupBeforeExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionStateP8AptValue"
 "SetupBeforeExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionStateP8AptValue":
@@ -598,7 +598,7 @@ lbl_8032FE74:
 /* 8032FF00 0032BBA0  38 00 00 00 */	li r0, 0
 /* 8032FF04 0032BBA4  90 64 00 00 */	stw r3, 0(r4)
 /* 8032FF08 0032BBA8  90 0D C1 48 */	stw r0, "spFrameStack__21AptScriptFunctionBase"-_SDA_BASE_(r13)
-/* 8032FF0C 0032BBAC  4E 80 00 20 */	blr 
+/* 8032FF0C 0032BBAC  4E 80 00 20 */	blr
 
 .global "CleanupAfterExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionState"
 "CleanupAfterExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionState":
@@ -616,7 +616,7 @@ lbl_8032FE74:
 /* 8032FF3C 0032BBDC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032FF40 0032BBE0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8032FF44 0032BBE4  7D 89 03 A6 */	mtctr r12
-/* 8032FF48 0032BBE8  4E 80 04 21 */	bctrl 
+/* 8032FF48 0032BBE8  4E 80 04 21 */	bctrl
 /* 8032FF4C 0032BBEC  48 00 04 31 */	bl "GetHashSize__13AptNativeHashFv"
 /* 8032FF50 0032BBF0  B0 7E 00 30 */	sth r3, 0x30(r30)
 /* 8032FF54 0032BBF4  3C 80 80 46 */	lis r4, "__PRETTY_FUNCTION__$7802"@ha
@@ -628,7 +628,7 @@ lbl_8032FE74:
 /* 8032FF6C 0032BC0C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8032FF70 0032BC10  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8032FF74 0032BC14  7D 89 03 A6 */	mtctr r12
-/* 8032FF78 0032BC18  4E 80 04 21 */	bctrl 
+/* 8032FF78 0032BC18  4E 80 04 21 */	bctrl
 lbl_8032FF7C:
 /* 8032FF7C 0032BC1C  80 1F 00 00 */	lwz r0, 0(r31)
 /* 8032FF80 0032BC20  90 0D C1 48 */	stw r0, "spFrameStack__21AptScriptFunctionBase"-_SDA_BASE_(r13)
@@ -637,14 +637,14 @@ lbl_8032FF7C:
 /* 8032FF8C 0032BC2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8032FF90 0032BC30  7C 08 03 A6 */	mtlr r0
 /* 8032FF94 0032BC34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8032FF98 0032BC38  4E 80 00 20 */	blr 
+/* 8032FF98 0032BC38  4E 80 00 20 */	blr
 
 .global "GetRegisterValue__21AptScriptFunctionBaseFi"
 "GetRegisterValue__21AptScriptFunctionBaseFi":
 /* 8032FF9C 0032BC3C  80 8D C1 3C */	lwz r4, "spRegBlockCurrentFrameBase__21AptScriptFunctionBase"-_SDA_BASE_(r13)
 /* 8032FFA0 0032BC40  54 60 10 3A */	slwi r0, r3, 2
 /* 8032FFA4 0032BC44  7C 64 00 2E */	lwzx r3, r4, r0
-/* 8032FFA8 0032BC48  4E 80 00 20 */	blr 
+/* 8032FFA8 0032BC48  4E 80 00 20 */	blr
 
 .global "SetRegisterValue__21AptScriptFunctionBaseFiP8AptValue"
 "SetRegisterValue__21AptScriptFunctionBaseFiP8AptValue":
@@ -673,7 +673,7 @@ lbl_8032FFD8:
 /* 80330000 0032BCA0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80330004 0032BCA4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80330008 0032BCA8  7D 89 03 A6 */	mtctr r12
-/* 8033000C 0032BCAC  4E 80 04 21 */	bctrl 
+/* 8033000C 0032BCAC  4E 80 04 21 */	bctrl
 /* 80330010 0032BCB0  81 9D 00 00 */	lwz r12, 0(r29)
 /* 80330014 0032BCB4  7F A3 EB 78 */	mr r3, r29
 /* 80330018 0032BCB8  38 9E BA 58 */	addi r4, r30, -17832
@@ -681,14 +681,14 @@ lbl_8032FFD8:
 /* 80330020 0032BCC0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80330024 0032BCC4  38 C0 02 DA */	li r6, 0x2da
 /* 80330028 0032BCC8  7D 89 03 A6 */	mtctr r12
-/* 8033002C 0032BCCC  4E 80 04 21 */	bctrl 
+/* 8033002C 0032BCCC  4E 80 04 21 */	bctrl
 /* 80330030 0032BCD0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80330034 0032BCD4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80330038 0032BCD8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8033003C 0032BCDC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80330040 0032BCE0  7C 08 03 A6 */	mtlr r0
 /* 80330044 0032BCE4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80330048 0032BCE8  4E 80 00 20 */	blr 
+/* 80330048 0032BCE8  4E 80 00 20 */	blr
 
 .global "SetupBeforeExecution__18AptScriptFunction2FP23_AptScriptFunctionStateP8AptValue"
 "SetupBeforeExecution__18AptScriptFunction2FP23_AptScriptFunctionStateP8AptValue":
@@ -830,7 +830,7 @@ lbl_80330234:
 /* 80330244 0032BEE4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80330248 0032BEE8  7C 08 03 A6 */	mtlr r0
 /* 8033024C 0032BEEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80330250 0032BEF0  4E 80 00 20 */	blr 
+/* 80330250 0032BEF0  4E 80 00 20 */	blr
 
 .global "CleanupAfterExecution__18AptScriptFunction2FP23_AptScriptFunctionState"
 "CleanupAfterExecution__18AptScriptFunction2FP23_AptScriptFunctionState":
@@ -857,7 +857,7 @@ lbl_80330284:
 /* 803302A0 0032BF40  81 83 00 00 */	lwz r12, 0(r3)
 /* 803302A4 0032BF44  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803302A8 0032BF48  7D 89 03 A6 */	mtctr r12
-/* 803302AC 0032BF4C  4E 80 04 21 */	bctrl 
+/* 803302AC 0032BF4C  4E 80 04 21 */	bctrl
 /* 803302B0 0032BF50  3B BD 00 04 */	addi r29, r29, 4
 /* 803302B4 0032BF54  3B 9C 00 01 */	addi r28, r28, 1
 lbl_803302B8:
@@ -877,7 +877,7 @@ lbl_803302B8:
 /* 803302EC 0032BF8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803302F0 0032BF90  7C 08 03 A6 */	mtlr r0
 /* 803302F4 0032BF94  38 21 00 20 */	addi r1, r1, 0x20
-/* 803302F8 0032BF98  4E 80 00 20 */	blr 
+/* 803302F8 0032BF98  4E 80 00 20 */	blr
 
 .global "__ct__30AptScriptFunctionByteCodeBlockFPCUci15AptConstantPoolPCcP6AptCIHP21AptScriptFunctionBase"
 "__ct__30AptScriptFunctionByteCodeBlockFPCUci15AptConstantPoolPCcP6AptCIHP21AptScriptFunctionBase":
@@ -912,51 +912,51 @@ lbl_803302B8:
 /* 8033036C 0032C00C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80330370 0032C010  7C 08 03 A6 */	mtlr r0
 /* 80330374 0032C014  38 21 00 20 */	addi r1, r1, 0x20
-/* 80330378 0032C018  4E 80 00 20 */	blr 
+/* 80330378 0032C018  4E 80 00 20 */	blr
 
 .global "GetHashSize__13AptNativeHashFv"
 "GetHashSize__13AptNativeHashFv":
 /* 8033037C 0032C01C  80 63 00 00 */	lwz r3, 0(r3)
-/* 80330380 0032C020  4E 80 00 20 */	blr 
+/* 80330380 0032C020  4E 80 00 20 */	blr
 
 .global "CreatingNestedFunction__21AptScriptFunctionBaseFv"
 "CreatingNestedFunction__21AptScriptFunctionBaseFv":
 /* 80330384 0032C024  80 0D C1 48 */	lwz r0, "spFrameStack__21AptScriptFunctionBase"-_SDA_BASE_(r13)
 /* 80330388 0032C028  2C 00 00 00 */	cmpwi r0, 0
-/* 8033038C 0032C02C  4C 82 00 20 */	bnelr 
+/* 8033038C 0032C02C  4C 82 00 20 */	bnelr
 /* 80330390 0032C030  4B FD A1 20 */	b "CreateFrameStack__21AptScriptFunctionBaseFv"
-/* 80330394 0032C034  4E 80 00 20 */	blr 
+/* 80330394 0032C034  4E 80 00 20 */	blr
 
 .global "GetName__18AptScriptFunction1CFv"
 "GetName__18AptScriptFunction1CFv":
 /* 80330398 0032C038  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 8033039C 0032C03C  80 63 00 00 */	lwz r3, 0(r3)
-/* 803303A0 0032C040  4E 80 00 20 */	blr 
+/* 803303A0 0032C040  4E 80 00 20 */	blr
 
 .global "GetNumArguments__18AptScriptFunction1Fv"
 "GetNumArguments__18AptScriptFunction1Fv":
 /* 803303A4 0032C044  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803303A8 0032C048  80 63 00 04 */	lwz r3, 4(r3)
-/* 803303AC 0032C04C  4E 80 00 20 */	blr 
+/* 803303AC 0032C04C  4E 80 00 20 */	blr
 
 .global "GetByteCodeBase__18AptScriptFunction1Fv"
 "GetByteCodeBase__18AptScriptFunction1Fv":
 /* 803303B0 0032C050  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803303B4 0032C054  38 63 00 18 */	addi r3, r3, 0x18
-/* 803303B8 0032C058  4E 80 00 20 */	blr 
+/* 803303B8 0032C058  4E 80 00 20 */	blr
 
 .global "GetByteCodeSize__18AptScriptFunction1Fv"
 "GetByteCodeSize__18AptScriptFunction1Fv":
 /* 803303BC 0032C05C  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803303C0 0032C060  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 803303C4 0032C064  4E 80 00 20 */	blr 
+/* 803303C4 0032C064  4E 80 00 20 */	blr
 
 .global "GetConstantPool__18AptScriptFunction1Fv"
 "GetConstantPool__18AptScriptFunction1Fv":
 /* 803303C8 0032C068  80 83 00 34 */	lwz r4, 0x34(r3)
 /* 803303CC 0032C06C  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 803303D0 0032C070  80 84 00 14 */	lwz r4, 0x14(r4)
-/* 803303D4 0032C074  4E 80 00 20 */	blr 
+/* 803303D4 0032C074  4E 80 00 20 */	blr
 
 .global "SetArgument__18AptScriptFunction1FP8AptValuei"
 "SetArgument__18AptScriptFunction1FP8AptValuei":
@@ -993,7 +993,7 @@ lbl_8033040C:
 /* 8033044C 0032C0EC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80330450 0032C0F0  7C 08 03 A6 */	mtlr r0
 /* 80330454 0032C0F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80330458 0032C0F8  4E 80 00 20 */	blr 
+/* 80330458 0032C0F8  4E 80 00 20 */	blr
 
 .global "Duplicate__18AptScriptFunction1FP6AptCIH"
 "Duplicate__18AptScriptFunction1FP6AptCIH":
@@ -1017,38 +1017,38 @@ lbl_80330494:
 /* 8033049C 0032C13C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803304A0 0032C140  7C 08 03 A6 */	mtlr r0
 /* 803304A4 0032C144  38 21 00 10 */	addi r1, r1, 0x10
-/* 803304A8 0032C148  4E 80 00 20 */	blr 
+/* 803304A8 0032C148  4E 80 00 20 */	blr
 
 .global "GetName__18AptScriptFunction2CFv"
 "GetName__18AptScriptFunction2CFv":
 /* 803304AC 0032C14C  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803304B0 0032C150  80 63 00 00 */	lwz r3, 0(r3)
-/* 803304B4 0032C154  4E 80 00 20 */	blr 
+/* 803304B4 0032C154  4E 80 00 20 */	blr
 
 .global "GetNumArguments__18AptScriptFunction2Fv"
 "GetNumArguments__18AptScriptFunction2Fv":
 /* 803304B8 0032C158  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803304BC 0032C15C  80 63 00 04 */	lwz r3, 4(r3)
-/* 803304C0 0032C160  4E 80 00 20 */	blr 
+/* 803304C0 0032C160  4E 80 00 20 */	blr
 
 .global "GetByteCodeBase__18AptScriptFunction2Fv"
 "GetByteCodeBase__18AptScriptFunction2Fv":
 /* 803304C4 0032C164  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803304C8 0032C168  38 63 00 1C */	addi r3, r3, 0x1c
-/* 803304CC 0032C16C  4E 80 00 20 */	blr 
+/* 803304CC 0032C16C  4E 80 00 20 */	blr
 
 .global "GetByteCodeSize__18AptScriptFunction2Fv"
 "GetByteCodeSize__18AptScriptFunction2Fv":
 /* 803304D0 0032C170  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 803304D4 0032C174  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 803304D8 0032C178  4E 80 00 20 */	blr 
+/* 803304D8 0032C178  4E 80 00 20 */	blr
 
 .global "GetConstantPool__18AptScriptFunction2Fv"
 "GetConstantPool__18AptScriptFunction2Fv":
 /* 803304DC 0032C17C  80 83 00 34 */	lwz r4, 0x34(r3)
 /* 803304E0 0032C180  80 64 00 14 */	lwz r3, 0x14(r4)
 /* 803304E4 0032C184  80 84 00 18 */	lwz r4, 0x18(r4)
-/* 803304E8 0032C188  4E 80 00 20 */	blr 
+/* 803304E8 0032C188  4E 80 00 20 */	blr
 
 .global "SetArgument__18AptScriptFunction2FP8AptValuei"
 "SetArgument__18AptScriptFunction2FP8AptValuei":
@@ -1095,7 +1095,7 @@ lbl_80330574:
 /* 80330580 0032C220  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80330584 0032C224  7C 08 03 A6 */	mtlr r0
 /* 80330588 0032C228  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033058C 0032C22C  4E 80 00 20 */	blr 
+/* 8033058C 0032C22C  4E 80 00 20 */	blr
 
 .global "Duplicate__18AptScriptFunction2FP6AptCIH"
 "Duplicate__18AptScriptFunction2FP6AptCIH":
@@ -1119,43 +1119,43 @@ lbl_803305C8:
 /* 803305D0 0032C270  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803305D4 0032C274  7C 08 03 A6 */	mtlr r0
 /* 803305D8 0032C278  38 21 00 10 */	addi r1, r1, 0x10
-/* 803305DC 0032C27C  4E 80 00 20 */	blr 
+/* 803305DC 0032C27C  4E 80 00 20 */	blr
 
 .global "GetName__30AptScriptFunctionByteCodeBlockCFv"
 "GetName__30AptScriptFunctionByteCodeBlockCFv":
 /* 803305E0 0032C280  80 63 00 3C */	lwz r3, 0x3c(r3)
-/* 803305E4 0032C284  4E 80 00 20 */	blr 
+/* 803305E4 0032C284  4E 80 00 20 */	blr
 
 .global "GetNumArguments__30AptScriptFunctionByteCodeBlockFv"
 "GetNumArguments__30AptScriptFunctionByteCodeBlockFv":
 /* 803305E8 0032C288  38 60 00 00 */	li r3, 0
-/* 803305EC 0032C28C  4E 80 00 20 */	blr 
+/* 803305EC 0032C28C  4E 80 00 20 */	blr
 
 .global "GetByteCodeBase__30AptScriptFunctionByteCodeBlockFv"
 "GetByteCodeBase__30AptScriptFunctionByteCodeBlockFv":
 /* 803305F0 0032C290  80 63 00 34 */	lwz r3, 0x34(r3)
-/* 803305F4 0032C294  4E 80 00 20 */	blr 
+/* 803305F4 0032C294  4E 80 00 20 */	blr
 
 .global "GetByteCodeSize__30AptScriptFunctionByteCodeBlockFv"
 "GetByteCodeSize__30AptScriptFunctionByteCodeBlockFv":
 /* 803305F8 0032C298  80 63 00 38 */	lwz r3, 0x38(r3)
-/* 803305FC 0032C29C  4E 80 00 20 */	blr 
+/* 803305FC 0032C29C  4E 80 00 20 */	blr
 
 .global "GetConstantPool__30AptScriptFunctionByteCodeBlockFv"
 "GetConstantPool__30AptScriptFunctionByteCodeBlockFv":
 /* 80330600 0032C2A0  7C 64 1B 78 */	mr r4, r3
 /* 80330604 0032C2A4  80 63 00 40 */	lwz r3, 0x40(r3)
 /* 80330608 0032C2A8  80 84 00 44 */	lwz r4, 0x44(r4)
-/* 8033060C 0032C2AC  4E 80 00 20 */	blr 
+/* 8033060C 0032C2AC  4E 80 00 20 */	blr
 
 .global "SetArgument__30AptScriptFunctionByteCodeBlockFP8AptValuei"
 "SetArgument__30AptScriptFunctionByteCodeBlockFP8AptValuei":
-/* 80330610 0032C2B0  4E 80 00 20 */	blr 
+/* 80330610 0032C2B0  4E 80 00 20 */	blr
 
 .global "Duplicate__30AptScriptFunctionByteCodeBlockFP6AptCIH"
 "Duplicate__30AptScriptFunctionByteCodeBlockFP6AptCIH":
 /* 80330614 0032C2B4  38 60 00 00 */	li r3, 0
-/* 80330618 0032C2B8  4E 80 00 20 */	blr 
+/* 80330618 0032C2B8  4E 80 00 20 */	blr
 
 .global "__dt__30AptScriptFunctionByteCodeBlockFv"
 "__dt__30AptScriptFunctionByteCodeBlockFv":
@@ -1182,7 +1182,7 @@ lbl_8033065C:
 /* 80330668 0032C308  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033066C 0032C30C  7C 08 03 A6 */	mtlr r0
 /* 80330670 0032C310  38 21 00 10 */	addi r1, r1, 0x10
-/* 80330674 0032C314  4E 80 00 20 */	blr 
+/* 80330674 0032C314  4E 80 00 20 */	blr
 
 .global "getDF2Flag__25AptAction_DefineFunction2CF27AptDefinefunction2FlagsType"
 "getDF2Flag__25AptAction_DefineFunction2CF27AptDefinefunction2FlagsType":
@@ -1190,62 +1190,211 @@ lbl_8033065C:
 /* 8033067C 0032C31C  A8 63 00 0A */	lha r3, 0xa(r3)
 /* 80330680 0032C320  7C 00 20 30 */	slw r0, r0, r4
 /* 80330684 0032C324  7C 63 00 38 */	and r3, r3, r0
-/* 80330688 0032C328  4E 80 00 20 */	blr 
+/* 80330688 0032C328  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$7477"
 "__PRETTY_FUNCTION__$7477":
-	.incbin "baserom.dol", 0x457998, 0x30
+	# ROM: 0x457998
+	.asciz "AptScriptFunctionBase::PopStaticData(void *)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045B8C8
 lbl_8045B8C8:
-	.incbin "baserom.dol", 0x4579C8, 0x18
+	# ROM: 0x4579C8
+	.asciz "AptScriptFunction.cpp"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$7502"
 "__PRETTY_FUNCTION__$7502":
-	.incbin "baserom.dol", 0x4579E0, 0x78
+	# ROM: 0x4579E0
+	.asciz "AptScriptFunctionBase::AptScriptFunctionBase(AptVirtualFunctionTable_Indices, AptScriptFunctionBase *, AptCIH *, bool)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$7662"
 "__PRETTY_FUNCTION__$7662":
-	.incbin "baserom.dol", 0x457A58, 0x74
+	# ROM: 0x457A58
+	.asciz "AptScriptFunctionBase::AptScriptFunctionBase(AptVirtualFunctionTable_Indices, AptScriptFunctionBase *, AptCIH *)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045B9CC
 lbl_8045B9CC:
-	.incbin "baserom.dol", 0x457ACC, 0xC
+	# ROM: 0x457ACC
+	.asciz "ParentScope"
+
 .global lbl_8045B9D8
 lbl_8045B9D8:
-	.incbin "baserom.dol", 0x457AD8, 0xC
+	# ROM: 0x457AD8
+	.asciz "ParentAnim"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$7783"
 "__PRETTY_FUNCTION__$7783":
-	.incbin "baserom.dol", 0x457AE4, 0x2C
+	# ROM: 0x457AE4
+	.asciz "AptScriptFunctionBase::DestroyGCPointers()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$7802"
 "__PRETTY_FUNCTION__$7802":
-	.incbin "baserom.dol", 0x457B10, 0x48
+	# ROM: 0x457B10
+	.asciz "AptScriptFunctionBase::CleanupAfterExecution(_AptScriptFunctionState *)"
+
 .global "__PRETTY_FUNCTION__$7823"
 "__PRETTY_FUNCTION__$7823":
-	.incbin "baserom.dol", 0x457B58, 0x3C
+	# ROM: 0x457B58
+	.asciz "AptScriptFunctionBase::SetRegisterValue(int, AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$7895"
 "__PRETTY_FUNCTION__$7895":
-	.incbin "baserom.dol", 0x457B94, 0x48
+	# ROM: 0x457B94
+	.asciz "AptScriptFunction2::CleanupAfterExecution(_AptScriptFunctionState *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__vt__30AptScriptFunctionByteCodeBlock"
 "__vt__30AptScriptFunctionByteCodeBlock":
-	.incbin "baserom.dol", 0x457BDC, 0x6C
+	# ROM: 0x457BDC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__21AptScriptFunctionBaseFv" ;# ptr (0x8032FD88)
+	.4byte "DestroyGCPointers__21AptScriptFunctionBaseFv" ;# ptr (0x8032FE20)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__21AptScriptFunctionBaseCFv" ;# ptr (0x8032FD8C)
+	.4byte "__dt__30AptScriptFunctionByteCodeBlockFv" ;# ptr (0x8033061C)
+	.4byte "Duplicate__30AptScriptFunctionByteCodeBlockFP6AptCIH" ;# ptr (0x80330614)
+	.4byte "GetName__30AptScriptFunctionByteCodeBlockCFv" ;# ptr (0x803305E0)
+	.4byte "GetNumArguments__30AptScriptFunctionByteCodeBlockFv" ;# ptr (0x803305E8)
+	.4byte "GetByteCodeBase__30AptScriptFunctionByteCodeBlockFv" ;# ptr (0x803305F0)
+	.4byte "GetByteCodeSize__30AptScriptFunctionByteCodeBlockFv" ;# ptr (0x803305F8)
+	.4byte "GetConstantPool__30AptScriptFunctionByteCodeBlockFv" ;# ptr (0x80330600)
+	.4byte "SetupBeforeExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionStateP8AptValue" ;# ptr (0x8032FEFC)
+	.4byte "SetArgument__30AptScriptFunctionByteCodeBlockFP8AptValuei" ;# ptr (0x80330610)
+	.4byte "CleanupAfterExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionState" ;# ptr (0x8032FF10)
+	.4byte "CreatingNestedFunction__21AptScriptFunctionBaseFv" ;# ptr (0x80330384)
+
 .global "__vt__18AptScriptFunction2"
 "__vt__18AptScriptFunction2":
-	.incbin "baserom.dol", 0x457C48, 0x6C
+	# ROM: 0x457C48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__21AptScriptFunctionBaseFv" ;# ptr (0x8032FD88)
+	.4byte "DestroyGCPointers__21AptScriptFunctionBaseFv" ;# ptr (0x8032FE20)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__21AptScriptFunctionBaseCFv" ;# ptr (0x8032FD8C)
+	.4byte "__dt__18AptScriptFunction2Fv" ;# ptr (0x8032FD2C)
+	.4byte "Duplicate__18AptScriptFunction2FP6AptCIH" ;# ptr (0x80330590)
+	.4byte "GetName__18AptScriptFunction2CFv" ;# ptr (0x803304AC)
+	.4byte "GetNumArguments__18AptScriptFunction2Fv" ;# ptr (0x803304B8)
+	.4byte "GetByteCodeBase__18AptScriptFunction2Fv" ;# ptr (0x803304C4)
+	.4byte "GetByteCodeSize__18AptScriptFunction2Fv" ;# ptr (0x803304D0)
+	.4byte "GetConstantPool__18AptScriptFunction2Fv" ;# ptr (0x803304DC)
+	.4byte "SetupBeforeExecution__18AptScriptFunction2FP23_AptScriptFunctionStateP8AptValue" ;# ptr (0x8033004C)
+	.4byte "SetArgument__18AptScriptFunction2FP8AptValuei" ;# ptr (0x803304EC)
+	.4byte "CleanupAfterExecution__18AptScriptFunction2FP23_AptScriptFunctionState" ;# ptr (0x80330254)
+	.4byte "CreatingNestedFunction__21AptScriptFunctionBaseFv" ;# ptr (0x80330384)
+
 .global "__vt__18AptScriptFunction1"
 "__vt__18AptScriptFunction1":
-	.incbin "baserom.dol", 0x457CB4, 0x6C
+	# ROM: 0x457CB4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__21AptScriptFunctionBaseFv" ;# ptr (0x8032FD88)
+	.4byte "DestroyGCPointers__21AptScriptFunctionBaseFv" ;# ptr (0x8032FE20)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__21AptScriptFunctionBaseCFv" ;# ptr (0x8032FD8C)
+	.4byte "__dt__18AptScriptFunction1Fv" ;# ptr (0x8032FCD0)
+	.4byte "Duplicate__18AptScriptFunction1FP6AptCIH" ;# ptr (0x8033045C)
+	.4byte "GetName__18AptScriptFunction1CFv" ;# ptr (0x80330398)
+	.4byte "GetNumArguments__18AptScriptFunction1Fv" ;# ptr (0x803303A4)
+	.4byte "GetByteCodeBase__18AptScriptFunction1Fv" ;# ptr (0x803303B0)
+	.4byte "GetByteCodeSize__18AptScriptFunction1Fv" ;# ptr (0x803303BC)
+	.4byte "GetConstantPool__18AptScriptFunction1Fv" ;# ptr (0x803303C8)
+	.4byte "SetupBeforeExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionStateP8AptValue" ;# ptr (0x8032FEFC)
+	.4byte "SetArgument__18AptScriptFunction1FP8AptValuei" ;# ptr (0x803303D8)
+	.4byte "CleanupAfterExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionState" ;# ptr (0x8032FF10)
+	.4byte "CreatingNestedFunction__21AptScriptFunctionBaseFv" ;# ptr (0x80330384)
+
 .global "__vt__21AptScriptFunctionBase"
 "__vt__21AptScriptFunctionBase":
-	.incbin "baserom.dol", 0x457D20, 0x70
+	# ROM: 0x457D20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__9AptObjectCFP8AptValuePC9EAStringC" ;# ptr (0x8032E6D8)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__21AptScriptFunctionBaseFv" ;# ptr (0x8032FD88)
+	.4byte "DestroyGCPointers__21AptScriptFunctionBaseFv" ;# ptr (0x8032FE20)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__21AptScriptFunctionBaseCFv" ;# ptr (0x8032FD8C)
+	.4byte "__dt__21AptScriptFunctionBaseFv" ;# ptr (0x8032FB04)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SetupBeforeExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionStateP8AptValue" ;# ptr (0x8032FEFC)
+	.4byte 0x00000000
+	.4byte "CleanupAfterExecution__21AptScriptFunctionBaseFP23_AptScriptFunctionState" ;# ptr (0x8032FF10)
+	.4byte "CreatingNestedFunction__21AptScriptFunctionBaseFv" ;# ptr (0x80330384)
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D6F40
 lbl_805D6F40:
-	.incbin "baserom.dol", 0x486AC0, 0x4
+	# ROM: 0x486AC0
+	.4byte 0x43494800
+
 .global lbl_805D6F44
 lbl_805D6F44:
-	.incbin "baserom.dol", 0x486AC4, 0xC
+	# ROM: 0x486AC4
+	.asciz "_root"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_805D6F50
 lbl_805D6F50:
-	.incbin "baserom.dol", 0x486AD0, 0x8
+	# ROM: 0x486AD0
+	.asciz "_parent"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "spRegBlockBase__21AptScriptFunctionBase"

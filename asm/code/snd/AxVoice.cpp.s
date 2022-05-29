@@ -37,7 +37,7 @@
 /* 8039B0BC 00396D5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039B0C0 00396D60  7C 08 03 A6 */	mtlr r0
 /* 8039B0C4 00396D64  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B0C8 00396D68  4E 80 00 20 */	blr 
+/* 8039B0C8 00396D68  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail15DisposeCallbackFv"
 "__dt__Q46nw4hbm3snd6detail15DisposeCallbackFv":
@@ -63,7 +63,7 @@ lbl_8039B108:
 /* 8039B114 00396DB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039B118 00396DB8  7C 08 03 A6 */	mtlr r0
 /* 8039B11C 00396DBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B120 00396DC0  4E 80 00 20 */	blr 
+/* 8039B120 00396DC0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail15DisposeCallbackFv"
 "__ct__Q46nw4hbm3snd6detail15DisposeCallbackFv":
@@ -81,7 +81,7 @@ lbl_8039B108:
 /* 8039B150 00396DF0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039B154 00396DF4  7C 08 03 A6 */	mtlr r0
 /* 8039B158 00396DF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B15C 00396DFC  4E 80 00 20 */	blr 
+/* 8039B15C 00396DFC  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail7AxVoiceFv"
 "__dt__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -133,7 +133,7 @@ lbl_8039B1F8:
 /* 8039B204 00396EA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039B208 00396EA8  7C 08 03 A6 */	mtlr r0
 /* 8039B20C 00396EAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039B210 00396EB0  4E 80 00 20 */	blr 
+/* 8039B210 00396EB0  4E 80 00 20 */	blr
 
 .global "InitParam__Q46nw4hbm3snd6detail7AxVoiceFiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv"
 "InitParam__Q46nw4hbm3snd6detail7AxVoiceFiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv":
@@ -231,7 +231,7 @@ lbl_8039B2C0:
 /* 8039B36C 0039700C  D0 23 01 70 */	stfs f1, 0x170(r3)
 /* 8039B370 00397010  D0 03 01 80 */	stfs f0, 0x180(r3)
 /* 8039B374 00397014  D0 23 01 84 */	stfs f1, 0x184(r3)
-/* 8039B378 00397018  4E 80 00 20 */	blr 
+/* 8039B378 00397018  4E 80 00 20 */	blr
 
 .global "Update__Q46nw4hbm3snd6detail7AxVoiceFv"
 "Update__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -256,7 +256,7 @@ lbl_8039B2C0:
 /* 8039B3C4 00397064  80 BF 01 10 */	lwz r5, 0x110(r31)
 /* 8039B3C8 00397068  38 80 00 00 */	li r4, 0
 /* 8039B3CC 0039706C  7D 89 03 A6 */	mtctr r12
-/* 8039B3D0 00397070  4E 80 04 21 */	bctrl 
+/* 8039B3D0 00397070  4E 80 04 21 */	bctrl
 lbl_8039B3D4:
 /* 8039B3D4 00397074  38 00 00 00 */	li r0, 0
 /* 8039B3D8 00397078  98 1F 01 1E */	stb r0, 0x11e(r31)
@@ -371,7 +371,7 @@ lbl_8039B560:
 /* 8039B564 00397204  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039B568 00397208  7C 08 03 A6 */	mtlr r0
 /* 8039B56C 0039720C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B570 00397210  4E 80 00 20 */	blr 
+/* 8039B570 00397210  4E 80 00 20 */	blr
 
 .global "SetAxParam<Us>__Q46nw4hbm3snd6detail7AxVoiceFPFP6_AXVPBUs_vUs_v"
 "SetAxParam<Us>__Q46nw4hbm3snd6detail7AxVoiceFPFP6_AXVPBUs_vUs_v":
@@ -397,7 +397,7 @@ lbl_8039B5AC:
 /* 8039B5B8 00397258  7F 4C D3 78 */	mr r12, r26
 /* 8039B5BC 0039725C  7F 64 DB 78 */	mr r4, r27
 /* 8039B5C0 00397260  7D 89 03 A6 */	mtctr r12
-/* 8039B5C4 00397264  4E 80 04 21 */	bctrl 
+/* 8039B5C4 00397264  4E 80 04 21 */	bctrl
 lbl_8039B5C8:
 /* 8039B5C8 00397268  3B DE 00 04 */	addi r30, r30, 4
 /* 8039B5CC 0039726C  3B 9C 00 01 */	addi r28, r28, 1
@@ -416,7 +416,7 @@ lbl_8039B5E4:
 /* 8039B5F8 00397298  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039B5FC 0039729C  7C 08 03 A6 */	mtlr r0
 /* 8039B600 003972A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039B604 003972A4  4E 80 00 20 */	blr 
+/* 8039B604 003972A4  4E 80 00 20 */	blr
 
 .global "Acquire__Q46nw4hbm3snd6detail7AxVoiceFiiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv"
 "Acquire__Q46nw4hbm3snd6detail7AxVoiceFiiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv":
@@ -651,7 +651,7 @@ lbl_8039B92C:
 /* 8039B934 003975D4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8039B938 003975D8  7C 08 03 A6 */	mtlr r0
 /* 8039B93C 003975DC  38 21 00 80 */	addi r1, r1, 0x80
-/* 8039B940 003975E0  4E 80 00 20 */	blr 
+/* 8039B940 003975E0  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator":
@@ -670,7 +670,7 @@ lbl_8039B92C:
 /* 8039B974 00397614  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039B978 00397618  7C 08 03 A6 */	mtlr r0
 /* 8039B97C 0039761C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B980 00397620  4E 80 00 20 */	blr 
+/* 8039B980 00397620  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator":
@@ -687,7 +687,7 @@ lbl_8039B92C:
 /* 8039B9AC 0039764C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039B9B0 00397650  7C 08 03 A6 */	mtlr r0
 /* 8039B9B4 00397654  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039B9B8 00397658  4E 80 00 20 */	blr 
+/* 8039B9B8 00397658  4E 80 00 20 */	blr
 
 .global "__eq__Q36nw4hbm2ut6detailFQ56nw4hbm2ut6detail12LinkListImpl13ConstIteratorQ56nw4hbm2ut6detail12LinkListImpl13ConstIterator"
 "__eq__Q36nw4hbm2ut6detailFQ56nw4hbm2ut6detail12LinkListImpl13ConstIteratorQ56nw4hbm2ut6detail12LinkListImpl13ConstIterator":
@@ -696,7 +696,7 @@ lbl_8039B92C:
 /* 8039B9C4 00397664  7C 03 00 50 */	subf r0, r3, r0
 /* 8039B9C8 00397668  7C 00 00 34 */	cntlzw r0, r0
 /* 8039B9CC 0039766C  54 03 D9 7E */	srwi r3, r0, 5
-/* 8039B9D0 00397670  4E 80 00 20 */	blr 
+/* 8039B9D0 00397670  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>CFv"
 "GetEndIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>CFv":
@@ -712,7 +712,7 @@ lbl_8039B92C:
 /* 8039B9F8 00397698  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039B9FC 0039769C  7C 08 03 A6 */	mtlr r0
 /* 8039BA00 003976A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BA04 003976A4  4E 80 00 20 */	blr 
+/* 8039BA04 003976A4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator":
@@ -730,13 +730,13 @@ lbl_8039B92C:
 /* 8039BA34 003976D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039BA38 003976D8  7C 08 03 A6 */	mtlr r0
 /* 8039BA3C 003976DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039BA40 003976E0  4E 80 00 20 */	blr 
+/* 8039BA40 003976E0  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
 /* 8039BA44 003976E4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8039BA48 003976E8  90 03 00 00 */	stw r0, 0(r3)
-/* 8039BA4C 003976EC  4E 80 00 20 */	blr 
+/* 8039BA4C 003976EC  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFv"
 "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFv":
@@ -751,7 +751,7 @@ lbl_8039B92C:
 /* 8039BA70 00397710  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039BA74 00397714  7C 08 03 A6 */	mtlr r0
 /* 8039BA78 00397718  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BA7C 0039771C  4E 80 00 20 */	blr 
+/* 8039BA7C 0039771C  4E 80 00 20 */	blr
 
 .global "__pp__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFv"
 "__pp__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFv":
@@ -768,7 +768,7 @@ lbl_8039B92C:
 /* 8039BAA8 00397748  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039BAAC 0039774C  7C 08 03 A6 */	mtlr r0
 /* 8039BAB0 00397750  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BAB4 00397754  4E 80 00 20 */	blr 
+/* 8039BAB4 00397754  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorCFv"
 "__rf__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorCFv":
@@ -780,7 +780,7 @@ lbl_8039B92C:
 /* 8039BACC 0039776C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039BAD0 00397770  7C 08 03 A6 */	mtlr r0
 /* 8039BAD4 00397774  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BAD8 00397778  4E 80 00 20 */	blr 
+/* 8039BAD8 00397778  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPCQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPCQ36nw4hbm2ut12LinkListNode":
@@ -804,12 +804,12 @@ lbl_8039BB14:
 /* 8039BB1C 003977BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039BB20 003977C0  7C 08 03 A6 */	mtlr r0
 /* 8039BB24 003977C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BB28 003977C8  4E 80 00 20 */	blr 
+/* 8039BB28 003977C8  4E 80 00 20 */	blr
 
 .global "__rf__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorCFv"
 "__rf__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorCFv":
 /* 8039BB2C 003977CC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8039BB30 003977D0  4E 80 00 20 */	blr 
+/* 8039BB30 003977D0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFRCQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIteratorFRCQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>13ConstIterator":
@@ -824,13 +824,13 @@ lbl_8039BB14:
 /* 8039BB54 003977F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039BB58 003977F8  7C 08 03 A6 */	mtlr r0
 /* 8039BB5C 003977FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BB60 00397800  4E 80 00 20 */	blr 
+/* 8039BB60 00397800  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFRCQ56nw4hbm2ut6detail12LinkListImpl13ConstIterator"
 "__ct__Q56nw4hbm2ut6detail12LinkListImpl13ConstIteratorFRCQ56nw4hbm2ut6detail12LinkListImpl13ConstIterator":
 /* 8039BB64 00397804  80 04 00 00 */	lwz r0, 0(r4)
 /* 8039BB68 00397808  90 03 00 00 */	stw r0, 0(r3)
-/* 8039BB6C 0039780C  4E 80 00 20 */	blr 
+/* 8039BB6C 0039780C  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>CFv"
 "GetBeginIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>CFv":
@@ -846,24 +846,24 @@ lbl_8039BB14:
 /* 8039BB94 00397834  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039BB98 00397838  7C 08 03 A6 */	mtlr r0
 /* 8039BB9C 0039783C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039BBA0 00397840  4E 80 00 20 */	blr 
+/* 8039BBA0 00397840  4E 80 00 20 */	blr
 
 .global "GetVoiceList__Q46nw4hbm3snd6detail9AxManagerCFv"
 "GetVoiceList__Q46nw4hbm3snd6detail9AxManagerCFv":
 /* 8039BBA4 00397844  38 63 00 14 */	addi r3, r3, 0x14
-/* 8039BBA8 00397848  4E 80 00 20 */	blr 
+/* 8039BBA8 00397848  4E 80 00 20 */	blr
 
 .global "Clamp<i>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Fiii_i"
 "Clamp<i>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Fiii_i":
 /* 8039BBAC 0039784C  7C 03 28 00 */	cmpw r3, r5
 /* 8039BBB0 00397850  40 81 00 0C */	ble lbl_8039BBBC
 /* 8039BBB4 00397854  7C A3 2B 78 */	mr r3, r5
-/* 8039BBB8 00397858  4E 80 00 20 */	blr 
+/* 8039BBB8 00397858  4E 80 00 20 */	blr
 lbl_8039BBBC:
 /* 8039BBBC 0039785C  7C 03 20 00 */	cmpw r3, r4
-/* 8039BBC0 00397860  4C 80 00 20 */	bgelr 
+/* 8039BBC0 00397860  4C 80 00 20 */	bgelr
 /* 8039BBC4 00397864  7C 83 23 78 */	mr r3, r4
-/* 8039BBC8 00397868  4E 80 00 20 */	blr 
+/* 8039BBC8 00397868  4E 80 00 20 */	blr
 
 .global "Free__Q46nw4hbm3snd6detail7AxVoiceFv"
 "Free__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -928,7 +928,7 @@ lbl_8039BC90:
 /* 8039BC98 00397938  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039BC9C 0039793C  7C 08 03 A6 */	mtlr r0
 /* 8039BCA0 00397940  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039BCA4 00397944  4E 80 00 20 */	blr 
+/* 8039BCA4 00397944  4E 80 00 20 */	blr
 
 .global "Setup__Q46nw4hbm3snd6detail7AxVoiceFRCQ46nw4hbm3snd6detail8WaveData"
 "Setup__Q46nw4hbm3snd6detail7AxVoiceFRCQ46nw4hbm3snd6detail8WaveData":
@@ -1048,7 +1048,7 @@ lbl_8039BE08:
 /* 8039BE54 00397AF4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8039BE58 00397AF8  7C 08 03 A6 */	mtlr r0
 /* 8039BE5C 00397AFC  38 21 00 40 */	addi r1, r1, 0x40
-/* 8039BE60 00397B00  4E 80 00 20 */	blr 
+/* 8039BE60 00397B00  4E 80 00 20 */	blr
 
 .global "__as__Q46nw4hbm3snd6detail9AdpcmInfoFRCQ46nw4hbm3snd6detail9AdpcmInfo"
 "__as__Q46nw4hbm3snd6detail9AdpcmInfoFRCQ46nw4hbm3snd6detail9AdpcmInfo":
@@ -1110,20 +1110,20 @@ lbl_8039BE08:
 /* 8039BF40 00397BE0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8039BF44 00397BE4  7C 08 03 A6 */	mtlr r0
 /* 8039BF48 00397BE8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8039BF4C 00397BEC  4E 80 00 20 */	blr 
+/* 8039BF4C 00397BEC  4E 80 00 20 */	blr
 
 .global "WaveFormatToAxFormat__Q36nw4hbm3snd6detailFUl"
 "WaveFormatToAxFormat__Q36nw4hbm3snd6detailFUl":
 /* 8039BF50 00397BF0  28 03 00 01 */	cmplwi r3, 1
 /* 8039BF54 00397BF4  40 82 00 0C */	bne lbl_8039BF60
 /* 8039BF58 00397BF8  38 60 00 0A */	li r3, 0xa
-/* 8039BF5C 00397BFC  4E 80 00 20 */	blr 
+/* 8039BF5C 00397BFC  4E 80 00 20 */	blr
 lbl_8039BF60:
 /* 8039BF60 00397C00  2C 03 00 00 */	cmpwi r3, 0
 /* 8039BF64 00397C04  38 60 00 00 */	li r3, 0
-/* 8039BF68 00397C08  4C 82 00 20 */	bnelr 
+/* 8039BF68 00397C08  4C 82 00 20 */	bnelr
 /* 8039BF6C 00397C0C  38 60 00 19 */	li r3, 0x19
-/* 8039BF70 00397C10  4E 80 00 20 */	blr 
+/* 8039BF70 00397C10  4E 80 00 20 */	blr
 
 .global "Start__Q46nw4hbm3snd6detail7AxVoiceFv"
 "Start__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -1148,7 +1148,7 @@ lbl_8039BF60:
 /* 8039BFBC 00397C5C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039BFC0 00397C60  7C 08 03 A6 */	mtlr r0
 /* 8039BFC4 00397C64  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039BFC8 00397C68  4E 80 00 20 */	blr 
+/* 8039BFC8 00397C68  4E 80 00 20 */	blr
 
 .global "Stop__Q46nw4hbm3snd6detail7AxVoiceFv"
 "Stop__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -1186,7 +1186,7 @@ lbl_8039C020:
 /* 8039C040 00397CE0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039C044 00397CE4  7C 08 03 A6 */	mtlr r0
 /* 8039C048 00397CE8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C04C 00397CEC  4E 80 00 20 */	blr 
+/* 8039C04C 00397CEC  4E 80 00 20 */	blr
 
 .global "Pause__Q46nw4hbm3snd6detail7AxVoiceFb"
 "Pause__Q46nw4hbm3snd6detail7AxVoiceFb":
@@ -1220,7 +1220,7 @@ lbl_8039C0AC:
 /* 8039C0B4 00397D54  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039C0B8 00397D58  7C 08 03 A6 */	mtlr r0
 /* 8039C0BC 00397D5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C0C0 00397D60  4E 80 00 20 */	blr 
+/* 8039C0C0 00397D60  4E 80 00 20 */	blr
 
 .global "IsRun__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "IsRun__Q46nw4hbm3snd6detail7AxVoiceCFv":
@@ -1253,7 +1253,7 @@ lbl_8039C120:
 /* 8039C124 00397DC4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039C128 00397DC8  7C 08 03 A6 */	mtlr r0
 /* 8039C12C 00397DCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C130 00397DD0  4E 80 00 20 */	blr 
+/* 8039C130 00397DD0  4E 80 00 20 */	blr
 
 .global "SetVolume__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetVolume__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1277,7 +1277,7 @@ lbl_8039C170:
 /* 8039C174 00397E14  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C178 00397E18  7C 08 03 A6 */	mtlr r0
 /* 8039C17C 00397E1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C180 00397E20  4E 80 00 20 */	blr 
+/* 8039C180 00397E20  4E 80 00 20 */	blr
 
 .global "Clamp<f>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Ffff_f"
 "Clamp<f>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Ffff_f":
@@ -1294,7 +1294,7 @@ lbl_8039C1A0:
 /* 8039C1A0 00397E40  FC 60 10 90 */	fmr f3, f2
 lbl_8039C1A4:
 /* 8039C1A4 00397E44  FC 20 18 90 */	fmr f1, f3
-/* 8039C1A8 00397E48  4E 80 00 20 */	blr 
+/* 8039C1A8 00397E48  4E 80 00 20 */	blr
 
 .global "SetVeVolume__Q46nw4hbm3snd6detail7AxVoiceFff"
 "SetVeVolume__Q46nw4hbm3snd6detail7AxVoiceFff":
@@ -1352,18 +1352,18 @@ lbl_8039C258:
 /* 8039C26C 00397F0C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C270 00397F10  7C 08 03 A6 */	mtlr r0
 /* 8039C274 00397F14  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039C278 00397F18  4E 80 00 20 */	blr 
+/* 8039C278 00397F18  4E 80 00 20 */	blr
 
 .global "SetPitch__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetPitch__Q46nw4hbm3snd6detail7AxVoiceFf":
 /* 8039C27C 00397F1C  C0 03 01 84 */	lfs f0, 0x184(r3)
 /* 8039C280 00397F20  FC 01 00 00 */	fcmpu cr0, f1, f0
-/* 8039C284 00397F24  4D 82 00 20 */	beqlr 
+/* 8039C284 00397F24  4D 82 00 20 */	beqlr
 /* 8039C288 00397F28  88 03 01 23 */	lbz r0, 0x123(r3)
 /* 8039C28C 00397F2C  D0 23 01 84 */	stfs f1, 0x184(r3)
 /* 8039C290 00397F30  60 00 00 08 */	ori r0, r0, 8
 /* 8039C294 00397F34  98 03 01 23 */	stb r0, 0x123(r3)
-/* 8039C298 00397F38  4E 80 00 20 */	blr 
+/* 8039C298 00397F38  4E 80 00 20 */	blr
 
 .global "SetPan__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetPan__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1387,7 +1387,7 @@ lbl_8039C2D8:
 /* 8039C2DC 00397F7C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C2E0 00397F80  7C 08 03 A6 */	mtlr r0
 /* 8039C2E4 00397F84  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C2E8 00397F88  4E 80 00 20 */	blr 
+/* 8039C2E8 00397F88  4E 80 00 20 */	blr
 
 .global "SetSurroundPan__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetSurroundPan__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1411,18 +1411,18 @@ lbl_8039C328:
 /* 8039C32C 00397FCC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C330 00397FD0  7C 08 03 A6 */	mtlr r0
 /* 8039C334 00397FD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C338 00397FD8  4E 80 00 20 */	blr 
+/* 8039C338 00397FD8  4E 80 00 20 */	blr
 
 .global "SetPan2__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetPan2__Q46nw4hbm3snd6detail7AxVoiceFf":
 /* 8039C33C 00397FDC  C0 03 01 30 */	lfs f0, 0x130(r3)
 /* 8039C340 00397FE0  FC 01 00 00 */	fcmpu cr0, f1, f0
-/* 8039C344 00397FE4  4D 82 00 20 */	beqlr 
+/* 8039C344 00397FE4  4D 82 00 20 */	beqlr
 /* 8039C348 00397FE8  88 03 01 23 */	lbz r0, 0x123(r3)
 /* 8039C34C 00397FEC  D0 23 01 30 */	stfs f1, 0x130(r3)
 /* 8039C350 00397FF0  60 00 00 20 */	ori r0, r0, 0x20
 /* 8039C354 00397FF4  98 03 01 23 */	stb r0, 0x123(r3)
-/* 8039C358 00397FF8  4E 80 00 20 */	blr 
+/* 8039C358 00397FF8  4E 80 00 20 */	blr
 
 .global "SetSurroundPan2__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetSurroundPan2__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1446,7 +1446,7 @@ lbl_8039C398:
 /* 8039C39C 0039803C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C3A0 00398040  7C 08 03 A6 */	mtlr r0
 /* 8039C3A4 00398044  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C3A8 00398048  4E 80 00 20 */	blr 
+/* 8039C3A8 00398048  4E 80 00 20 */	blr
 
 .global "SetLpfFreq__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetLpfFreq__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1470,18 +1470,18 @@ lbl_8039C3E8:
 /* 8039C3EC 0039808C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C3F0 00398090  7C 08 03 A6 */	mtlr r0
 /* 8039C3F4 00398094  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C3F8 00398098  4E 80 00 20 */	blr 
+/* 8039C3F8 00398098  4E 80 00 20 */	blr
 
 .global "SetOutputLine__Q46nw4hbm3snd6detail7AxVoiceFi"
 "SetOutputLine__Q46nw4hbm3snd6detail7AxVoiceFi":
 /* 8039C3FC 0039809C  80 03 01 3C */	lwz r0, 0x13c(r3)
 /* 8039C400 003980A0  7C 04 00 00 */	cmpw r4, r0
-/* 8039C404 003980A4  4D 82 00 20 */	beqlr 
+/* 8039C404 003980A4  4D 82 00 20 */	beqlr
 /* 8039C408 003980A8  88 03 01 23 */	lbz r0, 0x123(r3)
 /* 8039C40C 003980AC  90 83 01 3C */	stw r4, 0x13c(r3)
 /* 8039C410 003980B0  60 00 00 20 */	ori r0, r0, 0x20
 /* 8039C414 003980B4  98 03 01 23 */	stb r0, 0x123(r3)
-/* 8039C418 003980B8  4E 80 00 20 */	blr 
+/* 8039C418 003980B8  4E 80 00 20 */	blr
 
 .global "SetMainOutVolume__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetMainOutVolume__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1505,7 +1505,7 @@ lbl_8039C458:
 /* 8039C45C 003980FC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C460 00398100  7C 08 03 A6 */	mtlr r0
 /* 8039C464 00398104  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C468 00398108  4E 80 00 20 */	blr 
+/* 8039C468 00398108  4E 80 00 20 */	blr
 
 .global "SetRemoteOutVolume__Q46nw4hbm3snd6detail7AxVoiceFif"
 "SetRemoteOutVolume__Q46nw4hbm3snd6detail7AxVoiceFif":
@@ -1560,7 +1560,7 @@ lbl_8039C510:
 /* 8039C520 003981C0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039C524 003981C4  7C 08 03 A6 */	mtlr r0
 /* 8039C528 003981C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C52C 003981CC  4E 80 00 20 */	blr 
+/* 8039C52C 003981CC  4E 80 00 20 */	blr
 
 .global "SetMainSend__Q46nw4hbm3snd6detail7AxVoiceFf"
 "SetMainSend__Q46nw4hbm3snd6detail7AxVoiceFf":
@@ -1585,7 +1585,7 @@ lbl_8039C570:
 /* 8039C574 00398214  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039C578 00398218  7C 08 03 A6 */	mtlr r0
 /* 8039C57C 0039821C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C580 00398220  4E 80 00 20 */	blr 
+/* 8039C580 00398220  4E 80 00 20 */	blr
 
 .global "SetFxSend__Q46nw4hbm3snd6detail7AxVoiceFQ36nw4hbm3snd6AuxBusf"
 "SetFxSend__Q46nw4hbm3snd6detail7AxVoiceFQ36nw4hbm3snd6AuxBusf":
@@ -1640,7 +1640,7 @@ lbl_8039C628:
 /* 8039C638 003982D8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039C63C 003982DC  7C 08 03 A6 */	mtlr r0
 /* 8039C640 003982E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C644 003982E4  4E 80 00 20 */	blr 
+/* 8039C644 003982E4  4E 80 00 20 */	blr
 
 .global "SetRemoteSend__Q46nw4hbm3snd6detail7AxVoiceFif"
 "SetRemoteSend__Q46nw4hbm3snd6detail7AxVoiceFif":
@@ -1696,7 +1696,7 @@ lbl_8039C6F0:
 /* 8039C700 003983A0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039C704 003983A4  7C 08 03 A6 */	mtlr r0
 /* 8039C708 003983A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C70C 003983AC  4E 80 00 20 */	blr 
+/* 8039C70C 003983AC  4E 80 00 20 */	blr
 
 .global "SetRemoteFxSend__Q46nw4hbm3snd6detail7AxVoiceFif"
 "SetRemoteFxSend__Q46nw4hbm3snd6detail7AxVoiceFif":
@@ -1751,7 +1751,7 @@ lbl_8039C7B4:
 /* 8039C7C4 00398464  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039C7C8 00398468  7C 08 03 A6 */	mtlr r0
 /* 8039C7CC 0039846C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C7D0 00398470  4E 80 00 20 */	blr 
+/* 8039C7D0 00398470  4E 80 00 20 */	blr
 
 .global "SetPriority__Q46nw4hbm3snd6detail7AxVoiceFi"
 "SetPriority__Q46nw4hbm3snd6detail7AxVoiceFi":
@@ -1791,7 +1791,7 @@ lbl_8039C838:
 /* 8039C850 003984F0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039C854 003984F4  7C 08 03 A6 */	mtlr r0
 /* 8039C858 003984F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039C85C 003984FC  4E 80 00 20 */	blr 
+/* 8039C85C 003984FC  4E 80 00 20 */	blr
 
 .global "GetCurrentPlayingDspAddress__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "GetCurrentPlayingDspAddress__Q46nw4hbm3snd6detail7AxVoiceCFv":
@@ -1824,7 +1824,7 @@ lbl_8039C8BC:
 /* 8039C8C0 00398560  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039C8C4 00398564  7C 08 03 A6 */	mtlr r0
 /* 8039C8C8 00398568  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C8CC 0039856C  4E 80 00 20 */	blr 
+/* 8039C8CC 0039856C  4E 80 00 20 */	blr
 
 .global "GetLoopEndDspAddress__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "GetLoopEndDspAddress__Q46nw4hbm3snd6detail7AxVoiceCFv":
@@ -1857,7 +1857,7 @@ lbl_8039C92C:
 /* 8039C930 003985D0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039C934 003985D4  7C 08 03 A6 */	mtlr r0
 /* 8039C938 003985D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C93C 003985DC  4E 80 00 20 */	blr 
+/* 8039C93C 003985DC  4E 80 00 20 */	blr
 
 .global "SetAdpcmLoop__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail14AdpcmLoopParam"
 "SetAdpcmLoop__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail14AdpcmLoopParam":
@@ -1888,7 +1888,7 @@ lbl_8039C92C:
 /* 8039C994 00398634  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039C998 00398638  7C 08 03 A6 */	mtlr r0
 /* 8039C99C 0039863C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039C9A0 00398640  4E 80 00 20 */	blr 
+/* 8039C9A0 00398640  4E 80 00 20 */	blr
 
 .global "IsPlayFinished__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "IsPlayFinished__Q46nw4hbm3snd6detail7AxVoiceCFv":
@@ -1970,7 +1970,7 @@ lbl_8039CAA0:
 /* 8039CAAC 0039874C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039CAB0 00398750  7C 08 03 A6 */	mtlr r0
 /* 8039CAB4 00398754  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039CAB8 00398758  4E 80 00 20 */	blr 
+/* 8039CAB8 00398758  4E 80 00 20 */	blr
 
 .global "GetCurrentPlayingSample__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "GetCurrentPlayingSample__Q46nw4hbm3snd6detail7AxVoiceCFv":
@@ -2025,7 +2025,7 @@ lbl_8039CB68:
 /* 8039CB70 00398810  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039CB74 00398814  7C 08 03 A6 */	mtlr r0
 /* 8039CB78 00398818  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039CB7C 0039881C  4E 80 00 20 */	blr 
+/* 8039CB7C 0039881C  4E 80 00 20 */	blr
 
 .global "SetAxAddr__Q46nw4hbm3snd6detail7AxVoiceFibQ56nw4hbm3snd6detail7AxVoice6FormatPCvUlUl"
 "SetAxAddr__Q46nw4hbm3snd6detail7AxVoiceFibQ56nw4hbm3snd6detail7AxVoice6FormatPCvUlUl":
@@ -2106,7 +2106,7 @@ lbl_8039CC80:
 /* 8039CC94 00398934  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8039CC98 00398938  7C 08 03 A6 */	mtlr r0
 /* 8039CC9C 0039893C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8039CCA0 00398940  4E 80 00 20 */	blr 
+/* 8039CCA0 00398940  4E 80 00 20 */	blr
 
 .global "SetLoopStart__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl"
 "SetLoopStart__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl":
@@ -2152,7 +2152,7 @@ lbl_8039CD10:
 /* 8039CD38 003989D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8039CD3C 003989DC  7C 08 03 A6 */	mtlr r0
 /* 8039CD40 003989E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039CD44 003989E4  4E 80 00 20 */	blr 
+/* 8039CD44 003989E4  4E 80 00 20 */	blr
 
 .global "SetLoopEnd__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl"
 "SetLoopEnd__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl":
@@ -2198,7 +2198,7 @@ lbl_8039CDB4:
 /* 8039CDDC 00398A7C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8039CDE0 00398A80  7C 08 03 A6 */	mtlr r0
 /* 8039CDE4 00398A84  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039CDE8 00398A88  4E 80 00 20 */	blr 
+/* 8039CDE8 00398A88  4E 80 00 20 */	blr
 
 .global "SetLoopFlag__Q46nw4hbm3snd6detail7AxVoiceFb"
 "SetLoopFlag__Q46nw4hbm3snd6detail7AxVoiceFb":
@@ -2242,7 +2242,7 @@ lbl_8039CE50:
 /* 8039CE70 00398B10  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039CE74 00398B14  7C 08 03 A6 */	mtlr r0
 /* 8039CE78 00398B18  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039CE7C 00398B1C  4E 80 00 20 */	blr 
+/* 8039CE7C 00398B1C  4E 80 00 20 */	blr
 
 .global "StopAtPoint__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl"
 "StopAtPoint__Q46nw4hbm3snd6detail7AxVoiceFiPCvUl":
@@ -2300,7 +2300,7 @@ lbl_8039CF20:
 /* 8039CF40 00398BE0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039CF44 00398BE4  7C 08 03 A6 */	mtlr r0
 /* 8039CF48 00398BE8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039CF4C 00398BEC  4E 80 00 20 */	blr 
+/* 8039CF4C 00398BEC  4E 80 00 20 */	blr
 
 .global "SetVoiceType__Q46nw4hbm3snd6detail7AxVoiceFQ56nw4hbm3snd6detail7AxVoice9VoiceType"
 "SetVoiceType__Q46nw4hbm3snd6detail7AxVoiceFQ56nw4hbm3snd6detail7AxVoice9VoiceType":
@@ -2409,7 +2409,7 @@ lbl_8039D090:
 /* 8039D0BC 00398D5C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8039D0C0 00398D60  7C 08 03 A6 */	mtlr r0
 /* 8039D0C4 00398D64  38 21 00 70 */	addi r1, r1, 0x70
-/* 8039D0C8 00398D68  4E 80 00 20 */	blr 
+/* 8039D0C8 00398D68  4E 80 00 20 */	blr
 
 .global "SetAxSrcType__Q46nw4hbm3snd6detail7AxVoiceFQ56nw4hbm3snd6detail7AxVoice7SrcType"
 "SetAxSrcType__Q46nw4hbm3snd6detail7AxVoiceFQ56nw4hbm3snd6detail7AxVoice7SrcType":
@@ -2451,7 +2451,7 @@ lbl_8039D140:
 /* 8039D14C 00398DEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039D150 00398DF0  7C 08 03 A6 */	mtlr r0
 /* 8039D154 00398DF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039D158 00398DF8  4E 80 00 20 */	blr 
+/* 8039D158 00398DF8  4E 80 00 20 */	blr
 
 .global "SetAxAdpcm__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail10AdpcmParam"
 "SetAxAdpcm__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail10AdpcmParam":
@@ -2549,7 +2549,7 @@ lbl_8039D290:
 /* 8039D2A4 00398F44  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8039D2A8 00398F48  7C 08 03 A6 */	mtlr r0
 /* 8039D2AC 00398F4C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8039D2B0 00398F50  4E 80 00 20 */	blr 
+/* 8039D2B0 00398F50  4E 80 00 20 */	blr
 
 .global "SetAxAdpcmLoop__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail14AdpcmLoopParam"
 "SetAxAdpcmLoop__Q46nw4hbm3snd6detail7AxVoiceFiQ56nw4hbm3snd6detail7AxVoice6FormatPCQ46nw4hbm3snd6detail14AdpcmLoopParam":
@@ -2614,7 +2614,7 @@ lbl_8039D370:
 /* 8039D384 00399024  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039D388 00399028  7C 08 03 A6 */	mtlr r0
 /* 8039D38C 0039902C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039D390 00399030  4E 80 00 20 */	blr 
+/* 8039D390 00399030  4E 80 00 20 */	blr
 
 .global "UpdateAxVe__Q46nw4hbm3snd6detail7AxVoiceFv"
 "UpdateAxVe__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -2751,7 +2751,7 @@ lbl_8039D544:
 /* 8039D570 00399210  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8039D574 00399214  7C 08 03 A6 */	mtlr r0
 /* 8039D578 00399218  38 21 00 80 */	addi r1, r1, 0x80
-/* 8039D57C 0039921C  4E 80 00 20 */	blr 
+/* 8039D57C 0039921C  4E 80 00 20 */	blr
 
 .global "UpdateAxMix__Q46nw4hbm3snd6detail7AxVoiceFv"
 "UpdateAxMix__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -2814,7 +2814,7 @@ lbl_8039D634:
 /* 8039D648 003992E8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8039D64C 003992EC  7C 08 03 A6 */	mtlr r0
 /* 8039D650 003992F0  38 21 00 70 */	addi r1, r1, 0x70
-/* 8039D654 003992F4  4E 80 00 20 */	blr 
+/* 8039D654 003992F4  4E 80 00 20 */	blr
 
 .global "UpdateAxLpf__Q46nw4hbm3snd6detail7AxVoiceFv"
 "UpdateAxLpf__Q46nw4hbm3snd6detail7AxVoiceFv":
@@ -2909,7 +2909,7 @@ lbl_8039D778:
 /* 8039D78C 0039942C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8039D790 00399430  7C 08 03 A6 */	mtlr r0
 /* 8039D794 00399434  38 21 00 40 */	addi r1, r1, 0x40
-/* 8039D798 00399438  4E 80 00 20 */	blr 
+/* 8039D798 00399438  4E 80 00 20 */	blr
 
 .global "VoiceCallback__Q46nw4hbm3snd6detail7AxVoiceFPv"
 "VoiceCallback__Q46nw4hbm3snd6detail7AxVoiceFPv":
@@ -2939,7 +2939,7 @@ lbl_8039D7E4:
 /* 8039D7F4 00399494  80 BD 01 10 */	lwz r5, 0x110(r29)
 /* 8039D7F8 00399498  38 80 00 03 */	li r4, 3
 /* 8039D7FC 0039949C  7D 89 03 A6 */	mtctr r12
-/* 8039D800 003994A0  4E 80 04 21 */	bctrl 
+/* 8039D800 003994A0  4E 80 04 21 */	bctrl
 lbl_8039D804:
 /* 8039D804 003994A4  7F BF EB 78 */	mr r31, r29
 /* 8039D808 003994A8  3B 80 00 00 */	li r28, 0
@@ -2987,7 +2987,7 @@ lbl_8039D850:
 /* 8039D89C 0039953C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039D8A0 00399540  7C 08 03 A6 */	mtlr r0
 /* 8039D8A4 00399544  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039D8A8 00399548  4E 80 00 20 */	blr 
+/* 8039D8A8 00399548  4E 80 00 20 */	blr
 
 .global "GetDspAddressBySample__Q46nw4hbm3snd6detail7AxVoiceFPCvUlQ56nw4hbm3snd6detail7AxVoice6Format"
 "GetDspAddressBySample__Q46nw4hbm3snd6detail7AxVoiceFPCvUlQ56nw4hbm3snd6detail7AxVoice6Format":
@@ -3047,7 +3047,7 @@ lbl_8039D95C:
 /* 8039D964 00399604  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039D968 00399608  7C 08 03 A6 */	mtlr r0
 /* 8039D96C 0039960C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039D970 00399610  4E 80 00 20 */	blr 
+/* 8039D970 00399610  4E 80 00 20 */	blr
 
 .global "GetSampleByDspAddress__Q46nw4hbm3snd6detail7AxVoiceFPCvUlQ56nw4hbm3snd6detail7AxVoice6Format"
 "GetSampleByDspAddress__Q46nw4hbm3snd6detail7AxVoiceFPCvUlQ56nw4hbm3snd6detail7AxVoice6Format":
@@ -3100,7 +3100,7 @@ lbl_8039DA08:
 /* 8039DA10 003996B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039DA14 003996B4  7C 08 03 A6 */	mtlr r0
 /* 8039DA18 003996B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039DA1C 003996BC  4E 80 00 20 */	blr 
+/* 8039DA1C 003996BC  4E 80 00 20 */	blr
 
 .global "GetSampleByByte__Q46nw4hbm3snd6detail7AxVoiceFUlQ56nw4hbm3snd6detail7AxVoice6Format"
 "GetSampleByByte__Q46nw4hbm3snd6detail7AxVoiceFUlQ56nw4hbm3snd6detail7AxVoice6Format":
@@ -3148,7 +3148,7 @@ lbl_8039DAA4:
 /* 8039DAAC 0039974C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039DAB0 00399750  7C 08 03 A6 */	mtlr r0
 /* 8039DAB4 00399754  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039DAB8 00399758  4E 80 00 20 */	blr 
+/* 8039DAB8 00399758  4E 80 00 20 */	blr
 
 .global "TransformDpl2Pan__Q46nw4hbm3snd6detail7AxVoiceFPfPfff"
 "TransformDpl2Pan__Q46nw4hbm3snd6detail7AxVoiceFPfPfff":
@@ -3297,12 +3297,12 @@ lbl_8039DCAC:
 /* 8039DCDC 0039997C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8039DCE0 00399980  7C 08 03 A6 */	mtlr r0
 /* 8039DCE4 00399984  38 21 00 40 */	addi r1, r1, 0x40
-/* 8039DCE8 00399988  4E 80 00 20 */	blr 
+/* 8039DCE8 00399988  4E 80 00 20 */	blr
 
 .global "Abs<f>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Ff_f"
 "Abs<f>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@Ff_f":
 /* 8039DCEC 0039998C  FC 20 0A 10 */	fabs f1, f1
-/* 8039DCF0 00399990  4E 80 00 20 */	blr 
+/* 8039DCF0 00399990  4E 80 00 20 */	blr
 
 .global "CalcAXPBMIX__Q46nw4hbm3snd6detail7AxVoiceFiiP8_AXPBMIX"
 "CalcAXPBMIX__Q46nw4hbm3snd6detail7AxVoiceFiiP8_AXPBMIX":
@@ -3863,14 +3863,14 @@ lbl_8039E2F8:
 /* 8039E528 0039A1C8  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 8039E52C 0039A1CC  7C 08 03 A6 */	mtlr r0
 /* 8039E530 0039A1D0  38 21 01 20 */	addi r1, r1, 0x120
-/* 8039E534 0039A1D4  4E 80 00 20 */	blr 
+/* 8039E534 0039A1D4  4E 80 00 20 */	blr
 
 .global "Min<Ul>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@FUlUl_Ul"
 "Min<Ul>__Q36nw4hbm2ut25@unnamed@snd_AxVoice_cpp@FUlUl_Ul":
 /* 8039E538 0039A1D8  7C 03 20 40 */	cmplw r3, r4
-/* 8039E53C 0039A1DC  4C 81 00 20 */	blelr 
+/* 8039E53C 0039A1DC  4C 81 00 20 */	blelr
 /* 8039E540 0039A1E0  7C 83 23 78 */	mr r3, r4
-/* 8039E544 0039A1E4  4E 80 00 20 */	blr 
+/* 8039E544 0039A1E4  4E 80 00 20 */	blr
 
 .global "CalcAXPBRMTMIX__Q46nw4hbm3snd6detail7AxVoiceFiiP11_AXPBRMTMIX"
 "CalcAXPBRMTMIX__Q46nw4hbm3snd6detail7AxVoiceFiiP11_AXPBRMTMIX":
@@ -3999,7 +3999,7 @@ lbl_8039E60C:
 /* 8039E71C 0039A3BC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8039E720 0039A3C0  7C 08 03 A6 */	mtlr r0
 /* 8039E724 0039A3C4  38 21 00 40 */	addi r1, r1, 0x40
-/* 8039E728 0039A3C8  4E 80 00 20 */	blr 
+/* 8039E728 0039A3C8  4E 80 00 20 */	blr
 
 .global "InvalidateWaveData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv"
 "InvalidateWaveData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv":
@@ -4045,7 +4045,7 @@ lbl_8039E79C:
 /* 8039E7BC 0039A45C  80 BD 01 10 */	lwz r5, 0x110(r29)
 /* 8039E7C0 0039A460  38 80 00 01 */	li r4, 1
 /* 8039E7C4 0039A464  7D 89 03 A6 */	mtctr r12
-/* 8039E7C8 0039A468  4E 80 04 21 */	bctrl 
+/* 8039E7C8 0039A468  4E 80 04 21 */	bctrl
 lbl_8039E7CC:
 /* 8039E7CC 0039A46C  38 61 00 08 */	addi r3, r1, 8
 /* 8039E7D0 0039A470  38 80 FF FF */	li r4, -1
@@ -4056,7 +4056,7 @@ lbl_8039E7CC:
 /* 8039E7E4 0039A484  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039E7E8 0039A488  7C 08 03 A6 */	mtlr r0
 /* 8039E7EC 0039A48C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039E7F0 0039A490  4E 80 00 20 */	blr 
+/* 8039E7F0 0039A490  4E 80 00 20 */	blr
 
 .global "SetVoiceLoop___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUs"
 "SetVoiceLoop___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUs":
@@ -4081,7 +4081,7 @@ lbl_8039E82C:
 /* 8039E838 0039A4D8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039E83C 0039A4DC  7C 08 03 A6 */	mtlr r0
 /* 8039E840 0039A4E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039E844 0039A4E4  4E 80 00 20 */	blr 
+/* 8039E844 0039A4E4  4E 80 00 20 */	blr
 
 .global "SetVoiceLoopAddr___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUl"
 "SetVoiceLoopAddr___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUl":
@@ -4108,7 +4108,7 @@ lbl_8039E888:
 /* 8039E894 0039A534  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039E898 0039A538  7C 08 03 A6 */	mtlr r0
 /* 8039E89C 0039A53C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039E8A0 0039A540  4E 80 00 20 */	blr 
+/* 8039E8A0 0039A540  4E 80 00 20 */	blr
 
 .global "SetVoiceEndAddr___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUl"
 "SetVoiceEndAddr___Q46nw4hbm3snd6detail25@unnamed@snd_AxVoice_cpp@FP6_AXVPBUl":
@@ -4135,99 +4135,183 @@ lbl_8039E8E4:
 /* 8039E8F0 0039A590  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8039E8F4 0039A594  7C 08 03 A6 */	mtlr r0
 /* 8039E8F8 0039A598  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039E8FC 0039A59C  4E 80 00 20 */	blr 
+/* 8039E8FC 0039A59C  4E 80 00 20 */	blr
 
 .global "InvalidateData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv"
 "InvalidateData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv":
-/* 8039E900 0039A5A0  4E 80 00 20 */	blr 
+/* 8039E900 0039A5A0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046D1B0
 lbl_8046D1B0:
-	.incbin "baserom.dol", 0x4692B0, 0x148
+	# ROM: 0x4692B0
+	.asciz "snd_AxVoice.cpp"
+	.asciz "channelCount is out of bounds(%d)\n%d <= channelCount <= %d not satisfied."
+	.byte 0x00, 0x00
+	.asciz "voiceOutCount is out of bounds(%d)\n%d <= voiceOutCount <= %d not satisfied."
+	.asciz "NW4HBM:Failed assertion ! mActiveFlag"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (vpb)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (waveParam.channelParam[channelIndex].dataAddr)"
+
 .global lbl_8046D2F8
 lbl_8046D2F8:
-	.incbin "baserom.dol", 0x4693F8, 0x48
+	# ROM: 0x4693F8
+	.asciz "remoteIndex is out of bounds(%d)\n%d <= remoteIndex < %d not satisfied."
+	.byte 0x00
+
 .global lbl_8046D340
 lbl_8046D340:
-	.incbin "baserom.dol", 0x469440, 0x84
+	# ROM: 0x469440
+	.asciz "bus is out of bounds(%d)\n%d <= bus < %d not satisfied."
+	.byte 0x00
+	.asciz "voiceOutIndex is out of bounds(%d)\n%d <= voiceOutIndex <= %d not satisfied."
+
 .global lbl_8046D3C4
 lbl_8046D3C4:
-	.incbin "baserom.dol", 0x4694C4, 0x44
+	# ROM: 0x4694C4
+	.asciz "priority is out of bounds(%d)\n%d <= priority <= %d not satisfied."
+	.byte 0x00, 0x00
+
 .global lbl_8046D408
 lbl_8046D408:
-	.incbin "baserom.dol", 0x469508, 0x38
+	# ROM: 0x469508
+	.asciz "NW4HBM:Failed assertion channelIndex < CHANNEL_MAX"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_8046D440
 lbl_8046D440:
-	.incbin "baserom.dol", 0x469540, 0x38
+	# ROM: 0x469540
+	.asciz "Invalid format\n"
+	.asciz "NW4HBM:Pointer must not be NULL (param)"
+
 .global lbl_8046D478
 lbl_8046D478:
-	.incbin "baserom.dol", 0x469578, 0x28
+	# ROM: 0x469578
+	.asciz "NW4HBM:Pointer must not be NULL (voice)"
+
 .global "__vt__Q46nw4hbm3snd6detail7AxVoice"
 "__vt__Q46nw4hbm3snd6detail7AxVoice":
-	.incbin "baserom.dol", 0x4695A0, 0x14
+	# ROM: 0x4695A0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm3snd6detail7AxVoiceFv" ;# ptr (0x8039B160)
+	.4byte "InvalidateData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv" ;# ptr (0x8039E900)
+	.4byte "InvalidateWaveData__Q46nw4hbm3snd6detail7AxVoiceFPCvPCv" ;# ptr (0x8039E72C)
+
 .global "__vt__Q46nw4hbm3snd6detail15DisposeCallback"
 "__vt__Q46nw4hbm3snd6detail15DisposeCallback":
-	.incbin "baserom.dol", 0x4695B4, 0x14
+	# ROM: 0x4695B4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm3snd6detail15DisposeCallbackFv" ;# ptr (0x8039B0CC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global lbl_8046D4C8
 lbl_8046D4C8:
-	.incbin "baserom.dol", 0x4695C8, 0x24
+	# ROM: 0x4695C8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D4EC
 lbl_8046D4EC:
-	.incbin "baserom.dol", 0x4695EC, 0xC
+	# ROM: 0x4695EC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBA60
 lbl_805DBA60:
-	.incbin "baserom.dol", 0x489D80, 0x4
+	# ROM: 0x489D80
+	.4byte 0x3F800000
+
 .global lbl_805DBA64
 lbl_805DBA64:
-	.incbin "baserom.dol", 0x489D84, 0x4
+	# ROM: 0x489D84
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBA68
 lbl_805DBA68:
-	.incbin "baserom.dol", 0x489D88, 0x4
+	# ROM: 0x489D88
+	.4byte 0xBF800000
+
 .global lbl_805DBA6C
 lbl_805DBA6C:
-	.incbin "baserom.dol", 0x489D8C, 0x4
+	# ROM: 0x489D8C
+	.4byte 0x40000000
+
 .global lbl_805DBA70
 lbl_805DBA70:
-	.incbin "baserom.dol", 0x489D90, 0x4
+	# ROM: 0x489D90
+	.4byte 0x46FA0000
+
 .global lbl_805DBA74
 lbl_805DBA74:
-	.incbin "baserom.dol", 0x489D94, 0x4
+	# ROM: 0x489D94
+	.4byte 0x47800000
+
 .global lbl_805DBA78
 lbl_805DBA78:
-	.incbin "baserom.dol", 0x489D98, 0x8
+	# ROM: 0x489D98
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBA80
 lbl_805DBA80:
-	.incbin "baserom.dol", 0x489DA0, 0x4
+	# ROM: 0x489DA0
+	.4byte 0x3FAAAAAB
+
 .global lbl_805DBA84
 lbl_805DBA84:
-	.incbin "baserom.dol", 0x489DA4, 0x4
+	# ROM: 0x489DA4
+	.4byte 0x46FFFE00
+
 .global lbl_805DBA88
 lbl_805DBA88:
-	.incbin "baserom.dol", 0x489DA8, 0x4
+	# ROM: 0x489DA8
+	.4byte 0xBDF5C28F
+
 .global lbl_805DBA8C
 lbl_805DBA8C:
-	.incbin "baserom.dol", 0x489DAC, 0x4
+	# ROM: 0x489DAC
+	.4byte 0x3F6147AE
+
 .global lbl_805DBA90
 lbl_805DBA90:
-	.incbin "baserom.dol", 0x489DB0, 0x4
+	# ROM: 0x489DB0
+	.4byte 0x3F000000
+
 .global lbl_805DBA94
 lbl_805DBA94:
-	.incbin "baserom.dol", 0x489DB4, 0x4
+	# ROM: 0x489DB4
+	.4byte 0x3F8F5C29
+
 .global lbl_805DBA98
 lbl_805DBA98:
-	.incbin "baserom.dol", 0x489DB8, 0x4
+	# ROM: 0x489DB8
+	.4byte 0x3F59999A
+
 .global lbl_805DBA9C
 lbl_805DBA9C:
-	.incbin "baserom.dol", 0x489DBC, 0x4
+	# ROM: 0x489DBC
+	.4byte 0x3E199998
+
 .global lbl_805DBAA0
 lbl_805DBAA0:
-	.incbin "baserom.dol", 0x489DC0, 0x4
+	# ROM: 0x489DC0
+	.4byte 0x3EB33334
+
 .global lbl_805DBAA4
 lbl_805DBAA4:
-	.incbin "baserom.dol", 0x489DC4, 0x4
+	# ROM: 0x489DC4
+	.4byte 0xC0400000
+
 .global lbl_805DBAA8
 lbl_805DBAA8:
-	.incbin "baserom.dol", 0x489DC8, 0x8
+	# ROM: 0x489DC8
+	.4byte 0x47000000
+	.4byte 0x00000000
+

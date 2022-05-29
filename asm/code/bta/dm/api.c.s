@@ -38,7 +38,7 @@ lbl_80341988:
 /* 8034198C 0033D62C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80341990 0033D630  7C 08 03 A6 */	mtlr r0
 /* 80341994 0033D634  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341998 0033D638  4E 80 00 20 */	blr 
+/* 80341998 0033D638  4E 80 00 20 */	blr
 
 .global "BTA_DisableBluetooth"
 "BTA_DisableBluetooth":
@@ -56,7 +56,7 @@ lbl_803419C4:
 /* 803419C4 0033D664  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803419C8 0033D668  7C 08 03 A6 */	mtlr r0
 /* 803419CC 0033D66C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803419D0 0033D670  4E 80 00 20 */	blr 
+/* 803419D0 0033D670  4E 80 00 20 */	blr
 
 .global "BTA_DmIsDeviceUp"
 "BTA_DmIsDeviceUp":
@@ -73,7 +73,7 @@ lbl_803419C4:
 /* 803419FC 0033D69C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341A00 0033D6A0  7C 08 03 A6 */	mtlr r0
 /* 80341A04 0033D6A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341A08 0033D6A8  4E 80 00 20 */	blr 
+/* 80341A08 0033D6A8  4E 80 00 20 */	blr
 
 .global "BTA_DmSetDeviceName"
 "BTA_DmSetDeviceName":
@@ -102,7 +102,7 @@ lbl_80341A58:
 /* 80341A60 0033D700  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80341A64 0033D704  7C 08 03 A6 */	mtlr r0
 /* 80341A68 0033D708  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341A6C 0033D70C  4E 80 00 20 */	blr 
+/* 80341A6C 0033D70C  4E 80 00 20 */	blr
 
 .global "BTA_DmSetVisibility"
 "BTA_DmSetVisibility":
@@ -128,7 +128,7 @@ lbl_80341AB0:
 /* 80341AB8 0033D758  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80341ABC 0033D75C  7C 08 03 A6 */	mtlr r0
 /* 80341AC0 0033D760  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341AC4 0033D764  4E 80 00 20 */	blr 
+/* 80341AC4 0033D764  4E 80 00 20 */	blr
 
 .global "BTA_DmSearch"
 "BTA_DmSearch":
@@ -165,7 +165,7 @@ lbl_80341B2C:
 /* 80341B3C 0033D7DC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80341B40 0033D7E0  7C 08 03 A6 */	mtlr r0
 /* 80341B44 0033D7E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341B48 0033D7E8  4E 80 00 20 */	blr 
+/* 80341B48 0033D7E8  4E 80 00 20 */	blr
 
 .global "BTA_DmSearchCancel"
 "BTA_DmSearchCancel":
@@ -183,7 +183,7 @@ lbl_80341B74:
 /* 80341B74 0033D814  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341B78 0033D818  7C 08 03 A6 */	mtlr r0
 /* 80341B7C 0033D81C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341B80 0033D820  4E 80 00 20 */	blr 
+/* 80341B80 0033D820  4E 80 00 20 */	blr
 
 .global "BTA_DmPinReply"
 "BTA_DmPinReply":
@@ -223,7 +223,7 @@ lbl_80341BF8:
 /* 80341C00 0033D8A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80341C04 0033D8A4  7C 08 03 A6 */	mtlr r0
 /* 80341C08 0033D8A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80341C0C 0033D8AC  4E 80 00 20 */	blr 
+/* 80341C0C 0033D8AC  4E 80 00 20 */	blr
 
 .global "BTA_DmAddDevice"
 "BTA_DmAddDevice":
@@ -290,7 +290,7 @@ lbl_80341CB4:
 /* 80341CF0 0033D990  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80341CF4 0033D994  7C 08 03 A6 */	mtlr r0
 /* 80341CF8 0033D998  38 21 00 30 */	addi r1, r1, 0x30
-/* 80341CFC 0033D99C  4E 80 00 20 */	blr 
+/* 80341CFC 0033D99C  4E 80 00 20 */	blr
 
 .global "BTA_DmRemoveDevice"
 "BTA_DmRemoveDevice":
@@ -311,7 +311,7 @@ lbl_80341CB4:
 /* 80341D38 0033D9D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341D3C 0033D9DC  7C 08 03 A6 */	mtlr r0
 /* 80341D40 0033D9E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341D44 0033D9E4  4E 80 00 20 */	blr 
+/* 80341D44 0033D9E4  4E 80 00 20 */	blr
 
 .global "BTA_DmSendHciReset"
 "BTA_DmSendHciReset":
@@ -329,12 +329,18 @@ lbl_80341D70:
 /* 80341D70 0033DA10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80341D74 0033DA14  7C 08 03 A6 */	mtlr r0
 /* 80341D78 0033DA18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80341D7C 0033DA1C  4E 80 00 20 */	blr 
+/* 80341D7C 0033DA1C  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "bta_dm_reg"
 "bta_dm_reg":
-	.incbin "baserom.dol", 0x489A90, 0x8
+	# ROM: 0x489A90
+	.4byte "bta_dm_sm_execute" ;# ptr (0x80341D80)
+	.4byte 0x00000000
+
 .global "bta_dm_search_reg"
 "bta_dm_search_reg":
-	.incbin "baserom.dol", 0x489A98, 0x8
+	# ROM: 0x489A98
+	.4byte "bta_dm_search_sm_execute" ;# ptr (0x80341E18)
+	.4byte 0x00000000
+

@@ -103,21 +103,35 @@ lbl_8040E764:
 /* 8040E76C 0040A40C  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8040E770 0040A410  7C 08 03 A6 */	mtlr r0
 /* 8040E774 0040A414  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040E778 0040A418  4E 80 00 20 */	blr 
+/* 8040E778 0040A418  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC3B8
 lbl_805DC3B8:
-	.incbin "baserom.dol", 0x48A6D8, 0x8
+	# ROM: 0x48A6D8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DC3C0
 lbl_805DC3C0:
-	.incbin "baserom.dol", 0x48A6E0, 0x8
+	# ROM: 0x48A6E0
+	.4byte 0x43500000
+	.4byte 0x00000000
+
 .global lbl_805DC3C8
 lbl_805DC3C8:
-	.incbin "baserom.dol", 0x48A6E8, 0x8
+	# ROM: 0x48A6E8
+	.4byte 0x01A56E1F
+	.4byte 0xC2F8F359
+
 .global lbl_805DC3D0
 lbl_805DC3D0:
-	.incbin "baserom.dol", 0x48A6F0, 0x8
+	# ROM: 0x48A6F0
+	.4byte 0x7E37E43C
+	.4byte 0x8800759C
+
 .global lbl_805DC3D8
 lbl_805DC3D8:
-	.incbin "baserom.dol", 0x48A6F8, 0x8
+	# ROM: 0x48A6F8
+	.4byte 0x3C900000
+	.4byte 0x00000000
+

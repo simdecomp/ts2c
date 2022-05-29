@@ -11,7 +11,7 @@
 /* 80326C08 003228A8  90 A3 00 08 */	stw r5, 8(r3)
 /* 80326C0C 003228AC  90 A3 00 0C */	stw r5, 0xc(r3)
 /* 80326C10 003228B0  90 A3 00 10 */	stw r5, 0x10(r3)
-/* 80326C14 003228B4  4D 82 00 20 */	beqlr 
+/* 80326C14 003228B4  4D 82 00 20 */	beqlr
 /* 80326C18 003228B8  38 00 00 01 */	li r0, 1
 /* 80326C1C 003228BC  48 00 00 08 */	b lbl_80326C24
 lbl_80326C20:
@@ -20,7 +20,7 @@ lbl_80326C24:
 /* 80326C24 003228C4  7C 00 20 00 */	cmpw r0, r4
 /* 80326C28 003228C8  41 80 FF F8 */	blt lbl_80326C20
 /* 80326C2C 003228CC  90 03 00 00 */	stw r0, 0(r3)
-/* 80326C30 003228D0  4E 80 00 20 */	blr 
+/* 80326C30 003228D0  4E 80 00 20 */	blr
 
 .global "__dt__13AptNativeHashFv"
 "__dt__13AptNativeHashFv":
@@ -82,7 +82,7 @@ lbl_80326CEC:
 /* 80326CF8 00322998  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80326CFC 0032299C  7C 08 03 A6 */	mtlr r0
 /* 80326D00 003229A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80326D04 003229A4  4E 80 00 20 */	blr 
+/* 80326D04 003229A4  4E 80 00 20 */	blr
 
 .global "DestroyGCPointers__13AptNativeHashFv"
 "DestroyGCPointers__13AptNativeHashFv":
@@ -117,7 +117,7 @@ lbl_80326D54:
 /* 80326D74 00322A14  38 C0 00 84 */	li r6, 0x84
 /* 80326D78 00322A18  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80326D7C 00322A1C  7D 89 03 A6 */	mtctr r12
-/* 80326D80 00322A20  4E 80 04 21 */	bctrl 
+/* 80326D80 00322A20  4E 80 04 21 */	bctrl
 /* 80326D84 00322A24  80 1A 00 04 */	lwz r0, 4(r26)
 /* 80326D88 00322A28  7C 60 E2 14 */	add r3, r0, r28
 /* 80326D8C 00322A2C  93 E3 00 04 */	stw r31, 4(r3)
@@ -136,7 +136,7 @@ lbl_80326DAC:
 /* 80326DB4 00322A54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80326DB8 00322A58  7C 08 03 A6 */	mtlr r0
 /* 80326DBC 00322A5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80326DC0 00322A60  4E 80 00 20 */	blr 
+/* 80326DC0 00322A60  4E 80 00 20 */	blr
 
 .global "Set__13AptNativeHashFPC9EAStringCP8AptValue"
 "Set__13AptNativeHashFPC9EAStringCP8AptValue":
@@ -209,7 +209,7 @@ lbl_80326EA8:
 /* 80326EB8 00322B58  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80326EBC 00322B5C  7C 08 03 A6 */	mtlr r0
 /* 80326EC0 00322B60  38 21 00 20 */	addi r1, r1, 0x20
-/* 80326EC4 00322B64  4E 80 00 20 */	blr 
+/* 80326EC4 00322B64  4E 80 00 20 */	blr
 
 .global "Unset__13AptNativeHashFPC9EAStringC"
 "Unset__13AptNativeHashFPC9EAStringC":
@@ -276,7 +276,7 @@ lbl_80326F9C:
 /* 80326FAC 00322C4C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80326FB0 00322C50  7C 08 03 A6 */	mtlr r0
 /* 80326FB4 00322C54  38 21 00 20 */	addi r1, r1, 0x20
-/* 80326FB8 00322C58  4E 80 00 20 */	blr 
+/* 80326FB8 00322C58  4E 80 00 20 */	blr
 
 .global "Lookup__13AptNativeHashCFPC9EAStringC"
 "Lookup__13AptNativeHashCFPC9EAStringC":
@@ -335,7 +335,7 @@ lbl_80327070:
 /* 8032707C 00322D1C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80327080 00322D20  7C 08 03 A6 */	mtlr r0
 /* 80327084 00322D24  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327088 00322D28  4E 80 00 20 */	blr 
+/* 80327088 00322D28  4E 80 00 20 */	blr
 
 .global "GetFirstItem__13AptNativeHashFv"
 "GetFirstItem__13AptNativeHashFv":
@@ -385,7 +385,7 @@ lbl_80327118:
 /* 80327124 00322DC4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80327128 00322DC8  7C 08 03 A6 */	mtlr r0
 /* 8032712C 00322DCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327130 00322DD0  4E 80 00 20 */	blr 
+/* 80327130 00322DD0  4E 80 00 20 */	blr
 
 .global "GetNextItem__13AptNativeHashFP11AptHashItem"
 "GetNextItem__13AptNativeHashFP11AptHashItem":
@@ -428,7 +428,7 @@ lbl_803271B0:
 /* 803271B8 00322E58  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803271BC 00322E5C  7C 08 03 A6 */	mtlr r0
 /* 803271C0 00322E60  38 21 00 10 */	addi r1, r1, 0x10
-/* 803271C4 00322E64  4E 80 00 20 */	blr 
+/* 803271C4 00322E64  4E 80 00 20 */	blr
 
 .global "FirstAllocation__13AptNativeHashFv"
 "FirstAllocation__13AptNativeHashFv":
@@ -450,7 +450,7 @@ lbl_803271B0:
 /* 80327204 00322EA4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80327208 00322EA8  7C 08 03 A6 */	mtlr r0
 /* 8032720C 00322EAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80327210 00322EB0  4E 80 00 20 */	blr 
+/* 80327210 00322EB0  4E 80 00 20 */	blr
 
 .global "Expand__13AptNativeHashFv"
 "Expand__13AptNativeHashFv":
@@ -515,7 +515,7 @@ lbl_803272A0:
 /* 803272F0 00322F90  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 803272F4 00322F94  7C 08 03 A6 */	mtlr r0
 /* 803272F8 00322F98  38 21 00 30 */	addi r1, r1, 0x30
-/* 803272FC 00322F9C  4E 80 00 20 */	blr 
+/* 803272FC 00322F9C  4E 80 00 20 */	blr
 
 .global "HashSet__13AptNativeHashFPC9EAStringCP8AptValue"
 "HashSet__13AptNativeHashFPC9EAStringCP8AptValue":
@@ -710,7 +710,7 @@ lbl_803275AC:
 /* 803275B4 00323254  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803275B8 00323258  7C 08 03 A6 */	mtlr r0
 /* 803275BC 0032325C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803275C0 00323260  4E 80 00 20 */	blr 
+/* 803275C0 00323260  4E 80 00 20 */	blr
 
 .global "HashFindKey__13AptNativeHashCFPC9EAStringC"
 "HashFindKey__13AptNativeHashCFPC9EAStringC":
@@ -845,7 +845,7 @@ lbl_80327790:
 /* 80327798 00323438  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8032779C 0032343C  7C 08 03 A6 */	mtlr r0
 /* 803277A0 00323440  38 21 00 30 */	addi r1, r1, 0x30
-/* 803277A4 00323444  4E 80 00 20 */	blr 
+/* 803277A4 00323444  4E 80 00 20 */	blr
 
 .global "UpdateObjectMethods__13AptNativeHashFP8AptValuePC9EAStringCi"
 "UpdateObjectMethods__13AptNativeHashFP8AptValuePC9EAStringCi":
@@ -899,7 +899,7 @@ lbl_8032784C:
 /* 8032785C 003234FC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80327860 00323500  7C 08 03 A6 */	mtlr r0
 /* 80327864 00323504  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327868 00323508  4E 80 00 20 */	blr 
+/* 80327868 00323508  4E 80 00 20 */	blr
 
 .global "RegisterReferences__13AptNativeHashCFPC8AptValue"
 "RegisterReferences__13AptNativeHashCFPC8AptValue":
@@ -923,7 +923,7 @@ lbl_8032784C:
 /* 803278B0 00323550  7F A3 EB 78 */	mr r3, r29
 /* 803278B4 00323554  80 9C 00 08 */	lwz r4, 8(r28)
 /* 803278B8 00323558  7D 89 03 A6 */	mtctr r12
-/* 803278BC 0032355C  4E 80 04 21 */	bctrl 
+/* 803278BC 0032355C  4E 80 04 21 */	bctrl
 lbl_803278C0:
 /* 803278C0 00323560  80 1C 00 0C */	lwz r0, 0xc(r28)
 /* 803278C4 00323564  2C 00 00 00 */	cmpwi r0, 0
@@ -936,7 +936,7 @@ lbl_803278C0:
 /* 803278E0 00323580  7F A3 EB 78 */	mr r3, r29
 /* 803278E4 00323584  80 9C 00 0C */	lwz r4, 0xc(r28)
 /* 803278E8 00323588  7D 89 03 A6 */	mtctr r12
-/* 803278EC 0032358C  4E 80 04 21 */	bctrl 
+/* 803278EC 0032358C  4E 80 04 21 */	bctrl
 lbl_803278F0:
 /* 803278F0 00323590  7F 83 E3 78 */	mr r3, r28
 /* 803278F4 00323594  48 00 00 99 */	bl "IsEmpty__13AptNativeHashCFv"
@@ -959,7 +959,7 @@ lbl_8032790C:
 /* 80327934 003235D4  7C 80 FA 14 */	add r4, r0, r31
 /* 80327938 003235D8  80 84 00 04 */	lwz r4, 4(r4)
 /* 8032793C 003235DC  7D 89 03 A6 */	mtctr r12
-/* 80327940 003235E0  4E 80 04 21 */	bctrl 
+/* 80327940 003235E0  4E 80 04 21 */	bctrl
 lbl_80327944:
 /* 80327944 003235E4  3B FF 00 08 */	addi r31, r31, 8
 /* 80327948 003235E8  3B DE 00 01 */	addi r30, r30, 1
@@ -975,7 +975,7 @@ lbl_80327958:
 /* 80327968 00323608  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8032796C 0032360C  7C 08 03 A6 */	mtlr r0
 /* 80327970 00323610  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327974 00323614  4E 80 00 20 */	blr 
+/* 80327974 00323614  4E 80 00 20 */	blr
 
 .global "__dl__13AptNativeHashFPvUl"
 "__dl__13AptNativeHashFPvUl":
@@ -990,7 +990,7 @@ lbl_80327958:
 /* 8032798C 0032362C  80 03 00 04 */	lwz r0, 4(r3)
 /* 80327990 00323630  7C 00 00 34 */	cntlzw r0, r0
 /* 80327994 00323634  54 03 D9 7E */	srwi r3, r0, 5
-/* 80327998 00323638  4E 80 00 20 */	blr 
+/* 80327998 00323638  4E 80 00 20 */	blr
 
 .global "Unset__Proto____13AptNativeHashFv"
 "Unset__Proto____13AptNativeHashFv":
@@ -1011,7 +1011,7 @@ lbl_80327958:
 /* 803279D4 00323674  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803279D8 00323678  38 A5 96 60 */	addi r5, r5, lbl_80459660@l
 /* 803279DC 0032367C  7D 89 03 A6 */	mtctr r12
-/* 803279E0 00323680  4E 80 04 21 */	bctrl 
+/* 803279E0 00323680  4E 80 04 21 */	bctrl
 /* 803279E4 00323684  38 00 00 00 */	li r0, 0
 /* 803279E8 00323688  90 1F 00 08 */	stw r0, 8(r31)
 lbl_803279EC:
@@ -1019,7 +1019,7 @@ lbl_803279EC:
 /* 803279F0 00323690  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803279F4 00323694  7C 08 03 A6 */	mtlr r0
 /* 803279F8 00323698  38 21 00 10 */	addi r1, r1, 0x10
-/* 803279FC 0032369C  4E 80 00 20 */	blr 
+/* 803279FC 0032369C  4E 80 00 20 */	blr
 
 .global "UnsetPrototype__13AptNativeHashFv"
 "UnsetPrototype__13AptNativeHashFv":
@@ -1040,7 +1040,7 @@ lbl_803279EC:
 /* 80327A38 003236D8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80327A3C 003236DC  38 A5 96 70 */	addi r5, r5, lbl_80459670@l
 /* 80327A40 003236E0  7D 89 03 A6 */	mtctr r12
-/* 80327A44 003236E4  4E 80 04 21 */	bctrl 
+/* 80327A44 003236E4  4E 80 04 21 */	bctrl
 /* 80327A48 003236E8  38 00 00 00 */	li r0, 0
 /* 80327A4C 003236EC  90 1F 00 0C */	stw r0, 0xc(r31)
 lbl_80327A50:
@@ -1048,7 +1048,7 @@ lbl_80327A50:
 /* 80327A54 003236F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80327A58 003236F8  7C 08 03 A6 */	mtlr r0
 /* 80327A5C 003236FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80327A60 00323700  4E 80 00 20 */	blr 
+/* 80327A60 00323700  4E 80 00 20 */	blr
 
 .global "UnsetAt__13AptNativeHashFP11AptHashItem"
 "UnsetAt__13AptNativeHashFP11AptHashItem":
@@ -1066,14 +1066,14 @@ lbl_80327A50:
 /* 80327A90 00323730  81 83 00 00 */	lwz r12, 0(r3)
 /* 80327A94 00323734  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80327A98 00323738  7D 89 03 A6 */	mtctr r12
-/* 80327A9C 0032373C  4E 80 04 21 */	bctrl 
+/* 80327A9C 0032373C  4E 80 04 21 */	bctrl
 /* 80327AA0 00323740  38 00 00 00 */	li r0, 0
 /* 80327AA4 00323744  90 1F 00 04 */	stw r0, 4(r31)
 /* 80327AA8 00323748  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80327AAC 0032374C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80327AB0 00323750  7C 08 03 A6 */	mtlr r0
 /* 80327AB4 00323754  38 21 00 10 */	addi r1, r1, 0x10
-/* 80327AB8 00323758  4E 80 00 20 */	blr 
+/* 80327AB8 00323758  4E 80 00 20 */	blr
 
 .global "SetAt__13AptNativeHashFiP8AptValue"
 "SetAt__13AptNativeHashFiP8AptValue":
@@ -1097,7 +1097,7 @@ lbl_80327A50:
 /* 80327B00 003237A0  38 9F 95 B0 */	addi r4, r31, "__PRETTY_FUNCTION__$2215_804595B0"@l
 /* 80327B04 003237A4  38 C0 00 AA */	li r6, 0xaa
 /* 80327B08 003237A8  7D 89 03 A6 */	mtctr r12
-/* 80327B0C 003237AC  4E 80 04 21 */	bctrl 
+/* 80327B0C 003237AC  4E 80 04 21 */	bctrl
 /* 80327B10 003237B0  2C 1D 00 00 */	cmpwi r29, 0
 /* 80327B14 003237B4  41 82 00 28 */	beq lbl_80327B3C
 /* 80327B18 003237B8  81 9D 00 00 */	lwz r12, 0(r29)
@@ -1108,7 +1108,7 @@ lbl_80327A50:
 /* 80327B2C 003237CC  38 A5 96 80 */	addi r5, r5, lbl_80459680@l
 /* 80327B30 003237D0  38 C0 00 AB */	li r6, 0xab
 /* 80327B34 003237D4  7D 89 03 A6 */	mtctr r12
-/* 80327B38 003237D8  4E 80 04 21 */	bctrl 
+/* 80327B38 003237D8  4E 80 04 21 */	bctrl
 lbl_80327B3C:
 /* 80327B3C 003237DC  80 1B 00 04 */	lwz r0, 4(r27)
 /* 80327B40 003237E0  39 61 00 20 */	addi r11, r1, 0x20
@@ -1118,7 +1118,7 @@ lbl_80327B3C:
 /* 80327B50 003237F0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80327B54 003237F4  7C 08 03 A6 */	mtlr r0
 /* 80327B58 003237F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327B5C 003237FC  4E 80 00 20 */	blr 
+/* 80327B5C 003237FC  4E 80 00 20 */	blr
 
 .global "OverwriteAt__13AptNativeHashFiP8AptValue"
 "OverwriteAt__13AptNativeHashFiP8AptValue":
@@ -1140,7 +1140,7 @@ lbl_80327B3C:
 /* 80327B9C 0032383C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80327BA0 00323840  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80327BA4 00323844  7D 89 03 A6 */	mtctr r12
-/* 80327BA8 00323848  4E 80 04 21 */	bctrl 
+/* 80327BA8 00323848  4E 80 04 21 */	bctrl
 /* 80327BAC 0032384C  80 7D 00 04 */	lwz r3, 4(r29)
 /* 80327BB0 00323850  57 C0 18 38 */	slwi r0, r30, 3
 /* 80327BB4 00323854  7C 63 02 14 */	add r3, r3, r0
@@ -1151,7 +1151,7 @@ lbl_80327B3C:
 /* 80327BC8 00323868  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80327BCC 0032386C  7C 08 03 A6 */	mtlr r0
 /* 80327BD0 00323870  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327BD4 00323874  4E 80 00 20 */	blr 
+/* 80327BD4 00323874  4E 80 00 20 */	blr
 
 .global "Invalidate__9EAStringCFv"
 "Invalidate__9EAStringCFv":
@@ -1168,7 +1168,7 @@ lbl_80327B3C:
 /* 80327C00 003238A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80327C04 003238A4  7C 08 03 A6 */	mtlr r0
 /* 80327C08 003238A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80327C0C 003238AC  4E 80 00 20 */	blr 
+/* 80327C0C 003238AC  4E 80 00 20 */	blr
 
 .global "UpdateHashValue__9EAStringCCFv"
 "UpdateHashValue__9EAStringCCFv":
@@ -1189,7 +1189,7 @@ lbl_80327C38:
 /* 80327C44 003238E4  A0 63 00 06 */	lhz r3, 6(r3)
 /* 80327C48 003238E8  7C 08 03 A6 */	mtlr r0
 /* 80327C4C 003238EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80327C50 003238F0  4E 80 00 20 */	blr 
+/* 80327C50 003238F0  4E 80 00 20 */	blr
 
 .global "EqualNoCaseHash__9EAStringCCFRC9EAStringC"
 "EqualNoCaseHash__9EAStringCCFRC9EAStringC":
@@ -1235,7 +1235,7 @@ lbl_80327CD8:
 /* 80327CE4 00323984  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80327CE8 00323988  7C 08 03 A6 */	mtlr r0
 /* 80327CEC 0032398C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327CF0 00323990  4E 80 00 20 */	blr 
+/* 80327CF0 00323990  4E 80 00 20 */	blr
 
 .global "Validate__9EAStringCFRC9EAStringC"
 "Validate__9EAStringCFRC9EAStringC":
@@ -1247,47 +1247,98 @@ lbl_80327CD8:
 "GetHashValue__9EAStringCCFv":
 /* 80327D00 003239A0  80 63 00 00 */	lwz r3, 0(r3)
 /* 80327D04 003239A4  A0 63 00 06 */	lhz r3, 6(r3)
-/* 80327D08 003239A8  4E 80 00 20 */	blr 
+/* 80327D08 003239A8  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "aSpriteGperfToActionFlag_8041C020"
 "aSpriteGperfToActionFlag_8041C020":
-	.incbin "baserom.dol", 0x418120, 0x50
+	# ROM: 0x418120
+	.4byte 0x00000100
+	.4byte 0x00010000
+	.4byte 0x00008000
+	.4byte 0x00000002
+	.4byte 0x00000040
+	.4byte 0x00000080
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000010
+	.4byte 0x00000008
+	.4byte 0x00000020
+	.4byte 0x00000400
+	.4byte 0x00000800
+	.4byte 0x00001000
+	.4byte 0x00004000
+	.4byte 0x00002000
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000004
+	.4byte 0x00080000
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$2185_80459550"
 "__PRETTY_FUNCTION__$2185_80459550":
-	.incbin "baserom.dol", 0x455650, 0x2C
+	# ROM: 0x455650
+	.asciz "AptNativeHash::UnsetAt(AptHashItem *const )"
+
 .global "__PRETTY_FUNCTION__$2198_8045957C"
 "__PRETTY_FUNCTION__$2198_8045957C":
-	.incbin "baserom.dol", 0x45567C, 0x34
+	# ROM: 0x45567C
+	.asciz "AptNativeHash::OverwriteAt(const int, AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2215_804595B0"
 "__PRETTY_FUNCTION__$2215_804595B0":
-	.incbin "baserom.dol", 0x4556B0, 0x38
+	# ROM: 0x4556B0
+	.asciz "AptNativeHash::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$2252_804595E8"
 "__PRETTY_FUNCTION__$2252_804595E8":
-	.incbin "baserom.dol", 0x4556E8, 0x20
+	# ROM: 0x4556E8
+	.asciz "AptNativeHash::UnsetPrototype()"
+
 .global "__PRETTY_FUNCTION__$2274_80459608"
 "__PRETTY_FUNCTION__$2274_80459608":
-	.incbin "baserom.dol", 0x455708, 0x20
+	# ROM: 0x455708
+	.asciz "AptNativeHash::Unset__Proto__()"
+
 .global "__PRETTY_FUNCTION__$7521"
 "__PRETTY_FUNCTION__$7521":
-	.incbin "baserom.dol", 0x455728, 0x38
+	# ROM: 0x455728
+	.asciz "AptNativeHash::DestroyGCPointers()"
+	.byte 0x00
+	.asciz "AptNativeHash.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_80459660
 lbl_80459660:
-	.incbin "baserom.dol", 0x455760, 0x10
+	# ROM: 0x455760
+	.asciz "AptNativeHash.h"
+
 .global lbl_80459670
 lbl_80459670:
-	.incbin "baserom.dol", 0x455770, 0x10
+	# ROM: 0x455770
+	.asciz "AptNativeHash.h"
+
 .global lbl_80459680
 lbl_80459680:
-	.incbin "baserom.dol", 0x455780, 0x10
+	# ROM: 0x455780
+	.asciz "AptNativeHash.h"
+
 .global lbl_80459690
 lbl_80459690:
-	.incbin "baserom.dol", 0x455790, 0x10
+	# ROM: 0x455790
+	.asciz "AptNativeHash.h"
+
 .global lbl_804596A0
 lbl_804596A0:
-	.incbin "baserom.dol", 0x4557A0, 0x10
+	# ROM: 0x4557A0
+	.asciz "AptNativeHash.h"
+
 .global lbl_804596B0
 lbl_804596B0:
-	.incbin "baserom.dol", 0x4557B0, 0x10
+	# ROM: 0x4557B0
+	.asciz "AptNativeHash.h"
+

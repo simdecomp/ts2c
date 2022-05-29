@@ -199,7 +199,7 @@ lbl_804155B0:
 /* 804155B8 00411258  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804155BC 0041125C  7C 08 03 A6 */	mtlr r0
 /* 804155C0 00411260  38 21 00 20 */	addi r1, r1, 0x20
-/* 804155C4 00411264  4E 80 00 20 */	blr 
+/* 804155C4 00411264  4E 80 00 20 */	blr
 
 .global "__THPReadFrameHeader"
 "__THPReadFrameHeader":
@@ -215,7 +215,7 @@ lbl_804155B0:
 /* 804155EC 0041128C  28 00 00 08 */	cmplwi r0, 8
 /* 804155F0 00411290  41 82 00 0C */	beq lbl_804155FC
 /* 804155F4 00411294  38 60 00 0A */	li r3, 0xa
-/* 804155F8 00411298  4E 80 00 20 */	blr 
+/* 804155F8 00411298  4E 80 00 20 */	blr
 lbl_804155FC:
 /* 804155FC 0041129C  80 AD CA 04 */	lwz r5, "__THPInfo"-_SDA_BASE_(r13)
 /* 80415600 004112A0  80 85 06 9C */	lwz r4, 0x69c(r5)
@@ -245,7 +245,7 @@ lbl_804155FC:
 /* 80415660 00411300  28 00 00 03 */	cmplwi r0, 3
 /* 80415664 00411304  41 82 00 0C */	beq lbl_80415670
 /* 80415668 00411308  38 60 00 0C */	li r3, 0xc
-/* 8041566C 0041130C  4E 80 00 20 */	blr 
+/* 8041566C 0041130C  4E 80 00 20 */	blr
 lbl_80415670:
 /* 80415670 00411310  38 00 00 03 */	li r0, 3
 /* 80415674 00411314  38 E0 00 00 */	li r7, 0
@@ -271,7 +271,7 @@ lbl_804156B0:
 /* 804156BC 0041135C  41 82 00 0C */	beq lbl_804156C8
 lbl_804156C0:
 /* 804156C0 00411360  38 60 00 13 */	li r3, 0x13
-/* 804156C4 00411364  4E 80 00 20 */	blr 
+/* 804156C4 00411364  4E 80 00 20 */	blr
 lbl_804156C8:
 /* 804156C8 00411368  80 CD CA 04 */	lwz r6, "__THPInfo"-_SDA_BASE_(r13)
 /* 804156CC 0041136C  54 E0 06 3E */	clrlwi r0, r7, 0x18
@@ -285,7 +285,7 @@ lbl_804156C8:
 /* 804156EC 0041138C  90 06 06 9C */	stw r0, 0x69c(r6)
 /* 804156F0 00411390  42 00 FF 8C */	bdnz lbl_8041567C
 /* 804156F4 00411394  38 60 00 00 */	li r3, 0
-/* 804156F8 00411398  4E 80 00 20 */	blr 
+/* 804156F8 00411398  4E 80 00 20 */	blr
 
 .global "__THPReadScaneHeader"
 "__THPReadScaneHeader":
@@ -301,7 +301,7 @@ lbl_804156C8:
 /* 80415720 004113C0  28 00 00 03 */	cmplwi r0, 3
 /* 80415724 004113C4  41 82 00 0C */	beq lbl_80415730
 /* 80415728 004113C8  38 60 00 0C */	li r3, 0xc
-/* 8041572C 004113CC  4E 80 00 20 */	blr 
+/* 8041572C 004113CC  4E 80 00 20 */	blr
 lbl_80415730:
 /* 80415730 004113D0  38 00 00 03 */	li r0, 3
 /* 80415734 004113D4  39 00 00 00 */	li r8, 0
@@ -333,14 +333,14 @@ lbl_80415740:
 /* 80415798 00411438  7C 80 00 39 */	and. r0, r4, r0
 /* 8041579C 0041143C  40 82 00 0C */	bne lbl_804157A8
 /* 804157A0 00411440  38 60 00 0F */	li r3, 0xf
-/* 804157A4 00411444  4E 80 00 20 */	blr 
+/* 804157A4 00411444  4E 80 00 20 */	blr
 lbl_804157A8:
 /* 804157A8 00411448  38 07 00 01 */	addi r0, r7, 1
 /* 804157AC 0041144C  7C 60 00 30 */	slw r0, r3, r0
 /* 804157B0 00411450  7C 80 00 39 */	and. r0, r4, r0
 /* 804157B4 00411454  40 82 00 0C */	bne lbl_804157C0
 /* 804157B8 00411458  38 60 00 0F */	li r3, 0xf
-/* 804157BC 0041145C  4E 80 00 20 */	blr 
+/* 804157BC 0041145C  4E 80 00 20 */	blr
 lbl_804157C0:
 /* 804157C0 00411460  39 08 00 01 */	addi r8, r8, 1
 /* 804157C4 00411464  42 00 FF 7C */	bdnz lbl_80415740
@@ -361,7 +361,7 @@ lbl_804157C0:
 /* 80415800 004114A0  B0 04 06 8A */	sth r0, 0x68a(r4)
 /* 80415804 004114A4  80 8D CA 04 */	lwz r4, "__THPInfo"-_SDA_BASE_(r13)
 /* 80415808 004114A8  B0 04 06 90 */	sth r0, 0x690(r4)
-/* 8041580C 004114AC  4E 80 00 20 */	blr 
+/* 8041580C 004114AC  4E 80 00 20 */	blr
 
 .global "__THPReadQuantizationTable"
 "__THPReadQuantizationTable":
@@ -597,7 +597,7 @@ lbl_80415A40:
 /* 80415B98 00411838  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 80415B9C 0041183C  7C 08 03 A6 */	mtlr r0
 /* 80415BA0 00411840  38 21 01 60 */	addi r1, r1, 0x160
-/* 80415BA4 00411844  4E 80 00 20 */	blr 
+/* 80415BA4 00411844  4E 80 00 20 */	blr
 
 .global "__THPReadHuffmanTableSpecification"
 "__THPReadHuffmanTableSpecification":
@@ -857,7 +857,7 @@ lbl_80415F1C:
 /* 80415F5C 00411BFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80415F60 00411C00  7C 08 03 A6 */	mtlr r0
 /* 80415F64 00411C04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80415F68 00411C08  4E 80 00 20 */	blr 
+/* 80415F68 00411C08  4E 80 00 20 */	blr
 
 .global "__THPPrepBitStream"
 "__THPPrepBitStream":
@@ -1017,7 +1017,7 @@ lbl_804160F4:
 /* 804161A4 00411E44  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 804161A8 00411E48  83 C1 00 08 */	lwz r30, 8(r1)
 /* 804161AC 00411E4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 804161B0 00411E50  4E 80 00 20 */	blr 
+/* 804161B0 00411E50  4E 80 00 20 */	blr
 
 .global "__THPDecompressYUV"
 "__THPDecompressYUV":
@@ -1093,7 +1093,7 @@ lbl_80416290:
 /* 804162A8 00411F48  83 C1 00 08 */	lwz r30, 8(r1)
 /* 804162AC 00411F4C  7C 08 03 A6 */	mtlr r0
 /* 804162B0 00411F50  38 21 00 10 */	addi r1, r1, 0x10
-/* 804162B4 00411F54  4E 80 00 20 */	blr 
+/* 804162B4 00411F54  4E 80 00 20 */	blr
 
 .global "__THPDecompressiMCURow512x448"
 "__THPDecompressiMCURow512x448":
@@ -1247,7 +1247,7 @@ lbl_80416468:
 /* 804164F4 00412194  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 804164F8 00412198  7C 08 03 A6 */	mtlr r0
 /* 804164FC 0041219C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80416500 004121A0  4E 80 00 20 */	blr 
+/* 80416500 004121A0  4E 80 00 20 */	blr
 
 .global "__THPInverseDCTNoYPos"
 "__THPInverseDCTNoYPos":
@@ -1548,7 +1548,7 @@ lbl_804167E4:
 /* 80416980 00412620  E3 21 00 18 */	psq_l f25, 24(r1), 0, qr0
 /* 80416984 00412624  CB 21 00 10 */	lfd f25, 0x10(r1)
 /* 80416988 00412628  38 21 00 80 */	addi r1, r1, 0x80
-/* 8041698C 0041262C  4E 80 00 20 */	blr 
+/* 8041698C 0041262C  4E 80 00 20 */	blr
 
 .global "__THPInverseDCTY8"
 "__THPInverseDCTY8":
@@ -1851,7 +1851,7 @@ lbl_80416C78:
 /* 80416E14 00412AB4  E3 21 00 18 */	psq_l f25, 24(r1), 0, qr0
 /* 80416E18 00412AB8  CB 21 00 10 */	lfd f25, 0x10(r1)
 /* 80416E1C 00412ABC  38 21 00 80 */	addi r1, r1, 0x80
-/* 80416E20 00412AC0  4E 80 00 20 */	blr 
+/* 80416E20 00412AC0  4E 80 00 20 */	blr
 
 .global "__THPDecompressiMCURow640x480"
 "__THPDecompressiMCURow640x480":
@@ -2006,7 +2006,7 @@ lbl_80416FD8:
 /* 80417064 00412D04  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80417068 00412D08  7C 08 03 A6 */	mtlr r0
 /* 8041706C 00412D0C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80417070 00412D10  4E 80 00 20 */	blr 
+/* 80417070 00412D10  4E 80 00 20 */	blr
 
 .global "__THPDecompressiMCURowNxN"
 "__THPDecompressiMCURowNxN":
@@ -2164,7 +2164,7 @@ lbl_8041722C:
 /* 804172C0 00412F60  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 804172C4 00412F64  7C 08 03 A6 */	mtlr r0
 /* 804172C8 00412F68  38 21 00 30 */	addi r1, r1, 0x30
-/* 804172CC 00412F6C  4E 80 00 20 */	blr 
+/* 804172CC 00412F6C  4E 80 00 20 */	blr
 
 .global "__THPHuffDecodeDCTCompY"
 "__THPHuffDecodeDCTCompY":
@@ -2622,7 +2622,7 @@ lbl_8041790C:
 /* 8041791C 004135BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80417920 004135C0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80417924 004135C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80417928 004135C8  4E 80 00 20 */	blr 
+/* 80417928 004135C8  4E 80 00 20 */	blr
 
 .global "__THPHuffDecodeDCTCompU"
 "__THPHuffDecodeDCTCompU":
@@ -3092,7 +3092,7 @@ lbl_80417FA0:
 /* 80417FA4 00413C44  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80417FA8 00413C48  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80417FAC 00413C4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80417FB0 00413C50  4E 80 00 20 */	blr 
+/* 80417FB0 00413C50  4E 80 00 20 */	blr
 
 .global "__THPHuffDecodeDCTCompV"
 "__THPHuffDecodeDCTCompV":
@@ -3562,7 +3562,7 @@ lbl_80418628:
 /* 8041862C 004142CC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80418630 004142D0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80418634 004142D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80418638 004142D8  4E 80 00 20 */	blr 
+/* 80418638 004142D8  4E 80 00 20 */	blr
 
 .global "THPInit"
 "THPInit":
@@ -3604,24 +3604,76 @@ lbl_80418628:
 /* 804186C8 00414368  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804186CC 0041436C  7C 08 03 A6 */	mtlr r0
 /* 804186D0 00414370  38 21 00 10 */	addi r1, r1, 0x10
-/* 804186D4 00414374  4E 80 00 20 */	blr 
+/* 804186D4 00414374  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "__THPJpegNaturalOrder"
 "__THPJpegNaturalOrder":
-	.incbin "baserom.dol", 0x41C0C0, 0x44
+	# ROM: 0x41C0C0
+	.4byte 0x00010810
+	.4byte 0x0902030A
+	.4byte 0x11182019
+	.4byte 0x120B0405
+	.4byte 0x0C131A21
+	.4byte 0x28302922
+	.4byte 0x1B140D06
+	.4byte 0x070E151C
+	.4byte 0x232A3138
+	.4byte 0x39322B24
+	.4byte 0x1D160F17
+	.4byte 0x1E252C33
+	.4byte 0x3A3B342D
+	.4byte 0x261F272E
+	.4byte 0x353C3D36
+	.4byte 0x2F373E3F
+	.4byte 0x3F3F3F3F
+
 .global lbl_80420004
 lbl_80420004:
-	.incbin "baserom.dol", 0x41C104, 0x4
+	# ROM: 0x41C104
+	.4byte 0x3F3F3F3F
+
 .global lbl_80420008
 lbl_80420008:
-	.incbin "baserom.dol", 0x41C108, 0x8
+	# ROM: 0x41C108
+	.4byte 0x3F3F3F3F
+	.4byte 0x3F3F3F3F
+
 .global "__THPAANScaleFactor"
 "__THPAANScaleFactor":
-	.incbin "baserom.dol", 0x41C110, 0x50
+	# ROM: 0x41C110
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+	.4byte 0x3FF63150
+	.4byte 0xC0000000
+	.4byte 0x3FF4E7AE
+	.4byte 0xA0000000
+	.4byte 0x3FF2D062
+	.4byte 0xE0000000
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+	.4byte 0x3FE92469
+	.4byte 0xC0000000
+	.4byte 0x3FE1517A
+	.4byte 0x80000000
+	.4byte 0x3FD1A855
+	.4byte 0xE0000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x484200, 0x60
+	# ROM: 0x484200
+	.asciz "<< RVL_SDK - THP \trelease build: Nov 30 2006 03:09:42 (0x4199_60831) >>"
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__THPMCUBuffer"
@@ -3640,7 +3692,10 @@ lbl_80420008:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__THPVersion"
 "__THPVersion":
-	.incbin "baserom.dol", 0x487538, 0x8
+	# ROM: 0x487538
+	.4byte 0x80488100 ;# ptr
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__THPInitFlag"
@@ -3698,19 +3753,35 @@ lbl_80420008:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC3F8
 lbl_805DC3F8:
-	.incbin "baserom.dol", 0x48A718, 0x8
+	# ROM: 0x48A718
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DC400
 lbl_805DC400:
-	.incbin "baserom.dol", 0x48A720, 0x4
+	# ROM: 0x48A720
+	.4byte 0x3FB504F3
+
 .global lbl_805DC404
 lbl_805DC404:
-	.incbin "baserom.dol", 0x48A724, 0x4
+	# ROM: 0x48A724
+	.4byte 0x3FEC835E
+
 .global lbl_805DC408
 lbl_805DC408:
-	.incbin "baserom.dol", 0x48A728, 0x4
+	# ROM: 0x48A728
+	.4byte 0x3F8A8BD4
+
 .global lbl_805DC40C
 lbl_805DC40C:
-	.incbin "baserom.dol", 0x48A72C, 0x4
+	# ROM: 0x48A72C
+	.4byte 0xC0273D75
+
 .global lbl_805DC410
 lbl_805DC410:
-	.incbin "baserom.dol", 0x48A730, 0x10
+	# ROM: 0x48A730
+	.4byte 0x44800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+

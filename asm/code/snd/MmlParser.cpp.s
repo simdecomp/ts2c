@@ -125,7 +125,7 @@ lbl_803A4F3C:
 /* 803A4F40 003A0BE0  89 08 00 02 */	lbz r8, 2(r8)
 /* 803A4F44 003A0BE4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803A4F48 003A0BE8  7D 89 03 A6 */	mtctr r12
-/* 803A4F4C 003A0BEC  4E 80 04 21 */	bctrl 
+/* 803A4F4C 003A0BEC  4E 80 04 21 */	bctrl
 lbl_803A4F50:
 /* 803A4F50 003A0BF0  88 1E 00 01 */	lbz r0, 1(r30)
 /* 803A4F54 003A0BF4  2C 00 00 00 */	cmpwi r0, 0
@@ -215,7 +215,7 @@ lbl_803A505C:
 /* 803A507C 003A0D1C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A5080 003A0D20  38 E0 00 00 */	li r7, 0
 /* 803A5084 003A0D24  7D 89 03 A6 */	mtctr r12
-/* 803A5088 003A0D28  4E 80 04 21 */	bctrl 
+/* 803A5088 003A0D28  4E 80 04 21 */	bctrl
 /* 803A508C 003A0D2C  48 00 03 2C */	b lbl_803A53B8
 lbl_803A5090:
 /* 803A5090 003A0D30  7E C3 B3 78 */	mr r3, r22
@@ -235,7 +235,7 @@ lbl_803A5090:
 /* 803A50C8 003A0D68  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A50CC 003A0D6C  57 06 06 3E */	clrlwi r6, r24, 0x18
 /* 803A50D0 003A0D70  7D 89 03 A6 */	mtctr r12
-/* 803A50D4 003A0D74  4E 80 04 21 */	bctrl 
+/* 803A50D4 003A0D74  4E 80 04 21 */	bctrl
 /* 803A50D8 003A0D78  48 00 02 E0 */	b lbl_803A53B8
 lbl_803A50DC:
 /* 803A50DC 003A0D7C  7E C3 B3 78 */	mr r3, r22
@@ -251,7 +251,7 @@ lbl_803A50DC:
 /* 803A5104 003A0DA4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A5108 003A0DA8  38 E0 00 00 */	li r7, 0
 /* 803A510C 003A0DAC  7D 89 03 A6 */	mtctr r12
-/* 803A5110 003A0DB0  4E 80 04 21 */	bctrl 
+/* 803A5110 003A0DB0  4E 80 04 21 */	bctrl
 /* 803A5114 003A0DB4  48 00 02 A4 */	b lbl_803A53B8
 lbl_803A5118:
 /* 803A5118 003A0DB8  7E C3 B3 78 */	mr r3, r22
@@ -267,7 +267,7 @@ lbl_803A5118:
 /* 803A5140 003A0DE0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A5144 003A0DE4  38 E0 00 00 */	li r7, 0
 /* 803A5148 003A0DE8  7D 89 03 A6 */	mtctr r12
-/* 803A514C 003A0DEC  4E 80 04 21 */	bctrl 
+/* 803A514C 003A0DEC  4E 80 04 21 */	bctrl
 /* 803A5150 003A0DF0  48 00 02 68 */	b lbl_803A53B8
 lbl_803A5154:
 /* 803A5154 003A0DF4  2C 1B 00 00 */	cmpwi r27, 0
@@ -301,7 +301,7 @@ lbl_803A51A4:
 /* 803A51B4 003A0E54  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A51B8 003A0E58  38 E0 00 00 */	li r7, 0
 /* 803A51BC 003A0E5C  7D 89 03 A6 */	mtctr r12
-/* 803A51C0 003A0E60  4E 80 04 21 */	bctrl 
+/* 803A51C0 003A0E60  4E 80 04 21 */	bctrl
 /* 803A51C4 003A0E64  48 00 01 F4 */	b lbl_803A53B8
 lbl_803A51C8:
 /* 803A51C8 003A0E68  2C 1A 00 00 */	cmpwi r26, 0
@@ -314,7 +314,7 @@ lbl_803A51C8:
 /* 803A51E4 003A0E84  38 C0 00 00 */	li r6, 0
 /* 803A51E8 003A0E88  38 E0 00 00 */	li r7, 0
 /* 803A51EC 003A0E8C  7D 89 03 A6 */	mtctr r12
-/* 803A51F0 003A0E90  4E 80 04 21 */	bctrl 
+/* 803A51F0 003A0E90  4E 80 04 21 */	bctrl
 /* 803A51F4 003A0E94  48 00 01 C4 */	b lbl_803A53B8
 lbl_803A51F8:
 /* 803A51F8 003A0E98  2C 1B 00 00 */	cmpwi r27, 0
@@ -337,7 +337,7 @@ lbl_803A5218:
 /* 803A5238 003A0ED8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803A523C 003A0EDC  38 E0 00 00 */	li r7, 0
 /* 803A5240 003A0EE0  7D 89 03 A6 */	mtctr r12
-/* 803A5244 003A0EE4  4E 80 04 21 */	bctrl 
+/* 803A5244 003A0EE4  4E 80 04 21 */	bctrl
 /* 803A5248 003A0EE8  48 00 01 70 */	b lbl_803A53B8
 lbl_803A524C:
 /* 803A524C 003A0EEC  2C 19 00 FE */	cmpwi r25, 0xfe
@@ -399,7 +399,7 @@ lbl_803A52E8:
 /* 803A5310 003A0FB0  7C A0 AA 14 */	add r5, r0, r21
 /* 803A5314 003A0FB4  38 E0 00 00 */	li r7, 0
 /* 803A5318 003A0FB8  7D 89 03 A6 */	mtctr r12
-/* 803A531C 003A0FBC  4E 80 04 21 */	bctrl 
+/* 803A531C 003A0FBC  4E 80 04 21 */	bctrl
 /* 803A5320 003A0FC0  48 00 00 6C */	b lbl_803A538C
 lbl_803A5324:
 /* 803A5324 003A0FC4  7E C3 B3 78 */	mr r3, r22
@@ -428,7 +428,7 @@ lbl_803A5354:
 /* 803A537C 003A101C  7F C7 F3 78 */	mr r7, r30
 /* 803A5380 003A1020  7C A0 AA 14 */	add r5, r0, r21
 /* 803A5384 003A1024  7D 89 03 A6 */	mtctr r12
-/* 803A5388 003A1028  4E 80 04 21 */	bctrl 
+/* 803A5388 003A1028  4E 80 04 21 */	bctrl
 lbl_803A538C:
 /* 803A538C 003A102C  2C 1A 00 00 */	cmpwi r26, 0
 /* 803A5390 003A1030  41 82 00 28 */	beq lbl_803A53B8
@@ -440,7 +440,7 @@ lbl_803A538C:
 /* 803A53A8 003A1048  7F 06 C3 78 */	mr r6, r24
 /* 803A53AC 003A104C  7F C7 F3 78 */	mr r7, r30
 /* 803A53B0 003A1050  7D 89 03 A6 */	mtctr r12
-/* 803A53B4 003A1054  4E 80 04 21 */	bctrl 
+/* 803A53B4 003A1054  4E 80 04 21 */	bctrl
 lbl_803A53B8:
 /* 803A53B8 003A1058  38 60 00 00 */	li r3, 0
 lbl_803A53BC:
@@ -449,19 +449,19 @@ lbl_803A53BC:
 /* 803A53C4 003A1064  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A53C8 003A1068  7C 08 03 A6 */	mtlr r0
 /* 803A53CC 003A106C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803A53D0 003A1070  4E 80 00 20 */	blr 
+/* 803A53D0 003A1070  4E 80 00 20 */	blr
 
 .global "Clamp<i>__Q36nw4hbm2ut27@unnamed@snd_MmlParser_cpp@Fiii_i"
 "Clamp<i>__Q36nw4hbm2ut27@unnamed@snd_MmlParser_cpp@Fiii_i":
 /* 803A53D4 003A1074  7C 03 28 00 */	cmpw r3, r5
 /* 803A53D8 003A1078  40 81 00 0C */	ble lbl_803A53E4
 /* 803A53DC 003A107C  7C A3 2B 78 */	mr r3, r5
-/* 803A53E0 003A1080  4E 80 00 20 */	blr 
+/* 803A53E0 003A1080  4E 80 00 20 */	blr
 lbl_803A53E4:
 /* 803A53E4 003A1084  7C 03 20 00 */	cmpw r3, r4
-/* 803A53E8 003A1088  4C 80 00 20 */	bgelr 
+/* 803A53E8 003A1088  4C 80 00 20 */	bgelr
 /* 803A53EC 003A108C  7C 83 23 78 */	mr r3, r4
-/* 803A53F0 003A1090  4E 80 00 20 */	blr 
+/* 803A53F0 003A1090  4E 80 00 20 */	blr
 
 .global "ReadByte__Q46nw4hbm3snd6detail9MmlParserCFPPCUc"
 "ReadByte__Q46nw4hbm3snd6detail9MmlParserCFPPCUc":
@@ -469,22 +469,22 @@ lbl_803A53E4:
 /* 803A53F8 003A1098  38 03 00 01 */	addi r0, r3, 1
 /* 803A53FC 003A109C  90 04 00 00 */	stw r0, 0(r4)
 /* 803A5400 003A10A0  88 63 00 00 */	lbz r3, 0(r3)
-/* 803A5404 003A10A4  4E 80 00 20 */	blr 
+/* 803A5404 003A10A4  4E 80 00 20 */	blr
 
 .global "GetParserPlayerParam__Q46nw4hbm3snd6detail9SeqPlayerFv"
 "GetParserPlayerParam__Q46nw4hbm3snd6detail9SeqPlayerFv":
 /* 803A5408 003A10A8  38 63 00 90 */	addi r3, r3, 0x90
-/* 803A540C 003A10AC  4E 80 00 20 */	blr 
+/* 803A540C 003A10AC  4E 80 00 20 */	blr
 
 .global "GetMmlParserParam__Q46nw4hbm3snd6detail11MmlSeqTrackFv"
 "GetMmlParserParam__Q46nw4hbm3snd6detail11MmlSeqTrackFv":
 /* 803A5410 003A10B0  38 63 00 C0 */	addi r3, r3, 0xc0
-/* 803A5414 003A10B4  4E 80 00 20 */	blr 
+/* 803A5414 003A10B4  4E 80 00 20 */	blr
 
 .global "GetSeqPlayer__Q46nw4hbm3snd6detail8SeqTrackFv"
 "GetSeqPlayer__Q46nw4hbm3snd6detail8SeqTrackFv":
 /* 803A5418 003A10B8  80 63 00 B4 */	lwz r3, 0xb4(r3)
-/* 803A541C 003A10BC  4E 80 00 20 */	blr 
+/* 803A541C 003A10BC  4E 80 00 20 */	blr
 
 .global "CommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackUlll"
 "CommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackUlll":
@@ -537,7 +537,7 @@ lbl_803A5494:
 /* 803A54D0 003A1170  38 84 E7 44 */	addi r4, r4, lbl_8046E744@l
 /* 803A54D4 003A1174  7C 84 00 2E */	lwzx r4, r4, r0
 /* 803A54D8 003A1178  7C 89 03 A6 */	mtctr r4
-/* 803A54DC 003A117C  4E 80 04 20 */	bctr 
+/* 803A54DC 003A117C  4E 80 04 20 */	bctr
 /* 803A54E0 003A1180  B3 83 00 02 */	sth r28, 2(r3)
 /* 803A54E4 003A1184  48 00 07 4C */	b lbl_803A5C30
 /* 803A54E8 003A1188  3C 00 00 01 */	lis r0, 1
@@ -1058,12 +1058,12 @@ lbl_803A5C30:
 /* 803A5C38 003A18D8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A5C3C 003A18DC  7C 08 03 A6 */	mtlr r0
 /* 803A5C40 003A18E0  38 21 00 40 */	addi r1, r1, 0x40
-/* 803A5C44 003A18E4  4E 80 00 20 */	blr 
+/* 803A5C44 003A18E4  4E 80 00 20 */	blr
 
 .global "GetPlayerTrackNo__Q46nw4hbm3snd6detail8SeqTrackCFv"
 "GetPlayerTrackNo__Q46nw4hbm3snd6detail8SeqTrackCFv":
 /* 803A5C48 003A18E8  88 63 00 04 */	lbz r3, 4(r3)
-/* 803A5C4C 003A18EC  4E 80 00 20 */	blr 
+/* 803A5C4C 003A18EC  4E 80 00 20 */	blr
 
 .global "NoteOnCommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackiilb"
 "NoteOnCommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackiilb":
@@ -1097,7 +1097,7 @@ lbl_803A5C30:
 /* 803A5CB0 003A1950  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A5CB4 003A1954  7C 08 03 A6 */	mtlr r0
 /* 803A5CB8 003A1958  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A5CBC 003A195C  4E 80 00 20 */	blr 
+/* 803A5CBC 003A195C  4E 80 00 20 */	blr
 
 .global "Read24__Q46nw4hbm3snd6detail9MmlParserCFPPCUc"
 "Read24__Q46nw4hbm3snd6detail9MmlParserCFPPCUc":
@@ -1128,7 +1128,7 @@ lbl_803A5C30:
 /* 803A5D20 003A19C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A5D24 003A19C4  7C 08 03 A6 */	mtlr r0
 /* 803A5D28 003A19C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A5D2C 003A19CC  4E 80 00 20 */	blr 
+/* 803A5D2C 003A19CC  4E 80 00 20 */	blr
 
 .global "ReadVar__Q46nw4hbm3snd6detail9MmlParserCFPPCUc"
 "ReadVar__Q46nw4hbm3snd6detail9MmlParserCFPPCUc":
@@ -1169,7 +1169,7 @@ lbl_803A5DA0:
 /* 803A5DAC 003A1A4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A5DB0 003A1A50  7C 08 03 A6 */	mtlr r0
 /* 803A5DB4 003A1A54  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A5DB8 003A1A58  4E 80 00 20 */	blr 
+/* 803A5DB8 003A1A58  4E 80 00 20 */	blr
 
 .global "ReadArg__Q46nw4hbm3snd6detail9MmlParserCFPPCUcPQ46nw4hbm3snd6detail9SeqPlayerPQ46nw4hbm3snd6detail8SeqTrackQ56nw4hbm3snd6detail9MmlParser10SeqArgType"
 "ReadArg__Q46nw4hbm3snd6detail9MmlParserCFPPCUcPQ46nw4hbm3snd6detail9SeqPlayerPQ46nw4hbm3snd6detail8SeqTrackQ56nw4hbm3snd6detail9MmlParser10SeqArgType":
@@ -1241,7 +1241,7 @@ lbl_803A5E94:
 /* 803A5EA4 003A1B44  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803A5EA8 003A1B48  7C 08 03 A6 */	mtlr r0
 /* 803A5EAC 003A1B4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A5EB0 003A1B50  4E 80 00 20 */	blr 
+/* 803A5EB0 003A1B50  4E 80 00 20 */	blr
 
 .global "GetVariablePtr__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail9SeqPlayerPQ46nw4hbm3snd6detail8SeqTracki"
 "GetVariablePtr__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail9SeqPlayerPQ46nw4hbm3snd6detail8SeqTracki":
@@ -1296,32 +1296,201 @@ lbl_803A5F54:
 /* 803A5F60 003A1C00  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803A5F64 003A1C04  7C 08 03 A6 */	mtlr r0
 /* 803A5F68 003A1C08  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A5F6C 003A1C0C  4E 80 00 20 */	blr 
+/* 803A5F6C 003A1C0C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E4B0
 lbl_8046E4B0:
-	.incbin "baserom.dol", 0x46A5B0, 0x294
+	# ROM: 0x46A5B0
+	.asciz "snd_MmlParser.cpp"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "NW4HBM:Pointer must not be NULL (track)"
+	.asciz "NW4HBM:Pointer must not be NULL (player)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "seq: must use alloctrack in startup code"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nw4hbm::snd::MmlParser: too large prg No. %d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "#%08x[%d]: printvar %sVAR_%d(%d) = %d\n"
+	.byte 0x00
+	.asciz "nw4hbm::snd::MmlParser: opentrack for not allocated track"
+	.byte 0x00, 0x00
+	.asciz "nw4hbm::snd::MmlParser: opentrack for self track"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nw4hbm::snd::MmlParser: cannot 'call' because already too deep"
+	.byte 0x00
+	.asciz "nw4hbm::snd::MmlParser: unmatched sequence command 'ret'"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nw4hbm::snd::MmlParser: cannot 'loop_start' because already too deep"
+	.byte 0x00, 0x00, 0x00
+	.asciz "nw4hbm::snd::MmlParser: unmatched sequence command 'loop_end'"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion cmd == MML_EX_COMMAND"
+	.byte 0x00, 0x00
+
 .global lbl_8046E744
 lbl_8046E744:
-	.incbin "baserom.dol", 0x46A844, 0x214
+	# ROM: 0x46A844
+	.4byte 0x803A54E8 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5798 ;# ptr
+	.4byte 0x803A5800 ;# ptr
+	.4byte 0x803A5810 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A555C ;# ptr
+	.4byte 0x803A552C ;# ptr
+	.4byte 0x803A553C ;# ptr
+	.4byte 0x803A5544 ;# ptr
+	.4byte 0x803A554C ;# ptr
+	.4byte 0x803A5554 ;# ptr
+	.4byte 0x803A55A0 ;# ptr
+	.4byte 0x803A55A8 ;# ptr
+	.4byte 0x803A5688 ;# ptr
+	.4byte 0x803A56B0 ;# ptr
+	.4byte 0x803A55C4 ;# ptr
+	.4byte 0x803A55F0 ;# ptr
+	.4byte 0x803A561C ;# ptr
+	.4byte 0x803A5624 ;# ptr
+	.4byte 0x803A56C8 ;# ptr
+	.4byte 0x803A55BC ;# ptr
+	.4byte 0x803A5668 ;# ptr
+	.4byte 0x803A5670 ;# ptr
+	.4byte 0x803A5678 ;# ptr
+	.4byte 0x803A5680 ;# ptr
+	.4byte 0x803A58A0 ;# ptr
+	.4byte 0x803A5534 ;# ptr
+	.4byte 0x803A5704 ;# ptr
+	.4byte 0x803A558C ;# ptr
+	.4byte 0x803A56DC ;# ptr
+	.4byte 0x803A56E4 ;# ptr
+	.4byte 0x803A56EC ;# ptr
+	.4byte 0x803A56FC ;# ptr
+	.4byte 0x803A5574 ;# ptr
+	.4byte 0x803A551C ;# ptr
+	.4byte 0x803A56F4 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A562C ;# ptr
+	.4byte 0x803A54E0 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A563C ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A5C30 ;# ptr
+	.4byte 0x803A58F0 ;# ptr
+	.4byte 0x803A5860 ;# ptr
+	.asciz "NW4HBM:Failed assertion i < 4"
+	.byte 0x00, 0x00
+
 .global lbl_8046E958
 lbl_8046E958:
-	.incbin "baserom.dol", 0x46AA58, 0x40
+	# ROM: 0x46AA58
+	.asciz "varNo is out of bounds(%d)\n%d <= varNo <= %d not satisfied."
+	.4byte 0x00000000
+
 .global "__vt__Q46nw4hbm3snd6detail9MmlParser"
 "__vt__Q46nw4hbm3snd6detail9MmlParser":
-	.incbin "baserom.dol", 0x46AA98, 0x10
+	# ROM: 0x46AA98
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "CommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackUlll" ;# ptr (0x803A5420)
+	.4byte "NoteOnCommandProc__Q46nw4hbm3snd6detail9MmlParserCFPQ46nw4hbm3snd6detail11MmlSeqTrackiilb" ;# ptr (0x803A5C50)
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D75B8
 lbl_805D75B8:
-	.incbin "baserom.dol", 0x487138, 0x4
+	# ROM: 0x487138
+	.4byte 0x54000000
+
 .global lbl_805D75BC
 lbl_805D75BC:
-	.incbin "baserom.dol", 0x48713C, 0x4
+	# ROM: 0x48713C
+	.4byte 0x47000000
+
 .global lbl_805D75C0
 lbl_805D75C0:
-	.incbin "baserom.dol", 0x487140, 0x8
+	# ROM: 0x487140
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "mPrintVarEnabledFlag__Q46nw4hbm3snd6detail9MmlParser"
@@ -1331,16 +1500,29 @@ lbl_805D75C0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBB70
 lbl_805DBB70:
-	.incbin "baserom.dol", 0x489E90, 0x4
+	# ROM: 0x489E90
+	.4byte 0x3C000000
+
 .global lbl_805DBB74
 lbl_805DBB74:
-	.incbin "baserom.dol", 0x489E94, 0x4
+	# ROM: 0x489E94
+	.4byte 0x3EC80000
+
 .global lbl_805DBB78
 lbl_805DBB78:
-	.incbin "baserom.dol", 0x489E98, 0x8
+	# ROM: 0x489E98
+	.4byte 0x3D000000
+	.4byte 0x00000000
+
 .global lbl_805DBB80
 lbl_805DBB80:
-	.incbin "baserom.dol", 0x489EA0, 0x8
+	# ROM: 0x489EA0
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DBB88
 lbl_805DBB88:
-	.incbin "baserom.dol", 0x489EA8, 0x8
+	# ROM: 0x489EA8
+	.4byte 0x43300000
+	.4byte 0x80000000
+

@@ -14,7 +14,7 @@
 /* 803A6240 003A1EE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6244 003A1EE4  7C 08 03 A6 */	mtlr r0
 /* 803A6248 003A1EE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A624C 003A1EEC  4E 80 00 20 */	blr 
+/* 803A624C 003A1EEC  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut45LinkList<Q46nw4hbm3snd6detail10PlayerHeap,44>FPQ46nw4hbm3snd6detail10PlayerHeap"
 "GetNodeFromPointer__Q36nw4hbm2ut45LinkList<Q46nw4hbm3snd6detail10PlayerHeap,44>FPQ46nw4hbm3snd6detail10PlayerHeap":
@@ -38,17 +38,22 @@ lbl_803A6288:
 /* 803A6290 003A1F30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A6294 003A1F34  7C 08 03 A6 */	mtlr r0
 /* 803A6298 003A1F38  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A629C 003A1F3C  4E 80 00 20 */	blr 
+/* 803A629C 003A1F3C  4E 80 00 20 */	blr
 
 .global "SetPlayerHeap__Q46nw4hbm3snd6detail10BasicSoundFPQ46nw4hbm3snd6detail10PlayerHeap"
 "SetPlayerHeap__Q46nw4hbm3snd6detail10BasicSoundFPQ46nw4hbm3snd6detail10PlayerHeap":
 /* 803A62A0 003A1F40  90 83 00 04 */	stw r4, 4(r3)
-/* 803A62A4 003A1F44  4E 80 00 20 */	blr 
+/* 803A62A4 003A1F44  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046EA18
 lbl_8046EA18:
-	.incbin "baserom.dol", 0x46AB18, 0x24
+	# ROM: 0x46AB18
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046EA3C
 lbl_8046EA3C:
-	.incbin "baserom.dol", 0x46AB3C, 0xC
+	# ROM: 0x46AB3C
+	.asciz "LinkList.h"
+	.byte 0x00
+

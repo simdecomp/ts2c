@@ -20,7 +20,7 @@
 /* 804109F8 0040C698  38 63 7F C0 */	addi r3, r3, lbl_80487FC0@l
 /* 804109FC 0040C69C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80410A00 0040C6A0  7C 09 03 A6 */	mtctr r0
-/* 80410A04 0040C6A4  4E 80 04 20 */	bctr 
+/* 80410A04 0040C6A4  4E 80 04 20 */	bctr
 /* 80410A08 0040C6A8  7F C3 F3 78 */	mr r3, r30
 /* 80410A0C 0040C6AC  48 00 11 35 */	bl "TRKDoConnect"
 /* 80410A10 0040C6B0  7C 7F 1B 78 */	mr r31, r3
@@ -83,14 +83,43 @@ lbl_80410AE4:
 /* 80410AF0 0040C790  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80410AF4 0040C794  7C 08 03 A6 */	mtlr r0
 /* 80410AF8 0040C798  38 21 00 10 */	addi r1, r1, 0x10
-/* 80410AFC 0040C79C  4E 80 00 20 */	blr 
+/* 80410AFC 0040C79C  4E 80 00 20 */	blr
 
 .global "TRKInitializeDispatcher"
 "TRKInitializeDispatcher":
 /* 80410B00 0040C7A0  38 60 00 00 */	li r3, 0
-/* 80410B04 0040C7A4  4E 80 00 20 */	blr 
+/* 80410B04 0040C7A4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80487FC0
 lbl_80487FC0:
-	.incbin "baserom.dol", 0x4840C0, 0x70
+	# ROM: 0x4840C0
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410A08 ;# ptr
+	.4byte 0x80410A18 ;# ptr
+	.4byte 0x80410A28 ;# ptr
+	.4byte 0x80410A48 ;# ptr
+	.4byte 0x80410A58 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410A38 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410A68 ;# ptr
+	.4byte 0x80410A78 ;# ptr
+	.4byte 0x80410A88 ;# ptr
+	.4byte 0x80410A98 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AE4 ;# ptr
+	.4byte 0x80410AD8 ;# ptr
+	.4byte 0x80410AA8 ;# ptr
+	.4byte 0x80410AB8 ;# ptr
+	.4byte 0x80410AC8 ;# ptr
+	.4byte 0x00000000
+

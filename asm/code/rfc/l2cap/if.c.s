@@ -73,7 +73,7 @@ lbl_8035ED54:
 /* 8035ED5C 0035A9FC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8035ED60 0035AA00  7C 08 03 A6 */	mtlr r0
 /* 8035ED64 0035AA04  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035ED68 0035AA08  4E 80 00 20 */	blr 
+/* 8035ED68 0035AA08  4E 80 00 20 */	blr
 
 .global "RFCOMM_ConnectCnf"
 "RFCOMM_ConnectCnf":
@@ -147,7 +147,7 @@ lbl_8035EE58:
 /* 8035EE60 0035AB00  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8035EE64 0035AB04  7C 08 03 A6 */	mtlr r0
 /* 8035EE68 0035AB08  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035EE6C 0035AB0C  4E 80 00 20 */	blr 
+/* 8035EE6C 0035AB0C  4E 80 00 20 */	blr
 
 .global "RFCOMM_ConfigInd"
 "RFCOMM_ConfigInd":
@@ -222,7 +222,7 @@ lbl_8035EF5C:
 /* 8035EF68 0035AC08  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035EF6C 0035AC0C  7C 08 03 A6 */	mtlr r0
 /* 8035EF70 0035AC10  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035EF74 0035AC14  4E 80 00 20 */	blr 
+/* 8035EF74 0035AC14  4E 80 00 20 */	blr
 
 .global "RFCOMM_ConfigCnf"
 "RFCOMM_ConfigCnf":
@@ -297,11 +297,11 @@ lbl_8035F064:
 /* 8035F070 0035AD10  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035F074 0035AD14  7C 08 03 A6 */	mtlr r0
 /* 8035F078 0035AD18  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035F07C 0035AD1C  4E 80 00 20 */	blr 
+/* 8035F07C 0035AD1C  4E 80 00 20 */	blr
 
 .global "RFCOMM_QoSViolationInd"
 "RFCOMM_QoSViolationInd":
-/* 8035F080 0035AD20  4E 80 00 20 */	blr 
+/* 8035F080 0035AD20  4E 80 00 20 */	blr
 
 .global "RFCOMM_DisconnectInd"
 "RFCOMM_DisconnectInd":
@@ -384,7 +384,7 @@ lbl_8035F188:
 /* 8035F198 0035AE38  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035F19C 0035AE3C  7C 08 03 A6 */	mtlr r0
 /* 8035F1A0 0035AE40  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035F1A4 0035AE44  4E 80 00 20 */	blr 
+/* 8035F1A4 0035AE44  4E 80 00 20 */	blr
 
 .global "RFCOMM_BufDataInd"
 "RFCOMM_BufDataInd":
@@ -575,7 +575,7 @@ lbl_8035F430:
 /* 8035F438 0035B0D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035F43C 0035B0DC  7C 08 03 A6 */	mtlr r0
 /* 8035F440 0035B0E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035F444 0035B0E4  4E 80 00 20 */	blr 
+/* 8035F444 0035B0E4  4E 80 00 20 */	blr
 
 .global "RFCOMM_CongestionStatusInd"
 "RFCOMM_CongestionStatusInd":
@@ -662,7 +662,7 @@ lbl_8035F55C:
 /* 8035F56C 0035B20C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035F570 0035B210  7C 08 03 A6 */	mtlr r0
 /* 8035F574 0035B214  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035F578 0035B218  4E 80 00 20 */	blr 
+/* 8035F578 0035B218  4E 80 00 20 */	blr
 
 .global "rfc_save_lcid_mcb"
 "rfc_save_lcid_mcb":
@@ -672,9 +672,26 @@ lbl_8035F55C:
 /* 8035F588 0035B228  54 00 10 3A */	slwi r0, r0, 2
 /* 8035F58C 0035B22C  7C 84 02 14 */	add r4, r4, r0
 /* 8035F590 0035B230  90 64 00 3C */	stw r3, 0x3c(r4)
-/* 8035F594 0035B234  4E 80 00 20 */	blr 
+/* 8035F594 0035B234  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804651E0
 lbl_804651E0:
-	.incbin "baserom.dol", 0x4612E0, 0x140
+	# ROM: 0x4612E0
+	.asciz "rfc_find_lcid_mcb LCID:0x%x"
+	.asciz "rfc_find_lcid_mcb LCID reused LCID:0x%x current:0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RFCOMM_ConnectCnf LCID:0x%x"
+	.asciz "RFCOMM_ConfigInd LCID:0x%x"
+	.byte 0x00
+	.asciz "RFCOMM_ConfigCnf LCID:0x%x"
+	.byte 0x00
+	.asciz "RFCOMM_DisconnectInd LCID:0x%x"
+	.byte 0x00
+	.asciz "RFCOMM_BufDataInd LCID:0x%x"
+	.asciz "RFCOMM_CongestionStatusInd dropped LCID:0x%x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RFCOMM_CongestionStatusInd LCID:0x%x"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+

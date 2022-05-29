@@ -151,7 +151,7 @@ lbl_803D335C:
 /* 803D3368 003CF008  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D336C 003CF00C  7C 08 03 A6 */	mtlr r0
 /* 803D3370 003CF010  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3374 003CF014  4E 80 00 20 */	blr 
+/* 803D3374 003CF014  4E 80 00 20 */	blr
 
 .global "AllocFromHead_"
 "AllocFromHead_":
@@ -215,7 +215,7 @@ lbl_803D3438:
 /* 803D3444 003CF0E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D3448 003CF0E8  7C 08 03 A6 */	mtlr r0
 /* 803D344C 003CF0EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3450 003CF0F0  4E 80 00 20 */	blr 
+/* 803D3450 003CF0F0  4E 80 00 20 */	blr
 
 .global "AllocFromTail_"
 "AllocFromTail_":
@@ -274,7 +274,7 @@ lbl_803D3504:
 /* 803D350C 003CF1AC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D3510 003CF1B0  7C 08 03 A6 */	mtlr r0
 /* 803D3514 003CF1B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3518 003CF1B8  4E 80 00 20 */	blr 
+/* 803D3518 003CF1B8  4E 80 00 20 */	blr
 
 .global "RecycleRegion_"
 "RecycleRegion_":
@@ -386,7 +386,7 @@ lbl_803D3678:
 /* 803D3678 003CF318  38 60 00 01 */	li r3, 1
 lbl_803D367C:
 /* 803D367C 003CF31C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3680 003CF320  4E 80 00 20 */	blr 
+/* 803D3680 003CF320  4E 80 00 20 */	blr
 
 .global "MEMCreateExpHeapEx"
 "MEMCreateExpHeapEx":
@@ -436,7 +436,7 @@ lbl_803D3720:
 /* 803D3724 003CF3C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D3728 003CF3C8  7C 08 03 A6 */	mtlr r0
 /* 803D372C 003CF3CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3730 003CF3D0  4E 80 00 20 */	blr 
+/* 803D3730 003CF3D0  4E 80 00 20 */	blr
 
 .global "MEMDestroyExpHeap"
 "MEMDestroyExpHeap":
@@ -451,7 +451,7 @@ lbl_803D3720:
 /* 803D3754 003CF3F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D3758 003CF3F8  7C 08 03 A6 */	mtlr r0
 /* 803D375C 003CF3FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3760 003CF400  4E 80 00 20 */	blr 
+/* 803D3760 003CF400  4E 80 00 20 */	blr
 
 .global "MEMAllocFromExpHeapEx"
 "MEMAllocFromExpHeapEx":
@@ -503,7 +503,7 @@ lbl_803D37F4:
 /* 803D3804 003CF4A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D3808 003CF4A8  7C 08 03 A6 */	mtlr r0
 /* 803D380C 003CF4AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3810 003CF4B0  4E 80 00 20 */	blr 
+/* 803D3810 003CF4B0  4E 80 00 20 */	blr
 
 .global "MEMFreeToExpHeap"
 "MEMFreeToExpHeap":
@@ -563,4 +563,4 @@ lbl_803D38C4:
 /* 803D38D0 003CF570  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D38D4 003CF574  7C 08 03 A6 */	mtlr r0
 /* 803D38D8 003CF578  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D38DC 003CF57C  4E 80 00 20 */	blr 
+/* 803D38DC 003CF57C  4E 80 00 20 */	blr

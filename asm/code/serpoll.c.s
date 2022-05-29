@@ -4,7 +4,7 @@
 .global "TRKTerminateSerialHandler"
 "TRKTerminateSerialHandler":
 /* 80410788 0040C428  38 60 00 00 */	li r3, 0
-/* 8041078C 0040C42C  4E 80 00 20 */	blr 
+/* 8041078C 0040C42C  4E 80 00 20 */	blr
 
 .global "TRKInitializeSerialHandler"
 "TRKInitializeSerialHandler":
@@ -16,7 +16,7 @@
 /* 804107A4 0040C444  38 60 00 00 */	li r3, 0
 /* 804107A8 0040C448  90 04 00 08 */	stw r0, 8(r4)
 /* 804107AC 0040C44C  90 04 00 0C */	stw r0, 0xc(r4)
-/* 804107B0 0040C450  4E 80 00 20 */	blr 
+/* 804107B0 0040C450  4E 80 00 20 */	blr
 
 .global "TRKProcessInput"
 "TRKProcessInput":
@@ -39,7 +39,7 @@
 /* 804107F4 0040C494  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 804107F8 0040C498  7C 08 03 A6 */	mtlr r0
 /* 804107FC 0040C49C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80410800 0040C4A0  4E 80 00 20 */	blr 
+/* 80410800 0040C4A0  4E 80 00 20 */	blr
 
 .global "TRKGetInput"
 "TRKGetInput":
@@ -67,7 +67,7 @@ lbl_80410850:
 /* 80410854 0040C4F4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80410858 0040C4F8  7C 08 03 A6 */	mtlr r0
 /* 8041085C 0040C4FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80410860 0040C500  4E 80 00 20 */	blr 
+/* 80410860 0040C500  4E 80 00 20 */	blr
 
 .global "TRKTestForPacket"
 "TRKTestForPacket":
@@ -127,7 +127,7 @@ lbl_80410920:
 /* 80410924 0040C5C4  83 E1 08 DC */	lwz r31, 0x8dc(r1)
 /* 80410928 0040C5C8  7C 08 03 A6 */	mtlr r0
 /* 8041092C 0040C5CC  38 21 08 E0 */	addi r1, r1, 0x8e0
-/* 80410930 0040C5D0  4E 80 00 20 */	blr 
+/* 80410930 0040C5D0  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gTRKFramingState"

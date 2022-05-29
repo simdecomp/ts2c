@@ -30,7 +30,7 @@ lbl_803C2ED8:
 /* 803C2EE4 003BEB84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C2EE8 003BEB88  7C 08 03 A6 */	mtlr r0
 /* 803C2EEC 003BEB8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2EF0 003BEB90  4E 80 00 20 */	blr 
+/* 803C2EF0 003BEB90  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm2ut25@unnamed@ut_LinkList_cpp@11NonCopyableFv"
 "__dt__Q46nw4hbm2ut25@unnamed@ut_LinkList_cpp@11NonCopyableFv":
@@ -50,7 +50,7 @@ lbl_803C2F1C:
 /* 803C2F24 003BEBC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C2F28 003BEBC8  7C 08 03 A6 */	mtlr r0
 /* 803C2F2C 003BEBCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C2F30 003BEBD0  4E 80 00 20 */	blr 
+/* 803C2F30 003BEBD0  4E 80 00 20 */	blr
 
 .global "Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -91,7 +91,7 @@ lbl_803C2F7C:
 /* 803C2FB8 003BEC58  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803C2FBC 003BEC5C  7C 08 03 A6 */	mtlr r0
 /* 803C2FC0 003BEC60  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C2FC4 003BEC64  4E 80 00 20 */	blr 
+/* 803C2FC4 003BEC64  4E 80 00 20 */	blr
 
 .global "Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8IteratorQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8IteratorQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -123,7 +123,7 @@ lbl_803C3008:
 /* 803C3024 003BECC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C3028 003BECC8  7C 08 03 A6 */	mtlr r0
 /* 803C302C 003BECCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C3030 003BECD0  4E 80 00 20 */	blr 
+/* 803C3030 003BECD0  4E 80 00 20 */	blr
 
 .global "Clear__Q46nw4hbm2ut6detail12LinkListImplFv"
 "Clear__Q46nw4hbm2ut6detail12LinkListImplFv":
@@ -145,7 +145,7 @@ lbl_803C3008:
 /* 803C3070 003BED10  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803C3074 003BED14  7C 08 03 A6 */	mtlr r0
 /* 803C3078 003BED18  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C307C 003BED1C  4E 80 00 20 */	blr 
+/* 803C307C 003BED1C  4E 80 00 20 */	blr
 
 .global "Insert__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8IteratorPQ36nw4hbm2ut12LinkListNode"
 "Insert__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8IteratorPQ36nw4hbm2ut12LinkListNode":
@@ -219,7 +219,7 @@ lbl_803C3144:
 /* 803C3178 003BEE18  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C317C 003BEE1C  7C 08 03 A6 */	mtlr r0
 /* 803C3180 003BEE20  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C3184 003BEE24  4E 80 00 20 */	blr 
+/* 803C3184 003BEE24  4E 80 00 20 */	blr
 
 .global "Erase__Q46nw4hbm2ut6detail12LinkListImplFPQ36nw4hbm2ut12LinkListNode"
 "Erase__Q46nw4hbm2ut6detail12LinkListImplFPQ36nw4hbm2ut12LinkListNode":
@@ -293,12 +293,32 @@ lbl_803C324C:
 /* 803C3280 003BEF20  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C3284 003BEF24  7C 08 03 A6 */	mtlr r0
 /* 803C3288 003BEF28  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C328C 003BEF2C  4E 80 00 20 */	blr 
+/* 803C328C 003BEF2C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473D10
 lbl_80473D10:
-	.incbin "baserom.dol", 0x46FE10, 0x10
+	# ROM: 0x46FE10
+	.asciz "ut_LinkList.cpp"
+
 .global lbl_80473D20
 lbl_80473D20:
-	.incbin "baserom.dol", 0x46FE20, 0x198
+	# ROM: 0x46FE20
+	.asciz "NW4HBM:Failed assertion it.mPointer!=&mNode"
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "NW4HBM:Pointer must not be NULL (pIt)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (pItPrev)"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion p->mNext == NULL"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion p->mPrev == NULL"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion !IsEmpty()"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion p!=&mNode"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "NW4HBM:Pointer must not be NULL (pNext)"
+	.asciz "NW4HBM:Pointer must not be NULL (pPrev)"
+

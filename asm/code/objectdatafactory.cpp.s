@@ -8,12 +8,12 @@
 .global "__cl__32ObjectDataFactoryIFF<9StringSet>CFv"
 "__cl__32ObjectDataFactoryIFF<9StringSet>CFv":
 /* 80007D64 00003A04  38 60 00 00 */	li r3, 0
-/* 80007D68 00003A08  4E 80 00 20 */	blr 
+/* 80007D68 00003A08  4E 80 00 20 */	blr
 
 .global "__cl__37ObjectDataFactoryDatabase<9StringSet>CFv"
 "__cl__37ObjectDataFactoryDatabase<9StringSet>CFv":
 /* 80007D6C 00003A0C  38 60 00 00 */	li r3, 0
-/* 80007D70 00003A10  4E 80 00 20 */	blr 
+/* 80007D70 00003A10  4E 80 00 20 */	blr
 
 .global "__cl__40ObjectDataFactoryQuickData<10ObjFnTable>CFv"
 "__cl__40ObjectDataFactoryQuickData<10ObjFnTable>CFv":
@@ -22,12 +22,12 @@
 .global "__cl__34ObjectDataFactoryIFF<10ObjFnTable>CFv"
 "__cl__34ObjectDataFactoryIFF<10ObjFnTable>CFv":
 /* 80007D78 00003A18  38 60 00 00 */	li r3, 0
-/* 80007D7C 00003A1C  4E 80 00 20 */	blr 
+/* 80007D7C 00003A1C  4E 80 00 20 */	blr
 
 .global "__cl__39ObjectDataFactoryDatabase<10ObjFnTable>CFv"
 "__cl__39ObjectDataFactoryDatabase<10ObjFnTable>CFv":
 /* 80007D80 00003A20  38 60 00 00 */	li r3, 0
-/* 80007D84 00003A24  4E 80 00 20 */	blr 
+/* 80007D84 00003A24  4E 80 00 20 */	blr
 
 .global "__cl__44ObjectDataFactoryQuickData<14FloatConstants>CFv"
 "__cl__44ObjectDataFactoryQuickData<14FloatConstants>CFv":
@@ -36,12 +36,12 @@
 .global "__cl__38ObjectDataFactoryIFF<14FloatConstants>CFv"
 "__cl__38ObjectDataFactoryIFF<14FloatConstants>CFv":
 /* 80007D8C 00003A2C  38 60 00 00 */	li r3, 0
-/* 80007D90 00003A30  4E 80 00 20 */	blr 
+/* 80007D90 00003A30  4E 80 00 20 */	blr
 
 .global "__cl__43ObjectDataFactoryDatabase<14FloatConstants>CFv"
 "__cl__43ObjectDataFactoryDatabase<14FloatConstants>CFv":
 /* 80007D94 00003A34  38 60 00 00 */	li r3, 0
-/* 80007D98 00003A38  4E 80 00 20 */	blr 
+/* 80007D98 00003A38  4E 80 00 20 */	blr
 
 .global "__cl__40ObjectDataFactoryQuickData<10ITreeTable>CFv"
 "__cl__40ObjectDataFactoryQuickData<10ITreeTable>CFv":
@@ -57,17 +57,17 @@ lbl_80007DBC:
 /* 80007DBC 00003A5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80007DC0 00003A60  7C 08 03 A6 */	mtlr r0
 /* 80007DC4 00003A64  38 21 00 10 */	addi r1, r1, 0x10
-/* 80007DC8 00003A68  4E 80 00 20 */	blr 
+/* 80007DC8 00003A68  4E 80 00 20 */	blr
 
 .global "__cl__34ObjectDataFactoryIFF<10ITreeTable>CFv"
 "__cl__34ObjectDataFactoryIFF<10ITreeTable>CFv":
 /* 80007DCC 00003A6C  38 60 00 00 */	li r3, 0
-/* 80007DD0 00003A70  4E 80 00 20 */	blr 
+/* 80007DD0 00003A70  4E 80 00 20 */	blr
 
 .global "__cl__39ObjectDataFactoryDatabase<10ITreeTable>CFv"
 "__cl__39ObjectDataFactoryDatabase<10ITreeTable>CFv":
 /* 80007DD4 00003A74  38 60 00 00 */	li r3, 0
-/* 80007DD8 00003A78  4E 80 00 20 */	blr 
+/* 80007DD8 00003A78  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global lbl_805D79D0

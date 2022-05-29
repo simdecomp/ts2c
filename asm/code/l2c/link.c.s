@@ -94,7 +94,7 @@ lbl_803592F8:
 /* 80359304 00354FA4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80359308 00354FA8  7C 08 03 A6 */	mtlr r0
 /* 8035930C 00354FAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80359310 00354FB0  4E 80 00 20 */	blr 
+/* 80359310 00354FB0  4E 80 00 20 */	blr
 
 .global "l2c_link_hci_conn_comp"
 "l2c_link_hci_conn_comp":
@@ -255,7 +255,7 @@ lbl_8035952C:
 /* 8035953C 003551DC  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80359540 003551E0  7C 08 03 A6 */	mtlr r0
 /* 80359544 003551E4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80359548 003551E8  4E 80 00 20 */	blr 
+/* 80359548 003551E8  4E 80 00 20 */	blr
 
 .global "l2c_link_sec_comp"
 "l2c_link_sec_comp":
@@ -307,7 +307,7 @@ lbl_803595E8:
 /* 803595F0 00355290  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803595F4 00355294  7C 08 03 A6 */	mtlr r0
 /* 803595F8 00355298  38 21 00 20 */	addi r1, r1, 0x20
-/* 803595FC 0035529C  4E 80 00 20 */	blr 
+/* 803595FC 0035529C  4E 80 00 20 */	blr
 
 .global "l2c_link_hci_disc_comp"
 "l2c_link_hci_disc_comp":
@@ -363,7 +363,7 @@ lbl_8035969C:
 /* 803596AC 0035534C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803596B0 00355350  7C 08 03 A6 */	mtlr r0
 /* 803596B4 00355354  38 21 00 20 */	addi r1, r1, 0x20
-/* 803596B8 00355358  4E 80 00 20 */	blr 
+/* 803596B8 00355358  4E 80 00 20 */	blr
 
 .global "l2c_link_hci_qos_violation"
 "l2c_link_hci_qos_violation":
@@ -399,7 +399,7 @@ lbl_80359718:
 /* 8035971C 003553BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80359720 003553C0  7C 08 03 A6 */	mtlr r0
 /* 80359724 003553C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80359728 003553C8  4E 80 00 20 */	blr 
+/* 80359728 003553C8  4E 80 00 20 */	blr
 
 .global "l2c_link_timeout"
 "l2c_link_timeout":
@@ -443,7 +443,7 @@ lbl_80359794:
 /* 803597B0 00355450  38 60 00 02 */	li r3, 2
 /* 803597B4 00355454  90 1E 00 54 */	stw r0, 0x54(r30)
 /* 803597B8 00355458  7D 89 03 A6 */	mtctr r12
-/* 803597BC 0035545C  4E 80 04 21 */	bctrl 
+/* 803597BC 0035545C  4E 80 04 21 */	bctrl
 /* 803597C0 00355460  3C 60 80 58 */	lis r3, "l2cb"@ha
 /* 803597C4 00355464  88 03 73 60 */	lbz r0, "l2cb"@l(r3)
 /* 803597C8 00355468  28 00 00 02 */	cmplwi r0, 2
@@ -508,7 +508,7 @@ lbl_80359888:
 /* 80359890 00355530  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80359894 00355534  7C 08 03 A6 */	mtlr r0
 /* 80359898 00355538  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035989C 0035553C  4E 80 00 20 */	blr 
+/* 8035989C 0035553C  4E 80 00 20 */	blr
 
 .global "l2c_link_send_to_lower"
 "l2c_link_send_to_lower":
@@ -581,7 +581,7 @@ lbl_80359994:
 /* 80359998 00355638  38 60 00 01 */	li r3, 1
 /* 8035999C 0035563C  7C 08 03 A6 */	mtlr r0
 /* 803599A0 00355640  38 21 00 10 */	addi r1, r1, 0x10
-/* 803599A4 00355644  4E 80 00 20 */	blr 
+/* 803599A4 00355644  4E 80 00 20 */	blr
 
 .global "l2c_link_check_send_pkts"
 "l2c_link_check_send_pkts":
@@ -633,7 +633,7 @@ lbl_80359A48:
 /* 80359A50 003556F0  A0 7A 00 14 */	lhz r3, 0x14(r26)
 /* 80359A54 003556F4  81 85 00 28 */	lwz r12, 0x28(r5)
 /* 80359A58 003556F8  7D 89 03 A6 */	mtctr r12
-/* 80359A5C 003556FC  4E 80 04 21 */	bctrl 
+/* 80359A5C 003556FC  4E 80 04 21 */	bctrl
 lbl_80359A60:
 /* 80359A60 00355700  83 5A 00 08 */	lwz r26, 8(r26)
 lbl_80359A64:
@@ -766,7 +766,7 @@ lbl_80359C2C:
 /* 80359C34 003558D4  A0 7B 00 14 */	lhz r3, 0x14(r27)
 /* 80359C38 003558D8  81 85 00 28 */	lwz r12, 0x28(r5)
 /* 80359C3C 003558DC  7D 89 03 A6 */	mtctr r12
-/* 80359C40 003558E0  4E 80 04 21 */	bctrl 
+/* 80359C40 003558E0  4E 80 04 21 */	bctrl
 /* 80359C44 003558E4  88 1D 00 41 */	lbz r0, 0x41(r29)
 /* 80359C48 003558E8  2C 00 00 00 */	cmpwi r0, 0
 /* 80359C4C 003558EC  40 82 00 10 */	bne lbl_80359C5C
@@ -781,7 +781,7 @@ lbl_80359C5C:
 /* 80359C64 00355904  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80359C68 00355908  7C 08 03 A6 */	mtlr r0
 /* 80359C6C 0035590C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80359C70 00355910  4E 80 00 20 */	blr 
+/* 80359C70 00355910  4E 80 00 20 */	blr
 
 .global "l2c_link_adjust_allocation"
 "l2c_link_adjust_allocation":
@@ -896,7 +896,7 @@ lbl_80359DF4:
 /* 80359DFC 00355A9C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80359E00 00355AA0  7C 08 03 A6 */	mtlr r0
 /* 80359E04 00355AA4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80359E08 00355AA8  4E 80 00 20 */	blr 
+/* 80359E08 00355AA8  4E 80 00 20 */	blr
 
 .global "l2c_link_process_num_completed_pkts"
 "l2c_link_process_num_completed_pkts":
@@ -962,7 +962,7 @@ lbl_80359ECC:
 /* 80359EE0 00355B80  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80359EE4 00355B84  7C 08 03 A6 */	mtlr r0
 /* 80359EE8 00355B88  38 21 00 20 */	addi r1, r1, 0x20
-/* 80359EEC 00355B8C  4E 80 00 20 */	blr 
+/* 80359EEC 00355B8C  4E 80 00 20 */	blr
 
 .global "l2c_link_processs_num_bufs"
 "l2c_link_processs_num_bufs":
@@ -970,7 +970,7 @@ lbl_80359ECC:
 /* 80359EF4 00355B94  38 84 73 60 */	addi r4, r4, "l2cb"@l
 /* 80359EF8 00355B98  B0 64 00 02 */	sth r3, 2(r4)
 /* 80359EFC 00355B9C  B0 64 00 04 */	sth r3, 4(r4)
-/* 80359F00 00355BA0  4E 80 00 20 */	blr 
+/* 80359F00 00355BA0  4E 80 00 20 */	blr
 
 .global "l2cap_link_chk_pkt_start"
 "l2cap_link_chk_pkt_start":
@@ -1100,7 +1100,7 @@ lbl_8035A0BC:
 /* 8035A0C4 00355D64  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035A0C8 00355D68  7C 08 03 A6 */	mtlr r0
 /* 8035A0CC 00355D6C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035A0D0 00355D70  4E 80 00 20 */	blr 
+/* 8035A0D0 00355D70  4E 80 00 20 */	blr
 
 .global "l2cap_link_chk_pkt_end"
 "l2cap_link_chk_pkt_end":
@@ -1114,7 +1114,7 @@ lbl_8035A0BC:
 /* 8035A0F0 00355D90  40 82 00 0C */	bne lbl_8035A0FC
 lbl_8035A0F4:
 /* 8035A0F4 00355D94  38 60 00 01 */	li r3, 1
-/* 8035A0F8 00355D98  4E 80 00 20 */	blr 
+/* 8035A0F8 00355D98  4E 80 00 20 */	blr
 lbl_8035A0FC:
 /* 8035A0FC 00355D9C  A0 04 00 04 */	lhz r0, 4(r4)
 /* 8035A100 00355DA0  A0 64 00 02 */	lhz r3, 2(r4)
@@ -1128,12 +1128,12 @@ lbl_8035A0FC:
 /* 8035A120 00355DC0  7C 03 00 00 */	cmpw r3, r0
 /* 8035A124 00355DC4  40 81 00 0C */	ble lbl_8035A130
 /* 8035A128 00355DC8  38 60 00 00 */	li r3, 0
-/* 8035A12C 00355DCC  4E 80 00 20 */	blr 
+/* 8035A12C 00355DCC  4E 80 00 20 */	blr
 lbl_8035A130:
 /* 8035A130 00355DD0  38 00 00 00 */	li r0, 0
 /* 8035A134 00355DD4  38 60 00 01 */	li r3, 1
 /* 8035A138 00355DD8  90 06 00 50 */	stw r0, 0x50(r6)
-/* 8035A13C 00355DDC  4E 80 00 20 */	blr 
+/* 8035A13C 00355DDC  4E 80 00 20 */	blr
 
 .global "l2c_link_role_changed"
 "l2c_link_role_changed":
@@ -1171,7 +1171,7 @@ lbl_8035A198:
 /* 8035A1B0 00355E50  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035A1B4 00355E54  7C 08 03 A6 */	mtlr r0
 /* 8035A1B8 00355E58  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035A1BC 00355E5C  4E 80 00 20 */	blr 
+/* 8035A1BC 00355E5C  4E 80 00 20 */	blr
 
 .global "l2c_link_role_change_failed"
 "l2c_link_role_change_failed":
@@ -1203,7 +1203,7 @@ lbl_8035A204:
 /* 8035A21C 00355EBC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035A220 00355EC0  7C 08 03 A6 */	mtlr r0
 /* 8035A224 00355EC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035A228 00355EC8  4E 80 00 20 */	blr 
+/* 8035A228 00355EC8  4E 80 00 20 */	blr
 
 .global "l2c_link_segments_xmitted"
 "l2c_link_segments_xmitted":
@@ -1265,7 +1265,7 @@ lbl_8035A2EC:
 /* 8035A2F8 00355F98  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035A2FC 00355F9C  7C 08 03 A6 */	mtlr r0
 /* 8035A300 00355FA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035A304 00355FA4  4E 80 00 20 */	blr 
+/* 8035A304 00355FA4  4E 80 00 20 */	blr
 
 .global "l2c_pin_code_request"
 "l2c_pin_code_request":
@@ -1286,33 +1286,69 @@ lbl_8035A33C:
 /* 8035A33C 00355FDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8035A340 00355FE0  7C 08 03 A6 */	mtlr r0
 /* 8035A344 00355FE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035A348 00355FE8  4E 80 00 20 */	blr 
+/* 8035A348 00355FE8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80464710
 lbl_80464710:
-	.incbin "baserom.dol", 0x460810, 0x20
+	# ROM: 0x460810
+	.asciz "L2CAP failed to allocate LCB"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80464730
 lbl_80464730:
-	.incbin "baserom.dol", 0x460830, 0x28
+	# ROM: 0x460830
+	.asciz "L2CAP got conn_req while connected"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_80464758
 lbl_80464758:
-	.incbin "baserom.dol", 0x460858, 0x28
+	# ROM: 0x460858
+	.asciz "L2CAP got conn_comp for unknown BD_ADDR"
+
 .global lbl_80464780
 lbl_80464780:
-	.incbin "baserom.dol", 0x460880, 0x34
+	# ROM: 0x460880
+	.asciz "L2CAP got conn_comp in bad state: %d  status: 0x%d"
+	.byte 0x00
+
 .global lbl_804647B4
 lbl_804647B4:
-	.incbin "baserom.dol", 0x4608B4, 0x28
+	# ROM: 0x4608B4
+	.asciz "L2CAP got sec_comp for unknown BD_ADDR"
+	.byte 0x00
+
 .global lbl_804647DC
 lbl_804647DC:
-	.incbin "baserom.dol", 0x4608DC, 0x12C
+	# ROM: 0x4608DC
+	.asciz "L2CAP - ping timeout"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - Congested(), CID: 0x%04x, Congested"
+	.asciz "L2CAP - Calling CongestionStatus_Cb(), CID: 0x%04x, Congested"
+	.byte 0x00, 0x00
+	.asciz "!!! L2CAP - buffer dropped"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "L2CAP - Calling CongestionStatus_Cb(), CID: 0x%04x, Uncongested"
+	.asciz "LCB %d Priority:%d XmitWindow:%d Congestion Start:%d End:%d Discard:%d"
+	.byte 0x00
+
 .global lbl_80464908
 lbl_80464908:
-	.incbin "baserom.dol", 0x460A08, 0x20
+	# ROM: 0x460A08
+	.asciz "L2CAP - dropping incomplete pkt"
+
 .global lbl_80464928
 lbl_80464928:
-	.incbin "baserom.dol", 0x460A28, 0x20
+	# ROM: 0x460A28
+	.asciz "L2CAP - dropping too long pkt"
+	.byte 0x00, 0x00
+
 .global lbl_80464948
 lbl_80464948:
-	.incbin "baserom.dol", 0x460A48, 0x38
+	# ROM: 0x460A48
+	.asciz "L2CAP - rcvd segment complete, unknown handle: %d"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

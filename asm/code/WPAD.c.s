@@ -14,7 +14,7 @@
 /* 803F0D2C 003EC9CC  38 60 00 00 */	li r3, 0
 /* 803F0D30 003EC9D0  7C 08 03 A6 */	mtlr r0
 /* 803F0D34 003EC9D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F0D38 003EC9D8  4E 80 00 20 */	blr 
+/* 803F0D38 003EC9D8  4E 80 00 20 */	blr
 
 .global "noFree"
 "noFree":
@@ -29,7 +29,7 @@
 /* 803F0D5C 003EC9FC  38 60 00 00 */	li r3, 0
 /* 803F0D60 003ECA00  7C 08 03 A6 */	mtlr r0
 /* 803F0D64 003ECA04  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F0D68 003ECA08  4E 80 00 20 */	blr 
+/* 803F0D68 003ECA08  4E 80 00 20 */	blr
 
 .global "OnShutdown_803F0D6C"
 "OnShutdown_803F0D6C":
@@ -160,7 +160,7 @@ lbl_803F0F10:
 /* 803F0F20 003ECBC0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F0F24 003ECBC4  7C 08 03 A6 */	mtlr r0
 /* 803F0F28 003ECBC8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F0F2C 003ECBCC  4E 80 00 20 */	blr 
+/* 803F0F2C 003ECBCC  4E 80 00 20 */	blr
 
 .global "WPADiSendData"
 "WPADiSendData":
@@ -289,7 +289,7 @@ lbl_803F10F0:
 /* 803F10FC 003ECD9C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803F1100 003ECDA0  7C 08 03 A6 */	mtlr r0
 /* 803F1104 003ECDA4  38 21 00 60 */	addi r1, r1, 0x60
-/* 803F1108 003ECDA8  4E 80 00 20 */	blr 
+/* 803F1108 003ECDA8  4E 80 00 20 */	blr
 
 .global "WPADiRadioSensitivity"
 "WPADiRadioSensitivity":
@@ -329,39 +329,39 @@ lbl_803F116C:
 /* 803F118C 003ECE2C  40 81 00 10 */	ble lbl_803F119C
 /* 803F1190 003ECE30  98 87 08 CD */	stb r4, 0x8cd(r7)
 /* 803F1194 003ECE34  98 87 08 CE */	stb r4, 0x8ce(r7)
-/* 803F1198 003ECE38  4E 80 00 20 */	blr 
+/* 803F1198 003ECE38  4E 80 00 20 */	blr
 lbl_803F119C:
 /* 803F119C 003ECE3C  28 03 00 50 */	cmplwi r3, 0x50
-/* 803F11A0 003ECE40  4C 81 00 20 */	blelr 
+/* 803F11A0 003ECE40  4C 81 00 20 */	blelr
 /* 803F11A4 003ECE44  88 67 08 CE */	lbz r3, 0x8ce(r7)
 /* 803F11A8 003ECE48  38 63 00 01 */	addi r3, r3, 1
 /* 803F11AC 003ECE4C  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 803F11B0 003ECE50  98 67 08 CE */	stb r3, 0x8ce(r7)
 /* 803F11B4 003ECE54  28 00 00 14 */	cmplwi r0, 0x14
-/* 803F11B8 003ECE58  4D 80 00 20 */	bltlr 
+/* 803F11B8 003ECE58  4D 80 00 20 */	bltlr
 /* 803F11BC 003ECE5C  98 87 08 CD */	stb r4, 0x8cd(r7)
 /* 803F11C0 003ECE60  98 87 08 CE */	stb r4, 0x8ce(r7)
-/* 803F11C4 003ECE64  4E 80 00 20 */	blr 
+/* 803F11C4 003ECE64  4E 80 00 20 */	blr
 lbl_803F11C8:
 /* 803F11C8 003ECE68  28 03 00 4B */	cmplwi r3, 0x4b
 /* 803F11CC 003ECE6C  40 80 00 14 */	bge lbl_803F11E0
 /* 803F11D0 003ECE70  38 00 00 01 */	li r0, 1
 /* 803F11D4 003ECE74  98 07 08 CD */	stb r0, 0x8cd(r7)
 /* 803F11D8 003ECE78  98 87 08 CE */	stb r4, 0x8ce(r7)
-/* 803F11DC 003ECE7C  4E 80 00 20 */	blr 
+/* 803F11DC 003ECE7C  4E 80 00 20 */	blr
 lbl_803F11E0:
 /* 803F11E0 003ECE80  28 03 00 50 */	cmplwi r3, 0x50
-/* 803F11E4 003ECE84  4C 80 00 20 */	bgelr 
+/* 803F11E4 003ECE84  4C 80 00 20 */	bgelr
 /* 803F11E8 003ECE88  88 67 08 CE */	lbz r3, 0x8ce(r7)
 /* 803F11EC 003ECE8C  38 63 00 01 */	addi r3, r3, 1
 /* 803F11F0 003ECE90  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 803F11F4 003ECE94  98 67 08 CE */	stb r3, 0x8ce(r7)
 /* 803F11F8 003ECE98  28 00 00 01 */	cmplwi r0, 1
-/* 803F11FC 003ECE9C  4D 80 00 20 */	bltlr 
+/* 803F11FC 003ECE9C  4D 80 00 20 */	bltlr
 /* 803F1200 003ECEA0  38 00 00 01 */	li r0, 1
 /* 803F1204 003ECEA4  98 07 08 CD */	stb r0, 0x8cd(r7)
 /* 803F1208 003ECEA8  98 87 08 CE */	stb r4, 0x8ce(r7)
-/* 803F120C 003ECEAC  4E 80 00 20 */	blr 
+/* 803F120C 003ECEAC  4E 80 00 20 */	blr
 
 .global "IsControllerDataChanged"
 "IsControllerDataChanged":
@@ -1173,7 +1173,7 @@ lbl_803F1DA0:
 /* 803F1DAC 003EDA4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F1DB0 003EDA50  7C 08 03 A6 */	mtlr r0
 /* 803F1DB4 003EDA54  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F1DB8 003EDA58  4E 80 00 20 */	blr 
+/* 803F1DB8 003EDA58  4E 80 00 20 */	blr
 
 .global "CheckButtonCombination"
 "CheckButtonCombination":
@@ -1250,7 +1250,7 @@ lbl_803F1EA8:
 /* 803F1EB8 003EDB58  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803F1EBC 003EDB5C  7C 08 03 A6 */	mtlr r0
 /* 803F1EC0 003EDB60  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F1EC4 003EDB64  4E 80 00 20 */	blr 
+/* 803F1EC4 003EDB64  4E 80 00 20 */	blr
 
 .global "WPADiCheckContInputs"
 "WPADiCheckContInputs":
@@ -1356,7 +1356,7 @@ lbl_803F2034:
 /* 803F203C 003EDCDC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F2040 003EDCE0  7C 08 03 A6 */	mtlr r0
 /* 803F2044 003EDCE4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F2048 003EDCE8  4E 80 00 20 */	blr 
+/* 803F2048 003EDCE8  4E 80 00 20 */	blr
 
 .global "WPADiManageHandler"
 "WPADiManageHandler":
@@ -1856,7 +1856,7 @@ lbl_803F275C:
 /* 803F2764 003EE404  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 803F2768 003EE408  7C 08 03 A6 */	mtlr r0
 /* 803F276C 003EE40C  38 21 01 60 */	addi r1, r1, 0x160
-/* 803F2770 003EE410  4E 80 00 20 */	blr 
+/* 803F2770 003EE410  4E 80 00 20 */	blr
 
 .global "WPADiManageHandler0"
 "WPADiManageHandler0":
@@ -2026,7 +2026,7 @@ lbl_803F275C:
 /* 803F29F4 003EE694  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F29F8 003EE698  7C 08 03 A6 */	mtlr r0
 /* 803F29FC 003EE69C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F2A00 003EE6A0  4E 80 00 20 */	blr 
+/* 803F2A00 003EE6A0  4E 80 00 20 */	blr
 
 .global "WPADiInitSub"
 "WPADiInitSub":
@@ -2166,7 +2166,7 @@ lbl_803F2B84:
 /* 803F2C04 003EE8A4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F2C08 003EE8A8  7C 08 03 A6 */	mtlr r0
 /* 803F2C0C 003EE8AC  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F2C10 003EE8B0  4E 80 00 20 */	blr 
+/* 803F2C10 003EE8B0  4E 80 00 20 */	blr
 
 .global "WPADInit"
 "WPADInit":
@@ -2192,7 +2192,7 @@ lbl_803F2C58:
 /* 803F2C58 003EE8F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F2C5C 003EE8FC  7C 08 03 A6 */	mtlr r0
 /* 803F2C60 003EE900  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F2C64 003EE904  4E 80 00 20 */	blr 
+/* 803F2C64 003EE904  4E 80 00 20 */	blr
 
 .global "WPADStartFastSimpleSync"
 "WPADStartFastSimpleSync":
@@ -2232,7 +2232,7 @@ lbl_803F2C58:
 /* 803F2CB0 003EE950  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F2CB4 003EE954  7C 08 03 A6 */	mtlr r0
 /* 803F2CB8 003EE958  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F2CBC 003EE95C  4E 80 00 20 */	blr 
+/* 803F2CBC 003EE95C  4E 80 00 20 */	blr
 
 .global "WPADGetSensorBarPosition"
 "WPADGetSensorBarPosition":
@@ -2248,7 +2248,7 @@ lbl_803F2C58:
 /* 803F2CE4 003EE984  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F2CE8 003EE988  7C 08 03 A6 */	mtlr r0
 /* 803F2CEC 003EE98C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F2CF0 003EE990  4E 80 00 20 */	blr 
+/* 803F2CF0 003EE990  4E 80 00 20 */	blr
 
 .global "setupCallback"
 "setupCallback":
@@ -2272,7 +2272,7 @@ lbl_803F2C58:
 /* 803F2D38 003EE9D8  2C 0C 00 00 */	cmpwi r12, 0
 /* 803F2D3C 003EE9DC  41 82 00 70 */	beq lbl_803F2DAC
 /* 803F2D40 003EE9E0  7D 89 03 A6 */	mtctr r12
-/* 803F2D44 003EE9E4  4E 80 04 21 */	bctrl 
+/* 803F2D44 003EE9E4  4E 80 04 21 */	bctrl
 /* 803F2D48 003EE9E8  48 00 00 64 */	b lbl_803F2DAC
 lbl_803F2D4C:
 /* 803F2D4C 003EE9EC  4B FE D7 11 */	bl "__RAS_OSDisableInterrupts_begin"
@@ -2308,7 +2308,7 @@ lbl_803F2DAC:
 /* 803F2DB8 003EEA58  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F2DBC 003EEA5C  7C 08 03 A6 */	mtlr r0
 /* 803F2DC0 003EEA60  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F2DC4 003EEA64  4E 80 00 20 */	blr 
+/* 803F2DC4 003EEA64  4E 80 00 20 */	blr
 
 .global "abortConnCallback"
 "abortConnCallback":
@@ -2371,7 +2371,7 @@ lbl_803F2E94:
 /* 803F2E9C 003EEB3C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F2EA0 003EEB40  7C 08 03 A6 */	mtlr r0
 /* 803F2EA4 003EEB44  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F2EA8 003EEB48  4E 80 00 20 */	blr 
+/* 803F2EA8 003EEB48  4E 80 00 20 */	blr
 
 .global "firmwareCheckCallback"
 "firmwareCheckCallback":
@@ -2961,7 +2961,7 @@ lbl_803F3770:
 /* 803F3778 003EF418  80 01 02 84 */	lwz r0, 0x284(r1)
 /* 803F377C 003EF41C  7C 08 03 A6 */	mtlr r0
 /* 803F3780 003EF420  38 21 02 80 */	addi r1, r1, 0x280
-/* 803F3784 003EF424  4E 80 00 20 */	blr 
+/* 803F3784 003EF424  4E 80 00 20 */	blr
 
 .global "WPADiRetrieveChannel"
 "WPADiRetrieveChannel":
@@ -3033,7 +3033,7 @@ lbl_803F3870:
 /* 803F3878 003EF518  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F387C 003EF51C  7C 08 03 A6 */	mtlr r0
 /* 803F3880 003EF520  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F3884 003EF524  4E 80 00 20 */	blr 
+/* 803F3884 003EF524  4E 80 00 20 */	blr
 
 .global "WPADiConnCallback"
 "WPADiConnCallback":
@@ -3192,7 +3192,7 @@ lbl_803F3A8C:
 /* 803F3AD8 003EF778  7F A3 EB 78 */	mr r3, r29
 /* 803F3ADC 003EF77C  38 80 FF FF */	li r4, -1
 /* 803F3AE0 003EF780  7D 89 03 A6 */	mtctr r12
-/* 803F3AE4 003EF784  4E 80 04 21 */	bctrl 
+/* 803F3AE4 003EF784  4E 80 04 21 */	bctrl
 /* 803F3AE8 003EF788  48 00 00 30 */	b lbl_803F3B18
 lbl_803F3AEC:
 /* 803F3AEC 003EF78C  1C 1D 00 14 */	mulli r0, r29, 0x14
@@ -3205,7 +3205,7 @@ lbl_803F3AEC:
 /* 803F3B08 003EF7A8  7F A3 EB 78 */	mr r3, r29
 /* 803F3B0C 003EF7AC  38 80 FF FF */	li r4, -1
 /* 803F3B10 003EF7B0  7D 89 03 A6 */	mtctr r12
-/* 803F3B14 003EF7B4  4E 80 04 21 */	bctrl 
+/* 803F3B14 003EF7B4  4E 80 04 21 */	bctrl
 lbl_803F3B18:
 /* 803F3B18 003EF7B8  4B FE C9 45 */	bl "__RAS_OSDisableInterrupts_begin"
 /* 803F3B1C 003EF7BC  7C 7B 1B 78 */	mr r27, r3
@@ -3247,7 +3247,7 @@ lbl_803F3B8C:
 /* 803F3BA0 003EF840  7F A3 EB 78 */	mr r3, r29
 /* 803F3BA4 003EF844  38 80 FF FF */	li r4, -1
 /* 803F3BA8 003EF848  7D 89 03 A6 */	mtctr r12
-/* 803F3BAC 003EF84C  4E 80 04 21 */	bctrl 
+/* 803F3BAC 003EF84C  4E 80 04 21 */	bctrl
 lbl_803F3BB0:
 /* 803F3BB0 003EF850  4B FE C8 AD */	bl "__RAS_OSDisableInterrupts_begin"
 /* 803F3BB4 003EF854  7C 7A 1B 78 */	mr r26, r3
@@ -3313,7 +3313,7 @@ lbl_803F3C74:
 /* 803F3C94 003EF934  7F A3 EB 78 */	mr r3, r29
 /* 803F3C98 003EF938  38 80 FF FF */	li r4, -1
 /* 803F3C9C 003EF93C  7D 89 03 A6 */	mtctr r12
-/* 803F3CA0 003EF940  4E 80 04 21 */	bctrl 
+/* 803F3CA0 003EF940  4E 80 04 21 */	bctrl
 /* 803F3CA4 003EF944  48 00 00 10 */	b lbl_803F3CB4
 lbl_803F3CA8:
 /* 803F3CA8 003EF948  38 7F 01 A8 */	addi r3, r31, 0x1a8
@@ -3325,7 +3325,7 @@ lbl_803F3CB4:
 /* 803F3CBC 003EF95C  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 803F3CC0 003EF960  7C 08 03 A6 */	mtlr r0
 /* 803F3CC4 003EF964  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 803F3CC8 003EF968  4E 80 00 20 */	blr 
+/* 803F3CC8 003EF968  4E 80 00 20 */	blr
 
 .global "WPADiRecvCallback"
 "WPADiRecvCallback":
@@ -3357,7 +3357,7 @@ lbl_803F3D28:
 /* 803F3D28 003EF9C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F3D2C 003EF9CC  7C 08 03 A6 */	mtlr r0
 /* 803F3D30 003EF9D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F3D34 003EF9D4  4E 80 00 20 */	blr 
+/* 803F3D34 003EF9D4  4E 80 00 20 */	blr
 
 .global "WPADGetAccGravityUnit"
 "WPADGetAccGravityUnit":
@@ -3417,7 +3417,7 @@ lbl_803F3DF0:
 /* 803F3E00 003EFAA0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F3E04 003EFAA4  7C 08 03 A6 */	mtlr r0
 /* 803F3E08 003EFAA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F3E0C 003EFAAC  4E 80 00 20 */	blr 
+/* 803F3E0C 003EFAAC  4E 80 00 20 */	blr
 
 .global "CloseCallback"
 "CloseCallback":
@@ -3426,10 +3426,10 @@ lbl_803F3DF0:
 /* 803F3E18 003EFAB8  54 60 10 3A */	slwi r0, r3, 2
 /* 803F3E1C 003EFABC  38 A5 C8 50 */	addi r5, r5, "_wpdcb"@l
 /* 803F3E20 003EFAC0  7C 65 00 2E */	lwzx r3, r5, r0
-/* 803F3E24 003EFAC4  4D 82 00 20 */	beqlr 
+/* 803F3E24 003EFAC4  4D 82 00 20 */	beqlr
 /* 803F3E28 003EFAC8  88 63 08 C3 */	lbz r3, 0x8c3(r3)
 /* 803F3E2C 003EFACC  4B F5 02 D8 */	b "BTA_HhClose"
-/* 803F3E30 003EFAD0  4E 80 00 20 */	blr 
+/* 803F3E30 003EFAD0  4E 80 00 20 */	blr
 
 .global "WPADDisconnect"
 "WPADDisconnect":
@@ -3483,7 +3483,7 @@ lbl_803F3ED8:
 /* 803F3EE8 003EFB88  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803F3EEC 003EFB8C  7C 08 03 A6 */	mtlr r0
 /* 803F3EF0 003EFB90  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F3EF4 003EFB94  4E 80 00 20 */	blr 
+/* 803F3EF4 003EFB94  4E 80 00 20 */	blr
 
 .global "WPADProbe"
 "WPADProbe":
@@ -3524,7 +3524,7 @@ lbl_803F3F64:
 /* 803F3F74 003EFC14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F3F78 003EFC18  7C 08 03 A6 */	mtlr r0
 /* 803F3F7C 003EFC1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F3F80 003EFC20  4E 80 00 20 */	blr 
+/* 803F3F80 003EFC20  4E 80 00 20 */	blr
 
 .global "WPADSetSamplingCallback"
 "WPADSetSamplingCallback":
@@ -3553,7 +3553,7 @@ lbl_803F3F64:
 /* 803F3FDC 003EFC7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F3FE0 003EFC80  7C 08 03 A6 */	mtlr r0
 /* 803F3FE4 003EFC84  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F3FE8 003EFC88  4E 80 00 20 */	blr 
+/* 803F3FE8 003EFC88  4E 80 00 20 */	blr
 
 .global "WPADSetConnectCallback"
 "WPADSetConnectCallback":
@@ -3582,7 +3582,7 @@ lbl_803F3F64:
 /* 803F4044 003EFCE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F4048 003EFCE8  7C 08 03 A6 */	mtlr r0
 /* 803F404C 003EFCEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4050 003EFCF0  4E 80 00 20 */	blr 
+/* 803F4050 003EFCF0  4E 80 00 20 */	blr
 
 .global "WPADSetExtensionCallback"
 "WPADSetExtensionCallback":
@@ -3611,7 +3611,7 @@ lbl_803F3F64:
 /* 803F40AC 003EFD4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F40B0 003EFD50  7C 08 03 A6 */	mtlr r0
 /* 803F40B4 003EFD54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F40B8 003EFD58  4E 80 00 20 */	blr 
+/* 803F40B8 003EFD58  4E 80 00 20 */	blr
 
 .global "WPADGetDataFormat"
 "WPADGetDataFormat":
@@ -3632,7 +3632,7 @@ lbl_803F3F64:
 /* 803F40F4 003EFD94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F40F8 003EFD98  7C 08 03 A6 */	mtlr r0
 /* 803F40FC 003EFD9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4100 003EFDA0  4E 80 00 20 */	blr 
+/* 803F4100 003EFDA0  4E 80 00 20 */	blr
 
 .global "WPADSetDataFormat"
 "WPADSetDataFormat":
@@ -3683,7 +3683,7 @@ lbl_803F4198:
 /* 803F41A4 003EFE44  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F41A8 003EFE48  7C 08 03 A6 */	mtlr r0
 /* 803F41AC 003EFE4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F41B0 003EFE50  4E 80 00 20 */	blr 
+/* 803F41B0 003EFE50  4E 80 00 20 */	blr
 
 .global "__infoCallback"
 "__infoCallback":
@@ -3699,7 +3699,7 @@ lbl_803F4198:
 /* 803F41D8 003EFE78  2C 0C 00 00 */	cmpwi r12, 0
 /* 803F41DC 003EFE7C  41 82 00 0C */	beq lbl_803F41E8
 /* 803F41E0 003EFE80  7D 89 03 A6 */	mtctr r12
-/* 803F41E4 003EFE84  4E 80 04 21 */	bctrl 
+/* 803F41E4 003EFE84  4E 80 04 21 */	bctrl
 lbl_803F41E8:
 /* 803F41E8 003EFE88  38 00 00 00 */	li r0, 0
 /* 803F41EC 003EFE8C  90 1F 09 88 */	stw r0, 0x988(r31)
@@ -3708,7 +3708,7 @@ lbl_803F41E8:
 /* 803F41F8 003EFE98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F41FC 003EFE9C  7C 08 03 A6 */	mtlr r0
 /* 803F4200 003EFEA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4204 003EFEA4  4E 80 00 20 */	blr 
+/* 803F4204 003EFEA4  4E 80 00 20 */	blr
 
 .global "WPADGetInfoAsync"
 "WPADGetInfoAsync":
@@ -3847,7 +3847,7 @@ lbl_803F43E8:
 /* 803F43FC 003F009C  7F 83 E3 78 */	mr r3, r28
 /* 803F4400 003F00A0  7F 44 D3 78 */	mr r4, r26
 /* 803F4404 003F00A4  7D 89 03 A6 */	mtctr r12
-/* 803F4408 003F00A8  4E 80 04 21 */	bctrl 
+/* 803F4408 003F00A8  4E 80 04 21 */	bctrl
 lbl_803F440C:
 /* 803F440C 003F00AC  39 61 00 90 */	addi r11, r1, 0x90
 /* 803F4410 003F00B0  7F 43 D3 78 */	mr r3, r26
@@ -3855,7 +3855,7 @@ lbl_803F440C:
 /* 803F4418 003F00B8  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803F441C 003F00BC  7C 08 03 A6 */	mtlr r0
 /* 803F4420 003F00C0  38 21 00 90 */	addi r1, r1, 0x90
-/* 803F4424 003F00C4  4E 80 00 20 */	blr 
+/* 803F4424 003F00C4  4E 80 00 20 */	blr
 
 .global "WPADControlMotor"
 "WPADControlMotor":
@@ -3916,7 +3916,7 @@ lbl_803F44DC:
 /* 803F44E4 003F0184  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803F44E8 003F0188  7C 08 03 A6 */	mtlr r0
 /* 803F44EC 003F018C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F44F0 003F0190  4E 80 00 20 */	blr 
+/* 803F44F0 003F0190  4E 80 00 20 */	blr
 
 .global "WPADEnableMotor"
 "WPADEnableMotor":
@@ -3932,7 +3932,7 @@ lbl_803F44DC:
 /* 803F4518 003F01B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803F451C 003F01BC  7C 08 03 A6 */	mtlr r0
 /* 803F4520 003F01C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4524 003F01C4  4E 80 00 20 */	blr 
+/* 803F4524 003F01C4  4E 80 00 20 */	blr
 
 .global "WPADIsMotorEnabled"
 "WPADIsMotorEnabled":
@@ -3948,7 +3948,7 @@ lbl_803F44DC:
 /* 803F454C 003F01EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F4550 003F01F0  7C 08 03 A6 */	mtlr r0
 /* 803F4554 003F01F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4558 003F01F8  4E 80 00 20 */	blr 
+/* 803F4558 003F01F8  4E 80 00 20 */	blr
 
 .global "WPADControlLed"
 "WPADControlLed":
@@ -4071,7 +4071,7 @@ lbl_803F4704:
 /* 803F4718 003F03B8  7F 83 E3 78 */	mr r3, r28
 /* 803F471C 003F03BC  7F E4 FB 78 */	mr r4, r31
 /* 803F4720 003F03C0  7D 89 03 A6 */	mtctr r12
-/* 803F4724 003F03C4  4E 80 04 21 */	bctrl 
+/* 803F4724 003F03C4  4E 80 04 21 */	bctrl
 lbl_803F4728:
 /* 803F4728 003F03C8  39 61 00 80 */	addi r11, r1, 0x80
 /* 803F472C 003F03CC  7F E3 FB 78 */	mr r3, r31
@@ -4079,7 +4079,7 @@ lbl_803F4728:
 /* 803F4734 003F03D4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803F4738 003F03D8  7C 08 03 A6 */	mtlr r0
 /* 803F473C 003F03DC  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F4740 003F03E0  4E 80 00 20 */	blr 
+/* 803F4740 003F03E0  4E 80 00 20 */	blr
 
 .global "WPADSaveConfig"
 "WPADSaveConfig":
@@ -4119,7 +4119,7 @@ lbl_803F47B8:
 /* 803F47C0 003F0460  7F AC EB 78 */	mr r12, r29
 /* 803F47C4 003F0464  38 60 00 02 */	li r3, 2
 /* 803F47C8 003F0468  7D 89 03 A6 */	mtctr r12
-/* 803F47CC 003F046C  4E 80 04 21 */	bctrl 
+/* 803F47CC 003F046C  4E 80 04 21 */	bctrl
 lbl_803F47D0:
 /* 803F47D0 003F0470  7F C3 F3 78 */	mr r3, r30
 lbl_803F47D4:
@@ -4129,7 +4129,7 @@ lbl_803F47D4:
 /* 803F47E0 003F0480  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F47E4 003F0484  7C 08 03 A6 */	mtlr r0
 /* 803F47E8 003F0488  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F47EC 003F048C  4E 80 00 20 */	blr 
+/* 803F47EC 003F048C  4E 80 00 20 */	blr
 
 .global "WPADRead"
 "WPADRead":
@@ -4248,7 +4248,7 @@ lbl_803F496C:
 /* 803F4980 003F0620  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F4984 003F0624  7C 08 03 A6 */	mtlr r0
 /* 803F4988 003F0628  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F498C 003F062C  4E 80 00 20 */	blr 
+/* 803F498C 003F062C  4E 80 00 20 */	blr
 
 .global "WPADSetAutoSamplingBuf"
 "WPADSetAutoSamplingBuf":
@@ -4355,7 +4355,7 @@ lbl_803F4AE8:
 /* 803F4AFC 003F079C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F4B00 003F07A0  7C 08 03 A6 */	mtlr r0
 /* 803F4B04 003F07A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F4B08 003F07A8  4E 80 00 20 */	blr 
+/* 803F4B08 003F07A8  4E 80 00 20 */	blr
 
 .global "WPADiExcludeButton"
 "WPADiExcludeButton":
@@ -4411,7 +4411,7 @@ lbl_803F4BB8:
 /* 803F4BC0 003F0860  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803F4BC4 003F0864  7C 08 03 A6 */	mtlr r0
 /* 803F4BC8 003F0868  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4BCC 003F086C  4E 80 00 20 */	blr 
+/* 803F4BCC 003F086C  4E 80 00 20 */	blr
 
 .global "WPADiCopyOut"
 "WPADiCopyOut":
@@ -4506,7 +4506,7 @@ lbl_803F4D08:
 /* 803F4D10 003F09B0  41 82 00 10 */	beq lbl_803F4D20
 /* 803F4D14 003F09B4  7F A3 EB 78 */	mr r3, r29
 /* 803F4D18 003F09B8  7D 89 03 A6 */	mtctr r12
-/* 803F4D1C 003F09BC  4E 80 04 21 */	bctrl 
+/* 803F4D1C 003F09BC  4E 80 04 21 */	bctrl
 lbl_803F4D20:
 /* 803F4D20 003F09C0  A0 9F 09 84 */	lhz r4, 0x984(r31)
 /* 803F4D24 003F09C4  7F C3 F3 78 */	mr r3, r30
@@ -4519,7 +4519,7 @@ lbl_803F4D20:
 /* 803F4D40 003F09E0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F4D44 003F09E4  7C 08 03 A6 */	mtlr r0
 /* 803F4D48 003F09E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F4D4C 003F09EC  4E 80 00 20 */	blr 
+/* 803F4D4C 003F09EC  4E 80 00 20 */	blr
 
 .global "WPADIsSpeakerEnabled"
 "WPADIsSpeakerEnabled":
@@ -4539,7 +4539,7 @@ lbl_803F4D20:
 /* 803F4D84 003F0A24  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F4D88 003F0A28  7C 08 03 A6 */	mtlr r0
 /* 803F4D8C 003F0A2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F4D90 003F0A30  4E 80 00 20 */	blr 
+/* 803F4D90 003F0A30  4E 80 00 20 */	blr
 
 .global "WPADControlSpeaker"
 "WPADControlSpeaker":
@@ -6011,7 +6011,7 @@ lbl_803F6378:
 /* 803F6384 003F2024  7F 63 DB 78 */	mr r3, r27
 /* 803F6388 003F2028  7F 44 D3 78 */	mr r4, r26
 /* 803F638C 003F202C  7D 89 03 A6 */	mtctr r12
-/* 803F6390 003F2030  4E 80 04 21 */	bctrl 
+/* 803F6390 003F2030  4E 80 04 21 */	bctrl
 lbl_803F6394:
 /* 803F6394 003F2034  7F 43 D3 78 */	mr r3, r26
 lbl_803F6398:
@@ -6020,7 +6020,7 @@ lbl_803F6398:
 /* 803F63A0 003F2040  80 01 06 04 */	lwz r0, 0x604(r1)
 /* 803F63A4 003F2044  7C 08 03 A6 */	mtlr r0
 /* 803F63A8 003F2048  38 21 06 00 */	addi r1, r1, 0x600
-/* 803F63AC 003F204C  4E 80 00 20 */	blr 
+/* 803F63AC 003F204C  4E 80 00 20 */	blr
 
 .global "WPADGetSpeakerVolume"
 "WPADGetSpeakerVolume":
@@ -6036,7 +6036,7 @@ lbl_803F6398:
 /* 803F63D4 003F2074  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F63D8 003F2078  7C 08 03 A6 */	mtlr r0
 /* 803F63DC 003F207C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F63E0 003F2080  4E 80 00 20 */	blr 
+/* 803F63E0 003F2080  4E 80 00 20 */	blr
 
 .global "WPADSetSpeakerVolume"
 "WPADSetSpeakerVolume":
@@ -6061,7 +6061,7 @@ lbl_803F6418:
 /* 803F6424 003F20C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803F6428 003F20C8  7C 08 03 A6 */	mtlr r0
 /* 803F642C 003F20CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F6430 003F20D0  4E 80 00 20 */	blr 
+/* 803F6430 003F20D0  4E 80 00 20 */	blr
 
 .global "IsBusyStream"
 "IsBusyStream":
@@ -6149,7 +6149,7 @@ lbl_803F6554:
 /* 803F655C 003F21FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803F6560 003F2200  7C 08 03 A6 */	mtlr r0
 /* 803F6564 003F2204  38 21 00 30 */	addi r1, r1, 0x30
-/* 803F6568 003F2208  4E 80 00 20 */	blr 
+/* 803F6568 003F2208  4E 80 00 20 */	blr
 
 .global "WPADCanSendStreamData"
 "WPADCanSendStreamData":
@@ -6188,7 +6188,7 @@ lbl_803F65D4:
 /* 803F65E0 003F2280  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803F65E4 003F2284  7C 08 03 A6 */	mtlr r0
 /* 803F65E8 003F2288  38 21 00 20 */	addi r1, r1, 0x20
-/* 803F65EC 003F228C  4E 80 00 20 */	blr 
+/* 803F65EC 003F228C  4E 80 00 20 */	blr
 
 .global "WPADSendStreamData"
 "WPADSendStreamData":
@@ -6331,12 +6331,12 @@ lbl_803F67E8:
 /* 803F67F0 003F2490  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803F67F4 003F2494  7C 08 03 A6 */	mtlr r0
 /* 803F67F8 003F2498  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F67FC 003F249C  4E 80 00 20 */	blr 
+/* 803F67FC 003F249C  4E 80 00 20 */	blr
 
 .global "WPADGetDpdSensitivity"
 "WPADGetDpdSensitivity":
 /* 803F6800 003F24A0  88 6D C9 51 */	lbz r3, "_dpdSensitivity"-_SDA_BASE_(r13)
-/* 803F6804 003F24A4  4E 80 00 20 */	blr 
+/* 803F6804 003F24A4  4E 80 00 20 */	blr
 
 .global "WPADIsDpdEnabled"
 "WPADIsDpdEnabled":
@@ -6356,7 +6356,7 @@ lbl_803F67E8:
 /* 803F683C 003F24DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803F6840 003F24E0  7C 08 03 A6 */	mtlr r0
 /* 803F6844 003F24E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F6848 003F24E8  4E 80 00 20 */	blr 
+/* 803F6848 003F24E8  4E 80 00 20 */	blr
 
 .global "__dpdCb"
 "__dpdCb":
@@ -6371,7 +6371,7 @@ lbl_803F67E8:
 /* 803F686C 003F250C  7C 00 1B 78 */	or r0, r0, r3
 /* 803F6870 003F2510  54 00 0F FE */	srwi r0, r0, 0x1f
 /* 803F6874 003F2514  90 04 08 38 */	stw r0, 0x838(r4)
-/* 803F6878 003F2518  4E 80 00 20 */	blr 
+/* 803F6878 003F2518  4E 80 00 20 */	blr
 
 .global "WPADControlDpd"
 "WPADControlDpd":
@@ -7463,7 +7463,7 @@ lbl_803F78C0:
 /* 803F78CC 003F356C  7F E3 FB 78 */	mr r3, r31
 /* 803F78D0 003F3570  7F 04 C3 78 */	mr r4, r24
 /* 803F78D4 003F3574  7D 89 03 A6 */	mtctr r12
-/* 803F78D8 003F3578  4E 80 04 21 */	bctrl 
+/* 803F78D8 003F3578  4E 80 04 21 */	bctrl
 lbl_803F78DC:
 /* 803F78DC 003F357C  7F 03 C3 78 */	mr r3, r24
 lbl_803F78E0:
@@ -7472,7 +7472,7 @@ lbl_803F78E0:
 /* 803F78E8 003F3588  80 01 04 74 */	lwz r0, 0x474(r1)
 /* 803F78EC 003F358C  7C 08 03 A6 */	mtlr r0
 /* 803F78F0 003F3590  38 21 04 70 */	addi r1, r1, 0x470
-/* 803F78F4 003F3594  4E 80 00 20 */	blr 
+/* 803F78F4 003F3594  4E 80 00 20 */	blr
 
 .global "__SendData"
 "__SendData":
@@ -7629,7 +7629,7 @@ lbl_803F7B14:
 /* 803F7B1C 003F37BC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803F7B20 003F37C0  7C 08 03 A6 */	mtlr r0
 /* 803F7B24 003F37C4  38 21 00 40 */	addi r1, r1, 0x40
-/* 803F7B28 003F37C8  4E 80 00 20 */	blr 
+/* 803F7B28 003F37C8  4E 80 00 20 */	blr
 
 .global "WPADiSendSetReportType"
 "WPADiSendSetReportType":
@@ -7654,7 +7654,7 @@ lbl_803F7B14:
 /* 803F7B74 003F3814  38 63 4F F0 */	addi r3, r3, lbl_80484FF0@l
 /* 803F7B78 003F3818  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803F7B7C 003F381C  7C 69 03 A6 */	mtctr r3
-/* 803F7B80 003F3820  4E 80 04 20 */	bctr 
+/* 803F7B80 003F3820  4E 80 04 20 */	bctr
 /* 803F7B84 003F3824  38 00 00 30 */	li r0, 0x30
 /* 803F7B88 003F3828  98 01 00 3D */	stb r0, 0x3d(r1)
 /* 803F7B8C 003F382C  48 00 00 6C */	b lbl_803F7BF8
@@ -7768,7 +7768,7 @@ lbl_803F7D20:
 /* 803F7D2C 003F39CC  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 803F7D30 003F39D0  7C 08 03 A6 */	mtlr r0
 /* 803F7D34 003F39D4  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F7D38 003F39D8  4E 80 00 20 */	blr 
+/* 803F7D38 003F39D8  4E 80 00 20 */	blr
 
 .global "WPADiSendWriteDataCmd"
 "WPADiSendWriteDataCmd":
@@ -7883,7 +7883,7 @@ lbl_803F7ED4:
 /* 803F7EE0 003F3B80  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 803F7EE4 003F3B84  7C 08 03 A6 */	mtlr r0
 /* 803F7EE8 003F3B88  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F7EEC 003F3B8C  4E 80 00 20 */	blr 
+/* 803F7EEC 003F3B8C  4E 80 00 20 */	blr
 
 .global "WPADiSendWriteData"
 "WPADiSendWriteData":
@@ -7999,7 +7999,7 @@ lbl_803F808C:
 /* 803F8098 003F3D38  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 803F809C 003F3D3C  7C 08 03 A6 */	mtlr r0
 /* 803F80A0 003F3D40  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F80A4 003F3D44  4E 80 00 20 */	blr 
+/* 803F80A4 003F3D44  4E 80 00 20 */	blr
 
 .global "WPADiSendReadData"
 "WPADiSendReadData":
@@ -8112,7 +8112,7 @@ lbl_803F8238:
 /* 803F8244 003F3EE4  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 803F8248 003F3EE8  7C 08 03 A6 */	mtlr r0
 /* 803F824C 003F3EEC  38 21 00 80 */	addi r1, r1, 0x80
-/* 803F8250 003F3EF0  4E 80 00 20 */	blr 
+/* 803F8250 003F3EF0  4E 80 00 20 */	blr
 
 .global "WPADiClearQueue"
 "WPADiClearQueue":
@@ -8139,71 +8139,157 @@ lbl_803F8238:
 /* 803F82A4 003F3F44  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803F82A8 003F3F48  7C 08 03 A6 */	mtlr r0
 /* 803F82AC 003F3F4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803F82B0 003F3F50  4E 80 00 20 */	blr 
+/* 803F82B0 003F3F50  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "cfg1$3365"
 "cfg1$3365":
-	.incbin "baserom.dol", 0x41AEE0, 0x30
+	# ROM: 0x41AEE0
+	.4byte 0x02000071
+	.4byte 0x01006400
+	.4byte 0xFE020000
+	.4byte 0x71010096
+	.4byte 0x00B40200
+	.4byte 0x00710100
+	.4byte 0xAA006402
+	.4byte 0x00007101
+	.4byte 0x00C80036
+	.4byte 0x07000071
+	.4byte 0x01007200
+	.4byte 0x20000000
+
 .global "cfg2$3366"
 "cfg2$3366":
-	.incbin "baserom.dol", 0x41AF10, 0x10
+	# ROM: 0x41AF10
+	.4byte 0xFD05B304
+	.4byte 0x63033503
+	.4byte 0x1F030000
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80484D30
 lbl_80484D30:
-	.incbin "baserom.dol", 0x480E30, 0x4C
+	# ROM: 0x480E30
+	.asciz "<< RVL_SDK - WPAD \trelease build: May 17 2007 01:52:03 (0x4199_60831) >>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80484D7C
 lbl_80484D7C:
-	.incbin "baserom.dol", 0x480E7C, 0x1C
+	# ROM: 0x480E7C
+	.asciz "No Alloc: Nothing to do!!!\n"
+
 .global lbl_80484D98
 lbl_80484D98:
-	.incbin "baserom.dol", 0x480E98, 0x1C
+	# ROM: 0x480E98
+	.asciz "No Free: Nothing to do!!!\n"
+	.byte 0x00
+
 .global lbl_80484DB4
 lbl_80484DB4:
-	.incbin "baserom.dol", 0x480EB4, 0x34
+	# ROM: 0x480EB4
+	.asciz "Deregister allocators because of fatal error.\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global "ShutdownFunctionInfo_80484DE8"
 "ShutdownFunctionInfo_80484DE8":
-	.incbin "baserom.dol", 0x480EE8, 0x10
+	# ROM: 0x480EE8
+	.4byte "OnShutdown_803F0D6C" ;# ptr (0x803F0D6C)
+	.4byte 0x0000007F
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global lbl_80484DF8
 lbl_80484DF8:
-	.incbin "baserom.dol", 0x480EF8, 0x28
+	# ROM: 0x480EF8
+	.asciz "Check the update of WiFi using channel\n"
+
 .global lbl_80484E20
 lbl_80484E20:
-	.incbin "baserom.dol", 0x480F20, 0x18
+	# ROM: 0x480F20
+	.asciz "WiFi uses channel = %d\n"
+
 .global lbl_80484E38
 lbl_80484E38:
-	.incbin "baserom.dol", 0x480F38, 0xC
+	# ROM: 0x480F38
+	.asciz "WPADInit()\n"
+
 .global lbl_80484E44
 lbl_80484E44:
-	.incbin "baserom.dol", 0x480F44, 0x38
+	# ROM: 0x480F44
+	.asciz " ==>this error means that the firmware is for NDEV %s\n"
+	.byte 0x00
+
 .global lbl_80484E7C
 lbl_80484E7C:
-	.incbin "baserom.dol", 0x480F7C, 0xA4
+	# ROM: 0x480F7C
+	.asciz "2.1 or later"
+	.byte 0x00, 0x00, 0x00
+	.asciz "connection is opened\n"
+	.byte 0x00, 0x00
+	.asciz "connection is closed\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "clean up command queue\n"
+	.asciz "WARNING: disconnection for device handle not assigned to channel.\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_80484F20
 lbl_80484F20:
-	.incbin "baserom.dol", 0x481020, 0x18
+	# ROM: 0x481020
+	.asciz "HID Parser reports: %d\n"
+
 .global lbl_80484F38
 lbl_80484F38:
-	.incbin "baserom.dol", 0x481038, 0x2C
+	# ROM: 0x481038
+	.asciz "WPADiRecvCallback(): Unknown channel %d\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80484F64
 lbl_80484F64:
-	.incbin "baserom.dol", 0x481064, 0x1C
+	# ROM: 0x481064
+	.asciz "WPADSetSamplingCallback()\n"
+	.byte 0x00
+
 .global lbl_80484F80
 lbl_80484F80:
-	.incbin "baserom.dol", 0x481080, 0x1C
+	# ROM: 0x481080
+	.asciz "WPADSetConnectCallback()\n"
+	.byte 0x00, 0x00
+
 .global lbl_80484F9C
 lbl_80484F9C:
-	.incbin "baserom.dol", 0x48109C, 0x1C
+	# ROM: 0x48109C
+	.asciz "WPADSetExtensionCallback()\n"
+
 .global lbl_80484FB8
 lbl_80484FB8:
-	.incbin "baserom.dol", 0x4810B8, 0x1C
+	# ROM: 0x4810B8
+	.asciz "WPADSetAutoSamplingBuf()\n"
+	.byte 0x00, 0x00
+
 .global lbl_80484FD4
 lbl_80484FD4:
-	.incbin "baserom.dol", 0x4810D4, 0x1C
+	# ROM: 0x4810D4
+	.asciz "handle = %d, repid = %02x\n"
+	.byte 0x00
+
 .global lbl_80484FF0
 lbl_80484FF0:
-	.incbin "baserom.dol", 0x4810F0, 0x28
+	# ROM: 0x4810F0
+	.4byte 0x803F7B84 ;# ptr
+	.4byte 0x803F7B90 ;# ptr
+	.4byte 0x803F7B9C ;# ptr
+	.4byte 0x803F7BA8 ;# ptr
+	.4byte 0x803F7BB4 ;# ptr
+	.4byte 0x803F7BC0 ;# ptr
+	.4byte 0x803F7BCC ;# ptr
+	.4byte 0x803F7BD8 ;# ptr
+	.4byte 0x803F7BE4 ;# ptr
+	.4byte 0x803F7BF0 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "_managerAlarm"
@@ -8231,22 +8317,34 @@ lbl_80484FF0:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__WPADVersion"
 "__WPADVersion":
-	.incbin "baserom.dol", 0x4874F0, 0x4
+	# ROM: 0x4874F0
+	.4byte 0x80484D30 ;# ptr
+
 .global "__WPAD_acc_diff_count_threshold"
 "__WPAD_acc_diff_count_threshold":
-	.incbin "baserom.dol", 0x4874F4, 0x2
+	# ROM: 0x4874F4
+	.byte 0x00, 0x06
+
 .global "__WPAD_dpd_diff_count_threshold"
 "__WPAD_dpd_diff_count_threshold":
-	.incbin "baserom.dol", 0x4874F6, 0x2
+	# ROM: 0x4874F6
+	.byte 0x00, 0x04
+
 .global "__WPAD_acc_hyst_count_threshold"
 "__WPAD_acc_hyst_count_threshold":
-	.incbin "baserom.dol", 0x4874F8, 0x2
+	# ROM: 0x4874F8
+	.byte 0x00, 0x1E
+
 .global "__WPAD_dpd_hyst_count_threshold"
 "__WPAD_dpd_hyst_count_threshold":
-	.incbin "baserom.dol", 0x4874FA, 0x2
+	# ROM: 0x4874FA
+	.byte 0x00, 0x1E
+
 .global lbl_805D797C
 lbl_805D797C:
-	.incbin "baserom.dol", 0x4874FC, 0x4
+	# ROM: 0x4874FC
+	.4byte 0x322E3000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_regShutdown"
@@ -8310,22 +8408,36 @@ lbl_805D797C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBDA8
 lbl_805DBDA8:
-	.incbin "baserom.dol", 0x48A0C8, 0x1
+	# ROM: 0x48A0C8
+	.byte 0x00
+
 .global lbl_805DBDA9
 lbl_805DBDA9:
-	.incbin "baserom.dol", 0x48A0C9, 0x1
+	# ROM: 0x48A0C9
+	.byte 0x00
+
 .global lbl_805DBDAA
 lbl_805DBDAA:
-	.incbin "baserom.dol", 0x48A0CA, 0x1
+	# ROM: 0x48A0CA
+	.byte 0xD0
+
 .global lbl_805DBDAB
 lbl_805DBDAB:
-	.incbin "baserom.dol", 0x48A0CB, 0x1
+	# ROM: 0x48A0CB
+	.byte 0x07
+
 .global lbl_805DBDAC
 lbl_805DBDAC:
-	.incbin "baserom.dol", 0x48A0CC, 0x1
+	# ROM: 0x48A0CC
+	.byte 0x40
+
 .global lbl_805DBDAD
 lbl_805DBDAD:
-	.incbin "baserom.dol", 0x48A0CD, 0x1
+	# ROM: 0x48A0CD
+	.byte 0x0C
+
 .global lbl_805DBDAE
 lbl_805DBDAE:
-	.incbin "baserom.dol", 0x48A0CE, 0x2
+	# ROM: 0x48A0CE
+	.byte 0x0E, 0x00
+

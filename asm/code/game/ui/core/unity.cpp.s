@@ -66,7 +66,7 @@ lbl_8017B2D4:
 /* 8017B2DC 00176F7C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017B2E0 00176F80  7C 08 03 A6 */	mtlr r0
 /* 8017B2E4 00176F84  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B2E8 00176F88  4E 80 00 20 */	blr 
+/* 8017B2E8 00176F88  4E 80 00 20 */	blr
 
 .global "makeNumberString__12UIObjectBaseFiPUs"
 "makeNumberString__12UIObjectBaseFiPUs":
@@ -111,7 +111,7 @@ lbl_8017B370:
 /* 8017B37C 0017701C  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 8017B380 00177020  7C 08 03 A6 */	mtlr r0
 /* 8017B384 00177024  38 21 00 40 */	addi r1, r1, 0x40
-/* 8017B388 00177028  4E 80 00 20 */	blr 
+/* 8017B388 00177028  4E 80 00 20 */	blr
 
 .global "makeMoneyString__12UIObjectBaseFiPUsb"
 "makeMoneyString__12UIObjectBaseFiPUsb":
@@ -150,7 +150,7 @@ lbl_8017B3F8:
 /* 8017B404 001770A4  83 A1 02 14 */	lwz r29, 0x214(r1)
 /* 8017B408 001770A8  7C 08 03 A6 */	mtlr r0
 /* 8017B40C 001770AC  38 21 02 20 */	addi r1, r1, 0x220
-/* 8017B410 001770B0  4E 80 00 20 */	blr 
+/* 8017B410 001770B0  4E 80 00 20 */	blr
 
 .global "makePetPointString__12UIObjectBaseFiPUsb"
 "makePetPointString__12UIObjectBaseFiPUsb":
@@ -191,7 +191,7 @@ lbl_8017B484:
 /* 8017B490 00177130  83 A1 02 14 */	lwz r29, 0x214(r1)
 /* 8017B494 00177134  7C 08 03 A6 */	mtlr r0
 /* 8017B498 00177138  38 21 02 20 */	addi r1, r1, 0x220
-/* 8017B49C 0017713C  4E 80 00 20 */	blr 
+/* 8017B49C 0017713C  4E 80 00 20 */	blr
 
 .global "doUIQDStringSubstitution__12UIObjectBaseFPUs"
 "doUIQDStringSubstitution__12UIObjectBaseFPUs":
@@ -217,7 +217,7 @@ lbl_8017B484:
 "get_blank_shader_id__12UIObjectBaseFv":
 /* 8017B4D8 00177178  3C 60 9F 94 */	lis r3, 0x9F93FF74@ha
 /* 8017B4DC 0017717C  38 63 FF 74 */	addi r3, r3, 0x9F93FF74@l
-/* 8017B4E0 00177180  4E 80 00 20 */	blr 
+/* 8017B4E0 00177180  4E 80 00 20 */	blr
 
 .global "play_error_sound__12UIObjectBaseFv"
 "play_error_sound__12UIObjectBaseFv":
@@ -232,7 +232,7 @@ lbl_8017B484:
 /* 8017B504 001771A4  38 60 00 01 */	li r3, 1
 /* 8017B508 001771A8  7C 08 03 A6 */	mtlr r0
 /* 8017B50C 001771AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B510 001771B0  4E 80 00 20 */	blr 
+/* 8017B510 001771B0  4E 80 00 20 */	blr
 
 .global "__ct__Q27UIAUDIO13UIAUDIORecordFv"
 "__ct__Q27UIAUDIO13UIAUDIORecordFv":
@@ -245,7 +245,7 @@ lbl_8017B484:
 /* 8017B52C 001771CC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8017B530 001771D0  90 03 00 10 */	stw r0, 0x10(r3)
 /* 8017B534 001771D4  90 03 00 14 */	stw r0, 0x14(r3)
-/* 8017B538 001771D8  4E 80 00 20 */	blr 
+/* 8017B538 001771D8  4E 80 00 20 */	blr
 
 .global "__dt__Q27UIAUDIO13UIAUDIORecordFv"
 "__dt__Q27UIAUDIO13UIAUDIORecordFv":
@@ -265,7 +265,7 @@ lbl_8017B564:
 /* 8017B56C 0017720C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B570 00177210  7C 08 03 A6 */	mtlr r0
 /* 8017B574 00177214  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B578 00177218  4E 80 00 20 */	blr 
+/* 8017B578 00177218  4E 80 00 20 */	blr
 
 .global "__ct__10HelpDialogFv"
 "__ct__10HelpDialogFv":
@@ -286,13 +286,13 @@ lbl_8017B564:
 /* 8017B5B4 00177254  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B5B8 00177258  7C 08 03 A6 */	mtlr r0
 /* 8017B5BC 0017725C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B5C0 00177260  4E 80 00 20 */	blr 
+/* 8017B5C0 00177260  4E 80 00 20 */	blr
 
 .global "ResetConfigVariables__10HelpDialogFv"
 "ResetConfigVariables__10HelpDialogFv":
 /* 8017B5C4 00177264  38 00 00 00 */	li r0, 0
 /* 8017B5C8 00177268  98 03 00 A0 */	stb r0, 0xa0(r3)
-/* 8017B5CC 0017726C  4E 80 00 20 */	blr 
+/* 8017B5CC 0017726C  4E 80 00 20 */	blr
 
 .global "__dt__10HelpDialogFv"
 "__dt__10HelpDialogFv":
@@ -318,7 +318,7 @@ lbl_8017B60C:
 /* 8017B618 001772B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B61C 001772BC  7C 08 03 A6 */	mtlr r0
 /* 8017B620 001772C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B624 001772C4  4E 80 00 20 */	blr 
+/* 8017B624 001772C4  4E 80 00 20 */	blr
 
 .global "SpawnHelpDialog__10HelpDialogFPCcPCcP18HelpDialogCallbackbPCc"
 "SpawnHelpDialog__10HelpDialogFPCcPCcP18HelpDialogCallbackbPCc":
@@ -490,7 +490,7 @@ lbl_8017B88C:
 /* 8017B894 00177534  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8017B898 00177538  7C 08 03 A6 */	mtlr r0
 /* 8017B89C 0017753C  38 21 00 80 */	addi r1, r1, 0x80
-/* 8017B8A0 00177540  4E 80 00 20 */	blr 
+/* 8017B8A0 00177540  4E 80 00 20 */	blr
 
 .global "SpawnHelpDialog__10HelpDialogFPCcP18HelpDialogCallbackbPCc"
 "SpawnHelpDialog__10HelpDialogFPCcP18HelpDialogCallbackbPCc":
@@ -527,7 +527,7 @@ lbl_8017B88C:
 /* 8017B91C 001775BC  80 01 02 24 */	lwz r0, 0x224(r1)
 /* 8017B920 001775C0  7C 08 03 A6 */	mtlr r0
 /* 8017B924 001775C4  38 21 02 20 */	addi r1, r1, 0x220
-/* 8017B928 001775C8  4E 80 00 20 */	blr 
+/* 8017B928 001775C8  4E 80 00 20 */	blr
 
 .global "SelectionCallback__10HelpDialogFi"
 "SelectionCallback__10HelpDialogFi":
@@ -535,19 +535,19 @@ lbl_8017B88C:
 /* 8017B930 001775D0  38 00 00 00 */	li r0, 0
 /* 8017B934 001775D4  98 03 00 A1 */	stb r0, 0xa1(r3)
 /* 8017B938 001775D8  2C 05 00 00 */	cmpwi r5, 0
-/* 8017B93C 001775DC  4D 82 00 20 */	beqlr 
+/* 8017B93C 001775DC  4D 82 00 20 */	beqlr
 /* 8017B940 001775E0  81 85 00 00 */	lwz r12, 0(r5)
 /* 8017B944 001775E4  7C A3 2B 78 */	mr r3, r5
 /* 8017B948 001775E8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017B94C 001775EC  7D 89 03 A6 */	mtctr r12
-/* 8017B950 001775F0  4E 80 04 20 */	bctr 
-/* 8017B954 001775F4  4E 80 00 20 */	blr 
+/* 8017B950 001775F0  4E 80 04 20 */	bctr
+/* 8017B954 001775F4  4E 80 00 20 */	blr
 
 .global "SelectionCallback__14SimpleOkDialogFi"
 "SelectionCallback__14SimpleOkDialogFi":
 /* 8017B958 001775F8  38 00 00 00 */	li r0, 0
 /* 8017B95C 001775FC  98 03 00 A0 */	stb r0, 0xa0(r3)
-/* 8017B960 00177600  4E 80 00 20 */	blr 
+/* 8017B960 00177600  4E 80 00 20 */	blr
 
 .global "makeFunctor<10HelpDialog,v,8UIDialog>__FP10CBFunctor0R10HelpDialogRCM8UIDialogFPCvPv_v_52CBMemberTranslator0<10HelpDialog,M8UIDialogFPCvPv_v>"
 "makeFunctor<10HelpDialog,v,8UIDialog>__FP10CBFunctor0R10HelpDialogRCM8UIDialogFPCvPv_v_52CBMemberTranslator0<10HelpDialog,M8UIDialogFPCvPv_v>":
@@ -575,7 +575,7 @@ lbl_8017B88C:
 /* 8017B9AC 0017764C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B9B0 00177650  7C 08 03 A6 */	mtlr r0
 /* 8017B9B4 00177654  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017B9B8 00177658  4E 80 00 20 */	blr 
+/* 8017B9B8 00177658  4E 80 00 20 */	blr
 
 .global "thunk__52CBMemberTranslator0<10HelpDialog,M8UIDialogFPCvPv_v>FRC13CBFunctorBase"
 "thunk__52CBMemberTranslator0<10HelpDialog,M8UIDialogFPCvPv_v>FRC13CBFunctorBase":
@@ -592,13 +592,13 @@ lbl_8017B88C:
 /* 8017B9E4 00177684  7C 6C 1B 78 */	mr r12, r3
 /* 8017B9E8 00177688  7F E3 FB 78 */	mr r3, r31
 /* 8017B9EC 0017768C  48 29 38 39 */	bl "__ptmf_scall"
-/* 8017B9F0 00177690  60 00 00 00 */	nop 
+/* 8017B9F0 00177690  60 00 00 00 */	nop
 /* 8017B9F4 00177694  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017B9F8 00177698  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017B9FC 0017769C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017BA00 001776A0  7C 08 03 A6 */	mtlr r0
 /* 8017BA04 001776A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BA08 001776A8  4E 80 00 20 */	blr 
+/* 8017BA08 001776A8  4E 80 00 20 */	blr
 
 .global "makeFunctor<i,10HelpDialog,v,10HelpDialog,i>__FP13CBFunctor1<i>R10HelpDialogRCM10HelpDialogFPCvPvi_v_58CBMemberTranslator1<i,10HelpDialog,M10HelpDialogFPCvPvi_v>"
 "makeFunctor<i,10HelpDialog,v,10HelpDialog,i>__FP13CBFunctor1<i>R10HelpDialogRCM10HelpDialogFPCvPvi_v_58CBMemberTranslator1<i,10HelpDialog,M10HelpDialogFPCvPvi_v>":
@@ -626,7 +626,7 @@ lbl_8017B88C:
 /* 8017BA54 001776F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BA58 001776F8  7C 08 03 A6 */	mtlr r0
 /* 8017BA5C 001776FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BA60 00177700  4E 80 00 20 */	blr 
+/* 8017BA60 00177700  4E 80 00 20 */	blr
 
 .global "thunk__58CBMemberTranslator1<i,10HelpDialog,M10HelpDialogFPCvPvi_v>FRC13CBFunctorBasei"
 "thunk__58CBMemberTranslator1<i,10HelpDialog,M10HelpDialogFPCvPvi_v>FRC13CBFunctorBasei":
@@ -646,14 +646,14 @@ lbl_8017B88C:
 /* 8017BA98 00177738  7F E3 FB 78 */	mr r3, r31
 /* 8017BA9C 0017773C  7F C4 F3 78 */	mr r4, r30
 /* 8017BAA0 00177740  48 29 37 85 */	bl "__ptmf_scall"
-/* 8017BAA4 00177744  60 00 00 00 */	nop 
+/* 8017BAA4 00177744  60 00 00 00 */	nop
 /* 8017BAA8 00177748  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017BAAC 0017774C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017BAB0 00177750  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017BAB4 00177754  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017BAB8 00177758  7C 08 03 A6 */	mtlr r0
 /* 8017BABC 0017775C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017BAC0 00177760  4E 80 00 20 */	blr 
+/* 8017BAC0 00177760  4E 80 00 20 */	blr
 
 .global "makeFunctor<4UI3D,v,4UI3D>__FP10CBFunctor0R4UI3DRCM4UI3DFPCvPv_v_41CBMemberTranslator0<4UI3D,M4UI3DFPCvPv_v>"
 "makeFunctor<4UI3D,v,4UI3D>__FP10CBFunctor0R4UI3DRCM4UI3DFPCvPv_v_41CBMemberTranslator0<4UI3D,M4UI3DFPCvPv_v>":
@@ -681,7 +681,7 @@ lbl_8017B88C:
 /* 8017BB0C 001777AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BB10 001777B0  7C 08 03 A6 */	mtlr r0
 /* 8017BB14 001777B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BB18 001777B8  4E 80 00 20 */	blr 
+/* 8017BB18 001777B8  4E 80 00 20 */	blr
 
 .global "thunk__41CBMemberTranslator0<4UI3D,M4UI3DFPCvPv_v>FRC13CBFunctorBase"
 "thunk__41CBMemberTranslator0<4UI3D,M4UI3DFPCvPv_v>FRC13CBFunctorBase":
@@ -698,31 +698,31 @@ lbl_8017B88C:
 /* 8017BB44 001777E4  7C 6C 1B 78 */	mr r12, r3
 /* 8017BB48 001777E8  7F E3 FB 78 */	mr r3, r31
 /* 8017BB4C 001777EC  48 29 36 D9 */	bl "__ptmf_scall"
-/* 8017BB50 001777F0  60 00 00 00 */	nop 
+/* 8017BB50 001777F0  60 00 00 00 */	nop
 /* 8017BB54 001777F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BB58 001777F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017BB5C 001777FC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017BB60 00177800  7C 08 03 A6 */	mtlr r0
 /* 8017BB64 00177804  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BB68 00177808  4E 80 00 20 */	blr 
+/* 8017BB68 00177808  4E 80 00 20 */	blr
 
 .global "__cl__22CBFunctor1wRet<PCc,Pc>CFPCc"
 "__cl__22CBFunctor1wRet<PCc,Pc>CFPCc":
 /* 8017BB6C 0017780C  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017BB70 00177810  7D 89 03 A6 */	mtctr r12
-/* 8017BB74 00177814  4E 80 04 20 */	bctr 
+/* 8017BB74 00177814  4E 80 04 20 */	bctr
 
 .global "__cl__19CBFunctor2<PCc,PCc>CFPCcPCc"
 "__cl__19CBFunctor2<PCc,PCc>CFPCcPCc":
 /* 8017BB78 00177818  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017BB7C 0017781C  7D 89 03 A6 */	mtctr r12
-/* 8017BB80 00177820  4E 80 04 20 */	bctr 
+/* 8017BB80 00177820  4E 80 04 20 */	bctr
 
 .global "__cl__23CBFunctor1wRet<PCc,PUs>CFPCc"
 "__cl__23CBFunctor1wRet<PCc,PUs>CFPCc":
 /* 8017BB84 00177824  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017BB88 00177828  7D 89 03 A6 */	mtctr r12
-/* 8017BB8C 0017782C  4E 80 04 20 */	bctr 
+/* 8017BB8C 0017782C  4E 80 04 20 */	bctr
 
 .global "makeFunctor<P3ERC,10UIDBTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R10UIDBTargetRCM12UIObjectBaseFPCvPvP3ERC_v_68CBMemberTranslator1<P3ERC,10UIDBTarget,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,10UIDBTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R10UIDBTargetRCM12UIObjectBaseFPCvPvP3ERC_v_68CBMemberTranslator1<P3ERC,10UIDBTarget,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -750,7 +750,7 @@ lbl_8017B88C:
 /* 8017BBD8 00177878  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BBDC 0017787C  7C 08 03 A6 */	mtlr r0
 /* 8017BBE0 00177880  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BBE4 00177884  4E 80 00 20 */	blr 
+/* 8017BBE4 00177884  4E 80 00 20 */	blr
 
 .global "__ct__17CBFunctor1<P3ERC>FPFRC13CBFunctorBaseP3ERC_vPCvPFv_vPCvUl"
 "__ct__17CBFunctor1<P3ERC>FPFRC13CBFunctorBaseP3ERC_vPCvPFv_vPCvUl":
@@ -773,7 +773,7 @@ lbl_8017B88C:
 /* 8017BC28 001778C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BC2C 001778CC  7C 08 03 A6 */	mtlr r0
 /* 8017BC30 001778D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BC34 001778D4  4E 80 00 20 */	blr 
+/* 8017BC34 001778D4  4E 80 00 20 */	blr
 
 .global "thunk__68CBMemberTranslator1<P3ERC,10UIDBTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__68CBMemberTranslator1<P3ERC,10UIDBTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -793,14 +793,14 @@ lbl_8017B88C:
 /* 8017BC6C 0017790C  7F E3 FB 78 */	mr r3, r31
 /* 8017BC70 00177910  7F C4 F3 78 */	mr r4, r30
 /* 8017BC74 00177914  48 29 35 B1 */	bl "__ptmf_scall"
-/* 8017BC78 00177918  60 00 00 00 */	nop 
+/* 8017BC78 00177918  60 00 00 00 */	nop
 /* 8017BC7C 0017791C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017BC80 00177920  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017BC84 00177924  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017BC88 00177928  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017BC8C 0017792C  7C 08 03 A6 */	mtlr r0
 /* 8017BC90 00177930  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017BC94 00177934  4E 80 00 20 */	blr 
+/* 8017BC94 00177934  4E 80 00 20 */	blr
 
 .global "makeFunctor<10UIDBTarget,v,12UIObjectBase>__FP10CBFunctor0R10UIDBTargetRCM12UIObjectBaseFPCvPv_v_57CBMemberTranslator0<10UIDBTarget,M12UIObjectBaseFPCvPv_v>"
 "makeFunctor<10UIDBTarget,v,12UIObjectBase>__FP10CBFunctor0R10UIDBTargetRCM12UIObjectBaseFPCvPv_v_57CBMemberTranslator0<10UIDBTarget,M12UIObjectBaseFPCvPv_v>":
@@ -828,7 +828,7 @@ lbl_8017B88C:
 /* 8017BCE0 00177980  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BCE4 00177984  7C 08 03 A6 */	mtlr r0
 /* 8017BCE8 00177988  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BCEC 0017798C  4E 80 00 20 */	blr 
+/* 8017BCEC 0017798C  4E 80 00 20 */	blr
 
 .global "thunk__57CBMemberTranslator0<10UIDBTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase"
 "thunk__57CBMemberTranslator0<10UIDBTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase":
@@ -845,13 +845,13 @@ lbl_8017B88C:
 /* 8017BD18 001779B8  7C 6C 1B 78 */	mr r12, r3
 /* 8017BD1C 001779BC  7F E3 FB 78 */	mr r3, r31
 /* 8017BD20 001779C0  48 29 35 05 */	bl "__ptmf_scall"
-/* 8017BD24 001779C4  60 00 00 00 */	nop 
+/* 8017BD24 001779C4  60 00 00 00 */	nop
 /* 8017BD28 001779C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BD2C 001779CC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017BD30 001779D0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017BD34 001779D4  7C 08 03 A6 */	mtlr r0
 /* 8017BD38 001779D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BD3C 001779DC  4E 80 00 20 */	blr 
+/* 8017BD3C 001779DC  4E 80 00 20 */	blr
 
 .global "__as__23CBFunctor1wRet<PCc,PUs>FRC23CBFunctor1wRet<PCc,PUs>"
 "__as__23CBFunctor1wRet<PCc,PUs>FRC23CBFunctor1wRet<PCc,PUs>":
@@ -871,7 +871,7 @@ lbl_8017B88C:
 /* 8017BD74 00177A14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BD78 00177A18  7C 08 03 A6 */	mtlr r0
 /* 8017BD7C 00177A1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BD80 00177A20  4E 80 00 20 */	blr 
+/* 8017BD80 00177A20  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,10UIDBTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R10UIDBTargetRCM12UIObjectBaseFPCvPvPCc_PUs_74CBMemberTranslator1wRet<PCc,PUs,10UIDBTarget,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,10UIDBTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R10UIDBTargetRCM12UIObjectBaseFPCvPvPCc_PUs_74CBMemberTranslator1wRet<PCc,PUs,10UIDBTarget,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -899,7 +899,7 @@ lbl_8017B88C:
 /* 8017BDCC 00177A6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BDD0 00177A70  7C 08 03 A6 */	mtlr r0
 /* 8017BDD4 00177A74  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BDD8 00177A78  4E 80 00 20 */	blr 
+/* 8017BDD8 00177A78  4E 80 00 20 */	blr
 
 .global "__ct__23CBFunctor1wRet<PCc,PUs>FPFRC13CBFunctorBasePCc_PUsPCvPFv_vPCvUl"
 "__ct__23CBFunctor1wRet<PCc,PUs>FPFRC13CBFunctorBasePCc_PUsPCvPFv_vPCvUl":
@@ -922,7 +922,7 @@ lbl_8017B88C:
 /* 8017BE1C 00177ABC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BE20 00177AC0  7C 08 03 A6 */	mtlr r0
 /* 8017BE24 00177AC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BE28 00177AC8  4E 80 00 20 */	blr 
+/* 8017BE28 00177AC8  4E 80 00 20 */	blr
 
 .global "thunk__74CBMemberTranslator1wRet<PCc,PUs,10UIDBTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__74CBMemberTranslator1wRet<PCc,PUs,10UIDBTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -942,14 +942,14 @@ lbl_8017B88C:
 /* 8017BE60 00177B00  7F E3 FB 78 */	mr r3, r31
 /* 8017BE64 00177B04  7F C4 F3 78 */	mr r4, r30
 /* 8017BE68 00177B08  48 29 33 BD */	bl "__ptmf_scall"
-/* 8017BE6C 00177B0C  60 00 00 00 */	nop 
+/* 8017BE6C 00177B0C  60 00 00 00 */	nop
 /* 8017BE70 00177B10  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017BE74 00177B14  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017BE78 00177B18  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017BE7C 00177B1C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017BE80 00177B20  7C 08 03 A6 */	mtlr r0
 /* 8017BE84 00177B24  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017BE88 00177B28  4E 80 00 20 */	blr 
+/* 8017BE88 00177B28  4E 80 00 20 */	blr
 
 .global "__as__19CBFunctor2<PCc,PCc>FRC19CBFunctor2<PCc,PCc>"
 "__as__19CBFunctor2<PCc,PCc>FRC19CBFunctor2<PCc,PCc>":
@@ -969,7 +969,7 @@ lbl_8017B88C:
 /* 8017BEC0 00177B60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BEC4 00177B64  7C 08 03 A6 */	mtlr r0
 /* 8017BEC8 00177B68  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BECC 00177B6C  4E 80 00 20 */	blr 
+/* 8017BECC 00177B6C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,10UIDBTarget,v,10UIDBTarget,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R10UIDBTargetRCM10UIDBTargetFPCvPvPCcPCc_v_69CBMemberTranslator2<PCc,PCc,10UIDBTarget,M10UIDBTargetFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,10UIDBTarget,v,10UIDBTarget,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R10UIDBTargetRCM10UIDBTargetFPCvPvPCcPCc_v_69CBMemberTranslator2<PCc,PCc,10UIDBTarget,M10UIDBTargetFPCvPvPCcPCc_v>":
@@ -997,7 +997,7 @@ lbl_8017B88C:
 /* 8017BF18 00177BB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BF1C 00177BBC  7C 08 03 A6 */	mtlr r0
 /* 8017BF20 00177BC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BF24 00177BC4  4E 80 00 20 */	blr 
+/* 8017BF24 00177BC4  4E 80 00 20 */	blr
 
 .global "__ct__19CBFunctor2<PCc,PCc>FPFRC13CBFunctorBasePCcPCc_vPCvPFv_vPCvUl"
 "__ct__19CBFunctor2<PCc,PCc>FPFRC13CBFunctorBasePCcPCc_vPCvPFv_vPCvUl":
@@ -1020,7 +1020,7 @@ lbl_8017B88C:
 /* 8017BF68 00177C08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017BF6C 00177C0C  7C 08 03 A6 */	mtlr r0
 /* 8017BF70 00177C10  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017BF74 00177C14  4E 80 00 20 */	blr 
+/* 8017BF74 00177C14  4E 80 00 20 */	blr
 
 .global "thunk__69CBMemberTranslator2<PCc,PCc,10UIDBTarget,M10UIDBTargetFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__69CBMemberTranslator2<PCc,PCc,10UIDBTarget,M10UIDBTargetFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -1043,7 +1043,7 @@ lbl_8017B88C:
 /* 8017BFB8 00177C58  7F A4 EB 78 */	mr r4, r29
 /* 8017BFBC 00177C5C  7F C5 F3 78 */	mr r5, r30
 /* 8017BFC0 00177C60  48 29 32 65 */	bl "__ptmf_scall"
-/* 8017BFC4 00177C64  60 00 00 00 */	nop 
+/* 8017BFC4 00177C64  60 00 00 00 */	nop
 /* 8017BFC8 00177C68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017BFCC 00177C6C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017BFD0 00177C70  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1051,7 +1051,7 @@ lbl_8017B88C:
 /* 8017BFD8 00177C78  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017BFDC 00177C7C  7C 08 03 A6 */	mtlr r0
 /* 8017BFE0 00177C80  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017BFE4 00177C84  4E 80 00 20 */	blr 
+/* 8017BFE4 00177C84  4E 80 00 20 */	blr
 
 .global "__as__22CBFunctor1wRet<PCc,Pc>FRC22CBFunctor1wRet<PCc,Pc>"
 "__as__22CBFunctor1wRet<PCc,Pc>FRC22CBFunctor1wRet<PCc,Pc>":
@@ -1071,7 +1071,7 @@ lbl_8017B88C:
 /* 8017C01C 00177CBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C020 00177CC0  7C 08 03 A6 */	mtlr r0
 /* 8017C024 00177CC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C028 00177CC8  4E 80 00 20 */	blr 
+/* 8017C028 00177CC8  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,10UIDBTarget,Pc,10UIDBTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R10UIDBTargetRCM10UIDBTargetFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,10UIDBTarget,M10UIDBTargetFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,10UIDBTarget,Pc,10UIDBTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R10UIDBTargetRCM10UIDBTargetFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,10UIDBTarget,M10UIDBTargetFPCvPvPCc_Pc>":
@@ -1099,7 +1099,7 @@ lbl_8017B88C:
 /* 8017C074 00177D14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C078 00177D18  7C 08 03 A6 */	mtlr r0
 /* 8017C07C 00177D1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C080 00177D20  4E 80 00 20 */	blr 
+/* 8017C080 00177D20  4E 80 00 20 */	blr
 
 .global "__ct__22CBFunctor1wRet<PCc,Pc>FPFRC13CBFunctorBasePCc_PcPCvPFv_vPCvUl"
 "__ct__22CBFunctor1wRet<PCc,Pc>FPFRC13CBFunctorBasePCc_PcPCvPFv_vPCvUl":
@@ -1122,7 +1122,7 @@ lbl_8017B88C:
 /* 8017C0C4 00177D64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C0C8 00177D68  7C 08 03 A6 */	mtlr r0
 /* 8017C0CC 00177D6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C0D0 00177D70  4E 80 00 20 */	blr 
+/* 8017C0D0 00177D70  4E 80 00 20 */	blr
 
 .global "thunk__70CBMemberTranslator1wRet<PCc,Pc,10UIDBTarget,M10UIDBTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__70CBMemberTranslator1wRet<PCc,Pc,10UIDBTarget,M10UIDBTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -1142,14 +1142,14 @@ lbl_8017B88C:
 /* 8017C108 00177DA8  7F E3 FB 78 */	mr r3, r31
 /* 8017C10C 00177DAC  7F C4 F3 78 */	mr r4, r30
 /* 8017C110 00177DB0  48 29 31 15 */	bl "__ptmf_scall"
-/* 8017C114 00177DB4  60 00 00 00 */	nop 
+/* 8017C114 00177DB4  60 00 00 00 */	nop
 /* 8017C118 00177DB8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C11C 00177DBC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C120 00177DC0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C124 00177DC4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C128 00177DC8  7C 08 03 A6 */	mtlr r0
 /* 8017C12C 00177DCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C130 00177DD0  4E 80 00 20 */	blr 
+/* 8017C130 00177DD0  4E 80 00 20 */	blr
 
 .global "__opi__13CBFunctorBaseCFv"
 "__opi__13CBFunctorBaseCFv":
@@ -1164,13 +1164,13 @@ lbl_8017C150:
 /* 8017C150 00177DF0  38 80 00 01 */	li r4, 1
 lbl_8017C154:
 /* 8017C154 00177DF4  7C 83 23 78 */	mr r3, r4
-/* 8017C158 00177DF8  4E 80 00 20 */	blr 
+/* 8017C158 00177DF8  4E 80 00 20 */	blr
 
 .global "__cl__17CBFunctor1<P3ERC>CFP3ERC"
 "__cl__17CBFunctor1<P3ERC>CFP3ERC":
 /* 8017C15C 00177DFC  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017C160 00177E00  7D 89 03 A6 */	mtctr r12
-/* 8017C164 00177E04  4E 80 04 20 */	bctr 
+/* 8017C164 00177E04  4E 80 04 20 */	bctr
 
 .global "makeFunctor<P3ERC,10UIQDTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R10UIQDTargetRCM12UIObjectBaseFPCvPvP3ERC_v_68CBMemberTranslator1<P3ERC,10UIQDTarget,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,10UIQDTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R10UIQDTargetRCM12UIObjectBaseFPCvPvP3ERC_v_68CBMemberTranslator1<P3ERC,10UIQDTarget,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -1198,7 +1198,7 @@ lbl_8017C154:
 /* 8017C1B0 00177E50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C1B4 00177E54  7C 08 03 A6 */	mtlr r0
 /* 8017C1B8 00177E58  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C1BC 00177E5C  4E 80 00 20 */	blr 
+/* 8017C1BC 00177E5C  4E 80 00 20 */	blr
 
 .global "thunk__68CBMemberTranslator1<P3ERC,10UIQDTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__68CBMemberTranslator1<P3ERC,10UIQDTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -1218,14 +1218,14 @@ lbl_8017C154:
 /* 8017C1F4 00177E94  7F E3 FB 78 */	mr r3, r31
 /* 8017C1F8 00177E98  7F C4 F3 78 */	mr r4, r30
 /* 8017C1FC 00177E9C  48 29 30 29 */	bl "__ptmf_scall"
-/* 8017C200 00177EA0  60 00 00 00 */	nop 
+/* 8017C200 00177EA0  60 00 00 00 */	nop
 /* 8017C204 00177EA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C208 00177EA8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C20C 00177EAC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C210 00177EB0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C214 00177EB4  7C 08 03 A6 */	mtlr r0
 /* 8017C218 00177EB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C21C 00177EBC  4E 80 00 20 */	blr 
+/* 8017C21C 00177EBC  4E 80 00 20 */	blr
 
 .global "makeFunctor<10UIQDTarget,v,12UIObjectBase>__FP10CBFunctor0R10UIQDTargetRCM12UIObjectBaseFPCvPv_v_57CBMemberTranslator0<10UIQDTarget,M12UIObjectBaseFPCvPv_v>"
 "makeFunctor<10UIQDTarget,v,12UIObjectBase>__FP10CBFunctor0R10UIQDTargetRCM12UIObjectBaseFPCvPv_v_57CBMemberTranslator0<10UIQDTarget,M12UIObjectBaseFPCvPv_v>":
@@ -1253,7 +1253,7 @@ lbl_8017C154:
 /* 8017C268 00177F08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C26C 00177F0C  7C 08 03 A6 */	mtlr r0
 /* 8017C270 00177F10  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C274 00177F14  4E 80 00 20 */	blr 
+/* 8017C274 00177F14  4E 80 00 20 */	blr
 
 .global "thunk__57CBMemberTranslator0<10UIQDTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase"
 "thunk__57CBMemberTranslator0<10UIQDTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase":
@@ -1270,13 +1270,13 @@ lbl_8017C154:
 /* 8017C2A0 00177F40  7C 6C 1B 78 */	mr r12, r3
 /* 8017C2A4 00177F44  7F E3 FB 78 */	mr r3, r31
 /* 8017C2A8 00177F48  48 29 2F 7D */	bl "__ptmf_scall"
-/* 8017C2AC 00177F4C  60 00 00 00 */	nop 
+/* 8017C2AC 00177F4C  60 00 00 00 */	nop
 /* 8017C2B0 00177F50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C2B4 00177F54  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017C2B8 00177F58  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017C2BC 00177F5C  7C 08 03 A6 */	mtlr r0
 /* 8017C2C0 00177F60  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C2C4 00177F64  4E 80 00 20 */	blr 
+/* 8017C2C4 00177F64  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,10UIQDTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R10UIQDTargetRCM12UIObjectBaseFPCvPvPCc_PUs_74CBMemberTranslator1wRet<PCc,PUs,10UIQDTarget,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,10UIQDTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R10UIQDTargetRCM12UIObjectBaseFPCvPvPCc_PUs_74CBMemberTranslator1wRet<PCc,PUs,10UIQDTarget,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -1304,7 +1304,7 @@ lbl_8017C154:
 /* 8017C310 00177FB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C314 00177FB4  7C 08 03 A6 */	mtlr r0
 /* 8017C318 00177FB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C31C 00177FBC  4E 80 00 20 */	blr 
+/* 8017C31C 00177FBC  4E 80 00 20 */	blr
 
 .global "thunk__74CBMemberTranslator1wRet<PCc,PUs,10UIQDTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__74CBMemberTranslator1wRet<PCc,PUs,10UIQDTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -1324,14 +1324,14 @@ lbl_8017C154:
 /* 8017C354 00177FF4  7F E3 FB 78 */	mr r3, r31
 /* 8017C358 00177FF8  7F C4 F3 78 */	mr r4, r30
 /* 8017C35C 00177FFC  48 29 2E C9 */	bl "__ptmf_scall"
-/* 8017C360 00178000  60 00 00 00 */	nop 
+/* 8017C360 00178000  60 00 00 00 */	nop
 /* 8017C364 00178004  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C368 00178008  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C36C 0017800C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C370 00178010  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C374 00178014  7C 08 03 A6 */	mtlr r0
 /* 8017C378 00178018  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C37C 0017801C  4E 80 00 20 */	blr 
+/* 8017C37C 0017801C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,10UIQDTarget,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R10UIQDTargetRCM12UIObjectBaseFPCvPvPCcPCc_v_71CBMemberTranslator2<PCc,PCc,10UIQDTarget,M12UIObjectBaseFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,10UIQDTarget,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R10UIQDTargetRCM12UIObjectBaseFPCvPvPCcPCc_v_71CBMemberTranslator2<PCc,PCc,10UIQDTarget,M12UIObjectBaseFPCvPvPCcPCc_v>":
@@ -1359,7 +1359,7 @@ lbl_8017C154:
 /* 8017C3C8 00178068  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C3CC 0017806C  7C 08 03 A6 */	mtlr r0
 /* 8017C3D0 00178070  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C3D4 00178074  4E 80 00 20 */	blr 
+/* 8017C3D4 00178074  4E 80 00 20 */	blr
 
 .global "thunk__71CBMemberTranslator2<PCc,PCc,10UIQDTarget,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__71CBMemberTranslator2<PCc,PCc,10UIQDTarget,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -1382,7 +1382,7 @@ lbl_8017C154:
 /* 8017C418 001780B8  7F A4 EB 78 */	mr r4, r29
 /* 8017C41C 001780BC  7F C5 F3 78 */	mr r5, r30
 /* 8017C420 001780C0  48 29 2E 05 */	bl "__ptmf_scall"
-/* 8017C424 001780C4  60 00 00 00 */	nop 
+/* 8017C424 001780C4  60 00 00 00 */	nop
 /* 8017C428 001780C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C42C 001780CC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C430 001780D0  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1390,7 +1390,7 @@ lbl_8017C154:
 /* 8017C438 001780D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017C43C 001780DC  7C 08 03 A6 */	mtlr r0
 /* 8017C440 001780E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C444 001780E4  4E 80 00 20 */	blr 
+/* 8017C444 001780E4  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,10UIQDTarget,Pc,10UIQDTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R10UIQDTargetRCM10UIQDTargetFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,10UIQDTarget,M10UIQDTargetFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,10UIQDTarget,Pc,10UIQDTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R10UIQDTargetRCM10UIQDTargetFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,10UIQDTarget,M10UIQDTargetFPCvPvPCc_Pc>":
@@ -1418,7 +1418,7 @@ lbl_8017C154:
 /* 8017C490 00178130  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C494 00178134  7C 08 03 A6 */	mtlr r0
 /* 8017C498 00178138  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C49C 0017813C  4E 80 00 20 */	blr 
+/* 8017C49C 0017813C  4E 80 00 20 */	blr
 
 .global "thunk__70CBMemberTranslator1wRet<PCc,Pc,10UIQDTarget,M10UIQDTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__70CBMemberTranslator1wRet<PCc,Pc,10UIQDTarget,M10UIQDTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -1438,14 +1438,14 @@ lbl_8017C154:
 /* 8017C4D4 00178174  7F E3 FB 78 */	mr r3, r31
 /* 8017C4D8 00178178  7F C4 F3 78 */	mr r4, r30
 /* 8017C4DC 0017817C  48 29 2D 49 */	bl "__ptmf_scall"
-/* 8017C4E0 00178180  60 00 00 00 */	nop 
+/* 8017C4E0 00178180  60 00 00 00 */	nop
 /* 8017C4E4 00178184  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C4E8 00178188  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C4EC 0017818C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C4F0 00178190  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C4F4 00178194  7C 08 03 A6 */	mtlr r0
 /* 8017C4F8 00178198  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C4FC 0017819C  4E 80 00 20 */	blr 
+/* 8017C4FC 0017819C  4E 80 00 20 */	blr
 
 .global "makeFunctor<P3ERC,15UIScreenManager,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R15UIScreenManagerRCM12UIObjectBaseFPCvPvP3ERC_v_73CBMemberTranslator1<P3ERC,15UIScreenManager,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,15UIScreenManager,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R15UIScreenManagerRCM12UIObjectBaseFPCvPvP3ERC_v_73CBMemberTranslator1<P3ERC,15UIScreenManager,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -1473,7 +1473,7 @@ lbl_8017C154:
 /* 8017C548 001781E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C54C 001781EC  7C 08 03 A6 */	mtlr r0
 /* 8017C550 001781F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C554 001781F4  4E 80 00 20 */	blr 
+/* 8017C554 001781F4  4E 80 00 20 */	blr
 
 .global "thunk__73CBMemberTranslator1<P3ERC,15UIScreenManager,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__73CBMemberTranslator1<P3ERC,15UIScreenManager,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -1493,14 +1493,14 @@ lbl_8017C154:
 /* 8017C58C 0017822C  7F E3 FB 78 */	mr r3, r31
 /* 8017C590 00178230  7F C4 F3 78 */	mr r4, r30
 /* 8017C594 00178234  48 29 2C 91 */	bl "__ptmf_scall"
-/* 8017C598 00178238  60 00 00 00 */	nop 
+/* 8017C598 00178238  60 00 00 00 */	nop
 /* 8017C59C 0017823C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C5A0 00178240  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C5A4 00178244  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C5A8 00178248  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C5AC 0017824C  7C 08 03 A6 */	mtlr r0
 /* 8017C5B0 00178250  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C5B4 00178254  4E 80 00 20 */	blr 
+/* 8017C5B4 00178254  4E 80 00 20 */	blr
 
 .global "makeFunctor<15UIScreenManager,v,15UIScreenManager>__FP10CBFunctor0R15UIScreenManagerRCM15UIScreenManagerFPCvPv_v_65CBMemberTranslator0<15UIScreenManager,M15UIScreenManagerFPCvPv_v>"
 "makeFunctor<15UIScreenManager,v,15UIScreenManager>__FP10CBFunctor0R15UIScreenManagerRCM15UIScreenManagerFPCvPv_v_65CBMemberTranslator0<15UIScreenManager,M15UIScreenManagerFPCvPv_v>":
@@ -1528,7 +1528,7 @@ lbl_8017C154:
 /* 8017C600 001782A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C604 001782A4  7C 08 03 A6 */	mtlr r0
 /* 8017C608 001782A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C60C 001782AC  4E 80 00 20 */	blr 
+/* 8017C60C 001782AC  4E 80 00 20 */	blr
 
 .global "thunk__65CBMemberTranslator0<15UIScreenManager,M15UIScreenManagerFPCvPv_v>FRC13CBFunctorBase"
 "thunk__65CBMemberTranslator0<15UIScreenManager,M15UIScreenManagerFPCvPv_v>FRC13CBFunctorBase":
@@ -1545,13 +1545,13 @@ lbl_8017C154:
 /* 8017C638 001782D8  7C 6C 1B 78 */	mr r12, r3
 /* 8017C63C 001782DC  7F E3 FB 78 */	mr r3, r31
 /* 8017C640 001782E0  48 29 2B E5 */	bl "__ptmf_scall"
-/* 8017C644 001782E4  60 00 00 00 */	nop 
+/* 8017C644 001782E4  60 00 00 00 */	nop
 /* 8017C648 001782E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C64C 001782EC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017C650 001782F0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017C654 001782F4  7C 08 03 A6 */	mtlr r0
 /* 8017C658 001782F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C65C 001782FC  4E 80 00 20 */	blr 
+/* 8017C65C 001782FC  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,15UIScreenManager,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R15UIScreenManagerRCM12UIObjectBaseFPCvPvPCc_PUs_79CBMemberTranslator1wRet<PCc,PUs,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,15UIScreenManager,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R15UIScreenManagerRCM12UIObjectBaseFPCvPvPCc_PUs_79CBMemberTranslator1wRet<PCc,PUs,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -1579,7 +1579,7 @@ lbl_8017C154:
 /* 8017C6A8 00178348  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C6AC 0017834C  7C 08 03 A6 */	mtlr r0
 /* 8017C6B0 00178350  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C6B4 00178354  4E 80 00 20 */	blr 
+/* 8017C6B4 00178354  4E 80 00 20 */	blr
 
 .global "thunk__79CBMemberTranslator1wRet<PCc,PUs,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__79CBMemberTranslator1wRet<PCc,PUs,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -1599,14 +1599,14 @@ lbl_8017C154:
 /* 8017C6EC 0017838C  7F E3 FB 78 */	mr r3, r31
 /* 8017C6F0 00178390  7F C4 F3 78 */	mr r4, r30
 /* 8017C6F4 00178394  48 29 2B 31 */	bl "__ptmf_scall"
-/* 8017C6F8 00178398  60 00 00 00 */	nop 
+/* 8017C6F8 00178398  60 00 00 00 */	nop
 /* 8017C6FC 0017839C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C700 001783A0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C704 001783A4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C708 001783A8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C70C 001783AC  7C 08 03 A6 */	mtlr r0
 /* 8017C710 001783B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C714 001783B4  4E 80 00 20 */	blr 
+/* 8017C714 001783B4  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,15UIScreenManager,v,15UIScreenManager,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R15UIScreenManagerRCM15UIScreenManagerFPCvPvPCcPCc_v_79CBMemberTranslator2<PCc,PCc,15UIScreenManager,M15UIScreenManagerFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,15UIScreenManager,v,15UIScreenManager,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R15UIScreenManagerRCM15UIScreenManagerFPCvPvPCcPCc_v_79CBMemberTranslator2<PCc,PCc,15UIScreenManager,M15UIScreenManagerFPCvPvPCcPCc_v>":
@@ -1634,7 +1634,7 @@ lbl_8017C154:
 /* 8017C760 00178400  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C764 00178404  7C 08 03 A6 */	mtlr r0
 /* 8017C768 00178408  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C76C 0017840C  4E 80 00 20 */	blr 
+/* 8017C76C 0017840C  4E 80 00 20 */	blr
 
 .global "thunk__79CBMemberTranslator2<PCc,PCc,15UIScreenManager,M15UIScreenManagerFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__79CBMemberTranslator2<PCc,PCc,15UIScreenManager,M15UIScreenManagerFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -1657,7 +1657,7 @@ lbl_8017C154:
 /* 8017C7B0 00178450  7F A4 EB 78 */	mr r4, r29
 /* 8017C7B4 00178454  7F C5 F3 78 */	mr r5, r30
 /* 8017C7B8 00178458  48 29 2A 6D */	bl "__ptmf_scall"
-/* 8017C7BC 0017845C  60 00 00 00 */	nop 
+/* 8017C7BC 0017845C  60 00 00 00 */	nop
 /* 8017C7C0 00178460  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C7C4 00178464  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C7C8 00178468  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1665,7 +1665,7 @@ lbl_8017C154:
 /* 8017C7D0 00178470  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017C7D4 00178474  7C 08 03 A6 */	mtlr r0
 /* 8017C7D8 00178478  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C7DC 0017847C  4E 80 00 20 */	blr 
+/* 8017C7DC 0017847C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,15UIScreenManager,Pc,12UIObjectBase,PCc>__FP22CBFunctor1wRet<PCc,Pc>R15UIScreenManagerRCM12UIObjectBaseFPCvPvPCc_Pc_77CBMemberTranslator1wRet<PCc,Pc,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,15UIScreenManager,Pc,12UIObjectBase,PCc>__FP22CBFunctor1wRet<PCc,Pc>R15UIScreenManagerRCM12UIObjectBaseFPCvPvPCc_Pc_77CBMemberTranslator1wRet<PCc,Pc,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_Pc>":
@@ -1693,7 +1693,7 @@ lbl_8017C154:
 /* 8017C828 001784C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C82C 001784CC  7C 08 03 A6 */	mtlr r0
 /* 8017C830 001784D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C834 001784D4  4E 80 00 20 */	blr 
+/* 8017C834 001784D4  4E 80 00 20 */	blr
 
 .global "thunk__77CBMemberTranslator1wRet<PCc,Pc,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__77CBMemberTranslator1wRet<PCc,Pc,15UIScreenManager,M12UIObjectBaseFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -1713,14 +1713,14 @@ lbl_8017C154:
 /* 8017C86C 0017850C  7F E3 FB 78 */	mr r3, r31
 /* 8017C870 00178510  7F C4 F3 78 */	mr r4, r30
 /* 8017C874 00178514  48 29 29 B1 */	bl "__ptmf_scall"
-/* 8017C878 00178518  60 00 00 00 */	nop 
+/* 8017C878 00178518  60 00 00 00 */	nop
 /* 8017C87C 0017851C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C880 00178520  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C884 00178524  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C888 00178528  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C88C 0017852C  7C 08 03 A6 */	mtlr r0
 /* 8017C890 00178530  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C894 00178534  4E 80 00 20 */	blr 
+/* 8017C894 00178534  4E 80 00 20 */	blr
 
 .global "makeFunctor<P3ERC,13UIAUDIOTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R13UIAUDIOTargetRCM12UIObjectBaseFPCvPvP3ERC_v_71CBMemberTranslator1<P3ERC,13UIAUDIOTarget,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,13UIAUDIOTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R13UIAUDIOTargetRCM12UIObjectBaseFPCvPvP3ERC_v_71CBMemberTranslator1<P3ERC,13UIAUDIOTarget,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -1748,7 +1748,7 @@ lbl_8017C154:
 /* 8017C8E0 00178580  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C8E4 00178584  7C 08 03 A6 */	mtlr r0
 /* 8017C8E8 00178588  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C8EC 0017858C  4E 80 00 20 */	blr 
+/* 8017C8EC 0017858C  4E 80 00 20 */	blr
 
 .global "thunk__71CBMemberTranslator1<P3ERC,13UIAUDIOTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__71CBMemberTranslator1<P3ERC,13UIAUDIOTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -1768,14 +1768,14 @@ lbl_8017C154:
 /* 8017C924 001785C4  7F E3 FB 78 */	mr r3, r31
 /* 8017C928 001785C8  7F C4 F3 78 */	mr r4, r30
 /* 8017C92C 001785CC  48 29 28 F9 */	bl "__ptmf_scall"
-/* 8017C930 001785D0  60 00 00 00 */	nop 
+/* 8017C930 001785D0  60 00 00 00 */	nop
 /* 8017C934 001785D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017C938 001785D8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017C93C 001785DC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017C940 001785E0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017C944 001785E4  7C 08 03 A6 */	mtlr r0
 /* 8017C948 001785E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017C94C 001785EC  4E 80 00 20 */	blr 
+/* 8017C94C 001785EC  4E 80 00 20 */	blr
 
 .global "makeFunctor<13UIAUDIOTarget,v,12UIObjectBase>__FP10CBFunctor0R13UIAUDIOTargetRCM12UIObjectBaseFPCvPv_v_60CBMemberTranslator0<13UIAUDIOTarget,M12UIObjectBaseFPCvPv_v>"
 "makeFunctor<13UIAUDIOTarget,v,12UIObjectBase>__FP10CBFunctor0R13UIAUDIOTargetRCM12UIObjectBaseFPCvPv_v_60CBMemberTranslator0<13UIAUDIOTarget,M12UIObjectBaseFPCvPv_v>":
@@ -1803,7 +1803,7 @@ lbl_8017C154:
 /* 8017C998 00178638  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C99C 0017863C  7C 08 03 A6 */	mtlr r0
 /* 8017C9A0 00178640  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C9A4 00178644  4E 80 00 20 */	blr 
+/* 8017C9A4 00178644  4E 80 00 20 */	blr
 
 .global "thunk__60CBMemberTranslator0<13UIAUDIOTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase"
 "thunk__60CBMemberTranslator0<13UIAUDIOTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase":
@@ -1820,13 +1820,13 @@ lbl_8017C154:
 /* 8017C9D0 00178670  7C 6C 1B 78 */	mr r12, r3
 /* 8017C9D4 00178674  7F E3 FB 78 */	mr r3, r31
 /* 8017C9D8 00178678  48 29 28 4D */	bl "__ptmf_scall"
-/* 8017C9DC 0017867C  60 00 00 00 */	nop 
+/* 8017C9DC 0017867C  60 00 00 00 */	nop
 /* 8017C9E0 00178680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017C9E4 00178684  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017C9E8 00178688  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017C9EC 0017868C  7C 08 03 A6 */	mtlr r0
 /* 8017C9F0 00178690  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017C9F4 00178694  4E 80 00 20 */	blr 
+/* 8017C9F4 00178694  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,13UIAUDIOTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R13UIAUDIOTargetRCM12UIObjectBaseFPCvPvPCc_PUs_77CBMemberTranslator1wRet<PCc,PUs,13UIAUDIOTarget,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,13UIAUDIOTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R13UIAUDIOTargetRCM12UIObjectBaseFPCvPvPCc_PUs_77CBMemberTranslator1wRet<PCc,PUs,13UIAUDIOTarget,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -1854,7 +1854,7 @@ lbl_8017C154:
 /* 8017CA40 001786E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CA44 001786E4  7C 08 03 A6 */	mtlr r0
 /* 8017CA48 001786E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CA4C 001786EC  4E 80 00 20 */	blr 
+/* 8017CA4C 001786EC  4E 80 00 20 */	blr
 
 .global "thunk__77CBMemberTranslator1wRet<PCc,PUs,13UIAUDIOTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__77CBMemberTranslator1wRet<PCc,PUs,13UIAUDIOTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -1874,14 +1874,14 @@ lbl_8017C154:
 /* 8017CA84 00178724  7F E3 FB 78 */	mr r3, r31
 /* 8017CA88 00178728  7F C4 F3 78 */	mr r4, r30
 /* 8017CA8C 0017872C  48 29 27 99 */	bl "__ptmf_scall"
-/* 8017CA90 00178730  60 00 00 00 */	nop 
+/* 8017CA90 00178730  60 00 00 00 */	nop
 /* 8017CA94 00178734  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CA98 00178738  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CA9C 0017873C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017CAA0 00178740  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017CAA4 00178744  7C 08 03 A6 */	mtlr r0
 /* 8017CAA8 00178748  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CAAC 0017874C  4E 80 00 20 */	blr 
+/* 8017CAAC 0017874C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,13UIAUDIOTarget,v,13UIAUDIOTarget,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R13UIAUDIOTargetRCM13UIAUDIOTargetFPCvPvPCcPCc_v_75CBMemberTranslator2<PCc,PCc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,13UIAUDIOTarget,v,13UIAUDIOTarget,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R13UIAUDIOTargetRCM13UIAUDIOTargetFPCvPvPCcPCc_v_75CBMemberTranslator2<PCc,PCc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCcPCc_v>":
@@ -1909,7 +1909,7 @@ lbl_8017C154:
 /* 8017CAF8 00178798  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CAFC 0017879C  7C 08 03 A6 */	mtlr r0
 /* 8017CB00 001787A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CB04 001787A4  4E 80 00 20 */	blr 
+/* 8017CB04 001787A4  4E 80 00 20 */	blr
 
 .global "thunk__75CBMemberTranslator2<PCc,PCc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__75CBMemberTranslator2<PCc,PCc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -1932,7 +1932,7 @@ lbl_8017C154:
 /* 8017CB48 001787E8  7F A4 EB 78 */	mr r4, r29
 /* 8017CB4C 001787EC  7F C5 F3 78 */	mr r5, r30
 /* 8017CB50 001787F0  48 29 26 D5 */	bl "__ptmf_scall"
-/* 8017CB54 001787F4  60 00 00 00 */	nop 
+/* 8017CB54 001787F4  60 00 00 00 */	nop
 /* 8017CB58 001787F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CB5C 001787FC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CB60 00178800  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -1940,7 +1940,7 @@ lbl_8017C154:
 /* 8017CB68 00178808  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017CB6C 0017880C  7C 08 03 A6 */	mtlr r0
 /* 8017CB70 00178810  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CB74 00178814  4E 80 00 20 */	blr 
+/* 8017CB74 00178814  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,13UIAUDIOTarget,Pc,13UIAUDIOTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R13UIAUDIOTargetRCM13UIAUDIOTargetFPCvPvPCc_Pc_76CBMemberTranslator1wRet<PCc,Pc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,13UIAUDIOTarget,Pc,13UIAUDIOTarget,PCc>__FP22CBFunctor1wRet<PCc,Pc>R13UIAUDIOTargetRCM13UIAUDIOTargetFPCvPvPCc_Pc_76CBMemberTranslator1wRet<PCc,Pc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCc_Pc>":
@@ -1968,7 +1968,7 @@ lbl_8017C154:
 /* 8017CBC0 00178860  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CBC4 00178864  7C 08 03 A6 */	mtlr r0
 /* 8017CBC8 00178868  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CBCC 0017886C  4E 80 00 20 */	blr 
+/* 8017CBCC 0017886C  4E 80 00 20 */	blr
 
 .global "thunk__76CBMemberTranslator1wRet<PCc,Pc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__76CBMemberTranslator1wRet<PCc,Pc,13UIAUDIOTarget,M13UIAUDIOTargetFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -1988,14 +1988,14 @@ lbl_8017C154:
 /* 8017CC04 001788A4  7F E3 FB 78 */	mr r3, r31
 /* 8017CC08 001788A8  7F C4 F3 78 */	mr r4, r30
 /* 8017CC0C 001788AC  48 29 26 19 */	bl "__ptmf_scall"
-/* 8017CC10 001788B0  60 00 00 00 */	nop 
+/* 8017CC10 001788B0  60 00 00 00 */	nop
 /* 8017CC14 001788B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CC18 001788B8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CC1C 001788BC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017CC20 001788C0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017CC24 001788C4  7C 08 03 A6 */	mtlr r0
 /* 8017CC28 001788C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CC2C 001788CC  4E 80 00 20 */	blr 
+/* 8017CC2C 001788CC  4E 80 00 20 */	blr
 
 .global "makeFunctor<P3ERC,8UIAnalog,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R8UIAnalogRCM12UIObjectBaseFPCvPvP3ERC_v_65CBMemberTranslator1<P3ERC,8UIAnalog,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,8UIAnalog,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R8UIAnalogRCM12UIObjectBaseFPCvPvP3ERC_v_65CBMemberTranslator1<P3ERC,8UIAnalog,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -2023,7 +2023,7 @@ lbl_8017C154:
 /* 8017CC78 00178918  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CC7C 0017891C  7C 08 03 A6 */	mtlr r0
 /* 8017CC80 00178920  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CC84 00178924  4E 80 00 20 */	blr 
+/* 8017CC84 00178924  4E 80 00 20 */	blr
 
 .global "thunk__65CBMemberTranslator1<P3ERC,8UIAnalog,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__65CBMemberTranslator1<P3ERC,8UIAnalog,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -2043,14 +2043,14 @@ lbl_8017C154:
 /* 8017CCBC 0017895C  7F E3 FB 78 */	mr r3, r31
 /* 8017CCC0 00178960  7F C4 F3 78 */	mr r4, r30
 /* 8017CCC4 00178964  48 29 25 61 */	bl "__ptmf_scall"
-/* 8017CCC8 00178968  60 00 00 00 */	nop 
+/* 8017CCC8 00178968  60 00 00 00 */	nop
 /* 8017CCCC 0017896C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CCD0 00178970  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CCD4 00178974  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017CCD8 00178978  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017CCDC 0017897C  7C 08 03 A6 */	mtlr r0
 /* 8017CCE0 00178980  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CCE4 00178984  4E 80 00 20 */	blr 
+/* 8017CCE4 00178984  4E 80 00 20 */	blr
 
 .global "makeFunctor<8UIAnalog,v,12UIObjectBase>__FP10CBFunctor0R8UIAnalogRCM12UIObjectBaseFPCvPv_v_54CBMemberTranslator0<8UIAnalog,M12UIObjectBaseFPCvPv_v>"
 "makeFunctor<8UIAnalog,v,12UIObjectBase>__FP10CBFunctor0R8UIAnalogRCM12UIObjectBaseFPCvPv_v_54CBMemberTranslator0<8UIAnalog,M12UIObjectBaseFPCvPv_v>":
@@ -2078,7 +2078,7 @@ lbl_8017C154:
 /* 8017CD30 001789D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CD34 001789D4  7C 08 03 A6 */	mtlr r0
 /* 8017CD38 001789D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CD3C 001789DC  4E 80 00 20 */	blr 
+/* 8017CD3C 001789DC  4E 80 00 20 */	blr
 
 .global "thunk__54CBMemberTranslator0<8UIAnalog,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase"
 "thunk__54CBMemberTranslator0<8UIAnalog,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase":
@@ -2095,13 +2095,13 @@ lbl_8017C154:
 /* 8017CD68 00178A08  7C 6C 1B 78 */	mr r12, r3
 /* 8017CD6C 00178A0C  7F E3 FB 78 */	mr r3, r31
 /* 8017CD70 00178A10  48 29 24 B5 */	bl "__ptmf_scall"
-/* 8017CD74 00178A14  60 00 00 00 */	nop 
+/* 8017CD74 00178A14  60 00 00 00 */	nop
 /* 8017CD78 00178A18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CD7C 00178A1C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017CD80 00178A20  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017CD84 00178A24  7C 08 03 A6 */	mtlr r0
 /* 8017CD88 00178A28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CD8C 00178A2C  4E 80 00 20 */	blr 
+/* 8017CD8C 00178A2C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,8UIAnalog,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R8UIAnalogRCM12UIObjectBaseFPCvPvPCc_PUs_71CBMemberTranslator1wRet<PCc,PUs,8UIAnalog,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,8UIAnalog,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R8UIAnalogRCM12UIObjectBaseFPCvPvPCc_PUs_71CBMemberTranslator1wRet<PCc,PUs,8UIAnalog,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -2129,7 +2129,7 @@ lbl_8017C154:
 /* 8017CDD8 00178A78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CDDC 00178A7C  7C 08 03 A6 */	mtlr r0
 /* 8017CDE0 00178A80  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CDE4 00178A84  4E 80 00 20 */	blr 
+/* 8017CDE4 00178A84  4E 80 00 20 */	blr
 
 .global "thunk__71CBMemberTranslator1wRet<PCc,PUs,8UIAnalog,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__71CBMemberTranslator1wRet<PCc,PUs,8UIAnalog,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -2149,14 +2149,14 @@ lbl_8017C154:
 /* 8017CE1C 00178ABC  7F E3 FB 78 */	mr r3, r31
 /* 8017CE20 00178AC0  7F C4 F3 78 */	mr r4, r30
 /* 8017CE24 00178AC4  48 29 24 01 */	bl "__ptmf_scall"
-/* 8017CE28 00178AC8  60 00 00 00 */	nop 
+/* 8017CE28 00178AC8  60 00 00 00 */	nop
 /* 8017CE2C 00178ACC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CE30 00178AD0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CE34 00178AD4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017CE38 00178AD8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017CE3C 00178ADC  7C 08 03 A6 */	mtlr r0
 /* 8017CE40 00178AE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CE44 00178AE4  4E 80 00 20 */	blr 
+/* 8017CE44 00178AE4  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,8UIAnalog,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R8UIAnalogRCM12UIObjectBaseFPCvPvPCcPCc_v_68CBMemberTranslator2<PCc,PCc,8UIAnalog,M12UIObjectBaseFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,8UIAnalog,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R8UIAnalogRCM12UIObjectBaseFPCvPvPCcPCc_v_68CBMemberTranslator2<PCc,PCc,8UIAnalog,M12UIObjectBaseFPCvPvPCcPCc_v>":
@@ -2184,7 +2184,7 @@ lbl_8017C154:
 /* 8017CE90 00178B30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CE94 00178B34  7C 08 03 A6 */	mtlr r0
 /* 8017CE98 00178B38  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CE9C 00178B3C  4E 80 00 20 */	blr 
+/* 8017CE9C 00178B3C  4E 80 00 20 */	blr
 
 .global "thunk__68CBMemberTranslator2<PCc,PCc,8UIAnalog,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__68CBMemberTranslator2<PCc,PCc,8UIAnalog,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -2207,7 +2207,7 @@ lbl_8017C154:
 /* 8017CEE0 00178B80  7F A4 EB 78 */	mr r4, r29
 /* 8017CEE4 00178B84  7F C5 F3 78 */	mr r5, r30
 /* 8017CEE8 00178B88  48 29 23 3D */	bl "__ptmf_scall"
-/* 8017CEEC 00178B8C  60 00 00 00 */	nop 
+/* 8017CEEC 00178B8C  60 00 00 00 */	nop
 /* 8017CEF0 00178B90  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CEF4 00178B94  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CEF8 00178B98  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -2215,7 +2215,7 @@ lbl_8017C154:
 /* 8017CF00 00178BA0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017CF04 00178BA4  7C 08 03 A6 */	mtlr r0
 /* 8017CF08 00178BA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CF0C 00178BAC  4E 80 00 20 */	blr 
+/* 8017CF0C 00178BAC  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,8UIAnalog,Pc,8UIAnalog,PCc>__FP22CBFunctor1wRet<PCc,Pc>R8UIAnalogRCM8UIAnalogFPCvPvPCc_Pc_64CBMemberTranslator1wRet<PCc,Pc,8UIAnalog,M8UIAnalogFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,8UIAnalog,Pc,8UIAnalog,PCc>__FP22CBFunctor1wRet<PCc,Pc>R8UIAnalogRCM8UIAnalogFPCvPvPCc_Pc_64CBMemberTranslator1wRet<PCc,Pc,8UIAnalog,M8UIAnalogFPCvPvPCc_Pc>":
@@ -2243,7 +2243,7 @@ lbl_8017C154:
 /* 8017CF58 00178BF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017CF5C 00178BFC  7C 08 03 A6 */	mtlr r0
 /* 8017CF60 00178C00  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017CF64 00178C04  4E 80 00 20 */	blr 
+/* 8017CF64 00178C04  4E 80 00 20 */	blr
 
 .global "thunk__64CBMemberTranslator1wRet<PCc,Pc,8UIAnalog,M8UIAnalogFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__64CBMemberTranslator1wRet<PCc,Pc,8UIAnalog,M8UIAnalogFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -2263,14 +2263,14 @@ lbl_8017C154:
 /* 8017CF9C 00178C3C  7F E3 FB 78 */	mr r3, r31
 /* 8017CFA0 00178C40  7F C4 F3 78 */	mr r4, r30
 /* 8017CFA4 00178C44  48 29 22 81 */	bl "__ptmf_scall"
-/* 8017CFA8 00178C48  60 00 00 00 */	nop 
+/* 8017CFA8 00178C48  60 00 00 00 */	nop
 /* 8017CFAC 00178C4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017CFB0 00178C50  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017CFB4 00178C54  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017CFB8 00178C58  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017CFBC 00178C5C  7C 08 03 A6 */	mtlr r0
 /* 8017CFC0 00178C60  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017CFC4 00178C64  4E 80 00 20 */	blr 
+/* 8017CFC4 00178C64  4E 80 00 20 */	blr
 
 .global "makeFunctor<P3ERC,9CURTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R9CURTargetRCM12UIObjectBaseFPCvPvP3ERC_v_66CBMemberTranslator1<P3ERC,9CURTarget,M12UIObjectBaseFPCvPvP3ERC_v>"
 "makeFunctor<P3ERC,9CURTarget,v,12UIObjectBase,P3ERC>__FP17CBFunctor1<P3ERC>R9CURTargetRCM12UIObjectBaseFPCvPvP3ERC_v_66CBMemberTranslator1<P3ERC,9CURTarget,M12UIObjectBaseFPCvPvP3ERC_v>":
@@ -2298,7 +2298,7 @@ lbl_8017C154:
 /* 8017D010 00178CB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D014 00178CB4  7C 08 03 A6 */	mtlr r0
 /* 8017D018 00178CB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D01C 00178CBC  4E 80 00 20 */	blr 
+/* 8017D01C 00178CBC  4E 80 00 20 */	blr
 
 .global "thunk__66CBMemberTranslator1<P3ERC,9CURTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC"
 "thunk__66CBMemberTranslator1<P3ERC,9CURTarget,M12UIObjectBaseFPCvPvP3ERC_v>FRC13CBFunctorBaseP3ERC":
@@ -2318,14 +2318,14 @@ lbl_8017C154:
 /* 8017D054 00178CF4  7F E3 FB 78 */	mr r3, r31
 /* 8017D058 00178CF8  7F C4 F3 78 */	mr r4, r30
 /* 8017D05C 00178CFC  48 29 21 C9 */	bl "__ptmf_scall"
-/* 8017D060 00178D00  60 00 00 00 */	nop 
+/* 8017D060 00178D00  60 00 00 00 */	nop
 /* 8017D064 00178D04  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D068 00178D08  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017D06C 00178D0C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017D070 00178D10  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017D074 00178D14  7C 08 03 A6 */	mtlr r0
 /* 8017D078 00178D18  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D07C 00178D1C  4E 80 00 20 */	blr 
+/* 8017D07C 00178D1C  4E 80 00 20 */	blr
 
 .global "makeFunctor<9CURTarget,v,12UIObjectBase>__FP10CBFunctor0R9CURTargetRCM12UIObjectBaseFPCvPv_v_55CBMemberTranslator0<9CURTarget,M12UIObjectBaseFPCvPv_v>"
 "makeFunctor<9CURTarget,v,12UIObjectBase>__FP10CBFunctor0R9CURTargetRCM12UIObjectBaseFPCvPv_v_55CBMemberTranslator0<9CURTarget,M12UIObjectBaseFPCvPv_v>":
@@ -2353,7 +2353,7 @@ lbl_8017C154:
 /* 8017D0C8 00178D68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D0CC 00178D6C  7C 08 03 A6 */	mtlr r0
 /* 8017D0D0 00178D70  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D0D4 00178D74  4E 80 00 20 */	blr 
+/* 8017D0D4 00178D74  4E 80 00 20 */	blr
 
 .global "thunk__55CBMemberTranslator0<9CURTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase"
 "thunk__55CBMemberTranslator0<9CURTarget,M12UIObjectBaseFPCvPv_v>FRC13CBFunctorBase":
@@ -2370,13 +2370,13 @@ lbl_8017C154:
 /* 8017D100 00178DA0  7C 6C 1B 78 */	mr r12, r3
 /* 8017D104 00178DA4  7F E3 FB 78 */	mr r3, r31
 /* 8017D108 00178DA8  48 29 21 1D */	bl "__ptmf_scall"
-/* 8017D10C 00178DAC  60 00 00 00 */	nop 
+/* 8017D10C 00178DAC  60 00 00 00 */	nop
 /* 8017D110 00178DB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D114 00178DB4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017D118 00178DB8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017D11C 00178DBC  7C 08 03 A6 */	mtlr r0
 /* 8017D120 00178DC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D124 00178DC4  4E 80 00 20 */	blr 
+/* 8017D124 00178DC4  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PUs,9CURTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R9CURTargetRCM12UIObjectBaseFPCvPvPCc_PUs_72CBMemberTranslator1wRet<PCc,PUs,9CURTarget,M12UIObjectBaseFPCvPvPCc_PUs>"
 "makeFunctor<PCc,PUs,9CURTarget,PUs,12UIObjectBase,PCc>__FP23CBFunctor1wRet<PCc,PUs>R9CURTargetRCM12UIObjectBaseFPCvPvPCc_PUs_72CBMemberTranslator1wRet<PCc,PUs,9CURTarget,M12UIObjectBaseFPCvPvPCc_PUs>":
@@ -2404,7 +2404,7 @@ lbl_8017C154:
 /* 8017D170 00178E10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D174 00178E14  7C 08 03 A6 */	mtlr r0
 /* 8017D178 00178E18  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D17C 00178E1C  4E 80 00 20 */	blr 
+/* 8017D17C 00178E1C  4E 80 00 20 */	blr
 
 .global "thunk__72CBMemberTranslator1wRet<PCc,PUs,9CURTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc"
 "thunk__72CBMemberTranslator1wRet<PCc,PUs,9CURTarget,M12UIObjectBaseFPCvPvPCc_PUs>FRC13CBFunctorBasePCc":
@@ -2424,14 +2424,14 @@ lbl_8017C154:
 /* 8017D1B4 00178E54  7F E3 FB 78 */	mr r3, r31
 /* 8017D1B8 00178E58  7F C4 F3 78 */	mr r4, r30
 /* 8017D1BC 00178E5C  48 29 20 69 */	bl "__ptmf_scall"
-/* 8017D1C0 00178E60  60 00 00 00 */	nop 
+/* 8017D1C0 00178E60  60 00 00 00 */	nop
 /* 8017D1C4 00178E64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D1C8 00178E68  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017D1CC 00178E6C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017D1D0 00178E70  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017D1D4 00178E74  7C 08 03 A6 */	mtlr r0
 /* 8017D1D8 00178E78  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D1DC 00178E7C  4E 80 00 20 */	blr 
+/* 8017D1DC 00178E7C  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,PCc,9CURTarget,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R9CURTargetRCM12UIObjectBaseFPCvPvPCcPCc_v_69CBMemberTranslator2<PCc,PCc,9CURTarget,M12UIObjectBaseFPCvPvPCcPCc_v>"
 "makeFunctor<PCc,PCc,9CURTarget,v,12UIObjectBase,PCc,PCc>__FP19CBFunctor2<PCc,PCc>R9CURTargetRCM12UIObjectBaseFPCvPvPCcPCc_v_69CBMemberTranslator2<PCc,PCc,9CURTarget,M12UIObjectBaseFPCvPvPCcPCc_v>":
@@ -2459,7 +2459,7 @@ lbl_8017C154:
 /* 8017D228 00178EC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D22C 00178ECC  7C 08 03 A6 */	mtlr r0
 /* 8017D230 00178ED0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D234 00178ED4  4E 80 00 20 */	blr 
+/* 8017D234 00178ED4  4E 80 00 20 */	blr
 
 .global "thunk__69CBMemberTranslator2<PCc,PCc,9CURTarget,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc"
 "thunk__69CBMemberTranslator2<PCc,PCc,9CURTarget,M12UIObjectBaseFPCvPvPCcPCc_v>FRC13CBFunctorBasePCcPCc":
@@ -2482,7 +2482,7 @@ lbl_8017C154:
 /* 8017D278 00178F18  7F A4 EB 78 */	mr r4, r29
 /* 8017D27C 00178F1C  7F C5 F3 78 */	mr r5, r30
 /* 8017D280 00178F20  48 29 1F A5 */	bl "__ptmf_scall"
-/* 8017D284 00178F24  60 00 00 00 */	nop 
+/* 8017D284 00178F24  60 00 00 00 */	nop
 /* 8017D288 00178F28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D28C 00178F2C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017D290 00178F30  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -2490,7 +2490,7 @@ lbl_8017C154:
 /* 8017D298 00178F38  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017D29C 00178F3C  7C 08 03 A6 */	mtlr r0
 /* 8017D2A0 00178F40  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D2A4 00178F44  4E 80 00 20 */	blr 
+/* 8017D2A4 00178F44  4E 80 00 20 */	blr
 
 .global "makeFunctor<PCc,Pc,9CURTarget,Pc,12UIObjectBase,PCc>__FP22CBFunctor1wRet<PCc,Pc>R9CURTargetRCM12UIObjectBaseFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,9CURTarget,M12UIObjectBaseFPCvPvPCc_Pc>"
 "makeFunctor<PCc,Pc,9CURTarget,Pc,12UIObjectBase,PCc>__FP22CBFunctor1wRet<PCc,Pc>R9CURTargetRCM12UIObjectBaseFPCvPvPCc_Pc_70CBMemberTranslator1wRet<PCc,Pc,9CURTarget,M12UIObjectBaseFPCvPvPCc_Pc>":
@@ -2518,7 +2518,7 @@ lbl_8017C154:
 /* 8017D2F0 00178F90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D2F4 00178F94  7C 08 03 A6 */	mtlr r0
 /* 8017D2F8 00178F98  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D2FC 00178F9C  4E 80 00 20 */	blr 
+/* 8017D2FC 00178F9C  4E 80 00 20 */	blr
 
 .global "thunk__70CBMemberTranslator1wRet<PCc,Pc,9CURTarget,M12UIObjectBaseFPCvPvPCc_Pc>FRC13CBFunctorBasePCc"
 "thunk__70CBMemberTranslator1wRet<PCc,Pc,9CURTarget,M12UIObjectBaseFPCvPvPCc_Pc>FRC13CBFunctorBasePCc":
@@ -2538,30 +2538,30 @@ lbl_8017C154:
 /* 8017D334 00178FD4  7F E3 FB 78 */	mr r3, r31
 /* 8017D338 00178FD8  7F C4 F3 78 */	mr r4, r30
 /* 8017D33C 00178FDC  48 29 1E E9 */	bl "__ptmf_scall"
-/* 8017D340 00178FE0  60 00 00 00 */	nop 
+/* 8017D340 00178FE0  60 00 00 00 */	nop
 /* 8017D344 00178FE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D348 00178FE8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8017D34C 00178FEC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8017D350 00178FF0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017D354 00178FF4  7C 08 03 A6 */	mtlr r0
 /* 8017D358 00178FF8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D35C 00178FFC  4E 80 00 20 */	blr 
+/* 8017D35C 00178FFC  4E 80 00 20 */	blr
 
 .global "__cl__10CBFunctor0CFv"
 "__cl__10CBFunctor0CFv":
 /* 8017D360 00179000  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017D364 00179004  7D 89 03 A6 */	mtctr r12
-/* 8017D368 00179008  4E 80 04 20 */	bctr 
+/* 8017D368 00179008  4E 80 04 20 */	bctr
 
 .global "__cl__39CBFunctor2<P3ERC,P18structDrawCBparams>CFP3ERCP18structDrawCBparams"
 "__cl__39CBFunctor2<P3ERC,P18structDrawCBparams>CFP3ERCP18structDrawCBparams":
 /* 8017D36C 0017900C  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 8017D370 00179010  7D 89 03 A6 */	mtctr r12
-/* 8017D374 00179014  4E 80 04 20 */	bctr 
+/* 8017D374 00179014  4E 80 04 20 */	bctr
 
 .global "onHelpDialogSelection__18HelpDialogCallbackFi"
 "onHelpDialogSelection__18HelpDialogCallbackFi":
-/* 8017D378 00179018  4E 80 00 20 */	blr 
+/* 8017D378 00179018  4E 80 00 20 */	blr
 
 .global "__dt__14SimpleOkDialogFv"
 "__dt__14SimpleOkDialogFv":
@@ -2587,7 +2587,7 @@ lbl_8017D3B8:
 /* 8017D3C4 00179064  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D3C8 00179068  7C 08 03 A6 */	mtlr r0
 /* 8017D3CC 0017906C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D3D0 00179070  4E 80 00 20 */	blr 
+/* 8017D3D0 00179070  4E 80 00 20 */	blr
 
 .global "__ct__4UI2DFv"
 "__ct__4UI2DFv":
@@ -2642,7 +2642,7 @@ lbl_8017D444:
 /* 8017D484 00179124  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D488 00179128  7C 08 03 A6 */	mtlr r0
 /* 8017D48C 0017912C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D490 00179130  4E 80 00 20 */	blr 
+/* 8017D490 00179130  4E 80 00 20 */	blr
 
 .global "__dt__4UI2DFv"
 "__dt__4UI2DFv":
@@ -2685,7 +2685,7 @@ lbl_8017D50C:
 /* 8017D51C 001791BC  38 80 00 01 */	li r4, 1
 /* 8017D520 001791C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017D524 001791C4  7D 89 03 A6 */	mtctr r12
-/* 8017D528 001791C8  4E 80 04 21 */	bctrl 
+/* 8017D528 001791C8  4E 80 04 21 */	bctrl
 lbl_8017D52C:
 /* 8017D52C 001791CC  2C 1F 00 00 */	cmpwi r31, 0
 /* 8017D530 001791D0  7F E3 FB 78 */	mr r3, r31
@@ -2702,7 +2702,7 @@ lbl_8017D548:
 /* 8017D558 001791F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D55C 001791FC  7C 08 03 A6 */	mtlr r0
 /* 8017D560 00179200  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D564 00179204  4E 80 00 20 */	blr 
+/* 8017D564 00179204  4E 80 00 20 */	blr
 
 .global "AddEntry__4UI2DFPCcUiP8ERShaderPCci"
 "AddEntry__4UI2DFPCcUiP8ERShaderPCci":
@@ -2758,7 +2758,7 @@ lbl_8017D614:
 /* 8017D61C 001792BC  7C A4 2B 78 */	mr r4, r5
 /* 8017D620 001792C0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8017D624 001792C4  7D 89 03 A6 */	mtctr r12
-/* 8017D628 001792C8  4E 80 04 21 */	bctrl 
+/* 8017D628 001792C8  4E 80 04 21 */	bctrl
 /* 8017D62C 001792CC  2C 03 00 00 */	cmpwi r3, 0
 /* 8017D630 001792D0  90 7F 00 1C */	stw r3, 0x1c(r31)
 /* 8017D634 001792D4  41 82 00 10 */	beq lbl_8017D644
@@ -2811,7 +2811,7 @@ lbl_8017D6D4:
 /* 8017D6E0 00179380  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017D6E4 00179384  7C 08 03 A6 */	mtlr r0
 /* 8017D6E8 00179388  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D6EC 0017938C  4E 80 00 20 */	blr 
+/* 8017D6EC 0017938C  4E 80 00 20 */	blr
 
 .global "RemoveEntry__4UI2DFPQ24UI2D10UI2DRecord"
 "RemoveEntry__4UI2DFPQ24UI2D10UI2DRecord":
@@ -2909,7 +2909,7 @@ lbl_8017D7E4:
 /* 8017D838 001794D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017D83C 001794DC  7C 08 03 A6 */	mtlr r0
 /* 8017D840 001794E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017D844 001794E4  4E 80 00 20 */	blr 
+/* 8017D844 001794E4  4E 80 00 20 */	blr
 
 .global "InstallEntry__4UI2DFPCcUiPCci"
 "InstallEntry__4UI2DFPCcUiPCci":
@@ -2950,7 +2950,7 @@ lbl_8017D8BC:
 /* 8017D8C4 00179564  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D8C8 00179568  7C 08 03 A6 */	mtlr r0
 /* 8017D8CC 0017956C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D8D0 00179570  4E 80 00 20 */	blr 
+/* 8017D8D0 00179570  4E 80 00 20 */	blr
 
 .global "InstallEntry__4UI2DFPCcP8ERShaderPCci"
 "InstallEntry__4UI2DFPCcP8ERShaderPCci":
@@ -2996,7 +2996,7 @@ lbl_8017D958:
 /* 8017D960 00179600  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017D964 00179604  7C 08 03 A6 */	mtlr r0
 /* 8017D968 00179608  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017D96C 0017960C  4E 80 00 20 */	blr 
+/* 8017D96C 0017960C  4E 80 00 20 */	blr
 
 .global "FindEntry__4UI2DFPCc"
 "FindEntry__4UI2DFPCc":
@@ -3059,7 +3059,7 @@ lbl_8017DA24:
 /* 8017DA38 001796D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017DA3C 001796DC  7C 08 03 A6 */	mtlr r0
 /* 8017DA40 001796E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017DA44 001796E4  4E 80 00 20 */	blr 
+/* 8017DA44 001796E4  4E 80 00 20 */	blr
 
 .global "UnInstallEntry__4UI2DFPCc"
 "UnInstallEntry__4UI2DFPCc":
@@ -3083,7 +3083,7 @@ lbl_8017DA80:
 /* 8017DA84 00179724  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017DA88 00179728  7C 08 03 A6 */	mtlr r0
 /* 8017DA8C 0017972C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017DA90 00179730  4E 80 00 20 */	blr 
+/* 8017DA90 00179730  4E 80 00 20 */	blr
 
 .global "UnInstallAllEntries__4UI2DFPCc"
 "UnInstallAllEntries__4UI2DFPCc":
@@ -3118,7 +3118,7 @@ lbl_8017DAE4:
 /* 8017DAF8 00179798  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017DAFC 0017979C  7C 08 03 A6 */	mtlr r0
 /* 8017DB00 001797A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017DB04 001797A4  4E 80 00 20 */	blr 
+/* 8017DB04 001797A4  4E 80 00 20 */	blr
 
 .global "ContainsEntry__4UI2DFPCc"
 "ContainsEntry__4UI2DFPCc":
@@ -3132,7 +3132,7 @@ lbl_8017DAE4:
 /* 8017DB24 001797C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017DB28 001797C8  7C 08 03 A6 */	mtlr r0
 /* 8017DB2C 001797CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017DB30 001797D0  4E 80 00 20 */	blr 
+/* 8017DB30 001797D0  4E 80 00 20 */	blr
 
 .global "GetShader__4UI2DFPCc"
 "GetShader__4UI2DFPCc":
@@ -3192,7 +3192,7 @@ lbl_8017DBCC:
 /* 8017DBF8 00179898  38 C0 00 00 */	li r6, 0
 /* 8017DBFC 0017989C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8017DC00 001798A0  7D 89 03 A6 */	mtctr r12
-/* 8017DC04 001798A4  4E 80 04 21 */	bctrl 
+/* 8017DC04 001798A4  4E 80 04 21 */	bctrl
 /* 8017DC08 001798A8  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 8017DC0C 001798AC  48 00 01 C9 */	bl "IsStateChangePending__8ERShaderFv"
 /* 8017DC10 001798B0  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -3245,7 +3245,7 @@ lbl_8017DCA8:
 /* 8017DCBC 0017995C  38 C0 00 00 */	li r6, 0
 /* 8017DCC0 00179960  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8017DCC4 00179964  7D 89 03 A6 */	mtctr r12
-/* 8017DCC8 00179968  4E 80 04 21 */	bctrl 
+/* 8017DCC8 00179968  4E 80 04 21 */	bctrl
 /* 8017DCCC 0017996C  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 8017DCD0 00179970  48 00 01 25 */	bl "GetCurrentGraphicsState__8ERShaderFv"
 /* 8017DCD4 00179974  80 1F 00 14 */	lwz r0, 0x14(r31)
@@ -3265,7 +3265,7 @@ lbl_8017DCF8:
 /* 8017DD00 001799A0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017DD04 001799A4  7C 08 03 A6 */	mtlr r0
 /* 8017DD08 001799A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017DD0C 001799AC  4E 80 00 20 */	blr 
+/* 8017DD0C 001799AC  4E 80 00 20 */	blr
 
 .global "__ct__Q24UI2D10UI2DRecordFv"
 "__ct__Q24UI2D10UI2DRecordFv":
@@ -3284,7 +3284,7 @@ lbl_8017DCF8:
 /* 8017DD40 001799E0  98 03 00 21 */	stb r0, 0x21(r3)
 /* 8017DD44 001799E4  90 03 00 24 */	stw r0, 0x24(r3)
 /* 8017DD48 001799E8  98 03 00 28 */	stb r0, 0x28(r3)
-/* 8017DD4C 001799EC  4E 80 00 20 */	blr 
+/* 8017DD4C 001799EC  4E 80 00 20 */	blr
 
 .global "__dt__Q24UI2D10UI2DRecordFv"
 "__dt__Q24UI2D10UI2DRecordFv":
@@ -3304,7 +3304,7 @@ lbl_8017DD78:
 /* 8017DD80 00179A20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017DD84 00179A24  7C 08 03 A6 */	mtlr r0
 /* 8017DD88 00179A28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017DD8C 00179A2C  4E 80 00 20 */	blr 
+/* 8017DD8C 00179A2C  4E 80 00 20 */	blr
 
 .global "Instance__4UI2DFv"
 "Instance__4UI2DFv":
@@ -3326,13 +3326,13 @@ lbl_8017DDC0:
 /* 8017DDC4 00179A64  80 6D B6 F0 */	lwz r3, "s_pInstance__4UI2D"-_SDA_BASE_(r13)
 /* 8017DDC8 00179A68  7C 08 03 A6 */	mtlr r0
 /* 8017DDCC 00179A6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017DDD0 00179A70  4E 80 00 20 */	blr 
+/* 8017DDD0 00179A70  4E 80 00 20 */	blr
 
 .global "IsStateChangePending__8ERShaderFv"
 "IsStateChangePending__8ERShaderFv":
 /* 8017DDD4 00179A74  80 03 00 60 */	lwz r0, 0x60(r3)
 /* 8017DDD8 00179A78  54 03 F7 FE */	rlwinm r3, r0, 0x1e, 0x1f, 0x1f
-/* 8017DDDC 00179A7C  4E 80 00 20 */	blr 
+/* 8017DDDC 00179A7C  4E 80 00 20 */	blr
 
 .global "SupportsMultiShaderStates__8ERShaderFv"
 "SupportsMultiShaderStates__8ERShaderFv":
@@ -3340,12 +3340,12 @@ lbl_8017DDC0:
 /* 8017DDE4 00179A84  38 03 FF FE */	addi r0, r3, -2
 /* 8017DDE8 00179A88  7C 00 00 34 */	cntlzw r0, r0
 /* 8017DDEC 00179A8C  54 03 D9 7E */	srwi r3, r0, 5
-/* 8017DDF0 00179A90  4E 80 00 20 */	blr 
+/* 8017DDF0 00179A90  4E 80 00 20 */	blr
 
 .global "GetCurrentGraphicsState__8ERShaderFv"
 "GetCurrentGraphicsState__8ERShaderFv":
 /* 8017DDF4 00179A94  88 63 00 58 */	lbz r3, 0x58(r3)
-/* 8017DDF8 00179A98  4E 80 00 20 */	blr 
+/* 8017DDF8 00179A98  4E 80 00 20 */	blr
 
 .global "__ct__4UI3DFv"
 "__ct__4UI3DFv":
@@ -3410,7 +3410,7 @@ lbl_8017DE78:
 /* 8017DED4 00179B74  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8017DED8 00179B78  7C 08 03 A6 */	mtlr r0
 /* 8017DEDC 00179B7C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017DEE0 00179B80  4E 80 00 20 */	blr 
+/* 8017DEE0 00179B80  4E 80 00 20 */	blr
 
 .global "__dt__4UI3DFv"
 "__dt__4UI3DFv":
@@ -3446,7 +3446,7 @@ lbl_8017DF40:
 /* 8017DF54 00179BF4  38 80 00 01 */	li r4, 1
 /* 8017DF58 00179BF8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017DF5C 00179BFC  7D 89 03 A6 */	mtctr r12
-/* 8017DF60 00179C00  4E 80 04 21 */	bctrl 
+/* 8017DF60 00179C00  4E 80 04 21 */	bctrl
 lbl_8017DF64:
 /* 8017DF64 00179C04  2C 1F 00 00 */	cmpwi r31, 0
 /* 8017DF68 00179C08  7F E5 FB 78 */	mr r5, r31
@@ -3466,7 +3466,7 @@ lbl_8017DF8C:
 /* 8017DF9C 00179C3C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017DFA0 00179C40  7C 08 03 A6 */	mtlr r0
 /* 8017DFA4 00179C44  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017DFA8 00179C48  4E 80 00 20 */	blr 
+/* 8017DFA8 00179C48  4E 80 00 20 */	blr
 
 .global "AddEntry__4UI3DFPCcUiUiUiiPCc"
 "AddEntry__4UI3DFPCcUiUiUiiPCc":
@@ -3578,7 +3578,7 @@ lbl_8017E12C:
 /* 8017E13C 00179DDC  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 8017E140 00179DE0  7C 08 03 A6 */	mtlr r0
 /* 8017E144 00179DE4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8017E148 00179DE8  4E 80 00 20 */	blr 
+/* 8017E148 00179DE8  4E 80 00 20 */	blr
 
 .global "RemoveEntry__4UI3DFPQ24UI3D10UI3DRecord"
 "RemoveEntry__4UI3DFPQ24UI3D10UI3DRecord":
@@ -3634,7 +3634,7 @@ lbl_8017E1E0:
 /* 8017E1F8 00179E98  38 80 00 01 */	li r4, 1
 /* 8017E1FC 00179E9C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017E200 00179EA0  7D 89 03 A6 */	mtctr r12
-/* 8017E204 00179EA4  4E 80 04 21 */	bctrl 
+/* 8017E204 00179EA4  4E 80 04 21 */	bctrl
 lbl_8017E208:
 /* 8017E208 00179EA8  80 7F 00 0C */	lwz r3, 0xc(r31)
 /* 8017E20C 00179EAC  38 00 00 00 */	li r0, 0
@@ -3655,7 +3655,7 @@ lbl_8017E214:
 /* 8017E244 00179EE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017E248 00179EE8  7C 08 03 A6 */	mtlr r0
 /* 8017E24C 00179EEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E250 00179EF0  4E 80 00 20 */	blr 
+/* 8017E250 00179EF0  4E 80 00 20 */	blr
 
 .global "InstallEntry__4UI3DFPCcUiUiUiPCci"
 "InstallEntry__4UI3DFPCcUiUiUiPCci":
@@ -3714,7 +3714,7 @@ lbl_8017E30C:
 /* 8017E314 00179FB4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8017E318 00179FB8  7C 08 03 A6 */	mtlr r0
 /* 8017E31C 00179FBC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017E320 00179FC0  4E 80 00 20 */	blr 
+/* 8017E320 00179FC0  4E 80 00 20 */	blr
 
 .global "FindEntry__4UI3DFPCc"
 "FindEntry__4UI3DFPCc":
@@ -3777,7 +3777,7 @@ lbl_8017E3D8:
 /* 8017E3EC 0017A08C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017E3F0 0017A090  7C 08 03 A6 */	mtlr r0
 /* 8017E3F4 0017A094  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017E3F8 0017A098  4E 80 00 20 */	blr 
+/* 8017E3F8 0017A098  4E 80 00 20 */	blr
 
 .global "UnInstallEntry__4UI3DFPCc"
 "UnInstallEntry__4UI3DFPCc":
@@ -3801,7 +3801,7 @@ lbl_8017E434:
 /* 8017E438 0017A0D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017E43C 0017A0DC  7C 08 03 A6 */	mtlr r0
 /* 8017E440 0017A0E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E444 0017A0E4  4E 80 00 20 */	blr 
+/* 8017E444 0017A0E4  4E 80 00 20 */	blr
 
 .global "UnInstallAllEntries__4UI3DFPCc"
 "UnInstallAllEntries__4UI3DFPCc":
@@ -3836,7 +3836,7 @@ lbl_8017E498:
 /* 8017E4AC 0017A14C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017E4B0 0017A150  7C 08 03 A6 */	mtlr r0
 /* 8017E4B4 0017A154  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017E4B8 0017A158  4E 80 00 20 */	blr 
+/* 8017E4B8 0017A158  4E 80 00 20 */	blr
 
 .global "ContainsEntry__4UI3DFPCc"
 "ContainsEntry__4UI3DFPCc":
@@ -3850,7 +3850,7 @@ lbl_8017E498:
 /* 8017E4D8 0017A178  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017E4DC 0017A17C  7C 08 03 A6 */	mtlr r0
 /* 8017E4E0 0017A180  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E4E4 0017A184  4E 80 00 20 */	blr 
+/* 8017E4E4 0017A184  4E 80 00 20 */	blr
 
 .global "Update3D__4UI3DFv"
 "Update3D__4UI3DFv":
@@ -3871,7 +3871,7 @@ lbl_8017E50C:
 /* 8017E518 0017A1B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017E51C 0017A1BC  7C 08 03 A6 */	mtlr r0
 /* 8017E520 0017A1C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E524 0017A1C4  4E 80 00 20 */	blr 
+/* 8017E524 0017A1C4  4E 80 00 20 */	blr
 
 .global "GetDisplayObject__4UI3DFPCc"
 "GetDisplayObject__4UI3DFPCc":
@@ -3889,7 +3889,7 @@ lbl_8017E54C:
 /* 8017E54C 0017A1EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017E550 0017A1F0  7C 08 03 A6 */	mtlr r0
 /* 8017E554 0017A1F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E558 0017A1F8  4E 80 00 20 */	blr 
+/* 8017E558 0017A1F8  4E 80 00 20 */	blr
 
 .global "Instance__13UIUpdateTableFv"
 "Instance__13UIUpdateTableFv":
@@ -3911,7 +3911,7 @@ lbl_8017E58C:
 /* 8017E590 0017A230  80 6D B7 20 */	lwz r3, "s_pInstance__13UIUpdateTable"-_SDA_BASE_(r13)
 /* 8017E594 0017A234  7C 08 03 A6 */	mtlr r0
 /* 8017E598 0017A238  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E59C 0017A23C  4E 80 00 20 */	blr 
+/* 8017E59C 0017A23C  4E 80 00 20 */	blr
 
 .global "__ct__Q213UIUpdateTable17UpdateTableRecordFv"
 "__ct__Q213UIUpdateTable17UpdateTableRecordFv":
@@ -3925,7 +3925,7 @@ lbl_8017E58C:
 /* 8017E5BC 0017A25C  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8017E5C0 0017A260  90 83 00 10 */	stw r4, 0x10(r3)
 /* 8017E5C4 0017A264  90 83 00 14 */	stw r4, 0x14(r3)
-/* 8017E5C8 0017A268  4E 80 00 20 */	blr 
+/* 8017E5C8 0017A268  4E 80 00 20 */	blr
 
 .global "__dt__Q213UIUpdateTable17UpdateTableRecordFv"
 "__dt__Q213UIUpdateTable17UpdateTableRecordFv":
@@ -3945,7 +3945,7 @@ lbl_8017E5F4:
 /* 8017E5FC 0017A29C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017E600 0017A2A0  7C 08 03 A6 */	mtlr r0
 /* 8017E604 0017A2A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E608 0017A2A8  4E 80 00 20 */	blr 
+/* 8017E608 0017A2A8  4E 80 00 20 */	blr
 
 .global "__ct__Q24UI3D10UI3DRecordFv"
 "__ct__Q24UI3D10UI3DRecordFv":
@@ -3962,7 +3962,7 @@ lbl_8017E5F4:
 /* 8017E634 0017A2D4  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 8017E638 0017A2D8  90 03 00 20 */	stw r0, 0x20(r3)
 /* 8017E63C 0017A2DC  90 03 00 24 */	stw r0, 0x24(r3)
-/* 8017E640 0017A2E0  4E 80 00 20 */	blr 
+/* 8017E640 0017A2E0  4E 80 00 20 */	blr
 
 .global "__dt__Q24UI3D10UI3DRecordFv"
 "__dt__Q24UI3D10UI3DRecordFv":
@@ -3982,7 +3982,7 @@ lbl_8017E66C:
 /* 8017E674 0017A314  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8017E678 0017A318  7C 08 03 A6 */	mtlr r0
 /* 8017E67C 0017A31C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E680 0017A320  4E 80 00 20 */	blr 
+/* 8017E680 0017A320  4E 80 00 20 */	blr
 
 .global "Instance__4UI3DFv"
 "Instance__4UI3DFv":
@@ -4004,7 +4004,7 @@ lbl_8017E6B4:
 /* 8017E6B8 0017A358  80 6D B6 F4 */	lwz r3, "s_pInstance__4UI3D"-_SDA_BASE_(r13)
 /* 8017E6BC 0017A35C  7C 08 03 A6 */	mtlr r0
 /* 8017E6C0 0017A360  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E6C4 0017A364  4E 80 00 20 */	blr 
+/* 8017E6C4 0017A364  4E 80 00 20 */	blr
 
 .global "__nw__14CUnlockDisplayFUl"
 "__nw__14CUnlockDisplayFUl":
@@ -4023,7 +4023,7 @@ lbl_8017E6B4:
 /* 8017E6F8 0017A398  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8017E6FC 0017A39C  7C 08 03 A6 */	mtlr r0
 /* 8017E700 0017A3A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E704 0017A3A4  4E 80 00 20 */	blr 
+/* 8017E704 0017A3A4  4E 80 00 20 */	blr
 
 .global "__ct__9UIAMBIENTFv"
 "__ct__9UIAMBIENTFv":
@@ -4059,7 +4059,7 @@ lbl_8017E770:
 /* 8017E778 0017A418  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017E77C 0017A41C  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8017E780 0017A420  7D 89 03 A6 */	mtctr r12
-/* 8017E784 0017A424  4E 80 04 21 */	bctrl 
+/* 8017E784 0017A424  4E 80 04 21 */	bctrl
 /* 8017E788 0017A428  90 7E 00 08 */	stw r3, 8(r30)
 /* 8017E78C 0017A42C  7C 7C EA 14 */	add r3, r28, r29
 /* 8017E790 0017A430  3B BD 00 01 */	addi r29, r29, 1
@@ -4081,7 +4081,7 @@ lbl_8017E770:
 /* 8017E7D0 0017A470  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8017E7D4 0017A474  7C 08 03 A6 */	mtlr r0
 /* 8017E7D8 0017A478  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017E7DC 0017A47C  4E 80 00 20 */	blr 
+/* 8017E7DC 0017A47C  4E 80 00 20 */	blr
 
 .global "__dt__9UIAMBIENTFv"
 "__dt__9UIAMBIENTFv":
@@ -4112,7 +4112,7 @@ lbl_8017E81C:
 /* 8017E83C 0017A4DC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017E840 0017A4E0  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 8017E844 0017A4E4  7D 89 03 A6 */	mtctr r12
-/* 8017E848 0017A4E8  4E 80 04 21 */	bctrl 
+/* 8017E848 0017A4E8  4E 80 04 21 */	bctrl
 /* 8017E84C 0017A4EC  93 FE 00 08 */	stw r31, 8(r30)
 lbl_8017E850:
 /* 8017E850 0017A4F0  3B BD 00 01 */	addi r29, r29, 1
@@ -4130,7 +4130,7 @@ lbl_8017E870:
 /* 8017E87C 0017A51C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017E880 0017A520  7C 08 03 A6 */	mtlr r0
 /* 8017E884 0017A524  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017E888 0017A528  4E 80 00 20 */	blr 
+/* 8017E888 0017A528  4E 80 00 20 */	blr
 
 .global "PlaySound__9UIAMBIENTFUi"
 "PlaySound__9UIAMBIENTFUi":
@@ -4176,7 +4176,7 @@ lbl_8017E900:
 /* 8017E924 0017A5C4  7C 9F 02 14 */	add r4, r31, r0
 /* 8017E928 0017A5C8  80 84 00 20 */	lwz r4, 0x20(r4)
 /* 8017E92C 0017A5CC  7D 89 03 A6 */	mtctr r12
-/* 8017E930 0017A5D0  4E 80 04 21 */	bctrl 
+/* 8017E930 0017A5D0  4E 80 04 21 */	bctrl
 /* 8017E934 0017A5D4  80 9F 00 04 */	lwz r4, 4(r31)
 /* 8017E938 0017A5D8  7F E3 FB 78 */	mr r3, r31
 /* 8017E93C 0017A5DC  48 00 01 9D */	bl "UpdateAmbientAudioLoad__9UIAMBIENTFi"
@@ -4198,7 +4198,7 @@ lbl_8017E968:
 /* 8017E970 0017A610  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017E974 0017A614  7C 08 03 A6 */	mtlr r0
 /* 8017E978 0017A618  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017E97C 0017A61C  4E 80 00 20 */	blr 
+/* 8017E97C 0017A61C  4E 80 00 20 */	blr
 
 .global "Update__9UIAMBIENTFv"
 "Update__9UIAMBIENTFv":
@@ -4292,7 +4292,7 @@ lbl_8017EABC:
 /* 8017EAC8 0017A768  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017EACC 0017A76C  7C 08 03 A6 */	mtlr r0
 /* 8017EAD0 0017A770  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017EAD4 0017A774  4E 80 00 20 */	blr 
+/* 8017EAD4 0017A774  4E 80 00 20 */	blr
 
 .global "UpdateAmbientAudioLoad__9UIAMBIENTFi"
 "UpdateAmbientAudioLoad__9UIAMBIENTFi":
@@ -4395,7 +4395,7 @@ lbl_8017EC40:
 /* 8017EC50 0017A8F0  80 BD 00 20 */	lwz r5, 0x20(r29)
 /* 8017EC54 0017A8F4  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8017EC58 0017A8F8  7D 89 03 A6 */	mtctr r12
-/* 8017EC5C 0017A8FC  4E 80 04 21 */	bctrl 
+/* 8017EC5C 0017A8FC  4E 80 04 21 */	bctrl
 /* 8017EC60 0017A900  38 00 00 01 */	li r0, 1
 /* 8017EC64 0017A904  38 61 00 08 */	addi r3, r1, 8
 /* 8017EC68 0017A908  98 1E 00 44 */	stb r0, 0x44(r30)
@@ -4418,14 +4418,14 @@ lbl_8017EC40:
 /* 8017ECAC 0017A94C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017ECB0 0017A950  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 8017ECB4 0017A954  7D 89 03 A6 */	mtctr r12
-/* 8017ECB8 0017A958  4E 80 04 21 */	bctrl 
+/* 8017ECB8 0017A958  4E 80 04 21 */	bctrl
 lbl_8017ECBC:
 /* 8017ECBC 0017A95C  39 61 00 50 */	addi r11, r1, 0x50
 /* 8017ECC0 0017A960  48 29 06 FD */	bl "_restgpr_26"
 /* 8017ECC4 0017A964  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8017ECC8 0017A968  7C 08 03 A6 */	mtlr r0
 /* 8017ECCC 0017A96C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8017ECD0 0017A970  4E 80 00 20 */	blr 
+/* 8017ECD0 0017A970  4E 80 00 20 */	blr
 
 .global "StopSound__9UIAMBIENTFi"
 "StopSound__9UIAMBIENTFi":
@@ -4466,7 +4466,7 @@ lbl_8017ECBC:
 /* 8017ED5C 0017A9FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017ED60 0017AA00  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8017ED64 0017AA04  7D 89 03 A6 */	mtctr r12
-/* 8017ED68 0017AA08  4E 80 04 21 */	bctrl 
+/* 8017ED68 0017AA08  4E 80 04 21 */	bctrl
 /* 8017ED6C 0017AA0C  9B DF 00 44 */	stb r30, 0x44(r31)
 lbl_8017ED70:
 /* 8017ED70 0017AA10  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -4476,7 +4476,7 @@ lbl_8017ED70:
 /* 8017ED80 0017AA20  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017ED84 0017AA24  7C 08 03 A6 */	mtlr r0
 /* 8017ED88 0017AA28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017ED8C 0017AA2C  4E 80 00 20 */	blr 
+/* 8017ED8C 0017AA2C  4E 80 00 20 */	blr
 
 .global "InitAmbientSounds__9UIAMBIENTFQ29UIAMBIENT17eUIAMBIENT_screen"
 "InitAmbientSounds__9UIAMBIENTFQ29UIAMBIENT17eUIAMBIENT_screen":
@@ -4502,34 +4502,34 @@ lbl_8017EDA4:
 /* 8017EDD8 0017AA78  40 80 00 10 */	bge lbl_8017EDE8
 /* 8017EDDC 0017AA7C  2C 05 00 00 */	cmpwi r5, 0
 /* 8017EDE0 0017AA80  40 80 00 14 */	bge lbl_8017EDF4
-/* 8017EDE4 0017AA84  4E 80 00 20 */	blr 
+/* 8017EDE4 0017AA84  4E 80 00 20 */	blr
 lbl_8017EDE8:
 /* 8017EDE8 0017AA88  2C 05 00 03 */	cmpwi r5, 3
-/* 8017EDEC 0017AA8C  4C 80 00 20 */	bgelr 
+/* 8017EDEC 0017AA8C  4C 80 00 20 */	bgelr
 /* 8017EDF0 0017AA90  48 00 00 24 */	b lbl_8017EE14
 lbl_8017EDF4:
 /* 8017EDF4 0017AA94  3C 80 80 42 */	lis r4, "UIAMBIENT_frontend__9UIAMBIENT"@ha
 /* 8017EDF8 0017AA98  38 84 A0 C8 */	addi r4, r4, "UIAMBIENT_frontend__9UIAMBIENT"@l
 /* 8017EDFC 0017AA9C  90 83 00 50 */	stw r4, 0x50(r3)
-/* 8017EE00 0017AAA0  4E 80 00 20 */	blr 
+/* 8017EE00 0017AAA0  4E 80 00 20 */	blr
 lbl_8017EE04:
 /* 8017EE04 0017AAA4  3C 80 80 42 */	lis r4, "UIAMBIENT_cas__9UIAMBIENT"@ha
 /* 8017EE08 0017AAA8  38 84 A1 88 */	addi r4, r4, "UIAMBIENT_cas__9UIAMBIENT"@l
 /* 8017EE0C 0017AAAC  90 83 00 50 */	stw r4, 0x50(r3)
-/* 8017EE10 0017AAB0  4E 80 00 20 */	blr 
+/* 8017EE10 0017AAB0  4E 80 00 20 */	blr
 lbl_8017EE14:
 /* 8017EE14 0017AAB4  38 00 00 00 */	li r0, 0
 /* 8017EE18 0017AAB8  98 03 00 47 */	stb r0, 0x47(r3)
 /* 8017EE1C 0017AABC  90 03 00 50 */	stw r0, 0x50(r3)
 /* 8017EE20 0017AAC0  90 03 00 54 */	stw r0, 0x54(r3)
 /* 8017EE24 0017AAC4  90 03 00 58 */	stw r0, 0x58(r3)
-/* 8017EE28 0017AAC8  4E 80 00 20 */	blr 
+/* 8017EE28 0017AAC8  4E 80 00 20 */	blr
 
 .global "UpdateAmbientSounds__9UIAMBIENTFv"
 "UpdateAmbientSounds__9UIAMBIENTFv":
 /* 8017EE2C 0017AACC  38 00 00 04 */	li r0, 4
 /* 8017EE30 0017AAD0  90 03 00 58 */	stw r0, 0x58(r3)
-/* 8017EE34 0017AAD4  4E 80 00 20 */	blr 
+/* 8017EE34 0017AAD4  4E 80 00 20 */	blr
 
 .global "__ct__7UIAUDIOFv"
 "__ct__7UIAUDIOFv":
@@ -4583,7 +4583,7 @@ lbl_8017EED8:
 /* 8017EEE0 0017AB80  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017EEE4 0017AB84  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8017EEE8 0017AB88  7D 89 03 A6 */	mtctr r12
-/* 8017EEEC 0017AB8C  4E 80 04 21 */	bctrl 
+/* 8017EEEC 0017AB8C  4E 80 04 21 */	bctrl
 /* 8017EEF0 0017AB90  90 7E 00 14 */	stw r3, 0x14(r30)
 /* 8017EEF4 0017AB94  7C 7C EA 14 */	add r3, r28, r29
 /* 8017EEF8 0017AB98  3B BD 00 01 */	addi r29, r29, 1
@@ -4605,7 +4605,7 @@ lbl_8017EED8:
 /* 8017EF38 0017ABD8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8017EF3C 0017ABDC  7C 08 03 A6 */	mtlr r0
 /* 8017EF40 0017ABE0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8017EF44 0017ABE4  4E 80 00 20 */	blr 
+/* 8017EF44 0017ABE4  4E 80 00 20 */	blr
 
 .global "__dt__7UIAUDIOFv"
 "__dt__7UIAUDIOFv":
@@ -4640,7 +4640,7 @@ lbl_8017EFA0:
 /* 8017EFB4 0017AC54  38 80 00 01 */	li r4, 1
 /* 8017EFB8 0017AC58  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017EFBC 0017AC5C  7D 89 03 A6 */	mtctr r12
-/* 8017EFC0 0017AC60  4E 80 04 21 */	bctrl 
+/* 8017EFC0 0017AC60  4E 80 04 21 */	bctrl
 lbl_8017EFC4:
 /* 8017EFC4 0017AC64  2C 1E 00 00 */	cmpwi r30, 0
 /* 8017EFC8 0017AC68  7F C5 F3 78 */	mr r5, r30
@@ -4660,7 +4660,7 @@ lbl_8017EFDC:
 /* 8017EFFC 0017AC9C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017F000 0017ACA0  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 8017F004 0017ACA4  7D 89 03 A6 */	mtctr r12
-/* 8017F008 0017ACA8  4E 80 04 21 */	bctrl 
+/* 8017F008 0017ACA8  4E 80 04 21 */	bctrl
 /* 8017F00C 0017ACAC  93 FE 00 14 */	stw r31, 0x14(r30)
 lbl_8017F010:
 /* 8017F010 0017ACB0  3B BD 00 01 */	addi r29, r29, 1
@@ -4678,7 +4678,7 @@ lbl_8017F030:
 /* 8017F03C 0017ACDC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017F040 0017ACE0  7C 08 03 A6 */	mtlr r0
 /* 8017F044 0017ACE4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F048 0017ACE8  4E 80 00 20 */	blr 
+/* 8017F048 0017ACE8  4E 80 00 20 */	blr
 
 .global "AddEntry__7UIAUDIOFPCcUiPCc"
 "AddEntry__7UIAUDIOFPCcUiPCc":
@@ -4711,7 +4711,7 @@ lbl_8017F0A8:
 /* 8017F0A8 0017AD48  90 88 00 0C */	stw r4, 0xc(r8)
 /* 8017F0AC 0017AD4C  90 A8 00 10 */	stw r5, 0x10(r8)
 /* 8017F0B0 0017AD50  90 C8 00 14 */	stw r6, 0x14(r8)
-/* 8017F0B4 0017AD54  4E 80 00 20 */	blr 
+/* 8017F0B4 0017AD54  4E 80 00 20 */	blr
 
 .global "RemoveEntry__7UIAUDIOFPQ27UIAUDIO13UIAUDIORecord"
 "RemoveEntry__7UIAUDIOFPQ27UIAUDIO13UIAUDIORecord":
@@ -4760,7 +4760,7 @@ lbl_8017F138:
 /* 8017F148 0017ADE8  90 04 00 10 */	stw r0, 0x10(r4)
 /* 8017F14C 0017ADEC  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8017F150 0017ADF0  90 03 00 14 */	stw r0, 0x14(r3)
-/* 8017F154 0017ADF4  4E 80 00 20 */	blr 
+/* 8017F154 0017ADF4  4E 80 00 20 */	blr
 
 .global "InstallEntry__7UIAUDIOFPCcUiPCc"
 "InstallEntry__7UIAUDIOFPCcUiPCc":
@@ -4812,7 +4812,7 @@ lbl_8017F1EC:
 /* 8017F1F4 0017AE94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017F1F8 0017AE98  7C 08 03 A6 */	mtlr r0
 /* 8017F1FC 0017AE9C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F200 0017AEA0  4E 80 00 20 */	blr 
+/* 8017F200 0017AEA0  4E 80 00 20 */	blr
 
 .global "UnInstallEntry__7UIAUDIOFPCc"
 "UnInstallEntry__7UIAUDIOFPCc":
@@ -4853,7 +4853,7 @@ lbl_8017F26C:
 /* 8017F278 0017AF18  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017F27C 0017AF1C  7C 08 03 A6 */	mtlr r0
 /* 8017F280 0017AF20  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F284 0017AF24  4E 80 00 20 */	blr 
+/* 8017F284 0017AF24  4E 80 00 20 */	blr
 
 .global "UnInstallAllEntries__7UIAUDIOFPCc"
 "UnInstallAllEntries__7UIAUDIOFPCc":
@@ -4888,7 +4888,7 @@ lbl_8017F2D8:
 /* 8017F2EC 0017AF8C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017F2F0 0017AF90  7C 08 03 A6 */	mtlr r0
 /* 8017F2F4 0017AF94  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F2F8 0017AF98  4E 80 00 20 */	blr 
+/* 8017F2F8 0017AF98  4E 80 00 20 */	blr
 
 .global "GetSound__7UIAUDIOFPCc"
 "GetSound__7UIAUDIOFPCc":
@@ -4950,7 +4950,7 @@ lbl_8017F3AC:
 /* 8017F3BC 0017B05C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017F3C0 0017B060  7C 08 03 A6 */	mtlr r0
 /* 8017F3C4 0017B064  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F3C8 0017B068  4E 80 00 20 */	blr 
+/* 8017F3C8 0017B068  4E 80 00 20 */	blr
 
 .global "PlaySound__7UIAUDIOFUi"
 "PlaySound__7UIAUDIOFUi":
@@ -4996,7 +4996,7 @@ lbl_8017F440:
 /* 8017F464 0017B104  7C 9F 02 14 */	add r4, r31, r0
 /* 8017F468 0017B108  80 84 00 3C */	lwz r4, 0x3c(r4)
 /* 8017F46C 0017B10C  7D 89 03 A6 */	mtctr r12
-/* 8017F470 0017B110  4E 80 04 21 */	bctrl 
+/* 8017F470 0017B110  4E 80 04 21 */	bctrl
 /* 8017F474 0017B114  80 9F 00 10 */	lwz r4, 0x10(r31)
 /* 8017F478 0017B118  7F E3 FB 78 */	mr r3, r31
 /* 8017F47C 0017B11C  48 00 00 91 */	bl "UpdateAudioLoad__7UIAUDIOFi"
@@ -5018,7 +5018,7 @@ lbl_8017F4A8:
 /* 8017F4B0 0017B150  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017F4B4 0017B154  7C 08 03 A6 */	mtlr r0
 /* 8017F4B8 0017B158  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017F4BC 0017B15C  4E 80 00 20 */	blr 
+/* 8017F4BC 0017B15C  4E 80 00 20 */	blr
 
 .global "Update__7UIAUDIOFv"
 "Update__7UIAUDIOFv":
@@ -5041,7 +5041,7 @@ lbl_8017F4DC:
 /* 8017F4FC 0017B19C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8017F500 0017B1A0  7C 08 03 A6 */	mtlr r0
 /* 8017F504 0017B1A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8017F508 0017B1A8  4E 80 00 20 */	blr 
+/* 8017F508 0017B1A8  4E 80 00 20 */	blr
 
 .global "UpdateAudioLoad__7UIAUDIOFi"
 "UpdateAudioLoad__7UIAUDIOFi":
@@ -5110,7 +5110,7 @@ lbl_8017F4DC:
 /* 8017F604 0017B2A4  80 BD 00 3C */	lwz r5, 0x3c(r29)
 /* 8017F608 0017B2A8  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8017F60C 0017B2AC  7D 89 03 A6 */	mtctr r12
-/* 8017F610 0017B2B0  4E 80 04 21 */	bctrl 
+/* 8017F610 0017B2B0  4E 80 04 21 */	bctrl
 /* 8017F614 0017B2B4  38 00 00 01 */	li r0, 1
 /* 8017F618 0017B2B8  38 61 00 08 */	addi r3, r1, 8
 /* 8017F61C 0017B2BC  98 1E 00 78 */	stb r0, 0x78(r30)
@@ -5133,7 +5133,7 @@ lbl_8017F4DC:
 /* 8017F660 0017B300  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017F664 0017B304  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 8017F668 0017B308  7D 89 03 A6 */	mtctr r12
-/* 8017F66C 0017B30C  4E 80 04 21 */	bctrl 
+/* 8017F66C 0017B30C  4E 80 04 21 */	bctrl
 lbl_8017F670:
 /* 8017F670 0017B310  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8017F674 0017B314  83 E1 00 3C */	lwz r31, 0x3c(r1)
@@ -5142,7 +5142,7 @@ lbl_8017F670:
 /* 8017F680 0017B320  83 81 00 30 */	lwz r28, 0x30(r1)
 /* 8017F684 0017B324  7C 08 03 A6 */	mtlr r0
 /* 8017F688 0017B328  38 21 00 40 */	addi r1, r1, 0x40
-/* 8017F68C 0017B32C  4E 80 00 20 */	blr 
+/* 8017F68C 0017B32C  4E 80 00 20 */	blr
 
 .global "StopSound__7UIAUDIOFi"
 "StopSound__7UIAUDIOFi":
@@ -5183,7 +5183,7 @@ lbl_8017F670:
 /* 8017F718 0017B3B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8017F71C 0017B3BC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8017F720 0017B3C0  7D 89 03 A6 */	mtctr r12
-/* 8017F724 0017B3C4  4E 80 04 21 */	bctrl 
+/* 8017F724 0017B3C4  4E 80 04 21 */	bctrl
 /* 8017F728 0017B3C8  9B DF 00 78 */	stb r30, 0x78(r31)
 lbl_8017F72C:
 /* 8017F72C 0017B3CC  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -5193,7 +5193,7 @@ lbl_8017F72C:
 /* 8017F73C 0017B3DC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017F740 0017B3E0  7C 08 03 A6 */	mtlr r0
 /* 8017F744 0017B3E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F748 0017B3E8  4E 80 00 20 */	blr 
+/* 8017F748 0017B3E8  4E 80 00 20 */	blr
 
 .global "__ct__23GetVariableCommandTableFv"
 "__ct__23GetVariableCommandTableFv":
@@ -5240,7 +5240,7 @@ lbl_8017F7BC:
 /* 8017F7DC 0017B47C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017F7E0 0017B480  7C 08 03 A6 */	mtlr r0
 /* 8017F7E4 0017B484  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F7E8 0017B488  4E 80 00 20 */	blr 
+/* 8017F7E8 0017B488  4E 80 00 20 */	blr
 
 .global "__dt__23GetVariableCommandTableFv"
 "__dt__23GetVariableCommandTableFv":
@@ -5276,7 +5276,7 @@ lbl_8017F848:
 /* 8017F85C 0017B4FC  38 80 00 01 */	li r4, 1
 /* 8017F860 0017B500  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017F864 0017B504  7D 89 03 A6 */	mtctr r12
-/* 8017F868 0017B508  4E 80 04 21 */	bctrl 
+/* 8017F868 0017B508  4E 80 04 21 */	bctrl
 lbl_8017F86C:
 /* 8017F86C 0017B50C  2C 1F 00 00 */	cmpwi r31, 0
 /* 8017F870 0017B510  7F E5 FB 78 */	mr r5, r31
@@ -5293,7 +5293,7 @@ lbl_8017F888:
 /* 8017F898 0017B538  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017F89C 0017B53C  7C 08 03 A6 */	mtlr r0
 /* 8017F8A0 0017B540  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017F8A4 0017B544  4E 80 00 20 */	blr 
+/* 8017F8A4 0017B544  4E 80 00 20 */	blr
 
 .global "AddRecord__23GetVariableCommandTableFPCcR22CBFunctor1wRet<PCc,Pc>"
 "AddRecord__23GetVariableCommandTableFPCcR22CBFunctor1wRet<PCc,Pc>":
@@ -5325,7 +5325,7 @@ lbl_8017F8E8:
 lbl_8017F904:
 /* 8017F904 0017B5A4  90 87 00 0C */	stw r4, 0xc(r7)
 /* 8017F908 0017B5A8  90 A7 00 10 */	stw r5, 0x10(r7)
-/* 8017F90C 0017B5AC  4E 80 00 20 */	blr 
+/* 8017F90C 0017B5AC  4E 80 00 20 */	blr
 
 .global "RemoveRecord__23GetVariableCommandTableFPQ223GetVariableCommandTable29GetVariableCommandTableRecord"
 "RemoveRecord__23GetVariableCommandTableFPQ223GetVariableCommandTable29GetVariableCommandTableRecord":
@@ -5372,7 +5372,7 @@ lbl_8017F990:
 /* 8017F998 0017B638  90 04 00 0C */	stw r0, 0xc(r4)
 /* 8017F99C 0017B63C  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8017F9A0 0017B640  90 03 00 10 */	stw r0, 0x10(r3)
-/* 8017F9A4 0017B644  4E 80 00 20 */	blr 
+/* 8017F9A4 0017B644  4E 80 00 20 */	blr
 
 .global "InstallCommand__23GetVariableCommandTableFPCcR22CBFunctor1wRet<PCc,Pc>"
 "InstallCommand__23GetVariableCommandTableFPCcR22CBFunctor1wRet<PCc,Pc>":
@@ -5420,7 +5420,7 @@ lbl_8017FA28:
 /* 8017FA38 0017B6D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017FA3C 0017B6DC  7C 08 03 A6 */	mtlr r0
 /* 8017FA40 0017B6E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FA44 0017B6E4  4E 80 00 20 */	blr 
+/* 8017FA44 0017B6E4  4E 80 00 20 */	blr
 
 .global "UnInstallAllCommands__23GetVariableCommandTableFR22CBFunctor1wRet<PCc,Pc>"
 "UnInstallAllCommands__23GetVariableCommandTableFR22CBFunctor1wRet<PCc,Pc>":
@@ -5455,7 +5455,7 @@ lbl_8017FA98:
 /* 8017FAAC 0017B74C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017FAB0 0017B750  7C 08 03 A6 */	mtlr r0
 /* 8017FAB4 0017B754  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FAB8 0017B758  4E 80 00 20 */	blr 
+/* 8017FAB8 0017B758  4E 80 00 20 */	blr
 
 .global "ExecuteCommand__23GetVariableCommandTableFPCcPCc"
 "ExecuteCommand__23GetVariableCommandTableFPCcPCc":
@@ -5519,7 +5519,7 @@ lbl_8017FB7C:
 /* 8017FB84 0017B824  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017FB88 0017B828  7C 08 03 A6 */	mtlr r0
 /* 8017FB8C 0017B82C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FB90 0017B830  4E 80 00 20 */	blr 
+/* 8017FB90 0017B830  4E 80 00 20 */	blr
 
 .global "__ct__23SetVariableCommandTableFv"
 "__ct__23SetVariableCommandTableFv":
@@ -5566,7 +5566,7 @@ lbl_8017FC04:
 /* 8017FC24 0017B8C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017FC28 0017B8C8  7C 08 03 A6 */	mtlr r0
 /* 8017FC2C 0017B8CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FC30 0017B8D0  4E 80 00 20 */	blr 
+/* 8017FC30 0017B8D0  4E 80 00 20 */	blr
 
 .global "__dt__23SetVariableCommandTableFv"
 "__dt__23SetVariableCommandTableFv":
@@ -5602,7 +5602,7 @@ lbl_8017FC90:
 /* 8017FCA4 0017B944  38 80 00 01 */	li r4, 1
 /* 8017FCA8 0017B948  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8017FCAC 0017B94C  7D 89 03 A6 */	mtctr r12
-/* 8017FCB0 0017B950  4E 80 04 21 */	bctrl 
+/* 8017FCB0 0017B950  4E 80 04 21 */	bctrl
 lbl_8017FCB4:
 /* 8017FCB4 0017B954  2C 1F 00 00 */	cmpwi r31, 0
 /* 8017FCB8 0017B958  7F E5 FB 78 */	mr r5, r31
@@ -5619,7 +5619,7 @@ lbl_8017FCD0:
 /* 8017FCE0 0017B980  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017FCE4 0017B984  7C 08 03 A6 */	mtlr r0
 /* 8017FCE8 0017B988  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FCEC 0017B98C  4E 80 00 20 */	blr 
+/* 8017FCEC 0017B98C  4E 80 00 20 */	blr
 
 .global "AddRecord__23SetVariableCommandTableFPCcR19CBFunctor2<PCc,PCc>"
 "AddRecord__23SetVariableCommandTableFPCcR19CBFunctor2<PCc,PCc>":
@@ -5651,7 +5651,7 @@ lbl_8017FD30:
 lbl_8017FD4C:
 /* 8017FD4C 0017B9EC  90 87 00 0C */	stw r4, 0xc(r7)
 /* 8017FD50 0017B9F0  90 A7 00 10 */	stw r5, 0x10(r7)
-/* 8017FD54 0017B9F4  4E 80 00 20 */	blr 
+/* 8017FD54 0017B9F4  4E 80 00 20 */	blr
 
 .global "RemoveRecord__23SetVariableCommandTableFPQ223SetVariableCommandTable29SetVariableCommandTableRecord"
 "RemoveRecord__23SetVariableCommandTableFPQ223SetVariableCommandTable29SetVariableCommandTableRecord":
@@ -5698,7 +5698,7 @@ lbl_8017FDD8:
 /* 8017FDE0 0017BA80  90 04 00 0C */	stw r0, 0xc(r4)
 /* 8017FDE4 0017BA84  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8017FDE8 0017BA88  90 03 00 10 */	stw r0, 0x10(r3)
-/* 8017FDEC 0017BA8C  4E 80 00 20 */	blr 
+/* 8017FDEC 0017BA8C  4E 80 00 20 */	blr
 
 .global "InstallCommand__23SetVariableCommandTableFPCcR19CBFunctor2<PCc,PCc>"
 "InstallCommand__23SetVariableCommandTableFPCcR19CBFunctor2<PCc,PCc>":
@@ -5746,7 +5746,7 @@ lbl_8017FE70:
 /* 8017FE80 0017BB20  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8017FE84 0017BB24  7C 08 03 A6 */	mtlr r0
 /* 8017FE88 0017BB28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FE8C 0017BB2C  4E 80 00 20 */	blr 
+/* 8017FE8C 0017BB2C  4E 80 00 20 */	blr
 
 .global "UnInstallCommand__23SetVariableCommandTableFPCc"
 "UnInstallCommand__23SetVariableCommandTableFPCc":
@@ -5787,7 +5787,7 @@ lbl_8017FEF8:
 /* 8017FF04 0017BBA4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017FF08 0017BBA8  7C 08 03 A6 */	mtlr r0
 /* 8017FF0C 0017BBAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FF10 0017BBB0  4E 80 00 20 */	blr 
+/* 8017FF10 0017BBB0  4E 80 00 20 */	blr
 
 .global "UnInstallAllCommands__23SetVariableCommandTableFR19CBFunctor2<PCc,PCc>"
 "UnInstallAllCommands__23SetVariableCommandTableFR19CBFunctor2<PCc,PCc>":
@@ -5822,7 +5822,7 @@ lbl_8017FF64:
 /* 8017FF78 0017BC18  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8017FF7C 0017BC1C  7C 08 03 A6 */	mtlr r0
 /* 8017FF80 0017BC20  38 21 00 20 */	addi r1, r1, 0x20
-/* 8017FF84 0017BC24  4E 80 00 20 */	blr 
+/* 8017FF84 0017BC24  4E 80 00 20 */	blr
 
 .global "ExecuteCommand__23SetVariableCommandTableFPCcPCcPCc"
 "ExecuteCommand__23SetVariableCommandTableFPCcPCcPCc":
@@ -5884,7 +5884,7 @@ lbl_80180040:
 /* 80180048 0017BCE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8018004C 0017BCEC  7C 08 03 A6 */	mtlr r0
 /* 80180050 0017BCF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80180054 0017BCF4  4E 80 00 20 */	blr 
+/* 80180054 0017BCF4  4E 80 00 20 */	blr
 
 .global "__ct__26GetLocalizableCommandTableFv"
 "__ct__26GetLocalizableCommandTableFv":
@@ -5931,7 +5931,7 @@ lbl_801800C8:
 /* 801800E8 0017BD88  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801800EC 0017BD8C  7C 08 03 A6 */	mtlr r0
 /* 801800F0 0017BD90  38 21 00 20 */	addi r1, r1, 0x20
-/* 801800F4 0017BD94  4E 80 00 20 */	blr 
+/* 801800F4 0017BD94  4E 80 00 20 */	blr
 
 .global "__dt__26GetLocalizableCommandTableFv"
 "__dt__26GetLocalizableCommandTableFv":
@@ -5967,7 +5967,7 @@ lbl_80180154:
 /* 80180168 0017BE08  38 80 00 01 */	li r4, 1
 /* 8018016C 0017BE0C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80180170 0017BE10  7D 89 03 A6 */	mtctr r12
-/* 80180174 0017BE14  4E 80 04 21 */	bctrl 
+/* 80180174 0017BE14  4E 80 04 21 */	bctrl
 lbl_80180178:
 /* 80180178 0017BE18  2C 1F 00 00 */	cmpwi r31, 0
 /* 8018017C 0017BE1C  7F E5 FB 78 */	mr r5, r31
@@ -5984,7 +5984,7 @@ lbl_80180194:
 /* 801801A4 0017BE44  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801801A8 0017BE48  7C 08 03 A6 */	mtlr r0
 /* 801801AC 0017BE4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 801801B0 0017BE50  4E 80 00 20 */	blr 
+/* 801801B0 0017BE50  4E 80 00 20 */	blr
 
 .global "AddRecord__26GetLocalizableCommandTableFPCcR23CBFunctor1wRet<PCc,PUs>"
 "AddRecord__26GetLocalizableCommandTableFPCcR23CBFunctor1wRet<PCc,PUs>":
@@ -6016,7 +6016,7 @@ lbl_801801F4:
 lbl_80180210:
 /* 80180210 0017BEB0  90 87 00 0C */	stw r4, 0xc(r7)
 /* 80180214 0017BEB4  90 A7 00 10 */	stw r5, 0x10(r7)
-/* 80180218 0017BEB8  4E 80 00 20 */	blr 
+/* 80180218 0017BEB8  4E 80 00 20 */	blr
 
 .global "RemoveRecord__26GetLocalizableCommandTableFPQ226GetLocalizableCommandTable32GetLocalizableCommandTableRecord"
 "RemoveRecord__26GetLocalizableCommandTableFPQ226GetLocalizableCommandTable32GetLocalizableCommandTableRecord":
@@ -6063,7 +6063,7 @@ lbl_8018029C:
 /* 801802A4 0017BF44  90 04 00 0C */	stw r0, 0xc(r4)
 /* 801802A8 0017BF48  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 801802AC 0017BF4C  90 03 00 10 */	stw r0, 0x10(r3)
-/* 801802B0 0017BF50  4E 80 00 20 */	blr 
+/* 801802B0 0017BF50  4E 80 00 20 */	blr
 
 .global "InstallCommand__26GetLocalizableCommandTableFPCcR23CBFunctor1wRet<PCc,PUs>"
 "InstallCommand__26GetLocalizableCommandTableFPCcR23CBFunctor1wRet<PCc,PUs>":
@@ -6111,7 +6111,7 @@ lbl_80180334:
 /* 80180344 0017BFE4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80180348 0017BFE8  7C 08 03 A6 */	mtlr r0
 /* 8018034C 0017BFEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80180350 0017BFF0  4E 80 00 20 */	blr 
+/* 80180350 0017BFF0  4E 80 00 20 */	blr
 
 .global "UnInstallAllCommands__26GetLocalizableCommandTableFR23CBFunctor1wRet<PCc,PUs>"
 "UnInstallAllCommands__26GetLocalizableCommandTableFR23CBFunctor1wRet<PCc,PUs>":
@@ -6146,7 +6146,7 @@ lbl_801803A4:
 /* 801803B8 0017C058  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801803BC 0017C05C  7C 08 03 A6 */	mtlr r0
 /* 801803C0 0017C060  38 21 00 20 */	addi r1, r1, 0x20
-/* 801803C4 0017C064  4E 80 00 20 */	blr 
+/* 801803C4 0017C064  4E 80 00 20 */	blr
 
 .global "ExecuteCommand__26GetLocalizableCommandTableFPCcPCc"
 "ExecuteCommand__26GetLocalizableCommandTableFPCcPCc":
@@ -6210,7 +6210,7 @@ lbl_80180488:
 /* 80180490 0017C130  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80180494 0017C134  7C 08 03 A6 */	mtlr r0
 /* 80180498 0017C138  38 21 00 20 */	addi r1, r1, 0x20
-/* 8018049C 0017C13C  4E 80 00 20 */	blr 
+/* 8018049C 0017C13C  4E 80 00 20 */	blr
 
 .global "__ct__Q223GetVariableCommandTable29GetVariableCommandTableRecordFv"
 "__ct__Q223GetVariableCommandTable29GetVariableCommandTableRecordFv":
@@ -6222,7 +6222,7 @@ lbl_80180488:
 /* 801804B4 0017C154  90 03 00 08 */	stw r0, 8(r3)
 /* 801804B8 0017C158  90 03 00 0C */	stw r0, 0xc(r3)
 /* 801804BC 0017C15C  90 03 00 10 */	stw r0, 0x10(r3)
-/* 801804C0 0017C160  4E 80 00 20 */	blr 
+/* 801804C0 0017C160  4E 80 00 20 */	blr
 
 .global "__dt__Q223GetVariableCommandTable29GetVariableCommandTableRecordFv"
 "__dt__Q223GetVariableCommandTable29GetVariableCommandTableRecordFv":
@@ -6242,7 +6242,7 @@ lbl_801804EC:
 /* 801804F4 0017C194  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801804F8 0017C198  7C 08 03 A6 */	mtlr r0
 /* 801804FC 0017C19C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180500 0017C1A0  4E 80 00 20 */	blr 
+/* 80180500 0017C1A0  4E 80 00 20 */	blr
 
 .global "__ct__Q223SetVariableCommandTable29SetVariableCommandTableRecordFv"
 "__ct__Q223SetVariableCommandTable29SetVariableCommandTableRecordFv":
@@ -6254,7 +6254,7 @@ lbl_801804EC:
 /* 80180518 0017C1B8  90 03 00 08 */	stw r0, 8(r3)
 /* 8018051C 0017C1BC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80180520 0017C1C0  90 03 00 10 */	stw r0, 0x10(r3)
-/* 80180524 0017C1C4  4E 80 00 20 */	blr 
+/* 80180524 0017C1C4  4E 80 00 20 */	blr
 
 .global "__dt__Q223SetVariableCommandTable29SetVariableCommandTableRecordFv"
 "__dt__Q223SetVariableCommandTable29SetVariableCommandTableRecordFv":
@@ -6274,7 +6274,7 @@ lbl_80180550:
 /* 80180558 0017C1F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8018055C 0017C1FC  7C 08 03 A6 */	mtlr r0
 /* 80180560 0017C200  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180564 0017C204  4E 80 00 20 */	blr 
+/* 80180564 0017C204  4E 80 00 20 */	blr
 
 .global "__ct__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecordFv"
 "__ct__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecordFv":
@@ -6286,7 +6286,7 @@ lbl_80180550:
 /* 8018057C 0017C21C  90 03 00 08 */	stw r0, 8(r3)
 /* 80180580 0017C220  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80180584 0017C224  90 03 00 10 */	stw r0, 0x10(r3)
-/* 80180588 0017C228  4E 80 00 20 */	blr 
+/* 80180588 0017C228  4E 80 00 20 */	blr
 
 .global "__dt__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecordFv"
 "__dt__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecordFv":
@@ -6306,7 +6306,7 @@ lbl_801805B4:
 /* 801805BC 0017C25C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801805C0 0017C260  7C 08 03 A6 */	mtlr r0
 /* 801805C4 0017C264  38 21 00 10 */	addi r1, r1, 0x10
-/* 801805C8 0017C268  4E 80 00 20 */	blr 
+/* 801805C8 0017C268  4E 80 00 20 */	blr
 
 .global "Instance__26GetLocalizableCommandTableFv"
 "Instance__26GetLocalizableCommandTableFv":
@@ -6328,7 +6328,7 @@ lbl_801805FC:
 /* 80180600 0017C2A0  80 6D B7 08 */	lwz r3, "s_pInstance__26GetLocalizableCommandTable"-_SDA_BASE_(r13)
 /* 80180604 0017C2A4  7C 08 03 A6 */	mtlr r0
 /* 80180608 0017C2A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8018060C 0017C2AC  4E 80 00 20 */	blr 
+/* 8018060C 0017C2AC  4E 80 00 20 */	blr
 
 .global "Instance__23SetVariableCommandTableFv"
 "Instance__23SetVariableCommandTableFv":
@@ -6350,7 +6350,7 @@ lbl_80180640:
 /* 80180644 0017C2E4  80 6D B7 04 */	lwz r3, "s_pInstance__23SetVariableCommandTable"-_SDA_BASE_(r13)
 /* 80180648 0017C2E8  7C 08 03 A6 */	mtlr r0
 /* 8018064C 0017C2EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180650 0017C2F0  4E 80 00 20 */	blr 
+/* 80180650 0017C2F0  4E 80 00 20 */	blr
 
 .global "Instance__23GetVariableCommandTableFv"
 "Instance__23GetVariableCommandTableFv":
@@ -6372,7 +6372,7 @@ lbl_80180684:
 /* 80180688 0017C328  80 6D B7 00 */	lwz r3, "s_pInstance__23GetVariableCommandTable"-_SDA_BASE_(r13)
 /* 8018068C 0017C32C  7C 08 03 A6 */	mtlr r0
 /* 80180690 0017C330  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180694 0017C334  4E 80 00 20 */	blr 
+/* 80180694 0017C334  4E 80 00 20 */	blr
 
 .global "__as__17CBFunctor1<P3ERC>FRC17CBFunctor1<P3ERC>"
 "__as__17CBFunctor1<P3ERC>FRC17CBFunctor1<P3ERC>":
@@ -6392,7 +6392,7 @@ lbl_80180684:
 /* 801806CC 0017C36C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801806D0 0017C370  7C 08 03 A6 */	mtlr r0
 /* 801806D4 0017C374  38 21 00 10 */	addi r1, r1, 0x10
-/* 801806D8 0017C378  4E 80 00 20 */	blr 
+/* 801806D8 0017C378  4E 80 00 20 */	blr
 
 .global "UIDBInit__4UIDBFv"
 "UIDBInit__4UIDBFv":
@@ -6779,7 +6779,7 @@ lbl_80180684:
 /* 80180CCC 0017C96C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80180CD0 0017C970  81 8C 00 B4 */	lwz r12, 0xb4(r12)
 /* 80180CD4 0017C974  7D 89 03 A6 */	mtctr r12
-/* 80180CD8 0017C978  4E 80 04 21 */	bctrl 
+/* 80180CD8 0017C978  4E 80 04 21 */	bctrl
 /* 80180CDC 0017C97C  38 1A 03 94 */	addi r0, r26, 0x394
 /* 80180CE0 0017C980  90 7C 02 00 */	stw r3, 0x200(r28)
 /* 80180CE4 0017C984  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
@@ -6788,7 +6788,7 @@ lbl_80180684:
 /* 80180CF0 0017C990  81 83 00 00 */	lwz r12, 0(r3)
 /* 80180CF4 0017C994  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 80180CF8 0017C998  7D 89 03 A6 */	mtctr r12
-/* 80180CFC 0017C99C  4E 80 04 21 */	bctrl 
+/* 80180CFC 0017C99C  4E 80 04 21 */	bctrl
 /* 80180D00 0017C9A0  38 1A 03 A4 */	addi r0, r26, 0x3a4
 /* 80180D04 0017C9A4  90 7C 02 0C */	stw r3, 0x20c(r28)
 /* 80180D08 0017C9A8  90 1C 02 10 */	stw r0, 0x210(r28)
@@ -6830,7 +6830,7 @@ lbl_80180D8C:
 /* 80180D94 0017CA34  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80180D98 0017CA38  7C 08 03 A6 */	mtlr r0
 /* 80180D9C 0017CA3C  38 21 00 40 */	addi r1, r1, 0x40
-/* 80180DA0 0017CA40  4E 80 00 20 */	blr 
+/* 80180DA0 0017CA40  4E 80 00 20 */	blr
 
 .global "UIDBShutdown__4UIDBFv"
 "UIDBShutdown__4UIDBFv":
@@ -6872,7 +6872,7 @@ lbl_80180DFC:
 /* 80180E24 0017CAC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80180E28 0017CAC8  7C 08 03 A6 */	mtlr r0
 /* 80180E2C 0017CACC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80180E30 0017CAD0  4E 80 00 20 */	blr 
+/* 80180E30 0017CAD0  4E 80 00 20 */	blr
 
 .global "UIDBGetInt__4UIDBFPCc"
 "UIDBGetInt__4UIDBFPCc":
@@ -6897,7 +6897,7 @@ lbl_80180E70:
 /* 80180E70 0017CB10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80180E74 0017CB14  7C 08 03 A6 */	mtlr r0
 /* 80180E78 0017CB18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180E7C 0017CB1C  4E 80 00 20 */	blr 
+/* 80180E7C 0017CB1C  4E 80 00 20 */	blr
 
 .global "UIDBGetFloat__4UIDBFPCc"
 "UIDBGetFloat__4UIDBFPCc":
@@ -6922,7 +6922,7 @@ lbl_80180EBC:
 /* 80180EBC 0017CB5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80180EC0 0017CB60  7C 08 03 A6 */	mtlr r0
 /* 80180EC4 0017CB64  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180EC8 0017CB68  4E 80 00 20 */	blr 
+/* 80180EC8 0017CB68  4E 80 00 20 */	blr
 
 .global "UIDBGetString__4UIDBFPCc"
 "UIDBGetString__4UIDBFPCc":
@@ -6947,7 +6947,7 @@ lbl_80180F08:
 /* 80180F08 0017CBA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80180F0C 0017CBAC  7C 08 03 A6 */	mtlr r0
 /* 80180F10 0017CBB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180F14 0017CBB4  4E 80 00 20 */	blr 
+/* 80180F14 0017CBB4  4E 80 00 20 */	blr
 
 .global "UIDBSetInt__4UIDBFPCci"
 "UIDBSetInt__4UIDBFPCci":
@@ -6976,7 +6976,7 @@ lbl_80180F60:
 /* 80180F64 0017CC04  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80180F68 0017CC08  7C 08 03 A6 */	mtlr r0
 /* 80180F6C 0017CC0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180F70 0017CC10  4E 80 00 20 */	blr 
+/* 80180F70 0017CC10  4E 80 00 20 */	blr
 
 .global "UIDBSetFloat__4UIDBFPCcf"
 "UIDBSetFloat__4UIDBFPCcf":
@@ -7005,7 +7005,7 @@ lbl_80180FBC:
 /* 80180FC0 0017CC60  CB E1 00 08 */	lfd f31, 8(r1)
 /* 80180FC4 0017CC64  7C 08 03 A6 */	mtlr r0
 /* 80180FC8 0017CC68  38 21 00 10 */	addi r1, r1, 0x10
-/* 80180FCC 0017CC6C  4E 80 00 20 */	blr 
+/* 80180FCC 0017CC6C  4E 80 00 20 */	blr
 
 .global "UIDBSetString__4UIDBFPCcPCUs"
 "UIDBSetString__4UIDBFPCcPCUs":
@@ -7054,7 +7054,7 @@ lbl_8018105C:
 /* 80181068 0017CD08  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8018106C 0017CD0C  7C 08 03 A6 */	mtlr r0
 /* 80181070 0017CD10  38 21 00 20 */	addi r1, r1, 0x20
-/* 80181074 0017CD14  4E 80 00 20 */	blr 
+/* 80181074 0017CD14  4E 80 00 20 */	blr
 
 .global "UIDBFindRecord__4UIDBFPCcQ28UIDBData13eUIDBDataType"
 "UIDBFindRecord__4UIDBFPCcQ28UIDBData13eUIDBDataType":
@@ -7100,7 +7100,7 @@ lbl_801810F8:
 /* 80181100 0017CDA0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80181104 0017CDA4  7C 08 03 A6 */	mtlr r0
 /* 80181108 0017CDA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8018110C 0017CDAC  4E 80 00 20 */	blr 
+/* 8018110C 0017CDAC  4E 80 00 20 */	blr
 
 .global "__ct__10UIDBTargetFv"
 "__ct__10UIDBTargetFv":
@@ -7172,7 +7172,7 @@ lbl_801810F8:
 /* 80181214 0017CEB4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80181218 0017CEB8  7C 08 03 A6 */	mtlr r0
 /* 8018121C 0017CEBC  38 21 00 80 */	addi r1, r1, 0x80
-/* 80181220 0017CEC0  4E 80 00 20 */	blr 
+/* 80181220 0017CEC0  4E 80 00 20 */	blr
 
 .global "__dt__10UIDBTargetFv"
 "__dt__10UIDBTargetFv":
@@ -7203,7 +7203,7 @@ lbl_80181274:
 /* 80181280 0017CF20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181284 0017CF24  7C 08 03 A6 */	mtlr r0
 /* 80181288 0017CF28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8018128C 0017CF2C  4E 80 00 20 */	blr 
+/* 8018128C 0017CF2C  4E 80 00 20 */	blr
 
 .global "SetVariable__10UIDBTargetFPCcPCc"
 "SetVariable__10UIDBTargetFPCcPCc":
@@ -7308,7 +7308,7 @@ lbl_801813E4:
 /* 801813F0 0017D090  83 A1 01 14 */	lwz r29, 0x114(r1)
 /* 801813F4 0017D094  7C 08 03 A6 */	mtlr r0
 /* 801813F8 0017D098  38 21 01 20 */	addi r1, r1, 0x120
-/* 801813FC 0017D09C  4E 80 00 20 */	blr 
+/* 801813FC 0017D09C  4E 80 00 20 */	blr
 
 .global "GetVariable__10UIDBTargetFPCc"
 "GetVariable__10UIDBTargetFPCc":
@@ -7435,7 +7435,7 @@ lbl_801815A8:
 /* 801815B4 0017D254  83 A1 01 14 */	lwz r29, 0x114(r1)
 /* 801815B8 0017D258  7C 08 03 A6 */	mtlr r0
 /* 801815BC 0017D25C  38 21 01 20 */	addi r1, r1, 0x120
-/* 801815C0 0017D260  4E 80 00 20 */	blr 
+/* 801815C0 0017D260  4E 80 00 20 */	blr
 
 .global "InstallSetVariableCommand__12UIObjectBaseFPCc"
 "InstallSetVariableCommand__12UIObjectBaseFPCc":
@@ -7448,7 +7448,7 @@ lbl_801815A8:
 /* 801815DC 0017D27C  4B FF E8 14 */	b "InstallCommand__23SetVariableCommandTableFPCcR19CBFunctor2<PCc,PCc>"
 lbl_801815E0:
 /* 801815E0 0017D280  38 60 00 00 */	li r3, 0
-/* 801815E4 0017D284  4E 80 00 20 */	blr 
+/* 801815E4 0017D284  4E 80 00 20 */	blr
 
 .global "InstallGetVariableCommand__12UIObjectBaseFPCc"
 "InstallGetVariableCommand__12UIObjectBaseFPCc":
@@ -7461,7 +7461,7 @@ lbl_801815E0:
 /* 80181600 0017D2A0  4B FF E3 A8 */	b "InstallCommand__23GetVariableCommandTableFPCcR22CBFunctor1wRet<PCc,Pc>"
 lbl_80181604:
 /* 80181604 0017D2A4  38 60 00 00 */	li r3, 0
-/* 80181608 0017D2A8  4E 80 00 20 */	blr 
+/* 80181608 0017D2A8  4E 80 00 20 */	blr
 
 .global "UIObjectBaseInit__12UIObjectBaseFv"
 "UIObjectBaseInit__12UIObjectBaseFv":
@@ -7494,7 +7494,7 @@ lbl_80181604:
 /* 80181674 0017D314  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181678 0017D318  7C 08 03 A6 */	mtlr r0
 /* 8018167C 0017D31C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181680 0017D320  4E 80 00 20 */	blr 
+/* 80181680 0017D320  4E 80 00 20 */	blr
 
 .global "UIObjectBaseClean__12UIObjectBaseFv"
 "UIObjectBaseClean__12UIObjectBaseFv":
@@ -7559,7 +7559,7 @@ lbl_80181750:
 /* 80181754 0017D3F4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80181758 0017D3F8  7C 08 03 A6 */	mtlr r0
 /* 8018175C 0017D3FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181760 0017D400  4E 80 00 20 */	blr 
+/* 80181760 0017D400  4E 80 00 20 */	blr
 
 .global "InstallUpdate__12UIObjectBaseFQ213UIUpdateTable19UpdateTablePriority"
 "InstallUpdate__12UIObjectBaseFQ213UIUpdateTable19UpdateTablePriority":
@@ -7591,7 +7591,7 @@ lbl_801817B8:
 /* 801817C0 0017D460  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801817C4 0017D464  7C 08 03 A6 */	mtlr r0
 /* 801817C8 0017D468  38 21 00 10 */	addi r1, r1, 0x10
-/* 801817CC 0017D46C  4E 80 00 20 */	blr 
+/* 801817CC 0017D46C  4E 80 00 20 */	blr
 
 .global "Install2DObject__12UIObjectBaseFPCcUii"
 "Install2DObject__12UIObjectBaseFPCcUii":
@@ -7607,7 +7607,7 @@ lbl_801817B8:
 /* 801817F4 0017D494  4B FF C0 54 */	b "InstallEntry__4UI2DFPCcUiPCci"
 lbl_801817F8:
 /* 801817F8 0017D498  38 60 00 00 */	li r3, 0
-/* 801817FC 0017D49C  4E 80 00 20 */	blr 
+/* 801817FC 0017D49C  4E 80 00 20 */	blr
 
 .global "Instance__17UIUserDrawCBTableFv"
 "Instance__17UIUserDrawCBTableFv":
@@ -7629,7 +7629,7 @@ lbl_80181830:
 /* 80181834 0017D4D4  80 6D B7 24 */	lwz r3, "s_pInstance__17UIUserDrawCBTable"-_SDA_BASE_(r13)
 /* 80181838 0017D4D8  7C 08 03 A6 */	mtlr r0
 /* 8018183C 0017D4DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181840 0017D4E0  4E 80 00 20 */	blr 
+/* 80181840 0017D4E0  4E 80 00 20 */	blr
 
 .global "__ct__Q217UIUserDrawCBTable21UserDrawCBTableRecordFv"
 "__ct__Q217UIUserDrawCBTable21UserDrawCBTableRecordFv":
@@ -7642,7 +7642,7 @@ lbl_80181830:
 /* 8018185C 0017D4FC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80181860 0017D500  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80181864 0017D504  90 03 00 14 */	stw r0, 0x14(r3)
-/* 80181868 0017D508  4E 80 00 20 */	blr 
+/* 80181868 0017D508  4E 80 00 20 */	blr
 
 .global "__dt__Q217UIUserDrawCBTable21UserDrawCBTableRecordFv"
 "__dt__Q217UIUserDrawCBTable21UserDrawCBTableRecordFv":
@@ -7662,7 +7662,7 @@ lbl_80181894:
 /* 8018189C 0017D53C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801818A0 0017D540  7C 08 03 A6 */	mtlr r0
 /* 801818A4 0017D544  38 21 00 10 */	addi r1, r1, 0x10
-/* 801818A8 0017D548  4E 80 00 20 */	blr 
+/* 801818A8 0017D548  4E 80 00 20 */	blr
 
 .global "Instance__11UIDrawTableFv"
 "Instance__11UIDrawTableFv":
@@ -7684,7 +7684,7 @@ lbl_801818DC:
 /* 801818E0 0017D580  80 6D B7 10 */	lwz r3, "s_pInstance__11UIDrawTable"-_SDA_BASE_(r13)
 /* 801818E4 0017D584  7C 08 03 A6 */	mtlr r0
 /* 801818E8 0017D588  38 21 00 10 */	addi r1, r1, 0x10
-/* 801818EC 0017D58C  4E 80 00 20 */	blr 
+/* 801818EC 0017D58C  4E 80 00 20 */	blr
 
 .global "__ct__Q211UIDrawTable15DrawTableRecordFv"
 "__ct__Q211UIDrawTable15DrawTableRecordFv":
@@ -7698,7 +7698,7 @@ lbl_801818DC:
 /* 8018190C 0017D5AC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80181910 0017D5B0  90 83 00 10 */	stw r4, 0x10(r3)
 /* 80181914 0017D5B4  90 83 00 14 */	stw r4, 0x14(r3)
-/* 80181918 0017D5B8  4E 80 00 20 */	blr 
+/* 80181918 0017D5B8  4E 80 00 20 */	blr
 
 .global "__dt__Q211UIDrawTable15DrawTableRecordFv"
 "__dt__Q211UIDrawTable15DrawTableRecordFv":
@@ -7718,7 +7718,7 @@ lbl_80181944:
 /* 8018194C 0017D5EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181950 0017D5F0  7C 08 03 A6 */	mtlr r0
 /* 80181954 0017D5F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181958 0017D5F8  4E 80 00 20 */	blr 
+/* 80181958 0017D5F8  4E 80 00 20 */	blr
 
 .global "__ct__11UIDrawTableFv"
 "__ct__11UIDrawTableFv":
@@ -7765,7 +7765,7 @@ lbl_801819CC:
 /* 801819EC 0017D68C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801819F0 0017D690  7C 08 03 A6 */	mtlr r0
 /* 801819F4 0017D694  38 21 00 20 */	addi r1, r1, 0x20
-/* 801819F8 0017D698  4E 80 00 20 */	blr 
+/* 801819F8 0017D698  4E 80 00 20 */	blr
 
 .global "__dt__11UIDrawTableFv"
 "__dt__11UIDrawTableFv":
@@ -7801,7 +7801,7 @@ lbl_80181A58:
 /* 80181A6C 0017D70C  38 80 00 01 */	li r4, 1
 /* 80181A70 0017D710  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80181A74 0017D714  7D 89 03 A6 */	mtctr r12
-/* 80181A78 0017D718  4E 80 04 21 */	bctrl 
+/* 80181A78 0017D718  4E 80 04 21 */	bctrl
 lbl_80181A7C:
 /* 80181A7C 0017D71C  2C 1F 00 00 */	cmpwi r31, 0
 /* 80181A80 0017D720  7F E5 FB 78 */	mr r5, r31
@@ -7818,7 +7818,7 @@ lbl_80181A98:
 /* 80181AA8 0017D748  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80181AAC 0017D74C  7C 08 03 A6 */	mtlr r0
 /* 80181AB0 0017D750  38 21 00 20 */	addi r1, r1, 0x20
-/* 80181AB4 0017D754  4E 80 00 20 */	blr 
+/* 80181AB4 0017D754  4E 80 00 20 */	blr
 
 .global "AddRecord__11UIDrawTableFQ211UIDrawTable17DrawTablePriorityR17CBFunctor1<P3ERC>PCc"
 "AddRecord__11UIDrawTableFQ211UIDrawTable17DrawTablePriorityR17CBFunctor1<P3ERC>PCc":
@@ -7841,7 +7841,7 @@ lbl_80181AD4:
 /* 80181AF4 0017D794  90 08 00 04 */	stw r0, 4(r8)
 /* 80181AF8 0017D798  91 03 00 08 */	stw r8, 8(r3)
 /* 80181AFC 0017D79C  90 08 00 08 */	stw r0, 8(r8)
-/* 80181B00 0017D7A0  4E 80 00 20 */	blr 
+/* 80181B00 0017D7A0  4E 80 00 20 */	blr
 lbl_80181B04:
 /* 80181B04 0017D7A4  38 C0 00 00 */	li r6, 0
 /* 80181B08 0017D7A8  38 A0 00 00 */	li r5, 0
@@ -7876,10 +7876,10 @@ lbl_80181B4C:
 lbl_80181B6C:
 /* 80181B6C 0017D80C  2C 06 00 00 */	cmpwi r6, 0
 /* 80181B70 0017D810  80 E7 00 08 */	lwz r7, 8(r7)
-/* 80181B74 0017D814  4C 82 00 20 */	bnelr 
+/* 80181B74 0017D814  4C 82 00 20 */	bnelr
 /* 80181B78 0017D818  2C 07 00 00 */	cmpwi r7, 0
 /* 80181B7C 0017D81C  40 82 FF 90 */	bne lbl_80181B0C
-/* 80181B80 0017D820  4E 80 00 20 */	blr 
+/* 80181B80 0017D820  4E 80 00 20 */	blr
 
 .global "RemoveRecord__11UIDrawTableFPQ211UIDrawTable15DrawTableRecord"
 "RemoveRecord__11UIDrawTableFPQ211UIDrawTable15DrawTableRecord":
@@ -7929,7 +7929,7 @@ lbl_80181C04:
 /* 80181C18 0017D8B8  90 04 00 10 */	stw r0, 0x10(r4)
 /* 80181C1C 0017D8BC  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 80181C20 0017D8C0  90 03 00 14 */	stw r0, 0x14(r3)
-/* 80181C24 0017D8C4  4E 80 00 20 */	blr 
+/* 80181C24 0017D8C4  4E 80 00 20 */	blr
 
 .global "InstallEntry__11UIDrawTableFQ211UIDrawTable17DrawTablePriorityR17CBFunctor1<P3ERC>PCc"
 "InstallEntry__11UIDrawTableFQ211UIDrawTable17DrawTablePriorityR17CBFunctor1<P3ERC>PCc":
@@ -7961,7 +7961,7 @@ lbl_80181C78:
 /* 80181C78 0017D918  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181C7C 0017D91C  7C 08 03 A6 */	mtlr r0
 /* 80181C80 0017D920  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181C84 0017D924  4E 80 00 20 */	blr 
+/* 80181C84 0017D924  4E 80 00 20 */	blr
 
 .global "UnInstallEntry__11UIDrawTableFR17CBFunctor1<P3ERC>"
 "UnInstallEntry__11UIDrawTableFR17CBFunctor1<P3ERC>":
@@ -7989,7 +7989,7 @@ lbl_80181CCC:
 /* 80181CCC 0017D96C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181CD0 0017D970  7C 08 03 A6 */	mtlr r0
 /* 80181CD4 0017D974  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181CD8 0017D978  4E 80 00 20 */	blr 
+/* 80181CD8 0017D978  4E 80 00 20 */	blr
 
 .global "ExecuteDrawsPreFlash__11UIDrawTableFP3ERC"
 "ExecuteDrawsPreFlash__11UIDrawTableFP3ERC":
@@ -8019,7 +8019,7 @@ lbl_80181D1C:
 /* 80181D2C 0017D9CC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80181D30 0017D9D0  7C 08 03 A6 */	mtlr r0
 /* 80181D34 0017D9D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181D38 0017D9D8  4E 80 00 20 */	blr 
+/* 80181D38 0017D9D8  4E 80 00 20 */	blr
 
 .global "ExecuteDrawsPostFlash__11UIDrawTableFP3ERC"
 "ExecuteDrawsPostFlash__11UIDrawTableFP3ERC":
@@ -8049,7 +8049,7 @@ lbl_80181D7C:
 /* 80181D8C 0017DA2C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80181D90 0017DA30  7C 08 03 A6 */	mtlr r0
 /* 80181D94 0017DA34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181D98 0017DA38  4E 80 00 20 */	blr 
+/* 80181D98 0017DA38  4E 80 00 20 */	blr
 
 .global "__ct__10UIQDTargetFv"
 "__ct__10UIQDTargetFv":
@@ -8118,7 +8118,7 @@ lbl_80181D7C:
 /* 80181E94 0017DB34  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80181E98 0017DB38  7C 08 03 A6 */	mtlr r0
 /* 80181E9C 0017DB3C  38 21 00 80 */	addi r1, r1, 0x80
-/* 80181EA0 0017DB40  4E 80 00 20 */	blr 
+/* 80181EA0 0017DB40  4E 80 00 20 */	blr
 
 .global "__dt__10UIQDTargetFv"
 "__dt__10UIQDTargetFv":
@@ -8149,7 +8149,7 @@ lbl_80181EF4:
 /* 80181F00 0017DBA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80181F04 0017DBA4  7C 08 03 A6 */	mtlr r0
 /* 80181F08 0017DBA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80181F0C 0017DBAC  4E 80 00 20 */	blr 
+/* 80181F0C 0017DBAC  4E 80 00 20 */	blr
 
 .global "GetVariable__10UIQDTargetFPCc"
 "GetVariable__10UIQDTargetFPCc":
@@ -8298,7 +8298,7 @@ lbl_8018210C:
 /* 8018211C 0017DDBC  83 81 01 20 */	lwz r28, 0x120(r1)
 /* 80182120 0017DDC0  7C 08 03 A6 */	mtlr r0
 /* 80182124 0017DDC4  38 21 01 30 */	addi r1, r1, 0x130
-/* 80182128 0017DDC8  4E 80 00 20 */	blr 
+/* 80182128 0017DDC8  4E 80 00 20 */	blr
 
 .global "GetQuickdataText__10UIQDTargetFPCc"
 "GetQuickdataText__10UIQDTargetFPCc":
@@ -8432,7 +8432,7 @@ lbl_801822F0:
 /* 801822F8 0017DF98  83 C1 01 18 */	lwz r30, 0x118(r1)
 /* 801822FC 0017DF9C  7C 08 03 A6 */	mtlr r0
 /* 80182300 0017DFA0  38 21 01 20 */	addi r1, r1, 0x120
-/* 80182304 0017DFA4  4E 80 00 20 */	blr 
+/* 80182304 0017DFA4  4E 80 00 20 */	blr
 
 .global "UIQDSubstitutionStrings__10UIQDTargetFPUs"
 "UIQDSubstitutionStrings__10UIQDTargetFPUs":
@@ -9062,7 +9062,7 @@ lbl_80182C28:
 /* 80182C34 0017E8D4  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 80182C38 0017E8D8  7C 08 03 A6 */	mtlr r0
 /* 80182C3C 0017E8DC  38 21 01 A0 */	addi r1, r1, 0x1a0
-/* 80182C40 0017E8E0  4E 80 00 20 */	blr 
+/* 80182C40 0017E8E0  4E 80 00 20 */	blr
 
 .global "__ct__8UIReflowFv"
 "__ct__8UIReflowFv":
@@ -9073,7 +9073,7 @@ lbl_80182C28:
 /* 80182C54 0017E8F4  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80182C58 0017E8F8  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80182C5C 0017E8FC  98 03 00 14 */	stb r0, 0x14(r3)
-/* 80182C60 0017E900  4E 80 00 20 */	blr 
+/* 80182C60 0017E900  4E 80 00 20 */	blr
 
 .global "__dt__8UIReflowFv"
 "__dt__8UIReflowFv":
@@ -9108,7 +9108,7 @@ lbl_80182CBC:
 /* 80182CCC 0017E96C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80182CD0 0017E970  7C 08 03 A6 */	mtlr r0
 /* 80182CD4 0017E974  38 21 00 20 */	addi r1, r1, 0x20
-/* 80182CD8 0017E978  4E 80 00 20 */	blr 
+/* 80182CD8 0017E978  4E 80 00 20 */	blr
 
 .global "ResetSize__8UIReflowFPCcii"
 "ResetSize__8UIReflowFPCcii":
@@ -9183,7 +9183,7 @@ lbl_80182DDC:
 /* 80182DE8 0017EA88  83 A1 02 94 */	lwz r29, 0x294(r1)
 /* 80182DEC 0017EA8C  7C 08 03 A6 */	mtlr r0
 /* 80182DF0 0017EA90  38 21 02 A0 */	addi r1, r1, 0x2a0
-/* 80182DF4 0017EA94  4E 80 00 20 */	blr 
+/* 80182DF4 0017EA94  4E 80 00 20 */	blr
 
 .global "ResetPosition__8UIReflowFPCcii"
 "ResetPosition__8UIReflowFPCcii":
@@ -9258,7 +9258,7 @@ lbl_80182EF8:
 /* 80182F04 0017EBA4  83 A1 02 94 */	lwz r29, 0x294(r1)
 /* 80182F08 0017EBA8  7C 08 03 A6 */	mtlr r0
 /* 80182F0C 0017EBAC  38 21 02 A0 */	addi r1, r1, 0x2a0
-/* 80182F10 0017EBB0  4E 80 00 20 */	blr 
+/* 80182F10 0017EBB0  4E 80 00 20 */	blr
 
 .global "ResetVisibility__8UIReflowFPCcb"
 "ResetVisibility__8UIReflowFPCcb":
@@ -9316,7 +9316,7 @@ lbl_80182FD4:
 /* 80182FDC 0017EC7C  83 C1 02 88 */	lwz r30, 0x288(r1)
 /* 80182FE0 0017EC80  7C 08 03 A6 */	mtlr r0
 /* 80182FE4 0017EC84  38 21 02 90 */	addi r1, r1, 0x290
-/* 80182FE8 0017EC88  4E 80 00 20 */	blr 
+/* 80182FE8 0017EC88  4E 80 00 20 */	blr
 
 .global "ResetFontSizeOverride__8UIReflowFPCcUi"
 "ResetFontSizeOverride__8UIReflowFPCcUi":
@@ -9374,7 +9374,7 @@ lbl_801830AC:
 /* 801830B4 0017ED54  83 C1 02 88 */	lwz r30, 0x288(r1)
 /* 801830B8 0017ED58  7C 08 03 A6 */	mtlr r0
 /* 801830BC 0017ED5C  38 21 02 90 */	addi r1, r1, 0x290
-/* 801830C0 0017ED60  4E 80 00 20 */	blr 
+/* 801830C0 0017ED60  4E 80 00 20 */	blr
 
 .global "ResetSwfAnimation__8UIReflowFPCcPCc"
 "ResetSwfAnimation__8UIReflowFPCcPCc":
@@ -9427,7 +9427,7 @@ lbl_80183170:
 /* 80183178 0017EE18  83 C1 02 08 */	lwz r30, 0x208(r1)
 /* 8018317C 0017EE1C  7C 08 03 A6 */	mtlr r0
 /* 80183180 0017EE20  38 21 02 10 */	addi r1, r1, 0x210
-/* 80183184 0017EE24  4E 80 00 20 */	blr 
+/* 80183184 0017EE24  4E 80 00 20 */	blr
 
 .global "ResetSwfFileName__8UIReflowFPCcPCc"
 "ResetSwfFileName__8UIReflowFPCcPCc":
@@ -9480,7 +9480,7 @@ lbl_80183234:
 /* 8018323C 0017EEDC  83 C1 02 08 */	lwz r30, 0x208(r1)
 /* 80183240 0017EEE0  7C 08 03 A6 */	mtlr r0
 /* 80183244 0017EEE4  38 21 02 10 */	addi r1, r1, 0x210
-/* 80183248 0017EEE8  4E 80 00 20 */	blr 
+/* 80183248 0017EEE8  4E 80 00 20 */	blr
 
 .global "AddToBlock__8UIReflowFPCc"
 "AddToBlock__8UIReflowFPCc":
@@ -9523,7 +9523,7 @@ lbl_801832C8:
 /* 801832D4 0017EF74  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801832D8 0017EF78  7C 08 03 A6 */	mtlr r0
 /* 801832DC 0017EF7C  38 21 00 20 */	addi r1, r1, 0x20
-/* 801832E0 0017EF80  4E 80 00 20 */	blr 
+/* 801832E0 0017EF80  4E 80 00 20 */	blr
 
 .global "ReallocateBlock__8UIReflowFv"
 "ReallocateBlock__8UIReflowFv":
@@ -9563,7 +9563,7 @@ lbl_8018335C:
 /* 80183364 0017F004  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80183368 0017F008  7C 08 03 A6 */	mtlr r0
 /* 8018336C 0017F00C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183370 0017F010  4E 80 00 20 */	blr 
+/* 80183370 0017F010  4E 80 00 20 */	blr
 
 .global "OpenTweenBlock__8UIReflowFPCcUiUiPCc"
 "OpenTweenBlock__8UIReflowFPCcUiUiPCc":
@@ -9649,7 +9649,7 @@ lbl_801834A4:
 /* 801834AC 0017F14C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 801834B0 0017F150  7C 08 03 A6 */	mtlr r0
 /* 801834B4 0017F154  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 801834B8 0017F158  4E 80 00 20 */	blr 
+/* 801834B8 0017F158  4E 80 00 20 */	blr
 
 .global "SubmitTweenBlock__8UIReflowFv"
 "SubmitTweenBlock__8UIReflowFv":
@@ -9683,7 +9683,7 @@ lbl_80183520:
 /* 80183524 0017F1C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80183528 0017F1C8  7C 08 03 A6 */	mtlr r0
 /* 8018352C 0017F1CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183530 0017F1D0  4E 80 00 20 */	blr 
+/* 80183530 0017F1D0  4E 80 00 20 */	blr
 
 .global "Tween_X__8UIReflowFi"
 "Tween_X__8UIReflowFi":
@@ -9712,7 +9712,7 @@ lbl_80183520:
 /* 8018358C 0017F22C  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80183590 0017F230  7C 08 03 A6 */	mtlr r0
 /* 80183594 0017F234  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183598 0017F238  4E 80 00 20 */	blr 
+/* 80183598 0017F238  4E 80 00 20 */	blr
 
 .global "Tween_Y__8UIReflowFi"
 "Tween_Y__8UIReflowFi":
@@ -9741,7 +9741,7 @@ lbl_80183520:
 /* 801835F4 0017F294  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 801835F8 0017F298  7C 08 03 A6 */	mtlr r0
 /* 801835FC 0017F29C  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183600 0017F2A0  4E 80 00 20 */	blr 
+/* 80183600 0017F2A0  4E 80 00 20 */	blr
 
 .global "Tween_H__8UIReflowFUi"
 "Tween_H__8UIReflowFUi":
@@ -9770,7 +9770,7 @@ lbl_80183520:
 /* 8018365C 0017F2FC  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80183660 0017F300  7C 08 03 A6 */	mtlr r0
 /* 80183664 0017F304  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183668 0017F308  4E 80 00 20 */	blr 
+/* 80183668 0017F308  4E 80 00 20 */	blr
 
 .global "Tween_W__8UIReflowFUi"
 "Tween_W__8UIReflowFUi":
@@ -9799,7 +9799,7 @@ lbl_80183520:
 /* 801836C4 0017F364  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 801836C8 0017F368  7C 08 03 A6 */	mtlr r0
 /* 801836CC 0017F36C  38 21 00 90 */	addi r1, r1, 0x90
-/* 801836D0 0017F370  4E 80 00 20 */	blr 
+/* 801836D0 0017F370  4E 80 00 20 */	blr
 
 .global "Tween_Rotation__8UIReflowFf"
 "Tween_Rotation__8UIReflowFf":
@@ -9828,7 +9828,7 @@ lbl_80183520:
 /* 8018372C 0017F3CC  83 E1 00 94 */	lwz r31, 0x94(r1)
 /* 80183730 0017F3D0  7C 08 03 A6 */	mtlr r0
 /* 80183734 0017F3D4  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80183738 0017F3D8  4E 80 00 20 */	blr 
+/* 80183738 0017F3D8  4E 80 00 20 */	blr
 
 .global "Tween_Alpha__8UIReflowFUi"
 "Tween_Alpha__8UIReflowFUi":
@@ -9861,7 +9861,7 @@ lbl_80183520:
 /* 801837A4 0017F444  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 801837A8 0017F448  7C 08 03 A6 */	mtlr r0
 /* 801837AC 0017F44C  38 21 00 90 */	addi r1, r1, 0x90
-/* 801837B0 0017F450  4E 80 00 20 */	blr 
+/* 801837B0 0017F450  4E 80 00 20 */	blr
 
 .global "Tween_ColorOverride__8UIReflowFUi"
 "Tween_ColorOverride__8UIReflowFUi":
@@ -9896,7 +9896,7 @@ lbl_80183520:
 /* 80183824 0017F4C4  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80183828 0017F4C8  7C 08 03 A6 */	mtlr r0
 /* 8018382C 0017F4CC  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183830 0017F4D0  4E 80 00 20 */	blr 
+/* 80183830 0017F4D0  4E 80 00 20 */	blr
 
 .global "Tween_ColorOnlyOverride__8UIReflowFUi"
 "Tween_ColorOnlyOverride__8UIReflowFUi":
@@ -9928,7 +9928,7 @@ lbl_80183520:
 /* 80183898 0017F538  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 8018389C 0017F53C  7C 08 03 A6 */	mtlr r0
 /* 801838A0 0017F540  38 21 00 90 */	addi r1, r1, 0x90
-/* 801838A4 0017F544  4E 80 00 20 */	blr 
+/* 801838A4 0017F544  4E 80 00 20 */	blr
 
 .global "Tween_FontSizeOverride__8UIReflowFUi"
 "Tween_FontSizeOverride__8UIReflowFUi":
@@ -9957,7 +9957,7 @@ lbl_80183520:
 /* 80183900 0017F5A0  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80183904 0017F5A4  7C 08 03 A6 */	mtlr r0
 /* 80183908 0017F5A8  38 21 00 90 */	addi r1, r1, 0x90
-/* 8018390C 0017F5AC  4E 80 00 20 */	blr 
+/* 8018390C 0017F5AC  4E 80 00 20 */	blr
 
 .global "OpenReflowBlock__8UIReflowFv"
 "OpenReflowBlock__8UIReflowFv":
@@ -9991,7 +9991,7 @@ lbl_80183974:
 /* 80183978 0017F618  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8018397C 0017F61C  7C 08 03 A6 */	mtlr r0
 /* 80183980 0017F620  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183984 0017F624  4E 80 00 20 */	blr 
+/* 80183984 0017F624  4E 80 00 20 */	blr
 
 .global "SubmitReflowBlock__8UIReflowFv"
 "SubmitReflowBlock__8UIReflowFv":
@@ -10032,7 +10032,7 @@ lbl_80183A04:
 /* 80183A08 0017F6A8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80183A0C 0017F6AC  7C 08 03 A6 */	mtlr r0
 /* 80183A10 0017F6B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183A14 0017F6B4  4E 80 00 20 */	blr 
+/* 80183A14 0017F6B4  4E 80 00 20 */	blr
 
 .global "Reflow_Id__8UIReflowFPCc"
 "Reflow_Id__8UIReflowFPCc":
@@ -10056,7 +10056,7 @@ lbl_80183A04:
 /* 80183A5C 0017F6FC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80183A60 0017F700  7C 08 03 A6 */	mtlr r0
 /* 80183A64 0017F704  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183A68 0017F708  4E 80 00 20 */	blr 
+/* 80183A68 0017F708  4E 80 00 20 */	blr
 
 .global "Reflow_X__8UIReflowFi"
 "Reflow_X__8UIReflowFi":
@@ -10105,7 +10105,7 @@ lbl_80183A04:
 /* 80183AD8 0017F778  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80183ADC 0017F77C  7C 08 03 A6 */	mtlr r0
 /* 80183AE0 0017F780  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183AE4 0017F784  4E 80 00 20 */	blr 
+/* 80183AE4 0017F784  4E 80 00 20 */	blr
 
 .global "Reflow_Alpha__8UIReflowFUi"
 "Reflow_Alpha__8UIReflowFUi":
@@ -10133,7 +10133,7 @@ lbl_80183A04:
 /* 80183B30 0017F7D0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80183B34 0017F7D4  7C 08 03 A6 */	mtlr r0
 /* 80183B38 0017F7D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183B3C 0017F7DC  4E 80 00 20 */	blr 
+/* 80183B3C 0017F7DC  4E 80 00 20 */	blr
 
 .global "Reflow_ColorOverride__8UIReflowFUi"
 "Reflow_ColorOverride__8UIReflowFUi":
@@ -10169,7 +10169,7 @@ lbl_80183A04:
 /* 80183B90 0017F830  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80183B94 0017F834  7C 08 03 A6 */	mtlr r0
 /* 80183B98 0017F838  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183B9C 0017F83C  4E 80 00 20 */	blr 
+/* 80183B9C 0017F83C  4E 80 00 20 */	blr
 
 .global "Debug_PrintBlock__8UIReflowFPc"
 "Debug_PrintBlock__8UIReflowFPc":
@@ -10241,7 +10241,7 @@ lbl_80183C7C:
 /* 80183C84 0017F924  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80183C88 0017F928  7C 08 03 A6 */	mtlr r0
 /* 80183C8C 0017F92C  38 21 00 90 */	addi r1, r1, 0x90
-/* 80183C90 0017F930  4E 80 00 20 */	blr 
+/* 80183C90 0017F930  4E 80 00 20 */	blr
 
 .global "__ct__8UIRouterFv"
 "__ct__8UIRouterFv":
@@ -10268,7 +10268,7 @@ lbl_80183C7C:
 /* 80183CE4 0017F984  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80183CE8 0017F988  7C 08 03 A6 */	mtlr r0
 /* 80183CEC 0017F98C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183CF0 0017F990  4E 80 00 20 */	blr 
+/* 80183CF0 0017F990  4E 80 00 20 */	blr
 
 .global "__dt__8UIRouterFv"
 "__dt__8UIRouterFv":
@@ -10303,7 +10303,7 @@ lbl_80183D54:
 /* 80183D60 0017FA00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80183D64 0017FA04  7C 08 03 A6 */	mtlr r0
 /* 80183D68 0017FA08  38 21 00 10 */	addi r1, r1, 0x10
-/* 80183D6C 0017FA0C  4E 80 00 20 */	blr 
+/* 80183D6C 0017FA0C  4E 80 00 20 */	blr
 
 .global "GetVariable__8UIRouterFPCc"
 "GetVariable__8UIRouterFPCc":
@@ -10368,7 +10368,7 @@ lbl_80183E34:
 /* 80183E40 0017FAE0  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 80183E44 0017FAE4  7C 08 03 A6 */	mtlr r0
 /* 80183E48 0017FAE8  38 21 00 60 */	addi r1, r1, 0x60
-/* 80183E4C 0017FAEC  4E 80 00 20 */	blr 
+/* 80183E4C 0017FAEC  4E 80 00 20 */	blr
 
 .global "SetVariable__8UIRouterFPCcPCc"
 "SetVariable__8UIRouterFPCcPCc":
@@ -10434,7 +10434,7 @@ lbl_80183F18:
 /* 80183F28 0017FBC8  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 80183F2C 0017FBCC  7C 08 03 A6 */	mtlr r0
 /* 80183F30 0017FBD0  38 21 00 60 */	addi r1, r1, 0x60
-/* 80183F34 0017FBD4  4E 80 00 20 */	blr 
+/* 80183F34 0017FBD4  4E 80 00 20 */	blr
 
 .global "__ct__15UIScreenManagerFv"
 "__ct__15UIScreenManagerFv":
@@ -10578,7 +10578,7 @@ lbl_80184078:
 /* 80184158 0017FDF8  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8018415C 0017FDFC  7C 08 03 A6 */	mtlr r0
 /* 80184160 0017FE00  38 21 00 80 */	addi r1, r1, 0x80
-/* 80184164 0017FE04  4E 80 00 20 */	blr 
+/* 80184164 0017FE04  4E 80 00 20 */	blr
 
 .global "__dt__15UIScreenManagerFv"
 "__dt__15UIScreenManagerFv":
@@ -10609,7 +10609,7 @@ lbl_801841B8:
 /* 801841C4 0017FE64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801841C8 0017FE68  7C 08 03 A6 */	mtlr r0
 /* 801841CC 0017FE6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801841D0 0017FE70  4E 80 00 20 */	blr 
+/* 801841D0 0017FE70  4E 80 00 20 */	blr
 
 .global "FindDataByID__15UIScreenManagerCF10UIScreenID"
 "FindDataByID__15UIScreenManagerCF10UIScreenID":
@@ -10624,11 +10624,11 @@ lbl_801841E0:
 lbl_801841F0:
 /* 801841F0 0017FE90  2C 03 00 00 */	cmpwi r3, 0
 /* 801841F4 0017FE94  38 A5 00 14 */	addi r5, r5, 0x14
-/* 801841F8 0017FE98  4C 82 00 20 */	bnelr 
+/* 801841F8 0017FE98  4C 82 00 20 */	bnelr
 /* 801841FC 0017FE9C  80 05 00 00 */	lwz r0, 0(r5)
 /* 80184200 0017FEA0  2C 00 00 54 */	cmpwi r0, 0x54
 /* 80184204 0017FEA4  40 82 FF DC */	bne lbl_801841E0
-/* 80184208 0017FEA8  4E 80 00 20 */	blr 
+/* 80184208 0017FEA8  4E 80 00 20 */	blr
 
 .global "LoadUIScreen__15UIScreenManagerF10UIScreenID"
 "LoadUIScreen__15UIScreenManagerF10UIScreenID":
@@ -10854,7 +10854,7 @@ lbl_80184518:
 /* 80184520 001801C0  80 01 03 34 */	lwz r0, 0x334(r1)
 /* 80184524 001801C4  7C 08 03 A6 */	mtlr r0
 /* 80184528 001801C8  38 21 03 30 */	addi r1, r1, 0x330
-/* 8018452C 001801CC  4E 80 00 20 */	blr 
+/* 8018452C 001801CC  4E 80 00 20 */	blr
 
 .global "UnloadUIScreen__15UIScreenManagerF10UIScreenID"
 "UnloadUIScreen__15UIScreenManagerF10UIScreenID":
@@ -10970,7 +10970,7 @@ lbl_801846B8:
 /* 801846C4 00180364  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 801846C8 00180368  7C 08 03 A6 */	mtlr r0
 /* 801846CC 0018036C  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 801846D0 00180370  4E 80 00 20 */	blr 
+/* 801846D0 00180370  4E 80 00 20 */	blr
 
 .global "IsScreenManaged__15UIScreenManagerF10UIScreenID"
 "IsScreenManaged__15UIScreenManagerF10UIScreenID":
@@ -10989,7 +10989,7 @@ lbl_801846F8:
 /* 80184700 001803A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80184704 001803A4  7C 08 03 A6 */	mtlr r0
 /* 80184708 001803A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8018470C 001803AC  4E 80 00 20 */	blr 
+/* 8018470C 001803AC  4E 80 00 20 */	blr
 
 .global "SuspendAllActiveScreens__15UIScreenManagerFv"
 "SuspendAllActiveScreens__15UIScreenManagerFv":
@@ -11038,7 +11038,7 @@ lbl_80184798:
 /* 801847B0 00180450  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801847B4 00180454  7C 08 03 A6 */	mtlr r0
 /* 801847B8 00180458  38 21 00 40 */	addi r1, r1, 0x40
-/* 801847BC 0018045C  4E 80 00 20 */	blr 
+/* 801847BC 0018045C  4E 80 00 20 */	blr
 
 .global "ScreenHasFocus__15UIScreenManagerF10UIScreenID"
 "ScreenHasFocus__15UIScreenManagerF10UIScreenID":
@@ -11066,7 +11066,7 @@ lbl_80184804:
 /* 80184810 001804B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80184814 001804B4  7C 08 03 A6 */	mtlr r0
 /* 80184818 001804B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8018481C 001804BC  4E 80 00 20 */	blr 
+/* 8018481C 001804BC  4E 80 00 20 */	blr
 
 .global "FixCurrentFocusNumber__15UIScreenManagerFv"
 "FixCurrentFocusNumber__15UIScreenManagerFv":
@@ -11141,14 +11141,14 @@ lbl_8018490C:
 /* 80184914 001805B4  42 00 FF 20 */	bdnz lbl_80184834
 lbl_80184918:
 /* 80184918 001805B8  2C 06 00 00 */	cmpwi r6, 0
-/* 8018491C 001805BC  4C 82 00 20 */	bnelr 
+/* 8018491C 001805BC  4C 82 00 20 */	bnelr
 /* 80184920 001805C0  80 83 02 A4 */	lwz r4, 0x2a4(r3)
 /* 80184924 001805C4  2C 04 00 00 */	cmpwi r4, 0
-/* 80184928 001805C8  4C 81 00 20 */	blelr 
+/* 80184928 001805C8  4C 81 00 20 */	blelr
 /* 8018492C 001805CC  38 04 FF FF */	addi r0, r4, -1
 /* 80184930 001805D0  90 03 02 A4 */	stw r0, 0x2a4(r3)
 /* 80184934 001805D4  4B FF FE EC */	b "FixCurrentFocusNumber__15UIScreenManagerFv"
-/* 80184938 001805D8  4E 80 00 20 */	blr 
+/* 80184938 001805D8  4E 80 00 20 */	blr
 
 .global "SuspendScreenList__15UIScreenManagerFPC10UIScreenID"
 "SuspendScreenList__15UIScreenManagerFPC10UIScreenID":
@@ -11223,7 +11223,7 @@ lbl_80184A18:
 /* 80184A34 001806D4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80184A38 001806D8  7C 08 03 A6 */	mtlr r0
 /* 80184A3C 001806DC  38 21 00 50 */	addi r1, r1, 0x50
-/* 80184A40 001806E0  4E 80 00 20 */	blr 
+/* 80184A40 001806E0  4E 80 00 20 */	blr
 
 .global "AddScreen__15UIScreenManagerF10UIScreenIDi"
 "AddScreen__15UIScreenManagerF10UIScreenIDi":
@@ -11257,7 +11257,7 @@ lbl_80184A84:
 /* 80184AA4 00180744  90 09 00 04 */	stw r0, 4(r9)
 lbl_80184AA8:
 /* 80184AA8 00180748  7D 03 43 78 */	mr r3, r8
-/* 80184AAC 0018074C  4E 80 00 20 */	blr 
+/* 80184AAC 0018074C  4E 80 00 20 */	blr
 
 .global "FindRecordIndexByID__15UIScreenManagerCF10UIScreenID"
 "FindRecordIndexByID__15UIScreenManagerCF10UIScreenID":
@@ -11278,9 +11278,9 @@ lbl_80184AD4:
 /* 80184AE0 00180780  41 80 FF DC */	blt lbl_80184ABC
 lbl_80184AE4:
 /* 80184AE4 00180784  2C 06 00 00 */	cmpwi r6, 0
-/* 80184AE8 00180788  4C 82 00 20 */	bnelr 
+/* 80184AE8 00180788  4C 82 00 20 */	bnelr
 /* 80184AEC 0018078C  38 60 FF FF */	li r3, -1
-/* 80184AF0 00180790  4E 80 00 20 */	blr 
+/* 80184AF0 00180790  4E 80 00 20 */	blr
 
 .global "GetScreenFlashName__15UIScreenManagerFPc10UIScreenID"
 "GetScreenFlashName__15UIScreenManagerFPc10UIScreenID":
@@ -11344,7 +11344,7 @@ lbl_80184BB4:
 /* 80184BC0 00180860  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80184BC4 00180864  7C 08 03 A6 */	mtlr r0
 /* 80184BC8 00180868  38 21 00 20 */	addi r1, r1, 0x20
-/* 80184BCC 0018086C  4E 80 00 20 */	blr 
+/* 80184BCC 0018086C  4E 80 00 20 */	blr
 
 .global "IsUIScreenUnloaded__15UIScreenManagerF10UIScreenID"
 "IsUIScreenUnloaded__15UIScreenManagerF10UIScreenID":
@@ -11363,7 +11363,7 @@ lbl_80184BF4:
 /* 80184BFC 0018089C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80184C00 001808A0  7C 08 03 A6 */	mtlr r0
 /* 80184C04 001808A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80184C08 001808A8  4E 80 00 20 */	blr 
+/* 80184C08 001808A8  4E 80 00 20 */	blr
 
 .global "IsUIScreenMarkedForUnloading__15UIScreenManagerF10UIScreenID"
 "IsUIScreenMarkedForUnloading__15UIScreenManagerF10UIScreenID":
@@ -11392,7 +11392,7 @@ lbl_80184C54:
 /* 80184C60 00180900  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80184C64 00180904  7C 08 03 A6 */	mtlr r0
 /* 80184C68 00180908  38 21 00 10 */	addi r1, r1, 0x10
-/* 80184C6C 0018090C  4E 80 00 20 */	blr 
+/* 80184C6C 0018090C  4E 80 00 20 */	blr
 
 .global "SetHandlesInput__15UIScreenManagerF10UIScreenIDb"
 "SetHandlesInput__15UIScreenManagerF10UIScreenIDb":
@@ -11449,7 +11449,7 @@ lbl_80184D0C:
 /* 80184D34 001809D4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80184D38 001809D8  7C 08 03 A6 */	mtlr r0
 /* 80184D3C 001809DC  38 21 00 60 */	addi r1, r1, 0x60
-/* 80184D40 001809E0  4E 80 00 20 */	blr 
+/* 80184D40 001809E0  4E 80 00 20 */	blr
 
 .global "SetVariable__15UIScreenManagerFPCcPCc"
 "SetVariable__15UIScreenManagerFPCcPCc":
@@ -11520,7 +11520,7 @@ lbl_80184E28:
 /* 80184E30 00180AD0  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80184E34 00180AD4  7C 08 03 A6 */	mtlr r0
 /* 80184E38 00180AD8  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80184E3C 00180ADC  4E 80 00 20 */	blr 
+/* 80184E3C 00180ADC  4E 80 00 20 */	blr
 
 .global "Update__15UIScreenManagerFv"
 "Update__15UIScreenManagerFv":
@@ -11563,7 +11563,7 @@ lbl_80184EB4:
 /* 80184EC0 00180B60  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80184EC4 00180B64  7C 08 03 A6 */	mtlr r0
 /* 80184EC8 00180B68  38 21 00 20 */	addi r1, r1, 0x20
-/* 80184ECC 00180B6C  4E 80 00 20 */	blr 
+/* 80184ECC 00180B6C  4E 80 00 20 */	blr
 
 .global "PopQueue__15UIScreenManagerFi"
 "PopQueue__15UIScreenManagerFi":
@@ -11606,7 +11606,7 @@ lbl_80184F44:
 lbl_80184F54:
 /* 80184F54 00180BF4  38 00 00 00 */	li r0, 0
 /* 80184F58 00180BF8  90 03 02 A0 */	stw r0, 0x2a0(r3)
-/* 80184F5C 00180BFC  4E 80 00 20 */	blr 
+/* 80184F5C 00180BFC  4E 80 00 20 */	blr
 
 .global "__ct__13UIAUDIOTargetFv"
 "__ct__13UIAUDIOTargetFv":
@@ -11678,7 +11678,7 @@ lbl_80184F54:
 /* 80185064 00180D04  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80185068 00180D08  7C 08 03 A6 */	mtlr r0
 /* 8018506C 00180D0C  38 21 00 80 */	addi r1, r1, 0x80
-/* 80185070 00180D10  4E 80 00 20 */	blr 
+/* 80185070 00180D10  4E 80 00 20 */	blr
 
 .global "__dt__13UIAUDIOTargetFv"
 "__dt__13UIAUDIOTargetFv":
@@ -11709,7 +11709,7 @@ lbl_801850C4:
 /* 801850D0 00180D70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801850D4 00180D74  7C 08 03 A6 */	mtlr r0
 /* 801850D8 00180D78  38 21 00 10 */	addi r1, r1, 0x10
-/* 801850DC 00180D7C  4E 80 00 20 */	blr 
+/* 801850DC 00180D7C  4E 80 00 20 */	blr
 
 .global "SetVariable__13UIAUDIOTargetFPCcPCc"
 "SetVariable__13UIAUDIOTargetFPCcPCc":
@@ -11770,7 +11770,7 @@ lbl_80185194:
 /* 801851A0 00180E40  83 A1 00 94 */	lwz r29, 0x94(r1)
 /* 801851A4 00180E44  7C 08 03 A6 */	mtlr r0
 /* 801851A8 00180E48  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 801851AC 00180E4C  4E 80 00 20 */	blr 
+/* 801851AC 00180E4C  4E 80 00 20 */	blr
 
 .global "GetVariable__13UIAUDIOTargetFPCc"
 "GetVariable__13UIAUDIOTargetFPCc":
@@ -11808,7 +11808,7 @@ lbl_80185210:
 /* 80185224 00180EC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80185228 00180EC8  7C 08 03 A6 */	mtlr r0
 /* 8018522C 00180ECC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80185230 00180ED0  4E 80 00 20 */	blr 
+/* 80185230 00180ED0  4E 80 00 20 */	blr
 
 .global "__ct__8UIAnalogFv"
 "__ct__8UIAnalogFv":
@@ -11889,7 +11889,7 @@ lbl_80185210:
 /* 8018535C 00180FFC  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80185360 00181000  7C 08 03 A6 */	mtlr r0
 /* 80185364 00181004  38 21 00 80 */	addi r1, r1, 0x80
-/* 80185368 00181008  4E 80 00 20 */	blr 
+/* 80185368 00181008  4E 80 00 20 */	blr
 
 .global "__dt__8UIAnalogFv"
 "__dt__8UIAnalogFv":
@@ -11920,7 +11920,7 @@ lbl_801853BC:
 /* 801853C8 00181068  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801853CC 0018106C  7C 08 03 A6 */	mtlr r0
 /* 801853D0 00181070  38 21 00 10 */	addi r1, r1, 0x10
-/* 801853D4 00181074  4E 80 00 20 */	blr 
+/* 801853D4 00181074  4E 80 00 20 */	blr
 
 .global "GetVariable__8UIAnalogFPCc"
 "GetVariable__8UIAnalogFPCc":
@@ -12029,7 +12029,7 @@ lbl_80185548:
 /* 8018555C 001811FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80185560 00181200  7C 08 03 A6 */	mtlr r0
 /* 80185564 00181204  38 21 00 20 */	addi r1, r1, 0x20
-/* 80185568 00181208  4E 80 00 20 */	blr 
+/* 80185568 00181208  4E 80 00 20 */	blr
 
 .global "Startup__14UIButtonImagesFv"
 "Startup__14UIButtonImagesFv":
@@ -12053,7 +12053,7 @@ lbl_801855A8:
 /* 801855A8 00181248  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801855AC 0018124C  7C 08 03 A6 */	mtlr r0
 /* 801855B0 00181250  38 21 00 10 */	addi r1, r1, 0x10
-/* 801855B4 00181254  4E 80 00 20 */	blr 
+/* 801855B4 00181254  4E 80 00 20 */	blr
 
 .global "Shutdown__14UIButtonImagesFv"
 "Shutdown__14UIButtonImagesFv":
@@ -12071,7 +12071,7 @@ lbl_801855A8:
 /* 801855E4 00181284  38 80 00 01 */	li r4, 1
 /* 801855E8 00181288  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801855EC 0018128C  7D 89 03 A6 */	mtctr r12
-/* 801855F0 00181290  4E 80 04 21 */	bctrl 
+/* 801855F0 00181290  4E 80 04 21 */	bctrl
 lbl_801855F4:
 /* 801855F4 00181294  38 00 00 00 */	li r0, 0
 /* 801855F8 00181298  90 0D B7 18 */	stw r0, "instance__14UIButtonImages"-_SDA_BASE_(r13)
@@ -12079,7 +12079,7 @@ lbl_801855FC:
 /* 801855FC 0018129C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80185600 001812A0  7C 08 03 A6 */	mtlr r0
 /* 80185604 001812A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80185608 001812A8  4E 80 00 20 */	blr 
+/* 80185608 001812A8  4E 80 00 20 */	blr
 
 .global "__ct__14UIButtonImagesFv"
 "__ct__14UIButtonImagesFv":
@@ -12121,7 +12121,7 @@ lbl_8018562C:
 lbl_80185694:
 /* 80185694 00181334  80 03 01 AC */	lwz r0, 0x1ac(r3)
 /* 80185698 00181338  2C 00 00 03 */	cmpwi r0, 3
-/* 8018569C 0018133C  4C 82 00 20 */	bnelr 
+/* 8018569C 0018133C  4C 82 00 20 */	bnelr
 /* 801856A0 00181340  C0 02 8A 20 */	lfs f0, lbl_805D9C40-_SDA2_BASE_(r2)
 /* 801856A4 00181344  D0 03 01 2C */	stfs f0, 0x12c(r3)
 /* 801856A8 00181348  D0 03 01 40 */	stfs f0, 0x140(r3)
@@ -12129,7 +12129,7 @@ lbl_80185694:
 /* 801856B0 00181350  D0 03 01 4C */	stfs f0, 0x14c(r3)
 /* 801856B4 00181354  D0 03 01 54 */	stfs f0, 0x154(r3)
 /* 801856B8 00181358  D0 03 01 5C */	stfs f0, 0x15c(r3)
-/* 801856BC 0018135C  4E 80 00 20 */	blr 
+/* 801856BC 0018135C  4E 80 00 20 */	blr
 
 .global "__dt__14UIButtonImagesFv"
 "__dt__14UIButtonImagesFv":
@@ -12149,7 +12149,7 @@ lbl_801856E8:
 /* 801856F0 00181390  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801856F4 00181394  7C 08 03 A6 */	mtlr r0
 /* 801856F8 00181398  38 21 00 10 */	addi r1, r1, 0x10
-/* 801856FC 0018139C  4E 80 00 20 */	blr 
+/* 801856FC 0018139C  4E 80 00 20 */	blr
 
 .global "DefineIDs__14UIButtonImagesFv"
 "DefineIDs__14UIButtonImagesFv":
@@ -12449,7 +12449,7 @@ lbl_80185B7C:
 /* 80185B84 00181824  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80185B88 00181828  7C 08 03 A6 */	mtlr r0
 /* 80185B8C 0018182C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80185B90 00181830  4E 80 00 20 */	blr 
+/* 80185B90 00181830  4E 80 00 20 */	blr
 
 .global "AddRefAll__14UIButtonImagesFv"
 "AddRefAll__14UIButtonImagesFv":
@@ -12470,7 +12470,7 @@ lbl_80185BC0:
 /* 80185BC8 00181868  81 83 00 00 */	lwz r12, 0(r3)
 /* 80185BCC 0018186C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80185BD0 00181870  7D 89 03 A6 */	mtctr r12
-/* 80185BD4 00181874  4E 80 04 21 */	bctrl 
+/* 80185BD4 00181874  4E 80 04 21 */	bctrl
 /* 80185BD8 00181878  3B BD 00 01 */	addi r29, r29, 1
 /* 80185BDC 0018187C  3B DE 00 04 */	addi r30, r30, 4
 /* 80185BE0 00181880  2C 1D 00 23 */	cmpwi r29, 0x23
@@ -12484,7 +12484,7 @@ lbl_80185BC0:
 /* 80185C00 001818A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80185C04 001818A4  7C 08 03 A6 */	mtlr r0
 /* 80185C08 001818A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80185C0C 001818AC  4E 80 00 20 */	blr 
+/* 80185C0C 001818AC  4E 80 00 20 */	blr
 
 .global "DelRefAll__14UIButtonImagesFv"
 "DelRefAll__14UIButtonImagesFv":
@@ -12517,7 +12517,7 @@ lbl_80185C3C:
 /* 80185C74 00181914  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80185C78 00181918  7C 08 03 A6 */	mtlr r0
 /* 80185C7C 0018191C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80185C80 00181920  4E 80 00 20 */	blr 
+/* 80185C80 00181920  4E 80 00 20 */	blr
 
 .global "GetButtonShader__14UIButtonImagesFi"
 "GetButtonShader__14UIButtonImagesFi":
@@ -12552,7 +12552,7 @@ lbl_80185CE4:
 /* 80185CE8 00181988  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80185CEC 0018198C  7C 08 03 A6 */	mtlr r0
 /* 80185CF0 00181990  38 21 00 10 */	addi r1, r1, 0x10
-/* 80185CF4 00181994  4E 80 00 20 */	blr 
+/* 80185CF4 00181994  4E 80 00 20 */	blr
 
 .global "GetButtonMinSize__14UIButtonImagesFi"
 "GetButtonMinSize__14UIButtonImagesFi":
@@ -12562,10 +12562,10 @@ lbl_80185CE4:
 /* 80185D04 001819A4  54 60 10 3A */	slwi r0, r3, 2
 /* 80185D08 001819A8  7C 64 02 14 */	add r3, r4, r0
 /* 80185D0C 001819AC  C0 23 01 1C */	lfs f1, 0x11c(r3)
-/* 80185D10 001819B0  4E 80 00 20 */	blr 
+/* 80185D10 001819B0  4E 80 00 20 */	blr
 lbl_80185D14:
 /* 80185D14 001819B4  C0 22 89 D8 */	lfs f1, lbl_805D9BF8-_SDA2_BASE_(r2)
-/* 80185D18 001819B8  4E 80 00 20 */	blr 
+/* 80185D18 001819B8  4E 80 00 20 */	blr
 
 .global "LocalizeXBoxImages__14UIButtonImagesFv"
 "LocalizeXBoxImages__14UIButtonImagesFv":
@@ -12722,34 +12722,34 @@ lbl_80185F34:
 /* 80185F50 00181BF0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80185F54 00181BF4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80185F58 00181BF8  7D 89 03 A6 */	mtctr r12
-/* 80185F5C 00181BFC  4E 80 04 21 */	bctrl 
+/* 80185F5C 00181BFC  4E 80 04 21 */	bctrl
 /* 80185F60 00181C00  38 7F 95 24 */	addi r3, r31, -27356
 /* 80185F64 00181C04  80 8D B7 18 */	lwz r4, "instance__14UIButtonImages"-_SDA_BASE_(r13)
 /* 80185F68 00181C08  81 83 00 00 */	lwz r12, 0(r3)
 /* 80185F6C 00181C0C  80 84 00 14 */	lwz r4, 0x14(r4)
 /* 80185F70 00181C10  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80185F74 00181C14  7D 89 03 A6 */	mtctr r12
-/* 80185F78 00181C18  4E 80 04 21 */	bctrl 
+/* 80185F78 00181C18  4E 80 04 21 */	bctrl
 /* 80185F7C 00181C1C  38 7F 95 24 */	addi r3, r31, -27356
 /* 80185F80 00181C20  80 8D B7 18 */	lwz r4, "instance__14UIButtonImages"-_SDA_BASE_(r13)
 /* 80185F84 00181C24  81 83 00 00 */	lwz r12, 0(r3)
 /* 80185F88 00181C28  80 84 00 30 */	lwz r4, 0x30(r4)
 /* 80185F8C 00181C2C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80185F90 00181C30  7D 89 03 A6 */	mtctr r12
-/* 80185F94 00181C34  4E 80 04 21 */	bctrl 
+/* 80185F94 00181C34  4E 80 04 21 */	bctrl
 /* 80185F98 00181C38  38 7F 95 24 */	addi r3, r31, -27356
 /* 80185F9C 00181C3C  80 8D B7 18 */	lwz r4, "instance__14UIButtonImages"-_SDA_BASE_(r13)
 /* 80185FA0 00181C40  81 83 00 00 */	lwz r12, 0(r3)
 /* 80185FA4 00181C44  80 84 00 34 */	lwz r4, 0x34(r4)
 /* 80185FA8 00181C48  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80185FAC 00181C4C  7D 89 03 A6 */	mtctr r12
-/* 80185FB0 00181C50  4E 80 04 21 */	bctrl 
+/* 80185FB0 00181C50  4E 80 04 21 */	bctrl
 lbl_80185FB4:
 /* 80185FB4 00181C54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80185FB8 00181C58  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80185FBC 00181C5C  7C 08 03 A6 */	mtlr r0
 /* 80185FC0 00181C60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80185FC4 00181C64  4E 80 00 20 */	blr 
+/* 80185FC4 00181C64  4E 80 00 20 */	blr
 
 .global "LocalizePS2Images__14UIButtonImagesFv"
 "LocalizePS2Images__14UIButtonImagesFv":
@@ -12816,20 +12816,20 @@ lbl_80186088:
 /* 801860A4 00181D44  81 83 00 00 */	lwz r12, 0(r3)
 /* 801860A8 00181D48  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801860AC 00181D4C  7D 89 03 A6 */	mtctr r12
-/* 801860B0 00181D50  4E 80 04 21 */	bctrl 
+/* 801860B0 00181D50  4E 80 04 21 */	bctrl
 /* 801860B4 00181D54  38 7F 95 24 */	addi r3, r31, -27356
 /* 801860B8 00181D58  80 8D B7 18 */	lwz r4, "instance__14UIButtonImages"-_SDA_BASE_(r13)
 /* 801860BC 00181D5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 801860C0 00181D60  80 84 00 14 */	lwz r4, 0x14(r4)
 /* 801860C4 00181D64  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 801860C8 00181D68  7D 89 03 A6 */	mtctr r12
-/* 801860CC 00181D6C  4E 80 04 21 */	bctrl 
+/* 801860CC 00181D6C  4E 80 04 21 */	bctrl
 lbl_801860D0:
 /* 801860D0 00181D70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801860D4 00181D74  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801860D8 00181D78  7C 08 03 A6 */	mtlr r0
 /* 801860DC 00181D7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801860E0 00181D80  4E 80 00 20 */	blr 
+/* 801860E0 00181D80  4E 80 00 20 */	blr
 
 .global "__ct__9CURTargetFv"
 "__ct__9CURTargetFv":
@@ -12924,7 +12924,7 @@ lbl_80186168:
 /* 80186240 00181EE0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80186244 00181EE4  7C 08 03 A6 */	mtlr r0
 /* 80186248 00181EE8  38 21 00 80 */	addi r1, r1, 0x80
-/* 8018624C 00181EEC  4E 80 00 20 */	blr 
+/* 8018624C 00181EEC  4E 80 00 20 */	blr
 
 .global "__dt__9CURTargetFv"
 "__dt__9CURTargetFv":
@@ -12950,7 +12950,7 @@ lbl_8018628C:
 /* 80186298 00181F38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8018629C 00181F3C  7C 08 03 A6 */	mtlr r0
 /* 801862A0 00181F40  38 21 00 10 */	addi r1, r1, 0x10
-/* 801862A4 00181F44  4E 80 00 20 */	blr 
+/* 801862A4 00181F44  4E 80 00 20 */	blr
 
 .global "Instance__9CURTargetFv"
 "Instance__9CURTargetFv":
@@ -12972,7 +12972,7 @@ lbl_801862D8:
 /* 801862DC 00181F7C  80 6D B7 1C */	lwz r3, "s_SingletonCURTarget__9CURTarget"-_SDA_BASE_(r13)
 /* 801862E0 00181F80  7C 08 03 A6 */	mtlr r0
 /* 801862E4 00181F84  38 21 00 10 */	addi r1, r1, 0x10
-/* 801862E8 00181F88  4E 80 00 20 */	blr 
+/* 801862E8 00181F88  4E 80 00 20 */	blr
 
 .global "Shutdown__9CURTargetFv"
 "Shutdown__9CURTargetFv":
@@ -12987,7 +12987,7 @@ lbl_801862D8:
 /* 8018630C 00181FAC  38 80 00 01 */	li r4, 1
 /* 80186310 00181FB0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80186314 00181FB4  7D 89 03 A6 */	mtctr r12
-/* 80186318 00181FB8  4E 80 04 21 */	bctrl 
+/* 80186318 00181FB8  4E 80 04 21 */	bctrl
 lbl_8018631C:
 /* 8018631C 00181FBC  38 00 00 00 */	li r0, 0
 /* 80186320 00181FC0  90 0D B7 1C */	stw r0, "s_SingletonCURTarget__9CURTarget"-_SDA_BASE_(r13)
@@ -12995,7 +12995,7 @@ lbl_80186324:
 /* 80186324 00181FC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80186328 00181FC8  7C 08 03 A6 */	mtlr r0
 /* 8018632C 00181FCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186330 00181FD0  4E 80 00 20 */	blr 
+/* 80186330 00181FD0  4E 80 00 20 */	blr
 
 .global "SetPosition__9CURTargetFii"
 "SetPosition__9CURTargetFii":
@@ -13030,7 +13030,7 @@ lbl_80186394:
 /* 8018639C 0018203C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801863A0 00182040  7C 08 03 A6 */	mtlr r0
 /* 801863A4 00182044  38 21 00 10 */	addi r1, r1, 0x10
-/* 801863A8 00182048  4E 80 00 20 */	blr 
+/* 801863A8 00182048  4E 80 00 20 */	blr
 
 .global "ClampCursor__9CURTargetFv"
 "ClampCursor__9CURTargetFv":
@@ -13038,7 +13038,7 @@ lbl_80186394:
 /* 801863B0 00182050  2C 00 00 00 */	cmpwi r0, 0
 /* 801863B4 00182054  40 82 00 0C */	bne lbl_801863C0
 /* 801863B8 00182058  38 60 00 00 */	li r3, 0
-/* 801863BC 0018205C  4E 80 00 20 */	blr 
+/* 801863BC 0018205C  4E 80 00 20 */	blr
 lbl_801863C0:
 /* 801863C0 00182060  80 A3 00 A8 */	lwz r5, 0xa8(r3)
 /* 801863C4 00182064  80 03 00 B0 */	lwz r0, 0xb0(r3)
@@ -13049,7 +13049,7 @@ lbl_801863C0:
 /* 801863D8 00182078  7C 04 00 00 */	cmpw r4, r0
 /* 801863DC 0018207C  40 82 00 0C */	bne lbl_801863E8
 /* 801863E0 00182080  38 60 00 00 */	li r3, 0
-/* 801863E4 00182084  4E 80 00 20 */	blr 
+/* 801863E4 00182084  4E 80 00 20 */	blr
 lbl_801863E8:
 /* 801863E8 00182088  80 03 00 B8 */	lwz r0, 0xb8(r3)
 /* 801863EC 0018208C  7C 05 00 00 */	cmpw r5, r0
@@ -13067,7 +13067,7 @@ lbl_801863E8:
 /* 8018641C 001820BC  90 A3 00 B0 */	stw r5, 0xb0(r3)
 /* 80186420 001820C0  90 83 00 B4 */	stw r4, 0xb4(r3)
 /* 80186424 001820C4  38 60 00 00 */	li r3, 0
-/* 80186428 001820C8  4E 80 00 20 */	blr 
+/* 80186428 001820C8  4E 80 00 20 */	blr
 lbl_8018642C:
 /* 8018642C 001820CC  80 03 00 BC */	lwz r0, 0xbc(r3)
 /* 80186430 001820D0  7C 05 00 00 */	cmpw r5, r0
@@ -13097,7 +13097,7 @@ lbl_80186478:
 /* 80186480 00182120  90 83 00 B0 */	stw r4, 0xb0(r3)
 /* 80186484 00182124  90 03 00 B4 */	stw r0, 0xb4(r3)
 /* 80186488 00182128  38 60 00 01 */	li r3, 1
-/* 8018648C 0018212C  4E 80 00 20 */	blr 
+/* 8018648C 0018212C  4E 80 00 20 */	blr
 
 .global "GetPosition__9CURTargetFRiRi"
 "GetPosition__9CURTargetFRiRi":
@@ -13105,7 +13105,7 @@ lbl_80186478:
 /* 80186494 00182134  90 04 00 00 */	stw r0, 0(r4)
 /* 80186498 00182138  80 03 00 AC */	lwz r0, 0xac(r3)
 /* 8018649C 0018213C  90 05 00 00 */	stw r0, 0(r5)
-/* 801864A0 00182140  4E 80 00 20 */	blr 
+/* 801864A0 00182140  4E 80 00 20 */	blr
 
 .global "UpdateFlashWithPosition__9CURTargetFii"
 "UpdateFlashWithPosition__9CURTargetFii":
@@ -13139,7 +13139,7 @@ lbl_80186478:
 /* 80186510 001821B0  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 80186514 001821B4  7C 08 03 A6 */	mtlr r0
 /* 80186518 001821B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8018651C 001821BC  4E 80 00 20 */	blr 
+/* 8018651C 001821BC  4E 80 00 20 */	blr
 
 .global "AddVisibilityRef__9CURTargetFRiPCc"
 "AddVisibilityRef__9CURTargetFRiPCc":
@@ -13169,7 +13169,7 @@ lbl_80186478:
 /* 8018657C 0018221C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80186580 00182220  7C 08 03 A6 */	mtlr r0
 /* 80186584 00182224  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186588 00182228  4E 80 00 20 */	blr 
+/* 80186588 00182228  4E 80 00 20 */	blr
 
 .global "DelVisibilityRef__9CURTargetFRiPCc"
 "DelVisibilityRef__9CURTargetFRiPCc":
@@ -13199,7 +13199,7 @@ lbl_80186478:
 /* 801865E8 00182288  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801865EC 0018228C  7C 08 03 A6 */	mtlr r0
 /* 801865F0 00182290  38 21 00 10 */	addi r1, r1, 0x10
-/* 801865F4 00182294  4E 80 00 20 */	blr 
+/* 801865F4 00182294  4E 80 00 20 */	blr
 
 .global "DoAddRemoveFromStack__9CURTargetFbiPCc"
 "DoAddRemoveFromStack__9CURTargetFbiPCc":
@@ -13285,7 +13285,7 @@ lbl_80186700:
 /* 80186714 001823B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186718 001823B8  7C 08 03 A6 */	mtlr r0
 /* 8018671C 001823BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80186720 001823C0  4E 80 00 20 */	blr 
+/* 80186720 001823C0  4E 80 00 20 */	blr
 
 .global "SetVisible__9CURTargetFb"
 "SetVisible__9CURTargetFb":
@@ -13303,7 +13303,7 @@ lbl_80186700:
 /* 80186750 001823F0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80186754 001823F4  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80186758 001823F8  7D 89 03 A6 */	mtctr r12
-/* 8018675C 001823FC  4E 80 04 21 */	bctrl 
+/* 8018675C 001823FC  4E 80 04 21 */	bctrl
 /* 80186760 00182400  38 61 00 10 */	addi r3, r1, 0x10
 /* 80186764 00182404  38 8D 89 DC */	addi r4, r13, lbl_805D50BC-_SDA_BASE_
 /* 80186768 00182408  38 AD 89 D0 */	addi r5, r13, lbl_805D50B0-_SDA_BASE_
@@ -13316,7 +13316,7 @@ lbl_80186778:
 /* 80186780 00182420  81 83 00 00 */	lwz r12, 0(r3)
 /* 80186784 00182424  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80186788 00182428  7D 89 03 A6 */	mtctr r12
-/* 8018678C 0018242C  4E 80 04 21 */	bctrl 
+/* 8018678C 0018242C  4E 80 04 21 */	bctrl
 /* 80186790 00182430  38 61 00 10 */	addi r3, r1, 0x10
 /* 80186794 00182434  38 8D 89 DC */	addi r4, r13, lbl_805D50BC-_SDA_BASE_
 /* 80186798 00182438  38 AD 89 B4 */	addi r5, r13, lbl_805D5094-_SDA_BASE_
@@ -13336,30 +13336,30 @@ lbl_801867C8:
 /* 801867C8 00182468  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801867CC 0018246C  7C 08 03 A6 */	mtlr r0
 /* 801867D0 00182470  38 21 00 20 */	addi r1, r1, 0x20
-/* 801867D4 00182474  4E 80 00 20 */	blr 
+/* 801867D4 00182474  4E 80 00 20 */	blr
 
 .global "GetCursorHighlight__9CURTargetFv"
 "GetCursorHighlight__9CURTargetFv":
 /* 801867D8 00182478  88 63 00 D0 */	lbz r3, 0xd0(r3)
-/* 801867DC 0018247C  4E 80 00 20 */	blr 
+/* 801867DC 0018247C  4E 80 00 20 */	blr
 
 .global "SetCursorState__9CURTargetFQ29CURTarget11CursorState"
 "SetCursorState__9CURTargetFQ29CURTarget11CursorState":
 /* 801867E0 00182480  80 03 00 CC */	lwz r0, 0xcc(r3)
 /* 801867E4 00182484  7C 00 20 00 */	cmpw r0, r4
-/* 801867E8 00182488  4D 82 00 20 */	beqlr 
+/* 801867E8 00182488  4D 82 00 20 */	beqlr
 /* 801867EC 0018248C  90 83 00 CC */	stw r4, 0xcc(r3)
 /* 801867F0 00182490  48 00 00 48 */	b "UpdateFlashCursor__9CURTargetFv"
-/* 801867F4 00182494  4E 80 00 20 */	blr 
+/* 801867F4 00182494  4E 80 00 20 */	blr
 
 .global "SetCursorAlpha__9CURTargetFi"
 "SetCursorAlpha__9CURTargetFi":
 /* 801867F8 00182498  80 03 00 C8 */	lwz r0, 0xc8(r3)
 /* 801867FC 0018249C  7C 00 20 00 */	cmpw r0, r4
-/* 80186800 001824A0  4D 82 00 20 */	beqlr 
+/* 80186800 001824A0  4D 82 00 20 */	beqlr
 /* 80186804 001824A4  90 83 00 C8 */	stw r4, 0xc8(r3)
 /* 80186808 001824A8  48 00 00 30 */	b "UpdateFlashCursor__9CURTargetFv"
-/* 8018680C 001824AC  4E 80 00 20 */	blr 
+/* 8018680C 001824AC  4E 80 00 20 */	blr
 
 .global "SetCursorAlpha_Low__9CURTargetFv"
 "SetCursorAlpha_Low__9CURTargetFv":
@@ -13375,10 +13375,10 @@ lbl_801867C8:
 "SetCursorHighlight__9CURTargetFb":
 /* 80186820 001824C0  88 03 00 D0 */	lbz r0, 0xd0(r3)
 /* 80186824 001824C4  7C 00 20 40 */	cmplw r0, r4
-/* 80186828 001824C8  4D 82 00 20 */	beqlr 
+/* 80186828 001824C8  4D 82 00 20 */	beqlr
 /* 8018682C 001824CC  98 83 00 D0 */	stb r4, 0xd0(r3)
 /* 80186830 001824D0  48 00 00 08 */	b "UpdateFlashCursor__9CURTargetFv"
-/* 80186834 001824D4  4E 80 00 20 */	blr 
+/* 80186834 001824D4  4E 80 00 20 */	blr
 
 .global "UpdateFlashCursor__9CURTargetFv"
 "UpdateFlashCursor__9CURTargetFv":
@@ -13475,7 +13475,7 @@ lbl_8018691C:
 /* 8018697C 0018261C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80186980 00182620  7C 08 03 A6 */	mtlr r0
 /* 80186984 00182624  38 21 00 30 */	addi r1, r1, 0x30
-/* 80186988 00182628  4E 80 00 20 */	blr 
+/* 80186988 00182628  4E 80 00 20 */	blr
 
 .global "__ct__15CursorStackItemFv"
 "__ct__15CursorStackItemFv":
@@ -13490,7 +13490,7 @@ lbl_8018691C:
 /* 801869AC 0018264C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801869B0 00182650  7C 08 03 A6 */	mtlr r0
 /* 801869B4 00182654  38 21 00 10 */	addi r1, r1, 0x10
-/* 801869B8 00182658  4E 80 00 20 */	blr 
+/* 801869B8 00182658  4E 80 00 20 */	blr
 
 .global "Reset__15CursorStackItemFv"
 "Reset__15CursorStackItemFv":
@@ -13504,11 +13504,11 @@ lbl_8018691C:
 /* 801869CC 0018266C  90 83 00 00 */	stw r4, 0(r3)
 /* 801869D0 00182670  98 A3 00 04 */	stb r5, 4(r3)
 /* 801869D4 00182674  90 C3 00 08 */	stw r6, 8(r3)
-/* 801869D8 00182678  4E 80 00 20 */	blr 
+/* 801869D8 00182678  4E 80 00 20 */	blr
 
 .global "ToggleDPD__18EControllerManagerFb"
 "ToggleDPD__18EControllerManagerFb":
-/* 801869DC 0018267C  4E 80 00 20 */	blr 
+/* 801869DC 0018267C  4E 80 00 20 */	blr
 
 .global "__ct__13UIUpdateTableFv"
 "__ct__13UIUpdateTableFv":
@@ -13555,7 +13555,7 @@ lbl_80186A50:
 /* 80186A70 00182710  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186A74 00182714  7C 08 03 A6 */	mtlr r0
 /* 80186A78 00182718  38 21 00 20 */	addi r1, r1, 0x20
-/* 80186A7C 0018271C  4E 80 00 20 */	blr 
+/* 80186A7C 0018271C  4E 80 00 20 */	blr
 
 .global "__dt__13UIUpdateTableFv"
 "__dt__13UIUpdateTableFv":
@@ -13591,7 +13591,7 @@ lbl_80186ADC:
 /* 80186AF0 00182790  38 80 00 01 */	li r4, 1
 /* 80186AF4 00182794  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80186AF8 00182798  7D 89 03 A6 */	mtctr r12
-/* 80186AFC 0018279C  4E 80 04 21 */	bctrl 
+/* 80186AFC 0018279C  4E 80 04 21 */	bctrl
 lbl_80186B00:
 /* 80186B00 001827A0  2C 1F 00 00 */	cmpwi r31, 0
 /* 80186B04 001827A4  7F E5 FB 78 */	mr r5, r31
@@ -13608,7 +13608,7 @@ lbl_80186B1C:
 /* 80186B2C 001827CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186B30 001827D0  7C 08 03 A6 */	mtlr r0
 /* 80186B34 001827D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80186B38 001827D8  4E 80 00 20 */	blr 
+/* 80186B38 001827D8  4E 80 00 20 */	blr
 
 .global "AddRecord__13UIUpdateTableFQ213UIUpdateTable19UpdateTablePriorityR10CBFunctor0PCc"
 "AddRecord__13UIUpdateTableFQ213UIUpdateTable19UpdateTablePriorityR10CBFunctor0PCc":
@@ -13631,7 +13631,7 @@ lbl_80186B58:
 /* 80186B78 00182818  90 08 00 04 */	stw r0, 4(r8)
 /* 80186B7C 0018281C  91 03 00 08 */	stw r8, 8(r3)
 /* 80186B80 00182820  90 08 00 08 */	stw r0, 8(r8)
-/* 80186B84 00182824  4E 80 00 20 */	blr 
+/* 80186B84 00182824  4E 80 00 20 */	blr
 lbl_80186B88:
 /* 80186B88 00182828  38 C0 00 00 */	li r6, 0
 /* 80186B8C 0018282C  38 A0 00 00 */	li r5, 0
@@ -13666,10 +13666,10 @@ lbl_80186BD0:
 lbl_80186BF0:
 /* 80186BF0 00182890  2C 06 00 00 */	cmpwi r6, 0
 /* 80186BF4 00182894  80 E7 00 08 */	lwz r7, 8(r7)
-/* 80186BF8 00182898  4C 82 00 20 */	bnelr 
+/* 80186BF8 00182898  4C 82 00 20 */	bnelr
 /* 80186BFC 0018289C  2C 07 00 00 */	cmpwi r7, 0
 /* 80186C00 001828A0  40 82 FF 90 */	bne lbl_80186B90
-/* 80186C04 001828A4  4E 80 00 20 */	blr 
+/* 80186C04 001828A4  4E 80 00 20 */	blr
 
 .global "RemoveRecord__13UIUpdateTableFPQ213UIUpdateTable17UpdateTableRecord"
 "RemoveRecord__13UIUpdateTableFPQ213UIUpdateTable17UpdateTableRecord":
@@ -13719,7 +13719,7 @@ lbl_80186C88:
 /* 80186C9C 0018293C  90 04 00 10 */	stw r0, 0x10(r4)
 /* 80186CA0 00182940  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 80186CA4 00182944  90 03 00 14 */	stw r0, 0x14(r3)
-/* 80186CA8 00182948  4E 80 00 20 */	blr 
+/* 80186CA8 00182948  4E 80 00 20 */	blr
 
 .global "InstallEntry__13UIUpdateTableFQ213UIUpdateTable19UpdateTablePriorityR10CBFunctor0PCc"
 "InstallEntry__13UIUpdateTableFQ213UIUpdateTable19UpdateTablePriorityR10CBFunctor0PCc":
@@ -13751,7 +13751,7 @@ lbl_80186CFC:
 /* 80186CFC 0018299C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80186D00 001829A0  7C 08 03 A6 */	mtlr r0
 /* 80186D04 001829A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186D08 001829A8  4E 80 00 20 */	blr 
+/* 80186D08 001829A8  4E 80 00 20 */	blr
 
 .global "UnInstallEntry__13UIUpdateTableFR10CBFunctor0"
 "UnInstallEntry__13UIUpdateTableFR10CBFunctor0":
@@ -13779,7 +13779,7 @@ lbl_80186D50:
 /* 80186D50 001829F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80186D54 001829F4  7C 08 03 A6 */	mtlr r0
 /* 80186D58 001829F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186D5C 001829FC  4E 80 00 20 */	blr 
+/* 80186D5C 001829FC  4E 80 00 20 */	blr
 
 .global "ExecuteUpdatesPreFlash__13UIUpdateTableFv"
 "ExecuteUpdatesPreFlash__13UIUpdateTableFv":
@@ -13807,7 +13807,7 @@ lbl_80186D9C:
 /* 80186DA8 00182A48  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80186DAC 00182A4C  7C 08 03 A6 */	mtlr r0
 /* 80186DB0 00182A50  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186DB4 00182A54  4E 80 00 20 */	blr 
+/* 80186DB4 00182A54  4E 80 00 20 */	blr
 
 .global "ExecuteUpdatesPostFlash__13UIUpdateTableFv"
 "ExecuteUpdatesPostFlash__13UIUpdateTableFv":
@@ -13833,7 +13833,7 @@ lbl_80186DEC:
 /* 80186DF8 00182A98  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80186DFC 00182A9C  7C 08 03 A6 */	mtlr r0
 /* 80186E00 00182AA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80186E04 00182AA4  4E 80 00 20 */	blr 
+/* 80186E04 00182AA4  4E 80 00 20 */	blr
 
 .global "__ct__17UIUserDrawCBTableFv"
 "__ct__17UIUserDrawCBTableFv":
@@ -13880,7 +13880,7 @@ lbl_80186E78:
 /* 80186E98 00182B38  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186E9C 00182B3C  7C 08 03 A6 */	mtlr r0
 /* 80186EA0 00182B40  38 21 00 20 */	addi r1, r1, 0x20
-/* 80186EA4 00182B44  4E 80 00 20 */	blr 
+/* 80186EA4 00182B44  4E 80 00 20 */	blr
 
 .global "__dt__17UIUserDrawCBTableFv"
 "__dt__17UIUserDrawCBTableFv":
@@ -13916,7 +13916,7 @@ lbl_80186F04:
 /* 80186F18 00182BB8  38 80 00 01 */	li r4, 1
 /* 80186F1C 00182BBC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80186F20 00182BC0  7D 89 03 A6 */	mtctr r12
-/* 80186F24 00182BC4  4E 80 04 21 */	bctrl 
+/* 80186F24 00182BC4  4E 80 04 21 */	bctrl
 lbl_80186F28:
 /* 80186F28 00182BC8  2C 1F 00 00 */	cmpwi r31, 0
 /* 80186F2C 00182BCC  7F E5 FB 78 */	mr r5, r31
@@ -13933,7 +13933,7 @@ lbl_80186F44:
 /* 80186F54 00182BF4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186F58 00182BF8  7C 08 03 A6 */	mtlr r0
 /* 80186F5C 00182BFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80186F60 00182C00  4E 80 00 20 */	blr 
+/* 80186F60 00182C00  4E 80 00 20 */	blr
 
 .global "AddRecord__17UIUserDrawCBTableFPCcP39CBFunctor2<P3ERC,P18structDrawCBparams>PCc"
 "AddRecord__17UIUserDrawCBTableFPCcP39CBFunctor2<P3ERC,P18structDrawCBparams>PCc":
@@ -13956,7 +13956,7 @@ lbl_80186F80:
 /* 80186FA0 00182C40  90 08 00 04 */	stw r0, 4(r8)
 /* 80186FA4 00182C44  91 03 00 08 */	stw r8, 8(r3)
 /* 80186FA8 00182C48  90 08 00 08 */	stw r0, 8(r8)
-/* 80186FAC 00182C4C  4E 80 00 20 */	blr 
+/* 80186FAC 00182C4C  4E 80 00 20 */	blr
 lbl_80186FB0:
 /* 80186FB0 00182C50  80 83 00 08 */	lwz r4, 8(r3)
 /* 80186FB4 00182C54  38 00 00 00 */	li r0, 0
@@ -13965,7 +13965,7 @@ lbl_80186FB0:
 /* 80186FC0 00182C60  90 88 00 04 */	stw r4, 4(r8)
 /* 80186FC4 00182C64  91 03 00 08 */	stw r8, 8(r3)
 /* 80186FC8 00182C68  90 08 00 08 */	stw r0, 8(r8)
-/* 80186FCC 00182C6C  4E 80 00 20 */	blr 
+/* 80186FCC 00182C6C  4E 80 00 20 */	blr
 
 .global "RemoveRecord__17UIUserDrawCBTableFPQ217UIUserDrawCBTable21UserDrawCBTableRecord"
 "RemoveRecord__17UIUserDrawCBTableFPQ217UIUserDrawCBTable21UserDrawCBTableRecord":
@@ -14028,7 +14028,7 @@ lbl_80187084:
 /* 80187094 00182D34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80187098 00182D38  7C 08 03 A6 */	mtlr r0
 /* 8018709C 00182D3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 801870A0 00182D40  4E 80 00 20 */	blr 
+/* 801870A0 00182D40  4E 80 00 20 */	blr
 
 .global "InstallEntry__17UIUserDrawCBTableFPCcP39CBFunctor2<P3ERC,P18structDrawCBparams>PCc"
 "InstallEntry__17UIUserDrawCBTableFPCcP39CBFunctor2<P3ERC,P18structDrawCBparams>PCc":
@@ -14073,7 +14073,7 @@ lbl_80187120:
 /* 80187130 00182DD0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80187134 00182DD4  7C 08 03 A6 */	mtlr r0
 /* 80187138 00182DD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8018713C 00182DDC  4E 80 00 20 */	blr 
+/* 8018713C 00182DDC  4E 80 00 20 */	blr
 
 .global "UnInstallAllName__17UIUserDrawCBTableFPCc"
 "UnInstallAllName__17UIUserDrawCBTableFPCc":
@@ -14109,7 +14109,7 @@ lbl_80187194:
 /* 801871A8 00182E48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801871AC 00182E4C  7C 08 03 A6 */	mtlr r0
 /* 801871B0 00182E50  38 21 00 20 */	addi r1, r1, 0x20
-/* 801871B4 00182E54  4E 80 00 20 */	blr 
+/* 801871B4 00182E54  4E 80 00 20 */	blr
 
 .global "FindEntry__17UIUserDrawCBTableFPCc"
 "FindEntry__17UIUserDrawCBTableFPCc":
@@ -14140,7 +14140,7 @@ lbl_80187200:
 /* 8018720C 00182EAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80187210 00182EB0  7C 08 03 A6 */	mtlr r0
 /* 80187214 00182EB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80187218 00182EB8  4E 80 00 20 */	blr 
+/* 80187218 00182EB8  4E 80 00 20 */	blr
 
 .global "ExecuteCallback__17UIUserDrawCBTableFP3ERCPCc"
 "ExecuteCallback__17UIUserDrawCBTableFP3ERCPCc":
@@ -14192,7 +14192,7 @@ lbl_801872B8:
 /* 801872C0 00182F60  83 C1 00 08 */	lwz r30, 8(r1)
 /* 801872C4 00182F64  7C 08 03 A6 */	mtlr r0
 /* 801872C8 00182F68  38 21 00 10 */	addi r1, r1, 0x10
-/* 801872CC 00182F6C  4E 80 00 20 */	blr 
+/* 801872CC 00182F6C  4E 80 00 20 */	blr
 
 .global "__ct__18WidgetScreenFormatFv"
 "__ct__18WidgetScreenFormatFv":
@@ -14200,7 +14200,7 @@ lbl_801872B8:
 /* 801872D4 00182F74  90 03 00 04 */	stw r0, 4(r3)
 /* 801872D8 00182F78  90 03 00 00 */	stw r0, 0(r3)
 /* 801872DC 00182F7C  90 03 00 10 */	stw r0, 0x10(r3)
-/* 801872E0 00182F80  4E 80 00 20 */	blr 
+/* 801872E0 00182F80  4E 80 00 20 */	blr
 
 .global "__dt__18WidgetScreenFormatFv"
 "__dt__18WidgetScreenFormatFv":
@@ -14235,7 +14235,7 @@ lbl_8018733C:
 /* 8018734C 00182FEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80187350 00182FF0  7C 08 03 A6 */	mtlr r0
 /* 80187354 00182FF4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80187358 00182FF8  4E 80 00 20 */	blr 
+/* 80187358 00182FF8  4E 80 00 20 */	blr
 
 .global "LaunchWidgetScreenLayout__18WidgetScreenFormatFPPCc"
 "LaunchWidgetScreenLayout__18WidgetScreenFormatFPPCc":
@@ -14293,7 +14293,7 @@ lbl_8018739C:
 /* 80187424 001830C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80187428 001830C8  7C 08 03 A6 */	mtlr r0
 /* 8018742C 001830CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80187430 001830D0  4E 80 00 20 */	blr 
+/* 80187430 001830D0  4E 80 00 20 */	blr
 
 .global "IterateScreenLayout__18WidgetScreenFormatFPPCcQ218WidgetScreenFormat13IterationType"
 "IterateScreenLayout__18WidgetScreenFormatFPPCcQ218WidgetScreenFormat13IterationType":
@@ -14338,7 +14338,7 @@ lbl_801874B0:
 /* 801874BC 0018315C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 801874C0 00183160  7C 08 03 A6 */	mtlr r0
 /* 801874C4 00183164  38 21 00 20 */	addi r1, r1, 0x20
-/* 801874C8 00183168  4E 80 00 20 */	blr 
+/* 801874C8 00183168  4E 80 00 20 */	blr
 
 .global "IterateTags__18WidgetScreenFormatFQ218WidgetScreenFormat13IterationType"
 "IterateTags__18WidgetScreenFormatFQ218WidgetScreenFormat13IterationType":
@@ -14477,7 +14477,7 @@ lbl_801876A0:
 /* 801876B0 00183350  83 81 00 30 */	lwz r28, 0x30(r1)
 /* 801876B4 00183354  7C 08 03 A6 */	mtlr r0
 /* 801876B8 00183358  38 21 00 40 */	addi r1, r1, 0x40
-/* 801876BC 0018335C  4E 80 00 20 */	blr 
+/* 801876BC 0018335C  4E 80 00 20 */	blr
 
 .global "GetNextTag__18WidgetScreenFormatFQ218WidgetScreenFormat13IterationType"
 "GetNextTag__18WidgetScreenFormatFQ218WidgetScreenFormat13IterationType":
@@ -14544,7 +14544,7 @@ lbl_80187780:
 /* 80187798 00183438  80 63 00 00 */	lwz r3, 0(r3)
 /* 8018779C 0018343C  7C 08 03 A6 */	mtlr r0
 /* 801877A0 00183440  38 21 00 20 */	addi r1, r1, 0x20
-/* 801877A4 00183444  4E 80 00 20 */	blr 
+/* 801877A4 00183444  4E 80 00 20 */	blr
 
 .global "IsValidTag__18WidgetScreenFormatCFPCc"
 "IsValidTag__18WidgetScreenFormatCFPCc":
@@ -14588,7 +14588,7 @@ lbl_80187820:
 /* 8018782C 001834CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80187830 001834D0  7C 08 03 A6 */	mtlr r0
 /* 80187834 001834D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80187838 001834D8  4E 80 00 20 */	blr 
+/* 80187838 001834D8  4E 80 00 20 */	blr
 
 .global "IsDataValid__18WidgetScreenFormatCFPCc"
 "IsDataValid__18WidgetScreenFormatCFPCc":
@@ -14643,7 +14643,7 @@ lbl_801878C4:
 /* 801878EC 0018358C  38 63 B8 EC */	addi r3, r3, lbl_8043B8EC@l
 /* 801878F0 00183590  7C 63 00 2E */	lwzx r3, r3, r0
 /* 801878F4 00183594  7C 69 03 A6 */	mtctr r3
-/* 801878F8 00183598  4E 80 04 20 */	bctr 
+/* 801878F8 00183598  4E 80 04 20 */	bctr
 /* 801878FC 0018359C  80 78 00 08 */	lwz r3, 8(r24)
 /* 80187900 001835A0  48 0E E4 39 */	bl "AtoI__FPCc"
 /* 80187904 001835A4  2C 03 FC 18 */	cmpwi r3, -1000
@@ -14905,242 +14905,12955 @@ lbl_80187CE8:
 /* 80187CF4 00183994  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80187CF8 00183998  7C 08 03 A6 */	mtlr r0
 /* 80187CFC 0018399C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80187D00 001839A0  4E 80 00 20 */	blr 
+/* 80187D00 001839A0  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "zodiacPersonalityValues_8041A060"
 "zodiacPersonalityValues_8041A060":
-	.incbin "baserom.dol", 0x416160, 0x3C
+	# ROM: 0x416160
+	.4byte 0x08030305
+	.4byte 0x06050408
+	.4byte 0x05030703
+	.4byte 0x03040803
+	.4byte 0x06040606
+	.4byte 0x0A030404
+	.4byte 0x04020503
+	.4byte 0x09060807
+	.4byte 0x06020205
+	.4byte 0x03030608
+	.4byte 0x03040702
+	.4byte 0x09040508
+	.4byte 0x07010406
+	.4byte 0x07040403
+	.4byte 0x07030507
+
 .global "sMotiveCurveMap_8041A09C"
 "sMotiveCurveMap_8041A09C":
-	.incbin "baserom.dol", 0x41619C, 0x2C
+	# ROM: 0x41619C
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x00000008
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x0000000D
+	.4byte 0x0000000A
+	.4byte 0x0000000C
+	.4byte 0x00000003
+
 .global "UIAMBIENT_frontend__9UIAMBIENT"
 "UIAMBIENT_frontend__9UIAMBIENT":
-	.incbin "baserom.dol", 0x4161C8, 0xC0
+	# ROM: 0x4161C8
+	.4byte 0x0E77D2CC
+	.4byte 0xE71477F9
+	.4byte 0x7E1D2643
+	.4byte 0xC50743DB
+	.4byte 0x5C0E1261
+	.4byte 0xB56DB754
+	.4byte 0x3EA5155F
+	.4byte 0xD0AB7473
+	.4byte 0x6EF9221F
+	.4byte 0x19FE1289
+	.4byte 0x20F04CB0
+	.4byte 0x57F77C26
+	.4byte 0x600A8411
+	.4byte 0x6469B9E7
+	.4byte 0xFD60E85D
+	.4byte 0x373C0EB1
+	.4byte 0x4EE0B615
+	.4byte 0x06869B9D
+	.4byte 0x98E20E3E
+	.4byte 0xBF4084AC
+	.4byte 0x9D292B6B
+	.4byte 0x73274A47
+	.4byte 0x9A44EF72
+	.4byte 0x034DBEC8
+	.4byte 0x744A8E5E
+	.4byte 0x93F2A359
+	.4byte 0x2E264EDA
+	.4byte 0x1FF1AAF0
+	.4byte 0xF6920FC5
+	.4byte 0x29B8A139
+	.4byte 0xC7B6C015
+	.4byte 0x583D8420
+	.4byte 0xDC8637FF
+	.4byte 0x328856D3
+	.4byte 0xDBEBF3E6
+	.4byte 0xD25DBFCD
+	.4byte 0x8E77DC98
+	.4byte 0x77B904C7
+	.4byte 0x9EDAA1F2
+	.4byte 0xA1F1C3BA
+	.4byte 0x1AC44442
+	.4byte 0xFA11AD5C
+	.4byte 0xF903D5AB
+	.4byte 0x101A3B97
+	.4byte 0xF9799EA2
+	.4byte 0xC745EBEF
+	.4byte 0x49F7F5CD
+	.4byte 0x00000000
+
 .global "UIAMBIENT_cas__9UIAMBIENT"
 "UIAMBIENT_cas__9UIAMBIENT":
-	.incbin "baserom.dol", 0x416288, 0xA4
+	# ROM: 0x416288
+	.4byte 0x6469B9E7
+	.4byte 0xFD60E85D
+	.4byte 0x373C0EB1
+	.4byte 0x4EE0B615
+	.4byte 0x9D292B6B
+	.4byte 0x73274A47
+	.4byte 0x9A44EF72
+	.4byte 0x034DBEC8
+	.4byte 0x744A8E5E
+	.4byte 0x93F2A359
+	.4byte 0x2E264EDA
+	.4byte 0x1FF1AAF0
+	.4byte 0xF6920FC5
+	.4byte 0x29B8A139
+	.4byte 0xC7B6C015
+	.4byte 0xB0B1F083
+	.4byte 0x59D255B6
+	.4byte 0x2ED56520
+	.4byte 0xB7DC349A
+	.4byte 0xC0DB040C
+	.4byte 0xC745EBEF
+	.4byte 0x3DA5B7E1
+	.4byte 0xD3ABD6CD
+	.4byte 0x3AC873F8
+	.4byte 0x0000003A
+	.4byte 0x0000003E
+	.4byte 0x0000003C
+	.4byte 0x0000003B
+	.4byte 0x0000003D
+	.4byte 0x00000042
+	.4byte 0x00000041
+	.4byte 0x00000029
+	.4byte 0x00000043
+	.4byte 0x00000054
+	.4byte 0x0000001B
+	.4byte 0x00000022
+	.4byte 0x00000021
+	.4byte 0x00000054
+	.4byte 0x0000002E
+	.4byte 0x0000003F
+	.4byte 0x00000054
+
 .global lbl_8041A22C
 lbl_8041A22C:
-	.incbin "baserom.dol", 0x41632C, 0xC
+	# ROM: 0x41632C
+	.4byte 0x8042E648 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "ValidTagsAndTests"
 "ValidTagsAndTests":
-	.incbin "baserom.dol", 0x416338, 0x200
+	# ROM: 0x416338
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D4EB8 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x00000009
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D50DC ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D50E4 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x00000011
+	.4byte 0x805D50EC ;# ptr
+	.4byte 0x00000012
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x805D50F8 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D5100 ;# ptr
+	.4byte 0x00000019
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x00000015
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x00000016
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x00000017
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x00000013
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x00000014
+	.4byte 0x8042E7D8 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x8042E7E4 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x8042E7F0 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x8042E7FC ;# ptr
+	.4byte 0x00000018
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D512C ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5134 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5150 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5158 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5160 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5168 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5170 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5180 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5190 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5198 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51A0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51A8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51B0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51B8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51C0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51C8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51D0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51D8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51E0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51E8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51F0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51E0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D4F8C ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8042E808 ;# ptr
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8042D800
 lbl_8042D800:
-	.incbin "baserom.dol", 0x429900, 0x3C
+	# ROM: 0x429900
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.asciz "close_help"
+	.byte 0x00
+	.asciz "Help Dialog"
+
 .global lbl_8042D83C
 lbl_8042D83C:
-	.incbin "baserom.dol", 0x42993C, 0x44
+	# ROM: 0x42993C
+	.asciz "%s_title"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.asciz "Simple Ok Dialog"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042D880
 lbl_8042D880:
-	.incbin "baserom.dol", 0x429980, 0xC
+	# ROM: 0x429980
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Update3D__4UI3DFv" ;# ptr (0x8017E4E8)
+
 .global lbl_8042D88C
 lbl_8042D88C:
-	.incbin "baserom.dol", 0x42998C, 0x720
+	# ROM: 0x42998C
+	.asciz "__3D_UPDATE_"
+	.byte 0x00, 0x00, 0x00
+	.asciz "meridian"
+	.byte 0x00, 0x00, 0x00
+	.asciz "dayofweek"
+	.byte 0x00, 0x00
+	.asciz "simoleons"
+	.byte 0x00, 0x00
+	.asciz "simoleonsP2"
+	.asciz "SelectedSaveGame"
+	.byte 0x00, 0x00, 0x00
+	.asciz "XBoxSaveGameAdditionalBlocksRequired"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Player1FirstName"
+	.byte 0x00, 0x00, 0x00
+	.asciz "default_player1_first_name"
+	.byte 0x00
+	.asciz "Player1LastName"
+	.asciz "default_player1_last_name"
+	.byte 0x00, 0x00
+	.asciz "FamilyName"
+	.byte 0x00
+	.asciz "CAS_mode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "CAS_gender"
+	.byte 0x00
+	.asciz "CAS_lotnumber"
+	.byte 0x00, 0x00
+	.asciz "CAS_neighborID"
+	.byte 0x00
+	.asciz "CAS_cfcModListStr"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00300030
+	.4byte 0x00300030
+	.4byte 0x00300030
+	.4byte 0x00300000
+	.asciz "CAS_CurrentGameTime"
+	.asciz "Motive_Name"
+	.4byte 0x004D006F
+	.4byte 0x00740069
+	.4byte 0x00760065
+	.4byte 0x005F004E
+	.4byte 0x0061006D
+	.4byte 0x00650000
+	.asciz "Custom_Subst_1"
+	.byte 0x00
+	.4byte 0x0045006D
+	.4byte 0x00700074
+	.4byte 0x00790020
+	.4byte 0x00530075
+	.4byte 0x00620073
+	.4byte 0x00740069
+	.4byte 0x00740075
+	.4byte 0x00740069
+	.4byte 0x006F006E
+	.4byte 0x00210000
+	.asciz "Custom_Subst_2"
+	.byte 0x00
+	.asciz "Item_Count00"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count01"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count02"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count03"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count04"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count05"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count06"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count07"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count08"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count09"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count10"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Item_Count11"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PDA_Mode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PlayerNumber"
+	.byte 0x00, 0x00, 0x00
+	.asciz "INV_Mode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "INV_LotNumber"
+	.byte 0x00, 0x00
+	.asciz "MEM_source"
+	.byte 0x00
+	.asciz "MEM_result"
+	.byte 0x00
+	.asciz "DisableAnalogNavigation"
+	.asciz "ButtonHelpIndex"
+	.asciz "ScreenWidth"
+	.asciz "ScreenHeight"
+	.byte 0x00, 0x00, 0x00
+	.asciz "INV_BLD_item_count"
+	.byte 0x00
+	.asciz "ING_Mode"
+	.byte 0x00, 0x00, 0x00
+	.asciz "ING_FoodID"
+	.byte 0x00
+	.asciz "unlock_aspiration_points"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MoodMeter"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.asciz "UIDBTarget"
+	.byte 0x00
+	.asciz "EASTL basic_string"
+	.byte 0x00
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.asciz "UIQDTarget"
+	.byte 0x00
+	.asciz "NewUIStrings"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PDAStrings"
+	.byte 0x00
+	.asciz "HouseData"
+	.byte 0x00, 0x00
+	.asciz "HUDStrings"
+	.byte 0x00
+	.4byte 0x003C006D
+	.4byte 0x006F006E
+	.4byte 0x00650079
+	.4byte 0x0032003E
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x003C006D
+	.4byte 0x006F006E
+	.4byte 0x00650079
+	.4byte 0x003E0000
+	.4byte 0x003C0070
+	.4byte 0x00650074
+	.4byte 0x005F0070
+	.4byte 0x006F0069
+	.4byte 0x006E0074
+	.4byte 0x0073003E
+	.4byte 0x00000000
+	.4byte 0x00530075
+	.4byte 0x00620073
+	.4byte 0x0074002E
+	.4byte 0x00200046
+	.4byte 0x00610069
+	.4byte 0x006C0065
+	.4byte 0x00640000
+	.4byte 0x003C0061
+	.4byte 0x0074006D
+	.4byte 0x005F0073
+	.4byte 0x0069006D
+	.4byte 0x006F006C
+	.4byte 0x0065006F
+	.4byte 0x006E0073
+	.4byte 0x003E0000
+	.4byte 0x003C0061
+	.4byte 0x0074006D
+	.4byte 0x005F0070
+	.4byte 0x00650074
+	.4byte 0x005F0070
+	.4byte 0x006F0069
+	.4byte 0x006E0074
+	.4byte 0x0073003E
+	.4byte 0x00000000
+	.4byte 0x003C006B
+	.4byte 0x0065006E
+	.4byte 0x006E0065
+	.4byte 0x006C005F
+	.4byte 0x0063006F
+	.4byte 0x00730074
+	.4byte 0x003E0000
+	.4byte 0x003C0073
+	.4byte 0x0069007A
+	.4byte 0x0065003E
+	.4byte 0x00000000
+	.4byte 0x003C0070
+	.4byte 0x0031005F
+	.4byte 0x00660069
+	.4byte 0x00720073
+	.4byte 0x0074005F
+	.4byte 0x006E0061
+	.4byte 0x006D0065
+	.4byte 0x003E0000
+	.4byte 0x003C0070
+	.4byte 0x0031005F
+	.4byte 0x006C0061
+	.4byte 0x00730074
+	.4byte 0x005F006E
+	.4byte 0x0061006D
+	.4byte 0x0065003E
+	.4byte 0x00000000
+	.4byte 0x003C0066
+	.4byte 0x00690072
+	.4byte 0x00730074
+	.4byte 0x005F006E
+	.4byte 0x0061006D
+	.4byte 0x0065003E
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x003C006C
+	.4byte 0x00610073
+	.4byte 0x0074005F
+	.4byte 0x006E0061
+	.4byte 0x006D0065
+	.4byte 0x003E0000
+	.asciz "Player2LastName"
+	.4byte 0x003C006B
+	.4byte 0x0062005F
+	.4byte 0x00660069
+	.4byte 0x00720073
+	.4byte 0x0074005F
+	.4byte 0x006E0061
+	.4byte 0x006D0065
+	.4byte 0x003E0000
+	.4byte 0x003C006B
+	.4byte 0x0062005F
+	.4byte 0x006C0061
+	.4byte 0x00730074
+	.4byte 0x005F006E
+	.4byte 0x0061006D
+	.4byte 0x0065003E
+	.4byte 0x00000000
+	.4byte 0x003C006B
+	.4byte 0x0062005F
+	.4byte 0x00630075
+	.4byte 0x00720072
+	.4byte 0x0065006E
+	.4byte 0x0074003E
+	.4byte 0x00000000
+	.4byte 0x003C006D
+	.4byte 0x006F0074
+	.4byte 0x00690076
+	.4byte 0x0065005F
+	.4byte 0x006E0061
+	.4byte 0x006D0065
+	.4byte 0x003E0000
+	.4byte 0x003C0068
+	.4byte 0x006F0075
+	.4byte 0x0072003E
+	.4byte 0x00000000
+	.4byte 0x003C0068
+	.4byte 0x006F0075
+	.4byte 0x00720073
+	.4byte 0x00320034
+	.4byte 0x003E0000
+	.4byte 0x003C006D
+	.4byte 0x0069006E
+	.4byte 0x00750074
+	.4byte 0x00650073
+	.4byte 0x003E0000
+	.4byte 0x003C0073
+	.4byte 0x00650063
+	.4byte 0x006F006E
+	.4byte 0x00640073
+	.4byte 0x003E0000
+	.4byte 0x003C006D
+	.4byte 0x00650072
+	.4byte 0x00690064
+	.4byte 0x00690061
+	.4byte 0x006E003E
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x003C0064
+	.4byte 0x00610079
+	.4byte 0x006F0066
+	.4byte 0x00770065
+	.4byte 0x0065006B
+	.4byte 0x003E0000
+	.4byte 0x003C0075
+	.4byte 0x006E006C
+	.4byte 0x006F0063
+	.4byte 0x006B005F
+	.4byte 0x00610073
+	.4byte 0x00700069
+	.4byte 0x00720061
+	.4byte 0x00740069
+	.4byte 0x006F006E
+	.4byte 0x005F0070
+	.4byte 0x006F0069
+	.4byte 0x006E0074
+	.4byte 0x0073003E
+	.4byte 0x00000000
+	.4byte 0x003C0063
+	.4byte 0x00750073
+	.4byte 0x0074006F
+	.4byte 0x006D005F
+	.4byte 0x00730075
+	.4byte 0x00620073
+	.4byte 0x0074005F
+	.4byte 0x0031003E
+	.4byte 0x00000000
+	.4byte 0x003C0063
+	.4byte 0x00750073
+	.4byte 0x0074006F
+	.4byte 0x006D005F
+	.4byte 0x00730075
+	.4byte 0x00620073
+	.4byte 0x0074005F
+	.4byte 0x0032003E
+	.4byte 0x00000000
+	.asciz "SetFocus"
+	.byte 0x00, 0x00, 0x00
+
 .global "UIScreenDataTable__15UIScreenManager"
 "UIScreenDataTable__15UIScreenManager":
-	.incbin "baserom.dol", 0x42A0AC, 0x62C
+	# ROM: 0x42A0AC
+	.4byte 0x00000043
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D4FB4 ;# ptr
+	.4byte 0x0000003D
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x8042EAE0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000036
+	.4byte 0x00000003
+	.4byte 0x01000000
+	.4byte 0x80433A14 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000037
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x80436548 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000038
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x8043957C ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000039
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x80433FB8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x0000003A
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D4FB8 ;# ptr
+	.4byte 0x0000003B
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x80436F30 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x0000003E
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D4FBC ;# ptr
+	.4byte 0x0000003C
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x80439CE8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000040
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x80434180 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000041
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x80436B50 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000042
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x80437B80 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x0000003F
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x80433668 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000045
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x8043A870 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000046
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x8043B1E0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x0000004C
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x805D4FC0 ;# ptr
+	.4byte 0x0000004B
+	.4byte 0x00000003
+	.4byte 0x00000000
+	.4byte 0x804393F8 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x0000004E
+	.4byte 0x00000007
+	.4byte 0x00000000
+	.4byte 0x8042F590 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000032
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FC4 ;# ptr
+	.4byte 0x00000033
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FC8 ;# ptr
+	.4byte 0x00000034
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FCC ;# ptr
+	.4byte 0x00000049
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FD0 ;# ptr
+	.4byte 0x00000035
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FD4 ;# ptr
+	.4byte 0x0000004D
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FD8 ;# ptr
+	.4byte 0x00000024
+	.4byte 0x00000005
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FDC ;# ptr
+	.4byte 0x00000026
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FE0 ;# ptr
+	.4byte 0x00000027
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FE4 ;# ptr
+	.4byte 0x0000002A
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FE8 ;# ptr
+	.4byte 0x00000029
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FEC ;# ptr
+	.4byte 0x0000002B
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FF0 ;# ptr
+	.4byte 0x0000002C
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FF4 ;# ptr
+	.4byte 0x0000002E
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x8042F7F0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000047
+	.4byte 0x00000004
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FF8 ;# ptr
+	.4byte 0x00000030
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D4FFC ;# ptr
+	.4byte 0x00000048
+	.4byte 0x00000004
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5000 ;# ptr
+	.4byte 0x00000052
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5004 ;# ptr
+	.4byte 0x0000004F
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x804347D4 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5008 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D500C ;# ptr
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5010 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5014 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5018 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D501C ;# ptr
+	.4byte 0x00000008
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5020 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5024 ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5028 ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D502C ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5030 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5034 ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5038 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D503C ;# ptr
+	.4byte 0x00000010
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5040 ;# ptr
+	.4byte 0x00000011
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5044 ;# ptr
+	.4byte 0x00000012
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5048 ;# ptr
+	.4byte 0x00000013
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D504C ;# ptr
+	.4byte 0x00000014
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5050 ;# ptr
+	.4byte 0x00000015
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5054 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5058 ;# ptr
+	.4byte 0x0000001A
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D505C ;# ptr
+	.4byte 0x00000017
+	.4byte 0x00000006
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5060 ;# ptr
+	.4byte 0x0000001B
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5064 ;# ptr
+	.4byte 0x0000001C
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5068 ;# ptr
+	.4byte 0x0000001D
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D506C ;# ptr
+	.4byte 0x0000001E
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5070 ;# ptr
+	.4byte 0x0000001F
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5074 ;# ptr
+	.4byte 0x00000020
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5078 ;# ptr
+	.4byte 0x00000021
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D507C ;# ptr
+	.4byte 0x00000022
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5080 ;# ptr
+	.4byte 0x00000050
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5084 ;# ptr
+	.4byte 0x00000051
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5088 ;# ptr
+	.4byte 0x00000031
+	.4byte 0x00000002
+	.4byte 0x01000000
+	.4byte 0x8042FFF0 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000028
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D508C ;# ptr
+	.4byte 0x00000023
+	.4byte 0x00000001
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x805D5090 ;# ptr
+	.4byte 0x00000054
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.asciz "UIScreenManager"
+
 .global lbl_8042E5D8
 lbl_8042E5D8:
-	.incbin "baserom.dol", 0x42A6D8, 0x2C
+	# ROM: 0x42A6D8
+	.asciz "USM_screen_unloaded"
+	.asciz "USM_maskAdd"
+	.asciz "USM_maskSub"
+
 .global lbl_8042E604
 lbl_8042E604:
-	.incbin "baserom.dol", 0x42A704, 0x14
+	# ROM: 0x42A704
+	.asciz "LoadCustomScreen"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042E618
 lbl_8042E618:
-	.incbin "baserom.dol", 0x42A718, 0x8C
+	# ROM: 0x42A718
+	.asciz "RemoveScreen"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RestoreScreen"
+	.byte 0x00, 0x00
+	.asciz "SuspendScreen"
+	.byte 0x00, 0x00
+	.asciz "SetHandlesInput"
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.asciz "UIAUDIOTarget"
+	.byte 0x00, 0x00
+
 .global lbl_8042E6A4
 lbl_8042E6A4:
-	.incbin "baserom.dol", 0x42A7A4, 0xF4
+	# ROM: 0x42A7A4
+	.asciz "ALP_async_pending"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.asciz "UIAnalog"
+	.byte 0x00, 0x00, 0x00
+	.asciz "UIAnalog_exists"
+	.asciz "LeftAnalog_X"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LeftAnalog_Y"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RightAnalog_X"
+	.byte 0x00, 0x00
+	.asciz "RightAnalog_Y"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000014
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000018
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000001C
+	.4byte 0x00000000
+	.asciz "CURTarget"
+	.byte 0x00, 0x00
+
 .global lbl_8042E798
 lbl_8042E798:
-	.incbin "baserom.dol", 0x42A898, 0x10
+	# ROM: 0x42A898
+	.asciz "cursorSetPos"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042E7A8
 lbl_8042E7A8:
-	.incbin "baserom.dol", 0x42A8A8, 0x10
+	# ROM: 0x42A8A8
+	.asciz "cursorVisible"
+	.byte 0x00, 0x00
+
 .global lbl_8042E7B8
 lbl_8042E7B8:
-	.incbin "baserom.dol", 0x42A8B8, 0x10
+	# ROM: 0x42A8B8
+	.asciz "cursorHilite"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042E7C8
 lbl_8042E7C8:
-	.incbin "baserom.dol", 0x42A8C8, 0x40
+	# ROM: 0x42A8C8
+	.asciz "cursorSetAlpha"
+	.byte 0x00
+	.asciz "<lbnbgv>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<lbpbgv>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<lbnagv>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<lbpagv>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042E808
 lbl_8042E808:
-	.incbin "baserom.dol", 0x42A908, 0x2D8
+	# ROM: 0x42A908
+	.asciz "endmarker"
+	.byte 0x00, 0x00
+	.asciz "AQU_queue_container"
+	.asciz "AQU_item0"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame0"
+	.byte 0x00
+	.asciz "AQU_shdr0"
+	.byte 0x00, 0x00
+	.asciz "AQU_item1"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame1"
+	.byte 0x00
+	.asciz "AQU_shdr1"
+	.byte 0x00, 0x00
+	.asciz "AQU_item2"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame2"
+	.byte 0x00
+	.asciz "AQU_shdr2"
+	.byte 0x00, 0x00
+	.asciz "AQU_item3"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame3"
+	.byte 0x00
+	.asciz "AQU_shdr3"
+	.byte 0x00, 0x00
+	.asciz "AQU_item4"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame4"
+	.byte 0x00
+	.asciz "AQU_shdr4"
+	.byte 0x00, 0x00
+	.asciz "AQU_item5"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame5"
+	.byte 0x00
+	.asciz "AQU_shdr5"
+	.byte 0x00, 0x00
+	.asciz "AQU_item6"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame6"
+	.byte 0x00
+	.asciz "AQU_shdr6"
+	.byte 0x00, 0x00
+	.asciz "AQU_item7"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame7"
+	.byte 0x00
+	.asciz "AQU_shdr7"
+	.byte 0x00, 0x00
+	.asciz "AQU_item8"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame8"
+	.byte 0x00
+	.asciz "AQU_shdr8"
+	.byte 0x00, 0x00
+	.asciz "AQU_item9"
+	.byte 0x00, 0x00
+	.asciz "AQU_frame9"
+	.byte 0x00
+	.asciz "AQU_shdr9"
+	.byte 0x00, 0x00
+	.asciz "AQU_item10"
+	.byte 0x00
+	.asciz "AQU_frame10"
+	.asciz "AQU_shdr10"
+	.byte 0x00
+	.asciz "AQU_item11"
+	.byte 0x00
+	.asciz "AQU_frame11"
+	.asciz "AQU_shdr11"
+	.byte 0x00
+	.asciz "AQU_item12"
+	.byte 0x00
+	.asciz "AQU_frame12"
+	.asciz "AQU_shdr12"
+	.byte 0x00
+	.asciz "AQU_item13"
+	.byte 0x00
+	.asciz "AQU_frame13"
+	.asciz "AQU_shdr13"
+	.byte 0x00
+	.asciz "AQU_item14"
+	.byte 0x00
+	.asciz "AQU_frame14"
+	.asciz "AQU_shdr14"
+	.byte 0x00
+	.asciz "AQU_item15"
+	.byte 0x00
+	.asciz "AQU_frame15"
+	.asciz "AQU_shdr15"
+	.byte 0x00
+	.asciz "AQU_item16"
+	.byte 0x00
+	.asciz "AQU_frame16"
+	.asciz "AQU_shdr16"
+	.byte 0x00
+	.asciz "AQU_item17"
+	.byte 0x00
+	.asciz "AQU_frame17"
+	.asciz "AQU_shdr17"
+	.byte 0x00
+	.asciz "AQU_SelectorIcon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::button_00"
+	.byte 0x00
+
 .global "Widget_ActionQueue"
 "Widget_ActionQueue":
-	.incbin "baserom.dol", 0x42ABE0, 0xAB0
+	# ROM: 0x42ABE0
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5218 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E814 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5230 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5234 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5238 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E828 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E834 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E840 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E84C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E858 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E864 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E870 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E87C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E888 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E894 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8A0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8AC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E8B8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8C4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8D0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E8DC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8E8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E8F4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E900 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E90C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E918 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E924 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E930 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E93C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E948 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E954 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E960 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E96C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E978 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E984 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E990 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E99C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E9A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E9B4 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E9C0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E9CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E9D8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E9E4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042E9F0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042E9FC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA08 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA14 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042EA20 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA2C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA38 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042EA44 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA50 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA5C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042EA68 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA74 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA80 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042EA8C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EA98 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042EAA4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8042EAB0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8042EAC4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+
 .global "Widget_TutorialHide"
 "Widget_TutorialHide":
-	.incbin "baserom.dol", 0x42B690, 0x260
+	# ROM: 0x42B690
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D527C ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "BBH_CurrentToolInfoGroup"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_icon_backdrop"
+	.byte 0x00, 0x00
+	.asciz "BBH_toolname_background2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PANE_MED_CONTRAST"
+	.byte 0x00, 0x00
+	.asciz "BBH_icon_tool"
+	.byte 0x00, 0x00
+	.asciz "BBH_mode"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:BBH_mode"
+	.asciz "0x424242"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_item_backdrop"
+	.byte 0x00, 0x00
+	.asciz "BBH_item"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_Wii_Left_Column_Buttons"
+	.asciz "BBH_wii_analog_stick"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_move"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_button_C"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_grid"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_button_Z"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_rotate"
+	.byte 0x00
+	.asciz "BBH_Wii_Right_Column_Buttons"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_button_B"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_undo"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_button_A"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_select_callout"
+	.byte 0x00
+	.asciz "tsc5_build_buy_hud_icon.swf"
+	.asciz "BBH_Wii_Grab_Mode_Buttons"
+	.byte 0x00, 0x00
+	.asciz "BBH_wii_button_1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_trash"
+	.byte 0x00, 0x00
+	.asciz "BBH_wii_button_2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BBH_wii_floorplan"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "Widget_BuildBuyHUD"
 "Widget_BuildBuyHUD":
-	.incbin "baserom.dol", 0x42B8F0, 0x800
+	# ROM: 0x42B8F0
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5280 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D5284 ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042F5B0 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D528C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F5CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5290 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5294 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5298 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D529C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8042F5E0 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8042F5FC ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F610 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8042F620 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8042F630 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D529C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52D4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F64C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52E0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52E8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F660 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042F66C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D528C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F688 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52F4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F6A0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F6B0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52F4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5300 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F6C4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5300 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F6D4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52F4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5304 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F6E8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5304 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042F6F8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5308 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F718 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D530C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F72C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5310 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F73C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D530C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5314 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8042F750 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5320 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8042F768 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042F784 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F7A0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D530C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5330 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F7B4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5310 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5330 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F7C4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D530C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5334 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042F7D8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5310 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5334 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "CRD_background"
+	.byte 0x00
+	.asciz "CRD_end_credits"
+	.asciz "CRD_CancelButtonImageText"
+	.byte 0x00, 0x00
+	.asciz "qd:NewUIStrings::callout_back"
+	.byte 0x00, 0x00
+	.asciz "CRD_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "CRD_credits_box"
+	.asciz "CRD_photo"
+	.byte 0x00, 0x00
+	.asciz "CRD_team1"
+	.byte 0x00, 0x00
+	.asciz "CRD_team2"
+	.byte 0x00, 0x00
+	.asciz "CRD_team3"
+	.byte 0x00, 0x00
+	.asciz "CRD_team4"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "Widget_Credits"
 "Widget_Credits":
-	.incbin "baserom.dol", 0x42C0F0, 0x14
+	# ROM: 0x42C0F0
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5338 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+
 .global lbl_80430004
 lbl_80430004:
-	.incbin "baserom.dol", 0x42C104, 0x31C
+	# ROM: 0x42C104
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FF30 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8042FF40 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8042FF50 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8042FF6C ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5374 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8042FF8C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FFA0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5388 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D538C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8042FFB0 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FFBC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FFC8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5398 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FFD4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D539C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8042FFE0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53A4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "CSO_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::ok"
+
 .global "Widget_ChallengeSocial"
 "Widget_ChallengeSocial":
-	.incbin "baserom.dol", 0x42C420, 0x10B8
+	# ROM: 0x42C420
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5038 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53AC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EB8 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EBC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430300 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043030C ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "FAM_CANCEL_BUTTON"
+	.byte 0x00, 0x00
+	.asciz "DPAD_LEFT"
+	.byte 0x00, 0x00
+	.asciz "FAM_DPAD_LEFT"
+	.byte 0x00, 0x00
+	.asciz "DPAD_RIGHT"
+	.byte 0x00
+	.asciz "FAM_DPAD_RIGHT"
+	.byte 0x00
+	.asciz "OPEN_XAM_REL"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_CIRCLE_BUTTON"
+	.byte 0x00, 0x00
+	.asciz "FAM_DPAD_UP"
+	.asciz "DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "FAM_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "FAM_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Pick_Lot_Container"
+	.byte 0x00
+	.asciz "FAM_Choose_Lot_Background"
+	.byte 0x00, 0x00
+	.asciz "FAM_Menu_Title_Text"
+	.asciz "getloc:FAM_Menu_Title_Text"
+	.byte 0x00
+	.asciz "FAM_Lot_Description_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Lot_Description_Text"
+	.asciz "FAM_Lot_00_Head_00_Shader"
+	.byte 0x00, 0x00
+	.asciz "FAM_Lot_00_Head_01_Shader"
+	.byte 0x00, 0x00
+	.asciz "FAM_Lot_00_Head_02_Shader"
+	.byte 0x00, 0x00
+	.asciz "FAM_Lot_00_Head_03_Shader"
+	.byte 0x00, 0x00
+	.asciz "FAM_Lot_00_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Lot_00_Name_Text"
+	.asciz "FAM_Lot_01_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Lot_01_Name_Text"
+	.asciz "FAM_Lot_02_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Lot_02_Name_Text"
+	.asciz "FAM_Lot_03_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Lot_03_Name_Text"
+	.asciz "FAM_Selected_Family_Name_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Selected_Family_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Selected_Family_Money_Text"
+	.byte 0x00
+	.asciz "getloc:FAM_Selected_Family_Money_Text"
+	.byte 0x00, 0x00
+	.asciz "FAM_Lot_Select_Gold_Ball_Shader"
+	.asciz "FAM_Manage_Family_Container"
+	.asciz "FAM_Manage_Family_Background"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Manage_Title_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Manage_Title_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_MF_Edit_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_MF_Edit_Text"
+	.asciz "FAM_MF_Delete_Text"
+	.byte 0x00
+	.asciz "getloc:FAM_MF_Delete_Text"
+	.byte 0x00, 0x00
+	.asciz "FAM_MF_Done_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_MF_Done_Text"
+	.asciz "FAM_Unoccupied_Container"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Unoccupied_Lot_Background"
+	.byte 0x00, 0x00
+	.asciz "FAM_Unoccupied_Title_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Unoccupied_Title_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Move_In_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Move_In_Text"
+	.asciz "FAM_Unoccupied_Start_Money_Text"
+	.asciz "getloc:FAM_Unoccupied_Start_Money_Text"
+	.byte 0x00
+	.asciz "FAM_Bulldoze_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Bulldoze_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Occupied_Container"
+	.byte 0x00
+	.asciz "FAM_Occupied_Lot_Background"
+	.asciz "FAM_Occupied_Head_00_Shader"
+	.asciz "FAM_Occupied_Head_01_Shader"
+	.asciz "FAM_Occupied_Head_02_Shader"
+	.asciz "FAM_Occupied_Head_03_Shader"
+	.4byte 0x00000000
+	.asciz "FAM_Occupied_Title_Text"
+	.asciz "getloc:FAM_Occupied_Title_Text"
+	.byte 0x00
+	.asciz "FAM_Occupied_Family_Name_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Occupied_Family_Name_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Occupied_Family_Money_Text"
+	.byte 0x00
+	.asciz "getloc:FAM_Occupied_Family_Money_Text"
+	.byte 0x00, 0x00
+	.asciz "FAM_Enter_House_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Enter_House_Text"
+	.asciz "FAM_Evict_Family_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Evict_Family_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_Container"
+	.asciz "FAM_Select_Family_Background"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_Title_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_Title_Text"
+	.asciz "FAM_Select_Family_00_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_00_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_01_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_01_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_02_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_02_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_03_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_03_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_04_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_04_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_05_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_05_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_06_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_06_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Family_07_Text"
+	.byte 0x00, 0x00
+	.asciz "getloc:FAM_Select_Family_07_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Money_00_Text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:FAM_Select_Money_00_Text"
+	.asciz "FAM_Select_Money_01_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_01_Text"
+	.asciz "FAM_Select_Money_02_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_02_Text"
+	.asciz "FAM_Select_Money_03_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_03_Text"
+	.asciz "FAM_Select_Money_04_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_04_Text"
+	.asciz "FAM_Select_Money_05_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_05_Text"
+	.asciz "FAM_Select_Money_06_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_06_Text"
+	.asciz "FAM_Select_Money_07_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:FAM_Select_Money_07_Text"
+	.asciz "FAM_Select_Row_00_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_00_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_00_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_00_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_01_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_01_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_01_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_01_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_02_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_02_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_02_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_02_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_03_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_03_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_03_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_03_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_04_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_04_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_04_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_04_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_05_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_05_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_05_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_05_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_06_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_06_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_06_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_06_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_07_Head_00_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_07_Head_01_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_07_Head_02_Shader"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FAM_Select_Row_07_Head_03_Shader"
+	.byte 0x00, 0x00, 0x00
+
 .global "Widget_FAMTarget"
 "Widget_FAMTarget":
-	.incbin "baserom.dol", 0x42D4D8, 0x2290
+	# ROM: 0x42D4D8
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D53B4 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804303A8 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303BC ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804303C8 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303D8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804303E4 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303F4 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80430404 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80430418 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80430430 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80430440 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80430450 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430468 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430484 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430498 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804304B4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804304D0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53D0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804304F0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043050C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53D4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430528 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53D8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430544 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53DC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430560 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430578 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430594 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804305AC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804305C8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804305E0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804305FC ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430614 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430630 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430650 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430678 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430698 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53F4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804306C0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804306E0 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804306FC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043071C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430734 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430754 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430768 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53F8 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430780 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430794 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53F8 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804307B0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804307C8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5400 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53F8 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804307E0 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804307FC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043081C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430838 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043085C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430870 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430888 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804308A8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804308D0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804308E4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80430900 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430918 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430934 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430950 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53D4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043096C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53D8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430988 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53DC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804309A8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804309C0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804309E0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430A00 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430A28 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430A48 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53F4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430A70 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430A88 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430AA4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430ABC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80430ADC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430AF8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430B18 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430B38 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53CC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430B5C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430B78 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430B9C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430BB8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430BDC ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430BF8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430C1C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430C38 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430C5C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430C78 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430C9C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430CB8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430CDC ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430CF8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430D1C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430D38 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430D5C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430D78 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430D98 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430DB8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430DD8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430DF8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430E18 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430E38 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430E58 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430E78 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430E98 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430EB8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430ED8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430EF8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80430F18 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80430F38 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5390 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430F58 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430F7C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430FA0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430FC4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80430FE8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043100C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431030 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431054 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431078 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043109C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804310C0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804310E4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431108 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043112C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431150 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431174 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431198 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804311BC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804311E0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431204 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431228 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043124C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431270 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431294 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D541C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804312B8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804312DC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431300 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431324 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431348 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5408 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043136C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80431390 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804313B4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5418 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5424 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "G2D_swf_container"
+	.byte 0x00, 0x00
+	.asciz "FCM_bottom"
+	.byte 0x00
+	.asciz "FCM_fullbar"
+	.asciz "FCM_overlay"
+	.asciz "FCM_fire"
+	.byte 0x00, 0x00, 0x00
+
 .global "Widget_FireCodeMeter"
 "Widget_FireCodeMeter":
-	.incbin "baserom.dol", 0x42F768, 0x3AC
+	# ROM: 0x42F768
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5428 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D542C ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80433624 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5430 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5434 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80433638 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5438 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D543C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80433644 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53D0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D543C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5440 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5314 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D543C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80433650 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5314 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D529C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D544C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043365C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5454 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.4byte 0x00000000
+	.asciz "tsc5_comp_dialogbox.swf"
+	.asciz "G2D_icon_background"
+	.asciz "G2D_icon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "G2D_picture"
+	.asciz "G2D_title"
+	.byte 0x00, 0x00
+	.asciz "getloc:G2D_title_text"
+	.byte 0x00, 0x00
+	.asciz "0x45479e"
+	.byte 0x00, 0x00, 0x00
+	.asciz "G2D_body"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:G2D_body_text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "G2D_body2"
+	.byte 0x00, 0x00
+	.asciz "getloc:G2D_body2_text"
+	.byte 0x00, 0x00
+	.asciz "G2D_options"
+	.asciz "G2D_button0"
+	.asciz "TEXT_BUTTON"
+	.asciz "getloc:G2D_sel0"
+	.asciz "G2D_button1"
+	.4byte 0x00000000
+	.asciz "getloc:G2D_sel1"
+	.asciz "G2D_button2"
+	.4byte 0x00000000
+	.asciz "getloc:G2D_sel2"
+	.asciz "G2D_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.asciz "G2D_DPAD_UP"
+	.asciz "G2D_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "G2D_SELECT_BUTTON"
+	.byte 0x00, 0x00
+	.asciz "G2D_CANCEL_BUTTON"
+	.byte 0x00, 0x00
+
 .global "Widget_G2D"
 "Widget_G2D":
-	.incbin "baserom.dol", 0x42FB14, 0x5A4
+	# ROM: 0x42FB14
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5458 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80433624 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5460 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804338A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5468 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804338BC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5468 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804338C8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804338D4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804338E0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x804338F8 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53F4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80433904 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80433910 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5478 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D547C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80433928 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80433934 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5478 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5410 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043394C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80433958 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80433970 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80433980 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80433990 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804339A0 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804339B0 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804339C0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804339D0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804339DC ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5490 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804339EC ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80433A00 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "H2D_PAUSE"
+	.byte 0x00, 0x00
+	.asciz "H2D_CANCEL"
+	.byte 0x00
+	.asciz "H2D_SELECT"
+	.byte 0x00
+	.asciz "SWITCH_SIM_RIGHT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "H2D_pause_swf"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_hud_pause.swf"
+	.byte 0x00
+	.asciz "H2D_fastforward_swf"
+	.asciz "s2c_comp_hud_ff.swf"
+	.asciz "H2D_veryfastforward_swf"
+	.asciz "s2c_comp_hud_sff.swf"
+	.byte 0x00, 0x00, 0x00
+
 .global "Widget_H2D"
 "Widget_H2D":
-	.incbin "baserom.dol", 0x4300B8, 0x1C8
+	# ROM: 0x4300B8
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5498 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D549C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80433F00 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80433F0C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80433F18 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80433F24 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x805D54A4 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80433F38 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433F48 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80433F60 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433F74 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80433F88 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433FA0 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "ITB_bubble_shdr"
+	.asciz "ITB_bubble_shdr2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "ITB_text_shdr"
+	.byte 0x00, 0x00
+	.asciz "ITB_message_shdr"
+	.byte 0x00, 0x00, 0x00
+	.asciz "ITB_text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:ITB_text"
+
 .global "Widget_IntroThoughtBalloon"
 "Widget_IntroThoughtBalloon":
-	.incbin "baserom.dol", 0x430280, 0x654
+	# ROM: 0x430280
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D54B4 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434118 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54B8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54BC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434128 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54C4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043413C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5330 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54CC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54D0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54D4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043414C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54D8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54D8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80434160 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80434170 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54DC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "LSM_map_container"
+	.byte 0x00, 0x00
+	.asciz "LSM_water"
+	.byte 0x00, 0x00
+	.asciz "LSM_water2"
+	.byte 0x00
+	.asciz "LSM_tiki0"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki1"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki2"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki3"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki4"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki5"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki6"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki7"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki8"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki9"
+	.byte 0x00, 0x00
+	.asciz "LSM_tiki10"
+	.byte 0x00
+	.asciz "LSM_tiki11"
+	.byte 0x00
+	.asciz "LSM_tiki12"
+	.byte 0x00
+	.asciz "LSM_tiki13"
+	.byte 0x00
+	.asciz "LSM_tiki14"
+	.byte 0x00
+	.asciz "LSM_tiki15"
+	.byte 0x00
+	.asciz "LSM_tiki16"
+	.byte 0x00
+	.asciz "LSM_tiki17"
+	.byte 0x00
+	.asciz "LSM_tiki18"
+	.byte 0x00
+	.asciz "LSM_tiki19"
+	.byte 0x00
+	.asciz "LSM_tiki20"
+	.byte 0x00
+	.asciz "LSM_tiki21"
+	.byte 0x00
+	.asciz "LSM_tiki22"
+	.byte 0x00
+	.asciz "LSM_tiki23"
+	.byte 0x00
+	.asciz "LSM_tiki24"
+	.byte 0x00
+	.asciz "LSM_tiki25"
+	.byte 0x00
+	.asciz "LSM_tiki26"
+	.byte 0x00
+	.asciz "LSM_plumbbob"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_hud_text_container"
+	.byte 0x00
+	.asciz "LSM_island_gadget"
+	.byte 0x00, 0x00
+	.asciz "TITLE_PANE"
+	.byte 0x00
+	.asciz "LSM_info_container"
+	.byte 0x00
+	.asciz "LSM_info_gadget_bkg"
+	.asciz "PANE_LARGE"
+	.byte 0x00
+	.asciz "Resize, 258, 62"
+	.asciz "LSM_info_gadget"
+	.asciz "Resize, 246, 50"
+	.asciz "LSM_island_name"
+	.asciz "getloc:LSM_island_name"
+	.byte 0x00
+	.asciz "LSM_travel_time"
+	.asciz "getloc:LSM_travel_time"
+	.byte 0x00
+	.asciz "tsc6_comp_map_hud.swf"
+	.byte 0x00, 0x00
+	.asciz "LSM_head_shdr"
+	.byte 0x00, 0x00
+	.asciz "LSM_map_legend"
+	.byte 0x00
+	.asciz "qd:PDAStrings::map_legend"
+	.byte 0x00, 0x00
+	.asciz "LSM_legend_container"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_legend_gadget_bkg"
+	.byte 0x00, 0x00
+	.asciz "LSM_legend_gadget"
+	.byte 0x00, 0x00
+	.asciz "LSM_legend_unlit_tiki_shdr"
+	.byte 0x00
+	.asciz "LSM_legend_unlit_tiki_msg"
+	.byte 0x00, 0x00
+	.asciz "qd:PDAStrings::legend_unlit_tiki"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_legend_lit_tiki_shdr"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_legend_lit_tiki_msg"
+	.asciz "qd:PDAStrings::legend_lit_tiki"
+	.byte 0x00
+	.asciz "LSM_legend_plumbbob"
+	.4byte 0x00000000
+	.asciz "LSM_legend_plumbbob_msg"
+	.asciz "qd:PDAStrings::legend_plumbbob"
+	.byte 0x00
+	.asciz "LSM_select"
+	.byte 0x00
+	.asciz "LSM_cancel"
+	.byte 0x00
+	.asciz "PAGE_LEFT"
+	.byte 0x00, 0x00
+	.asciz "LSM_left"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PAGE_RIGHT"
+	.byte 0x00
+	.asciz "LSM_right"
+	.byte 0x00, 0x00
+	.asciz "OPEN_XAM_BASE"
+	.byte 0x00, 0x00
+	.asciz "LSM_legend"
+	.byte 0x00
+
 .global "Widget_LotSelectMap"
 "Widget_LotSelectMap":
-	.incbin "baserom.dol", 0x4308D4, 0x1D74
+	# ROM: 0x4308D4
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D54E0 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54E4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D539C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043436C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54E4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D539C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434380 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54F0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54F4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043438C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D54F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54F0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54F4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5500 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5508 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D550C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5510 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5514 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434398 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5518 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D551C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5520 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5528 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5528 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5530 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5530 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343A4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5528 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5528 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5530 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5530 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5534 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D553C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5420 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5540 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5544 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343B0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5548 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D554C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5550 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5558 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D555C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5560 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5564 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343BC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5568 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D556C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5570 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5578 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D557C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5580 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5314 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343C8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5584 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5588 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5590 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5414 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5594 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5598 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343D4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D559C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D55A0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D55A4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5558 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D55B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54D4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343E0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55B4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5568 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D55B8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5558 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D55C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54D4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343EC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5568 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D55CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55D4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D55D8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D55C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D544C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804343F8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55DC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D55E0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D55E4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D55F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D55C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D55F4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434404 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D55FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5600 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55D4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5608 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D55B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D54AC ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434410 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D55DC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D560C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5610 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5618 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D561C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5620 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043441C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5624 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5628 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D562C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5634 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5638 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D563C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5640 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434428 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5644 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5648 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D564C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5654 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5658 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D565C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5660 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434434 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5664 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5668 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D566C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5674 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5678 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D567C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434440 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5680 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5684 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5688 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5690 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5694 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D567C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D540C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043444C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5698 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D569C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D56A0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56A8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D56B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D56B4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434458 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56B8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D56C0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D56C4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56CC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D56D4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D56D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5620 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434464 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56DC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D56E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D56E8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D563C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D56F4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434470 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D56FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5700 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D563C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D570C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043447C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5518 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5710 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5718 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5434 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5720 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434488 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5724 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D572C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5730 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5738 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5740 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5744 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5598 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434494 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5748 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5750 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5754 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D575C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5740 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5764 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5598 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344A0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5768 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5750 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5770 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5778 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5780 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D563C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344AC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5784 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D578C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D5790 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5798 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5780 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D563C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344B8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57A0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D578C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D57A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D57BC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5430 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344C4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D57CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5620 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D57D4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D57D8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344D0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D56F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57DC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804344DC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57E0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57E4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804344EC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80434504 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80434518 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5454 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52B4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80434524 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80434538 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043454C ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F8C ;# ptr
+	.4byte 0x80434558 ;# ptr
+	.4byte 0x805D4F94 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80434568 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8042F5FC ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57E8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F8C ;# ptr
+	.4byte 0x80434578 ;# ptr
+	.4byte 0x805D4F94 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80434588 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80434598 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57BC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x804338F8 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804345B0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804345C0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57BC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C0 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D57F0 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x804345D8 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804345F0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D57F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80434600 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80434610 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5800 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5804 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043462C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5810 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80434644 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043454C ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043465C ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8042F5FC ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5814 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5814 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5818 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D581C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434670 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54D8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043468C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804346A8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5400 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5820 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53FC ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804346CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5810 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804346E8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80434700 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5400 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D57BC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5820 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53FC ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80434720 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5824 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80434738 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80434750 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5400 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5820 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53FC ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80434770 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043477C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80434788 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80434794 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804347A0 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804347AC ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804347B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804347C8 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "M2M_swf_container"
+	.byte 0x00, 0x00
+	.asciz "M2M_icon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "M2M_body"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:M2M_body_text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "M2M_items"
+	.byte 0x00, 0x00
+	.asciz "M2M_button0"
+	.asciz "getloc:M2M_item_text0"
+	.byte 0x00, 0x00
+	.asciz "M2M_button1"
+	.asciz "getloc:M2M_item_text1"
+	.byte 0x00, 0x00
+	.asciz "M2M_button2"
+	.asciz "getloc:M2M_item_text2"
+	.byte 0x00, 0x00
+	.asciz "M2M_button3"
+	.asciz "getloc:M2M_item_text3"
+	.byte 0x00, 0x00
+	.asciz "M2M_button4"
+	.asciz "getloc:M2M_item_text4"
+	.byte 0x00, 0x00
+	.asciz "M2M_button5"
+	.asciz "getloc:M2M_item_text5"
+	.byte 0x00, 0x00
+	.asciz "M2M_button6"
+	.asciz "getloc:M2M_item_text6"
+	.byte 0x00, 0x00
+	.asciz "M2M_button7"
+	.asciz "getloc:M2M_item_text7"
+	.byte 0x00, 0x00
+	.asciz "M2M_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.asciz "M2M_DPAD_UP"
+	.asciz "M2M_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "M2M_SELECT_BUTTON"
+	.byte 0x00, 0x00
+	.asciz "M2M_CANCEL_BUTTON"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "Widget_M2M"
 "Widget_M2M":
-	.incbin "baserom.dol", 0x432648, 0x608
+	# ROM: 0x432648
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5828 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80436380 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5830 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80436394 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5838 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D583C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804363A0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804363AC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5840 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804363C4 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804363D0 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804363DC ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804363F4 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52D4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80436400 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80436418 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80436424 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043643C ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5640 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80436448 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80436460 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5314 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043646C ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80436484 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5478 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80436490 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804364A8 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D584C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804364B4 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804364CC ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5334 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5844 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804364D8 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x804364F0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80436500 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043650C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5490 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043651C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80436530 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "MDI_swf_container"
+	.byte 0x00, 0x00
+	.asciz "MDI_icon_bg_shdr"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MDI_icon_shdr"
+	.byte 0x00, 0x00
+	.asciz "MDI_title"
+	.byte 0x00, 0x00
+	.asciz "getloc:MDI_title"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MDI_body"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:MDI_body"
+
 .global "Widget_ModelessDialog"
 "Widget_ModelessDialog":
-	.incbin "baserom.dol", 0x432C50, 0x3E0
+	# ROM: 0x432C50
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5850 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5848 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D523C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80436AD8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5858 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80436AEC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80436B00 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80436B10 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80436B1C ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54DC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x804338F8 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D53E0 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80436B30 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80436B40 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D54DC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5860 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "MOT_panel_container"
+	.asciz "tsc5_comp_sidepanel_bkg.swf"
+	.asciz "MOT_motives_container"
+	.byte 0x00, 0x00
+	.asciz "MOT_icon0"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_social.swf"
+	.asciz "MOT_bar0"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_motivebar.swf"
+	.byte 0x00
+	.asciz "MOT_icon1"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_bladder.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_bar1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon2"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_hygene.swf"
+	.asciz "MOT_bar2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon3"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_hunger.swf"
+	.asciz "MOT_bar3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon4"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_fun.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_bar4"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon5"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_energy.swf"
+	.asciz "MOT_bar5"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon6"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_comfort.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_bar6"
+	.byte 0x00, 0x00, 0x00
+	.asciz "MOT_icon7"
+	.byte 0x00, 0x00
+	.asciz "s2c_comp_room.swf"
+	.byte 0x00, 0x00
+	.asciz "MOT_bar7"
+	.byte 0x00, 0x00, 0x00
+
 .global "Widget_Motives"
 "Widget_Motives":
-	.incbin "baserom.dol", 0x433030, 0x53C
+	# ROM: 0x433030
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5864 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5868 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80436D68 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D586C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5870 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5878 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D587C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436D7C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80436D98 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5880 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5884 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436DB0 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DBC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436DD0 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5890 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436DF4 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436E00 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E18 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5894 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E24 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5898 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436E30 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E44 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D589C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E50 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58A0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436E5C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E70 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58A4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E7C ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5564 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436E88 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436E9C ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54D4 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436EA8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436EB4 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436EC8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58A8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436ED4 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58AC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436EE0 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436EF8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5740 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436F04 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5888 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436F10 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80436F24 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D588C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D550C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436DDC ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "PAZ_title"
+	.byte 0x00, 0x00
+	.asciz "getloc:PAZ_TabName"
+	.byte 0x00
+	.asciz "PAZ_icons"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon0"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon0_Hi"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PAZ_Icon1"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon1_Hi"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PAZ_Icon2"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon3"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon4"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon5"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon6"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon7"
+	.byte 0x00, 0x00
+	.asciz "PAZ_Icon8"
+	.byte 0x00, 0x00
+	.asciz "PAZ_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PAZ_DPAD_LEFT"
+	.byte 0x00, 0x00
+	.asciz "PAZ_DPAD_RIGHT"
+	.byte 0x00
+	.asciz "PAZ_CANCEL"
+	.byte 0x00
+
 .global "Widget_Pause"
 "Widget_Pause":
-	.incbin "baserom.dol", 0x43356C, 0x540
+	# ROM: 0x43356C
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D58B4 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80437378 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80437384 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80437398 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373A4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373B0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373C0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52E0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373CC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52E0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373DC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53D0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373E8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D555C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804373F4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5348 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437400 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D58C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043740C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D58C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437418 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D58C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437424 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D58CC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437430 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303BC ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437440 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303D8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437450 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437460 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D549C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437460 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "PRG_Text"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getloc:PRG_Text"
+	.asciz "PRG_CANCEL_BUTTON"
+	.byte 0x00, 0x00
+
 .global "Widget_PRGTarget"
 "Widget_PRGTarget":
-	.incbin "baserom.dol", 0x433AAC, 0x1D4
+	# ROM: 0x433AAC
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D4FF0 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80437978 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80437988 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5378 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D52CC ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437998 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "RMD_model"
+	.byte 0x00, 0x00
+	.asciz "RMD_title_container"
+	.asciz "RMD_title_A1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RMD_title_A2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RMD_title_A3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RMD_title"
+	.byte 0x00, 0x00
+	.asciz "getloc:RMD_title"
+	.byte 0x00, 0x00, 0x00
+	.asciz "RMD_btn_container"
+	.byte 0x00, 0x00
+	.asciz "RMD_btn_A1"
+	.byte 0x00
+	.asciz "RMD_btn_A2"
+	.byte 0x00
+	.asciz "RMD_btn_A3"
+	.byte 0x00
+	.asciz "RMD_btn_image"
+	.byte 0x00, 0x00
+	.asciz "RMD_btn_text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:RMD_btn_text"
+	.asciz "RMD_SELECT_BUTTON"
+	.byte 0x00, 0x00
+
 .global "Widget_RewardMomentDialog"
 "Widget_RewardMomentDialog":
-	.incbin "baserom.dol", 0x433C80, 0x974
+	# ROM: 0x433C80
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D58D0 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x805D58D4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D58DC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D58E0 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437A90 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D58E4 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54B8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80437A9C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437AB0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5884 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D551C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437AC0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5884 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D544C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437AD0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5884 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D551C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80437AE0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80437AEC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x804338F8 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5530 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5814 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80437B00 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437B14 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D551C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437B20 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D544C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80437B2C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D50C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F78 ;# ptr
+	.4byte 0x805D551C ;# ptr
+	.4byte 0x805D4F84 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80437B38 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8042EAC4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53F8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80437B48 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80437B58 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5344 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80437B6C ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "SKL_panel_container"
+	.asciz "SKL_short_text_container"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_pu_00"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG0"
+	.asciz "0x7999D4"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_PopUpText0"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_cooking"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_pu_01"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG1"
+	.asciz "SKL_PopUpText1"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "qd:PDAStrings::skill_mechanical"
+	.asciz "SKL_pu_02"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG2"
+	.asciz "SKL_PopUpText2"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_charisma"
+	.byte 0x00, 0x00
+	.asciz "SKL_pu_03"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG3"
+	.asciz "SKL_PopUpText3"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_body"
+	.byte 0x00, 0x00
+	.asciz "SKL_pu_04"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG4"
+	.asciz "SKL_PopUpText4"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_logic"
+	.byte 0x00
+	.asciz "SKL_pu_05"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG5"
+	.asciz "SKL_PopUpText5"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_creativity"
+	.asciz "SKL_pu_06"
+	.byte 0x00, 0x00
+	.asciz "SKL_textBG6"
+	.asciz "SKL_PopUpText6"
+	.byte 0x00
+	.asciz "qd:PDAStrings::skill_cleaning"
+	.byte 0x00, 0x00
+	.asciz "SKL_skills_container"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_BackdropContainer"
+	.byte 0x00, 0x00
+	.asciz "SKL_hud_side_panel_icon_bg"
+	.byte 0x00
+	.asciz "SKL_SWFContainer"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_swf0"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_cooking.swf"
+	.asciz "SKL_swf1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_mechanical.swf"
+	.byte 0x00
+	.asciz "SKL_swf2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_charisma.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_swf3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_body.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_swf4"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_logic.swf"
+	.byte 0x00, 0x00
+	.asciz "SKL_swf5"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_creativity.swf"
+	.byte 0x00
+	.asciz "SKL_swf6"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_skills_cleaning.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "SKL_TextContainer"
+	.byte 0x00, 0x00
+	.asciz "SKL_text0"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill0_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text1"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill1_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text2"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill2_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text3"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill3_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text4"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill4_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text5"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill5_SKL"
+	.byte 0x00, 0x00
+	.asciz "SKL_text6"
+	.byte 0x00, 0x00
+	.asciz "getloc:skill6_SKL"
+	.byte 0x00, 0x00
+
 .global "Widget_Skills"
 "Widget_Skills":
-	.incbin "baserom.dol", 0x4345F4, 0xF04
+	# ROM: 0x4345F4
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D58F0 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5894 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438048 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D58F8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5900 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436D7C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043805C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5904 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D590C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D5284 ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438078 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80438084 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043809C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804380AC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804380CC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5924 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804380D8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804380E4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804380F8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438118 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5594 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80438124 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438130 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438140 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438160 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54BC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043816C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438178 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438188 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804381A4 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5928 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804381B0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804381BC ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804381CC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804381E8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D592C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804381F4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438200 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438210 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438230 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5930 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043823C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80438090 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438248 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438258 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5918 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438278 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5934 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438290 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5938 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5290 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5540 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D593C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5940 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x804382A8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5944 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5448 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804382C4 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5948 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5890 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x804382D8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x804382E4 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80438300 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5290 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043830C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8043832C ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5540 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80438338 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80438358 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D593C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80438364 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80438380 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043838C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x804383A8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5940 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x804383B4 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x804383D4 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5944 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x804383E0 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80438400 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D594C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438414 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438420 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438434 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438440 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5290 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438454 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438460 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5540 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438474 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80438480 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D593C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80438494 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804384A0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804384B4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804384C0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5940 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x804384D4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804384E0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D536C ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5944 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C4 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+
 .global "Widget_SimSwitcherHide"
 "Widget_SimSwitcherHide":
-	.incbin "baserom.dol", 0x4354F8, 0x184
+	# ROM: 0x4354F8
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5950 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "TRC_background"
+	.byte 0x00
+	.asciz "0x000000"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TRC_swf_container"
+	.byte 0x00, 0x00
+	.asciz "TRC_icon_background"
+	.asciz "TRC_icon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TRC_picture"
+	.asciz "TRC_title"
+	.byte 0x00, 0x00
+	.asciz "getloc:TRC_title_text"
+	.byte 0x00, 0x00
+	.asciz "TRC_body"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getloc:TRC_body_text"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TRC_options"
+	.asciz "TRC_button0"
+	.4byte 0x00000000
+	.asciz "getloc:TRC_sel0"
+	.asciz "TRC_button1"
+	.4byte 0x00000000
+	.asciz "getloc:TRC_sel1"
+	.asciz "TRC_button2"
+	.4byte 0x00000000
+	.asciz "getloc:TRC_sel2"
+	.asciz "TRC_X_BUTTON"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TRC_DPAD_UP"
+	.asciz "TRC_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "TRC_SELECT_BUTTON"
+	.byte 0x00, 0x00
+	.asciz "TRC_CANCEL_BUTTON"
+	.byte 0x00, 0x00
+
 .global "Widget_TRC"
 "Widget_TRC":
-	.incbin "baserom.dol", 0x43567C, 0x76C
+	# ROM: 0x43567C
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5954 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439418 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x80439428 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5958 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5960 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439434 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5968 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439448 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5468 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043945C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5468 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439468 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439474 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80439480 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53F4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439498 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x804394A4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5478 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D547C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5470 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x804394BC ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5474 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804394C8 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804394D8 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x804394E8 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x804394F8 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x80439508 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5484 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x80439518 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80439528 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80439538 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80439544 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5490 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80439554 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x80439568 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "WAF_aspMeter"
+	.byte 0x00, 0x00, 0x00
+	.asciz "tsc5_aspiration_meter.swf"
+	.byte 0x00, 0x00
+	.asciz "WAF_short_text_container"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_textBG1"
+	.asciz "WAF_Text0"
+	.byte 0x00, 0x00
+	.asciz "getloc:WAF_Text0"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_textBG2"
+	.asciz "WAF_Text1"
+	.byte 0x00, 0x00
+	.asciz "getloc:WAF_Text1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_textBG3"
+	.asciz "WAF_Text2"
+	.byte 0x00, 0x00
+	.asciz "getloc:WAF_Text2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_textBG4"
+	.asciz "WAF_Text3"
+	.byte 0x00, 0x00
+	.asciz "getloc:WAF_Text3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_panel_container"
+	.asciz "WAF_container_waf0"
+	.byte 0x00
+	.asciz "WAF_swf0"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "s2c_comp_wants_bkgd.swf"
+	.asciz "WAF_shdr00"
+	.byte 0x00
+	.asciz "WAF_shdr01"
+	.byte 0x00
+	.asciz "WAF_container_waf1"
+	.byte 0x00
+	.asciz "WAF_swf1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_shdr10"
+	.byte 0x00
+	.asciz "WAF_shdr11"
+	.byte 0x00
+	.asciz "WAF_container_waf2"
+	.byte 0x00
+	.asciz "WAF_swf2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_shdr20"
+	.byte 0x00
+	.asciz "WAF_shdr21"
+	.byte 0x00
+	.asciz "WAF_container_waf3"
+	.byte 0x00
+	.asciz "WAF_swf3"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_shdr30"
+	.byte 0x00
+	.asciz "WAF_shdr31"
+	.byte 0x00
+	.asciz "WAF_preload0"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WAF_preload1"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_wantsfears_slotmachine.swf"
+	.asciz "WAF_preload2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "s2c_comp_wantsfears_bkgd_gold.swf"
+	.byte 0x00, 0x00
+
 .global "Widget_WantsAndFears"
 "Widget_WantsAndFears":
-	.incbin "baserom.dol", 0x435DE8, 0xB88
+	# ROM: 0x435DE8
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D5970 ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5894 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D5978 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5900 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80436D7C ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439A68 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5980 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5920 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439A78 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439A94 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5904 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5660 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4ED0 ;# ptr
+	.4byte 0x805D5284 ;# ptr
+	.4byte 0x805D4ED4 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439AB0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5910 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439ABC ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80439AC8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5984 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D591C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D598C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439ADC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5990 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439AE8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80439AF4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5984 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5454 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D598C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439B08 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D544C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439B14 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80439B20 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5984 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5430 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D598C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439B34 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D54AC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5914 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x80439B40 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4F9C ;# ptr
+	.4byte 0x805D5808 ;# ptr
+	.4byte 0x805D4FA4 ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x80439B4C ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5984 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D570C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52B8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D598C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439B60 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5994 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5998 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D53E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439B74 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D50C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439B88 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439B98 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439BB0 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439BBC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439BC8 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D50C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5254 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439BDC ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439B98 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439BE8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439BF4 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439C00 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D50C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5898 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439C14 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439B98 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439C20 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439C2C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x80439C38 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D50C0 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D58A0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439C4C ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439B98 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439C58 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x80439C64 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439C70 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439B98 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439C80 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439C90 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x80439CB4 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80439CC4 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "PPC_Taxi"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPCTitle"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::atm_title"
+	.byte 0x00
+	.asciz "PPCPlayerMoney"
+	.byte 0x00
+	.asciz "qd:NewUIStrings::atm_current_values"
+	.4byte 0x00000000
+	.asciz "PPCInstructions"
+	.asciz "qd:NewUIStrings::atm_conversion_rate"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPCInstructions2"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::atm_question"
+	.byte 0x00, 0x00
+	.asciz "PPC_ConversionTools"
+	.asciz "PPC_SimoleonsSelection"
+	.byte 0x00
+	.asciz "PANE_HIGHLIGHT"
+	.byte 0x00
+	.asciz "getloc:PPC_Simoleons"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPC_PetPointsIcon"
+	.byte 0x00, 0x00
+	.asciz "PPC_Minus"
+	.byte 0x00, 0x00
+	.asciz "tsc5_comp_arrow_minus.swf"
+	.byte 0x00, 0x00
+	.asciz "PPC_PetPointsBox"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PANE_INPUT"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "PPC_PetpointsResultText"
+	.asciz "getloc:PPC_Petpoints"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPC_Plus"
+	.byte 0x00, 0x00, 0x00
+	.asciz "tsc5_comp_arrow_plus.swf"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPC_EqualsSign"
+	.byte 0x00
+	.asciz "PPC_SimoleonsIcon"
+	.byte 0x00, 0x00
+	.asciz "PPC_SimoleansBox"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PANE_SUBTITLE"
+	.byte 0x00, 0x00
+	.asciz "PPC_Simoleons"
+	.byte 0x00, 0x00
+	.asciz "PPC_button_OK"
+	.byte 0x00, 0x00
+	.asciz "qd:NewUIStrings::atm_convert"
+	.byte 0x00, 0x00, 0x00
+	.asciz "PPC_button_Cancel"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "qd:NewUIStrings::cancel"
+	.asciz "PPC_DPAD_UP"
+	.asciz "PPC_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "PPC_DPAD_LEFT"
+	.byte 0x00, 0x00
+	.asciz "PPC_DPAD_RIGHT"
+	.byte 0x00
+	.asciz "PPC_CANCEL"
+	.byte 0x00
+
 .global "Widget_PetPointsConversionDialog"
 "Widget_PetPointsConversionDialog":
-	.incbin "baserom.dol", 0x436970, 0x970
+	# ROM: 0x436970
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D599C ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D59A0 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043A58C ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D578C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A598 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A5A4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A5C0 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A5D0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A5F8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A608 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5324 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A630 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A644 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5468 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043A664 ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043A678 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A690 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59A8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5840 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043A6A0 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043A6B8 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D547C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5518 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8043A6CC ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043A6D8 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043A6F4 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A708 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D57E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A718 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A730 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59B4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D584C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8043A748 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59B8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043A754 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A770 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x805D59BC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043A780 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5234 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59C0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043A794 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A7A8 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D57E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043A7B8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043A6A0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D584C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043A7C8 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59CC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043A7D8 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043A7F8 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59D0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043A810 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043A828 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043A834 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303BC ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043A844 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303D8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043A854 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x805D59D4 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043A864 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+	.asciz "KNL_Icon"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNLTitle"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::store_kennel"
+	.byte 0x00, 0x00
+	.asciz "KNLKennelFeeRate"
+	.byte 0x00, 0x00, 0x00
+	.asciz "qd:NewUIStrings::kennel_cost"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNLInstructions"
+	.asciz "qd:NewUIStrings::kennel_question"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNL_ConversionTools"
+	.asciz "KNL_SimoleonsSelection"
+	.byte 0x00
+	.asciz "getloc:KNL_Simoleons"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNL_DitchDaysIcon"
+	.byte 0x00, 0x00
+	.asciz "KNL_Minus"
+	.byte 0x00, 0x00
+	.asciz "KNL_SimoleonsBox"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "KNL_DitchDaysResultText"
+	.asciz "getloc:KNL_DitchDays"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNL_Plus"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNL_EqualsSign"
+	.byte 0x00
+	.asciz "KNL_SimoleonsIcon"
+	.byte 0x00, 0x00
+	.asciz "KNL_DitchDaysBox"
+	.byte 0x00, 0x00, 0x00
+	.asciz "KNL_Simoleons"
+	.byte 0x00, 0x00
+	.asciz "KNL_button_OK"
+	.byte 0x00, 0x00
+	.asciz "qd:NewUIStrings::kennel_board_pet"
+	.byte 0x00, 0x00
+	.asciz "KNL_button_Cancel"
+	.byte 0x00, 0x00
+	.asciz "KNL_DPAD_UP"
+	.asciz "KNL_DPAD_DOWN"
+	.byte 0x00, 0x00
+	.asciz "KNL_DPAD_LEFT"
+	.byte 0x00, 0x00
+	.asciz "KNL_DPAD_RIGHT"
+	.byte 0x00
+	.asciz "KNL_CANCEL"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global "Widget_PetKennelDialog"
 "Widget_PetKennelDialog":
-	.incbin "baserom.dol", 0x4372E0, 0x6E0
+	# ROM: 0x4372E0
+	.4byte 0x805D5120 ;# ptr
+	.4byte 0x805D50A0 ;# ptr
+	.4byte 0x805D59DC ;# ptr
+	.4byte 0x805D5220 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52D8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5340 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x805D59E0 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5450 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x80433890 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043AFAC ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D578C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52E8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043AFB8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043AFC4 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D52DC ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043AFE4 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043AFF8 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043B018 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043B028 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D53F0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5128 ;# ptr
+	.4byte 0x805D5188 ;# ptr
+	.4byte 0x8043B04C ;# ptr
+	.4byte 0x805D5228 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5094 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043B060 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A690 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59A8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5840 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5394 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D52C8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043B078 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043B090 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D547C ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5518 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8043B0A4 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5404 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043A6D8 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043B0B0 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A708 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59AC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D57E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043B0C8 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043B0E0 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59B4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D584C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5148 ;# ptr
+	.4byte 0x805D5108 ;# ptr
+	.4byte 0x8043B0F8 ;# ptr
+	.4byte 0x805D5318 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59B8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4F28 ;# ptr
+	.4byte 0x8043A754 ;# ptr
+	.4byte 0x805D4F30 ;# ptr
+	.4byte 0x805D5328 ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043B104 ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x805D59BC ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D53EC ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D4F08 ;# ptr
+	.4byte 0x805D537C ;# ptr
+	.4byte 0x805D4F10 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5144 ;# ptr
+	.4byte 0x805D5110 ;# ptr
+	.4byte 0x8043B114 ;# ptr
+	.4byte 0x805D5240 ;# ptr
+	.4byte 0x805D50D4 ;# ptr
+	.4byte 0x805D5248 ;# ptr
+	.4byte 0x805D524C ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5234 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59C0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5258 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043B128 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x8043A7A8 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59C4 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59B0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D52FC ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D57E8 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D513C ;# ptr
+	.4byte 0x805D5178 ;# ptr
+	.4byte 0x8043B13C ;# ptr
+	.4byte 0x805D526C ;# ptr
+	.4byte 0x805D4EDC ;# ptr
+	.4byte 0x8043B078 ;# ptr
+	.4byte 0x805D4EE4 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D59C8 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D584C ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D533C ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D546C ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D4EEC ;# ptr
+	.4byte 0x8042F640 ;# ptr
+	.4byte 0x805D4F00 ;# ptr
+	.4byte 0x805D5274 ;# ptr
+	.4byte 0x805D5264 ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043B14C ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59CC ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043B15C ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D51F8 ;# ptr
+	.4byte 0x805D5200 ;# ptr
+	.4byte 0x8043B180 ;# ptr
+	.4byte 0x805D52A0 ;# ptr
+	.4byte 0x805D5208 ;# ptr
+	.4byte 0x80433964 ;# ptr
+	.4byte 0x805D52A8 ;# ptr
+	.4byte 0x805D4E38 ;# ptr
+	.4byte 0x805D5480 ;# ptr
+	.4byte 0x805D4EA8 ;# ptr
+	.4byte 0x805D4E3C ;# ptr
+	.4byte 0x805D59D0 ;# ptr
+	.4byte 0x805D4EB0 ;# ptr
+	.4byte 0x805D4E40 ;# ptr
+	.4byte 0x805D5708 ;# ptr
+	.4byte 0x805D4E90 ;# ptr
+	.4byte 0x805D4E44 ;# ptr
+	.4byte 0x805D5260 ;# ptr
+	.4byte 0x805D4E88 ;# ptr
+	.4byte 0x805D5210 ;# ptr
+	.4byte 0x8043A810 ;# ptr
+	.4byte 0x805D5488 ;# ptr
+	.4byte 0x805D4EC4 ;# ptr
+	.4byte 0x805D50B0 ;# ptr
+	.4byte 0x805D4EC8 ;# ptr
+	.4byte 0x805D52BC ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D53B8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043B194 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x80430424 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043B1A0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303BC ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043B1B0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x804303D8 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043B1C0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D5380 ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x805D59E8 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D5140 ;# ptr
+	.4byte 0x805D50CC ;# ptr
+	.4byte 0x805D534C ;# ptr
+	.4byte 0x805D5354 ;# ptr
+	.4byte 0x805D5118 ;# ptr
+	.4byte 0x8043B1D0 ;# ptr
+	.4byte 0x805D535C ;# ptr
+	.4byte 0x805D5364 ;# ptr
+	.4byte 0x805D50A8 ;# ptr
+
 .global lbl_8043B8C0
 lbl_8043B8C0:
-	.incbin "baserom.dol", 0x4379C0, 0x10
+	# ROM: 0x4379C0
+	.asciz "LoadWidget"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_8043B8D0
 lbl_8043B8D0:
-	.incbin "baserom.dol", 0x4379D0, 0x10
+	# ROM: 0x4379D0
+	.asciz "SWITCH_SIM_LEFT"
+
 .global lbl_8043B8E0
 lbl_8043B8E0:
-	.incbin "baserom.dol", 0x4379E0, 0xC
+	# ROM: 0x4379E0
+	.asciz "highlight"
+	.byte 0x00, 0x00
+
 .global lbl_8043B8EC
 lbl_8043B8EC:
-	.incbin "baserom.dol", 0x4379EC, 0x68
+	# ROM: 0x4379EC
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x801878FC ;# ptr
+	.4byte 0x801878FC ;# ptr
+	.4byte 0x8018791C ;# ptr
+	.4byte 0x80187970 ;# ptr
+	.4byte 0x80187990 ;# ptr
+	.4byte 0x801879B0 ;# ptr
+	.4byte 0x80187CE4 ;# ptr
+	.4byte 0x801879D0 ;# ptr
+	.4byte 0x80187A24 ;# ptr
+	.4byte 0x80187B4C ;# ptr
+	.4byte 0x80187B94 ;# ptr
+	.4byte 0x80187BC8 ;# ptr
+	.4byte 0x80187BFC ;# ptr
+	.4byte 0x80187CE4 ;# ptr
+	.4byte 0x80187CE4 ;# ptr
+	.4byte 0x80187C1C ;# ptr
+	.4byte 0x80187C3C ;# ptr
+	.4byte 0x80187C84 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+	.4byte 0x80187CE8 ;# ptr
+
 .global "__vt__9UIAMBIENT"
 "__vt__9UIAMBIENT":
-	.incbin "baserom.dol", 0x437A54, 0xC
+	# ROM: 0x437A54
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9UIAMBIENTFv" ;# ptr (0x8017E7E0)
+
 .global "__vt__14SimpleOkDialog"
 "__vt__14SimpleOkDialog":
-	.incbin "baserom.dol", 0x437A60, 0x18
+	# ROM: 0x437A60
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14SimpleOkDialogFv" ;# ptr (0x8017D37C)
+	.4byte "SelectionCallback__14SimpleOkDialogFi" ;# ptr (0x8017B958)
+	.4byte "ZeroInputCallback__8UIDialogFv" ;# ptr (0x8010B008)
+	.4byte "DialogClosedCallback__8UIDialogFv" ;# ptr (0x8010B00C)
+
 .global "__vt__10HelpDialog"
 "__vt__10HelpDialog":
-	.incbin "baserom.dol", 0x437A78, 0x18
+	# ROM: 0x437A78
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10HelpDialogFv" ;# ptr (0x8017B5D0)
+	.4byte "SelectionCallback__10HelpDialogFi" ;# ptr (0x8017B92C)
+	.4byte "ZeroInputCallback__8UIDialogFv" ;# ptr (0x8010B008)
+	.4byte "DialogClosedCallback__8UIDialogFv" ;# ptr (0x8010B00C)
+
 .global "__vt__9CURTarget"
 "__vt__9CURTarget":
-	.incbin "baserom.dol", 0x437A90, 0x20
+	# ROM: 0x437A90
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9CURTargetFv" ;# ptr (0x80186250)
+	.4byte "SetVariable__12UIObjectBaseFPCcPCc" ;# ptr (0x80170954)
+	.4byte "GetVariable__12UIObjectBaseFPCc" ;# ptr (0x80170958)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__14UIButtonImages"
 "__vt__14UIButtonImages":
-	.incbin "baserom.dol", 0x437AB0, 0x10
+	# ROM: 0x437AB0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14UIButtonImagesFv" ;# ptr (0x801856C0)
+	.4byte 0x00000000
+
 .global "__vt__8UIAnalog"
 "__vt__8UIAnalog":
-	.incbin "baserom.dol", 0x437AC0, 0x20
+	# ROM: 0x437AC0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__8UIAnalogFv" ;# ptr (0x8018536C)
+	.4byte "SetVariable__12UIObjectBaseFPCcPCc" ;# ptr (0x80170954)
+	.4byte "GetVariable__8UIAnalogFPCc" ;# ptr (0x801853D8)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__13UIAUDIOTarget"
 "__vt__13UIAUDIOTarget":
-	.incbin "baserom.dol", 0x437AE0, 0x20
+	# ROM: 0x437AE0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13UIAUDIOTargetFv" ;# ptr (0x80185074)
+	.4byte "SetVariable__13UIAUDIOTargetFPCcPCc" ;# ptr (0x801850E0)
+	.4byte "GetVariable__13UIAUDIOTargetFPCc" ;# ptr (0x801851B0)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__15UIScreenManager"
 "__vt__15UIScreenManager":
-	.incbin "baserom.dol", 0x437B00, 0x20
+	# ROM: 0x437B00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15UIScreenManagerFv" ;# ptr (0x80184168)
+	.4byte "SetVariable__15UIScreenManagerFPCcPCc" ;# ptr (0x80184D44)
+	.4byte "GetVariable__12UIObjectBaseFPCc" ;# ptr (0x80170958)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__15UIScreenManagerFv" ;# ptr (0x80184E40)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__10UIDBTarget"
 "__vt__10UIDBTarget":
-	.incbin "baserom.dol", 0x437B20, 0x20
+	# ROM: 0x437B20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10UIDBTargetFv" ;# ptr (0x80181224)
+	.4byte "SetVariable__10UIDBTargetFPCcPCc" ;# ptr (0x80181290)
+	.4byte "GetVariable__10UIDBTargetFPCc" ;# ptr (0x80181400)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__8UIRouter"
 "__vt__8UIRouter":
-	.incbin "baserom.dol", 0x437B40, 0x20
+	# ROM: 0x437B40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__8UIRouterFv" ;# ptr (0x80183CF4)
+	.4byte "SetVariable__8UIRouterFPCcPCc" ;# ptr (0x80183E50)
+	.4byte "GetVariable__8UIRouterFPCc" ;# ptr (0x80183D70)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+
 .global "__vt__10UIQDTarget"
 "__vt__10UIQDTarget":
-	.incbin "baserom.dol", 0x437B60, 0x40
+	# ROM: 0x437B60
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10UIQDTargetFv" ;# ptr (0x80181EA4)
+	.4byte "SetVariable__12UIObjectBaseFPCcPCc" ;# ptr (0x80170954)
+	.4byte "GetVariable__10UIQDTargetFPCc" ;# ptr (0x80181F10)
+	.4byte "GetLocalizable__12UIObjectBaseFPCc" ;# ptr (0x80170960)
+	.4byte "Update__12UIObjectBaseFv" ;# ptr (0x80170968)
+	.4byte "Draw__12UIObjectBaseFP3ERC" ;# ptr (0x8017096C)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__7UIAUDIO"
 "__vt__7UIAUDIO":
-	.incbin "baserom.dol", 0x437BA0, 0xC
+	# ROM: 0x437BA0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__7UIAUDIOFv" ;# ptr (0x8017EF48)
+
 .global "__vt__Q27UIAUDIO13UIAUDIORecord"
 "__vt__Q27UIAUDIO13UIAUDIORecord":
-	.incbin "baserom.dol", 0x437BAC, 0xC
+	# ROM: 0x437BAC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q27UIAUDIO13UIAUDIORecordFv" ;# ptr (0x8017B53C)
+
 .global "__vt__4UI3D"
 "__vt__4UI3D":
-	.incbin "baserom.dol", 0x437BB8, 0xC
+	# ROM: 0x437BB8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__4UI3DFv" ;# ptr (0x8017DEE4)
+
 .global "__vt__Q24UI3D10UI3DRecord"
 "__vt__Q24UI3D10UI3DRecord":
-	.incbin "baserom.dol", 0x437BC4, 0xC
+	# ROM: 0x437BC4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q24UI3D10UI3DRecordFv" ;# ptr (0x8017E644)
+
 .global "__vt__4UI2D"
 "__vt__4UI2D":
-	.incbin "baserom.dol", 0x437BD0, 0xC
+	# ROM: 0x437BD0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__4UI2DFv" ;# ptr (0x8017D494)
+
 .global "__vt__Q24UI2D10UI2DRecord"
 "__vt__Q24UI2D10UI2DRecord":
-	.incbin "baserom.dol", 0x437BDC, 0xC
+	# ROM: 0x437BDC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q24UI2D10UI2DRecordFv" ;# ptr (0x8017DD50)
+
 .global "__vt__17UIUserDrawCBTable"
 "__vt__17UIUserDrawCBTable":
-	.incbin "baserom.dol", 0x437BE8, 0xC
+	# ROM: 0x437BE8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17UIUserDrawCBTableFv" ;# ptr (0x80186EA8)
+
 .global "__vt__Q217UIUserDrawCBTable21UserDrawCBTableRecord"
 "__vt__Q217UIUserDrawCBTable21UserDrawCBTableRecord":
-	.incbin "baserom.dol", 0x437BF4, 0xC
+	# ROM: 0x437BF4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q217UIUserDrawCBTable21UserDrawCBTableRecordFv" ;# ptr (0x8018186C)
+
 .global "__vt__11UIDrawTable"
 "__vt__11UIDrawTable":
-	.incbin "baserom.dol", 0x437C00, 0xC
+	# ROM: 0x437C00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__11UIDrawTableFv" ;# ptr (0x801819FC)
+
 .global "__vt__Q211UIDrawTable15DrawTableRecord"
 "__vt__Q211UIDrawTable15DrawTableRecord":
-	.incbin "baserom.dol", 0x437C0C, 0xC
+	# ROM: 0x437C0C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q211UIDrawTable15DrawTableRecordFv" ;# ptr (0x8018191C)
+
 .global "__vt__13UIUpdateTable"
 "__vt__13UIUpdateTable":
-	.incbin "baserom.dol", 0x437C18, 0xC
+	# ROM: 0x437C18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13UIUpdateTableFv" ;# ptr (0x80186A80)
+
 .global "__vt__Q213UIUpdateTable17UpdateTableRecord"
 "__vt__Q213UIUpdateTable17UpdateTableRecord":
-	.incbin "baserom.dol", 0x437C24, 0xC
+	# ROM: 0x437C24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q213UIUpdateTable17UpdateTableRecordFv" ;# ptr (0x8017E5CC)
+
 .global "__vt__26GetLocalizableCommandTable"
 "__vt__26GetLocalizableCommandTable":
-	.incbin "baserom.dol", 0x437C30, 0xC
+	# ROM: 0x437C30
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__26GetLocalizableCommandTableFv" ;# ptr (0x801800F8)
+
 .global "__vt__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecord"
 "__vt__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecord":
-	.incbin "baserom.dol", 0x437C3C, 0xC
+	# ROM: 0x437C3C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q226GetLocalizableCommandTable32GetLocalizableCommandTableRecordFv" ;# ptr (0x8018058C)
+
 .global "__vt__23SetVariableCommandTable"
 "__vt__23SetVariableCommandTable":
-	.incbin "baserom.dol", 0x437C48, 0xC
+	# ROM: 0x437C48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__23SetVariableCommandTableFv" ;# ptr (0x8017FC34)
+
 .global "__vt__Q223SetVariableCommandTable29SetVariableCommandTableRecord"
 "__vt__Q223SetVariableCommandTable29SetVariableCommandTableRecord":
-	.incbin "baserom.dol", 0x437C54, 0xC
+	# ROM: 0x437C54
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q223SetVariableCommandTable29SetVariableCommandTableRecordFv" ;# ptr (0x80180528)
+
 .global "__vt__23GetVariableCommandTable"
 "__vt__23GetVariableCommandTable":
-	.incbin "baserom.dol", 0x437C60, 0xC
+	# ROM: 0x437C60
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__23GetVariableCommandTableFv" ;# ptr (0x8017F7EC)
+
 .global "__vt__Q223GetVariableCommandTable29GetVariableCommandTableRecord"
 "__vt__Q223GetVariableCommandTable29GetVariableCommandTableRecord":
-	.incbin "baserom.dol", 0x437C6C, 0x1C
+	# ROM: 0x437C6C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q223GetVariableCommandTable29GetVariableCommandTableRecordFv" ;# ptr (0x801804C4)
+	.asciz "allocator.h"
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_UIDBTable"
@@ -15153,307 +27866,1186 @@ lbl_8043B8EC:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D4DA8
 lbl_805D4DA8:
-	.incbin "baserom.dol", 0x484928, 0x4
+	# ROM: 0x484928
+	.4byte 0x25640000
+
 .global lbl_805D4DAC
 lbl_805D4DAC:
-	.incbin "baserom.dol", 0x48492C, 0x4
+	# ROM: 0x48492C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4DB0
 lbl_805D4DB0:
-	.incbin "baserom.dol", 0x484930, 0x8
+	# ROM: 0x484930
+	.asciz "%s_body"
+
 .global "AMBIENT_Store_lengths__9UIAMBIENT"
 "AMBIENT_Store_lengths__9UIAMBIENT":
-	.incbin "baserom.dol", 0x484938, 0x8
+	# ROM: 0x484938
+	.4byte 0x0000002F
+	.4byte 0x00000018
+
 .global lbl_805D4DC0
 lbl_805D4DC0:
-	.incbin "baserom.dol", 0x484940, 0x8
+	# ROM: 0x484940
+	.asciz "_exists"
+
 .global lbl_805D4DC8
 lbl_805D4DC8:
-	.incbin "baserom.dol", 0x484948, 0x8
+	# ROM: 0x484948
+	.asciz "hours"
+	.byte 0x00, 0x00
+
 .global lbl_805D4DD0
 lbl_805D4DD0:
-	.incbin "baserom.dol", 0x484950, 0x8
+	# ROM: 0x484950
+	.asciz "mins"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4DD8
 lbl_805D4DD8:
-	.incbin "baserom.dol", 0x484958, 0x8
+	# ROM: 0x484958
+	.asciz "secs"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4DE0
 lbl_805D4DE0:
-	.incbin "baserom.dol", 0x484960, 0x8
+	# ROM: 0x484960
+	.4byte 0x0050004D
+	.4byte 0x00000000
+
 .global lbl_805D4DE8
 lbl_805D4DE8:
-	.incbin "baserom.dol", 0x484968, 0x8
+	# ROM: 0x484968
+	.asciz "hours24"
+
 .global lbl_805D4DF0
 lbl_805D4DF0:
-	.incbin "baserom.dol", 0x484970, 0x4
+	# ROM: 0x484970
+	.4byte 0x00200000
+
 .global lbl_805D4DF4
 lbl_805D4DF4:
-	.incbin "baserom.dol", 0x484974, 0x4
+	# ROM: 0x484974
+	.4byte 0x00300000
+
 .global lbl_805D4DF8
 lbl_805D4DF8:
-	.incbin "baserom.dol", 0x484978, 0x4
+	# ROM: 0x484978
+	.4byte 0x00310000
+
 .global lbl_805D4DFC
 lbl_805D4DFC:
-	.incbin "baserom.dol", 0x48497C, 0x4
+	# ROM: 0x48497C
+	.4byte 0x00320000
+
 .global lbl_805D4E00
 lbl_805D4E00:
-	.incbin "baserom.dol", 0x484980, 0x4
+	# ROM: 0x484980
+	.4byte 0x00330000
+
 .global lbl_805D4E04
 lbl_805D4E04:
-	.incbin "baserom.dol", 0x484984, 0x4
+	# ROM: 0x484984
+	.4byte 0x00340000
+
 .global lbl_805D4E08
 lbl_805D4E08:
-	.incbin "baserom.dol", 0x484988, 0x4
+	# ROM: 0x484988
+	.4byte 0x00350000
+
 .global lbl_805D4E0C
 lbl_805D4E0C:
-	.incbin "baserom.dol", 0x48498C, 0x4
+	# ROM: 0x48498C
+	.4byte 0x00360000
+
 .global lbl_805D4E10
 lbl_805D4E10:
-	.incbin "baserom.dol", 0x484990, 0x4
+	# ROM: 0x484990
+	.4byte 0x00370000
+
 .global lbl_805D4E14
 lbl_805D4E14:
-	.incbin "baserom.dol", 0x484994, 0x4
+	# ROM: 0x484994
+	.4byte 0x00380000
+
 .global lbl_805D4E18
 lbl_805D4E18:
-	.incbin "baserom.dol", 0x484998, 0x4
+	# ROM: 0x484998
+	.4byte 0x00390000
+
 .global lbl_805D4E1C
 lbl_805D4E1C:
-	.incbin "baserom.dol", 0x48499C, 0x8
+	# ROM: 0x48499C
+	.4byte 0x00310030
+	.4byte 0x00000000
+
 .global lbl_805D4E24
 lbl_805D4E24:
-	.incbin "baserom.dol", 0x4849A4, 0x8
+	# ROM: 0x4849A4
+	.4byte 0x00310031
+	.4byte 0x00000000
+
 .global lbl_805D4E2C
 lbl_805D4E2C:
-	.incbin "baserom.dol", 0x4849AC, 0x8
+	# ROM: 0x4849AC
+	.asciz "uidb:"
+	.byte 0x00, 0x00
+
 .global lbl_805D4E34
 lbl_805D4E34:
-	.incbin "baserom.dol", 0x4849B4, 0x4
+	# ROM: 0x4849B4
+	.4byte 0x25660000
+
 .global lbl_805D4E38
 lbl_805D4E38:
-	.incbin "baserom.dol", 0x4849B8, 0x4
+	# ROM: 0x4849B8
+	.4byte 0x3C783E00
+
 .global lbl_805D4E3C
 lbl_805D4E3C:
-	.incbin "baserom.dol", 0x4849BC, 0x4
+	# ROM: 0x4849BC
+	.4byte 0x3C793E00
+
 .global lbl_805D4E40
 lbl_805D4E40:
-	.incbin "baserom.dol", 0x4849C0, 0x4
+	# ROM: 0x4849C0
+	.4byte 0x3C773E00
+
 .global lbl_805D4E44
 lbl_805D4E44:
-	.incbin "baserom.dol", 0x4849C4, 0x4
+	# ROM: 0x4849C4
+	.4byte 0x3C683E00
+
 .global lbl_805D4E48
 lbl_805D4E48:
-	.incbin "baserom.dol", 0x4849C8, 0x8
+	# ROM: 0x4849C8
+	.4byte 0x71643A00
+	.4byte 0x00000000
+
 .global lbl_805D4E50
 lbl_805D4E50:
-	.incbin "baserom.dol", 0x4849D0, 0x8
+	# ROM: 0x4849D0
+	.4byte 0x003C0023
+	.4byte 0x003E0000
+
 .global lbl_805D4E58
 lbl_805D4E58:
-	.incbin "baserom.dol", 0x4849D8, 0x4
+	# ROM: 0x4849D8
+	.4byte 0x00410000
+
 .global lbl_805D4E5C
 lbl_805D4E5C:
-	.incbin "baserom.dol", 0x4849DC, 0x4
+	# ROM: 0x4849DC
+	.4byte 0x00420000
+
 .global lbl_805D4E60
 lbl_805D4E60:
-	.incbin "baserom.dol", 0x4849E0, 0x8
+	# ROM: 0x4849E0
+	.asciz "%02d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4E68
 lbl_805D4E68:
-	.incbin "baserom.dol", 0x4849E8, 0x8
+	# ROM: 0x4849E8
+	.asciz "cmdProc"
+
 .global lbl_805D4E70
 lbl_805D4E70:
-	.incbin "baserom.dol", 0x4849F0, 0x8
+	# ROM: 0x4849F0
+	.asciz "<re>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4E78
 lbl_805D4E78:
-	.incbin "baserom.dol", 0x4849F8, 0x8
+	# ROM: 0x4849F8
+	.asciz "<id>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4E80
 lbl_805D4E80:
-	.incbin "baserom.dol", 0x484A00, 0x8
+	# ROM: 0x484A00
+	.asciz "</id>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4E88
 lbl_805D4E88:
-	.incbin "baserom.dol", 0x484A08, 0x8
+	# ROM: 0x484A08
+	.asciz "</h>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4E90
 lbl_805D4E90:
-	.incbin "baserom.dol", 0x484A10, 0x8
+	# ROM: 0x484A10
+	.asciz "</w>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4E98
 lbl_805D4E98:
-	.incbin "baserom.dol", 0x484A18, 0x8
+	# ROM: 0x484A18
+	.asciz "</re>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4EA0
 lbl_805D4EA0:
-	.incbin "baserom.dol", 0x484A20, 0x8
+	# ROM: 0x484A20
+	.asciz "Reflow"
+	.byte 0x00
+
 .global lbl_805D4EA8
 lbl_805D4EA8:
-	.incbin "baserom.dol", 0x484A28, 0x8
+	# ROM: 0x484A28
+	.asciz "</x>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4EB0
 lbl_805D4EB0:
-	.incbin "baserom.dol", 0x484A30, 0x14
+	# ROM: 0x484A30
+	.asciz "</y>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x3C7A3E00
+	.asciz "</z>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4EC4
 lbl_805D4EC4:
-	.incbin "baserom.dol", 0x484A44, 0x4
+	# ROM: 0x484A44
+	.4byte 0x3C763E00
+
 .global lbl_805D4EC8
 lbl_805D4EC8:
-	.incbin "baserom.dol", 0x484A48, 0x8
+	# ROM: 0x484A48
+	.asciz "</v>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4ED0
 lbl_805D4ED0:
-	.incbin "baserom.dol", 0x484A50, 0x4
+	# ROM: 0x484A50
+	.4byte 0x3C613E00
+
 .global lbl_805D4ED4
 lbl_805D4ED4:
-	.incbin "baserom.dol", 0x484A54, 0x18
+	# ROM: 0x484A54
+	.asciz "</a>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<stv>"
+	.byte 0x00, 0x00
+	.asciz "</stv>"
+	.byte 0x00
+
 .global lbl_805D4EEC
 lbl_805D4EEC:
-	.incbin "baserom.dol", 0x484A6C, 0x8
+	# ROM: 0x484A6C
+	.asciz "<co>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4EF4
 lbl_805D4EF4:
-	.incbin "baserom.dol", 0x484A74, 0x4
+	# ROM: 0x484A74
+	.4byte 0x30780000
+
 .global lbl_805D4EF8
 lbl_805D4EF8:
-	.incbin "baserom.dol", 0x484A78, 0x8
+	# ROM: 0x484A78
+	.asciz "%6.6x"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F00
 lbl_805D4F00:
-	.incbin "baserom.dol", 0x484A80, 0x8
+	# ROM: 0x484A80
+	.asciz "</co>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F08
 lbl_805D4F08:
-	.incbin "baserom.dol", 0x484A88, 0x8
+	# ROM: 0x484A88
+	.asciz "<fo>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F10
 lbl_805D4F10:
-	.incbin "baserom.dol", 0x484A90, 0x8
+	# ROM: 0x484A90
+	.asciz "</fo>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F18
 lbl_805D4F18:
-	.incbin "baserom.dol", 0x484A98, 0x8
+	# ROM: 0x484A98
+	.asciz "<sa>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F20
 lbl_805D4F20:
-	.incbin "baserom.dol", 0x484AA0, 0x8
+	# ROM: 0x484AA0
+	.asciz "</sa>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F28
 lbl_805D4F28:
-	.incbin "baserom.dol", 0x484AA8, 0x8
+	# ROM: 0x484AA8
+	.asciz "<sf>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F30
 lbl_805D4F30:
-	.incbin "baserom.dol", 0x484AB0, 0x8
+	# ROM: 0x484AB0
+	.asciz "</sf>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F38
 lbl_805D4F38:
-	.incbin "baserom.dol", 0x484AB8, 0x8
+	# ROM: 0x484AB8
+	.asciz "<tw>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F40
 lbl_805D4F40:
-	.incbin "baserom.dol", 0x484AC0, 0x4
+	# ROM: 0x484AC0
+	.4byte 0x3C643E00
+
 .global lbl_805D4F44
 lbl_805D4F44:
-	.incbin "baserom.dol", 0x484AC4, 0x8
+	# ROM: 0x484AC4
+	.asciz "</d>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F4C
 lbl_805D4F4C:
-	.incbin "baserom.dol", 0x484ACC, 0x4
+	# ROM: 0x484ACC
+	.4byte 0x3C6D3E00
+
 .global lbl_805D4F50
 lbl_805D4F50:
-	.incbin "baserom.dol", 0x484AD0, 0x8
+	# ROM: 0x484AD0
+	.asciz "</m>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F58
 lbl_805D4F58:
-	.incbin "baserom.dol", 0x484AD8, 0x8
+	# ROM: 0x484AD8
+	.asciz "<cb>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F60
 lbl_805D4F60:
-	.incbin "baserom.dol", 0x484AE0, 0x8
+	# ROM: 0x484AE0
+	.asciz "</cb>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F68
 lbl_805D4F68:
-	.incbin "baserom.dol", 0x484AE8, 0x8
+	# ROM: 0x484AE8
+	.asciz "</tw>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F70
 lbl_805D4F70:
-	.incbin "baserom.dol", 0x484AF0, 0x8
+	# ROM: 0x484AF0
+	.asciz "Tween"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F78
 lbl_805D4F78:
-	.incbin "baserom.dol", 0x484AF8, 0x4
+	# ROM: 0x484AF8
+	.4byte 0x3C723E00
+
 .global lbl_805D4F7C
 lbl_805D4F7C:
-	.incbin "baserom.dol", 0x484AFC, 0x8
+	# ROM: 0x484AFC
+	.asciz "%0.1f"
+	.byte 0x00, 0x00
+
 .global lbl_805D4F84
 lbl_805D4F84:
-	.incbin "baserom.dol", 0x484B04, 0x8
+	# ROM: 0x484B04
+	.asciz "</r>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F8C
 lbl_805D4F8C:
-	.incbin "baserom.dol", 0x484B0C, 0x8
+	# ROM: 0x484B0C
+	.asciz "<ga>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D4F94
 lbl_805D4F94:
-	.incbin "baserom.dol", 0x484B14, 0x18
+	# ROM: 0x484B14
+	.asciz "</ga>"
+	.byte 0x00, 0x00
+	.asciz "<ta>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "</ta>"
+	.byte 0x00, 0x00
+
 .global lbl_805D4FAC
 lbl_805D4FAC:
-	.incbin "baserom.dol", 0x484B2C, 0xE8
+	# ROM: 0x484B2C
+	.asciz "audio:"
+	.byte 0x00
+	.4byte 0x494D5500
+	.4byte 0x48554400
+	.4byte 0x52535000
+	.4byte 0x53575300
+	.4byte 0x4F505400
+	.4byte 0x505A3500
+	.4byte 0x50455200
+	.4byte 0x434F4C00
+	.4byte 0x53565100
+	.4byte 0x46434900
+	.4byte 0x52435000
+	.4byte 0x52324C00
+	.4byte 0x43535000
+	.4byte 0x57584600
+	.4byte 0x4D4D5500
+	.4byte 0x50524700
+	.4byte 0x50525600
+	.4byte 0x43415400
+	.4byte 0x42425300
+	.4byte 0x4B465400
+	.4byte 0x474F4C00
+	.4byte 0x43474500
+	.4byte 0x43424100
+	.4byte 0x43424F00
+	.4byte 0x434D4200
+	.4byte 0x43484400
+	.4byte 0x434D4800
+	.4byte 0x43544100
+	.4byte 0x43464100
+	.4byte 0x43485300
+	.4byte 0x43544F00
+	.4byte 0x43484100
+	.4byte 0x43425300
+	.4byte 0x43534F00
+	.4byte 0x43534C00
+	.4byte 0x43464300
+	.4byte 0x43534D00
+	.4byte 0x43535400
+	.4byte 0x43415000
+	.4byte 0x43485400
+	.4byte 0x43505200
+	.4byte 0x43415200
+	.4byte 0x45414C00
+	.4byte 0x4B325900
+	.4byte 0x434D5500
+	.4byte 0x43414600
+	.4byte 0x43475200
+	.4byte 0x43545700
+	.4byte 0x50505200
+	.4byte 0x43425200
+	.4byte 0x434D4100
+	.4byte 0x43504900
+	.4byte 0x54495200
+	.4byte 0x43454C00
+	.4byte 0x4F325400
+	.4byte 0x494E4700
+
 .global lbl_805D5094
 lbl_805D5094:
-	.incbin "baserom.dol", 0x484C14, 0x4
+	# ROM: 0x484C14
+	.4byte 0x30000000
+
 .global lbl_805D5098
 lbl_805D5098:
-	.incbin "baserom.dol", 0x484C18, 0x8
+	# ROM: 0x484C18
+	.asciz "BOGUS"
+	.byte 0x00, 0x00
+
 .global lbl_805D50A0
 lbl_805D50A0:
-	.incbin "baserom.dol", 0x484C20, 0x8
+	# ROM: 0x484C20
+	.asciz "<scid>"
+	.byte 0x00
+
 .global lbl_805D50A8
 lbl_805D50A8:
-	.incbin "baserom.dol", 0x484C28, 0x8
+	# ROM: 0x484C28
+	.asciz "</scr>"
+	.byte 0x00
+
 .global lbl_805D50B0
 lbl_805D50B0:
-	.incbin "baserom.dol", 0x484C30, 0x4
+	# ROM: 0x484C30
+	.4byte 0x31000000
+
 .global lbl_805D50B4
 lbl_805D50B4:
-	.incbin "baserom.dol", 0x484C34, 0x8
+	# ROM: 0x484C34
+	.asciz "loaded"
+	.byte 0x00
+
 .global lbl_805D50BC
 lbl_805D50BC:
-	.incbin "baserom.dol", 0x484C3C, 0x4
+	# ROM: 0x484C3C
+	.4byte 0x25730000
+
 .global lbl_805D50C0
 lbl_805D50C0:
-	.incbin "baserom.dol", 0x484C40, 0x4
+	# ROM: 0x484C40
+	.4byte 0x32000000
+
 .global lbl_805D50C4
 lbl_805D50C4:
-	.incbin "baserom.dol", 0x484C44, 0x4
+	# ROM: 0x484C44
+	.4byte 0x32310000
+
 .global lbl_805D50C8
 lbl_805D50C8:
-	.incbin "baserom.dol", 0x484C48, 0x58
+	# ROM: 0x484C48
+	.4byte 0x32320000
+	.asciz "<bn>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<ty>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<st>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<ht>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<sty>"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "<lbesw>"
+	.asciz "<bs>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<swid>"
+	.byte 0x00
+	.asciz "<sid>"
+	.byte 0x00, 0x00
+	.asciz "<sv>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D5120
 lbl_805D5120:
-	.incbin "baserom.dol", 0x484CA0, 0x128
+	# ROM: 0x484CA0
+	.asciz "<scr>"
+	.byte 0x00, 0x00
+	.4byte 0x3C633E00
+	.asciz "<lb>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<sp>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x3C743E00
+	.4byte 0x3C623E00
+	.4byte 0x3C733E00
+	.asciz "<sw>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<ma>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<au>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<ad>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<sc>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<sct>"
+	.byte 0x00, 0x00
+	.asciz "<tid>"
+	.byte 0x00, 0x00
+	.asciz "<mid>"
+	.byte 0x00, 0x00
+	.asciz "<cid>"
+	.byte 0x00, 0x00
+	.asciz "<spid>"
+	.byte 0x00
+	.asciz "<lbid>"
+	.byte 0x00
+	.asciz "<lbbs>"
+	.byte 0x00
+	.asciz "<lbbn>"
+	.byte 0x00
+	.asciz "<lbnp>"
+	.byte 0x00
+	.asciz "<lbi>"
+	.byte 0x00, 0x00
+	.asciz "<lban>"
+	.byte 0x00
+	.asciz "<lbap>"
+	.byte 0x00
+	.asciz "<lbos>"
+	.byte 0x00
+	.asciz "<lbo>"
+	.byte 0x00, 0x00
+	.asciz "<lbde>"
+	.byte 0x00
+	.asciz "<lbse>"
+	.byte 0x00
+	.asciz "<lbis>"
+	.byte 0x00
+	.asciz "<gad>"
+	.byte 0x00, 0x00
+	.asciz "<gid>"
+	.byte 0x00, 0x00
+	.asciz "<gt>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "<gi>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x41515500
+	.4byte 0x00000000
+	.asciz "</scid>"
+	.asciz "</cid>"
+	.byte 0x00
+	.4byte 0x31343600
+	.4byte 0x33373500
+	.4byte 0x33353000
+	.4byte 0x34300000
+	.asciz "</sid>"
+	.byte 0x00
+
 .global lbl_805D5248
 lbl_805D5248:
-	.incbin "baserom.dol", 0x484DC8, 0x84
+	# ROM: 0x484DC8
+	.4byte 0x32440000
+	.asciz "</ty>"
+	.byte 0x00, 0x00
+	.4byte 0x33380000
+	.asciz "</s>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x33320000
+	.asciz "</c>"
+	.byte 0x00, 0x00, 0x00
+	.asciz "</tid>"
+	.byte 0x00
+	.asciz "</t>"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x54554800
+	.4byte 0x42424800
+	.asciz "0x00"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x37000000
+	.4byte 0x35390000
+	.4byte 0x35310000
+	.4byte 0x39350000
+	.4byte 0x37300000
+	.asciz "</gid>"
+	.byte 0x00
+	.asciz "</gt>"
+	.byte 0x00, 0x00
+	.4byte 0x32340000
+	.4byte 0x31373600
+	.4byte 0x33300000
+	.asciz "</gad>"
+	.byte 0x00
+	.4byte 0x34340000
+	.4byte 0x34380000
+
 .global lbl_805D52CC
 lbl_805D52CC:
-	.incbin "baserom.dol", 0x484E4C, 0x80
+	# ROM: 0x484E4C
+	.asciz "left"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x33340000
+	.4byte 0x36343000
+	.4byte 0x31340000
+	.4byte 0x37340000
+	.4byte 0x38340000
+	.4byte 0x35320000
+	.4byte 0x37320000
+	.4byte 0x2D333000
+	.4byte 0x35380000
+	.4byte 0x33343600
+	.4byte 0x39360000
+	.4byte 0x33383600
+	.4byte 0x34313800
+	.4byte 0x2D333200
+	.4byte 0x35333600
+	.4byte 0x35373800
+	.4byte 0x31333600
+	.asciz "</swid>"
+	.4byte 0x35363200
+	.4byte 0x31323000
+	.asciz "</sw>"
+	.byte 0x00, 0x00
+	.4byte 0x31383700
+	.4byte 0x32333800
+	.4byte 0x43524400
+	.4byte 0x33303000
+	.4byte 0x34343800
+	.4byte 0x33323000
+	.4byte 0x32323400
+
 .global lbl_805D534C
 lbl_805D534C:
-	.incbin "baserom.dol", 0x484ECC, 0x20
+	# ROM: 0x484ECC
+	.asciz "CANCEL"
+	.byte 0x00
+	.asciz "</bn>"
+	.byte 0x00, 0x00
+	.asciz "</sv>"
+	.byte 0x00, 0x00
+	.asciz "</b>"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D536C
 lbl_805D536C:
-	.incbin "baserom.dol", 0x484EEC, 0x1C
+	# ROM: 0x484EEC
+	.asciz "center"
+	.byte 0x00
+	.4byte 0x35323000
+	.4byte 0x31303000
+	.4byte 0x32300000
+	.asciz "SELECT"
+	.byte 0x00
+
 .global lbl_805D5388
 lbl_805D5388:
-	.incbin "baserom.dol", 0x484F08, 0x30
+	# ROM: 0x484F08
+	.4byte 0x43420000
+	.4byte 0x34343000
+	.4byte 0x34303000
+	.4byte 0x32303000
+	.4byte 0x36303000
+	.asciz "1000"
+	.byte 0x00, 0x00, 0x00
+	.asciz "1400"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x35383000
+	.4byte 0x33383800
+	.4byte 0x46414D00
+
 .global lbl_805D53B8
 lbl_805D53B8:
-	.incbin "baserom.dol", 0x484F38, 0xD8
+	# ROM: 0x484F38
+	.asciz "DPAD_UP"
+	.4byte 0x35303000
+	.4byte 0x32373500
+	.4byte 0x36340000
+	.4byte 0x31370000
+	.4byte 0x31323400
+	.4byte 0x33383000
+	.4byte 0x34363000
+	.4byte 0x35343000
+	.4byte 0x31350000
+	.4byte 0x31383000
+	.4byte 0x32363000
+	.4byte 0x33343000
+	.4byte 0x31343000
+	.4byte 0x32343000
+	.4byte 0x31300000
+	.4byte 0x36300000
+	.4byte 0x38300000
+	.4byte 0x31363000
+	.4byte 0x32313900
+	.4byte 0x31343900
+	.4byte 0x32363500
+	.4byte 0x33313100
+	.4byte 0x33353700
+	.4byte 0x32323300
+	.4byte 0x32393700
+	.4byte 0x33373100
+	.4byte 0x46434D00
+	.4byte 0x30783000
+	.4byte 0x38310000
+	.4byte 0x31343800
+	.4byte 0x31313500
+	.4byte 0x34360000
+	.asciz "FCM_cap"
+	.4byte 0x36380000
+	.4byte 0x39300000
+	.4byte 0x31360000
+	.4byte 0x34350000
+	.4byte 0x47324400
+	.4byte 0x00000000
+	.asciz "G2D_swf"
+	.4byte 0x31343400
+	.4byte 0x31323800
+	.4byte 0x33313000
+	.4byte 0x31320000
+	.4byte 0x31373000
+	.4byte 0x31343500
+	.4byte 0x32333000
+	.4byte 0x33360000
+	.asciz "</gi>"
+	.byte 0x00, 0x00
+
 .global lbl_805D5490
 lbl_805D5490:
-	.incbin "baserom.dol", 0x485010, 0xC
+	# ROM: 0x485010
+	.asciz "HELP"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x48324400
+
 .global lbl_805D549C
 lbl_805D549C:
-	.incbin "baserom.dol", 0x48501C, 0x36C
+	# ROM: 0x48501C
+	.asciz "PAUSE"
+	.byte 0x00, 0x00
+	.asciz "H2D_R2"
+	.byte 0x00
+	.4byte 0x31323600
+	.4byte 0x33303400
+	.4byte 0x49544200
+	.4byte 0x31393000
+	.4byte 0x31343100
+	.4byte 0x32313800
+	.4byte 0x31363100
+	.4byte 0x34330000
+	.4byte 0x36360000
+	.4byte 0x33373800
+	.4byte 0x31333700
+	.4byte 0x35360000
+	.4byte 0x32353000
+	.4byte 0x4C534D00
+	.asciz "2000"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x33313900
+	.4byte 0x38303000
+	.4byte 0x36393200
+	.asciz "1119"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_0"
+	.byte 0x00, 0x00
+	.4byte 0x31393800
+	.4byte 0x32353800
+	.4byte 0x31373900
+	.4byte 0x32323100
+	.4byte 0x32313000
+	.4byte 0x32373000
+	.asciz "LSM_1"
+	.byte 0x00, 0x00
+	.asciz "3000"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x38000000
+	.asciz "LSM_2"
+	.byte 0x00, 0x00
+	.4byte 0x33323200
+	.4byte 0x31303600
+	.4byte 0x31333500
+	.4byte 0x33333400
+	.4byte 0x33303900
+	.asciz "LSM_3"
+	.byte 0x00, 0x00
+	.4byte 0x33353800
+	.4byte 0x31373400
+	.4byte 0x31373800
+	.4byte 0x31353200
+	.4byte 0x33373000
+	.4byte 0x31383600
+	.asciz "LSM_4"
+	.byte 0x00, 0x00
+	.4byte 0x34303100
+	.4byte 0x32393800
+	.4byte 0x39320000
+	.4byte 0x34313300
+	.asciz "LSM_5"
+	.byte 0x00, 0x00
+	.4byte 0x35323700
+	.4byte 0x39340000
+	.4byte 0x31313000
+	.4byte 0x35333900
+	.4byte 0x33323300
+	.asciz "LSM_6"
+	.byte 0x00, 0x00
+	.4byte 0x36373300
+	.4byte 0x38370000
+	.4byte 0x36383500
+	.asciz "LSM_7"
+	.byte 0x00, 0x00
+	.4byte 0x37343200
+	.4byte 0x31303300
+	.4byte 0x37353400
+	.asciz "LSM_8"
+	.byte 0x00, 0x00
+	.4byte 0x37303000
+	.4byte 0x34343500
+	.4byte 0x37313200
+	.4byte 0x34353700
+	.asciz "LSM_9"
+	.byte 0x00, 0x00
+	.4byte 0x36333200
+	.4byte 0x35333400
+	.4byte 0x31313900
+	.4byte 0x36343400
+	.4byte 0x35343600
+	.asciz "LSM_10"
+	.byte 0x00
+	.4byte 0x35333700
+	.4byte 0x35343700
+	.asciz "LSM_11"
+	.byte 0x00
+	.4byte 0x37363400
+	.4byte 0x34383700
+	.4byte 0x31323700
+	.4byte 0x37373600
+	.4byte 0x34393900
+	.asciz "LSM_12"
+	.byte 0x00
+	.4byte 0x37353100
+	.4byte 0x35363400
+	.4byte 0x31323300
+	.4byte 0x31303200
+	.4byte 0x37363300
+	.4byte 0x35373600
+	.asciz "LSM_13"
+	.byte 0x00
+	.4byte 0x38323900
+	.4byte 0x35313700
+	.4byte 0x38330000
+	.4byte 0x31363600
+	.4byte 0x38343100
+	.4byte 0x35323900
+	.asciz "LSM_14"
+	.byte 0x00
+	.4byte 0x36303500
+	.4byte 0x34363600
+	.4byte 0x31333100
+	.4byte 0x36313700
+	.4byte 0x34373800
+	.asciz "LSM_15"
+	.byte 0x00
+	.4byte 0x37393500
+	.4byte 0x33373200
+	.4byte 0x38303700
+	.4byte 0x33383400
+	.asciz "LSM_16"
+	.byte 0x00
+	.asciz "1052"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x33393900
+	.4byte 0x31353100
+	.asciz "1064"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x34313100
+	.asciz "LSM_17"
+	.byte 0x00
+	.asciz "1090"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x32383400
+	.4byte 0x31383300
+	.asciz "1102"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x32393600
+	.asciz "LSM_18"
+	.byte 0x00
+	.4byte 0x39373000
+	.4byte 0x31353700
+	.4byte 0x39383200
+	.4byte 0x33313200
+	.asciz "LSM_19"
+	.byte 0x00
+	.4byte 0x31393200
+	.4byte 0x31313600
+	.asciz "LSM_20"
+	.byte 0x00
+	.asciz "1051"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x35350000
+	.asciz "1063"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x31353800
+	.asciz "LSM_21"
+	.byte 0x00
+	.asciz "1128"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x32313300
+	.4byte 0x31313100
+	.asciz "1140"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x32323500
+	.asciz "LSM_22"
+	.byte 0x00
+	.asciz "1048"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x39370000
+	.asciz "1060"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_23"
+	.byte 0x00
+	.asciz "1113"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x36350000
+	.asciz "1125"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x31333200
+	.asciz "LSM_24"
+	.byte 0x00
+	.asciz "1152"
+	.byte 0x00, 0x00, 0x00
+	.asciz "1164"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LSM_25"
+	.byte 0x00
+	.asciz "1046"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x31303100
+	.4byte 0x31303400
+	.asciz "1058"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x31313300
+	.asciz "LSM_26"
+	.byte 0x00
+	.4byte 0x31323200
+	.4byte 0x37370000
+	.4byte 0x31333800
+	.4byte 0x32343900
+	.4byte 0x33353400
+	.4byte 0x32360000
+	.4byte 0x00000000
+	.asciz "LSM_swf"
+	.4byte 0x35370000
+	.4byte 0x36390000
+	.4byte 0x33353600
+	.4byte 0x36313000
+
 .global lbl_805D5808
 lbl_805D5808:
-	.incbin "baserom.dol", 0x485388, 0xDC
+	# ROM: 0x485388
+	.asciz "right"
+	.byte 0x00, 0x00
+	.4byte 0x31313200
+	.4byte 0x36000000
+	.4byte 0x33303800
+	.4byte 0x32313200
+	.4byte 0x32323000
+	.4byte 0x31363800
+	.4byte 0x4D324D00
+	.4byte 0x00000000
+	.asciz "M2M_swf"
+	.4byte 0x31383500
+	.4byte 0x31383200
+	.4byte 0x31383400
+	.4byte 0x33363000
+	.4byte 0x32380000
+	.4byte 0x32303400
+	.4byte 0x4D444900
+	.4byte 0x00000000
+	.asciz "MDI_swf"
+	.4byte 0x31330000
+	.4byte 0x4D4F5400
+	.4byte 0x33350000
+	.4byte 0x31393400
+	.asciz "MOT_bkg"
+	.4byte 0x2D353400
+	.4byte 0x2D363000
+	.4byte 0x2D323000
+	.4byte 0x31390000
+	.4byte 0x2D313600
+	.4byte 0x34000000
+	.4byte 0x2D313500
+	.4byte 0x32330000
+	.4byte 0x37360000
+	.4byte 0x36310000
+	.4byte 0x31313400
+	.4byte 0x39390000
+	.4byte 0x31373500
+	.4byte 0x32323800
+	.4byte 0x32363600
+	.4byte 0x50415A00
+	.asciz "-128"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x32373400
+	.4byte 0x33323400
+	.4byte 0x33373400
+	.4byte 0x34323400
+	.4byte 0x524D4400
+	.asciz "RMD_bg"
+	.byte 0x00
+	.4byte 0x34313000
+	.4byte 0x32333200
+
 .global lbl_805D58E4
 lbl_805D58E4:
-	.incbin "baserom.dol", 0x485464, 0x10C
+	# ROM: 0x485464
+	.4byte 0x33440000
+	.4byte 0x32350000
+	.4byte 0x35000000
+	.4byte 0x534B4C00
+	.4byte 0x00000000
+	.asciz "SKL_bkg"
+	.4byte 0x2D363400
+	.asciz "-169"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x33000000
+	.4byte 0x31380000
+	.4byte 0x34320000
+	.4byte 0x2D323700
+	.4byte 0x39000000
+	.4byte 0x31353000
+	.4byte 0x34370000
+	.4byte 0x31383800
+	.4byte 0x32333500
+	.4byte 0x32383200
+	.4byte 0x2D323400
+	.4byte 0x32370000
+	.4byte 0x31353300
+	.4byte 0x32343700
+	.4byte 0x32393400
+	.4byte 0x2D313000
+	.4byte 0x2D380000
+	.4byte 0x53534800
+	.4byte 0x54524300
+	.asciz "1920"
+	.byte 0x00, 0x00, 0x00
+	.asciz "1820"
+	.byte 0x00, 0x00, 0x00
+	.asciz "TRC_swf"
+	.4byte 0x57414600
+	.4byte 0x00000000
+	.asciz "WAF_bkg"
+	.4byte 0x2D333500
+	.asciz "-298"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x34323000
+	.4byte 0x35340000
+	.4byte 0x2D323800
+	.4byte 0x31363200
+	.4byte 0x50504300
+	.asciz "PPC_swf"
+	.4byte 0x31323500
+	.4byte 0x31393300
+	.4byte 0x31393700
+	.4byte 0x32303500
+	.4byte 0x32393000
+	.4byte 0x3D000000
+	.4byte 0x32303600
+	.4byte 0x33393500
+	.4byte 0x34313500
+	.4byte 0x32383000
+	.4byte 0x33333000
+	.asciz "PPC_X"
+	.byte 0x00, 0x00
+	.4byte 0x4B4E4C00
+	.asciz "KNL_swf"
+	.asciz "KNL_X"
+	.byte 0x00, 0x00
+
 .global lbl_805D59F0
 lbl_805D59F0:
-	.incbin "baserom.dol", 0x485570, 0x4
+	# ROM: 0x485570
+	.4byte 0x3C2F0000
+
 .global lbl_805D59F4
 lbl_805D59F4:
-	.incbin "baserom.dol", 0x485574, 0x4
+	# ROM: 0x485574
+	.4byte 0x3C000000
+
 .global lbl_805D59F8
 lbl_805D59F8:
-	.incbin "baserom.dol", 0x485578, 0x8
+	# ROM: 0x485578
+	.asciz "getloc:"
+
 .global lbl_805D5A00
 lbl_805D5A00:
-	.incbin "baserom.dol", 0x485580, 0x8
+	# ROM: 0x485580
+	.asciz "ACCEPT"
+	.byte 0x00
+
 .global lbl_805D5A08
 lbl_805D5A08:
-	.incbin "baserom.dol", 0x485588, 0x8
+	# ROM: 0x485588
+	.asciz "title"
+	.byte 0x00, 0x00
+
 .global lbl_805D5A10
 lbl_805D5A10:
-	.incbin "baserom.dol", 0x485590, 0x8
+	# ROM: 0x485590
+	.asciz "normal"
+	.byte 0x00
+
 .global lbl_805D5A18
 lbl_805D5A18:
-	.incbin "baserom.dol", 0x485598, 0x8
+	# ROM: 0x485598
+	.asciz "custom"
+	.byte 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_pInstance__4UI2D"
@@ -15502,67 +29094,113 @@ lbl_805D5A18:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "SAFE_LEFT__12UIObjectBase"
 "SAFE_LEFT__12UIObjectBase":
-	.incbin "baserom.dol", 0x487F08, 0x4
+	# ROM: 0x487F08
+	.4byte 0x3D0F5C29
+
 .global "SAFE_TOP__12UIObjectBase"
 "SAFE_TOP__12UIObjectBase":
-	.incbin "baserom.dol", 0x487F0C, 0x4
+	# ROM: 0x487F0C
+	.4byte 0x3D23D70A
+
 .global "SAFE_RIGHT__12UIObjectBase"
 "SAFE_RIGHT__12UIObjectBase":
-	.incbin "baserom.dol", 0x487F10, 0x4
+	# ROM: 0x487F10
+	.4byte 0x3F770A3D
+
 .global "SAFE_BOTTOM__12UIObjectBase"
 "SAFE_BOTTOM__12UIObjectBase":
-	.incbin "baserom.dol", 0x487F14, 0x4
+	# ROM: 0x487F14
+	.4byte 0x3F733333
+
 .global lbl_805D9BF8
 lbl_805D9BF8:
-	.incbin "baserom.dol", 0x487F18, 0x4
+	# ROM: 0x487F18
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D9BFC
 lbl_805D9BFC:
-	.incbin "baserom.dol", 0x487F1C, 0x4
+	# ROM: 0x487F1C
+	.4byte 0xBD567750
+
 .global lbl_805D9C00
 lbl_805D9C00:
-	.incbin "baserom.dol", 0x487F20, 0x4
+	# ROM: 0x487F20
+	.4byte 0x3ECCCCCD
+
 .global lbl_805D9C04
 lbl_805D9C04:
-	.incbin "baserom.dol", 0x487F24, 0x4
+	# ROM: 0x487F24
+	.4byte 0x3F19999A
+
 .global lbl_805D9C08
 lbl_805D9C08:
-	.incbin "baserom.dol", 0x487F28, 0x4
+	# ROM: 0x487F28
+	.4byte 0x3F733333
+
 .global lbl_805D9C0C
 lbl_805D9C0C:
-	.incbin "baserom.dol", 0x487F2C, 0x4
+	# ROM: 0x487F2C
+	.4byte 0x3F7D70A4
+
 .global lbl_805D9C10
 lbl_805D9C10:
-	.incbin "baserom.dol", 0x487F30, 0x4
+	# ROM: 0x487F30
+	.4byte 0x3E800000
+
 .global lbl_805D9C14
 lbl_805D9C14:
-	.incbin "baserom.dol", 0x487F34, 0x4
+	# ROM: 0x487F34
+	.4byte 0x40A00000
+
 .global lbl_805D9C18
 lbl_805D9C18:
-	.incbin "baserom.dol", 0x487F38, 0x8
+	# ROM: 0x487F38
+	.4byte 0x42C80000
+	.4byte 0x00000000
+
 .global lbl_805D9C20
 lbl_805D9C20:
-	.incbin "baserom.dol", 0x487F40, 0x8
+	# ROM: 0x487F40
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805D9C28
 lbl_805D9C28:
-	.incbin "baserom.dol", 0x487F48, 0x4
+	# ROM: 0x487F48
+	.4byte 0x3F800000
+
 .global lbl_805D9C2C
 lbl_805D9C2C:
-	.incbin "baserom.dol", 0x487F4C, 0x4
+	# ROM: 0x487F4C
+	.4byte 0x41200000
+
 .global lbl_805D9C30
 lbl_805D9C30:
-	.incbin "baserom.dol", 0x487F50, 0x4
+	# ROM: 0x487F50
+	.4byte 0x447A0000
+
 .global lbl_805D9C34
 lbl_805D9C34:
-	.incbin "baserom.dol", 0x487F54, 0x4
+	# ROM: 0x487F54
+	.4byte 0x3F000000
+
 .global lbl_805D9C38
 lbl_805D9C38:
-	.incbin "baserom.dol", 0x487F58, 0x4
+	# ROM: 0x487F58
+	.4byte 0x41E00000
+
 .global lbl_805D9C3C
 lbl_805D9C3C:
-	.incbin "baserom.dol", 0x487F5C, 0x4
+	# ROM: 0x487F5C
+	.4byte 0x42400000
+
 .global lbl_805D9C40
 lbl_805D9C40:
-	.incbin "baserom.dol", 0x487F60, 0x4
+	# ROM: 0x487F60
+	.4byte 0x42480000
+
 .global lbl_805D9C44
 lbl_805D9C44:
-	.incbin "baserom.dol", 0x487F64, 0x4
+	# ROM: 0x487F64
+	.4byte 0x47C35000
+

@@ -70,7 +70,7 @@ lbl_8033E970:
 /* 8033E984 0033A624  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033E988 0033A628  7C 08 03 A6 */	mtlr r0
 /* 8033E98C 0033A62C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033E990 0033A630  4E 80 00 20 */	blr 
+/* 8033E990 0033A630  4E 80 00 20 */	blr
 
 .global "BTA_CleanUp"
 "BTA_CleanUp":
@@ -86,23 +86,23 @@ lbl_8033E970:
 /* 8033E9B8 0033A658  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033E9BC 0033A65C  7C 08 03 A6 */	mtlr r0
 /* 8033E9C0 0033A660  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033E9C4 0033A664  4E 80 00 20 */	blr 
+/* 8033E9C4 0033A664  4E 80 00 20 */	blr
 
 .global "bta_usb_close_evt"
 "bta_usb_close_evt":
 /* 8033E9C8 0033A668  81 8D C3 44 */	lwz r12, "_bte_app_info"-_SDA_BASE_(r13)
 /* 8033E9CC 0033A66C  2C 0C 00 00 */	cmpwi r12, 0
-/* 8033E9D0 0033A670  4D 82 00 20 */	beqlr 
+/* 8033E9D0 0033A670  4D 82 00 20 */	beqlr
 /* 8033E9D4 0033A674  7C 60 07 75 */	extsb. r0, r3
 /* 8033E9D8 0033A678  41 80 00 10 */	blt lbl_8033E9E8
 /* 8033E9DC 0033A67C  38 60 00 00 */	li r3, 0
 /* 8033E9E0 0033A680  7D 89 03 A6 */	mtctr r12
-/* 8033E9E4 0033A684  4E 80 04 20 */	bctr 
+/* 8033E9E4 0033A684  4E 80 04 20 */	bctr
 lbl_8033E9E8:
 /* 8033E9E8 0033A688  38 60 00 01 */	li r3, 1
 /* 8033E9EC 0033A68C  7D 89 03 A6 */	mtctr r12
-/* 8033E9F0 0033A690  4E 80 04 20 */	bctr 
-/* 8033E9F4 0033A694  4E 80 00 20 */	blr 
+/* 8033E9F0 0033A690  4E 80 04 20 */	bctr
+/* 8033E9F4 0033A694  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__BTUInterruptHandlerStack"
@@ -115,7 +115,10 @@ lbl_8033E9E8:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "bte_hcisu_h2_cfg"
 "bte_hcisu_h2_cfg":
-	.incbin "baserom.dol", 0x486E30, 0x8
+	# ROM: 0x486E30
+	.4byte 0x0A5C2101
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "bte_target_mode"

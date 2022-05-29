@@ -98,33 +98,33 @@ lbl_803931D4:
 /* 803931E0 0038EE80  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803931E4 0038EE84  7C 08 03 A6 */	mtlr r0
 /* 803931E8 0038EE88  38 21 00 30 */	addi r1, r1, 0x30
-/* 803931EC 0038EE8C  4E 80 00 20 */	blr 
+/* 803931EC 0038EE8C  4E 80 00 20 */	blr
 
 .global "ConvertOffsToPtr<Q46nw4hbm3lyt3res8Material>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res8Material"
 "ConvertOffsToPtr<Q46nw4hbm3lyt3res8Material>__Q36nw4hbm3lyt6detailFPCvUi_PCQ46nw4hbm3lyt3res8Material":
 /* 803931F0 0038EE90  7C 63 22 14 */	add r3, r3, r4
-/* 803931F4 0038EE94  4E 80 00 20 */	blr 
+/* 803931F4 0038EE94  4E 80 00 20 */	blr
 
 .global "IsEmpty__Q46nw4hbm3lyt6detail11TexCoordAryCFv"
 "IsEmpty__Q46nw4hbm3lyt6detail11TexCoordAryCFv":
 /* 803931F8 0038EE98  88 03 00 00 */	lbz r0, 0(r3)
 /* 803931FC 0038EE9C  7C 00 00 34 */	cntlzw r0, r0
 /* 80393200 0038EEA0  54 03 D9 7E */	srwi r3, r0, 5
-/* 80393204 0038EEA4  4E 80 00 20 */	blr 
+/* 80393204 0038EEA4  4E 80 00 20 */	blr
 
 .global "Min<Uc>__Q36nw4hbm2ut25@unnamed@lyt_picture_cpp@FUcUc_Uc"
 "Min<Uc>__Q36nw4hbm2ut25@unnamed@lyt_picture_cpp@FUcUc_Uc":
 /* 80393208 0038EEA8  7C 03 20 40 */	cmplw r3, r4
-/* 8039320C 0038EEAC  4C 81 00 20 */	blelr 
+/* 8039320C 0038EEAC  4C 81 00 20 */	blelr
 /* 80393210 0038EEB0  7C 83 23 78 */	mr r3, r4
-/* 80393214 0038EEB4  4E 80 00 20 */	blr 
+/* 80393214 0038EEB4  4E 80 00 20 */	blr
 
 .global "Init__Q36nw4hbm3lyt7PictureFUc"
 "Init__Q36nw4hbm3lyt7PictureFUc":
 /* 80393218 0038EEB8  2C 04 00 00 */	cmpwi r4, 0
-/* 8039321C 0038EEBC  4D 82 00 20 */	beqlr 
+/* 8039321C 0038EEBC  4D 82 00 20 */	beqlr
 /* 80393220 0038EEC0  48 00 03 A4 */	b "ReserveTexCoord__Q36nw4hbm3lyt7PictureFUc"
-/* 80393224 0038EEC4  4E 80 00 20 */	blr 
+/* 80393224 0038EEC4  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt7PictureFv"
 "__dt__Q36nw4hbm3lyt7PictureFv":
@@ -152,7 +152,7 @@ lbl_803931D4:
 /* 8039327C 0038EF1C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80393280 0038EF20  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80393284 0038EF24  7D 89 03 A6 */	mtctr r12
-/* 80393288 0038EF28  4E 80 04 21 */	bctrl 
+/* 80393288 0038EF28  4E 80 04 21 */	bctrl
 /* 8039328C 0038EF2C  80 7E 00 28 */	lwz r3, 0x28(r30)
 /* 80393290 0038EF30  4B FF 5D FD */	bl "FreeMemory__Q36nw4hbm3lyt6LayoutFPv"
 /* 80393294 0038EF34  38 00 00 00 */	li r0, 0
@@ -180,7 +180,7 @@ lbl_803932D8:
 /* 803932E4 0038EF84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803932E8 0038EF88  7C 08 03 A6 */	mtlr r0
 /* 803932EC 0038EF8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803932F0 0038EF90  4E 80 00 20 */	blr 
+/* 803932F0 0038EF90  4E 80 00 20 */	blr
 
 .global "Append__Q36nw4hbm3lyt7PictureFP10TPLPalette"
 "Append__Q36nw4hbm3lyt7PictureFP10TPLPalette":
@@ -197,12 +197,12 @@ lbl_803932D8:
 /* 8039331C 0038EFBC  38 81 00 08 */	addi r4, r1, 8
 /* 80393320 0038EFC0  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 80393324 0038EFC4  7D 89 03 A6 */	mtctr r12
-/* 80393328 0038EFC8  4E 80 04 21 */	bctrl 
+/* 80393328 0038EFC8  4E 80 04 21 */	bctrl
 /* 8039332C 0038EFCC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80393330 0038EFD0  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 80393334 0038EFD4  7C 08 03 A6 */	mtlr r0
 /* 80393338 0038EFD8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039333C 0038EFDC  4E 80 00 20 */	blr 
+/* 8039333C 0038EFDC  4E 80 00 20 */	blr
 
 .global "Append__Q36nw4hbm3lyt7PictureFRC9_GXTexObj"
 "Append__Q36nw4hbm3lyt7PictureFRC9_GXTexObj":
@@ -318,7 +318,7 @@ lbl_803934D8:
 /* 803934E8 0038F188  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 803934EC 0038F18C  7C 08 03 A6 */	mtlr r0
 /* 803934F0 0038F190  38 21 00 30 */	addi r1, r1, 0x30
-/* 803934F4 0038F194  4E 80 00 20 */	blr 
+/* 803934F4 0038F194  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm3lytFRCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4Size"
 "__eq__Q26nw4hbm3lytFRCQ36nw4hbm3lyt4SizeRCQ36nw4hbm3lyt4Size":
@@ -334,7 +334,7 @@ lbl_803934D8:
 /* 8039351C 0038F1BC  38 00 00 01 */	li r0, 1
 lbl_80393520:
 /* 80393520 0038F1C0  7C 03 03 78 */	mr r3, r0
-/* 80393524 0038F1C4  4E 80 00 20 */	blr 
+/* 80393524 0038F1C4  4E 80 00 20 */	blr
 
 .global "SetTexCoordGen__Q36nw4hbm3lyt8MaterialFUlQ36nw4hbm3lyt11TexCoordGen"
 "SetTexCoordGen__Q36nw4hbm3lyt8MaterialFUlQ36nw4hbm3lyt11TexCoordGen":
@@ -371,19 +371,19 @@ lbl_80393578:
 /* 8039359C 0038F23C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803935A0 0038F240  7C 08 03 A6 */	mtlr r0
 /* 803935A4 0038F244  38 21 00 20 */	addi r1, r1, 0x20
-/* 803935A8 0038F248  4E 80 00 20 */	blr 
+/* 803935A8 0038F248  4E 80 00 20 */	blr
 
 .global "GetTexCoordGenCap__Q36nw4hbm3lyt8MaterialCFv"
 "GetTexCoordGenCap__Q36nw4hbm3lyt8MaterialCFv":
 /* 803935AC 0038F24C  80 03 00 4C */	lwz r0, 0x4c(r3)
 /* 803935B0 0038F250  54 03 67 3E */	rlwinm r3, r0, 0xc, 0x1c, 0x1f
-/* 803935B4 0038F254  4E 80 00 20 */	blr 
+/* 803935B4 0038F254  4E 80 00 20 */	blr
 
 .global "GetTextureCap__Q36nw4hbm3lyt8MaterialCFv"
 "GetTextureCap__Q36nw4hbm3lyt8MaterialCFv":
 /* 803935B8 0038F258  80 03 00 4C */	lwz r0, 0x4c(r3)
 /* 803935BC 0038F25C  54 03 27 3E */	srwi r3, r0, 0x1c
-/* 803935C0 0038F260  4E 80 00 20 */	blr 
+/* 803935C0 0038F260  4E 80 00 20 */	blr
 
 .global "ReserveTexCoord__Q36nw4hbm3lyt7PictureFUc"
 "ReserveTexCoord__Q36nw4hbm3lyt7PictureFUc":
@@ -393,7 +393,7 @@ lbl_80393578:
 .global "GetSize__Q46nw4hbm3lyt6detail11TexCoordAryCFv"
 "GetSize__Q46nw4hbm3lyt6detail11TexCoordAryCFv":
 /* 803935CC 0038F26C  88 63 00 01 */	lbz r3, 1(r3)
-/* 803935D0 0038F270  4E 80 00 20 */	blr 
+/* 803935D0 0038F270  4E 80 00 20 */	blr
 
 .global "SetTexCoordNum__Q36nw4hbm3lyt7PictureFUc"
 "SetTexCoordNum__Q36nw4hbm3lyt7PictureFUc":
@@ -432,7 +432,7 @@ lbl_80393624:
 /* 80393644 0038F2E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80393648 0038F2E8  7C 08 03 A6 */	mtlr r0
 /* 8039364C 0038F2EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80393650 0038F2F0  4E 80 00 20 */	blr 
+/* 80393650 0038F2F0  4E 80 00 20 */	blr
 
 .global "SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color"
 "SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color":
@@ -466,7 +466,7 @@ lbl_8039369C:
 /* 803936BC 0038F35C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803936C0 0038F360  7C 08 03 A6 */	mtlr r0
 /* 803936C4 0038F364  38 21 00 20 */	addi r1, r1, 0x20
-/* 803936C8 0038F368  4E 80 00 20 */	blr 
+/* 803936C8 0038F368  4E 80 00 20 */	blr
 
 .global "GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl"
 "GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl":
@@ -501,7 +501,7 @@ lbl_80393714:
 /* 8039372C 0038F3CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80393730 0038F3D0  7C 08 03 A6 */	mtlr r0
 /* 80393734 0038F3D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80393738 0038F3D8  4E 80 00 20 */	blr 
+/* 80393738 0038F3D8  4E 80 00 20 */	blr
 
 .global "SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc"
 "SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc":
@@ -539,7 +539,7 @@ lbl_8039378C:
 /* 803937A8 0038F448  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803937AC 0038F44C  7C 08 03 A6 */	mtlr r0
 /* 803937B0 0038F450  38 21 00 20 */	addi r1, r1, 0x20
-/* 803937B4 0038F454  4E 80 00 20 */	blr 
+/* 803937B4 0038F454  4E 80 00 20 */	blr
 
 .global "DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo"
 "DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo":
@@ -556,7 +556,7 @@ lbl_8039378C:
 /* 803937E0 0038F480  81 83 00 00 */	lwz r12, 0(r3)
 /* 803937E4 0038F484  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 803937E8 0038F488  7D 89 03 A6 */	mtctr r12
-/* 803937EC 0038F48C  4E 80 04 21 */	bctrl 
+/* 803937EC 0038F48C  4E 80 04 21 */	bctrl
 /* 803937F0 0038F490  8B DD 00 CE */	lbz r30, 0xce(r29)
 /* 803937F4 0038F494  38 7D 00 D4 */	addi r3, r29, 0xd4
 /* 803937F8 0038F498  7F C4 F3 78 */	mr r4, r30
@@ -567,7 +567,7 @@ lbl_8039378C:
 /* 8039380C 0038F4AC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80393810 0038F4B0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80393814 0038F4B4  7D 89 03 A6 */	mtctr r12
-/* 80393818 0038F4B8  4E 80 04 21 */	bctrl 
+/* 80393818 0038F4B8  4E 80 04 21 */	bctrl
 /* 8039381C 0038F4BC  7C 7E 1B 78 */	mr r30, r3
 /* 80393820 0038F4C0  38 7D 00 E4 */	addi r3, r29, 0xe4
 /* 80393824 0038F4C4  4B FF FD A9 */	bl "GetSize__Q46nw4hbm3lyt6detail11TexCoordAryCFv"
@@ -606,17 +606,17 @@ lbl_80393890:
 /* 8039389C 0038F53C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803938A0 0038F540  7C 08 03 A6 */	mtlr r0
 /* 803938A4 0038F544  38 21 00 20 */	addi r1, r1, 0x20
-/* 803938A8 0038F548  4E 80 00 20 */	blr 
+/* 803938A8 0038F548  4E 80 00 20 */	blr
 
 .global "GetArray__Q46nw4hbm3lyt6detail11TexCoordAryCFv"
 "GetArray__Q46nw4hbm3lyt6detail11TexCoordAryCFv":
 /* 803938AC 0038F54C  80 63 00 04 */	lwz r3, 4(r3)
-/* 803938B0 0038F550  4E 80 00 20 */	blr 
+/* 803938B0 0038F550  4E 80 00 20 */	blr
 
 .global "GetRuntimeTypeInfo__Q36nw4hbm3lyt7PictureCFv"
 "GetRuntimeTypeInfo__Q36nw4hbm3lyt7PictureCFv":
 /* 803938B4 0038F554  38 6D C5 68 */	addi r3, r13, "typeInfo__Q36nw4hbm3lyt7Picture"-_SDA_BASE_
-/* 803938B8 0038F558  4E 80 00 20 */	blr 
+/* 803938B8 0038F558  4E 80 00 20 */	blr
 
 .global "__sinit_lyt_picture_cpp"
 "__sinit_lyt_picture_cpp":
@@ -627,37 +627,93 @@ lbl_80393890:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046B250
 lbl_8046B250:
-	.incbin "baserom.dol", 0x467350, 0x10
+	# ROM: 0x467350
+	.asciz "lyt_picture.cpp"
+
 .global lbl_8046B260
 lbl_8046B260:
-	.incbin "baserom.dol", 0x467360, 0x3C
+	# ROM: 0x467360
+	.asciz "NW4HBM:Pointer must not be NULL (resBlockSet.pMaterialList)"
+
 .global lbl_8046B29C
 lbl_8046B29C:
-	.incbin "baserom.dol", 0x46739C, 0x6C
+	# ROM: 0x46739C
+	.asciz "mpMaterial->GetTextureNum(%d) is large. mpMaterial->GetTextureCap(%d), mpMaterial->GetTexCoordGenCap(%d)\n"
+	.byte 0x00, 0x00
+
 .global lbl_8046B308
 lbl_8046B308:
-	.incbin "baserom.dol", 0x467408, 0x30
+	# ROM: 0x467408
+	.asciz "NW4HBM:Failed assertion idx < VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00
+
 .global "__vt__Q36nw4hbm3lyt7Picture"
 "__vt__Q36nw4hbm3lyt7Picture":
-	.incbin "baserom.dol", 0x467438, 0x6C
+	# ROM: 0x467438
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt7PictureFv" ;# ptr (0x80393228)
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm3lyt7PictureCFv" ;# ptr (0x803938B4)
+	.4byte "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803921C0)
+	.4byte "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803926D0)
+	.4byte "DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803937B8)
+	.4byte "Animate__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x8039283C)
+	.4byte "AnimateSelf__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x80392904)
+	.4byte "GetVtxColor__Q36nw4hbm3lyt7PictureCFUl" ;# ptr (0x803935DC)
+	.4byte "SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color" ;# ptr (0x80393654)
+	.4byte "GetColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391ED0)
+	.4byte "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391F54)
+	.4byte "GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl" ;# ptr (0x803936CC)
+	.4byte "SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc" ;# ptr (0x8039373C)
+	.4byte "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x80391FF4)
+	.4byte "FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x803920D0)
+	.4byte "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A10)
+	.4byte "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A90)
+	.4byte "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb" ;# ptr (0x80392B54)
+	.4byte "UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392B6C)
+	.4byte "FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392CC0)
+	.4byte "SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb" ;# ptr (0x80392D38)
+	.4byte "GetMaterial__Q36nw4hbm3lyt4PaneCFv" ;# ptr (0x80393070)
+	.4byte "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80392E38)
+	.4byte "Append__Q36nw4hbm3lyt7PictureFP10TPLPalette" ;# ptr (0x803932F4)
+	.4byte "Append__Q36nw4hbm3lyt7PictureFRC9_GXTexObj" ;# ptr (0x80393340)
+
 .global lbl_8046B3A4
 lbl_8046B3A4:
-	.incbin "baserom.dol", 0x4674A4, 0x3C
+	# ROM: 0x4674A4
+	.asciz "NW4HBM:Failed assertion idx < ANIMTARGET_VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046B3E0
 lbl_8046B3E0:
-	.incbin "baserom.dol", 0x4674E0, 0xC
+	# ROM: 0x4674E0
+	.asciz "common.h"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046B3EC
 lbl_8046B3EC:
-	.incbin "baserom.dol", 0x4674EC, 0x3C
+	# ROM: 0x4674EC
+	.asciz "NW4HBM:Failed assertion idx < ANIMTARGET_VERTEXCOLOR_MAX"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046B428
 lbl_8046B428:
-	.incbin "baserom.dol", 0x467528, 0xC
+	# ROM: 0x467528
+	.asciz "common.h"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046B434
 lbl_8046B434:
-	.incbin "baserom.dol", 0x467534, 0x34
+	# ROM: 0x467534
+	.asciz "NW4HBM:Failed assertion idx < mGXMemNum.texCoordGen"
+
 .global lbl_8046B468
 lbl_8046B468:
-	.incbin "baserom.dol", 0x467568, 0x10
+	# ROM: 0x467568
+	.asciz "material.h"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm3lyt7Picture"
@@ -667,4 +723,6 @@ lbl_8046B468:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB9F8
 lbl_805DB9F8:
-	.incbin "baserom.dol", 0x489D18, 0x8
+	# ROM: 0x489D18
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+

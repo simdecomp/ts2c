@@ -87,7 +87,7 @@ lbl_8037B2FC:
 /* 8037B310 00376FB0  38 C6 81 B4 */	addi r6, r6, lbl_804681B4@l
 /* 8037B314 00376FB4  7C C6 00 2E */	lwzx r6, r6, r0
 /* 8037B318 00376FB8  7C C9 03 A6 */	mtctr r6
-/* 8037B31C 00376FBC  4E 80 04 20 */	bctr 
+/* 8037B31C 00376FBC  4E 80 04 20 */	bctr
 /* 8037B320 00376FC0  3C C0 CC 01 */	lis r6, 0xCC008000@ha
 /* 8037B324 00376FC4  38 00 00 10 */	li r0, 0x10
 /* 8037B328 00376FC8  98 06 80 00 */	stb r0, 0xCC008000@l(r6)
@@ -353,7 +353,7 @@ lbl_8037B720:
 /* 8037B734 003773D4  38 63 81 58 */	addi r3, r3, lbl_80468158@l
 /* 8037B738 003773D8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8037B73C 003773DC  7C 69 03 A6 */	mtctr r3
-/* 8037B740 003773E0  4E 80 04 20 */	bctr 
+/* 8037B740 003773E0  4E 80 04 20 */	bctr
 /* 8037B744 003773E4  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8037B748 003773E8  38 00 00 61 */	li r0, 0x61
 /* 8037B74C 003773EC  3C 60 67 00 */	lis r3, 0x67000042@ha
@@ -537,19 +537,81 @@ lbl_8037B720:
 lbl_8037BA14:
 /* 8037BA14 003776B4  38 00 00 00 */	li r0, 0
 /* 8037BA18 003776B8  B0 05 00 02 */	sth r0, 2(r5)
-/* 8037BA1C 003776BC  4E 80 00 20 */	blr 
+/* 8037BA1C 003776BC  4E 80 00 20 */	blr
 
 .global "GXClearGPMetric"
 "GXClearGPMetric":
 /* 8037BA20 003776C0  80 6D C4 A4 */	lwz r3, "__cpReg"-_SDA_BASE_(r13)
 /* 8037BA24 003776C4  38 00 00 04 */	li r0, 4
 /* 8037BA28 003776C8  B0 03 00 04 */	sth r0, 4(r3)
-/* 8037BA2C 003776CC  4E 80 00 20 */	blr 
+/* 8037BA2C 003776CC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80468158
 lbl_80468158:
-	.incbin "baserom.dol", 0x464258, 0x5C
+	# ROM: 0x464258
+	.4byte 0x8037B744 ;# ptr
+	.4byte 0x8037B760 ;# ptr
+	.4byte 0x8037B77C ;# ptr
+	.4byte 0x8037B798 ;# ptr
+	.4byte 0x8037B7EC ;# ptr
+	.4byte 0x8037B808 ;# ptr
+	.4byte 0x8037B824 ;# ptr
+	.4byte 0x8037B840 ;# ptr
+	.4byte 0x8037B7B4 ;# ptr
+	.4byte 0x8037B85C ;# ptr
+	.4byte 0x8037B88C ;# ptr
+	.4byte 0x8037B8BC ;# ptr
+	.4byte 0x8037B8EC ;# ptr
+	.4byte 0x8037B91C ;# ptr
+	.4byte 0x8037B94C ;# ptr
+	.4byte 0x8037B97C ;# ptr
+	.4byte 0x8037B9AC ;# ptr
+	.4byte 0x8037B9D8 ;# ptr
+	.4byte 0x8037B9E8 ;# ptr
+	.4byte 0x8037B9F8 ;# ptr
+	.4byte 0x8037BA08 ;# ptr
+	.4byte 0x8037B7D0 ;# ptr
+	.4byte 0x8037BA14 ;# ptr
+
 .global lbl_804681B4
 lbl_804681B4:
-	.incbin "baserom.dol", 0x4642B4, 0x94
+	# ROM: 0x4642B4
+	.4byte 0x8037B320 ;# ptr
+	.4byte 0x8037B340 ;# ptr
+	.4byte 0x8037B360 ;# ptr
+	.4byte 0x8037B380 ;# ptr
+	.4byte 0x8037B3A0 ;# ptr
+	.4byte 0x8037B3C0 ;# ptr
+	.4byte 0x8037B3E0 ;# ptr
+	.4byte 0x8037B400 ;# ptr
+	.4byte 0x8037B420 ;# ptr
+	.4byte 0x8037B440 ;# ptr
+	.4byte 0x8037B480 ;# ptr
+	.4byte 0x8037B4A0 ;# ptr
+	.4byte 0x8037B4BC ;# ptr
+	.4byte 0x8037B4D8 ;# ptr
+	.4byte 0x8037B4F4 ;# ptr
+	.4byte 0x8037B510 ;# ptr
+	.4byte 0x8037B52C ;# ptr
+	.4byte 0x8037B548 ;# ptr
+	.4byte 0x8037B564 ;# ptr
+	.4byte 0x8037B580 ;# ptr
+	.4byte 0x8037B59C ;# ptr
+	.4byte 0x8037B5B8 ;# ptr
+	.4byte 0x8037B5D4 ;# ptr
+	.4byte 0x8037B5F0 ;# ptr
+	.4byte 0x8037B60C ;# ptr
+	.4byte 0x8037B628 ;# ptr
+	.4byte 0x8037B644 ;# ptr
+	.4byte 0x8037B660 ;# ptr
+	.4byte 0x8037B67C ;# ptr
+	.4byte 0x8037B698 ;# ptr
+	.4byte 0x8037B6B4 ;# ptr
+	.4byte 0x8037B6D0 ;# ptr
+	.4byte 0x8037B6EC ;# ptr
+	.4byte 0x8037B708 ;# ptr
+	.4byte 0x8037B460 ;# ptr
+	.4byte 0x8037B720 ;# ptr
+	.4byte 0x00000000
+

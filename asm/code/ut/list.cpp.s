@@ -30,7 +30,7 @@ lbl_803C32D0:
 /* 803C32EC 003BEF8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C32F0 003BEF90  7C 08 03 A6 */	mtlr r0
 /* 803C32F4 003BEF94  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C32F8 003BEF98  4E 80 00 20 */	blr 
+/* 803C32F8 003BEF98  4E 80 00 20 */	blr
 
 .global "SetFirstObject__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv"
 "SetFirstObject__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv":
@@ -76,7 +76,7 @@ lbl_803C335C:
 /* 803C3390 003BF030  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C3394 003BF034  7C 08 03 A6 */	mtlr r0
 /* 803C3398 003BF038  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C339C 003BF03C  4E 80 00 20 */	blr 
+/* 803C339C 003BF03C  4E 80 00 20 */	blr
 
 .global "List_Append__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv"
 "List_Append__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv":
@@ -134,7 +134,7 @@ lbl_803C3450:
 /* 803C345C 003BF0FC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C3460 003BF100  7C 08 03 A6 */	mtlr r0
 /* 803C3464 003BF104  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C3468 003BF108  4E 80 00 20 */	blr 
+/* 803C3468 003BF108  4E 80 00 20 */	blr
 
 .global "List_Remove__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv"
 "List_Remove__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv":
@@ -200,7 +200,7 @@ lbl_803C351C:
 /* 803C3540 003BF1E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C3544 003BF1E4  7C 08 03 A6 */	mtlr r0
 /* 803C3548 003BF1E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C354C 003BF1EC  4E 80 00 20 */	blr 
+/* 803C354C 003BF1EC  4E 80 00 20 */	blr
 
 .global "List_GetNext__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListPCv"
 "List_GetNext__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListPCv":
@@ -235,7 +235,7 @@ lbl_803C35AC:
 /* 803C35B4 003BF254  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803C35B8 003BF258  7C 08 03 A6 */	mtlr r0
 /* 803C35BC 003BF25C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C35C0 003BF260  4E 80 00 20 */	blr 
+/* 803C35C0 003BF260  4E 80 00 20 */	blr
 
 .global "List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs"
 "List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs":
@@ -283,12 +283,19 @@ lbl_803C3648:
 /* 803C3658 003BF2F8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803C365C 003BF2FC  7C 08 03 A6 */	mtlr r0
 /* 803C3660 003BF300  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C3664 003BF304  4E 80 00 20 */	blr 
+/* 803C3664 003BF304  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473EB8
 lbl_80473EB8:
-	.incbin "baserom.dol", 0x46FFB8, 0xC
+	# ROM: 0x46FFB8
+	.asciz "ut_list.cpp"
+
 .global lbl_80473EC4
 lbl_80473EC4:
-	.incbin "baserom.dol", 0x46FFC4, 0x54
+	# ROM: 0x46FFC4
+	.asciz "NW4HBM:Pointer must not be NULL (list)"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (object)"
+	.byte 0x00, 0x00, 0x00
+

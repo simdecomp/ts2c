@@ -44,7 +44,7 @@ lbl_80328AD4:
 /* 80328ADC 0032477C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80328AE0 00324780  7C 08 03 A6 */	mtlr r0
 /* 80328AE4 00324784  38 21 00 10 */	addi r1, r1, 0x10
-/* 80328AE8 00324788  4E 80 00 20 */	blr 
+/* 80328AE8 00324788  4E 80 00 20 */	blr
 
 .global "hash__18SpriteMembersIndexFPCcUi"
 "hash__18SpriteMembersIndexFPCcUi":
@@ -93,18 +93,644 @@ lbl_80328B74:
 /* 80328B7C 0032481C  7C 03 00 AE */	lbzx r0, r3, r0
 /* 80328B80 00324820  7C 64 02 14 */	add r3, r4, r0
 /* 80328B84 00324824  38 21 01 10 */	addi r1, r1, 0x110
-/* 80328B88 00324828  4E 80 00 20 */	blr 
+/* 80328B88 00324828  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041C170
 lbl_8041C170:
-	.incbin "baserom.dol", 0x418270, 0x100
+	# ROM: 0x418270
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D40FD4
+	.4byte 0x32D40500
+	.4byte 0xD400D4D4
+	.4byte 0x0F14D4D4
+	.4byte 0x14D4D41E
+	.4byte 0x000FD400
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D400
+	.4byte 0xD4140A0A
+	.4byte 0x0500233C
+	.4byte 0x2D41D4D4
+	.4byte 0x23140028
+	.4byte 0x0F0F0000
+	.4byte 0x5F14000A
+	.4byte 0x1946D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+	.4byte 0xD4D4D4D4
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x4558F8, 0x2D8
+	# ROM: 0x4558F8
+	.asciz "removeTextField"
+	.asciz "_visible"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "createTextField"
+	.asciz "nextFrame"
+	.byte 0x00, 0x00
+	.asciz "_soundbuftime"
+	.byte 0x00, 0x00
+	.asciz "setTextFormat"
+	.byte 0x00, 0x00
+	.asciz "prevFrame"
+	.byte 0x00, 0x00
+	.asciz "_focusrect"
+	.byte 0x00
+	.asciz "unescape"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onRelease"
+	.byte 0x00, 0x00
+	.asciz "createEmptyMovieClip"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onMouseWheel"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "removeMovieClip"
+	.asciz "onReleaseOutside"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onEnterFrame"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onMouseUp"
+	.byte 0x00, 0x00
+	.asciz "onSetFocus"
+	.byte 0x00
+	.asciz "onMouseMove"
+	.asciz "unloadMovie"
+	.asciz "_framesloaded"
+	.byte 0x00, 0x00
+	.asciz "onRollOver"
+	.byte 0x00
+	.asciz "getNewTextFormat"
+	.byte 0x00, 0x00, 0x00
+	.asciz "localToGlobal"
+	.byte 0x00, 0x00
+	.asciz "_highquality"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onUnload"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getBounds"
+	.byte 0x00, 0x00
+	.asciz "onMouseDown"
+	.asciz "getTextFormat"
+	.byte 0x00, 0x00
+	.asciz "onRollOut"
+	.byte 0x00, 0x00
+	.asciz "setInterval"
+	.asciz "onKeyDown"
+	.byte 0x00, 0x00
+	.asciz "onDragOver"
+	.byte 0x00
+	.asciz "_droptarget"
+	.asciz "swapDepths"
+	.byte 0x00
+	.asciz "_currentframe"
+	.byte 0x00, 0x00
+	.asciz "onKillFocus"
+	.asciz "getDepth"
+	.byte 0x00, 0x00, 0x00
+	.asciz "onDragOut"
+	.byte 0x00, 0x00
+	.asciz "gotoAndPlay"
+	.asciz "gotoAndStop"
+	.asciz "_totalframes"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_rotation"
+	.byte 0x00, 0x00
+	.asciz "duplicateMovieClip"
+	.byte 0x00
+	.asciz "clearInterval"
+	.byte 0x00, 0x00
+	.asciz "_quality"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getBytesTotal"
+	.byte 0x00, 0x00
+	.asciz "getBytesLoaded"
+	.byte 0x00
+	.asciz "loadVariables"
+	.byte 0x00, 0x00
+	.asciz "startDrag"
+	.byte 0x00, 0x00
+	.asciz "loadMovie"
+	.byte 0x00, 0x00
+	.asciz "attachMovie"
+	.4byte 0x00000000
+
 .global "wordlist$7479"
 "wordlist$7479":
-	.incbin "baserom.dol", 0x455BD0, 0x6A0
+	# ROM: 0x455BD0
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C7C ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x805D6C84 ;# ptr
+	.4byte 0x0000001C
+	.4byte 0x805D6C90 ;# ptr
+	.4byte 0x0000007A
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804597F8 ;# ptr
+	.4byte 0x00000077
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459808 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C98 ;# ptr
+	.4byte 0x00000010
+	.4byte 0x80459818 ;# ptr
+	.4byte 0x00000072
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6CA0 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459828 ;# ptr
+	.4byte 0x00000071
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6CA4 ;# ptr
+	.4byte 0x00000017
+	.4byte 0x805D6CB0 ;# ptr
+	.4byte 0x00000015
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459834 ;# ptr
+	.4byte 0x00000013
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459844 ;# ptr
+	.4byte 0x0000007D
+	.4byte 0x80459854 ;# ptr
+	.4byte 0x0000006C
+	.4byte 0x80459860 ;# ptr
+	.4byte 0x00000012
+	.4byte 0x805D6CB8 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x805D6CC0 ;# ptr
+	.4byte 0x000000D3
+	.4byte 0x8045986C ;# ptr
+	.4byte 0x0000001B
+	.4byte 0x80459878 ;# ptr
+	.4byte 0x000000D4
+	.4byte 0x80459884 ;# ptr
+	.4byte 0x00000074
+	.4byte 0x805D6CC8 ;# ptr
+	.4byte 0x000000CF
+	.4byte 0x8045989C ;# ptr
+	.4byte 0x000000DA
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6CD0 ;# ptr
+	.4byte 0x0000006B
+	.4byte 0x804598B0 ;# ptr
+	.4byte 0x0000006D
+	.4byte 0x804598C0 ;# ptr
+	.4byte 0x000000D5
+	.4byte 0x804598D4 ;# ptr
+	.4byte 0x000000CB
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6CD8 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x805D6CE0 ;# ptr
+	.4byte 0x000000CD
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804598E4 ;# ptr
+	.4byte 0x000000D2
+	.4byte 0x804598F0 ;# ptr
+	.4byte 0x000000D8
+	.4byte 0x805D6CE8 ;# ptr
+	.4byte 0x000000C8
+	.4byte 0x805D6CF0 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6CF8 ;# ptr
+	.4byte 0x0000001A
+	.4byte 0x804598FC ;# ptr
+	.4byte 0x000000D1
+	.4byte 0x805D6D00 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459908 ;# ptr
+	.4byte 0x00000079
+	.4byte 0x805D6D08 ;# ptr
+	.4byte 0x00000016
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6D10 ;# ptr
+	.4byte 0x00000066
+	.4byte 0x805D6D18 ;# ptr
+	.4byte 0x0000001D
+	.4byte 0x80459914 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459924 ;# ptr
+	.4byte 0x000000D7
+	.4byte 0x80459930 ;# ptr
+	.4byte 0x0000007B
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459944 ;# ptr
+	.4byte 0x0000007F
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459954 ;# ptr
+	.4byte 0x00000011
+	.4byte 0x80459964 ;# ptr
+	.4byte 0x000000D9
+	.4byte 0x80459970 ;# ptr
+	.4byte 0x00000075
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6D20 ;# ptr
+	.4byte 0x0000000A
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6D28 ;# ptr
+	.4byte 0x0000006E
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x8045997C ;# ptr
+	.4byte 0x000000D0
+	.4byte 0x805D6D30 ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x80459988 ;# ptr
+	.4byte 0x0000007C
+	.4byte 0x80459998 ;# ptr
+	.4byte 0x000000D6
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804599A4 ;# ptr
+	.4byte 0x00000018
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804599B0 ;# ptr
+	.4byte 0x000000CC
+	.4byte 0x804599BC ;# ptr
+	.4byte 0x000000CA
+	.4byte 0x804599C8 ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x805D6D38 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804599D4 ;# ptr
+	.4byte 0x00000078
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6D40 ;# ptr
+	.4byte 0x00000076
+	.4byte 0x804599E0 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804599F0 ;# ptr
+	.4byte 0x000000CE
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804599FC ;# ptr
+	.4byte 0x00000073
+	.4byte 0x80459A08 ;# ptr
+	.4byte 0x000000C9
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A14 ;# ptr
+	.4byte 0x00000067
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A20 ;# ptr
+	.4byte 0x00000068
+	.4byte 0x80459A2C ;# ptr
+	.4byte 0x00000006
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A3C ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A48 ;# ptr
+	.4byte 0x00000065
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A5C ;# ptr
+	.4byte 0x00000019
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A6C ;# ptr
+	.4byte 0x00000014
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A78 ;# ptr
+	.4byte 0x00000070
+	.4byte 0x80459A88 ;# ptr
+	.4byte 0x0000006F
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459A98 ;# ptr
+	.4byte 0x0000006A
+	.4byte 0x80459AA8 ;# ptr
+	.4byte 0x0000007E
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459AB4 ;# ptr
+	.4byte 0x00000069
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C78 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x80459AC0 ;# ptr
+	.4byte 0x00000064
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x4867F8, 0xD0
+	# ROM: 0x4867F8
+	.4byte 0x00000000
+	.asciz "_name"
+	.byte 0x00, 0x00
+	.asciz "escape"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "setMask"
+	.asciz "_url"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x5F780000
+	.asciz "extern"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "_xmouse"
+	.asciz "_alpha"
+	.byte 0x00
+	.asciz "onPress"
+	.asciz "onLoad"
+	.byte 0x00
+	.asciz "play"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_width"
+	.byte 0x00
+	.asciz "onKeyUp"
+	.asciz "onData"
+	.byte 0x00
+	.asciz "_xscale"
+	.asciz "isNaN"
+	.byte 0x00, 0x00
+	.4byte 0x5F790000
+	.4byte 0x00000000
+	.asciz "_ymouse"
+	.asciz "getURL"
+	.byte 0x00
+	.asciz "Boolean"
+	.asciz "_height"
+	.asciz "stop"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_target"
+	.asciz "_yscale"
+	.asciz "hitTest"
+

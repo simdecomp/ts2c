@@ -84,7 +84,7 @@ lbl_803E208C:
 /* 803E2098 003DDD38  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E209C 003DDD3C  7C 08 03 A6 */	mtlr r0
 /* 803E20A0 003DDD40  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E20A4 003DDD44  4E 80 00 20 */	blr 
+/* 803E20A4 003DDD44  4E 80 00 20 */	blr
 
 .global "__OSInitSram"
 "__OSInitSram":
@@ -226,7 +226,7 @@ lbl_803E2290:
 /* 803E2298 003DDF38  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803E229C 003DDF3C  7C 08 03 A6 */	mtlr r0
 /* 803E22A0 003DDF40  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E22A4 003DDF44  4E 80 00 20 */	blr 
+/* 803E22A4 003DDF44  4E 80 00 20 */	blr
 
 .global "UnlockSram"
 "UnlockSram":
@@ -425,14 +425,14 @@ lbl_803E2550:
 /* 803E2578 003DE218  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E257C 003DE21C  7C 08 03 A6 */	mtlr r0
 /* 803E2580 003DE220  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E2584 003DE224  4E 80 00 20 */	blr 
+/* 803E2584 003DE224  4E 80 00 20 */	blr
 
 .global "__OSSyncSram"
 "__OSSyncSram":
 /* 803E2588 003DE228  3C 60 80 5C */	lis r3, "Scb"@ha
 /* 803E258C 003DE22C  38 63 34 40 */	addi r3, r3, "Scb"@l
 /* 803E2590 003DE230  80 63 00 4C */	lwz r3, 0x4c(r3)
-/* 803E2594 003DE234  4E 80 00 20 */	blr 
+/* 803E2594 003DE234  4E 80 00 20 */	blr
 
 .global "__OSReadROM"
 "__OSReadROM":
@@ -511,7 +511,7 @@ lbl_803E26A0:
 /* 803E26AC 003DE34C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E26B0 003DE350  7C 08 03 A6 */	mtlr r0
 /* 803E26B4 003DE354  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E26B8 003DE358  4E 80 00 20 */	blr 
+/* 803E26B8 003DE358  4E 80 00 20 */	blr
 
 .global "OSGetWirelessID"
 "OSGetWirelessID":
@@ -546,7 +546,7 @@ lbl_803E2704:
 /* 803E2724 003DE3C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E2728 003DE3C8  7C 08 03 A6 */	mtlr r0
 /* 803E272C 003DE3CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E2730 003DE3D0  4E 80 00 20 */	blr 
+/* 803E2730 003DE3D0  4E 80 00 20 */	blr
 
 .global "OSSetWirelessID"
 "OSSetWirelessID":
@@ -592,7 +592,7 @@ lbl_803E27B8:
 /* 803E27C0 003DE460  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803E27C4 003DE464  7C 08 03 A6 */	mtlr r0
 /* 803E27C8 003DE468  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E27CC 003DE46C  4E 80 00 20 */	blr 
+/* 803E27CC 003DE46C  4E 80 00 20 */	blr
 
 .global "__OSGetRTCFlags"
 "__OSGetRTCFlags":
@@ -669,7 +669,7 @@ lbl_803E28D4:
 /* 803E28DC 003DE57C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803E28E0 003DE580  7C 08 03 A6 */	mtlr r0
 /* 803E28E4 003DE584  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E28E8 003DE588  4E 80 00 20 */	blr 
+/* 803E28E8 003DE588  4E 80 00 20 */	blr
 
 .global "__OSClearRTCFlags"
 "__OSClearRTCFlags":
@@ -743,7 +743,7 @@ lbl_803E29E8:
 /* 803E29EC 003DE68C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803E29F0 003DE690  7C 08 03 A6 */	mtlr r0
 /* 803E29F4 003DE694  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E29F8 003DE698  4E 80 00 20 */	blr 
+/* 803E29F8 003DE698  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "Scb"

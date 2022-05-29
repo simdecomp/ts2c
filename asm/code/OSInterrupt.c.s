@@ -10,7 +10,7 @@
 .global "__RAS_OSDisableInterrupts_end"
 "__RAS_OSDisableInterrupts_end":
 /* 803E0468 003DC108  54 63 8F FE */	rlwinm r3, r3, 0x11, 0x1f, 0x1f
-/* 803E046C 003DC10C  4E 80 00 20 */	blr 
+/* 803E046C 003DC10C  4E 80 00 20 */	blr
 
 .global "OSEnableInterrupts"
 "OSEnableInterrupts":
@@ -18,7 +18,7 @@
 /* 803E0474 003DC114  60 64 80 00 */	ori r4, r3, 0x8000
 /* 803E0478 003DC118  7C 80 01 24 */	mtmsr r4
 /* 803E047C 003DC11C  54 63 8F FE */	rlwinm r3, r3, 0x11, 0x1f, 0x1f
-/* 803E0480 003DC120  4E 80 00 20 */	blr 
+/* 803E0480 003DC120  4E 80 00 20 */	blr
 
 .global "OSRestoreInterrupts"
 "OSRestoreInterrupts":
@@ -32,7 +32,7 @@ lbl_803E0498:
 lbl_803E049C:
 /* 803E049C 003DC13C  7C A0 01 24 */	mtmsr r5
 /* 803E04A0 003DC140  54 83 8F FE */	rlwinm r3, r4, 0x11, 0x1f, 0x1f
-/* 803E04A4 003DC144  4E 80 00 20 */	blr 
+/* 803E04A4 003DC144  4E 80 00 20 */	blr
 
 .global "__OSSetInterruptHandler"
 "__OSSetInterruptHandler":
@@ -40,14 +40,14 @@ lbl_803E049C:
 /* 803E04AC 003DC14C  54 60 10 3A */	slwi r0, r3, 2
 /* 803E04B0 003DC150  7C 65 00 2E */	lwzx r3, r5, r0
 /* 803E04B4 003DC154  7C 85 01 2E */	stwx r4, r5, r0
-/* 803E04B8 003DC158  4E 80 00 20 */	blr 
+/* 803E04B8 003DC158  4E 80 00 20 */	blr
 
 .global "__OSGetInterruptHandler"
 "__OSGetInterruptHandler":
 /* 803E04BC 003DC15C  80 8D C7 50 */	lwz r4, "InterruptHandlerTable"-_SDA_BASE_(r13)
 /* 803E04C0 003DC160  54 60 10 3A */	slwi r0, r3, 2
 /* 803E04C4 003DC164  7C 64 00 2E */	lwzx r3, r4, r0
-/* 803E04C8 003DC168  4E 80 00 20 */	blr 
+/* 803E04C8 003DC168  4E 80 00 20 */	blr
 
 .global "__OSInterruptInit"
 "__OSInterruptInit":
@@ -101,7 +101,7 @@ lbl_803E0554:
 /* 803E0580 003DC220  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E0584 003DC224  7C 08 03 A6 */	mtlr r0
 /* 803E0588 003DC228  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E058C 003DC22C  4E 80 00 20 */	blr 
+/* 803E058C 003DC22C  4E 80 00 20 */	blr
 
 .global "SetInterruptMask"
 "SetInterruptMask":
@@ -115,7 +115,7 @@ lbl_803E0554:
 /* 803E05AC 003DC24C  40 80 00 80 */	bge lbl_803E062C
 /* 803E05B0 003DC250  2C 00 00 00 */	cmpwi r0, 0
 /* 803E05B4 003DC254  40 80 00 28 */	bge lbl_803E05DC
-/* 803E05B8 003DC258  4E 80 00 20 */	blr 
+/* 803E05B8 003DC258  4E 80 00 20 */	blr
 lbl_803E05BC:
 /* 803E05BC 003DC25C  2C 00 00 11 */	cmpwi r0, 0x11
 /* 803E05C0 003DC260  40 80 00 10 */	bge lbl_803E05D0
@@ -124,7 +124,7 @@ lbl_803E05BC:
 /* 803E05CC 003DC26C  48 00 01 10 */	b lbl_803E06DC
 lbl_803E05D0:
 /* 803E05D0 003DC270  2C 00 00 1C */	cmpwi r0, 0x1c
-/* 803E05D4 003DC274  4C 80 00 20 */	bgelr 
+/* 803E05D4 003DC274  4C 80 00 20 */	bgelr
 /* 803E05D8 003DC278  48 00 01 7C */	b lbl_803E0754
 lbl_803E05DC:
 /* 803E05DC 003DC27C  54 80 00 01 */	rlwinm. r0, r4, 0, 0, 0
@@ -151,7 +151,7 @@ lbl_803E061C:
 /* 803E061C 003DC2BC  3C 80 CC 00 */	lis r4, 0xCC00401C@ha
 /* 803E0620 003DC2C0  54 63 01 7E */	clrlwi r3, r3, 5
 /* 803E0624 003DC2C4  B0 A4 40 1C */	sth r5, 0xCC00401C@l(r4)
-/* 803E0628 003DC2C8  4E 80 00 20 */	blr 
+/* 803E0628 003DC2C8  4E 80 00 20 */	blr
 lbl_803E062C:
 /* 803E062C 003DC2CC  3C A0 CC 00 */	lis r5, 0xCC00500A@ha
 /* 803E0630 003DC2D0  54 80 01 4B */	rlwinm. r0, r4, 0, 5, 5
@@ -171,7 +171,7 @@ lbl_803E065C:
 /* 803E065C 003DC2FC  3C 80 CC 00 */	lis r4, 0xCC00500A@ha
 /* 803E0660 003DC300  54 63 02 08 */	rlwinm r3, r3, 0, 8, 4
 /* 803E0664 003DC304  B0 A4 50 0A */	sth r5, 0xCC00500A@l(r4)
-/* 803E0668 003DC308  4E 80 00 20 */	blr 
+/* 803E0668 003DC308  4E 80 00 20 */	blr
 lbl_803E066C:
 /* 803E066C 003DC30C  54 80 02 11 */	rlwinm. r0, r4, 0, 8, 8
 /* 803E0670 003DC310  3C 80 CD 00 */	lis r4, 0xCD006C00@ha
@@ -184,7 +184,7 @@ lbl_803E0688:
 /* 803E0688 003DC328  3C 80 CD 00 */	lis r4, 0xCD006C00@ha
 /* 803E068C 003DC32C  54 63 02 4E */	rlwinm r3, r3, 0, 9, 7
 /* 803E0690 003DC330  90 A4 6C 00 */	stw r5, 0xCD006C00@l(r4)
-/* 803E0694 003DC334  4E 80 00 20 */	blr 
+/* 803E0694 003DC334  4E 80 00 20 */	blr
 lbl_803E0698:
 /* 803E0698 003DC338  54 80 02 53 */	rlwinm. r0, r4, 0, 9, 9
 /* 803E069C 003DC33C  3C A0 CD 00 */	lis r5, 0xCD006800@ha
@@ -205,7 +205,7 @@ lbl_803E06CC:
 /* 803E06CC 003DC36C  3C 80 CD 00 */	lis r4, 0xCD006800@ha
 /* 803E06D0 003DC370  54 63 03 10 */	rlwinm r3, r3, 0, 0xc, 8
 /* 803E06D4 003DC374  90 A4 68 00 */	stw r5, 0xCD006800@l(r4)
-/* 803E06D8 003DC378  4E 80 00 20 */	blr 
+/* 803E06D8 003DC378  4E 80 00 20 */	blr
 lbl_803E06DC:
 /* 803E06DC 003DC37C  54 80 03 19 */	rlwinm. r0, r4, 0, 0xc, 0xc
 /* 803E06E0 003DC380  3C A0 CD 00 */	lis r5, 0xCD006814@ha
@@ -226,7 +226,7 @@ lbl_803E0710:
 /* 803E0710 003DC3B0  3C 80 CD 00 */	lis r4, 0xCD006814@ha
 /* 803E0714 003DC3B4  54 63 03 D6 */	rlwinm r3, r3, 0, 0xf, 0xb
 /* 803E0718 003DC3B8  90 A4 68 14 */	stw r5, 0xCD006814@l(r4)
-/* 803E071C 003DC3BC  4E 80 00 20 */	blr 
+/* 803E071C 003DC3BC  4E 80 00 20 */	blr
 lbl_803E0720:
 /* 803E0720 003DC3C0  3C A0 CD 00 */	lis r5, 0xCD006828@ha
 /* 803E0724 003DC3C4  54 80 03 DF */	rlwinm. r0, r4, 0, 0xf, 0xf
@@ -242,7 +242,7 @@ lbl_803E0744:
 /* 803E0744 003DC3E4  3C 80 CD 00 */	lis r4, 0xCD006828@ha
 /* 803E0748 003DC3E8  54 63 04 5C */	rlwinm r3, r3, 0, 0x11, 0xe
 /* 803E074C 003DC3EC  90 A4 68 28 */	stw r5, 0xCD006828@l(r4)
-/* 803E0750 003DC3F0  4E 80 00 20 */	blr 
+/* 803E0750 003DC3F0  4E 80 00 20 */	blr
 lbl_803E0754:
 /* 803E0754 003DC3F4  54 80 04 63 */	rlwinm. r0, r4, 0, 0x11, 0x11
 /* 803E0758 003DC3F8  38 A0 00 F0 */	li r5, 0xf0
@@ -292,7 +292,7 @@ lbl_803E07DC:
 /* 803E07DC 003DC47C  3C 80 CC 00 */	lis r4, 0xCC003004@ha
 /* 803E07E0 003DC480  54 63 07 20 */	rlwinm r3, r3, 0, 0x1c, 0x10
 /* 803E07E4 003DC484  90 A4 30 04 */	stw r5, 0xCC003004@l(r4)
-/* 803E07E8 003DC488  4E 80 00 20 */	blr 
+/* 803E07E8 003DC488  4E 80 00 20 */	blr
 
 .global "__OSMaskInterrupts"
 "__OSMaskInterrupts":
@@ -329,7 +329,7 @@ lbl_803E083C:
 /* 803E085C 003DC4FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E0860 003DC500  7C 08 03 A6 */	mtlr r0
 /* 803E0864 003DC504  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E0868 003DC508  4E 80 00 20 */	blr 
+/* 803E0868 003DC508  4E 80 00 20 */	blr
 
 .global "__OSUnmaskInterrupts"
 "__OSUnmaskInterrupts":
@@ -366,7 +366,7 @@ lbl_803E08BC:
 /* 803E08DC 003DC57C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E08E0 003DC580  7C 08 03 A6 */	mtlr r0
 /* 803E08E4 003DC584  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E08E8 003DC588  4E 80 00 20 */	blr 
+/* 803E08E8 003DC588  4E 80 00 20 */	blr
 
 .global "__OSDispatchInterrupt"
 "__OSDispatchInterrupt":
@@ -559,7 +559,7 @@ lbl_803E0B44:
 /* 803E0B4C 003DC7EC  7F A3 EB 78 */	mr r3, r29
 /* 803E0B50 003DC7F0  7F C4 F3 78 */	mr r4, r30
 /* 803E0B54 003DC7F4  7D 89 03 A6 */	mtctr r12
-/* 803E0B58 003DC7F8  4E 80 04 21 */	bctrl 
+/* 803E0B58 003DC7F8  4E 80 04 21 */	bctrl
 /* 803E0B5C 003DC7FC  48 00 23 79 */	bl "OSEnableScheduler"
 /* 803E0B60 003DC800  48 00 28 81 */	bl "__OSReschedule"
 /* 803E0B64 003DC804  7F C3 F3 78 */	mr r3, r30
@@ -573,7 +573,7 @@ lbl_803E0B6C:
 /* 803E0B80 003DC820  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803E0B84 003DC824  7C 08 03 A6 */	mtlr r0
 /* 803E0B88 003DC828  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E0B8C 003DC82C  4E 80 00 20 */	blr 
+/* 803E0B8C 003DC82C  4E 80 00 20 */	blr
 
 .global "ExternalInterruptHandler"
 "ExternalInterruptHandler":
@@ -601,7 +601,20 @@ lbl_803E0B6C:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "InterruptPrioTable"
 "InterruptPrioTable":
-	.incbin "baserom.dol", 0x473808, 0x30
+	# ROM: 0x473808
+	.4byte 0x00000100
+	.4byte 0x00000040
+	.4byte 0xF8000000
+	.4byte 0x00000200
+	.4byte 0x00000080
+	.4byte 0x00000010
+	.4byte 0x00003000
+	.4byte 0x00000020
+	.4byte 0x03FF8C00
+	.4byte 0x04000000
+	.4byte 0x00004000
+	.4byte 0xFFFFFFFF
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__OSLastInterruptSrr0"

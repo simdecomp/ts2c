@@ -9,7 +9,7 @@
 /* 803CFE58 003CBAF8  7C 63 02 14 */	add r3, r3, r0
 /* 803CFE5C 003CBAFC  D0 23 00 84 */	stfs f1, 0x84(r3)
 /* 803CFE60 003CBB00  D0 43 00 88 */	stfs f2, 0x88(r3)
-/* 803CFE64 003CBB04  4E 80 00 20 */	blr 
+/* 803CFE64 003CBB04  4E 80 00 20 */	blr
 
 .global "KPADSetAccParam"
 "KPADSetAccParam":
@@ -19,7 +19,7 @@
 /* 803CFE74 003CBB14  7C 63 02 14 */	add r3, r3, r0
 /* 803CFE78 003CBB18  D0 23 00 9C */	stfs f1, 0x9c(r3)
 /* 803CFE7C 003CBB1C  D0 43 00 A0 */	stfs f2, 0xa0(r3)
-/* 803CFE80 003CBB20  4E 80 00 20 */	blr 
+/* 803CFE80 003CBB20  4E 80 00 20 */	blr
 
 .global "reset_kpad"
 "reset_kpad":
@@ -141,7 +141,7 @@ lbl_803D0024:
 /* 803D0048 003CBCE8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803D004C 003CBCEC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D0050 003CBCF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D0054 003CBCF4  4E 80 00 20 */	blr 
+/* 803D0054 003CBCF4  4E 80 00 20 */	blr
 
 .global "calc_button_repeat"
 "calc_button_repeat":
@@ -199,7 +199,7 @@ lbl_803D00D8:
 /* 803D0118 003CBDB8  B0 03 04 CE */	sth r0, 0x4ce(r3)
 lbl_803D011C:
 /* 803D011C 003CBDBC  28 04 00 02 */	cmplwi r4, 2
-/* 803D0120 003CBDC0  4C 82 00 20 */	bnelr 
+/* 803D0120 003CBDC0  4C 82 00 20 */	bnelr
 /* 803D0124 003CBDC4  80 03 00 64 */	lwz r0, 0x64(r3)
 /* 803D0128 003CBDC8  2C 00 00 00 */	cmpwi r0, 0
 /* 803D012C 003CBDCC  40 82 00 10 */	bne lbl_803D013C
@@ -213,18 +213,18 @@ lbl_803D013C:
 /* 803D0148 003CBDE8  2C 00 00 00 */	cmpwi r0, 0
 /* 803D014C 003CBDEC  B0 A3 04 D4 */	sth r5, 0x4d4(r3)
 /* 803D0150 003CBDF0  B0 83 04 D6 */	sth r4, 0x4d6(r3)
-/* 803D0154 003CBDF4  4D 82 00 20 */	beqlr 
+/* 803D0154 003CBDF4  4D 82 00 20 */	beqlr
 /* 803D0158 003CBDF8  A0 03 04 D2 */	lhz r0, 0x4d2(r3)
 /* 803D015C 003CBDFC  2C 00 00 00 */	cmpwi r0, 0
-/* 803D0160 003CBE00  4D 82 00 20 */	beqlr 
+/* 803D0160 003CBE00  4D 82 00 20 */	beqlr
 /* 803D0164 003CBE04  80 03 00 60 */	lwz r0, 0x60(r3)
 /* 803D0168 003CBE08  64 00 80 00 */	oris r0, r0, 0x8000
 /* 803D016C 003CBE0C  90 03 00 60 */	stw r0, 0x60(r3)
-/* 803D0170 003CBE10  4E 80 00 20 */	blr 
+/* 803D0170 003CBE10  4E 80 00 20 */	blr
 lbl_803D0174:
 /* 803D0174 003CBE14  80 03 00 60 */	lwz r0, 0x60(r3)
 /* 803D0178 003CBE18  2C 00 00 00 */	cmpwi r0, 0
-/* 803D017C 003CBE1C  4D 82 00 20 */	beqlr 
+/* 803D017C 003CBE1C  4D 82 00 20 */	beqlr
 /* 803D0180 003CBE20  A0 03 04 D4 */	lhz r0, 0x4d4(r3)
 /* 803D0184 003CBE24  7C 00 2A 14 */	add r0, r0, r5
 /* 803D0188 003CBE28  54 04 04 3E */	clrlwi r4, r0, 0x10
@@ -238,7 +238,7 @@ lbl_803D01A4:
 /* 803D01A4 003CBE44  A0 C3 04 D4 */	lhz r6, 0x4d4(r3)
 /* 803D01A8 003CBE48  A0 A3 04 D6 */	lhz r5, 0x4d6(r3)
 /* 803D01AC 003CBE4C  7C 06 28 40 */	cmplw r6, r5
-/* 803D01B0 003CBE50  4D 80 00 20 */	bltlr 
+/* 803D01B0 003CBE50  4D 80 00 20 */	bltlr
 /* 803D01B4 003CBE54  80 83 00 60 */	lwz r4, 0x60(r3)
 /* 803D01B8 003CBE58  28 06 4E 20 */	cmplwi r6, 0x4e20
 /* 803D01BC 003CBE5C  A0 03 04 D2 */	lhz r0, 0x4d2(r3)
@@ -246,13 +246,13 @@ lbl_803D01A4:
 /* 803D01C4 003CBE64  7C 05 02 14 */	add r0, r5, r0
 /* 803D01C8 003CBE68  90 83 00 60 */	stw r4, 0x60(r3)
 /* 803D01CC 003CBE6C  B0 03 04 D6 */	sth r0, 0x4d6(r3)
-/* 803D01D0 003CBE70  4D 80 00 20 */	bltlr 
+/* 803D01D0 003CBE70  4D 80 00 20 */	bltlr
 /* 803D01D4 003CBE74  54 04 04 3E */	clrlwi r4, r0, 0x10
 /* 803D01D8 003CBE78  38 A6 B1 E0 */	addi r5, r6, -20000
 /* 803D01DC 003CBE7C  38 04 B1 E0 */	addi r0, r4, -20000
 /* 803D01E0 003CBE80  B0 A3 04 D4 */	sth r5, 0x4d4(r3)
 /* 803D01E4 003CBE84  B0 03 04 D6 */	sth r0, 0x4d6(r3)
-/* 803D01E8 003CBE88  4E 80 00 20 */	blr 
+/* 803D01E8 003CBE88  4E 80 00 20 */	blr
 
 .global "calc_acc_horizon"
 "calc_acc_horizon":
@@ -360,7 +360,7 @@ lbl_803D035C:
 /* 803D0370 003CC010  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D0374 003CC014  7C 08 03 A6 */	mtlr r0
 /* 803D0378 003CC018  38 21 00 30 */	addi r1, r1, 0x30
-/* 803D037C 003CC01C  4E 80 00 20 */	blr 
+/* 803D037C 003CC01C  4E 80 00 20 */	blr
 
 .global "calc_acc_vertical"
 "calc_acc_vertical":
@@ -439,7 +439,7 @@ lbl_803D0478:
 /* 803D0494 003CC134  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D0498 003CC138  7C 08 03 A6 */	mtlr r0
 /* 803D049C 003CC13C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803D04A0 003CC140  4E 80 00 20 */	blr 
+/* 803D04A0 003CC140  4E 80 00 20 */	blr
 
 .global "read_kpad_acc"
 "read_kpad_acc":
@@ -874,7 +874,7 @@ lbl_803D0A94:
 /* 803D0A9C 003CC73C  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 803D0AA0 003CC740  7C 08 03 A6 */	mtlr r0
 /* 803D0AA4 003CC744  38 21 00 40 */	addi r1, r1, 0x40
-/* 803D0AA8 003CC748  4E 80 00 20 */	blr 
+/* 803D0AA8 003CC748  4E 80 00 20 */	blr
 
 .global "select_2obj_first"
 "select_2obj_first":
@@ -1006,7 +1006,7 @@ lbl_803D0C54:
 /* 803D0C84 003CC924  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803D0C88 003CC928  7C 08 03 A6 */	mtlr r0
 /* 803D0C8C 003CC92C  38 21 00 80 */	addi r1, r1, 0x80
-/* 803D0C90 003CC930  4E 80 00 20 */	blr 
+/* 803D0C90 003CC930  4E 80 00 20 */	blr
 
 .global "select_2obj_continue"
 "select_2obj_continue":
@@ -1158,7 +1158,7 @@ lbl_803D0E7C:
 /* 803D0EAC 003CCB4C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803D0EB0 003CCB50  7C 08 03 A6 */	mtlr r0
 /* 803D0EB4 003CCB54  38 21 00 80 */	addi r1, r1, 0x80
-/* 803D0EB8 003CCB58  4E 80 00 20 */	blr 
+/* 803D0EB8 003CCB58  4E 80 00 20 */	blr
 
 .global "select_1obj_first"
 "select_1obj_first":
@@ -1276,7 +1276,7 @@ lbl_803D1058:
 /* 803D1064 003CCD04  38 60 00 00 */	li r3, 0
 lbl_803D1068:
 /* 803D1068 003CCD08  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D106C 003CCD0C  4E 80 00 20 */	blr 
+/* 803D106C 003CCD0C  4E 80 00 20 */	blr
 
 .global "select_1obj_continue"
 "select_1obj_continue":
@@ -1324,7 +1324,7 @@ lbl_803D10F0:
 /* 803D1104 003CCDA4  FC 04 00 00 */	fcmpu cr0, f4, f0
 /* 803D1108 003CCDA8  40 82 00 0C */	bne lbl_803D1114
 /* 803D110C 003CCDAC  38 60 00 00 */	li r3, 0
-/* 803D1110 003CCDB0  4E 80 00 20 */	blr 
+/* 803D1110 003CCDB0  4E 80 00 20 */	blr
 lbl_803D1114:
 /* 803D1114 003CCDB4  80 A9 00 00 */	lwz r5, 0(r9)
 /* 803D1118 003CCDB8  38 03 00 F4 */	addi r0, r3, 0xf4
@@ -1377,10 +1377,10 @@ lbl_803D11C8:
 /* 803D11CC 003CCE6C  7C 00 07 75 */	extsb. r0, r0
 /* 803D11D0 003CCE70  40 80 00 0C */	bge lbl_803D11DC
 /* 803D11D4 003CCE74  38 60 FF FF */	li r3, -1
-/* 803D11D8 003CCE78  4E 80 00 20 */	blr 
+/* 803D11D8 003CCE78  4E 80 00 20 */	blr
 lbl_803D11DC:
 /* 803D11DC 003CCE7C  38 60 00 01 */	li r3, 1
-/* 803D11E0 003CCE80  4E 80 00 20 */	blr 
+/* 803D11E0 003CCE80  4E 80 00 20 */	blr
 
 .global "calc_dpd_variable"
 "calc_dpd_variable":
@@ -1651,7 +1651,7 @@ lbl_803D15B4:
 /* 803D15BC 003CD25C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803D15C0 003CD260  7C 08 03 A6 */	mtlr r0
 /* 803D15C4 003CD264  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D15C8 003CD268  4E 80 00 20 */	blr 
+/* 803D15C8 003CD268  4E 80 00 20 */	blr
 
 .global "read_kpad_dpd"
 "read_kpad_dpd":
@@ -1962,7 +1962,7 @@ lbl_803D19F0:
 /* 803D1A14 003CD6B4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803D1A18 003CD6B8  7C 08 03 A6 */	mtlr r0
 /* 803D1A1C 003CD6BC  38 21 00 40 */	addi r1, r1, 0x40
-/* 803D1A20 003CD6C0  4E 80 00 20 */	blr 
+/* 803D1A20 003CD6C0  4E 80 00 20 */	blr
 
 .global "clamp_stick_circle"
 "clamp_stick_circle":
@@ -2042,7 +2042,7 @@ lbl_803D1B18:
 /* 803D1B3C 003CD7DC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803D1B40 003CD7E0  7C 08 03 A6 */	mtlr r0
 /* 803D1B44 003CD7E4  38 21 00 60 */	addi r1, r1, 0x60
-/* 803D1B48 003CD7E8  4E 80 00 20 */	blr 
+/* 803D1B48 003CD7E8  4E 80 00 20 */	blr
 
 .global "clamp_stick_cross"
 "clamp_stick_cross":
@@ -2197,7 +2197,7 @@ lbl_803D1D5C:
 /* 803D1D60 003CDA00  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803D1D64 003CDA04  7C 08 03 A6 */	mtlr r0
 /* 803D1D68 003CDA08  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D1D6C 003CDA0C  4E 80 00 20 */	blr 
+/* 803D1D6C 003CDA0C  4E 80 00 20 */	blr
 
 .global "read_kpad_stick"
 "read_kpad_stick":
@@ -2255,7 +2255,7 @@ lbl_803D1E1C:
 /* 803D1E34 003CDAD4  7C A5 07 74 */	extsb r5, r5
 /* 803D1E38 003CDAD8  80 ED B0 28 */	lwz r7, "kp_fs_fstick_max"-_SDA_BASE_(r13)
 /* 803D1E3C 003CDADC  7D 89 03 A6 */	mtctr r12
-/* 803D1E40 003CDAE0  4E 80 04 21 */	bctrl 
+/* 803D1E40 003CDAE0  4E 80 04 21 */	bctrl
 /* 803D1E44 003CDAE4  48 00 01 88 */	b lbl_803D1FCC
 lbl_803D1E48:
 /* 803D1E48 003CDAE8  28 06 00 02 */	cmplwi r6, 2
@@ -2295,7 +2295,7 @@ lbl_803D1EBC:
 /* 803D1ECC 003CDB6C  80 CD B0 2C */	lwz r6, "kp_cl_stick_min"-_SDA_BASE_(r13)
 /* 803D1ED0 003CDB70  80 ED B0 30 */	lwz r7, "kp_cl_stick_max"-_SDA_BASE_(r13)
 /* 803D1ED4 003CDB74  7D 89 03 A6 */	mtctr r12
-/* 803D1ED8 003CDB78  4E 80 04 21 */	bctrl 
+/* 803D1ED8 003CDB78  4E 80 04 21 */	bctrl
 /* 803D1EDC 003CDB7C  7F EC FB 78 */	mr r12, r31
 /* 803D1EE0 003CDB80  38 7E 00 14 */	addi r3, r30, 0x14
 /* 803D1EE4 003CDB84  A8 9D 00 30 */	lha r4, 0x30(r29)
@@ -2303,7 +2303,7 @@ lbl_803D1EBC:
 /* 803D1EEC 003CDB8C  80 CD B0 2C */	lwz r6, "kp_cl_stick_min"-_SDA_BASE_(r13)
 /* 803D1EF0 003CDB90  80 ED B0 30 */	lwz r7, "kp_cl_stick_max"-_SDA_BASE_(r13)
 /* 803D1EF4 003CDB94  7D 89 03 A6 */	mtctr r12
-/* 803D1EF8 003CDB98  4E 80 04 21 */	bctrl 
+/* 803D1EF8 003CDB98  4E 80 04 21 */	bctrl
 /* 803D1EFC 003CDB9C  80 AD B0 34 */	lwz r5, "kp_cl_trigger_min"-_SDA_BASE_(r13)
 /* 803D1F00 003CDBA0  88 1D 00 34 */	lbz r0, 0x34(r29)
 /* 803D1F04 003CDBA4  80 8D B0 38 */	lwz r4, "kp_cl_trigger_max"-_SDA_BASE_(r13)
@@ -2368,7 +2368,7 @@ lbl_803D1FCC:
 /* 803D1FD8 003CDC78  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803D1FDC 003CDC7C  7C 08 03 A6 */	mtlr r0
 /* 803D1FE0 003CDC80  38 21 00 30 */	addi r1, r1, 0x30
-/* 803D1FE4 003CDC84  4E 80 00 20 */	blr 
+/* 803D1FE4 003CDC84  4E 80 00 20 */	blr
 
 .global "KPADRead"
 "KPADRead":
@@ -2421,7 +2421,7 @@ lbl_803D2048:
 /* 803D209C 003CDD3C  38 80 00 01 */	li r4, 1
 /* 803D20A0 003CDD40  81 9F 04 D8 */	lwz r12, 0x4d8(r31)
 /* 803D20A4 003CDD44  7D 89 03 A6 */	mtctr r12
-/* 803D20A8 003CDD48  4E 80 04 21 */	bctrl 
+/* 803D20A8 003CDD48  4E 80 04 21 */	bctrl
 /* 803D20AC 003CDD4C  38 00 00 00 */	li r0, 0
 /* 803D20B0 003CDD50  98 1F 05 22 */	stb r0, 0x522(r31)
 lbl_803D20B4:
@@ -2862,7 +2862,7 @@ lbl_803D26E8:
 /* 803D26F0 003CE390  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 803D26F4 003CE394  7C 08 03 A6 */	mtlr r0
 /* 803D26F8 003CE398  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 803D26FC 003CE39C  4E 80 00 20 */	blr 
+/* 803D26FC 003CE39C  4E 80 00 20 */	blr
 
 .global "KPADInit"
 "KPADInit":
@@ -3104,7 +3104,7 @@ lbl_803D29F0:
 /* 803D2A4C 003CE6EC  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803D2A50 003CE6F0  7C 08 03 A6 */	mtlr r0
 /* 803D2A54 003CE6F4  38 21 00 90 */	addi r1, r1, 0x90
-/* 803D2A58 003CE6F8  4E 80 00 20 */	blr 
+/* 803D2A58 003CE6F8  4E 80 00 20 */	blr
 
 .global "KPADDisableDPD"
 "KPADDisableDPD":
@@ -3114,7 +3114,7 @@ lbl_803D29F0:
 /* 803D2A68 003CE708  38 63 D0 B0 */	addi r3, r3, "inside_kpads"@l
 /* 803D2A6C 003CE70C  7C 63 02 14 */	add r3, r3, r0
 /* 803D2A70 003CE710  98 83 05 20 */	stb r4, 0x520(r3)
-/* 803D2A74 003CE714  4E 80 00 20 */	blr 
+/* 803D2A74 003CE714  4E 80 00 20 */	blr
 
 .global "KPADEnableDPD"
 "KPADEnableDPD":
@@ -3124,7 +3124,7 @@ lbl_803D29F0:
 /* 803D2A84 003CE724  38 63 D0 B0 */	addi r3, r3, "inside_kpads"@l
 /* 803D2A88 003CE728  7C 63 02 14 */	add r3, r3, r0
 /* 803D2A8C 003CE72C  98 83 05 20 */	stb r4, 0x520(r3)
-/* 803D2A90 003CE730  4E 80 00 20 */	blr 
+/* 803D2A90 003CE730  4E 80 00 20 */	blr
 
 .global "KPADiSamplingCallback"
 "KPADiSamplingCallback":
@@ -3227,7 +3227,7 @@ lbl_803D2BA8:
 /* 803D2BE8 003CE888  38 80 00 00 */	li r4, 0
 /* 803D2BEC 003CE88C  81 9F 04 D8 */	lwz r12, 0x4d8(r31)
 /* 803D2BF0 003CE890  7D 89 03 A6 */	mtctr r12
-/* 803D2BF4 003CE894  4E 80 04 21 */	bctrl 
+/* 803D2BF4 003CE894  4E 80 04 21 */	bctrl
 /* 803D2BF8 003CE898  38 00 00 00 */	li r0, 0
 /* 803D2BFC 003CE89C  98 1F 05 23 */	stb r0, 0x523(r31)
 lbl_803D2C00:
@@ -3259,7 +3259,7 @@ lbl_803D2C54:
 /* 803D2C5C 003CE8FC  41 82 00 10 */	beq lbl_803D2C6C
 /* 803D2C60 003CE900  7F C3 F3 78 */	mr r3, r30
 /* 803D2C64 003CE904  7D 89 03 A6 */	mtctr r12
-/* 803D2C68 003CE908  4E 80 04 21 */	bctrl 
+/* 803D2C68 003CE908  4E 80 04 21 */	bctrl
 lbl_803D2C6C:
 /* 803D2C6C 003CE90C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D2C70 003CE910  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -3268,7 +3268,7 @@ lbl_803D2C6C:
 /* 803D2C7C 003CE91C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803D2C80 003CE920  7C 08 03 A6 */	mtlr r0
 /* 803D2C84 003CE924  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D2C88 003CE928  4E 80 00 20 */	blr 
+/* 803D2C88 003CE928  4E 80 00 20 */	blr
 
 .global "KPADiControlDpdCallback"
 "KPADiControlDpdCallback":
@@ -3293,7 +3293,7 @@ lbl_803D2C6C:
 /* 803D2CD4 003CE974  98 1F 05 23 */	stb r0, 0x523(r31)
 /* 803D2CD8 003CE978  81 9F 04 D8 */	lwz r12, 0x4d8(r31)
 /* 803D2CDC 003CE97C  7D 89 03 A6 */	mtctr r12
-/* 803D2CE0 003CE980  4E 80 04 21 */	bctrl 
+/* 803D2CE0 003CE980  4E 80 04 21 */	bctrl
 /* 803D2CE4 003CE984  38 00 00 00 */	li r0, 0
 /* 803D2CE8 003CE988  98 1F 05 22 */	stb r0, 0x522(r31)
 lbl_803D2CEC:
@@ -3303,13 +3303,20 @@ lbl_803D2CEC:
 /* 803D2CF8 003CE998  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D2CFC 003CE99C  7C 08 03 A6 */	mtlr r0
 /* 803D2D00 003CE9A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D2D04 003CE9A4  4E 80 00 20 */	blr 
+/* 803D2D04 003CE9A4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x471348, 0x4C
+	# ROM: 0x471348
+	.asciz "<< RVL_SDK - KPAD \trelease build: May 17 2007 15:52:00 (0x4199_60831) >>"
+	.byte 0x00, 0x00, 0x00
+
 .global "table$3635"
 "table$3635":
-	.incbin "baserom.dol", 0x471394, 0xC
+	# ROM: 0x471394
+	.4byte 0x00010302
+	.4byte 0x00040105
+	.4byte 0x00070108
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "inside_kpads"
@@ -3319,85 +3326,140 @@ lbl_803D2CEC:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__KPADVersion"
 "__KPADVersion":
-	.incbin "baserom.dol", 0x487238, 0x4
+	# ROM: 0x487238
+	.4byte 0x80475248 ;# ptr
+
 .global "idist_org"
 "idist_org":
-	.incbin "baserom.dol", 0x48723C, 0x4
+	# ROM: 0x48723C
+	.4byte 0x3F800000
+
 .global "iaccXY_nrm_hori"
 "iaccXY_nrm_hori":
-	.incbin "baserom.dol", 0x487240, 0x4
+	# ROM: 0x487240
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D76C4
 lbl_805D76C4:
-	.incbin "baserom.dol", 0x487244, 0x4
+	# ROM: 0x487244
+	.4byte 0xBF800000
+
 .global "isec_nrm_hori"
 "isec_nrm_hori":
-	.incbin "baserom.dol", 0x487248, 0x4
+	# ROM: 0x487248
+	.4byte 0x3F800000
+
 .global lbl_805D76CC
 lbl_805D76CC:
-	.incbin "baserom.dol", 0x48724C, 0x4
+	# ROM: 0x48724C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global "kp_obj_interval"
 "kp_obj_interval":
-	.incbin "baserom.dol", 0x487250, 0x4
+	# ROM: 0x487250
+	.4byte 0x3E4CCCCD
+
 .global "kp_acc_horizon_pw"
 "kp_acc_horizon_pw":
-	.incbin "baserom.dol", 0x487254, 0x4
+	# ROM: 0x487254
+	.4byte 0x3D4CCCCD
+
 .global "kp_ah_circle_radius"
 "kp_ah_circle_radius":
-	.incbin "baserom.dol", 0x487258, 0x4
+	# ROM: 0x487258
+	.4byte 0x3D8F5C29
+
 .global "kp_ah_circle_pw"
 "kp_ah_circle_pw":
-	.incbin "baserom.dol", 0x48725C, 0x4
+	# ROM: 0x48725C
+	.4byte 0x3D75C28F
+
 .global "kp_ah_circle_ct"
 "kp_ah_circle_ct":
-	.incbin "baserom.dol", 0x487260, 0x4
+	# ROM: 0x487260
+	.4byte 0x00640000
+
 .global "kp_err_outside_frame"
 "kp_err_outside_frame":
-	.incbin "baserom.dol", 0x487264, 0x4
+	# ROM: 0x487264
+	.4byte 0x3D4CCCCD
+
 .global "kp_err_dist_max"
 "kp_err_dist_max":
-	.incbin "baserom.dol", 0x487268, 0x4
+	# ROM: 0x487268
+	.4byte 0x40400000
+
 .global "kp_err_dist_speed"
 "kp_err_dist_speed":
-	.incbin "baserom.dol", 0x48726C, 0x4
+	# ROM: 0x48726C
+	.4byte 0x3D23D70A
+
 .global "kp_err_first_inpr"
 "kp_err_first_inpr":
-	.incbin "baserom.dol", 0x487270, 0x4
+	# ROM: 0x487270
+	.4byte 0x3F666666
+
 .global "kp_err_next_inpr"
 "kp_err_next_inpr":
-	.incbin "baserom.dol", 0x487274, 0x4
+	# ROM: 0x487274
+	.4byte 0x3F666666
+
 .global "kp_err_acc_inpr"
 "kp_err_acc_inpr":
-	.incbin "baserom.dol", 0x487278, 0x4
+	# ROM: 0x487278
+	.4byte 0x3F666666
+
 .global "kp_err_up_inpr"
 "kp_err_up_inpr":
-	.incbin "baserom.dol", 0x48727C, 0x4
+	# ROM: 0x48727C
+	.4byte 0x3F333333
+
 .global "kp_err_near_pos"
 "kp_err_near_pos":
-	.incbin "baserom.dol", 0x487280, 0x4
+	# ROM: 0x487280
+	.4byte 0x3DCCCCCD
+
 .global "kp_fs_fstick_min"
 "kp_fs_fstick_min":
-	.incbin "baserom.dol", 0x487284, 0x4
+	# ROM: 0x487284
+	.4byte 0x0000000F
+
 .global "kp_fs_fstick_max"
 "kp_fs_fstick_max":
-	.incbin "baserom.dol", 0x487288, 0x4
+	# ROM: 0x487288
+	.4byte 0x00000047
+
 .global "kp_cl_stick_min"
 "kp_cl_stick_min":
-	.incbin "baserom.dol", 0x48728C, 0x4
+	# ROM: 0x48728C
+	.4byte 0x0000003C
+
 .global "kp_cl_stick_max"
 "kp_cl_stick_max":
-	.incbin "baserom.dol", 0x487290, 0x4
+	# ROM: 0x487290
+	.4byte 0x00000134
+
 .global "kp_cl_trigger_min"
 "kp_cl_trigger_min":
-	.incbin "baserom.dol", 0x487294, 0x4
+	# ROM: 0x487294
+	.4byte 0x0000001E
+
 .global "kp_cl_trigger_max"
 "kp_cl_trigger_max":
-	.incbin "baserom.dol", 0x487298, 0x4
+	# ROM: 0x487298
+	.4byte 0x000000B4
+
 .global "kp_rm_acc_max"
 "kp_rm_acc_max":
-	.incbin "baserom.dol", 0x48729C, 0x4
+	# ROM: 0x48729C
+	.4byte 0x4059999A
+
 .global "kp_fs_acc_max"
 "kp_fs_acc_max":
-	.incbin "baserom.dol", 0x4872A0, 0x8
+	# ROM: 0x4872A0
+	.4byte 0x40066666
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "icenter_org"
@@ -3425,70 +3487,119 @@ lbl_805D8D5C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBCB8
 lbl_805DBCB8:
-	.incbin "baserom.dol", 0x489FD8, 0x4
+	# ROM: 0x489FD8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBCBC
 lbl_805DBCBC:
-	.incbin "baserom.dol", 0x489FDC, 0x4
+	# ROM: 0x489FDC
+	.4byte 0x3F000000
+
 .global lbl_805DBCC0
 lbl_805DBCC0:
-	.incbin "baserom.dol", 0x489FE0, 0x4
+	# ROM: 0x489FE0
+	.4byte 0x3EC489D2
+
 .global lbl_805DBCC4
 lbl_805DBCC4:
-	.incbin "baserom.dol", 0x489FE4, 0x4
+	# ROM: 0x489FE4
+	.4byte 0xBF800000
+
 .global lbl_805DBCC8
 lbl_805DBCC8:
-	.incbin "baserom.dol", 0x489FE8, 0x4
+	# ROM: 0x489FE8
+	.4byte 0x3F800000
+
 .global lbl_805DBCCC
 lbl_805DBCCC:
-	.incbin "baserom.dol", 0x489FEC, 0x4
+	# ROM: 0x489FEC
+	.4byte 0xBF400000
+
 .global lbl_805DBCD0
 lbl_805DBCD0:
-	.incbin "baserom.dol", 0x489FF0, 0x4
+	# ROM: 0x489FF0
+	.4byte 0x3F400000
+
 .global lbl_805DBCD4
 lbl_805DBCD4:
-	.incbin "baserom.dol", 0x489FF4, 0x4
+	# ROM: 0x489FF4
+	.4byte 0xBE4CCCCD
+
 .global lbl_805DBCD8
 lbl_805DBCD8:
-	.incbin "baserom.dol", 0x489FF8, 0x4
+	# ROM: 0x489FF8
+	.4byte 0x3E4CCCCD
+
 .global lbl_805DBCDC
 lbl_805DBCDC:
-	.incbin "baserom.dol", 0x489FFC, 0x4
+	# ROM: 0x489FFC
+	.4byte 0x40000000
+
 .global lbl_805DBCE0
 lbl_805DBCE0:
-	.incbin "baserom.dol", 0x48A000, 0x8
+	# ROM: 0x48A000
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBCE8
 lbl_805DBCE8:
-	.incbin "baserom.dol", 0x48A008, 0x4
+	# ROM: 0x48A008
+	.4byte 0x3B000000
+
 .global lbl_805DBCEC
 lbl_805DBCEC:
-	.incbin "baserom.dol", 0x48A00C, 0x4
+	# ROM: 0x48A00C
+	.4byte 0x3F7FC000
+
 .global lbl_805DBCF0
 lbl_805DBCF0:
-	.incbin "baserom.dol", 0x48A010, 0x4
+	# ROM: 0x48A010
+	.4byte 0x3F3FC000
+
 .global lbl_805DBCF4
 lbl_805DBCF4:
-	.incbin "baserom.dol", 0x48A014, 0x2
+	# ROM: 0x48A014
+	.byte 0x00, 0x01
+
 .global lbl_805DBCF6
 lbl_805DBCF6:
-	.incbin "baserom.dol", 0x48A016, 0x2
+	# ROM: 0x48A016
+	.byte 0x00, 0x01
+
 .global lbl_805DBCF8
 lbl_805DBCF8:
-	.incbin "baserom.dol", 0x48A018, 0x4
+	# ROM: 0x48A018
+	.4byte 0x00010000
+
 .global lbl_805DBCFC
 lbl_805DBCFC:
-	.incbin "baserom.dol", 0x48A01C, 0x2
+	# ROM: 0x48A01C
+	.byte 0x00, 0x01
+
 .global lbl_805DBCFE
 lbl_805DBCFE:
-	.incbin "baserom.dol", 0x48A01E, 0x2
+	# ROM: 0x48A01E
+	.byte 0x00, 0x01
+
 .global lbl_805DBD00
 lbl_805DBD00:
-	.incbin "baserom.dol", 0x48A020, 0x4
+	# ROM: 0x48A020
+	.4byte 0x00010000
+
 .global lbl_805DBD04
 lbl_805DBD04:
-	.incbin "baserom.dol", 0x48A024, 0x4
+	# ROM: 0x48A024
+	.4byte 0x3C23D70A
+
 .global lbl_805DBD08
 lbl_805DBD08:
-	.incbin "baserom.dol", 0x48A028, 0x8
+	# ROM: 0x48A028
+	.4byte 0x3BA3D70A
+	.4byte 0x00000000
+
 .global lbl_805DBD10
 lbl_805DBD10:
-	.incbin "baserom.dol", 0x48A030, 0x8
+	# ROM: 0x48A030
+	.4byte 0x43300000
+	.4byte 0x00000000
+

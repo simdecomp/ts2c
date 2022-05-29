@@ -30,7 +30,7 @@
 /* 803505D8 0034C278  90 09 00 A0 */	stw r0, 0xa0(r9)
 /* 803505DC 0034C27C  90 89 00 A4 */	stw r4, 0xa4(r9)
 /* 803505E0 0034C280  90 69 00 A8 */	stw r3, 0xa8(r9)
-/* 803505E4 0034C284  4E 80 00 20 */	blr 
+/* 803505E4 0034C284  4E 80 00 20 */	blr
 
 .global "gap_connect_ind"
 "gap_connect_ind":
@@ -141,7 +141,7 @@ lbl_8035075C:
 /* 80350764 0034C404  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80350768 0034C408  7C 08 03 A6 */	mtlr r0
 /* 8035076C 0034C40C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80350770 0034C410  4E 80 00 20 */	blr 
+/* 80350770 0034C410  4E 80 00 20 */	blr
 
 .global "gap_connect_cfm"
 "gap_connect_cfm":
@@ -216,7 +216,7 @@ lbl_8035085C:
 /* 80350868 0034C508  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 8035086C 0034C50C  38 80 01 01 */	li r4, 0x101
 /* 80350870 0034C510  7D 89 03 A6 */	mtctr r12
-/* 80350874 0034C514  4E 80 04 21 */	bctrl 
+/* 80350874 0034C514  4E 80 04 21 */	bctrl
 lbl_80350878:
 /* 80350878 0034C518  A3 DF 00 10 */	lhz r30, 0x10(r31)
 /* 8035087C 0034C51C  48 00 00 10 */	b lbl_8035088C
@@ -279,7 +279,7 @@ lbl_80350938:
 /* 80350940 0034C5E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80350944 0034C5E4  7C 08 03 A6 */	mtlr r0
 /* 80350948 0034C5E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035094C 0034C5EC  4E 80 00 20 */	blr 
+/* 8035094C 0034C5EC  4E 80 00 20 */	blr
 
 .global "gap_config_ind"
 "gap_config_ind":
@@ -365,13 +365,13 @@ lbl_80350A34:
 /* 80350A68 0034C708  81 9F 00 20 */	lwz r12, 0x20(r31)
 /* 80350A6C 0034C70C  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 80350A70 0034C710  7D 89 03 A6 */	mtctr r12
-/* 80350A74 0034C714  4E 80 04 21 */	bctrl 
+/* 80350A74 0034C714  4E 80 04 21 */	bctrl
 lbl_80350A78:
 /* 80350A78 0034C718  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80350A7C 0034C71C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80350A80 0034C720  7C 08 03 A6 */	mtlr r0
 /* 80350A84 0034C724  38 21 00 10 */	addi r1, r1, 0x10
-/* 80350A88 0034C728  4E 80 00 20 */	blr 
+/* 80350A88 0034C728  4E 80 00 20 */	blr
 
 .global "gap_config_cfm"
 "gap_config_cfm":
@@ -443,14 +443,14 @@ lbl_80350B44:
 /* 80350B78 0034C818  81 9F 00 20 */	lwz r12, 0x20(r31)
 /* 80350B7C 0034C81C  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 80350B80 0034C820  7D 89 03 A6 */	mtctr r12
-/* 80350B84 0034C824  4E 80 04 21 */	bctrl 
+/* 80350B84 0034C824  4E 80 04 21 */	bctrl
 /* 80350B88 0034C828  48 00 00 D8 */	b lbl_80350C60
 lbl_80350B8C:
 /* 80350B8C 0034C82C  81 9F 00 20 */	lwz r12, 0x20(r31)
 /* 80350B90 0034C830  38 80 01 01 */	li r4, 0x101
 /* 80350B94 0034C834  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 80350B98 0034C838  7D 89 03 A6 */	mtctr r12
-/* 80350B9C 0034C83C  4E 80 04 21 */	bctrl 
+/* 80350B9C 0034C83C  4E 80 04 21 */	bctrl
 /* 80350BA0 0034C840  A3 DF 00 10 */	lhz r30, 0x10(r31)
 /* 80350BA4 0034C844  48 00 00 10 */	b lbl_80350BB4
 lbl_80350BA8:
@@ -512,7 +512,7 @@ lbl_80350C60:
 /* 80350C68 0034C908  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80350C6C 0034C90C  7C 08 03 A6 */	mtlr r0
 /* 80350C70 0034C910  38 21 00 10 */	addi r1, r1, 0x10
-/* 80350C74 0034C914  4E 80 00 20 */	blr 
+/* 80350C74 0034C914  4E 80 00 20 */	blr
 
 .global "gap_disconnect_ind"
 "gap_disconnect_ind":
@@ -594,7 +594,7 @@ lbl_80350D80:
 /* 80350D84 0034CA24  38 80 01 01 */	li r4, 0x101
 /* 80350D88 0034CA28  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 80350D8C 0034CA2C  7D 89 03 A6 */	mtctr r12
-/* 80350D90 0034CA30  4E 80 04 21 */	bctrl 
+/* 80350D90 0034CA30  4E 80 04 21 */	bctrl
 /* 80350D94 0034CA34  A3 DF 00 10 */	lhz r30, 0x10(r31)
 /* 80350D98 0034CA38  48 00 00 10 */	b lbl_80350DA8
 lbl_80350D9C:
@@ -657,7 +657,7 @@ lbl_80350E54:
 /* 80350E60 0034CB00  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80350E64 0034CB04  7C 08 03 A6 */	mtlr r0
 /* 80350E68 0034CB08  38 21 00 20 */	addi r1, r1, 0x20
-/* 80350E6C 0034CB0C  4E 80 00 20 */	blr 
+/* 80350E6C 0034CB0C  4E 80 00 20 */	blr
 
 .global "gap_data_ind"
 "gap_data_ind":
@@ -727,7 +727,7 @@ lbl_80350F38:
 /* 80350F50 0034CBF0  38 80 01 02 */	li r4, 0x102
 /* 80350F54 0034CBF4  A0 7F 00 04 */	lhz r3, 4(r31)
 /* 80350F58 0034CBF8  7D 89 03 A6 */	mtctr r12
-/* 80350F5C 0034CBFC  4E 80 04 21 */	bctrl 
+/* 80350F5C 0034CBFC  4E 80 04 21 */	bctrl
 /* 80350F60 0034CC00  48 00 00 0C */	b lbl_80350F6C
 lbl_80350F64:
 /* 80350F64 0034CC04  7C 83 23 78 */	mr r3, r4
@@ -737,7 +737,7 @@ lbl_80350F6C:
 /* 80350F70 0034CC10  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80350F74 0034CC14  7C 08 03 A6 */	mtlr r0
 /* 80350F78 0034CC18  38 21 00 10 */	addi r1, r1, 0x10
-/* 80350F7C 0034CC1C  4E 80 00 20 */	blr 
+/* 80350F7C 0034CC1C  4E 80 00 20 */	blr
 
 .global "gap_congestion_ind"
 "gap_congestion_ind":
@@ -818,30 +818,44 @@ lbl_80351070:
 /* 8035108C 0034CD2C  38 04 01 04 */	addi r0, r4, 0x104
 /* 80351090 0034CD30  54 04 04 3E */	clrlwi r4, r0, 0x10
 /* 80351094 0034CD34  7D 89 03 A6 */	mtctr r12
-/* 80351098 0034CD38  4E 80 04 21 */	bctrl 
+/* 80351098 0034CD38  4E 80 04 21 */	bctrl
 lbl_8035109C:
 /* 8035109C 0034CD3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803510A0 0034CD40  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803510A4 0034CD44  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803510A8 0034CD48  7C 08 03 A6 */	mtlr r0
 /* 803510AC 0034CD4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803510B0 0034CD50  4E 80 00 20 */	blr 
+/* 803510B0 0034CD50  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80462E38
 lbl_80462E38:
-	.incbin "baserom.dol", 0x45EF38, 0x44
+	# ROM: 0x45EF38
+	.asciz "WARNING: GAP Conn Indication for Unexpected Bd Addr...Disconnecting"
+
 .global lbl_80462E7C
 lbl_80462E7C:
-	.incbin "baserom.dol", 0x45EF7C, 0x2C
+	# ROM: 0x45EF7C
+	.asciz "GAP_CONN - Rcvd L2CAP conn ind, CID: 0x%x"
+	.byte 0x00, 0x00
+
 .global lbl_80462EA8
 lbl_80462EA8:
-	.incbin "baserom.dol", 0x45EFA8, 0x28
+	# ROM: 0x45EFA8
+	.asciz "GAP_CONN - Rcvd L2CAP disc, CID: 0x%x"
+	.byte 0x00, 0x00
+
 .global lbl_80462ED0
 lbl_80462ED0:
-	.incbin "baserom.dol", 0x45EFD0, 0x38
+	# ROM: 0x45EFD0
+	.asciz "GAP_CONN - Rcvd L2CAP Is Congested (%d), CID: 0x%x"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D72E0
 lbl_805D72E0:
-	.incbin "baserom.dol", 0x486E60, 0x8
+	# ROM: 0x486E60
+	.asciz "*******"
+

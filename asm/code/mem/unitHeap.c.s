@@ -97,7 +97,7 @@ lbl_803D3D10:
 /* 803D3D18 003CF9B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D3D1C 003CF9BC  7C 08 03 A6 */	mtlr r0
 /* 803D3D20 003CF9C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D3D24 003CF9C4  4E 80 00 20 */	blr 
+/* 803D3D24 003CF9C4  4E 80 00 20 */	blr
 
 .global "MEMAllocFromUnitHeap"
 "MEMAllocFromUnitHeap":
@@ -141,7 +141,7 @@ lbl_803D3DA0:
 /* 803D3DAC 003CFA4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D3DB0 003CFA50  7C 08 03 A6 */	mtlr r0
 /* 803D3DB4 003CFA54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3DB8 003CFA58  4E 80 00 20 */	blr 
+/* 803D3DB8 003CFA58  4E 80 00 20 */	blr
 
 .global "MEMFreeToUnitHeap"
 "MEMFreeToUnitHeap":
@@ -174,7 +174,7 @@ lbl_803D3E14:
 /* 803D3E1C 003CFABC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D3E20 003CFAC0  7C 08 03 A6 */	mtlr r0
 /* 803D3E24 003CFAC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3E28 003CFAC8  4E 80 00 20 */	blr 
+/* 803D3E28 003CFAC8  4E 80 00 20 */	blr
 
 .global "MEMCountFreeBlockForUnitHeap"
 "MEMCountFreeBlockForUnitHeap":
@@ -211,4 +211,4 @@ lbl_803D3E88:
 /* 803D3E94 003CFB34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D3E98 003CFB38  7C 08 03 A6 */	mtlr r0
 /* 803D3E9C 003CFB3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D3EA0 003CFB40  4E 80 00 20 */	blr 
+/* 803D3EA0 003CFB40  4E 80 00 20 */	blr

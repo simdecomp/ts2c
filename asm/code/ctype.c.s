@@ -14,7 +14,7 @@ lbl_80404EA4:
 /* 80404EA4 00400B44  2C 00 00 00 */	cmpwi r0, 0
 /* 80404EA8 00400B48  41 82 00 0C */	beq lbl_80404EB4
 /* 80404EAC 00400B4C  38 60 00 00 */	li r3, 0
-/* 80404EB0 00400B50  4E 80 00 20 */	blr 
+/* 80404EB0 00400B50  4E 80 00 20 */	blr
 lbl_80404EB4:
 /* 80404EB4 00400B54  3C 80 80 48 */	lis r4, "_current_locale"@ha
 /* 80404EB8 00400B58  54 60 08 3C */	slwi r0, r3, 1
@@ -23,7 +23,7 @@ lbl_80404EB4:
 /* 80404EC4 00400B64  80 63 00 08 */	lwz r3, 8(r3)
 /* 80404EC8 00400B68  7C 03 02 2E */	lhzx r0, r3, r0
 /* 80404ECC 00400B6C  70 03 00 09 */	andi. r3, r0, 9
-/* 80404ED0 00400B70  4E 80 00 20 */	blr 
+/* 80404ED0 00400B70  4E 80 00 20 */	blr
 
 .global "isxdigit"
 "isxdigit":
@@ -38,7 +38,7 @@ lbl_80404EEC:
 /* 80404EEC 00400B8C  2C 00 00 00 */	cmpwi r0, 0
 /* 80404EF0 00400B90  41 82 00 0C */	beq lbl_80404EFC
 /* 80404EF4 00400B94  38 60 00 00 */	li r3, 0
-/* 80404EF8 00400B98  4E 80 00 20 */	blr 
+/* 80404EF8 00400B98  4E 80 00 20 */	blr
 lbl_80404EFC:
 /* 80404EFC 00400B9C  3C 80 80 48 */	lis r4, "_current_locale"@ha
 /* 80404F00 00400BA0  54 60 08 3C */	slwi r0, r3, 1
@@ -47,7 +47,7 @@ lbl_80404EFC:
 /* 80404F0C 00400BAC  80 63 00 08 */	lwz r3, 8(r3)
 /* 80404F10 00400BB0  7C 03 02 2E */	lhzx r0, r3, r0
 /* 80404F14 00400BB4  54 03 05 6A */	rlwinm r3, r0, 0, 0x15, 0x15
-/* 80404F18 00400BB8  4E 80 00 20 */	blr 
+/* 80404F18 00400BB8  4E 80 00 20 */	blr
 
 .global "tolower"
 "tolower":
@@ -60,13 +60,13 @@ lbl_80404F30:
 /* 80404F30 00400BD0  38 00 00 01 */	li r0, 1
 lbl_80404F34:
 /* 80404F34 00400BD4  2C 00 00 00 */	cmpwi r0, 0
-/* 80404F38 00400BD8  4C 82 00 20 */	bnelr 
+/* 80404F38 00400BD8  4C 82 00 20 */	bnelr
 /* 80404F3C 00400BDC  3C 80 80 48 */	lis r4, "_current_locale"@ha
 /* 80404F40 00400BE0  38 84 7C E0 */	addi r4, r4, "_current_locale"@l
 /* 80404F44 00400BE4  80 84 00 38 */	lwz r4, 0x38(r4)
 /* 80404F48 00400BE8  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 80404F4C 00400BEC  7C 64 18 AE */	lbzx r3, r4, r3
-/* 80404F50 00400BF0  4E 80 00 20 */	blr 
+/* 80404F50 00400BF0  4E 80 00 20 */	blr
 
 .global "toupper"
 "toupper":
@@ -79,21 +79,280 @@ lbl_80404F68:
 /* 80404F68 00400C08  38 00 00 01 */	li r0, 1
 lbl_80404F6C:
 /* 80404F6C 00400C0C  2C 00 00 00 */	cmpwi r0, 0
-/* 80404F70 00400C10  4C 82 00 20 */	bnelr 
+/* 80404F70 00400C10  4C 82 00 20 */	bnelr
 /* 80404F74 00400C14  3C 80 80 48 */	lis r4, "_current_locale"@ha
 /* 80404F78 00400C18  38 84 7C E0 */	addi r4, r4, "_current_locale"@l
 /* 80404F7C 00400C1C  80 84 00 38 */	lwz r4, 0x38(r4)
 /* 80404F80 00400C20  80 84 00 0C */	lwz r4, 0xc(r4)
 /* 80404F84 00400C24  7C 64 18 AE */	lbzx r3, r4, r3
-/* 80404F88 00400C28  4E 80 00 20 */	blr 
+/* 80404F88 00400C28  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "__ctype_mapC"
 "__ctype_mapC":
-	.incbin "baserom.dol", 0x41B000, 0x200
+	# ROM: 0x41B000
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040106
+	.4byte 0x01040104
+	.4byte 0x01040104
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x00040004
+	.4byte 0x014200D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x04580458
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00651
+	.4byte 0x06510651
+	.4byte 0x06510651
+	.4byte 0x06510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x02510251
+	.4byte 0x025100D0
+	.4byte 0x00D000D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00471
+	.4byte 0x04710471
+	.4byte 0x04710471
+	.4byte 0x04710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x00710071
+	.4byte 0x007100D0
+	.4byte 0x00D000D0
+	.4byte 0x00D00004
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__lower_mapC"
 "__lower_mapC":
-	.incbin "baserom.dol", 0x41B200, 0x100
+	# ROM: 0x41B200
+	.4byte 0x00010203
+	.4byte 0x04050607
+	.4byte 0x08090A0B
+	.4byte 0x0C0D0E0F
+	.4byte 0x10111213
+	.4byte 0x14151617
+	.4byte 0x18191A1B
+	.4byte 0x1C1D1E1F
+	.4byte 0x20212223
+	.4byte 0x24252627
+	.4byte 0x28292A2B
+	.4byte 0x2C2D2E2F
+	.4byte 0x30313233
+	.4byte 0x34353637
+	.4byte 0x38393A3B
+	.4byte 0x3C3D3E3F
+	.4byte 0x40616263
+	.4byte 0x64656667
+	.4byte 0x68696A6B
+	.4byte 0x6C6D6E6F
+	.4byte 0x70717273
+	.4byte 0x74757677
+	.4byte 0x78797A5B
+	.4byte 0x5C5D5E5F
+	.4byte 0x60616263
+	.4byte 0x64656667
+	.4byte 0x68696A6B
+	.4byte 0x6C6D6E6F
+	.4byte 0x70717273
+	.4byte 0x74757677
+	.4byte 0x78797A7B
+	.4byte 0x7C7D7E7F
+	.4byte 0x80818283
+	.4byte 0x84858687
+	.4byte 0x88898A8B
+	.4byte 0x8C8D8E8F
+	.4byte 0x90919293
+	.4byte 0x94959697
+	.4byte 0x98999A9B
+	.4byte 0x9C9D9E9F
+	.4byte 0xA0A1A2A3
+	.4byte 0xA4A5A6A7
+	.4byte 0xA8A9AAAB
+	.4byte 0xACADAEAF
+	.4byte 0xB0B1B2B3
+	.4byte 0xB4B5B6B7
+	.4byte 0xB8B9BABB
+	.4byte 0xBCBDBEBF
+	.4byte 0xC0C1C2C3
+	.4byte 0xC4C5C6C7
+	.4byte 0xC8C9CACB
+	.4byte 0xCCCDCECF
+	.4byte 0xD0D1D2D3
+	.4byte 0xD4D5D6D7
+	.4byte 0xD8D9DADB
+	.4byte 0xDCDDDEDF
+	.4byte 0xE0E1E2E3
+	.4byte 0xE4E5E6E7
+	.4byte 0xE8E9EAEB
+	.4byte 0xECEDEEEF
+	.4byte 0xF0F1F2F3
+	.4byte 0xF4F5F6F7
+	.4byte 0xF8F9FAFB
+	.4byte 0xFCFDFEFF
+
 .global "__upper_mapC"
 "__upper_mapC":
-	.incbin "baserom.dol", 0x41B300, 0x100
+	# ROM: 0x41B300
+	.4byte 0x00010203
+	.4byte 0x04050607
+	.4byte 0x08090A0B
+	.4byte 0x0C0D0E0F
+	.4byte 0x10111213
+	.4byte 0x14151617
+	.4byte 0x18191A1B
+	.4byte 0x1C1D1E1F
+	.4byte 0x20212223
+	.4byte 0x24252627
+	.4byte 0x28292A2B
+	.4byte 0x2C2D2E2F
+	.4byte 0x30313233
+	.4byte 0x34353637
+	.4byte 0x38393A3B
+	.4byte 0x3C3D3E3F
+	.4byte 0x40414243
+	.4byte 0x44454647
+	.4byte 0x48494A4B
+	.4byte 0x4C4D4E4F
+	.4byte 0x50515253
+	.4byte 0x54555657
+	.4byte 0x58595A5B
+	.4byte 0x5C5D5E5F
+	.4byte 0x60414243
+	.4byte 0x44454647
+	.4byte 0x48494A4B
+	.4byte 0x4C4D4E4F
+	.4byte 0x50515253
+	.4byte 0x54555657
+	.4byte 0x58595A7B
+	.4byte 0x7C7D7E7F
+	.4byte 0x80818283
+	.4byte 0x84858687
+	.4byte 0x88898A8B
+	.4byte 0x8C8D8E8F
+	.4byte 0x90919293
+	.4byte 0x94959697
+	.4byte 0x98999A9B
+	.4byte 0x9C9D9E9F
+	.4byte 0xA0A1A2A3
+	.4byte 0xA4A5A6A7
+	.4byte 0xA8A9AAAB
+	.4byte 0xACADAEAF
+	.4byte 0xB0B1B2B3
+	.4byte 0xB4B5B6B7
+	.4byte 0xB8B9BABB
+	.4byte 0xBCBDBEBF
+	.4byte 0xC0C1C2C3
+	.4byte 0xC4C5C6C7
+	.4byte 0xC8C9CACB
+	.4byte 0xCCCDCECF
+	.4byte 0xD0D1D2D3
+	.4byte 0xD4D5D6D7
+	.4byte 0xD8D9DADB
+	.4byte 0xDCDDDEDF
+	.4byte 0xE0E1E2E3
+	.4byte 0xE4E5E6E7
+	.4byte 0xE8E9EAEB
+	.4byte 0xECEDEEEF
+	.4byte 0xF0F1F2F3
+	.4byte 0xF4F5F6F7
+	.4byte 0xF8F9FAFB
+	.4byte 0xFCFDFEFF
+

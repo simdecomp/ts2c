@@ -28,7 +28,7 @@ lbl_803A9058:
 /* 803A905C 003A4CFC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A9060 003A4D00  7C 08 03 A6 */	mtlr r0
 /* 803A9064 003A4D04  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A9068 003A4D08  4E 80 00 20 */	blr 
+/* 803A9068 003A4D08  4E 80 00 20 */	blr
 
 .global "IsAttachedSound__Q36nw4hbm3snd14SeqSoundHandleCFv"
 "IsAttachedSound__Q36nw4hbm3snd14SeqSoundHandleCFv":
@@ -36,4 +36,4 @@ lbl_803A9058:
 /* 803A9070 003A4D10  7C 03 00 D0 */	neg r0, r3
 /* 803A9074 003A4D14  7C 00 1B 78 */	or r0, r0, r3
 /* 803A9078 003A4D18  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803A907C 003A4D1C  4E 80 00 20 */	blr 
+/* 803A907C 003A4D1C  4E 80 00 20 */	blr

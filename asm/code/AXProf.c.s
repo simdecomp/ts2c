@@ -16,10 +16,10 @@
 /* 80339E9C 00335B3C  7C 00 20 50 */	subf r0, r0, r4
 /* 80339EA0 00335B40  90 0D C3 14 */	stw r0, "__AXCurrentProfile"-_SDA_BASE_(r13)
 /* 80339EA4 00335B44  7C 66 1A 14 */	add r3, r6, r3
-/* 80339EA8 00335B48  4E 80 00 20 */	blr 
+/* 80339EA8 00335B48  4E 80 00 20 */	blr
 lbl_80339EAC:
 /* 80339EAC 00335B4C  38 60 00 00 */	li r3, 0
-/* 80339EB0 00335B50  4E 80 00 20 */	blr 
+/* 80339EB0 00335B50  4E 80 00 20 */	blr
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__AXProfileInitialized"

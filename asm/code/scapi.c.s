@@ -25,7 +25,7 @@ lbl_803E9154:
 /* 803E9158 003E4DF8  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E915C 003E4DFC  7C 08 03 A6 */	mtlr r0
 /* 803E9160 003E4E00  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9164 003E4E04  4E 80 00 20 */	blr 
+/* 803E9164 003E4E04  4E 80 00 20 */	blr
 
 .global "SCGetDisplayOffsetH"
 "SCGetDisplayOffsetH":
@@ -60,7 +60,7 @@ lbl_803E91C0:
 /* 803E91CC 003E4E6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E91D0 003E4E70  7C 08 03 A6 */	mtlr r0
 /* 803E91D4 003E4E74  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E91D8 003E4E78  4E 80 00 20 */	blr 
+/* 803E91D8 003E4E78  4E 80 00 20 */	blr
 
 .global "SCGetIdleMode"
 "SCGetIdleMode":
@@ -99,7 +99,7 @@ lbl_803E9240:
 /* 803E9244 003E4EE4  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E9248 003E4EE8  7C 08 03 A6 */	mtlr r0
 /* 803E924C 003E4EEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9250 003E4EF0  4E 80 00 20 */	blr 
+/* 803E9250 003E4EF0  4E 80 00 20 */	blr
 
 .global "SCGetScreenSaverMode"
 "SCGetScreenSaverMode":
@@ -125,7 +125,7 @@ lbl_803E9294:
 /* 803E9298 003E4F38  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E929C 003E4F3C  7C 08 03 A6 */	mtlr r0
 /* 803E92A0 003E4F40  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E92A4 003E4F44  4E 80 00 20 */	blr 
+/* 803E92A4 003E4F44  4E 80 00 20 */	blr
 
 .global "SCGetSoundMode"
 "SCGetSoundMode":
@@ -155,7 +155,7 @@ lbl_803E92F8:
 /* 803E92FC 003E4F9C  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E9300 003E4FA0  7C 08 03 A6 */	mtlr r0
 /* 803E9304 003E4FA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9308 003E4FA8  4E 80 00 20 */	blr 
+/* 803E9308 003E4FA8  4E 80 00 20 */	blr
 
 .global "SCGetCounterBias"
 "SCGetCounterBias":
@@ -175,7 +175,7 @@ lbl_803E9338:
 /* 803E933C 003E4FDC  80 61 00 08 */	lwz r3, 8(r1)
 /* 803E9340 003E4FE0  7C 08 03 A6 */	mtlr r0
 /* 803E9344 003E4FE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9348 003E4FE8  4E 80 00 20 */	blr 
+/* 803E9348 003E4FE8  4E 80 00 20 */	blr
 
 .global "SCGetBtDeviceInfoArray"
 "SCGetBtDeviceInfoArray":
@@ -219,7 +219,7 @@ lbl_803E93B8:
 /* 803E93BC 003E505C  80 61 00 08 */	lwz r3, 8(r1)
 /* 803E93C0 003E5060  7C 08 03 A6 */	mtlr r0
 /* 803E93C4 003E5064  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E93C8 003E5068  4E 80 00 20 */	blr 
+/* 803E93C8 003E5068  4E 80 00 20 */	blr
 
 .global "SCGetWpadMotorMode"
 "SCGetWpadMotorMode":
@@ -245,7 +245,7 @@ lbl_803E940C:
 /* 803E9410 003E50B0  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E9414 003E50B4  7C 08 03 A6 */	mtlr r0
 /* 803E9418 003E50B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E941C 003E50BC  4E 80 00 20 */	blr 
+/* 803E941C 003E50BC  4E 80 00 20 */	blr
 
 .global "SCSetWpadMotorMode"
 "SCSetWpadMotorMode":
@@ -276,7 +276,7 @@ lbl_803E9468:
 /* 803E946C 003E510C  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E9470 003E5110  7C 08 03 A6 */	mtlr r0
 /* 803E9474 003E5114  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E9478 003E5118  4E 80 00 20 */	blr 
+/* 803E9478 003E5118  4E 80 00 20 */	blr
 
 .global "SCGetWpadSpeakerVolume"
 "SCGetWpadSpeakerVolume":
@@ -302,7 +302,7 @@ lbl_803E94BC:
 /* 803E94C0 003E5160  88 61 00 08 */	lbz r3, 8(r1)
 /* 803E94C4 003E5164  7C 08 03 A6 */	mtlr r0
 /* 803E94C8 003E5168  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E94CC 003E516C  4E 80 00 20 */	blr 
+/* 803E94CC 003E516C  4E 80 00 20 */	blr
 
 .global "SCSetWpadSpeakerVolume"
 "SCSetWpadSpeakerVolume":

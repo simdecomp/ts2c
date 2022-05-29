@@ -28,7 +28,7 @@ lbl_803B4048:
 /* 803B4054 003AFCF4  38 63 26 88 */	addi r3, r3, "instance$4994"@l
 /* 803B4058 003AFCF8  7C 08 03 A6 */	mtlr r0
 /* 803B405C 003AFCFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4060 003AFD00  4E 80 00 20 */	blr 
+/* 803B4060 003AFD00  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail11SoundThreadFv"
 "__dt__Q46nw4hbm3snd6detail11SoundThreadFv":
@@ -58,7 +58,7 @@ lbl_803B40B0:
 /* 803B40BC 003AFD5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B40C0 003AFD60  7C 08 03 A6 */	mtlr r0
 /* 803B40C4 003AFD64  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B40C8 003AFD68  4E 80 00 20 */	blr 
+/* 803B40C8 003AFD68  4E 80 00 20 */	blr
 
 .global "__dt__Q56nw4hbm3snd6detail9AxManager16CallbackListNodeFv"
 "__dt__Q56nw4hbm3snd6detail9AxManager16CallbackListNodeFv":
@@ -84,7 +84,7 @@ lbl_803B4108:
 /* 803B4114 003AFDB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4118 003AFDB8  7C 08 03 A6 */	mtlr r0
 /* 803B411C 003AFDBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4120 003AFDC0  4E 80 00 20 */	blr 
+/* 803B4120 003AFDC0  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
 "__dt__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv":
@@ -110,7 +110,7 @@ lbl_803B4160:
 /* 803B416C 003AFE0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4170 003AFE10  7C 08 03 A6 */	mtlr r0
 /* 803B4174 003AFE14  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4178 003AFE18  4E 80 00 20 */	blr 
+/* 803B4178 003AFE18  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail11SoundThreadFv"
 "__ct__Q46nw4hbm3snd6detail11SoundThreadFv":
@@ -130,7 +130,7 @@ lbl_803B4160:
 /* 803B41B0 003AFE50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B41B4 003AFE54  7C 08 03 A6 */	mtlr r0
 /* 803B41B8 003AFE58  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B41BC 003AFE5C  4E 80 00 20 */	blr 
+/* 803B41BC 003AFE5C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
 "__ct__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv":
@@ -145,7 +145,7 @@ lbl_803B4160:
 /* 803B41E0 003AFE80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B41E4 003AFE84  7C 08 03 A6 */	mtlr r0
 /* 803B41E8 003AFE88  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B41EC 003AFE8C  4E 80 00 20 */	blr 
+/* 803B41EC 003AFE8C  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm3snd6detail9AxManager16CallbackListNodeFv"
 "__ct__Q56nw4hbm3snd6detail9AxManager16CallbackListNodeFv":
@@ -160,7 +160,7 @@ lbl_803B4160:
 /* 803B4210 003AFEB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4214 003AFEB4  7C 08 03 A6 */	mtlr r0
 /* 803B4218 003AFEB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B421C 003AFEBC  4E 80 00 20 */	blr 
+/* 803B421C 003AFEBC  4E 80 00 20 */	blr
 
 .global "Create__Q46nw4hbm3snd6detail11SoundThreadFl"
 "Create__Q46nw4hbm3snd6detail11SoundThreadFl":
@@ -220,7 +220,7 @@ lbl_803B42DC:
 /* 803B42E4 003AFF84  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803B42E8 003AFF88  7C 08 03 A6 */	mtlr r0
 /* 803B42EC 003AFF8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B42F0 003AFF90  4E 80 00 20 */	blr 
+/* 803B42F0 003AFF90  4E 80 00 20 */	blr
 
 .global "CheckInit__Q46nw4hbm3snd6detail9AxManagerFv"
 "CheckInit__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -229,7 +229,7 @@ lbl_803B42DC:
 /* 803B42FC 003AFF9C  7C 03 00 D0 */	neg r0, r3
 /* 803B4300 003AFFA0  7C 00 1B 78 */	or r0, r0, r3
 /* 803B4304 003AFFA4  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 803B4308 003AFFA8  4E 80 00 20 */	blr 
+/* 803B4308 003AFFA8  4E 80 00 20 */	blr
 
 .global "AxCallback__Q46nw4hbm3snd6detail11SoundThreadFv"
 "AxCallback__Q46nw4hbm3snd6detail11SoundThreadFv":
@@ -246,7 +246,7 @@ lbl_803B42DC:
 /* 803B4334 003AFFD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4338 003AFFD8  7C 08 03 A6 */	mtlr r0
 /* 803B433C 003AFFDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4340 003AFFE0  4E 80 00 20 */	blr 
+/* 803B4340 003AFFE0  4E 80 00 20 */	blr
 
 .global "SoundThreadFunc__Q46nw4hbm3snd6detail11SoundThreadFPv"
 "SoundThreadFunc__Q46nw4hbm3snd6detail11SoundThreadFPv":
@@ -274,7 +274,7 @@ lbl_803B42DC:
 /* 803B4398 003B0038  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B439C 003B003C  7C 08 03 A6 */	mtlr r0
 /* 803B43A0 003B0040  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B43A4 003B0044  4E 80 00 20 */	blr 
+/* 803B43A4 003B0044  4E 80 00 20 */	blr
 
 .global "SoundThreadProc__Q46nw4hbm3snd6detail11SoundThreadFv"
 "SoundThreadProc__Q46nw4hbm3snd6detail11SoundThreadFv":
@@ -323,7 +323,7 @@ lbl_803B4424:
 /* 803B4448 003B00E8  81 83 00 08 */	lwz r12, 8(r3)
 /* 803B444C 003B00EC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803B4450 003B00F0  7D 89 03 A6 */	mtctr r12
-/* 803B4454 003B00F4  4E 80 04 21 */	bctrl 
+/* 803B4454 003B00F4  4E 80 04 21 */	bctrl
 lbl_803B4458:
 /* 803B4458 003B00F8  38 7E 23 84 */	addi r3, r30, 0x2384
 /* 803B445C 003B00FC  48 00 01 85 */	bl "GetEndIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
@@ -367,7 +367,7 @@ lbl_803B44CC:
 /* 803B44F0 003B0190  81 83 00 08 */	lwz r12, 8(r3)
 /* 803B44F4 003B0194  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803B44F8 003B0198  7D 89 03 A6 */	mtctr r12
-/* 803B44FC 003B019C  4E 80 04 21 */	bctrl 
+/* 803B44FC 003B019C  4E 80 04 21 */	bctrl
 lbl_803B4500:
 /* 803B4500 003B01A0  38 7E 23 84 */	addi r3, r30, 0x2384
 /* 803B4504 003B01A4  48 00 00 DD */	bl "GetEndIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
@@ -395,7 +395,7 @@ lbl_803B4538:
 /* 803B4558 003B01F8  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 803B455C 003B01FC  7C 08 03 A6 */	mtlr r0
 /* 803B4560 003B0200  38 21 00 50 */	addi r1, r1, 0x50
-/* 803B4564 003B0204  4E 80 00 20 */	blr 
+/* 803B4564 003B0204  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator":
@@ -414,7 +414,7 @@ lbl_803B4538:
 /* 803B4598 003B0238  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B459C 003B023C  7C 08 03 A6 */	mtlr r0
 /* 803B45A0 003B0240  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B45A4 003B0244  4E 80 00 20 */	blr 
+/* 803B45A4 003B0244  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator":
@@ -431,7 +431,7 @@ lbl_803B4538:
 /* 803B45D0 003B0270  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B45D4 003B0274  7C 08 03 A6 */	mtlr r0
 /* 803B45D8 003B0278  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B45DC 003B027C  4E 80 00 20 */	blr 
+/* 803B45DC 003B027C  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
 "GetEndIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv":
@@ -447,7 +447,7 @@ lbl_803B4538:
 /* 803B4604 003B02A4  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B4608 003B02A8  7C 08 03 A6 */	mtlr r0
 /* 803B460C 003B02AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4610 003B02B0  4E 80 00 20 */	blr 
+/* 803B4610 003B02B0  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -462,7 +462,7 @@ lbl_803B4538:
 /* 803B4634 003B02D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B4638 003B02D8  7C 08 03 A6 */	mtlr r0
 /* 803B463C 003B02DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4640 003B02E0  4E 80 00 20 */	blr 
+/* 803B4640 003B02E0  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorCFv":
@@ -474,7 +474,7 @@ lbl_803B4538:
 /* 803B4658 003B02F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B465C 003B02FC  7C 08 03 A6 */	mtlr r0
 /* 803B4660 003B0300  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4664 003B0304  4E 80 00 20 */	blr 
+/* 803B4664 003B0304  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -498,7 +498,7 @@ lbl_803B46A0:
 /* 803B46A8 003B0348  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B46AC 003B034C  7C 08 03 A6 */	mtlr r0
 /* 803B46B0 003B0350  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B46B4 003B0354  4E 80 00 20 */	blr 
+/* 803B46B4 003B0354  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFi"
 "__pp__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFi":
@@ -517,7 +517,7 @@ lbl_803B46A0:
 /* 803B46E8 003B0388  80 61 00 08 */	lwz r3, 8(r1)
 /* 803B46EC 003B038C  7C 08 03 A6 */	mtlr r0
 /* 803B46F0 003B0390  38 21 00 20 */	addi r1, r1, 0x20
-/* 803B46F4 003B0394  4E 80 00 20 */	blr 
+/* 803B46F4 003B0394  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFv"
 "__pp__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFv":
@@ -532,7 +532,7 @@ lbl_803B46A0:
 /* 803B4718 003B03B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B471C 003B03BC  7C 08 03 A6 */	mtlr r0
 /* 803B4720 003B03C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4724 003B03C4  4E 80 00 20 */	blr 
+/* 803B4724 003B03C4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFRCQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator"
 "__ct__Q46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8IteratorFRCQ46nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>8Iterator":
@@ -547,7 +547,7 @@ lbl_803B46A0:
 /* 803B4748 003B03E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B474C 003B03EC  7C 08 03 A6 */	mtlr r0
 /* 803B4750 003B03F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4754 003B03F4  4E 80 00 20 */	blr 
+/* 803B4754 003B03F4  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv"
 "GetBeginIter__Q36nw4hbm2ut54LinkList<Q56nw4hbm3snd6detail11SoundThread8Callback,0>Fv":
@@ -563,21 +563,30 @@ lbl_803B46A0:
 /* 803B477C 003B041C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803B4780 003B0420  7C 08 03 A6 */	mtlr r0
 /* 803B4784 003B0424  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B4788 003B0428  4E 80 00 20 */	blr 
+/* 803B4788 003B0428  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80471708
 lbl_80471708:
-	.incbin "baserom.dol", 0x46D808, 0x14
+	# ROM: 0x46D808
+	.asciz "snd_SoundThread.cpp"
+
 .global lbl_8047171C
 lbl_8047171C:
-	.incbin "baserom.dol", 0x46D81C, 0x24
+	# ROM: 0x46D81C
+	.asciz "not initialized nw4hbm::AxManager.\n"
+
 .global lbl_80471740
 lbl_80471740:
-	.incbin "baserom.dol", 0x46D840, 0x24
+	# ROM: 0x46D840
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_80471764
 lbl_80471764:
-	.incbin "baserom.dol", 0x46D864, 0xC
+	# ROM: 0x46D864
+	.asciz "LinkList.h"
+	.byte 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_805A2678

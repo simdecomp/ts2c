@@ -22,7 +22,7 @@ lbl_8027BE14:
 /* 8027BE14 00277AB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027BE18 00277AB8  7C 08 03 A6 */	mtlr r0
 /* 8027BE1C 00277ABC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027BE20 00277AC0  4E 80 00 20 */	blr 
+/* 8027BE20 00277AC0  4E 80 00 20 */	blr
 
 .global "ShutdownEffectsSystem__7EffectsFv"
 "ShutdownEffectsSystem__7EffectsFv":
@@ -44,7 +44,7 @@ lbl_8027BE58:
 /* 8027BE58 00277AF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027BE5C 00277AFC  7C 08 03 A6 */	mtlr r0
 /* 8027BE60 00277B00  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027BE64 00277B04  4E 80 00 20 */	blr 
+/* 8027BE64 00277B04  4E 80 00 20 */	blr
 
 .global "GetSingleton__Q27Effects14EffectsManagerFv"
 "GetSingleton__Q27Effects14EffectsManagerFv":
@@ -74,7 +74,7 @@ lbl_8027BEB8:
 /* 8027BEBC 00277B5C  80 6D BB 64 */	lwz r3, "s_pSingleton__Q27Effects14EffectsManager"-_SDA_BASE_(r13)
 /* 8027BEC0 00277B60  7C 08 03 A6 */	mtlr r0
 /* 8027BEC4 00277B64  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027BEC8 00277B68  4E 80 00 20 */	blr 
+/* 8027BEC8 00277B68  4E 80 00 20 */	blr
 
 .global "Initialize__Q27Effects14EffectsManagerFv"
 "Initialize__Q27Effects14EffectsManagerFv":
@@ -82,17 +82,17 @@ lbl_8027BEB8:
 /* 8027BED0 00277B70  2C 00 00 00 */	cmpwi r0, 0
 /* 8027BED4 00277B74  41 82 00 0C */	beq lbl_8027BEE0
 /* 8027BED8 00277B78  38 60 00 00 */	li r3, 0
-/* 8027BEDC 00277B7C  4E 80 00 20 */	blr 
+/* 8027BEDC 00277B7C  4E 80 00 20 */	blr
 lbl_8027BEE0:
 /* 8027BEE0 00277B80  38 00 00 01 */	li r0, 1
 /* 8027BEE4 00277B84  98 03 00 0C */	stb r0, 0xc(r3)
 /* 8027BEE8 00277B88  38 60 00 01 */	li r3, 1
-/* 8027BEEC 00277B8C  4E 80 00 20 */	blr 
+/* 8027BEEC 00277B8C  4E 80 00 20 */	blr
 
 .global "Shutdown__Q27Effects14EffectsManagerFv"
 "Shutdown__Q27Effects14EffectsManagerFv":
 /* 8027BEF0 00277B90  38 60 00 01 */	li r3, 1
-/* 8027BEF4 00277B94  4E 80 00 20 */	blr 
+/* 8027BEF4 00277B94  4E 80 00 20 */	blr
 
 .global "Update__Q27Effects14EffectsManagerFf"
 "Update__Q27Effects14EffectsManagerFf":
@@ -150,7 +150,7 @@ lbl_8027BFAC:
 /* 8027BFB8 00277C58  7F A4 EB 78 */	mr r4, r29
 /* 8027BFBC 00277C5C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8027BFC0 00277C60  7D 89 03 A6 */	mtctr r12
-/* 8027BFC4 00277C64  4E 80 04 21 */	bctrl 
+/* 8027BFC4 00277C64  4E 80 04 21 */	bctrl
 lbl_8027BFC8:
 /* 8027BFC8 00277C68  93 E1 00 08 */	stw r31, 8(r1)
 lbl_8027BFCC:
@@ -176,7 +176,7 @@ lbl_8027BFE4:
 /* 8027C014 00277CB4  38 80 00 01 */	li r4, 1
 /* 8027C018 00277CB8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8027C01C 00277CBC  7D 89 03 A6 */	mtctr r12
-/* 8027C020 00277CC0  4E 80 04 21 */	bctrl 
+/* 8027C020 00277CC0  4E 80 04 21 */	bctrl
 lbl_8027C024:
 /* 8027C024 00277CC4  7F E3 FB 78 */	mr r3, r31
 /* 8027C028 00277CC8  4B FD DF 85 */	bl "__dl__FPv"
@@ -204,7 +204,7 @@ lbl_8027C060:
 /* 8027C074 00277D14  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8027C078 00277D18  7C 08 03 A6 */	mtlr r0
 /* 8027C07C 00277D1C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8027C080 00277D20  4E 80 00 20 */	blr 
+/* 8027C080 00277D20  4E 80 00 20 */	blr
 
 .global "DeleteAll__Q27Effects14EffectsManagerFv"
 "DeleteAll__Q27Effects14EffectsManagerFv":
@@ -244,7 +244,7 @@ lbl_8027C0E4:
 /* 8027C100 00277DA0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8027C104 00277DA4  7C 08 03 A6 */	mtlr r0
 /* 8027C108 00277DA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027C10C 00277DAC  4E 80 00 20 */	blr 
+/* 8027C10C 00277DAC  4E 80 00 20 */	blr
 
 .global "CreateEffect__Q27Effects14EffectsManagerFR15REffectsEmitterPQ37Effects6Effect12ClientParams"
 "CreateEffect__Q27Effects14EffectsManagerFR15REffectsEmitterPQ37Effects6Effect12ClientParams":
@@ -303,7 +303,7 @@ lbl_8027C1A8:
 /* 8027C1CC 00277E6C  38 80 00 01 */	li r4, 1
 /* 8027C1D0 00277E70  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8027C1D4 00277E74  7D 89 03 A6 */	mtctr r12
-/* 8027C1D8 00277E78  4E 80 04 21 */	bctrl 
+/* 8027C1D8 00277E78  4E 80 04 21 */	bctrl
 lbl_8027C1DC:
 /* 8027C1DC 00277E7C  38 60 00 00 */	li r3, 0
 /* 8027C1E0 00277E80  48 00 00 14 */	b lbl_8027C1F4
@@ -319,7 +319,7 @@ lbl_8027C1F4:
 /* 8027C200 00277EA0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8027C204 00277EA4  7C 08 03 A6 */	mtlr r0
 /* 8027C208 00277EA8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027C20C 00277EAC  4E 80 00 20 */	blr 
+/* 8027C20C 00277EAC  4E 80 00 20 */	blr
 
 .global "DeleteEffect__Q27Effects14EffectsManagerFRQ27Effects6Effect"
 "DeleteEffect__Q27Effects14EffectsManagerFRQ27Effects6Effect":
@@ -357,18 +357,18 @@ lbl_8027C278:
 /* 8027C280 00277F20  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8027C284 00277F24  7C 08 03 A6 */	mtlr r0
 /* 8027C288 00277F28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027C28C 00277F2C  4E 80 00 20 */	blr 
+/* 8027C28C 00277F2C  4E 80 00 20 */	blr
 
 .global "ScheduleEffectForDeletion__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntry"
 "ScheduleEffectForDeletion__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntry":
 /* 8027C290 00277F30  88 04 00 04 */	lbz r0, 4(r4)
 /* 8027C294 00277F34  2C 00 00 00 */	cmpwi r0, 0
-/* 8027C298 00277F38  4C 82 00 20 */	bnelr 
+/* 8027C298 00277F38  4C 82 00 20 */	bnelr
 /* 8027C29C 00277F3C  38 00 00 01 */	li r0, 1
 /* 8027C2A0 00277F40  38 A3 00 1C */	addi r5, r3, 0x1c
 /* 8027C2A4 00277F44  98 04 00 04 */	stb r0, 4(r4)
 /* 8027C2A8 00277F48  48 00 00 B0 */	b "AddEntryToList__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntryR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>"
-/* 8027C2AC 00277F4C  4E 80 00 20 */	blr 
+/* 8027C2AC 00277F4C  4E 80 00 20 */	blr
 
 .global "AddEffect__Q27Effects14EffectsManagerFPQ27Effects6Effect"
 "AddEffect__Q27Effects14EffectsManagerFPQ27Effects6Effect":
@@ -404,7 +404,7 @@ lbl_8027C2F4:
 /* 8027C320 00277FC0  38 80 00 01 */	li r4, 1
 /* 8027C324 00277FC4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8027C328 00277FC8  7D 89 03 A6 */	mtctr r12
-/* 8027C32C 00277FCC  4E 80 04 21 */	bctrl 
+/* 8027C32C 00277FCC  4E 80 04 21 */	bctrl
 lbl_8027C330:
 /* 8027C330 00277FD0  7F E3 FB 78 */	mr r3, r31
 /* 8027C334 00277FD4  4B FD DC 79 */	bl "__dl__FPv"
@@ -416,7 +416,7 @@ lbl_8027C338:
 /* 8027C348 00277FE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8027C34C 00277FEC  7C 08 03 A6 */	mtlr r0
 /* 8027C350 00277FF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027C354 00277FF4  4E 80 00 20 */	blr 
+/* 8027C354 00277FF4  4E 80 00 20 */	blr
 
 .global "AddEntryToList__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntryR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>"
 "AddEntryToList__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntryR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>":
@@ -435,7 +435,7 @@ lbl_8027C380:
 /* 8027C380 00278020  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C384 00278024  7C 08 03 A6 */	mtlr r0
 /* 8027C388 00278028  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C38C 0027802C  4E 80 00 20 */	blr 
+/* 8027C38C 0027802C  4E 80 00 20 */	blr
 
 .global "RemoveEntryFromList__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntryR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>PP17NLIteratorPtrType"
 "RemoveEntryFromList__Q27Effects14EffectsManagerFPQ37Effects14EffectsManager11EffectEntryR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>PP17NLIteratorPtrType":
@@ -471,7 +471,7 @@ lbl_8027C3EC:
 /* 8027C3F0 00278090  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8027C3F4 00278094  7C 08 03 A6 */	mtlr r0
 /* 8027C3F8 00278098  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C3FC 0027809C  4E 80 00 20 */	blr 
+/* 8027C3FC 0027809C  4E 80 00 20 */	blr
 
 .global "FindEffectInList__Q27Effects14EffectsManagerFPQ27Effects6EffectR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>PP17NLIteratorPtrType"
 "FindEffectInList__Q27Effects14EffectsManagerFPQ27Effects6EffectR51TNodeList<PQ37Effects14EffectsManager11EffectEntry>PP17NLIteratorPtrType":
@@ -483,16 +483,16 @@ lbl_8027C408:
 /* 8027C410 002780B0  7C 00 20 40 */	cmplw r0, r4
 /* 8027C414 002780B4  40 82 00 14 */	bne lbl_8027C428
 /* 8027C418 002780B8  2C 06 00 00 */	cmpwi r6, 0
-/* 8027C41C 002780BC  4D 82 00 20 */	beqlr 
+/* 8027C41C 002780BC  4D 82 00 20 */	beqlr
 /* 8027C420 002780C0  90 A6 00 00 */	stw r5, 0(r6)
-/* 8027C424 002780C4  4E 80 00 20 */	blr 
+/* 8027C424 002780C4  4E 80 00 20 */	blr
 lbl_8027C428:
 /* 8027C428 002780C8  80 A5 00 08 */	lwz r5, 8(r5)
 lbl_8027C42C:
 /* 8027C42C 002780CC  2C 05 00 00 */	cmpwi r5, 0
 /* 8027C430 002780D0  40 82 FF D8 */	bne lbl_8027C408
 /* 8027C434 002780D4  38 60 00 00 */	li r3, 0
-/* 8027C438 002780D8  4E 80 00 20 */	blr 
+/* 8027C438 002780D8  4E 80 00 20 */	blr
 
 .global "ForEachActiveEffect__Q27Effects14EffectsManagerFRQ27Effects14EffectsVisitor"
 "ForEachActiveEffect__Q27Effects14EffectsManagerFRQ27Effects14EffectsVisitor":
@@ -516,7 +516,7 @@ lbl_8027C464:
 /* 8027C470 00278110  81 83 00 00 */	lwz r12, 0(r3)
 /* 8027C474 00278114  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 8027C478 00278118  7D 89 03 A6 */	mtctr r12
-/* 8027C47C 0027811C  4E 80 04 21 */	bctrl 
+/* 8027C47C 0027811C  4E 80 04 21 */	bctrl
 /* 8027C480 00278120  2C 03 00 00 */	cmpwi r3, 0
 /* 8027C484 00278124  40 82 00 08 */	bne lbl_8027C48C
 /* 8027C488 00278128  48 00 00 14 */	b lbl_8027C49C
@@ -532,12 +532,12 @@ lbl_8027C49C:
 /* 8027C4A4 00278144  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8027C4A8 00278148  7C 08 03 A6 */	mtlr r0
 /* 8027C4AC 0027814C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C4B0 00278150  4E 80 00 20 */	blr 
+/* 8027C4B0 00278150  4E 80 00 20 */	blr
 
 .global "GetData__51TNodeList<PQ37Effects14EffectsManager11EffectEntry>FP17NLIteratorPtrType"
 "GetData__51TNodeList<PQ37Effects14EffectsManager11EffectEntry>FP17NLIteratorPtrType":
 /* 8027C4B4 00278154  80 63 00 00 */	lwz r3, 0(r3)
-/* 8027C4B8 00278158  4E 80 00 20 */	blr 
+/* 8027C4B8 00278158  4E 80 00 20 */	blr
 
 .global "__dt__Q27Effects6EffectFv"
 "__dt__Q27Effects6EffectFv":
@@ -557,7 +557,7 @@ lbl_8027C4E4:
 /* 8027C4EC 0027818C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C4F0 00278190  7C 08 03 A6 */	mtlr r0
 /* 8027C4F4 00278194  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C4F8 00278198  4E 80 00 20 */	blr 
+/* 8027C4F8 00278198  4E 80 00 20 */	blr
 
 .global "InitModule__Q27Effects19FastParticleEmitterFv"
 "InitModule__Q27Effects19FastParticleEmitterFv":
@@ -608,7 +608,7 @@ lbl_8027C520:
 /* 8027C5A8 00278248  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C5AC 0027824C  7C 08 03 A6 */	mtlr r0
 /* 8027C5B0 00278250  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C5B4 00278254  4E 80 00 20 */	blr 
+/* 8027C5B4 00278254  4E 80 00 20 */	blr
 
 .global "__ct__Q27Effects19FastParticleEmitterFv"
 "__ct__Q27Effects19FastParticleEmitterFv":
@@ -638,7 +638,7 @@ lbl_8027C520:
 /* 8027C614 002782B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C618 002782B8  7C 08 03 A6 */	mtlr r0
 /* 8027C61C 002782BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C620 002782C0  4E 80 00 20 */	blr 
+/* 8027C620 002782C0  4E 80 00 20 */	blr
 
 .global "__ct__Q27Effects19FastParticleEmitterFRCQ37Effects6Effect12ClientParams"
 "__ct__Q27Effects19FastParticleEmitterFRCQ37Effects6Effect12ClientParams":
@@ -668,7 +668,7 @@ lbl_8027C520:
 /* 8027C680 00278320  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C684 00278324  7C 08 03 A6 */	mtlr r0
 /* 8027C688 00278328  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C68C 0027832C  4E 80 00 20 */	blr 
+/* 8027C68C 0027832C  4E 80 00 20 */	blr
 
 .global "__dt__Q27Effects19FastParticleEmitterFv"
 "__dt__Q27Effects19FastParticleEmitterFv":
@@ -731,7 +731,7 @@ lbl_8027C750:
 /* 8027C760 00278400  81 83 00 00 */	lwz r12, 0(r3)
 /* 8027C764 00278404  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 8027C768 00278408  7D 89 03 A6 */	mtctr r12
-/* 8027C76C 0027840C  4E 80 04 21 */	bctrl 
+/* 8027C76C 0027840C  4E 80 04 21 */	bctrl
 lbl_8027C770:
 /* 8027C770 00278410  2C 1E 00 00 */	cmpwi r30, 0
 /* 8027C774 00278414  40 81 00 10 */	ble lbl_8027C784
@@ -746,7 +746,7 @@ lbl_8027C784:
 /* 8027C794 00278434  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8027C798 00278438  7C 08 03 A6 */	mtlr r0
 /* 8027C79C 0027843C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027C7A0 00278440  4E 80 00 20 */	blr 
+/* 8027C7A0 00278440  4E 80 00 20 */	blr
 
 .global "FreeParticlePackets__Q27Effects19FastParticleEmitterFv"
 "FreeParticlePackets__Q27Effects19FastParticleEmitterFv":
@@ -794,7 +794,7 @@ lbl_8027C824:
 /* 8027C838 002784D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027C83C 002784DC  7C 08 03 A6 */	mtlr r0
 /* 8027C840 002784E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027C844 002784E4  4E 80 00 20 */	blr 
+/* 8027C844 002784E4  4E 80 00 20 */	blr
 
 .global "SharedInitPart2__Q27Effects19FastParticleEmitterFv"
 "SharedInitPart2__Q27Effects19FastParticleEmitterFv":
@@ -1110,7 +1110,7 @@ lbl_8027CCAC:
 /* 8027CCC0 00278960  81 83 00 00 */	lwz r12, 0(r3)
 /* 8027CCC4 00278964  81 8C 00 90 */	lwz r12, 0x90(r12)
 /* 8027CCC8 00278968  7D 89 03 A6 */	mtctr r12
-/* 8027CCCC 0027896C  4E 80 04 21 */	bctrl 
+/* 8027CCCC 0027896C  4E 80 04 21 */	bctrl
 /* 8027CCD0 00278970  90 7F 01 A8 */	stw r3, 0x1a8(r31)
 /* 8027CCD4 00278974  48 00 00 18 */	b lbl_8027CCEC
 lbl_8027CCD8:
@@ -1118,7 +1118,7 @@ lbl_8027CCD8:
 /* 8027CCDC 0027897C  38 81 00 08 */	addi r4, r1, 8
 /* 8027CCE0 00278980  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8027CCE4 00278984  7D 89 03 A6 */	mtctr r12
-/* 8027CCE8 00278988  4E 80 04 21 */	bctrl 
+/* 8027CCE8 00278988  4E 80 04 21 */	bctrl
 lbl_8027CCEC:
 /* 8027CCEC 0027898C  38 61 00 34 */	addi r3, r1, 0x34
 /* 8027CCF0 00278990  38 80 FF FF */	li r4, -1
@@ -1130,7 +1130,7 @@ lbl_8027CCFC:
 /* 8027CD04 002789A4  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 8027CD08 002789A8  7C 08 03 A6 */	mtlr r0
 /* 8027CD0C 002789AC  38 21 00 50 */	addi r1, r1, 0x50
-/* 8027CD10 002789B0  4E 80 00 20 */	blr 
+/* 8027CD10 002789B0  4E 80 00 20 */	blr
 
 .global "PreRollParticles__Q27Effects19FastParticleEmitterFv"
 "PreRollParticles__Q27Effects19FastParticleEmitterFv":
@@ -1279,7 +1279,7 @@ lbl_8027CEEC:
 /* 8027CF28 00278BC8  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8027CF2C 00278BCC  7C 08 03 A6 */	mtlr r0
 /* 8027CF30 00278BD0  38 21 00 80 */	addi r1, r1, 0x80
-/* 8027CF34 00278BD4  4E 80 00 20 */	blr 
+/* 8027CF34 00278BD4  4E 80 00 20 */	blr
 
 .global "AllocateParticlePackets__Q27Effects19FastParticleEmitterFi"
 "AllocateParticlePackets__Q27Effects19FastParticleEmitterFi":
@@ -1318,7 +1318,7 @@ lbl_8027CF9C:
 /* 8027CFA8 00278C48  B0 03 01 6A */	sth r0, 0x16a(r3)
 /* 8027CFAC 00278C4C  B0 03 01 68 */	sth r0, 0x168(r3)
 /* 8027CFB0 00278C50  38 60 00 00 */	li r3, 0
-/* 8027CFB4 00278C54  4E 80 00 20 */	blr 
+/* 8027CFB4 00278C54  4E 80 00 20 */	blr
 lbl_8027CFB8:
 /* 8027CFB8 00278C58  80 A3 01 8C */	lwz r5, 0x18c(r3)
 /* 8027CFBC 00278C5C  80 05 00 48 */	lwz r0, 0x48(r5)
@@ -1354,7 +1354,7 @@ lbl_8027D028:
 /* 8027D02C 00278CCC  B0 83 01 68 */	sth r4, 0x168(r3)
 /* 8027D030 00278CD0  B0 03 01 6A */	sth r0, 0x16a(r3)
 /* 8027D034 00278CD4  38 60 00 01 */	li r3, 1
-/* 8027D038 00278CD8  4E 80 00 20 */	blr 
+/* 8027D038 00278CD8  4E 80 00 20 */	blr
 
 .global "Init__Q27Effects19FastParticleEmitterFR15REffectsEmitter"
 "Init__Q27Effects19FastParticleEmitterFR15REffectsEmitter":
@@ -1402,7 +1402,7 @@ lbl_8027D0CC:
 /* 8027D0D4 00278D74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8027D0D8 00278D78  7C 08 03 A6 */	mtlr r0
 /* 8027D0DC 00278D7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027D0E0 00278D80  4E 80 00 20 */	blr 
+/* 8027D0E0 00278D80  4E 80 00 20 */	blr
 
 .global "UpdateBurst__Q27Effects19FastParticleEmitterFifPiR5EVec3"
 "UpdateBurst__Q27Effects19FastParticleEmitterFifPiR5EVec3":
@@ -1530,7 +1530,7 @@ lbl_8027D29C:
 /* 8027D2A8 00278F48  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8027D2AC 00278F4C  7C 08 03 A6 */	mtlr r0
 /* 8027D2B0 00278F50  38 21 00 40 */	addi r1, r1, 0x40
-/* 8027D2B4 00278F54  4E 80 00 20 */	blr 
+/* 8027D2B4 00278F54  4E 80 00 20 */	blr
 
 .global "AddBurst__Q27Effects19FastParticleEmitterFifR5EVec3"
 "AddBurst__Q27Effects19FastParticleEmitterFifR5EVec3":
@@ -2156,7 +2156,7 @@ lbl_8027DB78:
 /* 8027DBE0 00279880  80 01 01 C4 */	lwz r0, 0x1c4(r1)
 /* 8027DBE4 00279884  7C 08 03 A6 */	mtlr r0
 /* 8027DBE8 00279888  38 21 01 C0 */	addi r1, r1, 0x1c0
-/* 8027DBEC 0027988C  4E 80 00 20 */	blr 
+/* 8027DBEC 0027988C  4E 80 00 20 */	blr
 
 .global "RotateEmitter__Q27Effects19FastParticleEmitterFf"
 "RotateEmitter__Q27Effects19FastParticleEmitterFf":
@@ -2194,7 +2194,7 @@ lbl_8027DC3C:
 /* 8027DC68 00279908  D0 05 00 28 */	stfs f0, 0x28(r5)
 /* 8027DC6C 0027990C  D0 05 00 14 */	stfs f0, 0x14(r5)
 /* 8027DC70 00279910  D0 05 00 00 */	stfs f0, 0(r5)
-/* 8027DC74 00279914  4E 80 00 20 */	blr 
+/* 8027DC74 00279914  4E 80 00 20 */	blr
 
 .global "InitParticlePool__Q27Effects19FastParticleEmitterFv"
 "InitParticlePool__Q27Effects19FastParticleEmitterFv":
@@ -2226,7 +2226,7 @@ lbl_8027DCD4:
 /* 8027DCD8 00279978  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027DCDC 0027997C  7C 08 03 A6 */	mtlr r0
 /* 8027DCE0 00279980  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027DCE4 00279984  4E 80 00 20 */	blr 
+/* 8027DCE4 00279984  4E 80 00 20 */	blr
 
 .global "ComputeCombinedMatrix__Q27Effects19FastParticleEmitterFv"
 "ComputeCombinedMatrix__Q27Effects19FastParticleEmitterFv":
@@ -2387,7 +2387,7 @@ lbl_8027DF34:
 /* 8027DF38 00279BD8  83 E1 00 5C */	lwz r31, 0x5c(r1)
 /* 8027DF3C 00279BDC  7C 08 03 A6 */	mtlr r0
 /* 8027DF40 00279BE0  38 21 00 60 */	addi r1, r1, 0x60
-/* 8027DF44 00279BE4  4E 80 00 20 */	blr 
+/* 8027DF44 00279BE4  4E 80 00 20 */	blr
 
 .global "Update__Q27Effects19FastParticleEmitterFfR5EVec3"
 "Update__Q27Effects19FastParticleEmitterFfR5EVec3":
@@ -2439,7 +2439,7 @@ lbl_8027DF98:
 /* 8027DFF8 00279C98  81 98 00 00 */	lwz r12, 0(r24)
 /* 8027DFFC 00279C9C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8027E000 00279CA0  7D 89 03 A6 */	mtctr r12
-/* 8027E004 00279CA4  4E 80 04 21 */	bctrl 
+/* 8027E004 00279CA4  4E 80 04 21 */	bctrl
 lbl_8027E008:
 /* 8027E008 00279CA8  80 78 01 8C */	lwz r3, 0x18c(r24)
 /* 8027E00C 00279CAC  3B E0 00 00 */	li r31, 0
@@ -2773,7 +2773,7 @@ lbl_8027E490:
 /* 8027E4B0 0027A150  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8027E4B4 0027A154  7C 08 03 A6 */	mtlr r0
 /* 8027E4B8 0027A158  38 21 00 70 */	addi r1, r1, 0x70
-/* 8027E4BC 0027A15C  4E 80 00 20 */	blr 
+/* 8027E4BC 0027A15C  4E 80 00 20 */	blr
 
 .global "Stop__Q27Effects19FastParticleEmitterFv"
 "Stop__Q27Effects19FastParticleEmitterFv":
@@ -2787,9 +2787,9 @@ lbl_8027E490:
 /* 8027E4DC 0027A17C  90 03 01 48 */	stw r0, 0x148(r3)
 /* 8027E4E0 0027A180  A8 04 00 44 */	lha r0, 0x44(r4)
 /* 8027E4E4 0027A184  2C 00 00 00 */	cmpwi r0, 0
-/* 8027E4E8 0027A188  4D 80 00 20 */	bltlr 
+/* 8027E4E8 0027A188  4D 80 00 20 */	bltlr
 /* 8027E4EC 0027A18C  90 03 01 60 */	stw r0, 0x160(r3)
-/* 8027E4F0 0027A190  4E 80 00 20 */	blr 
+/* 8027E4F0 0027A190  4E 80 00 20 */	blr
 
 .global "ComputeDispersionPositionAndVelocity__Q27Effects19FastParticleEmitterFPQ27Effects17FastParticleStatefff"
 "ComputeDispersionPositionAndVelocity__Q27Effects19FastParticleEmitterFPQ27Effects17FastParticleStatefff":
@@ -3513,7 +3513,7 @@ lbl_8027EF68:
 /* 8027EFB0 0027AC50  83 81 00 90 */	lwz r28, 0x90(r1)
 /* 8027EFB4 0027AC54  7C 08 03 A6 */	mtlr r0
 /* 8027EFB8 0027AC58  38 21 01 10 */	addi r1, r1, 0x110
-/* 8027EFBC 0027AC5C  4E 80 00 20 */	blr 
+/* 8027EFBC 0027AC5C  4E 80 00 20 */	blr
 
 .global "DieOnLastFrame_Lifetime__Q27Effects19FastParticleEmitterFPQ27Effects18FastParticlePacketUi"
 "DieOnLastFrame_Lifetime__Q27Effects19FastParticleEmitterFPQ27Effects18FastParticlePacketUi":
@@ -3571,7 +3571,7 @@ lbl_8027F084:
 /* 8027F084 0027AD24  FC 20 00 90 */	fmr f1, f0
 lbl_8027F088:
 /* 8027F088 0027AD28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8027F08C 0027AD2C  4E 80 00 20 */	blr 
+/* 8027F08C 0027AD2C  4E 80 00 20 */	blr
 
 .global "Render__Q27Effects19FastParticleEmitterFP3ERC"
 "Render__Q27Effects19FastParticleEmitterFP3ERC":
@@ -3626,14 +3626,14 @@ lbl_8027F088:
 /* 8027F144 0027ADE4  7F 43 D3 78 */	mr r3, r26
 /* 8027F148 0027ADE8  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 8027F14C 0027ADEC  7D 89 03 A6 */	mtctr r12
-/* 8027F150 0027ADF0  4E 80 04 21 */	bctrl 
+/* 8027F150 0027ADF0  4E 80 04 21 */	bctrl
 /* 8027F154 0027ADF4  80 79 01 A8 */	lwz r3, 0x1a8(r25)
 /* 8027F158 0027ADF8  7F 44 D3 78 */	mr r4, r26
 /* 8027F15C 0027ADFC  38 A0 00 00 */	li r5, 0
 /* 8027F160 0027AE00  81 83 00 00 */	lwz r12, 0(r3)
 /* 8027F164 0027AE04  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8027F168 0027AE08  7D 89 03 A6 */	mtctr r12
-/* 8027F16C 0027AE0C  4E 80 04 21 */	bctrl 
+/* 8027F16C 0027AE0C  4E 80 04 21 */	bctrl
 /* 8027F170 0027AE10  80 79 01 8C */	lwz r3, 0x18c(r25)
 /* 8027F174 0027AE14  80 03 00 4C */	lwz r0, 0x4c(r3)
 /* 8027F178 0027AE18  54 00 07 39 */	rlwinm. r0, r0, 0, 0x1c, 0x1c
@@ -3645,7 +3645,7 @@ lbl_8027F088:
 /* 8027F190 0027AE30  81 8C 00 F8 */	lwz r12, 0xf8(r12)
 /* 8027F194 0027AE34  38 C0 00 01 */	li r6, 1
 /* 8027F198 0027AE38  7D 89 03 A6 */	mtctr r12
-/* 8027F19C 0027AE3C  4E 80 04 21 */	bctrl 
+/* 8027F19C 0027AE3C  4E 80 04 21 */	bctrl
 lbl_8027F1A0:
 /* 8027F1A0 0027AE40  80 79 01 8C */	lwz r3, 0x18c(r25)
 /* 8027F1A4 0027AE44  80 63 00 4C */	lwz r3, 0x4c(r3)
@@ -4101,7 +4101,7 @@ lbl_8027F7F4:
 /* 8027F828 0027B4C8  39 20 00 00 */	li r9, 0
 /* 8027F82C 0027B4CC  39 40 00 00 */	li r10, 0
 /* 8027F830 0027B4D0  7D 89 03 A6 */	mtctr r12
-/* 8027F834 0027B4D4  4E 80 04 21 */	bctrl 
+/* 8027F834 0027B4D4  4E 80 04 21 */	bctrl
 lbl_8027F838:
 /* 8027F838 0027B4D8  80 79 01 8C */	lwz r3, 0x18c(r25)
 /* 8027F83C 0027B4DC  80 03 00 4C */	lwz r0, 0x4c(r3)
@@ -4114,7 +4114,7 @@ lbl_8027F838:
 /* 8027F858 0027B4F8  81 8C 00 F8 */	lwz r12, 0xf8(r12)
 /* 8027F85C 0027B4FC  38 C0 00 00 */	li r6, 0
 /* 8027F860 0027B500  7D 89 03 A6 */	mtctr r12
-/* 8027F864 0027B504  4E 80 04 21 */	bctrl 
+/* 8027F864 0027B504  4E 80 04 21 */	bctrl
 lbl_8027F868:
 /* 8027F868 0027B508  E3 E1 02 08 */	psq_l f31, 520(r1), 0, qr0
 /* 8027F86C 0027B50C  CB E1 02 00 */	lfd f31, 0x200(r1)
@@ -4143,7 +4143,7 @@ lbl_8027F868:
 /* 8027F8C8 0027B568  80 01 02 14 */	lwz r0, 0x214(r1)
 /* 8027F8CC 0027B56C  7C 08 03 A6 */	mtlr r0
 /* 8027F8D0 0027B570  38 21 02 10 */	addi r1, r1, 0x210
-/* 8027F8D4 0027B574  4E 80 00 20 */	blr 
+/* 8027F8D4 0027B574  4E 80 00 20 */	blr
 
 .global "RenderQuad__Q27Effects19FastParticleEmitterFP3ERCRQ27Effects16FastParticleQuadfR5EVec4fR5EVec4RCQ27Effects28FastParticleParticleInitDataRC5EMat4"
 "RenderQuad__Q27Effects19FastParticleEmitterFP3ERCRQ27Effects16FastParticleQuadfR5EVec4fR5EVec4RCQ27Effects28FastParticleParticleInitDataRC5EMat4":
@@ -4501,7 +4501,7 @@ lbl_8027FAF0:
 /* 8027FE3C 0027BADC  39 20 00 00 */	li r9, 0
 /* 8027FE40 0027BAE0  39 40 00 00 */	li r10, 0
 /* 8027FE44 0027BAE4  7D 89 03 A6 */	mtctr r12
-/* 8027FE48 0027BAE8  4E 80 04 21 */	bctrl 
+/* 8027FE48 0027BAE8  4E 80 04 21 */	bctrl
 lbl_8027FE4C:
 /* 8027FE4C 0027BAEC  E3 E1 01 18 */	psq_l f31, 280(r1), 0, qr0
 /* 8027FE50 0027BAF0  CB E1 01 10 */	lfd f31, 0x110(r1)
@@ -4522,7 +4522,7 @@ lbl_8027FE4C:
 /* 8027FE8C 0027BB2C  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 8027FE90 0027BB30  7C 08 03 A6 */	mtlr r0
 /* 8027FE94 0027BB34  38 21 01 20 */	addi r1, r1, 0x120
-/* 8027FE98 0027BB38  4E 80 00 20 */	blr 
+/* 8027FE98 0027BB38  4E 80 00 20 */	blr
 
 .global "Accept__Q27Effects19FastParticleEmitterFRQ27Effects14EffectsVisitor"
 "Accept__Q27Effects19FastParticleEmitterFRQ27Effects14EffectsVisitor":
@@ -4532,7 +4532,7 @@ lbl_8027FE4C:
 /* 8027FEA8 0027BB48  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8027FEAC 0027BB4C  7C 04 03 78 */	mr r4, r0
 /* 8027FEB0 0027BB50  7D 89 03 A6 */	mtctr r12
-/* 8027FEB4 0027BB54  4E 80 04 20 */	bctr 
+/* 8027FEB4 0027BB54  4E 80 04 20 */	bctr
 
 .global "__sinit_engine_effects2_unity_cpp"
 "__sinit_engine_effects2_unity_cpp":
@@ -4566,15 +4566,27 @@ lbl_8027FE4C:
 /* 8027FF24 0027BBC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027FF28 0027BBC8  7C 08 03 A6 */	mtlr r0
 /* 8027FF2C 0027BBCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027FF30 0027BBD0  4E 80 00 20 */	blr 
+/* 8027FF30 0027BBD0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_804501F0
 lbl_804501F0:
-	.incbin "baserom.dol", 0x44C2F0, 0x18
+	# ROM: 0x44C2F0
+	.asciz "Fast Particle Packets"
+	.byte 0x00, 0x00
+
 .global "__vt__Q27Effects19FastParticleEmitter"
 "__vt__Q27Effects19FastParticleEmitter":
-	.incbin "baserom.dol", 0x44C308, 0x20
+	# ROM: 0x44C308
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q27Effects19FastParticleEmitterFv" ;# ptr (0x8027C690)
+	.4byte "Update__Q27Effects19FastParticleEmitterFfR5EVec3" ;# ptr (0x8027DF48)
+	.4byte "Render__Q27Effects19FastParticleEmitterFP3ERC" ;# ptr (0x8027F090)
+	.4byte "Stop__Q27Effects19FastParticleEmitterFv" ;# ptr (0x8027E4C0)
+	.4byte "Accept__Q27Effects19FastParticleEmitterFRQ27Effects14EffectsVisitor" ;# ptr (0x8027FE9C)
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_vertArray__Q27Effects19FastParticleEmitter"
@@ -4593,7 +4605,10 @@ lbl_804501F0:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "last_frame$10411"
 "last_frame$10411":
-	.incbin "baserom.dol", 0x486208, 0x8
+	# ROM: 0x486208
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "l_bIsInitialized__7Effects"
@@ -4618,88 +4633,149 @@ lbl_804501F0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB088
 lbl_805DB088:
-	.incbin "baserom.dol", 0x4893A8, 0x4
+	# ROM: 0x4893A8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB08C
 lbl_805DB08C:
-	.incbin "baserom.dol", 0x4893AC, 0x4
+	# ROM: 0x4893AC
+	.4byte 0x3F800000
+
 .global lbl_805DB090
 lbl_805DB090:
-	.incbin "baserom.dol", 0x4893B0, 0x4
+	# ROM: 0x4893B0
+	.4byte 0x3F000000
+
 .global lbl_805DB094
 lbl_805DB094:
-	.incbin "baserom.dol", 0x4893B4, 0x4
+	# ROM: 0x4893B4
+	.4byte 0x437F0000
+
 .global lbl_805DB098
 lbl_805DB098:
-	.incbin "baserom.dol", 0x4893B8, 0x8
+	# ROM: 0x4893B8
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DB0A0
 lbl_805DB0A0:
-	.incbin "baserom.dol", 0x4893C0, 0x8
+	# ROM: 0x4893C0
+	.4byte 0x3A83126F
+	.4byte 0x00000000
+
 .global lbl_805DB0A8
 lbl_805DB0A8:
-	.incbin "baserom.dol", 0x4893C8, 0x8
+	# ROM: 0x4893C8
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB0B0
 lbl_805DB0B0:
-	.incbin "baserom.dol", 0x4893D0, 0x4
+	# ROM: 0x4893D0
+	.4byte 0x44800000
+
 .global lbl_805DB0B4
 lbl_805DB0B4:
-	.incbin "baserom.dol", 0x4893D4, 0x4
+	# ROM: 0x4893D4
+	.4byte 0x3C23D70A
+
 .global lbl_805DB0B8
 lbl_805DB0B8:
-	.incbin "baserom.dol", 0x4893D8, 0x4
+	# ROM: 0x4893D8
+	.4byte 0x40000000
+
 .global lbl_805DB0BC
 lbl_805DB0BC:
-	.incbin "baserom.dol", 0x4893DC, 0x4
+	# ROM: 0x4893DC
+	.4byte 0x40C90FDB
+
 .global lbl_805DB0C0
 lbl_805DB0C0:
-	.incbin "baserom.dol", 0x4893E0, 0x4
+	# ROM: 0x4893E0
+	.4byte 0x41800000
+
 .global lbl_805DB0C4
 lbl_805DB0C4:
-	.incbin "baserom.dol", 0x4893E4, 0x4
+	# ROM: 0x4893E4
+	.4byte 0x00800000
+
 .global lbl_805DB0C8
 lbl_805DB0C8:
-	.incbin "baserom.dol", 0x4893E8, 0x4
+	# ROM: 0x4893E8
+	.4byte 0x3DCCCCCD
+
 .global lbl_805DB0CC
 lbl_805DB0CC:
-	.incbin "baserom.dol", 0x4893EC, 0x4
+	# ROM: 0x4893EC
+	.4byte 0x3D888889
+
 .global lbl_805DB0D0
 lbl_805DB0D0:
-	.incbin "baserom.dol", 0x4893F0, 0x4
+	# ROM: 0x4893F0
+	.4byte 0x40490FDB
+
 .global lbl_805DB0D4
 lbl_805DB0D4:
-	.incbin "baserom.dol", 0x4893F4, 0x4
+	# ROM: 0x4893F4
+	.4byte 0x2B8CBCCC
+
 .global lbl_805DB0D8
 lbl_805DB0D8:
-	.incbin "baserom.dol", 0x4893F8, 0x4
+	# ROM: 0x4893F8
+	.4byte 0xBF800000
+
 .global lbl_805DB0DC
 lbl_805DB0DC:
-	.incbin "baserom.dol", 0x4893FC, 0x4
+	# ROM: 0x4893FC
+	.4byte 0x3727C5AC
+
 .global lbl_805DB0E0
 lbl_805DB0E0:
-	.incbin "baserom.dol", 0x489400, 0x4
+	# ROM: 0x489400
+	.4byte 0x39800801
+
 .global lbl_805DB0E4
 lbl_805DB0E4:
-	.incbin "baserom.dol", 0x489404, 0x4
+	# ROM: 0x489404
+	.4byte 0x3B800000
+
 .global lbl_805DB0E8
 lbl_805DB0E8:
-	.incbin "baserom.dol", 0x489408, 0x4
+	# ROM: 0x489408
+	.4byte 0x3BA3D70A
+
 .global lbl_805DB0EC
 lbl_805DB0EC:
-	.incbin "baserom.dol", 0x48940C, 0x4
+	# ROM: 0x48940C
+	.4byte 0x3D800000
+
 .global lbl_805DB0F0
 lbl_805DB0F0:
-	.incbin "baserom.dol", 0x489410, 0x4
+	# ROM: 0x489410
+	.4byte 0x3F7D70A4
+
 .global lbl_805DB0F4
 lbl_805DB0F4:
-	.incbin "baserom.dol", 0x489414, 0x4
+	# ROM: 0x489414
+	.4byte 0x3F7FFFFF
+
 .global lbl_805DB0F8
 lbl_805DB0F8:
-	.incbin "baserom.dol", 0x489418, 0x4
+	# ROM: 0x489418
+	.4byte 0x3E22F983
+
 .global lbl_805DB0FC
 lbl_805DB0FC:
-	.incbin "baserom.dol", 0x48941C, 0x4
+	# ROM: 0x48941C
+	.4byte 0x3F366AD4
+
 .global lbl_805DB100
 lbl_805DB100:
-	.incbin "baserom.dol", 0x489420, 0x4
+	# ROM: 0x489420
+	.4byte 0xBF59AB50
+
 .global lbl_805DB104
 lbl_805DB104:
-	.incbin "baserom.dol", 0x489424, 0x4
+	# ROM: 0x489424
+	.4byte 0x3F59AB50
+

@@ -19,7 +19,7 @@ lbl_803A4C94:
 /* 803A4C9C 003A093C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4CA0 003A0940  7C 08 03 A6 */	mtlr r0
 /* 803A4CA4 003A0944  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4CA8 003A0948  4E 80 00 20 */	blr 
+/* 803A4CA8 003A0948  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail8SeqTrackFv"
 "__ct__Q46nw4hbm3snd6detail8SeqTrackFv":
@@ -42,7 +42,7 @@ lbl_803A4C94:
 /* 803A4CEC 003A098C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4CF0 003A0990  7C 08 03 A6 */	mtlr r0
 /* 803A4CF4 003A0994  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4CF8 003A0998  4E 80 00 20 */	blr 
+/* 803A4CF8 003A0998  4E 80 00 20 */	blr
 
 .global "__ct__Q56nw4hbm3snd6detail8SeqTrack16ParserTrackParamFv"
 "__ct__Q56nw4hbm3snd6detail8SeqTrack16ParserTrackParamFv":
@@ -58,9 +58,14 @@ lbl_803A4C94:
 /* 803A4D20 003A09C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A4D24 003A09C4  7C 08 03 A6 */	mtlr r0
 /* 803A4D28 003A09C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4D2C 003A09CC  4E 80 00 20 */	blr 
+/* 803A4D2C 003A09CC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q46nw4hbm3snd6detail8SeqTrack"
 "__vt__Q46nw4hbm3snd6detail8SeqTrack":
-	.incbin "baserom.dol", 0x46A5A0, 0x10
+	# ROM: 0x46A5A0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm3snd6detail8SeqTrackFv" ;# ptr (0x803A4C6C)
+	.4byte 0x00000000
+

@@ -82,7 +82,7 @@ lbl_803511B8:
 /* 803511D0 0034CE70  38 63 2F D4 */	addi r3, r3, lbl_80462FD4@l
 /* 803511D4 0034CE74  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803511D8 0034CE78  7C 69 03 A6 */	mtctr r3
-/* 803511DC 0034CE7C  4E 80 04 20 */	bctr 
+/* 803511DC 0034CE7C  4E 80 04 20 */	bctr
 /* 803511E0 0034CE80  38 A0 00 00 */	li r5, 0
 /* 803511E4 0034CE84  48 00 00 38 */	b lbl_8035121C
 /* 803511E8 0034CE88  38 A0 01 0B */	li r5, 0x10b
@@ -117,7 +117,7 @@ lbl_80351244:
 /* 80351250 0034CEF0  7F C4 F3 78 */	mr r4, r30
 /* 80351254 0034CEF4  A0 7F 00 0C */	lhz r3, 0xc(r31)
 /* 80351258 0034CEF8  7D 89 03 A6 */	mtctr r12
-/* 8035125C 0034CEFC  4E 80 04 21 */	bctrl 
+/* 8035125C 0034CEFC  4E 80 04 21 */	bctrl
 lbl_80351260:
 /* 80351260 0034CF00  2C 1F 00 00 */	cmpwi r31, 0
 /* 80351264 0034CF04  41 82 00 10 */	beq lbl_80351274
@@ -130,7 +130,7 @@ lbl_80351274:
 /* 8035127C 0034CF1C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80351280 0034CF20  7C 08 03 A6 */	mtlr r0
 /* 80351284 0034CF24  38 21 00 20 */	addi r1, r1, 0x20
-/* 80351288 0034CF28  4E 80 00 20 */	blr 
+/* 80351288 0034CF28  4E 80 00 20 */	blr
 
 .global "gap_btm_cback0"
 "gap_btm_cback0":
@@ -210,7 +210,7 @@ lbl_80351348:
 /* 80351390 0034D030  38 63 31 24 */	addi r3, r3, lbl_80463124@l
 /* 80351394 0034D034  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80351398 0034D038  7C 69 03 A6 */	mtctr r3
-/* 8035139C 0034D03C  4E 80 04 20 */	bctr 
+/* 8035139C 0034D03C  4E 80 04 20 */	bctr
 /* 803513A0 0034D040  38 00 00 00 */	li r0, 0
 /* 803513A4 0034D044  48 00 00 38 */	b lbl_803513DC
 /* 803513A8 0034D048  38 00 01 0B */	li r0, 0x10b
@@ -253,7 +253,7 @@ lbl_80351410:
 /* 80351428 0034D0C8  38 63 31 00 */	addi r3, r3, lbl_80463100@l
 /* 8035142C 0034D0CC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80351430 0034D0D0  7C 69 03 A6 */	mtctr r3
-/* 80351434 0034D0D4  4E 80 04 20 */	bctr 
+/* 80351434 0034D0D4  4E 80 04 20 */	bctr
 /* 80351438 0034D0D8  38 00 00 00 */	li r0, 0
 /* 8035143C 0034D0DC  48 00 00 38 */	b lbl_80351474
 /* 80351440 0034D0E0  38 00 01 0B */	li r0, 0x10b
@@ -279,7 +279,7 @@ lbl_80351478:
 /* 80351484 0034D124  7F C4 F3 78 */	mr r4, r30
 /* 80351488 0034D128  38 60 00 05 */	li r3, 5
 /* 8035148C 0034D12C  7D 89 03 A6 */	mtctr r12
-/* 80351490 0034D130  4E 80 04 21 */	bctrl 
+/* 80351490 0034D130  4E 80 04 21 */	bctrl
 lbl_80351494:
 /* 80351494 0034D134  38 00 00 00 */	li r0, 0
 /* 80351498 0034D138  98 1F 00 7E */	stb r0, 0x7e(r31)
@@ -291,7 +291,7 @@ lbl_803514A0:
 /* 803514AC 0034D14C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803514B0 0034D150  7C 08 03 A6 */	mtlr r0
 /* 803514B4 0034D154  38 21 00 20 */	addi r1, r1, 0x20
-/* 803514B8 0034D158  4E 80 00 20 */	blr 
+/* 803514B8 0034D158  4E 80 00 20 */	blr
 
 .global "gap_find_addr_inq_cb"
 "gap_find_addr_inq_cb":
@@ -343,7 +343,7 @@ lbl_80351518:
 /* 8035156C 0034D20C  38 63 31 B0 */	addi r3, r3, lbl_804631B0@l
 /* 80351570 0034D210  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80351574 0034D214  7C 69 03 A6 */	mtctr r3
-/* 80351578 0034D218  4E 80 04 20 */	bctr 
+/* 80351578 0034D218  4E 80 04 20 */	bctr
 /* 8035157C 0034D21C  38 00 00 00 */	li r0, 0
 /* 80351580 0034D220  48 00 00 38 */	b lbl_803515B8
 /* 80351584 0034D224  38 00 01 0B */	li r0, 0x10b
@@ -375,7 +375,7 @@ lbl_803515CC:
 /* 803515DC 0034D27C  38 63 31 8C */	addi r3, r3, lbl_8046318C@l
 /* 803515E0 0034D280  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803515E4 0034D284  7C 69 03 A6 */	mtctr r3
-/* 803515E8 0034D288  4E 80 04 20 */	bctr 
+/* 803515E8 0034D288  4E 80 04 20 */	bctr
 /* 803515EC 0034D28C  38 00 00 00 */	li r0, 0
 /* 803515F0 0034D290  48 00 00 38 */	b lbl_80351628
 /* 803515F4 0034D294  38 00 01 0B */	li r0, 0x10b
@@ -401,7 +401,7 @@ lbl_8035162C:
 /* 80351638 0034D2D8  7F C4 F3 78 */	mr r4, r30
 /* 8035163C 0034D2DC  38 60 00 05 */	li r3, 5
 /* 80351640 0034D2E0  7D 89 03 A6 */	mtctr r12
-/* 80351644 0034D2E4  4E 80 04 21 */	bctrl 
+/* 80351644 0034D2E4  4E 80 04 21 */	bctrl
 lbl_80351648:
 /* 80351648 0034D2E8  38 00 00 00 */	li r0, 0
 /* 8035164C 0034D2EC  98 1F 00 7E */	stb r0, 0x7e(r31)
@@ -413,7 +413,7 @@ lbl_80351654:
 /* 80351660 0034D300  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80351664 0034D304  7C 08 03 A6 */	mtlr r0
 /* 80351668 0034D308  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035166C 0034D30C  4E 80 00 20 */	blr 
+/* 8035166C 0034D30C  4E 80 00 20 */	blr
 
 .global "gap_convert_btm_status"
 "gap_convert_btm_status":
@@ -424,56 +424,134 @@ lbl_80351654:
 /* 80351680 0034D320  38 84 31 D4 */	addi r4, r4, lbl_804631D4@l
 /* 80351684 0034D324  7C 84 00 2E */	lwzx r4, r4, r0
 /* 80351688 0034D328  7C 89 03 A6 */	mtctr r4
-/* 8035168C 0034D32C  4E 80 04 20 */	bctr 
+/* 8035168C 0034D32C  4E 80 04 20 */	bctr
 /* 80351690 0034D330  38 60 00 00 */	li r3, 0
-/* 80351694 0034D334  4E 80 00 20 */	blr 
+/* 80351694 0034D334  4E 80 00 20 */	blr
 /* 80351698 0034D338  38 60 01 0B */	li r3, 0x10b
-/* 8035169C 0034D33C  4E 80 00 20 */	blr 
+/* 8035169C 0034D33C  4E 80 00 20 */	blr
 /* 803516A0 0034D340  38 60 01 03 */	li r3, 0x103
-/* 803516A4 0034D344  4E 80 00 20 */	blr 
+/* 803516A4 0034D344  4E 80 00 20 */	blr
 /* 803516A8 0034D348  38 60 01 09 */	li r3, 0x109
-/* 803516AC 0034D34C  4E 80 00 20 */	blr 
+/* 803516AC 0034D34C  4E 80 00 20 */	blr
 /* 803516B0 0034D350  38 60 01 0C */	li r3, 0x10c
-/* 803516B4 0034D354  4E 80 00 20 */	blr 
+/* 803516B4 0034D354  4E 80 00 20 */	blr
 /* 803516B8 0034D358  38 60 01 0D */	li r3, 0x10d
-/* 803516BC 0034D35C  4E 80 00 20 */	blr 
+/* 803516BC 0034D35C  4E 80 00 20 */	blr
 /* 803516C0 0034D360  38 60 01 15 */	li r3, 0x115
-/* 803516C4 0034D364  4E 80 00 20 */	blr 
+/* 803516C4 0034D364  4E 80 00 20 */	blr
 lbl_803516C8:
 /* 803516C8 0034D368  38 60 01 14 */	li r3, 0x114
-/* 803516CC 0034D36C  4E 80 00 20 */	blr 
+/* 803516CC 0034D36C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80462F08
 lbl_80462F08:
-	.incbin "baserom.dol", 0x45F008, 0xCC
+	# ROM: 0x45F008
+	.asciz "   GAP Inquiry Complete Event (Status 0x%04x, Result(s) %d)"
+	.asciz "   GAP Discovery Complete Event(SDP Result: 0x%04x)"
+	.asciz "   GAP Discovery Successfully Completed"
+	.asciz "   GAP Remote Name Complete Event (status 0x%04x)"
+	.byte 0x00, 0x00
+
 .global lbl_80462FD4
 lbl_80462FD4:
-	.incbin "baserom.dol", 0x45F0D4, 0xAC
+	# ROM: 0x45F0D4
+	.4byte 0x803511E0 ;# ptr
+	.4byte 0x803511E8 ;# ptr
+	.4byte 0x803511F0 ;# ptr
+	.4byte 0x80351218 ;# ptr
+	.4byte 0x803511F8 ;# ptr
+	.4byte 0x803511F8 ;# ptr
+	.4byte 0x80351200 ;# ptr
+	.4byte 0x80351208 ;# ptr
+	.4byte 0x80351210 ;# ptr
+	.asciz "GAP Inquiry Results Callback (bdaddr [%02x%02x%02x%02x%02x%02x])"
+	.byte 0x00, 0x00, 0x00
+	.asciz "                             (COD [%02x%02x%02x], clkoff 0x%04x)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463080
 lbl_80463080:
-	.incbin "baserom.dol", 0x45F180, 0x44
+	# ROM: 0x45F180
+	.asciz "   GAP: FindAddrByName Rem Name Cmpl Evt (Status 0x%04x, Name [%s])"
+
 .global lbl_804630C4
 lbl_804630C4:
-	.incbin "baserom.dol", 0x45F1C4, 0x3C
+	# ROM: 0x45F1C4
+	.asciz "   GAP: FindAddrByName Rem Name Cmpl Evt (Status 0x%04x)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80463100
 lbl_80463100:
-	.incbin "baserom.dol", 0x45F200, 0x24
+	# ROM: 0x45F200
+	.4byte 0x80351438 ;# ptr
+	.4byte 0x80351440 ;# ptr
+	.4byte 0x80351448 ;# ptr
+	.4byte 0x80351470 ;# ptr
+	.4byte 0x80351450 ;# ptr
+	.4byte 0x80351450 ;# ptr
+	.4byte 0x80351458 ;# ptr
+	.4byte 0x80351460 ;# ptr
+	.4byte 0x80351468 ;# ptr
+
 .global lbl_80463124
 lbl_80463124:
-	.incbin "baserom.dol", 0x45F224, 0x24
+	# ROM: 0x45F224
+	.4byte 0x803513A0 ;# ptr
+	.4byte 0x803513A8 ;# ptr
+	.4byte 0x803513B0 ;# ptr
+	.4byte 0x803513D8 ;# ptr
+	.4byte 0x803513B8 ;# ptr
+	.4byte 0x803513B8 ;# ptr
+	.4byte 0x803513C0 ;# ptr
+	.4byte 0x803513C8 ;# ptr
+	.4byte 0x803513D0 ;# ptr
+
 .global lbl_80463148
 lbl_80463148:
-	.incbin "baserom.dol", 0x45F248, 0x44
+	# ROM: 0x45F248
+	.asciz "   GAP: FindAddrByName Inq Cmpl Evt (Status 0x%04x, Result(s) %d)"
+	.byte 0x00, 0x00
+
 .global lbl_8046318C
 lbl_8046318C:
-	.incbin "baserom.dol", 0x45F28C, 0x24
+	# ROM: 0x45F28C
+	.4byte 0x803515EC ;# ptr
+	.4byte 0x803515F4 ;# ptr
+	.4byte 0x803515FC ;# ptr
+	.4byte 0x80351624 ;# ptr
+	.4byte 0x80351604 ;# ptr
+	.4byte 0x80351604 ;# ptr
+	.4byte 0x8035160C ;# ptr
+	.4byte 0x80351614 ;# ptr
+	.4byte 0x8035161C ;# ptr
+
 .global lbl_804631B0
 lbl_804631B0:
-	.incbin "baserom.dol", 0x45F2B0, 0x24
+	# ROM: 0x45F2B0
+	.4byte 0x8035157C ;# ptr
+	.4byte 0x80351584 ;# ptr
+	.4byte 0x8035158C ;# ptr
+	.4byte 0x803515B4 ;# ptr
+	.4byte 0x80351594 ;# ptr
+	.4byte 0x80351594 ;# ptr
+	.4byte 0x8035159C ;# ptr
+	.4byte 0x803515A4 ;# ptr
+	.4byte 0x803515AC ;# ptr
+
 .global lbl_804631D4
 lbl_804631D4:
-	.incbin "baserom.dol", 0x45F2D4, 0x24
+	# ROM: 0x45F2D4
+	.4byte 0x80351690 ;# ptr
+	.4byte 0x80351698 ;# ptr
+	.4byte 0x803516A0 ;# ptr
+	.4byte 0x803516C8 ;# ptr
+	.4byte 0x803516A8 ;# ptr
+	.4byte 0x803516A8 ;# ptr
+	.4byte 0x803516B0 ;# ptr
+	.4byte 0x803516B8 ;# ptr
+	.4byte 0x803516C0 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gap_cb"

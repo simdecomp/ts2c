@@ -5,13 +5,13 @@
 "rfc_mx_sm_execute":
 /* 8035F598 0035B238  88 03 00 6C */	lbz r0, 0x6c(r3)
 /* 8035F59C 0035B23C  28 00 00 06 */	cmplwi r0, 6
-/* 8035F5A0 0035B240  4D 81 00 20 */	bgtlr 
+/* 8035F5A0 0035B240  4D 81 00 20 */	bgtlr
 /* 8035F5A4 0035B244  3C C0 80 46 */	lis r6, lbl_80465320@ha
 /* 8035F5A8 0035B248  54 00 10 3A */	slwi r0, r0, 2
 /* 8035F5AC 0035B24C  38 C6 53 20 */	addi r6, r6, lbl_80465320@l
 /* 8035F5B0 0035B250  7C C6 00 2E */	lwzx r6, r6, r0
 /* 8035F5B4 0035B254  7C C9 03 A6 */	mtctr r6
-/* 8035F5B8 0035B258  4E 80 04 20 */	bctr 
+/* 8035F5B8 0035B258  4E 80 04 20 */	bctr
 /* 8035F5BC 0035B25C  48 00 00 20 */	b "rfc_mx_sm_state_idle"
 /* 8035F5C0 0035B260  48 00 02 30 */	b "rfc_mx_sm_state_wait_conn_cnf"
 /* 8035F5C4 0035B264  48 00 03 E8 */	b "rfc_mx_sm_state_configure"
@@ -19,7 +19,7 @@
 /* 8035F5CC 0035B26C  48 00 06 7C */	b "rfc_mx_sm_state_wait_sabme"
 /* 8035F5D0 0035B270  48 00 07 98 */	b "rfc_mx_sm_state_connected"
 /* 8035F5D4 0035B274  48 00 08 AC */	b "rfc_mx_sm_state_disc_wait_ua"
-/* 8035F5D8 0035B278  4E 80 00 20 */	blr 
+/* 8035F5D8 0035B278  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_idle"
 "rfc_mx_sm_state_idle":
@@ -53,7 +53,7 @@ lbl_8035F634:
 /* 8035F644 0035B2E4  38 63 53 B8 */	addi r3, r3, lbl_804653B8@l
 /* 8035F648 0035B2E8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035F64C 0035B2EC  7C 69 03 A6 */	mtctr r3
-/* 8035F650 0035B2F0  4E 80 04 20 */	bctr 
+/* 8035F650 0035B2F0  4E 80 04 20 */	bctr
 /* 8035F654 0035B2F4  38 00 02 9A */	li r0, 0x29a
 /* 8035F658 0035B2F8  38 9F 00 62 */	addi r4, r31, 0x62
 /* 8035F65C 0035B2FC  B0 1F 00 6A */	sth r0, 0x6a(r31)
@@ -161,7 +161,7 @@ lbl_8035F7D0:
 /* 8035F7E0 0035B480  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 8035F7E4 0035B484  7C 08 03 A6 */	mtlr r0
 /* 8035F7E8 0035B488  38 21 00 60 */	addi r1, r1, 0x60
-/* 8035F7EC 0035B48C  4E 80 00 20 */	blr 
+/* 8035F7EC 0035B48C  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_wait_conn_cnf"
 "rfc_mx_sm_state_wait_conn_cnf":
@@ -285,7 +285,7 @@ lbl_8035F98C:
 /* 8035F99C 0035B63C  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 8035F9A0 0035B640  7C 08 03 A6 */	mtlr r0
 /* 8035F9A4 0035B644  38 21 00 60 */	addi r1, r1, 0x60
-/* 8035F9A8 0035B648  4E 80 00 20 */	blr 
+/* 8035F9A8 0035B648  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_configure"
 "rfc_mx_sm_state_configure":
@@ -320,7 +320,7 @@ lbl_8035FA04:
 /* 8035FA18 0035B6B8  38 63 54 38 */	addi r3, r3, lbl_80465438@l
 /* 8035FA1C 0035B6BC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035FA20 0035B6C0  7C 69 03 A6 */	mtctr r3
-/* 8035FA24 0035B6C4  4E 80 04 20 */	bctr 
+/* 8035FA24 0035B6C4  4E 80 04 20 */	bctr
 /* 8035FA28 0035B6C8  3C 60 80 58 */	lis r3, "rfc_cb"@ha
 /* 8035FA2C 0035B6CC  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 8035FA30 0035B6D0  88 03 04 14 */	lbz r0, 0x414(r3)
@@ -365,7 +365,7 @@ lbl_8035FAB4:
 /* 8035FAC4 0035B764  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035FAC8 0035B768  7C 08 03 A6 */	mtlr r0
 /* 8035FACC 0035B76C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035FAD0 0035B770  4E 80 00 20 */	blr 
+/* 8035FAD0 0035B770  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_sabme_wait_ua"
 "rfc_mx_sm_sabme_wait_ua":
@@ -399,7 +399,7 @@ lbl_8035FB2C:
 /* 8035FB3C 0035B7DC  38 63 54 80 */	addi r3, r3, lbl_80465480@l
 /* 8035FB40 0035B7E0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035FB44 0035B7E4  7C 69 03 A6 */	mtctr r3
-/* 8035FB48 0035B7E8  4E 80 04 20 */	bctr 
+/* 8035FB48 0035B7E8  4E 80 04 20 */	bctr
 /* 8035FB4C 0035B7EC  3C 60 80 58 */	lis r3, "rfc_cb"@ha
 /* 8035FB50 0035B7F0  38 63 7B 48 */	addi r3, r3, "rfc_cb"@l
 /* 8035FB54 0035B7F4  88 03 04 14 */	lbz r0, 0x414(r3)
@@ -464,7 +464,7 @@ lbl_8035FC28:
 /* 8035FC38 0035B8D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8035FC3C 0035B8DC  7C 08 03 A6 */	mtlr r0
 /* 8035FC40 0035B8E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035FC44 0035B8E4  4E 80 00 20 */	blr 
+/* 8035FC44 0035B8E4  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_wait_sabme"
 "rfc_mx_sm_state_wait_sabme":
@@ -547,7 +547,7 @@ lbl_8035FD4C:
 /* 8035FD58 0035B9F8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035FD5C 0035B9FC  7C 08 03 A6 */	mtlr r0
 /* 8035FD60 0035BA00  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035FD64 0035BA04  4E 80 00 20 */	blr 
+/* 8035FD64 0035BA04  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_connected"
 "rfc_mx_sm_state_connected":
@@ -578,7 +578,7 @@ lbl_8035FDB0:
 /* 8035FDC4 0035BA64  38 63 55 04 */	addi r3, r3, lbl_80465504@l
 /* 8035FDC8 0035BA68  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035FDCC 0035BA6C  7C 69 03 A6 */	mtctr r3
-/* 8035FDD0 0035BA70  4E 80 04 20 */	bctr 
+/* 8035FDD0 0035BA70  4E 80 04 20 */	bctr
 /* 8035FDD4 0035BA74  7F C3 F3 78 */	mr r3, r30
 /* 8035FDD8 0035BA78  38 80 00 03 */	li r4, 3
 /* 8035FDDC 0035BA7C  48 00 33 79 */	bl "rfc_timer_start"
@@ -624,7 +624,7 @@ lbl_8035FE68:
 /* 8035FE70 0035BB10  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8035FE74 0035BB14  7C 08 03 A6 */	mtlr r0
 /* 8035FE78 0035BB18  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035FE7C 0035BB1C  4E 80 00 20 */	blr 
+/* 8035FE7C 0035BB1C  4E 80 00 20 */	blr
 
 .global "rfc_mx_sm_state_disc_wait_ua"
 "rfc_mx_sm_state_disc_wait_ua":
@@ -656,7 +656,7 @@ lbl_8035FED0:
 /* 8035FEE0 0035BB80  38 63 55 5C */	addi r3, r3, lbl_8046555C@l
 /* 8035FEE4 0035BB84  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8035FEE8 0035BB88  7C 69 03 A6 */	mtctr r3
-/* 8035FEEC 0035BB8C  4E 80 04 20 */	bctr 
+/* 8035FEEC 0035BB8C  4E 80 04 20 */	bctr
 /* 8035FEF0 0035BB90  A0 7D 00 68 */	lhz r3, 0x68(r29)
 /* 8035FEF4 0035BB94  4B FF 79 9D */	bl "L2CA_DisconnectReq"
 /* 8035FEF8 0035BB98  88 1D 00 70 */	lbz r0, 0x70(r29)
@@ -726,7 +726,7 @@ lbl_8035FFDC:
 /* 8035FFE8 0035BC88  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035FFEC 0035BC8C  7C 08 03 A6 */	mtlr r0
 /* 8035FFF0 0035BC90  38 21 00 20 */	addi r1, r1, 0x20
-/* 8035FFF4 0035BC94  4E 80 00 20 */	blr 
+/* 8035FFF4 0035BC94  4E 80 00 20 */	blr
 
 .global "rfc_mx_conf_cnf"
 "rfc_mx_conf_cnf":
@@ -797,7 +797,7 @@ lbl_803600D4:
 /* 803600DC 0035BD7C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803600E0 0035BD80  7C 08 03 A6 */	mtlr r0
 /* 803600E4 0035BD84  38 21 00 10 */	addi r1, r1, 0x10
-/* 803600E8 0035BD88  4E 80 00 20 */	blr 
+/* 803600E8 0035BD88  4E 80 00 20 */	blr
 
 .global "rfc_mx_conf_ind"
 "rfc_mx_conf_ind":
@@ -865,42 +865,148 @@ lbl_803601C4:
 /* 803601CC 0035BE6C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803601D0 0035BE70  7C 08 03 A6 */	mtlr r0
 /* 803601D4 0035BE74  38 21 00 10 */	addi r1, r1, 0x10
-/* 803601D8 0035BE78  4E 80 00 20 */	blr 
+/* 803601D8 0035BE78  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80465320
 lbl_80465320:
-	.incbin "baserom.dol", 0x461420, 0x70
+	# ROM: 0x461420
+	.4byte 0x8035F5BC ;# ptr
+	.4byte 0x8035F5C0 ;# ptr
+	.4byte 0x8035F5C4 ;# ptr
+	.4byte 0x8035F5C8 ;# ptr
+	.4byte 0x8035F5CC ;# ptr
+	.4byte 0x8035F5D0 ;# ptr
+	.4byte 0x8035F5D4 ;# ptr
+	.asciz "rfc_mx_sm_state_idle - evt:%d"
+	.byte 0x00, 0x00
+	.asciz "Mx error state %d event %d"
+	.byte 0x00
+	.asciz "rfc_mx_send_config_req"
+	.byte 0x00
+
 .global lbl_80465390
 lbl_80465390:
-	.incbin "baserom.dol", 0x461490, 0x28
+	# ROM: 0x461490
+	.asciz "RFCOMM MX ignored - evt:%d in state:%d"
+	.byte 0x00
+
 .global lbl_804653B8
 lbl_804653B8:
-	.incbin "baserom.dol", 0x4614B8, 0x80
+	# ROM: 0x4614B8
+	.4byte 0x8035F7A4 ;# ptr
+	.4byte 0x8035F778 ;# ptr
+	.4byte 0x8035F778 ;# ptr
+	.4byte 0x8035F77C ;# ptr
+	.4byte 0x8035F790 ;# ptr
+	.4byte 0x8035F7A4 ;# ptr
+	.4byte 0x8035F654 ;# ptr
+	.4byte 0x8035F698 ;# ptr
+	.4byte 0x8035F7A4 ;# ptr
+	.4byte 0x8035F698 ;# ptr
+	.4byte 0x8035F6C4 ;# ptr
+	.4byte 0x8035F698 ;# ptr
+	.4byte 0x8035F698 ;# ptr
+	.asciz "rfc_mx_sm_state_wait_conn_cnf - evt:%d"
+	.byte 0x00
+	.asciz "rfc_mx_sm_state_configure - evt:%d"
+	.byte 0x00
+
 .global lbl_80465438
 lbl_80465438:
-	.incbin "baserom.dol", 0x461538, 0x48
+	# ROM: 0x461538
+	.4byte 0x8035FA28 ;# ptr
+	.4byte 0x8035FA88 ;# ptr
+	.4byte 0x8035FA88 ;# ptr
+	.4byte 0x8035FA28 ;# ptr
+	.4byte 0x8035FA88 ;# ptr
+	.4byte 0x8035FA64 ;# ptr
+	.4byte 0x8035FA54 ;# ptr
+	.4byte 0x8035FA88 ;# ptr
+	.4byte 0x8035FA74 ;# ptr
+	.asciz "rfc_mx_sm_sabme_wait_ua - evt:%d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80465480
 lbl_80465480:
-	.incbin "baserom.dol", 0x461580, 0x3C
+	# ROM: 0x461580
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FBAC ;# ptr
+	.4byte 0x8035FBD4 ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FBDC ;# ptr
+	.4byte 0x8035FB4C ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FB4C ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FB88 ;# ptr
+	.4byte 0x8035FB78 ;# ptr
+	.4byte 0x8035FBFC ;# ptr
+	.4byte 0x8035FB98 ;# ptr
+
 .global lbl_804654BC
 lbl_804654BC:
-	.incbin "baserom.dol", 0x4615BC, 0x24
+	# ROM: 0x4615BC
+	.asciz "rfc_mx_sm_state_wait_sabme - evt:%d"
+
 .global lbl_804654E0
 lbl_804654E0:
-	.incbin "baserom.dol", 0x4615E0, 0x24
+	# ROM: 0x4615E0
+	.asciz "rfc_mx_sm_state_connected - evt:%d"
+	.byte 0x00
+
 .global lbl_80465504
 lbl_80465504:
-	.incbin "baserom.dol", 0x461604, 0x30
+	# ROM: 0x461604
+	.4byte 0x8035FE0C ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FDD4 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FDD4 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FE38 ;# ptr
+	.4byte 0x8035FDF8 ;# ptr
+
 .global lbl_80465534
 lbl_80465534:
-	.incbin "baserom.dol", 0x461634, 0x28
+	# ROM: 0x461634
+	.asciz "rfc_mx_sm_state_disc_wait_ua - evt:%d"
+	.byte 0x00, 0x00
+
 .global lbl_8046555C
 lbl_8046555C:
-	.incbin "baserom.dol", 0x46165C, 0x3C
+	# ROM: 0x46165C
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FEF0 ;# ptr
+	.4byte 0x8035FEF0 ;# ptr
+	.4byte 0x8035FF5C ;# ptr
+	.4byte 0x8035FF6C ;# ptr
+	.4byte 0x8035FEF0 ;# ptr
+	.4byte 0x8035FF88 ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FFA8 ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FFAC ;# ptr
+	.4byte 0x8035FF94 ;# ptr
+
 .global lbl_80465598
 lbl_80465598:
-	.incbin "baserom.dol", 0x461698, 0x24
+	# ROM: 0x461698
+	.asciz "rfc_mx_conf_cnf p_cfg:%08x res:%d "
+	.byte 0x00
+
 .global lbl_804655BC
 lbl_804655BC:
-	.incbin "baserom.dol", 0x4616BC, 0x1C
+	# ROM: 0x4616BC
+	.asciz "rfc_mx_conf_ind p_cfg:%0x"
+	.byte 0x00, 0x00
+

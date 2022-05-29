@@ -127,9 +127,38 @@ lbl_803C2C30:
 /* 803C2C3C 003BE8DC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803C2C40 003BE8E0  7C 08 03 A6 */	mtlr r0
 /* 803C2C44 003BE8E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C2C48 003BE8E8  4E 80 00 20 */	blr 
+/* 803C2C48 003BE8E8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473B70
 lbl_80473B70:
-	.incbin "baserom.dol", 0x46FC70, 0xA8
+	# ROM: 0x46FC70
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.asciz "ut_Font.cpp"
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+

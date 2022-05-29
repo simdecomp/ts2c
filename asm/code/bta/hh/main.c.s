@@ -113,7 +113,7 @@ lbl_80344588:
 /* 80344598 00340238  38 A5 40 68 */	addi r5, r5, "bta_hh_cb"@l
 /* 8034459C 0034023C  81 85 02 24 */	lwz r12, 0x224(r5)
 /* 803445A0 00340240  7D 89 03 A6 */	mtctr r12
-/* 803445A4 00340244  4E 80 04 21 */	bctrl 
+/* 803445A4 00340244  4E 80 04 21 */	bctrl
 /* 803445A8 00340248  48 00 01 A8 */	b lbl_80344750
 lbl_803445AC:
 /* 803445AC 0034024C  88 0D C3 50 */	lbz r0, "appl_trace_level"-_SDA_BASE_(r13)
@@ -176,7 +176,7 @@ lbl_80344628:
 /* 80344670 00340310  7D 84 00 2E */	lwzx r12, r4, r0
 /* 80344674 00340314  7F A4 EB 78 */	mr r4, r29
 /* 80344678 00340318  7D 89 03 A6 */	mtctr r12
-/* 8034467C 0034031C  4E 80 04 21 */	bctrl 
+/* 8034467C 0034031C  4E 80 04 21 */	bctrl
 lbl_80344680:
 /* 80344680 00340320  88 7B 00 1C */	lbz r3, 0x1c(r27)
 /* 80344684 00340324  7C 1E 18 40 */	cmplw r30, r3
@@ -250,7 +250,7 @@ lbl_80344750:
 /* 80344758 003403F8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8034475C 003403FC  7C 08 03 A6 */	mtlr r0
 /* 80344760 00340400  38 21 00 40 */	addi r1, r1, 0x40
-/* 80344764 00340404  4E 80 00 20 */	blr 
+/* 80344764 00340404  4E 80 00 20 */	blr
 
 .global "bta_hh_hdl_event"
 "bta_hh_hdl_event":
@@ -349,7 +349,7 @@ lbl_80344898:
 /* 803448A4 00340544  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803448A8 00340548  7C 08 03 A6 */	mtlr r0
 /* 803448AC 0034054C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803448B0 00340550  4E 80 00 20 */	blr 
+/* 803448B0 00340550  4E 80 00 20 */	blr
 
 .global "bta_hh_evt_code"
 "bta_hh_evt_code":
@@ -363,70 +363,174 @@ lbl_80344898:
 /* 803448D0 00340570  38 63 14 C8 */	addi r3, r3, lbl_804614C8@l
 /* 803448D4 00340574  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803448D8 00340578  7C 69 03 A6 */	mtctr r3
-/* 803448DC 0034057C  4E 80 04 20 */	bctr 
+/* 803448DC 0034057C  4E 80 04 20 */	bctr
 /* 803448E0 00340580  38 64 01 08 */	addi r3, r4, 0x108
-/* 803448E4 00340584  4E 80 00 20 */	blr 
+/* 803448E4 00340584  4E 80 00 20 */	blr
 /* 803448E8 00340588  38 64 01 20 */	addi r3, r4, 0x120
-/* 803448EC 0034058C  4E 80 00 20 */	blr 
+/* 803448EC 0034058C  4E 80 00 20 */	blr
 /* 803448F0 00340590  38 64 01 38 */	addi r3, r4, 0x138
-/* 803448F4 00340594  4E 80 00 20 */	blr 
+/* 803448F4 00340594  4E 80 00 20 */	blr
 /* 803448F8 00340598  38 64 01 4C */	addi r3, r4, 0x14c
-/* 803448FC 0034059C  4E 80 00 20 */	blr 
+/* 803448FC 0034059C  4E 80 00 20 */	blr
 /* 80344900 003405A0  38 64 01 64 */	addi r3, r4, 0x164
-/* 80344904 003405A4  4E 80 00 20 */	blr 
+/* 80344904 003405A4  4E 80 00 20 */	blr
 /* 80344908 003405A8  38 64 01 78 */	addi r3, r4, 0x178
-/* 8034490C 003405AC  4E 80 00 20 */	blr 
+/* 8034490C 003405AC  4E 80 00 20 */	blr
 /* 80344910 003405B0  38 64 01 90 */	addi r3, r4, 0x190
-/* 80344914 003405B4  4E 80 00 20 */	blr 
+/* 80344914 003405B4  4E 80 00 20 */	blr
 /* 80344918 003405B8  38 64 01 A8 */	addi r3, r4, 0x1a8
-/* 8034491C 003405BC  4E 80 00 20 */	blr 
+/* 8034491C 003405BC  4E 80 00 20 */	blr
 /* 80344920 003405C0  38 64 01 BC */	addi r3, r4, 0x1bc
-/* 80344924 003405C4  4E 80 00 20 */	blr 
+/* 80344924 003405C4  4E 80 00 20 */	blr
 /* 80344928 003405C8  38 64 01 D4 */	addi r3, r4, 0x1d4
-/* 8034492C 003405CC  4E 80 00 20 */	blr 
+/* 8034492C 003405CC  4E 80 00 20 */	blr
 /* 80344930 003405D0  38 64 01 F0 */	addi r3, r4, 0x1f0
-/* 80344934 003405D4  4E 80 00 20 */	blr 
+/* 80344934 003405D4  4E 80 00 20 */	blr
 /* 80344938 003405D8  38 64 02 04 */	addi r3, r4, 0x204
-/* 8034493C 003405DC  4E 80 00 20 */	blr 
+/* 8034493C 003405DC  4E 80 00 20 */	blr
 /* 80344940 003405E0  38 64 02 1C */	addi r3, r4, 0x21c
-/* 80344944 003405E4  4E 80 00 20 */	blr 
+/* 80344944 003405E4  4E 80 00 20 */	blr
 /* 80344948 003405E8  38 64 02 38 */	addi r3, r4, 0x238
-/* 8034494C 003405EC  4E 80 00 20 */	blr 
+/* 8034494C 003405EC  4E 80 00 20 */	blr
 /* 80344950 003405F0  38 64 02 50 */	addi r3, r4, 0x250
-/* 80344954 003405F4  4E 80 00 20 */	blr 
+/* 80344954 003405F4  4E 80 00 20 */	blr
 /* 80344958 003405F8  38 64 02 68 */	addi r3, r4, 0x268
-/* 8034495C 003405FC  4E 80 00 20 */	blr 
+/* 8034495C 003405FC  4E 80 00 20 */	blr
 lbl_80344960:
 /* 80344960 00340600  38 64 02 84 */	addi r3, r4, 0x284
-/* 80344964 00340604  4E 80 00 20 */	blr 
+/* 80344964 00340604  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "bta_hh_action"
 "bta_hh_action":
-	.incbin "baserom.dol", 0x418AF8, 0x30
+	# ROM: 0x418AF8
+	.4byte "bta_hh_api_disc_act" ;# ptr (0x80343048)
+	.4byte "bta_hh_open_act" ;# ptr (0x803431D8)
+	.4byte "bta_hh_close_act" ;# ptr (0x80343748)
+	.4byte "bta_hh_data_act" ;# ptr (0x80343290)
+	.4byte "bta_hh_ctrl_dat_act" ;# ptr (0x80343550)
+	.4byte "bta_hh_handsk_act" ;# ptr (0x803432E8)
+	.4byte "bta_hh_start_sdp" ;# ptr (0x80342D4C)
+	.4byte "bta_hh_sdp_cmpl" ;# ptr (0x80342EE0)
+	.4byte "bta_hh_write_dev_act" ;# ptr (0x80343BE4)
+	.4byte "bta_hh_get_dscp_act" ;# ptr (0x80343948)
+	.4byte "bta_hh_maint_dev_act" ;# ptr (0x80343964)
+	.4byte "bta_hh_open_cmpl_act" ;# ptr (0x803430B0)
+
 .global "bta_hh_st_idle"
 "bta_hh_st_idle":
-	.incbin "baserom.dol", 0x418B28, 0x18
+	# ROM: 0x418B28
+	.4byte 0x06020C01
+	.4byte 0x01020201
+	.4byte 0x0C010C01
+	.4byte 0x0C010C01
+	.4byte 0x0C010C01
+	.4byte 0x0A010C01
+
 .global "bta_hh_st_w4_conn"
 "bta_hh_st_w4_conn":
-	.incbin "baserom.dol", 0x418B40, 0x18
+	# ROM: 0x418B40
+	.4byte 0x0C020C01
+	.4byte 0x01020201
+	.4byte 0x0C020C02
+	.4byte 0x0C020702
+	.4byte 0x0C020C02
+	.4byte 0x0A010B03
+
 .global "bta_hh_st_connected"
 "bta_hh_st_connected":
-	.incbin "baserom.dol", 0x418B58, 0x18
+	# ROM: 0x418B58
+	.4byte 0x0C030003
+	.4byte 0x01030201
+	.4byte 0x03030403
+	.4byte 0x05030C03
+	.4byte 0x08030903
+	.4byte 0x0A030C03
+
 .global "bta_hh_st_tbl"
 "bta_hh_st_tbl":
-	.incbin "baserom.dol", 0x418B70, 0x10
+	# ROM: 0x418B70
+	.4byte 0x8041CA28 ;# ptr
+	.4byte 0x8041CA40 ;# ptr
+	.4byte 0x8041CA58 ;# ptr
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80461228
 lbl_80461228:
-	.incbin "baserom.dol", 0x45D328, 0xDC
+	# ROM: 0x45D328
+	.asciz "wrong device handle: [%d]"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_NULL_ST"
+	.byte 0x00
+	.asciz "BTA_HH_IDLE_ST"
+	.byte 0x00
+	.asciz "BTA_HH_W4_CONN_ST"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_CONN_ST"
+	.byte 0x00
+	.asciz "unknown HID Host state"
+	.byte 0x00
+	.asciz "bta_hh_sm_execute: State 0x%02x [%s], Event [%s]"
+	.byte 0x00, 0x00, 0x00
+	.asciz "HH State Change: [%s] -> [%s] after Event [%s]"
+	.byte 0x00
+
 .global lbl_80461304
 lbl_80461304:
-	.incbin "baserom.dol", 0x45D404, 0x1C4
+	# ROM: 0x45D404
+	.asciz "bta_hh_hdl_event:: handle = %d dev_cb[%d] "
+	.byte 0x00
+	.asciz "BTA_HH_API_DISABLE_EVT"
+	.byte 0x00
+	.asciz "BTA_HH_API_ENABLE_EVT"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_API_OPEN_EVT"
+	.asciz "BTA_HH_API_CLOSE_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_INT_OPEN_EVT"
+	.asciz "BTA_HH_INT_CLOSE_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_INT_HANDSK_EVT"
+	.byte 0x00, 0x00
+	.asciz "BTA_HH_INT_DATA_EVT"
+	.asciz "BTA_HH_INT_CTRL_DATA"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_API_WRITE_DEV_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_SDP_CMPL_EVT"
+	.asciz "BTA_HH_DISC_CMPL_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_API_MAINT_DEV_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_API_GET_DSCP_EVT"
+	.asciz "BTA_HH_OPEN_CMPL_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_HH_API_GET_ACL_Q_EVT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "unknown HID Host event code"
+
 .global lbl_804614C8
 lbl_804614C8:
-	.incbin "baserom.dol", 0x45D5C8, 0x40
+	# ROM: 0x45D5C8
+	.4byte 0x803448F0 ;# ptr
+	.4byte 0x803448F8 ;# ptr
+	.4byte 0x80344900 ;# ptr
+	.4byte 0x80344908 ;# ptr
+	.4byte 0x80344918 ;# ptr
+	.4byte 0x80344920 ;# ptr
+	.4byte 0x80344910 ;# ptr
+	.4byte 0x80344930 ;# ptr
+	.4byte 0x80344928 ;# ptr
+	.4byte 0x80344948 ;# ptr
+	.4byte 0x80344940 ;# ptr
+	.4byte 0x80344950 ;# ptr
+	.4byte 0x803448E8 ;# ptr
+	.4byte 0x803448E0 ;# ptr
+	.4byte 0x80344958 ;# ptr
+	.4byte 0x80344938 ;# ptr
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "bta_hh_cb"

@@ -247,9 +247,14 @@ lbl_8040B4DC:
 /* 8040B4DC 0040717C  C8 21 00 08 */	lfd f1, 8(r1)
 lbl_8040B4E0:
 /* 8040B4E0 00407180  38 21 00 20 */	addi r1, r1, 0x20
-/* 8040B4E4 00407184  4E 80 00 20 */	blr 
+/* 8040B4E4 00407184  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "Zero"
 "Zero":
-	.incbin "baserom.dol", 0x41BB78, 0x10
+	# ROM: 0x41BB78
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80000000
+	.4byte 0x00000000
+

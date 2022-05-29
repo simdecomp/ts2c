@@ -41,7 +41,7 @@ lbl_8037A048:
 /* 8037A090 00375D30  91 04 80 00 */	stw r8, -0x8000(r4)
 /* 8037A094 00375D34  91 06 01 C0 */	stw r8, 0x1c0(r6)
 /* 8037A098 00375D38  B0 07 00 02 */	sth r0, 2(r7)
-/* 8037A09C 00375D3C  4E 80 00 20 */	blr 
+/* 8037A09C 00375D3C  4E 80 00 20 */	blr
 
 .global "GXSetTevColorIn"
 "GXSetTevColorIn":
@@ -60,7 +60,7 @@ lbl_8037A048:
 /* 8037A0D0 00375D70  91 23 80 00 */	stw r9, -0x8000(r3)
 /* 8037A0D4 00375D74  91 2A 01 80 */	stw r9, 0x180(r10)
 /* 8037A0D8 00375D78  B0 0B 00 02 */	sth r0, 2(r11)
-/* 8037A0DC 00375D7C  4E 80 00 20 */	blr 
+/* 8037A0DC 00375D7C  4E 80 00 20 */	blr
 
 .global "GXSetTevAlphaIn"
 "GXSetTevAlphaIn":
@@ -79,7 +79,7 @@ lbl_8037A048:
 /* 8037A110 00375DB0  91 23 80 00 */	stw r9, -0x8000(r3)
 /* 8037A114 00375DB4  91 2A 01 C0 */	stw r9, 0x1c0(r10)
 /* 8037A118 00375DB8  B0 0B 00 02 */	sth r0, 2(r11)
-/* 8037A11C 00375DBC  4E 80 00 20 */	blr 
+/* 8037A11C 00375DBC  4E 80 00 20 */	blr
 
 .global "GXSetTevColorOp"
 "GXSetTevColorOp":
@@ -106,7 +106,7 @@ lbl_8037A150:
 /* 8037A168 00375E08  91 63 80 00 */	stw r11, -0x8000(r3)
 /* 8037A16C 00375E0C  91 69 01 80 */	stw r11, 0x180(r9)
 /* 8037A170 00375E10  B0 0A 00 02 */	sth r0, 2(r10)
-/* 8037A174 00375E14  4E 80 00 20 */	blr 
+/* 8037A174 00375E14  4E 80 00 20 */	blr
 
 .global "GXSetTevAlphaOp"
 "GXSetTevAlphaOp":
@@ -133,7 +133,7 @@ lbl_8037A1A8:
 /* 8037A1C0 00375E60  91 63 80 00 */	stw r11, -0x8000(r3)
 /* 8037A1C4 00375E64  91 69 01 C0 */	stw r11, 0x1c0(r9)
 /* 8037A1C8 00375E68  B0 0A 00 02 */	sth r0, 2(r10)
-/* 8037A1CC 00375E6C  4E 80 00 20 */	blr 
+/* 8037A1CC 00375E6C  4E 80 00 20 */	blr
 
 .global "GXSetTevColor"
 "GXSetTevColor":
@@ -160,7 +160,7 @@ lbl_8037A1A8:
 /* 8037A220 00375EC0  98 A4 80 00 */	stb r5, -0x8000(r4)
 /* 8037A224 00375EC4  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037A228 00375EC8  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037A22C 00375ECC  4E 80 00 20 */	blr 
+/* 8037A22C 00375ECC  4E 80 00 20 */	blr
 
 .global "GXSetTevColorS10"
 "GXSetTevColorS10":
@@ -188,7 +188,7 @@ lbl_8037A1A8:
 /* 8037A284 00375F24  98 C5 80 00 */	stb r6, -0x8000(r5)
 /* 8037A288 00375F28  90 85 80 00 */	stw r4, -0x8000(r5)
 /* 8037A28C 00375F2C  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037A290 00375F30  4E 80 00 20 */	blr 
+/* 8037A290 00375F30  4E 80 00 20 */	blr
 
 .global "GXSetTevKColor"
 "GXSetTevKColor":
@@ -214,7 +214,7 @@ lbl_8037A1A8:
 /* 8037A2E0 00375F80  50 E6 A2 16 */	rlwimi r6, r7, 0x14, 8, 0xb
 /* 8037A2E4 00375F84  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037A2E8 00375F88  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037A2EC 00375F8C  4E 80 00 20 */	blr 
+/* 8037A2EC 00375F8C  4E 80 00 20 */	blr
 
 .global "GXSetTevKColorSel"
 "GXSetTevKColorSel":
@@ -239,7 +239,7 @@ lbl_8037A320:
 /* 8037A330 00375FD0  80 63 02 00 */	lwz r3, 0x200(r3)
 /* 8037A334 00375FD4  90 64 80 00 */	stw r3, -0x8000(r4)
 /* 8037A338 00375FD8  B0 05 00 02 */	sth r0, 2(r5)
-/* 8037A33C 00375FDC  4E 80 00 20 */	blr 
+/* 8037A33C 00375FDC  4E 80 00 20 */	blr
 
 .global "GXSetTevKAlphaSel"
 "GXSetTevKAlphaSel":
@@ -264,7 +264,7 @@ lbl_8037A370:
 /* 8037A380 00376020  80 63 02 00 */	lwz r3, 0x200(r3)
 /* 8037A384 00376024  90 64 80 00 */	stw r3, -0x8000(r4)
 /* 8037A388 00376028  B0 05 00 02 */	sth r0, 2(r5)
-/* 8037A38C 0037602C  4E 80 00 20 */	blr 
+/* 8037A38C 0037602C  4E 80 00 20 */	blr
 
 .global "GXSetTevSwapMode"
 "GXSetTevSwapMode":
@@ -282,7 +282,7 @@ lbl_8037A370:
 /* 8037A3BC 0037605C  80 68 01 C0 */	lwz r3, 0x1c0(r8)
 /* 8037A3C0 00376060  90 66 80 00 */	stw r3, -0x8000(r6)
 /* 8037A3C4 00376064  B0 09 00 02 */	sth r0, 2(r9)
-/* 8037A3C8 00376068  4E 80 00 20 */	blr 
+/* 8037A3C8 00376068  4E 80 00 20 */	blr
 
 .global "GXSetTevSwapModeTable"
 "GXSetTevSwapModeTable":
@@ -316,7 +316,7 @@ lbl_8037A370:
 /* 8037A438 003760D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8037A43C 003760DC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8037A440 003760E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8037A444 003760E4  4E 80 00 20 */	blr 
+/* 8037A444 003760E4  4E 80 00 20 */	blr
 
 .global "GXSetAlphaCompare"
 "GXSetAlphaCompare":
@@ -333,7 +333,7 @@ lbl_8037A370:
 /* 8037A470 00376110  50 A9 B2 12 */	rlwimi r9, r5, 0x16, 8, 9
 /* 8037A474 00376114  91 28 80 00 */	stw r9, -0x8000(r8)
 /* 8037A478 00376118  B0 04 00 02 */	sth r0, 2(r4)
-/* 8037A47C 0037611C  4E 80 00 20 */	blr 
+/* 8037A47C 0037611C  4E 80 00 20 */	blr
 
 .global "GXSetZTexture"
 "GXSetZTexture":
@@ -377,7 +377,7 @@ lbl_8037A4D0:
 /* 8037A4FC 0037619C  38 00 00 00 */	li r0, 0
 /* 8037A500 003761A0  90 C4 80 00 */	stw r6, -0x8000(r4)
 /* 8037A504 003761A4  B0 03 00 02 */	sth r0, 2(r3)
-/* 8037A508 003761A8  4E 80 00 20 */	blr 
+/* 8037A508 003761A8  4E 80 00 20 */	blr
 
 .global "GXSetTevOrder"
 "GXSetTevOrder":
@@ -477,7 +477,7 @@ lbl_8037A638:
 /* 8037A658 003762F8  80 05 05 FC */	lwz r0, 0x5fc(r5)
 /* 8037A65C 003762FC  60 00 00 01 */	ori r0, r0, 1
 /* 8037A660 00376300  90 05 05 FC */	stw r0, 0x5fc(r5)
-/* 8037A664 00376304  4E 80 00 20 */	blr 
+/* 8037A664 00376304  4E 80 00 20 */	blr
 
 .global "GXSetNumTevStages"
 "GXSetNumTevStages":
@@ -489,21 +489,56 @@ lbl_8037A638:
 /* 8037A67C 0037631C  80 04 05 FC */	lwz r0, 0x5fc(r4)
 /* 8037A680 00376320  60 00 00 04 */	ori r0, r0, 4
 /* 8037A684 00376324  90 04 05 FC */	stw r0, 0x5fc(r4)
-/* 8037A688 00376328  4E 80 00 20 */	blr 
+/* 8037A688 00376328  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "TEVCOpTableST0"
 "TEVCOpTableST0":
-	.incbin "baserom.dol", 0x4641C0, 0x14
+	# ROM: 0x4641C0
+	.4byte 0xC008F8AF
+	.4byte 0xC008A89F
+	.4byte 0xC008AC8F
+	.4byte 0xC008FFF8
+	.4byte 0xC008FFFA
+
 .global "TEVCOpTableST1"
 "TEVCOpTableST1":
-	.incbin "baserom.dol", 0x4641D4, 0x14
+	# ROM: 0x4641D4
+	.4byte 0xC008F80F
+	.4byte 0xC008089F
+	.4byte 0xC0080C8F
+	.4byte 0xC008FFF8
+	.4byte 0xC008FFF0
+
 .global "TEVAOpTableST0"
 "TEVAOpTableST0":
-	.incbin "baserom.dol", 0x4641E8, 0x14
+	# ROM: 0x4641E8
+	.4byte 0xC108F2F0
+	.4byte 0xC108FFD0
+	.4byte 0xC108F2F0
+	.4byte 0xC108FFC0
+	.4byte 0xC108FFD0
+
 .global "TEVAOpTableST1"
 "TEVAOpTableST1":
-	.incbin "baserom.dol", 0x4641FC, 0x14
+	# ROM: 0x4641FC
+	.4byte 0xC108F070
+	.4byte 0xC108FF80
+	.4byte 0xC108F070
+	.4byte 0xC108FFC0
+	.4byte 0xC108FF80
+
 .global "c2r$2562"
 "c2r$2562":
-	.incbin "baserom.dol", 0x464210, 0x28
+	# ROM: 0x464210
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x00000007
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000000
+

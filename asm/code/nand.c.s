@@ -80,7 +80,7 @@ lbl_803D7ED0:
 /* 803D7ED8 003D3B78  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803D7EDC 003D3B7C  7C 08 03 A6 */	mtlr r0
 /* 803D7EE0 003D3B80  38 21 00 70 */	addi r1, r1, 0x70
-/* 803D7EE4 003D3B84  4E 80 00 20 */	blr 
+/* 803D7EE4 003D3B84  4E 80 00 20 */	blr
 
 .global "NANDCreate"
 "NANDCreate":
@@ -114,7 +114,7 @@ lbl_803D7F40:
 /* 803D7F4C 003D3BEC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D7F50 003D3BF0  7C 08 03 A6 */	mtlr r0
 /* 803D7F54 003D3BF4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D7F58 003D3BF8  4E 80 00 20 */	blr 
+/* 803D7F58 003D3BF8  4E 80 00 20 */	blr
 
 .global "NANDPrivateCreateAsync"
 "NANDPrivateCreateAsync":
@@ -149,7 +149,7 @@ lbl_803D7FBC:
 /* 803D7FC4 003D3C64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D7FC8 003D3C68  7C 08 03 A6 */	mtlr r0
 /* 803D7FCC 003D3C6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D7FD0 003D3C70  4E 80 00 20 */	blr 
+/* 803D7FD0 003D3C70  4E 80 00 20 */	blr
 
 .global "NANDDelete"
 "NANDDelete":
@@ -200,7 +200,7 @@ lbl_803D8070:
 /* 803D8074 003D3D14  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 803D8078 003D3D18  7C 08 03 A6 */	mtlr r0
 /* 803D807C 003D3D1C  38 21 00 50 */	addi r1, r1, 0x50
-/* 803D8080 003D3D20  4E 80 00 20 */	blr 
+/* 803D8080 003D3D20  4E 80 00 20 */	blr
 
 .global "NANDPrivateDeleteAsync"
 "NANDPrivateDeleteAsync":
@@ -253,7 +253,7 @@ lbl_803D8128:
 /* 803D8134 003D3DD4  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 803D8138 003D3DD8  7C 08 03 A6 */	mtlr r0
 /* 803D813C 003D3DDC  38 21 00 60 */	addi r1, r1, 0x60
-/* 803D8140 003D3DE0  4E 80 00 20 */	blr 
+/* 803D8140 003D3DE0  4E 80 00 20 */	blr
 
 .global "NANDRead"
 "NANDRead":
@@ -284,7 +284,7 @@ lbl_803D8190:
 /* 803D819C 003D3E3C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D81A0 003D3E40  7C 08 03 A6 */	mtlr r0
 /* 803D81A4 003D3E44  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D81A8 003D3E48  4E 80 00 20 */	blr 
+/* 803D81A8 003D3E48  4E 80 00 20 */	blr
 
 .global "NANDReadAsync"
 "NANDReadAsync":
@@ -319,7 +319,7 @@ lbl_803D820C:
 /* 803D8214 003D3EB4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D8218 003D3EB8  7C 08 03 A6 */	mtlr r0
 /* 803D821C 003D3EBC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8220 003D3EC0  4E 80 00 20 */	blr 
+/* 803D8220 003D3EC0  4E 80 00 20 */	blr
 
 .global "NANDWrite"
 "NANDWrite":
@@ -350,7 +350,7 @@ lbl_803D8270:
 /* 803D827C 003D3F1C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D8280 003D3F20  7C 08 03 A6 */	mtlr r0
 /* 803D8284 003D3F24  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8288 003D3F28  4E 80 00 20 */	blr 
+/* 803D8288 003D3F28  4E 80 00 20 */	blr
 
 .global "NANDWriteAsync"
 "NANDWriteAsync":
@@ -385,7 +385,7 @@ lbl_803D82EC:
 /* 803D82F4 003D3F94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D82F8 003D3F98  7C 08 03 A6 */	mtlr r0
 /* 803D82FC 003D3F9C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8300 003D3FA0  4E 80 00 20 */	blr 
+/* 803D8300 003D3FA0  4E 80 00 20 */	blr
 
 .global "NANDSeek"
 "NANDSeek":
@@ -435,7 +435,7 @@ lbl_803D8388:
 /* 803D8394 003D4034  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803D8398 003D4038  7C 08 03 A6 */	mtlr r0
 /* 803D839C 003D403C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D83A0 003D4040  4E 80 00 20 */	blr 
+/* 803D83A0 003D4040  4E 80 00 20 */	blr
 
 .global "NANDSeekAsync"
 "NANDSeekAsync":
@@ -489,7 +489,7 @@ lbl_803D843C:
 /* 803D8444 003D40E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D8448 003D40E8  7C 08 03 A6 */	mtlr r0
 /* 803D844C 003D40EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8450 003D40F0  4E 80 00 20 */	blr 
+/* 803D8450 003D40F0  4E 80 00 20 */	blr
 
 .global "nandCreateDir"
 "nandCreateDir":
@@ -571,7 +571,7 @@ lbl_803D8568:
 /* 803D8570 003D4210  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803D8574 003D4214  7C 08 03 A6 */	mtlr r0
 /* 803D8578 003D4218  38 21 00 70 */	addi r1, r1, 0x70
-/* 803D857C 003D421C  4E 80 00 20 */	blr 
+/* 803D857C 003D421C  4E 80 00 20 */	blr
 
 .global "NANDPrivateCreateDirAsync"
 "NANDPrivateCreateDirAsync":
@@ -606,7 +606,7 @@ lbl_803D85E0:
 /* 803D85E8 003D4288  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D85EC 003D428C  7C 08 03 A6 */	mtlr r0
 /* 803D85F0 003D4290  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D85F4 003D4294  4E 80 00 20 */	blr 
+/* 803D85F4 003D4294  4E 80 00 20 */	blr
 
 .global "nandComposePerm"
 "nandComposePerm":
@@ -636,7 +636,7 @@ lbl_803D8638:
 /* 803D8640 003D42E0  60 E7 00 02 */	ori r7, r7, 2
 lbl_803D8644:
 /* 803D8644 003D42E4  98 E3 00 00 */	stb r7, 0(r3)
-/* 803D8648 003D42E8  4E 80 00 20 */	blr 
+/* 803D8648 003D42E8  4E 80 00 20 */	blr
 
 .global "nandSplitPerm"
 "nandSplitPerm":
@@ -675,11 +675,11 @@ lbl_803D86AC:
 /* 803D86BC 003D435C  90 06 00 00 */	stw r0, 0(r6)
 lbl_803D86C0:
 /* 803D86C0 003D4360  54 60 07 BD */	rlwinm. r0, r3, 0, 0x1e, 0x1e
-/* 803D86C4 003D4364  4D 82 00 20 */	beqlr 
+/* 803D86C4 003D4364  4D 82 00 20 */	beqlr
 /* 803D86C8 003D4368  80 06 00 00 */	lwz r0, 0(r6)
 /* 803D86CC 003D436C  60 00 00 02 */	ori r0, r0, 2
 /* 803D86D0 003D4370  90 06 00 00 */	stw r0, 0(r6)
-/* 803D86D4 003D4374  4E 80 00 20 */	blr 
+/* 803D86D4 003D4374  4E 80 00 20 */	blr
 
 .global "nandGetStatus"
 "nandGetStatus":
@@ -771,7 +771,7 @@ lbl_803D880C:
 /* 803D881C 003D44BC  83 81 00 60 */	lwz r28, 0x60(r1)
 /* 803D8820 003D44C0  7C 08 03 A6 */	mtlr r0
 /* 803D8824 003D44C4  38 21 00 70 */	addi r1, r1, 0x70
-/* 803D8828 003D44C8  4E 80 00 20 */	blr 
+/* 803D8828 003D44C8  4E 80 00 20 */	blr
 
 .global "nandGetStatusCallback"
 "nandGetStatusCallback":
@@ -798,13 +798,13 @@ lbl_803D8870:
 /* 803D8878 003D4518  81 9F 00 04 */	lwz r12, 4(r31)
 /* 803D887C 003D451C  7F E4 FB 78 */	mr r4, r31
 /* 803D8880 003D4520  7D 89 03 A6 */	mtctr r12
-/* 803D8884 003D4524  4E 80 04 21 */	bctrl 
+/* 803D8884 003D4524  4E 80 04 21 */	bctrl
 /* 803D8888 003D4528  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803D888C 003D452C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803D8890 003D4530  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803D8894 003D4534  7C 08 03 A6 */	mtlr r0
 /* 803D8898 003D4538  38 21 00 10 */	addi r1, r1, 0x10
-/* 803D889C 003D453C  4E 80 00 20 */	blr 
+/* 803D889C 003D453C  4E 80 00 20 */	blr
 
 .global "NANDPrivateGetStatusAsync"
 "NANDPrivateGetStatusAsync":
@@ -842,4 +842,4 @@ lbl_803D8904:
 /* 803D8914 003D45B4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803D8918 003D45B8  7C 08 03 A6 */	mtlr r0
 /* 803D891C 003D45BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803D8920 003D45C0  4E 80 00 20 */	blr 
+/* 803D8920 003D45C0  4E 80 00 20 */	blr

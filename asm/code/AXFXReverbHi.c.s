@@ -39,7 +39,7 @@
 /* 80339F2C 00335BCC  38 60 00 01 */	li r3, 1
 /* 80339F30 00335BD0  7C 08 03 A6 */	mtlr r0
 /* 80339F34 00335BD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80339F38 00335BD8  4E 80 00 20 */	blr 
+/* 80339F38 00335BD8  4E 80 00 20 */	blr
 
 .global "AXFXReverbHiCallback"
 "AXFXReverbHiCallback":
@@ -48,7 +48,11 @@
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB708
 lbl_805DB708:
-	.incbin "baserom.dol", 0x489A28, 0x4
+	# ROM: 0x489A28
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB70C
 lbl_805DB70C:
-	.incbin "baserom.dol", 0x489A2C, 0x4
+	# ROM: 0x489A2C
+	.4byte 0x3F800000
+

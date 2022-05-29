@@ -11,7 +11,7 @@
 /* 803A4844 003A04E4  98 83 00 0C */	stb r4, 0xc(r3)
 /* 803A4848 003A04E8  D0 03 00 04 */	stfs f0, 4(r3)
 /* 803A484C 003A04EC  90 03 00 08 */	stw r0, 8(r3)
-/* 803A4850 003A04F0  4E 80 00 20 */	blr 
+/* 803A4850 003A04F0  4E 80 00 20 */	blr
 
 .global "Reset__Q46nw4hbm3snd6detail3LfoFv"
 "Reset__Q46nw4hbm3snd6detail3LfoFv":
@@ -19,7 +19,7 @@
 /* 803A4858 003A04F8  38 00 00 00 */	li r0, 0
 /* 803A485C 003A04FC  90 03 00 10 */	stw r0, 0x10(r3)
 /* 803A4860 003A0500  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 803A4864 003A0504  4E 80 00 20 */	blr 
+/* 803A4864 003A0504  4E 80 00 20 */	blr
 
 .global "Update__Q46nw4hbm3snd6detail3LfoFi"
 "Update__Q46nw4hbm3snd6detail3LfoFi":
@@ -64,7 +64,7 @@ lbl_803A489C:
 /* 803A48F8 003A0598  D0 03 00 14 */	stfs f0, 0x14(r3)
 lbl_803A48FC:
 /* 803A48FC 003A059C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A4900 003A05A0  4E 80 00 20 */	blr 
+/* 803A4900 003A05A0  4E 80 00 20 */	blr
 
 .global "GetValue__Q46nw4hbm3snd6detail3LfoCFv"
 "GetValue__Q46nw4hbm3snd6detail3LfoCFv":
@@ -118,7 +118,7 @@ lbl_803A49B0:
 /* 803A49B4 003A0654  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 803A49B8 003A0658  7C 08 03 A6 */	mtlr r0
 /* 803A49BC 003A065C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803A49C0 003A0660  4E 80 00 20 */	blr 
+/* 803A49C0 003A0660  4E 80 00 20 */	blr
 
 .global "GetSinIdx__Q46nw4hbm3snd6detail3LfoFi"
 "GetSinIdx__Q46nw4hbm3snd6detail3LfoFi":
@@ -187,43 +187,79 @@ lbl_803A4AA0:
 /* 803A4AA4 003A0744  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A4AA8 003A0748  7C 08 03 A6 */	mtlr r0
 /* 803A4AAC 003A074C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A4AB0 003A0750  4E 80 00 20 */	blr 
+/* 803A4AB0 003A0750  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "sinTable$570"
 "sinTable$570":
-	.incbin "baserom.dol", 0x419570, 0x28
+	# ROM: 0x419570
+	.4byte 0x00060C13
+	.4byte 0x191F252B
+	.4byte 0x31363C41
+	.4byte 0x474C5155
+	.4byte 0x5A5E6266
+	.4byte 0x6A6D7073
+	.4byte 0x75787A7B
+	.4byte 0x7D7E7E7F
+	.4byte 0x7F000000
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046E458
 lbl_8046E458:
-	.incbin "baserom.dol", 0x46A558, 0xC
+	# ROM: 0x46A558
+	.asciz "snd_Lfo.cpp"
+
 .global lbl_8046E464
 lbl_8046E464:
-	.incbin "baserom.dol", 0x46A564, 0x3C
+	# ROM: 0x46A564
+	.asciz "index is out of bounds(%d)\n%d <= index < %d not satisfied."
+	.byte 0x00
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBB40
 lbl_805DBB40:
-	.incbin "baserom.dol", 0x489E60, 0x4
+	# ROM: 0x489E60
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBB44
 lbl_805DBB44:
-	.incbin "baserom.dol", 0x489E64, 0x4
+	# ROM: 0x489E64
+	.4byte 0x40C80000
+
 .global lbl_805DBB48
 lbl_805DBB48:
-	.incbin "baserom.dol", 0x489E68, 0x8
+	# ROM: 0x489E68
+	.4byte 0x447A0000
+	.4byte 0x00000000
+
 .global lbl_805DBB50
 lbl_805DBB50:
-	.incbin "baserom.dol", 0x489E70, 0x8
+	# ROM: 0x489E70
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBB58
 lbl_805DBB58:
-	.incbin "baserom.dol", 0x489E78, 0x4
+	# ROM: 0x489E78
+	.4byte 0x40800000
+
 .global lbl_805DBB5C
 lbl_805DBB5C:
-	.incbin "baserom.dol", 0x489E7C, 0x4
+	# ROM: 0x489E7C
+	.4byte 0x42000000
+
 .global lbl_805DBB60
 lbl_805DBB60:
-	.incbin "baserom.dol", 0x489E80, 0x8
+	# ROM: 0x489E80
+	.4byte 0x42FE0000
+	.4byte 0x00000000
+
 .global lbl_805DBB68
 lbl_805DBB68:
-	.incbin "baserom.dol", 0x489E88, 0x8
+	# ROM: 0x489E88
+	.4byte 0x43300000
+	.4byte 0x00000000
+

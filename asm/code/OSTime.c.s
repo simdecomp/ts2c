@@ -8,12 +8,12 @@
 /* 803E4020 003DFCC0  7C AD 42 E6 */	mftbu r5
 /* 803E4024 003DFCC4  7C 03 28 00 */	cmpw r3, r5
 /* 803E4028 003DFCC8  40 82 FF F0 */	bne "OSGetTime"
-/* 803E402C 003DFCCC  4E 80 00 20 */	blr 
+/* 803E402C 003DFCCC  4E 80 00 20 */	blr
 
 .global "OSGetTick"
 "OSGetTick":
 /* 803E4030 003DFCD0  7C 6C 42 E6 */	mftb r3, 0x10c
-/* 803E4034 003DFCD4  4E 80 00 20 */	blr 
+/* 803E4034 003DFCD4  4E 80 00 20 */	blr
 
 .global "__OSGetSystemTime"
 "__OSGetSystemTime":
@@ -41,7 +41,7 @@
 /* 803E408C 003DFD2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E4090 003DFD30  7C 08 03 A6 */	mtlr r0
 /* 803E4094 003DFD34  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4098 003DFD38  4E 80 00 20 */	blr 
+/* 803E4098 003DFD38  4E 80 00 20 */	blr
 
 .global "__OSTimeToSystemTime"
 "__OSTimeToSystemTime":
@@ -66,7 +66,7 @@
 /* 803E40E4 003DFD84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803E40E8 003DFD88  7C 08 03 A6 */	mtlr r0
 /* 803E40EC 003DFD8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E40F0 003DFD90  4E 80 00 20 */	blr 
+/* 803E40F0 003DFD90  4E 80 00 20 */	blr
 
 .global "GetDates"
 "GetDates":
@@ -170,7 +170,7 @@ lbl_803E4238:
 /* 803E4254 003DFEF4  7C 63 00 50 */	subf r3, r3, r0
 /* 803E4258 003DFEF8  38 03 00 01 */	addi r0, r3, 1
 /* 803E425C 003DFEFC  90 04 00 0C */	stw r0, 0xc(r4)
-/* 803E4260 003DFF00  4E 80 00 20 */	blr 
+/* 803E4260 003DFF00  4E 80 00 20 */	blr
 
 .global "OSTicksToCalendarTime"
 "OSTicksToCalendarTime":
@@ -289,12 +289,38 @@ lbl_803E43A4:
 /* 803E441C 003E00BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E4420 003E00C0  7C 08 03 A6 */	mtlr r0
 /* 803E4424 003E00C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803E4428 003E00C8  4E 80 00 20 */	blr 
+/* 803E4428 003E00C8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "YearDays"
 "YearDays":
-	.incbin "baserom.dol", 0x4738F8, 0x30
+	# ROM: 0x4738F8
+	.4byte 0x00000000
+	.4byte 0x0000001F
+	.4byte 0x0000003B
+	.4byte 0x0000005A
+	.4byte 0x00000078
+	.4byte 0x00000097
+	.4byte 0x000000B5
+	.4byte 0x000000D4
+	.4byte 0x000000F3
+	.4byte 0x00000111
+	.4byte 0x00000130
+	.4byte 0x0000014E
+
 .global "LeapYearDays"
 "LeapYearDays":
-	.incbin "baserom.dol", 0x473928, 0x30
+	# ROM: 0x473928
+	.4byte 0x00000000
+	.4byte 0x0000001F
+	.4byte 0x0000003C
+	.4byte 0x0000005B
+	.4byte 0x00000079
+	.4byte 0x00000098
+	.4byte 0x000000B6
+	.4byte 0x000000D5
+	.4byte 0x000000F4
+	.4byte 0x00000112
+	.4byte 0x00000131
+	.4byte 0x0000014F
+

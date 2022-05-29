@@ -55,7 +55,7 @@ lbl_80354400:
 /* 80354410 003500B0  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80354414 003500B4  7C 08 03 A6 */	mtlr r0
 /* 80354418 003500B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035441C 003500BC  4E 80 00 20 */	blr 
+/* 8035441C 003500BC  4E 80 00 20 */	blr
 
 .global "hidh_search_callback"
 "hidh_search_callback":
@@ -82,7 +82,7 @@ lbl_80354400:
 /* 80354470 00350110  38 80 00 00 */	li r4, 0
 /* 80354474 00350114  38 A0 00 00 */	li r5, 0
 /* 80354478 00350118  7D 89 03 A6 */	mtctr r12
-/* 8035447C 0035011C  4E 80 04 21 */	bctrl 
+/* 8035447C 0035011C  4E 80 04 21 */	bctrl
 /* 80354480 00350120  48 00 03 D0 */	b lbl_80354850
 lbl_80354484:
 /* 80354484 00350124  7C 83 23 78 */	mr r3, r4
@@ -97,7 +97,7 @@ lbl_80354484:
 /* 803544A8 00350148  38 80 00 00 */	li r4, 0
 /* 803544AC 0035014C  38 A0 00 00 */	li r5, 0
 /* 803544B0 00350150  7D 89 03 A6 */	mtctr r12
-/* 803544B4 00350154  4E 80 04 21 */	bctrl 
+/* 803544B4 00350154  4E 80 04 21 */	bctrl
 /* 803544B8 00350158  48 00 03 98 */	b lbl_80354850
 lbl_803544BC:
 /* 803544BC 0035015C  7F C3 F3 78 */	mr r3, r30
@@ -138,7 +138,7 @@ lbl_80354534:
 /* 80354544 003501E4  81 85 03 84 */	lwz r12, 0x384(r5)
 /* 80354548 003501E8  38 A0 00 00 */	li r5, 0
 /* 8035454C 003501EC  7D 89 03 A6 */	mtctr r12
-/* 80354550 003501F0  4E 80 04 21 */	bctrl 
+/* 80354550 003501F0  4E 80 04 21 */	bctrl
 /* 80354554 003501F4  48 00 02 FC */	b lbl_80354850
 lbl_80354558:
 /* 80354558 003501F8  54 60 05 3F */	clrlwi. r0, r3, 0x14
@@ -351,7 +351,7 @@ lbl_8035482C:
 /* 80354840 003504E0  38 A6 03 8C */	addi r5, r6, 0x38c
 /* 80354844 003504E4  93 E6 03 FC */	stw r31, 0x3fc(r6)
 /* 80354848 003504E8  7D 89 03 A6 */	mtctr r12
-/* 8035484C 003504EC  4E 80 04 21 */	bctrl 
+/* 8035484C 003504EC  4E 80 04 21 */	bctrl
 lbl_80354850:
 /* 80354850 003504F0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80354854 003504F4  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -360,7 +360,7 @@ lbl_80354850:
 /* 80354860 00350500  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80354864 00350504  7C 08 03 A6 */	mtlr r0
 /* 80354868 00350508  38 21 00 30 */	addi r1, r1, 0x30
-/* 8035486C 0035050C  4E 80 00 20 */	blr 
+/* 8035486C 0035050C  4E 80 00 20 */	blr
 
 .global "HID_HostInit"
 "HID_HostInit":
@@ -380,7 +380,7 @@ lbl_80354850:
 /* 803548A4 00350544  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803548A8 00350548  7C 08 03 A6 */	mtlr r0
 /* 803548AC 0035054C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803548B0 00350550  4E 80 00 20 */	blr 
+/* 803548B0 00350550  4E 80 00 20 */	blr
 
 .global "HID_HostRegister"
 "HID_HostRegister":
@@ -418,7 +418,7 @@ lbl_80354918:
 /* 80354920 003505C0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80354924 003505C4  7C 08 03 A6 */	mtlr r0
 /* 80354928 003505C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035492C 003505CC  4E 80 00 20 */	blr 
+/* 8035492C 003505CC  4E 80 00 20 */	blr
 
 .global "HID_HostDeregister"
 "HID_HostDeregister":
@@ -483,7 +483,7 @@ lbl_803549FC:
 /* 80354A04 003506A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80354A08 003506A8  7C 08 03 A6 */	mtlr r0
 /* 80354A0C 003506AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80354A10 003506B0  4E 80 00 20 */	blr 
+/* 80354A10 003506B0  4E 80 00 20 */	blr
 
 .global "HID_HostAddDev"
 "HID_HostAddDev":
@@ -594,7 +594,7 @@ lbl_80354B8C:
 /* 80354B94 00350834  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80354B98 00350838  7C 08 03 A6 */	mtlr r0
 /* 80354B9C 0035083C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80354BA0 00350840  4E 80 00 20 */	blr 
+/* 80354BA0 00350840  4E 80 00 20 */	blr
 
 .global "HID_HostRemoveDev"
 "HID_HostRemoveDev":
@@ -652,7 +652,7 @@ lbl_80354C54:
 /* 80354C5C 003508FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80354C60 00350900  7C 08 03 A6 */	mtlr r0
 /* 80354C64 00350904  38 21 00 20 */	addi r1, r1, 0x20
-/* 80354C68 00350908  4E 80 00 20 */	blr 
+/* 80354C68 00350908  4E 80 00 20 */	blr
 
 .global "HID_HostOpenDev"
 "HID_HostOpenDev":
@@ -662,7 +662,7 @@ lbl_80354C54:
 /* 80354C78 00350918  2C 00 00 00 */	cmpwi r0, 0
 /* 80354C7C 0035091C  40 82 00 0C */	bne lbl_80354C88
 /* 80354C80 00350920  38 60 00 01 */	li r3, 1
-/* 80354C84 00350924  4E 80 00 20 */	blr 
+/* 80354C84 00350924  4E 80 00 20 */	blr
 lbl_80354C88:
 /* 80354C88 00350928  28 03 00 10 */	cmplwi r3, 0x10
 /* 80354C8C 0035092C  41 81 00 14 */	bgt lbl_80354CA0
@@ -672,19 +672,19 @@ lbl_80354C88:
 /* 80354C9C 0035093C  40 82 00 0C */	bne lbl_80354CA8
 lbl_80354CA0:
 /* 80354CA0 00350940  38 60 00 05 */	li r3, 5
-/* 80354CA4 00350944  4E 80 00 20 */	blr 
+/* 80354CA4 00350944  4E 80 00 20 */	blr
 lbl_80354CA8:
 /* 80354CA8 00350948  7C 84 2A 14 */	add r4, r4, r5
 /* 80354CAC 0035094C  88 04 00 0A */	lbz r0, 0xa(r4)
 /* 80354CB0 00350950  2C 00 00 00 */	cmpwi r0, 0
 /* 80354CB4 00350954  41 82 00 0C */	beq lbl_80354CC0
 /* 80354CB8 00350958  38 60 00 0A */	li r3, 0xa
-/* 80354CBC 0035095C  4E 80 00 20 */	blr 
+/* 80354CBC 0035095C  4E 80 00 20 */	blr
 lbl_80354CC0:
 /* 80354CC0 00350960  38 00 00 01 */	li r0, 1
 /* 80354CC4 00350964  98 04 00 0C */	stb r0, 0xc(r4)
 /* 80354CC8 00350968  48 00 23 28 */	b "hidh_conn_initiate"
-/* 80354CCC 0035096C  4E 80 00 20 */	blr 
+/* 80354CCC 0035096C  4E 80 00 20 */	blr
 
 .global "HID_HostWriteDev"
 "HID_HostWriteDev":
@@ -776,7 +776,7 @@ lbl_80354DF4:
 /* 80354E00 00350AA0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80354E04 00350AA4  7C 08 03 A6 */	mtlr r0
 /* 80354E08 00350AA8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80354E0C 00350AAC  4E 80 00 20 */	blr 
+/* 80354E0C 00350AAC  4E 80 00 20 */	blr
 
 .global "HID_HostCloseDev"
 "HID_HostCloseDev":
@@ -824,7 +824,7 @@ lbl_80354E98:
 /* 80354EA0 00350B40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80354EA4 00350B44  7C 08 03 A6 */	mtlr r0
 /* 80354EA8 00350B48  38 21 00 20 */	addi r1, r1, 0x20
-/* 80354EAC 00350B4C  4E 80 00 20 */	blr 
+/* 80354EAC 00350B4C  4E 80 00 20 */	blr
 
 .global "HID_HostSetSecurityLevel"
 "HID_HostSetSecurityLevel":
@@ -978,12 +978,31 @@ lbl_803550BC:
 /* 803550C8 00350D68  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803550CC 00350D6C  7C 08 03 A6 */	mtlr r0
 /* 803550D0 00350D70  38 21 00 20 */	addi r1, r1, 0x20
-/* 803550D4 00350D74  4E 80 00 20 */	blr 
+/* 803550D4 00350D74  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80463248
 lbl_80463248:
-	.incbin "baserom.dol", 0x45F348, 0x118
+	# ROM: 0x45F348
+	.asciz "HID_ERR_NOT_REGISTERED"
+	.byte 0x00
+	.asciz "HID_ERR_INVALID_PARAM"
+	.byte 0x00, 0x00
+	.asciz "HID_ERR_NO_CONNECTION dev_handle %d"
+	.asciz "Security Registration 1 failed"
+	.byte 0x00
+	.asciz "Security Registration 2 failed"
+	.byte 0x00
+	.asciz "Security Registration 3 failed"
+	.byte 0x00
+	.asciz "Security Registration 4 failed"
+	.byte 0x00
+	.asciz "Security Registration 5 failed"
+	.byte 0x00
+	.asciz "Security Registration 6 failed"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "hh_cb"

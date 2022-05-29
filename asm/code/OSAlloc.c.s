@@ -39,18 +39,18 @@ lbl_803DBB34:
 /* 803DBB40 003D77E0  80 A6 00 08 */	lwz r5, 8(r6)
 /* 803DBB44 003D77E4  7C 06 2A 14 */	add r0, r6, r5
 /* 803DBB48 003D77E8  7C 00 20 40 */	cmplw r0, r4
-/* 803DBB4C 003D77EC  4C 82 00 20 */	bnelr 
+/* 803DBB4C 003D77EC  4C 82 00 20 */	bnelr
 /* 803DBB50 003D77F0  80 04 00 08 */	lwz r0, 8(r4)
 /* 803DBB54 003D77F4  2C 07 00 00 */	cmpwi r7, 0
 /* 803DBB58 003D77F8  7C 05 02 14 */	add r0, r5, r0
 /* 803DBB5C 003D77FC  90 06 00 08 */	stw r0, 8(r6)
 /* 803DBB60 003D7800  90 E6 00 04 */	stw r7, 4(r6)
-/* 803DBB64 003D7804  4D 82 00 20 */	beqlr 
+/* 803DBB64 003D7804  4D 82 00 20 */	beqlr
 /* 803DBB68 003D7808  90 C7 00 00 */	stw r6, 0(r7)
-/* 803DBB6C 003D780C  4E 80 00 20 */	blr 
+/* 803DBB6C 003D780C  4E 80 00 20 */	blr
 lbl_803DBB70:
 /* 803DBB70 003D7810  7C 83 23 78 */	mr r3, r4
-/* 803DBB74 003D7814  4E 80 00 20 */	blr 
+/* 803DBB74 003D7814  4E 80 00 20 */	blr
 
 .global "OSAllocFromHeap"
 "OSAllocFromHeap":
@@ -74,7 +74,7 @@ lbl_803DBBB0:
 /* 803DBBB0 003D7850  2C 06 00 00 */	cmpwi r6, 0
 /* 803DBBB4 003D7854  40 82 00 0C */	bne lbl_803DBBC0
 /* 803DBBB8 003D7858  38 60 00 00 */	li r3, 0
-/* 803DBBBC 003D785C  4E 80 00 20 */	blr 
+/* 803DBBBC 003D785C  4E 80 00 20 */	blr
 lbl_803DBBC0:
 /* 803DBBC0 003D7860  80 06 00 08 */	lwz r0, 8(r6)
 /* 803DBBC4 003D7864  7C 04 00 50 */	subf r0, r4, r0
@@ -127,7 +127,7 @@ lbl_803DBC48:
 lbl_803DBC64:
 /* 803DBC64 003D7904  90 C5 00 08 */	stw r6, 8(r5)
 /* 803DBC68 003D7908  38 66 00 20 */	addi r3, r6, 0x20
-/* 803DBC6C 003D790C  4E 80 00 20 */	blr 
+/* 803DBC6C 003D790C  4E 80 00 20 */	blr
 
 .global "OSFreeToHeap"
 "OSFreeToHeap":
@@ -163,12 +163,15 @@ lbl_803DBCC4:
 /* 803DBCD8 003D7978  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803DBCDC 003D797C  7C 08 03 A6 */	mtlr r0
 /* 803DBCE0 003D7980  38 21 00 10 */	addi r1, r1, 0x10
-/* 803DBCE4 003D7984  4E 80 00 20 */	blr 
+/* 803DBCE4 003D7984  4E 80 00 20 */	blr
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__OSCurrHeap"
 "__OSCurrHeap":
-	.incbin "baserom.dol", 0x487310, 0x8
+	# ROM: 0x487310
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "HeapArray"

@@ -27,7 +27,7 @@
 /* 8033F1C4 0033AE64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033F1C8 0033AE68  7C 08 03 A6 */	mtlr r0
 /* 8033F1CC 0033AE6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F1D0 0033AE70  4E 80 00 20 */	blr 
+/* 8033F1D0 0033AE70  4E 80 00 20 */	blr
 
 .global "bta_sys_event"
 "bta_sys_event":
@@ -72,7 +72,7 @@ lbl_8033F244:
 /* 8033F260 0033AF00  81 83 00 00 */	lwz r12, 0(r3)
 /* 8033F264 0033AF04  7F C3 F3 78 */	mr r3, r30
 /* 8033F268 0033AF08  7D 89 03 A6 */	mtctr r12
-/* 8033F26C 0033AF0C  4E 80 04 21 */	bctrl 
+/* 8033F26C 0033AF0C  4E 80 04 21 */	bctrl
 /* 8033F270 0033AF10  7C 7F 1B 78 */	mr r31, r3
 /* 8033F274 0033AF14  48 00 00 24 */	b lbl_8033F298
 lbl_8033F278:
@@ -95,7 +95,7 @@ lbl_8033F2A8:
 /* 8033F2B0 0033AF50  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033F2B4 0033AF54  7C 08 03 A6 */	mtlr r0
 /* 8033F2B8 0033AF58  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F2BC 0033AF5C  4E 80 00 20 */	blr 
+/* 8033F2BC 0033AF5C  4E 80 00 20 */	blr
 
 .global "bta_sys_timer_update"
 "bta_sys_timer_update":
@@ -103,10 +103,10 @@ lbl_8033F2A8:
 /* 8033F2C4 0033AF64  38 63 3D F8 */	addi r3, r3, "bta_sys_cb"@l
 /* 8033F2C8 0033AF68  88 03 00 7C */	lbz r0, 0x7c(r3)
 /* 8033F2CC 0033AF6C  2C 00 00 00 */	cmpwi r0, 0
-/* 8033F2D0 0033AF70  4C 82 00 20 */	bnelr 
+/* 8033F2D0 0033AF70  4C 82 00 20 */	bnelr
 /* 8033F2D4 0033AF74  38 63 00 68 */	addi r3, r3, 0x68
 /* 8033F2D8 0033AF78  48 00 01 28 */	b "ptim_timer_update"
-/* 8033F2DC 0033AF7C  4E 80 00 20 */	blr 
+/* 8033F2DC 0033AF7C  4E 80 00 20 */	blr
 
 .global "bta_sys_register"
 "bta_sys_register":
@@ -114,7 +114,7 @@ lbl_8033F2A8:
 /* 8033F2E4 0033AF84  54 60 15 BA */	rlwinm r0, r3, 2, 0x16, 0x1d
 /* 8033F2E8 0033AF88  38 A5 3D F8 */	addi r5, r5, "bta_sys_cb"@l
 /* 8033F2EC 0033AF8C  7C 85 01 2E */	stwx r4, r5, r0
-/* 8033F2F0 0033AF90  4E 80 00 20 */	blr 
+/* 8033F2F0 0033AF90  4E 80 00 20 */	blr
 
 .global "bta_sys_sendmsg"
 "bta_sys_sendmsg":
@@ -163,7 +163,7 @@ lbl_8033F364:
 /* 8033F374 0033B014  2C 0C 00 00 */	cmpwi r12, 0
 /* 8033F378 0033B018  41 82 00 0C */	beq lbl_8033F384
 /* 8033F37C 0033B01C  7D 89 03 A6 */	mtctr r12
-/* 8033F380 0033B020  4E 80 04 21 */	bctrl 
+/* 8033F380 0033B020  4E 80 04 21 */	bctrl
 lbl_8033F384:
 /* 8033F384 0033B024  3B DE 00 01 */	addi r30, r30, 1
 /* 8033F388 0033B028  3B FF 00 04 */	addi r31, r31, 4
@@ -174,20 +174,26 @@ lbl_8033F384:
 /* 8033F39C 0033B03C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033F3A0 0033B040  7C 08 03 A6 */	mtlr r0
 /* 8033F3A4 0033B044  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033F3A8 0033B048  4E 80 00 20 */	blr 
+/* 8033F3A8 0033B048  4E 80 00 20 */	blr
 
 .global "bta_sys_set_trace_level"
 "bta_sys_set_trace_level":
 /* 8033F3AC 0033B04C  98 6D C3 50 */	stb r3, "appl_trace_level"-_SDA_BASE_(r13)
-/* 8033F3B0 0033B050  4E 80 00 20 */	blr 
+/* 8033F3B0 0033B050  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80460B38
 lbl_80460B38:
-	.incbin "baserom.dol", 0x45CC38, 0x14
+	# ROM: 0x45CC38
+	.asciz "BTA got event 0x%x"
+	.byte 0x00
+
 .global lbl_80460B4C
 lbl_80460B4C:
-	.incbin "baserom.dol", 0x45CC4C, 0x24
+	# ROM: 0x45CC4C
+	.asciz "BTA got unregistered event id %d"
+	.byte 0x00, 0x00, 0x00
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "bta_sys_cb"

@@ -32,7 +32,7 @@
 /* 8038B3B8 00387058  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038B3BC 0038705C  7C 08 03 A6 */	mtlr r0
 /* 8038B3C0 00387060  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038B3C4 00387064  4E 80 00 20 */	blr 
+/* 8038B3C4 00387064  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut4RectFv"
 "__ct__Q36nw4hbm2ut4RectFv":
@@ -41,7 +41,7 @@
 /* 8038B3D0 00387070  D0 03 00 04 */	stfs f0, 4(r3)
 /* 8038B3D4 00387074  D0 03 00 08 */	stfs f0, 8(r3)
 /* 8038B3D8 00387078  D0 03 00 0C */	stfs f0, 0xc(r3)
-/* 8038B3DC 0038707C  4E 80 00 20 */	blr 
+/* 8038B3DC 0038707C  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt8DrawInfoFv"
 "__dt__Q36nw4hbm3lyt8DrawInfoFv":
@@ -68,17 +68,26 @@ lbl_8038B420:
 /* 8038B42C 003870CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038B430 003870D0  7C 08 03 A6 */	mtlr r0
 /* 8038B434 003870D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8038B438 003870D8  4E 80 00 20 */	blr 
+/* 8038B438 003870D8  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q36nw4hbm3lyt8DrawInfo"
 "__vt__Q36nw4hbm3lyt8DrawInfo":
-	.incbin "baserom.dol", 0x4661E0, 0x10
+	# ROM: 0x4661E0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt8DrawInfoFv" ;# ptr (0x8038B3E0)
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB9A0
 lbl_805DB9A0:
-	.incbin "baserom.dol", 0x489CC0, 0x4
+	# ROM: 0x489CC0
+	.4byte 0x3F800000
+
 .global lbl_805DB9A4
 lbl_805DB9A4:
-	.incbin "baserom.dol", 0x489CC4, 0x4
+	# ROM: 0x489CC4
+	.byte 0x00, 0x00, 0x00, 0x00
+

@@ -33,7 +33,7 @@ lbl_8034C204:
 /* 8034C208 00347EA8  38 60 00 01 */	li r3, 1
 /* 8034C20C 00347EAC  7C 08 03 A6 */	mtlr r0
 /* 8034C210 00347EB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034C214 00347EB4  4E 80 00 20 */	blr 
+/* 8034C214 00347EB4  4E 80 00 20 */	blr
 
 .global "BTM_SecAddRmtNameNotifyCallback"
 "BTM_SecAddRmtNameNotifyCallback":
@@ -52,13 +52,13 @@ lbl_8034C22C:
 /* 8034C244 00347EE4  7C 84 02 14 */	add r4, r4, r0
 /* 8034C248 00347EE8  90 64 19 2C */	stw r3, 0x192c(r4)
 /* 8034C24C 00347EEC  38 60 00 01 */	li r3, 1
-/* 8034C250 00347EF0  4E 80 00 20 */	blr 
+/* 8034C250 00347EF0  4E 80 00 20 */	blr
 lbl_8034C254:
 /* 8034C254 00347EF4  38 84 00 04 */	addi r4, r4, 4
 /* 8034C258 00347EF8  38 A5 00 01 */	addi r5, r5, 1
 /* 8034C25C 00347EFC  42 00 FF D0 */	bdnz lbl_8034C22C
 /* 8034C260 00347F00  38 60 00 00 */	li r3, 0
-/* 8034C264 00347F04  4E 80 00 20 */	blr 
+/* 8034C264 00347F04  4E 80 00 20 */	blr
 
 .global "BTM_SecDeleteRmtNameNotifyCallback"
 "BTM_SecDeleteRmtNameNotifyCallback":
@@ -78,13 +78,13 @@ lbl_8034C27C:
 /* 8034C298 00347F38  7C 83 02 14 */	add r4, r3, r0
 /* 8034C29C 00347F3C  90 A4 19 2C */	stw r5, 0x192c(r4)
 /* 8034C2A0 00347F40  38 60 00 01 */	li r3, 1
-/* 8034C2A4 00347F44  4E 80 00 20 */	blr 
+/* 8034C2A4 00347F44  4E 80 00 20 */	blr
 lbl_8034C2A8:
 /* 8034C2A8 00347F48  38 84 00 04 */	addi r4, r4, 4
 /* 8034C2AC 00347F4C  38 A5 00 01 */	addi r5, r5, 1
 /* 8034C2B0 00347F50  42 00 FF CC */	bdnz lbl_8034C27C
 /* 8034C2B4 00347F54  38 60 00 00 */	li r3, 0
-/* 8034C2B8 00347F58  4E 80 00 20 */	blr 
+/* 8034C2B8 00347F58  4E 80 00 20 */	blr
 
 .global "BTM_SetPinType"
 "BTM_SetPinType":
@@ -133,7 +133,7 @@ lbl_8034C330:
 /* 8034C35C 00347FFC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034C360 00348000  7C 08 03 A6 */	mtlr r0
 /* 8034C364 00348004  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034C368 00348008  4E 80 00 20 */	blr 
+/* 8034C368 00348008  4E 80 00 20 */	blr
 
 .global "BTM_SetSecurityLevel"
 "BTM_SetSecurityLevel":
@@ -285,7 +285,7 @@ lbl_8034C578:
 /* 8034C584 00348224  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8034C588 00348228  7C 08 03 A6 */	mtlr r0
 /* 8034C58C 0034822C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8034C590 00348230  4E 80 00 20 */	blr 
+/* 8034C590 00348230  4E 80 00 20 */	blr
 
 .global "BTM_PINCodeReply"
 "BTM_PINCodeReply":
@@ -339,7 +339,7 @@ lbl_8034C640:
 /* 8034C648 003482E8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034C64C 003482EC  7C 08 03 A6 */	mtlr r0
 /* 8034C650 003482F0  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034C654 003482F4  4E 80 00 20 */	blr 
+/* 8034C654 003482F4  4E 80 00 20 */	blr
 
 .global "BTM_DeviceAuthorized"
 "BTM_DeviceAuthorized":
@@ -429,7 +429,7 @@ lbl_8034C784:
 /* 8034C78C 0034842C  7F 85 E3 78 */	mr r5, r28
 /* 8034C790 00348430  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034C794 00348434  7D 89 03 A6 */	mtctr r12
-/* 8034C798 00348438  4E 80 04 21 */	bctrl 
+/* 8034C798 00348438  4E 80 04 21 */	bctrl
 /* 8034C79C 0034843C  38 00 00 00 */	li r0, 0
 /* 8034C7A0 00348440  90 1F 00 04 */	stw r0, 4(r31)
 /* 8034C7A4 00348444  48 00 00 70 */	b lbl_8034C814
@@ -459,7 +459,7 @@ lbl_8034C7F4:
 /* 8034C7FC 0034849C  7F C3 F3 78 */	mr r3, r30
 /* 8034C800 003484A0  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034C804 003484A4  7D 89 03 A6 */	mtctr r12
-/* 8034C808 003484A8  4E 80 04 21 */	bctrl 
+/* 8034C808 003484A8  4E 80 04 21 */	bctrl
 /* 8034C80C 003484AC  38 00 00 00 */	li r0, 0
 /* 8034C810 003484B0  90 1F 00 04 */	stw r0, 4(r31)
 lbl_8034C814:
@@ -470,7 +470,7 @@ lbl_8034C814:
 /* 8034C824 003484C4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8034C828 003484C8  7C 08 03 A6 */	mtlr r0
 /* 8034C82C 003484CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034C830 003484D0  4E 80 00 20 */	blr 
+/* 8034C830 003484D0  4E 80 00 20 */	blr
 
 .global "BTM_SecBond"
 "BTM_SecBond":
@@ -739,7 +739,7 @@ lbl_8034CBE8:
 /* 8034CBF0 00348890  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034CBF4 00348894  7C 08 03 A6 */	mtlr r0
 /* 8034CBF8 00348898  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034CBFC 0034889C  4E 80 00 20 */	blr 
+/* 8034CBFC 0034889C  4E 80 00 20 */	blr
 
 .global "btm_sec_l2cap_access_req"
 "btm_sec_l2cap_access_req":
@@ -782,7 +782,7 @@ lbl_8034CC7C:
 /* 8034CC8C 0034892C  38 80 00 00 */	li r4, 0
 /* 8034CC90 00348930  38 A0 00 03 */	li r5, 3
 /* 8034CC94 00348934  7D 89 03 A6 */	mtctr r12
-/* 8034CC98 00348938  4E 80 04 21 */	bctrl 
+/* 8034CC98 00348938  4E 80 04 21 */	bctrl
 lbl_8034CC9C:
 /* 8034CC9C 0034893C  38 60 00 03 */	li r3, 3
 /* 8034CCA0 00348940  48 00 03 AC */	b lbl_8034D04C
@@ -873,7 +873,7 @@ lbl_8034CDBC:
 /* 8034CDCC 00348A6C  38 80 00 00 */	li r4, 0
 /* 8034CDD0 00348A70  38 A0 00 04 */	li r5, 4
 /* 8034CDD4 00348A74  7D 89 03 A6 */	mtctr r12
-/* 8034CDD8 00348A78  4E 80 04 21 */	bctrl 
+/* 8034CDD8 00348A78  4E 80 04 21 */	bctrl
 lbl_8034CDDC:
 /* 8034CDDC 00348A7C  38 60 00 04 */	li r3, 4
 /* 8034CDE0 00348A80  48 00 02 6C */	b lbl_8034D04C
@@ -984,7 +984,7 @@ lbl_8034CF4C:
 /* 8034CF5C 00348BFC  38 80 00 00 */	li r4, 0
 /* 8034CF60 00348C00  38 A0 00 00 */	li r5, 0
 /* 8034CF64 00348C04  7D 89 03 A6 */	mtctr r12
-/* 8034CF68 00348C08  4E 80 04 21 */	bctrl 
+/* 8034CF68 00348C08  4E 80 04 21 */	bctrl
 lbl_8034CF6C:
 /* 8034CF6C 00348C0C  38 60 00 00 */	li r3, 0
 /* 8034CF70 00348C10  48 00 00 DC */	b lbl_8034D04C
@@ -1041,7 +1041,7 @@ lbl_8034D00C:
 /* 8034D030 00348CD0  7F 03 C3 78 */	mr r3, r24
 /* 8034D034 00348CD4  80 9E 00 08 */	lwz r4, 8(r30)
 /* 8034D038 00348CD8  7D 89 03 A6 */	mtctr r12
-/* 8034D03C 00348CDC  4E 80 04 21 */	bctrl 
+/* 8034D03C 00348CDC  4E 80 04 21 */	bctrl
 /* 8034D040 00348CE0  38 00 00 00 */	li r0, 0
 /* 8034D044 00348CE4  90 1E 00 04 */	stw r0, 4(r30)
 lbl_8034D048:
@@ -1052,7 +1052,7 @@ lbl_8034D04C:
 /* 8034D054 00348CF4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034D058 00348CF8  7C 08 03 A6 */	mtlr r0
 /* 8034D05C 00348CFC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034D060 00348D00  4E 80 00 20 */	blr 
+/* 8034D060 00348D00  4E 80 00 20 */	blr
 
 .global "btm_sec_mx_access_request"
 "btm_sec_mx_access_request":
@@ -1084,7 +1084,7 @@ lbl_8034D04C:
 /* 8034D0C8 00348D68  7F C4 F3 78 */	mr r4, r30
 /* 8034D0CC 00348D6C  38 A0 00 03 */	li r5, 3
 /* 8034D0D0 00348D70  7D 89 03 A6 */	mtctr r12
-/* 8034D0D4 00348D74  4E 80 04 21 */	bctrl 
+/* 8034D0D4 00348D74  4E 80 04 21 */	bctrl
 /* 8034D0D8 00348D78  48 00 02 10 */	b lbl_8034D2E8
 lbl_8034D0DC:
 /* 8034D0DC 00348D7C  3C 60 80 58 */	lis r3, "btm_cb"@ha
@@ -1176,7 +1176,7 @@ lbl_8034D1FC:
 /* 8034D214 00348EB4  7F C4 F3 78 */	mr r4, r30
 /* 8034D218 00348EB8  38 A0 00 04 */	li r5, 4
 /* 8034D21C 00348EBC  7D 89 03 A6 */	mtctr r12
-/* 8034D220 00348EC0  4E 80 04 21 */	bctrl 
+/* 8034D220 00348EC0  4E 80 04 21 */	bctrl
 lbl_8034D224:
 /* 8034D224 00348EC4  3C 60 80 58 */	lis r3, "btm_cb"@ha
 /* 8034D228 00348EC8  38 63 42 98 */	addi r3, r3, "btm_cb"@l
@@ -1226,7 +1226,7 @@ lbl_8034D2C8:
 /* 8034D2D0 00348F70  7F C4 F3 78 */	mr r4, r30
 /* 8034D2D4 00348F74  54 A5 06 3E */	clrlwi r5, r5, 0x18
 /* 8034D2D8 00348F78  7D 89 03 A6 */	mtctr r12
-/* 8034D2DC 00348F7C  4E 80 04 21 */	bctrl 
+/* 8034D2DC 00348F7C  4E 80 04 21 */	bctrl
 /* 8034D2E0 00348F80  38 00 00 00 */	li r0, 0
 /* 8034D2E4 00348F84  90 1F 00 04 */	stw r0, 4(r31)
 lbl_8034D2E8:
@@ -1235,7 +1235,7 @@ lbl_8034D2E8:
 /* 8034D2F0 00348F90  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034D2F4 00348F94  7C 08 03 A6 */	mtlr r0
 /* 8034D2F8 00348F98  38 21 00 30 */	addi r1, r1, 0x30
-/* 8034D2FC 00348F9C  4E 80 00 20 */	blr 
+/* 8034D2FC 00348F9C  4E 80 00 20 */	blr
 
 .global "btm_sec_conn_req"
 "btm_sec_conn_req":
@@ -1287,7 +1287,7 @@ lbl_8034D394:
 /* 8034D3A8 00349048  7F A3 EB 78 */	mr r3, r29
 /* 8034D3AC 0034904C  7F C4 F3 78 */	mr r4, r30
 /* 8034D3B0 00349050  7D 89 03 A6 */	mtctr r12
-/* 8034D3B4 00349054  4E 80 04 21 */	bctrl 
+/* 8034D3B4 00349054  4E 80 04 21 */	bctrl
 /* 8034D3B8 00349058  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8034D3BC 0034905C  40 82 00 24 */	bne lbl_8034D3E0
 /* 8034D3C0 00349060  38 60 00 02 */	li r3, 2
@@ -1318,7 +1318,7 @@ lbl_8034D410:
 /* 8034D41C 003490BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034D420 003490C0  7C 08 03 A6 */	mtlr r0
 /* 8034D424 003490C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034D428 003490C8  4E 80 00 20 */	blr 
+/* 8034D428 003490C8  4E 80 00 20 */	blr
 
 .global "btm_sec_init"
 "btm_sec_init":
@@ -1348,7 +1348,7 @@ lbl_8034D478:
 /* 8034D478 00349118  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8034D47C 0034911C  7C 08 03 A6 */	mtlr r0
 /* 8034D480 00349120  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034D484 00349124  4E 80 00 20 */	blr 
+/* 8034D484 00349124  4E 80 00 20 */	blr
 
 .global "btm_sec_abort_access_req"
 "btm_sec_abort_access_req":
@@ -1371,7 +1371,7 @@ lbl_8034D478:
 /* 8034D4C8 00349168  38 9F 00 22 */	addi r4, r31, 0x22
 /* 8034D4CC 0034916C  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034D4D0 00349170  7D 89 03 A6 */	mtctr r12
-/* 8034D4D4 00349174  4E 80 04 21 */	bctrl 
+/* 8034D4D4 00349174  4E 80 04 21 */	bctrl
 lbl_8034D4D8:
 /* 8034D4D8 00349178  88 1F 00 7F */	lbz r0, 0x7f(r31)
 /* 8034D4DC 0034917C  28 00 00 04 */	cmplwi r0, 4
@@ -1400,7 +1400,7 @@ lbl_8034D524:
 /* 8034D52C 003491CC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034D530 003491D0  7C 08 03 A6 */	mtlr r0
 /* 8034D534 003491D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034D538 003491D8  4E 80 00 20 */	blr 
+/* 8034D538 003491D8  4E 80 00 20 */	blr
 
 .global "btm_sec_rmt_name_request_complete"
 "btm_sec_rmt_name_request_complete":
@@ -1508,7 +1508,7 @@ lbl_8034D690:
 /* 8034D6A0 00349340  38 9F 00 22 */	addi r4, r31, 0x22
 /* 8034D6A4 00349344  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034D6A8 00349348  7D 89 03 A6 */	mtctr r12
-/* 8034D6AC 0034934C  4E 80 04 21 */	bctrl 
+/* 8034D6AC 0034934C  4E 80 04 21 */	bctrl
 lbl_8034D6B0:
 /* 8034D6B0 00349350  3B 9C 00 01 */	addi r28, r28, 1
 /* 8034D6B4 00349354  3B BD 00 04 */	addi r29, r29, 4
@@ -1538,7 +1538,7 @@ lbl_8034D6E4:
 /* 8034D70C 003493AC  38 DF 00 25 */	addi r6, r31, 0x25
 /* 8034D710 003493B0  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034D714 003493B4  7D 89 03 A6 */	mtctr r12
-/* 8034D718 003493B8  4E 80 04 21 */	bctrl 
+/* 8034D718 003493B8  4E 80 04 21 */	bctrl
 lbl_8034D71C:
 /* 8034D71C 003493BC  3F A0 80 58 */	lis r29, "btm_cb"@ha
 /* 8034D720 003493C0  3B 80 00 00 */	li r28, 0
@@ -1553,7 +1553,7 @@ lbl_8034D728:
 /* 8034D740 003493E0  38 DF 00 25 */	addi r6, r31, 0x25
 /* 8034D744 003493E4  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034D748 003493E8  7D 89 03 A6 */	mtctr r12
-/* 8034D74C 003493EC  4E 80 04 21 */	bctrl 
+/* 8034D74C 003493EC  4E 80 04 21 */	bctrl
 lbl_8034D750:
 /* 8034D750 003493F0  3B 9C 00 01 */	addi r28, r28, 1
 /* 8034D754 003493F4  3B BD 00 04 */	addi r29, r29, 4
@@ -1588,7 +1588,7 @@ lbl_8034D794:
 /* 8034D7C0 00349460  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034D7C4 00349464  38 A0 00 0A */	li r5, 0xa
 /* 8034D7C8 00349468  7D 89 03 A6 */	mtctr r12
-/* 8034D7CC 0034946C  4E 80 04 21 */	bctrl 
+/* 8034D7CC 0034946C  4E 80 04 21 */	bctrl
 /* 8034D7D0 00349470  93 BF 00 04 */	stw r29, 4(r31)
 /* 8034D7D4 00349474  48 00 00 38 */	b lbl_8034D80C
 lbl_8034D7D8:
@@ -1603,7 +1603,7 @@ lbl_8034D7D8:
 /* 8034D7F8 00349498  38 7F 00 1C */	addi r3, r31, 0x1c
 /* 8034D7FC 0034949C  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034D800 003494A0  7D 89 03 A6 */	mtctr r12
-/* 8034D804 003494A4  4E 80 04 21 */	bctrl 
+/* 8034D804 003494A4  4E 80 04 21 */	bctrl
 /* 8034D808 003494A8  93 BF 00 04 */	stw r29, 4(r31)
 lbl_8034D80C:
 /* 8034D80C 003494AC  39 61 00 20 */	addi r11, r1, 0x20
@@ -1611,7 +1611,7 @@ lbl_8034D80C:
 /* 8034D814 003494B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034D818 003494B8  7C 08 03 A6 */	mtlr r0
 /* 8034D81C 003494BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034D820 003494C0  4E 80 00 20 */	blr 
+/* 8034D820 003494C0  4E 80 00 20 */	blr
 
 .global "btm_sec_auth_complete"
 "btm_sec_auth_complete":
@@ -1737,7 +1737,7 @@ lbl_8034D9A8:
 /* 8034D9E0 00349680  38 9F 00 22 */	addi r4, r31, 0x22
 /* 8034D9E4 00349684  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034D9E8 00349688  7D 89 03 A6 */	mtctr r12
-/* 8034D9EC 0034968C  4E 80 04 21 */	bctrl 
+/* 8034D9EC 0034968C  4E 80 04 21 */	bctrl
 /* 8034D9F0 00349690  48 00 01 60 */	b lbl_8034DB50
 lbl_8034D9F4:
 /* 8034D9F4 00349694  28 1E 00 0C */	cmplwi r30, 0xc
@@ -1758,7 +1758,7 @@ lbl_8034DA10:
 /* 8034DA2C 003496CC  38 9F 00 22 */	addi r4, r31, 0x22
 /* 8034DA30 003496D0  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034DA34 003496D4  7D 89 03 A6 */	mtctr r12
-/* 8034DA38 003496D8  4E 80 04 21 */	bctrl 
+/* 8034DA38 003496D8  4E 80 04 21 */	bctrl
 lbl_8034DA3C:
 /* 8034DA3C 003496DC  3B A0 00 00 */	li r29, 0
 /* 8034DA40 003496E0  9B BF 00 7F */	stb r29, 0x7f(r31)
@@ -1794,7 +1794,7 @@ lbl_8034DAA8:
 /* 8034DAB0 00349750  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034DAB4 00349754  38 A0 00 0A */	li r5, 0xa
 /* 8034DAB8 00349758  7D 89 03 A6 */	mtctr r12
-/* 8034DABC 0034975C  4E 80 04 21 */	bctrl 
+/* 8034DABC 0034975C  4E 80 04 21 */	bctrl
 /* 8034DAC0 00349760  38 00 00 00 */	li r0, 0
 /* 8034DAC4 00349764  90 1F 00 04 */	stw r0, 4(r31)
 lbl_8034DAC8:
@@ -1831,7 +1831,7 @@ lbl_8034DB30:
 /* 8034DB38 003497D8  38 7F 00 1C */	addi r3, r31, 0x1c
 /* 8034DB3C 003497DC  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034DB40 003497E0  7D 89 03 A6 */	mtctr r12
-/* 8034DB44 003497E4  4E 80 04 21 */	bctrl 
+/* 8034DB44 003497E4  4E 80 04 21 */	bctrl
 /* 8034DB48 003497E8  38 00 00 00 */	li r0, 0
 /* 8034DB4C 003497EC  90 1F 00 04 */	stw r0, 4(r31)
 lbl_8034DB50:
@@ -1840,7 +1840,7 @@ lbl_8034DB50:
 /* 8034DB58 003497F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034DB5C 003497FC  7C 08 03 A6 */	mtlr r0
 /* 8034DB60 00349800  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034DB64 00349804  4E 80 00 20 */	blr 
+/* 8034DB64 00349804  4E 80 00 20 */	blr
 
 .global "btm_sec_mkey_comp_event"
 "btm_sec_mkey_comp_event":
@@ -1896,14 +1896,14 @@ lbl_8034DC00:
 /* 8034DC20 003498C0  7F C5 F3 78 */	mr r5, r30
 /* 8034DC24 003498C4  38 61 00 08 */	addi r3, r1, 8
 /* 8034DC28 003498C8  7D 89 03 A6 */	mtctr r12
-/* 8034DC2C 003498CC  4E 80 04 21 */	bctrl 
+/* 8034DC2C 003498CC  4E 80 04 21 */	bctrl
 /* 8034DC30 003498D0  48 00 00 18 */	b lbl_8034DC48
 lbl_8034DC34:
 /* 8034DC34 003498D4  7F A4 EB 78 */	mr r4, r29
 /* 8034DC38 003498D8  7F C5 F3 78 */	mr r5, r30
 /* 8034DC3C 003498DC  38 7F 00 1C */	addi r3, r31, 0x1c
 /* 8034DC40 003498E0  7D 89 03 A6 */	mtctr r12
-/* 8034DC44 003498E4  4E 80 04 21 */	bctrl 
+/* 8034DC44 003498E4  4E 80 04 21 */	bctrl
 lbl_8034DC48:
 /* 8034DC48 003498E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034DC4C 003498EC  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -1911,7 +1911,7 @@ lbl_8034DC48:
 /* 8034DC54 003498F4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034DC58 003498F8  7C 08 03 A6 */	mtlr r0
 /* 8034DC5C 003498FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034DC60 00349900  4E 80 00 20 */	blr 
+/* 8034DC60 00349900  4E 80 00 20 */	blr
 
 .global "btm_sec_encrypt_change"
 "btm_sec_encrypt_change":
@@ -1967,7 +1967,7 @@ lbl_8034DD00:
 /* 8034DD18 003499B8  80 9E 00 08 */	lwz r4, 8(r30)
 /* 8034DD1C 003499BC  38 A0 00 0A */	li r5, 0xa
 /* 8034DD20 003499C0  7D 89 03 A6 */	mtctr r12
-/* 8034DD24 003499C4  4E 80 04 21 */	bctrl 
+/* 8034DD24 003499C4  4E 80 04 21 */	bctrl
 /* 8034DD28 003499C8  38 00 00 00 */	li r0, 0
 /* 8034DD2C 003499CC  90 1E 00 04 */	stw r0, 4(r30)
 /* 8034DD30 003499D0  48 00 00 58 */	b lbl_8034DD88
@@ -1991,7 +1991,7 @@ lbl_8034DD34:
 /* 8034DD74 00349A14  38 7E 00 1C */	addi r3, r30, 0x1c
 /* 8034DD78 00349A18  80 9E 00 08 */	lwz r4, 8(r30)
 /* 8034DD7C 00349A1C  7D 89 03 A6 */	mtctr r12
-/* 8034DD80 00349A20  4E 80 04 21 */	bctrl 
+/* 8034DD80 00349A20  4E 80 04 21 */	bctrl
 /* 8034DD84 00349A24  93 FE 00 04 */	stw r31, 4(r30)
 lbl_8034DD88:
 /* 8034DD88 00349A28  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1999,7 +1999,7 @@ lbl_8034DD88:
 /* 8034DD90 00349A30  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034DD94 00349A34  7C 08 03 A6 */	mtlr r0
 /* 8034DD98 00349A38  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034DD9C 00349A3C  4E 80 00 20 */	blr 
+/* 8034DD9C 00349A3C  4E 80 00 20 */	blr
 
 .global "btm_sec_is_bonding"
 "btm_sec_is_bonding":
@@ -2020,7 +2020,7 @@ lbl_8034DDD0:
 /* 8034DDD0 00349A70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8034DDD4 00349A74  7C 08 03 A6 */	mtlr r0
 /* 8034DDD8 00349A78  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034DDDC 00349A7C  4E 80 00 20 */	blr 
+/* 8034DDDC 00349A7C  4E 80 00 20 */	blr
 
 .global "btm_sec_connected"
 "btm_sec_connected":
@@ -2170,7 +2170,7 @@ lbl_8034DFDC:
 /* 8034DFF8 00349C98  38 9F 00 22 */	addi r4, r31, 0x22
 /* 8034DFFC 00349C9C  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034E000 00349CA0  7D 89 03 A6 */	mtctr r12
-/* 8034E004 00349CA4  4E 80 04 21 */	bctrl 
+/* 8034E004 00349CA4  4E 80 04 21 */	bctrl
 /* 8034E008 00349CA8  48 00 02 40 */	b lbl_8034E248
 lbl_8034E00C:
 /* 8034E00C 00349CAC  80 1F 00 04 */	lwz r0, 4(r31)
@@ -2200,7 +2200,7 @@ lbl_8034E05C:
 /* 8034E064 00349D04  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034E068 00349D08  38 A0 00 08 */	li r5, 8
 /* 8034E06C 00349D0C  7D 89 03 A6 */	mtctr r12
-/* 8034E070 00349D10  4E 80 04 21 */	bctrl 
+/* 8034E070 00349D10  4E 80 04 21 */	bctrl
 /* 8034E074 00349D14  48 00 01 D4 */	b lbl_8034E248
 lbl_8034E078:
 /* 8034E078 00349D18  81 9F 00 04 */	lwz r12, 4(r31)
@@ -2208,7 +2208,7 @@ lbl_8034E078:
 /* 8034E080 00349D20  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034E084 00349D24  38 A0 00 0A */	li r5, 0xa
 /* 8034E088 00349D28  7D 89 03 A6 */	mtctr r12
-/* 8034E08C 00349D2C  4E 80 04 21 */	bctrl 
+/* 8034E08C 00349D2C  4E 80 04 21 */	bctrl
 /* 8034E090 00349D30  48 00 01 B8 */	b lbl_8034E248
 lbl_8034E094:
 /* 8034E094 00349D34  88 1F 00 81 */	lbz r0, 0x81(r31)
@@ -2230,7 +2230,7 @@ lbl_8034E094:
 /* 8034E0D4 00349D74  38 DF 00 25 */	addi r6, r31, 0x25
 /* 8034E0D8 00349D78  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034E0DC 00349D7C  7D 89 03 A6 */	mtctr r12
-/* 8034E0E0 00349D80  4E 80 04 21 */	bctrl 
+/* 8034E0E0 00349D80  4E 80 04 21 */	bctrl
 lbl_8034E0E4:
 /* 8034E0E4 00349D84  3F A0 80 58 */	lis r29, "btm_cb"@ha
 /* 8034E0E8 00349D88  3B C0 00 00 */	li r30, 0
@@ -2245,7 +2245,7 @@ lbl_8034E0F0:
 /* 8034E108 00349DA8  38 DF 00 25 */	addi r6, r31, 0x25
 /* 8034E10C 00349DAC  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034E110 00349DB0  7D 89 03 A6 */	mtctr r12
-/* 8034E114 00349DB4  4E 80 04 21 */	bctrl 
+/* 8034E114 00349DB4  4E 80 04 21 */	bctrl
 lbl_8034E118:
 /* 8034E118 00349DB8  3B DE 00 01 */	addi r30, r30, 1
 /* 8034E11C 00349DBC  3B BD 00 04 */	addi r29, r29, 4
@@ -2261,7 +2261,7 @@ lbl_8034E118:
 /* 8034E144 00349DE4  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034E148 00349DE8  38 C0 00 00 */	li r6, 0
 /* 8034E14C 00349DEC  7D 89 03 A6 */	mtctr r12
-/* 8034E150 00349DF0  4E 80 04 21 */	bctrl 
+/* 8034E150 00349DF0  4E 80 04 21 */	bctrl
 lbl_8034E154:
 /* 8034E154 00349DF4  88 BF 00 81 */	lbz r5, 0x81(r31)
 /* 8034E158 00349DF8  38 00 FF AF */	li r0, -81
@@ -2326,7 +2326,7 @@ lbl_8034E228:
 /* 8034E230 00349ED0  38 7F 00 1C */	addi r3, r31, 0x1c
 /* 8034E234 00349ED4  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8034E238 00349ED8  7D 89 03 A6 */	mtctr r12
-/* 8034E23C 00349EDC  4E 80 04 21 */	bctrl 
+/* 8034E23C 00349EDC  4E 80 04 21 */	bctrl
 /* 8034E240 00349EE0  38 00 00 00 */	li r0, 0
 /* 8034E244 00349EE4  90 1F 00 04 */	stw r0, 4(r31)
 lbl_8034E248:
@@ -2335,7 +2335,7 @@ lbl_8034E248:
 /* 8034E250 00349EF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034E254 00349EF4  7C 08 03 A6 */	mtlr r0
 /* 8034E258 00349EF8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034E25C 00349EFC  4E 80 00 20 */	blr 
+/* 8034E25C 00349EFC  4E 80 00 20 */	blr
 
 .global "btm_sec_disconnect"
 "btm_sec_disconnect":
@@ -2390,7 +2390,7 @@ lbl_8034E2FC:
 /* 8034E30C 00349FAC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8034E310 00349FB0  7C 08 03 A6 */	mtlr r0
 /* 8034E314 00349FB4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034E318 00349FB8  4E 80 00 20 */	blr 
+/* 8034E318 00349FB8  4E 80 00 20 */	blr
 
 .global "btm_sec_disconnected"
 "btm_sec_disconnected":
@@ -2419,7 +2419,7 @@ lbl_8034E2FC:
 /* 8034E374 0034A014  38 C0 00 17 */	li r6, 0x17
 /* 8034E378 0034A018  7D 89 03 A6 */	mtctr r12
 /* 8034E37C 0034A01C  38 63 00 1C */	addi r3, r3, 0x1c
-/* 8034E380 0034A020  4E 80 04 21 */	bctrl 
+/* 8034E380 0034A020  4E 80 04 21 */	bctrl
 /* 8034E384 0034A024  48 00 00 1C */	b lbl_8034E3A0
 lbl_8034E388:
 /* 8034E388 0034A028  38 83 00 22 */	addi r4, r3, 0x22
@@ -2427,7 +2427,7 @@ lbl_8034E388:
 /* 8034E390 0034A030  38 C0 00 05 */	li r6, 5
 /* 8034E394 0034A034  7D 89 03 A6 */	mtctr r12
 /* 8034E398 0034A038  38 63 00 1C */	addi r3, r3, 0x1c
-/* 8034E39C 0034A03C  4E 80 04 21 */	bctrl 
+/* 8034E39C 0034A03C  4E 80 04 21 */	bctrl
 lbl_8034E3A0:
 /* 8034E3A0 0034A040  3F E0 80 58 */	lis r31, "btm_cb"@ha
 /* 8034E3A4 0034A044  3B FF 42 98 */	addi r31, r31, "btm_cb"@l
@@ -2456,7 +2456,7 @@ lbl_8034E3A0:
 /* 8034E400 0034A0A0  38 BE 00 35 */	addi r5, r30, 0x35
 /* 8034E404 0034A0A4  38 C0 00 0E */	li r6, 0xe
 /* 8034E408 0034A0A8  7D 89 03 A6 */	mtctr r12
-/* 8034E40C 0034A0AC  4E 80 04 21 */	bctrl 
+/* 8034E40C 0034A0AC  4E 80 04 21 */	bctrl
 lbl_8034E410:
 /* 8034E410 0034A0B0  3C 80 00 01 */	lis r4, 0x0000FFFF@ha
 /* 8034E414 0034A0B4  38 60 00 00 */	li r3, 0
@@ -2476,7 +2476,7 @@ lbl_8034E440:
 /* 8034E448 0034A0E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034E44C 0034A0EC  7C 08 03 A6 */	mtlr r0
 /* 8034E450 0034A0F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034E454 0034A0F4  4E 80 00 20 */	blr 
+/* 8034E454 0034A0F4  4E 80 00 20 */	blr
 
 .global "btm_sec_link_key_notification"
 "btm_sec_link_key_notification":
@@ -2570,7 +2570,7 @@ lbl_8034E578:
 /* 8034E598 0034A238  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034E59C 0034A23C  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034E5A0 0034A240  7D 89 03 A6 */	mtctr r12
-/* 8034E5A4 0034A244  4E 80 04 21 */	bctrl 
+/* 8034E5A4 0034A244  4E 80 04 21 */	bctrl
 lbl_8034E5A8:
 /* 8034E5A8 0034A248  3F 80 80 58 */	lis r28, "btm_cb"@ha
 /* 8034E5AC 0034A24C  3B 60 00 00 */	li r27, 0
@@ -2585,7 +2585,7 @@ lbl_8034E5B4:
 /* 8034E5CC 0034A26C  38 BF 00 35 */	addi r5, r31, 0x35
 /* 8034E5D0 0034A270  88 FF 00 83 */	lbz r7, 0x83(r31)
 /* 8034E5D4 0034A274  7D 89 03 A6 */	mtctr r12
-/* 8034E5D8 0034A278  4E 80 04 21 */	bctrl 
+/* 8034E5D8 0034A278  4E 80 04 21 */	bctrl
 lbl_8034E5DC:
 /* 8034E5DC 0034A27C  3B 7B 00 01 */	addi r27, r27, 1
 /* 8034E5E0 0034A280  3B 9C 00 04 */	addi r28, r28, 4
@@ -2597,7 +2597,7 @@ lbl_8034E5EC:
 /* 8034E5F4 0034A294  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034E5F8 0034A298  7C 08 03 A6 */	mtlr r0
 /* 8034E5FC 0034A29C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034E600 0034A2A0  4E 80 00 20 */	blr 
+/* 8034E600 0034A2A0  4E 80 00 20 */	blr
 
 .global "btm_sec_link_key_request"
 "btm_sec_link_key_request":
@@ -2655,7 +2655,7 @@ lbl_8034E69C:
 /* 8034E6C4 0034A364  7F C3 F3 78 */	mr r3, r30
 /* 8034E6C8 0034A368  38 9F 00 25 */	addi r4, r31, 0x25
 /* 8034E6CC 0034A36C  7D 89 03 A6 */	mtctr r12
-/* 8034E6D0 0034A370  4E 80 04 21 */	bctrl 
+/* 8034E6D0 0034A370  4E 80 04 21 */	bctrl
 /* 8034E6D4 0034A374  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8034E6D8 0034A378  40 82 00 3C */	bne lbl_8034E714
 /* 8034E6DC 0034A37C  7F C3 F3 78 */	mr r3, r30
@@ -2666,7 +2666,7 @@ lbl_8034E6EC:
 /* 8034E6EC 0034A38C  7F C3 F3 78 */	mr r3, r30
 /* 8034E6F0 0034A390  38 81 00 08 */	addi r4, r1, 8
 /* 8034E6F4 0034A394  7D 89 03 A6 */	mtctr r12
-/* 8034E6F8 0034A398  4E 80 04 21 */	bctrl 
+/* 8034E6F8 0034A398  4E 80 04 21 */	bctrl
 /* 8034E6FC 0034A39C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8034E700 0034A3A0  40 82 00 14 */	bne lbl_8034E714
 /* 8034E704 0034A3A4  7F C3 F3 78 */	mr r3, r30
@@ -2682,7 +2682,7 @@ lbl_8034E71C:
 /* 8034E724 0034A3C4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8034E728 0034A3C8  7C 08 03 A6 */	mtlr r0
 /* 8034E72C 0034A3CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034E730 0034A3D0  4E 80 00 20 */	blr 
+/* 8034E730 0034A3D0  4E 80 00 20 */	blr
 
 .global "btm_sec_pin_code_request_timeout"
 "btm_sec_pin_code_request_timeout":
@@ -2715,7 +2715,7 @@ lbl_8034E76C:
 /* 8034E798 0034A438  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034E79C 0034A43C  7C 08 03 A6 */	mtlr r0
 /* 8034E7A0 0034A440  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034E7A4 0034A444  4E 80 00 20 */	blr 
+/* 8034E7A4 0034A444  4E 80 00 20 */	blr
 
 .global "btm_sec_pin_code_request"
 "btm_sec_pin_code_request":
@@ -2921,7 +2921,7 @@ lbl_8034EA50:
 /* 8034EA94 0034A734  38 9E 00 22 */	addi r4, r30, 0x22
 /* 8034EA98 0034A738  38 BE 00 35 */	addi r5, r30, 0x35
 /* 8034EA9C 0034A73C  7D 89 03 A6 */	mtctr r12
-/* 8034EAA0 0034A740  4E 80 04 21 */	bctrl 
+/* 8034EAA0 0034A740  4E 80 04 21 */	bctrl
 /* 8034EAA4 0034A744  48 00 00 08 */	b lbl_8034EAAC
 lbl_8034EAA8:
 /* 8034EAA8 0034A748  3B 80 00 01 */	li r28, 1
@@ -2949,7 +2949,7 @@ lbl_8034EAEC:
 /* 8034EAF4 0034A794  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034EAF8 0034A798  7C 08 03 A6 */	mtlr r0
 /* 8034EAFC 0034A79C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034EB00 0034A7A0  4E 80 00 20 */	blr 
+/* 8034EB00 0034A7A0  4E 80 00 20 */	blr
 
 .global "btm_sec_update_clock_offset"
 "btm_sec_update_clock_offset":
@@ -2973,7 +2973,7 @@ lbl_8034EB40:
 /* 8034EB44 0034A7E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8034EB48 0034A7E8  7C 08 03 A6 */	mtlr r0
 /* 8034EB4C 0034A7EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034EB50 0034A7F0  4E 80 00 20 */	blr 
+/* 8034EB50 0034A7F0  4E 80 00 20 */	blr
 
 .global "btm_sec_execute_procedure"
 "btm_sec_execute_procedure":
@@ -3257,7 +3257,7 @@ lbl_8034EF18:
 /* 8034EF24 0034ABC4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8034EF28 0034ABC8  7C 08 03 A6 */	mtlr r0
 /* 8034EF2C 0034ABCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8034EF30 0034ABD0  4E 80 00 20 */	blr 
+/* 8034EF30 0034ABD0  4E 80 00 20 */	blr
 
 .global "btm_sec_start_authorization"
 "btm_sec_start_authorization":
@@ -3309,7 +3309,7 @@ lbl_8034EFB4:
 /* 8034EFD0 0034AC70  38 83 00 22 */	addi r4, r3, 0x22
 /* 8034EFD4 0034AC74  7D 89 03 A6 */	mtctr r12
 /* 8034EFD8 0034AC78  38 63 00 1C */	addi r3, r3, 0x1c
-/* 8034EFDC 0034AC7C  4E 80 04 21 */	bctrl 
+/* 8034EFDC 0034AC7C  4E 80 04 21 */	bctrl
 /* 8034EFE0 0034AC80  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8034EFE4 0034AC84  40 82 00 54 */	bne lbl_8034F038
 /* 8034EFE8 0034AC88  88 9E 00 76 */	lbz r4, 0x76(r30)
@@ -3340,7 +3340,7 @@ lbl_8034F038:
 /* 8034F040 0034ACE0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034F044 0034ACE4  7C 08 03 A6 */	mtlr r0
 /* 8034F048 0034ACE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034F04C 0034ACEC  4E 80 00 20 */	blr 
+/* 8034F04C 0034ACEC  4E 80 00 20 */	blr
 
 .global "btm_sec_collision_timeout"
 "btm_sec_collision_timeout":
@@ -3392,7 +3392,7 @@ lbl_8034F0E8:
 /* 8034F0FC 0034AD9C  38 64 00 1C */	addi r3, r4, 0x1c
 /* 8034F100 0034ADA0  80 84 00 08 */	lwz r4, 8(r4)
 /* 8034F104 0034ADA4  7D 89 03 A6 */	mtctr r12
-/* 8034F108 0034ADA8  4E 80 04 21 */	bctrl 
+/* 8034F108 0034ADA8  4E 80 04 21 */	bctrl
 /* 8034F10C 0034ADAC  80 7F 19 38 */	lwz r3, 0x1938(r31)
 /* 8034F110 0034ADB0  38 00 00 00 */	li r0, 0
 /* 8034F114 0034ADB4  90 03 00 04 */	stw r0, 4(r3)
@@ -3402,7 +3402,7 @@ lbl_8034F118:
 /* 8034F120 0034ADC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8034F124 0034ADC4  7C 08 03 A6 */	mtlr r0
 /* 8034F128 0034ADC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034F12C 0034ADCC  4E 80 00 20 */	blr 
+/* 8034F12C 0034ADCC  4E 80 00 20 */	blr
 
 .global "btm_read_trusted_mask"
 "btm_read_trusted_mask":
@@ -3420,77 +3420,195 @@ lbl_8034F154:
 /* 8034F154 0034ADF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8034F158 0034ADF8  7C 08 03 A6 */	mtlr r0
 /* 8034F15C 0034ADFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8034F160 0034AE00  4E 80 00 20 */	blr 
+/* 8034F160 0034AE00  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80462398
 lbl_80462398:
-	.incbin "baserom.dol", 0x45E498, 0x98
+	# ROM: 0x45E498
+	.asciz "BTM_Sec: application registered"
+	.asciz "BTM_SetSecurityMode: mode:%d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTM_SetSecurityMode: Authen Enable -> FALSE"
+	.asciz "BTM_SetSecurityMode: Authen Enable -> TRUE"
+	.byte 0x00
+
 .global lbl_80462430
 lbl_80462430:
-	.incbin "baserom.dol", 0x45E530, 0x108
+	# ROM: 0x45E530
+	.asciz "BTM_SetPinType: pin type %d [variable-0, fixed-1], code %s, length %d"
+	.byte 0x00, 0x00
+	.asciz "BTM_SEC_REG[%d]: id %d, is_orig %d, psm 0x%04x, proto_id %d, chan_id %d"
+	.asciz "               : sec: 0x%x, service name [%s] (up to %d chars saved)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTM_SEC_REG: Out of Service Records (%d)"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_80462538
 lbl_80462538:
-	.incbin "baserom.dol", 0x45E638, 0x60
+	# ROM: 0x45E638
+	.asciz "Security Manager: Attempting Authorization of Unknown Device Address [%02x%02x%02x%02x%02x%02x]"
+
 .global lbl_80462598
 lbl_80462598:
-	.incbin "baserom.dol", 0x45E698, 0xFC
+	# ROM: 0x45E698
+	.asciz "Security Manager: authorized status:%d State:%d"
+	.asciz "BTM_SecBond BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.byte 0x00
+	.asciz "BTM_SecBond: Illegal Pin len:%d"
+	.asciz "BTM_SecBond: no device block"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTM_SecBond -> Already Paired"
+	.byte 0x00, 0x00
+	.asciz "BTM_SecBond: Authen Enable -> TRUE"
+	.byte 0x00
+	.asciz "BTM_SecBond: no buffer"
+	.byte 0x00
+
 .global lbl_80462694
 lbl_80462694:
-	.incbin "baserom.dol", 0x45E794, 0x25C
+	# ROM: 0x45E794
+	.asciz "btm_restore_mode: Authen Enable -> %d"
+	.byte 0x00, 0x00
+	.asciz "Security Manager: BTM_SetEncryption not connected"
+	.byte 0x00, 0x00
+	.asciz "Security Manager: BTM_SetEncryption already encrypted"
+	.byte 0x00, 0x00
+	.asciz "Security Manager: BTM_SetEncryption busy"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "Security Manager: BTM_SetEncryption Handle:%d State:%d Flags:0x%x Required:0x%x"
+	.asciz "Security Manager: l2cap_access_req PSM:%d no resources"
+	.byte 0x00
+	.asciz "Security Manager: l2cap_access_req PSM:%d no application registerd"
+	.byte 0x00
+	.asciz "Security Manager: l2cap_access_req PSM:%d postponed for multiplexer"
+	.asciz "Security Manager: l2cap_access_req PSM:%d Handle:%d State:%d Flags:0x%x Required:0x%x"
+	.byte 0x00, 0x00
+	.asciz "Security Manager: trusted:0x%04x%04x Flags:0x%x"
+
 .global lbl_804628F0
 lbl_804628F0:
-	.incbin "baserom.dol", 0x45E9F0, 0x40
+	# ROM: 0x45E9F0
+	.asciz "Security Manager: MX service not found PSM:%d Proto:%d SCN:%d"
+	.byte 0x00, 0x00
+
 .global lbl_80462930
 lbl_80462930:
-	.incbin "baserom.dol", 0x45EA30, 0x3C
+	# ROM: 0x45EA30
+	.asciz "Security Manager: connect request from not paired device"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046296C
 lbl_8046296C:
-	.incbin "baserom.dol", 0x45EA6C, 0x38
+	# ROM: 0x45EA6C
+	.asciz "Security Manager: rmt_name_complete status:%d State:%d"
+	.byte 0x00
+
 .global lbl_804629A4
 lbl_804629A4:
-	.incbin "baserom.dol", 0x45EAA4, 0x34
+	# ROM: 0x45EAA4
+	.asciz "Security Manager: auth_complete status:%d State:%d"
+	.byte 0x00
+
 .global lbl_804629D8
 lbl_804629D8:
-	.incbin "baserom.dol", 0x45EAD8, 0x30
+	# ROM: 0x45EAD8
+	.asciz "Security Manager: mkey comp status:%d State:%d"
+	.byte 0x00
+
 .global lbl_80462A08
 lbl_80462A08:
-	.incbin "baserom.dol", 0x45EB08, 0x34
+	# ROM: 0x45EB08
+	.asciz "Security Manager: encrypt_change status:%d State:%d"
+
 .global lbl_80462A3C
 lbl_80462A3C:
-	.incbin "baserom.dol", 0x45EB3C, 0x44
+	# ROM: 0x45EB3C
+	.asciz "Security Manager: btm_sec_connected handle:%d status:%d enc_mode:%d"
+
 .global lbl_80462A80
 lbl_80462A80:
-	.incbin "baserom.dol", 0x45EB80, 0x44
+	# ROM: 0x45EB80
+	.asciz "btm_sec_link_key_notification()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+
 .global lbl_80462AC4
 lbl_80462AC4:
-	.incbin "baserom.dol", 0x45EBC4, 0x2C
+	# ROM: 0x45EBC4
+	.asciz "                                TYPE: %d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80462AF0
 lbl_80462AF0:
-	.incbin "baserom.dol", 0x45EBF0, 0x40
+	# ROM: 0x45EBF0
+	.asciz "btm_sec_link_key_request()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.byte 0x00
+
 .global lbl_80462B30
 lbl_80462B30:
-	.incbin "baserom.dol", 0x45EC30, 0x25C
+	# ROM: 0x45EC30
+	.asciz "btm_sec_pin_code_request_timeout()"
+	.byte 0x00
+	.asciz "btm_sec_pin_code_request()  BDA: %02x:%02x:%02x:%02x:%02x:%02x"
+	.byte 0x00
+	.asciz "btm_sec_pin_code_request bonding sending reply"
+	.byte 0x00
+	.asciz "btm_sec_pin_code_request: Authen Enable -> %d"
+	.byte 0x00, 0x00
+	.asciz "btm_sec_pin_code_request(): Pairing disabled:%d; PIN callback:%x, Dev Rec:%x!"
+	.byte 0x00, 0x00
+	.asciz "btm_sec_execute_procedure: Required:0x%x Flags:0x%x State:%d"
+	.byte 0x00, 0x00, 0x00
+	.asciz "L2CAP - no LCB for L2CA_conn_req"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Security Manager: Start get name"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Security Manager: Start authentication"
+	.byte 0x00
+	.asciz "Security Manager: Start encryption"
+	.byte 0x00
+	.asciz "Security Manager: Start authorization"
+	.byte 0x00, 0x00
+	.asciz "Security Manager: trusted:0x%04x%04x"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Security Manager: access granted"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80462D8C
 lbl_80462D8C:
-	.incbin "baserom.dol", 0x45EE8C, 0x1C
+	# ROM: 0x45EE8C
+	.asciz "btm_sec_collision_timeout()"
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB798
 lbl_805DB798:
-	.incbin "baserom.dol", 0x489AB8, 0x1
+	# ROM: 0x489AB8
+	.byte 0xFF
+
 .global lbl_805DB799
 lbl_805DB799:
-	.incbin "baserom.dol", 0x489AB9, 0x1
+	# ROM: 0x489AB9
+	.byte 0xFF
+
 .global lbl_805DB79A
 lbl_805DB79A:
-	.incbin "baserom.dol", 0x489ABA, 0x1
+	# ROM: 0x489ABA
+	.byte 0xFF
+
 .global lbl_805DB79B
 lbl_805DB79B:
-	.incbin "baserom.dol", 0x489ABB, 0x1
+	# ROM: 0x489ABB
+	.byte 0xFF
+
 .global lbl_805DB79C
 lbl_805DB79C:
-	.incbin "baserom.dol", 0x489ABC, 0x1
+	# ROM: 0x489ABC
+	.byte 0xFF
+
 .global lbl_805DB79D
 lbl_805DB79D:
-	.incbin "baserom.dol", 0x489ABD, 0x3
+	# ROM: 0x489ABD
+	.byte 0xFF, 0x00, 0x00
+

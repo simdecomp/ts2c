@@ -62,7 +62,7 @@ lbl_803EACD4:
 /* 803EAD10 003E69B0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803EAD14 003E69B4  7C 08 03 A6 */	mtlr r0
 /* 803EAD18 003E69B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803EAD1C 003E69BC  4E 80 00 20 */	blr 
+/* 803EAD1C 003E69BC  4E 80 00 20 */	blr
 
 .global "SIRefreshSamplingRate"
 "SIRefreshSamplingRate":
@@ -72,10 +72,39 @@ lbl_803EACD4:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "XYNTSC"
 "XYNTSC":
-	.incbin "baserom.dol", 0x47FD38, 0x30
+	# ROM: 0x47FD38
+	.4byte 0x00F60200
+	.4byte 0x000E1300
+	.4byte 0x001E0900
+	.4byte 0x002C0600
+	.4byte 0x00340500
+	.4byte 0x00410400
+	.4byte 0x00570300
+	.4byte 0x00570300
+	.4byte 0x00570300
+	.4byte 0x00830200
+	.4byte 0x00830200
+	.4byte 0x00830200
+
 .global "XYPAL"
 "XYPAL":
-	.incbin "baserom.dol", 0x47FD68, 0x68
+	# ROM: 0x47FD68
+	.4byte 0x01280200
+	.4byte 0x000F1500
+	.4byte 0x001D0B00
+	.4byte 0x002D0700
+	.4byte 0x00340600
+	.4byte 0x003F0500
+	.4byte 0x004E0400
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x00680300
+	.4byte 0x009C0200
+	.asciz "SISetSamplingRate: unknown TV format. Use default."
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "SamplingRate"

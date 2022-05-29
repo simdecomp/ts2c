@@ -6,14 +6,14 @@
 /* 803E2B74 003DE814  7D 30 FA A6 */	mfspr r9, 0x3f0
 /* 803E2B78 003DE818  61 2A 00 08 */	ori r10, r9, 8
 /* 803E2B7C 003DE81C  7D 50 FB A6 */	mtspr 0x3f0, r10
-/* 803E2B80 003DE820  4C 00 01 2C */	isync 
+/* 803E2B80 003DE820  4C 00 01 2C */	isync
 /* 803E2B84 003DE824  7C 00 04 AC */	sync 0
 /* 803E2B88 003DE828  7D 30 FB A6 */	mtspr 0x3f0, r9
-/* 803E2B8C 003DE82C  4C 00 00 64 */	rfi 
+/* 803E2B8C 003DE82C  4C 00 00 64 */	rfi
 
 .global "__OSSystemCallVectorEnd"
 "__OSSystemCallVectorEnd":
-/* 803E2B90 003DE830  60 00 00 00 */	nop 
+/* 803E2B90 003DE830  60 00 00 00 */	nop
 
 .global "__OSInitSystemCall"
 "__OSInitSystemCall":
@@ -40,4 +40,4 @@
 /* 803E2BE4 003DE884  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803E2BE8 003DE888  7C 08 03 A6 */	mtlr r0
 /* 803E2BEC 003DE88C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803E2BF0 003DE890  4E 80 00 20 */	blr 
+/* 803E2BF0 003DE890  4E 80 00 20 */	blr

@@ -13,7 +13,7 @@
 /* 80361398 0035D038  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8036139C 0035D03C  7C 08 03 A6 */	mtlr r0
 /* 803613A0 0035D040  38 21 00 10 */	addi r1, r1, 0x10
-/* 803613A4 0035D044  4E 80 00 20 */	blr 
+/* 803613A4 0035D044  4E 80 00 20 */	blr
 
 .global "RFCOMM_DlcEstablishReq"
 "RFCOMM_DlcEstablishReq":
@@ -44,7 +44,7 @@ lbl_803613F8:
 /* 80361400 0035D0A0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80361404 0035D0A4  7C 08 03 A6 */	mtlr r0
 /* 80361408 0035D0A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036140C 0035D0AC  4E 80 00 20 */	blr 
+/* 8036140C 0035D0AC  4E 80 00 20 */	blr
 
 .global "RFCOMM_DlcEstablishRsp"
 "RFCOMM_DlcEstablishRsp":
@@ -77,7 +77,7 @@ lbl_80361468:
 /* 80361470 0035D110  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80361474 0035D114  7C 08 03 A6 */	mtlr r0
 /* 80361478 0035D118  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036147C 0035D11C  4E 80 00 20 */	blr 
+/* 8036147C 0035D11C  4E 80 00 20 */	blr
 
 .global "RFCOMM_ParNegReq"
 "RFCOMM_ParNegReq":
@@ -142,7 +142,7 @@ lbl_80361540:
 /* 80361550 0035D1F0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80361554 0035D1F4  7C 08 03 A6 */	mtlr r0
 /* 80361558 0035D1F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8036155C 0035D1FC  4E 80 00 20 */	blr 
+/* 8036155C 0035D1FC  4E 80 00 20 */	blr
 
 .global "RFCOMM_ParNegRsp"
 "RFCOMM_ParNegRsp":
@@ -150,12 +150,12 @@ lbl_80361540:
 /* 80361564 0035D204  7C C9 33 78 */	mr r9, r6
 /* 80361568 0035D208  7C E8 3B 78 */	mr r8, r7
 /* 8036156C 0035D20C  28 00 00 05 */	cmplwi r0, 5
-/* 80361570 0035D210  4C 82 00 20 */	bnelr 
+/* 80361570 0035D210  4C 82 00 20 */	bnelr
 /* 80361574 0035D214  7C A6 2B 78 */	mr r6, r5
 /* 80361578 0035D218  7D 27 4B 78 */	mr r7, r9
 /* 8036157C 0035D21C  38 A0 00 00 */	li r5, 0
 /* 80361580 0035D220  48 00 07 94 */	b "rfc_send_pn"
-/* 80361584 0035D224  4E 80 00 20 */	blr 
+/* 80361584 0035D224  4E 80 00 20 */	blr
 
 .global "RFCOMM_PortNegReq"
 "RFCOMM_PortNegReq":
@@ -209,18 +209,18 @@ lbl_80361624:
 /* 80361634 0035D2D4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80361638 0035D2D8  7C 08 03 A6 */	mtlr r0
 /* 8036163C 0035D2DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361640 0035D2E0  4E 80 00 20 */	blr 
+/* 80361640 0035D2E0  4E 80 00 20 */	blr
 
 .global "RFCOMM_PortNegRsp"
 "RFCOMM_PortNegRsp":
 /* 80361644 0035D2E4  88 03 00 6C */	lbz r0, 0x6c(r3)
 /* 80361648 0035D2E8  7C C7 33 78 */	mr r7, r6
 /* 8036164C 0035D2EC  28 00 00 05 */	cmplwi r0, 5
-/* 80361650 0035D2F0  4C 82 00 20 */	bnelr 
+/* 80361650 0035D2F0  4C 82 00 20 */	bnelr
 /* 80361654 0035D2F4  7C A6 2B 78 */	mr r6, r5
 /* 80361658 0035D2F8  38 A0 00 00 */	li r5, 0
 /* 8036165C 0035D2FC  48 00 0A 78 */	b "rfc_send_rpn"
-/* 80361660 0035D300  4E 80 00 20 */	blr 
+/* 80361660 0035D300  4E 80 00 20 */	blr
 
 .global "RFCOMM_ControlReq"
 "RFCOMM_ControlReq":
@@ -266,7 +266,7 @@ lbl_803616E8:
 /* 803616F8 0035D398  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803616FC 0035D39C  7C 08 03 A6 */	mtlr r0
 /* 80361700 0035D3A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361704 0035D3A4  4E 80 00 20 */	blr 
+/* 80361704 0035D3A4  4E 80 00 20 */	blr
 
 .global "RFCOMM_FlowReq"
 "RFCOMM_FlowReq":
@@ -312,7 +312,7 @@ lbl_8036178C:
 /* 8036179C 0035D43C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803617A0 0035D440  7C 08 03 A6 */	mtlr r0
 /* 803617A4 0035D444  38 21 00 20 */	addi r1, r1, 0x20
-/* 803617A8 0035D448  4E 80 00 20 */	blr 
+/* 803617A8 0035D448  4E 80 00 20 */	blr
 
 .global "RFCOMM_LineStatusReq"
 "RFCOMM_LineStatusReq":
@@ -355,7 +355,7 @@ lbl_80361824:
 /* 80361834 0035D4D4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80361838 0035D4D8  7C 08 03 A6 */	mtlr r0
 /* 8036183C 0035D4DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80361840 0035D4E0  4E 80 00 20 */	blr 
+/* 80361840 0035D4E0  4E 80 00 20 */	blr
 
 .global "RFCOMM_DlcReleaseReq"
 "RFCOMM_DlcReleaseReq":
@@ -369,7 +369,7 @@ lbl_80361824:
 /* 80361860 0035D500  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80361864 0035D504  7C 08 03 A6 */	mtlr r0
 /* 80361868 0035D508  38 21 00 10 */	addi r1, r1, 0x10
-/* 8036186C 0035D50C  4E 80 00 20 */	blr 
+/* 8036186C 0035D50C  4E 80 00 20 */	blr
 
 .global "RFCOMM_DataReq"
 "RFCOMM_DataReq":
@@ -386,7 +386,7 @@ lbl_80361824:
 /* 80361898 0035D538  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8036189C 0035D53C  7C 08 03 A6 */	mtlr r0
 /* 803618A0 0035D540  38 21 00 10 */	addi r1, r1, 0x10
-/* 803618A4 0035D544  4E 80 00 20 */	blr 
+/* 803618A4 0035D544  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "rfc_cb"

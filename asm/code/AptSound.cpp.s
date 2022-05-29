@@ -32,7 +32,7 @@
 /* 80328470 00324110  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80328474 00324114  7C 08 03 A6 */	mtlr r0
 /* 80328478 00324118  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032847C 0032411C  4E 80 00 20 */	blr 
+/* 8032847C 0032411C  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__8AptSoundFv"
 "CleanNativeFunctions__8AptSoundFv":
@@ -50,7 +50,7 @@
 /* 803284AC 0032414C  38 84 97 30 */	addi r4, r4, "__PRETTY_FUNCTION__$7574"@l
 /* 803284B0 00324150  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 803284B4 00324154  7D 89 03 A6 */	mtctr r12
-/* 803284B8 00324158  4E 80 04 21 */	bctrl 
+/* 803284B8 00324158  4E 80 04 21 */	bctrl
 /* 803284BC 0032415C  38 00 00 00 */	li r0, 0
 /* 803284C0 00324160  90 0D C0 70 */	stw r0, "psMethod_attachSound__8AptSound"-_SDA_BASE_(r13)
 lbl_803284C4:
@@ -65,7 +65,7 @@ lbl_803284C4:
 /* 803284E4 00324184  38 84 97 30 */	addi r4, r4, "__PRETTY_FUNCTION__$7574"@l
 /* 803284E8 00324188  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 803284EC 0032418C  7D 89 03 A6 */	mtctr r12
-/* 803284F0 00324190  4E 80 04 21 */	bctrl 
+/* 803284F0 00324190  4E 80 04 21 */	bctrl
 /* 803284F4 00324194  38 00 00 00 */	li r0, 0
 /* 803284F8 00324198  90 0D C0 78 */	stw r0, "psMethod_stop__8AptSound"-_SDA_BASE_(r13)
 lbl_803284FC:
@@ -80,14 +80,14 @@ lbl_803284FC:
 /* 8032851C 003241BC  38 84 97 30 */	addi r4, r4, "__PRETTY_FUNCTION__$7574"@l
 /* 80328520 003241C0  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 80328524 003241C4  7D 89 03 A6 */	mtctr r12
-/* 80328528 003241C8  4E 80 04 21 */	bctrl 
+/* 80328528 003241C8  4E 80 04 21 */	bctrl
 /* 8032852C 003241CC  38 00 00 00 */	li r0, 0
 /* 80328530 003241D0  90 0D C0 74 */	stw r0, "psMethod_start__8AptSound"-_SDA_BASE_(r13)
 lbl_80328534:
 /* 80328534 003241D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80328538 003241D8  7C 08 03 A6 */	mtlr r0
 /* 8032853C 003241DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80328540 003241E0  4E 80 00 20 */	blr 
+/* 80328540 003241E0  4E 80 00 20 */	blr
 
 .global "sMethod_attachSound__8AptSoundFP8AptValuei"
 "sMethod_attachSound__8AptSoundFP8AptValuei":
@@ -162,7 +162,7 @@ lbl_8032862C:
 /* 80328640 003242E0  80 6D C0 D4 */	lwz r3, "gpUndefinedValue"-_SDA_BASE_(r13)
 /* 80328644 003242E4  7C 08 03 A6 */	mtlr r0
 /* 80328648 003242E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8032864C 003242EC  4E 80 00 20 */	blr 
+/* 8032864C 003242EC  4E 80 00 20 */	blr
 
 .global "sMethod_start__8AptSoundFP8AptValuei"
 "sMethod_start__8AptSoundFP8AptValuei":
@@ -186,14 +186,14 @@ lbl_8032862C:
 /* 80328694 00324334  80 84 00 2C */	lwz r4, 0x2c(r4)
 /* 80328698 00324338  81 85 00 5C */	lwz r12, 0x5c(r5)
 /* 8032869C 0032433C  7D 89 03 A6 */	mtctr r12
-/* 803286A0 00324340  4E 80 04 21 */	bctrl 
+/* 803286A0 00324340  4E 80 04 21 */	bctrl
 lbl_803286A4:
 /* 803286A4 00324344  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803286A8 00324348  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803286AC 0032434C  80 6D C0 D4 */	lwz r3, "gpUndefinedValue"-_SDA_BASE_(r13)
 /* 803286B0 00324350  7C 08 03 A6 */	mtlr r0
 /* 803286B4 00324354  38 21 00 10 */	addi r1, r1, 0x10
-/* 803286B8 00324358  4E 80 00 20 */	blr 
+/* 803286B8 00324358  4E 80 00 20 */	blr
 
 .global "sMethod_stop__8AptSoundFP8AptValuei"
 "sMethod_stop__8AptSoundFP8AptValuei":
@@ -205,7 +205,7 @@ lbl_803286A4:
 /* 803286D0 00324370  80 6D C0 D4 */	lwz r3, "gpUndefinedValue"-_SDA_BASE_(r13)
 /* 803286D4 00324374  7C 08 03 A6 */	mtlr r0
 /* 803286D8 00324378  38 21 00 10 */	addi r1, r1, 0x10
-/* 803286DC 0032437C  4E 80 00 20 */	blr 
+/* 803286DC 0032437C  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__8AptSoundCFP8AptValuePC9EAStringC"
 "objectMemberLookup__8AptSoundCFP8AptValuePC9EAStringC":
@@ -265,7 +265,7 @@ lbl_8032877C:
 /* 803287A0 00324440  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 803287A4 00324444  81 8C 00 08 */	lwz r12, 8(r12)
 /* 803287A8 00324448  7D 89 03 A6 */	mtctr r12
-/* 803287AC 0032444C  4E 80 04 21 */	bctrl 
+/* 803287AC 0032444C  4E 80 04 21 */	bctrl
 lbl_803287B0:
 /* 803287B0 00324450  80 6D C0 70 */	lwz r3, "psMethod_attachSound__8AptSound"-_SDA_BASE_(r13)
 /* 803287B4 00324454  48 00 00 D0 */	b lbl_80328884
@@ -293,7 +293,7 @@ lbl_803287E0:
 /* 80328804 003244A4  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 80328808 003244A8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8032880C 003244AC  7D 89 03 A6 */	mtctr r12
-/* 80328810 003244B0  4E 80 04 21 */	bctrl 
+/* 80328810 003244B0  4E 80 04 21 */	bctrl
 lbl_80328814:
 /* 80328814 003244B4  80 6D C0 74 */	lwz r3, "psMethod_start__8AptSound"-_SDA_BASE_(r13)
 /* 80328818 003244B8  48 00 00 6C */	b lbl_80328884
@@ -321,7 +321,7 @@ lbl_80328844:
 /* 80328868 00324508  38 A5 97 54 */	addi r5, r5, lbl_80459754@l
 /* 8032886C 0032450C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80328870 00324510  7D 89 03 A6 */	mtctr r12
-/* 80328874 00324514  4E 80 04 21 */	bctrl 
+/* 80328874 00324514  4E 80 04 21 */	bctrl
 lbl_80328878:
 /* 80328878 00324518  80 6D C0 78 */	lwz r3, "psMethod_stop__8AptSound"-_SDA_BASE_(r13)
 /* 8032887C 0032451C  48 00 00 08 */	b lbl_80328884
@@ -333,7 +333,7 @@ lbl_80328884:
 /* 8032888C 0032452C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80328890 00324530  7C 08 03 A6 */	mtlr r0
 /* 80328894 00324534  38 21 00 10 */	addi r1, r1, 0x10
-/* 80328898 00324538  4E 80 00 20 */	blr 
+/* 80328898 00324538  4E 80 00 20 */	blr
 
 .global "in_word_set__17SoundMembersIndexFPCcUi"
 "in_word_set__17SoundMembersIndexFPCcUi":
@@ -378,7 +378,7 @@ lbl_80328924:
 /* 8032892C 003245CC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80328930 003245D0  7C 08 03 A6 */	mtlr r0
 /* 80328934 003245D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80328938 003245D8  4E 80 00 20 */	blr 
+/* 80328938 003245D8  4E 80 00 20 */	blr
 
 .global "hash__17SoundMembersIndexFPCcUi"
 "hash__17SoundMembersIndexFPCcUi":
@@ -404,11 +404,11 @@ lbl_80328958:
 /* 80328984 00324624  7C 05 22 14 */	add r0, r5, r4
 /* 80328988 00324628  7C 63 02 14 */	add r3, r3, r0
 /* 8032898C 0032462C  38 21 01 10 */	addi r1, r1, 0x110
-/* 80328990 00324630  4E 80 00 20 */	blr 
+/* 80328990 00324630  4E 80 00 20 */	blr
 
 .global "c_sound__8AptValueCFv"
 "c_sound__8AptValueCFv":
-/* 80328994 00324634  4E 80 00 20 */	blr 
+/* 80328994 00324634  4E 80 00 20 */	blr
 
 .global "isSound__8AptValueCFv"
 "isSound__8AptValueCFv":
@@ -434,7 +434,7 @@ lbl_803289D4:
 /* 803289E0 00324680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803289E4 00324684  7C 08 03 A6 */	mtlr r0
 /* 803289E8 00324688  38 21 00 10 */	addi r1, r1, 0x10
-/* 803289EC 0032468C  4E 80 00 20 */	blr 
+/* 803289EC 0032468C  4E 80 00 20 */	blr
 
 .global "__dt__8AptSoundFv"
 "__dt__8AptSoundFv":
@@ -461,33 +461,160 @@ lbl_80328A30:
 /* 80328A3C 003246DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80328A40 003246E0  7C 08 03 A6 */	mtlr r0
 /* 80328A44 003246E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80328A48 003246E8  4E 80 00 20 */	blr 
+/* 80328A48 003246E8  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041C070
 lbl_8041C070:
-	.incbin "baserom.dol", 0x418170, 0x100
+	# ROM: 0x418170
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C000C0C
+	.4byte 0x000C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x000C0C00
+	.4byte 0x000C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+	.4byte 0x0C0C0C0C
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x4557C0, 0x10
+	# ROM: 0x4557C0
+	.asciz "attachSound"
+	.4byte 0x00000000
+
 .global "wordlist$6277_804596D0"
 "wordlist$6277_804596D0":
-	.incbin "baserom.dol", 0x4557D0, 0x60
+	# ROM: 0x4557D0
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C64 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x805D6C6C ;# ptr
+	.4byte 0x00000002
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x805D6C60 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x804596C0 ;# ptr
+	.4byte 0x00000001
+
 .global "__PRETTY_FUNCTION__$7574"
 "__PRETTY_FUNCTION__$7574":
-	.incbin "baserom.dol", 0x455830, 0x24
+	# ROM: 0x455830
+	.asciz "AptSound::CleanNativeFunctions()"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80459754
 lbl_80459754:
-	.incbin "baserom.dol", 0x455854, 0x10
+	# ROM: 0x455854
+	.asciz "AptSound.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$7722"
 "__PRETTY_FUNCTION__$7722":
-	.incbin "baserom.dol", 0x455864, 0x50
+	# ROM: 0x455864
+	.asciz "AptSound::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+	.byte 0x00, 0x00
+
 .global "__vt__8AptSound"
 "__vt__8AptSound":
-	.incbin "baserom.dol", 0x4558B4, 0x44
+	# ROM: 0x4558B4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__8AptSoundCFP8AptValuePC9EAStringC" ;# ptr (0x803286E0)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__8AptSoundFv" ;# ptr (0x803289F0)
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x4867E0, 0x18
+	# ROM: 0x4867E0
+	.4byte 0x00000000
+	.asciz "stop"
+	.byte 0x00, 0x00, 0x00
+	.asciz "start"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "psMethod_attachSound__8AptSound"

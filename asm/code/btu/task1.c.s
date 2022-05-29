@@ -18,7 +18,7 @@
 /* 8033EA28 0033A6C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033EA2C 0033A6CC  7C 08 03 A6 */	mtlr r0
 /* 8033EA30 0033A6D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033EA34 0033A6D4  4E 80 00 20 */	blr 
+/* 8033EA34 0033A6D4  4E 80 00 20 */	blr
 
 .global "btu_task_msg_handler"
 "btu_task_msg_handler":
@@ -124,7 +124,7 @@ lbl_8033EB70:
 /* 8033EB90 0033A830  41 86 00 14 */	beq cr1, lbl_8033EBA4
 /* 8033EB94 0033A834  7F 63 DB 78 */	mr r3, r27
 /* 8033EB98 0033A838  7D 89 03 A6 */	mtctr r12
-/* 8033EB9C 0033A83C  4E 80 04 21 */	bctrl 
+/* 8033EB9C 0033A83C  4E 80 04 21 */	bctrl
 /* 8033EBA0 0033A840  38 80 00 01 */	li r4, 1
 lbl_8033EBA4:
 /* 8033EBA4 0033A844  3B 5A 00 01 */	addi r26, r26, 1
@@ -226,7 +226,7 @@ lbl_8033ECDC:
 /* 8033ECDC 0033A97C  81 9C 00 10 */	lwz r12, 0x10(r28)
 /* 8033ECE0 0033A980  7F 83 E3 78 */	mr r3, r28
 /* 8033ECE4 0033A984  7D 89 03 A6 */	mtctr r12
-/* 8033ECE8 0033A988  4E 80 04 21 */	bctrl 
+/* 8033ECE8 0033A988  4E 80 04 21 */	bctrl
 /* 8033ECEC 0033A98C  48 00 00 58 */	b lbl_8033ED44
 lbl_8033ECF0:
 /* 8033ECF0 0033A990  3B 60 00 00 */	li r27, 0
@@ -243,7 +243,7 @@ lbl_8033ECFC:
 /* 8033ED18 0033A9B8  40 82 00 14 */	bne lbl_8033ED2C
 /* 8033ED1C 0033A9BC  7F 83 E3 78 */	mr r3, r28
 /* 8033ED20 0033A9C0  7D 89 03 A6 */	mtctr r12
-/* 8033ED24 0033A9C4  4E 80 04 21 */	bctrl 
+/* 8033ED24 0033A9C4  4E 80 04 21 */	bctrl
 /* 8033ED28 0033A9C8  38 80 00 01 */	li r4, 1
 lbl_8033ED2C:
 /* 8033ED2C 0033A9CC  3B 7B 00 01 */	addi r27, r27, 1
@@ -293,7 +293,7 @@ lbl_8033EDAC:
 /* 8033EDB4 0033AA54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033EDB8 0033AA58  7C 08 03 A6 */	mtlr r0
 /* 8033EDBC 0033AA5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033EDC0 0033AA60  4E 80 00 20 */	blr 
+/* 8033EDC0 0033AA60  4E 80 00 20 */	blr
 
 .global "btu_start_timer"
 "btu_start_timer":
@@ -324,7 +324,7 @@ lbl_8033EDAC:
 /* 8033EE24 0033AAC4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8033EE28 0033AAC8  7C 08 03 A6 */	mtlr r0
 /* 8033EE2C 0033AACC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033EE30 0033AAD0  4E 80 00 20 */	blr 
+/* 8033EE30 0033AAD0  4E 80 00 20 */	blr
 
 .global "btu_stop_timer"
 "btu_stop_timer":
@@ -342,10 +342,14 @@ lbl_8033EDAC:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "btu_count"
 "btu_count":
-	.incbin "baserom.dol", 0x486E38, 0x4
+	# ROM: 0x486E38
+	.4byte 0x01000000
+
 .global "execute_btu"
 "execute_btu":
-	.incbin "baserom.dol", 0x486E3C, 0x4
+	# ROM: 0x486E3C
+	.4byte 0x00000001
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_btu_g_count"

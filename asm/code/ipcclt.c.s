@@ -16,7 +16,7 @@ lbl_803CE070:
 /* 803CE084 003C9D24  40 82 FF E8 */	bne lbl_803CE06C
 lbl_803CE088:
 /* 803CE088 003C9D28  7C 63 28 50 */	subf r3, r3, r5
-/* 803CE08C 003C9D2C  4E 80 00 20 */	blr 
+/* 803CE08C 003C9D2C  4E 80 00 20 */	blr
 
 .global "IpcReplyHandler"
 "IpcReplyHandler":
@@ -157,7 +157,7 @@ lbl_803CE24C:
 /* 803CE26C 003C9F0C  80 7F 00 04 */	lwz r3, 4(r31)
 /* 803CE270 003C9F10  80 9F 00 24 */	lwz r4, 0x24(r31)
 /* 803CE274 003C9F14  7D 89 03 A6 */	mtctr r12
-/* 803CE278 003C9F18  4E 80 04 21 */	bctrl 
+/* 803CE278 003C9F18  4E 80 04 21 */	bctrl
 /* 803CE27C 003C9F1C  38 61 00 08 */	addi r3, r1, 8
 /* 803CE280 003C9F20  48 00 EA 2D */	bl "OSClearContext"
 /* 803CE284 003C9F24  7F C3 F3 78 */	mr r3, r30
@@ -187,7 +187,7 @@ lbl_803CE2C8:
 /* 803CE2D8 003C9F78  83 81 02 D0 */	lwz r28, 0x2d0(r1)
 /* 803CE2DC 003C9F7C  7C 08 03 A6 */	mtlr r0
 /* 803CE2E0 003C9F80  38 21 02 E0 */	addi r1, r1, 0x2e0
-/* 803CE2E4 003C9F84  4E 80 00 20 */	blr 
+/* 803CE2E4 003C9F84  4E 80 00 20 */	blr
 
 .global "IPCInterruptHandler"
 "IPCInterruptHandler":
@@ -307,7 +307,7 @@ lbl_803CE488:
 /* 803CE490 003CA130  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803CE494 003CA134  7C 08 03 A6 */	mtlr r0
 /* 803CE498 003CA138  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CE49C 003CA13C  4E 80 00 20 */	blr 
+/* 803CE49C 003CA13C  4E 80 00 20 */	blr
 
 .global "IPCCltInit"
 "IPCCltInit":
@@ -357,7 +357,7 @@ lbl_803CE534:
 /* 803CE544 003CA1E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CE548 003CA1E8  7C 08 03 A6 */	mtlr r0
 /* 803CE54C 003CA1EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CE550 003CA1F0  4E 80 00 20 */	blr 
+/* 803CE550 003CA1F0  4E 80 00 20 */	blr
 
 .global "__ios_Ipc2"
 "__ios_Ipc2":
@@ -521,7 +521,7 @@ lbl_803CE77C:
 /* 803CE790 003CA430  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CE794 003CA434  7C 08 03 A6 */	mtlr r0
 /* 803CE798 003CA438  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CE79C 003CA43C  4E 80 00 20 */	blr 
+/* 803CE79C 003CA43C  4E 80 00 20 */	blr
 
 .global "IOS_OpenAsync"
 "IOS_OpenAsync":
@@ -603,7 +603,7 @@ lbl_803CE89C:
 /* 803CE8A8 003CA548  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CE8AC 003CA54C  7C 08 03 A6 */	mtlr r0
 /* 803CE8B0 003CA550  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CE8B4 003CA554  4E 80 00 20 */	blr 
+/* 803CE8B4 003CA554  4E 80 00 20 */	blr
 
 .global "IOS_Open"
 "IOS_Open":
@@ -687,7 +687,7 @@ lbl_803CE9B4:
 /* 803CE9C8 003CA668  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CE9CC 003CA66C  7C 08 03 A6 */	mtlr r0
 /* 803CE9D0 003CA670  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CE9D4 003CA674  4E 80 00 20 */	blr 
+/* 803CE9D4 003CA674  4E 80 00 20 */	blr
 
 .global "IOS_CloseAsync"
 "IOS_CloseAsync":
@@ -742,7 +742,7 @@ lbl_803CEA74:
 /* 803CEA88 003CA728  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CEA8C 003CA72C  7C 08 03 A6 */	mtlr r0
 /* 803CEA90 003CA730  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CEA94 003CA734  4E 80 00 20 */	blr 
+/* 803CEA94 003CA734  4E 80 00 20 */	blr
 
 .global "IOS_Close"
 "IOS_Close":
@@ -791,7 +791,7 @@ lbl_803CEB24:
 /* 803CEB30 003CA7D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CEB34 003CA7D4  7C 08 03 A6 */	mtlr r0
 /* 803CEB38 003CA7D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CEB3C 003CA7DC  4E 80 00 20 */	blr 
+/* 803CEB3C 003CA7DC  4E 80 00 20 */	blr
 
 .global "IOS_ReadAsync"
 "IOS_ReadAsync":
@@ -866,7 +866,7 @@ lbl_803CEC24:
 /* 803CEC30 003CA8D0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CEC34 003CA8D4  7C 08 03 A6 */	mtlr r0
 /* 803CEC38 003CA8D8  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CEC3C 003CA8DC  4E 80 00 20 */	blr 
+/* 803CEC3C 003CA8DC  4E 80 00 20 */	blr
 
 .global "IOS_Read"
 "IOS_Read":
@@ -943,7 +943,7 @@ lbl_803CED24:
 /* 803CED38 003CA9D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CED3C 003CA9DC  7C 08 03 A6 */	mtlr r0
 /* 803CED40 003CA9E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CED44 003CA9E4  4E 80 00 20 */	blr 
+/* 803CED44 003CA9E4  4E 80 00 20 */	blr
 
 .global "IOS_WriteAsync"
 "IOS_WriteAsync":
@@ -1018,7 +1018,7 @@ lbl_803CEE2C:
 /* 803CEE38 003CAAD8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CEE3C 003CAADC  7C 08 03 A6 */	mtlr r0
 /* 803CEE40 003CAAE0  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CEE44 003CAAE4  4E 80 00 20 */	blr 
+/* 803CEE44 003CAAE4  4E 80 00 20 */	blr
 
 .global "IOS_Write"
 "IOS_Write":
@@ -1095,7 +1095,7 @@ lbl_803CEF2C:
 /* 803CEF40 003CABE0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CEF44 003CABE4  7C 08 03 A6 */	mtlr r0
 /* 803CEF48 003CABE8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CEF4C 003CABEC  4E 80 00 20 */	blr 
+/* 803CEF4C 003CABEC  4E 80 00 20 */	blr
 
 .global "IOS_SeekAsync"
 "IOS_SeekAsync":
@@ -1160,7 +1160,7 @@ lbl_803CF014:
 /* 803CF020 003CACC0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CF024 003CACC4  7C 08 03 A6 */	mtlr r0
 /* 803CF028 003CACC8  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CF02C 003CACCC  4E 80 00 20 */	blr 
+/* 803CF02C 003CACCC  4E 80 00 20 */	blr
 
 .global "IOS_Seek"
 "IOS_Seek":
@@ -1227,7 +1227,7 @@ lbl_803CF0F4:
 /* 803CF108 003CADA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CF10C 003CADAC  7C 08 03 A6 */	mtlr r0
 /* 803CF110 003CADB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CF114 003CADB4  4E 80 00 20 */	blr 
+/* 803CF114 003CADB4  4E 80 00 20 */	blr
 
 .global "IOS_IoctlAsync"
 "IOS_IoctlAsync":
@@ -1318,7 +1318,7 @@ lbl_803CF234:
 /* 803CF240 003CAEE0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803CF244 003CAEE4  7C 08 03 A6 */	mtlr r0
 /* 803CF248 003CAEE8  38 21 00 40 */	addi r1, r1, 0x40
-/* 803CF24C 003CAEEC  4E 80 00 20 */	blr 
+/* 803CF24C 003CAEEC  4E 80 00 20 */	blr
 
 .global "IOS_Ioctl"
 "IOS_Ioctl":
@@ -1407,7 +1407,7 @@ lbl_803CF364:
 /* 803CF370 003CB010  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CF374 003CB014  7C 08 03 A6 */	mtlr r0
 /* 803CF378 003CB018  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CF37C 003CB01C  4E 80 00 20 */	blr 
+/* 803CF37C 003CB01C  4E 80 00 20 */	blr
 
 .global "__ios_Ioctlv"
 "__ios_Ioctlv":
@@ -1501,7 +1501,7 @@ lbl_803CF4A0:
 /* 803CF4AC 003CB14C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CF4B0 003CB150  7C 08 03 A6 */	mtlr r0
 /* 803CF4B4 003CB154  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CF4B8 003CB158  4E 80 00 20 */	blr 
+/* 803CF4B8 003CB158  4E 80 00 20 */	blr
 
 .global "IOS_IoctlvAsync"
 "IOS_IoctlvAsync":
@@ -1565,7 +1565,7 @@ lbl_803CF584:
 /* 803CF590 003CB230  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CF594 003CB234  7C 08 03 A6 */	mtlr r0
 /* 803CF598 003CB238  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CF59C 003CB23C  4E 80 00 20 */	blr 
+/* 803CF59C 003CB23C  4E 80 00 20 */	blr
 
 .global "IOS_Ioctlv"
 "IOS_Ioctlv":
@@ -1627,7 +1627,7 @@ lbl_803CF660:
 /* 803CF66C 003CB30C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CF670 003CB310  7C 08 03 A6 */	mtlr r0
 /* 803CF674 003CB314  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CF678 003CB318  4E 80 00 20 */	blr 
+/* 803CF678 003CB318  4E 80 00 20 */	blr
 
 .global "IOS_IoctlvReboot"
 "IOS_IoctlvReboot":
@@ -1692,7 +1692,7 @@ lbl_803CF748:
 /* 803CF754 003CB3F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CF758 003CB3F8  7C 08 03 A6 */	mtlr r0
 /* 803CF75C 003CB3FC  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CF760 003CB400  4E 80 00 20 */	blr 
+/* 803CF760 003CB400  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__responses"
@@ -1702,10 +1702,14 @@ lbl_803CF748:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "__mailboxAck"
 "__mailboxAck":
-	.incbin "baserom.dol", 0x487230, 0x4
+	# ROM: 0x487230
+	.4byte 0x00000001
+
 .global "hid"
 "hid":
-	.incbin "baserom.dol", 0x487234, 0x4
+	# ROM: 0x487234
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__relnchFl"

@@ -14,7 +14,7 @@
 /* 803A2D50 0039E9F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A2D54 0039E9F4  7C 08 03 A6 */	mtlr r0
 /* 803A2D58 0039E9F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2D5C 0039E9FC  4E 80 00 20 */	blr 
+/* 803A2D5C 0039E9FC  4E 80 00 20 */	blr
 
 .global "Init__Q46nw4hbm3snd6detail12EnvGeneratorFv"
 "Init__Q46nw4hbm3snd6detail12EnvGeneratorFv":
@@ -40,7 +40,7 @@
 /* 803A2DAC 0039EA4C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803A2DB0 0039EA50  7C 08 03 A6 */	mtlr r0
 /* 803A2DB4 0039EA54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2DB8 0039EA58  4E 80 00 20 */	blr 
+/* 803A2DB8 0039EA58  4E 80 00 20 */	blr
 
 .global "Reset__Q46nw4hbm3snd6detail12EnvGeneratorFv"
 "Reset__Q46nw4hbm3snd6detail12EnvGeneratorFv":
@@ -48,7 +48,7 @@
 /* 803A2DC0 0039EA60  38 00 00 00 */	li r0, 0
 /* 803A2DC4 0039EA64  90 03 00 00 */	stw r0, 0(r3)
 /* 803A2DC8 0039EA68  D0 03 00 04 */	stfs f0, 4(r3)
-/* 803A2DCC 0039EA6C  4E 80 00 20 */	blr 
+/* 803A2DCC 0039EA6C  4E 80 00 20 */	blr
 
 .global "GetValue__Q46nw4hbm3snd6detail12EnvGeneratorCFv"
 "GetValue__Q46nw4hbm3snd6detail12EnvGeneratorCFv":
@@ -156,7 +156,7 @@ lbl_803A2F2C:
 /* 803A2F34 0039EBD4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803A2F38 0039EBD8  7C 08 03 A6 */	mtlr r0
 /* 803A2F3C 0039EBDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A2F40 0039EBE0  4E 80 00 20 */	blr 
+/* 803A2F40 0039EBE0  4E 80 00 20 */	blr
 
 .global "SetAttack__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "SetAttack__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -197,7 +197,7 @@ lbl_803A2FA8:
 /* 803A2FC4 0039EC64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A2FC8 0039EC68  7C 08 03 A6 */	mtlr r0
 /* 803A2FCC 0039EC6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A2FD0 0039EC70  4E 80 00 20 */	blr 
+/* 803A2FD0 0039EC70  4E 80 00 20 */	blr
 
 .global "SetDecay__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "SetDecay__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -236,7 +236,7 @@ lbl_803A3038:
 /* 803A304C 0039ECEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3050 0039ECF0  7C 08 03 A6 */	mtlr r0
 /* 803A3054 0039ECF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3058 0039ECF8  4E 80 00 20 */	blr 
+/* 803A3058 0039ECF8  4E 80 00 20 */	blr
 
 .global "SetSustain__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "SetSustain__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -273,7 +273,7 @@ lbl_803A30C0:
 /* 803A30CC 0039ED6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A30D0 0039ED70  7C 08 03 A6 */	mtlr r0
 /* 803A30D4 0039ED74  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A30D8 0039ED78  4E 80 00 20 */	blr 
+/* 803A30D8 0039ED78  4E 80 00 20 */	blr
 
 .global "SetRelease__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "SetRelease__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -312,7 +312,7 @@ lbl_803A3140:
 /* 803A3154 0039EDF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3158 0039EDF8  7C 08 03 A6 */	mtlr r0
 /* 803A315C 0039EDFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3160 0039EE00  4E 80 00 20 */	blr 
+/* 803A3160 0039EE00  4E 80 00 20 */	blr
 
 .global "CalcRelease__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "CalcRelease__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -385,7 +385,7 @@ lbl_803A3250:
 /* 803A3254 0039EEF4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803A3258 0039EEF8  7C 08 03 A6 */	mtlr r0
 /* 803A325C 0039EEFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803A3260 0039EF00  4E 80 00 20 */	blr 
+/* 803A3260 0039EF00  4E 80 00 20 */	blr
 
 .global "CalcDecibelSquare__Q46nw4hbm3snd6detail12EnvGeneratorFi"
 "CalcDecibelSquare__Q46nw4hbm3snd6detail12EnvGeneratorFi":
@@ -422,64 +422,296 @@ lbl_803A32C0:
 /* 803A32D4 0039EF74  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A32D8 0039EF78  7C 08 03 A6 */	mtlr r0
 /* 803A32DC 0039EF7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A32E0 0039EF80  4E 80 00 20 */	blr 
+/* 803A32E0 0039EF80  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "DecibelSquareTable__Q46nw4hbm3snd6detail12EnvGenerator"
 "DecibelSquareTable__Q46nw4hbm3snd6detail12EnvGenerator":
-	.incbin "baserom.dol", 0x419270, 0x100
+	# ROM: 0x419270
+	.4byte 0xFD2DFD2E
+	.4byte 0xFD2FFD75
+	.4byte 0xFDA7FDCE
+	.4byte 0xFDEEFE09
+	.4byte 0xFE20FE34
+	.4byte 0xFE46FE57
+	.4byte 0xFE66FE74
+	.4byte 0xFE81FE8D
+	.4byte 0xFE98FEA3
+	.4byte 0xFEADFEB6
+	.4byte 0xFEBFFEC7
+	.4byte 0xFECFFED7
+	.4byte 0xFEDFFEE6
+	.4byte 0xFEECFEF3
+	.4byte 0xFEF9FEFF
+	.4byte 0xFF05FF0B
+	.4byte 0xFF11FF16
+	.4byte 0xFF1BFF20
+	.4byte 0xFF25FF2A
+	.4byte 0xFF2EFF33
+	.4byte 0xFF37FF3C
+	.4byte 0xFF40FF44
+	.4byte 0xFF48FF4C
+	.4byte 0xFF50FF53
+	.4byte 0xFF57FF5B
+	.4byte 0xFF5EFF62
+	.4byte 0xFF65FF68
+	.4byte 0xFF6BFF6F
+	.4byte 0xFF72FF75
+	.4byte 0xFF78FF7B
+	.4byte 0xFF7EFF81
+	.4byte 0xFF83FF86
+	.4byte 0xFF89FF8C
+	.4byte 0xFF8EFF91
+	.4byte 0xFF93FF96
+	.4byte 0xFF99FF9B
+	.4byte 0xFF9DFFA0
+	.4byte 0xFFA2FFA5
+	.4byte 0xFFA7FFA9
+	.4byte 0xFFABFFAE
+	.4byte 0xFFB0FFB2
+	.4byte 0xFFB4FFB6
+	.4byte 0xFFB8FFBA
+	.4byte 0xFFBCFFBE
+	.4byte 0xFFC0FFC2
+	.4byte 0xFFC4FFC6
+	.4byte 0xFFC8FFCA
+	.4byte 0xFFCCFFCE
+	.4byte 0xFFCFFFD1
+	.4byte 0xFFD3FFD5
+	.4byte 0xFFD6FFD8
+	.4byte 0xFFDAFFDC
+	.4byte 0xFFDDFFDF
+	.4byte 0xFFE1FFE2
+	.4byte 0xFFE4FFE5
+	.4byte 0xFFE7FFE9
+	.4byte 0xFFEAFFEC
+	.4byte 0xFFEDFFEF
+	.4byte 0xFFF0FFF2
+	.4byte 0xFFF3FFF5
+	.4byte 0xFFF6FFF8
+	.4byte 0xFFF9FFFA
+	.4byte 0xFFFCFFFD
+	.4byte 0xFFFF0000
+
 .global "attackTable$1270"
 "attackTable$1270":
-	.incbin "baserom.dol", 0x419370, 0x200
+	# ROM: 0x419370
+	.4byte 0x3F7FCCB8
+	.4byte 0x3F7F9947
+	.4byte 0x3F7F65AD
+	.4byte 0x3F7F31E9
+	.4byte 0x3F7EFDFA
+	.4byte 0x3F7EC9E1
+	.4byte 0x3F7E959D
+	.4byte 0x3F7E612F
+	.4byte 0x3F7E2C94
+	.4byte 0x3F7DF7CF
+	.4byte 0x3F7DC2DD
+	.4byte 0x3F7D8DBF
+	.4byte 0x3F7D5873
+	.4byte 0x3F7D22FD
+	.4byte 0x3F7CED57
+	.4byte 0x3F7CB784
+	.4byte 0x3F7C8183
+	.4byte 0x3F7C4B54
+	.4byte 0x3F7C14F7
+	.4byte 0x3F7BDE6A
+	.4byte 0x3F7BA7AD
+	.4byte 0x3F7B70C2
+	.4byte 0x3F7B39A4
+	.4byte 0x3F7B0258
+	.4byte 0x3F7ACADB
+	.4byte 0x3F7A932B
+	.4byte 0x3F7A5B4B
+	.4byte 0x3F7A2338
+	.4byte 0x3F79EAF3
+	.4byte 0x3F79B27C
+	.4byte 0x3F7979D1
+	.4byte 0x3F7940F1
+	.4byte 0x3F7907DE
+	.4byte 0x3F78CE97
+	.4byte 0x3F78951A
+	.4byte 0x3F785B69
+	.4byte 0x3F782181
+	.4byte 0x3F77E762
+	.4byte 0x3F77AD0F
+	.4byte 0x3F777282
+	.4byte 0x3F7737C0
+	.4byte 0x3F76FCC4
+	.4byte 0x3F76C190
+	.4byte 0x3F768622
+	.4byte 0x3F764A7B
+	.4byte 0x3F760E9C
+	.4byte 0x3F75D281
+	.4byte 0x3F75962A
+	.4byte 0x3F755999
+	.4byte 0x3F751CCB
+	.4byte 0x3F74DFC1
+	.4byte 0x3F74A27A
+	.4byte 0x3F7464F5
+	.4byte 0x3F742732
+	.4byte 0x3F73E930
+	.4byte 0x3F73AAEF
+	.4byte 0x3F736C6D
+	.4byte 0x3F732DAD
+	.4byte 0x3F72EEAA
+	.4byte 0x3F72AF65
+	.4byte 0x3F726FDF
+	.4byte 0x3F723015
+	.4byte 0x3F71F009
+	.4byte 0x3F71AFB8
+	.4byte 0x3F716F22
+	.4byte 0x3F712E47
+	.4byte 0x3F70ED26
+	.4byte 0x3F70ABBE
+	.4byte 0x3F706A10
+	.4byte 0x3F702818
+	.4byte 0x3F6FE5D8
+	.4byte 0x3F6FA34E
+	.4byte 0x3F6F607B
+	.4byte 0x3F6F1D5B
+	.4byte 0x3F6ED9F2
+	.4byte 0x3F6E963A
+	.4byte 0x3F6E5237
+	.4byte 0x3F6E0DE5
+	.4byte 0x3F6DC944
+	.4byte 0x3F6D8454
+	.4byte 0x3F6D3F12
+	.4byte 0x3F6CF981
+	.4byte 0x3F6CB39C
+	.4byte 0x3F6C6D65
+	.4byte 0x3F6C26DA
+	.4byte 0x3F6BDFFB
+	.4byte 0x3F6B98C5
+	.4byte 0x3F6B5139
+	.4byte 0x3F6B0956
+	.4byte 0x3F6AC11C
+	.4byte 0x3F6A7887
+	.4byte 0x3F6A2F98
+	.4byte 0x3F69E64C
+	.4byte 0x3F699CA6
+	.4byte 0x3F6952A2
+	.4byte 0x3F69083F
+	.4byte 0x3F68BD7E
+	.4byte 0x3F68725B
+	.4byte 0x3F6826D8
+	.4byte 0x3F67DAF0
+	.4byte 0x3F678EA6
+	.4byte 0x3F6741F5
+	.4byte 0x3F66F4E0
+	.4byte 0x3F66A763
+	.4byte 0x3F66597C
+	.4byte 0x3F660B2D
+	.4byte 0x3F65BC70
+	.4byte 0x3F656D49
+	.4byte 0x3F651DB3
+	.4byte 0x3F63DAF7
+	.4byte 0x3F61E90B
+	.4byte 0x3F603C9A
+	.4byte 0x3F5E82FB
+	.4byte 0x3F5D178D
+	.4byte 0x3F5A8424
+	.4byte 0x3F57D016
+	.4byte 0x3F542004
+	.4byte 0x3F509DEF
+	.4byte 0x3F4CDB09
+	.4byte 0x3F472F5A
+	.4byte 0x3F4166CF
+	.4byte 0x3F3965FE
+	.4byte 0x3F2ECD8C
+	.4byte 0x3F2206D8
+	.4byte 0x3F0F289E
+	.4byte 0x3EE90841
+	.4byte 0x3EA8E5A3
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046DF30
 lbl_8046DF30:
-	.incbin "baserom.dol", 0x46A030, 0x18
+	# ROM: 0x46A030
+	.asciz "snd_EnvGenerator.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046DF48
 lbl_8046DF48:
-	.incbin "baserom.dol", 0x46A048, 0x40
+	# ROM: 0x46A048
+	.asciz "attack is out of bounds(%d)\n%d <= attack <= %d not satisfied."
+	.byte 0x00, 0x00
+
 .global lbl_8046DF88
 lbl_8046DF88:
-	.incbin "baserom.dol", 0x46A088, 0x40
+	# ROM: 0x46A088
+	.asciz "decay is out of bounds(%d)\n%d <= decay <= %d not satisfied."
+	.4byte 0x00000000
+
 .global lbl_8046DFC8
 lbl_8046DFC8:
-	.incbin "baserom.dol", 0x46A0C8, 0x40
+	# ROM: 0x46A0C8
+	.asciz "sustain is out of bounds(%d)\n%d <= sustain <= %d not satisfied."
+
 .global lbl_8046E008
 lbl_8046E008:
-	.incbin "baserom.dol", 0x46A108, 0x40
+	# ROM: 0x46A108
+	.asciz "release is out of bounds(%d)\n%d <= release <= %d not satisfied."
+
 .global lbl_8046E048
 lbl_8046E048:
-	.incbin "baserom.dol", 0x46A148, 0x40
+	# ROM: 0x46A148
+	.asciz "scale is out of bounds(%d)\n%d <= scale <= %d not satisfied."
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBB10
 lbl_805DBB10:
-	.incbin "baserom.dol", 0x489E30, 0x4
+	# ROM: 0x489E30
+	.4byte 0xC4620000
+
 .global lbl_805DBB14
 lbl_805DBB14:
-	.incbin "baserom.dol", 0x489E34, 0x4
+	# ROM: 0x489E34
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBB18
 lbl_805DBB18:
-	.incbin "baserom.dol", 0x489E38, 0x4
+	# ROM: 0x489E38
+	.4byte 0x41200000
+
 .global lbl_805DBB1C
 lbl_805DBB1C:
-	.incbin "baserom.dol", 0x489E3C, 0x4
+	# ROM: 0x489E3C
+	.4byte 0xBD000000
+
 .global lbl_805DBB20
 lbl_805DBB20:
-	.incbin "baserom.dol", 0x489E40, 0x8
+	# ROM: 0x489E40
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBB28
 lbl_805DBB28:
-	.incbin "baserom.dol", 0x489E48, 0x4
+	# ROM: 0x489E48
+	.4byte 0x477FFF00
+
 .global lbl_805DBB2C
 lbl_805DBB2C:
-	.incbin "baserom.dol", 0x489E4C, 0x4
+	# ROM: 0x489E4C
+	.4byte 0x41C00000
+
 .global lbl_805DBB30
 lbl_805DBB30:
-	.incbin "baserom.dol", 0x489E50, 0x4
+	# ROM: 0x489E50
+	.4byte 0x3C000000
+
 .global lbl_805DBB34
 lbl_805DBB34:
-	.incbin "baserom.dol", 0x489E54, 0x4
+	# ROM: 0x489E54
+	.4byte 0x40A00000
+
 .global lbl_805DBB38
 lbl_805DBB38:
-	.incbin "baserom.dol", 0x489E58, 0x8
+	# ROM: 0x489E58
+	.4byte 0x42700000
+	.4byte 0x00000000
+

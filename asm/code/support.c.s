@@ -73,7 +73,7 @@ lbl_80411CC8:
 /* 80411CE4 0040D984  83 81 00 60 */	lwz r28, 0x60(r1)
 /* 80411CE8 0040D988  7C 08 03 A6 */	mtlr r0
 /* 80411CEC 0040D98C  38 21 00 70 */	addi r1, r1, 0x70
-/* 80411CF0 0040D990  4E 80 00 20 */	blr 
+/* 80411CF0 0040D990  4E 80 00 20 */	blr
 
 .global "HandleCloseFileSupportRequest"
 "HandleCloseFileSupportRequest":
@@ -138,7 +138,7 @@ lbl_80411DB4:
 /* 80411DCC 0040DA6C  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 80411DD0 0040DA70  7C 08 03 A6 */	mtlr r0
 /* 80411DD4 0040DA74  38 21 00 70 */	addi r1, r1, 0x70
-/* 80411DD8 0040DA78  4E 80 00 20 */	blr 
+/* 80411DD8 0040DA78  4E 80 00 20 */	blr
 
 .global "HandleOpenFileSupportRequest"
 "HandleOpenFileSupportRequest":
@@ -215,7 +215,7 @@ lbl_80411ED8:
 /* 80411EE8 0040DB88  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80411EEC 0040DB8C  7C 08 03 A6 */	mtlr r0
 /* 80411EF0 0040DB90  38 21 00 70 */	addi r1, r1, 0x70
-/* 80411EF4 0040DB94  4E 80 00 20 */	blr 
+/* 80411EF4 0040DB94  4E 80 00 20 */	blr
 
 .global "TRKRequestSend"
 "TRKRequestSend":
@@ -327,7 +327,7 @@ lbl_80412060:
 /* 80412068 0040DD08  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8041206C 0040DD0C  7C 08 03 A6 */	mtlr r0
 /* 80412070 0040DD10  38 21 00 30 */	addi r1, r1, 0x30
-/* 80412074 0040DD14  4E 80 00 20 */	blr 
+/* 80412074 0040DD14  4E 80 00 20 */	blr
 
 .global "TRKSuppAccessFile"
 "TRKSuppAccessFile":
@@ -482,4 +482,4 @@ lbl_80412284:
 /* 80412288 0040DF28  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8041228C 0040DF2C  7C 08 03 A6 */	mtlr r0
 /* 80412290 0040DF30  38 21 00 90 */	addi r1, r1, 0x90
-/* 80412294 0040DF34  4E 80 00 20 */	blr 
+/* 80412294 0040DF34  4E 80 00 20 */	blr

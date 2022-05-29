@@ -109,7 +109,7 @@ lbl_8033A0C0:
 /* 8033A0CC 00335D6C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033A0D0 00335D70  7C 08 03 A6 */	mtlr r0
 /* 8033A0D4 00335D74  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033A0D8 00335D78  4E 80 00 20 */	blr 
+/* 8033A0D8 00335D78  4E 80 00 20 */	blr
 
 .global "AXFXReverbHiExpShutdown"
 "AXFXReverbHiExpShutdown":
@@ -133,7 +133,7 @@ lbl_8033A0C0:
 /* 8033A120 00335DC0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033A124 00335DC4  7C 08 03 A6 */	mtlr r0
 /* 8033A128 00335DC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033A12C 00335DCC  4E 80 00 20 */	blr 
+/* 8033A12C 00335DCC  4E 80 00 20 */	blr
 
 .global "AXFXReverbHiExpCallback"
 "AXFXReverbHiExpCallback":
@@ -483,7 +483,7 @@ lbl_8033A630:
 /* 8033A638 003362D8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8033A63C 003362DC  7C 08 03 A6 */	mtlr r0
 /* 8033A640 003362E0  38 21 00 70 */	addi r1, r1, 0x70
-/* 8033A644 003362E4  4E 80 00 20 */	blr 
+/* 8033A644 003362E4  4E 80 00 20 */	blr
 
 .global "__AllocDelayLine"
 "__AllocDelayLine":
@@ -503,7 +503,7 @@ lbl_8033A674:
 /* 8033A678 00336318  81 8D AB 70 */	lwz r12, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033A67C 0033631C  54 03 10 3A */	slwi r3, r0, 2
 /* 8033A680 00336320  7D 89 03 A6 */	mtctr r12
-/* 8033A684 00336324  4E 80 04 21 */	bctrl 
+/* 8033A684 00336324  4E 80 04 21 */	bctrl
 /* 8033A688 00336328  2C 03 00 00 */	cmpwi r3, 0
 /* 8033A68C 0033632C  90 7E 00 00 */	stw r3, 0(r30)
 /* 8033A690 00336330  40 82 00 0C */	bne lbl_8033A69C
@@ -516,7 +516,7 @@ lbl_8033A69C:
 /* 8033A6A8 00336348  81 8D AB 70 */	lwz r12, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033A6AC 0033634C  54 03 10 3A */	slwi r3, r0, 2
 /* 8033A6B0 00336350  7D 89 03 A6 */	mtctr r12
-/* 8033A6B4 00336354  4E 80 04 21 */	bctrl 
+/* 8033A6B4 00336354  4E 80 04 21 */	bctrl
 /* 8033A6B8 00336358  2C 03 00 00 */	cmpwi r3, 0
 /* 8033A6BC 0033635C  90 7E 00 2C */	stw r3, 0x2c(r30)
 /* 8033A6C0 00336360  40 82 00 10 */	bne lbl_8033A6D0
@@ -533,7 +533,7 @@ lbl_8033A6DC:
 /* 8033A6E0 00336380  81 8D AB 70 */	lwz r12, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033A6E4 00336384  54 03 10 3A */	slwi r3, r0, 2
 /* 8033A6E8 00336388  7D 89 03 A6 */	mtctr r12
-/* 8033A6EC 0033638C  4E 80 04 21 */	bctrl 
+/* 8033A6EC 0033638C  4E 80 04 21 */	bctrl
 /* 8033A6F0 00336390  2C 03 00 00 */	cmpwi r3, 0
 /* 8033A6F4 00336394  90 7B 00 44 */	stw r3, 0x44(r27)
 /* 8033A6F8 00336398  40 82 00 0C */	bne lbl_8033A704
@@ -553,7 +553,7 @@ lbl_8033A724:
 /* 8033A728 003363C8  81 8D AB 70 */	lwz r12, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033A72C 003363CC  54 03 10 3A */	slwi r3, r0, 2
 /* 8033A730 003363D0  7D 89 03 A6 */	mtctr r12
-/* 8033A734 003363D4  4E 80 04 21 */	bctrl 
+/* 8033A734 003363D4  4E 80 04 21 */	bctrl
 /* 8033A738 003363D8  2C 03 00 00 */	cmpwi r3, 0
 /* 8033A73C 003363DC  90 7A 00 98 */	stw r3, 0x98(r26)
 /* 8033A740 003363E0  40 82 00 0C */	bne lbl_8033A74C
@@ -569,7 +569,7 @@ lbl_8033A74C:
 /* 8033A764 00336404  81 8D AB 70 */	lwz r12, "__AXFXAlloc"-_SDA_BASE_(r13)
 /* 8033A768 00336408  54 03 10 3A */	slwi r3, r0, 2
 /* 8033A76C 0033640C  7D 89 03 A6 */	mtctr r12
-/* 8033A770 00336410  4E 80 04 21 */	bctrl 
+/* 8033A770 00336410  4E 80 04 21 */	bctrl
 /* 8033A774 00336414  2C 03 00 00 */	cmpwi r3, 0
 /* 8033A778 00336418  90 7E 00 C8 */	stw r3, 0xc8(r30)
 /* 8033A77C 0033641C  40 82 00 0C */	bne lbl_8033A788
@@ -589,7 +589,7 @@ lbl_8033A7A4:
 /* 8033A7AC 0033644C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8033A7B0 00336450  7C 08 03 A6 */	mtlr r0
 /* 8033A7B4 00336454  38 21 00 30 */	addi r1, r1, 0x30
-/* 8033A7B8 00336458  4E 80 00 20 */	blr 
+/* 8033A7B8 00336458  4E 80 00 20 */	blr
 
 .global "__BzeroDelayLines"
 "__BzeroDelayLines":
@@ -673,7 +673,7 @@ lbl_8033A8B0:
 /* 8033A8D0 00336570  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8033A8D4 00336574  7C 08 03 A6 */	mtlr r0
 /* 8033A8D8 00336578  38 21 00 30 */	addi r1, r1, 0x30
-/* 8033A8DC 0033657C  4E 80 00 20 */	blr 
+/* 8033A8DC 0033657C  4E 80 00 20 */	blr
 
 .global "__FreeDelayLine"
 "__FreeDelayLine":
@@ -693,7 +693,7 @@ lbl_8033A908:
 /* 8033A910 003365B0  41 82 00 14 */	beq lbl_8033A924
 /* 8033A914 003365B4  81 8D AB 74 */	lwz r12, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033A918 003365B8  7D 89 03 A6 */	mtctr r12
-/* 8033A91C 003365BC  4E 80 04 21 */	bctrl 
+/* 8033A91C 003365BC  4E 80 04 21 */	bctrl
 /* 8033A920 003365C0  93 FE 00 00 */	stw r31, 0(r30)
 lbl_8033A924:
 /* 8033A924 003365C4  80 7E 00 2C */	lwz r3, 0x2c(r30)
@@ -701,7 +701,7 @@ lbl_8033A924:
 /* 8033A92C 003365CC  41 82 00 14 */	beq lbl_8033A940
 /* 8033A930 003365D0  81 8D AB 74 */	lwz r12, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033A934 003365D4  7D 89 03 A6 */	mtctr r12
-/* 8033A938 003365D8  4E 80 04 21 */	bctrl 
+/* 8033A938 003365D8  4E 80 04 21 */	bctrl
 /* 8033A93C 003365DC  93 FE 00 2C */	stw r31, 0x2c(r30)
 lbl_8033A940:
 /* 8033A940 003365E0  7F BB EB 78 */	mr r27, r29
@@ -712,7 +712,7 @@ lbl_8033A948:
 /* 8033A950 003365F0  41 82 00 14 */	beq lbl_8033A964
 /* 8033A954 003365F4  81 8D AB 74 */	lwz r12, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033A958 003365F8  7D 89 03 A6 */	mtctr r12
-/* 8033A95C 003365FC  4E 80 04 21 */	bctrl 
+/* 8033A95C 003365FC  4E 80 04 21 */	bctrl
 /* 8033A960 00336600  93 FB 00 44 */	stw r31, 0x44(r27)
 lbl_8033A964:
 /* 8033A964 00336604  3B 5A 00 01 */	addi r26, r26, 1
@@ -727,7 +727,7 @@ lbl_8033A97C:
 /* 8033A984 00336624  41 82 00 14 */	beq lbl_8033A998
 /* 8033A988 00336628  81 8D AB 74 */	lwz r12, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033A98C 0033662C  7D 89 03 A6 */	mtctr r12
-/* 8033A990 00336630  4E 80 04 21 */	bctrl 
+/* 8033A990 00336630  4E 80 04 21 */	bctrl
 /* 8033A994 00336634  93 FB 00 98 */	stw r31, 0x98(r27)
 lbl_8033A998:
 /* 8033A998 00336638  3B 5A 00 01 */	addi r26, r26, 1
@@ -739,7 +739,7 @@ lbl_8033A998:
 /* 8033A9B0 00336650  41 82 00 14 */	beq lbl_8033A9C4
 /* 8033A9B4 00336654  81 8D AB 74 */	lwz r12, "__AXFXFree"-_SDA_BASE_(r13)
 /* 8033A9B8 00336658  7D 89 03 A6 */	mtctr r12
-/* 8033A9BC 0033665C  4E 80 04 21 */	bctrl 
+/* 8033A9BC 0033665C  4E 80 04 21 */	bctrl
 /* 8033A9C0 00336660  93 FE 00 C8 */	stw r31, 0xc8(r30)
 lbl_8033A9C4:
 /* 8033A9C4 00336664  3B 39 00 01 */	addi r25, r25, 1
@@ -753,7 +753,7 @@ lbl_8033A9C4:
 /* 8033A9E4 00336684  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8033A9E8 00336688  7C 08 03 A6 */	mtlr r0
 /* 8033A9EC 0033668C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8033A9F0 00336690  4E 80 00 20 */	blr 
+/* 8033A9F0 00336690  4E 80 00 20 */	blr
 
 .global "__InitParams"
 "__InitParams":
@@ -979,47 +979,180 @@ lbl_8033ACE8:
 /* 8033AD08 003369A8  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8033AD0C 003369AC  7C 08 03 A6 */	mtlr r0
 /* 8033AD10 003369B0  38 21 00 60 */	addi r1, r1, 0x60
-/* 8033AD14 003369B4  4E 80 00 20 */	blr 
+/* 8033AD14 003369B4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__EarlySizeTable"
 "__EarlySizeTable":
-	.incbin "baserom.dol", 0x45BB60, 0x60
+	# ROM: 0x45BB60
+	.4byte 0x0000009D
+	.4byte 0x000001DF
+	.4byte 0x0000033D
+	.4byte 0x0000013D
+	.4byte 0x00000329
+	.4byte 0x0000045D
+	.4byte 0x000001DF
+	.4byte 0x000003AD
+	.4byte 0x000005CF
+	.4byte 0x00000281
+	.4byte 0x000004EB
+	.4byte 0x0000079D
+	.4byte 0x0000031D
+	.4byte 0x00000683
+	.4byte 0x00000A13
+	.4byte 0x000003C7
+	.4byte 0x0000076D
+	.4byte 0x00000B57
+	.4byte 0x00000463
+	.4byte 0x00000883
+	.4byte 0x00000D55
+	.4byte 0x000004FF
+	.4byte 0x000009AD
+	.4byte 0x00000F31
+
 .global "__EarlyCoefTable"
 "__EarlyCoefTable":
-	.incbin "baserom.dol", 0x45BBC0, 0x60
+	# ROM: 0x45BBC0
+	.4byte 0x3ECCCCCD
+	.4byte 0xBF800000
+	.4byte 0x3E99999A
+	.4byte 0x3F000000
+	.4byte 0xBF733333
+	.4byte 0x3E99999A
+	.4byte 0x3F19999A
+	.4byte 0xBF666666
+	.4byte 0x3E99999A
+	.4byte 0x3F400000
+	.4byte 0xBF59999A
+	.4byte 0x3E99999A
+	.4byte 0xBF666666
+	.4byte 0x3F4CCCCD
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+	.4byte 0xBF800000
+	.4byte 0x3F333333
+	.4byte 0x3E99999A
+
 .global "__FilterSizeTable"
 "__FilterSizeTable":
-	.incbin "baserom.dol", 0x45BC20, 0xE0
+	# ROM: 0x45BC20
+	.4byte 0x000006FD
+	.4byte 0x000007CF
+	.4byte 0x0000091D
+	.4byte 0x000001B1
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x00000095
+	.4byte 0x00000125
+	.4byte 0x000001C1
+	.4byte 0x000000FB
+	.4byte 0x00000067
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000003B3
+	.4byte 0x00000551
+	.4byte 0x000005FB
+	.4byte 0x000001B1
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000004FF
+	.4byte 0x000005FB
+	.4byte 0x000007B5
+	.4byte 0x000001FD
+	.4byte 0x00000095
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x000005FB
+	.4byte 0x00000737
+	.4byte 0x000008F9
+	.4byte 0x00000233
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x00000089
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+	.4byte 0x0000071F
+	.4byte 0x00000935
+	.4byte 0x00000A85
+	.4byte 0x0000023B
+	.4byte 0x000000B3
+	.4byte 0x0000002F
+	.4byte 0x00000049
+	.4byte 0x00000043
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB710
 lbl_805DB710:
-	.incbin "baserom.dol", 0x489A30, 0x4
+	# ROM: 0x489A30
+	.4byte 0x46FA0000
+
 .global lbl_805DB714
 lbl_805DB714:
-	.incbin "baserom.dol", 0x489A34, 0x4
+	# ROM: 0x489A34
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB718
 lbl_805DB718:
-	.incbin "baserom.dol", 0x489A38, 0x4
+	# ROM: 0x489A38
+	.4byte 0x3F800000
+
 .global lbl_805DB71C
 lbl_805DB71C:
-	.incbin "baserom.dol", 0x489A3C, 0x4
+	# ROM: 0x489A3C
+	.4byte 0x3F19999A
+
 .global lbl_805DB720
 lbl_805DB720:
-	.incbin "baserom.dol", 0x489A40, 0x8
+	# ROM: 0x489A40
+	.4byte 0x3F000000
+	.4byte 0x00000000
+
 .global lbl_805DB728
 lbl_805DB728:
-	.incbin "baserom.dol", 0x489A48, 0x8
+	# ROM: 0x489A48
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB730
 lbl_805DB730:
-	.incbin "baserom.dol", 0x489A50, 0x8
+	# ROM: 0x489A50
+	.4byte 0xC0400000
+	.4byte 0x00000000
+
 .global lbl_805DB738
 lbl_805DB738:
-	.incbin "baserom.dol", 0x489A58, 0x8
+	# ROM: 0x489A58
+	.4byte 0x40240000
+	.4byte 0x00000000
+
 .global lbl_805DB740
 lbl_805DB740:
-	.incbin "baserom.dol", 0x489A60, 0x8
+	# ROM: 0x489A60
+	.asciz "?s33"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805DB748
 lbl_805DB748:
-	.incbin "baserom.dol", 0x489A68, 0x8
+	# ROM: 0x489A68
+	.4byte 0x43300000
+	.4byte 0x00000000
+

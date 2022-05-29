@@ -17,7 +17,7 @@
 /* 803C3694 003BF334  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C3698 003BF338  7C 08 03 A6 */	mtlr r0
 /* 803C369C 003BF33C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C36A0 003BF340  4E 80 00 20 */	blr 
+/* 803C36A0 003BF340  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut7ResFontFv"
 "__dt__Q36nw4hbm2ut7ResFontFv":
@@ -43,7 +43,7 @@ lbl_803C36E0:
 /* 803C36EC 003BF38C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C36F0 003BF390  7C 08 03 A6 */	mtlr r0
 /* 803C36F4 003BF394  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C36F8 003BF398  4E 80 00 20 */	blr 
+/* 803C36F8 003BF398  4E 80 00 20 */	blr
 
 .global "SetResource__Q36nw4hbm2ut7ResFontFPv"
 "SetResource__Q36nw4hbm2ut7ResFontFPv":
@@ -348,7 +348,7 @@ lbl_803C3B14:
 /* 803C3B28 003BF7C8  7F 43 D3 78 */	mr r3, r26
 /* 803C3B2C 003BF7CC  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 803C3B30 003BF7D0  7D 89 03 A6 */	mtctr r12
-/* 803C3B34 003BF7D4  4E 80 04 21 */	bctrl 
+/* 803C3B34 003BF7D4  4E 80 04 21 */	bctrl
 /* 803C3B38 003BF7D8  7C 64 1B 78 */	mr r4, r3
 /* 803C3B3C 003BF7DC  7F 43 D3 78 */	mr r3, r26
 /* 803C3B40 003BF7E0  4B FF EF 49 */	bl "InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding"
@@ -359,7 +359,7 @@ lbl_803C3B48:
 /* 803C3B50 003BF7F0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C3B54 003BF7F4  7C 08 03 A6 */	mtlr r0
 /* 803C3B58 003BF7F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C3B5C 003BF7FC  4E 80 00 20 */	blr 
+/* 803C3B5C 003BF7FC  4E 80 00 20 */	blr
 
 .global "IsManaging__Q46nw4hbm2ut6detail11ResFontBaseCFPCv"
 "IsManaging__Q46nw4hbm2ut6detail11ResFontBaseCFPCv":
@@ -367,7 +367,7 @@ lbl_803C3B48:
 /* 803C3B64 003BF804  7C 00 20 50 */	subf r0, r0, r4
 /* 803C3B68 003BF808  7C 00 00 34 */	cntlzw r0, r0
 /* 803C3B6C 003BF80C  54 03 D9 7E */	srwi r3, r0, 5
-/* 803C3B70 003BF810  4E 80 00 20 */	blr 
+/* 803C3B70 003BF810  4E 80 00 20 */	blr
 
 .global "Rebuild__Q36nw4hbm2ut7ResFontFPQ36nw4hbm2ut16BinaryFileHeader"
 "Rebuild__Q36nw4hbm2ut7ResFontFPQ36nw4hbm2ut16BinaryFileHeader":
@@ -1176,40 +1176,135 @@ lbl_803C46AC:
 /* 803C46B4 003C0354  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803C46B8 003C0358  7C 08 03 A6 */	mtlr r0
 /* 803C46BC 003C035C  38 21 00 40 */	addi r1, r1, 0x40
-/* 803C46C0 003C0360  4E 80 00 20 */	blr 
+/* 803C46C0 003C0360  4E 80 00 20 */	blr
 
 .global "ResolveOffset<Uc>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPUcPv_v"
 "ResolveOffset<Uc>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPUcPv_v":
 /* 803C46C4 003C0364  80 03 00 00 */	lwz r0, 0(r3)
 /* 803C46C8 003C0368  7C 04 02 14 */	add r0, r4, r0
 /* 803C46CC 003C036C  90 03 00 00 */	stw r0, 0(r3)
-/* 803C46D0 003C0370  4E 80 00 20 */	blr 
+/* 803C46D0 003C0370  4E 80 00 20 */	blr
 
 .global "ResolveOffset<Q36nw4hbm2ut11FontCodeMap>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut11FontCodeMapPv_v"
 "ResolveOffset<Q36nw4hbm2ut11FontCodeMap>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut11FontCodeMapPv_v":
 /* 803C46D4 003C0374  80 03 00 00 */	lwz r0, 0(r3)
 /* 803C46D8 003C0378  7C 04 02 14 */	add r0, r4, r0
 /* 803C46DC 003C037C  90 03 00 00 */	stw r0, 0(r3)
-/* 803C46E0 003C0380  4E 80 00 20 */	blr 
+/* 803C46E0 003C0380  4E 80 00 20 */	blr
 
 .global "ResolveOffset<Q36nw4hbm2ut9FontWidth>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut9FontWidthPv_v"
 "ResolveOffset<Q36nw4hbm2ut9FontWidth>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut9FontWidthPv_v":
 /* 803C46E4 003C0384  80 03 00 00 */	lwz r0, 0(r3)
 /* 803C46E8 003C0388  7C 04 02 14 */	add r0, r4, r0
 /* 803C46EC 003C038C  90 03 00 00 */	stw r0, 0(r3)
-/* 803C46F0 003C0390  4E 80 00 20 */	blr 
+/* 803C46F0 003C0390  4E 80 00 20 */	blr
 
 .global "ResolveOffset<Q36nw4hbm2ut16FontTextureGlyph>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut16FontTextureGlyphPv_v"
 "ResolveOffset<Q36nw4hbm2ut16FontTextureGlyph>__Q36nw4hbm2ut24@unnamed@ut_ResFont_cpp@FRPQ36nw4hbm2ut16FontTextureGlyphPv_v":
 /* 803C46F4 003C0394  80 03 00 00 */	lwz r0, 0(r3)
 /* 803C46F8 003C0398  7C 04 02 14 */	add r0, r4, r0
 /* 803C46FC 003C039C  90 03 00 00 */	stw r0, 0(r3)
-/* 803C4700 003C03A0  4E 80 00 20 */	blr 
+/* 803C4700 003C03A0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473F18
 lbl_80473F18:
-	.incbin "baserom.dol", 0x470018, 0x890
+	# ROM: 0x470018
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.asciz "ut_ResFont.cpp"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nbrfnt(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nbrfnt must be aligned to 32 bytes boundary."
+	.byte 0x00, 0x00, 0x00
+	.asciz "Font resource already atached."
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\nblockHeader(=%p) is not valid pointer."
+	.asciz "Invalid font resource."
+	.byte 0x00
+	.asciz "ResFont::RemoveResource(): Res font is not loaded.\n"
+	.asciz "NW4HBM:Pointer Error\nfileHeader(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nfileHeader must be aligned to 32 bytes boundary."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion info == NULL"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion info->fontType == FONT_TYPE_NNGCTEXTURE"
+	.asciz "NW4HBM:Failed assertion info->alterCharIndex != GLYPH_INDEX_NOT_FOUND"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (info->pGlyph)"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\ninfo->pGlyph(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\ninfo->pWidth(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\ninfo->pMap(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (glyph->sheetImage)"
+	.asciz "NW4HBM:Pointer Error\nglyph->sheetImage(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "glyph->cellWidth is out of bounds(%d)\n%d <= glyph->cellWidth not satisfied."
+	.asciz "glyph->cellHeight is out of bounds(%d)\n%d <= glyph->cellHeight not satisfied."
+	.byte 0x00, 0x00
+	.asciz "glyph->sheetSize is out of bounds(%d)\n%d <= glyph->sheetSize <= %d not satisfied."
+	.byte 0x00, 0x00
+	.asciz "glyph->sheetNum is out of bounds(%d)\n%d <= glyph->sheetNum not satisfied."
+	.byte 0x00, 0x00
+	.asciz "glyph->sheetRow is out of bounds(%d)\n%d <= glyph->sheetRow not satisfied."
+	.byte 0x00, 0x00
+	.asciz "glyph->sheetLine is out of bounds(%d)\n%d <= glyph->sheetLine not satisfied."
+	.asciz "glyph->sheetWidth is out of bounds(%d)\n%d <= glyph->sheetWidth <= %d not satisfied."
+	.asciz "glyph->sheetHeight is out of bounds(%d)\n%d <= glyph->sheetHeight <= %d not satisfied."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion width->indexBegin <= width->indexEnd"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nwidth->pNext(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion map->ccodeBegin <= map->ccodeEnd"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion (map->mappingMethod == FONT_MAPMETHOD_DIRECT) || (map->mappingMethod == FONT_MAPMETHOD_TABLE) || (map->mappingMethod == FONT_MAPMETHOD_SCAN)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nmap->pNext(=%p) is not valid pointer."
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "The font has unknown block('%c%c%c%c')."
+
 .global "__vt__Q36nw4hbm2ut7ResFont"
 "__vt__Q36nw4hbm2ut7ResFont":
-	.incbin "baserom.dol", 0x4708A8, 0x58
+	# ROM: 0x4708A8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm2ut7ResFontFv" ;# ptr (0x803C36A4)
+	.4byte "GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4A30)
+	.4byte "GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4C38)
+	.4byte "GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C4E40)
+	.4byte "GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5048)
+	.4byte "GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5258)
+	.4byte "GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5468)
+	.4byte "GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5674)
+	.4byte "GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5880)
+	.4byte "GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5A8C)
+	.4byte "GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5A94)
+	.4byte "GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5CA0)
+	.4byte "GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C5EAC)
+	.4byte "SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths" ;# ptr (0x803C60C0)
+	.4byte "SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs" ;# ptr (0x803C63C0)
+	.4byte "SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi" ;# ptr (0x803C65F8)
+	.4byte "GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs" ;# ptr (0x803C684C)
+	.4byte "GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs" ;# ptr (0x803C6898)
+	.4byte "GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs" ;# ptr (0x803C68E8)
+	.4byte "GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv" ;# ptr (0x803C6938)
+

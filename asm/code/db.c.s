@@ -12,7 +12,7 @@
 /* 80368D50 003649F0  3C 63 80 00 */	addis r3, r3, 0x8000
 /* 80368D54 003649F4  90 64 00 48 */	stw r3, 0x48(r4)
 /* 80368D58 003649F8  90 0D C3 5C */	stw r0, "DBVerbose"-_SDA_BASE_(r13)
-/* 80368D5C 003649FC  4E 80 00 20 */	blr 
+/* 80368D5C 003649FC  4E 80 00 20 */	blr
 
 .global "__DBExceptionDestinationAux"
 "__DBExceptionDestinationAux":
@@ -33,7 +33,7 @@
 /* 80368D98 00364A38  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80368D9C 00364A3C  7C 08 03 A6 */	mtlr r0
 /* 80368DA0 00364A40  38 21 00 10 */	addi r1, r1, 0x10
-/* 80368DA4 00364A44  4E 80 00 20 */	blr 
+/* 80368DA4 00364A44  4E 80 00 20 */	blr
 
 .global "__DBExceptionDestination"
 "__DBExceptionDestination":
@@ -49,7 +49,7 @@
 /* 80368DC0 00364A60  7C 00 18 30 */	slw r0, r0, r3
 /* 80368DC4 00364A64  80 64 00 04 */	lwz r3, 4(r4)
 /* 80368DC8 00364A68  7C 63 00 38 */	and r3, r3, r0
-/* 80368DCC 00364A6C  4E 80 00 20 */	blr 
+/* 80368DCC 00364A6C  4E 80 00 20 */	blr
 
 .global "DBPrintf"
 "DBPrintf":
@@ -73,12 +73,14 @@ lbl_80368DF8:
 /* 80368E10 00364AB0  91 21 00 20 */	stw r9, 0x20(r1)
 /* 80368E14 00364AB4  91 41 00 24 */	stw r10, 0x24(r1)
 /* 80368E18 00364AB8  38 21 00 70 */	addi r1, r1, 0x70
-/* 80368E1C 00364ABC  4E 80 00 20 */	blr 
+/* 80368E1C 00364ABC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80466148
 lbl_80466148:
-	.incbin "baserom.dol", 0x462248, 0x18
+	# ROM: 0x462248
+	.asciz "DBExceptionDestination\n"
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "__DBInterface"

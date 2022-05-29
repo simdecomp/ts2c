@@ -35,7 +35,7 @@ lbl_803B1A8C:
 /* 803B1A9C 003AD73C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803B1AA0 003AD740  7C 08 03 A6 */	mtlr r0
 /* 803B1AA4 003AD744  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B1AA8 003AD748  4E 80 00 20 */	blr 
+/* 803B1AA8 003AD748  4E 80 00 20 */	blr
 
 .global "DetachSound__Q36nw4hbm3snd11SoundHandleFv"
 "DetachSound__Q36nw4hbm3snd11SoundHandleFv":
@@ -71,12 +71,17 @@ lbl_803B1B10:
 /* 803B1B14 003AD7B4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803B1B18 003AD7B8  7C 08 03 A6 */	mtlr r0
 /* 803B1B1C 003AD7BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803B1B20 003AD7C0  4E 80 00 20 */	blr 
+/* 803B1B20 003AD7C0  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80470EA8
 lbl_80470EA8:
-	.incbin "baserom.dol", 0x46CFA8, 0x18
+	# ROM: 0x46CFA8
+	.asciz "snd_SoundHandle.cpp"
+	.4byte 0x00000000
+
 .global lbl_80470EC0
 lbl_80470EC0:
-	.incbin "baserom.dol", 0x46CFC0, 0x28
+	# ROM: 0x46CFC0
+	.asciz "NW4HBM:Pointer must not be NULL (sound)"
+

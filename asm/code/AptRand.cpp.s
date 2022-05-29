@@ -107,7 +107,7 @@ lbl_80327E10:
 /* 80327E8C 00323B2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80327E90 00323B30  7C 08 03 A6 */	mtlr r0
 /* 80327E94 00323B34  38 21 00 20 */	addi r1, r1, 0x20
-/* 80327E98 00323B38  4E 80 00 20 */	blr 
+/* 80327E98 00323B38  4E 80 00 20 */	blr
 
 .global "AptRand__Fv"
 "AptRand__Fv":
@@ -133,7 +133,7 @@ lbl_80327EB0:
 /* 80327EE4 00323B84  7C 84 02 78 */	xor r4, r4, r0
 /* 80327EE8 00323B88  54 80 74 BE */	srwi r0, r4, 0x12
 /* 80327EEC 00323B8C  7C 83 02 78 */	xor r3, r4, r0
-/* 80327EF0 00323B90  4E 80 00 20 */	blr 
+/* 80327EF0 00323B90  4E 80 00 20 */	blr
 
 .global "AptSeedRand__FUi"
 "AptSeedRand__FUi":
@@ -155,7 +155,7 @@ lbl_80327F20:
 lbl_80327F2C:
 /* 80327F2C 00323BCC  34 63 FF FF */	addic. r3, r3, -1
 /* 80327F30 00323BD0  40 82 FF F0 */	bne lbl_80327F20
-/* 80327F34 00323BD4  4E 80 00 20 */	blr 
+/* 80327F34 00323BD4  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_RandState"
@@ -165,7 +165,10 @@ lbl_80327F2C:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "s_RandLeft"
 "s_RandLeft":
-	.incbin "baserom.dol", 0x4867D8, 0x8
+	# ROM: 0x4867D8
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "s_RandNext"

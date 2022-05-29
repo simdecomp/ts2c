@@ -27,7 +27,7 @@ lbl_8040F28C:
 /* 8040F29C 0040AF3C  3C 63 80 00 */	addis r3, r3, 0x8000
 lbl_8040F2A0:
 /* 8040F2A0 0040AF40  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040F2A4 0040AF44  4E 80 00 20 */	blr 
+/* 8040F2A4 0040AF44  4E 80 00 20 */	blr
 
 .global "__save_fpr"
 "__save_fpr":
@@ -55,7 +55,7 @@ lbl_8040F2A0:
 /* 8040F2E4 0040AF84  DB AB FF E8 */	stfd f29, -0x18(r11)
 /* 8040F2E8 0040AF88  DB CB FF F0 */	stfd f30, -0x10(r11)
 /* 8040F2EC 0040AF8C  DB EB FF F8 */	stfd f31, -8(r11)
-/* 8040F2F0 0040AF90  4E 80 00 20 */	blr 
+/* 8040F2F0 0040AF90  4E 80 00 20 */	blr
 
 .global "__restore_fpr"
 "__restore_fpr":
@@ -83,7 +83,7 @@ lbl_8040F2A0:
 /* 8040F330 0040AFD0  CB AB FF E8 */	lfd f29, -0x18(r11)
 /* 8040F334 0040AFD4  CB CB FF F0 */	lfd f30, -0x10(r11)
 /* 8040F338 0040AFD8  CB EB FF F8 */	lfd f31, -8(r11)
-/* 8040F33C 0040AFDC  4E 80 00 20 */	blr 
+/* 8040F33C 0040AFDC  4E 80 00 20 */	blr
 
 .global "_savegpr_14"
 "_savegpr_14":
@@ -144,7 +144,7 @@ lbl_8040F2A0:
 /* 8040F37C 0040B01C  93 AB FF F4 */	stw r29, -0xc(r11)
 /* 8040F380 0040B020  93 CB FF F8 */	stw r30, -8(r11)
 /* 8040F384 0040B024  93 EB FF FC */	stw r31, -4(r11)
-/* 8040F388 0040B028  4E 80 00 20 */	blr 
+/* 8040F388 0040B028  4E 80 00 20 */	blr
 
 .global "_restgpr_14"
 "_restgpr_14":
@@ -205,7 +205,7 @@ lbl_8040F2A0:
 /* 8040F3C8 0040B068  83 AB FF F4 */	lwz r29, -0xc(r11)
 /* 8040F3CC 0040B06C  83 CB FF F8 */	lwz r30, -8(r11)
 /* 8040F3D0 0040B070  83 EB FF FC */	lwz r31, -4(r11)
-/* 8040F3D4 0040B074  4E 80 00 20 */	blr 
+/* 8040F3D4 0040B074  4E 80 00 20 */	blr
 
 .global "__div2u"
 "__div2u":
@@ -272,11 +272,11 @@ lbl_8040F4A8:
 /* 8040F4A8 0040B148  42 00 FF D8 */	bdnz lbl_8040F480
 /* 8040F4AC 0040B14C  7C 84 21 14 */	adde r4, r4, r4
 /* 8040F4B0 0040B150  7C 63 19 14 */	adde r3, r3, r3
-/* 8040F4B4 0040B154  4E 80 00 20 */	blr 
+/* 8040F4B4 0040B154  4E 80 00 20 */	blr
 lbl_8040F4B8:
 /* 8040F4B8 0040B158  38 80 00 00 */	li r4, 0
 /* 8040F4BC 0040B15C  38 60 00 00 */	li r3, 0
-/* 8040F4C0 0040B160  4E 80 00 20 */	blr 
+/* 8040F4C0 0040B160  4E 80 00 20 */	blr
 
 .global "__div2i"
 "__div2i":
@@ -370,7 +370,7 @@ lbl_8040F5EC:
 /* 8040F5F0 0040B290  38 60 00 00 */	li r3, 0
 lbl_8040F5F4:
 /* 8040F5F4 0040B294  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040F5F8 0040B298  4E 80 00 20 */	blr 
+/* 8040F5F8 0040B298  4E 80 00 20 */	blr
 
 .global "__mod2u"
 "__mod2u":
@@ -437,9 +437,9 @@ lbl_8040F6CC:
 /* 8040F6CC 0040B36C  42 00 FF D8 */	bdnz lbl_8040F6A4
 /* 8040F6D0 0040B370  7D 04 43 78 */	mr r4, r8
 /* 8040F6D4 0040B374  7C E3 3B 78 */	mr r3, r7
-/* 8040F6D8 0040B378  4E 80 00 20 */	blr 
+/* 8040F6D8 0040B378  4E 80 00 20 */	blr
 lbl_8040F6DC:
-/* 8040F6DC 0040B37C  4E 80 00 20 */	blr 
+/* 8040F6DC 0040B37C  4E 80 00 20 */	blr
 
 .global "__mod2i"
 "__mod2i":
@@ -521,7 +521,7 @@ lbl_8040F7DC:
 /* 8040F7E0 0040B480  20 84 00 00 */	subfic r4, r4, 0
 /* 8040F7E4 0040B484  7C 63 01 90 */	subfze r3, r3
 lbl_8040F7E8:
-/* 8040F7E8 0040B488  4E 80 00 20 */	blr 
+/* 8040F7E8 0040B488  4E 80 00 20 */	blr
 
 .global "__shl2i"
 "__shl2i":
@@ -533,7 +533,7 @@ lbl_8040F7E8:
 /* 8040F800 0040B4A0  7C 8A 48 30 */	slw r10, r4, r9
 /* 8040F804 0040B4A4  7C 63 53 78 */	or r3, r3, r10
 /* 8040F808 0040B4A8  7C 84 28 30 */	slw r4, r4, r5
-/* 8040F80C 0040B4AC  4E 80 00 20 */	blr 
+/* 8040F80C 0040B4AC  4E 80 00 20 */	blr
 
 .global "__shr2u"
 "__shr2u":
@@ -545,7 +545,7 @@ lbl_8040F7E8:
 /* 8040F824 0040B4C4  7C 6A 4C 30 */	srw r10, r3, r9
 /* 8040F828 0040B4C8  7C 84 53 78 */	or r4, r4, r10
 /* 8040F82C 0040B4CC  7C 63 2C 30 */	srw r3, r3, r5
-/* 8040F830 0040B4D0  4E 80 00 20 */	blr 
+/* 8040F830 0040B4D0  4E 80 00 20 */	blr
 
 .global "__cvt_dbl_usll"
 "__cvt_dbl_usll":
@@ -605,7 +605,7 @@ lbl_8040F8E8:
 /* 8040F8F4 0040B594  7C 63 01 90 */	subfze r3, r3
 lbl_8040F8F8:
 /* 8040F8F8 0040B598  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040F8FC 0040B59C  4E 80 00 20 */	blr 
+/* 8040F8FC 0040B59C  4E 80 00 20 */	blr
 
 .global "__cvt_dbl_ull"
 "__cvt_dbl_ull":
@@ -655,9 +655,16 @@ lbl_8040F980:
 /* 8040F99C 0040B63C  7C 84 28 30 */	slw r4, r4, r5
 lbl_8040F9A0:
 /* 8040F9A0 0040B640  38 21 00 10 */	addi r1, r1, 0x10
-/* 8040F9A4 0040B644  4E 80 00 20 */	blr 
+/* 8040F9A4 0040B644  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "__constants"
 "__constants":
-	.incbin "baserom.dol", 0x41BEA0, 0x18
+	# ROM: 0x41BEA0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x41F00000
+	.4byte 0x00000000
+	.4byte 0x41E00000
+	.4byte 0x00000000
+

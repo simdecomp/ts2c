@@ -28,7 +28,7 @@
 /* 8027FF8C 0027BC2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8027FF90 0027BC30  7C 08 03 A6 */	mtlr r0
 /* 8027FF94 0027BC34  38 21 00 10 */	addi r1, r1, 0x10
-/* 8027FF98 0027BC38  4E 80 00 20 */	blr 
+/* 8027FF98 0027BC38  4E 80 00 20 */	blr
 
 .global "__ct__Q27Effects6EffectFRCQ37Effects6Effect12ClientParams"
 "__ct__Q27Effects6EffectFRCQ37Effects6Effect12ClientParams":
@@ -104,7 +104,7 @@ lbl_80280094:
 /* 802800AC 0027BD4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802800B0 0027BD50  7C 08 03 A6 */	mtlr r0
 /* 802800B4 0027BD54  38 21 00 20 */	addi r1, r1, 0x20
-/* 802800B8 0027BD58  4E 80 00 20 */	blr 
+/* 802800B8 0027BD58  4E 80 00 20 */	blr
 
 .global "DefaultInit__Q27Effects6EffectFv"
 "DefaultInit__Q27Effects6EffectFv":
@@ -153,7 +153,7 @@ lbl_80280094:
 /* 80280164 0027BE04  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80280168 0027BE08  7C 08 03 A6 */	mtlr r0
 /* 8028016C 0027BE0C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80280170 0027BE10  4E 80 00 20 */	blr 
+/* 80280170 0027BE10  4E 80 00 20 */	blr
 
 .global "SetParentTransform__Q27Effects6EffectFRC5EMat4"
 "SetParentTransform__Q27Effects6EffectFRC5EMat4":
@@ -214,7 +214,7 @@ lbl_80280240:
 /* 80280248 0027BEE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8028024C 0027BEEC  7C 08 03 A6 */	mtlr r0
 /* 80280250 0027BEF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80280254 0027BEF4  4E 80 00 20 */	blr 
+/* 80280254 0027BEF4  4E 80 00 20 */	blr
 
 .global "PreComputeRand32Table__7EffectsFv"
 "PreComputeRand32Table__7EffectsFv":
@@ -267,7 +267,7 @@ lbl_802802D4:
 /* 802802FC 0027BF9C  38 00 00 00 */	li r0, 0
 /* 80280300 0027BFA0  90 ED BB 7C */	stw r7, "gRandIndexk2__7Effects"-_SDA_BASE_(r13)
 /* 80280304 0027BFA4  90 0D BB 84 */	stw r0, "gPrecomputedTableIndex__7Effects"-_SDA_BASE_(r13)
-/* 80280308 0027BFA8  4E 80 00 20 */	blr 
+/* 80280308 0027BFA8  4E 80 00 20 */	blr
 
 .global "SetSeed2__7EffectsFi"
 "SetSeed2__7EffectsFi":
@@ -335,11 +335,11 @@ lbl_802803E4:
 /* 802803EC 0027C08C  38 E7 00 03 */	addi r7, r7, 3
 /* 802803F0 0027C090  42 00 FF 38 */	bdnz lbl_80280328
 /* 802803F4 0027C094  90 6D BB 80 */	stw r3, "gRand__7Effects"-_SDA_BASE_(r13)
-/* 802803F8 0027C098  4E 80 00 20 */	blr 
+/* 802803F8 0027C098  4E 80 00 20 */	blr
 
 .global "InitEffectsMath__7EffectsFv"
 "InitEffectsMath__7EffectsFv":
-/* 802803FC 0027C09C  4E 80 00 20 */	blr 
+/* 802803FC 0027C09C  4E 80 00 20 */	blr
 
 .global "SinCosf__7EffectsFfRfRf"
 "SinCosf__7EffectsFfRfRf":
@@ -427,7 +427,7 @@ lbl_80280520:
 /* 80280528 0027C1C8  D0 44 00 00 */	stfs f2, 0(r4)
 lbl_8028052C:
 /* 8028052C 0027C1CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80280530 0027C1D0  4E 80 00 20 */	blr 
+/* 80280530 0027C1D0  4E 80 00 20 */	blr
 
 .global "Mat4SetEulerAngles34__7EffectsFfffR5EMat4"
 "Mat4SetEulerAngles34__7EffectsFfffR5EMat4":
@@ -693,7 +693,7 @@ lbl_802808FC:
 /* 80280920 0027C5C0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80280924 0027C5C4  7C 08 03 A6 */	mtlr r0
 /* 80280928 0027C5C8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8028092C 0027C5CC  4E 80 00 20 */	blr 
+/* 8028092C 0027C5CC  4E 80 00 20 */	blr
 
 .global "Enable__11FrameEffectFb"
 "Enable__11FrameEffectFb":
@@ -718,7 +718,7 @@ lbl_80280968:
 /* 80280970 0027C610  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80280974 0027C614  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80280978 0027C618  7D 89 03 A6 */	mtctr r12
-/* 8028097C 0027C61C  4E 80 04 21 */	bctrl 
+/* 8028097C 0027C61C  4E 80 04 21 */	bctrl
 /* 80280980 0027C620  C0 02 9E EC */	lfs f0, lbl_805DB10C-_SDA2_BASE_(r2)
 /* 80280984 0027C624  D0 1F 00 0C */	stfs f0, 0xc(r31)
 lbl_80280988:
@@ -726,7 +726,7 @@ lbl_80280988:
 /* 8028098C 0027C62C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80280990 0027C630  7C 08 03 A6 */	mtlr r0
 /* 80280994 0027C634  38 21 00 10 */	addi r1, r1, 0x10
-/* 80280998 0027C638  4E 80 00 20 */	blr 
+/* 80280998 0027C638  4E 80 00 20 */	blr
 
 .global "Update__11FrameEffectFfP3ERC"
 "Update__11FrameEffectFfP3ERC":
@@ -748,7 +748,7 @@ lbl_80280988:
 /* 802809D8 0027C678  C0 3E 00 0C */	lfs f1, 0xc(r30)
 /* 802809DC 0027C67C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802809E0 0027C680  7D 89 03 A6 */	mtctr r12
-/* 802809E4 0027C684  4E 80 04 21 */	bctrl 
+/* 802809E4 0027C684  4E 80 04 21 */	bctrl
 lbl_802809E8:
 /* 802809E8 0027C688  7F C3 F3 78 */	mr r3, r30
 /* 802809EC 0027C68C  48 00 00 65 */	bl "IsEffectRunning__11FrameEffectCFv"
@@ -759,7 +759,7 @@ lbl_802809E8:
 /* 80280A00 0027C6A0  7F E4 FB 78 */	mr r4, r31
 /* 80280A04 0027C6A4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80280A08 0027C6A8  7D 89 03 A6 */	mtctr r12
-/* 80280A0C 0027C6AC  4E 80 04 21 */	bctrl 
+/* 80280A0C 0027C6AC  4E 80 04 21 */	bctrl
 lbl_80280A10:
 /* 80280A10 0027C6B0  7F C3 F3 78 */	mr r3, r30
 /* 80280A14 0027C6B4  48 00 00 55 */	bl "UpdateEffectState__11FrameEffectFv"
@@ -768,18 +768,18 @@ lbl_80280A10:
 /* 80280A20 0027C6C0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80280A24 0027C6C4  7C 08 03 A6 */	mtlr r0
 /* 80280A28 0027C6C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80280A2C 0027C6CC  4E 80 00 20 */	blr 
+/* 80280A2C 0027C6CC  4E 80 00 20 */	blr
 
 .global "IsEffectRamping__11FrameEffectCFv"
 "IsEffectRamping__11FrameEffectCFv":
 /* 80280A30 0027C6D0  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80280A34 0027C6D4  38 60 00 01 */	li r3, 1
 /* 80280A38 0027C6D8  2C 00 00 02 */	cmpwi r0, 2
-/* 80280A3C 0027C6DC  4D 82 00 20 */	beqlr 
+/* 80280A3C 0027C6DC  4D 82 00 20 */	beqlr
 /* 80280A40 0027C6E0  2C 00 00 08 */	cmpwi r0, 8
-/* 80280A44 0027C6E4  4D 82 00 20 */	beqlr 
+/* 80280A44 0027C6E4  4D 82 00 20 */	beqlr
 /* 80280A48 0027C6E8  38 60 00 00 */	li r3, 0
-/* 80280A4C 0027C6EC  4E 80 00 20 */	blr 
+/* 80280A4C 0027C6EC  4E 80 00 20 */	blr
 
 .global "IsEffectRunning__11FrameEffectCFv"
 "IsEffectRunning__11FrameEffectCFv":
@@ -788,7 +788,7 @@ lbl_80280A10:
 /* 80280A58 0027C6F8  38 04 FF FF */	addi r0, r4, -1
 /* 80280A5C 0027C6FC  7C 60 03 78 */	or r0, r3, r0
 /* 80280A60 0027C700  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80280A64 0027C704  4E 80 00 20 */	blr 
+/* 80280A64 0027C704  4E 80 00 20 */	blr
 
 .global "UpdateEffectState__11FrameEffectFv"
 "UpdateEffectState__11FrameEffectFv":
@@ -804,7 +804,7 @@ lbl_80280A10:
 /* 80280A8C 0027C72C  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 80280A90 0027C730  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80280A94 0027C734  7D 89 03 A6 */	mtctr r12
-/* 80280A98 0027C738  4E 80 04 21 */	bctrl 
+/* 80280A98 0027C738  4E 80 04 21 */	bctrl
 /* 80280A9C 0027C73C  2C 03 00 00 */	cmpwi r3, 0
 /* 80280AA0 0027C740  41 82 00 28 */	beq lbl_80280AC8
 /* 80280AA4 0027C744  38 00 00 04 */	li r0, 4
@@ -814,7 +814,7 @@ lbl_80280A10:
 /* 80280AB4 0027C754  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80280AB8 0027C758  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80280ABC 0027C75C  7D 89 03 A6 */	mtctr r12
-/* 80280AC0 0027C760  4E 80 04 21 */	bctrl 
+/* 80280AC0 0027C760  4E 80 04 21 */	bctrl
 /* 80280AC4 0027C764  48 00 00 50 */	b lbl_80280B14
 lbl_80280AC8:
 /* 80280AC8 0027C768  80 1F 00 10 */	lwz r0, 0x10(r31)
@@ -825,7 +825,7 @@ lbl_80280AC8:
 /* 80280ADC 0027C77C  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 80280AE0 0027C780  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80280AE4 0027C784  7D 89 03 A6 */	mtctr r12
-/* 80280AE8 0027C788  4E 80 04 21 */	bctrl 
+/* 80280AE8 0027C788  4E 80 04 21 */	bctrl
 /* 80280AEC 0027C78C  2C 03 00 00 */	cmpwi r3, 0
 /* 80280AF0 0027C790  41 82 00 24 */	beq lbl_80280B14
 /* 80280AF4 0027C794  38 00 00 01 */	li r0, 1
@@ -835,13 +835,13 @@ lbl_80280AC8:
 /* 80280B04 0027C7A4  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80280B08 0027C7A8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80280B0C 0027C7AC  7D 89 03 A6 */	mtctr r12
-/* 80280B10 0027C7B0  4E 80 04 21 */	bctrl 
+/* 80280B10 0027C7B0  4E 80 04 21 */	bctrl
 lbl_80280B14:
 /* 80280B14 0027C7B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80280B18 0027C7B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80280B1C 0027C7BC  7C 08 03 A6 */	mtlr r0
 /* 80280B20 0027C7C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80280B24 0027C7C4  4E 80 00 20 */	blr 
+/* 80280B24 0027C7C4  4E 80 00 20 */	blr
 
 .global "UpdateTargetParameters__10MotionBlurFf"
 "UpdateTargetParameters__10MotionBlurFf":
@@ -899,7 +899,7 @@ lbl_80280BE0:
 /* 80280BEC 0027C88C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80280BF0 0027C890  7C 08 03 A6 */	mtlr r0
 /* 80280BF4 0027C894  38 21 00 20 */	addi r1, r1, 0x20
-/* 80280BF8 0027C898  4E 80 00 20 */	blr 
+/* 80280BF8 0027C898  4E 80 00 20 */	blr
 
 .global "InterpolateLinear<f>__34@unnamed@engine_effects_unity_cpp@FRCfRCffff_f"
 "InterpolateLinear<f>__34@unnamed@engine_effects_unity_cpp@FRCfRCffff_f":
@@ -910,19 +910,19 @@ lbl_80280BE0:
 /* 80280C0C 0027C8AC  FC 00 20 40 */	fcmpo cr0, f0, f4
 /* 80280C10 0027C8B0  40 80 00 0C */	bge lbl_80280C1C
 /* 80280C14 0027C8B4  C0 24 00 00 */	lfs f1, 0(r4)
-/* 80280C18 0027C8B8  4E 80 00 20 */	blr 
+/* 80280C18 0027C8B8  4E 80 00 20 */	blr
 lbl_80280C1C:
 /* 80280C1C 0027C8BC  EC 02 20 28 */	fsubs f0, f2, f4
 /* 80280C20 0027C8C0  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 80280C24 0027C8C4  40 81 00 0C */	ble lbl_80280C30
 /* 80280C28 0027C8C8  C0 24 00 00 */	lfs f1, 0(r4)
-/* 80280C2C 0027C8CC  4E 80 00 20 */	blr 
+/* 80280C2C 0027C8CC  4E 80 00 20 */	blr
 lbl_80280C30:
 /* 80280C30 0027C8D0  EC 04 08 2A */	fadds f0, f4, f1
 /* 80280C34 0027C8D4  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 80280C38 0027C8D8  40 80 00 0C */	bge lbl_80280C44
 /* 80280C3C 0027C8DC  C0 23 00 00 */	lfs f1, 0(r3)
-/* 80280C40 0027C8E0  4E 80 00 20 */	blr 
+/* 80280C40 0027C8E0  4E 80 00 20 */	blr
 lbl_80280C44:
 /* 80280C44 0027C8E4  C0 84 00 00 */	lfs f4, 0(r4)
 /* 80280C48 0027C8E8  EC 03 08 28 */	fsubs f0, f3, f1
@@ -931,14 +931,14 @@ lbl_80280C44:
 /* 80280C54 0027C8F4  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80280C58 0027C8F8  EC 00 28 24 */	fdivs f0, f0, f5
 /* 80280C5C 0027C8FC  EC 22 00 2A */	fadds f1, f2, f0
-/* 80280C60 0027C900  4E 80 00 20 */	blr 
+/* 80280C60 0027C900  4E 80 00 20 */	blr
 
 .global "EffectStateChanged__10MotionBlurFQ211FrameEffect11EffectState"
 "EffectStateChanged__10MotionBlurFQ211FrameEffect11EffectState":
 /* 80280C64 0027C904  2C 04 00 02 */	cmpwi r4, 2
 /* 80280C68 0027C908  41 82 00 0C */	beq lbl_80280C74
 /* 80280C6C 0027C90C  2C 04 00 08 */	cmpwi r4, 8
-/* 80280C70 0027C910  4C 82 00 20 */	bnelr 
+/* 80280C70 0027C910  4C 82 00 20 */	bnelr
 lbl_80280C74:
 /* 80280C74 0027C914  C0 23 00 20 */	lfs f1, 0x20(r3)
 /* 80280C78 0027C918  C0 03 00 24 */	lfs f0, 0x24(r3)
@@ -946,7 +946,7 @@ lbl_80280C74:
 /* 80280C80 0027C920  D0 23 00 2C */	stfs f1, 0x2c(r3)
 /* 80280C84 0027C924  D0 03 00 30 */	stfs f0, 0x30(r3)
 /* 80280C88 0027C928  90 03 00 34 */	stw r0, 0x34(r3)
-/* 80280C8C 0027C92C  4E 80 00 20 */	blr 
+/* 80280C8C 0027C92C  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingIn__10MotionBlurCFf"
 "EffectIsFinishedFadingIn__10MotionBlurCFf":
@@ -955,7 +955,7 @@ lbl_80280C74:
 /* 80280C98 0027C938  4C 41 13 82 */	cror 2, 1, 2
 /* 80280C9C 0027C93C  7C 60 00 26 */	mfcr r3
 /* 80280CA0 0027C940  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 80280CA4 0027C944  4E 80 00 20 */	blr 
+/* 80280CA4 0027C944  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingOut__10MotionBlurCFf"
 "EffectIsFinishedFadingOut__10MotionBlurCFf":
@@ -964,7 +964,7 @@ lbl_80280C74:
 /* 80280CB0 0027C950  4C 41 13 82 */	cror 2, 1, 2
 /* 80280CB4 0027C954  7C 60 00 26 */	mfcr r3
 /* 80280CB8 0027C958  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 80280CBC 0027C95C  4E 80 00 20 */	blr 
+/* 80280CBC 0027C95C  4E 80 00 20 */	blr
 
 .global "UpdateTargetParameters__5BloomFf"
 "UpdateTargetParameters__5BloomFf":
@@ -1022,10 +1022,10 @@ lbl_80280D3C:
 /* 80280D7C 0027CA1C  D0 03 00 64 */	stfs f0, 0x64(r3)
 /* 80280D80 0027CA20  C0 03 00 3C */	lfs f0, 0x3c(r3)
 /* 80280D84 0027CA24  D0 03 00 68 */	stfs f0, 0x68(r3)
-/* 80280D88 0027CA28  4E 80 00 20 */	blr 
+/* 80280D88 0027CA28  4E 80 00 20 */	blr
 lbl_80280D8C:
 /* 80280D8C 0027CA2C  2C 00 00 08 */	cmpwi r0, 8
-/* 80280D90 0027CA30  4C 82 00 20 */	bnelr 
+/* 80280D90 0027CA30  4C 82 00 20 */	bnelr
 /* 80280D94 0027CA34  C0 03 00 08 */	lfs f0, 8(r3)
 /* 80280D98 0027CA38  C0 A2 9E EC */	lfs f5, lbl_805DB10C-_SDA2_BASE_(r2)
 /* 80280D9C 0027CA3C  C0 42 9F 08 */	lfs f2, lbl_805DB128-_SDA2_BASE_(r2)
@@ -1057,14 +1057,14 @@ lbl_80280DE0:
 /* 80280DF8 0027CA98  EC 02 00 2A */	fadds f0, f2, f0
 lbl_80280DFC:
 /* 80280DFC 0027CA9C  D0 03 00 44 */	stfs f0, 0x44(r3)
-/* 80280E00 0027CAA0  4E 80 00 20 */	blr 
+/* 80280E00 0027CAA0  4E 80 00 20 */	blr
 
 .global "EffectStateChanged__5BloomFQ211FrameEffect11EffectState"
 "EffectStateChanged__5BloomFQ211FrameEffect11EffectState":
 /* 80280E04 0027CAA4  2C 04 00 02 */	cmpwi r4, 2
 /* 80280E08 0027CAA8  41 82 00 0C */	beq lbl_80280E14
 /* 80280E0C 0027CAAC  2C 04 00 08 */	cmpwi r4, 8
-/* 80280E10 0027CAB0  4C 82 00 20 */	bnelr 
+/* 80280E10 0027CAB0  4C 82 00 20 */	bnelr
 lbl_80280E14:
 /* 80280E14 0027CAB4  C0 43 00 40 */	lfs f2, 0x40(r3)
 /* 80280E18 0027CAB8  C0 23 00 44 */	lfs f1, 0x44(r3)
@@ -1088,7 +1088,7 @@ lbl_80280E14:
 /* 80280E60 0027CB00  90 A3 00 8C */	stw r5, 0x8c(r3)
 /* 80280E64 0027CB04  90 83 00 90 */	stw r4, 0x90(r3)
 /* 80280E68 0027CB08  90 03 00 94 */	stw r0, 0x94(r3)
-/* 80280E6C 0027CB0C  4E 80 00 20 */	blr 
+/* 80280E6C 0027CB0C  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingIn__5BloomCFf"
 "EffectIsFinishedFadingIn__5BloomCFf":
@@ -1097,7 +1097,7 @@ lbl_80280E14:
 /* 80280E78 0027CB18  4C 41 13 82 */	cror 2, 1, 2
 /* 80280E7C 0027CB1C  7C 60 00 26 */	mfcr r3
 /* 80280E80 0027CB20  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 80280E84 0027CB24  4E 80 00 20 */	blr 
+/* 80280E84 0027CB24  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingOut__5BloomCFf"
 "EffectIsFinishedFadingOut__5BloomCFf":
@@ -1106,7 +1106,7 @@ lbl_80280E14:
 /* 80280E90 0027CB30  4C 41 13 82 */	cror 2, 1, 2
 /* 80280E94 0027CB34  7C 60 00 26 */	mfcr r3
 /* 80280E98 0027CB38  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 80280E9C 0027CB3C  4E 80 00 20 */	blr 
+/* 80280E9C 0027CB3C  4E 80 00 20 */	blr
 
 .global "UpdateTargetParameters__12DepthOfFieldFf"
 "UpdateTargetParameters__12DepthOfFieldFf":
@@ -1226,7 +1226,7 @@ lbl_80281030:
 /* 8028103C 0027CCDC  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 80281040 0027CCE0  7C 08 03 A6 */	mtlr r0
 /* 80281044 0027CCE4  38 21 00 50 */	addi r1, r1, 0x50
-/* 80281048 0027CCE8  4E 80 00 20 */	blr 
+/* 80281048 0027CCE8  4E 80 00 20 */	blr
 
 .global "InterpolateLinear<5EVec3>__34@unnamed@engine_effects_unity_cpp@FRC5EVec3RC5EVec3fff_5EVec3"
 "InterpolateLinear<5EVec3>__34@unnamed@engine_effects_unity_cpp@FRC5EVec3RC5EVec3fff_5EVec3":
@@ -1302,14 +1302,14 @@ lbl_802810D4:
 /* 80281154 0027CDF4  D0 83 00 08 */	stfs f4, 8(r3)
 lbl_80281158:
 /* 80281158 0027CDF8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8028115C 0027CDFC  4E 80 00 20 */	blr 
+/* 8028115C 0027CDFC  4E 80 00 20 */	blr
 
 .global "EffectStateChanged__12DepthOfFieldFQ211FrameEffect11EffectState"
 "EffectStateChanged__12DepthOfFieldFQ211FrameEffect11EffectState":
 /* 80281160 0027CE00  2C 04 00 02 */	cmpwi r4, 2
 /* 80281164 0027CE04  41 82 00 0C */	beq lbl_80281170
 /* 80281168 0027CE08  2C 04 00 08 */	cmpwi r4, 8
-/* 8028116C 0027CE0C  4C 82 00 20 */	bnelr 
+/* 8028116C 0027CE0C  4C 82 00 20 */	bnelr
 lbl_80281170:
 /* 80281170 0027CE10  80 C3 00 28 */	lwz r6, 0x28(r3)
 /* 80281174 0027CE14  80 A3 00 2C */	lwz r5, 0x2c(r3)
@@ -1321,7 +1321,7 @@ lbl_80281170:
 /* 8028118C 0027CE2C  90 83 00 44 */	stw r4, 0x44(r3)
 /* 80281190 0027CE30  90 03 00 48 */	stw r0, 0x48(r3)
 /* 80281194 0027CE34  D0 03 00 4C */	stfs f0, 0x4c(r3)
-/* 80281198 0027CE38  4E 80 00 20 */	blr 
+/* 80281198 0027CE38  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingIn__12DepthOfFieldCFf"
 "EffectIsFinishedFadingIn__12DepthOfFieldCFf":
@@ -1330,7 +1330,7 @@ lbl_80281170:
 /* 802811A4 0027CE44  4C 41 13 82 */	cror 2, 1, 2
 /* 802811A8 0027CE48  7C 60 00 26 */	mfcr r3
 /* 802811AC 0027CE4C  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 802811B0 0027CE50  4E 80 00 20 */	blr 
+/* 802811B0 0027CE50  4E 80 00 20 */	blr
 
 .global "EffectIsFinishedFadingOut__12DepthOfFieldCFf"
 "EffectIsFinishedFadingOut__12DepthOfFieldCFf":
@@ -1339,7 +1339,7 @@ lbl_80281170:
 /* 802811BC 0027CE5C  4C 41 13 82 */	cror 2, 1, 2
 /* 802811C0 0027CE60  7C 60 00 26 */	mfcr r3
 /* 802811C4 0027CE64  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 802811C8 0027CE68  4E 80 00 20 */	blr 
+/* 802811C8 0027CE68  4E 80 00 20 */	blr
 
 .global "Init__19FrameEffectsManagerFv"
 "Init__19FrameEffectsManagerFv":
@@ -1476,7 +1476,7 @@ lbl_802813C0:
 /* 802813C8 0027D068  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802813CC 0027D06C  7C 08 03 A6 */	mtlr r0
 /* 802813D0 0027D070  38 21 00 10 */	addi r1, r1, 0x10
-/* 802813D4 0027D074  4E 80 00 20 */	blr 
+/* 802813D4 0027D074  4E 80 00 20 */	blr
 
 .global "Shutdown__19FrameEffectsManagerFv"
 "Shutdown__19FrameEffectsManagerFv":
@@ -1493,7 +1493,7 @@ lbl_802813C0:
 /* 80281400 0027D0A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80281404 0027D0A4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80281408 0027D0A8  7D 89 03 A6 */	mtctr r12
-/* 8028140C 0027D0AC  4E 80 04 21 */	bctrl 
+/* 8028140C 0027D0AC  4E 80 04 21 */	bctrl
 lbl_80281410:
 /* 80281410 0027D0B0  80 7F 00 04 */	lwz r3, 4(r31)
 /* 80281414 0027D0B4  38 00 00 00 */	li r0, 0
@@ -1504,7 +1504,7 @@ lbl_80281410:
 /* 80281428 0027D0C8  38 80 00 01 */	li r4, 1
 /* 8028142C 0027D0CC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80281430 0027D0D0  7D 89 03 A6 */	mtctr r12
-/* 80281434 0027D0D4  4E 80 04 21 */	bctrl 
+/* 80281434 0027D0D4  4E 80 04 21 */	bctrl
 lbl_80281438:
 /* 80281438 0027D0D8  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8028143C 0027D0DC  38 00 00 00 */	li r0, 0
@@ -1515,7 +1515,7 @@ lbl_80281438:
 /* 80281450 0027D0F0  38 80 00 01 */	li r4, 1
 /* 80281454 0027D0F4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80281458 0027D0F8  7D 89 03 A6 */	mtctr r12
-/* 8028145C 0027D0FC  4E 80 04 21 */	bctrl 
+/* 8028145C 0027D0FC  4E 80 04 21 */	bctrl
 lbl_80281460:
 /* 80281460 0027D100  38 00 00 00 */	li r0, 0
 /* 80281464 0027D104  90 1F 00 08 */	stw r0, 8(r31)
@@ -1523,22 +1523,22 @@ lbl_80281460:
 /* 8028146C 0027D10C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80281470 0027D110  7C 08 03 A6 */	mtlr r0
 /* 80281474 0027D114  38 21 00 10 */	addi r1, r1, 0x10
-/* 80281478 0027D118  4E 80 00 20 */	blr 
+/* 80281478 0027D118  4E 80 00 20 */	blr
 
 .global "MotionBlurObject__19FrameEffectsManagerFv"
 "MotionBlurObject__19FrameEffectsManagerFv":
 /* 8028147C 0027D11C  80 63 00 00 */	lwz r3, 0(r3)
-/* 80281480 0027D120  4E 80 00 20 */	blr 
+/* 80281480 0027D120  4E 80 00 20 */	blr
 
 .global "BloomObject__19FrameEffectsManagerFv"
 "BloomObject__19FrameEffectsManagerFv":
 /* 80281484 0027D124  80 63 00 04 */	lwz r3, 4(r3)
-/* 80281488 0027D128  4E 80 00 20 */	blr 
+/* 80281488 0027D128  4E 80 00 20 */	blr
 
 .global "DepthOfFieldObject__19FrameEffectsManagerFv"
 "DepthOfFieldObject__19FrameEffectsManagerFv":
 /* 8028148C 0027D12C  80 63 00 08 */	lwz r3, 8(r3)
-/* 80281490 0027D130  4E 80 00 20 */	blr 
+/* 80281490 0027D130  4E 80 00 20 */	blr
 
 .global "__dt__11FrameEffectFv"
 "__dt__11FrameEffectFv":
@@ -1558,7 +1558,7 @@ lbl_802814BC:
 /* 802814C4 0027D164  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802814C8 0027D168  7C 08 03 A6 */	mtlr r0
 /* 802814CC 0027D16C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802814D0 0027D170  4E 80 00 20 */	blr 
+/* 802814D0 0027D170  4E 80 00 20 */	blr
 
 .global "CopyBufferToBufferScaled__34@unnamed@engine_effects_unity_cpp@FPvP9_GXTexObjiiiiRC8TRect<f>P20ENgcRenderStateCacheRC5EVec2RC5EVec2"
 "CopyBufferToBufferScaled__34@unnamed@engine_effects_unity_cpp@FPvP9_GXTexObjiiiiRC8TRect<f>P20ENgcRenderStateCacheRC5EVec2RC5EVec2":
@@ -1824,7 +1824,7 @@ lbl_802818BC:
 /* 802818DC 0027D57C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802818E0 0027D580  7C 08 03 A6 */	mtlr r0
 /* 802818E4 0027D584  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 802818E8 0027D588  4E 80 00 20 */	blr 
+/* 802818E8 0027D588  4E 80 00 20 */	blr
 
 .global "SetDefaultRenderStates__34@unnamed@engine_effects_unity_cpp@FP20ENgcRenderStateCacheRC16_GXRenderModeObj"
 "SetDefaultRenderStates__34@unnamed@engine_effects_unity_cpp@FP20ENgcRenderStateCacheRC16_GXRenderModeObj":
@@ -2011,19 +2011,19 @@ lbl_802818BC:
 /* 80281BBC 0027D85C  90 03 0D 94 */	stw r0, 0xd94(r3)
 /* 80281BC0 0027D860  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80281BC4 0027D864  38 21 00 20 */	addi r1, r1, 0x20
-/* 80281BC8 0027D868  4E 80 00 20 */	blr 
+/* 80281BC8 0027D868  4E 80 00 20 */	blr
 
 .global "Draw__13MotionBlurNGCFP3ERC"
 "Draw__13MotionBlurNGCFP3ERC":
-/* 80281BCC 0027D86C  4E 80 00 20 */	blr 
+/* 80281BCC 0027D86C  4E 80 00 20 */	blr
 
 .global "Draw__8BloomNGCFP3ERC"
 "Draw__8BloomNGCFP3ERC":
-/* 80281BD0 0027D870  4E 80 00 20 */	blr 
+/* 80281BD0 0027D870  4E 80 00 20 */	blr
 
 .global "Draw__15DepthOfFieldNGCFP3ERC"
 "Draw__15DepthOfFieldNGCFP3ERC":
-/* 80281BD4 0027D874  4E 80 00 20 */	blr 
+/* 80281BD4 0027D874  4E 80 00 20 */	blr
 
 .global "DrawPrevFrameBufferToScreen__Fv"
 "DrawPrevFrameBufferToScreen__Fv":
@@ -2143,7 +2143,7 @@ lbl_802818BC:
 /* 80281D9C 0027DA3C  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 80281DA0 0027DA40  7C 08 03 A6 */	mtlr r0
 /* 80281DA4 0027DA44  38 21 01 00 */	addi r1, r1, 0x100
-/* 80281DA8 0027DA48  4E 80 00 20 */	blr 
+/* 80281DA8 0027DA48  4E 80 00 20 */	blr
 
 .global "__dt__13MotionBlurNGCFv"
 "__dt__13MotionBlurNGCFv":
@@ -2163,7 +2163,7 @@ lbl_80281DD4:
 /* 80281DDC 0027DA7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80281DE0 0027DA80  7C 08 03 A6 */	mtlr r0
 /* 80281DE4 0027DA84  38 21 00 10 */	addi r1, r1, 0x10
-/* 80281DE8 0027DA88  4E 80 00 20 */	blr 
+/* 80281DE8 0027DA88  4E 80 00 20 */	blr
 
 .global "__dt__8BloomNGCFv"
 "__dt__8BloomNGCFv":
@@ -2183,7 +2183,7 @@ lbl_80281E14:
 /* 80281E1C 0027DABC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80281E20 0027DAC0  7C 08 03 A6 */	mtlr r0
 /* 80281E24 0027DAC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80281E28 0027DAC8  4E 80 00 20 */	blr 
+/* 80281E28 0027DAC8  4E 80 00 20 */	blr
 
 .global "__dt__15DepthOfFieldNGCFv"
 "__dt__15DepthOfFieldNGCFv":
@@ -2203,29 +2203,155 @@ lbl_80281E54:
 /* 80281E5C 0027DAFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80281E60 0027DB00  7C 08 03 A6 */	mtlr r0
 /* 80281E64 0027DB04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80281E68 0027DB08  4E 80 00 20 */	blr 
+/* 80281E68 0027DB08  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "kSinCosTable__7Effects"
 "kSinCosTable__7Effects":
-	.incbin "baserom.dol", 0x416FA0, 0x140
+	# ROM: 0x416FA0
+	.4byte 0x00000000
+	.4byte 0x3DB27EB6
+	.4byte 0x3F800000
+	.4byte 0xBB79625F
+	.4byte 0x3DB27EB6
+	.4byte 0x3DB122F2
+	.4byte 0x3F7F069E
+	.4byte 0xBC3A904F
+	.4byte 0x3E31D0D4
+	.4byte 0x3DAE6E10
+	.4byte 0x3F7C1C5C
+	.4byte 0xBC9AAE45
+	.4byte 0x3E8483EE
+	.4byte 0x3DAA6556
+	.4byte 0x3F7746EA
+	.4byte 0xBCD6E705
+	.4byte 0x3EAF1D44
+	.4byte 0x3DA510A0
+	.4byte 0x3F708FB2
+	.4byte 0xBD08BE89
+	.4byte 0x3ED8616C
+	.4byte 0x3D9E7A51
+	.4byte 0x3F6803CA
+	.4byte 0xBD24FF24
+	.4byte 0x3F000000
+	.4byte 0x3D96AF3E
+	.4byte 0x3F5DB3D7
+	.4byte 0xBD3FFE48
+	.4byte 0x3F12D5E8
+	.4byte 0x3D8DBE96
+	.4byte 0x3F51B3F3
+	.4byte 0xBD59875B
+	.4byte 0x3F248DBB
+	.4byte 0x3D83B9C5
+	.4byte 0x3F441B7D
+	.4byte 0xBD71689E
+	.4byte 0x3F3504F3
+	.4byte 0x3D71689E
+	.4byte 0x3F3504F3
+	.4byte 0xBD83B9C5
+	.4byte 0x3F441B7D
+	.4byte 0x3D59875B
+	.4byte 0x3F248DBB
+	.4byte 0xBD8DBE96
+	.4byte 0x3F51B3F3
+	.4byte 0x3D3FFE48
+	.4byte 0x3F12D5E8
+	.4byte 0xBD96AF3E
+	.4byte 0x3F5DB3D7
+	.4byte 0x3D24FF24
+	.4byte 0x3F000000
+	.4byte 0xBD9E7A51
+	.4byte 0x3F6803CA
+	.4byte 0x3D08BE89
+	.4byte 0x3ED8616C
+	.4byte 0xBDA510A0
+	.4byte 0x3F708FB2
+	.4byte 0x3CD6E705
+	.4byte 0x3EAF1D44
+	.4byte 0xBDAA6556
+	.4byte 0x3F7746EA
+	.4byte 0x3C9AAE45
+	.4byte 0x3E8483EE
+	.4byte 0xBDAE6E10
+	.4byte 0x3F7C1C5C
+	.4byte 0x3C3A904F
+	.4byte 0x3E31D0D4
+	.4byte 0xBDB122F2
+	.4byte 0x3F7F069E
+	.4byte 0x3B79625F
+	.4byte 0x3DB27EB6
+	.4byte 0xBDB27EB6
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__15DepthOfFieldNGC"
 "__vt__15DepthOfFieldNGC":
-	.incbin "baserom.dol", 0x44C328, 0x20
+	# ROM: 0x44C328
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15DepthOfFieldNGCFv" ;# ptr (0x80281E2C)
+	.4byte "UpdateTargetParameters__12DepthOfFieldFf" ;# ptr (0x80280EA0)
+	.4byte "Draw__15DepthOfFieldNGCFP3ERC" ;# ptr (0x80281BD4)
+	.4byte "EffectStateChanged__12DepthOfFieldFQ211FrameEffect11EffectState" ;# ptr (0x80281160)
+	.4byte "EffectIsFinishedFadingIn__12DepthOfFieldCFf" ;# ptr (0x8028119C)
+	.4byte "EffectIsFinishedFadingOut__12DepthOfFieldCFf" ;# ptr (0x802811B4)
+
 .global "__vt__8BloomNGC"
 "__vt__8BloomNGC":
-	.incbin "baserom.dol", 0x44C348, 0x20
+	# ROM: 0x44C348
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__8BloomNGCFv" ;# ptr (0x80281DEC)
+	.4byte "UpdateTargetParameters__5BloomFf" ;# ptr (0x80280CC0)
+	.4byte "Draw__8BloomNGCFP3ERC" ;# ptr (0x80281BD0)
+	.4byte "EffectStateChanged__5BloomFQ211FrameEffect11EffectState" ;# ptr (0x80280E04)
+	.4byte "EffectIsFinishedFadingIn__5BloomCFf" ;# ptr (0x80280E70)
+	.4byte "EffectIsFinishedFadingOut__5BloomCFf" ;# ptr (0x80280E88)
+
 .global "__vt__13MotionBlurNGC"
 "__vt__13MotionBlurNGC":
-	.incbin "baserom.dol", 0x44C368, 0x20
+	# ROM: 0x44C368
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13MotionBlurNGCFv" ;# ptr (0x80281DAC)
+	.4byte "UpdateTargetParameters__10MotionBlurFf" ;# ptr (0x80280B28)
+	.4byte "Draw__13MotionBlurNGCFP3ERC" ;# ptr (0x80281BCC)
+	.4byte "EffectStateChanged__10MotionBlurFQ211FrameEffect11EffectState" ;# ptr (0x80280C64)
+	.4byte "EffectIsFinishedFadingIn__10MotionBlurCFf" ;# ptr (0x80280C90)
+	.4byte "EffectIsFinishedFadingOut__10MotionBlurCFf" ;# ptr (0x80280CA8)
+
 .global "__vt__11FrameEffect"
 "__vt__11FrameEffect":
-	.incbin "baserom.dol", 0x44C388, 0x20
+	# ROM: 0x44C388
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__11FrameEffectFv" ;# ptr (0x80281494)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__Q27Effects6Effect"
 "__vt__Q27Effects6Effect":
-	.incbin "baserom.dol", 0x44C3A8, 0x20
+	# ROM: 0x44C3A8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q27Effects6EffectFv" ;# ptr (0x8027C4BC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "gRandTable2__7Effects"
@@ -2238,19 +2364,29 @@ lbl_80281E54:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "s_pSinCosTable__7Effects"
 "s_pSinCosTable__7Effects":
-	.incbin "baserom.dol", 0x486210, 0x4
+	# ROM: 0x486210
+	.4byte 0x8041AEA0 ;# ptr
+
 .global lbl_805D6694
 lbl_805D6694:
-	.incbin "baserom.dol", 0x486214, 0x4
+	# ROM: 0x486214
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D6698
 lbl_805D6698:
-	.incbin "baserom.dol", 0x486218, 0x4
+	# ROM: 0x486218
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D669C
 lbl_805D669C:
-	.incbin "baserom.dol", 0x48621C, 0x4
+	# ROM: 0x48621C
+	.4byte 0x3F800000
+
 .global lbl_805D66A0
 lbl_805D66A0:
-	.incbin "baserom.dol", 0x486220, 0x8
+	# ROM: 0x486220
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "gpCurrentMatrix1Ptr__7Effects"
@@ -2269,40 +2405,69 @@ lbl_805D66A0:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB108
 lbl_805DB108:
-	.incbin "baserom.dol", 0x489428, 0x4
+	# ROM: 0x489428
+	.4byte 0x3F800000
+
 .global lbl_805DB10C
 lbl_805DB10C:
-	.incbin "baserom.dol", 0x48942C, 0x4
+	# ROM: 0x48942C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global "kPreComputedTableSize__7Effects"
 "kPreComputedTableSize__7Effects":
-	.incbin "baserom.dol", 0x489430, 0x4
+	# ROM: 0x489430
+	.4byte 0x00000080
+
 .global lbl_805DB114
 lbl_805DB114:
-	.incbin "baserom.dol", 0x489434, 0x4
+	# ROM: 0x489434
+	.4byte 0x3F22F983
+
 .global lbl_805DB118
 lbl_805DB118:
-	.incbin "baserom.dol", 0x489438, 0x8
+	# ROM: 0x489438
+	.4byte 0x41900000
+	.4byte 0x00000000
+
 .global lbl_805DB120
 lbl_805DB120:
-	.incbin "baserom.dol", 0x489440, 0x8
+	# ROM: 0x489440
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB128
 lbl_805DB128:
-	.incbin "baserom.dol", 0x489448, 0x4
+	# ROM: 0x489448
+	.4byte 0x3A83126F
+
 .global lbl_805DB12C
 lbl_805DB12C:
-	.incbin "baserom.dol", 0x48944C, 0x4
+	# ROM: 0x48944C
+	.4byte 0xBF800000
+
 .global lbl_805DB130
 lbl_805DB130:
-	.incbin "baserom.dol", 0x489450, 0x4
+	# ROM: 0x489450
+	.4byte 0x3DF5C28F
+
 .global lbl_805DB134
 lbl_805DB134:
-	.incbin "baserom.dol", 0x489454, 0x4
+	# ROM: 0x489454
+	.4byte 0x3F333333
+
 .global lbl_805DB138
 lbl_805DB138:
-	.incbin "baserom.dol", 0x489458, 0x4
+	# ROM: 0x489458
+	.4byte 0x3F000000
+
 .global lbl_805DB13C
 lbl_805DB13C:
-	.incbin "baserom.dol", 0x48945C, 0x4
+	# ROM: 0x48945C
+	.4byte 0x3F666666
+
 .global lbl_805DB140
 lbl_805DB140:
-	.incbin "baserom.dol", 0x489460, 0x8
+	# ROM: 0x489460
+	.4byte 0x43300000
+	.4byte 0x00000000
+

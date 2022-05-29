@@ -108,9 +108,12 @@ lbl_80372AD0:
 /* 80372ADC 0036E77C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80372AE0 0036E780  7C 08 03 A6 */	mtlr r0
 /* 80372AE4 0036E784  38 21 00 20 */	addi r1, r1, 0x20
-/* 80372AE8 0036E788  4E 80 00 20 */	blr 
+/* 80372AE8 0036E788  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global "__EXIFreq"
 "__EXIFreq":
-	.incbin "baserom.dol", 0x489AD0, 0x8
+	# ROM: 0x489AD0
+	.4byte 0x00000004
+	.4byte 0x00000000
+

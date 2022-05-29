@@ -17,12 +17,12 @@
 /* 803FDE8C 003F9B2C  38 84 FF C0 */	addi r4, r4, "_wcb"@l
 /* 803FDE90 003F9B30  81 84 06 F4 */	lwz r12, 0x6f4(r4)
 /* 803FDE94 003F9B34  7D 89 03 A6 */	mtctr r12
-/* 803FDE98 003F9B38  4E 80 04 21 */	bctrl 
+/* 803FDE98 003F9B38  4E 80 04 21 */	bctrl
 /* 803FDE9C 003F9B3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FDEA0 003F9B40  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FDEA4 003F9B44  7C 08 03 A6 */	mtlr r0
 /* 803FDEA8 003F9B48  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FDEAC 003F9B4C  4E 80 00 20 */	blr 
+/* 803FDEAC 003F9B4C  4E 80 00 20 */	blr
 
 .global "App_MEMfree"
 "App_MEMfree":
@@ -40,12 +40,12 @@
 /* 803FDEDC 003F9B7C  38 84 FF C0 */	addi r4, r4, "_wcb"@l
 /* 803FDEE0 003F9B80  81 84 06 F8 */	lwz r12, 0x6f8(r4)
 /* 803FDEE4 003F9B84  7D 89 03 A6 */	mtctr r12
-/* 803FDEE8 003F9B88  4E 80 04 21 */	bctrl 
+/* 803FDEE8 003F9B88  4E 80 04 21 */	bctrl
 /* 803FDEEC 003F9B8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FDEF0 003F9B90  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FDEF4 003F9B94  7C 08 03 A6 */	mtlr r0
 /* 803FDEF8 003F9B98  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FDEFC 003F9B9C  4E 80 00 20 */	blr 
+/* 803FDEFC 003F9B9C  4E 80 00 20 */	blr
 
 .global "SyncFlushCallback"
 "SyncFlushCallback":
@@ -80,7 +80,7 @@ lbl_803FDF60:
 /* 803FDF68 003F9C08  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803FDF6C 003F9C0C  7C 08 03 A6 */	mtlr r0
 /* 803FDF70 003F9C10  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FDF74 003F9C14  4E 80 00 20 */	blr 
+/* 803FDF74 003F9C14  4E 80 00 20 */	blr
 
 .global "DeleteFlushCallback"
 "DeleteFlushCallback":
@@ -106,7 +106,7 @@ lbl_803FDFBC:
 /* 803FDFC0 003F9C60  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FDFC4 003F9C64  7C 08 03 A6 */	mtlr r0
 /* 803FDFC8 003F9C68  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FDFCC 003F9C6C  4E 80 00 20 */	blr 
+/* 803FDFCC 003F9C6C  4E 80 00 20 */	blr
 
 .global "ShutFlushCallback"
 "ShutFlushCallback":
@@ -131,7 +131,7 @@ lbl_803FDFBC:
 /* 803FE018 003F9CB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FE01C 003F9CBC  7C 08 03 A6 */	mtlr r0
 /* 803FE020 003F9CC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FE024 003F9CC4  4E 80 00 20 */	blr 
+/* 803FE024 003F9CC4  4E 80 00 20 */	blr
 
 .global "_resumeSmpSync"
 "_resumeSmpSync":
@@ -139,7 +139,7 @@ lbl_803FDFBC:
 /* 803FE02C 003F9CCC  38 00 00 01 */	li r0, 1
 /* 803FE030 003F9CD0  38 63 FF C0 */	addi r3, r3, "_wcb"@l
 /* 803FE034 003F9CD4  98 03 00 0C */	stb r0, 0xc(r3)
-/* 803FE038 003F9CD8  4E 80 00 20 */	blr 
+/* 803FE038 003F9CD8  4E 80 00 20 */	blr
 
 .global "WUDiIsSyncDisabled"
 "WUDiIsSyncDisabled":
@@ -237,7 +237,7 @@ lbl_803FE17C:
 /* 803FE184 003F9E24  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803FE188 003F9E28  7C 08 03 A6 */	mtlr r0
 /* 803FE18C 003F9E2C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803FE190 003F9E30  4E 80 00 20 */	blr 
+/* 803FE190 003F9E30  4E 80 00 20 */	blr
 
 .global "WUDiSaveDeviceToNand"
 "WUDiSaveDeviceToNand":
@@ -311,7 +311,7 @@ lbl_803FE280:
 /* 803FE290 003F9F30  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 803FE294 003F9F34  7C 08 03 A6 */	mtlr r0
 /* 803FE298 003F9F38  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FE29C 003F9F3C  4E 80 00 20 */	blr 
+/* 803FE29C 003F9F3C  4E 80 00 20 */	blr
 
 .global "WUDiSyncDone"
 "WUDiSyncDone":
@@ -397,7 +397,7 @@ lbl_803FE3B8:
 /* 803FE3C0 003FA060  88 9D 06 E6 */	lbz r4, 0x6e6(r29)
 /* 803FE3C4 003FA064  38 60 00 01 */	li r3, 1
 /* 803FE3C8 003FA068  7D 89 03 A6 */	mtctr r12
-/* 803FE3CC 003FA06C  4E 80 04 21 */	bctrl 
+/* 803FE3CC 003FA06C  4E 80 04 21 */	bctrl
 lbl_803FE3D0:
 /* 803FE3D0 003FA070  3C 60 80 48 */	lis r3, lbl_80486930@ha
 /* 803FE3D4 003FA074  38 63 69 30 */	addi r3, r3, lbl_80486930@l
@@ -412,7 +412,7 @@ lbl_803FE3E4:
 /* 803FE3F4 003FA094  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 803FE3F8 003FA098  7C 08 03 A6 */	mtlr r0
 /* 803FE3FC 003FA09C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803FE400 003FA0A0  4E 80 00 20 */	blr 
+/* 803FE400 003FA0A0  4E 80 00 20 */	blr
 
 .global "SyncHandler"
 "SyncHandler":
@@ -1007,7 +1007,7 @@ lbl_803FEC28:
 /* 803FEC30 003FA8D0  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803FEC34 003FA8D4  7C 08 03 A6 */	mtlr r0
 /* 803FEC38 003FA8D8  38 21 00 60 */	addi r1, r1, 0x60
-/* 803FEC3C 003FA8DC  4E 80 00 20 */	blr 
+/* 803FEC3C 003FA8DC  4E 80 00 20 */	blr
 
 .global "SyncHandler0"
 "SyncHandler0":
@@ -1063,7 +1063,7 @@ lbl_803FECC8:
 /* 803FECE8 003FA988  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FECEC 003FA98C  7C 08 03 A6 */	mtlr r0
 /* 803FECF0 003FA990  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FECF4 003FA994  4E 80 00 20 */	blr 
+/* 803FECF4 003FA994  4E 80 00 20 */	blr
 
 .global "WUDiDeleteDevice"
 "WUDiDeleteDevice":
@@ -1117,7 +1117,7 @@ lbl_803FED90:
 /* 803FED9C 003FAA3C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803FEDA0 003FAA40  7C 08 03 A6 */	mtlr r0
 /* 803FEDA4 003FAA44  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FEDA8 003FAA48  4E 80 00 20 */	blr 
+/* 803FEDA8 003FAA48  4E 80 00 20 */	blr
 
 .global "DeleteAllHandler"
 "DeleteAllHandler":
@@ -1139,7 +1139,7 @@ lbl_803FED90:
 /* 803FEDE8 003FAA88  38 63 6A 3C */	addi r3, r3, lbl_80486A3C@l
 /* 803FEDEC 003FAA8C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 803FEDF0 003FAA90  7C 69 03 A6 */	mtctr r3
-/* 803FEDF4 003FAA94  4E 80 04 20 */	bctr 
+/* 803FEDF4 003FAA94  4E 80 04 20 */	bctr
 /* 803FEDF8 003FAA98  38 60 00 00 */	li r3, 0
 /* 803FEDFC 003FAA9C  38 80 00 00 */	li r4, 0
 /* 803FEE00 003FAAA0  4B F4 2C 71 */	bl "BTA_DmSetVisibility"
@@ -1188,7 +1188,7 @@ lbl_803FED90:
 /* 803FEEAC 003FAB4C  41 82 00 10 */	beq lbl_803FEEBC
 /* 803FEEB0 003FAB50  38 60 00 01 */	li r3, 1
 /* 803FEEB4 003FAB54  7D 89 03 A6 */	mtctr r12
-/* 803FEEB8 003FAB58  4E 80 04 21 */	bctrl 
+/* 803FEEB8 003FAB58  4E 80 04 21 */	bctrl
 lbl_803FEEBC:
 /* 803FEEBC 003FAB5C  38 00 00 00 */	li r0, 0
 /* 803FEEC0 003FAB60  98 1D 00 0D */	stb r0, 0xd(r29)
@@ -1199,7 +1199,7 @@ lbl_803FEEC4:
 /* 803FEED0 003FAB70  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803FEED4 003FAB74  7C 08 03 A6 */	mtlr r0
 /* 803FEED8 003FAB78  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FEEDC 003FAB7C  4E 80 00 20 */	blr 
+/* 803FEEDC 003FAB7C  4E 80 00 20 */	blr
 
 .global "DeleteAllHandler0"
 "DeleteAllHandler0":
@@ -1289,7 +1289,7 @@ lbl_803FEFFC:
 /* 803FF004 003FACA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FF008 003FACA8  7C 08 03 A6 */	mtlr r0
 /* 803FF00C 003FACAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FF010 003FACB0  4E 80 00 20 */	blr 
+/* 803FF010 003FACB0  4E 80 00 20 */	blr
 
 .global "EnableStackHandler"
 "EnableStackHandler":
@@ -1419,7 +1419,7 @@ lbl_803FF1D0:
 /* 803FF1D8 003FAE78  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803FF1DC 003FAE7C  7C 08 03 A6 */	mtlr r0
 /* 803FF1E0 003FAE80  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FF1E4 003FAE84  4E 80 00 20 */	blr 
+/* 803FF1E4 003FAE84  4E 80 00 20 */	blr
 
 .global "EnableStackHandler0"
 "EnableStackHandler0":
@@ -1509,7 +1509,7 @@ lbl_803FF304:
 /* 803FF31C 003FAFBC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803FF320 003FAFC0  7C 08 03 A6 */	mtlr r0
 /* 803FF324 003FAFC4  38 21 00 40 */	addi r1, r1, 0x40
-/* 803FF328 003FAFC8  4E 80 00 20 */	blr 
+/* 803FF328 003FAFC8  4E 80 00 20 */	blr
 
 .global "InitHandler"
 "InitHandler":
@@ -1575,7 +1575,7 @@ lbl_803FF3F8:
 /* 803FF400 003FB0A0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803FF404 003FB0A4  7C 08 03 A6 */	mtlr r0
 /* 803FF408 003FB0A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FF40C 003FB0AC  4E 80 00 20 */	blr 
+/* 803FF40C 003FB0AC  4E 80 00 20 */	blr
 
 .global "InitHandler0"
 "InitHandler0":
@@ -1626,7 +1626,7 @@ lbl_803FF4A0:
 /* 803FF4A4 003FB144  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803FF4A8 003FB148  7C 08 03 A6 */	mtlr r0
 /* 803FF4AC 003FB14C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FF4B0 003FB150  4E 80 00 20 */	blr 
+/* 803FF4B0 003FB150  4E 80 00 20 */	blr
 
 .global "ShutdownHandler0"
 "ShutdownHandler0":
@@ -1885,7 +1885,7 @@ lbl_803FF778:
 /* 803FF850 003FB4F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803FF854 003FB4F4  7C 08 03 A6 */	mtlr r0
 /* 803FF858 003FB4F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FF85C 003FB4FC  4E 80 00 20 */	blr 
+/* 803FF85C 003FB4FC  4E 80 00 20 */	blr
 
 .global "WUDInit"
 "WUDInit":
@@ -1952,7 +1952,7 @@ lbl_803FF940:
 /* 803FF948 003FB5E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803FF94C 003FB5EC  7C 08 03 A6 */	mtlr r0
 /* 803FF950 003FB5F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FF954 003FB5F4  4E 80 00 20 */	blr 
+/* 803FF954 003FB5F4  4E 80 00 20 */	blr
 
 .global "WUDRegisterAllocator"
 "WUDRegisterAllocator":
@@ -1974,7 +1974,7 @@ lbl_803FF940:
 /* 803FF994 003FB634  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803FF998 003FB638  7C 08 03 A6 */	mtlr r0
 /* 803FF99C 003FB63C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FF9A0 003FB640  4E 80 00 20 */	blr 
+/* 803FF9A0 003FB640  4E 80 00 20 */	blr
 
 .global "WUDShutdown"
 "WUDShutdown":
@@ -2081,7 +2081,7 @@ lbl_803FFAB0:
 /* 803FFB20 003FB7C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FFB24 003FB7C4  7C 08 03 A6 */	mtlr r0
 /* 803FFB28 003FB7C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FFB2C 003FB7CC  4E 80 00 20 */	blr 
+/* 803FFB2C 003FB7CC  4E 80 00 20 */	blr
 
 .global "WUDGetStatus"
 "WUDGetStatus":
@@ -2099,7 +2099,7 @@ lbl_803FFAB0:
 /* 803FFB5C 003FB7FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FFB60 003FB800  7C 08 03 A6 */	mtlr r0
 /* 803FFB64 003FB804  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FFB68 003FB808  4E 80 00 20 */	blr 
+/* 803FFB68 003FB808  4E 80 00 20 */	blr
 
 .global "WUDGetBufferStatus"
 "WUDGetBufferStatus":
@@ -2120,7 +2120,7 @@ lbl_803FFAB0:
 /* 803FFBA4 003FB844  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FFBA8 003FB848  7C 08 03 A6 */	mtlr r0
 /* 803FFBAC 003FB84C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FFBB0 003FB850  4E 80 00 20 */	blr 
+/* 803FFBB0 003FB850  4E 80 00 20 */	blr
 
 .global "WUDSetSniffMode"
 "WUDSetSniffMode":
@@ -2152,7 +2152,7 @@ lbl_803FFBE8:
 /* 803FFC10 003FB8B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FFC14 003FB8B4  7C 08 03 A6 */	mtlr r0
 /* 803FFC18 003FB8B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FFC1C 003FB8BC  4E 80 00 20 */	blr 
+/* 803FFC1C 003FB8BC  4E 80 00 20 */	blr
 
 .global "WUDSetSyncSimpleCallback"
 "WUDSetSyncSimpleCallback":
@@ -2178,7 +2178,7 @@ lbl_803FFBE8:
 /* 803FFC6C 003FB90C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FFC70 003FB910  7C 08 03 A6 */	mtlr r0
 /* 803FFC74 003FB914  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FFC78 003FB918  4E 80 00 20 */	blr 
+/* 803FFC78 003FB918  4E 80 00 20 */	blr
 
 .global "StartSyncDevice"
 "StartSyncDevice":
@@ -2261,7 +2261,7 @@ lbl_803FFD94:
 /* 803FFDA0 003FBA40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FFDA4 003FBA44  7C 08 03 A6 */	mtlr r0
 /* 803FFDA8 003FBA48  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FFDAC 003FBA4C  4E 80 00 20 */	blr 
+/* 803FFDAC 003FBA4C  4E 80 00 20 */	blr
 
 .global "WUDStartFastSyncSimple"
 "WUDStartFastSyncSimple":
@@ -2292,7 +2292,7 @@ lbl_803FFD94:
 /* 803FFE10 003FBAB0  38 60 FF FF */	li r3, -1
 /* 803FFE14 003FBAB4  38 80 00 00 */	li r4, 0
 /* 803FFE18 003FBAB8  7D 89 03 A6 */	mtctr r12
-/* 803FFE1C 003FBABC  4E 80 04 21 */	bctrl 
+/* 803FFE1C 003FBABC  4E 80 04 21 */	bctrl
 lbl_803FFE20:
 /* 803FFE20 003FBAC0  7F E3 FB 78 */	mr r3, r31
 /* 803FFE24 003FBAC4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2300,7 +2300,7 @@ lbl_803FFE20:
 /* 803FFE2C 003FBACC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803FFE30 003FBAD0  7C 08 03 A6 */	mtlr r0
 /* 803FFE34 003FBAD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803FFE38 003FBAD8  4E 80 00 20 */	blr 
+/* 803FFE38 003FBAD8  4E 80 00 20 */	blr
 
 .global "WUDStopSyncSimple"
 "WUDStopSyncSimple":
@@ -2344,7 +2344,7 @@ lbl_803FFEAC:
 /* 803FFEC4 003FBB64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803FFEC8 003FBB68  7C 08 03 A6 */	mtlr r0
 /* 803FFECC 003FBB6C  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FFED0 003FBB70  4E 80 00 20 */	blr 
+/* 803FFED0 003FBB70  4E 80 00 20 */	blr
 
 .global "WUDSetDisableChannel"
 "WUDSetDisableChannel":
@@ -2413,7 +2413,7 @@ lbl_803FFFA4:
 /* 803FFFB0 003FBC50  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803FFFB4 003FBC54  7C 08 03 A6 */	mtlr r0
 /* 803FFFB8 003FBC58  38 21 00 20 */	addi r1, r1, 0x20
-/* 803FFFBC 003FBC5C  4E 80 00 20 */	blr 
+/* 803FFFBC 003FBC5C  4E 80 00 20 */	blr
 
 .global "WUDSetHidRecvCallback"
 "WUDSetHidRecvCallback":
@@ -2439,7 +2439,7 @@ lbl_803FFFA4:
 /* 8040000C 003FBCAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80400010 003FBCB0  7C 08 03 A6 */	mtlr r0
 /* 80400014 003FBCB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80400018 003FBCB8  4E 80 00 20 */	blr 
+/* 80400018 003FBCB8  4E 80 00 20 */	blr
 
 .global "WUDSetHidConnCallback"
 "WUDSetHidConnCallback":
@@ -2465,7 +2465,7 @@ lbl_803FFFA4:
 /* 80400068 003FBD08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040006C 003FBD0C  7C 08 03 A6 */	mtlr r0
 /* 80400070 003FBD10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80400074 003FBD14  4E 80 00 20 */	blr 
+/* 80400074 003FBD14  4E 80 00 20 */	blr
 
 .global "WUDSetVisibility"
 "WUDSetVisibility":
@@ -2490,7 +2490,7 @@ lbl_803FFFA4:
 /* 804000C0 003FBD60  83 C1 00 08 */	lwz r30, 8(r1)
 /* 804000C4 003FBD64  7C 08 03 A6 */	mtlr r0
 /* 804000C8 003FBD68  38 21 00 10 */	addi r1, r1, 0x10
-/* 804000CC 003FBD6C  4E 80 00 20 */	blr 
+/* 804000CC 003FBD6C  4E 80 00 20 */	blr
 
 .global "reset_again_cb"
 "reset_again_cb":
@@ -2599,7 +2599,7 @@ lbl_8040023C:
 /* 8040023C 003FBEDC  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 80400240 003FBEE0  7C 08 03 A6 */	mtlr r0
 /* 80400244 003FBEE4  38 21 01 10 */	addi r1, r1, 0x110
-/* 80400248 003FBEE8  4E 80 00 20 */	blr 
+/* 80400248 003FBEE8  4E 80 00 20 */	blr
 
 .global "write_patch_cb"
 "write_patch_cb":
@@ -2752,7 +2752,7 @@ lbl_80400464:
 /* 8040046C 003FC10C  83 C1 02 08 */	lwz r30, 0x208(r1)
 /* 80400470 003FC110  7C 08 03 A6 */	mtlr r0
 /* 80400474 003FC114  38 21 02 10 */	addi r1, r1, 0x210
-/* 80400478 003FC118  4E 80 00 20 */	blr 
+/* 80400478 003FC118  4E 80 00 20 */	blr
 
 .global "install_patch_cb"
 "install_patch_cb":
@@ -2812,7 +2812,7 @@ lbl_80400538:
 /* 80400540 003FC1E0  83 C1 01 08 */	lwz r30, 0x108(r1)
 /* 80400544 003FC1E4  7C 08 03 A6 */	mtlr r0
 /* 80400548 003FC1E8  38 21 01 10 */	addi r1, r1, 0x110
-/* 8040054C 003FC1EC  4E 80 00 20 */	blr 
+/* 8040054C 003FC1EC  4E 80 00 20 */	blr
 
 .global "WUDiInitSub"
 "WUDiInitSub":
@@ -2903,7 +2903,7 @@ lbl_80400638:
 /* 80400698 003FC338  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8040069C 003FC33C  7C 08 03 A6 */	mtlr r0
 /* 804006A0 003FC340  38 21 00 20 */	addi r1, r1, 0x20
-/* 804006A4 003FC344  4E 80 00 20 */	blr 
+/* 804006A4 003FC344  4E 80 00 20 */	blr
 
 .global "WUDiRegisterDevice"
 "WUDiRegisterDevice":
@@ -2980,7 +2980,7 @@ lbl_804007A0:
 /* 804007B0 003FC450  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 804007B4 003FC454  7C 08 03 A6 */	mtlr r0
 /* 804007B8 003FC458  38 21 00 30 */	addi r1, r1, 0x30
-/* 804007BC 003FC45C  4E 80 00 20 */	blr 
+/* 804007BC 003FC45C  4E 80 00 20 */	blr
 
 .global "WUDiRemoveDevice"
 "WUDiRemoveDevice":
@@ -3068,7 +3068,7 @@ lbl_804008DC:
 /* 804008F4 003FC594  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 804008F8 003FC598  7C 08 03 A6 */	mtlr r0
 /* 804008FC 003FC59C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80400900 003FC5A0  4E 80 00 20 */	blr 
+/* 80400900 003FC5A0  4E 80 00 20 */	blr
 
 .global "WUDiGetDevInfo"
 "WUDiGetDevInfo":
@@ -3131,7 +3131,7 @@ lbl_804009B8:
 /* 804009CC 003FC66C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804009D0 003FC670  7C 08 03 A6 */	mtlr r0
 /* 804009D4 003FC674  38 21 00 20 */	addi r1, r1, 0x20
-/* 804009D8 003FC678  4E 80 00 20 */	blr 
+/* 804009D8 003FC678  4E 80 00 20 */	blr
 
 .global "WUDiGetNewDevInfo"
 "WUDiGetNewDevInfo":
@@ -3186,7 +3186,7 @@ lbl_80400A70:
 /* 80400A8C 003FC72C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80400A90 003FC730  7C 08 03 A6 */	mtlr r0
 /* 80400A94 003FC734  38 21 00 20 */	addi r1, r1, 0x20
-/* 80400A98 003FC738  4E 80 00 20 */	blr 
+/* 80400A98 003FC738  4E 80 00 20 */	blr
 
 .global "WUDiMoveTopSmpDevInfoPtr"
 "WUDiMoveTopSmpDevInfoPtr":
@@ -3264,7 +3264,7 @@ lbl_80400B94:
 /* 80400BA4 003FC844  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80400BA8 003FC848  7C 08 03 A6 */	mtlr r0
 /* 80400BAC 003FC84C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80400BB0 003FC850  4E 80 00 20 */	blr 
+/* 80400BB0 003FC850  4E 80 00 20 */	blr
 
 .global "WUDiMoveBottomSmpDevInfoPtr"
 "WUDiMoveBottomSmpDevInfoPtr":
@@ -3342,7 +3342,7 @@ lbl_80400CAC:
 /* 80400CBC 003FC95C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80400CC0 003FC960  7C 08 03 A6 */	mtlr r0
 /* 80400CC4 003FC964  38 21 00 20 */	addi r1, r1, 0x20
-/* 80400CC8 003FC968  4E 80 00 20 */	blr 
+/* 80400CC8 003FC968  4E 80 00 20 */	blr
 
 .global "WUDiMoveTopOfDisconnectedSmpDevice"
 "WUDiMoveTopOfDisconnectedSmpDevice":
@@ -3439,7 +3439,7 @@ lbl_80400DF0:
 /* 80400E14 003FCAB4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80400E18 003FCAB8  7C 08 03 A6 */	mtlr r0
 /* 80400E1C 003FCABC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80400E20 003FCAC0  4E 80 00 20 */	blr 
+/* 80400E20 003FCAC0  4E 80 00 20 */	blr
 
 .global "WUDiMoveTopStdDevInfoPtr"
 "WUDiMoveTopStdDevInfoPtr":
@@ -3517,7 +3517,7 @@ lbl_80400F1C:
 /* 80400F2C 003FCBCC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80400F30 003FCBD0  7C 08 03 A6 */	mtlr r0
 /* 80400F34 003FCBD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80400F38 003FCBD8  4E 80 00 20 */	blr 
+/* 80400F38 003FCBD8  4E 80 00 20 */	blr
 
 .global "WUDiMoveBottomStdDevInfoPtr"
 "WUDiMoveBottomStdDevInfoPtr":
@@ -3595,7 +3595,7 @@ lbl_80401034:
 /* 80401044 003FCCE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80401048 003FCCE8  7C 08 03 A6 */	mtlr r0
 /* 8040104C 003FCCEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80401050 003FCCF0  4E 80 00 20 */	blr 
+/* 80401050 003FCCF0  4E 80 00 20 */	blr
 
 .global "WUDiMoveTopOfDisconnectedStdDevice"
 "WUDiMoveTopOfDisconnectedStdDevice":
@@ -3692,7 +3692,7 @@ lbl_80401178:
 /* 8040119C 003FCE3C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 804011A0 003FCE40  7C 08 03 A6 */	mtlr r0
 /* 804011A4 003FCE44  38 21 00 30 */	addi r1, r1, 0x30
-/* 804011A8 003FCE48  4E 80 00 20 */	blr 
+/* 804011A8 003FCE48  4E 80 00 20 */	blr
 
 .global "CleanupCallback"
 "CleanupCallback":
@@ -3703,13 +3703,13 @@ lbl_80401178:
 /* 804011BC 003FCE5C  38 00 00 00 */	li r0, 0
 /* 804011C0 003FCE60  90 0D C9 78 */	stw r0, "_initialized_805D9058"-_SDA_BASE_(r13)
 /* 804011C4 003FCE64  98 03 07 08 */	stb r0, 0x708(r3)
-/* 804011C8 003FCE68  4E 80 00 20 */	blr 
+/* 804011C8 003FCE68  4E 80 00 20 */	blr
 lbl_804011CC:
 /* 804011CC 003FCE6C  3C 60 80 48 */	lis r3, lbl_80486F0C@ha
 /* 804011D0 003FCE70  38 63 6F 0C */	addi r3, r3, lbl_80486F0C@l
 /* 804011D4 003FCE74  4C C6 31 82 */	crclr 6
 /* 804011D8 003FCE78  48 00 15 44 */	b "WUD_DEBUGPrint"
-/* 804011DC 003FCE7C  4E 80 00 20 */	blr 
+/* 804011DC 003FCE7C  4E 80 00 20 */	blr
 
 .global "WUDSecurityCallback"
 "WUDSecurityCallback":
@@ -3735,7 +3735,7 @@ lbl_804011CC:
 /* 8040122C 003FCECC  38 63 71 88 */	addi r3, r3, lbl_80487188@l
 /* 80401230 003FCED0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80401234 003FCED4  7C 69 03 A6 */	mtctr r3
-/* 80401238 003FCED8  4E 80 04 20 */	bctr 
+/* 80401238 003FCED8  4E 80 04 20 */	bctr
 /* 8040123C 003FCEDC  7F 84 E3 78 */	mr r4, r28
 /* 80401240 003FCEE0  38 7D 07 02 */	addi r3, r29, 0x702
 /* 80401244 003FCEE4  38 A0 00 06 */	li r5, 6
@@ -4069,7 +4069,7 @@ lbl_8040171C:
 /* 80401724 003FD3C4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80401728 003FD3C8  7C 08 03 A6 */	mtlr r0
 /* 8040172C 003FD3CC  38 21 00 60 */	addi r1, r1, 0x60
-/* 80401730 003FD3D0  4E 80 00 20 */	blr 
+/* 80401730 003FD3D0  4E 80 00 20 */	blr
 
 .global "WUDSearchCallback"
 "WUDSearchCallback":
@@ -4206,7 +4206,7 @@ lbl_80401900:
 /* 80401910 003FD5B0  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80401914 003FD5B4  7C 08 03 A6 */	mtlr r0
 /* 80401918 003FD5B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8040191C 003FD5BC  4E 80 00 20 */	blr 
+/* 8040191C 003FD5BC  4E 80 00 20 */	blr
 
 .global "WUDVendorSpecificCallback"
 "WUDVendorSpecificCallback":
@@ -4276,7 +4276,7 @@ lbl_804019E8:
 /* 80401A0C 003FD6AC  7F E3 FB 78 */	mr r3, r31
 /* 80401A10 003FD6B0  38 80 00 00 */	li r4, 0
 /* 80401A14 003FD6B4  7D 89 03 A6 */	mtctr r12
-/* 80401A18 003FD6B8  4E 80 04 21 */	bctrl 
+/* 80401A18 003FD6B8  4E 80 04 21 */	bctrl
 /* 80401A1C 003FD6BC  48 00 02 1C */	b lbl_80401C38
 lbl_80401A20:
 /* 80401A20 003FD6C0  38 7E 04 1C */	addi r3, r30, 0x41c
@@ -4299,7 +4299,7 @@ lbl_80401A20:
 /* 80401A64 003FD704  38 60 FF FF */	li r3, -1
 /* 80401A68 003FD708  38 80 00 00 */	li r4, 0
 /* 80401A6C 003FD70C  7D 89 03 A6 */	mtctr r12
-/* 80401A70 003FD710  4E 80 04 21 */	bctrl 
+/* 80401A70 003FD710  4E 80 04 21 */	bctrl
 /* 80401A74 003FD714  48 00 01 C4 */	b lbl_80401C38
 lbl_80401A78:
 /* 80401A78 003FD718  38 7E 0B 10 */	addi r3, r30, 0xb10
@@ -4342,7 +4342,7 @@ lbl_80401AE4:
 /* 80401B04 003FD7A4  7F EC FB 78 */	mr r12, r31
 /* 80401B08 003FD7A8  7F A3 EB 78 */	mr r3, r29
 /* 80401B0C 003FD7AC  7D 89 03 A6 */	mtctr r12
-/* 80401B10 003FD7B0  4E 80 04 21 */	bctrl 
+/* 80401B10 003FD7B0  4E 80 04 21 */	bctrl
 /* 80401B14 003FD7B4  48 00 01 24 */	b lbl_80401C38
 lbl_80401B18:
 /* 80401B18 003FD7B8  3F A0 80 5D */	lis r29, "_wcb"@ha
@@ -4429,7 +4429,7 @@ lbl_80401C38:
 /* 80401C48 003FD8E8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80401C4C 003FD8EC  7C 08 03 A6 */	mtlr r0
 /* 80401C50 003FD8F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80401C54 003FD8F4  4E 80 00 20 */	blr 
+/* 80401C54 003FD8F4  4E 80 00 20 */	blr
 
 .global "WUDDeviceStatusCallback"
 "WUDDeviceStatusCallback":
@@ -4453,7 +4453,7 @@ lbl_80401C94:
 /* 80401C98 003FD938  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80401C9C 003FD93C  7C 08 03 A6 */	mtlr r0
 /* 80401CA0 003FD940  38 21 00 10 */	addi r1, r1, 0x10
-/* 80401CA4 003FD944  4E 80 00 20 */	blr 
+/* 80401CA4 003FD944  4E 80 00 20 */	blr
 
 .global "WUDStoredLinkKeyCallback"
 "WUDStoredLinkKeyCallback":
@@ -4659,7 +4659,7 @@ lbl_80401F7C:
 /* 80401F84 003FDC24  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80401F88 003FDC28  7C 08 03 A6 */	mtlr r0
 /* 80401F8C 003FDC2C  38 21 00 60 */	addi r1, r1, 0x60
-/* 80401F90 003FDC30  4E 80 00 20 */	blr 
+/* 80401F90 003FDC30  4E 80 00 20 */	blr
 
 .global "WUDPowerManagerCallback"
 "WUDPowerManagerCallback":
@@ -4728,7 +4728,7 @@ lbl_80402048:
 /* 80402078 003FDD18  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8040207C 003FDD1C  7C 08 03 A6 */	mtlr r0
 /* 80402080 003FDD20  38 21 00 20 */	addi r1, r1, 0x20
-/* 80402084 003FDD24  4E 80 00 20 */	blr 
+/* 80402084 003FDD24  4E 80 00 20 */	blr
 
 .global "_WUDGetDevAddr"
 "_WUDGetDevAddr":
@@ -4754,7 +4754,7 @@ lbl_804020C0:
 /* 804020CC 003FDD6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804020D0 003FDD70  7C 08 03 A6 */	mtlr r0
 /* 804020D4 003FDD74  38 21 00 10 */	addi r1, r1, 0x10
-/* 804020D8 003FDD78  4E 80 00 20 */	blr 
+/* 804020D8 003FDD78  4E 80 00 20 */	blr
 
 .global "_WUDGetQueuedSize"
 "_WUDGetQueuedSize":
@@ -4782,7 +4782,7 @@ lbl_8040211C:
 /* 80402128 003FDDC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8040212C 003FDDCC  7C 08 03 A6 */	mtlr r0
 /* 80402130 003FDDD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80402134 003FDDD4  4E 80 00 20 */	blr 
+/* 80402134 003FDDD4  4E 80 00 20 */	blr
 
 .global "_WUDGetNotAckedSize"
 "_WUDGetNotAckedSize":
@@ -4810,7 +4810,7 @@ lbl_80402178:
 /* 80402184 003FDE24  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80402188 003FDE28  7C 08 03 A6 */	mtlr r0
 /* 8040218C 003FDE2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80402190 003FDE30  4E 80 00 20 */	blr 
+/* 80402190 003FDE30  4E 80 00 20 */	blr
 
 .global "_WUDGetLinkNumber"
 "_WUDGetLinkNumber":
@@ -4828,93 +4828,453 @@ lbl_80402178:
 /* 804021C0 003FDE60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 804021C4 003FDE64  7C 08 03 A6 */	mtlr r0
 /* 804021C8 003FDE68  38 21 00 10 */	addi r1, r1, 0x10
-/* 804021CC 003FDE6C  4E 80 00 20 */	blr 
+/* 804021CC 003FDE6C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "descriptor"
 "descriptor":
-	.incbin "baserom.dol", 0x4828A0, 0xDC
+	# ROM: 0x4828A0
+	.4byte 0x05010905
+	.4byte 0xA1018510
+	.4byte 0x150026FF
+	.4byte 0x00750895
+	.4byte 0x010600FF
+	.4byte 0x09019100
+	.4byte 0x85119501
+	.4byte 0x09019100
+	.4byte 0x85129502
+	.4byte 0x09019100
+	.4byte 0x85139501
+	.4byte 0x09019100
+	.4byte 0x85149501
+	.4byte 0x09019100
+	.4byte 0x85159501
+	.4byte 0x09019100
+	.4byte 0x85169515
+	.4byte 0x09019100
+	.4byte 0x85179506
+	.4byte 0x09019100
+	.4byte 0x85189515
+	.4byte 0x09019100
+	.4byte 0x85199501
+	.4byte 0x09019100
+	.4byte 0x851A9501
+	.4byte 0x09019100
+	.4byte 0x85209506
+	.4byte 0x09018100
+	.4byte 0x85219515
+	.4byte 0x09018100
+	.4byte 0x85229504
+	.4byte 0x09018100
+	.4byte 0x85309502
+	.4byte 0x09018100
+	.4byte 0x85319505
+	.4byte 0x09018100
+	.4byte 0x8532950A
+	.4byte 0x09018100
+	.4byte 0x85339511
+	.4byte 0x09018100
+	.4byte 0x85349515
+	.4byte 0x09018100
+	.4byte 0x85359515
+	.4byte 0x09018100
+	.4byte 0x85369515
+	.4byte 0x09018100
+	.4byte 0x85379515
+	.4byte 0x09018100
+	.4byte 0x853D9515
+	.4byte 0x09018100
+	.4byte 0x853E9515
+	.4byte 0x09018100
+	.4byte 0x853F9515
+	.4byte 0x09018100
+	.4byte 0xC0000000
+
 .global lbl_8048687C
 lbl_8048687C:
-	.incbin "baserom.dol", 0x48297C, 0x10
+	# ROM: 0x48297C
+	.asciz "App_MEMalloc\n"
+	.byte 0x00, 0x00
+
 .global lbl_8048688C
 lbl_8048688C:
-	.incbin "baserom.dol", 0x48298C, 0x10
+	# ROM: 0x48298C
+	.asciz "App_MEMfree\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8048689C
 lbl_8048689C:
-	.incbin "baserom.dol", 0x48299C, 0x24
+	# ROM: 0x48299C
+	.asciz "SyncFlushCallback() : %d, Sync: %d\n"
+
 .global lbl_804868C0
 lbl_804868C0:
-	.incbin "baserom.dol", 0x4829C0, 0x28
+	# ROM: 0x4829C0
+	.asciz "DeleteFlushCallback() : %d, Delete: %d\n"
+
 .global lbl_804868E8
 lbl_804868E8:
-	.incbin "baserom.dol", 0x4829E8, 0x28
+	# ROM: 0x4829E8
+	.asciz "ShutFlushCallback() : %d, Shutdown: %d\n"
+
 .global lbl_80486910
 lbl_80486910:
-	.incbin "baserom.dol", 0x482A10, 0x20
+	# ROM: 0x482A10
+	.asciz "%d devices is stored into SC.\n"
+	.byte 0x00
+
 .global lbl_80486930
 lbl_80486930:
-	.incbin "baserom.dol", 0x482A30, 0x10C
+	# ROM: 0x482A30
+	.asciz "Pairing Done\n"
+	.byte 0x00, 0x00
+	.asciz "Nintendo RVL-CNT"
+	.byte 0x00, 0x00, 0x00
+	.asciz "write stored link key\n"
+	.byte 0x00
+	.asciz "addr : %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "key  : %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n"
+	.asciz "Cancel searching because 4 connections exist.\n"
+	.byte 0x00
+	.asciz "WARNING: Illigal status\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80486A3C
 lbl_80486A3C:
-	.incbin "baserom.dol", 0x482B3C, 0x100
+	# ROM: 0x482B3C
+	.4byte 0x803FEEC4 ;# ptr
+	.4byte 0x803FEDF8 ;# ptr
+	.4byte 0x803FEE10 ;# ptr
+	.4byte 0x803FEE1C ;# ptr
+	.4byte 0x803FEEC4 ;# ptr
+	.4byte 0x803FEE28 ;# ptr
+	.4byte 0x803FEEC4 ;# ptr
+	.4byte 0x803FEEC4 ;# ptr
+	.4byte 0x803FEE70 ;# ptr
+	.asciz "hci_version   : %02x\n"
+	.byte 0x00, 0x00
+	.asciz "hci_revision  : %04x\n"
+	.byte 0x00, 0x00
+	.asciz "lmp_version   : %02x\n"
+	.byte 0x00, 0x00
+	.asciz "lmp_subversion: %04x\n"
+	.byte 0x00, 0x00
+	.asciz "manufacturer  : %04x\n"
+	.byte 0x00, 0x00
+	.asciz " ==> 2045 firmware ver.002.003.014.%d\n"
+	.byte 0x00
+	.asciz "WUDiAppendRuntimePatch()\n"
+	.byte 0x00, 0x00
+	.asciz "Nintendo RVL-CNT-01"
+	.asciz "name : %s\n"
+	.byte 0x00
+
 .global lbl_80486B3C
 lbl_80486B3C:
-	.incbin "baserom.dol", 0x482C3C, 0xC
+	# ROM: 0x482C3C
+	.asciz "InitCore\n"
+	.byte 0x00, 0x00
+
 .global lbl_80486B48
 lbl_80486B48:
-	.incbin "baserom.dol", 0x482C48, 0x18
+	# ROM: 0x482C48
+	.asciz "BTA_Init() is started\n"
+	.byte 0x00
+
 .global lbl_80486B60
 lbl_80486B60:
-	.incbin "baserom.dol", 0x482C60, 0x14
+	# ROM: 0x482C60
+	.asciz "BTA_Init() is done\n"
+
 .global lbl_80486B74
 lbl_80486B74:
-	.incbin "baserom.dol", 0x482C74, 0x10
+	# ROM: 0x482C74
+	.asciz "WUDShutdown()\n"
+	.byte 0x00
+
 .global lbl_80486B84
 lbl_80486B84:
-	.incbin "baserom.dol", 0x482C84, 0x50
+	# ROM: 0x482C84
+	.asciz "WUDSetSyncDeviceCallback\n"
+	.byte 0x00, 0x00
+	.asciz "WUDSetClearDeviceCallback\n"
+	.byte 0x00
+	.asciz "WUDStartSyncDevice()\n"
+	.byte 0x00, 0x00
+
 .global lbl_80486BD4
 lbl_80486BD4:
-	.incbin "baserom.dol", 0x482CD4, 0x30
+	# ROM: 0x482CD4
+	.asciz "WUDStartSyncSimple()\n"
+	.byte 0x00, 0x00
+	.asciz "WUDCancelSyncDevice()\n"
+	.byte 0x00
+
 .global lbl_80486C04
 lbl_80486C04:
-	.incbin "baserom.dol", 0x482D04, 0x34
+	# ROM: 0x482D04
+	.asciz "WUDStopSyncSimple()\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WUDStartClearDevice()\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_80486C38
 lbl_80486C38:
-	.incbin "baserom.dol", 0x482D38, 0x18
+	# ROM: 0x482D38
+	.asciz "WUDSetDisableChannel()\n"
+
 .global lbl_80486C50
 lbl_80486C50:
-	.incbin "baserom.dol", 0x482D50, 0x1C
+	# ROM: 0x482D50
+	.asciz "BTM_SetAfhChannels() : %d\n"
+	.byte 0x00
+
 .global lbl_80486C6C
 lbl_80486C6C:
-	.incbin "baserom.dol", 0x482D6C, 0x1C
+	# ROM: 0x482D6C
+	.asciz "WUDSetHidRecvCallback()\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80486C88
 lbl_80486C88:
-	.incbin "baserom.dol", 0x482D88, 0x1C
+	# ROM: 0x482D88
+	.asciz "WUDSetHidConnCallback()\n"
+	.byte 0x00, 0x00, 0x00
+
 .global "patch_binary"
 "patch_binary":
-	.incbin "baserom.dol", 0x482DA4, 0xBC
+	# ROM: 0x482DA4
+	.4byte 0x70990800
+	.4byte 0xB4000000
+	.4byte 0x8843D107
+	.4byte 0x090C0843
+	.4byte 0xA0621923
+	.4byte 0xDB013380
+	.4byte 0x7CF788F8
+	.4byte 0x287680F7
+	.4byte 0x17FF4378
+	.4byte 0xEB701923
+	.4byte 0xDB013387
+	.4byte 0x7CF7BCFB
+	.4byte 0x0B60A37B
+	.4byte 0x01490B60
+	.4byte 0x90F796FB
+	.4byte 0xD81D0800
+	.4byte 0x00F004F8
+	.4byte 0x002379F7
+	.4byte 0xE3FA0000
+	.4byte 0x00B50023
+	.4byte 0x11490B60
+	.4byte 0x1D21C903
+	.4byte 0x0B607D20
+	.4byte 0x80010138 ;# ptr
+	.4byte 0xFDD10E4B
+	.4byte 0x0E4A1360
+	.4byte 0x47200021
+	.4byte 0x96F796FF
+	.4byte 0x46200021
+	.4byte 0x96F792FF
+	.4byte 0x0A4A1368
+	.4byte 0x0A480340
+	.4byte 0x13600A4A
+	.4byte 0x13680A48
+	.4byte 0x03401360
+	.4byte 0x094A1368
+	.4byte 0x09480340
+	.4byte 0x136000BD
+	.4byte 0x24800E00
+	.4byte 0x81030FFE
+	.4byte 0x5C000F00
+	.4byte 0x60FC0E00
+	.4byte 0xFEFF0000
+	.4byte 0xFCFC0E00
+	.4byte 0xFF9F0000
+	.4byte 0x30FC0E00
+	.4byte 0x7FFF0000
+
 .global "patch_install"
 "patch_install":
-	.incbin "baserom.dol", 0x482E60, 0x5C
+	# ROM: 0x482E60
+	.4byte 0x0720BC65
+	.4byte 0x01008442
+	.4byte 0x09D28442
+	.4byte 0x09D12184
+	.4byte 0x5A000083
+	.4byte 0xF074FF09
+	.4byte 0x0C084322
+	.4byte 0x00610000
+	.4byte 0x83F040FC
+	.4byte 0x00000000
+	.4byte 0x23CC9F01
+	.4byte 0x006FF0E4
+	.4byte 0xFC03287D
+	.4byte 0xD1243C62
+	.4byte 0x01002820
+	.4byte 0x00E0608D
+	.4byte 0x23682504
+	.4byte 0x12010020
+	.4byte 0x1C201C24
+	.4byte 0xE0B02126
+	.4byte 0x742F0000
+	.4byte 0x86F018FD
+	.4byte 0x214F3B60
+
 .global lbl_80486DBC
 lbl_80486DBC:
-	.incbin "baserom.dol", 0x482EBC, 0x138
+	# ROM: 0x482EBC
+	.asciz "start WUDiInitSub()\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "WUDiAutoSync()\n"
+	.asciz "WUDiCancelSync()\n"
+	.byte 0x00, 0x00
+	.asciz "WUDiDeleteAllLinkKeys()\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_DmAddDevice(): %d\n"
+	.byte 0x00
+	.asciz "BTA_HhAddDev()\n"
+	.asciz "WUDiRemoveDevice : \n"
+	.byte 0x00, 0x00, 0x00
+	.asciz " handle : %d,  addr : %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "remove device info from database.\n"
+	.byte 0x00
+	.asciz "BTA_HhRemoveDev()\n"
+	.byte 0x00
+	.asciz " handle : %d\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_DmRemoveDevice(): %d\n"
+	.byte 0x00, 0x00
+
 .global lbl_80486EF4
 lbl_80486EF4:
-	.incbin "baserom.dol", 0x482FF4, 0x18
+	# ROM: 0x482FF4
+	.asciz "new entry index is %d\n"
+	.byte 0x00
+
 .global lbl_80486F0C
 lbl_80486F0C:
-	.incbin "baserom.dol", 0x48300C, 0x27C
+	# ROM: 0x48300C
+	.asciz "WARNING: USB_CLOSE_FAILURE!\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "WUDSecurityCallback: "
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "BTA_ENABLE_EVT\n"
+	.asciz "host : %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_DISABLE_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_DM_PIN_REQ_EVT\n"
+	.asciz "BTA_DM_AUTH_CMPL_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "  addr : %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.asciz "  key  : %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00
+	.asciz "  result = %d\n"
+	.byte 0x00
+	.asciz "BTA_DM_AUTHORIZE_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "BTA_DM_LINK_UP_EVT\n"
+	.asciz "   addr : %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "%s --> %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00
+	.asciz "not paired"
+	.byte 0x00
+	.asciz "4 links exist"
+	.byte 0x00, 0x00
+	.asciz "BTA_DM_LINK_DOWN_EVT\n"
+	.byte 0x00, 0x00
+	.asciz "result: %d\n"
+	.asciz "this device in not paired\n"
+	.byte 0x00
+	.asciz "WARNING: link num count is reset.\n"
+	.byte 0x00
+	.asciz "BTA_DM_SIG_STRENGTH_EVT\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTA_DM_BUSY_LEVEL_EVT\n"
+	.byte 0x00
+
 .global lbl_80487188
 lbl_80487188:
-	.incbin "baserom.dol", 0x483288, 0x1A0
+	# ROM: 0x483288
+	.4byte 0x8040123C ;# ptr
+	.4byte 0x804012E8 ;# ptr
+	.4byte 0x80401304 ;# ptr
+	.4byte 0x804013A4 ;# ptr
+	.4byte 0x804014B0 ;# ptr
+	.4byte 0x804014C0 ;# ptr
+	.4byte 0x804015AC ;# ptr
+	.4byte 0x80401700 ;# ptr
+	.4byte 0x80401710 ;# ptr
+	.asciz "INQUIRY RESULT: %02x:%02x:%02x:%02x:%02x:%02x   %02x%02x%02x   %d\n"
+	.byte 0x00
+	.asciz "INQUIRY_COMPLETED\n"
+	.byte 0x00
+	.asciz "DISCOVER RESULT:  %02x:%02x:%02x:%02x:%02x:%02x   %s (%04x)\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "DISCOVER COMPLETED\n"
+	.asciz "SEARCH CANCEL\n\n"
+	.asciz "Warning: Search Callback returns invalid event\n"
+	.asciz "VSE:- INITIATE_PAIRING\n"
+	.asciz "VSE:- DELETE_ALL_KEYS\n"
+	.byte 0x00
+	.asciz "VSE:- SI_PORT_STATUS  status = %d\n"
+	.byte 0x00
+	.asciz "VSE:- WATCH_DOG_RESET  HW error = %d\n"
+	.byte 0x00, 0x00
+	.asciz "MODULE FATAL ERROR\n"
+
 .global lbl_80487328
 lbl_80487328:
-	.incbin "baserom.dol", 0x483428, 0x1C
+	# ROM: 0x483428
+	.asciz "WUDDeviceStatusCallback\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80487344
 lbl_80487344:
-	.incbin "baserom.dol", 0x483444, 0x2C4
+	# ROM: 0x483444
+	.asciz "---- WARNING: USB FATAL ERROR! ----\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BTM_CB_EVT_RETURN_LINK_KEYS\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "BD_ADDR:  %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "LINKKEY: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n"
+	.byte 0x00, 0x00
+	.asciz "this device is not stored in NAND\n"
+	.byte 0x00
+	.asciz "   LAST: %02x:%02x:%02x:%02x:%02x:%02x\n"
+	.asciz "BTM_CB_EVT_READ_STORED_LINK_KEYS\n"
+	.byte 0x00, 0x00
+	.asciz "  status: %d  max_keys: %d  num_keys: %d\n"
+	.byte 0x00, 0x00
+	.asciz "BTM_CB_EVT_WRITE_STORED_LINK_KEYS\n"
+	.byte 0x00
+	.asciz "  status: %d  num_keys: %d\n"
+	.asciz "BTM_CB_EVT_DELETE_STORED_LINK_KEYS\n"
+	.asciz "WARNING: no entry is deleted\n"
+	.byte 0x00, 0x00
+	.asciz "Unknown event\n"
+	.byte 0x00
+	.asciz "WUDPowerManagerCallback\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "hci_status = %d"
+	.asciz " addr = %02x:%02x:%02x:%02x:%02x:%02x,  status = %d\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "_WUDEnableTestMode\n"
+	.asciz "_WUDStartSyncDevice()\n"
+	.byte 0x00
+	.asciz "_WUDDeleteStoreDevice()\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "dev number = %d\n"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "_wcb"
@@ -4948,7 +5308,10 @@ lbl_80487344:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D7980
 lbl_805D7980:
-	.incbin "baserom.dol", 0x487500, 0x8
+	# ROM: 0x487500
+	.asciz "WUD.c"
+	.byte 0x00, 0x00
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_initialized_805D9058"
@@ -4985,22 +5348,36 @@ lbl_805D7980:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBDD8
 lbl_805DBDD8:
-	.incbin "baserom.dol", 0x48A0F8, 0x1
+	# ROM: 0x48A0F8
+	.byte 0x57
+
 .global lbl_805DBDD9
 lbl_805DBDD9:
-	.incbin "baserom.dol", 0x48A0F9, 0x1
+	# ROM: 0x48A0F9
+	.byte 0x69
+
 .global lbl_805DBDDA
 lbl_805DBDDA:
-	.incbin "baserom.dol", 0x48A0FA, 0x1
+	# ROM: 0x48A0FA
+	.byte 0x69
+
 .global lbl_805DBDDB
 lbl_805DBDDB:
-	.incbin "baserom.dol", 0x48A0FB, 0x1
+	# ROM: 0x48A0FB
+	.byte 0x00
+
 .global lbl_805DBDDC
 lbl_805DBDDC:
-	.incbin "baserom.dol", 0x48A0FC, 0x1
+	# ROM: 0x48A0FC
+	.byte 0x00
+
 .global lbl_805DBDDD
 lbl_805DBDDD:
-	.incbin "baserom.dol", 0x48A0FD, 0x1
+	# ROM: 0x48A0FD
+	.byte 0x04
+
 .global lbl_805DBDDE
 lbl_805DBDDE:
-	.incbin "baserom.dol", 0x48A0FE, 0x2
+	# ROM: 0x48A0FE
+	.byte 0x48, 0x00
+

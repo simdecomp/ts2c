@@ -9,7 +9,7 @@
 /* 80318A80 00314720  38 60 00 00 */	li r3, 0
 /* 80318A84 00314724  54 00 10 3E */	rotlwi r0, r0, 2
 /* 80318A88 00314728  7C 00 2A 15 */	add. r0, r0, r5
-/* 80318A8C 0031472C  4C 82 00 20 */	bnelr 
+/* 80318A8C 0031472C  4C 82 00 20 */	bnelr
 /* 80318A90 00314730  3C 60 51 EC */	lis r3, 0x51EB851F@ha
 /* 80318A94 00314734  38 03 85 1F */	addi r0, r3, 0x51EB851F@l
 /* 80318A98 00314738  7C A0 20 96 */	mulhw r5, r0, r4
@@ -20,7 +20,7 @@
 /* 80318AAC 0031474C  7C 00 20 51 */	subf. r0, r0, r4
 /* 80318AB0 00314750  41 82 00 0C */	beq lbl_80318ABC
 /* 80318AB4 00314754  38 60 00 01 */	li r3, 1
-/* 80318AB8 00314758  4E 80 00 20 */	blr 
+/* 80318AB8 00314758  4E 80 00 20 */	blr
 lbl_80318ABC:
 /* 80318ABC 0031475C  7C A0 3E 70 */	srawi r0, r5, 7
 /* 80318AC0 00314760  54 03 0F FE */	srwi r3, r0, 0x1f
@@ -29,7 +29,7 @@ lbl_80318ABC:
 /* 80318ACC 0031476C  7C 00 20 50 */	subf r0, r0, r4
 /* 80318AD0 00314770  7C 00 00 34 */	cntlzw r0, r0
 /* 80318AD4 00314774  54 03 D9 7E */	srwi r3, r0, 5
-/* 80318AD8 00314778  4E 80 00 20 */	blr 
+/* 80318AD8 00314778  4E 80 00 20 */	blr
 
 .global "dateGetNumDaysInMonth__7AptDateFii"
 "dateGetNumDaysInMonth__7AptDateFii":
@@ -44,7 +44,7 @@ lbl_80318ABC:
 /* 80318AFC 0031479C  38 C6 7D 6C */	addi r6, r6, lbl_80457D6C@l
 /* 80318B00 003147A0  7C C6 00 2E */	lwzx r6, r6, r0
 /* 80318B04 003147A4  7C C9 03 A6 */	mtctr r6
-/* 80318B08 003147A8  4E 80 04 20 */	bctr 
+/* 80318B08 003147A8  4E 80 04 20 */	bctr
 /* 80318B0C 003147AC  38 E0 00 1F */	li r7, 0x1f
 /* 80318B10 003147B0  48 00 00 28 */	b lbl_80318B38
 /* 80318B14 003147B4  7C A4 2B 78 */	mr r4, r5
@@ -62,7 +62,7 @@ lbl_80318B38:
 /* 80318B3C 003147DC  7C E3 3B 78 */	mr r3, r7
 /* 80318B40 003147E0  7C 08 03 A6 */	mtlr r0
 /* 80318B44 003147E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80318B48 003147E8  4E 80 00 20 */	blr 
+/* 80318B48 003147E8  4E 80 00 20 */	blr
 
 .global "setDates__7AptDateFP11AptSysClockP11AptSysClocki"
 "setDates__7AptDateFP11AptSysClockP11AptSysClocki":
@@ -149,7 +149,7 @@ lbl_80318C60:
 /* 80318C80 00314920  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80318C84 00314924  7C 08 03 A6 */	mtlr r0
 /* 80318C88 00314928  38 21 00 10 */	addi r1, r1, 0x10
-/* 80318C8C 0031492C  4E 80 00 20 */	blr 
+/* 80318C8C 0031492C  4E 80 00 20 */	blr
 
 .global "getDayOfWeek__7AptDateFiii"
 "getDayOfWeek__7AptDateFiii":
@@ -332,7 +332,7 @@ lbl_80318F14:
 /* 80318F1C 00314BBC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80318F20 00314BC0  7C 08 03 A6 */	mtlr r0
 /* 80318F24 00314BC4  38 21 00 50 */	addi r1, r1, 0x50
-/* 80318F28 00314BC8  4E 80 00 20 */	blr 
+/* 80318F28 00314BC8  4E 80 00 20 */	blr
 
 .global "toString__7AptDateFR9EAStringC"
 "toString__7AptDateFR9EAStringC":
@@ -704,7 +704,7 @@ lbl_8031947C:
 /* 803194DC 0031517C  80 01 01 84 */	lwz r0, 0x184(r1)
 /* 803194E0 00315180  7C 08 03 A6 */	mtlr r0
 /* 803194E4 00315184  38 21 01 80 */	addi r1, r1, 0x180
-/* 803194E8 00315188  4E 80 00 20 */	blr 
+/* 803194E8 00315188  4E 80 00 20 */	blr
 
 .global "sMethod_getDate__7AptDateFP8AptValuei"
 "sMethod_getDate__7AptDateFP8AptValuei":
@@ -717,7 +717,7 @@ lbl_8031947C:
 /* 80319504 003151A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319508 003151A8  7C 08 03 A6 */	mtlr r0
 /* 8031950C 003151AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319510 003151B0  4E 80 00 20 */	blr 
+/* 80319510 003151B0  4E 80 00 20 */	blr
 
 .global "sMethod_getDay__7AptDateFP8AptValuei"
 "sMethod_getDay__7AptDateFP8AptValuei":
@@ -751,7 +751,7 @@ lbl_8031947C:
 /* 80319580 00315220  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319584 00315224  7C 08 03 A6 */	mtlr r0
 /* 80319588 00315228  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031958C 0031522C  4E 80 00 20 */	blr 
+/* 8031958C 0031522C  4E 80 00 20 */	blr
 
 .global "sMethod_getFullYear__7AptDateFP8AptValuei"
 "sMethod_getFullYear__7AptDateFP8AptValuei":
@@ -764,7 +764,7 @@ lbl_8031947C:
 /* 803195A8 00315248  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803195AC 0031524C  7C 08 03 A6 */	mtlr r0
 /* 803195B0 00315250  38 21 00 10 */	addi r1, r1, 0x10
-/* 803195B4 00315254  4E 80 00 20 */	blr 
+/* 803195B4 00315254  4E 80 00 20 */	blr
 
 .global "sMethod_getHours__7AptDateFP8AptValuei"
 "sMethod_getHours__7AptDateFP8AptValuei":
@@ -777,7 +777,7 @@ lbl_8031947C:
 /* 803195D0 00315270  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803195D4 00315274  7C 08 03 A6 */	mtlr r0
 /* 803195D8 00315278  38 21 00 10 */	addi r1, r1, 0x10
-/* 803195DC 0031527C  4E 80 00 20 */	blr 
+/* 803195DC 0031527C  4E 80 00 20 */	blr
 
 .global "sMethod_getMilliseconds__7AptDateFP8AptValuei"
 "sMethod_getMilliseconds__7AptDateFP8AptValuei":
@@ -790,7 +790,7 @@ lbl_8031947C:
 /* 803195F8 00315298  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803195FC 0031529C  7C 08 03 A6 */	mtlr r0
 /* 80319600 003152A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319604 003152A4  4E 80 00 20 */	blr 
+/* 80319604 003152A4  4E 80 00 20 */	blr
 
 .global "sMethod_getMinutes__7AptDateFP8AptValuei"
 "sMethod_getMinutes__7AptDateFP8AptValuei":
@@ -803,7 +803,7 @@ lbl_8031947C:
 /* 80319620 003152C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319624 003152C4  7C 08 03 A6 */	mtlr r0
 /* 80319628 003152C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031962C 003152CC  4E 80 00 20 */	blr 
+/* 8031962C 003152CC  4E 80 00 20 */	blr
 
 .global "sMethod_getMonth__7AptDateFP8AptValuei"
 "sMethod_getMonth__7AptDateFP8AptValuei":
@@ -816,7 +816,7 @@ lbl_8031947C:
 /* 80319648 003152E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8031964C 003152EC  7C 08 03 A6 */	mtlr r0
 /* 80319650 003152F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319654 003152F4  4E 80 00 20 */	blr 
+/* 80319654 003152F4  4E 80 00 20 */	blr
 
 .global "sMethod_getSeconds__7AptDateFP8AptValuei"
 "sMethod_getSeconds__7AptDateFP8AptValuei":
@@ -829,7 +829,7 @@ lbl_8031947C:
 /* 80319670 00315310  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319674 00315314  7C 08 03 A6 */	mtlr r0
 /* 80319678 00315318  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031967C 0031531C  4E 80 00 20 */	blr 
+/* 8031967C 0031531C  4E 80 00 20 */	blr
 
 .global "sMethod_getTime__7AptDateFP8AptValuei"
 "sMethod_getTime__7AptDateFP8AptValuei":
@@ -849,7 +849,7 @@ lbl_8031947C:
 /* 803196A8 00315348  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803196AC 0031534C  7C 08 03 A6 */	mtlr r0
 /* 803196B0 00315350  38 21 00 10 */	addi r1, r1, 0x10
-/* 803196B4 00315354  4E 80 00 20 */	blr 
+/* 803196B4 00315354  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCDate__7AptDateFP8AptValuei"
 "sMethod_getUTCDate__7AptDateFP8AptValuei":
@@ -862,7 +862,7 @@ lbl_8031947C:
 /* 803196D0 00315370  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803196D4 00315374  7C 08 03 A6 */	mtlr r0
 /* 803196D8 00315378  38 21 00 10 */	addi r1, r1, 0x10
-/* 803196DC 0031537C  4E 80 00 20 */	blr 
+/* 803196DC 0031537C  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCDay__7AptDateFP8AptValuei"
 "sMethod_getUTCDay__7AptDateFP8AptValuei":
@@ -896,7 +896,7 @@ lbl_8031947C:
 /* 8031974C 003153EC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319750 003153F0  7C 08 03 A6 */	mtlr r0
 /* 80319754 003153F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319758 003153F8  4E 80 00 20 */	blr 
+/* 80319758 003153F8  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCFullYear__7AptDateFP8AptValuei"
 "sMethod_getUTCFullYear__7AptDateFP8AptValuei":
@@ -909,7 +909,7 @@ lbl_8031947C:
 /* 80319774 00315414  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319778 00315418  7C 08 03 A6 */	mtlr r0
 /* 8031977C 0031541C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319780 00315420  4E 80 00 20 */	blr 
+/* 80319780 00315420  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCHours__7AptDateFP8AptValuei"
 "sMethod_getUTCHours__7AptDateFP8AptValuei":
@@ -922,7 +922,7 @@ lbl_8031947C:
 /* 8031979C 0031543C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803197A0 00315440  7C 08 03 A6 */	mtlr r0
 /* 803197A4 00315444  38 21 00 10 */	addi r1, r1, 0x10
-/* 803197A8 00315448  4E 80 00 20 */	blr 
+/* 803197A8 00315448  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCMilliseconds__7AptDateFP8AptValuei"
 "sMethod_getUTCMilliseconds__7AptDateFP8AptValuei":
@@ -935,7 +935,7 @@ lbl_8031947C:
 /* 803197C4 00315464  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803197C8 00315468  7C 08 03 A6 */	mtlr r0
 /* 803197CC 0031546C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803197D0 00315470  4E 80 00 20 */	blr 
+/* 803197D0 00315470  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCMinutes__7AptDateFP8AptValuei"
 "sMethod_getUTCMinutes__7AptDateFP8AptValuei":
@@ -948,7 +948,7 @@ lbl_8031947C:
 /* 803197EC 0031548C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803197F0 00315490  7C 08 03 A6 */	mtlr r0
 /* 803197F4 00315494  38 21 00 10 */	addi r1, r1, 0x10
-/* 803197F8 00315498  4E 80 00 20 */	blr 
+/* 803197F8 00315498  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCMonth__7AptDateFP8AptValuei"
 "sMethod_getUTCMonth__7AptDateFP8AptValuei":
@@ -961,7 +961,7 @@ lbl_8031947C:
 /* 80319814 003154B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319818 003154B8  7C 08 03 A6 */	mtlr r0
 /* 8031981C 003154BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319820 003154C0  4E 80 00 20 */	blr 
+/* 80319820 003154C0  4E 80 00 20 */	blr
 
 .global "sMethod_getUTCSeconds__7AptDateFP8AptValuei"
 "sMethod_getUTCSeconds__7AptDateFP8AptValuei":
@@ -974,7 +974,7 @@ lbl_8031947C:
 /* 8031983C 003154DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80319840 003154E0  7C 08 03 A6 */	mtlr r0
 /* 80319844 003154E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319848 003154E8  4E 80 00 20 */	blr 
+/* 80319848 003154E8  4E 80 00 20 */	blr
 
 .global "sMethod_getYear__7AptDateFP8AptValuei"
 "sMethod_getYear__7AptDateFP8AptValuei":
@@ -988,7 +988,7 @@ lbl_8031947C:
 /* 80319868 00315508  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8031986C 0031550C  7C 08 03 A6 */	mtlr r0
 /* 80319870 00315510  38 21 00 10 */	addi r1, r1, 0x10
-/* 80319874 00315514  4E 80 00 20 */	blr 
+/* 80319874 00315514  4E 80 00 20 */	blr
 
 .global "sMethod_setDate__7AptDateFP8AptValuei"
 "sMethod_setDate__7AptDateFP8AptValuei":
@@ -1039,7 +1039,7 @@ lbl_80319910:
 /* 80319920 003155C0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319924 003155C4  7C 08 03 A6 */	mtlr r0
 /* 80319928 003155C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031992C 003155CC  4E 80 00 20 */	blr 
+/* 8031992C 003155CC  4E 80 00 20 */	blr
 
 .global "sMethod_setFullYear__7AptDateFP8AptValuei"
 "sMethod_setFullYear__7AptDateFP8AptValuei":
@@ -1114,7 +1114,7 @@ lbl_80319A20:
 /* 80319A30 003156D0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319A34 003156D4  7C 08 03 A6 */	mtlr r0
 /* 80319A38 003156D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319A3C 003156DC  4E 80 00 20 */	blr 
+/* 80319A3C 003156DC  4E 80 00 20 */	blr
 
 .global "sMethod_setHours__7AptDateFP8AptValuei"
 "sMethod_setHours__7AptDateFP8AptValuei":
@@ -1165,7 +1165,7 @@ lbl_80319AD8:
 /* 80319AE8 00315788  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319AEC 0031578C  7C 08 03 A6 */	mtlr r0
 /* 80319AF0 00315790  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319AF4 00315794  4E 80 00 20 */	blr 
+/* 80319AF4 00315794  4E 80 00 20 */	blr
 
 .global "sMethod_setMilliseconds__7AptDateFP8AptValuei"
 "sMethod_setMilliseconds__7AptDateFP8AptValuei":
@@ -1216,7 +1216,7 @@ lbl_80319B90:
 /* 80319BA0 00315840  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319BA4 00315844  7C 08 03 A6 */	mtlr r0
 /* 80319BA8 00315848  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319BAC 0031584C  4E 80 00 20 */	blr 
+/* 80319BAC 0031584C  4E 80 00 20 */	blr
 
 .global "sMethod_setMinutes__7AptDateFP8AptValuei"
 "sMethod_setMinutes__7AptDateFP8AptValuei":
@@ -1267,7 +1267,7 @@ lbl_80319C48:
 /* 80319C58 003158F8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319C5C 003158FC  7C 08 03 A6 */	mtlr r0
 /* 80319C60 00315900  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319C64 00315904  4E 80 00 20 */	blr 
+/* 80319C64 00315904  4E 80 00 20 */	blr
 
 .global "sMethod_setMonth__7AptDateFP8AptValuei"
 "sMethod_setMonth__7AptDateFP8AptValuei":
@@ -1318,7 +1318,7 @@ lbl_80319D00:
 /* 80319D10 003159B0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319D14 003159B4  7C 08 03 A6 */	mtlr r0
 /* 80319D18 003159B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319D1C 003159BC  4E 80 00 20 */	blr 
+/* 80319D1C 003159BC  4E 80 00 20 */	blr
 
 .global "sMethod_setSeconds__7AptDateFP8AptValuei"
 "sMethod_setSeconds__7AptDateFP8AptValuei":
@@ -1369,7 +1369,7 @@ lbl_80319DB8:
 /* 80319DC8 00315A68  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319DCC 00315A6C  7C 08 03 A6 */	mtlr r0
 /* 80319DD0 00315A70  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319DD4 00315A74  4E 80 00 20 */	blr 
+/* 80319DD4 00315A74  4E 80 00 20 */	blr
 
 .global "sMethod_setTime__7AptDateFP8AptValuei"
 "sMethod_setTime__7AptDateFP8AptValuei":
@@ -1426,7 +1426,7 @@ lbl_80319E7C:
 /* 80319E8C 00315B2C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319E90 00315B30  7C 08 03 A6 */	mtlr r0
 /* 80319E94 00315B34  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319E98 00315B38  4E 80 00 20 */	blr 
+/* 80319E98 00315B38  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCFullYear__7AptDateFP8AptValuei"
 "sMethod_setUTCFullYear__7AptDateFP8AptValuei":
@@ -1502,7 +1502,7 @@ lbl_80319F90:
 /* 80319FA0 00315C40  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80319FA4 00315C44  7C 08 03 A6 */	mtlr r0
 /* 80319FA8 00315C48  38 21 00 20 */	addi r1, r1, 0x20
-/* 80319FAC 00315C4C  4E 80 00 20 */	blr 
+/* 80319FAC 00315C4C  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCHours__7AptDateFP8AptValuei"
 "sMethod_setUTCHours__7AptDateFP8AptValuei":
@@ -1554,7 +1554,7 @@ lbl_8031A04C:
 /* 8031A05C 00315CFC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A060 00315D00  7C 08 03 A6 */	mtlr r0
 /* 8031A064 00315D04  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A068 00315D08  4E 80 00 20 */	blr 
+/* 8031A068 00315D08  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCMilliseconds__7AptDateFP8AptValuei"
 "sMethod_setUTCMilliseconds__7AptDateFP8AptValuei":
@@ -1606,7 +1606,7 @@ lbl_8031A108:
 /* 8031A118 00315DB8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A11C 00315DBC  7C 08 03 A6 */	mtlr r0
 /* 8031A120 00315DC0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A124 00315DC4  4E 80 00 20 */	blr 
+/* 8031A124 00315DC4  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCMinutes__7AptDateFP8AptValuei"
 "sMethod_setUTCMinutes__7AptDateFP8AptValuei":
@@ -1658,7 +1658,7 @@ lbl_8031A1C4:
 /* 8031A1D4 00315E74  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A1D8 00315E78  7C 08 03 A6 */	mtlr r0
 /* 8031A1DC 00315E7C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A1E0 00315E80  4E 80 00 20 */	blr 
+/* 8031A1E0 00315E80  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCMonth__7AptDateFP8AptValuei"
 "sMethod_setUTCMonth__7AptDateFP8AptValuei":
@@ -1710,7 +1710,7 @@ lbl_8031A280:
 /* 8031A290 00315F30  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A294 00315F34  7C 08 03 A6 */	mtlr r0
 /* 8031A298 00315F38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A29C 00315F3C  4E 80 00 20 */	blr 
+/* 8031A29C 00315F3C  4E 80 00 20 */	blr
 
 .global "sMethod_setUTCSeconds__7AptDateFP8AptValuei"
 "sMethod_setUTCSeconds__7AptDateFP8AptValuei":
@@ -1762,7 +1762,7 @@ lbl_8031A33C:
 /* 8031A34C 00315FEC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A350 00315FF0  7C 08 03 A6 */	mtlr r0
 /* 8031A354 00315FF4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A358 00315FF8  4E 80 00 20 */	blr 
+/* 8031A358 00315FF8  4E 80 00 20 */	blr
 
 .global "sMethod_setYear__7AptDateFP8AptValuei"
 "sMethod_setYear__7AptDateFP8AptValuei":
@@ -1813,7 +1813,7 @@ lbl_8031A3F4:
 /* 8031A404 003160A4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8031A408 003160A8  7C 08 03 A6 */	mtlr r0
 /* 8031A40C 003160AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A410 003160B0  4E 80 00 20 */	blr 
+/* 8031A410 003160B0  4E 80 00 20 */	blr
 
 .global "sMethod_toString__7AptDateFP8AptValuei"
 "sMethod_toString__7AptDateFP8AptValuei":
@@ -1845,12 +1845,12 @@ lbl_8031A3F4:
 /* 8031A478 00316118  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031A47C 0031611C  7C 08 03 A6 */	mtlr r0
 /* 8031A480 00316120  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031A484 00316124  4E 80 00 20 */	blr 
+/* 8031A484 00316124  4E 80 00 20 */	blr
 
 .global "sMethod_UTC__7AptDateFP8AptValuei"
 "sMethod_UTC__7AptDateFP8AptValuei":
 /* 8031A488 00316128  80 6D C0 D4 */	lwz r3, "gpUndefinedValue"-_SDA_BASE_(r13)
-/* 8031A48C 0031612C  4E 80 00 20 */	blr 
+/* 8031A48C 0031612C  4E 80 00 20 */	blr
 
 .global "objectMemberLookup__7AptDateCFP8AptValuePC9EAStringC"
 "objectMemberLookup__7AptDateCFP8AptValuePC9EAStringC":
@@ -1883,7 +1883,7 @@ lbl_8031A4D4:
 /* 8031A4F0 00316190  38 63 7D F8 */	addi r3, r3, lbl_80457DF8@l
 /* 8031A4F4 00316194  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8031A4F8 00316198  7C 69 03 A6 */	mtctr r3
-/* 8031A4FC 0031619C  4E 80 04 20 */	bctr 
+/* 8031A4FC 0031619C  4E 80 04 20 */	bctr
 /* 8031A500 003161A0  80 0D BF 38 */	lwz r0, "psMethod_getDate__7AptDate"-_SDA_BASE_(r13)
 /* 8031A504 003161A4  2C 00 00 00 */	cmpwi r0, 0
 /* 8031A508 003161A8  40 82 00 54 */	bne lbl_8031A55C
@@ -1907,7 +1907,7 @@ lbl_8031A528:
 /* 8031A54C 003161EC  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A550 003161F0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A554 003161F4  7D 89 03 A6 */	mtctr r12
-/* 8031A558 003161F8  4E 80 04 21 */	bctrl 
+/* 8031A558 003161F8  4E 80 04 21 */	bctrl
 lbl_8031A55C:
 /* 8031A55C 003161FC  80 6D BF 38 */	lwz r3, "psMethod_getDate__7AptDate"-_SDA_BASE_(r13)
 /* 8031A560 00316200  48 00 0E 18 */	b lbl_8031B378
@@ -1934,7 +1934,7 @@ lbl_8031A58C:
 /* 8031A5B0 00316250  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A5B4 00316254  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A5B8 00316258  7D 89 03 A6 */	mtctr r12
-/* 8031A5BC 0031625C  4E 80 04 21 */	bctrl 
+/* 8031A5BC 0031625C  4E 80 04 21 */	bctrl
 lbl_8031A5C0:
 /* 8031A5C0 00316260  80 6D BF 3C */	lwz r3, "psMethod_getDay__7AptDate"-_SDA_BASE_(r13)
 /* 8031A5C4 00316264  48 00 0D B4 */	b lbl_8031B378
@@ -1961,7 +1961,7 @@ lbl_8031A5F0:
 /* 8031A614 003162B4  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A618 003162B8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A61C 003162BC  7D 89 03 A6 */	mtctr r12
-/* 8031A620 003162C0  4E 80 04 21 */	bctrl 
+/* 8031A620 003162C0  4E 80 04 21 */	bctrl
 lbl_8031A624:
 /* 8031A624 003162C4  80 6D BF 40 */	lwz r3, "psMethod_getFullYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031A628 003162C8  48 00 0D 50 */	b lbl_8031B378
@@ -1988,7 +1988,7 @@ lbl_8031A654:
 /* 8031A678 00316318  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A67C 0031631C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A680 00316320  7D 89 03 A6 */	mtctr r12
-/* 8031A684 00316324  4E 80 04 21 */	bctrl 
+/* 8031A684 00316324  4E 80 04 21 */	bctrl
 lbl_8031A688:
 /* 8031A688 00316328  80 6D BF 44 */	lwz r3, "psMethod_getHours__7AptDate"-_SDA_BASE_(r13)
 /* 8031A68C 0031632C  48 00 0C EC */	b lbl_8031B378
@@ -2015,7 +2015,7 @@ lbl_8031A6B8:
 /* 8031A6DC 0031637C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A6E0 00316380  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A6E4 00316384  7D 89 03 A6 */	mtctr r12
-/* 8031A6E8 00316388  4E 80 04 21 */	bctrl 
+/* 8031A6E8 00316388  4E 80 04 21 */	bctrl
 lbl_8031A6EC:
 /* 8031A6EC 0031638C  80 6D BF 48 */	lwz r3, "psMethod_getMilliseconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031A6F0 00316390  48 00 0C 88 */	b lbl_8031B378
@@ -2042,7 +2042,7 @@ lbl_8031A71C:
 /* 8031A740 003163E0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A744 003163E4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A748 003163E8  7D 89 03 A6 */	mtctr r12
-/* 8031A74C 003163EC  4E 80 04 21 */	bctrl 
+/* 8031A74C 003163EC  4E 80 04 21 */	bctrl
 lbl_8031A750:
 /* 8031A750 003163F0  80 6D BF 4C */	lwz r3, "psMethod_getMinutes__7AptDate"-_SDA_BASE_(r13)
 /* 8031A754 003163F4  48 00 0C 24 */	b lbl_8031B378
@@ -2069,7 +2069,7 @@ lbl_8031A780:
 /* 8031A7A4 00316444  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A7A8 00316448  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A7AC 0031644C  7D 89 03 A6 */	mtctr r12
-/* 8031A7B0 00316450  4E 80 04 21 */	bctrl 
+/* 8031A7B0 00316450  4E 80 04 21 */	bctrl
 lbl_8031A7B4:
 /* 8031A7B4 00316454  80 6D BF 50 */	lwz r3, "psMethod_getMonth__7AptDate"-_SDA_BASE_(r13)
 /* 8031A7B8 00316458  48 00 0B C0 */	b lbl_8031B378
@@ -2096,7 +2096,7 @@ lbl_8031A7E4:
 /* 8031A808 003164A8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A80C 003164AC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A810 003164B0  7D 89 03 A6 */	mtctr r12
-/* 8031A814 003164B4  4E 80 04 21 */	bctrl 
+/* 8031A814 003164B4  4E 80 04 21 */	bctrl
 lbl_8031A818:
 /* 8031A818 003164B8  80 6D BF 54 */	lwz r3, "psMethod_getSeconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031A81C 003164BC  48 00 0B 5C */	b lbl_8031B378
@@ -2123,7 +2123,7 @@ lbl_8031A848:
 /* 8031A86C 0031650C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A870 00316510  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A874 00316514  7D 89 03 A6 */	mtctr r12
-/* 8031A878 00316518  4E 80 04 21 */	bctrl 
+/* 8031A878 00316518  4E 80 04 21 */	bctrl
 lbl_8031A87C:
 /* 8031A87C 0031651C  80 6D BF 58 */	lwz r3, "psMethod_getTime__7AptDate"-_SDA_BASE_(r13)
 /* 8031A880 00316520  48 00 0A F8 */	b lbl_8031B378
@@ -2150,7 +2150,7 @@ lbl_8031A8AC:
 /* 8031A8D0 00316570  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A8D4 00316574  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A8D8 00316578  7D 89 03 A6 */	mtctr r12
-/* 8031A8DC 0031657C  4E 80 04 21 */	bctrl 
+/* 8031A8DC 0031657C  4E 80 04 21 */	bctrl
 lbl_8031A8E0:
 /* 8031A8E0 00316580  80 6D BF 5C */	lwz r3, "psMethod_getTimezoneOffset__7AptDate"-_SDA_BASE_(r13)
 /* 8031A8E4 00316584  48 00 0A 94 */	b lbl_8031B378
@@ -2177,7 +2177,7 @@ lbl_8031A910:
 /* 8031A934 003165D4  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A938 003165D8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A93C 003165DC  7D 89 03 A6 */	mtctr r12
-/* 8031A940 003165E0  4E 80 04 21 */	bctrl 
+/* 8031A940 003165E0  4E 80 04 21 */	bctrl
 lbl_8031A944:
 /* 8031A944 003165E4  80 6D BF 60 */	lwz r3, "psMethod_getUTCDate__7AptDate"-_SDA_BASE_(r13)
 /* 8031A948 003165E8  48 00 0A 30 */	b lbl_8031B378
@@ -2204,7 +2204,7 @@ lbl_8031A974:
 /* 8031A998 00316638  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031A99C 0031663C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031A9A0 00316640  7D 89 03 A6 */	mtctr r12
-/* 8031A9A4 00316644  4E 80 04 21 */	bctrl 
+/* 8031A9A4 00316644  4E 80 04 21 */	bctrl
 lbl_8031A9A8:
 /* 8031A9A8 00316648  80 6D BF 64 */	lwz r3, "psMethod_getUTCDay__7AptDate"-_SDA_BASE_(r13)
 /* 8031A9AC 0031664C  48 00 09 CC */	b lbl_8031B378
@@ -2231,7 +2231,7 @@ lbl_8031A9D8:
 /* 8031A9FC 0031669C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AA00 003166A0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AA04 003166A4  7D 89 03 A6 */	mtctr r12
-/* 8031AA08 003166A8  4E 80 04 21 */	bctrl 
+/* 8031AA08 003166A8  4E 80 04 21 */	bctrl
 lbl_8031AA0C:
 /* 8031AA0C 003166AC  80 6D BF 68 */	lwz r3, "psMethod_getUTCFullYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031AA10 003166B0  48 00 09 68 */	b lbl_8031B378
@@ -2258,7 +2258,7 @@ lbl_8031AA3C:
 /* 8031AA60 00316700  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AA64 00316704  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AA68 00316708  7D 89 03 A6 */	mtctr r12
-/* 8031AA6C 0031670C  4E 80 04 21 */	bctrl 
+/* 8031AA6C 0031670C  4E 80 04 21 */	bctrl
 lbl_8031AA70:
 /* 8031AA70 00316710  80 6D BF 6C */	lwz r3, "psMethod_getUTCHours__7AptDate"-_SDA_BASE_(r13)
 /* 8031AA74 00316714  48 00 09 04 */	b lbl_8031B378
@@ -2285,7 +2285,7 @@ lbl_8031AAA0:
 /* 8031AAC4 00316764  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AAC8 00316768  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AACC 0031676C  7D 89 03 A6 */	mtctr r12
-/* 8031AAD0 00316770  4E 80 04 21 */	bctrl 
+/* 8031AAD0 00316770  4E 80 04 21 */	bctrl
 lbl_8031AAD4:
 /* 8031AAD4 00316774  80 6D BF 70 */	lwz r3, "psMethod_getUTCMilliseconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031AAD8 00316778  48 00 08 A0 */	b lbl_8031B378
@@ -2312,7 +2312,7 @@ lbl_8031AB04:
 /* 8031AB28 003167C8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AB2C 003167CC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AB30 003167D0  7D 89 03 A6 */	mtctr r12
-/* 8031AB34 003167D4  4E 80 04 21 */	bctrl 
+/* 8031AB34 003167D4  4E 80 04 21 */	bctrl
 lbl_8031AB38:
 /* 8031AB38 003167D8  80 6D BF 74 */	lwz r3, "psMethod_getUTCMinutes__7AptDate"-_SDA_BASE_(r13)
 /* 8031AB3C 003167DC  48 00 08 3C */	b lbl_8031B378
@@ -2339,7 +2339,7 @@ lbl_8031AB68:
 /* 8031AB8C 0031682C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AB90 00316830  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AB94 00316834  7D 89 03 A6 */	mtctr r12
-/* 8031AB98 00316838  4E 80 04 21 */	bctrl 
+/* 8031AB98 00316838  4E 80 04 21 */	bctrl
 lbl_8031AB9C:
 /* 8031AB9C 0031683C  80 6D BF 78 */	lwz r3, "psMethod_getUTCMonth__7AptDate"-_SDA_BASE_(r13)
 /* 8031ABA0 00316840  48 00 07 D8 */	b lbl_8031B378
@@ -2366,7 +2366,7 @@ lbl_8031ABCC:
 /* 8031ABF0 00316890  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031ABF4 00316894  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031ABF8 00316898  7D 89 03 A6 */	mtctr r12
-/* 8031ABFC 0031689C  4E 80 04 21 */	bctrl 
+/* 8031ABFC 0031689C  4E 80 04 21 */	bctrl
 lbl_8031AC00:
 /* 8031AC00 003168A0  80 6D BF 7C */	lwz r3, "psMethod_getUTCSeconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031AC04 003168A4  48 00 07 74 */	b lbl_8031B378
@@ -2393,7 +2393,7 @@ lbl_8031AC30:
 /* 8031AC54 003168F4  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AC58 003168F8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AC5C 003168FC  7D 89 03 A6 */	mtctr r12
-/* 8031AC60 00316900  4E 80 04 21 */	bctrl 
+/* 8031AC60 00316900  4E 80 04 21 */	bctrl
 lbl_8031AC64:
 /* 8031AC64 00316904  80 6D BF 80 */	lwz r3, "psMethod_getYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031AC68 00316908  48 00 07 10 */	b lbl_8031B378
@@ -2420,7 +2420,7 @@ lbl_8031AC94:
 /* 8031ACB8 00316958  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031ACBC 0031695C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031ACC0 00316960  7D 89 03 A6 */	mtctr r12
-/* 8031ACC4 00316964  4E 80 04 21 */	bctrl 
+/* 8031ACC4 00316964  4E 80 04 21 */	bctrl
 lbl_8031ACC8:
 /* 8031ACC8 00316968  80 6D BF 84 */	lwz r3, "psMethod_setDate__7AptDate"-_SDA_BASE_(r13)
 /* 8031ACCC 0031696C  48 00 06 AC */	b lbl_8031B378
@@ -2447,7 +2447,7 @@ lbl_8031ACF8:
 /* 8031AD1C 003169BC  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AD20 003169C0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AD24 003169C4  7D 89 03 A6 */	mtctr r12
-/* 8031AD28 003169C8  4E 80 04 21 */	bctrl 
+/* 8031AD28 003169C8  4E 80 04 21 */	bctrl
 lbl_8031AD2C:
 /* 8031AD2C 003169CC  80 6D BF 88 */	lwz r3, "psMethod_setFullYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031AD30 003169D0  48 00 06 48 */	b lbl_8031B378
@@ -2474,7 +2474,7 @@ lbl_8031AD5C:
 /* 8031AD80 00316A20  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AD84 00316A24  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AD88 00316A28  7D 89 03 A6 */	mtctr r12
-/* 8031AD8C 00316A2C  4E 80 04 21 */	bctrl 
+/* 8031AD8C 00316A2C  4E 80 04 21 */	bctrl
 lbl_8031AD90:
 /* 8031AD90 00316A30  80 6D BF 8C */	lwz r3, "psMethod_setHours__7AptDate"-_SDA_BASE_(r13)
 /* 8031AD94 00316A34  48 00 05 E4 */	b lbl_8031B378
@@ -2501,7 +2501,7 @@ lbl_8031ADC0:
 /* 8031ADE4 00316A84  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031ADE8 00316A88  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031ADEC 00316A8C  7D 89 03 A6 */	mtctr r12
-/* 8031ADF0 00316A90  4E 80 04 21 */	bctrl 
+/* 8031ADF0 00316A90  4E 80 04 21 */	bctrl
 lbl_8031ADF4:
 /* 8031ADF4 00316A94  80 6D BF 90 */	lwz r3, "psMethod_setMilliseconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031ADF8 00316A98  48 00 05 80 */	b lbl_8031B378
@@ -2528,7 +2528,7 @@ lbl_8031AE24:
 /* 8031AE48 00316AE8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AE4C 00316AEC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AE50 00316AF0  7D 89 03 A6 */	mtctr r12
-/* 8031AE54 00316AF4  4E 80 04 21 */	bctrl 
+/* 8031AE54 00316AF4  4E 80 04 21 */	bctrl
 lbl_8031AE58:
 /* 8031AE58 00316AF8  80 6D BF 94 */	lwz r3, "psMethod_setMinutes__7AptDate"-_SDA_BASE_(r13)
 /* 8031AE5C 00316AFC  48 00 05 1C */	b lbl_8031B378
@@ -2555,7 +2555,7 @@ lbl_8031AE88:
 /* 8031AEAC 00316B4C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AEB0 00316B50  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AEB4 00316B54  7D 89 03 A6 */	mtctr r12
-/* 8031AEB8 00316B58  4E 80 04 21 */	bctrl 
+/* 8031AEB8 00316B58  4E 80 04 21 */	bctrl
 lbl_8031AEBC:
 /* 8031AEBC 00316B5C  80 6D BF 98 */	lwz r3, "psMethod_setMonth__7AptDate"-_SDA_BASE_(r13)
 /* 8031AEC0 00316B60  48 00 04 B8 */	b lbl_8031B378
@@ -2582,7 +2582,7 @@ lbl_8031AEEC:
 /* 8031AF10 00316BB0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AF14 00316BB4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AF18 00316BB8  7D 89 03 A6 */	mtctr r12
-/* 8031AF1C 00316BBC  4E 80 04 21 */	bctrl 
+/* 8031AF1C 00316BBC  4E 80 04 21 */	bctrl
 lbl_8031AF20:
 /* 8031AF20 00316BC0  80 6D BF 9C */	lwz r3, "psMethod_setSeconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031AF24 00316BC4  48 00 04 54 */	b lbl_8031B378
@@ -2609,7 +2609,7 @@ lbl_8031AF50:
 /* 8031AF74 00316C14  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AF78 00316C18  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AF7C 00316C1C  7D 89 03 A6 */	mtctr r12
-/* 8031AF80 00316C20  4E 80 04 21 */	bctrl 
+/* 8031AF80 00316C20  4E 80 04 21 */	bctrl
 lbl_8031AF84:
 /* 8031AF84 00316C24  80 6D BF A0 */	lwz r3, "psMethod_setTime__7AptDate"-_SDA_BASE_(r13)
 /* 8031AF88 00316C28  48 00 03 F0 */	b lbl_8031B378
@@ -2636,7 +2636,7 @@ lbl_8031AFB4:
 /* 8031AFD8 00316C78  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031AFDC 00316C7C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031AFE0 00316C80  7D 89 03 A6 */	mtctr r12
-/* 8031AFE4 00316C84  4E 80 04 21 */	bctrl 
+/* 8031AFE4 00316C84  4E 80 04 21 */	bctrl
 lbl_8031AFE8:
 /* 8031AFE8 00316C88  80 6D BF A4 */	lwz r3, "psMethod_setUTCDate__7AptDate"-_SDA_BASE_(r13)
 /* 8031AFEC 00316C8C  48 00 03 8C */	b lbl_8031B378
@@ -2663,7 +2663,7 @@ lbl_8031B018:
 /* 8031B03C 00316CDC  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B040 00316CE0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B044 00316CE4  7D 89 03 A6 */	mtctr r12
-/* 8031B048 00316CE8  4E 80 04 21 */	bctrl 
+/* 8031B048 00316CE8  4E 80 04 21 */	bctrl
 lbl_8031B04C:
 /* 8031B04C 00316CEC  80 6D BF A8 */	lwz r3, "psMethod_setUTCFullYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031B050 00316CF0  48 00 03 28 */	b lbl_8031B378
@@ -2690,7 +2690,7 @@ lbl_8031B07C:
 /* 8031B0A0 00316D40  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B0A4 00316D44  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B0A8 00316D48  7D 89 03 A6 */	mtctr r12
-/* 8031B0AC 00316D4C  4E 80 04 21 */	bctrl 
+/* 8031B0AC 00316D4C  4E 80 04 21 */	bctrl
 lbl_8031B0B0:
 /* 8031B0B0 00316D50  80 6D BF AC */	lwz r3, "psMethod_setUTCHours__7AptDate"-_SDA_BASE_(r13)
 /* 8031B0B4 00316D54  48 00 02 C4 */	b lbl_8031B378
@@ -2717,7 +2717,7 @@ lbl_8031B0E0:
 /* 8031B104 00316DA4  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B108 00316DA8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B10C 00316DAC  7D 89 03 A6 */	mtctr r12
-/* 8031B110 00316DB0  4E 80 04 21 */	bctrl 
+/* 8031B110 00316DB0  4E 80 04 21 */	bctrl
 lbl_8031B114:
 /* 8031B114 00316DB4  80 6D BF B0 */	lwz r3, "psMethod_setUTCMilliseconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031B118 00316DB8  48 00 02 60 */	b lbl_8031B378
@@ -2744,7 +2744,7 @@ lbl_8031B144:
 /* 8031B168 00316E08  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B16C 00316E0C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B170 00316E10  7D 89 03 A6 */	mtctr r12
-/* 8031B174 00316E14  4E 80 04 21 */	bctrl 
+/* 8031B174 00316E14  4E 80 04 21 */	bctrl
 lbl_8031B178:
 /* 8031B178 00316E18  80 6D BF B4 */	lwz r3, "psMethod_setUTCMinutes__7AptDate"-_SDA_BASE_(r13)
 /* 8031B17C 00316E1C  48 00 01 FC */	b lbl_8031B378
@@ -2771,7 +2771,7 @@ lbl_8031B1A8:
 /* 8031B1CC 00316E6C  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B1D0 00316E70  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B1D4 00316E74  7D 89 03 A6 */	mtctr r12
-/* 8031B1D8 00316E78  4E 80 04 21 */	bctrl 
+/* 8031B1D8 00316E78  4E 80 04 21 */	bctrl
 lbl_8031B1DC:
 /* 8031B1DC 00316E7C  80 6D BF B8 */	lwz r3, "psMethod_setUTCMonth__7AptDate"-_SDA_BASE_(r13)
 /* 8031B1E0 00316E80  48 00 01 98 */	b lbl_8031B378
@@ -2798,7 +2798,7 @@ lbl_8031B20C:
 /* 8031B230 00316ED0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B234 00316ED4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B238 00316ED8  7D 89 03 A6 */	mtctr r12
-/* 8031B23C 00316EDC  4E 80 04 21 */	bctrl 
+/* 8031B23C 00316EDC  4E 80 04 21 */	bctrl
 lbl_8031B240:
 /* 8031B240 00316EE0  80 6D BF BC */	lwz r3, "psMethod_setUTCSeconds__7AptDate"-_SDA_BASE_(r13)
 /* 8031B244 00316EE4  48 00 01 34 */	b lbl_8031B378
@@ -2825,7 +2825,7 @@ lbl_8031B270:
 /* 8031B294 00316F34  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B298 00316F38  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B29C 00316F3C  7D 89 03 A6 */	mtctr r12
-/* 8031B2A0 00316F40  4E 80 04 21 */	bctrl 
+/* 8031B2A0 00316F40  4E 80 04 21 */	bctrl
 lbl_8031B2A4:
 /* 8031B2A4 00316F44  80 6D BF C0 */	lwz r3, "psMethod_setYear__7AptDate"-_SDA_BASE_(r13)
 /* 8031B2A8 00316F48  48 00 00 D0 */	b lbl_8031B378
@@ -2852,7 +2852,7 @@ lbl_8031B2D4:
 /* 8031B2F8 00316F98  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B2FC 00316F9C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B300 00316FA0  7D 89 03 A6 */	mtctr r12
-/* 8031B304 00316FA4  4E 80 04 21 */	bctrl 
+/* 8031B304 00316FA4  4E 80 04 21 */	bctrl
 lbl_8031B308:
 /* 8031B308 00316FA8  80 6D BF C4 */	lwz r3, "psMethod_toString__7AptDate"-_SDA_BASE_(r13)
 /* 8031B30C 00316FAC  48 00 00 6C */	b lbl_8031B378
@@ -2879,7 +2879,7 @@ lbl_8031B338:
 /* 8031B35C 00316FFC  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B360 00317000  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8031B364 00317004  7D 89 03 A6 */	mtctr r12
-/* 8031B368 00317008  4E 80 04 21 */	bctrl 
+/* 8031B368 00317008  4E 80 04 21 */	bctrl
 lbl_8031B36C:
 /* 8031B36C 0031700C  80 6D BF C8 */	lwz r3, "psMethod_UTC__7AptDate"-_SDA_BASE_(r13)
 /* 8031B370 00317010  48 00 00 08 */	b lbl_8031B378
@@ -2891,7 +2891,7 @@ lbl_8031B378:
 /* 8031B380 00317020  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8031B384 00317024  7C 08 03 A6 */	mtlr r0
 /* 8031B388 00317028  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031B38C 0031702C  4E 80 00 20 */	blr 
+/* 8031B38C 0031702C  4E 80 00 20 */	blr
 
 .global "CleanNativeFunctions__7AptDateFv"
 "CleanNativeFunctions__7AptDateFv":
@@ -2909,7 +2909,7 @@ lbl_8031B378:
 /* 8031B3BC 0031705C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B3C0 00317060  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B3C4 00317064  7D 89 03 A6 */	mtctr r12
-/* 8031B3C8 00317068  4E 80 04 21 */	bctrl 
+/* 8031B3C8 00317068  4E 80 04 21 */	bctrl
 /* 8031B3CC 0031706C  38 00 00 00 */	li r0, 0
 /* 8031B3D0 00317070  90 0D BF 38 */	stw r0, "psMethod_getDate__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B3D4:
@@ -2924,7 +2924,7 @@ lbl_8031B3D4:
 /* 8031B3F4 00317094  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B3F8 00317098  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B3FC 0031709C  7D 89 03 A6 */	mtctr r12
-/* 8031B400 003170A0  4E 80 04 21 */	bctrl 
+/* 8031B400 003170A0  4E 80 04 21 */	bctrl
 /* 8031B404 003170A4  38 00 00 00 */	li r0, 0
 /* 8031B408 003170A8  90 0D BF 3C */	stw r0, "psMethod_getDay__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B40C:
@@ -2939,7 +2939,7 @@ lbl_8031B40C:
 /* 8031B42C 003170CC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B430 003170D0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B434 003170D4  7D 89 03 A6 */	mtctr r12
-/* 8031B438 003170D8  4E 80 04 21 */	bctrl 
+/* 8031B438 003170D8  4E 80 04 21 */	bctrl
 /* 8031B43C 003170DC  38 00 00 00 */	li r0, 0
 /* 8031B440 003170E0  90 0D BF 40 */	stw r0, "psMethod_getFullYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B444:
@@ -2954,7 +2954,7 @@ lbl_8031B444:
 /* 8031B464 00317104  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B468 00317108  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B46C 0031710C  7D 89 03 A6 */	mtctr r12
-/* 8031B470 00317110  4E 80 04 21 */	bctrl 
+/* 8031B470 00317110  4E 80 04 21 */	bctrl
 /* 8031B474 00317114  38 00 00 00 */	li r0, 0
 /* 8031B478 00317118  90 0D BF 44 */	stw r0, "psMethod_getHours__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B47C:
@@ -2969,7 +2969,7 @@ lbl_8031B47C:
 /* 8031B49C 0031713C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B4A0 00317140  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B4A4 00317144  7D 89 03 A6 */	mtctr r12
-/* 8031B4A8 00317148  4E 80 04 21 */	bctrl 
+/* 8031B4A8 00317148  4E 80 04 21 */	bctrl
 /* 8031B4AC 0031714C  38 00 00 00 */	li r0, 0
 /* 8031B4B0 00317150  90 0D BF 48 */	stw r0, "psMethod_getMilliseconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B4B4:
@@ -2984,7 +2984,7 @@ lbl_8031B4B4:
 /* 8031B4D4 00317174  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B4D8 00317178  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B4DC 0031717C  7D 89 03 A6 */	mtctr r12
-/* 8031B4E0 00317180  4E 80 04 21 */	bctrl 
+/* 8031B4E0 00317180  4E 80 04 21 */	bctrl
 /* 8031B4E4 00317184  38 00 00 00 */	li r0, 0
 /* 8031B4E8 00317188  90 0D BF 4C */	stw r0, "psMethod_getMinutes__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B4EC:
@@ -2999,7 +2999,7 @@ lbl_8031B4EC:
 /* 8031B50C 003171AC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B510 003171B0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B514 003171B4  7D 89 03 A6 */	mtctr r12
-/* 8031B518 003171B8  4E 80 04 21 */	bctrl 
+/* 8031B518 003171B8  4E 80 04 21 */	bctrl
 /* 8031B51C 003171BC  38 00 00 00 */	li r0, 0
 /* 8031B520 003171C0  90 0D BF 50 */	stw r0, "psMethod_getMonth__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B524:
@@ -3014,7 +3014,7 @@ lbl_8031B524:
 /* 8031B544 003171E4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B548 003171E8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B54C 003171EC  7D 89 03 A6 */	mtctr r12
-/* 8031B550 003171F0  4E 80 04 21 */	bctrl 
+/* 8031B550 003171F0  4E 80 04 21 */	bctrl
 /* 8031B554 003171F4  38 00 00 00 */	li r0, 0
 /* 8031B558 003171F8  90 0D BF 54 */	stw r0, "psMethod_getSeconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B55C:
@@ -3029,7 +3029,7 @@ lbl_8031B55C:
 /* 8031B57C 0031721C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B580 00317220  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B584 00317224  7D 89 03 A6 */	mtctr r12
-/* 8031B588 00317228  4E 80 04 21 */	bctrl 
+/* 8031B588 00317228  4E 80 04 21 */	bctrl
 /* 8031B58C 0031722C  38 00 00 00 */	li r0, 0
 /* 8031B590 00317230  90 0D BF 58 */	stw r0, "psMethod_getTime__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B594:
@@ -3044,7 +3044,7 @@ lbl_8031B594:
 /* 8031B5B4 00317254  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B5B8 00317258  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B5BC 0031725C  7D 89 03 A6 */	mtctr r12
-/* 8031B5C0 00317260  4E 80 04 21 */	bctrl 
+/* 8031B5C0 00317260  4E 80 04 21 */	bctrl
 /* 8031B5C4 00317264  38 00 00 00 */	li r0, 0
 /* 8031B5C8 00317268  90 0D BF 5C */	stw r0, "psMethod_getTimezoneOffset__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B5CC:
@@ -3059,7 +3059,7 @@ lbl_8031B5CC:
 /* 8031B5EC 0031728C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B5F0 00317290  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B5F4 00317294  7D 89 03 A6 */	mtctr r12
-/* 8031B5F8 00317298  4E 80 04 21 */	bctrl 
+/* 8031B5F8 00317298  4E 80 04 21 */	bctrl
 /* 8031B5FC 0031729C  38 00 00 00 */	li r0, 0
 /* 8031B600 003172A0  90 0D BF 60 */	stw r0, "psMethod_getUTCDate__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B604:
@@ -3074,7 +3074,7 @@ lbl_8031B604:
 /* 8031B624 003172C4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B628 003172C8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B62C 003172CC  7D 89 03 A6 */	mtctr r12
-/* 8031B630 003172D0  4E 80 04 21 */	bctrl 
+/* 8031B630 003172D0  4E 80 04 21 */	bctrl
 /* 8031B634 003172D4  38 00 00 00 */	li r0, 0
 /* 8031B638 003172D8  90 0D BF 64 */	stw r0, "psMethod_getUTCDay__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B63C:
@@ -3089,7 +3089,7 @@ lbl_8031B63C:
 /* 8031B65C 003172FC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B660 00317300  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B664 00317304  7D 89 03 A6 */	mtctr r12
-/* 8031B668 00317308  4E 80 04 21 */	bctrl 
+/* 8031B668 00317308  4E 80 04 21 */	bctrl
 /* 8031B66C 0031730C  38 00 00 00 */	li r0, 0
 /* 8031B670 00317310  90 0D BF 68 */	stw r0, "psMethod_getUTCFullYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B674:
@@ -3104,7 +3104,7 @@ lbl_8031B674:
 /* 8031B694 00317334  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B698 00317338  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B69C 0031733C  7D 89 03 A6 */	mtctr r12
-/* 8031B6A0 00317340  4E 80 04 21 */	bctrl 
+/* 8031B6A0 00317340  4E 80 04 21 */	bctrl
 /* 8031B6A4 00317344  38 00 00 00 */	li r0, 0
 /* 8031B6A8 00317348  90 0D BF 6C */	stw r0, "psMethod_getUTCHours__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B6AC:
@@ -3119,7 +3119,7 @@ lbl_8031B6AC:
 /* 8031B6CC 0031736C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B6D0 00317370  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B6D4 00317374  7D 89 03 A6 */	mtctr r12
-/* 8031B6D8 00317378  4E 80 04 21 */	bctrl 
+/* 8031B6D8 00317378  4E 80 04 21 */	bctrl
 /* 8031B6DC 0031737C  38 00 00 00 */	li r0, 0
 /* 8031B6E0 00317380  90 0D BF 70 */	stw r0, "psMethod_getUTCMilliseconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B6E4:
@@ -3134,7 +3134,7 @@ lbl_8031B6E4:
 /* 8031B704 003173A4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B708 003173A8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B70C 003173AC  7D 89 03 A6 */	mtctr r12
-/* 8031B710 003173B0  4E 80 04 21 */	bctrl 
+/* 8031B710 003173B0  4E 80 04 21 */	bctrl
 /* 8031B714 003173B4  38 00 00 00 */	li r0, 0
 /* 8031B718 003173B8  90 0D BF 74 */	stw r0, "psMethod_getUTCMinutes__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B71C:
@@ -3149,7 +3149,7 @@ lbl_8031B71C:
 /* 8031B73C 003173DC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B740 003173E0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B744 003173E4  7D 89 03 A6 */	mtctr r12
-/* 8031B748 003173E8  4E 80 04 21 */	bctrl 
+/* 8031B748 003173E8  4E 80 04 21 */	bctrl
 /* 8031B74C 003173EC  38 00 00 00 */	li r0, 0
 /* 8031B750 003173F0  90 0D BF 78 */	stw r0, "psMethod_getUTCMonth__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B754:
@@ -3164,7 +3164,7 @@ lbl_8031B754:
 /* 8031B774 00317414  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B778 00317418  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B77C 0031741C  7D 89 03 A6 */	mtctr r12
-/* 8031B780 00317420  4E 80 04 21 */	bctrl 
+/* 8031B780 00317420  4E 80 04 21 */	bctrl
 /* 8031B784 00317424  38 00 00 00 */	li r0, 0
 /* 8031B788 00317428  90 0D BF 7C */	stw r0, "psMethod_getUTCSeconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B78C:
@@ -3179,7 +3179,7 @@ lbl_8031B78C:
 /* 8031B7AC 0031744C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B7B0 00317450  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B7B4 00317454  7D 89 03 A6 */	mtctr r12
-/* 8031B7B8 00317458  4E 80 04 21 */	bctrl 
+/* 8031B7B8 00317458  4E 80 04 21 */	bctrl
 /* 8031B7BC 0031745C  38 00 00 00 */	li r0, 0
 /* 8031B7C0 00317460  90 0D BF 80 */	stw r0, "psMethod_getYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B7C4:
@@ -3194,7 +3194,7 @@ lbl_8031B7C4:
 /* 8031B7E4 00317484  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B7E8 00317488  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B7EC 0031748C  7D 89 03 A6 */	mtctr r12
-/* 8031B7F0 00317490  4E 80 04 21 */	bctrl 
+/* 8031B7F0 00317490  4E 80 04 21 */	bctrl
 /* 8031B7F4 00317494  38 00 00 00 */	li r0, 0
 /* 8031B7F8 00317498  90 0D BF 84 */	stw r0, "psMethod_setDate__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B7FC:
@@ -3209,7 +3209,7 @@ lbl_8031B7FC:
 /* 8031B81C 003174BC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B820 003174C0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B824 003174C4  7D 89 03 A6 */	mtctr r12
-/* 8031B828 003174C8  4E 80 04 21 */	bctrl 
+/* 8031B828 003174C8  4E 80 04 21 */	bctrl
 /* 8031B82C 003174CC  38 00 00 00 */	li r0, 0
 /* 8031B830 003174D0  90 0D BF 88 */	stw r0, "psMethod_setFullYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B834:
@@ -3224,7 +3224,7 @@ lbl_8031B834:
 /* 8031B854 003174F4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B858 003174F8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B85C 003174FC  7D 89 03 A6 */	mtctr r12
-/* 8031B860 00317500  4E 80 04 21 */	bctrl 
+/* 8031B860 00317500  4E 80 04 21 */	bctrl
 /* 8031B864 00317504  38 00 00 00 */	li r0, 0
 /* 8031B868 00317508  90 0D BF 8C */	stw r0, "psMethod_setHours__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B86C:
@@ -3239,7 +3239,7 @@ lbl_8031B86C:
 /* 8031B88C 0031752C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B890 00317530  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B894 00317534  7D 89 03 A6 */	mtctr r12
-/* 8031B898 00317538  4E 80 04 21 */	bctrl 
+/* 8031B898 00317538  4E 80 04 21 */	bctrl
 /* 8031B89C 0031753C  38 00 00 00 */	li r0, 0
 /* 8031B8A0 00317540  90 0D BF 90 */	stw r0, "psMethod_setMilliseconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B8A4:
@@ -3254,7 +3254,7 @@ lbl_8031B8A4:
 /* 8031B8C4 00317564  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B8C8 00317568  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B8CC 0031756C  7D 89 03 A6 */	mtctr r12
-/* 8031B8D0 00317570  4E 80 04 21 */	bctrl 
+/* 8031B8D0 00317570  4E 80 04 21 */	bctrl
 /* 8031B8D4 00317574  38 00 00 00 */	li r0, 0
 /* 8031B8D8 00317578  90 0D BF 94 */	stw r0, "psMethod_setMinutes__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B8DC:
@@ -3269,7 +3269,7 @@ lbl_8031B8DC:
 /* 8031B8FC 0031759C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B900 003175A0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B904 003175A4  7D 89 03 A6 */	mtctr r12
-/* 8031B908 003175A8  4E 80 04 21 */	bctrl 
+/* 8031B908 003175A8  4E 80 04 21 */	bctrl
 /* 8031B90C 003175AC  38 00 00 00 */	li r0, 0
 /* 8031B910 003175B0  90 0D BF 98 */	stw r0, "psMethod_setMonth__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B914:
@@ -3284,7 +3284,7 @@ lbl_8031B914:
 /* 8031B934 003175D4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B938 003175D8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B93C 003175DC  7D 89 03 A6 */	mtctr r12
-/* 8031B940 003175E0  4E 80 04 21 */	bctrl 
+/* 8031B940 003175E0  4E 80 04 21 */	bctrl
 /* 8031B944 003175E4  38 00 00 00 */	li r0, 0
 /* 8031B948 003175E8  90 0D BF 9C */	stw r0, "psMethod_setSeconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B94C:
@@ -3299,7 +3299,7 @@ lbl_8031B94C:
 /* 8031B96C 0031760C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B970 00317610  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B974 00317614  7D 89 03 A6 */	mtctr r12
-/* 8031B978 00317618  4E 80 04 21 */	bctrl 
+/* 8031B978 00317618  4E 80 04 21 */	bctrl
 /* 8031B97C 0031761C  38 00 00 00 */	li r0, 0
 /* 8031B980 00317620  90 0D BF A0 */	stw r0, "psMethod_setTime__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B984:
@@ -3314,7 +3314,7 @@ lbl_8031B984:
 /* 8031B9A4 00317644  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B9A8 00317648  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B9AC 0031764C  7D 89 03 A6 */	mtctr r12
-/* 8031B9B0 00317650  4E 80 04 21 */	bctrl 
+/* 8031B9B0 00317650  4E 80 04 21 */	bctrl
 /* 8031B9B4 00317654  38 00 00 00 */	li r0, 0
 /* 8031B9B8 00317658  90 0D BF A4 */	stw r0, "psMethod_setUTCDate__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B9BC:
@@ -3329,7 +3329,7 @@ lbl_8031B9BC:
 /* 8031B9DC 0031767C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031B9E0 00317680  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031B9E4 00317684  7D 89 03 A6 */	mtctr r12
-/* 8031B9E8 00317688  4E 80 04 21 */	bctrl 
+/* 8031B9E8 00317688  4E 80 04 21 */	bctrl
 /* 8031B9EC 0031768C  38 00 00 00 */	li r0, 0
 /* 8031B9F0 00317690  90 0D BF A8 */	stw r0, "psMethod_setUTCFullYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031B9F4:
@@ -3344,7 +3344,7 @@ lbl_8031B9F4:
 /* 8031BA14 003176B4  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BA18 003176B8  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BA1C 003176BC  7D 89 03 A6 */	mtctr r12
-/* 8031BA20 003176C0  4E 80 04 21 */	bctrl 
+/* 8031BA20 003176C0  4E 80 04 21 */	bctrl
 /* 8031BA24 003176C4  38 00 00 00 */	li r0, 0
 /* 8031BA28 003176C8  90 0D BF AC */	stw r0, "psMethod_setUTCHours__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BA2C:
@@ -3359,7 +3359,7 @@ lbl_8031BA2C:
 /* 8031BA4C 003176EC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BA50 003176F0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BA54 003176F4  7D 89 03 A6 */	mtctr r12
-/* 8031BA58 003176F8  4E 80 04 21 */	bctrl 
+/* 8031BA58 003176F8  4E 80 04 21 */	bctrl
 /* 8031BA5C 003176FC  38 00 00 00 */	li r0, 0
 /* 8031BA60 00317700  90 0D BF B0 */	stw r0, "psMethod_setUTCMilliseconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BA64:
@@ -3374,7 +3374,7 @@ lbl_8031BA64:
 /* 8031BA84 00317724  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BA88 00317728  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BA8C 0031772C  7D 89 03 A6 */	mtctr r12
-/* 8031BA90 00317730  4E 80 04 21 */	bctrl 
+/* 8031BA90 00317730  4E 80 04 21 */	bctrl
 /* 8031BA94 00317734  38 00 00 00 */	li r0, 0
 /* 8031BA98 00317738  90 0D BF B4 */	stw r0, "psMethod_setUTCMinutes__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BA9C:
@@ -3389,7 +3389,7 @@ lbl_8031BA9C:
 /* 8031BABC 0031775C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BAC0 00317760  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BAC4 00317764  7D 89 03 A6 */	mtctr r12
-/* 8031BAC8 00317768  4E 80 04 21 */	bctrl 
+/* 8031BAC8 00317768  4E 80 04 21 */	bctrl
 /* 8031BACC 0031776C  38 00 00 00 */	li r0, 0
 /* 8031BAD0 00317770  90 0D BF B8 */	stw r0, "psMethod_setUTCMonth__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BAD4:
@@ -3404,7 +3404,7 @@ lbl_8031BAD4:
 /* 8031BAF4 00317794  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BAF8 00317798  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BAFC 0031779C  7D 89 03 A6 */	mtctr r12
-/* 8031BB00 003177A0  4E 80 04 21 */	bctrl 
+/* 8031BB00 003177A0  4E 80 04 21 */	bctrl
 /* 8031BB04 003177A4  38 00 00 00 */	li r0, 0
 /* 8031BB08 003177A8  90 0D BF BC */	stw r0, "psMethod_setUTCSeconds__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BB0C:
@@ -3419,7 +3419,7 @@ lbl_8031BB0C:
 /* 8031BB2C 003177CC  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BB30 003177D0  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BB34 003177D4  7D 89 03 A6 */	mtctr r12
-/* 8031BB38 003177D8  4E 80 04 21 */	bctrl 
+/* 8031BB38 003177D8  4E 80 04 21 */	bctrl
 /* 8031BB3C 003177DC  38 00 00 00 */	li r0, 0
 /* 8031BB40 003177E0  90 0D BF C0 */	stw r0, "psMethod_setYear__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BB44:
@@ -3434,7 +3434,7 @@ lbl_8031BB44:
 /* 8031BB64 00317804  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BB68 00317808  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BB6C 0031780C  7D 89 03 A6 */	mtctr r12
-/* 8031BB70 00317810  4E 80 04 21 */	bctrl 
+/* 8031BB70 00317810  4E 80 04 21 */	bctrl
 /* 8031BB74 00317814  38 00 00 00 */	li r0, 0
 /* 8031BB78 00317818  90 0D BF C4 */	stw r0, "psMethod_toString__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BB7C:
@@ -3449,14 +3449,14 @@ lbl_8031BB7C:
 /* 8031BB9C 0031783C  38 84 7E 90 */	addi r4, r4, "__PRETTY_FUNCTION__$8509"@l
 /* 8031BBA0 00317840  38 A5 7D EC */	addi r5, r5, lbl_80457DEC@l
 /* 8031BBA4 00317844  7D 89 03 A6 */	mtctr r12
-/* 8031BBA8 00317848  4E 80 04 21 */	bctrl 
+/* 8031BBA8 00317848  4E 80 04 21 */	bctrl
 /* 8031BBAC 0031784C  38 00 00 00 */	li r0, 0
 /* 8031BBB0 00317850  90 0D BF C8 */	stw r0, "psMethod_UTC__7AptDate"-_SDA_BASE_(r13)
 lbl_8031BBB4:
 /* 8031BBB4 00317854  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8031BBB8 00317858  7C 08 03 A6 */	mtlr r0
 /* 8031BBBC 0031785C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031BBC0 00317860  4E 80 00 20 */	blr 
+/* 8031BBC0 00317860  4E 80 00 20 */	blr
 
 .global "in_word_set__16DateMembersIndexFPCcUi"
 "in_word_set__16DateMembersIndexFPCcUi":
@@ -3546,7 +3546,7 @@ lbl_8031BCEC:
 /* 8031BCF8 00317998  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8031BCFC 0031799C  7C 08 03 A6 */	mtlr r0
 /* 8031BD00 003179A0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8031BD04 003179A4  4E 80 00 20 */	blr 
+/* 8031BD04 003179A4  4E 80 00 20 */	blr
 
 .global "hash__16DateMembersIndexFPCcUi"
 "hash__16DateMembersIndexFPCcUi":
@@ -3572,11 +3572,11 @@ lbl_8031BD24:
 /* 8031BD50 003179F0  7C 05 22 14 */	add r0, r5, r4
 /* 8031BD54 003179F4  7C 63 02 14 */	add r3, r3, r0
 /* 8031BD58 003179F8  38 21 01 10 */	addi r1, r1, 0x110
-/* 8031BD5C 003179FC  4E 80 00 20 */	blr 
+/* 8031BD5C 003179FC  4E 80 00 20 */	blr
 
 .global "c_date__8AptValueCFv"
 "c_date__8AptValueCFv":
-/* 8031BD60 00317A00  4E 80 00 20 */	blr 
+/* 8031BD60 00317A00  4E 80 00 20 */	blr
 
 .global "__dt__7AptDateFv"
 "__dt__7AptDateFv":
@@ -3603,72 +3603,362 @@ lbl_8031BDA4:
 /* 8031BDB0 00317A50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8031BDB4 00317A54  7C 08 03 A6 */	mtlr r0
 /* 8031BDB8 00317A58  38 21 00 10 */	addi r1, r1, 0x10
-/* 8031BDBC 00317A5C  4E 80 00 20 */	blr 
+/* 8031BDBC 00317A5C  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041BB60
 lbl_8041BB60:
-	.incbin "baserom.dol", 0x417C60, 0x110
+	# ROM: 0x417C60
+	.asciz ":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
+	.asciz ":::::::::::::::::"
+	.byte 0x3A, 0x3A
+	.4byte 0x3A3A3A3A
+	.4byte 0x3A3A3A3A
+	.4byte 0x3A3A3A3A
+	.4byte 0x3A1E3A0F
+	.4byte 0x1E3A3A3A
+	.4byte 0x3A3A3A3A
+	.4byte 0x3A3A0500
+	.4byte 0x193A3A3A
+	.4byte 0x3A003A3A
+	.asciz "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
+	.byte 0x00, 0x00, 0x03
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000005
+
 .global lbl_8041BC70
 lbl_8041BC70:
-	.incbin "baserom.dol", 0x417D70, 0x20
+	# ROM: 0x417D70
+	.4byte 0x53756E00
+	.4byte 0x4D6F6E00
+	.4byte 0x54756500
+	.4byte 0x57656400
+	.4byte 0x54687500
+	.4byte 0x46726900
+	.4byte 0x53617400
+	.4byte 0x00000000
+
 .global lbl_8041BC90
 lbl_8041BC90:
-	.incbin "baserom.dol", 0x417D90, 0x30
+	# ROM: 0x417D90
+	.4byte 0x4A616E00
+	.4byte 0x46656200
+	.4byte 0x4D617200
+	.4byte 0x41707200
+	.4byte 0x4D617900
+	.4byte 0x4A756E00
+	.4byte 0x4A6C7900
+	.4byte 0x41756700
+	.4byte 0x53657000
+	.4byte 0x4F637400
+	.4byte 0x4E6F7600
+	.4byte 0x44656300
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
-	.incbin "baserom.dol", 0x453B70, 0x198
+	# ROM: 0x453B70
+	.asciz "setHours"
+	.byte 0x00, 0x00, 0x00
+	.asciz "setMinutes"
+	.byte 0x00
+	.asciz "setSeconds"
+	.byte 0x00
+	.asciz "setUTCHours"
+	.asciz "setUTCMinutes"
+	.byte 0x00, 0x00
+	.asciz "setUTCSeconds"
+	.byte 0x00, 0x00
+	.asciz "setMilliseconds"
+	.asciz "setFullYear"
+	.asciz "setUTCMilliseconds"
+	.byte 0x00
+	.asciz "setUTCFullYear"
+	.byte 0x00
+	.asciz "getHours"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getUTCDay"
+	.byte 0x00, 0x00
+	.asciz "getMinutes"
+	.byte 0x00
+	.asciz "getSeconds"
+	.byte 0x00
+	.asciz "getUTCHours"
+	.asciz "getUTCMinutes"
+	.byte 0x00, 0x00
+	.asciz "getUTCSeconds"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "getMilliseconds"
+	.asciz "getFullYear"
+	.asciz "getUTCMilliseconds"
+	.byte 0x00
+	.asciz "getUTCFullYear"
+	.byte 0x00
+	.asciz "setMonth"
+	.byte 0x00, 0x00, 0x00
+	.asciz "setUTCDate"
+	.byte 0x00
+	.asciz "setUTCMonth"
+	.asciz "toString"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getMonth"
+	.byte 0x00, 0x00, 0x00
+	.asciz "getUTCDate"
+	.byte 0x00
+	.asciz "getUTCMonth"
+	.asciz "getTimezoneOffset"
+	.byte 0x00, 0x00
+
 .global "wordlist$7468"
 "wordlist$7468":
-	.incbin "baserom.dol", 0x453D08, 0x128
+	# ROM: 0x453D08
+	.4byte 0x805D6AC8 ;# ptr
+	.4byte 0x00000025
+	.4byte 0x80457A70 ;# ptr
+	.4byte 0x00000016
+	.4byte 0x80457A7C ;# ptr
+	.4byte 0x00000018
+	.4byte 0x80457A88 ;# ptr
+	.4byte 0x0000001A
+	.4byte 0x80457A94 ;# ptr
+	.4byte 0x0000001E
+	.4byte 0x805D6AD0 ;# ptr
+	.4byte 0x00000023
+	.4byte 0x80457AA0 ;# ptr
+	.4byte 0x00000020
+	.4byte 0x80457AB0 ;# ptr
+	.4byte 0x00000022
+	.4byte 0x80457AC0 ;# ptr
+	.4byte 0x00000017
+	.4byte 0x80457AD0 ;# ptr
+	.4byte 0x00000015
+	.4byte 0x80457ADC ;# ptr
+	.4byte 0x0000001F
+	.4byte 0x80457AF0 ;# ptr
+	.4byte 0x0000001D
+	.4byte 0x805D6AD8 ;# ptr
+	.4byte 0x00000002
+	.4byte 0x80457B00 ;# ptr
+	.4byte 0x00000004
+	.4byte 0x80457B0C ;# ptr
+	.4byte 0x0000000C
+	.4byte 0x80457B18 ;# ptr
+	.4byte 0x00000006
+	.4byte 0x80457B24 ;# ptr
+	.4byte 0x00000008
+	.4byte 0x80457B30 ;# ptr
+	.4byte 0x0000000E
+	.4byte 0x805D6AE0 ;# ptr
+	.4byte 0x00000013
+	.4byte 0x80457B3C ;# ptr
+	.4byte 0x00000010
+	.4byte 0x80457B4C ;# ptr
+	.4byte 0x00000012
+	.4byte 0x80457B60 ;# ptr
+	.4byte 0x00000005
+	.4byte 0x80457B70 ;# ptr
+	.4byte 0x00000003
+	.4byte 0x80457B7C ;# ptr
+	.4byte 0x0000000F
+	.4byte 0x80457B90 ;# ptr
+	.4byte 0x0000000D
+	.4byte 0x805D6AE8 ;# ptr
+	.4byte 0x00000014
+	.4byte 0x805D6AF0 ;# ptr
+	.4byte 0x0000001B
+	.4byte 0x80457BA0 ;# ptr
+	.4byte 0x00000019
+	.4byte 0x80457BAC ;# ptr
+	.4byte 0x0000001C
+	.4byte 0x80457BB8 ;# ptr
+	.4byte 0x00000021
+	.4byte 0x80457BC4 ;# ptr
+	.4byte 0x00000024
+	.4byte 0x805D6AF8 ;# ptr
+	.4byte 0x00000001
+	.4byte 0x805D6B00 ;# ptr
+	.4byte 0x00000009
+	.4byte 0x80457BD0 ;# ptr
+	.4byte 0x00000007
+	.4byte 0x80457BDC ;# ptr
+	.4byte 0x0000000B
+	.4byte 0x80457BE8 ;# ptr
+	.4byte 0x00000011
+	.4byte 0x80457BF4 ;# ptr
+	.4byte 0x0000000A
+
 .global "lookup$7506"
 "lookup$7506":
-	.incbin "baserom.dol", 0x453E30, 0x3C
+	# ROM: 0x453E30
+	.4byte 0xFFFFFF00
+	.4byte 0xFFFFDDFE
+	.4byte 0x01FFD404
+	.4byte 0x05ACFF08
+	.4byte 0x09FF0A0B
+	.4byte 0xFF0CFF0D
+	.4byte 0x0EAE1112
+	.4byte 0xB7FF1516
+	.4byte 0xFF1718EE
+	.4byte 0xFEB01BFF
+	.4byte 0x1C1DF4FE
+	.4byte 0xEAFEE1FE
+	.4byte 0x1EFFFAFE
+	.4byte 0xA821FF22
+	.4byte 0x23240000
+
 .global lbl_80457D6C
 lbl_80457D6C:
-	.incbin "baserom.dol", 0x453E6C, 0x30
+	# ROM: 0x453E6C
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B14 ;# ptr
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B34 ;# ptr
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B34 ;# ptr
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B34 ;# ptr
+	.4byte 0x80318B0C ;# ptr
+	.4byte 0x80318B34 ;# ptr
+	.4byte 0x80318B0C ;# ptr
+
 .global "__PRETTY_FUNCTION__$8205"
 "__PRETTY_FUNCTION__$8205":
-	.incbin "baserom.dol", 0x453E9C, 0x50
+	# ROM: 0x453E9C
+	.asciz "AptDate::objectMemberLookup(AptValue *const , const EAStringC *const ) const"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80457DEC
 lbl_80457DEC:
-	.incbin "baserom.dol", 0x453EEC, 0xC
+	# ROM: 0x453EEC
+	.asciz "AptDate.cpp"
+
 .global lbl_80457DF8
 lbl_80457DF8:
-	.incbin "baserom.dol", 0x453EF8, 0x98
+	# ROM: 0x453EF8
+	.4byte 0x8031B374 ;# ptr
+	.4byte 0x8031A500 ;# ptr
+	.4byte 0x8031A564 ;# ptr
+	.4byte 0x8031A5C8 ;# ptr
+	.4byte 0x8031A62C ;# ptr
+	.4byte 0x8031A690 ;# ptr
+	.4byte 0x8031A6F4 ;# ptr
+	.4byte 0x8031A758 ;# ptr
+	.4byte 0x8031A7BC ;# ptr
+	.4byte 0x8031A820 ;# ptr
+	.4byte 0x8031A884 ;# ptr
+	.4byte 0x8031A8E8 ;# ptr
+	.4byte 0x8031A94C ;# ptr
+	.4byte 0x8031A9B0 ;# ptr
+	.4byte 0x8031AA14 ;# ptr
+	.4byte 0x8031AA78 ;# ptr
+	.4byte 0x8031AADC ;# ptr
+	.4byte 0x8031AB40 ;# ptr
+	.4byte 0x8031ABA4 ;# ptr
+	.4byte 0x8031AC08 ;# ptr
+	.4byte 0x8031AC6C ;# ptr
+	.4byte 0x8031ACD0 ;# ptr
+	.4byte 0x8031AD34 ;# ptr
+	.4byte 0x8031AD98 ;# ptr
+	.4byte 0x8031ADFC ;# ptr
+	.4byte 0x8031AE60 ;# ptr
+	.4byte 0x8031AEC4 ;# ptr
+	.4byte 0x8031AF28 ;# ptr
+	.4byte 0x8031AF8C ;# ptr
+	.4byte 0x8031AFF0 ;# ptr
+	.4byte 0x8031B054 ;# ptr
+	.4byte 0x8031B0B8 ;# ptr
+	.4byte 0x8031B11C ;# ptr
+	.4byte 0x8031B180 ;# ptr
+	.4byte 0x8031B1E4 ;# ptr
+	.4byte 0x8031B248 ;# ptr
+	.4byte 0x8031B2AC ;# ptr
+	.4byte 0x8031B310 ;# ptr
+
 .global "__PRETTY_FUNCTION__$8509"
 "__PRETTY_FUNCTION__$8509":
-	.incbin "baserom.dol", 0x453F90, 0x20
+	# ROM: 0x453F90
+	.asciz "AptDate::CleanNativeFunctions()"
+
 .global "__vt__7AptDate"
 "__vt__7AptDate":
-	.incbin "baserom.dol", 0x453FB0, 0x48
+	# ROM: 0x453FB0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AddRef__8AptValueFPCcPCci" ;# ptr (0x8032D19C)
+	.4byte "Release__8AptValueFPCcPCci" ;# ptr (0x8032D218)
+	.4byte "ForceDelete__8AptValueFv" ;# ptr (0x802FE6F4)
+	.4byte "GetNativeHashVirtual__16AptValueWithHashFv" ;# ptr (0x8032D360)
+	.4byte "ContainsNativeHashVirtual__16AptValueWithHashCFv" ;# ptr (0x8032D368)
+	.4byte "getHasClass__9AptObjectCFv" ;# ptr (0x8030AB94)
+	.4byte "setHasClass__9AptObjectFi" ;# ptr (0x8030A9E4)
+	.4byte "objectMemberLookup__7AptDateCFP8AptValuePC9EAStringC" ;# ptr (0x8031A490)
+	.4byte "objectMemberSet__8AptValueFP8AptValuePC9EAStringCP8AptValue" ;# ptr (0x802FE784)
+	.4byte "DeleteThis__8AptValueFv" ;# ptr (0x802FE78C)
+	.4byte "PreDestroy__8AptValueFv" ;# ptr (0x802FE7AC)
+	.4byte "DestroyGCPointers__9AptObjectFv" ;# ptr (0x8032E71C)
+	.4byte "IsGarbageCollected__10AptValueGCCFv" ;# ptr (0x802FE6EC)
+	.4byte "RegisterReferences__9AptObjectCFv" ;# ptr (0x8032E718)
+	.4byte "__dt__7AptDateFv" ;# ptr (0x8031BD64)
+	.4byte 0x00000000
+
 
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
-	.incbin "baserom.dol", 0x486648, 0x40
+	# ROM: 0x486648
+	.4byte 0x55544300
+	.4byte 0x00000000
+	.asciz "setYear"
+	.asciz "getDay"
+	.byte 0x00
+	.asciz "getYear"
+	.asciz "setDate"
+	.asciz "setTime"
+	.asciz "getDate"
+	.asciz "getTime"
+
 .global lbl_805D6B08
 lbl_805D6B08:
-	.incbin "baserom.dol", 0x486688, 0x4
+	# ROM: 0x486688
+	.4byte 0x20000000
+
 .global lbl_805D6B0C
 lbl_805D6B0C:
-	.incbin "baserom.dol", 0x48668C, 0x4
+	# ROM: 0x48668C
+	.4byte 0x25640000
+
 .global lbl_805D6B10
 lbl_805D6B10:
-	.incbin "baserom.dol", 0x486690, 0x8
+	# ROM: 0x486690
+	.asciz "%02d"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6B18
 lbl_805D6B18:
-	.incbin "baserom.dol", 0x486698, 0x4
+	# ROM: 0x486698
+	.4byte 0x3A000000
+
 .global lbl_805D6B1C
 lbl_805D6B1C:
-	.incbin "baserom.dol", 0x48669C, 0x8
+	# ROM: 0x48669C
+	.asciz " GMT"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_805D6B24
 lbl_805D6B24:
-	.incbin "baserom.dol", 0x4866A4, 0x4
+	# ROM: 0x4866A4
+	.4byte 0x2D000000
+
 .global lbl_805D6B28
 lbl_805D6B28:
-	.incbin "baserom.dol", 0x4866A8, 0x4
+	# ROM: 0x4866A8
+	.4byte 0x2B000000
+
 .global lbl_805D6B2C
 lbl_805D6B2C:
-	.incbin "baserom.dol", 0x4866AC, 0x4
+	# ROM: 0x4866AC
+	.4byte 0x30302000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "psMethod_getDate__7AptDate"
@@ -3786,7 +4076,13 @@ lbl_805D6B2C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB638
 lbl_805DB638:
-	.incbin "baserom.dol", 0x489958, 0x8
+	# ROM: 0x489958
+	.4byte 0x3E800000
+	.4byte 0x00000000
+
 .global lbl_805DB640
 lbl_805DB640:
-	.incbin "baserom.dol", 0x489960, 0x8
+	# ROM: 0x489960
+	.4byte 0x43300000
+	.4byte 0x80000000
+

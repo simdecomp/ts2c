@@ -160,32 +160,79 @@ lbl_8040DFAC:
 /* 8040DFB4 00409C54  E3 C1 00 38 */	psq_l f30, 56(r1), 0, qr0
 /* 8040DFB8 00409C58  CB C1 00 30 */	lfd f30, 0x30(r1)
 /* 8040DFBC 00409C5C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8040DFC0 00409C60  4E 80 00 20 */	blr 
+/* 8040DFC0 00409C60  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "T"
 "T":
-	.incbin "baserom.dol", 0x41BD90, 0x68
+	# ROM: 0x41BD90
+	.4byte 0x3FD55555
+	.4byte 0x55555563
+	.4byte 0x3FC11111
+	.4byte 0x1110FE7A
+	.4byte 0x3FABA1BA
+	.4byte 0x1BB341FE
+	.4byte 0x3F9664F4
+	.4byte 0x8406D637
+	.4byte 0x3F8226E3
+	.4byte 0xE96E8493
+	.4byte 0x3F6D6D22
+	.4byte 0xC9560328
+	.4byte 0x3F57DBC8
+	.4byte 0xFEE08315
+	.4byte 0x3F4344D8
+	.4byte 0xF2F26501
+	.4byte 0x3F3026F7
+	.4byte 0x1A8D1068
+	.4byte 0x3F147E88
+	.4byte 0xA03792A6
+	.4byte 0x3F12B80F
+	.4byte 0x32F0A7E9
+	.4byte 0xBEF375CB
+	.4byte 0xDB605373
+	.4byte 0x3EFB2A70
+	.4byte 0x74BF7AD4
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DC328
 lbl_805DC328:
-	.incbin "baserom.dol", 0x48A648, 0x8
+	# ROM: 0x48A648
+	.4byte 0x3FF00000
+	.4byte 0x00000000
+
 .global lbl_805DC330
 lbl_805DC330:
-	.incbin "baserom.dol", 0x48A650, 0x8
+	# ROM: 0x48A650
+	.4byte 0xBFF00000
+	.4byte 0x00000000
+
 .global lbl_805DC338
 lbl_805DC338:
-	.incbin "baserom.dol", 0x48A658, 0x8
+	# ROM: 0x48A658
+	.4byte 0x3FE921FB
+	.4byte 0x54442D18
+
 .global lbl_805DC340
 lbl_805DC340:
-	.incbin "baserom.dol", 0x48A660, 0x8
+	# ROM: 0x48A660
+	.4byte 0x3C81A626
+	.4byte 0x33145C07
+
 .global lbl_805DC348
 lbl_805DC348:
-	.incbin "baserom.dol", 0x48A668, 0x8
+	# ROM: 0x48A668
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DC350
 lbl_805DC350:
-	.incbin "baserom.dol", 0x48A670, 0x8
+	# ROM: 0x48A670
+	.4byte 0x40000000
+	.4byte 0x00000000
+
 .global lbl_805DC358
 lbl_805DC358:
-	.incbin "baserom.dol", 0x48A678, 0x8
+	# ROM: 0x48A678
+	.4byte 0x43300000
+	.4byte 0x80000000
+

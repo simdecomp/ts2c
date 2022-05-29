@@ -3,7 +3,7 @@
 .section .text, "ax"  # 0x80006940 - 0x80418B80
 .global "usr_put_initialize"
 "usr_put_initialize":
-/* 80410934 0040C5D4  4E 80 00 20 */	blr 
+/* 80410934 0040C5D4  4E 80 00 20 */	blr
 
 .global "usr_puts_serial"
 "usr_puts_serial":
@@ -43,4 +43,4 @@ lbl_804109A4:
 /* 804109B0 0040C650  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 804109B4 0040C654  7C 08 03 A6 */	mtlr r0
 /* 804109B8 0040C658  38 21 00 20 */	addi r1, r1, 0x20
-/* 804109BC 0040C65C  4E 80 00 20 */	blr 
+/* 804109BC 0040C65C  4E 80 00 20 */	blr

@@ -4,12 +4,12 @@
 .global "SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk"
 "SetInstance__Q210homebutton9RemoteSpkFPQ210homebutton9RemoteSpk":
 /* 80385224 00380EC4  90 6D C5 18 */	stw r3, "spInstance__Q210homebutton9RemoteSpk"-_SDA_BASE_(r13)
-/* 80385228 00380EC8  4E 80 00 20 */	blr 
+/* 80385228 00380EC8  4E 80 00 20 */	blr
 
 .global "GetInstance__Q210homebutton9RemoteSpkFv"
 "GetInstance__Q210homebutton9RemoteSpkFv":
 /* 8038522C 00380ECC  80 6D C5 18 */	lwz r3, "spInstance__Q210homebutton9RemoteSpk"-_SDA_BASE_(r13)
-/* 80385230 00380ED0  4E 80 00 20 */	blr 
+/* 80385230 00380ED0  4E 80 00 20 */	blr
 
 .global "GetPCMFromSeID__Q210homebutton9RemoteSpkFiRPsRi"
 "GetPCMFromSeID__Q210homebutton9RemoteSpkFiRPsRi":
@@ -36,7 +36,7 @@
 /* 80385284 00380F24  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80385288 00380F28  7C 08 03 A6 */	mtlr r0
 /* 8038528C 00380F2C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385290 00380F30  4E 80 00 20 */	blr 
+/* 80385290 00380F30  4E 80 00 20 */	blr
 
 .global "MakeVolumeData__10homebuttonFPCsPsiUl"
 "MakeVolumeData__10homebuttonFPCsPsiUl":
@@ -103,7 +103,7 @@ lbl_80385370:
 /* 80385370 00381010  28 06 00 28 */	cmplwi r6, 0x28
 /* 80385374 00381014  40 81 00 0C */	ble lbl_80385380
 /* 80385378 00381018  38 60 00 00 */	li r3, 0
-/* 8038537C 0038101C  4E 80 00 20 */	blr 
+/* 8038537C 0038101C  4E 80 00 20 */	blr
 lbl_80385380:
 /* 80385380 00381020  20 A6 00 28 */	subfic r5, r6, 0x28
 /* 80385384 00381024  38 60 00 00 */	li r3, 0
@@ -133,7 +133,7 @@ lbl_803853D0:
 /* 803853D8 00381078  42 00 FF F8 */	bdnz lbl_803853D0
 lbl_803853DC:
 /* 803853DC 0038107C  38 60 00 01 */	li r3, 1
-/* 803853E0 00381080  4E 80 00 20 */	blr 
+/* 803853E0 00381080  4E 80 00 20 */	blr
 
 .global "UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"
 "UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext":
@@ -218,7 +218,7 @@ lbl_80385500:
 /* 80385508 003811A8  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8038550C 003811AC  7C 08 03 A6 */	mtlr r0
 /* 80385510 003811B0  38 21 00 90 */	addi r1, r1, 0x90
-/* 80385514 003811B4  4E 80 00 20 */	blr 
+/* 80385514 003811B4  4E 80 00 20 */	blr
 
 .global "ClearPcm__Q210homebutton9RemoteSpkFv"
 "ClearPcm__Q210homebutton9RemoteSpkFv":
@@ -233,7 +233,7 @@ lbl_80385500:
 /* 80385538 003811D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8038553C 003811DC  7C 08 03 A6 */	mtlr r0
 /* 80385540 003811E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385544 003811E4  4E 80 00 20 */	blr 
+/* 80385544 003811E4  4E 80 00 20 */	blr
 
 .global "__ct__Q210homebutton9RemoteSpkFPv"
 "__ct__Q210homebutton9RemoteSpkFPv":
@@ -286,7 +286,7 @@ lbl_803855C0:
 /* 803855F4 00381294  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803855F8 00381298  7C 08 03 A6 */	mtlr r0
 /* 803855FC 0038129C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385600 003812A0  4E 80 00 20 */	blr 
+/* 80385600 003812A0  4E 80 00 20 */	blr
 
 .global "__dt__Q210homebutton9RemoteSpkFv"
 "__dt__Q210homebutton9RemoteSpkFv":
@@ -332,7 +332,7 @@ lbl_80385684:
 /* 80385698 00381338  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038569C 0038133C  7C 08 03 A6 */	mtlr r0
 /* 803856A0 00381340  38 21 00 20 */	addi r1, r1, 0x20
-/* 803856A4 00381344  4E 80 00 20 */	blr 
+/* 803856A4 00381344  4E 80 00 20 */	blr
 
 .global "Start__Q210homebutton9RemoteSpkFv"
 "Start__Q210homebutton9RemoteSpkFv":
@@ -373,7 +373,7 @@ lbl_80385728:
 /* 8038572C 003813CC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80385730 003813D0  7C 08 03 A6 */	mtlr r0
 /* 80385734 003813D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385738 003813D8  4E 80 00 20 */	blr 
+/* 80385738 003813D8  4E 80 00 20 */	blr
 
 .global "Stop__Q210homebutton9RemoteSpkFv"
 "Stop__Q210homebutton9RemoteSpkFv":
@@ -393,7 +393,7 @@ lbl_80385728:
 /* 80385764 00381404  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385768 00381408  7C 08 03 A6 */	mtlr r0
 /* 8038576C 0038140C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385770 00381410  4E 80 00 20 */	blr 
+/* 80385770 00381410  4E 80 00 20 */	blr
 
 .global "SpeakerOnCallback__Q210homebutton9RemoteSpkFll"
 "SpeakerOnCallback__Q210homebutton9RemoteSpkFll":
@@ -453,7 +453,7 @@ lbl_80385834:
 /* 8038583C 003814DC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80385840 003814E0  7C 08 03 A6 */	mtlr r0
 /* 80385844 003814E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385848 003814E8  4E 80 00 20 */	blr 
+/* 80385848 003814E8  4E 80 00 20 */	blr
 
 .global "DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext"
 "DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext":
@@ -468,7 +468,7 @@ lbl_80385834:
 /* 8038586C 0038150C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80385870 00381510  7C 08 03 A6 */	mtlr r0
 /* 80385874 00381514  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385878 00381518  4E 80 00 20 */	blr 
+/* 80385878 00381518  4E 80 00 20 */	blr
 
 .global "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll"
 "SpeakerPlayCallback__Q210homebutton9RemoteSpkFll":
@@ -529,7 +529,7 @@ lbl_8038593C:
 /* 80385944 003815E4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80385948 003815E8  7C 08 03 A6 */	mtlr r0
 /* 8038594C 003815EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80385950 003815F0  4E 80 00 20 */	blr 
+/* 80385950 003815F0  4E 80 00 20 */	blr
 
 .global "Connect__Q210homebutton9RemoteSpkFl"
 "Connect__Q210homebutton9RemoteSpkFl":
@@ -565,7 +565,7 @@ lbl_803859BC:
 /* 803859C4 00381664  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803859C8 00381668  7C 08 03 A6 */	mtlr r0
 /* 803859CC 0038166C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803859D0 00381670  4E 80 00 20 */	blr 
+/* 803859D0 00381670  4E 80 00 20 */	blr
 
 .global "Play__Q210homebutton9RemoteSpkFliSc"
 "Play__Q210homebutton9RemoteSpkFliSc":
@@ -605,7 +605,7 @@ lbl_80385A44:
 /* 80385A54 003816F4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80385A58 003816F8  7C 08 03 A6 */	mtlr r0
 /* 80385A5C 003816FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385A60 00381700  4E 80 00 20 */	blr 
+/* 80385A60 00381700  4E 80 00 20 */	blr
 
 .global "isPlaying__Q210homebutton9RemoteSpkCFl"
 "isPlaying__Q210homebutton9RemoteSpkCFl":
@@ -615,7 +615,7 @@ lbl_80385A44:
 /* 80385A70 00381710  7C 03 00 D0 */	neg r0, r3
 /* 80385A74 00381714  7C 00 1B 78 */	or r0, r0, r3
 /* 80385A78 00381718  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80385A7C 0038171C  4E 80 00 20 */	blr 
+/* 80385A7C 0038171C  4E 80 00 20 */	blr
 
 .global "isPlayingId__Q210homebutton9RemoteSpkCFli"
 "isPlayingId__Q210homebutton9RemoteSpkCFli":
@@ -647,7 +647,7 @@ lbl_80385AD0:
 /* 80385ADC 0038177C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80385AE0 00381780  7C 08 03 A6 */	mtlr r0
 /* 80385AE4 00381784  38 21 00 20 */	addi r1, r1, 0x20
-/* 80385AE8 00381788  4E 80 00 20 */	blr 
+/* 80385AE8 00381788  4E 80 00 20 */	blr
 
 .global "isPlayReady__Q210homebutton9RemoteSpkCFl"
 "isPlayReady__Q210homebutton9RemoteSpkCFl":
@@ -657,12 +657,17 @@ lbl_80385AD0:
 /* 80385AF8 00381798  7C 03 00 D0 */	neg r0, r3
 /* 80385AFC 0038179C  7C 00 1B 78 */	or r0, r0, r3
 /* 80385B00 003817A0  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80385B04 003817A4  4E 80 00 20 */	blr 
+/* 80385B04 003817A4  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q210homebutton9RemoteSpk"
 "__vt__Q210homebutton9RemoteSpk":
-	.incbin "baserom.dol", 0x465528, 0x10
+	# ROM: 0x465528
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q210homebutton9RemoteSpkFv" ;# ptr (0x80385604)
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "spInstance__Q210homebutton9RemoteSpk"

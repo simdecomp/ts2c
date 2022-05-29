@@ -223,20 +223,20 @@ lbl_803BD798:
 /* 803BD7A4 003B9444  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BD7A8 003B9448  7C 08 03 A6 */	mtlr r0
 /* 803BD7AC 003B944C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BD7B0 003B9450  4E 80 00 20 */	blr 
+/* 803BD7B0 003B9450  4E 80 00 20 */	blr
 
 .global "StepStrm<Uc>__Q36nw4hbm2ut14CharStrmReaderFi_v"
 "StepStrm<Uc>__Q36nw4hbm2ut14CharStrmReaderFi_v":
 /* 803BD7B4 003B9454  80 03 00 00 */	lwz r0, 0(r3)
 /* 803BD7B8 003B9458  7C 00 22 14 */	add r0, r0, r4
 /* 803BD7BC 003B945C  90 03 00 00 */	stw r0, 0(r3)
-/* 803BD7C0 003B9460  4E 80 00 20 */	blr 
+/* 803BD7C0 003B9460  4E 80 00 20 */	blr
 
 .global "GetChar<Uc>__Q36nw4hbm2ut14CharStrmReaderCFi_Uc"
 "GetChar<Uc>__Q36nw4hbm2ut14CharStrmReaderCFi_Uc":
 /* 803BD7C4 003B9464  80 63 00 00 */	lwz r3, 0(r3)
 /* 803BD7C8 003B9468  7C 63 20 AE */	lbzx r3, r3, r4
-/* 803BD7CC 003B946C  4E 80 00 20 */	blr 
+/* 803BD7CC 003B946C  4E 80 00 20 */	blr
 
 .global "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv"
 "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv":
@@ -398,7 +398,7 @@ lbl_803BD9D8:
 /* 803BDA00 003B96A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BDA04 003B96A4  7C 08 03 A6 */	mtlr r0
 /* 803BDA08 003B96A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BDA0C 003B96AC  4E 80 00 20 */	blr 
+/* 803BDA0C 003B96AC  4E 80 00 20 */	blr
 
 .global "StepStrm<Us>__Q36nw4hbm2ut14CharStrmReaderFi_v"
 "StepStrm<Us>__Q36nw4hbm2ut14CharStrmReaderFi_v":
@@ -406,14 +406,14 @@ lbl_803BD9D8:
 /* 803BDA14 003B96B4  54 80 08 3C */	slwi r0, r4, 1
 /* 803BDA18 003B96B8  7C 05 02 14 */	add r0, r5, r0
 /* 803BDA1C 003B96BC  90 03 00 00 */	stw r0, 0(r3)
-/* 803BDA20 003B96C0  4E 80 00 20 */	blr 
+/* 803BDA20 003B96C0  4E 80 00 20 */	blr
 
 .global "GetChar<Us>__Q36nw4hbm2ut14CharStrmReaderCFi_Us"
 "GetChar<Us>__Q36nw4hbm2ut14CharStrmReaderCFi_Us":
 /* 803BDA24 003B96C4  80 63 00 00 */	lwz r3, 0(r3)
 /* 803BDA28 003B96C8  54 80 08 3C */	slwi r0, r4, 1
 /* 803BDA2C 003B96CC  7C 63 02 2E */	lhzx r3, r3, r0
-/* 803BDA30 003B96D0  4E 80 00 20 */	blr 
+/* 803BDA30 003B96D0  4E 80 00 20 */	blr
 
 .global "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv"
 "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv":
@@ -566,7 +566,7 @@ lbl_803BDC1C:
 /* 803BDC44 003B98E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BDC48 003B98E8  7C 08 03 A6 */	mtlr r0
 /* 803BDC4C 003B98EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BDC50 003B98F0  4E 80 00 20 */	blr 
+/* 803BDC50 003B98F0  4E 80 00 20 */	blr
 
 .global "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv"
 "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv":
@@ -742,7 +742,7 @@ lbl_803BDEAC:
 /* 803BDEB8 003B9B58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803BDEBC 003B9B5C  7C 08 03 A6 */	mtlr r0
 /* 803BDEC0 003B9B60  38 21 00 10 */	addi r1, r1, 0x10
-/* 803BDEC4 003B9B64  4E 80 00 20 */	blr 
+/* 803BDEC4 003B9B64  4E 80 00 20 */	blr
 
 .global "IsSJISLeadByte__Q36nw4hbm2ut31@unnamed@ut_CharStrmReader_cpp@FUc"
 "IsSJISLeadByte__Q36nw4hbm2ut31@unnamed@ut_CharStrmReader_cpp@FUc":
@@ -758,9 +758,33 @@ lbl_803BDEE4:
 /* 803BDEE4 003B9B84  38 00 00 01 */	li r0, 1
 lbl_803BDEE8:
 /* 803BDEE8 003B9B88  7C 03 03 78 */	mr r3, r0
-/* 803BDEEC 003B9B8C  4E 80 00 20 */	blr 
+/* 803BDEEC 003B9B8C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80473288
 lbl_80473288:
-	.incbin "baserom.dol", 0x46F388, 0x178
+	# ROM: 0x46F388
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+	.asciz "ut_CharStrmReader.cpp"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nmCharStrm(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion (GetChar<u8>() & 0xC0) != 0x80"
+	.byte 0x00
+	.asciz "NW4HBM:Failed assertion (GetChar<u8>() & 0xF0) == 0xE0"
+	.byte 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nmCharStrm must be aligned to 2 bytes boundary."
+

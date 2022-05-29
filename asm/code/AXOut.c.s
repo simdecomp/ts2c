@@ -61,7 +61,7 @@ lbl_80337C60:
 /* 80337CA0 00333940  90 7D 00 18 */	stw r3, 0x18(r29)
 /* 80337CA4 00333944  41 82 00 0C */	beq lbl_80337CB0
 /* 80337CA8 00333948  7D 89 03 A6 */	mtctr r12
-/* 80337CAC 0033394C  4E 80 04 21 */	bctrl 
+/* 80337CAC 0033394C  4E 80 04 21 */	bctrl
 lbl_80337CB0:
 /* 80337CB0 00333950  48 0A C3 69 */	bl "OSGetTime"
 /* 80337CB4 00333954  80 ED C2 68 */	lwz r7, "__AXRmtDspPtr"-_SDA_BASE_(r13)
@@ -165,7 +165,7 @@ lbl_80337E14:
 /* 80337E24 00333AC4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80337E28 00333AC8  7C 08 03 A6 */	mtlr r0
 /* 80337E2C 00333ACC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80337E30 00333AD0  4E 80 00 20 */	blr 
+/* 80337E30 00333AD0  4E 80 00 20 */	blr
 
 .global "__AXOutAiCallback"
 "__AXOutAiCallback":
@@ -212,13 +212,13 @@ lbl_80337EC8:
 /* 80337EC8 00333B68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80337ECC 00333B6C  7C 08 03 A6 */	mtlr r0
 /* 80337ED0 00333B70  38 21 00 10 */	addi r1, r1, 0x10
-/* 80337ED4 00333B74  4E 80 00 20 */	blr 
+/* 80337ED4 00333B74  4E 80 00 20 */	blr
 
 .global "__AXDSPInitCallback"
 "__AXDSPInitCallback":
 /* 80337ED8 00333B78  38 00 00 01 */	li r0, 1
 /* 80337EDC 00333B7C  90 0D C2 88 */	stw r0, "__AXDSPInitFlag"-_SDA_BASE_(r13)
-/* 80337EE0 00333B80  4E 80 00 20 */	blr 
+/* 80337EE0 00333B80  4E 80 00 20 */	blr
 
 .global "__AXDSPResumeCallback"
 "__AXDSPResumeCallback":
@@ -235,7 +235,7 @@ lbl_80337EC8:
 /* 80337F0C 00333BAC  2C 0C 00 00 */	cmpwi r12, 0
 /* 80337F10 00333BB0  41 82 00 18 */	beq lbl_80337F28
 /* 80337F14 00333BB4  7D 89 03 A6 */	mtctr r12
-/* 80337F18 00333BB8  4E 80 04 21 */	bctrl 
+/* 80337F18 00333BB8  4E 80 04 21 */	bctrl
 /* 80337F1C 00333BBC  48 00 00 0C */	b lbl_80337F28
 lbl_80337F20:
 /* 80337F20 00333BC0  38 00 00 01 */	li r0, 1
@@ -244,7 +244,7 @@ lbl_80337F28:
 /* 80337F28 00333BC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80337F2C 00333BCC  7C 08 03 A6 */	mtlr r0
 /* 80337F30 00333BD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80337F34 00333BD4  4E 80 00 20 */	blr 
+/* 80337F34 00333BD4  4E 80 00 20 */	blr
 
 .global "__AXDSPDoneCallback"
 "__AXDSPDoneCallback":
@@ -255,7 +255,7 @@ lbl_80337F28:
 
 .global "__AXDSPRequestCallback"
 "__AXDSPRequestCallback":
-/* 80337F48 00333BE8  4E 80 00 20 */	blr 
+/* 80337F48 00333BE8  4E 80 00 20 */	blr
 
 .global "__AXOutInitDSP"
 "__AXOutInitDSP":
@@ -320,7 +320,7 @@ lbl_80338014:
 /* 8033802C 00333CCC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80338030 00333CD0  7C 08 03 A6 */	mtlr r0
 /* 80338034 00333CD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80338038 00333CD8  4E 80 00 20 */	blr 
+/* 80338038 00333CD8  4E 80 00 20 */	blr
 
 .global "__AXOutInit"
 "__AXOutInit":
@@ -456,7 +456,7 @@ lbl_80338214:
 /* 80338224 00333EC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80338228 00333EC8  7C 08 03 A6 */	mtlr r0
 /* 8033822C 00333ECC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80338230 00333ED0  4E 80 00 20 */	blr 
+/* 80338230 00333ED0  4E 80 00 20 */	blr
 
 .global "__AXOutQuit"
 "__AXOutQuit":
@@ -483,7 +483,7 @@ lbl_80338214:
 /* 80338284 00333F24  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80338288 00333F28  7C 08 03 A6 */	mtlr r0
 /* 8033828C 00333F2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80338290 00333F30  4E 80 00 20 */	blr 
+/* 80338290 00333F30  4E 80 00 20 */	blr
 
 .global "AXRegisterCallback"
 "AXRegisterCallback":
@@ -503,7 +503,7 @@ lbl_80338214:
 /* 803382C8 00333F68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803382CC 00333F6C  7C 08 03 A6 */	mtlr r0
 /* 803382D0 00333F70  38 21 00 10 */	addi r1, r1, 0x10
-/* 803382D4 00333F74  4E 80 00 20 */	blr 
+/* 803382D4 00333F74  4E 80 00 20 */	blr
 
 .global "AXRmtGetSamplesLeft"
 "AXRmtGetSamplesLeft":
@@ -515,10 +515,10 @@ lbl_80338214:
 lbl_803382EC:
 /* 803382EC 00333F8C  80 0D C2 64 */	lwz r0, "__AXRmtCpuPtr"-_SDA_BASE_(r13)
 /* 803382F0 00333F90  7C 60 18 51 */	subf. r3, r0, r3
-/* 803382F4 00333F94  4C 80 00 20 */	bgelr 
+/* 803382F4 00333F94  4C 80 00 20 */	bgelr
 /* 803382F8 00333F98  80 0D C2 6C */	lwz r0, "__AXRmtBuffLen"-_SDA_BASE_(r13)
 /* 803382FC 00333F9C  7C 63 02 14 */	add r3, r3, r0
-/* 80338300 00333FA0  4E 80 00 20 */	blr 
+/* 80338300 00333FA0  4E 80 00 20 */	blr
 
 .global "AXRmtGetSamples"
 "AXRmtGetSamples":
@@ -577,7 +577,7 @@ lbl_80338394:
 /* 803383B8 00334058  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803383BC 0033405C  7C 08 03 A6 */	mtlr r0
 /* 803383C0 00334060  38 21 00 10 */	addi r1, r1, 0x10
-/* 803383C4 00334064  4E 80 00 20 */	blr 
+/* 803383C4 00334064  4E 80 00 20 */	blr
 
 .global "AXRmtAdvancePtr"
 "AXRmtAdvancePtr":
@@ -602,10 +602,10 @@ lbl_803383FC:
 /* 80338404 003340A4  7C 00 1A 14 */	add r0, r0, r3
 /* 80338408 003340A8  7C 00 20 00 */	cmpw r0, r4
 /* 8033840C 003340AC  90 0D C2 64 */	stw r0, "__AXRmtCpuPtr"-_SDA_BASE_(r13)
-/* 80338410 003340B0  4D 80 00 20 */	bltlr 
+/* 80338410 003340B0  4D 80 00 20 */	bltlr
 /* 80338414 003340B4  7C 04 00 50 */	subf r0, r4, r0
 /* 80338418 003340B8  90 0D C2 64 */	stw r0, "__AXRmtCpuPtr"-_SDA_BASE_(r13)
-/* 8033841C 003340BC  4E 80 00 20 */	blr 
+/* 8033841C 003340BC  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__AXLocalProfile"

@@ -40,7 +40,7 @@
 /* 803D7B88 003D3828  D0 83 00 0C */	stfs f4, 0xc(r3)
 /* 803D7B8C 003D382C  D0 43 00 1C */	stfs f2, 0x1c(r3)
 /* 803D7B90 003D3830  D0 23 00 28 */	stfs f1, 0x28(r3)
-/* 803D7B94 003D3834  4E 80 00 20 */	blr 
+/* 803D7B94 003D3834  4E 80 00 20 */	blr
 
 .global "PSMTX44Concat"
 "PSMTX44Concat":
@@ -108,18 +108,26 @@
 /* 803D7C8C 003D392C  F1 65 00 28 */	psq_st f11, 40(r5), 0, qr0
 /* 803D7C90 003D3930  11 A5 68 5E */	ps_madds1 f13, f5, f1, f13
 /* 803D7C94 003D3934  F1 A5 00 38 */	psq_st f13, 56(r5), 0, qr0
-/* 803D7C98 003D3938  4E 80 00 20 */	blr 
+/* 803D7C98 003D3938  4E 80 00 20 */	blr
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBD30
 lbl_805DBD30:
-	.incbin "baserom.dol", 0x48A050, 0x4
+	# ROM: 0x48A050
+	.4byte 0x3F800000
+
 .global lbl_805DBD34
 lbl_805DBD34:
-	.incbin "baserom.dol", 0x48A054, 0x4
+	# ROM: 0x48A054
+	.4byte 0x40000000
+
 .global lbl_805DBD38
 lbl_805DBD38:
-	.incbin "baserom.dol", 0x48A058, 0x4
+	# ROM: 0x48A058
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBD3C
 lbl_805DBD3C:
-	.incbin "baserom.dol", 0x48A05C, 0x4
+	# ROM: 0x48A05C
+	.4byte 0xBF800000
+

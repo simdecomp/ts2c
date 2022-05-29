@@ -25,7 +25,7 @@ lbl_803C8A78:
 /* 803C8A84 003C4724  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C8A88 003C4728  7C 08 03 A6 */	mtlr r0
 /* 803C8A8C 003C472C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C8A90 003C4730  4E 80 00 20 */	blr 
+/* 803C8A90 003C4730  4E 80 00 20 */	blr
 
 .global "GetLineHeight__Q36nw4hbm2ut17TextWriterBase<c>CFv"
 "GetLineHeight__Q36nw4hbm2ut17TextWriterBase<c>CFv":
@@ -108,7 +108,7 @@ lbl_803C8B98:
 /* 803C8BA8 003C4848  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C8BAC 003C484C  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 803C8BB0 003C4850  7D 89 03 A6 */	mtctr r12
-/* 803C8BB4 003C4854  4E 80 04 21 */	bctrl 
+/* 803C8BB4 003C4854  4E 80 04 21 */	bctrl
 /* 803C8BB8 003C4858  7C 7E 1B 78 */	mr r30, r3
 /* 803C8BBC 003C485C  48 00 00 08 */	b lbl_803C8BC4
 lbl_803C8BC0:
@@ -131,7 +131,7 @@ lbl_803C8BC4:
 /* 803C8BFC 003C489C  EC 20 08 2A */	fadds f1, f0, f1
 /* 803C8C00 003C48A0  7C 08 03 A6 */	mtlr r0
 /* 803C8C04 003C48A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C8C08 003C48A8  4E 80 00 20 */	blr 
+/* 803C8C08 003C48A8  4E 80 00 20 */	blr
 
 .global "GetCharSpace__Q36nw4hbm2ut17TextWriterBase<c>CFv"
 "GetCharSpace__Q36nw4hbm2ut17TextWriterBase<c>CFv":
@@ -211,7 +211,7 @@ lbl_803C8D0C:
 /* 803C8D14 003C49B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C8D18 003C49B8  7C 08 03 A6 */	mtlr r0
 /* 803C8D1C 003C49BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C8D20 003C49C0  4E 80 00 20 */	blr 
+/* 803C8D20 003C49C0  4E 80 00 20 */	blr
 
 .global "GetTabWidth__Q36nw4hbm2ut17TextWriterBase<c>CFv"
 "GetTabWidth__Q36nw4hbm2ut17TextWriterBase<c>CFv":
@@ -291,7 +291,7 @@ lbl_803C8E24:
 /* 803C8E2C 003C4ACC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803C8E30 003C4AD0  7C 08 03 A6 */	mtlr r0
 /* 803C8E34 003C4AD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803C8E38 003C4AD8  4E 80 00 20 */	blr 
+/* 803C8E38 003C4AD8  4E 80 00 20 */	blr
 
 .global "AdjustCursor__Q36nw4hbm2ut17TextWriterBase<c>FPfPfPCci"
 "AdjustCursor__Q36nw4hbm2ut17TextWriterBase<c>FPfPfPCci":
@@ -453,7 +453,7 @@ lbl_803C9064:
 /* 803C9080 003C4D20  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803C9084 003C4D24  7C 08 03 A6 */	mtlr r0
 /* 803C9088 003C4D28  38 21 00 50 */	addi r1, r1, 0x50
-/* 803C908C 003C4D2C  4E 80 00 20 */	blr 
+/* 803C908C 003C4D2C  4E 80 00 20 */	blr
 
 .global "IsDrawFlagSet__Q36nw4hbm2ut17TextWriterBase<c>CFUlUl"
 "IsDrawFlagSet__Q36nw4hbm2ut17TextWriterBase<c>CFUlUl":
@@ -462,7 +462,7 @@ lbl_803C9064:
 /* 803C9098 003C4D38  7C 05 00 50 */	subf r0, r5, r0
 /* 803C909C 003C4D3C  7C 00 00 34 */	cntlzw r0, r0
 /* 803C90A0 003C4D40  54 03 D9 7E */	srwi r3, r0, 5
-/* 803C90A4 003C4D44  4E 80 00 20 */	blr 
+/* 803C90A4 003C4D44  4E 80 00 20 */	blr
 
 .global "PrintImpl__Q36nw4hbm2ut17TextWriterBase<c>FPCci"
 "PrintImpl__Q36nw4hbm2ut17TextWriterBase<c>FPCci":
@@ -746,7 +746,7 @@ lbl_803C9480:
 /* 803C94B0 003C5150  81 83 00 00 */	lwz r12, 0(r3)
 /* 803C94B4 003C5154  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803C94B8 003C5158  7D 89 03 A6 */	mtctr r12
-/* 803C94BC 003C515C  4E 80 04 21 */	bctrl 
+/* 803C94BC 003C515C  4E 80 04 21 */	bctrl
 /* 803C94C0 003C5160  2C 03 00 03 */	cmpwi r3, 3
 /* 803C94C4 003C5164  40 82 01 A4 */	bne lbl_803C9668
 /* 803C94C8 003C5168  80 C1 00 24 */	lwz r6, 0x24(r1)
@@ -967,7 +967,7 @@ lbl_803C97A8:
 /* 803C97C8 003C5468  7F 03 C3 78 */	mr r3, r24
 /* 803C97CC 003C546C  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 803C97D0 003C5470  7D 89 03 A6 */	mtctr r12
-/* 803C97D4 003C5474  4E 80 04 21 */	bctrl 
+/* 803C97D4 003C5474  4E 80 04 21 */	bctrl
 /* 803C97D8 003C5478  7C 03 00 D0 */	neg r0, r3
 /* 803C97DC 003C547C  93 41 00 38 */	stw r26, 0x38(r1)
 /* 803C97E0 003C5480  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -1039,14 +1039,14 @@ lbl_803C9880:
 /* 803C98D0 003C5570  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 803C98D4 003C5574  7C 08 03 A6 */	mtlr r0
 /* 803C98D8 003C5578  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 803C98DC 003C557C  4E 80 00 20 */	blr 
+/* 803C98DC 003C557C  4E 80 00 20 */	blr
 
 .global "Max<f>__Q36nw4hbm2ut31@unnamed@ut_TextWriterBase_cpp@Fff_f"
 "Max<f>__Q36nw4hbm2ut31@unnamed@ut_TextWriterBase_cpp@Fff_f":
 /* 803C98E0 003C5580  FC 01 10 40 */	fcmpo cr0, f1, f2
-/* 803C98E4 003C5584  4C 80 00 20 */	bgelr 
+/* 803C98E4 003C5584  4C 80 00 20 */	bgelr
 /* 803C98E8 003C5588  FC 20 10 90 */	fmr f1, f2
-/* 803C98EC 003C558C  4E 80 00 20 */	blr 
+/* 803C98EC 003C558C  4E 80 00 20 */	blr
 
 .global "Set__Q36nw4hbm2ut14CharStrmReaderFPCc"
 "Set__Q36nw4hbm2ut14CharStrmReaderFPCc":
@@ -1229,7 +1229,7 @@ lbl_803C9B5C:
 /* 803C9B70 003C5810  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C9B74 003C5814  7C 08 03 A6 */	mtlr r0
 /* 803C9B78 003C5818  38 21 00 20 */	addi r1, r1, 0x20
-/* 803C9B7C 003C581C  4E 80 00 20 */	blr 
+/* 803C9B7C 003C581C  4E 80 00 20 */	blr
 
 .global "CalcStringRectImpl__Q36nw4hbm2ut17TextWriterBase<c>FPQ36nw4hbm2ut4RectPCci"
 "CalcStringRectImpl__Q36nw4hbm2ut17TextWriterBase<c>FPQ36nw4hbm2ut4RectPCci":
@@ -1490,14 +1490,14 @@ lbl_803C9E9C:
 /* 803C9F1C 003C5BBC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C9F20 003C5BC0  7C 08 03 A6 */	mtlr r0
 /* 803C9F24 003C5BC4  38 21 00 30 */	addi r1, r1, 0x30
-/* 803C9F28 003C5BC8  4E 80 00 20 */	blr 
+/* 803C9F28 003C5BC8  4E 80 00 20 */	blr
 
 .global "Min<f>__Q36nw4hbm2ut31@unnamed@ut_TextWriterBase_cpp@Fff_f"
 "Min<f>__Q36nw4hbm2ut31@unnamed@ut_TextWriterBase_cpp@Fff_f":
 /* 803C9F2C 003C5BCC  FC 01 10 40 */	fcmpo cr0, f1, f2
-/* 803C9F30 003C5BD0  4C 81 00 20 */	blelr 
+/* 803C9F30 003C5BD0  4C 81 00 20 */	blelr
 /* 803C9F34 003C5BD4  FC 20 10 90 */	fmr f1, f2
-/* 803C9F38 003C5BD8  4E 80 00 20 */	blr 
+/* 803C9F38 003C5BD8  4E 80 00 20 */	blr
 
 .global "CalcLineRectImpl__Q36nw4hbm2ut17TextWriterBase<c>FPQ36nw4hbm2ut4RectPCci"
 "CalcLineRectImpl__Q36nw4hbm2ut17TextWriterBase<c>FPQ36nw4hbm2ut4RectPCci":
@@ -1848,7 +1848,7 @@ lbl_803CA3CC:
 /* 803CA424 003C60C4  81 83 00 00 */	lwz r12, 0(r3)
 /* 803CA428 003C60C8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803CA42C 003C60CC  7D 89 03 A6 */	mtctr r12
-/* 803CA430 003C60D0  4E 80 04 21 */	bctrl 
+/* 803CA430 003C60D0  4E 80 04 21 */	bctrl
 /* 803CA434 003C60D4  80 C1 00 2C */	lwz r6, 0x2c(r1)
 /* 803CA438 003C60D8  7C 7F 1B 78 */	mr r31, r3
 /* 803CA43C 003C60DC  38 80 00 01 */	li r4, 1
@@ -1994,7 +1994,7 @@ lbl_803CA61C:
 /* 803CA634 003C62D4  57 E4 04 3E */	clrlwi r4, r31, 0x10
 /* 803CA638 003C62D8  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 803CA63C 003C62DC  7D 89 03 A6 */	mtctr r12
-/* 803CA640 003C62E0  4E 80 04 21 */	bctrl 
+/* 803CA640 003C62E0  4E 80 04 21 */	bctrl
 /* 803CA644 003C62E4  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 803CA648 003C62E8  93 01 00 40 */	stw r24, 0x40(r1)
 /* 803CA64C 003C62EC  90 01 00 44 */	stw r0, 0x44(r1)
@@ -2041,7 +2041,7 @@ lbl_803CA6BC:
 /* 803CA6DC 003C637C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803CA6E0 003C6380  7C 08 03 A6 */	mtlr r0
 /* 803CA6E4 003C6384  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803CA6E8 003C6388  4E 80 00 20 */	blr 
+/* 803CA6E8 003C6388  4E 80 00 20 */	blr
 
 .global "CalcLineWidth__Q36nw4hbm2ut17TextWriterBase<c>FPCci"
 "CalcLineWidth__Q36nw4hbm2ut17TextWriterBase<c>FPCci":
@@ -2230,7 +2230,7 @@ lbl_803CA910:
 /* 803CA988 003C6628  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803CA98C 003C662C  7C 08 03 A6 */	mtlr r0
 /* 803CA990 003C6630  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803CA994 003C6634  4E 80 00 20 */	blr 
+/* 803CA994 003C6634  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut17TextWriterBase<c>FRCQ36nw4hbm2ut17TextWriterBase<c>"
 "__ct__Q36nw4hbm2ut17TextWriterBase<c>FRCQ36nw4hbm2ut17TextWriterBase<c>":
@@ -2258,7 +2258,7 @@ lbl_803CA910:
 /* 803CA9EC 003C668C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CA9F0 003C6690  7C 08 03 A6 */	mtlr r0
 /* 803CA9F4 003C6694  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CA9F8 003C6698  4E 80 00 20 */	blr 
+/* 803CA9F8 003C6698  4E 80 00 20 */	blr
 
 .global "Print__Q36nw4hbm2ut17TextWriterBase<c>FPCci"
 "Print__Q36nw4hbm2ut17TextWriterBase<c>FPCci":
@@ -2443,7 +2443,7 @@ lbl_803CAC20:
 /* 803CAC88 003C6928  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803CAC8C 003C692C  7C 08 03 A6 */	mtlr r0
 /* 803CAC90 003C6930  38 21 00 90 */	addi r1, r1, 0x90
-/* 803CAC94 003C6934  4E 80 00 20 */	blr 
+/* 803CAC94 003C6934  4E 80 00 20 */	blr
 
 .global "VPrintf__Q36nw4hbm2ut17TextWriterBase<c>FPCcP16__va_list_struct"
 "VPrintf__Q36nw4hbm2ut17TextWriterBase<c>FPCcP16__va_list_struct":
@@ -2614,7 +2614,7 @@ lbl_803CAEB4:
 /* 803CAEE8 003C6B88  80 0A 00 04 */	lwz r0, 4(r10)
 /* 803CAEEC 003C6B8C  7D 41 53 78 */	mr r1, r10
 /* 803CAEF0 003C6B90  7C 08 03 A6 */	mtlr r0
-/* 803CAEF4 003C6B94  4E 80 00 20 */	blr 
+/* 803CAEF4 003C6B94  4E 80 00 20 */	blr
 
 .global "Printf__Q36nw4hbm2ut17TextWriterBase<c>FPCce"
 "Printf__Q36nw4hbm2ut17TextWriterBase<c>FPCce":
@@ -2788,7 +2788,7 @@ lbl_803CB128:
 /* 803CB158 003C6DF8  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803CB15C 003C6DFC  7C 08 03 A6 */	mtlr r0
 /* 803CB160 003C6E00  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803CB164 003C6E04  4E 80 00 20 */	blr 
+/* 803CB164 003C6E04  4E 80 00 20 */	blr
 
 .global "CalcStringRect__Q36nw4hbm2ut17TextWriterBase<c>CFPQ36nw4hbm2ut4RectPCci"
 "CalcStringRect__Q36nw4hbm2ut17TextWriterBase<c>CFPQ36nw4hbm2ut4RectPCci":
@@ -3021,7 +3021,7 @@ lbl_803CB464:
 /* 803CB498 003C7138  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803CB49C 003C713C  7C 08 03 A6 */	mtlr r0
 /* 803CB4A0 003C7140  38 21 00 80 */	addi r1, r1, 0x80
-/* 803CB4A4 003C7144  4E 80 00 20 */	blr 
+/* 803CB4A4 003C7144  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut17TextWriterBase<w>Fv"
 "__ct__Q36nw4hbm2ut17TextWriterBase<w>Fv":
@@ -3045,7 +3045,7 @@ lbl_803CB464:
 /* 803CB4EC 003C718C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CB4F0 003C7190  7C 08 03 A6 */	mtlr r0
 /* 803CB4F4 003C7194  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CB4F8 003C7198  4E 80 00 20 */	blr 
+/* 803CB4F8 003C7198  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut17TextWriterBase<w>Fv"
 "__dt__Q36nw4hbm2ut17TextWriterBase<w>Fv":
@@ -3071,7 +3071,7 @@ lbl_803CB538:
 /* 803CB544 003C71E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CB548 003C71E8  7C 08 03 A6 */	mtlr r0
 /* 803CB54C 003C71EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CB550 003C71F0  4E 80 00 20 */	blr 
+/* 803CB550 003C71F0  4E 80 00 20 */	blr
 
 .global "GetLineHeight__Q36nw4hbm2ut17TextWriterBase<w>CFv"
 "GetLineHeight__Q36nw4hbm2ut17TextWriterBase<w>CFv":
@@ -3154,7 +3154,7 @@ lbl_803CB658:
 /* 803CB668 003C7308  81 83 00 00 */	lwz r12, 0(r3)
 /* 803CB66C 003C730C  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 803CB670 003C7310  7D 89 03 A6 */	mtctr r12
-/* 803CB674 003C7314  4E 80 04 21 */	bctrl 
+/* 803CB674 003C7314  4E 80 04 21 */	bctrl
 /* 803CB678 003C7318  7C 7E 1B 78 */	mr r30, r3
 /* 803CB67C 003C731C  48 00 00 08 */	b lbl_803CB684
 lbl_803CB680:
@@ -3177,7 +3177,7 @@ lbl_803CB684:
 /* 803CB6BC 003C735C  EC 20 08 2A */	fadds f1, f0, f1
 /* 803CB6C0 003C7360  7C 08 03 A6 */	mtlr r0
 /* 803CB6C4 003C7364  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CB6C8 003C7368  4E 80 00 20 */	blr 
+/* 803CB6C8 003C7368  4E 80 00 20 */	blr
 
 .global "SetLineSpace__Q36nw4hbm2ut17TextWriterBase<w>Ff"
 "SetLineSpace__Q36nw4hbm2ut17TextWriterBase<w>Ff":
@@ -3260,7 +3260,7 @@ lbl_803CB7D4:
 /* 803CB7E0 003C7480  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CB7E4 003C7484  7C 08 03 A6 */	mtlr r0
 /* 803CB7E8 003C7488  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CB7EC 003C748C  4E 80 00 20 */	blr 
+/* 803CB7EC 003C748C  4E 80 00 20 */	blr
 
 .global "SetCharSpace__Q36nw4hbm2ut17TextWriterBase<w>Ff"
 "SetCharSpace__Q36nw4hbm2ut17TextWriterBase<w>Ff":
@@ -3343,7 +3343,7 @@ lbl_803CB8F8:
 /* 803CB904 003C75A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CB908 003C75A8  7C 08 03 A6 */	mtlr r0
 /* 803CB90C 003C75AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CB910 003C75B0  4E 80 00 20 */	blr 
+/* 803CB910 003C75B0  4E 80 00 20 */	blr
 
 .global "GetCharSpace__Q36nw4hbm2ut17TextWriterBase<w>CFv"
 "GetCharSpace__Q36nw4hbm2ut17TextWriterBase<w>CFv":
@@ -3423,7 +3423,7 @@ lbl_803CBA14:
 /* 803CBA1C 003C76BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CBA20 003C76C0  7C 08 03 A6 */	mtlr r0
 /* 803CBA24 003C76C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CBA28 003C76C8  4E 80 00 20 */	blr 
+/* 803CBA28 003C76C8  4E 80 00 20 */	blr
 
 .global "GetTabWidth__Q36nw4hbm2ut17TextWriterBase<w>CFv"
 "GetTabWidth__Q36nw4hbm2ut17TextWriterBase<w>CFv":
@@ -3503,7 +3503,7 @@ lbl_803CBB2C:
 /* 803CBB34 003C77D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CBB38 003C77D8  7C 08 03 A6 */	mtlr r0
 /* 803CBB3C 003C77DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CBB40 003C77E0  4E 80 00 20 */	blr 
+/* 803CBB40 003C77E0  4E 80 00 20 */	blr
 
 .global "SetTagProcessor__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut19TagProcessorBase<w>"
 "SetTagProcessor__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut19TagProcessorBase<w>":
@@ -3652,7 +3652,7 @@ lbl_803CBD34:
 /* 803CBD44 003C79E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803CBD48 003C79E8  7C 08 03 A6 */	mtlr r0
 /* 803CBD4C 003C79EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CBD50 003C79F0  4E 80 00 20 */	blr 
+/* 803CBD50 003C79F0  4E 80 00 20 */	blr
 
 .global "GetTagProcessor__Q36nw4hbm2ut17TextWriterBase<w>CFv"
 "GetTagProcessor__Q36nw4hbm2ut17TextWriterBase<w>CFv":
@@ -3732,7 +3732,7 @@ lbl_803CBE54:
 /* 803CBE5C 003C7AFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CBE60 003C7B00  7C 08 03 A6 */	mtlr r0
 /* 803CBE64 003C7B04  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CBE68 003C7B08  4E 80 00 20 */	blr 
+/* 803CBE68 003C7B08  4E 80 00 20 */	blr
 
 .global "AdjustCursor__Q36nw4hbm2ut17TextWriterBase<w>FPfPfPCwi"
 "AdjustCursor__Q36nw4hbm2ut17TextWriterBase<w>FPfPfPCwi":
@@ -3894,7 +3894,7 @@ lbl_803CC094:
 /* 803CC0B0 003C7D50  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803CC0B4 003C7D54  7C 08 03 A6 */	mtlr r0
 /* 803CC0B8 003C7D58  38 21 00 50 */	addi r1, r1, 0x50
-/* 803CC0BC 003C7D5C  4E 80 00 20 */	blr 
+/* 803CC0BC 003C7D5C  4E 80 00 20 */	blr
 
 .global "IsDrawFlagSet__Q36nw4hbm2ut17TextWriterBase<w>CFUlUl"
 "IsDrawFlagSet__Q36nw4hbm2ut17TextWriterBase<w>CFUlUl":
@@ -3903,7 +3903,7 @@ lbl_803CC094:
 /* 803CC0C8 003C7D68  7C 05 00 50 */	subf r0, r5, r0
 /* 803CC0CC 003C7D6C  7C 00 00 34 */	cntlzw r0, r0
 /* 803CC0D0 003C7D70  54 03 D9 7E */	srwi r3, r0, 5
-/* 803CC0D4 003C7D74  4E 80 00 20 */	blr 
+/* 803CC0D4 003C7D74  4E 80 00 20 */	blr
 
 .global "PrintImpl__Q36nw4hbm2ut17TextWriterBase<w>FPCwi"
 "PrintImpl__Q36nw4hbm2ut17TextWriterBase<w>FPCwi":
@@ -4187,7 +4187,7 @@ lbl_803CC4B0:
 /* 803CC4E0 003C8180  81 83 00 00 */	lwz r12, 0(r3)
 /* 803CC4E4 003C8184  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 803CC4E8 003C8188  7D 89 03 A6 */	mtctr r12
-/* 803CC4EC 003C818C  4E 80 04 21 */	bctrl 
+/* 803CC4EC 003C818C  4E 80 04 21 */	bctrl
 /* 803CC4F0 003C8190  2C 03 00 03 */	cmpwi r3, 3
 /* 803CC4F4 003C8194  40 82 01 BC */	bne lbl_803CC6B0
 /* 803CC4F8 003C8198  80 C1 00 24 */	lwz r6, 0x24(r1)
@@ -4414,7 +4414,7 @@ lbl_803CC7F0:
 /* 803CC810 003C84B0  7F 03 C3 78 */	mr r3, r24
 /* 803CC814 003C84B4  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 803CC818 003C84B8  7D 89 03 A6 */	mtctr r12
-/* 803CC81C 003C84BC  4E 80 04 21 */	bctrl 
+/* 803CC81C 003C84BC  4E 80 04 21 */	bctrl
 /* 803CC820 003C84C0  7C 03 00 D0 */	neg r0, r3
 /* 803CC824 003C84C4  93 41 00 38 */	stw r26, 0x38(r1)
 /* 803CC828 003C84C8  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -4489,7 +4489,7 @@ lbl_803CC8D4:
 /* 803CC924 003C85C4  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 803CC928 003C85C8  7C 08 03 A6 */	mtlr r0
 /* 803CC92C 003C85CC  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 803CC930 003C85D0  4E 80 00 20 */	blr 
+/* 803CC930 003C85D0  4E 80 00 20 */	blr
 
 .global "CalcStringRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi"
 "CalcStringRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi":
@@ -4751,7 +4751,7 @@ lbl_803CCC50:
 /* 803CCCD4 003C8974  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803CCCD8 003C8978  7C 08 03 A6 */	mtlr r0
 /* 803CCCDC 003C897C  38 21 00 30 */	addi r1, r1, 0x30
-/* 803CCCE0 003C8980  4E 80 00 20 */	blr 
+/* 803CCCE0 003C8980  4E 80 00 20 */	blr
 
 .global "CalcLineRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi"
 "CalcLineRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi":
@@ -5102,7 +5102,7 @@ lbl_803CD174:
 /* 803CD1CC 003C8E6C  81 83 00 00 */	lwz r12, 0(r3)
 /* 803CD1D0 003C8E70  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 803CD1D4 003C8E74  7D 89 03 A6 */	mtctr r12
-/* 803CD1D8 003C8E78  4E 80 04 21 */	bctrl 
+/* 803CD1D8 003C8E78  4E 80 04 21 */	bctrl
 /* 803CD1DC 003C8E7C  80 C1 00 2C */	lwz r6, 0x2c(r1)
 /* 803CD1E0 003C8E80  7C 7F 1B 78 */	mr r31, r3
 /* 803CD1E4 003C8E84  38 80 00 01 */	li r4, 1
@@ -5248,7 +5248,7 @@ lbl_803CD3C4:
 /* 803CD3DC 003C907C  57 E4 04 3E */	clrlwi r4, r31, 0x10
 /* 803CD3E0 003C9080  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 803CD3E4 003C9084  7D 89 03 A6 */	mtctr r12
-/* 803CD3E8 003C9088  4E 80 04 21 */	bctrl 
+/* 803CD3E8 003C9088  4E 80 04 21 */	bctrl
 /* 803CD3EC 003C908C  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 803CD3F0 003C9090  93 01 00 40 */	stw r24, 0x40(r1)
 /* 803CD3F4 003C9094  90 01 00 44 */	stw r0, 0x44(r1)
@@ -5301,7 +5301,7 @@ lbl_803CD47C:
 /* 803CD49C 003C913C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803CD4A0 003C9140  7C 08 03 A6 */	mtlr r0
 /* 803CD4A4 003C9144  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803CD4A8 003C9148  4E 80 00 20 */	blr 
+/* 803CD4A8 003C9148  4E 80 00 20 */	blr
 
 .global "CalcLineWidth__Q36nw4hbm2ut17TextWriterBase<w>FPCwi"
 "CalcLineWidth__Q36nw4hbm2ut17TextWriterBase<w>FPCwi":
@@ -5490,7 +5490,7 @@ lbl_803CD6D0:
 /* 803CD748 003C93E8  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803CD74C 003C93EC  7C 08 03 A6 */	mtlr r0
 /* 803CD750 003C93F0  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 803CD754 003C93F4  4E 80 00 20 */	blr 
+/* 803CD754 003C93F4  4E 80 00 20 */	blr
 
 .global "Print__Q36nw4hbm2ut17TextWriterBase<w>FPCw"
 "Print__Q36nw4hbm2ut17TextWriterBase<w>FPCw":
@@ -5644,7 +5644,7 @@ lbl_803CD948:
 /* 803CD96C 003C960C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 803CD970 003C9610  7C 08 03 A6 */	mtlr r0
 /* 803CD974 003C9614  38 21 00 20 */	addi r1, r1, 0x20
-/* 803CD978 003C9618  4E 80 00 20 */	blr 
+/* 803CD978 003C9618  4E 80 00 20 */	blr
 
 .global "StrLen__Q36nw4hbm2ut17TextWriterBase<w>FPCw"
 "StrLen__Q36nw4hbm2ut17TextWriterBase<w>FPCw":
@@ -5833,7 +5833,7 @@ lbl_803CDBA4:
 /* 803CDC0C 003C98AC  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803CDC10 003C98B0  7C 08 03 A6 */	mtlr r0
 /* 803CDC14 003C98B4  38 21 00 90 */	addi r1, r1, 0x90
-/* 803CDC18 003C98B8  4E 80 00 20 */	blr 
+/* 803CDC18 003C98B8  4E 80 00 20 */	blr
 
 .global "CalcStringRect__Q36nw4hbm2ut17TextWriterBase<w>CFPQ36nw4hbm2ut4RectPCwi"
 "CalcStringRect__Q36nw4hbm2ut17TextWriterBase<w>CFPQ36nw4hbm2ut4RectPCwi":
@@ -6066,7 +6066,7 @@ lbl_803CDF18:
 /* 803CDF4C 003C9BEC  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803CDF50 003C9BF0  7C 08 03 A6 */	mtlr r0
 /* 803CDF54 003C9BF4  38 21 00 80 */	addi r1, r1, 0x80
-/* 803CDF58 003C9BF8  4E 80 00 20 */	blr 
+/* 803CDF58 003C9BF8  4E 80 00 20 */	blr
 
 .global "__sinit_ut_TextWriterBase_cpp"
 "__sinit_ut_TextWriterBase_cpp":
@@ -6104,36 +6104,116 @@ lbl_803CDFD0:
 /* 803CDFD0 003C9C70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803CDFD4 003C9C74  7C 08 03 A6 */	mtlr r0
 /* 803CDFD8 003C9C78  38 21 00 10 */	addi r1, r1, 0x10
-/* 803CDFDC 003C9C7C  4E 80 00 20 */	blr 
+/* 803CDFDC 003C9C7C  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80474C50
 lbl_80474C50:
-	.incbin "baserom.dol", 0x470D50, 0x30
+	# ROM: 0x470D50
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD7D0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BD48C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDA34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv" ;# ptr (0x803BDC54)
+
 .global lbl_80474C80
 lbl_80474C80:
-	.incbin "baserom.dol", 0x470D80, 0x18
+	# ROM: 0x470D80
+	.asciz "ut_TextWriterBase.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_80474C98
 lbl_80474C98:
-	.incbin "baserom.dol", 0x470D98, 0x2A8
+	# ROM: 0x470D98
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\ntagProcessor(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nformat(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\npRect(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nstr(=%p) is not valid pointer."
+	.asciz "NW4HBM:Pointer Error\nGetFont()(=%p) is not valid pointer."
+	.byte 0x00, 0x00
+	.asciz "length is out of bounds(%d)\n%d <= length not satisfied."
+	.asciz "NW4HBM:Pointer Error\ncontext.str(=%p) is not valid pointer."
+	.asciz "NW4HBM:Pointer Error\nfont(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "size is out of bounds(%d)\n%d <= size not satisfied."
+	.asciz "NW4HBM:Pointer Error\nbuffer(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80474F40
 lbl_80474F40:
-	.incbin "baserom.dol", 0x471040, 0x7C
+	# ROM: 0x471040
+	.asciz "NW4HBM:Failed assertion mReadFunc == ReadNextCharUTF8 || mReadFunc == ReadNextCharCP1252 || mReadFunc == ReadNextCharSJIS"
+	.byte 0x00, 0x00
+
 .global lbl_80474FBC
 lbl_80474FBC:
-	.incbin "baserom.dol", 0x4710BC, 0x14
+	# ROM: 0x4710BC
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80474FD0
 lbl_80474FD0:
-	.incbin "baserom.dol", 0x4710D0, 0x38
+	# ROM: 0x4710D0
+	.asciz "NW4HBM:Pointer Error\nstream(=%p) is not valid pointer."
+	.byte 0x00
+
 .global lbl_80475008
 lbl_80475008:
-	.incbin "baserom.dol", 0x471108, 0x14
+	# ROM: 0x471108
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8047501C
 lbl_8047501C:
-	.incbin "baserom.dol", 0x47111C, 0x38
+	# ROM: 0x47111C
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80475054
 lbl_80475054:
-	.incbin "baserom.dol", 0x471154, 0x1F4
+	# ROM: 0x471154
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion mReadFunc == ReadNextCharUTF16"
+	.byte 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nstream(=%p) is not valid pointer."
+	.byte 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Alignment Error(0x%x)\nstream must be aligned to 2 bytes boundary."
+	.byte 0x00, 0x00, 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer Error\nthis(=%p) is not valid pointer."
+	.byte 0x00, 0x00, 0x00
+	.asciz "CharStrmReader.h"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_805ACEC8
@@ -6146,7 +6226,10 @@ lbl_805ACED4:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase<c>"
 "mFormatBufferSize__Q36nw4hbm2ut17TextWriterBase<c>":
-	.incbin "baserom.dol", 0x487228, 0x8
+	# ROM: 0x487228
+	.4byte 0x00000100
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "mFormatBuffer__Q36nw4hbm2ut17TextWriterBase<c>"
@@ -6168,10 +6251,18 @@ lbl_805D8D15:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBCA0
 lbl_805DBCA0:
-	.incbin "baserom.dol", 0x489FC0, 0x8
+	# ROM: 0x489FC0
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBCA8
 lbl_805DBCA8:
-	.incbin "baserom.dol", 0x489FC8, 0x8
+	# ROM: 0x489FC8
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBCB0
 lbl_805DBCB0:
-	.incbin "baserom.dol", 0x489FD0, 0x8
+	# ROM: 0x489FD0
+	.4byte 0x3F000000
+	.4byte 0x00000000
+

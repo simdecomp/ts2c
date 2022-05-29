@@ -48,7 +48,7 @@
 /* 8004DF08 00049BA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004DF0C 00049BAC  7C 08 03 A6 */	mtlr r0
 /* 8004DF10 00049BB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004DF14 00049BB4  4E 80 00 20 */	blr 
+/* 8004DF14 00049BB4  4E 80 00 20 */	blr
 
 .global "__dt__26TNodeList<P12ISimInstance>Fv"
 "__dt__26TNodeList<P12ISimInstance>Fv":
@@ -74,7 +74,7 @@ lbl_8004DF54:
 /* 8004DF60 00049C00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004DF64 00049C04  7C 08 03 A6 */	mtlr r0
 /* 8004DF68 00049C08  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004DF6C 00049C0C  4E 80 00 20 */	blr 
+/* 8004DF6C 00049C0C  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule16DirectInteractorFv"
 "__dt__Q216InteractorModule16DirectInteractorFv":
@@ -124,7 +124,7 @@ lbl_8004E008:
 /* 8004E014 00049CB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004E018 00049CB8  7C 08 03 A6 */	mtlr r0
 /* 8004E01C 00049CBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E020 00049CC0  4E 80 00 20 */	blr 
+/* 8004E020 00049CC0  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule16DirectInteractorFv"
 "OnCreate__Q216InteractorModule16DirectInteractorFv":
@@ -141,7 +141,7 @@ lbl_8004E008:
 /* 8004E04C 00049CEC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004E050 00049CF0  7C 08 03 A6 */	mtlr r0
 /* 8004E054 00049CF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E058 00049CF8  4E 80 00 20 */	blr 
+/* 8004E058 00049CF8  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule16DirectInteractorFv"
 "OnDestroy__Q216InteractorModule16DirectInteractorFv":
@@ -158,7 +158,7 @@ lbl_8004E008:
 /* 8004E084 00049D24  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004E088 00049D28  7C 08 03 A6 */	mtlr r0
 /* 8004E08C 00049D2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E090 00049D30  4E 80 00 20 */	blr 
+/* 8004E090 00049D30  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule16DirectInteractorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule16DirectInteractorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -226,7 +226,7 @@ lbl_8004E008:
 /* 8004E188 00049E28  81 9F 00 00 */	lwz r12, 0(r31)
 /* 8004E18C 00049E2C  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8004E190 00049E30  7D 89 03 A6 */	mtctr r12
-/* 8004E194 00049E34  4E 80 04 21 */	bctrl 
+/* 8004E194 00049E34  4E 80 04 21 */	bctrl
 /* 8004E198 00049E38  48 00 33 01 */	bl "GetPlumbob__8PlumbBobFv"
 /* 8004E19C 00049E3C  90 7F 00 7C */	stw r3, 0x7c(r31)
 /* 8004E1A0 00049E40  38 80 00 01 */	li r4, 1
@@ -238,7 +238,7 @@ lbl_8004E008:
 /* 8004E1B8 00049E58  7F E3 FB 78 */	mr r3, r31
 /* 8004E1BC 00049E5C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8004E1C0 00049E60  7D 89 03 A6 */	mtctr r12
-/* 8004E1C4 00049E64  4E 80 04 21 */	bctrl 
+/* 8004E1C4 00049E64  4E 80 04 21 */	bctrl
 /* 8004E1C8 00049E68  9B DF 00 71 */	stb r30, 0x71(r31)
 /* 8004E1CC 00049E6C  7F E3 FB 78 */	mr r3, r31
 /* 8004E1D0 00049E70  48 00 1A 41 */	bl "ClearCancelTimer__Q216InteractorModule16DirectInteractorFv"
@@ -253,7 +253,7 @@ lbl_8004E1E8:
 /* 8004E1F0 00049E90  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8004E1F4 00049E94  7C 08 03 A6 */	mtlr r0
 /* 8004E1F8 00049E98  38 21 00 60 */	addi r1, r1, 0x60
-/* 8004E1FC 00049E9C  4E 80 00 20 */	blr 
+/* 8004E1FC 00049E9C  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule16DirectInteractorFv"
 "OnStop__Q216InteractorModule16DirectInteractorFv":
@@ -282,7 +282,7 @@ lbl_8004E250:
 /* 8004E254 00049EF4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004E258 00049EF8  7C 08 03 A6 */	mtlr r0
 /* 8004E25C 00049EFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E260 00049F00  4E 80 00 20 */	blr 
+/* 8004E260 00049F00  4E 80 00 20 */	blr
 
 .global "ParseControls__Q216InteractorModule16DirectInteractorFv"
 "ParseControls__Q216InteractorModule16DirectInteractorFv":
@@ -330,7 +330,7 @@ lbl_8004E2F8:
 /* 8004E300 00049FA0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8004E304 00049FA4  7C 08 03 A6 */	mtlr r0
 /* 8004E308 00049FA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E30C 00049FAC  4E 80 00 20 */	blr 
+/* 8004E30C 00049FAC  4E 80 00 20 */	blr
 
 .global "GetDesiredAnimState__Q216InteractorModule16DirectInteractorFbRC5EVec2"
 "GetDesiredAnimState__Q216InteractorModule16DirectInteractorFbRC5EVec2":
@@ -369,7 +369,7 @@ lbl_8004E37C:
 /* 8004E37C 0004A01C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004E380 0004A020  7C 08 03 A6 */	mtlr r0
 /* 8004E384 0004A024  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E388 0004A028  4E 80 00 20 */	blr 
+/* 8004E388 0004A028  4E 80 00 20 */	blr
 
 .global "InitPlayerPos__Q216InteractorModule16DirectInteractorFv"
 "InitPlayerPos__Q216InteractorModule16DirectInteractorFv":
@@ -485,7 +485,7 @@ lbl_8004E518:
 /* 8004E52C 0004A1CC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8004E530 0004A1D0  7C 08 03 A6 */	mtlr r0
 /* 8004E534 0004A1D4  38 21 00 60 */	addi r1, r1, 0x60
-/* 8004E538 0004A1D8  4E 80 00 20 */	blr 
+/* 8004E538 0004A1D8  4E 80 00 20 */	blr
 
 .global "UpdatePlumbBob__Q216InteractorModule16DirectInteractorFv"
 "UpdatePlumbBob__Q216InteractorModule16DirectInteractorFv":
@@ -513,7 +513,7 @@ lbl_8004E518:
 /* 8004E590 0004A230  38 80 00 02 */	li r4, 2
 /* 8004E594 0004A234  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 8004E598 0004A238  7D 89 03 A6 */	mtctr r12
-/* 8004E59C 0004A23C  4E 80 04 21 */	bctrl 
+/* 8004E59C 0004A23C  4E 80 04 21 */	bctrl
 /* 8004E5A0 0004A240  D3 E1 00 10 */	stfs f31, 0x10(r1)
 lbl_8004E5A4:
 /* 8004E5A4 0004A244  80 7F 00 7C */	lwz r3, 0x7c(r31)
@@ -538,7 +538,7 @@ lbl_8004E5A4:
 /* 8004E5F0 0004A290  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8004E5F4 0004A294  7C 08 03 A6 */	mtlr r0
 /* 8004E5F8 0004A298  38 21 00 30 */	addi r1, r1, 0x30
-/* 8004E5FC 0004A29C  4E 80 00 20 */	blr 
+/* 8004E5FC 0004A29C  4E 80 00 20 */	blr
 
 .global "UpdateControlStatus__Q216InteractorModule16DirectInteractorFv"
 "UpdateControlStatus__Q216InteractorModule16DirectInteractorFv":
@@ -577,7 +577,7 @@ lbl_8004E670:
 /* 8004E674 0004A314  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004E678 0004A318  7C 08 03 A6 */	mtlr r0
 /* 8004E67C 0004A31C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E680 0004A320  4E 80 00 20 */	blr 
+/* 8004E680 0004A320  4E 80 00 20 */	blr
 
 .global "CameraDirectorPermitsDirectControl__Q216InteractorModule16DirectInteractorFv"
 "CameraDirectorPermitsDirectControl__Q216InteractorModule16DirectInteractorFv":
@@ -600,7 +600,7 @@ lbl_8004E6B4:
 /* 8004E6BC 0004A35C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004E6C0 0004A360  7C 08 03 A6 */	mtlr r0
 /* 8004E6C4 0004A364  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E6C8 0004A368  4E 80 00 20 */	blr 
+/* 8004E6C8 0004A368  4E 80 00 20 */	blr
 
 .global "SetVelocityModifiers__Q216InteractorModule16DirectInteractorFv"
 "SetVelocityModifiers__Q216InteractorModule16DirectInteractorFv":
@@ -626,7 +626,7 @@ lbl_8004E70C:
 /* 8004E714 0004A3B4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8004E718 0004A3B8  7C 08 03 A6 */	mtlr r0
 /* 8004E71C 0004A3BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E720 0004A3C0  4E 80 00 20 */	blr 
+/* 8004E720 0004A3C0  4E 80 00 20 */	blr
 
 .global "SendNeutralFreeMoveInput__Q216InteractorModule16DirectInteractorFv"
 "SendNeutralFreeMoveInput__Q216InteractorModule16DirectInteractorFv":
@@ -651,7 +651,7 @@ lbl_8004E764:
 /* 8004E768 0004A408  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004E76C 0004A40C  7C 08 03 A6 */	mtlr r0
 /* 8004E770 0004A410  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004E774 0004A414  4E 80 00 20 */	blr 
+/* 8004E774 0004A414  4E 80 00 20 */	blr
 
 .global "InterpretFreeMoveInput__Q216InteractorModule16DirectInteractorFv"
 "InterpretFreeMoveInput__Q216InteractorModule16DirectInteractorFv":
@@ -697,7 +697,7 @@ lbl_8004E7FC:
 /* 8004E808 0004A4A8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8004E80C 0004A4AC  7C 08 03 A6 */	mtlr r0
 /* 8004E810 0004A4B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004E814 0004A4B4  4E 80 00 20 */	blr 
+/* 8004E814 0004A4B4  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule16DirectInteractorFf"
 "Update__Q216InteractorModule16DirectInteractorFf":
@@ -763,7 +763,7 @@ lbl_8004E8D4:
 /* 8004E8FC 0004A59C  7F C3 F3 78 */	mr r3, r30
 /* 8004E900 0004A5A0  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8004E904 0004A5A4  7D 89 03 A6 */	mtctr r12
-/* 8004E908 0004A5A8  4E 80 04 21 */	bctrl 
+/* 8004E908 0004A5A8  4E 80 04 21 */	bctrl
 /* 8004E90C 0004A5AC  48 00 0C 24 */	b lbl_8004F530
 lbl_8004E910:
 /* 8004E910 0004A5B0  3C 60 80 49 */	lis r3, "_gd"@ha
@@ -781,7 +781,7 @@ lbl_8004E910:
 /* 8004E940 0004A5E0  7F C3 F3 78 */	mr r3, r30
 /* 8004E944 0004A5E4  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8004E948 0004A5E8  7D 89 03 A6 */	mtctr r12
-/* 8004E94C 0004A5EC  4E 80 04 21 */	bctrl 
+/* 8004E94C 0004A5EC  4E 80 04 21 */	bctrl
 lbl_8004E950:
 /* 8004E950 0004A5F0  88 1E 00 81 */	lbz r0, 0x81(r30)
 /* 8004E954 0004A5F4  2C 00 00 00 */	cmpwi r0, 0
@@ -825,7 +825,7 @@ lbl_8004E98C:
 /* 8004E9E8 0004A688  7F C3 F3 78 */	mr r3, r30
 /* 8004E9EC 0004A68C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 8004E9F0 0004A690  7D 89 03 A6 */	mtctr r12
-/* 8004E9F4 0004A694  4E 80 04 21 */	bctrl 
+/* 8004E9F4 0004A694  4E 80 04 21 */	bctrl
 /* 8004E9F8 0004A698  48 00 00 1C */	b lbl_8004EA14
 lbl_8004E9FC:
 /* 8004E9FC 0004A69C  80 7E 00 74 */	lwz r3, 0x74(r30)
@@ -874,7 +874,7 @@ lbl_8004EA14:
 /* 8004EAA4 0004A744  7F A3 EB 78 */	mr r3, r29
 /* 8004EAA8 0004A748  81 8C 00 A4 */	lwz r12, 0xa4(r12)
 /* 8004EAAC 0004A74C  7D 89 03 A6 */	mtctr r12
-/* 8004EAB0 0004A750  4E 80 04 21 */	bctrl 
+/* 8004EAB0 0004A750  4E 80 04 21 */	bctrl
 lbl_8004EAB4:
 /* 8004EAB4 0004A754  7F C3 F3 78 */	mr r3, r30
 /* 8004EAB8 0004A758  4B FF FC 6D */	bl "SendNeutralFreeMoveInput__Q216InteractorModule16DirectInteractorFv"
@@ -922,7 +922,7 @@ lbl_8004EADC:
 /* 8004EB58 0004A7F8  81 9E 00 00 */	lwz r12, 0(r30)
 /* 8004EB5C 0004A7FC  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 8004EB60 0004A800  7D 89 03 A6 */	mtctr r12
-/* 8004EB64 0004A804  4E 80 04 21 */	bctrl 
+/* 8004EB64 0004A804  4E 80 04 21 */	bctrl
 /* 8004EB68 0004A808  7F C3 F3 78 */	mr r3, r30
 /* 8004EB6C 0004A80C  48 00 10 91 */	bl "StartCancelTimer__Q216InteractorModule16DirectInteractorFv"
 lbl_8004EB70:
@@ -1382,13 +1382,13 @@ lbl_8004F1B8:
 /* 8004F1E0 0004AE80  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 8004F1E4 0004AE84  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F1E8 0004AE88  7D 89 03 A6 */	mtctr r12
-/* 8004F1EC 0004AE8C  4E 80 04 21 */	bctrl 
+/* 8004F1EC 0004AE8C  4E 80 04 21 */	bctrl
 /* 8004F1F0 0004AE90  2C 03 00 00 */	cmpwi r3, 0
 /* 8004F1F4 0004AE94  41 82 00 20 */	beq lbl_8004F214
 /* 8004F1F8 0004AE98  81 83 00 00 */	lwz r12, 0(r3)
 /* 8004F1FC 0004AE9C  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 8004F200 0004AEA0  7D 89 03 A6 */	mtctr r12
-/* 8004F204 0004AEA4  4E 80 04 21 */	bctrl 
+/* 8004F204 0004AEA4  4E 80 04 21 */	bctrl
 /* 8004F208 0004AEA8  2C 03 00 00 */	cmpwi r3, 0
 /* 8004F20C 0004AEAC  41 82 00 08 */	beq lbl_8004F214
 /* 8004F210 0004AEB0  3B 60 00 01 */	li r27, 1
@@ -1616,7 +1616,7 @@ lbl_8004F530:
 /* 8004F540 0004B1E0  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8004F544 0004B1E4  7C 08 03 A6 */	mtlr r0
 /* 8004F548 0004B1E8  38 21 00 90 */	addi r1, r1, 0x90
-/* 8004F54C 0004B1EC  4E 80 00 20 */	blr 
+/* 8004F54C 0004B1EC  4E 80 00 20 */	blr
 
 .global "UpdateInteractorPos__Q216InteractorModule16DirectInteractorFv"
 "UpdateInteractorPos__Q216InteractorModule16DirectInteractorFv":
@@ -1641,7 +1641,7 @@ lbl_8004F590:
 /* 8004F594 0004B234  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8004F598 0004B238  7C 08 03 A6 */	mtlr r0
 /* 8004F59C 0004B23C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004F5A0 0004B240  4E 80 00 20 */	blr 
+/* 8004F5A0 0004B240  4E 80 00 20 */	blr
 
 .global "SetAdvanceRightISim__Q216InteractorModule16DirectInteractorFP8cXObject"
 "SetAdvanceRightISim__Q216InteractorModule16DirectInteractorFP8cXObject":
@@ -1656,14 +1656,14 @@ lbl_8004F590:
 /* 8004F5C4 0004B264  7C 83 23 78 */	mr r3, r4
 /* 8004F5C8 0004B268  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F5CC 0004B26C  7D 89 03 A6 */	mtctr r12
-/* 8004F5D0 0004B270  4E 80 04 21 */	bctrl 
+/* 8004F5D0 0004B270  4E 80 04 21 */	bctrl
 /* 8004F5D4 0004B274  90 7F 00 A8 */	stw r3, 0xa8(r31)
 lbl_8004F5D8:
 /* 8004F5D8 0004B278  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004F5DC 0004B27C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004F5E0 0004B280  7C 08 03 A6 */	mtlr r0
 /* 8004F5E4 0004B284  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004F5E8 0004B288  4E 80 00 20 */	blr 
+/* 8004F5E8 0004B288  4E 80 00 20 */	blr
 
 .global "SetAdvanceLeftISim__Q216InteractorModule16DirectInteractorFP8cXObject"
 "SetAdvanceLeftISim__Q216InteractorModule16DirectInteractorFP8cXObject":
@@ -1678,14 +1678,14 @@ lbl_8004F5D8:
 /* 8004F60C 0004B2AC  7C 83 23 78 */	mr r3, r4
 /* 8004F610 0004B2B0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F614 0004B2B4  7D 89 03 A6 */	mtctr r12
-/* 8004F618 0004B2B8  4E 80 04 21 */	bctrl 
+/* 8004F618 0004B2B8  4E 80 04 21 */	bctrl
 /* 8004F61C 0004B2BC  90 7F 00 AC */	stw r3, 0xac(r31)
 lbl_8004F620:
 /* 8004F620 0004B2C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004F624 0004B2C4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004F628 0004B2C8  7C 08 03 A6 */	mtlr r0
 /* 8004F62C 0004B2CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004F630 0004B2D0  4E 80 00 20 */	blr 
+/* 8004F630 0004B2D0  4E 80 00 20 */	blr
 
 .global "SetExpandedMenuISim__Q216InteractorModule16DirectInteractorFP8cXObject"
 "SetExpandedMenuISim__Q216InteractorModule16DirectInteractorFP8cXObject":
@@ -1700,14 +1700,14 @@ lbl_8004F620:
 /* 8004F654 0004B2F4  7C 83 23 78 */	mr r3, r4
 /* 8004F658 0004B2F8  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F65C 0004B2FC  7D 89 03 A6 */	mtctr r12
-/* 8004F660 0004B300  4E 80 04 21 */	bctrl 
+/* 8004F660 0004B300  4E 80 04 21 */	bctrl
 /* 8004F664 0004B304  90 7F 00 B0 */	stw r3, 0xb0(r31)
 lbl_8004F668:
 /* 8004F668 0004B308  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004F66C 0004B30C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004F670 0004B310  7C 08 03 A6 */	mtlr r0
 /* 8004F674 0004B314  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004F678 0004B318  4E 80 00 20 */	blr 
+/* 8004F678 0004B318  4E 80 00 20 */	blr
 
 .global "SetLeftArrow__Q216InteractorModule16DirectInteractorFb"
 "SetLeftArrow__Q216InteractorModule16DirectInteractorFb":
@@ -1715,12 +1715,12 @@ lbl_8004F668:
 /* 8004F680 0004B320  38 63 75 34 */	addi r3, r3, "_gd"@l
 /* 8004F684 0004B324  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8004F688 0004B328  2C 03 00 00 */	cmpwi r3, 0
-/* 8004F68C 0004B32C  4D 82 00 20 */	beqlr 
+/* 8004F68C 0004B32C  4D 82 00 20 */	beqlr
 /* 8004F690 0004B330  80 63 00 AC */	lwz r3, 0xac(r3)
 /* 8004F694 0004B334  2C 03 00 00 */	cmpwi r3, 0
-/* 8004F698 0004B338  4D 82 00 20 */	beqlr 
+/* 8004F698 0004B338  4D 82 00 20 */	beqlr
 /* 8004F69C 0004B33C  48 00 2A 44 */	b "SetLeftArrowEnable__10ActionMenuFb"
-/* 8004F6A0 0004B340  4E 80 00 20 */	blr 
+/* 8004F6A0 0004B340  4E 80 00 20 */	blr
 
 .global "SetRightArrow__Q216InteractorModule16DirectInteractorFb"
 "SetRightArrow__Q216InteractorModule16DirectInteractorFb":
@@ -1728,12 +1728,12 @@ lbl_8004F668:
 /* 8004F6A8 0004B348  38 63 75 34 */	addi r3, r3, "_gd"@l
 /* 8004F6AC 0004B34C  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 8004F6B0 0004B350  2C 03 00 00 */	cmpwi r3, 0
-/* 8004F6B4 0004B354  4D 82 00 20 */	beqlr 
+/* 8004F6B4 0004B354  4D 82 00 20 */	beqlr
 /* 8004F6B8 0004B358  80 63 00 AC */	lwz r3, 0xac(r3)
 /* 8004F6BC 0004B35C  2C 03 00 00 */	cmpwi r3, 0
-/* 8004F6C0 0004B360  4D 82 00 20 */	beqlr 
+/* 8004F6C0 0004B360  4D 82 00 20 */	beqlr
 /* 8004F6C4 0004B364  48 00 2A 24 */	b "SetRightArrowEnable__10ActionMenuFb"
-/* 8004F6C8 0004B368  4E 80 00 20 */	blr 
+/* 8004F6C8 0004B368  4E 80 00 20 */	blr
 
 .global "ResetDisplayArrows__Q216InteractorModule16DirectInteractorFR26TNodeList<P12ISimInstance>RP17NLIteratorPtrType"
 "ResetDisplayArrows__Q216InteractorModule16DirectInteractorFR26TNodeList<P12ISimInstance>RP17NLIteratorPtrType":
@@ -1770,7 +1770,7 @@ lbl_8004F668:
 /* 8004F744 0004B3E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8004F748 0004B3E8  7C 08 03 A6 */	mtlr r0
 /* 8004F74C 0004B3EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004F750 0004B3F0  4E 80 00 20 */	blr 
+/* 8004F750 0004B3F0  4E 80 00 20 */	blr
 
 .global "GetInteractionMenuObjectList__Q216InteractorModule16DirectInteractorFR26TNodeList<P12ISimInstance>"
 "GetInteractionMenuObjectList__Q216InteractorModule16DirectInteractorFR26TNodeList<P12ISimInstance>":
@@ -1808,7 +1808,7 @@ lbl_8004F668:
 /* 8004F7D0 0004B470  7C 7E 1B 78 */	mr r30, r3
 /* 8004F7D4 0004B474  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F7D8 0004B478  7D 89 03 A6 */	mtctr r12
-/* 8004F7DC 0004B47C  4E 80 04 21 */	bctrl 
+/* 8004F7DC 0004B47C  4E 80 04 21 */	bctrl
 /* 8004F7E0 0004B480  7C 7F 1B 78 */	mr r31, r3
 /* 8004F7E4 0004B484  7F 83 E3 78 */	mr r3, r28
 /* 8004F7E8 0004B488  4B FD 3C A1 */	bl "Head__9ENodeListCFv"
@@ -1835,12 +1835,12 @@ lbl_8004F828:
 /* 8004F82C 0004B4CC  7F C3 F3 78 */	mr r3, r30
 /* 8004F830 0004B4D0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F834 0004B4D4  7D 89 03 A6 */	mtctr r12
-/* 8004F838 0004B4D8  4E 80 04 21 */	bctrl 
+/* 8004F838 0004B4D8  4E 80 04 21 */	bctrl
 /* 8004F83C 0004B4DC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8004F840 0004B4E0  7C 7D 1B 78 */	mr r29, r3
 /* 8004F844 0004B4E4  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 8004F848 0004B4E8  7D 89 03 A6 */	mtctr r12
-/* 8004F84C 0004B4EC  4E 80 04 21 */	bctrl 
+/* 8004F84C 0004B4EC  4E 80 04 21 */	bctrl
 /* 8004F850 0004B4F0  2C 03 00 00 */	cmpwi r3, 0
 /* 8004F854 0004B4F4  41 82 00 10 */	beq lbl_8004F864
 /* 8004F858 0004B4F8  7F 83 E3 78 */	mr r3, r28
@@ -1854,7 +1854,7 @@ lbl_8004F864:
 /* 8004F874 0004B514  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8004F878 0004B518  7C 08 03 A6 */	mtlr r0
 /* 8004F87C 0004B51C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004F880 0004B520  4E 80 00 20 */	blr 
+/* 8004F880 0004B520  4E 80 00 20 */	blr
 
 .global "IsSimulatorPaused__Q216InteractorModule16DirectInteractorFv"
 "IsSimulatorPaused__Q216InteractorModule16DirectInteractorFv":
@@ -1870,7 +1870,7 @@ lbl_8004F864:
 /* 8004F8A8 0004B548  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
 /* 8004F8AC 0004B54C  7C 08 03 A6 */	mtlr r0
 /* 8004F8B0 0004B550  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004F8B4 0004B554  4E 80 00 20 */	blr 
+/* 8004F8B4 0004B554  4E 80 00 20 */	blr
 
 .global "ShouldHighlightObject__Q216InteractorModule16DirectInteractorFP8cXObjectf"
 "ShouldHighlightObject__Q216InteractorModule16DirectInteractorFP8cXObjectf":
@@ -1899,7 +1899,7 @@ lbl_8004F908:
 /* 8004F90C 0004B5AC  7F 63 DB 78 */	mr r3, r27
 /* 8004F910 0004B5B0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F914 0004B5B4  7D 89 03 A6 */	mtctr r12
-/* 8004F918 0004B5B8  4E 80 04 21 */	bctrl 
+/* 8004F918 0004B5B8  4E 80 04 21 */	bctrl
 /* 8004F91C 0004B5BC  7C 7E 1B 78 */	mr r30, r3
 /* 8004F920 0004B5C0  4B FC AB 39 */	bl "GetXOb__12ISimInstanceFv"
 /* 8004F924 0004B5C4  48 0E A6 21 */	bl "IsPerson__8cXObjectFv"
@@ -1954,12 +1954,12 @@ lbl_8004F950:
 /* 8004F9E4 0004B684  7F 63 DB 78 */	mr r3, r27
 /* 8004F9E8 0004B688  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8004F9EC 0004B68C  7D 89 03 A6 */	mtctr r12
-/* 8004F9F0 0004B690  4E 80 04 21 */	bctrl 
+/* 8004F9F0 0004B690  4E 80 04 21 */	bctrl
 /* 8004F9F4 0004B694  81 83 00 00 */	lwz r12, 0(r3)
 /* 8004F9F8 0004B698  7C 7B 1B 78 */	mr r27, r3
 /* 8004F9FC 0004B69C  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8004FA00 0004B6A0  7D 89 03 A6 */	mtctr r12
-/* 8004FA04 0004B6A4  4E 80 04 21 */	bctrl 
+/* 8004FA04 0004B6A4  4E 80 04 21 */	bctrl
 /* 8004FA08 0004B6A8  7C 64 1B 78 */	mr r4, r3
 /* 8004FA0C 0004B6AC  38 61 00 80 */	addi r3, r1, 0x80
 /* 8004FA10 0004B6B0  4B FC AE 45 */	bl "__ct__7EBound3FRC7EBound3"
@@ -1972,7 +1972,7 @@ lbl_8004F950:
 /* 8004FA2C 0004B6CC  38 81 00 58 */	addi r4, r1, 0x58
 /* 8004FA30 0004B6D0  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 8004FA34 0004B6D4  7D 89 03 A6 */	mtctr r12
-/* 8004FA38 0004B6D8  4E 80 04 21 */	bctrl 
+/* 8004FA38 0004B6D8  4E 80 04 21 */	bctrl
 /* 8004FA3C 0004B6DC  C0 21 00 58 */	lfs f1, 0x58(r1)
 /* 8004FA40 0004B6E0  38 61 00 4C */	addi r3, r1, 0x4c
 /* 8004FA44 0004B6E4  C0 62 84 58 */	lfs f3, lbl_805D9678-_SDA2_BASE_(r2)
@@ -2003,7 +2003,7 @@ lbl_8004FA9C:
 /* 8004FAA4 0004B744  81 83 00 00 */	lwz r12, 0(r3)
 /* 8004FAA8 0004B748  81 8C 00 90 */	lwz r12, 0x90(r12)
 /* 8004FAAC 0004B74C  7D 89 03 A6 */	mtctr r12
-/* 8004FAB0 0004B750  4E 80 04 21 */	bctrl 
+/* 8004FAB0 0004B750  4E 80 04 21 */	bctrl
 /* 8004FAB4 0004B754  C0 02 84 5C */	lfs f0, lbl_805D967C-_SDA2_BASE_(r2)
 /* 8004FAB8 0004B758  EF C1 00 2A */	fadds f30, f1, f0
 /* 8004FABC 0004B75C  FC 20 F0 90 */	fmr f1, f30
@@ -2046,7 +2046,7 @@ lbl_8004FA9C:
 /* 8004FB50 0004B7F0  7F 63 DB 78 */	mr r3, r27
 /* 8004FB54 0004B7F4  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 8004FB58 0004B7F8  7D 89 03 A6 */	mtctr r12
-/* 8004FB5C 0004B7FC  4E 80 04 21 */	bctrl 
+/* 8004FB5C 0004B7FC  4E 80 04 21 */	bctrl
 /* 8004FB60 0004B800  7C 7C 1B 78 */	mr r28, r3
 /* 8004FB64 0004B804  48 00 00 08 */	b lbl_8004FB6C
 lbl_8004FB68:
@@ -2063,7 +2063,7 @@ lbl_8004FB70:
 /* 8004FB88 0004B828  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 8004FB8C 0004B82C  7C 08 03 A6 */	mtlr r0
 /* 8004FB90 0004B830  38 21 00 E0 */	addi r1, r1, 0xe0
-/* 8004FB94 0004B834  4E 80 00 20 */	blr 
+/* 8004FB94 0004B834  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule16DirectInteractorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule16DirectInteractorFRQ216InteractorModule14InteractorInfo":
@@ -2092,7 +2092,7 @@ lbl_8004FBD8:
 /* 8004FBEC 0004B88C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8004FBF0 0004B890  7C 08 03 A6 */	mtlr r0
 /* 8004FBF4 0004B894  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004FBF8 0004B898  4E 80 00 20 */	blr 
+/* 8004FBF8 0004B898  4E 80 00 20 */	blr
 
 .global "StartCancelTimer__Q216InteractorModule16DirectInteractorFv"
 "StartCancelTimer__Q216InteractorModule16DirectInteractorFv":
@@ -2100,7 +2100,7 @@ lbl_8004FBD8:
 /* 8004FC00 0004B8A0  38 00 00 01 */	li r0, 1
 /* 8004FC04 0004B8A4  98 03 00 82 */	stb r0, 0x82(r3)
 /* 8004FC08 0004B8A8  D0 03 00 84 */	stfs f0, 0x84(r3)
-/* 8004FC0C 0004B8AC  4E 80 00 20 */	blr 
+/* 8004FC0C 0004B8AC  4E 80 00 20 */	blr
 
 .global "ClearCancelTimer__Q216InteractorModule16DirectInteractorFv"
 "ClearCancelTimer__Q216InteractorModule16DirectInteractorFv":
@@ -2108,7 +2108,7 @@ lbl_8004FBD8:
 /* 8004FC14 0004B8B4  38 00 00 00 */	li r0, 0
 /* 8004FC18 0004B8B8  98 03 00 82 */	stb r0, 0x82(r3)
 /* 8004FC1C 0004B8BC  D0 03 00 84 */	stfs f0, 0x84(r3)
-/* 8004FC20 0004B8C0  4E 80 00 20 */	blr 
+/* 8004FC20 0004B8C0  4E 80 00 20 */	blr
 
 .global "CancelQueuedActions__Q216InteractorModule16DirectInteractorFv"
 "CancelQueuedActions__Q216InteractorModule16DirectInteractorFv":
@@ -2140,7 +2140,7 @@ lbl_8004FC7C:
 /* 8004FC80 0004B920  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004FC84 0004B924  7C 08 03 A6 */	mtlr r0
 /* 8004FC88 0004B928  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004FC8C 0004B92C  4E 80 00 20 */	blr 
+/* 8004FC8C 0004B92C  4E 80 00 20 */	blr
 
 .global "CheckCancelTimer__Q216InteractorModule16DirectInteractorFv"
 "CheckCancelTimer__Q216InteractorModule16DirectInteractorFv":
@@ -2155,10 +2155,10 @@ lbl_8004FC7C:
 /* 8004FCB0 0004B950  D0 23 00 84 */	stfs f1, 0x84(r3)
 /* 8004FCB4 0004B954  40 81 00 0C */	ble lbl_8004FCC0
 /* 8004FCB8 0004B958  38 60 00 01 */	li r3, 1
-/* 8004FCBC 0004B95C  4E 80 00 20 */	blr 
+/* 8004FCBC 0004B95C  4E 80 00 20 */	blr
 lbl_8004FCC0:
 /* 8004FCC0 0004B960  38 60 00 00 */	li r3, 0
-/* 8004FCC4 0004B964  4E 80 00 20 */	blr 
+/* 8004FCC4 0004B964  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule16DirectInteractorFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule16DirectInteractorFRQ216InteractorModule20InteractorVisualizer":
@@ -2265,7 +2265,7 @@ lbl_8004FE20:
 /* 8004FE2C 0004BACC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8004FE30 0004BAD0  7C 08 03 A6 */	mtlr r0
 /* 8004FE34 0004BAD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004FE38 0004BAD8  4E 80 00 20 */	blr 
+/* 8004FE38 0004BAD8  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -2397,7 +2397,7 @@ lbl_8004FFFC:
 /* 80050004 0004BCA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80050008 0004BCA8  7C 08 03 A6 */	mtlr r0
 /* 8005000C 0004BCAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80050010 0004BCB0  4E 80 00 20 */	blr 
+/* 80050010 0004BCB0  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
@@ -2405,51 +2405,51 @@ lbl_8004FFFC:
 /* 80050018 0004BCB8  40 82 00 10 */	bne lbl_80050028
 /* 8005001C 0004BCBC  38 00 00 00 */	li r0, 0
 /* 80050020 0004BCC0  98 03 00 31 */	stb r0, 0x31(r3)
-/* 80050024 0004BCC4  4E 80 00 20 */	blr 
+/* 80050024 0004BCC4  4E 80 00 20 */	blr
 lbl_80050028:
 /* 80050028 0004BCC8  2C 04 00 15 */	cmpwi r4, 0x15
 /* 8005002C 0004BCCC  40 82 00 10 */	bne lbl_8005003C
 /* 80050030 0004BCD0  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80050034 0004BCD4  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80050038 0004BCD8  4E 80 00 20 */	blr 
+/* 80050038 0004BCD8  4E 80 00 20 */	blr
 lbl_8005003C:
 /* 8005003C 0004BCDC  2C 04 00 16 */	cmpwi r4, 0x16
 /* 80050040 0004BCE0  40 82 00 10 */	bne lbl_80050050
 /* 80050044 0004BCE4  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80050048 0004BCE8  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8005004C 0004BCEC  4E 80 00 20 */	blr 
+/* 8005004C 0004BCEC  4E 80 00 20 */	blr
 lbl_80050050:
 /* 80050050 0004BCF0  2C 04 00 0F */	cmpwi r4, 0xf
 /* 80050054 0004BCF4  40 82 00 10 */	bne lbl_80050064
 /* 80050058 0004BCF8  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8005005C 0004BCFC  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 80050060 0004BD00  4E 80 00 20 */	blr 
+/* 80050060 0004BD00  4E 80 00 20 */	blr
 lbl_80050064:
 /* 80050064 0004BD04  2C 04 00 10 */	cmpwi r4, 0x10
 /* 80050068 0004BD08  40 82 00 10 */	bne lbl_80050078
 /* 8005006C 0004BD0C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80050070 0004BD10  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 80050074 0004BD14  4E 80 00 20 */	blr 
+/* 80050074 0004BD14  4E 80 00 20 */	blr
 lbl_80050078:
 /* 80050078 0004BD18  2C 04 00 12 */	cmpwi r4, 0x12
-/* 8005007C 0004BD1C  4C 82 00 20 */	bnelr 
+/* 8005007C 0004BD1C  4C 82 00 20 */	bnelr
 /* 80050080 0004BD20  88 03 00 88 */	lbz r0, 0x88(r3)
 /* 80050084 0004BD24  2C 00 00 00 */	cmpwi r0, 0
-/* 80050088 0004BD28  4D 82 00 20 */	beqlr 
+/* 80050088 0004BD28  4D 82 00 20 */	beqlr
 /* 8005008C 0004BD2C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80050090 0004BD30  38 84 75 34 */	addi r4, r4, "_gd"@l
 /* 80050094 0004BD34  80 A4 00 48 */	lwz r5, 0x48(r4)
 /* 80050098 0004BD38  2C 05 00 00 */	cmpwi r5, 0
-/* 8005009C 0004BD3C  4D 82 00 20 */	beqlr 
+/* 8005009C 0004BD3C  4D 82 00 20 */	beqlr
 /* 800500A0 0004BD40  80 05 00 CC */	lwz r0, 0xcc(r5)
 /* 800500A4 0004BD44  2C 00 00 00 */	cmpwi r0, 0
-/* 800500A8 0004BD48  4D 82 00 20 */	beqlr 
+/* 800500A8 0004BD48  4D 82 00 20 */	beqlr
 /* 800500AC 0004BD4C  38 00 00 00 */	li r0, 0
 /* 800500B0 0004BD50  98 03 00 88 */	stb r0, 0x88(r3)
 /* 800500B4 0004BD54  90 03 00 8C */	stw r0, 0x8c(r3)
 /* 800500B8 0004BD58  80 64 00 48 */	lwz r3, 0x48(r4)
 /* 800500BC 0004BD5C  48 15 9B D0 */	b "DeactivateSimSwitcher__9H2DTargetFv"
-/* 800500C0 0004BD60  4E 80 00 20 */	blr 
+/* 800500C0 0004BD60  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -2509,7 +2509,7 @@ lbl_80050174:
 /* 80050180 0004BE20  83 C1 00 10 */	lwz r30, 0x10(r1)
 /* 80050184 0004BE24  7C 08 03 A6 */	mtlr r0
 /* 80050188 0004BE28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005018C 0004BE2C  4E 80 00 20 */	blr 
+/* 8005018C 0004BE2C  4E 80 00 20 */	blr
 
 .global "ResetInputState__Q216InteractorModule16DirectInteractorFv"
 "ResetInputState__Q216InteractorModule16DirectInteractorFv":
@@ -2525,12 +2525,12 @@ lbl_80050174:
 /* 800501B4 0004BE54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800501B8 0004BE58  7C 08 03 A6 */	mtlr r0
 /* 800501BC 0004BE5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800501C0 0004BE60  4E 80 00 20 */	blr 
+/* 800501C0 0004BE60  4E 80 00 20 */	blr
 
 .global "GetSelectionRadius__Q216InteractorModule16DirectInteractorFv"
 "GetSelectionRadius__Q216InteractorModule16DirectInteractorFv":
 /* 800501C4 0004BE64  C0 22 84 28 */	lfs f1, lbl_805D9648-_SDA2_BASE_(r2)
-/* 800501C8 0004BE68  4E 80 00 20 */	blr 
+/* 800501C8 0004BE68  4E 80 00 20 */	blr
 
 .global "ExecuteActionMenu__Q216InteractorModule16DirectInteractorFv"
 "ExecuteActionMenu__Q216InteractorModule16DirectInteractorFv":
@@ -2608,20 +2608,20 @@ lbl_80050270:
 /* 800502D8 0004BF78  7C 7D 1B 78 */	mr r29, r3
 /* 800502DC 0004BF7C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800502E0 0004BF80  7D 89 03 A6 */	mtctr r12
-/* 800502E4 0004BF84  4E 80 04 21 */	bctrl 
+/* 800502E4 0004BF84  4E 80 04 21 */	bctrl
 /* 800502E8 0004BF88  2C 03 00 00 */	cmpwi r3, 0
 /* 800502EC 0004BF8C  41 82 00 98 */	beq lbl_80050384
 /* 800502F0 0004BF90  81 83 00 00 */	lwz r12, 0(r3)
 /* 800502F4 0004BF94  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 800502F8 0004BF98  7D 89 03 A6 */	mtctr r12
-/* 800502FC 0004BF9C  4E 80 04 21 */	bctrl 
+/* 800502FC 0004BF9C  4E 80 04 21 */	bctrl
 /* 80050300 0004BFA0  2C 03 00 00 */	cmpwi r3, 0
 /* 80050304 0004BFA4  41 82 00 80 */	beq lbl_80050384
 /* 80050308 0004BFA8  81 9D 00 18 */	lwz r12, 0x18(r29)
 /* 8005030C 0004BFAC  7F A3 EB 78 */	mr r3, r29
 /* 80050310 0004BFB0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80050314 0004BFB4  7D 89 03 A6 */	mtctr r12
-/* 80050318 0004BFB8  4E 80 04 21 */	bctrl 
+/* 80050318 0004BFB8  4E 80 04 21 */	bctrl
 /* 8005031C 0004BFBC  7C 7E 1B 78 */	mr r30, r3
 /* 80050320 0004BFC0  38 61 00 44 */	addi r3, r1, 0x44
 /* 80050324 0004BFC4  4B FD 31 65 */	bl "Head__9ENodeListCFv"
@@ -2648,7 +2648,7 @@ lbl_80050364:
 /* 80050368 0004C008  7F A3 EB 78 */	mr r3, r29
 /* 8005036C 0004C00C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80050370 0004C010  7D 89 03 A6 */	mtctr r12
-/* 80050374 0004C014  4E 80 04 21 */	bctrl 
+/* 80050374 0004C014  4E 80 04 21 */	bctrl
 /* 80050378 0004C018  7C 64 1B 78 */	mr r4, r3
 /* 8005037C 0004C01C  38 61 00 44 */	addi r3, r1, 0x44
 /* 80050380 0004C020  48 00 0A B1 */	bl "AddHead__26TNodeList<P12ISimInstance>FP12ISimInstance"
@@ -2670,7 +2670,7 @@ lbl_80050384:
 /* 800503BC 0004C05C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 800503C0 0004C060  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800503C4 0004C064  7D 89 03 A6 */	mtctr r12
-/* 800503C8 0004C068  4E 80 04 21 */	bctrl 
+/* 800503C8 0004C068  4E 80 04 21 */	bctrl
 /* 800503CC 0004C06C  7C 7C 1B 78 */	mr r28, r3
 /* 800503D0 0004C070  38 61 00 38 */	addi r3, r1, 0x38
 /* 800503D4 0004C074  4B FC 85 C5 */	bl "__ct__5EVec3Fv"
@@ -2679,7 +2679,7 @@ lbl_80050384:
 /* 800503E0 0004C080  38 81 00 38 */	addi r4, r1, 0x38
 /* 800503E4 0004C084  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 800503E8 0004C088  7D 89 03 A6 */	mtctr r12
-/* 800503EC 0004C08C  4E 80 04 21 */	bctrl 
+/* 800503EC 0004C08C  4E 80 04 21 */	bctrl
 lbl_800503F0:
 /* 800503F0 0004C090  38 61 00 44 */	addi r3, r1, 0x44
 /* 800503F4 0004C094  3B 80 00 00 */	li r28, 0
@@ -2704,13 +2704,13 @@ lbl_8005040C:
 /* 8005043C 0004C0DC  38 81 00 2C */	addi r4, r1, 0x2c
 /* 80050440 0004C0E0  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 80050444 0004C0E4  7D 89 03 A6 */	mtctr r12
-/* 80050448 0004C0E8  4E 80 04 21 */	bctrl 
+/* 80050448 0004C0E8  4E 80 04 21 */	bctrl
 /* 8005044C 0004C0EC  81 9A 00 00 */	lwz r12, 0(r26)
 /* 80050450 0004C0F0  7F 43 D3 78 */	mr r3, r26
 /* 80050454 0004C0F4  38 81 00 20 */	addi r4, r1, 0x20
 /* 80050458 0004C0F8  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 8005045C 0004C0FC  7D 89 03 A6 */	mtctr r12
-/* 80050460 0004C100  4E 80 04 21 */	bctrl 
+/* 80050460 0004C100  4E 80 04 21 */	bctrl
 /* 80050464 0004C104  38 61 00 14 */	addi r3, r1, 0x14
 /* 80050468 0004C108  38 81 00 38 */	addi r4, r1, 0x38
 /* 8005046C 0004C10C  38 A1 00 2C */	addi r5, r1, 0x2c
@@ -2782,7 +2782,7 @@ lbl_80050558:
 /* 8005055C 0004C1FC  7F E3 FB 78 */	mr r3, r31
 /* 80050560 0004C200  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80050564 0004C204  7D 89 03 A6 */	mtctr r12
-/* 80050568 0004C208  4E 80 04 21 */	bctrl 
+/* 80050568 0004C208  4E 80 04 21 */	bctrl
 /* 8005056C 0004C20C  38 61 00 44 */	addi r3, r1, 0x44
 /* 80050570 0004C210  38 80 FF FF */	li r4, -1
 /* 80050574 0004C214  4B FF D9 A5 */	bl "__dt__26TNodeList<P12ISimInstance>Fv"
@@ -2793,7 +2793,7 @@ lbl_80050578:
 /* 80050584 0004C224  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80050588 0004C228  7C 08 03 A6 */	mtlr r0
 /* 8005058C 0004C22C  38 21 00 70 */	addi r1, r1, 0x70
-/* 80050590 0004C230  4E 80 00 20 */	blr 
+/* 80050590 0004C230  4E 80 00 20 */	blr
 
 .global "ExecuteObjectActionMenu__Q216InteractorModule16DirectInteractorFP8cXObject"
 "ExecuteObjectActionMenu__Q216InteractorModule16DirectInteractorFP8cXObject":
@@ -2825,7 +2825,7 @@ lbl_800505E4:
 /* 800505F4 0004C294  7F C3 F3 78 */	mr r3, r30
 /* 800505F8 0004C298  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800505FC 0004C29C  7D 89 03 A6 */	mtctr r12
-/* 80050600 0004C2A0  4E 80 04 21 */	bctrl 
+/* 80050600 0004C2A0  4E 80 04 21 */	bctrl
 /* 80050604 0004C2A4  7C 64 1B 78 */	mr r4, r3
 /* 80050608 0004C2A8  38 61 00 08 */	addi r3, r1, 8
 /* 8005060C 0004C2AC  48 00 08 39 */	bl "AddTail__26TNodeList<P12ISimInstance>FP12ISimInstance"
@@ -2846,7 +2846,7 @@ lbl_80050638:
 /* 80050644 0004C2E4  7F A3 EB 78 */	mr r3, r29
 /* 80050648 0004C2E8  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8005064C 0004C2EC  7D 89 03 A6 */	mtctr r12
-/* 80050650 0004C2F0  4E 80 04 21 */	bctrl 
+/* 80050650 0004C2F0  4E 80 04 21 */	bctrl
 /* 80050654 0004C2F4  38 61 00 08 */	addi r3, r1, 8
 /* 80050658 0004C2F8  38 80 FF FF */	li r4, -1
 /* 8005065C 0004C2FC  4B FF D8 BD */	bl "__dt__26TNodeList<P12ISimInstance>Fv"
@@ -2857,7 +2857,7 @@ lbl_80050660:
 /* 8005066C 0004C30C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80050670 0004C310  7C 08 03 A6 */	mtlr r0
 /* 80050674 0004C314  38 21 00 30 */	addi r1, r1, 0x30
-/* 80050678 0004C318  4E 80 00 20 */	blr 
+/* 80050678 0004C318  4E 80 00 20 */	blr
 
 .global "StopInObjectMenu__Q216InteractorModule16DirectInteractorFv"
 "StopInObjectMenu__Q216InteractorModule16DirectInteractorFv":
@@ -2867,10 +2867,10 @@ lbl_80050660:
 /* 80050688 0004C328  38 84 75 34 */	addi r4, r4, "_gd"@l
 /* 8005068C 0004C32C  80 64 00 44 */	lwz r3, 0x44(r4)
 /* 80050690 0004C330  2C 03 00 00 */	cmpwi r3, 0
-/* 80050694 0004C334  4D 82 00 20 */	beqlr 
+/* 80050694 0004C334  4D 82 00 20 */	beqlr
 /* 80050698 0004C338  38 80 00 00 */	li r4, 0
 /* 8005069C 0004C33C  48 17 B4 D4 */	b "CloseMenu__9HUDTargetFb"
-/* 800506A0 0004C340  4E 80 00 20 */	blr 
+/* 800506A0 0004C340  4E 80 00 20 */	blr
 
 .global "ChooseAction__Q216InteractorModule16DirectInteractorFP11Interaction"
 "ChooseAction__Q216InteractorModule16DirectInteractorFP11Interaction":
@@ -2895,7 +2895,7 @@ lbl_800506E0:
 /* 800506E4 0004C384  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800506E8 0004C388  7C 08 03 A6 */	mtlr r0
 /* 800506EC 0004C38C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800506F0 0004C390  4E 80 00 20 */	blr 
+/* 800506F0 0004C390  4E 80 00 20 */	blr
 
 .global "SetupCamera__Q216InteractorModule16DirectInteractorFv"
 "SetupCamera__Q216InteractorModule16DirectInteractorFv":
@@ -2916,7 +2916,7 @@ lbl_80050724:
 /* 80050728 0004C3C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005072C 0004C3CC  7C 08 03 A6 */	mtlr r0
 /* 80050730 0004C3D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050734 0004C3D4  4E 80 00 20 */	blr 
+/* 80050734 0004C3D4  4E 80 00 20 */	blr
 
 .global "UpdateObjectHighlights__Q216InteractorModule16DirectInteractorFP11EIObjectMan"
 "UpdateObjectHighlights__Q216InteractorModule16DirectInteractorFP11EIObjectMan":
@@ -3003,7 +3003,7 @@ lbl_8005085C:
 /* 80050864 0004C504  7F 43 D3 78 */	mr r3, r26
 /* 80050868 0004C508  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8005086C 0004C50C  7D 89 03 A6 */	mtctr r12
-/* 80050870 0004C510  4E 80 04 21 */	bctrl 
+/* 80050870 0004C510  4E 80 04 21 */	bctrl
 /* 80050874 0004C514  C0 22 84 64 */	lfs f1, lbl_805D9684-_SDA2_BASE_(r2)
 /* 80050878 0004C518  7C 79 1B 78 */	mr r25, r3
 /* 8005087C 0004C51C  7F E3 FB 78 */	mr r3, r31
@@ -3021,7 +3021,7 @@ lbl_800508A4:
 /* 800508A8 0004C548  7F 23 CB 78 */	mr r3, r25
 /* 800508AC 0004C54C  81 8C 01 28 */	lwz r12, 0x128(r12)
 /* 800508B0 0004C550  7D 89 03 A6 */	mtctr r12
-/* 800508B4 0004C554  4E 80 04 21 */	bctrl 
+/* 800508B4 0004C554  4E 80 04 21 */	bctrl
 /* 800508B8 0004C558  3B BD 00 04 */	addi r29, r29, 4
 lbl_800508BC:
 /* 800508BC 0004C55C  7F C3 F3 78 */	mr r3, r30
@@ -3043,7 +3043,7 @@ lbl_800508BC:
 /* 800508FC 0004C59C  7F 83 E3 78 */	mr r3, r28
 /* 80050900 0004C5A0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80050904 0004C5A4  7D 89 03 A6 */	mtctr r12
-/* 80050908 0004C5A8  4E 80 04 21 */	bctrl 
+/* 80050908 0004C5A8  4E 80 04 21 */	bctrl
 /* 8005090C 0004C5AC  2C 03 00 00 */	cmpwi r3, 0
 /* 80050910 0004C5B0  7C 7A 1B 78 */	mr r26, r3
 /* 80050914 0004C5B4  41 82 00 5C */	beq lbl_80050970
@@ -3053,7 +3053,7 @@ lbl_800508BC:
 /* 80050924 0004C5C4  7F 23 CB 78 */	mr r3, r25
 /* 80050928 0004C5C8  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8005092C 0004C5CC  7D 89 03 A6 */	mtctr r12
-/* 80050930 0004C5D0  4E 80 04 21 */	bctrl 
+/* 80050930 0004C5D0  4E 80 04 21 */	bctrl
 /* 80050934 0004C5D4  7C 1A 18 40 */	cmplw r26, r3
 /* 80050938 0004C5D8  40 82 00 0C */	bne lbl_80050944
 /* 8005093C 0004C5DC  2C 1B 00 00 */	cmpwi r27, 0
@@ -3063,7 +3063,7 @@ lbl_80050944:
 /* 80050948 0004C5E8  7F 43 D3 78 */	mr r3, r26
 /* 8005094C 0004C5EC  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 80050950 0004C5F0  7D 89 03 A6 */	mtctr r12
-/* 80050954 0004C5F4  4E 80 04 21 */	bctrl 
+/* 80050954 0004C5F4  4E 80 04 21 */	bctrl
 /* 80050958 0004C5F8  2C 03 00 00 */	cmpwi r3, 0
 /* 8005095C 0004C5FC  41 82 00 14 */	beq lbl_80050970
 /* 80050960 0004C600  7F 43 D3 78 */	mr r3, r26
@@ -3090,7 +3090,7 @@ lbl_80050980:
 /* 800509AC 0004C64C  81 9A 00 18 */	lwz r12, 0x18(r26)
 /* 800509B0 0004C650  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800509B4 0004C654  7D 89 03 A6 */	mtctr r12
-/* 800509B8 0004C658  4E 80 04 21 */	bctrl 
+/* 800509B8 0004C658  4E 80 04 21 */	bctrl
 /* 800509BC 0004C65C  7C 7A 1B 78 */	mr r26, r3
 /* 800509C0 0004C660  38 80 00 08 */	li r4, 8
 /* 800509C4 0004C664  38 A0 00 01 */	li r5, 1
@@ -3099,7 +3099,7 @@ lbl_80050980:
 /* 800509D0 0004C670  7F 43 D3 78 */	mr r3, r26
 /* 800509D4 0004C674  81 8C 01 28 */	lwz r12, 0x128(r12)
 /* 800509D8 0004C678  7D 89 03 A6 */	mtctr r12
-/* 800509DC 0004C67C  4E 80 04 21 */	bctrl 
+/* 800509DC 0004C67C  4E 80 04 21 */	bctrl
 lbl_800509E0:
 /* 800509E0 0004C680  3B 39 00 04 */	addi r25, r25, 4
 lbl_800509E4:
@@ -3126,7 +3126,7 @@ lbl_80050A18:
 /* 80050A30 0004C6D0  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80050A34 0004C6D4  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80050A38 0004C6D8  7D 89 03 A6 */	mtctr r12
-/* 80050A3C 0004C6DC  4E 80 04 21 */	bctrl 
+/* 80050A3C 0004C6DC  4E 80 04 21 */	bctrl
 /* 80050A40 0004C6E0  38 80 00 08 */	li r4, 8
 /* 80050A44 0004C6E4  38 A0 00 00 */	li r5, 0
 /* 80050A48 0004C6E8  48 1E A1 C5 */	bl "SetHighlight__12ISimInstanceFUib"
@@ -3198,7 +3198,7 @@ lbl_80050A4C:
 /* 80050B4C 0004C7EC  81 9A 00 18 */	lwz r12, 0x18(r26)
 /* 80050B50 0004C7F0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80050B54 0004C7F4  7D 89 03 A6 */	mtctr r12
-/* 80050B58 0004C7F8  4E 80 04 21 */	bctrl 
+/* 80050B58 0004C7F8  4E 80 04 21 */	bctrl
 /* 80050B5C 0004C7FC  7C 7A 1B 78 */	mr r26, r3
 /* 80050B60 0004C800  38 80 00 08 */	li r4, 8
 /* 80050B64 0004C804  38 A0 00 01 */	li r5, 1
@@ -3207,7 +3207,7 @@ lbl_80050A4C:
 /* 80050B70 0004C810  7F 43 D3 78 */	mr r3, r26
 /* 80050B74 0004C814  81 8C 01 28 */	lwz r12, 0x128(r12)
 /* 80050B78 0004C818  7D 89 03 A6 */	mtctr r12
-/* 80050B7C 0004C81C  4E 80 04 21 */	bctrl 
+/* 80050B7C 0004C81C  4E 80 04 21 */	bctrl
 lbl_80050B80:
 /* 80050B80 0004C820  3B 39 00 01 */	addi r25, r25, 1
 lbl_80050B84:
@@ -3223,7 +3223,7 @@ lbl_80050B8C:
 /* 80050BA4 0004C844  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80050BA8 0004C848  7C 08 03 A6 */	mtlr r0
 /* 80050BAC 0004C84C  38 21 00 80 */	addi r1, r1, 0x80
-/* 80050BB0 0004C850  4E 80 00 20 */	blr 
+/* 80050BB0 0004C850  4E 80 00 20 */	blr
 
 .global "SetAutonomous__Q216InteractorModule16DirectInteractorFv"
 "SetAutonomous__Q216InteractorModule16DirectInteractorFv":
@@ -3233,10 +3233,10 @@ lbl_80050B8C:
 /* 80050BC0 0004C860  38 84 75 34 */	addi r4, r4, "_gd"@l
 /* 80050BC4 0004C864  80 64 00 44 */	lwz r3, 0x44(r4)
 /* 80050BC8 0004C868  2C 03 00 00 */	cmpwi r3, 0
-/* 80050BCC 0004C86C  4D 82 00 20 */	beqlr 
+/* 80050BCC 0004C86C  4D 82 00 20 */	beqlr
 /* 80050BD0 0004C870  38 80 00 00 */	li r4, 0
 /* 80050BD4 0004C874  48 17 AF 9C */	b "CloseMenu__9HUDTargetFb"
-/* 80050BD8 0004C878  4E 80 00 20 */	blr 
+/* 80050BD8 0004C878  4E 80 00 20 */	blr
 
 .global "ResetIdleTime__Q216InteractorModule16DirectInteractorFv"
 "ResetIdleTime__Q216InteractorModule16DirectInteractorFv":
@@ -3287,7 +3287,7 @@ lbl_80050C78:
 /* 80050C80 0004C920  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80050C84 0004C924  7C 08 03 A6 */	mtlr r0
 /* 80050C88 0004C928  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050C8C 0004C92C  4E 80 00 20 */	blr 
+/* 80050C8C 0004C92C  4E 80 00 20 */	blr
 
 .global "ClearUsingEdithMenu__Q216InteractorModule16DirectInteractorFv"
 "ClearUsingEdithMenu__Q216InteractorModule16DirectInteractorFv":
@@ -3306,7 +3306,7 @@ lbl_80050CBC:
 /* 80050CBC 0004C95C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050CC0 0004C960  7C 08 03 A6 */	mtlr r0
 /* 80050CC4 0004C964  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050CC8 0004C968  4E 80 00 20 */	blr 
+/* 80050CC8 0004C968  4E 80 00 20 */	blr
 
 .global "__sinit_game_interactor_unity_cpp"
 "__sinit_game_interactor_unity_cpp":
@@ -3362,7 +3362,7 @@ lbl_80050CBC:
 /* 80050D90 0004CA30  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80050D94 0004CA34  7C 08 03 A6 */	mtlr r0
 /* 80050D98 0004CA38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050D9C 0004CA3C  4E 80 00 20 */	blr 
+/* 80050D9C 0004CA3C  4E 80 00 20 */	blr
 
 .global "__ct__26TNodeList<P12ISimInstance>Fb"
 "__ct__26TNodeList<P12ISimInstance>Fb":
@@ -3381,7 +3381,7 @@ lbl_80050CBC:
 /* 80050DD0 0004CA70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050DD4 0004CA74  7C 08 03 A6 */	mtlr r0
 /* 80050DD8 0004CA78  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050DDC 0004CA7C  4E 80 00 20 */	blr 
+/* 80050DDC 0004CA7C  4E 80 00 20 */	blr
 
 .global "__as__26TNodeList<P12ISimInstance>FRC26TNodeList<P12ISimInstance>"
 "__as__26TNodeList<P12ISimInstance>FRC26TNodeList<P12ISimInstance>":
@@ -3402,7 +3402,7 @@ lbl_80050CBC:
 /* 80050E18 0004CAB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050E1C 0004CABC  7C 08 03 A6 */	mtlr r0
 /* 80050E20 0004CAC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050E24 0004CAC4  4E 80 00 20 */	blr 
+/* 80050E24 0004CAC4  4E 80 00 20 */	blr
 
 .global "AddTail__26TNodeList<P12ISimInstance>FRC26TNodeList<P12ISimInstance>"
 "AddTail__26TNodeList<P12ISimInstance>FRC26TNodeList<P12ISimInstance>":
@@ -3465,7 +3465,7 @@ lbl_80050CBC:
 /* 80050E84 0004CB24  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050E88 0004CB28  7C 08 03 A6 */	mtlr r0
 /* 80050E8C 0004CB2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050E90 0004CB30  4E 80 00 20 */	blr 
+/* 80050E90 0004CB30  4E 80 00 20 */	blr
 
 .global "__ct__28TNodeList<P14HRObjectRecord>Fb"
 "__ct__28TNodeList<P14HRObjectRecord>Fb":
@@ -3484,7 +3484,7 @@ lbl_80050CBC:
 /* 80050EC4 0004CB64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050EC8 0004CB68  7C 08 03 A6 */	mtlr r0
 /* 80050ECC 0004CB6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050ED0 0004CB70  4E 80 00 20 */	blr 
+/* 80050ED0 0004CB70  4E 80 00 20 */	blr
 
 .global "__ct__26TNodeList<P12HRWallRecord>Fb"
 "__ct__26TNodeList<P12HRWallRecord>Fb":
@@ -3503,7 +3503,7 @@ lbl_80050CBC:
 /* 80050F04 0004CBA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050F08 0004CBA8  7C 08 03 A6 */	mtlr r0
 /* 80050F0C 0004CBAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050F10 0004CBB0  4E 80 00 20 */	blr 
+/* 80050F10 0004CBB0  4E 80 00 20 */	blr
 
 .global "__ct__27TNodeList<P13HRFloorRecord>Fb"
 "__ct__27TNodeList<P13HRFloorRecord>Fb":
@@ -3522,7 +3522,7 @@ lbl_80050CBC:
 /* 80050F44 0004CBE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80050F48 0004CBE8  7C 08 03 A6 */	mtlr r0
 /* 80050F4C 0004CBEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050F50 0004CBF0  4E 80 00 20 */	blr 
+/* 80050F50 0004CBF0  4E 80 00 20 */	blr
 
 .global "DeleteAll__33TNodeList<P19HRObjectFloorRecord>Fv"
 "DeleteAll__33TNodeList<P19HRObjectFloorRecord>Fv":
@@ -3551,7 +3551,7 @@ lbl_80050F7C:
 /* 80050FA8 0004CC48  38 80 00 01 */	li r4, 1
 /* 80050FAC 0004CC4C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80050FB0 0004CC50  7D 89 03 A6 */	mtctr r12
-/* 80050FB4 0004CC54  4E 80 04 21 */	bctrl 
+/* 80050FB4 0004CC54  4E 80 04 21 */	bctrl
 lbl_80050FB8:
 /* 80050FB8 0004CC58  7F DF F3 78 */	mr r31, r30
 lbl_80050FBC:
@@ -3567,7 +3567,7 @@ lbl_80050FBC:
 /* 80050FE0 0004CC80  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80050FE4 0004CC84  7C 08 03 A6 */	mtlr r0
 /* 80050FE8 0004CC88  38 21 00 20 */	addi r1, r1, 0x20
-/* 80050FEC 0004CC8C  4E 80 00 20 */	blr 
+/* 80050FEC 0004CC8C  4E 80 00 20 */	blr
 
 .global "GetData__33TNodeList<P19HRObjectFloorRecord>FP17NLIteratorPtrType"
 "GetData__33TNodeList<P19HRObjectFloorRecord>FP17NLIteratorPtrType":
@@ -3600,7 +3600,7 @@ lbl_8005101C:
 /* 80051048 0004CCE8  38 80 00 01 */	li r4, 1
 /* 8005104C 0004CCEC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80051050 0004CCF0  7D 89 03 A6 */	mtctr r12
-/* 80051054 0004CCF4  4E 80 04 21 */	bctrl 
+/* 80051054 0004CCF4  4E 80 04 21 */	bctrl
 lbl_80051058:
 /* 80051058 0004CCF8  7F DF F3 78 */	mr r31, r30
 lbl_8005105C:
@@ -3616,7 +3616,7 @@ lbl_8005105C:
 /* 80051080 0004CD20  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80051084 0004CD24  7C 08 03 A6 */	mtlr r0
 /* 80051088 0004CD28  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005108C 0004CD2C  4E 80 00 20 */	blr 
+/* 8005108C 0004CD2C  4E 80 00 20 */	blr
 
 .global "GetData__28TNodeList<P14HRObjectRecord>FP17NLIteratorPtrType"
 "GetData__28TNodeList<P14HRObjectRecord>FP17NLIteratorPtrType":
@@ -3649,7 +3649,7 @@ lbl_800510BC:
 /* 800510E8 0004CD88  38 80 00 01 */	li r4, 1
 /* 800510EC 0004CD8C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 800510F0 0004CD90  7D 89 03 A6 */	mtctr r12
-/* 800510F4 0004CD94  4E 80 04 21 */	bctrl 
+/* 800510F4 0004CD94  4E 80 04 21 */	bctrl
 lbl_800510F8:
 /* 800510F8 0004CD98  7F DF F3 78 */	mr r31, r30
 lbl_800510FC:
@@ -3665,7 +3665,7 @@ lbl_800510FC:
 /* 80051120 0004CDC0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80051124 0004CDC4  7C 08 03 A6 */	mtlr r0
 /* 80051128 0004CDC8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005112C 0004CDCC  4E 80 00 20 */	blr 
+/* 8005112C 0004CDCC  4E 80 00 20 */	blr
 
 .global "GetData__26TNodeList<P12HRWallRecord>FP17NLIteratorPtrType"
 "GetData__26TNodeList<P12HRWallRecord>FP17NLIteratorPtrType":
@@ -3698,7 +3698,7 @@ lbl_8005115C:
 /* 80051188 0004CE28  38 80 00 01 */	li r4, 1
 /* 8005118C 0004CE2C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80051190 0004CE30  7D 89 03 A6 */	mtctr r12
-/* 80051194 0004CE34  4E 80 04 21 */	bctrl 
+/* 80051194 0004CE34  4E 80 04 21 */	bctrl
 lbl_80051198:
 /* 80051198 0004CE38  7F DF F3 78 */	mr r31, r30
 lbl_8005119C:
@@ -3714,7 +3714,7 @@ lbl_8005119C:
 /* 800511C0 0004CE60  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800511C4 0004CE64  7C 08 03 A6 */	mtlr r0
 /* 800511C8 0004CE68  38 21 00 20 */	addi r1, r1, 0x20
-/* 800511CC 0004CE6C  4E 80 00 20 */	blr 
+/* 800511CC 0004CE6C  4E 80 00 20 */	blr
 
 .global "GetData__27TNodeList<P13HRFloorRecord>FP17NLIteratorPtrType"
 "GetData__27TNodeList<P13HRFloorRecord>FP17NLIteratorPtrType":
@@ -3738,7 +3738,7 @@ lbl_800511FC:
 /* 80051204 0004CEA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051208 0004CEA8  7C 08 03 A6 */	mtlr r0
 /* 8005120C 0004CEAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051210 0004CEB0  4E 80 00 20 */	blr 
+/* 80051210 0004CEB0  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule10Interactor16InteractorParamsFv"
 "__dt__Q316InteractorModule10Interactor16InteractorParamsFv":
@@ -3758,14 +3758,14 @@ lbl_8005123C:
 /* 80051244 0004CEE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051248 0004CEE8  7C 08 03 A6 */	mtlr r0
 /* 8005124C 0004CEEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051250 0004CEF0  4E 80 00 20 */	blr 
+/* 80051250 0004CEF0  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule10Interactor16InteractorParamsFv"
 "__ct__Q316InteractorModule10Interactor16InteractorParamsFv":
 /* 80051254 0004CEF4  3C 80 80 42 */	lis r4, "__vt__Q316InteractorModule10Interactor16InteractorParams"@ha
 /* 80051258 0004CEF8  38 84 58 8C */	addi r4, r4, "__vt__Q316InteractorModule10Interactor16InteractorParams"@l
 /* 8005125C 0004CEFC  90 83 00 00 */	stw r4, 0(r3)
-/* 80051260 0004CF00  4E 80 00 20 */	blr 
+/* 80051260 0004CF00  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule10Interactor12CallbackDataFv"
 "__dt__Q316InteractorModule10Interactor12CallbackDataFv":
@@ -3785,7 +3785,7 @@ lbl_8005128C:
 /* 80051294 0004CF34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051298 0004CF38  7C 08 03 A6 */	mtlr r0
 /* 8005129C 0004CF3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800512A0 0004CF40  4E 80 00 20 */	blr 
+/* 800512A0 0004CF40  4E 80 00 20 */	blr
 
 .global "NotifyClient__Q216InteractorModule10InteractorFQ316InteractorModule10Interactor23ClientNotificationStateRQ316InteractorModule10Interactor12CallbackDataRCQ316InteractorModule10Interactor16InteractorParams"
 "NotifyClient__Q216InteractorModule10InteractorFQ316InteractorModule10Interactor23ClientNotificationStateRQ316InteractorModule10Interactor12CallbackDataRCQ316InteractorModule10Interactor16InteractorParams":
@@ -3795,7 +3795,7 @@ lbl_8005128C:
 /* 800512B0 0004CF50  7C 83 23 78 */	mr r3, r4
 /* 800512B4 0004CF54  90 04 00 08 */	stw r0, 8(r4)
 /* 800512B8 0004CF58  7D 89 03 A6 */	mtctr r12
-/* 800512BC 0004CF5C  4E 80 04 20 */	bctr 
+/* 800512BC 0004CF5C  4E 80 04 20 */	bctr
 
 .global "__ct__Q316InteractorModule12FloorPainter12CallbackDataFv"
 "__ct__Q316InteractorModule12FloorPainter12CallbackDataFv":
@@ -3813,14 +3813,14 @@ lbl_8005128C:
 /* 800512EC 0004CF8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800512F0 0004CF90  7C 08 03 A6 */	mtlr r0
 /* 800512F4 0004CF94  38 21 00 10 */	addi r1, r1, 0x10
-/* 800512F8 0004CF98  4E 80 00 20 */	blr 
+/* 800512F8 0004CF98  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule10Interactor12CallbackDataFv"
 "__ct__Q316InteractorModule10Interactor12CallbackDataFv":
 /* 800512FC 0004CF9C  3C 80 80 42 */	lis r4, "__vt__Q316InteractorModule10Interactor12CallbackData"@ha
 /* 80051300 0004CFA0  38 84 58 98 */	addi r4, r4, "__vt__Q316InteractorModule10Interactor12CallbackData"@l
 /* 80051304 0004CFA4  90 83 00 00 */	stw r4, 0(r3)
-/* 80051308 0004CFA8  4E 80 00 20 */	blr 
+/* 80051308 0004CFA8  4E 80 00 20 */	blr
 
 .global "InBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorF5EVec2"
 "InBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorF5EVec2":
@@ -3846,7 +3846,7 @@ lbl_8005128C:
 /* 80051358 0004CFF8  38 00 00 01 */	li r0, 1
 lbl_8005135C:
 /* 8005135C 0004CFFC  7C 03 03 78 */	mr r3, r0
-/* 80051360 0004D000  4E 80 00 20 */	blr 
+/* 80051360 0004D000  4E 80 00 20 */	blr
 
 .global "UsingValidBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFv"
 "UsingValidBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFv":
@@ -3862,7 +3862,7 @@ lbl_8005135C:
 /* 80051388 0004D028  38 00 00 01 */	li r0, 1
 lbl_8005138C:
 /* 8005138C 0004D02C  7C 03 03 78 */	mr r3, r0
-/* 80051390 0004D030  4E 80 00 20 */	blr 
+/* 80051390 0004D030  4E 80 00 20 */	blr
 
 .global "SetBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFffff"
 "SetBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFffff":
@@ -3870,7 +3870,7 @@ lbl_8005138C:
 /* 80051398 0004D038  D0 43 00 08 */	stfs f2, 8(r3)
 /* 8005139C 0004D03C  D0 63 00 0C */	stfs f3, 0xc(r3)
 /* 800513A0 0004D040  D0 83 00 10 */	stfs f4, 0x10(r3)
-/* 800513A4 0004D044  4E 80 00 20 */	blr 
+/* 800513A4 0004D044  4E 80 00 20 */	blr
 
 .global "GetCutoffs__Q216InteractorModule21CursorMovementTrackerFRiRiRiRi"
 "GetCutoffs__Q216InteractorModule21CursorMovementTrackerFRiRiRiRi":
@@ -3882,56 +3882,56 @@ lbl_8005138C:
 /* 800513BC 0004D05C  90 06 00 00 */	stw r0, 0(r6)
 /* 800513C0 0004D060  80 03 00 1C */	lwz r0, 0x1c(r3)
 /* 800513C4 0004D064  90 07 00 00 */	stw r0, 0(r7)
-/* 800513C8 0004D068  4E 80 00 20 */	blr 
+/* 800513C8 0004D068  4E 80 00 20 */	blr
 
 .global "AddIdleTime__Q216InteractorModule10InteractorFf"
 "AddIdleTime__Q216InteractorModule10InteractorFf":
 /* 800513CC 0004D06C  C0 03 00 5C */	lfs f0, 0x5c(r3)
 /* 800513D0 0004D070  EC 00 08 2A */	fadds f0, f0, f1
 /* 800513D4 0004D074  D0 03 00 5C */	stfs f0, 0x5c(r3)
-/* 800513D8 0004D078  4E 80 00 20 */	blr 
+/* 800513D8 0004D078  4E 80 00 20 */	blr
 
 .global "ResetIdleTime__Q216InteractorModule10InteractorFv"
 "ResetIdleTime__Q216InteractorModule10InteractorFv":
 /* 800513DC 0004D07C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 800513E0 0004D080  D0 03 00 5C */	stfs f0, 0x5c(r3)
-/* 800513E4 0004D084  4E 80 00 20 */	blr 
+/* 800513E4 0004D084  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
-/* 800513E8 0004D088  4E 80 00 20 */	blr 
+/* 800513E8 0004D088  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
-/* 800513EC 0004D08C  4E 80 00 20 */	blr 
+/* 800513EC 0004D08C  4E 80 00 20 */	blr
 
 .global "GetBluePrintGrid__Q216InteractorModule10InteractorFv"
 "GetBluePrintGrid__Q216InteractorModule10InteractorFv":
 /* 800513F0 0004D090  80 6D B3 48 */	lwz r3, "s_pBPG__Q216InteractorModule10Interactor"-_SDA_BASE_(r13)
-/* 800513F4 0004D094  4E 80 00 20 */	blr 
+/* 800513F4 0004D094  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule10Interactor11OverlapDataFPC7EBound3PC8cXObject"
 "__ct__Q316InteractorModule10Interactor11OverlapDataFPC7EBound3PC8cXObject":
 /* 800513F8 0004D098  90 83 00 00 */	stw r4, 0(r3)
 /* 800513FC 0004D09C  90 A3 00 04 */	stw r5, 4(r3)
-/* 80051400 0004D0A0  4E 80 00 20 */	blr 
+/* 80051400 0004D0A0  4E 80 00 20 */	blr
 
 .global "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData"
 "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData":
-/* 80051404 0004D0A4  4E 80 00 20 */	blr 
+/* 80051404 0004D0A4  4E 80 00 20 */	blr
 
 .global "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject"
 "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject":
-/* 80051408 0004D0A8  4E 80 00 20 */	blr 
+/* 80051408 0004D0A8  4E 80 00 20 */	blr
 
 .global "StopInObjectMenu__Q216InteractorModule10InteractorFv"
 "StopInObjectMenu__Q216InteractorModule10InteractorFv":
-/* 8005140C 0004D0AC  4E 80 00 20 */	blr 
+/* 8005140C 0004D0AC  4E 80 00 20 */	blr
 
 .global "ChooseAction__Q216InteractorModule10InteractorFP11Interaction"
 "ChooseAction__Q216InteractorModule10InteractorFP11Interaction":
 /* 80051410 0004D0B0  38 60 00 00 */	li r3, 0
-/* 80051414 0004D0B4  4E 80 00 20 */	blr 
+/* 80051414 0004D0B4  4E 80 00 20 */	blr
 
 .global "InitDirectControlData__11FlashPiMenuFv"
 "InitDirectControlData__11FlashPiMenuFv":
@@ -3945,12 +3945,12 @@ lbl_8005138C:
 /* 80051428 0004D0C8  98 03 00 04 */	stb r0, 4(r3)
 /* 8005142C 0004D0CC  98 03 00 05 */	stb r0, 5(r3)
 /* 80051430 0004D0D0  98 03 00 06 */	stb r0, 6(r3)
-/* 80051434 0004D0D4  4E 80 00 20 */	blr 
+/* 80051434 0004D0D4  4E 80 00 20 */	blr
 
 .global "IsExpandedMenuLocked__11FlashPiMenuFv"
 "IsExpandedMenuLocked__11FlashPiMenuFv":
 /* 80051438 0004D0D8  88 63 00 11 */	lbz r3, 0x11(r3)
-/* 8005143C 0004D0DC  4E 80 00 20 */	blr 
+/* 8005143C 0004D0DC  4E 80 00 20 */	blr
 
 .global "ResetDirectControlData__11FlashPiMenuFv"
 "ResetDirectControlData__11FlashPiMenuFv":
@@ -3965,7 +3965,7 @@ lbl_8005138C:
 .global "GetPlayer__8GameDataFv"
 "GetPlayer__8GameDataFv":
 /* 80051450 0004D0F0  38 63 00 98 */	addi r3, r3, 0x98
-/* 80051454 0004D0F4  4E 80 00 20 */	blr 
+/* 80051454 0004D0F4  4E 80 00 20 */	blr
 
 .global "GetPlayerCamera__8GameDataFv"
 "GetPlayerCamera__8GameDataFv":
@@ -3975,39 +3975,39 @@ lbl_8005138C:
 .global "GetPiMenu__6PlayerFv"
 "GetPiMenu__6PlayerFv":
 /* 80051460 0004D100  80 63 00 04 */	lwz r3, 4(r3)
-/* 80051464 0004D104  4E 80 00 20 */	blr 
+/* 80051464 0004D104  4E 80 00 20 */	blr
 
 .global "GetCamera__6PlayerFv"
 "GetCamera__6PlayerFv":
 /* 80051468 0004D108  80 63 00 08 */	lwz r3, 8(r3)
-/* 8005146C 0004D10C  4E 80 00 20 */	blr 
+/* 8005146C 0004D10C  4E 80 00 20 */	blr
 
 .global "IsEmpty__32TLinkedList<13ENodeListNode,4,8>CFv"
 "IsEmpty__32TLinkedList<13ENodeListNode,4,8>CFv":
 /* 80051470 0004D110  80 03 00 00 */	lwz r0, 0(r3)
 /* 80051474 0004D114  7C 00 00 34 */	cntlzw r0, r0
 /* 80051478 0004D118  54 03 D9 7E */	srwi r3, r0, 5
-/* 8005147C 0004D11C  4E 80 00 20 */	blr 
+/* 8005147C 0004D11C  4E 80 00 20 */	blr
 
 .global "SetRotating__8PlumbBobFb"
 "SetRotating__8PlumbBobFb":
 /* 80051480 0004D120  80 63 01 64 */	lwz r3, 0x164(r3)
 /* 80051484 0004D124  98 83 00 21 */	stb r4, 0x21(r3)
-/* 80051488 0004D128  4E 80 00 20 */	blr 
+/* 80051488 0004D128  4E 80 00 20 */	blr
 
 .global "SetBobbing__8PlumbBobFb"
 "SetBobbing__8PlumbBobFb":
 /* 8005148C 0004D12C  80 63 01 64 */	lwz r3, 0x164(r3)
 /* 80051490 0004D130  98 83 00 20 */	stb r4, 0x20(r3)
-/* 80051494 0004D134  4E 80 00 20 */	blr 
+/* 80051494 0004D134  4E 80 00 20 */	blr
 
 .global "GetPlumbob__8PlumbBobFv"
 "GetPlumbob__8PlumbBobFv":
 /* 80051498 0004D138  80 6D B9 30 */	lwz r3, "s_pPlumbBob__8PlumbBob"-_SDA_BASE_(r13)
 /* 8005149C 0004D13C  2C 03 00 00 */	cmpwi r3, 0
-/* 800514A0 0004D140  4C 82 00 20 */	bnelr 
+/* 800514A0 0004D140  4C 82 00 20 */	bnelr
 /* 800514A4 0004D144  38 60 00 00 */	li r3, 0
-/* 800514A8 0004D148  4E 80 00 20 */	blr 
+/* 800514A8 0004D148  4E 80 00 20 */	blr
 
 .global "GetParticleVisibility__8PlumbBobCFv"
 "GetParticleVisibility__8PlumbBobCFv":
@@ -4029,7 +4029,7 @@ lbl_8005138C:
 "ClearFrameUpdateCount__8PlumbBobFv":
 /* 800514C8 0004D168  38 00 00 00 */	li r0, 0
 /* 800514CC 0004D16C  90 03 01 F0 */	stw r0, 0x1f0(r3)
-/* 800514D0 0004D170  4E 80 00 20 */	blr 
+/* 800514D0 0004D170  4E 80 00 20 */	blr
 
 .global "ceilf"
 "ceilf":
@@ -4041,7 +4041,7 @@ lbl_8005138C:
 /* 800514E8 0004D188  FC 20 08 18 */	frsp f1, f1
 /* 800514EC 0004D18C  7C 08 03 A6 */	mtlr r0
 /* 800514F0 0004D190  38 21 00 10 */	addi r1, r1, 0x10
-/* 800514F4 0004D194  4E 80 00 20 */	blr 
+/* 800514F4 0004D194  4E 80 00 20 */	blr
 
 .global "__ne__5EVec2CFRC5EVec2"
 "__ne__5EVec2CFRC5EVec2":
@@ -4058,19 +4058,19 @@ lbl_8005151C:
 /* 8005151C 0004D1BC  38 00 00 01 */	li r0, 1
 lbl_80051520:
 /* 80051520 0004D1C0  7C 03 03 78 */	mr r3, r0
-/* 80051524 0004D1C4  4E 80 00 20 */	blr 
+/* 80051524 0004D1C4  4E 80 00 20 */	blr
 
 .global "__vc__5EVec2Fi"
 "__vc__5EVec2Fi":
 /* 80051528 0004D1C8  54 80 10 3A */	slwi r0, r4, 2
 /* 8005152C 0004D1CC  7C 63 02 14 */	add r3, r3, r0
-/* 80051530 0004D1D0  4E 80 00 20 */	blr 
+/* 80051530 0004D1D0  4E 80 00 20 */	blr
 
 .global "__vc__5EVec2CFi"
 "__vc__5EVec2CFi":
 /* 80051534 0004D1D4  54 80 10 3A */	slwi r0, r4, 2
 /* 80051538 0004D1D8  7C 23 04 2E */	lfsx f1, r3, r0
-/* 8005153C 0004D1DC  4E 80 00 20 */	blr 
+/* 8005153C 0004D1DC  4E 80 00 20 */	blr
 
 .global "__amu__5EVec2Ff"
 "__amu__5EVec2Ff":
@@ -4080,7 +4080,7 @@ lbl_80051520:
 /* 8005154C 0004D1EC  EC 00 00 72 */	fmuls f0, f0, f1
 /* 80051550 0004D1F0  D0 43 00 00 */	stfs f2, 0(r3)
 /* 80051554 0004D1F4  D0 03 00 04 */	stfs f0, 4(r3)
-/* 80051558 0004D1F8  4E 80 00 20 */	blr 
+/* 80051558 0004D1F8  4E 80 00 20 */	blr
 
 .global "__dv__5EVec2CFf"
 "__dv__5EVec2CFf":
@@ -4096,7 +4096,7 @@ lbl_80051520:
 "Set__5EVec2Ff":
 /* 80051578 0004D218  D0 23 00 04 */	stfs f1, 4(r3)
 /* 8005157C 0004D21C  D0 23 00 00 */	stfs f1, 0(r3)
-/* 80051580 0004D220  4E 80 00 20 */	blr 
+/* 80051580 0004D220  4E 80 00 20 */	blr
 
 .global "__apl__5EVec2FRC5EVec2"
 "__apl__5EVec2FRC5EVec2":
@@ -4108,7 +4108,7 @@ lbl_80051520:
 /* 80051598 0004D238  EC 01 00 2A */	fadds f0, f1, f0
 /* 8005159C 0004D23C  D0 43 00 00 */	stfs f2, 0(r3)
 /* 800515A0 0004D240  D0 03 00 04 */	stfs f0, 4(r3)
-/* 800515A4 0004D244  4E 80 00 20 */	blr 
+/* 800515A4 0004D244  4E 80 00 20 */	blr
 
 .global "__ami__5EVec2FRC5EVec2"
 "__ami__5EVec2FRC5EVec2":
@@ -4120,14 +4120,14 @@ lbl_80051520:
 /* 800515BC 0004D25C  EC 01 00 28 */	fsubs f0, f1, f0
 /* 800515C0 0004D260  D0 43 00 00 */	stfs f2, 0(r3)
 /* 800515C4 0004D264  D0 03 00 04 */	stfs f0, 4(r3)
-/* 800515C8 0004D268  4E 80 00 20 */	blr 
+/* 800515C8 0004D268  4E 80 00 20 */	blr
 
 .global "BlendFloat__Ffff"
 "BlendFloat__Ffff":
 /* 800515CC 0004D26C  EC 03 10 28 */	fsubs f0, f3, f2
 /* 800515D0 0004D270  EC 01 00 32 */	fmuls f0, f1, f0
 /* 800515D4 0004D274  EC 22 00 2A */	fadds f1, f2, f0
-/* 800515D8 0004D278  4E 80 00 20 */	blr 
+/* 800515D8 0004D278  4E 80 00 20 */	blr
 
 .global "__mi__5EVec3CFv"
 "__mi__5EVec3CFv":
@@ -4153,7 +4153,7 @@ lbl_80051520:
 /* 8005161C 0004D2BC  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80051620 0004D2C0  D0 43 00 04 */	stfs f2, 4(r3)
 /* 80051624 0004D2C4  D0 03 00 08 */	stfs f0, 8(r3)
-/* 80051628 0004D2C8  4E 80 00 20 */	blr 
+/* 80051628 0004D2C8  4E 80 00 20 */	blr
 
 .global "OutOfBounds__11cFixedWorldCFRC7CTilePt"
 "OutOfBounds__11cFixedWorldCFRC7CTilePt":
@@ -4175,15 +4175,15 @@ lbl_80051520:
 /* 80051668 0004D308  41 80 00 0C */	blt lbl_80051674
 lbl_8005166C:
 /* 8005166C 0004D30C  38 60 00 01 */	li r3, 1
-/* 80051670 0004D310  4E 80 00 20 */	blr 
+/* 80051670 0004D310  4E 80 00 20 */	blr
 lbl_80051674:
 /* 80051674 0004D314  38 60 00 00 */	li r3, 0
-/* 80051678 0004D318  4E 80 00 20 */	blr 
+/* 80051678 0004D318  4E 80 00 20 */	blr
 
 .global "GetInfluenceMap__11cFixedWorldFv"
 "GetInfluenceMap__11cFixedWorldFv":
 /* 8005167C 0004D31C  80 63 00 28 */	lwz r3, 0x28(r3)
-/* 80051680 0004D320  4E 80 00 20 */	blr 
+/* 80051680 0004D320  4E 80 00 20 */	blr
 
 .global "GetFlags__11cFixedWorldCFRC7CTilePt"
 "GetFlags__11cFixedWorldCFRC7CTilePt":
@@ -4196,7 +4196,7 @@ lbl_80051674:
 /* 8005169C 0004D33C  88 63 00 00 */	lbz r3, 0(r3)
 /* 800516A0 0004D340  7C 08 03 A6 */	mtlr r0
 /* 800516A4 0004D344  38 21 00 10 */	addi r1, r1, 0x10
-/* 800516A8 0004D348  4E 80 00 20 */	blr 
+/* 800516A8 0004D348  4E 80 00 20 */	blr
 
 .global "IsBuildable__11cFixedWorldCFRC7CTilePt"
 "IsBuildable__11cFixedWorldCFRC7CTilePt":
@@ -4217,7 +4217,7 @@ lbl_800516DC:
 /* 800516E0 0004D380  7C 83 23 78 */	mr r3, r4
 /* 800516E4 0004D384  7C 08 03 A6 */	mtlr r0
 /* 800516E8 0004D388  38 21 00 10 */	addi r1, r1, 0x10
-/* 800516EC 0004D38C  4E 80 00 20 */	blr 
+/* 800516EC 0004D38C  4E 80 00 20 */	blr
 
 .global "IsPlaceable__11cFixedWorldCFRC7CTilePt"
 "IsPlaceable__11cFixedWorldCFRC7CTilePt":
@@ -4236,12 +4236,12 @@ lbl_80051718:
 /* 8005171C 0004D3BC  7C 83 23 78 */	mr r3, r4
 /* 80051720 0004D3C0  7C 08 03 A6 */	mtlr r0
 /* 80051724 0004D3C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051728 0004D3C8  4E 80 00 20 */	blr 
+/* 80051728 0004D3C8  4E 80 00 20 */	blr
 
 .global "GetHouse__Fv"
 "GetHouse__Fv":
 /* 8005172C 0004D3CC  80 6D B5 40 */	lwz r3, "pHouse__5Globs"-_SDA_BASE_(r13)
-/* 80051730 0004D3D0  4E 80 00 20 */	blr 
+/* 80051730 0004D3D0  4E 80 00 20 */	blr
 
 .global "__ct__7FTilePtFii"
 "__ct__7FTilePtFii":
@@ -4268,7 +4268,7 @@ lbl_80051718:
 /* 80051784 0004D424  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80051788 0004D428  7C 08 03 A6 */	mtlr r0
 /* 8005178C 0004D42C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80051790 0004D430  4E 80 00 20 */	blr 
+/* 80051790 0004D430  4E 80 00 20 */	blr
 
 .global "Set__7FTilePtFii"
 "Set__7FTilePtFii":
@@ -4294,7 +4294,7 @@ lbl_80051718:
 /* 800517E0 0004D480  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800517E4 0004D484  7C 08 03 A6 */	mtlr r0
 /* 800517E8 0004D488  38 21 00 10 */	addi r1, r1, 0x10
-/* 800517EC 0004D48C  4E 80 00 20 */	blr 
+/* 800517EC 0004D48C  4E 80 00 20 */	blr
 
 .global "SetInteger__4FIntFi"
 "SetInteger__4FIntFi":
@@ -4302,7 +4302,7 @@ lbl_80051718:
 /* 800517F4 0004D494  54 00 07 3E */	clrlwi r0, r0, 0x1c
 /* 800517F8 0004D498  50 80 20 36 */	rlwimi r0, r4, 4, 0, 0x1b
 /* 800517FC 0004D49C  90 03 00 00 */	stw r0, 0(r3)
-/* 80051800 0004D4A0  4E 80 00 20 */	blr 
+/* 80051800 0004D4A0  4E 80 00 20 */	blr
 
 .global "__apl__7FTilePtFRC7FTilePt"
 "__apl__7FTilePtFRC7FTilePt":
@@ -4314,7 +4314,7 @@ lbl_80051718:
 /* 80051818 0004D4B8  90 83 00 00 */	stw r4, 0(r3)
 /* 8005181C 0004D4BC  7C 05 02 14 */	add r0, r5, r0
 /* 80051820 0004D4C0  90 03 00 04 */	stw r0, 4(r3)
-/* 80051824 0004D4C4  4E 80 00 20 */	blr 
+/* 80051824 0004D4C4  4E 80 00 20 */	blr
 
 .global "__ct__7FTilePtFi"
 "__ct__7FTilePtFi":
@@ -4347,53 +4347,53 @@ lbl_80051718:
 /* 80051890 0004D530  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051894 0004D534  7C 08 03 A6 */	mtlr r0
 /* 80051898 0004D538  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005189C 0004D53C  4E 80 00 20 */	blr 
+/* 8005189C 0004D53C  4E 80 00 20 */	blr
 
 .global "OffsetCoordsInDirection__FiRiRi"
 "OffsetCoordsInDirection__FiRiRi":
 /* 800518A0 0004D540  54 60 07 7E */	clrlwi r0, r3, 0x1d
 /* 800518A4 0004D544  28 00 00 07 */	cmplwi r0, 7
-/* 800518A8 0004D548  4D 81 00 20 */	bgtlr 
+/* 800518A8 0004D548  4D 81 00 20 */	bgtlr
 /* 800518AC 0004D54C  3C 60 80 42 */	lis r3, lbl_80424940@ha
 /* 800518B0 0004D550  54 00 10 3A */	slwi r0, r0, 2
 /* 800518B4 0004D554  38 63 49 40 */	addi r3, r3, lbl_80424940@l
 /* 800518B8 0004D558  7C 63 00 2E */	lwzx r3, r3, r0
 /* 800518BC 0004D55C  7C 69 03 A6 */	mtctr r3
-/* 800518C0 0004D560  4E 80 04 20 */	bctr 
+/* 800518C0 0004D560  4E 80 04 20 */	bctr
 /* 800518C4 0004D564  80 64 00 00 */	lwz r3, 0(r4)
 /* 800518C8 0004D568  38 03 00 01 */	addi r0, r3, 1
 /* 800518CC 0004D56C  90 04 00 00 */	stw r0, 0(r4)
 /* 800518D0 0004D570  80 65 00 00 */	lwz r3, 0(r5)
 /* 800518D4 0004D574  38 03 FF FF */	addi r0, r3, -1
 /* 800518D8 0004D578  90 05 00 00 */	stw r0, 0(r5)
-/* 800518DC 0004D57C  4E 80 00 20 */	blr 
+/* 800518DC 0004D57C  4E 80 00 20 */	blr
 /* 800518E0 0004D580  80 65 00 00 */	lwz r3, 0(r5)
 /* 800518E4 0004D584  38 03 00 01 */	addi r0, r3, 1
 /* 800518E8 0004D588  90 05 00 00 */	stw r0, 0(r5)
 /* 800518EC 0004D58C  80 64 00 00 */	lwz r3, 0(r4)
 /* 800518F0 0004D590  38 03 00 01 */	addi r0, r3, 1
 /* 800518F4 0004D594  90 04 00 00 */	stw r0, 0(r4)
-/* 800518F8 0004D598  4E 80 00 20 */	blr 
+/* 800518F8 0004D598  4E 80 00 20 */	blr
 /* 800518FC 0004D59C  80 64 00 00 */	lwz r3, 0(r4)
 /* 80051900 0004D5A0  38 03 FF FF */	addi r0, r3, -1
 /* 80051904 0004D5A4  90 04 00 00 */	stw r0, 0(r4)
 /* 80051908 0004D5A8  80 65 00 00 */	lwz r3, 0(r5)
 /* 8005190C 0004D5AC  38 03 00 01 */	addi r0, r3, 1
 /* 80051910 0004D5B0  90 05 00 00 */	stw r0, 0(r5)
-/* 80051914 0004D5B4  4E 80 00 20 */	blr 
+/* 80051914 0004D5B4  4E 80 00 20 */	blr
 /* 80051918 0004D5B8  80 65 00 00 */	lwz r3, 0(r5)
 /* 8005191C 0004D5BC  38 03 FF FF */	addi r0, r3, -1
 /* 80051920 0004D5C0  90 05 00 00 */	stw r0, 0(r5)
 /* 80051924 0004D5C4  80 64 00 00 */	lwz r3, 0(r4)
 /* 80051928 0004D5C8  38 03 FF FF */	addi r0, r3, -1
 /* 8005192C 0004D5CC  90 04 00 00 */	stw r0, 0(r4)
-/* 80051930 0004D5D0  4E 80 00 20 */	blr 
+/* 80051930 0004D5D0  4E 80 00 20 */	blr
 
 .global "Integer__4FIntCFv"
 "Integer__4FIntCFv":
 /* 80051934 0004D5D4  80 03 00 00 */	lwz r0, 0(r3)
 /* 80051938 0004D5D8  7C 03 26 70 */	srawi r3, r0, 4
-/* 8005193C 0004D5DC  4E 80 00 20 */	blr 
+/* 8005193C 0004D5DC  4E 80 00 20 */	blr
 
 .global "Rotate__9FTileRectFi"
 "Rotate__9FTileRectFi":
@@ -4409,7 +4409,7 @@ lbl_80051718:
 /* 80051964 0004D604  38 63 4B 0C */	addi r3, r3, lbl_80424B0C@l
 /* 80051968 0004D608  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8005196C 0004D60C  7C 69 03 A6 */	mtctr r3
-/* 80051970 0004D610  4E 80 04 20 */	bctr 
+/* 80051970 0004D610  4E 80 04 20 */	bctr
 /* 80051974 0004D614  38 61 00 10 */	addi r3, r1, 0x10
 /* 80051978 0004D618  38 9F 00 0C */	addi r4, r31, 0xc
 /* 8005197C 0004D61C  4B FC 50 3D */	bl "__ct__4FIntFRC4FInt"
@@ -4461,7 +4461,7 @@ lbl_80051A2C:
 /* 80051A30 0004D6D0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80051A34 0004D6D4  7C 08 03 A6 */	mtlr r0
 /* 80051A38 0004D6D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80051A3C 0004D6DC  4E 80 00 20 */	blr 
+/* 80051A3C 0004D6DC  4E 80 00 20 */	blr
 
 .global "__apl__9FTileRectFRC7FTilePt"
 "__apl__9FTileRectFRC7FTilePt":
@@ -4479,7 +4479,7 @@ lbl_80051A2C:
 /* 80051A6C 0004D70C  90 A3 00 08 */	stw r5, 8(r3)
 /* 80051A70 0004D710  90 83 00 04 */	stw r4, 4(r3)
 /* 80051A74 0004D714  90 03 00 00 */	stw r0, 0(r3)
-/* 80051A78 0004D718  4E 80 00 20 */	blr 
+/* 80051A78 0004D718  4E 80 00 20 */	blr
 
 .global "Set__9FTileRectFiiii"
 "Set__9FTileRectFiiii":
@@ -4491,7 +4491,7 @@ lbl_80051A2C:
 /* 80051A90 0004D730  90 A3 00 08 */	stw r5, 8(r3)
 /* 80051A94 0004D734  90 83 00 04 */	stw r4, 4(r3)
 /* 80051A98 0004D738  90 03 00 00 */	stw r0, 0(r3)
-/* 80051A9C 0004D73C  4E 80 00 20 */	blr 
+/* 80051A9C 0004D73C  4E 80 00 20 */	blr
 
 .global "__ct__9FTileRectFv"
 "__ct__9FTileRectFv":
@@ -4512,7 +4512,7 @@ lbl_80051A2C:
 /* 80051AD8 0004D778  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051ADC 0004D77C  7C 08 03 A6 */	mtlr r0
 /* 80051AE0 0004D780  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051AE4 0004D784  4E 80 00 20 */	blr 
+/* 80051AE4 0004D784  4E 80 00 20 */	blr
 
 .global "ToWorldSpace3__7FTilePtCFv"
 "ToWorldSpace3__7FTilePtCFv":
@@ -4541,7 +4541,7 @@ lbl_80051A2C:
 /* 80051B40 0004D7E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80051B44 0004D7E4  7C 08 03 A6 */	mtlr r0
 /* 80051B48 0004D7E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80051B4C 0004D7EC  4E 80 00 20 */	blr 
+/* 80051B4C 0004D7EC  4E 80 00 20 */	blr
 
 .global "GetBehavior__8cXObjectFv"
 "GetBehavior__8cXObjectFv":
@@ -4571,7 +4571,7 @@ lbl_80051B94:
 /* 80051B98 0004D838  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80051B9C 0004D83C  7C 08 03 A6 */	mtlr r0
 /* 80051BA0 0004D840  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051BA4 0004D844  4E 80 00 20 */	blr 
+/* 80051BA4 0004D844  4E 80 00 20 */	blr
 
 .global "IsMultiTile__8cXObjectFv"
 "IsMultiTile__8cXObjectFv":
@@ -4585,7 +4585,7 @@ lbl_80051B94:
 /* 80051BC4 0004D864  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051BC8 0004D868  7C 08 03 A6 */	mtlr r0
 /* 80051BCC 0004D86C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051BD0 0004D870  4E 80 00 20 */	blr 
+/* 80051BD0 0004D870  4E 80 00 20 */	blr
 
 .global "CountObjectSlots__8cXObjectFv"
 "CountObjectSlots__8cXObjectFv":
@@ -4597,7 +4597,7 @@ lbl_80051B94:
 /* 80051BE8 0004D888  38 63 FF FF */	addi r3, r3, -1
 /* 80051BEC 0004D88C  7C 08 03 A6 */	mtlr r0
 /* 80051BF0 0004D890  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051BF4 0004D894  4E 80 00 20 */	blr 
+/* 80051BF4 0004D894  4E 80 00 20 */	blr
 
 .global "HierCountSlots__8cXObjectFv"
 "HierCountSlots__8cXObjectFv":
@@ -4616,12 +4616,12 @@ lbl_80051B94:
 /* 80051C1C 0004D8BC  A8 63 00 00 */	lha r3, 0(r3)
 /* 80051C20 0004D8C0  7C 08 03 A6 */	mtlr r0
 /* 80051C24 0004D8C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051C28 0004D8C8  4E 80 00 20 */	blr 
+/* 80051C28 0004D8C8  4E 80 00 20 */	blr
 
 .global "GetSelector__8cXObjectFv"
 "GetSelector__8cXObjectFv":
 /* 80051C2C 0004D8CC  80 63 00 E8 */	lwz r3, 0xe8(r3)
-/* 80051C30 0004D8D0  4E 80 00 20 */	blr 
+/* 80051C30 0004D8D0  4E 80 00 20 */	blr
 
 .global "IsWindow__8cXObjectFv"
 "IsWindow__8cXObjectFv":
@@ -4649,7 +4649,7 @@ lbl_80051C78:
 /* 80051C84 0004D924  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051C88 0004D928  7C 08 03 A6 */	mtlr r0
 /* 80051C8C 0004D92C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051C90 0004D930  4E 80 00 20 */	blr 
+/* 80051C90 0004D930  4E 80 00 20 */	blr
 
 .global "GetTreeID__8cXObjectCF13ObjEntryPoint"
 "GetTreeID__8cXObjectCF13ObjEntryPoint":
@@ -4663,12 +4663,12 @@ lbl_80051C78:
 /* 80051CB0 0004D950  7F E4 FB 78 */	mr r4, r31
 /* 80051CB4 0004D954  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 80051CB8 0004D958  7D 89 03 A6 */	mtctr r12
-/* 80051CBC 0004D95C  4E 80 04 21 */	bctrl 
+/* 80051CBC 0004D95C  4E 80 04 21 */	bctrl
 /* 80051CC0 0004D960  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051CC4 0004D964  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80051CC8 0004D968  7C 08 03 A6 */	mtlr r0
 /* 80051CCC 0004D96C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051CD0 0004D970  4E 80 00 20 */	blr 
+/* 80051CD0 0004D970  4E 80 00 20 */	blr
 
 .global "GetFnTable__8cXObjectCFv"
 "GetFnTable__8cXObjectCFv":
@@ -4679,7 +4679,7 @@ lbl_80051C78:
 "GetType__8cXObjectCFv":
 /* 80051CDC 0004D97C  80 63 00 E4 */	lwz r3, 0xe4(r3)
 /* 80051CE0 0004D980  A8 63 00 12 */	lha r3, 0x12(r3)
-/* 80051CE4 0004D984  4E 80 00 20 */	blr 
+/* 80051CE4 0004D984  4E 80 00 20 */	blr
 
 .global "GetLocation__8cXObjectCFP7FTilePt"
 "GetLocation__8cXObjectCFP7FTilePt":
@@ -4694,10 +4694,10 @@ lbl_80051C78:
 /* 80051CFC 0004D99C  2C 05 00 00 */	cmpwi r5, 0
 /* 80051D00 0004D9A0  7C 00 20 78 */	andc r0, r0, r4
 /* 80051D04 0004D9A4  90 03 00 E0 */	stw r0, 0xe0(r3)
-/* 80051D08 0004D9A8  4D 82 00 20 */	beqlr 
+/* 80051D08 0004D9A8  4D 82 00 20 */	beqlr
 /* 80051D0C 0004D9AC  7C 00 23 78 */	or r0, r0, r4
 /* 80051D10 0004D9B0  90 03 00 E0 */	stw r0, 0xe0(r3)
-/* 80051D14 0004D9B4  4E 80 00 20 */	blr 
+/* 80051D14 0004D9B4  4E 80 00 20 */	blr
 
 .global "IsGate__8cXObjectFv"
 "IsGate__8cXObjectFv":
@@ -4730,7 +4730,7 @@ lbl_80051D70:
 /* 80051D7C 0004DA1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051D80 0004DA20  7C 08 03 A6 */	mtlr r0
 /* 80051D84 0004DA24  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051D88 0004DA28  4E 80 00 20 */	blr 
+/* 80051D88 0004DA28  4E 80 00 20 */	blr
 
 .global "GetHeight__8cXObjectFv"
 "GetHeight__8cXObjectFv":
@@ -4742,7 +4742,7 @@ lbl_80051D70:
 /* 80051DA0 0004DA40  A8 63 00 38 */	lha r3, 0x38(r3)
 /* 80051DA4 0004DA44  7C 08 03 A6 */	mtlr r0
 /* 80051DA8 0004DA48  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051DAC 0004DA4C  4E 80 00 20 */	blr 
+/* 80051DAC 0004DA4C  4E 80 00 20 */	blr
 
 .global "IsDoor__8cXObjectFv"
 "IsDoor__8cXObjectFv":
@@ -4775,7 +4775,7 @@ lbl_80051E08:
 /* 80051E14 0004DAB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051E18 0004DAB8  7C 08 03 A6 */	mtlr r0
 /* 80051E1C 0004DABC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051E20 0004DAC0  4E 80 00 20 */	blr 
+/* 80051E20 0004DAC0  4E 80 00 20 */	blr
 
 .global "IsStructure__8cXObjectFv"
 "IsStructure__8cXObjectFv":
@@ -4790,13 +4790,13 @@ lbl_80051E08:
 /* 80051E44 0004DAE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80051E48 0004DAE8  7C 08 03 A6 */	mtlr r0
 /* 80051E4C 0004DAEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051E50 0004DAF0  4E 80 00 20 */	blr 
+/* 80051E50 0004DAF0  4E 80 00 20 */	blr
 
 .global "GetHilite__8cXObjectFv"
 "GetHilite__8cXObjectFv":
 /* 80051E54 0004DAF4  80 03 00 E0 */	lwz r0, 0xe0(r3)
 /* 80051E58 0004DAF8  54 03 06 FE */	clrlwi r3, r0, 0x1b
-/* 80051E5C 0004DAFC  4E 80 00 20 */	blr 
+/* 80051E5C 0004DAFC  4E 80 00 20 */	blr
 
 .global "EnableSim__8cXObjectFb"
 "EnableSim__8cXObjectFb":
@@ -4817,7 +4817,7 @@ lbl_80051E08:
 /* 80051E8C 0004DB2C  54 63 F7 FE */	rlwinm r3, r3, 0x1e, 0x1f, 0x1f
 /* 80051E90 0004DB30  7C 08 03 A6 */	mtlr r0
 /* 80051E94 0004DB34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051E98 0004DB38  4E 80 00 20 */	blr 
+/* 80051E98 0004DB38  4E 80 00 20 */	blr
 
 .global "GetFlags__8cXObjectFv"
 "GetFlags__8cXObjectFv":
@@ -4831,17 +4831,17 @@ lbl_80051E08:
 /* 80051EB8 0004DB58  A8 63 00 00 */	lha r3, 0(r3)
 /* 80051EBC 0004DB5C  7C 08 03 A6 */	mtlr r0
 /* 80051EC0 0004DB60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80051EC4 0004DB64  4E 80 00 20 */	blr 
+/* 80051EC4 0004DB64  4E 80 00 20 */	blr
 
 .global "SetCameraZoomRatio__10SAnimator2Ff"
 "SetCameraZoomRatio__10SAnimator2Ff":
 /* 80051EC8 0004DB68  D0 23 01 5C */	stfs f1, 0x15c(r3)
-/* 80051ECC 0004DB6C  4E 80 00 20 */	blr 
+/* 80051ECC 0004DB6C  4E 80 00 20 */	blr
 
 .global "SetDesiredAnimState__10SAnimator2FQ210SAnimator210eAnimState"
 "SetDesiredAnimState__10SAnimator2FQ210SAnimator210eAnimState":
 /* 80051ED0 0004DB70  90 83 01 54 */	stw r4, 0x154(r3)
-/* 80051ED4 0004DB74  4E 80 00 20 */	blr 
+/* 80051ED4 0004DB74  4E 80 00 20 */	blr
 
 .global "SetDesiredFacing__10SAnimator2Ff"
 "SetDesiredFacing__10SAnimator2Ff":
@@ -4888,17 +4888,17 @@ lbl_80051F54:
 /* 80051F64 0004DC04  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80051F68 0004DC08  7C 08 03 A6 */	mtlr r0
 /* 80051F6C 0004DC0C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80051F70 0004DC10  4E 80 00 20 */	blr 
+/* 80051F70 0004DC10  4E 80 00 20 */	blr
 
 .global "GetAnimState__10SAnimator2Fv"
 "GetAnimState__10SAnimator2Fv":
 /* 80051F74 0004DC14  80 63 00 BC */	lwz r3, 0xbc(r3)
-/* 80051F78 0004DC18  4E 80 00 20 */	blr 
+/* 80051F78 0004DC18  4E 80 00 20 */	blr
 
 .global "GetMode__8ESimsCamCFv"
 "GetMode__8ESimsCamCFv":
 /* 80051F7C 0004DC1C  80 63 06 F8 */	lwz r3, 0x6f8(r3)
-/* 80051F80 0004DC20  4E 80 00 20 */	blr 
+/* 80051F80 0004DC20  4E 80 00 20 */	blr
 
 .global "CanCancel__14CameraDirectorCFv"
 "CanCancel__14CameraDirectorCFv":
@@ -4906,28 +4906,28 @@ lbl_80051F54:
 /* 80051F88 0004DC28  7C 03 00 D0 */	neg r0, r3
 /* 80051F8C 0004DC2C  7C 00 1B 78 */	or r0, r0, r3
 /* 80051F90 0004DC30  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80051F94 0004DC34  4E 80 00 20 */	blr 
+/* 80051F94 0004DC34  4E 80 00 20 */	blr
 
 .global "IsInControl__14CameraDirectorCFv"
 "IsInControl__14CameraDirectorCFv":
 /* 80051F98 0004DC38  80 03 02 AC */	lwz r0, 0x2ac(r3)
 /* 80051F9C 0004DC3C  38 60 00 00 */	li r3, 0
 /* 80051FA0 0004DC40  2C 00 00 00 */	cmpwi r0, 0
-/* 80051FA4 0004DC44  4D 82 00 20 */	beqlr 
+/* 80051FA4 0004DC44  4D 82 00 20 */	beqlr
 /* 80051FA8 0004DC48  2C 00 00 08 */	cmpwi r0, 8
-/* 80051FAC 0004DC4C  4D 82 00 20 */	beqlr 
+/* 80051FAC 0004DC4C  4D 82 00 20 */	beqlr
 /* 80051FB0 0004DC50  38 60 00 01 */	li r3, 1
-/* 80051FB4 0004DC54  4E 80 00 20 */	blr 
+/* 80051FB4 0004DC54  4E 80 00 20 */	blr
 
 .global "GetLetterBox__14CameraDirectorCFv"
 "GetLetterBox__14CameraDirectorCFv":
 /* 80051FB8 0004DC58  88 63 02 B9 */	lbz r3, 0x2b9(r3)
-/* 80051FBC 0004DC5C  4E 80 00 20 */	blr 
+/* 80051FBC 0004DC5C  4E 80 00 20 */	blr
 
 .global "GetTarget__8ESimsCamCFv"
 "GetTarget__8ESimsCamCFv":
 /* 80051FC0 0004DC60  38 63 07 00 */	addi r3, r3, 0x700
-/* 80051FC4 0004DC64  4E 80 00 20 */	blr 
+/* 80051FC4 0004DC64  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule12FloorPainter18FloorPainterParamsFRCQ316InteractorModule12FloorPainter18FloorPainterParams"
 "__as__Q316InteractorModule12FloorPainter18FloorPainterParamsFRCQ316InteractorModule12FloorPainter18FloorPainterParams":
@@ -4955,7 +4955,7 @@ lbl_80051F54:
 /* 8005201C 0004DCBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052020 0004DCC0  7C 08 03 A6 */	mtlr r0
 /* 80052024 0004DCC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052028 0004DCC8  4E 80 00 20 */	blr 
+/* 80052028 0004DCC8  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule10Interactor16InteractorParamsFRCQ316InteractorModule10Interactor16InteractorParams"
 "__as__Q316InteractorModule10Interactor16InteractorParamsFRCQ316InteractorModule10Interactor16InteractorParams":
@@ -4967,17 +4967,17 @@ lbl_80051F54:
 /* 80052040 0004DCE0  90 C3 00 08 */	stw r6, 8(r3)
 /* 80052044 0004DCE4  90 A3 00 0C */	stw r5, 0xc(r3)
 /* 80052048 0004DCE8  90 03 00 10 */	stw r0, 0x10(r3)
-/* 8005204C 0004DCEC  4E 80 00 20 */	blr 
+/* 8005204C 0004DCEC  4E 80 00 20 */	blr
 
 .global "GetEye__8ESimsCamCFv"
 "GetEye__8ESimsCamCFv":
 /* 80052050 0004DCF0  38 63 06 64 */	addi r3, r3, 0x664
-/* 80052054 0004DCF4  4E 80 00 20 */	blr 
+/* 80052054 0004DCF4  4E 80 00 20 */	blr
 
 .global "GetRotAng__8ESimsCamCFv"
 "GetRotAng__8ESimsCamCFv":
 /* 80052058 0004DCF8  C0 23 07 10 */	lfs f1, 0x710(r3)
-/* 8005205C 0004DCFC  4E 80 00 20 */	blr 
+/* 8005205C 0004DCFC  4E 80 00 20 */	blr
 
 .global "IsInSocialModePlayerControlledCameraMode__14CameraDirectorCFv"
 "IsInSocialModePlayerControlledCameraMode__14CameraDirectorCFv":
@@ -4985,32 +4985,32 @@ lbl_80051F54:
 /* 80052064 0004DD04  38 03 FF F8 */	addi r0, r3, -8
 /* 80052068 0004DD08  7C 00 00 34 */	cntlzw r0, r0
 /* 8005206C 0004DD0C  54 03 D9 7E */	srwi r3, r0, 5
-/* 80052070 0004DD10  4E 80 00 20 */	blr 
+/* 80052070 0004DD10  4E 80 00 20 */	blr
 
 .global "InterpolatingInLivemode__8ESimsCamFv"
 "InterpolatingInLivemode__8ESimsCamFv":
 /* 80052074 0004DD14  88 63 07 48 */	lbz r3, 0x748(r3)
-/* 80052078 0004DD18  4E 80 00 20 */	blr 
+/* 80052078 0004DD18  4E 80 00 20 */	blr
 
 .global "GetUp__8ESimsCamCFv"
 "GetUp__8ESimsCamCFv":
 /* 8005207C 0004DD1C  38 63 06 70 */	addi r3, r3, 0x670
-/* 80052080 0004DD20  4E 80 00 20 */	blr 
+/* 80052080 0004DD20  4E 80 00 20 */	blr
 
 .global "GetZoom__8ESimsCamCFv"
 "GetZoom__8ESimsCamCFv":
 /* 80052084 0004DD24  C0 23 07 0C */	lfs f1, 0x70c(r3)
-/* 80052088 0004DD28  4E 80 00 20 */	blr 
+/* 80052088 0004DD28  4E 80 00 20 */	blr
 
 .global "SetTilt__8ESimsCamFf"
 "SetTilt__8ESimsCamFf":
 /* 8005208C 0004DD2C  D0 23 07 14 */	stfs f1, 0x714(r3)
-/* 80052090 0004DD30  4E 80 00 20 */	blr 
+/* 80052090 0004DD30  4E 80 00 20 */	blr
 
 .global "GetTilt__8ESimsCamCFv"
 "GetTilt__8ESimsCamCFv":
 /* 80052094 0004DD34  C0 23 07 14 */	lfs f1, 0x714(r3)
-/* 80052098 0004DD38  4E 80 00 20 */	blr 
+/* 80052098 0004DD38  4E 80 00 20 */	blr
 
 .global "SetUp__8ESimsCamFRC5EVec3"
 "SetUp__8ESimsCamFRC5EVec3":
@@ -5020,7 +5020,7 @@ lbl_80051F54:
 .global "IsGhostDisplay__10ActionMenuFv"
 "IsGhostDisplay__10ActionMenuFv":
 /* 800520A4 0004DD44  88 63 01 7F */	lbz r3, 0x17f(r3)
-/* 800520A8 0004DD48  4E 80 00 20 */	blr 
+/* 800520A8 0004DD48  4E 80 00 20 */	blr
 
 .global "IsMenuActive__10ActionMenuCFv"
 "IsMenuActive__10ActionMenuCFv":
@@ -5034,32 +5034,32 @@ lbl_80051F54:
 /* 800520C8 0004DD68  2C 00 00 00 */	cmpwi r0, 0
 /* 800520CC 0004DD6C  40 82 00 0C */	bne lbl_800520D8
 /* 800520D0 0004DD70  38 60 00 01 */	li r3, 1
-/* 800520D4 0004DD74  4E 80 00 20 */	blr 
+/* 800520D4 0004DD74  4E 80 00 20 */	blr
 lbl_800520D8:
 /* 800520D8 0004DD78  38 60 00 00 */	li r3, 0
-/* 800520DC 0004DD7C  4E 80 00 20 */	blr 
+/* 800520DC 0004DD7C  4E 80 00 20 */	blr
 
 .global "SetLeftArrowEnable__10ActionMenuFb"
 "SetLeftArrowEnable__10ActionMenuFb":
 /* 800520E0 0004DD80  98 83 01 BD */	stb r4, 0x1bd(r3)
-/* 800520E4 0004DD84  4E 80 00 20 */	blr 
+/* 800520E4 0004DD84  4E 80 00 20 */	blr
 
 .global "SetRightArrowEnable__10ActionMenuFb"
 "SetRightArrowEnable__10ActionMenuFb":
 /* 800520E8 0004DD88  98 83 01 BC */	stb r4, 0x1bc(r3)
-/* 800520EC 0004DD8C  4E 80 00 20 */	blr 
+/* 800520EC 0004DD8C  4E 80 00 20 */	blr
 
 .global "IsDPDOverMenu__10ActionMenuFv"
 "IsDPDOverMenu__10ActionMenuFv":
 /* 800520F0 0004DD90  88 63 01 C0 */	lbz r3, 0x1c0(r3)
-/* 800520F4 0004DD94  4E 80 00 20 */	blr 
+/* 800520F4 0004DD94  4E 80 00 20 */	blr
 
 .global "IsMenuAvailable__10ActionMenuCFv"
 "IsMenuAvailable__10ActionMenuCFv":
 /* 800520F8 0004DD98  88 03 01 7C */	lbz r0, 0x17c(r3)
 /* 800520FC 0004DD9C  7C 00 00 34 */	cntlzw r0, r0
 /* 80052100 0004DDA0  54 03 D9 7E */	srwi r3, r0, 5
-/* 80052104 0004DDA4  4E 80 00 20 */	blr 
+/* 80052104 0004DDA4  4E 80 00 20 */	blr
 
 .global "IsPaused__10cSimulatorFv"
 "IsPaused__10cSimulatorFv":
@@ -5070,12 +5070,12 @@ lbl_800520D8:
 /* 8005210C 0004DDAC  38 03 FF FF */	addi r0, r3, -1
 /* 80052110 0004DDB0  38 60 00 01 */	li r3, 1
 /* 80052114 0004DDB4  7C 63 00 30 */	slw r3, r3, r0
-/* 80052118 0004DDB8  4E 80 00 20 */	blr 
+/* 80052118 0004DDB8  4E 80 00 20 */	blr
 
 .global "GetHeight__10ObjectSlotFv"
 "GetHeight__10ObjectSlotFv":
 /* 8005211C 0004DDBC  80 63 00 08 */	lwz r3, 8(r3)
-/* 80052120 0004DDC0  4E 80 00 20 */	blr 
+/* 80052120 0004DDC0  4E 80 00 20 */	blr
 
 .global "HasPendingTransition__9G2DTargetCFv"
 "HasPendingTransition__9G2DTargetCFv":
@@ -5089,32 +5089,32 @@ lbl_800520D8:
 lbl_80052140:
 /* 80052140 0004DDE0  7C 00 00 34 */	cntlzw r0, r0
 /* 80052144 0004DDE4  54 03 D9 7E */	srwi r3, r0, 5
-/* 80052148 0004DDE8  4E 80 00 20 */	blr 
+/* 80052148 0004DDE8  4E 80 00 20 */	blr
 
 .global "SetFastForwardEnable__7EGlobalFb"
 "SetFastForwardEnable__7EGlobalFb":
 /* 8005214C 0004DDEC  98 83 02 14 */	stb r4, 0x214(r3)
-/* 80052150 0004DDF0  4E 80 00 20 */	blr 
+/* 80052150 0004DDF0  4E 80 00 20 */	blr
 
 .global "GetFloorSet__7EGlobalCFv"
 "GetFloorSet__7EGlobalCFv":
 /* 80052154 0004DDF4  80 63 01 84 */	lwz r3, 0x184(r3)
-/* 80052158 0004DDF8  4E 80 00 20 */	blr 
+/* 80052158 0004DDF8  4E 80 00 20 */	blr
 
 .global "GetWallSet__7EGlobalCFv"
 "GetWallSet__7EGlobalCFv":
 /* 8005215C 0004DDFC  80 63 01 88 */	lwz r3, 0x188(r3)
-/* 80052160 0004DE00  4E 80 00 20 */	blr 
+/* 80052160 0004DE00  4E 80 00 20 */	blr
 
 .global "GetOrient__13EIStaticModelCFv"
 "GetOrient__13EIStaticModelCFv":
 /* 80052164 0004DE04  38 63 01 00 */	addi r3, r3, 0x100
-/* 80052168 0004DE08  4E 80 00 20 */	blr 
+/* 80052168 0004DE08  4E 80 00 20 */	blr
 
 .global "GetAdjDrawMatrix__13EIStaticModelCFv"
 "GetAdjDrawMatrix__13EIStaticModelCFv":
 /* 8005216C 0004DE0C  38 63 00 C0 */	addi r3, r3, 0xc0
-/* 80052170 0004DE10  4E 80 00 20 */	blr 
+/* 80052170 0004DE10  4E 80 00 20 */	blr
 
 .global "Set__5EVec4Fffff"
 "Set__5EVec4Fffff":
@@ -5122,7 +5122,7 @@ lbl_80052140:
 /* 80052178 0004DE18  D0 43 00 04 */	stfs f2, 4(r3)
 /* 8005217C 0004DE1C  D0 63 00 08 */	stfs f3, 8(r3)
 /* 80052180 0004DE20  D0 83 00 0C */	stfs f4, 0xc(r3)
-/* 80052184 0004DE24  4E 80 00 20 */	blr 
+/* 80052184 0004DE24  4E 80 00 20 */	blr
 
 .global "__as__5EVec4FRC5EVec2"
 "__as__5EVec4FRC5EVec2":
@@ -5130,7 +5130,7 @@ lbl_80052140:
 /* 8005218C 0004DE2C  C0 04 00 04 */	lfs f0, 4(r4)
 /* 80052190 0004DE30  D0 23 00 00 */	stfs f1, 0(r3)
 /* 80052194 0004DE34  D0 03 00 04 */	stfs f0, 4(r3)
-/* 80052198 0004DE38  4E 80 00 20 */	blr 
+/* 80052198 0004DE38  4E 80 00 20 */	blr
 
 .global "__ct__7EGEVertFv"
 "__ct__7EGEVertFv":
@@ -5147,11 +5147,11 @@ lbl_80052140:
 /* 800521C4 0004DE64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800521C8 0004DE68  7C 08 03 A6 */	mtlr r0
 /* 800521CC 0004DE6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800521D0 0004DE70  4E 80 00 20 */	blr 
+/* 800521D0 0004DE70  4E 80 00 20 */	blr
 
 .global "__ct__5EVec4Fv"
 "__ct__5EVec4Fv":
-/* 800521D4 0004DE74  4E 80 00 20 */	blr 
+/* 800521D4 0004DE74  4E 80 00 20 */	blr
 
 .global "__as__5EVec4Ff"
 "__as__5EVec4Ff":
@@ -5159,7 +5159,7 @@ lbl_80052140:
 /* 800521DC 0004DE7C  D0 23 00 04 */	stfs f1, 4(r3)
 /* 800521E0 0004DE80  D0 23 00 08 */	stfs f1, 8(r3)
 /* 800521E4 0004DE84  D0 23 00 0C */	stfs f1, 0xc(r3)
-/* 800521E8 0004DE88  4E 80 00 20 */	blr 
+/* 800521E8 0004DE88  4E 80 00 20 */	blr
 
 .global "Translate__5EMat4Ffff"
 "Translate__5EMat4Ffff":
@@ -5177,7 +5177,7 @@ lbl_80052140:
 /* 80052218 0004DEB8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8005221C 0004DEBC  7C 08 03 A6 */	mtlr r0
 /* 80052220 0004DEC0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052224 0004DEC4  4E 80 00 20 */	blr 
+/* 80052224 0004DEC4  4E 80 00 20 */	blr
 
 .global "PreScale__5EMat4Ffff"
 "PreScale__5EMat4Ffff":
@@ -5195,13 +5195,13 @@ lbl_80052140:
 /* 80052254 0004DEF4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80052258 0004DEF8  7C 08 03 A6 */	mtlr r0
 /* 8005225C 0004DEFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052260 0004DF00  4E 80 00 20 */	blr 
+/* 80052260 0004DF00  4E 80 00 20 */	blr
 
 .global "__vc__5EMat4CFi"
 "__vc__5EMat4CFi":
 /* 80052264 0004DF04  54 80 20 36 */	slwi r0, r4, 4
 /* 80052268 0004DF08  7C 63 02 14 */	add r3, r3, r0
-/* 8005226C 0004DF0C  4E 80 00 20 */	blr 
+/* 8005226C 0004DF0C  4E 80 00 20 */	blr
 
 .global "Overlap__7EBound3CFRC7EBound3"
 "Overlap__7EBound3CFRC7EBound3":
@@ -5285,7 +5285,7 @@ lbl_8005238C:
 /* 800523A0 0004E040  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800523A4 0004E044  7C 08 03 A6 */	mtlr r0
 /* 800523A8 0004E048  38 21 00 20 */	addi r1, r1, 0x20
-/* 800523AC 0004E04C  4E 80 00 20 */	blr 
+/* 800523AC 0004E04C  4E 80 00 20 */	blr
 
 .global "__ct__7EBound3Fv"
 "__ct__7EBound3Fv":
@@ -5311,7 +5311,7 @@ lbl_8005238C:
 /* 800523FC 0004E09C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80052400 0004E0A0  7C 08 03 A6 */	mtlr r0
 /* 80052404 0004E0A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052408 0004E0A8  4E 80 00 20 */	blr 
+/* 80052408 0004E0A8  4E 80 00 20 */	blr
 
 .global "Center__7EBound3CFv"
 "Center__7EBound3CFv":
@@ -5331,7 +5331,7 @@ lbl_8005238C:
 /* 80052440 0004E0E0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80052444 0004E0E4  7C 08 03 A6 */	mtlr r0
 /* 80052448 0004E0E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005244C 0004E0EC  4E 80 00 20 */	blr 
+/* 8005244C 0004E0EC  4E 80 00 20 */	blr
 
 .global "__as__7EBound3FRC7EBound3"
 "__as__7EBound3FRC7EBound3":
@@ -5352,30 +5352,30 @@ lbl_8005238C:
 /* 80052488 0004E128  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005248C 0004E12C  7C 08 03 A6 */	mtlr r0
 /* 80052490 0004E130  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052494 0004E134  4E 80 00 20 */	blr 
+/* 80052494 0004E134  4E 80 00 20 */	blr
 
 .global "GetContext__9EInstanceFv"
 "GetContext__9EInstanceFv":
 /* 80052498 0004E138  38 60 00 00 */	li r3, 0
-/* 8005249C 0004E13C  4E 80 00 20 */	blr 
+/* 8005249C 0004E13C  4E 80 00 20 */	blr
 
 .global "PropigateFlagsToSubModels__12ISimInstanceFv"
 "PropigateFlagsToSubModels__12ISimInstanceFv":
-/* 800524A0 0004E140  4E 80 00 20 */	blr 
+/* 800524A0 0004E140  4E 80 00 20 */	blr
 
 .global "SetObjOrient__12ISimInstanceFv"
 "SetObjOrient__12ISimInstanceFv":
-/* 800524A4 0004E144  4E 80 00 20 */	blr 
+/* 800524A4 0004E144  4E 80 00 20 */	blr
 
 .global "IsMultiTilePart__12ISimInstanceFv"
 "IsMultiTilePart__12ISimInstanceFv":
 /* 800524A8 0004E148  38 60 00 00 */	li r3, 0
-/* 800524AC 0004E14C  4E 80 00 20 */	blr 
+/* 800524AC 0004E14C  4E 80 00 20 */	blr
 
 .global "GetCursFlags__12ISimInstanceFv"
 "GetCursFlags__12ISimInstanceFv":
 /* 800524B0 0004E150  80 63 03 70 */	lwz r3, 0x370(r3)
-/* 800524B4 0004E154  4E 80 00 20 */	blr 
+/* 800524B4 0004E154  4E 80 00 20 */	blr
 
 .global "GetObCenter__12ISimInstanceFv"
 "GetObCenter__12ISimInstanceFv":
@@ -5384,7 +5384,7 @@ lbl_8005238C:
 
 .global "PhysicsGetPos__7PhysicsCFv"
 "PhysicsGetPos__7PhysicsCFv":
-/* 800524C0 0004E160  4E 80 00 20 */	blr 
+/* 800524C0 0004E160  4E 80 00 20 */	blr
 
 .global "PhysicsSetPos__7PhysicsFRC5EVec3"
 "PhysicsSetPos__7PhysicsFRC5EVec3":
@@ -5398,7 +5398,7 @@ lbl_8005238C:
 /* 800524D4 0004E174  7C 00 20 50 */	subf r0, r0, r4
 /* 800524D8 0004E178  7C 60 03 78 */	or r0, r3, r0
 /* 800524DC 0004E17C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 800524E0 0004E180  4E 80 00 20 */	blr 
+/* 800524E0 0004E180  4E 80 00 20 */	blr
 
 .global "GetPeople__12ObjectModuleFi"
 "GetPeople__12ObjectModuleFi":
@@ -5411,7 +5411,7 @@ lbl_8005238C:
 /* 800524FC 0004E19C  80 63 00 00 */	lwz r3, 0(r3)
 /* 80052500 0004E1A0  7C 08 03 A6 */	mtlr r0
 /* 80052504 0004E1A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052508 0004E1A8  4E 80 00 20 */	blr 
+/* 80052508 0004E1A8  4E 80 00 20 */	blr
 
 .global "GetNumPeople__12ObjectModuleFv"
 "GetNumPeople__12ObjectModuleFv":
@@ -5429,7 +5429,7 @@ lbl_8005238C:
 /* 80052520 0004E1C0  80 63 00 00 */	lwz r3, 0(r3)
 /* 80052524 0004E1C4  54 80 10 3A */	slwi r0, r4, 2
 /* 80052528 0004E1C8  7C 63 02 14 */	add r3, r3, r0
-/* 8005252C 0004E1CC  4E 80 00 20 */	blr 
+/* 8005252C 0004E1CC  4E 80 00 20 */	blr
 
 .global "size__Q25eastl37vector<P8cXPerson,Q25eastl9allocator>CFv"
 "size__Q25eastl37vector<P8cXPerson,Q25eastl9allocator>CFv":
@@ -5438,17 +5438,17 @@ lbl_8005238C:
 /* 80052538 0004E1D8  7C 04 00 50 */	subf r0, r4, r0
 /* 8005253C 0004E1DC  7C 00 16 70 */	srawi r0, r0, 2
 /* 80052540 0004E1E0  7C 60 01 94 */	addze r3, r0
-/* 80052544 0004E1E4  4E 80 00 20 */	blr 
+/* 80052544 0004E1E4  4E 80 00 20 */	blr
 
 .global "end__Q25eastl37vector<P8cXObject,Q25eastl9allocator>CFv"
 "end__Q25eastl37vector<P8cXObject,Q25eastl9allocator>CFv":
 /* 80052548 0004E1E8  80 63 00 04 */	lwz r3, 4(r3)
-/* 8005254C 0004E1EC  4E 80 00 20 */	blr 
+/* 8005254C 0004E1EC  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl37vector<P8cXObject,Q25eastl9allocator>CFv"
 "begin__Q25eastl37vector<P8cXObject,Q25eastl9allocator>CFv":
 /* 80052550 0004E1F0  80 63 00 00 */	lwz r3, 0(r3)
-/* 80052554 0004E1F4  4E 80 00 20 */	blr 
+/* 80052554 0004E1F4  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>Fv"
 "__dt__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>Fv":
@@ -5478,7 +5478,7 @@ lbl_800525A4:
 /* 800525B0 0004E250  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800525B4 0004E254  7C 08 03 A6 */	mtlr r0
 /* 800525B8 0004E258  38 21 00 10 */	addi r1, r1, 0x10
-/* 800525BC 0004E25C  4E 80 00 20 */	blr 
+/* 800525BC 0004E25C  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>Fv"
 "__dt__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>Fv":
@@ -5513,11 +5513,11 @@ lbl_8005261C:
 /* 80052628 0004E2C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005262C 0004E2CC  7C 08 03 A6 */	mtlr r0
 /* 80052630 0004E2D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052634 0004E2D4  4E 80 00 20 */	blr 
+/* 80052634 0004E2D4  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock"
 "DoDestroyValues__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock":
-/* 80052638 0004E2D8  4E 80 00 20 */	blr 
+/* 80052638 0004E2D8  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule12FloorPainter18FloorPainterParamsFv"
 "__dt__Q316InteractorModule12FloorPainter18FloorPainterParamsFv":
@@ -5543,7 +5543,7 @@ lbl_80052678:
 /* 80052684 0004E324  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052688 0004E328  7C 08 03 A6 */	mtlr r0
 /* 8005268C 0004E32C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052690 0004E330  4E 80 00 20 */	blr 
+/* 80052690 0004E330  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5558,7 +5558,7 @@ lbl_80052678:
 /* 800526B4 0004E354  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800526B8 0004E358  7C 08 03 A6 */	mtlr r0
 /* 800526BC 0004E35C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800526C0 0004E360  4E 80 00 20 */	blr 
+/* 800526C0 0004E360  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5578,7 +5578,7 @@ lbl_80052678:
 /* 800526F8 0004E398  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800526FC 0004E39C  7C 08 03 A6 */	mtlr r0
 /* 80052700 0004E3A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052704 0004E3A4  4E 80 00 20 */	blr 
+/* 80052704 0004E3A4  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ216InteractorModule8InvStock"
 "push_back__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FRCQ216InteractorModule8InvStock":
@@ -5612,17 +5612,17 @@ lbl_80052768:
 /* 8005276C 0004E40C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80052770 0004E410  7C 08 03 A6 */	mtlr r0
 /* 80052774 0004E414  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052778 0004E418  4E 80 00 20 */	blr 
+/* 80052778 0004E418  4E 80 00 20 */	blr
 
 .global "end__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv"
 "end__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv":
 /* 8005277C 0004E41C  80 63 00 04 */	lwz r3, 4(r3)
-/* 80052780 0004E420  4E 80 00 20 */	blr 
+/* 80052780 0004E420  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv"
 "begin__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv":
 /* 80052784 0004E424  80 63 00 00 */	lwz r3, 0(r3)
-/* 80052788 0004E428  4E 80 00 20 */	blr 
+/* 80052788 0004E428  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl28vector<i,Q25eastl9allocator>FUl"
 "resize__Q25eastl28vector<i,Q25eastl9allocator>FUl":
@@ -5686,7 +5686,7 @@ lbl_800527BC:
 /* 80052848 0004E4E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005284C 0004E4EC  7C 08 03 A6 */	mtlr r0
 /* 80052850 0004E4F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052854 0004E4F4  4E 80 00 20 */	blr 
+/* 80052854 0004E4F4  4E 80 00 20 */	blr
 
 .global "size__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv"
 "size__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv":
@@ -5698,7 +5698,7 @@ lbl_800527BC:
 /* 8005286C 0004E50C  7C 63 00 96 */	mulhw r3, r3, r0
 /* 80052870 0004E510  54 60 0F FE */	srwi r0, r3, 0x1f
 /* 80052874 0004E514  7C 63 02 14 */	add r3, r3, r0
-/* 80052878 0004E518  4E 80 00 20 */	blr 
+/* 80052878 0004E518  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv":
@@ -5728,7 +5728,7 @@ lbl_800528C8:
 /* 800528D4 0004E574  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800528D8 0004E578  7C 08 03 A6 */	mtlr r0
 /* 800528DC 0004E57C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800528E0 0004E580  4E 80 00 20 */	blr 
+/* 800528E0 0004E580  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv":
@@ -5767,11 +5767,11 @@ lbl_80052950:
 /* 8005295C 0004E5FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052960 0004E600  7C 08 03 A6 */	mtlr r0
 /* 80052964 0004E604  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052968 0004E608  4E 80 00 20 */	blr 
+/* 80052968 0004E608  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "DoDestroyValues__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
-/* 8005296C 0004E60C  4E 80 00 20 */	blr 
+/* 8005296C 0004E60C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5786,7 +5786,7 @@ lbl_80052950:
 /* 80052990 0004E630  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052994 0004E634  7C 08 03 A6 */	mtlr r0
 /* 80052998 0004E638  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005299C 0004E63C  4E 80 00 20 */	blr 
+/* 8005299C 0004E63C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -5806,12 +5806,12 @@ lbl_80052950:
 /* 800529D4 0004E674  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800529D8 0004E678  7C 08 03 A6 */	mtlr r0
 /* 800529DC 0004E67C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800529E0 0004E680  4E 80 00 20 */	blr 
+/* 800529E0 0004E680  4E 80 00 20 */	blr
 
 .global "end__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv"
 "end__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv":
 /* 800529E4 0004E684  80 63 00 04 */	lwz r3, 4(r3)
-/* 800529E8 0004E688  4E 80 00 20 */	blr 
+/* 800529E8 0004E688  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl18pair<b,9ECTRL_CMD>FRCQ25eastl18pair<b,9ECTRL_CMD>"
 "__as__Q25eastl18pair<b,9ECTRL_CMD>FRCQ25eastl18pair<b,9ECTRL_CMD>":
@@ -5819,7 +5819,7 @@ lbl_80052950:
 /* 800529F0 0004E690  80 04 00 04 */	lwz r0, 4(r4)
 /* 800529F4 0004E694  98 A3 00 00 */	stb r5, 0(r3)
 /* 800529F8 0004E698  90 03 00 04 */	stw r0, 4(r3)
-/* 800529FC 0004E69C  4E 80 00 20 */	blr 
+/* 800529FC 0004E69C  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "insert__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -5870,7 +5870,7 @@ lbl_80052A8C:
 /* 80052AA4 0004E744  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80052AA8 0004E748  7C 08 03 A6 */	mtlr r0
 /* 80052AAC 0004E74C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052AB0 0004E750  4E 80 00 20 */	blr 
+/* 80052AB0 0004E750  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "__ct__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -5889,7 +5889,7 @@ lbl_80052A8C:
 /* 80052AE4 0004E784  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052AE8 0004E788  7C 08 03 A6 */	mtlr r0
 /* 80052AEC 0004E78C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052AF0 0004E790  4E 80 00 20 */	blr 
+/* 80052AF0 0004E790  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl18pair<b,9ECTRL_CMD>FRCQ25eastl18pair<b,9ECTRL_CMD>"
 "__ct__Q25eastl18pair<b,9ECTRL_CMD>FRCQ25eastl18pair<b,9ECTRL_CMD>":
@@ -5897,7 +5897,7 @@ lbl_80052A8C:
 /* 80052AF8 0004E798  80 04 00 04 */	lwz r0, 4(r4)
 /* 80052AFC 0004E79C  98 A3 00 00 */	stb r5, 0(r3)
 /* 80052B00 0004E7A0  90 03 00 04 */	stw r0, 4(r3)
-/* 80052B04 0004E7A4  4E 80 00 20 */	blr 
+/* 80052B04 0004E7A4  4E 80 00 20 */	blr
 
 .global "size__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>CFv"
 "size__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>CFv":
@@ -5910,12 +5910,12 @@ lbl_80052A8C:
 /* 80052B20 0004E7C0  7C 00 0E 70 */	srawi r0, r0, 1
 /* 80052B24 0004E7C4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80052B28 0004E7C8  7C 60 1A 14 */	add r3, r0, r3
-/* 80052B2C 0004E7CC  4E 80 00 20 */	blr 
+/* 80052B2C 0004E7CC  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv"
 "begin__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv":
 /* 80052B30 0004E7D0  80 63 00 00 */	lwz r3, 0(r3)
-/* 80052B34 0004E7D4  4E 80 00 20 */	blr 
+/* 80052B34 0004E7D4  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv"
 "clear__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>Fv":
@@ -5960,19 +5960,19 @@ lbl_80052A8C:
 /* 80052BC4 0004E864  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80052BC8 0004E868  7C 08 03 A6 */	mtlr r0
 /* 80052BCC 0004E86C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052BD0 0004E870  4E 80 00 20 */	blr 
+/* 80052BD0 0004E870  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo"
 "DoDestroyValues__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo":
-/* 80052BD4 0004E874  4E 80 00 20 */	blr 
+/* 80052BD4 0004E874  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "DoDestroyValues__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
-/* 80052BD8 0004E878  4E 80 00 20 */	blr 
+/* 80052BD8 0004E878  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor"
 "DoDestroyValues__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor":
-/* 80052BDC 0004E87C  4E 80 00 20 */	blr 
+/* 80052BDC 0004E87C  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "DoDestroyValues__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -5997,7 +5997,7 @@ lbl_80052C10:
 /* 80052C20 0004E8C0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80052C24 0004E8C4  7C 08 03 A6 */	mtlr r0
 /* 80052C28 0004E8C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052C2C 0004E8CC  4E 80 00 20 */	blr 
+/* 80052C2C 0004E8CC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Fv"
 "__dt__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Fv":
@@ -6027,7 +6027,7 @@ lbl_80052C7C:
 /* 80052C88 0004E928  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052C8C 0004E92C  7C 08 03 A6 */	mtlr r0
 /* 80052C90 0004E930  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052C94 0004E934  4E 80 00 20 */	blr 
+/* 80052C94 0004E934  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>Fv"
 "__dt__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>Fv":
@@ -6062,11 +6062,11 @@ lbl_80052CF4:
 /* 80052D00 0004E9A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052D04 0004E9A4  7C 08 03 A6 */	mtlr r0
 /* 80052D08 0004E9A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052D0C 0004E9AC  4E 80 00 20 */	blr 
+/* 80052D0C 0004E9AC  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor"
 "DoDestroyValues__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor":
-/* 80052D10 0004E9B0  4E 80 00 20 */	blr 
+/* 80052D10 0004E9B0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6081,7 +6081,7 @@ lbl_80052CF4:
 /* 80052D34 0004E9D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052D38 0004E9D8  7C 08 03 A6 */	mtlr r0
 /* 80052D3C 0004E9DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052D40 0004E9E0  4E 80 00 20 */	blr 
+/* 80052D40 0004E9E0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6101,7 +6101,7 @@ lbl_80052CF4:
 /* 80052D78 0004EA18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052D7C 0004EA1C  7C 08 03 A6 */	mtlr r0
 /* 80052D80 0004EA20  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052D84 0004EA24  4E 80 00 20 */	blr 
+/* 80052D84 0004EA24  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6116,7 +6116,7 @@ lbl_80052CF4:
 /* 80052DA8 0004EA48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052DAC 0004EA4C  7C 08 03 A6 */	mtlr r0
 /* 80052DB0 0004EA50  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052DB4 0004EA54  4E 80 00 20 */	blr 
+/* 80052DB4 0004EA54  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6136,7 +6136,7 @@ lbl_80052CF4:
 /* 80052DEC 0004EA8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052DF0 0004EA90  7C 08 03 A6 */	mtlr r0
 /* 80052DF4 0004EA94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052DF8 0004EA98  4E 80 00 20 */	blr 
+/* 80052DF8 0004EA98  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6151,7 +6151,7 @@ lbl_80052CF4:
 /* 80052E1C 0004EABC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052E20 0004EAC0  7C 08 03 A6 */	mtlr r0
 /* 80052E24 0004EAC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052E28 0004EAC8  4E 80 00 20 */	blr 
+/* 80052E28 0004EAC8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6171,7 +6171,7 @@ lbl_80052CF4:
 /* 80052E60 0004EB00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052E64 0004EB04  7C 08 03 A6 */	mtlr r0
 /* 80052E68 0004EB08  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052E6C 0004EB0C  4E 80 00 20 */	blr 
+/* 80052E6C 0004EB0C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6186,7 +6186,7 @@ lbl_80052CF4:
 /* 80052E90 0004EB30  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052E94 0004EB34  7C 08 03 A6 */	mtlr r0
 /* 80052E98 0004EB38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052E9C 0004EB3C  4E 80 00 20 */	blr 
+/* 80052E9C 0004EB3C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6206,7 +6206,7 @@ lbl_80052CF4:
 /* 80052ED4 0004EB74  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80052ED8 0004EB78  7C 08 03 A6 */	mtlr r0
 /* 80052EDC 0004EB7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052EE0 0004EB80  4E 80 00 20 */	blr 
+/* 80052EE0 0004EB80  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl"
 "resize__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl":
@@ -6249,7 +6249,7 @@ lbl_80052F60:
 /* 80052F6C 0004EC0C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80052F70 0004EC10  7C 08 03 A6 */	mtlr r0
 /* 80052F74 0004EC14  38 21 00 30 */	addi r1, r1, 0x30
-/* 80052F78 0004EC18  4E 80 00 20 */	blr 
+/* 80052F78 0004EC18  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo"
 "erase__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo":
@@ -6284,7 +6284,7 @@ lbl_80052F60:
 /* 80052FEC 0004EC8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80052FF0 0004EC90  7C 08 03 A6 */	mtlr r0
 /* 80052FF4 0004EC94  38 21 00 20 */	addi r1, r1, 0x20
-/* 80052FF8 0004EC98  4E 80 00 20 */	blr 
+/* 80052FF8 0004EC98  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo"
 "insert__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo":
@@ -6303,7 +6303,7 @@ lbl_80052F60:
 .global "begin__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>Fv"
 "begin__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>Fv":
 /* 80053010 0004ECB0  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053014 0004ECB4  4E 80 00 20 */	blr 
+/* 80053014 0004ECB4  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>Fv"
 "clear__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>Fv":
@@ -6344,7 +6344,7 @@ lbl_80052F60:
 /* 80053094 0004ED34  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80053098 0004ED38  7C 08 03 A6 */	mtlr r0
 /* 8005309C 0004ED3C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800530A0 0004ED40  4E 80 00 20 */	blr 
+/* 800530A0 0004ED40  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl"
 "resize__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl":
@@ -6387,7 +6387,7 @@ lbl_80053120:
 /* 8005312C 0004EDCC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80053130 0004EDD0  7C 08 03 A6 */	mtlr r0
 /* 80053134 0004EDD4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80053138 0004EDD8  4E 80 00 20 */	blr 
+/* 80053138 0004EDD8  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor"
 "erase__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -6422,7 +6422,7 @@ lbl_80053120:
 /* 800531AC 0004EE4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800531B0 0004EE50  7C 08 03 A6 */	mtlr r0
 /* 800531B4 0004EE54  38 21 00 20 */	addi r1, r1, 0x20
-/* 800531B8 0004EE58  4E 80 00 20 */	blr 
+/* 800531B8 0004EE58  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor"
 "insert__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -6440,35 +6440,35 @@ lbl_80053120:
 /* 800531D0 0004EE70  80 04 00 04 */	lwz r0, 4(r4)
 /* 800531D4 0004EE74  90 A3 00 00 */	stw r5, 0(r3)
 /* 800531D8 0004EE78  90 03 00 04 */	stw r0, 4(r3)
-/* 800531DC 0004EE7C  4E 80 00 20 */	blr 
+/* 800531DC 0004EE7C  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl"
 "__vc__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl":
 /* 800531E0 0004EE80  80 63 00 00 */	lwz r3, 0(r3)
 /* 800531E4 0004EE84  54 80 18 38 */	slwi r0, r4, 3
 /* 800531E8 0004EE88  7C 63 02 14 */	add r3, r3, r0
-/* 800531EC 0004EE8C  4E 80 00 20 */	blr 
+/* 800531EC 0004EE8C  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl"
 "__vc__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl":
 /* 800531F0 0004EE90  80 63 00 00 */	lwz r3, 0(r3)
 /* 800531F4 0004EE94  54 80 18 38 */	slwi r0, r4, 3
 /* 800531F8 0004EE98  7C 63 02 14 */	add r3, r3, r0
-/* 800531FC 0004EE9C  4E 80 00 20 */	blr 
+/* 800531FC 0004EE9C  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>CFUl"
 "__vc__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>CFUl":
 /* 80053200 0004EEA0  80 63 00 00 */	lwz r3, 0(r3)
 /* 80053204 0004EEA4  54 80 20 36 */	slwi r0, r4, 4
 /* 80053208 0004EEA8  7C 63 02 14 */	add r3, r3, r0
-/* 8005320C 0004EEAC  4E 80 00 20 */	blr 
+/* 8005320C 0004EEAC  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
 "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl":
 /* 80053210 0004EEB0  80 63 00 00 */	lwz r3, 0(r3)
 /* 80053214 0004EEB4  54 80 10 3A */	slwi r0, r4, 2
 /* 80053218 0004EEB8  7C 63 02 14 */	add r3, r3, r0
-/* 8005321C 0004EEBC  4E 80 00 20 */	blr 
+/* 8005321C 0004EEBC  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
 "resize__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl":
@@ -6502,7 +6502,7 @@ lbl_80053284:
 /* 80053284 0004EF24  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053288 0004EF28  7C 08 03 A6 */	mtlr r0
 /* 8005328C 0004EF2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053290 0004EF30  4E 80 00 20 */	blr 
+/* 80053290 0004EF30  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor"
 "erase__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor":
@@ -6537,7 +6537,7 @@ lbl_80053284:
 /* 80053304 0004EFA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80053308 0004EFA8  7C 08 03 A6 */	mtlr r0
 /* 8005330C 0004EFAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80053310 0004EFB0  4E 80 00 20 */	blr 
+/* 80053310 0004EFB0  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor"
 "insert__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor":
@@ -6548,7 +6548,7 @@ lbl_80053284:
 /* 80053318 0004EFB8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005331C 0004EFBC  54 80 20 36 */	slwi r0, r4, 4
 /* 80053320 0004EFC0  7C 63 02 14 */	add r3, r3, r0
-/* 80053324 0004EFC4  4E 80 00 20 */	blr 
+/* 80053324 0004EFC4  4E 80 00 20 */	blr
 
 .global "resize__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl"
 "resize__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl":
@@ -6596,7 +6596,7 @@ lbl_800533BC:
 /* 800533C4 0004F064  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 800533C8 0004F068  7C 08 03 A6 */	mtlr r0
 /* 800533CC 0004F06C  38 21 00 30 */	addi r1, r1, 0x30
-/* 800533D0 0004F070  4E 80 00 20 */	blr 
+/* 800533D0 0004F070  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "erase__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -6631,7 +6631,7 @@ lbl_800533BC:
 /* 80053444 0004F0E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80053448 0004F0E8  7C 08 03 A6 */	mtlr r0
 /* 8005344C 0004F0EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80053450 0004F0F0  4E 80 00 20 */	blr 
+/* 80053450 0004F0F0  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "insert__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -6650,7 +6650,7 @@ lbl_800533BC:
 /* 80053478 0004F118  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005347C 0004F11C  7C 08 03 A6 */	mtlr r0
 /* 80053480 0004F120  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053484 0004F124  4E 80 00 20 */	blr 
+/* 80053484 0004F124  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -6670,14 +6670,14 @@ lbl_800533BC:
 /* 800534BC 0004F15C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800534C0 0004F160  7C 08 03 A6 */	mtlr r0
 /* 800534C4 0004F164  38 21 00 10 */	addi r1, r1, 0x10
-/* 800534C8 0004F168  4E 80 00 20 */	blr 
+/* 800534C8 0004F168  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl"
 "__vc__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl":
 /* 800534CC 0004F16C  80 63 00 00 */	lwz r3, 0(r3)
 /* 800534D0 0004F170  54 80 20 36 */	slwi r0, r4, 4
 /* 800534D4 0004F174  7C 63 02 14 */	add r3, r3, r0
-/* 800534D8 0004F178  4E 80 00 20 */	blr 
+/* 800534D8 0004F178  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv"
 "__dt__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv":
@@ -6707,7 +6707,7 @@ lbl_80053528:
 /* 80053534 0004F1D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053538 0004F1D8  7C 08 03 A6 */	mtlr r0
 /* 8005353C 0004F1DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053540 0004F1E0  4E 80 00 20 */	blr 
+/* 80053540 0004F1E0  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>Fv"
 "__dt__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>Fv":
@@ -6747,11 +6747,11 @@ lbl_800535B4:
 /* 800535C0 0004F260  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800535C4 0004F264  7C 08 03 A6 */	mtlr r0
 /* 800535C8 0004F268  38 21 00 10 */	addi r1, r1, 0x10
-/* 800535CC 0004F26C  4E 80 00 20 */	blr 
+/* 800535CC 0004F26C  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataP15EOrderTableData"
 "DoDestroyValues__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataP15EOrderTableData":
-/* 800535D0 0004F270  4E 80 00 20 */	blr 
+/* 800535D0 0004F270  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl29vector<Ui,Q25eastl9allocator>Fv"
 "__dt__Q25eastl29vector<Ui,Q25eastl9allocator>Fv":
@@ -6781,7 +6781,7 @@ lbl_80053620:
 /* 8005362C 0004F2CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053630 0004F2D0  7C 08 03 A6 */	mtlr r0
 /* 80053634 0004F2D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053638 0004F2D8  4E 80 00 20 */	blr 
+/* 80053638 0004F2D8  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl33VectorBase<Ui,Q25eastl9allocator>Fv"
 "__dt__Q25eastl33VectorBase<Ui,Q25eastl9allocator>Fv":
@@ -6816,11 +6816,11 @@ lbl_80053698:
 /* 800536A4 0004F344  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800536A8 0004F348  7C 08 03 A6 */	mtlr r0
 /* 800536AC 0004F34C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800536B0 0004F350  4E 80 00 20 */	blr 
+/* 800536B0 0004F350  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl29vector<Ui,Q25eastl9allocator>FPUiPUi"
 "DoDestroyValues__Q25eastl29vector<Ui,Q25eastl9allocator>FPUiPUi":
-/* 800536B4 0004F354  4E 80 00 20 */	blr 
+/* 800536B4 0004F354  4E 80 00 20 */	blr
 
 .global "__dt__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "__dt__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -6846,7 +6846,7 @@ lbl_800536F4:
 /* 80053700 0004F3A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053704 0004F3A4  7C 08 03 A6 */	mtlr r0
 /* 80053708 0004F3A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005370C 0004F3AC  4E 80 00 20 */	blr 
+/* 8005370C 0004F3AC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv":
@@ -6876,7 +6876,7 @@ lbl_8005375C:
 /* 80053768 0004F408  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005376C 0004F40C  7C 08 03 A6 */	mtlr r0
 /* 80053770 0004F410  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053774 0004F414  4E 80 00 20 */	blr 
+/* 80053774 0004F414  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv":
@@ -6911,11 +6911,11 @@ lbl_800537D4:
 /* 800537E0 0004F480  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800537E4 0004F484  7C 08 03 A6 */	mtlr r0
 /* 800537E8 0004F488  38 21 00 10 */	addi r1, r1, 0x10
-/* 800537EC 0004F48C  4E 80 00 20 */	blr 
+/* 800537EC 0004F48C  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>"
 "DoDestroyValues__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>":
-/* 800537F0 0004F490  4E 80 00 20 */	blr 
+/* 800537F0 0004F490  4E 80 00 20 */	blr
 
 .global "__dt__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "__dt__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -6941,7 +6941,7 @@ lbl_80053830:
 /* 8005383C 0004F4DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053840 0004F4E0  7C 08 03 A6 */	mtlr r0
 /* 80053844 0004F4E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053848 0004F4E8  4E 80 00 20 */	blr 
+/* 80053848 0004F4E8  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv":
@@ -6971,7 +6971,7 @@ lbl_80053898:
 /* 800538A4 0004F544  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800538A8 0004F548  7C 08 03 A6 */	mtlr r0
 /* 800538AC 0004F54C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800538B0 0004F550  4E 80 00 20 */	blr 
+/* 800538B0 0004F550  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv":
@@ -7006,11 +7006,11 @@ lbl_80053910:
 /* 8005391C 0004F5BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053920 0004F5C0  7C 08 03 A6 */	mtlr r0
 /* 80053924 0004F5C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053928 0004F5C8  4E 80 00 20 */	blr 
+/* 80053928 0004F5C8  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>"
 "DoDestroyValues__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>":
-/* 8005392C 0004F5CC  4E 80 00 20 */	blr 
+/* 8005392C 0004F5CC  4E 80 00 20 */	blr
 
 .global "__dt__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "__dt__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -7036,7 +7036,7 @@ lbl_8005396C:
 /* 80053978 0004F618  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005397C 0004F61C  7C 08 03 A6 */	mtlr r0
 /* 80053980 0004F620  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053984 0004F624  4E 80 00 20 */	blr 
+/* 80053984 0004F624  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv":
@@ -7066,7 +7066,7 @@ lbl_800539D4:
 /* 800539E0 0004F680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800539E4 0004F684  7C 08 03 A6 */	mtlr r0
 /* 800539E8 0004F688  38 21 00 10 */	addi r1, r1, 0x10
-/* 800539EC 0004F68C  4E 80 00 20 */	blr 
+/* 800539EC 0004F68C  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv":
@@ -7101,11 +7101,11 @@ lbl_80053A4C:
 /* 80053A58 0004F6F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053A5C 0004F6FC  7C 08 03 A6 */	mtlr r0
 /* 80053A60 0004F700  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053A64 0004F704  4E 80 00 20 */	blr 
+/* 80053A64 0004F704  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>"
 "DoDestroyValues__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>":
-/* 80053A68 0004F708  4E 80 00 20 */	blr 
+/* 80053A68 0004F708  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7120,7 +7120,7 @@ lbl_80053A4C:
 /* 80053A8C 0004F72C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053A90 0004F730  7C 08 03 A6 */	mtlr r0
 /* 80053A94 0004F734  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053A98 0004F738  4E 80 00 20 */	blr 
+/* 80053A98 0004F738  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7140,7 +7140,7 @@ lbl_80053A4C:
 /* 80053AD0 0004F770  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053AD4 0004F774  7C 08 03 A6 */	mtlr r0
 /* 80053AD8 0004F778  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053ADC 0004F77C  4E 80 00 20 */	blr 
+/* 80053ADC 0004F77C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7155,7 +7155,7 @@ lbl_80053A4C:
 /* 80053B00 0004F7A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053B04 0004F7A4  7C 08 03 A6 */	mtlr r0
 /* 80053B08 0004F7A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053B0C 0004F7AC  4E 80 00 20 */	blr 
+/* 80053B0C 0004F7AC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7175,7 +7175,7 @@ lbl_80053A4C:
 /* 80053B44 0004F7E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053B48 0004F7E8  7C 08 03 A6 */	mtlr r0
 /* 80053B4C 0004F7EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053B50 0004F7F0  4E 80 00 20 */	blr 
+/* 80053B50 0004F7F0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7190,7 +7190,7 @@ lbl_80053A4C:
 /* 80053B74 0004F814  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053B78 0004F818  7C 08 03 A6 */	mtlr r0
 /* 80053B7C 0004F81C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053B80 0004F820  4E 80 00 20 */	blr 
+/* 80053B80 0004F820  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7210,7 +7210,7 @@ lbl_80053A4C:
 /* 80053BB8 0004F858  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053BBC 0004F85C  7C 08 03 A6 */	mtlr r0
 /* 80053BC0 0004F860  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053BC4 0004F864  4E 80 00 20 */	blr 
+/* 80053BC4 0004F864  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7225,7 +7225,7 @@ lbl_80053A4C:
 /* 80053BE8 0004F888  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053BEC 0004F88C  7C 08 03 A6 */	mtlr r0
 /* 80053BF0 0004F890  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053BF4 0004F894  4E 80 00 20 */	blr 
+/* 80053BF4 0004F894  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7245,7 +7245,7 @@ lbl_80053A4C:
 /* 80053C2C 0004F8CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053C30 0004F8D0  7C 08 03 A6 */	mtlr r0
 /* 80053C34 0004F8D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053C38 0004F8D8  4E 80 00 20 */	blr 
+/* 80053C38 0004F8D8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7260,7 +7260,7 @@ lbl_80053A4C:
 /* 80053C5C 0004F8FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053C60 0004F900  7C 08 03 A6 */	mtlr r0
 /* 80053C64 0004F904  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053C68 0004F908  4E 80 00 20 */	blr 
+/* 80053C68 0004F908  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -7280,12 +7280,12 @@ lbl_80053A4C:
 /* 80053CA0 0004F940  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053CA4 0004F944  7C 08 03 A6 */	mtlr r0
 /* 80053CA8 0004F948  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053CAC 0004F94C  4E 80 00 20 */	blr 
+/* 80053CAC 0004F94C  4E 80 00 20 */	blr
 
 .global "end__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv"
 "end__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv":
 /* 80053CB0 0004F950  80 63 00 04 */	lwz r3, 4(r3)
-/* 80053CB4 0004F954  4E 80 00 20 */	blr 
+/* 80053CB4 0004F954  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>"
 "insert__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>":
@@ -7332,7 +7332,7 @@ lbl_80053D34:
 /* 80053D4C 0004F9EC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80053D50 0004F9F0  7C 08 03 A6 */	mtlr r0
 /* 80053D54 0004F9F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80053D58 0004F9F8  4E 80 00 20 */	blr 
+/* 80053D58 0004F9F8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl18pair<Ui,P7ERModel>FRCQ25eastl18pair<Ui,P7ERModel>"
 "__ct__Q25eastl18pair<Ui,P7ERModel>FRCQ25eastl18pair<Ui,P7ERModel>":
@@ -7340,7 +7340,7 @@ lbl_80053D34:
 /* 80053D60 0004FA00  80 04 00 04 */	lwz r0, 4(r4)
 /* 80053D64 0004FA04  90 A3 00 00 */	stw r5, 0(r3)
 /* 80053D68 0004FA08  90 03 00 04 */	stw r0, 4(r3)
-/* 80053D6C 0004FA0C  4E 80 00 20 */	blr 
+/* 80053D6C 0004FA0C  4E 80 00 20 */	blr
 
 .global "size__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv"
 "size__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv":
@@ -7349,12 +7349,12 @@ lbl_80053D34:
 /* 80053D78 0004FA18  7C 04 00 50 */	subf r0, r4, r0
 /* 80053D7C 0004FA1C  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80053D80 0004FA20  7C 60 01 94 */	addze r3, r0
-/* 80053D84 0004FA24  4E 80 00 20 */	blr 
+/* 80053D84 0004FA24  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv"
 "begin__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv":
 /* 80053D88 0004FA28  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053D8C 0004FA2C  4E 80 00 20 */	blr 
+/* 80053D8C 0004FA2C  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl29vector<Ui,Q25eastl9allocator>FRCUi"
 "push_back__Q25eastl29vector<Ui,Q25eastl9allocator>FRCUi":
@@ -7386,17 +7386,17 @@ lbl_80053DE8:
 /* 80053DEC 0004FA8C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80053DF0 0004FA90  7C 08 03 A6 */	mtlr r0
 /* 80053DF4 0004FA94  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053DF8 0004FA98  4E 80 00 20 */	blr 
+/* 80053DF8 0004FA98  4E 80 00 20 */	blr
 
 .global "end__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv"
 "end__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv":
 /* 80053DFC 0004FA9C  80 63 00 04 */	lwz r3, 4(r3)
-/* 80053E00 0004FAA0  4E 80 00 20 */	blr 
+/* 80053E00 0004FAA0  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv"
 "begin__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv":
 /* 80053E04 0004FAA4  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053E08 0004FAA8  4E 80 00 20 */	blr 
+/* 80053E08 0004FAA8  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl29vector<Ui,Q25eastl9allocator>FPUi"
 "erase__Q25eastl29vector<Ui,Q25eastl9allocator>FPUi":
@@ -7425,22 +7425,22 @@ lbl_80053E48:
 /* 80053E60 0004FB00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053E64 0004FB04  7C 08 03 A6 */	mtlr r0
 /* 80053E68 0004FB08  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053E6C 0004FB0C  4E 80 00 20 */	blr 
+/* 80053E6C 0004FB0C  4E 80 00 20 */	blr
 
 .global "end__Q25eastl29vector<Ui,Q25eastl9allocator>Fv"
 "end__Q25eastl29vector<Ui,Q25eastl9allocator>Fv":
 /* 80053E70 0004FB10  80 63 00 04 */	lwz r3, 4(r3)
-/* 80053E74 0004FB14  4E 80 00 20 */	blr 
+/* 80053E74 0004FB14  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl29vector<Ui,Q25eastl9allocator>Fv"
 "begin__Q25eastl29vector<Ui,Q25eastl9allocator>Fv":
 /* 80053E78 0004FB18  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053E7C 0004FB1C  4E 80 00 20 */	blr 
+/* 80053E7C 0004FB1C  4E 80 00 20 */	blr
 
 .global "end__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv"
 "end__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv":
 /* 80053E80 0004FB20  80 63 00 04 */	lwz r3, 4(r3)
-/* 80053E84 0004FB24  4E 80 00 20 */	blr 
+/* 80053E84 0004FB24  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>"
 "insert__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>":
@@ -7487,7 +7487,7 @@ lbl_80053F04:
 /* 80053F1C 0004FBBC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80053F20 0004FBC0  7C 08 03 A6 */	mtlr r0
 /* 80053F24 0004FBC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80053F28 0004FBC8  4E 80 00 20 */	blr 
+/* 80053F28 0004FBC8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl19pair<Ui,P8ERShader>FRCQ25eastl19pair<Ui,P8ERShader>"
 "__ct__Q25eastl19pair<Ui,P8ERShader>FRCQ25eastl19pair<Ui,P8ERShader>":
@@ -7495,7 +7495,7 @@ lbl_80053F04:
 /* 80053F30 0004FBD0  80 04 00 04 */	lwz r0, 4(r4)
 /* 80053F34 0004FBD4  90 A3 00 00 */	stw r5, 0(r3)
 /* 80053F38 0004FBD8  90 03 00 04 */	stw r0, 4(r3)
-/* 80053F3C 0004FBDC  4E 80 00 20 */	blr 
+/* 80053F3C 0004FBDC  4E 80 00 20 */	blr
 
 .global "size__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv"
 "size__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv":
@@ -7504,22 +7504,22 @@ lbl_80053F04:
 /* 80053F48 0004FBE8  7C 04 00 50 */	subf r0, r4, r0
 /* 80053F4C 0004FBEC  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80053F50 0004FBF0  7C 60 01 94 */	addze r3, r0
-/* 80053F54 0004FBF4  4E 80 00 20 */	blr 
+/* 80053F54 0004FBF4  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv"
 "begin__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv":
 /* 80053F58 0004FBF8  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053F5C 0004FBFC  4E 80 00 20 */	blr 
+/* 80053F5C 0004FBFC  4E 80 00 20 */	blr
 
 .global "end__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv"
 "end__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv":
 /* 80053F60 0004FC00  80 63 00 04 */	lwz r3, 4(r3)
-/* 80053F64 0004FC04  4E 80 00 20 */	blr 
+/* 80053F64 0004FC04  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv"
 "begin__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv":
 /* 80053F68 0004FC08  80 63 00 00 */	lwz r3, 0(r3)
-/* 80053F6C 0004FC0C  4E 80 00 20 */	blr 
+/* 80053F6C 0004FC0C  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>"
 "erase__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>":
@@ -7548,7 +7548,7 @@ lbl_80053FAC:
 /* 80053FC4 0004FC64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80053FC8 0004FC68  7C 08 03 A6 */	mtlr r0
 /* 80053FCC 0004FC6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80053FD0 0004FC70  4E 80 00 20 */	blr 
+/* 80053FD0 0004FC70  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl20pair<Ui,P9ERTexture>FRCQ25eastl20pair<Ui,P9ERTexture>"
 "__ct__Q25eastl20pair<Ui,P9ERTexture>FRCQ25eastl20pair<Ui,P9ERTexture>":
@@ -7556,7 +7556,7 @@ lbl_80053FAC:
 /* 80053FD8 0004FC78  80 04 00 04 */	lwz r0, 4(r4)
 /* 80053FDC 0004FC7C  90 A3 00 00 */	stw r5, 0(r3)
 /* 80053FE0 0004FC80  90 03 00 04 */	stw r0, 4(r3)
-/* 80053FE4 0004FC84  4E 80 00 20 */	blr 
+/* 80053FE4 0004FC84  4E 80 00 20 */	blr
 
 .global "size__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>CFv"
 "size__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>CFv":
@@ -7565,7 +7565,7 @@ lbl_80053FAC:
 /* 80053FF0 0004FC90  7C 04 00 50 */	subf r0, r4, r0
 /* 80053FF4 0004FC94  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80053FF8 0004FC98  7C 60 01 94 */	addze r3, r0
-/* 80053FFC 0004FC9C  4E 80 00 20 */	blr 
+/* 80053FFC 0004FC9C  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv"
 "clear__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv":
@@ -7611,7 +7611,7 @@ lbl_80053FAC:
 /* 80054090 0004FD30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80054094 0004FD34  7C 08 03 A6 */	mtlr r0
 /* 80054098 0004FD38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005409C 0004FD3C  4E 80 00 20 */	blr 
+/* 8005409C 0004FD3C  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv"
 "clear__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>Fv":
@@ -7652,7 +7652,7 @@ lbl_80053FAC:
 /* 8005411C 0004FDBC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80054120 0004FDC0  7C 08 03 A6 */	mtlr r0
 /* 80054124 0004FDC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80054128 0004FDC8  4E 80 00 20 */	blr 
+/* 80054128 0004FDC8  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv"
 "clear__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>Fv":
@@ -7693,7 +7693,7 @@ lbl_80053FAC:
 /* 800541A8 0004FE48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800541AC 0004FE4C  7C 08 03 A6 */	mtlr r0
 /* 800541B0 0004FE50  38 21 00 20 */	addi r1, r1, 0x20
-/* 800541B4 0004FE54  4E 80 00 20 */	blr 
+/* 800541B4 0004FE54  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl29vector<Ui,Q25eastl9allocator>Fv"
 "clear__Q25eastl29vector<Ui,Q25eastl9allocator>Fv":
@@ -7734,7 +7734,7 @@ lbl_80053FAC:
 /* 80054234 0004FED4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80054238 0004FED8  7C 08 03 A6 */	mtlr r0
 /* 8005423C 0004FEDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80054240 0004FEE0  4E 80 00 20 */	blr 
+/* 80054240 0004FEE0  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv"
 "clear__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>Fv":
@@ -7775,13 +7775,13 @@ lbl_80053FAC:
 /* 800542C0 0004FF60  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800542C4 0004FF64  7C 08 03 A6 */	mtlr r0
 /* 800542C8 0004FF68  38 21 00 20 */	addi r1, r1, 0x20
-/* 800542CC 0004FF6C  4E 80 00 20 */	blr 
+/* 800542CC 0004FF6C  4E 80 00 20 */	blr
 
 .global "back__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv"
 "back__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>Fv":
 /* 800542D0 0004FF70  80 63 00 04 */	lwz r3, 4(r3)
 /* 800542D4 0004FF74  38 63 FF C4 */	addi r3, r3, -60
-/* 800542D8 0004FF78  4E 80 00 20 */	blr 
+/* 800542D8 0004FF78  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRC15EOrderTableData"
 "push_back__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRC15EOrderTableData":
@@ -7813,7 +7813,7 @@ lbl_80054334:
 /* 80054338 0004FFD8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005433C 0004FFDC  7C 08 03 A6 */	mtlr r0
 /* 80054340 0004FFE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054344 0004FFE4  4E 80 00 20 */	blr 
+/* 80054344 0004FFE4  4E 80 00 20 */	blr
 
 .global "__ct__15EOrderTableDataFRC15EOrderTableData"
 "__ct__15EOrderTableDataFRC15EOrderTableData":
@@ -7855,14 +7855,14 @@ lbl_80054334:
 /* 800543D4 00050074  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 800543D8 00050078  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800543DC 0005007C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800543E0 00050080  4E 80 00 20 */	blr 
+/* 800543E0 00050080  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FUl"
 "__vc__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FUl":
 /* 800543E4 00050084  1C 04 00 3C */	mulli r0, r4, 0x3c
 /* 800543E8 00050088  80 63 00 00 */	lwz r3, 0(r3)
 /* 800543EC 0005008C  7C 63 02 14 */	add r3, r3, r0
-/* 800543F0 00050090  4E 80 00 20 */	blr 
+/* 800543F0 00050090  4E 80 00 20 */	blr
 
 .global "size__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>CFv"
 "size__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>CFv":
@@ -7876,7 +7876,7 @@ lbl_80054334:
 /* 80054410 000500B0  7C 00 2E 70 */	srawi r0, r0, 5
 /* 80054414 000500B4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80054418 000500B8  7C 60 1A 14 */	add r3, r0, r3
-/* 8005441C 000500BC  4E 80 00 20 */	blr 
+/* 8005441C 000500BC  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl28vector<s,Q25eastl9allocator>FRCs"
 "push_back__Q25eastl28vector<s,Q25eastl9allocator>FRCs":
@@ -7908,7 +7908,7 @@ lbl_80054478:
 /* 8005447C 0005011C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80054480 00050120  7C 08 03 A6 */	mtlr r0
 /* 80054484 00050124  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054488 00050128  4E 80 00 20 */	blr 
+/* 80054488 00050128  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl28vector<s,Q25eastl9allocator>Fv"
 "clear__Q25eastl28vector<s,Q25eastl9allocator>Fv":
@@ -7949,11 +7949,11 @@ lbl_80054478:
 /* 80054508 000501A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005450C 000501AC  7C 08 03 A6 */	mtlr r0
 /* 80054510 000501B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80054514 000501B4  4E 80 00 20 */	blr 
+/* 80054514 000501B4  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl28vector<s,Q25eastl9allocator>FPsPs"
 "DoDestroyValues__Q25eastl28vector<s,Q25eastl9allocator>FPsPs":
-/* 80054518 000501B8  4E 80 00 20 */	blr 
+/* 80054518 000501B8  4E 80 00 20 */	blr
 
 .global "size__Q25eastl39vector<10ObjectSlot,Q25eastl9allocator>CFv"
 "size__Q25eastl39vector<10ObjectSlot,Q25eastl9allocator>CFv":
@@ -7966,7 +7966,7 @@ lbl_80054478:
 /* 80054534 000501D4  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80054538 000501D8  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 8005453C 000501DC  7C 60 1A 14 */	add r3, r0, r3
-/* 80054540 000501E0  4E 80 00 20 */	blr 
+/* 80054540 000501E0  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ216InteractorModule16PatternSellCount"
 "push_back__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ216InteractorModule16PatternSellCount":
@@ -8000,7 +8000,7 @@ lbl_800545A4:
 /* 800545A8 00050248  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800545AC 0005024C  7C 08 03 A6 */	mtlr r0
 /* 800545B0 00050250  38 21 00 10 */	addi r1, r1, 0x10
-/* 800545B4 00050254  4E 80 00 20 */	blr 
+/* 800545B4 00050254  4E 80 00 20 */	blr
 
 .global "size__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>CFv"
 "size__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>CFv":
@@ -8009,14 +8009,14 @@ lbl_800545A4:
 /* 800545C0 00050260  7C 04 00 50 */	subf r0, r4, r0
 /* 800545C4 00050264  7C 00 1E 70 */	srawi r0, r0, 3
 /* 800545C8 00050268  7C 60 01 94 */	addze r3, r0
-/* 800545CC 0005026C  4E 80 00 20 */	blr 
+/* 800545CC 0005026C  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl"
 "__vc__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl":
 /* 800545D0 00050270  80 63 00 00 */	lwz r3, 0(r3)
 /* 800545D4 00050274  54 80 18 38 */	slwi r0, r4, 3
 /* 800545D8 00050278  7C 63 02 14 */	add r3, r3, r0
-/* 800545DC 0005027C  4E 80 00 20 */	blr 
+/* 800545DC 0005027C  4E 80 00 20 */	blr
 
 .global "size__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>CFv"
 "size__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>CFv":
@@ -8025,14 +8025,14 @@ lbl_800545A4:
 /* 800545E8 00050288  7C 04 00 50 */	subf r0, r4, r0
 /* 800545EC 0005028C  7C 00 1E 70 */	srawi r0, r0, 3
 /* 800545F0 00050290  7C 60 01 94 */	addze r3, r0
-/* 800545F4 00050294  4E 80 00 20 */	blr 
+/* 800545F4 00050294  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl"
 "__vc__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl":
 /* 800545F8 00050298  80 63 00 00 */	lwz r3, 0(r3)
 /* 800545FC 0005029C  54 80 18 38 */	slwi r0, r4, 3
 /* 80054600 000502A0  7C 63 02 14 */	add r3, r3, r0
-/* 80054604 000502A4  4E 80 00 20 */	blr 
+/* 80054604 000502A4  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv":
@@ -8062,7 +8062,7 @@ lbl_80054654:
 /* 80054660 00050300  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054664 00050304  7C 08 03 A6 */	mtlr r0
 /* 80054668 00050308  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005466C 0005030C  4E 80 00 20 */	blr 
+/* 8005466C 0005030C  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv"
 "__dt__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv":
@@ -8097,7 +8097,7 @@ lbl_800546CC:
 /* 800546D8 00050378  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800546DC 0005037C  7C 08 03 A6 */	mtlr r0
 /* 800546E0 00050380  38 21 00 10 */	addi r1, r1, 0x10
-/* 800546E4 00050384  4E 80 00 20 */	blr 
+/* 800546E4 00050384  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "DoDestroyValues__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -8122,7 +8122,7 @@ lbl_80054718:
 /* 80054728 000503C8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8005472C 000503CC  7C 08 03 A6 */	mtlr r0
 /* 80054730 000503D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054734 000503D4  4E 80 00 20 */	blr 
+/* 80054734 000503D4  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Fv"
 "__dt__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Fv":
@@ -8149,7 +8149,7 @@ lbl_80054778:
 /* 80054784 00050424  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054788 00050428  7C 08 03 A6 */	mtlr r0
 /* 8005478C 0005042C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054790 00050430  4E 80 00 20 */	blr 
+/* 80054790 00050430  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -8164,7 +8164,7 @@ lbl_80054778:
 /* 800547B4 00050454  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800547B8 00050458  7C 08 03 A6 */	mtlr r0
 /* 800547BC 0005045C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800547C0 00050460  4E 80 00 20 */	blr 
+/* 800547C0 00050460  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -8184,12 +8184,12 @@ lbl_80054778:
 /* 800547F8 00050498  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800547FC 0005049C  7C 08 03 A6 */	mtlr r0
 /* 80054800 000504A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054804 000504A4  4E 80 00 20 */	blr 
+/* 80054804 000504A4  4E 80 00 20 */	blr
 
 .global "end__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv"
 "end__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv":
 /* 80054808 000504A8  80 63 00 04 */	lwz r3, 4(r3)
-/* 8005480C 000504AC  4E 80 00 20 */	blr 
+/* 8005480C 000504AC  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule21InteractorResourceSetFRCQ216InteractorModule21InteractorResourceSet"
 "__as__Q216InteractorModule21InteractorResourceSetFRCQ216InteractorModule21InteractorResourceSet":
@@ -8225,7 +8225,7 @@ lbl_80054778:
 /* 80054884 00050524  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054888 00050528  7C 08 03 A6 */	mtlr r0
 /* 8005488C 0005052C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054890 00050530  4E 80 00 20 */	blr 
+/* 80054890 00050530  4E 80 00 20 */	blr
 
 .global "insert__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "insert__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -8272,7 +8272,7 @@ lbl_80054910:
 /* 80054928 000505C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005492C 000505CC  7C 08 03 A6 */	mtlr r0
 /* 80054930 000505D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80054934 000505D4  4E 80 00 20 */	blr 
+/* 80054934 000505D4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "__ct__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -8291,7 +8291,7 @@ lbl_80054910:
 /* 80054968 00050608  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005496C 0005060C  7C 08 03 A6 */	mtlr r0
 /* 80054970 00050610  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054974 00050614  4E 80 00 20 */	blr 
+/* 80054974 00050614  4E 80 00 20 */	blr
 
 .global "size__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv"
 "size__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv":
@@ -8300,12 +8300,12 @@ lbl_80054910:
 /* 80054980 00050620  7C 04 00 50 */	subf r0, r4, r0
 /* 80054984 00050624  7C 00 3E 70 */	srawi r0, r0, 7
 /* 80054988 00050628  7C 60 01 94 */	addze r3, r0
-/* 8005498C 0005062C  4E 80 00 20 */	blr 
+/* 8005498C 0005062C  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv"
 "begin__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>Fv":
 /* 80054990 00050630  80 63 00 00 */	lwz r3, 0(r3)
-/* 80054994 00050634  4E 80 00 20 */	blr 
+/* 80054994 00050634  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl44vector<15EOrderTableData,Q25eastl9allocator>"
 "__ct__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl44vector<15EOrderTableData,Q25eastl9allocator>":
@@ -8333,7 +8333,7 @@ lbl_80054910:
 /* 800549EC 0005068C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800549F0 00050690  7C 08 03 A6 */	mtlr r0
 /* 800549F4 00050694  38 21 00 10 */	addi r1, r1, 0x10
-/* 800549F8 00050698  4E 80 00 20 */	blr 
+/* 800549F8 00050698  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -8361,7 +8361,7 @@ lbl_80054910:
 /* 80054A50 000506F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054A54 000506F4  7C 08 03 A6 */	mtlr r0
 /* 80054A58 000506F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054A5C 000506FC  4E 80 00 20 */	blr 
+/* 80054A5C 000506FC  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUl":
@@ -8374,7 +8374,7 @@ lbl_80054910:
 /* 80054A78 00050718  4B FC 36 BC */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80054A7C:
 /* 80054A7C 0005071C  38 60 00 00 */	li r3, 0
-/* 80054A80 00050720  4E 80 00 20 */	blr 
+/* 80054A80 00050720  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl29vector<Ui,Q25eastl9allocator>"
 "__ct__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl29vector<Ui,Q25eastl9allocator>":
@@ -8402,7 +8402,7 @@ lbl_80054A7C:
 /* 80054AD8 00050778  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054ADC 0005077C  7C 08 03 A6 */	mtlr r0
 /* 80054AE0 00050780  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054AE4 00050784  4E 80 00 20 */	blr 
+/* 80054AE4 00050784  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -8430,7 +8430,7 @@ lbl_80054A7C:
 /* 80054B3C 000507DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054B40 000507E0  7C 08 03 A6 */	mtlr r0
 /* 80054B44 000507E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054B48 000507E8  4E 80 00 20 */	blr 
+/* 80054B48 000507E8  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUl":
@@ -8443,7 +8443,7 @@ lbl_80054A7C:
 /* 80054B64 00050804  4B FC 35 D0 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80054B68:
 /* 80054B68 00050808  38 60 00 00 */	li r3, 0
-/* 80054B6C 0005080C  4E 80 00 20 */	blr 
+/* 80054B6C 0005080C  4E 80 00 20 */	blr
 
 .global "size__Q25eastl29vector<Ui,Q25eastl9allocator>CFv"
 "size__Q25eastl29vector<Ui,Q25eastl9allocator>CFv":
@@ -8452,7 +8452,7 @@ lbl_80054B68:
 /* 80054B78 00050818  7C 04 00 50 */	subf r0, r4, r0
 /* 80054B7C 0005081C  7C 00 16 70 */	srawi r0, r0, 2
 /* 80054B80 00050820  7C 60 01 94 */	addze r3, r0
-/* 80054B84 00050824  4E 80 00 20 */	blr 
+/* 80054B84 00050824  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>"
 "__ct__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>":
@@ -8480,7 +8480,7 @@ lbl_80054B68:
 /* 80054BDC 0005087C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054BE0 00050880  7C 08 03 A6 */	mtlr r0
 /* 80054BE4 00050884  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054BE8 00050888  4E 80 00 20 */	blr 
+/* 80054BE8 00050888  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -8508,7 +8508,7 @@ lbl_80054B68:
 /* 80054C40 000508E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054C44 000508E4  7C 08 03 A6 */	mtlr r0
 /* 80054C48 000508E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054C4C 000508EC  4E 80 00 20 */	blr 
+/* 80054C4C 000508EC  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUl":
@@ -8521,7 +8521,7 @@ lbl_80054B68:
 /* 80054C68 00050908  4B FC 34 CC */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80054C6C:
 /* 80054C6C 0005090C  38 60 00 00 */	li r3, 0
-/* 80054C70 00050910  4E 80 00 20 */	blr 
+/* 80054C70 00050910  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>"
 "__ct__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>":
@@ -8549,7 +8549,7 @@ lbl_80054C6C:
 /* 80054CC8 00050968  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054CCC 0005096C  7C 08 03 A6 */	mtlr r0
 /* 80054CD0 00050970  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054CD4 00050974  4E 80 00 20 */	blr 
+/* 80054CD4 00050974  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -8577,7 +8577,7 @@ lbl_80054C6C:
 /* 80054D2C 000509CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054D30 000509D0  7C 08 03 A6 */	mtlr r0
 /* 80054D34 000509D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054D38 000509D8  4E 80 00 20 */	blr 
+/* 80054D38 000509D8  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl":
@@ -8590,7 +8590,7 @@ lbl_80054C6C:
 /* 80054D54 000509F4  4B FC 33 E0 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80054D58:
 /* 80054D58 000509F8  38 60 00 00 */	li r3, 0
-/* 80054D5C 000509FC  4E 80 00 20 */	blr 
+/* 80054D5C 000509FC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>"
 "__ct__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>":
@@ -8618,7 +8618,7 @@ lbl_80054D58:
 /* 80054DB4 00050A54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054DB8 00050A58  7C 08 03 A6 */	mtlr r0
 /* 80054DBC 00050A5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054DC0 00050A60  4E 80 00 20 */	blr 
+/* 80054DC0 00050A60  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -8646,7 +8646,7 @@ lbl_80054D58:
 /* 80054E18 00050AB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054E1C 00050ABC  7C 08 03 A6 */	mtlr r0
 /* 80054E20 00050AC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054E24 00050AC4  4E 80 00 20 */	blr 
+/* 80054E24 00050AC4  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl":
@@ -8659,17 +8659,17 @@ lbl_80054D58:
 /* 80054E40 00050AE0  4B FC 32 F4 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80054E44:
 /* 80054E44 00050AE4  38 60 00 00 */	li r3, 0
-/* 80054E48 00050AE8  4E 80 00 20 */	blr 
+/* 80054E48 00050AE8  4E 80 00 20 */	blr
 
 .global "end__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv"
 "end__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv":
 /* 80054E4C 00050AEC  80 63 00 04 */	lwz r3, 4(r3)
-/* 80054E50 00050AF0  4E 80 00 20 */	blr 
+/* 80054E50 00050AF0  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv"
 "begin__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv":
 /* 80054E54 00050AF4  80 63 00 00 */	lwz r3, 0(r3)
-/* 80054E58 00050AF8  4E 80 00 20 */	blr 
+/* 80054E58 00050AF8  4E 80 00 20 */	blr
 
 .global "erase__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "erase__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -8700,7 +8700,7 @@ lbl_80054E98:
 /* 80054EB8 00050B58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054EBC 00050B5C  7C 08 03 A6 */	mtlr r0
 /* 80054EC0 00050B60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054EC4 00050B64  4E 80 00 20 */	blr 
+/* 80054EC4 00050B64  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv"
 "__dt__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv":
@@ -8730,7 +8730,7 @@ lbl_80054F14:
 /* 80054F20 00050BC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054F24 00050BC4  7C 08 03 A6 */	mtlr r0
 /* 80054F28 00050BC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054F2C 00050BCC  4E 80 00 20 */	blr 
+/* 80054F2C 00050BCC  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>Fv"
 "__dt__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>Fv":
@@ -8769,7 +8769,7 @@ lbl_80054F9C:
 /* 80054FA8 00050C48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054FAC 00050C4C  7C 08 03 A6 */	mtlr r0
 /* 80054FB0 00050C50  38 21 00 10 */	addi r1, r1, 0x10
-/* 80054FB4 00050C54  4E 80 00 20 */	blr 
+/* 80054FB4 00050C54  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FP7CTilePtP7CTilePt"
 "DoDestroyValues__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FP7CTilePtP7CTilePt":
@@ -8794,7 +8794,7 @@ lbl_80054FE8:
 /* 80054FF8 00050C98  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80054FFC 00050C9C  7C 08 03 A6 */	mtlr r0
 /* 80055000 00050CA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055004 00050CA4  4E 80 00 20 */	blr 
+/* 80055004 00050CA4  4E 80 00 20 */	blr
 
 .global "__dt__33TNodeList<P19HRObjectFloorRecord>Fv"
 "__dt__33TNodeList<P19HRObjectFloorRecord>Fv":
@@ -8820,7 +8820,7 @@ lbl_80055044:
 /* 80055050 00050CF0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055054 00050CF4  7C 08 03 A6 */	mtlr r0
 /* 80055058 00050CF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005505C 00050CFC  4E 80 00 20 */	blr 
+/* 8005505C 00050CFC  4E 80 00 20 */	blr
 
 .global "__dt__28TNodeList<P14HRObjectRecord>Fv"
 "__dt__28TNodeList<P14HRObjectRecord>Fv":
@@ -8846,7 +8846,7 @@ lbl_8005509C:
 /* 800550A8 00050D48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800550AC 00050D4C  7C 08 03 A6 */	mtlr r0
 /* 800550B0 00050D50  38 21 00 10 */	addi r1, r1, 0x10
-/* 800550B4 00050D54  4E 80 00 20 */	blr 
+/* 800550B4 00050D54  4E 80 00 20 */	blr
 
 .global "__dt__26TNodeList<P12HRWallRecord>Fv"
 "__dt__26TNodeList<P12HRWallRecord>Fv":
@@ -8872,7 +8872,7 @@ lbl_800550F4:
 /* 80055100 00050DA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055104 00050DA4  7C 08 03 A6 */	mtlr r0
 /* 80055108 00050DA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005510C 00050DAC  4E 80 00 20 */	blr 
+/* 8005510C 00050DAC  4E 80 00 20 */	blr
 
 .global "__dt__27TNodeList<P13HRFloorRecord>Fv"
 "__dt__27TNodeList<P13HRFloorRecord>Fv":
@@ -8898,7 +8898,7 @@ lbl_8005514C:
 /* 80055158 00050DF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005515C 00050DFC  7C 08 03 A6 */	mtlr r0
 /* 80055160 00050E00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055164 00050E04  4E 80 00 20 */	blr 
+/* 80055164 00050E04  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -8913,7 +8913,7 @@ lbl_8005514C:
 /* 80055188 00050E28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005518C 00050E2C  7C 08 03 A6 */	mtlr r0
 /* 80055190 00050E30  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055194 00050E34  4E 80 00 20 */	blr 
+/* 80055194 00050E34  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -8933,7 +8933,7 @@ lbl_8005514C:
 /* 800551CC 00050E6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800551D0 00050E70  7C 08 03 A6 */	mtlr r0
 /* 800551D4 00050E74  38 21 00 10 */	addi r1, r1, 0x10
-/* 800551D8 00050E78  4E 80 00 20 */	blr 
+/* 800551D8 00050E78  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv"
 "clear__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv":
@@ -8978,7 +8978,7 @@ lbl_8005514C:
 /* 80055268 00050F08  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005526C 00050F0C  7C 08 03 A6 */	mtlr r0
 /* 80055270 00050F10  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055274 00050F14  4E 80 00 20 */	blr 
+/* 80055274 00050F14  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl38vector<P9EInstance,Q25eastl9allocator>Fv"
 "__dt__Q25eastl38vector<P9EInstance,Q25eastl9allocator>Fv":
@@ -9008,7 +9008,7 @@ lbl_800552C4:
 /* 800552D0 00050F70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800552D4 00050F74  7C 08 03 A6 */	mtlr r0
 /* 800552D8 00050F78  38 21 00 10 */	addi r1, r1, 0x10
-/* 800552DC 00050F7C  4E 80 00 20 */	blr 
+/* 800552DC 00050F7C  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>Fv"
 "__dt__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>Fv":
@@ -9043,11 +9043,11 @@ lbl_8005533C:
 /* 80055348 00050FE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005534C 00050FEC  7C 08 03 A6 */	mtlr r0
 /* 80055350 00050FF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055354 00050FF4  4E 80 00 20 */	blr 
+/* 80055354 00050FF4  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FPP9EInstancePP9EInstance"
 "DoDestroyValues__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FPP9EInstancePP9EInstance":
-/* 80055358 00050FF8  4E 80 00 20 */	blr 
+/* 80055358 00050FF8  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv"
 "__dt__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv":
@@ -9077,7 +9077,7 @@ lbl_800553A8:
 /* 800553B4 00051054  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800553B8 00051058  7C 08 03 A6 */	mtlr r0
 /* 800553BC 0005105C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800553C0 00051060  4E 80 00 20 */	blr 
+/* 800553C0 00051060  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>Fv"
 "__dt__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>Fv":
@@ -9112,11 +9112,11 @@ lbl_80055420:
 /* 8005542C 000510CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055430 000510D0  7C 08 03 A6 */	mtlr r0
 /* 80055434 000510D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055438 000510D8  4E 80 00 20 */	blr 
+/* 80055438 000510D8  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstancePP12ISimInstance"
 "DoDestroyValues__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstancePP12ISimInstance":
-/* 8005543C 000510DC  4E 80 00 20 */	blr 
+/* 8005543C 000510DC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9131,7 +9131,7 @@ lbl_80055420:
 /* 80055460 00051100  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055464 00051104  7C 08 03 A6 */	mtlr r0
 /* 80055468 00051108  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005546C 0005110C  4E 80 00 20 */	blr 
+/* 8005546C 0005110C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9151,7 +9151,7 @@ lbl_80055420:
 /* 800554A4 00051144  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800554A8 00051148  7C 08 03 A6 */	mtlr r0
 /* 800554AC 0005114C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800554B0 00051150  4E 80 00 20 */	blr 
+/* 800554B0 00051150  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9166,7 +9166,7 @@ lbl_80055420:
 /* 800554D4 00051174  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800554D8 00051178  7C 08 03 A6 */	mtlr r0
 /* 800554DC 0005117C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800554E0 00051180  4E 80 00 20 */	blr 
+/* 800554E0 00051180  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9186,7 +9186,7 @@ lbl_80055420:
 /* 80055518 000511B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005551C 000511BC  7C 08 03 A6 */	mtlr r0
 /* 80055520 000511C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055524 000511C4  4E 80 00 20 */	blr 
+/* 80055524 000511C4  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl38vector<P9EInstance,Q25eastl9allocator>Fv"
 "clear__Q25eastl38vector<P9EInstance,Q25eastl9allocator>Fv":
@@ -9227,7 +9227,7 @@ lbl_80055420:
 /* 800555A4 00051244  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800555A8 00051248  7C 08 03 A6 */	mtlr r0
 /* 800555AC 0005124C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800555B0 00051250  4E 80 00 20 */	blr 
+/* 800555B0 00051250  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv"
 "clear__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv":
@@ -9268,7 +9268,7 @@ lbl_80055420:
 /* 80055630 000512D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055634 000512D4  7C 08 03 A6 */	mtlr r0
 /* 80055638 000512D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005563C 000512DC  4E 80 00 20 */	blr 
+/* 8005563C 000512DC  4E 80 00 20 */	blr
 
 .global "size__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFv"
 "size__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFv":
@@ -9277,14 +9277,14 @@ lbl_80055420:
 /* 80055648 000512E8  7C 04 00 50 */	subf r0, r4, r0
 /* 8005564C 000512EC  7C 00 16 70 */	srawi r0, r0, 2
 /* 80055650 000512F0  7C 60 01 94 */	addze r3, r0
-/* 80055654 000512F4  4E 80 00 20 */	blr 
+/* 80055654 000512F4  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FUl"
 "__vc__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FUl":
 /* 80055658 000512F8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005565C 000512FC  54 80 10 3A */	slwi r0, r4, 2
 /* 80055660 00051300  7C 63 02 14 */	add r3, r3, r0
-/* 80055664 00051304  4E 80 00 20 */	blr 
+/* 80055664 00051304  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FRCP12ISimInstance"
 "push_back__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FRCP12ISimInstance":
@@ -9316,14 +9316,14 @@ lbl_800556C0:
 /* 800556C4 00051364  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800556C8 00051368  7C 08 03 A6 */	mtlr r0
 /* 800556CC 0005136C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800556D0 00051370  4E 80 00 20 */	blr 
+/* 800556D0 00051370  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFUl"
 "__vc__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFUl":
 /* 800556D4 00051374  80 63 00 00 */	lwz r3, 0(r3)
 /* 800556D8 00051378  54 80 10 3A */	slwi r0, r4, 2
 /* 800556DC 0005137C  7C 63 02 14 */	add r3, r3, r0
-/* 800556E0 00051380  4E 80 00 20 */	blr 
+/* 800556E0 00051380  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FRCP9EInstance"
 "push_back__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FRCP9EInstance":
@@ -9355,24 +9355,24 @@ lbl_8005573C:
 /* 80055740 000513E0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80055744 000513E4  7C 08 03 A6 */	mtlr r0
 /* 80055748 000513E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005574C 000513EC  4E 80 00 20 */	blr 
+/* 8005574C 000513EC  4E 80 00 20 */	blr
 
 .global "end__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv"
 "end__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv":
 /* 80055750 000513F0  80 63 00 04 */	lwz r3, 4(r3)
-/* 80055754 000513F4  4E 80 00 20 */	blr 
+/* 80055754 000513F4  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv"
 "begin__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>Fv":
 /* 80055758 000513F8  80 63 00 00 */	lwz r3, 0(r3)
-/* 8005575C 000513FC  4E 80 00 20 */	blr 
+/* 8005575C 000513FC  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFUl"
 "__vc__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFUl":
 /* 80055760 00051400  80 63 00 00 */	lwz r3, 0(r3)
 /* 80055764 00051404  54 80 10 3A */	slwi r0, r4, 2
 /* 80055768 00051408  7C 63 02 14 */	add r3, r3, r0
-/* 8005576C 0005140C  4E 80 00 20 */	blr 
+/* 8005576C 0005140C  4E 80 00 20 */	blr
 
 .global "size__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFv"
 "size__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFv":
@@ -9381,7 +9381,7 @@ lbl_8005573C:
 /* 80055778 00051418  7C 04 00 50 */	subf r0, r4, r0
 /* 8005577C 0005141C  7C 00 16 70 */	srawi r0, r0, 2
 /* 80055780 00051420  7C 60 01 94 */	addze r3, r0
-/* 80055784 00051424  4E 80 00 20 */	blr 
+/* 80055784 00051424  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv"
 "__dt__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv":
@@ -9411,7 +9411,7 @@ lbl_800557D4:
 /* 800557E0 00051480  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800557E4 00051484  7C 08 03 A6 */	mtlr r0
 /* 800557E8 00051488  38 21 00 10 */	addi r1, r1, 0x10
-/* 800557EC 0005148C  4E 80 00 20 */	blr 
+/* 800557EC 0005148C  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv"
 "__dt__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv":
@@ -9446,11 +9446,11 @@ lbl_8005584C:
 /* 80055858 000514F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005585C 000514FC  7C 08 03 A6 */	mtlr r0
 /* 80055860 00051500  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055864 00051504  4E 80 00 20 */	blr 
+/* 80055864 00051504  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount"
 "DoDestroyValues__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount":
-/* 80055868 00051508  4E 80 00 20 */	blr 
+/* 80055868 00051508  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv"
 "__dt__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv":
@@ -9480,7 +9480,7 @@ lbl_800558B8:
 /* 800558C4 00051564  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800558C8 00051568  7C 08 03 A6 */	mtlr r0
 /* 800558CC 0005156C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800558D0 00051570  4E 80 00 20 */	blr 
+/* 800558D0 00051570  4E 80 00 20 */	blr
 
 .global "__dt__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv"
 "__dt__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv":
@@ -9515,11 +9515,11 @@ lbl_80055930:
 /* 8005593C 000515DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055940 000515E0  7C 08 03 A6 */	mtlr r0
 /* 80055944 000515E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055948 000515E8  4E 80 00 20 */	blr 
+/* 80055948 000515E8  4E 80 00 20 */	blr
 
 .global "DoDestroyValues__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount"
 "DoDestroyValues__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount":
-/* 8005594C 000515EC  4E 80 00 20 */	blr 
+/* 8005594C 000515EC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9534,7 +9534,7 @@ lbl_80055930:
 /* 80055970 00051610  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055974 00051614  7C 08 03 A6 */	mtlr r0
 /* 80055978 00051618  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005597C 0005161C  4E 80 00 20 */	blr 
+/* 8005597C 0005161C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9554,7 +9554,7 @@ lbl_80055930:
 /* 800559B4 00051654  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800559B8 00051658  7C 08 03 A6 */	mtlr r0
 /* 800559BC 0005165C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800559C0 00051660  4E 80 00 20 */	blr 
+/* 800559C0 00051660  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9569,7 +9569,7 @@ lbl_80055930:
 /* 800559E4 00051684  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800559E8 00051688  7C 08 03 A6 */	mtlr r0
 /* 800559EC 0005168C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800559F0 00051690  4E 80 00 20 */	blr 
+/* 800559F0 00051690  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl9allocator"
 "__ct__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl9allocator":
@@ -9589,7 +9589,7 @@ lbl_80055930:
 /* 80055A28 000516C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80055A2C 000516CC  7C 08 03 A6 */	mtlr r0
 /* 80055A30 000516D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055A34 000516D4  4E 80 00 20 */	blr 
+/* 80055A34 000516D4  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv"
 "clear__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>Fv":
@@ -9630,7 +9630,7 @@ lbl_80055930:
 /* 80055AB4 00051754  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055AB8 00051758  7C 08 03 A6 */	mtlr r0
 /* 80055ABC 0005175C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055AC0 00051760  4E 80 00 20 */	blr 
+/* 80055AC0 00051760  4E 80 00 20 */	blr
 
 .global "clear__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv"
 "clear__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>Fv":
@@ -9671,7 +9671,7 @@ lbl_80055930:
 /* 80055B40 000517E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055B44 000517E4  7C 08 03 A6 */	mtlr r0
 /* 80055B48 000517E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055B4C 000517EC  4E 80 00 20 */	blr 
+/* 80055B4C 000517EC  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ216InteractorModule14FenceSellCount"
 "push_back__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ216InteractorModule14FenceSellCount":
@@ -9705,14 +9705,14 @@ lbl_80055BB0:
 /* 80055BB4 00051854  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80055BB8 00051858  7C 08 03 A6 */	mtlr r0
 /* 80055BBC 0005185C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055BC0 00051860  4E 80 00 20 */	blr 
+/* 80055BC0 00051860  4E 80 00 20 */	blr
 
 .global "__vc__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl"
 "__vc__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl":
 /* 80055BC4 00051864  80 63 00 00 */	lwz r3, 0(r3)
 /* 80055BC8 00051868  54 80 18 38 */	slwi r0, r4, 3
 /* 80055BCC 0005186C  7C 63 02 14 */	add r3, r3, r0
-/* 80055BD0 00051870  4E 80 00 20 */	blr 
+/* 80055BD0 00051870  4E 80 00 20 */	blr
 
 .global "size__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>CFv"
 "size__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>CFv":
@@ -9721,7 +9721,7 @@ lbl_80055BB0:
 /* 80055BDC 0005187C  7C 04 00 50 */	subf r0, r4, r0
 /* 80055BE0 00051880  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80055BE4 00051884  7C 60 01 94 */	addze r3, r0
-/* 80055BE8 00051888  4E 80 00 20 */	blr 
+/* 80055BE8 00051888  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule15WallManipulator12CallbackDataFv"
 "__ct__Q316InteractorModule15WallManipulator12CallbackDataFv":
@@ -9760,7 +9760,7 @@ lbl_80055BB0:
 /* 80055C6C 0005190C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055C70 00051910  7C 08 03 A6 */	mtlr r0
 /* 80055C74 00051914  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055C78 00051918  4E 80 00 20 */	blr 
+/* 80055C78 00051918  4E 80 00 20 */	blr
 
 .global "push_back__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FRC7CTilePt"
 "push_back__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FRC7CTilePt":
@@ -9792,17 +9792,17 @@ lbl_80055CD4:
 /* 80055CD8 00051978  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80055CDC 0005197C  7C 08 03 A6 */	mtlr r0
 /* 80055CE0 00051980  38 21 00 10 */	addi r1, r1, 0x10
-/* 80055CE4 00051984  4E 80 00 20 */	blr 
+/* 80055CE4 00051984  4E 80 00 20 */	blr
 
 .global "end__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv"
 "end__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv":
 /* 80055CE8 00051988  80 63 00 04 */	lwz r3, 4(r3)
-/* 80055CEC 0005198C  4E 80 00 20 */	blr 
+/* 80055CEC 0005198C  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv"
 "begin__Q25eastl35vector<7CTilePt,Q25eastl9allocator>Fv":
 /* 80055CF0 00051990  80 63 00 00 */	lwz r3, 0(r3)
-/* 80055CF4 00051994  4E 80 00 20 */	blr 
+/* 80055CF4 00051994  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "DoInsertValue__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -9903,16 +9903,16 @@ lbl_80055E54:
 /* 80055E5C 00051AFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055E60 00051B00  7C 08 03 A6 */	mtlr r0
 /* 80055E64 00051B04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055E68 00051B08  4E 80 00 20 */	blr 
+/* 80055E68 00051B08  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>Ul"
 "DoFree__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>Ul":
 /* 80055E6C 00051B0C  2C 04 00 00 */	cmpwi r4, 0
-/* 80055E70 00051B10  4D 82 00 20 */	beqlr 
+/* 80055E70 00051B10  4D 82 00 20 */	beqlr
 /* 80055E74 00051B14  1C A5 00 0C */	mulli r5, r5, 0xc
 /* 80055E78 00051B18  38 63 00 0C */	addi r3, r3, 0xc
 /* 80055E7C 00051B1C  4B FC 22 A8 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80055E80 00051B20  4E 80 00 20 */	blr 
+/* 80055E80 00051B20  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl":
@@ -9925,15 +9925,15 @@ lbl_80055E54:
 /* 80055E9C 00051B3C  4B FC 22 98 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80055EA0:
 /* 80055EA0 00051B40  38 60 00 00 */	li r3, 0
-/* 80055EA4 00051B44  4E 80 00 20 */	blr 
+/* 80055EA4 00051B44  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl139VectorBase<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl":
 /* 80055EA8 00051B48  2C 04 00 00 */	cmpwi r4, 0
 /* 80055EAC 00051B4C  38 60 00 01 */	li r3, 1
-/* 80055EB0 00051B50  4D 82 00 20 */	beqlr 
+/* 80055EB0 00051B50  4D 82 00 20 */	beqlr
 /* 80055EB4 00051B54  54 83 08 3C */	slwi r3, r4, 1
-/* 80055EB8 00051B58  4E 80 00 20 */	blr 
+/* 80055EB8 00051B58  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUl":
@@ -9997,7 +9997,7 @@ lbl_80055F8C:
 /* 80055F9C 00051C3C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80055FA0 00051C40  7C 08 03 A6 */	mtlr r0
 /* 80055FA4 00051C44  38 21 00 20 */	addi r1, r1, 0x20
-/* 80055FA8 00051C48  4E 80 00 20 */	blr 
+/* 80055FA8 00051C48  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUlPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "DoRealloc<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>FUlPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -10022,7 +10022,7 @@ lbl_80055F8C:
 /* 80055FF4 00051C94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80055FF8 00051C98  7C 08 03 A6 */	mtlr r0
 /* 80055FFC 00051C9C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056000 00051CA0  4E 80 00 20 */	blr 
+/* 80056000 00051CA0  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>CFv"
 "empty__Q25eastl135vector<Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,Q25eastl9allocator>CFv":
@@ -10031,7 +10031,7 @@ lbl_80055F8C:
 /* 8005600C 00051CAC  7C 04 00 50 */	subf r0, r4, r0
 /* 80056010 00051CB0  7C 00 00 34 */	cntlzw r0, r0
 /* 80056014 00051CB4  54 03 D9 7E */	srwi r3, r0, 5
-/* 80056018 00051CB8  4E 80 00 20 */	blr 
+/* 80056018 00051CB8  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl29vector<Ui,Q25eastl9allocator>FPUiRCUi"
 "DoInsertValue__Q25eastl29vector<Ui,Q25eastl9allocator>FPUiRCUi":
@@ -10123,24 +10123,24 @@ lbl_80056154:
 /* 8005615C 00051DFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056160 00051E00  7C 08 03 A6 */	mtlr r0
 /* 80056164 00051E04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056168 00051E08  4E 80 00 20 */	blr 
+/* 80056168 00051E08  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FPUiUl"
 "DoFree__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FPUiUl":
 /* 8005616C 00051E0C  2C 04 00 00 */	cmpwi r4, 0
-/* 80056170 00051E10  4D 82 00 20 */	beqlr 
+/* 80056170 00051E10  4D 82 00 20 */	beqlr
 /* 80056174 00051E14  54 A5 10 3A */	slwi r5, r5, 2
 /* 80056178 00051E18  38 63 00 0C */	addi r3, r3, 0xc
 /* 8005617C 00051E1C  4B FC 1F A8 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80056180 00051E20  4E 80 00 20 */	blr 
+/* 80056180 00051E20  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl33VectorBase<Ui,Q25eastl9allocator>FUl":
 /* 80056184 00051E24  2C 04 00 00 */	cmpwi r4, 0
 /* 80056188 00051E28  38 60 00 01 */	li r3, 1
-/* 8005618C 00051E2C  4D 82 00 20 */	beqlr 
+/* 8005618C 00051E2C  4D 82 00 20 */	beqlr
 /* 80056190 00051E30  54 83 08 3C */	slwi r3, r4, 1
-/* 80056194 00051E34  4E 80 00 20 */	blr 
+/* 80056194 00051E34  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl29vector<Ui,Q25eastl9allocator>"
 "__as__Q25eastl29vector<Ui,Q25eastl9allocator>FRCQ25eastl29vector<Ui,Q25eastl9allocator>":
@@ -10229,7 +10229,7 @@ lbl_800562C0:
 /* 800562D0 00051F70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800562D4 00051F74  7C 08 03 A6 */	mtlr r0
 /* 800562D8 00051F78  38 21 00 20 */	addi r1, r1, 0x20
-/* 800562DC 00051F7C  4E 80 00 20 */	blr 
+/* 800562DC 00051F7C  4E 80 00 20 */	blr
 
 .global "DoRealloc<PUi>__Q25eastl29vector<Ui,Q25eastl9allocator>FUlPUiPUi_PUi"
 "DoRealloc<PUi>__Q25eastl29vector<Ui,Q25eastl9allocator>FUlPUiPUi_PUi":
@@ -10254,7 +10254,7 @@ lbl_800562C0:
 /* 80056328 00051FC8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005632C 00051FCC  7C 08 03 A6 */	mtlr r0
 /* 80056330 00051FD0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056334 00051FD4  4E 80 00 20 */	blr 
+/* 80056334 00051FD4  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockRCQ216InteractorModule8InvStock"
 "DoInsertValue__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockRCQ216InteractorModule8InvStock":
@@ -10351,16 +10351,16 @@ lbl_80056484:
 /* 8005648C 0005212C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056490 00052130  7C 08 03 A6 */	mtlr r0
 /* 80056494 00052134  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056498 00052138  4E 80 00 20 */	blr 
+/* 80056498 00052138  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockUl"
 "DoFree__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FPQ216InteractorModule8InvStockUl":
 /* 8005649C 0005213C  2C 04 00 00 */	cmpwi r4, 0
-/* 800564A0 00052140  4D 82 00 20 */	beqlr 
+/* 800564A0 00052140  4D 82 00 20 */	beqlr
 /* 800564A4 00052144  54 A5 18 38 */	slwi r5, r5, 3
 /* 800564A8 00052148  38 63 00 0C */	addi r3, r3, 0xc
 /* 800564AC 0005214C  4B FC 1C 78 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 800564B0 00052150  4E 80 00 20 */	blr 
+/* 800564B0 00052150  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl":
@@ -10373,15 +10373,15 @@ lbl_80056484:
 /* 800564CC 0005216C  4B FC 1C 68 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_800564D0:
 /* 800564D0 00052170  38 60 00 00 */	li r3, 0
-/* 800564D4 00052174  4E 80 00 20 */	blr 
+/* 800564D4 00052174  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl60VectorBase<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl":
 /* 800564D8 00052178  2C 04 00 00 */	cmpwi r4, 0
 /* 800564DC 0005217C  38 60 00 01 */	li r3, 1
-/* 800564E0 00052180  4D 82 00 20 */	beqlr 
+/* 800564E0 00052180  4D 82 00 20 */	beqlr
 /* 800564E4 00052184  54 83 08 3C */	slwi r3, r4, 1
-/* 800564E8 00052188  4E 80 00 20 */	blr 
+/* 800564E8 00052188  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl"
 "reserve__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUl":
@@ -10433,7 +10433,7 @@ lbl_80056590:
 /* 8005659C 0005223C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800565A0 00052240  7C 08 03 A6 */	mtlr r0
 /* 800565A4 00052244  38 21 00 20 */	addi r1, r1, 0x20
-/* 800565A8 00052248  4E 80 00 20 */	blr 
+/* 800565A8 00052248  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ216InteractorModule8InvStock>__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUlPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock"
 "DoRealloc<PQ216InteractorModule8InvStock>__Q25eastl56vector<Q216InteractorModule8InvStock,Q25eastl9allocator>FUlPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock":
@@ -10458,7 +10458,7 @@ lbl_80056590:
 /* 800565F4 00052294  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800565F8 00052298  7C 08 03 A6 */	mtlr r0
 /* 800565FC 0005229C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056600 000522A0  4E 80 00 20 */	blr 
+/* 80056600 000522A0  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountRCQ216InteractorModule14FenceSellCount"
 "DoInsertValue__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountRCQ216InteractorModule14FenceSellCount":
@@ -10555,16 +10555,16 @@ lbl_80056750:
 /* 80056758 000523F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005675C 000523FC  7C 08 03 A6 */	mtlr r0
 /* 80056760 00052400  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056764 00052404  4E 80 00 20 */	blr 
+/* 80056764 00052404  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountUl"
 "DoFree__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FPQ216InteractorModule14FenceSellCountUl":
 /* 80056768 00052408  2C 04 00 00 */	cmpwi r4, 0
-/* 8005676C 0005240C  4D 82 00 20 */	beqlr 
+/* 8005676C 0005240C  4D 82 00 20 */	beqlr
 /* 80056770 00052410  54 A5 18 38 */	slwi r5, r5, 3
 /* 80056774 00052414  38 63 00 0C */	addi r3, r3, 0xc
 /* 80056778 00052418  4B FC 19 AC */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8005677C 0005241C  4E 80 00 20 */	blr 
+/* 8005677C 0005241C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl":
@@ -10577,15 +10577,15 @@ lbl_80056750:
 /* 80056798 00052438  4B FC 19 9C */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8005679C:
 /* 8005679C 0005243C  38 60 00 00 */	li r3, 0
-/* 800567A0 00052440  4E 80 00 20 */	blr 
+/* 800567A0 00052440  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl67VectorBase<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl":
 /* 800567A4 00052444  2C 04 00 00 */	cmpwi r4, 0
 /* 800567A8 00052448  38 60 00 01 */	li r3, 1
-/* 800567AC 0005244C  4D 82 00 20 */	beqlr 
+/* 800567AC 0005244C  4D 82 00 20 */	beqlr
 /* 800567B0 00052450  54 83 08 3C */	slwi r3, r4, 1
-/* 800567B4 00052454  4E 80 00 20 */	blr 
+/* 800567B4 00052454  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl"
 "reserve__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUl":
@@ -10637,7 +10637,7 @@ lbl_8005685C:
 /* 80056868 00052508  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005686C 0005250C  7C 08 03 A6 */	mtlr r0
 /* 80056870 00052510  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056874 00052514  4E 80 00 20 */	blr 
+/* 80056874 00052514  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ216InteractorModule14FenceSellCount>__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUlPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount"
 "DoRealloc<PQ216InteractorModule14FenceSellCount>__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FUlPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount":
@@ -10662,7 +10662,7 @@ lbl_8005685C:
 /* 800568C0 00052560  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800568C4 00052564  7C 08 03 A6 */	mtlr r0
 /* 800568C8 00052568  38 21 00 20 */	addi r1, r1, 0x20
-/* 800568CC 0005256C  4E 80 00 20 */	blr 
+/* 800568CC 0005256C  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>"
 "__as__Q25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>FRCQ25eastl63vector<Q216InteractorModule14FenceSellCount,Q25eastl9allocator>":
@@ -10751,7 +10751,7 @@ lbl_800569F8:
 /* 80056A08 000526A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056A0C 000526AC  7C 08 03 A6 */	mtlr r0
 /* 80056A10 000526B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056A14 000526B4  4E 80 00 20 */	blr 
+/* 80056A14 000526B4  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountRCQ216InteractorModule16PatternSellCount"
 "DoInsertValue__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountRCQ216InteractorModule16PatternSellCount":
@@ -10848,16 +10848,16 @@ lbl_80056B64:
 /* 80056B6C 0005280C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056B70 00052810  7C 08 03 A6 */	mtlr r0
 /* 80056B74 00052814  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056B78 00052818  4E 80 00 20 */	blr 
+/* 80056B78 00052818  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountUl"
 "DoFree__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FPQ216InteractorModule16PatternSellCountUl":
 /* 80056B7C 0005281C  2C 04 00 00 */	cmpwi r4, 0
-/* 80056B80 00052820  4D 82 00 20 */	beqlr 
+/* 80056B80 00052820  4D 82 00 20 */	beqlr
 /* 80056B84 00052824  54 A5 18 38 */	slwi r5, r5, 3
 /* 80056B88 00052828  38 63 00 0C */	addi r3, r3, 0xc
 /* 80056B8C 0005282C  4B FC 15 98 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80056B90 00052830  4E 80 00 20 */	blr 
+/* 80056B90 00052830  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl":
@@ -10870,15 +10870,15 @@ lbl_80056B64:
 /* 80056BAC 0005284C  4B FC 15 88 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80056BB0:
 /* 80056BB0 00052850  38 60 00 00 */	li r3, 0
-/* 80056BB4 00052854  4E 80 00 20 */	blr 
+/* 80056BB4 00052854  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl69VectorBase<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl":
 /* 80056BB8 00052858  2C 04 00 00 */	cmpwi r4, 0
 /* 80056BBC 0005285C  38 60 00 01 */	li r3, 1
-/* 80056BC0 00052860  4D 82 00 20 */	beqlr 
+/* 80056BC0 00052860  4D 82 00 20 */	beqlr
 /* 80056BC4 00052864  54 83 08 3C */	slwi r3, r4, 1
-/* 80056BC8 00052868  4E 80 00 20 */	blr 
+/* 80056BC8 00052868  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl"
 "reserve__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUl":
@@ -10930,7 +10930,7 @@ lbl_80056C70:
 /* 80056C7C 0005291C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80056C80 00052920  7C 08 03 A6 */	mtlr r0
 /* 80056C84 00052924  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056C88 00052928  4E 80 00 20 */	blr 
+/* 80056C88 00052928  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ216InteractorModule16PatternSellCount>__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUlPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount"
 "DoRealloc<PQ216InteractorModule16PatternSellCount>__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FUlPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount":
@@ -10955,7 +10955,7 @@ lbl_80056C70:
 /* 80056CD4 00052974  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056CD8 00052978  7C 08 03 A6 */	mtlr r0
 /* 80056CDC 0005297C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056CE0 00052980  4E 80 00 20 */	blr 
+/* 80056CE0 00052980  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>"
 "__as__Q25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>FRCQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>":
@@ -11044,7 +11044,7 @@ lbl_80056E0C:
 /* 80056E1C 00052ABC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80056E20 00052AC0  7C 08 03 A6 */	mtlr r0
 /* 80056E24 00052AC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80056E28 00052AC8  4E 80 00 20 */	blr 
+/* 80056E28 00052AC8  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl28vector<i,Q25eastl9allocator>FPiUlRCi"
 "DoInsertValues__Q25eastl28vector<i,Q25eastl9allocator>FPiUlRCi":
@@ -11165,7 +11165,7 @@ lbl_80056FDC:
 /* 80056FE4 00052C84  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80056FE8 00052C88  7C 08 03 A6 */	mtlr r0
 /* 80056FEC 00052C8C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80056FF0 00052C90  4E 80 00 20 */	blr 
+/* 80056FF0 00052C90  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl28vector<s,Q25eastl9allocator>FPsRCs"
 "DoInsertValue__Q25eastl28vector<s,Q25eastl9allocator>FPsRCs":
@@ -11259,16 +11259,16 @@ lbl_80057134:
 /* 8005713C 00052DDC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80057140 00052DE0  7C 08 03 A6 */	mtlr r0
 /* 80057144 00052DE4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057148 00052DE8  4E 80 00 20 */	blr 
+/* 80057148 00052DE8  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl32VectorBase<s,Q25eastl9allocator>FPsUl"
 "DoFree__Q25eastl32VectorBase<s,Q25eastl9allocator>FPsUl":
 /* 8005714C 00052DEC  2C 04 00 00 */	cmpwi r4, 0
-/* 80057150 00052DF0  4D 82 00 20 */	beqlr 
+/* 80057150 00052DF0  4D 82 00 20 */	beqlr
 /* 80057154 00052DF4  54 A5 08 3C */	slwi r5, r5, 1
 /* 80057158 00052DF8  38 63 00 0C */	addi r3, r3, 0xc
 /* 8005715C 00052DFC  4B FC 0F C8 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80057160 00052E00  4E 80 00 20 */	blr 
+/* 80057160 00052E00  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl32VectorBase<s,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl32VectorBase<s,Q25eastl9allocator>FUl":
@@ -11281,15 +11281,15 @@ lbl_80057134:
 /* 8005717C 00052E1C  4B FC 0F B8 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80057180:
 /* 80057180 00052E20  38 60 00 00 */	li r3, 0
-/* 80057184 00052E24  4E 80 00 20 */	blr 
+/* 80057184 00052E24  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl32VectorBase<s,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl32VectorBase<s,Q25eastl9allocator>FUl":
 /* 80057188 00052E28  2C 04 00 00 */	cmpwi r4, 0
 /* 8005718C 00052E2C  38 60 00 01 */	li r3, 1
-/* 80057190 00052E30  4D 82 00 20 */	beqlr 
+/* 80057190 00052E30  4D 82 00 20 */	beqlr
 /* 80057194 00052E34  54 83 08 3C */	slwi r3, r4, 1
-/* 80057198 00052E38  4E 80 00 20 */	blr 
+/* 80057198 00052E38  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl28vector<s,Q25eastl9allocator>FUl"
 "reserve__Q25eastl28vector<s,Q25eastl9allocator>FUl":
@@ -11343,7 +11343,7 @@ lbl_80057248:
 /* 80057254 00052EF4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80057258 00052EF8  7C 08 03 A6 */	mtlr r0
 /* 8005725C 00052EFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057260 00052F00  4E 80 00 20 */	blr 
+/* 80057260 00052F00  4E 80 00 20 */	blr
 
 .global "DoRealloc<Ps>__Q25eastl28vector<s,Q25eastl9allocator>FUlPsPs_Ps"
 "DoRealloc<Ps>__Q25eastl28vector<s,Q25eastl9allocator>FUlPsPs_Ps":
@@ -11368,7 +11368,7 @@ lbl_80057248:
 /* 800572AC 00052F4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800572B0 00052F50  7C 08 03 A6 */	mtlr r0
 /* 800572B4 00052F54  38 21 00 20 */	addi r1, r1, 0x20
-/* 800572B8 00052F58  4E 80 00 20 */	blr 
+/* 800572B8 00052F58  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor"
 "DoInsertValues__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor":
@@ -11489,16 +11489,16 @@ lbl_8005746C:
 /* 80057474 00053114  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80057478 00053118  7C 08 03 A6 */	mtlr r0
 /* 8005747C 0005311C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80057480 00053120  4E 80 00 20 */	blr 
+/* 80057480 00053120  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUl"
 "DoFree__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FPPQ216InteractorModule10InteractorUl":
 /* 80057484 00053124  2C 04 00 00 */	cmpwi r4, 0
-/* 80057488 00053128  4D 82 00 20 */	beqlr 
+/* 80057488 00053128  4D 82 00 20 */	beqlr
 /* 8005748C 0005312C  54 A5 10 3A */	slwi r5, r5, 2
 /* 80057490 00053130  38 63 00 0C */	addi r3, r3, 0xc
 /* 80057494 00053134  4B FC 0C 90 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80057498 00053138  4E 80 00 20 */	blr 
+/* 80057498 00053138  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl":
@@ -11511,15 +11511,15 @@ lbl_8005746C:
 /* 800574B4 00053154  4B FC 0C 80 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_800574B8:
 /* 800574B8 00053158  38 60 00 00 */	li r3, 0
-/* 800574BC 0005315C  4E 80 00 20 */	blr 
+/* 800574BC 0005315C  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl":
 /* 800574C0 00053160  2C 04 00 00 */	cmpwi r4, 0
 /* 800574C4 00053164  38 60 00 01 */	li r3, 1
-/* 800574C8 00053168  4D 82 00 20 */	beqlr 
+/* 800574C8 00053168  4D 82 00 20 */	beqlr
 /* 800574CC 0005316C  54 83 08 3C */	slwi r3, r4, 1
-/* 800574D0 00053170  4E 80 00 20 */	blr 
+/* 800574D0 00053170  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "__as__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -11608,7 +11608,7 @@ lbl_800575FC:
 /* 8005760C 000532AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80057610 000532B0  7C 08 03 A6 */	mtlr r0
 /* 80057614 000532B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057618 000532B8  4E 80 00 20 */	blr 
+/* 80057618 000532B8  4E 80 00 20 */	blr
 
 .global "DoRealloc<PPQ216InteractorModule10Interactor>__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUlPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor"
 "DoRealloc<PPQ216InteractorModule10Interactor>__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUlPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor":
@@ -11633,7 +11633,7 @@ lbl_800575FC:
 /* 80057664 00053304  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80057668 00053308  7C 08 03 A6 */	mtlr r0
 /* 8005766C 0005330C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057670 00053310  4E 80 00 20 */	blr 
+/* 80057670 00053310  4E 80 00 20 */	blr
 
 .global "size__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>CFv"
 "size__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>CFv":
@@ -11642,7 +11642,7 @@ lbl_800575FC:
 /* 8005767C 0005331C  7C 04 00 50 */	subf r0, r4, r0
 /* 80057680 00053320  7C 00 16 70 */	srawi r0, r0, 2
 /* 80057684 00053324  7C 60 01 94 */	addze r3, r0
-/* 80057688 00053328  4E 80 00 20 */	blr 
+/* 80057688 00053328  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor"
 "DoInsertValues__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -11764,16 +11764,16 @@ lbl_80057840:
 /* 80057848 000534E8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8005784C 000534EC  7C 08 03 A6 */	mtlr r0
 /* 80057850 000534F0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80057854 000534F4  4E 80 00 20 */	blr 
+/* 80057854 000534F4  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUl"
 "DoFree__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FPQ316InteractorModule17InteractorManager16ActiveInteractorUl":
 /* 80057858 000534F8  2C 04 00 00 */	cmpwi r4, 0
-/* 8005785C 000534FC  4D 82 00 20 */	beqlr 
+/* 8005785C 000534FC  4D 82 00 20 */	beqlr
 /* 80057860 00053500  54 A5 18 38 */	slwi r5, r5, 3
 /* 80057864 00053504  38 63 00 0C */	addi r3, r3, 0xc
 /* 80057868 00053508  4B FC 08 BC */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 8005786C 0005350C  4E 80 00 20 */	blr 
+/* 8005786C 0005350C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl":
@@ -11786,15 +11786,15 @@ lbl_80057840:
 /* 80057888 00053528  4B FC 08 AC */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_8005788C:
 /* 8005788C 0005352C  38 60 00 00 */	li r3, 0
-/* 80057890 00053530  4E 80 00 20 */	blr 
+/* 80057890 00053530  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl88VectorBase<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl":
 /* 80057894 00053534  2C 04 00 00 */	cmpwi r4, 0
 /* 80057898 00053538  38 60 00 01 */	li r3, 1
-/* 8005789C 0005353C  4D 82 00 20 */	beqlr 
+/* 8005789C 0005353C  4D 82 00 20 */	beqlr
 /* 800578A0 00053540  54 83 08 3C */	slwi r3, r4, 1
-/* 800578A4 00053544  4E 80 00 20 */	blr 
+/* 800578A4 00053544  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl"
 "reserve__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUl":
@@ -11846,7 +11846,7 @@ lbl_8005794C:
 /* 80057958 000535F8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005795C 000535FC  7C 08 03 A6 */	mtlr r0
 /* 80057960 00053600  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057964 00053604  4E 80 00 20 */	blr 
+/* 80057964 00053604  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ316InteractorModule17InteractorManager16ActiveInteractor>__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUlPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor"
 "DoRealloc<PQ316InteractorModule17InteractorManager16ActiveInteractor>__Q25eastl84vector<Q316InteractorModule17InteractorManager16ActiveInteractor,Q25eastl9allocator>FUlPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -11871,7 +11871,7 @@ lbl_8005794C:
 /* 800579B0 00053650  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800579B4 00053654  7C 08 03 A6 */	mtlr r0
 /* 800579B8 00053658  38 21 00 20 */	addi r1, r1, 0x20
-/* 800579BC 0005365C  4E 80 00 20 */	blr 
+/* 800579BC 0005365C  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "DoInsertValues__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -11997,16 +11997,16 @@ lbl_80057B80:
 /* 80057B88 00053828  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80057B8C 0005382C  7C 08 03 A6 */	mtlr r0
 /* 80057B90 00053830  38 21 00 40 */	addi r1, r1, 0x40
-/* 80057B94 00053834  4E 80 00 20 */	blr 
+/* 80057B94 00053834  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Ul"
 "DoFree__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Ul":
 /* 80057B98 00053838  2C 04 00 00 */	cmpwi r4, 0
-/* 80057B9C 0005383C  4D 82 00 20 */	beqlr 
+/* 80057B9C 0005383C  4D 82 00 20 */	beqlr
 /* 80057BA0 00053840  54 A5 20 36 */	slwi r5, r5, 4
 /* 80057BA4 00053844  38 63 00 0C */	addi r3, r3, 0xc
 /* 80057BA8 00053848  4B FC 05 7C */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80057BAC 0005384C  4E 80 00 20 */	blr 
+/* 80057BAC 0005384C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl":
@@ -12019,15 +12019,15 @@ lbl_80057B80:
 /* 80057BC8 00053868  4B FC 05 6C */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80057BCC:
 /* 80057BCC 0005386C  38 60 00 00 */	li r3, 0
-/* 80057BD0 00053870  4E 80 00 20 */	blr 
+/* 80057BD0 00053870  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl101VectorBase<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl":
 /* 80057BD4 00053874  2C 04 00 00 */	cmpwi r4, 0
 /* 80057BD8 00053878  38 60 00 01 */	li r3, 1
-/* 80057BDC 0005387C  4D 82 00 20 */	beqlr 
+/* 80057BDC 0005387C  4D 82 00 20 */	beqlr
 /* 80057BE0 00053880  54 83 08 3C */	slwi r3, r4, 1
-/* 80057BE4 00053884  4E 80 00 20 */	blr 
+/* 80057BE4 00053884  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "__ct__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -12055,7 +12055,7 @@ lbl_80057BCC:
 /* 80057C3C 000538DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80057C40 000538E0  7C 08 03 A6 */	mtlr r0
 /* 80057C44 000538E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80057C48 000538E8  4E 80 00 20 */	blr 
+/* 80057C48 000538E8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUlRCQ25eastl9allocator"
 "__ct__Q25eastl64VectorBase<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUlRCQ25eastl9allocator":
@@ -12083,7 +12083,7 @@ lbl_80057BCC:
 /* 80057CA0 00053940  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80057CA4 00053944  7C 08 03 A6 */	mtlr r0
 /* 80057CA8 00053948  38 21 00 10 */	addi r1, r1, 0x10
-/* 80057CAC 0005394C  4E 80 00 20 */	blr 
+/* 80057CAC 0005394C  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUl":
@@ -12135,7 +12135,7 @@ lbl_80057D54:
 /* 80057D60 00053A00  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80057D64 00053A04  7C 08 03 A6 */	mtlr r0
 /* 80057D68 00053A08  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057D6C 00053A0C  4E 80 00 20 */	blr 
+/* 80057D6C 00053A0C  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUlPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "DoRealloc<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__Q25eastl97vector<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl9allocator>FUlPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -12160,7 +12160,7 @@ lbl_80057D54:
 /* 80057DB8 00053A58  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80057DBC 00053A5C  7C 08 03 A6 */	mtlr r0
 /* 80057DC0 00053A60  38 21 00 20 */	addi r1, r1, 0x20
-/* 80057DC4 00053A64  4E 80 00 20 */	blr 
+/* 80057DC4 00053A64  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "DoInsertValues__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -12282,16 +12282,16 @@ lbl_80057F7C:
 /* 80057F84 00053C24  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80057F88 00053C28  7C 08 03 A6 */	mtlr r0
 /* 80057F8C 00053C2C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80057F90 00053C30  4E 80 00 20 */	blr 
+/* 80057F90 00053C30  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>Ul"
 "DoFree__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>Ul":
 /* 80057F94 00053C34  2C 04 00 00 */	cmpwi r4, 0
-/* 80057F98 00053C38  4D 82 00 20 */	beqlr 
+/* 80057F98 00053C38  4D 82 00 20 */	beqlr
 /* 80057F9C 00053C3C  54 A5 18 38 */	slwi r5, r5, 3
 /* 80057FA0 00053C40  38 63 00 0C */	addi r3, r3, 0xc
 /* 80057FA4 00053C44  4B FC 01 80 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80057FA8 00053C48  4E 80 00 20 */	blr 
+/* 80057FA8 00053C48  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl":
@@ -12304,15 +12304,15 @@ lbl_80057F7C:
 /* 80057FC4 00053C64  4B FC 01 70 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80057FC8:
 /* 80057FC8 00053C68  38 60 00 00 */	li r3, 0
-/* 80057FCC 00053C6C  4E 80 00 20 */	blr 
+/* 80057FCC 00053C6C  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl136VectorBase<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl":
 /* 80057FD0 00053C70  2C 04 00 00 */	cmpwi r4, 0
 /* 80057FD4 00053C74  38 60 00 01 */	li r3, 1
-/* 80057FD8 00053C78  4D 82 00 20 */	beqlr 
+/* 80057FD8 00053C78  4D 82 00 20 */	beqlr
 /* 80057FDC 00053C7C  54 83 08 3C */	slwi r3, r4, 1
-/* 80057FE0 00053C80  4E 80 00 20 */	blr 
+/* 80057FE0 00053C80  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUl":
@@ -12364,7 +12364,7 @@ lbl_80058088:
 /* 80058094 00053D34  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80058098 00053D38  7C 08 03 A6 */	mtlr r0
 /* 8005809C 00053D3C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800580A0 00053D40  4E 80 00 20 */	blr 
+/* 800580A0 00053D40  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUlPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "DoRealloc<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__Q25eastl132vector<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl9allocator>FUlPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -12389,7 +12389,7 @@ lbl_80058088:
 /* 800580EC 00053D8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800580F0 00053D90  7C 08 03 A6 */	mtlr r0
 /* 800580F4 00053D94  38 21 00 20 */	addi r1, r1, 0x20
-/* 800580F8 00053D98  4E 80 00 20 */	blr 
+/* 800580F8 00053D98  4E 80 00 20 */	blr
 
 .global "DoInsertValues__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo"
 "DoInsertValues__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo":
@@ -12511,16 +12511,16 @@ lbl_800582B0:
 /* 800582B8 00053F58  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 800582BC 00053F5C  7C 08 03 A6 */	mtlr r0
 /* 800582C0 00053F60  38 21 00 40 */	addi r1, r1, 0x40
-/* 800582C4 00053F64  4E 80 00 20 */	blr 
+/* 800582C4 00053F64  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUl"
 "DoFree__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FPQ216InteractorModule14InteractorInfoUl":
 /* 800582C8 00053F68  2C 04 00 00 */	cmpwi r4, 0
-/* 800582CC 00053F6C  4D 82 00 20 */	beqlr 
+/* 800582CC 00053F6C  4D 82 00 20 */	beqlr
 /* 800582D0 00053F70  54 A5 20 36 */	slwi r5, r5, 4
 /* 800582D4 00053F74  38 63 00 0C */	addi r3, r3, 0xc
 /* 800582D8 00053F78  4B FB FE 4C */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 800582DC 00053F7C  4E 80 00 20 */	blr 
+/* 800582DC 00053F7C  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl":
@@ -12533,15 +12533,15 @@ lbl_800582B0:
 /* 800582F8 00053F98  4B FB FE 3C */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_800582FC:
 /* 800582FC 00053F9C  38 60 00 00 */	li r3, 0
-/* 80058300 00053FA0  4E 80 00 20 */	blr 
+/* 80058300 00053FA0  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl67VectorBase<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl":
 /* 80058304 00053FA4  2C 04 00 00 */	cmpwi r4, 0
 /* 80058308 00053FA8  38 60 00 01 */	li r3, 1
-/* 8005830C 00053FAC  4D 82 00 20 */	beqlr 
+/* 8005830C 00053FAC  4D 82 00 20 */	beqlr
 /* 80058310 00053FB0  54 83 08 3C */	slwi r3, r4, 1
-/* 80058314 00053FB4  4E 80 00 20 */	blr 
+/* 80058314 00053FB4  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl"
 "reserve__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUl":
@@ -12593,7 +12593,7 @@ lbl_800583BC:
 /* 800583C8 00054068  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800583CC 0005406C  7C 08 03 A6 */	mtlr r0
 /* 800583D0 00054070  38 21 00 20 */	addi r1, r1, 0x20
-/* 800583D4 00054074  4E 80 00 20 */	blr 
+/* 800583D4 00054074  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ216InteractorModule14InteractorInfo>__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUlPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo"
 "DoRealloc<PQ216InteractorModule14InteractorInfo>__Q25eastl63vector<Q216InteractorModule14InteractorInfo,Q25eastl9allocator>FUlPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo":
@@ -12618,7 +12618,7 @@ lbl_800583BC:
 /* 80058420 000540C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058424 000540C4  7C 08 03 A6 */	mtlr r0
 /* 80058428 000540C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005842C 000540CC  4E 80 00 20 */	blr 
+/* 8005842C 000540CC  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataRC15EOrderTableData"
 "DoInsertValue__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataRC15EOrderTableData":
@@ -12721,24 +12721,24 @@ lbl_80058594:
 /* 8005859C 0005423C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800585A0 00054240  7C 08 03 A6 */	mtlr r0
 /* 800585A4 00054244  38 21 00 20 */	addi r1, r1, 0x20
-/* 800585A8 00054248  4E 80 00 20 */	blr 
+/* 800585A8 00054248  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataUl"
 "DoFree__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FP15EOrderTableDataUl":
 /* 800585AC 0005424C  2C 04 00 00 */	cmpwi r4, 0
-/* 800585B0 00054250  4D 82 00 20 */	beqlr 
+/* 800585B0 00054250  4D 82 00 20 */	beqlr
 /* 800585B4 00054254  1C A5 00 3C */	mulli r5, r5, 0x3c
 /* 800585B8 00054258  38 63 00 0C */	addi r3, r3, 0xc
 /* 800585BC 0005425C  4B FB FB 68 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 800585C0 00054260  4E 80 00 20 */	blr 
+/* 800585C0 00054260  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl48VectorBase<15EOrderTableData,Q25eastl9allocator>FUl":
 /* 800585C4 00054264  2C 04 00 00 */	cmpwi r4, 0
 /* 800585C8 00054268  38 60 00 01 */	li r3, 1
-/* 800585CC 0005426C  4D 82 00 20 */	beqlr 
+/* 800585CC 0005426C  4D 82 00 20 */	beqlr
 /* 800585D0 00054270  54 83 08 3C */	slwi r3, r4, 1
-/* 800585D4 00054274  4E 80 00 20 */	blr 
+/* 800585D4 00054274  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl44vector<15EOrderTableData,Q25eastl9allocator>"
 "__as__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FRCQ25eastl44vector<15EOrderTableData,Q25eastl9allocator>":
@@ -12845,7 +12845,7 @@ lbl_80058744:
 /* 80058758 000543F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005875C 000543FC  7C 08 03 A6 */	mtlr r0
 /* 80058760 00054400  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058764 00054404  4E 80 00 20 */	blr 
+/* 80058764 00054404  4E 80 00 20 */	blr
 
 .global "DoRealloc<P15EOrderTableData>__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FUlP15EOrderTableDataP15EOrderTableData_P15EOrderTableData"
 "DoRealloc<P15EOrderTableData>__Q25eastl44vector<15EOrderTableData,Q25eastl9allocator>FUlP15EOrderTableDataP15EOrderTableData_P15EOrderTableData":
@@ -12870,7 +12870,7 @@ lbl_80058744:
 /* 800587B0 00054450  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800587B4 00054454  7C 08 03 A6 */	mtlr r0
 /* 800587B8 00054458  38 21 00 20 */	addi r1, r1, 0x20
-/* 800587BC 0005445C  4E 80 00 20 */	blr 
+/* 800587BC 0005445C  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>"
 "DoInsertValue__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>":
@@ -12963,24 +12963,24 @@ lbl_800588FC:
 /* 80058904 000545A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058908 000545A8  7C 08 03 A6 */	mtlr r0
 /* 8005890C 000545AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058910 000545B0  4E 80 00 20 */	blr 
+/* 80058910 000545B0  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>Ul"
 "DoFree__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>Ul":
 /* 80058914 000545B4  2C 04 00 00 */	cmpwi r4, 0
-/* 80058918 000545B8  4D 82 00 20 */	beqlr 
+/* 80058918 000545B8  4D 82 00 20 */	beqlr
 /* 8005891C 000545BC  54 A5 18 38 */	slwi r5, r5, 3
 /* 80058920 000545C0  38 63 00 0C */	addi r3, r3, 0xc
 /* 80058924 000545C4  4B FB F8 00 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80058928 000545C8  4E 80 00 20 */	blr 
+/* 80058928 000545C8  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl59VectorBase<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl":
 /* 8005892C 000545CC  2C 04 00 00 */	cmpwi r4, 0
 /* 80058930 000545D0  38 60 00 01 */	li r3, 1
-/* 80058934 000545D4  4D 82 00 20 */	beqlr 
+/* 80058934 000545D4  4D 82 00 20 */	beqlr
 /* 80058938 000545D8  54 83 08 3C */	slwi r3, r4, 1
-/* 8005893C 000545DC  4E 80 00 20 */	blr 
+/* 8005893C 000545DC  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUl":
@@ -13032,7 +13032,7 @@ lbl_800589E4:
 /* 800589F0 00054690  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800589F4 00054694  7C 08 03 A6 */	mtlr r0
 /* 800589F8 00054698  38 21 00 20 */	addi r1, r1, 0x20
-/* 800589FC 0005469C  4E 80 00 20 */	blr 
+/* 800589FC 0005469C  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl18pair<Ui,P7ERModel>>__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUlPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>"
 "DoRealloc<PQ25eastl18pair<Ui,P7ERModel>>__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FUlPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>":
@@ -13057,7 +13057,7 @@ lbl_800589E4:
 /* 80058A48 000546E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058A4C 000546EC  7C 08 03 A6 */	mtlr r0
 /* 80058A50 000546F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058A54 000546F4  4E 80 00 20 */	blr 
+/* 80058A54 000546F4  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv"
 "empty__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>CFv":
@@ -13066,7 +13066,7 @@ lbl_800589E4:
 /* 80058A60 00054700  7C 04 00 50 */	subf r0, r4, r0
 /* 80058A64 00054704  7C 00 00 34 */	cntlzw r0, r0
 /* 80058A68 00054708  54 03 D9 7E */	srwi r3, r0, 5
-/* 80058A6C 0005470C  4E 80 00 20 */	blr 
+/* 80058A6C 0005470C  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>"
 "__as__Q25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>FRCQ25eastl55vector<Q25eastl18pair<Ui,P7ERModel>,Q25eastl9allocator>":
@@ -13155,7 +13155,7 @@ lbl_80058B98:
 /* 80058BA8 00054848  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058BAC 0005484C  7C 08 03 A6 */	mtlr r0
 /* 80058BB0 00054850  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058BB4 00054854  4E 80 00 20 */	blr 
+/* 80058BB4 00054854  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>"
 "DoInsertValue__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>":
@@ -13248,24 +13248,24 @@ lbl_80058CF4:
 /* 80058CFC 0005499C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058D00 000549A0  7C 08 03 A6 */	mtlr r0
 /* 80058D04 000549A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058D08 000549A8  4E 80 00 20 */	blr 
+/* 80058D08 000549A8  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>Ul"
 "DoFree__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>Ul":
 /* 80058D0C 000549AC  2C 04 00 00 */	cmpwi r4, 0
-/* 80058D10 000549B0  4D 82 00 20 */	beqlr 
+/* 80058D10 000549B0  4D 82 00 20 */	beqlr
 /* 80058D14 000549B4  54 A5 18 38 */	slwi r5, r5, 3
 /* 80058D18 000549B8  38 63 00 0C */	addi r3, r3, 0xc
 /* 80058D1C 000549BC  4B FB F4 08 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80058D20 000549C0  4E 80 00 20 */	blr 
+/* 80058D20 000549C0  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl60VectorBase<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl":
 /* 80058D24 000549C4  2C 04 00 00 */	cmpwi r4, 0
 /* 80058D28 000549C8  38 60 00 01 */	li r3, 1
-/* 80058D2C 000549CC  4D 82 00 20 */	beqlr 
+/* 80058D2C 000549CC  4D 82 00 20 */	beqlr
 /* 80058D30 000549D0  54 83 08 3C */	slwi r3, r4, 1
-/* 80058D34 000549D4  4E 80 00 20 */	blr 
+/* 80058D34 000549D4  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUl":
@@ -13317,7 +13317,7 @@ lbl_80058DDC:
 /* 80058DE8 00054A88  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80058DEC 00054A8C  7C 08 03 A6 */	mtlr r0
 /* 80058DF0 00054A90  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058DF4 00054A94  4E 80 00 20 */	blr 
+/* 80058DF4 00054A94  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl19pair<Ui,P8ERShader>>__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUlPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>"
 "DoRealloc<PQ25eastl19pair<Ui,P8ERShader>>__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FUlPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>":
@@ -13342,7 +13342,7 @@ lbl_80058DDC:
 /* 80058E40 00054AE0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058E44 00054AE4  7C 08 03 A6 */	mtlr r0
 /* 80058E48 00054AE8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058E4C 00054AEC  4E 80 00 20 */	blr 
+/* 80058E4C 00054AEC  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv"
 "empty__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>CFv":
@@ -13351,7 +13351,7 @@ lbl_80058DDC:
 /* 80058E58 00054AF8  7C 04 00 50 */	subf r0, r4, r0
 /* 80058E5C 00054AFC  7C 00 00 34 */	cntlzw r0, r0
 /* 80058E60 00054B00  54 03 D9 7E */	srwi r3, r0, 5
-/* 80058E64 00054B04  4E 80 00 20 */	blr 
+/* 80058E64 00054B04  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>"
 "__as__Q25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>FRCQ25eastl56vector<Q25eastl19pair<Ui,P8ERShader>,Q25eastl9allocator>":
@@ -13440,16 +13440,16 @@ lbl_80058F90:
 /* 80058FA0 00054C40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80058FA4 00054C44  7C 08 03 A6 */	mtlr r0
 /* 80058FA8 00054C48  38 21 00 20 */	addi r1, r1, 0x20
-/* 80058FAC 00054C4C  4E 80 00 20 */	blr 
+/* 80058FAC 00054C4C  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FPQ25eastl20pair<Ui,P9ERTexture>Ul"
 "DoFree__Q25eastl61VectorBase<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FPQ25eastl20pair<Ui,P9ERTexture>Ul":
 /* 80058FB0 00054C50  2C 04 00 00 */	cmpwi r4, 0
-/* 80058FB4 00054C54  4D 82 00 20 */	beqlr 
+/* 80058FB4 00054C54  4D 82 00 20 */	beqlr
 /* 80058FB8 00054C58  54 A5 18 38 */	slwi r5, r5, 3
 /* 80058FBC 00054C5C  38 63 00 0C */	addi r3, r3, 0xc
 /* 80058FC0 00054C60  4B FB F1 64 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80058FC4 00054C64  4E 80 00 20 */	blr 
+/* 80058FC4 00054C64  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl20pair<Ui,P9ERTexture>>__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUlPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>"
 "DoRealloc<PQ25eastl20pair<Ui,P9ERTexture>>__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FUlPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>":
@@ -13474,7 +13474,7 @@ lbl_80058F90:
 /* 80059010 00054CB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059014 00054CB4  7C 08 03 A6 */	mtlr r0
 /* 80059018 00054CB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005901C 00054CBC  4E 80 00 20 */	blr 
+/* 8005901C 00054CBC  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>"
 "__as__Q25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>FRCQ25eastl57vector<Q25eastl20pair<Ui,P9ERTexture>,Q25eastl9allocator>":
@@ -13563,7 +13563,7 @@ lbl_80059148:
 /* 80059158 00054DF8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005915C 00054DFC  7C 08 03 A6 */	mtlr r0
 /* 80059160 00054E00  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059164 00054E04  4E 80 00 20 */	blr 
+/* 80059164 00054E04  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "DoInsertValue__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -13656,16 +13656,16 @@ lbl_800592A4:
 /* 800592AC 00054F4C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800592B0 00054F50  7C 08 03 A6 */	mtlr r0
 /* 800592B4 00054F54  38 21 00 20 */	addi r1, r1, 0x20
-/* 800592B8 00054F58  4E 80 00 20 */	blr 
+/* 800592B8 00054F58  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Ul"
 "DoFree__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Ul":
 /* 800592BC 00054F5C  2C 04 00 00 */	cmpwi r4, 0
-/* 800592C0 00054F60  4D 82 00 20 */	beqlr 
+/* 800592C0 00054F60  4D 82 00 20 */	beqlr
 /* 800592C4 00054F64  54 A5 38 30 */	slwi r5, r5, 7
 /* 800592C8 00054F68  38 63 00 0C */	addi r3, r3, 0xc
 /* 800592CC 00054F6C  4B FB EE 58 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 800592D0 00054F70  4E 80 00 20 */	blr 
+/* 800592D0 00054F70  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl":
@@ -13678,15 +13678,15 @@ lbl_800592A4:
 /* 800592EC 00054F8C  4B FB EE 48 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_800592F0:
 /* 800592F0 00054F90  38 60 00 00 */	li r3, 0
-/* 800592F4 00054F94  4E 80 00 20 */	blr 
+/* 800592F4 00054F94  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl124VectorBase<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl":
 /* 800592F8 00054F98  2C 04 00 00 */	cmpwi r4, 0
 /* 800592FC 00054F9C  38 60 00 01 */	li r3, 1
-/* 80059300 00054FA0  4D 82 00 20 */	beqlr 
+/* 80059300 00054FA0  4D 82 00 20 */	beqlr
 /* 80059304 00054FA4  54 83 08 3C */	slwi r3, r4, 1
-/* 80059308 00054FA8  4E 80 00 20 */	blr 
+/* 80059308 00054FA8  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl"
 "reserve__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUl":
@@ -13738,7 +13738,7 @@ lbl_800593B0:
 /* 800593BC 0005505C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800593C0 00055060  7C 08 03 A6 */	mtlr r0
 /* 800593C4 00055064  38 21 00 20 */	addi r1, r1, 0x20
-/* 800593C8 00055068  4E 80 00 20 */	blr 
+/* 800593C8 00055068  4E 80 00 20 */	blr
 
 .global "DoRealloc<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUlPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "DoRealloc<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>FUlPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -13763,7 +13763,7 @@ lbl_800593B0:
 /* 80059414 000550B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059418 000550B8  7C 08 03 A6 */	mtlr r0
 /* 8005941C 000550BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059420 000550C0  4E 80 00 20 */	blr 
+/* 80059420 000550C0  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv"
 "empty__Q25eastl120vector<Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,Q25eastl9allocator>CFv":
@@ -13772,7 +13772,7 @@ lbl_800593B0:
 /* 8005942C 000550CC  7C 04 00 50 */	subf r0, r4, r0
 /* 80059430 000550D0  7C 00 00 34 */	cntlzw r0, r0
 /* 80059434 000550D4  54 03 D9 7E */	srwi r3, r0, 5
-/* 80059438 000550D8  4E 80 00 20 */	blr 
+/* 80059438 000550D8  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstanceRCP12ISimInstance"
 "DoInsertValue__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstanceRCP12ISimInstance":
@@ -13864,16 +13864,16 @@ lbl_80059574:
 /* 8005957C 0005521C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059580 00055220  7C 08 03 A6 */	mtlr r0
 /* 80059584 00055224  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059588 00055228  4E 80 00 20 */	blr 
+/* 80059588 00055228  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstanceUl"
 "DoFree__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FPP12ISimInstanceUl":
 /* 8005958C 0005522C  2C 04 00 00 */	cmpwi r4, 0
-/* 80059590 00055230  4D 82 00 20 */	beqlr 
+/* 80059590 00055230  4D 82 00 20 */	beqlr
 /* 80059594 00055234  54 A5 10 3A */	slwi r5, r5, 2
 /* 80059598 00055238  38 63 00 0C */	addi r3, r3, 0xc
 /* 8005959C 0005523C  4B FB EB 88 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 800595A0 00055240  4E 80 00 20 */	blr 
+/* 800595A0 00055240  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FUl":
@@ -13886,15 +13886,15 @@ lbl_80059574:
 /* 800595BC 0005525C  4B FB EB 78 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_800595C0:
 /* 800595C0 00055260  38 60 00 00 */	li r3, 0
-/* 800595C4 00055264  4E 80 00 20 */	blr 
+/* 800595C4 00055264  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl46VectorBase<P12ISimInstance,Q25eastl9allocator>FUl":
 /* 800595C8 00055268  2C 04 00 00 */	cmpwi r4, 0
 /* 800595CC 0005526C  38 60 00 01 */	li r3, 1
-/* 800595D0 00055270  4D 82 00 20 */	beqlr 
+/* 800595D0 00055270  4D 82 00 20 */	beqlr
 /* 800595D4 00055274  54 83 08 3C */	slwi r3, r4, 1
-/* 800595D8 00055278  4E 80 00 20 */	blr 
+/* 800595D8 00055278  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFv"
 "empty__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFv":
@@ -13903,7 +13903,7 @@ lbl_800595C0:
 /* 800595E4 00055284  7C 04 00 50 */	subf r0, r4, r0
 /* 800595E8 00055288  7C 00 00 34 */	cntlzw r0, r0
 /* 800595EC 0005528C  54 03 D9 7E */	srwi r3, r0, 5
-/* 800595F0 00055290  4E 80 00 20 */	blr 
+/* 800595F0 00055290  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FPP9EInstanceRCP9EInstance"
 "DoInsertValue__Q25eastl38vector<P9EInstance,Q25eastl9allocator>FPP9EInstanceRCP9EInstance":
@@ -13995,16 +13995,16 @@ lbl_8005972C:
 /* 80059734 000553D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059738 000553D8  7C 08 03 A6 */	mtlr r0
 /* 8005973C 000553DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059740 000553E0  4E 80 00 20 */	blr 
+/* 80059740 000553E0  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FPP9EInstanceUl"
 "DoFree__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FPP9EInstanceUl":
 /* 80059744 000553E4  2C 04 00 00 */	cmpwi r4, 0
-/* 80059748 000553E8  4D 82 00 20 */	beqlr 
+/* 80059748 000553E8  4D 82 00 20 */	beqlr
 /* 8005974C 000553EC  54 A5 10 3A */	slwi r5, r5, 2
 /* 80059750 000553F0  38 63 00 0C */	addi r3, r3, 0xc
 /* 80059754 000553F4  4B FB E9 D0 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80059758 000553F8  4E 80 00 20 */	blr 
+/* 80059758 000553F8  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FUl":
@@ -14017,15 +14017,15 @@ lbl_8005972C:
 /* 80059774 00055414  4B FB E9 C0 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80059778:
 /* 80059778 00055418  38 60 00 00 */	li r3, 0
-/* 8005977C 0005541C  4E 80 00 20 */	blr 
+/* 8005977C 0005541C  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl42VectorBase<P9EInstance,Q25eastl9allocator>FUl":
 /* 80059780 00055420  2C 04 00 00 */	cmpwi r4, 0
 /* 80059784 00055424  38 60 00 01 */	li r3, 1
-/* 80059788 00055428  4D 82 00 20 */	beqlr 
+/* 80059788 00055428  4D 82 00 20 */	beqlr
 /* 8005978C 0005542C  54 83 08 3C */	slwi r3, r4, 1
-/* 80059790 00055430  4E 80 00 20 */	blr 
+/* 80059790 00055430  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFv"
 "empty__Q25eastl38vector<P9EInstance,Q25eastl9allocator>CFv":
@@ -14034,7 +14034,7 @@ lbl_80059778:
 /* 8005979C 0005543C  7C 04 00 50 */	subf r0, r4, r0
 /* 800597A0 00055440  7C 00 00 34 */	cntlzw r0, r0
 /* 800597A4 00055444  54 03 D9 7E */	srwi r3, r0, 5
-/* 800597A8 00055448  4E 80 00 20 */	blr 
+/* 800597A8 00055448  4E 80 00 20 */	blr
 
 .global "DoInsertValue__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FP7CTilePtRC7CTilePt"
 "DoInsertValue__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FP7CTilePtRC7CTilePt":
@@ -14134,17 +14134,17 @@ lbl_80059904:
 /* 8005990C 000555AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059910 000555B0  7C 08 03 A6 */	mtlr r0
 /* 80059914 000555B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059918 000555B8  4E 80 00 20 */	blr 
+/* 80059918 000555B8  4E 80 00 20 */	blr
 
 .global "DoFree__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FP7CTilePtUl"
 "DoFree__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FP7CTilePtUl":
 /* 8005991C 000555BC  2C 04 00 00 */	cmpwi r4, 0
-/* 80059920 000555C0  4D 82 00 20 */	beqlr 
+/* 80059920 000555C0  4D 82 00 20 */	beqlr
 /* 80059924 000555C4  54 A0 10 3A */	slwi r0, r5, 2
 /* 80059928 000555C8  38 63 00 0C */	addi r3, r3, 0xc
 /* 8005992C 000555CC  7C A5 00 50 */	subf r5, r5, r0
 /* 80059930 000555D0  4B FB E7 F4 */	b "deallocate__Q25eastl9allocatorFPvUl"
-/* 80059934 000555D4  4E 80 00 20 */	blr 
+/* 80059934 000555D4  4E 80 00 20 */	blr
 
 .global "DoAllocate__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FUl"
 "DoAllocate__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FUl":
@@ -14158,15 +14158,15 @@ lbl_80059904:
 /* 80059954 000555F4  4B FB E7 E0 */	b "allocate_memory<Q25eastl9allocator>__5eastlFRQ25eastl9allocatorUlUlUl_Pv"
 lbl_80059958:
 /* 80059958 000555F8  38 60 00 00 */	li r3, 0
-/* 8005995C 000555FC  4E 80 00 20 */	blr 
+/* 8005995C 000555FC  4E 80 00 20 */	blr
 
 .global "GetNewCapacity__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FUl"
 "GetNewCapacity__Q25eastl39VectorBase<7CTilePt,Q25eastl9allocator>FUl":
 /* 80059960 00055600  2C 04 00 00 */	cmpwi r4, 0
 /* 80059964 00055604  38 60 00 01 */	li r3, 1
-/* 80059968 00055608  4D 82 00 20 */	beqlr 
+/* 80059968 00055608  4D 82 00 20 */	beqlr
 /* 8005996C 0005560C  54 83 08 3C */	slwi r3, r4, 1
-/* 80059970 00055610  4E 80 00 20 */	blr 
+/* 80059970 00055610  4E 80 00 20 */	blr
 
 .global "reserve__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FUl"
 "reserve__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FUl":
@@ -14229,7 +14229,7 @@ lbl_80059A40:
 /* 80059A50 000556F0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80059A54 000556F4  7C 08 03 A6 */	mtlr r0
 /* 80059A58 000556F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059A5C 000556FC  4E 80 00 20 */	blr 
+/* 80059A5C 000556FC  4E 80 00 20 */	blr
 
 .global "DoRealloc<P7CTilePt>__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FUlP7CTilePtP7CTilePt_P7CTilePt"
 "DoRealloc<P7CTilePt>__Q25eastl35vector<7CTilePt,Q25eastl9allocator>FUlP7CTilePtP7CTilePt_P7CTilePt":
@@ -14254,7 +14254,7 @@ lbl_80059A40:
 /* 80059AA8 00055748  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059AAC 0005574C  7C 08 03 A6 */	mtlr r0
 /* 80059AB0 00055750  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059AB4 00055754  4E 80 00 20 */	blr 
+/* 80059AB4 00055754  4E 80 00 20 */	blr
 
 .global "empty__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv"
 "empty__Q25eastl35vector<7CTilePt,Q25eastl9allocator>CFv":
@@ -14263,7 +14263,7 @@ lbl_80059A40:
 /* 80059AC0 00055760  7C 04 00 50 */	subf r0, r4, r0
 /* 80059AC4 00055764  7C 00 00 34 */	cntlzw r0, r0
 /* 80059AC8 00055768  54 03 D9 7E */	srwi r3, r0, 5
-/* 80059ACC 0005576C  4E 80 00 20 */	blr 
+/* 80059ACC 0005576C  4E 80 00 20 */	blr
 
 .global "IsDown__10EIWallPartFv"
 "IsDown__10EIWallPartFv":
@@ -14283,12 +14283,12 @@ lbl_80059A40:
 /* 80059B04 000557A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059B08 000557A8  7C 08 03 A6 */	mtlr r0
 /* 80059B0C 000557AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059B10 000557B0  4E 80 00 20 */	blr 
+/* 80059B10 000557B0  4E 80 00 20 */	blr
 
 .global "SetForceFadeOff__10EIWallPartFb"
 "SetForceFadeOff__10EIWallPartFb":
 /* 80059B14 000557B4  98 83 03 F8 */	stb r4, 0x3f8(r3)
-/* 80059B18 000557B8  4E 80 00 20 */	blr 
+/* 80059B18 000557B8  4E 80 00 20 */	blr
 
 .global "isDiagonal__10EIWallPartF16TileWallsSegment"
 "isDiagonal__10EIWallPartF16TileWallsSegment":
@@ -14296,19 +14296,19 @@ lbl_80059A40:
 /* 80059B20 000557C0  7C 03 00 D0 */	neg r0, r3
 /* 80059B24 000557C4  7C 00 1B 78 */	or r0, r0, r3
 /* 80059B28 000557C8  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80059B2C 000557CC  4E 80 00 20 */	blr 
+/* 80059B2C 000557CC  4E 80 00 20 */	blr
 
 .global "DirtyLights__14ELevelDrawDataFv"
 "DirtyLights__14ELevelDrawDataFv":
 /* 80059B30 000557D0  38 00 00 00 */	li r0, 0
 /* 80059B34 000557D4  90 03 00 B8 */	stw r0, 0xb8(r3)
-/* 80059B38 000557D8  4E 80 00 20 */	blr 
+/* 80059B38 000557D8  4E 80 00 20 */	blr
 
 .global "DirtyViewMatrix__14ELevelDrawDataFv"
 "DirtyViewMatrix__14ELevelDrawDataFv":
 /* 80059B3C 000557DC  38 00 00 00 */	li r0, 0
 /* 80059B40 000557E0  90 03 00 B0 */	stw r0, 0xb0(r3)
-/* 80059B44 000557E4  4E 80 00 20 */	blr 
+/* 80059B44 000557E4  4E 80 00 20 */	blr
 
 .global "DirtyShader__14ELevelDrawDataFv"
 "DirtyShader__14ELevelDrawDataFv":
@@ -14324,29 +14324,29 @@ lbl_80059A40:
 /* 80059B6C 0005580C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059B70 00055810  7C 08 03 A6 */	mtlr r0
 /* 80059B74 00055814  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059B78 00055818  4E 80 00 20 */	blr 
+/* 80059B78 00055818  4E 80 00 20 */	blr
 
 .global "DirtyModelMatrix__14ELevelDrawDataFv"
 "DirtyModelMatrix__14ELevelDrawDataFv":
 /* 80059B7C 0005581C  38 00 00 00 */	li r0, 0
 /* 80059B80 00055820  90 03 00 AC */	stw r0, 0xac(r3)
 /* 80059B84 00055824  90 03 00 B4 */	stw r0, 0xb4(r3)
-/* 80059B88 00055828  4E 80 00 20 */	blr 
+/* 80059B88 00055828  4E 80 00 20 */	blr
 
 .global "GetHouseOff__6EHouseCFv"
 "GetHouseOff__6EHouseCFv":
 /* 80059B8C 0005582C  38 63 00 28 */	addi r3, r3, 0x28
-/* 80059B90 00055830  4E 80 00 20 */	blr 
+/* 80059B90 00055830  4E 80 00 20 */	blr
 
 .global "GetLotNum__6EHouseCFv"
 "GetLotNum__6EHouseCFv":
 /* 80059B94 00055834  80 63 00 30 */	lwz r3, 0x30(r3)
-/* 80059B98 00055838  4E 80 00 20 */	blr 
+/* 80059B98 00055838  4E 80 00 20 */	blr
 
 .global "GetBehavior__11ObjSelectorCFv"
 "GetBehavior__11ObjSelectorCFv":
 /* 80059B9C 0005583C  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80059BA0 00055840  4E 80 00 20 */	blr 
+/* 80059BA0 00055840  4E 80 00 20 */	blr
 
 .global "GetDefinition__11ObjSelectorFv"
 "GetDefinition__11ObjSelectorFv":
@@ -14377,7 +14377,7 @@ lbl_80059A40:
 /* 80059BF8 00055898  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059BFC 0005589C  7C 08 03 A6 */	mtlr r0
 /* 80059C00 000558A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059C04 000558A4  4E 80 00 20 */	blr 
+/* 80059C04 000558A4  4E 80 00 20 */	blr
 
 .global "CalculateAvailableItemCount__Q216InteractorModule12FloorPainterFi"
 "CalculateAvailableItemCount__Q216InteractorModule12FloorPainterFi":
@@ -14408,7 +14408,7 @@ lbl_80059C58:
 /* 80059C5C 000558FC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80059C60 00055900  7C 08 03 A6 */	mtlr r0
 /* 80059C64 00055904  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059C68 00055908  4E 80 00 20 */	blr 
+/* 80059C68 00055908  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule12FloorPainterFv"
 "__ct__Q216InteractorModule12FloorPainterFv":
@@ -14458,7 +14458,7 @@ lbl_80059C58:
 /* 80059D18 000559B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80059D1C 000559BC  7C 08 03 A6 */	mtlr r0
 /* 80059D20 000559C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80059D24 000559C4  4E 80 00 20 */	blr 
+/* 80059D24 000559C4  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule12FloorPainterFv"
 "__dt__Q216InteractorModule12FloorPainterFv":
@@ -14500,7 +14500,7 @@ lbl_80059DA0:
 /* 80059DAC 00055A4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059DB0 00055A50  7C 08 03 A6 */	mtlr r0
 /* 80059DB4 00055A54  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059DB8 00055A58  4E 80 00 20 */	blr 
+/* 80059DB8 00055A58  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule12FloorPainterFv"
 "OnCreate__Q216InteractorModule12FloorPainterFv":
@@ -14528,7 +14528,7 @@ lbl_80059DA0:
 /* 80059E10 00055AB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059E14 00055AB4  7C 08 03 A6 */	mtlr r0
 /* 80059E18 00055AB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059E1C 00055ABC  4E 80 00 20 */	blr 
+/* 80059E1C 00055ABC  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule12FloorPainterFv"
 "OnDestroy__Q216InteractorModule12FloorPainterFv":
@@ -14549,7 +14549,7 @@ lbl_80059DA0:
 /* 80059E58 00055AF8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80059E5C 00055AFC  7C 08 03 A6 */	mtlr r0
 /* 80059E60 00055B00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80059E64 00055B04  4E 80 00 20 */	blr 
+/* 80059E64 00055B04  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule12FloorPainterFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule12FloorPainterFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -14686,7 +14686,7 @@ lbl_8005A054:
 /* 8005A060 00055D00  83 A1 00 A4 */	lwz r29, 0xa4(r1)
 /* 8005A064 00055D04  7C 08 03 A6 */	mtlr r0
 /* 8005A068 00055D08  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 8005A06C 00055D0C  4E 80 00 20 */	blr 
+/* 8005A06C 00055D0C  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule12FloorPainterFv"
 "OnStop__Q216InteractorModule12FloorPainterFv":
@@ -14730,7 +14730,7 @@ lbl_8005A0F4:
 /* 8005A0F8 00055D98  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005A0FC 00055D9C  7C 08 03 A6 */	mtlr r0
 /* 8005A100 00055DA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005A104 00055DA4  4E 80 00 20 */	blr 
+/* 8005A104 00055DA4  4E 80 00 20 */	blr
 
 .global "UpdateStickState__Q216InteractorModule12FloorPainterFv"
 "UpdateStickState__Q216InteractorModule12FloorPainterFv":
@@ -14747,16 +14747,16 @@ lbl_8005A124:
 /* 8005A12C 00055DCC  41 82 00 10 */	beq lbl_8005A13C
 /* 8005A130 00055DD0  54 80 06 7E */	clrlwi r0, r4, 0x19
 /* 8005A134 00055DD4  98 03 01 A1 */	stb r0, 0x1a1(r3)
-/* 8005A138 00055DD8  4E 80 00 20 */	blr 
+/* 8005A138 00055DD8  4E 80 00 20 */	blr
 lbl_8005A13C:
 /* 8005A13C 00055DDC  60 80 00 C0 */	ori r0, r4, 0xc0
 /* 8005A140 00055DE0  98 03 01 A1 */	stb r0, 0x1a1(r3)
-/* 8005A144 00055DE4  4E 80 00 20 */	blr 
+/* 8005A144 00055DE4  4E 80 00 20 */	blr
 lbl_8005A148:
 /* 8005A148 00055DE8  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005A14C 00055DEC  54 00 06 BE */	clrlwi r0, r0, 0x1a
 /* 8005A150 00055DF0  98 03 01 A1 */	stb r0, 0x1a1(r3)
-/* 8005A154 00055DF4  4E 80 00 20 */	blr 
+/* 8005A154 00055DF4  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule12FloorPainterFf"
 "Update__Q216InteractorModule12FloorPainterFf":
@@ -15107,7 +15107,7 @@ lbl_8005A630:
 /* 8005A640 000562E0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8005A644 000562E4  7C 08 03 A6 */	mtlr r0
 /* 8005A648 000562E8  38 21 00 80 */	addi r1, r1, 0x80
-/* 8005A64C 000562EC  4E 80 00 20 */	blr 
+/* 8005A64C 000562EC  4E 80 00 20 */	blr
 
 .global "SendBuildItemCountChangeEvent__Q216InteractorModule12FloorPainterFi"
 "SendBuildItemCountChangeEvent__Q216InteractorModule12FloorPainterFi":
@@ -15141,7 +15141,7 @@ lbl_8005A630:
 /* 8005A6BC 0005635C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8005A6C0 00056360  7C 08 03 A6 */	mtlr r0
 /* 8005A6C4 00056364  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005A6C8 00056368  4E 80 00 20 */	blr 
+/* 8005A6C8 00056368  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule12FloorPainter12CallbackDataFv"
 "__dt__Q316InteractorModule12FloorPainter12CallbackDataFv":
@@ -15167,7 +15167,7 @@ lbl_8005A708:
 /* 8005A714 000563B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005A718 000563B8  7C 08 03 A6 */	mtlr r0
 /* 8005A71C 000563BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005A720 000563C0  4E 80 00 20 */	blr 
+/* 8005A720 000563C0  4E 80 00 20 */	blr
 
 .global "SendSuccessEvent__Q216InteractorModule12FloorPainterFi"
 "SendSuccessEvent__Q216InteractorModule12FloorPainterFi":
@@ -15200,14 +15200,14 @@ lbl_8005A708:
 /* 8005A78C 0005642C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8005A790 00056430  7C 08 03 A6 */	mtlr r0
 /* 8005A794 00056434  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005A798 00056438  4E 80 00 20 */	blr 
+/* 8005A798 00056438  4E 80 00 20 */	blr
 
 .global "IsInRemoveMode__Q216InteractorModule12FloorPainterFv"
 "IsInRemoveMode__Q216InteractorModule12FloorPainterFv":
 /* 8005A79C 0005643C  88 03 01 E4 */	lbz r0, 0x1e4(r3)
 /* 8005A7A0 00056440  7C 00 00 34 */	cntlzw r0, r0
 /* 8005A7A4 00056444  54 03 D9 7E */	srwi r3, r0, 5
-/* 8005A7A8 00056448  4E 80 00 20 */	blr 
+/* 8005A7A8 00056448  4E 80 00 20 */	blr
 
 .global "IsArmed__Q216InteractorModule12FloorPainterFv"
 "IsArmed__Q216InteractorModule12FloorPainterFv":
@@ -15216,7 +15216,7 @@ lbl_8005A708:
 /* 8005A7B4 00056454  7C 03 00 D0 */	neg r0, r3
 /* 8005A7B8 00056458  7C 00 1B 78 */	or r0, r0, r3
 /* 8005A7BC 0005645C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8005A7C0 00056460  4E 80 00 20 */	blr 
+/* 8005A7C0 00056460  4E 80 00 20 */	blr
 
 .global "HandleActionCmdInRemoveMode__Q216InteractorModule12FloorPainterFv"
 "HandleActionCmdInRemoveMode__Q216InteractorModule12FloorPainterFv":
@@ -15338,7 +15338,7 @@ lbl_8005A96C:
 /* 8005A974 00056614  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8005A978 00056618  7C 08 03 A6 */	mtlr r0
 /* 8005A97C 0005661C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005A980 00056620  4E 80 00 20 */	blr 
+/* 8005A980 00056620  4E 80 00 20 */	blr
 
 .global "UpdateStockChanges__Q216InteractorModule12FloorPainterFPii"
 "UpdateStockChanges__Q216InteractorModule12FloorPainterFPii":
@@ -15383,7 +15383,7 @@ lbl_8005A9F8:
 /* 8005AA10 000566B0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8005AA14 000566B4  7C 08 03 A6 */	mtlr r0
 /* 8005AA18 000566B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005AA1C 000566BC  4E 80 00 20 */	blr 
+/* 8005AA1C 000566BC  4E 80 00 20 */	blr
 
 .global "HandleActionCmdInPlaceMode__Q216InteractorModule12FloorPainterFv"
 "HandleActionCmdInPlaceMode__Q216InteractorModule12FloorPainterFv":
@@ -15507,12 +15507,12 @@ lbl_8005ABCC:
 /* 8005ABD8 00056878  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005ABDC 0005687C  7C 08 03 A6 */	mtlr r0
 /* 8005ABE0 00056880  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005ABE4 00056884  4E 80 00 20 */	blr 
+/* 8005ABE4 00056884  4E 80 00 20 */	blr
 
 .global "IsInPlaceMode__Q216InteractorModule12FloorPainterFv"
 "IsInPlaceMode__Q216InteractorModule12FloorPainterFv":
 /* 8005ABE8 00056888  88 63 01 E4 */	lbz r3, 0x1e4(r3)
-/* 8005ABEC 0005688C  4E 80 00 20 */	blr 
+/* 8005ABEC 0005688C  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -15531,7 +15531,7 @@ lbl_8005ABCC:
 /* 8005AC20 000568C0  38 A5 45 2C */	addi r5, r5, lbl_8042452C@l
 /* 8005AC24 000568C4  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8005AC28 000568C8  7C A9 03 A6 */	mtctr r5
-/* 8005AC2C 000568CC  4E 80 04 20 */	bctr 
+/* 8005AC2C 000568CC  4E 80 04 20 */	bctr
 /* 8005AC30 000568D0  4B FF FB 6D */	bl "IsInRemoveMode__Q216InteractorModule12FloorPainterFv"
 /* 8005AC34 000568D4  2C 03 00 00 */	cmpwi r3, 0
 /* 8005AC38 000568D8  41 82 00 10 */	beq lbl_8005AC48
@@ -15632,7 +15632,7 @@ lbl_8005AD74:
 /* 8005ADA8 00056A48  38 80 00 18 */	li r4, 0x18
 /* 8005ADAC 00056A4C  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8005ADB0 00056A50  7D 89 03 A6 */	mtctr r12
-/* 8005ADB4 00056A54  4E 80 04 21 */	bctrl 
+/* 8005ADB4 00056A54  4E 80 04 21 */	bctrl
 /* 8005ADB8 00056A58  48 00 02 E8 */	b lbl_8005B0A0
 lbl_8005ADBC:
 /* 8005ADBC 00056A5C  7F E3 FB 78 */	mr r3, r31
@@ -15836,7 +15836,7 @@ lbl_8005B0A0:
 /* 8005B0B0 00056D50  83 81 00 A0 */	lwz r28, 0xa0(r1)
 /* 8005B0B4 00056D54  7C 08 03 A6 */	mtlr r0
 /* 8005B0B8 00056D58  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 8005B0BC 00056D5C  4E 80 00 20 */	blr 
+/* 8005B0BC 00056D5C  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -15846,39 +15846,39 @@ lbl_8005B0A0:
 /* 8005B0CC 00056D6C  2C 04 00 09 */	cmpwi r4, 9
 /* 8005B0D0 00056D70  41 82 00 18 */	beq lbl_8005B0E8
 /* 8005B0D4 00056D74  40 80 00 2C */	bge lbl_8005B100
-/* 8005B0D8 00056D78  4E 80 00 20 */	blr 
+/* 8005B0D8 00056D78  4E 80 00 20 */	blr
 lbl_8005B0DC:
 /* 8005B0DC 00056D7C  2C 04 00 0D */	cmpwi r4, 0xd
-/* 8005B0E0 00056D80  4C 80 00 20 */	bgelr 
+/* 8005B0E0 00056D80  4C 80 00 20 */	bgelr
 /* 8005B0E4 00056D84  48 00 00 4C */	b lbl_8005B130
 lbl_8005B0E8:
 /* 8005B0E8 00056D88  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8005B0EC 00056D8C  2C 00 00 00 */	cmpwi r0, 0
-/* 8005B0F0 00056D90  4D 82 00 20 */	beqlr 
+/* 8005B0F0 00056D90  4D 82 00 20 */	beqlr
 /* 8005B0F4 00056D94  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8005B0F8 00056D98  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8005B0FC 00056D9C  4E 80 00 20 */	blr 
+/* 8005B0FC 00056D9C  4E 80 00 20 */	blr
 lbl_8005B100:
 /* 8005B100 00056DA0  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8005B104 00056DA4  2C 00 00 00 */	cmpwi r0, 0
-/* 8005B108 00056DA8  4D 82 00 20 */	beqlr 
+/* 8005B108 00056DA8  4D 82 00 20 */	beqlr
 /* 8005B10C 00056DAC  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8005B110 00056DB0  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8005B114 00056DB4  4E 80 00 20 */	blr 
+/* 8005B114 00056DB4  4E 80 00 20 */	blr
 lbl_8005B118:
 /* 8005B118 00056DB8  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8005B11C 00056DBC  2C 00 00 00 */	cmpwi r0, 0
-/* 8005B120 00056DC0  4D 82 00 20 */	beqlr 
+/* 8005B120 00056DC0  4D 82 00 20 */	beqlr
 /* 8005B124 00056DC4  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8005B128 00056DC8  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8005B12C 00056DCC  4E 80 00 20 */	blr 
+/* 8005B12C 00056DCC  4E 80 00 20 */	blr
 lbl_8005B130:
 /* 8005B130 00056DD0  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8005B134 00056DD4  2C 00 00 00 */	cmpwi r0, 0
-/* 8005B138 00056DD8  4D 82 00 20 */	beqlr 
+/* 8005B138 00056DD8  4D 82 00 20 */	beqlr
 /* 8005B13C 00056DDC  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8005B140 00056DE0  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8005B144 00056DE4  4E 80 00 20 */	blr 
+/* 8005B144 00056DE4  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand":
@@ -15895,7 +15895,7 @@ lbl_8005B130:
 /* 8005B170 00056E10  38 84 45 9C */	addi r4, r4, lbl_8042459C@l
 /* 8005B174 00056E14  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8005B178 00056E18  7C 89 03 A6 */	mtctr r4
-/* 8005B17C 00056E1C  4E 80 04 20 */	bctr 
+/* 8005B17C 00056E1C  4E 80 04 20 */	bctr
 /* 8005B180 00056E20  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8005B184 00056E24  D0 03 00 34 */	stfs f0, 0x34(r3)
 /* 8005B188 00056E28  48 00 00 4C */	b lbl_8005B1D4
@@ -15922,7 +15922,7 @@ lbl_8005B1D4:
 /* 8005B1D8 00056E78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005B1DC 00056E7C  7C 08 03 A6 */	mtlr r0
 /* 8005B1E0 00056E80  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005B1E4 00056E84  4E 80 00 20 */	blr 
+/* 8005B1E4 00056E84  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -15931,26 +15931,26 @@ lbl_8005B1D4:
 /* 8005B1F0 00056E90  40 80 00 1C */	bge lbl_8005B20C
 /* 8005B1F4 00056E94  2C 04 00 08 */	cmpwi r4, 8
 /* 8005B1F8 00056E98  41 82 00 28 */	beq lbl_8005B220
-/* 8005B1FC 00056E9C  4C 80 00 20 */	bgelr 
+/* 8005B1FC 00056E9C  4C 80 00 20 */	bgelr
 /* 8005B200 00056EA0  2C 04 00 07 */	cmpwi r4, 7
 /* 8005B204 00056EA4  40 80 00 14 */	bge lbl_8005B218
-/* 8005B208 00056EA8  4E 80 00 20 */	blr 
+/* 8005B208 00056EA8  4E 80 00 20 */	blr
 lbl_8005B20C:
 /* 8005B20C 00056EAC  2C 04 00 11 */	cmpwi r4, 0x11
-/* 8005B210 00056EB0  4C 80 00 20 */	bgelr 
+/* 8005B210 00056EB0  4C 80 00 20 */	bgelr
 /* 8005B214 00056EB4  48 00 00 1C */	b lbl_8005B230
 lbl_8005B218:
 /* 8005B218 00056EB8  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 8005B21C 00056EBC  4E 80 00 20 */	blr 
+/* 8005B21C 00056EBC  4E 80 00 20 */	blr
 lbl_8005B220:
 /* 8005B220 00056EC0  D0 23 00 38 */	stfs f1, 0x38(r3)
-/* 8005B224 00056EC4  4E 80 00 20 */	blr 
+/* 8005B224 00056EC4  4E 80 00 20 */	blr
 lbl_8005B228:
 /* 8005B228 00056EC8  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 8005B22C 00056ECC  4E 80 00 20 */	blr 
+/* 8005B22C 00056ECC  4E 80 00 20 */	blr
 lbl_8005B230:
 /* 8005B230 00056ED0  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 8005B234 00056ED4  4E 80 00 20 */	blr 
+/* 8005B234 00056ED4  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule12FloorPainterFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule12FloorPainterFRQ216InteractorModule20InteractorVisualizer":
@@ -16025,7 +16025,7 @@ lbl_8005B30C:
 /* 8005B314 00056FB4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8005B318 00056FB8  7C 08 03 A6 */	mtlr r0
 /* 8005B31C 00056FBC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005B320 00056FC0  4E 80 00 20 */	blr 
+/* 8005B320 00056FC0  4E 80 00 20 */	blr
 
 .global "SetFloorTile__Q216InteractorModule12FloorPainterFP7CTilePt12FloorPatternPi"
 "SetFloorTile__Q216InteractorModule12FloorPainterFP7CTilePt12FloorPatternPi":
@@ -16136,7 +16136,7 @@ lbl_8005B490:
 /* 8005B49C 0005713C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8005B4A0 00057140  7C 08 03 A6 */	mtlr r0
 /* 8005B4A4 00057144  38 21 00 80 */	addi r1, r1, 0x80
-/* 8005B4A8 00057148  4E 80 00 20 */	blr 
+/* 8005B4A8 00057148  4E 80 00 20 */	blr
 
 .global "SetFloorTile__Q216InteractorModule12FloorPainterFRC7CTilePt12FloorPatternP4RoomPi"
 "SetFloorTile__Q216InteractorModule12FloorPainterFRC7CTilePt12FloorPatternP4RoomPi":
@@ -16284,7 +16284,7 @@ lbl_8005B6A4:
 /* 8005B6AC 0005734C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8005B6B0 00057350  7C 08 03 A6 */	mtlr r0
 /* 8005B6B4 00057354  38 21 00 80 */	addi r1, r1, 0x80
-/* 8005B6B8 00057358  4E 80 00 20 */	blr 
+/* 8005B6B8 00057358  4E 80 00 20 */	blr
 
 .global "RemoveFloorTile__Q216InteractorModule12FloorPainterFP7CTilePtPi"
 "RemoveFloorTile__Q216InteractorModule12FloorPainterFP7CTilePtPi":
@@ -16424,7 +16424,7 @@ lbl_8005B8AC:
 /* 8005B8B4 00057554  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8005B8B8 00057558  7C 08 03 A6 */	mtlr r0
 /* 8005B8BC 0005755C  38 21 00 90 */	addi r1, r1, 0x90
-/* 8005B8C0 00057560  4E 80 00 20 */	blr 
+/* 8005B8C0 00057560  4E 80 00 20 */	blr
 
 .global "GetSelectedRectPoints__Q216InteractorModule12FloorPainterFRiRiRiRi"
 "GetSelectedRectPoints__Q216InteractorModule12FloorPainterFRiRiRiRi":
@@ -16478,7 +16478,7 @@ lbl_8005B958:
 /* 8005B960 00057600  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005B964 00057604  90 07 00 00 */	stw r0, 0(r7)
 /* 8005B968 00057608  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005B96C 0005760C  4E 80 00 20 */	blr 
+/* 8005B96C 0005760C  4E 80 00 20 */	blr
 
 .global "PaintFloor__Q216InteractorModule12FloorPainterFPi"
 "PaintFloor__Q216InteractorModule12FloorPainterFPi":
@@ -16566,7 +16566,7 @@ lbl_8005BA7C:
 /* 8005BA94 00057734  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005BA98 00057738  7C 08 03 A6 */	mtlr r0
 /* 8005BA9C 0005773C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005BAA0 00057740  4E 80 00 20 */	blr 
+/* 8005BAA0 00057740  4E 80 00 20 */	blr
 
 .global "RemoveFloor__Q216InteractorModule12FloorPainterFPi"
 "RemoveFloor__Q216InteractorModule12FloorPainterFPi":
@@ -16685,7 +16685,7 @@ lbl_8005BC2C:
 /* 8005BC34 000578D4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005BC38 000578D8  7C 08 03 A6 */	mtlr r0
 /* 8005BC3C 000578DC  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005BC40 000578E0  4E 80 00 20 */	blr 
+/* 8005BC40 000578E0  4E 80 00 20 */	blr
 
 .global "PaintRoom__Q216InteractorModule12FloorPainterFPi"
 "PaintRoom__Q216InteractorModule12FloorPainterFPi":
@@ -16803,7 +16803,7 @@ lbl_8005BDC0:
 /* 8005BDD8 00057A78  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005BDDC 00057A7C  7C 08 03 A6 */	mtlr r0
 /* 8005BDE0 00057A80  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005BDE4 00057A84  4E 80 00 20 */	blr 
+/* 8005BDE4 00057A84  4E 80 00 20 */	blr
 
 .global "RemoveRoom__Q216InteractorModule12FloorPainterFPi"
 "RemoveRoom__Q216InteractorModule12FloorPainterFPi":
@@ -16947,7 +16947,7 @@ lbl_8005BFD0:
 /* 8005BFD8 00057C78  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005BFDC 00057C7C  7C 08 03 A6 */	mtlr r0
 /* 8005BFE0 00057C80  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005BFE4 00057C84  4E 80 00 20 */	blr 
+/* 8005BFE4 00057C84  4E 80 00 20 */	blr
 
 .global "CheckDiagForRoomContainment__Q216InteractorModule12FloorPainterFP4RoomRC7CTilePtR9TileWallsR20DiagonalSideSelectorR20DiagonalSideSelector"
 "CheckDiagForRoomContainment__Q216InteractorModule12FloorPainterFP4RoomRC7CTilePtR9TileWallsR20DiagonalSideSelectorR20DiagonalSideSelector":
@@ -17037,7 +17037,7 @@ lbl_8005C11C:
 /* 8005C124 00057DC4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8005C128 00057DC8  7C 08 03 A6 */	mtlr r0
 /* 8005C12C 00057DCC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005C130 00057DD0  4E 80 00 20 */	blr 
+/* 8005C130 00057DD0  4E 80 00 20 */	blr
 
 .global "SwapTools__Q216InteractorModule12FloorPainterFv"
 "SwapTools__Q216InteractorModule12FloorPainterFv":
@@ -17067,7 +17067,7 @@ lbl_8005C11C:
 /* 8005C190 00057E30  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8005C194 00057E34  7C 08 03 A6 */	mtlr r0
 /* 8005C198 00057E38  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005C19C 00057E3C  4E 80 00 20 */	blr 
+/* 8005C19C 00057E3C  4E 80 00 20 */	blr
 
 .global "CurrentSelectionIsValid__Q216InteractorModule12FloorPainterFRi"
 "CurrentSelectionIsValid__Q216InteractorModule12FloorPainterFRi":
@@ -17244,12 +17244,12 @@ lbl_8005C3F8:
 /* 8005C400 000580A0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005C404 000580A4  7C 08 03 A6 */	mtlr r0
 /* 8005C408 000580A8  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005C40C 000580AC  4E 80 00 20 */	blr 
+/* 8005C40C 000580AC  4E 80 00 20 */	blr
 
 .global "GetIsAnchorDrawingOn__Q216InteractorModule12FloorPainterCFv"
 "GetIsAnchorDrawingOn__Q216InteractorModule12FloorPainterCFv":
 /* 8005C410 000580B0  88 63 01 FC */	lbz r3, 0x1fc(r3)
-/* 8005C414 000580B4  4E 80 00 20 */	blr 
+/* 8005C414 000580B4  4E 80 00 20 */	blr
 
 .global "OnUndoButton__Q216InteractorModule12FloorPainterFv"
 "OnUndoButton__Q216InteractorModule12FloorPainterFv":
@@ -17328,7 +17328,7 @@ lbl_8005C520:
 /* 8005C524 000581C4  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 8005C528 000581C8  7C 08 03 A6 */	mtlr r0
 /* 8005C52C 000581CC  38 21 00 50 */	addi r1, r1, 0x50
-/* 8005C530 000581D0  4E 80 00 20 */	blr 
+/* 8005C530 000581D0  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule15UndoRedoCommandFRCQ216InteractorModule15UndoRedoCommand"
 "__ct__Q216InteractorModule15UndoRedoCommandFRCQ216InteractorModule15UndoRedoCommand":
@@ -17358,7 +17358,7 @@ lbl_8005C520:
 /* 8005C590 00058230  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005C594 00058234  7C 08 03 A6 */	mtlr r0
 /* 8005C598 00058238  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005C59C 0005823C  4E 80 00 20 */	blr 
+/* 8005C59C 0005823C  4E 80 00 20 */	blr
 
 .global "size__19VECTOR<P9FloorTile>CFv"
 "size__19VECTOR<P9FloorTile>CFv":
@@ -17366,10 +17366,10 @@ lbl_8005C520:
 /* 8005C5A4 00058244  2C 03 00 00 */	cmpwi r3, 0
 /* 8005C5A8 00058248  41 82 00 0C */	beq lbl_8005C5B4
 /* 8005C5AC 0005824C  80 63 FF FC */	lwz r3, -4(r3)
-/* 8005C5B0 00058250  4E 80 00 20 */	blr 
+/* 8005C5B0 00058250  4E 80 00 20 */	blr
 lbl_8005C5B4:
 /* 8005C5B4 00058254  38 60 00 00 */	li r3, 0
-/* 8005C5B8 00058258  4E 80 00 20 */	blr 
+/* 8005C5B8 00058258  4E 80 00 20 */	blr
 
 .global "__vc__19VECTOR<P9FloorTile>CFUl"
 "__vc__19VECTOR<P9FloorTile>CFUl":
@@ -17385,12 +17385,12 @@ lbl_8005C5B4:
 /* 8005C5E0 00058280  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005C5E4 00058284  7C 08 03 A6 */	mtlr r0
 /* 8005C5E8 00058288  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005C5EC 0005828C  4E 80 00 20 */	blr 
+/* 8005C5EC 0005828C  4E 80 00 20 */	blr
 
 .global "begin__19VECTOR<P9FloorTile>CFv"
 "begin__19VECTOR<P9FloorTile>CFv":
 /* 8005C5F0 00058290  80 63 00 00 */	lwz r3, 0(r3)
-/* 8005C5F4 00058294  4E 80 00 20 */	blr 
+/* 8005C5F4 00058294  4E 80 00 20 */	blr
 
 .global "__vc__18VECTOR<P8WallTile>CFUl"
 "__vc__18VECTOR<P8WallTile>CFUl":
@@ -17406,12 +17406,12 @@ lbl_8005C5B4:
 /* 8005C61C 000582BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005C620 000582C0  7C 08 03 A6 */	mtlr r0
 /* 8005C624 000582C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005C628 000582C8  4E 80 00 20 */	blr 
+/* 8005C628 000582C8  4E 80 00 20 */	blr
 
 .global "begin__18VECTOR<P8WallTile>CFv"
 "begin__18VECTOR<P8WallTile>CFv":
 /* 8005C62C 000582CC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8005C630 000582D0  4E 80 00 20 */	blr 
+/* 8005C630 000582D0  4E 80 00 20 */	blr
 
 .global "size__18VECTOR<P8WallTile>CFv"
 "size__18VECTOR<P8WallTile>CFv":
@@ -17419,25 +17419,25 @@ lbl_8005C5B4:
 /* 8005C638 000582D8  2C 03 00 00 */	cmpwi r3, 0
 /* 8005C63C 000582DC  41 82 00 0C */	beq lbl_8005C648
 /* 8005C640 000582E0  80 63 FF FC */	lwz r3, -4(r3)
-/* 8005C644 000582E4  4E 80 00 20 */	blr 
+/* 8005C644 000582E4  4E 80 00 20 */	blr
 lbl_8005C648:
 /* 8005C648 000582E8  38 60 00 00 */	li r3, 0
-/* 8005C64C 000582EC  4E 80 00 20 */	blr 
+/* 8005C64C 000582EC  4E 80 00 20 */	blr
 
 .global "GetTileList__4RoomCFv"
 "GetTileList__4RoomCFv":
 /* 8005C650 000582F0  38 63 00 0C */	addi r3, r3, 0xc
-/* 8005C654 000582F4  4E 80 00 20 */	blr 
+/* 8005C654 000582F4  4E 80 00 20 */	blr
 
 .global "GetRoomID__4RoomCFv"
 "GetRoomID__4RoomCFv":
 /* 8005C658 000582F8  A0 63 00 08 */	lhz r3, 8(r3)
-/* 8005C65C 000582FC  4E 80 00 20 */	blr 
+/* 8005C65C 000582FC  4E 80 00 20 */	blr
 
 .global "Used__4RoomCFv"
 "Used__4RoomCFv":
 /* 8005C660 00058300  80 63 00 3C */	lwz r3, 0x3c(r3)
-/* 8005C664 00058304  4E 80 00 20 */	blr 
+/* 8005C664 00058304  4E 80 00 20 */	blr
 
 .global "GetRoom__11RoomManagerCFQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>"
 "GetRoom__11RoomManagerCFQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>":
@@ -17450,64 +17450,64 @@ lbl_8005C648:
 /* 8005C680 00058320  80 63 00 04 */	lwz r3, 4(r3)
 /* 8005C684 00058324  7C 08 03 A6 */	mtlr r0
 /* 8005C688 00058328  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005C68C 0005832C  4E 80 00 20 */	blr 
+/* 8005C68C 0005832C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>FRCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>"
 "__ct__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>FRCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>":
 /* 8005C690 00058330  80 04 00 00 */	lwz r0, 0(r4)
 /* 8005C694 00058334  90 03 00 00 */	stw r0, 0(r3)
-/* 8005C698 00058338  4E 80 00 20 */	blr 
+/* 8005C698 00058338  4E 80 00 20 */	blr
 
 .global "GetRoomCollection__11RoomManagerCFv"
 "GetRoomCollection__11RoomManagerCFv":
-/* 8005C69C 0005833C  4E 80 00 20 */	blr 
+/* 8005C69C 0005833C  4E 80 00 20 */	blr
 
 .global "IsInFillState__Q216InteractorModule12FloorPainterCFv"
 "IsInFillState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6A0 00058340  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6A4 00058344  54 03 FF FE */	rlwinm r3, r0, 0x1f, 0x1f, 0x1f
-/* 8005C6A8 00058348  4E 80 00 20 */	blr 
+/* 8005C6A8 00058348  4E 80 00 20 */	blr
 
 .global "IsInAnchorState__Q216InteractorModule12FloorPainterCFv"
 "IsInAnchorState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6AC 0005834C  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6B0 00058350  54 03 07 FE */	clrlwi r3, r0, 0x1f
-/* 8005C6B4 00058354  4E 80 00 20 */	blr 
+/* 8005C6B4 00058354  4E 80 00 20 */	blr
 
 .global "IsInInvalidState__Q216InteractorModule12FloorPainterCFv"
 "IsInInvalidState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6B8 00058358  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6BC 0005835C  54 03 DF FE */	rlwinm r3, r0, 0x1b, 0x1f, 0x1f
-/* 8005C6C0 00058360  4E 80 00 20 */	blr 
+/* 8005C6C0 00058360  4E 80 00 20 */	blr
 
 .global "IsInFreeState__Q216InteractorModule12FloorPainterCFv"
 "IsInFreeState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6C4 00058364  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6C8 00058368  7C 00 00 34 */	cntlzw r0, r0
 /* 8005C6CC 0005836C  54 03 D9 7E */	srwi r3, r0, 5
-/* 8005C6D0 00058370  4E 80 00 20 */	blr 
+/* 8005C6D0 00058370  4E 80 00 20 */	blr
 
 .global "IsInRemoveState__Q216InteractorModule12FloorPainterCFv"
 "IsInRemoveState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6D4 00058374  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6D8 00058378  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 8005C6DC 0005837C  4E 80 00 20 */	blr 
+/* 8005C6DC 0005837C  4E 80 00 20 */	blr
 
 .global "IsInBuildState__Q216InteractorModule12FloorPainterCFv"
 "IsInBuildState__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6E0 00058380  88 03 01 A1 */	lbz r0, 0x1a1(r3)
 /* 8005C6E4 00058384  54 03 F7 FE */	rlwinm r3, r0, 0x1e, 0x1f, 0x1f
-/* 8005C6E8 00058388  4E 80 00 20 */	blr 
+/* 8005C6E8 00058388  4E 80 00 20 */	blr
 
 .global "GetSelectedFloorData__Q216InteractorModule12FloorPainterCFv"
 "GetSelectedFloorData__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6EC 0005838C  38 63 01 D4 */	addi r3, r3, 0x1d4
-/* 8005C6F0 00058390  4E 80 00 20 */	blr 
+/* 8005C6F0 00058390  4E 80 00 20 */	blr
 
 .global "GetAnchorPos__Q216InteractorModule12FloorPainterCFv"
 "GetAnchorPos__Q216InteractorModule12FloorPainterCFv":
 /* 8005C6F4 00058394  38 63 01 A4 */	addi r3, r3, 0x1a4
-/* 8005C6F8 00058398  4E 80 00 20 */	blr 
+/* 8005C6F8 00058398  4E 80 00 20 */	blr
 
 .global "copy<PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock>__5eastlFPQ216InteractorModule8InvStockPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock"
 "copy<PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock>__5eastlFPQ216InteractorModule8InvStockPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock":
@@ -17549,7 +17549,7 @@ lbl_8005C744:
 /* 8005C75C 000583FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005C760 00058400  7C 08 03 A6 */	mtlr r0
 /* 8005C764 00058404  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005C768 00058408  4E 80 00 20 */	blr 
+/* 8005C768 00058408  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule8InvStockFRCQ216InteractorModule8InvStock"
 "__as__Q216InteractorModule8InvStockFRCQ216InteractorModule8InvStock":
@@ -17557,34 +17557,34 @@ lbl_8005C744:
 /* 8005C770 00058410  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005C774 00058414  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005C778 00058418  90 03 00 04 */	stw r0, 4(r3)
-/* 8005C77C 0005841C  4E 80 00 20 */	blr 
+/* 8005C77C 0005841C  4E 80 00 20 */	blr
 
 .global "max<f>__5eastlFRCfRCf_RCf"
 "max<f>__5eastlFRCfRCf_RCf":
 /* 8005C780 00058420  C0 23 00 00 */	lfs f1, 0(r3)
 /* 8005C784 00058424  C0 04 00 00 */	lfs f0, 0(r4)
 /* 8005C788 00058428  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 8005C78C 0005842C  4C 80 00 20 */	bgelr 
+/* 8005C78C 0005842C  4C 80 00 20 */	bgelr
 /* 8005C790 00058430  7C 83 23 78 */	mr r3, r4
-/* 8005C794 00058434  4E 80 00 20 */	blr 
+/* 8005C794 00058434  4E 80 00 20 */	blr
 
 .global "min<f>__5eastlFRCfRCf_RCf"
 "min<f>__5eastlFRCfRCf_RCf":
 /* 8005C798 00058438  C0 24 00 00 */	lfs f1, 0(r4)
 /* 8005C79C 0005843C  C0 03 00 00 */	lfs f0, 0(r3)
 /* 8005C7A0 00058440  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 8005C7A4 00058444  4C 80 00 20 */	bgelr 
+/* 8005C7A4 00058444  4C 80 00 20 */	bgelr
 /* 8005C7A8 00058448  7C 83 23 78 */	mr r3, r4
-/* 8005C7AC 0005844C  4E 80 00 20 */	blr 
+/* 8005C7AC 0005844C  4E 80 00 20 */	blr
 
 .global "min<i>__5eastlFRCiRCi_RCi"
 "min<i>__5eastlFRCiRCi_RCi":
 /* 8005C7B0 00058450  80 A4 00 00 */	lwz r5, 0(r4)
 /* 8005C7B4 00058454  80 03 00 00 */	lwz r0, 0(r3)
 /* 8005C7B8 00058458  7C 05 00 00 */	cmpw r5, r0
-/* 8005C7BC 0005845C  4C 80 00 20 */	bgelr 
+/* 8005C7BC 0005845C  4C 80 00 20 */	bgelr
 /* 8005C7C0 00058460  7C 83 23 78 */	mr r3, r4
-/* 8005C7C4 00058464  4E 80 00 20 */	blr 
+/* 8005C7C4 00058464  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "copy<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -17626,7 +17626,7 @@ lbl_8005C810:
 /* 8005C828 000584C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005C82C 000584CC  7C 08 03 A6 */	mtlr r0
 /* 8005C830 000584D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005C834 000584D4  4E 80 00 20 */	blr 
+/* 8005C834 000584D4  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "__as__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -17636,7 +17636,7 @@ lbl_8005C810:
 /* 8005C844 000584E4  90 C3 00 00 */	stw r6, 0(r3)
 /* 8005C848 000584E8  90 A3 00 04 */	stw r5, 4(r3)
 /* 8005C84C 000584EC  90 03 00 08 */	stw r0, 8(r3)
-/* 8005C850 000584F0  4E 80 00 20 */	blr 
+/* 8005C850 000584F0  4E 80 00 20 */	blr
 
 .global "copy<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo"
 "copy<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo":
@@ -17678,7 +17678,7 @@ lbl_8005C89C:
 /* 8005C8B4 00058554  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005C8B8 00058558  7C 08 03 A6 */	mtlr r0
 /* 8005C8BC 0005855C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005C8C0 00058560  4E 80 00 20 */	blr 
+/* 8005C8C0 00058560  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule14InteractorInfoFRCQ216InteractorModule14InteractorInfo"
 "__as__Q216InteractorModule14InteractorInfoFRCQ216InteractorModule14InteractorInfo":
@@ -17690,7 +17690,7 @@ lbl_8005C89C:
 /* 8005C8D8 00058578  90 C3 00 04 */	stw r6, 4(r3)
 /* 8005C8DC 0005857C  90 A3 00 08 */	stw r5, 8(r3)
 /* 8005C8E0 00058580  90 03 00 0C */	stw r0, 0xc(r3)
-/* 8005C8E4 00058584  4E 80 00 20 */	blr 
+/* 8005C8E4 00058584  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "copy<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -17732,7 +17732,7 @@ lbl_8005C930:
 /* 8005C948 000585E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005C94C 000585EC  7C 08 03 A6 */	mtlr r0
 /* 8005C950 000585F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005C954 000585F4  4E 80 00 20 */	blr 
+/* 8005C954 000585F4  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "__as__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -17740,7 +17740,7 @@ lbl_8005C930:
 /* 8005C95C 000585FC  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005C960 00058600  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005C964 00058604  90 03 00 04 */	stw r0, 4(r3)
-/* 8005C968 00058608  4E 80 00 20 */	blr 
+/* 8005C968 00058608  4E 80 00 20 */	blr
 
 .global "copy<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor"
 "copy<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -17782,7 +17782,7 @@ lbl_8005C9B4:
 /* 8005C9CC 0005866C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005C9D0 00058670  7C 08 03 A6 */	mtlr r0
 /* 8005C9D4 00058674  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005C9D8 00058678  4E 80 00 20 */	blr 
+/* 8005C9D8 00058678  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule17InteractorManager16ActiveInteractorFRCQ316InteractorModule17InteractorManager16ActiveInteractor"
 "__as__Q316InteractorModule17InteractorManager16ActiveInteractorFRCQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -17790,7 +17790,7 @@ lbl_8005C9B4:
 /* 8005C9E0 00058680  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005C9E4 00058684  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005C9E8 00058688  90 03 00 04 */	stw r0, 4(r3)
-/* 8005C9EC 0005868C  4E 80 00 20 */	blr 
+/* 8005C9EC 0005868C  4E 80 00 20 */	blr
 
 .global "copy<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor"
 "copy<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor":
@@ -17827,7 +17827,7 @@ lbl_8005C9B4:
 /* 8005CA44 000586E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005CA48 000586E8  7C 08 03 A6 */	mtlr r0
 /* 8005CA4C 000586EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005CA50 000586F0  4E 80 00 20 */	blr 
+/* 8005CA50 000586F0  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "copy<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -17869,7 +17869,7 @@ lbl_8005CA9C:
 /* 8005CAB4 00058754  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CAB8 00058758  7C 08 03 A6 */	mtlr r0
 /* 8005CABC 0005875C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CAC0 00058760  4E 80 00 20 */	blr 
+/* 8005CAC0 00058760  4E 80 00 20 */	blr
 
 .global "copy<PUi,PUi>__5eastlFPUiPUiPUi_PUi"
 "copy<PUi,PUi>__5eastlFPUiPUiPUi_PUi":
@@ -17906,7 +17906,7 @@ lbl_8005CA9C:
 /* 8005CB18 000587B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005CB1C 000587BC  7C 08 03 A6 */	mtlr r0
 /* 8005CB20 000587C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005CB24 000587C4  4E 80 00 20 */	blr 
+/* 8005CB24 000587C4  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>"
 "copy<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>":
@@ -17948,7 +17948,7 @@ lbl_8005CB70:
 /* 8005CB88 00058828  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CB8C 0005882C  7C 08 03 A6 */	mtlr r0
 /* 8005CB90 00058830  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CB94 00058834  4E 80 00 20 */	blr 
+/* 8005CB94 00058834  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl18pair<Ui,P7ERModel>FRCQ25eastl18pair<Ui,P7ERModel>"
 "__as__Q25eastl18pair<Ui,P7ERModel>FRCQ25eastl18pair<Ui,P7ERModel>":
@@ -17956,7 +17956,7 @@ lbl_8005CB70:
 /* 8005CB9C 0005883C  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005CBA0 00058840  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005CBA4 00058844  90 03 00 04 */	stw r0, 4(r3)
-/* 8005CBA8 00058848  4E 80 00 20 */	blr 
+/* 8005CBA8 00058848  4E 80 00 20 */	blr
 
 .global "find<PUi,Ui>__5eastlFPUiPUiRCUi_PUi"
 "find<PUi,Ui>__5eastlFPUiPUiRCUi_PUi":
@@ -17965,12 +17965,12 @@ lbl_8005CBB0:
 /* 8005CBB0 00058850  38 63 00 04 */	addi r3, r3, 4
 lbl_8005CBB4:
 /* 8005CBB4 00058854  7C 03 20 40 */	cmplw r3, r4
-/* 8005CBB8 00058858  4D 82 00 20 */	beqlr 
+/* 8005CBB8 00058858  4D 82 00 20 */	beqlr
 /* 8005CBBC 0005885C  80 C3 00 00 */	lwz r6, 0(r3)
 /* 8005CBC0 00058860  80 05 00 00 */	lwz r0, 0(r5)
 /* 8005CBC4 00058864  7C 06 00 40 */	cmplw r6, r0
 /* 8005CBC8 00058868  40 82 FF E8 */	bne lbl_8005CBB0
-/* 8005CBCC 0005886C  4E 80 00 20 */	blr 
+/* 8005CBCC 0005886C  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>"
 "copy<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>":
@@ -18012,7 +18012,7 @@ lbl_8005CC18:
 /* 8005CC30 000588D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CC34 000588D4  7C 08 03 A6 */	mtlr r0
 /* 8005CC38 000588D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CC3C 000588DC  4E 80 00 20 */	blr 
+/* 8005CC3C 000588DC  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl19pair<Ui,P8ERShader>FRCQ25eastl19pair<Ui,P8ERShader>"
 "__as__Q25eastl19pair<Ui,P8ERShader>FRCQ25eastl19pair<Ui,P8ERShader>":
@@ -18020,7 +18020,7 @@ lbl_8005CC18:
 /* 8005CC44 000588E4  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005CC48 000588E8  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005CC4C 000588EC  90 03 00 04 */	stw r0, 4(r3)
-/* 8005CC50 000588F0  4E 80 00 20 */	blr 
+/* 8005CC50 000588F0  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>>__5eastlFPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>"
 "copy<PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>>__5eastlFPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>":
@@ -18062,7 +18062,7 @@ lbl_8005CC9C:
 /* 8005CCB4 00058954  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CCB8 00058958  7C 08 03 A6 */	mtlr r0
 /* 8005CCBC 0005895C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CCC0 00058960  4E 80 00 20 */	blr 
+/* 8005CCC0 00058960  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl20pair<Ui,P9ERTexture>FRCQ25eastl20pair<Ui,P9ERTexture>"
 "__as__Q25eastl20pair<Ui,P9ERTexture>FRCQ25eastl20pair<Ui,P9ERTexture>":
@@ -18070,7 +18070,7 @@ lbl_8005CC9C:
 /* 8005CCC8 00058968  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005CCCC 0005896C  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005CCD0 00058970  90 03 00 04 */	stw r0, 4(r3)
-/* 8005CCD4 00058974  4E 80 00 20 */	blr 
+/* 8005CCD4 00058974  4E 80 00 20 */	blr
 
 .global "copy<P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData"
 "copy<P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData":
@@ -18112,7 +18112,7 @@ lbl_8005CD20:
 /* 8005CD38 000589D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CD3C 000589DC  7C 08 03 A6 */	mtlr r0
 /* 8005CD40 000589E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CD44 000589E4  4E 80 00 20 */	blr 
+/* 8005CD44 000589E4  4E 80 00 20 */	blr
 
 .global "__as__15EOrderTableDataFRC15EOrderTableData"
 "__as__15EOrderTableDataFRC15EOrderTableData":
@@ -18154,7 +18154,7 @@ lbl_8005CD20:
 /* 8005CDD4 00058A74  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8005CDD8 00058A78  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005CDDC 00058A7C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CDE0 00058A80  4E 80 00 20 */	blr 
+/* 8005CDE0 00058A80  4E 80 00 20 */	blr
 
 .global "copy<Ps,Ps>__5eastlFPsPsPs_Ps"
 "copy<Ps,Ps>__5eastlFPsPsPs_Ps":
@@ -18191,7 +18191,7 @@ lbl_8005CD20:
 /* 8005CE38 00058AD8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005CE3C 00058ADC  7C 08 03 A6 */	mtlr r0
 /* 8005CE40 00058AE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005CE44 00058AE4  4E 80 00 20 */	blr 
+/* 8005CE44 00058AE4  4E 80 00 20 */	blr
 
 .global "copy<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__5eastlFQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>_Q25eastl23generic_iterator<PUi,v>"
 "copy<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__5eastlFQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>_Q25eastl23generic_iterator<PUi,v>":
@@ -18211,7 +18211,7 @@ lbl_8005CD20:
 /* 8005CE7C 00058B1C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CE80 00058B20  7C 08 03 A6 */	mtlr r0
 /* 8005CE84 00058B24  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CE88 00058B28  4E 80 00 20 */	blr 
+/* 8005CE88 00058B28  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>_Q25eastl23generic_iterator<PUi,v>"
 "do_copy<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>_Q25eastl23generic_iterator<PUi,v>":
@@ -18246,7 +18246,7 @@ lbl_8005CD20:
 /* 8005CEFC 00058B9C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005CF00 00058BA0  7C 08 03 A6 */	mtlr r0
 /* 8005CF04 00058BA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CF08 00058BA8  4E 80 00 20 */	blr 
+/* 8005CF08 00058BA8  4E 80 00 20 */	blr
 
 .global "copy<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "copy<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -18288,7 +18288,7 @@ lbl_8005CF54:
 /* 8005CF6C 00058C0C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005CF70 00058C10  7C 08 03 A6 */	mtlr r0
 /* 8005CF74 00058C14  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005CF78 00058C18  4E 80 00 20 */	blr 
+/* 8005CF78 00058C18  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "__as__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -18307,7 +18307,7 @@ lbl_8005CF54:
 /* 8005CFAC 00058C4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005CFB0 00058C50  7C 08 03 A6 */	mtlr r0
 /* 8005CFB4 00058C54  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005CFB8 00058C58  4E 80 00 20 */	blr 
+/* 8005CFB8 00058C58  4E 80 00 20 */	blr
 
 .global "copy<P7CTilePt,P7CTilePt>__5eastlFP7CTilePtP7CTilePtP7CTilePt_P7CTilePt"
 "copy<P7CTilePt,P7CTilePt>__5eastlFP7CTilePtP7CTilePtP7CTilePt_P7CTilePt":
@@ -18349,7 +18349,7 @@ lbl_8005D004:
 /* 8005D01C 00058CBC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D020 00058CC0  7C 08 03 A6 */	mtlr r0
 /* 8005D024 00058CC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D028 00058CC8  4E 80 00 20 */	blr 
+/* 8005D028 00058CC8  4E 80 00 20 */	blr
 
 .global "copy<PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance"
 "copy<PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance":
@@ -18386,7 +18386,7 @@ lbl_8005D004:
 /* 8005D080 00058D20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005D084 00058D24  7C 08 03 A6 */	mtlr r0
 /* 8005D088 00058D28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005D08C 00058D2C  4E 80 00 20 */	blr 
+/* 8005D08C 00058D2C  4E 80 00 20 */	blr
 
 .global "copy<PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance"
 "copy<PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance":
@@ -18423,7 +18423,7 @@ lbl_8005D004:
 /* 8005D0E4 00058D84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005D0E8 00058D88  7C 08 03 A6 */	mtlr r0
 /* 8005D0EC 00058D8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005D0F0 00058D90  4E 80 00 20 */	blr 
+/* 8005D0F0 00058D90  4E 80 00 20 */	blr
 
 .global "find<PP12ISimInstance,P12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstanceRCP12ISimInstance_PP12ISimInstance"
 "find<PP12ISimInstance,P12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstanceRCP12ISimInstance_PP12ISimInstance":
@@ -18432,21 +18432,21 @@ lbl_8005D0F8:
 /* 8005D0F8 00058D98  38 63 00 04 */	addi r3, r3, 4
 lbl_8005D0FC:
 /* 8005D0FC 00058D9C  7C 03 20 40 */	cmplw r3, r4
-/* 8005D100 00058DA0  4D 82 00 20 */	beqlr 
+/* 8005D100 00058DA0  4D 82 00 20 */	beqlr
 /* 8005D104 00058DA4  80 C3 00 00 */	lwz r6, 0(r3)
 /* 8005D108 00058DA8  80 05 00 00 */	lwz r0, 0(r5)
 /* 8005D10C 00058DAC  7C 06 00 40 */	cmplw r6, r0
 /* 8005D110 00058DB0  40 82 FF E8 */	bne lbl_8005D0F8
-/* 8005D114 00058DB4  4E 80 00 20 */	blr 
+/* 8005D114 00058DB4  4E 80 00 20 */	blr
 
 .global "max<i>__5eastlFRCiRCi_RCi"
 "max<i>__5eastlFRCiRCi_RCi":
 /* 8005D118 00058DB8  80 A3 00 00 */	lwz r5, 0(r3)
 /* 8005D11C 00058DBC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8005D120 00058DC0  7C 05 00 00 */	cmpw r5, r0
-/* 8005D124 00058DC4  4C 80 00 20 */	bgelr 
+/* 8005D124 00058DC4  4C 80 00 20 */	bgelr
 /* 8005D128 00058DC8  7C 83 23 78 */	mr r3, r4
-/* 8005D12C 00058DCC  4E 80 00 20 */	blr 
+/* 8005D12C 00058DCC  4E 80 00 20 */	blr
 
 .global "find<PP9EInstance,P9EInstance>__5eastlFPP9EInstancePP9EInstanceRCP9EInstance_PP9EInstance"
 "find<PP9EInstance,P9EInstance>__5eastlFPP9EInstancePP9EInstanceRCP9EInstance_PP9EInstance":
@@ -18455,12 +18455,12 @@ lbl_8005D134:
 /* 8005D134 00058DD4  38 63 00 04 */	addi r3, r3, 4
 lbl_8005D138:
 /* 8005D138 00058DD8  7C 03 20 40 */	cmplw r3, r4
-/* 8005D13C 00058DDC  4D 82 00 20 */	beqlr 
+/* 8005D13C 00058DDC  4D 82 00 20 */	beqlr
 /* 8005D140 00058DE0  80 C3 00 00 */	lwz r6, 0(r3)
 /* 8005D144 00058DE4  80 05 00 00 */	lwz r0, 0(r5)
 /* 8005D148 00058DE8  7C 06 00 40 */	cmplw r6, r0
 /* 8005D14C 00058DEC  40 82 FF E8 */	bne lbl_8005D134
-/* 8005D150 00058DF0  4E 80 00 20 */	blr 
+/* 8005D150 00058DF0  4E 80 00 20 */	blr
 
 .global "copy<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount"
 "copy<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount":
@@ -18502,7 +18502,7 @@ lbl_8005D19C:
 /* 8005D1B4 00058E54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D1B8 00058E58  7C 08 03 A6 */	mtlr r0
 /* 8005D1BC 00058E5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D1C0 00058E60  4E 80 00 20 */	blr 
+/* 8005D1C0 00058E60  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule16PatternSellCountFRCQ216InteractorModule16PatternSellCount"
 "__as__Q216InteractorModule16PatternSellCountFRCQ216InteractorModule16PatternSellCount":
@@ -18510,7 +18510,7 @@ lbl_8005D19C:
 /* 8005D1C8 00058E68  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005D1CC 00058E6C  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005D1D0 00058E70  90 03 00 04 */	stw r0, 4(r3)
-/* 8005D1D4 00058E74  4E 80 00 20 */	blr 
+/* 8005D1D4 00058E74  4E 80 00 20 */	blr
 
 .global "copy<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount"
 "copy<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount":
@@ -18552,7 +18552,7 @@ lbl_8005D220:
 /* 8005D238 00058ED8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D23C 00058EDC  7C 08 03 A6 */	mtlr r0
 /* 8005D240 00058EE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D244 00058EE4  4E 80 00 20 */	blr 
+/* 8005D244 00058EE4  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule14FenceSellCountFRCQ216InteractorModule14FenceSellCount"
 "__as__Q216InteractorModule14FenceSellCountFRCQ216InteractorModule14FenceSellCount":
@@ -18560,7 +18560,7 @@ lbl_8005D220:
 /* 8005D24C 00058EEC  80 04 00 04 */	lwz r0, 4(r4)
 /* 8005D250 00058EF0  90 A3 00 00 */	stw r5, 0(r3)
 /* 8005D254 00058EF4  90 03 00 04 */	stw r0, 4(r3)
-/* 8005D258 00058EF8  4E 80 00 20 */	blr 
+/* 8005D258 00058EF8  4E 80 00 20 */	blr
 
 .global "find<P7CTilePt,7CTilePt>__5eastlFP7CTilePtP7CTilePtRC7CTilePt_P7CTilePt"
 "find<P7CTilePt,7CTilePt>__5eastlFP7CTilePtP7CTilePtRC7CTilePt_P7CTilePt":
@@ -18592,7 +18592,7 @@ lbl_8005D2A4:
 /* 8005D2B4 00058F54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D2B8 00058F58  7C 08 03 A6 */	mtlr r0
 /* 8005D2BC 00058F5C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D2C0 00058F60  4E 80 00 20 */	blr 
+/* 8005D2C0 00058F60  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "copy_backward<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -18634,7 +18634,7 @@ lbl_8005D30C:
 /* 8005D324 00058FC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D328 00058FC8  7C 08 03 A6 */	mtlr r0
 /* 8005D32C 00058FCC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D330 00058FD0  4E 80 00 20 */	blr 
+/* 8005D330 00058FD0  4E 80 00 20 */	blr
 
 .global "copy_backward<PUi,PUi>__5eastlFPUiPUiPUi_PUi"
 "copy_backward<PUi,PUi>__5eastlFPUiPUiPUi_PUi":
@@ -18699,7 +18699,7 @@ lbl_8005D3A8:
 /* 8005D3C0 00059060  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D3C4 00059064  7C 08 03 A6 */	mtlr r0
 /* 8005D3C8 00059068  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D3CC 0005906C  4E 80 00 20 */	blr 
+/* 8005D3CC 0005906C  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount"
 "copy_backward<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount":
@@ -18741,7 +18741,7 @@ lbl_8005D418:
 /* 8005D430 000590D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D434 000590D4  7C 08 03 A6 */	mtlr r0
 /* 8005D438 000590D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D43C 000590DC  4E 80 00 20 */	blr 
+/* 8005D43C 000590DC  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount"
 "copy_backward<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount":
@@ -18783,7 +18783,7 @@ lbl_8005D488:
 /* 8005D4A0 00059140  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D4A4 00059144  7C 08 03 A6 */	mtlr r0
 /* 8005D4A8 00059148  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D4AC 0005914C  4E 80 00 20 */	blr 
+/* 8005D4AC 0005914C  4E 80 00 20 */	blr
 
 .global "fill_n<Q25eastl22generic_iterator<Pi,v>,Ul,i>__5eastlFQ25eastl22generic_iterator<Pi,v>UlRCi_Q25eastl22generic_iterator<Pi,v>"
 "fill_n<Q25eastl22generic_iterator<Pi,v>,Ul,i>__5eastlFQ25eastl22generic_iterator<Pi,v>UlRCi_Q25eastl22generic_iterator<Pi,v>":
@@ -18797,7 +18797,7 @@ lbl_8005D488:
 /* 8005D4CC 0005916C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005D4D0 00059170  7C 08 03 A6 */	mtlr r0
 /* 8005D4D4 00059174  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005D4D8 00059178  4E 80 00 20 */	blr 
+/* 8005D4D8 00059178  4E 80 00 20 */	blr
 
 .global "do_fill<Q25eastl22generic_iterator<Pi,v>,Ul,i>__Q25eastl13fill_n_imp<1>FQ25eastl22generic_iterator<Pi,v>UlRCi_Q25eastl22generic_iterator<Pi,v>"
 "do_fill<Q25eastl22generic_iterator<Pi,v>,Ul,i>__Q25eastl13fill_n_imp<1>FQ25eastl22generic_iterator<Pi,v>UlRCi_Q25eastl22generic_iterator<Pi,v>":
@@ -18828,7 +18828,7 @@ lbl_8005D518:
 /* 8005D534 000591D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D538 000591D8  7C 08 03 A6 */	mtlr r0
 /* 8005D53C 000591DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D540 000591E0  4E 80 00 20 */	blr 
+/* 8005D540 000591E0  4E 80 00 20 */	blr
 
 .global "fill<Pi,i>__5eastlFPiPiRCi_v"
 "fill<Pi,i>__5eastlFPiPiRCi_v":
@@ -18844,7 +18844,7 @@ lbl_8005D550:
 lbl_8005D558:
 /* 8005D558 000591F8  7C 03 20 40 */	cmplw r3, r4
 /* 8005D55C 000591FC  40 82 FF F4 */	bne lbl_8005D550
-/* 8005D560 00059200  4E 80 00 20 */	blr 
+/* 8005D560 00059200  4E 80 00 20 */	blr
 
 .global "copy<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__5eastlFQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>_Q25eastl22generic_iterator<Ps,v>"
 "copy<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__5eastlFQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>_Q25eastl22generic_iterator<Ps,v>":
@@ -18864,7 +18864,7 @@ lbl_8005D558:
 /* 8005D598 00059238  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D59C 0005923C  7C 08 03 A6 */	mtlr r0
 /* 8005D5A0 00059240  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D5A4 00059244  4E 80 00 20 */	blr 
+/* 8005D5A4 00059244  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>_Q25eastl22generic_iterator<Ps,v>"
 "do_copy<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>_Q25eastl22generic_iterator<Ps,v>":
@@ -18899,7 +18899,7 @@ lbl_8005D558:
 /* 8005D618 000592B8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005D61C 000592BC  7C 08 03 A6 */	mtlr r0
 /* 8005D620 000592C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D624 000592C4  4E 80 00 20 */	blr 
+/* 8005D624 000592C4  4E 80 00 20 */	blr
 
 .global "copy_backward<Ps,Ps>__5eastlFPsPsPs_Ps"
 "copy_backward<Ps,Ps>__5eastlFPsPsPs_Ps":
@@ -18936,7 +18936,7 @@ lbl_8005D558:
 /* 8005D670 00059310  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005D674 00059314  7C 08 03 A6 */	mtlr r0
 /* 8005D678 00059318  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005D67C 0005931C  4E 80 00 20 */	blr 
+/* 8005D67C 0005931C  4E 80 00 20 */	blr
 
 .global "do_fill<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Ul,PQ216InteractorModule10Interactor>__Q25eastl13fill_n_imp<1>FQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>UlRCPQ216InteractorModule10Interactor_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>"
 "do_fill<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Ul,PQ216InteractorModule10Interactor>__Q25eastl13fill_n_imp<1>FQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>UlRCPQ216InteractorModule10Interactor_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>":
@@ -18967,7 +18967,7 @@ lbl_8005D6BC:
 /* 8005D6D8 00059378  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D6DC 0005937C  7C 08 03 A6 */	mtlr r0
 /* 8005D6E0 00059380  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D6E4 00059384  4E 80 00 20 */	blr 
+/* 8005D6E4 00059384  4E 80 00 20 */	blr
 
 .global "fill<PPQ216InteractorModule10Interactor,PQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorRCPQ216InteractorModule10Interactor_v"
 "fill<PPQ216InteractorModule10Interactor,PQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorRCPQ216InteractorModule10Interactor_v":
@@ -18983,7 +18983,7 @@ lbl_8005D6F4:
 lbl_8005D6FC:
 /* 8005D6FC 0005939C  7C 03 20 40 */	cmplw r3, r4
 /* 8005D700 000593A0  40 82 FF F4 */	bne lbl_8005D6F4
-/* 8005D704 000593A4  4E 80 00 20 */	blr 
+/* 8005D704 000593A4  4E 80 00 20 */	blr
 
 .global "copy_backward<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor"
 "copy_backward<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor":
@@ -19026,7 +19026,7 @@ lbl_8005D6FC:
 /* 8005D768 00059408  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D76C 0005940C  7C 08 03 A6 */	mtlr r0
 /* 8005D770 00059410  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D774 00059414  4E 80 00 20 */	blr 
+/* 8005D774 00059414  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>"
 "do_copy<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>":
@@ -19061,7 +19061,7 @@ lbl_8005D6FC:
 /* 8005D7E8 00059488  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005D7EC 0005948C  7C 08 03 A6 */	mtlr r0
 /* 8005D7F0 00059490  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D7F4 00059494  4E 80 00 20 */	blr 
+/* 8005D7F4 00059494  4E 80 00 20 */	blr
 
 .global "fill<PQ316InteractorModule17InteractorManager16ActiveInteractor,Q316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorRCQ316InteractorModule17InteractorManager16ActiveInteractor_v"
 "fill<PQ316InteractorModule17InteractorManager16ActiveInteractor,Q316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorRCQ316InteractorModule17InteractorManager16ActiveInteractor_v":
@@ -19093,7 +19093,7 @@ lbl_8005D834:
 /* 8005D848 000594E8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005D84C 000594EC  7C 08 03 A6 */	mtlr r0
 /* 8005D850 000594F0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D854 000594F4  4E 80 00 20 */	blr 
+/* 8005D854 000594F4  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor"
 "copy_backward<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -19135,7 +19135,7 @@ lbl_8005D8A0:
 /* 8005D8B8 00059558  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D8BC 0005955C  7C 08 03 A6 */	mtlr r0
 /* 8005D8C0 00059560  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D8C4 00059564  4E 80 00 20 */	blr 
+/* 8005D8C4 00059564  4E 80 00 20 */	blr
 
 .global "fill<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>RCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_v"
 "fill<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>RCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_v":
@@ -19167,7 +19167,7 @@ lbl_8005D904:
 /* 8005D918 000595B8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005D91C 000595BC  7C 08 03 A6 */	mtlr r0
 /* 8005D920 000595C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D924 000595C4  4E 80 00 20 */	blr 
+/* 8005D924 000595C4  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "copy_backward<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -19209,7 +19209,7 @@ lbl_8005D970:
 /* 8005D988 00059628  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005D98C 0005962C  7C 08 03 A6 */	mtlr r0
 /* 8005D990 00059630  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D994 00059634  4E 80 00 20 */	blr 
+/* 8005D994 00059634  4E 80 00 20 */	blr
 
 .global "fill<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>RCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_v"
 "fill<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>RCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_v":
@@ -19241,7 +19241,7 @@ lbl_8005D9D4:
 /* 8005D9E8 00059688  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005D9EC 0005968C  7C 08 03 A6 */	mtlr r0
 /* 8005D9F0 00059690  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005D9F4 00059694  4E 80 00 20 */	blr 
+/* 8005D9F4 00059694  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "copy_backward<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -19283,7 +19283,7 @@ lbl_8005DA40:
 /* 8005DA58 000596F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DA5C 000596FC  7C 08 03 A6 */	mtlr r0
 /* 8005DA60 00059700  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DA64 00059704  4E 80 00 20 */	blr 
+/* 8005DA64 00059704  4E 80 00 20 */	blr
 
 .global "fill<PQ216InteractorModule14InteractorInfo,Q216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoRCQ216InteractorModule14InteractorInfo_v"
 "fill<PQ216InteractorModule14InteractorInfo,Q216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoRCQ216InteractorModule14InteractorInfo_v":
@@ -19315,7 +19315,7 @@ lbl_8005DAA4:
 /* 8005DAB8 00059758  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8005DABC 0005975C  7C 08 03 A6 */	mtlr r0
 /* 8005DAC0 00059760  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DAC4 00059764  4E 80 00 20 */	blr 
+/* 8005DAC4 00059764  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo"
 "copy_backward<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo":
@@ -19357,7 +19357,7 @@ lbl_8005DB10:
 /* 8005DB28 000597C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DB2C 000597CC  7C 08 03 A6 */	mtlr r0
 /* 8005DB30 000597D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DB34 000597D4  4E 80 00 20 */	blr 
+/* 8005DB34 000597D4  4E 80 00 20 */	blr
 
 .global "copy_backward<P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData"
 "copy_backward<P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData":
@@ -19399,7 +19399,7 @@ lbl_8005DB80:
 /* 8005DB98 00059838  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DB9C 0005983C  7C 08 03 A6 */	mtlr r0
 /* 8005DBA0 00059840  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DBA4 00059844  4E 80 00 20 */	blr 
+/* 8005DBA4 00059844  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>"
 "copy_backward<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>":
@@ -19441,7 +19441,7 @@ lbl_8005DBF0:
 /* 8005DC08 000598A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DC0C 000598AC  7C 08 03 A6 */	mtlr r0
 /* 8005DC10 000598B0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DC14 000598B4  4E 80 00 20 */	blr 
+/* 8005DC14 000598B4  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>"
 "copy_backward<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>":
@@ -19483,7 +19483,7 @@ lbl_8005DC60:
 /* 8005DC78 00059918  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DC7C 0005991C  7C 08 03 A6 */	mtlr r0
 /* 8005DC80 00059920  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DC84 00059924  4E 80 00 20 */	blr 
+/* 8005DC84 00059924  4E 80 00 20 */	blr
 
 .global "copy_backward<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "copy_backward<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -19525,7 +19525,7 @@ lbl_8005DCD0:
 /* 8005DCE8 00059988  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DCEC 0005998C  7C 08 03 A6 */	mtlr r0
 /* 8005DCF0 00059990  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DCF4 00059994  4E 80 00 20 */	blr 
+/* 8005DCF4 00059994  4E 80 00 20 */	blr
 
 .global "copy<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__5eastlFQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>_Q25eastl36generic_iterator<PP12ISimInstance,v>"
 "copy<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__5eastlFQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>_Q25eastl36generic_iterator<PP12ISimInstance,v>":
@@ -19545,7 +19545,7 @@ lbl_8005DCD0:
 /* 8005DD2C 000599CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DD30 000599D0  7C 08 03 A6 */	mtlr r0
 /* 8005DD34 000599D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DD38 000599D8  4E 80 00 20 */	blr 
+/* 8005DD38 000599D8  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>_Q25eastl36generic_iterator<PP12ISimInstance,v>"
 "do_copy<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>_Q25eastl36generic_iterator<PP12ISimInstance,v>":
@@ -19580,7 +19580,7 @@ lbl_8005DCD0:
 /* 8005DDAC 00059A4C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005DDB0 00059A50  7C 08 03 A6 */	mtlr r0
 /* 8005DDB4 00059A54  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DDB8 00059A58  4E 80 00 20 */	blr 
+/* 8005DDB8 00059A58  4E 80 00 20 */	blr
 
 .global "copy_backward<PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance"
 "copy_backward<PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance":
@@ -19623,7 +19623,7 @@ lbl_8005DCD0:
 /* 8005DE1C 00059ABC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DE20 00059AC0  7C 08 03 A6 */	mtlr r0
 /* 8005DE24 00059AC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DE28 00059AC8  4E 80 00 20 */	blr 
+/* 8005DE28 00059AC8  4E 80 00 20 */	blr
 
 .global "do_copy<Q25eastl32generic_iterator<PP9EInstance,v>,Q25eastl32generic_iterator<PP9EInstance,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>_Q25eastl32generic_iterator<PP9EInstance,v>"
 "do_copy<Q25eastl32generic_iterator<PP9EInstance,v>,Q25eastl32generic_iterator<PP9EInstance,v>>__Q25eastl26copy_generic_iterator<1,1>FQ25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>_Q25eastl32generic_iterator<PP9EInstance,v>":
@@ -19658,7 +19658,7 @@ lbl_8005DCD0:
 /* 8005DE9C 00059B3C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8005DEA0 00059B40  7C 08 03 A6 */	mtlr r0
 /* 8005DEA4 00059B44  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DEA8 00059B48  4E 80 00 20 */	blr 
+/* 8005DEA8 00059B48  4E 80 00 20 */	blr
 
 .global "copy_backward<PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance"
 "copy_backward<PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance":
@@ -19723,7 +19723,7 @@ lbl_8005DF20:
 /* 8005DF38 00059BD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005DF3C 00059BDC  7C 08 03 A6 */	mtlr r0
 /* 8005DF40 00059BE0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005DF44 00059BE4  4E 80 00 20 */	blr 
+/* 8005DF44 00059BE4  4E 80 00 20 */	blr
 
 .global "CurrentHitPointisValid__Q216InteractorModule14RayManipulatorCFv"
 "CurrentHitPointisValid__Q216InteractorModule14RayManipulatorCFv":
@@ -19733,12 +19733,12 @@ lbl_8005DF20:
 /* 8005DF54 00059BF4  4C 41 13 82 */	cror 2, 1, 2
 /* 8005DF58 00059BF8  7C 60 00 26 */	mfcr r3
 /* 8005DF5C 00059BFC  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
-/* 8005DF60 00059C00  4E 80 00 20 */	blr 
+/* 8005DF60 00059C00  4E 80 00 20 */	blr
 
 .global "GetIsBlueprintModeEnabled__Q216InteractorModule19BlueprintInteractorFv"
 "GetIsBlueprintModeEnabled__Q216InteractorModule19BlueprintInteractorFv":
 /* 8005DF64 00059C04  88 6D B3 7C */	lbz r3, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
-/* 8005DF68 00059C08  4E 80 00 20 */	blr 
+/* 8005DF68 00059C08  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule19BlueprintInteractorFv"
 "__ct__Q216InteractorModule19BlueprintInteractorFv":
@@ -19758,19 +19758,19 @@ lbl_8005DF20:
 /* 8005DFA0 00059C40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005DFA4 00059C44  7C 08 03 A6 */	mtlr r0
 /* 8005DFA8 00059C48  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005DFAC 00059C4C  4E 80 00 20 */	blr 
+/* 8005DFAC 00059C4C  4E 80 00 20 */	blr
 
 .global "finished__14ObjectIteratorFv"
 "finished__14ObjectIteratorFv":
 /* 8005DFB0 00059C50  80 03 00 04 */	lwz r0, 4(r3)
 /* 8005DFB4 00059C54  7C 00 00 34 */	cntlzw r0, r0
 /* 8005DFB8 00059C58  54 03 D9 7E */	srwi r3, r0, 5
-/* 8005DFBC 00059C5C  4E 80 00 20 */	blr 
+/* 8005DFBC 00059C5C  4E 80 00 20 */	blr
 
 .global "__ml__14ObjectIteratorCFv"
 "__ml__14ObjectIteratorCFv":
 /* 8005DFC0 00059C60  80 63 00 04 */	lwz r3, 4(r3)
-/* 8005DFC4 00059C64  4E 80 00 20 */	blr 
+/* 8005DFC4 00059C64  4E 80 00 20 */	blr
 
 .global "__ct__14ObjectIteratorFRC7CTilePtQ214ObjectIterator11IterateType"
 "__ct__14ObjectIteratorFRC7CTilePtQ214ObjectIterator11IterateType":
@@ -19785,7 +19785,7 @@ lbl_8005DF20:
 /* 8005DFE8 00059C88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005DFEC 00059C8C  7C 08 03 A6 */	mtlr r0
 /* 8005DFF0 00059C90  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005DFF4 00059C94  4E 80 00 20 */	blr 
+/* 8005DFF4 00059C94  4E 80 00 20 */	blr
 
 .global "__cl__10cArray<Uc>FRC7CTilePt"
 "__cl__10cArray<Uc>FRC7CTilePt":
@@ -19812,7 +19812,7 @@ lbl_8005DF20:
 /* 8005E048 00059CE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005E04C 00059CEC  7C 08 03 A6 */	mtlr r0
 /* 8005E050 00059CF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005E054 00059CF4  4E 80 00 20 */	blr 
+/* 8005E054 00059CF4  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule21CursorMovementTrackerFiiii"
 "__ct__Q216InteractorModule21CursorMovementTrackerFiiii":
@@ -19900,12 +19900,12 @@ lbl_8005DF20:
 /* 8005E19C 00059E3C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8005E1A0 00059E40  7C 08 03 A6 */	mtlr r0
 /* 8005E1A4 00059E44  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005E1A8 00059E48  4E 80 00 20 */	blr 
+/* 8005E1A8 00059E48  4E 80 00 20 */	blr
 
 .global "SetEdgeFuzziness__Q216InteractorModule21CursorMovementTrackerFi"
 "SetEdgeFuzziness__Q216InteractorModule21CursorMovementTrackerFi":
 /* 8005E1AC 00059E4C  90 83 00 0C */	stw r4, 0xc(r3)
-/* 8005E1B0 00059E50  4E 80 00 20 */	blr 
+/* 8005E1B0 00059E50  4E 80 00 20 */	blr
 
 .global "SetCursor__Q216InteractorModule21CursorMovementTrackerFii"
 "SetCursor__Q216InteractorModule21CursorMovementTrackerFii":
@@ -19927,7 +19927,7 @@ lbl_8005DF20:
 /* 8005E1F0 00059E90  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8005E1F4 00059E94  7C 08 03 A6 */	mtlr r0
 /* 8005E1F8 00059E98  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005E1FC 00059E9C  4E 80 00 20 */	blr 
+/* 8005E1FC 00059E9C  4E 80 00 20 */	blr
 
 .global "Reset__Q216InteractorModule21CursorMovementTrackerFv"
 "Reset__Q216InteractorModule21CursorMovementTrackerFv":
@@ -19946,7 +19946,7 @@ lbl_8005DF20:
 /* 8005E230 00059ED0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005E234 00059ED4  7C 08 03 A6 */	mtlr r0
 /* 8005E238 00059ED8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005E23C 00059EDC  4E 80 00 20 */	blr 
+/* 8005E23C 00059EDC  4E 80 00 20 */	blr
 
 .global "GetTotalBorderInfluence__Q216InteractorModule21CursorMovementTrackerFiiP5EVec2"
 "GetTotalBorderInfluence__Q216InteractorModule21CursorMovementTrackerFiiP5EVec2":
@@ -20049,7 +20049,7 @@ lbl_8005E3A0:
 /* 8005E3BC 0005A05C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8005E3C0 0005A060  7C 08 03 A6 */	mtlr r0
 /* 8005E3C4 0005A064  38 21 00 70 */	addi r1, r1, 0x70
-/* 8005E3C8 0005A068  4E 80 00 20 */	blr 
+/* 8005E3C8 0005A068  4E 80 00 20 */	blr
 
 .global "GetEdgeInfluence__Q216InteractorModule21CursorMovementTrackerFiii"
 "GetEdgeInfluence__Q216InteractorModule21CursorMovementTrackerFiii":
@@ -20084,7 +20084,7 @@ lbl_8005E3A0:
 /* 8005E43C 0005A0DC  C0 23 00 00 */	lfs f1, 0(r3)
 /* 8005E440 0005A0E0  7C 08 03 A6 */	mtlr r0
 /* 8005E444 0005A0E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005E448 0005A0E8  4E 80 00 20 */	blr 
+/* 8005E448 0005A0E8  4E 80 00 20 */	blr
 
 .global "UpdateCursorPositionFromJoystick__Q216InteractorModule21CursorMovementTrackerFv"
 "UpdateCursorPositionFromJoystick__Q216InteractorModule21CursorMovementTrackerFv":
@@ -20224,7 +20224,7 @@ lbl_8005E628:
 /* 8005E654 0005A2F4  83 A1 00 64 */	lwz r29, 0x64(r1)
 /* 8005E658 0005A2F8  7C 08 03 A6 */	mtlr r0
 /* 8005E65C 0005A2FC  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 8005E660 0005A300  4E 80 00 20 */	blr 
+/* 8005E660 0005A300  4E 80 00 20 */	blr
 
 .global "UpdateCurrentFuzzyEdgeInfluence__Q216InteractorModule21CursorMovementTrackerFii"
 "UpdateCurrentFuzzyEdgeInfluence__Q216InteractorModule21CursorMovementTrackerFii":
@@ -20271,7 +20271,7 @@ lbl_8005E628:
 /* 8005E704 0005A3A4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005E708 0005A3A8  7C 08 03 A6 */	mtlr r0
 /* 8005E70C 0005A3AC  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005E710 0005A3B0  4E 80 00 20 */	blr 
+/* 8005E710 0005A3B0  4E 80 00 20 */	blr
 
 .global "UpdateCursorPositionFromControllerCursor__Q216InteractorModule21CursorMovementTrackerFv"
 "UpdateCursorPositionFromControllerCursor__Q216InteractorModule21CursorMovementTrackerFv":
@@ -20360,7 +20360,7 @@ lbl_8005E628:
 /* 8005E85C 0005A4FC  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8005E860 0005A500  7C 08 03 A6 */	mtlr r0
 /* 8005E864 0005A504  38 21 00 70 */	addi r1, r1, 0x70
-/* 8005E868 0005A508  4E 80 00 20 */	blr 
+/* 8005E868 0005A508  4E 80 00 20 */	blr
 
 .global "UseControllerCursorPosInsteadOfJoystick__Q216InteractorModule21CursorMovementTrackerFv"
 "UseControllerCursorPosInsteadOfJoystick__Q216InteractorModule21CursorMovementTrackerFv":
@@ -20409,7 +20409,7 @@ lbl_8005E8FC:
 /* 8005E900 0005A5A0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8005E904 0005A5A4  7C 08 03 A6 */	mtlr r0
 /* 8005E908 0005A5A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005E90C 0005A5AC  4E 80 00 20 */	blr 
+/* 8005E90C 0005A5AC  4E 80 00 20 */	blr
 
 .global "UpdateCursorAlpha__Q216InteractorModule21CursorMovementTrackerFv"
 "UpdateCursorAlpha__Q216InteractorModule21CursorMovementTrackerFv":
@@ -20473,7 +20473,7 @@ lbl_8005E9E0:
 /* 8005E9E4 0005A684  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005E9E8 0005A688  7C 08 03 A6 */	mtlr r0
 /* 8005E9EC 0005A68C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005E9F0 0005A690  4E 80 00 20 */	blr 
+/* 8005E9F0 0005A690  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule21CursorMovementTrackerFRC5EVec2R5EVec2R5EVec2bRC5EVec2"
 "Update__Q216InteractorModule21CursorMovementTrackerFRC5EVec2R5EVec2R5EVec2bRC5EVec2":
@@ -20636,7 +20636,7 @@ lbl_8005EC28:
 /* 8005EC30 0005A8D0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005EC34 0005A8D4  7C 08 03 A6 */	mtlr r0
 /* 8005EC38 0005A8D8  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005EC3C 0005A8DC  4E 80 00 20 */	blr 
+/* 8005EC3C 0005A8DC  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule23WiiMoteToMenuInteractorFv"
 "__ct__Q216InteractorModule23WiiMoteToMenuInteractorFv":
@@ -20658,7 +20658,7 @@ lbl_8005EC28:
 /* 8005EC7C 0005A91C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005EC80 0005A920  7C 08 03 A6 */	mtlr r0
 /* 8005EC84 0005A924  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005EC88 0005A928  4E 80 00 20 */	blr 
+/* 8005EC88 0005A928  4E 80 00 20 */	blr
 
 .global "CheckForNunchukDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiPUib"
 "CheckForNunchukDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiPUib":
@@ -20776,7 +20776,7 @@ lbl_8005EE0C:
 /* 8005EE18 0005AAB8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8005EE1C 0005AABC  7C 08 03 A6 */	mtlr r0
 /* 8005EE20 0005AAC0  38 21 00 70 */	addi r1, r1, 0x70
-/* 8005EE24 0005AAC4  4E 80 00 20 */	blr 
+/* 8005EE24 0005AAC4  4E 80 00 20 */	blr
 
 .global "IsCursorInBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFP11EController"
 "IsCursorInBoundingBox__Q216InteractorModule23WiiMoteToMenuInteractorFP11EController":
@@ -20810,7 +20810,7 @@ lbl_8005EE84:
 /* 8005EE8C 0005AB2C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8005EE90 0005AB30  7C 08 03 A6 */	mtlr r0
 /* 8005EE94 0005AB34  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005EE98 0005AB38  4E 80 00 20 */	blr 
+/* 8005EE98 0005AB38  4E 80 00 20 */	blr
 
 .global "IsCursorInScrollBar__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerffRb"
 "IsCursorInScrollBar__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerffRb":
@@ -20886,7 +20886,7 @@ lbl_8005EF84:
 /* 8005EFA8 0005AC48  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005EFAC 0005AC4C  7C 08 03 A6 */	mtlr r0
 /* 8005EFB0 0005AC50  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005EFB4 0005AC54  4E 80 00 20 */	blr 
+/* 8005EFB4 0005AC54  4E 80 00 20 */	blr
 
 .global "SetBoundingBox_Int__Q216InteractorModule23WiiMoteToMenuInteractorFPQ216InteractorModule21CursorMovementTrackeriiii"
 "SetBoundingBox_Int__Q216InteractorModule23WiiMoteToMenuInteractorFPQ216InteractorModule21CursorMovementTrackeriiii":
@@ -20968,7 +20968,7 @@ lbl_8005EF84:
 /* 8005F0E4 0005AD84  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8005F0E8 0005AD88  7C 08 03 A6 */	mtlr r0
 /* 8005F0EC 0005AD8C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005F0F0 0005AD90  4E 80 00 20 */	blr 
+/* 8005F0F0 0005AD90  4E 80 00 20 */	blr
 
 .global "SetMaxItems__Q216InteractorModule23WiiMoteToGridInteractorFi"
 "SetMaxItems__Q216InteractorModule23WiiMoteToGridInteractorFi":
@@ -21015,7 +21015,7 @@ lbl_8005F130:
 /* 8005F190 0005AE30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005F194 0005AE34  7C 08 03 A6 */	mtlr r0
 /* 8005F198 0005AE38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005F19C 0005AE3C  4E 80 00 20 */	blr 
+/* 8005F19C 0005AE3C  4E 80 00 20 */	blr
 
 .global "CheckForWiiMoteDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiPUibb"
 "CheckForWiiMoteDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiPUibb":
@@ -21239,7 +21239,7 @@ lbl_8005F4A0:
 /* 8005F4A8 0005B148  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8005F4AC 0005B14C  7C 08 03 A6 */	mtlr r0
 /* 8005F4B0 0005B150  38 21 00 70 */	addi r1, r1, 0x70
-/* 8005F4B4 0005B154  4E 80 00 20 */	blr 
+/* 8005F4B4 0005B154  4E 80 00 20 */	blr
 
 .global "DoWiiMoteDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiUiUi"
 "DoWiiMoteDpadEmulation__Q216InteractorModule23WiiMoteToMenuInteractorFP11EControllerUiUiUi":
@@ -21296,7 +21296,7 @@ lbl_8005F560:
 /* 8005F570 0005B210  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005F574 0005B214  7C 08 03 A6 */	mtlr r0
 /* 8005F578 0005B218  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005F57C 0005B21C  4E 80 00 20 */	blr 
+/* 8005F57C 0005B21C  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule23WiiMoteToGridInteractor16MenuItemPositionFv"
 "__ct__Q316InteractorModule23WiiMoteToGridInteractor16MenuItemPositionFv":
@@ -21306,7 +21306,7 @@ lbl_8005F560:
 /* 8005F58C 0005B22C  90 03 00 08 */	stw r0, 8(r3)
 /* 8005F590 0005B230  90 03 00 0C */	stw r0, 0xc(r3)
 /* 8005F594 0005B234  98 03 00 18 */	stb r0, 0x18(r3)
-/* 8005F598 0005B238  4E 80 00 20 */	blr 
+/* 8005F598 0005B238  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule23WiiMoteToGridInteractor16MenuItemPositionFv"
 "__dt__Q316InteractorModule23WiiMoteToGridInteractor16MenuItemPositionFv":
@@ -21326,7 +21326,7 @@ lbl_8005F5C4:
 /* 8005F5CC 0005B26C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005F5D0 0005B270  7C 08 03 A6 */	mtlr r0
 /* 8005F5D4 0005B274  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005F5D8 0005B278  4E 80 00 20 */	blr 
+/* 8005F5D8 0005B278  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule23WiiMoteToGridInteractorFiPcPQ216InteractorModule29GridInteractorResponseHandlerPc"
 "__ct__Q216InteractorModule23WiiMoteToGridInteractorFiPcPQ216InteractorModule29GridInteractorResponseHandlerPc":
@@ -21366,7 +21366,7 @@ lbl_8005F5C4:
 /* 8005F660 0005B300  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005F664 0005B304  7C 08 03 A6 */	mtlr r0
 /* 8005F668 0005B308  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005F66C 0005B30C  4E 80 00 20 */	blr 
+/* 8005F66C 0005B30C  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule23WiiMoteToGridInteractorFv"
 "__dt__Q216InteractorModule23WiiMoteToGridInteractorFv":
@@ -21399,7 +21399,7 @@ lbl_8005F6C4:
 /* 8005F6D0 0005B370  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005F6D4 0005B374  7C 08 03 A6 */	mtlr r0
 /* 8005F6D8 0005B378  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005F6DC 0005B37C  4E 80 00 20 */	blr 
+/* 8005F6DC 0005B37C  4E 80 00 20 */	blr
 
 .global "ValidateRow__Q216InteractorModule23WiiMoteToGridInteractorFib"
 "ValidateRow__Q216InteractorModule23WiiMoteToGridInteractorFib":
@@ -21420,7 +21420,7 @@ lbl_8005F70C:
 /* 8005F70C 0005B3AC  80 03 00 20 */	lwz r0, 0x20(r3)
 /* 8005F710 0005B3B0  7C 07 00 00 */	cmpw r7, r0
 /* 8005F714 0005B3B4  41 80 FF D8 */	blt lbl_8005F6EC
-/* 8005F718 0005B3B8  4E 80 00 20 */	blr 
+/* 8005F718 0005B3B8  4E 80 00 20 */	blr
 
 .global "FindKeyByCursorIntersection__Q216InteractorModule23WiiMoteToGridInteractorFR5EVec2"
 "FindKeyByCursorIntersection__Q216InteractorModule23WiiMoteToGridInteractorFR5EVec2":
@@ -21595,7 +21595,7 @@ lbl_8005F984:
 /* 8005F990 0005B630  81 83 00 00 */	lwz r12, 0(r3)
 /* 8005F994 0005B634  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8005F998 0005B638  7D 89 03 A6 */	mtctr r12
-/* 8005F99C 0005B63C  4E 80 04 21 */	bctrl 
+/* 8005F99C 0005B63C  4E 80 04 21 */	bctrl
 /* 8005F9A0 0005B640  48 00 00 48 */	b lbl_8005F9E8
 lbl_8005F9A4:
 /* 8005F9A4 0005B644  80 83 00 0C */	lwz r4, 0xc(r3)
@@ -21621,7 +21621,7 @@ lbl_8005F9E8:
 /* 8005F9F0 0005B690  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 8005F9F4 0005B694  7C 08 03 A6 */	mtlr r0
 /* 8005F9F8 0005B698  38 21 00 40 */	addi r1, r1, 0x40
-/* 8005F9FC 0005B69C  4E 80 00 20 */	blr 
+/* 8005F9FC 0005B69C  4E 80 00 20 */	blr
 
 .global "AddKey__Q216InteractorModule23WiiMoteToGridInteractorFPCc"
 "AddKey__Q216InteractorModule23WiiMoteToGridInteractorFPCc":
@@ -21798,7 +21798,7 @@ lbl_8005FC60:
 /* 8005FC70 0005B910  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8005FC74 0005B914  7C 08 03 A6 */	mtlr r0
 /* 8005FC78 0005B918  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005FC7C 0005B91C  4E 80 00 20 */	blr 
+/* 8005FC7C 0005B91C  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule15UndoRedoCommandFv"
 "__ct__Q216InteractorModule15UndoRedoCommandFv":
@@ -21816,7 +21816,7 @@ lbl_8005FC60:
 /* 8005FCAC 0005B94C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005FCB0 0005B950  7C 08 03 A6 */	mtlr r0
 /* 8005FCB4 0005B954  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005FCB8 0005B958  4E 80 00 20 */	blr 
+/* 8005FCB8 0005B958  4E 80 00 20 */	blr
 
 .global "Erase__Q216InteractorModule15UndoRedoCommandFv"
 "Erase__Q216InteractorModule15UndoRedoCommandFv":
@@ -21895,7 +21895,7 @@ lbl_8005FD34:
 /* 8005FDCC 0005BA6C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8005FDD0 0005BA70  7C 08 03 A6 */	mtlr r0
 /* 8005FDD4 0005BA74  38 21 00 30 */	addi r1, r1, 0x30
-/* 8005FDD8 0005BA78  4E 80 00 20 */	blr 
+/* 8005FDD8 0005BA78  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule10InteractorFf"
 "Update__Q216InteractorModule10InteractorFf":
@@ -21915,17 +21915,17 @@ lbl_8005FD34:
 /* 8005FE10 0005BAB0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005FE14 0005BAB4  7C 08 03 A6 */	mtlr r0
 /* 8005FE18 0005BAB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8005FE1C 0005BABC  4E 80 00 20 */	blr 
+/* 8005FE1C 0005BABC  4E 80 00 20 */	blr
 
 .global "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam"
 "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam":
 /* 8005FE20 0005BAC0  90 83 00 08 */	stw r4, 8(r3)
-/* 8005FE24 0005BAC4  4E 80 00 20 */	blr 
+/* 8005FE24 0005BAC4  4E 80 00 20 */	blr
 
 .global "GetAttachedCamera__Q216InteractorModule10InteractorFv"
 "GetAttachedCamera__Q216InteractorModule10InteractorFv":
 /* 8005FE28 0005BAC8  80 63 00 08 */	lwz r3, 8(r3)
-/* 8005FE2C 0005BACC  4E 80 00 20 */	blr 
+/* 8005FE2C 0005BACC  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule10InteractorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule10InteractorFRQ216InteractorModule14InteractorInfo":
@@ -21985,7 +21985,7 @@ lbl_8005FED8:
 /* 8005FEDC 0005BB7C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8005FEE0 0005BB80  7C 08 03 A6 */	mtlr r0
 /* 8005FEE4 0005BB84  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005FEE8 0005BB88  4E 80 00 20 */	blr 
+/* 8005FEE8 0005BB88  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -22025,7 +22025,7 @@ lbl_8005FF5C:
 /* 8005FF60 0005BC00  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8005FF64 0005BC04  7C 08 03 A6 */	mtlr r0
 /* 8005FF68 0005BC08  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005FF6C 0005BC0C  4E 80 00 20 */	blr 
+/* 8005FF6C 0005BC0C  4E 80 00 20 */	blr
 
 .global "ResetInputState__Q216InteractorModule10InteractorFv"
 "ResetInputState__Q216InteractorModule10InteractorFv":
@@ -22050,7 +22050,7 @@ lbl_8005FF5C:
 /* 8005FFB8 0005BC58  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005FFBC 0005BC5C  7C 08 03 A6 */	mtlr r0
 /* 8005FFC0 0005BC60  38 21 00 20 */	addi r1, r1, 0x20
-/* 8005FFC4 0005BC64  4E 80 00 20 */	blr 
+/* 8005FFC4 0005BC64  4E 80 00 20 */	blr
 
 .global "GetSelectionRadius__Q216InteractorModule10InteractorFv"
 "GetSelectionRadius__Q216InteractorModule10InteractorFv":
@@ -22072,7 +22072,7 @@ lbl_8005FFFC:
 /* 8005FFFC 0005BC9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80060000 0005BCA0  7C 08 03 A6 */	mtlr r0
 /* 80060004 0005BCA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060008 0005BCA8  4E 80 00 20 */	blr 
+/* 80060008 0005BCA8  4E 80 00 20 */	blr
 
 .global "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan"
 "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan":
@@ -22084,12 +22084,12 @@ lbl_8005FFFC:
 .global "GetPos__Q216InteractorModule10InteractorFv"
 "GetPos__Q216InteractorModule10InteractorFv":
 /* 8006001C 0005BCBC  38 63 00 0C */	addi r3, r3, 0xc
-/* 80060020 0005BCC0  4E 80 00 20 */	blr 
+/* 80060020 0005BCC0  4E 80 00 20 */	blr
 
 .global "GetSnappedPos__Q216InteractorModule10InteractorFv"
 "GetSnappedPos__Q216InteractorModule10InteractorFv":
 /* 80060024 0005BCC4  38 63 00 24 */	addi r3, r3, 0x24
-/* 80060028 0005BCC8  4E 80 00 20 */	blr 
+/* 80060028 0005BCC8  4E 80 00 20 */	blr
 
 .global "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3"
 "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3":
@@ -22106,7 +22106,7 @@ lbl_8005FFFC:
 /* 80060054 0005BCF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80060058 0005BCF8  7C 08 03 A6 */	mtlr r0
 /* 8006005C 0005BCFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060060 0005BD00  4E 80 00 20 */	blr 
+/* 80060060 0005BD00  4E 80 00 20 */	blr
 
 .global "EitherStickCentered__Q216InteractorModule10InteractorCFv"
 "EitherStickCentered__Q216InteractorModule10InteractorCFv":
@@ -22121,27 +22121,27 @@ lbl_80060080:
 /* 80060080 0005BD20  38 80 00 01 */	li r4, 1
 lbl_80060084:
 /* 80060084 0005BD24  7C 83 23 78 */	mr r3, r4
-/* 80060088 0005BD28  4E 80 00 20 */	blr 
+/* 80060088 0005BD28  4E 80 00 20 */	blr
 
 .global "GetPlayerId__Q216InteractorModule10InteractorCFv"
 "GetPlayerId__Q216InteractorModule10InteractorCFv":
 /* 8006008C 0005BD2C  80 63 00 04 */	lwz r3, 4(r3)
-/* 80060090 0005BD30  4E 80 00 20 */	blr 
+/* 80060090 0005BD30  4E 80 00 20 */	blr
 
 .global "SetDrawState__Q216InteractorModule10InteractorFi"
 "SetDrawState__Q216InteractorModule10InteractorFi":
 /* 80060094 0005BD34  90 83 00 50 */	stw r4, 0x50(r3)
-/* 80060098 0005BD38  4E 80 00 20 */	blr 
+/* 80060098 0005BD38  4E 80 00 20 */	blr
 
 .global "GetDrawState__Q216InteractorModule10InteractorCFv"
 "GetDrawState__Q216InteractorModule10InteractorCFv":
 /* 8006009C 0005BD3C  80 63 00 50 */	lwz r3, 0x50(r3)
-/* 800600A0 0005BD40  4E 80 00 20 */	blr 
+/* 800600A0 0005BD40  4E 80 00 20 */	blr
 
 .global "SetBaseCursorState__Q216InteractorModule10InteractorFQ29CURTarget11CursorState"
 "SetBaseCursorState__Q216InteractorModule10InteractorFQ29CURTarget11CursorState":
 /* 800600A4 0005BD44  90 83 00 64 */	stw r4, 0x64(r3)
-/* 800600A8 0005BD48  4E 80 00 20 */	blr 
+/* 800600A8 0005BD48  4E 80 00 20 */	blr
 
 .global "SetBaseCursorStateAndHighlight__Q216InteractorModule10InteractorFQ29CURTarget11CursorStateb"
 "SetBaseCursorStateAndHighlight__Q216InteractorModule10InteractorFQ29CURTarget11CursorStateb":
@@ -22162,7 +22162,7 @@ lbl_800600DC:
 /* 800600E0 0005BD80  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800600E4 0005BD84  7C 08 03 A6 */	mtlr r0
 /* 800600E8 0005BD88  38 21 00 10 */	addi r1, r1, 0x10
-/* 800600EC 0005BD8C  4E 80 00 20 */	blr 
+/* 800600EC 0005BD8C  4E 80 00 20 */	blr
 
 .global "BlockInteractorUpdate__Q216InteractorModule10InteractorFv"
 "BlockInteractorUpdate__Q216InteractorModule10InteractorFv":
@@ -22220,27 +22220,27 @@ lbl_800601A0:
 /* 800601A8 0005BE48  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800601AC 0005BE4C  7C 08 03 A6 */	mtlr r0
 /* 800601B0 0005BE50  38 21 00 10 */	addi r1, r1, 0x10
-/* 800601B4 0005BE54  4E 80 00 20 */	blr 
+/* 800601B4 0005BE54  4E 80 00 20 */	blr
 
 .global "IsHudReturnPending__9H2DTargetFv"
 "IsHudReturnPending__9H2DTargetFv":
 /* 800601B8 0005BE58  88 63 03 2D */	lbz r3, 0x32d(r3)
-/* 800601BC 0005BE5C  4E 80 00 20 */	blr 
+/* 800601BC 0005BE5C  4E 80 00 20 */	blr
 
 .global "IsCursorOverSuperHud__9H2DTargetFv"
 "IsCursorOverSuperHud__9H2DTargetFv":
 /* 800601C0 0005BE60  88 63 03 2F */	lbz r3, 0x32f(r3)
-/* 800601C4 0005BE64  4E 80 00 20 */	blr 
+/* 800601C4 0005BE64  4E 80 00 20 */	blr
 
 .global "GetPauseMenuActive__9H2DTargetFv"
 "GetPauseMenuActive__9H2DTargetFv":
 /* 800601C8 0005BE68  88 63 02 95 */	lbz r3, 0x295(r3)
-/* 800601CC 0005BE6C  4E 80 00 20 */	blr 
+/* 800601CC 0005BE6C  4E 80 00 20 */	blr
 
 .global "GetWiiWideScreen__9EGraphicsCFv"
 "GetWiiWideScreen__9EGraphicsCFv":
 /* 800601D0 0005BE70  88 63 02 48 */	lbz r3, 0x248(r3)
-/* 800601D4 0005BE74  4E 80 00 20 */	blr 
+/* 800601D4 0005BE74  4E 80 00 20 */	blr
 
 .global "AddDownToQue__9AptViewerFi"
 "AddDownToQue__9AptViewerFi":
@@ -22253,7 +22253,7 @@ lbl_800601A0:
 "Set__Q29AptViewer17AddDirectionToQueFbi":
 /* 800601E8 0005BE88  98 83 00 00 */	stb r4, 0(r3)
 /* 800601EC 0005BE8C  90 A3 00 04 */	stw r5, 4(r3)
-/* 800601F0 0005BE90  4E 80 00 20 */	blr 
+/* 800601F0 0005BE90  4E 80 00 20 */	blr
 
 .global "AddUpToQue__9AptViewerFi"
 "AddUpToQue__9AptViewerFi":
@@ -22269,12 +22269,12 @@ lbl_800601A0:
 .global "SetInterestFade__11PyramidFadeFQ211PyramidFade16InterestFadeType"
 "SetInterestFade__11PyramidFadeFQ211PyramidFade16InterestFadeType":
 /* 80060208 0005BEA8  90 83 00 C0 */	stw r4, 0xc0(r3)
-/* 8006020C 0005BEAC  4E 80 00 20 */	blr 
+/* 8006020C 0005BEAC  4E 80 00 20 */	blr
 
 .global "GetExcludeFromFadeHeight__11PyramidFadeCFv"
 "GetExcludeFromFadeHeight__11PyramidFadeCFv":
 /* 80060210 0005BEB0  C0 23 00 B4 */	lfs f1, 0xb4(r3)
-/* 80060214 0005BEB4  4E 80 00 20 */	blr 
+/* 80060214 0005BEB4  4E 80 00 20 */	blr
 
 .global "Debug_GetNameFromCommand__16InteractorModuleFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "Debug_GetNameFromCommand__16InteractorModuleFQ316InteractorModule22InteractorInputManager17InteractorCommand":
@@ -22288,38 +22288,38 @@ lbl_800601A0:
 /* 80060234 0005BED4  38 63 48 9C */	addi r3, r3, lbl_8042489C@l
 /* 80060238 0005BED8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8006023C 0005BEDC  7C 69 03 A6 */	mtctr r3
-/* 80060240 0005BEE0  4E 80 04 20 */	bctr 
+/* 80060240 0005BEE0  4E 80 04 20 */	bctr
 /* 80060244 0005BEE4  38 64 01 3C */	addi r3, r4, 0x13c
-/* 80060248 0005BEE8  4E 80 00 20 */	blr 
+/* 80060248 0005BEE8  4E 80 00 20 */	blr
 /* 8006024C 0005BEEC  38 64 01 64 */	addi r3, r4, 0x164
-/* 80060250 0005BEF0  4E 80 00 20 */	blr 
+/* 80060250 0005BEF0  4E 80 00 20 */	blr
 /* 80060254 0005BEF4  38 64 01 8C */	addi r3, r4, 0x18c
-/* 80060258 0005BEF8  4E 80 00 20 */	blr 
+/* 80060258 0005BEF8  4E 80 00 20 */	blr
 /* 8006025C 0005BEFC  38 64 01 B4 */	addi r3, r4, 0x1b4
-/* 80060260 0005BF00  4E 80 00 20 */	blr 
+/* 80060260 0005BF00  4E 80 00 20 */	blr
 /* 80060264 0005BF04  38 64 01 DC */	addi r3, r4, 0x1dc
-/* 80060268 0005BF08  4E 80 00 20 */	blr 
+/* 80060268 0005BF08  4E 80 00 20 */	blr
 /* 8006026C 0005BF0C  38 64 02 10 */	addi r3, r4, 0x210
-/* 80060270 0005BF10  4E 80 00 20 */	blr 
+/* 80060270 0005BF10  4E 80 00 20 */	blr
 /* 80060274 0005BF14  38 64 02 40 */	addi r3, r4, 0x240
-/* 80060278 0005BF18  4E 80 00 20 */	blr 
+/* 80060278 0005BF18  4E 80 00 20 */	blr
 /* 8006027C 0005BF1C  38 64 02 74 */	addi r3, r4, 0x274
-/* 80060280 0005BF20  4E 80 00 20 */	blr 
+/* 80060280 0005BF20  4E 80 00 20 */	blr
 /* 80060284 0005BF24  38 64 02 A8 */	addi r3, r4, 0x2a8
-/* 80060288 0005BF28  4E 80 00 20 */	blr 
+/* 80060288 0005BF28  4E 80 00 20 */	blr
 /* 8006028C 0005BF2C  38 64 02 D8 */	addi r3, r4, 0x2d8
-/* 80060290 0005BF30  4E 80 00 20 */	blr 
+/* 80060290 0005BF30  4E 80 00 20 */	blr
 /* 80060294 0005BF34  38 64 03 08 */	addi r3, r4, 0x308
-/* 80060298 0005BF38  4E 80 00 20 */	blr 
+/* 80060298 0005BF38  4E 80 00 20 */	blr
 /* 8006029C 0005BF3C  38 64 03 3C */	addi r3, r4, 0x33c
-/* 800602A0 0005BF40  4E 80 00 20 */	blr 
+/* 800602A0 0005BF40  4E 80 00 20 */	blr
 /* 800602A4 0005BF44  38 64 03 70 */	addi r3, r4, 0x370
-/* 800602A8 0005BF48  4E 80 00 20 */	blr 
+/* 800602A8 0005BF48  4E 80 00 20 */	blr
 /* 800602AC 0005BF4C  38 64 03 A8 */	addi r3, r4, 0x3a8
-/* 800602B0 0005BF50  4E 80 00 20 */	blr 
+/* 800602B0 0005BF50  4E 80 00 20 */	blr
 lbl_800602B4:
 /* 800602B4 0005BF54  38 64 03 E0 */	addi r3, r4, 0x3e0
-/* 800602B8 0005BF58  4E 80 00 20 */	blr 
+/* 800602B8 0005BF58  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule22InteractorInputManager12InstanceDataFv"
 "__ct__Q316InteractorModule22InteractorInputManager12InstanceDataFv":
@@ -22339,7 +22339,7 @@ lbl_800602B4:
 /* 800602F0 0005BF90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800602F4 0005BF94  7C 08 03 A6 */	mtlr r0
 /* 800602F8 0005BF98  38 21 00 10 */	addi r1, r1, 0x10
-/* 800602FC 0005BF9C  4E 80 00 20 */	blr 
+/* 800602FC 0005BF9C  4E 80 00 20 */	blr
 
 .global "__dt__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv"
 "__dt__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv":
@@ -22365,7 +22365,7 @@ lbl_8006033C:
 /* 80060348 0005BFE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006034C 0005BFEC  7C 08 03 A6 */	mtlr r0
 /* 80060350 0005BFF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060354 0005BFF4  4E 80 00 20 */	blr 
+/* 80060354 0005BFF4  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule22InteractorInputManager12InstanceDataFv"
 "__dt__Q316InteractorModule22InteractorInputManager12InstanceDataFv":
@@ -22393,7 +22393,7 @@ lbl_8006039C:
 /* 800603A8 0005C048  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800603AC 0005C04C  7C 08 03 A6 */	mtlr r0
 /* 800603B0 0005C050  38 21 00 10 */	addi r1, r1, 0x10
-/* 800603B4 0005C054  4E 80 00 20 */	blr 
+/* 800603B4 0005C054  4E 80 00 20 */	blr
 
 .global "AddCommandMapping__Q316InteractorModule22InteractorInputManager12InstanceDataFQ316InteractorModule22InteractorInputManager17InteractorCommand9ECTRL_CMD"
 "AddCommandMapping__Q316InteractorModule22InteractorInputManager12InstanceDataFQ316InteractorModule22InteractorInputManager17InteractorCommand9ECTRL_CMD":
@@ -22421,7 +22421,7 @@ lbl_8006039C:
 /* 8006040C 0005C0AC  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80060410 0005C0B0  7C 08 03 A6 */	mtlr r0
 /* 80060414 0005C0B4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80060418 0005C0B8  4E 80 00 20 */	blr 
+/* 80060418 0005C0B8  4E 80 00 20 */	blr
 
 .global "AddCommandMapping__Q316InteractorModule22InteractorInputManager12InstanceDataFQ316InteractorModule22InteractorInputManager17InteractorCommandii"
 "AddCommandMapping__Q316InteractorModule22InteractorInputManager12InstanceDataFQ316InteractorModule22InteractorInputManager17InteractorCommandii":
@@ -22452,7 +22452,7 @@ lbl_8006039C:
 /* 8006047C 0005C11C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80060480 0005C120  7C 08 03 A6 */	mtlr r0
 /* 80060484 0005C124  38 21 00 30 */	addi r1, r1, 0x30
-/* 80060488 0005C128  4E 80 00 20 */	blr 
+/* 80060488 0005C128  4E 80 00 20 */	blr
 
 .global "OpenSession__Q316InteractorModule22InteractorInputManager12InstanceDataFiPQ216InteractorModule10InteractoriPCQ316InteractorModule22InteractorInputManager14ButtonSemanticiPCQ316InteractorModule22InteractorInputManager13StickSemanticPCci"
 "OpenSession__Q316InteractorModule22InteractorInputManager12InstanceDataFiPQ216InteractorModule10InteractoriPCQ316InteractorModule22InteractorInputManager14ButtonSemanticiPCQ316InteractorModule22InteractorInputManager13StickSemanticPCci":
@@ -22534,7 +22534,7 @@ lbl_80060580:
 /* 8006059C 0005C23C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800605A0 0005C240  7C 08 03 A6 */	mtlr r0
 /* 800605A4 0005C244  38 21 00 30 */	addi r1, r1, 0x30
-/* 800605A8 0005C248  4E 80 00 20 */	blr 
+/* 800605A8 0005C248  4E 80 00 20 */	blr
 
 .global "CloseSession__Q316InteractorModule22InteractorInputManager12InstanceDataFv"
 "CloseSession__Q316InteractorModule22InteractorInputManager12InstanceDataFv":
@@ -22561,12 +22561,12 @@ lbl_800605E4:
 /* 800605F8 0005C298  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800605FC 0005C29C  7C 08 03 A6 */	mtlr r0
 /* 80060600 0005C2A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060604 0005C2A4  4E 80 00 20 */	blr 
+/* 80060604 0005C2A4  4E 80 00 20 */	blr
 
 .global "GetControllerFilterId__Q316InteractorModule22InteractorInputManager12InstanceDataCFv"
 "GetControllerFilterId__Q316InteractorModule22InteractorInputManager12InstanceDataCFv":
 /* 80060608 0005C2A8  80 63 00 14 */	lwz r3, 0x14(r3)
-/* 8006060C 0005C2AC  4E 80 00 20 */	blr 
+/* 8006060C 0005C2AC  4E 80 00 20 */	blr
 
 .global "Update__Q316InteractorModule22InteractorInputManager12InstanceDataFf"
 "Update__Q316InteractorModule22InteractorInputManager12InstanceDataFf":
@@ -22639,7 +22639,7 @@ lbl_80060694:
 /* 80060714 0005C3B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060718 0005C3B8  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 8006071C 0005C3BC  7D 89 03 A6 */	mtctr r12
-/* 80060720 0005C3C0  4E 80 04 21 */	bctrl 
+/* 80060720 0005C3C0  4E 80 04 21 */	bctrl
 /* 80060724 0005C3C4  48 00 02 38 */	b lbl_8006095C
 lbl_80060728:
 /* 80060728 0005C3C8  FC 20 F0 90 */	fmr f1, f30
@@ -22652,7 +22652,7 @@ lbl_80060728:
 /* 80060744 0005C3E4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060748 0005C3E8  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8006074C 0005C3EC  7D 89 03 A6 */	mtctr r12
-/* 80060750 0005C3F0  4E 80 04 21 */	bctrl 
+/* 80060750 0005C3F0  4E 80 04 21 */	bctrl
 /* 80060754 0005C3F4  48 00 02 08 */	b lbl_8006095C
 lbl_80060758:
 /* 80060758 0005C3F8  80 79 00 18 */	lwz r3, 0x18(r25)
@@ -22661,7 +22661,7 @@ lbl_80060758:
 /* 80060764 0005C404  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060768 0005C408  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8006076C 0005C40C  7D 89 03 A6 */	mtctr r12
-/* 80060770 0005C410  4E 80 04 21 */	bctrl 
+/* 80060770 0005C410  4E 80 04 21 */	bctrl
 /* 80060774 0005C414  48 00 01 E8 */	b lbl_8006095C
 lbl_80060778:
 /* 80060778 0005C418  FC 20 E8 90 */	fmr f1, f29
@@ -22674,7 +22674,7 @@ lbl_80060778:
 /* 80060794 0005C434  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060798 0005C438  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8006079C 0005C43C  7D 89 03 A6 */	mtctr r12
-/* 800607A0 0005C440  4E 80 04 21 */	bctrl 
+/* 800607A0 0005C440  4E 80 04 21 */	bctrl
 /* 800607A4 0005C444  48 00 01 B8 */	b lbl_8006095C
 lbl_800607A8:
 /* 800607A8 0005C448  80 79 00 18 */	lwz r3, 0x18(r25)
@@ -22682,7 +22682,7 @@ lbl_800607A8:
 /* 800607B0 0005C450  81 83 00 00 */	lwz r12, 0(r3)
 /* 800607B4 0005C454  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 800607B8 0005C458  7D 89 03 A6 */	mtctr r12
-/* 800607BC 0005C45C  4E 80 04 21 */	bctrl 
+/* 800607BC 0005C45C  4E 80 04 21 */	bctrl
 /* 800607C0 0005C460  48 00 01 9C */	b lbl_8006095C
 lbl_800607C4:
 /* 800607C4 0005C464  38 1B FF BA */	addi r0, r27, -70
@@ -22705,7 +22705,7 @@ lbl_800607F8:
 /* 80060800 0005C4A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060804 0005C4A4  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 80060808 0005C4A8  7D 89 03 A6 */	mtctr r12
-/* 8006080C 0005C4AC  4E 80 04 21 */	bctrl 
+/* 8006080C 0005C4AC  4E 80 04 21 */	bctrl
 /* 80060810 0005C4B0  48 00 01 4C */	b lbl_8006095C
 lbl_80060814:
 /* 80060814 0005C4B4  2C 1B 00 45 */	cmpwi r27, 0x45
@@ -22734,7 +22734,7 @@ lbl_8006083C:
 /* 8006086C 0005C50C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060870 0005C510  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 80060874 0005C514  7D 89 03 A6 */	mtctr r12
-/* 80060878 0005C518  4E 80 04 21 */	bctrl 
+/* 80060878 0005C518  4E 80 04 21 */	bctrl
 /* 8006087C 0005C51C  9B CD 82 56 */	stb r30, "cButtonCmdUp$42578"-_SDA_BASE_(r13)
 /* 80060880 0005C520  48 00 00 DC */	b lbl_8006095C
 lbl_80060884:
@@ -22749,7 +22749,7 @@ lbl_80060884:
 /* 800608A4 0005C544  81 83 00 00 */	lwz r12, 0(r3)
 /* 800608A8 0005C548  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 800608AC 0005C54C  7D 89 03 A6 */	mtctr r12
-/* 800608B0 0005C550  4E 80 04 21 */	bctrl 
+/* 800608B0 0005C550  4E 80 04 21 */	bctrl
 /* 800608B4 0005C554  9B ED 82 56 */	stb r31, "cButtonCmdUp$42578"-_SDA_BASE_(r13)
 /* 800608B8 0005C558  48 00 00 A4 */	b lbl_8006095C
 lbl_800608BC:
@@ -22765,7 +22765,7 @@ lbl_800608BC:
 /* 800608E0 0005C580  81 83 00 00 */	lwz r12, 0(r3)
 /* 800608E4 0005C584  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 800608E8 0005C588  7D 89 03 A6 */	mtctr r12
-/* 800608EC 0005C58C  4E 80 04 21 */	bctrl 
+/* 800608EC 0005C58C  4E 80 04 21 */	bctrl
 /* 800608F0 0005C590  48 00 00 6C */	b lbl_8006095C
 lbl_800608F4:
 /* 800608F4 0005C594  80 B9 00 14 */	lwz r5, 0x14(r25)
@@ -22779,7 +22779,7 @@ lbl_800608F4:
 /* 80060914 0005C5B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060918 0005C5B8  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 8006091C 0005C5BC  7D 89 03 A6 */	mtctr r12
-/* 80060920 0005C5C0  4E 80 04 21 */	bctrl 
+/* 80060920 0005C5C0  4E 80 04 21 */	bctrl
 /* 80060924 0005C5C4  48 00 00 38 */	b lbl_8006095C
 lbl_80060928:
 /* 80060928 0005C5C8  80 B9 00 14 */	lwz r5, 0x14(r25)
@@ -22794,7 +22794,7 @@ lbl_80060928:
 /* 8006094C 0005C5EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80060950 0005C5F0  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 80060954 0005C5F4  7D 89 03 A6 */	mtctr r12
-/* 80060958 0005C5F8  4E 80 04 21 */	bctrl 
+/* 80060958 0005C5F8  4E 80 04 21 */	bctrl
 lbl_8006095C:
 /* 8006095C 0005C5FC  3B 9C 00 0C */	addi r28, r28, 0xc
 lbl_80060960:
@@ -22832,7 +22832,7 @@ lbl_800609D4:
 /* 800609D8 0005C678  81 83 00 00 */	lwz r12, 0(r3)
 /* 800609DC 0005C67C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 800609E0 0005C680  7D 89 03 A6 */	mtctr r12
-/* 800609E4 0005C684  4E 80 04 21 */	bctrl 
+/* 800609E4 0005C684  4E 80 04 21 */	bctrl
 /* 800609E8 0005C688  48 00 00 10 */	b lbl_800609F8
 lbl_800609EC:
 /* 800609EC 0005C68C  FC 20 E0 90 */	fmr f1, f28
@@ -22852,7 +22852,7 @@ lbl_800609F8:
 /* 80060A20 0005C6C0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80060A24 0005C6C4  7C 08 03 A6 */	mtlr r0
 /* 80060A28 0005C6C8  38 21 00 80 */	addi r1, r1, 0x80
-/* 80060A2C 0005C6CC  4E 80 00 20 */	blr 
+/* 80060A2C 0005C6CC  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule22InteractorInputManagerFi"
 "__ct__Q216InteractorModule22InteractorInputManagerFi":
@@ -22883,7 +22883,7 @@ lbl_800609F8:
 /* 80060A90 0005C730  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80060A94 0005C734  7C 08 03 A6 */	mtlr r0
 /* 80060A98 0005C738  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060A9C 0005C73C  4E 80 00 20 */	blr 
+/* 80060A9C 0005C73C  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule22InteractorInputManagerFv"
 "__dt__Q216InteractorModule22InteractorInputManagerFv":
@@ -22913,7 +22913,7 @@ lbl_80060AEC:
 /* 80060AF8 0005C798  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80060AFC 0005C79C  7C 08 03 A6 */	mtlr r0
 /* 80060B00 0005C7A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060B04 0005C7A4  4E 80 00 20 */	blr 
+/* 80060B04 0005C7A4  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule22InteractorInputManagerFf"
 "Update__Q216InteractorModule22InteractorInputManagerFf":
@@ -22947,7 +22947,7 @@ lbl_80060B50:
 /* 80060B6C 0005C80C  83 A1 00 0C */	lwz r29, 0xc(r1)
 /* 80060B70 0005C810  7C 08 03 A6 */	mtlr r0
 /* 80060B74 0005C814  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060B78 0005C818  4E 80 00 20 */	blr 
+/* 80060B78 0005C818  4E 80 00 20 */	blr
 
 .global "OpenSession__Q216InteractorModule22InteractorInputManagerFiPQ216InteractorModule10InteractoriPCQ316InteractorModule22InteractorInputManager14ButtonSemanticiPCQ316InteractorModule22InteractorInputManager13StickSemanticPCci"
 "OpenSession__Q216InteractorModule22InteractorInputManagerFiPQ216InteractorModule10InteractoriPCQ316InteractorModule22InteractorInputManager14ButtonSemanticiPCQ316InteractorModule22InteractorInputManager13StickSemanticPCci":
@@ -22963,7 +22963,7 @@ lbl_80060B50:
 /* 80060BA0 0005C840  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80060BA4 0005C844  7C 08 03 A6 */	mtlr r0
 /* 80060BA8 0005C848  38 21 00 10 */	addi r1, r1, 0x10
-/* 80060BAC 0005C84C  4E 80 00 20 */	blr 
+/* 80060BAC 0005C84C  4E 80 00 20 */	blr
 
 .global "CloseSession__Q216InteractorModule22InteractorInputManagerFi"
 "CloseSession__Q216InteractorModule22InteractorInputManagerFi":
@@ -22978,11 +22978,11 @@ lbl_80060B50:
 /* 80060BC4 0005C864  2C 03 00 00 */	cmpwi r3, 0
 /* 80060BC8 0005C868  40 82 00 0C */	bne lbl_80060BD4
 /* 80060BCC 0005C86C  38 60 00 00 */	li r3, 0
-/* 80060BD0 0005C870  4E 80 00 20 */	blr 
+/* 80060BD0 0005C870  4E 80 00 20 */	blr
 lbl_80060BD4:
 /* 80060BD4 0005C874  54 80 28 34 */	slwi r0, r4, 5
 /* 80060BD8 0005C878  7C 63 02 14 */	add r3, r3, r0
-/* 80060BDC 0005C87C  4E 80 00 20 */	blr 
+/* 80060BDC 0005C87C  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv"
 "__ct__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv":
@@ -23002,7 +23002,7 @@ lbl_80060BD4:
 /* 80060C14 0005C8B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80060C18 0005C8B8  7C 08 03 A6 */	mtlr r0
 /* 80060C1C 0005C8BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060C20 0005C8C0  4E 80 00 20 */	blr 
+/* 80060C20 0005C8C0  4E 80 00 20 */	blr
 
 .global "insert__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "insert__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>FRCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -23097,7 +23097,7 @@ lbl_80060D5C:
 /* 80060D68 0005CA08  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 80060D6C 0005CA0C  7C 08 03 A6 */	mtlr r0
 /* 80060D70 0005CA10  38 21 00 50 */	addi r1, r1, 0x50
-/* 80060D74 0005CA14  4E 80 00 20 */	blr 
+/* 80060D74 0005CA14  4E 80 00 20 */	blr
 
 .global "end__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv"
 "end__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>Fv":
@@ -23153,7 +23153,7 @@ lbl_80060E04:
 /* 80060E18 0005CAB8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80060E1C 0005CABC  7C 08 03 A6 */	mtlr r0
 /* 80060E20 0005CAC0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80060E24 0005CAC4  4E 80 00 20 */	blr 
+/* 80060E24 0005CAC4  4E 80 00 20 */	blr
 
 .global "_M_insert__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "_M_insert__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>FPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -23193,7 +23193,7 @@ lbl_80060E04:
 /* 80060EAC 0005CB4C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80060EB0 0005CB50  7C 08 03 A6 */	mtlr r0
 /* 80060EB4 0005CB54  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060EB8 0005CB58  4E 80 00 20 */	blr 
+/* 80060EB8 0005CB58  4E 80 00 20 */	blr
 
 .global "size__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>CFv"
 "size__Q26simstd204compact_map<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>,Q25eastl69less<Q316InteractorModule22InteractorInputManager17InteractorCommand>,Q25eastl9allocator>CFv":
@@ -23225,7 +23225,7 @@ lbl_80060E04:
 /* 80060EFC 0005CB9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80060F00 0005CBA0  7C 08 03 A6 */	mtlr r0
 /* 80060F04 0005CBA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060F08 0005CBA8  4E 80 00 20 */	blr 
+/* 80060F08 0005CBA8  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "__ct__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -23245,7 +23245,7 @@ lbl_80060E04:
 /* 80060F40 0005CBE0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80060F44 0005CBE4  7C 08 03 A6 */	mtlr r0
 /* 80060F48 0005CBE8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060F4C 0005CBEC  4E 80 00 20 */	blr 
+/* 80060F4C 0005CBEC  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "__ct__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -23265,7 +23265,7 @@ lbl_80060E04:
 /* 80060F84 0005CC24  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80060F88 0005CC28  7C 08 03 A6 */	mtlr r0
 /* 80060F8C 0005CC2C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80060F90 0005CC30  4E 80 00 20 */	blr 
+/* 80060F90 0005CC30  4E 80 00 20 */	blr
 
 .global "insert__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl18pair<Ui,P7ERModel>"
 "insert__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl18pair<Ui,P7ERModel>":
@@ -23359,7 +23359,7 @@ lbl_800610C8:
 /* 800610D4 0005CD74  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 800610D8 0005CD78  7C 08 03 A6 */	mtlr r0
 /* 800610DC 0005CD7C  38 21 00 50 */	addi r1, r1, 0x50
-/* 800610E0 0005CD80  4E 80 00 20 */	blr 
+/* 800610E0 0005CD80  4E 80 00 20 */	blr
 
 .global "_M_lower_bound__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl18pair<Ui,P7ERModel>"
 "_M_lower_bound__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl18pair<Ui,P7ERModel>":
@@ -23411,7 +23411,7 @@ lbl_8006116C:
 /* 80061180 0005CE20  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80061184 0005CE24  7C 08 03 A6 */	mtlr r0
 /* 80061188 0005CE28  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006118C 0005CE2C  4E 80 00 20 */	blr 
+/* 8006118C 0005CE2C  4E 80 00 20 */	blr
 
 .global "_M_insert__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>"
 "_M_insert__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FPQ25eastl18pair<Ui,P7ERModel>RCQ25eastl18pair<Ui,P7ERModel>":
@@ -23447,7 +23447,7 @@ lbl_8006116C:
 /* 80061204 0005CEA4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80061208 0005CEA8  7C 08 03 A6 */	mtlr r0
 /* 8006120C 0005CEAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80061210 0005CEB0  4E 80 00 20 */	blr 
+/* 80061210 0005CEB0  4E 80 00 20 */	blr
 
 .global "end__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "end__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -23517,7 +23517,7 @@ lbl_800612DC:
 /* 800612E8 0005CF88  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800612EC 0005CF8C  7C 08 03 A6 */	mtlr r0
 /* 800612F0 0005CF90  38 21 00 30 */	addi r1, r1, 0x30
-/* 800612F4 0005CF94  4E 80 00 20 */	blr 
+/* 800612F4 0005CF94  4E 80 00 20 */	blr
 
 .global "insert__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl19pair<Ui,P8ERShader>"
 "insert__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl19pair<Ui,P8ERShader>":
@@ -23611,7 +23611,7 @@ lbl_8006142C:
 /* 80061438 0005D0D8  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 8006143C 0005D0DC  7C 08 03 A6 */	mtlr r0
 /* 80061440 0005D0E0  38 21 00 50 */	addi r1, r1, 0x50
-/* 80061444 0005D0E4  4E 80 00 20 */	blr 
+/* 80061444 0005D0E4  4E 80 00 20 */	blr
 
 .global "_M_lower_bound__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl19pair<Ui,P8ERShader>"
 "_M_lower_bound__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ25eastl19pair<Ui,P8ERShader>":
@@ -23663,7 +23663,7 @@ lbl_800614D0:
 /* 800614E4 0005D184  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800614E8 0005D188  7C 08 03 A6 */	mtlr r0
 /* 800614EC 0005D18C  38 21 00 30 */	addi r1, r1, 0x30
-/* 800614F0 0005D190  4E 80 00 20 */	blr 
+/* 800614F0 0005D190  4E 80 00 20 */	blr
 
 .global "_M_insert__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>"
 "_M_insert__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FPQ25eastl19pair<Ui,P8ERShader>RCQ25eastl19pair<Ui,P8ERShader>":
@@ -23699,7 +23699,7 @@ lbl_800614D0:
 /* 80061568 0005D208  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006156C 0005D20C  7C 08 03 A6 */	mtlr r0
 /* 80061570 0005D210  38 21 00 20 */	addi r1, r1, 0x20
-/* 80061574 0005D214  4E 80 00 20 */	blr 
+/* 80061574 0005D214  4E 80 00 20 */	blr
 
 .global "end__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "end__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -23769,7 +23769,7 @@ lbl_80061640:
 /* 8006164C 0005D2EC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80061650 0005D2F0  7C 08 03 A6 */	mtlr r0
 /* 80061654 0005D2F4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80061658 0005D2F8  4E 80 00 20 */	blr 
+/* 80061658 0005D2F8  4E 80 00 20 */	blr
 
 .global "erase__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCUi"
 "erase__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCUi":
@@ -23798,7 +23798,7 @@ lbl_800616A4:
 /* 800616AC 0005D34C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800616B0 0005D350  7C 08 03 A6 */	mtlr r0
 /* 800616B4 0005D354  38 21 00 10 */	addi r1, r1, 0x10
-/* 800616B8 0005D358  4E 80 00 20 */	blr 
+/* 800616B8 0005D358  4E 80 00 20 */	blr
 
 .global "clear__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>Fv"
 "clear__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>Fv":
@@ -23830,7 +23830,7 @@ lbl_800616A4:
 /* 800616FC 0005D39C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80061700 0005D3A0  7C 08 03 A6 */	mtlr r0
 /* 80061704 0005D3A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80061708 0005D3A8  4E 80 00 20 */	blr 
+/* 80061708 0005D3A8  4E 80 00 20 */	blr
 
 .global "insert__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "insert__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -23925,7 +23925,7 @@ lbl_80061844:
 /* 80061850 0005D4F0  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 80061854 0005D4F4  7C 08 03 A6 */	mtlr r0
 /* 80061858 0005D4F8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006185C 0005D4FC  4E 80 00 20 */	blr 
+/* 8006185C 0005D4FC  4E 80 00 20 */	blr
 
 .global "__as__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__as__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -23949,7 +23949,7 @@ lbl_80061894:
 /* 800618A0 0005D540  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800618A4 0005D544  7C 08 03 A6 */	mtlr r0
 /* 800618A8 0005D548  38 21 00 10 */	addi r1, r1, 0x10
-/* 800618AC 0005D54C  4E 80 00 20 */	blr 
+/* 800618AC 0005D54C  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl8less<Ui>FRCQ25eastl8less<Ui>"
 "__as__Q25eastl8less<Ui>FRCQ25eastl8less<Ui>":
@@ -23964,11 +23964,11 @@ lbl_80061894:
 /* 800618D0 0005D570  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800618D4 0005D574  7C 08 03 A6 */	mtlr r0
 /* 800618D8 0005D578  38 21 00 10 */	addi r1, r1, 0x10
-/* 800618DC 0005D57C  4E 80 00 20 */	blr 
+/* 800618DC 0005D57C  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl24binary_function<Ui,Ui,b>FRCQ25eastl24binary_function<Ui,Ui,b>"
 "__as__Q25eastl24binary_function<Ui,Ui,b>FRCQ25eastl24binary_function<Ui,Ui,b>":
-/* 800618E0 0005D580  4E 80 00 20 */	blr 
+/* 800618E0 0005D580  4E 80 00 20 */	blr
 
 .global "__as__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__as__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -23992,7 +23992,7 @@ lbl_80061918:
 /* 80061924 0005D5C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061928 0005D5C8  7C 08 03 A6 */	mtlr r0
 /* 8006192C 0005D5CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061930 0005D5D0  4E 80 00 20 */	blr 
+/* 80061930 0005D5D0  4E 80 00 20 */	blr
 
 .global "__as__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__as__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -24016,7 +24016,7 @@ lbl_80061968:
 /* 80061974 0005D614  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061978 0005D618  7C 08 03 A6 */	mtlr r0
 /* 8006197C 0005D61C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061980 0005D620  4E 80 00 20 */	blr 
+/* 80061980 0005D620  4E 80 00 20 */	blr
 
 .global "_M_lower_bound__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "_M_lower_bound__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FRCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -24068,7 +24068,7 @@ lbl_80061A0C:
 /* 80061A20 0005D6C0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80061A24 0005D6C4  7C 08 03 A6 */	mtlr r0
 /* 80061A28 0005D6C8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80061A2C 0005D6CC  4E 80 00 20 */	blr 
+/* 80061A2C 0005D6CC  4E 80 00 20 */	blr
 
 .global "_M_insert__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "_M_insert__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -24104,7 +24104,7 @@ lbl_80061A0C:
 /* 80061AA4 0005D744  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80061AA8 0005D748  7C 08 03 A6 */	mtlr r0
 /* 80061AAC 0005D74C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80061AB0 0005D750  4E 80 00 20 */	blr 
+/* 80061AB0 0005D750  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__ct__Q26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd64compact_map<Ui,P9ERTexture,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -24119,7 +24119,7 @@ lbl_80061A0C:
 /* 80061AD4 0005D774  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061AD8 0005D778  7C 08 03 A6 */	mtlr r0
 /* 80061ADC 0005D77C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061AE0 0005D780  4E 80 00 20 */	blr 
+/* 80061AE0 0005D780  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__ct__Q26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd63compact_map<Ui,P8ERShader,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -24134,7 +24134,7 @@ lbl_80061A0C:
 /* 80061B04 0005D7A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061B08 0005D7A8  7C 08 03 A6 */	mtlr r0
 /* 80061B0C 0005D7AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061B10 0005D7B0  4E 80 00 20 */	blr 
+/* 80061B10 0005D7B0  4E 80 00 20 */	blr
 
 .global "__ct__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>"
 "__ct__Q26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>FRCQ26simstd62compact_map<Ui,P7ERModel,Q25eastl8less<Ui>,Q25eastl9allocator>":
@@ -24149,7 +24149,7 @@ lbl_80061A0C:
 /* 80061B34 0005D7D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061B38 0005D7D8  7C 08 03 A6 */	mtlr r0
 /* 80061B3C 0005D7DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061B40 0005D7E0  4E 80 00 20 */	blr 
+/* 80061B40 0005D7E0  4E 80 00 20 */	blr
 
 .global "end__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>Fv"
 "end__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>Fv":
@@ -24219,7 +24219,7 @@ lbl_80061C0C:
 /* 80061C18 0005D8B8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80061C1C 0005D8BC  7C 08 03 A6 */	mtlr r0
 /* 80061C20 0005D8C0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80061C24 0005D8C4  4E 80 00 20 */	blr 
+/* 80061C24 0005D8C4  4E 80 00 20 */	blr
 
 .global "erase__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "erase__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>FPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -24234,7 +24234,7 @@ lbl_80061C0C:
 /* 80061C3C 0005D8DC  7C 00 20 38 */	and r0, r0, r4
 /* 80061C40 0005D8E0  7C 00 18 50 */	subf r0, r0, r3
 /* 80061C44 0005D8E4  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80061C48 0005D8E8  4E 80 00 20 */	blr 
+/* 80061C48 0005D8E8  4E 80 00 20 */	blr
 
 .global "__cl__Q25eastl8less<Ui>CFRCUiRCUi"
 "__cl__Q25eastl8less<Ui>CFRCUiRCUi":
@@ -24244,7 +24244,7 @@ lbl_80061C0C:
 /* 80061C58 0005D8F8  7C 00 00 34 */	cntlzw r0, r0
 /* 80061C5C 0005D8FC  7C 60 00 30 */	slw r0, r3, r0
 /* 80061C60 0005D900  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80061C64 0005D904  4E 80 00 20 */	blr 
+/* 80061C64 0005D904  4E 80 00 20 */	blr
 
 .global "__cl__Q25eastl39less<PQ216InteractorModule10Interactor>CFRCPQ216InteractorModule10InteractorRCPQ216InteractorModule10Interactor"
 "__cl__Q25eastl39less<PQ216InteractorModule10Interactor>CFRCPQ216InteractorModule10InteractorRCPQ216InteractorModule10Interactor":
@@ -24254,7 +24254,7 @@ lbl_80061C0C:
 /* 80061C74 0005D914  7C 00 00 34 */	cntlzw r0, r0
 /* 80061C78 0005D918  7C 60 00 30 */	slw r0, r3, r0
 /* 80061C7C 0005D91C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80061C80 0005D920  4E 80 00 20 */	blr 
+/* 80061C80 0005D920  4E 80 00 20 */	blr
 
 .global "advance<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,l>__5eastlFRPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>l_v"
 "advance<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,l>__5eastlFRPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>l_v":
@@ -24268,7 +24268,7 @@ lbl_80061C0C:
 /* 80061CA0 0005D940  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061CA4 0005D944  7C 08 03 A6 */	mtlr r0
 /* 80061CA8 0005D948  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061CAC 0005D94C  4E 80 00 20 */	blr 
+/* 80061CAC 0005D94C  4E 80 00 20 */	blr
 
 .global "advance_impl<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,l>__5eastlFRPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,l>__5eastlFRPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>lQ25eastl26random_access_iterator_tag_v":
@@ -24276,7 +24276,7 @@ lbl_80061C0C:
 /* 80061CB4 0005D954  80 83 00 00 */	lwz r4, 0(r3)
 /* 80061CB8 0005D958  7C 04 02 14 */	add r0, r4, r0
 /* 80061CBC 0005D95C  90 03 00 00 */	stw r0, 0(r3)
-/* 80061CC0 0005D960  4E 80 00 20 */	blr 
+/* 80061CC0 0005D960  4E 80 00 20 */	blr
 
 .global "distance<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_l"
 "distance<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_l":
@@ -24290,7 +24290,7 @@ lbl_80061C0C:
 /* 80061CE0 0005D980  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061CE4 0005D984  7C 08 03 A6 */	mtlr r0
 /* 80061CE8 0005D988  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061CEC 0005D98C  4E 80 00 20 */	blr 
+/* 80061CEC 0005D98C  4E 80 00 20 */	blr
 
 .global "distance_impl<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>Q25eastl26random_access_iterator_tag_l":
@@ -24301,7 +24301,7 @@ lbl_80061C0C:
 /* 80061D00 0005D9A0  7C 00 0E 70 */	srawi r0, r0, 1
 /* 80061D04 0005D9A4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80061D08 0005D9A8  7C 60 1A 14 */	add r3, r0, r3
-/* 80061D0C 0005D9AC  4E 80 00 20 */	blr 
+/* 80061D0C 0005D9AC  4E 80 00 20 */	blr
 
 .global "advance<PQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPQ25eastl18pair<Ui,P7ERModel>l_v"
 "advance<PQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPQ25eastl18pair<Ui,P7ERModel>l_v":
@@ -24315,7 +24315,7 @@ lbl_80061C0C:
 /* 80061D2C 0005D9CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061D30 0005D9D0  7C 08 03 A6 */	mtlr r0
 /* 80061D34 0005D9D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061D38 0005D9D8  4E 80 00 20 */	blr 
+/* 80061D38 0005D9D8  4E 80 00 20 */	blr
 
 .global "advance_impl<PQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPQ25eastl18pair<Ui,P7ERModel>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPQ25eastl18pair<Ui,P7ERModel>lQ25eastl26random_access_iterator_tag_v":
@@ -24323,7 +24323,7 @@ lbl_80061C0C:
 /* 80061D40 0005D9E0  54 80 18 38 */	slwi r0, r4, 3
 /* 80061D44 0005D9E4  7C 05 02 14 */	add r0, r5, r0
 /* 80061D48 0005D9E8  90 03 00 00 */	stw r0, 0(r3)
-/* 80061D4C 0005D9EC  4E 80 00 20 */	blr 
+/* 80061D4C 0005D9EC  4E 80 00 20 */	blr
 
 .global "distance<PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_l"
 "distance<PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_l":
@@ -24337,14 +24337,14 @@ lbl_80061C0C:
 /* 80061D6C 0005DA0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061D70 0005DA10  7C 08 03 A6 */	mtlr r0
 /* 80061D74 0005DA14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061D78 0005DA18  4E 80 00 20 */	blr 
+/* 80061D78 0005DA18  4E 80 00 20 */	blr
 
 .global "distance_impl<PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>Q25eastl26random_access_iterator_tag_l":
 /* 80061D7C 0005DA1C  7C 03 20 50 */	subf r0, r3, r4
 /* 80061D80 0005DA20  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80061D84 0005DA24  7C 60 01 94 */	addze r3, r0
-/* 80061D88 0005DA28  4E 80 00 20 */	blr 
+/* 80061D88 0005DA28  4E 80 00 20 */	blr
 
 .global "advance<PCQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPCQ25eastl18pair<Ui,P7ERModel>l_v"
 "advance<PCQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPCQ25eastl18pair<Ui,P7ERModel>l_v":
@@ -24358,7 +24358,7 @@ lbl_80061C0C:
 /* 80061DA8 0005DA48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061DAC 0005DA4C  7C 08 03 A6 */	mtlr r0
 /* 80061DB0 0005DA50  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061DB4 0005DA54  4E 80 00 20 */	blr 
+/* 80061DB4 0005DA54  4E 80 00 20 */	blr
 
 .global "advance_impl<PCQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPCQ25eastl18pair<Ui,P7ERModel>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PCQ25eastl18pair<Ui,P7ERModel>,l>__5eastlFRPCQ25eastl18pair<Ui,P7ERModel>lQ25eastl26random_access_iterator_tag_v":
@@ -24366,7 +24366,7 @@ lbl_80061C0C:
 /* 80061DBC 0005DA5C  54 80 18 38 */	slwi r0, r4, 3
 /* 80061DC0 0005DA60  7C 05 02 14 */	add r0, r5, r0
 /* 80061DC4 0005DA64  90 03 00 00 */	stw r0, 0(r3)
-/* 80061DC8 0005DA68  4E 80 00 20 */	blr 
+/* 80061DC8 0005DA68  4E 80 00 20 */	blr
 
 .global "distance<PCQ25eastl18pair<Ui,P7ERModel>>__5eastlFPCQ25eastl18pair<Ui,P7ERModel>PCQ25eastl18pair<Ui,P7ERModel>_l"
 "distance<PCQ25eastl18pair<Ui,P7ERModel>>__5eastlFPCQ25eastl18pair<Ui,P7ERModel>PCQ25eastl18pair<Ui,P7ERModel>_l":
@@ -24380,14 +24380,14 @@ lbl_80061C0C:
 /* 80061DE8 0005DA88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061DEC 0005DA8C  7C 08 03 A6 */	mtlr r0
 /* 80061DF0 0005DA90  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061DF4 0005DA94  4E 80 00 20 */	blr 
+/* 80061DF4 0005DA94  4E 80 00 20 */	blr
 
 .global "distance_impl<PCQ25eastl18pair<Ui,P7ERModel>>__5eastlFPCQ25eastl18pair<Ui,P7ERModel>PCQ25eastl18pair<Ui,P7ERModel>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PCQ25eastl18pair<Ui,P7ERModel>>__5eastlFPCQ25eastl18pair<Ui,P7ERModel>PCQ25eastl18pair<Ui,P7ERModel>Q25eastl26random_access_iterator_tag_l":
 /* 80061DF8 0005DA98  7C 03 20 50 */	subf r0, r3, r4
 /* 80061DFC 0005DA9C  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80061E00 0005DAA0  7C 60 01 94 */	addze r3, r0
-/* 80061E04 0005DAA4  4E 80 00 20 */	blr 
+/* 80061E04 0005DAA4  4E 80 00 20 */	blr
 
 .global "advance<PQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPQ25eastl19pair<Ui,P8ERShader>l_v"
 "advance<PQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPQ25eastl19pair<Ui,P8ERShader>l_v":
@@ -24401,7 +24401,7 @@ lbl_80061C0C:
 /* 80061E24 0005DAC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061E28 0005DAC8  7C 08 03 A6 */	mtlr r0
 /* 80061E2C 0005DACC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061E30 0005DAD0  4E 80 00 20 */	blr 
+/* 80061E30 0005DAD0  4E 80 00 20 */	blr
 
 .global "advance_impl<PQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPQ25eastl19pair<Ui,P8ERShader>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPQ25eastl19pair<Ui,P8ERShader>lQ25eastl26random_access_iterator_tag_v":
@@ -24409,7 +24409,7 @@ lbl_80061C0C:
 /* 80061E38 0005DAD8  54 80 18 38 */	slwi r0, r4, 3
 /* 80061E3C 0005DADC  7C 05 02 14 */	add r0, r5, r0
 /* 80061E40 0005DAE0  90 03 00 00 */	stw r0, 0(r3)
-/* 80061E44 0005DAE4  4E 80 00 20 */	blr 
+/* 80061E44 0005DAE4  4E 80 00 20 */	blr
 
 .global "distance<PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_l"
 "distance<PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_l":
@@ -24423,14 +24423,14 @@ lbl_80061C0C:
 /* 80061E64 0005DB04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061E68 0005DB08  7C 08 03 A6 */	mtlr r0
 /* 80061E6C 0005DB0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061E70 0005DB10  4E 80 00 20 */	blr 
+/* 80061E70 0005DB10  4E 80 00 20 */	blr
 
 .global "distance_impl<PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>Q25eastl26random_access_iterator_tag_l":
 /* 80061E74 0005DB14  7C 03 20 50 */	subf r0, r3, r4
 /* 80061E78 0005DB18  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80061E7C 0005DB1C  7C 60 01 94 */	addze r3, r0
-/* 80061E80 0005DB20  4E 80 00 20 */	blr 
+/* 80061E80 0005DB20  4E 80 00 20 */	blr
 
 .global "advance<PCQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPCQ25eastl19pair<Ui,P8ERShader>l_v"
 "advance<PCQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPCQ25eastl19pair<Ui,P8ERShader>l_v":
@@ -24444,7 +24444,7 @@ lbl_80061C0C:
 /* 80061EA0 0005DB40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061EA4 0005DB44  7C 08 03 A6 */	mtlr r0
 /* 80061EA8 0005DB48  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061EAC 0005DB4C  4E 80 00 20 */	blr 
+/* 80061EAC 0005DB4C  4E 80 00 20 */	blr
 
 .global "advance_impl<PCQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPCQ25eastl19pair<Ui,P8ERShader>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PCQ25eastl19pair<Ui,P8ERShader>,l>__5eastlFRPCQ25eastl19pair<Ui,P8ERShader>lQ25eastl26random_access_iterator_tag_v":
@@ -24452,7 +24452,7 @@ lbl_80061C0C:
 /* 80061EB4 0005DB54  54 80 18 38 */	slwi r0, r4, 3
 /* 80061EB8 0005DB58  7C 05 02 14 */	add r0, r5, r0
 /* 80061EBC 0005DB5C  90 03 00 00 */	stw r0, 0(r3)
-/* 80061EC0 0005DB60  4E 80 00 20 */	blr 
+/* 80061EC0 0005DB60  4E 80 00 20 */	blr
 
 .global "distance<PCQ25eastl19pair<Ui,P8ERShader>>__5eastlFPCQ25eastl19pair<Ui,P8ERShader>PCQ25eastl19pair<Ui,P8ERShader>_l"
 "distance<PCQ25eastl19pair<Ui,P8ERShader>>__5eastlFPCQ25eastl19pair<Ui,P8ERShader>PCQ25eastl19pair<Ui,P8ERShader>_l":
@@ -24466,14 +24466,14 @@ lbl_80061C0C:
 /* 80061EE0 0005DB80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061EE4 0005DB84  7C 08 03 A6 */	mtlr r0
 /* 80061EE8 0005DB88  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061EEC 0005DB8C  4E 80 00 20 */	blr 
+/* 80061EEC 0005DB8C  4E 80 00 20 */	blr
 
 .global "distance_impl<PCQ25eastl19pair<Ui,P8ERShader>>__5eastlFPCQ25eastl19pair<Ui,P8ERShader>PCQ25eastl19pair<Ui,P8ERShader>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PCQ25eastl19pair<Ui,P8ERShader>>__5eastlFPCQ25eastl19pair<Ui,P8ERShader>PCQ25eastl19pair<Ui,P8ERShader>Q25eastl26random_access_iterator_tag_l":
 /* 80061EF0 0005DB90  7C 03 20 50 */	subf r0, r3, r4
 /* 80061EF4 0005DB94  7C 00 1E 70 */	srawi r0, r0, 3
 /* 80061EF8 0005DB98  7C 60 01 94 */	addze r3, r0
-/* 80061EFC 0005DB9C  4E 80 00 20 */	blr 
+/* 80061EFC 0005DB9C  4E 80 00 20 */	blr
 
 .global "advance<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>l_v"
 "advance<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>l_v":
@@ -24487,7 +24487,7 @@ lbl_80061C0C:
 /* 80061F1C 0005DBBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061F20 0005DBC0  7C 08 03 A6 */	mtlr r0
 /* 80061F24 0005DBC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061F28 0005DBC8  4E 80 00 20 */	blr 
+/* 80061F28 0005DBC8  4E 80 00 20 */	blr
 
 .global "advance_impl<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>lQ25eastl26random_access_iterator_tag_v":
@@ -24495,7 +24495,7 @@ lbl_80061C0C:
 /* 80061F30 0005DBD0  54 80 38 30 */	slwi r0, r4, 7
 /* 80061F34 0005DBD4  7C 05 02 14 */	add r0, r5, r0
 /* 80061F38 0005DBD8  90 03 00 00 */	stw r0, 0(r3)
-/* 80061F3C 0005DBDC  4E 80 00 20 */	blr 
+/* 80061F3C 0005DBDC  4E 80 00 20 */	blr
 
 .global "distance<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_l"
 "distance<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_l":
@@ -24509,14 +24509,14 @@ lbl_80061C0C:
 /* 80061F5C 0005DBFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061F60 0005DC00  7C 08 03 A6 */	mtlr r0
 /* 80061F64 0005DC04  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061F68 0005DC08  4E 80 00 20 */	blr 
+/* 80061F68 0005DC08  4E 80 00 20 */	blr
 
 .global "distance_impl<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Q25eastl26random_access_iterator_tag_l":
 /* 80061F6C 0005DC0C  7C 03 20 50 */	subf r0, r3, r4
 /* 80061F70 0005DC10  7C 00 3E 70 */	srawi r0, r0, 7
 /* 80061F74 0005DC14  7C 60 01 94 */	addze r3, r0
-/* 80061F78 0005DC18  4E 80 00 20 */	blr 
+/* 80061F78 0005DC18  4E 80 00 20 */	blr
 
 .global "advance<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>l_v"
 "advance<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>l_v":
@@ -24530,7 +24530,7 @@ lbl_80061C0C:
 /* 80061F98 0005DC38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061F9C 0005DC3C  7C 08 03 A6 */	mtlr r0
 /* 80061FA0 0005DC40  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061FA4 0005DC44  4E 80 00 20 */	blr 
+/* 80061FA4 0005DC44  4E 80 00 20 */	blr
 
 .global "advance_impl<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>lQ25eastl26random_access_iterator_tag_v"
 "advance_impl<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,l>__5eastlFRPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>lQ25eastl26random_access_iterator_tag_v":
@@ -24538,7 +24538,7 @@ lbl_80061C0C:
 /* 80061FAC 0005DC4C  54 80 38 30 */	slwi r0, r4, 7
 /* 80061FB0 0005DC50  7C 05 02 14 */	add r0, r5, r0
 /* 80061FB4 0005DC54  90 03 00 00 */	stw r0, 0(r3)
-/* 80061FB8 0005DC58  4E 80 00 20 */	blr 
+/* 80061FB8 0005DC58  4E 80 00 20 */	blr
 
 .global "distance<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_l"
 "distance<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_l":
@@ -24552,14 +24552,14 @@ lbl_80061C0C:
 /* 80061FD8 0005DC78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80061FDC 0005DC7C  7C 08 03 A6 */	mtlr r0
 /* 80061FE0 0005DC80  38 21 00 10 */	addi r1, r1, 0x10
-/* 80061FE4 0005DC84  4E 80 00 20 */	blr 
+/* 80061FE4 0005DC84  4E 80 00 20 */	blr
 
 .global "distance_impl<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Q25eastl26random_access_iterator_tag_l"
 "distance_impl<PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PCQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>Q25eastl26random_access_iterator_tag_l":
 /* 80061FE8 0005DC88  7C 03 20 50 */	subf r0, r3, r4
 /* 80061FEC 0005DC8C  7C 00 3E 70 */	srawi r0, r0, 7
 /* 80061FF0 0005DC90  7C 60 01 94 */	addze r3, r0
-/* 80061FF4 0005DC94  4E 80 00 20 */	blr 
+/* 80061FF4 0005DC94  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl117pair<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,b>FRCPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCb"
 "__ct__Q25eastl117pair<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,b>FRCPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>RCb":
@@ -24567,7 +24567,7 @@ lbl_80061C0C:
 /* 80061FFC 0005DC9C  88 05 00 00 */	lbz r0, 0(r5)
 /* 80062000 0005DCA0  90 83 00 00 */	stw r4, 0(r3)
 /* 80062004 0005DCA4  98 03 00 04 */	stb r0, 4(r3)
-/* 80062008 0005DCA8  4E 80 00 20 */	blr 
+/* 80062008 0005DCA8  4E 80 00 20 */	blr
 
 .global "make_pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>__5eastlFQ316InteractorModule22InteractorInputManager17InteractorCommandQ25eastl18pair<b,9ECTRL_CMD>_Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "make_pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>__5eastlFQ316InteractorModule22InteractorInputManager17InteractorCommandQ25eastl18pair<b,9ECTRL_CMD>_Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -24580,7 +24580,7 @@ lbl_80061C0C:
 /* 80062024 0005DCC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80062028 0005DCC8  7C 08 03 A6 */	mtlr r0
 /* 8006202C 0005DCCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062030 0005DCD0  4E 80 00 20 */	blr 
+/* 80062030 0005DCD0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ316InteractorModule22InteractorInputManager17InteractorCommandRCQ25eastl18pair<b,9ECTRL_CMD>"
 "__ct__Q25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>FRCQ316InteractorModule22InteractorInputManager17InteractorCommandRCQ25eastl18pair<b,9ECTRL_CMD>":
@@ -24599,7 +24599,7 @@ lbl_80061C0C:
 /* 80062064 0005DD04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80062068 0005DD08  7C 08 03 A6 */	mtlr r0
 /* 8006206C 0005DD0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062070 0005DD10  4E 80 00 20 */	blr 
+/* 80062070 0005DD10  4E 80 00 20 */	blr
 
 .global "make_pair<b,9ECTRL_CMD>__5eastlFb9ECTRL_CMD_Q25eastl18pair<b,9ECTRL_CMD>"
 "make_pair<b,9ECTRL_CMD>__5eastlFb9ECTRL_CMD_Q25eastl18pair<b,9ECTRL_CMD>":
@@ -24618,7 +24618,7 @@ lbl_80061C0C:
 /* 800620A4 0005DD44  80 84 00 04 */	lwz r4, 4(r4)
 /* 800620A8 0005DD48  7C 08 03 A6 */	mtlr r0
 /* 800620AC 0005DD4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800620B0 0005DD50  4E 80 00 20 */	blr 
+/* 800620B0 0005DD50  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl18pair<b,9ECTRL_CMD>FRCbRC9ECTRL_CMD"
 "__ct__Q25eastl18pair<b,9ECTRL_CMD>FRCbRC9ECTRL_CMD":
@@ -24626,7 +24626,7 @@ lbl_80061C0C:
 /* 800620B8 0005DD58  80 05 00 00 */	lwz r0, 0(r5)
 /* 800620BC 0005DD5C  98 83 00 00 */	stb r4, 0(r3)
 /* 800620C0 0005DD60  90 03 00 04 */	stw r0, 4(r3)
-/* 800620C4 0005DD64  4E 80 00 20 */	blr 
+/* 800620C4 0005DD64  4E 80 00 20 */	blr
 
 .global "make_pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>__5eastlFQ216InteractorModule14InteractorTypePCQ316InteractorModule10Interactor16InteractorParams_Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "make_pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>__5eastlFQ216InteractorModule14InteractorTypePCQ316InteractorModule10Interactor16InteractorParams_Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -24645,7 +24645,7 @@ lbl_80061C0C:
 /* 800620F8 0005DD98  80 84 00 04 */	lwz r4, 4(r4)
 /* 800620FC 0005DD9C  7C 08 03 A6 */	mtlr r0
 /* 80062100 0005DDA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062104 0005DDA4  4E 80 00 20 */	blr 
+/* 80062104 0005DDA4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ216InteractorModule14InteractorTypeRCPCQ316InteractorModule10Interactor16InteractorParams"
 "__ct__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ216InteractorModule14InteractorTypeRCPCQ316InteractorModule10Interactor16InteractorParams":
@@ -24653,7 +24653,7 @@ lbl_80061C0C:
 /* 8006210C 0005DDAC  80 05 00 00 */	lwz r0, 0(r5)
 /* 80062110 0005DDB0  90 83 00 00 */	stw r4, 0(r3)
 /* 80062114 0005DDB4  90 03 00 04 */	stw r0, 4(r3)
-/* 80062118 0005DDB8  4E 80 00 20 */	blr 
+/* 80062118 0005DDB8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>FRCPQ25eastl18pair<Ui,P7ERModel>RCb"
 "__ct__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>FRCPQ25eastl18pair<Ui,P7ERModel>RCb":
@@ -24661,7 +24661,7 @@ lbl_80061C0C:
 /* 80062120 0005DDC0  88 05 00 00 */	lbz r0, 0(r5)
 /* 80062124 0005DDC4  90 83 00 00 */	stw r4, 0(r3)
 /* 80062128 0005DDC8  98 03 00 04 */	stb r0, 4(r3)
-/* 8006212C 0005DDCC  4E 80 00 20 */	blr 
+/* 8006212C 0005DDCC  4E 80 00 20 */	blr
 
 .global "make_pair<Ui,P7ERModel>__5eastlFUiP7ERModel_Q25eastl18pair<Ui,P7ERModel>"
 "make_pair<Ui,P7ERModel>__5eastlFUiP7ERModel_Q25eastl18pair<Ui,P7ERModel>":
@@ -24680,7 +24680,7 @@ lbl_80061C0C:
 /* 80062160 0005DE00  80 84 00 04 */	lwz r4, 4(r4)
 /* 80062164 0005DE04  7C 08 03 A6 */	mtlr r0
 /* 80062168 0005DE08  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006216C 0005DE0C  4E 80 00 20 */	blr 
+/* 8006216C 0005DE0C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl18pair<Ui,P7ERModel>FRCUiRCP7ERModel"
 "__ct__Q25eastl18pair<Ui,P7ERModel>FRCUiRCP7ERModel":
@@ -24688,14 +24688,14 @@ lbl_80061C0C:
 /* 80062174 0005DE14  80 05 00 00 */	lwz r0, 0(r5)
 /* 80062178 0005DE18  90 83 00 00 */	stw r4, 0(r3)
 /* 8006217C 0005DE1C  90 03 00 04 */	stw r0, 4(r3)
-/* 80062180 0005DE20  4E 80 00 20 */	blr 
+/* 80062180 0005DE20  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>Fv"
 "__ct__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>Fv":
 /* 80062184 0005DE24  38 00 00 00 */	li r0, 0
 /* 80062188 0005DE28  90 03 00 00 */	stw r0, 0(r3)
 /* 8006218C 0005DE2C  98 03 00 04 */	stb r0, 4(r3)
-/* 80062190 0005DE30  4E 80 00 20 */	blr 
+/* 80062190 0005DE30  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>FRCPQ25eastl19pair<Ui,P8ERShader>RCb"
 "__ct__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>FRCPQ25eastl19pair<Ui,P8ERShader>RCb":
@@ -24703,7 +24703,7 @@ lbl_80061C0C:
 /* 80062198 0005DE38  88 05 00 00 */	lbz r0, 0(r5)
 /* 8006219C 0005DE3C  90 83 00 00 */	stw r4, 0(r3)
 /* 800621A0 0005DE40  98 03 00 04 */	stb r0, 4(r3)
-/* 800621A4 0005DE44  4E 80 00 20 */	blr 
+/* 800621A4 0005DE44  4E 80 00 20 */	blr
 
 .global "make_pair<Ui,P8ERShader>__5eastlFUiP8ERShader_Q25eastl19pair<Ui,P8ERShader>"
 "make_pair<Ui,P8ERShader>__5eastlFUiP8ERShader_Q25eastl19pair<Ui,P8ERShader>":
@@ -24722,7 +24722,7 @@ lbl_80061C0C:
 /* 800621D8 0005DE78  80 84 00 04 */	lwz r4, 4(r4)
 /* 800621DC 0005DE7C  7C 08 03 A6 */	mtlr r0
 /* 800621E0 0005DE80  38 21 00 20 */	addi r1, r1, 0x20
-/* 800621E4 0005DE84  4E 80 00 20 */	blr 
+/* 800621E4 0005DE84  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl19pair<Ui,P8ERShader>FRCUiRCP8ERShader"
 "__ct__Q25eastl19pair<Ui,P8ERShader>FRCUiRCP8ERShader":
@@ -24730,14 +24730,14 @@ lbl_80061C0C:
 /* 800621EC 0005DE8C  80 05 00 00 */	lwz r0, 0(r5)
 /* 800621F0 0005DE90  90 83 00 00 */	stw r4, 0(r3)
 /* 800621F4 0005DE94  90 03 00 04 */	stw r0, 4(r3)
-/* 800621F8 0005DE98  4E 80 00 20 */	blr 
+/* 800621F8 0005DE98  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>Fv"
 "__ct__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>Fv":
 /* 800621FC 0005DE9C  38 00 00 00 */	li r0, 0
 /* 80062200 0005DEA0  90 03 00 00 */	stw r0, 0(r3)
 /* 80062204 0005DEA4  98 03 00 04 */	stb r0, 4(r3)
-/* 80062208 0005DEA8  4E 80 00 20 */	blr 
+/* 80062208 0005DEA8  4E 80 00 20 */	blr
 
 .global "__ct<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>_Pv"
 "__ct<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>_Pv":
@@ -24745,7 +24745,7 @@ lbl_80061C0C:
 /* 80062210 0005DEB0  80 04 00 04 */	lwz r0, 4(r4)
 /* 80062214 0005DEB4  90 A3 00 00 */	stw r5, 0(r3)
 /* 80062218 0005DEB8  90 03 00 04 */	stw r0, 4(r3)
-/* 8006221C 0005DEBC  4E 80 00 20 */	blr 
+/* 8006221C 0005DEBC  4E 80 00 20 */	blr
 
 .global "make_pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>__5eastlFQ216InteractorModule14InteractorTypePQ316InteractorModule10Interactor16InteractorParams_Q25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>"
 "make_pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>__5eastlFQ216InteractorModule14InteractorTypePQ316InteractorModule10Interactor16InteractorParams_Q25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>":
@@ -24764,7 +24764,7 @@ lbl_80061C0C:
 /* 80062250 0005DEF0  80 84 00 04 */	lwz r4, 4(r4)
 /* 80062254 0005DEF4  7C 08 03 A6 */	mtlr r0
 /* 80062258 0005DEF8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006225C 0005DEFC  4E 80 00 20 */	blr 
+/* 8006225C 0005DEFC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>FRCQ216InteractorModule14InteractorTypeRCPQ316InteractorModule10Interactor16InteractorParams"
 "__ct__Q25eastl94pair<Q216InteractorModule14InteractorType,PQ316InteractorModule10Interactor16InteractorParams>FRCQ216InteractorModule14InteractorTypeRCPQ316InteractorModule10Interactor16InteractorParams":
@@ -24772,7 +24772,7 @@ lbl_80061C0C:
 /* 80062264 0005DF04  80 05 00 00 */	lwz r0, 0(r5)
 /* 80062268 0005DF08  90 83 00 00 */	stw r4, 0(r3)
 /* 8006226C 0005DF0C  90 03 00 04 */	stw r0, 4(r3)
-/* 80062270 0005DF10  4E 80 00 20 */	blr 
+/* 80062270 0005DF10  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>FRCPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCb"
 "__ct__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>FRCPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>RCb":
@@ -24780,7 +24780,7 @@ lbl_80061C0C:
 /* 80062278 0005DF18  88 05 00 00 */	lbz r0, 0(r5)
 /* 8006227C 0005DF1C  90 83 00 00 */	stw r4, 0(r3)
 /* 80062280 0005DF20  98 03 00 04 */	stb r0, 4(r3)
-/* 80062284 0005DF24  4E 80 00 20 */	blr 
+/* 80062284 0005DF24  4E 80 00 20 */	blr
 
 .global "make_pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>__5eastlFPQ216InteractorModule10InteractorQ216InteractorModule21InteractorResourceSet_Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "make_pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>__5eastlFPQ216InteractorModule10InteractorQ216InteractorModule21InteractorResourceSet_Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -24793,7 +24793,7 @@ lbl_80061C0C:
 /* 800622A0 0005DF40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800622A4 0005DF44  7C 08 03 A6 */	mtlr r0
 /* 800622A8 0005DF48  38 21 00 10 */	addi r1, r1, 0x10
-/* 800622AC 0005DF4C  4E 80 00 20 */	blr 
+/* 800622AC 0005DF4C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCPQ216InteractorModule10InteractorRCQ216InteractorModule21InteractorResourceSet"
 "__ct__Q25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>FRCPQ216InteractorModule10InteractorRCQ216InteractorModule21InteractorResourceSet":
@@ -24812,7 +24812,7 @@ lbl_80061C0C:
 /* 800622E0 0005DF80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800622E4 0005DF84  7C 08 03 A6 */	mtlr r0
 /* 800622E8 0005DF88  38 21 00 10 */	addi r1, r1, 0x10
-/* 800622EC 0005DF8C  4E 80 00 20 */	blr 
+/* 800622EC 0005DF8C  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule21InteractorResourceSetFRCQ216InteractorModule21InteractorResourceSet"
 "__ct__Q216InteractorModule21InteractorResourceSetFRCQ216InteractorModule21InteractorResourceSet":
@@ -24848,20 +24848,20 @@ lbl_80061C0C:
 /* 80062364 0005E004  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80062368 0005E008  7C 08 03 A6 */	mtlr r0
 /* 8006236C 0005E00C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062370 0005E010  4E 80 00 20 */	blr 
+/* 80062370 0005E010  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>Fv"
 "__ct__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>Fv":
 /* 80062374 0005E014  38 00 00 00 */	li r0, 0
 /* 80062378 0005E018  90 03 00 00 */	stw r0, 0(r3)
 /* 8006237C 0005E01C  98 03 00 04 */	stb r0, 4(r3)
-/* 80062380 0005E020  4E 80 00 20 */	blr 
+/* 80062380 0005E020  4E 80 00 20 */	blr
 
 .global "PackStickCommand__Q216InteractorModule22InteractorInputManagerFii"
 "PackStickCommand__Q216InteractorModule22InteractorInputManagerFii":
 /* 80062384 0005E024  54 60 80 1E */	slwi r0, r3, 0x10
 /* 80062388 0005E028  7C 03 23 78 */	or r3, r0, r4
-/* 8006238C 0005E02C  4E 80 00 20 */	blr 
+/* 8006238C 0005E02C  4E 80 00 20 */	blr
 
 .global "UnpackStickCommand__Q216InteractorModule22InteractorInputManagerF9ECTRL_CMDPiPi"
 "UnpackStickCommand__Q216InteractorModule22InteractorInputManagerF9ECTRL_CMDPiPi":
@@ -24869,7 +24869,7 @@ lbl_80061C0C:
 /* 80062394 0005E034  54 60 04 3E */	clrlwi r0, r3, 0x10
 /* 80062398 0005E038  90 C4 00 00 */	stw r6, 0(r4)
 /* 8006239C 0005E03C  90 05 00 00 */	stw r0, 0(r5)
-/* 800623A0 0005E040  4E 80 00 20 */	blr 
+/* 800623A0 0005E040  4E 80 00 20 */	blr
 
 .global "GetBtnDownAny__11EControllerFUiUi"
 "GetBtnDownAny__11EControllerFUiUi":
@@ -24892,7 +24892,7 @@ lbl_80061C0C:
 /* 800623E4 0005E084  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800623E8 0005E088  7C 08 03 A6 */	mtlr r0
 /* 800623EC 0005E08C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800623F0 0005E090  4E 80 00 20 */	blr 
+/* 800623F0 0005E090  4E 80 00 20 */	blr
 
 .global "GetCmdRepeat__11EControllerFUiUi"
 "GetCmdRepeat__11EControllerFUiUi":
@@ -24925,7 +24925,7 @@ lbl_80061C0C:
 /* 8006245C 0005E0FC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80062460 0005E100  7C 08 03 A6 */	mtlr r0
 /* 80062464 0005E104  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062468 0005E108  4E 80 00 20 */	blr 
+/* 80062468 0005E108  4E 80 00 20 */	blr
 
 .global "GetCmdReleased__11EControllerFUiUi"
 "GetCmdReleased__11EControllerFUiUi":
@@ -24958,7 +24958,7 @@ lbl_80061C0C:
 /* 800624D4 0005E174  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 800624D8 0005E178  7C 08 03 A6 */	mtlr r0
 /* 800624DC 0005E17C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800624E0 0005E180  4E 80 00 20 */	blr 
+/* 800624E0 0005E180  4E 80 00 20 */	blr
 
 .global "GetCmdPressed__11EControllerFUiUi"
 "GetCmdPressed__11EControllerFUiUi":
@@ -24991,7 +24991,7 @@ lbl_80061C0C:
 /* 8006254C 0005E1EC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80062550 0005E1F0  7C 08 03 A6 */	mtlr r0
 /* 80062554 0005E1F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062558 0005E1F8  4E 80 00 20 */	blr 
+/* 80062558 0005E1F8  4E 80 00 20 */	blr
 
 .global "GetCmdUp__11EControllerFUiUi"
 "GetCmdUp__11EControllerFUiUi":
@@ -25024,7 +25024,7 @@ lbl_80061C0C:
 /* 800625C4 0005E264  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 800625C8 0005E268  7C 08 03 A6 */	mtlr r0
 /* 800625CC 0005E26C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800625D0 0005E270  4E 80 00 20 */	blr 
+/* 800625D0 0005E270  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule17InteractorManagerFv"
 "__ct__Q216InteractorModule17InteractorManagerFv":
@@ -25072,7 +25072,7 @@ lbl_80061C0C:
 /* 80062678 0005E318  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8006267C 0005E31C  7C 08 03 A6 */	mtlr r0
 /* 80062680 0005E320  38 21 00 30 */	addi r1, r1, 0x30
-/* 80062684 0005E324  4E 80 00 20 */	blr 
+/* 80062684 0005E324  4E 80 00 20 */	blr
 
 .global "Initialize__Q216InteractorModule17InteractorManagerFRQ316InteractorModule17InteractorManager16InteractorParams"
 "Initialize__Q216InteractorModule17InteractorManagerFRQ316InteractorModule17InteractorManager16InteractorParams":
@@ -25169,7 +25169,7 @@ lbl_800627D8:
 /* 800627DC 0005E47C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 800627E0 0005E480  7C 08 03 A6 */	mtlr r0
 /* 800627E4 0005E484  38 21 00 20 */	addi r1, r1, 0x20
-/* 800627E8 0005E488  4E 80 00 20 */	blr 
+/* 800627E8 0005E488  4E 80 00 20 */	blr
 
 .global "Shutdown__Q216InteractorModule17InteractorManagerFv"
 "Shutdown__Q216InteractorModule17InteractorManagerFv":
@@ -25201,7 +25201,7 @@ lbl_80062844:
 /* 8006284C 0005E4EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80062850 0005E4F0  7C 08 03 A6 */	mtlr r0
 /* 80062854 0005E4F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062858 0005E4F8  4E 80 00 20 */	blr 
+/* 80062858 0005E4F8  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule17InteractorManagerFf"
 "Update__Q216InteractorModule17InteractorManagerFf":
@@ -25226,7 +25226,7 @@ lbl_80062898:
 /* 800628A0 0005E540  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 800628A4 0005E544  7C 08 03 A6 */	mtlr r0
 /* 800628A8 0005E548  38 21 00 20 */	addi r1, r1, 0x20
-/* 800628AC 0005E54C  4E 80 00 20 */	blr 
+/* 800628AC 0005E54C  4E 80 00 20 */	blr
 
 .global "ChangeActiveInteractorToNull__Q216InteractorModule17InteractorManagerFi"
 "ChangeActiveInteractorToNull__Q216InteractorModule17InteractorManagerFi":
@@ -25271,7 +25271,7 @@ lbl_80062934:
 /* 8006293C 0005E5DC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80062940 0005E5E0  7C 08 03 A6 */	mtlr r0
 /* 80062944 0005E5E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062948 0005E5E8  4E 80 00 20 */	blr 
+/* 80062948 0005E5E8  4E 80 00 20 */	blr
 
 .global "GetPlayerInteractorType__Q216InteractorModule17InteractorManagerFi"
 "GetPlayerInteractorType__Q216InteractorModule17InteractorManagerFi":
@@ -25298,7 +25298,7 @@ lbl_8006298C:
 /* 80062994 0005E634  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80062998 0005E638  7C 08 03 A6 */	mtlr r0
 /* 8006299C 0005E63C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800629A0 0005E640  4E 80 00 20 */	blr 
+/* 800629A0 0005E640  4E 80 00 20 */	blr
 
 .global "GetPlayerInteractor__Q216InteractorModule17InteractorManagerFiQ216InteractorModule14InteractorType"
 "GetPlayerInteractor__Q216InteractorModule17InteractorManagerFiQ216InteractorModule14InteractorType":
@@ -25334,7 +25334,7 @@ lbl_80062A00:
 /* 80062A0C 0005E6AC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80062A10 0005E6B0  7C 08 03 A6 */	mtlr r0
 /* 80062A14 0005E6B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062A18 0005E6B8  4E 80 00 20 */	blr 
+/* 80062A18 0005E6B8  4E 80 00 20 */	blr
 
 .global "GetPlayerInteractorInfo__Q216InteractorModule17InteractorManagerCFi"
 "GetPlayerInteractorInfo__Q216InteractorModule17InteractorManagerCFi":
@@ -25358,7 +25358,7 @@ lbl_80062A48:
 /* 80062A5C 0005E6FC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80062A60 0005E700  7C 08 03 A6 */	mtlr r0
 /* 80062A64 0005E704  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062A68 0005E708  4E 80 00 20 */	blr 
+/* 80062A68 0005E708  4E 80 00 20 */	blr
 
 .global "GetSingleton__Q216InteractorModule17InteractorManagerFv"
 "GetSingleton__Q216InteractorModule17InteractorManagerFv":
@@ -25380,22 +25380,22 @@ lbl_80062A9C:
 /* 80062AA0 0005E740  80 6D B3 4C */	lwz r3, "s_pInteractorManager__Q216InteractorModule17InteractorManager"-_SDA_BASE_(r13)
 /* 80062AA4 0005E744  7C 08 03 A6 */	mtlr r0
 /* 80062AA8 0005E748  38 21 00 10 */	addi r1, r1, 0x10
-/* 80062AAC 0005E74C  4E 80 00 20 */	blr 
+/* 80062AAC 0005E74C  4E 80 00 20 */	blr
 
 .global "GetInputManager__Q216InteractorModule17InteractorManagerFv"
 "GetInputManager__Q216InteractorModule17InteractorManagerFv":
 /* 80062AB0 0005E750  80 6D B3 50 */	lwz r3, "s_pInputManager__Q216InteractorModule17InteractorManager"-_SDA_BASE_(r13)
-/* 80062AB4 0005E754  4E 80 00 20 */	blr 
+/* 80062AB4 0005E754  4E 80 00 20 */	blr
 
 .global "GetVisualizer__Q216InteractorModule17InteractorManagerFv"
 "GetVisualizer__Q216InteractorModule17InteractorManagerFv":
 /* 80062AB8 0005E758  80 6D B3 54 */	lwz r3, "s_pVisualizer__Q216InteractorModule17InteractorManager"-_SDA_BASE_(r13)
-/* 80062ABC 0005E75C  4E 80 00 20 */	blr 
+/* 80062ABC 0005E75C  4E 80 00 20 */	blr
 
 .global "IsInitialized__Q216InteractorModule17InteractorManagerFv"
 "IsInitialized__Q216InteractorModule17InteractorManagerFv":
 /* 80062AC0 0005E760  88 63 00 00 */	lbz r3, 0(r3)
-/* 80062AC4 0005E764  4E 80 00 20 */	blr 
+/* 80062AC4 0005E764  4E 80 00 20 */	blr
 
 .global "CreatePlayerInteractorSets__Q216InteractorModule17InteractorManagerFv"
 "CreatePlayerInteractorSets__Q216InteractorModule17InteractorManagerFv":
@@ -25440,7 +25440,7 @@ lbl_80062B38:
 /* 80062B58 0005E7F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062B5C 0005E7FC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062B60 0005E800  7D 89 03 A6 */	mtctr r12
-/* 80062B64 0005E804  4E 80 04 21 */	bctrl 
+/* 80062B64 0005E804  4E 80 04 21 */	bctrl
 /* 80062B68 0005E808  38 60 02 0C */	li r3, 0x20c
 /* 80062B6C 0005E80C  48 1F 73 D1 */	bl "__nw__FUl"
 /* 80062B70 0005E810  2C 03 00 00 */	cmpwi r3, 0
@@ -25460,7 +25460,7 @@ lbl_80062B84:
 /* 80062BA4 0005E844  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062BA8 0005E848  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062BAC 0005E84C  7D 89 03 A6 */	mtctr r12
-/* 80062BB0 0005E850  4E 80 04 21 */	bctrl 
+/* 80062BB0 0005E850  4E 80 04 21 */	bctrl
 /* 80062BB4 0005E854  38 60 01 B4 */	li r3, 0x1b4
 /* 80062BB8 0005E858  48 1F 73 85 */	bl "__nw__FUl"
 /* 80062BBC 0005E85C  2C 03 00 00 */	cmpwi r3, 0
@@ -25480,7 +25480,7 @@ lbl_80062BD0:
 /* 80062BF0 0005E890  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062BF4 0005E894  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062BF8 0005E898  7D 89 03 A6 */	mtctr r12
-/* 80062BFC 0005E89C  4E 80 04 21 */	bctrl 
+/* 80062BFC 0005E89C  4E 80 04 21 */	bctrl
 /* 80062C00 0005E8A0  38 60 02 24 */	li r3, 0x224
 /* 80062C04 0005E8A4  48 1F 73 39 */	bl "__nw__FUl"
 /* 80062C08 0005E8A8  2C 03 00 00 */	cmpwi r3, 0
@@ -25500,7 +25500,7 @@ lbl_80062C1C:
 /* 80062C3C 0005E8DC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062C40 0005E8E0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062C44 0005E8E4  7D 89 03 A6 */	mtctr r12
-/* 80062C48 0005E8E8  4E 80 04 21 */	bctrl 
+/* 80062C48 0005E8E8  4E 80 04 21 */	bctrl
 /* 80062C4C 0005E8EC  38 60 02 20 */	li r3, 0x220
 /* 80062C50 0005E8F0  48 1F 72 ED */	bl "__nw__FUl"
 /* 80062C54 0005E8F4  2C 03 00 00 */	cmpwi r3, 0
@@ -25520,7 +25520,7 @@ lbl_80062C68:
 /* 80062C88 0005E928  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062C8C 0005E92C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062C90 0005E930  7D 89 03 A6 */	mtctr r12
-/* 80062C94 0005E934  4E 80 04 21 */	bctrl 
+/* 80062C94 0005E934  4E 80 04 21 */	bctrl
 /* 80062C98 0005E938  38 60 03 14 */	li r3, 0x314
 /* 80062C9C 0005E93C  48 1F 72 A1 */	bl "__nw__FUl"
 /* 80062CA0 0005E940  2C 03 00 00 */	cmpwi r3, 0
@@ -25540,7 +25540,7 @@ lbl_80062CB4:
 /* 80062CD4 0005E974  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062CD8 0005E978  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062CDC 0005E97C  7D 89 03 A6 */	mtctr r12
-/* 80062CE0 0005E980  4E 80 04 21 */	bctrl 
+/* 80062CE0 0005E980  4E 80 04 21 */	bctrl
 /* 80062CE4 0005E984  38 60 02 2C */	li r3, 0x22c
 /* 80062CE8 0005E988  48 1F 72 55 */	bl "__nw__FUl"
 /* 80062CEC 0005E98C  2C 03 00 00 */	cmpwi r3, 0
@@ -25560,7 +25560,7 @@ lbl_80062D00:
 /* 80062D20 0005E9C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062D24 0005E9C4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062D28 0005E9C8  7D 89 03 A6 */	mtctr r12
-/* 80062D2C 0005E9CC  4E 80 04 21 */	bctrl 
+/* 80062D2C 0005E9CC  4E 80 04 21 */	bctrl
 /* 80062D30 0005E9D0  38 60 02 18 */	li r3, 0x218
 /* 80062D34 0005E9D4  48 1F 72 09 */	bl "__nw__FUl"
 /* 80062D38 0005E9D8  2C 03 00 00 */	cmpwi r3, 0
@@ -25580,7 +25580,7 @@ lbl_80062D4C:
 /* 80062D6C 0005EA0C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062D70 0005EA10  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062D74 0005EA14  7D 89 03 A6 */	mtctr r12
-/* 80062D78 0005EA18  4E 80 04 21 */	bctrl 
+/* 80062D78 0005EA18  4E 80 04 21 */	bctrl
 /* 80062D7C 0005EA1C  7F 83 E3 78 */	mr r3, r28
 /* 80062D80 0005EA20  38 80 00 08 */	li r4, 8
 /* 80062D84 0005EA24  4B FF 04 8D */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25604,7 +25604,7 @@ lbl_80062DA8:
 /* 80062DC8 0005EA68  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062DCC 0005EA6C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80062DD0 0005EA70  7D 89 03 A6 */	mtctr r12
-/* 80062DD4 0005EA74  4E 80 04 21 */	bctrl 
+/* 80062DD4 0005EA74  4E 80 04 21 */	bctrl
 /* 80062DD8 0005EA78  3B BD 00 01 */	addi r29, r29, 1
 lbl_80062DDC:
 /* 80062DDC 0005EA7C  80 1B 00 04 */	lwz r0, 4(r27)
@@ -25615,7 +25615,7 @@ lbl_80062DDC:
 /* 80062DF0 0005EA90  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80062DF4 0005EA94  7C 08 03 A6 */	mtlr r0
 /* 80062DF8 0005EA98  38 21 00 20 */	addi r1, r1, 0x20
-/* 80062DFC 0005EA9C  4E 80 00 20 */	blr 
+/* 80062DFC 0005EA9C  4E 80 00 20 */	blr
 
 .global "DestroyPlayerInteractorSets__Q216InteractorModule17InteractorManagerFv"
 "DestroyPlayerInteractorSets__Q216InteractorModule17InteractorManagerFv":
@@ -25640,7 +25640,7 @@ lbl_80062E2C:
 /* 80062E44 0005EAE4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062E48 0005EAE8  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80062E4C 0005EAEC  7D 89 03 A6 */	mtctr r12
-/* 80062E50 0005EAF0  4E 80 04 21 */	bctrl 
+/* 80062E50 0005EAF0  4E 80 04 21 */	bctrl
 lbl_80062E54:
 /* 80062E54 0005EAF4  7F C4 F3 78 */	mr r4, r30
 /* 80062E58 0005EAF8  38 7C 00 0C */	addi r3, r28, 0xc
@@ -25658,7 +25658,7 @@ lbl_80062E54:
 /* 80062E88 0005EB28  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062E8C 0005EB2C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80062E90 0005EB30  7D 89 03 A6 */	mtctr r12
-/* 80062E94 0005EB34  4E 80 04 21 */	bctrl 
+/* 80062E94 0005EB34  4E 80 04 21 */	bctrl
 /* 80062E98 0005EB38  7F A3 EB 78 */	mr r3, r29
 /* 80062E9C 0005EB3C  38 80 00 00 */	li r4, 0
 /* 80062EA0 0005EB40  4B FF 03 71 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25669,7 +25669,7 @@ lbl_80062E54:
 /* 80062EB4 0005EB54  38 80 00 01 */	li r4, 1
 /* 80062EB8 0005EB58  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80062EBC 0005EB5C  7D 89 03 A6 */	mtctr r12
-/* 80062EC0 0005EB60  4E 80 04 21 */	bctrl 
+/* 80062EC0 0005EB60  4E 80 04 21 */	bctrl
 lbl_80062EC4:
 /* 80062EC4 0005EB64  7F A3 EB 78 */	mr r3, r29
 /* 80062EC8 0005EB68  38 80 00 00 */	li r4, 0
@@ -25689,7 +25689,7 @@ lbl_80062ED4:
 /* 80062EFC 0005EB9C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062F00 0005EBA0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80062F04 0005EBA4  7D 89 03 A6 */	mtctr r12
-/* 80062F08 0005EBA8  4E 80 04 21 */	bctrl 
+/* 80062F08 0005EBA8  4E 80 04 21 */	bctrl
 /* 80062F0C 0005EBAC  7F A3 EB 78 */	mr r3, r29
 /* 80062F10 0005EBB0  38 80 00 02 */	li r4, 2
 /* 80062F14 0005EBB4  4B FF 02 FD */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25700,7 +25700,7 @@ lbl_80062ED4:
 /* 80062F28 0005EBC8  38 80 00 01 */	li r4, 1
 /* 80062F2C 0005EBCC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80062F30 0005EBD0  7D 89 03 A6 */	mtctr r12
-/* 80062F34 0005EBD4  4E 80 04 21 */	bctrl 
+/* 80062F34 0005EBD4  4E 80 04 21 */	bctrl
 lbl_80062F38:
 /* 80062F38 0005EBD8  7F A3 EB 78 */	mr r3, r29
 /* 80062F3C 0005EBDC  38 80 00 02 */	li r4, 2
@@ -25720,7 +25720,7 @@ lbl_80062F48:
 /* 80062F70 0005EC10  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062F74 0005EC14  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80062F78 0005EC18  7D 89 03 A6 */	mtctr r12
-/* 80062F7C 0005EC1C  4E 80 04 21 */	bctrl 
+/* 80062F7C 0005EC1C  4E 80 04 21 */	bctrl
 /* 80062F80 0005EC20  7F A3 EB 78 */	mr r3, r29
 /* 80062F84 0005EC24  38 80 00 01 */	li r4, 1
 /* 80062F88 0005EC28  4B FF 02 89 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25731,7 +25731,7 @@ lbl_80062F48:
 /* 80062F9C 0005EC3C  38 80 00 01 */	li r4, 1
 /* 80062FA0 0005EC40  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80062FA4 0005EC44  7D 89 03 A6 */	mtctr r12
-/* 80062FA8 0005EC48  4E 80 04 21 */	bctrl 
+/* 80062FA8 0005EC48  4E 80 04 21 */	bctrl
 lbl_80062FAC:
 /* 80062FAC 0005EC4C  7F A3 EB 78 */	mr r3, r29
 /* 80062FB0 0005EC50  38 80 00 01 */	li r4, 1
@@ -25751,7 +25751,7 @@ lbl_80062FBC:
 /* 80062FE4 0005EC84  81 83 00 00 */	lwz r12, 0(r3)
 /* 80062FE8 0005EC88  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80062FEC 0005EC8C  7D 89 03 A6 */	mtctr r12
-/* 80062FF0 0005EC90  4E 80 04 21 */	bctrl 
+/* 80062FF0 0005EC90  4E 80 04 21 */	bctrl
 /* 80062FF4 0005EC94  7F A3 EB 78 */	mr r3, r29
 /* 80062FF8 0005EC98  38 80 00 03 */	li r4, 3
 /* 80062FFC 0005EC9C  4B FF 02 15 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25762,7 +25762,7 @@ lbl_80062FBC:
 /* 80063010 0005ECB0  38 80 00 01 */	li r4, 1
 /* 80063014 0005ECB4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80063018 0005ECB8  7D 89 03 A6 */	mtctr r12
-/* 8006301C 0005ECBC  4E 80 04 21 */	bctrl 
+/* 8006301C 0005ECBC  4E 80 04 21 */	bctrl
 lbl_80063020:
 /* 80063020 0005ECC0  7F A3 EB 78 */	mr r3, r29
 /* 80063024 0005ECC4  38 80 00 03 */	li r4, 3
@@ -25782,7 +25782,7 @@ lbl_80063030:
 /* 80063058 0005ECF8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006305C 0005ECFC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80063060 0005ED00  7D 89 03 A6 */	mtctr r12
-/* 80063064 0005ED04  4E 80 04 21 */	bctrl 
+/* 80063064 0005ED04  4E 80 04 21 */	bctrl
 /* 80063068 0005ED08  7F A3 EB 78 */	mr r3, r29
 /* 8006306C 0005ED0C  38 80 00 07 */	li r4, 7
 /* 80063070 0005ED10  4B FF 01 A1 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25793,7 +25793,7 @@ lbl_80063030:
 /* 80063084 0005ED24  38 80 00 01 */	li r4, 1
 /* 80063088 0005ED28  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8006308C 0005ED2C  7D 89 03 A6 */	mtctr r12
-/* 80063090 0005ED30  4E 80 04 21 */	bctrl 
+/* 80063090 0005ED30  4E 80 04 21 */	bctrl
 lbl_80063094:
 /* 80063094 0005ED34  7F A3 EB 78 */	mr r3, r29
 /* 80063098 0005ED38  38 80 00 07 */	li r4, 7
@@ -25813,7 +25813,7 @@ lbl_800630A4:
 /* 800630CC 0005ED6C  81 83 00 00 */	lwz r12, 0(r3)
 /* 800630D0 0005ED70  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 800630D4 0005ED74  7D 89 03 A6 */	mtctr r12
-/* 800630D8 0005ED78  4E 80 04 21 */	bctrl 
+/* 800630D8 0005ED78  4E 80 04 21 */	bctrl
 /* 800630DC 0005ED7C  7F A3 EB 78 */	mr r3, r29
 /* 800630E0 0005ED80  38 80 00 04 */	li r4, 4
 /* 800630E4 0005ED84  4B FF 01 2D */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25824,7 +25824,7 @@ lbl_800630A4:
 /* 800630F8 0005ED98  38 80 00 01 */	li r4, 1
 /* 800630FC 0005ED9C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80063100 0005EDA0  7D 89 03 A6 */	mtctr r12
-/* 80063104 0005EDA4  4E 80 04 21 */	bctrl 
+/* 80063104 0005EDA4  4E 80 04 21 */	bctrl
 lbl_80063108:
 /* 80063108 0005EDA8  7F A3 EB 78 */	mr r3, r29
 /* 8006310C 0005EDAC  38 80 00 04 */	li r4, 4
@@ -25844,7 +25844,7 @@ lbl_80063118:
 /* 80063140 0005EDE0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80063144 0005EDE4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80063148 0005EDE8  7D 89 03 A6 */	mtctr r12
-/* 8006314C 0005EDEC  4E 80 04 21 */	bctrl 
+/* 8006314C 0005EDEC  4E 80 04 21 */	bctrl
 /* 80063150 0005EDF0  7F A3 EB 78 */	mr r3, r29
 /* 80063154 0005EDF4  38 80 00 05 */	li r4, 5
 /* 80063158 0005EDF8  4B FF 00 B9 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25855,7 +25855,7 @@ lbl_80063118:
 /* 8006316C 0005EE0C  38 80 00 01 */	li r4, 1
 /* 80063170 0005EE10  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80063174 0005EE14  7D 89 03 A6 */	mtctr r12
-/* 80063178 0005EE18  4E 80 04 21 */	bctrl 
+/* 80063178 0005EE18  4E 80 04 21 */	bctrl
 lbl_8006317C:
 /* 8006317C 0005EE1C  7F A3 EB 78 */	mr r3, r29
 /* 80063180 0005EE20  38 80 00 05 */	li r4, 5
@@ -25875,7 +25875,7 @@ lbl_8006318C:
 /* 800631B4 0005EE54  81 83 00 00 */	lwz r12, 0(r3)
 /* 800631B8 0005EE58  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 800631BC 0005EE5C  7D 89 03 A6 */	mtctr r12
-/* 800631C0 0005EE60  4E 80 04 21 */	bctrl 
+/* 800631C0 0005EE60  4E 80 04 21 */	bctrl
 /* 800631C4 0005EE64  7F A3 EB 78 */	mr r3, r29
 /* 800631C8 0005EE68  38 80 00 06 */	li r4, 6
 /* 800631CC 0005EE6C  4B FF 00 45 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25886,7 +25886,7 @@ lbl_8006318C:
 /* 800631E0 0005EE80  38 80 00 01 */	li r4, 1
 /* 800631E4 0005EE84  81 8C 00 08 */	lwz r12, 8(r12)
 /* 800631E8 0005EE88  7D 89 03 A6 */	mtctr r12
-/* 800631EC 0005EE8C  4E 80 04 21 */	bctrl 
+/* 800631EC 0005EE8C  4E 80 04 21 */	bctrl
 lbl_800631F0:
 /* 800631F0 0005EE90  7F A3 EB 78 */	mr r3, r29
 /* 800631F4 0005EE94  38 80 00 06 */	li r4, 6
@@ -25906,7 +25906,7 @@ lbl_80063200:
 /* 80063228 0005EEC8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006322C 0005EECC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80063230 0005EED0  7D 89 03 A6 */	mtctr r12
-/* 80063234 0005EED4  4E 80 04 21 */	bctrl 
+/* 80063234 0005EED4  4E 80 04 21 */	bctrl
 /* 80063238 0005EED8  7F A3 EB 78 */	mr r3, r29
 /* 8006323C 0005EEDC  38 80 00 08 */	li r4, 8
 /* 80063240 0005EEE0  4B FE FF D1 */	bl "__vc__Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>FUl"
@@ -25917,7 +25917,7 @@ lbl_80063200:
 /* 80063254 0005EEF4  38 80 00 01 */	li r4, 1
 /* 80063258 0005EEF8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8006325C 0005EEFC  7D 89 03 A6 */	mtctr r12
-/* 80063260 0005EF00  4E 80 04 21 */	bctrl 
+/* 80063260 0005EF00  4E 80 04 21 */	bctrl
 lbl_80063264:
 /* 80063264 0005EF04  7F A3 EB 78 */	mr r3, r29
 /* 80063268 0005EF08  38 80 00 08 */	li r4, 8
@@ -25936,7 +25936,7 @@ lbl_80063278:
 /* 80063294 0005EF34  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80063298 0005EF38  7C 08 03 A6 */	mtlr r0
 /* 8006329C 0005EF3C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800632A0 0005EF40  4E 80 00 20 */	blr 
+/* 800632A0 0005EF40  4E 80 00 20 */	blr
 
 .global "IsValidPlayerId__Q216InteractorModule17InteractorManagerCFi"
 "IsValidPlayerId__Q216InteractorModule17InteractorManagerCFi":
@@ -25944,7 +25944,7 @@ lbl_80063278:
 /* 800632A8 0005EF48  2C 00 00 00 */	cmpwi r0, 0
 /* 800632AC 0005EF4C  40 82 00 0C */	bne lbl_800632B8
 /* 800632B0 0005EF50  38 60 00 00 */	li r3, 0
-/* 800632B4 0005EF54  4E 80 00 20 */	blr 
+/* 800632B4 0005EF54  4E 80 00 20 */	blr
 lbl_800632B8:
 /* 800632B8 0005EF58  2C 04 00 00 */	cmpwi r4, 0
 /* 800632BC 0005EF5C  41 80 00 18 */	blt lbl_800632D4
@@ -25955,10 +25955,10 @@ lbl_800632B8:
 /* 800632D0 0005EF70  41 80 00 0C */	blt lbl_800632DC
 lbl_800632D4:
 /* 800632D4 0005EF74  38 60 00 00 */	li r3, 0
-/* 800632D8 0005EF78  4E 80 00 20 */	blr 
+/* 800632D8 0005EF78  4E 80 00 20 */	blr
 lbl_800632DC:
 /* 800632DC 0005EF7C  38 60 00 01 */	li r3, 1
-/* 800632E0 0005EF80  4E 80 00 20 */	blr 
+/* 800632E0 0005EF80  4E 80 00 20 */	blr
 
 .global "UpdateActivePlayerInteractors__Q216InteractorModule17InteractorManagerFf"
 "UpdateActivePlayerInteractors__Q216InteractorModule17InteractorManagerFf":
@@ -26004,7 +26004,7 @@ lbl_80063320:
 /* 8006337C 0005F01C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80063380 0005F020  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80063384 0005F024  7D 89 03 A6 */	mtctr r12
-/* 80063388 0005F028  4E 80 04 21 */	bctrl 
+/* 80063388 0005F028  4E 80 04 21 */	bctrl
 /* 8006338C 0005F02C  93 7A 00 04 */	stw r27, 4(r26)
 lbl_80063390:
 /* 80063390 0005F030  2C 18 FF FF */	cmpwi r24, -1
@@ -26031,7 +26031,7 @@ lbl_80063390:
 /* 800633E4 0005F084  81 83 00 00 */	lwz r12, 0(r3)
 /* 800633E8 0005F088  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 800633EC 0005F08C  7D 89 03 A6 */	mtctr r12
-/* 800633F0 0005F090  4E 80 04 21 */	bctrl 
+/* 800633F0 0005F090  4E 80 04 21 */	bctrl
 /* 800633F4 0005F094  2C 18 00 00 */	cmpwi r24, 0
 /* 800633F8 0005F098  41 82 00 1C */	beq lbl_80063414
 /* 800633FC 0005F09C  81 98 00 00 */	lwz r12, 0(r24)
@@ -26039,7 +26039,7 @@ lbl_80063390:
 /* 80063404 0005F0A4  38 80 00 01 */	li r4, 1
 /* 80063408 0005F0A8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8006340C 0005F0AC  7D 89 03 A6 */	mtctr r12
-/* 80063410 0005F0B0  4E 80 04 21 */	bctrl 
+/* 80063410 0005F0B0  4E 80 04 21 */	bctrl
 lbl_80063414:
 /* 80063414 0005F0B4  7F E4 FB 78 */	mr r4, r31
 /* 80063418 0005F0B8  38 7E 00 2C */	addi r3, r30, 0x2c
@@ -26062,7 +26062,7 @@ lbl_80063428:
 /* 80063458 0005F0F8  38 80 00 01 */	li r4, 1
 /* 8006345C 0005F0FC  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80063460 0005F100  7D 89 03 A6 */	mtctr r12
-/* 80063464 0005F104  4E 80 04 21 */	bctrl 
+/* 80063464 0005F104  4E 80 04 21 */	bctrl
 lbl_80063468:
 /* 80063468 0005F108  7F E4 FB 78 */	mr r4, r31
 /* 8006346C 0005F10C  38 7E 00 2C */	addi r3, r30, 0x2c
@@ -26089,13 +26089,13 @@ lbl_8006348C:
 /* 800634B8 0005F158  81 83 00 00 */	lwz r12, 0(r3)
 /* 800634BC 0005F15C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 800634C0 0005F160  7D 89 03 A6 */	mtctr r12
-/* 800634C4 0005F164  4E 80 04 21 */	bctrl 
+/* 800634C4 0005F164  4E 80 04 21 */	bctrl
 /* 800634C8 0005F168  80 7A 00 04 */	lwz r3, 4(r26)
 /* 800634CC 0005F16C  FC 20 F8 90 */	fmr f1, f31
 /* 800634D0 0005F170  81 83 00 00 */	lwz r12, 0(r3)
 /* 800634D4 0005F174  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 800634D8 0005F178  7D 89 03 A6 */	mtctr r12
-/* 800634DC 0005F17C  4E 80 04 21 */	bctrl 
+/* 800634DC 0005F17C  4E 80 04 21 */	bctrl
 /* 800634E0 0005F180  80 7D 01 78 */	lwz r3, 0x178(r29)
 /* 800634E4 0005F184  2C 03 00 00 */	cmpwi r3, 0
 /* 800634E8 0005F188  41 82 00 24 */	beq lbl_8006350C
@@ -26106,7 +26106,7 @@ lbl_8006348C:
 /* 800634FC 0005F19C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80063500 0005F1A0  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 80063504 0005F1A4  7D 89 03 A6 */	mtctr r12
-/* 80063508 0005F1A8  4E 80 04 21 */	bctrl 
+/* 80063508 0005F1A8  4E 80 04 21 */	bctrl
 lbl_8006350C:
 /* 8006350C 0005F1AC  7F E4 FB 78 */	mr r4, r31
 /* 80063510 0005F1B0  38 7E 00 40 */	addi r3, r30, 0x40
@@ -26116,7 +26116,7 @@ lbl_8006350C:
 /* 80063520 0005F1C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80063524 0005F1C4  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 80063528 0005F1C8  7D 89 03 A6 */	mtctr r12
-/* 8006352C 0005F1CC  4E 80 04 21 */	bctrl 
+/* 8006352C 0005F1CC  4E 80 04 21 */	bctrl
 /* 80063530 0005F1D0  2C 18 00 00 */	cmpwi r24, 0
 /* 80063534 0005F1D4  41 82 00 18 */	beq lbl_8006354C
 /* 80063538 0005F1D8  80 7A 00 04 */	lwz r3, 4(r26)
@@ -26130,7 +26130,7 @@ lbl_8006354C:
 /* 80063554 0005F1F4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80063558 0005F1F8  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 8006355C 0005F1FC  7D 89 03 A6 */	mtctr r12
-/* 80063560 0005F200  4E 80 04 21 */	bctrl 
+/* 80063560 0005F200  4E 80 04 21 */	bctrl
 lbl_80063564:
 /* 80063564 0005F204  3B FF 00 01 */	addi r31, r31, 1
 lbl_80063568:
@@ -26143,14 +26143,14 @@ lbl_80063568:
 /* 80063580 0005F220  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80063584 0005F224  7C 08 03 A6 */	mtlr r0
 /* 80063588 0005F228  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006358C 0005F22C  4E 80 00 20 */	blr 
+/* 8006358C 0005F22C  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule17InteractorManager16InteractorParamsFv"
 "__ct__Q316InteractorModule17InteractorManager16InteractorParamsFv":
 /* 80063590 0005F230  38 00 FF FF */	li r0, -1
 /* 80063594 0005F234  90 03 00 00 */	stw r0, 0(r3)
 /* 80063598 0005F238  90 03 00 04 */	stw r0, 4(r3)
-/* 8006359C 0005F23C  4E 80 00 20 */	blr 
+/* 8006359C 0005F23C  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule17InteractorManager16ActiveInteractorFv"
 "__ct__Q316InteractorModule17InteractorManager16ActiveInteractorFv":
@@ -26158,7 +26158,7 @@ lbl_80063568:
 /* 800635A4 0005F244  38 00 00 00 */	li r0, 0
 /* 800635A8 0005F248  90 83 00 00 */	stw r4, 0(r3)
 /* 800635AC 0005F24C  90 03 00 04 */	stw r0, 4(r3)
-/* 800635B0 0005F250  4E 80 00 20 */	blr 
+/* 800635B0 0005F250  4E 80 00 20 */	blr
 
 .global "ChangeActiveInteractor<Q316InteractorModule10Interactor16InteractorParams>__Q216InteractorModule17InteractorManagerFPCQ316InteractorModule10Interactor16InteractorParams_b"
 "ChangeActiveInteractor<Q316InteractorModule10Interactor16InteractorParams>__Q216InteractorModule17InteractorManagerFPCQ316InteractorModule10Interactor16InteractorParams_b":
@@ -26224,7 +26224,7 @@ lbl_80063680:
 /* 80063690 0005F330  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80063694 0005F334  7C 08 03 A6 */	mtlr r0
 /* 80063698 0005F338  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006369C 0005F33C  4E 80 00 20 */	blr 
+/* 8006369C 0005F33C  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule14InteractorInfoFv"
 "__ct__Q216InteractorModule14InteractorInfoFv":
@@ -26245,7 +26245,7 @@ lbl_80063680:
 /* 800636D8 0005F378  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800636DC 0005F37C  7C 08 03 A6 */	mtlr r0
 /* 800636E0 0005F380  38 21 00 10 */	addi r1, r1, 0x10
-/* 800636E4 0005F384  4E 80 00 20 */	blr 
+/* 800636E4 0005F384  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule21InteractorResourceSetFv"
 "__ct__Q216InteractorModule21InteractorResourceSetFv":
@@ -26291,7 +26291,7 @@ lbl_80063680:
 /* 80063784 0005F424  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80063788 0005F428  7C 08 03 A6 */	mtlr r0
 /* 8006378C 0005F42C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80063790 0005F430  4E 80 00 20 */	blr 
+/* 80063790 0005F430  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule21InteractorResourceSetFv"
 "__dt__Q216InteractorModule21InteractorResourceSetFv":
@@ -26336,7 +26336,7 @@ lbl_8006381C:
 /* 80063828 0005F4C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006382C 0005F4CC  7C 08 03 A6 */	mtlr r0
 /* 80063830 0005F4D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80063834 0005F4D4  4E 80 00 20 */	blr 
+/* 80063834 0005F4D4  4E 80 00 20 */	blr
 
 .global "AddModel__Q216InteractorModule21InteractorResourceSetFUi"
 "AddModel__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26362,7 +26362,7 @@ lbl_80063878:
 /* 80063880 0005F520  80 81 00 08 */	lwz r4, 8(r1)
 /* 80063884 0005F524  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80063888 0005F528  7D 89 03 A6 */	mtctr r12
-/* 8006388C 0005F52C  4E 80 04 21 */	bctrl 
+/* 8006388C 0005F52C  4E 80 04 21 */	bctrl
 /* 80063890 0005F530  7C 7F 1B 78 */	mr r31, r3
 /* 80063894 0005F534  38 7E 00 3C */	addi r3, r30, 0x3c
 /* 80063898 0005F538  38 81 00 08 */	addi r4, r1, 8
@@ -26394,7 +26394,7 @@ lbl_800638F0:
 /* 800638F8 0005F598  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 800638FC 0005F59C  7C 08 03 A6 */	mtlr r0
 /* 80063900 0005F5A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80063904 0005F5A4  4E 80 00 20 */	blr 
+/* 80063904 0005F5A4  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>FRCQ25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>"
 "__as__Q25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>FRCQ25eastl37pair<PQ25eastl18pair<Ui,P7ERModel>,b>":
@@ -26402,7 +26402,7 @@ lbl_800638F0:
 /* 8006390C 0005F5AC  88 04 00 04 */	lbz r0, 4(r4)
 /* 80063910 0005F5B0  90 A3 00 00 */	stw r5, 0(r3)
 /* 80063914 0005F5B4  98 03 00 04 */	stb r0, 4(r3)
-/* 80063918 0005F5B8  4E 80 00 20 */	blr 
+/* 80063918 0005F5B8  4E 80 00 20 */	blr
 
 .global "GetModel__Q216InteractorModule21InteractorResourceSetFUi"
 "GetModel__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26455,7 +26455,7 @@ lbl_800639C0:
 /* 800639C8 0005F668  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 800639CC 0005F66C  7C 08 03 A6 */	mtlr r0
 /* 800639D0 0005F670  38 21 00 30 */	addi r1, r1, 0x30
-/* 800639D4 0005F674  4E 80 00 20 */	blr 
+/* 800639D4 0005F674  4E 80 00 20 */	blr
 
 .global "AddShader__Q216InteractorModule21InteractorResourceSetFUi"
 "AddShader__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26482,7 +26482,7 @@ lbl_80063A1C:
 /* 80063A24 0005F6C4  80 81 00 08 */	lwz r4, 8(r1)
 /* 80063A28 0005F6C8  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80063A2C 0005F6CC  7D 89 03 A6 */	mtctr r12
-/* 80063A30 0005F6D0  4E 80 04 21 */	bctrl 
+/* 80063A30 0005F6D0  4E 80 04 21 */	bctrl
 /* 80063A34 0005F6D4  7C 7F 1B 78 */	mr r31, r3
 /* 80063A38 0005F6D8  38 7E 00 4C */	addi r3, r30, 0x4c
 /* 80063A3C 0005F6DC  38 81 00 08 */	addi r4, r1, 8
@@ -26514,7 +26514,7 @@ lbl_80063A94:
 /* 80063A9C 0005F73C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80063AA0 0005F740  7C 08 03 A6 */	mtlr r0
 /* 80063AA4 0005F744  38 21 00 30 */	addi r1, r1, 0x30
-/* 80063AA8 0005F748  4E 80 00 20 */	blr 
+/* 80063AA8 0005F748  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>FRCQ25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>"
 "__as__Q25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>FRCQ25eastl38pair<PQ25eastl19pair<Ui,P8ERShader>,b>":
@@ -26522,7 +26522,7 @@ lbl_80063A94:
 /* 80063AB0 0005F750  88 04 00 04 */	lbz r0, 4(r4)
 /* 80063AB4 0005F754  90 A3 00 00 */	stw r5, 0(r3)
 /* 80063AB8 0005F758  98 03 00 04 */	stb r0, 4(r3)
-/* 80063ABC 0005F75C  4E 80 00 20 */	blr 
+/* 80063ABC 0005F75C  4E 80 00 20 */	blr
 
 .global "RemoveShader__Q216InteractorModule21InteractorResourceSetFUi"
 "RemoveShader__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26567,7 +26567,7 @@ lbl_80063B48:
 /* 80063B50 0005F7F0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80063B54 0005F7F4  7C 08 03 A6 */	mtlr r0
 /* 80063B58 0005F7F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80063B5C 0005F7FC  4E 80 00 20 */	blr 
+/* 80063B5C 0005F7FC  4E 80 00 20 */	blr
 
 .global "GetShader__Q216InteractorModule21InteractorResourceSetFUi"
 "GetShader__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26621,7 +26621,7 @@ lbl_80063C08:
 /* 80063C10 0005F8B0  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80063C14 0005F8B4  7C 08 03 A6 */	mtlr r0
 /* 80063C18 0005F8B8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80063C1C 0005F8BC  4E 80 00 20 */	blr 
+/* 80063C1C 0005F8BC  4E 80 00 20 */	blr
 
 .global "ClearSet__Q216InteractorModule21InteractorResourceSetFv"
 "ClearSet__Q216InteractorModule21InteractorResourceSetFv":
@@ -26700,7 +26700,7 @@ lbl_80063CF4:
 /* 80063D28 0005F9C8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80063D2C 0005F9CC  7C 08 03 A6 */	mtlr r0
 /* 80063D30 0005F9D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80063D34 0005F9D4  4E 80 00 20 */	blr 
+/* 80063D34 0005F9D4  4E 80 00 20 */	blr
 
 .global "AddOrderTableData__Q216InteractorModule21InteractorResourceSetFRC15EOrderTableData"
 "AddOrderTableData__Q216InteractorModule21InteractorResourceSetFRC15EOrderTableData":
@@ -26719,7 +26719,7 @@ lbl_80063CF4:
 /* 80063D68 0005FA08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80063D6C 0005FA0C  7C 08 03 A6 */	mtlr r0
 /* 80063D70 0005FA10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80063D74 0005FA14  4E 80 00 20 */	blr 
+/* 80063D74 0005FA14  4E 80 00 20 */	blr
 
 .global "GetOrderTableData__Q216InteractorModule21InteractorResourceSetFUi"
 "GetOrderTableData__Q216InteractorModule21InteractorResourceSetFUi":
@@ -26746,7 +26746,7 @@ lbl_80063DB8:
 /* 80063DC0 0005FA60  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80063DC4 0005FA64  7C 08 03 A6 */	mtlr r0
 /* 80063DC8 0005FA68  38 21 00 10 */	addi r1, r1, 0x10
-/* 80063DCC 0005FA6C  4E 80 00 20 */	blr 
+/* 80063DCC 0005FA6C  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule13PlacementDataFv"
 "__ct__Q216InteractorModule13PlacementDataFv":
@@ -26755,7 +26755,7 @@ lbl_80063DB8:
 /* 80063DD8 0005FA78  B0 03 00 02 */	sth r0, 2(r3)
 /* 80063DDC 0005FA7C  98 03 00 04 */	stb r0, 4(r3)
 /* 80063DE0 0005FA80  98 03 00 05 */	stb r0, 5(r3)
-/* 80063DE4 0005FA84  4E 80 00 20 */	blr 
+/* 80063DE4 0005FA84  4E 80 00 20 */	blr
 
 .global "InitializeInteractorModule__16InteractorModuleFv"
 "InitializeInteractorModule__16InteractorModuleFv":
@@ -26819,7 +26819,7 @@ lbl_80063EA8:
 /* 80063EB8 0005FB58  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 80063EBC 0005FB5C  7C 08 03 A6 */	mtlr r0
 /* 80063EC0 0005FB60  38 21 00 30 */	addi r1, r1, 0x30
-/* 80063EC4 0005FB64  4E 80 00 20 */	blr 
+/* 80063EC4 0005FB64  4E 80 00 20 */	blr
 
 .global "ShutdownInteractorModule__16InteractorModuleFv"
 "ShutdownInteractorModule__16InteractorModuleFv":
@@ -26837,7 +26837,7 @@ lbl_80063EA8:
 /* 80063EF4 0005FB94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80063EF8 0005FB98  7C 08 03 A6 */	mtlr r0
 /* 80063EFC 0005FB9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80063F00 0005FBA0  4E 80 00 20 */	blr 
+/* 80063F00 0005FBA0  4E 80 00 20 */	blr
 
 .global "GetPersonPosition__16InteractorModuleFP5EVec3PC8cXPersonbb"
 "GetPersonPosition__16InteractorModuleFP5EVec3PC8cXPersonbb":
@@ -26862,7 +26862,7 @@ lbl_80063EA8:
 /* 80063F4C 0005FBEC  38 80 00 02 */	li r4, 2
 /* 80063F50 0005FBF0  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 80063F54 0005FBF4  7D 89 03 A6 */	mtctr r12
-/* 80063F58 0005FBF8  4E 80 04 21 */	bctrl 
+/* 80063F58 0005FBF8  4E 80 04 21 */	bctrl
 /* 80063F5C 0005FBFC  2C 1D 00 00 */	cmpwi r29, 0
 /* 80063F60 0005FC00  41 82 00 10 */	beq lbl_80063F70
 /* 80063F64 0005FC04  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
@@ -26877,7 +26877,7 @@ lbl_80063F70:
 /* 80063F84 0005FC24  38 80 00 03 */	li r4, 3
 /* 80063F88 0005FC28  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 80063F8C 0005FC2C  7D 89 03 A6 */	mtctr r12
-/* 80063F90 0005FC30  4E 80 04 21 */	bctrl 
+/* 80063F90 0005FC30  4E 80 04 21 */	bctrl
 /* 80063F94 0005FC34  2C 1E 00 00 */	cmpwi r30, 0
 /* 80063F98 0005FC38  41 82 00 18 */	beq lbl_80063FB0
 /* 80063F9C 0005FC3C  C0 21 00 2C */	lfs f1, 0x2c(r1)
@@ -26920,7 +26920,7 @@ lbl_80064010:
 /* 80064024 0005FCC4  38 80 00 02 */	li r4, 2
 /* 80064028 0005FCC8  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 8006402C 0005FCCC  7D 89 03 A6 */	mtctr r12
-/* 80064030 0005FCD0  4E 80 04 21 */	bctrl 
+/* 80064030 0005FCD0  4E 80 04 21 */	bctrl
 /* 80064034 0005FCD4  C0 01 00 20 */	lfs f0, 0x20(r1)
 /* 80064038 0005FCD8  D0 1B 00 08 */	stfs f0, 8(r27)
 lbl_8006403C:
@@ -26929,7 +26929,7 @@ lbl_8006403C:
 /* 80064044 0005FCE4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80064048 0005FCE8  7C 08 03 A6 */	mtlr r0
 /* 8006404C 0005FCEC  38 21 00 50 */	addi r1, r1, 0x50
-/* 80064050 0005FCF0  4E 80 00 20 */	blr 
+/* 80064050 0005FCF0  4E 80 00 20 */	blr
 
 .global "SnapPositionToTile__16InteractorModuleFRC5EVec3R5EVec3Q216InteractorModule10IMSnapType"
 "SnapPositionToTile__16InteractorModuleFRC5EVec3R5EVec3Q216InteractorModule10IMSnapType":
@@ -27016,7 +27016,7 @@ lbl_80064160:
 /* 80064174 0005FE14  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80064178 0005FE18  7C 08 03 A6 */	mtlr r0
 /* 8006417C 0005FE1C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80064180 0005FE20  4E 80 00 20 */	blr 
+/* 80064180 0005FE20  4E 80 00 20 */	blr
 
 .global "GetCameraRelativeStickAngle__16InteractorModuleFR5EVec2P8ESimsCamPf"
 "GetCameraRelativeStickAngle__16InteractorModuleFR5EVec2P8ESimsCamPf":
@@ -27120,7 +27120,7 @@ lbl_800642CC:
 /* 800642F4 0005FF94  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 800642F8 0005FF98  7C 08 03 A6 */	mtlr r0
 /* 800642FC 0005FF9C  38 21 00 70 */	addi r1, r1, 0x70
-/* 80064300 0005FFA0  4E 80 00 20 */	blr 
+/* 80064300 0005FFA0  4E 80 00 20 */	blr
 
 .global "MoveCursorAlongCameraTargetVector__16InteractorModuleFR5EVec3R5EVec2P8ESimsCamf"
 "MoveCursorAlongCameraTargetVector__16InteractorModuleFR5EVec3R5EVec2P8ESimsCamf":
@@ -27347,7 +27347,7 @@ lbl_80064610:
 /* 80064638 000602D8  83 81 00 90 */	lwz r28, 0x90(r1)
 /* 8006463C 000602DC  7C 08 03 A6 */	mtlr r0
 /* 80064640 000602E0  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 80064644 000602E4  4E 80 00 20 */	blr 
+/* 80064644 000602E4  4E 80 00 20 */	blr
 
 .global "MoveCursorOneTileAlongCameraTargetVector__16InteractorModuleFR5EVec3R5EVec2P8ESimsCamQ216InteractorModule10IMSnapType"
 "MoveCursorOneTileAlongCameraTargetVector__16InteractorModuleFR5EVec3R5EVec2P8ESimsCamQ216InteractorModule10IMSnapType":
@@ -27507,7 +27507,7 @@ lbl_80064880:
 /* 80064888 00060528  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 8006488C 0006052C  7C 08 03 A6 */	mtlr r0
 /* 80064890 00060530  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80064894 00060534  4E 80 00 20 */	blr 
+/* 80064894 00060534  4E 80 00 20 */	blr
 
 .global "ClampPosToWorld__16InteractorModuleFR5EVec3"
 "ClampPosToWorld__16InteractorModuleFR5EVec3":
@@ -27611,7 +27611,7 @@ lbl_800649CC:
 /* 800649FC 0006069C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80064A00 000606A0  7C 08 03 A6 */	mtlr r0
 /* 80064A04 000606A4  38 21 00 50 */	addi r1, r1, 0x50
-/* 80064A08 000606A8  4E 80 00 20 */	blr 
+/* 80064A08 000606A8  4E 80 00 20 */	blr
 
 .global "IsPosOutsideWorld__16InteractorModuleFRC5EVec3"
 "IsPosOutsideWorld__16InteractorModuleFRC5EVec3":
@@ -27687,7 +27687,7 @@ lbl_80064AF4:
 /* 80064B0C 000607AC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80064B10 000607B0  7C 08 03 A6 */	mtlr r0
 /* 80064B14 000607B4  38 21 00 40 */	addi r1, r1, 0x40
-/* 80064B18 000607B8  4E 80 00 20 */	blr 
+/* 80064B18 000607B8  4E 80 00 20 */	blr
 
 .global "CreateObjectFromGUID__16InteractorModuleFUi"
 "CreateObjectFromGUID__16InteractorModuleFUi":
@@ -27719,7 +27719,7 @@ lbl_80064B74:
 /* 80064B78 00060818  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80064B7C 0006081C  7C 08 03 A6 */	mtlr r0
 /* 80064B80 00060820  38 21 00 10 */	addi r1, r1, 0x10
-/* 80064B84 00060824  4E 80 00 20 */	blr 
+/* 80064B84 00060824  4E 80 00 20 */	blr
 
 .global "DestroyObject__16InteractorModuleFP8cXObject"
 "DestroyObject__16InteractorModuleFP8cXObject":
@@ -27774,7 +27774,7 @@ lbl_80064C28:
 /* 80064C34 000608D4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80064C38 000608D8  7C 08 03 A6 */	mtlr r0
 /* 80064C3C 000608DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80064C40 000608E0  4E 80 00 20 */	blr 
+/* 80064C40 000608E0  4E 80 00 20 */	blr
 
 .global "CanObjectBeDestroyed__16InteractorModuleFP8cXObject"
 "CanObjectBeDestroyed__16InteractorModuleFP8cXObject":
@@ -27804,7 +27804,7 @@ lbl_80064C98:
 /* 80064C9C 0006093C  7F E3 FB 78 */	mr r3, r31
 /* 80064CA0 00060940  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80064CA4 00060944  7D 89 03 A6 */	mtctr r12
-/* 80064CA8 00060948  4E 80 04 21 */	bctrl 
+/* 80064CA8 00060948  4E 80 04 21 */	bctrl
 /* 80064CAC 0006094C  7C 7F 1B 78 */	mr r31, r3
 /* 80064CB0 00060950  48 0C 01 29 */	bl "IsDynamic__10cXMTObjectFv"
 /* 80064CB4 00060954  2C 03 00 00 */	cmpwi r3, 0
@@ -27835,7 +27835,7 @@ lbl_80064CFC:
 /* 80064D08 000609A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80064D0C 000609AC  7C 08 03 A6 */	mtlr r0
 /* 80064D10 000609B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80064D14 000609B4  4E 80 00 20 */	blr 
+/* 80064D14 000609B4  4E 80 00 20 */	blr
 
 .global "GetObjectFromInt16__16InteractorModuleFs"
 "GetObjectFromInt16__16InteractorModuleFs":
@@ -27851,7 +27851,7 @@ lbl_80064CFC:
 /* 80064D3C 000609DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80064D40 000609E0  7C 08 03 A6 */	mtlr r0
 /* 80064D44 000609E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80064D48 000609E8  4E 80 00 20 */	blr 
+/* 80064D48 000609E8  4E 80 00 20 */	blr
 
 .global "GetLeadObjectImpl__16InteractorModuleFP8cXObject"
 "GetLeadObjectImpl__16InteractorModuleFP8cXObject":
@@ -27869,7 +27869,7 @@ lbl_80064CFC:
 /* 80064D78 00060A18  7F E3 FB 78 */	mr r3, r31
 /* 80064D7C 00060A1C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80064D80 00060A20  7D 89 03 A6 */	mtctr r12
-/* 80064D84 00060A24  4E 80 04 21 */	bctrl 
+/* 80064D84 00060A24  4E 80 04 21 */	bctrl
 /* 80064D88 00060A28  48 00 1C 01 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
 /* 80064D8C 00060A2C  2C 03 00 00 */	cmpwi r3, 0
 /* 80064D90 00060A30  41 82 00 08 */	beq lbl_80064D98
@@ -27887,7 +27887,7 @@ lbl_80064DAC:
 /* 80064DB0 00060A50  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80064DB4 00060A54  7C 08 03 A6 */	mtlr r0
 /* 80064DB8 00060A58  38 21 00 10 */	addi r1, r1, 0x10
-/* 80064DBC 00060A5C  4E 80 00 20 */	blr 
+/* 80064DBC 00060A5C  4E 80 00 20 */	blr
 
 .global "IsObjectInRange__16InteractorModuleFP8cXObject"
 "IsObjectInRange__16InteractorModuleFP8cXObject":
@@ -27939,7 +27939,7 @@ lbl_80064E60:
 /* 80064E68 00060B08  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80064E6C 00060B0C  7C 08 03 A6 */	mtlr r0
 /* 80064E70 00060B10  38 21 00 20 */	addi r1, r1, 0x20
-/* 80064E74 00060B14  4E 80 00 20 */	blr 
+/* 80064E74 00060B14  4E 80 00 20 */	blr
 
 .global "CoreIsLegalToPlace__16InteractorModuleFP8cXObjectR7FTilePtRi"
 "CoreIsLegalToPlace__16InteractorModuleFP8cXObjectR7FTilePtRi":
@@ -27967,7 +27967,7 @@ lbl_80064E60:
 /* 80064ECC 00060B6C  38 E0 00 00 */	li r7, 0
 /* 80064ED0 00060B70  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80064ED4 00060B74  7D 89 03 A6 */	mtctr r12
-/* 80064ED8 00060B78  4E 80 04 21 */	bctrl 
+/* 80064ED8 00060B78  4E 80 04 21 */	bctrl
 /* 80064EDC 00060B7C  2C 03 00 00 */	cmpwi r3, 0
 /* 80064EE0 00060B80  41 82 00 38 */	beq lbl_80064F18
 /* 80064EE4 00060B84  81 9D 00 18 */	lwz r12, 0x18(r29)
@@ -27978,7 +27978,7 @@ lbl_80064E60:
 /* 80064EF8 00060B98  38 E0 00 00 */	li r7, 0
 /* 80064EFC 00060B9C  80 BF 00 00 */	lwz r5, 0(r31)
 /* 80064F00 00060BA0  7D 89 03 A6 */	mtctr r12
-/* 80064F04 00060BA4  4E 80 04 21 */	bctrl 
+/* 80064F04 00060BA4  4E 80 04 21 */	bctrl
 /* 80064F08 00060BA8  2C 03 00 00 */	cmpwi r3, 0
 /* 80064F0C 00060BAC  41 82 00 0C */	beq lbl_80064F18
 /* 80064F10 00060BB0  38 60 00 01 */	li r3, 1
@@ -27992,7 +27992,7 @@ lbl_80064F1C:
 /* 80064F28 00060BC8  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80064F2C 00060BCC  7C 08 03 A6 */	mtlr r0
 /* 80064F30 00060BD0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80064F34 00060BD4  4E 80 00 20 */	blr 
+/* 80064F34 00060BD4  4E 80 00 20 */	blr
 
 .global "IsLegalToPlaceMultiTileAtLocation__16InteractorModuleFP8cXObjectR7FTilePt"
 "IsLegalToPlaceMultiTileAtLocation__16InteractorModuleFP8cXObjectR7FTilePt":
@@ -28009,7 +28009,7 @@ lbl_80064F1C:
 /* 80064F60 00060C00  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80064F64 00060C04  7C 08 03 A6 */	mtlr r0
 /* 80064F68 00060C08  38 21 00 20 */	addi r1, r1, 0x20
-/* 80064F6C 00060C0C  4E 80 00 20 */	blr 
+/* 80064F6C 00060C0C  4E 80 00 20 */	blr
 
 .global "IsLegalToPlaceSingleTileAtLocation__16InteractorModuleFP8cXObjectR7FTilePtPQ216InteractorModule13PlacementData"
 "IsLegalToPlaceSingleTileAtLocation__16InteractorModuleFP8cXObjectR7FTilePtPQ216InteractorModule13PlacementData":
@@ -28083,7 +28083,7 @@ lbl_8006501C:
 /* 80065068 00060D08  7F 67 DB 78 */	mr r7, r27
 /* 8006506C 00060D0C  80 A1 00 0C */	lwz r5, 0xc(r1)
 /* 80065070 00060D10  7D 89 03 A6 */	mtctr r12
-/* 80065074 00060D14  4E 80 04 21 */	bctrl 
+/* 80065074 00060D14  4E 80 04 21 */	bctrl
 /* 80065078 00060D18  2C 03 00 00 */	cmpwi r3, 0
 /* 8006507C 00060D1C  41 82 01 2C */	beq lbl_800651A8
 /* 80065080 00060D20  2C 1A 00 00 */	cmpwi r26, 0
@@ -28158,7 +28158,7 @@ lbl_80065144:
 /* 80065184 00060E24  7F E3 FB 78 */	mr r3, r31
 /* 80065188 00060E28  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 8006518C 00060E2C  7D 89 03 A6 */	mtctr r12
-/* 80065190 00060E30  4E 80 04 21 */	bctrl 
+/* 80065190 00060E30  4E 80 04 21 */	bctrl
 lbl_80065194:
 /* 80065194 00060E34  38 61 00 08 */	addi r3, r1, 8
 /* 80065198 00060E38  38 80 FF FF */	li r4, -1
@@ -28198,7 +28198,7 @@ lbl_80065204:
 /* 8006520C 00060EAC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80065210 00060EB0  7C 08 03 A6 */	mtlr r0
 /* 80065214 00060EB4  38 21 00 50 */	addi r1, r1, 0x50
-/* 80065218 00060EB8  4E 80 00 20 */	blr 
+/* 80065218 00060EB8  4E 80 00 20 */	blr
 
 .global "IsLegalToPlaceAtLocation__16InteractorModuleFP8cXObjectR7FTilePtPQ216InteractorModule13PlacementData"
 "IsLegalToPlaceAtLocation__16InteractorModuleFP8cXObjectR7FTilePtPQ216InteractorModule13PlacementData":
@@ -28242,7 +28242,7 @@ lbl_80065294:
 /* 800652A0 00060F40  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800652A4 00060F44  7C 08 03 A6 */	mtlr r0
 /* 800652A8 00060F48  38 21 00 20 */	addi r1, r1, 0x20
-/* 800652AC 00060F4C  4E 80 00 20 */	blr 
+/* 800652AC 00060F4C  4E 80 00 20 */	blr
 
 .global "FinalUserPlaceObject__16InteractorModuleFP8cXObjectPQ216InteractorModule13PlacementData"
 "FinalUserPlaceObject__16InteractorModuleFP8cXObjectPQ216InteractorModule13PlacementData":
@@ -28277,7 +28277,7 @@ lbl_800652E4:
 /* 8006531C 00060FBC  81 9C 00 18 */	lwz r12, 0x18(r28)
 /* 80065320 00060FC0  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80065324 00060FC4  7D 89 03 A6 */	mtctr r12
-/* 80065328 00060FC8  4E 80 04 21 */	bctrl 
+/* 80065328 00060FC8  4E 80 04 21 */	bctrl
 /* 8006532C 00060FCC  38 00 00 00 */	li r0, 0
 /* 80065330 00060FD0  98 0D B5 60 */	stb r0, "s_handlingPlacementObject__5Globs"-_SDA_BASE_(r13)
 lbl_80065334:
@@ -28314,7 +28314,7 @@ lbl_80065368:
 /* 800653A8 00061048  38 C0 00 00 */	li r6, 0
 /* 800653AC 0006104C  38 E0 00 00 */	li r7, 0
 /* 800653B0 00061050  7D 89 03 A6 */	mtctr r12
-/* 800653B4 00061054  4E 80 04 21 */	bctrl 
+/* 800653B4 00061054  4E 80 04 21 */	bctrl
 /* 800653B8 00061058  48 00 00 34 */	b lbl_800653EC
 lbl_800653BC:
 /* 800653BC 0006105C  A8 81 00 08 */	lha r4, 8(r1)
@@ -28328,7 +28328,7 @@ lbl_800653BC:
 /* 800653DC 0006107C  38 A0 00 01 */	li r5, 1
 /* 800653E0 00061080  A8 E1 00 0A */	lha r7, 0xa(r1)
 /* 800653E4 00061084  7D 89 03 A6 */	mtctr r12
-/* 800653E8 00061088  4E 80 04 21 */	bctrl 
+/* 800653E8 00061088  4E 80 04 21 */	bctrl
 lbl_800653EC:
 /* 800653EC 0006108C  7F 83 E3 78 */	mr r3, r28
 /* 800653F0 00061090  38 80 00 01 */	li r4, 1
@@ -28347,7 +28347,7 @@ lbl_8006540C:
 /* 8006541C 000610BC  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80065420 000610C0  7C 08 03 A6 */	mtlr r0
 /* 80065424 000610C4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80065428 000610C8  4E 80 00 20 */	blr 
+/* 80065428 000610C8  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule13PlacementDataFRCQ216InteractorModule13PlacementData"
 "__as__Q216InteractorModule13PlacementDataFRCQ216InteractorModule13PlacementData":
@@ -28359,7 +28359,7 @@ lbl_8006540C:
 /* 80065440 000610E0  B0 C3 00 02 */	sth r6, 2(r3)
 /* 80065444 000610E4  98 A3 00 04 */	stb r5, 4(r3)
 /* 80065448 000610E8  98 03 00 05 */	stb r0, 5(r3)
-/* 8006544C 000610EC  4E 80 00 20 */	blr 
+/* 8006544C 000610EC  4E 80 00 20 */	blr
 
 .global "UpdateAllObjectsInWorldAfterFirstPickupOrFinalPlace__16InteractorModuleFP8cXObject"
 "UpdateAllObjectsInWorldAfterFirstPickupOrFinalPlace__16InteractorModuleFP8cXObject":
@@ -28385,7 +28385,7 @@ lbl_80065494:
 /* 80065498 00061138  7F C3 F3 78 */	mr r3, r30
 /* 8006549C 0006113C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 800654A0 00061140  7D 89 03 A6 */	mtctr r12
-/* 800654A4 00061144  4E 80 04 21 */	bctrl 
+/* 800654A4 00061144  4E 80 04 21 */	bctrl
 /* 800654A8 00061148  2C 03 00 00 */	cmpwi r3, 0
 /* 800654AC 0006114C  40 82 00 2C */	bne lbl_800654D8
 /* 800654B0 00061150  7F C3 F3 78 */	mr r3, r30
@@ -28407,11 +28407,11 @@ lbl_800654E0:
 /* 800654E8 00061188  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800654EC 0006118C  7C 08 03 A6 */	mtlr r0
 /* 800654F0 00061190  38 21 00 10 */	addi r1, r1, 0x10
-/* 800654F4 00061194  4E 80 00 20 */	blr 
+/* 800654F4 00061194  4E 80 00 20 */	blr
 
 .global "RecomputeLightingGrid__16InteractorModuleFP8cXObject"
 "RecomputeLightingGrid__16InteractorModuleFP8cXObject":
-/* 800654F8 00061198  4E 80 00 20 */	blr 
+/* 800654F8 00061198  4E 80 00 20 */	blr
 
 .global "SetDirection__16InteractorModuleFiP8cXObject"
 "SetDirection__16InteractorModuleFiP8cXObject":
@@ -28444,7 +28444,7 @@ lbl_800654E0:
 /* 80065564 00061204  7F C3 F3 78 */	mr r3, r30
 /* 80065568 00061208  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 8006556C 0006120C  7D 89 03 A6 */	mtctr r12
-/* 80065570 00061210  4E 80 04 21 */	bctrl 
+/* 80065570 00061210  4E 80 04 21 */	bctrl
 lbl_80065574:
 /* 80065574 00061214  3B E0 00 00 */	li r31, 0
 lbl_80065578:
@@ -28459,7 +28459,7 @@ lbl_80065578:
 /* 80065598 00061238  38 80 00 01 */	li r4, 1
 /* 8006559C 0006123C  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 800655A0 00061240  7D 89 03 A6 */	mtctr r12
-/* 800655A4 00061244  4E 80 04 21 */	bctrl 
+/* 800655A4 00061244  4E 80 04 21 */	bctrl
 /* 800655A8 00061248  3B FF 00 01 */	addi r31, r31, 1
 /* 800655AC 0006124C  2C 1F 00 08 */	cmpwi r31, 8
 /* 800655B0 00061250  41 80 FF C8 */	blt lbl_80065578
@@ -28474,7 +28474,7 @@ lbl_800655B4:
 /* 800655D0 00061270  38 C0 00 00 */	li r6, 0
 /* 800655D4 00061274  38 E0 00 00 */	li r7, 0
 /* 800655D8 00061278  7D 89 03 A6 */	mtctr r12
-/* 800655DC 0006127C  4E 80 04 21 */	bctrl 
+/* 800655DC 0006127C  4E 80 04 21 */	bctrl
 /* 800655E0 00061280  2C 03 00 00 */	cmpwi r3, 0
 /* 800655E4 00061284  41 82 00 30 */	beq lbl_80065614
 /* 800655E8 00061288  7F C3 F3 78 */	mr r3, r30
@@ -28487,7 +28487,7 @@ lbl_800655B4:
 /* 80065604 000612A4  38 C0 00 00 */	li r6, 0
 /* 80065608 000612A8  38 E0 00 00 */	li r7, 0
 /* 8006560C 000612AC  7D 89 03 A6 */	mtctr r12
-/* 80065610 000612B0  4E 80 04 21 */	bctrl 
+/* 80065610 000612B0  4E 80 04 21 */	bctrl
 lbl_80065614:
 /* 80065614 000612B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80065618 000612B8  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -28495,7 +28495,7 @@ lbl_80065614:
 /* 80065620 000612C0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80065624 000612C4  7C 08 03 A6 */	mtlr r0
 /* 80065628 000612C8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006562C 000612CC  4E 80 00 20 */	blr 
+/* 8006562C 000612CC  4E 80 00 20 */	blr
 
 .global "GetObjectInstancesList__16InteractorModuleFP8cXObjectR26TNodeList<P12ISimInstance>"
 "GetObjectInstancesList__16InteractorModuleFP8cXObjectR26TNodeList<P12ISimInstance>":
@@ -28519,7 +28519,7 @@ lbl_80065614:
 /* 80065674 00061314  7F C3 F3 78 */	mr r3, r30
 /* 80065678 00061318  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006567C 0006131C  7D 89 03 A6 */	mtctr r12
-/* 80065680 00061320  4E 80 04 21 */	bctrl 
+/* 80065680 00061320  4E 80 04 21 */	bctrl
 /* 80065684 00061324  7C 7F 1B 78 */	mr r31, r3
 /* 80065688 00061328  48 0B F7 51 */	bl "IsDynamic__10cXMTObjectFv"
 /* 8006568C 0006132C  2C 03 00 00 */	cmpwi r3, 0
@@ -28528,7 +28528,7 @@ lbl_80065614:
 /* 80065698 00061338  7F C3 F3 78 */	mr r3, r30
 /* 8006569C 0006133C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800656A0 00061340  7D 89 03 A6 */	mtctr r12
-/* 800656A4 00061344  4E 80 04 21 */	bctrl 
+/* 800656A4 00061344  4E 80 04 21 */	bctrl
 /* 800656A8 00061348  2C 03 00 00 */	cmpwi r3, 0
 /* 800656AC 0006134C  7C 64 1B 78 */	mr r4, r3
 /* 800656B0 00061350  41 82 00 A0 */	beq lbl_80065750
@@ -28545,7 +28545,7 @@ lbl_800656D0:
 /* 800656D4 00061374  7F E3 FB 78 */	mr r3, r31
 /* 800656D8 00061378  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800656DC 0006137C  7D 89 03 A6 */	mtctr r12
-/* 800656E0 00061380  4E 80 04 21 */	bctrl 
+/* 800656E0 00061380  4E 80 04 21 */	bctrl
 /* 800656E4 00061384  7C 7E 1B 78 */	mr r30, r3
 /* 800656E8 00061388  7F A3 EB 78 */	mr r3, r29
 /* 800656EC 0006138C  7F C4 F3 78 */	mr r4, r30
@@ -28570,7 +28570,7 @@ lbl_80065728:
 /* 8006572C 000613CC  7F C3 F3 78 */	mr r3, r30
 /* 80065730 000613D0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80065734 000613D4  7D 89 03 A6 */	mtctr r12
-/* 80065738 000613D8  4E 80 04 21 */	bctrl 
+/* 80065738 000613D8  4E 80 04 21 */	bctrl
 /* 8006573C 000613DC  2C 03 00 00 */	cmpwi r3, 0
 /* 80065740 000613E0  7C 64 1B 78 */	mr r4, r3
 /* 80065744 000613E4  41 82 00 0C */	beq lbl_80065750
@@ -28583,7 +28583,7 @@ lbl_80065750:
 /* 8006575C 000613FC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80065760 00061400  7C 08 03 A6 */	mtlr r0
 /* 80065764 00061404  38 21 00 20 */	addi r1, r1, 0x20
-/* 80065768 00061408  4E 80 00 20 */	blr 
+/* 80065768 00061408  4E 80 00 20 */	blr
 
 .global "ShadeModelToShowValidState__16InteractorModuleFP8cXObjectb"
 "ShadeModelToShowValidState__16InteractorModuleFP8cXObjectb":
@@ -28603,7 +28603,7 @@ lbl_80065750:
 /* 800657A0 00061440  81 83 00 00 */	lwz r12, 0(r3)
 /* 800657A4 00061444  81 8C 01 54 */	lwz r12, 0x154(r12)
 /* 800657A8 00061448  7D 89 03 A6 */	mtctr r12
-/* 800657AC 0006144C  4E 80 04 21 */	bctrl 
+/* 800657AC 0006144C  4E 80 04 21 */	bctrl
 /* 800657B0 00061450  2C 03 00 00 */	cmpwi r3, 0
 /* 800657B4 00061454  40 82 01 6C */	bne lbl_80065920
 /* 800657B8 00061458  81 9E 00 00 */	lwz r12, 0(r30)
@@ -28613,7 +28613,7 @@ lbl_80065750:
 /* 800657C8 00061468  81 8C 01 50 */	lwz r12, 0x150(r12)
 /* 800657CC 0006146C  7F E4 FB 78 */	mr r4, r31
 /* 800657D0 00061470  7D 89 03 A6 */	mtctr r12
-/* 800657D4 00061474  4E 80 04 21 */	bctrl 
+/* 800657D4 00061474  4E 80 04 21 */	bctrl
 /* 800657D8 00061478  7F A3 EB 78 */	mr r3, r29
 /* 800657DC 0006147C  4B FE C3 CD */	bl "IsMultiTile__8cXObjectFv"
 /* 800657E0 00061480  2C 03 00 00 */	cmpwi r3, 0
@@ -28628,20 +28628,20 @@ lbl_800657FC:
 /* 80065800 000614A0  7F C3 F3 78 */	mr r3, r30
 /* 80065804 000614A4  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80065808 000614A8  7D 89 03 A6 */	mtctr r12
-/* 8006580C 000614AC  4E 80 04 21 */	bctrl 
+/* 8006580C 000614AC  4E 80 04 21 */	bctrl
 /* 80065810 000614B0  2C 03 00 00 */	cmpwi r3, 0
 /* 80065814 000614B4  7C 7D 1B 78 */	mr r29, r3
 /* 80065818 000614B8  41 82 00 2C */	beq lbl_80065844
 /* 8006581C 000614BC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80065820 000614C0  81 8C 01 14 */	lwz r12, 0x114(r12)
 /* 80065824 000614C4  7D 89 03 A6 */	mtctr r12
-/* 80065828 000614C8  4E 80 04 21 */	bctrl 
+/* 80065828 000614C8  4E 80 04 21 */	bctrl
 /* 8006582C 000614CC  81 9D 00 00 */	lwz r12, 0(r29)
 /* 80065830 000614D0  7F A3 EB 78 */	mr r3, r29
 /* 80065834 000614D4  7F E4 FB 78 */	mr r4, r31
 /* 80065838 000614D8  81 8C 01 50 */	lwz r12, 0x150(r12)
 /* 8006583C 000614DC  7D 89 03 A6 */	mtctr r12
-/* 80065840 000614E0  4E 80 04 21 */	bctrl 
+/* 80065840 000614E0  4E 80 04 21 */	bctrl
 lbl_80065844:
 /* 80065844 000614E4  7F C3 F3 78 */	mr r3, r30
 /* 80065848 000614E8  38 80 00 00 */	li r4, 0
@@ -28656,7 +28656,7 @@ lbl_80065860:
 /* 80065864 00061504  7F A3 EB 78 */	mr r3, r29
 /* 80065868 00061508  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006586C 0006150C  7D 89 03 A6 */	mtctr r12
-/* 80065870 00061510  4E 80 04 21 */	bctrl 
+/* 80065870 00061510  4E 80 04 21 */	bctrl
 /* 80065874 00061514  7C 7D 1B 78 */	mr r29, r3
 /* 80065878 00061518  48 0B F5 61 */	bl "IsDynamic__10cXMTObjectFv"
 /* 8006587C 0006151C  2C 03 00 00 */	cmpwi r3, 0
@@ -28676,20 +28676,20 @@ lbl_800658A8:
 /* 800658AC 0006154C  7F A3 EB 78 */	mr r3, r29
 /* 800658B0 00061550  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800658B4 00061554  7D 89 03 A6 */	mtctr r12
-/* 800658B8 00061558  4E 80 04 21 */	bctrl 
+/* 800658B8 00061558  4E 80 04 21 */	bctrl
 /* 800658BC 0006155C  2C 03 00 00 */	cmpwi r3, 0
 /* 800658C0 00061560  7C 7C 1B 78 */	mr r28, r3
 /* 800658C4 00061564  41 82 00 2C */	beq lbl_800658F0
 /* 800658C8 00061568  81 83 00 00 */	lwz r12, 0(r3)
 /* 800658CC 0006156C  81 8C 01 14 */	lwz r12, 0x114(r12)
 /* 800658D0 00061570  7D 89 03 A6 */	mtctr r12
-/* 800658D4 00061574  4E 80 04 21 */	bctrl 
+/* 800658D4 00061574  4E 80 04 21 */	bctrl
 /* 800658D8 00061578  81 9C 00 00 */	lwz r12, 0(r28)
 /* 800658DC 0006157C  7F 83 E3 78 */	mr r3, r28
 /* 800658E0 00061580  7F E4 FB 78 */	mr r4, r31
 /* 800658E4 00061584  81 8C 01 50 */	lwz r12, 0x150(r12)
 /* 800658E8 00061588  7D 89 03 A6 */	mtctr r12
-/* 800658EC 0006158C  4E 80 04 21 */	bctrl 
+/* 800658EC 0006158C  4E 80 04 21 */	bctrl
 lbl_800658F0:
 /* 800658F0 00061590  7F A3 EB 78 */	mr r3, r29
 /* 800658F4 00061594  38 80 00 00 */	li r4, 0
@@ -28727,13 +28727,13 @@ lbl_80065958:
 /* 80065964 00061604  7C 7D 1B 78 */	mr r29, r3
 /* 80065968 00061608  81 8C 01 14 */	lwz r12, 0x114(r12)
 /* 8006596C 0006160C  7D 89 03 A6 */	mtctr r12
-/* 80065970 00061610  4E 80 04 21 */	bctrl 
+/* 80065970 00061610  4E 80 04 21 */	bctrl
 /* 80065974 00061614  81 9D 00 00 */	lwz r12, 0(r29)
 /* 80065978 00061618  7F A3 EB 78 */	mr r3, r29
 /* 8006597C 0006161C  7F E4 FB 78 */	mr r4, r31
 /* 80065980 00061620  81 8C 01 50 */	lwz r12, 0x150(r12)
 /* 80065984 00061624  7D 89 03 A6 */	mtctr r12
-/* 80065988 00061628  4E 80 04 21 */	bctrl 
+/* 80065988 00061628  4E 80 04 21 */	bctrl
 /* 8006598C 0006162C  7F 83 E3 78 */	mr r3, r28
 /* 80065990 00061630  4B FB DA D5 */	bl "Next__9ENodeListFP17NLIteratorPtrType"
 /* 80065994 00061634  7C 7C 1B 78 */	mr r28, r3
@@ -28751,7 +28751,7 @@ lbl_800659AC:
 /* 800659BC 0006165C  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 800659C0 00061660  7C 08 03 A6 */	mtlr r0
 /* 800659C4 00061664  38 21 00 30 */	addi r1, r1, 0x30
-/* 800659C8 00061668  4E 80 00 20 */	blr 
+/* 800659C8 00061668  4E 80 00 20 */	blr
 
 .global "GetVisibleSideOfWall__16InteractorModuleFP8ESimsCamRC5EVec3RC5EVec3P5EVec3"
 "GetVisibleSideOfWall__16InteractorModuleFP8ESimsCamRC5EVec3RC5EVec3P5EVec3":
@@ -28935,7 +28935,7 @@ lbl_80065C38:
 /* 80065C54 000618F4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80065C58 000618F8  7C 08 03 A6 */	mtlr r0
 /* 80065C5C 000618FC  38 21 00 80 */	addi r1, r1, 0x80
-/* 80065C60 00061900  4E 80 00 20 */	blr 
+/* 80065C60 00061900  4E 80 00 20 */	blr
 
 .global "ConvertVertsToTiles__16InteractorModuleFRC5EVec3RC5EVec3R7CTilePtR7CTilePt"
 "ConvertVertsToTiles__16InteractorModuleFRC5EVec3RC5EVec3R7CTilePtR7CTilePt":
@@ -29249,7 +29249,7 @@ lbl_80066088:
 /* 80066100 00061DA0  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 80066104 00061DA4  7C 08 03 A6 */	mtlr r0
 /* 80066108 00061DA8  38 21 00 60 */	addi r1, r1, 0x60
-/* 8006610C 00061DAC  4E 80 00 20 */	blr 
+/* 8006610C 00061DAC  4E 80 00 20 */	blr
 
 .global "GetAdjacentTileCoordinates__16InteractorModuleF11eCTilePtDiriR5EVec3"
 "GetAdjacentTileCoordinates__16InteractorModuleF11eCTilePtDiriR5EVec3":
@@ -29264,7 +29264,7 @@ lbl_80066088:
 /* 80066130 00061DD0  38 C6 49 60 */	addi r6, r6, lbl_80424960@l
 /* 80066134 00061DD4  7C C6 00 2E */	lwzx r6, r6, r0
 /* 80066138 00061DD8  7C C9 03 A6 */	mtctr r6
-/* 8006613C 00061DDC  4E 80 04 20 */	bctr 
+/* 8006613C 00061DDC  4E 80 04 20 */	bctr
 /* 80066140 00061DE0  6C 80 80 00 */	xoris r0, r4, 0x8000
 /* 80066144 00061DE4  C8 42 84 38 */	lfd f2, lbl_805D9658-_SDA2_BASE_(r2)
 /* 80066148 00061DE8  90 01 00 0C */	stw r0, 0xc(r1)
@@ -29364,7 +29364,7 @@ lbl_800662BC:
 /* 800662BC 00061F5C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 800662C0 00061F60  D0 05 00 08 */	stfs f0, 8(r5)
 /* 800662C4 00061F64  38 21 00 20 */	addi r1, r1, 0x20
-/* 800662C8 00061F68  4E 80 00 20 */	blr 
+/* 800662C8 00061F68  4E 80 00 20 */	blr
 
 .global "GetRoomIdFromPoint__16InteractorModuleFR7CTilePt"
 "GetRoomIdFromPoint__16InteractorModuleFR7CTilePt":
@@ -29428,7 +29428,7 @@ lbl_80066390:
 /* 8006639C 0006203C  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 800663A0 00062040  7C 08 03 A6 */	mtlr r0
 /* 800663A4 00062044  38 21 00 60 */	addi r1, r1, 0x60
-/* 800663A8 00062048  4E 80 00 20 */	blr 
+/* 800663A8 00062048  4E 80 00 20 */	blr
 
 .global "ForcePointDir__16InteractorModuleFR7CTilePtR7CTilePt"
 "ForcePointDir__16InteractorModuleFR7CTilePtR7CTilePt":
@@ -29612,7 +29612,7 @@ lbl_80066610:
 /* 80066648 000622E8  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8006664C 000622EC  7C 08 03 A6 */	mtlr r0
 /* 80066650 000622F0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80066654 000622F4  4E 80 00 20 */	blr 
+/* 80066654 000622F4  4E 80 00 20 */	blr
 
 .global "EorGetAdjacentTile__16InteractorModuleFR16TileWallsSegmentiR20DiagonalSideSelectorR7CTilePtR7CTilePt"
 "EorGetAdjacentTile__16InteractorModuleFR16TileWallsSegmentiR20DiagonalSideSelectorR7CTilePtR7CTilePt":
@@ -29698,7 +29698,7 @@ lbl_80066774:
 /* 8006677C 0006241C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80066780 00062420  7C 08 03 A6 */	mtlr r0
 /* 80066784 00062424  38 21 00 20 */	addi r1, r1, 0x20
-/* 80066788 00062428  4E 80 00 20 */	blr 
+/* 80066788 00062428  4E 80 00 20 */	blr
 
 .global "IsCameraDirectorInControl__16InteractorModuleFv"
 "IsCameraDirectorInControl__16InteractorModuleFv":
@@ -29721,7 +29721,7 @@ lbl_800667C4:
 /* 800667C4 00062464  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800667C8 00062468  7C 08 03 A6 */	mtlr r0
 /* 800667CC 0006246C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800667D0 00062470  4E 80 00 20 */	blr 
+/* 800667D0 00062470  4E 80 00 20 */	blr
 
 .global "SetCameraFilter__16InteractorModuleFi"
 "SetCameraFilter__16InteractorModuleFi":
@@ -29761,7 +29761,7 @@ lbl_80066844:
 /* 8006684C 000624EC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80066850 000624F0  7C 08 03 A6 */	mtlr r0
 /* 80066854 000624F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066858 000624F8  4E 80 00 20 */	blr 
+/* 80066858 000624F8  4E 80 00 20 */	blr
 
 .global "ClearCameraFilter__16InteractorModuleFi"
 "ClearCameraFilter__16InteractorModuleFi":
@@ -29793,7 +29793,7 @@ lbl_800668B0:
 /* 800668B4 00062554  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800668B8 00062558  7C 08 03 A6 */	mtlr r0
 /* 800668BC 0006255C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800668C0 00062560  4E 80 00 20 */	blr 
+/* 800668C0 00062560  4E 80 00 20 */	blr
 
 .global "IncrementSellCountForPattern__16InteractorModuleFiRQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>"
 "IncrementSellCountForPattern__16InteractorModuleFiRQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>":
@@ -29848,37 +29848,37 @@ lbl_80066960:
 /* 80066970 00062610  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80066974 00062614  7C 08 03 A6 */	mtlr r0
 /* 80066978 00062618  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006697C 0006261C  4E 80 00 20 */	blr 
+/* 8006697C 0006261C  4E 80 00 20 */	blr
 
 .global "GetNextMultiTileObject__10cXMTObjectFv"
 "GetNextMultiTileObject__10cXMTObjectFv":
 /* 80066980 00062620  80 63 01 38 */	lwz r3, 0x138(r3)
-/* 80066984 00062624  4E 80 00 20 */	blr 
+/* 80066984 00062624  4E 80 00 20 */	blr
 
 .global "GetFirstMultiTileObject__10cXMTObjectFv"
 "GetFirstMultiTileObject__10cXMTObjectFv":
 /* 80066988 00062628  80 03 01 3C */	lwz r0, 0x13c(r3)
 /* 8006698C 0006262C  2C 00 00 00 */	cmpwi r0, 0
-/* 80066990 00062630  4D 82 00 20 */	beqlr 
+/* 80066990 00062630  4D 82 00 20 */	beqlr
 /* 80066994 00062634  7C 03 03 78 */	mr r3, r0
-/* 80066998 00062638  4E 80 00 20 */	blr 
+/* 80066998 00062638  4E 80 00 20 */	blr
 
 .global "GetMTObject__7TreeSimCFv"
 "GetMTObject__7TreeSimCFv":
 /* 8006699C 0006263C  80 63 00 08 */	lwz r3, 8(r3)
-/* 800669A0 00062640  4E 80 00 20 */	blr 
+/* 800669A0 00062640  4E 80 00 20 */	blr
 
 .global "GetPortal__7TreeSimCFv"
 "GetPortal__7TreeSimCFv":
 /* 800669A4 00062644  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 800669A8 00062648  4E 80 00 20 */	blr 
+/* 800669A8 00062648  4E 80 00 20 */	blr
 
 .global "IsSingleTile__13ObjDefinitionCFv"
 "IsSingleTile__13ObjDefinitionCFv":
 /* 800669AC 0006264C  A8 03 00 14 */	lha r0, 0x14(r3)
 /* 800669B0 00062650  7C 00 00 34 */	cntlzw r0, r0
 /* 800669B4 00062654  54 03 D9 7E */	srwi r3, r0, 5
-/* 800669B8 00062658  4E 80 00 20 */	blr 
+/* 800669B8 00062658  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule20InteractorVisualizerFv"
 "__ct__Q216InteractorModule20InteractorVisualizerFv":
@@ -29899,7 +29899,7 @@ lbl_80066960:
 /* 800669F4 00062694  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800669F8 00062698  7C 08 03 A6 */	mtlr r0
 /* 800669FC 0006269C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066A00 000626A0  4E 80 00 20 */	blr 
+/* 80066A00 000626A0  4E 80 00 20 */	blr
 
 .global "__dt__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>Fv"
 "__dt__Q26simstd159compact_map<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet,Q25eastl39less<PQ216InteractorModule10Interactor>,Q25eastl9allocator>Fv":
@@ -29925,7 +29925,7 @@ lbl_80066A40:
 /* 80066A4C 000626EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80066A50 000626F0  7C 08 03 A6 */	mtlr r0
 /* 80066A54 000626F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066A58 000626F8  4E 80 00 20 */	blr 
+/* 80066A58 000626F8  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule20InteractorVisualizerFv"
 "__dt__Q216InteractorModule20InteractorVisualizerFv":
@@ -29952,7 +29952,7 @@ lbl_80066A9C:
 /* 80066AA8 00062748  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80066AAC 0006274C  7C 08 03 A6 */	mtlr r0
 /* 80066AB0 00062750  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066AB4 00062754  4E 80 00 20 */	blr 
+/* 80066AB4 00062754  4E 80 00 20 */	blr
 
 .global "Initialize__Q216InteractorModule20InteractorVisualizerFv"
 "Initialize__Q216InteractorModule20InteractorVisualizerFv":
@@ -30005,7 +30005,7 @@ lbl_80066B0C:
 /* 80066B64 00062804  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80066B68 00062808  7C 08 03 A6 */	mtlr r0
 /* 80066B6C 0006280C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80066B70 00062810  4E 80 00 20 */	blr 
+/* 80066B70 00062810  4E 80 00 20 */	blr
 
 .global "Shutdown__Q216InteractorModule20InteractorVisualizerFv"
 "Shutdown__Q216InteractorModule20InteractorVisualizerFv":
@@ -30027,7 +30027,7 @@ lbl_80066B0C:
 /* 80066BB0 00062850  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80066BB4 00062854  7C 08 03 A6 */	mtlr r0
 /* 80066BB8 00062858  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066BBC 0006285C  4E 80 00 20 */	blr 
+/* 80066BBC 0006285C  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter":
@@ -30112,7 +30112,7 @@ lbl_80066CE4:
 /* 80066CEC 0006298C  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 80066CF0 00062990  7C 08 03 A6 */	mtlr r0
 /* 80066CF4 00062994  38 21 00 50 */	addi r1, r1, 0x50
-/* 80066CF8 00062998  4E 80 00 20 */	blr 
+/* 80066CF8 00062998  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter":
@@ -30148,7 +30148,7 @@ lbl_80066D58:
 /* 80066D60 00062A00  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80066D64 00062A04  7C 08 03 A6 */	mtlr r0
 /* 80066D68 00062A08  38 21 00 10 */	addi r1, r1, 0x10
-/* 80066D6C 00062A0C  4E 80 00 20 */	blr 
+/* 80066D6C 00062A0C  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule12FloorPainter":
@@ -30238,7 +30238,7 @@ lbl_80066EA0:
 /* 80066EB0 00062B50  81 83 00 00 */	lwz r12, 0(r3)
 /* 80066EB4 00062B54  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 80066EB8 00062B58  7D 89 03 A6 */	mtctr r12
-/* 80066EBC 00062B5C  4E 80 04 21 */	bctrl 
+/* 80066EBC 00062B5C  4E 80 04 21 */	bctrl
 /* 80066EC0 00062B60  7F E3 FB 78 */	mr r3, r31
 /* 80066EC4 00062B64  4B FF 58 29 */	bl "GetSelectedFloorData__Q216InteractorModule12FloorPainterCFv"
 /* 80066EC8 00062B68  80 83 00 00 */	lwz r4, 0(r3)
@@ -30266,7 +30266,7 @@ lbl_80066EFC:
 /* 80066F18 00062BB8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80066F1C 00062BBC  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80066F20 00062BC0  7D 89 03 A6 */	mtctr r12
-/* 80066F24 00062BC4  4E 80 04 21 */	bctrl 
+/* 80066F24 00062BC4  4E 80 04 21 */	bctrl
 /* 80066F28 00062BC8  7F E3 FB 78 */	mr r3, r31
 /* 80066F2C 00062BCC  4B FF 90 F9 */	bl "GetSnappedPos__Q216InteractorModule10InteractorFv"
 /* 80066F30 00062BD0  80 8D B3 58 */	lwz r4, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
@@ -30498,7 +30498,7 @@ lbl_80067284:
 /* 80067294 00062F34  81 83 00 00 */	lwz r12, 0(r3)
 /* 80067298 00062F38  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006729C 00062F3C  7D 89 03 A6 */	mtctr r12
-/* 800672A0 00062F40  4E 80 04 21 */	bctrl 
+/* 800672A0 00062F40  4E 80 04 21 */	bctrl
 /* 800672A4 00062F44  7F E3 FB 78 */	mr r3, r31
 /* 800672A8 00062F48  4B FF 54 39 */	bl "IsInBuildState__Q216InteractorModule12FloorPainterCFv"
 /* 800672AC 00062F4C  2C 03 00 00 */	cmpwi r3, 0
@@ -30551,7 +30551,7 @@ lbl_80067348:
 /* 80067358 00062FF8  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 8006735C 00062FFC  7C 08 03 A6 */	mtlr r0
 /* 80067360 00063000  38 21 01 30 */	addi r1, r1, 0x130
-/* 80067364 00063004  4E 80 00 20 */	blr 
+/* 80067364 00063004  4E 80 00 20 */	blr
 
 .global "DrawFloorRectPreview__Q216InteractorModule20InteractorVisualizerFP3ERCRC5EVec3RC5EVec3"
 "DrawFloorRectPreview__Q216InteractorModule20InteractorVisualizerFP3ERCRC5EVec3RC5EVec3":
@@ -30671,7 +30671,7 @@ lbl_800674BC:
 /* 8006751C 000631BC  7F E3 FB 78 */	mr r3, r31
 /* 80067520 000631C0  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 80067524 000631C4  7D 89 03 A6 */	mtctr r12
-/* 80067528 000631C8  4E 80 04 21 */	bctrl 
+/* 80067528 000631C8  4E 80 04 21 */	bctrl
 /* 8006752C 000631CC  EF 5D F0 28 */	fsubs f26, f29, f30
 /* 80067530 000631D0  C0 02 84 28 */	lfs f0, lbl_805D9648-_SDA2_BASE_(r2)
 /* 80067534 000631D4  FC 1A 00 40 */	fcmpo cr0, f26, f0
@@ -30775,7 +30775,7 @@ lbl_8006755C:
 /* 800676AC 0006334C  38 A0 00 04 */	li r5, 4
 /* 800676B0 00063350  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 800676B4 00063354  7D 89 03 A6 */	mtctr r12
-/* 800676B8 00063358  4E 80 04 21 */	bctrl 
+/* 800676B8 00063358  4E 80 04 21 */	bctrl
 /* 800676BC 0006335C  E3 E1 02 08 */	psq_l f31, 520(r1), 0, qr0
 /* 800676C0 00063360  CB E1 02 00 */	lfd f31, 0x200(r1)
 /* 800676C4 00063364  E3 C1 01 F8 */	psq_l f30, 504(r1), 0, qr0
@@ -30795,7 +30795,7 @@ lbl_8006755C:
 /* 800676FC 0006339C  83 81 01 A0 */	lwz r28, 0x1a0(r1)
 /* 80067700 000633A0  7C 08 03 A6 */	mtlr r0
 /* 80067704 000633A4  38 21 02 10 */	addi r1, r1, 0x210
-/* 80067708 000633A8  4E 80 00 20 */	blr 
+/* 80067708 000633A8  4E 80 00 20 */	blr
 
 .global "__as__7EGEVertFRC7EGEVert"
 "__as__7EGEVertFRC7EGEVert":
@@ -30840,7 +30840,7 @@ lbl_8006755C:
 /* 800677A4 00063444  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800677A8 00063448  7C 08 03 A6 */	mtlr r0
 /* 800677AC 0006344C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800677B0 00063450  4E 80 00 20 */	blr 
+/* 800677B0 00063450  4E 80 00 20 */	blr
 
 .global "DrawFloorRoomPreview__Q216InteractorModule20InteractorVisualizerFP3ERCRC5EVec3"
 "DrawFloorRoomPreview__Q216InteractorModule20InteractorVisualizerFP3ERCRC5EVec3":
@@ -30923,12 +30923,12 @@ lbl_80067890:
 /* 800678D8 00063578  38 80 00 00 */	li r4, 0
 /* 800678DC 0006357C  81 8C 00 E8 */	lwz r12, 0xe8(r12)
 /* 800678E0 00063580  7D 89 03 A6 */	mtctr r12
-/* 800678E4 00063584  4E 80 04 21 */	bctrl 
+/* 800678E4 00063584  4E 80 04 21 */	bctrl
 /* 800678E8 00063588  81 97 00 00 */	lwz r12, 0(r23)
 /* 800678EC 0006358C  7E E3 BB 78 */	mr r3, r23
 /* 800678F0 00063590  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 800678F4 00063594  7D 89 03 A6 */	mtctr r12
-/* 800678F8 00063598  4E 80 04 21 */	bctrl 
+/* 800678F8 00063598  4E 80 04 21 */	bctrl
 /* 800678FC 0006359C  3C 60 80 49 */	lis r3, "_globals"@ha
 /* 80067900 000635A0  38 63 7A 40 */	addi r3, r3, "_globals"@l
 /* 80067904 000635A4  80 63 01 78 */	lwz r3, 0x178(r3)
@@ -31060,7 +31060,7 @@ lbl_80067930:
 /* 80067AF8 00063798  38 A0 00 04 */	li r5, 4
 /* 80067AFC 0006379C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80067B00 000637A0  7D 89 03 A6 */	mtctr r12
-/* 80067B04 000637A4  4E 80 04 21 */	bctrl 
+/* 80067B04 000637A4  4E 80 04 21 */	bctrl
 /* 80067B08 000637A8  3B 39 00 03 */	addi r25, r25, 3
 lbl_80067B0C:
 /* 80067B0C 000637AC  7F 43 D3 78 */	mr r3, r26
@@ -31088,7 +31088,7 @@ lbl_80067B1C:
 /* 80067B60 00063800  80 01 02 24 */	lwz r0, 0x224(r1)
 /* 80067B64 00063804  7C 08 03 A6 */	mtlr r0
 /* 80067B68 00063808  38 21 02 20 */	addi r1, r1, 0x220
-/* 80067B6C 0006380C  4E 80 00 20 */	blr 
+/* 80067B6C 0006380C  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter":
@@ -31155,7 +31155,7 @@ lbl_80067C50:
 /* 80067C58 000638F8  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 80067C5C 000638FC  7C 08 03 A6 */	mtlr r0
 /* 80067C60 00063900  38 21 00 50 */	addi r1, r1, 0x50
-/* 80067C64 00063904  4E 80 00 20 */	blr 
+/* 80067C64 00063904  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter":
@@ -31191,7 +31191,7 @@ lbl_80067CC4:
 /* 80067CCC 0006396C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80067CD0 00063970  7C 08 03 A6 */	mtlr r0
 /* 80067CD4 00063974  38 21 00 10 */	addi r1, r1, 0x10
-/* 80067CD8 00063978  4E 80 00 20 */	blr 
+/* 80067CD8 00063978  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter":
@@ -31382,7 +31382,7 @@ lbl_80067F84:
 /* 80067F94 00063C34  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80067F98 00063C38  7C 08 03 A6 */	mtlr r0
 /* 80067F9C 00063C3C  38 21 00 90 */	addi r1, r1, 0x90
-/* 80067FA0 00063C40  4E 80 00 20 */	blr 
+/* 80067FA0 00063C40  4E 80 00 20 */	blr
 
 .global "DrawWallpaperRoomPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter"
 "DrawWallpaperRoomPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter":
@@ -31439,7 +31439,7 @@ lbl_8006804C:
 /* 80068060 00063D00  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068064 00063D04  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80068068 00063D08  7D 89 03 A6 */	mtctr r12
-/* 8006806C 00063D0C  4E 80 04 21 */	bctrl 
+/* 8006806C 00063D0C  4E 80 04 21 */	bctrl
 /* 80068070 00063D10  38 00 00 00 */	li r0, 0
 /* 80068074 00063D14  3C 80 80 49 */	lis r4, "white__16InteractorModule"@ha
 /* 80068078 00063D18  90 1C 01 0C */	stw r0, 0x10c(r28)
@@ -31452,7 +31452,7 @@ lbl_8006804C:
 /* 80068094 00063D34  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068098 00063D38  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006809C 00063D3C  7D 89 03 A6 */	mtctr r12
-/* 800680A0 00063D40  4E 80 04 21 */	bctrl 
+/* 800680A0 00063D40  4E 80 04 21 */	bctrl
 /* 800680A4 00063D44  7F A3 EB 78 */	mr r3, r29
 /* 800680A8 00063D48  48 01 7D 19 */	bl "GetAnchorPos__Q216InteractorModule11WallPainterFv"
 /* 800680AC 00063D4C  7C 64 1B 78 */	mr r4, r3
@@ -31533,7 +31533,7 @@ lbl_800681B8:
 /* 800681D0 00063E70  83 81 00 30 */	lwz r28, 0x30(r1)
 /* 800681D4 00063E74  7C 08 03 A6 */	mtlr r0
 /* 800681D8 00063E78  38 21 00 50 */	addi r1, r1, 0x50
-/* 800681DC 00063E7C  4E 80 00 20 */	blr 
+/* 800681DC 00063E7C  4E 80 00 20 */	blr
 
 .global "DrawWallpaperPreviewOnAffectedWalls__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter"
 "DrawWallpaperPreviewOnAffectedWalls__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule11WallPainter":
@@ -31661,7 +31661,7 @@ lbl_80068398:
 /* 800683A8 00064048  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 800683AC 0006404C  7C 08 03 A6 */	mtlr r0
 /* 800683B0 00064050  38 21 00 60 */	addi r1, r1, 0x60
-/* 800683B4 00064054  4E 80 00 20 */	blr 
+/* 800683B4 00064054  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator":
@@ -31766,7 +31766,7 @@ lbl_8006852C:
 /* 80068534 000641D4  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 80068538 000641D8  7C 08 03 A6 */	mtlr r0
 /* 8006853C 000641DC  38 21 00 50 */	addi r1, r1, 0x50
-/* 80068540 000641E0  4E 80 00 20 */	blr 
+/* 80068540 000641E0  4E 80 00 20 */	blr
 
 .global "DrawWallpaperRectPreview__Q216InteractorModule20InteractorVisualizerFP8ERShaderRC5EVec2RC5EVec2f"
 "DrawWallpaperRectPreview__Q216InteractorModule20InteractorVisualizerFP8ERShaderRC5EVec2RC5EVec2f":
@@ -31946,19 +31946,19 @@ lbl_80068678:
 /* 800687F0 00064490  38 E0 00 00 */	li r7, 0
 /* 800687F4 00064494  81 8C 00 F0 */	lwz r12, 0xf0(r12)
 /* 800687F8 00064498  7D 89 03 A6 */	mtctr r12
-/* 800687FC 0006449C  4E 80 04 21 */	bctrl 
+/* 800687FC 0006449C  4E 80 04 21 */	bctrl
 /* 80068800 000644A0  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80068804 000644A4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068808 000644A8  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 8006880C 000644AC  7D 89 03 A6 */	mtctr r12
-/* 80068810 000644B0  4E 80 04 21 */	bctrl 
+/* 80068810 000644B0  4E 80 04 21 */	bctrl
 /* 80068814 000644B4  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80068818 000644B8  7E C4 B3 78 */	mr r4, r22
 /* 8006881C 000644BC  38 A0 00 04 */	li r5, 4
 /* 80068820 000644C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068824 000644C4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80068828 000644C8  7D 89 03 A6 */	mtctr r12
-/* 8006882C 000644CC  4E 80 04 21 */	bctrl 
+/* 8006882C 000644CC  4E 80 04 21 */	bctrl
 /* 80068830 000644D0  3A B5 00 01 */	addi r21, r21, 1
 lbl_80068834:
 /* 80068834 000644D4  38 61 00 0C */	addi r3, r1, 0xc
@@ -32011,7 +32011,7 @@ lbl_800688D4:
 /* 800688E4 00064584  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 800688E8 00064588  7C 08 03 A6 */	mtlr r0
 /* 800688EC 0006458C  38 21 01 00 */	addi r1, r1, 0x100
-/* 800688F0 00064590  4E 80 00 20 */	blr 
+/* 800688F0 00064590  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator":
@@ -32047,7 +32047,7 @@ lbl_800688D4:
 /* 8006895C 000645FC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80068960 00064600  7C 08 03 A6 */	mtlr r0
 /* 80068964 00064604  38 21 00 20 */	addi r1, r1, 0x20
-/* 80068968 00064608  4E 80 00 20 */	blr 
+/* 80068968 00064608  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator":
@@ -32237,7 +32237,7 @@ lbl_80068C08:
 /* 80068C20 000648C0  83 81 00 70 */	lwz r28, 0x70(r1)
 /* 80068C24 000648C4  7C 08 03 A6 */	mtlr r0
 /* 80068C28 000648C8  38 21 00 90 */	addi r1, r1, 0x90
-/* 80068C2C 000648CC  4E 80 00 20 */	blr 
+/* 80068C2C 000648CC  4E 80 00 20 */	blr
 
 .global "DrawWallRectPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator"
 "DrawWallRectPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator":
@@ -32381,7 +32381,7 @@ lbl_80068E28:
 /* 80068E40 00064AE0  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80068E44 00064AE4  7C 08 03 A6 */	mtlr r0
 /* 80068E48 00064AE8  38 21 00 60 */	addi r1, r1, 0x60
-/* 80068E4C 00064AEC  4E 80 00 20 */	blr 
+/* 80068E4C 00064AEC  4E 80 00 20 */	blr
 
 .global "DrawVerticalRect__Q216InteractorModule20InteractorVisualizerFP8ERShaderRC5EVec2RC5EVec2fif"
 "DrawVerticalRect__Q216InteractorModule20InteractorVisualizerFP8ERShaderRC5EVec2RC5EVec2fif":
@@ -32421,7 +32421,7 @@ lbl_80068E28:
 /* 80068ED4 00064B74  38 E0 00 00 */	li r7, 0
 /* 80068ED8 00064B78  81 8C 00 F0 */	lwz r12, 0xf0(r12)
 /* 80068EDC 00064B7C  7D 89 03 A6 */	mtctr r12
-/* 80068EE0 00064B80  4E 80 04 21 */	bctrl 
+/* 80068EE0 00064B80  4E 80 04 21 */	bctrl
 /* 80068EE4 00064B84  38 61 00 50 */	addi r3, r1, 0x50
 /* 80068EE8 00064B88  4B FB EC DD */	bl "__ct__7ELightsFv"
 /* 80068EEC 00064B8C  38 00 00 00 */	li r0, 0
@@ -32438,18 +32438,18 @@ lbl_80068E28:
 /* 80068F18 00064BB8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068F1C 00064BBC  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 80068F20 00064BC0  7D 89 03 A6 */	mtctr r12
-/* 80068F24 00064BC4  4E 80 04 21 */	bctrl 
+/* 80068F24 00064BC4  4E 80 04 21 */	bctrl
 /* 80068F28 00064BC8  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80068F2C 00064BCC  38 80 00 08 */	li r4, 8
 /* 80068F30 00064BD0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068F34 00064BD4  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80068F38 00064BD8  7D 89 03 A6 */	mtctr r12
-/* 80068F3C 00064BDC  4E 80 04 21 */	bctrl 
+/* 80068F3C 00064BDC  4E 80 04 21 */	bctrl
 /* 80068F40 00064BE0  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80068F44 00064BE4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80068F48 00064BE8  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 80068F4C 00064BEC  7D 89 03 A6 */	mtctr r12
-/* 80068F50 00064BF0  4E 80 04 21 */	bctrl 
+/* 80068F50 00064BF0  4E 80 04 21 */	bctrl
 /* 80068F54 00064BF4  C0 55 00 00 */	lfs f2, 0(r21)
 /* 80068F58 00064BF8  C0 34 00 00 */	lfs f1, 0(r20)
 /* 80068F5C 00064BFC  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
@@ -32650,7 +32650,7 @@ lbl_8006920C:
 /* 80069240 00064EE0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80069244 00064EE4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80069248 00064EE8  7D 89 03 A6 */	mtctr r12
-/* 8006924C 00064EEC  4E 80 04 21 */	bctrl 
+/* 8006924C 00064EEC  4E 80 04 21 */	bctrl
 lbl_80069250:
 /* 80069250 00064EF0  E3 E1 01 E8 */	psq_l f31, 488(r1), 0, qr0
 /* 80069254 00064EF4  CB E1 01 E0 */	lfd f31, 0x1e0(r1)
@@ -32669,7 +32669,7 @@ lbl_80069250:
 /* 80069288 00064F28  80 01 01 F4 */	lwz r0, 0x1f4(r1)
 /* 8006928C 00064F2C  7C 08 03 A6 */	mtlr r0
 /* 80069290 00064F30  38 21 01 F0 */	addi r1, r1, 0x1f0
-/* 80069294 00064F34  4E 80 00 20 */	blr 
+/* 80069294 00064F34  4E 80 00 20 */	blr
 
 .global "DrawRoomPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator"
 "DrawRoomPreview__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator":
@@ -32822,7 +32822,7 @@ lbl_800694AC:
 /* 800694C4 00065164  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 800694C8 00065168  7C 08 03 A6 */	mtlr r0
 /* 800694CC 0006516C  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 800694D0 00065170  4E 80 00 20 */	blr 
+/* 800694D0 00065170  4E 80 00 20 */	blr
 
 .global "DrawPreviewOnAffectedWalls__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator5EVec35EVec3"
 "DrawPreviewOnAffectedWalls__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15WallManipulator5EVec35EVec3":
@@ -33063,19 +33063,19 @@ lbl_8006970C:
 /* 80069860 00065500  38 E0 00 00 */	li r7, 0
 /* 80069864 00065504  81 8C 00 F0 */	lwz r12, 0xf0(r12)
 /* 80069868 00065508  7D 89 03 A6 */	mtctr r12
-/* 8006986C 0006550C  4E 80 04 21 */	bctrl 
+/* 8006986C 0006550C  4E 80 04 21 */	bctrl
 /* 80069870 00065510  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80069874 00065514  81 83 00 00 */	lwz r12, 0(r3)
 /* 80069878 00065518  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 8006987C 0006551C  7D 89 03 A6 */	mtctr r12
-/* 80069880 00065520  4E 80 04 21 */	bctrl 
+/* 80069880 00065520  4E 80 04 21 */	bctrl
 /* 80069884 00065524  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 80069888 00065528  7E C4 B3 78 */	mr r4, r22
 /* 8006988C 0006552C  38 A0 00 04 */	li r5, 4
 /* 80069890 00065530  81 83 00 00 */	lwz r12, 0(r3)
 /* 80069894 00065534  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80069898 00065538  7D 89 03 A6 */	mtctr r12
-/* 8006989C 0006553C  4E 80 04 21 */	bctrl 
+/* 8006989C 0006553C  4E 80 04 21 */	bctrl
 /* 800698A0 00065540  3A B5 00 01 */	addi r21, r21, 1
 lbl_800698A4:
 /* 800698A4 00065544  38 61 00 0C */	addi r3, r1, 0xc
@@ -33126,7 +33126,7 @@ lbl_80069944:
 /* 8006994C 000655EC  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80069950 000655F0  7C 08 03 A6 */	mtlr r0
 /* 80069954 000655F4  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 80069958 000655F8  4E 80 00 20 */	blr 
+/* 80069958 000655F8  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator":
@@ -33193,7 +33193,7 @@ lbl_80069A3C:
 /* 80069A44 000656E4  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 80069A48 000656E8  7C 08 03 A6 */	mtlr r0
 /* 80069A4C 000656EC  38 21 00 50 */	addi r1, r1, 0x50
-/* 80069A50 000656F0  4E 80 00 20 */	blr 
+/* 80069A50 000656F0  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator":
@@ -33224,7 +33224,7 @@ lbl_80069A3C:
 /* 80069AA8 00065748  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80069AAC 0006574C  7C 08 03 A6 */	mtlr r0
 /* 80069AB0 00065750  38 21 00 10 */	addi r1, r1, 0x10
-/* 80069AB4 00065754  4E 80 00 20 */	blr 
+/* 80069AB4 00065754  4E 80 00 20 */	blr
 
 .global "DrawBPVisuals__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor"
 "DrawBPVisuals__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor":
@@ -33248,7 +33248,7 @@ lbl_80069A3C:
 /* 80069AFC 0006579C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80069B00 000657A0  7C 08 03 A6 */	mtlr r0
 /* 80069B04 000657A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80069B08 000657A8  4E 80 00 20 */	blr 
+/* 80069B08 000657A8  4E 80 00 20 */	blr
 
 .global "DrawBPWallCaps__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor"
 "DrawBPWallCaps__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor":
@@ -33543,7 +33543,7 @@ lbl_80069F38:
 /* 80069F58 00065BF8  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80069F5C 00065BFC  7C 08 03 A6 */	mtlr r0
 /* 80069F60 00065C00  38 21 01 20 */	addi r1, r1, 0x120
-/* 80069F64 00065C04  4E 80 00 20 */	blr 
+/* 80069F64 00065C04  4E 80 00 20 */	blr
 
 .global "DrawWallCapQuad__Q216InteractorModule20InteractorVisualizerFP8ERShaderR5EVec2R5EVec2R5EVec2f"
 "DrawWallCapQuad__Q216InteractorModule20InteractorVisualizerFP8ERShaderR5EVec2R5EVec2R5EVec2f":
@@ -33572,7 +33572,7 @@ lbl_80069F38:
 /* 80069FC0 00065C60  38 E0 00 00 */	li r7, 0
 /* 80069FC4 00065C64  81 8C 00 F0 */	lwz r12, 0xf0(r12)
 /* 80069FC8 00065C68  7D 89 03 A6 */	mtctr r12
-/* 80069FCC 00065C6C  4E 80 04 21 */	bctrl 
+/* 80069FCC 00065C6C  4E 80 04 21 */	bctrl
 /* 80069FD0 00065C70  38 61 00 20 */	addi r3, r1, 0x20
 /* 80069FD4 00065C74  4B FB DB F1 */	bl "__ct__7ELightsFv"
 /* 80069FD8 00065C78  3B E0 00 00 */	li r31, 0
@@ -33589,18 +33589,18 @@ lbl_80069F38:
 /* 8006A004 00065CA4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A008 00065CA8  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006A00C 00065CAC  7D 89 03 A6 */	mtctr r12
-/* 8006A010 00065CB0  4E 80 04 21 */	bctrl 
+/* 8006A010 00065CB0  4E 80 04 21 */	bctrl
 /* 8006A014 00065CB4  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006A018 00065CB8  38 80 00 08 */	li r4, 8
 /* 8006A01C 00065CBC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A020 00065CC0  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 8006A024 00065CC4  7D 89 03 A6 */	mtctr r12
-/* 8006A028 00065CC8  4E 80 04 21 */	bctrl 
+/* 8006A028 00065CC8  4E 80 04 21 */	bctrl
 /* 8006A02C 00065CCC  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006A030 00065CD0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A034 00065CD4  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 8006A038 00065CD8  7D 89 03 A6 */	mtctr r12
-/* 8006A03C 00065CDC  4E 80 04 21 */	bctrl 
+/* 8006A03C 00065CDC  4E 80 04 21 */	bctrl
 /* 8006A040 00065CE0  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006A044 00065CE4  38 80 00 70 */	li r4, 0x70
 /* 8006A048 00065CE8  38 A0 00 20 */	li r5, 0x20
@@ -33742,7 +33742,7 @@ lbl_80069F38:
 /* 8006A268 00065F08  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A26C 00065F0C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8006A270 00065F10  7D 89 03 A6 */	mtctr r12
-/* 8006A274 00065F14  4E 80 04 21 */	bctrl 
+/* 8006A274 00065F14  4E 80 04 21 */	bctrl
 lbl_8006A278:
 /* 8006A278 00065F18  E3 E1 01 48 */	psq_l f31, 328(r1), 0, qr0
 /* 8006A27C 00065F1C  39 61 01 40 */	addi r11, r1, 0x140
@@ -33751,7 +33751,7 @@ lbl_8006A278:
 /* 8006A288 00065F28  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 8006A28C 00065F2C  7C 08 03 A6 */	mtlr r0
 /* 8006A290 00065F30  38 21 01 50 */	addi r1, r1, 0x150
-/* 8006A294 00065F34  4E 80 00 20 */	blr 
+/* 8006A294 00065F34  4E 80 00 20 */	blr
 
 .global "DrawBPGrid__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor"
 "DrawBPGrid__Q216InteractorModule20InteractorVisualizerFP3ERCRQ216InteractorModule10Interactor":
@@ -33786,7 +33786,7 @@ lbl_8006A278:
 /* 8006A308 00065FA8  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 8006A30C 00065FAC  90 01 01 80 */	stw r0, 0x180(r1)
 /* 8006A310 00065FB0  7D 89 03 A6 */	mtctr r12
-/* 8006A314 00065FB4  4E 80 04 21 */	bctrl 
+/* 8006A314 00065FB4  4E 80 04 21 */	bctrl
 /* 8006A318 00065FB8  38 00 00 00 */	li r0, 0
 /* 8006A31C 00065FBC  C0 22 84 28 */	lfs f1, lbl_805D9648-_SDA2_BASE_(r2)
 /* 8006A320 00065FC0  90 1C 01 0C */	stw r0, 0x10c(r28)
@@ -33801,13 +33801,13 @@ lbl_8006A278:
 /* 8006A344 00065FE4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A348 00065FE8  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 8006A34C 00065FEC  7D 89 03 A6 */	mtctr r12
-/* 8006A350 00065FF0  4E 80 04 21 */	bctrl 
+/* 8006A350 00065FF0  4E 80 04 21 */	bctrl
 /* 8006A354 00065FF4  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006A358 00065FF8  38 9C 00 1C */	addi r4, r28, 0x1c
 /* 8006A35C 00065FFC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A360 00066000  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006A364 00066004  7D 89 03 A6 */	mtctr r12
-/* 8006A368 00066008  4E 80 04 21 */	bctrl 
+/* 8006A368 00066008  4E 80 04 21 */	bctrl
 /* 8006A36C 0006600C  3C A0 D6 D3 */	lis r5, 0xD6D29D8A@ha
 /* 8006A370 00066010  7F 83 E3 78 */	mr r3, r28
 /* 8006A374 00066014  7F E4 FB 78 */	mr r4, r31
@@ -33974,7 +33974,7 @@ lbl_8006A488:
 /* 8006A5D8 00066278  38 A0 00 04 */	li r5, 4
 /* 8006A5DC 0006627C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006A5E0 00066280  7D 89 03 A6 */	mtctr r12
-/* 8006A5E4 00066284  4E 80 04 21 */	bctrl 
+/* 8006A5E4 00066284  4E 80 04 21 */	bctrl
 /* 8006A5E8 00066288  7F E3 FB 78 */	mr r3, r31
 /* 8006A5EC 0006628C  4B FE 6E 05 */	bl "GetBluePrintGrid__Q216InteractorModule10InteractorFv"
 /* 8006A5F0 00066290  2C 03 00 00 */	cmpwi r3, 0
@@ -34003,7 +34003,7 @@ lbl_8006A600:
 /* 8006A648 000662E8  83 81 01 90 */	lwz r28, 0x190(r1)
 /* 8006A64C 000662EC  7C 08 03 A6 */	mtlr r0
 /* 8006A650 000662F0  38 21 02 10 */	addi r1, r1, 0x210
-/* 8006A654 000662F4  4E 80 00 20 */	blr 
+/* 8006A654 000662F4  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule17ObjectManipulator":
@@ -34083,7 +34083,7 @@ lbl_8006A764:
 /* 8006A774 00066414  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 8006A778 00066418  7C 08 03 A6 */	mtlr r0
 /* 8006A77C 0006641C  38 21 00 60 */	addi r1, r1, 0x60
-/* 8006A780 00066420  4E 80 00 20 */	blr 
+/* 8006A780 00066420  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor":
@@ -34104,7 +34104,7 @@ lbl_8006A7B4:
 /* 8006A7B4 00066454  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006A7B8 00066458  7C 08 03 A6 */	mtlr r0
 /* 8006A7BC 0006645C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006A7C0 00066460  4E 80 00 20 */	blr 
+/* 8006A7C0 00066460  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor":
@@ -34150,7 +34150,7 @@ lbl_8006A7B4:
 /* 8006A854 000664F4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006A858 000664F8  7C 08 03 A6 */	mtlr r0
 /* 8006A85C 000664FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006A860 00066500  4E 80 00 20 */	blr 
+/* 8006A860 00066500  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13SimInteractor":
@@ -34213,7 +34213,7 @@ lbl_8006A924:
 /* 8006A938 000665D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006A93C 000665DC  81 8C 01 38 */	lwz r12, 0x138(r12)
 /* 8006A940 000665E0  7D 89 03 A6 */	mtctr r12
-/* 8006A944 000665E4  4E 80 04 21 */	bctrl 
+/* 8006A944 000665E4  4E 80 04 21 */	bctrl
 /* 8006A948 000665E8  7F 83 E3 78 */	mr r3, r28
 /* 8006A94C 000665EC  4B FF 56 D1 */	bl "GetPos__Q216InteractorModule10InteractorFv"
 /* 8006A950 000665F0  81 9C 00 00 */	lwz r12, 0(r28)
@@ -34221,7 +34221,7 @@ lbl_8006A924:
 /* 8006A958 000665F8  7F 83 E3 78 */	mr r3, r28
 /* 8006A95C 000665FC  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 8006A960 00066600  7D 89 03 A6 */	mtctr r12
-/* 8006A964 00066604  4E 80 04 21 */	bctrl 
+/* 8006A964 00066604  4E 80 04 21 */	bctrl
 /* 8006A968 00066608  FF E0 08 90 */	fmr f31, f1
 /* 8006A96C 0006660C  38 61 00 08 */	addi r3, r1, 8
 /* 8006A970 00066610  4B FA E3 35 */	bl "__ct__5EMat4Fv"
@@ -34249,7 +34249,7 @@ lbl_8006A924:
 /* 8006A9C8 00066668  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8006A9CC 0006666C  7C 08 03 A6 */	mtlr r0
 /* 8006A9D0 00066670  38 21 00 70 */	addi r1, r1, 0x70
-/* 8006A9D4 00066674  4E 80 00 20 */	blr 
+/* 8006A9D4 00066674  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor":
@@ -34270,7 +34270,7 @@ lbl_8006AA08:
 /* 8006AA08 000666A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006AA0C 000666AC  7C 08 03 A6 */	mtlr r0
 /* 8006AA10 000666B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006AA14 000666B4  4E 80 00 20 */	blr 
+/* 8006AA14 000666B4  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor":
@@ -34316,7 +34316,7 @@ lbl_8006AA08:
 /* 8006AAA8 00066748  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006AAAC 0006674C  7C 08 03 A6 */	mtlr r0
 /* 8006AAB0 00066750  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006AAB4 00066754  4E 80 00 20 */	blr 
+/* 8006AAB4 00066754  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule13RayInteractor":
@@ -34362,17 +34362,17 @@ lbl_8006AB44:
 /* 8006AB50 000667F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006AB54 000667F4  7C 08 03 A6 */	mtlr r0
 /* 8006AB58 000667F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006AB5C 000667FC  4E 80 00 20 */	blr 
+/* 8006AB5C 000667FC  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor":
 /* 8006AB60 00066800  38 60 00 01 */	li r3, 1
-/* 8006AB64 00066804  4E 80 00 20 */	blr 
+/* 8006AB64 00066804  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor":
 /* 8006AB68 00066808  38 60 00 01 */	li r3, 1
-/* 8006AB6C 0006680C  4E 80 00 20 */	blr 
+/* 8006AB6C 0006680C  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor"
 "PreDraw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor":
@@ -34414,7 +34414,7 @@ lbl_8006AB44:
 /* 8006ABFC 0006689C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006AC00 000668A0  7C 08 03 A6 */	mtlr r0
 /* 8006AC04 000668A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006AC08 000668A8  4E 80 00 20 */	blr 
+/* 8006AC08 000668A8  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule16DirectInteractor":
@@ -34460,17 +34460,17 @@ lbl_8006AC98:
 /* 8006ACA4 00066944  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006ACA8 00066948  7C 08 03 A6 */	mtlr r0
 /* 8006ACAC 0006694C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006ACB0 00066950  4E 80 00 20 */	blr 
+/* 8006ACB0 00066950  4E 80 00 20 */	blr
 
 .global "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor"
 "CreateResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor":
 /* 8006ACB4 00066954  38 60 00 01 */	li r3, 1
-/* 8006ACB8 00066958  4E 80 00 20 */	blr 
+/* 8006ACB8 00066958  4E 80 00 20 */	blr
 
 .global "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor"
 "DestroyResources__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor":
 /* 8006ACBC 0006695C  38 60 00 01 */	li r3, 1
-/* 8006ACC0 00066960  4E 80 00 20 */	blr 
+/* 8006ACC0 00066960  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor"
 "PreDraw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor":
@@ -34512,11 +34512,11 @@ lbl_8006AC98:
 /* 8006AD50 000669F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006AD54 000669F4  7C 08 03 A6 */	mtlr r0
 /* 8006AD58 000669F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006AD5C 000669FC  4E 80 00 20 */	blr 
+/* 8006AD5C 000669FC  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule20SocialModeInteractor":
-/* 8006AD60 00066A00  4E 80 00 20 */	blr 
+/* 8006AD60 00066A00  4E 80 00 20 */	blr
 
 .global "InteractorOrderTableCallback__Q216InteractorModule20InteractorVisualizerFR14ELevelDrawDataP15EOrderTableData"
 "InteractorOrderTableCallback__Q216InteractorModule20InteractorVisualizerFR14ELevelDrawDataP15EOrderTableData":
@@ -34548,7 +34548,7 @@ lbl_8006AC98:
 /* 8006ADC8 00066A68  7F C4 F3 78 */	mr r4, r30
 /* 8006ADCC 00066A6C  81 8C 00 64 */	lwz r12, 0x64(r12)
 /* 8006ADD0 00066A70  7D 89 03 A6 */	mtctr r12
-/* 8006ADD4 00066A74  4E 80 04 21 */	bctrl 
+/* 8006ADD4 00066A74  4E 80 04 21 */	bctrl
 /* 8006ADD8 00066A78  7F A3 EB 78 */	mr r3, r29
 /* 8006ADDC 00066A7C  4B FE ED A1 */	bl "DirtyModelMatrix__14ELevelDrawDataFv"
 /* 8006ADE0 00066A80  7F A3 EB 78 */	mr r3, r29
@@ -34564,7 +34564,7 @@ lbl_8006ADF8:
 /* 8006AE04 00066AA4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8006AE08 00066AA8  7C 08 03 A6 */	mtlr r0
 /* 8006AE0C 00066AAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006AE10 00066AB0  4E 80 00 20 */	blr 
+/* 8006AE10 00066AB0  4E 80 00 20 */	blr
 
 .global "SetupDrawCallback__Q216InteractorModule20InteractorVisualizerFP6EHousei"
 "SetupDrawCallback__Q216InteractorModule20InteractorVisualizerFP6EHousei":
@@ -34585,14 +34585,14 @@ lbl_8006ADF8:
 /* 8006AE4C 00066AEC  7F C4 F3 78 */	mr r4, r30
 /* 8006AE50 00066AF0  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 8006AE54 00066AF4  7D 89 03 A6 */	mtctr r12
-/* 8006AE58 00066AF8  4E 80 04 21 */	bctrl 
+/* 8006AE58 00066AF8  4E 80 04 21 */	bctrl
 lbl_8006AE5C:
 /* 8006AE5C 00066AFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006AE60 00066B00  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006AE64 00066B04  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8006AE68 00066B08  7C 08 03 A6 */	mtlr r0
 /* 8006AE6C 00066B0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006AE70 00066B10  4E 80 00 20 */	blr 
+/* 8006AE70 00066B10  4E 80 00 20 */	blr
 
 .global "SelectShader__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactori"
 "SelectShader__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactori":
@@ -34623,7 +34623,7 @@ lbl_8006AEC4:
 /* 8006AEC8 00066B68  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006AECC 00066B6C  7C 08 03 A6 */	mtlr r0
 /* 8006AED0 00066B70  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006AED4 00066B74  4E 80 00 20 */	blr 
+/* 8006AED4 00066B74  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15PlacementObjectR5EVec3"
 "Draw__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule15PlacementObjectR5EVec3":
@@ -34657,13 +34657,13 @@ lbl_8006AF3C:
 /* 8006AF40 00066BE0  7F 03 C3 78 */	mr r3, r24
 /* 8006AF44 00066BE4  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006AF48 00066BE8  7D 89 03 A6 */	mtctr r12
-/* 8006AF4C 00066BEC  4E 80 04 21 */	bctrl 
+/* 8006AF4C 00066BEC  4E 80 04 21 */	bctrl
 /* 8006AF50 00066BF0  81 99 00 18 */	lwz r12, 0x18(r25)
 /* 8006AF54 00066BF4  7C 7F 1B 78 */	mr r31, r3
 /* 8006AF58 00066BF8  7F 23 CB 78 */	mr r3, r25
 /* 8006AF5C 00066BFC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006AF60 00066C00  7D 89 03 A6 */	mtctr r12
-/* 8006AF64 00066C04  4E 80 04 21 */	bctrl 
+/* 8006AF64 00066C04  4E 80 04 21 */	bctrl
 /* 8006AF68 00066C08  2C 1F 00 00 */	cmpwi r31, 0
 /* 8006AF6C 00066C0C  7C 7E 1B 78 */	mr r30, r3
 /* 8006AF70 00066C10  41 82 03 3C */	beq lbl_8006B2AC
@@ -34690,7 +34690,7 @@ lbl_8006AFAC:
 /* 8006AFBC 00066C5C  81 9E 00 00 */	lwz r12, 0(r30)
 /* 8006AFC0 00066C60  81 8C 01 48 */	lwz r12, 0x148(r12)
 /* 8006AFC4 00066C64  7D 89 03 A6 */	mtctr r12
-/* 8006AFC8 00066C68  4E 80 04 21 */	bctrl 
+/* 8006AFC8 00066C68  4E 80 04 21 */	bctrl
 /* 8006AFCC 00066C6C  54 60 07 7B */	rlwinm. r0, r3, 0, 0x1d, 0x1d
 /* 8006AFD0 00066C70  41 82 00 28 */	beq lbl_8006AFF8
 /* 8006AFD4 00066C74  C0 42 84 2C */	lfs f2, lbl_805D964C-_SDA2_BASE_(r2)
@@ -34744,14 +34744,14 @@ lbl_8006B078:
 /* 8006B084 00066D24  7F 03 C3 78 */	mr r3, r24
 /* 8006B088 00066D28  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006B08C 00066D2C  7D 89 03 A6 */	mtctr r12
-/* 8006B090 00066D30  4E 80 04 21 */	bctrl 
+/* 8006B090 00066D30  4E 80 04 21 */	bctrl
 /* 8006B094 00066D34  7C 78 1B 78 */	mr r24, r3
 /* 8006B098 00066D38  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006B09C 00066D3C  38 9A 00 1C */	addi r4, r26, 0x1c
 /* 8006B0A0 00066D40  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006B0A4 00066D44  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006B0A8 00066D48  7D 89 03 A6 */	mtctr r12
-/* 8006B0AC 00066D4C  4E 80 04 21 */	bctrl 
+/* 8006B0AC 00066D4C  4E 80 04 21 */	bctrl
 /* 8006B0B0 00066D50  7F 03 C3 78 */	mr r3, r24
 /* 8006B0B4 00066D54  4B FF B8 D5 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
 /* 8006B0B8 00066D58  CB A2 84 38 */	lfd f29, lbl_805D9658-_SDA2_BASE_(r2)
@@ -34765,7 +34765,7 @@ lbl_8006B0D0:
 /* 8006B0D4 00066D74  7F 03 C3 78 */	mr r3, r24
 /* 8006B0D8 00066D78  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006B0DC 00066D7C  7D 89 03 A6 */	mtctr r12
-/* 8006B0E0 00066D80  4E 80 04 21 */	bctrl 
+/* 8006B0E0 00066D80  4E 80 04 21 */	bctrl
 /* 8006B0E4 00066D84  2C 1F 00 00 */	cmpwi r31, 0
 /* 8006B0E8 00066D88  7C 77 1B 78 */	mr r23, r3
 /* 8006B0EC 00066D8C  41 82 00 E0 */	beq lbl_8006B1CC
@@ -34775,7 +34775,7 @@ lbl_8006B0D0:
 /* 8006B0FC 00066D9C  7E E3 BB 78 */	mr r3, r23
 /* 8006B100 00066DA0  81 8C 01 14 */	lwz r12, 0x114(r12)
 /* 8006B104 00066DA4  7D 89 03 A6 */	mtctr r12
-/* 8006B108 00066DA8  4E 80 04 21 */	bctrl 
+/* 8006B108 00066DA8  4E 80 04 21 */	bctrl
 /* 8006B10C 00066DAC  7E E3 BB 78 */	mr r3, r23
 /* 8006B110 00066DB0  4B FE 70 55 */	bl "GetOrient__13EIStaticModelCFv"
 /* 8006B114 00066DB4  7C 64 1B 78 */	mr r4, r3
@@ -34785,7 +34785,7 @@ lbl_8006B0D0:
 /* 8006B124 00066DC4  7F 03 C3 78 */	mr r3, r24
 /* 8006B128 00066DC8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006B12C 00066DCC  7D 89 03 A6 */	mtctr r12
-/* 8006B130 00066DD0  4E 80 04 21 */	bctrl 
+/* 8006B130 00066DD0  4E 80 04 21 */	bctrl
 /* 8006B134 00066DD4  2C 03 00 00 */	cmpwi r3, 0
 /* 8006B138 00066DD8  7C 65 1B 78 */	mr r5, r3
 /* 8006B13C 00066DDC  41 82 00 90 */	beq lbl_8006B1CC
@@ -34832,7 +34832,7 @@ lbl_8006B1CC:
 /* 8006B1D8 00066E78  7F C3 F3 78 */	mr r3, r30
 /* 8006B1DC 00066E7C  81 8C 01 14 */	lwz r12, 0x114(r12)
 /* 8006B1E0 00066E80  7D 89 03 A6 */	mtctr r12
-/* 8006B1E4 00066E84  4E 80 04 21 */	bctrl 
+/* 8006B1E4 00066E84  4E 80 04 21 */	bctrl
 /* 8006B1E8 00066E88  7F C3 F3 78 */	mr r3, r30
 /* 8006B1EC 00066E8C  4B FE 6F 79 */	bl "GetOrient__13EIStaticModelCFv"
 /* 8006B1F0 00066E90  7C 64 1B 78 */	mr r4, r3
@@ -34852,7 +34852,7 @@ lbl_8006B1CC:
 /* 8006B228 00066EC8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006B22C 00066ECC  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006B230 00066ED0  7D 89 03 A6 */	mtctr r12
-/* 8006B234 00066ED4  4E 80 04 21 */	bctrl 
+/* 8006B234 00066ED4  4E 80 04 21 */	bctrl
 /* 8006B238 00066ED8  7F 83 E3 78 */	mr r3, r28
 /* 8006B23C 00066EDC  48 00 06 79 */	bl "IsHierarchical__7ERModelFv"
 /* 8006B240 00066EE0  2C 03 00 00 */	cmpwi r3, 0
@@ -34895,7 +34895,7 @@ lbl_8006B2AC:
 /* 8006B2CC 00066F6C  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8006B2D0 00066F70  7C 08 03 A6 */	mtlr r0
 /* 8006B2D4 00066F74  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8006B2D8 00066F78  4E 80 00 20 */	blr 
+/* 8006B2D8 00066F78  4E 80 00 20 */	blr
 
 .global "DrawResource__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10InteractoriRC5EVec3P5EMat4"
 "DrawResource__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10InteractoriRC5EVec3P5EMat4":
@@ -34962,7 +34962,7 @@ lbl_8006B2AC:
 /* 8006B3CC 0006706C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006B3D0 00067070  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006B3D4 00067074  7D 89 03 A6 */	mtctr r12
-/* 8006B3D8 00067078  4E 80 04 21 */	bctrl 
+/* 8006B3D8 00067078  4E 80 04 21 */	bctrl
 /* 8006B3DC 0006707C  80 6D B3 58 */	lwz r3, "s_pERC__Q216InteractorModule20InteractorVisualizer"-_SDA_BASE_(r13)
 /* 8006B3E0 00067080  7F 84 E3 78 */	mr r4, r28
 /* 8006B3E4 00067084  4B FE 1F 15 */	bl "ModelMatrix__3ERCFPC5EMat4"
@@ -34975,7 +34975,7 @@ lbl_8006B3F4:
 /* 8006B3FC 0006709C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8006B400 000670A0  7C 08 03 A6 */	mtlr r0
 /* 8006B404 000670A4  38 21 00 40 */	addi r1, r1, 0x40
-/* 8006B408 000670A8  4E 80 00 20 */	blr 
+/* 8006B408 000670A8  4E 80 00 20 */	blr
 
 .global "CreateResourceSet__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactor"
 "CreateResourceSet__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactor":
@@ -35034,7 +35034,7 @@ lbl_8006B4CC:
 /* 8006B4D4 00067174  83 C1 01 98 */	lwz r30, 0x198(r1)
 /* 8006B4D8 00067178  7C 08 03 A6 */	mtlr r0
 /* 8006B4DC 0006717C  38 21 01 A0 */	addi r1, r1, 0x1a0
-/* 8006B4E0 00067180  4E 80 00 20 */	blr 
+/* 8006B4E0 00067180  4E 80 00 20 */	blr
 
 .global "__as__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>FRCQ25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>"
 "__as__Q25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>FRCQ25eastl102pair<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,b>":
@@ -35042,7 +35042,7 @@ lbl_8006B4CC:
 /* 8006B4E8 00067188  88 04 00 04 */	lbz r0, 4(r4)
 /* 8006B4EC 0006718C  90 A3 00 00 */	stw r5, 0(r3)
 /* 8006B4F0 00067190  98 03 00 04 */	stb r0, 4(r3)
-/* 8006B4F4 00067194  4E 80 00 20 */	blr 
+/* 8006B4F4 00067194  4E 80 00 20 */	blr
 
 .global "DestroyResourceSet__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactor"
 "DestroyResourceSet__Q216InteractorModule20InteractorVisualizerFRQ216InteractorModule10Interactor":
@@ -35076,7 +35076,7 @@ lbl_8006B554:
 /* 8006B55C 000671FC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006B560 00067200  7C 08 03 A6 */	mtlr r0
 /* 8006B564 00067204  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006B568 00067208  4E 80 00 20 */	blr 
+/* 8006B568 00067208  4E 80 00 20 */	blr
 
 .global "GetInteractorResourceSet__Q216InteractorModule20InteractorVisualizerFPQ216InteractorModule10Interactor"
 "GetInteractorResourceSet__Q216InteractorModule20InteractorVisualizerFPQ216InteractorModule10Interactor":
@@ -35110,7 +35110,7 @@ lbl_8006B5C4:
 /* 8006B5CC 0006726C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006B5D0 00067270  7C 08 03 A6 */	mtlr r0
 /* 8006B5D4 00067274  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006B5D8 00067278  4E 80 00 20 */	blr 
+/* 8006B5D8 00067278  4E 80 00 20 */	blr
 
 .global "SetDefaultLights__Q216InteractorModule20InteractorVisualizerFv"
 "SetDefaultLights__Q216InteractorModule20InteractorVisualizerFv":
@@ -35131,12 +35131,12 @@ lbl_8006B5C4:
 /* 8006B614 000672B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8006B618 000672B8  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 8006B61C 000672BC  7D 89 03 A6 */	mtctr r12
-/* 8006B620 000672C0  4E 80 04 21 */	bctrl 
+/* 8006B620 000672C0  4E 80 04 21 */	bctrl
 /* 8006B624 000672C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006B628 000672C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006B62C 000672CC  7C 08 03 A6 */	mtlr r0
 /* 8006B630 000672D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006B634 000672D4  4E 80 00 20 */	blr 
+/* 8006B634 000672D4  4E 80 00 20 */	blr
 
 .global "__ct__15EOrderTableDataFv"
 "__ct__15EOrderTableDataFv":
@@ -35159,7 +35159,7 @@ lbl_8006B5C4:
 /* 8006B678 00067318  90 83 00 30 */	stw r4, 0x30(r3)
 /* 8006B67C 0006731C  90 83 00 34 */	stw r4, 0x34(r3)
 /* 8006B680 00067320  90 83 00 38 */	stw r4, 0x38(r3)
-/* 8006B684 00067324  4E 80 00 20 */	blr 
+/* 8006B684 00067324  4E 80 00 20 */	blr
 
 .global "SetDefaults__15EOrderTableDataFv"
 "SetDefaults__15EOrderTableDataFv":
@@ -35178,36 +35178,36 @@ lbl_8006B5C4:
 /* 8006B6B8 00067358  90 03 00 30 */	stw r0, 0x30(r3)
 /* 8006B6BC 0006735C  90 03 00 34 */	stw r0, 0x34(r3)
 /* 8006B6C0 00067360  90 03 00 38 */	stw r0, 0x38(r3)
-/* 8006B6C4 00067364  4E 80 00 20 */	blr 
+/* 8006B6C4 00067364  4E 80 00 20 */	blr
 
 .global "GetCursorRotationAdjustment__Q216InteractorModule11WallPainterCFv"
 "GetCursorRotationAdjustment__Q216InteractorModule11WallPainterCFv":
 /* 8006B6C8 00067368  C0 23 01 C8 */	lfs f1, 0x1c8(r3)
-/* 8006B6CC 0006736C  4E 80 00 20 */	blr 
+/* 8006B6CC 0006736C  4E 80 00 20 */	blr
 
 .global "IsAnchored__Q216InteractorModule11WallPainterCFv"
 "IsAnchored__Q216InteractorModule11WallPainterCFv":
 /* 8006B6D0 00067370  80 03 01 CC */	lwz r0, 0x1cc(r3)
 /* 8006B6D4 00067374  54 03 07 FE */	clrlwi r3, r0, 0x1f
-/* 8006B6D8 00067378  4E 80 00 20 */	blr 
+/* 8006B6D8 00067378  4E 80 00 20 */	blr
 
 .global "IsValidWallSegment__Q216InteractorModule11WallPainterCFv"
 "IsValidWallSegment__Q216InteractorModule11WallPainterCFv":
 /* 8006B6DC 0006737C  80 03 01 CC */	lwz r0, 0x1cc(r3)
 /* 8006B6E0 00067380  54 03 CF FE */	rlwinm r3, r0, 0x19, 0x1f, 0x1f
-/* 8006B6E4 00067384  4E 80 00 20 */	blr 
+/* 8006B6E4 00067384  4E 80 00 20 */	blr
 
 .global "IsRoomPreview__Q216InteractorModule11WallPainterCFv"
 "IsRoomPreview__Q216InteractorModule11WallPainterCFv":
 /* 8006B6E8 00067388  80 03 01 CC */	lwz r0, 0x1cc(r3)
 /* 8006B6EC 0006738C  54 03 E7 FE */	rlwinm r3, r0, 0x1c, 0x1f, 0x1f
-/* 8006B6F0 00067390  4E 80 00 20 */	blr 
+/* 8006B6F0 00067390  4E 80 00 20 */	blr
 
 .global "IsSellMode__Q216InteractorModule11WallPainterCFv"
 "IsSellMode__Q216InteractorModule11WallPainterCFv":
 /* 8006B6F4 00067394  80 03 01 CC */	lwz r0, 0x1cc(r3)
 /* 8006B6F8 00067398  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 8006B6FC 0006739C  4E 80 00 20 */	blr 
+/* 8006B6FC 0006739C  4E 80 00 20 */	blr
 
 .global "SetAnchorPointDrawPos__Q216InteractorModule11WallPainterFR5EVec3"
 "SetAnchorPointDrawPos__Q216InteractorModule11WallPainterFR5EVec3":
@@ -35238,54 +35238,54 @@ lbl_8006B5C4:
 /* 8006B73C 000673DC  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006B740 000673E0  7C 08 03 A6 */	mtlr r0
 /* 8006B744 000673E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006B748 000673E8  4E 80 00 20 */	blr 
+/* 8006B748 000673E8  4E 80 00 20 */	blr
 
 .global "DirtyShader__7EShaderFv"
 "DirtyShader__7EShaderFv":
 /* 8006B74C 000673EC  38 00 00 00 */	li r0, 0
 /* 8006B750 000673F0  90 0D BB B0 */	stw r0, "m_gLastShaderSet__7EShader"-_SDA_BASE_(r13)
-/* 8006B754 000673F4  4E 80 00 20 */	blr 
+/* 8006B754 000673F4  4E 80 00 20 */	blr
 
 .global "IsSellMode__Q216InteractorModule15WallManipulatorCFv"
 "IsSellMode__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B758 000673F8  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B75C 000673FC  54 03 EF FE */	rlwinm r3, r0, 0x1d, 0x1f, 0x1f
-/* 8006B760 00067400  4E 80 00 20 */	blr 
+/* 8006B760 00067400  4E 80 00 20 */	blr
 
 .global "IsValidWallSegment__Q216InteractorModule15WallManipulatorCFv"
 "IsValidWallSegment__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B764 00067404  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B768 00067408  54 03 CF FE */	rlwinm r3, r0, 0x19, 0x1f, 0x1f
-/* 8006B76C 0006740C  4E 80 00 20 */	blr 
+/* 8006B76C 0006740C  4E 80 00 20 */	blr
 
 .global "IsRoomPreview__Q216InteractorModule15WallManipulatorCFv"
 "IsRoomPreview__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B770 00067410  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B774 00067414  54 03 E7 FE */	rlwinm r3, r0, 0x1c, 0x1f, 0x1f
-/* 8006B778 00067418  4E 80 00 20 */	blr 
+/* 8006B778 00067418  4E 80 00 20 */	blr
 
 .global "IsAnchored__Q216InteractorModule15WallManipulatorCFv"
 "IsAnchored__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B77C 0006741C  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B780 00067420  54 03 07 FE */	clrlwi r3, r0, 0x1f
-/* 8006B784 00067424  4E 80 00 20 */	blr 
+/* 8006B784 00067424  4E 80 00 20 */	blr
 
 .global "IsFenceMode__Q216InteractorModule15WallManipulatorCFv"
 "IsFenceMode__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B788 00067428  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B78C 0006742C  54 03 C7 FE */	rlwinm r3, r0, 0x18, 0x1f, 0x1f
-/* 8006B790 00067430  4E 80 00 20 */	blr 
+/* 8006B790 00067430  4E 80 00 20 */	blr
 
 .global "IsBuyMode__Q216InteractorModule15WallManipulatorCFv"
 "IsBuyMode__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B794 00067434  38 60 00 01 */	li r3, 1
-/* 8006B798 00067438  4E 80 00 20 */	blr 
+/* 8006B798 00067438  4E 80 00 20 */	blr
 
 .global "IsDestructMode__Q216InteractorModule15WallManipulatorCFv"
 "IsDestructMode__Q216InteractorModule15WallManipulatorCFv":
 /* 8006B79C 0006743C  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8006B7A0 00067440  54 03 BF FE */	rlwinm r3, r0, 0x17, 0x1f, 0x1f
-/* 8006B7A4 00067444  4E 80 00 20 */	blr 
+/* 8006B7A4 00067444  4E 80 00 20 */	blr
 
 .global "SetAnchorPointDrawPos__Q216InteractorModule15WallManipulatorFR5EVec3"
 "SetAnchorPointDrawPos__Q216InteractorModule15WallManipulatorFR5EVec3":
@@ -35302,7 +35302,7 @@ lbl_8006B5C4:
 /* 8006B7B8 00067458  38 03 FF EA */	addi r0, r3, -22
 /* 8006B7BC 0006745C  7C 00 00 34 */	cntlzw r0, r0
 /* 8006B7C0 00067460  54 03 D9 7E */	srwi r3, r0, 5
-/* 8006B7C4 00067464  4E 80 00 20 */	blr 
+/* 8006B7C4 00067464  4E 80 00 20 */	blr
 
 .global "IsDoorlikeStyle__F9WallStyle"
 "IsDoorlikeStyle__F9WallStyle":
@@ -35329,7 +35329,7 @@ lbl_8006B804:
 /* 8006B810 000674B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006B814 000674B4  7C 08 03 A6 */	mtlr r0
 /* 8006B818 000674B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006B81C 000674BC  4E 80 00 20 */	blr 
+/* 8006B81C 000674BC  4E 80 00 20 */	blr
 
 .global "IsGateStyle__F9WallStyle"
 "IsGateStyle__F9WallStyle":
@@ -35340,61 +35340,61 @@ lbl_8006B804:
 /* 8006B830 000674D0  54 00 F8 7E */	srwi r0, r0, 1
 /* 8006B834 000674D4  7C 00 18 50 */	subf r0, r0, r3
 /* 8006B838 000674D8  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8006B83C 000674DC  4E 80 00 20 */	blr 
+/* 8006B83C 000674DC  4E 80 00 20 */	blr
 
 .global "IsDoorStyle__F9WallStyle"
 "IsDoorStyle__F9WallStyle":
 /* 8006B840 000674E0  38 A3 FF FD */	addi r5, r3, -3
 /* 8006B844 000674E4  38 60 00 00 */	li r3, 0
 /* 8006B848 000674E8  28 05 00 14 */	cmplwi r5, 0x14
-/* 8006B84C 000674EC  4D 81 00 20 */	bgtlr 
+/* 8006B84C 000674EC  4D 81 00 20 */	bgtlr
 /* 8006B850 000674F0  38 00 00 01 */	li r0, 1
 /* 8006B854 000674F4  3C 80 00 10 */	lis r4, 0x0010100D@ha
 /* 8006B858 000674F8  7C 05 28 30 */	slw r5, r0, r5
 /* 8006B85C 000674FC  38 04 10 0D */	addi r0, r4, 0x0010100D@l
 /* 8006B860 00067500  7C A0 00 39 */	and. r0, r5, r0
-/* 8006B864 00067504  4D 82 00 20 */	beqlr 
+/* 8006B864 00067504  4D 82 00 20 */	beqlr
 /* 8006B868 00067508  38 60 00 01 */	li r3, 1
-/* 8006B86C 0006750C  4E 80 00 20 */	blr 
+/* 8006B86C 0006750C  4E 80 00 20 */	blr
 
 .global "IsFenceStyle__F9WallStyle"
 "IsFenceStyle__F9WallStyle":
 /* 8006B870 00067510  38 83 FF FE */	addi r4, r3, -2
 /* 8006B874 00067514  38 60 00 00 */	li r3, 0
 /* 8006B878 00067518  28 04 00 0E */	cmplwi r4, 0xe
-/* 8006B87C 0006751C  4D 81 00 20 */	bgtlr 
+/* 8006B87C 0006751C  4D 81 00 20 */	bgtlr
 /* 8006B880 00067520  38 00 00 01 */	li r0, 1
 /* 8006B884 00067524  7C 00 20 30 */	slw r0, r0, r4
 /* 8006B888 00067528  70 00 5C 01 */	andi. r0, r0, 0x5c01
-/* 8006B88C 0006752C  4D 82 00 20 */	beqlr 
+/* 8006B88C 0006752C  4D 82 00 20 */	beqlr
 /* 8006B890 00067530  38 60 00 01 */	li r3, 1
-/* 8006B894 00067534  4E 80 00 20 */	blr 
+/* 8006B894 00067534  4E 80 00 20 */	blr
 
 .global "GetFadeSquare__Q216InteractorModule13SimInteractorFi"
 "GetFadeSquare__Q216InteractorModule13SimInteractorFi":
 /* 8006B898 00067538  1C 04 00 18 */	mulli r0, r4, 0x18
 /* 8006B89C 0006753C  7C 63 02 14 */	add r3, r3, r0
 /* 8006B8A0 00067540  38 63 00 6C */	addi r3, r3, 0x6c
-/* 8006B8A4 00067544  4E 80 00 20 */	blr 
+/* 8006B8A4 00067544  4E 80 00 20 */	blr
 
 .global "GetPos__10FadeSquareFv"
 "GetPos__10FadeSquareFv":
-/* 8006B8A8 00067548  4E 80 00 20 */	blr 
+/* 8006B8A8 00067548  4E 80 00 20 */	blr
 
 .global "SetDrawOverrideFlag__15EAnimControllerFb"
 "SetDrawOverrideFlag__15EAnimControllerFb":
 /* 8006B8AC 0006754C  98 83 00 78 */	stb r4, 0x78(r3)
-/* 8006B8B0 00067550  4E 80 00 20 */	blr 
+/* 8006B8B0 00067550  4E 80 00 20 */	blr
 
 .global "IsHierarchical__7ERModelFv"
 "IsHierarchical__7ERModelFv":
 /* 8006B8B4 00067554  88 63 00 14 */	lbz r3, 0x14(r3)
-/* 8006B8B8 00067558  4E 80 00 20 */	blr 
+/* 8006B8B8 00067558  4E 80 00 20 */	blr
 
 .global "AreMatsInDLs__7ERModelFv"
 "AreMatsInDLs__7ERModelFv":
 /* 8006B8BC 0006755C  88 63 00 74 */	lbz r3, 0x74(r3)
-/* 8006B8C0 00067560  4E 80 00 20 */	blr 
+/* 8006B8C0 00067560  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<P15EOrderTableData,P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData"
 "uninitialized_copy_ptr<P15EOrderTableData,P15EOrderTableData,P15EOrderTableData>__5eastlFP15EOrderTableDataP15EOrderTableDataP15EOrderTableData_P15EOrderTableData":
@@ -35439,7 +35439,7 @@ lbl_8006B804:
 /* 8006B95C 000675FC  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006B960 00067600  7C 08 03 A6 */	mtlr r0
 /* 8006B964 00067604  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006B968 00067608  4E 80 00 20 */	blr 
+/* 8006B968 00067608  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl38generic_iterator<P15EOrderTableData,v>,Q25eastl38generic_iterator<P15EOrderTableData,v>>__5eastlFQ25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl22integral_constant<b,0>_Q25eastl38generic_iterator<P15EOrderTableData,v>"
 "uninitialized_copy_impl<Q25eastl38generic_iterator<P15EOrderTableData,v>,Q25eastl38generic_iterator<P15EOrderTableData,v>>__5eastlFQ25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl38generic_iterator<P15EOrderTableData,v>Q25eastl22integral_constant<b,0>_Q25eastl38generic_iterator<P15EOrderTableData,v>":
@@ -35487,7 +35487,7 @@ lbl_8006B9E0:
 /* 8006BA04 000676A4  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006BA08 000676A8  7C 08 03 A6 */	mtlr r0
 /* 8006BA0C 000676AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006BA10 000676B0  4E 80 00 20 */	blr 
+/* 8006BA10 000676B0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PUi,PUi,PUi>__5eastlFPUiPUiPUi_PUi"
 "uninitialized_copy_ptr<PUi,PUi,PUi>__5eastlFPUiPUiPUi_PUi":
@@ -35532,7 +35532,7 @@ lbl_8006B9E0:
 /* 8006BAAC 0006774C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006BAB0 00067750  7C 08 03 A6 */	mtlr r0
 /* 8006BAB4 00067754  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006BAB8 00067758  4E 80 00 20 */	blr 
+/* 8006BAB8 00067758  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__5eastlFQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl22integral_constant<b,1>_Q25eastl23generic_iterator<PUi,v>"
 "uninitialized_copy_impl<Q25eastl23generic_iterator<PUi,v>,Q25eastl23generic_iterator<PUi,v>>__5eastlFQ25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl23generic_iterator<PUi,v>Q25eastl22integral_constant<b,1>_Q25eastl23generic_iterator<PUi,v>":
@@ -35552,7 +35552,7 @@ lbl_8006B9E0:
 /* 8006BAF0 00067790  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006BAF4 00067794  7C 08 03 A6 */	mtlr r0
 /* 8006BAF8 00067798  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006BAFC 0006779C  4E 80 00 20 */	blr 
+/* 8006BAFC 0006779C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>>__5eastlFPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>"
 "uninitialized_copy_ptr<PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>,PQ25eastl20pair<Ui,P9ERTexture>>__5eastlFPQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>PQ25eastl20pair<Ui,P9ERTexture>_PQ25eastl20pair<Ui,P9ERTexture>":
@@ -35597,7 +35597,7 @@ lbl_8006B9E0:
 /* 8006BB98 00067838  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006BB9C 0006783C  7C 08 03 A6 */	mtlr r0
 /* 8006BBA0 00067840  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006BBA4 00067844  4E 80 00 20 */	blr 
+/* 8006BBA4 00067844  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>,Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>>__5eastlFQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl22integral_constant<b,0>_Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>"
 "uninitialized_copy_impl<Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>,Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>>__5eastlFQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Q25eastl22integral_constant<b,0>_Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>":
@@ -35645,7 +35645,7 @@ lbl_8006BC1C:
 /* 8006BC40 000678E0  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006BC44 000678E4  7C 08 03 A6 */	mtlr r0
 /* 8006BC48 000678E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006BC4C 000678EC  4E 80 00 20 */	blr 
+/* 8006BC4C 000678EC  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>"
 "uninitialized_copy_ptr<PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>,PQ25eastl19pair<Ui,P8ERShader>>__5eastlFPQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>PQ25eastl19pair<Ui,P8ERShader>_PQ25eastl19pair<Ui,P8ERShader>":
@@ -35690,7 +35690,7 @@ lbl_8006BC1C:
 /* 8006BCE8 00067988  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006BCEC 0006798C  7C 08 03 A6 */	mtlr r0
 /* 8006BCF0 00067990  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006BCF4 00067994  4E 80 00 20 */	blr 
+/* 8006BCF4 00067994  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>,Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>>__5eastlFQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl22integral_constant<b,0>_Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>"
 "uninitialized_copy_impl<Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>,Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>>__5eastlFQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Q25eastl22integral_constant<b,0>_Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>":
@@ -35738,7 +35738,7 @@ lbl_8006BD6C:
 /* 8006BD90 00067A30  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006BD94 00067A34  7C 08 03 A6 */	mtlr r0
 /* 8006BD98 00067A38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006BD9C 00067A3C  4E 80 00 20 */	blr 
+/* 8006BD9C 00067A3C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>"
 "uninitialized_copy_ptr<PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>,PQ25eastl18pair<Ui,P7ERModel>>__5eastlFPQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>PQ25eastl18pair<Ui,P7ERModel>_PQ25eastl18pair<Ui,P7ERModel>":
@@ -35783,7 +35783,7 @@ lbl_8006BD6C:
 /* 8006BE38 00067AD8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006BE3C 00067ADC  7C 08 03 A6 */	mtlr r0
 /* 8006BE40 00067AE0  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006BE44 00067AE4  4E 80 00 20 */	blr 
+/* 8006BE44 00067AE4  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>,Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>>__5eastlFQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl22integral_constant<b,0>_Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>"
 "uninitialized_copy_impl<Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>,Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>>__5eastlFQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Q25eastl22integral_constant<b,0>_Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>":
@@ -35831,7 +35831,7 @@ lbl_8006BEBC:
 /* 8006BEE0 00067B80  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006BEE4 00067B84  7C 08 03 A6 */	mtlr r0
 /* 8006BEE8 00067B88  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006BEEC 00067B8C  4E 80 00 20 */	blr 
+/* 8006BEEC 00067B8C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "uninitialized_copy_ptr<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>>__5eastlFPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>_PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
@@ -35876,7 +35876,7 @@ lbl_8006BEBC:
 /* 8006BF88 00067C28  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006BF8C 00067C2C  7C 08 03 A6 */	mtlr r0
 /* 8006BF90 00067C30  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006BF94 00067C34  4E 80 00 20 */	blr 
+/* 8006BF94 00067C34  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>,Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>>__5eastlFQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl22integral_constant<b,0>_Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>"
 "uninitialized_copy_impl<Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>,Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>>__5eastlFQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Q25eastl22integral_constant<b,0>_Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>":
@@ -35924,7 +35924,7 @@ lbl_8006C00C:
 /* 8006C030 00067CD0  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006C034 00067CD4  7C 08 03 A6 */	mtlr r0
 /* 8006C038 00067CD8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C03C 00067CDC  4E 80 00 20 */	blr 
+/* 8006C03C 00067CDC  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock>__5eastlFPQ216InteractorModule8InvStockPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock"
 "uninitialized_copy_ptr<PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock,PQ216InteractorModule8InvStock>__5eastlFPQ216InteractorModule8InvStockPQ216InteractorModule8InvStockPQ216InteractorModule8InvStock_PQ216InteractorModule8InvStock":
@@ -35969,7 +35969,7 @@ lbl_8006C00C:
 /* 8006C0D8 00067D78  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C0DC 00067D7C  7C 08 03 A6 */	mtlr r0
 /* 8006C0E0 00067D80  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C0E4 00067D84  4E 80 00 20 */	blr 
+/* 8006C0E4 00067D84  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>,Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>>__5eastlFQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl22integral_constant<b,0>_Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>"
 "uninitialized_copy_impl<Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>,Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>>__5eastlFQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Q25eastl22integral_constant<b,0>_Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>":
@@ -36018,7 +36018,7 @@ lbl_8006C160:
 /* 8006C184 00067E24  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006C188 00067E28  7C 08 03 A6 */	mtlr r0
 /* 8006C18C 00067E2C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C190 00067E30  4E 80 00 20 */	blr 
+/* 8006C190 00067E30  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount"
 "uninitialized_copy_ptr<PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount,PQ216InteractorModule14FenceSellCount>__5eastlFPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCountPQ216InteractorModule14FenceSellCount_PQ216InteractorModule14FenceSellCount":
@@ -36063,7 +36063,7 @@ lbl_8006C160:
 /* 8006C22C 00067ECC  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C230 00067ED0  7C 08 03 A6 */	mtlr r0
 /* 8006C234 00067ED4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C238 00067ED8  4E 80 00 20 */	blr 
+/* 8006C238 00067ED8  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>,Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl22integral_constant<b,0>_Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>"
 "uninitialized_copy_impl<Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>,Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Q25eastl22integral_constant<b,0>_Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>":
@@ -36112,7 +36112,7 @@ lbl_8006C2B4:
 /* 8006C2D8 00067F78  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006C2DC 00067F7C  7C 08 03 A6 */	mtlr r0
 /* 8006C2E0 00067F80  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C2E4 00067F84  4E 80 00 20 */	blr 
+/* 8006C2E4 00067F84  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount"
 "uninitialized_copy_ptr<PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount,PQ216InteractorModule16PatternSellCount>__5eastlFPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCountPQ216InteractorModule16PatternSellCount_PQ216InteractorModule16PatternSellCount":
@@ -36157,7 +36157,7 @@ lbl_8006C2B4:
 /* 8006C380 00068020  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C384 00068024  7C 08 03 A6 */	mtlr r0
 /* 8006C388 00068028  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C38C 0006802C  4E 80 00 20 */	blr 
+/* 8006C38C 0006802C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>,Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>>__5eastlFQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl22integral_constant<b,0>_Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>"
 "uninitialized_copy_impl<Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>,Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>>__5eastlFQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Q25eastl22integral_constant<b,0>_Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>":
@@ -36206,7 +36206,7 @@ lbl_8006C408:
 /* 8006C42C 000680CC  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006C430 000680D0  7C 08 03 A6 */	mtlr r0
 /* 8006C434 000680D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C438 000680D8  4E 80 00 20 */	blr 
+/* 8006C438 000680D8  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<i,Ul>__5eastlFPiUlRCi_v"
 "uninitialized_fill_n_ptr<i,Ul>__5eastlFPiUlRCi_v":
@@ -36238,7 +36238,7 @@ lbl_8006C408:
 /* 8006C4A0 00068140  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006C4A4 00068144  7C 08 03 A6 */	mtlr r0
 /* 8006C4A8 00068148  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006C4AC 0006814C  4E 80 00 20 */	blr 
+/* 8006C4AC 0006814C  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl22generic_iterator<Pi,v>,Ul,i>__5eastlFQ25eastl22generic_iterator<Pi,v>UlRCiQ25eastl22integral_constant<b,1>_v"
 "uninitialized_fill_n_impl<Q25eastl22generic_iterator<Pi,v>,Ul,i>__5eastlFQ25eastl22generic_iterator<Pi,v>UlRCiQ25eastl22integral_constant<b,1>_v":
@@ -36252,7 +36252,7 @@ lbl_8006C408:
 /* 8006C4CC 0006816C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006C4D0 00068170  7C 08 03 A6 */	mtlr r0
 /* 8006C4D4 00068174  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006C4D8 00068178  4E 80 00 20 */	blr 
+/* 8006C4D8 00068178  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<Ps,Ps,Ps>__5eastlFPsPsPs_Ps"
 "uninitialized_copy_ptr<Ps,Ps,Ps>__5eastlFPsPsPs_Ps":
@@ -36297,7 +36297,7 @@ lbl_8006C408:
 /* 8006C574 00068214  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C578 00068218  7C 08 03 A6 */	mtlr r0
 /* 8006C57C 0006821C  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C580 00068220  4E 80 00 20 */	blr 
+/* 8006C580 00068220  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__5eastlFQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22integral_constant<b,1>_Q25eastl22generic_iterator<Ps,v>"
 "uninitialized_copy_impl<Q25eastl22generic_iterator<Ps,v>,Q25eastl22generic_iterator<Ps,v>>__5eastlFQ25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22generic_iterator<Ps,v>Q25eastl22integral_constant<b,1>_Q25eastl22generic_iterator<Ps,v>":
@@ -36317,7 +36317,7 @@ lbl_8006C408:
 /* 8006C5B8 00068258  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006C5BC 0006825C  7C 08 03 A6 */	mtlr r0
 /* 8006C5C0 00068260  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C5C4 00068264  4E 80 00 20 */	blr 
+/* 8006C5C4 00068264  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<PQ216InteractorModule10Interactor,Ul>__5eastlFPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor_v"
 "uninitialized_fill_n_ptr<PQ216InteractorModule10Interactor,Ul>__5eastlFPPQ216InteractorModule10InteractorUlRCPQ216InteractorModule10Interactor_v":
@@ -36349,7 +36349,7 @@ lbl_8006C408:
 /* 8006C62C 000682CC  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006C630 000682D0  7C 08 03 A6 */	mtlr r0
 /* 8006C634 000682D4  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006C638 000682D8  4E 80 00 20 */	blr 
+/* 8006C638 000682D8  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Ul,PQ216InteractorModule10Interactor>__5eastlFQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>UlRCPQ216InteractorModule10InteractorQ25eastl22integral_constant<b,1>_v"
 "uninitialized_fill_n_impl<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Ul,PQ216InteractorModule10Interactor>__5eastlFQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>UlRCPQ216InteractorModule10InteractorQ25eastl22integral_constant<b,1>_v":
@@ -36363,7 +36363,7 @@ lbl_8006C408:
 /* 8006C658 000682F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006C65C 000682FC  7C 08 03 A6 */	mtlr r0
 /* 8006C660 00068300  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006C664 00068304  4E 80 00 20 */	blr 
+/* 8006C664 00068304  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor"
 "uninitialized_copy_ptr<PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor,PPQ216InteractorModule10Interactor>__5eastlFPPQ216InteractorModule10InteractorPPQ216InteractorModule10InteractorPPQ216InteractorModule10Interactor_PPQ216InteractorModule10Interactor":
@@ -36408,7 +36408,7 @@ lbl_8006C408:
 /* 8006C700 000683A0  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C704 000683A4  7C 08 03 A6 */	mtlr r0
 /* 8006C708 000683A8  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C70C 000683AC  4E 80 00 20 */	blr 
+/* 8006C70C 000683AC  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>>__5eastlFQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl22integral_constant<b,1>_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>"
 "uninitialized_copy_impl<Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>,Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>>__5eastlFQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Q25eastl22integral_constant<b,1>_Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>":
@@ -36428,7 +36428,7 @@ lbl_8006C408:
 /* 8006C744 000683E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006C748 000683E8  7C 08 03 A6 */	mtlr r0
 /* 8006C74C 000683EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C750 000683F0  4E 80 00 20 */	blr 
+/* 8006C750 000683F0  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<Q316InteractorModule17InteractorManager16ActiveInteractor,Ul>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor_v"
 "uninitialized_fill_n_ptr<Q316InteractorModule17InteractorManager16ActiveInteractor,Ul>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorUlRCQ316InteractorModule17InteractorManager16ActiveInteractor_v":
@@ -36460,7 +36460,7 @@ lbl_8006C408:
 /* 8006C7B8 00068458  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006C7BC 0006845C  7C 08 03 A6 */	mtlr r0
 /* 8006C7C0 00068460  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006C7C4 00068464  4E 80 00 20 */	blr 
+/* 8006C7C4 00068464  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>,Ul,Q316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>UlRCQ316InteractorModule17InteractorManager16ActiveInteractorQ25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>,Ul,Q316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>UlRCQ316InteractorModule17InteractorManager16ActiveInteractorQ25eastl22integral_constant<b,0>_v":
@@ -36498,7 +36498,7 @@ lbl_8006C828:
 /* 8006C838 000684D8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006C83C 000684DC  7C 08 03 A6 */	mtlr r0
 /* 8006C840 000684E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C844 000684E4  4E 80 00 20 */	blr 
+/* 8006C844 000684E4  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor"
 "uninitialized_copy_ptr<PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor,PQ316InteractorModule17InteractorManager16ActiveInteractor>__5eastlFPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractorPQ316InteractorModule17InteractorManager16ActiveInteractor_PQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -36543,7 +36543,7 @@ lbl_8006C828:
 /* 8006C8E0 00068580  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006C8E4 00068584  7C 08 03 A6 */	mtlr r0
 /* 8006C8E8 00068588  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006C8EC 0006858C  4E 80 00 20 */	blr 
+/* 8006C8EC 0006858C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>,Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>>__5eastlFQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl22integral_constant<b,0>_Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>"
 "uninitialized_copy_impl<Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>,Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>>__5eastlFQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Q25eastl22integral_constant<b,0>_Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>":
@@ -36591,7 +36591,7 @@ lbl_8006C964:
 /* 8006C988 00068628  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006C98C 0006862C  7C 08 03 A6 */	mtlr r0
 /* 8006C990 00068630  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006C994 00068634  4E 80 00 20 */	blr 
+/* 8006C994 00068634  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Ul>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_v"
 "uninitialized_fill_n_ptr<Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,Ul>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_v":
@@ -36623,7 +36623,7 @@ lbl_8006C964:
 /* 8006C9FC 0006869C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006CA00 000686A0  7C 08 03 A6 */	mtlr r0
 /* 8006CA04 000686A4  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006CA08 000686A8  4E 80 00 20 */	blr 
+/* 8006CA08 000686A8  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>,Ul,Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Q25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>,Ul,Q25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>UlRCQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>Q25eastl22integral_constant<b,0>_v":
@@ -36661,7 +36661,7 @@ lbl_8006CA6C:
 /* 8006CA7C 0006871C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006CA80 00068720  7C 08 03 A6 */	mtlr r0
 /* 8006CA84 00068724  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006CA88 00068728  4E 80 00 20 */	blr 
+/* 8006CA88 00068728  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "uninitialized_copy_ptr<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>>__5eastlFPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>_PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
@@ -36706,7 +36706,7 @@ lbl_8006CA6C:
 /* 8006CB24 000687C4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006CB28 000687C8  7C 08 03 A6 */	mtlr r0
 /* 8006CB2C 000687CC  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006CB30 000687D0  4E 80 00 20 */	blr 
+/* 8006CB30 000687D0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>,Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>>__5eastlFQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl22integral_constant<b,0>_Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>"
 "uninitialized_copy_impl<Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>,Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>>__5eastlFQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Q25eastl22integral_constant<b,0>_Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>":
@@ -36754,7 +36754,7 @@ lbl_8006CBA8:
 /* 8006CBCC 0006886C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006CBD0 00068870  7C 08 03 A6 */	mtlr r0
 /* 8006CBD4 00068874  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006CBD8 00068878  4E 80 00 20 */	blr 
+/* 8006CBD8 00068878  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Ul>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_v"
 "uninitialized_fill_n_ptr<Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,Ul>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_v":
@@ -36786,7 +36786,7 @@ lbl_8006CBA8:
 /* 8006CC40 000688E0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006CC44 000688E4  7C 08 03 A6 */	mtlr r0
 /* 8006CC48 000688E8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006CC4C 000688EC  4E 80 00 20 */	blr 
+/* 8006CC4C 000688EC  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>,Ul,Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>Q25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>,Ul,Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>UlRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>Q25eastl22integral_constant<b,0>_v":
@@ -36824,7 +36824,7 @@ lbl_8006CCB0:
 /* 8006CCC0 00068960  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006CCC4 00068964  7C 08 03 A6 */	mtlr r0
 /* 8006CCC8 00068968  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006CCCC 0006896C  4E 80 00 20 */	blr 
+/* 8006CCCC 0006896C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "uninitialized_copy_ptr<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>>__5eastlFPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>_PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -36869,7 +36869,7 @@ lbl_8006CCB0:
 /* 8006CD68 00068A08  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006CD6C 00068A0C  7C 08 03 A6 */	mtlr r0
 /* 8006CD70 00068A10  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006CD74 00068A14  4E 80 00 20 */	blr 
+/* 8006CD74 00068A14  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>,Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>>__5eastlFQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl22integral_constant<b,0>_Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>"
 "uninitialized_copy_impl<Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>,Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>>__5eastlFQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Q25eastl22integral_constant<b,0>_Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>":
@@ -36917,7 +36917,7 @@ lbl_8006CDEC:
 /* 8006CE10 00068AB0  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006CE14 00068AB4  7C 08 03 A6 */	mtlr r0
 /* 8006CE18 00068AB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006CE1C 00068ABC  4E 80 00 20 */	blr 
+/* 8006CE1C 00068ABC  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_ptr<Q216InteractorModule14InteractorInfo,Ul>__5eastlFPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo_v"
 "uninitialized_fill_n_ptr<Q216InteractorModule14InteractorInfo,Ul>__5eastlFPQ216InteractorModule14InteractorInfoUlRCQ216InteractorModule14InteractorInfo_v":
@@ -36949,7 +36949,7 @@ lbl_8006CDEC:
 /* 8006CE84 00068B24  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8006CE88 00068B28  7C 08 03 A6 */	mtlr r0
 /* 8006CE8C 00068B2C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006CE90 00068B30  4E 80 00 20 */	blr 
+/* 8006CE90 00068B30  4E 80 00 20 */	blr
 
 .global "uninitialized_fill_n_impl<Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>,Ul,Q216InteractorModule14InteractorInfo>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>UlRCQ216InteractorModule14InteractorInfoQ25eastl22integral_constant<b,0>_v"
 "uninitialized_fill_n_impl<Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>,Ul,Q216InteractorModule14InteractorInfo>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>UlRCQ216InteractorModule14InteractorInfoQ25eastl22integral_constant<b,0>_v":
@@ -36987,7 +36987,7 @@ lbl_8006CEF4:
 /* 8006CF04 00068BA4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8006CF08 00068BA8  7C 08 03 A6 */	mtlr r0
 /* 8006CF0C 00068BAC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006CF10 00068BB0  4E 80 00 20 */	blr 
+/* 8006CF10 00068BB0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo"
 "uninitialized_copy_ptr<PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo,PQ216InteractorModule14InteractorInfo>__5eastlFPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfoPQ216InteractorModule14InteractorInfo_PQ216InteractorModule14InteractorInfo":
@@ -37032,7 +37032,7 @@ lbl_8006CEF4:
 /* 8006CFAC 00068C4C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006CFB0 00068C50  7C 08 03 A6 */	mtlr r0
 /* 8006CFB4 00068C54  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006CFB8 00068C58  4E 80 00 20 */	blr 
+/* 8006CFB8 00068C58  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>,Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl22integral_constant<b,0>_Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>"
 "uninitialized_copy_impl<Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>,Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>>__5eastlFQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Q25eastl22integral_constant<b,0>_Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>":
@@ -37080,7 +37080,7 @@ lbl_8006D030:
 /* 8006D054 00068CF4  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006D058 00068CF8  7C 08 03 A6 */	mtlr r0
 /* 8006D05C 00068CFC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006D060 00068D00  4E 80 00 20 */	blr 
+/* 8006D060 00068D00  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "uninitialized_copy_ptr<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>>__5eastlFPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>_PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
@@ -37125,7 +37125,7 @@ lbl_8006D030:
 /* 8006D0FC 00068D9C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006D100 00068DA0  7C 08 03 A6 */	mtlr r0
 /* 8006D104 00068DA4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006D108 00068DA8  4E 80 00 20 */	blr 
+/* 8006D108 00068DA8  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>,Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>>__5eastlFQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl22integral_constant<b,0>_Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>"
 "uninitialized_copy_impl<Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>,Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>>__5eastlFQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Q25eastl22integral_constant<b,0>_Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>":
@@ -37173,7 +37173,7 @@ lbl_8006D180:
 /* 8006D1A4 00068E44  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006D1A8 00068E48  7C 08 03 A6 */	mtlr r0
 /* 8006D1AC 00068E4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006D1B0 00068E50  4E 80 00 20 */	blr 
+/* 8006D1B0 00068E50  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PP12ISimInstance,PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance"
 "uninitialized_copy_ptr<PP12ISimInstance,PP12ISimInstance,PP12ISimInstance>__5eastlFPP12ISimInstancePP12ISimInstancePP12ISimInstance_PP12ISimInstance":
@@ -37218,7 +37218,7 @@ lbl_8006D180:
 /* 8006D24C 00068EEC  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006D250 00068EF0  7C 08 03 A6 */	mtlr r0
 /* 8006D254 00068EF4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006D258 00068EF8  4E 80 00 20 */	blr 
+/* 8006D258 00068EF8  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__5eastlFQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl22integral_constant<b,1>_Q25eastl36generic_iterator<PP12ISimInstance,v>"
 "uninitialized_copy_impl<Q25eastl36generic_iterator<PP12ISimInstance,v>,Q25eastl36generic_iterator<PP12ISimInstance,v>>__5eastlFQ25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl36generic_iterator<PP12ISimInstance,v>Q25eastl22integral_constant<b,1>_Q25eastl36generic_iterator<PP12ISimInstance,v>":
@@ -37238,7 +37238,7 @@ lbl_8006D180:
 /* 8006D290 00068F30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006D294 00068F34  7C 08 03 A6 */	mtlr r0
 /* 8006D298 00068F38  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006D29C 00068F3C  4E 80 00 20 */	blr 
+/* 8006D29C 00068F3C  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<PP9EInstance,PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance"
 "uninitialized_copy_ptr<PP9EInstance,PP9EInstance,PP9EInstance>__5eastlFPP9EInstancePP9EInstancePP9EInstance_PP9EInstance":
@@ -37283,7 +37283,7 @@ lbl_8006D180:
 /* 8006D338 00068FD8  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006D33C 00068FDC  7C 08 03 A6 */	mtlr r0
 /* 8006D340 00068FE0  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006D344 00068FE4  4E 80 00 20 */	blr 
+/* 8006D344 00068FE4  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl32generic_iterator<PP9EInstance,v>,Q25eastl32generic_iterator<PP9EInstance,v>>__5eastlFQ25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl22integral_constant<b,1>_Q25eastl32generic_iterator<PP9EInstance,v>"
 "uninitialized_copy_impl<Q25eastl32generic_iterator<PP9EInstance,v>,Q25eastl32generic_iterator<PP9EInstance,v>>__5eastlFQ25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl32generic_iterator<PP9EInstance,v>Q25eastl22integral_constant<b,1>_Q25eastl32generic_iterator<PP9EInstance,v>":
@@ -37303,7 +37303,7 @@ lbl_8006D180:
 /* 8006D37C 0006901C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006D380 00069020  7C 08 03 A6 */	mtlr r0
 /* 8006D384 00069024  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006D388 00069028  4E 80 00 20 */	blr 
+/* 8006D388 00069028  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_ptr<P7CTilePt,P7CTilePt,P7CTilePt>__5eastlFP7CTilePtP7CTilePtP7CTilePt_P7CTilePt"
 "uninitialized_copy_ptr<P7CTilePt,P7CTilePt,P7CTilePt>__5eastlFP7CTilePtP7CTilePtP7CTilePt_P7CTilePt":
@@ -37348,7 +37348,7 @@ lbl_8006D180:
 /* 8006D424 000690C4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8006D428 000690C8  7C 08 03 A6 */	mtlr r0
 /* 8006D42C 000690CC  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006D430 000690D0  4E 80 00 20 */	blr 
+/* 8006D430 000690D0  4E 80 00 20 */	blr
 
 .global "uninitialized_copy_impl<Q25eastl29generic_iterator<P7CTilePt,v>,Q25eastl29generic_iterator<P7CTilePt,v>>__5eastlFQ25eastl29generic_iterator<P7CTilePt,v>Q25eastl29generic_iterator<P7CTilePt,v>Q25eastl29generic_iterator<P7CTilePt,v>Q25eastl22integral_constant<b,0>_Q25eastl29generic_iterator<P7CTilePt,v>"
 "uninitialized_copy_impl<Q25eastl29generic_iterator<P7CTilePt,v>,Q25eastl29generic_iterator<P7CTilePt,v>>__5eastlFQ25eastl29generic_iterator<P7CTilePt,v>Q25eastl29generic_iterator<P7CTilePt,v>Q25eastl29generic_iterator<P7CTilePt,v>Q25eastl22integral_constant<b,0>_Q25eastl29generic_iterator<P7CTilePt,v>":
@@ -37396,17 +37396,17 @@ lbl_8006D4A8:
 /* 8006D4CC 0006916C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8006D4D0 00069170  7C 08 03 A6 */	mtlr r0
 /* 8006D4D4 00069174  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006D4D8 00069178  4E 80 00 20 */	blr 
+/* 8006D4D8 00069178  4E 80 00 20 */	blr
 
 .global "base__Q25eastl38generic_iterator<P15EOrderTableData,v>CFv"
 "base__Q25eastl38generic_iterator<P15EOrderTableData,v>CFv":
-/* 8006D4DC 0006917C  4E 80 00 20 */	blr 
+/* 8006D4DC 0006917C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl38generic_iterator<P15EOrderTableData,v>FRCQ25eastl38generic_iterator<P15EOrderTableData,v>"
 "__ct__Q25eastl38generic_iterator<P15EOrderTableData,v>FRCQ25eastl38generic_iterator<P15EOrderTableData,v>":
 /* 8006D4E0 00069180  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D4E4 00069184  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D4E8 00069188  4E 80 00 20 */	blr 
+/* 8006D4E8 00069188  4E 80 00 20 */	blr
 
 .global "__ne<P15EOrderTableData,v>__5eastlFRCQ25eastl38generic_iterator<P15EOrderTableData,v>RCQ25eastl38generic_iterator<P15EOrderTableData,v>_b"
 "__ne<P15EOrderTableData,v>__5eastlFRCQ25eastl38generic_iterator<P15EOrderTableData,v>RCQ25eastl38generic_iterator<P15EOrderTableData,v>_b":
@@ -37431,51 +37431,51 @@ lbl_8006D4A8:
 /* 8006D534 000691D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D538 000691D8  7C 08 03 A6 */	mtlr r0
 /* 8006D53C 000691DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D540 000691E0  4E 80 00 20 */	blr 
+/* 8006D540 000691E0  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl38generic_iterator<P15EOrderTableData,v>Fv"
 "__pp__Q25eastl38generic_iterator<P15EOrderTableData,v>Fv":
 /* 8006D544 000691E4  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D548 000691E8  38 04 00 3C */	addi r0, r4, 0x3c
 /* 8006D54C 000691EC  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D550 000691F0  4E 80 00 20 */	blr 
+/* 8006D550 000691F0  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl38generic_iterator<P15EOrderTableData,v>CFv"
 "__ml__Q25eastl38generic_iterator<P15EOrderTableData,v>CFv":
 /* 8006D554 000691F4  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D558 000691F8  4E 80 00 20 */	blr 
+/* 8006D558 000691F8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl38generic_iterator<P15EOrderTableData,v>FRCP15EOrderTableData"
 "__ct__Q25eastl38generic_iterator<P15EOrderTableData,v>FRCP15EOrderTableData":
 /* 8006D55C 000691FC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D560 00069200  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D564 00069204  4E 80 00 20 */	blr 
+/* 8006D564 00069204  4E 80 00 20 */	blr
 
 .global "base__Q25eastl23generic_iterator<PUi,v>CFv"
 "base__Q25eastl23generic_iterator<PUi,v>CFv":
-/* 8006D568 00069208  4E 80 00 20 */	blr 
+/* 8006D568 00069208  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl23generic_iterator<PUi,v>FRCQ25eastl23generic_iterator<PUi,v>"
 "__ct__Q25eastl23generic_iterator<PUi,v>FRCQ25eastl23generic_iterator<PUi,v>":
 /* 8006D56C 0006920C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D570 00069210  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D574 00069214  4E 80 00 20 */	blr 
+/* 8006D574 00069214  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl23generic_iterator<PUi,v>FRCPUi"
 "__ct__Q25eastl23generic_iterator<PUi,v>FRCPUi":
 /* 8006D578 00069218  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D57C 0006921C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D580 00069220  4E 80 00 20 */	blr 
+/* 8006D580 00069220  4E 80 00 20 */	blr
 
 .global "base__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>CFv"
 "base__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>CFv":
-/* 8006D584 00069224  4E 80 00 20 */	blr 
+/* 8006D584 00069224  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>FRCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>"
 "__ct__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>FRCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>":
 /* 8006D588 00069228  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D58C 0006922C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D590 00069230  4E 80 00 20 */	blr 
+/* 8006D590 00069230  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl20pair<Ui,P9ERTexture>,v>__5eastlFRCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>RCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>_b"
 "__ne<PQ25eastl20pair<Ui,P9ERTexture>,v>__5eastlFRCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>RCQ25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>_b":
@@ -37500,35 +37500,35 @@ lbl_8006D4A8:
 /* 8006D5DC 0006927C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D5E0 00069280  7C 08 03 A6 */	mtlr r0
 /* 8006D5E4 00069284  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D5E8 00069288  4E 80 00 20 */	blr 
+/* 8006D5E8 00069288  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Fv"
 "__pp__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>Fv":
 /* 8006D5EC 0006928C  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D5F0 00069290  38 04 00 08 */	addi r0, r4, 8
 /* 8006D5F4 00069294  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D5F8 00069298  4E 80 00 20 */	blr 
+/* 8006D5F8 00069298  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>CFv"
 "__ml__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>CFv":
 /* 8006D5FC 0006929C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D600 000692A0  4E 80 00 20 */	blr 
+/* 8006D600 000692A0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>FRCPQ25eastl20pair<Ui,P9ERTexture>"
 "__ct__Q25eastl51generic_iterator<PQ25eastl20pair<Ui,P9ERTexture>,v>FRCPQ25eastl20pair<Ui,P9ERTexture>":
 /* 8006D604 000692A4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D608 000692A8  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D60C 000692AC  4E 80 00 20 */	blr 
+/* 8006D60C 000692AC  4E 80 00 20 */	blr
 
 .global "base__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>CFv"
 "base__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>CFv":
-/* 8006D610 000692B0  4E 80 00 20 */	blr 
+/* 8006D610 000692B0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>FRCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>"
 "__ct__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>FRCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>":
 /* 8006D614 000692B4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D618 000692B8  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D61C 000692BC  4E 80 00 20 */	blr 
+/* 8006D61C 000692BC  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl19pair<Ui,P8ERShader>,v>__5eastlFRCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>RCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>_b"
 "__ne<PQ25eastl19pair<Ui,P8ERShader>,v>__5eastlFRCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>RCQ25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>_b":
@@ -37553,35 +37553,35 @@ lbl_8006D4A8:
 /* 8006D668 00069308  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D66C 0006930C  7C 08 03 A6 */	mtlr r0
 /* 8006D670 00069310  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D674 00069314  4E 80 00 20 */	blr 
+/* 8006D674 00069314  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Fv"
 "__pp__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>Fv":
 /* 8006D678 00069318  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D67C 0006931C  38 04 00 08 */	addi r0, r4, 8
 /* 8006D680 00069320  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D684 00069324  4E 80 00 20 */	blr 
+/* 8006D684 00069324  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>CFv"
 "__ml__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>CFv":
 /* 8006D688 00069328  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D68C 0006932C  4E 80 00 20 */	blr 
+/* 8006D68C 0006932C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>FRCPQ25eastl19pair<Ui,P8ERShader>"
 "__ct__Q25eastl50generic_iterator<PQ25eastl19pair<Ui,P8ERShader>,v>FRCPQ25eastl19pair<Ui,P8ERShader>":
 /* 8006D690 00069330  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D694 00069334  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D698 00069338  4E 80 00 20 */	blr 
+/* 8006D698 00069338  4E 80 00 20 */	blr
 
 .global "base__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>CFv"
 "base__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>CFv":
-/* 8006D69C 0006933C  4E 80 00 20 */	blr 
+/* 8006D69C 0006933C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>FRCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>"
 "__ct__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>FRCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>":
 /* 8006D6A0 00069340  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D6A4 00069344  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D6A8 00069348  4E 80 00 20 */	blr 
+/* 8006D6A8 00069348  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl18pair<Ui,P7ERModel>,v>__5eastlFRCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>RCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>_b"
 "__ne<PQ25eastl18pair<Ui,P7ERModel>,v>__5eastlFRCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>RCQ25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>_b":
@@ -37606,35 +37606,35 @@ lbl_8006D4A8:
 /* 8006D6F4 00069394  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D6F8 00069398  7C 08 03 A6 */	mtlr r0
 /* 8006D6FC 0006939C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D700 000693A0  4E 80 00 20 */	blr 
+/* 8006D700 000693A0  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Fv"
 "__pp__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>Fv":
 /* 8006D704 000693A4  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D708 000693A8  38 04 00 08 */	addi r0, r4, 8
 /* 8006D70C 000693AC  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D710 000693B0  4E 80 00 20 */	blr 
+/* 8006D710 000693B0  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>CFv"
 "__ml__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>CFv":
 /* 8006D714 000693B4  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D718 000693B8  4E 80 00 20 */	blr 
+/* 8006D718 000693B8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>FRCPQ25eastl18pair<Ui,P7ERModel>"
 "__ct__Q25eastl49generic_iterator<PQ25eastl18pair<Ui,P7ERModel>,v>FRCPQ25eastl18pair<Ui,P7ERModel>":
 /* 8006D71C 000693BC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D720 000693C0  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D724 000693C4  4E 80 00 20 */	blr 
+/* 8006D724 000693C4  4E 80 00 20 */	blr
 
 .global "base__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>CFv"
 "base__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>CFv":
-/* 8006D728 000693C8  4E 80 00 20 */	blr 
+/* 8006D728 000693C8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>FRCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>"
 "__ct__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>FRCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>":
 /* 8006D72C 000693CC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D730 000693D0  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D734 000693D4  4E 80 00 20 */	blr 
+/* 8006D734 000693D4  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>__5eastlFRCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>RCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>_b"
 "__ne<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>__5eastlFRCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>RCQ25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>_b":
@@ -37659,35 +37659,35 @@ lbl_8006D4A8:
 /* 8006D780 00069420  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D784 00069424  7C 08 03 A6 */	mtlr r0
 /* 8006D788 00069428  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D78C 0006942C  4E 80 00 20 */	blr 
+/* 8006D78C 0006942C  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Fv"
 "__pp__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>Fv":
 /* 8006D790 00069430  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D794 00069434  38 04 00 0C */	addi r0, r4, 0xc
 /* 8006D798 00069438  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D79C 0006943C  4E 80 00 20 */	blr 
+/* 8006D79C 0006943C  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>CFv"
 "__ml__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>CFv":
 /* 8006D7A0 00069440  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D7A4 00069444  4E 80 00 20 */	blr 
+/* 8006D7A4 00069444  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>FRCPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>"
 "__ct__Q25eastl129generic_iterator<PQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>,v>FRCPQ25eastl98pair<Q316InteractorModule22InteractorInputManager17InteractorCommand,Q25eastl18pair<b,9ECTRL_CMD>>":
 /* 8006D7A8 00069448  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D7AC 0006944C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D7B0 00069450  4E 80 00 20 */	blr 
+/* 8006D7B0 00069450  4E 80 00 20 */	blr
 
 .global "base__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>CFv"
 "base__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>CFv":
-/* 8006D7B4 00069454  4E 80 00 20 */	blr 
+/* 8006D7B4 00069454  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>FRCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>"
 "__ct__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>FRCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>":
 /* 8006D7B8 00069458  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D7BC 0006945C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D7C0 00069460  4E 80 00 20 */	blr 
+/* 8006D7C0 00069460  4E 80 00 20 */	blr
 
 .global "__ne<PQ216InteractorModule8InvStock,v>__5eastlFRCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>RCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>_b"
 "__ne<PQ216InteractorModule8InvStock,v>__5eastlFRCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>RCQ25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>_b":
@@ -37712,35 +37712,35 @@ lbl_8006D4A8:
 /* 8006D80C 000694AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D810 000694B0  7C 08 03 A6 */	mtlr r0
 /* 8006D814 000694B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D818 000694B8  4E 80 00 20 */	blr 
+/* 8006D818 000694B8  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Fv"
 "__pp__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>Fv":
 /* 8006D81C 000694BC  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D820 000694C0  38 04 00 08 */	addi r0, r4, 8
 /* 8006D824 000694C4  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D828 000694C8  4E 80 00 20 */	blr 
+/* 8006D828 000694C8  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>CFv"
 "__ml__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>CFv":
 /* 8006D82C 000694CC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D830 000694D0  4E 80 00 20 */	blr 
+/* 8006D830 000694D0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>FRCPQ216InteractorModule8InvStock"
 "__ct__Q25eastl50generic_iterator<PQ216InteractorModule8InvStock,v>FRCPQ216InteractorModule8InvStock":
 /* 8006D834 000694D4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D838 000694D8  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D83C 000694DC  4E 80 00 20 */	blr 
+/* 8006D83C 000694DC  4E 80 00 20 */	blr
 
 .global "base__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>CFv"
 "base__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>CFv":
-/* 8006D840 000694E0  4E 80 00 20 */	blr 
+/* 8006D840 000694E0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>FRCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>"
 "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>FRCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>":
 /* 8006D844 000694E4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D848 000694E8  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D84C 000694EC  4E 80 00 20 */	blr 
+/* 8006D84C 000694EC  4E 80 00 20 */	blr
 
 .global "__ne<PQ216InteractorModule14FenceSellCount,v>__5eastlFRCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>RCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>_b"
 "__ne<PQ216InteractorModule14FenceSellCount,v>__5eastlFRCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>RCQ25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>_b":
@@ -37765,35 +37765,35 @@ lbl_8006D4A8:
 /* 8006D898 00069538  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D89C 0006953C  7C 08 03 A6 */	mtlr r0
 /* 8006D8A0 00069540  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D8A4 00069544  4E 80 00 20 */	blr 
+/* 8006D8A4 00069544  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Fv"
 "__pp__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>Fv":
 /* 8006D8A8 00069548  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D8AC 0006954C  38 04 00 08 */	addi r0, r4, 8
 /* 8006D8B0 00069550  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D8B4 00069554  4E 80 00 20 */	blr 
+/* 8006D8B4 00069554  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>CFv"
 "__ml__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>CFv":
 /* 8006D8B8 00069558  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D8BC 0006955C  4E 80 00 20 */	blr 
+/* 8006D8BC 0006955C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>FRCPQ216InteractorModule14FenceSellCount"
 "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14FenceSellCount,v>FRCPQ216InteractorModule14FenceSellCount":
 /* 8006D8C0 00069560  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D8C4 00069564  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D8C8 00069568  4E 80 00 20 */	blr 
+/* 8006D8C8 00069568  4E 80 00 20 */	blr
 
 .global "base__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>CFv"
 "base__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>CFv":
-/* 8006D8CC 0006956C  4E 80 00 20 */	blr 
+/* 8006D8CC 0006956C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>FRCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>"
 "__ct__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>FRCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>":
 /* 8006D8D0 00069570  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D8D4 00069574  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D8D8 00069578  4E 80 00 20 */	blr 
+/* 8006D8D8 00069578  4E 80 00 20 */	blr
 
 .global "__ne<PQ216InteractorModule16PatternSellCount,v>__5eastlFRCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>RCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>_b"
 "__ne<PQ216InteractorModule16PatternSellCount,v>__5eastlFRCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>RCQ25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>_b":
@@ -37818,109 +37818,109 @@ lbl_8006D4A8:
 /* 8006D924 000695C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D928 000695C8  7C 08 03 A6 */	mtlr r0
 /* 8006D92C 000695CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006D930 000695D0  4E 80 00 20 */	blr 
+/* 8006D930 000695D0  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Fv"
 "__pp__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>Fv":
 /* 8006D934 000695D4  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D938 000695D8  38 04 00 08 */	addi r0, r4, 8
 /* 8006D93C 000695DC  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D940 000695E0  4E 80 00 20 */	blr 
+/* 8006D940 000695E0  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>CFv"
 "__ml__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>CFv":
 /* 8006D944 000695E4  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D948 000695E8  4E 80 00 20 */	blr 
+/* 8006D948 000695E8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>FRCPQ216InteractorModule16PatternSellCount"
 "__ct__Q25eastl59generic_iterator<PQ216InteractorModule16PatternSellCount,v>FRCPQ216InteractorModule16PatternSellCount":
 /* 8006D94C 000695EC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D950 000695F0  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D954 000695F4  4E 80 00 20 */	blr 
+/* 8006D954 000695F4  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl22generic_iterator<Pi,v>Fv"
 "__pp__Q25eastl22generic_iterator<Pi,v>Fv":
 /* 8006D958 000695F8  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D95C 000695FC  38 04 00 04 */	addi r0, r4, 4
 /* 8006D960 00069600  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D964 00069604  4E 80 00 20 */	blr 
+/* 8006D964 00069604  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl22generic_iterator<Pi,v>CFv"
 "__ml__Q25eastl22generic_iterator<Pi,v>CFv":
 /* 8006D968 00069608  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D96C 0006960C  4E 80 00 20 */	blr 
+/* 8006D96C 0006960C  4E 80 00 20 */	blr
 
 .global "base__Q25eastl22generic_iterator<Ps,v>CFv"
 "base__Q25eastl22generic_iterator<Ps,v>CFv":
-/* 8006D970 00069610  4E 80 00 20 */	blr 
+/* 8006D970 00069610  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl22generic_iterator<Ps,v>FRCQ25eastl22generic_iterator<Ps,v>"
 "__ct__Q25eastl22generic_iterator<Ps,v>FRCQ25eastl22generic_iterator<Ps,v>":
 /* 8006D974 00069614  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D978 00069618  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D97C 0006961C  4E 80 00 20 */	blr 
+/* 8006D97C 0006961C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl22generic_iterator<Ps,v>FRCPs"
 "__ct__Q25eastl22generic_iterator<Ps,v>FRCPs":
 /* 8006D980 00069620  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D984 00069624  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D988 00069628  4E 80 00 20 */	blr 
+/* 8006D988 00069628  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Fv"
 "__pp__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>Fv":
 /* 8006D98C 0006962C  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D990 00069630  38 04 00 04 */	addi r0, r4, 4
 /* 8006D994 00069634  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D998 00069638  4E 80 00 20 */	blr 
+/* 8006D998 00069638  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>CFv"
 "__ml__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>CFv":
 /* 8006D99C 0006963C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D9A0 00069640  4E 80 00 20 */	blr 
+/* 8006D9A0 00069640  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>FRCPPQ216InteractorModule10Interactor"
 "__ct__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>FRCPPQ216InteractorModule10Interactor":
 /* 8006D9A4 00069644  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D9A8 00069648  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D9AC 0006964C  4E 80 00 20 */	blr 
+/* 8006D9AC 0006964C  4E 80 00 20 */	blr
 
 .global "base__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>CFv"
 "base__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>CFv":
-/* 8006D9B0 00069650  4E 80 00 20 */	blr 
+/* 8006D9B0 00069650  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>FRCQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>"
 "__ct__Q25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>FRCQ25eastl54generic_iterator<PPQ216InteractorModule10Interactor,v>":
 /* 8006D9B4 00069654  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D9B8 00069658  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D9BC 0006965C  4E 80 00 20 */	blr 
+/* 8006D9BC 0006965C  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Fv"
 "__pp__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>Fv":
 /* 8006D9C0 00069660  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006D9C4 00069664  38 04 00 08 */	addi r0, r4, 8
 /* 8006D9C8 00069668  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D9CC 0006966C  4E 80 00 20 */	blr 
+/* 8006D9CC 0006966C  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>CFv"
 "__ml__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>CFv":
 /* 8006D9D0 00069670  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006D9D4 00069674  4E 80 00 20 */	blr 
+/* 8006D9D4 00069674  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>FRCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>"
 "__ct__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>FRCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>":
 /* 8006D9D8 00069678  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D9DC 0006967C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D9E0 00069680  4E 80 00 20 */	blr 
+/* 8006D9E0 00069680  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>FRCPQ316InteractorModule17InteractorManager16ActiveInteractor"
 "__ct__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>FRCPQ316InteractorModule17InteractorManager16ActiveInteractor":
 /* 8006D9E4 00069684  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006D9E8 00069688  90 03 00 00 */	stw r0, 0(r3)
-/* 8006D9EC 0006968C  4E 80 00 20 */	blr 
+/* 8006D9EC 0006968C  4E 80 00 20 */	blr
 
 .global "base__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>CFv"
 "base__Q25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>CFv":
-/* 8006D9F0 00069690  4E 80 00 20 */	blr 
+/* 8006D9F0 00069690  4E 80 00 20 */	blr
 
 .global "__ne<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>__5eastlFRCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>RCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>_b"
 "__ne<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>__5eastlFRCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>RCQ25eastl78generic_iterator<PQ316InteractorModule17InteractorManager16ActiveInteractor,v>_b":
@@ -37945,7 +37945,7 @@ lbl_8006D4A8:
 /* 8006DA3C 000696DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DA40 000696E0  7C 08 03 A6 */	mtlr r0
 /* 8006DA44 000696E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DA48 000696E8  4E 80 00 20 */	blr 
+/* 8006DA48 000696E8  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule17InteractorManager16ActiveInteractorFRCQ316InteractorModule17InteractorManager16ActiveInteractor"
 "__ct__Q316InteractorModule17InteractorManager16ActiveInteractorFRCQ316InteractorModule17InteractorManager16ActiveInteractor":
@@ -37953,35 +37953,35 @@ lbl_8006D4A8:
 /* 8006DA50 000696F0  80 04 00 04 */	lwz r0, 4(r4)
 /* 8006DA54 000696F4  90 A3 00 00 */	stw r5, 0(r3)
 /* 8006DA58 000696F8  90 03 00 04 */	stw r0, 4(r3)
-/* 8006DA5C 000696FC  4E 80 00 20 */	blr 
+/* 8006DA5C 000696FC  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Fv"
 "__pp__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>Fv":
 /* 8006DA60 00069700  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006DA64 00069704  38 04 00 10 */	addi r0, r4, 0x10
 /* 8006DA68 00069708  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DA6C 0006970C  4E 80 00 20 */	blr 
+/* 8006DA6C 0006970C  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>CFv"
 "__ml__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>CFv":
 /* 8006DA70 00069710  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DA74 00069714  4E 80 00 20 */	blr 
+/* 8006DA74 00069714  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>FRCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>"
 "__ct__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>FRCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>":
 /* 8006DA78 00069718  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DA7C 0006971C  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DA80 00069720  4E 80 00 20 */	blr 
+/* 8006DA80 00069720  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>FRCPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>"
 "__ct__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>FRCPQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>":
 /* 8006DA84 00069724  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DA88 00069728  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DA8C 0006972C  4E 80 00 20 */	blr 
+/* 8006DA8C 0006972C  4E 80 00 20 */	blr
 
 .global "base__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>CFv"
 "base__Q25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>CFv":
-/* 8006DA90 00069730  4E 80 00 20 */	blr 
+/* 8006DA90 00069730  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>__5eastlFRCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>RCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>_b"
 "__ne<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>__5eastlFRCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>RCQ25eastl91generic_iterator<PQ25eastl60vector<PQ216InteractorModule10Interactor,Q25eastl9allocator>,v>_b":
@@ -38006,35 +38006,35 @@ lbl_8006D4A8:
 /* 8006DADC 0006977C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DAE0 00069780  7C 08 03 A6 */	mtlr r0
 /* 8006DAE4 00069784  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DAE8 00069788  4E 80 00 20 */	blr 
+/* 8006DAE8 00069788  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Fv"
 "__pp__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>Fv":
 /* 8006DAEC 0006978C  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006DAF0 00069790  38 04 00 08 */	addi r0, r4, 8
 /* 8006DAF4 00069794  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DAF8 00069798  4E 80 00 20 */	blr 
+/* 8006DAF8 00069798  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>CFv"
 "__ml__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>CFv":
 /* 8006DAFC 0006979C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DB00 000697A0  4E 80 00 20 */	blr 
+/* 8006DB00 000697A0  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>FRCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>"
 "__ct__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>FRCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>":
 /* 8006DB04 000697A4  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DB08 000697A8  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DB0C 000697AC  4E 80 00 20 */	blr 
+/* 8006DB0C 000697AC  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>FRCPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "__ct__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>FRCPQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
 /* 8006DB10 000697B0  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DB14 000697B4  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DB18 000697B8  4E 80 00 20 */	blr 
+/* 8006DB18 000697B8  4E 80 00 20 */	blr
 
 .global "base__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>CFv"
 "base__Q25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>CFv":
-/* 8006DB1C 000697BC  4E 80 00 20 */	blr 
+/* 8006DB1C 000697BC  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>__5eastlFRCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>RCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>_b"
 "__ne<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>__5eastlFRCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>RCQ25eastl126generic_iterator<PQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>,v>_b":
@@ -38059,7 +38059,7 @@ lbl_8006D4A8:
 /* 8006DB68 00069808  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DB6C 0006980C  7C 08 03 A6 */	mtlr r0
 /* 8006DB70 00069810  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DB74 00069814  4E 80 00 20 */	blr 
+/* 8006DB74 00069814  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>"
 "__ct__Q25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>FRCQ25eastl95pair<Q216InteractorModule14InteractorType,PCQ316InteractorModule10Interactor16InteractorParams>":
@@ -38067,35 +38067,35 @@ lbl_8006D4A8:
 /* 8006DB7C 0006981C  80 04 00 04 */	lwz r0, 4(r4)
 /* 8006DB80 00069820  90 A3 00 00 */	stw r5, 0(r3)
 /* 8006DB84 00069824  90 03 00 04 */	stw r0, 4(r3)
-/* 8006DB88 00069828  4E 80 00 20 */	blr 
+/* 8006DB88 00069828  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Fv"
 "__pp__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>Fv":
 /* 8006DB8C 0006982C  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006DB90 00069830  38 04 00 10 */	addi r0, r4, 0x10
 /* 8006DB94 00069834  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DB98 00069838  4E 80 00 20 */	blr 
+/* 8006DB98 00069838  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>CFv"
 "__ml__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>CFv":
 /* 8006DB9C 0006983C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DBA0 00069840  4E 80 00 20 */	blr 
+/* 8006DBA0 00069840  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>FRCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>"
 "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>FRCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>":
 /* 8006DBA4 00069844  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DBA8 00069848  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DBAC 0006984C  4E 80 00 20 */	blr 
+/* 8006DBAC 0006984C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>FRCPQ216InteractorModule14InteractorInfo"
 "__ct__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>FRCPQ216InteractorModule14InteractorInfo":
 /* 8006DBB0 00069850  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DBB4 00069854  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DBB8 00069858  4E 80 00 20 */	blr 
+/* 8006DBB8 00069858  4E 80 00 20 */	blr
 
 .global "base__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>CFv"
 "base__Q25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>CFv":
-/* 8006DBBC 0006985C  4E 80 00 20 */	blr 
+/* 8006DBBC 0006985C  4E 80 00 20 */	blr
 
 .global "__ne<PQ216InteractorModule14InteractorInfo,v>__5eastlFRCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>RCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>_b"
 "__ne<PQ216InteractorModule14InteractorInfo,v>__5eastlFRCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>RCQ25eastl57generic_iterator<PQ216InteractorModule14InteractorInfo,v>_b":
@@ -38120,7 +38120,7 @@ lbl_8006D4A8:
 /* 8006DC08 000698A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DC0C 000698AC  7C 08 03 A6 */	mtlr r0
 /* 8006DC10 000698B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DC14 000698B4  4E 80 00 20 */	blr 
+/* 8006DC14 000698B4  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule14InteractorInfoFRCQ216InteractorModule14InteractorInfo"
 "__ct__Q216InteractorModule14InteractorInfoFRCQ216InteractorModule14InteractorInfo":
@@ -38141,17 +38141,17 @@ lbl_8006D4A8:
 /* 8006DC50 000698F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DC54 000698F4  7C 08 03 A6 */	mtlr r0
 /* 8006DC58 000698F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DC5C 000698FC  4E 80 00 20 */	blr 
+/* 8006DC5C 000698FC  4E 80 00 20 */	blr
 
 .global "base__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>CFv"
 "base__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>CFv":
-/* 8006DC60 00069900  4E 80 00 20 */	blr 
+/* 8006DC60 00069900  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>FRCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>"
 "__ct__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>FRCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>":
 /* 8006DC64 00069904  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DC68 00069908  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DC6C 0006990C  4E 80 00 20 */	blr 
+/* 8006DC6C 0006990C  4E 80 00 20 */	blr
 
 .global "__ne<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>__5eastlFRCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>RCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>_b"
 "__ne<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>__5eastlFRCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>RCQ25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>_b":
@@ -38176,67 +38176,67 @@ lbl_8006D4A8:
 /* 8006DCB8 00069958  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DCBC 0006995C  7C 08 03 A6 */	mtlr r0
 /* 8006DCC0 00069960  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DCC4 00069964  4E 80 00 20 */	blr 
+/* 8006DCC4 00069964  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Fv"
 "__pp__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>Fv":
 /* 8006DCC8 00069968  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006DCCC 0006996C  38 04 00 80 */	addi r0, r4, 0x80
 /* 8006DCD0 00069970  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DCD4 00069974  4E 80 00 20 */	blr 
+/* 8006DCD4 00069974  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>CFv"
 "__ml__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>CFv":
 /* 8006DCD8 00069978  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DCDC 0006997C  4E 80 00 20 */	blr 
+/* 8006DCDC 0006997C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>FRCPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>"
 "__ct__Q25eastl114generic_iterator<PQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>,v>FRCPQ25eastl83pair<PQ216InteractorModule10Interactor,Q216InteractorModule21InteractorResourceSet>":
 /* 8006DCE0 00069980  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DCE4 00069984  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DCE8 00069988  4E 80 00 20 */	blr 
+/* 8006DCE8 00069988  4E 80 00 20 */	blr
 
 .global "base__Q25eastl36generic_iterator<PP12ISimInstance,v>CFv"
 "base__Q25eastl36generic_iterator<PP12ISimInstance,v>CFv":
-/* 8006DCEC 0006998C  4E 80 00 20 */	blr 
+/* 8006DCEC 0006998C  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl36generic_iterator<PP12ISimInstance,v>FRCQ25eastl36generic_iterator<PP12ISimInstance,v>"
 "__ct__Q25eastl36generic_iterator<PP12ISimInstance,v>FRCQ25eastl36generic_iterator<PP12ISimInstance,v>":
 /* 8006DCF0 00069990  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DCF4 00069994  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DCF8 00069998  4E 80 00 20 */	blr 
+/* 8006DCF8 00069998  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl36generic_iterator<PP12ISimInstance,v>FRCPP12ISimInstance"
 "__ct__Q25eastl36generic_iterator<PP12ISimInstance,v>FRCPP12ISimInstance":
 /* 8006DCFC 0006999C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DD00 000699A0  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DD04 000699A4  4E 80 00 20 */	blr 
+/* 8006DD04 000699A4  4E 80 00 20 */	blr
 
 .global "base__Q25eastl32generic_iterator<PP9EInstance,v>CFv"
 "base__Q25eastl32generic_iterator<PP9EInstance,v>CFv":
-/* 8006DD08 000699A8  4E 80 00 20 */	blr 
+/* 8006DD08 000699A8  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl32generic_iterator<PP9EInstance,v>FRCQ25eastl32generic_iterator<PP9EInstance,v>"
 "__ct__Q25eastl32generic_iterator<PP9EInstance,v>FRCQ25eastl32generic_iterator<PP9EInstance,v>":
 /* 8006DD0C 000699AC  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DD10 000699B0  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DD14 000699B4  4E 80 00 20 */	blr 
+/* 8006DD14 000699B4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl32generic_iterator<PP9EInstance,v>FRCPP9EInstance"
 "__ct__Q25eastl32generic_iterator<PP9EInstance,v>FRCPP9EInstance":
 /* 8006DD18 000699B8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DD1C 000699BC  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DD20 000699C0  4E 80 00 20 */	blr 
+/* 8006DD20 000699C0  4E 80 00 20 */	blr
 
 .global "base__Q25eastl29generic_iterator<P7CTilePt,v>CFv"
 "base__Q25eastl29generic_iterator<P7CTilePt,v>CFv":
-/* 8006DD24 000699C4  4E 80 00 20 */	blr 
+/* 8006DD24 000699C4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl29generic_iterator<P7CTilePt,v>FRCQ25eastl29generic_iterator<P7CTilePt,v>"
 "__ct__Q25eastl29generic_iterator<P7CTilePt,v>FRCQ25eastl29generic_iterator<P7CTilePt,v>":
 /* 8006DD28 000699C8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DD2C 000699CC  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DD30 000699D0  4E 80 00 20 */	blr 
+/* 8006DD30 000699D0  4E 80 00 20 */	blr
 
 .global "__ne<P7CTilePt,v>__5eastlFRCQ25eastl29generic_iterator<P7CTilePt,v>RCQ25eastl29generic_iterator<P7CTilePt,v>_b"
 "__ne<P7CTilePt,v>__5eastlFRCQ25eastl29generic_iterator<P7CTilePt,v>RCQ25eastl29generic_iterator<P7CTilePt,v>_b":
@@ -38261,25 +38261,25 @@ lbl_8006D4A8:
 /* 8006DD7C 00069A1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DD80 00069A20  7C 08 03 A6 */	mtlr r0
 /* 8006DD84 00069A24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DD88 00069A28  4E 80 00 20 */	blr 
+/* 8006DD88 00069A28  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl29generic_iterator<P7CTilePt,v>Fv"
 "__pp__Q25eastl29generic_iterator<P7CTilePt,v>Fv":
 /* 8006DD8C 00069A2C  80 83 00 00 */	lwz r4, 0(r3)
 /* 8006DD90 00069A30  38 04 00 03 */	addi r0, r4, 3
 /* 8006DD94 00069A34  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DD98 00069A38  4E 80 00 20 */	blr 
+/* 8006DD98 00069A38  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl29generic_iterator<P7CTilePt,v>CFv"
 "__ml__Q25eastl29generic_iterator<P7CTilePt,v>CFv":
 /* 8006DD9C 00069A3C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DDA0 00069A40  4E 80 00 20 */	blr 
+/* 8006DDA0 00069A40  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl29generic_iterator<P7CTilePt,v>FRCP7CTilePt"
 "__ct__Q25eastl29generic_iterator<P7CTilePt,v>FRCP7CTilePt":
 /* 8006DDA4 00069A44  80 04 00 00 */	lwz r0, 0(r4)
 /* 8006DDA8 00069A48  90 03 00 00 */	stw r0, 0(r3)
-/* 8006DDAC 00069A4C  4E 80 00 20 */	blr 
+/* 8006DDAC 00069A4C  4E 80 00 20 */	blr
 
 .global "is_object_cloneable__16InteractorModuleFP8cXObject"
 "is_object_cloneable__16InteractorModuleFP8cXObject":
@@ -38299,7 +38299,7 @@ lbl_8006DDDC:
 /* 8006DDDC 00069A7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DDE0 00069A80  7C 08 03 A6 */	mtlr r0
 /* 8006DDE4 00069A84  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DDE8 00069A88  4E 80 00 20 */	blr 
+/* 8006DDE8 00069A88  4E 80 00 20 */	blr
 
 .global "ClearDrawOverride__Q216InteractorModule15PlacementObjectFv"
 "ClearDrawOverride__Q216InteractorModule15PlacementObjectFv":
@@ -38320,22 +38320,22 @@ lbl_8006DDDC:
 /* 8006DE24 00069AC4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8006DE28 00069AC8  7C 08 03 A6 */	mtlr r0
 /* 8006DE2C 00069ACC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006DE30 00069AD0  4E 80 00 20 */	blr 
+/* 8006DE30 00069AD0  4E 80 00 20 */	blr
 
 .global "GetDrawOverrideFlag__Q216InteractorModule15PlacementObjectFv"
 "GetDrawOverrideFlag__Q216InteractorModule15PlacementObjectFv":
 /* 8006DE34 00069AD4  88 63 00 12 */	lbz r3, 0x12(r3)
-/* 8006DE38 00069AD8  4E 80 00 20 */	blr 
+/* 8006DE38 00069AD8  4E 80 00 20 */	blr
 
 .global "GetOverrideLocation__Q216InteractorModule15PlacementObjectFv"
 "GetOverrideLocation__Q216InteractorModule15PlacementObjectFv":
 /* 8006DE3C 00069ADC  38 63 00 14 */	addi r3, r3, 0x14
-/* 8006DE40 00069AE0  4E 80 00 20 */	blr 
+/* 8006DE40 00069AE0  4E 80 00 20 */	blr
 
 .global "GetObjectInHand__Q216InteractorModule15PlacementObjectFv"
 "GetObjectInHand__Q216InteractorModule15PlacementObjectFv":
 /* 8006DE44 00069AE4  80 63 00 00 */	lwz r3, 0(r3)
-/* 8006DE48 00069AE8  4E 80 00 20 */	blr 
+/* 8006DE48 00069AE8  4E 80 00 20 */	blr
 
 .global "ObjectIsInHand__Q216InteractorModule15PlacementObjectFv"
 "ObjectIsInHand__Q216InteractorModule15PlacementObjectFv":
@@ -38343,12 +38343,12 @@ lbl_8006DDDC:
 /* 8006DE50 00069AF0  7C 03 00 D0 */	neg r0, r3
 /* 8006DE54 00069AF4  7C 00 1B 78 */	or r0, r0, r3
 /* 8006DE58 00069AF8  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8006DE5C 00069AFC  4E 80 00 20 */	blr 
+/* 8006DE5C 00069AFC  4E 80 00 20 */	blr
 
 .global "GetGridObject__Q216InteractorModule15PlacementObjectFv"
 "GetGridObject__Q216InteractorModule15PlacementObjectFv":
 /* 8006DE60 00069B00  80 63 00 04 */	lwz r3, 4(r3)
-/* 8006DE64 00069B04  4E 80 00 20 */	blr 
+/* 8006DE64 00069B04  4E 80 00 20 */	blr
 
 .global "GetOriginalPos__Q216InteractorModule15PlacementObjectCFR7FTilePt"
 "GetOriginalPos__Q216InteractorModule15PlacementObjectCFR7FTilePt":
@@ -38360,7 +38360,7 @@ lbl_8006DDDC:
 .global "GetOriginalDir__Q216InteractorModule15PlacementObjectCFv"
 "GetOriginalDir__Q216InteractorModule15PlacementObjectCFv":
 /* 8006DE78 00069B18  A8 63 00 10 */	lha r3, 0x10(r3)
-/* 8006DE7C 00069B1C  4E 80 00 20 */	blr 
+/* 8006DE7C 00069B1C  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFv"
 "__ct__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFv":
@@ -38381,7 +38381,7 @@ lbl_8006DDDC:
 /* 8006DEB8 00069B58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DEBC 00069B5C  7C 08 03 A6 */	mtlr r0
 /* 8006DEC0 00069B60  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DEC4 00069B64  4E 80 00 20 */	blr 
+/* 8006DEC4 00069B64  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule17ObjectManipulatorFv"
 "__ct__Q216InteractorModule17ObjectManipulatorFv":
@@ -38428,7 +38428,7 @@ lbl_8006DDDC:
 /* 8006DF68 00069C08  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006DF6C 00069C0C  7C 08 03 A6 */	mtlr r0
 /* 8006DF70 00069C10  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006DF74 00069C14  4E 80 00 20 */	blr 
+/* 8006DF74 00069C14  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule17ObjectManipulatorFv"
 "__dt__Q216InteractorModule17ObjectManipulatorFv":
@@ -38458,7 +38458,7 @@ lbl_8006DFC4:
 /* 8006DFD0 00069C70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006DFD4 00069C74  7C 08 03 A6 */	mtlr r0
 /* 8006DFD8 00069C78  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006DFDC 00069C7C  4E 80 00 20 */	blr 
+/* 8006DFDC 00069C7C  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule17ObjectManipulatorFv"
 "OnCreate__Q216InteractorModule17ObjectManipulatorFv":
@@ -38475,7 +38475,7 @@ lbl_8006DFC4:
 /* 8006E008 00069CA8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006E00C 00069CAC  7C 08 03 A6 */	mtlr r0
 /* 8006E010 00069CB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006E014 00069CB4  4E 80 00 20 */	blr 
+/* 8006E014 00069CB4  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule17ObjectManipulatorFv"
 "OnDestroy__Q216InteractorModule17ObjectManipulatorFv":
@@ -38492,7 +38492,7 @@ lbl_8006DFC4:
 /* 8006E040 00069CE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006E044 00069CE4  7C 08 03 A6 */	mtlr r0
 /* 8006E048 00069CE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006E04C 00069CEC  4E 80 00 20 */	blr 
+/* 8006E04C 00069CEC  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule17ObjectManipulatorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule17ObjectManipulatorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -38608,7 +38608,7 @@ lbl_8006E1CC:
 /* 8006E1FC 00069E9C  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8006E200 00069EA0  7C 08 03 A6 */	mtlr r0
 /* 8006E204 00069EA4  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 8006E208 00069EA8  4E 80 00 20 */	blr 
+/* 8006E208 00069EA8  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule17ObjectManipulatorFv"
 "OnStop__Q216InteractorModule17ObjectManipulatorFv":
@@ -38645,69 +38645,69 @@ lbl_8006E278:
 /* 8006E27C 00069F1C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8006E280 00069F20  7C 08 03 A6 */	mtlr r0
 /* 8006E284 00069F24  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006E288 00069F28  4E 80 00 20 */	blr 
+/* 8006E288 00069F28  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
 /* 8006E28C 00069F2C  38 04 FF F9 */	addi r0, r4, -7
 /* 8006E290 00069F30  28 00 00 17 */	cmplwi r0, 0x17
-/* 8006E294 00069F34  4D 81 00 20 */	bgtlr 
+/* 8006E294 00069F34  4D 81 00 20 */	bgtlr
 /* 8006E298 00069F38  3C 80 80 42 */	lis r4, lbl_80424A4C@ha
 /* 8006E29C 00069F3C  54 00 10 3A */	slwi r0, r0, 2
 /* 8006E2A0 00069F40  38 84 4A 4C */	addi r4, r4, lbl_80424A4C@l
 /* 8006E2A4 00069F44  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8006E2A8 00069F48  7C 89 03 A6 */	mtctr r4
-/* 8006E2AC 00069F4C  4E 80 04 20 */	bctr 
+/* 8006E2AC 00069F4C  4E 80 04 20 */	bctr
 /* 8006E2B0 00069F50  38 00 00 01 */	li r0, 1
 /* 8006E2B4 00069F54  D0 23 00 34 */	stfs f1, 0x34(r3)
 /* 8006E2B8 00069F58  98 03 01 F6 */	stb r0, 0x1f6(r3)
-/* 8006E2BC 00069F5C  4E 80 00 20 */	blr 
+/* 8006E2BC 00069F5C  4E 80 00 20 */	blr
 /* 8006E2C0 00069F60  38 00 00 01 */	li r0, 1
 /* 8006E2C4 00069F64  D0 23 00 38 */	stfs f1, 0x38(r3)
 /* 8006E2C8 00069F68  98 03 01 F6 */	stb r0, 0x1f6(r3)
-/* 8006E2CC 00069F6C  4E 80 00 20 */	blr 
+/* 8006E2CC 00069F6C  4E 80 00 20 */	blr
 /* 8006E2D0 00069F70  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 8006E2D4 00069F74  4E 80 00 20 */	blr 
+/* 8006E2D4 00069F74  4E 80 00 20 */	blr
 /* 8006E2D8 00069F78  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 8006E2DC 00069F7C  4E 80 00 20 */	blr 
+/* 8006E2DC 00069F7C  4E 80 00 20 */	blr
 /* 8006E2E0 00069F80  38 00 00 01 */	li r0, 1
 /* 8006E2E4 00069F84  D0 23 00 44 */	stfs f1, 0x44(r3)
 /* 8006E2E8 00069F88  98 03 01 F6 */	stb r0, 0x1f6(r3)
-/* 8006E2EC 00069F8C  4E 80 00 20 */	blr 
+/* 8006E2EC 00069F8C  4E 80 00 20 */	blr
 /* 8006E2F0 00069F90  38 00 00 01 */	li r0, 1
 /* 8006E2F4 00069F94  D0 23 00 48 */	stfs f1, 0x48(r3)
 /* 8006E2F8 00069F98  98 03 01 F6 */	stb r0, 0x1f6(r3)
-/* 8006E2FC 00069F9C  4E 80 00 20 */	blr 
+/* 8006E2FC 00069F9C  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
 /* 8006E300 00069FA0  38 04 FF F9 */	addi r0, r4, -7
 /* 8006E304 00069FA4  28 00 00 17 */	cmplwi r0, 0x17
-/* 8006E308 00069FA8  4D 81 00 20 */	bgtlr 
+/* 8006E308 00069FA8  4D 81 00 20 */	bgtlr
 /* 8006E30C 00069FAC  3C 80 80 42 */	lis r4, lbl_80424AAC@ha
 /* 8006E310 00069FB0  54 00 10 3A */	slwi r0, r0, 2
 /* 8006E314 00069FB4  38 84 4A AC */	addi r4, r4, lbl_80424AAC@l
 /* 8006E318 00069FB8  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8006E31C 00069FBC  7C 89 03 A6 */	mtctr r4
-/* 8006E320 00069FC0  4E 80 04 20 */	bctr 
+/* 8006E320 00069FC0  4E 80 04 20 */	bctr
 /* 8006E324 00069FC4  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E328 00069FC8  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8006E32C 00069FCC  4E 80 00 20 */	blr 
+/* 8006E32C 00069FCC  4E 80 00 20 */	blr
 /* 8006E330 00069FD0  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E334 00069FD4  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8006E338 00069FD8  4E 80 00 20 */	blr 
+/* 8006E338 00069FD8  4E 80 00 20 */	blr
 /* 8006E33C 00069FDC  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E340 00069FE0  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 8006E344 00069FE4  4E 80 00 20 */	blr 
+/* 8006E344 00069FE4  4E 80 00 20 */	blr
 /* 8006E348 00069FE8  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E34C 00069FEC  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 8006E350 00069FF0  4E 80 00 20 */	blr 
+/* 8006E350 00069FF0  4E 80 00 20 */	blr
 /* 8006E354 00069FF4  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E358 00069FF8  D0 03 00 44 */	stfs f0, 0x44(r3)
-/* 8006E35C 00069FFC  4E 80 00 20 */	blr 
+/* 8006E35C 00069FFC  4E 80 00 20 */	blr
 /* 8006E360 0006A000  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006E364 0006A004  D0 03 00 48 */	stfs f0, 0x48(r3)
-/* 8006E368 0006A008  4E 80 00 20 */	blr 
+/* 8006E368 0006A008  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer":
@@ -38904,14 +38904,14 @@ lbl_8006E600:
 /* 8006E61C 0006A2BC  7F 83 E3 78 */	mr r3, r28
 /* 8006E620 0006A2C0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006E624 0006A2C4  7D 89 03 A6 */	mtctr r12
-/* 8006E628 0006A2C8  4E 80 04 21 */	bctrl 
+/* 8006E628 0006A2C8  4E 80 04 21 */	bctrl
 /* 8006E62C 0006A2CC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 8006E630 0006A2D0  7C 7B 1B 78 */	mr r27, r3
 /* 8006E634 0006A2D4  38 81 00 10 */	addi r4, r1, 0x10
 /* 8006E638 0006A2D8  38 A1 00 0C */	addi r5, r1, 0xc
 /* 8006E63C 0006A2DC  81 8C 00 D4 */	lwz r12, 0xd4(r12)
 /* 8006E640 0006A2E0  7D 89 03 A6 */	mtctr r12
-/* 8006E644 0006A2E4  4E 80 04 21 */	bctrl 
+/* 8006E644 0006A2E4  4E 80 04 21 */	bctrl
 /* 8006E648 0006A2E8  7F 63 DB 78 */	mr r3, r27
 /* 8006E64C 0006A2EC  4B FA B2 1D */	bl "GetDef__8cXObjectFv"
 /* 8006E650 0006A2F0  A8 03 00 16 */	lha r0, 0x16(r3)
@@ -39214,7 +39214,7 @@ lbl_8006EAA8:
 /* 8006EAB8 0006A758  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 8006EABC 0006A75C  7C 08 03 A6 */	mtlr r0
 /* 8006EAC0 0006A760  38 21 00 E0 */	addi r1, r1, 0xe0
-/* 8006EAC4 0006A764  4E 80 00 20 */	blr 
+/* 8006EAC4 0006A764  4E 80 00 20 */	blr
 
 .global "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3"
 "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3":
@@ -39238,7 +39238,7 @@ lbl_8006EAA8:
 /* 8006EB0C 0006A7AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8006EB10 0006A7B0  7C 08 03 A6 */	mtlr r0
 /* 8006EB14 0006A7B4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8006EB18 0006A7B8  4E 80 00 20 */	blr 
+/* 8006EB18 0006A7B8  4E 80 00 20 */	blr
 
 .global "ResetGrab__Q216InteractorModule17ObjectManipulatorFv"
 "ResetGrab__Q216InteractorModule17ObjectManipulatorFv":
@@ -39261,13 +39261,13 @@ lbl_8006EB58:
 /* 8006EB58 0006A7F8  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 8006EB5C 0006A7FC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006EB60 0006A800  7D 89 03 A6 */	mtctr r12
-/* 8006EB64 0006A804  4E 80 04 21 */	bctrl 
+/* 8006EB64 0006A804  4E 80 04 21 */	bctrl
 /* 8006EB68 0006A808  7C 64 1B 78 */	mr r4, r3
 /* 8006EB6C 0006A80C  38 61 00 28 */	addi r3, r1, 0x28
 /* 8006EB70 0006A810  81 84 00 00 */	lwz r12, 0(r4)
 /* 8006EB74 0006A814  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 8006EB78 0006A818  7D 89 03 A6 */	mtctr r12
-/* 8006EB7C 0006A81C  4E 80 04 21 */	bctrl 
+/* 8006EB7C 0006A81C  4E 80 04 21 */	bctrl
 /* 8006EB80 0006A820  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006EB84 0006A824  7F E3 FB 78 */	mr r3, r31
 /* 8006EB88 0006A828  D0 01 00 30 */	stfs f0, 0x30(r1)
@@ -39290,7 +39290,7 @@ lbl_8006EB58:
 /* 8006EBCC 0006A86C  38 81 00 10 */	addi r4, r1, 0x10
 /* 8006EBD0 0006A870  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 8006EBD4 0006A874  7D 89 03 A6 */	mtctr r12
-/* 8006EBD8 0006A878  4E 80 04 21 */	bctrl 
+/* 8006EBD8 0006A878  4E 80 04 21 */	bctrl
 /* 8006EBDC 0006A87C  38 7E 00 0C */	addi r3, r30, 0xc
 /* 8006EBE0 0006A880  38 81 00 28 */	addi r4, r1, 0x28
 /* 8006EBE4 0006A884  4B FA B4 D5 */	bl "__as__5EVec3FRC5EVec3"
@@ -39323,7 +39323,7 @@ lbl_8006EC3C:
 /* 8006EC4C 0006A8EC  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 8006EC50 0006A8F0  7C 08 03 A6 */	mtlr r0
 /* 8006EC54 0006A8F4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006EC58 0006A8F8  4E 80 00 20 */	blr 
+/* 8006EC58 0006A8F8  4E 80 00 20 */	blr
 
 .global "GradualCenterToObject__Q216InteractorModule17ObjectManipulatorFv"
 "GradualCenterToObject__Q216InteractorModule17ObjectManipulatorFv":
@@ -39352,7 +39352,7 @@ lbl_8006EC98:
 /* 8006ECB0 0006A950  38 81 00 44 */	addi r4, r1, 0x44
 /* 8006ECB4 0006A954  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 8006ECB8 0006A958  7D 89 03 A6 */	mtctr r12
-/* 8006ECBC 0006A95C  4E 80 04 21 */	bctrl 
+/* 8006ECBC 0006A95C  4E 80 04 21 */	bctrl
 /* 8006ECC0 0006A960  C0 3E 01 9C */	lfs f1, 0x19c(r30)
 /* 8006ECC4 0006A964  7F C3 F3 78 */	mr r3, r30
 /* 8006ECC8 0006A968  C0 02 84 C8 */	lfs f0, lbl_805D96E8-_SDA2_BASE_(r2)
@@ -39377,13 +39377,13 @@ lbl_8006EC98:
 /* 8006ED14 0006A9B4  38 84 49 80 */	addi r4, r4, "s_gridDrawOffset__Q216InteractorModule20InteractorVisualizer"@l
 /* 8006ED18 0006A9B8  7F E4 04 2E */	lfsx f31, r4, r0
 /* 8006ED1C 0006A9BC  7D 89 03 A6 */	mtctr r12
-/* 8006ED20 0006A9C0  4E 80 04 21 */	bctrl 
+/* 8006ED20 0006A9C0  4E 80 04 21 */	bctrl
 /* 8006ED24 0006A9C4  7C 64 1B 78 */	mr r4, r3
 /* 8006ED28 0006A9C8  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8006ED2C 0006A9CC  81 84 00 00 */	lwz r12, 0(r4)
 /* 8006ED30 0006A9D0  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 8006ED34 0006A9D4  7D 89 03 A6 */	mtctr r12
-/* 8006ED38 0006A9D8  4E 80 04 21 */	bctrl 
+/* 8006ED38 0006A9D8  4E 80 04 21 */	bctrl
 /* 8006ED3C 0006A9DC  D3 E1 00 34 */	stfs f31, 0x34(r1)
 /* 8006ED40 0006A9E0  38 61 00 08 */	addi r3, r1, 8
 /* 8006ED44 0006A9E4  C0 22 84 D0 */	lfs f1, lbl_805D96F0-_SDA2_BASE_(r2)
@@ -39409,7 +39409,7 @@ lbl_8006ED80:
 /* 8006ED90 0006AA30  83 C1 00 58 */	lwz r30, 0x58(r1)
 /* 8006ED94 0006AA34  7C 08 03 A6 */	mtlr r0
 /* 8006ED98 0006AA38  38 21 00 70 */	addi r1, r1, 0x70
-/* 8006ED9C 0006AA3C  4E 80 00 20 */	blr 
+/* 8006ED9C 0006AA3C  4E 80 00 20 */	blr
 
 .global "LockCursorToObject__Q216InteractorModule17ObjectManipulatorFv"
 "LockCursorToObject__Q216InteractorModule17ObjectManipulatorFv":
@@ -39442,7 +39442,7 @@ lbl_8006EDFC:
 /* 8006EE00 0006AAA0  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8006EE04 0006AAA4  7C 08 03 A6 */	mtlr r0
 /* 8006EE08 0006AAA8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006EE0C 0006AAAC  4E 80 00 20 */	blr 
+/* 8006EE0C 0006AAAC  4E 80 00 20 */	blr
 
 .global "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan"
 "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan":
@@ -39466,7 +39466,7 @@ lbl_8006EDFC:
 /* 8006EE54 0006AAF4  38 80 00 00 */	li r4, 0
 /* 8006EE58 0006AAF8  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8006EE5C 0006AAFC  7D 89 03 A6 */	mtctr r12
-/* 8006EE60 0006AB00  4E 80 04 21 */	bctrl 
+/* 8006EE60 0006AB00  4E 80 04 21 */	bctrl
 /* 8006EE64 0006AB04  3C 60 80 49 */	lis r3, "_gd"@ha
 /* 8006EE68 0006AB08  38 63 75 34 */	addi r3, r3, "_gd"@l
 /* 8006EE6C 0006AB0C  80 63 00 48 */	lwz r3, 0x48(r3)
@@ -39482,7 +39482,7 @@ lbl_8006EDFC:
 /* 8006EE94 0006AB34  7F E3 FB 78 */	mr r3, r31
 /* 8006EE98 0006AB38  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006EE9C 0006AB3C  7D 89 03 A6 */	mtctr r12
-/* 8006EEA0 0006AB40  4E 80 04 21 */	bctrl 
+/* 8006EEA0 0006AB40  4E 80 04 21 */	bctrl
 /* 8006EEA4 0006AB44  2C 03 00 00 */	cmpwi r3, 0
 /* 8006EEA8 0006AB48  41 82 01 5C */	beq lbl_8006F004
 /* 8006EEAC 0006AB4C  38 80 00 01 */	li r4, 1
@@ -39525,7 +39525,7 @@ lbl_8006EF2C:
 /* 8006EF38 0006ABD8  7C 7F 1B 78 */	mr r31, r3
 /* 8006EF3C 0006ABDC  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8006EF40 0006ABE0  7D 89 03 A6 */	mtctr r12
-/* 8006EF44 0006ABE4  4E 80 04 21 */	bctrl 
+/* 8006EF44 0006ABE4  4E 80 04 21 */	bctrl
 /* 8006EF48 0006ABE8  7C 7C 1B 78 */	mr r28, r3
 /* 8006EF4C 0006ABEC  38 81 00 20 */	addi r4, r1, 0x20
 /* 8006EF50 0006ABF0  3B C0 00 00 */	li r30, 0
@@ -39543,7 +39543,7 @@ lbl_8006EF2C:
 /* 8006EF80 0006AC20  7F 63 DB 78 */	mr r3, r27
 /* 8006EF84 0006AC24  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 8006EF88 0006AC28  7D 89 03 A6 */	mtctr r12
-/* 8006EF8C 0006AC2C  4E 80 04 21 */	bctrl 
+/* 8006EF8C 0006AC2C  4E 80 04 21 */	bctrl
 /* 8006EF90 0006AC30  2C 03 00 00 */	cmpwi r3, 0
 /* 8006EF94 0006AC34  41 82 00 30 */	beq lbl_8006EFC4
 /* 8006EF98 0006AC38  7F 84 E3 78 */	mr r4, r28
@@ -39555,7 +39555,7 @@ lbl_8006EF2C:
 /* 8006EFB0 0006AC50  38 81 00 08 */	addi r4, r1, 8
 /* 8006EFB4 0006AC54  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 8006EFB8 0006AC58  7D 89 03 A6 */	mtctr r12
-/* 8006EFBC 0006AC5C  4E 80 04 21 */	bctrl 
+/* 8006EFBC 0006AC5C  4E 80 04 21 */	bctrl
 /* 8006EFC0 0006AC60  3B C0 00 01 */	li r30, 1
 lbl_8006EFC4:
 /* 8006EFC4 0006AC64  7F E3 FB 78 */	mr r3, r31
@@ -39582,7 +39582,7 @@ lbl_8006F004:
 /* 8006F00C 0006ACAC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8006F010 0006ACB0  7C 08 03 A6 */	mtlr r0
 /* 8006F014 0006ACB4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8006F018 0006ACB8  4E 80 00 20 */	blr 
+/* 8006F018 0006ACB8  4E 80 00 20 */	blr
 
 .global "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData"
 "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData":
@@ -39639,22 +39639,22 @@ lbl_8006F0CC:
 /* 8006F0DC 0006AD7C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8006F0E0 0006AD80  7C 08 03 A6 */	mtlr r0
 /* 8006F0E4 0006AD84  38 21 00 40 */	addi r1, r1, 0x40
-/* 8006F0E8 0006AD88  4E 80 00 20 */	blr 
+/* 8006F0E8 0006AD88  4E 80 00 20 */	blr
 
 .global "SetIsCursorModelEnabled__Q216InteractorModule17ObjectManipulatorFb"
 "SetIsCursorModelEnabled__Q216InteractorModule17ObjectManipulatorFb":
 /* 8006F0EC 0006AD8C  98 83 01 D4 */	stb r4, 0x1d4(r3)
-/* 8006F0F0 0006AD90  4E 80 00 20 */	blr 
+/* 8006F0F0 0006AD90  4E 80 00 20 */	blr
 
 .global "GetIsCursorModelEnabled__Q216InteractorModule17ObjectManipulatorCFv"
 "GetIsCursorModelEnabled__Q216InteractorModule17ObjectManipulatorCFv":
 /* 8006F0F4 0006AD94  88 63 01 D4 */	lbz r3, 0x1d4(r3)
-/* 8006F0F8 0006AD98  4E 80 00 20 */	blr 
+/* 8006F0F8 0006AD98  4E 80 00 20 */	blr
 
 .global "GetPlacementObject__Q216InteractorModule17ObjectManipulatorFv"
 "GetPlacementObject__Q216InteractorModule17ObjectManipulatorFv":
 /* 8006F0FC 0006AD9C  38 63 01 A8 */	addi r3, r3, 0x1a8
-/* 8006F100 0006ADA0  4E 80 00 20 */	blr 
+/* 8006F100 0006ADA0  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFv"
 "__ct__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFv":
@@ -39680,7 +39680,7 @@ lbl_8006F0CC:
 /* 8006F150 0006ADF0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F154 0006ADF4  7C 08 03 A6 */	mtlr r0
 /* 8006F158 0006ADF8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F15C 0006ADFC  4E 80 00 20 */	blr 
+/* 8006F15C 0006ADFC  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFv"
 "__dt__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFv":
@@ -39706,7 +39706,7 @@ lbl_8006F19C:
 /* 8006F1A8 0006AE48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F1AC 0006AE4C  7C 08 03 A6 */	mtlr r0
 /* 8006F1B0 0006AE50  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F1B4 0006AE54  4E 80 00 20 */	blr 
+/* 8006F1B4 0006AE54  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule15GrabManipulator12CallbackDataFb"
 "__ct__Q316InteractorModule15GrabManipulator12CallbackDataFb":
@@ -39731,7 +39731,7 @@ lbl_8006F19C:
 /* 8006F200 0006AEA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F204 0006AEA4  7C 08 03 A6 */	mtlr r0
 /* 8006F208 0006AEA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F20C 0006AEAC  4E 80 00 20 */	blr 
+/* 8006F20C 0006AEAC  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule15GrabManipulatorFv"
 "__ct__Q216InteractorModule15GrabManipulatorFv":
@@ -39753,7 +39753,7 @@ lbl_8006F19C:
 /* 8006F24C 0006AEEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F250 0006AEF0  7C 08 03 A6 */	mtlr r0
 /* 8006F254 0006AEF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F258 0006AEF8  4E 80 00 20 */	blr 
+/* 8006F258 0006AEF8  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFv"
 "__dt__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFv":
@@ -39779,7 +39779,7 @@ lbl_8006F298:
 /* 8006F2A4 0006AF44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F2A8 0006AF48  7C 08 03 A6 */	mtlr r0
 /* 8006F2AC 0006AF4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F2B0 0006AF50  4E 80 00 20 */	blr 
+/* 8006F2B0 0006AF50  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule15GrabManipulatorFv"
 "__dt__Q216InteractorModule15GrabManipulatorFv":
@@ -39809,7 +39809,7 @@ lbl_8006F300:
 /* 8006F30C 0006AFAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F310 0006AFB0  7C 08 03 A6 */	mtlr r0
 /* 8006F314 0006AFB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F318 0006AFB8  4E 80 00 20 */	blr 
+/* 8006F318 0006AFB8  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule15GrabManipulatorFv"
 "OnCreate__Q216InteractorModule15GrabManipulatorFv":
@@ -39849,7 +39849,7 @@ lbl_8006F380:
 /* 8006F390 0006B030  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8006F394 0006B034  7C 08 03 A6 */	mtlr r0
 /* 8006F398 0006B038  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F39C 0006B03C  4E 80 00 20 */	blr 
+/* 8006F39C 0006B03C  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFRCQ316InteractorModule15GrabManipulator21GrabManipulatorParams"
 "__as__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFRCQ316InteractorModule15GrabManipulator21GrabManipulatorParams":
@@ -39877,7 +39877,7 @@ lbl_8006F380:
 /* 8006F3F4 0006B094  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F3F8 0006B098  7C 08 03 A6 */	mtlr r0
 /* 8006F3FC 0006B09C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F400 0006B0A0  4E 80 00 20 */	blr 
+/* 8006F400 0006B0A0  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFRCQ316InteractorModule17ObjectManipulator23ObjectManipulatorParams"
 "__as__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFRCQ316InteractorModule17ObjectManipulator23ObjectManipulatorParams":
@@ -39899,7 +39899,7 @@ lbl_8006F380:
 /* 8006F440 0006B0E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F444 0006B0E4  7C 08 03 A6 */	mtlr r0
 /* 8006F448 0006B0E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F44C 0006B0EC  4E 80 00 20 */	blr 
+/* 8006F44C 0006B0EC  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -39915,7 +39915,7 @@ lbl_8006F380:
 /* 8006F474 0006B114  38 A5 4B 38 */	addi r5, r5, lbl_80424B38@l
 /* 8006F478 0006B118  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8006F47C 0006B11C  7C A9 03 A6 */	mtctr r5
-/* 8006F480 0006B120  4E 80 04 20 */	bctr 
+/* 8006F480 0006B120  4E 80 04 20 */	bctr
 /* 8006F484 0006B124  3C 60 80 49 */	lis r3, "_globals"@ha
 /* 8006F488 0006B128  38 63 7A 40 */	addi r3, r3, "_globals"@l
 /* 8006F48C 0006B12C  80 63 01 EC */	lwz r3, 0x1ec(r3)
@@ -40029,7 +40029,7 @@ lbl_8006F624:
 /* 8006F630 0006B2D0  38 80 00 18 */	li r4, 0x18
 /* 8006F634 0006B2D4  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8006F638 0006B2D8  7D 89 03 A6 */	mtctr r12
-/* 8006F63C 0006B2DC  4E 80 04 21 */	bctrl 
+/* 8006F63C 0006B2DC  4E 80 04 21 */	bctrl
 /* 8006F640 0006B2E0  48 00 01 54 */	b lbl_8006F794
 /* 8006F644 0006B2E4  48 00 0D 35 */	bl "OnUndoButton__Q216InteractorModule15GrabManipulatorFv"
 /* 8006F648 0006B2E8  48 00 01 4C */	b lbl_8006F794
@@ -40121,7 +40121,7 @@ lbl_8006F794:
 /* 8006F798 0006B438  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 8006F79C 0006B43C  7C 08 03 A6 */	mtlr r0
 /* 8006F7A0 0006B440  38 21 00 40 */	addi r1, r1, 0x40
-/* 8006F7A4 0006B444  4E 80 00 20 */	blr 
+/* 8006F7A4 0006B444  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule15GrabManipulator12CallbackDataFv"
 "__dt__Q316InteractorModule15GrabManipulator12CallbackDataFv":
@@ -40147,7 +40147,7 @@ lbl_8006F7E4:
 /* 8006F7F0 0006B490  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006F7F4 0006B494  7C 08 03 A6 */	mtlr r0
 /* 8006F7F8 0006B498  38 21 00 10 */	addi r1, r1, 0x10
-/* 8006F7FC 0006B49C  4E 80 00 20 */	blr 
+/* 8006F7FC 0006B49C  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -40157,47 +40157,47 @@ lbl_8006F7E4:
 /* 8006F80C 0006B4AC  2C 04 00 09 */	cmpwi r4, 9
 /* 8006F810 0006B4B0  41 82 00 18 */	beq lbl_8006F828
 /* 8006F814 0006B4B4  40 80 00 34 */	bge lbl_8006F848
-/* 8006F818 0006B4B8  4E 80 00 20 */	blr 
+/* 8006F818 0006B4B8  4E 80 00 20 */	blr
 lbl_8006F81C:
 /* 8006F81C 0006B4BC  2C 04 00 0D */	cmpwi r4, 0xd
-/* 8006F820 0006B4C0  4C 80 00 20 */	bgelr 
+/* 8006F820 0006B4C0  4C 80 00 20 */	bgelr
 /* 8006F824 0006B4C4  48 00 00 64 */	b lbl_8006F888
 lbl_8006F828:
 /* 8006F828 0006B4C8  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8006F82C 0006B4CC  2C 00 00 00 */	cmpwi r0, 0
-/* 8006F830 0006B4D0  4D 82 00 20 */	beqlr 
+/* 8006F830 0006B4D0  4D 82 00 20 */	beqlr
 /* 8006F834 0006B4D4  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8006F838 0006B4D8  38 00 00 01 */	li r0, 1
 /* 8006F83C 0006B4DC  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 8006F840 0006B4E0  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8006F844 0006B4E4  4E 80 00 20 */	blr 
+/* 8006F844 0006B4E4  4E 80 00 20 */	blr
 lbl_8006F848:
 /* 8006F848 0006B4E8  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8006F84C 0006B4EC  2C 00 00 00 */	cmpwi r0, 0
-/* 8006F850 0006B4F0  4D 82 00 20 */	beqlr 
+/* 8006F850 0006B4F0  4D 82 00 20 */	beqlr
 /* 8006F854 0006B4F4  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8006F858 0006B4F8  38 00 00 01 */	li r0, 1
 /* 8006F85C 0006B4FC  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 8006F860 0006B500  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8006F864 0006B504  4E 80 00 20 */	blr 
+/* 8006F864 0006B504  4E 80 00 20 */	blr
 lbl_8006F868:
 /* 8006F868 0006B508  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8006F86C 0006B50C  2C 00 00 00 */	cmpwi r0, 0
-/* 8006F870 0006B510  4D 82 00 20 */	beqlr 
+/* 8006F870 0006B510  4D 82 00 20 */	beqlr
 /* 8006F874 0006B514  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8006F878 0006B518  38 00 00 01 */	li r0, 1
 /* 8006F87C 0006B51C  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 8006F880 0006B520  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8006F884 0006B524  4E 80 00 20 */	blr 
+/* 8006F884 0006B524  4E 80 00 20 */	blr
 lbl_8006F888:
 /* 8006F888 0006B528  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8006F88C 0006B52C  2C 00 00 00 */	cmpwi r0, 0
-/* 8006F890 0006B530  4D 82 00 20 */	beqlr 
+/* 8006F890 0006B530  4D 82 00 20 */	beqlr
 /* 8006F894 0006B534  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8006F898 0006B538  38 00 00 01 */	li r0, 1
 /* 8006F89C 0006B53C  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 8006F8A0 0006B540  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8006F8A4 0006B544  4E 80 00 20 */	blr 
+/* 8006F8A4 0006B544  4E 80 00 20 */	blr
 
 .global "CancelCurrentGrab__Q216InteractorModule15GrabManipulatorFv"
 "CancelCurrentGrab__Q216InteractorModule15GrabManipulatorFv":
@@ -40241,7 +40241,7 @@ lbl_8006F904:
 /* 8006F934 0006B5D4  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8006F938 0006B5D8  7C 08 03 A6 */	mtlr r0
 /* 8006F93C 0006B5DC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006F940 0006B5E0  4E 80 00 20 */	blr 
+/* 8006F940 0006B5E0  4E 80 00 20 */	blr
 
 .global "TryGrabbingWorldObject__Q216InteractorModule15GrabManipulatorFv"
 "TryGrabbingWorldObject__Q216InteractorModule15GrabManipulatorFv":
@@ -40292,7 +40292,7 @@ lbl_8006F9DC:
 /* 8006F9F0 0006B690  7F 63 DB 78 */	mr r3, r27
 /* 8006F9F4 0006B694  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8006F9F8 0006B698  7D 89 03 A6 */	mtctr r12
-/* 8006F9FC 0006B69C  4E 80 04 21 */	bctrl 
+/* 8006F9FC 0006B69C  4E 80 04 21 */	bctrl
 /* 8006FA00 0006B6A0  88 1B 02 11 */	lbz r0, 0x211(r27)
 /* 8006FA04 0006B6A4  2C 00 00 00 */	cmpwi r0, 0
 /* 8006FA08 0006B6A8  41 82 00 E0 */	beq lbl_8006FAE8
@@ -40372,7 +40372,7 @@ lbl_8006FAFC:
 /* 8006FB04 0006B7A4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8006FB08 0006B7A8  7C 08 03 A6 */	mtlr r0
 /* 8006FB0C 0006B7AC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8006FB10 0006B7B0  4E 80 00 20 */	blr 
+/* 8006FB10 0006B7B0  4E 80 00 20 */	blr
 
 .global "TryGrabbingWorldObjectFromId__Q216InteractorModule15GrabManipulatorFs"
 "TryGrabbingWorldObjectFromId__Q216InteractorModule15GrabManipulatorFs":
@@ -40393,7 +40393,7 @@ lbl_8006FAFC:
 /* 8006FB4C 0006B7EC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 8006FB50 0006B7F0  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8006FB54 0006B7F4  7D 89 03 A6 */	mtctr r12
-/* 8006FB58 0006B7F8  4E 80 04 21 */	bctrl 
+/* 8006FB58 0006B7F8  4E 80 04 21 */	bctrl
 /* 8006FB5C 0006B7FC  2C 03 00 00 */	cmpwi r3, 0
 /* 8006FB60 0006B800  41 82 00 0C */	beq lbl_8006FB6C
 /* 8006FB64 0006B804  4B FF 6E 25 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
@@ -40447,7 +40447,7 @@ lbl_8006FBD0:
 /* 8006FC1C 0006B8BC  7F 83 E3 78 */	mr r3, r28
 /* 8006FC20 0006B8C0  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8006FC24 0006B8C4  7D 89 03 A6 */	mtctr r12
-/* 8006FC28 0006B8C8  4E 80 04 21 */	bctrl 
+/* 8006FC28 0006B8C8  4E 80 04 21 */	bctrl
 /* 8006FC2C 0006B8CC  7C 7D 1B 78 */	mr r29, r3
 /* 8006FC30 0006B8D0  38 61 00 78 */	addi r3, r1, 0x78
 /* 8006FC34 0006B8D4  4B FA 8D 65 */	bl "__ct__5EVec3Fv"
@@ -40511,7 +40511,7 @@ lbl_8006FCC8:
 /* 8006FD14 0006B9B4  38 81 00 54 */	addi r4, r1, 0x54
 /* 8006FD18 0006B9B8  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 8006FD1C 0006B9BC  7D 89 03 A6 */	mtctr r12
-/* 8006FD20 0006B9C0  4E 80 04 21 */	bctrl 
+/* 8006FD20 0006B9C0  4E 80 04 21 */	bctrl
 /* 8006FD24 0006B9C4  48 00 00 34 */	b lbl_8006FD58
 lbl_8006FD28:
 /* 8006FD28 0006B9C8  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
@@ -40522,7 +40522,7 @@ lbl_8006FD28:
 /* 8006FD3C 0006B9DC  7F E3 FB 78 */	mr r3, r31
 /* 8006FD40 0006B9E0  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 8006FD44 0006B9E4  7D 89 03 A6 */	mtctr r12
-/* 8006FD48 0006B9E8  4E 80 04 21 */	bctrl 
+/* 8006FD48 0006B9E8  4E 80 04 21 */	bctrl
 /* 8006FD4C 0006B9EC  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8006FD50 0006B9F0  7F E3 FB 78 */	mr r3, r31
 /* 8006FD54 0006B9F4  48 01 1C A1 */	bl "UpdateFloorOffset__Q216InteractorModule14RayManipulatorFf"
@@ -40688,7 +40688,7 @@ lbl_8006FF94:
 /* 8006FFA4 0006BC44  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 8006FFA8 0006BC48  7C 08 03 A6 */	mtlr r0
 /* 8006FFAC 0006BC4C  38 21 01 00 */	addi r1, r1, 0x100
-/* 8006FFB0 0006BC50  4E 80 00 20 */	blr 
+/* 8006FFB0 0006BC50  4E 80 00 20 */	blr
 
 .global "DestroyObjectInHand__Q216InteractorModule15GrabManipulatorFQ316InteractorModule15GrabManipulator21eDestroyObjectContext"
 "DestroyObjectInHand__Q216InteractorModule15GrabManipulatorFQ316InteractorModule15GrabManipulator21eDestroyObjectContext":
@@ -40792,7 +40792,7 @@ lbl_800700E0:
 /* 8007011C 0006BDBC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80070120 0006BDC0  7C 08 03 A6 */	mtlr r0
 /* 80070124 0006BDC4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80070128 0006BDC8  4E 80 00 20 */	blr 
+/* 80070128 0006BDC8  4E 80 00 20 */	blr
 
 .global "DropCurrentObject__Q216InteractorModule15GrabManipulatorFv"
 "DropCurrentObject__Q216InteractorModule15GrabManipulatorFv":
@@ -40906,7 +40906,7 @@ lbl_800702B8:
 /* 800702C4 0006BF64  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 800702C8 0006BF68  7C 08 03 A6 */	mtlr r0
 /* 800702CC 0006BF6C  38 21 00 40 */	addi r1, r1, 0x40
-/* 800702D0 0006BF70  4E 80 00 20 */	blr 
+/* 800702D0 0006BF70  4E 80 00 20 */	blr
 
 .global "TryRemoveCurrentObjectFromWorld__Q216InteractorModule15GrabManipulatorFv"
 "TryRemoveCurrentObjectFromWorld__Q216InteractorModule15GrabManipulatorFv":
@@ -40923,7 +40923,7 @@ lbl_800702B8:
 /* 800702FC 0006BF9C  7F E3 FB 78 */	mr r3, r31
 /* 80070300 0006BFA0  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80070304 0006BFA4  7D 89 03 A6 */	mtctr r12
-/* 80070308 0006BFA8  4E 80 04 21 */	bctrl 
+/* 80070308 0006BFA8  4E 80 04 21 */	bctrl
 /* 8007030C 0006BFAC  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80070310 0006BFB0  38 7F 01 94 */	addi r3, r31, 0x194
 /* 80070314 0006BFB4  4B FE 12 65 */	bl "Set__5EVec2Ff"
@@ -40952,7 +40952,7 @@ lbl_80070364:
 /* 80070368 0006C008  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8007036C 0006C00C  7C 08 03 A6 */	mtlr r0
 /* 80070370 0006C010  38 21 00 30 */	addi r1, r1, 0x30
-/* 80070374 0006C014  4E 80 00 20 */	blr 
+/* 80070374 0006C014  4E 80 00 20 */	blr
 
 .global "OnUndoButton__Q216InteractorModule15GrabManipulatorFv"
 "OnUndoButton__Q216InteractorModule15GrabManipulatorFv":
@@ -40996,7 +40996,7 @@ lbl_800703C8:
 /* 80070404 0006C0A4  38 63 4B A8 */	addi r3, r3, lbl_80424BA8@l
 /* 80070408 0006C0A8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8007040C 0006C0AC  7C 69 03 A6 */	mtctr r3
-/* 80070410 0006C0B0  4E 80 04 20 */	bctr 
+/* 80070410 0006C0B0  4E 80 04 20 */	bctr
 /* 80070414 0006C0B4  A8 61 00 30 */	lha r3, 0x30(r1)
 /* 80070418 0006C0B8  4B FF 49 01 */	bl "GetObjectFromInt16__16InteractorModuleFs"
 /* 8007041C 0006C0BC  7C 7C 1B 78 */	mr r28, r3
@@ -41328,7 +41328,7 @@ lbl_800708E0:
 /* 800708F0 0006C590  83 81 00 60 */	lwz r28, 0x60(r1)
 /* 800708F4 0006C594  7C 08 03 A6 */	mtlr r0
 /* 800708F8 0006C598  38 21 00 70 */	addi r1, r1, 0x70
-/* 800708FC 0006C59C  4E 80 00 20 */	blr 
+/* 800708FC 0006C59C  4E 80 00 20 */	blr
 
 .global "CanPickupObject__Q216InteractorModule15GrabManipulatorFP8cXObject"
 "CanPickupObject__Q216InteractorModule15GrabManipulatorFP8cXObject":
@@ -41342,7 +41342,7 @@ lbl_800708E0:
 /* 8007091C 0006C5BC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80070920 0006C5C0  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 80070924 0006C5C4  7D 89 03 A6 */	mtctr r12
-/* 80070928 0006C5C8  4E 80 04 21 */	bctrl 
+/* 80070928 0006C5C8  4E 80 04 21 */	bctrl
 /* 8007092C 0006C5CC  2C 03 00 00 */	cmpwi r3, 0
 /* 80070930 0006C5D0  40 82 00 0C */	bne lbl_8007093C
 lbl_80070934:
@@ -41354,7 +41354,7 @@ lbl_80070940:
 /* 80070940 0006C5E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070944 0006C5E4  7C 08 03 A6 */	mtlr r0
 /* 80070948 0006C5E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007094C 0006C5EC  4E 80 00 20 */	blr 
+/* 8007094C 0006C5EC  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule16PlaceManipulator12CallbackDataFv"
 "__ct__Q316InteractorModule16PlaceManipulator12CallbackDataFv":
@@ -41376,7 +41376,7 @@ lbl_80070940:
 /* 8007098C 0006C62C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070990 0006C630  7C 08 03 A6 */	mtlr r0
 /* 80070994 0006C634  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070998 0006C638  4E 80 00 20 */	blr 
+/* 80070998 0006C638  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFv"
 "__ct__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFv":
@@ -41403,7 +41403,7 @@ lbl_80070940:
 /* 800709EC 0006C68C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800709F0 0006C690  7C 08 03 A6 */	mtlr r0
 /* 800709F4 0006C694  38 21 00 10 */	addi r1, r1, 0x10
-/* 800709F8 0006C698  4E 80 00 20 */	blr 
+/* 800709F8 0006C698  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule16PlaceManipulatorFv"
 "__ct__Q216InteractorModule16PlaceManipulatorFv":
@@ -41425,7 +41425,7 @@ lbl_80070940:
 /* 80070A38 0006C6D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070A3C 0006C6DC  7C 08 03 A6 */	mtlr r0
 /* 80070A40 0006C6E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070A44 0006C6E4  4E 80 00 20 */	blr 
+/* 80070A44 0006C6E4  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFv"
 "__dt__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFv":
@@ -41451,7 +41451,7 @@ lbl_80070A84:
 /* 80070A90 0006C730  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070A94 0006C734  7C 08 03 A6 */	mtlr r0
 /* 80070A98 0006C738  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070A9C 0006C73C  4E 80 00 20 */	blr 
+/* 80070A9C 0006C73C  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule16PlaceManipulatorFv"
 "__dt__Q216InteractorModule16PlaceManipulatorFv":
@@ -41481,7 +41481,7 @@ lbl_80070AEC:
 /* 80070AF8 0006C798  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070AFC 0006C79C  7C 08 03 A6 */	mtlr r0
 /* 80070B00 0006C7A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070B04 0006C7A4  4E 80 00 20 */	blr 
+/* 80070B04 0006C7A4  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule16PlaceManipulatorFv"
 "OnCreate__Q216InteractorModule16PlaceManipulatorFv":
@@ -41498,7 +41498,7 @@ lbl_80070AEC:
 /* 80070B30 0006C7D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070B34 0006C7D4  7C 08 03 A6 */	mtlr r0
 /* 80070B38 0006C7D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070B3C 0006C7DC  4E 80 00 20 */	blr 
+/* 80070B3C 0006C7DC  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule16PlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule16PlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -41549,7 +41549,7 @@ lbl_80070BC4:
 /* 80070BE4 0006C884  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80070BE8 0006C888  7C 08 03 A6 */	mtlr r0
 /* 80070BEC 0006C88C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070BF0 0006C890  4E 80 00 20 */	blr 
+/* 80070BF0 0006C890  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -41565,7 +41565,7 @@ lbl_80070BC4:
 /* 80070C18 0006C8B8  38 A5 4B F8 */	addi r5, r5, lbl_80424BF8@l
 /* 80070C1C 0006C8BC  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80070C20 0006C8C0  7C A9 03 A6 */	mtctr r5
-/* 80070C24 0006C8C4  4E 80 04 20 */	bctr 
+/* 80070C24 0006C8C4  4E 80 04 20 */	bctr
 /* 80070C28 0006C8C8  38 63 01 A8 */	addi r3, r3, 0x1a8
 /* 80070C2C 0006C8CC  4B FF D2 21 */	bl "ObjectIsInHand__Q216InteractorModule15PlacementObjectFv"
 /* 80070C30 0006C8D0  2C 03 00 00 */	cmpwi r3, 0
@@ -41682,7 +41682,7 @@ lbl_80070DE0:
 /* 80070DE4 0006CA84  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 80070DE8 0006CA88  7C 08 03 A6 */	mtlr r0
 /* 80070DEC 0006CA8C  38 21 00 40 */	addi r1, r1, 0x40
-/* 80070DF0 0006CA90  4E 80 00 20 */	blr 
+/* 80070DF0 0006CA90  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule16PlaceManipulator12CallbackDataFv"
 "__dt__Q316InteractorModule16PlaceManipulator12CallbackDataFv":
@@ -41708,7 +41708,7 @@ lbl_80070E30:
 /* 80070E3C 0006CADC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80070E40 0006CAE0  7C 08 03 A6 */	mtlr r0
 /* 80070E44 0006CAE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80070E48 0006CAE8  4E 80 00 20 */	blr 
+/* 80070E48 0006CAE8  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -41718,47 +41718,47 @@ lbl_80070E30:
 /* 80070E58 0006CAF8  2C 04 00 09 */	cmpwi r4, 9
 /* 80070E5C 0006CAFC  41 82 00 18 */	beq lbl_80070E74
 /* 80070E60 0006CB00  40 80 00 34 */	bge lbl_80070E94
-/* 80070E64 0006CB04  4E 80 00 20 */	blr 
+/* 80070E64 0006CB04  4E 80 00 20 */	blr
 lbl_80070E68:
 /* 80070E68 0006CB08  2C 04 00 0D */	cmpwi r4, 0xd
-/* 80070E6C 0006CB0C  4C 80 00 20 */	bgelr 
+/* 80070E6C 0006CB0C  4C 80 00 20 */	bgelr
 /* 80070E70 0006CB10  48 00 00 64 */	b lbl_80070ED4
 lbl_80070E74:
 /* 80070E74 0006CB14  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80070E78 0006CB18  2C 00 00 00 */	cmpwi r0, 0
-/* 80070E7C 0006CB1C  4D 82 00 20 */	beqlr 
+/* 80070E7C 0006CB1C  4D 82 00 20 */	beqlr
 /* 80070E80 0006CB20  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 80070E84 0006CB24  38 00 00 01 */	li r0, 1
 /* 80070E88 0006CB28  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 80070E8C 0006CB2C  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80070E90 0006CB30  4E 80 00 20 */	blr 
+/* 80070E90 0006CB30  4E 80 00 20 */	blr
 lbl_80070E94:
 /* 80070E94 0006CB34  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80070E98 0006CB38  2C 00 00 00 */	cmpwi r0, 0
-/* 80070E9C 0006CB3C  4D 82 00 20 */	beqlr 
+/* 80070E9C 0006CB3C  4D 82 00 20 */	beqlr
 /* 80070EA0 0006CB40  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 80070EA4 0006CB44  38 00 00 01 */	li r0, 1
 /* 80070EA8 0006CB48  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 80070EAC 0006CB4C  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80070EB0 0006CB50  4E 80 00 20 */	blr 
+/* 80070EB0 0006CB50  4E 80 00 20 */	blr
 lbl_80070EB4:
 /* 80070EB4 0006CB54  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80070EB8 0006CB58  2C 00 00 00 */	cmpwi r0, 0
-/* 80070EBC 0006CB5C  4D 82 00 20 */	beqlr 
+/* 80070EBC 0006CB5C  4D 82 00 20 */	beqlr
 /* 80070EC0 0006CB60  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 80070EC4 0006CB64  38 00 00 01 */	li r0, 1
 /* 80070EC8 0006CB68  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 80070ECC 0006CB6C  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80070ED0 0006CB70  4E 80 00 20 */	blr 
+/* 80070ED0 0006CB70  4E 80 00 20 */	blr
 lbl_80070ED4:
 /* 80070ED4 0006CB74  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80070ED8 0006CB78  2C 00 00 00 */	cmpwi r0, 0
-/* 80070EDC 0006CB7C  4D 82 00 20 */	beqlr 
+/* 80070EDC 0006CB7C  4D 82 00 20 */	beqlr
 /* 80070EE0 0006CB80  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 80070EE4 0006CB84  38 00 00 01 */	li r0, 1
 /* 80070EE8 0006CB88  98 03 01 F6 */	stb r0, 0x1f6(r3)
 /* 80070EEC 0006CB8C  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80070EF0 0006CB90  4E 80 00 20 */	blr 
+/* 80070EF0 0006CB90  4E 80 00 20 */	blr
 
 .global "StartPlacement__Q216InteractorModule16PlaceManipulatorFPCQ316InteractorModule16PlaceManipulator22PlaceManipulatorParams"
 "StartPlacement__Q216InteractorModule16PlaceManipulatorFPCQ316InteractorModule16PlaceManipulator22PlaceManipulatorParams":
@@ -41815,7 +41815,7 @@ lbl_80070FA4:
 /* 80070FB0 0006CC50  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80070FB4 0006CC54  7C 08 03 A6 */	mtlr r0
 /* 80070FB8 0006CC58  38 21 00 20 */	addi r1, r1, 0x20
-/* 80070FBC 0006CC5C  4E 80 00 20 */	blr 
+/* 80070FBC 0006CC5C  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFRCQ316InteractorModule16PlaceManipulator22PlaceManipulatorParams"
 "__as__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFRCQ316InteractorModule16PlaceManipulator22PlaceManipulatorParams":
@@ -41843,7 +41843,7 @@ lbl_80070FA4:
 /* 80071014 0006CCB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80071018 0006CCB8  7C 08 03 A6 */	mtlr r0
 /* 8007101C 0006CCBC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071020 0006CCC0  4E 80 00 20 */	blr 
+/* 80071020 0006CCC0  4E 80 00 20 */	blr
 
 .global "TryPlacingCurrentObject__Q216InteractorModule16PlaceManipulatorFv"
 "TryPlacingCurrentObject__Q216InteractorModule16PlaceManipulatorFv":
@@ -41931,13 +41931,13 @@ lbl_80071150:
 /* 80071160 0006CE00  7F A3 EB 78 */	mr r3, r29
 /* 80071164 0006CE04  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80071168 0006CE08  7D 89 03 A6 */	mtctr r12
-/* 8007116C 0006CE0C  4E 80 04 21 */	bctrl 
+/* 8007116C 0006CE0C  4E 80 04 21 */	bctrl
 /* 80071170 0006CE10  7C 64 1B 78 */	mr r4, r3
 /* 80071174 0006CE14  38 61 00 20 */	addi r3, r1, 0x20
 /* 80071178 0006CE18  81 84 00 00 */	lwz r12, 0(r4)
 /* 8007117C 0006CE1C  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 80071180 0006CE20  7D 89 03 A6 */	mtctr r12
-/* 80071184 0006CE24  4E 80 04 21 */	bctrl 
+/* 80071184 0006CE24  4E 80 04 21 */	bctrl
 /* 80071188 0006CE28  7F 84 E3 78 */	mr r4, r28
 /* 8007118C 0006CE2C  38 61 00 08 */	addi r3, r1, 8
 /* 80071190 0006CE30  38 A1 00 20 */	addi r5, r1, 0x20
@@ -41971,7 +41971,7 @@ lbl_800711E4:
 /* 800711F4 0006CE94  83 81 00 50 */	lwz r28, 0x50(r1)
 /* 800711F8 0006CE98  7C 08 03 A6 */	mtlr r0
 /* 800711FC 0006CE9C  38 21 00 60 */	addi r1, r1, 0x60
-/* 80071200 0006CEA0  4E 80 00 20 */	blr 
+/* 80071200 0006CEA0  4E 80 00 20 */	blr
 
 .global "CancelSession__Q216InteractorModule16PlaceManipulatorFv"
 "CancelSession__Q216InteractorModule16PlaceManipulatorFv":
@@ -42012,20 +42012,20 @@ lbl_80071274:
 /* 80071284 0006CF24  7F C3 F3 78 */	mr r3, r30
 /* 80071288 0006CF28  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8007128C 0006CF2C  7D 89 03 A6 */	mtctr r12
-/* 80071290 0006CF30  4E 80 04 21 */	bctrl 
+/* 80071290 0006CF30  4E 80 04 21 */	bctrl
 /* 80071294 0006CF34  2C 03 00 00 */	cmpwi r3, 0
 /* 80071298 0006CF38  41 82 00 4C */	beq lbl_800712E4
 /* 8007129C 0006CF3C  81 9E 00 18 */	lwz r12, 0x18(r30)
 /* 800712A0 0006CF40  7F C3 F3 78 */	mr r3, r30
 /* 800712A4 0006CF44  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800712A8 0006CF48  7D 89 03 A6 */	mtctr r12
-/* 800712AC 0006CF4C  4E 80 04 21 */	bctrl 
+/* 800712AC 0006CF4C  4E 80 04 21 */	bctrl
 /* 800712B0 0006CF50  7C 64 1B 78 */	mr r4, r3
 /* 800712B4 0006CF54  38 61 00 18 */	addi r3, r1, 0x18
 /* 800712B8 0006CF58  81 84 00 00 */	lwz r12, 0(r4)
 /* 800712BC 0006CF5C  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 800712C0 0006CF60  7D 89 03 A6 */	mtctr r12
-/* 800712C4 0006CF64  4E 80 04 21 */	bctrl 
+/* 800712C4 0006CF64  4E 80 04 21 */	bctrl
 /* 800712C8 0006CF68  7F A4 EB 78 */	mr r4, r29
 /* 800712CC 0006CF6C  38 61 00 08 */	addi r3, r1, 8
 /* 800712D0 0006CF70  38 A1 00 18 */	addi r5, r1, 0x18
@@ -42071,7 +42071,7 @@ lbl_80071348:
 /* 80071360 0006D000  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 80071364 0006D004  7C 08 03 A6 */	mtlr r0
 /* 80071368 0006D008  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007136C 0006D00C  4E 80 00 20 */	blr 
+/* 8007136C 0006D00C  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule15PlacementObjectFv"
 "__ct__Q216InteractorModule15PlacementObjectFv":
@@ -42095,7 +42095,7 @@ lbl_80071348:
 /* 800713B4 0006D054  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800713B8 0006D058  7C 08 03 A6 */	mtlr r0
 /* 800713BC 0006D05C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800713C0 0006D060  4E 80 00 20 */	blr 
+/* 800713C0 0006D060  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule15PlacementObjectFv"
 "__dt__Q216InteractorModule15PlacementObjectFv":
@@ -42115,7 +42115,7 @@ lbl_800713EC:
 /* 800713F4 0006D094  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800713F8 0006D098  7C 08 03 A6 */	mtlr r0
 /* 800713FC 0006D09C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071400 0006D0A0  4E 80 00 20 */	blr 
+/* 80071400 0006D0A0  4E 80 00 20 */	blr
 
 .global "SetObjectColor__Q216InteractorModule15PlacementObjectFP8cXObjectUc"
 "SetObjectColor__Q216InteractorModule15PlacementObjectFP8cXObjectUc":
@@ -42135,26 +42135,26 @@ lbl_80071430:
 /* 80071434 0006D0D4  7F E3 FB 78 */	mr r3, r31
 /* 80071438 0006D0D8  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8007143C 0006D0DC  7D 89 03 A6 */	mtctr r12
-/* 80071440 0006D0E0  4E 80 04 21 */	bctrl 
+/* 80071440 0006D0E0  4E 80 04 21 */	bctrl
 /* 80071444 0006D0E4  2C 03 00 00 */	cmpwi r3, 0
 /* 80071448 0006D0E8  41 82 00 18 */	beq lbl_80071460
 /* 8007144C 0006D0EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80071450 0006D0F0  7F C4 F3 78 */	mr r4, r30
 /* 80071454 0006D0F4  81 8C 00 C4 */	lwz r12, 0xc4(r12)
 /* 80071458 0006D0F8  7D 89 03 A6 */	mtctr r12
-/* 8007145C 0006D0FC  4E 80 04 21 */	bctrl 
+/* 8007145C 0006D0FC  4E 80 04 21 */	bctrl
 lbl_80071460:
 /* 80071460 0006D100  81 9F 00 18 */	lwz r12, 0x18(r31)
 /* 80071464 0006D104  7F E3 FB 78 */	mr r3, r31
 /* 80071468 0006D108  7F C4 F3 78 */	mr r4, r30
 /* 8007146C 0006D10C  81 8C 00 CC */	lwz r12, 0xcc(r12)
 /* 80071470 0006D110  7D 89 03 A6 */	mtctr r12
-/* 80071474 0006D114  4E 80 04 21 */	bctrl 
+/* 80071474 0006D114  4E 80 04 21 */	bctrl
 /* 80071478 0006D118  81 9F 00 18 */	lwz r12, 0x18(r31)
 /* 8007147C 0006D11C  7F E3 FB 78 */	mr r3, r31
 /* 80071480 0006D120  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80071484 0006D124  7D 89 03 A6 */	mtctr r12
-/* 80071488 0006D128  4E 80 04 21 */	bctrl 
+/* 80071488 0006D128  4E 80 04 21 */	bctrl
 /* 8007148C 0006D12C  2C 03 00 00 */	cmpwi r3, 0
 /* 80071490 0006D130  40 82 00 0C */	bne lbl_8007149C
 /* 80071494 0006D134  38 60 00 01 */	li r3, 1
@@ -42169,19 +42169,19 @@ lbl_800714A8:
 /* 800714B0 0006D150  7F C4 F3 78 */	mr r4, r30
 /* 800714B4 0006D154  81 8C 00 CC */	lwz r12, 0xcc(r12)
 /* 800714B8 0006D158  7D 89 03 A6 */	mtctr r12
-/* 800714BC 0006D15C  4E 80 04 21 */	bctrl 
+/* 800714BC 0006D15C  4E 80 04 21 */	bctrl
 /* 800714C0 0006D160  81 9F 00 18 */	lwz r12, 0x18(r31)
 /* 800714C4 0006D164  7F E3 FB 78 */	mr r3, r31
 /* 800714C8 0006D168  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800714CC 0006D16C  7D 89 03 A6 */	mtctr r12
-/* 800714D0 0006D170  4E 80 04 21 */	bctrl 
+/* 800714D0 0006D170  4E 80 04 21 */	bctrl
 /* 800714D4 0006D174  2C 03 00 00 */	cmpwi r3, 0
 /* 800714D8 0006D178  41 82 00 18 */	beq lbl_800714F0
 /* 800714DC 0006D17C  81 83 00 00 */	lwz r12, 0(r3)
 /* 800714E0 0006D180  7F C4 F3 78 */	mr r4, r30
 /* 800714E4 0006D184  81 8C 00 C4 */	lwz r12, 0xc4(r12)
 /* 800714E8 0006D188  7D 89 03 A6 */	mtctr r12
-/* 800714EC 0006D18C  4E 80 04 21 */	bctrl 
+/* 800714EC 0006D18C  4E 80 04 21 */	bctrl
 lbl_800714F0:
 /* 800714F0 0006D190  7F E3 FB 78 */	mr r3, r31
 /* 800714F4 0006D194  4B FF 54 8D */	bl "GetNextMultiTileObject__10cXMTObjectFv"
@@ -42196,7 +42196,7 @@ lbl_80071508:
 /* 80071510 0006D1B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80071514 0006D1B4  7C 08 03 A6 */	mtlr r0
 /* 80071518 0006D1B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007151C 0006D1BC  4E 80 00 20 */	blr 
+/* 8007151C 0006D1BC  4E 80 00 20 */	blr
 
 .global "CreateNewPlacementObjectFromGuid__Q216InteractorModule15PlacementObjectFUiUc"
 "CreateNewPlacementObjectFromGuid__Q216InteractorModule15PlacementObjectFUiUc":
@@ -42258,7 +42258,7 @@ lbl_800715E0:
 /* 800715EC 0006D28C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800715F0 0006D290  7C 08 03 A6 */	mtlr r0
 /* 800715F4 0006D294  38 21 00 20 */	addi r1, r1, 0x20
-/* 800715F8 0006D298  4E 80 00 20 */	blr 
+/* 800715F8 0006D298  4E 80 00 20 */	blr
 
 .global "GrabExistingObjectInstanceFromId__Q216InteractorModule15PlacementObjectFs"
 "GrabExistingObjectInstanceFromId__Q216InteractorModule15PlacementObjectFs":
@@ -42279,7 +42279,7 @@ lbl_800715E0:
 /* 80071634 0006D2D4  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80071638 0006D2D8  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 8007163C 0006D2DC  7D 89 03 A6 */	mtctr r12
-/* 80071640 0006D2E0  4E 80 04 21 */	bctrl 
+/* 80071640 0006D2E0  4E 80 04 21 */	bctrl
 /* 80071644 0006D2E4  2C 03 00 00 */	cmpwi r3, 0
 /* 80071648 0006D2E8  41 82 00 50 */	beq lbl_80071698
 /* 8007164C 0006D2EC  93 FE 00 00 */	stw r31, 0(r30)
@@ -42308,7 +42308,7 @@ lbl_80071698:
 /* 800716A4 0006D344  7F E3 FB 78 */	mr r3, r31
 /* 800716A8 0006D348  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 800716AC 0006D34C  7D 89 03 A6 */	mtctr r12
-/* 800716B0 0006D350  4E 80 04 21 */	bctrl 
+/* 800716B0 0006D350  4E 80 04 21 */	bctrl
 lbl_800716B4:
 /* 800716B4 0006D354  38 60 00 00 */	li r3, 0
 lbl_800716B8:
@@ -42317,7 +42317,7 @@ lbl_800716B8:
 /* 800716C0 0006D360  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800716C4 0006D364  7C 08 03 A6 */	mtlr r0
 /* 800716C8 0006D368  38 21 00 10 */	addi r1, r1, 0x10
-/* 800716CC 0006D36C  4E 80 00 20 */	blr 
+/* 800716CC 0006D36C  4E 80 00 20 */	blr
 
 .global "CreateGridObject__Q216InteractorModule15PlacementObjectFRC7FTilePtP8cXObject"
 "CreateGridObject__Q216InteractorModule15PlacementObjectFRC7FTilePtP8cXObject":
@@ -42345,7 +42345,7 @@ lbl_800716B8:
 /* 80071724 0006D3C4  7F A3 EB 78 */	mr r3, r29
 /* 80071728 0006D3C8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8007172C 0006D3CC  7D 89 03 A6 */	mtctr r12
-/* 80071730 0006D3D0  4E 80 04 21 */	bctrl 
+/* 80071730 0006D3D0  4E 80 04 21 */	bctrl
 /* 80071734 0006D3D4  4B FF 52 55 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
 /* 80071738 0006D3D8  7C 7E 1B 78 */	mr r30, r3
 /* 8007173C 0006D3DC  7F DD F3 78 */	mr r29, r30
@@ -42372,7 +42372,7 @@ lbl_8007176C:
 /* 80071784 0006D424  38 80 00 00 */	li r4, 0
 /* 80071788 0006D428  81 8C 00 B4 */	lwz r12, 0xb4(r12)
 /* 8007178C 0006D42C  7D 89 03 A6 */	mtctr r12
-/* 80071790 0006D430  4E 80 04 21 */	bctrl 
+/* 80071790 0006D430  4E 80 04 21 */	bctrl
 lbl_80071794:
 /* 80071794 0006D434  80 7B 00 04 */	lwz r3, 4(r27)
 /* 80071798 0006D438  2C 03 00 00 */	cmpwi r3, 0
@@ -42381,7 +42381,7 @@ lbl_80071794:
 /* 800717A4 0006D444  38 80 00 01 */	li r4, 1
 /* 800717A8 0006D448  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 800717AC 0006D44C  7D 89 03 A6 */	mtctr r12
-/* 800717B0 0006D450  4E 80 04 21 */	bctrl 
+/* 800717B0 0006D450  4E 80 04 21 */	bctrl
 lbl_800717B4:
 /* 800717B4 0006D454  80 9B 00 04 */	lwz r4, 4(r27)
 /* 800717B8 0006D458  7F 63 DB 78 */	mr r3, r27
@@ -42395,7 +42395,7 @@ lbl_800717B4:
 /* 800717D8 0006D478  38 E0 00 00 */	li r7, 0
 /* 800717DC 0006D47C  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 800717E0 0006D480  7D 89 03 A6 */	mtctr r12
-/* 800717E4 0006D484  4E 80 04 21 */	bctrl 
+/* 800717E4 0006D484  4E 80 04 21 */	bctrl
 /* 800717E8 0006D488  2C 03 00 00 */	cmpwi r3, 0
 /* 800717EC 0006D48C  41 82 01 00 */	beq lbl_800718EC
 /* 800717F0 0006D490  80 7B 00 04 */	lwz r3, 4(r27)
@@ -42406,7 +42406,7 @@ lbl_800717B4:
 /* 80071804 0006D4A4  38 E0 00 00 */	li r7, 0
 /* 80071808 0006D4A8  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 8007180C 0006D4AC  7D 89 03 A6 */	mtctr r12
-/* 80071810 0006D4B0  4E 80 04 21 */	bctrl 
+/* 80071810 0006D4B0  4E 80 04 21 */	bctrl
 /* 80071814 0006D4B4  48 00 00 D8 */	b lbl_800718EC
 lbl_80071818:
 /* 80071818 0006D4B8  2C 1D 00 00 */	cmpwi r29, 0
@@ -42426,7 +42426,7 @@ lbl_80071818:
 /* 80071850 0006D4F0  38 80 00 00 */	li r4, 0
 /* 80071854 0006D4F4  81 8C 00 B4 */	lwz r12, 0xb4(r12)
 /* 80071858 0006D4F8  7D 89 03 A6 */	mtctr r12
-/* 8007185C 0006D4FC  4E 80 04 21 */	bctrl 
+/* 8007185C 0006D4FC  4E 80 04 21 */	bctrl
 lbl_80071860:
 /* 80071860 0006D500  80 7B 00 04 */	lwz r3, 4(r27)
 /* 80071864 0006D504  2C 03 00 00 */	cmpwi r3, 0
@@ -42435,7 +42435,7 @@ lbl_80071860:
 /* 80071870 0006D510  38 80 00 01 */	li r4, 1
 /* 80071874 0006D514  81 8C 00 80 */	lwz r12, 0x80(r12)
 /* 80071878 0006D518  7D 89 03 A6 */	mtctr r12
-/* 8007187C 0006D51C  4E 80 04 21 */	bctrl 
+/* 8007187C 0006D51C  4E 80 04 21 */	bctrl
 lbl_80071880:
 /* 80071880 0006D520  80 7B 00 04 */	lwz r3, 4(r27)
 /* 80071884 0006D524  38 00 00 00 */	li r0, 0
@@ -42452,7 +42452,7 @@ lbl_80071880:
 /* 800718B0 0006D550  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 800718B4 0006D554  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 800718B8 0006D558  7D 89 03 A6 */	mtctr r12
-/* 800718BC 0006D55C  4E 80 04 21 */	bctrl 
+/* 800718BC 0006D55C  4E 80 04 21 */	bctrl
 /* 800718C0 0006D560  2C 03 00 00 */	cmpwi r3, 0
 /* 800718C4 0006D564  41 82 00 28 */	beq lbl_800718EC
 /* 800718C8 0006D568  80 7B 00 04 */	lwz r3, 4(r27)
@@ -42463,7 +42463,7 @@ lbl_80071880:
 /* 800718DC 0006D57C  38 E0 00 00 */	li r7, 0
 /* 800718E0 0006D580  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 800718E4 0006D584  7D 89 03 A6 */	mtctr r12
-/* 800718E8 0006D588  4E 80 04 21 */	bctrl 
+/* 800718E8 0006D588  4E 80 04 21 */	bctrl
 lbl_800718EC:
 /* 800718EC 0006D58C  80 7B 00 04 */	lwz r3, 4(r27)
 /* 800718F0 0006D590  4B FF 50 99 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
@@ -42490,7 +42490,7 @@ lbl_80071918:
 /* 8007193C 0006D5DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80071940 0006D5E0  7C 08 03 A6 */	mtlr r0
 /* 80071944 0006D5E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80071948 0006D5E8  4E 80 00 20 */	blr 
+/* 80071948 0006D5E8  4E 80 00 20 */	blr
 
 .global "CreateGridTile__Q216InteractorModule15PlacementObjectFP11ObjSelector"
 "CreateGridTile__Q216InteractorModule15PlacementObjectFP11ObjSelector":
@@ -42531,7 +42531,7 @@ lbl_800719A0:
 /* 800719D0 0006D670  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800719D4 0006D674  7C 08 03 A6 */	mtlr r0
 /* 800719D8 0006D678  38 21 00 20 */	addi r1, r1, 0x20
-/* 800719DC 0006D67C  4E 80 00 20 */	blr 
+/* 800719DC 0006D67C  4E 80 00 20 */	blr
 
 .global "DestroyGridObject__Q216InteractorModule15PlacementObjectFRP10cXMTObject"
 "DestroyGridObject__Q216InteractorModule15PlacementObjectFRP10cXMTObject":
@@ -42559,7 +42559,7 @@ lbl_80071A28:
 /* 80071A30 0006D6D0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80071A34 0006D6D4  7C 08 03 A6 */	mtlr r0
 /* 80071A38 0006D6D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071A3C 0006D6DC  4E 80 00 20 */	blr 
+/* 80071A3C 0006D6DC  4E 80 00 20 */	blr
 
 .global "InitializeGridObject__Q216InteractorModule15PlacementObjectFP10cXMTObject"
 "InitializeGridObject__Q216InteractorModule15PlacementObjectFP10cXMTObject":
@@ -42577,7 +42577,7 @@ lbl_80071A64:
 /* 80071A68 0006D708  7F E3 FB 78 */	mr r3, r31
 /* 80071A6C 0006D70C  81 8C 00 7C */	lwz r12, 0x7c(r12)
 /* 80071A70 0006D710  7D 89 03 A6 */	mtctr r12
-/* 80071A74 0006D714  4E 80 04 21 */	bctrl 
+/* 80071A74 0006D714  4E 80 04 21 */	bctrl
 /* 80071A78 0006D718  4B FA 7E 39 */	bl "GetEORGlobals__Fv"
 /* 80071A7C 0006D71C  7F E4 FB 78 */	mr r4, r31
 /* 80071A80 0006D720  48 1B AA F9 */	bl "AllocInstance__7EGlobalFP8cXObject"
@@ -42587,7 +42587,7 @@ lbl_80071A88:
 /* 80071A8C 0006D72C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80071A90 0006D730  7C 08 03 A6 */	mtlr r0
 /* 80071A94 0006D734  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071A98 0006D738  4E 80 00 20 */	blr 
+/* 80071A98 0006D738  4E 80 00 20 */	blr
 
 .global "AssignOffsetsToGridObject__Q216InteractorModule15PlacementObjectFP10cXMTObjectP8cXObject"
 "AssignOffsetsToGridObject__Q216InteractorModule15PlacementObjectFP10cXMTObjectP8cXObject":
@@ -42612,12 +42612,12 @@ lbl_80071ACC:
 /* 80071AE0 0006D780  7F E3 FB 78 */	mr r3, r31
 /* 80071AE4 0006D784  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80071AE8 0006D788  7D 89 03 A6 */	mtctr r12
-/* 80071AEC 0006D78C  4E 80 04 21 */	bctrl 
+/* 80071AEC 0006D78C  4E 80 04 21 */	bctrl
 /* 80071AF0 0006D790  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80071AF4 0006D794  7C 7F 1B 78 */	mr r31, r3
 /* 80071AF8 0006D798  81 8C 00 E8 */	lwz r12, 0xe8(r12)
 /* 80071AFC 0006D79C  7D 89 03 A6 */	mtctr r12
-/* 80071B00 0006D7A0  4E 80 04 21 */	bctrl 
+/* 80071B00 0006D7A0  4E 80 04 21 */	bctrl
 /* 80071B04 0006D7A4  48 00 00 2C */	b lbl_80071B30
 lbl_80071B08:
 /* 80071B08 0006D7A8  2C 1F 00 00 */	cmpwi r31, 0
@@ -42640,7 +42640,7 @@ lbl_80071B38:
 /* 80071B40 0006D7E0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80071B44 0006D7E4  7C 08 03 A6 */	mtlr r0
 /* 80071B48 0006D7E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071B4C 0006D7EC  4E 80 00 20 */	blr 
+/* 80071B4C 0006D7EC  4E 80 00 20 */	blr
 
 .global "Pickup__Q216InteractorModule15PlacementObjectFv"
 "Pickup__Q216InteractorModule15PlacementObjectFv":
@@ -42662,7 +42662,7 @@ lbl_80071B38:
 /* 80071B8C 0006D82C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80071B90 0006D830  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80071B94 0006D834  7D 89 03 A6 */	mtctr r12
-/* 80071B98 0006D838  4E 80 04 21 */	bctrl 
+/* 80071B98 0006D838  4E 80 04 21 */	bctrl
 /* 80071B9C 0006D83C  38 00 00 00 */	li r0, 0
 /* 80071BA0 0006D840  98 0D B5 60 */	stb r0, "s_handlingPlacementObject__5Globs"-_SDA_BASE_(r13)
 lbl_80071BA4:
@@ -42676,13 +42676,13 @@ lbl_80071BA4:
 /* 80071BC0 0006D860  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80071BC4 0006D864  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80071BC8 0006D868  7D 89 03 A6 */	mtctr r12
-/* 80071BCC 0006D86C  4E 80 04 21 */	bctrl 
+/* 80071BCC 0006D86C  4E 80 04 21 */	bctrl
 lbl_80071BD0:
 /* 80071BD0 0006D870  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80071BD4 0006D874  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80071BD8 0006D878  7C 08 03 A6 */	mtlr r0
 /* 80071BDC 0006D87C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071BE0 0006D880  4E 80 00 20 */	blr 
+/* 80071BE0 0006D880  4E 80 00 20 */	blr
 
 .global "IsLegalToPlaceAtLocation__Q216InteractorModule15PlacementObjectFR7FTilePtRQ216InteractorModule13PlacementData"
 "IsLegalToPlaceAtLocation__Q216InteractorModule15PlacementObjectFR7FTilePtRQ216InteractorModule13PlacementData":
@@ -42713,7 +42713,7 @@ lbl_80071C30:
 /* 80071C3C 0006D8DC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80071C40 0006D8E0  7C 08 03 A6 */	mtlr r0
 /* 80071C44 0006D8E4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80071C48 0006D8E8  4E 80 00 20 */	blr 
+/* 80071C48 0006D8E8  4E 80 00 20 */	blr
 
 .global "Place__Q216InteractorModule15PlacementObjectFRC7FTilePtRQ216InteractorModule13PlacementData"
 "Place__Q216InteractorModule15PlacementObjectFRC7FTilePtRQ216InteractorModule13PlacementData":
@@ -42736,7 +42736,7 @@ lbl_80071C30:
 /* 80071C8C 0006D92C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80071C90 0006D930  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80071C94 0006D934  7D 89 03 A6 */	mtctr r12
-/* 80071C98 0006D938  4E 80 04 21 */	bctrl 
+/* 80071C98 0006D938  4E 80 04 21 */	bctrl
 /* 80071C9C 0006D93C  2C 03 00 00 */	cmpwi r3, 0
 /* 80071CA0 0006D940  41 82 00 A4 */	beq lbl_80071D44
 /* 80071CA4 0006D944  38 00 00 01 */	li r0, 1
@@ -42755,7 +42755,7 @@ lbl_80071C30:
 /* 80071CD8 0006D978  38 A0 00 01 */	li r5, 1
 /* 80071CDC 0006D97C  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80071CE0 0006D980  7D 89 03 A6 */	mtctr r12
-/* 80071CE4 0006D984  4E 80 04 21 */	bctrl 
+/* 80071CE4 0006D984  4E 80 04 21 */	bctrl
 /* 80071CE8 0006D988  48 00 00 28 */	b lbl_80071D10
 lbl_80071CEC:
 /* 80071CEC 0006D98C  80 7D 00 00 */	lwz r3, 0(r29)
@@ -42766,7 +42766,7 @@ lbl_80071CEC:
 /* 80071D00 0006D9A0  38 E0 00 00 */	li r7, 0
 /* 80071D04 0006D9A4  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80071D08 0006D9A8  7D 89 03 A6 */	mtctr r12
-/* 80071D0C 0006D9AC  4E 80 04 21 */	bctrl 
+/* 80071D0C 0006D9AC  4E 80 04 21 */	bctrl
 lbl_80071D10:
 /* 80071D10 0006D9B0  38 00 00 00 */	li r0, 0
 /* 80071D14 0006D9B4  98 0D B5 60 */	stb r0, "s_handlingPlacementObject__5Globs"-_SDA_BASE_(r13)
@@ -42780,7 +42780,7 @@ lbl_80071D10:
 /* 80071D34 0006D9D4  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80071D38 0006D9D8  38 E0 00 00 */	li r7, 0
 /* 80071D3C 0006D9DC  7D 89 03 A6 */	mtctr r12
-/* 80071D40 0006D9E0  4E 80 04 21 */	bctrl 
+/* 80071D40 0006D9E0  4E 80 04 21 */	bctrl
 lbl_80071D44:
 /* 80071D44 0006D9E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80071D48 0006D9E8  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -42788,7 +42788,7 @@ lbl_80071D44:
 /* 80071D50 0006D9F0  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80071D54 0006D9F4  7C 08 03 A6 */	mtlr r0
 /* 80071D58 0006D9F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80071D5C 0006D9FC  4E 80 00 20 */	blr 
+/* 80071D5C 0006D9FC  4E 80 00 20 */	blr
 
 .global "Drop__Q216InteractorModule15PlacementObjectFPQ216InteractorModule13PlacementData"
 "Drop__Q216InteractorModule15PlacementObjectFPQ216InteractorModule13PlacementData":
@@ -42823,7 +42823,7 @@ lbl_80071DC4:
 /* 80071DC8 0006DA68  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80071DCC 0006DA6C  7C 08 03 A6 */	mtlr r0
 /* 80071DD0 0006DA70  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071DD4 0006DA74  4E 80 00 20 */	blr 
+/* 80071DD4 0006DA74  4E 80 00 20 */	blr
 
 .global "Initialize__Q216InteractorModule15PlacementObjectFv"
 "Initialize__Q216InteractorModule15PlacementObjectFv":
@@ -42837,7 +42837,7 @@ lbl_80071DC4:
 /* 80071DE8 0006DA88  4B FF 2E 5C */	b "CanObjectBeDestroyed__16InteractorModuleFP8cXObject"
 lbl_80071DEC:
 /* 80071DEC 0006DA8C  38 60 00 00 */	li r3, 0
-/* 80071DF0 0006DA90  4E 80 00 20 */	blr 
+/* 80071DF0 0006DA90  4E 80 00 20 */	blr
 
 .global "Destroy__Q216InteractorModule15PlacementObjectFv"
 "Destroy__Q216InteractorModule15PlacementObjectFv":
@@ -42875,7 +42875,7 @@ lbl_80071E5C:
 /* 80071E68 0006DB08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80071E6C 0006DB0C  7C 08 03 A6 */	mtlr r0
 /* 80071E70 0006DB10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071E74 0006DB14  4E 80 00 20 */	blr 
+/* 80071E74 0006DB14  4E 80 00 20 */	blr
 
 .global "Reset__Q216InteractorModule15PlacementObjectFv"
 "Reset__Q216InteractorModule15PlacementObjectFv":
@@ -42912,7 +42912,7 @@ lbl_80071EE8:
 /* 80071EEC 0006DB8C  7F E3 FB 78 */	mr r3, r31
 /* 80071EF0 0006DB90  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80071EF4 0006DB94  7D 89 03 A6 */	mtctr r12
-/* 80071EF8 0006DB98  4E 80 04 21 */	bctrl 
+/* 80071EF8 0006DB98  4E 80 04 21 */	bctrl
 /* 80071EFC 0006DB9C  2C 03 00 00 */	cmpwi r3, 0
 /* 80071F00 0006DBA0  41 82 00 38 */	beq lbl_80071F38
 /* 80071F04 0006DBA4  4B FF 4A 85 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
@@ -42947,7 +42947,7 @@ lbl_80071F50:
 /* 80071F68 0006DC08  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80071F6C 0006DC0C  7C 08 03 A6 */	mtlr r0
 /* 80071F70 0006DC10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071F74 0006DC14  4E 80 00 20 */	blr 
+/* 80071F74 0006DC14  4E 80 00 20 */	blr
 
 .global "ResetDirection__Q216InteractorModule15PlacementObjectFv"
 "ResetDirection__Q216InteractorModule15PlacementObjectFv":
@@ -42969,7 +42969,7 @@ lbl_80071FB0:
 /* 80071FB0 0006DC50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80071FB4 0006DC54  7C 08 03 A6 */	mtlr r0
 /* 80071FB8 0006DC58  38 21 00 10 */	addi r1, r1, 0x10
-/* 80071FBC 0006DC5C  4E 80 00 20 */	blr 
+/* 80071FBC 0006DC5C  4E 80 00 20 */	blr
 
 .global "SetDirection__Q216InteractorModule15PlacementObjectFi"
 "SetDirection__Q216InteractorModule15PlacementObjectFi":
@@ -42991,7 +42991,7 @@ lbl_80071FF8:
 /* 80071FF8 0006DC98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80071FFC 0006DC9C  7C 08 03 A6 */	mtlr r0
 /* 80072000 0006DCA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072004 0006DCA4  4E 80 00 20 */	blr 
+/* 80072004 0006DCA4  4E 80 00 20 */	blr
 
 .global "Rotate__Q216InteractorModule15PlacementObjectFQ316InteractorModule15PlacementObject15RotateDirection"
 "Rotate__Q216InteractorModule15PlacementObjectFQ316InteractorModule15PlacementObject15RotateDirection":
@@ -43062,7 +43062,7 @@ lbl_800720B0:
 /* 800720F8 0006DD98  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 800720FC 0006DD9C  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80072100 0006DDA0  7D 89 03 A6 */	mtctr r12
-/* 80072104 0006DDA4  4E 80 04 21 */	bctrl 
+/* 80072104 0006DDA4  4E 80 04 21 */	bctrl
 lbl_80072108:
 /* 80072108 0006DDA8  80 7F 00 04 */	lwz r3, 4(r31)
 /* 8007210C 0006DDAC  48 0C 33 45 */	bl "IsInWorld__8cXObjectCFv"
@@ -43072,7 +43072,7 @@ lbl_80072108:
 /* 8007211C 0006DDBC  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072120 0006DDC0  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80072124 0006DDC4  7D 89 03 A6 */	mtctr r12
-/* 80072128 0006DDC8  4E 80 04 21 */	bctrl 
+/* 80072128 0006DDC8  4E 80 04 21 */	bctrl
 lbl_8007212C:
 /* 8007212C 0006DDCC  3B A0 00 00 */	li r29, 0
 lbl_80072130:
@@ -43087,13 +43087,13 @@ lbl_80072130:
 /* 80072150 0006DDF0  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072154 0006DDF4  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 80072158 0006DDF8  7D 89 03 A6 */	mtctr r12
-/* 8007215C 0006DDFC  4E 80 04 21 */	bctrl 
+/* 8007215C 0006DDFC  4E 80 04 21 */	bctrl
 /* 80072160 0006DE00  80 7F 00 04 */	lwz r3, 4(r31)
 /* 80072164 0006DE04  38 80 00 01 */	li r4, 1
 /* 80072168 0006DE08  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 8007216C 0006DE0C  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 80072170 0006DE10  7D 89 03 A6 */	mtctr r12
-/* 80072174 0006DE14  4E 80 04 21 */	bctrl 
+/* 80072174 0006DE14  4E 80 04 21 */	bctrl
 /* 80072178 0006DE18  80 7F 00 00 */	lwz r3, 0(r31)
 /* 8007217C 0006DE1C  4B FD FA 2D */	bl "IsMultiTile__8cXObjectFv"
 /* 80072180 0006DE20  2C 03 00 00 */	cmpwi r3, 0
@@ -43103,7 +43103,7 @@ lbl_80072130:
 /* 80072190 0006DE30  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072194 0006DE34  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80072198 0006DE38  7D 89 03 A6 */	mtctr r12
-/* 8007219C 0006DE3C  4E 80 04 21 */	bctrl 
+/* 8007219C 0006DE3C  4E 80 04 21 */	bctrl
 /* 800721A0 0006DE40  7C 7C 1B 78 */	mr r28, r3
 /* 800721A4 0006DE44  48 00 00 60 */	b lbl_80072204
 lbl_800721A8:
@@ -43126,7 +43126,7 @@ lbl_800721B8:
 /* 800721E4 0006DE84  38 80 00 01 */	li r4, 1
 /* 800721E8 0006DE88  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 800721EC 0006DE8C  7D 89 03 A6 */	mtctr r12
-/* 800721F0 0006DE90  4E 80 04 21 */	bctrl 
+/* 800721F0 0006DE90  4E 80 04 21 */	bctrl
 lbl_800721F4:
 /* 800721F4 0006DE94  3B 7B FF FF */	addi r27, r27, -1
 lbl_800721F8:
@@ -43157,7 +43157,7 @@ lbl_80072220:
 /* 8007224C 0006DEEC  38 80 00 01 */	li r4, 1
 /* 80072250 0006DEF0  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 80072254 0006DEF4  7D 89 03 A6 */	mtctr r12
-/* 80072258 0006DEF8  4E 80 04 21 */	bctrl 
+/* 80072258 0006DEF8  4E 80 04 21 */	bctrl
 lbl_8007225C:
 /* 8007225C 0006DEFC  3B 5A FF FF */	addi r26, r26, -1
 lbl_80072260:
@@ -43203,12 +43203,12 @@ lbl_800722AC:
 /* 800722F0 0006DF90  38 A0 00 01 */	li r5, 1
 /* 800722F4 0006DF94  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 800722F8 0006DF98  7D 89 03 A6 */	mtctr r12
-/* 800722FC 0006DF9C  4E 80 04 21 */	bctrl 
+/* 800722FC 0006DF9C  4E 80 04 21 */	bctrl
 /* 80072300 0006DFA0  80 7F 00 00 */	lwz r3, 0(r31)
 /* 80072304 0006DFA4  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072308 0006DFA8  81 8C 00 C0 */	lwz r12, 0xc0(r12)
 /* 8007230C 0006DFAC  7D 89 03 A6 */	mtctr r12
-/* 80072310 0006DFB0  4E 80 04 21 */	bctrl 
+/* 80072310 0006DFB0  4E 80 04 21 */	bctrl
 /* 80072314 0006DFB4  48 00 00 50 */	b lbl_80072364
 lbl_80072318:
 /* 80072318 0006DFB8  80 7F 00 00 */	lwz r3, 0(r31)
@@ -43219,12 +43219,12 @@ lbl_80072318:
 /* 8007232C 0006DFCC  38 E0 00 00 */	li r7, 0
 /* 80072330 0006DFD0  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80072334 0006DFD4  7D 89 03 A6 */	mtctr r12
-/* 80072338 0006DFD8  4E 80 04 21 */	bctrl 
+/* 80072338 0006DFD8  4E 80 04 21 */	bctrl
 /* 8007233C 0006DFDC  80 7F 00 00 */	lwz r3, 0(r31)
 /* 80072340 0006DFE0  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072344 0006DFE4  81 8C 00 C0 */	lwz r12, 0xc0(r12)
 /* 80072348 0006DFE8  7D 89 03 A6 */	mtctr r12
-/* 8007234C 0006DFEC  4E 80 04 21 */	bctrl 
+/* 8007234C 0006DFEC  4E 80 04 21 */	bctrl
 /* 80072350 0006DFF0  48 00 00 14 */	b lbl_80072364
 lbl_80072354:
 /* 80072354 0006DFF4  7F E3 FB 78 */	mr r3, r31
@@ -43244,7 +43244,7 @@ lbl_80072364:
 /* 80072388 0006E028  38 E0 00 00 */	li r7, 0
 /* 8007238C 0006E02C  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 80072390 0006E030  7D 89 03 A6 */	mtctr r12
-/* 80072394 0006E034  4E 80 04 21 */	bctrl 
+/* 80072394 0006E034  4E 80 04 21 */	bctrl
 /* 80072398 0006E038  2C 03 00 00 */	cmpwi r3, 0
 /* 8007239C 0006E03C  41 82 00 30 */	beq lbl_800723CC
 /* 800723A0 0006E040  80 7F 00 04 */	lwz r3, 4(r31)
@@ -43257,7 +43257,7 @@ lbl_80072364:
 /* 800723BC 0006E05C  38 E0 00 00 */	li r7, 0
 /* 800723C0 0006E060  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 800723C4 0006E064  7D 89 03 A6 */	mtctr r12
-/* 800723C8 0006E068  4E 80 04 21 */	bctrl 
+/* 800723C8 0006E068  4E 80 04 21 */	bctrl
 lbl_800723CC:
 /* 800723CC 0006E06C  80 9F 00 04 */	lwz r4, 4(r31)
 /* 800723D0 0006E070  7F E3 FB 78 */	mr r3, r31
@@ -43271,7 +43271,7 @@ lbl_800723E4:
 /* 800723EC 0006E08C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800723F0 0006E090  7C 08 03 A6 */	mtlr r0
 /* 800723F4 0006E094  38 21 00 30 */	addi r1, r1, 0x30
-/* 800723F8 0006E098  4E 80 00 20 */	blr 
+/* 800723F8 0006E098  4E 80 00 20 */	blr
 
 .global "ResetLocation__Q216InteractorModule15PlacementObjectFv"
 "ResetLocation__Q216InteractorModule15PlacementObjectFv":
@@ -43300,7 +43300,7 @@ lbl_800723E4:
 /* 80072454 0006E0F4  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80072458 0006E0F8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8007245C 0006E0FC  7D 89 03 A6 */	mtctr r12
-/* 80072460 0006E100  4E 80 04 21 */	bctrl 
+/* 80072460 0006E100  4E 80 04 21 */	bctrl
 /* 80072464 0006E104  4B FF 45 25 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
 /* 80072468 0006E108  7C 7F 1B 78 */	mr r31, r3
 /* 8007246C 0006E10C  48 00 00 30 */	b lbl_8007249C
@@ -43334,7 +43334,7 @@ lbl_800724A4:
 /* 800724D0 0006E170  38 A0 00 01 */	li r5, 1
 /* 800724D4 0006E174  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 800724D8 0006E178  7D 89 03 A6 */	mtctr r12
-/* 800724DC 0006E17C  4E 80 04 21 */	bctrl 
+/* 800724DC 0006E17C  4E 80 04 21 */	bctrl
 /* 800724E0 0006E180  48 00 00 28 */	b lbl_80072508
 lbl_800724E4:
 /* 800724E4 0006E184  80 7E 00 00 */	lwz r3, 0(r30)
@@ -43345,7 +43345,7 @@ lbl_800724E4:
 /* 800724F8 0006E198  38 E0 00 00 */	li r7, 0
 /* 800724FC 0006E19C  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80072500 0006E1A0  7D 89 03 A6 */	mtctr r12
-/* 80072504 0006E1A4  4E 80 04 21 */	bctrl 
+/* 80072504 0006E1A4  4E 80 04 21 */	bctrl
 lbl_80072508:
 /* 80072508 0006E1A8  80 7E 00 00 */	lwz r3, 0(r30)
 /* 8007250C 0006E1AC  4B FF 2F 45 */	bl "UpdateAllObjectsInWorldAfterFirstPickupOrFinalPlace__16InteractorModuleFP8cXObject"
@@ -43365,7 +43365,7 @@ lbl_80072514:
 /* 80072540 0006E1E0  38 A0 00 01 */	li r5, 1
 /* 80072544 0006E1E4  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80072548 0006E1E8  7D 89 03 A6 */	mtctr r12
-/* 8007254C 0006E1EC  4E 80 04 21 */	bctrl 
+/* 8007254C 0006E1EC  4E 80 04 21 */	bctrl
 /* 80072550 0006E1F0  48 00 00 28 */	b lbl_80072578
 lbl_80072554:
 /* 80072554 0006E1F4  80 7E 00 00 */	lwz r3, 0(r30)
@@ -43376,7 +43376,7 @@ lbl_80072554:
 /* 80072568 0006E208  38 E0 00 00 */	li r7, 0
 /* 8007256C 0006E20C  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 80072570 0006E210  7D 89 03 A6 */	mtctr r12
-/* 80072574 0006E214  4E 80 04 21 */	bctrl 
+/* 80072574 0006E214  4E 80 04 21 */	bctrl
 lbl_80072578:
 /* 80072578 0006E218  80 7E 00 00 */	lwz r3, 0(r30)
 /* 8007257C 0006E21C  4B FF 2E D5 */	bl "UpdateAllObjectsInWorldAfterFirstPickupOrFinalPlace__16InteractorModuleFP8cXObject"
@@ -43389,7 +43389,7 @@ lbl_80072580:
 /* 80072594 0006E234  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80072598 0006E238  7C 08 03 A6 */	mtlr r0
 /* 8007259C 0006E23C  38 21 00 20 */	addi r1, r1, 0x20
-/* 800725A0 0006E240  4E 80 00 20 */	blr 
+/* 800725A0 0006E240  4E 80 00 20 */	blr
 
 .global "SetShaderToValidState__Q216InteractorModule15PlacementObjectFb"
 "SetShaderToValidState__Q216InteractorModule15PlacementObjectFb":
@@ -43474,7 +43474,7 @@ lbl_800726C8:
 /* 800726CC 0006E36C  7F 83 E3 78 */	mr r3, r28
 /* 800726D0 0006E370  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800726D4 0006E374  7D 89 03 A6 */	mtctr r12
-/* 800726D8 0006E378  4E 80 04 21 */	bctrl 
+/* 800726D8 0006E378  4E 80 04 21 */	bctrl
 /* 800726DC 0006E37C  7C 7E 1B 78 */	mr r30, r3
 /* 800726E0 0006E380  7F 65 DB 78 */	mr r5, r27
 /* 800726E4 0006E384  38 80 00 02 */	li r4, 2
@@ -43503,7 +43503,7 @@ lbl_80072730:
 /* 80072734 0006E3D4  7F 63 DB 78 */	mr r3, r27
 /* 80072738 0006E3D8  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8007273C 0006E3DC  7D 89 03 A6 */	mtctr r12
-/* 80072740 0006E3E0  4E 80 04 21 */	bctrl 
+/* 80072740 0006E3E0  4E 80 04 21 */	bctrl
 /* 80072744 0006E3E4  7C 7C 1B 78 */	mr r28, r3
 /* 80072748 0006E3E8  7F 45 D3 78 */	mr r5, r26
 /* 8007274C 0006E3EC  38 80 00 02 */	li r4, 2
@@ -43524,19 +43524,19 @@ lbl_80072778:
 /* 80072780 0006E420  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80072784 0006E424  7C 08 03 A6 */	mtlr r0
 /* 80072788 0006E428  38 21 00 40 */	addi r1, r1, 0x40
-/* 8007278C 0006E42C  4E 80 00 20 */	blr 
+/* 8007278C 0006E42C  4E 80 00 20 */	blr
 
 .global "SetObjectInHand__Q216InteractorModule13BluePrintGridFP8cXObject"
 "SetObjectInHand__Q216InteractorModule13BluePrintGridFP8cXObject":
 /* 80072790 0006E430  38 00 00 01 */	li r0, 1
 /* 80072794 0006E434  90 6D B3 94 */	stw r3, "m_pObjectInHand__Q216InteractorModule13BluePrintGrid"-_SDA_BASE_(r13)
 /* 80072798 0006E438  98 0D 82 AB */	stb r0, "m_bGridModeHasChanged__Q216InteractorModule13BluePrintGrid"-_SDA_BASE_(r13)
-/* 8007279C 0006E43C  4E 80 00 20 */	blr 
+/* 8007279C 0006E43C  4E 80 00 20 */	blr
 
 .global "GetERShader__Q216InteractorModule11GridSegmentFv"
 "GetERShader__Q216InteractorModule11GridSegmentFv":
 /* 800727A0 0006E440  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 800727A4 0006E444  4E 80 00 20 */	blr 
+/* 800727A4 0006E444  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule19HutPlaceManipulator12CallbackDataFv"
 "__ct__Q316InteractorModule19HutPlaceManipulator12CallbackDataFv":
@@ -43558,7 +43558,7 @@ lbl_80072778:
 /* 800727E4 0006E484  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800727E8 0006E488  7C 08 03 A6 */	mtlr r0
 /* 800727EC 0006E48C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800727F0 0006E490  4E 80 00 20 */	blr 
+/* 800727F0 0006E490  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFv"
 "__ct__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFv":
@@ -43589,7 +43589,7 @@ lbl_80072778:
 /* 80072854 0006E4F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80072858 0006E4F8  7C 08 03 A6 */	mtlr r0
 /* 8007285C 0006E4FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072860 0006E500  4E 80 00 20 */	blr 
+/* 80072860 0006E500  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule19HutPlaceManipulatorFv"
 "__ct__Q216InteractorModule19HutPlaceManipulatorFv":
@@ -43609,7 +43609,7 @@ lbl_80072778:
 /* 80072898 0006E538  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007289C 0006E53C  7C 08 03 A6 */	mtlr r0
 /* 800728A0 0006E540  38 21 00 10 */	addi r1, r1, 0x10
-/* 800728A4 0006E544  4E 80 00 20 */	blr 
+/* 800728A4 0006E544  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFv"
 "__dt__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFv":
@@ -43639,7 +43639,7 @@ lbl_800728F4:
 /* 80072900 0006E5A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80072904 0006E5A4  7C 08 03 A6 */	mtlr r0
 /* 80072908 0006E5A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007290C 0006E5AC  4E 80 00 20 */	blr 
+/* 8007290C 0006E5AC  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule19HutPlaceManipulatorFv"
 "__dt__Q216InteractorModule19HutPlaceManipulatorFv":
@@ -43669,7 +43669,7 @@ lbl_8007295C:
 /* 80072968 0006E608  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007296C 0006E60C  7C 08 03 A6 */	mtlr r0
 /* 80072970 0006E610  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072974 0006E614  4E 80 00 20 */	blr 
+/* 80072974 0006E614  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule19HutPlaceManipulatorFf"
 "Update__Q216InteractorModule19HutPlaceManipulatorFf":
@@ -43745,7 +43745,7 @@ lbl_80072A80:
 /* 80072A88 0006E728  B3 AD 82 64 */	sth r29, "lastPlacementDir$55084"-_SDA_BASE_(r13)
 /* 80072A8C 0006E72C  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80072A90 0006E730  7D 89 03 A6 */	mtctr r12
-/* 80072A94 0006E734  4E 80 04 21 */	bctrl 
+/* 80072A94 0006E734  4E 80 04 21 */	bctrl
 /* 80072A98 0006E738  80 7E 02 34 */	lwz r3, 0x234(r30)
 /* 80072A9C 0006E73C  38 A1 00 14 */	addi r5, r1, 0x14
 /* 80072AA0 0006E740  80 9E 02 30 */	lwz r4, 0x230(r30)
@@ -43903,7 +43903,7 @@ lbl_80072CC4:
 /* 80072CE4 0006E984  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 80072CE8 0006E988  7C 08 03 A6 */	mtlr r0
 /* 80072CEC 0006E98C  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 80072CF0 0006E990  4E 80 00 20 */	blr 
+/* 80072CF0 0006E990  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule19HutPlaceManipulatorFv"
 "OnCreate__Q216InteractorModule19HutPlaceManipulatorFv":
@@ -43920,7 +43920,7 @@ lbl_80072CC4:
 /* 80072D1C 0006E9BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80072D20 0006E9C0  7C 08 03 A6 */	mtlr r0
 /* 80072D24 0006E9C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072D28 0006E9C8  4E 80 00 20 */	blr 
+/* 80072D28 0006E9C8  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule19HutPlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule19HutPlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -43964,7 +43964,7 @@ lbl_80072D98:
 /* 80072DB8 0006EA58  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80072DBC 0006EA5C  7C 08 03 A6 */	mtlr r0
 /* 80072DC0 0006EA60  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072DC4 0006EA64  4E 80 00 20 */	blr 
+/* 80072DC4 0006EA64  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -43980,7 +43980,7 @@ lbl_80072D98:
 /* 80072DEC 0006EA8C  38 A5 4C C0 */	addi r5, r5, lbl_80424CC0@l
 /* 80072DF0 0006EA90  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80072DF4 0006EA94  7C A9 03 A6 */	mtctr r5
-/* 80072DF8 0006EA98  4E 80 04 20 */	bctr 
+/* 80072DF8 0006EA98  4E 80 04 20 */	bctr
 /* 80072DFC 0006EA9C  38 63 01 A8 */	addi r3, r3, 0x1a8
 /* 80072E00 0006EAA0  4B FF B0 4D */	bl "ObjectIsInHand__Q216InteractorModule15PlacementObjectFv"
 /* 80072E04 0006EAA4  2C 03 00 00 */	cmpwi r3, 0
@@ -44086,7 +44086,7 @@ lbl_80072F88:
 /* 80072F8C 0006EC2C  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 80072F90 0006EC30  7C 08 03 A6 */	mtlr r0
 /* 80072F94 0006EC34  38 21 00 40 */	addi r1, r1, 0x40
-/* 80072F98 0006EC38  4E 80 00 20 */	blr 
+/* 80072F98 0006EC38  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule19HutPlaceManipulator12CallbackDataFv"
 "__dt__Q316InteractorModule19HutPlaceManipulator12CallbackDataFv":
@@ -44112,7 +44112,7 @@ lbl_80072FD8:
 /* 80072FE4 0006EC84  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80072FE8 0006EC88  7C 08 03 A6 */	mtlr r0
 /* 80072FEC 0006EC8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80072FF0 0006EC90  4E 80 00 20 */	blr 
+/* 80072FF0 0006EC90  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -44122,39 +44122,39 @@ lbl_80072FD8:
 /* 80073000 0006ECA0  2C 04 00 09 */	cmpwi r4, 9
 /* 80073004 0006ECA4  41 82 00 18 */	beq lbl_8007301C
 /* 80073008 0006ECA8  40 80 00 2C */	bge lbl_80073034
-/* 8007300C 0006ECAC  4E 80 00 20 */	blr 
+/* 8007300C 0006ECAC  4E 80 00 20 */	blr
 lbl_80073010:
 /* 80073010 0006ECB0  2C 04 00 0D */	cmpwi r4, 0xd
-/* 80073014 0006ECB4  4C 80 00 20 */	bgelr 
+/* 80073014 0006ECB4  4C 80 00 20 */	bgelr
 /* 80073018 0006ECB8  48 00 00 4C */	b lbl_80073064
 lbl_8007301C:
 /* 8007301C 0006ECBC  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80073020 0006ECC0  2C 00 00 00 */	cmpwi r0, 0
-/* 80073024 0006ECC4  4D 82 00 20 */	beqlr 
+/* 80073024 0006ECC4  4D 82 00 20 */	beqlr
 /* 80073028 0006ECC8  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8007302C 0006ECCC  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80073030 0006ECD0  4E 80 00 20 */	blr 
+/* 80073030 0006ECD0  4E 80 00 20 */	blr
 lbl_80073034:
 /* 80073034 0006ECD4  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80073038 0006ECD8  2C 00 00 00 */	cmpwi r0, 0
-/* 8007303C 0006ECDC  4D 82 00 20 */	beqlr 
+/* 8007303C 0006ECDC  4D 82 00 20 */	beqlr
 /* 80073040 0006ECE0  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 80073044 0006ECE4  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80073048 0006ECE8  4E 80 00 20 */	blr 
+/* 80073048 0006ECE8  4E 80 00 20 */	blr
 lbl_8007304C:
 /* 8007304C 0006ECEC  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80073050 0006ECF0  2C 00 00 00 */	cmpwi r0, 0
-/* 80073054 0006ECF4  4D 82 00 20 */	beqlr 
+/* 80073054 0006ECF4  4D 82 00 20 */	beqlr
 /* 80073058 0006ECF8  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8007305C 0006ECFC  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80073060 0006ED00  4E 80 00 20 */	blr 
+/* 80073060 0006ED00  4E 80 00 20 */	blr
 lbl_80073064:
 /* 80073064 0006ED04  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 80073068 0006ED08  2C 00 00 00 */	cmpwi r0, 0
-/* 8007306C 0006ED0C  4D 82 00 20 */	beqlr 
+/* 8007306C 0006ED0C  4D 82 00 20 */	beqlr
 /* 80073070 0006ED10  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 80073074 0006ED14  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80073078 0006ED18  4E 80 00 20 */	blr 
+/* 80073078 0006ED18  4E 80 00 20 */	blr
 
 .global "StartPlacement__Q216InteractorModule19HutPlaceManipulatorFPCQ316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams"
 "StartPlacement__Q216InteractorModule19HutPlaceManipulatorFPCQ316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams":
@@ -44231,7 +44231,7 @@ lbl_80073170:
 /* 8007317C 0006EE1C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80073180 0006EE20  7C 08 03 A6 */	mtlr r0
 /* 80073184 0006EE24  38 21 00 20 */	addi r1, r1, 0x20
-/* 80073188 0006EE28  4E 80 00 20 */	blr 
+/* 80073188 0006EE28  4E 80 00 20 */	blr
 
 .global "TryPlacingCurrentObject__Q216InteractorModule19HutPlaceManipulatorFv"
 "TryPlacingCurrentObject__Q216InteractorModule19HutPlaceManipulatorFv":
@@ -44252,13 +44252,13 @@ lbl_80073170:
 /* 800731C4 0006EE64  7F C3 F3 78 */	mr r3, r30
 /* 800731C8 0006EE68  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800731CC 0006EE6C  7D 89 03 A6 */	mtctr r12
-/* 800731D0 0006EE70  4E 80 04 21 */	bctrl 
+/* 800731D0 0006EE70  4E 80 04 21 */	bctrl
 /* 800731D4 0006EE74  7C 64 1B 78 */	mr r4, r3
 /* 800731D8 0006EE78  38 61 00 18 */	addi r3, r1, 0x18
 /* 800731DC 0006EE7C  81 84 00 00 */	lwz r12, 0(r4)
 /* 800731E0 0006EE80  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 800731E4 0006EE84  7D 89 03 A6 */	mtctr r12
-/* 800731E8 0006EE88  4E 80 04 21 */	bctrl 
+/* 800731E8 0006EE88  4E 80 04 21 */	bctrl
 /* 800731EC 0006EE8C  7F A4 EB 78 */	mr r4, r29
 /* 800731F0 0006EE90  38 61 00 10 */	addi r3, r1, 0x10
 /* 800731F4 0006EE94  38 A1 00 18 */	addi r5, r1, 0x18
@@ -44267,7 +44267,7 @@ lbl_80073170:
 /* 80073200 0006EEA0  7F C3 F3 78 */	mr r3, r30
 /* 80073204 0006EEA4  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 80073208 0006EEA8  7D 89 03 A6 */	mtctr r12
-/* 8007320C 0006EEAC  4E 80 04 21 */	bctrl 
+/* 8007320C 0006EEAC  4E 80 04 21 */	bctrl
 /* 80073210 0006EEB0  38 61 00 08 */	addi r3, r1, 8
 /* 80073214 0006EEB4  38 9D 02 2C */	addi r4, r29, 0x22c
 /* 80073218 0006EEB8  48 09 6A BD */	bl "__ct__7CTilePtFRC7CTilePt"
@@ -44303,7 +44303,7 @@ lbl_80073170:
 /* 80073290 0006EF30  38 80 00 01 */	li r4, 1
 /* 80073294 0006EF34  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80073298 0006EF38  7D 89 03 A6 */	mtctr r12
-/* 8007329C 0006EF3C  4E 80 04 21 */	bctrl 
+/* 8007329C 0006EF3C  4E 80 04 21 */	bctrl
 lbl_800732A0:
 /* 800732A0 0006EF40  38 00 00 00 */	li r0, 0
 /* 800732A4 0006EF44  38 61 00 28 */	addi r3, r1, 0x28
@@ -44349,7 +44349,7 @@ lbl_8007332C:
 /* 80073338 0006EFD8  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 8007333C 0006EFDC  7C 08 03 A6 */	mtlr r0
 /* 80073340 0006EFE0  38 21 00 50 */	addi r1, r1, 0x50
-/* 80073344 0006EFE4  4E 80 00 20 */	blr 
+/* 80073344 0006EFE4  4E 80 00 20 */	blr
 
 .global "CancelSession__Q216InteractorModule19HutPlaceManipulatorFv"
 "CancelSession__Q216InteractorModule19HutPlaceManipulatorFv":
@@ -44390,20 +44390,20 @@ lbl_800733B8:
 /* 800733C8 0006F068  7F C3 F3 78 */	mr r3, r30
 /* 800733CC 0006F06C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800733D0 0006F070  7D 89 03 A6 */	mtctr r12
-/* 800733D4 0006F074  4E 80 04 21 */	bctrl 
+/* 800733D4 0006F074  4E 80 04 21 */	bctrl
 /* 800733D8 0006F078  2C 03 00 00 */	cmpwi r3, 0
 /* 800733DC 0006F07C  41 82 00 4C */	beq lbl_80073428
 /* 800733E0 0006F080  81 9E 00 18 */	lwz r12, 0x18(r30)
 /* 800733E4 0006F084  7F C3 F3 78 */	mr r3, r30
 /* 800733E8 0006F088  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800733EC 0006F08C  7D 89 03 A6 */	mtctr r12
-/* 800733F0 0006F090  4E 80 04 21 */	bctrl 
+/* 800733F0 0006F090  4E 80 04 21 */	bctrl
 /* 800733F4 0006F094  7C 64 1B 78 */	mr r4, r3
 /* 800733F8 0006F098  38 61 00 18 */	addi r3, r1, 0x18
 /* 800733FC 0006F09C  81 84 00 00 */	lwz r12, 0(r4)
 /* 80073400 0006F0A0  81 8C 01 40 */	lwz r12, 0x140(r12)
 /* 80073404 0006F0A4  7D 89 03 A6 */	mtctr r12
-/* 80073408 0006F0A8  4E 80 04 21 */	bctrl 
+/* 80073408 0006F0A8  4E 80 04 21 */	bctrl
 /* 8007340C 0006F0AC  7F A4 EB 78 */	mr r4, r29
 /* 80073410 0006F0B0  38 61 00 08 */	addi r3, r1, 8
 /* 80073414 0006F0B4  38 A1 00 18 */	addi r5, r1, 0x18
@@ -44435,7 +44435,7 @@ lbl_80073460:
 /* 80073470 0006F110  38 80 00 01 */	li r4, 1
 /* 80073474 0006F114  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80073478 0006F118  7D 89 03 A6 */	mtctr r12
-/* 8007347C 0006F11C  4E 80 04 21 */	bctrl 
+/* 8007347C 0006F11C  4E 80 04 21 */	bctrl
 lbl_80073480:
 /* 80073480 0006F120  38 00 00 00 */	li r0, 0
 /* 80073484 0006F124  2C 1F 00 00 */	cmpwi r31, 0
@@ -44462,12 +44462,12 @@ lbl_800734B8:
 /* 800734D0 0006F170  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 800734D4 0006F174  7C 08 03 A6 */	mtlr r0
 /* 800734D8 0006F178  38 21 00 50 */	addi r1, r1, 0x50
-/* 800734DC 0006F17C  4E 80 00 20 */	blr 
+/* 800734DC 0006F17C  4E 80 00 20 */	blr
 
 .global "SetObjectInHand__5HUTIOFP8cXObject"
 "SetObjectInHand__5HUTIOFP8cXObject":
 /* 800734E0 0006F180  90 83 00 08 */	stw r4, 8(r3)
-/* 800734E4 0006F184  4E 80 00 20 */	blr 
+/* 800734E4 0006F184  4E 80 00 20 */	blr
 
 .global "__ct__9HutRecipeFv"
 "__ct__9HutRecipeFv":
@@ -44505,7 +44505,7 @@ lbl_800734B8:
 /* 80073564 0006F204  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80073568 0006F208  7C 08 03 A6 */	mtlr r0
 /* 8007356C 0006F20C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80073570 0006F210  4E 80 00 20 */	blr 
+/* 80073570 0006F210  4E 80 00 20 */	blr
 
 .global "__ct__5HUTIOFv"
 "__ct__5HUTIOFv":
@@ -44515,7 +44515,7 @@ lbl_800734B8:
 /* 80073580 0006F220  90 03 00 04 */	stw r0, 4(r3)
 /* 80073584 0006F224  90 83 00 00 */	stw r4, 0(r3)
 /* 80073588 0006F228  90 03 00 08 */	stw r0, 8(r3)
-/* 8007358C 0006F22C  4E 80 00 20 */	blr 
+/* 8007358C 0006F22C  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFRCQ316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams"
 "__as__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFRCQ316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams":
@@ -44560,7 +44560,7 @@ lbl_800734B8:
 /* 80073628 0006F2C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007362C 0006F2CC  7C 08 03 A6 */	mtlr r0
 /* 80073630 0006F2D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073634 0006F2D4  4E 80 00 20 */	blr 
+/* 80073634 0006F2D4  4E 80 00 20 */	blr
 
 .global "__dt__9HutRecipeFv"
 "__dt__9HutRecipeFv":
@@ -44603,7 +44603,7 @@ lbl_800736B8:
 /* 800736C4 0006F364  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800736C8 0006F368  7C 08 03 A6 */	mtlr r0
 /* 800736CC 0006F36C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800736D0 0006F370  4E 80 00 20 */	blr 
+/* 800736D0 0006F370  4E 80 00 20 */	blr
 
 .global "ReleaseResources__9HutRecipeFv"
 "ReleaseResources__9HutRecipeFv":
@@ -44628,7 +44628,7 @@ lbl_800736B8:
 /* 8007371C 0006F3BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80073720 0006F3C0  7C 08 03 A6 */	mtlr r0
 /* 80073724 0006F3C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073728 0006F3C8  4E 80 00 20 */	blr 
+/* 80073728 0006F3C8  4E 80 00 20 */	blr
 
 .global "__dt__19HRObjectFloorRecordFv"
 "__dt__19HRObjectFloorRecordFv":
@@ -44654,7 +44654,7 @@ lbl_80073768:
 /* 80073774 0006F414  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80073778 0006F418  7C 08 03 A6 */	mtlr r0
 /* 8007377C 0006F41C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073780 0006F420  4E 80 00 20 */	blr 
+/* 80073780 0006F420  4E 80 00 20 */	blr
 
 .global "__dt__14HRObjectRecordFv"
 "__dt__14HRObjectRecordFv":
@@ -44680,7 +44680,7 @@ lbl_800737C0:
 /* 800737CC 0006F46C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800737D0 0006F470  7C 08 03 A6 */	mtlr r0
 /* 800737D4 0006F474  38 21 00 10 */	addi r1, r1, 0x10
-/* 800737D8 0006F478  4E 80 00 20 */	blr 
+/* 800737D8 0006F478  4E 80 00 20 */	blr
 
 .global "__dt__5HUTIOFv"
 "__dt__5HUTIOFv":
@@ -44700,7 +44700,7 @@ lbl_80073804:
 /* 8007380C 0006F4AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80073810 0006F4B0  7C 08 03 A6 */	mtlr r0
 /* 80073814 0006F4B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073818 0006F4B8  4E 80 00 20 */	blr 
+/* 80073818 0006F4B8  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule13RayInteractorFv"
 "__ct__Q216InteractorModule13RayInteractorFv":
@@ -44799,7 +44799,7 @@ lbl_80073804:
 /* 8007398C 0006F62C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80073990 0006F630  7C 08 03 A6 */	mtlr r0
 /* 80073994 0006F634  38 21 00 30 */	addi r1, r1, 0x30
-/* 80073998 0006F638  4E 80 00 20 */	blr 
+/* 80073998 0006F638  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule13RayInteractorFv"
 "__dt__Q216InteractorModule13RayInteractorFv":
@@ -44856,7 +44856,7 @@ lbl_80073A50:
 /* 80073A5C 0006F6FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80073A60 0006F700  7C 08 03 A6 */	mtlr r0
 /* 80073A64 0006F704  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073A68 0006F708  4E 80 00 20 */	blr 
+/* 80073A68 0006F708  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule13RayInteractorFv"
 "OnCreate__Q216InteractorModule13RayInteractorFv":
@@ -44873,7 +44873,7 @@ lbl_80073A50:
 /* 80073A94 0006F734  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80073A98 0006F738  7C 08 03 A6 */	mtlr r0
 /* 80073A9C 0006F73C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073AA0 0006F740  4E 80 00 20 */	blr 
+/* 80073AA0 0006F740  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule13RayInteractorFv"
 "OnDestroy__Q216InteractorModule13RayInteractorFv":
@@ -44890,7 +44890,7 @@ lbl_80073A50:
 /* 80073ACC 0006F76C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80073AD0 0006F770  7C 08 03 A6 */	mtlr r0
 /* 80073AD4 0006F774  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073AD8 0006F778  4E 80 00 20 */	blr 
+/* 80073AD8 0006F778  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule13RayInteractorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule13RayInteractorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -44968,7 +44968,7 @@ lbl_80073A50:
 /* 80073BF8 0006F898  7F C3 F3 78 */	mr r3, r30
 /* 80073BFC 0006F89C  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80073C00 0006F8A0  7D 89 03 A6 */	mtctr r12
-/* 80073C04 0006F8A4  4E 80 04 21 */	bctrl 
+/* 80073C04 0006F8A4  4E 80 04 21 */	bctrl
 /* 80073C08 0006F8A8  4B FD D8 91 */	bl "GetPlumbob__8PlumbBobFv"
 /* 80073C0C 0006F8AC  90 7E 00 80 */	stw r3, 0x80(r30)
 /* 80073C10 0006F8B0  38 61 00 10 */	addi r3, r1, 0x10
@@ -45017,7 +45017,7 @@ lbl_80073CB0:
 /* 80073CB8 0006F958  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80073CBC 0006F95C  7C 08 03 A6 */	mtlr r0
 /* 80073CC0 0006F960  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80073CC4 0006F964  4E 80 00 20 */	blr 
+/* 80073CC4 0006F964  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule13RayInteractorFv"
 "OnStop__Q216InteractorModule13RayInteractorFv":
@@ -45065,7 +45065,7 @@ lbl_80073D1C:
 /* 80073D68 0006FA08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80073D6C 0006FA0C  7C 08 03 A6 */	mtlr r0
 /* 80073D70 0006FA10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073D74 0006FA14  4E 80 00 20 */	blr 
+/* 80073D74 0006FA14  4E 80 00 20 */	blr
 
 .global "ParseControls__Q216InteractorModule13RayInteractorFv"
 "ParseControls__Q216InteractorModule13RayInteractorFv":
@@ -45119,7 +45119,7 @@ lbl_80073E20:
 /* 80073E28 0006FAC8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80073E2C 0006FACC  7C 08 03 A6 */	mtlr r0
 /* 80073E30 0006FAD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80073E34 0006FAD4  4E 80 00 20 */	blr 
+/* 80073E34 0006FAD4  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule13RayInteractorFf"
 "Update__Q216InteractorModule13RayInteractorFf":
@@ -45521,7 +45521,7 @@ lbl_800743D8:
 /* 800743EC 0007008C  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 800743F0 00070090  7C 08 03 A6 */	mtlr r0
 /* 800743F4 00070094  38 21 00 70 */	addi r1, r1, 0x70
-/* 800743F8 00070098  4E 80 00 20 */	blr 
+/* 800743F8 00070098  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule13RayInteractorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule13RayInteractorFRQ216InteractorModule14InteractorInfo":
@@ -45529,11 +45529,11 @@ lbl_800743D8:
 /* 80074400 000700A0  7C 65 1B 78 */	mr r5, r3
 /* 80074404 000700A4  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80074408 000700A8  FC 02 08 40 */	fcmpo cr0, f2, f1
-/* 8007440C 000700AC  4D 80 00 20 */	bltlr 
+/* 8007440C 000700AC  4D 80 00 20 */	bltlr
 /* 80074410 000700B0  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 80074414 000700B4  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 80074418 000700B8  40 80 00 08 */	bge lbl_80074420
-/* 8007441C 000700BC  4E 80 00 20 */	blr 
+/* 8007441C 000700BC  4E 80 00 20 */	blr
 lbl_80074420:
 /* 80074420 000700C0  D0 44 00 00 */	stfs f2, 0(r4)
 /* 80074424 000700C4  C0 03 00 10 */	lfs f0, 0x10(r3)
@@ -45541,7 +45541,7 @@ lbl_80074420:
 /* 8007442C 000700CC  D0 04 00 04 */	stfs f0, 4(r4)
 /* 80074430 000700D0  38 85 00 54 */	addi r4, r5, 0x54
 /* 80074434 000700D4  4B FA 3D A0 */	b "__as__5EVec2FRC5EVec2"
-/* 80074438 000700D8  4E 80 00 20 */	blr 
+/* 80074438 000700D8  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule13RayInteractorFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule13RayInteractorFRQ216InteractorModule20InteractorVisualizer":
@@ -45586,7 +45586,7 @@ lbl_800744B0:
 /* 800744B4 00070154  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800744B8 00070158  7C 08 03 A6 */	mtlr r0
 /* 800744BC 0007015C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800744C0 00070160  4E 80 00 20 */	blr 
+/* 800744C0 00070160  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -45682,7 +45682,7 @@ lbl_80074608:
 /* 80074614 000702B4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80074618 000702B8  7C 08 03 A6 */	mtlr r0
 /* 8007461C 000702BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80074620 000702C0  4E 80 00 20 */	blr 
+/* 80074620 000702C0  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -45881,7 +45881,7 @@ lbl_800748D8:
 /* 800748DC 0007057C  7F E3 FB 78 */	mr r3, r31
 /* 800748E0 00070580  81 8C 00 E8 */	lwz r12, 0xe8(r12)
 /* 800748E4 00070584  7D 89 03 A6 */	mtctr r12
-/* 800748E8 00070588  4E 80 04 21 */	bctrl 
+/* 800748E8 00070588  4E 80 04 21 */	bctrl
 lbl_800748EC:
 /* 800748EC 0007058C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800748F0 00070590  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -45889,7 +45889,7 @@ lbl_800748EC:
 /* 800748F8 00070598  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 800748FC 0007059C  7C 08 03 A6 */	mtlr r0
 /* 80074900 000705A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80074904 000705A4  4E 80 00 20 */	blr 
+/* 80074904 000705A4  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
@@ -45906,88 +45906,88 @@ lbl_8007492C:
 /* 8007492C 000705CC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80074930 000705D0  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 80074934 000705D4  7D 89 03 A6 */	mtctr r12
-/* 80074938 000705D8  4E 80 04 20 */	bctr 
+/* 80074938 000705D8  4E 80 04 20 */	bctr
 lbl_8007493C:
 /* 8007493C 000705DC  2C 04 00 01 */	cmpwi r4, 1
-/* 80074940 000705E0  4D 82 00 20 */	beqlr 
+/* 80074940 000705E0  4D 82 00 20 */	beqlr
 /* 80074944 000705E4  2C 04 00 02 */	cmpwi r4, 2
 /* 80074948 000705E8  40 82 00 10 */	bne lbl_80074958
 /* 8007494C 000705EC  38 00 00 00 */	li r0, 0
 /* 80074950 000705F0  98 03 00 DC */	stb r0, 0xdc(r3)
-/* 80074954 000705F4  4E 80 00 20 */	blr 
+/* 80074954 000705F4  4E 80 00 20 */	blr
 lbl_80074958:
 /* 80074958 000705F8  2C 04 00 07 */	cmpwi r4, 7
 /* 8007495C 000705FC  40 82 00 10 */	bne lbl_8007496C
 /* 80074960 00070600  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80074964 00070604  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80074968 00070608  4E 80 00 20 */	blr 
+/* 80074968 00070608  4E 80 00 20 */	blr
 lbl_8007496C:
 /* 8007496C 0007060C  2C 04 00 08 */	cmpwi r4, 8
 /* 80074970 00070610  40 82 00 10 */	bne lbl_80074980
 /* 80074974 00070614  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80074978 00070618  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8007497C 0007061C  4E 80 00 20 */	blr 
+/* 8007497C 0007061C  4E 80 00 20 */	blr
 lbl_80074980:
 /* 80074980 00070620  2C 04 00 0F */	cmpwi r4, 0xf
 /* 80074984 00070624  40 82 00 10 */	bne lbl_80074994
 /* 80074988 00070628  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007498C 0007062C  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 80074990 00070630  4E 80 00 20 */	blr 
+/* 80074990 00070630  4E 80 00 20 */	blr
 lbl_80074994:
 /* 80074994 00070634  2C 04 00 10 */	cmpwi r4, 0x10
 /* 80074998 00070638  40 82 00 10 */	bne lbl_800749A8
 /* 8007499C 0007063C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 800749A0 00070640  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 800749A4 00070644  4E 80 00 20 */	blr 
+/* 800749A4 00070644  4E 80 00 20 */	blr
 lbl_800749A8:
 /* 800749A8 00070648  2C 04 00 12 */	cmpwi r4, 0x12
-/* 800749AC 0007064C  4C 82 00 20 */	bnelr 
+/* 800749AC 0007064C  4C 82 00 20 */	bnelr
 /* 800749B0 00070650  88 03 01 3C */	lbz r0, 0x13c(r3)
 /* 800749B4 00070654  2C 00 00 00 */	cmpwi r0, 0
-/* 800749B8 00070658  4D 82 00 20 */	beqlr 
+/* 800749B8 00070658  4D 82 00 20 */	beqlr
 /* 800749BC 0007065C  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 800749C0 00070660  38 84 75 34 */	addi r4, r4, "_gd"@l
 /* 800749C4 00070664  80 04 00 48 */	lwz r0, 0x48(r4)
 /* 800749C8 00070668  2C 00 00 00 */	cmpwi r0, 0
-/* 800749CC 0007066C  4D 82 00 20 */	beqlr 
+/* 800749CC 0007066C  4D 82 00 20 */	beqlr
 /* 800749D0 00070670  38 00 00 00 */	li r0, 0
 /* 800749D4 00070674  98 03 01 3C */	stb r0, 0x13c(r3)
 /* 800749D8 00070678  90 03 01 40 */	stw r0, 0x140(r3)
 /* 800749DC 0007067C  80 64 00 48 */	lwz r3, 0x48(r4)
 /* 800749E0 00070680  48 13 52 AC */	b "DeactivateSimSwitcher__9H2DTargetFv"
-/* 800749E4 00070684  4E 80 00 20 */	blr 
+/* 800749E4 00070684  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
 /* 800749E8 00070688  2C 04 00 07 */	cmpwi r4, 7
 /* 800749EC 0007068C  40 82 00 0C */	bne lbl_800749F8
 /* 800749F0 00070690  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 800749F4 00070694  4E 80 00 20 */	blr 
+/* 800749F4 00070694  4E 80 00 20 */	blr
 lbl_800749F8:
 /* 800749F8 00070698  2C 04 00 08 */	cmpwi r4, 8
 /* 800749FC 0007069C  40 82 00 0C */	bne lbl_80074A08
 /* 80074A00 000706A0  D0 23 00 38 */	stfs f1, 0x38(r3)
-/* 80074A04 000706A4  4E 80 00 20 */	blr 
+/* 80074A04 000706A4  4E 80 00 20 */	blr
 lbl_80074A08:
 /* 80074A08 000706A8  2C 04 00 0F */	cmpwi r4, 0xf
 /* 80074A0C 000706AC  40 82 00 0C */	bne lbl_80074A18
 /* 80074A10 000706B0  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 80074A14 000706B4  4E 80 00 20 */	blr 
+/* 80074A14 000706B4  4E 80 00 20 */	blr
 lbl_80074A18:
 /* 80074A18 000706B8  2C 04 00 10 */	cmpwi r4, 0x10
 /* 80074A1C 000706BC  40 82 00 0C */	bne lbl_80074A28
 /* 80074A20 000706C0  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 80074A24 000706C4  4E 80 00 20 */	blr 
+/* 80074A24 000706C4  4E 80 00 20 */	blr
 lbl_80074A28:
 /* 80074A28 000706C8  2C 04 00 1D */	cmpwi r4, 0x1d
 /* 80074A2C 000706CC  40 82 00 0C */	bne lbl_80074A38
 /* 80074A30 000706D0  D0 23 00 44 */	stfs f1, 0x44(r3)
-/* 80074A34 000706D4  4E 80 00 20 */	blr 
+/* 80074A34 000706D4  4E 80 00 20 */	blr
 lbl_80074A38:
 /* 80074A38 000706D8  2C 04 00 1E */	cmpwi r4, 0x1e
-/* 80074A3C 000706DC  4C 82 00 20 */	bnelr 
+/* 80074A3C 000706DC  4C 82 00 20 */	bnelr
 /* 80074A40 000706E0  D0 23 00 48 */	stfs f1, 0x48(r3)
-/* 80074A44 000706E4  4E 80 00 20 */	blr 
+/* 80074A44 000706E4  4E 80 00 20 */	blr
 
 .global "ResetInputState__Q216InteractorModule13RayInteractorFv"
 "ResetInputState__Q216InteractorModule13RayInteractorFv":
@@ -46006,7 +46006,7 @@ lbl_80074A38:
 /* 80074A78 00070718  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80074A7C 0007071C  7C 08 03 A6 */	mtlr r0
 /* 80074A80 00070720  38 21 00 10 */	addi r1, r1, 0x10
-/* 80074A84 00070724  4E 80 00 20 */	blr 
+/* 80074A84 00070724  4E 80 00 20 */	blr
 
 .global "ResetCursor__Q216InteractorModule13RayInteractorFv"
 "ResetCursor__Q216InteractorModule13RayInteractorFv":
@@ -46036,7 +46036,7 @@ lbl_80074A38:
 /* 80074AE4 00070784  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80074AE8 00070788  7C 08 03 A6 */	mtlr r0
 /* 80074AEC 0007078C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80074AF0 00070790  4E 80 00 20 */	blr 
+/* 80074AF0 00070790  4E 80 00 20 */	blr
 
 .global "ResetSnapTimer__Q216InteractorModule13RayInteractorFv"
 "ResetSnapTimer__Q216InteractorModule13RayInteractorFv":
@@ -46046,7 +46046,7 @@ lbl_80074A38:
 /* 80074B00 000707A0  C0 04 00 50 */	lfs f0, 0x50(r4)
 /* 80074B04 000707A4  D0 03 00 70 */	stfs f0, 0x70(r3)
 /* 80074B08 000707A8  98 03 00 7D */	stb r0, 0x7d(r3)
-/* 80074B0C 000707AC  4E 80 00 20 */	blr 
+/* 80074B0C 000707AC  4E 80 00 20 */	blr
 
 .global "GetSelectionRadius__Q216InteractorModule13RayInteractorFv"
 "GetSelectionRadius__Q216InteractorModule13RayInteractorFv":
@@ -46065,7 +46065,7 @@ lbl_80074B38:
 /* 80074B3C 000707DC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80074B40 000707E0  7C 08 03 A6 */	mtlr r0
 /* 80074B44 000707E4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80074B48 000707E8  4E 80 00 20 */	blr 
+/* 80074B48 000707E8  4E 80 00 20 */	blr
 
 .global "ExecuteActionMenu__Q216InteractorModule13RayInteractorFv"
 "ExecuteActionMenu__Q216InteractorModule13RayInteractorFv":
@@ -46129,7 +46129,7 @@ lbl_80074BA8:
 /* 80074C28 000708C8  7C 7E 1B 78 */	mr r30, r3
 /* 80074C2C 000708CC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80074C30 000708D0  7D 89 03 A6 */	mtctr r12
-/* 80074C34 000708D4  4E 80 04 21 */	bctrl 
+/* 80074C34 000708D4  4E 80 04 21 */	bctrl
 /* 80074C38 000708D8  7C 7F 1B 78 */	mr r31, r3
 /* 80074C3C 000708DC  38 61 00 08 */	addi r3, r1, 8
 /* 80074C40 000708E0  4B FA E8 49 */	bl "Head__9ENodeListCFv"
@@ -46147,7 +46147,7 @@ lbl_80074C4C:
 /* 80074C6C 0007090C  7F C3 F3 78 */	mr r3, r30
 /* 80074C70 00070910  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80074C74 00070914  7D 89 03 A6 */	mtctr r12
-/* 80074C78 00070918  4E 80 04 21 */	bctrl 
+/* 80074C78 00070918  4E 80 04 21 */	bctrl
 /* 80074C7C 0007091C  7C 64 1B 78 */	mr r4, r3
 /* 80074C80 00070920  38 61 00 08 */	addi r3, r1, 8
 /* 80074C84 00070924  4B FD C1 AD */	bl "AddHead__26TNodeList<P12ISimInstance>FP12ISimInstance"
@@ -46178,7 +46178,7 @@ lbl_80074CD4:
 /* 80074CD8 00070978  7F 83 E3 78 */	mr r3, r28
 /* 80074CDC 0007097C  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80074CE0 00070980  7D 89 03 A6 */	mtctr r12
-/* 80074CE4 00070984  4E 80 04 21 */	bctrl 
+/* 80074CE4 00070984  4E 80 04 21 */	bctrl
 /* 80074CE8 00070988  38 61 00 08 */	addi r3, r1, 8
 /* 80074CEC 0007098C  38 80 FF FF */	li r4, -1
 /* 80074CF0 00070990  4B FD 92 29 */	bl "__dt__26TNodeList<P12ISimInstance>Fv"
@@ -46190,13 +46190,13 @@ lbl_80074CF4:
 /* 80074D04 000709A4  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80074D08 000709A8  7C 08 03 A6 */	mtlr r0
 /* 80074D0C 000709AC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80074D10 000709B0  4E 80 00 20 */	blr 
+/* 80074D10 000709B0  4E 80 00 20 */	blr
 
 .global "ReturnPlumbobToSim__Q216InteractorModule13RayInteractorFP8PlumbBobR5EVec3"
 "ReturnPlumbobToSim__Q216InteractorModule13RayInteractorFP8PlumbBobR5EVec3":
 /* 80074D14 000709B4  38 00 00 00 */	li r0, 0
 /* 80074D18 000709B8  90 03 00 B4 */	stw r0, 0xb4(r3)
-/* 80074D1C 000709BC  4E 80 00 20 */	blr 
+/* 80074D1C 000709BC  4E 80 00 20 */	blr
 
 .global "IsSimulatorPaused__Q216InteractorModule13RayInteractorFv"
 "IsSimulatorPaused__Q216InteractorModule13RayInteractorFv":
@@ -46212,7 +46212,7 @@ lbl_80074CF4:
 /* 80074D44 000709E4  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
 /* 80074D48 000709E8  7C 08 03 A6 */	mtlr r0
 /* 80074D4C 000709EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80074D50 000709F0  4E 80 00 20 */	blr 
+/* 80074D50 000709F0  4E 80 00 20 */	blr
 
 .global "UpdateObjectHighlights__Q216InteractorModule13RayInteractorFP11EIObjectMan"
 "UpdateObjectHighlights__Q216InteractorModule13RayInteractorFP11EIObjectMan":
@@ -46238,7 +46238,7 @@ lbl_80074D8C:
 /* 80074D90 00070A30  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80074D94 00070A34  7C 08 03 A6 */	mtlr r0
 /* 80074D98 00070A38  38 21 00 10 */	addi r1, r1, 0x10
-/* 80074D9C 00070A3C  4E 80 00 20 */	blr 
+/* 80074D9C 00070A3C  4E 80 00 20 */	blr
 
 .global "ChooseAction__Q216InteractorModule13RayInteractorFP11Interaction"
 "ChooseAction__Q216InteractorModule13RayInteractorFP11Interaction":
@@ -46266,7 +46266,7 @@ lbl_80074DE4:
 /* 80074DE8 00070A88  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80074DEC 00070A8C  7C 08 03 A6 */	mtlr r0
 /* 80074DF0 00070A90  38 21 00 10 */	addi r1, r1, 0x10
-/* 80074DF4 00070A94  4E 80 00 20 */	blr 
+/* 80074DF4 00070A94  4E 80 00 20 */	blr
 
 .global "CastRay__Q216InteractorModule13RayInteractorFv"
 "CastRay__Q216InteractorModule13RayInteractorFv":
@@ -46383,7 +46383,7 @@ lbl_80074F8C:
 /* 80074FA4 00070C44  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80074FA8 00070C48  7C 08 03 A6 */	mtlr r0
 /* 80074FAC 00070C4C  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 80074FB0 00070C50  4E 80 00 20 */	blr 
+/* 80074FB0 00070C50  4E 80 00 20 */	blr
 
 .global "RaySceneObjectsIntersectTest__Q216InteractorModule13RayInteractorFP11EIObjectMan"
 "RaySceneObjectsIntersectTest__Q216InteractorModule13RayInteractorFP11EIObjectMan":
@@ -46515,7 +46515,7 @@ lbl_80075178:
 /* 80075194 00070E34  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80075198 00070E38  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 8007519C 00070E3C  7D 89 03 A6 */	mtctr r12
-/* 800751A0 00070E40  4E 80 04 21 */	bctrl 
+/* 800751A0 00070E40  4E 80 04 21 */	bctrl
 /* 800751A4 00070E44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800751A8 00070E48  7C 00 18 40 */	cmplw r0, r3
 /* 800751AC 00070E4C  40 82 00 50 */	bne lbl_800751FC
@@ -46583,7 +46583,7 @@ lbl_80075290:
 /* 80075298 00070F38  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007529C 00070F3C  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 800752A0 00070F40  7D 89 03 A6 */	mtctr r12
-/* 800752A4 00070F44  4E 80 04 21 */	bctrl 
+/* 800752A4 00070F44  4E 80 04 21 */	bctrl
 lbl_800752A8:
 /* 800752A8 00070F48  C0 21 00 60 */	lfs f1, 0x60(r1)
 /* 800752AC 00070F4C  38 61 00 54 */	addi r3, r1, 0x54
@@ -46613,7 +46613,7 @@ lbl_80075304:
 /* 80075308 00070FA8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007530C 00070FAC  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 80075310 00070FB0  7D 89 03 A6 */	mtctr r12
-/* 80075314 00070FB4  4E 80 04 21 */	bctrl 
+/* 80075314 00070FB4  4E 80 04 21 */	bctrl
 /* 80075318 00070FB8  7C 64 1B 78 */	mr r4, r3
 /* 8007531C 00070FBC  38 61 00 90 */	addi r3, r1, 0x90
 /* 80075320 00070FC0  4B FD D1 31 */	bl "__as__7EBound3FRC7EBound3"
@@ -46685,7 +46685,7 @@ lbl_800753CC:
 /* 80075418 000710B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007541C 000710BC  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 80075420 000710C0  7D 89 03 A6 */	mtctr r12
-/* 80075424 000710C4  4E 80 04 21 */	bctrl 
+/* 80075424 000710C4  4E 80 04 21 */	bctrl
 /* 80075428 000710C8  C0 03 00 14 */	lfs f0, 0x14(r3)
 /* 8007542C 000710CC  FC 00 E0 40 */	fcmpo cr0, f0, f28
 /* 80075430 000710D0  40 80 00 08 */	bge lbl_80075438
@@ -46704,7 +46704,7 @@ lbl_80075458:
 /* 8007545C 000710FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80075460 00071100  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 80075464 00071104  7D 89 03 A6 */	mtctr r12
-/* 80075468 00071108  4E 80 04 21 */	bctrl 
+/* 80075468 00071108  4E 80 04 21 */	bctrl
 /* 8007546C 0007110C  28 03 00 01 */	cmplwi r3, 1
 /* 80075470 00071110  40 82 00 08 */	bne lbl_80075478
 /* 80075474 00071114  3A E0 00 01 */	li r23, 1
@@ -46806,7 +46806,7 @@ lbl_800755B0:
 /* 800755DC 0007127C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 800755E0 00071280  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800755E4 00071284  7D 89 03 A6 */	mtctr r12
-/* 800755E8 00071288  4E 80 04 21 */	bctrl 
+/* 800755E8 00071288  4E 80 04 21 */	bctrl
 /* 800755EC 0007128C  80 1C 00 04 */	lwz r0, 4(r28)
 /* 800755F0 00071290  2C 00 00 00 */	cmpwi r0, 0
 /* 800755F4 00071294  40 82 00 14 */	bne lbl_80075608
@@ -46848,7 +46848,7 @@ lbl_80075664:
 /* 80075670 00071310  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80075674 00071314  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80075678 00071318  7D 89 03 A6 */	mtctr r12
-/* 8007567C 0007131C  4E 80 04 21 */	bctrl 
+/* 8007567C 0007131C  4E 80 04 21 */	bctrl
 /* 80075680 00071320  2C 03 00 00 */	cmpwi r3, 0
 /* 80075684 00071324  41 82 00 CC */	beq lbl_80075750
 /* 80075688 00071328  38 80 00 01 */	li r4, 1
@@ -46870,7 +46870,7 @@ lbl_800756A4:
 /* 800756C0 00071360  7F 23 CB 78 */	mr r3, r25
 /* 800756C4 00071364  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 800756C8 00071368  7D 89 03 A6 */	mtctr r12
-/* 800756CC 0007136C  4E 80 04 21 */	bctrl 
+/* 800756CC 0007136C  4E 80 04 21 */	bctrl
 /* 800756D0 00071370  2C 03 00 00 */	cmpwi r3, 0
 /* 800756D4 00071374  41 82 00 50 */	beq lbl_80075724
 /* 800756D8 00071378  2C 18 00 00 */	cmpwi r24, 0
@@ -46942,7 +46942,7 @@ lbl_80075770:
 /* 800757C0 00071460  80 01 01 C4 */	lwz r0, 0x1c4(r1)
 /* 800757C4 00071464  7C 08 03 A6 */	mtlr r0
 /* 800757C8 00071468  38 21 01 C0 */	addi r1, r1, 0x1c0
-/* 800757CC 0007146C  4E 80 00 20 */	blr 
+/* 800757CC 0007146C  4E 80 00 20 */	blr
 
 .global "UpdateCameraPosition__Q216InteractorModule13RayInteractorFv"
 "UpdateCameraPosition__Q216InteractorModule13RayInteractorFv":
@@ -47063,7 +47063,7 @@ lbl_8007596C:
 /* 80075990 00071630  83 A1 00 B4 */	lwz r29, 0xb4(r1)
 /* 80075994 00071634  7C 08 03 A6 */	mtlr r0
 /* 80075998 00071638  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 8007599C 0007163C  4E 80 00 20 */	blr 
+/* 8007599C 0007163C  4E 80 00 20 */	blr
 
 .global "UpdateInteractorOnFloorPosition__Q216InteractorModule13RayInteractorFv"
 "UpdateInteractorOnFloorPosition__Q216InteractorModule13RayInteractorFv":
@@ -47082,7 +47082,7 @@ lbl_8007596C:
 /* 800759D0 00071670  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800759D4 00071674  7C 08 03 A6 */	mtlr r0
 /* 800759D8 00071678  38 21 00 10 */	addi r1, r1, 0x10
-/* 800759DC 0007167C  4E 80 00 20 */	blr 
+/* 800759DC 0007167C  4E 80 00 20 */	blr
 
 .global "MoveToNewSim__Q216InteractorModule13RayInteractorFRC5EVec3"
 "MoveToNewSim__Q216InteractorModule13RayInteractorFRC5EVec3":
@@ -47118,7 +47118,7 @@ lbl_80075A44:
 /* 80075A50 000716F0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80075A54 000716F4  7C 08 03 A6 */	mtlr r0
 /* 80075A58 000716F8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80075A5C 000716FC  4E 80 00 20 */	blr 
+/* 80075A5C 000716FC  4E 80 00 20 */	blr
 
 .global "GetCameraSpeedScaledByZoom__Q216InteractorModule13RayInteractorFv"
 "GetCameraSpeedScaledByZoom__Q216InteractorModule13RayInteractorFv":
@@ -47137,7 +47137,7 @@ lbl_80075A44:
 /* 80075A90 00071730  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80075A94 00071734  7C 08 03 A6 */	mtlr r0
 /* 80075A98 00071738  38 21 00 10 */	addi r1, r1, 0x10
-/* 80075A9C 0007173C  4E 80 00 20 */	blr 
+/* 80075A9C 0007173C  4E 80 00 20 */	blr
 
 .global "GetPositionAlongCamZ__Q216InteractorModule13RayInteractorFf"
 "GetPositionAlongCamZ__Q216InteractorModule13RayInteractorFf":
@@ -47209,7 +47209,7 @@ lbl_80075B8C:
 /* 80075B9C 0007183C  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 80075BA0 00071840  7C 08 03 A6 */	mtlr r0
 /* 80075BA4 00071844  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80075BA8 00071848  4E 80 00 20 */	blr 
+/* 80075BA8 00071848  4E 80 00 20 */	blr
 
 .global "CalculateCameraRotationPoint__Q216InteractorModule13RayInteractorFv"
 "CalculateCameraRotationPoint__Q216InteractorModule13RayInteractorFv":
@@ -47245,7 +47245,7 @@ lbl_80075C18:
 /* 80075C1C 000718BC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80075C20 000718C0  7C 08 03 A6 */	mtlr r0
 /* 80075C24 000718C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80075C28 000718C8  4E 80 00 20 */	blr 
+/* 80075C28 000718C8  4E 80 00 20 */	blr
 
 .global "ClampPosToLot__Q216InteractorModule13RayInteractorFR5EVec3Pf"
 "ClampPosToLot__Q216InteractorModule13RayInteractorFR5EVec3Pf":
@@ -47368,24 +47368,24 @@ lbl_80075D98:
 /* 80075DD4 00071A74  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80075DD8 00071A78  7C 08 03 A6 */	mtlr r0
 /* 80075DDC 00071A7C  38 21 00 70 */	addi r1, r1, 0x70
-/* 80075DE0 00071A80  4E 80 00 20 */	blr 
+/* 80075DE0 00071A80  4E 80 00 20 */	blr
 
 .global "SetMultisamplingOn__9RayPickerFb"
 "SetMultisamplingOn__9RayPickerFb":
 /* 80075DE4 00071A84  98 83 00 14 */	stb r4, 0x14(r3)
-/* 80075DE8 00071A88  4E 80 00 20 */	blr 
+/* 80075DE8 00071A88  4E 80 00 20 */	blr
 
 .global "GetCursorState__9CURTargetCFv"
 "GetCursorState__9CURTargetCFv":
 /* 80075DEC 00071A8C  80 63 00 CC */	lwz r3, 0xcc(r3)
-/* 80075DF0 00071A90  4E 80 00 20 */	blr 
+/* 80075DF0 00071A90  4E 80 00 20 */	blr
 
 .global "__vc__44TArray<P9ERTexture,22TArrayDefaultAllocator>Fi"
 "__vc__44TArray<P9ERTexture,22TArrayDefaultAllocator>Fi":
 /* 80075DF4 00071A94  80 63 00 00 */	lwz r3, 0(r3)
 /* 80075DF8 00071A98  54 80 10 3A */	slwi r0, r4, 2
 /* 80075DFC 00071A9C  7C 63 02 14 */	add r3, r3, r0
-/* 80075E00 00071AA0  4E 80 00 20 */	blr 
+/* 80075E00 00071AA0  4E 80 00 20 */	blr
 
 .global "GetIsChangingOutfit__4ESimCFv"
 "GetIsChangingOutfit__4ESimCFv":
@@ -47400,12 +47400,12 @@ lbl_80075E20:
 /* 80075E20 00071AC0  38 80 00 01 */	li r4, 1
 lbl_80075E24:
 /* 80075E24 00071AC4  7C 83 23 78 */	mr r3, r4
-/* 80075E28 00071AC8  4E 80 00 20 */	blr 
+/* 80075E28 00071AC8  4E 80 00 20 */	blr
 
 .global "GetSimModel__4ESimFv"
 "GetSimModel__4ESimFv":
 /* 80075E2C 00071ACC  80 63 06 F0 */	lwz r3, 0x6f0(r3)
-/* 80075E30 00071AD0  4E 80 00 20 */	blr 
+/* 80075E30 00071AD0  4E 80 00 20 */	blr
 
 .global "__ct__9RayPickerFv"
 "__ct__9RayPickerFv":
@@ -47424,7 +47424,7 @@ lbl_80075E24:
 /* 80075E64 00071B04  90 83 00 10 */	stw r4, 0x10(r3)
 /* 80075E68 00071B08  98 83 00 14 */	stb r4, 0x14(r3)
 /* 80075E6C 00071B0C  90 03 00 18 */	stw r0, 0x18(r3)
-/* 80075E70 00071B10  4E 80 00 20 */	blr 
+/* 80075E70 00071B10  4E 80 00 20 */	blr
 
 .global "__dt__9RayPickerFv"
 "__dt__9RayPickerFv":
@@ -47444,7 +47444,7 @@ lbl_80075E9C:
 /* 80075EA4 00071B44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80075EA8 00071B48  7C 08 03 A6 */	mtlr r0
 /* 80075EAC 00071B4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80075EB0 00071B50  4E 80 00 20 */	blr 
+/* 80075EB0 00071B50  4E 80 00 20 */	blr
 
 .global "GetColorFromFrameBuffer__9RayPickerFP8ETextureiiPUc"
 "GetColorFromFrameBuffer__9RayPickerFP8ETextureiiPUc":
@@ -47468,7 +47468,7 @@ lbl_80075E9C:
 /* 80075EF8 00071B98  81 83 00 00 */	lwz r12, 0(r3)
 /* 80075EFC 00071B9C  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80075F00 00071BA0  7D 89 03 A6 */	mtctr r12
-/* 80075F04 00071BA4  4E 80 04 21 */	bctrl 
+/* 80075F04 00071BA4  4E 80 04 21 */	bctrl
 /* 80075F08 00071BA8  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80075F0C 00071BAC  38 81 00 10 */	addi r4, r1, 0x10
 /* 80075F10 00071BB0  7C 00 16 70 */	srawi r0, r0, 2
@@ -47492,7 +47492,7 @@ lbl_80075E9C:
 /* 80075F58 00071BF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80075F5C 00071BFC  7C 08 03 A6 */	mtlr r0
 /* 80075F60 00071C00  38 21 00 30 */	addi r1, r1, 0x30
-/* 80075F64 00071C04  4E 80 00 20 */	blr 
+/* 80075F64 00071C04  4E 80 00 20 */	blr
 
 .global "InitWindow__9RayPickerFR9E3DWindowP3ERC"
 "InitWindow__9RayPickerFR9E3DWindowP3ERC":
@@ -47529,38 +47529,38 @@ lbl_80075E9C:
 /* 80075FE0 00071C80  81 83 00 00 */	lwz r12, 0(r3)
 /* 80075FE4 00071C84  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80075FE8 00071C88  7D 89 03 A6 */	mtctr r12
-/* 80075FEC 00071C8C  4E 80 04 21 */	bctrl 
+/* 80075FEC 00071C8C  4E 80 04 21 */	bctrl
 /* 80075FF0 00071C90  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80075FF4 00071C94  81 83 00 00 */	lwz r12, 0(r3)
 /* 80075FF8 00071C98  81 8C 00 D0 */	lwz r12, 0xd0(r12)
 /* 80075FFC 00071C9C  7D 89 03 A6 */	mtctr r12
-/* 80076000 00071CA0  4E 80 04 21 */	bctrl 
+/* 80076000 00071CA0  4E 80 04 21 */	bctrl
 /* 80076004 00071CA4  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80076008 00071CA8  38 81 00 18 */	addi r4, r1, 0x18
 /* 8007600C 00071CAC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076010 00071CB0  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 80076014 00071CB4  7D 89 03 A6 */	mtctr r12
-/* 80076018 00071CB8  4E 80 04 21 */	bctrl 
+/* 80076018 00071CB8  4E 80 04 21 */	bctrl
 /* 8007601C 00071CBC  81 9E 00 00 */	lwz r12, 0(r30)
 /* 80076020 00071CC0  7C 64 1B 78 */	mr r4, r3
 /* 80076024 00071CC4  7F C3 F3 78 */	mr r3, r30
 /* 80076028 00071CC8  38 A0 00 05 */	li r5, 5
 /* 8007602C 00071CCC  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80076030 00071CD0  7D 89 03 A6 */	mtctr r12
-/* 80076034 00071CD4  4E 80 04 21 */	bctrl 
+/* 80076034 00071CD4  4E 80 04 21 */	bctrl
 /* 80076038 00071CD8  81 9E 00 00 */	lwz r12, 0(r30)
 /* 8007603C 00071CDC  7F C3 F3 78 */	mr r3, r30
 /* 80076040 00071CE0  7F E4 FB 78 */	mr r4, r31
 /* 80076044 00071CE4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80076048 00071CE8  7D 89 03 A6 */	mtctr r12
-/* 8007604C 00071CEC  4E 80 04 21 */	bctrl 
+/* 8007604C 00071CEC  4E 80 04 21 */	bctrl
 /* 80076050 00071CF0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80076054 00071CF4  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 80076058 00071CF8  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 8007605C 00071CFC  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 80076060 00071D00  7C 08 03 A6 */	mtlr r0
 /* 80076064 00071D04  38 21 00 50 */	addi r1, r1, 0x50
-/* 80076068 00071D08  4E 80 00 20 */	blr 
+/* 80076068 00071D08  4E 80 00 20 */	blr
 
 .global "FindClosestArchitectureHit__9RayPickerFP8ESimsCamUiUiRfRQ25eastl38vector<P9EInstance,Q25eastl9allocator>b"
 "FindClosestArchitectureHit__9RayPickerFP8ESimsCamUiUiRfRQ25eastl38vector<P9EInstance,Q25eastl9allocator>b":
@@ -47647,7 +47647,7 @@ lbl_80076174:
 /* 800761A4 00071E44  81 83 00 00 */	lwz r12, 0(r3)
 /* 800761A8 00071E48  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 800761AC 00071E4C  7D 89 03 A6 */	mtctr r12
-/* 800761B0 00071E50  4E 80 04 21 */	bctrl 
+/* 800761B0 00071E50  4E 80 04 21 */	bctrl
 /* 800761B4 00071E54  7C 64 1B 78 */	mr r4, r3
 /* 800761B8 00071E58  38 61 00 78 */	addi r3, r1, 0x78
 /* 800761BC 00071E5C  4B FA 46 99 */	bl "__ct__7EBound3FRC7EBound3"
@@ -47766,7 +47766,7 @@ lbl_80076338:
 /* 80076368 00072008  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 8007636C 0007200C  7C 08 03 A6 */	mtlr r0
 /* 80076370 00072010  38 21 01 20 */	addi r1, r1, 0x120
-/* 80076374 00072014  4E 80 00 20 */	blr 
+/* 80076374 00072014  4E 80 00 20 */	blr
 
 .global "CreateImageMultiSampled__9RayPickerFRCQ25eastl42vector<P12ISimInstance,Q25eastl9allocator>iiRCQ25eastl38vector<P9EInstance,Q25eastl9allocator>RQ25eastl42vector<P12ISimInstance,Q25eastl9allocator>RbRb"
 "CreateImageMultiSampled__9RayPickerFRCQ25eastl42vector<P12ISimInstance,Q25eastl9allocator>iiRCQ25eastl38vector<P9EInstance,Q25eastl9allocator>RQ25eastl42vector<P12ISimInstance,Q25eastl9allocator>RbRb":
@@ -47802,14 +47802,14 @@ lbl_800763E0:
 /* 800763E8 00072088  81 83 00 00 */	lwz r12, 0(r3)
 /* 800763EC 0007208C  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 800763F0 00072090  7D 89 03 A6 */	mtctr r12
-/* 800763F4 00072094  4E 80 04 21 */	bctrl 
+/* 800763F4 00072094  4E 80 04 21 */	bctrl
 /* 800763F8 00072098  81 97 00 00 */	lwz r12, 0(r23)
 /* 800763FC 0007209C  7C 76 1B 78 */	mr r22, r3
 /* 80076400 000720A0  7E E3 BB 78 */	mr r3, r23
 /* 80076404 000720A4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80076408 000720A8  7E C4 B3 78 */	mr r4, r22
 /* 8007640C 000720AC  7D 89 03 A6 */	mtctr r12
-/* 80076410 000720B0  4E 80 04 21 */	bctrl 
+/* 80076410 000720B0  4E 80 04 21 */	bctrl
 /* 80076414 000720B4  7F 43 D3 78 */	mr r3, r26
 /* 80076418 000720B8  7E E4 BB 78 */	mr r4, r23
 /* 8007641C 000720BC  7E C5 B3 78 */	mr r5, r22
@@ -47827,7 +47827,7 @@ lbl_800763E0:
 /* 8007644C 000720EC  38 81 00 B0 */	addi r4, r1, 0xb0
 /* 80076450 000720F0  81 8C 00 C4 */	lwz r12, 0xc4(r12)
 /* 80076454 000720F4  7D 89 03 A6 */	mtctr r12
-/* 80076458 000720F8  4E 80 04 21 */	bctrl 
+/* 80076458 000720F8  4E 80 04 21 */	bctrl
 /* 8007645C 000720FC  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80076460 00072100  38 61 00 80 */	addi r3, r1, 0x80
 /* 80076464 00072104  C0 82 84 28 */	lfs f4, lbl_805D9648-_SDA2_BASE_(r2)
@@ -47863,7 +47863,7 @@ lbl_800763E0:
 /* 800764DC 0007217C  39 01 00 80 */	addi r8, r1, 0x80
 /* 800764E0 00072180  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 800764E4 00072184  7D 89 03 A6 */	mtctr r12
-/* 800764E8 00072188  4E 80 04 21 */	bctrl 
+/* 800764E8 00072188  4E 80 04 21 */	bctrl
 /* 800764EC 0007218C  38 61 00 30 */	addi r3, r1, 0x30
 /* 800764F0 00072190  38 80 00 01 */	li r4, 1
 /* 800764F4 00072194  38 A0 00 00 */	li r5, 0
@@ -47893,7 +47893,7 @@ lbl_800763E0:
 /* 80076554 000721F4  39 01 00 80 */	addi r8, r1, 0x80
 /* 80076558 000721F8  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007655C 000721FC  7D 89 03 A6 */	mtctr r12
-/* 80076560 00072200  4E 80 04 21 */	bctrl 
+/* 80076560 00072200  4E 80 04 21 */	bctrl
 /* 80076564 00072204  7F 63 DB 78 */	mr r3, r27
 /* 80076568 00072208  4B FD F0 D9 */	bl "size__Q25eastl42vector<P12ISimInstance,Q25eastl9allocator>CFv"
 /* 8007656C 0007220C  81 96 00 00 */	lwz r12, 0(r22)
@@ -47906,7 +47906,7 @@ lbl_800763E0:
 /* 80076588 00072228  FC 40 08 90 */	fmr f2, f1
 /* 8007658C 0007222C  FC A0 18 90 */	fmr f5, f3
 /* 80076590 00072230  7D 89 03 A6 */	mtctr r12
-/* 80076594 00072234  4E 80 04 21 */	bctrl 
+/* 80076594 00072234  4E 80 04 21 */	bctrl
 /* 80076598 00072238  81 96 00 00 */	lwz r12, 0(r22)
 /* 8007659C 0007223C  7E C3 B3 78 */	mr r3, r22
 /* 800765A0 00072240  38 80 00 01 */	li r4, 1
@@ -47915,7 +47915,7 @@ lbl_800763E0:
 /* 800765AC 0007224C  38 C0 00 00 */	li r6, 0
 /* 800765B0 00072250  38 E0 00 00 */	li r7, 0
 /* 800765B4 00072254  7D 89 03 A6 */	mtctr r12
-/* 800765B8 00072258  4E 80 04 21 */	bctrl 
+/* 800765B8 00072258  4E 80 04 21 */	bctrl
 /* 800765BC 0007225C  38 61 01 90 */	addi r3, r1, 0x190
 /* 800765C0 00072260  4B FB 16 05 */	bl "__ct__7ELightsFv"
 /* 800765C4 00072264  38 00 00 00 */	li r0, 0
@@ -47926,27 +47926,27 @@ lbl_800763E0:
 /* 800765D8 00072278  81 96 00 00 */	lwz r12, 0(r22)
 /* 800765DC 0007227C  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 800765E0 00072280  7D 89 03 A6 */	mtctr r12
-/* 800765E4 00072284  4E 80 04 21 */	bctrl 
+/* 800765E4 00072284  4E 80 04 21 */	bctrl
 /* 800765E8 00072288  81 96 00 00 */	lwz r12, 0(r22)
 /* 800765EC 0007228C  7E C3 B3 78 */	mr r3, r22
 /* 800765F0 00072290  38 81 01 90 */	addi r4, r1, 0x190
 /* 800765F4 00072294  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 800765F8 00072298  7D 89 03 A6 */	mtctr r12
-/* 800765FC 0007229C  4E 80 04 21 */	bctrl 
+/* 800765FC 0007229C  4E 80 04 21 */	bctrl
 /* 80076600 000722A0  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076604 000722A4  7E C3 B3 78 */	mr r3, r22
 /* 80076608 000722A8  38 80 00 40 */	li r4, 0x40
 /* 8007660C 000722AC  38 A0 00 00 */	li r5, 0
 /* 80076610 000722B0  81 8C 00 AC */	lwz r12, 0xac(r12)
 /* 80076614 000722B4  7D 89 03 A6 */	mtctr r12
-/* 80076618 000722B8  4E 80 04 21 */	bctrl 
+/* 80076618 000722B8  4E 80 04 21 */	bctrl
 /* 8007661C 000722BC  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076620 000722C0  7E C3 B3 78 */	mr r3, r22
 /* 80076624 000722C4  38 80 08 00 */	li r4, 0x800
 /* 80076628 000722C8  38 A0 00 00 */	li r5, 0
 /* 8007662C 000722CC  81 8C 00 AC */	lwz r12, 0xac(r12)
 /* 80076630 000722D0  7D 89 03 A6 */	mtctr r12
-/* 80076634 000722D4  4E 80 04 21 */	bctrl 
+/* 80076634 000722D4  4E 80 04 21 */	bctrl
 /* 80076638 000722D8  81 96 00 00 */	lwz r12, 0(r22)
 /* 8007663C 000722DC  7E C3 B3 78 */	mr r3, r22
 /* 80076640 000722E0  38 80 00 00 */	li r4, 0
@@ -47954,7 +47954,7 @@ lbl_800763E0:
 /* 80076648 000722E8  81 8C 00 F8 */	lwz r12, 0xf8(r12)
 /* 8007664C 000722EC  38 C0 00 01 */	li r6, 1
 /* 80076650 000722F0  7D 89 03 A6 */	mtctr r12
-/* 80076654 000722F4  4E 80 04 21 */	bctrl 
+/* 80076654 000722F4  4E 80 04 21 */	bctrl
 /* 80076658 000722F8  38 00 00 07 */	li r0, 7
 /* 8007665C 000722FC  38 81 01 10 */	addi r4, r1, 0x110
 /* 80076660 00072300  38 60 00 00 */	li r3, 0
@@ -48049,7 +48049,7 @@ lbl_80076784:
 /* 800767BC 0007245C  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 800767C0 00072460  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 800767C4 00072464  7D 89 03 A6 */	mtctr r12
-/* 800767C8 00072468  4E 80 04 21 */	bctrl 
+/* 800767C8 00072468  4E 80 04 21 */	bctrl
 /* 800767CC 0007246C  4B FA 01 2D */	bl "GetServiceNPC__8cXPersonFv"
 /* 800767D0 00072470  2C 03 00 00 */	cmpwi r3, 0
 /* 800767D4 00072474  40 82 00 08 */	bne lbl_800767DC
@@ -48093,7 +48093,7 @@ lbl_80076834:
 /* 80076860 00072500  7E 25 8B 78 */	mr r5, r17
 /* 80076864 00072504  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 80076868 00072508  7D 89 03 A6 */	mtctr r12
-/* 8007686C 0007250C  4E 80 04 21 */	bctrl 
+/* 8007686C 0007250C  4E 80 04 21 */	bctrl
 /* 80076870 00072510  48 00 00 A8 */	b lbl_80076918
 lbl_80076874:
 /* 80076874 00072514  2C 12 00 00 */	cmpwi r18, 0
@@ -48110,7 +48110,7 @@ lbl_80076874:
 /* 800768A0 00072540  7E 25 8B 78 */	mr r5, r17
 /* 800768A4 00072544  81 8C 00 7C */	lwz r12, 0x7c(r12)
 /* 800768A8 00072548  7D 89 03 A6 */	mtctr r12
-/* 800768AC 0007254C  4E 80 04 21 */	bctrl 
+/* 800768AC 0007254C  4E 80 04 21 */	bctrl
 /* 800768B0 00072550  48 00 00 68 */	b lbl_80076918
 lbl_800768B4:
 /* 800768B4 00072554  38 61 00 D0 */	addi r3, r1, 0xd0
@@ -48163,13 +48163,13 @@ lbl_80076918:
 /* 80076964 00072604  38 80 00 08 */	li r4, 8
 /* 80076968 00072608  81 8C 00 9C */	lwz r12, 0x9c(r12)
 /* 8007696C 0007260C  7D 89 03 A6 */	mtctr r12
-/* 80076970 00072610  4E 80 04 21 */	bctrl 
+/* 80076970 00072610  4E 80 04 21 */	bctrl
 /* 80076974 00072614  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076978 00072618  7E C3 B3 78 */	mr r3, r22
 /* 8007697C 0007261C  38 81 01 90 */	addi r4, r1, 0x190
 /* 80076980 00072620  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 80076984 00072624  7D 89 03 A6 */	mtctr r12
-/* 80076988 00072628  4E 80 04 21 */	bctrl 
+/* 80076988 00072628  4E 80 04 21 */	bctrl
 /* 8007698C 0007262C  2C 13 00 00 */	cmpwi r19, 0
 /* 80076990 00072630  41 82 00 30 */	beq lbl_800769C0
 /* 80076994 00072634  7E A3 AB 78 */	mr r3, r21
@@ -48218,7 +48218,7 @@ lbl_80076A20:
 /* 80076A2C 000726CC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076A30 000726D0  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80076A34 000726D4  7D 89 03 A6 */	mtctr r12
-/* 80076A38 000726D8  4E 80 04 21 */	bctrl 
+/* 80076A38 000726D8  4E 80 04 21 */	bctrl
 /* 80076A3C 000726DC  38 61 00 90 */	addi r3, r1, 0x90
 /* 80076A40 000726E0  4B FB 94 65 */	bl "__ct__11ETextureDefFv"
 /* 80076A44 000726E4  80 01 00 98 */	lwz r0, 0x98(r1)
@@ -48249,7 +48249,7 @@ lbl_80076A9C:
 /* 80076AA4 00072744  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076AA8 00072748  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 80076AAC 0007274C  7D 89 03 A6 */	mtctr r12
-/* 80076AB0 00072750  4E 80 04 21 */	bctrl 
+/* 80076AB0 00072750  4E 80 04 21 */	bctrl
 /* 80076AB4 00072754  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076AB8 00072758  7C 70 1B 78 */	mr r16, r3
 /* 80076ABC 0007275C  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
@@ -48261,20 +48261,20 @@ lbl_80076A9C:
 /* 80076AD4 00072774  82 37 00 98 */	lwz r17, 0x98(r23)
 /* 80076AD8 00072778  C0 A2 84 28 */	lfs f5, lbl_805D9648-_SDA2_BASE_(r2)
 /* 80076ADC 0007277C  7D 89 03 A6 */	mtctr r12
-/* 80076AE0 00072780  4E 80 04 21 */	bctrl 
+/* 80076AE0 00072780  4E 80 04 21 */	bctrl
 /* 80076AE4 00072784  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076AE8 00072788  7E C3 B3 78 */	mr r3, r22
 /* 80076AEC 0007278C  38 80 00 00 */	li r4, 0
 /* 80076AF0 00072790  38 A0 00 05 */	li r5, 5
 /* 80076AF4 00072794  81 8C 00 FC */	lwz r12, 0xfc(r12)
 /* 80076AF8 00072798  7D 89 03 A6 */	mtctr r12
-/* 80076AFC 0007279C  4E 80 04 21 */	bctrl 
+/* 80076AFC 0007279C  4E 80 04 21 */	bctrl
 /* 80076B00 000727A0  81 91 00 00 */	lwz r12, 0(r17)
 /* 80076B04 000727A4  7E 23 8B 78 */	mr r3, r17
 /* 80076B08 000727A8  7E 04 83 78 */	mr r4, r16
 /* 80076B0C 000727AC  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 80076B10 000727B0  7D 89 03 A6 */	mtctr r12
-/* 80076B14 000727B4  4E 80 04 21 */	bctrl 
+/* 80076B14 000727B4  4E 80 04 21 */	bctrl
 /* 80076B18 000727B8  2C 10 00 00 */	cmpwi r16, 0
 /* 80076B1C 000727BC  40 82 00 0C */	bne lbl_80076B28
 /* 80076B20 000727C0  7F C3 F3 78 */	mr r3, r30
@@ -48288,7 +48288,7 @@ lbl_80076B28:
 /* 80076B3C 000727DC  38 80 00 01 */	li r4, 1
 /* 80076B40 000727E0  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 80076B44 000727E4  7D 89 03 A6 */	mtctr r12
-/* 80076B48 000727E8  4E 80 04 21 */	bctrl 
+/* 80076B48 000727E8  4E 80 04 21 */	bctrl
 /* 80076B4C 000727EC  6F 80 80 00 */	xoris r0, r28, 0x8000
 /* 80076B50 000727F0  38 A0 00 00 */	li r5, 0
 /* 80076B54 000727F4  90 01 02 94 */	stw r0, 0x294(r1)
@@ -48471,7 +48471,7 @@ lbl_80076DE8:
 /* 80076DEC 00072A8C  7E 03 83 78 */	mr r3, r16
 /* 80076DF0 00072A90  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 80076DF4 00072A94  7D 89 03 A6 */	mtctr r12
-/* 80076DF8 00072A98  4E 80 04 21 */	bctrl 
+/* 80076DF8 00072A98  4E 80 04 21 */	bctrl
 /* 80076DFC 00072A9C  7E 03 83 78 */	mr r3, r16
 /* 80076E00 00072AA0  7E 44 93 78 */	mr r4, r18
 /* 80076E04 00072AA4  48 28 1F FD */	bl "PostUpdateEnd__12TextureUtilsFP8ETextureb"
@@ -48482,21 +48482,21 @@ lbl_80076DE8:
 /* 80076E18 00072AB8  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076E1C 00072ABC  81 8C 00 70 */	lwz r12, 0x70(r12)
 /* 80076E20 00072AC0  7D 89 03 A6 */	mtctr r12
-/* 80076E24 00072AC4  4E 80 04 21 */	bctrl 
+/* 80076E24 00072AC4  4E 80 04 21 */	bctrl
 /* 80076E28 00072AC8  2C 03 00 00 */	cmpwi r3, 0
 /* 80076E2C 00072ACC  41 82 00 18 */	beq lbl_80076E44
 /* 80076E30 00072AD0  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80076E34 00072AD4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076E38 00072AD8  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80076E3C 00072ADC  7D 89 03 A6 */	mtctr r12
-/* 80076E40 00072AE0  4E 80 04 21 */	bctrl 
+/* 80076E40 00072AE0  4E 80 04 21 */	bctrl
 lbl_80076E44:
 /* 80076E44 00072AE4  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80076E48 00072AE8  7E 04 83 78 */	mr r4, r16
 /* 80076E4C 00072AEC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076E50 00072AF0  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 80076E54 00072AF4  7D 89 03 A6 */	mtctr r12
-/* 80076E58 00072AF8  4E 80 04 21 */	bctrl 
+/* 80076E58 00072AF8  4E 80 04 21 */	bctrl
 lbl_80076E5C:
 /* 80076E5C 00072AFC  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076E60 00072B00  7E C3 B3 78 */	mr r3, r22
@@ -48504,33 +48504,33 @@ lbl_80076E5C:
 /* 80076E68 00072B08  38 A0 00 05 */	li r5, 5
 /* 80076E6C 00072B0C  81 8C 00 FC */	lwz r12, 0xfc(r12)
 /* 80076E70 00072B10  7D 89 03 A6 */	mtctr r12
-/* 80076E74 00072B14  4E 80 04 21 */	bctrl 
+/* 80076E74 00072B14  4E 80 04 21 */	bctrl
 /* 80076E78 00072B18  81 97 00 00 */	lwz r12, 0(r23)
 /* 80076E7C 00072B1C  7E E3 BB 78 */	mr r3, r23
 /* 80076E80 00072B20  38 80 00 00 */	li r4, 0
 /* 80076E84 00072B24  38 A0 00 05 */	li r5, 5
 /* 80076E88 00072B28  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 80076E8C 00072B2C  7D 89 03 A6 */	mtctr r12
-/* 80076E90 00072B30  4E 80 04 21 */	bctrl 
+/* 80076E90 00072B30  4E 80 04 21 */	bctrl
 /* 80076E94 00072B34  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076E98 00072B38  7E C3 B3 78 */	mr r3, r22
 /* 80076E9C 00072B3C  38 80 08 00 */	li r4, 0x800
 /* 80076EA0 00072B40  38 A0 00 00 */	li r5, 0
 /* 80076EA4 00072B44  81 8C 00 A8 */	lwz r12, 0xa8(r12)
 /* 80076EA8 00072B48  7D 89 03 A6 */	mtctr r12
-/* 80076EAC 00072B4C  4E 80 04 21 */	bctrl 
+/* 80076EAC 00072B4C  4E 80 04 21 */	bctrl
 /* 80076EB0 00072B50  81 97 00 00 */	lwz r12, 0(r23)
 /* 80076EB4 00072B54  7E E3 BB 78 */	mr r3, r23
 /* 80076EB8 00072B58  7E C4 B3 78 */	mr r4, r22
 /* 80076EBC 00072B5C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 80076EC0 00072B60  7D 89 03 A6 */	mtctr r12
-/* 80076EC4 00072B64  4E 80 04 21 */	bctrl 
+/* 80076EC4 00072B64  4E 80 04 21 */	bctrl
 /* 80076EC8 00072B68  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80076ECC 00072B6C  7E 24 8B 78 */	mr r4, r17
 /* 80076ED0 00072B70  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076ED4 00072B74  81 8C 00 78 */	lwz r12, 0x78(r12)
 /* 80076ED8 00072B78  7D 89 03 A6 */	mtctr r12
-/* 80076EDC 00072B7C  4E 80 04 21 */	bctrl 
+/* 80076EDC 00072B7C  4E 80 04 21 */	bctrl
 /* 80076EE0 00072B80  81 96 00 00 */	lwz r12, 0(r22)
 /* 80076EE4 00072B84  7E C3 B3 78 */	mr r3, r22
 /* 80076EE8 00072B88  C0 62 84 28 */	lfs f3, lbl_805D9648-_SDA2_BASE_(r2)
@@ -48540,13 +48540,13 @@ lbl_80076E5C:
 /* 80076EF8 00072B98  FC A0 18 90 */	fmr f5, f3
 /* 80076EFC 00072B9C  FC 40 08 90 */	fmr f2, f1
 /* 80076F00 00072BA0  7D 89 03 A6 */	mtctr r12
-/* 80076F04 00072BA4  4E 80 04 21 */	bctrl 
+/* 80076F04 00072BA4  4E 80 04 21 */	bctrl
 /* 80076F08 00072BA8  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 80076F0C 00072BAC  7E C4 B3 78 */	mr r4, r22
 /* 80076F10 00072BB0  81 83 00 00 */	lwz r12, 0(r3)
 /* 80076F14 00072BB4  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80076F18 00072BB8  7D 89 03 A6 */	mtctr r12
-/* 80076F1C 00072BBC  4E 80 04 21 */	bctrl 
+/* 80076F1C 00072BBC  4E 80 04 21 */	bctrl
 /* 80076F20 00072BC0  7F C3 F3 78 */	mr r3, r30
 lbl_80076F24:
 /* 80076F24 00072BC4  E3 E1 03 08 */	psq_l f31, 776(r1), 0, qr0
@@ -48558,7 +48558,7 @@ lbl_80076F24:
 /* 80076F3C 00072BDC  80 01 03 14 */	lwz r0, 0x314(r1)
 /* 80076F40 00072BE0  7C 08 03 A6 */	mtlr r0
 /* 80076F44 00072BE4  38 21 03 10 */	addi r1, r1, 0x310
-/* 80076F48 00072BE8  4E 80 00 20 */	blr 
+/* 80076F48 00072BE8  4E 80 00 20 */	blr
 
 .global "FindClosestBasedOnBBox__9RayPickerFRCQ25eastl38vector<P9EInstance,Q25eastl9allocator>P8ESimsCamUiUiRfR5EVec3"
 "FindClosestBasedOnBBox__9RayPickerFRCQ25eastl38vector<P9EInstance,Q25eastl9allocator>P8ESimsCamUiUiRfR5EVec3":
@@ -48630,7 +48630,7 @@ lbl_80077034:
 /* 80077048 00072CE8  7F 63 DB 78 */	mr r3, r27
 /* 8007704C 00072CEC  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 80077050 00072CF0  7D 89 03 A6 */	mtctr r12
-/* 80077054 00072CF4  4E 80 04 21 */	bctrl 
+/* 80077054 00072CF4  4E 80 04 21 */	bctrl
 /* 80077058 00072CF8  7C 64 1B 78 */	mr r4, r3
 /* 8007705C 00072CFC  38 61 00 40 */	addi r3, r1, 0x40
 /* 80077060 00072D00  4B FA 37 F5 */	bl "__ct__7EBound3FRC7EBound3"
@@ -48676,12 +48676,12 @@ lbl_800770D4:
 /* 800770F4 00072D94  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 800770F8 00072D98  7C 08 03 A6 */	mtlr r0
 /* 800770FC 00072D9C  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 80077100 00072DA0  4E 80 00 20 */	blr 
+/* 80077100 00072DA0  4E 80 00 20 */	blr
 
 .global "GetNumAnimationTracks__16ISimsObjectModelCFv"
 "GetNumAnimationTracks__16ISimsObjectModelCFv":
 /* 80077104 00072DA4  80 63 04 E4 */	lwz r3, 0x4e4(r3)
-/* 80077108 00072DA8  4E 80 00 20 */	blr 
+/* 80077108 00072DA8  4E 80 00 20 */	blr
 
 .global "__ct__9EMaterialFv"
 "__ct__9EMaterialFv":
@@ -48704,7 +48704,7 @@ lbl_800770D4:
 /* 8007714C 00072DEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80077150 00072DF0  7C 08 03 A6 */	mtlr r0
 /* 80077154 00072DF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80077158 00072DF8  4E 80 00 20 */	blr 
+/* 80077158 00072DF8  4E 80 00 20 */	blr
 
 .global "__ct__10FadeSquareFv"
 "__ct__10FadeSquareFv":
@@ -48720,7 +48720,7 @@ lbl_800770D4:
 /* 80077180 00072E20  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80077184 00072E24  38 84 60 EA */	addi r4, r4, 0x967660EA@l
 /* 80077188 00072E28  7D 89 03 A6 */	mtctr r12
-/* 8007718C 00072E2C  4E 80 04 21 */	bctrl 
+/* 8007718C 00072E2C  4E 80 04 21 */	bctrl
 /* 80077190 00072E30  90 7F 00 0C */	stw r3, 0xc(r31)
 /* 80077194 00072E34  7F E3 FB 78 */	mr r3, r31
 /* 80077198 00072E38  48 00 00 F1 */	bl "StopDraw__10FadeSquareFv"
@@ -48729,7 +48729,7 @@ lbl_800770D4:
 /* 800771A4 00072E44  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800771A8 00072E48  7C 08 03 A6 */	mtlr r0
 /* 800771AC 00072E4C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800771B0 00072E50  4E 80 00 20 */	blr 
+/* 800771B0 00072E50  4E 80 00 20 */	blr
 
 .global "__dt__10FadeSquareFv"
 "__dt__10FadeSquareFv":
@@ -48766,7 +48766,7 @@ lbl_80077214:
 /* 80077220 00072EC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80077224 00072EC4  7C 08 03 A6 */	mtlr r0
 /* 80077228 00072EC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007722C 00072ECC  4E 80 00 20 */	blr 
+/* 8007722C 00072ECC  4E 80 00 20 */	blr
 
 .global "StartDraw__10FadeSquareFR5EVec3b"
 "StartDraw__10FadeSquareFR5EVec3b":
@@ -48788,13 +48788,13 @@ lbl_80077214:
 /* 8007726C 00072F0C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80077270 00072F10  7C 08 03 A6 */	mtlr r0
 /* 80077274 00072F14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80077278 00072F18  4E 80 00 20 */	blr 
+/* 80077278 00072F18  4E 80 00 20 */	blr
 
 .global "StartFade__10FadeSquareFv"
 "StartFade__10FadeSquareFv":
 /* 8007727C 00072F1C  38 00 00 01 */	li r0, 1
 /* 80077280 00072F20  98 03 00 14 */	stb r0, 0x14(r3)
-/* 80077284 00072F24  4E 80 00 20 */	blr 
+/* 80077284 00072F24  4E 80 00 20 */	blr
 
 .global "StopDraw__10FadeSquareFv"
 "StopDraw__10FadeSquareFv":
@@ -48802,7 +48802,7 @@ lbl_80077214:
 /* 8007728C 00072F2C  38 00 00 01 */	li r0, 1
 /* 80077290 00072F30  98 03 00 14 */	stb r0, 0x14(r3)
 /* 80077294 00072F34  D0 03 00 10 */	stfs f0, 0x10(r3)
-/* 80077298 00072F38  4E 80 00 20 */	blr 
+/* 80077298 00072F38  4E 80 00 20 */	blr
 
 .global "Update__10FadeSquareFf"
 "Update__10FadeSquareFf":
@@ -48849,7 +48849,7 @@ lbl_80077328:
 /* 80077334 00072FD4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80077338 00072FD8  7C 08 03 A6 */	mtlr r0
 /* 8007733C 00072FDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80077340 00072FE0  4E 80 00 20 */	blr 
+/* 80077340 00072FE0  4E 80 00 20 */	blr
 
 .global "ShouldDraw__10FadeSquareFv"
 "ShouldDraw__10FadeSquareFv":
@@ -48858,7 +48858,7 @@ lbl_80077328:
 /* 8007734C 00072FEC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80077350 00072FF0  7C 60 00 26 */	mfcr r3
 /* 80077354 00072FF4  54 63 17 FE */	rlwinm r3, r3, 2, 0x1f, 0x1f
-/* 80077358 00072FF8  4E 80 00 20 */	blr 
+/* 80077358 00072FF8  4E 80 00 20 */	blr
 
 .global "Draw__10FadeSquareFP3ERCR5EVec3"
 "Draw__10FadeSquareFP3ERCR5EVec3":
@@ -48949,7 +48949,7 @@ lbl_8007749C:
 /* 800774A4 00073144  38 81 00 60 */	addi r4, r1, 0x60
 /* 800774A8 00073148  81 8C 00 BC */	lwz r12, 0xbc(r12)
 /* 800774AC 0007314C  7D 89 03 A6 */	mtctr r12
-/* 800774B0 00073150  4E 80 04 21 */	bctrl 
+/* 800774B0 00073150  4E 80 04 21 */	bctrl
 /* 800774B4 00073154  7F 83 E3 78 */	mr r3, r28
 /* 800774B8 00073158  38 81 00 20 */	addi r4, r1, 0x20
 /* 800774BC 0007315C  4B FD 5E 3D */	bl "ModelMatrix__3ERCFPC5EMat4"
@@ -48963,7 +48963,7 @@ lbl_8007749C:
 /* 800774DC 0007317C  81 8C 01 38 */	lwz r12, 0x138(r12)
 /* 800774E0 00073180  EC 21 00 28 */	fsubs f1, f1, f0
 /* 800774E4 00073184  7D 89 03 A6 */	mtctr r12
-/* 800774E8 00073188  4E 80 04 21 */	bctrl 
+/* 800774E8 00073188  4E 80 04 21 */	bctrl
 /* 800774EC 0007318C  48 00 00 1C */	b lbl_80077508
 lbl_800774F0:
 /* 800774F0 00073190  81 9C 00 00 */	lwz r12, 0(r28)
@@ -48971,7 +48971,7 @@ lbl_800774F0:
 /* 800774F8 00073198  C0 3B 00 10 */	lfs f1, 0x10(r27)
 /* 800774FC 0007319C  81 8C 01 38 */	lwz r12, 0x138(r12)
 /* 80077500 000731A0  7D 89 03 A6 */	mtctr r12
-/* 80077504 000731A4  4E 80 04 21 */	bctrl 
+/* 80077504 000731A4  4E 80 04 21 */	bctrl
 lbl_80077508:
 /* 80077508 000731A8  80 7B 00 0C */	lwz r3, 0xc(r27)
 /* 8007750C 000731AC  7F 84 E3 78 */	mr r4, r28
@@ -48982,7 +48982,7 @@ lbl_80077514:
 /* 8007751C 000731BC  80 01 01 74 */	lwz r0, 0x174(r1)
 /* 80077520 000731C0  7C 08 03 A6 */	mtlr r0
 /* 80077524 000731C4  38 21 01 70 */	addi r1, r1, 0x170
-/* 80077528 000731C8  4E 80 00 20 */	blr 
+/* 80077528 000731C8  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule13SimInteractorFv"
 "__ct__Q216InteractorModule13SimInteractorFv":
@@ -49041,7 +49041,7 @@ lbl_80077514:
 /* 800775FC 0007329C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80077600 000732A0  7C 08 03 A6 */	mtlr r0
 /* 80077604 000732A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80077608 000732A8  4E 80 00 20 */	blr 
+/* 80077608 000732A8  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule13SimInteractorFv"
 "__dt__Q216InteractorModule13SimInteractorFv":
@@ -49090,7 +49090,7 @@ lbl_800776A0:
 /* 800776AC 0007334C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800776B0 00073350  7C 08 03 A6 */	mtlr r0
 /* 800776B4 00073354  38 21 00 10 */	addi r1, r1, 0x10
-/* 800776B8 00073358  4E 80 00 20 */	blr 
+/* 800776B8 00073358  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule13SimInteractorFv"
 "OnCreate__Q216InteractorModule13SimInteractorFv":
@@ -49107,7 +49107,7 @@ lbl_800776A0:
 /* 800776E4 00073384  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800776E8 00073388  7C 08 03 A6 */	mtlr r0
 /* 800776EC 0007338C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800776F0 00073390  4E 80 00 20 */	blr 
+/* 800776F0 00073390  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule13SimInteractorFv"
 "OnDestroy__Q216InteractorModule13SimInteractorFv":
@@ -49124,7 +49124,7 @@ lbl_800776A0:
 /* 8007771C 000733BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80077720 000733C0  7C 08 03 A6 */	mtlr r0
 /* 80077724 000733C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80077728 000733C8  4E 80 00 20 */	blr 
+/* 80077728 000733C8  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule13SimInteractorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule13SimInteractorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -49196,7 +49196,7 @@ lbl_800776A0:
 /* 80077830 000734D0  7F E3 FB 78 */	mr r3, r31
 /* 80077834 000734D4  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80077838 000734D8  7D 89 03 A6 */	mtctr r12
-/* 8007783C 000734DC  4E 80 04 21 */	bctrl 
+/* 8007783C 000734DC  4E 80 04 21 */	bctrl
 /* 80077840 000734E0  4B FD 9C 59 */	bl "GetPlumbob__8PlumbBobFv"
 /* 80077844 000734E4  3B C0 00 00 */	li r30, 0
 /* 80077848 000734E8  90 7F 01 74 */	stw r3, 0x174(r31)
@@ -49231,7 +49231,7 @@ lbl_80077888:
 /* 800778B8 00073558  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 800778BC 0007355C  7C 08 03 A6 */	mtlr r0
 /* 800778C0 00073560  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 800778C4 00073564  4E 80 00 20 */	blr 
+/* 800778C4 00073564  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule13SimInteractorFv"
 "OnStop__Q216InteractorModule13SimInteractorFv":
@@ -49260,7 +49260,7 @@ lbl_80077918:
 /* 8007791C 000735BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80077920 000735C0  7C 08 03 A6 */	mtlr r0
 /* 80077924 000735C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80077928 000735C8  4E 80 00 20 */	blr 
+/* 80077928 000735C8  4E 80 00 20 */	blr
 
 .global "ParseControls__Q216InteractorModule13SimInteractorFv"
 "ParseControls__Q216InteractorModule13SimInteractorFv":
@@ -49308,7 +49308,7 @@ lbl_800779C0:
 /* 800779C8 00073668  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800779CC 0007366C  7C 08 03 A6 */	mtlr r0
 /* 800779D0 00073670  38 21 00 10 */	addi r1, r1, 0x10
-/* 800779D4 00073674  4E 80 00 20 */	blr 
+/* 800779D4 00073674  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule13SimInteractorFf"
 "Update__Q216InteractorModule13SimInteractorFf":
@@ -49768,7 +49768,7 @@ lbl_80077FD8:
 /* 80078090 00073D30  81 9E 00 00 */	lwz r12, 0(r30)
 /* 80078094 00073D34  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 80078098 00073D38  7D 89 03 A6 */	mtctr r12
-/* 8007809C 00073D3C  4E 80 04 21 */	bctrl 
+/* 8007809C 00073D3C  4E 80 04 21 */	bctrl
 lbl_800780A0:
 /* 800780A0 00073D40  88 1E 02 04 */	lbz r0, 0x204(r30)
 /* 800780A4 00073D44  2C 00 00 00 */	cmpwi r0, 0
@@ -49807,7 +49807,7 @@ lbl_8007810C:
 /* 8007811C 00073DBC  83 81 00 90 */	lwz r28, 0x90(r1)
 /* 80078120 00073DC0  7C 08 03 A6 */	mtlr r0
 /* 80078124 00073DC4  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 80078128 00073DC8  4E 80 00 20 */	blr 
+/* 80078128 00073DC8  4E 80 00 20 */	blr
 
 .global "GetBeamScale__Q216InteractorModule13SimInteractorFv"
 "GetBeamScale__Q216InteractorModule13SimInteractorFv":
@@ -49828,7 +49828,7 @@ lbl_8007810C:
 /* 80078164 00073E04  C0 23 00 00 */	lfs f1, 0(r3)
 /* 80078168 00073E08  7C 08 03 A6 */	mtlr r0
 /* 8007816C 00073E0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078170 00073E10  4E 80 00 20 */	blr 
+/* 80078170 00073E10  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule13SimInteractorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule13SimInteractorFRQ216InteractorModule14InteractorInfo":
@@ -49924,7 +49924,7 @@ lbl_8007829C:
 /* 800782A8 00073F48  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 800782AC 00073F4C  7C 08 03 A6 */	mtlr r0
 /* 800782B0 00073F50  38 21 00 20 */	addi r1, r1, 0x20
-/* 800782B4 00073F54  4E 80 00 20 */	blr 
+/* 800782B4 00073F54  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -50103,7 +50103,7 @@ lbl_800784B4:
 /* 8007853C 000741DC  81 9F 00 00 */	lwz r12, 0(r31)
 /* 80078540 000741E0  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 80078544 000741E4  7D 89 03 A6 */	mtctr r12
-/* 80078548 000741E8  4E 80 04 21 */	bctrl 
+/* 80078548 000741E8  4E 80 04 21 */	bctrl
 /* 8007854C 000741EC  48 00 00 40 */	b lbl_8007858C
 lbl_80078550:
 /* 80078550 000741F0  2C 1C 00 04 */	cmpwi r28, 4
@@ -50121,7 +50121,7 @@ lbl_80078578:
 /* 8007857C 0007421C  7F A3 EB 78 */	mr r3, r29
 /* 80078580 00074220  81 8C 00 E8 */	lwz r12, 0xe8(r12)
 /* 80078584 00074224  7D 89 03 A6 */	mtctr r12
-/* 80078588 00074228  4E 80 04 21 */	bctrl 
+/* 80078588 00074228  4E 80 04 21 */	bctrl
 lbl_8007858C:
 /* 8007858C 0007422C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80078590 00074230  83 E1 00 4C */	lwz r31, 0x4c(r1)
@@ -50130,7 +50130,7 @@ lbl_8007858C:
 /* 8007859C 0007423C  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 800785A0 00074240  7C 08 03 A6 */	mtlr r0
 /* 800785A4 00074244  38 21 00 50 */	addi r1, r1, 0x50
-/* 800785A8 00074248  4E 80 00 20 */	blr 
+/* 800785A8 00074248  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
@@ -50147,98 +50147,98 @@ lbl_800785D0:
 /* 800785D0 00074270  81 83 00 00 */	lwz r12, 0(r3)
 /* 800785D4 00074274  81 8C 00 70 */	lwz r12, 0x70(r12)
 /* 800785D8 00074278  7D 89 03 A6 */	mtctr r12
-/* 800785DC 0007427C  4E 80 04 20 */	bctr 
+/* 800785DC 0007427C  4E 80 04 20 */	bctr
 lbl_800785E0:
 /* 800785E0 00074280  2C 04 00 01 */	cmpwi r4, 1
 /* 800785E4 00074284  40 82 00 10 */	bne lbl_800785F4
 /* 800785E8 00074288  38 00 00 00 */	li r0, 0
 /* 800785EC 0007428C  98 03 01 68 */	stb r0, 0x168(r3)
-/* 800785F0 00074290  4E 80 00 20 */	blr 
+/* 800785F0 00074290  4E 80 00 20 */	blr
 lbl_800785F4:
 /* 800785F4 00074294  2C 04 00 07 */	cmpwi r4, 7
 /* 800785F8 00074298  40 82 00 10 */	bne lbl_80078608
 /* 800785FC 0007429C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80078600 000742A0  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 80078604 000742A4  4E 80 00 20 */	blr 
+/* 80078604 000742A4  4E 80 00 20 */	blr
 lbl_80078608:
 /* 80078608 000742A8  2C 04 00 08 */	cmpwi r4, 8
 /* 8007860C 000742AC  40 82 00 10 */	bne lbl_8007861C
 /* 80078610 000742B0  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80078614 000742B4  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80078618 000742B8  4E 80 00 20 */	blr 
+/* 80078618 000742B8  4E 80 00 20 */	blr
 lbl_8007861C:
 /* 8007861C 000742BC  2C 04 00 0F */	cmpwi r4, 0xf
 /* 80078620 000742C0  40 82 00 10 */	bne lbl_80078630
 /* 80078624 000742C4  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80078628 000742C8  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 8007862C 000742CC  4E 80 00 20 */	blr 
+/* 8007862C 000742CC  4E 80 00 20 */	blr
 lbl_80078630:
 /* 80078630 000742D0  2C 04 00 10 */	cmpwi r4, 0x10
 /* 80078634 000742D4  40 82 00 10 */	bne lbl_80078644
 /* 80078638 000742D8  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007863C 000742DC  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 80078640 000742E0  4E 80 00 20 */	blr 
+/* 80078640 000742E0  4E 80 00 20 */	blr
 lbl_80078644:
 /* 80078644 000742E4  2C 04 00 1D */	cmpwi r4, 0x1d
 /* 80078648 000742E8  40 82 00 10 */	bne lbl_80078658
 /* 8007864C 000742EC  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80078650 000742F0  D0 03 00 44 */	stfs f0, 0x44(r3)
-/* 80078654 000742F4  4E 80 00 20 */	blr 
+/* 80078654 000742F4  4E 80 00 20 */	blr
 lbl_80078658:
 /* 80078658 000742F8  2C 04 00 1E */	cmpwi r4, 0x1e
 /* 8007865C 000742FC  40 82 00 10 */	bne lbl_8007866C
 /* 80078660 00074300  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 80078664 00074304  D0 03 00 48 */	stfs f0, 0x48(r3)
-/* 80078668 00074308  4E 80 00 20 */	blr 
+/* 80078668 00074308  4E 80 00 20 */	blr
 lbl_8007866C:
 /* 8007866C 0007430C  2C 04 00 12 */	cmpwi r4, 0x12
-/* 80078670 00074310  4C 82 00 20 */	bnelr 
+/* 80078670 00074310  4C 82 00 20 */	bnelr
 /* 80078674 00074314  88 03 02 04 */	lbz r0, 0x204(r3)
 /* 80078678 00074318  2C 00 00 00 */	cmpwi r0, 0
-/* 8007867C 0007431C  4D 82 00 20 */	beqlr 
+/* 8007867C 0007431C  4D 82 00 20 */	beqlr
 /* 80078680 00074320  3C 80 80 49 */	lis r4, "_gd"@ha
 /* 80078684 00074324  38 84 75 34 */	addi r4, r4, "_gd"@l
 /* 80078688 00074328  80 04 00 48 */	lwz r0, 0x48(r4)
 /* 8007868C 0007432C  2C 00 00 00 */	cmpwi r0, 0
-/* 80078690 00074330  4D 82 00 20 */	beqlr 
+/* 80078690 00074330  4D 82 00 20 */	beqlr
 /* 80078694 00074334  38 00 00 00 */	li r0, 0
 /* 80078698 00074338  98 03 02 04 */	stb r0, 0x204(r3)
 /* 8007869C 0007433C  90 03 02 08 */	stw r0, 0x208(r3)
 /* 800786A0 00074340  80 64 00 48 */	lwz r3, 0x48(r4)
 /* 800786A4 00074344  48 13 15 E8 */	b "DeactivateSimSwitcher__9H2DTargetFv"
-/* 800786A8 00074348  4E 80 00 20 */	blr 
+/* 800786A8 00074348  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
 /* 800786AC 0007434C  2C 04 00 07 */	cmpwi r4, 7
 /* 800786B0 00074350  40 82 00 0C */	bne lbl_800786BC
 /* 800786B4 00074354  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 800786B8 00074358  4E 80 00 20 */	blr 
+/* 800786B8 00074358  4E 80 00 20 */	blr
 lbl_800786BC:
 /* 800786BC 0007435C  2C 04 00 08 */	cmpwi r4, 8
 /* 800786C0 00074360  40 82 00 0C */	bne lbl_800786CC
 /* 800786C4 00074364  D0 23 00 38 */	stfs f1, 0x38(r3)
-/* 800786C8 00074368  4E 80 00 20 */	blr 
+/* 800786C8 00074368  4E 80 00 20 */	blr
 lbl_800786CC:
 /* 800786CC 0007436C  2C 04 00 0F */	cmpwi r4, 0xf
 /* 800786D0 00074370  40 82 00 0C */	bne lbl_800786DC
 /* 800786D4 00074374  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 800786D8 00074378  4E 80 00 20 */	blr 
+/* 800786D8 00074378  4E 80 00 20 */	blr
 lbl_800786DC:
 /* 800786DC 0007437C  2C 04 00 10 */	cmpwi r4, 0x10
 /* 800786E0 00074380  40 82 00 0C */	bne lbl_800786EC
 /* 800786E4 00074384  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 800786E8 00074388  4E 80 00 20 */	blr 
+/* 800786E8 00074388  4E 80 00 20 */	blr
 lbl_800786EC:
 /* 800786EC 0007438C  2C 04 00 1D */	cmpwi r4, 0x1d
 /* 800786F0 00074390  40 82 00 0C */	bne lbl_800786FC
 /* 800786F4 00074394  D0 23 00 44 */	stfs f1, 0x44(r3)
-/* 800786F8 00074398  4E 80 00 20 */	blr 
+/* 800786F8 00074398  4E 80 00 20 */	blr
 lbl_800786FC:
 /* 800786FC 0007439C  2C 04 00 1E */	cmpwi r4, 0x1e
-/* 80078700 000743A0  4C 82 00 20 */	bnelr 
+/* 80078700 000743A0  4C 82 00 20 */	bnelr
 /* 80078704 000743A4  D0 23 00 48 */	stfs f1, 0x48(r3)
-/* 80078708 000743A8  4E 80 00 20 */	blr 
+/* 80078708 000743A8  4E 80 00 20 */	blr
 
 .global "ResetInputState__Q216InteractorModule13SimInteractorFv"
 "ResetInputState__Q216InteractorModule13SimInteractorFv":
@@ -50255,7 +50255,7 @@ lbl_800786FC:
 /* 80078734 000743D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078738 000743D8  7C 08 03 A6 */	mtlr r0
 /* 8007873C 000743DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078740 000743E0  4E 80 00 20 */	blr 
+/* 80078740 000743E0  4E 80 00 20 */	blr
 
 .global "ImmediatelyCutCursorAndCameraToPos__Q216InteractorModule13SimInteractorFRC5EVec3"
 "ImmediatelyCutCursorAndCameraToPos__Q216InteractorModule13SimInteractorFRC5EVec3":
@@ -50278,7 +50278,7 @@ lbl_800786FC:
 /* 80078784 00074424  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80078788 00074428  7C 08 03 A6 */	mtlr r0
 /* 8007878C 0007442C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078790 00074430  4E 80 00 20 */	blr 
+/* 80078790 00074430  4E 80 00 20 */	blr
 
 .global "ResetSnapTimer__Q216InteractorModule13SimInteractorFv"
 "ResetSnapTimer__Q216InteractorModule13SimInteractorFv":
@@ -50288,7 +50288,7 @@ lbl_800786FC:
 /* 800787A0 00074440  C0 04 00 50 */	lfs f0, 0x50(r4)
 /* 800787A4 00074444  D0 03 01 64 */	stfs f0, 0x164(r3)
 /* 800787A8 00074448  98 03 01 71 */	stb r0, 0x171(r3)
-/* 800787AC 0007444C  4E 80 00 20 */	blr 
+/* 800787AC 0007444C  4E 80 00 20 */	blr
 
 .global "GetSelectionRadius__Q216InteractorModule13SimInteractorFv"
 "GetSelectionRadius__Q216InteractorModule13SimInteractorFv":
@@ -50307,7 +50307,7 @@ lbl_800787D8:
 /* 800787DC 0007447C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800787E0 00074480  7C 08 03 A6 */	mtlr r0
 /* 800787E4 00074484  38 21 00 10 */	addi r1, r1, 0x10
-/* 800787E8 00074488  4E 80 00 20 */	blr 
+/* 800787E8 00074488  4E 80 00 20 */	blr
 
 .global "UpdateOverlapIntersection__Q216InteractorModule13SimInteractorFPQ316InteractorModule10Interactor11OverlapData"
 "UpdateOverlapIntersection__Q216InteractorModule13SimInteractorFPQ316InteractorModule10Interactor11OverlapData":
@@ -50375,7 +50375,7 @@ lbl_800788C8:
 /* 800788D8 00074578  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 800788DC 0007457C  7C 08 03 A6 */	mtlr r0
 /* 800788E0 00074580  38 21 00 40 */	addi r1, r1, 0x40
-/* 800788E4 00074584  4E 80 00 20 */	blr 
+/* 800788E4 00074584  4E 80 00 20 */	blr
 
 .global "ExecuteActionMenu__Q216InteractorModule13SimInteractorFv"
 "ExecuteActionMenu__Q216InteractorModule13SimInteractorFv":
@@ -50439,7 +50439,7 @@ lbl_80078944:
 /* 800789C4 00074664  7C 7E 1B 78 */	mr r30, r3
 /* 800789C8 00074668  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 800789CC 0007466C  7D 89 03 A6 */	mtctr r12
-/* 800789D0 00074670  4E 80 04 21 */	bctrl 
+/* 800789D0 00074670  4E 80 04 21 */	bctrl
 /* 800789D4 00074674  7C 7F 1B 78 */	mr r31, r3
 /* 800789D8 00074678  38 61 00 08 */	addi r3, r1, 8
 /* 800789DC 0007467C  4B FA AA AD */	bl "Head__9ENodeListCFv"
@@ -50457,7 +50457,7 @@ lbl_800789E8:
 /* 80078A08 000746A8  7F C3 F3 78 */	mr r3, r30
 /* 80078A0C 000746AC  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80078A10 000746B0  7D 89 03 A6 */	mtctr r12
-/* 80078A14 000746B4  4E 80 04 21 */	bctrl 
+/* 80078A14 000746B4  4E 80 04 21 */	bctrl
 /* 80078A18 000746B8  7C 64 1B 78 */	mr r4, r3
 /* 80078A1C 000746BC  38 61 00 08 */	addi r3, r1, 8
 /* 80078A20 000746C0  4B FD 84 11 */	bl "AddHead__26TNodeList<P12ISimInstance>FP12ISimInstance"
@@ -50488,7 +50488,7 @@ lbl_80078A70:
 /* 80078A74 00074714  7F 83 E3 78 */	mr r3, r28
 /* 80078A78 00074718  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80078A7C 0007471C  7D 89 03 A6 */	mtctr r12
-/* 80078A80 00074720  4E 80 04 21 */	bctrl 
+/* 80078A80 00074720  4E 80 04 21 */	bctrl
 /* 80078A84 00074724  38 61 00 08 */	addi r3, r1, 8
 /* 80078A88 00074728  38 80 FF FF */	li r4, -1
 /* 80078A8C 0007472C  4B FD 54 8D */	bl "__dt__26TNodeList<P12ISimInstance>Fv"
@@ -50500,13 +50500,13 @@ lbl_80078A90:
 /* 80078AA0 00074740  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80078AA4 00074744  7C 08 03 A6 */	mtlr r0
 /* 80078AA8 00074748  38 21 00 30 */	addi r1, r1, 0x30
-/* 80078AAC 0007474C  4E 80 00 20 */	blr 
+/* 80078AAC 0007474C  4E 80 00 20 */	blr
 
 .global "ReturnPlumbobToSim__Q216InteractorModule13SimInteractorFP8PlumbBobR5EVec3"
 "ReturnPlumbobToSim__Q216InteractorModule13SimInteractorFP8PlumbBobR5EVec3":
 /* 80078AB0 00074750  38 00 00 00 */	li r0, 0
 /* 80078AB4 00074754  90 03 01 EC */	stw r0, 0x1ec(r3)
-/* 80078AB8 00074758  4E 80 00 20 */	blr 
+/* 80078AB8 00074758  4E 80 00 20 */	blr
 
 .global "IsSimulatorPaused__Q216InteractorModule13SimInteractorFv"
 "IsSimulatorPaused__Q216InteractorModule13SimInteractorFv":
@@ -50522,7 +50522,7 @@ lbl_80078A90:
 /* 80078AE0 00074780  54 63 1F FE */	rlwinm r3, r3, 3, 0x1f, 0x1f
 /* 80078AE4 00074784  7C 08 03 A6 */	mtlr r0
 /* 80078AE8 00074788  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078AEC 0007478C  4E 80 00 20 */	blr 
+/* 80078AEC 0007478C  4E 80 00 20 */	blr
 
 .global "UpdateObjectHighlights__Q216InteractorModule13SimInteractorFP11EIObjectMan"
 "UpdateObjectHighlights__Q216InteractorModule13SimInteractorFP11EIObjectMan":
@@ -50557,7 +50557,7 @@ lbl_80078B44:
 /* 80078B5C 000747FC  7F E3 FB 78 */	mr r3, r31
 /* 80078B60 00074800  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80078B64 00074804  7D 89 03 A6 */	mtctr r12
-/* 80078B68 00074808  4E 80 04 21 */	bctrl 
+/* 80078B68 00074808  4E 80 04 21 */	bctrl
 /* 80078B6C 0007480C  2C 03 00 00 */	cmpwi r3, 0
 /* 80078B70 00074810  41 82 01 34 */	beq lbl_80078CA4
 /* 80078B74 00074814  38 80 00 01 */	li r4, 1
@@ -50585,7 +50585,7 @@ lbl_80078BAC:
 /* 80078BC4 00074864  7F A3 EB 78 */	mr r3, r29
 /* 80078BC8 00074868  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 80078BCC 0007486C  7D 89 03 A6 */	mtctr r12
-/* 80078BD0 00074870  4E 80 04 21 */	bctrl 
+/* 80078BD0 00074870  4E 80 04 21 */	bctrl
 /* 80078BD4 00074874  FF E0 08 90 */	fmr f31, f1
 /* 80078BD8 00074878  C0 5D 00 0C */	lfs f2, 0xc(r29)
 /* 80078BDC 0007487C  C0 1D 00 10 */	lfs f0, 0x10(r29)
@@ -50605,7 +50605,7 @@ lbl_80078BAC:
 /* 80078C14 000748B4  7F C3 F3 78 */	mr r3, r30
 /* 80078C18 000748B8  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 80078C1C 000748BC  7D 89 03 A6 */	mtctr r12
-/* 80078C20 000748C0  4E 80 04 21 */	bctrl 
+/* 80078C20 000748C0  4E 80 04 21 */	bctrl
 /* 80078C24 000748C4  38 81 00 18 */	addi r4, r1, 0x18
 /* 80078C28 000748C8  4B FD 96 49 */	bl "Overlap__7EBound3CFRC7EBound3"
 /* 80078C2C 000748CC  2C 03 00 00 */	cmpwi r3, 0
@@ -50614,7 +50614,7 @@ lbl_80078BAC:
 /* 80078C38 000748D8  7F C3 F3 78 */	mr r3, r30
 /* 80078C3C 000748DC  81 8C 00 D8 */	lwz r12, 0xd8(r12)
 /* 80078C40 000748E0  7D 89 03 A6 */	mtctr r12
-/* 80078C44 000748E4  4E 80 04 21 */	bctrl 
+/* 80078C44 000748E4  4E 80 04 21 */	bctrl
 /* 80078C48 000748E8  2C 03 00 00 */	cmpwi r3, 0
 /* 80078C4C 000748EC  41 82 00 0C */	beq lbl_80078C58
 /* 80078C50 000748F0  38 A0 00 01 */	li r5, 1
@@ -50652,7 +50652,7 @@ lbl_80078CA4:
 /* 80078CB8 00074958  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 80078CBC 0007495C  7C 08 03 A6 */	mtlr r0
 /* 80078CC0 00074960  38 21 00 50 */	addi r1, r1, 0x50
-/* 80078CC4 00074964  4E 80 00 20 */	blr 
+/* 80078CC4 00074964  4E 80 00 20 */	blr
 
 .global "SetupCamera__Q216InteractorModule13SimInteractorFv"
 "SetupCamera__Q216InteractorModule13SimInteractorFv":
@@ -50669,7 +50669,7 @@ lbl_80078CEC:
 /* 80078CEC 0007498C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078CF0 00074990  7C 08 03 A6 */	mtlr r0
 /* 80078CF4 00074994  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078CF8 00074998  4E 80 00 20 */	blr 
+/* 80078CF8 00074998  4E 80 00 20 */	blr
 
 .global "ChooseAction__Q216InteractorModule13SimInteractorFP11Interaction"
 "ChooseAction__Q216InteractorModule13SimInteractorFP11Interaction":
@@ -50697,7 +50697,7 @@ lbl_80078D40:
 /* 80078D44 000749E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80078D48 000749E8  7C 08 03 A6 */	mtlr r0
 /* 80078D4C 000749EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078D50 000749F0  4E 80 00 20 */	blr 
+/* 80078D50 000749F0  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule20SocialModeInteractorFv"
 "__dt__Q216InteractorModule20SocialModeInteractorFv":
@@ -50723,7 +50723,7 @@ lbl_80078D90:
 /* 80078D9C 00074A3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078DA0 00074A40  7C 08 03 A6 */	mtlr r0
 /* 80078DA4 00074A44  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078DA8 00074A48  4E 80 00 20 */	blr 
+/* 80078DA8 00074A48  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule20SocialModeInteractorFv"
 "OnCreate__Q216InteractorModule20SocialModeInteractorFv":
@@ -50742,7 +50742,7 @@ lbl_80078D90:
 /* 80078DDC 00074A7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078DE0 00074A80  7C 08 03 A6 */	mtlr r0
 /* 80078DE4 00074A84  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078DE8 00074A88  4E 80 00 20 */	blr 
+/* 80078DE8 00074A88  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule20SocialModeInteractorFv"
 "OnDestroy__Q216InteractorModule20SocialModeInteractorFv":
@@ -50759,7 +50759,7 @@ lbl_80078D90:
 /* 80078E14 00074AB4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80078E18 00074AB8  7C 08 03 A6 */	mtlr r0
 /* 80078E1C 00074ABC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078E20 00074AC0  4E 80 00 20 */	blr 
+/* 80078E20 00074AC0  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule20SocialModeInteractorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule20SocialModeInteractorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -50804,13 +50804,13 @@ lbl_80078D90:
 /* 80078EBC 00074B5C  81 9E 00 00 */	lwz r12, 0(r30)
 /* 80078EC0 00074B60  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 80078EC4 00074B64  7D 89 03 A6 */	mtctr r12
-/* 80078EC8 00074B68  4E 80 04 21 */	bctrl 
+/* 80078EC8 00074B68  4E 80 04 21 */	bctrl
 /* 80078ECC 00074B6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078ED0 00074B70  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80078ED4 00074B74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80078ED8 00074B78  7C 08 03 A6 */	mtlr r0
 /* 80078EDC 00074B7C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078EE0 00074B80  4E 80 00 20 */	blr 
+/* 80078EE0 00074B80  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule20SocialModeInteractorFv"
 "OnStop__Q216InteractorModule20SocialModeInteractorFv":
@@ -50847,7 +50847,7 @@ lbl_80078F18:
 /* 80078F58 00074BF8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80078F5C 00074BFC  7C 08 03 A6 */	mtlr r0
 /* 80078F60 00074C00  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078F64 00074C04  4E 80 00 20 */	blr 
+/* 80078F64 00074C04  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule20SocialModeInteractorFf"
 "Update__Q216InteractorModule20SocialModeInteractorFf":
@@ -50871,23 +50871,23 @@ lbl_80078F18:
 /* 80078FAC 00074C4C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80078FB0 00074C50  7C 08 03 A6 */	mtlr r0
 /* 80078FB4 00074C54  38 21 00 20 */	addi r1, r1, 0x20
-/* 80078FB8 00074C58  4E 80 00 20 */	blr 
+/* 80078FB8 00074C58  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule14InteractorInfo":
-/* 80078FBC 00074C5C  4E 80 00 20 */	blr 
+/* 80078FBC 00074C5C  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
-/* 80078FC0 00074C60  4E 80 00 20 */	blr 
+/* 80078FC0 00074C60  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
-/* 80078FC4 00074C64  4E 80 00 20 */	blr 
+/* 80078FC4 00074C64  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
-/* 80078FC8 00074C68  4E 80 00 20 */	blr 
+/* 80078FC8 00074C68  4E 80 00 20 */	blr
 
 .global "ResetInputState__Q216InteractorModule20SocialModeInteractorFv"
 "ResetInputState__Q216InteractorModule20SocialModeInteractorFv":
@@ -50903,7 +50903,7 @@ lbl_80078F18:
 /* 80078FF0 00074C90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078FF4 00074C94  7C 08 03 A6 */	mtlr r0
 /* 80078FF8 00074C98  38 21 00 10 */	addi r1, r1, 0x10
-/* 80078FFC 00074C9C  4E 80 00 20 */	blr 
+/* 80078FFC 00074C9C  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule20InteractorVisualizer":
@@ -50922,7 +50922,7 @@ lbl_80078F18:
 .global "GetSelectionRadius__Q216InteractorModule20SocialModeInteractorFv"
 "GetSelectionRadius__Q216InteractorModule20SocialModeInteractorFv":
 /* 80079020 00074CC0  C0 22 84 2C */	lfs f1, lbl_805D964C-_SDA2_BASE_(r2)
-/* 80079024 00074CC4  4E 80 00 20 */	blr 
+/* 80079024 00074CC4  4E 80 00 20 */	blr
 
 .global "ChooseAction__Q216InteractorModule20SocialModeInteractorFP11Interaction"
 "ChooseAction__Q216InteractorModule20SocialModeInteractorFP11Interaction":
@@ -50947,18 +50947,18 @@ lbl_80079064:
 /* 80079068 00074D08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007906C 00074D0C  7C 08 03 A6 */	mtlr r0
 /* 80079070 00074D10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80079074 00074D14  4E 80 00 20 */	blr 
+/* 80079074 00074D14  4E 80 00 20 */	blr
 
 .global "ResetChosenAction__Q216InteractorModule20SocialModeInteractorFv"
 "ResetChosenAction__Q216InteractorModule20SocialModeInteractorFv":
 /* 80079078 00074D18  38 00 FF FF */	li r0, -1
 /* 8007907C 00074D1C  B0 03 00 6C */	sth r0, 0x6c(r3)
-/* 80079080 00074D20  4E 80 00 20 */	blr 
+/* 80079080 00074D20  4E 80 00 20 */	blr
 
 .global "GetTreeTabEntryIndex__11InteractionCFv"
 "GetTreeTabEntryIndex__11InteractionCFv":
 /* 80079084 00074D24  80 63 00 14 */	lwz r3, 0x14(r3)
-/* 80079088 00074D28  4E 80 00 20 */	blr 
+/* 80079088 00074D28  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule15WallManipulator21WallManipulatorParamsFv"
 "__ct__Q316InteractorModule15WallManipulator21WallManipulatorParamsFv":
@@ -50985,7 +50985,7 @@ lbl_80079064:
 /* 800790DC 00074D7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800790E0 00074D80  7C 08 03 A6 */	mtlr r0
 /* 800790E4 00074D84  38 21 00 10 */	addi r1, r1, 0x10
-/* 800790E8 00074D88  4E 80 00 20 */	blr 
+/* 800790E8 00074D88  4E 80 00 20 */	blr
 
 .global "CalculateAvailableItemCount__Q216InteractorModule15WallManipulatorFi"
 "CalculateAvailableItemCount__Q216InteractorModule15WallManipulatorFi":
@@ -51014,7 +51014,7 @@ lbl_80079134:
 /* 80079138 00074DD8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007913C 00074DDC  7C 08 03 A6 */	mtlr r0
 /* 80079140 00074DE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80079144 00074DE4  4E 80 00 20 */	blr 
+/* 80079144 00074DE4  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule15WallManipulatorFv"
 "__ct__Q216InteractorModule15WallManipulatorFv":
@@ -51084,7 +51084,7 @@ lbl_80079134:
 /* 80079244 00074EE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80079248 00074EE8  7C 08 03 A6 */	mtlr r0
 /* 8007924C 00074EEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80079250 00074EF0  4E 80 00 20 */	blr 
+/* 80079250 00074EF0  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule15WallManipulator21WallManipulatorParamsFv"
 "__dt__Q316InteractorModule15WallManipulator21WallManipulatorParamsFv":
@@ -51110,7 +51110,7 @@ lbl_80079290:
 /* 8007929C 00074F3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800792A0 00074F40  7C 08 03 A6 */	mtlr r0
 /* 800792A4 00074F44  38 21 00 10 */	addi r1, r1, 0x10
-/* 800792A8 00074F48  4E 80 00 20 */	blr 
+/* 800792A8 00074F48  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule15WallManipulatorFv"
 "__dt__Q216InteractorModule15WallManipulatorFv":
@@ -51165,7 +51165,7 @@ lbl_80079358:
 /* 80079364 00075004  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80079368 00075008  7C 08 03 A6 */	mtlr r0
 /* 8007936C 0007500C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80079370 00075010  4E 80 00 20 */	blr 
+/* 80079370 00075010  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule15WallManipulatorFv"
 "OnCreate__Q216InteractorModule15WallManipulatorFv":
@@ -51186,7 +51186,7 @@ lbl_80079358:
 /* 800793AC 0007504C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800793B0 00075050  7C 08 03 A6 */	mtlr r0
 /* 800793B4 00075054  38 21 00 10 */	addi r1, r1, 0x10
-/* 800793B8 00075058  4E 80 00 20 */	blr 
+/* 800793B8 00075058  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule15WallManipulatorFv"
 "OnDestroy__Q216InteractorModule15WallManipulatorFv":
@@ -51203,7 +51203,7 @@ lbl_80079358:
 /* 800793E4 00075084  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800793E8 00075088  7C 08 03 A6 */	mtlr r0
 /* 800793EC 0007508C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800793F0 00075090  4E 80 00 20 */	blr 
+/* 800793F0 00075090  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule15WallManipulatorFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule15WallManipulatorFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -51391,7 +51391,7 @@ lbl_80079690:
 /* 800796A8 00075348  83 81 00 A0 */	lwz r28, 0xa0(r1)
 /* 800796AC 0007534C  7C 08 03 A6 */	mtlr r0
 /* 800796B0 00075350  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 800796B4 00075354  4E 80 00 20 */	blr 
+/* 800796B4 00075354  4E 80 00 20 */	blr
 
 .global "__as__Q216InteractorModule8WallDataFRCQ216InteractorModule8WallData"
 "__as__Q216InteractorModule8WallDataFRCQ216InteractorModule8WallData":
@@ -51399,7 +51399,7 @@ lbl_80079690:
 /* 800796BC 0007535C  80 04 00 04 */	lwz r0, 4(r4)
 /* 800796C0 00075360  90 A3 00 00 */	stw r5, 0(r3)
 /* 800796C4 00075364  90 03 00 04 */	stw r0, 4(r3)
-/* 800796C8 00075368  4E 80 00 20 */	blr 
+/* 800796C8 00075368  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule15WallManipulator21WallManipulatorParamsFRCQ316InteractorModule15WallManipulator21WallManipulatorParams"
 "__as__Q316InteractorModule15WallManipulator21WallManipulatorParamsFRCQ316InteractorModule15WallManipulator21WallManipulatorParams":
@@ -51429,7 +51429,7 @@ lbl_80079690:
 /* 80079728 000753C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007972C 000753CC  7C 08 03 A6 */	mtlr r0
 /* 80079730 000753D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80079734 000753D4  4E 80 00 20 */	blr 
+/* 80079734 000753D4  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule15WallManipulatorFv"
 "OnStop__Q216InteractorModule15WallManipulatorFv":
@@ -51477,7 +51477,7 @@ lbl_800797CC:
 /* 800797D0 00075470  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800797D4 00075474  7C 08 03 A6 */	mtlr r0
 /* 800797D8 00075478  38 21 00 10 */	addi r1, r1, 0x10
-/* 800797DC 0007547C  4E 80 00 20 */	blr 
+/* 800797DC 0007547C  4E 80 00 20 */	blr
 
 .global "CommitTransaction__Q216InteractorModule15WallManipulatorFQ316InteractorModule10Interactor23ClientNotificationState"
 "CommitTransaction__Q216InteractorModule15WallManipulatorFQ316InteractorModule10Interactor23ClientNotificationState":
@@ -51617,7 +51617,7 @@ lbl_80079960:
 /* 800799D4 00075674  83 A1 00 74 */	lwz r29, 0x74(r1)
 /* 800799D8 00075678  7C 08 03 A6 */	mtlr r0
 /* 800799DC 0007567C  38 21 00 80 */	addi r1, r1, 0x80
-/* 800799E0 00075680  4E 80 00 20 */	blr 
+/* 800799E0 00075680  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule15WallManipulator12CallbackDataFv"
 "__dt__Q316InteractorModule15WallManipulator12CallbackDataFv":
@@ -51653,7 +51653,7 @@ lbl_80079A48:
 /* 80079A54 000756F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80079A58 000756F8  7C 08 03 A6 */	mtlr r0
 /* 80079A5C 000756FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80079A60 00075700  4E 80 00 20 */	blr 
+/* 80079A60 00075700  4E 80 00 20 */	blr
 
 .global "FinalizePlacement__Q216InteractorModule15WallManipulatorFv"
 "FinalizePlacement__Q216InteractorModule15WallManipulatorFv":
@@ -51783,7 +51783,7 @@ lbl_80079C18:
 /* 80079C24 000758C4  83 A1 00 34 */	lwz r29, 0x34(r1)
 /* 80079C28 000758C8  7C 08 03 A6 */	mtlr r0
 /* 80079C2C 000758CC  38 21 00 40 */	addi r1, r1, 0x40
-/* 80079C30 000758D0  4E 80 00 20 */	blr 
+/* 80079C30 000758D0  4E 80 00 20 */	blr
 
 .global "FinalizeWallDel__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3Ri"
 "FinalizeWallDel__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3Ri":
@@ -51903,7 +51903,7 @@ lbl_80079DD4:
 /* 80079DDC 00075A7C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80079DE0 00075A80  7C 08 03 A6 */	mtlr r0
 /* 80079DE4 00075A84  38 21 00 30 */	addi r1, r1, 0x30
-/* 80079DE8 00075A88  4E 80 00 20 */	blr 
+/* 80079DE8 00075A88  4E 80 00 20 */	blr
 
 .global "FillRoomEndpointsArray__Q216InteractorModule15WallManipulatorFP5EVec3"
 "FillRoomEndpointsArray__Q216InteractorModule15WallManipulatorFP5EVec3":
@@ -52052,7 +52052,7 @@ lbl_80079F58:
 /* 8007A004 00075CA4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8007A008 00075CA8  7C 08 03 A6 */	mtlr r0
 /* 8007A00C 00075CAC  38 21 00 80 */	addi r1, r1, 0x80
-/* 8007A010 00075CB0  4E 80 00 20 */	blr 
+/* 8007A010 00075CB0  4E 80 00 20 */	blr
 
 .global "CountWallsInRoomSelection__Q216InteractorModule15WallManipulatorFv"
 "CountWallsInRoomSelection__Q216InteractorModule15WallManipulatorFv":
@@ -52117,7 +52117,7 @@ lbl_8007A0DC:
 /* 8007A0EC 00075D8C  83 81 00 40 */	lwz r28, 0x40(r1)
 /* 8007A0F0 00075D90  7C 08 03 A6 */	mtlr r0
 /* 8007A0F4 00075D94  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007A0F8 00075D98  4E 80 00 20 */	blr 
+/* 8007A0F8 00075D98  4E 80 00 20 */	blr
 
 .global "FinalizeRoom__Q216InteractorModule15WallManipulatorFv"
 "FinalizeRoom__Q216InteractorModule15WallManipulatorFv":
@@ -52333,7 +52333,7 @@ lbl_8007A3F4:
 /* 8007A3FC 0007609C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8007A400 000760A0  7C 08 03 A6 */	mtlr r0
 /* 8007A404 000760A4  38 21 00 60 */	addi r1, r1, 0x60
-/* 8007A408 000760A8  4E 80 00 20 */	blr 
+/* 8007A408 000760A8  4E 80 00 20 */	blr
 
 .global "HandleFinalizeRequest__Q216InteractorModule15WallManipulatorFv"
 "HandleFinalizeRequest__Q216InteractorModule15WallManipulatorFv":
@@ -52441,7 +52441,7 @@ lbl_8007A570:
 /* 8007A578 00076218  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8007A57C 0007621C  7C 08 03 A6 */	mtlr r0
 /* 8007A580 00076220  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007A584 00076224  4E 80 00 20 */	blr 
+/* 8007A584 00076224  4E 80 00 20 */	blr
 
 .global "HandleSwapRequest__Q216InteractorModule15WallManipulatorFv"
 "HandleSwapRequest__Q216InteractorModule15WallManipulatorFv":
@@ -52462,7 +52462,7 @@ lbl_8007A570:
 /* 8007A5C0 00076260  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007A5C4 00076264  7C 08 03 A6 */	mtlr r0
 /* 8007A5C8 00076268  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007A5CC 0007626C  4E 80 00 20 */	blr 
+/* 8007A5CC 0007626C  4E 80 00 20 */	blr
 
 .global "HandleExitRequest__Q216InteractorModule15WallManipulatorFv"
 "HandleExitRequest__Q216InteractorModule15WallManipulatorFv":
@@ -52497,13 +52497,13 @@ lbl_8007A628:
 /* 8007A638 000762D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007A63C 000762DC  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8007A640 000762E0  7D 89 03 A6 */	mtctr r12
-/* 8007A644 000762E4  4E 80 04 21 */	bctrl 
+/* 8007A644 000762E4  4E 80 04 21 */	bctrl
 lbl_8007A648:
 /* 8007A648 000762E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007A64C 000762EC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007A650 000762F0  7C 08 03 A6 */	mtlr r0
 /* 8007A654 000762F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007A658 000762F8  4E 80 00 20 */	blr 
+/* 8007A658 000762F8  4E 80 00 20 */	blr
 
 .global "AdjustCursorPosition__Q216InteractorModule15WallManipulatorFv"
 "AdjustCursorPosition__Q216InteractorModule15WallManipulatorFv":
@@ -52689,7 +52689,7 @@ lbl_8007A8C8:
 /* 8007A8D8 00076578  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 8007A8DC 0007657C  7C 08 03 A6 */	mtlr r0
 /* 8007A8E0 00076580  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007A8E4 00076584  4E 80 00 20 */	blr 
+/* 8007A8E4 00076584  4E 80 00 20 */	blr
 
 .global "UpdateStickState__Q216InteractorModule15WallManipulatorFv"
 "UpdateStickState__Q216InteractorModule15WallManipulatorFv":
@@ -52706,16 +52706,16 @@ lbl_8007A904:
 /* 8007A90C 000765AC  41 82 00 10 */	beq lbl_8007A91C
 /* 8007A910 000765B0  54 80 05 66 */	rlwinm r0, r4, 0, 0x15, 0x13
 /* 8007A914 000765B4  90 03 02 08 */	stw r0, 0x208(r3)
-/* 8007A918 000765B8  4E 80 00 20 */	blr 
+/* 8007A918 000765B8  4E 80 00 20 */	blr
 lbl_8007A91C:
 /* 8007A91C 000765BC  60 80 0C 00 */	ori r0, r4, 0xc00
 /* 8007A920 000765C0  90 03 02 08 */	stw r0, 0x208(r3)
-/* 8007A924 000765C4  4E 80 00 20 */	blr 
+/* 8007A924 000765C4  4E 80 00 20 */	blr
 lbl_8007A928:
 /* 8007A928 000765C8  80 03 02 08 */	lwz r0, 0x208(r3)
 /* 8007A92C 000765CC  54 00 05 A6 */	rlwinm r0, r0, 0, 0x16, 0x13
 /* 8007A930 000765D0  90 03 02 08 */	stw r0, 0x208(r3)
-/* 8007A934 000765D4  4E 80 00 20 */	blr 
+/* 8007A934 000765D4  4E 80 00 20 */	blr
 
 .global "ClearWallFadeOffList__Q216InteractorModule15WallManipulatorFv"
 "ClearWallFadeOffList__Q216InteractorModule15WallManipulatorFv":
@@ -52747,7 +52747,7 @@ lbl_8007A974:
 /* 8007A994 00076634  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8007A998 00076638  7C 08 03 A6 */	mtlr r0
 /* 8007A99C 0007663C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007A9A0 00076640  4E 80 00 20 */	blr 
+/* 8007A9A0 00076640  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule15WallManipulatorFf"
 "Update__Q216InteractorModule15WallManipulatorFf":
@@ -53084,7 +53084,7 @@ lbl_8007AE3C:
 /* 8007AE68 00076B08  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 8007AE6C 00076B0C  7C 08 03 A6 */	mtlr r0
 /* 8007AE70 00076B10  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 8007AE74 00076B14  4E 80 00 20 */	blr 
+/* 8007AE74 00076B14  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -53103,7 +53103,7 @@ lbl_8007AE3C:
 /* 8007AEA8 00076B48  38 A5 4F 10 */	addi r5, r5, lbl_80424F10@l
 /* 8007AEAC 00076B4C  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8007AEB0 00076B50  7C A9 03 A6 */	mtctr r5
-/* 8007AEB4 00076B54  4E 80 04 20 */	bctr 
+/* 8007AEB4 00076B54  4E 80 04 20 */	bctr
 /* 8007AEB8 00076B58  80 83 02 08 */	lwz r4, 0x208(r3)
 /* 8007AEBC 00076B5C  54 80 07 FF */	clrlwi. r0, r4, 0x1f
 /* 8007AEC0 00076B60  40 82 00 70 */	bne lbl_8007AF30
@@ -53259,7 +53259,7 @@ lbl_8007B07C:
 /* 8007B0F8 00076D98  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007B0FC 00076D9C  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8007B100 00076DA0  7D 89 03 A6 */	mtctr r12
-/* 8007B104 00076DA4  4E 80 04 21 */	bctrl 
+/* 8007B104 00076DA4  4E 80 04 21 */	bctrl
 /* 8007B108 00076DA8  7C 7C 1B 78 */	mr r28, r3
 /* 8007B10C 00076DAC  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8007B110 00076DB0  7F 84 E3 78 */	mr r4, r28
@@ -53467,7 +53467,7 @@ lbl_8007B404:
 /* 8007B414 000770B4  83 81 01 50 */	lwz r28, 0x150(r1)
 /* 8007B418 000770B8  7C 08 03 A6 */	mtlr r0
 /* 8007B41C 000770BC  38 21 01 60 */	addi r1, r1, 0x160
-/* 8007B420 000770C0  4E 80 00 20 */	blr 
+/* 8007B420 000770C0  4E 80 00 20 */	blr
 
 .global "OnCommandRepeated__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandRepeated__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -53477,93 +53477,93 @@ lbl_8007B404:
 /* 8007B430 000770D0  2C 04 00 09 */	cmpwi r4, 9
 /* 8007B434 000770D4  41 82 00 18 */	beq lbl_8007B44C
 /* 8007B438 000770D8  40 80 00 2C */	bge lbl_8007B464
-/* 8007B43C 000770DC  4E 80 00 20 */	blr 
+/* 8007B43C 000770DC  4E 80 00 20 */	blr
 lbl_8007B440:
 /* 8007B440 000770E0  2C 04 00 0D */	cmpwi r4, 0xd
-/* 8007B444 000770E4  4C 80 00 20 */	bgelr 
+/* 8007B444 000770E4  4C 80 00 20 */	bgelr
 /* 8007B448 000770E8  48 00 00 4C */	b lbl_8007B494
 lbl_8007B44C:
 /* 8007B44C 000770EC  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8007B450 000770F0  2C 00 00 00 */	cmpwi r0, 0
-/* 8007B454 000770F4  4D 82 00 20 */	beqlr 
+/* 8007B454 000770F4  4D 82 00 20 */	beqlr
 /* 8007B458 000770F8  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8007B45C 000770FC  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8007B460 00077100  4E 80 00 20 */	blr 
+/* 8007B460 00077100  4E 80 00 20 */	blr
 lbl_8007B464:
 /* 8007B464 00077104  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8007B468 00077108  2C 00 00 00 */	cmpwi r0, 0
-/* 8007B46C 0007710C  4D 82 00 20 */	beqlr 
+/* 8007B46C 0007710C  4D 82 00 20 */	beqlr
 /* 8007B470 00077110  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8007B474 00077114  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8007B478 00077118  4E 80 00 20 */	blr 
+/* 8007B478 00077118  4E 80 00 20 */	blr
 lbl_8007B47C:
 /* 8007B47C 0007711C  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8007B480 00077120  2C 00 00 00 */	cmpwi r0, 0
-/* 8007B484 00077124  4D 82 00 20 */	beqlr 
+/* 8007B484 00077124  4D 82 00 20 */	beqlr
 /* 8007B488 00077128  C0 02 84 74 */	lfs f0, lbl_805D9694-_SDA2_BASE_(r2)
 /* 8007B48C 0007712C  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8007B490 00077130  4E 80 00 20 */	blr 
+/* 8007B490 00077130  4E 80 00 20 */	blr
 lbl_8007B494:
 /* 8007B494 00077134  88 0D B3 7C */	lbz r0, "m_blueprintMode__Q216InteractorModule19BlueprintInteractor"-_SDA_BASE_(r13)
 /* 8007B498 00077138  2C 00 00 00 */	cmpwi r0, 0
-/* 8007B49C 0007713C  4D 82 00 20 */	beqlr 
+/* 8007B49C 0007713C  4D 82 00 20 */	beqlr
 /* 8007B4A0 00077140  C0 02 84 70 */	lfs f0, lbl_805D9690-_SDA2_BASE_(r2)
 /* 8007B4A4 00077144  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8007B4A8 00077148  4E 80 00 20 */	blr 
+/* 8007B4A8 00077148  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand":
 /* 8007B4AC 0007714C  38 04 FF FD */	addi r0, r4, -3
 /* 8007B4B0 00077150  28 00 00 1B */	cmplwi r0, 0x1b
-/* 8007B4B4 00077154  4D 81 00 20 */	bgtlr 
+/* 8007B4B4 00077154  4D 81 00 20 */	bgtlr
 /* 8007B4B8 00077158  3C 80 80 42 */	lis r4, lbl_80424F80@ha
 /* 8007B4BC 0007715C  54 00 10 3A */	slwi r0, r0, 2
 /* 8007B4C0 00077160  38 84 4F 80 */	addi r4, r4, lbl_80424F80@l
 /* 8007B4C4 00077164  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8007B4C8 00077168  7C 89 03 A6 */	mtctr r4
-/* 8007B4CC 0007716C  4E 80 04 20 */	bctr 
+/* 8007B4CC 0007716C  4E 80 04 20 */	bctr
 /* 8007B4D0 00077170  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B4D4 00077174  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8007B4D8 00077178  4E 80 00 20 */	blr 
+/* 8007B4D8 00077178  4E 80 00 20 */	blr
 /* 8007B4DC 0007717C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B4E0 00077180  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8007B4E4 00077184  4E 80 00 20 */	blr 
+/* 8007B4E4 00077184  4E 80 00 20 */	blr
 /* 8007B4E8 00077188  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B4EC 0007718C  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 8007B4F0 00077190  4E 80 00 20 */	blr 
+/* 8007B4F0 00077190  4E 80 00 20 */	blr
 /* 8007B4F4 00077194  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B4F8 00077198  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 8007B4FC 0007719C  4E 80 00 20 */	blr 
+/* 8007B4FC 0007719C  4E 80 00 20 */	blr
 /* 8007B500 000771A0  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B504 000771A4  D0 03 00 44 */	stfs f0, 0x44(r3)
-/* 8007B508 000771A8  4E 80 00 20 */	blr 
+/* 8007B508 000771A8  4E 80 00 20 */	blr
 /* 8007B50C 000771AC  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007B510 000771B0  D0 03 00 48 */	stfs f0, 0x48(r3)
-/* 8007B514 000771B4  4E 80 00 20 */	blr 
+/* 8007B514 000771B4  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
 /* 8007B518 000771B8  38 04 FF F9 */	addi r0, r4, -7
 /* 8007B51C 000771BC  28 00 00 17 */	cmplwi r0, 0x17
-/* 8007B520 000771C0  4D 81 00 20 */	bgtlr 
+/* 8007B520 000771C0  4D 81 00 20 */	bgtlr
 /* 8007B524 000771C4  3C 80 80 42 */	lis r4, lbl_80424FF0@ha
 /* 8007B528 000771C8  54 00 10 3A */	slwi r0, r0, 2
 /* 8007B52C 000771CC  38 84 4F F0 */	addi r4, r4, lbl_80424FF0@l
 /* 8007B530 000771D0  7C 84 00 2E */	lwzx r4, r4, r0
 /* 8007B534 000771D4  7C 89 03 A6 */	mtctr r4
-/* 8007B538 000771D8  4E 80 04 20 */	bctr 
+/* 8007B538 000771D8  4E 80 04 20 */	bctr
 /* 8007B53C 000771DC  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 8007B540 000771E0  4E 80 00 20 */	blr 
+/* 8007B540 000771E0  4E 80 00 20 */	blr
 /* 8007B544 000771E4  D0 23 00 38 */	stfs f1, 0x38(r3)
-/* 8007B548 000771E8  4E 80 00 20 */	blr 
+/* 8007B548 000771E8  4E 80 00 20 */	blr
 /* 8007B54C 000771EC  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 8007B550 000771F0  4E 80 00 20 */	blr 
+/* 8007B550 000771F0  4E 80 00 20 */	blr
 /* 8007B554 000771F4  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 8007B558 000771F8  4E 80 00 20 */	blr 
+/* 8007B558 000771F8  4E 80 00 20 */	blr
 /* 8007B55C 000771FC  D0 23 00 44 */	stfs f1, 0x44(r3)
-/* 8007B560 00077200  4E 80 00 20 */	blr 
+/* 8007B560 00077200  4E 80 00 20 */	blr
 /* 8007B564 00077204  D0 23 00 48 */	stfs f1, 0x48(r3)
-/* 8007B568 00077208  4E 80 00 20 */	blr 
+/* 8007B568 00077208  4E 80 00 20 */	blr
 
 .global "GetTexGenMode__Q216InteractorModule15WallManipulatorFv"
 "GetTexGenMode__Q216InteractorModule15WallManipulatorFv":
@@ -53585,7 +53585,7 @@ lbl_8007B5A0:
 /* 8007B5A0 00077240  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007B5A4 00077244  7C 08 03 A6 */	mtlr r0
 /* 8007B5A8 00077248  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007B5AC 0007724C  4E 80 00 20 */	blr 
+/* 8007B5AC 0007724C  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule15WallManipulatorFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule15WallManipulatorFRQ216InteractorModule20InteractorVisualizer":
@@ -53728,7 +53728,7 @@ lbl_8007B794:
 /* 8007B79C 0007743C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8007B7A0 00077440  7C 08 03 A6 */	mtlr r0
 /* 8007B7A4 00077444  38 21 00 60 */	addi r1, r1, 0x60
-/* 8007B7A8 00077448  4E 80 00 20 */	blr 
+/* 8007B7A8 00077448  4E 80 00 20 */	blr
 
 .global "SubmitLine__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3Ribb"
 "SubmitLine__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3Ribb":
@@ -53808,7 +53808,7 @@ lbl_8007B890:
 /* 8007B8C8 00077568  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8007B8CC 0007756C  7C 08 03 A6 */	mtlr r0
 /* 8007B8D0 00077570  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007B8D4 00077574  4E 80 00 20 */	blr 
+/* 8007B8D4 00077574  4E 80 00 20 */	blr
 
 .global "DoesNotConflictWithExistingArchitecture__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment"
 "DoesNotConflictWithExistingArchitecture__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment":
@@ -54059,7 +54059,7 @@ lbl_8007BC38:
 /* 8007BC40 000778E0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8007BC44 000778E4  7C 08 03 A6 */	mtlr r0
 /* 8007BC48 000778E8  38 21 00 80 */	addi r1, r1, 0x80
-/* 8007BC4C 000778EC  4E 80 00 20 */	blr 
+/* 8007BC4C 000778EC  4E 80 00 20 */	blr
 
 .global "__as__14ObjectIteratorFRC14ObjectIterator"
 "__as__14ObjectIteratorFRC14ObjectIterator":
@@ -54069,7 +54069,7 @@ lbl_8007BC38:
 /* 8007BC5C 000778FC  90 C3 00 00 */	stw r6, 0(r3)
 /* 8007BC60 00077900  90 A3 00 04 */	stw r5, 4(r3)
 /* 8007BC64 00077904  90 03 00 08 */	stw r0, 8(r3)
-/* 8007BC68 00077908  4E 80 00 20 */	blr 
+/* 8007BC68 00077908  4E 80 00 20 */	blr
 
 .global "CanChangeTileAdd__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment"
 "CanChangeTileAdd__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment":
@@ -54126,7 +54126,7 @@ lbl_8007BD1C:
 /* 8007BD28 000779C8  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 8007BD2C 000779CC  7C 08 03 A6 */	mtlr r0
 /* 8007BD30 000779D0  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007BD34 000779D4  4E 80 00 20 */	blr 
+/* 8007BD34 000779D4  4E 80 00 20 */	blr
 
 .global "CanChangeTileDelete__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment"
 "CanChangeTileDelete__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment":
@@ -54445,7 +54445,7 @@ lbl_8007C188:
 /* 8007C190 00077E30  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8007C194 00077E34  7C 08 03 A6 */	mtlr r0
 /* 8007C198 00077E38  38 21 00 70 */	addi r1, r1, 0x70
-/* 8007C19C 00077E3C  4E 80 00 20 */	blr 
+/* 8007C19C 00077E3C  4E 80 00 20 */	blr
 
 .global "HandleDeleteLine__Q216InteractorModule15WallManipulatorFRC7CTilePtRC7CTilePtRC11eCTilePtDiri"
 "HandleDeleteLine__Q216InteractorModule15WallManipulatorFRC7CTilePtRC7CTilePtRC11eCTilePtDiri":
@@ -54714,7 +54714,7 @@ lbl_8007C55C:
 /* 8007C564 00078204  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 8007C568 00078208  7C 08 03 A6 */	mtlr r0
 /* 8007C56C 0007820C  38 21 01 50 */	addi r1, r1, 0x150
-/* 8007C570 00078210  4E 80 00 20 */	blr 
+/* 8007C570 00078210  4E 80 00 20 */	blr
 
 .global "HandleAddLine__Q216InteractorModule15WallManipulatorFRC7CTilePtRC7CTilePtRC11eCTilePtDiri"
 "HandleAddLine__Q216InteractorModule15WallManipulatorFRC7CTilePtRC7CTilePtRC11eCTilePtDiri":
@@ -54872,7 +54872,7 @@ lbl_8007C798:
 /* 8007C7A0 00078440  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8007C7A4 00078444  7C 08 03 A6 */	mtlr r0
 /* 8007C7A8 00078448  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 8007C7AC 0007844C  4E 80 00 20 */	blr 
+/* 8007C7AC 0007844C  4E 80 00 20 */	blr
 
 .global "LegalWallTile__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment"
 "LegalWallTile__Q216InteractorModule15WallManipulatorFRC7CTilePt16TileWallsSegment":
@@ -54976,7 +54976,7 @@ lbl_8007C8D8:
 /* 8007C90C 000785AC  7F E3 FB 78 */	mr r3, r31
 /* 8007C910 000785B0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8007C914 000785B4  7D 89 03 A6 */	mtctr r12
-/* 8007C918 000785B8  4E 80 04 21 */	bctrl 
+/* 8007C918 000785B8  4E 80 04 21 */	bctrl
 /* 8007C91C 000785BC  48 04 B5 41 */	bl "GetCurrentRoute__8cXPersonFv"
 /* 8007C920 000785C0  2C 03 00 00 */	cmpwi r3, 0
 /* 8007C924 000785C4  41 82 00 0C */	beq lbl_8007C930
@@ -55004,7 +55004,7 @@ lbl_8007C96C:
 /* 8007C970 00078610  7F E3 FB 78 */	mr r3, r31
 /* 8007C974 00078614  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8007C978 00078618  7D 89 03 A6 */	mtctr r12
-/* 8007C97C 0007861C  4E 80 04 21 */	bctrl 
+/* 8007C97C 0007861C  4E 80 04 21 */	bctrl
 /* 8007C980 00078620  2C 03 00 00 */	cmpwi r3, 0
 /* 8007C984 00078624  41 82 00 4C */	beq lbl_8007C9D0
 /* 8007C988 00078628  4B FE A0 01 */	bl "GetFirstMultiTileObject__10cXMTObjectFv"
@@ -55056,7 +55056,7 @@ lbl_8007CA18:
 /* 8007CA24 000786C4  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 8007CA28 000786C8  7C 08 03 A6 */	mtlr r0
 /* 8007CA2C 000786CC  38 21 00 30 */	addi r1, r1, 0x30
-/* 8007CA30 000786D0  4E 80 00 20 */	blr 
+/* 8007CA30 000786D0  4E 80 00 20 */	blr
 
 .global "AddWallAtTile__Q216InteractorModule15WallManipulatorFRC7CTilePtR9TileWalls16TileWallsSegment"
 "AddWallAtTile__Q216InteractorModule15WallManipulatorFRC7CTilePtR9TileWalls16TileWallsSegment":
@@ -55154,7 +55154,7 @@ lbl_8007CB88:
 /* 8007CB90 00078830  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 8007CB94 00078834  7C 08 03 A6 */	mtlr r0
 /* 8007CB98 00078838  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 8007CB9C 0007883C  4E 80 00 20 */	blr 
+/* 8007CB9C 0007883C  4E 80 00 20 */	blr
 
 .global "PreviewNRooms__Q216InteractorModule15WallManipulatorFv"
 "PreviewNRooms__Q216InteractorModule15WallManipulatorFv":
@@ -55219,7 +55219,7 @@ lbl_8007CC38:
 /* 8007CC7C 0007891C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8007CC80 00078920  7C 08 03 A6 */	mtlr r0
 /* 8007CC84 00078924  38 21 00 30 */	addi r1, r1, 0x30
-/* 8007CC88 00078928  4E 80 00 20 */	blr 
+/* 8007CC88 00078928  4E 80 00 20 */	blr
 
 .global "IncrementSellCountForStyle__Q216InteractorModule15WallManipulatorF9WallStyle"
 "IncrementSellCountForStyle__Q216InteractorModule15WallManipulatorF9WallStyle":
@@ -55274,7 +55274,7 @@ lbl_8007CD28:
 /* 8007CD38 000789D8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8007CD3C 000789DC  7C 08 03 A6 */	mtlr r0
 /* 8007CD40 000789E0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007CD44 000789E4  4E 80 00 20 */	blr 
+/* 8007CD44 000789E4  4E 80 00 20 */	blr
 
 .global "CheckForAffectedWalls__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3"
 "CheckForAffectedWalls__Q216InteractorModule15WallManipulatorFRC5EVec3RC5EVec3":
@@ -55558,7 +55558,7 @@ lbl_8007D14C:
 /* 8007D154 00078DF4  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8007D158 00078DF8  7C 08 03 A6 */	mtlr r0
 /* 8007D15C 00078DFC  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 8007D160 00078E00  4E 80 00 20 */	blr 
+/* 8007D160 00078E00  4E 80 00 20 */	blr
 
 .global "SendBuildItemCountChangeEvent__Q216InteractorModule15WallManipulatorFi"
 "SendBuildItemCountChangeEvent__Q216InteractorModule15WallManipulatorFi":
@@ -55603,32 +55603,32 @@ lbl_8007D1C8:
 /* 8007D1F4 00078E94  83 C1 00 58 */	lwz r30, 0x58(r1)
 /* 8007D1F8 00078E98  7C 08 03 A6 */	mtlr r0
 /* 8007D1FC 00078E9C  38 21 00 60 */	addi r1, r1, 0x60
-/* 8007D200 00078EA0  4E 80 00 20 */	blr 
+/* 8007D200 00078EA0  4E 80 00 20 */	blr
 
 .global "GetIsDrawingEnabled__Q216InteractorModule15WallManipulatorCFv"
 "GetIsDrawingEnabled__Q216InteractorModule15WallManipulatorCFv":
 /* 8007D204 00078EA4  88 63 02 4C */	lbz r3, 0x24c(r3)
-/* 8007D208 00078EA8  4E 80 00 20 */	blr 
+/* 8007D208 00078EA8  4E 80 00 20 */	blr
 
 .global "GetAnchorPos__Q216InteractorModule15WallManipulatorFv"
 "GetAnchorPos__Q216InteractorModule15WallManipulatorFv":
 /* 8007D20C 00078EAC  38 63 01 A4 */	addi r3, r3, 0x1a4
-/* 8007D210 00078EB0  4E 80 00 20 */	blr 
+/* 8007D210 00078EB0  4E 80 00 20 */	blr
 
 .global "GetAnchorDrawPos__Q216InteractorModule15WallManipulatorFv"
 "GetAnchorDrawPos__Q216InteractorModule15WallManipulatorFv":
 /* 8007D214 00078EB4  38 63 01 B0 */	addi r3, r3, 0x1b0
-/* 8007D218 00078EB8  4E 80 00 20 */	blr 
+/* 8007D218 00078EB8  4E 80 00 20 */	blr
 
 .global "GetWallHeight__Q216InteractorModule15WallManipulatorCFv"
 "GetWallHeight__Q216InteractorModule15WallManipulatorCFv":
 /* 8007D21C 00078EBC  C0 22 84 F8 */	lfs f1, lbl_805D9718-_SDA2_BASE_(r2)
-/* 8007D220 00078EC0  4E 80 00 20 */	blr 
+/* 8007D220 00078EC0  4E 80 00 20 */	blr
 
 .global "GetAffectedWallHeight__Q216InteractorModule15WallManipulatorCFv"
 "GetAffectedWallHeight__Q216InteractorModule15WallManipulatorCFv":
 /* 8007D224 00078EC4  C0 22 84 F8 */	lfs f1, lbl_805D9718-_SDA2_BASE_(r2)
-/* 8007D228 00078EC8  4E 80 00 20 */	blr 
+/* 8007D228 00078EC8  4E 80 00 20 */	blr
 
 .global "OnUndoButton__Q216InteractorModule15WallManipulatorFv"
 "OnUndoButton__Q216InteractorModule15WallManipulatorFv":
@@ -55707,12 +55707,12 @@ lbl_8007D330:
 /* 8007D334 00078FD4  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 8007D338 00078FD8  7C 08 03 A6 */	mtlr r0
 /* 8007D33C 00078FDC  38 21 00 70 */	addi r1, r1, 0x70
-/* 8007D340 00078FE0  4E 80 00 20 */	blr 
+/* 8007D340 00078FE0  4E 80 00 20 */	blr
 
 .global "SetValid__6XRouteFb"
 "SetValid__6XRouteFb":
 /* 8007D344 00078FE4  98 83 00 7C */	stb r4, 0x7c(r3)
-/* 8007D348 00078FE8  4E 80 00 20 */	blr 
+/* 8007D348 00078FE8  4E 80 00 20 */	blr
 
 .global "__ne<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>__5eastlFRCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>RCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>_b"
 "__ne<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>__5eastlFRCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>RCQ25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>_b":
@@ -55722,7 +55722,7 @@ lbl_8007D330:
 /* 8007D358 00078FF8  7C 00 28 50 */	subf r0, r0, r5
 /* 8007D35C 00078FFC  7C 60 03 78 */	or r0, r3, r0
 /* 8007D360 00079000  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8007D364 00079004  4E 80 00 20 */	blr 
+/* 8007D364 00079004  4E 80 00 20 */	blr
 
 .global "end__Q25eastl126rbtree<Us,Q25eastl16pair<CUs,P4Room>,Q25eastl8less<Us>,Q25eastl9allocator,Q25eastl37use_first<Q25eastl16pair<CUs,P4Room>>,1,1>CFv"
 "end__Q25eastl126rbtree<Us,Q25eastl16pair<CUs,P4Room>,Q25eastl8less<Us>,Q25eastl9allocator,Q25eastl37use_first<Q25eastl16pair<CUs,P4Room>>,1,1>CFv":
@@ -55737,7 +55737,7 @@ lbl_8007D330:
 /* 8007D388 00079028  80 63 00 00 */	lwz r3, 0(r3)
 /* 8007D38C 0007902C  7C 08 03 A6 */	mtlr r0
 /* 8007D390 00079030  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D394 00079034  4E 80 00 20 */	blr 
+/* 8007D394 00079034  4E 80 00 20 */	blr
 
 .global "begin__Q25eastl126rbtree<Us,Q25eastl16pair<CUs,P4Room>,Q25eastl8less<Us>,Q25eastl9allocator,Q25eastl37use_first<Q25eastl16pair<CUs,P4Room>>,1,1>CFv"
 "begin__Q25eastl126rbtree<Us,Q25eastl16pair<CUs,P4Room>,Q25eastl8less<Us>,Q25eastl9allocator,Q25eastl37use_first<Q25eastl16pair<CUs,P4Room>>,1,1>CFv":
@@ -55752,7 +55752,7 @@ lbl_8007D330:
 /* 8007D3B8 00079058  80 63 00 00 */	lwz r3, 0(r3)
 /* 8007D3BC 0007905C  7C 08 03 A6 */	mtlr r0
 /* 8007D3C0 00079060  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D3C4 00079064  4E 80 00 20 */	blr 
+/* 8007D3C4 00079064  4E 80 00 20 */	blr
 
 .global "__pp__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>Fi"
 "__pp__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>Fi":
@@ -55772,18 +55772,18 @@ lbl_8007D330:
 /* 8007D3FC 0007909C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8007D400 000790A0  7C 08 03 A6 */	mtlr r0
 /* 8007D404 000790A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007D408 000790A8  4E 80 00 20 */	blr 
+/* 8007D408 000790A8  4E 80 00 20 */	blr
 
 .global "__ml__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>CFv"
 "__ml__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>CFv":
 /* 8007D40C 000790AC  80 63 00 00 */	lwz r3, 0(r3)
 /* 8007D410 000790B0  38 63 00 10 */	addi r3, r3, 0x10
-/* 8007D414 000790B4  4E 80 00 20 */	blr 
+/* 8007D414 000790B4  4E 80 00 20 */	blr
 
 .global "__ct__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>FPCQ25eastl39rbtree_node<Q25eastl16pair<CUs,P4Room>>"
 "__ct__Q25eastl101rbtree_iterator<Q25eastl16pair<CUs,P4Room>,PCQ25eastl16pair<CUs,P4Room>,RCQ25eastl16pair<CUs,P4Room>>FPCQ25eastl39rbtree_node<Q25eastl16pair<CUs,P4Room>>":
 /* 8007D418 000790B8  90 83 00 00 */	stw r4, 0(r3)
-/* 8007D41C 000790BC  4E 80 00 20 */	blr 
+/* 8007D41C 000790BC  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule11WallPainter17WallPainterParamsFv"
 "__ct__Q316InteractorModule11WallPainter17WallPainterParamsFv":
@@ -55808,7 +55808,7 @@ lbl_8007D330:
 /* 8007D468 00079108  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007D46C 0007910C  7C 08 03 A6 */	mtlr r0
 /* 8007D470 00079110  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D474 00079114  4E 80 00 20 */	blr 
+/* 8007D474 00079114  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule11WallPainterFv"
 "__ct__Q216InteractorModule11WallPainterFv":
@@ -55854,7 +55854,7 @@ lbl_8007D330:
 /* 8007D514 000791B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8007D518 000791B8  7C 08 03 A6 */	mtlr r0
 /* 8007D51C 000791BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007D520 000791C0  4E 80 00 20 */	blr 
+/* 8007D520 000791C0  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule11WallPainter17WallPainterParamsFv"
 "__dt__Q316InteractorModule11WallPainter17WallPainterParamsFv":
@@ -55880,7 +55880,7 @@ lbl_8007D560:
 /* 8007D56C 0007920C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007D570 00079210  7C 08 03 A6 */	mtlr r0
 /* 8007D574 00079214  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D578 00079218  4E 80 00 20 */	blr 
+/* 8007D578 00079218  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule11WallPainterFv"
 "__dt__Q216InteractorModule11WallPainterFv":
@@ -55923,7 +55923,7 @@ lbl_8007D5F8:
 /* 8007D604 000792A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007D608 000792A8  7C 08 03 A6 */	mtlr r0
 /* 8007D60C 000792AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D610 000792B0  4E 80 00 20 */	blr 
+/* 8007D610 000792B0  4E 80 00 20 */	blr
 
 .global "OnCreate__Q216InteractorModule11WallPainterFv"
 "OnCreate__Q216InteractorModule11WallPainterFv":
@@ -55944,7 +55944,7 @@ lbl_8007D5F8:
 /* 8007D64C 000792EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007D650 000792F0  7C 08 03 A6 */	mtlr r0
 /* 8007D654 000792F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D658 000792F8  4E 80 00 20 */	blr 
+/* 8007D658 000792F8  4E 80 00 20 */	blr
 
 .global "OnDestroy__Q216InteractorModule11WallPainterFv"
 "OnDestroy__Q216InteractorModule11WallPainterFv":
@@ -55961,7 +55961,7 @@ lbl_8007D5F8:
 /* 8007D684 00079324  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007D688 00079328  7C 08 03 A6 */	mtlr r0
 /* 8007D68C 0007932C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D690 00079330  4E 80 00 20 */	blr 
+/* 8007D690 00079330  4E 80 00 20 */	blr
 
 .global "OnStart__Q216InteractorModule11WallPainterFPCQ316InteractorModule10Interactor16InteractorParams"
 "OnStart__Q216InteractorModule11WallPainterFPCQ316InteractorModule10Interactor16InteractorParams":
@@ -56133,7 +56133,7 @@ lbl_8007D908:
 /* 8007D918 000795B8  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8007D91C 000795BC  7C 08 03 A6 */	mtlr r0
 /* 8007D920 000795C0  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8007D924 000795C4  4E 80 00 20 */	blr 
+/* 8007D924 000795C4  4E 80 00 20 */	blr
 
 .global "__as__Q316InteractorModule11WallPainter17WallPainterParamsFRCQ316InteractorModule11WallPainter17WallPainterParams"
 "__as__Q316InteractorModule11WallPainter17WallPainterParamsFRCQ316InteractorModule11WallPainter17WallPainterParams":
@@ -56159,7 +56159,7 @@ lbl_8007D908:
 /* 8007D974 00079614  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007D978 00079618  7C 08 03 A6 */	mtlr r0
 /* 8007D97C 0007961C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D980 00079620  4E 80 00 20 */	blr 
+/* 8007D980 00079620  4E 80 00 20 */	blr
 
 .global "OnStop__Q216InteractorModule11WallPainterFv"
 "OnStop__Q216InteractorModule11WallPainterFv":
@@ -56194,7 +56194,7 @@ lbl_8007D9E8:
 /* 8007D9EC 0007968C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007D9F0 00079690  7C 08 03 A6 */	mtlr r0
 /* 8007D9F4 00079694  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007D9F8 00079698  4E 80 00 20 */	blr 
+/* 8007D9F8 00079698  4E 80 00 20 */	blr
 
 .global "CommitTransaction__Q216InteractorModule11WallPainterFQ316InteractorModule10Interactor23ClientNotificationState"
 "CommitTransaction__Q216InteractorModule11WallPainterFQ316InteractorModule10Interactor23ClientNotificationState":
@@ -56269,7 +56269,7 @@ lbl_8007DAA4:
 /* 8007DAFC 0007979C  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 8007DB00 000797A0  7C 08 03 A6 */	mtlr r0
 /* 8007DB04 000797A4  38 21 00 50 */	addi r1, r1, 0x50
-/* 8007DB08 000797A8  4E 80 00 20 */	blr 
+/* 8007DB08 000797A8  4E 80 00 20 */	blr
 
 .global "__dt__Q316InteractorModule11WallPainter12CallbackDataFv"
 "__dt__Q316InteractorModule11WallPainter12CallbackDataFv":
@@ -56299,7 +56299,7 @@ lbl_8007DB58:
 /* 8007DB64 00079804  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007DB68 00079808  7C 08 03 A6 */	mtlr r0
 /* 8007DB6C 0007980C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007DB70 00079810  4E 80 00 20 */	blr 
+/* 8007DB70 00079810  4E 80 00 20 */	blr
 
 .global "__ct__Q316InteractorModule11WallPainter12CallbackDataFv"
 "__ct__Q316InteractorModule11WallPainter12CallbackDataFv":
@@ -56324,7 +56324,7 @@ lbl_8007DB58:
 /* 8007DBBC 0007985C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8007DBC0 00079860  7C 08 03 A6 */	mtlr r0
 /* 8007DBC4 00079864  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007DBC8 00079868  4E 80 00 20 */	blr 
+/* 8007DBC8 00079868  4E 80 00 20 */	blr
 
 .global "HandleFinalizeRequest__Q216InteractorModule11WallPainterFv"
 "HandleFinalizeRequest__Q216InteractorModule11WallPainterFv":
@@ -56388,7 +56388,7 @@ lbl_8007DC94:
 /* 8007DC9C 0007993C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8007DCA0 00079940  7C 08 03 A6 */	mtlr r0
 /* 8007DCA4 00079944  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007DCA8 00079948  4E 80 00 20 */	blr 
+/* 8007DCA8 00079948  4E 80 00 20 */	blr
 
 .global "HandleSwapRequest__Q216InteractorModule11WallPainterFv"
 "HandleSwapRequest__Q216InteractorModule11WallPainterFv":
@@ -56409,7 +56409,7 @@ lbl_8007DC94:
 /* 8007DCE4 00079984  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007DCE8 00079988  7C 08 03 A6 */	mtlr r0
 /* 8007DCEC 0007998C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007DCF0 00079990  4E 80 00 20 */	blr 
+/* 8007DCF0 00079990  4E 80 00 20 */	blr
 
 .global "HandleExitRequest__Q216InteractorModule11WallPainterFv"
 "HandleExitRequest__Q216InteractorModule11WallPainterFv":
@@ -56437,13 +56437,13 @@ lbl_8007DD34:
 /* 8007DD44 000799E4  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007DD48 000799E8  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 8007DD4C 000799EC  7D 89 03 A6 */	mtctr r12
-/* 8007DD50 000799F0  4E 80 04 21 */	bctrl 
+/* 8007DD50 000799F0  4E 80 04 21 */	bctrl
 lbl_8007DD54:
 /* 8007DD54 000799F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007DD58 000799F8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007DD5C 000799FC  7C 08 03 A6 */	mtlr r0
 /* 8007DD60 00079A00  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007DD64 00079A04  4E 80 00 20 */	blr 
+/* 8007DD64 00079A04  4E 80 00 20 */	blr
 
 .global "AdjustCursorPosition__Q216InteractorModule11WallPainterFv"
 "AdjustCursorPosition__Q216InteractorModule11WallPainterFv":
@@ -56512,7 +56512,7 @@ lbl_8007DE44:
 /* 8007DE48 00079AE8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007DE4C 00079AEC  7C 08 03 A6 */	mtlr r0
 /* 8007DE50 00079AF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007DE54 00079AF4  4E 80 00 20 */	blr 
+/* 8007DE54 00079AF4  4E 80 00 20 */	blr
 
 .global "ValidateWallSegment__Q216InteractorModule11WallPainterFv"
 "ValidateWallSegment__Q216InteractorModule11WallPainterFv":
@@ -56782,7 +56782,7 @@ lbl_8007E208:
 /* 8007E218 00079EB8  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8007E21C 00079EBC  7C 08 03 A6 */	mtlr r0
 /* 8007E220 00079EC0  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8007E224 00079EC4  4E 80 00 20 */	blr 
+/* 8007E224 00079EC4  4E 80 00 20 */	blr
 
 .global "UpdateStickState__Q216InteractorModule11WallPainterFv"
 "UpdateStickState__Q216InteractorModule11WallPainterFv":
@@ -56799,16 +56799,16 @@ lbl_8007E244:
 /* 8007E24C 00079EEC  41 82 00 10 */	beq lbl_8007E25C
 /* 8007E250 00079EF0  54 80 05 EA */	rlwinm r0, r4, 0, 0x17, 0x15
 /* 8007E254 00079EF4  90 03 01 CC */	stw r0, 0x1cc(r3)
-/* 8007E258 00079EF8  4E 80 00 20 */	blr 
+/* 8007E258 00079EF8  4E 80 00 20 */	blr
 lbl_8007E25C:
 /* 8007E25C 00079EFC  60 80 03 00 */	ori r0, r4, 0x300
 /* 8007E260 00079F00  90 03 01 CC */	stw r0, 0x1cc(r3)
-/* 8007E264 00079F04  4E 80 00 20 */	blr 
+/* 8007E264 00079F04  4E 80 00 20 */	blr
 lbl_8007E268:
 /* 8007E268 00079F08  80 03 01 CC */	lwz r0, 0x1cc(r3)
 /* 8007E26C 00079F0C  54 00 06 2A */	rlwinm r0, r0, 0, 0x18, 0x15
 /* 8007E270 00079F10  90 03 01 CC */	stw r0, 0x1cc(r3)
-/* 8007E274 00079F14  4E 80 00 20 */	blr 
+/* 8007E274 00079F14  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule11WallPainterFf"
 "Update__Q216InteractorModule11WallPainterFf":
@@ -57127,7 +57127,7 @@ lbl_8007E6CC:
 /* 8007E6FC 0007A39C  83 81 00 C0 */	lwz r28, 0xc0(r1)
 /* 8007E700 0007A3A0  7C 08 03 A6 */	mtlr r0
 /* 8007E704 0007A3A4  38 21 01 10 */	addi r1, r1, 0x110
-/* 8007E708 0007A3A8  4E 80 00 20 */	blr 
+/* 8007E708 0007A3A8  4E 80 00 20 */	blr
 
 .global "OnCommandPressed__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandPressed__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -57146,7 +57146,7 @@ lbl_8007E6CC:
 /* 8007E73C 0007A3DC  38 A5 50 A4 */	addi r5, r5, lbl_804250A4@l
 /* 8007E740 0007A3E0  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8007E744 0007A3E4  7C A9 03 A6 */	mtctr r5
-/* 8007E748 0007A3E8  4E 80 04 20 */	bctr 
+/* 8007E748 0007A3E8  4E 80 04 20 */	bctr
 /* 8007E74C 0007A3EC  80 83 01 CC */	lwz r4, 0x1cc(r3)
 /* 8007E750 0007A3F0  54 80 06 F7 */	rlwinm. r0, r4, 0, 0x1b, 0x1b
 /* 8007E754 0007A3F4  40 82 00 0C */	bne lbl_8007E760
@@ -57218,7 +57218,7 @@ lbl_8007E7E8:
 /* 8007E84C 0007A4EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8007E850 0007A4F0  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 8007E854 0007A4F4  7D 89 03 A6 */	mtctr r12
-/* 8007E858 0007A4F8  4E 80 04 21 */	bctrl 
+/* 8007E858 0007A4F8  4E 80 04 21 */	bctrl
 /* 8007E85C 0007A4FC  7C 7D 1B 78 */	mr r29, r3
 /* 8007E860 0007A500  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8007E864 0007A504  7F A4 EB 78 */	mr r4, r29
@@ -57489,40 +57489,40 @@ lbl_8007EC50:
 /* 8007EC60 0007A900  83 81 01 00 */	lwz r28, 0x100(r1)
 /* 8007EC64 0007A904  7C 08 03 A6 */	mtlr r0
 /* 8007EC68 0007A908  38 21 01 10 */	addi r1, r1, 0x110
-/* 8007EC6C 0007A90C  4E 80 00 20 */	blr 
+/* 8007EC6C 0007A90C  4E 80 00 20 */	blr
 
 .global "OnCommandReleased__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand"
 "OnCommandReleased__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand":
 /* 8007EC70 0007A910  28 04 00 10 */	cmplwi r4, 0x10
-/* 8007EC74 0007A914  4D 81 00 20 */	bgtlr 
+/* 8007EC74 0007A914  4D 81 00 20 */	bgtlr
 /* 8007EC78 0007A918  3C A0 80 42 */	lis r5, lbl_80425114@ha
 /* 8007EC7C 0007A91C  54 80 10 3A */	slwi r0, r4, 2
 /* 8007EC80 0007A920  38 A5 51 14 */	addi r5, r5, lbl_80425114@l
 /* 8007EC84 0007A924  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8007EC88 0007A928  7C A9 03 A6 */	mtctr r5
-/* 8007EC8C 0007A92C  4E 80 04 20 */	bctr 
+/* 8007EC8C 0007A92C  4E 80 04 20 */	bctr
 /* 8007EC90 0007A930  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007EC94 0007A934  D0 03 00 34 */	stfs f0, 0x34(r3)
-/* 8007EC98 0007A938  4E 80 00 20 */	blr 
+/* 8007EC98 0007A938  4E 80 00 20 */	blr
 /* 8007EC9C 0007A93C  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007ECA0 0007A940  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 8007ECA4 0007A944  4E 80 00 20 */	blr 
+/* 8007ECA4 0007A944  4E 80 00 20 */	blr
 /* 8007ECA8 0007A948  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007ECAC 0007A94C  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 8007ECB0 0007A950  4E 80 00 20 */	blr 
+/* 8007ECB0 0007A950  4E 80 00 20 */	blr
 /* 8007ECB4 0007A954  C0 02 84 2C */	lfs f0, lbl_805D964C-_SDA2_BASE_(r2)
 /* 8007ECB8 0007A958  D0 03 00 40 */	stfs f0, 0x40(r3)
-/* 8007ECBC 0007A95C  4E 80 00 20 */	blr 
+/* 8007ECBC 0007A95C  4E 80 00 20 */	blr
 /* 8007ECC0 0007A960  80 83 01 CC */	lwz r4, 0x1cc(r3)
 /* 8007ECC4 0007A964  54 80 06 F7 */	rlwinm. r0, r4, 0, 0x1b, 0x1b
-/* 8007ECC8 0007A968  4D 82 00 20 */	beqlr 
+/* 8007ECC8 0007A968  4D 82 00 20 */	beqlr
 /* 8007ECCC 0007A96C  54 80 04 E7 */	rlwinm. r0, r4, 0, 0x13, 0x13
 /* 8007ECD0 0007A970  54 80 07 34 */	rlwinm r0, r4, 0, 0x1c, 0x1a
 /* 8007ECD4 0007A974  90 03 01 CC */	stw r0, 0x1cc(r3)
-/* 8007ECD8 0007A978  4D 82 00 20 */	beqlr 
+/* 8007ECD8 0007A978  4D 82 00 20 */	beqlr
 /* 8007ECDC 0007A97C  60 00 08 00 */	ori r0, r0, 0x800
 /* 8007ECE0 0007A980  90 03 01 CC */	stw r0, 0x1cc(r3)
-/* 8007ECE4 0007A984  4E 80 00 20 */	blr 
+/* 8007ECE4 0007A984  4E 80 00 20 */	blr
 
 .global "OnCommandUpdate__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf"
 "OnCommandUpdate__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf":
@@ -57531,26 +57531,26 @@ lbl_8007EC50:
 /* 8007ECF0 0007A990  40 80 00 1C */	bge lbl_8007ED0C
 /* 8007ECF4 0007A994  2C 04 00 08 */	cmpwi r4, 8
 /* 8007ECF8 0007A998  41 82 00 28 */	beq lbl_8007ED20
-/* 8007ECFC 0007A99C  4C 80 00 20 */	bgelr 
+/* 8007ECFC 0007A99C  4C 80 00 20 */	bgelr
 /* 8007ED00 0007A9A0  2C 04 00 07 */	cmpwi r4, 7
 /* 8007ED04 0007A9A4  40 80 00 14 */	bge lbl_8007ED18
-/* 8007ED08 0007A9A8  4E 80 00 20 */	blr 
+/* 8007ED08 0007A9A8  4E 80 00 20 */	blr
 lbl_8007ED0C:
 /* 8007ED0C 0007A9AC  2C 04 00 11 */	cmpwi r4, 0x11
-/* 8007ED10 0007A9B0  4C 80 00 20 */	bgelr 
+/* 8007ED10 0007A9B0  4C 80 00 20 */	bgelr
 /* 8007ED14 0007A9B4  48 00 00 1C */	b lbl_8007ED30
 lbl_8007ED18:
 /* 8007ED18 0007A9B8  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 8007ED1C 0007A9BC  4E 80 00 20 */	blr 
+/* 8007ED1C 0007A9BC  4E 80 00 20 */	blr
 lbl_8007ED20:
 /* 8007ED20 0007A9C0  D0 23 00 38 */	stfs f1, 0x38(r3)
-/* 8007ED24 0007A9C4  4E 80 00 20 */	blr 
+/* 8007ED24 0007A9C4  4E 80 00 20 */	blr
 lbl_8007ED28:
 /* 8007ED28 0007A9C8  D0 23 00 3C */	stfs f1, 0x3c(r3)
-/* 8007ED2C 0007A9CC  4E 80 00 20 */	blr 
+/* 8007ED2C 0007A9CC  4E 80 00 20 */	blr
 lbl_8007ED30:
 /* 8007ED30 0007A9D0  D0 23 00 40 */	stfs f1, 0x40(r3)
-/* 8007ED34 0007A9D4  4E 80 00 20 */	blr 
+/* 8007ED34 0007A9D4  4E 80 00 20 */	blr
 
 .global "PreDraw__Q216InteractorModule11WallPainterFRQ216InteractorModule20InteractorVisualizer"
 "PreDraw__Q216InteractorModule11WallPainterFRQ216InteractorModule20InteractorVisualizer":
@@ -57897,7 +57897,7 @@ lbl_8007F1F0:
 /* 8007F200 0007AEA0  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8007F204 0007AEA4  7C 08 03 A6 */	mtlr r0
 /* 8007F208 0007AEA8  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8007F20C 0007AEAC  4E 80 00 20 */	blr 
+/* 8007F20C 0007AEAC  4E 80 00 20 */	blr
 
 .global "FinalizePaperForRoom__Q216InteractorModule11WallPainterFv"
 "FinalizePaperForRoom__Q216InteractorModule11WallPainterFv":
@@ -58295,7 +58295,7 @@ lbl_8007F794:
 /* 8007F7A4 0007B444  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 8007F7A8 0007B448  7C 08 03 A6 */	mtlr r0
 /* 8007F7AC 0007B44C  38 21 01 20 */	addi r1, r1, 0x120
-/* 8007F7B0 0007B450  4E 80 00 20 */	blr 
+/* 8007F7B0 0007B450  4E 80 00 20 */	blr
 
 .global "FinalizePaperForLine__Q216InteractorModule11WallPainterFv"
 "FinalizePaperForLine__Q216InteractorModule11WallPainterFv":
@@ -58374,7 +58374,7 @@ lbl_8007F8B4:
 /* 8007F8C8 0007B568  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8007F8CC 0007B56C  7C 08 03 A6 */	mtlr r0
 /* 8007F8D0 0007B570  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007F8D4 0007B574  4E 80 00 20 */	blr 
+/* 8007F8D4 0007B574  4E 80 00 20 */	blr
 
 .global "FinalizeSellPaperForLine__Q216InteractorModule11WallPainterFv"
 "FinalizeSellPaperForLine__Q216InteractorModule11WallPainterFv":
@@ -58434,7 +58434,7 @@ lbl_8007F998:
 /* 8007F9A8 0007B648  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8007F9AC 0007B64C  7C 08 03 A6 */	mtlr r0
 /* 8007F9B0 0007B650  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007F9B4 0007B654  4E 80 00 20 */	blr 
+/* 8007F9B4 0007B654  4E 80 00 20 */	blr
 
 .global "SubmitPaperLine__Q216InteractorModule11WallPainterFRC5EVec2RC5EVec211WallPatterni"
 "SubmitPaperLine__Q216InteractorModule11WallPainterFRC5EVec2RC5EVec211WallPatterni":
@@ -58665,13 +58665,13 @@ lbl_8007FCFC:
 /* 8007FD04 0007B9A4  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8007FD08 0007B9A8  7C 08 03 A6 */	mtlr r0
 /* 8007FD0C 0007B9AC  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 8007FD10 0007B9B0  4E 80 00 20 */	blr 
+/* 8007FD10 0007B9B0  4E 80 00 20 */	blr
 
 .global "GetShaderID__Q216InteractorModule11WallPainterFv"
 "GetShaderID__Q216InteractorModule11WallPainterFv":
 /* 8007FD14 0007B9B4  80 63 01 D0 */	lwz r3, 0x1d0(r3)
 /* 8007FD18 0007B9B8  80 63 00 08 */	lwz r3, 8(r3)
-/* 8007FD1C 0007B9BC  4E 80 00 20 */	blr 
+/* 8007FD1C 0007B9BC  4E 80 00 20 */	blr
 
 .global "SendBuildItemCountChangeEvent__Q216InteractorModule11WallPainterFi"
 "SendBuildItemCountChangeEvent__Q216InteractorModule11WallPainterFi":
@@ -58714,32 +58714,32 @@ lbl_8007FD84:
 /* 8007FDA8 0007BA48  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 8007FDAC 0007BA4C  7C 08 03 A6 */	mtlr r0
 /* 8007FDB0 0007BA50  38 21 00 40 */	addi r1, r1, 0x40
-/* 8007FDB4 0007BA54  4E 80 00 20 */	blr 
+/* 8007FDB4 0007BA54  4E 80 00 20 */	blr
 
 .global "GetIsAnchorDrawingOn__Q216InteractorModule11WallPainterCFv"
 "GetIsAnchorDrawingOn__Q216InteractorModule11WallPainterCFv":
 /* 8007FDB8 0007BA58  88 63 02 10 */	lbz r3, 0x210(r3)
-/* 8007FDBC 0007BA5C  4E 80 00 20 */	blr 
+/* 8007FDBC 0007BA5C  4E 80 00 20 */	blr
 
 .global "GetAnchorPos__Q216InteractorModule11WallPainterFv"
 "GetAnchorPos__Q216InteractorModule11WallPainterFv":
 /* 8007FDC0 0007BA60  38 63 01 A4 */	addi r3, r3, 0x1a4
-/* 8007FDC4 0007BA64  4E 80 00 20 */	blr 
+/* 8007FDC4 0007BA64  4E 80 00 20 */	blr
 
 .global "GetAnchorDrawPos__Q216InteractorModule11WallPainterFv"
 "GetAnchorDrawPos__Q216InteractorModule11WallPainterFv":
 /* 8007FDC8 0007BA68  38 63 01 B0 */	addi r3, r3, 0x1b0
-/* 8007FDCC 0007BA6C  4E 80 00 20 */	blr 
+/* 8007FDCC 0007BA6C  4E 80 00 20 */	blr
 
 .global "GetPaperToolHeight__Q216InteractorModule11WallPainterCFv"
 "GetPaperToolHeight__Q216InteractorModule11WallPainterCFv":
 /* 8007FDD0 0007BA70  C0 22 84 FC */	lfs f1, lbl_805D971C-_SDA2_BASE_(r2)
-/* 8007FDD4 0007BA74  4E 80 00 20 */	blr 
+/* 8007FDD4 0007BA74  4E 80 00 20 */	blr
 
 .global "GetWallHeight__Q216InteractorModule11WallPainterCFv"
 "GetWallHeight__Q216InteractorModule11WallPainterCFv":
 /* 8007FDD8 0007BA78  C0 22 84 F8 */	lfs f1, lbl_805D9718-_SDA2_BASE_(r2)
-/* 8007FDDC 0007BA7C  4E 80 00 20 */	blr 
+/* 8007FDDC 0007BA7C  4E 80 00 20 */	blr
 
 .global "SaveInHoldPos__Q216InteractorModule11WallPainterFRC5EVec3"
 "SaveInHoldPos__Q216InteractorModule11WallPainterFRC5EVec3":
@@ -58761,7 +58761,7 @@ lbl_8007FE14:
 /* 8007FE18 0007BAB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007FE1C 0007BABC  7C 08 03 A6 */	mtlr r0
 /* 8007FE20 0007BAC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8007FE24 0007BAC4  4E 80 00 20 */	blr 
+/* 8007FE24 0007BAC4  4E 80 00 20 */	blr
 
 .global "RestoreFromHoldPos__Q216InteractorModule11WallPainterFR5EVec3"
 "RestoreFromHoldPos__Q216InteractorModule11WallPainterFR5EVec3":
@@ -58795,12 +58795,12 @@ lbl_8007FE84:
 /* 8007FE8C 0007BB2C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8007FE90 0007BB30  7C 08 03 A6 */	mtlr r0
 /* 8007FE94 0007BB34  38 21 00 20 */	addi r1, r1, 0x20
-/* 8007FE98 0007BB38  4E 80 00 20 */	blr 
+/* 8007FE98 0007BB38  4E 80 00 20 */	blr
 
 .global "calc_paper_price__Q216InteractorModule11WallPainterCFRCQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>"
 "calc_paper_price__Q216InteractorModule11WallPainterCFRCQ25eastl65vector<Q216InteractorModule16PatternSellCount,Q25eastl9allocator>":
 /* 8007FE9C 0007BB3C  38 60 00 00 */	li r3, 0
-/* 8007FEA0 0007BB40  4E 80 00 20 */	blr 
+/* 8007FEA0 0007BB40  4E 80 00 20 */	blr
 
 .global "OnUndoButton__Q216InteractorModule11WallPainterFv"
 "OnUndoButton__Q216InteractorModule11WallPainterFv":
@@ -58879,7 +58879,7 @@ lbl_8007FFA8:
 /* 8007FFAC 0007BC4C  83 E1 00 5C */	lwz r31, 0x5c(r1)
 /* 8007FFB0 0007BC50  7C 08 03 A6 */	mtlr r0
 /* 8007FFB4 0007BC54  38 21 00 60 */	addi r1, r1, 0x60
-/* 8007FFB8 0007BC58  4E 80 00 20 */	blr 
+/* 8007FFB8 0007BC58  4E 80 00 20 */	blr
 
 .global "CalculateAvailableItemCount__Q216InteractorModule11WallPainterFi"
 "CalculateAvailableItemCount__Q216InteractorModule11WallPainterFi":
@@ -58910,7 +58910,7 @@ lbl_8008000C:
 /* 80080010 0007BCB0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80080014 0007BCB4  7C 08 03 A6 */	mtlr r0
 /* 80080018 0007BCB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8008001C 0007BCBC  4E 80 00 20 */	blr 
+/* 8008001C 0007BCBC  4E 80 00 20 */	blr
 
 .global "EnterBlueprintMode__Q216InteractorModule19BlueprintInteractorFb"
 "EnterBlueprintMode__Q216InteractorModule19BlueprintInteractorFb":
@@ -59019,7 +59019,7 @@ lbl_8008018C:
 /* 80080194 0007BE34  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80080198 0007BE38  7C 08 03 A6 */	mtlr r0
 /* 8008019C 0007BE3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800801A0 0007BE40  4E 80 00 20 */	blr 
+/* 800801A0 0007BE40  4E 80 00 20 */	blr
 
 .global "ExitBlueprintMode__Q216InteractorModule19BlueprintInteractorFv"
 "ExitBlueprintMode__Q216InteractorModule19BlueprintInteractorFv":
@@ -59081,7 +59081,7 @@ lbl_80080270:
 /* 80080274 0007BF14  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80080278 0007BF18  7C 08 03 A6 */	mtlr r0
 /* 8008027C 0007BF1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80080280 0007BF20  4E 80 00 20 */	blr 
+/* 80080280 0007BF20  4E 80 00 20 */	blr
 
 .global "SetBlueprintModeInteractorChanging__Q216InteractorModule19BlueprintInteractorFv"
 "SetBlueprintModeInteractorChanging__Q216InteractorModule19BlueprintInteractorFv":
@@ -59114,7 +59114,7 @@ lbl_800802D0:
 /* 800802E8 0007BF88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800802EC 0007BF8C  7C 08 03 A6 */	mtlr r0
 /* 800802F0 0007BF90  38 21 00 10 */	addi r1, r1, 0x10
-/* 800802F4 0007BF94  4E 80 00 20 */	blr 
+/* 800802F4 0007BF94  4E 80 00 20 */	blr
 
 .global "CheckAndReapplyBlueprintMode__Q216InteractorModule19BlueprintInteractorFv"
 "CheckAndReapplyBlueprintMode__Q216InteractorModule19BlueprintInteractorFv":
@@ -59132,7 +59132,7 @@ lbl_80080320:
 /* 80080320 0007BFC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80080324 0007BFC4  7C 08 03 A6 */	mtlr r0
 /* 80080328 0007BFC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8008032C 0007BFCC  4E 80 00 20 */	blr 
+/* 8008032C 0007BFCC  4E 80 00 20 */	blr
 
 .global "BlueprintNotifyQuittingBuildbuy__Q216InteractorModule19BlueprintInteractorFv"
 "BlueprintNotifyQuittingBuildbuy__Q216InteractorModule19BlueprintInteractorFv":
@@ -59154,7 +59154,7 @@ lbl_80080368:
 /* 80080368 0007C008  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8008036C 0007C00C  7C 08 03 A6 */	mtlr r0
 /* 80080370 0007C010  38 21 00 10 */	addi r1, r1, 0x10
-/* 80080374 0007C014  4E 80 00 20 */	blr 
+/* 80080374 0007C014  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule11GridSegmentFv"
 "__ct__Q216InteractorModule11GridSegmentFv":
@@ -59175,7 +59175,7 @@ lbl_800803A0:
 /* 800803AC 0007C04C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800803B0 0007C050  7C 08 03 A6 */	mtlr r0
 /* 800803B4 0007C054  38 21 00 10 */	addi r1, r1, 0x10
-/* 800803B8 0007C058  4E 80 00 20 */	blr 
+/* 800803B8 0007C058  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule11GridSegmentFv"
 "__dt__Q216InteractorModule11GridSegmentFv":
@@ -59209,7 +59209,7 @@ lbl_80080414:
 /* 80080420 0007C0C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80080424 0007C0C4  7C 08 03 A6 */	mtlr r0
 /* 80080428 0007C0C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8008042C 0007C0CC  4E 80 00 20 */	blr 
+/* 8008042C 0007C0CC  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule13BluePrintGridFv"
 "__ct__Q216InteractorModule13BluePrintGridFv":
@@ -59333,7 +59333,7 @@ lbl_800805C4:
 /* 800805EC 0007C28C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 800805F0 0007C290  7C 08 03 A6 */	mtlr r0
 /* 800805F4 0007C294  38 21 00 60 */	addi r1, r1, 0x60
-/* 800805F8 0007C298  4E 80 00 20 */	blr 
+/* 800805F8 0007C298  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule13BluePrintGridFv"
 "__dt__Q216InteractorModule13BluePrintGridFv":
@@ -59370,7 +59370,7 @@ lbl_80080660:
 /* 8008066C 0007C30C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80080670 0007C310  7C 08 03 A6 */	mtlr r0
 /* 80080674 0007C314  38 21 00 10 */	addi r1, r1, 0x10
-/* 80080678 0007C318  4E 80 00 20 */	blr 
+/* 80080678 0007C318  4E 80 00 20 */	blr
 
 .global "InitializeShader__Q216InteractorModule13BluePrintGridFP8ERShaderPc"
 "InitializeShader__Q216InteractorModule13BluePrintGridFP8ERShaderPc":
@@ -59442,7 +59442,7 @@ lbl_800806CC:
 /* 8008077C 0007C41C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80080780 0007C420  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 80080784 0007C424  7D 89 03 A6 */	mtctr r12
-/* 80080788 0007C428  4E 80 04 21 */	bctrl 
+/* 80080788 0007C428  4E 80 04 21 */	bctrl
 /* 8008078C 0007C42C  7C 79 1B 78 */	mr r25, r3
 /* 80080790 0007C430  7F E3 FB 78 */	mr r3, r31
 /* 80080794 0007C434  38 80 00 01 */	li r4, 1
@@ -59484,7 +59484,7 @@ lbl_800806CC:
 /* 80080824 0007C4C4  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80080828 0007C4C8  7C 08 03 A6 */	mtlr r0
 /* 8008082C 0007C4CC  38 21 00 90 */	addi r1, r1, 0x90
-/* 80080830 0007C4D0  4E 80 00 20 */	blr 
+/* 80080830 0007C4D0  4E 80 00 20 */	blr
 
 .global "BuildTextures__Q216InteractorModule13BluePrintGridFv"
 "BuildTextures__Q216InteractorModule13BluePrintGridFv":
@@ -59542,7 +59542,7 @@ lbl_800808C8:
 /* 800808F8 0007C598  38 80 00 00 */	li r4, 0
 /* 800808FC 0007C59C  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 80080900 0007C5A0  7D 89 03 A6 */	mtctr r12
-/* 80080904 0007C5A4  4E 80 04 21 */	bctrl 
+/* 80080904 0007C5A4  4E 80 04 21 */	bctrl
 /* 80080908 0007C5A8  81 96 00 00 */	lwz r12, 0(r22)
 /* 8008090C 0007C5AC  7E C3 B3 78 */	mr r3, r22
 /* 80080910 0007C5B0  38 A1 00 10 */	addi r5, r1, 0x10
@@ -59550,7 +59550,7 @@ lbl_800808C8:
 /* 80080918 0007C5B8  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 8008091C 0007C5BC  38 80 00 00 */	li r4, 0
 /* 80080920 0007C5C0  7D 89 03 A6 */	mtctr r12
-/* 80080924 0007C5C4  4E 80 04 21 */	bctrl 
+/* 80080924 0007C5C4  4E 80 04 21 */	bctrl
 /* 80080928 0007C5C8  7C 7D 1B 78 */	mr r29, r3
 /* 8008092C 0007C5CC  7E C3 B3 78 */	mr r3, r22
 /* 80080930 0007C5D0  4B FC 1A CD */	bl "GetXSize__8ETextureFv"
@@ -59610,7 +59610,7 @@ lbl_800809E0:
 /* 800809F0 0007C690  7E C3 B3 78 */	mr r3, r22
 /* 800809F4 0007C694  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 800809F8 0007C698  7D 89 03 A6 */	mtctr r12
-/* 800809FC 0007C69C  4E 80 04 21 */	bctrl 
+/* 800809FC 0007C69C  4E 80 04 21 */	bctrl
 /* 80080A00 0007C6A0  7E C3 B3 78 */	mr r3, r22
 /* 80080A04 0007C6A4  7E A4 AB 78 */	mr r4, r21
 /* 80080A08 0007C6A8  48 27 83 F9 */	bl "PostUpdateEnd__12TextureUtilsFP8ETextureb"
@@ -59626,7 +59626,7 @@ lbl_80080A20:
 /* 80080A28 0007C6C8  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80080A2C 0007C6CC  7C 08 03 A6 */	mtlr r0
 /* 80080A30 0007C6D0  38 21 00 60 */	addi r1, r1, 0x60
-/* 80080A34 0007C6D4  4E 80 00 20 */	blr 
+/* 80080A34 0007C6D4  4E 80 00 20 */	blr
 
 .global "Draw__Q216InteractorModule13BluePrintGridFP3ERC"
 "Draw__Q216InteractorModule13BluePrintGridFP3ERC":
@@ -59800,7 +59800,7 @@ lbl_80080AF8:
 /* 80080CD0 0007C970  38 A0 00 04 */	li r5, 4
 /* 80080CD4 0007C974  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80080CD8 0007C978  7D 89 03 A6 */	mtctr r12
-/* 80080CDC 0007C97C  4E 80 04 21 */	bctrl 
+/* 80080CDC 0007C97C  4E 80 04 21 */	bctrl
 /* 80080CE0 0007C980  3B FF 00 14 */	addi r31, r31, 0x14
 /* 80080CE4 0007C984  3B DE 00 01 */	addi r30, r30, 1
 lbl_80080CE8:
@@ -59833,17 +59833,17 @@ lbl_80080CF4:
 /* 80080D4C 0007C9EC  80 01 02 54 */	lwz r0, 0x254(r1)
 /* 80080D50 0007C9F0  7C 08 03 A6 */	mtlr r0
 /* 80080D54 0007C9F4  38 21 02 50 */	addi r1, r1, 0x250
-/* 80080D58 0007C9F8  4E 80 00 20 */	blr 
+/* 80080D58 0007C9F8  4E 80 00 20 */	blr
 
 .global "SetResId__9EResourceFUi"
 "SetResId__9EResourceFUi":
 /* 80080D5C 0007C9FC  90 83 00 08 */	stw r4, 8(r3)
-/* 80080D60 0007CA00  4E 80 00 20 */	blr 
+/* 80080D60 0007CA00  4E 80 00 20 */	blr
 
 .global "GetData__23ObjectDataObjDefinitionFv"
 "GetData__23ObjectDataObjDefinitionFv":
 /* 80080D64 0007CA04  80 63 00 1C */	lwz r3, 0x1c(r3)
-/* 80080D68 0007CA08  4E 80 00 20 */	blr 
+/* 80080D68 0007CA08  4E 80 00 20 */	blr
 
 .global "__ct__Q216InteractorModule14RayManipulatorFv"
 "__ct__Q216InteractorModule14RayManipulatorFv":
@@ -59955,7 +59955,7 @@ lbl_80080CF4:
 /* 80080F10 0007CBB0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80080F14 0007CBB4  7C 08 03 A6 */	mtlr r0
 /* 80080F18 0007CBB8  38 21 00 40 */	addi r1, r1, 0x40
-/* 80080F1C 0007CBBC  4E 80 00 20 */	blr 
+/* 80080F1C 0007CBBC  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule19BlueprintInteractorFv"
 "__dt__Q216InteractorModule19BlueprintInteractorFv":
@@ -59981,7 +59981,7 @@ lbl_80080F5C:
 /* 80080F68 0007CC08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80080F6C 0007CC0C  7C 08 03 A6 */	mtlr r0
 /* 80080F70 0007CC10  38 21 00 10 */	addi r1, r1, 0x10
-/* 80080F74 0007CC14  4E 80 00 20 */	blr 
+/* 80080F74 0007CC14  4E 80 00 20 */	blr
 
 .global "__dt__Q216InteractorModule14RayManipulatorFv"
 "__dt__Q216InteractorModule14RayManipulatorFv":
@@ -60023,7 +60023,7 @@ lbl_80080FF4:
 /* 80081000 0007CCA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80081004 0007CCA4  7C 08 03 A6 */	mtlr r0
 /* 80081008 0007CCA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8008100C 0007CCAC  4E 80 00 20 */	blr 
+/* 8008100C 0007CCAC  4E 80 00 20 */	blr
 
 .global "SetCameraRotationPoint__Q216InteractorModule14RayManipulatorFRC5EVec3"
 "SetCameraRotationPoint__Q216InteractorModule14RayManipulatorFRC5EVec3":
@@ -60046,7 +60046,7 @@ lbl_80080FF4:
 /* 80081044 0007CCE4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80081048 0007CCE8  7C 08 03 A6 */	mtlr r0
 /* 8008104C 0007CCEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80081050 0007CCF0  4E 80 00 20 */	blr 
+/* 80081050 0007CCF0  4E 80 00 20 */	blr
 
 .global "ParseControls__Q216InteractorModule14RayManipulatorFv"
 "ParseControls__Q216InteractorModule14RayManipulatorFv":
@@ -60094,7 +60094,7 @@ lbl_800810E8:
 /* 800810F0 0007CD90  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800810F4 0007CD94  7C 08 03 A6 */	mtlr r0
 /* 800810F8 0007CD98  38 21 00 10 */	addi r1, r1, 0x10
-/* 800810FC 0007CD9C  4E 80 00 20 */	blr 
+/* 800810FC 0007CD9C  4E 80 00 20 */	blr
 
 .global "Update__Q216InteractorModule14RayManipulatorFf"
 "Update__Q216InteractorModule14RayManipulatorFf":
@@ -60139,7 +60139,7 @@ lbl_8008112C:
 /* 80081194 0007CE34  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80081198 0007CE38  7C 08 03 A6 */	mtlr r0
 /* 8008119C 0007CE3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800811A0 0007CE40  4E 80 00 20 */	blr 
+/* 800811A0 0007CE40  4E 80 00 20 */	blr
 
 .global "SetNewArrowPosition__Q216InteractorModule14RayManipulatorFRC5EVec2"
 "SetNewArrowPosition__Q216InteractorModule14RayManipulatorFRC5EVec2":
@@ -60168,7 +60168,7 @@ lbl_8008112C:
 /* 800811FC 0007CE9C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80081200 0007CEA0  7C 08 03 A6 */	mtlr r0
 /* 80081204 0007CEA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80081208 0007CEA8  4E 80 00 20 */	blr 
+/* 80081208 0007CEA8  4E 80 00 20 */	blr
 
 .global "ResetCursor__Q216InteractorModule14RayManipulatorFv"
 "ResetCursor__Q216InteractorModule14RayManipulatorFv":
@@ -60198,7 +60198,7 @@ lbl_8008112C:
 /* 80081268 0007CF08  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8008126C 0007CF0C  7C 08 03 A6 */	mtlr r0
 /* 80081270 0007CF10  38 21 00 20 */	addi r1, r1, 0x20
-/* 80081274 0007CF14  4E 80 00 20 */	blr 
+/* 80081274 0007CF14  4E 80 00 20 */	blr
 
 .global "CastRay__Q216InteractorModule14RayManipulatorFv"
 "CastRay__Q216InteractorModule14RayManipulatorFv":
@@ -60316,7 +60316,7 @@ lbl_8008140C:
 /* 80081430 0007D0D0  83 A1 00 94 */	lwz r29, 0x94(r1)
 /* 80081434 0007D0D4  7C 08 03 A6 */	mtlr r0
 /* 80081438 0007D0D8  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8008143C 0007D0DC  4E 80 00 20 */	blr 
+/* 8008143C 0007D0DC  4E 80 00 20 */	blr
 
 .global "CalculateCameraRotationPoint__Q216InteractorModule14RayManipulatorFv"
 "CalculateCameraRotationPoint__Q216InteractorModule14RayManipulatorFv":
@@ -60352,7 +60352,7 @@ lbl_800814AC:
 /* 800814B0 0007D150  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 800814B4 0007D154  7C 08 03 A6 */	mtlr r0
 /* 800814B8 0007D158  38 21 00 20 */	addi r1, r1, 0x20
-/* 800814BC 0007D15C  4E 80 00 20 */	blr 
+/* 800814BC 0007D15C  4E 80 00 20 */	blr
 
 .global "ClampPosToLot__Q216InteractorModule14RayManipulatorFR5EVec3Pf"
 "ClampPosToLot__Q216InteractorModule14RayManipulatorFR5EVec3Pf":
@@ -60491,7 +60491,7 @@ lbl_80081634:
 /* 800816A8 0007D348  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 800816AC 0007D34C  7C 08 03 A6 */	mtlr r0
 /* 800816B0 0007D350  38 21 00 70 */	addi r1, r1, 0x70
-/* 800816B4 0007D354  4E 80 00 20 */	blr 
+/* 800816B4 0007D354  4E 80 00 20 */	blr
 
 .global "GetPositionAlongCamZ__Q216InteractorModule14RayManipulatorFf"
 "GetPositionAlongCamZ__Q216InteractorModule14RayManipulatorFf":
@@ -60563,7 +60563,7 @@ lbl_800817A4:
 /* 800817B4 0007D454  83 C1 00 88 */	lwz r30, 0x88(r1)
 /* 800817B8 0007D458  7C 08 03 A6 */	mtlr r0
 /* 800817BC 0007D45C  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 800817C0 0007D460  4E 80 00 20 */	blr 
+/* 800817C0 0007D460  4E 80 00 20 */	blr
 
 .global "UpdateCameraPosition__Q216InteractorModule14RayManipulatorFv"
 "UpdateCameraPosition__Q216InteractorModule14RayManipulatorFv":
@@ -60678,7 +60678,7 @@ lbl_80081950:
 /* 8008196C 0007D60C  83 E1 00 AC */	lwz r31, 0xac(r1)
 /* 80081970 0007D610  7C 08 03 A6 */	mtlr r0
 /* 80081974 0007D614  38 21 00 E0 */	addi r1, r1, 0xe0
-/* 80081978 0007D618  4E 80 00 20 */	blr 
+/* 80081978 0007D618  4E 80 00 20 */	blr
 
 .global "GetCameraSpeedScaledByZoom__Q216InteractorModule14RayManipulatorFv"
 "GetCameraSpeedScaledByZoom__Q216InteractorModule14RayManipulatorFv":
@@ -60699,7 +60699,7 @@ lbl_80081950:
 /* 800819B4 0007D654  EC 20 00 72 */	fmuls f1, f0, f1
 /* 800819B8 0007D658  7C 08 03 A6 */	mtlr r0
 /* 800819BC 0007D65C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800819C0 0007D660  4E 80 00 20 */	blr 
+/* 800819C0 0007D660  4E 80 00 20 */	blr
 
 .global "UpdateInteractorOnFloorPosition__Q216InteractorModule14RayManipulatorFv"
 "UpdateInteractorOnFloorPosition__Q216InteractorModule14RayManipulatorFv":
@@ -60714,16 +60714,16 @@ lbl_80081950:
 /* 800819E4 0007D684  38 60 00 01 */	li r3, 1
 /* 800819E8 0007D688  7C 08 03 A6 */	mtlr r0
 /* 800819EC 0007D68C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800819F0 0007D690  4E 80 00 20 */	blr 
+/* 800819F0 0007D690  4E 80 00 20 */	blr
 
 .global "UpdateFloorOffset__Q216InteractorModule14RayManipulatorFf"
 "UpdateFloorOffset__Q216InteractorModule14RayManipulatorFf":
 /* 800819F4 0007D694  D0 23 01 9C */	stfs f1, 0x19c(r3)
-/* 800819F8 0007D698  4E 80 00 20 */	blr 
+/* 800819F8 0007D698  4E 80 00 20 */	blr
 
 .global "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3"
 "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3":
-/* 800819FC 0007D69C  4E 80 00 20 */	blr 
+/* 800819FC 0007D69C  4E 80 00 20 */	blr
 
 .global "SimInstanceHitAABB__Q216InteractorModule14RayManipulatorFRC5EVec3RC5EVec3P12ISimInstanceR5EVec3Rf"
 "SimInstanceHitAABB__Q216InteractorModule14RayManipulatorFRC5EVec3RC5EVec3P12ISimInstanceR5EVec3Rf":
@@ -60787,7 +60787,7 @@ lbl_80081AD0:
 /* 80081AD8 0007D778  38 81 00 30 */	addi r4, r1, 0x30
 /* 80081ADC 0007D77C  81 8C 00 B8 */	lwz r12, 0xb8(r12)
 /* 80081AE0 0007D780  7D 89 03 A6 */	mtctr r12
-/* 80081AE4 0007D784  4E 80 04 21 */	bctrl 
+/* 80081AE4 0007D784  4E 80 04 21 */	bctrl
 lbl_80081AE8:
 /* 80081AE8 0007D788  C0 21 00 30 */	lfs f1, 0x30(r1)
 /* 80081AEC 0007D78C  38 61 00 24 */	addi r3, r1, 0x24
@@ -60819,7 +60819,7 @@ lbl_80081B4C:
 /* 80081B50 0007D7F0  7F 83 E3 78 */	mr r3, r28
 /* 80081B54 0007D7F4  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 80081B58 0007D7F8  7D 89 03 A6 */	mtctr r12
-/* 80081B5C 0007D7FC  4E 80 04 21 */	bctrl 
+/* 80081B5C 0007D7FC  4E 80 04 21 */	bctrl
 /* 80081B60 0007D800  7C 64 1B 78 */	mr r4, r3
 /* 80081B64 0007D804  38 61 00 50 */	addi r3, r1, 0x50
 /* 80081B68 0007D808  4B FD 08 E9 */	bl "__as__7EBound3FRC7EBound3"
@@ -60868,7 +60868,7 @@ lbl_80081C00:
 /* 80081C08 0007D8A8  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 80081C0C 0007D8AC  7C 08 03 A6 */	mtlr r0
 /* 80081C10 0007D8B0  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 80081C14 0007D8B4  4E 80 00 20 */	blr 
+/* 80081C14 0007D8B4  4E 80 00 20 */	blr
 
 .global "RaySceneObjectsIntersectTest__Q216InteractorModule14RayManipulatorFP11EIObjectMan"
 "RaySceneObjectsIntersectTest__Q216InteractorModule14RayManipulatorFP11EIObjectMan":
@@ -60998,7 +60998,7 @@ lbl_80081D68:
 /* 80081DF4 0007DA94  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80081DF8 0007DA98  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 80081DFC 0007DA9C  7D 89 03 A6 */	mtctr r12
-/* 80081E00 0007DAA0  4E 80 04 21 */	bctrl 
+/* 80081E00 0007DAA0  4E 80 04 21 */	bctrl
 /* 80081E04 0007DAA4  28 03 00 01 */	cmplwi r3, 1
 /* 80081E08 0007DAA8  40 82 00 24 */	bne lbl_80081E2C
 /* 80081E0C 0007DAAC  7F 83 E3 78 */	mr r3, r28
@@ -61100,7 +61100,7 @@ lbl_80081F6C:
 /* 80081F78 0007DC18  81 83 00 18 */	lwz r12, 0x18(r3)
 /* 80081F7C 0007DC1C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 80081F80 0007DC20  7D 89 03 A6 */	mtctr r12
-/* 80081F84 0007DC24  4E 80 04 21 */	bctrl 
+/* 80081F84 0007DC24  4E 80 04 21 */	bctrl
 /* 80081F88 0007DC28  2C 03 00 00 */	cmpwi r3, 0
 /* 80081F8C 0007DC2C  41 82 00 64 */	beq lbl_80081FF0
 /* 80081F90 0007DC30  38 80 00 01 */	li r4, 1
@@ -61152,7 +61152,7 @@ lbl_80082000:
 /* 80082030 0007DCD0  83 81 00 70 */	lwz r28, 0x70(r1)
 /* 80082034 0007DCD4  7C 08 03 A6 */	mtlr r0
 /* 80082038 0007DCD8  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 8008203C 0007DCDC  4E 80 00 20 */	blr 
+/* 8008203C 0007DCDC  4E 80 00 20 */	blr
 
 .global "FindClosestWall__Q216InteractorModule14RayManipulatorFR5EVec3b"
 "FindClosestWall__Q216InteractorModule14RayManipulatorFR5EVec3b":
@@ -61252,7 +61252,7 @@ lbl_80082198:
 /* 800821A4 0007DE44  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 800821A8 0007DE48  7C 08 03 A6 */	mtlr r0
 /* 800821AC 0007DE4C  38 21 00 30 */	addi r1, r1, 0x30
-/* 800821B0 0007DE50  4E 80 00 20 */	blr 
+/* 800821B0 0007DE50  4E 80 00 20 */	blr
 
 .global "GetWallCorner__Q216InteractorModule14RayManipulatorFP9EInstanceRC5EVec3"
 "GetWallCorner__Q216InteractorModule14RayManipulatorFP9EInstanceRC5EVec3":
@@ -61272,7 +61272,7 @@ lbl_80082198:
 /* 800821E8 0007DE88  7F C3 F3 78 */	mr r3, r30
 /* 800821EC 0007DE8C  81 8C 00 88 */	lwz r12, 0x88(r12)
 /* 800821F0 0007DE90  7D 89 03 A6 */	mtctr r12
-/* 800821F4 0007DE94  4E 80 04 21 */	bctrl 
+/* 800821F4 0007DE94  4E 80 04 21 */	bctrl
 /* 800821F8 0007DE98  7C 64 1B 78 */	mr r4, r3
 /* 800821FC 0007DE9C  38 61 00 48 */	addi r3, r1, 0x48
 /* 80082200 0007DEA0  4B F9 86 55 */	bl "__ct__7EBound3FRC7EBound3"
@@ -61324,7 +61324,7 @@ lbl_80082294:
 /* 800822B0 0007DF50  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 800822B4 0007DF54  7C 08 03 A6 */	mtlr r0
 /* 800822B8 0007DF58  38 21 00 80 */	addi r1, r1, 0x80
-/* 800822BC 0007DF5C  4E 80 00 20 */	blr 
+/* 800822BC 0007DF5C  4E 80 00 20 */	blr
 
 .global "CalculateArrowPos__Q216InteractorModule14RayManipulatorFRC5EVec3"
 "CalculateArrowPos__Q216InteractorModule14RayManipulatorFRC5EVec3":
@@ -61386,7 +61386,7 @@ lbl_80082384:
 /* 80082390 0007E030  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80082394 0007E034  7C 08 03 A6 */	mtlr r0
 /* 80082398 0007E038  38 21 00 20 */	addi r1, r1, 0x20
-/* 8008239C 0007E03C  4E 80 00 20 */	blr 
+/* 8008239C 0007E03C  4E 80 00 20 */	blr
 
 .global "GetArrowPos__Q216InteractorModule14RayManipulatorFv"
 "GetArrowPos__Q216InteractorModule14RayManipulatorFv":
@@ -61450,7 +61450,7 @@ lbl_80082458:
 /* 80082468 0007E108  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8008246C 0007E10C  7C 08 03 A6 */	mtlr r0
 /* 80082470 0007E110  38 21 00 20 */	addi r1, r1, 0x20
-/* 80082474 0007E114  4E 80 00 20 */	blr 
+/* 80082474 0007E114  4E 80 00 20 */	blr
 
 .global "AllowCursorNavigate__Q216InteractorModule14RayManipulatorCFv"
 "AllowCursorNavigate__Q216InteractorModule14RayManipulatorCFv":
@@ -61460,7 +61460,7 @@ lbl_80082458:
 /* 80082484 0007E124  7C 03 00 D0 */	neg r0, r3
 /* 80082488 0007E128  7C 00 1B 78 */	or r0, r0, r3
 /* 8008248C 0007E12C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80082490 0007E130  4E 80 00 20 */	blr 
+/* 80082490 0007E130  4E 80 00 20 */	blr
 
 .global "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo"
 "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo":
@@ -61485,240 +61485,1424 @@ lbl_80082458:
 /* 800824DC 0007E17C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800824E0 0007E180  7C 08 03 A6 */	mtlr r0
 /* 800824E4 0007E184  38 21 00 10 */	addi r1, r1, 0x10
-/* 800824E8 0007E188  4E 80 00 20 */	blr 
+/* 800824E8 0007E188  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
-	.incbin "baserom.dol", 0x4153C8, 0x38
+	# ROM: 0x4153C8
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x0000001C
+	.4byte 0x00000017
+	.4byte 0x00000000
+	.4byte 0x00000015
+	.4byte 0x00000001
+	.4byte 0x00000016
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+
 .global lbl_80419300
 lbl_80419300:
-	.incbin "baserom.dol", 0x415400, 0x80
+	# ROM: 0x415400
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000012
+	.4byte 0x00000019
+	.4byte 0x00000013
+	.4byte 0x0000001B
+	.4byte 0x00000018
+	.4byte 0x00000005
+	.4byte 0x00000019
+	.4byte 0x00000006
+	.4byte 0x0000001C
+	.4byte 0x00000003
+	.4byte 0x0000000A
+	.4byte 0x00000002
+	.4byte 0x0000002F
+	.4byte 0x00000009
+	.4byte 0x00000030
+	.4byte 0x0000000A
+	.4byte 0x00000031
+	.4byte 0x0000000B
+	.4byte 0x00000032
+	.4byte 0x0000000C
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+
 .global "_PerpTilePointTab$49274"
 "_PerpTilePointTab$49274":
-	.incbin "baserom.dol", 0x415480, 0x120
+	# ROM: 0x415480
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000001
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000005
+	.4byte 0x00000008
+	.4byte 0x00000000
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000045
+	.4byte 0x00000002
+	.4byte 0x00000016
+	.4byte 0x00000005
+	.4byte 0x0000001C
+	.4byte 0x00000017
+	.4byte 0x00000046
+	.4byte 0x0000001D
+	.4byte 0x00000047
+	.4byte 0x0000001E
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000009
+	.4byte 0x00000002
+	.4byte 0x00000042
+	.4byte 0x00000014
+	.4byte 0x0000000D
+	.4byte 0x00000012
+	.4byte 0x00000046
+	.4byte 0x0000001D
+	.4byte 0x00000047
+	.4byte 0x0000001E
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000042
+	.4byte 0x00000014
+	.4byte 0x0000000D
+	.4byte 0x00000012
+	.4byte 0x00000046
+	.4byte 0x0000001D
+	.4byte 0x00000047
+	.4byte 0x0000001E
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+
 .global lbl_804194A0
 lbl_804194A0:
-	.incbin "baserom.dol", 0x4155A0, 0xD0
+	# ROM: 0x4155A0
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000012
+	.4byte 0x00000019
+	.4byte 0x00000013
+	.4byte 0x0000001B
+	.4byte 0x00000018
+	.4byte 0x00000005
+	.4byte 0x00000019
+	.4byte 0x00000006
+	.4byte 0x0000001C
+	.4byte 0x00000003
+	.4byte 0x0000000A
+	.4byte 0x00000002
+	.4byte 0x00000046
+	.4byte 0x0000001D
+	.4byte 0x00000047
+	.4byte 0x0000001E
+	.4byte 0x00000044
+	.4byte 0x00000003
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+	.4byte 0x00000005
+	.4byte 0x00000000
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000012
+	.4byte 0x00000019
+	.4byte 0x00000013
+	.4byte 0x0000001B
+	.4byte 0x00000018
+	.4byte 0x00000005
+	.4byte 0x00000019
+	.4byte 0x00000006
+	.4byte 0x0000001C
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00010000
+	.4byte 0x0000000F
+	.4byte 0x00010001
+	.4byte 0x00000010
+
 .global "m_Colors__Q216InteractorModule13BluePrintGrid"
 "m_Colors__Q216InteractorModule13BluePrintGrid":
-	.incbin "baserom.dol", 0x415670, 0x20
+	# ROM: 0x415670
+	.4byte 0x00000000
+	.4byte 0xFF00003F
+	.4byte 0x00FF003F
+	.4byte 0x0000FF3F
+	.4byte 0xFFFF003F
+	.4byte 0x00FFFF3F
+	.4byte 0xFF00FF3F
+	.4byte 0x00000000
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80424498
 lbl_80424498:
-	.incbin "baserom.dol", 0x420598, 0x14
+	# ROM: 0x420598
+	.asciz "DirectInteractor"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804244AC
 lbl_804244AC:
-	.incbin "baserom.dol", 0x4205AC, 0x68
+	# ROM: 0x4205AC
+	.asciz "EASTL vector"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FloorPainter"
+	.byte 0x00, 0x00, 0x00
+	.asciz "FloorPainter::OnStart"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.asciz "intro_tool_floors_title"
+	.asciz "intro_tool_floors"
+	.byte 0x00, 0x00
+
 .global lbl_80424514
 lbl_80424514:
-	.incbin "baserom.dol", 0x420614, 0x18
+	# ROM: 0x420614
+	.asciz "FloorPainter::OnStop"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8042452C
 lbl_8042452C:
-	.incbin "baserom.dol", 0x42062C, 0x70
+	# ROM: 0x42062C
+	.4byte 0x8005AC30 ;# ptr
+	.4byte 0x8005AC5C ;# ptr
+	.4byte 0x8005ACBC ;# ptr
+	.4byte 0x8005AD3C ;# ptr
+	.4byte 0x8005AD90 ;# ptr
+	.4byte 0x8005AFC8 ;# ptr
+	.4byte 0x8005AFE4 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005ACDC ;# ptr
+	.4byte 0x8005ACF4 ;# ptr
+	.4byte 0x8005AD0C ;# ptr
+	.4byte 0x8005AD24 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005B000 ;# ptr
+	.4byte 0x8005B058 ;# ptr
+	.4byte 0x8005ADF4 ;# ptr
+	.4byte 0x8005B0A0 ;# ptr
+	.4byte 0x8005ADFC ;# ptr
+
 .global lbl_8042459C
 lbl_8042459C:
-	.incbin "baserom.dol", 0x42069C, 0x300
+	# ROM: 0x42069C
+	.4byte 0x8005B1B0 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B180 ;# ptr
+	.4byte 0x8005B18C ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B1D4 ;# ptr
+	.4byte 0x8005B198 ;# ptr
+	.4byte 0x8005B1A4 ;# ptr
+	.asciz "InteractorInputManager::EICMD_INVALID"
+	.byte 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_ACCEPT_1"
+	.byte 0x00
+	.asciz "InteractorInputManager::EICMD_ACCEPT_2"
+	.byte 0x00
+	.asciz "InteractorInputManager::EICMD_CANCEL"
+	.byte 0x00, 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_CURSOR_ROTATE_CW"
+	.byte 0x00
+	.4byte 0x00000000
+	.asciz "InteractorInputManager::EICMD_CURSOR_ROTATE_CCW"
+	.asciz "InteractorInputManager::EICMD_CURSOR_TRANSLATE_X"
+	.byte 0x00, 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_CURSOR_TRANSLATE_Y"
+	.byte 0x00, 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_CAMERA_ROTATE_CW"
+	.byte 0x00
+	.asciz "InteractorInputManager::EICMD_CAMERA_ROTATE_CCW"
+	.asciz "InteractorInputManager::EICMD_CAMERA_TRANSLATE_X"
+	.byte 0x00, 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_CAMERA_TRANSLATE_Y"
+	.byte 0x00, 0x00, 0x00
+	.asciz "InteractorInputManager::EICMD_TRACK_CONTROLLER_CURSOR_X"
+	.asciz "InteractorInputManager::EICMD_TRACK_CONTROLLER_CURSOR_Y"
+	.asciz "InteractorInputManager::unknown cmd"
+
 .global lbl_8042489C
 lbl_8042489C:
-	.incbin "baserom.dol", 0x42099C, 0x84
+	# ROM: 0x42099C
+	.4byte 0x80060244 ;# ptr
+	.4byte 0x8006024C ;# ptr
+	.4byte 0x80060254 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x8006025C ;# ptr
+	.4byte 0x80060264 ;# ptr
+	.4byte 0x8006026C ;# ptr
+	.4byte 0x80060274 ;# ptr
+	.4byte 0x8006027C ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x80060284 ;# ptr
+	.4byte 0x8006028C ;# ptr
+	.4byte 0x80060294 ;# ptr
+	.4byte 0x8006029C ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602B4 ;# ptr
+	.4byte 0x800602A4 ;# ptr
+	.4byte 0x800602AC ;# ptr
+	.4byte 0x00000000
+
 .global lbl_80424920
 lbl_80424920:
-	.incbin "baserom.dol", 0x420A20, 0x20
+	# ROM: 0x420A20
+	.asciz "InteractorInputManager(UNKNOWN)"
+
 .global lbl_80424940
 lbl_80424940:
-	.incbin "baserom.dol", 0x420A40, 0x20
+	# ROM: 0x420A40
+	.4byte 0x800518D0 ;# ptr
+	.4byte 0x800518C4 ;# ptr
+	.4byte 0x800518EC ;# ptr
+	.4byte 0x800518E0 ;# ptr
+	.4byte 0x80051908 ;# ptr
+	.4byte 0x800518FC ;# ptr
+	.4byte 0x80051924 ;# ptr
+	.4byte 0x80051918 ;# ptr
+
 .global lbl_80424960
 lbl_80424960:
-	.incbin "baserom.dol", 0x420A60, 0x20
+	# ROM: 0x420A60
+	.4byte 0x80066140 ;# ptr
+	.4byte 0x80066164 ;# ptr
+	.4byte 0x80066188 ;# ptr
+	.4byte 0x800661AC ;# ptr
+	.4byte 0x800661D0 ;# ptr
+	.4byte 0x8006620C ;# ptr
+	.4byte 0x80066248 ;# ptr
+	.4byte 0x80066284 ;# ptr
+
 .global "s_gridDrawOffset__Q216InteractorModule20InteractorVisualizer"
 "s_gridDrawOffset__Q216InteractorModule20InteractorVisualizer":
-	.incbin "baserom.dol", 0x420A80, 0xB0
+	# ROM: 0x420A80
+	.4byte 0x3E9CAC08
+	.4byte 0x00000000
+	.4byte 0x3EC18937
+	.4byte 0x3EC6A7F0
+	.4byte 0x3F6147AE
+	.4byte 0x3FB5C28F
+	.4byte 0x3EF0A3D7
+	.4byte 0xBED70A3D
+	.4byte 0x3F3126E9
+	.4byte 0x3E47AE14
+	.4byte 0x411126E9
+	.4byte 0x40DC8B44
+	.4byte 0x3F800000
+	.4byte 0x3EFA5E35
+	.4byte 0x3F456042
+	.4byte 0x3F795810
+	.4byte 0x3F0CCCCD
+	.4byte 0x3E5B22D1
+	.4byte 0x3EC51EB8
+	.4byte 0x3FA1EB85
+	.4byte 0x40DC51EC
+	.4byte 0x4149BA5E
+	.4byte 0x3F0A7EFA
+	.4byte 0x40FE76C9
+	.4byte 0x3FD26E98
+	.4byte 0x3F4E978D
+	.4byte 0x411774BC
+	.asciz "ObjectManipulator::OnStart"
+	.byte 0x00
+	.asciz "intro_buildbuy_title"
+	.byte 0x00, 0x00, 0x00
+	.asciz "intro_buildbuy"
+	.byte 0x00
+
 .global lbl_80424A30
 lbl_80424A30:
-	.incbin "baserom.dol", 0x420B30, 0x1C
+	# ROM: 0x420B30
+	.asciz "ObjectManipulator::OnStop"
+	.byte 0x00, 0x00
+
 .global lbl_80424A4C
 lbl_80424A4C:
-	.incbin "baserom.dol", 0x420B4C, 0x60
+	# ROM: 0x420B4C
+	.4byte 0x8006E2B0 ;# ptr
+	.4byte 0x8006E2C0 ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2D0 ;# ptr
+	.4byte 0x8006E2D8 ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2FC ;# ptr
+	.4byte 0x8006E2E0 ;# ptr
+	.4byte 0x8006E2F0 ;# ptr
+
 .global lbl_80424AAC
 lbl_80424AAC:
-	.incbin "baserom.dol", 0x420BAC, 0x60
+	# ROM: 0x420BAC
+	.4byte 0x8006E324 ;# ptr
+	.4byte 0x8006E330 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E33C ;# ptr
+	.4byte 0x8006E348 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E368 ;# ptr
+	.4byte 0x8006E354 ;# ptr
+	.4byte 0x8006E360 ;# ptr
+
 .global lbl_80424B0C
 lbl_80424B0C:
-	.incbin "baserom.dol", 0x420C0C, 0x1C
+	# ROM: 0x420C0C
+	.4byte 0x80051A2C ;# ptr
+	.4byte 0x80051A2C ;# ptr
+	.4byte 0x80051974 ;# ptr
+	.4byte 0x80051A2C ;# ptr
+	.4byte 0x800519AC ;# ptr
+	.4byte 0x80051A2C ;# ptr
+	.4byte 0x800519F8 ;# ptr
+
 .global lbl_80424B28
 lbl_80424B28:
-	.incbin "baserom.dol", 0x420C28, 0x10
+	# ROM: 0x420C28
+	.asciz "GrabManipulator"
+
 .global lbl_80424B38
 lbl_80424B38:
-	.incbin "baserom.dol", 0x420C38, 0x70
+	# ROM: 0x420C38
+	.4byte 0x8006F484 ;# ptr
+	.4byte 0x8006F4DC ;# ptr
+	.4byte 0x8006F548 ;# ptr
+	.4byte 0x8006F6C8 ;# ptr
+	.4byte 0x8006F5E8 ;# ptr
+	.4byte 0x8006F67C ;# ptr
+	.4byte 0x8006F6C8 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F568 ;# ptr
+	.4byte 0x8006F588 ;# ptr
+	.4byte 0x8006F5A8 ;# ptr
+	.4byte 0x8006F5C8 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F714 ;# ptr
+	.4byte 0x8006F740 ;# ptr
+	.4byte 0x8006F644 ;# ptr
+	.4byte 0x8006F794 ;# ptr
+	.4byte 0x8006F64C ;# ptr
+
 .global lbl_80424BA8
 lbl_80424BA8:
-	.incbin "baserom.dol", 0x420CA8, 0x1C
+	# ROM: 0x420CA8
+	.4byte 0x80070414 ;# ptr
+	.4byte 0x800704B8 ;# ptr
+	.4byte 0x8007053C ;# ptr
+	.4byte 0x800705D4 ;# ptr
+	.4byte 0x800706A0 ;# ptr
+	.4byte 0x800707F0 ;# ptr
+	.4byte 0x80070748 ;# ptr
+
 .global lbl_80424BC4
 lbl_80424BC4:
-	.incbin "baserom.dol", 0x420CC4, 0x18
+	# ROM: 0x420CC4
+	.asciz "Interactor-Placemode"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80424BDC
 lbl_80424BDC:
-	.incbin "baserom.dol", 0x420CDC, 0x1C
+	# ROM: 0x420CDC
+	.asciz "PlaceManipulator::OnStart"
+	.byte 0x00, 0x00
+
 .global lbl_80424BF8
 lbl_80424BF8:
-	.incbin "baserom.dol", 0x420CF8, 0x64
+	# ROM: 0x420CF8
+	.4byte 0x80070C28 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070C44 ;# ptr
+	.4byte 0x80070D34 ;# ptr
+	.4byte 0x80070CD8 ;# ptr
+	.4byte 0x80070D00 ;# ptr
+	.4byte 0x80070D34 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070C58 ;# ptr
+	.4byte 0x80070C78 ;# ptr
+	.4byte 0x80070C98 ;# ptr
+	.4byte 0x80070CB8 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070DE0 ;# ptr
+	.4byte 0x80070D68 ;# ptr
+	.4byte 0x80070D90 ;# ptr
+
 .global lbl_80424C5C
 lbl_80424C5C:
-	.incbin "baserom.dol", 0x420D5C, 0x2C
+	# ROM: 0x420D5C
+	.asciz "PlaceManipulator::TryPlacingCurrentObject"
+	.byte 0x00, 0x00
+
 .global lbl_80424C88
 lbl_80424C88:
-	.incbin "baserom.dol", 0x420D88, 0x20
+	# ROM: 0x420D88
+	.asciz "PlaceManipulator::CancelSession"
+
 .global lbl_80424CA8
 lbl_80424CA8:
-	.incbin "baserom.dol", 0x420DA8, 0x18
+	# ROM: 0x420DA8
+	.asciz "Interactor-HutPlacemode"
+
 .global lbl_80424CC0
 lbl_80424CC0:
-	.incbin "baserom.dol", 0x420DC0, 0x64
+	# ROM: 0x420DC0
+	.4byte 0x80072DFC ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072E18 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072E8C ;# ptr
+	.4byte 0x80072EA8 ;# ptr
+	.4byte 0x80072EDC ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072E2C ;# ptr
+	.4byte 0x80072E44 ;# ptr
+	.4byte 0x80072E5C ;# ptr
+	.4byte 0x80072E74 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F88 ;# ptr
+	.4byte 0x80072F10 ;# ptr
+	.4byte 0x80072F38 ;# ptr
+
 .global lbl_80424D24
 lbl_80424D24:
-	.incbin "baserom.dol", 0x420E24, 0x30
+	# ROM: 0x420E24
+	.asciz "HutPlaceManipulator::TryPlacingCurrentObject"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80424D54
 lbl_80424D54:
-	.incbin "baserom.dol", 0x420E54, 0x80
+	# ROM: 0x420E54
+	.asciz "HutPlaceManipulator::CancelSession"
+	.byte 0x00
+	.asciz "RayInteractor"
+	.byte 0x00, 0x00
+	.asciz "RayInteractor::OnStart"
+	.byte 0x00
+	.asciz "intro_classic_control_title"
+	.asciz "intro_classic_control"
+	.byte 0x00, 0x00
+
 .global lbl_80424DD4
 lbl_80424DD4:
-	.incbin "baserom.dol", 0x420ED4, 0x18
+	# ROM: 0x420ED4
+	.asciz "RayInteractor::OnStop"
+	.byte 0x00, 0x00
+
 .global lbl_80424DEC
 lbl_80424DEC:
-	.incbin "baserom.dol", 0x420EEC, 0x1C
+	# ROM: 0x420EEC
+	.asciz "*Picker_Image*"
+	.byte 0x00
+	.asciz "c:\\test.tga"
+
 .global lbl_80424E08
 lbl_80424E08:
-	.incbin "baserom.dol", 0x420F08, 0x10
+	# ROM: 0x420F08
+	.asciz "SimInteractor"
+	.byte 0x00, 0x00
+
 .global lbl_80424E18
 lbl_80424E18:
-	.incbin "baserom.dol", 0x420F18, 0x54
+	# ROM: 0x420F18
+	.asciz "Social Mode: external ctrl filter EXCLUDING right analog stick and DPAD left,right"
+	.byte 0x00
+
 .global lbl_80424E6C
 lbl_80424E6C:
-	.incbin "baserom.dol", 0x420F6C, 0x7C
+	# ROM: 0x420F6C
+	.asciz "Social Mode: internal ctrl filter"
+	.byte 0x00, 0x00
+	.asciz "WallManipulator"
+	.asciz "WallManipulator::OnStart"
+	.byte 0x00, 0x00, 0x00
+	.asciz "intro_tool_walls_title"
+	.byte 0x00
+	.asciz "intro_tool_walls"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80424EE8
 lbl_80424EE8:
-	.incbin "baserom.dol", 0x420FE8, 0x18
+	# ROM: 0x420FE8
+	.asciz "WallManipulator::OnStop"
+
 .global lbl_80424F00
 lbl_80424F00:
-	.incbin "baserom.dol", 0x421000, 0x10
+	# ROM: 0x421000
+	.asciz "bb_room_limit"
+	.byte 0x00, 0x00
+
 .global lbl_80424F10
 lbl_80424F10:
-	.incbin "baserom.dol", 0x421010, 0x70
+	# ROM: 0x421010
+	.4byte 0x8007AEB8 ;# ptr
+	.4byte 0x8007AF40 ;# ptr
+	.4byte 0x8007AF5C ;# ptr
+	.4byte 0x8007AFDC ;# ptr
+	.4byte 0x8007AFF4 ;# ptr
+	.4byte 0x8007B3F0 ;# ptr
+	.4byte 0x8007B3FC ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007AF7C ;# ptr
+	.4byte 0x8007AF94 ;# ptr
+	.4byte 0x8007AFAC ;# ptr
+	.4byte 0x8007AFC4 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B004 ;# ptr
+	.4byte 0x8007B058 ;# ptr
+	.4byte 0x8007B0A4 ;# ptr
+	.4byte 0x8007B404 ;# ptr
+	.4byte 0x8007B0AC ;# ptr
+
 .global lbl_80424F80
 lbl_80424F80:
-	.incbin "baserom.dol", 0x421080, 0x70
+	# ROM: 0x421080
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B4D0 ;# ptr
+	.4byte 0x8007B4DC ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B4E8 ;# ptr
+	.4byte 0x8007B4F4 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B514 ;# ptr
+	.4byte 0x8007B500 ;# ptr
+	.4byte 0x8007B50C ;# ptr
+
 .global lbl_80424FF0
 lbl_80424FF0:
-	.incbin "baserom.dol", 0x4210F0, 0x6C
+	# ROM: 0x4210F0
+	.4byte 0x8007B53C ;# ptr
+	.4byte 0x8007B544 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B54C ;# ptr
+	.4byte 0x8007B554 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B568 ;# ptr
+	.4byte 0x8007B55C ;# ptr
+	.4byte 0x8007B564 ;# ptr
+	.asciz "WallPainter"
+
 .global lbl_8042505C
 lbl_8042505C:
-	.incbin "baserom.dol", 0x42115C, 0x48
+	# ROM: 0x42115C
+	.asciz "WallPainter::OnStop"
+	.asciz "intro_tool_wallpaper_title"
+	.byte 0x00
+	.asciz "intro_tool_wallpaper"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804250A4
 lbl_804250A4:
-	.incbin "baserom.dol", 0x4211A4, 0x70
+	# ROM: 0x4211A4
+	.4byte 0x8007E74C ;# ptr
+	.4byte 0x8007E7A8 ;# ptr
+	.4byte 0x8007E7C4 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007E7F8 ;# ptr
+	.4byte 0x8007EB7C ;# ptr
+	.4byte 0x8007EB98 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007EBB4 ;# ptr
+	.4byte 0x8007EC08 ;# ptr
+	.4byte 0x8007E808 ;# ptr
+	.4byte 0x8007EC50 ;# ptr
+	.4byte 0x8007E810 ;# ptr
+
 .global lbl_80425114
 lbl_80425114:
-	.incbin "baserom.dol", 0x421214, 0x44
+	# ROM: 0x421214
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECC0 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007EC90 ;# ptr
+	.4byte 0x8007EC9C ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECE4 ;# ptr
+	.4byte 0x8007ECA8 ;# ptr
+	.4byte 0x8007ECB4 ;# ptr
+
 .global lbl_80425158
 lbl_80425158:
-	.incbin "baserom.dol", 0x421258, 0x28
+	# ROM: 0x421258
+	.asciz "BlueprintInteractor::EnterBlueprintMode"
+
 .global lbl_80425180
 lbl_80425180:
-	.incbin "baserom.dol", 0x421280, 0x40
+	# ROM: 0x421280
+	.asciz "BlueprintInteractor::ExitBlueprintMode"
+	.byte 0x00
+	.asciz "*blueprintgrid_%d*"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global "__vt__Q216InteractorModule19HutPlaceManipulator"
 "__vt__Q216InteractorModule19HutPlaceManipulator":
-	.incbin "baserom.dol", 0x4212C0, 0x70
+	# ROM: 0x4212C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule19HutPlaceManipulatorFv" ;# ptr (0x80072910)
+	.4byte "OnCreate__Q216InteractorModule19HutPlaceManipulatorFv" ;# ptr (0x80072CF4)
+	.4byte "OnDestroy__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E018)
+	.4byte "OnStart__Q216InteractorModule19HutPlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x80072D2C)
+	.4byte "OnStop__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E20C)
+	.4byte "Update__Q216InteractorModule19HutPlaceManipulatorFf" ;# ptr (0x80072978)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan" ;# ptr (0x8006EE10)
+	.4byte "OnCommandPressed__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80072DC8)
+	.4byte "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8006E300)
+	.4byte "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006E28C)
+	.4byte "OnCommandRepeated__Q216InteractorModule19HutPlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80072FF4)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x8006F01C)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E36C)
+	.4byte "Draw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E37C)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3" ;# ptr (0x8006EAC8)
+
 .global "__vt__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams"
 "__vt__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParams":
-	.incbin "baserom.dol", 0x421330, 0xC
+	# ROM: 0x421330
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule19HutPlaceManipulator25HutPlaceManipulatorParamsFv" ;# ptr (0x800728A8)
+
 .global "__vt__Q316InteractorModule19HutPlaceManipulator12CallbackData"
 "__vt__Q316InteractorModule19HutPlaceManipulator12CallbackData":
-	.incbin "baserom.dol", 0x42133C, 0xC
+	# ROM: 0x42133C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule19HutPlaceManipulator12CallbackDataFv" ;# ptr (0x80072F9C)
+
 .global "__vt__5HUTIO"
 "__vt__5HUTIO":
-	.incbin "baserom.dol", 0x421348, 0xC
+	# ROM: 0x421348
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__5HUTIOFv" ;# ptr (0x800737DC)
+
 .global "__vt__9HutRecipe"
 "__vt__9HutRecipe":
-	.incbin "baserom.dol", 0x421354, 0xC
+	# ROM: 0x421354
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9HutRecipeFv" ;# ptr (0x80073638)
+
 .global "__vt__Q216InteractorModule13RayInteractor"
 "__vt__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x421360, 0x70
+	# ROM: 0x421360
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule13RayInteractorFv" ;# ptr (0x8007399C)
+	.4byte "OnCreate__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80073A6C)
+	.4byte "OnDestroy__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80073AA4)
+	.4byte "OnStart__Q216InteractorModule13RayInteractorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x80073ADC)
+	.4byte "OnStop__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80073CC8)
+	.4byte "Update__Q216InteractorModule13RayInteractorFf" ;# ptr (0x80073E38)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule13RayInteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x800743FC)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule13RayInteractorFP11EIObjectMan" ;# ptr (0x80074D54)
+	.4byte "OnCommandPressed__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80074624)
+	.4byte "OnCommandReleased__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x80074908)
+	.4byte "OnCommandUpdate__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800749E8)
+	.4byte "OnCommandRepeated__Q216InteractorModule13RayInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800744C4)
+	.4byte "ResetInputState__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80074A48)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80074B10)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule13RayInteractorFP11Interaction" ;# ptr (0x80074DA0)
+	.4byte "PreDraw__Q216InteractorModule13RayInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007443C)
+	.4byte "Draw__Q216InteractorModule13RayInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007444C)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "ResetSnapTimer__Q216InteractorModule13RayInteractorFv" ;# ptr (0x80074AF4)
+
 .global "__vt__Q216InteractorModule20SocialModeInteractor"
 "__vt__Q216InteractorModule20SocialModeInteractor":
-	.incbin "baserom.dol", 0x4213D0, 0x70
+	# ROM: 0x4213D0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80078D54)
+	.4byte "OnCreate__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80078DAC)
+	.4byte "OnDestroy__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80078DEC)
+	.4byte "OnStart__Q216InteractorModule20SocialModeInteractorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x80078E24)
+	.4byte "OnStop__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80078EE4)
+	.4byte "Update__Q216InteractorModule20SocialModeInteractorFf" ;# ptr (0x80078F68)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80078FBC)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80078FC0)
+	.4byte "OnCommandReleased__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x80078FC4)
+	.4byte "OnCommandUpdate__Q216InteractorModule20SocialModeInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80078FC8)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80078FCC)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule20SocialModeInteractorFv" ;# ptr (0x80079020)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule20SocialModeInteractorFP11Interaction" ;# ptr (0x80079028)
+	.4byte "PreDraw__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x80079000)
+	.4byte "Draw__Q216InteractorModule20SocialModeInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x80079010)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte 0x00000000
+
 .global "__vt__Q216InteractorModule15WallManipulator"
 "__vt__Q216InteractorModule15WallManipulator":
-	.incbin "baserom.dol", 0x421440, 0x70
+	# ROM: 0x421440
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule15WallManipulatorFv" ;# ptr (0x800792AC)
+	.4byte "OnCreate__Q216InteractorModule15WallManipulatorFv" ;# ptr (0x80079374)
+	.4byte "OnDestroy__Q216InteractorModule15WallManipulatorFv" ;# ptr (0x800793BC)
+	.4byte "OnStart__Q216InteractorModule15WallManipulatorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x800793F4)
+	.4byte "OnStop__Q216InteractorModule15WallManipulatorFv" ;# ptr (0x80079738)
+	.4byte "Update__Q216InteractorModule15WallManipulatorFf" ;# ptr (0x8007A9A4)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8007AE78)
+	.4byte "OnCommandReleased__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8007B4AC)
+	.4byte "OnCommandUpdate__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8007B518)
+	.4byte "OnCommandRepeated__Q216InteractorModule15WallManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8007B424)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule15WallManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007B5B0)
+	.4byte "Draw__Q216InteractorModule15WallManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007B5C0)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3" ;# ptr (0x800819FC)
+
 .global "__vt__Q316InteractorModule15WallManipulator21WallManipulatorParams"
 "__vt__Q316InteractorModule15WallManipulator21WallManipulatorParams":
-	.incbin "baserom.dol", 0x4214B0, 0xC
+	# ROM: 0x4214B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule15WallManipulator21WallManipulatorParamsFv" ;# ptr (0x80079254)
+
 .global "__vt__Q316InteractorModule15WallManipulator12CallbackData"
 "__vt__Q316InteractorModule15WallManipulator12CallbackData":
-	.incbin "baserom.dol", 0x4214BC, 0xC
+	# ROM: 0x4214BC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule15WallManipulator12CallbackDataFv" ;# ptr (0x800799E4)
+
 .global "__vt__Q216InteractorModule11WallPainter"
 "__vt__Q216InteractorModule11WallPainter":
-	.incbin "baserom.dol", 0x4214C8, 0x70
+	# ROM: 0x4214C8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule11WallPainterFv" ;# ptr (0x8007D57C)
+	.4byte "OnCreate__Q216InteractorModule11WallPainterFv" ;# ptr (0x8007D614)
+	.4byte "OnDestroy__Q216InteractorModule11WallPainterFv" ;# ptr (0x8007D65C)
+	.4byte "OnStart__Q216InteractorModule11WallPainterFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x8007D694)
+	.4byte "OnStop__Q216InteractorModule11WallPainterFv" ;# ptr (0x8007D984)
+	.4byte "Update__Q216InteractorModule11WallPainterFf" ;# ptr (0x8007E278)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8007E70C)
+	.4byte "OnCommandReleased__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8007EC70)
+	.4byte "OnCommandUpdate__Q216InteractorModule11WallPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8007ECE8)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule11WallPainterFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007ED38)
+	.4byte "Draw__Q216InteractorModule11WallPainterFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8007ED48)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3" ;# ptr (0x800819FC)
+
 .global "__vt__Q316InteractorModule11WallPainter17WallPainterParams"
 "__vt__Q316InteractorModule11WallPainter17WallPainterParams":
-	.incbin "baserom.dol", 0x421538, 0xC
+	# ROM: 0x421538
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule11WallPainter17WallPainterParamsFv" ;# ptr (0x8007D524)
+
 .global "__vt__Q316InteractorModule11WallPainter12CallbackData"
 "__vt__Q316InteractorModule11WallPainter12CallbackData":
-	.incbin "baserom.dol", 0x421544, 0xC
+	# ROM: 0x421544
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule11WallPainter12CallbackDataFv" ;# ptr (0x8007DB0C)
+
 .global "__vt__Q216InteractorModule16PlaceManipulator"
 "__vt__Q216InteractorModule16PlaceManipulator":
-	.incbin "baserom.dol", 0x421550, 0x70
+	# ROM: 0x421550
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule16PlaceManipulatorFv" ;# ptr (0x80070AA0)
+	.4byte "OnCreate__Q216InteractorModule16PlaceManipulatorFv" ;# ptr (0x80070B08)
+	.4byte "OnDestroy__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E018)
+	.4byte "OnStart__Q216InteractorModule16PlaceManipulatorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x80070B40)
+	.4byte "OnStop__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E20C)
+	.4byte "Update__Q216InteractorModule17ObjectManipulatorFf" ;# ptr (0x8006E38C)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan" ;# ptr (0x8006EE10)
+	.4byte "OnCommandPressed__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80070BF4)
+	.4byte "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8006E300)
+	.4byte "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006E28C)
+	.4byte "OnCommandRepeated__Q216InteractorModule16PlaceManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x80070E4C)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x8006F01C)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E36C)
+	.4byte "Draw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E37C)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3" ;# ptr (0x8006EAC8)
+
 .global "__vt__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParams"
 "__vt__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParams":
-	.incbin "baserom.dol", 0x4215C0, 0xC
+	# ROM: 0x4215C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule16PlaceManipulator22PlaceManipulatorParamsFv" ;# ptr (0x80070A48)
+
 .global "__vt__Q316InteractorModule16PlaceManipulator12CallbackData"
 "__vt__Q316InteractorModule16PlaceManipulator12CallbackData":
-	.incbin "baserom.dol", 0x4215CC, 0xC
+	# ROM: 0x4215CC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule16PlaceManipulator12CallbackDataFv" ;# ptr (0x80070DF4)
+
 .global "__vt__Q216InteractorModule15GrabManipulator"
 "__vt__Q216InteractorModule15GrabManipulator":
-	.incbin "baserom.dol", 0x4215D8, 0x70
+	# ROM: 0x4215D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule15GrabManipulatorFv" ;# ptr (0x8006F2B4)
+	.4byte "OnCreate__Q216InteractorModule15GrabManipulatorFv" ;# ptr (0x8006F31C)
+	.4byte "OnDestroy__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E018)
+	.4byte "OnStart__Q216InteractorModule15GrabManipulatorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x8006F320)
+	.4byte "OnStop__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E20C)
+	.4byte "Update__Q216InteractorModule17ObjectManipulatorFf" ;# ptr (0x8006E38C)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan" ;# ptr (0x8006EE10)
+	.4byte "OnCommandPressed__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006F450)
+	.4byte "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8006E300)
+	.4byte "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006E28C)
+	.4byte "OnCommandRepeated__Q216InteractorModule15GrabManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006F800)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x8006F01C)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E36C)
+	.4byte "Draw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E37C)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3" ;# ptr (0x8006EAC8)
+
 .global "__vt__Q316InteractorModule15GrabManipulator21GrabManipulatorParams"
 "__vt__Q316InteractorModule15GrabManipulator21GrabManipulatorParams":
-	.incbin "baserom.dol", 0x421648, 0xC
+	# ROM: 0x421648
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule15GrabManipulator21GrabManipulatorParamsFv" ;# ptr (0x8006F25C)
+
 .global "__vt__Q316InteractorModule15GrabManipulator12CallbackData"
 "__vt__Q316InteractorModule15GrabManipulator12CallbackData":
-	.incbin "baserom.dol", 0x421654, 0xC
+	# ROM: 0x421654
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule15GrabManipulator12CallbackDataFv" ;# ptr (0x8006F7A8)
+
 .global "__vt__Q216InteractorModule17ObjectManipulator"
 "__vt__Q216InteractorModule17ObjectManipulator":
-	.incbin "baserom.dol", 0x421660, 0x70
+	# ROM: 0x421660
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006DF78)
+	.4byte "OnCreate__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006DFE0)
+	.4byte "OnDestroy__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E018)
+	.4byte "OnStart__Q216InteractorModule17ObjectManipulatorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x8006E050)
+	.4byte "OnStop__Q216InteractorModule17ObjectManipulatorFv" ;# ptr (0x8006E20C)
+	.4byte "Update__Q216InteractorModule17ObjectManipulatorFf" ;# ptr (0x8006E38C)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule17ObjectManipulatorFP11EIObjectMan" ;# ptr (0x8006EE10)
+	.4byte "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513EC)
+	.4byte "OnCommandReleased__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8006E300)
+	.4byte "OnCommandUpdate__Q216InteractorModule17ObjectManipulatorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8006E28C)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule17ObjectManipulatorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x8006F01C)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E36C)
+	.4byte "Draw__Q216InteractorModule17ObjectManipulatorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8006E37C)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule17ObjectManipulatorFRC5EVec3" ;# ptr (0x8006EAC8)
+
 .global "__vt__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParams"
 "__vt__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParams":
-	.incbin "baserom.dol", 0x4216D0, 0xC
+	# ROM: 0x4216D0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule17ObjectManipulator23ObjectManipulatorParamsFv" ;# ptr (0x8006F160)
+
 .global "__vt__Q216InteractorModule13SimInteractor"
 "__vt__Q216InteractorModule13SimInteractor":
-	.incbin "baserom.dol", 0x4216DC, 0x74
+	# ROM: 0x4216DC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule13SimInteractorFv" ;# ptr (0x8007760C)
+	.4byte "OnCreate__Q216InteractorModule13SimInteractorFv" ;# ptr (0x800776BC)
+	.4byte "OnDestroy__Q216InteractorModule13SimInteractorFv" ;# ptr (0x800776F4)
+	.4byte "OnStart__Q216InteractorModule13SimInteractorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x8007772C)
+	.4byte "OnStop__Q216InteractorModule13SimInteractorFv" ;# ptr (0x800778C8)
+	.4byte "Update__Q216InteractorModule13SimInteractorFf" ;# ptr (0x800779D8)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule13SimInteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80078174)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule13SimInteractorFP11EIObjectMan" ;# ptr (0x80078AF0)
+	.4byte "OnCommandPressed__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800782B8)
+	.4byte "OnCommandReleased__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x800785AC)
+	.4byte "OnCommandUpdate__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800786AC)
+	.4byte "OnCommandRepeated__Q216InteractorModule13SimInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800781B4)
+	.4byte "ResetInputState__Q216InteractorModule13SimInteractorFv" ;# ptr (0x8007870C)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule13SimInteractorFv" ;# ptr (0x800787B0)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule13SimInteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x800787EC)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule13SimInteractorFP11Interaction" ;# ptr (0x80078CFC)
+	.4byte "PreDraw__Q216InteractorModule13SimInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x80078194)
+	.4byte "Draw__Q216InteractorModule13SimInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x800781A4)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "GetBeamScale__Q216InteractorModule13SimInteractorFv" ;# ptr (0x8007812C)
+	.4byte "ResetSnapTimer__Q216InteractorModule13SimInteractorFv" ;# ptr (0x80078794)
+
 .global "__vt__Q216InteractorModule12FloorPainter"
 "__vt__Q216InteractorModule12FloorPainter":
-	.incbin "baserom.dol", 0x421750, 0x70
+	# ROM: 0x421750
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule12FloorPainterFv" ;# ptr (0x80059D28)
+	.4byte "OnCreate__Q216InteractorModule12FloorPainterFv" ;# ptr (0x80059DBC)
+	.4byte "OnDestroy__Q216InteractorModule12FloorPainterFv" ;# ptr (0x80059E20)
+	.4byte "OnStart__Q216InteractorModule12FloorPainterFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x80059E68)
+	.4byte "OnStop__Q216InteractorModule12FloorPainterFv" ;# ptr (0x8005A070)
+	.4byte "Update__Q216InteractorModule12FloorPainterFf" ;# ptr (0x8005A158)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005ABF0)
+	.4byte "OnCommandReleased__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8005B148)
+	.4byte "OnCommandUpdate__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005B1E8)
+	.4byte "OnCommandRepeated__Q216InteractorModule12FloorPainterFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005B0C0)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte "PreDraw__Q216InteractorModule12FloorPainterFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8005B238)
+	.4byte "Draw__Q216InteractorModule12FloorPainterFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8005B248)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3" ;# ptr (0x800819FC)
+
 .global "__vt__Q316InteractorModule12FloorPainter18FloorPainterParams"
 "__vt__Q316InteractorModule12FloorPainter18FloorPainterParams":
-	.incbin "baserom.dol", 0x4217C0, 0xC
+	# ROM: 0x4217C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule12FloorPainter18FloorPainterParamsFv" ;# ptr (0x8005263C)
+
 .global "__vt__Q316InteractorModule12FloorPainter12CallbackData"
 "__vt__Q316InteractorModule12FloorPainter12CallbackData":
-	.incbin "baserom.dol", 0x4217CC, 0xC
+	# ROM: 0x4217CC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule12FloorPainter12CallbackDataFv" ;# ptr (0x8005A6CC)
+
 .global "__vt__Q216InteractorModule14RayManipulator"
 "__vt__Q216InteractorModule14RayManipulator":
-	.incbin "baserom.dol", 0x4217D8, 0x70
+	# ROM: 0x4217D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule14RayManipulatorFv" ;# ptr (0x80080F78)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "Update__Q216InteractorModule14RayManipulatorFf" ;# ptr (0x80081100)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule14RayManipulatorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x80082494)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513EC)
+	.4byte "OnCommandReleased__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8005FE58)
+	.4byte "OnCommandUpdate__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005FEEC)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+	.4byte "UpdateObjectGrabOffset__Q216InteractorModule14RayManipulatorFRC5EVec3" ;# ptr (0x800819FC)
+
 .global "__vt__Q216InteractorModule19BlueprintInteractor"
 "__vt__Q216InteractorModule19BlueprintInteractor":
-	.incbin "baserom.dol", 0x421848, 0x6C
+	# ROM: 0x421848
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule19BlueprintInteractorFv" ;# ptr (0x80080F20)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule10InteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x8005FE30)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513EC)
+	.4byte "OnCommandReleased__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8005FE58)
+	.4byte "OnCommandUpdate__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005FEEC)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+
 .global "__vt__Q216InteractorModule16DirectInteractor"
 "__vt__Q216InteractorModule16DirectInteractor":
-	.incbin "baserom.dol", 0x4218B4, 0x6C
+	# ROM: 0x4218B4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x8004DF70)
+	.4byte "OnCreate__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x8004E024)
+	.4byte "OnDestroy__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x8004E05C)
+	.4byte "OnStart__Q216InteractorModule16DirectInteractorFPCQ316InteractorModule10Interactor16InteractorParams" ;# ptr (0x8004E094)
+	.4byte "OnStop__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x8004E200)
+	.4byte "Update__Q216InteractorModule16DirectInteractorFf" ;# ptr (0x8004E818)
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule16DirectInteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x8004FB98)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule16DirectInteractorFP11EIObjectMan" ;# ptr (0x80050738)
+	.4byte "OnCommandPressed__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8004FE3C)
+	.4byte "OnCommandReleased__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x80050014)
+	.4byte "OnCommandUpdate__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800500C4)
+	.4byte "OnCommandRepeated__Q216InteractorModule16DirectInteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8004FCE8)
+	.4byte "ResetInputState__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x80050190)
+	.4byte "ResetIdleTime__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x80050BDC)
+	.4byte "GetSelectionRadius__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x800501C4)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule16DirectInteractorFP8cXObject" ;# ptr (0x80050594)
+	.4byte "StopInObjectMenu__Q216InteractorModule16DirectInteractorFv" ;# ptr (0x8005067C)
+	.4byte "ChooseAction__Q216InteractorModule16DirectInteractorFP11Interaction" ;# ptr (0x800506A4)
+	.4byte "PreDraw__Q216InteractorModule16DirectInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8004FCC8)
+	.4byte "Draw__Q216InteractorModule16DirectInteractorFRQ216InteractorModule20InteractorVisualizer" ;# ptr (0x8004FCD8)
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+
 .global "__vt__Q216InteractorModule10Interactor"
 "__vt__Q216InteractorModule10Interactor":
-	.incbin "baserom.dol", 0x421920, 0x6C
+	# ROM: 0x421920
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q216InteractorModule10InteractorFv" ;# ptr (0x800511D4)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "AttachCamera__Q216InteractorModule10InteractorFP8ESimsCam" ;# ptr (0x8005FE20)
+	.4byte "GetAttachedCamera__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FE28)
+	.4byte "GetInteractorInfo__Q216InteractorModule10InteractorFRQ216InteractorModule14InteractorInfo" ;# ptr (0x8005FE30)
+	.4byte "SetExtents__Q216InteractorModule10InteractorFRC5EVec2" ;# ptr (0x8005FE50)
+	.4byte "UpdateObjectHighlights__Q216InteractorModule10InteractorFP11EIObjectMan" ;# ptr (0x8006000C)
+	.4byte "OnCommandPressed__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513EC)
+	.4byte "OnCommandReleased__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommand" ;# ptr (0x8005FE58)
+	.4byte "OnCommandUpdate__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x8005FEEC)
+	.4byte "OnCommandRepeated__Q216InteractorModule10InteractorFQ316InteractorModule22InteractorInputManager17InteractorCommandf" ;# ptr (0x800513E8)
+	.4byte "ResetInputState__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FF70)
+	.4byte "ResetIdleTime__Q216InteractorModule10InteractorFv" ;# ptr (0x800513DC)
+	.4byte "GetSelectionRadius__Q216InteractorModule10InteractorFv" ;# ptr (0x8005FFC8)
+	.4byte "UpdateOverlapIntersection__Q216InteractorModule10InteractorFPQ316InteractorModule10Interactor11OverlapData" ;# ptr (0x80051404)
+	.4byte "ExecuteObjectActionMenu__Q216InteractorModule10InteractorFP8cXObject" ;# ptr (0x80051408)
+	.4byte "StopInObjectMenu__Q216InteractorModule10InteractorFv" ;# ptr (0x8005140C)
+	.4byte "ChooseAction__Q216InteractorModule10InteractorFP11Interaction" ;# ptr (0x80051410)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SnapToPos__Q216InteractorModule10InteractorFRC5EVec3" ;# ptr (0x8006002C)
+
 .global "__vt__Q316InteractorModule10Interactor16InteractorParams"
 "__vt__Q316InteractorModule10Interactor16InteractorParams":
-	.incbin "baserom.dol", 0x42198C, 0xC
+	# ROM: 0x42198C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule10Interactor16InteractorParamsFv" ;# ptr (0x80051214)
+
 .global "__vt__Q316InteractorModule10Interactor12CallbackData"
 "__vt__Q316InteractorModule10Interactor12CallbackData":
-	.incbin "baserom.dol", 0x421998, 0x28
+	# ROM: 0x421998
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q316InteractorModule10Interactor12CallbackDataFv" ;# ptr (0x80051264)
+	.asciz "allocator.h"
+	.asciz "allocator.h"
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "s_invalidPos__Q216InteractorModule16DirectInteractor"
@@ -61764,145 +62948,241 @@ lbl_80425180:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global lbl_805D4900
 lbl_805D4900:
-	.incbin "baserom.dol", 0x484480, 0x4
+	# ROM: 0x484480
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4904
 lbl_805D4904:
-	.incbin "baserom.dol", 0x484484, 0x4
+	# ROM: 0x484484
+	.4byte 0x3F800000
+
 .global lbl_805D4908
 lbl_805D4908:
-	.incbin "baserom.dol", 0x484488, 0x4
+	# ROM: 0x484488
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D490C
 lbl_805D490C:
-	.incbin "baserom.dol", 0x48448C, 0x4
+	# ROM: 0x48448C
+	.4byte 0x3F800000
+
 .global lbl_805D4910
 lbl_805D4910:
-	.incbin "baserom.dol", 0x484490, 0x4
+	# ROM: 0x484490
+	.4byte 0x00000032
+
 .global lbl_805D4914
 lbl_805D4914:
-	.incbin "baserom.dol", 0x484494, 0x4
+	# ROM: 0x484494
+	.4byte 0x00000032
+
 .global lbl_805D4918
 lbl_805D4918:
-	.incbin "baserom.dol", 0x484498, 0x4
+	# ROM: 0x484498
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D491C
 lbl_805D491C:
-	.incbin "baserom.dol", 0x48449C, 0x4
+	# ROM: 0x48449C
+	.4byte 0x00000032
+
 .global lbl_805D4920
 lbl_805D4920:
-	.incbin "baserom.dol", 0x4844A0, 0x4
+	# ROM: 0x4844A0
+	.4byte 0x00000032
+
 .global "useStickPanning$41117"
 "useStickPanning$41117":
-	.incbin "baserom.dol", 0x4844A4, 0x4
+	# ROM: 0x4844A4
+	.4byte 0x00000001
+
 .global "controllerPadding$41387"
 "controllerPadding$41387":
-	.incbin "baserom.dol", 0x4844A8, 0x4
+	# ROM: 0x4844A8
+	.4byte 0x3E4CCCCD
+
 .global lbl_805D492C
 lbl_805D492C:
-	.incbin "baserom.dol", 0x4844AC, 0x4
+	# ROM: 0x4844AC
+	.4byte 0x25640000
+
 .global lbl_805D4930
 lbl_805D4930:
-	.incbin "baserom.dol", 0x4844B0, 0x2
+	# ROM: 0x4844B0
+	.byte 0x3A, 0x00
+
 .global lbl_805D4932
 lbl_805D4932:
-	.incbin "baserom.dol", 0x4844B2, 0x1
+	# ROM: 0x4844B2
+	.byte 0x01
+
 .global lbl_805D4933
 lbl_805D4933:
-	.incbin "baserom.dol", 0x4844B3, 0x1
+	# ROM: 0x4844B3
+	.byte 0x01
+
 .global lbl_805D4934
 lbl_805D4934:
-	.incbin "baserom.dol", 0x4844B4, 0x1
+	# ROM: 0x4844B4
+	.byte 0x00
+
 .global lbl_805D4935
 lbl_805D4935:
-	.incbin "baserom.dol", 0x4844B5, 0x1
+	# ROM: 0x4844B5
+	.byte 0x01
+
 .global "cButtonCmdUp$42578"
 "cButtonCmdUp$42578":
-	.incbin "baserom.dol", 0x4844B6, 0x1
+	# ROM: 0x4844B6
+	.byte 0x01
+
 .global lbl_805D4937
 lbl_805D4937:
-	.incbin "baserom.dol", 0x4844B7, 0x1
+	# ROM: 0x4844B7
+	.byte 0x01
+
 .global lbl_805D4938
 lbl_805D4938:
-	.incbin "baserom.dol", 0x4844B8, 0x1
+	# ROM: 0x4844B8
+	.byte 0x01
+
 .global lbl_805D4939
 lbl_805D4939:
-	.incbin "baserom.dol", 0x4844B9, 0x1
+	# ROM: 0x4844B9
+	.byte 0x00
+
 .global lbl_805D493A
 lbl_805D493A:
-	.incbin "baserom.dol", 0x4844BA, 0x1
+	# ROM: 0x4844BA
+	.byte 0x01
+
 .global lbl_805D493B
 lbl_805D493B:
-	.incbin "baserom.dol", 0x4844BB, 0x1
+	# ROM: 0x4844BB
+	.byte 0x01
+
 .global lbl_805D493C
 lbl_805D493C:
-	.incbin "baserom.dol", 0x4844BC, 0x1
+	# ROM: 0x4844BC
+	.byte 0x01
+
 .global lbl_805D493D
 lbl_805D493D:
-	.incbin "baserom.dol", 0x4844BD, 0x1
+	# ROM: 0x4844BD
+	.byte 0x00
+
 .global lbl_805D493E
 lbl_805D493E:
-	.incbin "baserom.dol", 0x4844BE, 0x1
+	# ROM: 0x4844BE
+	.byte 0x01
+
 .global lbl_805D493F
 lbl_805D493F:
-	.incbin "baserom.dol", 0x4844BF, 0x1
+	# ROM: 0x4844BF
+	.byte 0x01
+
 .global lbl_805D4940
 lbl_805D4940:
-	.incbin "baserom.dol", 0x4844C0, 0x1
+	# ROM: 0x4844C0
+	.byte 0x01
+
 .global lbl_805D4941
 lbl_805D4941:
-	.incbin "baserom.dol", 0x4844C1, 0x1
+	# ROM: 0x4844C1
+	.byte 0x00
+
 .global lbl_805D4942
 lbl_805D4942:
-	.incbin "baserom.dol", 0x4844C2, 0x2
+	# ROM: 0x4844C2
+	.byte 0x01, 0x00
+
 .global "lastPlacementDir$55084"
 "lastPlacementDir$55084":
-	.incbin "baserom.dol", 0x4844C4, 0x4
+	# ROM: 0x4844C4
+	.4byte 0xFFFF0000
+
 .global "m_CameraSpeedScaleFactor__Q216InteractorModule13RayInteractor"
 "m_CameraSpeedScaleFactor__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844C8, 0x4
+	# ROM: 0x4844C8
+	.4byte 0x40000000
+
 .global "m_ScreenWidth__Q216InteractorModule13RayInteractor"
 "m_ScreenWidth__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844CC, 0x4
+	# ROM: 0x4844CC
+	.4byte 0x44200000
+
 .global "m_ScreenHeight__Q216InteractorModule13RayInteractor"
 "m_ScreenHeight__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844D0, 0x4
+	# ROM: 0x4844D0
+	.4byte 0x43E00000
+
 .global "m_sCameraPanningSpeed__Q216InteractorModule13RayInteractor"
 "m_sCameraPanningSpeed__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844D4, 0x4
+	# ROM: 0x4844D4
+	.4byte 0x41200000
+
 .global "m_LotScaleFactor__Q216InteractorModule13RayInteractor"
 "m_LotScaleFactor__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844D8, 0x4
+	# ROM: 0x4844D8
+	.4byte 0x3DCCCCCD
+
 .global "m_sMinimumCameraTurnRadius__Q216InteractorModule13RayInteractor"
 "m_sMinimumCameraTurnRadius__Q216InteractorModule13RayInteractor":
-	.incbin "baserom.dol", 0x4844DC, 0x4
+	# ROM: 0x4844DC
+	.4byte 0x40C00000
+
 .global lbl_805D4960
 lbl_805D4960:
-	.incbin "baserom.dol", 0x4844E0, 0x4
+	# ROM: 0x4844E0
+	.4byte 0x0000003F
+
 .global lbl_805D4964
 lbl_805D4964:
-	.incbin "baserom.dol", 0x4844E4, 0x4
+	# ROM: 0x4844E4
+	.4byte 0x0000003F
+
 .global lbl_805D4968
 lbl_805D4968:
-	.incbin "baserom.dol", 0x4844E8, 0x4
+	# ROM: 0x4844E8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D496C
 lbl_805D496C:
-	.incbin "baserom.dol", 0x4844EC, 0x4
+	# ROM: 0x4844EC
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D4970
 lbl_805D4970:
-	.incbin "baserom.dol", 0x4844F0, 0x4
+	# ROM: 0x4844F0
+	.4byte 0x0000003F
+
 .global lbl_805D4974
 lbl_805D4974:
-	.incbin "baserom.dol", 0x4844F4, 0x4
+	# ROM: 0x4844F4
+	.4byte 0x3F800000
+
 .global lbl_805D4978
 lbl_805D4978:
-	.incbin "baserom.dol", 0x4844F8, 0x8
+	# ROM: 0x4844F8
+	.4byte 0x3C23D70A
+	.4byte 0x00000000
+
 .global lbl_805D4980
 lbl_805D4980:
-	.incbin "baserom.dol", 0x484500, 0x8
+	# ROM: 0x484500
+	.asciz "warning"
+
 .global lbl_805D4988
 lbl_805D4988:
-	.incbin "baserom.dol", 0x484508, 0x3
+	# ROM: 0x484508
+	.byte 0x6F, 0x6B, 0x00
+
 .global "m_bGridModeHasChanged__Q216InteractorModule13BluePrintGrid"
 "m_bGridModeHasChanged__Q216InteractorModule13BluePrintGrid":
-	.incbin "baserom.dol", 0x48450B, 0x5
+	# ROM: 0x48450B
+	.byte 0x01
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "c_SelectionConeAngle__16InteractorModule"
@@ -61996,172 +63276,291 @@ lbl_805D7A4C:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805D9648
 lbl_805D9648:
-	.incbin "baserom.dol", 0x487968, 0x4
+	# ROM: 0x487968
+	.4byte 0x3F800000
+
 .global lbl_805D964C
 lbl_805D964C:
-	.incbin "baserom.dol", 0x48796C, 0x4
+	# ROM: 0x48796C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805D9650
 lbl_805D9650:
-	.incbin "baserom.dol", 0x487970, 0x4
+	# ROM: 0x487970
+	.4byte 0x3F75DCC7
+
 .global lbl_805D9654
 lbl_805D9654:
-	.incbin "baserom.dol", 0x487974, 0x4
+	# ROM: 0x487974
+	.4byte 0x3D800000
+
 .global lbl_805D9658
 lbl_805D9658:
-	.incbin "baserom.dol", 0x487978, 0x8
+	# ROM: 0x487978
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805D9660
 lbl_805D9660:
-	.incbin "baserom.dol", 0x487980, 0x4
+	# ROM: 0x487980
+	.4byte 0xC61C4000
+
 .global lbl_805D9664
 lbl_805D9664:
-	.incbin "baserom.dol", 0x487984, 0x4
+	# ROM: 0x487984
+	.4byte 0x40C90FDB
+
 .global lbl_805D9668
 lbl_805D9668:
-	.incbin "baserom.dol", 0x487988, 0x4
+	# ROM: 0x487988
+	.4byte 0x40490FDB
+
 .global lbl_805D966C
 lbl_805D966C:
-	.incbin "baserom.dol", 0x48798C, 0x4
+	# ROM: 0x48798C
+	.4byte 0xC0490FDB
+
 .global lbl_805D9670
 lbl_805D9670:
-	.incbin "baserom.dol", 0x487990, 0x4
+	# ROM: 0x487990
+	.4byte 0x3EC90FDB
+
 .global lbl_805D9674
 lbl_805D9674:
-	.incbin "baserom.dol", 0x487994, 0x4
+	# ROM: 0x487994
+	.4byte 0x40000000
+
 .global lbl_805D9678
 lbl_805D9678:
-	.incbin "baserom.dol", 0x487998, 0x4
+	# ROM: 0x487998
+	.4byte 0x3F000000
+
 .global lbl_805D967C
 lbl_805D967C:
-	.incbin "baserom.dol", 0x48799C, 0x4
+	# ROM: 0x48799C
+	.4byte 0x3FC90FDB
+
 .global lbl_805D9680
 lbl_805D9680:
-	.incbin "baserom.dol", 0x4879A0, 0x4
+	# ROM: 0x4879A0
+	.4byte 0x47C35000
+
 .global lbl_805D9684
 lbl_805D9684:
-	.incbin "baserom.dol", 0x4879A4, 0x4
+	# ROM: 0x4879A4
+	.4byte 0x40A00000
+
 .global lbl_805D9688
 lbl_805D9688:
-	.incbin "baserom.dol", 0x4879A8, 0x4
+	# ROM: 0x4879A8
+	.4byte 0x3FC00000
+
 .global lbl_805D968C
 lbl_805D968C:
-	.incbin "baserom.dol", 0x4879AC, 0x4
+	# ROM: 0x4879AC
+	.4byte 0x3DCCCCCD
+
 .global lbl_805D9690
 lbl_805D9690:
-	.incbin "baserom.dol", 0x4879B0, 0x4
+	# ROM: 0x4879B0
+	.4byte 0x41A00000
+
 .global lbl_805D9694
 lbl_805D9694:
-	.incbin "baserom.dol", 0x4879B4, 0x4
+	# ROM: 0x4879B4
+	.4byte 0xC1A00000
+
 .global lbl_805D9698
 lbl_805D9698:
-	.incbin "baserom.dol", 0x4879B8, 0x4
+	# ROM: 0x4879B8
+	.4byte 0x43C80000
+
 .global lbl_805D969C
 lbl_805D969C:
-	.incbin "baserom.dol", 0x4879BC, 0x4
+	# ROM: 0x4879BC
+	.4byte 0x44480000
+
 .global lbl_805D96A0
 lbl_805D96A0:
-	.incbin "baserom.dol", 0x4879C0, 0x8
+	# ROM: 0x4879C0
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805D96A8
 lbl_805D96A8:
-	.incbin "baserom.dol", 0x4879C8, 0x4
+	# ROM: 0x4879C8
+	.4byte 0x3D4CCCCD
+
 .global lbl_805D96AC
 lbl_805D96AC:
-	.incbin "baserom.dol", 0x4879CC, 0x4
+	# ROM: 0x4879CC
+	.4byte 0x3EB33333
+
 .global lbl_805D96B0
 lbl_805D96B0:
-	.incbin "baserom.dol", 0x4879D0, 0x4
+	# ROM: 0x4879D0
+	.4byte 0x42B40000
+
 .global lbl_805D96B4
 lbl_805D96B4:
-	.incbin "baserom.dol", 0x4879D4, 0x4
+	# ROM: 0x4879D4
+	.4byte 0x3EC3F141
+
 .global lbl_805D96B8
 lbl_805D96B8:
-	.incbin "baserom.dol", 0x4879D8, 0x4
+	# ROM: 0x4879D8
+	.4byte 0xBEC3F141
+
 .global lbl_805D96BC
 lbl_805D96BC:
-	.incbin "baserom.dol", 0x4879DC, 0x4
+	# ROM: 0x4879DC
+	.4byte 0x3FB5C28F
+
 .global lbl_805D96C0
 lbl_805D96C0:
-	.incbin "baserom.dol", 0x4879E0, 0x4
+	# ROM: 0x4879E0
+	.4byte 0xBE800000
+
 .global lbl_805D96C4
 lbl_805D96C4:
-	.incbin "baserom.dol", 0x4879E4, 0x4
+	# ROM: 0x4879E4
+	.4byte 0xC47A0000
+
 .global lbl_805D96C8
 lbl_805D96C8:
-	.incbin "baserom.dol", 0x4879E8, 0x4
+	# ROM: 0x4879E8
+	.4byte 0x3E000000
+
 .global lbl_805D96CC
 lbl_805D96CC:
-	.incbin "baserom.dol", 0x4879EC, 0x4
+	# ROM: 0x4879EC
+	.4byte 0x4096CBE4
+
 .global lbl_805D96D0
 lbl_805D96D0:
-	.incbin "baserom.dol", 0x4879F0, 0x4
+	# ROM: 0x4879F0
+	.4byte 0x3E4CCCCD
+
 .global lbl_805D96D4
 lbl_805D96D4:
-	.incbin "baserom.dol", 0x4879F4, 0x4
+	# ROM: 0x4879F4
+	.4byte 0x3D0F5C29
+
 .global lbl_805D96D8
 lbl_805D96D8:
-	.incbin "baserom.dol", 0x4879F8, 0x4
+	# ROM: 0x4879F8
+	.4byte 0x3C75C28F
+
 .global lbl_805D96DC
 lbl_805D96DC:
-	.incbin "baserom.dol", 0x4879FC, 0x4
+	# ROM: 0x4879FC
+	.4byte 0x4041999A
+
 .global lbl_805D96E0
 lbl_805D96E0:
-	.incbin "baserom.dol", 0x487A00, 0x4
+	# ROM: 0x487A00
+	.4byte 0xBF800000
+
 .global lbl_805D96E4
 lbl_805D96E4:
-	.incbin "baserom.dol", 0x487A04, 0x4
+	# ROM: 0x487A04
+	.4byte 0x7F7FC99E
+
 .global lbl_805D96E8
 lbl_805D96E8:
-	.incbin "baserom.dol", 0x487A08, 0x4
+	# ROM: 0x487A08
+	.4byte 0x3F666666
+
 .global lbl_805D96EC
 lbl_805D96EC:
-	.incbin "baserom.dol", 0x487A0C, 0x4
+	# ROM: 0x487A0C
+	.4byte 0x3F400000
+
 .global lbl_805D96F0
 lbl_805D96F0:
-	.incbin "baserom.dol", 0x487A10, 0x4
+	# ROM: 0x487A10
+	.4byte 0x3E800000
+
 .global lbl_805D96F4
 lbl_805D96F4:
-	.incbin "baserom.dol", 0x487A14, 0x4
+	# ROM: 0x487A14
+	.4byte 0x41200000
+
 .global lbl_805D96F8
 lbl_805D96F8:
-	.incbin "baserom.dol", 0x487A18, 0x4
+	# ROM: 0x487A18
+	.4byte 0x7F7FFFFF
+
 .global lbl_805D96FC
 lbl_805D96FC:
-	.incbin "baserom.dol", 0x487A1C, 0x4
+	# ROM: 0x487A1C
+	.4byte 0x447A0000
+
 .global lbl_805D9700
 lbl_805D9700:
-	.incbin "baserom.dol", 0x487A20, 0x4
+	# ROM: 0x487A20
+	.4byte 0x44200000
+
 .global lbl_805D9704
 lbl_805D9704:
-	.incbin "baserom.dol", 0x487A24, 0x4
+	# ROM: 0x487A24
+	.4byte 0x43E00000
+
 .global lbl_805D9708
 lbl_805D9708:
-	.incbin "baserom.dol", 0x487A28, 0x4
+	# ROM: 0x487A28
+	.4byte 0x3A83126F
+
 .global lbl_805D970C
 lbl_805D970C:
-	.incbin "baserom.dol", 0x487A2C, 0x4
+	# ROM: 0x487A2C
+	.4byte 0x437F0000
+
 .global lbl_805D9710
 lbl_805D9710:
-	.incbin "baserom.dol", 0x487A30, 0x4
+	# ROM: 0x487A30
+	.4byte 0x3F828F5C
+
 .global lbl_805D9714
 lbl_805D9714:
-	.incbin "baserom.dol", 0x487A34, 0x4
+	# ROM: 0x487A34
+	.4byte 0x40800000
+
 .global lbl_805D9718
 lbl_805D9718:
-	.incbin "baserom.dol", 0x487A38, 0x4
+	# ROM: 0x487A38
+	.4byte 0x40400000
+
 .global lbl_805D971C
 lbl_805D971C:
-	.incbin "baserom.dol", 0x487A3C, 0x4
+	# ROM: 0x487A3C
+	.4byte 0x40600000
+
 .global lbl_805D9720
 lbl_805D9720:
-	.incbin "baserom.dol", 0x487A40, 0x4
+	# ROM: 0x487A40
+	.4byte 0x42200000
+
 .global lbl_805D9724
 lbl_805D9724:
-	.incbin "baserom.dol", 0x487A44, 0x4
+	# ROM: 0x487A44
+	.4byte 0x41C80000
+
 .global lbl_805D9728
 lbl_805D9728:
-	.incbin "baserom.dol", 0x487A48, 0x8
+	# ROM: 0x487A48
+	.4byte 0x3C800000
+	.4byte 0x00000000
+
 .global lbl_805D9730
 lbl_805D9730:
-	.incbin "baserom.dol", 0x487A50, 0x8
+	# ROM: 0x487A50
+	.4byte 0x406FE000
+	.4byte 0x00000000
+
 .global lbl_805D9738
 lbl_805D9738:
-	.incbin "baserom.dol", 0x487A58, 0x8
+	# ROM: 0x487A58
+	.4byte 0x40C00000
+	.4byte 0x00000000
+

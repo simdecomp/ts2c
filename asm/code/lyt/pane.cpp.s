@@ -12,7 +12,7 @@
 /* 803917D0 0038D470  D0 43 00 04 */	stfs f2, 4(r3)
 /* 803917D4 0038D474  D0 23 00 14 */	stfs f1, 0x14(r3)
 /* 803917D8 0038D478  D0 03 00 24 */	stfs f0, 0x24(r3)
-/* 803917DC 0038D47C  4E 80 00 20 */	blr 
+/* 803917DC 0038D47C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3lyt6detail8PaneBaseFv"
 "__ct__Q46nw4hbm3lyt6detail8PaneBaseFv":
@@ -31,7 +31,7 @@
 /* 80391810 0038D4B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80391814 0038D4B4  7C 08 03 A6 */	mtlr r0
 /* 80391818 0038D4B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039181C 0038D4BC  4E 80 00 20 */	blr 
+/* 8039181C 0038D4BC  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3lyt6detail8PaneBaseFv"
 "__dt__Q46nw4hbm3lyt6detail8PaneBaseFv":
@@ -58,7 +58,7 @@ lbl_80391860:
 /* 8039186C 0038D50C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80391870 0038D510  7C 08 03 A6 */	mtlr r0
 /* 80391874 0038D514  38 21 00 10 */	addi r1, r1, 0x10
-/* 80391878 0038D518  4E 80 00 20 */	blr 
+/* 80391878 0038D518  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
 "__dt__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv":
@@ -84,14 +84,14 @@ lbl_803918B8:
 /* 803918C4 0038D564  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803918C8 0038D568  7C 08 03 A6 */	mtlr r0
 /* 803918CC 0038D56C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803918D0 0038D570  4E 80 00 20 */	blr 
+/* 803918D0 0038D570  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3lyt4SizeFv"
 "__ct__Q36nw4hbm3lyt4SizeFv":
 /* 803918D4 0038D574  C0 02 A7 B8 */	lfs f0, lbl_805DB9D8-_SDA2_BASE_(r2)
 /* 803918D8 0038D578  D0 03 00 00 */	stfs f0, 0(r3)
 /* 803918DC 0038D57C  D0 03 00 04 */	stfs f0, 4(r3)
-/* 803918E0 0038D580  4E 80 00 20 */	blr 
+/* 803918E0 0038D580  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
 "__ct__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv":
@@ -106,7 +106,7 @@ lbl_803918B8:
 /* 80391904 0038D5A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80391908 0038D5A8  7C 08 03 A6 */	mtlr r0
 /* 8039190C 0038D5AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80391910 0038D5B0  4E 80 00 20 */	blr 
+/* 80391910 0038D5B0  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm3lyt4PaneFPCQ46nw4hbm3lyt3res4Pane"
 "__ct__Q36nw4hbm3lyt4PaneFPCQ46nw4hbm3lyt3res4Pane":
@@ -170,7 +170,7 @@ lbl_803918B8:
 /* 803919F8 0038D698  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803919FC 0038D69C  7C 08 03 A6 */	mtlr r0
 /* 80391A00 0038D6A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80391A04 0038D6A4  4E 80 00 20 */	blr 
+/* 80391A04 0038D6A4  4E 80 00 20 */	blr
 
 .global "Init__Q36nw4hbm3lyt4PaneFv"
 "Init__Q36nw4hbm3lyt4PaneFv":
@@ -178,7 +178,7 @@ lbl_803918B8:
 /* 80391A0C 0038D6AC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80391A10 0038D6B0  90 03 00 28 */	stw r0, 0x28(r3)
 /* 80391A14 0038D6B4  98 03 00 D0 */	stb r0, 0xd0(r3)
-/* 80391A18 0038D6B8  4E 80 00 20 */	blr 
+/* 80391A18 0038D6B8  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm3lyt4PaneFv"
 "__dt__Q36nw4hbm3lyt4PaneFv":
@@ -225,7 +225,7 @@ lbl_80391A68:
 /* 80391AB8 0038D758  38 80 FF FF */	li r4, -1
 /* 80391ABC 0038D75C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80391AC0 0038D760  7D 89 03 A6 */	mtctr r12
-/* 80391AC4 0038D764  4E 80 04 21 */	bctrl 
+/* 80391AC4 0038D764  4E 80 04 21 */	bctrl
 /* 80391AC8 0038D768  38 61 00 1C */	addi r3, r1, 0x1c
 /* 80391ACC 0038D76C  4B FF 30 75 */	bl "__ml__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorCFv"
 /* 80391AD0 0038D770  4B FF 75 BD */	bl "FreeMemory__Q36nw4hbm3lyt6LayoutFPv"
@@ -245,7 +245,7 @@ lbl_80391AD4:
 /* 80391B04 0038D7A4  38 80 00 00 */	li r4, 0
 /* 80391B08 0038D7A8  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80391B0C 0038D7AC  7D 89 03 A6 */	mtctr r12
-/* 80391B10 0038D7B0  4E 80 04 21 */	bctrl 
+/* 80391B10 0038D7B0  4E 80 04 21 */	bctrl
 /* 80391B14 0038D7B4  80 7E 00 28 */	lwz r3, 0x28(r30)
 /* 80391B18 0038D7B8  2C 03 00 00 */	cmpwi r3, 0
 /* 80391B1C 0038D7BC  41 82 00 30 */	beq lbl_80391B4C
@@ -257,7 +257,7 @@ lbl_80391AD4:
 /* 80391B34 0038D7D4  81 83 00 00 */	lwz r12, 0(r3)
 /* 80391B38 0038D7D8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80391B3C 0038D7DC  7D 89 03 A6 */	mtctr r12
-/* 80391B40 0038D7E0  4E 80 04 21 */	bctrl 
+/* 80391B40 0038D7E0  4E 80 04 21 */	bctrl
 /* 80391B44 0038D7E4  80 7E 00 28 */	lwz r3, 0x28(r30)
 /* 80391B48 0038D7E8  4B FF 75 45 */	bl "FreeMemory__Q36nw4hbm3lyt6LayoutFPv"
 lbl_80391B4C:
@@ -281,12 +281,12 @@ lbl_80391B80:
 /* 80391B8C 0038D82C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80391B90 0038D830  7C 08 03 A6 */	mtlr r0
 /* 80391B94 0038D834  38 21 00 30 */	addi r1, r1, 0x30
-/* 80391B98 0038D838  4E 80 00 20 */	blr 
+/* 80391B98 0038D838  4E 80 00 20 */	blr
 
 .global "IsUserAllocated__Q36nw4hbm3lyt8MaterialCFv"
 "IsUserAllocated__Q36nw4hbm3lyt8MaterialCFv":
 /* 80391B9C 0038D83C  88 63 00 54 */	lbz r3, 0x54(r3)
-/* 80391BA0 0038D840  4E 80 00 20 */	blr 
+/* 80391BA0 0038D840  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator"
 "Erase__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8Iterator":
@@ -305,7 +305,7 @@ lbl_80391B80:
 /* 80391BD4 0038D874  80 63 00 00 */	lwz r3, 0(r3)
 /* 80391BD8 0038D878  7C 08 03 A6 */	mtlr r0
 /* 80391BDC 0038D87C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391BE0 0038D880  4E 80 00 20 */	blr 
+/* 80391BE0 0038D880  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFi"
 "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFi":
@@ -324,7 +324,7 @@ lbl_80391B80:
 /* 80391C14 0038D8B4  80 61 00 08 */	lwz r3, 8(r1)
 /* 80391C18 0038D8B8  7C 08 03 A6 */	mtlr r0
 /* 80391C1C 0038D8BC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391C20 0038D8C0  4E 80 00 20 */	blr 
+/* 80391C20 0038D8C0  4E 80 00 20 */	blr
 
 .global "SetName__Q36nw4hbm3lyt4PaneFPCc"
 "SetName__Q36nw4hbm3lyt4PaneFPCc":
@@ -359,7 +359,7 @@ lbl_80391B80:
 /* 80391C7C 0038D91C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80391C80 0038D920  7C 08 03 A6 */	mtlr r0
 /* 80391C84 0038D924  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391C88 0038D928  4E 80 00 20 */	blr 
+/* 80391C88 0038D928  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FPQ36nw4hbm3lyt4Pane"
 "GetNodeFromPointer__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FPQ36nw4hbm3lyt4Pane":
@@ -383,7 +383,7 @@ lbl_80391CC4:
 /* 80391CCC 0038D96C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80391CD0 0038D970  7C 08 03 A6 */	mtlr r0
 /* 80391CD4 0038D974  38 21 00 10 */	addi r1, r1, 0x10
-/* 80391CD8 0038D978  4E 80 00 20 */	blr 
+/* 80391CD8 0038D978  4E 80 00 20 */	blr
 
 .global "InsertChild__Q36nw4hbm3lyt4PaneFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorPQ36nw4hbm3lyt4Pane"
 "InsertChild__Q36nw4hbm3lyt4PaneFQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorPQ36nw4hbm3lyt4Pane":
@@ -430,7 +430,7 @@ lbl_80391D48:
 /* 80391D74 0038DA14  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80391D78 0038DA18  7C 08 03 A6 */	mtlr r0
 /* 80391D7C 0038DA1C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391D80 0038DA20  4E 80 00 20 */	blr 
+/* 80391D80 0038DA20  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorPQ36nw4hbm3lyt4Pane"
 "Insert__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>FQ46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorPQ36nw4hbm3lyt4Pane":
@@ -456,7 +456,7 @@ lbl_80391D48:
 /* 80391DD0 0038DA70  80 63 00 00 */	lwz r3, 0(r3)
 /* 80391DD4 0038DA74  7C 08 03 A6 */	mtlr r0
 /* 80391DD8 0038DA78  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391DDC 0038DA7C  4E 80 00 20 */	blr 
+/* 80391DDC 0038DA7C  4E 80 00 20 */	blr
 
 .global "GetPaneRect__Q36nw4hbm3lyt4PaneCFRCQ36nw4hbm3lyt8DrawInfo"
 "GetPaneRect__Q36nw4hbm3lyt4PaneCFRCQ36nw4hbm3lyt8DrawInfo":
@@ -504,7 +504,7 @@ lbl_80391E74:
 /* 80391E80 0038DB20  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80391E84 0038DB24  7C 08 03 A6 */	mtlr r0
 /* 80391E88 0038DB28  38 21 00 30 */	addi r1, r1, 0x30
-/* 80391E8C 0038DB2C  4E 80 00 20 */	blr 
+/* 80391E8C 0038DB2C  4E 80 00 20 */	blr
 
 .global "IsYAxisUp__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsYAxisUp__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -515,7 +515,7 @@ lbl_80391E74:
 /* 80391EA0 0038DB40  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80391EA4 0038DB44  7C 60 00 26 */	mfcr r3
 /* 80391EA8 0038DB48  54 63 0F FE */	srwi r3, r3, 0x1f
-/* 80391EAC 0038DB4C  4E 80 00 20 */	blr 
+/* 80391EAC 0038DB4C  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2"
 "__ct__Q36nw4hbm4math4VEC2FRCQ36nw4hbm4math4VEC2":
@@ -523,7 +523,7 @@ lbl_80391E74:
 /* 80391EB4 0038DB54  80 04 00 04 */	lwz r0, 4(r4)
 /* 80391EB8 0038DB58  90 A3 00 00 */	stw r5, 0(r3)
 /* 80391EBC 0038DB5C  90 03 00 04 */	stw r0, 4(r3)
-/* 80391EC0 0038DB60  4E 80 00 20 */	blr 
+/* 80391EC0 0038DB60  4E 80 00 20 */	blr
 
 .global "GetVtxColor__Q36nw4hbm3lyt4PaneCFUl"
 "GetVtxColor__Q36nw4hbm3lyt4PaneCFUl":
@@ -532,7 +532,7 @@ lbl_80391E74:
 
 .global "SetVtxColor__Q36nw4hbm3lyt4PaneFUlQ36nw4hbm2ut5Color"
 "SetVtxColor__Q36nw4hbm3lyt4PaneFUlQ36nw4hbm2ut5Color":
-/* 80391ECC 0038DB6C  4E 80 00 20 */	blr 
+/* 80391ECC 0038DB6C  4E 80 00 20 */	blr
 
 .global "GetColorElement__Q36nw4hbm3lyt4PaneCFUl"
 "GetColorElement__Q36nw4hbm3lyt4PaneCFUl":
@@ -565,14 +565,14 @@ lbl_80391F24:
 /* 80391F2C 0038DBCC  7F E4 FB 78 */	mr r4, r31
 /* 80391F30 0038DBD0  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 80391F34 0038DBD4  7D 89 03 A6 */	mtctr r12
-/* 80391F38 0038DBD8  4E 80 04 21 */	bctrl 
+/* 80391F38 0038DBD8  4E 80 04 21 */	bctrl
 lbl_80391F3C:
 /* 80391F3C 0038DBDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80391F40 0038DBE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80391F44 0038DBE4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80391F48 0038DBE8  7C 08 03 A6 */	mtlr r0
 /* 80391F4C 0038DBEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80391F50 0038DBF0  4E 80 00 20 */	blr 
+/* 80391F50 0038DBF0  4E 80 00 20 */	blr
 
 .global "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc"
 "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc":
@@ -608,7 +608,7 @@ lbl_80391FB0:
 /* 80391FBC 0038DC5C  7F E5 FB 78 */	mr r5, r31
 /* 80391FC0 0038DC60  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 80391FC4 0038DC64  7D 89 03 A6 */	mtctr r12
-/* 80391FC8 0038DC68  4E 80 04 21 */	bctrl 
+/* 80391FC8 0038DC68  4E 80 04 21 */	bctrl
 lbl_80391FCC:
 /* 80391FCC 0038DC6C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80391FD0 0038DC70  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -616,16 +616,16 @@ lbl_80391FCC:
 /* 80391FD8 0038DC78  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80391FDC 0038DC7C  7C 08 03 A6 */	mtlr r0
 /* 80391FE0 0038DC80  38 21 00 20 */	addi r1, r1, 0x20
-/* 80391FE4 0038DC84  4E 80 00 20 */	blr 
+/* 80391FE4 0038DC84  4E 80 00 20 */	blr
 
 .global "GetVtxColorElement__Q36nw4hbm3lyt4PaneCFUl"
 "GetVtxColorElement__Q36nw4hbm3lyt4PaneCFUl":
 /* 80391FE8 0038DC88  38 60 00 FF */	li r3, 0xff
-/* 80391FEC 0038DC8C  4E 80 00 20 */	blr 
+/* 80391FEC 0038DC8C  4E 80 00 20 */	blr
 
 .global "SetVtxColorElement__Q36nw4hbm3lyt4PaneFUlUc"
 "SetVtxColorElement__Q36nw4hbm3lyt4PaneFUlUc":
-/* 80391FF0 0038DC90  4E 80 00 20 */	blr 
+/* 80391FF0 0038DC90  4E 80 00 20 */	blr
 
 .global "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb"
 "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb":
@@ -662,7 +662,7 @@ lbl_80392054:
 /* 80392064 0038DD04  38 A0 00 01 */	li r5, 1
 /* 80392068 0038DD08  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 8039206C 0038DD0C  7D 89 03 A6 */	mtctr r12
-/* 80392070 0038DD10  4E 80 04 21 */	bctrl 
+/* 80392070 0038DD10  4E 80 04 21 */	bctrl
 /* 80392074 0038DD14  2C 03 00 00 */	cmpwi r3, 0
 /* 80392078 0038DD18  41 82 00 08 */	beq lbl_80392080
 /* 8039207C 0038DD1C  48 00 00 38 */	b lbl_803920B4
@@ -689,7 +689,7 @@ lbl_803920B4:
 /* 803920C0 0038DD60  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803920C4 0038DD64  7C 08 03 A6 */	mtlr r0
 /* 803920C8 0038DD68  38 21 00 30 */	addi r1, r1, 0x30
-/* 803920CC 0038DD6C  4E 80 00 20 */	blr 
+/* 803920CC 0038DD6C  4E 80 00 20 */	blr
 
 .global "FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb"
 "FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb":
@@ -731,7 +731,7 @@ lbl_80392144:
 /* 80392154 0038DDF4  38 A0 00 01 */	li r5, 1
 /* 80392158 0038DDF8  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 8039215C 0038DDFC  7D 89 03 A6 */	mtctr r12
-/* 80392160 0038DE00  4E 80 04 21 */	bctrl 
+/* 80392160 0038DE00  4E 80 04 21 */	bctrl
 /* 80392164 0038DE04  2C 03 00 00 */	cmpwi r3, 0
 /* 80392168 0038DE08  41 82 00 08 */	beq lbl_80392170
 /* 8039216C 0038DE0C  48 00 00 38 */	b lbl_803921A4
@@ -758,7 +758,7 @@ lbl_803921A4:
 /* 803921B0 0038DE50  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 803921B4 0038DE54  7C 08 03 A6 */	mtlr r0
 /* 803921B8 0038DE58  38 21 00 30 */	addi r1, r1, 0x30
-/* 803921BC 0038DE5C  4E 80 00 20 */	blr 
+/* 803921BC 0038DE5C  4E 80 00 20 */	blr
 
 .global "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo"
 "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo":
@@ -991,24 +991,24 @@ lbl_80392508:
 /* 80392520 0038E1C0  83 81 00 B0 */	lwz r28, 0xb0(r1)
 /* 80392524 0038E1C4  7C 08 03 A6 */	mtlr r0
 /* 80392528 0038E1C8  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 8039252C 0038E1CC  4E 80 00 20 */	blr 
+/* 8039252C 0038E1CC  4E 80 00 20 */	blr
 
 .global "SetInfluencedAlpha__Q36nw4hbm3lyt8DrawInfoFb"
 "SetInfluencedAlpha__Q36nw4hbm3lyt8DrawInfoFb":
 /* 80392530 0038E1D0  88 03 00 50 */	lbz r0, 0x50(r3)
 /* 80392534 0038E1D4  50 80 36 72 */	rlwimi r0, r4, 6, 0x19, 0x19
 /* 80392538 0038E1D8  98 03 00 50 */	stb r0, 0x50(r3)
-/* 8039253C 0038E1DC  4E 80 00 20 */	blr 
+/* 8039253C 0038E1DC  4E 80 00 20 */	blr
 
 .global "SetGlobalAlpha__Q36nw4hbm3lyt8DrawInfoFf"
 "SetGlobalAlpha__Q36nw4hbm3lyt8DrawInfoFf":
 /* 80392540 0038E1E0  D0 23 00 4C */	stfs f1, 0x4c(r3)
-/* 80392544 0038E1E4  4E 80 00 20 */	blr 
+/* 80392544 0038E1E4  4E 80 00 20 */	blr
 
 .global "GetGlobalAlpha__Q36nw4hbm3lyt8DrawInfoCFv"
 "GetGlobalAlpha__Q36nw4hbm3lyt8DrawInfoCFv":
 /* 80392548 0038E1E8  C0 23 00 4C */	lfs f1, 0x4c(r3)
-/* 8039254C 0038E1EC  4E 80 00 20 */	blr 
+/* 8039254C 0038E1EC  4E 80 00 20 */	blr
 
 .global "IsInfluencedAlpha__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsInfluencedAlpha__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -1017,12 +1017,12 @@ lbl_80392508:
 /* 80392558 0038E1F8  7C 03 00 D0 */	neg r0, r3
 /* 8039255C 0038E1FC  7C 00 1B 78 */	or r0, r0, r3
 /* 80392560 0038E200  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80392564 0038E204  4E 80 00 20 */	blr 
+/* 80392564 0038E204  4E 80 00 20 */	blr
 
 .global "GetViewMtx__Q36nw4hbm3lyt8DrawInfoCFv"
 "GetViewMtx__Q36nw4hbm3lyt8DrawInfoCFv":
 /* 80392568 0038E208  38 63 00 04 */	addi r3, r3, 4
-/* 8039256C 0038E20C  4E 80 00 20 */	blr 
+/* 8039256C 0038E20C  4E 80 00 20 */	blr
 
 .global "IsMultipleViewMtxOnDraw__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsMultipleViewMtxOnDraw__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -1031,7 +1031,7 @@ lbl_80392508:
 /* 80392578 0038E218  7C 03 00 D0 */	neg r0, r3
 /* 8039257C 0038E21C  7C 00 1B 78 */	or r0, r0, r3
 /* 80392580 0038E220  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80392584 0038E224  4E 80 00 20 */	blr 
+/* 80392584 0038E224  4E 80 00 20 */	blr
 
 .global "MTX34Mult__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34"
 "MTX34Mult__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34":
@@ -1063,12 +1063,12 @@ lbl_80392508:
 /* 803925EC 0038E28C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803925F0 0038E290  7C 08 03 A6 */	mtlr r0
 /* 803925F4 0038E294  38 21 00 20 */	addi r1, r1, 0x20
-/* 803925F8 0038E298  4E 80 00 20 */	blr 
+/* 803925F8 0038E298  4E 80 00 20 */	blr
 
 .global "GetLocationAdjustScale__Q36nw4hbm3lyt8DrawInfoCFv"
 "GetLocationAdjustScale__Q36nw4hbm3lyt8DrawInfoCFv":
 /* 803925FC 0038E29C  38 63 00 44 */	addi r3, r3, 0x44
-/* 80392600 0038E2A0  4E 80 00 20 */	blr 
+/* 80392600 0038E2A0  4E 80 00 20 */	blr
 
 .global "IsLocationAdjust__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsLocationAdjust__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -1077,7 +1077,7 @@ lbl_80392508:
 /* 8039260C 0038E2AC  7C 03 00 D0 */	neg r0, r3
 /* 80392610 0038E2B0  7C 00 1B 78 */	or r0, r0, r3
 /* 80392614 0038E2B4  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80392618 0038E2B8  4E 80 00 20 */	blr 
+/* 80392618 0038E2B8  4E 80 00 20 */	blr
 
 .global "IsInvisiblePaneCalculateMtx__Q36nw4hbm3lyt8DrawInfoCFv"
 "IsInvisiblePaneCalculateMtx__Q36nw4hbm3lyt8DrawInfoCFv":
@@ -1086,7 +1086,7 @@ lbl_80392508:
 /* 80392624 0038E2C4  7C 03 00 D0 */	neg r0, r3
 /* 80392628 0038E2C8  7C 00 1B 78 */	or r0, r0, r3
 /* 8039262C 0038E2CC  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 80392630 0038E2D0  4E 80 00 20 */	blr 
+/* 80392630 0038E2D0  4E 80 00 20 */	blr
 
 .global "CalculateMtxChild__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo"
 "CalculateMtxChild__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo":
@@ -1111,7 +1111,7 @@ lbl_8039266C:
 /* 80392678 0038E318  7F E4 FB 78 */	mr r4, r31
 /* 8039267C 0038E31C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80392680 0038E320  7D 89 03 A6 */	mtctr r12
-/* 80392684 0038E324  4E 80 04 21 */	bctrl 
+/* 80392684 0038E324  4E 80 04 21 */	bctrl
 /* 80392688 0038E328  38 61 00 14 */	addi r3, r1, 0x14
 /* 8039268C 0038E32C  4B FE AE 39 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
 lbl_80392690:
@@ -1130,7 +1130,7 @@ lbl_80392690:
 /* 803926C0 0038E360  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803926C4 0038E364  7C 08 03 A6 */	mtlr r0
 /* 803926C8 0038E368  38 21 00 20 */	addi r1, r1, 0x20
-/* 803926CC 0038E36C  4E 80 00 20 */	blr 
+/* 803926CC 0038E36C  4E 80 00 20 */	blr
 
 .global "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo"
 "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo":
@@ -1151,7 +1151,7 @@ lbl_80392690:
 /* 80392708 0038E3A8  7F E4 FB 78 */	mr r4, r31
 /* 8039270C 0038E3AC  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80392710 0038E3B0  7D 89 03 A6 */	mtctr r12
-/* 80392714 0038E3B4  4E 80 04 21 */	bctrl 
+/* 80392714 0038E3B4  4E 80 04 21 */	bctrl
 /* 80392718 0038E3B8  38 7E 00 10 */	addi r3, r30, 0x10
 /* 8039271C 0038E3BC  4B FE AE 99 */	bl "GetBeginIter__Q36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>Fv"
 /* 80392720 0038E3C0  90 61 00 10 */	stw r3, 0x10(r1)
@@ -1166,7 +1166,7 @@ lbl_80392734:
 /* 80392740 0038E3E0  7F E4 FB 78 */	mr r4, r31
 /* 80392744 0038E3E4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80392748 0038E3E8  7D 89 03 A6 */	mtctr r12
-/* 8039274C 0038E3EC  4E 80 04 21 */	bctrl 
+/* 8039274C 0038E3EC  4E 80 04 21 */	bctrl
 /* 80392750 0038E3F0  38 61 00 14 */	addi r3, r1, 0x14
 /* 80392754 0038E3F4  4B FE AD 71 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
 lbl_80392758:
@@ -1186,7 +1186,7 @@ lbl_80392780:
 /* 80392788 0038E428  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039278C 0038E42C  7C 08 03 A6 */	mtlr r0
 /* 80392790 0038E430  38 21 00 20 */	addi r1, r1, 0x20
-/* 80392794 0038E434  4E 80 00 20 */	blr 
+/* 80392794 0038E434  4E 80 00 20 */	blr
 
 .global "DrawSelf__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo"
 "DrawSelf__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo":
@@ -1209,7 +1209,7 @@ lbl_80392780:
 /* 803927D8 0038E478  7F E4 FB 78 */	mr r4, r31
 /* 803927DC 0038E47C  81 8C 00 60 */	lwz r12, 0x60(r12)
 /* 803927E0 0038E480  7D 89 03 A6 */	mtctr r12
-/* 803927E4 0038E484  4E 80 04 21 */	bctrl 
+/* 803927E4 0038E484  4E 80 04 21 */	bctrl
 /* 803927E8 0038E488  3C 80 00 FF */	lis r4, 0x00FF00FF@ha
 /* 803927EC 0038E48C  38 61 00 08 */	addi r3, r1, 8
 /* 803927F0 0038E490  38 84 00 FF */	addi r4, r4, 0x00FF00FF@l
@@ -1231,7 +1231,7 @@ lbl_80392824:
 /* 8039282C 0038E4CC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80392830 0038E4D0  7C 08 03 A6 */	mtlr r0
 /* 80392834 0038E4D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80392838 0038E4D8  4E 80 00 20 */	blr 
+/* 80392838 0038E4D8  4E 80 00 20 */	blr
 
 .global "Animate__Q36nw4hbm3lyt4PaneFUl"
 "Animate__Q36nw4hbm3lyt4PaneFUl":
@@ -1245,7 +1245,7 @@ lbl_80392824:
 /* 80392858 0038E4F8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8039285C 0038E4FC  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 80392860 0038E500  7D 89 03 A6 */	mtctr r12
-/* 80392864 0038E504  4E 80 04 21 */	bctrl 
+/* 80392864 0038E504  4E 80 04 21 */	bctrl
 /* 80392868 0038E508  88 7E 00 CF */	lbz r3, 0xcf(r30)
 /* 8039286C 0038E50C  38 80 00 00 */	li r4, 0
 /* 80392870 0038E510  4B FF 29 45 */	bl "TestBit<Uc>__Q36nw4hbm3lyt6detailFUci_b"
@@ -1268,7 +1268,7 @@ lbl_803928A0:
 /* 803928AC 0038E54C  7F E4 FB 78 */	mr r4, r31
 /* 803928B0 0038E550  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 803928B4 0038E554  7D 89 03 A6 */	mtctr r12
-/* 803928B8 0038E558  4E 80 04 21 */	bctrl 
+/* 803928B8 0038E558  4E 80 04 21 */	bctrl
 /* 803928BC 0038E55C  38 61 00 14 */	addi r3, r1, 0x14
 /* 803928C0 0038E560  4B FE AC 05 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
 lbl_803928C4:
@@ -1288,7 +1288,7 @@ lbl_803928EC:
 /* 803928F4 0038E594  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 803928F8 0038E598  7C 08 03 A6 */	mtlr r0
 /* 803928FC 0038E59C  38 21 00 20 */	addi r1, r1, 0x20
-/* 80392900 0038E5A0  4E 80 00 20 */	blr 
+/* 80392900 0038E5A0  4E 80 00 20 */	blr
 
 .global "AnimateSelf__Q36nw4hbm3lyt4PaneFUl"
 "AnimateSelf__Q36nw4hbm3lyt4PaneFUl":
@@ -1326,7 +1326,7 @@ lbl_80392940:
 /* 8039297C 0038E61C  7F A5 EB 78 */	mr r5, r29
 /* 80392980 0038E620  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 80392984 0038E624  7D 89 03 A6 */	mtctr r12
-/* 80392988 0038E628  4E 80 04 21 */	bctrl 
+/* 80392988 0038E628  4E 80 04 21 */	bctrl
 lbl_8039298C:
 /* 8039298C 0038E62C  38 61 00 14 */	addi r3, r1, 0x14
 /* 80392990 0038E630  4B FF 6F 1D */	bl "__pp__Q46nw4hbm2ut40LinkList<Q36nw4hbm3lyt13AnimationLink,0>8IteratorFv"
@@ -1355,7 +1355,7 @@ lbl_803929D8:
 /* 803929E4 0038E684  81 83 00 00 */	lwz r12, 0(r3)
 /* 803929E8 0038E688  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 803929EC 0038E68C  7D 89 03 A6 */	mtctr r12
-/* 803929F0 0038E690  4E 80 04 21 */	bctrl 
+/* 803929F0 0038E690  4E 80 04 21 */	bctrl
 lbl_803929F4:
 /* 803929F4 0038E694  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803929F8 0038E698  83 E1 00 2C */	lwz r31, 0x2c(r1)
@@ -1363,7 +1363,7 @@ lbl_803929F4:
 /* 80392A00 0038E6A0  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80392A04 0038E6A4  7C 08 03 A6 */	mtlr r0
 /* 80392A08 0038E6A8  38 21 00 30 */	addi r1, r1, 0x30
-/* 80392A0C 0038E6AC  4E 80 00 20 */	blr 
+/* 80392A0C 0038E6AC  4E 80 00 20 */	blr
 
 .global "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb"
 "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb":
@@ -1392,14 +1392,14 @@ lbl_80392A58:
 /* 80392A64 0038E704  7F E5 FB 78 */	mr r5, r31
 /* 80392A68 0038E708  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 80392A6C 0038E70C  7D 89 03 A6 */	mtctr r12
-/* 80392A70 0038E710  4E 80 04 21 */	bctrl 
+/* 80392A70 0038E710  4E 80 04 21 */	bctrl
 /* 80392A74 0038E714  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80392A78 0038E718  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80392A7C 0038E71C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80392A80 0038E720  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80392A84 0038E724  7C 08 03 A6 */	mtlr r0
 /* 80392A88 0038E728  38 21 00 20 */	addi r1, r1, 0x20
-/* 80392A8C 0038E72C  4E 80 00 20 */	blr 
+/* 80392A8C 0038E72C  4E 80 00 20 */	blr
 
 .global "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb"
 "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb":
@@ -1415,7 +1415,7 @@ lbl_80392A58:
 /* 80392AB4 0038E754  81 83 00 00 */	lwz r12, 0(r3)
 /* 80392AB8 0038E758  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 80392ABC 0038E75C  7D 89 03 A6 */	mtctr r12
-/* 80392AC0 0038E760  4E 80 04 21 */	bctrl 
+/* 80392AC0 0038E760  4E 80 04 21 */	bctrl
 /* 80392AC4 0038E764  2C 1F 00 00 */	cmpwi r31, 0
 /* 80392AC8 0038E768  41 82 00 70 */	beq lbl_80392B38
 /* 80392ACC 0038E76C  38 7D 00 10 */	addi r3, r29, 0x10
@@ -1433,7 +1433,7 @@ lbl_80392AE8:
 /* 80392AF8 0038E798  7F E5 FB 78 */	mr r5, r31
 /* 80392AFC 0038E79C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 80392B00 0038E7A0  7D 89 03 A6 */	mtctr r12
-/* 80392B04 0038E7A4  4E 80 04 21 */	bctrl 
+/* 80392B04 0038E7A4  4E 80 04 21 */	bctrl
 /* 80392B08 0038E7A8  38 61 00 14 */	addi r3, r1, 0x14
 /* 80392B0C 0038E7AC  4B FE A9 B9 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
 lbl_80392B10:
@@ -1454,7 +1454,7 @@ lbl_80392B38:
 /* 80392B44 0038E7E4  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80392B48 0038E7E8  7C 08 03 A6 */	mtlr r0
 /* 80392B4C 0038E7EC  38 21 00 30 */	addi r1, r1, 0x30
-/* 80392B50 0038E7F0  4E 80 00 20 */	blr 
+/* 80392B50 0038E7F0  4E 80 00 20 */	blr
 
 .global "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb"
 "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb":
@@ -1463,7 +1463,7 @@ lbl_80392B38:
 /* 80392B5C 0038E7FC  38 80 00 00 */	li r4, 0
 /* 80392B60 0038E800  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 80392B64 0038E804  7D 89 03 A6 */	mtctr r12
-/* 80392B68 0038E808  4E 80 04 20 */	bctr 
+/* 80392B68 0038E808  4E 80 04 20 */	bctr
 
 .global "UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform"
 "UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform":
@@ -1481,7 +1481,7 @@ lbl_80392B38:
 /* 80392B98 0038E838  81 83 00 00 */	lwz r12, 0(r3)
 /* 80392B9C 0038E83C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 80392BA0 0038E840  7D 89 03 A6 */	mtctr r12
-/* 80392BA4 0038E844  4E 80 04 21 */	bctrl 
+/* 80392BA4 0038E844  4E 80 04 21 */	bctrl
 lbl_80392BA8:
 /* 80392BA8 0038E848  38 7E 00 1C */	addi r3, r30, 0x1c
 /* 80392BAC 0038E84C  4B FF 6E 31 */	bl "GetBeginIter__Q36nw4hbm2ut40LinkList<Q36nw4hbm3lyt13AnimationLink,0>Fv"
@@ -1530,7 +1530,7 @@ lbl_80392C1C:
 /* 80392C4C 0038E8EC  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 80392C50 0038E8F0  7C 08 03 A6 */	mtlr r0
 /* 80392C54 0038E8F4  38 21 00 30 */	addi r1, r1, 0x30
-/* 80392C58 0038E8F8  4E 80 00 20 */	blr 
+/* 80392C58 0038E8F8  4E 80 00 20 */	blr
 
 .global "AddAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimationLink"
 "AddAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimationLink":
@@ -1559,7 +1559,7 @@ lbl_80392C9C:
 /* 80392CB0 0038E950  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80392CB4 0038E954  7C 08 03 A6 */	mtlr r0
 /* 80392CB8 0038E958  38 21 00 10 */	addi r1, r1, 0x10
-/* 80392CBC 0038E95C  4E 80 00 20 */	blr 
+/* 80392CBC 0038E95C  4E 80 00 20 */	blr
 
 .global "FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform"
 "FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform":
@@ -1583,7 +1583,7 @@ lbl_80392CF0:
 /* 80392D00 0038E9A0  7F E4 FB 78 */	mr r4, r31
 /* 80392D04 0038E9A4  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 80392D08 0038E9A8  7D 89 03 A6 */	mtctr r12
-/* 80392D0C 0038E9AC  4E 80 04 21 */	bctrl 
+/* 80392D0C 0038E9AC  4E 80 04 21 */	bctrl
 /* 80392D10 0038E9B0  2C 03 00 00 */	cmpwi r3, 0
 /* 80392D14 0038E9B4  41 82 00 08 */	beq lbl_80392D1C
 /* 80392D18 0038E9B8  48 00 00 08 */	b lbl_80392D20
@@ -1595,7 +1595,7 @@ lbl_80392D20:
 /* 80392D28 0038E9C8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80392D2C 0038E9CC  7C 08 03 A6 */	mtlr r0
 /* 80392D30 0038E9D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80392D34 0038E9D4  4E 80 00 20 */	blr 
+/* 80392D34 0038E9D4  4E 80 00 20 */	blr
 
 .global "SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb"
 "SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb":
@@ -1625,7 +1625,7 @@ lbl_80392D7C:
 /* 80392D90 0038EA30  7F C5 F3 78 */	mr r5, r30
 /* 80392D94 0038EA34  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 80392D98 0038EA38  7D 89 03 A6 */	mtctr r12
-/* 80392D9C 0038EA3C  4E 80 04 21 */	bctrl 
+/* 80392D9C 0038EA3C  4E 80 04 21 */	bctrl
 lbl_80392DA0:
 /* 80392DA0 0038EA40  2C 1F 00 00 */	cmpwi r31, 0
 /* 80392DA4 0038EA44  41 82 00 74 */	beq lbl_80392E18
@@ -1645,7 +1645,7 @@ lbl_80392DC4:
 /* 80392DD8 0038EA78  7F E6 FB 78 */	mr r6, r31
 /* 80392DDC 0038EA7C  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 80392DE0 0038EA80  7D 89 03 A6 */	mtctr r12
-/* 80392DE4 0038EA84  4E 80 04 21 */	bctrl 
+/* 80392DE4 0038EA84  4E 80 04 21 */	bctrl
 /* 80392DE8 0038EA88  38 61 00 14 */	addi r3, r1, 0x14
 /* 80392DEC 0038EA8C  4B FE A6 D9 */	bl "__pp__Q46nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4>8IteratorFv"
 lbl_80392DF0:
@@ -1667,7 +1667,7 @@ lbl_80392E18:
 /* 80392E28 0038EAC8  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 80392E2C 0038EACC  7C 08 03 A6 */	mtlr r0
 /* 80392E30 0038EAD0  38 21 00 30 */	addi r1, r1, 0x30
-/* 80392E34 0038EAD4  4E 80 00 20 */	blr 
+/* 80392E34 0038EAD4  4E 80 00 20 */	blr
 
 .global "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo"
 "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo":
@@ -1726,7 +1726,7 @@ lbl_80392EE0:
 /* 80392EF8 0038EB98  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 80392EFC 0038EB9C  7C 08 03 A6 */	mtlr r0
 /* 80392F00 0038EBA0  38 21 00 40 */	addi r1, r1, 0x40
-/* 80392F04 0038EBA4  4E 80 00 20 */	blr 
+/* 80392F04 0038EBA4  4E 80 00 20 */	blr
 
 .global "MTX34Copy__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34"
 "MTX34Copy__Q26nw4hbm4mathFPQ36nw4hbm4math5MTX34PCQ36nw4hbm4math5MTX34":
@@ -1751,7 +1751,7 @@ lbl_80392EE0:
 /* 80392F50 0038EBF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80392F54 0038EBF4  7C 08 03 A6 */	mtlr r0
 /* 80392F58 0038EBF8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80392F5C 0038EBFC  4E 80 00 20 */	blr 
+/* 80392F5C 0038EBFC  4E 80 00 20 */	blr
 
 .global "GetVtxPos__Q36nw4hbm3lyt4PaneCFv"
 "GetVtxPos__Q36nw4hbm3lyt4PaneCFv":
@@ -1832,12 +1832,12 @@ lbl_80393054:
 /* 80393060 0038ED00  80 81 00 0C */	lwz r4, 0xc(r1)
 /* 80393064 0038ED04  7C 08 03 A6 */	mtlr r0
 /* 80393068 0038ED08  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039306C 0038ED0C  4E 80 00 20 */	blr 
+/* 8039306C 0038ED0C  4E 80 00 20 */	blr
 
 .global "GetMaterial__Q36nw4hbm3lyt4PaneCFv"
 "GetMaterial__Q36nw4hbm3lyt4PaneCFv":
 /* 80393070 0038ED10  80 63 00 28 */	lwz r3, 0x28(r3)
-/* 80393074 0038ED14  4E 80 00 20 */	blr 
+/* 80393074 0038ED14  4E 80 00 20 */	blr
 
 .global "__sinit_lyt_pane_cpp"
 "__sinit_lyt_pane_cpp":
@@ -1848,28 +1848,104 @@ lbl_80393054:
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046AEC8
 lbl_8046AEC8:
-	.incbin "baserom.dol", 0x466FC8, 0xF8
+	# ROM: 0x466FC8
+	.asciz "lyt_pane.cpp"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (pNext)"
+	.asciz "NW4HBM:Failed assertion pNext->mpParent == this"
+	.asciz "NW4HBM:Pointer must not be NULL (pChild)"
+	.byte 0x00, 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion pChild->mpParent == 0"
+	.byte 0x00, 0x00
+	.asciz "NW4HBM:Failed assertion pChild->mpParent == this"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046AFC0
 lbl_8046AFC0:
-	.incbin "baserom.dol", 0x4670C0, 0x38
+	# ROM: 0x4670C0
+	.asciz "NW4HBM:Failed assertion idx < ANIMTARGET_PANE_COLOR_MAX"
+
 .global lbl_8046AFF8
 lbl_8046AFF8:
-	.incbin "baserom.dol", 0x4670F8, 0x30
+	# ROM: 0x4670F8
+	.asciz "NW4HBM:Pointer must not be NULL (pAnimTrans)"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046B028
 lbl_8046B028:
-	.incbin "baserom.dol", 0x467128, 0x34
+	# ROM: 0x467128
+	.asciz "NW4HBM:Pointer must not be NULL (pAnimationLink)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__vt__Q36nw4hbm3lyt4Pane"
 "__vt__Q36nw4hbm3lyt4Pane":
-	.incbin "baserom.dol", 0x46715C, 0x64
+	# ROM: 0x46715C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q36nw4hbm3lyt4PaneFv" ;# ptr (0x80391A1C)
+	.4byte "GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv" ;# ptr (0x8037DE6C)
+	.4byte "CalculateMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803921C0)
+	.4byte "Draw__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x803926D0)
+	.4byte "DrawSelf__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80392798)
+	.4byte "Animate__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x8039283C)
+	.4byte "AnimateSelf__Q36nw4hbm3lyt4PaneFUl" ;# ptr (0x80392904)
+	.4byte "GetVtxColor__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391EC4)
+	.4byte "SetVtxColor__Q36nw4hbm3lyt4PaneFUlQ36nw4hbm2ut5Color" ;# ptr (0x80391ECC)
+	.4byte "GetColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391ED0)
+	.4byte "SetColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391F54)
+	.4byte "GetVtxColorElement__Q36nw4hbm3lyt4PaneCFUl" ;# ptr (0x80391FE8)
+	.4byte "SetVtxColorElement__Q36nw4hbm3lyt4PaneFUlUc" ;# ptr (0x80391FF0)
+	.4byte "FindPaneByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x80391FF4)
+	.4byte "FindMaterialByName__Q36nw4hbm3lyt4PaneFPCcb" ;# ptr (0x803920D0)
+	.4byte "BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A10)
+	.4byte "UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb" ;# ptr (0x80392A90)
+	.4byte "UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb" ;# ptr (0x80392B54)
+	.4byte "UnbindAnimationSelf__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392B6C)
+	.4byte "FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform" ;# ptr (0x80392CC0)
+	.4byte "SetAnimationEnable__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformbb" ;# ptr (0x80392D38)
+	.4byte "GetMaterial__Q36nw4hbm3lyt4PaneCFv" ;# ptr (0x80393070)
+	.4byte "LoadMtx__Q36nw4hbm3lyt4PaneFRCQ36nw4hbm3lyt8DrawInfo" ;# ptr (0x80392E38)
+
 .global "__vt__Q46nw4hbm3lyt6detail8PaneBase"
 "__vt__Q46nw4hbm3lyt6detail8PaneBase":
-	.incbin "baserom.dol", 0x4671C0, 0x9C
+	# ROM: 0x4671C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q46nw4hbm3lyt6detail8PaneBaseFv" ;# ptr (0x80391820)
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046B15C
 lbl_8046B15C:
-	.incbin "baserom.dol", 0x46725C, 0x24
+	# ROM: 0x46725C
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046B180
 lbl_8046B180:
-	.incbin "baserom.dol", 0x467280, 0xD0
+	# ROM: 0x467280
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+	.asciz "LinkList.h"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "typeInfo__Q36nw4hbm3lyt4Pane"
@@ -1879,19 +1955,33 @@ lbl_8046B180:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB9D8
 lbl_805DB9D8:
-	.incbin "baserom.dol", 0x489CF8, 0x4
+	# ROM: 0x489CF8
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB9DC
 lbl_805DB9DC:
-	.incbin "baserom.dol", 0x489CFC, 0x4
+	# ROM: 0x489CFC
+	.4byte 0x3F800000
+
 .global lbl_805DB9E0
 lbl_805DB9E0:
-	.incbin "baserom.dol", 0x489D00, 0x4
+	# ROM: 0x489D00
+	.4byte 0x3C8EFA35
+
 .global lbl_805DB9E4
 lbl_805DB9E4:
-	.incbin "baserom.dol", 0x489D04, 0x4
+	# ROM: 0x489D04
+	.4byte 0x3B808081
+
 .global lbl_805DB9E8
 lbl_805DB9E8:
-	.incbin "baserom.dol", 0x489D08, 0x8
+	# ROM: 0x489D08
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DB9F0
 lbl_805DB9F0:
-	.incbin "baserom.dol", 0x489D10, 0x8
+	# ROM: 0x489D10
+	.4byte 0x3F000000
+	.4byte 0x00000000
+

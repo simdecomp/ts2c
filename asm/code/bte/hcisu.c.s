@@ -9,7 +9,7 @@
 /* 8033E664 0033A304  41 82 00 10 */	beq lbl_8033E674
 /* 8033E668 0033A308  81 84 00 0C */	lwz r12, 0xc(r4)
 /* 8033E66C 0033A30C  7D 89 03 A6 */	mtctr r12
-/* 8033E670 0033A310  4E 80 04 20 */	bctr 
+/* 8033E670 0033A310  4E 80 04 20 */	bctr
 lbl_8033E674:
 /* 8033E674 0033A314  4B FF CF A8 */	b "GKI_freebuf"
 
@@ -28,7 +28,7 @@ lbl_8033E674:
 /* 8033E6A0 0033A340  38 80 00 01 */	li r4, 1
 /* 8033E6A4 0033A344  38 A0 08 00 */	li r5, 0x800
 /* 8033E6A8 0033A348  7D 89 03 A6 */	mtctr r12
-/* 8033E6AC 0033A34C  4E 80 04 21 */	bctrl 
+/* 8033E6AC 0033A34C  4E 80 04 21 */	bctrl
 lbl_8033E6B0:
 /* 8033E6B0 0033A350  80 6D C3 38 */	lwz r3, "p_hcisu_if"-_SDA_BASE_(r13)
 /* 8033E6B4 0033A354  81 83 00 04 */	lwz r12, 4(r3)
@@ -36,24 +36,24 @@ lbl_8033E6B0:
 /* 8033E6BC 0033A35C  41 82 00 10 */	beq lbl_8033E6CC
 /* 8033E6C0 0033A360  80 6D C3 3C */	lwz r3, "p_hcisu_cfg"-_SDA_BASE_(r13)
 /* 8033E6C4 0033A364  7D 89 03 A6 */	mtctr r12
-/* 8033E6C8 0033A368  4E 80 04 21 */	bctrl 
+/* 8033E6C8 0033A368  4E 80 04 21 */	bctrl
 lbl_8033E6CC:
 /* 8033E6CC 0033A36C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033E6D0 0033A370  7C 08 03 A6 */	mtlr r0
 /* 8033E6D4 0033A374  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033E6D8 0033A378  4E 80 00 20 */	blr 
+/* 8033E6D8 0033A378  4E 80 00 20 */	blr
 
 .global "bte_hcisu_close"
 "bte_hcisu_close":
 /* 8033E6DC 0033A37C  80 6D C3 38 */	lwz r3, "p_hcisu_if"-_SDA_BASE_(r13)
 /* 8033E6E0 0033A380  2C 03 00 00 */	cmpwi r3, 0
-/* 8033E6E4 0033A384  4D 82 00 20 */	beqlr 
+/* 8033E6E4 0033A384  4D 82 00 20 */	beqlr
 /* 8033E6E8 0033A388  81 83 00 08 */	lwz r12, 8(r3)
 /* 8033E6EC 0033A38C  2C 0C 00 00 */	cmpwi r12, 0
-/* 8033E6F0 0033A390  4D 82 00 20 */	beqlr 
+/* 8033E6F0 0033A390  4D 82 00 20 */	beqlr
 /* 8033E6F4 0033A394  7D 89 03 A6 */	mtctr r12
-/* 8033E6F8 0033A398  4E 80 04 20 */	bctr 
-/* 8033E6FC 0033A39C  4E 80 00 20 */	blr 
+/* 8033E6F8 0033A398  4E 80 04 20 */	bctr
+/* 8033E6FC 0033A39C  4E 80 00 20 */	blr
 
 .global "bta_ci_hci_msg_handler"
 "bta_ci_hci_msg_handler":

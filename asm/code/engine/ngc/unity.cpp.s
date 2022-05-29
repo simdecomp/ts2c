@@ -18,7 +18,7 @@
 /* 802AD2EC 002A8F8C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802AD2F0 002A8F90  7C 08 03 A6 */	mtlr r0
 /* 802AD2F4 002A8F94  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD2F8 002A8F98  4E 80 00 20 */	blr 
+/* 802AD2F8 002A8F98  4E 80 00 20 */	blr
 
 .global "WPADfree32__FPv"
 "WPADfree32__FPv":
@@ -35,7 +35,7 @@
 /* 802AD324 002A8FC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AD328 002A8FC8  7C 08 03 A6 */	mtlr r0
 /* 802AD32C 002A8FCC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD330 002A8FD0  4E 80 00 20 */	blr 
+/* 802AD330 002A8FD0  4E 80 00 20 */	blr
 
 .global "WPADGetInfoCallback__Fll"
 "WPADGetInfoCallback__Fll":
@@ -47,7 +47,7 @@
 lbl_802AD348:
 /* 802AD348 002A8FE8  38 00 00 00 */	li r0, 0
 /* 802AD34C 002A8FEC  98 0D BC 08 */	stb r0, "_wpadInfoCallbackPending"-_SDA_BASE_(r13)
-/* 802AD350 002A8FF0  4E 80 00 20 */	blr 
+/* 802AD350 002A8FF0  4E 80 00 20 */	blr
 
 .global "__dt__21EWiiControllerManagerFv"
 "__dt__21EWiiControllerManagerFv":
@@ -73,7 +73,7 @@ lbl_802AD390:
 /* 802AD39C 002A903C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AD3A0 002A9040  7C 08 03 A6 */	mtlr r0
 /* 802AD3A4 002A9044  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD3A8 002A9048  4E 80 00 20 */	blr 
+/* 802AD3A8 002A9048  4E 80 00 20 */	blr
 
 .global "GetWPADInfo__21EWiiControllerManagerFUi"
 "GetWPADInfo__21EWiiControllerManagerFUi":
@@ -87,7 +87,7 @@ lbl_802AD390:
 /* 802AD3C8 002A9068  38 63 02 08 */	addi r3, r3, 0x208
 /* 802AD3CC 002A906C  7C 08 03 A6 */	mtlr r0
 /* 802AD3D0 002A9070  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AD3D4 002A9074  4E 80 00 20 */	blr 
+/* 802AD3D4 002A9074  4E 80 00 20 */	blr
 
 .global "Init__21EWiiControllerManagerFv"
 "Init__21EWiiControllerManagerFv":
@@ -141,7 +141,7 @@ lbl_802AD470:
 /* 802AD48C 002A912C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AD490 002A9130  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802AD494 002A9134  7D 89 03 A6 */	mtctr r12
-/* 802AD498 002A9138  4E 80 04 21 */	bctrl 
+/* 802AD498 002A9138  4E 80 04 21 */	bctrl
 /* 802AD49C 002A913C  D0 39 00 04 */	stfs f1, 4(r25)
 /* 802AD4A0 002A9140  7F 03 C3 78 */	mr r3, r24
 /* 802AD4A4 002A9144  C0 42 9F F4 */	lfs f2, lbl_805DB214-_SDA2_BASE_(r2)
@@ -167,11 +167,11 @@ lbl_802AD4D0:
 /* 802AD4F0 002A9190  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802AD4F4 002A9194  7C 08 03 A6 */	mtlr r0
 /* 802AD4F8 002A9198  38 21 00 30 */	addi r1, r1, 0x30
-/* 802AD4FC 002A919C  4E 80 00 20 */	blr 
+/* 802AD4FC 002A919C  4E 80 00 20 */	blr
 
 .global "Shutdown__21EWiiControllerManagerFv"
 "Shutdown__21EWiiControllerManagerFv":
-/* 802AD500 002A91A0  4E 80 00 20 */	blr 
+/* 802AD500 002A91A0  4E 80 00 20 */	blr
 
 .global "Update__21EWiiControllerManagerFv"
 "Update__21EWiiControllerManagerFv":
@@ -218,7 +218,7 @@ lbl_802AD56C:
 /* 802AD59C 002A923C  7F C3 F3 78 */	mr r3, r30
 /* 802AD5A0 002A9240  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 802AD5A4 002A9244  7D 89 03 A6 */	mtctr r12
-/* 802AD5A8 002A9248  4E 80 04 21 */	bctrl 
+/* 802AD5A8 002A9248  4E 80 04 21 */	bctrl
 /* 802AD5AC 002A924C  88 81 00 6D */	lbz r4, 0x6d(r1)
 /* 802AD5B0 002A9250  7C 83 07 75 */	extsb. r3, r4
 /* 802AD5B4 002A9254  40 82 00 F4 */	bne lbl_802AD6A8
@@ -327,7 +327,7 @@ lbl_802AD714:
 /* 802AD730 002A93D0  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802AD734 002A93D4  7C 08 03 A6 */	mtlr r0
 /* 802AD738 002A93D8  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 802AD73C 002A93DC  4E 80 00 20 */	blr 
+/* 802AD73C 002A93DC  4E 80 00 20 */	blr
 
 .global "GetNunchukTiltPosition__14EWiiControllerFRC10KPADStatus"
 "GetNunchukTiltPosition__14EWiiControllerFRC10KPADStatus":
@@ -335,10 +335,10 @@ lbl_802AD714:
 /* 802AD744 002A93E4  28 00 00 01 */	cmplwi r0, 1
 /* 802AD748 002A93E8  40 82 00 0C */	bne lbl_802AD754
 /* 802AD74C 002A93EC  C0 24 00 70 */	lfs f1, 0x70(r4)
-/* 802AD750 002A93F0  4E 80 00 20 */	blr 
+/* 802AD750 002A93F0  4E 80 00 20 */	blr
 lbl_802AD754:
 /* 802AD754 002A93F4  C0 22 9F FC */	lfs f1, lbl_805DB21C-_SDA2_BASE_(r2)
-/* 802AD758 002A93F8  4E 80 00 20 */	blr 
+/* 802AD758 002A93F8  4E 80 00 20 */	blr
 
 .global "GetControllerCursorPosition__14EWiiControllerFRC10KPADStatusPfPf"
 "GetControllerCursorPosition__14EWiiControllerFRC10KPADStatusPfPf":
@@ -349,30 +349,30 @@ lbl_802AD754:
 /* 802AD76C 002A940C  C0 04 00 24 */	lfs f0, 0x24(r4)
 /* 802AD770 002A9410  D0 25 00 00 */	stfs f1, 0(r5)
 /* 802AD774 002A9414  D0 06 00 00 */	stfs f0, 0(r6)
-/* 802AD778 002A9418  4E 80 00 20 */	blr 
+/* 802AD778 002A9418  4E 80 00 20 */	blr
 lbl_802AD77C:
 /* 802AD77C 002A941C  C0 02 A0 00 */	lfs f0, lbl_805DB220-_SDA2_BASE_(r2)
 /* 802AD780 002A9420  D0 05 00 00 */	stfs f0, 0(r5)
 /* 802AD784 002A9424  D0 06 00 00 */	stfs f0, 0(r6)
-/* 802AD788 002A9428  4E 80 00 20 */	blr 
+/* 802AD788 002A9428  4E 80 00 20 */	blr
 
 .global "GetStick__14EWiiControllerFRC10KPADStatusii"
 "GetStick__14EWiiControllerFRC10KPADStatusii":
 /* 802AD78C 002A942C  88 04 00 5C */	lbz r0, 0x5c(r4)
 /* 802AD790 002A9430  C0 22 9F FC */	lfs f1, lbl_805DB21C-_SDA2_BASE_(r2)
 /* 802AD794 002A9434  28 00 00 01 */	cmplwi r0, 1
-/* 802AD798 002A9438  4C 82 00 20 */	bnelr 
+/* 802AD798 002A9438  4C 82 00 20 */	bnelr
 /* 802AD79C 002A943C  28 05 00 01 */	cmplwi r5, 1
-/* 802AD7A0 002A9440  4D 81 00 20 */	bgtlr 
+/* 802AD7A0 002A9440  4D 81 00 20 */	bgtlr
 /* 802AD7A4 002A9444  2C 06 00 00 */	cmpwi r6, 0
 /* 802AD7A8 002A9448  40 82 00 0C */	bne lbl_802AD7B4
 /* 802AD7AC 002A944C  C0 24 00 60 */	lfs f1, 0x60(r4)
-/* 802AD7B0 002A9450  4E 80 00 20 */	blr 
+/* 802AD7B0 002A9450  4E 80 00 20 */	blr
 lbl_802AD7B4:
 /* 802AD7B4 002A9454  2C 06 00 01 */	cmpwi r6, 1
-/* 802AD7B8 002A9458  4C 82 00 20 */	bnelr 
+/* 802AD7B8 002A9458  4C 82 00 20 */	bnelr
 /* 802AD7BC 002A945C  C0 24 00 64 */	lfs f1, 0x64(r4)
-/* 802AD7C0 002A9460  4E 80 00 20 */	blr 
+/* 802AD7C0 002A9460  4E 80 00 20 */	blr
 
 .global "GetButtons__14EWiiControllerFRC10KPADStatus"
 "GetButtons__14EWiiControllerFRC10KPADStatus":
@@ -547,7 +547,7 @@ lbl_802AD9D4:
 /* 802AD9E0 002A9680  64 E7 00 08 */	oris r7, r7, 8
 lbl_802AD9E4:
 /* 802AD9E4 002A9684  7C E3 3B 78 */	mr r3, r7
-/* 802AD9E8 002A9688  4E 80 00 20 */	blr 
+/* 802AD9E8 002A9688  4E 80 00 20 */	blr
 
 .global "UpdateWPADInfo__14EWiiControllerFv"
 "UpdateWPADInfo__14EWiiControllerFv":
@@ -559,7 +559,7 @@ lbl_802AD9E4:
 /* 802ADA00 002A96A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802ADA04 002A96A4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802ADA08 002A96A8  7D 89 03 A6 */	mtctr r12
-/* 802ADA0C 002A96AC  4E 80 04 21 */	bctrl 
+/* 802ADA0C 002A96AC  4E 80 04 21 */	bctrl
 /* 802ADA10 002A96B0  70 60 00 05 */	andi. r0, r3, 5
 /* 802ADA14 002A96B4  2C 00 00 05 */	cmpwi r0, 5
 /* 802ADA18 002A96B8  40 82 01 34 */	bne lbl_802ADB4C
@@ -647,7 +647,7 @@ lbl_802ADB4C:
 /* 802ADB50 002A97F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802ADB54 002A97F4  7C 08 03 A6 */	mtlr r0
 /* 802ADB58 002A97F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ADB5C 002A97FC  4E 80 00 20 */	blr 
+/* 802ADB5C 002A97FC  4E 80 00 20 */	blr
 
 .global "WasHomeButtonPressed__21EWiiControllerManagerFbUi"
 "WasHomeButtonPressed__21EWiiControllerManagerFbUi":
@@ -684,7 +684,7 @@ lbl_802ADBC0:
 /* 802ADBC4 002A9864  42 00 FF D8 */	bdnz lbl_802ADB9C
 lbl_802ADBC8:
 /* 802ADBC8 002A9868  7D 03 43 78 */	mr r3, r8
-/* 802ADBCC 002A986C  4E 80 00 20 */	blr 
+/* 802ADBCC 002A986C  4E 80 00 20 */	blr
 
 .global "ToggleDPD__21EWiiControllerManagerFb"
 "ToggleDPD__21EWiiControllerManagerFb":
@@ -720,12 +720,12 @@ lbl_802ADC1C:
 /* 802ADC34 002A98D4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802ADC38 002A98D8  7C 08 03 A6 */	mtlr r0
 /* 802ADC3C 002A98DC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802ADC40 002A98E0  4E 80 00 20 */	blr 
+/* 802ADC40 002A98E0  4E 80 00 20 */	blr
 
 .global "HasVibration__14EWiiControllerCFv"
 "HasVibration__14EWiiControllerCFv":
 /* 802ADC44 002A98E4  38 60 00 01 */	li r3, 1
-/* 802ADC48 002A98E8  4E 80 00 20 */	blr 
+/* 802ADC48 002A98E8  4E 80 00 20 */	blr
 
 .global "VibrateMotorOne__14EWiiControllerFf"
 "VibrateMotorOne__14EWiiControllerFf":
@@ -745,7 +745,7 @@ lbl_802ADC1C:
 /* 802ADC80 002A9920  38 84 32 D0 */	addi r4, r4, lbl_804532D0@l
 /* 802ADC84 002A9924  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802ADC88 002A9928  7C 89 03 A6 */	mtctr r4
-/* 802ADC8C 002A992C  4E 80 04 20 */	bctr 
+/* 802ADC8C 002A992C  4E 80 04 20 */	bctr
 /* 802ADC90 002A9930  38 00 00 01 */	li r0, 1
 /* 802ADC94 002A9934  98 0D BC 10 */	stb r0, lbl_805D82F0-_SDA_BASE_(r13)
 /* 802ADC98 002A9938  48 00 00 0C */	b lbl_802ADCA4
@@ -757,14 +757,14 @@ lbl_802ADCA4:
 /* 802ADCA8 002A9948  7F E3 FB 78 */	mr r3, r31
 /* 802ADCAC 002A994C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 802ADCB0 002A9950  7D 89 03 A6 */	mtctr r12
-/* 802ADCB4 002A9954  4E 80 04 21 */	bctrl 
+/* 802ADCB4 002A9954  4E 80 04 21 */	bctrl
 /* 802ADCB8 002A9958  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADCBC 002A995C  40 82 00 70 */	bne lbl_802ADD2C
 /* 802ADCC0 002A9960  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802ADCC4 002A9964  7F E3 FB 78 */	mr r3, r31
 /* 802ADCC8 002A9968  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802ADCCC 002A996C  7D 89 03 A6 */	mtctr r12
-/* 802ADCD0 002A9970  4E 80 04 21 */	bctrl 
+/* 802ADCD0 002A9970  4E 80 04 21 */	bctrl
 /* 802ADCD4 002A9974  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADCD8 002A9978  40 82 00 54 */	bne lbl_802ADD2C
 /* 802ADCDC 002A997C  88 0D BC 70 */	lbz r0, "s_bShuttingDown"-_SDA_BASE_(r13)
@@ -801,7 +801,7 @@ lbl_802ADD40:
 /* 802ADD44 002A99E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802ADD48 002A99E8  7C 08 03 A6 */	mtlr r0
 /* 802ADD4C 002A99EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ADD50 002A99F0  4E 80 00 20 */	blr 
+/* 802ADD50 002A99F0  4E 80 00 20 */	blr
 
 .global "VibrateMotorTwo__14EWiiControllerFf"
 "VibrateMotorTwo__14EWiiControllerFf":
@@ -821,7 +821,7 @@ lbl_802ADD40:
 /* 802ADD88 002A9A28  38 84 33 00 */	addi r4, r4, lbl_80453300@l
 /* 802ADD8C 002A9A2C  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802ADD90 002A9A30  7C 89 03 A6 */	mtctr r4
-/* 802ADD94 002A9A34  4E 80 04 20 */	bctr 
+/* 802ADD94 002A9A34  4E 80 04 20 */	bctr
 /* 802ADD98 002A9A38  38 00 00 01 */	li r0, 1
 /* 802ADD9C 002A9A3C  98 0D BC 10 */	stb r0, lbl_805D82F0-_SDA_BASE_(r13)
 /* 802ADDA0 002A9A40  48 00 00 0C */	b lbl_802ADDAC
@@ -833,14 +833,14 @@ lbl_802ADDAC:
 /* 802ADDB0 002A9A50  7F E3 FB 78 */	mr r3, r31
 /* 802ADDB4 002A9A54  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 802ADDB8 002A9A58  7D 89 03 A6 */	mtctr r12
-/* 802ADDBC 002A9A5C  4E 80 04 21 */	bctrl 
+/* 802ADDBC 002A9A5C  4E 80 04 21 */	bctrl
 /* 802ADDC0 002A9A60  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADDC4 002A9A64  40 82 00 70 */	bne lbl_802ADE34
 /* 802ADDC8 002A9A68  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802ADDCC 002A9A6C  7F E3 FB 78 */	mr r3, r31
 /* 802ADDD0 002A9A70  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802ADDD4 002A9A74  7D 89 03 A6 */	mtctr r12
-/* 802ADDD8 002A9A78  4E 80 04 21 */	bctrl 
+/* 802ADDD8 002A9A78  4E 80 04 21 */	bctrl
 /* 802ADDDC 002A9A7C  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADDE0 002A9A80  40 82 00 54 */	bne lbl_802ADE34
 /* 802ADDE4 002A9A84  88 0D BC 70 */	lbz r0, "s_bShuttingDown"-_SDA_BASE_(r13)
@@ -877,7 +877,7 @@ lbl_802ADE48:
 /* 802ADE4C 002A9AEC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802ADE50 002A9AF0  7C 08 03 A6 */	mtlr r0
 /* 802ADE54 002A9AF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ADE58 002A9AF8  4E 80 00 20 */	blr 
+/* 802ADE58 002A9AF8  4E 80 00 20 */	blr
 
 .global "StopMotorOne__14EWiiControllerFv"
 "StopMotorOne__14EWiiControllerFv":
@@ -899,7 +899,7 @@ lbl_802ADE48:
 /* 802ADE98 002A9B38  38 84 33 30 */	addi r4, r4, lbl_80453330@l
 /* 802ADE9C 002A9B3C  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802ADEA0 002A9B40  7C 89 03 A6 */	mtctr r4
-/* 802ADEA4 002A9B44  4E 80 04 20 */	bctr 
+/* 802ADEA4 002A9B44  4E 80 04 20 */	bctr
 /* 802ADEA8 002A9B48  38 00 00 01 */	li r0, 1
 /* 802ADEAC 002A9B4C  98 0D BC 10 */	stb r0, lbl_805D82F0-_SDA_BASE_(r13)
 /* 802ADEB0 002A9B50  48 00 00 0C */	b lbl_802ADEBC
@@ -911,14 +911,14 @@ lbl_802ADEBC:
 /* 802ADEC0 002A9B60  7F E3 FB 78 */	mr r3, r31
 /* 802ADEC4 002A9B64  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 802ADEC8 002A9B68  7D 89 03 A6 */	mtctr r12
-/* 802ADECC 002A9B6C  4E 80 04 21 */	bctrl 
+/* 802ADECC 002A9B6C  4E 80 04 21 */	bctrl
 /* 802ADED0 002A9B70  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADED4 002A9B74  40 82 00 70 */	bne lbl_802ADF44
 /* 802ADED8 002A9B78  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802ADEDC 002A9B7C  7F E3 FB 78 */	mr r3, r31
 /* 802ADEE0 002A9B80  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802ADEE4 002A9B84  7D 89 03 A6 */	mtctr r12
-/* 802ADEE8 002A9B88  4E 80 04 21 */	bctrl 
+/* 802ADEE8 002A9B88  4E 80 04 21 */	bctrl
 /* 802ADEEC 002A9B8C  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADEF0 002A9B90  40 82 00 54 */	bne lbl_802ADF44
 /* 802ADEF4 002A9B94  88 0D BC 70 */	lbz r0, "s_bShuttingDown"-_SDA_BASE_(r13)
@@ -953,7 +953,7 @@ lbl_802ADF50:
 /* 802ADF54 002A9BF4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802ADF58 002A9BF8  7C 08 03 A6 */	mtlr r0
 /* 802ADF5C 002A9BFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802ADF60 002A9C00  4E 80 00 20 */	blr 
+/* 802ADF60 002A9C00  4E 80 00 20 */	blr
 
 .global "StopMotorTwo__14EWiiControllerFv"
 "StopMotorTwo__14EWiiControllerFv":
@@ -975,7 +975,7 @@ lbl_802ADF50:
 /* 802ADFA0 002A9C40  38 84 33 60 */	addi r4, r4, lbl_80453360@l
 /* 802ADFA4 002A9C44  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802ADFA8 002A9C48  7C 89 03 A6 */	mtctr r4
-/* 802ADFAC 002A9C4C  4E 80 04 20 */	bctr 
+/* 802ADFAC 002A9C4C  4E 80 04 20 */	bctr
 /* 802ADFB0 002A9C50  38 00 00 01 */	li r0, 1
 /* 802ADFB4 002A9C54  98 0D BC 10 */	stb r0, lbl_805D82F0-_SDA_BASE_(r13)
 /* 802ADFB8 002A9C58  48 00 00 0C */	b lbl_802ADFC4
@@ -987,14 +987,14 @@ lbl_802ADFC4:
 /* 802ADFC8 002A9C68  7F E3 FB 78 */	mr r3, r31
 /* 802ADFCC 002A9C6C  81 8C 00 48 */	lwz r12, 0x48(r12)
 /* 802ADFD0 002A9C70  7D 89 03 A6 */	mtctr r12
-/* 802ADFD4 002A9C74  4E 80 04 21 */	bctrl 
+/* 802ADFD4 002A9C74  4E 80 04 21 */	bctrl
 /* 802ADFD8 002A9C78  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADFDC 002A9C7C  40 82 00 70 */	bne lbl_802AE04C
 /* 802ADFE0 002A9C80  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802ADFE4 002A9C84  7F E3 FB 78 */	mr r3, r31
 /* 802ADFE8 002A9C88  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802ADFEC 002A9C8C  7D 89 03 A6 */	mtctr r12
-/* 802ADFF0 002A9C90  4E 80 04 21 */	bctrl 
+/* 802ADFF0 002A9C90  4E 80 04 21 */	bctrl
 /* 802ADFF4 002A9C94  2C 03 00 00 */	cmpwi r3, 0
 /* 802ADFF8 002A9C98  40 82 00 54 */	bne lbl_802AE04C
 /* 802ADFFC 002A9C9C  88 0D BC 70 */	lbz r0, "s_bShuttingDown"-_SDA_BASE_(r13)
@@ -1029,17 +1029,17 @@ lbl_802AE058:
 /* 802AE05C 002A9CFC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802AE060 002A9D00  7C 08 03 A6 */	mtlr r0
 /* 802AE064 002A9D04  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AE068 002A9D08  4E 80 00 20 */	blr 
+/* 802AE068 002A9D08  4E 80 00 20 */	blr
 
 .global "IsMotorOneActive__14EWiiControllerCFv"
 "IsMotorOneActive__14EWiiControllerCFv":
 /* 802AE06C 002A9D0C  88 63 02 1C */	lbz r3, 0x21c(r3)
-/* 802AE070 002A9D10  4E 80 00 20 */	blr 
+/* 802AE070 002A9D10  4E 80 00 20 */	blr
 
 .global "IsMotorTwoActive__14EWiiControllerCFv"
 "IsMotorTwoActive__14EWiiControllerCFv":
 /* 802AE074 002A9D14  88 63 02 1D */	lbz r3, 0x21d(r3)
-/* 802AE078 002A9D18  4E 80 00 20 */	blr 
+/* 802AE078 002A9D18  4E 80 00 20 */	blr
 
 .global "__sinit_engine_ngc_unity_cpp"
 "__sinit_engine_ngc_unity_cpp":
@@ -1164,21 +1164,21 @@ lbl_802AE058:
 /* 802AE254 002A9EF4  7F 63 DB 78 */	mr r3, r27
 /* 802AE258 002A9EF8  81 8C 00 70 */	lwz r12, 0x70(r12)
 /* 802AE25C 002A9EFC  7D 89 03 A6 */	mtctr r12
-/* 802AE260 002A9F00  4E 80 04 21 */	bctrl 
+/* 802AE260 002A9F00  4E 80 04 21 */	bctrl
 /* 802AE264 002A9F04  2C 03 00 00 */	cmpwi r3, 0
 /* 802AE268 002A9F08  41 82 00 18 */	beq lbl_802AE280
 /* 802AE26C 002A9F0C  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 802AE270 002A9F10  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AE274 002A9F14  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802AE278 002A9F18  7D 89 03 A6 */	mtctr r12
-/* 802AE27C 002A9F1C  4E 80 04 21 */	bctrl 
+/* 802AE27C 002A9F1C  4E 80 04 21 */	bctrl
 lbl_802AE280:
 /* 802AE280 002A9F20  80 6D BC 9C */	lwz r3, "_pGfx"-_SDA_BASE_(r13)
 /* 802AE284 002A9F24  80 9B 02 5C */	lwz r4, 0x25c(r27)
 /* 802AE288 002A9F28  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AE28C 002A9F2C  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 802AE290 002A9F30  7D 89 03 A6 */	mtctr r12
-/* 802AE294 002A9F34  4E 80 04 21 */	bctrl 
+/* 802AE294 002A9F34  4E 80 04 21 */	bctrl
 /* 802AE298 002A9F38  38 00 00 00 */	li r0, 0
 /* 802AE29C 002A9F3C  90 1B 02 5C */	stw r0, 0x25c(r27)
 lbl_802AE2A0:
@@ -1255,13 +1255,13 @@ lbl_802AE2A0:
 /* 802AE3B8 002AA058  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AE3BC 002AA05C  7C 08 03 A6 */	mtlr r0
 /* 802AE3C0 002AA060  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AE3C4 002AA064  4E 80 00 20 */	blr 
+/* 802AE3C4 002AA064  4E 80 00 20 */	blr
 
 .global "IsStable__11EControllerFv"
 "IsStable__11EControllerFv":
 /* 802AE3C8 002AA068  80 03 00 08 */	lwz r0, 8(r3)
 /* 802AE3CC 002AA06C  54 03 FF FE */	rlwinm r3, r0, 0x1f, 0x1f, 0x1f
-/* 802AE3D0 002AA070  4E 80 00 20 */	blr 
+/* 802AE3D0 002AA070  4E 80 00 20 */	blr
 
 .global "LoadNandBanner__30@unnamed@engine_ngc_unity_cpp@Fi"
 "LoadNandBanner__30@unnamed@engine_ngc_unity_cpp@Fi":
@@ -1334,7 +1334,7 @@ lbl_802AE4B8:
 /* 802AE4C0 002AA160  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 802AE4C4 002AA164  7C 08 03 A6 */	mtlr r0
 /* 802AE4C8 002AA168  38 21 00 50 */	addi r1, r1, 0x50
-/* 802AE4CC 002AA16C  4E 80 00 20 */	blr 
+/* 802AE4CC 002AA16C  4E 80 00 20 */	blr
 
 .global "__dt__14EWiiMemoryCardFv"
 "__dt__14EWiiMemoryCardFv":
@@ -1354,7 +1354,7 @@ lbl_802AE4F8:
 /* 802AE500 002AA1A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AE504 002AA1A4  7C 08 03 A6 */	mtlr r0
 /* 802AE508 002AA1A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AE50C 002AA1AC  4E 80 00 20 */	blr 
+/* 802AE50C 002AA1AC  4E 80 00 20 */	blr
 
 .global "InitMemoryCard__14EWiiMemoryCardFv"
 "InitMemoryCard__14EWiiMemoryCardFv":
@@ -1375,12 +1375,12 @@ lbl_802AE4F8:
 /* 802AE548 002AA1E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AE54C 002AA1EC  7C 08 03 A6 */	mtlr r0
 /* 802AE550 002AA1F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AE554 002AA1F4  4E 80 00 20 */	blr 
+/* 802AE554 002AA1F4  4E 80 00 20 */	blr
 
 .global "UnInitMemoryCard__14EWiiMemoryCardFv"
 "UnInitMemoryCard__14EWiiMemoryCardFv":
 /* 802AE558 002AA1F8  38 60 00 01 */	li r3, 1
-/* 802AE55C 002AA1FC  4E 80 00 20 */	blr 
+/* 802AE55C 002AA1FC  4E 80 00 20 */	blr
 
 .global "LoadDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPv"
 "LoadDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPv":
@@ -1719,7 +1719,7 @@ lbl_802AE990:
 /* 802AE998 002AA638  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802AE99C 002AA63C  7C 08 03 A6 */	mtlr r0
 /* 802AE9A0 002AA640  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 802AE9A4 002AA644  4E 80 00 20 */	blr 
+/* 802AE9A4 002AA644  4E 80 00 20 */	blr
 
 .global "LoadDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPv"
 "LoadDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPv":
@@ -1728,7 +1728,7 @@ lbl_802AE990:
 /* 802AE9B0 002AA650  38 E0 00 00 */	li r7, 0
 /* 802AE9B4 002AA654  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802AE9B8 002AA658  7D 89 03 A6 */	mtctr r12
-/* 802AE9BC 002AA65C  4E 80 04 20 */	bctr 
+/* 802AE9BC 002AA65C  4E 80 04 20 */	bctr
 
 .global "OpenForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t"
 "OpenForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t":
@@ -1736,7 +1736,7 @@ lbl_802AE990:
 /* 802AE9C4 002AA664  38 03 FF FE */	addi r0, r3, -2
 /* 802AE9C8 002AA668  7C 00 00 34 */	cntlzw r0, r0
 /* 802AE9CC 002AA66C  54 03 D9 7E */	srwi r3, r0, 5
-/* 802AE9D0 002AA670  4E 80 00 20 */	blr 
+/* 802AE9D0 002AA670  4E 80 00 20 */	blr
 
 .global "CloseForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t"
 "CloseForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t":
@@ -1744,7 +1744,7 @@ lbl_802AE990:
 /* 802AE9D8 002AA678  38 03 FF FE */	addi r0, r3, -2
 /* 802AE9DC 002AA67C  7C 00 00 34 */	cntlzw r0, r0
 /* 802AE9E0 002AA680  54 03 D9 7E */	srwi r3, r0, 5
-/* 802AE9E4 002AA684  4E 80 00 20 */	blr 
+/* 802AE9E4 002AA684  4E 80 00 20 */	blr
 
 .global "SaveDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPCv"
 "SaveDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPCv":
@@ -2083,7 +2083,7 @@ lbl_802AEE18:
 /* 802AEE20 002AAAC0  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802AEE24 002AAAC4  7C 08 03 A6 */	mtlr r0
 /* 802AEE28 002AAAC8  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 802AEE2C 002AAACC  4E 80 00 20 */	blr 
+/* 802AEE2C 002AAACC  4E 80 00 20 */	blr
 
 .global "SaveDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPCv"
 "SaveDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPCv":
@@ -2092,7 +2092,7 @@ lbl_802AEE18:
 /* 802AEE38 002AAAD8  38 E0 00 00 */	li r7, 0
 /* 802AEE3C 002AAADC  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802AEE40 002AAAE0  7D 89 03 A6 */	mtctr r12
-/* 802AEE44 002AAAE4  4E 80 04 20 */	bctr 
+/* 802AEE44 002AAAE4  4E 80 04 20 */	bctr
 
 .global "CreateFileS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUi"
 "CreateFileS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUi":
@@ -2607,7 +2607,7 @@ lbl_802AF4D0:
 /* 802AF4D8 002AB178  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 802AF4DC 002AB17C  7C 08 03 A6 */	mtlr r0
 /* 802AF4E0 002AB180  38 21 01 50 */	addi r1, r1, 0x150
-/* 802AF4E4 002AB184  4E 80 00 20 */	blr 
+/* 802AF4E4 002AB184  4E 80 00 20 */	blr
 
 .global "DeleteDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t"
 "DeleteDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t":
@@ -2784,17 +2784,17 @@ lbl_802AF700:
 /* 802AF708 002AB3A8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802AF70C 002AB3AC  7C 08 03 A6 */	mtlr r0
 /* 802AF710 002AB3B0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AF714 002AB3B4  4E 80 00 20 */	blr 
+/* 802AF714 002AB3B4  4E 80 00 20 */	blr
 
 .global "FormatCardS__14EWiiMemoryCardF14MemoryDevice_t"
 "FormatCardS__14EWiiMemoryCardF14MemoryDevice_t":
 /* 802AF718 002AB3B8  38 60 00 01 */	li r3, 1
-/* 802AF71C 002AB3BC  4E 80 00 20 */	blr 
+/* 802AF71C 002AB3BC  4E 80 00 20 */	blr
 
 .global "UnFormatCardS__14EWiiMemoryCardF14MemoryDevice_t"
 "UnFormatCardS__14EWiiMemoryCardF14MemoryDevice_t":
 /* 802AF720 002AB3C0  38 60 00 01 */	li r3, 1
-/* 802AF724 002AB3C4  4E 80 00 20 */	blr 
+/* 802AF724 002AB3C4  4E 80 00 20 */	blr
 
 .global "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_tUiRb"
 "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_tUiRb":
@@ -2920,7 +2920,7 @@ lbl_802AF8AC:
 /* 802AF8B8 002AB558  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802AF8BC 002AB55C  7C 08 03 A6 */	mtlr r0
 /* 802AF8C0 002AB560  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AF8C4 002AB564  4E 80 00 20 */	blr 
+/* 802AF8C4 002AB564  4E 80 00 20 */	blr
 
 .global "IsEnoughFiles__14EWiiMemoryCardF14MemoryDevice_tUiRb"
 "IsEnoughFiles__14EWiiMemoryCardF14MemoryDevice_tUiRb":
@@ -3045,21 +3045,21 @@ lbl_802AFA48:
 /* 802AFA54 002AB6F4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802AFA58 002AB6F8  7C 08 03 A6 */	mtlr r0
 /* 802AFA5C 002AB6FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AFA60 002AB700  4E 80 00 20 */	blr 
+/* 802AFA60 002AB700  4E 80 00 20 */	blr
 
 .global "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_t12EMC_SaveTypeRb"
 "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_t12EMC_SaveTypeRb":
 /* 802AFA64 002AB704  38 00 00 00 */	li r0, 0
 /* 802AFA68 002AB708  38 60 00 01 */	li r3, 1
 /* 802AFA6C 002AB70C  98 06 00 00 */	stb r0, 0(r6)
-/* 802AFA70 002AB710  4E 80 00 20 */	blr 
+/* 802AFA70 002AB710  4E 80 00 20 */	blr
 
 .global "IsCardAvailable__14EWiiMemoryCardF14MemoryDevice_t"
 "IsCardAvailable__14EWiiMemoryCardF14MemoryDevice_t":
 /* 802AFA74 002AB714  38 04 FF FE */	addi r0, r4, -2
 /* 802AFA78 002AB718  7C 00 00 34 */	cntlzw r0, r0
 /* 802AFA7C 002AB71C  54 03 D9 7E */	srwi r3, r0, 5
-/* 802AFA80 002AB720  4E 80 00 20 */	blr 
+/* 802AFA80 002AB720  4E 80 00 20 */	blr
 
 .global "IsCardFormated__14EWiiMemoryCardF14MemoryDevice_tRb"
 "IsCardFormated__14EWiiMemoryCardF14MemoryDevice_tRb":
@@ -3068,18 +3068,18 @@ lbl_802AFA48:
 /* 802AFA8C 002AB72C  38 00 00 01 */	li r0, 1
 /* 802AFA90 002AB730  38 60 00 01 */	li r3, 1
 /* 802AFA94 002AB734  98 05 00 00 */	stb r0, 0(r5)
-/* 802AFA98 002AB738  4E 80 00 20 */	blr 
+/* 802AFA98 002AB738  4E 80 00 20 */	blr
 lbl_802AFA9C:
 /* 802AFA9C 002AB73C  38 60 00 00 */	li r3, 0
-/* 802AFAA0 002AB740  4E 80 00 20 */	blr 
+/* 802AFAA0 002AB740  4E 80 00 20 */	blr
 
 .global "SetupSaveTypes__14EWiiMemoryCardF12EMC_SaveTypeUi"
 "SetupSaveTypes__14EWiiMemoryCardF12EMC_SaveTypeUi":
-/* 802AFAA4 002AB744  4E 80 00 20 */	blr 
+/* 802AFAA4 002AB744  4E 80 00 20 */	blr
 
 .global "SetGameCode__14EWiiMemoryCardFPCc"
 "SetGameCode__14EWiiMemoryCardFPCc":
-/* 802AFAA8 002AB748  4E 80 00 20 */	blr 
+/* 802AFAA8 002AB748  4E 80 00 20 */	blr
 
 .global "DoesFileExist__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tRb"
 "DoesFileExist__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tRb":
@@ -3117,14 +3117,14 @@ lbl_802AFB04:
 /* 802AFB24 002AB7C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AFB28 002AB7C8  7C 08 03 A6 */	mtlr r0
 /* 802AFB2C 002AB7CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802AFB30 002AB7D0  4E 80 00 20 */	blr 
+/* 802AFB30 002AB7D0  4E 80 00 20 */	blr
 
 .global "GetSectorSize__14EWiiMemoryCardFUiRUi"
 "GetSectorSize__14EWiiMemoryCardFUiRUi":
 /* 802AFB34 002AB7D4  38 00 40 00 */	li r0, 0x4000
 /* 802AFB38 002AB7D8  38 60 00 01 */	li r3, 1
 /* 802AFB3C 002AB7DC  90 05 00 00 */	stw r0, 0(r5)
-/* 802AFB40 002AB7E0  4E 80 00 20 */	blr 
+/* 802AFB40 002AB7E0  4E 80 00 20 */	blr
 
 .global "ValidatePort__14EWiiMemoryCardFRC18MemoryDevicePort_t"
 "ValidatePort__14EWiiMemoryCardFRC18MemoryDevicePort_t":
@@ -3139,7 +3139,7 @@ lbl_802AFB04:
 /* 802AFB64 002AB804  81 83 00 00 */	lwz r12, 0(r3)
 /* 802AFB68 002AB808  81 8C 00 70 */	lwz r12, 0x70(r12)
 /* 802AFB6C 002AB80C  7D 89 03 A6 */	mtctr r12
-/* 802AFB70 002AB810  4E 80 04 21 */	bctrl 
+/* 802AFB70 002AB810  4E 80 04 21 */	bctrl
 /* 802AFB74 002AB814  2C 03 00 00 */	cmpwi r3, 0
 /* 802AFB78 002AB818  41 82 00 24 */	beq lbl_802AFB9C
 /* 802AFB7C 002AB81C  80 1E 00 04 */	lwz r0, 4(r30)
@@ -3159,19 +3159,19 @@ lbl_802AFB9C:
 /* 802AFBA8 002AB848  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AFBAC 002AB84C  7C 08 03 A6 */	mtlr r0
 /* 802AFBB0 002AB850  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFBB4 002AB854  4E 80 00 20 */	blr 
+/* 802AFBB4 002AB854  4E 80 00 20 */	blr
 
 .global "ValidateDevice__14EWiiMemoryCardF14MemoryDevice_t"
 "ValidateDevice__14EWiiMemoryCardF14MemoryDevice_t":
 /* 802AFBB8 002AB858  38 04 FF FE */	addi r0, r4, -2
 /* 802AFBBC 002AB85C  7C 00 00 34 */	cntlzw r0, r0
 /* 802AFBC0 002AB860  54 03 D9 7E */	srwi r3, r0, 5
-/* 802AFBC4 002AB864  4E 80 00 20 */	blr 
+/* 802AFBC4 002AB864  4E 80 00 20 */	blr
 
 .global "SetLanguage__14EWiiMemoryCardFi"
 "SetLanguage__14EWiiMemoryCardFi":
 /* 802AFBC8 002AB868  90 83 00 08 */	stw r4, 8(r3)
-/* 802AFBCC 002AB86C  4E 80 00 20 */	blr 
+/* 802AFBCC 002AB86C  4E 80 00 20 */	blr
 
 .global "SetComments__14EWiiMemoryCardFPCUsPCUs"
 "SetComments__14EWiiMemoryCardFPCUsPCUs":
@@ -3212,7 +3212,7 @@ lbl_802AFC48:
 /* 802AFC50 002AB8F0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802AFC54 002AB8F4  7C 08 03 A6 */	mtlr r0
 /* 802AFC58 002AB8F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFC5C 002AB8FC  4E 80 00 20 */	blr 
+/* 802AFC5C 002AB8FC  4E 80 00 20 */	blr
 
 .global "__dt__11EMemoryCardFv"
 "__dt__11EMemoryCardFv":
@@ -3232,21 +3232,21 @@ lbl_802AFC88:
 /* 802AFC90 002AB930  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AFC94 002AB934  7C 08 03 A6 */	mtlr r0
 /* 802AFC98 002AB938  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFC9C 002AB93C  4E 80 00 20 */	blr 
+/* 802AFC9C 002AB93C  4E 80 00 20 */	blr
 
 .global "SetMemCardCopyProtection__11EMemoryCardFRC18MemoryDevicePort_t"
 "SetMemCardCopyProtection__11EMemoryCardFRC18MemoryDevicePort_t":
-/* 802AFCA0 002AB940  4E 80 00 20 */	blr 
+/* 802AFCA0 002AB940  4E 80 00 20 */	blr
 
 .global "PollCards__11EMemoryCardFb"
 "PollCards__11EMemoryCardFb":
 /* 802AFCA4 002AB944  38 60 00 01 */	li r3, 1
-/* 802AFCA8 002AB948  4E 80 00 20 */	blr 
+/* 802AFCA8 002AB948  4E 80 00 20 */	blr
 
 .global "IsPolledCardAvailable__11EMemoryCardFRC18MemoryDevicePort_t"
 "IsPolledCardAvailable__11EMemoryCardFRC18MemoryDevicePort_t":
 /* 802AFCAC 002AB94C  38 60 00 01 */	li r3, 1
-/* 802AFCB0 002AB950  4E 80 00 20 */	blr 
+/* 802AFCB0 002AB950  4E 80 00 20 */	blr
 
 .global "__dt__6EAudioFv"
 "__dt__6EAudioFv":
@@ -3266,7 +3266,7 @@ lbl_802AFCDC:
 /* 802AFCE4 002AB984  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AFCE8 002AB988  7C 08 03 A6 */	mtlr r0
 /* 802AFCEC 002AB98C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFCF0 002AB990  4E 80 00 20 */	blr 
+/* 802AFCF0 002AB990  4E 80 00 20 */	blr
 
 .global "__dt__9ENgcAudioFv"
 "__dt__9ENgcAudioFv":
@@ -3296,7 +3296,7 @@ lbl_802AFD40:
 /* 802AFD4C 002AB9EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AFD50 002AB9F0  7C 08 03 A6 */	mtlr r0
 /* 802AFD54 002AB9F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFD58 002AB9F8  4E 80 00 20 */	blr 
+/* 802AFD58 002AB9F8  4E 80 00 20 */	blr
 
 .global "__ct__7EPMDescFUib"
 "__ct__7EPMDescFUib":
@@ -3307,7 +3307,7 @@ lbl_802AFD40:
 /* 802AFD6C 002ABA0C  90 03 00 08 */	stw r0, 8(r3)
 /* 802AFD70 002ABA10  98 C3 00 0D */	stb r6, 0xd(r3)
 /* 802AFD74 002ABA14  98 A3 00 0C */	stb r5, 0xc(r3)
-/* 802AFD78 002ABA18  4E 80 00 20 */	blr 
+/* 802AFD78 002ABA18  4E 80 00 20 */	blr
 
 .global "__ct__7EPMDescFPCcb"
 "__ct__7EPMDescFPCcb":
@@ -3334,7 +3334,7 @@ lbl_802AFD40:
 /* 802AFDCC 002ABA6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802AFDD0 002ABA70  7C 08 03 A6 */	mtlr r0
 /* 802AFDD4 002ABA74  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFDD8 002ABA78  4E 80 00 20 */	blr 
+/* 802AFDD8 002ABA78  4E 80 00 20 */	blr
 
 .global "InitAudio__9ENgcAudioFv"
 "InitAudio__9ENgcAudioFv":
@@ -3468,7 +3468,7 @@ lbl_802AFFB0:
 /* 802AFFB4 002ABC54  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802AFFB8 002ABC58  7C 08 03 A6 */	mtlr r0
 /* 802AFFBC 002ABC5C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802AFFC0 002ABC60  4E 80 00 20 */	blr 
+/* 802AFFC0 002ABC60  4E 80 00 20 */	blr
 
 .global "Shutdown__9ENgcAudioFv"
 "Shutdown__9ENgcAudioFv":
@@ -3501,7 +3501,7 @@ lbl_802B0020:
 /* 802B0020 002ABCC0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0024 002ABCC4  7C 08 03 A6 */	mtlr r0
 /* 802B0028 002ABCC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B002C 002ABCCC  4E 80 00 20 */	blr 
+/* 802B002C 002ABCCC  4E 80 00 20 */	blr
 
 .global "PlayMusic__9ENgcAudioFRC7EPMDesc"
 "PlayMusic__9ENgcAudioFRC7EPMDesc":
@@ -3518,7 +3518,7 @@ lbl_802B0020:
 /* 802B0058 002ABCF8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B005C 002ABCFC  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802B0060 002ABD00  7D 89 03 A6 */	mtctr r12
-/* 802B0064 002ABD04  4E 80 04 21 */	bctrl 
+/* 802B0064 002ABD04  4E 80 04 21 */	bctrl
 /* 802B0068 002ABD08  3C A0 80 53 */	lis r5, "ENgcAudio_streams"@ha
 /* 802B006C 002ABD0C  38 00 00 08 */	li r0, 8
 /* 802B0070 002ABD10  38 A5 FD 00 */	addi r5, r5, "ENgcAudio_streams"@l
@@ -3611,7 +3611,7 @@ lbl_802B018C:
 /* 802B01BC 002ABE5C  38 80 FF FF */	li r4, -1
 /* 802B01C0 002ABE60  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B01C4 002ABE64  7D 89 03 A6 */	mtctr r12
-/* 802B01C8 002ABE68  4E 80 04 21 */	bctrl 
+/* 802B01C8 002ABE68  4E 80 04 21 */	bctrl
 /* 802B01CC 002ABE6C  1C 1A 00 44 */	mulli r0, r26, 0x44
 /* 802B01D0 002ABE70  3F A0 80 53 */	lis r29, "ENgcAudio_streams"@ha
 /* 802B01D4 002ABE74  80 76 00 00 */	lwz r3, 0(r22)
@@ -3624,7 +3624,7 @@ lbl_802B018C:
 /* 802B01F0 002ABE90  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B01F4 002ABE94  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B01F8 002ABE98  7D 89 03 A6 */	mtctr r12
-/* 802B01FC 002ABE9C  4E 80 04 21 */	bctrl 
+/* 802B01FC 002ABE9C  4E 80 04 21 */	bctrl
 /* 802B0200 002ABEA0  82 FB 00 14 */	lwz r23, 0x14(r27)
 /* 802B0204 002ABEA4  38 A0 00 00 */	li r5, 0
 /* 802B0208 002ABEA8  80 9B 00 18 */	lwz r4, 0x18(r27)
@@ -3635,7 +3635,7 @@ lbl_802B018C:
 /* 802B021C 002ABEBC  7C C4 00 50 */	subf r6, r4, r0
 /* 802B0220 002ABEC0  3B 06 00 01 */	addi r24, r6, 1
 /* 802B0224 002ABEC4  7D 89 03 A6 */	mtctr r12
-/* 802B0228 002ABEC8  4E 80 04 21 */	bctrl 
+/* 802B0228 002ABEC8  4E 80 04 21 */	bctrl
 /* 802B022C 002ABECC  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B0230 002ABED0  3F E0 80 53 */	lis r31, "dspHeader"@ha
 /* 802B0234 002ABED4  7E E3 BB 78 */	mr r3, r23
@@ -3643,7 +3643,7 @@ lbl_802B018C:
 /* 802B023C 002ABEDC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B0240 002ABEE0  38 9F FC A0 */	addi r4, r31, "dspHeader"@l
 /* 802B0244 002ABEE4  7D 89 03 A6 */	mtctr r12
-/* 802B0248 002ABEE8  4E 80 04 21 */	bctrl 
+/* 802B0248 002ABEE8  4E 80 04 21 */	bctrl
 /* 802B024C 002ABEEC  1C 7A 00 44 */	mulli r3, r26, 0x44
 /* 802B0250 002ABEF0  3B FF FC A0 */	addi r31, r31, -864
 /* 802B0254 002ABEF4  80 DF 00 04 */	lwz r6, 4(r31)
@@ -3691,7 +3691,7 @@ lbl_802B018C:
 /* 802B02FC 002ABF9C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B0300 002ABFA0  7C 7C 1B 78 */	mr r28, r3
 /* 802B0304 002ABFA4  7D 89 03 A6 */	mtctr r12
-/* 802B0308 002ABFA8  4E 80 04 21 */	bctrl 
+/* 802B0308 002ABFA8  4E 80 04 21 */	bctrl
 /* 802B030C 002ABFAC  1C 19 00 44 */	mulli r0, r25, 0x44
 /* 802B0310 002ABFB0  80 96 00 00 */	lwz r4, 0(r22)
 /* 802B0314 002ABFB4  7F 83 E3 78 */	mr r3, r28
@@ -3701,7 +3701,7 @@ lbl_802B018C:
 /* 802B0324 002ABFC4  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802B0328 002ABFC8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B032C 002ABFCC  7D 89 03 A6 */	mtctr r12
-/* 802B0330 002ABFD0  4E 80 04 21 */	bctrl 
+/* 802B0330 002ABFD0  4E 80 04 21 */	bctrl
 /* 802B0334 002ABFD4  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B0338 002ABFD8  57 00 F8 7E */	srwi r0, r24, 1
 /* 802B033C 002ABFDC  80 9B 00 18 */	lwz r4, 0x18(r27)
@@ -3711,14 +3711,14 @@ lbl_802B018C:
 /* 802B034C 002ABFEC  7F 04 02 14 */	add r24, r4, r0
 /* 802B0350 002ABFF0  7F 04 C3 78 */	mr r4, r24
 /* 802B0354 002ABFF4  7D 89 03 A6 */	mtctr r12
-/* 802B0358 002ABFF8  4E 80 04 21 */	bctrl 
+/* 802B0358 002ABFF8  4E 80 04 21 */	bctrl
 /* 802B035C 002ABFFC  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B0360 002AC000  7E E3 BB 78 */	mr r3, r23
 /* 802B0364 002AC004  7F E4 FB 78 */	mr r4, r31
 /* 802B0368 002AC008  38 A0 00 60 */	li r5, 0x60
 /* 802B036C 002AC00C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B0370 002AC010  7D 89 03 A6 */	mtctr r12
-/* 802B0374 002AC014  4E 80 04 21 */	bctrl 
+/* 802B0374 002AC014  4E 80 04 21 */	bctrl
 /* 802B0378 002AC018  1C 99 00 44 */	mulli r4, r25, 0x44
 /* 802B037C 002AC01C  80 7F 00 04 */	lwz r3, 4(r31)
 /* 802B0380 002AC020  39 18 00 60 */	addi r8, r24, 0x60
@@ -3766,24 +3766,24 @@ lbl_802B0410:
 /* 802B0420 002AC0C0  81 95 00 00 */	lwz r12, 0(r21)
 /* 802B0424 002AC0C4  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802B0428 002AC0C8  7D 89 03 A6 */	mtctr r12
-/* 802B042C 002AC0CC  4E 80 04 21 */	bctrl 
+/* 802B042C 002AC0CC  4E 80 04 21 */	bctrl
 lbl_802B0430:
 /* 802B0430 002AC0D0  39 61 00 40 */	addi r11, r1, 0x40
 /* 802B0434 002AC0D4  48 15 EF 75 */	bl "_restgpr_21"
 /* 802B0438 002AC0D8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802B043C 002AC0DC  7C 08 03 A6 */	mtlr r0
 /* 802B0440 002AC0E0  38 21 00 40 */	addi r1, r1, 0x40
-/* 802B0444 002AC0E4  4E 80 00 20 */	blr 
+/* 802B0444 002AC0E4  4E 80 00 20 */	blr
 
 .global "GetIndexFromVoice__9ENgcAudioFP6EVoice"
 "GetIndexFromVoice__9ENgcAudioFP6EVoice":
 /* 802B0448 002AC0E8  38 60 00 00 */	li r3, 0
-/* 802B044C 002AC0EC  4E 80 00 20 */	blr 
+/* 802B044C 002AC0EC  4E 80 00 20 */	blr
 
 .global "GetVoiceFromIndex__9ENgcAudioFUc"
 "GetVoiceFromIndex__9ENgcAudioFUc":
 /* 802B0450 002AC0F0  38 60 00 00 */	li r3, 0
-/* 802B0454 002AC0F4  4E 80 00 20 */	blr 
+/* 802B0454 002AC0F4  4E 80 00 20 */	blr
 
 .global "Update__9ENgcAudioFv"
 "Update__9ENgcAudioFv":
@@ -3809,7 +3809,7 @@ lbl_802B048C:
 /* 802B04A0 002AC140  38 84 0F 0C */	addi r4, r4, lbl_80450F0C@l
 /* 802B04A4 002AC144  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B04A8 002AC148  7C 89 03 A6 */	mtctr r4
-/* 802B04AC 002AC14C  4E 80 04 20 */	bctr 
+/* 802B04AC 002AC14C  4E 80 04 20 */	bctr
 /* 802B04B0 002AC150  88 0D BC 30 */	lbz r0, "bWasPlayingWhenPaused$15636"-_SDA_BASE_(r13)
 /* 802B04B4 002AC154  2C 00 00 00 */	cmpwi r0, 0
 /* 802B04B8 002AC158  41 82 00 0C */	beq lbl_802B04C4
@@ -3823,7 +3823,7 @@ lbl_802B04C4:
 /* 802B04D4 002AC174  7F E3 FB 78 */	mr r3, r31
 /* 802B04D8 002AC178  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802B04DC 002AC17C  7D 89 03 A6 */	mtctr r12
-/* 802B04E0 002AC180  4E 80 04 21 */	bctrl 
+/* 802B04E0 002AC180  4E 80 04 21 */	bctrl
 /* 802B04E4 002AC184  88 1F 00 0C */	lbz r0, 0xc(r31)
 /* 802B04E8 002AC188  2C 00 00 00 */	cmpwi r0, 0
 /* 802B04EC 002AC18C  40 82 00 20 */	bne lbl_802B050C
@@ -3833,14 +3833,14 @@ lbl_802B04C4:
 /* 802B04FC 002AC19C  98 0D BC 30 */	stb r0, "bWasPlayingWhenPaused$15636"-_SDA_BASE_(r13)
 /* 802B0500 002AC1A0  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802B0504 002AC1A4  7D 89 03 A6 */	mtctr r12
-/* 802B0508 002AC1A8  4E 80 04 21 */	bctrl 
+/* 802B0508 002AC1A8  4E 80 04 21 */	bctrl
 lbl_802B050C:
 /* 802B050C 002AC1AC  81 9F 00 44 */	lwz r12, 0x44(r31)
 /* 802B0510 002AC1B0  2C 0C 00 00 */	cmpwi r12, 0
 /* 802B0514 002AC1B4  41 82 00 10 */	beq lbl_802B0524
 /* 802B0518 002AC1B8  38 60 00 01 */	li r3, 1
 /* 802B051C 002AC1BC  7D 89 03 A6 */	mtctr r12
-/* 802B0520 002AC1C0  4E 80 04 21 */	bctrl 
+/* 802B0520 002AC1C0  4E 80 04 21 */	bctrl
 lbl_802B0524:
 /* 802B0524 002AC1C4  38 00 00 01 */	li r0, 1
 /* 802B0528 002AC1C8  98 1F 00 40 */	stb r0, 0x40(r31)
@@ -3856,13 +3856,13 @@ lbl_802B0530:
 /* 802B054C 002AC1EC  41 82 00 10 */	beq lbl_802B055C
 /* 802B0550 002AC1F0  38 60 00 00 */	li r3, 0
 /* 802B0554 002AC1F4  7D 89 03 A6 */	mtctr r12
-/* 802B0558 002AC1F8  4E 80 04 21 */	bctrl 
+/* 802B0558 002AC1F8  4E 80 04 21 */	bctrl
 lbl_802B055C:
 /* 802B055C 002AC1FC  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B0560 002AC200  7F E3 FB 78 */	mr r3, r31
 /* 802B0564 002AC204  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802B0568 002AC208  7D 89 03 A6 */	mtctr r12
-/* 802B056C 002AC20C  4E 80 04 21 */	bctrl 
+/* 802B056C 002AC20C  4E 80 04 21 */	bctrl
 /* 802B0570 002AC210  88 0D BC 30 */	lbz r0, "bWasPlayingWhenPaused$15636"-_SDA_BASE_(r13)
 /* 802B0574 002AC214  2C 00 00 00 */	cmpwi r0, 0
 /* 802B0578 002AC218  41 82 00 0C */	beq lbl_802B0584
@@ -3880,14 +3880,14 @@ lbl_802B0584:
 /* 802B05A4 002AC244  98 0D BC 30 */	stb r0, "bWasPlayingWhenPaused$15636"-_SDA_BASE_(r13)
 /* 802B05A8 002AC248  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802B05AC 002AC24C  7D 89 03 A6 */	mtctr r12
-/* 802B05B0 002AC250  4E 80 04 21 */	bctrl 
+/* 802B05B0 002AC250  4E 80 04 21 */	bctrl
 lbl_802B05B4:
 /* 802B05B4 002AC254  81 9F 00 80 */	lwz r12, 0x80(r31)
 /* 802B05B8 002AC258  2C 0C 00 00 */	cmpwi r12, 0
 /* 802B05BC 002AC25C  41 82 00 10 */	beq lbl_802B05CC
 /* 802B05C0 002AC260  7F E3 FB 78 */	mr r3, r31
 /* 802B05C4 002AC264  7D 89 03 A6 */	mtctr r12
-/* 802B05C8 002AC268  4E 80 04 21 */	bctrl 
+/* 802B05C8 002AC268  4E 80 04 21 */	bctrl
 lbl_802B05CC:
 /* 802B05CC 002AC26C  81 9F 00 48 */	lwz r12, 0x48(r31)
 /* 802B05D0 002AC270  38 7F 00 48 */	addi r3, r31, 0x48
@@ -3895,7 +3895,7 @@ lbl_802B05CC:
 /* 802B05D8 002AC278  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B05DC 002AC27C  7C 7D 1B 78 */	mr r29, r3
 /* 802B05E0 002AC280  7D 89 03 A6 */	mtctr r12
-/* 802B05E4 002AC284  4E 80 04 21 */	bctrl 
+/* 802B05E4 002AC284  4E 80 04 21 */	bctrl
 /* 802B05E8 002AC288  3C 60 80 53 */	lis r3, "ENgcAudio_streams"@ha
 /* 802B05EC 002AC28C  3B 00 00 00 */	li r24, 0
 /* 802B05F0 002AC290  3B E0 00 00 */	li r31, 0
@@ -3954,14 +3954,14 @@ lbl_802B069C:
 /* 802B06B0 002AC350  7F A3 EB 78 */	mr r3, r29
 /* 802B06B4 002AC354  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B06B8 002AC358  7D 89 03 A6 */	mtctr r12
-/* 802B06BC 002AC35C  4E 80 04 21 */	bctrl 
+/* 802B06BC 002AC35C  4E 80 04 21 */	bctrl
 lbl_802B06C0:
 /* 802B06C0 002AC360  39 61 00 30 */	addi r11, r1, 0x30
 /* 802B06C4 002AC364  48 15 EC ED */	bl "_restgpr_23"
 /* 802B06C8 002AC368  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B06CC 002AC36C  7C 08 03 A6 */	mtlr r0
 /* 802B06D0 002AC370  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B06D4 002AC374  4E 80 00 20 */	blr 
+/* 802B06D4 002AC374  4E 80 00 20 */	blr
 
 .global "StopMusic__9ENgcAudioFv"
 "StopMusic__9ENgcAudioFv":
@@ -3978,7 +3978,7 @@ lbl_802B06C0:
 /* 802B0700 002AC3A0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B0704 002AC3A4  7C 7E 1B 78 */	mr r30, r3
 /* 802B0708 002AC3A8  7D 89 03 A6 */	mtctr r12
-/* 802B070C 002AC3AC  4E 80 04 21 */	bctrl 
+/* 802B070C 002AC3AC  4E 80 04 21 */	bctrl
 /* 802B0710 002AC3B0  3C 60 80 53 */	lis r3, "ENgcAudio_streams"@ha
 /* 802B0714 002AC3B4  3B 40 00 00 */	li r26, 0
 /* 802B0718 002AC3B8  3B E0 00 00 */	li r31, 0
@@ -4014,14 +4014,14 @@ lbl_802B0770:
 /* 802B0784 002AC424  7F C3 F3 78 */	mr r3, r30
 /* 802B0788 002AC428  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B078C 002AC42C  7D 89 03 A6 */	mtctr r12
-/* 802B0790 002AC430  4E 80 04 21 */	bctrl 
+/* 802B0790 002AC430  4E 80 04 21 */	bctrl
 lbl_802B0794:
 /* 802B0794 002AC434  39 61 00 20 */	addi r11, r1, 0x20
 /* 802B0798 002AC438  48 15 EC 25 */	bl "_restgpr_26"
 /* 802B079C 002AC43C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B07A0 002AC440  7C 08 03 A6 */	mtlr r0
 /* 802B07A4 002AC444  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B07A8 002AC448  4E 80 00 20 */	blr 
+/* 802B07A8 002AC448  4E 80 00 20 */	blr
 
 .global "PauseFX__9ENgcAudioFv"
 "PauseFX__9ENgcAudioFv":
@@ -4058,7 +4058,7 @@ lbl_802B07FC:
 /* 802B081C 002AC4BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B0820 002AC4C0  7C 08 03 A6 */	mtlr r0
 /* 802B0824 002AC4C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B0828 002AC4C8  4E 80 00 20 */	blr 
+/* 802B0828 002AC4C8  4E 80 00 20 */	blr
 
 .global "ResumeFX__9ENgcAudioFv"
 "ResumeFX__9ENgcAudioFv":
@@ -4100,7 +4100,7 @@ lbl_802B0888:
 /* 802B08B0 002AC550  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B08B4 002AC554  7C 08 03 A6 */	mtlr r0
 /* 802B08B8 002AC558  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B08BC 002AC55C  4E 80 00 20 */	blr 
+/* 802B08BC 002AC55C  4E 80 00 20 */	blr
 
 .global "PauseMusic__9ENgcAudioFv"
 "PauseMusic__9ENgcAudioFv":
@@ -4143,7 +4143,7 @@ lbl_802B0938:
 /* 802B0944 002AC5E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B0948 002AC5E8  7C 08 03 A6 */	mtlr r0
 /* 802B094C 002AC5EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B0950 002AC5F0  4E 80 00 20 */	blr 
+/* 802B0950 002AC5F0  4E 80 00 20 */	blr
 
 .global "ResumeMusic__9ENgcAudioFv"
 "ResumeMusic__9ENgcAudioFv":
@@ -4185,7 +4185,7 @@ lbl_802B09C8:
 /* 802B09D4 002AC674  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B09D8 002AC678  7C 08 03 A6 */	mtlr r0
 /* 802B09DC 002AC67C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B09E0 002AC680  4E 80 00 20 */	blr 
+/* 802B09E0 002AC680  4E 80 00 20 */	blr
 
 .global "SetMusicVolume__9ENgcAudioFf"
 "SetMusicVolume__9ENgcAudioFf":
@@ -4256,12 +4256,12 @@ lbl_802B0AB8:
 /* 802B0AD0 002AC770  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B0AD4 002AC774  7C 08 03 A6 */	mtlr r0
 /* 802B0AD8 002AC778  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B0ADC 002AC77C  4E 80 00 20 */	blr 
+/* 802B0ADC 002AC77C  4E 80 00 20 */	blr
 
 .global "GetMusicVolume__9ENgcAudioFv"
 "GetMusicVolume__9ENgcAudioFv":
 /* 802B0AE0 002AC780  C0 23 00 04 */	lfs f1, 4(r3)
-/* 802B0AE4 002AC784  4E 80 00 20 */	blr 
+/* 802B0AE4 002AC784  4E 80 00 20 */	blr
 
 .global "SetMusicPan__9ENgcAudioFf"
 "SetMusicPan__9ENgcAudioFf":
@@ -4325,12 +4325,12 @@ lbl_802B0BA8:
 /* 802B0BB8 002AC858  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B0BBC 002AC85C  7C 08 03 A6 */	mtlr r0
 /* 802B0BC0 002AC860  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B0BC4 002AC864  4E 80 00 20 */	blr 
+/* 802B0BC4 002AC864  4E 80 00 20 */	blr
 
 .global "GetMusicPan__9ENgcAudioFv"
 "GetMusicPan__9ENgcAudioFv":
 /* 802B0BC8 002AC868  C0 23 00 08 */	lfs f1, 8(r3)
-/* 802B0BCC 002AC86C  4E 80 00 20 */	blr 
+/* 802B0BCC 002AC86C  4E 80 00 20 */	blr
 
 .global "IsPlayingMusic__9ENgcAudioFv"
 "IsPlayingMusic__9ENgcAudioFv":
@@ -4362,7 +4362,7 @@ lbl_802B0C20:
 /* 802B0C2C 002AC8CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0C30 002AC8D0  7C 08 03 A6 */	mtlr r0
 /* 802B0C34 002AC8D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B0C38 002AC8D8  4E 80 00 20 */	blr 
+/* 802B0C38 002AC8D8  4E 80 00 20 */	blr
 
 .global "AudioFrameCallback__Fv"
 "AudioFrameCallback__Fv":
@@ -4376,7 +4376,7 @@ lbl_802B0C20:
 /* 802B0C58 002AC8F8  2C 0C 00 00 */	cmpwi r12, 0
 /* 802B0C5C 002AC8FC  41 82 00 0C */	beq lbl_802B0C68
 /* 802B0C60 002AC900  7D 89 03 A6 */	mtctr r12
-/* 802B0C64 002AC904  4E 80 04 21 */	bctrl 
+/* 802B0C64 002AC904  4E 80 04 21 */	bctrl
 lbl_802B0C68:
 /* 802B0C68 002AC908  48 12 4D BD */	bl "MIXUpdateSettings"
 /* 802B0C6C 002AC90C  80 6D BC 28 */	lwz r3, "streamer"-_SDA_BASE_(r13)
@@ -4387,7 +4387,7 @@ lbl_802B0C7C:
 /* 802B0C7C 002AC91C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0C80 002AC920  7C 08 03 A6 */	mtlr r0
 /* 802B0C84 002AC924  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B0C88 002AC928  4E 80 00 20 */	blr 
+/* 802B0C88 002AC928  4E 80 00 20 */	blr
 
 .global "AudioAllocVoice__9ENgcAudioFv"
 "AudioAllocVoice__9ENgcAudioFv":
@@ -4412,7 +4412,7 @@ lbl_802B0CD0:
 /* 802B0CD0 002AC970  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0CD4 002AC974  7C 08 03 A6 */	mtlr r0
 /* 802B0CD8 002AC978  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B0CDC 002AC97C  4E 80 00 20 */	blr 
+/* 802B0CDC 002AC97C  4E 80 00 20 */	blr
 
 .global "FreeVoice__9ENgcAudioFP6EVoice"
 "FreeVoice__9ENgcAudioFP6EVoice":
@@ -4424,14 +4424,14 @@ lbl_802B0CD0:
 /* 802B0CF4 002AC994  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B0CF8 002AC998  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 802B0CFC 002AC99C  7D 89 03 A6 */	mtctr r12
-/* 802B0D00 002AC9A0  4E 80 04 21 */	bctrl 
+/* 802B0D00 002AC9A0  4E 80 04 21 */	bctrl
 /* 802B0D04 002AC9A4  7F E3 FB 78 */	mr r3, r31
 /* 802B0D08 002AC9A8  4B FA 92 A5 */	bl "__dl__FPv"
 /* 802B0D0C 002AC9AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0D10 002AC9B0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B0D14 002AC9B4  7C 08 03 A6 */	mtlr r0
 /* 802B0D18 002AC9B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B0D1C 002AC9BC  4E 80 00 20 */	blr 
+/* 802B0D1C 002AC9BC  4E 80 00 20 */	blr
 
 .global "AudioBindVoice__9ENgcAudioFP6EVoiceUi"
 "AudioBindVoice__9ENgcAudioFP6EVoiceUi":
@@ -4461,7 +4461,7 @@ lbl_802B0D68:
 /* 802B0D78 002ACA18  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B0D7C 002ACA1C  81 8C 00 5C */	lwz r12, 0x5c(r12)
 /* 802B0D80 002ACA20  7D 89 03 A6 */	mtctr r12
-/* 802B0D84 002ACA24  4E 80 04 21 */	bctrl 
+/* 802B0D84 002ACA24  4E 80 04 21 */	bctrl
 lbl_802B0D88:
 /* 802B0D88 002ACA28  81 9E 00 64 */	lwz r12, 0x64(r30)
 /* 802B0D8C 002ACA2C  38 7E 00 64 */	addi r3, r30, 0x64
@@ -4469,7 +4469,7 @@ lbl_802B0D88:
 /* 802B0D94 002ACA34  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B0D98 002ACA38  7C 7E 1B 78 */	mr r30, r3
 /* 802B0D9C 002ACA3C  7D 89 03 A6 */	mtctr r12
-/* 802B0DA0 002ACA40  4E 80 04 21 */	bctrl 
+/* 802B0DA0 002ACA40  4E 80 04 21 */	bctrl
 /* 802B0DA4 002ACA44  2C 1D 00 00 */	cmpwi r29, 0
 /* 802B0DA8 002ACA48  41 82 00 20 */	beq lbl_802B0DC8
 /* 802B0DAC 002ACA4C  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
@@ -4534,7 +4534,7 @@ lbl_802B0E70:
 /* 802B0E7C 002ACB1C  81 9E 00 00 */	lwz r12, 0(r30)
 /* 802B0E80 002ACB20  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B0E84 002ACB24  7D 89 03 A6 */	mtctr r12
-/* 802B0E88 002ACB28  4E 80 04 21 */	bctrl 
+/* 802B0E88 002ACB28  4E 80 04 21 */	bctrl
 lbl_802B0E8C:
 /* 802B0E8C 002ACB2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B0E90 002ACB30  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -4542,7 +4542,7 @@ lbl_802B0E8C:
 /* 802B0E98 002ACB38  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B0E9C 002ACB3C  7C 08 03 A6 */	mtlr r0
 /* 802B0EA0 002ACB40  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B0EA4 002ACB44  4E 80 00 20 */	blr 
+/* 802B0EA4 002ACB44  4E 80 00 20 */	blr
 
 .global "UnbindVoice__9ENgcAudioFP6EVoice"
 "UnbindVoice__9ENgcAudioFP6EVoice":
@@ -4557,7 +4557,7 @@ lbl_802B0E8C:
 /* 802B0EC8 002ACB68  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B0ECC 002ACB6C  7C 7F 1B 78 */	mr r31, r3
 /* 802B0ED0 002ACB70  7D 89 03 A6 */	mtctr r12
-/* 802B0ED4 002ACB74  4E 80 04 21 */	bctrl 
+/* 802B0ED4 002ACB74  4E 80 04 21 */	bctrl
 /* 802B0ED8 002ACB78  80 9E 00 08 */	lwz r4, 8(r30)
 /* 802B0EDC 002ACB7C  3C 04 00 01 */	addis r0, r4, 1
 /* 802B0EE0 002ACB80  28 00 FF FF */	cmplwi r0, 0xffff
@@ -4596,13 +4596,13 @@ lbl_802B0F50:
 /* 802B0F54 002ACBF4  7F E3 FB 78 */	mr r3, r31
 /* 802B0F58 002ACBF8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B0F5C 002ACBFC  7D 89 03 A6 */	mtctr r12
-/* 802B0F60 002ACC00  4E 80 04 21 */	bctrl 
+/* 802B0F60 002ACC00  4E 80 04 21 */	bctrl
 /* 802B0F64 002ACC04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B0F68 002ACC08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B0F6C 002ACC0C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B0F70 002ACC10  7C 08 03 A6 */	mtlr r0
 /* 802B0F74 002ACC14  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B0F78 002ACC18  4E 80 00 20 */	blr 
+/* 802B0F78 002ACC18  4E 80 00 20 */	blr
 
 .global "GetVoiceState__9ENgcAudioFP6EVoiceR10EVoiceDesc"
 "GetVoiceState__9ENgcAudioFP6EVoiceR10EVoiceDesc":
@@ -4649,7 +4649,7 @@ lbl_802B0FE8:
 /* 802B1010 002ACCB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B1014 002ACCB4  7C 08 03 A6 */	mtlr r0
 /* 802B1018 002ACCB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B101C 002ACCBC  4E 80 00 20 */	blr 
+/* 802B101C 002ACCBC  4E 80 00 20 */	blr
 
 .global "SetVoiceState__9ENgcAudioFP6EVoiceRC10EVoiceDesc"
 "SetVoiceState__9ENgcAudioFP6EVoiceRC10EVoiceDesc":
@@ -4741,12 +4741,12 @@ lbl_802B1138:
 /* 802B1148 002ACDE8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B114C 002ACDEC  7C 08 03 A6 */	mtlr r0
 /* 802B1150 002ACDF0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1154 002ACDF4  4E 80 00 20 */	blr 
+/* 802B1154 002ACDF4  4E 80 00 20 */	blr
 
 .global "SetDiscErrorCallback__9ENgcAudioFPFb_v"
 "SetDiscErrorCallback__9ENgcAudioFPFb_v":
 /* 802B1158 002ACDF8  90 83 00 44 */	stw r4, 0x44(r3)
-/* 802B115C 002ACDFC  4E 80 00 20 */	blr 
+/* 802B115C 002ACDFC  4E 80 00 20 */	blr
 
 .global "__dt__19EAudioSampleManagerFv"
 "__dt__19EAudioSampleManagerFv":
@@ -4772,7 +4772,7 @@ lbl_802B119C:
 /* 802B11A8 002ACE48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B11AC 002ACE4C  7C 08 03 A6 */	mtlr r0
 /* 802B11B0 002ACE50  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B11B4 002ACE54  4E 80 00 20 */	blr 
+/* 802B11B4 002ACE54  4E 80 00 20 */	blr
 
 .global "__dt__22ENgcAudioSampleManagerFv"
 "__dt__22ENgcAudioSampleManagerFv":
@@ -4800,7 +4800,7 @@ lbl_802B11F8:
 /* 802B1204 002ACEA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B1208 002ACEA8  7C 08 03 A6 */	mtlr r0
 /* 802B120C 002ACEAC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B1210 002ACEB0  4E 80 00 20 */	blr 
+/* 802B1210 002ACEB0  4E 80 00 20 */	blr
 
 .global "Init__22ENgcAudioSampleManagerFPCc"
 "Init__22ENgcAudioSampleManagerFPCc":
@@ -4839,7 +4839,7 @@ lbl_802B1278:
 /* 802B1290 002ACF30  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B1294 002ACF34  7C 08 03 A6 */	mtlr r0
 /* 802B1298 002ACF38  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B129C 002ACF3C  4E 80 00 20 */	blr 
+/* 802B129C 002ACF3C  4E 80 00 20 */	blr
 
 .global "Shutdown__22ENgcAudioSampleManagerFv"
 "Shutdown__22ENgcAudioSampleManagerFv":
@@ -4861,7 +4861,7 @@ lbl_802B12D4:
 /* 802B12D8 002ACF78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B12DC 002ACF7C  7C 08 03 A6 */	mtlr r0
 /* 802B12E0 002ACF80  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B12E4 002ACF84  4E 80 00 20 */	blr 
+/* 802B12E4 002ACF84  4E 80 00 20 */	blr
 
 .global "CanCache__22ENgcAudioSampleManagerFP9EResource"
 "CanCache__22ENgcAudioSampleManagerFP9EResource":
@@ -4871,10 +4871,10 @@ lbl_802B12D4:
 /* 802B12F4 002ACF94  2C 00 00 00 */	cmpwi r0, 0
 /* 802B12F8 002ACF98  40 82 00 0C */	bne lbl_802B1304
 /* 802B12FC 002ACF9C  38 60 00 00 */	li r3, 0
-/* 802B1300 002ACFA0  4E 80 00 20 */	blr 
+/* 802B1300 002ACFA0  4E 80 00 20 */	blr
 lbl_802B1304:
 /* 802B1304 002ACFA4  38 60 00 01 */	li r3, 1
-/* 802B1308 002ACFA8  4E 80 00 20 */	blr 
+/* 802B1308 002ACFA8  4E 80 00 20 */	blr
 
 .global "AllocateAndLoadResource__22ENgcAudioSampleManagerFP5EFileUiUi"
 "AllocateAndLoadResource__22ENgcAudioSampleManagerFP5EFileUiUi":
@@ -4891,7 +4891,7 @@ lbl_802B1304:
 /* 802B1334 002ACFD4  7C DB 33 78 */	mr r27, r6
 /* 802B1338 002ACFD8  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802B133C 002ACFDC  7D 89 03 A6 */	mtctr r12
-/* 802B1340 002ACFE0  4E 80 04 21 */	bctrl 
+/* 802B1340 002ACFE0  4E 80 04 21 */	bctrl
 /* 802B1344 002ACFE4  38 1A 1F 9F */	addi r0, r26, 0x1f9f
 /* 802B1348 002ACFE8  7C 7E 1B 78 */	mr r30, r3
 /* 802B134C 002ACFEC  54 1C 00 24 */	rlwinm r28, r0, 0, 0, 0x12
@@ -4911,7 +4911,7 @@ lbl_802B1350:
 /* 802B1380 002AD020  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B1384 002AD024  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802B1388 002AD028  7D 89 03 A6 */	mtctr r12
-/* 802B138C 002AD02C  4E 80 04 21 */	bctrl 
+/* 802B138C 002AD02C  4E 80 04 21 */	bctrl
 /* 802B1390 002AD030  2C 03 00 00 */	cmpwi r3, 0
 /* 802B1394 002AD034  40 82 FF BC */	bne lbl_802B1350
 lbl_802B1398:
@@ -4961,7 +4961,7 @@ lbl_802B13C4:
 /* 802B1440 002AD0E0  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802B1444 002AD0E4  7C 9E 02 14 */	add r4, r30, r0
 /* 802B1448 002AD0E8  7D 89 03 A6 */	mtctr r12
-/* 802B144C 002AD0EC  4E 80 04 21 */	bctrl 
+/* 802B144C 002AD0EC  4E 80 04 21 */	bctrl
 /* 802B1450 002AD0F0  7F 83 E3 78 */	mr r3, r28
 /* 802B1454 002AD0F4  7F 24 CB 78 */	mr r4, r25
 /* 802B1458 002AD0F8  48 00 58 29 */	bl "LoadStereo__12ERSampledataFP5EFile"
@@ -4985,7 +4985,7 @@ lbl_802B148C:
 /* 802B1498 002AD138  38 A0 00 00 */	li r5, 0
 /* 802B149C 002AD13C  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802B14A0 002AD140  7D 89 03 A6 */	mtctr r12
-/* 802B14A4 002AD144  4E 80 04 21 */	bctrl 
+/* 802B14A4 002AD144  4E 80 04 21 */	bctrl
 /* 802B14A8 002AD148  48 00 00 68 */	b lbl_802B1510
 lbl_802B14AC:
 /* 802B14AC 002AD14C  80 6D BC 34 */	lwz r3, "_pAudiosampleman"-_SDA_BASE_(r13)
@@ -5013,7 +5013,7 @@ lbl_802B14D0:
 /* 802B1500 002AD1A0  38 A0 00 01 */	li r5, 1
 /* 802B1504 002AD1A4  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802B1508 002AD1A8  7D 89 03 A6 */	mtctr r12
-/* 802B150C 002AD1AC  4E 80 04 21 */	bctrl 
+/* 802B150C 002AD1AC  4E 80 04 21 */	bctrl
 lbl_802B1510:
 /* 802B1510 002AD1B0  93 7C 00 08 */	stw r27, 8(r28)
 /* 802B1514 002AD1B4  39 61 00 30 */	addi r11, r1, 0x30
@@ -5022,7 +5022,7 @@ lbl_802B1510:
 /* 802B1520 002AD1C0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B1524 002AD1C4  7C 08 03 A6 */	mtlr r0
 /* 802B1528 002AD1C8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B152C 002AD1CC  4E 80 00 20 */	blr 
+/* 802B152C 002AD1CC  4E 80 00 20 */	blr
 
 .global "readStream__FP5EFileUiUi"
 "readStream__FP5EFileUiUi":
@@ -5038,7 +5038,7 @@ lbl_802B1510:
 /* 802B1554 002AD1F4  7F C5 F3 78 */	mr r5, r30
 /* 802B1558 002AD1F8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B155C 002AD1FC  7D 89 03 A6 */	mtctr r12
-/* 802B1560 002AD200  4E 80 04 21 */	bctrl 
+/* 802B1560 002AD200  4E 80 04 21 */	bctrl
 /* 802B1564 002AD204  7F E3 FB 78 */	mr r3, r31
 /* 802B1568 002AD208  7F C4 F3 78 */	mr r4, r30
 /* 802B156C 002AD20C  48 12 AD 05 */	bl "DCFlushRange"
@@ -5047,7 +5047,7 @@ lbl_802B1510:
 /* 802B1578 002AD218  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B157C 002AD21C  7C 08 03 A6 */	mtlr r0
 /* 802B1580 002AD220  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B1584 002AD224  4E 80 00 20 */	blr 
+/* 802B1584 002AD224  4E 80 00 20 */	blr
 
 .global "__dt__12ENgcClockManFv"
 "__dt__12ENgcClockManFv":
@@ -5067,15 +5067,15 @@ lbl_802B15B0:
 /* 802B15B8 002AD258  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B15BC 002AD25C  7C 08 03 A6 */	mtlr r0
 /* 802B15C0 002AD260  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B15C4 002AD264  4E 80 00 20 */	blr 
+/* 802B15C4 002AD264  4E 80 00 20 */	blr
 
 .global "Init__12ENgcClockManFv"
 "Init__12ENgcClockManFv":
-/* 802B15C8 002AD268  4E 80 00 20 */	blr 
+/* 802B15C8 002AD268  4E 80 00 20 */	blr
 
 .global "Update__12ENgcClockManFv"
 "Update__12ENgcClockManFv":
-/* 802B15CC 002AD26C  4E 80 00 20 */	blr 
+/* 802B15CC 002AD26C  4E 80 00 20 */	blr
 
 .global "Start__12ENgcClockManFP6EClock"
 "Start__12ENgcClockManFP6EClock":
@@ -5093,7 +5093,7 @@ lbl_802B15B0:
 /* 802B15FC 002AD29C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B1600 002AD2A0  7C 08 03 A6 */	mtlr r0
 /* 802B1604 002AD2A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B1608 002AD2A8  4E 80 00 20 */	blr 
+/* 802B1608 002AD2A8  4E 80 00 20 */	blr
 
 .global "GetSec__12ENgcClockManFP6EClock"
 "GetSec__12ENgcClockManFP6EClock":
@@ -5132,7 +5132,7 @@ lbl_802B15B0:
 /* 802B168C 002AD32C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B1690 002AD330  7C 08 03 A6 */	mtlr r0
 /* 802B1694 002AD334  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1698 002AD338  4E 80 00 20 */	blr 
+/* 802B1698 002AD338  4E 80 00 20 */	blr
 
 .global "GetSecDouble__12ENgcClockManFP6EClock"
 "GetSecDouble__12ENgcClockManFP6EClock":
@@ -5171,7 +5171,7 @@ lbl_802B15B0:
 /* 802B171C 002AD3BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B1720 002AD3C0  7C 08 03 A6 */	mtlr r0
 /* 802B1724 002AD3C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1728 002AD3C8  4E 80 00 20 */	blr 
+/* 802B1728 002AD3C8  4E 80 00 20 */	blr
 
 .global "__dt__9EClockManFv"
 "__dt__9EClockManFv":
@@ -5191,7 +5191,7 @@ lbl_802B1754:
 /* 802B175C 002AD3FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B1760 002AD400  7C 08 03 A6 */	mtlr r0
 /* 802B1764 002AD404  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B1768 002AD408  4E 80 00 20 */	blr 
+/* 802B1768 002AD408  4E 80 00 20 */	blr
 
 .global "__dt__21ENgcControllerManagerFv"
 "__dt__21ENgcControllerManagerFv":
@@ -5211,7 +5211,7 @@ lbl_802B1794:
 /* 802B179C 002AD43C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B17A0 002AD440  7C 08 03 A6 */	mtlr r0
 /* 802B17A4 002AD444  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B17A8 002AD448  4E 80 00 20 */	blr 
+/* 802B17A8 002AD448  4E 80 00 20 */	blr
 
 .global "Init__21ENgcControllerManagerFv"
 "Init__21ENgcControllerManagerFv":
@@ -5253,7 +5253,7 @@ lbl_802B1810:
 /* 802B1834 002AD4D4  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B1838 002AD4D8  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802B183C 002AD4DC  7D 89 03 A6 */	mtctr r12
-/* 802B1840 002AD4E0  4E 80 04 21 */	bctrl 
+/* 802B1840 002AD4E0  4E 80 04 21 */	bctrl
 /* 802B1844 002AD4E4  3C 80 80 51 */	lis r4, "_ctrlLastActivetime__18EControllerManager"@ha
 /* 802B1848 002AD4E8  38 60 00 01 */	li r3, 1
 /* 802B184C 002AD4EC  38 84 37 78 */	addi r4, r4, "_ctrlLastActivetime__18EControllerManager"@l
@@ -5263,11 +5263,11 @@ lbl_802B1810:
 /* 802B185C 002AD4FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B1860 002AD500  7C 08 03 A6 */	mtlr r0
 /* 802B1864 002AD504  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B1868 002AD508  4E 80 00 20 */	blr 
+/* 802B1868 002AD508  4E 80 00 20 */	blr
 
 .global "Shutdown__21ENgcControllerManagerFv"
 "Shutdown__21ENgcControllerManagerFv":
-/* 802B186C 002AD50C  4E 80 00 20 */	blr 
+/* 802B186C 002AD50C  4E 80 00 20 */	blr
 
 .global "Update__21ENgcControllerManagerFv"
 "Update__21ENgcControllerManagerFv":
@@ -5311,7 +5311,7 @@ lbl_802B18C0:
 /* 802B18FC 002AD59C  7F C3 F3 78 */	mr r3, r30
 /* 802B1900 002AD5A0  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 802B1904 002AD5A4  7D 89 03 A6 */	mtctr r12
-/* 802B1908 002AD5A8  4E 80 04 21 */	bctrl 
+/* 802B1908 002AD5A8  4E 80 04 21 */	bctrl
 /* 802B190C 002AD5AC  88 81 00 12 */	lbz r4, 0x12(r1)
 /* 802B1910 002AD5B0  7C 83 07 75 */	extsb. r3, r4
 /* 802B1914 002AD5B4  40 82 00 DC */	bne lbl_802B19F0
@@ -5402,7 +5402,7 @@ lbl_802B1A40:
 /* 802B1A50 002AD6F0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802B1A54 002AD6F4  7C 08 03 A6 */	mtlr r0
 /* 802B1A58 002AD6F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1A5C 002AD6FC  4E 80 00 20 */	blr 
+/* 802B1A5C 002AD6FC  4E 80 00 20 */	blr
 
 .global "GetStick__14ENgcControllerFRC9PADStatusii"
 "GetStick__14ENgcControllerFRC9PADStatusii":
@@ -5491,7 +5491,7 @@ lbl_802B1B7C:
 /* 802B1B7C 002AD81C  FC 20 10 90 */	fmr f1, f2
 lbl_802B1B80:
 /* 802B1B80 002AD820  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1B84 002AD824  4E 80 00 20 */	blr 
+/* 802B1B84 002AD824  4E 80 00 20 */	blr
 
 .global "GetButtons__14ENgcControllerFRC9PADStatus"
 "GetButtons__14ENgcControllerFRC9PADStatus":
@@ -5802,12 +5802,12 @@ lbl_802B1F60:
 /* 802B1F6C 002ADC0C  64 63 00 40 */	oris r3, r3, 0x40
 lbl_802B1F70:
 /* 802B1F70 002ADC10  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B1F74 002ADC14  4E 80 00 20 */	blr 
+/* 802B1F74 002ADC14  4E 80 00 20 */	blr
 
 .global "HasVibration__14ENgcControllerCFv"
 "HasVibration__14ENgcControllerCFv":
 /* 802B1F78 002ADC18  38 60 00 01 */	li r3, 1
-/* 802B1F7C 002ADC1C  4E 80 00 20 */	blr 
+/* 802B1F7C 002ADC1C  4E 80 00 20 */	blr
 
 .global "VibrateMotorOne__14ENgcControllerFf"
 "VibrateMotorOne__14ENgcControllerFf":
@@ -5827,7 +5827,7 @@ lbl_802B1F70:
 /* 802B1FB4 002ADC54  38 84 33 90 */	addi r4, r4, lbl_80453390@l
 /* 802B1FB8 002ADC58  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B1FBC 002ADC5C  7C 89 03 A6 */	mtctr r4
-/* 802B1FC0 002ADC60  4E 80 04 20 */	bctr 
+/* 802B1FC0 002ADC60  4E 80 04 20 */	bctr
 /* 802B1FC4 002ADC64  38 00 00 01 */	li r0, 1
 /* 802B1FC8 002ADC68  98 0D BC 48 */	stb r0, lbl_805D8328-_SDA_BASE_(r13)
 /* 802B1FCC 002ADC6C  48 00 00 0C */	b lbl_802B1FD8
@@ -5866,7 +5866,7 @@ lbl_802B2034:
 /* 802B2038 002ADCD8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B203C 002ADCDC  7C 08 03 A6 */	mtlr r0
 /* 802B2040 002ADCE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B2044 002ADCE4  4E 80 00 20 */	blr 
+/* 802B2044 002ADCE4  4E 80 00 20 */	blr
 
 .global "VibrateMotorTwo__14ENgcControllerFf"
 "VibrateMotorTwo__14ENgcControllerFf":
@@ -5886,7 +5886,7 @@ lbl_802B2034:
 /* 802B207C 002ADD1C  38 84 33 C0 */	addi r4, r4, lbl_804533C0@l
 /* 802B2080 002ADD20  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B2084 002ADD24  7C 89 03 A6 */	mtctr r4
-/* 802B2088 002ADD28  4E 80 04 20 */	bctr 
+/* 802B2088 002ADD28  4E 80 04 20 */	bctr
 /* 802B208C 002ADD2C  38 00 00 01 */	li r0, 1
 /* 802B2090 002ADD30  98 0D BC 48 */	stb r0, lbl_805D8328-_SDA_BASE_(r13)
 /* 802B2094 002ADD34  48 00 00 0C */	b lbl_802B20A0
@@ -5925,7 +5925,7 @@ lbl_802B20FC:
 /* 802B2100 002ADDA0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B2104 002ADDA4  7C 08 03 A6 */	mtlr r0
 /* 802B2108 002ADDA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B210C 002ADDAC  4E 80 00 20 */	blr 
+/* 802B210C 002ADDAC  4E 80 00 20 */	blr
 
 .global "StopMotorOne__14ENgcControllerFv"
 "StopMotorOne__14ENgcControllerFv":
@@ -5945,7 +5945,7 @@ lbl_802B20FC:
 /* 802B2144 002ADDE4  38 84 33 F0 */	addi r4, r4, lbl_804533F0@l
 /* 802B2148 002ADDE8  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B214C 002ADDEC  7C 89 03 A6 */	mtctr r4
-/* 802B2150 002ADDF0  4E 80 04 20 */	bctr 
+/* 802B2150 002ADDF0  4E 80 04 20 */	bctr
 /* 802B2154 002ADDF4  38 00 00 01 */	li r0, 1
 /* 802B2158 002ADDF8  98 0D BC 48 */	stb r0, lbl_805D8328-_SDA_BASE_(r13)
 /* 802B215C 002ADDFC  48 00 00 0C */	b lbl_802B2168
@@ -5984,7 +5984,7 @@ lbl_802B21C4:
 /* 802B21C8 002ADE68  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B21CC 002ADE6C  7C 08 03 A6 */	mtlr r0
 /* 802B21D0 002ADE70  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B21D4 002ADE74  4E 80 00 20 */	blr 
+/* 802B21D4 002ADE74  4E 80 00 20 */	blr
 
 .global "StopMotorTwo__14ENgcControllerFv"
 "StopMotorTwo__14ENgcControllerFv":
@@ -6004,7 +6004,7 @@ lbl_802B21C4:
 /* 802B220C 002ADEAC  38 84 34 20 */	addi r4, r4, lbl_80453420@l
 /* 802B2210 002ADEB0  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B2214 002ADEB4  7C 89 03 A6 */	mtctr r4
-/* 802B2218 002ADEB8  4E 80 04 20 */	bctr 
+/* 802B2218 002ADEB8  4E 80 04 20 */	bctr
 /* 802B221C 002ADEBC  38 00 00 01 */	li r0, 1
 /* 802B2220 002ADEC0  98 0D BC 48 */	stb r0, lbl_805D8328-_SDA_BASE_(r13)
 /* 802B2224 002ADEC4  48 00 00 0C */	b lbl_802B2230
@@ -6043,7 +6043,7 @@ lbl_802B228C:
 /* 802B2290 002ADF30  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B2294 002ADF34  7C 08 03 A6 */	mtlr r0
 /* 802B2298 002ADF38  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B229C 002ADF3C  4E 80 00 20 */	blr 
+/* 802B229C 002ADF3C  4E 80 00 20 */	blr
 
 .global "IsMotorOneActive__14ENgcControllerCFv"
 "IsMotorOneActive__14ENgcControllerCFv":
@@ -6056,7 +6056,7 @@ lbl_802B228C:
 .global "NGCGetLanguage__Fv"
 "NGCGetLanguage__Fv":
 /* 802B22A8 002ADF48  38 60 00 00 */	li r3, 0
-/* 802B22AC 002ADF4C  4E 80 00 20 */	blr 
+/* 802B22AC 002ADF4C  4E 80 00 20 */	blr
 
 .global "ENgcGetDVDErrorString__Fi"
 "ENgcGetDVDErrorString__Fi":
@@ -6074,32 +6074,32 @@ lbl_802B22CC:
 lbl_802B22D8:
 /* 802B22D8 002ADF78  3C 60 80 42 */	lis r3, "kNgcDvdErrorEnglish"@ha
 /* 802B22DC 002ADF7C  38 63 AF E0 */	addi r3, r3, "kNgcDvdErrorEnglish"@l
-/* 802B22E0 002ADF80  4E 80 00 20 */	blr 
+/* 802B22E0 002ADF80  4E 80 00 20 */	blr
 lbl_802B22E4:
 /* 802B22E4 002ADF84  3C 60 80 42 */	lis r3, "kNgcDvdErrorEnglish"@ha
 /* 802B22E8 002ADF88  38 63 AF E0 */	addi r3, r3, "kNgcDvdErrorEnglish"@l
 /* 802B22EC 002ADF8C  38 63 01 18 */	addi r3, r3, 0x118
-/* 802B22F0 002ADF90  4E 80 00 20 */	blr 
+/* 802B22F0 002ADF90  4E 80 00 20 */	blr
 lbl_802B22F4:
 /* 802B22F4 002ADF94  3C 60 80 42 */	lis r3, "kNgcDvdErrorEnglish"@ha
 /* 802B22F8 002ADF98  38 63 AF E0 */	addi r3, r3, "kNgcDvdErrorEnglish"@l
 /* 802B22FC 002ADF9C  38 63 02 30 */	addi r3, r3, 0x230
-/* 802B2300 002ADFA0  4E 80 00 20 */	blr 
+/* 802B2300 002ADFA0  4E 80 00 20 */	blr
 lbl_802B2304:
 /* 802B2304 002ADFA4  3C 60 80 42 */	lis r3, "kNgcDvdErrorEnglish"@ha
 /* 802B2308 002ADFA8  38 63 AF E0 */	addi r3, r3, "kNgcDvdErrorEnglish"@l
 /* 802B230C 002ADFAC  38 63 03 48 */	addi r3, r3, 0x348
-/* 802B2310 002ADFB0  4E 80 00 20 */	blr 
+/* 802B2310 002ADFB0  4E 80 00 20 */	blr
 lbl_802B2314:
 /* 802B2314 002ADFB4  3C 60 80 42 */	lis r3, "kNgcDvdErrorEnglish"@ha
 /* 802B2318 002ADFB8  38 63 AF E0 */	addi r3, r3, "kNgcDvdErrorEnglish"@l
-/* 802B231C 002ADFBC  4E 80 00 20 */	blr 
+/* 802B231C 002ADFBC  4E 80 00 20 */	blr
 
 .global "ForceReadCallback__FlP11DVDFileInfo"
 "ForceReadCallback__FlP11DVDFileInfo":
 /* 802B2320 002ADFC0  38 00 00 01 */	li r0, 1
 /* 802B2324 002ADFC4  98 0D A0 B8 */	stb r0, "s_doneRead"-_SDA_BASE_(r13)
-/* 802B2328 002ADFC8  4E 80 00 20 */	blr 
+/* 802B2328 002ADFC8  4E 80 00 20 */	blr
 
 .global "__dt__10ENgcEngineFv"
 "__dt__10ENgcEngineFv":
@@ -6125,7 +6125,7 @@ lbl_802B2368:
 /* 802B2374 002AE014  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B2378 002AE018  7C 08 03 A6 */	mtlr r0
 /* 802B237C 002AE01C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B2380 002AE020  4E 80 00 20 */	blr 
+/* 802B2380 002AE020  4E 80 00 20 */	blr
 
 .global "Init__10ENgcEngineFv"
 "Init__10ENgcEngineFv":
@@ -6185,7 +6185,7 @@ lbl_802B2368:
 /* 802B2458 002AE0F8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802B245C 002AE0FC  7C 08 03 A6 */	mtlr r0
 /* 802B2460 002AE100  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B2464 002AE104  4E 80 00 20 */	blr 
+/* 802B2464 002AE104  4E 80 00 20 */	blr
 
 .global "InitConsole__10ENgcEngineFv"
 "InitConsole__10ENgcEngineFv":
@@ -6233,7 +6233,7 @@ lbl_802B24F8:
 /* 802B2500 002AE1A0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B2504 002AE1A4  7C 08 03 A6 */	mtlr r0
 /* 802B2508 002AE1A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B250C 002AE1AC  4E 80 00 20 */	blr 
+/* 802B250C 002AE1AC  4E 80 00 20 */	blr
 
 .global "InitMemoryManager__10ENgcEngineFv"
 "InitMemoryManager__10ENgcEngineFv":
@@ -6475,11 +6475,11 @@ lbl_802B28A8:
 /* 802B28B4 002AE554  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B28B8 002AE558  7C 08 03 A6 */	mtlr r0
 /* 802B28BC 002AE55C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B28C0 002AE560  4E 80 00 20 */	blr 
+/* 802B28C0 002AE560  4E 80 00 20 */	blr
 
 .global "InitializeProfiler__10ENgcEngineFv"
 "InitializeProfiler__10ENgcEngineFv":
-/* 802B28C4 002AE564  4E 80 00 20 */	blr 
+/* 802B28C4 002AE564  4E 80 00 20 */	blr
 
 .global "PreFrameUpdate__10ENgcEngineFv"
 "PreFrameUpdate__10ENgcEngineFv":
@@ -6503,7 +6503,7 @@ lbl_802B28A8:
 /* 802B2900 002AE5A0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B2904 002AE5A4  7C 08 03 A6 */	mtlr r0
 /* 802B2908 002AE5A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B290C 002AE5AC  4E 80 00 20 */	blr 
+/* 802B290C 002AE5AC  4E 80 00 20 */	blr
 
 .global "ExitMovieMode__10ENgcEngineFv"
 "ExitMovieMode__10ENgcEngineFv":
@@ -6523,32 +6523,32 @@ lbl_802B28A8:
 /* 802B2944 002AE5E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B2948 002AE5E8  7C 08 03 A6 */	mtlr r0
 /* 802B294C 002AE5EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B2950 002AE5F0  4E 80 00 20 */	blr 
+/* 802B2950 002AE5F0  4E 80 00 20 */	blr
 
 .global "EventPostRetraceCallback__FUl"
 "EventPostRetraceCallback__FUl":
-/* 802B2954 002AE5F4  4E 80 00 20 */	blr 
+/* 802B2954 002AE5F4  4E 80 00 20 */	blr
 
 .global "EventPreRetraceCallback__FUl"
 "EventPreRetraceCallback__FUl":
-/* 802B2958 002AE5F8  4E 80 00 20 */	blr 
+/* 802B2958 002AE5F8  4E 80 00 20 */	blr
 
 .global "RequestReset__F9ResetType"
 "RequestReset__F9ResetType":
 /* 802B295C 002AE5FC  90 6D BC 80 */	stw r3, "s_RequestedReset"-_SDA_BASE_(r13)
-/* 802B2960 002AE600  4E 80 00 20 */	blr 
+/* 802B2960 002AE600  4E 80 00 20 */	blr
 
 .global "PowerButtonCallback__Fv"
 "PowerButtonCallback__Fv":
 /* 802B2964 002AE604  38 00 00 01 */	li r0, 1
 /* 802B2968 002AE608  90 0D BC 80 */	stw r0, "s_RequestedReset"-_SDA_BASE_(r13)
-/* 802B296C 002AE60C  4E 80 00 20 */	blr 
+/* 802B296C 002AE60C  4E 80 00 20 */	blr
 
 .global "ResetCallback__Fv"
 "ResetCallback__Fv":
 /* 802B2970 002AE610  38 00 00 02 */	li r0, 2
 /* 802B2974 002AE614  90 0D BC 80 */	stw r0, "s_RequestedReset"-_SDA_BASE_(r13)
-/* 802B2978 002AE618  4E 80 00 20 */	blr 
+/* 802B2978 002AE618  4E 80 00 20 */	blr
 
 .global "PerformReset__F9ResetType"
 "PerformReset__F9ResetType":
@@ -6687,12 +6687,12 @@ lbl_802B2B50:
 /* 802B2B5C 002AE7FC  83 A1 00 54 */	lwz r29, 0x54(r1)
 /* 802B2B60 002AE800  7C 08 03 A6 */	mtlr r0
 /* 802B2B64 002AE804  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B2B68 002AE808  4E 80 00 20 */	blr 
+/* 802B2B68 002AE808  4E 80 00 20 */	blr
 
 .global "IsResetting__10ENgcEngineFv"
 "IsResetting__10ENgcEngineFv":
 /* 802B2B6C 002AE80C  88 6D BC 70 */	lbz r3, "s_bShuttingDown"-_SDA_BASE_(r13)
-/* 802B2B70 002AE810  4E 80 00 20 */	blr 
+/* 802B2B70 002AE810  4E 80 00 20 */	blr
 
 .global "NgcDvdGetDriveStatus__10ENgcEngineFv"
 "NgcDvdGetDriveStatus__10ENgcEngineFv":
@@ -6717,7 +6717,7 @@ lbl_802B2B50:
 /* 802B2BB0 002AE850  38 84 11 00 */	addi r4, r4, lbl_80451100@l
 /* 802B2BB4 002AE854  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B2BB8 002AE858  7C 89 03 A6 */	mtctr r4
-/* 802B2BBC 002AE85C  4E 80 04 20 */	bctr 
+/* 802B2BBC 002AE85C  4E 80 04 20 */	bctr
 /* 802B2BC0 002AE860  88 0D BC 78 */	lbz r0, "s_DiskError"-_SDA_BASE_(r13)
 /* 802B2BC4 002AE864  90 6D BC 74 */	stw r3, "s_nPreviousErrorState"-_SDA_BASE_(r13)
 /* 802B2BC8 002AE868  2C 00 00 00 */	cmpwi r0, 0
@@ -6797,7 +6797,7 @@ lbl_802B2C98:
 /* 802B2CE0 002AE980  41 82 00 10 */	beq lbl_802B2CF0
 /* 802B2CE4 002AE984  7F C3 F3 78 */	mr r3, r30
 /* 802B2CE8 002AE988  7D 89 03 A6 */	mtctr r12
-/* 802B2CEC 002AE98C  4E 80 04 21 */	bctrl 
+/* 802B2CEC 002AE98C  4E 80 04 21 */	bctrl
 lbl_802B2CF0:
 /* 802B2CF0 002AE990  48 00 03 1D */	bl "XOSFontStartup__Fv"
 /* 802B2CF4 002AE994  A0 9D 00 04 */	lhz r4, 4(r29)
@@ -6921,7 +6921,7 @@ lbl_802B2E9C:
 /* 802B2EB0 002AEB50  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802B2EB4 002AEB54  7C 08 03 A6 */	mtlr r0
 /* 802B2EB8 002AEB58  38 21 00 80 */	addi r1, r1, 0x80
-/* 802B2EBC 002AEB5C  4E 80 00 20 */	blr 
+/* 802B2EBC 002AEB5C  4E 80 00 20 */	blr
 
 .global "EventAlarmHandler__FP7OSAlarmP9OSContext"
 "EventAlarmHandler__FP7OSAlarmP9OSContext":
@@ -6951,7 +6951,7 @@ lbl_802B2F0C:
 /* 802B2F18 002AEBB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B2F1C 002AEBBC  7C 08 03 A6 */	mtlr r0
 /* 802B2F20 002AEBC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B2F24 002AEBC4  4E 80 00 20 */	blr 
+/* 802B2F24 002AEBC4  4E 80 00 20 */	blr
 
 .global "EventIdleThread__FPv"
 "EventIdleThread__FPv":
@@ -7008,7 +7008,7 @@ lbl_802B2FCC:
 /* 802B2FD8 002AEC78  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B2FDC 002AEC7C  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802B2FE0 002AEC80  7D 89 03 A6 */	mtctr r12
-/* 802B2FE4 002AEC84  4E 80 04 21 */	bctrl 
+/* 802B2FE4 002AEC84  4E 80 04 21 */	bctrl
 lbl_802B2FE8:
 /* 802B2FE8 002AEC88  80 0D BC 80 */	lwz r0, "s_RequestedReset"-_SDA_BASE_(r13)
 /* 802B2FEC 002AEC8C  2C 00 00 00 */	cmpwi r0, 0
@@ -7080,7 +7080,7 @@ lbl_802B30D8:
 /* 802B30D8 002AED78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B30DC 002AED7C  7C 08 03 A6 */	mtlr r0
 /* 802B30E0 002AED80  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B30E4 002AED84  4E 80 00 20 */	blr 
+/* 802B30E4 002AED84  4E 80 00 20 */	blr
 
 .global "XOSFontShutdown__Fv"
 "XOSFontShutdown__Fv":
@@ -7104,14 +7104,14 @@ lbl_802B3118:
 /* 802B3128 002AEDC8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B312C 002AEDCC  7C 08 03 A6 */	mtlr r0
 /* 802B3130 002AEDD0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3134 002AEDD4  4E 80 00 20 */	blr 
+/* 802B3134 002AEDD4  4E 80 00 20 */	blr
 
 .global "XOSFontSetXFB__FPvii"
 "XOSFontSetXFB__FPvii":
 /* 802B3138 002AEDD8  90 6D BC 8C */	stw r3, "s_OSFontXfb"-_SDA_BASE_(r13)
 /* 802B313C 002AEDDC  90 8D BC 90 */	stw r4, "s_OSFontXfbWidth"-_SDA_BASE_(r13)
 /* 802B3140 002AEDE0  90 AD BC 94 */	stw r5, "s_OSFontXfbSize"-_SDA_BASE_(r13)
-/* 802B3144 002AEDE4  4E 80 00 20 */	blr 
+/* 802B3144 002AEDE4  4E 80 00 20 */	blr
 
 .global "XOSFontClearScreen__Fv"
 "XOSFontClearScreen__Fv":
@@ -7128,7 +7128,7 @@ lbl_802B3160:
 /* 802B3168 002AEE08  7C 03 02 14 */	add r0, r3, r0
 /* 802B316C 002AEE0C  7C 05 00 40 */	cmplw r5, r0
 /* 802B3170 002AEE10  41 80 FF E8 */	blt lbl_802B3158
-/* 802B3174 002AEE14  4E 80 00 20 */	blr 
+/* 802B3174 002AEE14  4E 80 00 20 */	blr
 
 .global "XOSFontDrawChar__FPUiii"
 "XOSFontDrawChar__FPUiii":
@@ -7199,7 +7199,7 @@ lbl_802B31DC:
 /* 802B3270 002AEF10  41 80 FF 24 */	blt lbl_802B3194
 /* 802B3274 002AEF14  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B3278 002AEF18  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B327C 002AEF1C  4E 80 00 20 */	blr 
+/* 802B327C 002AEF1C  4E 80 00 20 */	blr
 
 .global "XOSFontGetWordSize__FPUsRiRi"
 "XOSFontGetWordSize__FPUsRiRi":
@@ -7272,7 +7272,7 @@ lbl_802B3368:
 /* 802B3374 002AF014  83 A1 01 34 */	lwz r29, 0x134(r1)
 /* 802B3378 002AF018  7C 08 03 A6 */	mtlr r0
 /* 802B337C 002AF01C  38 21 01 40 */	addi r1, r1, 0x140
-/* 802B3380 002AF020  4E 80 00 20 */	blr 
+/* 802B3380 002AF020  4E 80 00 20 */	blr
 
 .global "XOSFontGetStringLineSize__FPUsRiRi"
 "XOSFontGetStringLineSize__FPUsRiRi":
@@ -7343,7 +7343,7 @@ lbl_802B345C:
 /* 802B3464 002AF104  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 802B3468 002AF108  7C 08 03 A6 */	mtlr r0
 /* 802B346C 002AF10C  38 21 01 50 */	addi r1, r1, 0x150
-/* 802B3470 002AF110  4E 80 00 20 */	blr 
+/* 802B3470 002AF110  4E 80 00 20 */	blr
 
 .global "XOSFontDrawString__FiiPUs"
 "XOSFontDrawString__FiiPUs":
@@ -7446,7 +7446,7 @@ lbl_802B35B0:
 /* 802B35C8 002AF268  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 802B35CC 002AF26C  7C 08 03 A6 */	mtlr r0
 /* 802B35D0 002AF270  38 21 01 60 */	addi r1, r1, 0x160
-/* 802B35D4 002AF274  4E 80 00 20 */	blr 
+/* 802B35D4 002AF274  4E 80 00 20 */	blr
 
 .global "__dt__12ENgcGraphicsFv"
 "__dt__12ENgcGraphicsFv":
@@ -7474,7 +7474,7 @@ lbl_802B361C:
 /* 802B3628 002AF2C8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B362C 002AF2CC  7C 08 03 A6 */	mtlr r0
 /* 802B3630 002AF2D0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3634 002AF2D4  4E 80 00 20 */	blr 
+/* 802B3634 002AF2D4  4E 80 00 20 */	blr
 
 .global "Init__12ENgcGraphicsFv"
 "Init__12ENgcGraphicsFv":
@@ -7544,7 +7544,7 @@ lbl_802B368C:
 /* 802B372C 002AF3CC  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802B3730 002AF3D0  81 8C 00 90 */	lwz r12, 0x90(r12)
 /* 802B3734 002AF3D4  7D 89 03 A6 */	mtctr r12
-/* 802B3738 002AF3D8  4E 80 04 21 */	bctrl 
+/* 802B3738 002AF3D8  4E 80 04 21 */	bctrl
 /* 802B373C 002AF3DC  90 7D 02 60 */	stw r3, 0x260(r29)
 /* 802B3740 002AF3E0  7F A3 EB 78 */	mr r3, r29
 /* 802B3744 002AF3E4  48 00 00 31 */	bl "InitShadowSurface__12ENgcGraphicsFv"
@@ -7559,7 +7559,7 @@ lbl_802B3758:
 /* 802B3764 002AF404  83 A1 00 44 */	lwz r29, 0x44(r1)
 /* 802B3768 002AF408  7C 08 03 A6 */	mtlr r0
 /* 802B376C 002AF40C  38 21 00 50 */	addi r1, r1, 0x50
-/* 802B3770 002AF410  4E 80 00 20 */	blr 
+/* 802B3770 002AF410  4E 80 00 20 */	blr
 
 .global "InitShadowSurface__12ENgcGraphicsFv"
 "InitShadowSurface__12ENgcGraphicsFv":
@@ -7592,13 +7592,13 @@ lbl_802B3758:
 /* 802B37DC 002AF47C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B37E0 002AF480  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 802B37E4 002AF484  7D 89 03 A6 */	mtctr r12
-/* 802B37E8 002AF488  4E 80 04 21 */	bctrl 
+/* 802B37E8 002AF488  4E 80 04 21 */	bctrl
 /* 802B37EC 002AF48C  90 7F 02 5C */	stw r3, 0x25c(r31)
 /* 802B37F0 002AF490  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 802B37F4 002AF494  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B37F8 002AF498  7C 08 03 A6 */	mtlr r0
 /* 802B37FC 002AF49C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B3800 002AF4A0  4E 80 00 20 */	blr 
+/* 802B3800 002AF4A0  4E 80 00 20 */	blr
 
 .global "PrepareFrameBufferToRenderShadow__12ENgcGraphicsFP3ERC"
 "PrepareFrameBufferToRenderShadow__12ENgcGraphicsFP3ERC":
@@ -7650,7 +7650,7 @@ lbl_802B3758:
 /* 802B38B8 002AF558  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B38BC 002AF55C  81 8C 00 D0 */	lwz r12, 0xd0(r12)
 /* 802B38C0 002AF560  7D 89 03 A6 */	mtctr r12
-/* 802B38C4 002AF564  4E 80 04 21 */	bctrl 
+/* 802B38C4 002AF564  4E 80 04 21 */	bctrl
 /* 802B38C8 002AF568  38 60 00 01 */	li r3, 1
 /* 802B38CC 002AF56C  38 80 00 01 */	li r4, 1
 /* 802B38D0 002AF570  38 A0 02 7E */	li r5, 0x27e
@@ -7660,7 +7660,7 @@ lbl_802B3758:
 /* 802B38E0 002AF580  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 802B38E4 002AF584  7C 08 03 A6 */	mtlr r0
 /* 802B38E8 002AF588  38 21 00 40 */	addi r1, r1, 0x40
-/* 802B38EC 002AF58C  4E 80 00 20 */	blr 
+/* 802B38EC 002AF58C  4E 80 00 20 */	blr
 
 .global "CopyFrameBufferToShadowTexture__12ENgcGraphicsFP3ERC"
 "CopyFrameBufferToShadowTexture__12ENgcGraphicsFP3ERC":
@@ -7691,11 +7691,11 @@ lbl_802B3758:
 /* 802B3944 002AF5E4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B3948 002AF5E8  7C 08 03 A6 */	mtlr r0
 /* 802B394C 002AF5EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B3950 002AF5F0  4E 80 00 20 */	blr 
+/* 802B3950 002AF5F0  4E 80 00 20 */	blr
 
 .global "GetScreenShot__12ENgcGraphicsFPCc"
 "GetScreenShot__12ENgcGraphicsFPCc":
-/* 802B3954 002AF5F4  4E 80 00 20 */	blr 
+/* 802B3954 002AF5F4  4E 80 00 20 */	blr
 
 .global "Destroy__12ENgcGraphicsFP14ERenderSurface"
 "Destroy__12ENgcGraphicsFP14ERenderSurface":
@@ -7716,7 +7716,7 @@ lbl_802B3758:
 /* 802B3990 002AF630  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B3994 002AF634  7C 08 03 A6 */	mtlr r0
 /* 802B3998 002AF638  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B399C 002AF63C  4E 80 00 20 */	blr 
+/* 802B399C 002AF63C  4E 80 00 20 */	blr
 
 .global "AllocDL__12ENgcGraphicsF6RCMode"
 "AllocDL__12ENgcGraphicsF6RCMode":
@@ -7740,19 +7740,19 @@ lbl_802B39D8:
 /* 802B39E0 002AF680  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B39E4 002AF684  7C 08 03 A6 */	mtlr r0
 /* 802B39E8 002AF688  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B39EC 002AF68C  4E 80 00 20 */	blr 
+/* 802B39EC 002AF68C  4E 80 00 20 */	blr
 
 .global "FreeDL__12ENgcGraphicsFP3EDL6RCMode"
 "FreeDL__12ENgcGraphicsFP3EDL6RCMode":
 /* 802B39F0 002AF690  2C 04 00 00 */	cmpwi r4, 0
-/* 802B39F4 002AF694  4D 82 00 20 */	beqlr 
+/* 802B39F4 002AF694  4D 82 00 20 */	beqlr
 /* 802B39F8 002AF698  7C 83 23 78 */	mr r3, r4
 /* 802B39FC 002AF69C  38 80 00 01 */	li r4, 1
 /* 802B3A00 002AF6A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3A04 002AF6A4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802B3A08 002AF6A8  7D 89 03 A6 */	mtctr r12
-/* 802B3A0C 002AF6AC  4E 80 04 20 */	bctr 
-/* 802B3A10 002AF6B0  4E 80 00 20 */	blr 
+/* 802B3A0C 002AF6AC  4E 80 04 20 */	bctr
+/* 802B3A10 002AF6B0  4E 80 00 20 */	blr
 
 .global "AllocRC__12ENgcGraphicsF6RCMode"
 "AllocRC__12ENgcGraphicsF6RCMode":
@@ -7791,21 +7791,21 @@ lbl_802B3A84:
 /* 802B3A88 002AF728  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B3A8C 002AF72C  7C 08 03 A6 */	mtlr r0
 /* 802B3A90 002AF730  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3A94 002AF734  4E 80 00 20 */	blr 
+/* 802B3A94 002AF734  4E 80 00 20 */	blr
 
 .global "FreeRC__12ENgcGraphicsFP3ERC6RCMode"
 "FreeRC__12ENgcGraphicsFP3ERC6RCMode":
 /* 802B3A98 002AF738  2C 05 00 01 */	cmpwi r5, 1
-/* 802B3A9C 002AF73C  4C 82 00 20 */	bnelr 
+/* 802B3A9C 002AF73C  4C 82 00 20 */	bnelr
 /* 802B3AA0 002AF740  2C 04 00 00 */	cmpwi r4, 0
-/* 802B3AA4 002AF744  4D 82 00 20 */	beqlr 
+/* 802B3AA4 002AF744  4D 82 00 20 */	beqlr
 /* 802B3AA8 002AF748  7C 83 23 78 */	mr r3, r4
 /* 802B3AAC 002AF74C  38 80 00 01 */	li r4, 1
 /* 802B3AB0 002AF750  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3AB4 002AF754  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802B3AB8 002AF758  7D 89 03 A6 */	mtctr r12
-/* 802B3ABC 002AF75C  4E 80 04 20 */	bctr 
-/* 802B3AC0 002AF760  4E 80 00 20 */	blr 
+/* 802B3ABC 002AF75C  4E 80 04 20 */	bctr
+/* 802B3AC0 002AF760  4E 80 00 20 */	blr
 
 .global "AllocTexture__12ENgcGraphicsFv"
 "AllocTexture__12ENgcGraphicsFv":
@@ -7824,19 +7824,19 @@ lbl_802B3AF0:
 /* 802B3AF0 002AF790  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B3AF4 002AF794  7C 08 03 A6 */	mtlr r0
 /* 802B3AF8 002AF798  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3AFC 002AF79C  4E 80 00 20 */	blr 
+/* 802B3AFC 002AF79C  4E 80 00 20 */	blr
 
 .global "FreeTexture__12ENgcGraphicsFP8ETexture"
 "FreeTexture__12ENgcGraphicsFP8ETexture":
 /* 802B3B00 002AF7A0  2C 04 00 00 */	cmpwi r4, 0
-/* 802B3B04 002AF7A4  4D 82 00 20 */	beqlr 
+/* 802B3B04 002AF7A4  4D 82 00 20 */	beqlr
 /* 802B3B08 002AF7A8  7C 83 23 78 */	mr r3, r4
 /* 802B3B0C 002AF7AC  38 80 00 01 */	li r4, 1
 /* 802B3B10 002AF7B0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3B14 002AF7B4  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802B3B18 002AF7B8  7D 89 03 A6 */	mtctr r12
-/* 802B3B1C 002AF7BC  4E 80 04 20 */	bctr 
-/* 802B3B20 002AF7C0  4E 80 00 20 */	blr 
+/* 802B3B1C 002AF7BC  4E 80 04 20 */	bctr
+/* 802B3B20 002AF7C0  4E 80 00 20 */	blr
 
 .global "AllocShader__12ENgcGraphicsFv"
 "AllocShader__12ENgcGraphicsFv":
@@ -7855,19 +7855,19 @@ lbl_802B3B50:
 /* 802B3B50 002AF7F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B3B54 002AF7F4  7C 08 03 A6 */	mtlr r0
 /* 802B3B58 002AF7F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3B5C 002AF7FC  4E 80 00 20 */	blr 
+/* 802B3B5C 002AF7FC  4E 80 00 20 */	blr
 
 .global "FreeShader__12ENgcGraphicsFP7EShader"
 "FreeShader__12ENgcGraphicsFP7EShader":
 /* 802B3B60 002AF800  2C 04 00 00 */	cmpwi r4, 0
-/* 802B3B64 002AF804  4D 82 00 20 */	beqlr 
+/* 802B3B64 002AF804  4D 82 00 20 */	beqlr
 /* 802B3B68 002AF808  7C 83 23 78 */	mr r3, r4
 /* 802B3B6C 002AF80C  38 80 00 01 */	li r4, 1
 /* 802B3B70 002AF810  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3B74 002AF814  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802B3B78 002AF818  7D 89 03 A6 */	mtctr r12
-/* 802B3B7C 002AF81C  4E 80 04 20 */	bctr 
-/* 802B3B80 002AF820  4E 80 00 20 */	blr 
+/* 802B3B7C 002AF81C  4E 80 04 20 */	bctr
+/* 802B3B80 002AF820  4E 80 00 20 */	blr
 
 .global "AllocRenderSurface__12ENgcGraphicsFv"
 "AllocRenderSurface__12ENgcGraphicsFv":
@@ -7883,19 +7883,19 @@ lbl_802B3BA4:
 /* 802B3BA4 002AF844  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B3BA8 002AF848  7C 08 03 A6 */	mtlr r0
 /* 802B3BAC 002AF84C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3BB0 002AF850  4E 80 00 20 */	blr 
+/* 802B3BB0 002AF850  4E 80 00 20 */	blr
 
 .global "FreeRenderSurface__12ENgcGraphicsFP14ERenderSurface"
 "FreeRenderSurface__12ENgcGraphicsFP14ERenderSurface":
 /* 802B3BB4 002AF854  2C 04 00 00 */	cmpwi r4, 0
-/* 802B3BB8 002AF858  4D 82 00 20 */	beqlr 
+/* 802B3BB8 002AF858  4D 82 00 20 */	beqlr
 /* 802B3BBC 002AF85C  7C 83 23 78 */	mr r3, r4
 /* 802B3BC0 002AF860  38 80 00 01 */	li r4, 1
 /* 802B3BC4 002AF864  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3BC8 002AF868  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802B3BCC 002AF86C  7D 89 03 A6 */	mtctr r12
-/* 802B3BD0 002AF870  4E 80 04 20 */	bctr 
-/* 802B3BD4 002AF874  4E 80 00 20 */	blr 
+/* 802B3BD0 002AF870  4E 80 04 20 */	bctr
+/* 802B3BD4 002AF874  4E 80 00 20 */	blr
 
 .global "AllocMovie__12ENgcGraphicsFv"
 "AllocMovie__12ENgcGraphicsFv":
@@ -7911,19 +7911,19 @@ lbl_802B3BF8:
 /* 802B3BF8 002AF898  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B3BFC 002AF89C  7C 08 03 A6 */	mtlr r0
 /* 802B3C00 002AF8A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B3C04 002AF8A4  4E 80 00 20 */	blr 
+/* 802B3C04 002AF8A4  4E 80 00 20 */	blr
 
 .global "FreeMovie__12ENgcGraphicsFP6EMovie"
 "FreeMovie__12ENgcGraphicsFP6EMovie":
 /* 802B3C08 002AF8A8  2C 04 00 00 */	cmpwi r4, 0
-/* 802B3C0C 002AF8AC  4D 82 00 20 */	beqlr 
+/* 802B3C0C 002AF8AC  4D 82 00 20 */	beqlr
 /* 802B3C10 002AF8B0  7C 83 23 78 */	mr r3, r4
 /* 802B3C14 002AF8B4  38 80 00 01 */	li r4, 1
 /* 802B3C18 002AF8B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3C1C 002AF8BC  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802B3C20 002AF8C0  7D 89 03 A6 */	mtctr r12
-/* 802B3C24 002AF8C4  4E 80 04 20 */	bctr 
-/* 802B3C28 002AF8C8  4E 80 00 20 */	blr 
+/* 802B3C24 002AF8C4  4E 80 04 20 */	bctr
+/* 802B3C28 002AF8C8  4E 80 00 20 */	blr
 
 .global "EndFrame__12ENgcGraphicsFv"
 "EndFrame__12ENgcGraphicsFv":
@@ -7957,18 +7957,18 @@ lbl_802B3BF8:
 /* 802B3C98 002AF938  38 80 00 00 */	li r4, 0
 /* 802B3C9C 002AF93C  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802B3CA0 002AF940  7D 89 03 A6 */	mtctr r12
-/* 802B3CA4 002AF944  4E 80 04 21 */	bctrl 
+/* 802B3CA4 002AF944  4E 80 04 21 */	bctrl
 /* 802B3CA8 002AF948  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B3CAC 002AF94C  7C 7C 1B 78 */	mr r28, r3
 /* 802B3CB0 002AF950  81 8C 01 A8 */	lwz r12, 0x1a8(r12)
 /* 802B3CB4 002AF954  7D 89 03 A6 */	mtctr r12
-/* 802B3CB8 002AF958  4E 80 04 21 */	bctrl 
+/* 802B3CB8 002AF958  4E 80 04 21 */	bctrl
 /* 802B3CBC 002AF95C  81 99 00 00 */	lwz r12, 0(r25)
 /* 802B3CC0 002AF960  7F 23 CB 78 */	mr r3, r25
 /* 802B3CC4 002AF964  7F 84 E3 78 */	mr r4, r28
 /* 802B3CC8 002AF968  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 802B3CCC 002AF96C  7D 89 03 A6 */	mtctr r12
-/* 802B3CD0 002AF970  4E 80 04 21 */	bctrl 
+/* 802B3CD0 002AF970  4E 80 04 21 */	bctrl
 /* 802B3CD4 002AF974  88 0D BC A0 */	lbz r0, "_ngcDrawPerfStats"-_SDA_BASE_(r13)
 /* 802B3CD8 002AF978  2C 00 00 00 */	cmpwi r0, 0
 /* 802B3CDC 002AF97C  41 82 01 DC */	beq lbl_802B3EB8
@@ -8004,7 +8004,7 @@ lbl_802B3CF4:
 /* 802B3D50 002AF9F0  38 80 00 00 */	li r4, 0
 /* 802B3D54 002AF9F4  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802B3D58 002AF9F8  7D 89 03 A6 */	mtctr r12
-/* 802B3D5C 002AF9FC  4E 80 04 21 */	bctrl 
+/* 802B3D5C 002AF9FC  4E 80 04 21 */	bctrl
 /* 802B3D60 002AFA00  7C 7B 1B 78 */	mr r27, r3
 /* 802B3D64 002AFA04  38 61 00 50 */	addi r3, r1, 0x50
 /* 802B3D68 002AFA08  7F 64 DB 78 */	mr r4, r27
@@ -8089,7 +8089,7 @@ lbl_802B3E88:
 /* 802B3E9C 002AFB3C  7F 64 DB 78 */	mr r4, r27
 /* 802B3EA0 002AFB40  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 802B3EA4 002AFB44  7D 89 03 A6 */	mtctr r12
-/* 802B3EA8 002AFB48  4E 80 04 21 */	bctrl 
+/* 802B3EA8 002AFB48  4E 80 04 21 */	bctrl
 /* 802B3EAC 002AFB4C  38 61 00 50 */	addi r3, r1, 0x50
 /* 802B3EB0 002AFB50  38 80 FF FF */	li r4, -1
 /* 802B3EB4 002AFB54  4B FE C7 01 */	bl "__dt__7EWindowFv"
@@ -8115,7 +8115,7 @@ lbl_802B3EB8:
 /* 802B3F00 002AFBA0  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 802B3F04 002AFBA4  7C 08 03 A6 */	mtlr r0
 /* 802B3F08 002AFBA8  38 21 01 A0 */	addi r1, r1, 0x1a0
-/* 802B3F0C 002AFBAC  4E 80 00 20 */	blr 
+/* 802B3F0C 002AFBAC  4E 80 00 20 */	blr
 
 .global "DrawCensorRects__12ENgcGraphicsFP3ERC"
 "DrawCensorRects__12ENgcGraphicsFP3ERC":
@@ -8147,7 +8147,7 @@ lbl_802B3F40:
 /* 802B3F70 002AFC10  C0 3F 01 74 */	lfs f1, 0x174(r31)
 /* 802B3F74 002AFC14  81 8C 01 B0 */	lwz r12, 0x1b0(r12)
 /* 802B3F78 002AFC18  7D 89 03 A6 */	mtctr r12
-/* 802B3F7C 002AFC1C  4E 80 04 21 */	bctrl 
+/* 802B3F7C 002AFC1C  4E 80 04 21 */	bctrl
 /* 802B3F80 002AFC20  3B FF 00 0C */	addi r31, r31, 0xc
 /* 802B3F84 002AFC24  3B DE 00 01 */	addi r30, r30, 1
 lbl_802B3F88:
@@ -8163,11 +8163,11 @@ lbl_802B3F88:
 /* 802B3FAC 002AFC4C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B3FB0 002AFC50  7C 08 03 A6 */	mtlr r0
 /* 802B3FB4 002AFC54  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B3FB8 002AFC58  4E 80 00 20 */	blr 
+/* 802B3FB8 002AFC58  4E 80 00 20 */	blr
 
 .global "ProcessFrameEffects__12ENgcGraphicsFv"
 "ProcessFrameEffects__12ENgcGraphicsFv":
-/* 802B3FBC 002AFC5C  4E 80 00 20 */	blr 
+/* 802B3FBC 002AFC5C  4E 80 00 20 */	blr
 
 .global "__dt__6ENgcDLFv"
 "__dt__6ENgcDLFv":
@@ -8193,7 +8193,7 @@ lbl_802B3FFC:
 /* 802B4008 002AFCA8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B400C 002AFCAC  7C 08 03 A6 */	mtlr r0
 /* 802B4010 002AFCB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4014 002AFCB4  4E 80 00 20 */	blr 
+/* 802B4014 002AFCB4  4E 80 00 20 */	blr
 
 .global "__ct__9ENgcMovieFv"
 "__ct__9ENgcMovieFv":
@@ -8251,7 +8251,7 @@ lbl_802B40B0:
 /* 802B40D8 002AFD78  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B40DC 002AFD7C  7C 08 03 A6 */	mtlr r0
 /* 802B40E0 002AFD80  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B40E4 002AFD84  4E 80 00 20 */	blr 
+/* 802B40E4 002AFD84  4E 80 00 20 */	blr
 
 .global "__dt__9ENgcMovieFv"
 "__dt__9ENgcMovieFv":
@@ -8287,7 +8287,7 @@ lbl_802B4148:
 /* 802B4154 002AFDF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B4158 002AFDF8  7C 08 03 A6 */	mtlr r0
 /* 802B415C 002AFDFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4160 002AFE00  4E 80 00 20 */	blr 
+/* 802B4160 002AFE00  4E 80 00 20 */	blr
 
 .global "Load__9ENgcMovieFP5EFileUiUiUi"
 "Load__9ENgcMovieFP5EFileUiUiUi":
@@ -8331,7 +8331,7 @@ lbl_802B41E0:
 /* 802B41F0 002AFE90  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B41F4 002AFE94  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802B41F8 002AFE98  7D 89 03 A6 */	mtctr r12
-/* 802B41FC 002AFE9C  4E 80 04 21 */	bctrl 
+/* 802B41FC 002AFE9C  4E 80 04 21 */	bctrl
 /* 802B4200 002AFEA0  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
 /* 802B4204 002AFEA4  38 80 00 00 */	li r4, 0
 /* 802B4208 002AFEA8  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
@@ -8357,7 +8357,7 @@ lbl_802B4220:
 /* 802B4250 002AFEF0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B4254 002AFEF4  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 802B4258 002AFEF8  7D 89 03 A6 */	mtctr r12
-/* 802B425C 002AFEFC  4E 80 04 21 */	bctrl 
+/* 802B425C 002AFEFC  4E 80 04 21 */	bctrl
 /* 802B4260 002AFF00  7C 64 1B 78 */	mr r4, r3
 /* 802B4264 002AFF04  38 7E 00 44 */	addi r3, r30, 0x44
 /* 802B4268 002AFF08  4B F9 82 41 */	bl "SetAllocHeap__11EAllocGroupFP6EAHeap"
@@ -8385,7 +8385,7 @@ lbl_802B42B0:
 /* 802B42BC 002AFF5C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B42C0 002AFF60  7C 08 03 A6 */	mtlr r0
 /* 802B42C4 002AFF64  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B42C8 002AFF68  4E 80 00 20 */	blr 
+/* 802B42C8 002AFF68  4E 80 00 20 */	blr
 
 .global "Start__9ENgcMovieFii"
 "Start__9ENgcMovieFii":
@@ -8453,7 +8453,7 @@ lbl_802B4388:
 /* 802B43A8 002B0048  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B43AC 002B004C  7C 08 03 A6 */	mtlr r0
 /* 802B43B0 002B0050  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B43B4 002B0054  4E 80 00 20 */	blr 
+/* 802B43B4 002B0054  4E 80 00 20 */	blr
 
 .global "Stop__9ENgcMovieFv"
 "Stop__9ENgcMovieFv":
@@ -8471,11 +8471,11 @@ lbl_802B4388:
 /* 802B43E4 002B0084  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B43E8 002B0088  7C 08 03 A6 */	mtlr r0
 /* 802B43EC 002B008C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B43F0 002B0090  4E 80 00 20 */	blr 
+/* 802B43F0 002B0090  4E 80 00 20 */	blr
 
 .global "Reset__9ENgcMovieFv"
 "Reset__9ENgcMovieFv":
-/* 802B43F4 002B0094  4E 80 00 20 */	blr 
+/* 802B43F4 002B0094  4E 80 00 20 */	blr
 
 .global "IsFinished__9ENgcMovieFv"
 "IsFinished__9ENgcMovieFv":
@@ -8504,7 +8504,7 @@ lbl_802B4440:
 /* 802B4444 002B00E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B4448 002B00E8  7C 08 03 A6 */	mtlr r0
 /* 802B444C 002B00EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4450 002B00F0  4E 80 00 20 */	blr 
+/* 802B4450 002B00F0  4E 80 00 20 */	blr
 
 .global "GetNextFrame__9ENgcMovieFv"
 "GetNextFrame__9ENgcMovieFv":
@@ -8523,7 +8523,7 @@ lbl_802B4440:
 /* 802B4484 002B0124  38 84 12 C0 */	addi r4, r4, lbl_804512C0@l
 /* 802B4488 002B0128  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802B448C 002B012C  7C 89 03 A6 */	mtctr r4
-/* 802B4490 002B0130  4E 80 04 20 */	bctr 
+/* 802B4490 002B0130  4E 80 04 20 */	bctr
 /* 802B4494 002B0134  88 0D BC DE */	lbz r0, "bPausedDueToDiskError"-_SDA_BASE_(r13)
 /* 802B4498 002B0138  2C 00 00 00 */	cmpwi r0, 0
 /* 802B449C 002B013C  40 82 00 68 */	bne lbl_802B4504
@@ -8583,7 +8583,7 @@ lbl_802B4550:
 /* 802B455C 002B01FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B4560 002B0200  7C 08 03 A6 */	mtlr r0
 /* 802B4564 002B0204  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4568 002B0208  4E 80 00 20 */	blr 
+/* 802B4568 002B0208  4E 80 00 20 */	blr
 
 .global "PlayerInit__9ENgcMovieFi"
 "PlayerInit__9ENgcMovieFi":
@@ -8668,7 +8668,7 @@ lbl_802B4688:
 /* 802B4694 002B0334  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802B4698 002B0338  7C 08 03 A6 */	mtlr r0
 /* 802B469C 002B033C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B46A0 002B0340  4E 80 00 20 */	blr 
+/* 802B46A0 002B0340  4E 80 00 20 */	blr
 
 .global "PlayerQuit__9ENgcMovieFv"
 "PlayerQuit__9ENgcMovieFv":
@@ -8698,7 +8698,7 @@ lbl_802B46E4:
 /* 802B46FC 002B039C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B4700 002B03A0  7C 08 03 A6 */	mtlr r0
 /* 802B4704 002B03A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4708 002B03A8  4E 80 00 20 */	blr 
+/* 802B4708 002B03A8  4E 80 00 20 */	blr
 
 .global "PlayerOpen__9ENgcMovieFUib"
 "PlayerOpen__9ENgcMovieFUib":
@@ -8890,7 +8890,7 @@ lbl_802B49A8:
 /* 802B49B0 002B0650  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B49B4 002B0654  7C 08 03 A6 */	mtlr r0
 /* 802B49B8 002B0658  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B49BC 002B065C  4E 80 00 20 */	blr 
+/* 802B49BC 002B065C  4E 80 00 20 */	blr
 
 .global "PlayerClose__9ENgcMovieFv"
 "PlayerClose__9ENgcMovieFv":
@@ -8916,7 +8916,7 @@ lbl_802B4A04:
 /* 802B4A04 002B06A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B4A08 002B06A8  7C 08 03 A6 */	mtlr r0
 /* 802B4A0C 002B06AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4A10 002B06B0  4E 80 00 20 */	blr 
+/* 802B4A10 002B06B0  4E 80 00 20 */	blr
 
 .global "PlayerCreateBuffers__9ENgcMovieFR11EAllocGroup"
 "PlayerCreateBuffers__9ENgcMovieFR11EAllocGroup":
@@ -9039,7 +9039,7 @@ lbl_802B4BBC:
 /* 802B4BC4 002B0864  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B4BC8 002B0868  7C 08 03 A6 */	mtlr r0
 /* 802B4BCC 002B086C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B4BD0 002B0870  4E 80 00 20 */	blr 
+/* 802B4BD0 002B0870  4E 80 00 20 */	blr
 
 .global "PlayerPrepare__9ENgcMovieFiii"
 "PlayerPrepare__9ENgcMovieFiii":
@@ -9215,7 +9215,7 @@ lbl_802B4E2C:
 /* 802B4E34 002B0AD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B4E38 002B0AD8  7C 08 03 A6 */	mtlr r0
 /* 802B4E3C 002B0ADC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B4E40 002B0AE0  4E 80 00 20 */	blr 
+/* 802B4E40 002B0AE0  4E 80 00 20 */	blr
 
 .global "PlayerPlay__9ENgcMovieFv"
 "PlayerPlay__9ENgcMovieFv":
@@ -9241,10 +9241,10 @@ lbl_802B4E6C:
 /* 802B4E8C 002B0B2C  90 85 00 D4 */	stw r4, 0xd4(r5)
 /* 802B4E90 002B0B30  90 05 00 CC */	stw r0, 0xcc(r5)
 /* 802B4E94 002B0B34  90 05 00 C8 */	stw r0, 0xc8(r5)
-/* 802B4E98 002B0B38  4E 80 00 20 */	blr 
+/* 802B4E98 002B0B38  4E 80 00 20 */	blr
 lbl_802B4E9C:
 /* 802B4E9C 002B0B3C  38 60 00 00 */	li r3, 0
-/* 802B4EA0 002B0B40  4E 80 00 20 */	blr 
+/* 802B4EA0 002B0B40  4E 80 00 20 */	blr
 
 .global "PlayerStop__9ENgcMovieFv"
 "PlayerStop__9ENgcMovieFv":
@@ -9296,7 +9296,7 @@ lbl_802B4F48:
 /* 802B4F4C 002B0BEC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B4F50 002B0BF0  7C 08 03 A6 */	mtlr r0
 /* 802B4F54 002B0BF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B4F58 002B0BF8  4E 80 00 20 */	blr 
+/* 802B4F58 002B0BF8  4E 80 00 20 */	blr
 
 .global "PlayerPause__9ENgcMovieFv"
 "PlayerPause__9ENgcMovieFv":
@@ -9312,10 +9312,10 @@ lbl_802B4F48:
 /* 802B4F80 002B0C20  38 60 00 01 */	li r3, 1
 /* 802B4F84 002B0C24  98 04 00 A2 */	stb r0, 0xa2(r4)
 /* 802B4F88 002B0C28  98 04 00 A1 */	stb r0, 0xa1(r4)
-/* 802B4F8C 002B0C2C  4E 80 00 20 */	blr 
+/* 802B4F8C 002B0C2C  4E 80 00 20 */	blr
 lbl_802B4F90:
 /* 802B4F90 002B0C30  38 60 00 00 */	li r3, 0
-/* 802B4F94 002B0C34  4E 80 00 20 */	blr 
+/* 802B4F94 002B0C34  4E 80 00 20 */	blr
 
 .global "PlayerDrawCurrentFrame__9ENgcMovieFP16_GXRenderModeObjUiUiUiUi"
 "PlayerDrawCurrentFrame__9ENgcMovieFP16_GXRenderModeObjUiUiUiUi":
@@ -9370,7 +9370,7 @@ lbl_802B504C:
 /* 802B5054 002B0CF4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B5058 002B0CF8  7C 08 03 A6 */	mtlr r0
 /* 802B505C 002B0CFC  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B5060 002B0D00  4E 80 00 20 */	blr 
+/* 802B5060 002B0D00  4E 80 00 20 */	blr
 
 .global "PlayerGetVideoInfo__9ENgcMovieFP12THPVideoInfo"
 "PlayerGetVideoInfo__9ENgcMovieFP12THPVideoInfo":
@@ -9394,7 +9394,7 @@ lbl_802B50A0:
 /* 802B50A0 002B0D40  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B50A4 002B0D44  7C 08 03 A6 */	mtlr r0
 /* 802B50A8 002B0D48  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B50AC 002B0D4C  4E 80 00 20 */	blr 
+/* 802B50AC 002B0D4C  4E 80 00 20 */	blr
 
 .global "PlayerGetAudioInfo__9ENgcMovieFP12THPAudioInfo"
 "PlayerGetAudioInfo__9ENgcMovieFP12THPAudioInfo":
@@ -9418,14 +9418,14 @@ lbl_802B50EC:
 /* 802B50EC 002B0D8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B50F0 002B0D90  7C 08 03 A6 */	mtlr r0
 /* 802B50F4 002B0D94  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B50F8 002B0D98  4E 80 00 20 */	blr 
+/* 802B50F8 002B0D98  4E 80 00 20 */	blr
 
 .global "PlayerGetState__9ENgcMovieFv"
 "PlayerGetState__9ENgcMovieFv":
 /* 802B50FC 002B0D9C  3C 60 80 53 */	lis r3, "ActivePlayer"@ha
 /* 802B5100 002B0DA0  38 63 6F 20 */	addi r3, r3, "ActivePlayer"@l
 /* 802B5104 002B0DA4  88 63 00 A1 */	lbz r3, 0xa1(r3)
-/* 802B5108 002B0DA8  4E 80 00 20 */	blr 
+/* 802B5108 002B0DA8  4E 80 00 20 */	blr
 
 .global "PlayerDrawDone__9ENgcMovieFv"
 "PlayerDrawDone__9ENgcMovieFv":
@@ -9449,7 +9449,7 @@ lbl_802B5144:
 /* 802B5148 002B0DE8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B514C 002B0DEC  7C 08 03 A6 */	mtlr r0
 /* 802B5150 002B0DF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5154 002B0DF4  4E 80 00 20 */	blr 
+/* 802B5154 002B0DF4  4E 80 00 20 */	blr
 
 .global "PauseSound__9ENgcMovieFb"
 "PauseSound__9ENgcMovieFb":
@@ -9458,11 +9458,11 @@ lbl_802B5144:
 /* 802B5160 002B0E00  98 6D BC DC */	stb r3, "gIsSoundPaused"-_SDA_BASE_(r13)
 /* 802B5164 002B0E04  7C 00 23 78 */	or r0, r0, r4
 /* 802B5168 002B0E08  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 802B516C 002B0E0C  4E 80 00 20 */	blr 
+/* 802B516C 002B0E0C  4E 80 00 20 */	blr
 
 .global "THPGXYuv2RgbSetup__FP16_GXRenderModeObj"
 "THPGXYuv2RgbSetup__FP16_GXRenderModeObj":
-/* 802B5170 002B0E10  4E 80 00 20 */	blr 
+/* 802B5170 002B0E10  4E 80 00 20 */	blr
 
 .global "THPGXYuv2RgbDraw__FPUcPUcPUcssssss"
 "THPGXYuv2RgbDraw__FPUcPUcPUcssssss":
@@ -9581,7 +9581,7 @@ lbl_802B5144:
 /* 802B5334 002B0FD4  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802B5338 002B0FD8  7C 08 03 A6 */	mtlr r0
 /* 802B533C 002B0FDC  38 21 00 90 */	addi r1, r1, 0x90
-/* 802B5340 002B0FE0  4E 80 00 20 */	blr 
+/* 802B5340 002B0FE0  4E 80 00 20 */	blr
 
 .global "InitAllMessageQueue__Fv"
 "InitAllMessageQueue__Fv":
@@ -9641,7 +9641,7 @@ lbl_802B53E8:
 /* 802B5404 002B10A4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B5408 002B10A8  7C 08 03 A6 */	mtlr r0
 /* 802B540C 002B10AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5410 002B10B0  4E 80 00 20 */	blr 
+/* 802B5410 002B10B0  4E 80 00 20 */	blr
 
 .global "WaitUntilPrepare__Fv"
 "WaitUntilPrepare__Fv":
@@ -9660,7 +9660,7 @@ lbl_802B53E8:
 /* 802B5444 002B10E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B5448 002B10E8  7C 08 03 A6 */	mtlr r0
 /* 802B544C 002B10EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5450 002B10F0  4E 80 00 20 */	blr 
+/* 802B5450 002B10F0  4E 80 00 20 */	blr
 
 .global "PlayControl__FUl"
 "PlayControl__FUl":
@@ -9673,7 +9673,7 @@ lbl_802B53E8:
 /* 802B546C 002B110C  2C 0C 00 00 */	cmpwi r12, 0
 /* 802B5470 002B1110  41 82 00 0C */	beq lbl_802B547C
 /* 802B5474 002B1114  7D 89 03 A6 */	mtctr r12
-/* 802B5478 002B1118  4E 80 04 21 */	bctrl 
+/* 802B5478 002B1118  4E 80 04 21 */	bctrl
 lbl_802B547C:
 /* 802B547C 002B111C  3F E0 80 53 */	lis r31, "ActivePlayer"@ha
 /* 802B5480 002B1120  3B C0 FF FF */	li r30, -1
@@ -9844,7 +9844,7 @@ lbl_802B56D0:
 /* 802B56D8 002B1378  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B56DC 002B137C  7C 08 03 A6 */	mtlr r0
 /* 802B56E0 002B1380  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B56E4 002B1384  4E 80 00 20 */	blr 
+/* 802B56E4 002B1384  4E 80 00 20 */	blr
 
 .global "ProperTimingForStart__Fv"
 "ProperTimingForStart__Fv":
@@ -9878,7 +9878,7 @@ lbl_802B5744:
 /* 802B5744 002B13E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B5748 002B13E8  7C 08 03 A6 */	mtlr r0
 /* 802B574C 002B13EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5750 002B13F0  4E 80 00 20 */	blr 
+/* 802B5750 002B13F0  4E 80 00 20 */	blr
 
 .global "ProperTimingForGettingNextFrame__Fv"
 "ProperTimingForGettingNextFrame__Fv":
@@ -9961,7 +9961,7 @@ lbl_802B5864:
 /* 802B586C 002B150C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802B5870 002B1510  7C 08 03 A6 */	mtlr r0
 /* 802B5874 002B1514  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B5878 002B1518  4E 80 00 20 */	blr 
+/* 802B5878 002B1518  4E 80 00 20 */	blr
 
 .global "PushUsedTextureSet__FPv"
 "PushUsedTextureSet__FPv":
@@ -9991,7 +9991,7 @@ lbl_802B58C4:
 /* 802B58C4 002B1564  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B58C8 002B1568  7C 08 03 A6 */	mtlr r0
 /* 802B58CC 002B156C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B58D0 002B1570  4E 80 00 20 */	blr 
+/* 802B58D0 002B1570  4E 80 00 20 */	blr
 
 .global "THPAudioMixCallback__Fv"
 "THPAudioMixCallback__Fv":
@@ -10005,7 +10005,7 @@ lbl_802B58C4:
 /* 802B58F0 002B1590  41 82 00 14 */	beq lbl_802B5904
 /* 802B58F4 002B1594  81 8D BC CC */	lwz r12, "OldAIDCallback"-_SDA_BASE_(r13)
 /* 802B58F8 002B1598  7D 89 03 A6 */	mtctr r12
-/* 802B58FC 002B159C  4E 80 04 21 */	bctrl 
+/* 802B58FC 002B159C  4E 80 04 21 */	bctrl
 /* 802B5900 002B15A0  48 00 01 50 */	b lbl_802B5A50
 lbl_802B5904:
 /* 802B5904 002B15A4  80 0D BC D8 */	lwz r0, "AudioSystem"-_SDA_BASE_(r13)
@@ -10048,7 +10048,7 @@ lbl_802B597C:
 lbl_802B5994:
 /* 802B5994 002B1634  81 8D BC CC */	lwz r12, "OldAIDCallback"-_SDA_BASE_(r13)
 /* 802B5998 002B1638  7D 89 03 A6 */	mtctr r12
-/* 802B599C 002B163C  4E 80 04 21 */	bctrl 
+/* 802B599C 002B163C  4E 80 04 21 */	bctrl
 /* 802B59A0 002B1640  48 08 00 11 */	bl "AIGetDMAStartAddr"
 /* 802B59A4 002B1644  3C 03 80 00 */	addis r0, r3, 0x8000
 /* 802B59A8 002B1648  90 0D BC D0 */	stw r0, "LastAudioBuffer"-_SDA_BASE_(r13)
@@ -10056,7 +10056,7 @@ lbl_802B5994:
 lbl_802B59B0:
 /* 802B59B0 002B1650  81 8D BC CC */	lwz r12, "OldAIDCallback"-_SDA_BASE_(r13)
 /* 802B59B4 002B1654  7D 89 03 A6 */	mtctr r12
-/* 802B59B8 002B1658  4E 80 04 21 */	bctrl 
+/* 802B59B8 002B1658  4E 80 04 21 */	bctrl
 /* 802B59BC 002B165C  48 07 FF F5 */	bl "AIGetDMAStartAddr"
 /* 802B59C0 002B1660  3C 03 80 00 */	addis r0, r3, 0x8000
 /* 802B59C4 002B1664  90 0D BC D4 */	stw r0, "CurAudioBuffer"-_SDA_BASE_(r13)
@@ -10102,7 +10102,7 @@ lbl_802B5A50:
 /* 802B5A58 002B16F8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B5A5C 002B16FC  7C 08 03 A6 */	mtlr r0
 /* 802B5A60 002B1700  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5A64 002B1704  4E 80 00 20 */	blr 
+/* 802B5A64 002B1704  4E 80 00 20 */	blr
 
 .global "MixAudio__FPsPsUi"
 "MixAudio__FPsPsUi":
@@ -10368,7 +10368,7 @@ lbl_802B5DEC:
 /* 802B5DF4 002B1A94  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B5DF8 002B1A98  7C 08 03 A6 */	mtlr r0
 /* 802B5DFC 002B1A9C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B5E00 002B1AA0  4E 80 00 20 */	blr 
+/* 802B5E00 002B1AA0  4E 80 00 20 */	blr
 
 .global "CreateReadThread__Fl"
 "CreateReadThread__Fl":
@@ -10414,17 +10414,17 @@ lbl_802B5E94:
 /* 802B5E98 002B1B38  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B5E9C 002B1B3C  7C 08 03 A6 */	mtlr r0
 /* 802B5EA0 002B1B40  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5EA4 002B1B44  4E 80 00 20 */	blr 
+/* 802B5EA4 002B1B44  4E 80 00 20 */	blr
 
 .global "ReadThreadStart__Fv"
 "ReadThreadStart__Fv":
 /* 802B5EA8 002B1B48  80 0D BC BC */	lwz r0, "ReadThreadCreated"-_SDA_BASE_(r13)
 /* 802B5EAC 002B1B4C  2C 00 00 00 */	cmpwi r0, 0
-/* 802B5EB0 002B1B50  4D 82 00 20 */	beqlr 
+/* 802B5EB0 002B1B50  4D 82 00 20 */	beqlr
 /* 802B5EB4 002B1B54  3C 60 80 53 */	lis r3, "ReadThread"@ha
 /* 802B5EB8 002B1B58  38 63 71 C8 */	addi r3, r3, "ReadThread"@l
 /* 802B5EBC 002B1B5C  48 12 DA 64 */	b "OSResumeThread"
-/* 802B5EC0 002B1B60  4E 80 00 20 */	blr 
+/* 802B5EC0 002B1B60  4E 80 00 20 */	blr
 
 .global "ReadThreadCancel__Fv"
 "ReadThreadCancel__Fv":
@@ -10443,7 +10443,7 @@ lbl_802B5EF0:
 /* 802B5EF0 002B1B90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B5EF4 002B1B94  7C 08 03 A6 */	mtlr r0
 /* 802B5EF8 002B1B98  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B5EFC 002B1B9C  4E 80 00 20 */	blr 
+/* 802B5EFC 002B1B9C  4E 80 00 20 */	blr
 
 .global "Reader__FPv"
 "Reader__FPv":
@@ -10534,7 +10534,7 @@ lbl_802B5FE0:
 /* 802B6020 002B1CC0  80 61 00 08 */	lwz r3, 8(r1)
 /* 802B6024 002B1CC4  7C 08 03 A6 */	mtlr r0
 /* 802B6028 002B1CC8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B602C 002B1CCC  4E 80 00 20 */	blr 
+/* 802B602C 002B1CCC  4E 80 00 20 */	blr
 
 .global "PushFreeReadBuffer__FPv"
 "PushFreeReadBuffer__FPv":
@@ -10602,17 +10602,17 @@ lbl_802B6108:
 /* 802B610C 002B1DAC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B6110 002B1DB0  7C 08 03 A6 */	mtlr r0
 /* 802B6114 002B1DB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6118 002B1DB8  4E 80 00 20 */	blr 
+/* 802B6118 002B1DB8  4E 80 00 20 */	blr
 
 .global "AudioDecodeThreadStart__Fv"
 "AudioDecodeThreadStart__Fv":
 /* 802B611C 002B1DBC  80 0D BC B8 */	lwz r0, "AudioDecodeThreadCreated"-_SDA_BASE_(r13)
 /* 802B6120 002B1DC0  2C 00 00 00 */	cmpwi r0, 0
-/* 802B6124 002B1DC4  4D 82 00 20 */	beqlr 
+/* 802B6124 002B1DC4  4D 82 00 20 */	beqlr
 /* 802B6128 002B1DC8  3C 60 80 53 */	lis r3, "AudioDecodeThread"@ha
 /* 802B612C 002B1DCC  38 63 5B B0 */	addi r3, r3, "AudioDecodeThread"@l
 /* 802B6130 002B1DD0  48 12 D7 F0 */	b "OSResumeThread"
-/* 802B6134 002B1DD4  4E 80 00 20 */	blr 
+/* 802B6134 002B1DD4  4E 80 00 20 */	blr
 
 .global "AudioDecodeThreadCancel__Fv"
 "AudioDecodeThreadCancel__Fv":
@@ -10631,7 +10631,7 @@ lbl_802B6164:
 /* 802B6164 002B1E04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6168 002B1E08  7C 08 03 A6 */	mtlr r0
 /* 802B616C 002B1E0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6170 002B1E10  4E 80 00 20 */	blr 
+/* 802B6170 002B1E10  4E 80 00 20 */	blr
 
 .global "AudioDecoder__FPv"
 "AudioDecoder__FPv":
@@ -10765,7 +10765,7 @@ lbl_802B6324:
 /* 802B6334 002B1FD4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B6338 002B1FD8  7C 08 03 A6 */	mtlr r0
 /* 802B633C 002B1FDC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B6340 002B1FE0  4E 80 00 20 */	blr 
+/* 802B6340 002B1FE0  4E 80 00 20 */	blr
 
 .global "PopFreeAudioBuffer__Fv"
 "PopFreeAudioBuffer__Fv":
@@ -10781,7 +10781,7 @@ lbl_802B6324:
 /* 802B6368 002B2008  80 61 00 08 */	lwz r3, 8(r1)
 /* 802B636C 002B200C  7C 08 03 A6 */	mtlr r0
 /* 802B6370 002B2010  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6374 002B2014  4E 80 00 20 */	blr 
+/* 802B6374 002B2014  4E 80 00 20 */	blr
 
 .global "PushFreeAudioBuffer__FPv"
 "PushFreeAudioBuffer__FPv":
@@ -10811,7 +10811,7 @@ lbl_802B63C0:
 /* 802B63C0 002B2060  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B63C4 002B2064  7C 08 03 A6 */	mtlr r0
 /* 802B63C8 002B2068  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B63CC 002B206C  4E 80 00 20 */	blr 
+/* 802B63CC 002B206C  4E 80 00 20 */	blr
 
 .global "PushDecodedAudioBuffer__FPv"
 "PushDecodedAudioBuffer__FPv":
@@ -10879,17 +10879,17 @@ lbl_802B64A8:
 /* 802B64AC 002B214C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B64B0 002B2150  7C 08 03 A6 */	mtlr r0
 /* 802B64B4 002B2154  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B64B8 002B2158  4E 80 00 20 */	blr 
+/* 802B64B8 002B2158  4E 80 00 20 */	blr
 
 .global "VideoDecodeThreadStart__Fv"
 "VideoDecodeThreadStart__Fv":
 /* 802B64BC 002B215C  80 0D BC B0 */	lwz r0, "VideoDecodeThreadCreated"-_SDA_BASE_(r13)
 /* 802B64C0 002B2160  2C 00 00 00 */	cmpwi r0, 0
-/* 802B64C4 002B2164  4D 82 00 20 */	beqlr 
+/* 802B64C4 002B2164  4D 82 00 20 */	beqlr
 /* 802B64C8 002B2168  3C 60 80 53 */	lis r3, "VideoDecodeThread"@ha
 /* 802B64CC 002B216C  38 63 48 40 */	addi r3, r3, "VideoDecodeThread"@l
 /* 802B64D0 002B2170  48 12 D4 50 */	b "OSResumeThread"
-/* 802B64D4 002B2174  4E 80 00 20 */	blr 
+/* 802B64D4 002B2174  4E 80 00 20 */	blr
 
 .global "VideoDecodeThreadCancel__Fv"
 "VideoDecodeThreadCancel__Fv":
@@ -10908,7 +10908,7 @@ lbl_802B6504:
 /* 802B6504 002B21A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6508 002B21A8  7C 08 03 A6 */	mtlr r0
 /* 802B650C 002B21AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6510 002B21B0  4E 80 00 20 */	blr 
+/* 802B6510 002B21B0  4E 80 00 20 */	blr
 
 .global "VideoDecoder__FPv"
 "VideoDecoder__FPv":
@@ -11172,7 +11172,7 @@ lbl_802B689C:
 /* 802B68A4 002B2544  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B68A8 002B2548  7C 08 03 A6 */	mtlr r0
 /* 802B68AC 002B254C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B68B0 002B2550  4E 80 00 20 */	blr 
+/* 802B68B0 002B2550  4E 80 00 20 */	blr
 
 .global "PopFreeTextureSet__Fv"
 "PopFreeTextureSet__Fv":
@@ -11188,7 +11188,7 @@ lbl_802B689C:
 /* 802B68D8 002B2578  80 61 00 08 */	lwz r3, 8(r1)
 /* 802B68DC 002B257C  7C 08 03 A6 */	mtlr r0
 /* 802B68E0 002B2580  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B68E4 002B2584  4E 80 00 20 */	blr 
+/* 802B68E4 002B2584  4E 80 00 20 */	blr
 
 .global "PushFreeTextureSet__FPv"
 "PushFreeTextureSet__FPv":
@@ -11218,7 +11218,7 @@ lbl_802B6930:
 /* 802B6930 002B25D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6934 002B25D4  7C 08 03 A6 */	mtlr r0
 /* 802B6938 002B25D8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B693C 002B25DC  4E 80 00 20 */	blr 
+/* 802B693C 002B25DC  4E 80 00 20 */	blr
 
 .global "PushDecodedTextureSet__FPv"
 "PushDecodedTextureSet__FPv":
@@ -11273,7 +11273,7 @@ lbl_802B69D4:
 /* 802B69EC 002B268C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B69F0 002B2690  7C 08 03 A6 */	mtlr r0
 /* 802B69F4 002B2694  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B69F8 002B2698  4E 80 00 20 */	blr 
+/* 802B69F8 002B2698  4E 80 00 20 */	blr
 
 .global "ClampGenericStick__FPScPScffii"
 "ClampGenericStick__FPScPScffii":
@@ -11332,7 +11332,7 @@ lbl_802B6AC4:
 /* 802B6AC4 002B2764  98 03 00 00 */	stb r0, 0(r3)
 /* 802B6AC8 002B2768  98 A4 00 00 */	stb r5, 0(r4)
 /* 802B6ACC 002B276C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B6AD0 002B2770  4E 80 00 20 */	blr 
+/* 802B6AD0 002B2770  4E 80 00 20 */	blr
 
 .global "ClampGenericTrigger__FPUcUcUc"
 "ClampGenericTrigger__FPUcUcUc":
@@ -11341,7 +11341,7 @@ lbl_802B6AC4:
 /* 802B6ADC 002B277C  41 81 00 10 */	bgt lbl_802B6AEC
 /* 802B6AE0 002B2780  38 00 00 00 */	li r0, 0
 /* 802B6AE4 002B2784  98 03 00 00 */	stb r0, 0(r3)
-/* 802B6AE8 002B2788  4E 80 00 20 */	blr 
+/* 802B6AE8 002B2788  4E 80 00 20 */	blr
 lbl_802B6AEC:
 /* 802B6AEC 002B278C  7C 00 28 40 */	cmplw r0, r5
 /* 802B6AF0 002B2790  40 81 00 08 */	ble lbl_802B6AF8
@@ -11350,7 +11350,7 @@ lbl_802B6AF8:
 /* 802B6AF8 002B2798  88 03 00 00 */	lbz r0, 0(r3)
 /* 802B6AFC 002B279C  7C 04 00 50 */	subf r0, r4, r0
 /* 802B6B00 002B27A0  98 03 00 00 */	stb r0, 0(r3)
-/* 802B6B04 002B27A4  4E 80 00 20 */	blr 
+/* 802B6B04 002B27A4  4E 80 00 20 */	blr
 
 .global "__ct__12ERSampledataFv"
 "__ct__12ERSampledataFv":
@@ -11371,7 +11371,7 @@ lbl_802B6AF8:
 /* 802B6B40 002B27E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6B44 002B27E4  7C 08 03 A6 */	mtlr r0
 /* 802B6B48 002B27E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6B4C 002B27EC  4E 80 00 20 */	blr 
+/* 802B6B4C 002B27EC  4E 80 00 20 */	blr
 
 .global "__dt__12ERSampledataFv"
 "__dt__12ERSampledataFv":
@@ -11424,7 +11424,7 @@ lbl_802B6BEC:
 /* 802B6BFC 002B289C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B6C00 002B28A0  7C 08 03 A6 */	mtlr r0
 /* 802B6C04 002B28A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B6C08 002B28A8  4E 80 00 20 */	blr 
+/* 802B6C08 002B28A8  4E 80 00 20 */	blr
 
 .global "Load__12ERSampledataFP5EFile"
 "Load__12ERSampledataFP5EFile":
@@ -11444,7 +11444,7 @@ lbl_802B6BEC:
 /* 802B6C40 002B28E0  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B6C44 002B28E4  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B6C48 002B28E8  7D 89 03 A6 */	mtctr r12
-/* 802B6C4C 002B28EC  4E 80 04 21 */	bctrl 
+/* 802B6C4C 002B28EC  4E 80 04 21 */	bctrl
 /* 802B6C50 002B28F0  80 9E 00 14 */	lwz r4, 0x14(r30)
 /* 802B6C54 002B28F4  80 64 00 04 */	lwz r3, 4(r4)
 /* 802B6C58 002B28F8  54 60 07 FF */	clrlwi. r0, r3, 0x1f
@@ -11457,7 +11457,7 @@ lbl_802B6C68:
 /* 802B6C70 002B2910  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B6C74 002B2914  7C 08 03 A6 */	mtlr r0
 /* 802B6C78 002B2918  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6C7C 002B291C  4E 80 00 20 */	blr 
+/* 802B6C7C 002B291C  4E 80 00 20 */	blr
 
 .global "LoadStereo__12ERSampledataFP5EFile"
 "LoadStereo__12ERSampledataFP5EFile":
@@ -11477,7 +11477,7 @@ lbl_802B6C68:
 /* 802B6CB4 002B2954  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B6CB8 002B2958  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802B6CBC 002B295C  7D 89 03 A6 */	mtctr r12
-/* 802B6CC0 002B2960  4E 80 04 21 */	bctrl 
+/* 802B6CC0 002B2960  4E 80 04 21 */	bctrl
 /* 802B6CC4 002B2964  80 9E 00 18 */	lwz r4, 0x18(r30)
 /* 802B6CC8 002B2968  80 64 00 04 */	lwz r3, 4(r4)
 /* 802B6CCC 002B296C  54 60 07 FF */	clrlwi. r0, r3, 0x1f
@@ -11490,7 +11490,7 @@ lbl_802B6CDC:
 /* 802B6CE4 002B2984  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802B6CE8 002B2988  7C 08 03 A6 */	mtlr r0
 /* 802B6CEC 002B298C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6CF0 002B2990  4E 80 00 20 */	blr 
+/* 802B6CF0 002B2990  4E 80 00 20 */	blr
 
 .global "__ct__6ENgcRCFv"
 "__ct__6ENgcRCFv":
@@ -11508,7 +11508,7 @@ lbl_802B6CDC:
 /* 802B6D20 002B29C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6D24 002B29C4  7C 08 03 A6 */	mtlr r0
 /* 802B6D28 002B29C8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6D2C 002B29CC  4E 80 00 20 */	blr 
+/* 802B6D2C 002B29CC  4E 80 00 20 */	blr
 
 .global "__dt__6ENgcRCFv"
 "__dt__6ENgcRCFv":
@@ -11534,7 +11534,7 @@ lbl_802B6D6C:
 /* 802B6D78 002B2A18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B6D7C 002B2A1C  7C 08 03 A6 */	mtlr r0
 /* 802B6D80 002B2A20  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B6D84 002B2A24  4E 80 00 20 */	blr 
+/* 802B6D84 002B2A24  4E 80 00 20 */	blr
 
 .global "Init__6ENgcRCF6RCMode"
 "Init__6ENgcRCF6RCMode":
@@ -11549,21 +11549,21 @@ lbl_802B6D6C:
 /* 802B6D9C 002B2A3C  98 A3 00 15 */	stb r5, 0x15(r3)
 /* 802B6DA0 002B2A40  2C 00 00 00 */	cmpwi r0, 0
 /* 802B6DA4 002B2A44  98 83 00 16 */	stb r4, 0x16(r3)
-/* 802B6DA8 002B2A48  4C 82 00 20 */	bnelr 
+/* 802B6DA8 002B2A48  4C 82 00 20 */	bnelr
 /* 802B6DAC 002B2A4C  80 83 00 04 */	lwz r4, 4(r3)
 /* 802B6DB0 002B2A50  88 04 00 50 */	lbz r0, 0x50(r4)
 /* 802B6DB4 002B2A54  2C 00 00 00 */	cmpwi r0, 0
-/* 802B6DB8 002B2A58  4C 82 00 20 */	bnelr 
+/* 802B6DB8 002B2A58  4C 82 00 20 */	bnelr
 /* 802B6DBC 002B2A5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B6DC0 002B2A60  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B6DC4 002B2A64  7D 89 03 A6 */	mtctr r12
-/* 802B6DC8 002B2A68  4E 80 04 20 */	bctr 
-/* 802B6DCC 002B2A6C  4E 80 00 20 */	blr 
+/* 802B6DC8 002B2A68  4E 80 04 20 */	bctr
+/* 802B6DCC 002B2A6C  4E 80 00 20 */	blr
 
 .global "TriStrip__6ENgcRCFPC7EGEVerti"
 "TriStrip__6ENgcRCFPC7EGEVerti":
 /* 802B6DD0 002B2A70  2C 05 00 00 */	cmpwi r5, 0
-/* 802B6DD4 002B2A74  4D 82 00 20 */	beqlr 
+/* 802B6DD4 002B2A74  4D 82 00 20 */	beqlr
 /* 802B6DD8 002B2A78  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 802B6DDC 002B2A7C  2C 00 00 00 */	cmpwi r0, 0
 /* 802B6DE0 002B2A80  40 82 00 20 */	bne lbl_802B6E00
@@ -11576,7 +11576,7 @@ lbl_802B6D6C:
 /* 802B6DFC 002B2A9C  48 00 63 28 */	b "TriStrip__12ENgcRendererFPC7EGEVerti"
 lbl_802B6E00:
 /* 802B6E00 002B2AA0  4B FD E7 00 */	b "TriStrip__3ERCFPC7EGEVerti"
-/* 802B6E04 002B2AA4  4E 80 00 20 */	blr 
+/* 802B6E04 002B2AA4  4E 80 00 20 */	blr
 
 .global "TriStrip__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb"
 "TriStrip__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb":
@@ -11762,7 +11762,7 @@ lbl_802B708C:
 /* 802B7098 002B2D38  38 A0 00 00 */	li r5, 0
 /* 802B709C 002B2D3C  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B70A0 002B2D40  7D 89 03 A6 */	mtctr r12
-/* 802B70A4 002B2D44  4E 80 04 21 */	bctrl 
+/* 802B70A4 002B2D44  4E 80 04 21 */	bctrl
 /* 802B70A8 002B2D48  80 AF 00 04 */	lwz r5, 4(r15)
 /* 802B70AC 002B2D4C  7D E3 7B 78 */	mr r3, r15
 /* 802B70B0 002B2D50  38 80 00 04 */	li r4, 4
@@ -11772,7 +11772,7 @@ lbl_802B708C:
 /* 802B70C0 002B2D60  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B70C4 002B2D64  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B70C8 002B2D68  7D 89 03 A6 */	mtctr r12
-/* 802B70CC 002B2D6C  4E 80 04 21 */	bctrl 
+/* 802B70CC 002B2D6C  4E 80 04 21 */	bctrl
 /* 802B70D0 002B2D70  38 00 00 2A */	li r0, 0x2a
 /* 802B70D4 002B2D74  98 03 00 00 */	stb r0, 0(r3)
 /* 802B70D8 002B2D78  92 03 00 04 */	stw r16, 4(r3)
@@ -11787,14 +11787,14 @@ lbl_802B708C:
 /* 802B70FC 002B2D9C  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B7100 002B2DA0  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B7104 002B2DA4  7D 89 03 A6 */	mtctr r12
-/* 802B7108 002B2DA8  4E 80 04 21 */	bctrl 
+/* 802B7108 002B2DA8  4E 80 04 21 */	bctrl
 lbl_802B710C:
 /* 802B710C 002B2DAC  39 61 00 60 */	addi r11, r1, 0x60
 /* 802B7110 002B2DB0  48 15 82 7D */	bl "_restgpr_14"
 /* 802B7114 002B2DB4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802B7118 002B2DB8  7C 08 03 A6 */	mtlr r0
 /* 802B711C 002B2DBC  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B7120 002B2DC0  4E 80 00 20 */	blr 
+/* 802B7120 002B2DC0  4E 80 00 20 */	blr
 
 .global "TriStripRef__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb"
 "TriStripRef__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb":
@@ -11896,7 +11896,7 @@ lbl_802B726C:
 /* 802B7278 002B2F18  38 A0 00 00 */	li r5, 0
 /* 802B727C 002B2F1C  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7280 002B2F20  7D 89 03 A6 */	mtctr r12
-/* 802B7284 002B2F24  4E 80 04 21 */	bctrl 
+/* 802B7284 002B2F24  4E 80 04 21 */	bctrl
 /* 802B7288 002B2F28  80 B7 00 04 */	lwz r5, 4(r23)
 /* 802B728C 002B2F2C  7E E3 BB 78 */	mr r3, r23
 /* 802B7290 002B2F30  38 80 00 04 */	li r4, 4
@@ -11906,7 +11906,7 @@ lbl_802B726C:
 /* 802B72A0 002B2F40  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B72A4 002B2F44  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B72A8 002B2F48  7D 89 03 A6 */	mtctr r12
-/* 802B72AC 002B2F4C  4E 80 04 21 */	bctrl 
+/* 802B72AC 002B2F4C  4E 80 04 21 */	bctrl
 /* 802B72B0 002B2F50  38 00 00 2A */	li r0, 0x2a
 /* 802B72B4 002B2F54  98 03 00 00 */	stb r0, 0(r3)
 /* 802B72B8 002B2F58  93 03 00 04 */	stw r24, 4(r3)
@@ -11921,14 +11921,14 @@ lbl_802B726C:
 /* 802B72DC 002B2F7C  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B72E0 002B2F80  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B72E4 002B2F84  7D 89 03 A6 */	mtctr r12
-/* 802B72E8 002B2F88  4E 80 04 21 */	bctrl 
+/* 802B72E8 002B2F88  4E 80 04 21 */	bctrl
 lbl_802B72EC:
 /* 802B72EC 002B2F8C  39 61 00 50 */	addi r11, r1, 0x50
 /* 802B72F0 002B2F90  48 15 80 B1 */	bl "_restgpr_19"
 /* 802B72F4 002B2F94  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802B72F8 002B2F98  7C 08 03 A6 */	mtlr r0
 /* 802B72FC 002B2F9C  38 21 00 50 */	addi r1, r1, 0x50
-/* 802B7300 002B2FA0  4E 80 00 20 */	blr 
+/* 802B7300 002B2FA0  4E 80 00 20 */	blr
 
 .global "TriStrip__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc"
 "TriStrip__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc":
@@ -12105,7 +12105,7 @@ lbl_802B756C:
 /* 802B7578 002B3218  38 A0 00 00 */	li r5, 0
 /* 802B757C 002B321C  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7580 002B3220  7D 89 03 A6 */	mtctr r12
-/* 802B7584 002B3224  4E 80 04 21 */	bctrl 
+/* 802B7584 002B3224  4E 80 04 21 */	bctrl
 /* 802B7588 002B3228  80 AF 00 04 */	lwz r5, 4(r15)
 /* 802B758C 002B322C  7D E3 7B 78 */	mr r3, r15
 /* 802B7590 002B3230  38 80 00 04 */	li r4, 4
@@ -12115,7 +12115,7 @@ lbl_802B756C:
 /* 802B75A0 002B3240  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B75A4 002B3244  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B75A8 002B3248  7D 89 03 A6 */	mtctr r12
-/* 802B75AC 002B324C  4E 80 04 21 */	bctrl 
+/* 802B75AC 002B324C  4E 80 04 21 */	bctrl
 /* 802B75B0 002B3250  38 00 00 2A */	li r0, 0x2a
 /* 802B75B4 002B3254  98 03 00 00 */	stb r0, 0(r3)
 /* 802B75B8 002B3258  92 23 00 04 */	stw r17, 4(r3)
@@ -12129,14 +12129,14 @@ lbl_802B756C:
 /* 802B75D8 002B3278  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B75DC 002B327C  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B75E0 002B3280  7D 89 03 A6 */	mtctr r12
-/* 802B75E4 002B3284  4E 80 04 21 */	bctrl 
+/* 802B75E4 002B3284  4E 80 04 21 */	bctrl
 lbl_802B75E8:
 /* 802B75E8 002B3288  39 61 00 70 */	addi r11, r1, 0x70
 /* 802B75EC 002B328C  48 15 7D A1 */	bl "_restgpr_14"
 /* 802B75F0 002B3290  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802B75F4 002B3294  7C 08 03 A6 */	mtlr r0
 /* 802B75F8 002B3298  38 21 00 70 */	addi r1, r1, 0x70
-/* 802B75FC 002B329C  4E 80 00 20 */	blr 
+/* 802B75FC 002B329C  4E 80 00 20 */	blr
 
 .global "TriStripRef__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc"
 "TriStripRef__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc":
@@ -12238,7 +12238,7 @@ lbl_802B774C:
 /* 802B7758 002B33F8  38 A0 00 00 */	li r5, 0
 /* 802B775C 002B33FC  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7760 002B3400  7D 89 03 A6 */	mtctr r12
-/* 802B7764 002B3404  4E 80 04 21 */	bctrl 
+/* 802B7764 002B3404  4E 80 04 21 */	bctrl
 /* 802B7768 002B3408  80 BA 00 04 */	lwz r5, 4(r26)
 /* 802B776C 002B340C  7F 43 D3 78 */	mr r3, r26
 /* 802B7770 002B3410  38 80 00 04 */	li r4, 4
@@ -12248,7 +12248,7 @@ lbl_802B774C:
 /* 802B7780 002B3420  81 9A 00 00 */	lwz r12, 0(r26)
 /* 802B7784 002B3424  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B7788 002B3428  7D 89 03 A6 */	mtctr r12
-/* 802B778C 002B342C  4E 80 04 21 */	bctrl 
+/* 802B778C 002B342C  4E 80 04 21 */	bctrl
 /* 802B7790 002B3430  38 00 00 2A */	li r0, 0x2a
 /* 802B7794 002B3434  98 03 00 00 */	stb r0, 0(r3)
 /* 802B7798 002B3438  93 63 00 04 */	stw r27, 4(r3)
@@ -12262,14 +12262,14 @@ lbl_802B774C:
 /* 802B77B8 002B3458  81 9A 00 00 */	lwz r12, 0(r26)
 /* 802B77BC 002B345C  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B77C0 002B3460  7D 89 03 A6 */	mtctr r12
-/* 802B77C4 002B3464  4E 80 04 21 */	bctrl 
+/* 802B77C4 002B3464  4E 80 04 21 */	bctrl
 lbl_802B77C8:
 /* 802B77C8 002B3468  39 61 00 60 */	addi r11, r1, 0x60
 /* 802B77CC 002B346C  48 15 7B D1 */	bl "_restgpr_18"
 /* 802B77D0 002B3470  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802B77D4 002B3474  7C 08 03 A6 */	mtlr r0
 /* 802B77D8 002B3478  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B77DC 002B347C  4E 80 00 20 */	blr 
+/* 802B77DC 002B347C  4E 80 00 20 */	blr
 
 .global "TriStripRefNumWeights__6ENgcRCFiPCsPCsPCUcPCScUcPCUcPPsb"
 "TriStripRefNumWeights__6ENgcRCFiPCsPCsPCUcPCScUcPCUcPPsb":
@@ -12374,7 +12374,7 @@ lbl_802B7934:
 /* 802B7940 002B35E0  38 A0 00 00 */	li r5, 0
 /* 802B7944 002B35E4  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7948 002B35E8  7D 89 03 A6 */	mtctr r12
-/* 802B794C 002B35EC  4E 80 04 21 */	bctrl 
+/* 802B794C 002B35EC  4E 80 04 21 */	bctrl
 /* 802B7950 002B35F0  80 B6 00 04 */	lwz r5, 4(r22)
 /* 802B7954 002B35F4  7E C3 B3 78 */	mr r3, r22
 /* 802B7958 002B35F8  38 80 00 05 */	li r4, 5
@@ -12384,7 +12384,7 @@ lbl_802B7934:
 /* 802B7968 002B3608  81 96 00 00 */	lwz r12, 0(r22)
 /* 802B796C 002B360C  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B7970 002B3610  7D 89 03 A6 */	mtctr r12
-/* 802B7974 002B3614  4E 80 04 21 */	bctrl 
+/* 802B7974 002B3614  4E 80 04 21 */	bctrl
 /* 802B7978 002B3618  38 80 00 38 */	li r4, 0x38
 /* 802B797C 002B361C  7C 12 00 D0 */	neg r0, r18
 /* 802B7980 002B3620  98 83 00 00 */	stb r4, 0(r3)
@@ -12409,14 +12409,14 @@ lbl_802B7934:
 /* 802B79CC 002B366C  81 96 00 00 */	lwz r12, 0(r22)
 /* 802B79D0 002B3670  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B79D4 002B3674  7D 89 03 A6 */	mtctr r12
-/* 802B79D8 002B3678  4E 80 04 21 */	bctrl 
+/* 802B79D8 002B3678  4E 80 04 21 */	bctrl
 lbl_802B79DC:
 /* 802B79DC 002B367C  39 61 00 60 */	addi r11, r1, 0x60
 /* 802B79E0 002B3680  48 15 79 BD */	bl "_restgpr_18"
 /* 802B79E4 002B3684  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802B79E8 002B3688  7C 08 03 A6 */	mtlr r0
 /* 802B79EC 002B368C  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B79F0 002B3690  4E 80 00 20 */	blr 
+/* 802B79F0 002B3690  4E 80 00 20 */	blr
 
 .global "TriStrip__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs"
 "TriStrip__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs":
@@ -12589,7 +12589,7 @@ lbl_802B7C4C:
 /* 802B7C58 002B38F8  38 A0 00 00 */	li r5, 0
 /* 802B7C5C 002B38FC  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7C60 002B3900  7D 89 03 A6 */	mtctr r12
-/* 802B7C64 002B3904  4E 80 04 21 */	bctrl 
+/* 802B7C64 002B3904  4E 80 04 21 */	bctrl
 /* 802B7C68 002B3908  80 AF 00 04 */	lwz r5, 4(r15)
 /* 802B7C6C 002B390C  7D E3 7B 78 */	mr r3, r15
 /* 802B7C70 002B3910  38 80 00 05 */	li r4, 5
@@ -12599,7 +12599,7 @@ lbl_802B7C4C:
 /* 802B7C80 002B3920  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B7C84 002B3924  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B7C88 002B3928  7D 89 03 A6 */	mtctr r12
-/* 802B7C8C 002B392C  4E 80 04 21 */	bctrl 
+/* 802B7C8C 002B392C  4E 80 04 21 */	bctrl
 /* 802B7C90 002B3930  38 00 00 38 */	li r0, 0x38
 /* 802B7C94 002B3934  38 80 00 00 */	li r4, 0
 /* 802B7C98 002B3938  98 03 00 00 */	stb r0, 0(r3)
@@ -12619,14 +12619,14 @@ lbl_802B7C4C:
 /* 802B7CD0 002B3970  81 8F 00 00 */	lwz r12, 0(r15)
 /* 802B7CD4 002B3974  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B7CD8 002B3978  7D 89 03 A6 */	mtctr r12
-/* 802B7CDC 002B397C  4E 80 04 21 */	bctrl 
+/* 802B7CDC 002B397C  4E 80 04 21 */	bctrl
 lbl_802B7CE0:
 /* 802B7CE0 002B3980  39 61 00 70 */	addi r11, r1, 0x70
 /* 802B7CE4 002B3984  48 15 76 A9 */	bl "_restgpr_14"
 /* 802B7CE8 002B3988  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802B7CEC 002B398C  7C 08 03 A6 */	mtlr r0
 /* 802B7CF0 002B3990  38 21 00 70 */	addi r1, r1, 0x70
-/* 802B7CF4 002B3994  4E 80 00 20 */	blr 
+/* 802B7CF4 002B3994  4E 80 00 20 */	blr
 
 .global "TriStripRef__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs"
 "TriStripRef__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs":
@@ -12729,7 +12729,7 @@ lbl_802B7E48:
 /* 802B7E54 002B3AF4  38 A0 00 00 */	li r5, 0
 /* 802B7E58 002B3AF8  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B7E5C 002B3AFC  7D 89 03 A6 */	mtctr r12
-/* 802B7E60 002B3B00  4E 80 04 21 */	bctrl 
+/* 802B7E60 002B3B00  4E 80 04 21 */	bctrl
 /* 802B7E64 002B3B04  80 B5 00 04 */	lwz r5, 4(r21)
 /* 802B7E68 002B3B08  7E A3 AB 78 */	mr r3, r21
 /* 802B7E6C 002B3B0C  38 80 00 05 */	li r4, 5
@@ -12739,7 +12739,7 @@ lbl_802B7E48:
 /* 802B7E7C 002B3B1C  81 95 00 00 */	lwz r12, 0(r21)
 /* 802B7E80 002B3B20  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B7E84 002B3B24  7D 89 03 A6 */	mtctr r12
-/* 802B7E88 002B3B28  4E 80 04 21 */	bctrl 
+/* 802B7E88 002B3B28  4E 80 04 21 */	bctrl
 /* 802B7E8C 002B3B2C  38 80 00 38 */	li r4, 0x38
 /* 802B7E90 002B3B30  38 00 00 00 */	li r0, 0
 /* 802B7E94 002B3B34  98 83 00 00 */	stb r4, 0(r3)
@@ -12758,14 +12758,14 @@ lbl_802B7E48:
 /* 802B7EC8 002B3B68  81 95 00 00 */	lwz r12, 0(r21)
 /* 802B7ECC 002B3B6C  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B7ED0 002B3B70  7D 89 03 A6 */	mtctr r12
-/* 802B7ED4 002B3B74  4E 80 04 21 */	bctrl 
+/* 802B7ED4 002B3B74  4E 80 04 21 */	bctrl
 lbl_802B7ED8:
 /* 802B7ED8 002B3B78  39 61 00 60 */	addi r11, r1, 0x60
 /* 802B7EDC 002B3B7C  48 15 74 BD */	bl "_restgpr_17"
 /* 802B7EE0 002B3B80  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802B7EE4 002B3B84  7C 08 03 A6 */	mtlr r0
 /* 802B7EE8 002B3B88  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B7EEC 002B3B8C  4E 80 00 20 */	blr 
+/* 802B7EEC 002B3B8C  4E 80 00 20 */	blr
 
 .global "TextureCacheInvalidate__6ENgcRCFv"
 "TextureCacheInvalidate__6ENgcRCFv":
@@ -12791,7 +12791,7 @@ lbl_802B7ED8:
 /* 802B7F3C 002B3BDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B7F40 002B3BE0  7C 08 03 A6 */	mtlr r0
 /* 802B7F44 002B3BE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B7F48 002B3BE8  4E 80 00 20 */	blr 
+/* 802B7F48 002B3BE8  4E 80 00 20 */	blr
 
 .global "TriStripDL__6ENgcRCFPCUciiPCfPCfPCUcPCSc"
 "TriStripDL__6ENgcRCFPCUciiPCfPCfPCUcPCSc":
@@ -12913,7 +12913,7 @@ lbl_802B80E4:
 /* 802B80F4 002B3D94  38 A0 00 00 */	li r5, 0
 /* 802B80F8 002B3D98  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B80FC 002B3D9C  7D 89 03 A6 */	mtctr r12
-/* 802B8100 002B3DA0  4E 80 04 21 */	bctrl 
+/* 802B8100 002B3DA0  4E 80 04 21 */	bctrl
 /* 802B8104 002B3DA4  80 B0 00 04 */	lwz r5, 4(r16)
 /* 802B8108 002B3DA8  7E 03 83 78 */	mr r3, r16
 /* 802B810C 002B3DAC  38 80 00 04 */	li r4, 4
@@ -12923,7 +12923,7 @@ lbl_802B80E4:
 /* 802B811C 002B3DBC  81 90 00 00 */	lwz r12, 0(r16)
 /* 802B8120 002B3DC0  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B8124 002B3DC4  7D 89 03 A6 */	mtctr r12
-/* 802B8128 002B3DC8  4E 80 04 21 */	bctrl 
+/* 802B8128 002B3DC8  4E 80 04 21 */	bctrl
 /* 802B812C 002B3DCC  38 00 00 44 */	li r0, 0x44
 /* 802B8130 002B3DD0  98 03 00 00 */	stb r0, 0(r3)
 /* 802B8134 002B3DD4  92 63 00 04 */	stw r19, 4(r3)
@@ -12937,14 +12937,14 @@ lbl_802B80E4:
 /* 802B8154 002B3DF4  81 90 00 00 */	lwz r12, 0(r16)
 /* 802B8158 002B3DF8  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B815C 002B3DFC  7D 89 03 A6 */	mtctr r12
-/* 802B8160 002B3E00  4E 80 04 21 */	bctrl 
+/* 802B8160 002B3E00  4E 80 04 21 */	bctrl
 lbl_802B8164:
 /* 802B8164 002B3E04  39 61 00 50 */	addi r11, r1, 0x50
 /* 802B8168 002B3E08  48 15 72 2D */	bl "_restgpr_16"
 /* 802B816C 002B3E0C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802B8170 002B3E10  7C 08 03 A6 */	mtlr r0
 /* 802B8174 002B3E14  38 21 00 50 */	addi r1, r1, 0x50
-/* 802B8178 002B3E18  4E 80 00 20 */	blr 
+/* 802B8178 002B3E18  4E 80 00 20 */	blr
 
 .global "TriStripDLRef__6ENgcRCFPCUciiPCfPCfPCUcPCScb"
 "TriStripDLRef__6ENgcRCFPCUciiPCfPCfPCUcPCScb":
@@ -12995,7 +12995,7 @@ lbl_802B8210:
 /* 802B8220 002B3EC0  38 A0 00 00 */	li r5, 0
 /* 802B8224 002B3EC4  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B8228 002B3EC8  7D 89 03 A6 */	mtctr r12
-/* 802B822C 002B3ECC  4E 80 04 21 */	bctrl 
+/* 802B822C 002B3ECC  4E 80 04 21 */	bctrl
 /* 802B8230 002B3ED0  80 B7 00 04 */	lwz r5, 4(r23)
 /* 802B8234 002B3ED4  7E E3 BB 78 */	mr r3, r23
 /* 802B8238 002B3ED8  38 80 00 04 */	li r4, 4
@@ -13005,7 +13005,7 @@ lbl_802B8210:
 /* 802B8248 002B3EE8  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B824C 002B3EEC  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B8250 002B3EF0  7D 89 03 A6 */	mtctr r12
-/* 802B8254 002B3EF4  4E 80 04 21 */	bctrl 
+/* 802B8254 002B3EF4  4E 80 04 21 */	bctrl
 /* 802B8258 002B3EF8  38 00 00 44 */	li r0, 0x44
 /* 802B825C 002B3EFC  98 03 00 00 */	stb r0, 0(r3)
 /* 802B8260 002B3F00  93 43 00 04 */	stw r26, 4(r3)
@@ -13020,14 +13020,14 @@ lbl_802B8210:
 /* 802B8284 002B3F24  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B8288 002B3F28  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B828C 002B3F2C  7D 89 03 A6 */	mtctr r12
-/* 802B8290 002B3F30  4E 80 04 21 */	bctrl 
+/* 802B8290 002B3F30  4E 80 04 21 */	bctrl
 lbl_802B8294:
 /* 802B8294 002B3F34  39 61 00 30 */	addi r11, r1, 0x30
 /* 802B8298 002B3F38  48 15 71 19 */	bl "_restgpr_23"
 /* 802B829C 002B3F3C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B82A0 002B3F40  7C 08 03 A6 */	mtlr r0
 /* 802B82A4 002B3F44  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B82A8 002B3F48  4E 80 00 20 */	blr 
+/* 802B82A8 002B3F48  4E 80 00 20 */	blr
 
 .global "TriStripDL__6ENgcRCFPCUciiPCsPCsPCUcPCSc"
 "TriStripDL__6ENgcRCFPCUciiPCsPCsPCUcPCSc":
@@ -13097,7 +13097,7 @@ lbl_802B838C:
 /* 802B839C 002B403C  38 A0 00 00 */	li r5, 0
 /* 802B83A0 002B4040  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B83A4 002B4044  7D 89 03 A6 */	mtctr r12
-/* 802B83A8 002B4048  4E 80 04 21 */	bctrl 
+/* 802B83A8 002B4048  4E 80 04 21 */	bctrl
 /* 802B83AC 002B404C  80 B7 00 04 */	lwz r5, 4(r23)
 /* 802B83B0 002B4050  7E E3 BB 78 */	mr r3, r23
 /* 802B83B4 002B4054  38 80 00 04 */	li r4, 4
@@ -13107,7 +13107,7 @@ lbl_802B838C:
 /* 802B83C4 002B4064  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B83C8 002B4068  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B83CC 002B406C  7D 89 03 A6 */	mtctr r12
-/* 802B83D0 002B4070  4E 80 04 21 */	bctrl 
+/* 802B83D0 002B4070  4E 80 04 21 */	bctrl
 /* 802B83D4 002B4074  38 00 00 43 */	li r0, 0x43
 /* 802B83D8 002B4078  98 03 00 00 */	stb r0, 0(r3)
 /* 802B83DC 002B407C  93 43 00 04 */	stw r26, 4(r3)
@@ -13121,14 +13121,14 @@ lbl_802B838C:
 /* 802B83FC 002B409C  81 97 00 00 */	lwz r12, 0(r23)
 /* 802B8400 002B40A0  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B8404 002B40A4  7D 89 03 A6 */	mtctr r12
-/* 802B8408 002B40A8  4E 80 04 21 */	bctrl 
+/* 802B8408 002B40A8  4E 80 04 21 */	bctrl
 lbl_802B840C:
 /* 802B840C 002B40AC  39 61 00 30 */	addi r11, r1, 0x30
 /* 802B8410 002B40B0  48 15 6F A1 */	bl "_restgpr_23"
 /* 802B8414 002B40B4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B8418 002B40B8  7C 08 03 A6 */	mtlr r0
 /* 802B841C 002B40BC  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B8420 002B40C0  4E 80 00 20 */	blr 
+/* 802B8420 002B40C0  4E 80 00 20 */	blr
 
 .global "TriStripDLRef__6ENgcRCFPCUciiPCsPCsPCUcPCScbb"
 "TriStripDLRef__6ENgcRCFPCUciiPCsPCsPCUcPCScbb":
@@ -13187,7 +13187,7 @@ lbl_802B84D4:
 /* 802B84E4 002B4184  38 A0 00 00 */	li r5, 0
 /* 802B84E8 002B4188  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B84EC 002B418C  7D 89 03 A6 */	mtctr r12
-/* 802B84F0 002B4190  4E 80 04 21 */	bctrl 
+/* 802B84F0 002B4190  4E 80 04 21 */	bctrl
 /* 802B84F4 002B4194  80 B6 00 04 */	lwz r5, 4(r22)
 /* 802B84F8 002B4198  7E C3 B3 78 */	mr r3, r22
 /* 802B84FC 002B419C  38 80 00 04 */	li r4, 4
@@ -13197,7 +13197,7 @@ lbl_802B84D4:
 /* 802B850C 002B41AC  81 96 00 00 */	lwz r12, 0(r22)
 /* 802B8510 002B41B0  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B8514 002B41B4  7D 89 03 A6 */	mtctr r12
-/* 802B8518 002B41B8  4E 80 04 21 */	bctrl 
+/* 802B8518 002B41B8  4E 80 04 21 */	bctrl
 /* 802B851C 002B41BC  7C 1F 00 D0 */	neg r0, r31
 /* 802B8520 002B41C0  38 80 00 43 */	li r4, 0x43
 /* 802B8524 002B41C4  98 83 00 00 */	stb r4, 0(r3)
@@ -13217,14 +13217,14 @@ lbl_802B84D4:
 /* 802B855C 002B41FC  81 96 00 00 */	lwz r12, 0(r22)
 /* 802B8560 002B4200  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B8564 002B4204  7D 89 03 A6 */	mtctr r12
-/* 802B8568 002B4208  4E 80 04 21 */	bctrl 
+/* 802B8568 002B4208  4E 80 04 21 */	bctrl
 lbl_802B856C:
 /* 802B856C 002B420C  39 61 00 40 */	addi r11, r1, 0x40
 /* 802B8570 002B4210  48 15 6E 39 */	bl "_restgpr_21"
 /* 802B8574 002B4214  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802B8578 002B4218  7C 08 03 A6 */	mtlr r0
 /* 802B857C 002B421C  38 21 00 40 */	addi r1, r1, 0x40
-/* 802B8580 002B4220  4E 80 00 20 */	blr 
+/* 802B8580 002B4220  4E 80 00 20 */	blr
 
 .global "TriList__6ENgcRCFiPCsPCsPCUcPCScPCUcb"
 "TriList__6ENgcRCFiPCsPCsPCUcPCScPCUcb":
@@ -13338,7 +13338,7 @@ lbl_802B8708:
 /* 802B8714 002B43B4  38 A0 00 00 */	li r5, 0
 /* 802B8718 002B43B8  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B871C 002B43BC  7D 89 03 A6 */	mtctr r12
-/* 802B8720 002B43C0  4E 80 04 21 */	bctrl 
+/* 802B8720 002B43C0  4E 80 04 21 */	bctrl
 /* 802B8724 002B43C4  80 B8 00 04 */	lwz r5, 4(r24)
 /* 802B8728 002B43C8  7F 03 C3 78 */	mr r3, r24
 /* 802B872C 002B43CC  38 80 00 04 */	li r4, 4
@@ -13348,7 +13348,7 @@ lbl_802B8708:
 /* 802B873C 002B43DC  81 98 00 00 */	lwz r12, 0(r24)
 /* 802B8740 002B43E0  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B8744 002B43E4  7D 89 03 A6 */	mtctr r12
-/* 802B8748 002B43E8  4E 80 04 21 */	bctrl 
+/* 802B8748 002B43E8  4E 80 04 21 */	bctrl
 /* 802B874C 002B43EC  38 00 00 45 */	li r0, 0x45
 /* 802B8750 002B43F0  98 03 00 00 */	stb r0, 0(r3)
 /* 802B8754 002B43F4  93 23 00 04 */	stw r25, 4(r3)
@@ -13363,22 +13363,22 @@ lbl_802B8708:
 /* 802B8778 002B4418  81 98 00 00 */	lwz r12, 0(r24)
 /* 802B877C 002B441C  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B8780 002B4420  7D 89 03 A6 */	mtctr r12
-/* 802B8784 002B4424  4E 80 04 21 */	bctrl 
+/* 802B8784 002B4424  4E 80 04 21 */	bctrl
 lbl_802B8788:
 /* 802B8788 002B4428  39 61 00 50 */	addi r11, r1, 0x50
 /* 802B878C 002B442C  48 15 6C 21 */	bl "_restgpr_22"
 /* 802B8790 002B4430  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802B8794 002B4434  7C 08 03 A6 */	mtlr r0
 /* 802B8798 002B4438  38 21 00 50 */	addi r1, r1, 0x50
-/* 802B879C 002B443C  4E 80 00 20 */	blr 
+/* 802B879C 002B443C  4E 80 00 20 */	blr
 
 .global "TriList__6ENgcRCFiPCfPCfPCUcPCScPCUcb"
 "TriList__6ENgcRCFiPCfPCfPCUcPCScPCUcb":
-/* 802B87A0 002B4440  4E 80 00 20 */	blr 
+/* 802B87A0 002B4440  4E 80 00 20 */	blr
 
 .global "ScreenTriList__6ENgcRCFiPCfPCfPCUc"
 "ScreenTriList__6ENgcRCFiPCfPCfPCUc":
-/* 802B87A4 002B4444  4E 80 00 20 */	blr 
+/* 802B87A4 002B4444  4E 80 00 20 */	blr
 
 .global "ReadMetrics__6ENgcRCFv"
 "ReadMetrics__6ENgcRCFv":
@@ -13404,25 +13404,25 @@ lbl_802B8788:
 /* 802B87F4 002B4494  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B87F8 002B4498  7C 08 03 A6 */	mtlr r0
 /* 802B87FC 002B449C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8800 002B44A0  4E 80 00 20 */	blr 
+/* 802B8800 002B44A0  4E 80 00 20 */	blr
 
 .global "Shader__6ENgcRCFP10ENgcShaderUi"
 "Shader__6ENgcRCFP10ENgcShaderUi":
 /* 802B8804 002B44A4  80 64 00 3C */	lwz r3, 0x3c(r4)
 /* 802B8808 002B44A8  3C 03 6F F3 */	addis r0, r3, 0x6ff3
 /* 802B880C 002B44AC  28 00 BE EF */	cmplwi r0, 0xbeef
-/* 802B8810 002B44B0  4C 82 00 20 */	bnelr 
+/* 802B8810 002B44B0  4C 82 00 20 */	bnelr
 /* 802B8814 002B44B4  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
 /* 802B8818 002B44B8  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
 /* 802B881C 002B44BC  48 00 A6 D8 */	b "SetShader__12ENgcRendererFP10ENgcShaderUi"
-/* 802B8820 002B44C0  4E 80 00 20 */	blr 
+/* 802B8820 002B44C0  4E 80 00 20 */	blr
 
 .global "SetVertexMorphingOnOrOff__6ENgcRCFb"
 "SetVertexMorphingOnOrOff__6ENgcRCFb":
 /* 802B8824 002B44C4  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
 /* 802B8828 002B44C8  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
 /* 802B882C 002B44CC  98 83 45 DC */	stb r4, 0x45dc(r3)
-/* 802B8830 002B44D0  4E 80 00 20 */	blr 
+/* 802B8830 002B44D0  4E 80 00 20 */	blr
 
 .global "ScrambleRect__6ENgcRCFRC5EVec2RC5EVec2f"
 "ScrambleRect__6ENgcRCFRC5EVec2RC5EVec2f":
@@ -13471,7 +13471,7 @@ lbl_802B8880:
 /* 802B88B0 002B4550  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B88B4 002B4554  81 8C 00 74 */	lwz r12, 0x74(r12)
 /* 802B88B8 002B4558  7D 89 03 A6 */	mtctr r12
-/* 802B88BC 002B455C  4E 80 04 21 */	bctrl 
+/* 802B88BC 002B455C  4E 80 04 21 */	bctrl
 /* 802B88C0 002B4560  2C 1D 00 04 */	cmpwi r29, 4
 /* 802B88C4 002B4564  3B E0 00 04 */	li r31, 4
 /* 802B88C8 002B4568  40 80 00 08 */	bge lbl_802B88D0
@@ -13486,7 +13486,7 @@ lbl_802B88D8:
 /* 802B88E4 002B4584  7F C5 F3 78 */	mr r5, r30
 /* 802B88E8 002B4588  81 8C 00 78 */	lwz r12, 0x78(r12)
 /* 802B88EC 002B458C  7D 89 03 A6 */	mtctr r12
-/* 802B88F0 002B4590  4E 80 04 21 */	bctrl 
+/* 802B88F0 002B4590  4E 80 04 21 */	bctrl
 /* 802B88F4 002B4594  3B DE 00 01 */	addi r30, r30, 1
 lbl_802B88F8:
 /* 802B88F8 002B4598  7C 1E F8 00 */	cmpw r30, r31
@@ -13504,7 +13504,7 @@ lbl_802B8914:
 /* 802B8924 002B45C4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B8928 002B45C8  7C 08 03 A6 */	mtlr r0
 /* 802B892C 002B45CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B8930 002B45D0  4E 80 00 20 */	blr 
+/* 802B8930 002B45D0  4E 80 00 20 */	blr
 
 .global "DisplayList__6ENgcRCFP3EDL"
 "DisplayList__6ENgcRCFP3EDL":
@@ -13543,7 +13543,7 @@ lbl_802B89A4:
 /* 802B89A8 002B4648  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B89AC 002B464C  7C 08 03 A6 */	mtlr r0
 /* 802B89B0 002B4650  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B89B4 002B4654  4E 80 00 20 */	blr 
+/* 802B89B4 002B4654  4E 80 00 20 */	blr
 
 .global "Texture__6ENgcRCFP8ETexturei"
 "Texture__6ENgcRCFP8ETexturei":
@@ -13552,16 +13552,16 @@ lbl_802B89A4:
 /* 802B89C0 002B4660  80 64 00 24 */	lwz r3, 0x24(r4)
 /* 802B89C4 002B4664  3C 03 6F F3 */	addis r0, r3, 0x6ff3
 /* 802B89C8 002B4668  28 00 BE EF */	cmplwi r0, 0xbeef
-/* 802B89CC 002B466C  4C 82 00 20 */	bnelr 
+/* 802B89CC 002B466C  4C 82 00 20 */	bnelr
 lbl_802B89D0:
 /* 802B89D0 002B4670  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
 /* 802B89D4 002B4674  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
 /* 802B89D8 002B4678  48 00 68 B4 */	b "SetTexture__12ENgcRendererFP11ENgcTexturei"
-/* 802B89DC 002B467C  4E 80 00 20 */	blr 
+/* 802B89DC 002B467C  4E 80 00 20 */	blr
 
 .global "SetMipMap__6ENgcRCFfi"
 "SetMipMap__6ENgcRCFfi":
-/* 802B89E0 002B4680  4E 80 00 20 */	blr 
+/* 802B89E0 002B4680  4E 80 00 20 */	blr
 
 .global "EnableGeometryModes__6ENgcRCFUi"
 "EnableGeometryModes__6ENgcRCFUi":
@@ -13578,7 +13578,7 @@ lbl_802B89D0:
 /* 802B8A0C 002B46AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8A10 002B46B0  7C 08 03 A6 */	mtlr r0
 /* 802B8A14 002B46B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8A18 002B46B8  4E 80 00 20 */	blr 
+/* 802B8A18 002B46B8  4E 80 00 20 */	blr
 
 .global "DisableGeometryModes__6ENgcRCFUi"
 "DisableGeometryModes__6ENgcRCFUi":
@@ -13596,7 +13596,7 @@ lbl_802B89D0:
 /* 802B8A48 002B46E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8A4C 002B46EC  7C 08 03 A6 */	mtlr r0
 /* 802B8A50 002B46F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8A54 002B46F4  4E 80 00 20 */	blr 
+/* 802B8A54 002B46F4  4E 80 00 20 */	blr
 
 .global "SetGeometryModes__6ENgcRCFUi"
 "SetGeometryModes__6ENgcRCFUi":
@@ -13613,7 +13613,7 @@ lbl_802B89D0:
 /* 802B8A80 002B4720  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8A84 002B4724  7C 08 03 A6 */	mtlr r0
 /* 802B8A88 002B4728  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8A8C 002B472C  4E 80 00 20 */	blr 
+/* 802B8A8C 002B472C  4E 80 00 20 */	blr
 
 .global "EnableRasterModes__6ENgcRCFUii"
 "EnableRasterModes__6ENgcRCFUii":
@@ -13631,7 +13631,7 @@ lbl_802B89D0:
 /* 802B8ABC 002B475C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8AC0 002B4760  7C 08 03 A6 */	mtlr r0
 /* 802B8AC4 002B4764  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8AC8 002B4768  4E 80 00 20 */	blr 
+/* 802B8AC8 002B4768  4E 80 00 20 */	blr
 
 .global "DisableRasterModes__6ENgcRCFUii"
 "DisableRasterModes__6ENgcRCFUii":
@@ -13650,7 +13650,7 @@ lbl_802B89D0:
 /* 802B8AFC 002B479C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8B00 002B47A0  7C 08 03 A6 */	mtlr r0
 /* 802B8B04 002B47A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8B08 002B47A8  4E 80 00 20 */	blr 
+/* 802B8B08 002B47A8  4E 80 00 20 */	blr
 
 .global "SetRasterModes__6ENgcRCFUii"
 "SetRasterModes__6ENgcRCFUii":
@@ -13668,7 +13668,7 @@ lbl_802B89D0:
 /* 802B8B38 002B47D8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8B3C 002B47DC  7C 08 03 A6 */	mtlr r0
 /* 802B8B40 002B47E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8B44 002B47E4  4E 80 00 20 */	blr 
+/* 802B8B44 002B47E4  4E 80 00 20 */	blr
 
 .global "Viewport__6ENgcRCFP9EViewport"
 "Viewport__6ENgcRCFP9EViewport":
@@ -13685,7 +13685,7 @@ lbl_802B89D0:
 /* 802B8B70 002B4810  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8B74 002B4814  7C 08 03 A6 */	mtlr r0
 /* 802B8B78 002B4818  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8B7C 002B481C  4E 80 00 20 */	blr 
+/* 802B8B7C 002B481C  4E 80 00 20 */	blr
 
 .global "ClipRect__6ENgcRCFRC8TRect<f>"
 "ClipRect__6ENgcRCFRC8TRect<f>":
@@ -13709,7 +13709,7 @@ lbl_802B89D0:
 /* 802B8BC4 002B4864  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B8BC8 002B4868  7C 08 03 A6 */	mtlr r0
 /* 802B8BCC 002B486C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B8BD0 002B4870  4E 80 00 20 */	blr 
+/* 802B8BD0 002B4870  4E 80 00 20 */	blr
 
 .global "Scissor__6ENgcRCFP8TRect<f>"
 "Scissor__6ENgcRCFP8TRect<f>":
@@ -13726,7 +13726,7 @@ lbl_802B89D0:
 /* 802B8BFC 002B489C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8C00 002B48A0  7C 08 03 A6 */	mtlr r0
 /* 802B8C04 002B48A4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8C08 002B48A8  4E 80 00 20 */	blr 
+/* 802B8C08 002B48A8  4E 80 00 20 */	blr
 
 .global "ViewMatrix__6ENgcRCFPC5EMat4if"
 "ViewMatrix__6ENgcRCFPC5EMat4if":
@@ -13743,7 +13743,7 @@ lbl_802B89D0:
 /* 802B8C34 002B48D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8C38 002B48D8  7C 08 03 A6 */	mtlr r0
 /* 802B8C3C 002B48DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8C40 002B48E0  4E 80 00 20 */	blr 
+/* 802B8C40 002B48E0  4E 80 00 20 */	blr
 
 .global "ProjectionMatrix__6ENgcRCFPC5EMat4"
 "ProjectionMatrix__6ENgcRCFPC5EMat4":
@@ -13760,7 +13760,7 @@ lbl_802B89D0:
 /* 802B8C6C 002B490C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8C70 002B4910  7C 08 03 A6 */	mtlr r0
 /* 802B8C74 002B4914  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8C78 002B4918  4E 80 00 20 */	blr 
+/* 802B8C78 002B4918  4E 80 00 20 */	blr
 
 .global "WindowMatrix__6ENgcRCFPC5EMat4"
 "WindowMatrix__6ENgcRCFPC5EMat4":
@@ -13777,7 +13777,7 @@ lbl_802B89D0:
 /* 802B8CA4 002B4944  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8CA8 002B4948  7C 08 03 A6 */	mtlr r0
 /* 802B8CAC 002B494C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8CB0 002B4950  4E 80 00 20 */	blr 
+/* 802B8CB0 002B4950  4E 80 00 20 */	blr
 
 .global "SaveState__6ENgcRCFv"
 "SaveState__6ENgcRCFv":
@@ -13793,7 +13793,7 @@ lbl_802B89D0:
 /* 802B8CD8 002B4978  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8CDC 002B497C  7C 08 03 A6 */	mtlr r0
 /* 802B8CE0 002B4980  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8CE4 002B4984  4E 80 00 20 */	blr 
+/* 802B8CE4 002B4984  4E 80 00 20 */	blr
 
 .global "RestoreState__6ENgcRCFv"
 "RestoreState__6ENgcRCFv":
@@ -13809,7 +13809,7 @@ lbl_802B89D0:
 /* 802B8D0C 002B49AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8D10 002B49B0  7C 08 03 A6 */	mtlr r0
 /* 802B8D14 002B49B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8D18 002B49B8  4E 80 00 20 */	blr 
+/* 802B8D18 002B49B8  4E 80 00 20 */	blr
 
 .global "Lights__6ENgcRCFP7ELights"
 "Lights__6ENgcRCFP7ELights":
@@ -13842,7 +13842,7 @@ lbl_802B8D50:
 /* 802B8D74 002B4A14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8D78 002B4A18  7C 08 03 A6 */	mtlr r0
 /* 802B8D7C 002B4A1C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8D80 002B4A20  4E 80 00 20 */	blr 
+/* 802B8D80 002B4A20  4E 80 00 20 */	blr
 
 .global "Material__6ENgcRCFP9EMaterial"
 "Material__6ENgcRCFP9EMaterial":
@@ -13859,7 +13859,7 @@ lbl_802B8D50:
 /* 802B8DAC 002B4A4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B8DB0 002B4A50  7C 08 03 A6 */	mtlr r0
 /* 802B8DB4 002B4A54  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B8DB8 002B4A58  4E 80 00 20 */	blr 
+/* 802B8DB8 002B4A58  4E 80 00 20 */	blr
 
 .global "SetFogValues__6ENgcRCFfRC5EVec4"
 "SetFogValues__6ENgcRCFfRC5EVec4":
@@ -13906,7 +13906,7 @@ lbl_802B8D50:
 /* 802B8E50 002B4AF0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802B8E54 002B4AF4  7C 08 03 A6 */	mtlr r0
 /* 802B8E58 002B4AF8  38 21 00 50 */	addi r1, r1, 0x50
-/* 802B8E5C 002B4AFC  4E 80 00 20 */	blr 
+/* 802B8E5C 002B4AFC  4E 80 00 20 */	blr
 
 .global "RectList__6ENgcRCFiPfRC5EVec4f"
 "RectList__6ENgcRCFiPfRC5EVec4f":
@@ -13936,7 +13936,7 @@ lbl_802B8EB8:
 /* 802B8EB8 002B4B58  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B8EBC 002B4B5C  7C 08 03 A6 */	mtlr r0
 /* 802B8EC0 002B4B60  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B8EC4 002B4B64  4E 80 00 20 */	blr 
+/* 802B8EC4 002B4B64  4E 80 00 20 */	blr
 
 .global "RectListRot__6ENgcRCFiPfRC5EVec4f"
 "RectListRot__6ENgcRCFiPfRC5EVec4f":
@@ -13966,7 +13966,7 @@ lbl_802B8F20:
 /* 802B8F20 002B4BC0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B8F24 002B4BC4  7C 08 03 A6 */	mtlr r0
 /* 802B8F28 002B4BC8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B8F2C 002B4BCC  4E 80 00 20 */	blr 
+/* 802B8F2C 002B4BCC  4E 80 00 20 */	blr
 
 .global "DirectRect__6ENgcRCFRC5EVec2RC5EVec2RC5EVec4f"
 "DirectRect__6ENgcRCFRC5EVec2RC5EVec2RC5EVec4f":
@@ -13999,7 +13999,7 @@ lbl_802B8F20:
 /* 802B8F98 002B4C38  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802B8F9C 002B4C3C  7C 08 03 A6 */	mtlr r0
 /* 802B8FA0 002B4C40  38 21 00 40 */	addi r1, r1, 0x40
-/* 802B8FA4 002B4C44  4E 80 00 20 */	blr 
+/* 802B8FA4 002B4C44  4E 80 00 20 */	blr
 
 .global "EnvironmentMap__6ENgcRCFbbi"
 "EnvironmentMap__6ENgcRCFbbi":
@@ -14018,7 +14018,7 @@ lbl_802B8FC8:
 /* 802B8FD4 002B4C74  38 E0 00 00 */	li r7, 0
 /* 802B8FD8 002B4C78  81 8C 00 94 */	lwz r12, 0x94(r12)
 /* 802B8FDC 002B4C7C  7D 89 03 A6 */	mtctr r12
-/* 802B8FE0 002B4C80  4E 80 04 20 */	bctr 
+/* 802B8FE0 002B4C80  4E 80 04 20 */	bctr
 lbl_802B8FE4:
 /* 802B8FE4 002B4C84  2C 06 00 00 */	cmpwi r6, 0
 /* 802B8FE8 002B4C88  38 80 00 80 */	li r4, 0x80
@@ -14028,7 +14028,7 @@ lbl_802B8FF4:
 /* 802B8FF4 002B4C94  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B8FF8 002B4C98  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 802B8FFC 002B4C9C  7D 89 03 A6 */	mtctr r12
-/* 802B9000 002B4CA0  4E 80 04 20 */	bctr 
+/* 802B9000 002B4CA0  4E 80 04 20 */	bctr
 
 .global "TextureMatrix__6ENgcRCFPC5EMat418ETCTransformSourcebbi"
 "TextureMatrix__6ENgcRCFPC5EMat418ETCTransformSourcebbi":
@@ -14070,12 +14070,12 @@ lbl_802B907C:
 /* 802B907C 002B4D1C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B9080 002B4D20  81 8C 00 A0 */	lwz r12, 0xa0(r12)
 /* 802B9084 002B4D24  7D 89 03 A6 */	mtctr r12
-/* 802B9088 002B4D28  4E 80 04 21 */	bctrl 
+/* 802B9088 002B4D28  4E 80 04 21 */	bctrl
 lbl_802B908C:
 /* 802B908C 002B4D2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B9090 002B4D30  7C 08 03 A6 */	mtlr r0
 /* 802B9094 002B4D34  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B9098 002B4D38  4E 80 00 20 */	blr 
+/* 802B9098 002B4D38  4E 80 00 20 */	blr
 
 .global "RecalcMatrices__6ENgcRCFii"
 "RecalcMatrices__6ENgcRCFii":
@@ -14093,11 +14093,11 @@ lbl_802B908C:
 /* 802B90C8 002B4D68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B90CC 002B4D6C  7C 08 03 A6 */	mtlr r0
 /* 802B90D0 002B4D70  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B90D4 002B4D74  4E 80 00 20 */	blr 
+/* 802B90D4 002B4D74  4E 80 00 20 */	blr
 
 .global "GeometrySetup__6ENgcRCFv"
 "GeometrySetup__6ENgcRCFv":
-/* 802B90D8 002B4D78  4E 80 00 20 */	blr 
+/* 802B90D8 002B4D78  4E 80 00 20 */	blr
 
 .global "ZTest__6ENgcRCFbiii"
 "ZTest__6ENgcRCFbiii":
@@ -14117,7 +14117,7 @@ lbl_802B908C:
 /* 802B9110 002B4DB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B9114 002B4DB4  7C 08 03 A6 */	mtlr r0
 /* 802B9118 002B4DB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B911C 002B4DBC  4E 80 00 20 */	blr 
+/* 802B911C 002B4DBC  4E 80 00 20 */	blr
 
 .global "ZClear__6ENgcRCFfffff"
 "ZClear__6ENgcRCFfffff":
@@ -14149,7 +14149,7 @@ lbl_802B908C:
 /* 802B9184 002B4E24  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B9188 002B4E28  FF E0 28 90 */	fmr f31, f5
 /* 802B918C 002B4E2C  7D 89 03 A6 */	mtctr r12
-/* 802B9190 002B4E30  4E 80 04 21 */	bctrl 
+/* 802B9190 002B4E30  4E 80 04 21 */	bctrl
 /* 802B9194 002B4E34  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9198 002B4E38  7F E3 FB 78 */	mr r3, r31
 /* 802B919C 002B4E3C  C0 22 A0 10 */	lfs f1, lbl_805DB230-_SDA2_BASE_(r2)
@@ -14158,7 +14158,7 @@ lbl_802B908C:
 /* 802B91A8 002B4E48  38 A0 00 01 */	li r5, 1
 /* 802B91AC 002B4E4C  38 C0 00 00 */	li r6, 0
 /* 802B91B0 002B4E50  7D 89 03 A6 */	mtctr r12
-/* 802B91B4 002B4E54  4E 80 04 21 */	bctrl 
+/* 802B91B4 002B4E54  4E 80 04 21 */	bctrl
 /* 802B91B8 002B4E58  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B91BC 002B4E5C  7F E3 FB 78 */	mr r3, r31
 /* 802B91C0 002B4E60  38 80 00 01 */	li r4, 1
@@ -14167,14 +14167,14 @@ lbl_802B908C:
 /* 802B91CC 002B4E6C  38 C0 00 00 */	li r6, 0
 /* 802B91D0 002B4E70  38 E0 00 00 */	li r7, 0
 /* 802B91D4 002B4E74  7D 89 03 A6 */	mtctr r12
-/* 802B91D8 002B4E78  4E 80 04 21 */	bctrl 
+/* 802B91D8 002B4E78  4E 80 04 21 */	bctrl
 /* 802B91DC 002B4E7C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B91E0 002B4E80  7F E3 FB 78 */	mr r3, r31
 /* 802B91E4 002B4E84  38 80 00 40 */	li r4, 0x40
 /* 802B91E8 002B4E88  38 A0 00 00 */	li r5, 0
 /* 802B91EC 002B4E8C  81 8C 00 B0 */	lwz r12, 0xb0(r12)
 /* 802B91F0 002B4E90  7D 89 03 A6 */	mtctr r12
-/* 802B91F4 002B4E94  4E 80 04 21 */	bctrl 
+/* 802B91F4 002B4E94  4E 80 04 21 */	bctrl
 /* 802B91F8 002B4E98  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B91FC 002B4E9C  7F E3 FB 78 */	mr r3, r31
 /* 802B9200 002B4EA0  C0 22 9F FC */	lfs f1, lbl_805DB21C-_SDA2_BASE_(r2)
@@ -14185,28 +14185,28 @@ lbl_802B908C:
 /* 802B9214 002B4EB4  38 E0 00 01 */	li r7, 1
 /* 802B9218 002B4EB8  39 00 00 00 */	li r8, 0
 /* 802B921C 002B4EBC  7D 89 03 A6 */	mtctr r12
-/* 802B9220 002B4EC0  4E 80 04 21 */	bctrl 
+/* 802B9220 002B4EC0  4E 80 04 21 */	bctrl
 /* 802B9224 002B4EC4  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9228 002B4EC8  7F E3 FB 78 */	mr r3, r31
 /* 802B922C 002B4ECC  38 80 00 00 */	li r4, 0
 /* 802B9230 002B4ED0  38 A0 00 00 */	li r5, 0
 /* 802B9234 002B4ED4  81 8C 01 0C */	lwz r12, 0x10c(r12)
 /* 802B9238 002B4ED8  7D 89 03 A6 */	mtctr r12
-/* 802B923C 002B4EDC  4E 80 04 21 */	bctrl 
+/* 802B923C 002B4EDC  4E 80 04 21 */	bctrl
 /* 802B9240 002B4EE0  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9244 002B4EE4  7F E3 FB 78 */	mr r3, r31
 /* 802B9248 002B4EE8  38 80 00 00 */	li r4, 0
 /* 802B924C 002B4EEC  38 A0 00 00 */	li r5, 0
 /* 802B9250 002B4EF0  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 802B9254 002B4EF4  7D 89 03 A6 */	mtctr r12
-/* 802B9258 002B4EF8  4E 80 04 21 */	bctrl 
+/* 802B9258 002B4EF8  4E 80 04 21 */	bctrl
 /* 802B925C 002B4EFC  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9260 002B4F00  7F E3 FB 78 */	mr r3, r31
 /* 802B9264 002B4F04  38 80 00 00 */	li r4, 0
 /* 802B9268 002B4F08  38 A0 00 01 */	li r5, 1
 /* 802B926C 002B4F0C  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 802B9270 002B4F10  7D 89 03 A6 */	mtctr r12
-/* 802B9274 002B4F14  4E 80 04 21 */	bctrl 
+/* 802B9274 002B4F14  4E 80 04 21 */	bctrl
 /* 802B9278 002B4F18  C0 42 9F F8 */	lfs f2, lbl_805DB218-_SDA2_BASE_(r2)
 /* 802B927C 002B4F1C  FC 20 F8 90 */	fmr f1, f31
 /* 802B9280 002B4F20  C0 02 9F FC */	lfs f0, lbl_805DB21C-_SDA2_BASE_(r2)
@@ -14231,7 +14231,7 @@ lbl_802B908C:
 /* 802B92CC 002B4F6C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B92D0 002B4F70  81 8C 00 D0 */	lwz r12, 0xd0(r12)
 /* 802B92D4 002B4F74  7D 89 03 A6 */	mtctr r12
-/* 802B92D8 002B4F78  4E 80 04 21 */	bctrl 
+/* 802B92D8 002B4F78  4E 80 04 21 */	bctrl
 /* 802B92DC 002B4F7C  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B92E0 002B4F80  7F E3 FB 78 */	mr r3, r31
 /* 802B92E4 002B4F84  C0 22 A0 10 */	lfs f1, lbl_805DB230-_SDA2_BASE_(r2)
@@ -14240,7 +14240,7 @@ lbl_802B908C:
 /* 802B92F0 002B4F90  38 A0 00 05 */	li r5, 5
 /* 802B92F4 002B4F94  38 C0 00 00 */	li r6, 0
 /* 802B92F8 002B4F98  7D 89 03 A6 */	mtctr r12
-/* 802B92FC 002B4F9C  4E 80 04 21 */	bctrl 
+/* 802B92FC 002B4F9C  4E 80 04 21 */	bctrl
 /* 802B9300 002B4FA0  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9304 002B4FA4  7F E3 FB 78 */	mr r3, r31
 /* 802B9308 002B4FA8  38 80 00 01 */	li r4, 1
@@ -14249,7 +14249,7 @@ lbl_802B908C:
 /* 802B9314 002B4FB4  38 C0 00 00 */	li r6, 0
 /* 802B9318 002B4FB8  38 E0 00 00 */	li r7, 0
 /* 802B931C 002B4FBC  7D 89 03 A6 */	mtctr r12
-/* 802B9320 002B4FC0  4E 80 04 21 */	bctrl 
+/* 802B9320 002B4FC0  4E 80 04 21 */	bctrl
 /* 802B9324 002B4FC4  E3 E1 00 88 */	psq_l f31, 136(r1), 0, qr0
 /* 802B9328 002B4FC8  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 802B932C 002B4FCC  E3 C1 00 78 */	psq_l f30, 120(r1), 0, qr0
@@ -14264,7 +14264,7 @@ lbl_802B908C:
 /* 802B9350 002B4FF0  83 E1 00 3C */	lwz r31, 0x3c(r1)
 /* 802B9354 002B4FF4  7C 08 03 A6 */	mtlr r0
 /* 802B9358 002B4FF8  38 21 00 90 */	addi r1, r1, 0x90
-/* 802B935C 002B4FFC  4E 80 00 20 */	blr 
+/* 802B935C 002B4FFC  4E 80 00 20 */	blr
 
 .global "AlphaTest__6ENgcRCFbifi"
 "AlphaTest__6ENgcRCFbifi":
@@ -14302,7 +14302,7 @@ lbl_802B9398:
 /* 802B93CC 002B506C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B93D0 002B5070  7C 08 03 A6 */	mtlr r0
 /* 802B93D4 002B5074  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B93D8 002B5078  4E 80 00 20 */	blr 
+/* 802B93D8 002B5078  4E 80 00 20 */	blr
 
 .global "Stencil__6ENgcRCFiii"
 "Stencil__6ENgcRCFiii":
@@ -14321,7 +14321,7 @@ lbl_802B9398:
 /* 802B940C 002B50AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B9410 002B50B0  7C 08 03 A6 */	mtlr r0
 /* 802B9414 002B50B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B9418 002B50B8  4E 80 00 20 */	blr 
+/* 802B9418 002B50B8  4E 80 00 20 */	blr
 
 .global "SetBlendMode__6ENgcRCFiiiifi"
 "SetBlendMode__6ENgcRCFiiiifi":
@@ -14352,7 +14352,7 @@ lbl_802B9398:
 /* 802B947C 002B511C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B9480 002B5120  7C 08 03 A6 */	mtlr r0
 /* 802B9484 002B5124  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B9488 002B5128  4E 80 00 20 */	blr 
+/* 802B9488 002B5128  4E 80 00 20 */	blr
 
 .global "SetCombineMode__6ENgcRCFii"
 "SetCombineMode__6ENgcRCFii":
@@ -14370,7 +14370,7 @@ lbl_802B9398:
 /* 802B94B8 002B5158  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B94BC 002B515C  7C 08 03 A6 */	mtlr r0
 /* 802B94C0 002B5160  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B94C4 002B5164  4E 80 00 20 */	blr 
+/* 802B94C4 002B5164  4E 80 00 20 */	blr
 
 .global "SetAlpha__6ENgcRCFf"
 "SetAlpha__6ENgcRCFf":
@@ -14394,7 +14394,7 @@ lbl_802B9398:
 /* 802B9500 002B51A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B9504 002B51A4  7C 08 03 A6 */	mtlr r0
 /* 802B9508 002B51A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B950C 002B51AC  4E 80 00 20 */	blr 
+/* 802B950C 002B51AC  4E 80 00 20 */	blr
 
 .global "QuadList__6ENgcRCFiPCfPCfPCUcPCScPCPCsb"
 "QuadList__6ENgcRCFiPCfPCfPCUcPCScPCPCsb":
@@ -14553,7 +14553,7 @@ lbl_802B9734:
 /* 802B9740 002B53E0  38 A0 00 08 */	li r5, 8
 /* 802B9744 002B53E4  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B9748 002B53E8  7D 89 03 A6 */	mtctr r12
-/* 802B974C 002B53EC  4E 80 04 21 */	bctrl 
+/* 802B974C 002B53EC  4E 80 04 21 */	bctrl
 /* 802B9750 002B53F0  80 B1 00 04 */	lwz r5, 4(r17)
 /* 802B9754 002B53F4  7E 23 8B 78 */	mr r3, r17
 /* 802B9758 002B53F8  38 80 00 04 */	li r4, 4
@@ -14563,7 +14563,7 @@ lbl_802B9734:
 /* 802B9768 002B5408  81 91 00 00 */	lwz r12, 0(r17)
 /* 802B976C 002B540C  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B9770 002B5410  7D 89 03 A6 */	mtctr r12
-/* 802B9774 002B5414  4E 80 04 21 */	bctrl 
+/* 802B9774 002B5414  4E 80 04 21 */	bctrl
 /* 802B9778 002B5418  38 00 00 03 */	li r0, 3
 /* 802B977C 002B541C  98 03 00 00 */	stb r0, 0(r3)
 /* 802B9780 002B5420  92 43 00 04 */	stw r18, 4(r3)
@@ -14578,19 +14578,19 @@ lbl_802B9734:
 /* 802B97A4 002B5444  81 91 00 00 */	lwz r12, 0(r17)
 /* 802B97A8 002B5448  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B97AC 002B544C  7D 89 03 A6 */	mtctr r12
-/* 802B97B0 002B5450  4E 80 04 21 */	bctrl 
+/* 802B97B0 002B5450  4E 80 04 21 */	bctrl
 lbl_802B97B4:
 /* 802B97B4 002B5454  39 61 00 60 */	addi r11, r1, 0x60
 /* 802B97B8 002B5458  48 15 5B E1 */	bl "_restgpr_17"
 /* 802B97BC 002B545C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802B97C0 002B5460  7C 08 03 A6 */	mtlr r0
 /* 802B97C4 002B5464  38 21 00 60 */	addi r1, r1, 0x60
-/* 802B97C8 002B5468  4E 80 00 20 */	blr 
+/* 802B97C8 002B5468  4E 80 00 20 */	blr
 
 .global "SpriteList__6ENgcRCFiPCfPCfPCUcPCScPCUc"
 "SpriteList__6ENgcRCFiPCfPCfPCUcPCScPCUc":
 /* 802B97CC 002B546C  2C 04 00 00 */	cmpwi r4, 0
-/* 802B97D0 002B5470  4D 82 00 20 */	beqlr 
+/* 802B97D0 002B5470  4D 82 00 20 */	beqlr
 /* 802B97D4 002B5474  81 43 00 04 */	lwz r10, 4(r3)
 /* 802B97D8 002B5478  3C 60 80 54 */	lis r3, "_ngcRenderer"@ha
 /* 802B97DC 002B547C  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
@@ -14598,12 +14598,12 @@ lbl_802B97B4:
 /* 802B97E4 002B5484  7C 00 22 14 */	add r0, r0, r4
 /* 802B97E8 002B5488  90 0A 00 58 */	stw r0, 0x58(r10)
 /* 802B97EC 002B548C  48 00 69 D8 */	b "SpriteListPacked__12ENgcRendererFiPCfPCfPCUcPCScPCUc"
-/* 802B97F0 002B5490  4E 80 00 20 */	blr 
+/* 802B97F0 002B5490  4E 80 00 20 */	blr
 
 .global "LineList__6ENgcRCFPC7EGEVerti"
 "LineList__6ENgcRCFPC7EGEVerti":
 /* 802B97F4 002B5494  2C 05 00 00 */	cmpwi r5, 0
-/* 802B97F8 002B5498  4D 82 00 20 */	beqlr 
+/* 802B97F8 002B5498  4D 82 00 20 */	beqlr
 /* 802B97FC 002B549C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 802B9800 002B54A0  2C 00 00 00 */	cmpwi r0, 0
 /* 802B9804 002B54A4  40 82 00 20 */	bne lbl_802B9824
@@ -14616,15 +14616,15 @@ lbl_802B97B4:
 /* 802B9820 002B54C0  48 00 50 40 */	b "LineList__12ENgcRendererFPC7EGEVerti"
 lbl_802B9824:
 /* 802B9824 002B54C4  4B FD C0 94 */	b "LineList__3ERCFPC7EGEVerti"
-/* 802B9828 002B54C8  4E 80 00 20 */	blr 
+/* 802B9828 002B54C8  4E 80 00 20 */	blr
 
 .global "Debug__6ENgcRCFUiUi"
 "Debug__6ENgcRCFUiUi":
-/* 802B982C 002B54CC  4E 80 00 20 */	blr 
+/* 802B982C 002B54CC  4E 80 00 20 */	blr
 
 .global "ParticleListInfo__6ENgcRCFP19EGEParticleListInfo"
 "ParticleListInfo__6ENgcRCFP19EGEParticleListInfo":
-/* 802B9830 002B54D0  4E 80 00 20 */	blr 
+/* 802B9830 002B54D0  4E 80 00 20 */	blr
 
 .global "ParticleListBegin__6ENgcRCFUiUi"
 "ParticleListBegin__6ENgcRCFUiUi":
@@ -14682,13 +14682,13 @@ lbl_802B9824:
 /* 802B98DC 002B557C  38 A0 00 00 */	li r5, 0
 /* 802B98E0 002B5580  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B98E4 002B5584  7D 89 03 A6 */	mtctr r12
-/* 802B98E8 002B5588  4E 80 04 21 */	bctrl 
+/* 802B98E8 002B5588  4E 80 04 21 */	bctrl
 /* 802B98EC 002B558C  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802B98F0 002B5590  7F 83 E3 78 */	mr r3, r28
 /* 802B98F4 002B5594  38 80 00 04 */	li r4, 4
 /* 802B98F8 002B5598  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B98FC 002B559C  7D 89 03 A6 */	mtctr r12
-/* 802B9900 002B55A0  4E 80 04 21 */	bctrl 
+/* 802B9900 002B55A0  4E 80 04 21 */	bctrl
 /* 802B9904 002B55A4  38 00 00 4B */	li r0, 0x4b
 /* 802B9908 002B55A8  98 03 00 00 */	stb r0, 0(r3)
 /* 802B990C 002B55AC  B3 A3 00 02 */	sth r29, 2(r3)
@@ -14705,7 +14705,7 @@ lbl_802B9824:
 /* 802B9938 002B55D8  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802B993C 002B55DC  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B9940 002B55E0  7D 89 03 A6 */	mtctr r12
-/* 802B9944 002B55E4  4E 80 04 21 */	bctrl 
+/* 802B9944 002B55E4  4E 80 04 21 */	bctrl
 lbl_802B9948:
 /* 802B9948 002B55E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B994C 002B55EC  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -14714,7 +14714,7 @@ lbl_802B9948:
 /* 802B9958 002B55F8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802B995C 002B55FC  7C 08 03 A6 */	mtlr r0
 /* 802B9960 002B5600  38 21 00 20 */	addi r1, r1, 0x20
-/* 802B9964 002B5604  4E 80 00 20 */	blr 
+/* 802B9964 002B5604  4E 80 00 20 */	blr
 
 .global "VertexMorphAndSyncCacheEnd__6ENgcRCFv"
 "VertexMorphAndSyncCacheEnd__6ENgcRCFv":
@@ -14728,25 +14728,25 @@ lbl_802B9948:
 /* 802B9984 002B5624  81 83 00 00 */	lwz r12, 0(r3)
 /* 802B9988 002B5628  81 8C 01 68 */	lwz r12, 0x168(r12)
 /* 802B998C 002B562C  7D 89 03 A6 */	mtctr r12
-/* 802B9990 002B5630  4E 80 04 21 */	bctrl 
+/* 802B9990 002B5630  4E 80 04 21 */	bctrl
 /* 802B9994 002B5634  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B9998 002B5638  7F E3 FB 78 */	mr r3, r31
 /* 802B999C 002B563C  38 80 00 01 */	li r4, 1
 /* 802B99A0 002B5640  81 8C 01 64 */	lwz r12, 0x164(r12)
 /* 802B99A4 002B5644  7D 89 03 A6 */	mtctr r12
-/* 802B99A8 002B5648  4E 80 04 21 */	bctrl 
+/* 802B99A8 002B5648  4E 80 04 21 */	bctrl
 /* 802B99AC 002B564C  38 00 00 4C */	li r0, 0x4c
 /* 802B99B0 002B5650  98 03 00 00 */	stb r0, 0(r3)
 /* 802B99B4 002B5654  7F E3 FB 78 */	mr r3, r31
 /* 802B99B8 002B5658  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802B99BC 002B565C  81 8C 01 6C */	lwz r12, 0x16c(r12)
 /* 802B99C0 002B5660  7D 89 03 A6 */	mtctr r12
-/* 802B99C4 002B5664  4E 80 04 21 */	bctrl 
+/* 802B99C4 002B5664  4E 80 04 21 */	bctrl
 /* 802B99C8 002B5668  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B99CC 002B566C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802B99D0 002B5670  7C 08 03 A6 */	mtlr r0
 /* 802B99D4 002B5674  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B99D8 002B5678  4E 80 00 20 */	blr 
+/* 802B99D8 002B5678  4E 80 00 20 */	blr
 
 .global "__ct__12ENgcRendererFv"
 "__ct__12ENgcRendererFv":
@@ -14962,7 +14962,7 @@ lbl_802B9CB8:
 /* 802B9CF8 002B5998  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B9CFC 002B599C  7C 08 03 A6 */	mtlr r0
 /* 802B9D00 002B59A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 802B9D04 002B59A4  4E 80 00 20 */	blr 
+/* 802B9D04 002B59A4  4E 80 00 20 */	blr
 
 .global "__dt__12ENgcRendererFv"
 "__dt__12ENgcRendererFv":
@@ -14994,14 +14994,14 @@ lbl_802B9D5C:
 /* 802B9D68 002B5A08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802B9D6C 002B5A0C  7C 08 03 A6 */	mtlr r0
 /* 802B9D70 002B5A10  38 21 00 10 */	addi r1, r1, 0x10
-/* 802B9D74 002B5A14  4E 80 00 20 */	blr 
+/* 802B9D74 002B5A14  4E 80 00 20 */	blr
 
 .global "GetCurrentTexture__12ENgcRendererFi"
 "GetCurrentTexture__12ENgcRendererFi":
 /* 802B9D78 002B5A18  54 80 10 3A */	slwi r0, r4, 2
 /* 802B9D7C 002B5A1C  7C 63 02 14 */	add r3, r3, r0
 /* 802B9D80 002B5A20  80 63 45 50 */	lwz r3, 0x4550(r3)
-/* 802B9D84 002B5A24  4E 80 00 20 */	blr 
+/* 802B9D84 002B5A24  4E 80 00 20 */	blr
 
 .global "Init__12ENgcRendererFRiRi"
 "Init__12ENgcRendererFRiRi":
@@ -15066,7 +15066,7 @@ lbl_802B9E0C:
 /* 802B9E54 002B5AF4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802B9E58 002B5AF8  7C 74 1B 78 */	mr r20, r3
 /* 802B9E5C 002B5AFC  7D 89 03 A6 */	mtctr r12
-/* 802B9E60 002B5B00  4E 80 04 21 */	bctrl 
+/* 802B9E60 002B5B00  4E 80 04 21 */	bctrl
 /* 802B9E64 002B5B04  80 BE 00 00 */	lwz r5, 0(r30)
 /* 802B9E68 002B5B08  7F 84 E3 78 */	mr r4, r28
 /* 802B9E6C 002B5B0C  38 61 00 08 */	addi r3, r1, 8
@@ -15314,14 +15314,14 @@ lbl_802BA1C8:
 /* 802BA1D4 002B5E74  7E 83 A3 78 */	mr r3, r20
 /* 802BA1D8 002B5E78  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BA1DC 002B5E7C  7D 89 03 A6 */	mtctr r12
-/* 802BA1E0 002B5E80  4E 80 04 21 */	bctrl 
+/* 802BA1E0 002B5E80  4E 80 04 21 */	bctrl
 /* 802BA1E4 002B5E84  39 61 00 50 */	addi r11, r1, 0x50
 /* 802BA1E8 002B5E88  7F 83 E3 78 */	mr r3, r28
 /* 802BA1EC 002B5E8C  48 15 51 B9 */	bl "_restgpr_20"
 /* 802BA1F0 002B5E90  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802BA1F4 002B5E94  7C 08 03 A6 */	mtlr r0
 /* 802BA1F8 002B5E98  38 21 00 50 */	addi r1, r1, 0x50
-/* 802BA1FC 002B5E9C  4E 80 00 20 */	blr 
+/* 802BA1FC 002B5E9C  4E 80 00 20 */	blr
 
 .global "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCUsiPCsPCsPCUcPCScRUib"
 "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCUsiPCsPCsPCUcPCScRUib":
@@ -15382,7 +15382,7 @@ lbl_802BA280:
 /* 802BA2C8 002B5F68  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802BA2CC 002B5F6C  7C 74 1B 78 */	mr r20, r3
 /* 802BA2D0 002B5F70  7D 89 03 A6 */	mtctr r12
-/* 802BA2D4 002B5F74  4E 80 04 21 */	bctrl 
+/* 802BA2D4 002B5F74  4E 80 04 21 */	bctrl
 /* 802BA2D8 002B5F78  80 BE 00 00 */	lwz r5, 0(r30)
 /* 802BA2DC 002B5F7C  7F 84 E3 78 */	mr r4, r28
 /* 802BA2E0 002B5F80  38 61 00 08 */	addi r3, r1, 8
@@ -15630,14 +15630,14 @@ lbl_802BA63C:
 /* 802BA648 002B62E8  7E 83 A3 78 */	mr r3, r20
 /* 802BA64C 002B62EC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BA650 002B62F0  7D 89 03 A6 */	mtctr r12
-/* 802BA654 002B62F4  4E 80 04 21 */	bctrl 
+/* 802BA654 002B62F4  4E 80 04 21 */	bctrl
 /* 802BA658 002B62F8  39 61 00 50 */	addi r11, r1, 0x50
 /* 802BA65C 002B62FC  7F 83 E3 78 */	mr r3, r28
 /* 802BA660 002B6300  48 15 4D 45 */	bl "_restgpr_20"
 /* 802BA664 002B6304  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802BA668 002B6308  7C 08 03 A6 */	mtlr r0
 /* 802BA66C 002B630C  38 21 00 50 */	addi r1, r1, 0x50
-/* 802BA670 002B6310  4E 80 00 20 */	blr 
+/* 802BA670 002B6310  4E 80 00 20 */	blr
 
 .global "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCfPCfPCUcPCScRUib"
 "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCfPCfPCUcPCScRUib":
@@ -15696,7 +15696,7 @@ lbl_802BA6EC:
 /* 802BA734 002B63D4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802BA738 002B63D8  7C 76 1B 78 */	mr r22, r3
 /* 802BA73C 002B63DC  7D 89 03 A6 */	mtctr r12
-/* 802BA740 002B63E0  4E 80 04 21 */	bctrl 
+/* 802BA740 002B63E0  4E 80 04 21 */	bctrl
 /* 802BA744 002B63E4  80 BE 00 00 */	lwz r5, 0(r30)
 /* 802BA748 002B63E8  7F A4 EB 78 */	mr r4, r29
 /* 802BA74C 002B63EC  38 61 00 08 */	addi r3, r1, 8
@@ -15939,14 +15939,14 @@ lbl_802BAA94:
 /* 802BAAA0 002B6740  7E C3 B3 78 */	mr r3, r22
 /* 802BAAA4 002B6744  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BAAA8 002B6748  7D 89 03 A6 */	mtctr r12
-/* 802BAAAC 002B674C  4E 80 04 21 */	bctrl 
+/* 802BAAAC 002B674C  4E 80 04 21 */	bctrl
 /* 802BAAB0 002B6750  39 61 00 40 */	addi r11, r1, 0x40
 /* 802BAAB4 002B6754  7F A3 EB 78 */	mr r3, r29
 /* 802BAAB8 002B6758  48 15 48 F5 */	bl "_restgpr_22"
 /* 802BAABC 002B675C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802BAAC0 002B6760  7C 08 03 A6 */	mtlr r0
 /* 802BAAC4 002B6764  38 21 00 40 */	addi r1, r1, 0x40
-/* 802BAAC8 002B6768  4E 80 00 20 */	blr 
+/* 802BAAC8 002B6768  4E 80 00 20 */	blr
 
 .global "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCsPCsPCUcPCScRUibb"
 "CreateGXDisplayList__12ENgcRendererFP3EDL12_GXPrimitiveiPCsPCsPCUcPCScRUibb":
@@ -16013,7 +16013,7 @@ lbl_802BAB5C:
 /* 802BABA8 002B6848  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802BABAC 002B684C  7C 73 1B 78 */	mr r19, r3
 /* 802BABB0 002B6850  7D 89 03 A6 */	mtctr r12
-/* 802BABB4 002B6854  4E 80 04 21 */	bctrl 
+/* 802BABB4 002B6854  4E 80 04 21 */	bctrl
 /* 802BABB8 002B6858  80 BC 00 00 */	lwz r5, 0(r28)
 /* 802BABBC 002B685C  7F A4 EB 78 */	mr r4, r29
 /* 802BABC0 002B6860  38 61 00 08 */	addi r3, r1, 8
@@ -16302,14 +16302,14 @@ lbl_802BAFB0:
 /* 802BAFBC 002B6C5C  7E 63 9B 78 */	mr r3, r19
 /* 802BAFC0 002B6C60  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BAFC4 002B6C64  7D 89 03 A6 */	mtctr r12
-/* 802BAFC8 002B6C68  4E 80 04 21 */	bctrl 
+/* 802BAFC8 002B6C68  4E 80 04 21 */	bctrl
 /* 802BAFCC 002B6C6C  39 61 00 50 */	addi r11, r1, 0x50
 /* 802BAFD0 002B6C70  7F A3 EB 78 */	mr r3, r29
 /* 802BAFD4 002B6C74  48 15 43 CD */	bl "_restgpr_19"
 /* 802BAFD8 002B6C78  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802BAFDC 002B6C7C  7C 08 03 A6 */	mtlr r0
 /* 802BAFE0 002B6C80  38 21 00 50 */	addi r1, r1, 0x50
-/* 802BAFE4 002B6C84  4E 80 00 20 */	blr 
+/* 802BAFE4 002B6C84  4E 80 00 20 */	blr
 
 .global "SetClearColor__12ENgcRendererFRC5EVec3ib"
 "SetClearColor__12ENgcRendererFRC5EVec3ib":
@@ -16349,7 +16349,7 @@ lbl_802BB060:
 /* 802BB068 002B6D08  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802BB06C 002B6D0C  7C 08 03 A6 */	mtlr r0
 /* 802BB070 002B6D10  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BB074 002B6D14  4E 80 00 20 */	blr 
+/* 802BB074 002B6D14  4E 80 00 20 */	blr
 
 .global "GetExternalFrameBuffer__12ENgcRendererFv"
 "GetExternalFrameBuffer__12ENgcRendererFv":
@@ -16358,10 +16358,10 @@ lbl_802BB060:
 /* 802BB080 002B6D20  7C 00 20 40 */	cmplw r0, r4
 /* 802BB084 002B6D24  40 82 00 0C */	bne lbl_802BB090
 /* 802BB088 002B6D28  80 63 03 48 */	lwz r3, 0x348(r3)
-/* 802BB08C 002B6D2C  4E 80 00 20 */	blr 
+/* 802BB08C 002B6D2C  4E 80 00 20 */	blr
 lbl_802BB090:
 /* 802BB090 002B6D30  7C 83 23 78 */	mr r3, r4
-/* 802BB094 002B6D34  4E 80 00 20 */	blr 
+/* 802BB094 002B6D34  4E 80 00 20 */	blr
 
 .global "VIPreRetraceCallback__12ENgcRendererFUl"
 "VIPreRetraceCallback__12ENgcRendererFUl":
@@ -16392,7 +16392,7 @@ lbl_802BB090:
 /* 802BB0F8 002B6D98  81 83 00 00 */	lwz r12, 0(r3)
 /* 802BB0FC 002B6D9C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BB100 002B6DA0  7D 89 03 A6 */	mtctr r12
-/* 802BB104 002B6DA4  4E 80 04 21 */	bctrl 
+/* 802BB104 002B6DA4  4E 80 04 21 */	bctrl
 /* 802BB108 002B6DA8  3C A0 80 54 */	lis r5, "_ngcRenderer"@ha
 /* 802BB10C 002B6DAC  80 8D BD 48 */	lwz r4, "_pSched"-_SDA_BASE_(r13)
 /* 802BB110 002B6DB0  38 A5 8B 10 */	addi r5, r5, "_ngcRenderer"@l
@@ -16423,11 +16423,11 @@ lbl_802BB164:
 /* 802BB168 002B6E08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802BB16C 002B6E0C  7C 08 03 A6 */	mtlr r0
 /* 802BB170 002B6E10  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BB174 002B6E14  4E 80 00 20 */	blr 
+/* 802BB174 002B6E14  4E 80 00 20 */	blr
 
 .global "VIPostRetraceCallback__12ENgcRendererFUl"
 "VIPostRetraceCallback__12ENgcRendererFUl":
-/* 802BB178 002B6E18  4E 80 00 20 */	blr 
+/* 802BB178 002B6E18  4E 80 00 20 */	blr
 
 .global "BreakPtCallback__12ENgcRendererFv"
 "BreakPtCallback__12ENgcRendererFv":
@@ -16440,7 +16440,7 @@ lbl_802BB164:
 .global "DrawSyncCallback__12ENgcRendererFUs"
 "DrawSyncCallback__12ENgcRendererFUs":
 /* 802BB190 002B6E30  B0 6D BD 1C */	sth r3, "s_lastTokenFromGX__12ENgcRenderer"-_SDA_BASE_(r13)
-/* 802BB194 002B6E34  4E 80 00 20 */	blr 
+/* 802BB194 002B6E34  4E 80 00 20 */	blr
 
 .global "GetNumberOfFullScenePasses__12ENgcRendererFv"
 "GetNumberOfFullScenePasses__12ENgcRendererFv":
@@ -16620,7 +16620,7 @@ lbl_802BB2E4:
 /* 802BB420 002B70C0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802BB424 002B70C4  7C 08 03 A6 */	mtlr r0
 /* 802BB428 002B70C8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802BB42C 002B70CC  4E 80 00 20 */	blr 
+/* 802BB42C 002B70CC  4E 80 00 20 */	blr
 
 .global "InitGXVertexFormats__12ENgcRendererFv"
 "InitGXVertexFormats__12ENgcRendererFv":
@@ -16864,7 +16864,7 @@ lbl_802BB2E4:
 /* 802BB7E4 002B7484  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BB7E8 002B7488  7C 08 03 A6 */	mtlr r0
 /* 802BB7EC 002B748C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BB7F0 002B7490  4E 80 00 20 */	blr 
+/* 802BB7F0 002B7490  4E 80 00 20 */	blr
 
 .global "InitVideo__12ENgcRendererFRiRi"
 "InitVideo__12ENgcRendererFRiRi":
@@ -17233,7 +17233,7 @@ lbl_802BBCD4:
 /* 802BBD74 002B7A14  7F A3 EB 78 */	mr r3, r29
 /* 802BBD78 002B7A18  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802BBD7C 002B7A1C  7D 89 03 A6 */	mtctr r12
-/* 802BBD80 002B7A20  4E 80 04 21 */	bctrl 
+/* 802BBD80 002B7A20  4E 80 04 21 */	bctrl
 /* 802BBD84 002B7A24  7C 6E 1B 78 */	mr r14, r3
 /* 802BBD88 002B7A28  54 70 08 3C */	slwi r16, r3, 1
 /* 802BBD8C 002B7A2C  3A 40 00 00 */	li r18, 0
@@ -17247,13 +17247,13 @@ lbl_802BBD94:
 /* 802BBDA8 002B7A48  7E 20 90 50 */	subf r17, r0, r18
 /* 802BBDAC 002B7A4C  7E 24 8B 78 */	mr r4, r17
 /* 802BBDB0 002B7A50  7D 89 03 A6 */	mtctr r12
-/* 802BBDB4 002B7A54  4E 80 04 21 */	bctrl 
+/* 802BBDB4 002B7A54  4E 80 04 21 */	bctrl
 /* 802BBDB8 002B7A58  81 9D 00 00 */	lwz r12, 0(r29)
 /* 802BBDBC 002B7A5C  7F A3 EB 78 */	mr r3, r29
 /* 802BBDC0 002B7A60  7E 24 8B 78 */	mr r4, r17
 /* 802BBDC4 002B7A64  81 8C 00 1C */	lwz r12, 0x1c(r12)
 /* 802BBDC8 002B7A68  7D 89 03 A6 */	mtctr r12
-/* 802BBDCC 002B7A6C  4E 80 04 21 */	bctrl 
+/* 802BBDCC 002B7A6C  4E 80 04 21 */	bctrl
 /* 802BBDD0 002B7A70  3A 52 00 01 */	addi r18, r18, 1
 lbl_802BBDD4:
 /* 802BBDD4 002B7A74  7C 12 80 00 */	cmpw r18, r16
@@ -17366,7 +17366,7 @@ lbl_802BBE38:
 /* 802BBF7C 002B7C1C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 802BBF80 002B7C20  7C 08 03 A6 */	mtlr r0
 /* 802BBF84 002B7C24  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 802BBF88 002B7C28  4E 80 00 20 */	blr 
+/* 802BBF88 002B7C28  4E 80 00 20 */	blr
 
 .global "InitData__12ENgcRendererFv"
 "InitData__12ENgcRendererFv":
@@ -17497,7 +17497,7 @@ lbl_802BBE38:
 /* 802BC17C 002B7E1C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802BC180 002B7E20  7C 08 03 A6 */	mtlr r0
 /* 802BC184 002B7E24  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 802BC188 002B7E28  4E 80 00 20 */	blr 
+/* 802BC188 002B7E28  4E 80 00 20 */	blr
 
 .global "ClearRect__12ENgcRendererFR5EVec4R5EVec4"
 "ClearRect__12ENgcRendererFR5EVec4R5EVec4":
@@ -17770,7 +17770,7 @@ lbl_802BBE38:
 /* 802BC5B4 002B8254  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802BC5B8 002B8258  7C 08 03 A6 */	mtlr r0
 /* 802BC5BC 002B825C  38 21 00 40 */	addi r1, r1, 0x40
-/* 802BC5C0 002B8260  4E 80 00 20 */	blr 
+/* 802BC5C0 002B8260  4E 80 00 20 */	blr
 
 .global "EndFrame__12ENgcRendererFP15ENgcRendCommand"
 "EndFrame__12ENgcRendererFP15ENgcRendCommand":
@@ -17849,7 +17849,7 @@ lbl_802BBE38:
 /* 802BC6E4 002B8384  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802BC6E8 002B8388  7C 08 03 A6 */	mtlr r0
 /* 802BC6EC 002B838C  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 802BC6F0 002B8390  4E 80 00 20 */	blr 
+/* 802BC6F0 002B8390  4E 80 00 20 */	blr
 
 .global "UpdateLightingEquation__12ENgcRendererFv"
 "UpdateLightingEquation__12ENgcRendererFv":
@@ -18471,18 +18471,18 @@ lbl_802BD008:
 /* 802BD040 002B8CE0  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 802BD044 002B8CE4  7C 08 03 A6 */	mtlr r0
 /* 802BD048 002B8CE8  38 21 01 50 */	addi r1, r1, 0x150
-/* 802BD04C 002B8CEC  4E 80 00 20 */	blr 
+/* 802BD04C 002B8CEC  4E 80 00 20 */	blr
 
 .global "SetLightingOff__12ENgcRendererFv"
 "SetLightingOff__12ENgcRendererFv":
 /* 802BD050 002B8CF0  80 83 53 A0 */	lwz r4, 0x53a0(r3)
 /* 802BD054 002B8CF4  54 80 07 39 */	rlwinm. r0, r4, 0, 0x1c, 0x1c
-/* 802BD058 002B8CF8  4D 82 00 20 */	beqlr 
+/* 802BD058 002B8CF8  4D 82 00 20 */	beqlr
 /* 802BD05C 002B8CFC  54 80 07 76 */	rlwinm r0, r4, 0, 0x1d, 0x1b
 /* 802BD060 002B8D00  38 80 00 01 */	li r4, 1
 /* 802BD064 002B8D04  98 83 05 0F */	stb r4, 0x50f(r3)
 /* 802BD068 002B8D08  90 03 53 A0 */	stw r0, 0x53a0(r3)
-/* 802BD06C 002B8D0C  4E 80 00 20 */	blr 
+/* 802BD06C 002B8D0C  4E 80 00 20 */	blr
 
 .global "Execute__12ENgcRendererFP8EDLEntry"
 "Execute__12ENgcRendererFP8EDLEntry":
@@ -18508,7 +18508,7 @@ lbl_802BD09C:
 /* 802BD0B8 002B8D58  7F C3 F3 78 */	mr r3, r30
 /* 802BD0BC 002B8D5C  7D 9F 02 14 */	add r12, r31, r0
 /* 802BD0C0 002B8D60  48 15 21 65 */	bl "__ptmf_scall"
-/* 802BD0C4 002B8D64  60 00 00 00 */	nop 
+/* 802BD0C4 002B8D64  60 00 00 00 */	nop
 /* 802BD0C8 002B8D68  88 1E 04 DC */	lbz r0, 0x4dc(r30)
 /* 802BD0CC 002B8D6C  2C 00 00 00 */	cmpwi r0, 0
 /* 802BD0D0 002B8D70  41 82 FF CC */	beq lbl_802BD09C
@@ -18523,7 +18523,7 @@ lbl_802BD0E4:
 /* 802BD0EC 002B8D8C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802BD0F0 002B8D90  7C 08 03 A6 */	mtlr r0
 /* 802BD0F4 002B8D94  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BD0F8 002B8D98  4E 80 00 20 */	blr 
+/* 802BD0F8 002B8D98  4E 80 00 20 */	blr
 
 .global "ReflectionCoord__FRC3VecRC3VecPA4_fR3Vec"
 "ReflectionCoord__FRC3VecRC3VecPA4_fR3Vec":
@@ -18532,7 +18532,7 @@ lbl_802BD0E4:
 /* 802BD104 002B8DA4  D0 26 00 00 */	stfs f1, 0(r6)
 /* 802BD108 002B8DA8  D0 26 00 04 */	stfs f1, 4(r6)
 /* 802BD10C 002B8DAC  D0 06 00 08 */	stfs f0, 8(r6)
-/* 802BD110 002B8DB0  4E 80 00 20 */	blr 
+/* 802BD110 002B8DB0  4E 80 00 20 */	blr
 
 .global "TriStrip__12ENgcRendererFP8EDLEntry"
 "TriStrip__12ENgcRendererFP8EDLEntry":
@@ -18783,7 +18783,7 @@ lbl_802BD4A4:
 /* 802BD4B4 002B9154  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802BD4B8 002B9158  7C 08 03 A6 */	mtlr r0
 /* 802BD4BC 002B915C  38 21 00 70 */	addi r1, r1, 0x70
-/* 802BD4C0 002B9160  4E 80 00 20 */	blr 
+/* 802BD4C0 002B9160  4E 80 00 20 */	blr
 
 .global "WeightedBlend__12ENgcRendererF12_GXPrimitiveiPCfPCScPCfPCUcPCUcb"
 "WeightedBlend__12ENgcRendererF12_GXPrimitiveiPCfPCScPCfPCUcPCUcb":
@@ -18996,7 +18996,7 @@ lbl_802BD79C:
 /* 802BD7D4 002B9474  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 802BD7D8 002B9478  7C 08 03 A6 */	mtlr r0
 /* 802BD7DC 002B947C  38 21 01 10 */	addi r1, r1, 0x110
-/* 802BD7E0 002B9480  4E 80 00 20 */	blr 
+/* 802BD7E0 002B9480  4E 80 00 20 */	blr
 
 .global "TriStripPacked__12ENgcRendererFP8EDLEntry"
 "TriStripPacked__12ENgcRendererFP8EDLEntry":
@@ -19019,7 +19019,7 @@ lbl_802BD79C:
 /* 802BD824 002B94C4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BD828 002B94C8  7C 08 03 A6 */	mtlr r0
 /* 802BD82C 002B94CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BD830 002B94D0  4E 80 00 20 */	blr 
+/* 802BD830 002B94D0  4E 80 00 20 */	blr
 
 .global "TriStripPacked__12ENgcRendererFiPCfPCfPCUcPCScPCUcPCUcb"
 "TriStripPacked__12ENgcRendererFiPCfPCfPCUcPCScPCUcPCUcb":
@@ -19539,7 +19539,7 @@ lbl_802BDF8C:
 /* 802BDFA8 002B9C48  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 802BDFAC 002B9C4C  7C 08 03 A6 */	mtlr r0
 /* 802BDFB0 002B9C50  38 21 00 D0 */	addi r1, r1, 0xd0
-/* 802BDFB4 002B9C54  4E 80 00 20 */	blr 
+/* 802BDFB4 002B9C54  4E 80 00 20 */	blr
 
 .global "TriStripPackedInt__12ENgcRendererFP8EDLEntry"
 "TriStripPackedInt__12ENgcRendererFP8EDLEntry":
@@ -20146,7 +20146,7 @@ lbl_802BE828:
 /* 802BE840 002BA4E0  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 802BE844 002BA4E4  7C 08 03 A6 */	mtlr r0
 /* 802BE848 002BA4E8  38 21 00 F0 */	addi r1, r1, 0xf0
-/* 802BE84C 002BA4EC  4E 80 00 20 */	blr 
+/* 802BE84C 002BA4EC  4E 80 00 20 */	blr
 
 .global "LineList__12ENgcRendererFP8EDLEntry"
 "LineList__12ENgcRendererFP8EDLEntry":
@@ -20277,7 +20277,7 @@ lbl_802BEA10:
 /* 802BEA1C 002BA6BC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802BEA20 002BA6C0  7C 08 03 A6 */	mtlr r0
 /* 802BEA24 002BA6C4  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BEA28 002BA6C8  4E 80 00 20 */	blr 
+/* 802BEA28 002BA6C8  4E 80 00 20 */	blr
 
 .global "DisplayList__12ENgcRendererFP8EDLEntry"
 "DisplayList__12ENgcRendererFP8EDLEntry":
@@ -20292,13 +20292,13 @@ lbl_802BEA10:
 /* 802BEA4C 002BA6EC  90 83 45 58 */	stw r4, 0x4558(r3)
 /* 802BEA50 002BA6F0  80 04 00 4C */	lwz r0, 0x4c(r4)
 /* 802BEA54 002BA6F4  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802BEA58 002BA6F8  4E 80 00 20 */	blr 
+/* 802BEA58 002BA6F8  4E 80 00 20 */	blr
 
 .global "Goto__12ENgcRendererFP8EDLEntry"
 "Goto__12ENgcRendererFP8EDLEntry":
 /* 802BEA5C 002BA6FC  80 04 00 04 */	lwz r0, 4(r4)
 /* 802BEA60 002BA700  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802BEA64 002BA704  4E 80 00 20 */	blr 
+/* 802BEA64 002BA704  4E 80 00 20 */	blr
 
 .global "End__12ENgcRendererFP8EDLEntry"
 "End__12ENgcRendererFP8EDLEntry":
@@ -20311,11 +20311,11 @@ lbl_802BEA10:
 /* 802BEA80 002BA720  7C 83 02 14 */	add r4, r3, r0
 /* 802BEA84 002BA724  80 04 04 E0 */	lwz r0, 0x4e0(r4)
 /* 802BEA88 002BA728  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802BEA8C 002BA72C  4E 80 00 20 */	blr 
+/* 802BEA8C 002BA72C  4E 80 00 20 */	blr
 lbl_802BEA90:
 /* 802BEA90 002BA730  38 00 00 01 */	li r0, 1
 /* 802BEA94 002BA734  98 03 04 DC */	stb r0, 0x4dc(r3)
-/* 802BEA98 002BA738  4E 80 00 20 */	blr 
+/* 802BEA98 002BA738  4E 80 00 20 */	blr
 
 .global "SaveState__12ENgcRendererFP8EDLEntry"
 "SaveState__12ENgcRendererFP8EDLEntry":
@@ -20365,7 +20365,7 @@ lbl_802BEAC0:
 /* 802BEB20 002BA7C0  D0 A3 57 BC */	stfs f5, 0x57bc(r3)
 /* 802BEB24 002BA7C4  D0 03 57 C0 */	stfs f0, 0x57c0(r3)
 /* 802BEB28 002BA7C8  90 03 53 74 */	stw r0, 0x5374(r3)
-/* 802BEB2C 002BA7CC  4E 80 00 20 */	blr 
+/* 802BEB2C 002BA7CC  4E 80 00 20 */	blr
 
 .global "ClipRect__12ENgcRendererFP8EDLEntry"
 "ClipRect__12ENgcRendererFP8EDLEntry":
@@ -20374,10 +20374,10 @@ lbl_802BEAC0:
 /* 802BEB38 002BA7D8  38 84 00 10 */	addi r4, r4, 0x10
 /* 802BEB3C 002BA7DC  2C 00 00 00 */	cmpwi r0, 0
 /* 802BEB40 002BA7E0  90 83 04 D8 */	stw r4, 0x4d8(r3)
-/* 802BEB44 002BA7E4  4D 82 00 20 */	beqlr 
+/* 802BEB44 002BA7E4  4D 82 00 20 */	beqlr
 /* 802BEB48 002BA7E8  38 00 00 00 */	li r0, 0
 /* 802BEB4C 002BA7EC  98 0D A0 ED */	stb r0, "singleOutput$37992"-_SDA_BASE_(r13)
-/* 802BEB50 002BA7F0  4E 80 00 20 */	blr 
+/* 802BEB50 002BA7F0  4E 80 00 20 */	blr
 
 .global "Scissor__12ENgcRendererFP8EDLEntry"
 "Scissor__12ENgcRendererFP8EDLEntry":
@@ -20440,7 +20440,7 @@ lbl_802BEBF8:
 /* 802BEC24 002BA8C4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802BEC28 002BA8C8  7C 08 03 A6 */	mtlr r0
 /* 802BEC2C 002BA8CC  38 21 00 30 */	addi r1, r1, 0x30
-/* 802BEC30 002BA8D0  4E 80 00 20 */	blr 
+/* 802BEC30 002BA8D0  4E 80 00 20 */	blr
 
 .global "ModelMatrices__12ENgcRendererFP8EDLEntry"
 "ModelMatrices__12ENgcRendererFP8EDLEntry":
@@ -20455,9 +20455,9 @@ lbl_802BEBF8:
 /* 802BEC48 002BA8E8  90 A3 45 48 */	stw r5, 0x4548(r3)
 /* 802BEC4C 002BA8EC  54 A7 18 F8 */	rlwinm r7, r5, 3, 3, 0x1c
 /* 802BEC50 002BA8F0  39 03 07 48 */	addi r8, r3, 0x748
-/* 802BEC54 002BA8F4  4D 82 00 20 */	beqlr 
+/* 802BEC54 002BA8F4  4D 82 00 20 */	beqlr
 /* 802BEC58 002BA8F8  2C 08 00 00 */	cmpwi r8, 0
-/* 802BEC5C 002BA8FC  4D 82 00 20 */	beqlr 
+/* 802BEC5C 002BA8FC  4D 82 00 20 */	beqlr
 /* 802BEC60 002BA900  2C 87 00 00 */	cmpwi cr1, r7, 0
 /* 802BEC64 002BA904  39 20 00 00 */	li r9, 0
 /* 802BEC68 002BA908  4C 85 00 20 */	blelr cr1
@@ -20520,7 +20520,7 @@ lbl_802BED40:
 /* 802BED40 002BA9E0  7C 09 38 50 */	subf r0, r9, r7
 /* 802BED44 002BA9E4  7C 09 03 A6 */	mtctr r0
 /* 802BED48 002BA9E8  7C 09 38 00 */	cmpw r9, r7
-/* 802BED4C 002BA9EC  4C 80 00 20 */	bgelr 
+/* 802BED4C 002BA9EC  4C 80 00 20 */	bgelr
 lbl_802BED50:
 /* 802BED50 002BA9F0  80 04 00 00 */	lwz r0, 0(r4)
 /* 802BED54 002BA9F4  80 64 00 04 */	lwz r3, 4(r4)
@@ -20529,7 +20529,7 @@ lbl_802BED50:
 /* 802BED60 002BAA00  90 08 00 00 */	stw r0, 0(r8)
 /* 802BED64 002BAA04  39 08 00 08 */	addi r8, r8, 8
 /* 802BED68 002BAA08  42 00 FF E8 */	bdnz lbl_802BED50
-/* 802BED6C 002BAA0C  4E 80 00 20 */	blr 
+/* 802BED6C 002BAA0C  4E 80 00 20 */	blr
 
 .global "ModelMatrixIndex__12ENgcRendererFii"
 "ModelMatrixIndex__12ENgcRendererFii":
@@ -20591,7 +20591,7 @@ lbl_802BEE3C:
 /* 802BEE40 002BAAE0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802BEE44 002BAAE4  7C 08 03 A6 */	mtlr r0
 /* 802BEE48 002BAAE8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BEE4C 002BAAEC  4E 80 00 20 */	blr 
+/* 802BEE4C 002BAAEC  4E 80 00 20 */	blr
 
 .global "ModelMatrixIndices__12ENgcRendererFP8EDLEntry"
 "ModelMatrixIndices__12ENgcRendererFP8EDLEntry":
@@ -20663,7 +20663,7 @@ lbl_802BEF28:
 /* 802BEF44 002BABE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802BEF48 002BABE8  7C 08 03 A6 */	mtlr r0
 /* 802BEF4C 002BABEC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BEF50 002BABF0  4E 80 00 20 */	blr 
+/* 802BEF50 002BABF0  4E 80 00 20 */	blr
 
 .global "ViewMatrix__12ENgcRendererFP8EDLEntry"
 "ViewMatrix__12ENgcRendererFP8EDLEntry":
@@ -20710,7 +20710,7 @@ lbl_802BEF28:
 /* 802BEFF4 002BAC94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BEFF8 002BAC98  7C 08 03 A6 */	mtlr r0
 /* 802BEFFC 002BAC9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BF000 002BACA0  4E 80 00 20 */	blr 
+/* 802BF000 002BACA0  4E 80 00 20 */	blr
 
 .global "ProjectionMatrix__12ENgcRendererFP8EDLEntry"
 "ProjectionMatrix__12ENgcRendererFP8EDLEntry":
@@ -20772,7 +20772,7 @@ lbl_802BEF28:
 /* 802BF0E0 002BAD80  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BF0E4 002BAD84  7C 08 03 A6 */	mtlr r0
 /* 802BF0E8 002BAD88  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BF0EC 002BAD8C  4E 80 00 20 */	blr 
+/* 802BF0EC 002BAD8C  4E 80 00 20 */	blr
 
 .global "WindowMatrix__12ENgcRendererFP8EDLEntry"
 "WindowMatrix__12ENgcRendererFP8EDLEntry":
@@ -20815,7 +20815,7 @@ lbl_802BF104:
 /* 802BF17C 002BAE1C  80 85 00 3C */	lwz r4, 0x3c(r5)
 /* 802BF180 002BAE20  90 83 04 D4 */	stw r4, 0x4d4(r3)
 /* 802BF184 002BAE24  90 03 04 D0 */	stw r0, 0x4d0(r3)
-/* 802BF188 002BAE28  4E 80 00 20 */	blr 
+/* 802BF188 002BAE28  4E 80 00 20 */	blr
 
 .global "TextureMatrix__12ENgcRendererFP8EDLEntry"
 "TextureMatrix__12ENgcRendererFP8EDLEntry":
@@ -20865,7 +20865,7 @@ lbl_802BF220:
 /* 802BF234 002BAED4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BF238 002BAED8  7C 08 03 A6 */	mtlr r0
 /* 802BF23C 002BAEDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BF240 002BAEE0  4E 80 00 20 */	blr 
+/* 802BF240 002BAEE0  4E 80 00 20 */	blr
 
 .global "Texture__12ENgcRendererFP8EDLEntry"
 "Texture__12ENgcRendererFP8EDLEntry":
@@ -20887,7 +20887,7 @@ lbl_802BF278:
 /* 802BF27C 002BAF1C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802BF280 002BAF20  7C 08 03 A6 */	mtlr r0
 /* 802BF284 002BAF24  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BF288 002BAF28  4E 80 00 20 */	blr 
+/* 802BF288 002BAF28  4E 80 00 20 */	blr
 
 .global "SetTexture__12ENgcRendererFP11ENgcTexturei"
 "SetTexture__12ENgcRendererFP11ENgcTexturei":
@@ -20907,7 +20907,7 @@ lbl_802BF278:
 /* 802BF2C0 002BAF60  81 83 00 00 */	lwz r12, 0(r3)
 /* 802BF2C4 002BAF64  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802BF2C8 002BAF68  7D 89 03 A6 */	mtctr r12
-/* 802BF2CC 002BAF6C  4E 80 04 21 */	bctrl 
+/* 802BF2CC 002BAF6C  4E 80 04 21 */	bctrl
 lbl_802BF2D0:
 /* 802BF2D0 002BAF70  38 00 00 01 */	li r0, 1
 /* 802BF2D4 002BAF74  2C 1C 00 00 */	cmpwi r28, 0
@@ -20954,14 +20954,14 @@ lbl_802BF358:
 /* 802BF364 002BB004  7F 83 E3 78 */	mr r3, r28
 /* 802BF368 002BB008  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802BF36C 002BB00C  7D 89 03 A6 */	mtctr r12
-/* 802BF370 002BB010  4E 80 04 21 */	bctrl 
+/* 802BF370 002BB010  4E 80 04 21 */	bctrl
 /* 802BF374 002BB014  81 9C 00 00 */	lwz r12, 0(r28)
 /* 802BF378 002BB018  7F 83 E3 78 */	mr r3, r28
 /* 802BF37C 002BB01C  7F A4 EB 78 */	mr r4, r29
 /* 802BF380 002BB020  7F E5 FB 78 */	mr r5, r31
 /* 802BF384 002BB024  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802BF388 002BB028  7D 89 03 A6 */	mtctr r12
-/* 802BF38C 002BB02C  4E 80 04 21 */	bctrl 
+/* 802BF38C 002BB02C  4E 80 04 21 */	bctrl
 lbl_802BF390:
 /* 802BF390 002BB030  39 61 00 20 */	addi r11, r1, 0x20
 /* 802BF394 002BB034  38 60 00 01 */	li r3, 1
@@ -20969,7 +20969,7 @@ lbl_802BF390:
 /* 802BF39C 002BB03C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802BF3A0 002BB040  7C 08 03 A6 */	mtlr r0
 /* 802BF3A4 002BB044  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BF3A8 002BB048  4E 80 00 20 */	blr 
+/* 802BF3A8 002BB048  4E 80 00 20 */	blr
 
 .global "EnableGeometryModes__12ENgcRendererFP8EDLEntry"
 "EnableGeometryModes__12ENgcRendererFP8EDLEntry":
@@ -21005,7 +21005,7 @@ lbl_802BF40C:
 lbl_802BF414:
 /* 802BF414 002BB0B4  38 00 00 01 */	li r0, 1
 /* 802BF418 002BB0B8  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802BF41C 002BB0BC  4E 80 00 20 */	blr 
+/* 802BF41C 002BB0BC  4E 80 00 20 */	blr
 
 .global "DisableGeometryModes__12ENgcRendererFP8EDLEntry"
 "DisableGeometryModes__12ENgcRendererFP8EDLEntry":
@@ -21041,7 +21041,7 @@ lbl_802BF480:
 lbl_802BF488:
 /* 802BF488 002BB128  38 00 00 01 */	li r0, 1
 /* 802BF48C 002BB12C  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802BF490 002BB130  4E 80 00 20 */	blr 
+/* 802BF490 002BB130  4E 80 00 20 */	blr
 
 .global "SetGeometryModes__12ENgcRendererFP8EDLEntry"
 "SetGeometryModes__12ENgcRendererFP8EDLEntry":
@@ -21075,7 +21075,7 @@ lbl_802BF4EC:
 lbl_802BF4F4:
 /* 802BF4F4 002BB194  38 00 00 01 */	li r0, 1
 /* 802BF4F8 002BB198  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802BF4FC 002BB19C  4E 80 00 20 */	blr 
+/* 802BF4FC 002BB19C  4E 80 00 20 */	blr
 
 .global "EnableRasterModes__12ENgcRendererFP8EDLEntry"
 "EnableRasterModes__12ENgcRendererFP8EDLEntry":
@@ -21087,7 +21087,7 @@ lbl_802BF4F4:
 /* 802BF514 002BB1B4  7C A4 23 78 */	or r4, r5, r4
 /* 802BF518 002BB1B8  90 03 53 74 */	stw r0, 0x5374(r3)
 /* 802BF51C 002BB1BC  90 83 53 A8 */	stw r4, 0x53a8(r3)
-/* 802BF520 002BB1C0  4E 80 00 20 */	blr 
+/* 802BF520 002BB1C0  4E 80 00 20 */	blr
 
 .global "DisableRasterModes__12ENgcRendererFP8EDLEntry"
 "DisableRasterModes__12ENgcRendererFP8EDLEntry":
@@ -21099,7 +21099,7 @@ lbl_802BF4F4:
 /* 802BF538 002BB1D8  7C A4 20 38 */	and r4, r5, r4
 /* 802BF53C 002BB1DC  90 03 53 74 */	stw r0, 0x5374(r3)
 /* 802BF540 002BB1E0  90 83 53 A8 */	stw r4, 0x53a8(r3)
-/* 802BF544 002BB1E4  4E 80 00 20 */	blr 
+/* 802BF544 002BB1E4  4E 80 00 20 */	blr
 
 .global "SetRasterModes__12ENgcRendererFP8EDLEntry"
 "SetRasterModes__12ENgcRendererFP8EDLEntry":
@@ -21109,14 +21109,14 @@ lbl_802BF4F4:
 /* 802BF554 002BB1F4  60 00 00 40 */	ori r0, r0, 0x40
 /* 802BF558 002BB1F8  90 83 53 A8 */	stw r4, 0x53a8(r3)
 /* 802BF55C 002BB1FC  90 03 53 74 */	stw r0, 0x5374(r3)
-/* 802BF560 002BB200  4E 80 00 20 */	blr 
+/* 802BF560 002BB200  4E 80 00 20 */	blr
 
 .global "SetAlpha__12ENgcRendererFf"
 "SetAlpha__12ENgcRendererFf":
 /* 802BF564 002BB204  38 00 00 01 */	li r0, 1
 /* 802BF568 002BB208  D0 23 03 A4 */	stfs f1, 0x3a4(r3)
 /* 802BF56C 002BB20C  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802BF570 002BB210  4E 80 00 20 */	blr 
+/* 802BF570 002BB210  4E 80 00 20 */	blr
 
 .global "SetFogValues__12ENgcRendererFfRC5EVec4"
 "SetFogValues__12ENgcRendererFfRC5EVec4":
@@ -21139,7 +21139,7 @@ lbl_802BF4F4:
 /* 802BF5B4 002BB254  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 802BF5B8 002BB258  7C 08 03 A6 */	mtlr r0
 /* 802BF5BC 002BB25C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BF5C0 002BB260  4E 80 00 20 */	blr 
+/* 802BF5C0 002BB260  4E 80 00 20 */	blr
 
 .global "Lights__12ENgcRendererFP8EDLEntry"
 "Lights__12ENgcRendererFP8EDLEntry":
@@ -21249,7 +21249,7 @@ lbl_802BF740:
 /* 802BF740 002BB3E0  38 00 00 01 */	li r0, 1
 /* 802BF744 002BB3E4  98 03 05 0F */	stb r0, 0x50f(r3)
 /* 802BF748 002BB3E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802BF74C 002BB3EC  4E 80 00 20 */	blr 
+/* 802BF74C 002BB3EC  4E 80 00 20 */	blr
 
 .global "Rect__12ENgcRendererFP8EDLEntry"
 "Rect__12ENgcRendererFP8EDLEntry":
@@ -21466,7 +21466,7 @@ lbl_802BFA78:
 /* 802BFA88 002BB728  83 C1 00 68 */	lwz r30, 0x68(r1)
 /* 802BFA8C 002BB72C  7C 08 03 A6 */	mtlr r0
 /* 802BFA90 002BB730  38 21 00 80 */	addi r1, r1, 0x80
-/* 802BFA94 002BB734  4E 80 00 20 */	blr 
+/* 802BFA94 002BB734  4E 80 00 20 */	blr
 
 .global "DirectRect__12ENgcRendererFP8EDLEntry"
 "DirectRect__12ENgcRendererFP8EDLEntry":
@@ -21716,7 +21716,7 @@ lbl_802BFE38:
 /* 802BFE48 002BBAE8  83 C1 00 48 */	lwz r30, 0x48(r1)
 /* 802BFE4C 002BBAEC  7C 08 03 A6 */	mtlr r0
 /* 802BFE50 002BBAF0  38 21 00 60 */	addi r1, r1, 0x60
-/* 802BFE54 002BBAF4  4E 80 00 20 */	blr 
+/* 802BFE54 002BBAF4  4E 80 00 20 */	blr
 
 .global "Material__12ENgcRendererFP8EDLEntry"
 "Material__12ENgcRendererFP8EDLEntry":
@@ -21739,25 +21739,25 @@ lbl_802BFE38:
 /* 802BFE98 002BBB38  C0 04 00 1C */	lfs f0, 0x1c(r4)
 /* 802BFE9C 002BBB3C  D0 03 05 30 */	stfs f0, 0x530(r3)
 /* 802BFEA0 002BBB40  98 03 05 0F */	stb r0, 0x50f(r3)
-/* 802BFEA4 002BBB44  4E 80 00 20 */	blr 
+/* 802BFEA4 002BBB44  4E 80 00 20 */	blr
 
 .global "MipMapSetup__12ENgcRendererFP8EDLEntry"
 "MipMapSetup__12ENgcRendererFP8EDLEntry":
 /* 802BFEA8 002BBB48  88 0D A0 EF */	lbz r0, "singleOutput$39177"-_SDA_BASE_(r13)
 /* 802BFEAC 002BBB4C  2C 00 00 00 */	cmpwi r0, 0
-/* 802BFEB0 002BBB50  4D 82 00 20 */	beqlr 
+/* 802BFEB0 002BBB50  4D 82 00 20 */	beqlr
 /* 802BFEB4 002BBB54  38 00 00 00 */	li r0, 0
 /* 802BFEB8 002BBB58  98 0D A0 EF */	stb r0, "singleOutput$39177"-_SDA_BASE_(r13)
-/* 802BFEBC 002BBB5C  4E 80 00 20 */	blr 
+/* 802BFEBC 002BBB5C  4E 80 00 20 */	blr
 
 .global "Debug__12ENgcRendererFP8EDLEntry"
 "Debug__12ENgcRendererFP8EDLEntry":
 /* 802BFEC0 002BBB60  88 0D A0 F0 */	lbz r0, "singleOutput$39186"-_SDA_BASE_(r13)
 /* 802BFEC4 002BBB64  2C 00 00 00 */	cmpwi r0, 0
-/* 802BFEC8 002BBB68  4D 82 00 20 */	beqlr 
+/* 802BFEC8 002BBB68  4D 82 00 20 */	beqlr
 /* 802BFECC 002BBB6C  38 00 00 00 */	li r0, 0
 /* 802BFED0 002BBB70  98 0D A0 F0 */	stb r0, "singleOutput$39186"-_SDA_BASE_(r13)
-/* 802BFED4 002BBB74  4E 80 00 20 */	blr 
+/* 802BFED4 002BBB74  4E 80 00 20 */	blr
 
 .global "GeometrySetup__12ENgcRendererFP8EDLEntry"
 "GeometrySetup__12ENgcRendererFP8EDLEntry":
@@ -21780,7 +21780,7 @@ lbl_802BFE38:
 /* 802BFF18 002BBBB8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802BFF1C 002BBBBC  7C 08 03 A6 */	mtlr r0
 /* 802BFF20 002BBBC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802BFF24 002BBBC4  4E 80 00 20 */	blr 
+/* 802BFF24 002BBBC4  4E 80 00 20 */	blr
 
 .global "ZTest__12ENgcRendererFP8EDLEntry"
 "ZTest__12ENgcRendererFP8EDLEntry":
@@ -21806,7 +21806,7 @@ lbl_802BFE38:
 /* 802BFF74 002BBC14  98 A3 4D 38 */	stb r5, 0x4d38(r3)
 /* 802BFF78 002BBC18  90 03 4D 3C */	stw r0, 0x4d3c(r3)
 /* 802BFF7C 002BBC1C  98 C3 4D 40 */	stb r6, 0x4d40(r3)
-/* 802BFF80 002BBC20  4E 80 00 20 */	blr 
+/* 802BFF80 002BBC20  4E 80 00 20 */	blr
 
 .global "AlphaTest__12ENgcRendererFP8EDLEntry"
 "AlphaTest__12ENgcRendererFP8EDLEntry":
@@ -21833,7 +21833,7 @@ lbl_802BFE38:
 /* 802BFFD4 002BBC74  98 A3 4D 60 */	stb r5, 0x4d60(r3)
 /* 802BFFD8 002BBC78  90 03 53 74 */	stw r0, 0x5374(r3)
 /* 802BFFDC 002BBC7C  98 A3 4D 61 */	stb r5, 0x4d61(r3)
-/* 802BFFE0 002BBC80  4E 80 00 20 */	blr 
+/* 802BFFE0 002BBC80  4E 80 00 20 */	blr
 lbl_802BFFE4:
 /* 802BFFE4 002BBC84  80 83 53 74 */	lwz r4, 0x5374(r3)
 /* 802BFFE8 002BBC88  38 A0 00 00 */	li r5, 0
@@ -21850,7 +21850,7 @@ lbl_802BFFE4:
 /* 802C0014 002BBCB4  98 A3 4D 60 */	stb r5, 0x4d60(r3)
 /* 802C0018 002BBCB8  90 83 53 74 */	stw r4, 0x5374(r3)
 /* 802C001C 002BBCBC  98 03 4D 61 */	stb r0, 0x4d61(r3)
-/* 802C0020 002BBCC0  4E 80 00 20 */	blr 
+/* 802C0020 002BBCC0  4E 80 00 20 */	blr
 
 .global "RenderSurface__12ENgcRendererFP8EDLEntry"
 "RenderSurface__12ENgcRendererFP8EDLEntry":
@@ -21868,7 +21868,7 @@ lbl_802BFFE4:
 /* 802C0050 002BBCF0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802C0054 002BBCF4  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802C0058 002BBCF8  7D 89 03 A6 */	mtctr r12
-/* 802C005C 002BBCFC  4E 80 04 21 */	bctrl 
+/* 802C005C 002BBCFC  4E 80 04 21 */	bctrl
 /* 802C0060 002BBD00  38 00 00 00 */	li r0, 0
 /* 802C0064 002BBD04  38 7E 45 E0 */	addi r3, r30, 0x45e0
 /* 802C0068 002BBD08  90 0D BD 2C */	stw r0, "s_pRSurface$39242"-_SDA_BASE_(r13)
@@ -21881,7 +21881,7 @@ lbl_802C0070:
 /* 802C0080 002BBD20  93 ED BD 2C */	stw r31, "s_pRSurface$39242"-_SDA_BASE_(r13)
 /* 802C0084 002BBD24  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802C0088 002BBD28  7D 89 03 A6 */	mtctr r12
-/* 802C008C 002BBD2C  4E 80 04 21 */	bctrl 
+/* 802C008C 002BBD2C  4E 80 04 21 */	bctrl
 /* 802C0090 002BBD30  38 7E 45 E0 */	addi r3, r30, 0x45e0
 /* 802C0094 002BBD34  48 00 8B 35 */	bl "SaveState__20ENgcRenderStateCacheFv"
 /* 802C0098 002BBD38  80 9E 53 74 */	lwz r4, 0x5374(r30)
@@ -21941,25 +21941,25 @@ lbl_802C0160:
 /* 802C0168 002BBE08  83 C1 00 38 */	lwz r30, 0x38(r1)
 /* 802C016C 002BBE0C  7C 08 03 A6 */	mtlr r0
 /* 802C0170 002BBE10  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C0174 002BBE14  4E 80 00 20 */	blr 
+/* 802C0174 002BBE14  4E 80 00 20 */	blr
 
 .global "TriIndexed__12ENgcRendererFP8EDLEntry"
 "TriIndexed__12ENgcRendererFP8EDLEntry":
 /* 802C0178 002BBE18  88 0D A0 F1 */	lbz r0, "singleOutput$39279"-_SDA_BASE_(r13)
 /* 802C017C 002BBE1C  2C 00 00 00 */	cmpwi r0, 0
-/* 802C0180 002BBE20  4D 82 00 20 */	beqlr 
+/* 802C0180 002BBE20  4D 82 00 20 */	beqlr
 /* 802C0184 002BBE24  38 00 00 00 */	li r0, 0
 /* 802C0188 002BBE28  98 0D A0 F1 */	stb r0, "singleOutput$39279"-_SDA_BASE_(r13)
-/* 802C018C 002BBE2C  4E 80 00 20 */	blr 
+/* 802C018C 002BBE2C  4E 80 00 20 */	blr
 
 .global "SaveImageData__12ENgcRendererFP8EDLEntry"
 "SaveImageData__12ENgcRendererFP8EDLEntry":
 /* 802C0190 002BBE30  88 0D A0 F2 */	lbz r0, "singleOutput$39288"-_SDA_BASE_(r13)
 /* 802C0194 002BBE34  2C 00 00 00 */	cmpwi r0, 0
-/* 802C0198 002BBE38  4D 82 00 20 */	beqlr 
+/* 802C0198 002BBE38  4D 82 00 20 */	beqlr
 /* 802C019C 002BBE3C  38 00 00 00 */	li r0, 0
 /* 802C01A0 002BBE40  98 0D A0 F2 */	stb r0, "singleOutput$39288"-_SDA_BASE_(r13)
-/* 802C01A4 002BBE44  4E 80 00 20 */	blr 
+/* 802C01A4 002BBE44  4E 80 00 20 */	blr
 
 .global "SpriteListPacked__12ENgcRendererFP8EDLEntry"
 "SpriteListPacked__12ENgcRendererFP8EDLEntry":
@@ -22125,7 +22125,7 @@ lbl_802C03D8:
 /* 802C0408 002BC0A8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802C040C 002BC0AC  7C 08 03 A6 */	mtlr r0
 /* 802C0410 002BC0B0  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C0414 002BC0B4  4E 80 00 20 */	blr 
+/* 802C0414 002BC0B4  4E 80 00 20 */	blr
 
 .global "QuadList__12ENgcRendererFP8EDLEntry"
 "QuadList__12ENgcRendererFP8EDLEntry":
@@ -22148,7 +22148,7 @@ lbl_802C03D8:
 /* 802C0458 002BC0F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802C045C 002BC0FC  7C 08 03 A6 */	mtlr r0
 /* 802C0460 002BC100  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C0464 002BC104  4E 80 00 20 */	blr 
+/* 802C0464 002BC104  4E 80 00 20 */	blr
 
 .global "QuadList__12ENgcRendererFiPCfPCfPCUcPCScPCUcPCUcb"
 "QuadList__12ENgcRendererFiPCfPCfPCUcPCScPCUcPCUcb":
@@ -22632,7 +22632,7 @@ lbl_802C0B34:
 /* 802C0B50 002BC7F0  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802C0B54 002BC7F4  7C 08 03 A6 */	mtlr r0
 /* 802C0B58 002BC7F8  38 21 00 C0 */	addi r1, r1, 0xc0
-/* 802C0B5C 002BC7FC  4E 80 00 20 */	blr 
+/* 802C0B5C 002BC7FC  4E 80 00 20 */	blr
 
 .global "SetCombineMode__12ENgcRendererFP8EDLEntry"
 "SetCombineMode__12ENgcRendererFP8EDLEntry":
@@ -22642,11 +22642,11 @@ lbl_802C0B34:
 /* 802C0B6C 002BC80C  7C 83 02 14 */	add r4, r3, r0
 /* 802C0B70 002BC810  88 04 05 4D */	lbz r0, 0x54d(r4)
 /* 802C0B74 002BC814  7C 05 00 40 */	cmplw r5, r0
-/* 802C0B78 002BC818  4D 82 00 20 */	beqlr 
+/* 802C0B78 002BC818  4D 82 00 20 */	beqlr
 /* 802C0B7C 002BC81C  98 A4 05 4D */	stb r5, 0x54d(r4)
 /* 802C0B80 002BC820  38 00 00 01 */	li r0, 1
 /* 802C0B84 002BC824  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802C0B88 002BC828  4E 80 00 20 */	blr 
+/* 802C0B88 002BC828  4E 80 00 20 */	blr
 
 .global "SetBlendMode__12ENgcRendererFP8EDLEntry"
 "SetBlendMode__12ENgcRendererFP8EDLEntry":
@@ -22656,7 +22656,7 @@ lbl_802C0B34:
 /* 802C0B98 002BC838  98 A3 05 43 */	stb r5, 0x543(r3)
 /* 802C0B9C 002BC83C  98 83 05 4C */	stb r4, 0x54c(r3)
 /* 802C0BA0 002BC840  98 03 05 0E */	stb r0, 0x50e(r3)
-/* 802C0BA4 002BC844  4E 80 00 20 */	blr 
+/* 802C0BA4 002BC844  4E 80 00 20 */	blr
 
 .global "MovieFrame__12ENgcRendererFP8EDLEntry"
 "MovieFrame__12ENgcRendererFP8EDLEntry":
@@ -22675,7 +22675,7 @@ lbl_802C0B34:
 /* 802C0BD8 002BC878  38 84 19 9C */	addi r4, r4, lbl_8045199C@l
 /* 802C0BDC 002BC87C  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802C0BE0 002BC880  7C 89 03 A6 */	mtctr r4
-/* 802C0BE4 002BC884  4E 80 04 20 */	bctr 
+/* 802C0BE4 002BC884  4E 80 04 20 */	bctr
 /* 802C0BE8 002BC888  38 00 00 01 */	li r0, 1
 /* 802C0BEC 002BC88C  98 0D BD 30 */	stb r0, "bPausedDueToDiskError$39623"-_SDA_BASE_(r13)
 /* 802C0BF0 002BC890  48 00 00 0C */	b lbl_802C0BFC
@@ -22696,7 +22696,7 @@ lbl_802C0C10:
 /* 802C0C20 002BC8C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802C0C24 002BC8C4  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802C0C28 002BC8C8  7D 89 03 A6 */	mtctr r12
-/* 802C0C2C 002BC8CC  4E 80 04 21 */	bctrl 
+/* 802C0C2C 002BC8CC  4E 80 04 21 */	bctrl
 lbl_802C0C30:
 /* 802C0C30 002BC8D0  3A F7 00 01 */	addi r23, r23, 1
 /* 802C0C34 002BC8D4  3A D6 00 04 */	addi r22, r22, 4
@@ -23188,12 +23188,12 @@ lbl_802C13B0:
 /* 802C13C8 002BD068  81 83 00 00 */	lwz r12, 0(r3)
 /* 802C13CC 002BD06C  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802C13D0 002BD070  7D 89 03 A6 */	mtctr r12
-/* 802C13D4 002BD074  4E 80 04 21 */	bctrl 
+/* 802C13D4 002BD074  4E 80 04 21 */	bctrl
 /* 802C13D8 002BD078  80 7A 45 50 */	lwz r3, 0x4550(r26)
 /* 802C13DC 002BD07C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802C13E0 002BD080  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802C13E4 002BD084  7D 89 03 A6 */	mtctr r12
-/* 802C13E8 002BD088  4E 80 04 21 */	bctrl 
+/* 802C13E8 002BD088  4E 80 04 21 */	bctrl
 lbl_802C13EC:
 /* 802C13EC 002BD08C  3A F7 00 01 */	addi r23, r23, 1
 /* 802C13F0 002BD090  3A D6 00 04 */	addi r22, r22, 4
@@ -23207,7 +23207,7 @@ lbl_802C1404:
 /* 802C140C 002BD0AC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802C1410 002BD0B0  7C 08 03 A6 */	mtlr r0
 /* 802C1414 002BD0B4  38 21 00 60 */	addi r1, r1, 0x60
-/* 802C1418 002BD0B8  4E 80 00 20 */	blr 
+/* 802C1418 002BD0B8  4E 80 00 20 */	blr
 
 .global "RectListRot__12ENgcRendererFP8EDLEntry"
 "RectListRot__12ENgcRendererFP8EDLEntry":
@@ -23469,7 +23469,7 @@ lbl_802C17A0:
 /* 802C1804 002BD4A4  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 802C1808 002BD4A8  7C 08 03 A6 */	mtlr r0
 /* 802C180C 002BD4AC  38 21 01 00 */	addi r1, r1, 0x100
-/* 802C1810 002BD4B0  4E 80 00 20 */	blr 
+/* 802C1810 002BD4B0  4E 80 00 20 */	blr
 
 .global "RectList__12ENgcRendererFP8EDLEntry"
 "RectList__12ENgcRendererFP8EDLEntry":
@@ -23658,7 +23658,7 @@ lbl_802C1A84:
 /* 802C1AD4 002BD774  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802C1AD8 002BD778  7C 08 03 A6 */	mtlr r0
 /* 802C1ADC 002BD77C  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C1AE0 002BD780  4E 80 00 20 */	blr 
+/* 802C1AE0 002BD780  4E 80 00 20 */	blr
 
 .global "Stencil__12ENgcRendererFP8EDLEntry"
 "Stencil__12ENgcRendererFP8EDLEntry":
@@ -23793,7 +23793,7 @@ lbl_802C1CA4:
 /* 802C1CB0 002BD950  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802C1CB4 002BD954  7C 08 03 A6 */	mtlr r0
 /* 802C1CB8 002BD958  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C1CBC 002BD95C  4E 80 00 20 */	blr 
+/* 802C1CBC 002BD95C  4E 80 00 20 */	blr
 
 .global "NgcTexInvalidateAll__12ENgcRendererFP8EDLEntry"
 "NgcTexInvalidateAll__12ENgcRendererFP8EDLEntry":
@@ -23871,7 +23871,7 @@ lbl_802C1DAC:
 /* 802C1DBC 002BDA5C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802C1DC0 002BDA60  7C 08 03 A6 */	mtlr r0
 /* 802C1DC4 002BDA64  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C1DC8 002BDA68  4E 80 00 20 */	blr 
+/* 802C1DC8 002BDA68  4E 80 00 20 */	blr
 
 .global "NgcGXDisplayListInt__12ENgcRendererFP8EDLEntry"
 "NgcGXDisplayListInt__12ENgcRendererFP8EDLEntry":
@@ -24126,7 +24126,7 @@ lbl_802C2140:
 /* 802C216C 002BDE0C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802C2170 002BDE10  7C 08 03 A6 */	mtlr r0
 /* 802C2174 002BDE14  38 21 00 80 */	addi r1, r1, 0x80
-/* 802C2178 002BDE18  4E 80 00 20 */	blr 
+/* 802C2178 002BDE18  4E 80 00 20 */	blr
 
 .global "NgcGXDisplayList__12ENgcRendererFP8EDLEntry"
 "NgcGXDisplayList__12ENgcRendererFP8EDLEntry":
@@ -24361,7 +24361,7 @@ lbl_802C24C0:
 /* 802C24DC 002BE17C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802C24E0 002BE180  7C 08 03 A6 */	mtlr r0
 /* 802C24E4 002BE184  38 21 00 90 */	addi r1, r1, 0x90
-/* 802C24E8 002BE188  4E 80 00 20 */	blr 
+/* 802C24E8 002BE188  4E 80 00 20 */	blr
 
 .global "NgcTriListInt__12ENgcRendererFP8EDLEntry"
 "NgcTriListInt__12ENgcRendererFP8EDLEntry":
@@ -24593,7 +24593,7 @@ lbl_802C280C:
 /* 802C2820 002BE4C0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802C2824 002BE4C4  7C 08 03 A6 */	mtlr r0
 /* 802C2828 002BE4C8  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C282C 002BE4CC  4E 80 00 20 */	blr 
+/* 802C282C 002BE4CC  4E 80 00 20 */	blr
 
 .global "NgcTriList__12ENgcRendererFP8EDLEntry"
 "NgcTriList__12ENgcRendererFP8EDLEntry":
@@ -24806,7 +24806,7 @@ lbl_802C2B0C:
 /* 802C2B20 002BE7C0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802C2B24 002BE7C4  7C 08 03 A6 */	mtlr r0
 /* 802C2B28 002BE7C8  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C2B2C 002BE7CC  4E 80 00 20 */	blr 
+/* 802C2B2C 002BE7CC  4E 80 00 20 */	blr
 
 .global "NgcScreenTriList__12ENgcRendererFP8EDLEntry"
 "NgcScreenTriList__12ENgcRendererFP8EDLEntry":
@@ -24990,11 +24990,11 @@ lbl_802C2DB8:
 /* 802C2DCC 002BEA6C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802C2DD0 002BEA70  7C 08 03 A6 */	mtlr r0
 /* 802C2DD4 002BEA74  38 21 00 30 */	addi r1, r1, 0x30
-/* 802C2DD8 002BEA78  4E 80 00 20 */	blr 
+/* 802C2DD8 002BEA78  4E 80 00 20 */	blr
 
 .global "ReadMetrics__12ENgcRendererFP8EDLEntry"
 "ReadMetrics__12ENgcRendererFP8EDLEntry":
-/* 802C2DDC 002BEA7C  4E 80 00 20 */	blr 
+/* 802C2DDC 002BEA7C  4E 80 00 20 */	blr
 
 .global "Shader__12ENgcRendererFP8EDLEntry"
 "Shader__12ENgcRendererFP8EDLEntry":
@@ -25072,7 +25072,7 @@ lbl_802C2EB4:
 /* 802C2EE8 002BEB88  98 03 4D 61 */	stb r0, 0x4d61(r3)
 lbl_802C2EEC:
 /* 802C2EEC 002BEB8C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C2EF0 002BEB90  4E 80 00 20 */	blr 
+/* 802C2EF0 002BEB90  4E 80 00 20 */	blr
 
 .global "SetShader__12ENgcRendererFP10ENgcShaderUi"
 "SetShader__12ENgcRendererFP10ENgcShaderUi":
@@ -25303,7 +25303,7 @@ lbl_802C3220:
 /* 802C3238 002BEED8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802C323C 002BEEDC  7C 08 03 A6 */	mtlr r0
 /* 802C3240 002BEEE0  38 21 00 70 */	addi r1, r1, 0x70
-/* 802C3244 002BEEE4  4E 80 00 20 */	blr 
+/* 802C3244 002BEEE4  4E 80 00 20 */	blr
 
 .global "ScrambleRect__12ENgcRendererFP8EDLEntry"
 "ScrambleRect__12ENgcRendererFP8EDLEntry":
@@ -25325,7 +25325,7 @@ lbl_802C3220:
 /* 802C3284 002BEF24  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C3288 002BEF28  7C 08 03 A6 */	mtlr r0
 /* 802C328C 002BEF2C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C3290 002BEF30  4E 80 00 20 */	blr 
+/* 802C3290 002BEF30  4E 80 00 20 */	blr
 
 .global "ScrambleRect__12ENgcRendererFRC5EVec2RC5EVec2f"
 "ScrambleRect__12ENgcRendererFRC5EVec2RC5EVec2f":
@@ -25493,7 +25493,7 @@ lbl_802C34BC:
 /* 802C34C8 002BF168  81 83 00 00 */	lwz r12, 0(r3)
 /* 802C34CC 002BF16C  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802C34D0 002BF170  7D 89 03 A6 */	mtctr r12
-/* 802C34D4 002BF174  4E 80 04 21 */	bctrl 
+/* 802C34D4 002BF174  4E 80 04 21 */	bctrl
 /* 802C34D8 002BF178  C0 02 A0 AC */	lfs f0, lbl_805DB2CC-_SDA2_BASE_(r2)
 /* 802C34DC 002BF17C  EC 20 00 72 */	fmuls f1, f0, f1
 /* 802C34E0 002BF180  48 14 BD 6D */	bl "__cvt_fp2unsigned"
@@ -25597,7 +25597,7 @@ lbl_802C3610:
 /* 802C3644 002BF2E4  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802C3648 002BF2E8  7C 08 03 A6 */	mtlr r0
 /* 802C364C 002BF2EC  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 802C3650 002BF2F0  4E 80 00 20 */	blr 
+/* 802C3650 002BF2F0  4E 80 00 20 */	blr
 
 .global "VertexMorph__12ENgcRendererFP8EDLEntry"
 "VertexMorph__12ENgcRendererFP8EDLEntry":
@@ -25710,15 +25710,15 @@ lbl_802C37D4:
 /* 802C37DC 002BF47C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802C37E0 002BF480  7C 08 03 A6 */	mtlr r0
 /* 802C37E4 002BF484  38 21 00 70 */	addi r1, r1, 0x70
-/* 802C37E8 002BF488  4E 80 00 20 */	blr 
+/* 802C37E8 002BF488  4E 80 00 20 */	blr
 
 .global "VertexMorphEnd__12ENgcRendererFP8EDLEntry"
 "VertexMorphEnd__12ENgcRendererFP8EDLEntry":
 /* 802C37EC 002BF48C  88 03 45 DC */	lbz r0, 0x45dc(r3)
 /* 802C37F0 002BF490  2C 00 00 00 */	cmpwi r0, 0
-/* 802C37F4 002BF494  4D 82 00 20 */	beqlr 
+/* 802C37F4 002BF494  4D 82 00 20 */	beqlr
 /* 802C37F8 002BF498  48 07 75 90 */	b "PPCSync"
-/* 802C37FC 002BF49C  4E 80 00 20 */	blr 
+/* 802C37FC 002BF49C  4E 80 00 20 */	blr
 
 .global "WeightedBlendInt__12ENgcRendererF12_GXPrimitiveiPsPScPsPUcPUcb"
 "WeightedBlendInt__12ENgcRendererF12_GXPrimitiveiPsPScPsPUcPUcb":
@@ -25917,12 +25917,12 @@ lbl_802C3AB0:
 /* 802C3AD8 002BF778  80 01 01 74 */	lwz r0, 0x174(r1)
 /* 802C3ADC 002BF77C  7C 08 03 A6 */	mtlr r0
 /* 802C3AE0 002BF780  38 21 01 70 */	addi r1, r1, 0x170
-/* 802C3AE4 002BF784  4E 80 00 20 */	blr 
+/* 802C3AE4 002BF784  4E 80 00 20 */	blr
 
 .global "GetRenderStateCache__12ENgcRendererFv"
 "GetRenderStateCache__12ENgcRendererFv":
 /* 802C3AE8 002BF788  38 63 45 E0 */	addi r3, r3, 0x45e0
-/* 802C3AEC 002BF78C  4E 80 00 20 */	blr 
+/* 802C3AEC 002BF78C  4E 80 00 20 */	blr
 
 .global "GetPreviousFrameBuffer__12ENgcRendererFPiPi"
 "GetPreviousFrameBuffer__12ENgcRendererFPiPi":
@@ -25961,7 +25961,7 @@ lbl_802C3AB0:
 /* 802C3B64 002BF804  90 03 00 34 */	stw r0, 0x34(r3)
 /* 802C3B68 002BF808  80 04 03 9C */	lwz r0, 0x39c(r4)
 /* 802C3B6C 002BF80C  90 03 00 38 */	stw r0, 0x38(r3)
-/* 802C3B70 002BF810  4E 80 00 20 */	blr 
+/* 802C3B70 002BF810  4E 80 00 20 */	blr
 
 .global "ParticleListBegin__12ENgcRendererFUiUi"
 "ParticleListBegin__12ENgcRendererFUiUi":
@@ -25987,7 +25987,7 @@ lbl_802C3AB0:
 /* 802C3BC0 002BF860  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C3BC4 002BF864  7C 08 03 A6 */	mtlr r0
 /* 802C3BC8 002BF868  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C3BCC 002BF86C  4E 80 00 20 */	blr 
+/* 802C3BCC 002BF86C  4E 80 00 20 */	blr
 
 .global "ParticleListEnd__12ENgcRendererFUi"
 "ParticleListEnd__12ENgcRendererFUi":
@@ -26229,17 +26229,17 @@ lbl_802C3F5C:
 /* 802C3F64 002BFC04  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802C3F68 002BFC08  7C 08 03 A6 */	mtlr r0
 /* 802C3F6C 002BFC0C  38 21 00 90 */	addi r1, r1, 0x90
-/* 802C3F70 002BFC10  4E 80 00 20 */	blr 
+/* 802C3F70 002BFC10  4E 80 00 20 */	blr
 
 .global "VertexMorphWeightsList__12ENgcRendererFPf"
 "VertexMorphWeightsList__12ENgcRendererFPf":
 /* 802C3F74 002BFC14  88 03 45 DC */	lbz r0, 0x45dc(r3)
 /* 802C3F78 002BFC18  2C 00 00 00 */	cmpwi r0, 0
-/* 802C3F7C 002BFC1C  4D 82 00 20 */	beqlr 
+/* 802C3F7C 002BFC1C  4D 82 00 20 */	beqlr
 /* 802C3F80 002BFC20  38 A0 00 60 */	li r5, 0x60
 /* 802C3F84 002BFC24  38 63 45 7C */	addi r3, r3, 0x457c
 /* 802C3F88 002BFC28  4B D4 03 B0 */	b "memcpy"
-/* 802C3F8C 002BFC2C  4E 80 00 20 */	blr 
+/* 802C3F8C 002BFC2C  4E 80 00 20 */	blr
 
 .global "EnablePrevFrameCopy__12ENgcRendererFb"
 "EnablePrevFrameCopy__12ENgcRendererFb":
@@ -26265,13 +26265,13 @@ lbl_802C3F5C:
 /* 802C3FB8 002BFC58  7C 63 FE 70 */	srawi r3, r3, 0x1f
 /* 802C3FBC 002BFC5C  7C 00 18 78 */	andc r0, r0, r3
 /* 802C3FC0 002BFC60  2C 00 00 3C */	cmpwi r0, 0x3c
-/* 802C3FC4 002BFC64  4C 81 00 20 */	blelr 
+/* 802C3FC4 002BFC64  4C 81 00 20 */	blelr
 /* 802C3FC8 002BFC68  80 6D BD 34 */	lwz r3, "count$41476"-_SDA_BASE_(r13)
 /* 802C3FCC 002BFC6C  38 00 00 01 */	li r0, 1
 /* 802C3FD0 002BFC70  98 0D BD 1F */	stb r0, "s_frameAvailable__12ENgcRenderer"-_SDA_BASE_(r13)
 /* 802C3FD4 002BFC74  38 03 00 01 */	addi r0, r3, 1
 /* 802C3FD8 002BFC78  90 0D BD 34 */	stw r0, "count$41476"-_SDA_BASE_(r13)
-/* 802C3FDC 002BFC7C  4E 80 00 20 */	blr 
+/* 802C3FDC 002BFC7C  4E 80 00 20 */	blr
 
 .global "SyncPerEntity__Fb"
 "SyncPerEntity__Fb":
@@ -26282,14 +26282,14 @@ lbl_802C3F5C:
 /* 802C3FF0 002BFC90  80 64 45 64 */	lwz r3, 0x4564(r4)
 /* 802C3FF4 002BFC94  38 03 00 01 */	addi r0, r3, 1
 /* 802C3FF8 002BFC98  90 04 45 64 */	stw r0, 0x4564(r4)
-/* 802C3FFC 002BFC9C  4E 80 00 20 */	blr 
+/* 802C3FFC 002BFC9C  4E 80 00 20 */	blr
 lbl_802C4000:
 /* 802C4000 002BFCA0  3C 80 80 54 */	lis r4, "_ngcRenderer"@ha
 /* 802C4004 002BFCA4  38 84 8B 10 */	addi r4, r4, "_ngcRenderer"@l
 /* 802C4008 002BFCA8  80 64 45 64 */	lwz r3, 0x4564(r4)
 /* 802C400C 002BFCAC  38 03 FF FF */	addi r0, r3, -1
 /* 802C4010 002BFCB0  90 04 45 64 */	stw r0, 0x4564(r4)
-/* 802C4014 002BFCB4  4E 80 00 20 */	blr 
+/* 802C4014 002BFCB4  4E 80 00 20 */	blr
 
 .global "__ct__17NGCRendererAAImplFR16_GXRenderModeObjRPUc"
 "__ct__17NGCRendererAAImplFR16_GXRenderModeObjRPUc":
@@ -26299,7 +26299,7 @@ lbl_802C4000:
 /* 802C4024 002BFCC4  98 03 00 01 */	stb r0, 1(r3)
 /* 802C4028 002BFCC8  90 A3 00 08 */	stw r5, 8(r3)
 /* 802C402C 002BFCCC  90 03 00 0C */	stw r0, 0xc(r3)
-/* 802C4030 002BFCD0  4E 80 00 20 */	blr 
+/* 802C4030 002BFCD0  4E 80 00 20 */	blr
 
 .global "__dt__17NGCRendererAAImplFv"
 "__dt__17NGCRendererAAImplFv":
@@ -26326,7 +26326,7 @@ lbl_802C4074:
 /* 802C4080 002BFD20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802C4084 002BFD24  7C 08 03 A6 */	mtlr r0
 /* 802C4088 002BFD28  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C408C 002BFD2C  4E 80 00 20 */	blr 
+/* 802C408C 002BFD2C  4E 80 00 20 */	blr
 
 .global "Init__17NGCRendererAAImplFv"
 "Init__17NGCRendererAAImplFv":
@@ -26372,7 +26372,7 @@ lbl_802C4074:
 /* 802C412C 002BFDCC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802C4130 002BFDD0  7C 08 03 A6 */	mtlr r0
 /* 802C4134 002BFDD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C4138 002BFDD8  4E 80 00 20 */	blr 
+/* 802C4138 002BFDD8  4E 80 00 20 */	blr
 
 .global "GetPreviousFrameBuffer__17NGCRendererAAImplFPiPi"
 "GetPreviousFrameBuffer__17NGCRendererAAImplFPiPi":
@@ -26385,26 +26385,26 @@ lbl_802C4074:
 /* 802C4154 002BFDF4  7C 00 0E 70 */	srawi r0, r0, 1
 /* 802C4158 002BFDF8  90 05 00 00 */	stw r0, 0(r5)
 /* 802C415C 002BFDFC  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 802C4160 002BFE00  4E 80 00 20 */	blr 
+/* 802C4160 002BFE00  4E 80 00 20 */	blr
 
 .global "EnablePrevFrameCopy__17NGCRendererAAImplFb"
 "EnablePrevFrameCopy__17NGCRendererAAImplFb":
 /* 802C4164 002BFE04  7C 65 1B 78 */	mr r5, r3
 /* 802C4168 002BFE08  88 63 00 00 */	lbz r3, 0(r3)
 /* 802C416C 002BFE0C  98 85 00 00 */	stb r4, 0(r5)
-/* 802C4170 002BFE10  4E 80 00 20 */	blr 
+/* 802C4170 002BFE10  4E 80 00 20 */	blr
 
 .global "ForceDisableAA__17NGCRendererAAImplFb"
 "ForceDisableAA__17NGCRendererAAImplFb":
 /* 802C4174 002BFE14  7C 65 1B 78 */	mr r5, r3
 /* 802C4178 002BFE18  88 63 00 01 */	lbz r3, 1(r3)
 /* 802C417C 002BFE1C  98 85 00 01 */	stb r4, 1(r5)
-/* 802C4180 002BFE20  4E 80 00 20 */	blr 
+/* 802C4180 002BFE20  4E 80 00 20 */	blr
 
 .global "GetNumberOfFullScenePasses__17NGCRendererAAImplFv"
 "GetNumberOfFullScenePasses__17NGCRendererAAImplFv":
 /* 802C4184 002BFE24  38 60 00 01 */	li r3, 1
-/* 802C4188 002BFE28  4E 80 00 20 */	blr 
+/* 802C4188 002BFE28  4E 80 00 20 */	blr
 
 .global "BeginFullScenePass__17NGCRendererAAImplFi"
 "BeginFullScenePass__17NGCRendererAAImplFi":
@@ -26437,11 +26437,11 @@ lbl_802C4074:
 /* 802C41F4 002BFE94  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802C41F8 002BFE98  7C 08 03 A6 */	mtlr r0
 /* 802C41FC 002BFE9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C4200 002BFEA0  4E 80 00 20 */	blr 
+/* 802C4200 002BFEA0  4E 80 00 20 */	blr
 
 .global "EndFullScenePass__17NGCRendererAAImplFi"
 "EndFullScenePass__17NGCRendererAAImplFi":
-/* 802C4204 002BFEA4  4E 80 00 20 */	blr 
+/* 802C4204 002BFEA4  4E 80 00 20 */	blr
 
 .global "EndFrame__17NGCRendererAAImplFv"
 "EndFrame__17NGCRendererAAImplFv":
@@ -26485,7 +26485,7 @@ lbl_802C426C:
 /* 802C4298 002BFF38  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802C429C 002BFF3C  7C 08 03 A6 */	mtlr r0
 /* 802C42A0 002BFF40  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C42A4 002BFF44  4E 80 00 20 */	blr 
+/* 802C42A4 002BFF44  4E 80 00 20 */	blr
 
 .global "SetupTextureCoordinateGeneration__18NGCRendererTevImplFi"
 "SetupTextureCoordinateGeneration__18NGCRendererTevImplFi":
@@ -26917,7 +26917,7 @@ lbl_802C4920:
 /* 802C4928 002C05C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C492C 002C05CC  7C 08 03 A6 */	mtlr r0
 /* 802C4930 002C05D0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C4934 002C05D4  4E 80 00 20 */	blr 
+/* 802C4934 002C05D4  4E 80 00 20 */	blr
 
 .global "SetupTEVStageVertexIntensity__18NGCRendererTevImplFRi"
 "SetupTEVStageVertexIntensity__18NGCRendererTevImplFRi":
@@ -27104,7 +27104,7 @@ lbl_802C4BEC:
 /* 802C4C00 002C08A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C4C04 002C08A4  7C 08 03 A6 */	mtlr r0
 /* 802C4C08 002C08A8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802C4C0C 002C08AC  4E 80 00 20 */	blr 
+/* 802C4C0C 002C08AC  4E 80 00 20 */	blr
 
 .global "Setup2TEVStageTexture__18NGCRendererTevImplFiRiiRi11_GXTevRegID"
 "Setup2TEVStageTexture__18NGCRendererTevImplFiRiiRi11_GXTevRegID":
@@ -27534,7 +27534,7 @@ lbl_802C5290:
 /* 802C52A4 002C0F44  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802C52A8 002C0F48  7C 08 03 A6 */	mtlr r0
 /* 802C52AC 002C0F4C  38 21 00 50 */	addi r1, r1, 0x50
-/* 802C52B0 002C0F50  4E 80 00 20 */	blr 
+/* 802C52B0 002C0F50  4E 80 00 20 */	blr
 
 .global "SetupFinalBlendMode__18NGCRendererTevImplFiRiifi"
 "SetupFinalBlendMode__18NGCRendererTevImplFiRiifi":
@@ -28134,7 +28134,7 @@ lbl_802C5B84:
 /* 802C5B8C 002C182C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802C5B90 002C1830  7C 08 03 A6 */	mtlr r0
 /* 802C5B94 002C1834  38 21 00 40 */	addi r1, r1, 0x40
-/* 802C5B98 002C1838  4E 80 00 20 */	blr 
+/* 802C5B98 002C1838  4E 80 00 20 */	blr
 
 .global "UpdateTEVStages__18NGCRendererTevImplFifUib"
 "UpdateTEVStages__18NGCRendererTevImplFifUib":
@@ -30026,7 +30026,7 @@ lbl_802C7818:
 /* 802C7838 002C34D8  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802C783C 002C34DC  7C 08 03 A6 */	mtlr r0
 /* 802C7840 002C34E0  38 21 00 A0 */	addi r1, r1, 0xa0
-/* 802C7844 002C34E4  4E 80 00 20 */	blr 
+/* 802C7844 002C34E4  4E 80 00 20 */	blr
 
 .global "UpdateTEVStagesSimple__18NGCRendererTevImplFiifb"
 "UpdateTEVStagesSimple__18NGCRendererTevImplFiifb":
@@ -30824,7 +30824,7 @@ lbl_802C8420:
 /* 802C8440 002C40E0  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802C8444 002C40E4  7C 08 03 A6 */	mtlr r0
 /* 802C8448 002C40E8  38 21 00 60 */	addi r1, r1, 0x60
-/* 802C844C 002C40EC  4E 80 00 20 */	blr 
+/* 802C844C 002C40EC  4E 80 00 20 */	blr
 
 .global "__ct__18NGCRendererFogImplFv"
 "__ct__18NGCRendererFogImplFv":
@@ -30857,12 +30857,12 @@ lbl_802C8420:
 /* 802C84B8 002C4158  D0 23 00 24 */	stfs f1, 0x24(r3)
 /* 802C84BC 002C415C  D0 03 00 28 */	stfs f0, 0x28(r3)
 /* 802C84C0 002C4160  D0 43 00 2C */	stfs f2, 0x2c(r3)
-/* 802C84C4 002C4164  4E 80 00 20 */	blr 
+/* 802C84C4 002C4164  4E 80 00 20 */	blr
 
 .global "ForceDisable__18NGCRendererFogImplFb"
 "ForceDisable__18NGCRendererFogImplFb":
 /* 802C84C8 002C4168  98 83 00 00 */	stb r4, 0(r3)
-/* 802C84CC 002C416C  4E 80 00 20 */	blr 
+/* 802C84CC 002C416C  4E 80 00 20 */	blr
 
 .global "SetProjNearFarValues__18NGCRendererFogImplFff"
 "SetProjNearFarValues__18NGCRendererFogImplFff":
@@ -30871,12 +30871,12 @@ lbl_802C8420:
 /* 802C84D8 002C4178  40 82 00 10 */	bne lbl_802C84E8
 /* 802C84DC 002C417C  C0 03 00 0C */	lfs f0, 0xc(r3)
 /* 802C84E0 002C4180  FC 00 10 00 */	fcmpu cr0, f0, f2
-/* 802C84E4 002C4184  4D 82 00 20 */	beqlr 
+/* 802C84E4 002C4184  4D 82 00 20 */	beqlr
 lbl_802C84E8:
 /* 802C84E8 002C4188  D0 23 00 08 */	stfs f1, 8(r3)
 /* 802C84EC 002C418C  D0 43 00 0C */	stfs f2, 0xc(r3)
 /* 802C84F0 002C4190  48 00 00 8C */	b "UpdateFogValues__18NGCRendererFogImplFv"
-/* 802C84F4 002C4194  4E 80 00 20 */	blr 
+/* 802C84F4 002C4194  4E 80 00 20 */	blr
 
 .global "SetFogValues__18NGCRendererFogImplFfRC8_GXColor"
 "SetFogValues__18NGCRendererFogImplFfRC8_GXColor":
@@ -30886,7 +30886,7 @@ lbl_802C84E8:
 /* 802C8504 002C41A4  80 A3 00 1C */	lwz r5, 0x1c(r3)
 /* 802C8508 002C41A8  80 04 00 00 */	lwz r0, 0(r4)
 /* 802C850C 002C41AC  7C 05 00 00 */	cmpw r5, r0
-/* 802C8510 002C41B0  4C 82 00 20 */	bnelr 
+/* 802C8510 002C41B0  4C 82 00 20 */	bnelr
 lbl_802C8514:
 /* 802C8514 002C41B4  FC 40 08 18 */	frsp f2, f1
 /* 802C8518 002C41B8  C0 A2 9F F8 */	lfs f5, lbl_805DB218-_SDA2_BASE_(r2)
@@ -30913,7 +30913,7 @@ lbl_802C8514:
 /* 802C856C 002C420C  D0 63 00 14 */	stfs f3, 0x14(r3)
 /* 802C8570 002C4210  D0 03 00 18 */	stfs f0, 0x18(r3)
 /* 802C8574 002C4214  48 00 00 08 */	b "UpdateFogValues__18NGCRendererFogImplFv"
-/* 802C8578 002C4218  4E 80 00 20 */	blr 
+/* 802C8578 002C4218  4E 80 00 20 */	blr
 
 .global "UpdateFogValues__18NGCRendererFogImplFv"
 "UpdateFogValues__18NGCRendererFogImplFv":
@@ -30968,7 +30968,7 @@ lbl_802C8634:
 /* 802C8634 002C42D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802C8638 002C42D8  7C 08 03 A6 */	mtlr r0
 /* 802C863C 002C42DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802C8640 002C42E0  4E 80 00 20 */	blr 
+/* 802C8640 002C42E0  4E 80 00 20 */	blr
 
 .global "InitToDefaults__20ENgcRenderStateCacheFUsUs"
 "InitToDefaults__20ENgcRenderStateCacheFUsUs":
@@ -31325,7 +31325,7 @@ lbl_802C8928:
 /* 802C8BB8 002C4858  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802C8BBC 002C485C  7C 08 03 A6 */	mtlr r0
 /* 802C8BC0 002C4860  38 21 00 60 */	addi r1, r1, 0x60
-/* 802C8BC4 002C4864  4E 80 00 20 */	blr 
+/* 802C8BC4 002C4864  4E 80 00 20 */	blr
 
 .global "SaveState__20ENgcRenderStateCacheFv"
 "SaveState__20ENgcRenderStateCacheFv":
@@ -31358,7 +31358,7 @@ lbl_802C8928:
 /* 802C8C30 002C48D0  80 63 0D C8 */	lwz r3, 0xdc8(r3)
 /* 802C8C34 002C48D4  90 65 00 24 */	stw r3, 0x24(r5)
 /* 802C8C38 002C48D8  90 0D BD 38 */	stw r0, "s_stackPos__20ENgcRenderStateCache"-_SDA_BASE_(r13)
-/* 802C8C3C 002C48DC  4E 80 00 20 */	blr 
+/* 802C8C3C 002C48DC  4E 80 00 20 */	blr
 
 .global "RestoreState__20ENgcRenderStateCacheFv"
 "RestoreState__20ENgcRenderStateCacheFv":
@@ -31404,7 +31404,7 @@ lbl_802C8928:
 /* 802C8CDC 002C497C  80 84 00 24 */	lwz r4, 0x24(r4)
 /* 802C8CE0 002C4980  90 83 0D C8 */	stw r4, 0xdc8(r3)
 /* 802C8CE4 002C4984  90 03 0D 94 */	stw r0, 0xd94(r3)
-/* 802C8CE8 002C4988  4E 80 00 20 */	blr 
+/* 802C8CE8 002C4988  4E 80 00 20 */	blr
 
 .global "SaveViewportState__20ENgcRenderStateCacheFv"
 "SaveViewportState__20ENgcRenderStateCacheFv":
@@ -31434,7 +31434,7 @@ lbl_802C8928:
 /* 802C8D48 002C49E8  80 63 12 08 */	lwz r3, 0x1208(r3)
 /* 802C8D4C 002C49EC  90 66 00 24 */	stw r3, 0x24(r6)
 /* 802C8D50 002C49F0  90 0D BD 3C */	stw r0, "s_vpStackPos__20ENgcRenderStateCache"-_SDA_BASE_(r13)
-/* 802C8D54 002C49F4  4E 80 00 20 */	blr 
+/* 802C8D54 002C49F4  4E 80 00 20 */	blr
 
 .global "RestoreViewportState__20ENgcRenderStateCacheFv"
 "RestoreViewportState__20ENgcRenderStateCacheFv":
@@ -31469,7 +31469,7 @@ lbl_802C8928:
 /* 802C8DC8 002C4A68  80 86 00 24 */	lwz r4, 0x24(r6)
 /* 802C8DCC 002C4A6C  90 83 12 08 */	stw r4, 0x1208(r3)
 /* 802C8DD0 002C4A70  90 03 0D 94 */	stw r0, 0xd94(r3)
-/* 802C8DD4 002C4A74  4E 80 00 20 */	blr 
+/* 802C8DD4 002C4A74  4E 80 00 20 */	blr
 
 .global "Reset__20ENgcRenderStateCacheFb"
 "Reset__20ENgcRenderStateCacheFb":
@@ -31972,7 +31972,7 @@ lbl_802C94C4:
 /* 802C9548 002C51E8  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802C954C 002C51EC  7C 08 03 A6 */	mtlr r0
 /* 802C9550 002C51F0  38 21 00 60 */	addi r1, r1, 0x60
-/* 802C9554 002C51F4  4E 80 00 20 */	blr 
+/* 802C9554 002C51F4  4E 80 00 20 */	blr
 
 .global "Apply__20ENgcRenderStateCacheFb"
 "Apply__20ENgcRenderStateCacheFb":
@@ -32992,7 +32992,7 @@ lbl_802CA434:
 /* 802CA43C 002C60DC  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802CA440 002C60E0  7C 08 03 A6 */	mtlr r0
 /* 802CA444 002C60E4  38 21 00 70 */	addi r1, r1, 0x70
-/* 802CA448 002C60E8  4E 80 00 20 */	blr 
+/* 802CA448 002C60E8  4E 80 00 20 */	blr
 
 .global "SetOrthoProjectionMode__Fb"
 "SetOrthoProjectionMode__Fb":
@@ -33071,106 +33071,106 @@ lbl_802CA548:
 /* 802CA550 002C61F0  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802CA554 002C61F4  7C 08 03 A6 */	mtlr r0
 /* 802CA558 002C61F8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CA55C 002C61FC  4E 80 00 20 */	blr 
+/* 802CA55C 002C61FC  4E 80 00 20 */	blr
 
 .global "TriFan__12ENgcRendererFP8EDLEntry"
 "TriFan__12ENgcRendererFP8EDLEntry":
 /* 802CA560 002C6200  88 0D A0 F4 */	lbz r0, "singleOutput$44371"-_SDA_BASE_(r13)
 /* 802CA564 002C6204  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA568 002C6208  4D 82 00 20 */	beqlr 
+/* 802CA568 002C6208  4D 82 00 20 */	beqlr
 /* 802CA56C 002C620C  38 00 00 00 */	li r0, 0
 /* 802CA570 002C6210  98 0D A0 F4 */	stb r0, "singleOutput$44371"-_SDA_BASE_(r13)
-/* 802CA574 002C6214  4E 80 00 20 */	blr 
+/* 802CA574 002C6214  4E 80 00 20 */	blr
 
 .global "TriList__12ENgcRendererFP8EDLEntry"
 "TriList__12ENgcRendererFP8EDLEntry":
 /* 802CA578 002C6218  88 0D A0 F5 */	lbz r0, "singleOutput$44381"-_SDA_BASE_(r13)
 /* 802CA57C 002C621C  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA580 002C6220  4D 82 00 20 */	beqlr 
+/* 802CA580 002C6220  4D 82 00 20 */	beqlr
 /* 802CA584 002C6224  38 00 00 00 */	li r0, 0
 /* 802CA588 002C6228  98 0D A0 F5 */	stb r0, "singleOutput$44381"-_SDA_BASE_(r13)
-/* 802CA58C 002C622C  4E 80 00 20 */	blr 
+/* 802CA58C 002C622C  4E 80 00 20 */	blr
 
 .global "LineStrip__12ENgcRendererFP8EDLEntry"
 "LineStrip__12ENgcRendererFP8EDLEntry":
 /* 802CA590 002C6230  88 0D A0 F6 */	lbz r0, "singleOutput$44390"-_SDA_BASE_(r13)
 /* 802CA594 002C6234  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA598 002C6238  4D 82 00 20 */	beqlr 
+/* 802CA598 002C6238  4D 82 00 20 */	beqlr
 /* 802CA59C 002C623C  38 00 00 00 */	li r0, 0
 /* 802CA5A0 002C6240  98 0D A0 F6 */	stb r0, "singleOutput$44390"-_SDA_BASE_(r13)
-/* 802CA5A4 002C6244  4E 80 00 20 */	blr 
+/* 802CA5A4 002C6244  4E 80 00 20 */	blr
 
 .global "PointList__12ENgcRendererFP8EDLEntry"
 "PointList__12ENgcRendererFP8EDLEntry":
 /* 802CA5A8 002C6248  88 0D A0 F7 */	lbz r0, "singleOutput$44399"-_SDA_BASE_(r13)
 /* 802CA5AC 002C624C  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA5B0 002C6250  4D 82 00 20 */	beqlr 
+/* 802CA5B0 002C6250  4D 82 00 20 */	beqlr
 /* 802CA5B4 002C6254  38 00 00 00 */	li r0, 0
 /* 802CA5B8 002C6258  98 0D A0 F7 */	stb r0, "singleOutput$44399"-_SDA_BASE_(r13)
-/* 802CA5BC 002C625C  4E 80 00 20 */	blr 
+/* 802CA5BC 002C625C  4E 80 00 20 */	blr
 
 .global "SpriteList__12ENgcRendererFP8EDLEntry"
 "SpriteList__12ENgcRendererFP8EDLEntry":
 /* 802CA5C0 002C6260  88 0D A0 F8 */	lbz r0, "singleOutput$44408"-_SDA_BASE_(r13)
 /* 802CA5C4 002C6264  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA5C8 002C6268  4D 82 00 20 */	beqlr 
+/* 802CA5C8 002C6268  4D 82 00 20 */	beqlr
 /* 802CA5CC 002C626C  38 00 00 00 */	li r0, 0
 /* 802CA5D0 002C6270  98 0D A0 F8 */	stb r0, "singleOutput$44408"-_SDA_BASE_(r13)
-/* 802CA5D4 002C6274  4E 80 00 20 */	blr 
+/* 802CA5D4 002C6274  4E 80 00 20 */	blr
 
 .global "SendGSDisplayList__12ENgcRendererFP8EDLEntry"
 "SendGSDisplayList__12ENgcRendererFP8EDLEntry":
 /* 802CA5D8 002C6278  88 0D A0 F9 */	lbz r0, "singleOutput$44417"-_SDA_BASE_(r13)
 /* 802CA5DC 002C627C  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA5E0 002C6280  4D 82 00 20 */	beqlr 
+/* 802CA5E0 002C6280  4D 82 00 20 */	beqlr
 /* 802CA5E4 002C6284  38 00 00 00 */	li r0, 0
 /* 802CA5E8 002C6288  98 0D A0 F9 */	stb r0, "singleOutput$44417"-_SDA_BASE_(r13)
-/* 802CA5EC 002C628C  4E 80 00 20 */	blr 
+/* 802CA5EC 002C628C  4E 80 00 20 */	blr
 
 .global "CallbackParam__12ENgcRendererFP8EDLEntry"
 "CallbackParam__12ENgcRendererFP8EDLEntry":
 /* 802CA5F0 002C6290  88 0D A0 FA */	lbz r0, "singleOutput$44426"-_SDA_BASE_(r13)
 /* 802CA5F4 002C6294  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA5F8 002C6298  4D 82 00 20 */	beqlr 
+/* 802CA5F8 002C6298  4D 82 00 20 */	beqlr
 /* 802CA5FC 002C629C  38 00 00 00 */	li r0, 0
 /* 802CA600 002C62A0  98 0D A0 FA */	stb r0, "singleOutput$44426"-_SDA_BASE_(r13)
-/* 802CA604 002C62A4  4E 80 00 20 */	blr 
+/* 802CA604 002C62A4  4E 80 00 20 */	blr
 
 .global "Callback__12ENgcRendererFP8EDLEntry"
 "Callback__12ENgcRendererFP8EDLEntry":
 /* 802CA608 002C62A8  88 0D A0 FB */	lbz r0, "singleOutput$44435"-_SDA_BASE_(r13)
 /* 802CA60C 002C62AC  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA610 002C62B0  4D 82 00 20 */	beqlr 
+/* 802CA610 002C62B0  4D 82 00 20 */	beqlr
 /* 802CA614 002C62B4  38 00 00 00 */	li r0, 0
 /* 802CA618 002C62B8  98 0D A0 FB */	stb r0, "singleOutput$44435"-_SDA_BASE_(r13)
-/* 802CA61C 002C62BC  4E 80 00 20 */	blr 
+/* 802CA61C 002C62BC  4E 80 00 20 */	blr
 
 .global "GEList__12ENgcRendererFP8EDLEntry"
 "GEList__12ENgcRendererFP8EDLEntry":
 /* 802CA620 002C62C0  88 0D A0 FC */	lbz r0, "singleOutput$44444"-_SDA_BASE_(r13)
 /* 802CA624 002C62C4  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA628 002C62C8  4D 82 00 20 */	beqlr 
+/* 802CA628 002C62C8  4D 82 00 20 */	beqlr
 /* 802CA62C 002C62CC  38 00 00 00 */	li r0, 0
 /* 802CA630 002C62D0  98 0D A0 FC */	stb r0, "singleOutput$44444"-_SDA_BASE_(r13)
-/* 802CA634 002C62D4  4E 80 00 20 */	blr 
+/* 802CA634 002C62D4  4E 80 00 20 */	blr
 
 .global "RecalcMatrices__12ENgcRendererFP8EDLEntry"
 "RecalcMatrices__12ENgcRendererFP8EDLEntry":
 /* 802CA638 002C62D8  88 0D A0 FD */	lbz r0, "singleOutput$44453"-_SDA_BASE_(r13)
 /* 802CA63C 002C62DC  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA640 002C62E0  4D 82 00 20 */	beqlr 
+/* 802CA640 002C62E0  4D 82 00 20 */	beqlr
 /* 802CA644 002C62E4  38 00 00 00 */	li r0, 0
 /* 802CA648 002C62E8  98 0D A0 FD */	stb r0, "singleOutput$44453"-_SDA_BASE_(r13)
-/* 802CA64C 002C62EC  4E 80 00 20 */	blr 
+/* 802CA64C 002C62EC  4E 80 00 20 */	blr
 
 .global "SetMipMap__12ENgcRendererFP8EDLEntry"
 "SetMipMap__12ENgcRendererFP8EDLEntry":
 /* 802CA650 002C62F0  88 0D A0 FE */	lbz r0, "singleOutput$44462"-_SDA_BASE_(r13)
 /* 802CA654 002C62F4  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA658 002C62F8  4D 82 00 20 */	beqlr 
+/* 802CA658 002C62F8  4D 82 00 20 */	beqlr
 /* 802CA65C 002C62FC  38 00 00 00 */	li r0, 0
 /* 802CA660 002C6300  98 0D A0 FE */	stb r0, "singleOutput$44462"-_SDA_BASE_(r13)
-/* 802CA664 002C6304  4E 80 00 20 */	blr 
+/* 802CA664 002C6304  4E 80 00 20 */	blr
 
 .global "Vertex__12ENgcRendererFP8EDLEntry"
 "Vertex__12ENgcRendererFP8EDLEntry":
@@ -33183,7 +33183,7 @@ lbl_802CA67C:
 /* 802CA67C 002C631C  80 83 04 D8 */	lwz r4, 0x4d8(r3)
 /* 802CA680 002C6320  38 04 00 18 */	addi r0, r4, 0x18
 /* 802CA684 002C6324  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802CA688 002C6328  4E 80 00 20 */	blr 
+/* 802CA688 002C6328  4E 80 00 20 */	blr
 
 .global "PointListPacked__12ENgcRendererFP8EDLEntry"
 "PointListPacked__12ENgcRendererFP8EDLEntry":
@@ -33196,38 +33196,38 @@ lbl_802CA6A0:
 /* 802CA6A0 002C6340  80 83 04 D8 */	lwz r4, 0x4d8(r3)
 /* 802CA6A4 002C6344  38 04 00 18 */	addi r0, r4, 0x18
 /* 802CA6A8 002C6348  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802CA6AC 002C634C  4E 80 00 20 */	blr 
+/* 802CA6AC 002C634C  4E 80 00 20 */	blr
 
 .global "NoOp__12ENgcRendererFP8EDLEntry"
 "NoOp__12ENgcRendererFP8EDLEntry":
-/* 802CA6B0 002C6350  4E 80 00 20 */	blr 
+/* 802CA6B0 002C6350  4E 80 00 20 */	blr
 
 .global "VerifyMpg__12ENgcRendererFP8EDLEntry"
 "VerifyMpg__12ENgcRendererFP8EDLEntry":
 /* 802CA6B4 002C6354  88 0D A1 01 */	lbz r0, "singleOutput$44497"-_SDA_BASE_(r13)
 /* 802CA6B8 002C6358  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA6BC 002C635C  4D 82 00 20 */	beqlr 
+/* 802CA6BC 002C635C  4D 82 00 20 */	beqlr
 /* 802CA6C0 002C6360  38 00 00 00 */	li r0, 0
 /* 802CA6C4 002C6364  98 0D A1 01 */	stb r0, "singleOutput$44497"-_SDA_BASE_(r13)
-/* 802CA6C8 002C6368  4E 80 00 20 */	blr 
+/* 802CA6C8 002C6368  4E 80 00 20 */	blr
 
 .global "ParticleList__12ENgcRendererFP8EDLEntry"
 "ParticleList__12ENgcRendererFP8EDLEntry":
 /* 802CA6CC 002C636C  88 0D A1 02 */	lbz r0, "singleOutput$44506"-_SDA_BASE_(r13)
 /* 802CA6D0 002C6370  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA6D4 002C6374  4D 82 00 20 */	beqlr 
+/* 802CA6D4 002C6374  4D 82 00 20 */	beqlr
 /* 802CA6D8 002C6378  38 00 00 00 */	li r0, 0
 /* 802CA6DC 002C637C  98 0D A1 02 */	stb r0, "singleOutput$44506"-_SDA_BASE_(r13)
-/* 802CA6E0 002C6380  4E 80 00 20 */	blr 
+/* 802CA6E0 002C6380  4E 80 00 20 */	blr
 
 .global "ParticleListRot__12ENgcRendererFP8EDLEntry"
 "ParticleListRot__12ENgcRendererFP8EDLEntry":
 /* 802CA6E4 002C6384  88 0D A1 03 */	lbz r0, "singleOutput$44515"-_SDA_BASE_(r13)
 /* 802CA6E8 002C6388  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA6EC 002C638C  4D 82 00 20 */	beqlr 
+/* 802CA6EC 002C638C  4D 82 00 20 */	beqlr
 /* 802CA6F0 002C6390  38 00 00 00 */	li r0, 0
 /* 802CA6F4 002C6394  98 0D A1 03 */	stb r0, "singleOutput$44515"-_SDA_BASE_(r13)
-/* 802CA6F8 002C6398  4E 80 00 20 */	blr 
+/* 802CA6F8 002C6398  4E 80 00 20 */	blr
 
 .global "LineStreakList__12ENgcRendererFP8EDLEntry"
 "LineStreakList__12ENgcRendererFP8EDLEntry":
@@ -33240,25 +33240,25 @@ lbl_802CA710:
 /* 802CA710 002C63B0  80 83 04 D8 */	lwz r4, 0x4d8(r3)
 /* 802CA714 002C63B4  38 04 00 20 */	addi r0, r4, 0x20
 /* 802CA718 002C63B8  90 03 04 D8 */	stw r0, 0x4d8(r3)
-/* 802CA71C 002C63BC  4E 80 00 20 */	blr 
+/* 802CA71C 002C63BC  4E 80 00 20 */	blr
 
 .global "SetAlpha__12ENgcRendererFP8EDLEntry"
 "SetAlpha__12ENgcRendererFP8EDLEntry":
 /* 802CA720 002C63C0  88 0D A1 05 */	lbz r0, "singleOutput$44534"-_SDA_BASE_(r13)
 /* 802CA724 002C63C4  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA728 002C63C8  4D 82 00 20 */	beqlr 
+/* 802CA728 002C63C8  4D 82 00 20 */	beqlr
 /* 802CA72C 002C63CC  38 00 00 00 */	li r0, 0
 /* 802CA730 002C63D0  98 0D A1 05 */	stb r0, "singleOutput$44534"-_SDA_BASE_(r13)
-/* 802CA734 002C63D4  4E 80 00 20 */	blr 
+/* 802CA734 002C63D4  4E 80 00 20 */	blr
 
 .global "CopyScreenToTexture__12ENgcRendererFP8EDLEntry"
 "CopyScreenToTexture__12ENgcRendererFP8EDLEntry":
 /* 802CA738 002C63D8  88 0D A1 06 */	lbz r0, "singleOutput$44543"-_SDA_BASE_(r13)
 /* 802CA73C 002C63DC  2C 00 00 00 */	cmpwi r0, 0
-/* 802CA740 002C63E0  4D 82 00 20 */	beqlr 
+/* 802CA740 002C63E0  4D 82 00 20 */	beqlr
 /* 802CA744 002C63E4  38 00 00 00 */	li r0, 0
 /* 802CA748 002C63E8  98 0D A1 06 */	stb r0, "singleOutput$44543"-_SDA_BASE_(r13)
-/* 802CA74C 002C63EC  4E 80 00 20 */	blr 
+/* 802CA74C 002C63EC  4E 80 00 20 */	blr
 
 .global "__ct__17ENgcRenderSurfaceFv"
 "__ct__17ENgcRenderSurfaceFv":
@@ -33279,7 +33279,7 @@ lbl_802CA710:
 /* 802CA788 002C6428  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CA78C 002C642C  7C 08 03 A6 */	mtlr r0
 /* 802CA790 002C6430  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CA794 002C6434  4E 80 00 20 */	blr 
+/* 802CA794 002C6434  4E 80 00 20 */	blr
 
 .global "__dt__17ENgcRenderSurfaceFv"
 "__dt__17ENgcRenderSurfaceFv":
@@ -33305,7 +33305,7 @@ lbl_802CA7D4:
 /* 802CA7E0 002C6480  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CA7E4 002C6484  7C 08 03 A6 */	mtlr r0
 /* 802CA7E8 002C6488  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CA7EC 002C648C  4E 80 00 20 */	blr 
+/* 802CA7EC 002C648C  4E 80 00 20 */	blr
 
 .global "DestroySubtextures__17ENgcRenderSurfaceFv"
 "DestroySubtextures__17ENgcRenderSurfaceFv":
@@ -33315,12 +33315,12 @@ lbl_802CA7D4:
 /* 802CA7FC 002C649C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CA800 002C64A0  81 8C 00 6C */	lwz r12, 0x6c(r12)
 /* 802CA804 002C64A4  7D 89 03 A6 */	mtctr r12
-/* 802CA808 002C64A8  4E 80 04 20 */	bctr 
+/* 802CA808 002C64A8  4E 80 04 20 */	bctr
 
 .global "GetTexture__17ENgcRenderSurfaceFv"
 "GetTexture__17ENgcRenderSurfaceFv":
 /* 802CA80C 002C64AC  80 63 00 28 */	lwz r3, 0x28(r3)
-/* 802CA810 002C64B0  4E 80 00 20 */	blr 
+/* 802CA810 002C64B0  4E 80 00 20 */	blr
 
 .global "Create__17ENgcRenderSurfaceFRC17ERenderSurfaceDef"
 "Create__17ENgcRenderSurfaceFRC17ERenderSurfaceDef":
@@ -33357,7 +33357,7 @@ lbl_802CA7D4:
 /* 802CA88C 002C652C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CA890 002C6530  81 8C 00 68 */	lwz r12, 0x68(r12)
 /* 802CA894 002C6534  7D 89 03 A6 */	mtctr r12
-/* 802CA898 002C6538  4E 80 04 21 */	bctrl 
+/* 802CA898 002C6538  4E 80 04 21 */	bctrl
 /* 802CA89C 002C653C  90 7E 00 28 */	stw r3, 0x28(r30)
 /* 802CA8A0 002C6540  38 80 00 01 */	li r4, 1
 /* 802CA8A4 002C6544  48 00 32 79 */	bl "FlushImageMemoryRange__11ENgcTextureFb"
@@ -33369,7 +33369,7 @@ lbl_802CA7D4:
 /* 802CA8BC 002C655C  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 802CA8C0 002C6560  7C 08 03 A6 */	mtlr r0
 /* 802CA8C4 002C6564  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CA8C8 002C6568  4E 80 00 20 */	blr 
+/* 802CA8C8 002C6568  4E 80 00 20 */	blr
 
 .global "GetOutputRect__17ENgcRenderSurfaceFR8TRect<f>"
 "GetOutputRect__17ENgcRenderSurfaceFR8TRect<f>":
@@ -33383,7 +33383,7 @@ lbl_802CA7D4:
 /* 802CA8DC 002C657C  90 C3 00 10 */	stw r6, 0x10(r3)
 /* 802CA8E0 002C6580  90 A3 00 14 */	stw r5, 0x14(r3)
 /* 802CA8E4 002C6584  90 03 00 18 */	stw r0, 0x18(r3)
-/* 802CA8E8 002C6588  4E 80 00 20 */	blr 
+/* 802CA8E8 002C6588  4E 80 00 20 */	blr
 
 .global "GetImageData__17ENgcRenderSurfaceFPv"
 "GetImageData__17ENgcRenderSurfaceFPv":
@@ -33415,7 +33415,7 @@ lbl_802CA7D4:
 /* 802CA944 002C65E4  38 80 00 02 */	li r4, 2
 /* 802CA948 002C65E8  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802CA94C 002C65EC  7D 89 03 A6 */	mtctr r12
-/* 802CA950 002C65F0  4E 80 04 21 */	bctrl 
+/* 802CA950 002C65F0  4E 80 04 21 */	bctrl
 /* 802CA954 002C65F4  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802CA958 002C65F8  7F 63 DB 78 */	mr r3, r27
 /* 802CA95C 002C65FC  38 A1 00 14 */	addi r5, r1, 0x14
@@ -33423,7 +33423,7 @@ lbl_802CA7D4:
 /* 802CA964 002C6604  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802CA968 002C6608  38 80 00 00 */	li r4, 0
 /* 802CA96C 002C660C  7D 89 03 A6 */	mtctr r12
-/* 802CA970 002C6610  4E 80 04 21 */	bctrl 
+/* 802CA970 002C6610  4E 80 04 21 */	bctrl
 /* 802CA974 002C6614  80 9A 00 28 */	lwz r4, 0x28(r26)
 /* 802CA978 002C6618  7C 7C 1B 78 */	mr r28, r3
 /* 802CA97C 002C661C  38 A1 00 0C */	addi r5, r1, 0xc
@@ -33441,7 +33441,7 @@ lbl_802CA7D4:
 /* 802CA9AC 002C664C  7F 63 DB 78 */	mr r3, r27
 /* 802CA9B0 002C6650  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802CA9B4 002C6654  7D 89 03 A6 */	mtctr r12
-/* 802CA9B8 002C6658  4E 80 04 21 */	bctrl 
+/* 802CA9B8 002C6658  4E 80 04 21 */	bctrl
 /* 802CA9BC 002C665C  48 00 02 38 */	b lbl_802CABF4
 lbl_802CA9C0:
 /* 802CA9C0 002C6660  28 00 00 10 */	cmplwi r0, 0x10
@@ -33452,13 +33452,13 @@ lbl_802CA9C0:
 /* 802CA9D4 002C6674  7F 63 DB 78 */	mr r3, r27
 /* 802CA9D8 002C6678  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802CA9DC 002C667C  7D 89 03 A6 */	mtctr r12
-/* 802CA9E0 002C6680  4E 80 04 21 */	bctrl 
+/* 802CA9E0 002C6680  4E 80 04 21 */	bctrl
 /* 802CA9E4 002C6684  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802CA9E8 002C6688  7F 63 DB 78 */	mr r3, r27
 /* 802CA9EC 002C668C  38 80 00 02 */	li r4, 2
 /* 802CA9F0 002C6690  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802CA9F4 002C6694  7D 89 03 A6 */	mtctr r12
-/* 802CA9F8 002C6698  4E 80 04 21 */	bctrl 
+/* 802CA9F8 002C6698  4E 80 04 21 */	bctrl
 /* 802CA9FC 002C669C  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802CAA00 002C66A0  7F 63 DB 78 */	mr r3, r27
 /* 802CAA04 002C66A4  80 FA 00 28 */	lwz r7, 0x28(r26)
@@ -33469,19 +33469,19 @@ lbl_802CA9C0:
 /* 802CAA18 002C66B8  38 80 00 00 */	li r4, 0
 /* 802CAA1C 002C66BC  A3 87 00 16 */	lhz r28, 0x16(r7)
 /* 802CAA20 002C66C0  7D 89 03 A6 */	mtctr r12
-/* 802CAA24 002C66C4  4E 80 04 21 */	bctrl 
+/* 802CAA24 002C66C4  4E 80 04 21 */	bctrl
 /* 802CAA28 002C66C8  7C 7F 1B 78 */	mr r31, r3
 /* 802CAA2C 002C66CC  80 7A 00 28 */	lwz r3, 0x28(r26)
 /* 802CAA30 002C66D0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CAA34 002C66D4  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802CAA38 002C66D8  7D 89 03 A6 */	mtctr r12
-/* 802CAA3C 002C66DC  4E 80 04 21 */	bctrl 
+/* 802CAA3C 002C66DC  4E 80 04 21 */	bctrl
 /* 802CAA40 002C66E0  80 7A 00 28 */	lwz r3, 0x28(r26)
 /* 802CAA44 002C66E4  38 80 00 01 */	li r4, 1
 /* 802CAA48 002C66E8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CAA4C 002C66EC  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802CAA50 002C66F0  7D 89 03 A6 */	mtctr r12
-/* 802CAA54 002C66F4  4E 80 04 21 */	bctrl 
+/* 802CAA54 002C66F4  4E 80 04 21 */	bctrl
 /* 802CAA58 002C66F8  80 7A 00 28 */	lwz r3, 0x28(r26)
 /* 802CAA5C 002C66FC  38 A1 00 14 */	addi r5, r1, 0x14
 /* 802CAA60 002C6700  38 C1 00 10 */	addi r6, r1, 0x10
@@ -33489,7 +33489,7 @@ lbl_802CA9C0:
 /* 802CAA68 002C6708  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CAA6C 002C670C  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802CAA70 002C6710  7D 89 03 A6 */	mtctr r12
-/* 802CAA74 002C6714  4E 80 04 21 */	bctrl 
+/* 802CAA74 002C6714  4E 80 04 21 */	bctrl
 /* 802CAA78 002C6718  3C A0 00 01 */	lis r5, 0x00008000@ha
 /* 802CAA7C 002C671C  38 80 00 00 */	li r4, 0
 /* 802CAA80 002C6720  38 E5 80 00 */	addi r7, r5, 0x00008000@l
@@ -33573,22 +33573,22 @@ lbl_802CAB94:
 /* 802CABA0 002C6840  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CABA4 002C6844  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802CABA8 002C6848  7D 89 03 A6 */	mtctr r12
-/* 802CABAC 002C684C  4E 80 04 21 */	bctrl 
+/* 802CABAC 002C684C  4E 80 04 21 */	bctrl
 /* 802CABB0 002C6850  80 7A 00 28 */	lwz r3, 0x28(r26)
 /* 802CABB4 002C6854  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CABB8 002C6858  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802CABBC 002C685C  7D 89 03 A6 */	mtctr r12
-/* 802CABC0 002C6860  4E 80 04 21 */	bctrl 
+/* 802CABC0 002C6860  4E 80 04 21 */	bctrl
 /* 802CABC4 002C6864  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802CABC8 002C6868  7F 63 DB 78 */	mr r3, r27
 /* 802CABCC 002C686C  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802CABD0 002C6870  7D 89 03 A6 */	mtctr r12
-/* 802CABD4 002C6874  4E 80 04 21 */	bctrl 
+/* 802CABD4 002C6874  4E 80 04 21 */	bctrl
 /* 802CABD8 002C6878  81 9B 00 00 */	lwz r12, 0(r27)
 /* 802CABDC 002C687C  7F 63 DB 78 */	mr r3, r27
 /* 802CABE0 002C6880  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802CABE4 002C6884  7D 89 03 A6 */	mtctr r12
-/* 802CABE8 002C6888  4E 80 04 21 */	bctrl 
+/* 802CABE8 002C6888  4E 80 04 21 */	bctrl
 /* 802CABEC 002C688C  48 00 00 08 */	b lbl_802CABF4
 lbl_802CABF0:
 /* 802CABF0 002C6890  3B C0 00 00 */	li r30, 0
@@ -33599,13 +33599,13 @@ lbl_802CABF4:
 /* 802CAC00 002C68A0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CAC04 002C68A4  7C 08 03 A6 */	mtlr r0
 /* 802CAC08 002C68A8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CAC0C 002C68AC  4E 80 00 20 */	blr 
+/* 802CAC0C 002C68AC  4E 80 00 20 */	blr
 
 .global "Select__17ENgcRenderSurfaceFv"
 "Select__17ENgcRenderSurfaceFv":
 /* 802CAC10 002C68B0  38 00 00 01 */	li r0, 1
 /* 802CAC14 002C68B4  98 03 00 24 */	stb r0, 0x24(r3)
-/* 802CAC18 002C68B8  4E 80 00 20 */	blr 
+/* 802CAC18 002C68B8  4E 80 00 20 */	blr
 
 .global "Deselect__17ENgcRenderSurfaceFv"
 "Deselect__17ENgcRenderSurfaceFv":
@@ -33653,7 +33653,7 @@ lbl_802CABF4:
 /* 802CACC0 002C6960  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CACC4 002C6964  7C 08 03 A6 */	mtlr r0
 /* 802CACC8 002C6968  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CACCC 002C696C  4E 80 00 20 */	blr 
+/* 802CACCC 002C696C  4E 80 00 20 */	blr
 
 .global "__ct__15ENgcSFXStreamerFv"
 "__ct__15ENgcSFXStreamerFv":
@@ -33701,7 +33701,7 @@ lbl_802CACFC:
 /* 802CAD70 002C6A10  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CAD74 002C6A14  7C 08 03 A6 */	mtlr r0
 /* 802CAD78 002C6A18  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CAD7C 002C6A1C  4E 80 00 20 */	blr 
+/* 802CAD7C 002C6A1C  4E 80 00 20 */	blr
 
 .global "Update__15ENgcSFXStreamerFv"
 "Update__15ENgcSFXStreamerFv":
@@ -33753,7 +33753,7 @@ lbl_802CAE10:
 /* 802CAE2C 002C6ACC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CAE30 002C6AD0  7C 08 03 A6 */	mtlr r0
 /* 802CAE34 002C6AD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CAE38 002C6AD8  4E 80 00 20 */	blr 
+/* 802CAE38 002C6AD8  4E 80 00 20 */	blr
 
 .global "IsPlaying__15ENgcSFXStreamerFUi"
 "IsPlaying__15ENgcSFXStreamerFUi":
@@ -33778,7 +33778,7 @@ lbl_802CAE10:
 /* 802CAE84 002C6B24  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CAE88 002C6B28  7C 08 03 A6 */	mtlr r0
 /* 802CAE8C 002C6B2C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CAE90 002C6B30  4E 80 00 20 */	blr 
+/* 802CAE90 002C6B30  4E 80 00 20 */	blr
 
 .global "Allocate__15ENgcSFXStreamerFP12ERSampledataUc"
 "Allocate__15ENgcSFXStreamerFP12ERSampledataUc":
@@ -33872,7 +33872,7 @@ lbl_802CAFD4:
 /* 802CAFE4 002C6C84  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CAFE8 002C6C88  7C 08 03 A6 */	mtlr r0
 /* 802CAFEC 002C6C8C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CAFF0 002C6C90  4E 80 00 20 */	blr 
+/* 802CAFF0 002C6C90  4E 80 00 20 */	blr
 
 .global "Play__15ENgcSFXStreamerFUiP12ERSampledata"
 "Play__15ENgcSFXStreamerFUiP12ERSampledata":
@@ -34146,7 +34146,7 @@ lbl_802CB3EC:
 /* 802CB3F8 002C7098  83 A1 00 A4 */	lwz r29, 0xa4(r1)
 /* 802CB3FC 002C709C  7C 08 03 A6 */	mtlr r0
 /* 802CB400 002C70A0  38 21 00 B0 */	addi r1, r1, 0xb0
-/* 802CB404 002C70A4  4E 80 00 20 */	blr 
+/* 802CB404 002C70A4  4E 80 00 20 */	blr
 
 .global "Pause__15ENgcSFXStreamerFUi"
 "Pause__15ENgcSFXStreamerFUi":
@@ -34220,7 +34220,7 @@ lbl_802CB4FC:
 /* 802CB500 002C71A0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CB504 002C71A4  7C 08 03 A6 */	mtlr r0
 /* 802CB508 002C71A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CB50C 002C71AC  4E 80 00 20 */	blr 
+/* 802CB50C 002C71AC  4E 80 00 20 */	blr
 
 .global "Free__15ENgcSFXStreamerFUi"
 "Free__15ENgcSFXStreamerFUi":
@@ -34299,7 +34299,7 @@ lbl_802CB61C:
 /* 802CB624 002C72C4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CB628 002C72C8  7C 08 03 A6 */	mtlr r0
 /* 802CB62C 002C72CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CB630 002C72D0  4E 80 00 20 */	blr 
+/* 802CB630 002C72D0  4E 80 00 20 */	blr
 
 .global "SetPitchBend__15ENgcSFXStreamerFUif"
 "SetPitchBend__15ENgcSFXStreamerFUif":
@@ -34346,7 +34346,7 @@ lbl_802CB6BC:
 /* 802CB6CC 002C736C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CB6D0 002C7370  7C 08 03 A6 */	mtlr r0
 /* 802CB6D4 002C7374  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CB6D8 002C7378  4E 80 00 20 */	blr 
+/* 802CB6D8 002C7378  4E 80 00 20 */	blr
 
 .global "SetVolume__15ENgcSFXStreamerFUif"
 "SetVolume__15ENgcSFXStreamerFUif":
@@ -34389,7 +34389,7 @@ lbl_802CB758:
 /* 802CB764 002C7404  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802CB768 002C7408  7C 08 03 A6 */	mtlr r0
 /* 802CB76C 002C740C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CB770 002C7410  4E 80 00 20 */	blr 
+/* 802CB770 002C7410  4E 80 00 20 */	blr
 
 .global "SetPan__15ENgcSFXStreamerFUif"
 "SetPan__15ENgcSFXStreamerFUif":
@@ -34431,7 +34431,7 @@ lbl_802CB7EC:
 /* 802CB7F8 002C7498  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802CB7FC 002C749C  7C 08 03 A6 */	mtlr r0
 /* 802CB800 002C74A0  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CB804 002C74A4  4E 80 00 20 */	blr 
+/* 802CB804 002C74A4  4E 80 00 20 */	blr
 
 .global "ENgcSFXStreamer_GetDB__FUc"
 "ENgcSFXStreamer_GetDB__FUc":
@@ -34469,7 +34469,7 @@ lbl_802CB87C:
 /* 802CB87C 002C751C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CB880 002C7520  7C 08 03 A6 */	mtlr r0
 /* 802CB884 002C7524  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CB888 002C7528  4E 80 00 20 */	blr 
+/* 802CB888 002C7528  4E 80 00 20 */	blr
 
 .global "ENgcSFXStreamer_GetVoiceHandle__Fv"
 "ENgcSFXStreamer_GetVoiceHandle__Fv":
@@ -34500,21 +34500,21 @@ lbl_802CB8DC:
 /* 802CB8E4 002C7584  42 00 FF BC */	bdnz lbl_802CB8A0
 lbl_802CB8E8:
 /* 802CB8E8 002C7588  28 03 00 3E */	cmplwi r3, 0x3e
-/* 802CB8EC 002C758C  4C 82 00 20 */	bnelr 
+/* 802CB8EC 002C758C  4C 82 00 20 */	bnelr
 /* 802CB8F0 002C7590  38 60 FF FF */	li r3, -1
-/* 802CB8F4 002C7594  4E 80 00 20 */	blr 
+/* 802CB8F4 002C7594  4E 80 00 20 */	blr
 
 .global "ENgcSFXStreamer_enable_IRQ__Fv"
 "ENgcSFXStreamer_enable_IRQ__Fv":
 /* 802CB8F8 002C7598  80 0D BD 44 */	lwz r0, "ENgcSFXStreamer_irq_counter"-_SDA_BASE_(r13)
 /* 802CB8FC 002C759C  2C 00 00 00 */	cmpwi r0, 0
-/* 802CB900 002C75A0  4D 82 00 20 */	beqlr 
+/* 802CB900 002C75A0  4D 82 00 20 */	beqlr
 /* 802CB904 002C75A4  34 00 FF FF */	addic. r0, r0, -1
 /* 802CB908 002C75A8  90 0D BD 44 */	stw r0, "ENgcSFXStreamer_irq_counter"-_SDA_BASE_(r13)
-/* 802CB90C 002C75AC  4C 82 00 20 */	bnelr 
+/* 802CB90C 002C75AC  4C 82 00 20 */	bnelr
 /* 802CB910 002C75B0  88 6D BD 40 */	lbz r3, "ENgcSFXStreamer_old_irq_state"-_SDA_BASE_(r13)
 /* 802CB914 002C75B4  48 11 4B 70 */	b "OSRestoreInterrupts"
-/* 802CB918 002C75B8  4E 80 00 20 */	blr 
+/* 802CB918 002C75B8  4E 80 00 20 */	blr
 
 .global "ENgcSFXStreamer_disable_IRQ__Fv"
 "ENgcSFXStreamer_disable_IRQ__Fv":
@@ -34535,7 +34535,7 @@ lbl_802CB950:
 /* 802CB950 002C75F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CB954 002C75F4  7C 08 03 A6 */	mtlr r0
 /* 802CB958 002C75F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CB95C 002C75FC  4E 80 00 20 */	blr 
+/* 802CB95C 002C75FC  4E 80 00 20 */	blr
 
 .global "ENgcSFXStreamer_ax_drop_voice_callback__FPv"
 "ENgcSFXStreamer_ax_drop_voice_callback__FPv":
@@ -34570,7 +34570,7 @@ lbl_802CB9A8:
 /* 802CB9C8 002C7668  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802CB9CC 002C766C  7C 08 03 A6 */	mtlr r0
 /* 802CB9D0 002C7670  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CB9D4 002C7674  4E 80 00 20 */	blr 
+/* 802CB9D4 002C7674  4E 80 00 20 */	blr
 
 .global "__dt__13ENgcSchedulerFv"
 "__dt__13ENgcSchedulerFv":
@@ -34611,7 +34611,7 @@ lbl_802CBA48:
 /* 802CBA54 002C76F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBA58 002C76F8  7C 08 03 A6 */	mtlr r0
 /* 802CBA5C 002C76FC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBA60 002C7700  4E 80 00 20 */	blr 
+/* 802CBA60 002C7700  4E 80 00 20 */	blr
 
 .global "Init__13ENgcSchedulerFv"
 "Init__13ENgcSchedulerFv":
@@ -34649,7 +34649,7 @@ lbl_802CBAD0:
 /* 802CBAD4 002C7774  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CBAD8 002C7778  7C 08 03 A6 */	mtlr r0
 /* 802CBADC 002C777C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBAE0 002C7780  4E 80 00 20 */	blr 
+/* 802CBAE0 002C7780  4E 80 00 20 */	blr
 
 .global "QueueSetupFrameBuffer__13ENgcSchedulerFi"
 "QueueSetupFrameBuffer__13ENgcSchedulerFi":
@@ -34695,7 +34695,7 @@ lbl_802CBB7C:
 /* 802CBB7C 002C781C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBB80 002C7820  7C 08 03 A6 */	mtlr r0
 /* 802CBB84 002C7824  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBB88 002C7828  4E 80 00 20 */	blr 
+/* 802CBB88 002C7828  4E 80 00 20 */	blr
 
 .global "QueueDisplayList__13ENgcSchedulerFP3EDLb"
 "QueueDisplayList__13ENgcSchedulerFP3EDLb":
@@ -34729,7 +34729,7 @@ lbl_802CBBD8:
 /* 802CBBF4 002C7894  7F C3 F3 78 */	mr r3, r30
 /* 802CBBF8 002C7898  7D 9F 02 14 */	add r12, r31, r0
 /* 802CBBFC 002C789C  48 14 36 29 */	bl "__ptmf_scall"
-/* 802CBC00 002C78A0  60 00 00 00 */	nop 
+/* 802CBC00 002C78A0  60 00 00 00 */	nop
 /* 802CBC04 002C78A4  88 1E 04 DC */	lbz r0, 0x4dc(r30)
 /* 802CBC08 002C78A8  2C 00 00 00 */	cmpwi r0, 0
 /* 802CBC0C 002C78AC  41 82 FF CC */	beq lbl_802CBBD8
@@ -34755,7 +34755,7 @@ lbl_802CBC40:
 /* 802CBC50 002C78F0  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802CBC54 002C78F4  7C 08 03 A6 */	mtlr r0
 /* 802CBC58 002C78F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CBC5C 002C78FC  4E 80 00 20 */	blr 
+/* 802CBC5C 002C78FC  4E 80 00 20 */	blr
 
 .global "QueueCompletionEvent__13ENgcSchedulerFR6EEvent"
 "QueueCompletionEvent__13ENgcSchedulerFR6EEvent":
@@ -34772,7 +34772,7 @@ lbl_802CBC40:
 /* 802CBC88 002C7928  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CBC8C 002C792C  7C 08 03 A6 */	mtlr r0
 /* 802CBC90 002C7930  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CBC94 002C7934  4E 80 00 20 */	blr 
+/* 802CBC94 002C7934  4E 80 00 20 */	blr
 
 .global "QueueSwapBuffer__13ENgcSchedulerFii"
 "QueueSwapBuffer__13ENgcSchedulerFii":
@@ -34785,7 +34785,7 @@ lbl_802CBC40:
 /* 802CBCB0 002C7950  D0 2D BC F4 */	stfs f1, "_aveclockspervert"-_SDA_BASE_(r13)
 /* 802CBCB4 002C7954  D0 0D BC F8 */	stfs f0, "_avestriplength"-_SDA_BASE_(r13)
 /* 802CBCB8 002C7958  90 0D BD 0C */	stw r0, "_ngcFrameCount"-_SDA_BASE_(r13)
-/* 802CBCBC 002C795C  4E 80 00 20 */	blr 
+/* 802CBCBC 002C795C  4E 80 00 20 */	blr
 
 .global "Flush__13ENgcSchedulerFv"
 "Flush__13ENgcSchedulerFv":
@@ -34793,16 +34793,16 @@ lbl_802CBC40:
 
 .global "TextureLoadsComplete__13ENgcSchedulerFP13ESchedCommand"
 "TextureLoadsComplete__13ENgcSchedulerFP13ESchedCommand":
-/* 802CBCC4 002C7964  4E 80 00 20 */	blr 
+/* 802CBCC4 002C7964  4E 80 00 20 */	blr
 
 .global "RenderingComplete__13ENgcSchedulerFP13ESchedCommand"
 "RenderingComplete__13ENgcSchedulerFP13ESchedCommand":
-/* 802CBCC8 002C7968  4E 80 00 20 */	blr 
+/* 802CBCC8 002C7968  4E 80 00 20 */	blr
 
 .global "GetLastRetraceCount__13ENgcSchedulerFv"
 "GetLastRetraceCount__13ENgcSchedulerFv":
 /* 802CBCCC 002C796C  38 60 00 01 */	li r3, 1
-/* 802CBCD0 002C7970  4E 80 00 20 */	blr 
+/* 802CBCD0 002C7970  4E 80 00 20 */	blr
 
 .global "Main__13ENgcSchedulerFv"
 "Main__13ENgcSchedulerFv":
@@ -34835,7 +34835,7 @@ lbl_802CBCE8:
 /* 802CBD2C 002C79CC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802CBD30 002C79D0  7D 89 03 A6 */	mtctr r12
 /* 802CBD34 002C79D4  38 63 03 9C */	addi r3, r3, 0x39c
-/* 802CBD38 002C79D8  4E 80 04 21 */	bctrl 
+/* 802CBD38 002C79D8  4E 80 04 21 */	bctrl
 /* 802CBD3C 002C79DC  2C 1F 00 00 */	cmpwi r31, 0
 /* 802CBD40 002C79E0  41 82 00 10 */	beq lbl_802CBD50
 /* 802CBD44 002C79E4  80 1E 03 90 */	lwz r0, 0x390(r30)
@@ -34846,13 +34846,13 @@ lbl_802CBD50:
 /* 802CBD54 002C79F4  38 7E 03 9C */	addi r3, r30, 0x39c
 /* 802CBD58 002C79F8  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802CBD5C 002C79FC  7D 89 03 A6 */	mtctr r12
-/* 802CBD60 002C7A00  4E 80 04 21 */	bctrl 
+/* 802CBD60 002C7A00  4E 80 04 21 */	bctrl
 /* 802CBD64 002C7A04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBD68 002C7A08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CBD6C 002C7A0C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CBD70 002C7A10  7C 08 03 A6 */	mtlr r0
 /* 802CBD74 002C7A14  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBD78 002C7A18  4E 80 00 20 */	blr 
+/* 802CBD78 002C7A18  4E 80 00 20 */	blr
 
 .global "__dt__10ESchedulerFv"
 "__dt__10ESchedulerFv":
@@ -34878,7 +34878,7 @@ lbl_802CBDB8:
 /* 802CBDC4 002C7A64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBDC8 002C7A68  7C 08 03 A6 */	mtlr r0
 /* 802CBDCC 002C7A6C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBDD0 002C7A70  4E 80 00 20 */	blr 
+/* 802CBDD0 002C7A70  4E 80 00 20 */	blr
 
 .global "__ct__10ENgcShaderFv"
 "__ct__10ENgcShaderFv":
@@ -34896,7 +34896,7 @@ lbl_802CBDB8:
 /* 802CBE00 002C7AA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBE04 002C7AA4  7C 08 03 A6 */	mtlr r0
 /* 802CBE08 002C7AA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBE0C 002C7AAC  4E 80 00 20 */	blr 
+/* 802CBE0C 002C7AAC  4E 80 00 20 */	blr
 
 .global "__dt__10ENgcShaderFv"
 "__dt__10ENgcShaderFv":
@@ -34924,7 +34924,7 @@ lbl_802CBE54:
 /* 802CBE60 002C7B00  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBE64 002C7B04  7C 08 03 A6 */	mtlr r0
 /* 802CBE68 002C7B08  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBE6C 002C7B0C  4E 80 00 20 */	blr 
+/* 802CBE6C 002C7B0C  4E 80 00 20 */	blr
 
 .global "SetShadowAlpha__10ENgcShaderFf"
 "SetShadowAlpha__10ENgcShaderFf":
@@ -34948,7 +34948,7 @@ lbl_802CBEA8:
 /* 802CBEAC 002C7B4C  38 63 8B 10 */	addi r3, r3, "_ngcRenderer"@l
 /* 802CBEB0 002C7B50  98 03 03 3C */	stb r0, 0x33c(r3)
 /* 802CBEB4 002C7B54  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBEB8 002C7B58  4E 80 00 20 */	blr 
+/* 802CBEB8 002C7B58  4E 80 00 20 */	blr
 
 .global "Select__10ENgcShaderFP3ERCUi"
 "Select__10ENgcShaderFP3ERCUi":
@@ -34978,7 +34978,7 @@ lbl_802CBEFC:
 /* 802CBF14 002C7BB4  7F E5 FB 78 */	mr r5, r31
 /* 802CBF18 002C7BB8  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 802CBF1C 002C7BBC  7D 89 03 A6 */	mtctr r12
-/* 802CBF20 002C7BC0  4E 80 04 21 */	bctrl 
+/* 802CBF20 002C7BC0  4E 80 04 21 */	bctrl
 /* 802CBF24 002C7BC4  3B FF 00 01 */	addi r31, r31, 1
 lbl_802CBF28:
 /* 802CBF28 002C7BC8  88 1C 00 04 */	lbz r0, 4(r28)
@@ -34990,7 +34990,7 @@ lbl_802CBF28:
 /* 802CBF40 002C7BE0  7F C5 F3 78 */	mr r5, r30
 /* 802CBF44 002C7BE4  81 8C 01 AC */	lwz r12, 0x1ac(r12)
 /* 802CBF48 002C7BE8  7D 89 03 A6 */	mtctr r12
-/* 802CBF4C 002C7BEC  4E 80 04 21 */	bctrl 
+/* 802CBF4C 002C7BEC  4E 80 04 21 */	bctrl
 lbl_802CBF50:
 /* 802CBF50 002C7BF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CBF54 002C7BF4  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -34999,7 +34999,7 @@ lbl_802CBF50:
 /* 802CBF60 002C7C00  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802CBF64 002C7C04  7C 08 03 A6 */	mtlr r0
 /* 802CBF68 002C7C08  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CBF6C 002C7C0C  4E 80 00 20 */	blr 
+/* 802CBF6C 002C7C0C  4E 80 00 20 */	blr
 
 .global "SelectForShadowMask__10ENgcShaderFP3ERC"
 "SelectForShadowMask__10ENgcShaderFP3ERC":
@@ -35016,20 +35016,20 @@ lbl_802CBF50:
 /* 802CBF98 002C7C38  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802CBF9C 002C7C3C  81 8C 00 98 */	lwz r12, 0x98(r12)
 /* 802CBFA0 002C7C40  7D 89 03 A6 */	mtctr r12
-/* 802CBFA4 002C7C44  4E 80 04 21 */	bctrl 
+/* 802CBFA4 002C7C44  4E 80 04 21 */	bctrl
 /* 802CBFA8 002C7C48  81 9F 00 00 */	lwz r12, 0(r31)
 /* 802CBFAC 002C7C4C  7F E3 FB 78 */	mr r3, r31
 /* 802CBFB0 002C7C50  7F C4 F3 78 */	mr r4, r30
 /* 802CBFB4 002C7C54  38 A0 00 00 */	li r5, 0
 /* 802CBFB8 002C7C58  81 8C 01 AC */	lwz r12, 0x1ac(r12)
 /* 802CBFBC 002C7C5C  7D 89 03 A6 */	mtctr r12
-/* 802CBFC0 002C7C60  4E 80 04 21 */	bctrl 
+/* 802CBFC0 002C7C60  4E 80 04 21 */	bctrl
 /* 802CBFC4 002C7C64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CBFC8 002C7C68  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CBFCC 002C7C6C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CBFD0 002C7C70  7C 08 03 A6 */	mtlr r0
 /* 802CBFD4 002C7C74  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CBFD8 002C7C78  4E 80 00 20 */	blr 
+/* 802CBFD8 002C7C78  4E 80 00 20 */	blr
 
 .global "Create__10ENgcShaderFR10EShaderDef"
 "Create__10ENgcShaderFR10EShaderDef":
@@ -35053,7 +35053,7 @@ lbl_802CC014:
 /* 802CC018 002C7CB8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CC01C 002C7CBC  7C 08 03 A6 */	mtlr r0
 /* 802CC020 002C7CC0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC024 002C7CC4  4E 80 00 20 */	blr 
+/* 802CC024 002C7CC4  4E 80 00 20 */	blr
 
 .global "ChangeMaterial__10ENgcShaderFR9EMaterial"
 "ChangeMaterial__10ENgcShaderFR9EMaterial":
@@ -35122,7 +35122,7 @@ lbl_802CC068:
 /* 802CC110 002C7DB0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CC114 002C7DB4  7C 08 03 A6 */	mtlr r0
 /* 802CC118 002C7DB8  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CC11C 002C7DBC  4E 80 00 20 */	blr 
+/* 802CC11C 002C7DBC  4E 80 00 20 */	blr
 
 .global "__dt__17ENGCAudioStreamerFv"
 "__dt__17ENGCAudioStreamerFv":
@@ -35172,7 +35172,7 @@ lbl_802CC1AC:
 /* 802CC1C0 002C7E60  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CC1C4 002C7E64  7C 08 03 A6 */	mtlr r0
 /* 802CC1C8 002C7E68  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CC1CC 002C7E6C  4E 80 00 20 */	blr 
+/* 802CC1CC 002C7E6C  4E 80 00 20 */	blr
 
 .global "Update__17ENGCAudioStreamerFv"
 "Update__17ENGCAudioStreamerFv":
@@ -35236,7 +35236,7 @@ lbl_802CC284:
 /* 802CC29C 002C7F3C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CC2A0 002C7F40  7C 08 03 A6 */	mtlr r0
 /* 802CC2A4 002C7F44  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC2A8 002C7F48  4E 80 00 20 */	blr 
+/* 802CC2A8 002C7F48  4E 80 00 20 */	blr
 
 .global "Pause__17ENGCAudioStreamerFUi"
 "Pause__17ENGCAudioStreamerFUi":
@@ -35279,7 +35279,7 @@ lbl_802CC328:
 /* 802CC334 002C7FD4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CC338 002C7FD8  7C 08 03 A6 */	mtlr r0
 /* 802CC33C 002C7FDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC340 002C7FE0  4E 80 00 20 */	blr 
+/* 802CC340 002C7FE0  4E 80 00 20 */	blr
 
 .global "Resume__17ENGCAudioStreamerFUi"
 "Resume__17ENGCAudioStreamerFUi":
@@ -35321,7 +35321,7 @@ lbl_802CC3C0:
 /* 802CC3CC 002C806C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CC3D0 002C8070  7C 08 03 A6 */	mtlr r0
 /* 802CC3D4 002C8074  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC3D8 002C8078  4E 80 00 20 */	blr 
+/* 802CC3D8 002C8078  4E 80 00 20 */	blr
 
 .global "Allocate__17ENGCAudioStreamerFP13NGCStreamInfoUcUc"
 "Allocate__17ENGCAudioStreamerFP13NGCStreamInfoUcUc":
@@ -35377,7 +35377,7 @@ lbl_802CC480:
 /* 802CC498 002C8138  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CC49C 002C813C  7C 08 03 A6 */	mtlr r0
 /* 802CC4A0 002C8140  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CC4A4 002C8144  4E 80 00 20 */	blr 
+/* 802CC4A4 002C8144  4E 80 00 20 */	blr
 
 .global "AllocateStereo__17ENGCAudioStreamerFP13NGCStreamInfoP13NGCStreamInfoUc"
 "AllocateStereo__17ENGCAudioStreamerFP13NGCStreamInfoP13NGCStreamInfoUc":
@@ -35469,7 +35469,7 @@ lbl_802CC5DC:
 /* 802CC5F0 002C8290  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CC5F4 002C8294  7C 08 03 A6 */	mtlr r0
 /* 802CC5F8 002C8298  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CC5FC 002C829C  4E 80 00 20 */	blr 
+/* 802CC5FC 002C829C  4E 80 00 20 */	blr
 
 .global "Free__17ENGCAudioStreamerFUi"
 "Free__17ENGCAudioStreamerFUi":
@@ -35514,7 +35514,7 @@ lbl_802CC67C:
 /* 802CC68C 002C832C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CC690 002C8330  7C 08 03 A6 */	mtlr r0
 /* 802CC694 002C8334  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC698 002C8338  4E 80 00 20 */	blr 
+/* 802CC698 002C8338  4E 80 00 20 */	blr
 
 .global "IsActive__17ENGCAudioStreamerFUi"
 "IsActive__17ENGCAudioStreamerFUi":
@@ -35544,7 +35544,7 @@ lbl_802CC6E8:
 /* 802CC6F4 002C8394  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CC6F8 002C8398  7C 08 03 A6 */	mtlr r0
 /* 802CC6FC 002C839C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC700 002C83A0  4E 80 00 20 */	blr 
+/* 802CC700 002C83A0  4E 80 00 20 */	blr
 
 .global "AnyIsActive__17ENGCAudioStreamerFv"
 "AnyIsActive__17ENGCAudioStreamerFv":
@@ -35572,7 +35572,7 @@ lbl_802CC74C:
 /* 802CC74C 002C83EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CC750 002C83F0  7C 08 03 A6 */	mtlr r0
 /* 802CC754 002C83F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC758 002C83F8  4E 80 00 20 */	blr 
+/* 802CC758 002C83F8  4E 80 00 20 */	blr
 
 .global "SetVolume__17ENGCAudioStreamerFUiUc"
 "SetVolume__17ENGCAudioStreamerFUiUc":
@@ -35659,7 +35659,7 @@ lbl_802CC880:
 /* 802CC88C 002C852C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CC890 002C8530  7C 08 03 A6 */	mtlr r0
 /* 802CC894 002C8534  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC898 002C8538  4E 80 00 20 */	blr 
+/* 802CC898 002C8538  4E 80 00 20 */	blr
 
 .global "SetPan__17ENGCAudioStreamerFUiUc"
 "SetPan__17ENGCAudioStreamerFUiUc":
@@ -35696,7 +35696,7 @@ lbl_802CC904:
 /* 802CC910 002C85B0  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CC914 002C85B4  7C 08 03 A6 */	mtlr r0
 /* 802CC918 002C85B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CC91C 002C85BC  4E 80 00 20 */	blr 
+/* 802CC91C 002C85BC  4E 80 00 20 */	blr
 
 .global "get_free__FRP6Stream"
 "get_free__FRP6Stream":
@@ -35785,7 +35785,7 @@ lbl_802CCA34:
 /* 802CCA44 002C86E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CCA48 002C86E8  7C 08 03 A6 */	mtlr r0
 /* 802CCA4C 002C86EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CCA50 002C86F0  4E 80 00 20 */	blr 
+/* 802CCA50 002C86F0  4E 80 00 20 */	blr
 
 .global "init_stream__FP6StreamP13NGCStreamInfoUcUc"
 "init_stream__FP6StreamP13NGCStreamInfoUcUc":
@@ -35843,19 +35843,19 @@ lbl_802CCB00:
 /* 802CCB14 002C87B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CCB18 002C87B8  7C 08 03 A6 */	mtlr r0
 /* 802CCB1C 002C87BC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CCB20 002C87C0  4E 80 00 20 */	blr 
+/* 802CCB20 002C87C0  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_enable_IRQ__Fv"
 "ENGCAudioStreamer_enable_IRQ__Fv":
 /* 802CCB24 002C87C4  80 0D BD 54 */	lwz r0, "ENGCAudioStreamer_irq_counter"-_SDA_BASE_(r13)
 /* 802CCB28 002C87C8  2C 00 00 00 */	cmpwi r0, 0
-/* 802CCB2C 002C87CC  4D 82 00 20 */	beqlr 
+/* 802CCB2C 002C87CC  4D 82 00 20 */	beqlr
 /* 802CCB30 002C87D0  34 00 FF FF */	addic. r0, r0, -1
 /* 802CCB34 002C87D4  90 0D BD 54 */	stw r0, "ENGCAudioStreamer_irq_counter"-_SDA_BASE_(r13)
-/* 802CCB38 002C87D8  4C 82 00 20 */	bnelr 
+/* 802CCB38 002C87D8  4C 82 00 20 */	bnelr
 /* 802CCB3C 002C87DC  88 6D BD 50 */	lbz r3, "ENGCAudioStreamer_old_irq_state"-_SDA_BASE_(r13)
 /* 802CCB40 002C87E0  48 11 39 44 */	b "OSRestoreInterrupts"
-/* 802CCB44 002C87E4  4E 80 00 20 */	blr 
+/* 802CCB44 002C87E4  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_disable_IRQ__Fv"
 "ENGCAudioStreamer_disable_IRQ__Fv":
@@ -35876,7 +35876,7 @@ lbl_802CCB7C:
 /* 802CCB7C 002C881C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CCB80 002C8820  7C 08 03 A6 */	mtlr r0
 /* 802CCB84 002C8824  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CCB88 002C8828  4E 80 00 20 */	blr 
+/* 802CCB88 002C8828  4E 80 00 20 */	blr
 
 .global "dvd_callback__FlP11DVDFileInfo"
 "dvd_callback__FlP11DVDFileInfo":
@@ -36054,7 +36054,7 @@ lbl_802CCDEC:
 /* 802CCDF8 002C8A98  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 802CCDFC 002C8A9C  7C 08 03 A6 */	mtlr r0
 /* 802CCE00 002C8AA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CCE04 002C8AA4  4E 80 00 20 */	blr 
+/* 802CCE04 002C8AA4  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_GetDB__FUc"
 "ENGCAudioStreamer_GetDB__FUc":
@@ -36092,7 +36092,7 @@ lbl_802CCE7C:
 /* 802CCE7C 002C8B1C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CCE80 002C8B20  7C 08 03 A6 */	mtlr r0
 /* 802CCE84 002C8B24  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CCE88 002C8B28  4E 80 00 20 */	blr 
+/* 802CCE88 002C8B28  4E 80 00 20 */	blr
 
 .global "activate_stream__FP6Stream"
 "activate_stream__FP6Stream":
@@ -36246,7 +36246,7 @@ lbl_802CD0A8:
 /* 802CD0BC 002C8D5C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802CD0C0 002C8D60  7C 08 03 A6 */	mtlr r0
 /* 802CD0C4 002C8D64  38 21 00 70 */	addi r1, r1, 0x70
-/* 802CD0C8 002C8D68  4E 80 00 20 */	blr 
+/* 802CD0C8 002C8D68  4E 80 00 20 */	blr
 
 .global "stream_data__FP6Stream"
 "stream_data__FP6Stream":
@@ -36377,7 +36377,7 @@ lbl_802CD278:
 /* 802CD28C 002C8F2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CD290 002C8F30  7C 08 03 A6 */	mtlr r0
 /* 802CD294 002C8F34  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CD298 002C8F38  4E 80 00 20 */	blr 
+/* 802CD298 002C8F38  4E 80 00 20 */	blr
 
 .global "shutdown_stream__FP6Stream"
 "shutdown_stream__FP6Stream":
@@ -36420,7 +36420,7 @@ lbl_802CD318:
 /* 802CD31C 002C8FBC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CD320 002C8FC0  7C 08 03 A6 */	mtlr r0
 /* 802CD324 002C8FC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CD328 002C8FC8  4E 80 00 20 */	blr 
+/* 802CD328 002C8FC8  4E 80 00 20 */	blr
 
 .global "stream_update_handler__FPvUiPvUiUi"
 "stream_update_handler__FPvUiPvUiUi":
@@ -36480,7 +36480,7 @@ lbl_802CD3E4:
 /* 802CD3E8 002C9088  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CD3EC 002C908C  7C 08 03 A6 */	mtlr r0
 /* 802CD3F0 002C9090  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CD3F4 002C9094  4E 80 00 20 */	blr 
+/* 802CD3F4 002C9094  4E 80 00 20 */	blr
 
 .global "get_private_index__FUi"
 "get_private_index__FUi":
@@ -36492,7 +36492,7 @@ lbl_802CD3E4:
 /* 802CD40C 002C90AC  7C 03 00 40 */	cmplw r3, r0
 /* 802CD410 002C90B0  40 82 00 0C */	bne lbl_802CD41C
 /* 802CD414 002C90B4  38 60 00 00 */	li r3, 0
-/* 802CD418 002C90B8  4E 80 00 20 */	blr 
+/* 802CD418 002C90B8  4E 80 00 20 */	blr
 lbl_802CD41C:
 /* 802CD41C 002C90BC  80 04 00 78 */	lwz r0, 0x78(r4)
 /* 802CD420 002C90C0  2C 00 00 00 */	cmpwi r0, 0
@@ -36501,10 +36501,10 @@ lbl_802CD41C:
 /* 802CD42C 002C90CC  7C 03 00 40 */	cmplw r3, r0
 /* 802CD430 002C90D0  40 82 00 0C */	bne lbl_802CD43C
 /* 802CD434 002C90D4  38 60 00 01 */	li r3, 1
-/* 802CD438 002C90D8  4E 80 00 20 */	blr 
+/* 802CD438 002C90D8  4E 80 00 20 */	blr
 lbl_802CD43C:
 /* 802CD43C 002C90DC  38 60 FF FF */	li r3, -1
-/* 802CD440 002C90E0  4E 80 00 20 */	blr 
+/* 802CD440 002C90E0  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_stream_free__FP6Stream"
 "ENGCAudioStreamer_stream_free__FP6Stream":
@@ -36536,7 +36536,7 @@ lbl_802CD49C:
 /* 802CD4A0 002C9140  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CD4A4 002C9144  7C 08 03 A6 */	mtlr r0
 /* 802CD4A8 002C9148  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CD4AC 002C914C  4E 80 00 20 */	blr 
+/* 802CD4AC 002C914C  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_ax_drop_voice_callback__FPv"
 "ENGCAudioStreamer_ax_drop_voice_callback__FPv":
@@ -36571,7 +36571,7 @@ lbl_802CD4F8:
 /* 802CD518 002C91B8  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 802CD51C 002C91BC  7C 08 03 A6 */	mtlr r0
 /* 802CD520 002C91C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CD524 002C91C4  4E 80 00 20 */	blr 
+/* 802CD524 002C91C4  4E 80 00 20 */	blr
 
 .global "ENGCAudioStreamer_arq_callback__FUi"
 "ENGCAudioStreamer_arq_callback__FUi":
@@ -36705,7 +36705,7 @@ lbl_802CD6E8:
 /* 802CD6F0 002C9390  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CD6F4 002C9394  7C 08 03 A6 */	mtlr r0
 /* 802CD6F8 002C9398  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CD6FC 002C939C  4E 80 00 20 */	blr 
+/* 802CD6FC 002C939C  4E 80 00 20 */	blr
 
 .global "__ct__11ENgcTextureFv"
 "__ct__11ENgcTextureFv":
@@ -36725,7 +36725,7 @@ lbl_802CD6E8:
 /* 802CD734 002C93D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CD738 002C93D8  7C 08 03 A6 */	mtlr r0
 /* 802CD73C 002C93DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CD740 002C93E0  4E 80 00 20 */	blr 
+/* 802CD740 002C93E0  4E 80 00 20 */	blr
 
 .global "__dt__11ENgcTextureFv"
 "__dt__11ENgcTextureFv":
@@ -36750,7 +36750,7 @@ lbl_802CD6E8:
 /* 802CD78C 002C942C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD790 002C9430  81 8C 00 08 */	lwz r12, 8(r12)
 /* 802CD794 002C9434  7D 89 03 A6 */	mtctr r12
-/* 802CD798 002C9438  4E 80 04 21 */	bctrl 
+/* 802CD798 002C9438  4E 80 04 21 */	bctrl
 lbl_802CD79C:
 /* 802CD79C 002C943C  38 00 00 00 */	li r0, 0
 /* 802CD7A0 002C9440  90 1E 00 28 */	stw r0, 0x28(r30)
@@ -36771,7 +36771,7 @@ lbl_802CD7C8:
 /* 802CD7D4 002C9474  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CD7D8 002C9478  7C 08 03 A6 */	mtlr r0
 /* 802CD7DC 002C947C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CD7E0 002C9480  4E 80 00 20 */	blr 
+/* 802CD7E0 002C9480  4E 80 00 20 */	blr
 
 .global "Lock__11ENgcTextureFv"
 "Lock__11ENgcTextureFv":
@@ -36779,7 +36779,7 @@ lbl_802CD7C8:
 /* 802CD7E8 002C9488  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD7EC 002C948C  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802CD7F0 002C9490  7D 89 03 A6 */	mtctr r12
-/* 802CD7F4 002C9494  4E 80 04 20 */	bctr 
+/* 802CD7F4 002C9494  4E 80 04 20 */	bctr
 
 .global "Unlock__11ENgcTextureFv"
 "Unlock__11ENgcTextureFv":
@@ -36787,7 +36787,7 @@ lbl_802CD7C8:
 /* 802CD7FC 002C949C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD800 002C94A0  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 802CD804 002C94A4  7D 89 03 A6 */	mtctr r12
-/* 802CD808 002C94A8  4E 80 04 20 */	bctr 
+/* 802CD808 002C94A8  4E 80 04 20 */	bctr
 
 .global "Invalidate__11ENgcTextureFv"
 "Invalidate__11ENgcTextureFv":
@@ -36795,7 +36795,7 @@ lbl_802CD7C8:
 /* 802CD810 002C94B0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD814 002C94B4  81 8C 00 18 */	lwz r12, 0x18(r12)
 /* 802CD818 002C94B8  7D 89 03 A6 */	mtctr r12
-/* 802CD81C 002C94BC  4E 80 04 20 */	bctr 
+/* 802CD81C 002C94BC  4E 80 04 20 */	bctr
 
 .global "UpdateBegin__11ENgcTextureF18ETextureUpdateType"
 "UpdateBegin__11ENgcTextureF18ETextureUpdateType":
@@ -36803,7 +36803,7 @@ lbl_802CD7C8:
 /* 802CD824 002C94C4  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD828 002C94C8  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802CD82C 002C94CC  7D 89 03 A6 */	mtctr r12
-/* 802CD830 002C94D0  4E 80 04 20 */	bctr 
+/* 802CD830 002C94D0  4E 80 04 20 */	bctr
 
 .global "UpdateMipLevel__11ENgcTextureFiRiRi"
 "UpdateMipLevel__11ENgcTextureFiRiRi":
@@ -36811,7 +36811,7 @@ lbl_802CD7C8:
 /* 802CD838 002C94D8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD83C 002C94DC  81 8C 00 24 */	lwz r12, 0x24(r12)
 /* 802CD840 002C94E0  7D 89 03 A6 */	mtctr r12
-/* 802CD844 002C94E4  4E 80 04 20 */	bctr 
+/* 802CD844 002C94E4  4E 80 04 20 */	bctr
 
 .global "UpdatePalette__11ENgcTextureFv"
 "UpdatePalette__11ENgcTextureFv":
@@ -36819,7 +36819,7 @@ lbl_802CD7C8:
 /* 802CD84C 002C94EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD850 002C94F0  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802CD854 002C94F4  7D 89 03 A6 */	mtctr r12
-/* 802CD858 002C94F8  4E 80 04 20 */	bctr 
+/* 802CD858 002C94F8  4E 80 04 20 */	bctr
 
 .global "UpdatePaletteDeswizzled__11ENgcTextureFv"
 "UpdatePaletteDeswizzled__11ENgcTextureFv":
@@ -36827,7 +36827,7 @@ lbl_802CD7C8:
 /* 802CD860 002C9500  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD864 002C9504  81 8C 00 2C */	lwz r12, 0x2c(r12)
 /* 802CD868 002C9508  7D 89 03 A6 */	mtctr r12
-/* 802CD86C 002C950C  4E 80 04 20 */	bctr 
+/* 802CD86C 002C950C  4E 80 04 20 */	bctr
 
 .global "UpdateEnd__11ENgcTextureFv"
 "UpdateEnd__11ENgcTextureFv":
@@ -36835,7 +36835,7 @@ lbl_802CD7C8:
 /* 802CD874 002C9514  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CD878 002C9518  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802CD87C 002C951C  7D 89 03 A6 */	mtctr r12
-/* 802CD880 002C9520  4E 80 04 20 */	bctr 
+/* 802CD880 002C9520  4E 80 04 20 */	bctr
 
 .global "Create__11ENgcTextureFRC11ETextureDef"
 "Create__11ENgcTextureFRC11ETextureDef":
@@ -37012,7 +37012,7 @@ lbl_802CDABC:
 /* 802CDACC 002C976C  7F E4 FB 78 */	mr r4, r31
 /* 802CDAD0 002C9770  81 8C 00 40 */	lwz r12, 0x40(r12)
 /* 802CDAD4 002C9774  7D 89 03 A6 */	mtctr r12
-/* 802CDAD8 002C9778  4E 80 04 21 */	bctrl 
+/* 802CDAD8 002C9778  4E 80 04 21 */	bctrl
 /* 802CDADC 002C977C  48 00 00 08 */	b lbl_802CDAE4
 lbl_802CDAE0:
 /* 802CDAE0 002C9780  38 60 00 00 */	li r3, 0
@@ -37022,7 +37022,7 @@ lbl_802CDAE4:
 /* 802CDAEC 002C978C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CDAF0 002C9790  7C 08 03 A6 */	mtlr r0
 /* 802CDAF4 002C9794  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CDAF8 002C9798  4E 80 00 20 */	blr 
+/* 802CDAF8 002C9798  4E 80 00 20 */	blr
 
 .global "Select__11ENgcTextureFii"
 "Select__11ENgcTextureFii":
@@ -37030,13 +37030,13 @@ lbl_802CDAE4:
 /* 802CDB00 002C97A0  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDB04 002C97A4  81 8C 00 54 */	lwz r12, 0x54(r12)
 /* 802CDB08 002C97A8  7D 89 03 A6 */	mtctr r12
-/* 802CDB0C 002C97AC  4E 80 04 20 */	bctr 
+/* 802CDB0C 002C97AC  4E 80 04 20 */	bctr
 
 .global "GetGXTexFmt__11ENgcTextureFv"
 "GetGXTexFmt__11ENgcTextureFv":
 /* 802CDB10 002C97B0  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 802CDB14 002C97B4  80 63 00 70 */	lwz r3, 0x70(r3)
-/* 802CDB18 002C97B8  4E 80 00 20 */	blr 
+/* 802CDB18 002C97B8  4E 80 00 20 */	blr
 
 .global "FlushImageMemoryRange__11ENgcTextureFb"
 "FlushImageMemoryRange__11ENgcTextureFb":
@@ -37049,7 +37049,7 @@ lbl_802CDAE4:
 /* 802CDB28 002C97C8  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDB2C 002C97CC  81 8C 00 4C */	lwz r12, 0x4c(r12)
 /* 802CDB30 002C97D0  7D 89 03 A6 */	mtctr r12
-/* 802CDB34 002C97D4  4E 80 04 20 */	bctr 
+/* 802CDB34 002C97D4  4E 80 04 20 */	bctr
 
 .global "GetTEXCount__11ENgcTextureFv"
 "GetTEXCount__11ENgcTextureFv":
@@ -37057,7 +37057,7 @@ lbl_802CDAE4:
 /* 802CDB3C 002C97DC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDB40 002C97E0  81 8C 00 50 */	lwz r12, 0x50(r12)
 /* 802CDB44 002C97E4  7D 89 03 A6 */	mtctr r12
-/* 802CDB48 002C97E8  4E 80 04 20 */	bctr 
+/* 802CDB48 002C97E8  4E 80 04 20 */	bctr
 
 .global "ClearTileFlags__11ENgcTextureFv"
 "ClearTileFlags__11ENgcTextureFv":
@@ -37068,7 +37068,7 @@ lbl_802CDAE4:
 /* 802CDB5C 002C97FC  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDB60 002C9800  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 802CDB64 002C9804  7D 89 03 A6 */	mtctr r12
-/* 802CDB68 002C9808  4E 80 04 20 */	bctr 
+/* 802CDB68 002C9808  4E 80 04 20 */	bctr
 
 .global "ClearSwizzleFlag__11ENgcTextureFv"
 "ClearSwizzleFlag__11ENgcTextureFv":
@@ -37079,7 +37079,7 @@ lbl_802CDAE4:
 /* 802CDB7C 002C981C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDB80 002C9820  81 8C 00 34 */	lwz r12, 0x34(r12)
 /* 802CDB84 002C9824  7D 89 03 A6 */	mtctr r12
-/* 802CDB88 002C9828  4E 80 04 20 */	bctr 
+/* 802CDB88 002C9828  4E 80 04 20 */	bctr
 
 .global "SetSwizzleFlag__11ENgcTextureFv"
 "SetSwizzleFlag__11ENgcTextureFv":
@@ -37090,7 +37090,7 @@ lbl_802CDAE4:
 /* 802CDB9C 002C983C  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDBA0 002C9840  81 8C 00 38 */	lwz r12, 0x38(r12)
 /* 802CDBA4 002C9844  7D 89 03 A6 */	mtctr r12
-/* 802CDBA8 002C9848  4E 80 04 20 */	bctr 
+/* 802CDBA8 002C9848  4E 80 04 20 */	bctr
 
 .global "CopyFrameBufferIntoTexture__11ENgcTextureFv"
 "CopyFrameBufferIntoTexture__11ENgcTextureFv":
@@ -37119,25 +37119,25 @@ lbl_802CDAE4:
 /* 802CDC04 002C98A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CDC08 002C98A8  7C 08 03 A6 */	mtlr r0
 /* 802CDC0C 002C98AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CDC10 002C98B0  4E 80 00 20 */	blr 
+/* 802CDC10 002C98B0  4E 80 00 20 */	blr
 
 .global "UpdatePaletteDeswizzled__15ENgcTextureBaseFv"
 "UpdatePaletteDeswizzled__15ENgcTextureBaseFv":
 /* 802CDC14 002C98B4  81 83 00 00 */	lwz r12, 0(r3)
 /* 802CDC18 002C98B8  81 8C 00 28 */	lwz r12, 0x28(r12)
 /* 802CDC1C 002C98BC  7D 89 03 A6 */	mtctr r12
-/* 802CDC20 002C98C0  4E 80 04 20 */	bctr 
+/* 802CDC20 002C98C0  4E 80 04 20 */	bctr
 
 .global "SetSwizzleFlag__15ENgcTextureBaseFv"
 "SetSwizzleFlag__15ENgcTextureBaseFv":
 /* 802CDC24 002C98C4  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 802CDC28 002C98C8  60 00 00 80 */	ori r0, r0, 0x80
 /* 802CDC2C 002C98CC  90 03 00 0C */	stw r0, 0xc(r3)
-/* 802CDC30 002C98D0  4E 80 00 20 */	blr 
+/* 802CDC30 002C98D0  4E 80 00 20 */	blr
 
 .global "UnswizzleImage__15ENgcTextureBaseFPUciiPUc"
 "UnswizzleImage__15ENgcTextureBaseFPUciiPUc":
-/* 802CDC34 002C98D4  4E 80 00 20 */	blr 
+/* 802CDC34 002C98D4  4E 80 00 20 */	blr
 
 .global "__dt__15ENgcTextureBaseFv"
 "__dt__15ENgcTextureBaseFv":
@@ -37206,7 +37206,7 @@ lbl_802CDD14:
 /* 802CDD24 002C99C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CDD28 002C99C8  7C 08 03 A6 */	mtlr r0
 /* 802CDD2C 002C99CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CDD30 002C99D0  4E 80 00 20 */	blr 
+/* 802CDD30 002C99D0  4E 80 00 20 */	blr
 
 .global "FlushImageMemoryRange__15ENgcTextureBaseFb"
 "FlushImageMemoryRange__15ENgcTextureBaseFb":
@@ -37241,7 +37241,7 @@ lbl_802CDD90:
 /* 802CDD98 002C9A38  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CDD9C 002C9A3C  7C 08 03 A6 */	mtlr r0
 /* 802CDDA0 002C9A40  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CDDA4 002C9A44  4E 80 00 20 */	blr 
+/* 802CDDA4 002C9A44  4E 80 00 20 */	blr
 
 .global "Lock__15ENgcTextureBaseFv"
 "Lock__15ENgcTextureBaseFv":
@@ -37249,18 +37249,18 @@ lbl_802CDD90:
 /* 802CDDAC 002C9A4C  38 04 00 01 */	addi r0, r4, 1
 /* 802CDDB0 002C9A50  90 03 00 44 */	stw r0, 0x44(r3)
 /* 802CDDB4 002C9A54  38 60 00 01 */	li r3, 1
-/* 802CDDB8 002C9A58  4E 80 00 20 */	blr 
+/* 802CDDB8 002C9A58  4E 80 00 20 */	blr
 
 .global "Unlock__15ENgcTextureBaseFv"
 "Unlock__15ENgcTextureBaseFv":
 /* 802CDDBC 002C9A5C  80 83 00 44 */	lwz r4, 0x44(r3)
 /* 802CDDC0 002C9A60  38 04 FF FF */	addi r0, r4, -1
 /* 802CDDC4 002C9A64  90 03 00 44 */	stw r0, 0x44(r3)
-/* 802CDDC8 002C9A68  4E 80 00 20 */	blr 
+/* 802CDDC8 002C9A68  4E 80 00 20 */	blr
 
 .global "Invalidate__15ENgcTextureBaseFv"
 "Invalidate__15ENgcTextureBaseFv":
-/* 802CDDCC 002C9A6C  4E 80 00 20 */	blr 
+/* 802CDDCC 002C9A6C  4E 80 00 20 */	blr
 
 .global "Create__15ENgcTextureBaseFRC11ETextureDef"
 "Create__15ENgcTextureBaseFRC11ETextureDef":
@@ -37336,7 +37336,7 @@ lbl_802CDEC8:
 /* 802CDED0 002C9B70  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CDED4 002C9B74  7C 08 03 A6 */	mtlr r0
 /* 802CDED8 002C9B78  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CDEDC 002C9B7C  4E 80 00 20 */	blr 
+/* 802CDEDC 002C9B7C  4E 80 00 20 */	blr
 
 .global "Select__15ENgcTextureBaseFii"
 "Select__15ENgcTextureBaseFii":
@@ -37462,7 +37462,7 @@ lbl_802CE090:
 /* 802CE0A4 002C9D44  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CE0A8 002C9D48  7C 08 03 A6 */	mtlr r0
 /* 802CE0AC 002C9D4C  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CE0B0 002C9D50  4E 80 00 20 */	blr 
+/* 802CE0B0 002C9D50  4E 80 00 20 */	blr
 
 .global "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType"
 "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType":
@@ -37478,7 +37478,7 @@ lbl_802CE090:
 /* 802CE0D8 002C9D78  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 802CE0DC 002C9D7C  7D 89 03 A6 */	mtctr r12
 /* 802CE0E0 002C9D80  38 63 00 28 */	addi r3, r3, 0x28
-/* 802CE0E4 002C9D84  4E 80 04 21 */	bctrl 
+/* 802CE0E4 002C9D84  4E 80 04 21 */	bctrl
 /* 802CE0E8 002C9D88  93 FE 00 94 */	stw r31, 0x94(r30)
 /* 802CE0EC 002C9D8C  38 60 00 01 */	li r3, 1
 /* 802CE0F0 002C9D90  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -37486,7 +37486,7 @@ lbl_802CE090:
 /* 802CE0F8 002C9D98  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CE0FC 002C9D9C  7C 08 03 A6 */	mtlr r0
 /* 802CE100 002C9DA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CE104 002C9DA4  4E 80 00 20 */	blr 
+/* 802CE104 002C9DA4  4E 80 00 20 */	blr
 
 .global "UpdateMipLevel__15ENgcTextureBaseFiRiRi"
 "UpdateMipLevel__15ENgcTextureBaseFiRiRi":
@@ -37553,12 +37553,12 @@ lbl_802CE1A8:
 /* 802CE1E4 002C9E84  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CE1E8 002C9E88  7C 08 03 A6 */	mtlr r0
 /* 802CE1EC 002C9E8C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CE1F0 002C9E90  4E 80 00 20 */	blr 
+/* 802CE1F0 002C9E90  4E 80 00 20 */	blr
 
 .global "UpdatePalette__15ENgcTextureBaseFv"
 "UpdatePalette__15ENgcTextureBaseFv":
 /* 802CE1F4 002C9E94  80 63 00 8C */	lwz r3, 0x8c(r3)
-/* 802CE1F8 002C9E98  4E 80 00 20 */	blr 
+/* 802CE1F8 002C9E98  4E 80 00 20 */	blr
 
 .global "UpdateEnd__15ENgcTextureBaseFv"
 "UpdateEnd__15ENgcTextureBaseFv":
@@ -37613,7 +37613,7 @@ lbl_802CE280:
 /* 802CE2A8 002C9F48  80 C1 00 08 */	lwz r6, 8(r1)
 /* 802CE2AC 002C9F4C  80 FF 00 74 */	lwz r7, 0x74(r31)
 /* 802CE2B0 002C9F50  7D 89 03 A6 */	mtctr r12
-/* 802CE2B4 002C9F54  4E 80 04 21 */	bctrl 
+/* 802CE2B4 002C9F54  4E 80 04 21 */	bctrl
 /* 802CE2B8 002C9F58  3B DE 00 01 */	addi r30, r30, 1
 lbl_802CE2BC:
 /* 802CE2BC 002C9F5C  A0 7F 00 1A */	lhz r3, 0x1a(r31)
@@ -37666,13 +37666,13 @@ lbl_802CE35C:
 /* 802CE360 002CA000  38 7F 00 28 */	addi r3, r31, 0x28
 /* 802CE364 002CA004  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 802CE368 002CA008  7D 89 03 A6 */	mtctr r12
-/* 802CE36C 002CA00C  4E 80 04 21 */	bctrl 
+/* 802CE36C 002CA00C  4E 80 04 21 */	bctrl
 /* 802CE370 002CA010  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CE374 002CA014  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 802CE378 002CA018  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 802CE37C 002CA01C  7C 08 03 A6 */	mtlr r0
 /* 802CE380 002CA020  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CE384 002CA024  4E 80 00 20 */	blr 
+/* 802CE384 002CA024  4E 80 00 20 */	blr
 
 .global "ComputeMipLevelOffset__15ENgcTextureBaseFiRiRi"
 "ComputeMipLevelOffset__15ENgcTextureBaseFiRiRi":
@@ -37924,17 +37924,17 @@ lbl_802CE740:
 /* 802CE744 002CA3E4  7D 03 43 78 */	mr r3, r8
 /* 802CE748 002CA3E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CE74C 002CA3EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CE750 002CA3F0  4E 80 00 20 */	blr 
+/* 802CE750 002CA3F0  4E 80 00 20 */	blr
 
 .global "GetTEVStageCount__15ENgcTextureBaseFv"
 "GetTEVStageCount__15ENgcTextureBaseFv":
 /* 802CE754 002CA3F4  38 60 00 01 */	li r3, 1
-/* 802CE758 002CA3F8  4E 80 00 20 */	blr 
+/* 802CE758 002CA3F8  4E 80 00 20 */	blr
 
 .global "GetTEXCount__15ENgcTextureBaseFv"
 "GetTEXCount__15ENgcTextureBaseFv":
 /* 802CE75C 002CA3FC  38 60 00 01 */	li r3, 1
-/* 802CE760 002CA400  4E 80 00 20 */	blr 
+/* 802CE760 002CA400  4E 80 00 20 */	blr
 
 .global "ClearSwizzleFlag__15ENgcTextureBaseFv"
 "ClearSwizzleFlag__15ENgcTextureBaseFv":
@@ -37973,7 +37973,7 @@ lbl_802CE7D4:
 /* 802CE7DC 002CA47C  38 80 00 02 */	li r4, 2
 /* 802CE7E0 002CA480  81 8C 00 20 */	lwz r12, 0x20(r12)
 /* 802CE7E4 002CA484  7D 89 03 A6 */	mtctr r12
-/* 802CE7E8 002CA488  4E 80 04 21 */	bctrl 
+/* 802CE7E8 002CA488  4E 80 04 21 */	bctrl
 /* 802CE7EC 002CA48C  3B E0 00 00 */	li r31, 0
 /* 802CE7F0 002CA490  48 00 00 4C */	b lbl_802CE83C
 lbl_802CE7F4:
@@ -37993,7 +37993,7 @@ lbl_802CE7F4:
 /* 802CE828 002CA4C8  80 A1 00 0C */	lwz r5, 0xc(r1)
 /* 802CE82C 002CA4CC  80 C1 00 08 */	lwz r6, 8(r1)
 /* 802CE830 002CA4D0  7D 89 03 A6 */	mtctr r12
-/* 802CE834 002CA4D4  4E 80 04 21 */	bctrl 
+/* 802CE834 002CA4D4  4E 80 04 21 */	bctrl
 /* 802CE838 002CA4D8  3B FF 00 01 */	addi r31, r31, 1
 lbl_802CE83C:
 /* 802CE83C 002CA4DC  A0 7E 00 1A */	lhz r3, 0x1a(r30)
@@ -38008,7 +38008,7 @@ lbl_802CE850:
 /* 802CE85C 002CA4FC  7F C3 F3 78 */	mr r3, r30
 /* 802CE860 002CA500  81 8C 00 3C */	lwz r12, 0x3c(r12)
 /* 802CE864 002CA504  7D 89 03 A6 */	mtctr r12
-/* 802CE868 002CA508  4E 80 04 21 */	bctrl 
+/* 802CE868 002CA508  4E 80 04 21 */	bctrl
 lbl_802CE86C:
 /* 802CE86C 002CA50C  80 1E 00 0C */	lwz r0, 0xc(r30)
 /* 802CE870 002CA510  54 00 06 6E */	rlwinm r0, r0, 0, 0x19, 0x17
@@ -38018,7 +38018,7 @@ lbl_802CE86C:
 /* 802CE880 002CA520  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CE884 002CA524  7C 08 03 A6 */	mtlr r0
 /* 802CE888 002CA528  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CE88C 002CA52C  4E 80 00 20 */	blr 
+/* 802CE88C 002CA52C  4E 80 00 20 */	blr
 
 .global "ClearTileFlags__15ENgcTextureBaseFv"
 "ClearTileFlags__15ENgcTextureBaseFv":
@@ -38028,7 +38028,7 @@ lbl_802CE86C:
 /* 802CE89C 002CA53C  54 84 00 3A */	rlwinm r4, r4, 0, 0, 0x1d
 /* 802CE8A0 002CA540  90 83 00 0C */	stw r4, 0xc(r3)
 /* 802CE8A4 002CA544  90 03 00 6C */	stw r0, 0x6c(r3)
-/* 802CE8A8 002CA548  4E 80 00 20 */	blr 
+/* 802CE8A8 002CA548  4E 80 00 20 */	blr
 
 .global "__ct__13ENgcTextureC4Fv"
 "__ct__13ENgcTextureC4Fv":
@@ -38063,7 +38063,7 @@ lbl_802CE86C:
 /* 802CE91C 002CA5BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CE920 002CA5C0  7C 08 03 A6 */	mtlr r0
 /* 802CE924 002CA5C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CE928 002CA5C8  4E 80 00 20 */	blr 
+/* 802CE928 002CA5C8  4E 80 00 20 */	blr
 
 .global "__dt__13ENgcTextureC4Fv"
 "__dt__13ENgcTextureC4Fv":
@@ -38091,7 +38091,7 @@ lbl_802CE970:
 /* 802CE97C 002CA61C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CE980 002CA620  7C 08 03 A6 */	mtlr r0
 /* 802CE984 002CA624  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CE988 002CA628  4E 80 00 20 */	blr 
+/* 802CE988 002CA628  4E 80 00 20 */	blr
 
 .global "SwizzleImage__13ENgcTextureC4FPUciiPUc"
 "SwizzleImage__13ENgcTextureC4FPUciiPUc":
@@ -38136,7 +38136,7 @@ lbl_802CE970:
 /* 802CEA18 002CA6B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CEA1C 002CA6BC  7C 08 03 A6 */	mtlr r0
 /* 802CEA20 002CA6C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CEA24 002CA6C4  4E 80 00 20 */	blr 
+/* 802CEA24 002CA6C4  4E 80 00 20 */	blr
 
 .global "__dt__16ENgcTextureC4_32Fv"
 "__dt__16ENgcTextureC4_32Fv":
@@ -38181,7 +38181,7 @@ lbl_802CEAA8:
 /* 802CEAB8 002CA758  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CEABC 002CA75C  7C 08 03 A6 */	mtlr r0
 /* 802CEAC0 002CA760  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CEAC4 002CA764  4E 80 00 20 */	blr 
+/* 802CEAC4 002CA764  4E 80 00 20 */	blr
 
 .global "Create__16ENgcTextureC4_32FRC11ETextureDef"
 "Create__16ENgcTextureC4_32FRC11ETextureDef":
@@ -38231,7 +38231,7 @@ lbl_802CEB58:
 /* 802CEB6C 002CA80C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CEB70 002CA810  7C 08 03 A6 */	mtlr r0
 /* 802CEB74 002CA814  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CEB78 002CA818  4E 80 00 20 */	blr 
+/* 802CEB78 002CA818  4E 80 00 20 */	blr
 
 .global "SwizzleImage__16ENgcTextureC4_32FPUciiPUc"
 "SwizzleImage__16ENgcTextureC4_32FPUciiPUc":
@@ -38298,7 +38298,7 @@ lbl_802CEC44:
 /* 802CEC50 002CA8F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CEC54 002CA8F4  7C 08 03 A6 */	mtlr r0
 /* 802CEC58 002CA8F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CEC5C 002CA8FC  4E 80 00 20 */	blr 
+/* 802CEC5C 002CA8FC  4E 80 00 20 */	blr
 
 .global "Select__16ENgcTextureC4_32Fii"
 "Select__16ENgcTextureC4_32Fii":
@@ -38474,17 +38474,17 @@ lbl_802CEE68:
 /* 802CEEFC 002CAB9C  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 802CEF00 002CABA0  7C 08 03 A6 */	mtlr r0
 /* 802CEF04 002CABA4  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CEF08 002CABA8  4E 80 00 20 */	blr 
+/* 802CEF08 002CABA8  4E 80 00 20 */	blr
 
 .global "GetTEVStageCount__16ENgcTextureC4_32Fv"
 "GetTEVStageCount__16ENgcTextureC4_32Fv":
 /* 802CEF0C 002CABAC  38 60 00 02 */	li r3, 2
-/* 802CEF10 002CABB0  4E 80 00 20 */	blr 
+/* 802CEF10 002CABB0  4E 80 00 20 */	blr
 
 .global "GetTEXCount__16ENgcTextureC4_32Fv"
 "GetTEXCount__16ENgcTextureC4_32Fv":
 /* 802CEF14 002CABB4  38 60 00 02 */	li r3, 2
-/* 802CEF18 002CABB8  4E 80 00 20 */	blr 
+/* 802CEF18 002CABB8  4E 80 00 20 */	blr
 
 .global "__ct__13ENgcTextureC8Fv"
 "__ct__13ENgcTextureC8Fv":
@@ -38521,7 +38521,7 @@ lbl_802CEE68:
 /* 802CEF94 002CAC34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CEF98 002CAC38  7C 08 03 A6 */	mtlr r0
 /* 802CEF9C 002CAC3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CEFA0 002CAC40  4E 80 00 20 */	blr 
+/* 802CEFA0 002CAC40  4E 80 00 20 */	blr
 
 .global "__dt__13ENgcTextureC8Fv"
 "__dt__13ENgcTextureC8Fv":
@@ -38549,7 +38549,7 @@ lbl_802CEFE8:
 /* 802CEFF4 002CAC94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CEFF8 002CAC98  7C 08 03 A6 */	mtlr r0
 /* 802CEFFC 002CAC9C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF000 002CACA0  4E 80 00 20 */	blr 
+/* 802CF000 002CACA0  4E 80 00 20 */	blr
 
 .global "SwizzleImage__13ENgcTextureC8FPUciiPUc"
 "SwizzleImage__13ENgcTextureC8FPUciiPUc":
@@ -38605,7 +38605,7 @@ lbl_802CEFE8:
 /* 802CF0B0 002CAD50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF0B4 002CAD54  7C 08 03 A6 */	mtlr r0
 /* 802CF0B8 002CAD58  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF0BC 002CAD5C  4E 80 00 20 */	blr 
+/* 802CF0BC 002CAD5C  4E 80 00 20 */	blr
 
 .global "__dt__16ENgcTextureC8_32Fv"
 "__dt__16ENgcTextureC8_32Fv":
@@ -38659,7 +38659,7 @@ lbl_802CF160:
 /* 802CF170 002CAE10  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CF174 002CAE14  7C 08 03 A6 */	mtlr r0
 /* 802CF178 002CAE18  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CF17C 002CAE1C  4E 80 00 20 */	blr 
+/* 802CF17C 002CAE1C  4E 80 00 20 */	blr
 
 .global "Create__16ENgcTextureC8_32FRC11ETextureDef"
 "Create__16ENgcTextureC8_32FRC11ETextureDef":
@@ -38709,7 +38709,7 @@ lbl_802CF210:
 /* 802CF224 002CAEC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CF228 002CAEC8  7C 08 03 A6 */	mtlr r0
 /* 802CF22C 002CAECC  38 21 00 20 */	addi r1, r1, 0x20
-/* 802CF230 002CAED0  4E 80 00 20 */	blr 
+/* 802CF230 002CAED0  4E 80 00 20 */	blr
 
 .global "SwizzleImage__16ENgcTextureC8_32FPUciiPUc"
 "SwizzleImage__16ENgcTextureC8_32FPUciiPUc":
@@ -38775,7 +38775,7 @@ lbl_802CF2F4:
 /* 802CF2FC 002CAF9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF300 002CAFA0  7C 08 03 A6 */	mtlr r0
 /* 802CF304 002CAFA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF308 002CAFA8  4E 80 00 20 */	blr 
+/* 802CF308 002CAFA8  4E 80 00 20 */	blr
 
 .global "UpdateEnd__16ENgcTextureC8_32Fv"
 "UpdateEnd__16ENgcTextureC8_32Fv":
@@ -38864,7 +38864,7 @@ lbl_802CF424:
 /* 802CF434 002CB0D4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CF438 002CB0D8  7C 08 03 A6 */	mtlr r0
 /* 802CF43C 002CB0DC  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF440 002CB0E0  4E 80 00 20 */	blr 
+/* 802CF440 002CB0E0  4E 80 00 20 */	blr
 
 .global "Select__16ENgcTextureC8_32Fii"
 "Select__16ENgcTextureC8_32Fii":
@@ -39040,17 +39040,17 @@ lbl_802CF64C:
 /* 802CF6E0 002CB380  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 802CF6E4 002CB384  7C 08 03 A6 */	mtlr r0
 /* 802CF6E8 002CB388  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CF6EC 002CB38C  4E 80 00 20 */	blr 
+/* 802CF6EC 002CB38C  4E 80 00 20 */	blr
 
 .global "GetTEVStageCount__16ENgcTextureC8_32Fv"
 "GetTEVStageCount__16ENgcTextureC8_32Fv":
 /* 802CF6F0 002CB390  38 60 00 02 */	li r3, 2
-/* 802CF6F4 002CB394  4E 80 00 20 */	blr 
+/* 802CF6F4 002CB394  4E 80 00 20 */	blr
 
 .global "GetTEXCount__16ENgcTextureC8_32Fv"
 "GetTEXCount__16ENgcTextureC8_32Fv":
 /* 802CF6F8 002CB398  38 60 00 02 */	li r3, 2
-/* 802CF6FC 002CB39C  4E 80 00 20 */	blr 
+/* 802CF6FC 002CB39C  4E 80 00 20 */	blr
 
 .global "__ct__15ENgcTextureCMPRFv"
 "__ct__15ENgcTextureCMPRFv":
@@ -39086,7 +39086,7 @@ lbl_802CF64C:
 /* 802CF774 002CB414  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF778 002CB418  7C 08 03 A6 */	mtlr r0
 /* 802CF77C 002CB41C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF780 002CB420  4E 80 00 20 */	blr 
+/* 802CF780 002CB420  4E 80 00 20 */	blr
 
 .global "__dt__15ENgcTextureCMPRFv"
 "__dt__15ENgcTextureCMPRFv":
@@ -39114,11 +39114,11 @@ lbl_802CF7C8:
 /* 802CF7D4 002CB474  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF7D8 002CB478  7C 08 03 A6 */	mtlr r0
 /* 802CF7DC 002CB47C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF7E0 002CB480  4E 80 00 20 */	blr 
+/* 802CF7E0 002CB480  4E 80 00 20 */	blr
 
 .global "SwizzleImage__15ENgcTextureCMPRFPUciiPUc"
 "SwizzleImage__15ENgcTextureCMPRFPUciiPUc":
-/* 802CF7E4 002CB484  4E 80 00 20 */	blr 
+/* 802CF7E4 002CB484  4E 80 00 20 */	blr
 
 .global "__ct__17ENgcTextureRGB5A3Fv"
 "__ct__17ENgcTextureRGB5A3Fv":
@@ -39154,7 +39154,7 @@ lbl_802CF7C8:
 /* 802CF85C 002CB4FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF860 002CB500  7C 08 03 A6 */	mtlr r0
 /* 802CF864 002CB504  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF868 002CB508  4E 80 00 20 */	blr 
+/* 802CF868 002CB508  4E 80 00 20 */	blr
 
 .global "__dt__17ENgcTextureRGB5A3Fv"
 "__dt__17ENgcTextureRGB5A3Fv":
@@ -39182,7 +39182,7 @@ lbl_802CF8B0:
 /* 802CF8BC 002CB55C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF8C0 002CB560  7C 08 03 A6 */	mtlr r0
 /* 802CF8C4 002CB564  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF8C8 002CB568  4E 80 00 20 */	blr 
+/* 802CF8C8 002CB568  4E 80 00 20 */	blr
 
 .global "SwizzleImage__17ENgcTextureRGB5A3FPUciiPUc"
 "SwizzleImage__17ENgcTextureRGB5A3FPUciiPUc":
@@ -39234,7 +39234,7 @@ lbl_802CF8B0:
 /* 802CF968 002CB608  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF96C 002CB60C  7C 08 03 A6 */	mtlr r0
 /* 802CF970 002CB610  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF974 002CB614  4E 80 00 20 */	blr 
+/* 802CF974 002CB614  4E 80 00 20 */	blr
 
 .global "__dt__16ENgcTextureRGBA8Fv"
 "__dt__16ENgcTextureRGBA8Fv":
@@ -39262,7 +39262,7 @@ lbl_802CF9BC:
 /* 802CF9C8 002CB668  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CF9CC 002CB66C  7C 08 03 A6 */	mtlr r0
 /* 802CF9D0 002CB670  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CF9D4 002CB674  4E 80 00 20 */	blr 
+/* 802CF9D4 002CB674  4E 80 00 20 */	blr
 
 .global "SwizzleImage__16ENgcTextureRGBA8FPUciiPUc"
 "SwizzleImage__16ENgcTextureRGBA8FPUciiPUc":
@@ -39335,7 +39335,7 @@ lbl_802CFAA8:
 /* 802CFAB8 002CB758  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CFABC 002CB75C  7C 08 03 A6 */	mtlr r0
 /* 802CFAC0 002CB760  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CFAC4 002CB764  4E 80 00 20 */	blr 
+/* 802CFAC4 002CB764  4E 80 00 20 */	blr
 
 .global "SwizzleToC4__15ENgcTextureUtilFPUciiPUc"
 "SwizzleToC4__15ENgcTextureUtilFPUciiPUc":
@@ -39389,7 +39389,7 @@ lbl_802CFB60:
 /* 802CFB70 002CB810  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802CFB74 002CB814  7C 08 03 A6 */	mtlr r0
 /* 802CFB78 002CB818  38 21 00 40 */	addi r1, r1, 0x40
-/* 802CFB7C 002CB81C  4E 80 00 20 */	blr 
+/* 802CFB7C 002CB81C  4E 80 00 20 */	blr
 
 .global "SwizzleToC8__15ENgcTextureUtilFPUciiPUc"
 "SwizzleToC8__15ENgcTextureUtilFPUciiPUc":
@@ -39443,7 +39443,7 @@ lbl_802CFC18:
 /* 802CFC28 002CB8C8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802CFC2C 002CB8CC  7C 08 03 A6 */	mtlr r0
 /* 802CFC30 002CB8D0  38 21 00 40 */	addi r1, r1, 0x40
-/* 802CFC34 002CB8D4  4E 80 00 20 */	blr 
+/* 802CFC34 002CB8D4  4E 80 00 20 */	blr
 
 .global "SwizzleToRGBA8__15ENgcTextureUtilFPUciiPUc"
 "SwizzleToRGBA8__15ENgcTextureUtilFPUciiPUc":
@@ -39553,7 +39553,7 @@ lbl_802CFDB4:
 /* 802CFDBC 002CBA5C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802CFDC0 002CBA60  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802CFDC4 002CBA64  38 21 00 10 */	addi r1, r1, 0x10
-/* 802CFDC8 002CBA68  4E 80 00 20 */	blr 
+/* 802CFDC8 002CBA68  4E 80 00 20 */	blr
 
 .global "SwizzleFromRGB5A3__15ENgcTextureUtilFPUciiPUc"
 "SwizzleFromRGB5A3__15ENgcTextureUtilFPUciiPUc":
@@ -39610,7 +39610,7 @@ lbl_802CFE74:
 /* 802CFE84 002CBB24  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802CFE88 002CBB28  7C 08 03 A6 */	mtlr r0
 /* 802CFE8C 002CBB2C  38 21 00 30 */	addi r1, r1, 0x30
-/* 802CFE90 002CBB30  4E 80 00 20 */	blr 
+/* 802CFE90 002CBB30  4E 80 00 20 */	blr
 
 .global "SwizzleFromC8__15ENgcTextureUtilFPUciiPUc"
 "SwizzleFromC8__15ENgcTextureUtilFPUciiPUc":
@@ -39664,7 +39664,7 @@ lbl_802CFF2C:
 /* 802CFF3C 002CBBDC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802CFF40 002CBBE0  7C 08 03 A6 */	mtlr r0
 /* 802CFF44 002CBBE4  38 21 00 40 */	addi r1, r1, 0x40
-/* 802CFF48 002CBBE8  4E 80 00 20 */	blr 
+/* 802CFF48 002CBBE8  4E 80 00 20 */	blr
 
 .global "SwizzleFromRGBA8__15ENgcTextureUtilFPUciiPUc"
 "SwizzleFromRGBA8__15ENgcTextureUtilFPUciiPUc":
@@ -39774,18 +39774,18 @@ lbl_802D00C8:
 /* 802D00D0 002CBD70  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 802D00D4 002CBD74  83 C1 00 08 */	lwz r30, 8(r1)
 /* 802D00D8 002CBD78  38 21 00 10 */	addi r1, r1, 0x10
-/* 802D00DC 002CBD7C  4E 80 00 20 */	blr 
+/* 802D00DC 002CBD7C  4E 80 00 20 */	blr
 
 .global "XFONTInit"
 "XFONTInit":
 /* 802D00E0 002CBD80  90 6D BD 70 */	stw r3, "XfbWidth"-_SDA_BASE_(r13)
 /* 802D00E4 002CBD84  90 8D BD 68 */	stw r4, "m_fbSize"-_SDA_BASE_(r13)
-/* 802D00E8 002CBD88  4E 80 00 20 */	blr 
+/* 802D00E8 002CBD88  4E 80 00 20 */	blr
 
 .global "XFONTSetFrameBuffer"
 "XFONTSetFrameBuffer":
 /* 802D00EC 002CBD8C  90 6D BD 6C */	stw r3, "m_xfb"-_SDA_BASE_(r13)
-/* 802D00F0 002CBD90  4E 80 00 20 */	blr 
+/* 802D00F0 002CBD90  4E 80 00 20 */	blr
 
 .global "RGBtoYUV__FPUcPUli"
 "RGBtoYUV__FPUcPUli":
@@ -39807,7 +39807,7 @@ lbl_802D00C8:
 /* 802D0130 002CBDD0  38 C6 1A B0 */	addi r6, r6, lbl_80451AB0@l
 /* 802D0134 002CBDD4  7C C6 00 2E */	lwzx r6, r6, r0
 /* 802D0138 002CBDD8  7C C9 03 A6 */	mtctr r6
-/* 802D013C 002CBDDC  4E 80 04 20 */	bctr 
+/* 802D013C 002CBDDC  4E 80 04 20 */	bctr
 /* 802D0140 002CBDE0  88 E3 00 02 */	lbz r7, 2(r3)
 /* 802D0144 002CBDE4  88 C3 00 00 */	lbz r6, 0(r3)
 /* 802D0148 002CBDE8  90 E1 00 0C */	stw r7, 0xc(r1)
@@ -40229,7 +40229,7 @@ lbl_802D07B0:
 /* 802D07C0 002CC460  E3 A1 00 38 */	psq_l f29, 56(r1), 0, qr0
 /* 802D07C4 002CC464  CB A1 00 30 */	lfd f29, 0x30(r1)
 /* 802D07C8 002CC468  38 21 00 60 */	addi r1, r1, 0x60
-/* 802D07CC 002CC46C  4E 80 00 20 */	blr 
+/* 802D07CC 002CC46C  4E 80 00 20 */	blr
 
 .global "XFONTDrawRGBPixel__FPUciiii"
 "XFONTDrawRGBPixel__FPUciiii":
@@ -40277,7 +40277,7 @@ lbl_802D085C:
 /* 802D086C 002CC50C  83 81 00 20 */	lwz r28, 0x20(r1)
 /* 802D0870 002CC510  7C 08 03 A6 */	mtlr r0
 /* 802D0874 002CC514  38 21 00 30 */	addi r1, r1, 0x30
-/* 802D0878 002CC518  4E 80 00 20 */	blr 
+/* 802D0878 002CC518  4E 80 00 20 */	blr
 
 .global "__dt__14ENgcControllerFv"
 "__dt__14ENgcControllerFv":
@@ -40303,7 +40303,7 @@ lbl_802D08B8:
 /* 802D08C4 002CC564  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802D08C8 002CC568  7C 08 03 A6 */	mtlr r0
 /* 802D08CC 002CC56C  38 21 00 10 */	addi r1, r1, 0x10
-/* 802D08D0 002CC570  4E 80 00 20 */	blr 
+/* 802D08D0 002CC570  4E 80 00 20 */	blr
 
 .global "__dt__14EWiiControllerFv"
 "__dt__14EWiiControllerFv":
@@ -40329,12 +40329,12 @@ lbl_802D0910:
 /* 802D091C 002CC5BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802D0920 002CC5C0  7C 08 03 A6 */	mtlr r0
 /* 802D0924 002CC5C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 802D0928 002CC5C8  4E 80 00 20 */	blr 
+/* 802D0928 002CC5C8  4E 80 00 20 */	blr
 
 .global "IsDPDEnabled__21EWiiControllerManagerFv"
 "IsDPDEnabled__21EWiiControllerManagerFv":
 /* 802D092C 002CC5CC  88 63 21 44 */	lbz r3, 0x2144(r3)
-/* 802D0930 002CC5D0  4E 80 00 20 */	blr 
+/* 802D0930 002CC5D0  4E 80 00 20 */	blr
 
 .global "GetClockCycles__10ENgcEngineFv"
 "GetClockCycles__10ENgcEngineFv":
@@ -40342,34 +40342,34 @@ lbl_802D0910:
 
 .global "Flush__9ENgcAudioFb"
 "Flush__9ENgcAudioFb":
-/* 802D0938 002CC5D8  4E 80 00 20 */	blr 
+/* 802D0938 002CC5D8  4E 80 00 20 */	blr
 
 .global "AddEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi"
 "AddEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi":
-/* 802D093C 002CC5DC  4E 80 00 20 */	blr 
+/* 802D093C 002CC5DC  4E 80 00 20 */	blr
 
 .global "RemoveEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi"
 "RemoveEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi":
-/* 802D0940 002CC5E0  4E 80 00 20 */	blr 
+/* 802D0940 002CC5E0  4E 80 00 20 */	blr
 
 .global "CanCache__19EAudioSampleManagerFP9EResource"
 "CanCache__19EAudioSampleManagerFP9EResource":
 /* 802D0944 002CC5E4  38 60 00 01 */	li r3, 1
-/* 802D0948 002CC5E8  4E 80 00 20 */	blr 
+/* 802D0948 002CC5E8  4E 80 00 20 */	blr
 
 .global "RendFrameComplete__13ENgcSchedulerFP13ESchedCommand"
 "RendFrameComplete__13ENgcSchedulerFP13ESchedCommand":
-/* 802D094C 002CC5EC  4E 80 00 20 */	blr 
+/* 802D094C 002CC5EC  4E 80 00 20 */	blr
 
 .global "GetShadowMapTexture__12ENgcGraphicsFv"
 "GetShadowMapTexture__12ENgcGraphicsFv":
 /* 802D0950 002CC5F0  80 63 02 5C */	lwz r3, 0x25c(r3)
-/* 802D0954 002CC5F4  4E 80 00 20 */	blr 
+/* 802D0954 002CC5F4  4E 80 00 20 */	blr
 
 .global "GetKeyboardState__9EKeyboardFv"
 "GetKeyboardState__9EKeyboardFv":
 /* 802D0958 002CC5F8  88 63 00 00 */	lbz r3, 0(r3)
-/* 802D095C 002CC5FC  4E 80 00 20 */	blr 
+/* 802D095C 002CC5FC  4E 80 00 20 */	blr
 
 .global "HoldKeyboard__9EKeyboardFv"
 "HoldKeyboard__9EKeyboardFv":
@@ -40377,12 +40377,12 @@ lbl_802D0910:
 /* 802D0964 002CC604  2C 00 00 00 */	cmpwi r0, 0
 /* 802D0968 002CC608  41 82 00 0C */	beq lbl_802D0974
 /* 802D096C 002CC60C  38 60 00 00 */	li r3, 0
-/* 802D0970 002CC610  4E 80 00 20 */	blr 
+/* 802D0970 002CC610  4E 80 00 20 */	blr
 lbl_802D0974:
 /* 802D0974 002CC614  38 00 00 01 */	li r0, 1
 /* 802D0978 002CC618  98 03 00 00 */	stb r0, 0(r3)
 /* 802D097C 002CC61C  38 60 00 01 */	li r3, 1
-/* 802D0980 002CC620  4E 80 00 20 */	blr 
+/* 802D0980 002CC620  4E 80 00 20 */	blr
 
 .global "ReleaseKeyboard__9EKeyboardFv"
 "ReleaseKeyboard__9EKeyboardFv":
@@ -40390,223 +40390,2857 @@ lbl_802D0974:
 /* 802D0988 002CC628  2C 00 00 00 */	cmpwi r0, 0
 /* 802D098C 002CC62C  40 82 00 0C */	bne lbl_802D0998
 /* 802D0990 002CC630  38 60 00 00 */	li r3, 0
-/* 802D0994 002CC634  4E 80 00 20 */	blr 
+/* 802D0994 002CC634  4E 80 00 20 */	blr
 lbl_802D0998:
 /* 802D0998 002CC638  38 00 00 00 */	li r0, 0
 /* 802D099C 002CC63C  98 03 00 00 */	stb r0, 0(r3)
 /* 802D09A0 002CC640  38 60 00 01 */	li r3, 1
-/* 802D09A4 002CC644  4E 80 00 20 */	blr 
+/* 802D09A4 002CC644  4E 80 00 20 */	blr
 
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global "kNgcDvdErrorEnglish"
 "kNgcDvdErrorEnglish":
-	.incbin "baserom.dol", 0x4170E0, 0x460
+	# ROM: 0x4170E0
+	.4byte 0x00540068
+	.4byte 0x00650020
+	.4byte 0x00470061
+	.4byte 0x006D0065
+	.4byte 0x00200044
+	.4byte 0x00690073
+	.4byte 0x00630020
+	.4byte 0x0063006F
+	.4byte 0x0075006C
+	.4byte 0x00640020
+	.4byte 0x006E006F
+	.4byte 0x00740020
+	.4byte 0x00620065
+	.4byte 0x00200072
+	.4byte 0x00650061
+	.4byte 0x0064002E
+	.4byte 0x00200020
+	.4byte 0x0050006C
+	.4byte 0x00650061
+	.4byte 0x00730065
+	.4byte 0x00200072
+	.4byte 0x00650061
+	.4byte 0x00640020
+	.4byte 0x00740068
+	.4byte 0x00650020
+	.4byte 0x00570069
+	.4byte 0x00690020
+	.4byte 0x004F0070
+	.4byte 0x00650072
+	.4byte 0x00610074
+	.4byte 0x0069006F
+	.4byte 0x006E0073
+	.4byte 0x0020004D
+	.4byte 0x0061006E
+	.4byte 0x00750061
+	.4byte 0x006C0020
+	.4byte 0x0066006F
+	.4byte 0x00720020
+	.4byte 0x006D006F
+	.4byte 0x00720065
+	.4byte 0x00200069
+	.4byte 0x006E0066
+	.4byte 0x006F0072
+	.4byte 0x006D0061
+	.4byte 0x00740069
+	.4byte 0x006F006E
+	.4byte 0x002E0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00540068
+	.4byte 0x00650020
+	.4byte 0x00440069
+	.4byte 0x00730063
+	.4byte 0x00200043
+	.4byte 0x006F0076
+	.4byte 0x00650072
+	.4byte 0x00200069
+	.4byte 0x00730020
+	.4byte 0x006F0070
+	.4byte 0x0065006E
+	.4byte 0x002E0020
+	.4byte 0x00200049
+	.4byte 0x00660020
+	.4byte 0x0079006F
+	.4byte 0x00750020
+	.4byte 0x00770061
+	.4byte 0x006E0074
+	.4byte 0x00200074
+	.4byte 0x006F0020
+	.4byte 0x0063006F
+	.4byte 0x006E0074
+	.4byte 0x0069006E
+	.4byte 0x00750065
+	.4byte 0x00200074
+	.4byte 0x00680065
+	.4byte 0x00200067
+	.4byte 0x0061006D
+	.4byte 0x0065002C
+	.4byte 0x00200070
+	.4byte 0x006C0065
+	.4byte 0x00610073
+	.4byte 0x00650020
+	.4byte 0x0063006C
+	.4byte 0x006F0073
+	.4byte 0x00650020
+	.4byte 0x00740068
+	.4byte 0x00650020
+	.4byte 0x00440069
+	.4byte 0x00730063
+	.4byte 0x00200043
+	.4byte 0x006F0076
+	.4byte 0x00650072
+	.4byte 0x002E0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0050006C
+	.4byte 0x00650061
+	.4byte 0x00730065
+	.4byte 0x00200069
+	.4byte 0x006E0073
+	.4byte 0x00650072
+	.4byte 0x00740020
+	.4byte 0x00540068
+	.4byte 0x00650020
+	.4byte 0x00530069
+	.4byte 0x006D0073
+	.4byte 0x00990020
+	.4byte 0x00320020
+	.4byte 0x00430061
+	.4byte 0x00730074
+	.4byte 0x00610077
+	.4byte 0x00610079
+	.4byte 0x00200047
+	.4byte 0x0061006D
+	.4byte 0x00650020
+	.4byte 0x00440069
+	.4byte 0x00730063
+	.4byte 0x002E0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0050006C
+	.4byte 0x00650061
+	.4byte 0x00730065
+	.4byte 0x00200069
+	.4byte 0x006E0073
+	.4byte 0x00650072
+	.4byte 0x00740020
+	.4byte 0x00540068
+	.4byte 0x00650020
+	.4byte 0x00530069
+	.4byte 0x006D0073
+	.4byte 0x00990020
+	.4byte 0x00320020
+	.4byte 0x00430061
+	.4byte 0x00730074
+	.4byte 0x00610077
+	.4byte 0x00610079
+	.4byte 0x00200047
+	.4byte 0x0061006D
+	.4byte 0x00650020
+	.4byte 0x00440069
+	.4byte 0x00730063
+	.4byte 0x002E0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "_gxZCompareMap$39202"
 "_gxZCompareMap$39202":
-	.incbin "baserom.dol", 0x417540, 0x20
+	# ROM: 0x417540
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000003
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000000
+
 .global "_gxAlphaCompareMap$39224"
 "_gxAlphaCompareMap$39224":
-	.incbin "baserom.dol", 0x417560, 0x20
+	# ROM: 0x417560
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000005
+
 .global "kAASamplePatternOn__17NGCRendererAAImpl"
 "kAASamplePatternOn__17NGCRendererAAImpl":
-	.incbin "baserom.dol", 0x417580, 0x18
+	# ROM: 0x417580
+	.4byte 0x03030A05
+	.4byte 0x050A0702
+	.4byte 0x02070909
+	.4byte 0x07020207
+	.4byte 0x09090303
+	.4byte 0x0A05050A
+
 .global "_gxLightId"
 "_gxLightId":
-	.incbin "baserom.dol", 0x417598, 0x20
+	# ROM: 0x417598
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000010
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000080
+
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_80450EA0
 lbl_80450EA0:
-	.incbin "baserom.dol", 0x44CFA0, 0x6C
+	# ROM: 0x44CFA0
+	.asciz "/banner_DUT.bin"
+	.asciz "/banner_ENG.bin"
+	.asciz "/banner_FRE.bin"
+	.asciz "/banner_GER.bin"
+	.asciz "/banner_ITA.bin"
+	.asciz "/banner_SPA.bin"
+	.asciz "banner.bin"
+	.byte 0x00
+
 .global lbl_80450F0C
 lbl_80450F0C:
-	.incbin "baserom.dol", 0x44D00C, 0x30
+	# ROM: 0x44D00C
+	.4byte 0x802B0584 ;# ptr
+	.4byte 0x802B0530 ;# ptr
+	.4byte 0x802B0584 ;# ptr
+	.4byte 0x802B0530 ;# ptr
+	.4byte 0x802B04B0 ;# ptr
+	.4byte 0x802B04B0 ;# ptr
+	.4byte 0x802B04B0 ;# ptr
+	.4byte 0x802B0530 ;# ptr
+	.4byte 0x802B0584 ;# ptr
+	.4byte 0x802B0530 ;# ptr
+	.4byte 0x802B0530 ;# ptr
+	.4byte 0x802B04B0 ;# ptr
+
 .global lbl_80450F3C
 lbl_80450F3C:
-	.incbin "baserom.dol", 0x44D03C, 0x3C
+	# ROM: 0x44D03C
+	.asciz "Engine[NGC]: OSArenaLow = %X, OSArenaHi = %X, Mem = %.1fMB\n"
+
 .global lbl_80450F78
 lbl_80450F78:
-	.incbin "baserom.dol", 0x44D078, 0x40
+	# ROM: 0x44D078
+	.asciz "Engine[Wii]: OSArena2Low = %X, OSArena2Hi = %X, Mem = %.1fMB\n"
+	.byte 0x00, 0x00
+
 .global lbl_80450FB8
 lbl_80450FB8:
-	.incbin "baserom.dol", 0x44D0B8, 0x148
+	# ROM: 0x44D0B8
+	.asciz "data/index.ind"
+	.byte 0x00
+	.asciz "   OSGetArenaLo   = 0x%08X\n"
+	.asciz "   OSGetArenaHi   = 0x%08X\n"
+	.asciz "Memory available from OS MEM1 is %d KB\n"
+	.asciz "Memory available from OS MEM2 is %d KB\n"
+	.asciz "Initializing %s:\n"
+	.byte 0x00, 0x00
+	.asciz "ResourceHeap"
+	.byte 0x00, 0x00, 0x00
+	.asciz "   start       = 0x%08X\n"
+	.byte 0x00, 0x00, 0x00
+	.asciz "   size        = 0%08d\n"
+	.asciz "ModelHeap"
+	.byte 0x00, 0x00
+	.asciz "TextureHeap"
+	.asciz "ShaderHeap"
+	.byte 0x00
+	.asciz "AnimationHeap"
+	.byte 0x00, 0x00
+	.asciz "FlashesHeap"
+	.asciz "AudioHeap"
+	.byte 0x00, 0x00
+	.asciz "MainHeap"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_80451100
 lbl_80451100:
-	.incbin "baserom.dol", 0x44D200, 0x30
+	# ROM: 0x44D200
+	.4byte 0x802B2DF4 ;# ptr
+	.4byte 0x802B2DA0 ;# ptr
+	.4byte 0x802B2DF4 ;# ptr
+	.4byte 0x802B2DA0 ;# ptr
+	.4byte 0x802B2BC0 ;# ptr
+	.4byte 0x802B2BC0 ;# ptr
+	.4byte 0x802B2BC0 ;# ptr
+	.4byte 0x802B2DA0 ;# ptr
+	.4byte 0x802B2DF4 ;# ptr
+	.4byte 0x802B2DA0 ;# ptr
+	.4byte 0x802B2DA0 ;# ptr
+	.4byte 0x802B2BC0 ;# ptr
+
 .global "kColorLUT$18913"
 "kColorLUT$18913":
-	.incbin "baserom.dol", 0x44D230, 0x20
+	# ROM: 0x44D230
+	.4byte 0x10801E80
+	.4byte 0x2C803980
+	.4byte 0x47805580
+	.4byte 0x63807080
+	.4byte 0x7E808C80
+	.4byte 0x9A80A780
+	.4byte 0xB580C380
+	.4byte 0xD180EB80
+
 .global lbl_80451150
 lbl_80451150:
-	.incbin "baserom.dol", 0x44D250, 0xC
+	# ROM: 0x44D250
+	.asciz "*ShadowMap*"
+
 .global lbl_8045115C
 lbl_8045115C:
-	.incbin "baserom.dol", 0x44D25C, 0x24
+	# ROM: 0x44D25C
+	.asciz "XXXXXXXXXXXXXXXXXX: "
+	.byte 0x00, 0x00, 0x00
+	.asciz "%d (%.1f)"
+	.byte 0x00, 0x00
+
 .global "VolumeTable"
 "VolumeTable":
-	.incbin "baserom.dol", 0x44D280, 0x140
+	# ROM: 0x44D280
+	.4byte 0x00000002
+	.4byte 0x00080012
+	.4byte 0x00200032
+	.4byte 0x00490063
+	.4byte 0x008200A4
+	.4byte 0x00CB00F5
+	.4byte 0x01240157
+	.4byte 0x018E01C9
+	.4byte 0x0208024B
+	.4byte 0x029202DD
+	.4byte 0x032C037F
+	.4byte 0x03D70432
+	.4byte 0x049204F5
+	.4byte 0x055D05C9
+	.4byte 0x063806AC
+	.4byte 0x072407A0
+	.4byte 0x082008A4
+	.4byte 0x092C09B8
+	.4byte 0x0A480ADD
+	.4byte 0x0B750C12
+	.4byte 0x0CB20D57
+	.4byte 0x0DFF0EAC
+	.4byte 0x0F5D1012
+	.4byte 0x10CA1187
+	.4byte 0x1248130D
+	.4byte 0x13D714A4
+	.4byte 0x1575164A
+	.4byte 0x17241801
+	.4byte 0x18E319C8
+	.4byte 0x1AB21BA0
+	.4byte 0x1C911D87
+	.4byte 0x1E811F7F
+	.4byte 0x20812187
+	.4byte 0x2291239F
+	.4byte 0x24B225C8
+	.4byte 0x26E22801
+	.4byte 0x29232A4A
+	.4byte 0x2B752CA3
+	.4byte 0x2DD62F0D
+	.4byte 0x30483187
+	.4byte 0x32CA3411
+	.4byte 0x355C36AB
+	.4byte 0x37FF3956
+	.4byte 0x3AB13C11
+	.4byte 0x3D743EDC
+	.4byte 0x404841B7
+	.4byte 0x432B44A3
+	.4byte 0x461F479F
+	.4byte 0x49234AAB
+	.4byte 0x4C374DC7
+	.4byte 0x4F5C50F4
+	.4byte 0x52905431
+	.4byte 0x55D6577E
+	.4byte 0x592B5ADC
+	.4byte 0x5C905E49
+	.4byte 0x600661C7
+	.4byte 0x638C6555
+	.4byte 0x672268F4
+	.4byte 0x6AC96CA2
+	.4byte 0x6E807061
+	.4byte 0x72477430
+	.4byte 0x761E7810
+	.4byte 0x7A067C00
+	.4byte 0x7DFE8000
+	.asciz "e_ngcmovie.cpp"
+	.byte 0x00
+	.asciz "Fail to open the thp file\n"
+	.byte 0x00
+	.asciz "Fail to prepare\n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_804512C0
 lbl_804512C0:
-	.incbin "baserom.dol", 0x44D3C0, 0x30
+	# ROM: 0x44D3C0
+	.4byte 0x802B4504 ;# ptr
+	.4byte 0x802B44DC ;# ptr
+	.4byte 0x802B4504 ;# ptr
+	.4byte 0x802B44DC ;# ptr
+	.4byte 0x802B4494 ;# ptr
+	.4byte 0x802B4494 ;# ptr
+	.4byte 0x802B4494 ;# ptr
+	.4byte 0x802B44DC ;# ptr
+	.4byte 0x802B4504 ;# ptr
+	.4byte 0x802B44DC ;# ptr
+	.4byte 0x802B44DC ;# ptr
+	.4byte 0x802B4494 ;# ptr
+
 .global lbl_804512F0
 lbl_804512F0:
-	.incbin "baserom.dol", 0x44D3F0, 0x10
+	# ROM: 0x44D3F0
+	.asciz "data/movies.arc"
+
 .global "_ngcPerf0Stats"
 "_ngcPerf0Stats":
-	.incbin "baserom.dol", 0x44D400, 0x300
+	# ROM: 0x44D400
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.asciz "P0_VERTICES:"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000B
+	.asciz "P0_TRIANGLES:"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.asciz "P0_CLIP_VTX:"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000002
+	.asciz "P0_CLIP_CLKS:"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000003
+	.asciz "P0_XF_WAIT_IN:"
+	.byte 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000004
+	.asciz "P0_XF_WAIT_OUT:"
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000005
+	.asciz "P0_XF_XFRM_CLKS:"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000006
+	.asciz "P0_XF_LIT_CLKS:"
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000007
+	.asciz "P0_XF_BOT_CLKS:"
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000008
+	.asciz "P0_XF_REGLD_CLKS:"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000009
+	.asciz "P0_XF_REGRD_CLKS:"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000000A
+	.asciz "P0_CLIP_RATIO:"
+	.byte 0x00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "m_jumpTable__12ENgcRenderer"
 "m_jumpTable__12ENgcRenderer":
-	.incbin "baserom.dol", 0x44D700, 0x39C
+	# ROM: 0x44D700
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriStrip__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BD114)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriFan__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA560)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA578)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "QuadList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0418)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "PointList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA5A8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SpriteList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA5C0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "DisplayList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEA2C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Goto__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEA5C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "End__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEA68)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Viewport__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEAAC)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Scissor__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEB54)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ModelMatrices__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEC34)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ViewMatrix__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEF54)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ProjectionMatrix__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF004)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "WindowMatrix__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF0F0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TextureMatrix__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF18C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Texture__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF244)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "EnableGeometryModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF3AC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "DisableGeometryModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF420)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetGeometryModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF494)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "EnableRasterModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF500)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "DisableRasterModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF524)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetRasterModes__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF548)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Lights__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF5C4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SendGSDisplayList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA5D8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "LineList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BE850)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "LineStrip__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA590)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SaveState__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEA9C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "RestoreState__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEAA4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "CallbackParam__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA5F0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Callback__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA608)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GEList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA620)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Rect__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BF750)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ModelMatrixIndices__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEE50)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Material__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFE58)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "MipMapSetup__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFEA8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "RecalcMatrices__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA638)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Debug__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFEC0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetMipMap__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA650)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "GeometrySetup__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFED8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "DirectRect__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFA98)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriStripPacked__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BD7E4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ZTest__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFF28)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "AlphaTest__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BFF84)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "RenderSurface__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0024)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Vertex__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA668)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriIndexed__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0178)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SaveImageData__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0190)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "PointListPacked__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA68C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SpriteListPacked__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C01A8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetCombineMode__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0B60)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetBlendMode__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0B8C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NoOp__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA6B0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ClipRect__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BEB30)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "MovieFrame__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C0BA8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "TriStripPackedInt__12ENgcRendererFP8EDLEntry" ;# ptr (0x802BDFB8)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "VerifyMpg__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA6B4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "RectList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C1814)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "RectListRot__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C141C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ParticleList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA6CC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ParticleListRot__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA6E4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "LineStreakList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA6FC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "SetAlpha__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA720)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "CopyScreenToTexture__12ENgcRendererFP8EDLEntry" ;# ptr (0x802CA738)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Stencil__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C1AE4)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcTexInvalidateAll__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C1CC0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcGXDisplayListInt__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C1DCC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcGXDisplayList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C217C)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcTriListInt__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C24EC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcTriList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C2830)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "NgcScreenTriList__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C2B30)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ReadMetrics__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C2DDC)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "Shader__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C2DE0)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "ScrambleRect__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C3248)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "VertexMorph__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C3654)
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte "VertexMorphEnd__12ENgcRendererFP8EDLEntry" ;# ptr (0x802C37EC)
+
 .global lbl_8045199C
 lbl_8045199C:
-	.incbin "baserom.dol", 0x44DA9C, 0x34
+	# ROM: 0x44DA9C
+	.4byte 0x802C0BFC ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BE8 ;# ptr
+	.4byte 0x802C0BE8 ;# ptr
+	.4byte 0x802C0BE8 ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BFC ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BF4 ;# ptr
+	.4byte 0x802C0BE8 ;# ptr
+	.4byte 0x00000000
+
 .global "ENgcRSTevFlagMap"
 "ENgcRSTevFlagMap":
-	.incbin "baserom.dol", 0x44DAD0, 0x40
+	# ROM: 0x44DAD0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000010
+	.4byte 0x00000020
+	.4byte 0x00000040
+	.4byte 0x00000080
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000400
+	.4byte 0x00000800
+	.4byte 0x00001000
+	.4byte 0x00002000
+	.4byte 0x00004000
+	.4byte 0x00008000
+
 .global "ENgcRSLightFlagMap"
 "ENgcRSLightFlagMap":
-	.incbin "baserom.dol", 0x44DB10, 0x10
+	# ROM: 0x44DB10
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000400
+	.4byte 0x00000800
+
 .global lbl_80451A20
 lbl_80451A20:
-	.incbin "baserom.dol", 0x44DB20, 0xC
+	# ROM: 0x44DB20
+	.asciz "Scheduler"
+	.byte 0x00, 0x00
+
 .global lbl_80451A2C
 lbl_80451A2C:
-	.incbin "baserom.dol", 0x44DB2C, 0x14
+	# ROM: 0x44DB2C
+	.asciz "data/audiostr.arc"
+	.byte 0x00, 0x00
+
 .global lbl_80451A40
 lbl_80451A40:
-	.incbin "baserom.dol", 0x44DB40, 0x10
+	# ROM: 0x44DB40
+	.asciz "audiostr.arc"
+	.byte 0x00, 0x00, 0x00
+
 .global "XFcolor"
 "XFcolor":
-	.incbin "baserom.dol", 0x44DB50, 0x60
+	# ROM: 0x44DB50
+	.4byte 0x000000B4
+	.4byte 0x00000080
+	.4byte 0x00000080
+	.4byte 0x000000A2
+	.4byte 0x0000002C
+	.4byte 0x0000008E
+	.4byte 0x00000083
+	.4byte 0x0000009C
+	.4byte 0x0000002C
+	.4byte 0x00000070
+	.4byte 0x00000048
+	.4byte 0x0000003A
+	.4byte 0x00000054
+	.4byte 0x000000B8
+	.4byte 0x000000C6
+	.4byte 0x00000041
+	.4byte 0x00000064
+	.4byte 0x000000D4
+	.4byte 0x00000023
+	.4byte 0x000000D4
+	.4byte 0x00000072
+	.4byte 0x00000010
+	.4byte 0x00000080
+	.4byte 0x00000080
+
 .global lbl_80451AB0
 lbl_80451AB0:
-	.incbin "baserom.dol", 0x44DBB0, 0x30
+	# ROM: 0x44DBB0
+	.4byte 0x802D0140 ;# ptr
+	.4byte 0x802D0240 ;# ptr
+	.4byte 0x802D034C ;# ptr
+	.4byte 0x802D0440 ;# ptr
+	.4byte 0x802D04E4 ;# ptr
+	.4byte 0x802D058C ;# ptr
+	.4byte 0x802D0630 ;# ptr
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "XFontBitmap"
 "XFontBitmap":
-	.incbin "baserom.dol", 0x44DBE0, 0xC00
+	# ROM: 0x44DBE0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x0FFFFFF0
+	.4byte 0x00F00F00
+	.4byte 0x0FFFFFF0
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x00FFFFF0
+	.4byte 0x0F00F000
+	.4byte 0x00FFFF00
+	.4byte 0x0000F0F0
+	.4byte 0x0FFFFF00
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x0FF000F0
+	.4byte 0x0FF00F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00F00FF0
+	.4byte 0x0F000FF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000F0000
+	.4byte 0x00F0F000
+	.4byte 0x00F0F000
+	.4byte 0x00FF0000
+	.4byte 0x0F000FF0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F000F0
+	.4byte 0x000F0F00
+	.4byte 0x00FFFFF0
+	.4byte 0x000F0F00
+	.4byte 0x00F000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00FFFFF0
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFFFF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x000000F0
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00F00000
+	.4byte 0x0F000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x00F00F00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00F00F00
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x000FF000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x000000F0
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x000000F0
+	.4byte 0x0000FF00
+	.4byte 0x000000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x00000F00
+	.4byte 0x0000FF00
+	.4byte 0x000F0F00
+	.4byte 0x00F00F00
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFF00
+	.4byte 0x000000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x00F00000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F0000F0
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFFF0
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00F00000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F00000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00F00000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0000FF00
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F000FF0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F00FFF0
+	.4byte 0x0F000000
+	.4byte 0x00FFFFF0
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x00F00F00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFF00
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x00F000F0
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x00F000F0
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x0FFFF000
+	.4byte 0x0F000F00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F000F00
+	.4byte 0x0FFFF000
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x00F00000
+	.4byte 0x0F000000
+	.4byte 0x0F00FFF0
+	.4byte 0x0F0000F0
+	.4byte 0x00F000F0
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x0000FFF0
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x0F000F00
+	.4byte 0x00FFF000
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F000F00
+	.4byte 0x0F00F000
+	.4byte 0x0FFF0000
+	.4byte 0x0F00F000
+	.4byte 0x0F000F00
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x0F00000F
+	.4byte 0x0FF000FF
+	.4byte 0x0F0F0F0F
+	.4byte 0x0F00F00F
+	.4byte 0x0F00F00F
+	.4byte 0x0F00000F
+	.4byte 0x0F00000F
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0FF000F0
+	.4byte 0x0F0F00F0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F000FF0
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFF00
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F000F00
+	.4byte 0x00FFF0F0
+	.4byte 0x00000000
+	.4byte 0x0FFFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFF00
+	.4byte 0x0F00F000
+	.4byte 0x0F000F00
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0F000000
+	.4byte 0x00FFFF00
+	.4byte 0x000000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x0FFFFFFF
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x0F00000F
+	.4byte 0x0F00000F
+	.4byte 0x0F00000F
+	.4byte 0x0F00F00F
+	.4byte 0x0F00F00F
+	.4byte 0x0F00F00F
+	.4byte 0x00FF0FF0
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00F00F00
+	.4byte 0x000FF000
+	.4byte 0x00F00F00
+	.4byte 0x0F0000F0
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x0F00000F
+	.4byte 0x00F000F0
+	.4byte 0x000F0F00
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x000000F0
+	.4byte 0x00000F00
+	.4byte 0x000FF000
+	.4byte 0x00F00000
+	.4byte 0x0F000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x0F000000
+	.4byte 0x00F00000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x000000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFF000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00FFF000
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x00F00F00
+	.4byte 0x0F0000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0FFFFFF0
+	.4byte 0x00000000
+	.4byte 0x000FF000
+	.4byte 0x000FF000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F000F00
+	.4byte 0x0F000F00
+	.4byte 0x0F000F00
+	.4byte 0x00FFFFF0
+	.4byte 0x00000000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00FFFF00
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x0F000000
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x000FFFF0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x000FFFF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFFF00
+	.4byte 0x0F0000F0
+	.4byte 0x0FFFFFF0
+	.4byte 0x0F000000
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x0000FF00
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x0FFFFF00
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FFFF0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x000FFFF0
+	.4byte 0x000000F0
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F0FF00
+	.4byte 0x00FF00F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x00000F00
+	.4byte 0x00000000
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00000F00
+	.4byte 0x00F00F00
+	.4byte 0x000FF000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F00F00
+	.4byte 0x00F0F000
+	.4byte 0x00FFF000
+	.4byte 0x00F00F00
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F0FF00
+	.4byte 0x0F0F00F0
+	.4byte 0x0F0F00F0
+	.4byte 0x0F0F00F0
+	.4byte 0x0F0F00F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F0FF00
+	.4byte 0x00FF00F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x000FFF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFF000
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x00FFF000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FFF00
+	.4byte 0x00F00F00
+	.4byte 0x00F00F00
+	.4byte 0x000FFF00
+	.4byte 0x00000F00
+	.4byte 0x00000FF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F0FFF0
+	.4byte 0x00FF0000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00F00000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000FFFF0
+	.4byte 0x00F00000
+	.4byte 0x000FFF00
+	.4byte 0x000000F0
+	.4byte 0x00FFFF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x00FFFFF0
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000FF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x000FFFF0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x00F000F0
+	.4byte 0x000F0F00
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0F0000F0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F00F0F0
+	.4byte 0x0F00F0F0
+	.4byte 0x00FF0F00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00F000F0
+	.4byte 0x000F0F00
+	.4byte 0x0000F000
+	.4byte 0x000F0F00
+	.4byte 0x00F000F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0F000F00
+	.4byte 0x0F000F00
+	.4byte 0x00F00F00
+	.4byte 0x000FFF00
+	.4byte 0x00000F00
+	.4byte 0x00FFF000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FFFFF0
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00FFFFF0
+	.4byte 0x00000000
+	.4byte 0x00000F00
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00FF0000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000F00
+	.4byte 0x00000000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000000
+	.4byte 0x000F0000
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x00000FF0
+	.4byte 0x0000F000
+	.4byte 0x0000F000
+	.4byte 0x000F0000
+	.4byte 0x00000000
+	.4byte 0x00FF00FF
+	.4byte 0x0F00FF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00FF0000
+	.4byte 0x0FF00000
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFF000
+	.4byte 0xFFFFF000
+	.4byte 0xFFF00000
+	.4byte 0x00000000
+
 .global "__vt__16ENgcTextureC4_32"
 "__vt__16ENgcTextureC4_32":
-	.incbin "baserom.dol", 0x44E7E0, 0x60
+	# ROM: 0x44E7E0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16ENgcTextureC4_32Fv" ;# ptr (0x802CEA28)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__16ENgcTextureC4_32Fv" ;# ptr (0x802CEB90)
+	.4byte "Create__16ENgcTextureC4_32FRC11ETextureDef" ;# ptr (0x802CEAC8)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__16ENgcTextureC4_32Fv" ;# ptr (0x802CEF0C)
+	.4byte "GetTEXCount__16ENgcTextureC4_32Fv" ;# ptr (0x802CEF14)
+	.4byte "Select__16ENgcTextureC4_32Fii" ;# ptr (0x802CEC60)
+	.4byte "SwizzleImage__16ENgcTextureC4_32FPUciiPUc" ;# ptr (0x802CEB7C)
+	.4byte "UnswizzleImage__15ENgcTextureBaseFPUciiPUc" ;# ptr (0x802CDC34)
+
 .global "__vt__16ENgcTextureC8_32"
 "__vt__16ENgcTextureC8_32":
-	.incbin "baserom.dol", 0x44E840, 0x60
+	# ROM: 0x44E840
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16ENgcTextureC8_32Fv" ;# ptr (0x802CF0C0)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__16ENgcTextureC8_32Fv" ;# ptr (0x802CF25C)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__16ENgcTextureC8_32Fv" ;# ptr (0x802CF30C)
+	.4byte "Create__16ENgcTextureC8_32FRC11ETextureDef" ;# ptr (0x802CF180)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__16ENgcTextureC8_32Fv" ;# ptr (0x802CF6F0)
+	.4byte "GetTEXCount__16ENgcTextureC8_32Fv" ;# ptr (0x802CF6F8)
+	.4byte "Select__16ENgcTextureC8_32Fii" ;# ptr (0x802CF444)
+	.4byte "SwizzleImage__16ENgcTextureC8_32FPUciiPUc" ;# ptr (0x802CF234)
+	.4byte "UnswizzleImage__16ENgcTextureC8_32FPUciiPUc" ;# ptr (0x802CF248)
+
 .global "__vt__17ENgcTextureRGB5A3"
 "__vt__17ENgcTextureRGB5A3":
-	.incbin "baserom.dol", 0x44E8A0, 0x60
+	# ROM: 0x44E8A0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17ENgcTextureRGB5A3Fv" ;# ptr (0x802CF86C)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte "SwizzleImage__17ENgcTextureRGB5A3FPUciiPUc" ;# ptr (0x802CF8CC)
+	.4byte "UnswizzleImage__17ENgcTextureRGB5A3FPUciiPUc" ;# ptr (0x802CF8E0)
+
 .global "__vt__15ENgcTextureCMPR"
 "__vt__15ENgcTextureCMPR":
-	.incbin "baserom.dol", 0x44E900, 0x60
+	# ROM: 0x44E900
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15ENgcTextureCMPRFv" ;# ptr (0x802CF784)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte "SwizzleImage__15ENgcTextureCMPRFPUciiPUc" ;# ptr (0x802CF7E4)
+	.4byte "UnswizzleImage__15ENgcTextureBaseFPUciiPUc" ;# ptr (0x802CDC34)
+
 .global "__vt__13ENgcTextureC4"
 "__vt__13ENgcTextureC4":
-	.incbin "baserom.dol", 0x44E960, 0x60
+	# ROM: 0x44E960
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13ENgcTextureC4Fv" ;# ptr (0x802CE92C)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte "SwizzleImage__13ENgcTextureC4FPUciiPUc" ;# ptr (0x802CE98C)
+	.4byte "UnswizzleImage__15ENgcTextureBaseFPUciiPUc" ;# ptr (0x802CDC34)
+
 .global "__vt__13ENgcTextureC8"
 "__vt__13ENgcTextureC8":
-	.incbin "baserom.dol", 0x44E9C0, 0x60
+	# ROM: 0x44E9C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13ENgcTextureC8Fv" ;# ptr (0x802CEFA4)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte "SwizzleImage__13ENgcTextureC8FPUciiPUc" ;# ptr (0x802CF004)
+	.4byte "UnswizzleImage__13ENgcTextureC8FPUciiPUc" ;# ptr (0x802CF018)
+
 .global "__vt__16ENgcTextureRGBA8"
 "__vt__16ENgcTextureRGBA8":
-	.incbin "baserom.dol", 0x44EA20, 0x60
+	# ROM: 0x44EA20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__16ENgcTextureRGBA8Fv" ;# ptr (0x802CF978)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte "SwizzleImage__16ENgcTextureRGBA8FPUciiPUc" ;# ptr (0x802CF9D8)
+	.4byte "UnswizzleImage__16ENgcTextureRGBA8FPUciiPUc" ;# ptr (0x802CF9EC)
+
 .global "__vt__12ENgcKeyboard"
 "__vt__12ENgcKeyboard":
-	.incbin "baserom.dol", 0x44EA80, 0x34
+	# ROM: 0x44EA80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "LoadKeyboard__9EKeyboardFv" ;# ptr (0x802F38F0)
+	.4byte "UnloadKeyboard__9EKeyboardFv" ;# ptr (0x802F38F4)
+	.4byte "UpdateKeyboard__9EKeyboardFv" ;# ptr (0x802F38F8)
+	.4byte "IsKeyboardPresent__9EKeyboardFv" ;# ptr (0x802F38FC)
+	.4byte "GetToggles__9EKeyboardFv" ;# ptr (0x802F3904)
+	.4byte "GetModifiers__9EKeyboardFv" ;# ptr (0x802F390C)
+	.4byte "ReadKeyboardEvent__9EKeyboardFP14EKeyboardEvent" ;# ptr (0x802F3914)
+	.4byte "SetLayout__9EKeyboardFi" ;# ptr (0x802F391C)
+	.4byte "GetKeyboardState__9EKeyboardFv" ;# ptr (0x802D0958)
+	.4byte "HoldKeyboard__9EKeyboardFv" ;# ptr (0x802D0960)
+	.4byte "ReleaseKeyboard__9EKeyboardFv" ;# ptr (0x802D0984)
+
 .global "__vt__9ENgcMovie"
 "__vt__9ENgcMovie":
-	.incbin "baserom.dol", 0x44EAB4, 0x24
+	# ROM: 0x44EAB4
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "Load__9ENgcMovieFP5EFileUiUiUi" ;# ptr (0x802B4164)
+	.4byte "Start__9ENgcMovieFii" ;# ptr (0x802B42CC)
+	.4byte "Stop__9ENgcMovieFv" ;# ptr (0x802B43B8)
+	.4byte "Reset__9ENgcMovieFv" ;# ptr (0x802B43F4)
+	.4byte "IsFinished__9ENgcMovieFv" ;# ptr (0x802B43F8)
+	.4byte "Update__6EMovieFv" ;# ptr (0x80295088)
+	.4byte "__dt__9ENgcMovieFv" ;# ptr (0x802B40E8)
+
 .global "__vt__6ENgcDL"
 "__vt__6ENgcDL":
-	.incbin "baserom.dol", 0x44EAD8, 0x10
+	# ROM: 0x44EAD8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__6ENgcDLFv" ;# ptr (0x802B3FC0)
+	.4byte 0x00000000
+
 .global "__vt__10ENgcShader"
 "__vt__10ENgcShader":
-	.incbin "baserom.dol", 0x44EAE8, 0x48
+	# ROM: 0x44EAE8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10ENgcShaderFv" ;# ptr (0x802CBE10)
+	.4byte "Select__10ENgcShaderFP3ERCUi" ;# ptr (0x802CBEBC)
+	.4byte "SelectForShadowMask__10ENgcShaderFP3ERC" ;# ptr (0x802CBF70)
+	.4byte "Create__10ENgcShaderFR10EShaderDef" ;# ptr (0x802CBFDC)
+	.4byte "SetSurfaceProperty__7EShaderFUi" ;# ptr (0x80295024)
+	.4byte "SetSortOffset__7EShaderFs" ;# ptr (0x80295034)
+	.4byte "ClearSurfaceProperty__7EShaderFUi" ;# ptr (0x8029503C)
+	.4byte "SetTexture__7EShaderFP8ETexturei" ;# ptr (0x8029504C)
+	.4byte "SetMultiTexture__7EShaderFP8ETexturei" ;# ptr (0x8029505C)
+	.4byte "Validate__7EShaderFv" ;# ptr (0x80299A1C)
+	.4byte "SetAlternateShader__7EShaderFP7EShader" ;# ptr (0x80295070)
+	.4byte "SetAlphaTestThreshold__7EShaderFfi" ;# ptr (0x80295074)
+	.4byte "UpdateMaterialCoefficients__7EShaderFv" ;# ptr (0x80295020)
+	.4byte "Update__7EShaderFf" ;# ptr (0x802997C4)
+	.4byte "Clone__7EShaderFv" ;# ptr (0x802994F0)
+	.4byte "ChangeMaterial__10ENgcShaderFR9EMaterial" ;# ptr (0x802CC028)
+
 .global "__vt__6ENgcRC"
 "__vt__6ENgcRC":
-	.incbin "baserom.dol", 0x44EB30, 0x1BC
+	# ROM: 0x44EB30
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__6ENgcRCFv" ;# ptr (0x802B6D30)
+	.4byte "Send__3ERCFv" ;# ptr (0x80295348)
+	.4byte "TriStrip__6ENgcRCFPC7EGEVerti" ;# ptr (0x802B6DD0)
+	.4byte "TriStrip__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb" ;# ptr (0x802B6E08)
+	.4byte "TriStripRef__6ENgcRCFiPCfPCfPCUcPCScPCUcPPsb" ;# ptr (0x802B7124)
+	.4byte "TriStrip__3ERCFiPCsPCsPCUcPCScPCUcPPsb" ;# ptr (0x8029572C)
+	.4byte "TriStripRef__3ERCFiPCsPCsPCUcPCScPCUcPPsb" ;# ptr (0x80295874)
+	.4byte "TriIndexed__3ERCFiPCUc" ;# ptr (0x80297E14)
+	.4byte "DrawBox__3ERCFRC5EVec3RC5EVec3" ;# ptr (0x80297EA8)
+	.4byte "Vertex__3ERCFiiPCfPCfPCUcPCScPCUc" ;# ptr (0x80297D48)
+	.4byte "TriFan__3ERCFPC7EGEVerti" ;# ptr (0x802958A8)
+	.4byte "TriList__3ERCFPC7EGEVerti" ;# ptr (0x802958AC)
+	.4byte "QuadList__3ERCFPC7EGEVerti" ;# ptr (0x802958B0)
+	.4byte "QuadList__6ENgcRCFiPCfPCfPCUcPCScPCPCsb" ;# ptr (0x802B9510)
+	.4byte "LineList__6ENgcRCFPC7EGEVerti" ;# ptr (0x802B97F4)
+	.4byte "LineStrip__3ERCFPC7EGEVerti" ;# ptr (0x80295970)
+	.4byte "PointList__3ERCFPC7EGEVerti" ;# ptr (0x80295A28)
+	.4byte "PointList__3ERCFiPCfPCfPCUcPCScPCUc" ;# ptr (0x80295A2C)
+	.4byte "SpriteList__3ERCFPC7EGEVerti" ;# ptr (0x80295B54)
+	.4byte "ParticleList__3ERCFiPC17EGEPackedParticle" ;# ptr (0x80295D44)
+	.4byte "ParticleListRot__3ERCFiPC17EGEPackedParticle" ;# ptr (0x80295F0C)
+	.4byte "LineStreakList__3ERCFiRC5EVec4RC5EVec4P13EGELineStreak" ;# ptr (0x80295E04)
+	.4byte "SpriteList__6ENgcRCFiPCfPCfPCUcPCScPCUc" ;# ptr (0x802B97CC)
+	.4byte "DisplayList__6ENgcRCFP3EDL" ;# ptr (0x802B8934)
+	.4byte "Viewport__6ENgcRCFP9EViewport" ;# ptr (0x802B8B48)
+	.4byte "ClipRect__6ENgcRCFRC8TRect<f>" ;# ptr (0x802B8B80)
+	.4byte "Scissor__6ENgcRCFP8TRect<f>" ;# ptr (0x802B8BD4)
+	.4byte "ModelMatrixList__6ENgcRCFPC5EMat4i" ;# ptr (0x802B8840)
+	.4byte "ModelMatrixIndex__6ENgcRCFii" ;# ptr (0x802B8850)
+	.4byte "ModelMatrices__6ENgcRCFPC5EMat4i" ;# ptr (0x802B888C)
+	.4byte "ModelMatrixId__3ERCFv" ;# ptr (0x80296660)
+	.4byte "ViewMatrix__6ENgcRCFPC5EMat4if" ;# ptr (0x802B8C0C)
+	.4byte "ProjectionMatrix__6ENgcRCFPC5EMat4" ;# ptr (0x802B8C44)
+	.4byte "WindowMatrix__6ENgcRCFPC5EMat4" ;# ptr (0x802B8C7C)
+	.4byte "EnvironmentMap__6ENgcRCFbbi" ;# ptr (0x802B8FA8)
+	.4byte "TextureMatrix__6ENgcRCFPC5EMat418ETCTransformSourcebbi" ;# ptr (0x802B9004)
+	.4byte "Texture__6ENgcRCFP8ETexturei" ;# ptr (0x802B89B8)
+	.4byte "EnableGeometryModes__6ENgcRCFUi" ;# ptr (0x802B89E4)
+	.4byte "DisableGeometryModes__6ENgcRCFUi" ;# ptr (0x802B8A1C)
+	.4byte "SetGeometryModes__6ENgcRCFUi" ;# ptr (0x802B8A58)
+	.4byte "EnableRasterModes__6ENgcRCFUii" ;# ptr (0x802B8A90)
+	.4byte "DisableRasterModes__6ENgcRCFUii" ;# ptr (0x802B8ACC)
+	.4byte "SetRasterModes__6ENgcRCFUii" ;# ptr (0x802B8B0C)
+	.4byte "SaveState__6ENgcRCFv" ;# ptr (0x802B8CB4)
+	.4byte "RestoreState__6ENgcRCFv" ;# ptr (0x802B8CE8)
+	.4byte "Lights__6ENgcRCFP7ELights" ;# ptr (0x802B8D1C)
+	.4byte "LightsRadiosity__3ERCFRC5EVec3RC5EVec3f" ;# ptr (0x802990B4)
+	.4byte "Material__6ENgcRCFP9EMaterial" ;# ptr (0x802B8D84)
+	.4byte "VertexMorphWeightsList__6ENgcRCFPf" ;# ptr (0x802B984C)
+	.4byte "Callback__3ERCFPFUiUsUc_vUiUsUc" ;# ptr (0x80297008)
+	.4byte "Rect__6ENgcRCFRC5EVec2RC5EVec2RC5EVec2RC5EVec2RC5EVec4f" ;# ptr (0x802B8DC8)
+	.4byte "Rect__3ERCFRC5EVec2RC5EVec2PC5EVec4RC5EVec2RC5EVec2f" ;# ptr (0x802973B4)
+	.4byte "RectList__6ENgcRCFiPfRC5EVec4f" ;# ptr (0x802B8E60)
+	.4byte "RectListRot__6ENgcRCFiPfRC5EVec4f" ;# ptr (0x802B8EC8)
+	.4byte "DirectRect__6ENgcRCFRC5EVec2RC5EVec2RC5EVec4f" ;# ptr (0x802B8F30)
+	.4byte "MipMapSetup__3ERCFPC7EGEVertbb" ;# ptr (0x80296F70)
+	.4byte "SetMipMap__6ENgcRCFfi" ;# ptr (0x802B89E0)
+	.4byte "RecalcMatrices__6ENgcRCFii" ;# ptr (0x802B909C)
+	.4byte "ZTest__6ENgcRCFbiii" ;# ptr (0x802B90DC)
+	.4byte "AlphaTest__6ENgcRCFbifi" ;# ptr (0x802B9360)
+	.4byte "Stencil__6ENgcRCFiii" ;# ptr (0x802B93DC)
+	.4byte "RenderSurface__6ENgcRCFP14ERenderSurfacei" ;# ptr (0x802B94D4)
+	.4byte "ProcessFrameEffects__3ERCFiPv" ;# ptr (0x802990B8)
+	.4byte "Debug__6ENgcRCFUiUi" ;# ptr (0x802B982C)
+	.4byte "SaveImageData__3ERCFP14ERenderSurface" ;# ptr (0x80297CC4)
+	.4byte "SetCombineMode__6ENgcRCFii" ;# ptr (0x802B948C)
+	.4byte "SetColorModulation__3ERCFi5EVec4" ;# ptr (0x80297ABC)
+	.4byte "EnableColorModulation__3ERCFb" ;# ptr (0x80297AC0)
+	.4byte "SetBlendMode__6ENgcRCFiiiifi" ;# ptr (0x802B941C)
+	.4byte "SetBlendModePass3__3ERCFiiiii" ;# ptr (0x80297B94)
+	.4byte "SetTextureAlphaValue__3ERCFUcUcUc" ;# ptr (0x80297B98)
+	.4byte "Noop__3ERCFv" ;# ptr (0x80298988)
+	.4byte "ZClear__6ENgcRCFfffff" ;# ptr (0x802B9120)
+	.4byte "StencilClear__3ERCFffffi" ;# ptr (0x80298C10)
+	.4byte "SetDebugMarker__3ERCFi" ;# ptr (0x80298DDC)
+	.4byte "MovieFrame__3ERCFP6EMovie" ;# ptr (0x80298DE0)
+	.4byte "SetAlpha__6ENgcRCFf" ;# ptr (0x802B94C8)
+	.4byte "SetFogValues__6ENgcRCFfRC5EVec4" ;# ptr (0x802B8DBC)
+	.4byte "CopyScreenToTexture__3ERCFP8ETextureRC5EVec4RC5EVec2" ;# ptr (0x80298EF0)
+	.4byte "SetAlphaPlane__3ERCFf5EVec4ff" ;# ptr (0x80298EE8)
+	.4byte "AllocVertexData__3ERCFUl" ;# ptr (0x802990BC)
+	.4byte "ParticleListInfo__6ENgcRCFP19EGEParticleListInfo" ;# ptr (0x802B9830)
+	.4byte "ParticleListBegin__6ENgcRCFUiUi" ;# ptr (0x802B9834)
+	.4byte "ParticleListEnd__6ENgcRCFUi" ;# ptr (0x802B9840)
+	.4byte "SetVertexMorphingOnOrOff__6ENgcRCFb" ;# ptr (0x802B8824)
+	.4byte "Init__6ENgcRCF6RCMode" ;# ptr (0x802B6D88)
+	.4byte "Terminate__3ERCFv" ;# ptr (0x802960F8)
+	.4byte "NewEntry__3ERCFi" ;# ptr (0x80295430)
+	.4byte "BeginCommand__3ERCFii" ;# ptr (0x802952A4)
+	.4byte "EndCommand__6ENgcRCFv" ;# ptr (0x802B6D8C)
+	.4byte "GeometrySetup__6ENgcRCFv" ;# ptr (0x802B90D8)
+	.4byte "FlushQueuedMatrices__3ERCFv" ;# ptr (0x80296678)
+	.4byte "TriStrip__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc" ;# ptr (0x802B7304)
+	.4byte "TriStripRef__6ENgcRCFiiPCUsPCfPCfPCUcPCScPCUc" ;# ptr (0x802B7600)
+	.4byte "TriStrip__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs" ;# ptr (0x802B79F4)
+	.4byte "TriStripRef__6ENgcRCFiiPCUsPCsPCsPCUcPCScUcPCUcPPs" ;# ptr (0x802B7CF8)
+	.4byte "TriStripDL__6ENgcRCFPCUciiPCfPCfPCUcPCSc" ;# ptr (0x802B7F4C)
+	.4byte "TriStripDLRef__6ENgcRCFPCUciiPCfPCfPCUcPCScb" ;# ptr (0x802B817C)
+	.4byte "TriStripDL__6ENgcRCFPCUciiPCsPCsPCUcPCSc" ;# ptr (0x802B82AC)
+	.4byte "TriStripDLRef__6ENgcRCFPCUciiPCsPCsPCUcPCScbb" ;# ptr (0x802B8424)
+	.4byte "TriList__6ENgcRCFiPCsPCsPCUcPCScPCUcb" ;# ptr (0x802B8584)
+	.4byte "TriList__6ENgcRCFiPCfPCfPCUcPCScPCUcb" ;# ptr (0x802B87A0)
+	.4byte "ScreenTriList__6ENgcRCFiPCfPCfPCUc" ;# ptr (0x802B87A4)
+	.4byte "TextureCacheInvalidate__6ENgcRCFv" ;# ptr (0x802B7EF0)
+	.4byte "ReadMetrics__6ENgcRCFv" ;# ptr (0x802B87A8)
+	.4byte "Shader__6ENgcRCFP10ENgcShaderUi" ;# ptr (0x802B8804)
+	.4byte "ScrambleRect__6ENgcRCFRC5EVec2RC5EVec2f" ;# ptr (0x802B8834)
+	.4byte "VertexMorphAndSyncCache__6ENgcRCFiPCsPPs" ;# ptr (0x802B9858)
+	.4byte "VertexMorphAndSyncCacheEnd__6ENgcRCFv" ;# ptr (0x802B9968)
+
 .global "__vt__17ENgcRenderSurface"
 "__vt__17ENgcRenderSurface":
-	.incbin "baserom.dol", 0x44ECEC, 0x3C
+	# ROM: 0x44ECEC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__17ENgcRenderSurfaceFv" ;# ptr (0x802CA798)
+	.4byte "Create__17ENgcRenderSurfaceFRC17ERenderSurfaceDef" ;# ptr (0x802CA814)
+	.4byte "GetOutputRect__17ENgcRenderSurfaceFR8TRect<f>" ;# ptr (0x802CA8CC)
+	.4byte "SetBackgroundColor__17ENgcRenderSurfaceFRC5EVec3" ;# ptr (0x802CA8D0)
+	.4byte "GetXSize__14ERenderSurfaceFv" ;# ptr (0x80299288)
+	.4byte "GetYSize__14ERenderSurfaceFv" ;# ptr (0x80299290)
+	.4byte "SetFlags__14ERenderSurfaceFUi" ;# ptr (0x80299298)
+	.4byte "GetFlags__14ERenderSurfaceFv" ;# ptr (0x802A562C)
+	.4byte "GetImageData__17ENgcRenderSurfaceFPv" ;# ptr (0x802CA8EC)
+	.4byte "CopyToTexture__17ENgcRenderSurfaceFP8ETexture" ;# ptr (0x802CA908)
+	.4byte "GetTexture__17ENgcRenderSurfaceFv" ;# ptr (0x802CA80C)
+	.4byte "Select__17ENgcRenderSurfaceFv" ;# ptr (0x802CAC10)
+	.4byte "Deselect__17ENgcRenderSurfaceFv" ;# ptr (0x802CAC1C)
+
 .global "__vt__12ENgcGraphics"
 "__vt__12ENgcGraphics":
-	.incbin "baserom.dol", 0x44ED28, 0x120
+	# ROM: 0x44ED28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12ENgcGraphicsFv" ;# ptr (0x802B35D8)
+	.4byte "ManagedStartup__9EGraphicsFv" ;# ptr (0x80285870)
+	.4byte "ManagedShutdown__9EGraphicsFv" ;# ptr (0x802931A0)
+	.4byte "Init__12ENgcGraphicsFv" ;# ptr (0x802B3638)
+	.4byte "Shutdown__9EGraphicsFv" ;# ptr (0x80285810)
+	.4byte "BeginFrame__9EGraphicsFv" ;# ptr (0x802932C4)
+	.4byte "EndFrame__12ENgcGraphicsFv" ;# ptr (0x802B3C2C)
+	.4byte "Flush__9EGraphicsFv" ;# ptr (0x80293388)
+	.4byte "SetBackgroundColor__12ENgcGraphicsFRC5EVec3ib" ;# ptr (0x802B38F8)
+	.4byte "GetBackgroundColor__9EGraphicsFR5EVec3Ri" ;# ptr (0x80293584)
+	.4byte "GetShadowMapTexture__12ENgcGraphicsFv" ;# ptr (0x802D0950)
+	.4byte "GetShadowMapRenderSurface__9EGraphicsFv" ;# ptr (0x8002FE48)
+	.4byte "FrameBufferClearFlag__9EGraphicsFv" ;# ptr (0x801F9BA0)
+	.4byte "FrameBufferClearRequestFlag__9EGraphicsFv" ;# ptr (0x801F9BA8)
+	.4byte "GetOutputRect__9EGraphicsFR8TRect<f>i" ;# ptr (0x802933FC)
+	.4byte "GetScissorRect__9EGraphicsFP8TRect<f>R8TRect<f>R8TRect<f>" ;# ptr (0x8029353C)
+	.4byte "DrawCensorRects__12ENgcGraphicsFP3ERC" ;# ptr (0x802B3F10)
+	.4byte "Open__9EGraphicsF6RCMode" ;# ptr (0x80293754)
+	.4byte "Close__9EGraphicsFP3ERC" ;# ptr (0x802937D0)
+	.4byte "GetFrameBufferTexture__9EGraphicsFi" ;# ptr (0x80285824)
+	.4byte "GetDepthBufferTexture__9EGraphicsFv" ;# ptr (0x8028582C)
+	.4byte "Execute__9EGraphicsFP3EDLb" ;# ptr (0x802938A0)
+	.4byte "Destroy__9EGraphicsFP3EDL" ;# ptr (0x802938B4)
+	.4byte "NeedFlushToDestroy__9EGraphicsFP3EDL" ;# ptr (0x8028581C)
+	.4byte "CreateTexture__9EGraphicsFRC11ETextureDef" ;# ptr (0x802938D8)
+	.4byte "Destroy__9EGraphicsFP8ETexture" ;# ptr (0x80293988)
+	.4byte "NeedFlushToDestroy__9EGraphicsFP8ETexture" ;# ptr (0x8002FE2C)
+	.4byte "CreateRenderSurface__9EGraphicsFRC17ERenderSurfaceDef" ;# ptr (0x80293B38)
+	.4byte "Destroy__12ENgcGraphicsFP14ERenderSurface" ;# ptr (0x802B3958)
+	.4byte "NeedFlushToDestroy__9EGraphicsFP14ERenderSurface" ;# ptr (0x80285844)
+	.4byte "CreateMovie__9EGraphicsFv" ;# ptr (0x80293C58)
+	.4byte "Destroy__9EGraphicsFP6EMovie" ;# ptr (0x80293C68)
+	.4byte "NeedFlushToDestroy__9EGraphicsFP6EMovie" ;# ptr (0x8028583C)
+	.4byte "GetLargestAvailableTextureMemoryBlock__9EGraphicsFv" ;# ptr (0x8028584C)
+	.4byte "CreateShader__9EGraphicsFR10EShaderDef" ;# ptr (0x80293A48)
+	.4byte "Destroy__9EGraphicsFP7EShader" ;# ptr (0x80293AEC)
+	.4byte "NeedFlushToDestroy__9EGraphicsFP7EShader" ;# ptr (0x80285834)
+	.4byte "AllocVertexData__9EGraphicsFUl" ;# ptr (0x80293C78)
+	.4byte "FreeVertexData__9EGraphicsFPv" ;# ptr (0x80293CC8)
+	.4byte "GetFarZVal__9EGraphicsFv" ;# ptr (0x80285814)
+	.4byte "GetNearZVal__9EGraphicsFv" ;# ptr (0x80285808)
+	.4byte "GetScreenAspect__9EGraphicsFv" ;# ptr (0x80293524)
+	.4byte "SetScreenAspect__9EGraphicsFf" ;# ptr (0x8029352C)
+	.4byte "GetActualScreenXSize__9EGraphicsFv" ;# ptr (0x80174048)
+	.4byte "GetActualScreenYSize__9EGraphicsFv" ;# ptr (0x80174050)
+	.4byte "GetMaxTextureXSize__9EGraphicsFv" ;# ptr (0x80285854)
+	.4byte "GetMaxTextureYSize__9EGraphicsFv" ;# ptr (0x8028585C)
+	.4byte "GetScreenShot__12ENgcGraphicsFPCc" ;# ptr (0x802B3954)
+	.4byte "GrabFrameBufferChunk32__9EGraphicsFiiiiPUiPi" ;# ptr (0x80285864)
+	.4byte "DeselectTextures__9EGraphicsFv" ;# ptr (0x80293228)
+	.4byte "DiscardAllVram__9EGraphicsFv" ;# ptr (0x8002FE44)
+	.4byte "ClearStencilBuffer__9EGraphicsFv" ;# ptr (0x80285868)
+	.4byte "DoSwapBuffer__9EGraphicsFi" ;# ptr (0x80293380)
+	.4byte "GetFrameBufferTextureCoordinate__9EGraphicsF5EVec2" ;# ptr (0x802942CC)
+	.4byte "ProcessFrameEffects__12ENgcGraphicsFv" ;# ptr (0x802B3FBC)
+	.4byte "DoSetupFrameBuffer__9EGraphicsFi" ;# ptr (0x80293384)
+	.4byte "SelectFrameBuffer__9EGraphicsFi" ;# ptr (0x80285878)
+	.4byte "AllocDL__12ENgcGraphicsF6RCMode" ;# ptr (0x802B39A0)
+	.4byte "FreeDL__12ENgcGraphicsFP3EDL6RCMode" ;# ptr (0x802B39F0)
+	.4byte "AllocRC__12ENgcGraphicsF6RCMode" ;# ptr (0x802B3A14)
+	.4byte "FreeRC__12ENgcGraphicsFP3ERC6RCMode" ;# ptr (0x802B3A98)
+	.4byte "AllocTexture__12ENgcGraphicsFv" ;# ptr (0x802B3AC4)
+	.4byte "FreeTexture__12ENgcGraphicsFP8ETexture" ;# ptr (0x802B3B00)
+	.4byte "AllocShader__12ENgcGraphicsFv" ;# ptr (0x802B3B24)
+	.4byte "FreeShader__12ENgcGraphicsFP7EShader" ;# ptr (0x802B3B60)
+	.4byte "AllocRenderSurface__12ENgcGraphicsFv" ;# ptr (0x802B3B84)
+	.4byte "FreeRenderSurface__12ENgcGraphicsFP14ERenderSurface" ;# ptr (0x802B3BB4)
+	.4byte "AllocMovie__12ENgcGraphicsFv" ;# ptr (0x802B3BD8)
+	.4byte "FreeMovie__12ENgcGraphicsFP6EMovie" ;# ptr (0x802B3C08)
+	.4byte "SetUpNormalMapMatrix__9EGraphicsFv" ;# ptr (0x80293DEC)
+
 .global "__vt__14ENgcController"
 "__vt__14ENgcController":
-	.incbin "baserom.dol", 0x44EE48, 0x60
+	# ROM: 0x44EE48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14ENgcControllerFv" ;# ptr (0x802D087C)
+	.4byte "GetStatus__11EControllerFv" ;# ptr (0x801C89AC)
+	.4byte "IsStable__11EControllerFv" ;# ptr (0x802AE3C8)
+	.4byte "HasVibration__14ENgcControllerCFv" ;# ptr (0x802B1F78)
+	.4byte "VibrateMotorOne__14ENgcControllerFf" ;# ptr (0x802B1F80)
+	.4byte "VibrateMotorOne__11EControllerFff" ;# ptr (0x802F1A50)
+	.4byte "VibrateMotorTwo__14ENgcControllerFf" ;# ptr (0x802B2048)
+	.4byte "VibrateMotorTwo__11EControllerFff" ;# ptr (0x802F1AE4)
+	.4byte "VibrateAll__11EControllerFff" ;# ptr (0x802F1B10)
+	.4byte "VibrateAll__11EControllerFffff" ;# ptr (0x802F1B90)
+	.4byte "StopMotorOne__14ENgcControllerFv" ;# ptr (0x802B2110)
+	.4byte "StopMotorOne__11EControllerFf" ;# ptr (0x802F1C38)
+	.4byte "StopMotorTwo__14ENgcControllerFv" ;# ptr (0x802B21D8)
+	.4byte "StopMotorTwo__11EControllerFf" ;# ptr (0x802F1C58)
+	.4byte "StopVibration__11EControllerFv" ;# ptr (0x802F1C64)
+	.4byte "UpdateVibration__11EControllerFv" ;# ptr (0x802F1CD4)
+	.4byte "IsMotorOneActive__14ENgcControllerCFv" ;# ptr (0x802B22A0)
+	.4byte "IsMotorTwoActive__14ENgcControllerCFv" ;# ptr (0x802B22A4)
+	.4byte "PauseMotors__11EControllerFv" ;# ptr (0x802F1D7C)
+	.4byte "ResumeMotors__11EControllerFv" ;# ptr (0x802F1DAC)
+	.4byte "Flush__11EControllerFv" ;# ptr (0x802F1988)
+	.4byte "Update__11EControllerFv" ;# ptr (0x802F166C)
+
 .global "__vt__12ENgcClockMan"
 "__vt__12ENgcClockMan":
-	.incbin "baserom.dol", 0x44EEA8, 0x20
+	# ROM: 0x44EEA8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12ENgcClockManFv" ;# ptr (0x802B1588)
+	.4byte "Init__12ENgcClockManFv" ;# ptr (0x802B15C8)
+	.4byte "Update__12ENgcClockManFv" ;# ptr (0x802B15CC)
+	.4byte "Start__12ENgcClockManFP6EClock" ;# ptr (0x802B15D0)
+	.4byte "GetSec__12ENgcClockManFP6EClock" ;# ptr (0x802B160C)
+	.4byte "GetSecDouble__12ENgcClockManFP6EClock" ;# ptr (0x802B169C)
+
 .global "__vt__12ENgcRenderer"
 "__vt__12ENgcRenderer":
-	.incbin "baserom.dol", 0x44EEC8, 0x20
+	# ROM: 0x44EEC8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__12ENgcRendererFv" ;# ptr (0x802B9D08)
+	.4byte "Main__7EThreadFv" ;# ptr (0x802798C8)
+	.4byte "GetCurrentTexture__12ENgcRendererFi" ;# ptr (0x802B9D78)
+	.4byte "GetNumberOfFullScenePasses__12ENgcRendererFv" ;# ptr (0x802BB198)
+	.4byte "BeginFullScenePass__12ENgcRendererFi" ;# ptr (0x802BB1A0)
+	.4byte "EndFullScenePass__12ENgcRendererFi" ;# ptr (0x802BB1A8)
+
 .global "__vt__15ENgcTextureBase"
 "__vt__15ENgcTextureBase":
-	.incbin "baserom.dol", 0x44EEE8, 0x60
+	# ROM: 0x44EEE8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__15ENgcTextureBaseFv" ;# ptr (0x802CDC38)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__15ENgcTextureBaseFv" ;# ptr (0x802CDDA8)
+	.4byte "Unlock__15ENgcTextureBaseFv" ;# ptr (0x802CDDBC)
+	.4byte "Invalidate__15ENgcTextureBaseFv" ;# ptr (0x802CDDCC)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__15ENgcTextureBaseF18ETextureUpdateType" ;# ptr (0x802CE0B4)
+	.4byte "UpdateMipLevel__15ENgcTextureBaseFiRiRi" ;# ptr (0x802CE108)
+	.4byte "UpdatePalette__15ENgcTextureBaseFv" ;# ptr (0x802CE1F4)
+	.4byte "UpdatePaletteDeswizzled__15ENgcTextureBaseFv" ;# ptr (0x802CDC14)
+	.4byte "ClearTileFlags__15ENgcTextureBaseFv" ;# ptr (0x802CE890)
+	.4byte "ClearSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CE764)
+	.4byte "SetSwizzleFlag__15ENgcTextureBaseFv" ;# ptr (0x802CDC24)
+	.4byte "UpdateEnd__15ENgcTextureBaseFv" ;# ptr (0x802CE1FC)
+	.4byte "Create__15ENgcTextureBaseFRC11ETextureDef" ;# ptr (0x802CDDD0)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "GetTEVStageCount__15ENgcTextureBaseFv" ;# ptr (0x802CE754)
+	.4byte "GetTEXCount__15ENgcTextureBaseFv" ;# ptr (0x802CE75C)
+	.4byte "Select__15ENgcTextureBaseFii" ;# ptr (0x802CDEE0)
+	.4byte 0x00000000
+	.4byte "UnswizzleImage__15ENgcTextureBaseFPUciiPUc" ;# ptr (0x802CDC34)
+
 .global "__vt__11ENgcTexture"
 "__vt__11ENgcTexture":
-	.incbin "baserom.dol", 0x44EF48, 0x50
+	# ROM: 0x44EF48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__11ENgcTextureFv" ;# ptr (0x802CD744)
+	.4byte "Select__8ETextureFi" ;# ptr (0x802A5608)
+	.4byte "Lock__11ENgcTextureFv" ;# ptr (0x802CD7E4)
+	.4byte "Unlock__11ENgcTextureFv" ;# ptr (0x802CD7F8)
+	.4byte "Invalidate__11ENgcTextureFv" ;# ptr (0x802CD80C)
+	.4byte "DisableMipmapping__8ETextureFv" ;# ptr (0x802A5618)
+	.4byte "UpdateBegin__11ENgcTextureF18ETextureUpdateType" ;# ptr (0x802CD820)
+	.4byte "UpdateMipLevel__11ENgcTextureFiRiRi" ;# ptr (0x802CD834)
+	.4byte "UpdatePalette__11ENgcTextureFv" ;# ptr (0x802CD848)
+	.4byte "UpdatePaletteDeswizzled__11ENgcTextureFv" ;# ptr (0x802CD85C)
+	.4byte "ClearTileFlags__11ENgcTextureFv" ;# ptr (0x802CDB4C)
+	.4byte "ClearSwizzleFlag__11ENgcTextureFv" ;# ptr (0x802CDB6C)
+	.4byte "SetSwizzleFlag__11ENgcTextureFv" ;# ptr (0x802CDB8C)
+	.4byte "UpdateEnd__11ENgcTextureFv" ;# ptr (0x802CD870)
+	.4byte "Create__11ENgcTextureFRC11ETextureDef" ;# ptr (0x802CD884)
+	.4byte "Test1__8ETextureFiiii" ;# ptr (0x802A561C)
+	.4byte "Validate__8ETextureFv" ;# ptr (0x802A050C)
+	.4byte "Select__11ENgcTextureFii" ;# ptr (0x802CDAFC)
+
 .global "__vt__22ENgcAudioSampleManager"
 "__vt__22ENgcAudioSampleManager":
-	.incbin "baserom.dol", 0x44EF98, 0x40
+	# ROM: 0x44EF98
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__22ENgcAudioSampleManagerFv" ;# ptr (0x802B11B8)
+	.4byte "Init__22ENgcAudioSampleManagerFPCc" ;# ptr (0x802B1214)
+	.4byte "Shutdown__22ENgcAudioSampleManagerFv" ;# ptr (0x802B12A0)
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__19EAudioSampleManagerFv" ;# ptr (0x802A6760)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__22ENgcAudioSampleManagerFP9EResource" ;# ptr (0x802B12E8)
+	.4byte "AllocateAndLoadResource__22ENgcAudioSampleManagerFP5EFileUiUi" ;# ptr (0x802B130C)
+	.4byte "EstimateSampleLength__19EAudioSampleManagerFUi" ;# ptr (0x80107780)
+	.4byte "MakeSpace__19EAudioSampleManagerFv" ;# ptr (0x802A6764)
+	.4byte 0x00000000
+
 .global "__vt__13ENgcScheduler"
 "__vt__13ENgcScheduler":
-	.incbin "baserom.dol", 0x44EFD8, 0x38
+	# ROM: 0x44EFD8
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__13ENgcSchedulerFv" ;# ptr (0x802CB9D8)
+	.4byte "Main__13ENgcSchedulerFv" ;# ptr (0x802CBCD4)
+	.4byte "Init__13ENgcSchedulerFv" ;# ptr (0x802CBA64)
+	.4byte "QueueSetupFrameBuffer__13ENgcSchedulerFi" ;# ptr (0x802CBAE4)
+	.4byte "QueueDisplayList__13ENgcSchedulerFP3EDLb" ;# ptr (0x802CBB8C)
+	.4byte "QueueSwapBuffer__13ENgcSchedulerFii" ;# ptr (0x802CBC98)
+	.4byte "QueueCompletionEvent__13ENgcSchedulerFR6EEvent" ;# ptr (0x802CBC60)
+	.4byte "Flush__13ENgcSchedulerFv" ;# ptr (0x802CBCC0)
+	.4byte "TextureLoadsComplete__13ENgcSchedulerFP13ESchedCommand" ;# ptr (0x802CBCC4)
+	.4byte "RenderingComplete__13ENgcSchedulerFP13ESchedCommand" ;# ptr (0x802CBCC8)
+	.4byte "RendFrameComplete__13ENgcSchedulerFP13ESchedCommand" ;# ptr (0x802D094C)
+	.4byte "GetLastRetraceCount__13ENgcSchedulerFv" ;# ptr (0x802CBCCC)
+
 .global "__vt__10EScheduler"
 "__vt__10EScheduler":
-	.incbin "baserom.dol", 0x44F010, 0x38
+	# ROM: 0x44F010
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10ESchedulerFv" ;# ptr (0x802CBD7C)
+	.4byte "Main__7EThreadFv" ;# ptr (0x802798C8)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__12ERSampledata"
 "__vt__12ERSampledata":
-	.incbin "baserom.dol", 0x44F048, 0x48
+	# ROM: 0x44F048
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SafeDelete__9EResourceFv" ;# ptr (0x802AC730)
+	.4byte "GetTypeInfo__9EResourceCFv" ;# ptr (0x802AC750)
+	.4byte "GetTypeName__9EResourceCFv" ;# ptr (0x802AC75C)
+	.4byte "GetTypeKey__9EResourceCFv" ;# ptr (0x802AC76C)
+	.4byte "GetTypeVersion__9EResourceCFv" ;# ptr (0x802AC77C)
+	.4byte "__dt__12ERSampledataFv" ;# ptr (0x802B6B50)
+	.4byte "Read__9EResourceFR7EStream" ;# ptr (0x802DA19C)
+	.4byte "Write__9EResourceFR7EStream" ;# ptr (0x802DA150)
+	.4byte "Load__9EResourceFR5EFile" ;# ptr (0x802DA1FC)
+	.4byte "IsSafeToDelete__9EResourceFv" ;# ptr (0x8008888C)
+	.4byte "Init__9EResourceFv" ;# ptr (0x802AC728)
+	.4byte "Refresh__9EResourceFP5EFile" ;# ptr (0x802AC72C)
+	.4byte "DelRefSubResources__9EResourceFv" ;# ptr (0x80088894)
+	.4byte "AddRefSubResources__9EResourceFv" ;# ptr (0x80088898)
+	.4byte "TryIncrementSubResources__9EResourceFv" ;# ptr (0x8008889C)
+	.4byte "DetachClone__9EResourceFv" ;# ptr (0x800888A4)
+
 .global "__vt__19EAudioSampleManager"
 "__vt__19EAudioSampleManager":
-	.incbin "baserom.dol", 0x44F090, 0x40
+	# ROM: 0x44F090
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__19EAudioSampleManagerFv" ;# ptr (0x802B1160)
+	.4byte "Init__19EAudioSampleManagerFPCc" ;# ptr (0x802A675C)
+	.4byte 0x00000000
+	.4byte "AddRefAsync__16EResourceManagerFUi" ;# ptr (0x802A87BC)
+	.4byte "AddRefAsync__16EResourceManagerFPCc" ;# ptr (0x802A8770)
+	.4byte "GetArchiveFile__16EResourceManagerFv" ;# ptr (0x802A7950)
+	.4byte "GetHeap__19EAudioSampleManagerFv" ;# ptr (0x802A6760)
+	.4byte "GetAllocationFlags__16EResourceManagerCFv" ;# ptr (0x8009B618)
+	.4byte "CanCache__16EResourceManagerFv" ;# ptr (0x8009B630)
+	.4byte "CanCache__19EAudioSampleManagerFP9EResource" ;# ptr (0x802D0944)
+	.4byte 0x00000000
+	.4byte "EstimateSampleLength__19EAudioSampleManagerFUi" ;# ptr (0x80107780)
+	.4byte "MakeSpace__19EAudioSampleManagerFv" ;# ptr (0x802A6764)
+	.4byte 0x00000000
+
 .global "__vt__9ENgcAudio"
 "__vt__9ENgcAudio":
-	.incbin "baserom.dol", 0x44F0D0, 0x70
+	# ROM: 0x44F0D0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9ENgcAudioFv" ;# ptr (0x802AFCF4)
+	.4byte "InitAudio__9ENgcAudioFv" ;# ptr (0x802AFDDC)
+	.4byte "Shutdown__9ENgcAudioFv" ;# ptr (0x802AFFC4)
+	.4byte "Update__9ENgcAudioFv" ;# ptr (0x802B0458)
+	.4byte "Flush__9ENgcAudioFb" ;# ptr (0x802D0938)
+	.4byte "AddEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi" ;# ptr (0x802D093C)
+	.4byte "RemoveEvent__9ENgcAudioF8EA_EVENTR9EMsgQueueUi" ;# ptr (0x802D0940)
+	.4byte "PlayMusic__9ENgcAudioFRC7EPMDesc" ;# ptr (0x802B0030)
+	.4byte "StopMusic__9ENgcAudioFv" ;# ptr (0x802B06D8)
+	.4byte "PauseMusic__9ENgcAudioFv" ;# ptr (0x802B08C0)
+	.4byte "PauseFX__9ENgcAudioFv" ;# ptr (0x802B07AC)
+	.4byte "ResumeFX__9ENgcAudioFv" ;# ptr (0x802B082C)
+	.4byte "ResumeMusic__9ENgcAudioFv" ;# ptr (0x802B0954)
+	.4byte "SetMusicVolume__9ENgcAudioFf" ;# ptr (0x802B09E4)
+	.4byte "GetMusicVolume__9ENgcAudioFv" ;# ptr (0x802B0AE0)
+	.4byte "SetMusicPan__9ENgcAudioFf" ;# ptr (0x802B0AE8)
+	.4byte "GetMusicPan__9ENgcAudioFv" ;# ptr (0x802B0BC8)
+	.4byte "IsPlayingMusic__9ENgcAudioFv" ;# ptr (0x802B0BD0)
+	.4byte "AudioAllocVoice__9ENgcAudioFv" ;# ptr (0x802B0C8C)
+	.4byte "FreeVoice__9ENgcAudioFP6EVoice" ;# ptr (0x802B0CE0)
+	.4byte "AudioBindVoice__9ENgcAudioFP6EVoiceUi" ;# ptr (0x802B0D20)
+	.4byte "UnbindVoice__9ENgcAudioFP6EVoice" ;# ptr (0x802B0EA8)
+	.4byte "GetVoiceState__9ENgcAudioFP6EVoiceR10EVoiceDesc" ;# ptr (0x802B0F7C)
+	.4byte "SetVoiceState__9ENgcAudioFP6EVoiceRC10EVoiceDesc" ;# ptr (0x802B1020)
+	.4byte "GetIndexFromVoice__9ENgcAudioFP6EVoice" ;# ptr (0x802B0448)
+	.4byte "GetVoiceFromIndex__9ENgcAudioFUc" ;# ptr (0x802B0450)
+
 .global "__vt__6EAudio"
 "__vt__6EAudio":
-	.incbin "baserom.dol", 0x44F140, 0x70
+	# ROM: 0x44F140
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__6EAudioFv" ;# ptr (0x802AFCB4)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "PauseFX__6EAudioFv" ;# ptr (0x802457F4)
+	.4byte "ResumeFX__6EAudioFv" ;# ptr (0x802457F0)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__14EWiiMemoryCard"
 "__vt__14EWiiMemoryCard":
-	.incbin "baserom.dol", 0x44F1B0, 0x78
+	# ROM: 0x44F1B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14EWiiMemoryCardFv" ;# ptr (0x802AE4D0)
+	.4byte "InitMemoryCard__14EWiiMemoryCardFv" ;# ptr (0x802AE510)
+	.4byte "UnInitMemoryCard__14EWiiMemoryCardFv" ;# ptr (0x802AE558)
+	.4byte "OpenForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x802AE9C0)
+	.4byte "CloseForIO__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x802AE9D4)
+	.4byte "GetFileRefCount__11EMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x80240AEC)
+	.4byte "LoadDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPv" ;# ptr (0x802AE560)
+	.4byte "LoadDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPv" ;# ptr (0x802AE9A8)
+	.4byte "SaveDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiPCv" ;# ptr (0x802AEE30)
+	.4byte "SaveDataChunkS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUiUiPCv" ;# ptr (0x802AE9E8)
+	.4byte "DeleteDataS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x802AF4E8)
+	.4byte "CreateFileS__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tUi" ;# ptr (0x802AEE48)
+	.4byte "FormatCardS__14EWiiMemoryCardF14MemoryDevice_t" ;# ptr (0x802AF718)
+	.4byte "UnFormatCardS__14EWiiMemoryCardF14MemoryDevice_t" ;# ptr (0x802AF720)
+	.4byte "SetMemCardCopyProtection__11EMemoryCardFRC18MemoryDevicePort_t" ;# ptr (0x802AFCA0)
+	.4byte "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_tUiRb" ;# ptr (0x802AF728)
+	.4byte "IsSpaceAvailable__14EWiiMemoryCardF14MemoryDevice_t12EMC_SaveTypeRb" ;# ptr (0x802AFA64)
+	.4byte "PollCards__11EMemoryCardFb" ;# ptr (0x802AFCA4)
+	.4byte "IsPolledCardAvailable__11EMemoryCardFRC18MemoryDevicePort_t" ;# ptr (0x802AFCAC)
+	.4byte "IsCardAvailable__14EWiiMemoryCardF14MemoryDevice_t" ;# ptr (0x802AFA74)
+	.4byte "IsWrongDevice__11EMemoryCardF14MemoryDevice_t" ;# ptr (0x80240AF4)
+	.4byte "IsCardFormated__14EWiiMemoryCardF14MemoryDevice_tRb" ;# ptr (0x802AFA84)
+	.4byte "SetupSaveTypes__14EWiiMemoryCardF12EMC_SaveTypeUi" ;# ptr (0x802AFAA4)
+	.4byte "SetGameCode__14EWiiMemoryCardFPCc" ;# ptr (0x802AFAA8)
+	.4byte "DoesFileExist__14EWiiMemoryCardFPCcRC18MemoryDevicePort_tRb" ;# ptr (0x802AFAAC)
+	.4byte "ValidatePort__14EWiiMemoryCardFRC18MemoryDevicePort_t" ;# ptr (0x802AFB44)
+	.4byte "ValidateDevice__14EWiiMemoryCardF14MemoryDevice_t" ;# ptr (0x802AFBB8)
+	.4byte "GetSectorSize__14EWiiMemoryCardFUiRUi" ;# ptr (0x802AFB34)
+
 .global "__vt__11EMemoryCard"
 "__vt__11EMemoryCard":
-	.incbin "baserom.dol", 0x44F228, 0x78
+	# ROM: 0x44F228
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__11EMemoryCardFv" ;# ptr (0x802AFC60)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "OpenForIO__11EMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x8012E668)
+	.4byte "CloseForIO__11EMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x8012E658)
+	.4byte "GetFileRefCount__11EMemoryCardFPCcRC18MemoryDevicePort_t" ;# ptr (0x80240AEC)
+	.4byte "LoadDataChunkS__11EMemoryCardFPCcRC18MemoryDevicePort_tUiUiPv" ;# ptr (0x8012E660)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SaveDataChunkS__11EMemoryCardFPCcRC18MemoryDevicePort_tUiUiPCv" ;# ptr (0x8012E670)
+	.4byte 0x00000000
+	.4byte "CreateFileS__11EMemoryCardFPCcRC18MemoryDevicePort_tUi" ;# ptr (0x8012E678)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "SetMemCardCopyProtection__11EMemoryCardFRC18MemoryDevicePort_t" ;# ptr (0x802AFCA0)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "PollCards__11EMemoryCardFb" ;# ptr (0x802AFCA4)
+	.4byte "IsPolledCardAvailable__11EMemoryCardFRC18MemoryDevicePort_t" ;# ptr (0x802AFCAC)
+	.4byte 0x00000000
+	.4byte "IsWrongDevice__11EMemoryCardF14MemoryDevice_t" ;# ptr (0x80240AF4)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global "__vt__14EWiiController"
 "__vt__14EWiiController":
-	.incbin "baserom.dol", 0x44F2A0, 0x60
+	# ROM: 0x44F2A0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__14EWiiControllerFv" ;# ptr (0x802D08D4)
+	.4byte "GetStatus__11EControllerFv" ;# ptr (0x801C89AC)
+	.4byte "IsStable__11EControllerFv" ;# ptr (0x802AE3C8)
+	.4byte "HasVibration__14EWiiControllerCFv" ;# ptr (0x802ADC44)
+	.4byte "VibrateMotorOne__14EWiiControllerFf" ;# ptr (0x802ADC4C)
+	.4byte "VibrateMotorOne__11EControllerFff" ;# ptr (0x802F1A50)
+	.4byte "VibrateMotorTwo__14EWiiControllerFf" ;# ptr (0x802ADD54)
+	.4byte "VibrateMotorTwo__11EControllerFff" ;# ptr (0x802F1AE4)
+	.4byte "VibrateAll__11EControllerFff" ;# ptr (0x802F1B10)
+	.4byte "VibrateAll__11EControllerFffff" ;# ptr (0x802F1B90)
+	.4byte "StopMotorOne__14EWiiControllerFv" ;# ptr (0x802ADE5C)
+	.4byte "StopMotorOne__11EControllerFf" ;# ptr (0x802F1C38)
+	.4byte "StopMotorTwo__14EWiiControllerFv" ;# ptr (0x802ADF64)
+	.4byte "StopMotorTwo__11EControllerFf" ;# ptr (0x802F1C58)
+	.4byte "StopVibration__11EControllerFv" ;# ptr (0x802F1C64)
+	.4byte "UpdateVibration__11EControllerFv" ;# ptr (0x802F1CD4)
+	.4byte "IsMotorOneActive__14EWiiControllerCFv" ;# ptr (0x802AE06C)
+	.4byte "IsMotorTwoActive__14EWiiControllerCFv" ;# ptr (0x802AE074)
+	.4byte "PauseMotors__11EControllerFv" ;# ptr (0x802F1D7C)
+	.4byte "ResumeMotors__11EControllerFv" ;# ptr (0x802F1DAC)
+	.4byte "Flush__11EControllerFv" ;# ptr (0x802F1988)
+	.4byte "Update__11EControllerFv" ;# ptr (0x802F166C)
+
 .global "__vt__10ENgcEngine"
 "__vt__10ENgcEngine":
-	.incbin "baserom.dol", 0x44F300, 0x68
+	# ROM: 0x44F300
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__10ENgcEngineFv" ;# ptr (0x802B232C)
+	.4byte "ManagedStartup__7EEngineFv" ;# ptr (0x8027B4D4)
+	.4byte "ManagedShutdown__7EEngineFv" ;# ptr (0x8027A878)
+	.4byte "Init__10ENgcEngineFv" ;# ptr (0x802B2384)
+	.4byte "EnterMovieMode__10ENgcEngineFv" ;# ptr (0x802B28CC)
+	.4byte "ExitMovieMode__10ENgcEngineFv" ;# ptr (0x802B2910)
+	.4byte "PreFrameUpdate__10ENgcEngineFv" ;# ptr (0x802B28C8)
+	.4byte "PostFrameUpdate__7EEngineFv" ;# ptr (0x8027AD80)
+	.4byte "Idle__7EEngineFv" ;# ptr (0x8027B3B0)
+	.4byte "ShutdownThreads__7EEngineFb" ;# ptr (0x8027A978)
+	.4byte "Reboot__7EEngineFv" ;# ptr (0x801FB228)
+	.4byte "GetClockCycles__10ENgcEngineFv" ;# ptr (0x802D0934)
+	.4byte "GetMemoryUseSystemInfo__7EEngineFP11HeapUseInfo" ;# ptr (0x8027B46C)
+	.4byte "GetSystemHeapInfo__7EEngineFP8HeapInfo" ;# ptr (0x8027B4A4)
+	.4byte "GetDMARingMemoryUseInfo__7EEngineFP11HeapUseInfo" ;# ptr (0x8027B3C4)
+	.4byte "GetDMARingHeapInfo__7EEngineFP8HeapInfo" ;# ptr (0x8027B3F8)
+	.4byte "GetTextureRingMemoryUseInfo__7EEngineFP11HeapUseInfo" ;# ptr (0x8027B418)
+	.4byte "GetTextureRingHeapInfo__7EEngineFP8HeapInfo" ;# ptr (0x8027B44C)
+	.4byte "ResetRingPeakUsage__7EEngineFv" ;# ptr (0x8027B4D0)
+	.4byte "InitSubsystems__7EEngineFv" ;# ptr (0x8027AE1C)
+	.4byte "InitFileSystem__7EEngineFv" ;# ptr (0x8027AF3C)
+	.4byte "InitResourceManagers__7EEngineFv" ;# ptr (0x8027AF4C)
+	.4byte "ShutdownResourceManagers__7EEngineFv" ;# ptr (0x8027B1B0)
+	.4byte "SignalShutdown__7EEngineFv" ;# ptr (0x8027B4CC)
+
 .global "__vt__21EWiiControllerManager"
 "__vt__21EWiiControllerManager":
-	.incbin "baserom.dol", 0x44F368, 0x24
+	# ROM: 0x44F368
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21EWiiControllerManagerFv" ;# ptr (0x802AD354)
+	.4byte "Update__21EWiiControllerManagerFv" ;# ptr (0x802AD504)
+	.4byte "Init__21EWiiControllerManagerFv" ;# ptr (0x802AD3D8)
+	.4byte "Shutdown__21EWiiControllerManagerFv" ;# ptr (0x802AD500)
+	.4byte "ToggleDPD__21EWiiControllerManagerFb" ;# ptr (0x802ADBD0)
+	.4byte "IsDPDEnabled__21EWiiControllerManagerFv" ;# ptr (0x802D092C)
+	.4byte "Flush__18EControllerManagerFv" ;# ptr (0x802A6AE8)
+
 .global "__vt__21ENgcControllerManager"
 "__vt__21ENgcControllerManager":
-	.incbin "baserom.dol", 0x44F38C, 0x24
+	# ROM: 0x44F38C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__21ENgcControllerManagerFv" ;# ptr (0x802B176C)
+	.4byte "Update__21ENgcControllerManagerFv" ;# ptr (0x802B1870)
+	.4byte "Init__21ENgcControllerManagerFv" ;# ptr (0x802B17AC)
+	.4byte "Shutdown__21ENgcControllerManagerFv" ;# ptr (0x802B186C)
+	.4byte "ToggleDPD__18EControllerManagerFb" ;# ptr (0x801869DC)
+	.4byte "IsDPDEnabled__18EControllerManagerFv" ;# ptr (0x8024589C)
+	.4byte "Flush__18EControllerManagerFv" ;# ptr (0x802A6AE8)
+
 .global "__vt__9EClockMan"
 "__vt__9EClockMan":
-	.incbin "baserom.dol", 0x44F3B0, 0x20
+	# ROM: 0x44F3B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__9EClockManFv" ;# ptr (0x802B172C)
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+
 .global lbl_804532D0
 lbl_804532D0:
-	.incbin "baserom.dol", 0x44F3D0, 0x30
+	# ROM: 0x44F3D0
+	.4byte 0x802ADCA4 ;# ptr
+	.4byte 0x802ADC9C ;# ptr
+	.4byte 0x802ADCA4 ;# ptr
+	.4byte 0x802ADC9C ;# ptr
+	.4byte 0x802ADC90 ;# ptr
+	.4byte 0x802ADC90 ;# ptr
+	.4byte 0x802ADC90 ;# ptr
+	.4byte 0x802ADC9C ;# ptr
+	.4byte 0x802ADCA4 ;# ptr
+	.4byte 0x802ADC9C ;# ptr
+	.4byte 0x802ADC9C ;# ptr
+	.4byte 0x802ADC90 ;# ptr
+
 .global lbl_80453300
 lbl_80453300:
-	.incbin "baserom.dol", 0x44F400, 0x30
+	# ROM: 0x44F400
+	.4byte 0x802ADDAC ;# ptr
+	.4byte 0x802ADDA4 ;# ptr
+	.4byte 0x802ADDAC ;# ptr
+	.4byte 0x802ADDA4 ;# ptr
+	.4byte 0x802ADD98 ;# ptr
+	.4byte 0x802ADD98 ;# ptr
+	.4byte 0x802ADD98 ;# ptr
+	.4byte 0x802ADDA4 ;# ptr
+	.4byte 0x802ADDAC ;# ptr
+	.4byte 0x802ADDA4 ;# ptr
+	.4byte 0x802ADDA4 ;# ptr
+	.4byte 0x802ADD98 ;# ptr
+
 .global lbl_80453330
 lbl_80453330:
-	.incbin "baserom.dol", 0x44F430, 0x30
+	# ROM: 0x44F430
+	.4byte 0x802ADEBC ;# ptr
+	.4byte 0x802ADEB4 ;# ptr
+	.4byte 0x802ADEBC ;# ptr
+	.4byte 0x802ADEB4 ;# ptr
+	.4byte 0x802ADEA8 ;# ptr
+	.4byte 0x802ADEA8 ;# ptr
+	.4byte 0x802ADEA8 ;# ptr
+	.4byte 0x802ADEB4 ;# ptr
+	.4byte 0x802ADEBC ;# ptr
+	.4byte 0x802ADEB4 ;# ptr
+	.4byte 0x802ADEB4 ;# ptr
+	.4byte 0x802ADEA8 ;# ptr
+
 .global lbl_80453360
 lbl_80453360:
-	.incbin "baserom.dol", 0x44F460, 0x30
+	# ROM: 0x44F460
+	.4byte 0x802ADFC4 ;# ptr
+	.4byte 0x802ADFBC ;# ptr
+	.4byte 0x802ADFC4 ;# ptr
+	.4byte 0x802ADFBC ;# ptr
+	.4byte 0x802ADFB0 ;# ptr
+	.4byte 0x802ADFB0 ;# ptr
+	.4byte 0x802ADFB0 ;# ptr
+	.4byte 0x802ADFBC ;# ptr
+	.4byte 0x802ADFC4 ;# ptr
+	.4byte 0x802ADFBC ;# ptr
+	.4byte 0x802ADFBC ;# ptr
+	.4byte 0x802ADFB0 ;# ptr
+
 .global lbl_80453390
 lbl_80453390:
-	.incbin "baserom.dol", 0x44F490, 0x30
+	# ROM: 0x44F490
+	.4byte 0x802B1FD8 ;# ptr
+	.4byte 0x802B1FD0 ;# ptr
+	.4byte 0x802B1FD8 ;# ptr
+	.4byte 0x802B1FD0 ;# ptr
+	.4byte 0x802B1FC4 ;# ptr
+	.4byte 0x802B1FC4 ;# ptr
+	.4byte 0x802B1FC4 ;# ptr
+	.4byte 0x802B1FD0 ;# ptr
+	.4byte 0x802B1FD8 ;# ptr
+	.4byte 0x802B1FD0 ;# ptr
+	.4byte 0x802B1FD0 ;# ptr
+	.4byte 0x802B1FC4 ;# ptr
+
 .global lbl_804533C0
 lbl_804533C0:
-	.incbin "baserom.dol", 0x44F4C0, 0x30
+	# ROM: 0x44F4C0
+	.4byte 0x802B20A0 ;# ptr
+	.4byte 0x802B2098 ;# ptr
+	.4byte 0x802B20A0 ;# ptr
+	.4byte 0x802B2098 ;# ptr
+	.4byte 0x802B208C ;# ptr
+	.4byte 0x802B208C ;# ptr
+	.4byte 0x802B208C ;# ptr
+	.4byte 0x802B2098 ;# ptr
+	.4byte 0x802B20A0 ;# ptr
+	.4byte 0x802B2098 ;# ptr
+	.4byte 0x802B2098 ;# ptr
+	.4byte 0x802B208C ;# ptr
+
 .global lbl_804533F0
 lbl_804533F0:
-	.incbin "baserom.dol", 0x44F4F0, 0x30
+	# ROM: 0x44F4F0
+	.4byte 0x802B2168 ;# ptr
+	.4byte 0x802B2160 ;# ptr
+	.4byte 0x802B2168 ;# ptr
+	.4byte 0x802B2160 ;# ptr
+	.4byte 0x802B2154 ;# ptr
+	.4byte 0x802B2154 ;# ptr
+	.4byte 0x802B2154 ;# ptr
+	.4byte 0x802B2160 ;# ptr
+	.4byte 0x802B2168 ;# ptr
+	.4byte 0x802B2160 ;# ptr
+	.4byte 0x802B2160 ;# ptr
+	.4byte 0x802B2154 ;# ptr
+
 .global lbl_80453420
 lbl_80453420:
-	.incbin "baserom.dol", 0x44F520, 0x40
+	# ROM: 0x44F520
+	.4byte 0x802B2230 ;# ptr
+	.4byte 0x802B2228 ;# ptr
+	.4byte 0x802B2230 ;# ptr
+	.4byte 0x802B2228 ;# ptr
+	.4byte 0x802B221C ;# ptr
+	.4byte 0x802B221C ;# ptr
+	.4byte 0x802B221C ;# ptr
+	.4byte 0x802B2228 ;# ptr
+	.4byte 0x802B2230 ;# ptr
+	.4byte 0x802B2228 ;# ptr
+	.4byte 0x802B2228 ;# ptr
+	.4byte 0x802B221C ;# ptr
+	.asciz "base test\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global lbl_8051E500
@@ -40820,166 +43454,276 @@ lbl_805347D8:
 .section .sdata, "wa"  # 0x805D46E0 - 0x805D79C0
 .global "_wpadInfoPollTime"
 "_wpadInfoPollTime":
-	.incbin "baserom.dol", 0x4862E8, 0x4
+	# ROM: 0x4862E8
+	.4byte 0x00000190
+
 .global "BANNER_BIN_DUT_FILENAME"
 "BANNER_BIN_DUT_FILENAME":
-	.incbin "baserom.dol", 0x4862EC, 0x4
+	# ROM: 0x4862EC
+	.4byte 0x80450EA0 ;# ptr
+
 .global "BANNER_BIN_ENG_FILENAME"
 "BANNER_BIN_ENG_FILENAME":
-	.incbin "baserom.dol", 0x4862F0, 0x4
+	# ROM: 0x4862F0
+	.4byte 0x80450EB0 ;# ptr
+
 .global "BANNER_BIN_FRE_FILENAME"
 "BANNER_BIN_FRE_FILENAME":
-	.incbin "baserom.dol", 0x4862F4, 0x4
+	# ROM: 0x4862F4
+	.4byte 0x80450EC0 ;# ptr
+
 .global "BANNER_BIN_GER_FILENAME"
 "BANNER_BIN_GER_FILENAME":
-	.incbin "baserom.dol", 0x4862F8, 0x4
+	# ROM: 0x4862F8
+	.4byte 0x80450ED0 ;# ptr
+
 .global "BANNER_BIN_ITA_FILENAME"
 "BANNER_BIN_ITA_FILENAME":
-	.incbin "baserom.dol", 0x4862FC, 0x4
+	# ROM: 0x4862FC
+	.4byte 0x80450EE0 ;# ptr
+
 .global "BANNER_BIN_SPA_FILENAME"
 "BANNER_BIN_SPA_FILENAME":
-	.incbin "baserom.dol", 0x486300, 0x4
+	# ROM: 0x486300
+	.4byte 0x80450EF0 ;# ptr
+
 .global "BANNER_BIN_FILENAME"
 "BANNER_BIN_FILENAME":
-	.incbin "baserom.dol", 0x486304, 0x4
+	# ROM: 0x486304
+	.4byte 0x80450F00 ;# ptr
+
 .global "gAudioEnabled"
 "gAudioEnabled":
-	.incbin "baserom.dol", 0x486308, 0x4
+	# ROM: 0x486308
+	.4byte 0x00000001
+
 .global "gWarmupMilliCount"
 "gWarmupMilliCount":
-	.incbin "baserom.dol", 0x48630C, 0x4
+	# ROM: 0x48630C
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global "_pClockMan"
 "_pClockMan":
-	.incbin "baserom.dol", 0x486310, 0x4
+	# ROM: 0x486310
+	.4byte 0x805D8320 ;# ptr
+
 .global "sEventIdleThreadPriority"
 "sEventIdleThreadPriority":
-	.incbin "baserom.dol", 0x486314, 0x4
+	# ROM: 0x486314
+	.4byte 0x00000001
+
 .global "s_doneRead"
 "s_doneRead":
-	.incbin "baserom.dol", 0x486318, 0x1
+	# ROM: 0x486318
+	.byte 0x01
+
 .global "needsInit$18580"
 "needsInit$18580":
-	.incbin "baserom.dol", 0x486319, 0x7
+	# ROM: 0x486319
+	.byte 0x01, 0x00, 0x00
+	.4byte 0x00000000
+
 .global lbl_805D67A0
 lbl_805D67A0:
-	.incbin "baserom.dol", 0x486320, 0x8
+	# ROM: 0x486320
+	.asciz "AptHeap"
+
 .global lbl_805D67A8
 lbl_805D67A8:
-	.incbin "baserom.dol", 0x486328, 0x4
+	# ROM: 0x486328
+	.4byte 0x54485000
+
 .global "_ngcPerf0StatCount"
 "_ngcPerf0StatCount":
-	.incbin "baserom.dol", 0x48632C, 0x4
+	# ROM: 0x48632C
+	.4byte 0x0000000C
+
 .global "_ngcUseGXDisplayList"
 "_ngcUseGXDisplayList":
-	.incbin "baserom.dol", 0x486330, 0x4
+	# ROM: 0x486330
+	.4byte 0x01000000
+
 .global "_ngcScrambleRectPixels"
 "_ngcScrambleRectPixels":
-	.incbin "baserom.dol", 0x486334, 0x4
+	# ROM: 0x486334
+	.4byte 0x00000010
+
 .global "_gxAmbientLightMultiplier"
 "_gxAmbientLightMultiplier":
-	.incbin "baserom.dol", 0x486338, 0x4
+	# ROM: 0x486338
+	.4byte 0x3F68F5C3
+
 .global "_gxDiffuseLightMultiplier"
 "_gxDiffuseLightMultiplier":
-	.incbin "baserom.dol", 0x48633C, 0x4
+	# ROM: 0x48633C
+	.4byte 0x3FB1EB85
+
 .global "clear_alpha"
 "clear_alpha":
-	.incbin "baserom.dol", 0x486340, 0x4
+	# ROM: 0x486340
+	.4byte 0x7F000000
+
 .global "_ngcAlphaTestThresholdMultiplier"
 "_ngcAlphaTestThresholdMultiplier":
-	.incbin "baserom.dol", 0x486344, 0x4
+	# ROM: 0x486344
+	.4byte 0x437F0000
+
 .global "s_missedVBlanks__12ENgcRenderer"
 "s_missedVBlanks__12ENgcRenderer":
-	.incbin "baserom.dol", 0x486348, 0x4
+	# ROM: 0x486348
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global "singleOutput$37963"
 "singleOutput$37963":
-	.incbin "baserom.dol", 0x48634C, 0x1
+	# ROM: 0x48634C
+	.byte 0x01
+
 .global "singleOutput$37992"
 "singleOutput$37992":
-	.incbin "baserom.dol", 0x48634D, 0x1
+	# ROM: 0x48634D
+	.byte 0x01
+
 .global "singleOutput$38655"
 "singleOutput$38655":
-	.incbin "baserom.dol", 0x48634E, 0x1
+	# ROM: 0x48634E
+	.byte 0x01
+
 .global "singleOutput$39177"
 "singleOutput$39177":
-	.incbin "baserom.dol", 0x48634F, 0x1
+	# ROM: 0x48634F
+	.byte 0x01
+
 .global "singleOutput$39186"
 "singleOutput$39186":
-	.incbin "baserom.dol", 0x486350, 0x1
+	# ROM: 0x486350
+	.byte 0x01
+
 .global "singleOutput$39279"
 "singleOutput$39279":
-	.incbin "baserom.dol", 0x486351, 0x1
+	# ROM: 0x486351
+	.byte 0x01
+
 .global "singleOutput$39288"
 "singleOutput$39288":
-	.incbin "baserom.dol", 0x486352, 0x1
+	# ROM: 0x486352
+	.byte 0x01
+
 .global "singleOutput$39877"
 "singleOutput$39877":
-	.incbin "baserom.dol", 0x486353, 0x1
+	# ROM: 0x486353
+	.byte 0x01
+
 .global "singleOutput$44371"
 "singleOutput$44371":
-	.incbin "baserom.dol", 0x486354, 0x1
+	# ROM: 0x486354
+	.byte 0x01
+
 .global "singleOutput$44381"
 "singleOutput$44381":
-	.incbin "baserom.dol", 0x486355, 0x1
+	# ROM: 0x486355
+	.byte 0x01
+
 .global "singleOutput$44390"
 "singleOutput$44390":
-	.incbin "baserom.dol", 0x486356, 0x1
+	# ROM: 0x486356
+	.byte 0x01
+
 .global "singleOutput$44399"
 "singleOutput$44399":
-	.incbin "baserom.dol", 0x486357, 0x1
+	# ROM: 0x486357
+	.byte 0x01
+
 .global "singleOutput$44408"
 "singleOutput$44408":
-	.incbin "baserom.dol", 0x486358, 0x1
+	# ROM: 0x486358
+	.byte 0x01
+
 .global "singleOutput$44417"
 "singleOutput$44417":
-	.incbin "baserom.dol", 0x486359, 0x1
+	# ROM: 0x486359
+	.byte 0x01
+
 .global "singleOutput$44426"
 "singleOutput$44426":
-	.incbin "baserom.dol", 0x48635A, 0x1
+	# ROM: 0x48635A
+	.byte 0x01
+
 .global "singleOutput$44435"
 "singleOutput$44435":
-	.incbin "baserom.dol", 0x48635B, 0x1
+	# ROM: 0x48635B
+	.byte 0x01
+
 .global "singleOutput$44444"
 "singleOutput$44444":
-	.incbin "baserom.dol", 0x48635C, 0x1
+	# ROM: 0x48635C
+	.byte 0x01
+
 .global "singleOutput$44453"
 "singleOutput$44453":
-	.incbin "baserom.dol", 0x48635D, 0x1
+	# ROM: 0x48635D
+	.byte 0x01
+
 .global "singleOutput$44462"
 "singleOutput$44462":
-	.incbin "baserom.dol", 0x48635E, 0x1
+	# ROM: 0x48635E
+	.byte 0x01
+
 .global "singleOutput$44471"
 "singleOutput$44471":
-	.incbin "baserom.dol", 0x48635F, 0x1
+	# ROM: 0x48635F
+	.byte 0x01
+
 .global "singleOutput$44481"
 "singleOutput$44481":
-	.incbin "baserom.dol", 0x486360, 0x1
+	# ROM: 0x486360
+	.byte 0x01
+
 .global "singleOutput$44497"
 "singleOutput$44497":
-	.incbin "baserom.dol", 0x486361, 0x1
+	# ROM: 0x486361
+	.byte 0x01
+
 .global "singleOutput$44506"
 "singleOutput$44506":
-	.incbin "baserom.dol", 0x486362, 0x1
+	# ROM: 0x486362
+	.byte 0x01
+
 .global "singleOutput$44515"
 "singleOutput$44515":
-	.incbin "baserom.dol", 0x486363, 0x1
+	# ROM: 0x486363
+	.byte 0x01
+
 .global "singleOutput$44524"
 "singleOutput$44524":
-	.incbin "baserom.dol", 0x486364, 0x1
+	# ROM: 0x486364
+	.byte 0x01
+
 .global "singleOutput$44534"
 "singleOutput$44534":
-	.incbin "baserom.dol", 0x486365, 0x1
+	# ROM: 0x486365
+	.byte 0x01
+
 .global "singleOutput$44543"
 "singleOutput$44543":
-	.incbin "baserom.dol", 0x486366, 0x2
+	# ROM: 0x486366
+	.byte 0x01, 0x00
+
 .global "method$48165"
 "method$48165":
-	.incbin "baserom.dol", 0x486368, 0x4
+	# ROM: 0x486368
+	.4byte 0x00000001
+
 .global "y2$48175"
 "y2$48175":
-	.incbin "baserom.dol", 0x48636C, 0x4
+	# ROM: 0x48636C
+	.4byte 0x00000001
+
 .global "y3$48176"
 "y3$48176":
-	.incbin "baserom.dol", 0x486370, 0x8
+	# ROM: 0x486370
+	.4byte 0x00000002
+	.4byte 0x00000000
+
 
 .section .sbss, "wa"  # 0x805d79c0 - 0x805d9220
 .global "_wiiCtrlPads"
@@ -41292,385 +44036,678 @@ lbl_805D83F7:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB210
 lbl_805DB210:
-	.incbin "baserom.dol", 0x489530, 0x4
+	# ROM: 0x489530
+	.4byte 0x3E4CCCCD
+
 .global lbl_805DB214
 lbl_805DB214:
-	.incbin "baserom.dol", 0x489534, 0x4
+	# ROM: 0x489534
+	.4byte 0x3DCCCCCD
+
 .global lbl_805DB218
 lbl_805DB218:
-	.incbin "baserom.dol", 0x489538, 0x4
+	# ROM: 0x489538
+	.4byte 0x3F800000
+
 .global lbl_805DB21C
 lbl_805DB21C:
-	.incbin "baserom.dol", 0x48953C, 0x4
+	# ROM: 0x48953C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB220
 lbl_805DB220:
-	.incbin "baserom.dol", 0x489540, 0x4
+	# ROM: 0x489540
+	.4byte 0xC47A0000
+
 .global lbl_805DB224
 lbl_805DB224:
-	.incbin "baserom.dol", 0x489544, 0x4
+	# ROM: 0x489544
+	.4byte 0x3E800000
+
 .global lbl_805DB228
 lbl_805DB228:
-	.incbin "baserom.dol", 0x489548, 0x4
+	# ROM: 0x489548
+	.4byte 0xBE800000
+
 .global lbl_805DB22C
 lbl_805DB22C:
-	.incbin "baserom.dol", 0x48954C, 0x4
+	# ROM: 0x48954C
+	.4byte 0x40000000
+
 .global lbl_805DB230
 lbl_805DB230:
-	.incbin "baserom.dol", 0x489550, 0x4
+	# ROM: 0x489550
+	.4byte 0x3F000000
+
 .global lbl_805DB234
 lbl_805DB234:
-	.incbin "baserom.dol", 0x489554, 0x4
+	# ROM: 0x489554
+	.4byte 0x42FE0000
+
 .global lbl_805DB238
 lbl_805DB238:
-	.incbin "baserom.dol", 0x489558, 0x4
+	# ROM: 0x489558
+	.4byte 0xBF800000
+
 .global lbl_805DB23C
 lbl_805DB23C:
-	.incbin "baserom.dol", 0x48955C, 0x4
+	# ROM: 0x48955C
+	.4byte 0xC0000000
+
 .global lbl_805DB240
 lbl_805DB240:
-	.incbin "baserom.dol", 0x489560, 0x8
+	# ROM: 0x489560
+	.4byte 0x427E0000
+	.4byte 0x00000000
+
 .global lbl_805DB248
 lbl_805DB248:
-	.incbin "baserom.dol", 0x489568, 0x8
+	# ROM: 0x489568
+	.4byte 0x43300000
+	.4byte 0x00000000
+
 .global lbl_805DB250
 lbl_805DB250:
-	.incbin "baserom.dol", 0x489570, 0x4
+	# ROM: 0x489570
+	.4byte 0x42200000
+
 .global lbl_805DB254
 lbl_805DB254:
-	.incbin "baserom.dol", 0x489574, 0x4
+	# ROM: 0x489574
+	.4byte 0x41E00000
+
 .global lbl_805DB258
 lbl_805DB258:
-	.incbin "baserom.dol", 0x489578, 0x8
+	# ROM: 0x489578
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DB260
 lbl_805DB260:
-	.incbin "baserom.dol", 0x489580, 0x4
+	# ROM: 0x489580
+	.4byte 0x3DC00000
+
 .global lbl_805DB264
 lbl_805DB264:
-	.incbin "baserom.dol", 0x489584, 0x4
+	# ROM: 0x489584
+	.4byte 0xBDC18306
+
 .global lbl_805DB268
 lbl_805DB268:
-	.incbin "baserom.dol", 0x489588, 0x4
+	# ROM: 0x489588
+	.4byte 0x49800000
+
 .global lbl_805DB26C
 lbl_805DB26C:
-	.incbin "baserom.dol", 0x48958C, 0x4
+	# ROM: 0x48958C
+	.4byte 0x44200000
+
 .global lbl_805DB270
 lbl_805DB270:
-	.incbin "baserom.dol", 0x489590, 0x4
+	# ROM: 0x489590
+	.4byte 0x44040000
+
 .global lbl_805DB274
 lbl_805DB274:
-	.incbin "baserom.dol", 0x489594, 0x4
+	# ROM: 0x489594
+	.4byte 0x3D4CCCCD
+
 .global lbl_805DB278
 lbl_805DB278:
-	.incbin "baserom.dol", 0x489598, 0x4
+	# ROM: 0x489598
+	.4byte 0x3F8CCCCD
+
 .global lbl_805DB27C
 lbl_805DB27C:
-	.incbin "baserom.dol", 0x48959C, 0x4
+	# ROM: 0x48959C
+	.4byte 0x42C80000
+
 .global lbl_805DB280
 lbl_805DB280:
-	.incbin "baserom.dol", 0x4895A0, 0x4
+	# ROM: 0x4895A0
+	.4byte 0x42600000
+
 .global lbl_805DB284
 lbl_805DB284:
-	.incbin "baserom.dol", 0x4895A4, 0x4
+	# ROM: 0x4895A4
+	.4byte 0x45440000
+
 .global lbl_805DB288
 lbl_805DB288:
-	.incbin "baserom.dol", 0x4895A8, 0x4
+	# ROM: 0x4895A8
+	.4byte 0x42300000
+
 .global lbl_805DB28C
 lbl_805DB28C:
-	.incbin "baserom.dol", 0x4895AC, 0x4
+	# ROM: 0x4895AC
+	.4byte 0x44F20000
+
 .global lbl_805DB290
 lbl_805DB290:
-	.incbin "baserom.dol", 0x4895B0, 0x4
+	# ROM: 0x4895B0
+	.4byte 0x437F0000
+
 .global "_gxWhite"
 "_gxWhite":
-	.incbin "baserom.dol", 0x4895B4, 0x1
+	# ROM: 0x4895B4
+	.byte 0xFF
+
 .global lbl_805DB295
 lbl_805DB295:
-	.incbin "baserom.dol", 0x4895B5, 0x1
+	# ROM: 0x4895B5
+	.byte 0xFF
+
 .global lbl_805DB296
 lbl_805DB296:
-	.incbin "baserom.dol", 0x4895B6, 0x1
+	# ROM: 0x4895B6
+	.byte 0xFF
+
 .global lbl_805DB297
 lbl_805DB297:
-	.incbin "baserom.dol", 0x4895B7, 0x1
+	# ROM: 0x4895B7
+	.byte 0xFF
+
 .global lbl_805DB298
 lbl_805DB298:
-	.incbin "baserom.dol", 0x4895B8, 0x4
+	# ROM: 0x4895B8
+	.4byte 0xBF8020C5
+
 .global lbl_805DB29C
 lbl_805DB29C:
-	.incbin "baserom.dol", 0x4895BC, 0x4
+	# ROM: 0x4895BC
+	.4byte 0xCA4FB11E
+
 .global lbl_805DB2A0
 lbl_805DB2A0:
-	.incbin "baserom.dol", 0x4895C0, 0x4
+	# ROM: 0x4895C0
+	.4byte 0x3C23D70A
+
 .global lbl_805DB2A4
 lbl_805DB2A4:
-	.incbin "baserom.dol", 0x4895C4, 0x4
+	# ROM: 0x4895C4
+	.4byte 0x3F4CCCCD
+
 .global lbl_805DB2A8
 lbl_805DB2A8:
-	.incbin "baserom.dol", 0x4895C8, 0x4
+	# ROM: 0x4895C8
+	.4byte 0x45800000
+
 .global lbl_805DB2AC
 lbl_805DB2AC:
-	.incbin "baserom.dol", 0x4895CC, 0x4
+	# ROM: 0x4895CC
+	.4byte 0xBF000000
+
 .global lbl_805DB2B0
 lbl_805DB2B0:
-	.incbin "baserom.dol", 0x4895D0, 0x2
+	# ROM: 0x4895D0
+	.byte 0xFF, 0xA6
+
 .global lbl_805DB2B2
 lbl_805DB2B2:
-	.incbin "baserom.dol", 0x4895D2, 0x2
+	# ROM: 0x4895D2
+	.byte 0x00, 0x00
+
 .global lbl_805DB2B4
 lbl_805DB2B4:
-	.incbin "baserom.dol", 0x4895D4, 0x2
+	# ROM: 0x4895D4
+	.byte 0xFF, 0x8E
+
 .global lbl_805DB2B6
 lbl_805DB2B6:
-	.incbin "baserom.dol", 0x4895D6, 0x2
+	# ROM: 0x4895D6
+	.byte 0x00, 0x87
+
 .global lbl_805DB2B8
 lbl_805DB2B8:
-	.incbin "baserom.dol", 0x4895D8, 0x1
+	# ROM: 0x4895D8
+	.byte 0x00
+
 .global lbl_805DB2B9
 lbl_805DB2B9:
-	.incbin "baserom.dol", 0x4895D9, 0x1
+	# ROM: 0x4895D9
+	.byte 0x00
+
 .global lbl_805DB2BA
 lbl_805DB2BA:
-	.incbin "baserom.dol", 0x4895DA, 0x1
+	# ROM: 0x4895DA
+	.byte 0xE2
+
 .global lbl_805DB2BB
 lbl_805DB2BB:
-	.incbin "baserom.dol", 0x4895DB, 0x1
+	# ROM: 0x4895DB
+	.byte 0x58
+
 .global lbl_805DB2BC
 lbl_805DB2BC:
-	.incbin "baserom.dol", 0x4895DC, 0x1
+	# ROM: 0x4895DC
+	.byte 0xB3
+
 .global lbl_805DB2BD
 lbl_805DB2BD:
-	.incbin "baserom.dol", 0x4895DD, 0x1
+	# ROM: 0x4895DD
+	.byte 0x00
+
 .global lbl_805DB2BE
 lbl_805DB2BE:
-	.incbin "baserom.dol", 0x4895DE, 0x1
+	# ROM: 0x4895DE
+	.byte 0x00
+
 .global lbl_805DB2BF
 lbl_805DB2BF:
-	.incbin "baserom.dol", 0x4895DF, 0x1
+	# ROM: 0x4895DF
+	.byte 0xB6
+
 .global lbl_805DB2C0
 lbl_805DB2C0:
-	.incbin "baserom.dol", 0x4895E0, 0x1
+	# ROM: 0x4895E0
+	.byte 0xFF
+
 .global lbl_805DB2C1
 lbl_805DB2C1:
-	.incbin "baserom.dol", 0x4895E1, 0x1
+	# ROM: 0x4895E1
+	.byte 0x00
+
 .global lbl_805DB2C2
 lbl_805DB2C2:
-	.incbin "baserom.dol", 0x4895E2, 0x1
+	# ROM: 0x4895E2
+	.byte 0xFF
+
 .global lbl_805DB2C3
 lbl_805DB2C3:
-	.incbin "baserom.dol", 0x4895E3, 0x1
+	# ROM: 0x4895E3
+	.byte 0x80
+
 .global lbl_805DB2C4
 lbl_805DB2C4:
-	.incbin "baserom.dol", 0x4895E4, 0x4
+	# ROM: 0x4895E4
+	.4byte 0x3DA3D70A
+
 .global lbl_805DB2C8
 lbl_805DB2C8:
-	.incbin "baserom.dol", 0x4895E8, 0x4
+	# ROM: 0x4895E8
+	.4byte 0x3CDA740D
+
 .global lbl_805DB2CC
 lbl_805DB2CC:
-	.incbin "baserom.dol", 0x4895EC, 0x4
+	# ROM: 0x4895EC
+	.4byte 0x40C00000
+
 .global lbl_805DB2D0
 lbl_805DB2D0:
-	.incbin "baserom.dol", 0x4895F0, 0x4
+	# ROM: 0x4895F0
+	.4byte 0x4B7FFFFF
+
 .global lbl_805DB2D4
 lbl_805DB2D4:
-	.incbin "baserom.dol", 0x4895F4, 0x4
+	# ROM: 0x4895F4
+	.4byte 0x3B808081
+
 .global "kVerticalFilterOn__17NGCRendererAAImpl"
 "kVerticalFilterOn__17NGCRendererAAImpl":
-	.incbin "baserom.dol", 0x4895F8, 0x8
+	# ROM: 0x4895F8
+	.4byte 0x070A0A0A
+	.4byte 0x0A0A0700
+
 .global lbl_805DB2E0
 lbl_805DB2E0:
-	.incbin "baserom.dol", 0x489600, 0x1
+	# ROM: 0x489600
+	.byte 0xFF
+
 .global lbl_805DB2E1
 lbl_805DB2E1:
-	.incbin "baserom.dol", 0x489601, 0x1
+	# ROM: 0x489601
+	.byte 0xFF
+
 .global lbl_805DB2E2
 lbl_805DB2E2:
-	.incbin "baserom.dol", 0x489602, 0x1
+	# ROM: 0x489602
+	.byte 0x00
+
 .global lbl_805DB2E3
 lbl_805DB2E3:
-	.incbin "baserom.dol", 0x489603, 0x1
+	# ROM: 0x489603
+	.byte 0x00
+
 .global lbl_805DB2E4
 lbl_805DB2E4:
-	.incbin "baserom.dol", 0x489604, 0x1
+	# ROM: 0x489604
+	.byte 0x00
+
 .global lbl_805DB2E5
 lbl_805DB2E5:
-	.incbin "baserom.dol", 0x489605, 0x1
+	# ROM: 0x489605
+	.byte 0x00
+
 .global lbl_805DB2E6
 lbl_805DB2E6:
-	.incbin "baserom.dol", 0x489606, 0x1
+	# ROM: 0x489606
+	.byte 0xFF
+
 .global lbl_805DB2E7
 lbl_805DB2E7:
-	.incbin "baserom.dol", 0x489607, 0x1
+	# ROM: 0x489607
+	.byte 0xFF
+
 .global lbl_805DB2E8
 lbl_805DB2E8:
-	.incbin "baserom.dol", 0x489608, 0x1
+	# ROM: 0x489608
+	.byte 0xFF
+
 .global lbl_805DB2E9
 lbl_805DB2E9:
-	.incbin "baserom.dol", 0x489609, 0x1
+	# ROM: 0x489609
+	.byte 0xFF
+
 .global lbl_805DB2EA
 lbl_805DB2EA:
-	.incbin "baserom.dol", 0x48960A, 0x2
+	# ROM: 0x48960A
+	.byte 0xFF, 0x00
+
 .global lbl_805DB2EC
 lbl_805DB2EC:
-	.incbin "baserom.dol", 0x48960C, 0x1
+	# ROM: 0x48960C
+	.byte 0x80
+
 .global lbl_805DB2ED
 lbl_805DB2ED:
-	.incbin "baserom.dol", 0x48960D, 0x1
+	# ROM: 0x48960D
+	.byte 0x80
+
 .global lbl_805DB2EE
 lbl_805DB2EE:
-	.incbin "baserom.dol", 0x48960E, 0x1
+	# ROM: 0x48960E
+	.byte 0x80
+
 .global lbl_805DB2EF
 lbl_805DB2EF:
-	.incbin "baserom.dol", 0x48960F, 0x1
+	# ROM: 0x48960F
+	.byte 0xFF
+
 .global lbl_805DB2F0
 lbl_805DB2F0:
-	.incbin "baserom.dol", 0x489610, 0x4
+	# ROM: 0x489610
+	.4byte 0x447A0000
+
 .global lbl_805DB2F4
 lbl_805DB2F4:
-	.incbin "baserom.dol", 0x489614, 0x4
+	# ROM: 0x489614
+	.4byte 0x41C80000
+
 .global lbl_805DB2F8
 lbl_805DB2F8:
-	.incbin "baserom.dol", 0x489618, 0x4
+	# ROM: 0x489618
+	.4byte 0x43480000
+
 .global lbl_805DB2FC
 lbl_805DB2FC:
-	.incbin "baserom.dol", 0x48961C, 0x4
+	# ROM: 0x48961C
+	.4byte 0x42480000
+
 .global lbl_805DB300
 lbl_805DB300:
-	.incbin "baserom.dol", 0x489620, 0x4
+	# ROM: 0x489620
+	.4byte 0x43C80000
+
 .global lbl_805DB304
 lbl_805DB304:
-	.incbin "baserom.dol", 0x489624, 0x4
+	# ROM: 0x489624
+	.4byte 0x40A00000
+
 .global lbl_805DB308
 lbl_805DB308:
-	.incbin "baserom.dol", 0x489628, 0x1
+	# ROM: 0x489628
+	.byte 0x80
+
 .global lbl_805DB309
 lbl_805DB309:
-	.incbin "baserom.dol", 0x489629, 0x1
+	# ROM: 0x489629
+	.byte 0x80
+
 .global lbl_805DB30A
 lbl_805DB30A:
-	.incbin "baserom.dol", 0x48962A, 0x1
+	# ROM: 0x48962A
+	.byte 0x80
+
 .global lbl_805DB30B
 lbl_805DB30B:
-	.incbin "baserom.dol", 0x48962B, 0x1
+	# ROM: 0x48962B
+	.byte 0xFF
+
 .global lbl_805DB30C
 lbl_805DB30C:
-	.incbin "baserom.dol", 0x48962C, 0x4
+	# ROM: 0x48962C
+	.4byte 0x47800000
+
 .global lbl_805DB310
 lbl_805DB310:
-	.incbin "baserom.dol", 0x489630, 0x4
+	# ROM: 0x489630
+	.4byte 0x46FA0000
+
 .global lbl_805DB314
 lbl_805DB314:
-	.incbin "baserom.dol", 0x489634, 0x4
+	# ROM: 0x489634
+	.4byte 0x46FA3952
+
 .global lbl_805DB318
 lbl_805DB318:
-	.incbin "baserom.dol", 0x489638, 0x4
+	# ROM: 0x489638
+	.4byte 0x42800000
+
 .global lbl_805DB31C
 lbl_805DB31C:
-	.incbin "baserom.dol", 0x48963C, 0x4
+	# ROM: 0x48963C
+	.4byte 0x427C0000
+
 .global lbl_805DB320
 lbl_805DB320:
-	.incbin "baserom.dol", 0x489640, 0xC
+	# ROM: 0x489640
+	.4byte 0x44620000
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+
 .global lbl_805DB32C
 lbl_805DB32C:
-	.incbin "baserom.dol", 0x48964C, 0x4
+	# ROM: 0x48964C
+	.byte 0xFF, 0xFF, 0xFF, 0xFF
+
 .global lbl_805DB330
 lbl_805DB330:
-	.incbin "baserom.dol", 0x489650, 0x8
+	# ROM: 0x489650
+	.4byte 0x40300000
+	.4byte 0x00000000
+
 .global lbl_805DB338
 lbl_805DB338:
-	.incbin "baserom.dol", 0x489658, 0x8
+	# ROM: 0x489658
+	.4byte 0x3FB91687
+	.4byte 0x2B020C4A
+
 .global lbl_805DB340
 lbl_805DB340:
-	.incbin "baserom.dol", 0x489660, 0x8
+	# ROM: 0x489660
+	.4byte 0x3FD072B0
+	.4byte 0x20C49BA6
+
 .global lbl_805DB348
 lbl_805DB348:
-	.incbin "baserom.dol", 0x489668, 0x8
+	# ROM: 0x489668
+	.4byte 0x3FE020C4
+	.4byte 0x9BA5E354
+
 .global lbl_805DB350
 lbl_805DB350:
-	.incbin "baserom.dol", 0x489670, 0x8
+	# ROM: 0x489670
+	.4byte 0x40600000
+	.4byte 0x00000000
+
 .global lbl_805DB358
 lbl_805DB358:
-	.incbin "baserom.dol", 0x489678, 0x8
+	# ROM: 0x489678
+	.4byte 0x3FDC1893
+	.4byte 0x74BC6A7F
+
 .global lbl_805DB360
 lbl_805DB360:
-	.incbin "baserom.dol", 0x489680, 0x8
+	# ROM: 0x489680
+	.4byte 0x3FC2F1A9
+	.4byte 0xFBE76C8B
+
 .global lbl_805DB368
 lbl_805DB368:
-	.incbin "baserom.dol", 0x489688, 0x8
+	# ROM: 0x489688
+	.4byte 0x3FD29FBE
+	.4byte 0x76C8B439
+
 .global lbl_805DB370
 lbl_805DB370:
-	.incbin "baserom.dol", 0x489690, 0x8
+	# ROM: 0x489690
+	.4byte 0x3FD78D4F
+	.4byte 0xDF3B645A
+
 .global lbl_805DB378
 lbl_805DB378:
-	.incbin "baserom.dol", 0x489698, 0x8
+	# ROM: 0x489698
+	.4byte 0x3FB22D0E
+	.4byte 0x56041893
+
 .global lbl_805DB380
 lbl_805DB380:
-	.incbin "baserom.dol", 0x4896A0, 0x8
+	# ROM: 0x4896A0
+	.4byte 0x3F700000
+	.4byte 0x00000000
+
 .global lbl_805DB388
 lbl_805DB388:
-	.incbin "baserom.dol", 0x4896A8, 0x8
+	# ROM: 0x4896A8
+	.4byte 0x40391062
+	.4byte 0x4DD2F1AA
+
 .global lbl_805DB390
 lbl_805DB390:
-	.incbin "baserom.dol", 0x4896B0, 0x8
+	# ROM: 0x4896B0
+	.4byte 0x40506F3B
+	.4byte 0x645A1CAC
+
 .global lbl_805DB398
 lbl_805DB398:
-	.incbin "baserom.dol", 0x4896B8, 0x8
+	# ROM: 0x4896B8
+	.4byte 0x406021D2
+	.4byte 0xF1A9FBE7
+
 .global lbl_805DB3A0
 lbl_805DB3A0:
-	.incbin "baserom.dol", 0x4896C0, 0x8
+	# ROM: 0x4896C0
+	.4byte 0x405C1C18
+	.4byte 0x9374BC6A
+
 .global lbl_805DB3A8
 lbl_805DB3A8:
-	.incbin "baserom.dol", 0x4896C8, 0x8
+	# ROM: 0x4896C8
+	.4byte 0xC042F8F5
+	.4byte 0xC28F5C29
+
 .global lbl_805DB3B0
 lbl_805DB3B0:
-	.incbin "baserom.dol", 0x4896D0, 0x8
+	# ROM: 0x4896D0
+	.4byte 0x40529F9D
+	.4byte 0xB22D0E56
+
 .global lbl_805DB3B8
 lbl_805DB3B8:
-	.incbin "baserom.dol", 0x4896D8, 0x8
+	# ROM: 0x4896D8
+	.4byte 0x405789DB
+	.4byte 0x22D0E560
+
 .global lbl_805DB3C0
 lbl_805DB3C0:
-	.incbin "baserom.dol", 0x4896E0, 0x8
+	# ROM: 0x4896E0
+	.4byte 0x403248F5
+	.4byte 0xC28F5C29
+
 .global lbl_805DB3C8
 lbl_805DB3C8:
-	.incbin "baserom.dol", 0x4896E8, 0x8
+	# ROM: 0x4896E8
+	.4byte 0x3FBD2F1A
+	.4byte 0x9FBE76C9
+
 .global lbl_805DB3D0
 lbl_805DB3D0:
-	.incbin "baserom.dol", 0x4896F0, 0x8
+	# ROM: 0x4896F0
+	.4byte 0x3FD322D0
+	.4byte 0xE5604189
+
 .global lbl_805DB3D8
 lbl_805DB3D8:
-	.incbin "baserom.dol", 0x4896F8, 0x8
+	# ROM: 0x4896F8
+	.4byte 0x3FE2C8B4
+	.4byte 0x39581062
+
 .global lbl_805DB3E0
 lbl_805DB3E0:
-	.incbin "baserom.dol", 0x489700, 0x8
+	# ROM: 0x489700
+	.4byte 0x3FE00000
+	.4byte 0x00000000
+
 .global lbl_805DB3E8
 lbl_805DB3E8:
-	.incbin "baserom.dol", 0x489708, 0x8
+	# ROM: 0x489708
+	.4byte 0x3FC59924
+	.4byte 0x28D434A0
+
 .global lbl_805DB3F0
 lbl_805DB3F0:
-	.incbin "baserom.dol", 0x489710, 0x8
+	# ROM: 0x489710
+	.4byte 0x3FD5336D
+	.4byte 0xEB95E5B0
+
 .global lbl_805DB3F8
 lbl_805DB3F8:
-	.incbin "baserom.dol", 0x489718, 0x8
+	# ROM: 0x489718
+	.4byte 0x3FDACBC8
+	.4byte 0xC0CE91C9
+
 .global lbl_805DB400
 lbl_805DB400:
-	.incbin "baserom.dol", 0x489720, 0x8
+	# ROM: 0x489720
+	.4byte 0x3FB4D0DC
+	.4byte 0xFCC5B8DC
+
 .global lbl_805DB408
 lbl_805DB408:
-	.incbin "baserom.dol", 0x489728, 0x8
+	# ROM: 0x489728
+	.4byte 0x3FDBE76C
+	.4byte 0x8B439581
+
 .global lbl_805DB410
 lbl_805DB410:
-	.incbin "baserom.dol", 0x489730, 0x8
+	# ROM: 0x489730
+	.4byte 0x3FEC5A1C
+	.4byte 0xAC083127
+
 .global lbl_805DB418
 lbl_805DB418:
-	.incbin "baserom.dol", 0x489738, 0x8
+	# ROM: 0x489738
+	.4byte 0x3FE3AE14
+	.4byte 0x7AE147AE
+
 .global lbl_805DB420
 lbl_805DB420:
-	.incbin "baserom.dol", 0x489740, 0x8
+	# ROM: 0x489740
+	.4byte 0x3FE66E97
+	.4byte 0x8D4FDF3C
+
 .global lbl_805DB428
 lbl_805DB428:
-	.incbin "baserom.dol", 0x489748, 0x8
+	# ROM: 0x489748
+	.4byte 0x3FE2147A
+	.4byte 0xE147AE14
+
 .global lbl_805DB430
 lbl_805DB430:
-	.incbin "baserom.dol", 0x489750, 0x8
+	# ROM: 0x489750
+	.4byte 0x3FE6D0E5
+	.4byte 0x60418937
+
 
 .section .sbss2, "", @nobits # 0x805dc420 - 0x805DC448
 .global "_gxBlack"

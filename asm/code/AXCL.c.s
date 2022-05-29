@@ -4,7 +4,7 @@
 .global "__AXGetCommandListCycles"
 "__AXGetCommandListCycles":
 /* 80337164 00332E04  80 6D C2 4C */	lwz r3, "__AXCommandListCycles"-_SDA_BASE_(r13)
-/* 80337168 00332E08  4E 80 00 20 */	blr 
+/* 80337168 00332E08  4E 80 00 20 */	blr
 
 .global "__AXGetCommandListAddress"
 "__AXGetCommandListAddress":
@@ -19,7 +19,7 @@
 /* 8033718C 00332E2C  7C 05 02 14 */	add r0, r5, r0
 /* 80337190 00332E30  90 8D C2 58 */	stw r4, "__AXCommandListPosition"-_SDA_BASE_(r13)
 /* 80337194 00332E34  90 0D C2 54 */	stw r0, "__AXClWrite"-_SDA_BASE_(r13)
-/* 80337198 00332E38  4E 80 00 20 */	blr 
+/* 80337198 00332E38  4E 80 00 20 */	blr
 
 .global "__AXNextFrame"
 "__AXNextFrame":
@@ -659,7 +659,7 @@ lbl_80337B10:
 /* 80337B4C 003337EC  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80337B50 003337F0  7C 08 03 A6 */	mtlr r0
 /* 80337B54 003337F4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80337B58 003337F8  4E 80 00 20 */	blr 
+/* 80337B58 003337F8  4E 80 00 20 */	blr
 
 .global "__AXClInit"
 "__AXClInit":
@@ -677,46 +677,46 @@ lbl_80337B10:
 /* 80337B88 00333828  B0 0D C2 44 */	sth r0, "__AXAuxAVolume"-_SDA_BASE_(r13)
 /* 80337B8C 0033382C  B0 0D C2 42 */	sth r0, "__AXAuxBVolume"-_SDA_BASE_(r13)
 /* 80337B90 00333830  B0 0D C2 40 */	sth r0, "__AXAuxCVolume"-_SDA_BASE_(r13)
-/* 80337B94 00333834  4E 80 00 20 */	blr 
+/* 80337B94 00333834  4E 80 00 20 */	blr
 
 .global "__AXClQuit"
 "__AXClQuit":
-/* 80337B98 00333838  4E 80 00 20 */	blr 
+/* 80337B98 00333838  4E 80 00 20 */	blr
 
 .global "AXSetMode"
 "AXSetMode":
 /* 80337B9C 0033383C  90 6D C2 50 */	stw r3, "__AXClMode"-_SDA_BASE_(r13)
-/* 80337BA0 00333840  4E 80 00 20 */	blr 
+/* 80337BA0 00333840  4E 80 00 20 */	blr
 
 .global "AXGetAuxAReturnVolume"
 "AXGetAuxAReturnVolume":
 /* 80337BA4 00333844  A0 6D C2 44 */	lhz r3, "__AXAuxAVolume"-_SDA_BASE_(r13)
-/* 80337BA8 00333848  4E 80 00 20 */	blr 
+/* 80337BA8 00333848  4E 80 00 20 */	blr
 
 .global "AXGetAuxBReturnVolume"
 "AXGetAuxBReturnVolume":
 /* 80337BAC 0033384C  A0 6D C2 42 */	lhz r3, "__AXAuxBVolume"-_SDA_BASE_(r13)
-/* 80337BB0 00333850  4E 80 00 20 */	blr 
+/* 80337BB0 00333850  4E 80 00 20 */	blr
 
 .global "AXGetAuxCReturnVolume"
 "AXGetAuxCReturnVolume":
 /* 80337BB4 00333854  A0 6D C2 40 */	lhz r3, "__AXAuxCVolume"-_SDA_BASE_(r13)
-/* 80337BB8 00333858  4E 80 00 20 */	blr 
+/* 80337BB8 00333858  4E 80 00 20 */	blr
 
 .global "AXSetAuxAReturnVolume"
 "AXSetAuxAReturnVolume":
 /* 80337BBC 0033385C  B0 6D C2 44 */	sth r3, "__AXAuxAVolume"-_SDA_BASE_(r13)
-/* 80337BC0 00333860  4E 80 00 20 */	blr 
+/* 80337BC0 00333860  4E 80 00 20 */	blr
 
 .global "AXSetAuxBReturnVolume"
 "AXSetAuxBReturnVolume":
 /* 80337BC4 00333864  B0 6D C2 42 */	sth r3, "__AXAuxBVolume"-_SDA_BASE_(r13)
-/* 80337BC8 00333868  4E 80 00 20 */	blr 
+/* 80337BC8 00333868  4E 80 00 20 */	blr
 
 .global "AXSetAuxCReturnVolume"
 "AXSetAuxCReturnVolume":
 /* 80337BCC 0033386C  B0 6D C2 40 */	sth r3, "__AXAuxCVolume"-_SDA_BASE_(r13)
-/* 80337BD0 00333870  4E 80 00 20 */	blr 
+/* 80337BD0 00333870  4E 80 00 20 */	blr
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "__AXCommandList"

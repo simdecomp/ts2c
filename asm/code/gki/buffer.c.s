@@ -142,7 +142,7 @@ lbl_8033B0A8:
 /* 8033B0C4 00336D64  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8033B0C8 00336D68  7C 08 03 A6 */	mtlr r0
 /* 8033B0CC 00336D6C  38 21 00 40 */	addi r1, r1, 0x40
-/* 8033B0D0 00336D70  4E 80 00 20 */	blr 
+/* 8033B0D0 00336D70  4E 80 00 20 */	blr
 
 .global "gki_buffer_init"
 "gki_buffer_init":
@@ -318,7 +318,7 @@ lbl_8033B1D4:
 /* 8033B370 00337010  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8033B374 00337014  7C 08 03 A6 */	mtlr r0
 /* 8033B378 00337018  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033B37C 0033701C  4E 80 00 20 */	blr 
+/* 8033B37C 0033701C  4E 80 00 20 */	blr
 
 .global "GKI_init_q"
 "GKI_init_q":
@@ -326,7 +326,7 @@ lbl_8033B1D4:
 /* 8033B384 00337024  90 03 00 04 */	stw r0, 4(r3)
 /* 8033B388 00337028  90 03 00 00 */	stw r0, 0(r3)
 /* 8033B38C 0033702C  B0 03 00 08 */	sth r0, 8(r3)
-/* 8033B390 00337030  4E 80 00 20 */	blr 
+/* 8033B390 00337030  4E 80 00 20 */	blr
 
 .global "GKI_getbuf"
 "GKI_getbuf":
@@ -444,7 +444,7 @@ lbl_8033B51C:
 /* 8033B524 003371C4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033B528 003371C8  7C 08 03 A6 */	mtlr r0
 /* 8033B52C 003371CC  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033B530 003371D0  4E 80 00 20 */	blr 
+/* 8033B530 003371D0  4E 80 00 20 */	blr
 
 .global "GKI_getpoolbuf"
 "GKI_getpoolbuf":
@@ -510,7 +510,7 @@ lbl_8033B604:
 /* 8033B60C 003372AC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033B610 003372B0  7C 08 03 A6 */	mtlr r0
 /* 8033B614 003372B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033B618 003372B8  4E 80 00 20 */	blr 
+/* 8033B618 003372B8  4E 80 00 20 */	blr
 
 .global "GKI_freebuf"
 "GKI_freebuf":
@@ -618,7 +618,7 @@ lbl_8033B778:
 /* 8033B77C 0033741C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8033B780 00337420  7C 08 03 A6 */	mtlr r0
 /* 8033B784 00337424  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033B788 00337428  4E 80 00 20 */	blr 
+/* 8033B788 00337428  4E 80 00 20 */	blr
 
 .global "GKI_get_buf_size"
 "GKI_get_buf_size":
@@ -626,7 +626,7 @@ lbl_8033B778:
 /* 8033B790 00337430  54 60 07 FF */	clrlwi. r0, r3, 0x1f
 /* 8033B794 00337434  41 82 00 0C */	beq lbl_8033B7A0
 /* 8033B798 00337438  38 60 00 00 */	li r3, 0
-/* 8033B79C 0033743C  4E 80 00 20 */	blr 
+/* 8033B79C 0033743C  4E 80 00 20 */	blr
 lbl_8033B7A0:
 /* 8033B7A0 00337440  88 03 00 04 */	lbz r0, 4(r3)
 /* 8033B7A4 00337444  28 00 00 09 */	cmplwi r0, 9
@@ -637,10 +637,10 @@ lbl_8033B7A0:
 /* 8033B7B8 00337458  3C 63 00 03 */	addis r3, r3, 3
 /* 8033B7BC 0033745C  7C 63 02 14 */	add r3, r3, r0
 /* 8033B7C0 00337460  A0 63 89 E8 */	lhz r3, -0x7618(r3)
-/* 8033B7C4 00337464  4E 80 00 20 */	blr 
+/* 8033B7C4 00337464  4E 80 00 20 */	blr
 lbl_8033B7C8:
 /* 8033B7C8 00337468  38 60 00 00 */	li r3, 0
-/* 8033B7CC 0033746C  4E 80 00 20 */	blr 
+/* 8033B7CC 0033746C  4E 80 00 20 */	blr
 
 .global "GKI_send_msg"
 "GKI_send_msg":
@@ -766,7 +766,7 @@ lbl_8033B96C:
 /* 8033B97C 0033761C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8033B980 00337620  7C 08 03 A6 */	mtlr r0
 /* 8033B984 00337624  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033B988 00337628  4E 80 00 20 */	blr 
+/* 8033B988 00337628  4E 80 00 20 */	blr
 
 .global "GKI_read_mbox"
 "GKI_read_mbox":
@@ -817,7 +817,7 @@ lbl_8033BA20:
 /* 8033BA2C 003376CC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033BA30 003376D0  7C 08 03 A6 */	mtlr r0
 /* 8033BA34 003376D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033BA38 003376D8  4E 80 00 20 */	blr 
+/* 8033BA38 003376D8  4E 80 00 20 */	blr
 
 .global "GKI_enqueue"
 "GKI_enqueue":
@@ -909,7 +909,7 @@ lbl_8033BB5C:
 /* 8033BB68 00337808  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033BB6C 0033780C  7C 08 03 A6 */	mtlr r0
 /* 8033BB70 00337810  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033BB74 00337814  4E 80 00 20 */	blr 
+/* 8033BB74 00337814  4E 80 00 20 */	blr
 
 .global "GKI_enqueue_head"
 "GKI_enqueue_head":
@@ -1002,7 +1002,7 @@ lbl_8033BC9C:
 /* 8033BCA8 00337948  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8033BCAC 0033794C  7C 08 03 A6 */	mtlr r0
 /* 8033BCB0 00337950  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033BCB4 00337954  4E 80 00 20 */	blr 
+/* 8033BCB4 00337954  4E 80 00 20 */	blr
 
 .global "GKI_dequeue"
 "GKI_dequeue":
@@ -1050,7 +1050,7 @@ lbl_8033BD40:
 /* 8033BD48 003379E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033BD4C 003379EC  7C 08 03 A6 */	mtlr r0
 /* 8033BD50 003379F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033BD54 003379F4  4E 80 00 20 */	blr 
+/* 8033BD54 003379F4  4E 80 00 20 */	blr
 
 .global "GKI_remove_from_queue"
 "GKI_remove_from_queue":
@@ -1108,12 +1108,12 @@ lbl_8033BE04:
 /* 8033BE0C 00337AAC  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8033BE10 00337AB0  7C 08 03 A6 */	mtlr r0
 /* 8033BE14 00337AB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8033BE18 00337AB8  4E 80 00 20 */	blr 
+/* 8033BE18 00337AB8  4E 80 00 20 */	blr
 
 .global "GKI_getfirst"
 "GKI_getfirst":
 /* 8033BE1C 00337ABC  80 63 00 00 */	lwz r3, 0(r3)
-/* 8033BE20 00337AC0  4E 80 00 20 */	blr 
+/* 8033BE20 00337AC0  4E 80 00 20 */	blr
 
 .global "GKI_getnext"
 "GKI_getnext":
@@ -1121,17 +1121,17 @@ lbl_8033BE04:
 /* 8033BE28 00337AC8  2C 03 00 00 */	cmpwi r3, 0
 /* 8033BE2C 00337ACC  41 82 00 0C */	beq lbl_8033BE38
 /* 8033BE30 00337AD0  38 63 00 08 */	addi r3, r3, 8
-/* 8033BE34 00337AD4  4E 80 00 20 */	blr 
+/* 8033BE34 00337AD4  4E 80 00 20 */	blr
 lbl_8033BE38:
 /* 8033BE38 00337AD8  38 60 00 00 */	li r3, 0
-/* 8033BE3C 00337ADC  4E 80 00 20 */	blr 
+/* 8033BE3C 00337ADC  4E 80 00 20 */	blr
 
 .global "GKI_queue_is_empty"
 "GKI_queue_is_empty":
 /* 8033BE40 00337AE0  A0 03 00 08 */	lhz r0, 8(r3)
 /* 8033BE44 00337AE4  7C 00 00 34 */	cntlzw r0, r0
 /* 8033BE48 00337AE8  54 03 DE 3E */	rlwinm r3, r0, 0x1b, 0x18, 0x1f
-/* 8033BE4C 00337AEC  4E 80 00 20 */	blr 
+/* 8033BE4C 00337AEC  4E 80 00 20 */	blr
 
 .global "GKI_create_pool"
 "GKI_create_pool":
@@ -1364,7 +1364,7 @@ lbl_8033C180:
 /* 8033C188 00337E28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033C18C 00337E2C  7C 08 03 A6 */	mtlr r0
 /* 8033C190 00337E30  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033C194 00337E34  4E 80 00 20 */	blr 
+/* 8033C194 00337E34  4E 80 00 20 */	blr
 
 .global "GKI_delete_pool"
 "GKI_delete_pool":
@@ -1464,24 +1464,53 @@ lbl_8033C2E0:
 /* 8033C2E8 00337F88  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033C2EC 00337F8C  7C 08 03 A6 */	mtlr r0
 /* 8033C2F0 00337F90  38 21 00 20 */	addi r1, r1, 0x20
-/* 8033C2F4 00337F94  4E 80 00 20 */	blr 
+/* 8033C2F4 00337F94  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8045FC38
 lbl_8045FC38:
-	.incbin "baserom.dol", 0x45BD38, 0x18
+	# ROM: 0x45BD38
+	.asciz "getbuf: Size is zero"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045FC50
 lbl_8045FC50:
-	.incbin "baserom.dol", 0x45BD50, 0x98
+	# ROM: 0x45BD50
+	.asciz "getbuf: Size is too big"
+	.asciz "Free - Buf Corrupted"
+	.byte 0x00, 0x00, 0x00
+	.asciz "Freeing Linked Buf"
+	.byte 0x00
+	.asciz "Bad Buf QId"
+	.asciz "Sending to unknown dest"
+	.asciz "Send - Buffer corrupted"
+	.asciz "Send - buffer linked"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045FCE8
 lbl_8045FCE8:
-	.incbin "baserom.dol", 0x45BDE8, 0x1C
+	# ROM: 0x45BDE8
+	.asciz "Enqueue - Buffer corrupted"
+	.byte 0x00
+
 .global lbl_8045FD04
 lbl_8045FD04:
-	.incbin "baserom.dol", 0x45BE04, 0x20
+	# ROM: 0x45BE04
+	.asciz "Eneueue - buf already linked"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045FD24
 lbl_8045FD24:
-	.incbin "baserom.dol", 0x45BE24, 0x44
+	# ROM: 0x45BE24
+	.asciz "Eneueue head - buf already linked"
+	.byte 0x00, 0x00
+	.asciz "GKI_get_buf_start:: bad addr"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8045FD68
 lbl_8045FD68:
-	.incbin "baserom.dol", 0x45BE68, 0x18
+	# ROM: 0x45BE68
+	.asciz "Deleting bad pool"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+

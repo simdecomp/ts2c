@@ -70,12 +70,12 @@ lbl_8030B9C4:
 /* 8030B9F4 00307694  54 00 10 3A */	slwi r0, r0, 2
 /* 8030B9F8 00307698  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8030B9FC 0030769C  7C 69 03 A6 */	mtctr r3
-/* 8030BA00 003076A0  4E 80 04 20 */	bctr 
+/* 8030BA00 003076A0  4E 80 04 20 */	bctr
 /* 8030BA04 003076A4  81 9F 00 70 */	lwz r12, 0x70(r31)
 /* 8030BA08 003076A8  7F 03 C3 78 */	mr r3, r24
 /* 8030BA0C 003076AC  7F 64 DB 78 */	mr r4, r27
 /* 8030BA10 003076B0  7D 89 03 A6 */	mtctr r12
-/* 8030BA14 003076B4  4E 80 04 21 */	bctrl 
+/* 8030BA14 003076B4  4E 80 04 21 */	bctrl
 /* 8030BA18 003076B8  80 96 00 10 */	lwz r4, 0x10(r22)
 /* 8030BA1C 003076BC  7C 84 E8 2E */	lwzx r4, r4, r29
 /* 8030BA20 003076C0  90 64 00 18 */	stw r3, 0x18(r4)
@@ -200,7 +200,7 @@ lbl_8030BBC8:
 /* 8030BBCC 0030786C  7F 03 C3 78 */	mr r3, r24
 /* 8030BBD0 00307870  7F 64 DB 78 */	mr r4, r27
 /* 8030BBD4 00307874  7D 89 03 A6 */	mtctr r12
-/* 8030BBD8 00307878  4E 80 04 21 */	bctrl 
+/* 8030BBD8 00307878  4E 80 04 21 */	bctrl
 /* 8030BBDC 0030787C  80 96 00 10 */	lwz r4, 0x10(r22)
 /* 8030BBE0 00307880  7C 84 E8 2E */	lwzx r4, r4, r29
 /* 8030BBE4 00307884  90 64 00 08 */	stw r3, 8(r4)
@@ -209,7 +209,7 @@ lbl_8030BBC8:
 /* 8030BBF0 00307890  7F 03 C3 78 */	mr r3, r24
 /* 8030BBF4 00307894  7F 64 DB 78 */	mr r4, r27
 /* 8030BBF8 00307898  7D 89 03 A6 */	mtctr r12
-/* 8030BBFC 0030789C  4E 80 04 21 */	bctrl 
+/* 8030BBFC 0030789C  4E 80 04 21 */	bctrl
 /* 8030BC00 003078A0  80 96 00 10 */	lwz r4, 0x10(r22)
 /* 8030BC04 003078A4  7C 84 E8 2E */	lwzx r4, r4, r29
 /* 8030BC08 003078A8  90 64 00 08 */	stw r3, 8(r4)
@@ -308,7 +308,7 @@ lbl_8030BD3C:
 /* 8030BD50 003079F0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8030BD54 003079F4  7C 08 03 A6 */	mtlr r0
 /* 8030BD58 003079F8  38 21 00 40 */	addi r1, r1, 0x40
-/* 8030BD5C 003079FC  4E 80 00 20 */	blr 
+/* 8030BD5C 003079FC  4E 80 00 20 */	blr
 
 .global "Resolve__21AptCharacterAnimationFPvP12AptConstFilePv"
 "Resolve__21AptCharacterAnimationFPvP12AptConstFilePv":
@@ -337,7 +337,7 @@ lbl_8030BDAC:
 /* 8030BDB0 00307A50  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8030BDB4 00307A54  7C 08 03 A6 */	mtlr r0
 /* 8030BDB8 00307A58  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030BDBC 00307A5C  4E 80 00 20 */	blr 
+/* 8030BDBC 00307A5C  4E 80 00 20 */	blr
 
 .global "UnmapCharacter__21AptCharacterAnimationFP12AptCharacter"
 "UnmapCharacter__21AptCharacterAnimationFP12AptCharacter":
@@ -353,14 +353,14 @@ lbl_8030BDD8:
 /* 8030BDE0 00307A80  7C 00 20 40 */	cmplw r0, r4
 /* 8030BDE4 00307A84  40 82 00 0C */	bne lbl_8030BDF0
 /* 8030BDE8 00307A88  7C E3 3B 78 */	mr r3, r7
-/* 8030BDEC 00307A8C  4E 80 00 20 */	blr 
+/* 8030BDEC 00307A8C  4E 80 00 20 */	blr
 lbl_8030BDF0:
 /* 8030BDF0 00307A90  38 C6 00 04 */	addi r6, r6, 4
 /* 8030BDF4 00307A94  38 E7 00 01 */	addi r7, r7, 1
 /* 8030BDF8 00307A98  42 00 FF E0 */	bdnz lbl_8030BDD8
 lbl_8030BDFC:
 /* 8030BDFC 00307A9C  38 60 FF FF */	li r3, -1
-/* 8030BE00 00307AA0  4E 80 00 20 */	blr 
+/* 8030BE00 00307AA0  4E 80 00 20 */	blr
 
 .global "IsImport__21AptCharacterAnimationFi"
 "IsImport__21AptCharacterAnimationFi":
@@ -377,14 +377,14 @@ lbl_8030BE1C:
 /* 8030BE28 00307AC8  7C 04 00 00 */	cmpw r4, r0
 /* 8030BE2C 00307ACC  40 82 00 0C */	bne lbl_8030BE38
 /* 8030BE30 00307AD0  7C E3 3B 78 */	mr r3, r7
-/* 8030BE34 00307AD4  4E 80 00 20 */	blr 
+/* 8030BE34 00307AD4  4E 80 00 20 */	blr
 lbl_8030BE38:
 /* 8030BE38 00307AD8  38 C6 00 10 */	addi r6, r6, 0x10
 /* 8030BE3C 00307ADC  38 E7 00 01 */	addi r7, r7, 1
 /* 8030BE40 00307AE0  42 00 FF DC */	bdnz lbl_8030BE1C
 lbl_8030BE44:
 /* 8030BE44 00307AE4  38 60 FF FF */	li r3, -1
-/* 8030BE48 00307AE8  4E 80 00 20 */	blr 
+/* 8030BE48 00307AE8  4E 80 00 20 */	blr
 
 .global "Unresolve__21AptCharacterAnimationFPv"
 "Unresolve__21AptCharacterAnimationFPv":
@@ -506,7 +506,7 @@ lbl_8030BFB4:
 /* 8030BFF0 00307C90  54 00 10 3A */	slwi r0, r0, 2
 /* 8030BFF4 00307C94  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8030BFF8 00307C98  7C 69 03 A6 */	mtctr r3
-/* 8030BFFC 00307C9C  4E 80 04 20 */	bctr 
+/* 8030BFFC 00307C9C  4E 80 04 20 */	bctr
 /* 8030C000 00307CA0  38 65 00 08 */	addi r3, r5, 8
 /* 8030C004 00307CA4  7F 44 D3 78 */	mr r4, r26
 /* 8030C008 00307CA8  38 B9 00 30 */	addi r5, r25, 0x30
@@ -515,7 +515,7 @@ lbl_8030BFB4:
 /* 8030C014 00307CB4  81 9F 00 74 */	lwz r12, 0x74(r31)
 /* 8030C018 00307CB8  80 65 00 18 */	lwz r3, 0x18(r5)
 /* 8030C01C 00307CBC  7D 89 03 A6 */	mtctr r12
-/* 8030C020 00307CC0  4E 80 04 21 */	bctrl 
+/* 8030C020 00307CC0  4E 80 04 21 */	bctrl
 /* 8030C024 00307CC4  80 79 00 10 */	lwz r3, 0x10(r25)
 /* 8030C028 00307CC8  7C 63 E8 2E */	lwzx r3, r3, r29
 /* 8030C02C 00307CCC  93 83 00 18 */	stw r28, 0x18(r3)
@@ -631,7 +631,7 @@ lbl_8030C18C:
 /* 8030C1B8 00307E58  81 9F 00 58 */	lwz r12, 0x58(r31)
 /* 8030C1BC 00307E5C  80 65 00 08 */	lwz r3, 8(r5)
 /* 8030C1C0 00307E60  7D 89 03 A6 */	mtctr r12
-/* 8030C1C4 00307E64  4E 80 04 21 */	bctrl 
+/* 8030C1C4 00307E64  4E 80 04 21 */	bctrl
 /* 8030C1C8 00307E68  80 79 00 10 */	lwz r3, 0x10(r25)
 /* 8030C1CC 00307E6C  7C 63 E8 2E */	lwzx r3, r3, r29
 /* 8030C1D0 00307E70  93 83 00 08 */	stw r28, 8(r3)
@@ -653,7 +653,7 @@ lbl_8030C1EC:
 /* 8030C20C 00307EAC  81 9F 00 68 */	lwz r12, 0x68(r31)
 /* 8030C210 00307EB0  80 65 00 08 */	lwz r3, 8(r5)
 /* 8030C214 00307EB4  7D 89 03 A6 */	mtctr r12
-/* 8030C218 00307EB8  4E 80 04 21 */	bctrl 
+/* 8030C218 00307EB8  4E 80 04 21 */	bctrl
 /* 8030C21C 00307EBC  80 79 00 10 */	lwz r3, 0x10(r25)
 /* 8030C220 00307EC0  7C 63 E8 2E */	lwzx r3, r3, r29
 /* 8030C224 00307EC4  93 83 00 08 */	stw r28, 8(r3)
@@ -822,7 +822,7 @@ lbl_8030C44C:
 /* 8030C45C 003080FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030C460 00308100  7C 08 03 A6 */	mtlr r0
 /* 8030C464 00308104  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030C468 00308108  4E 80 00 20 */	blr 
+/* 8030C468 00308108  4E 80 00 20 */	blr
 
 .global "__ct__25AptCharacterAnimationInstF22AptSharedPtr<7AptFile>"
 "__ct__25AptCharacterAnimationInstF22AptSharedPtr<7AptFile>":
@@ -855,7 +855,7 @@ lbl_8030C44C:
 /* 8030C4D4 00308174  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030C4D8 00308178  7C 08 03 A6 */	mtlr r0
 /* 8030C4DC 0030817C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030C4E0 00308180  4E 80 00 20 */	blr 
+/* 8030C4E0 00308180  4E 80 00 20 */	blr
 
 .global "__dt__25AptCharacterAnimationInstFv"
 "__dt__25AptCharacterAnimationInstFv":
@@ -886,7 +886,7 @@ lbl_8030C534:
 /* 8030C540 003081E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030C544 003081E4  7C 08 03 A6 */	mtlr r0
 /* 8030C548 003081E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030C54C 003081EC  4E 80 00 20 */	blr 
+/* 8030C54C 003081EC  4E 80 00 20 */	blr
 
 .global "getSwfVersion__25AptCharacterAnimationInstFv"
 "getSwfVersion__25AptCharacterAnimationInstFv":
@@ -909,7 +909,7 @@ lbl_8030C588:
 /* 8030C588 00308228  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030C58C 0030822C  7C 08 03 A6 */	mtlr r0
 /* 8030C590 00308230  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030C594 00308234  4E 80 00 20 */	blr 
+/* 8030C594 00308234  4E 80 00 20 */	blr
 
 .global "PreDestroy__25AptCharacterAnimationInstFv"
 "PreDestroy__25AptCharacterAnimationInstFv":
@@ -978,7 +978,7 @@ lbl_8030C668:
 /* 8030C670 00308310  7F A4 EB 78 */	mr r4, r29
 /* 8030C674 00308314  80 A5 00 08 */	lwz r5, 8(r5)
 /* 8030C678 00308318  7D 89 03 A6 */	mtctr r12
-/* 8030C67C 0030831C  4E 80 04 21 */	bctrl 
+/* 8030C67C 0030831C  4E 80 04 21 */	bctrl
 /* 8030C680 00308320  48 00 01 30 */	b lbl_8030C7B0
 lbl_8030C684:
 /* 8030C684 00308324  80 05 00 08 */	lwz r0, 8(r5)
@@ -1077,7 +1077,7 @@ lbl_8030C7B8:
 /* 8030C7CC 0030846C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030C7D0 00308470  7C 08 03 A6 */	mtlr r0
 /* 8030C7D4 00308474  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030C7D8 00308478  4E 80 00 20 */	blr 
+/* 8030C7D8 00308478  4E 80 00 20 */	blr
 
 .global "__ct__20AptAnimationPoolDataFRC13AptInitParmsT"
 "__ct__20AptAnimationPoolDataFRC13AptInitParmsT":
@@ -1171,7 +1171,7 @@ lbl_8030C894:
 /* 8030C92C 003085CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030C930 003085D0  7C 08 03 A6 */	mtlr r0
 /* 8030C934 003085D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030C938 003085D8  4E 80 00 20 */	blr 
+/* 8030C938 003085D8  4E 80 00 20 */	blr
 
 .global "__dt__20AptAnimationPoolDataFv"
 "__dt__20AptAnimationPoolDataFv":
@@ -1233,7 +1233,7 @@ lbl_8030CA04:
 /* 8030CA10 003086B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030CA14 003086B4  7C 08 03 A6 */	mtlr r0
 /* 8030CA18 003086B8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030CA1C 003086BC  4E 80 00 20 */	blr 
+/* 8030CA1C 003086BC  4E 80 00 20 */	blr
 
 .global "PreDestroy__20AptAnimationPoolDataFv"
 "PreDestroy__20AptAnimationPoolDataFv":
@@ -1284,7 +1284,7 @@ lbl_8030CA98:
 /* 8030CABC 0030875C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030CAC0 00308760  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030CAC4 00308764  7D 89 03 A6 */	mtctr r12
-/* 8030CAC8 00308768  4E 80 04 21 */	bctrl 
+/* 8030CAC8 00308768  4E 80 04 21 */	bctrl
 /* 8030CACC 0030876C  3B 20 00 00 */	li r25, 0
 /* 8030CAD0 00308770  48 00 00 14 */	b lbl_8030CAE4
 lbl_8030CAD4:
@@ -1330,7 +1330,7 @@ lbl_8030CB40:
 /* 8030CB60 00308800  38 C0 02 F9 */	li r6, 0x2f9
 /* 8030CB64 00308804  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030CB68 00308808  7D 89 03 A6 */	mtctr r12
-/* 8030CB6C 0030880C  4E 80 04 21 */	bctrl 
+/* 8030CB6C 0030880C  4E 80 04 21 */	bctrl
 lbl_8030CB70:
 /* 8030CB70 00308810  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 8030CB74 00308814  7F C3 D9 2E */	stwx r30, r3, r27
@@ -1351,7 +1351,7 @@ lbl_8030CB80:
 /* 8030CBA8 00308848  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030CBAC 0030884C  7C 08 03 A6 */	mtlr r0
 /* 8030CBB0 00308850  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030CBB4 00308854  4E 80 00 20 */	blr 
+/* 8030CBB4 00308854  4E 80 00 20 */	blr
 
 .global "tickIntervalTimers__20AptAnimationPoolDataFi"
 "tickIntervalTimers__20AptAnimationPoolDataFi":
@@ -1488,7 +1488,7 @@ lbl_8030CD84:
 /* 8030CD9C 00308A3C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030CDA0 00308A40  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030CDA4 00308A44  7D 89 03 A6 */	mtctr r12
-/* 8030CDA8 00308A48  4E 80 04 21 */	bctrl 
+/* 8030CDA8 00308A48  4E 80 04 21 */	bctrl
 /* 8030CDAC 00308A4C  80 1A 00 2C */	lwz r0, 0x2c(r26)
 /* 8030CDB0 00308A50  7C 60 F2 14 */	add r3, r0, r30
 /* 8030CDB4 00308A54  4B FF E1 9D */	bl "cleanParams__16AptIntervalTimerFv"
@@ -1518,7 +1518,7 @@ lbl_8030CDEC:
 /* 8030CE04 00308AA4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8030CE08 00308AA8  7C 08 03 A6 */	mtlr r0
 /* 8030CE0C 00308AAC  38 21 00 80 */	addi r1, r1, 0x80
-/* 8030CE10 00308AB0  4E 80 00 20 */	blr 
+/* 8030CE10 00308AB0  4E 80 00 20 */	blr
 
 .global "_tickNewInsts__20AptAnimationPoolDataFv"
 "_tickNewInsts__20AptAnimationPoolDataFv":
@@ -1576,7 +1576,7 @@ lbl_8030CEC0:
 /* 8030CED4 00308B74  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030CED8 00308B78  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030CEDC 00308B7C  7D 89 03 A6 */	mtctr r12
-/* 8030CEE0 00308B80  4E 80 04 21 */	bctrl 
+/* 8030CEE0 00308B80  4E 80 04 21 */	bctrl
 /* 8030CEE4 00308B84  3B BD 00 04 */	addi r29, r29, 4
 /* 8030CEE8 00308B88  3B 9C 00 01 */	addi r28, r28, 1
 lbl_8030CEEC:
@@ -1590,7 +1590,7 @@ lbl_8030CEEC:
 /* 8030CF08 00308BA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030CF0C 00308BAC  7C 08 03 A6 */	mtlr r0
 /* 8030CF10 00308BB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030CF14 00308BB4  4E 80 00 20 */	blr 
+/* 8030CF14 00308BB4  4E 80 00 20 */	blr
 
 .global "runActions__20AptAnimationPoolDataFv"
 "runActions__20AptAnimationPoolDataFv":
@@ -1724,7 +1724,7 @@ lbl_8030D0D8:
 /* 8030D0F0 00308D90  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030D0F4 00308D94  7C 08 03 A6 */	mtlr r0
 /* 8030D0F8 00308D98  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030D0FC 00308D9C  4E 80 00 20 */	blr 
+/* 8030D0FC 00308D9C  4E 80 00 20 */	blr
 
 .global "addInput__20AptAnimationPoolDataFUi"
 "addInput__20AptAnimationPoolDataFUi":
@@ -1762,12 +1762,12 @@ lbl_8030D13C:
 /* 8030D178 00308E18  90 01 00 08 */	stw r0, 8(r1)
 /* 8030D17C 00308E1C  38 80 00 08 */	li r4, 8
 /* 8030D180 00308E20  7D 89 03 A6 */	mtctr r12
-/* 8030D184 00308E24  4E 80 04 21 */	bctrl 
+/* 8030D184 00308E24  4E 80 04 21 */	bctrl
 lbl_8030D188:
 /* 8030D188 00308E28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030D18C 00308E2C  7C 08 03 A6 */	mtlr r0
 /* 8030D190 00308E30  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030D194 00308E34  4E 80 00 20 */	blr 
+/* 8030D194 00308E34  4E 80 00 20 */	blr
 
 .global "addInput__20AptAnimationPoolDataF12AptInputType13AptInputState18AptInputController"
 "addInput__20AptAnimationPoolDataF12AptInputType13AptInputState18AptInputController":
@@ -1839,7 +1839,7 @@ lbl_8030D270:
 /* 8030D288 00308F28  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030D28C 00308F2C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030D290 00308F30  7D 89 03 A6 */	mtctr r12
-/* 8030D294 00308F34  4E 80 04 21 */	bctrl 
+/* 8030D294 00308F34  4E 80 04 21 */	bctrl
 /* 8030D298 00308F38  80 1B 00 2C */	lwz r0, 0x2c(r27)
 /* 8030D29C 00308F3C  7C 60 FA 14 */	add r3, r0, r31
 /* 8030D2A0 00308F40  4B FF DC B1 */	bl "cleanParams__16AptIntervalTimerFv"
@@ -1865,7 +1865,7 @@ lbl_8030D2D8:
 /* 8030D2E0 00308F80  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030D2E4 00308F84  7C 08 03 A6 */	mtlr r0
 /* 8030D2E8 00308F88  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030D2EC 00308F8C  4E 80 00 20 */	blr 
+/* 8030D2EC 00308F8C  4E 80 00 20 */	blr
 
 .global "clearBIL__20AptAnimationPoolDataFv"
 "clearBIL__20AptAnimationPoolDataFv":
@@ -1889,7 +1889,7 @@ lbl_8030D31C:
 /* 8030D330 00308FD0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030D334 00308FD4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030D338 00308FD8  7D 89 03 A6 */	mtctr r12
-/* 8030D33C 00308FDC  4E 80 04 21 */	bctrl 
+/* 8030D33C 00308FDC  4E 80 04 21 */	bctrl
 /* 8030D340 00308FE0  3B BD 00 1C */	addi r29, r29, 0x1c
 /* 8030D344 00308FE4  3B 9C 00 01 */	addi r28, r28, 1
 lbl_8030D348:
@@ -1903,7 +1903,7 @@ lbl_8030D348:
 /* 8030D364 00309004  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030D368 00309008  7C 08 03 A6 */	mtlr r0
 /* 8030D36C 0030900C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030D370 00309010  4E 80 00 20 */	blr 
+/* 8030D370 00309010  4E 80 00 20 */	blr
 
 .global "appendButtonToBIL__20AptAnimationPoolDataFP6AptCIHP9AptMatrix"
 "appendButtonToBIL__20AptAnimationPoolDataFP6AptCIHP9AptMatrix":
@@ -1927,7 +1927,7 @@ lbl_8030D348:
 /* 8030D3B8 00309058  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030D3BC 0030905C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030D3C0 00309060  7D 89 03 A6 */	mtctr r12
-/* 8030D3C4 00309064  4E 80 04 21 */	bctrl 
+/* 8030D3C4 00309064  4E 80 04 21 */	bctrl
 /* 8030D3C8 00309068  80 1E 00 10 */	lwz r0, 0x10(r30)
 /* 8030D3CC 0030906C  7F E4 FB 78 */	mr r4, r31
 /* 8030D3D0 00309070  80 7E 00 14 */	lwz r3, 0x14(r30)
@@ -1943,7 +1943,7 @@ lbl_8030D348:
 /* 8030D3F8 00309098  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030D3FC 0030909C  7C 08 03 A6 */	mtlr r0
 /* 8030D400 003090A0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030D404 003090A4  4E 80 00 20 */	blr 
+/* 8030D404 003090A4  4E 80 00 20 */	blr
 
 .global "__as__9AptMatrixFRC9AptMatrix"
 "__as__9AptMatrixFRC9AptMatrix":
@@ -1959,7 +1959,7 @@ lbl_8030D348:
 /* 8030D42C 003090CC  D0 43 00 0C */	stfs f2, 0xc(r3)
 /* 8030D430 003090D0  D0 23 00 10 */	stfs f1, 0x10(r3)
 /* 8030D434 003090D4  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 8030D438 003090D8  4E 80 00 20 */	blr 
+/* 8030D438 003090D8  4E 80 00 20 */	blr
 
 .global "removeFromBIL__20AptAnimationPoolDataFP6AptCIH"
 "removeFromBIL__20AptAnimationPoolDataFP6AptCIH":
@@ -1987,7 +1987,7 @@ lbl_8030D46C:
 /* 8030D48C 0030912C  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030D490 00309130  38 C0 05 28 */	li r6, 0x528
 /* 8030D494 00309134  7D 89 03 A6 */	mtctr r12
-/* 8030D498 00309138  4E 80 04 21 */	bctrl 
+/* 8030D498 00309138  4E 80 04 21 */	bctrl
 /* 8030D49C 0030913C  80 1A 00 10 */	lwz r0, 0x10(r26)
 /* 8030D4A0 00309140  38 7C 00 01 */	addi r3, r28, 1
 /* 8030D4A4 00309144  1C 83 00 1C */	mulli r4, r3, 0x1c
@@ -2013,7 +2013,7 @@ lbl_8030D4D4:
 /* 8030D4EC 0030918C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030D4F0 00309190  7C 08 03 A6 */	mtlr r0
 /* 8030D4F4 00309194  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030D4F8 00309198  4E 80 00 20 */	blr 
+/* 8030D4F8 00309198  4E 80 00 20 */	blr
 
 .global "isInputMasked__20AptAnimationPoolDataFP6AptCIH"
 "isInputMasked__20AptAnimationPoolDataFP6AptCIH":
@@ -2021,20 +2021,20 @@ lbl_8030D4D4:
 /* 8030D500 003091A0  2C 00 00 00 */	cmpwi r0, 0
 /* 8030D504 003091A4  40 82 00 24 */	bne lbl_8030D528
 /* 8030D508 003091A8  38 60 00 00 */	li r3, 0
-/* 8030D50C 003091AC  4E 80 00 20 */	blr 
+/* 8030D50C 003091AC  4E 80 00 20 */	blr
 /* 8030D510 003091B0  48 00 00 18 */	b lbl_8030D528
 lbl_8030D514:
 /* 8030D514 003091B4  7C 04 00 40 */	cmplw r4, r0
 /* 8030D518 003091B8  40 82 00 0C */	bne lbl_8030D524
 /* 8030D51C 003091BC  38 60 00 00 */	li r3, 0
-/* 8030D520 003091C0  4E 80 00 20 */	blr 
+/* 8030D520 003091C0  4E 80 00 20 */	blr
 lbl_8030D524:
 /* 8030D524 003091C4  80 84 00 48 */	lwz r4, 0x48(r4)
 lbl_8030D528:
 /* 8030D528 003091C8  2C 04 00 00 */	cmpwi r4, 0
 /* 8030D52C 003091CC  40 82 FF E8 */	bne lbl_8030D514
 /* 8030D530 003091D0  38 60 00 01 */	li r3, 1
-/* 8030D534 003091D4  4E 80 00 20 */	blr 
+/* 8030D534 003091D4  4E 80 00 20 */	blr
 
 .global "GetIDFromImportFile__21AptCharacterAnimationFi"
 "GetIDFromImportFile__21AptCharacterAnimationFi":
@@ -2081,7 +2081,7 @@ lbl_8030D5C0:
 /* 8030D5C8 00309268  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030D5CC 0030926C  7C 08 03 A6 */	mtlr r0
 /* 8030D5D0 00309270  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030D5D4 00309274  4E 80 00 20 */	blr 
+/* 8030D5D4 00309274  4E 80 00 20 */	blr
 
 .global "ExecuteInitActions__21AptCharacterAnimationFP6AptCIHi"
 "ExecuteInitActions__21AptCharacterAnimationFP6AptCIHi":
@@ -2158,7 +2158,7 @@ lbl_8030D6D0:
 /* 8030D6D8 00309378  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030D6DC 0030937C  7C 08 03 A6 */	mtlr r0
 /* 8030D6E0 00309380  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030D6E4 00309384  4E 80 00 20 */	blr 
+/* 8030D6E4 00309384  4E 80 00 20 */	blr
 
 .global "ExecuteInitAction__21AptCharacterAnimationFP6AptCIHi"
 "ExecuteInitAction__21AptCharacterAnimationFP6AptCIHi":
@@ -2231,7 +2231,7 @@ lbl_8030D7D4:
 /* 8030D7DC 0030947C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030D7E0 00309480  7C 08 03 A6 */	mtlr r0
 /* 8030D7E4 00309484  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030D7E8 00309488  4E 80 00 20 */	blr 
+/* 8030D7E8 00309488  4E 80 00 20 */	blr
 
 .global "ExportClassDefinitionAssets__21AptCharacterAnimationFP6AptCIH"
 "ExportClassDefinitionAssets__21AptCharacterAnimationFP6AptCIH":
@@ -2328,7 +2328,7 @@ lbl_8030D928:
 /* 8030D930 003095D0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030D934 003095D4  7C 08 03 A6 */	mtlr r0
 /* 8030D938 003095D8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030D93C 003095DC  4E 80 00 20 */	blr 
+/* 8030D93C 003095DC  4E 80 00 20 */	blr
 
 .global "RegisterReferences__20AptAnimationPoolDataFv"
 "RegisterReferences__20AptAnimationPoolDataFv":
@@ -2347,7 +2347,7 @@ lbl_8030D928:
 /* 8030D970 00309610  38 BD 07 44 */	addi r5, r29, 0x744
 /* 8030D974 00309614  38 60 00 00 */	li r3, 0
 /* 8030D978 00309618  7D 89 03 A6 */	mtctr r12
-/* 8030D97C 0030961C  4E 80 04 21 */	bctrl 
+/* 8030D97C 0030961C  4E 80 04 21 */	bctrl
 lbl_8030D980:
 /* 8030D980 00309620  80 9F 00 94 */	lwz r4, 0x94(r31)
 /* 8030D984 00309624  2C 04 00 00 */	cmpwi r4, 0
@@ -2356,7 +2356,7 @@ lbl_8030D980:
 /* 8030D990 00309630  38 BD 07 68 */	addi r5, r29, 0x768
 /* 8030D994 00309634  38 60 00 00 */	li r3, 0
 /* 8030D998 00309638  7D 89 03 A6 */	mtctr r12
-/* 8030D99C 0030963C  4E 80 04 21 */	bctrl 
+/* 8030D99C 0030963C  4E 80 04 21 */	bctrl
 lbl_8030D9A0:
 /* 8030D9A0 00309640  3B C0 00 00 */	li r30, 0
 /* 8030D9A4 00309644  3B 80 00 00 */	li r28, 0
@@ -2368,7 +2368,7 @@ lbl_8030D9AC:
 /* 8030D9B8 00309658  38 60 00 00 */	li r3, 0
 /* 8030D9BC 0030965C  7C 84 E0 2E */	lwzx r4, r4, r28
 /* 8030D9C0 00309660  7D 89 03 A6 */	mtctr r12
-/* 8030D9C4 00309664  4E 80 04 21 */	bctrl 
+/* 8030D9C4 00309664  4E 80 04 21 */	bctrl
 /* 8030D9C8 00309668  3B 9C 00 04 */	addi r28, r28, 4
 /* 8030D9CC 0030966C  3B DE 00 01 */	addi r30, r30, 1
 lbl_8030D9D0:
@@ -2385,7 +2385,7 @@ lbl_8030D9E8:
 /* 8030D9F4 00309694  38 60 00 00 */	li r3, 0
 /* 8030D9F8 00309698  7C 84 E0 2E */	lwzx r4, r4, r28
 /* 8030D9FC 0030969C  7D 89 03 A6 */	mtctr r12
-/* 8030DA00 003096A0  4E 80 04 21 */	bctrl 
+/* 8030DA00 003096A0  4E 80 04 21 */	bctrl
 /* 8030DA04 003096A4  3B 9C 00 1C */	addi r28, r28, 0x1c
 /* 8030DA08 003096A8  3B DE 00 01 */	addi r30, r30, 1
 lbl_8030DA0C:
@@ -2407,7 +2407,7 @@ lbl_8030DA30:
 /* 8030DA44 003096E4  38 BD 07 E4 */	addi r5, r29, 0x7e4
 /* 8030DA48 003096E8  38 60 00 00 */	li r3, 0
 /* 8030DA4C 003096EC  7D 89 03 A6 */	mtctr r12
-/* 8030DA50 003096F0  4E 80 04 21 */	bctrl 
+/* 8030DA50 003096F0  4E 80 04 21 */	bctrl
 lbl_8030DA54:
 /* 8030DA54 003096F4  3B 9C 00 04 */	addi r28, r28, 4
 /* 8030DA58 003096F8  3B 7B 00 01 */	addi r27, r27, 1
@@ -2429,7 +2429,7 @@ lbl_8030DA7C:
 /* 8030DA90 00309730  38 BD 08 10 */	addi r5, r29, 0x810
 /* 8030DA94 00309734  38 60 00 00 */	li r3, 0
 /* 8030DA98 00309738  7D 89 03 A6 */	mtctr r12
-/* 8030DA9C 0030973C  4E 80 04 21 */	bctrl 
+/* 8030DA9C 0030973C  4E 80 04 21 */	bctrl
 lbl_8030DAA0:
 /* 8030DAA0 00309740  3B 9C 00 04 */	addi r28, r28, 4
 /* 8030DAA4 00309744  3B 7B 00 01 */	addi r27, r27, 1
@@ -2451,7 +2451,7 @@ lbl_8030DAC8:
 /* 8030DADC 0030977C  38 BD 08 3C */	addi r5, r29, 0x83c
 /* 8030DAE0 00309780  38 60 00 00 */	li r3, 0
 /* 8030DAE4 00309784  7D 89 03 A6 */	mtctr r12
-/* 8030DAE8 00309788  4E 80 04 21 */	bctrl 
+/* 8030DAE8 00309788  4E 80 04 21 */	bctrl
 lbl_8030DAEC:
 /* 8030DAEC 0030978C  3B 9C 00 04 */	addi r28, r28, 4
 /* 8030DAF0 00309790  3B 7B 00 01 */	addi r27, r27, 1
@@ -2480,7 +2480,7 @@ lbl_8030DB24:
 /* 8030DB40 003097E0  80 83 00 04 */	lwz r4, 4(r3)
 /* 8030DB44 003097E4  38 60 00 00 */	li r3, 0
 /* 8030DB48 003097E8  7D 89 03 A6 */	mtctr r12
-/* 8030DB4C 003097EC  4E 80 04 21 */	bctrl 
+/* 8030DB4C 003097EC  4E 80 04 21 */	bctrl
 /* 8030DB50 003097F0  80 1F 00 2C */	lwz r0, 0x2c(r31)
 /* 8030DB54 003097F4  7C 60 E2 14 */	add r3, r0, r28
 /* 8030DB58 003097F8  38 63 00 14 */	addi r3, r3, 0x14
@@ -2499,7 +2499,7 @@ lbl_8030DB6C:
 /* 8030DB88 00309828  38 BD 08 A0 */	addi r5, r29, 0x8a0
 /* 8030DB8C 0030982C  38 60 00 00 */	li r3, 0
 /* 8030DB90 00309830  7D 89 03 A6 */	mtctr r12
-/* 8030DB94 00309834  4E 80 04 21 */	bctrl 
+/* 8030DB94 00309834  4E 80 04 21 */	bctrl
 /* 8030DB98 00309838  3B 5A 00 01 */	addi r26, r26, 1
 lbl_8030DB9C:
 /* 8030DB9C 0030983C  7C 1A F0 00 */	cmpw r26, r30
@@ -2517,7 +2517,7 @@ lbl_8030DBAC:
 /* 8030DBC4 00309864  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030DBC8 00309868  7C 08 03 A6 */	mtlr r0
 /* 8030DBCC 0030986C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030DBD0 00309870  4E 80 00 20 */	blr 
+/* 8030DBD0 00309870  4E 80 00 20 */	blr
 
 .global "ClearActions__15AptActionQueueCFv"
 "ClearActions__15AptActionQueueCFv":
@@ -2544,7 +2544,7 @@ lbl_8030DC04:
 /* 8030DC20 003098C0  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DC24 003098C4  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030DC28 003098C8  7D 89 03 A6 */	mtctr r12
-/* 8030DC2C 003098CC  4E 80 04 21 */	bctrl 
+/* 8030DC2C 003098CC  4E 80 04 21 */	bctrl
 /* 8030DC30 003098D0  48 00 00 4C */	b lbl_8030DC7C
 lbl_8030DC34:
 /* 8030DC34 003098D4  2C 00 00 02 */	cmpwi r0, 2
@@ -2556,7 +2556,7 @@ lbl_8030DC34:
 /* 8030DC4C 003098EC  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DC50 003098F0  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030DC54 003098F4  7D 89 03 A6 */	mtctr r12
-/* 8030DC58 003098F8  4E 80 04 21 */	bctrl 
+/* 8030DC58 003098F8  4E 80 04 21 */	bctrl
 /* 8030DC5C 003098FC  80 7C 00 0C */	lwz r3, 0xc(r28)
 /* 8030DC60 00309900  38 9D 67 20 */	addi r4, r29, 0x6720
 /* 8030DC64 00309904  38 BE 64 18 */	addi r5, r30, 0x6418
@@ -2564,7 +2564,7 @@ lbl_8030DC34:
 /* 8030DC6C 0030990C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DC70 00309910  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030DC74 00309914  7D 89 03 A6 */	mtctr r12
-/* 8030DC78 00309918  4E 80 04 21 */	bctrl 
+/* 8030DC78 00309918  4E 80 04 21 */	bctrl
 lbl_8030DC7C:
 /* 8030DC7C 0030991C  93 FC 00 00 */	stw r31, 0(r28)
 /* 8030DC80 00309920  7F 63 DB 78 */	mr r3, r27
@@ -2585,7 +2585,7 @@ lbl_8030DC90:
 /* 8030DCB8 00309958  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030DCBC 0030995C  7C 08 03 A6 */	mtlr r0
 /* 8030DCC0 00309960  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030DCC4 00309964  4E 80 00 20 */	blr 
+/* 8030DCC4 00309964  4E 80 00 20 */	blr
 
 .global "AddActionBack__15AptActionQueueCFP14AptActionBlockP6AptCIHUi"
 "AddActionBack__15AptActionQueueCFP14AptActionBlockP6AptCIHUi":
@@ -2625,7 +2625,7 @@ lbl_8030DC90:
 /* 8030DD4C 003099EC  81 9D 00 00 */	lwz r12, 0(r29)
 /* 8030DD50 003099F0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DD54 003099F4  7D 89 03 A6 */	mtctr r12
-/* 8030DD58 003099F8  4E 80 04 21 */	bctrl 
+/* 8030DD58 003099F8  4E 80 04 21 */	bctrl
 /* 8030DD5C 003099FC  80 7B 00 08 */	lwz r3, 8(r27)
 /* 8030DD60 00309A00  93 C3 00 04 */	stw r30, 4(r3)
 /* 8030DD64 00309A04  93 FB 00 08 */	stw r31, 8(r27)
@@ -2635,7 +2635,7 @@ lbl_8030DD68:
 /* 8030DD70 00309A10  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030DD74 00309A14  7C 08 03 A6 */	mtlr r0
 /* 8030DD78 00309A18  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030DD7C 00309A1C  4E 80 00 20 */	blr 
+/* 8030DD7C 00309A1C  4E 80 00 20 */	blr
 
 .global "AddActionFront__15AptActionQueueCFP14AptActionBlockP6AptCIHUi"
 "AddActionFront__15AptActionQueueCFP14AptActionBlockP6AptCIHUi":
@@ -2677,7 +2677,7 @@ lbl_8030DD68:
 /* 8030DE0C 00309AAC  81 9E 00 00 */	lwz r12, 0(r30)
 /* 8030DE10 00309AB0  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DE14 00309AB4  7D 89 03 A6 */	mtctr r12
-/* 8030DE18 00309AB8  4E 80 04 21 */	bctrl 
+/* 8030DE18 00309AB8  4E 80 04 21 */	bctrl
 /* 8030DE1C 00309ABC  80 7C 00 04 */	lwz r3, 4(r28)
 /* 8030DE20 00309AC0  93 E3 00 04 */	stw r31, 4(r3)
 lbl_8030DE24:
@@ -2688,7 +2688,7 @@ lbl_8030DE24:
 /* 8030DE34 00309AD4  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 8030DE38 00309AD8  7C 08 03 A6 */	mtlr r0
 /* 8030DE3C 00309ADC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030DE40 00309AE0  4E 80 00 20 */	blr 
+/* 8030DE40 00309AE0  4E 80 00 20 */	blr
 
 .global "AddFunctionBack__15AptActionQueueCFP6AptCIHP8AptValueiUi"
 "AddFunctionBack__15AptActionQueueCFP6AptCIHP8AptValueiUi":
@@ -2725,7 +2725,7 @@ lbl_8030DE24:
 /* 8030DEBC 00309B5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DEC0 00309B60  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DEC4 00309B64  7D 89 03 A6 */	mtctr r12
-/* 8030DEC8 00309B68  4E 80 04 21 */	bctrl 
+/* 8030DEC8 00309B68  4E 80 04 21 */	bctrl
 /* 8030DECC 00309B6C  80 78 00 08 */	lwz r3, 8(r24)
 /* 8030DED0 00309B70  38 9E 67 D8 */	addi r4, r30, 0x67d8
 /* 8030DED4 00309B74  38 BF 64 18 */	addi r5, r31, 0x6418
@@ -2736,7 +2736,7 @@ lbl_8030DE24:
 /* 8030DEE8 00309B88  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DEEC 00309B8C  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DEF0 00309B90  7D 89 03 A6 */	mtctr r12
-/* 8030DEF4 00309B94  4E 80 04 21 */	bctrl 
+/* 8030DEF4 00309B94  4E 80 04 21 */	bctrl
 /* 8030DEF8 00309B98  80 78 00 08 */	lwz r3, 8(r24)
 /* 8030DEFC 00309B9C  93 63 00 10 */	stw r27, 0x10(r3)
 /* 8030DF00 00309BA0  93 B8 00 08 */	stw r29, 8(r24)
@@ -2746,7 +2746,7 @@ lbl_8030DF04:
 /* 8030DF0C 00309BAC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030DF10 00309BB0  7C 08 03 A6 */	mtlr r0
 /* 8030DF14 00309BB4  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030DF18 00309BB8  4E 80 00 20 */	blr 
+/* 8030DF18 00309BB8  4E 80 00 20 */	blr
 
 .global "AddFunctionFront__15AptActionQueueCFP6AptCIHP8AptValueiUi"
 "AddFunctionFront__15AptActionQueueCFP6AptCIHP8AptValueiUi":
@@ -2782,7 +2782,7 @@ lbl_8030DF04:
 /* 8030DF90 00309C30  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DF94 00309C34  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DF98 00309C38  7D 89 03 A6 */	mtctr r12
-/* 8030DF9C 00309C3C  4E 80 04 21 */	bctrl 
+/* 8030DF9C 00309C3C  4E 80 04 21 */	bctrl
 /* 8030DFA0 00309C40  80 79 00 04 */	lwz r3, 4(r25)
 /* 8030DFA4 00309C44  38 9E 68 24 */	addi r4, r30, 0x6824
 /* 8030DFA8 00309C48  38 BF 64 18 */	addi r5, r31, 0x6418
@@ -2793,7 +2793,7 @@ lbl_8030DF04:
 /* 8030DFBC 00309C5C  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030DFC0 00309C60  81 8C 00 08 */	lwz r12, 8(r12)
 /* 8030DFC4 00309C64  7D 89 03 A6 */	mtctr r12
-/* 8030DFC8 00309C68  4E 80 04 21 */	bctrl 
+/* 8030DFC8 00309C68  4E 80 04 21 */	bctrl
 /* 8030DFCC 00309C6C  80 79 00 04 */	lwz r3, 4(r25)
 /* 8030DFD0 00309C70  93 83 00 10 */	stw r28, 0x10(r3)
 lbl_8030DFD4:
@@ -2802,7 +2802,7 @@ lbl_8030DFD4:
 /* 8030DFDC 00309C7C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030DFE0 00309C80  7C 08 03 A6 */	mtlr r0
 /* 8030DFE4 00309C84  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030DFE8 00309C88  4E 80 00 20 */	blr 
+/* 8030DFE8 00309C88  4E 80 00 20 */	blr
 
 .global "RemoveActionFor__15AptActionQueueCFP6AptCIH"
 "RemoveActionFor__15AptActionQueueCFP6AptCIH":
@@ -2846,7 +2846,7 @@ lbl_8030E054:
 /* 8030E078 00309D18  38 C0 07 7D */	li r6, 0x77d
 /* 8030E07C 00309D1C  38 A5 64 18 */	addi r5, r5, lbl_80456418@l
 /* 8030E080 00309D20  7D 89 03 A6 */	mtctr r12
-/* 8030E084 00309D24  4E 80 04 21 */	bctrl 
+/* 8030E084 00309D24  4E 80 04 21 */	bctrl
 /* 8030E088 00309D28  80 1F 00 08 */	lwz r0, 8(r31)
 /* 8030E08C 00309D2C  3C 60 66 66 */	lis r3, 0x66666667@ha
 /* 8030E090 00309D30  38 A3 66 67 */	addi r5, r3, 0x66666667@l
@@ -2878,7 +2878,7 @@ lbl_8030E0D0:
 /* 8030E0F4 00309D94  38 C0 07 84 */	li r6, 0x784
 /* 8030E0F8 00309D98  38 A5 64 18 */	addi r5, r5, lbl_80456418@l
 /* 8030E0FC 00309D9C  7D 89 03 A6 */	mtctr r12
-/* 8030E100 00309DA0  4E 80 04 21 */	bctrl 
+/* 8030E100 00309DA0  4E 80 04 21 */	bctrl
 /* 8030E104 00309DA4  80 9F 00 04 */	lwz r4, 4(r31)
 /* 8030E108 00309DA8  3C 60 66 66 */	lis r3, 0x66666667@ha
 /* 8030E10C 00309DAC  38 63 66 67 */	addi r3, r3, 0x66666667@l
@@ -2919,7 +2919,7 @@ lbl_8030E17C:
 /* 8030E188 00309E28  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8030E18C 00309E2C  7C 08 03 A6 */	mtlr r0
 /* 8030E190 00309E30  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030E194 00309E34  4E 80 00 20 */	blr 
+/* 8030E194 00309E34  4E 80 00 20 */	blr
 
 .global "GetDequeSize__15AptActionQueueCCFv"
 "GetDequeSize__15AptActionQueueCCFv":
@@ -2934,11 +2934,11 @@ lbl_8030E17C:
 /* 8030E1B8 00309E58  7C 80 22 15 */	add. r4, r0, r4
 /* 8030E1BC 00309E5C  41 80 00 0C */	blt lbl_8030E1C8
 /* 8030E1C0 00309E60  7C 83 23 78 */	mr r3, r4
-/* 8030E1C4 00309E64  4E 80 00 20 */	blr 
+/* 8030E1C4 00309E64  4E 80 00 20 */	blr
 lbl_8030E1C8:
 /* 8030E1C8 00309E68  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 8030E1CC 00309E6C  7C 64 02 14 */	add r3, r4, r0
-/* 8030E1D0 00309E70  4E 80 00 20 */	blr 
+/* 8030E1D0 00309E70  4E 80 00 20 */	blr
 
 .global "GetDequeLocation__15AptActionQueueCCFi"
 "GetDequeLocation__15AptActionQueueCCFi":
@@ -2959,12 +2959,12 @@ lbl_8030E1C8:
 /* 8030E20C 00309EAC  41 80 00 10 */	blt lbl_8030E21C
 /* 8030E210 00309EB0  1C 03 00 14 */	mulli r0, r3, 0x14
 /* 8030E214 00309EB4  7C 66 02 14 */	add r3, r6, r0
-/* 8030E218 00309EB8  4E 80 00 20 */	blr 
+/* 8030E218 00309EB8  4E 80 00 20 */	blr
 lbl_8030E21C:
 /* 8030E21C 00309EBC  7C 63 3A 14 */	add r3, r3, r7
 /* 8030E220 00309EC0  1C 03 00 14 */	mulli r0, r3, 0x14
 /* 8030E224 00309EC4  7C 66 02 14 */	add r3, r6, r0
-/* 8030E228 00309EC8  4E 80 00 20 */	blr 
+/* 8030E228 00309EC8  4E 80 00 20 */	blr
 
 .global "RegisterReferences__15AptActionQueueCFv"
 "RegisterReferences__15AptActionQueueCFv":
@@ -2993,7 +2993,7 @@ lbl_8030E25C:
 /* 8030E280 00309F20  80 9F 00 10 */	lwz r4, 0x10(r31)
 /* 8030E284 00309F24  38 60 00 00 */	li r3, 0
 /* 8030E288 00309F28  7D 89 03 A6 */	mtctr r12
-/* 8030E28C 00309F2C  4E 80 04 21 */	bctrl 
+/* 8030E28C 00309F2C  4E 80 04 21 */	bctrl
 /* 8030E290 00309F30  48 00 00 3C */	b lbl_8030E2CC
 lbl_8030E294:
 /* 8030E294 00309F34  2C 00 00 02 */	cmpwi r0, 2
@@ -3003,13 +3003,13 @@ lbl_8030E294:
 /* 8030E2A4 00309F44  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8030E2A8 00309F48  38 60 00 00 */	li r3, 0
 /* 8030E2AC 00309F4C  7D 89 03 A6 */	mtctr r12
-/* 8030E2B0 00309F50  4E 80 04 21 */	bctrl 
+/* 8030E2B0 00309F50  4E 80 04 21 */	bctrl
 /* 8030E2B4 00309F54  81 8D C0 FC */	lwz r12, "sReferenceRegistrationCb__8AptValue"-_SDA_BASE_(r13)
 /* 8030E2B8 00309F58  38 BD 0A A0 */	addi r5, r29, 0xaa0
 /* 8030E2BC 00309F5C  80 9F 00 0C */	lwz r4, 0xc(r31)
 /* 8030E2C0 00309F60  38 60 00 00 */	li r3, 0
 /* 8030E2C4 00309F64  7D 89 03 A6 */	mtctr r12
-/* 8030E2C8 00309F68  4E 80 04 21 */	bctrl 
+/* 8030E2C8 00309F68  4E 80 04 21 */	bctrl
 lbl_8030E2CC:
 /* 8030E2CC 00309F6C  3B 9C 00 01 */	addi r28, r28, 1
 lbl_8030E2D0:
@@ -3020,17 +3020,17 @@ lbl_8030E2D0:
 /* 8030E2E0 00309F80  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030E2E4 00309F84  7C 08 03 A6 */	mtlr r0
 /* 8030E2E8 00309F88  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030E2EC 00309F8C  4E 80 00 20 */	blr 
+/* 8030E2EC 00309F8C  4E 80 00 20 */	blr
 
 .global "GetMainCharacter__7AptFileCFv"
 "GetMainCharacter__7AptFileCFv":
 /* 8030E2F0 00309F90  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 8030E2F4 00309F94  4E 80 00 20 */	blr 
+/* 8030E2F4 00309F94  4E 80 00 20 */	blr
 
 .global "GetAptData__7AptFileCFv"
 "GetAptData__7AptFileCFv":
 /* 8030E2F8 00309F98  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8030E2FC 00309F9C  4E 80 00 20 */	blr 
+/* 8030E2FC 00309F9C  4E 80 00 20 */	blr
 
 .global "FindExport__7AptFileFPCc"
 "FindExport__7AptFileFPCc":
@@ -3072,7 +3072,7 @@ lbl_8030E374:
 /* 8030E37C 0030A01C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8030E380 0030A020  7C 08 03 A6 */	mtlr r0
 /* 8030E384 0030A024  38 21 00 20 */	addi r1, r1, 0x20
-/* 8030E388 0030A028  4E 80 00 20 */	blr 
+/* 8030E388 0030A028  4E 80 00 20 */	blr
 
 .global "__dl__25AptCharacterAnimationInstFPvUl"
 "__dl__25AptCharacterAnimationInstFPvUl":
@@ -3109,7 +3109,7 @@ lbl_8030E3E8:
 /* 8030E3F4 0030A094  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E3F8 0030A098  7C 08 03 A6 */	mtlr r0
 /* 8030E3FC 0030A09C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E400 0030A0A0  4E 80 00 20 */	blr 
+/* 8030E400 0030A0A0  4E 80 00 20 */	blr
 
 .global "__dl__16AptIntervalTimerFPvUl"
 "__dl__16AptIntervalTimerFPvUl":
@@ -3140,7 +3140,7 @@ lbl_8030E3E8:
 /* 8030E458 0030A0F8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E45C 0030A0FC  7C 08 03 A6 */	mtlr r0
 /* 8030E460 0030A100  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E464 0030A104  4E 80 00 20 */	blr 
+/* 8030E464 0030A104  4E 80 00 20 */	blr
 
 .global "__nwa__16AptIntervalTimerFUl"
 "__nwa__16AptIntervalTimerFUl":
@@ -3170,7 +3170,7 @@ lbl_8030E3E8:
 /* 8030E4AC 0030A14C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E4B0 0030A150  7C 08 03 A6 */	mtlr r0
 /* 8030E4B4 0030A154  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E4B8 0030A158  4E 80 00 20 */	blr 
+/* 8030E4B8 0030A158  4E 80 00 20 */	blr
 
 .global "__nwa__Q215AptActionQueueC13AptActionPoolFUl"
 "__nwa__Q215AptActionQueueC13AptActionPoolFUl":
@@ -3215,7 +3215,7 @@ lbl_8030E520:
 /* 8030E52C 0030A1CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E530 0030A1D0  7C 08 03 A6 */	mtlr r0
 /* 8030E534 0030A1D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E538 0030A1D8  4E 80 00 20 */	blr 
+/* 8030E538 0030A1D8  4E 80 00 20 */	blr
 
 .global "__dl__15AptActionQueueCFPvUl"
 "__dl__15AptActionQueueCFPvUl":
@@ -3243,7 +3243,7 @@ lbl_8030E520:
 /* 8030E560 0030A200  7C 04 00 50 */	subf r0, r4, r0
 /* 8030E564 0030A204  7C 00 00 34 */	cntlzw r0, r0
 /* 8030E568 0030A208  54 03 D9 7E */	srwi r3, r0, 5
-/* 8030E56C 0030A20C  4E 80 00 20 */	blr 
+/* 8030E56C 0030A20C  4E 80 00 20 */	blr
 
 .global "GetNextItem__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool"
 "GetNextItem__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool":
@@ -3261,7 +3261,7 @@ lbl_8030E520:
 /* 8030E590 0030A230  7C 64 1B 78 */	mr r4, r3
 lbl_8030E594:
 /* 8030E594 0030A234  7C 83 23 78 */	mr r3, r4
-/* 8030E598 0030A238  4E 80 00 20 */	blr 
+/* 8030E598 0030A238  4E 80 00 20 */	blr
 
 .global "IsLastItemOrBeyond__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool"
 "IsLastItemOrBeyond__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool":
@@ -3274,30 +3274,30 @@ lbl_8030E594:
 /* 8030E5B4 0030A254  54 00 F8 7E */	srwi r0, r0, 1
 /* 8030E5B8 0030A258  7C 00 18 50 */	subf r0, r0, r3
 /* 8030E5BC 0030A25C  54 03 0F FE */	srwi r3, r0, 0x1f
-/* 8030E5C0 0030A260  4E 80 00 20 */	blr 
+/* 8030E5C0 0030A260  4E 80 00 20 */	blr
 lbl_8030E5C4:
 /* 8030E5C4 0030A264  7C 04 28 40 */	cmplw r4, r5
 /* 8030E5C8 0030A268  38 60 00 00 */	li r3, 0
-/* 8030E5CC 0030A26C  4D 80 00 20 */	bltlr 
+/* 8030E5CC 0030A26C  4D 80 00 20 */	bltlr
 /* 8030E5D0 0030A270  7C 04 00 40 */	cmplw r4, r0
-/* 8030E5D4 0030A274  4C 80 00 20 */	bgelr 
+/* 8030E5D4 0030A274  4C 80 00 20 */	bgelr
 /* 8030E5D8 0030A278  38 60 00 01 */	li r3, 1
-/* 8030E5DC 0030A27C  4E 80 00 20 */	blr 
+/* 8030E5DC 0030A27C  4E 80 00 20 */	blr
 
 .global "SetCurItem__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool"
 "SetCurItem__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool":
 /* 8030E5E0 0030A280  90 83 00 0C */	stw r4, 0xc(r3)
-/* 8030E5E4 0030A284  4E 80 00 20 */	blr 
+/* 8030E5E4 0030A284  4E 80 00 20 */	blr
 
 .global "GetFirstItem__15AptActionQueueCFv"
 "GetFirstItem__15AptActionQueueCFv":
 /* 8030E5E8 0030A288  80 63 00 04 */	lwz r3, 4(r3)
-/* 8030E5EC 0030A28C  4E 80 00 20 */	blr 
+/* 8030E5EC 0030A28C  4E 80 00 20 */	blr
 
 .global "GetActionPool__20AptAnimationPoolDataFv"
 "GetActionPool__20AptAnimationPoolDataFv":
 /* 8030E5F0 0030A290  80 63 00 98 */	lwz r3, 0x98(r3)
-/* 8030E5F4 0030A294  4E 80 00 20 */	blr 
+/* 8030E5F4 0030A294  4E 80 00 20 */	blr
 
 .global "DecrementDequeLocation__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool"
 "DecrementDequeLocation__15AptActionQueueCFPQ215AptActionQueueC13AptActionPool":
@@ -3311,12 +3311,12 @@ lbl_8030E5C4:
 /* 8030E614 0030A2B4  7C 05 02 14 */	add r0, r5, r0
 lbl_8030E618:
 /* 8030E618 0030A2B8  7C 03 03 78 */	mr r3, r0
-/* 8030E61C 0030A2BC  4E 80 00 20 */	blr 
+/* 8030E61C 0030A2BC  4E 80 00 20 */	blr
 
 .global "GetCurItem__15AptActionQueueCFv"
 "GetCurItem__15AptActionQueueCFv":
 /* 8030E620 0030A2C0  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8030E624 0030A2C4  4E 80 00 20 */	blr 
+/* 8030E624 0030A2C4  4E 80 00 20 */	blr
 
 .global "__dt__23AptValueSet<P8AptValue>Fv"
 "__dt__23AptValueSet<P8AptValue>Fv":
@@ -3346,7 +3346,7 @@ lbl_8030E664:
 /* 8030E680 0030A320  38 C0 00 19 */	li r6, 0x19
 /* 8030E684 0030A324  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030E688 0030A328  7D 89 03 A6 */	mtctr r12
-/* 8030E68C 0030A32C  4E 80 04 21 */	bctrl 
+/* 8030E68C 0030A32C  4E 80 04 21 */	bctrl
 /* 8030E690 0030A330  37 9C FF FF */	addic. r28, r28, -1
 /* 8030E694 0030A334  41 82 00 18 */	beq lbl_8030E6AC
 lbl_8030E698:
@@ -3373,7 +3373,7 @@ lbl_8030E6D0:
 /* 8030E6DC 0030A37C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030E6E0 0030A380  7C 08 03 A6 */	mtlr r0
 /* 8030E6E4 0030A384  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030E6E8 0030A388  4E 80 00 20 */	blr 
+/* 8030E6E8 0030A388  4E 80 00 20 */	blr
 
 .global "__dt__21AptValueSet<P6AptCIH>Fv"
 "__dt__21AptValueSet<P6AptCIH>Fv":
@@ -3403,7 +3403,7 @@ lbl_8030E728:
 /* 8030E744 0030A3E4  38 C0 00 19 */	li r6, 0x19
 /* 8030E748 0030A3E8  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030E74C 0030A3EC  7D 89 03 A6 */	mtctr r12
-/* 8030E750 0030A3F0  4E 80 04 21 */	bctrl 
+/* 8030E750 0030A3F0  4E 80 04 21 */	bctrl
 /* 8030E754 0030A3F4  37 9C FF FF */	addic. r28, r28, -1
 /* 8030E758 0030A3F8  41 82 00 18 */	beq lbl_8030E770
 lbl_8030E75C:
@@ -3430,7 +3430,7 @@ lbl_8030E794:
 /* 8030E7A0 0030A440  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8030E7A4 0030A444  7C 08 03 A6 */	mtlr r0
 /* 8030E7A8 0030A448  38 21 00 30 */	addi r1, r1, 0x30
-/* 8030E7AC 0030A44C  4E 80 00 20 */	blr 
+/* 8030E7AC 0030A44C  4E 80 00 20 */	blr
 
 .global "__ct__23AptValueSet<P8AptValue>Fi"
 "__ct__23AptValueSet<P8AptValue>Fi":
@@ -3451,7 +3451,7 @@ lbl_8030E794:
 /* 8030E7E8 0030A488  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E7EC 0030A48C  7C 08 03 A6 */	mtlr r0
 /* 8030E7F0 0030A490  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E7F4 0030A494  4E 80 00 20 */	blr 
+/* 8030E7F4 0030A494  4E 80 00 20 */	blr
 
 .global "clear__23AptValueSet<P8AptValue>Fv"
 "clear__23AptValueSet<P8AptValue>Fv":
@@ -3482,7 +3482,7 @@ lbl_8030E794:
 /* 8030E84C 0030A4EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E850 0030A4F0  7C 08 03 A6 */	mtlr r0
 /* 8030E854 0030A4F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E858 0030A4F8  4E 80 00 20 */	blr 
+/* 8030E858 0030A4F8  4E 80 00 20 */	blr
 
 .global "clear__21AptValueSet<P6AptCIH>Fv"
 "clear__21AptValueSet<P6AptCIH>Fv":
@@ -3497,12 +3497,12 @@ lbl_8030E794:
 .global "capacity__23AptValueSet<P8AptValue>Fv"
 "capacity__23AptValueSet<P8AptValue>Fv":
 /* 8030E878 0030A518  A0 63 00 02 */	lhz r3, 2(r3)
-/* 8030E87C 0030A51C  4E 80 00 20 */	blr 
+/* 8030E87C 0030A51C  4E 80 00 20 */	blr
 
 .global "capacity__21AptValueSet<P6AptCIH>Fv"
 "capacity__21AptValueSet<P6AptCIH>Fv":
 /* 8030E880 0030A520  A0 63 00 02 */	lhz r3, 2(r3)
-/* 8030E884 0030A524  4E 80 00 20 */	blr 
+/* 8030E884 0030A524  4E 80 00 20 */	blr
 
 .global "remove__21AptValueSet<P6AptCIH>FP6AptCIH"
 "remove__21AptValueSet<P6AptCIH>FP6AptCIH":
@@ -3549,7 +3549,7 @@ lbl_8030E8E4:
 /* 8030E918 0030A5B8  81 83 00 00 */	lwz r12, 0(r3)
 /* 8030E91C 0030A5BC  81 8C 00 0C */	lwz r12, 0xc(r12)
 /* 8030E920 0030A5C0  7D 89 03 A6 */	mtctr r12
-/* 8030E924 0030A5C4  4E 80 04 21 */	bctrl 
+/* 8030E924 0030A5C4  4E 80 04 21 */	bctrl
 /* 8030E928 0030A5C8  80 9E 00 04 */	lwz r4, 4(r30)
 /* 8030E92C 0030A5CC  38 00 00 00 */	li r0, 0
 /* 8030E930 0030A5D0  38 60 00 01 */	li r3, 1
@@ -3563,7 +3563,7 @@ lbl_8030E940:
 /* 8030E948 0030A5E8  83 C1 00 08 */	lwz r30, 8(r1)
 /* 8030E94C 0030A5EC  7C 08 03 A6 */	mtlr r0
 /* 8030E950 0030A5F0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E954 0030A5F4  4E 80 00 20 */	blr 
+/* 8030E954 0030A5F4  4E 80 00 20 */	blr
 
 .global "__ct__27AptValuePtrStack<8AptValue>Fi"
 "__ct__27AptValuePtrStack<8AptValue>Fi":
@@ -3585,157 +3585,355 @@ lbl_8030E940:
 /* 8030E994 0030A634  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8030E998 0030A638  7C 08 03 A6 */	mtlr r0
 /* 8030E99C 0030A63C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8030E9A0 0030A640  4E 80 00 20 */	blr 
+/* 8030E9A0 0030A640  4E 80 00 20 */	blr
 
 .global "getButtonInst__6AptCIHCFv"
 "getButtonInst__6AptCIHCFv":
 /* 8030E9A4 0030A644  80 63 00 4C */	lwz r3, 0x4c(r3)
-/* 8030E9A8 0030A648  4E 80 00 20 */	blr 
+/* 8030E9A8 0030A648  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__PRETTY_FUNCTION__$1864_80455E48"
 "__PRETTY_FUNCTION__$1864_80455E48":
-	.incbin "baserom.dol", 0x451F48, 0x50
+	# ROM: 0x451F48
+	.asciz "AptCIH::AptCIH(AptVirtualFunctionTable_Indices, AptCharacterInst *, AptCIH *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2185_80455E98"
 "__PRETTY_FUNCTION__$2185_80455E98":
-	.incbin "baserom.dol", 0x451F98, 0x2C
+	# ROM: 0x451F98
+	.asciz "AptNativeHash::UnsetAt(AptHashItem *const )"
+
 .global "__PRETTY_FUNCTION__$2191_80455EC4"
 "__PRETTY_FUNCTION__$2191_80455EC4":
-	.incbin "baserom.dol", 0x451FC4, 0x3C
+	# ROM: 0x451FC4
+	.asciz "AptNativeHash::OverwriteAt(AptHashItem *const , AptValue *)"
+
 .global "__PRETTY_FUNCTION__$2198_80455F00"
 "__PRETTY_FUNCTION__$2198_80455F00":
-	.incbin "baserom.dol", 0x452000, 0x34
+	# ROM: 0x452000
+	.asciz "AptNativeHash::OverwriteAt(const int, AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2204_80455F34"
 "__PRETTY_FUNCTION__$2204_80455F34":
-	.incbin "baserom.dol", 0x452034, 0x3C
+	# ROM: 0x452034
+	.asciz "AptNativeHash::SetAt(AptHashItem *const , AptValue *const )"
+
 .global "__PRETTY_FUNCTION__$2215_80455F70"
 "__PRETTY_FUNCTION__$2215_80455F70":
-	.incbin "baserom.dol", 0x452070, 0x38
+	# ROM: 0x452070
+	.asciz "AptNativeHash::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$2252_80455FA8"
 "__PRETTY_FUNCTION__$2252_80455FA8":
-	.incbin "baserom.dol", 0x4520A8, 0x20
+	# ROM: 0x4520A8
+	.asciz "AptNativeHash::UnsetPrototype()"
+
 .global "__PRETTY_FUNCTION__$2260_80455FC8"
 "__PRETTY_FUNCTION__$2260_80455FC8":
-	.incbin "baserom.dol", 0x4520C8, 0x30
+	# ROM: 0x4520C8
+	.asciz "AptNativeHash::SetPrototype(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2274_80455FF8"
 "__PRETTY_FUNCTION__$2274_80455FF8":
-	.incbin "baserom.dol", 0x4520F8, 0x20
+	# ROM: 0x4520F8
+	.asciz "AptNativeHash::Unset__Proto__()"
+
 .global "__PRETTY_FUNCTION__$2282_80456018"
 "__PRETTY_FUNCTION__$2282_80456018":
-	.incbin "baserom.dol", 0x452118, 0x30
+	# ROM: 0x452118
+	.asciz "AptNativeHash::Set__Proto__(AptValue *const )"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2368_80456048"
 "__PRETTY_FUNCTION__$2368_80456048":
-	.incbin "baserom.dol", 0x452148, 0x30
+	# ROM: 0x452148
+	.asciz "AptPrototype::SetSuperConstructor(AptValue *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$2520_80456078"
 "__PRETTY_FUNCTION__$2520_80456078":
-	.incbin "baserom.dol", 0x452178, 0x24
+	# ROM: 0x452178
+	.asciz "AptFrameStack::DestroyGCPointers()"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2587_8045609C"
 "__PRETTY_FUNCTION__$2587_8045609C":
-	.incbin "baserom.dol", 0x45219C, 0x34
+	# ROM: 0x45219C
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *, int)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$2595_804560D0"
 "__PRETTY_FUNCTION__$2595_804560D0":
-	.incbin "baserom.dol", 0x4521D0, 0x30
+	# ROM: 0x4521D0
+	.asciz "AptFrameStack::AptFrameStack(AptFrameStack *)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3023_80456100"
 "__PRETTY_FUNCTION__$3023_80456100":
-	.incbin "baserom.dol", 0x452200, 0x2C
+	# ROM: 0x452200
+	.asciz "AptActionInterpreter::clearThrownValue()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3029_8045612C"
 "__PRETTY_FUNCTION__$3029_8045612C":
-	.incbin "baserom.dol", 0x45222C, 0x30
+	# ROM: 0x45222C
+	.asciz "AptActionInterpreter::throwValue(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3076_8045615C"
 "__PRETTY_FUNCTION__$3076_8045615C":
-	.incbin "baserom.dol", 0x45225C, 0x2C
+	# ROM: 0x45225C
+	.asciz "AptScriptFunctionBase::CreateFrameStack()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3392_80456188"
 "__PRETTY_FUNCTION__$3392_80456188":
-	.incbin "baserom.dol", 0x452288, 0x24
+	# ROM: 0x452288
+	.asciz "AptValuePtrStack<AptValue>::pop()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$3477_804561AC"
 "__PRETTY_FUNCTION__$3477_804561AC":
-	.incbin "baserom.dol", 0x4522AC, 0x34
+	# ROM: 0x4522AC
+	.asciz "AptArray::SetAt(const int, AptValue *const )"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$3509_804561E0"
 "__PRETTY_FUNCTION__$3509_804561E0":
-	.incbin "baserom.dol", 0x4522E0, 0x28
+	# ROM: 0x4522E0
+	.asciz "AptStringObject::setString(AptString *)"
+
 .global "__PRETTY_FUNCTION__$3515_80456208"
 "__PRETTY_FUNCTION__$3515_80456208":
-	.incbin "baserom.dol", 0x452308, 0x24
+	# ROM: 0x452308
+	.asciz "AptStringObject::~AptStringObject()"
+
 .global "__PRETTY_FUNCTION__$6672"
 "__PRETTY_FUNCTION__$6672":
-	.incbin "baserom.dol", 0x45232C, 0x2C
+	# ROM: 0x45232C
+	.asciz "AptBasePtrStack<AptValue>::Push(AptValue *)"
+
 .global "__PRETTY_FUNCTION__$6712"
 "__PRETTY_FUNCTION__$6712":
-	.incbin "baserom.dol", 0x452358, 0x40
+	# ROM: 0x452358
+	.asciz "AptBasePtrStack<AptValue>::PopAndPush(const int, AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6733"
 "__PRETTY_FUNCTION__$6733":
-	.incbin "baserom.dol", 0x452398, 0x24
+	# ROM: 0x452398
+	.asciz "AptBasePtrStack<AptValue>::Pop()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6748"
 "__PRETTY_FUNCTION__$6748":
-	.incbin "baserom.dol", 0x4523BC, 0x2C
+	# ROM: 0x4523BC
+	.asciz "AptBasePtrStack<AptValue>::Pop(const int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$6769"
 "__PRETTY_FUNCTION__$6769":
-	.incbin "baserom.dol", 0x4523E8, 0x90
+	# ROM: 0x4523E8
+	.asciz "AptBasePtrStack<AptValue>::SafePop(const int)"
+	.byte 0x00, 0x00
+	.4byte 0x8030BC80 ;# ptr
+	.4byte 0x8030BA04 ;# ptr
+	.4byte 0x8030BA28 ;# ptr
+	.4byte 0x8030BA5C ;# ptr
+	.4byte 0x8030BA90 ;# ptr
+	.4byte 0x8030BB78 ;# ptr
+	.4byte 0x8030BB90 ;# ptr
+	.4byte 0x8030BBEC ;# ptr
+	.4byte 0x8030BC80 ;# ptr
+	.4byte 0x8030BC10 ;# ptr
+	.4byte 0x8030BC28 ;# ptr
+	.4byte 0x8030BC80 ;# ptr
+	.4byte 0x8030BC80 ;# ptr
+	.4byte 0x8030C298 ;# ptr
+	.4byte 0x8030C014 ;# ptr
+	.4byte 0x8030C1D8 ;# ptr
+	.4byte 0x8030C144 ;# ptr
+	.4byte 0x8030C034 ;# ptr
+	.4byte 0x8030C000 ;# ptr
+	.4byte 0x8030C1B8 ;# ptr
+	.4byte 0x8030C20C ;# ptr
+	.4byte 0x8030C298 ;# ptr
+	.4byte 0x8030C22C ;# ptr
+	.4byte 0x8030C240 ;# ptr
+
 .global "__PRETTY_FUNCTION__$8821"
 "__PRETTY_FUNCTION__$8821":
-	.incbin "baserom.dol", 0x452478, 0x28
+	# ROM: 0x452478
+	.asciz "AptValueSet<AptCIH *>::~AptValueSet()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$8849"
 "__PRETTY_FUNCTION__$8849":
-	.incbin "baserom.dol", 0x4524A0, 0x28
+	# ROM: 0x4524A0
+	.asciz "AptValueSet<AptValue *>::~AptValueSet()"
+
 .global "__PRETTY_FUNCTION__$8975"
 "__PRETTY_FUNCTION__$8975":
-	.incbin "baserom.dol", 0x4524C8, 0x28
+	# ROM: 0x4524C8
+	.asciz "AptAnimationPoolData::PreDestroy()"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$9013"
 "__PRETTY_FUNCTION__$9013":
-	.incbin "baserom.dol", 0x4524F0, 0x28
+	# ROM: 0x4524F0
+	.asciz "AptValueSet<AptCIH *>::remove(AptCIH *)"
+
 .global lbl_80456418
 lbl_80456418:
-	.incbin "baserom.dol", 0x452518, 0x14
+	# ROM: 0x452518
+	.asciz "AptAnimation.cpp"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9108"
 "__PRETTY_FUNCTION__$9108":
-	.incbin "baserom.dol", 0x45252C, 0x30
+	# ROM: 0x45252C
+	.asciz "AptAnimationPoolData::tickIntervalTimers(int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9242"
 "__PRETTY_FUNCTION__$9242":
-	.incbin "baserom.dol", 0x45255C, 0x28
+	# ROM: 0x45255C
+	.asciz "AptAnimationPoolData::_tickNewInsts()"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9320"
 "__PRETTY_FUNCTION__$9320":
-	.incbin "baserom.dol", 0x452584, 0x30
+	# ROM: 0x452584
+	.asciz "AptValuePtrStack<AptValue>::push(AptValue *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9434"
 "__PRETTY_FUNCTION__$9434":
-	.incbin "baserom.dol", 0x4525B4, 0x38
+	# ROM: 0x4525B4
+	.asciz "AptAnimationPoolData::removeTimerFunctions(AptCIH *)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9465"
 "__PRETTY_FUNCTION__$9465":
-	.incbin "baserom.dol", 0x4525EC, 0x24
+	# ROM: 0x4525EC
+	.asciz "AptAnimationPoolData::clearBIL()"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9481"
 "__PRETTY_FUNCTION__$9481":
-	.incbin "baserom.dol", 0x452610, 0x40
+	# ROM: 0x452610
+	.asciz "AptAnimationPoolData::appendButtonToBIL(AptCIH *, AptMatrix *)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$9495"
 "__PRETTY_FUNCTION__$9495":
-	.incbin "baserom.dol", 0x452650, 0x1D0
+	# ROM: 0x452650
+	.asciz "AptAnimationPoolData::removeFromBIL(AptCIH *)"
+	.byte 0x00, 0x00
+	.asciz "__Packages."
+	.asciz "AptAnimationPoolData::pFocusButton"
+	.byte 0x00
+	.asciz "AptAnimationPoolData::pInputMask"
+	.byte 0x00, 0x00, 0x00
+	.asciz "AptAnimationPoolData::apNewInsts"
+	.byte 0x00, 0x00, 0x00
+	.asciz "AptAnimationPoolData::aButtonInstanceList[i].pCIH"
+	.byte 0x00, 0x00
+	.asciz "AptAnimationPoolData::buttonSet.aElements"
+	.byte 0x00, 0x00
+	.asciz "AptAnimationPoolData::listenerSet.aElements"
+	.asciz "AptAnimationPoolData::inputSet.aElements"
+	.byte 0x00, 0x00, 0x00
+	.asciz "AptAnimationPoolData::aIntervalTimers[i].pCBFunction"
+	.byte 0x00, 0x00, 0x00
+	.asciz "AptAnimationPoolData::aIntervalTimers[i].pParams"
+	.byte 0x00, 0x00, 0x00
+	.4byte 0x00000000
+
 .global "__PRETTY_FUNCTION__$9830"
 "__PRETTY_FUNCTION__$9830":
-	.incbin "baserom.dol", 0x452820, 0x20
+	# ROM: 0x452820
+	.asciz "AptActionQueueC::ClearActions()"
+
 .global "__PRETTY_FUNCTION__$9853"
 "__PRETTY_FUNCTION__$9853":
-	.incbin "baserom.dol", 0x452840, 0x4C
+	# ROM: 0x452840
+	.asciz "AptActionQueueC::AddActionBack(AptActionBlock *, AptCIH *, unsigned int)"
+	.byte 0x00, 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9868"
 "__PRETTY_FUNCTION__$9868":
-	.incbin "baserom.dol", 0x45288C, 0x4C
+	# ROM: 0x45288C
+	.asciz "AptActionQueueC::AddActionFront(AptActionBlock *, AptCIH *, unsigned int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9890"
 "__PRETTY_FUNCTION__$9890":
-	.incbin "baserom.dol", 0x4528D8, 0x4C
+	# ROM: 0x4528D8
+	.asciz "AptActionQueueC::AddFunctionBack(AptCIH *, AptValue *, int, unsigned int)"
+	.byte 0x00, 0x00
+
 .global "__PRETTY_FUNCTION__$9906"
 "__PRETTY_FUNCTION__$9906":
-	.incbin "baserom.dol", 0x452924, 0x4C
+	# ROM: 0x452924
+	.asciz "AptActionQueueC::AddFunctionFront(AptCIH *, AptValue *, int, unsigned int)"
+	.byte 0x00
+
 .global "__PRETTY_FUNCTION__$9919"
 "__PRETTY_FUNCTION__$9919":
-	.incbin "baserom.dol", 0x452970, 0xA0
+	# ROM: 0x452970
+	.asciz "AptActionQueueC::RemoveActionFor(AptCIH *)"
+	.byte 0x00
+	.asciz "AptAnimationPoolData::action.pCIH"
+	.byte 0x00, 0x00
+	.asciz "AptAnimationPoolData::function.pContext"
+	.asciz "AptAnimationPoolData::function.pFuncDef"
+
 .global "__vt__25AptCharacterAnimationInst"
 "__vt__25AptCharacterAnimationInst":
-	.incbin "baserom.dol", 0x452A10, 0x28
+	# ROM: 0x452A10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "PreDestroy__25AptCharacterAnimationInstFv" ;# ptr (0x8030C598)
+	.4byte "__dt__25AptCharacterAnimationInstFv" ;# ptr (0x8030C4E4)
+	.4byte "DestroyGCPointers__16AptCharacterInstFv" ;# ptr (0x802FC5A4)
+	.asciz "_AptValuePtrStack.h"
+
 .global lbl_80456938
 lbl_80456938:
-	.incbin "baserom.dol", 0x452A38, 0x78
+	# ROM: 0x452A38
+	.asciz "_AptSet.h"
+	.byte 0x00, 0x00
+	.asciz "_AptSet.h"
+	.byte 0x00, 0x00
+	.asciz "_AptSet.h"
+	.byte 0x00, 0x00
+	.asciz "_AptBasePtrStack.h"
+	.byte 0x00
+	.asciz "_AptBasePtrStack.h"
+	.byte 0x00
+	.asciz "_AptBasePtrStack.h"
+	.byte 0x00
+	.asciz "_AptValuePtrStack.h"
+	.4byte 0x00000000
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB5A8
 lbl_805DB5A8:
-	.incbin "baserom.dol", 0x4898C8, 0x8
+	# ROM: 0x4898C8
+	.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DB5B0
 lbl_805DB5B0:
-	.incbin "baserom.dol", 0x4898D0, 0x8
+	# ROM: 0x4898D0
+	.4byte 0x43300000
+	.4byte 0x80000000
+

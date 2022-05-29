@@ -23,7 +23,7 @@ lbl_80383A24:
 /* 80383A24 0037F6C4  C0 03 00 08 */	lfs f0, 8(r3)
 lbl_80383A28:
 /* 80383A28 0037F6C8  D0 03 00 0C */	stfs f0, 0xc(r3)
-/* 80383A2C 0037F6CC  4E 80 00 20 */	blr 
+/* 80383A2C 0037F6CC  4E 80 00 20 */	blr
 
 .global "calc__Q210homebutton15FrameControllerFv"
 "calc__Q210homebutton15FrameControllerFv":
@@ -123,21 +123,29 @@ lbl_80383B84:
 /* 80383B88 0037F828  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80383B8C 0037F82C  7C 08 03 A6 */	mtlr r0
 /* 80383B90 0037F830  38 21 00 10 */	addi r1, r1, 0x10
-/* 80383B94 0037F834  4E 80 00 20 */	blr 
+/* 80383B94 0037F834  4E 80 00 20 */	blr
 
 .global "getLastFrame__Q210homebutton15FrameControllerCFv"
 "getLastFrame__Q210homebutton15FrameControllerCFv":
 /* 80383B98 0037F838  C0 23 00 04 */	lfs f1, 4(r3)
 /* 80383B9C 0037F83C  C0 02 A7 08 */	lfs f0, lbl_805DB928-_SDA2_BASE_(r2)
 /* 80383BA0 0037F840  EC 21 00 28 */	fsubs f1, f1, f0
-/* 80383BA4 0037F844  4E 80 00 20 */	blr 
+/* 80383BA4 0037F844  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global "__vt__Q210homebutton15FrameController"
 "__vt__Q210homebutton15FrameController":
-	.incbin "baserom.dol", 0x465368, 0x10
+	# ROM: 0x465368
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte "__dt__Q210homebutton15FrameControllerFv" ;# ptr (0x8037BA78)
+	.4byte "calc__Q210homebutton15FrameControllerFv" ;# ptr (0x80383A30)
+
 
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DB928
 lbl_805DB928:
-	.incbin "baserom.dol", 0x489C48, 0x8
+	# ROM: 0x489C48
+	.4byte 0x3F800000
+	.4byte 0x00000000
+

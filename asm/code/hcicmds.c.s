@@ -46,7 +46,7 @@ lbl_8035175C:
 /* 80351768 0034D408  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035176C 0034D40C  7C 08 03 A6 */	mtlr r0
 /* 80351770 0034D410  38 21 00 20 */	addi r1, r1, 0x20
-/* 80351774 0034D414  4E 80 00 20 */	blr 
+/* 80351774 0034D414  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_inq_cancel"
 "btsnd_hcic_inq_cancel":
@@ -75,7 +75,7 @@ lbl_803517C8:
 /* 803517C8 0034D468  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803517CC 0034D46C  7C 08 03 A6 */	mtlr r0
 /* 803517D0 0034D470  38 21 00 10 */	addi r1, r1, 0x10
-/* 803517D4 0034D474  4E 80 00 20 */	blr 
+/* 803517D4 0034D474  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_per_inq_mode"
 "btsnd_hcic_per_inq_mode":
@@ -128,7 +128,7 @@ lbl_80351880:
 /* 80351888 0034D528  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035188C 0034D52C  7C 08 03 A6 */	mtlr r0
 /* 80351890 0034D530  38 21 00 20 */	addi r1, r1, 0x20
-/* 80351894 0034D534  4E 80 00 20 */	blr 
+/* 80351894 0034D534  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_create_conn"
 "btsnd_hcic_create_conn":
@@ -189,7 +189,7 @@ lbl_80351960:
 /* 80351968 0034D608  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035196C 0034D60C  7C 08 03 A6 */	mtlr r0
 /* 80351970 0034D610  38 21 00 20 */	addi r1, r1, 0x20
-/* 80351974 0034D614  4E 80 00 20 */	blr 
+/* 80351974 0034D614  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_disconnect"
 "btsnd_hcic_disconnect":
@@ -228,7 +228,7 @@ lbl_803519E8:
 /* 803519F0 0034D690  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803519F4 0034D694  7C 08 03 A6 */	mtlr r0
 /* 803519F8 0034D698  38 21 00 10 */	addi r1, r1, 0x10
-/* 803519FC 0034D69C  4E 80 00 20 */	blr 
+/* 803519FC 0034D69C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_add_SCO_conn"
 "btsnd_hcic_add_SCO_conn":
@@ -268,7 +268,7 @@ lbl_80351A74:
 /* 80351A7C 0034D71C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80351A80 0034D720  7C 08 03 A6 */	mtlr r0
 /* 80351A84 0034D724  38 21 00 10 */	addi r1, r1, 0x10
-/* 80351A88 0034D728  4E 80 00 20 */	blr 
+/* 80351A88 0034D728  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_accept_conn"
 "btsnd_hcic_accept_conn":
@@ -430,7 +430,7 @@ lbl_80351CD0:
 /* 80351CD8 0034D978  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80351CDC 0034D97C  7C 08 03 A6 */	mtlr r0
 /* 80351CE0 0034D980  38 21 00 30 */	addi r1, r1, 0x30
-/* 80351CE4 0034D984  4E 80 00 20 */	blr 
+/* 80351CE4 0034D984  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_link_key_neg_reply"
 "btsnd_hcic_link_key_neg_reply":
@@ -475,7 +475,7 @@ lbl_80351D74:
 /* 80351D78 0034DA18  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80351D7C 0034DA1C  7C 08 03 A6 */	mtlr r0
 /* 80351D80 0034DA20  38 21 00 10 */	addi r1, r1, 0x10
-/* 80351D84 0034DA24  4E 80 00 20 */	blr 
+/* 80351D84 0034DA24  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_pin_code_req_reply"
 "btsnd_hcic_pin_code_req_reply":
@@ -610,7 +610,7 @@ lbl_80351F50:
 /* 80351F5C 0034DBFC  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80351F60 0034DC00  7C 08 03 A6 */	mtlr r0
 /* 80351F64 0034DC04  38 21 00 20 */	addi r1, r1, 0x20
-/* 80351F68 0034DC08  4E 80 00 20 */	blr 
+/* 80351F68 0034DC08  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_pin_code_neg_reply"
 "btsnd_hcic_pin_code_neg_reply":
@@ -655,7 +655,7 @@ lbl_80351FF8:
 /* 80351FFC 0034DC9C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352000 0034DCA0  7C 08 03 A6 */	mtlr r0
 /* 80352004 0034DCA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352008 0034DCA8  4E 80 00 20 */	blr 
+/* 80352008 0034DCA8  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_change_conn_type"
 "btsnd_hcic_change_conn_type":
@@ -696,7 +696,7 @@ lbl_80352084:
 /* 8035208C 0034DD2C  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80352090 0034DD30  7C 08 03 A6 */	mtlr r0
 /* 80352094 0034DD34  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352098 0034DD38  4E 80 00 20 */	blr 
+/* 80352098 0034DD38  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_auth_request"
 "btsnd_hcic_auth_request":
@@ -732,7 +732,7 @@ lbl_80352104:
 /* 80352108 0034DDA8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035210C 0034DDAC  7C 08 03 A6 */	mtlr r0
 /* 80352110 0034DDB0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352114 0034DDB4  4E 80 00 20 */	blr 
+/* 80352114 0034DDB4  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_set_conn_encrypt"
 "btsnd_hcic_set_conn_encrypt":
@@ -772,7 +772,7 @@ lbl_8035218C:
 /* 80352194 0034DE34  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80352198 0034DE38  7C 08 03 A6 */	mtlr r0
 /* 8035219C 0034DE3C  38 21 00 10 */	addi r1, r1, 0x10
-/* 803521A0 0034DE40  4E 80 00 20 */	blr 
+/* 803521A0 0034DE40  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_rmt_name_req"
 "btsnd_hcic_rmt_name_req":
@@ -831,7 +831,7 @@ lbl_8035225C:
 /* 8035226C 0034DF0C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80352270 0034DF10  7C 08 03 A6 */	mtlr r0
 /* 80352274 0034DF14  38 21 00 20 */	addi r1, r1, 0x20
-/* 80352278 0034DF18  4E 80 00 20 */	blr 
+/* 80352278 0034DF18  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_rmt_name_req_cancel"
 "btsnd_hcic_rmt_name_req_cancel":
@@ -876,7 +876,7 @@ lbl_80352308:
 /* 8035230C 0034DFAC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352310 0034DFB0  7C 08 03 A6 */	mtlr r0
 /* 80352314 0034DFB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352318 0034DFB8  4E 80 00 20 */	blr 
+/* 80352318 0034DFB8  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_rmt_features_req"
 "btsnd_hcic_rmt_features_req":
@@ -912,7 +912,7 @@ lbl_80352384:
 /* 80352388 0034E028  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035238C 0034E02C  7C 08 03 A6 */	mtlr r0
 /* 80352390 0034E030  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352394 0034E034  4E 80 00 20 */	blr 
+/* 80352394 0034E034  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_rmt_ver_req"
 "btsnd_hcic_rmt_ver_req":
@@ -948,7 +948,7 @@ lbl_80352400:
 /* 80352404 0034E0A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352408 0034E0A8  7C 08 03 A6 */	mtlr r0
 /* 8035240C 0034E0AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352410 0034E0B0  4E 80 00 20 */	blr 
+/* 80352410 0034E0B0  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_read_rmt_clk_offset"
 "btsnd_hcic_read_rmt_clk_offset":
@@ -984,7 +984,7 @@ lbl_8035247C:
 /* 80352480 0034E120  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352484 0034E124  7C 08 03 A6 */	mtlr r0
 /* 80352488 0034E128  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035248C 0034E12C  4E 80 00 20 */	blr 
+/* 8035248C 0034E12C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_setup_esco_conn"
 "btsnd_hcic_setup_esco_conn":
@@ -1052,7 +1052,7 @@ lbl_80352574:
 /* 8035257C 0034E21C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80352580 0034E220  7C 08 03 A6 */	mtlr r0
 /* 80352584 0034E224  38 21 00 30 */	addi r1, r1, 0x30
-/* 80352588 0034E228  4E 80 00 20 */	blr 
+/* 80352588 0034E228  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_accept_esco_conn"
 "btsnd_hcic_accept_esco_conn":
@@ -1113,7 +1113,7 @@ lbl_80352574:
 /* 80352664 0034E304  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80352668 0034E308  7C 08 03 A6 */	mtlr r0
 /* 8035266C 0034E30C  38 21 00 30 */	addi r1, r1, 0x30
-/* 80352670 0034E310  4E 80 00 20 */	blr 
+/* 80352670 0034E310  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_reject_esco_conn"
 "btsnd_hcic_reject_esco_conn":
@@ -1190,7 +1190,7 @@ lbl_8035276C:
 /* 80352778 0034E418  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8035277C 0034E41C  7C 08 03 A6 */	mtlr r0
 /* 80352780 0034E420  38 21 00 20 */	addi r1, r1, 0x20
-/* 80352784 0034E424  4E 80 00 20 */	blr 
+/* 80352784 0034E424  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_sniff_mode"
 "btsnd_hcic_sniff_mode":
@@ -1246,7 +1246,7 @@ lbl_8035283C:
 /* 80352844 0034E4E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80352848 0034E4E8  7C 08 03 A6 */	mtlr r0
 /* 8035284C 0034E4EC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80352850 0034E4F0  4E 80 00 20 */	blr 
+/* 80352850 0034E4F0  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_exit_sniff_mode"
 "btsnd_hcic_exit_sniff_mode":
@@ -1284,7 +1284,7 @@ lbl_803528C4:
 /* 803528C8 0034E568  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803528CC 0034E56C  7C 08 03 A6 */	mtlr r0
 /* 803528D0 0034E570  38 21 00 10 */	addi r1, r1, 0x10
-/* 803528D4 0034E574  4E 80 00 20 */	blr 
+/* 803528D4 0034E574  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_park_mode"
 "btsnd_hcic_park_mode":
@@ -1334,7 +1334,7 @@ lbl_80352970:
 /* 8035297C 0034E61C  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80352980 0034E620  7C 08 03 A6 */	mtlr r0
 /* 80352984 0034E624  38 21 00 20 */	addi r1, r1, 0x20
-/* 80352988 0034E628  4E 80 00 20 */	blr 
+/* 80352988 0034E628  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_exit_park_mode"
 "btsnd_hcic_exit_park_mode":
@@ -1372,7 +1372,7 @@ lbl_803529FC:
 /* 80352A00 0034E6A0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352A04 0034E6A4  7C 08 03 A6 */	mtlr r0
 /* 80352A08 0034E6A8  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352A0C 0034E6AC  4E 80 00 20 */	blr 
+/* 80352A0C 0034E6AC  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_switch_role"
 "btsnd_hcic_switch_role":
@@ -1421,7 +1421,7 @@ lbl_80352AA8:
 /* 80352AB0 0034E750  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80352AB4 0034E754  7C 08 03 A6 */	mtlr r0
 /* 80352AB8 0034E758  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352ABC 0034E75C  4E 80 00 20 */	blr 
+/* 80352ABC 0034E75C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_policy_set"
 "btsnd_hcic_write_policy_set":
@@ -1463,7 +1463,7 @@ lbl_80352B3C:
 /* 80352B44 0034E7E4  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80352B48 0034E7E8  7C 08 03 A6 */	mtlr r0
 /* 80352B4C 0034E7EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352B50 0034E7F0  4E 80 00 20 */	blr 
+/* 80352B50 0034E7F0  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_reset"
 "btsnd_hcic_reset":
@@ -1491,7 +1491,7 @@ lbl_80352BA0:
 /* 80352BA0 0034E840  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80352BA4 0034E844  7C 08 03 A6 */	mtlr r0
 /* 80352BA8 0034E848  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352BAC 0034E84C  4E 80 00 20 */	blr 
+/* 80352BAC 0034E84C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_set_event_filter"
 "btsnd_hcic_set_event_filter":
@@ -1647,7 +1647,7 @@ lbl_80352DCC:
 /* 80352DD0 0034EA70  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80352DD4 0034EA74  7C 08 03 A6 */	mtlr r0
 /* 80352DD8 0034EA78  38 21 00 10 */	addi r1, r1, 0x10
-/* 80352DDC 0034EA7C  4E 80 00 20 */	blr 
+/* 80352DDC 0034EA7C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_read_stored_key"
 "btsnd_hcic_read_stored_key":
@@ -1792,7 +1792,7 @@ lbl_80352FE4:
 /* 80352FF0 0034EC90  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80352FF4 0034EC94  7C 08 03 A6 */	mtlr r0
 /* 80352FF8 0034EC98  38 21 00 30 */	addi r1, r1, 0x30
-/* 80352FFC 0034EC9C  4E 80 00 20 */	blr 
+/* 80352FFC 0034EC9C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_delete_stored_key"
 "btsnd_hcic_delete_stored_key":
@@ -1841,7 +1841,7 @@ lbl_80353098:
 /* 803530A0 0034ED40  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803530A4 0034ED44  7C 08 03 A6 */	mtlr r0
 /* 803530A8 0034ED48  38 21 00 10 */	addi r1, r1, 0x10
-/* 803530AC 0034ED4C  4E 80 00 20 */	blr 
+/* 803530AC 0034ED4C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_change_name"
 "btsnd_hcic_change_name":
@@ -1929,7 +1929,7 @@ lbl_803531D0:
 /* 803531E0 0034EE80  83 C1 00 08 */	lwz r30, 8(r1)
 /* 803531E4 0034EE84  7C 08 03 A6 */	mtlr r0
 /* 803531E8 0034EE88  38 21 00 10 */	addi r1, r1, 0x10
-/* 803531EC 0034EE8C  4E 80 00 20 */	blr 
+/* 803531EC 0034EE8C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_page_tout"
 "btsnd_hcic_write_page_tout":
@@ -2035,7 +2035,7 @@ lbl_80353340:
 /* 80353344 0034EFE4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80353348 0034EFE8  7C 08 03 A6 */	mtlr r0
 /* 8035334C 0034EFEC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80353350 0034EFF0  4E 80 00 20 */	blr 
+/* 80353350 0034EFF0  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_encr_mode"
 "btsnd_hcic_write_encr_mode":
@@ -2069,7 +2069,7 @@ lbl_803533B4:
 /* 803533B8 0034F058  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803533BC 0034F05C  7C 08 03 A6 */	mtlr r0
 /* 803533C0 0034F060  38 21 00 10 */	addi r1, r1, 0x10
-/* 803533C4 0034F064  4E 80 00 20 */	blr 
+/* 803533C4 0034F064  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_dev_class"
 "btsnd_hcic_write_dev_class":
@@ -2161,7 +2161,7 @@ lbl_803534EC:
 /* 803534FC 0034F19C  83 81 00 10 */	lwz r28, 0x10(r1)
 /* 80353500 0034F1A0  7C 08 03 A6 */	mtlr r0
 /* 80353504 0034F1A4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80353508 0034F1A8  4E 80 00 20 */	blr 
+/* 80353508 0034F1A8  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_link_super_tout"
 "btsnd_hcic_write_link_super_tout":
@@ -2203,7 +2203,7 @@ lbl_80353588:
 /* 80353590 0034F230  83 C1 00 08 */	lwz r30, 8(r1)
 /* 80353594 0034F234  7C 08 03 A6 */	mtlr r0
 /* 80353598 0034F238  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035359C 0034F23C  4E 80 00 20 */	blr 
+/* 8035359C 0034F23C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_cur_iac_lap"
 "btsnd_hcic_write_cur_iac_lap":
@@ -2265,7 +2265,7 @@ lbl_80353660:
 /* 80353660 0034F300  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80353664 0034F304  7C 08 03 A6 */	mtlr r0
 /* 80353668 0034F308  38 21 00 10 */	addi r1, r1, 0x10
-/* 8035366C 0034F30C  4E 80 00 20 */	blr 
+/* 8035366C 0034F30C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_read_local_features"
 "btsnd_hcic_read_local_features":
@@ -2293,7 +2293,7 @@ lbl_803536BC:
 /* 803536BC 0034F35C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803536C0 0034F360  7C 08 03 A6 */	mtlr r0
 /* 803536C4 0034F364  38 21 00 10 */	addi r1, r1, 0x10
-/* 803536C8 0034F368  4E 80 00 20 */	blr 
+/* 803536C8 0034F368  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_read_buffer_size"
 "btsnd_hcic_read_buffer_size":
@@ -2335,7 +2335,7 @@ lbl_80353744:
 /* 80353744 0034F3E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80353748 0034F3E8  7C 08 03 A6 */	mtlr r0
 /* 8035374C 0034F3EC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80353750 0034F3F0  4E 80 00 20 */	blr 
+/* 80353750 0034F3F0  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_get_link_quality"
 "btsnd_hcic_get_link_quality":
@@ -2371,7 +2371,7 @@ lbl_803537BC:
 /* 803537C0 0034F460  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 803537C4 0034F464  7C 08 03 A6 */	mtlr r0
 /* 803537C8 0034F468  38 21 00 10 */	addi r1, r1, 0x10
-/* 803537CC 0034F46C  4E 80 00 20 */	blr 
+/* 803537CC 0034F46C  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_read_rssi"
 "btsnd_hcic_read_rssi":
@@ -2406,7 +2406,7 @@ lbl_80353834:
 /* 80353838 0034F4D8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8035383C 0034F4DC  7C 08 03 A6 */	mtlr r0
 /* 80353840 0034F4E0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80353844 0034F4E4  4E 80 00 20 */	blr 
+/* 80353844 0034F4E4  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_set_afh_channels"
 "btsnd_hcic_set_afh_channels":
@@ -2686,7 +2686,7 @@ lbl_80353C4C:
 /* 80353C58 0034F8F8  83 A1 00 24 */	lwz r29, 0x24(r1)
 /* 80353C5C 0034F8FC  7C 08 03 A6 */	mtlr r0
 /* 80353C60 0034F900  38 21 00 30 */	addi r1, r1, 0x30
-/* 80353C64 0034F904  4E 80 00 20 */	blr 
+/* 80353C64 0034F904  4E 80 00 20 */	blr
 
 .global "btsnd_hcic_write_inqscan_type"
 "btsnd_hcic_write_inqscan_type":
@@ -2805,4 +2805,9 @@ lbl_80353DE8:
 .section .rodata, "a"  # 0x80418C80 - 0x80420060
 .global lbl_8041CAA0
 lbl_8041CAA0:
-	.incbin "baserom.dol", 0x418BA0, 0x10
+	# ROM: 0x418BA0
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFF7F0000
+	.4byte 0x00000000
+

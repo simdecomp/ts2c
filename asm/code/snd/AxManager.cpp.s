@@ -110,7 +110,7 @@ lbl_803991B4:
 /* 803991FC 00394E9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80399200 00394EA0  7C 08 03 A6 */	mtlr r0
 /* 80399204 00394EA4  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399208 00394EA8  4E 80 00 20 */	blr 
+/* 80399208 00394EA8  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv"
 "__dt__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv":
@@ -136,7 +136,7 @@ lbl_80399248:
 /* 80399254 00394EF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399258 00394EF8  7C 08 03 A6 */	mtlr r0
 /* 8039925C 00394EFC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399260 00394F00  4E 80 00 20 */	blr 
+/* 80399260 00394F00  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv"
 "__dt__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv":
@@ -162,7 +162,7 @@ lbl_803992A0:
 /* 803992AC 00394F4C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803992B0 00394F50  7C 08 03 A6 */	mtlr r0
 /* 803992B4 00394F54  38 21 00 10 */	addi r1, r1, 0x10
-/* 803992B8 00394F58  4E 80 00 20 */	blr 
+/* 803992B8 00394F58  4E 80 00 20 */	blr
 
 .global "InitValue__Q46nw4hbm3snd6detail14MoveValue<f,i>Ff"
 "InitValue__Q46nw4hbm3snd6detail14MoveValue<f,i>Ff":
@@ -171,7 +171,7 @@ lbl_803992A0:
 /* 803992C4 00394F64  D0 23 00 04 */	stfs f1, 4(r3)
 /* 803992C8 00394F68  90 03 00 08 */	stw r0, 8(r3)
 /* 803992CC 00394F6C  90 03 00 0C */	stw r0, 0xc(r3)
-/* 803992D0 00394F70  4E 80 00 20 */	blr 
+/* 803992D0 00394F70  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv"
 "__dt__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv":
@@ -197,7 +197,7 @@ lbl_80399310:
 /* 8039931C 00394FBC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399320 00394FC0  7C 08 03 A6 */	mtlr r0
 /* 80399324 00394FC4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399328 00394FC8  4E 80 00 20 */	blr 
+/* 80399328 00394FC8  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv"
 "__ct__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv":
@@ -212,7 +212,7 @@ lbl_80399310:
 /* 8039934C 00394FEC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399350 00394FF0  7C 08 03 A6 */	mtlr r0
 /* 80399354 00394FF4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399358 00394FF8  4E 80 00 20 */	blr 
+/* 80399358 00394FF8  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm2ut27@unnamed@snd_AxManager_cpp@11NonCopyableFv"
 "__dt__Q46nw4hbm2ut27@unnamed@snd_AxManager_cpp@11NonCopyableFv":
@@ -232,11 +232,11 @@ lbl_80399384:
 /* 8039938C 0039502C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399390 00395030  7C 08 03 A6 */	mtlr r0
 /* 80399394 00395034  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399398 00395038  4E 80 00 20 */	blr 
+/* 80399398 00395038  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut27@unnamed@snd_AxManager_cpp@11NonCopyableFv"
 "__ct__Q46nw4hbm2ut27@unnamed@snd_AxManager_cpp@11NonCopyableFv":
-/* 8039939C 0039503C  4E 80 00 20 */	blr 
+/* 8039939C 0039503C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm3snd6detail14MoveValue<f,i>Fv"
 "__ct__Q46nw4hbm3snd6detail14MoveValue<f,i>Fv":
@@ -246,7 +246,7 @@ lbl_80399384:
 /* 803993AC 0039504C  D0 03 00 00 */	stfs f0, 0(r3)
 /* 803993B0 00395050  D0 03 00 04 */	stfs f0, 4(r3)
 /* 803993B4 00395054  90 03 00 0C */	stw r0, 0xc(r3)
-/* 803993B8 00395058  4E 80 00 20 */	blr 
+/* 803993B8 00395058  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv"
 "__ct__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv":
@@ -261,7 +261,7 @@ lbl_80399384:
 /* 803993DC 0039507C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803993E0 00395080  7C 08 03 A6 */	mtlr r0
 /* 803993E4 00395084  38 21 00 10 */	addi r1, r1, 0x10
-/* 803993E8 00395088  4E 80 00 20 */	blr 
+/* 803993E8 00395088  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv"
 "__ct__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv":
@@ -276,7 +276,7 @@ lbl_80399384:
 /* 8039940C 003950AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399410 003950B0  7C 08 03 A6 */	mtlr r0
 /* 80399414 003950B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399418 003950B8  4E 80 00 20 */	blr 
+/* 80399418 003950B8  4E 80 00 20 */	blr
 
 .global "GetInstance__Q46nw4hbm3snd6detail9AxManagerFv"
 "GetInstance__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -305,7 +305,7 @@ lbl_80399464:
 /* 80399470 00395110  38 63 26 2C */	addi r3, r3, "instance$3389"@l
 /* 80399474 00395114  7C 08 03 A6 */	mtlr r0
 /* 80399478 00395118  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039947C 0039511C  4E 80 00 20 */	blr 
+/* 8039947C 0039511C  4E 80 00 20 */	blr
 
 .global "__dt__Q46nw4hbm3snd6detail9AxManagerFv"
 "__dt__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -351,7 +351,7 @@ lbl_8039950C:
 /* 80399518 003951B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039951C 003951BC  7C 08 03 A6 */	mtlr r0
 /* 80399520 003951C0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399524 003951C4  4E 80 00 20 */	blr 
+/* 80399524 003951C4  4E 80 00 20 */	blr
 
 .global "Init__Q46nw4hbm3snd6detail9AxManagerFv"
 "Init__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -441,7 +441,7 @@ lbl_8039965C:
 /* 80399668 00395308  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039966C 0039530C  7C 08 03 A6 */	mtlr r0
 /* 80399670 00395310  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399674 00395314  4E 80 00 20 */	blr 
+/* 80399674 00395314  4E 80 00 20 */	blr
 
 .global "__dt__Q36nw4hbm2ut17AutoInterruptLockFv"
 "__dt__Q36nw4hbm2ut17AutoInterruptLockFv":
@@ -470,7 +470,7 @@ lbl_803996C0:
 /* 803996CC 0039536C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803996D0 00395370  7C 08 03 A6 */	mtlr r0
 /* 803996D4 00395374  38 21 00 10 */	addi r1, r1, 0x10
-/* 803996D8 00395378  4E 80 00 20 */	blr 
+/* 803996D8 00395378  4E 80 00 20 */	blr
 
 .global "__ct__Q36nw4hbm2ut17AutoInterruptLockFv"
 "__ct__Q36nw4hbm2ut17AutoInterruptLockFv":
@@ -487,7 +487,7 @@ lbl_803996C0:
 /* 80399704 003953A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399708 003953A8  7C 08 03 A6 */	mtlr r0
 /* 8039970C 003953AC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399710 003953B0  4E 80 00 20 */	blr 
+/* 80399710 003953B0  4E 80 00 20 */	blr
 
 .global "PushBack__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice"
 "PushBack__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice":
@@ -509,7 +509,7 @@ lbl_803996C0:
 /* 80399750 003953F0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80399754 003953F4  7C 08 03 A6 */	mtlr r0
 /* 80399758 003953F8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039975C 003953FC  4E 80 00 20 */	blr 
+/* 8039975C 003953FC  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorPQ46nw4hbm3snd6detail7AxVoice"
 "Insert__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorPQ46nw4hbm3snd6detail7AxVoice":
@@ -535,7 +535,7 @@ lbl_803996C0:
 /* 803997AC 0039544C  80 63 00 00 */	lwz r3, 0(r3)
 /* 803997B0 00395450  7C 08 03 A6 */	mtlr r0
 /* 803997B4 00395454  38 21 00 20 */	addi r1, r1, 0x20
-/* 803997B8 00395458  4E 80 00 20 */	blr 
+/* 803997B8 00395458  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -550,7 +550,7 @@ lbl_803996C0:
 /* 803997DC 0039547C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803997E0 00395480  7C 08 03 A6 */	mtlr r0
 /* 803997E4 00395484  38 21 00 10 */	addi r1, r1, 0x10
-/* 803997E8 00395488  4E 80 00 20 */	blr 
+/* 803997E8 00395488  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice"
 "GetNodeFromPointer__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice":
@@ -574,7 +574,7 @@ lbl_80399824:
 /* 8039982C 003954CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399830 003954D0  7C 08 03 A6 */	mtlr r0
 /* 80399834 003954D4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399838 003954D8  4E 80 00 20 */	blr 
+/* 80399838 003954D8  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv"
 "GetEndIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv":
@@ -590,7 +590,7 @@ lbl_80399824:
 /* 80399860 00395500  80 63 00 00 */	lwz r3, 0(r3)
 /* 80399864 00395504  7C 08 03 A6 */	mtlr r0
 /* 80399868 00395508  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039986C 0039550C  4E 80 00 20 */	blr 
+/* 8039986C 0039550C  4E 80 00 20 */	blr
 
 .global "PopFront__Q46nw4hbm2ut6detail12LinkListImplFv"
 "PopFront__Q46nw4hbm2ut6detail12LinkListImplFv":
@@ -608,14 +608,14 @@ lbl_80399824:
 /* 8039989C 0039553C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 803998A0 00395540  7C 08 03 A6 */	mtlr r0
 /* 803998A4 00395544  38 21 00 20 */	addi r1, r1, 0x20
-/* 803998A8 00395548  4E 80 00 20 */	blr 
+/* 803998A8 00395548  4E 80 00 20 */	blr
 
 .global "IsEmpty__Q46nw4hbm2ut6detail12LinkListImplCFv"
 "IsEmpty__Q46nw4hbm2ut6detail12LinkListImplCFv":
 /* 803998AC 0039554C  80 03 00 00 */	lwz r0, 0(r3)
 /* 803998B0 00395550  7C 00 00 34 */	cntlzw r0, r0
 /* 803998B4 00395554  54 03 D9 7E */	srwi r3, r0, 5
-/* 803998B8 00395558  4E 80 00 20 */	blr 
+/* 803998B8 00395558  4E 80 00 20 */	blr
 
 .global "GetFront__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv"
 "GetFront__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv":
@@ -644,7 +644,7 @@ lbl_803998F8:
 /* 80399910 003955B0  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80399914 003955B4  7C 08 03 A6 */	mtlr r0
 /* 80399918 003955B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039991C 003955BC  4E 80 00 20 */	blr 
+/* 8039991C 003955BC  4E 80 00 20 */	blr
 
 .global "__ml__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorCFv"
 "__ml__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorCFv":
@@ -669,7 +669,7 @@ lbl_8039995C:
 /* 80399964 00395604  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399968 00395608  7C 08 03 A6 */	mtlr r0
 /* 8039996C 0039560C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399970 00395610  4E 80 00 20 */	blr 
+/* 80399970 00395610  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorCFv"
 "__rf__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorCFv":
@@ -681,7 +681,7 @@ lbl_8039995C:
 /* 80399988 00395628  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039998C 0039562C  7C 08 03 A6 */	mtlr r0
 /* 80399990 00395630  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399994 00395634  4E 80 00 20 */	blr 
+/* 80399994 00395634  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ36nw4hbm2ut12LinkListNode":
@@ -705,7 +705,7 @@ lbl_803999D0:
 /* 803999D8 00395678  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803999DC 0039567C  7C 08 03 A6 */	mtlr r0
 /* 803999E0 00395680  38 21 00 10 */	addi r1, r1, 0x10
-/* 803999E4 00395684  4E 80 00 20 */	blr 
+/* 803999E4 00395684  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv"
 "GetBeginIter__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>Fv":
@@ -721,7 +721,7 @@ lbl_803999D0:
 /* 80399A0C 003956AC  80 63 00 00 */	lwz r3, 0(r3)
 /* 80399A10 003956B0  7C 08 03 A6 */	mtlr r0
 /* 80399A14 003956B4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399A18 003956B8  4E 80 00 20 */	blr 
+/* 80399A18 003956B8  4E 80 00 20 */	blr
 
 .global "GetOutputVolume__Q46nw4hbm3snd6detail9AxManagerCFv"
 "GetOutputVolume__Q46nw4hbm3snd6detail9AxManagerCFv":
@@ -751,7 +751,7 @@ lbl_803999D0:
 /* 80399A78 00395718  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80399A7C 0039571C  7C 08 03 A6 */	mtlr r0
 /* 80399A80 00395720  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399A84 00395724  4E 80 00 20 */	blr 
+/* 80399A84 00395724  4E 80 00 20 */	blr
 
 .global "GetValue__Q46nw4hbm3snd6detail14MoveValue<f,i>CFv"
 "GetValue__Q46nw4hbm3snd6detail14MoveValue<f,i>CFv":
@@ -791,7 +791,7 @@ lbl_80399B00:
 /* 80399B04 003957A4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 80399B08 003957A8  7C 08 03 A6 */	mtlr r0
 /* 80399B0C 003957AC  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399B10 003957B0  4E 80 00 20 */	blr 
+/* 80399B10 003957B0  4E 80 00 20 */	blr
 
 .global "IsFinished__Q46nw4hbm3snd6detail14MoveValue<f,i>CFv"
 "IsFinished__Q46nw4hbm3snd6detail14MoveValue<f,i>CFv":
@@ -801,7 +801,7 @@ lbl_80399B00:
 /* 80399B20 003957C0  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80399B24 003957C4  7C 00 28 10 */	subfc r0, r0, r5
 /* 80399B28 003957C8  7C 64 19 14 */	adde r3, r4, r3
-/* 80399B2C 003957CC  4E 80 00 20 */	blr 
+/* 80399B2C 003957CC  4E 80 00 20 */	blr
 
 .global "Update__Q46nw4hbm3snd6detail9AxManagerFv"
 "Update__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -964,7 +964,7 @@ lbl_80399D4C:
 /* 80399D64 00395A04  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80399D68 00395A08  7C 08 03 A6 */	mtlr r0
 /* 80399D6C 00395A0C  38 21 00 50 */	addi r1, r1, 0x50
-/* 80399D70 00395A10  4E 80 00 20 */	blr 
+/* 80399D70 00395A10  4E 80 00 20 */	blr
 
 .global "Clamp<f>__Q36nw4hbm2ut27@unnamed@snd_AxManager_cpp@Ffff_f"
 "Clamp<f>__Q36nw4hbm2ut27@unnamed@snd_AxManager_cpp@Ffff_f":
@@ -981,17 +981,17 @@ lbl_80399D90:
 /* 80399D90 00395A30  FC 60 10 90 */	fmr f3, f2
 lbl_80399D94:
 /* 80399D94 00395A34  FC 20 18 90 */	fmr f1, f3
-/* 80399D98 00395A38  4E 80 00 20 */	blr 
+/* 80399D98 00395A38  4E 80 00 20 */	blr
 
 .global "Update__Q46nw4hbm3snd6detail14MoveValue<f,i>Fv"
 "Update__Q46nw4hbm3snd6detail14MoveValue<f,i>Fv":
 /* 80399D9C 00395A3C  80 83 00 0C */	lwz r4, 0xc(r3)
 /* 80399DA0 00395A40  80 03 00 08 */	lwz r0, 8(r3)
 /* 80399DA4 00395A44  7C 04 00 00 */	cmpw r4, r0
-/* 80399DA8 00395A48  4C 80 00 20 */	bgelr 
+/* 80399DA8 00395A48  4C 80 00 20 */	bgelr
 /* 80399DAC 00395A4C  38 04 00 01 */	addi r0, r4, 1
 /* 80399DB0 00395A50  90 03 00 0C */	stw r0, 0xc(r3)
-/* 80399DB4 00395A54  4E 80 00 20 */	blr 
+/* 80399DB4 00395A54  4E 80 00 20 */	blr
 
 .global "GetZeroBufferAddress__Q46nw4hbm3snd6detail9AxManagerFv"
 "GetZeroBufferAddress__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -1016,7 +1016,7 @@ lbl_80399DF4:
 /* 80399DFC 00395A9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399E00 00395AA0  7C 08 03 A6 */	mtlr r0
 /* 80399E04 00395AA4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399E08 00395AA8  4E 80 00 20 */	blr 
+/* 80399E08 00395AA8  4E 80 00 20 */	blr
 
 .global "RegisterCallback__Q46nw4hbm3snd6detail9AxManagerFPQ56nw4hbm3snd6detail9AxManager16CallbackListNodePFv_v"
 "RegisterCallback__Q46nw4hbm3snd6detail9AxManagerFPQ56nw4hbm3snd6detail9AxManager16CallbackListNodePFv_v":
@@ -1044,7 +1044,7 @@ lbl_80399DF4:
 /* 80399E60 00395B00  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 80399E64 00395B04  7C 08 03 A6 */	mtlr r0
 /* 80399E68 00395B08  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399E6C 00395B0C  4E 80 00 20 */	blr 
+/* 80399E6C 00395B0C  4E 80 00 20 */	blr
 
 .global "PushBack__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode"
 "PushBack__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode":
@@ -1066,7 +1066,7 @@ lbl_80399DF4:
 /* 80399EAC 00395B4C  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 80399EB0 00395B50  7C 08 03 A6 */	mtlr r0
 /* 80399EB4 00395B54  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399EB8 00395B58  4E 80 00 20 */	blr 
+/* 80399EB8 00395B58  4E 80 00 20 */	blr
 
 .global "Insert__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorPQ56nw4hbm3snd6detail9AxManager16CallbackListNode"
 "Insert__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorPQ56nw4hbm3snd6detail9AxManager16CallbackListNode":
@@ -1092,7 +1092,7 @@ lbl_80399DF4:
 /* 80399F08 00395BA8  80 63 00 00 */	lwz r3, 0(r3)
 /* 80399F0C 00395BAC  7C 08 03 A6 */	mtlr r0
 /* 80399F10 00395BB0  38 21 00 20 */	addi r1, r1, 0x20
-/* 80399F14 00395BB4  4E 80 00 20 */	blr 
+/* 80399F14 00395BB4  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -1107,7 +1107,7 @@ lbl_80399DF4:
 /* 80399F38 00395BD8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399F3C 00395BDC  7C 08 03 A6 */	mtlr r0
 /* 80399F40 00395BE0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399F44 00395BE4  4E 80 00 20 */	blr 
+/* 80399F44 00395BE4  4E 80 00 20 */	blr
 
 .global "GetNodeFromPointer__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode"
 "GetNodeFromPointer__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode":
@@ -1131,7 +1131,7 @@ lbl_80399F80:
 /* 80399F88 00395C28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80399F8C 00395C2C  7C 08 03 A6 */	mtlr r0
 /* 80399F90 00395C30  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399F94 00395C34  4E 80 00 20 */	blr 
+/* 80399F94 00395C34  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv"
 "GetEndIter__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv":
@@ -1147,7 +1147,7 @@ lbl_80399F80:
 /* 80399FBC 00395C5C  80 63 00 00 */	lwz r3, 0(r3)
 /* 80399FC0 00395C60  7C 08 03 A6 */	mtlr r0
 /* 80399FC4 00395C64  38 21 00 10 */	addi r1, r1, 0x10
-/* 80399FC8 00395C68  4E 80 00 20 */	blr 
+/* 80399FC8 00395C68  4E 80 00 20 */	blr
 
 .global "UnregisterCallback__Q46nw4hbm3snd6detail9AxManagerFPQ56nw4hbm3snd6detail9AxManager16CallbackListNode"
 "UnregisterCallback__Q46nw4hbm3snd6detail9AxManagerFPQ56nw4hbm3snd6detail9AxManager16CallbackListNode":
@@ -1171,7 +1171,7 @@ lbl_80399F80:
 /* 8039A010 00395CB0  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039A014 00395CB4  7C 08 03 A6 */	mtlr r0
 /* 8039A018 00395CB8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A01C 00395CBC  4E 80 00 20 */	blr 
+/* 8039A01C 00395CBC  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode"
 "Erase__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ56nw4hbm3snd6detail9AxManager16CallbackListNode":
@@ -1194,7 +1194,7 @@ lbl_80399F80:
 /* 8039A060 00395D00  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039A064 00395D04  7C 08 03 A6 */	mtlr r0
 /* 8039A068 00395D08  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A06C 00395D0C  4E 80 00 20 */	blr 
+/* 8039A06C 00395D0C  4E 80 00 20 */	blr
 
 .global "SetOutputMode__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd10OutputMode"
 "SetOutputMode__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd10OutputMode":
@@ -1242,12 +1242,12 @@ lbl_8039A0F4:
 /* 8039A0F8 00395D98  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8039A0FC 00395D9C  7C 08 03 A6 */	mtlr r0
 /* 8039A100 00395DA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039A104 00395DA4  4E 80 00 20 */	blr 
+/* 8039A104 00395DA4  4E 80 00 20 */	blr
 
 .global "GetOutputMode__Q46nw4hbm3snd6detail9AxManagerFv"
 "GetOutputMode__Q46nw4hbm3snd6detail9AxManagerFv":
 /* 8039A108 00395DA8  80 63 00 00 */	lwz r3, 0(r3)
-/* 8039A10C 00395DAC  4E 80 00 20 */	blr 
+/* 8039A10C 00395DAC  4E 80 00 20 */	blr
 
 .global "AppendVoiceList__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice"
 "AppendVoiceList__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice":
@@ -1305,7 +1305,7 @@ lbl_8039A1A4:
 /* 8039A1D0 00395E70  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8039A1D4 00395E74  7C 08 03 A6 */	mtlr r0
 /* 8039A1D8 00395E78  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039A1DC 00395E7C  4E 80 00 20 */	blr 
+/* 8039A1DC 00395E7C  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator":
@@ -1324,7 +1324,7 @@ lbl_8039A1A4:
 /* 8039A210 00395EB0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039A214 00395EB4  7C 08 03 A6 */	mtlr r0
 /* 8039A218 00395EB8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039A21C 00395EBC  4E 80 00 20 */	blr 
+/* 8039A21C 00395EBC  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator":
@@ -1341,7 +1341,7 @@ lbl_8039A1A4:
 /* 8039A248 00395EE8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039A24C 00395EEC  7C 08 03 A6 */	mtlr r0
 /* 8039A250 00395EF0  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039A254 00395EF4  4E 80 00 20 */	blr 
+/* 8039A254 00395EF4  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFv"
 "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFv":
@@ -1356,7 +1356,7 @@ lbl_8039A1A4:
 /* 8039A278 00395F18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039A27C 00395F1C  7C 08 03 A6 */	mtlr r0
 /* 8039A280 00395F20  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039A284 00395F24  4E 80 00 20 */	blr 
+/* 8039A284 00395F24  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFRCQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator"
 "__ct__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFRCQ46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8Iterator":
@@ -1371,7 +1371,7 @@ lbl_8039A1A4:
 /* 8039A2A8 00395F48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039A2AC 00395F4C  7C 08 03 A6 */	mtlr r0
 /* 8039A2B0 00395F50  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039A2B4 00395F54  4E 80 00 20 */	blr 
+/* 8039A2B4 00395F54  4E 80 00 20 */	blr
 
 .global "Erase__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice"
 "Erase__Q36nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>FPQ46nw4hbm3snd6detail7AxVoice":
@@ -1394,7 +1394,7 @@ lbl_8039A1A4:
 /* 8039A2F8 00395F98  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039A2FC 00395F9C  7C 08 03 A6 */	mtlr r0
 /* 8039A300 00395FA0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A304 00395FA4  4E 80 00 20 */	blr 
+/* 8039A304 00395FA4  4E 80 00 20 */	blr
 
 .global "RemoveVoiceList__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice"
 "RemoveVoiceList__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice":
@@ -1421,7 +1421,7 @@ lbl_8039A1A4:
 /* 8039A358 00395FF8  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039A35C 00395FFC  7C 08 03 A6 */	mtlr r0
 /* 8039A360 00396000  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A364 00396004  4E 80 00 20 */	blr 
+/* 8039A364 00396004  4E 80 00 20 */	blr
 
 .global "AllocVoice__Q46nw4hbm3snd6detail9AxManagerFiiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv"
 "AllocVoice__Q46nw4hbm3snd6detail9AxManagerFiiiPFPQ46nw4hbm3snd6detail7AxVoiceQ56nw4hbm3snd6detail7AxVoice14CallbackStatusPv_vPv":
@@ -1499,7 +1499,7 @@ lbl_8039A46C:
 /* 8039A474 00396114  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039A478 00396118  7C 08 03 A6 */	mtlr r0
 /* 8039A47C 0039611C  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039A480 00396120  4E 80 00 20 */	blr 
+/* 8039A480 00396120  4E 80 00 20 */	blr
 
 .global "DropLowestPriorityVoice__Q46nw4hbm3snd6detail9AxManagerFi"
 "DropLowestPriorityVoice__Q46nw4hbm3snd6detail9AxManagerFi":
@@ -1539,7 +1539,7 @@ lbl_8039A4D8:
 /* 8039A504 003961A4  80 BE 01 10 */	lwz r5, 0x110(r30)
 /* 8039A508 003961A8  38 80 00 02 */	li r4, 2
 /* 8039A50C 003961AC  7D 89 03 A6 */	mtctr r12
-/* 8039A510 003961B0  4E 80 04 21 */	bctrl 
+/* 8039A510 003961B0  4E 80 04 21 */	bctrl
 lbl_8039A514:
 /* 8039A514 003961B4  7F E3 FB 78 */	mr r3, r31
 lbl_8039A518:
@@ -1549,19 +1549,19 @@ lbl_8039A518:
 /* 8039A524 003961C4  83 A1 00 14 */	lwz r29, 0x14(r1)
 /* 8039A528 003961C8  7C 08 03 A6 */	mtlr r0
 /* 8039A52C 003961CC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A530 003961D0  4E 80 00 20 */	blr 
+/* 8039A530 003961D0  4E 80 00 20 */	blr
 
 .global "GetAXVPBNum__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "GetAXVPBNum__Q46nw4hbm3snd6detail7AxVoiceCFv":
 /* 8039A534 003961D4  80 83 01 04 */	lwz r4, 0x104(r3)
 /* 8039A538 003961D8  80 03 01 08 */	lwz r0, 0x108(r3)
 /* 8039A53C 003961DC  7C 64 01 D6 */	mullw r3, r4, r0
-/* 8039A540 003961E0  4E 80 00 20 */	blr 
+/* 8039A540 003961E0  4E 80 00 20 */	blr
 
 .global "GetPriority__Q46nw4hbm3snd6detail7AxVoiceCFv"
 "GetPriority__Q46nw4hbm3snd6detail7AxVoiceCFv":
 /* 8039A544 003961E4  80 63 01 24 */	lwz r3, 0x124(r3)
-/* 8039A548 003961E8  4E 80 00 20 */	blr 
+/* 8039A548 003961E8  4E 80 00 20 */	blr
 
 .global "FreeVoice__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice"
 "FreeVoice__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice":
@@ -1595,7 +1595,7 @@ lbl_8039A58C:
 /* 8039A5B4 00396254  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039A5B8 00396258  7C 08 03 A6 */	mtlr r0
 /* 8039A5BC 0039625C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A5C0 00396260  4E 80 00 20 */	blr 
+/* 8039A5C0 00396260  4E 80 00 20 */	blr
 
 .global "ChangeVoicePriority__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice"
 "ChangeVoicePriority__Q46nw4hbm3snd6detail9AxManagerFPQ46nw4hbm3snd6detail7AxVoice":
@@ -1629,7 +1629,7 @@ lbl_8039A618:
 /* 8039A62C 003962CC  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039A630 003962D0  7C 08 03 A6 */	mtlr r0
 /* 8039A634 003962D4  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A638 003962D8  4E 80 00 20 */	blr 
+/* 8039A638 003962D8  4E 80 00 20 */	blr
 
 .global "LockUpdateVoicePriority__Q46nw4hbm3snd6detail9AxManagerFv"
 "LockUpdateVoicePriority__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -1650,7 +1650,7 @@ lbl_8039A618:
 /* 8039A674 00396314  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039A678 00396318  7C 08 03 A6 */	mtlr r0
 /* 8039A67C 0039631C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A680 00396320  4E 80 00 20 */	blr 
+/* 8039A680 00396320  4E 80 00 20 */	blr
 
 .global "UnlockUpdateVoicePriority__Q46nw4hbm3snd6detail9AxManagerFv"
 "UnlockUpdateVoicePriority__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -1673,7 +1673,7 @@ lbl_8039A618:
 /* 8039A6C4 00396364  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8039A6C8 00396368  7C 08 03 A6 */	mtlr r0
 /* 8039A6CC 0039636C  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A6D0 00396370  4E 80 00 20 */	blr 
+/* 8039A6D0 00396370  4E 80 00 20 */	blr
 
 .global "UpdateAllVoices__Q46nw4hbm3snd6detail9AxManagerFv"
 "UpdateAllVoices__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -1720,7 +1720,7 @@ lbl_8039A734:
 /* 8039A76C 0039640C  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8039A770 00396410  7C 08 03 A6 */	mtlr r0
 /* 8039A774 00396414  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039A778 00396418  4E 80 00 20 */	blr 
+/* 8039A778 00396418  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFi"
 "__pp__Q46nw4hbm2ut42LinkList<Q46nw4hbm3snd6detail7AxVoice,424>8IteratorFi":
@@ -1739,7 +1739,7 @@ lbl_8039A734:
 /* 8039A7AC 0039644C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8039A7B0 00396450  7C 08 03 A6 */	mtlr r0
 /* 8039A7B4 00396454  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A7B8 00396458  4E 80 00 20 */	blr 
+/* 8039A7B8 00396458  4E 80 00 20 */	blr
 
 .global "UpdateAllVoicesPriority__Q46nw4hbm3snd6detail9AxManagerFv"
 "UpdateAllVoicesPriority__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -1787,7 +1787,7 @@ lbl_8039A824:
 /* 8039A854 003964F4  83 C1 00 18 */	lwz r30, 0x18(r1)
 /* 8039A858 003964F8  7C 08 03 A6 */	mtlr r0
 /* 8039A85C 003964FC  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039A860 00396500  4E 80 00 20 */	blr 
+/* 8039A860 00396500  4E 80 00 20 */	blr
 
 .global "SetAxParam<Ul>__Q46nw4hbm3snd6detail7AxVoiceFPFP6_AXVPBUl_vUl_v"
 "SetAxParam<Ul>__Q46nw4hbm3snd6detail7AxVoiceFPFP6_AXVPBUl_vUl_v":
@@ -1813,7 +1813,7 @@ lbl_8039A89C:
 /* 8039A8A8 00396548  7F 4C D3 78 */	mr r12, r26
 /* 8039A8AC 0039654C  7F 64 DB 78 */	mr r4, r27
 /* 8039A8B0 00396550  7D 89 03 A6 */	mtctr r12
-/* 8039A8B4 00396554  4E 80 04 21 */	bctrl 
+/* 8039A8B4 00396554  4E 80 04 21 */	bctrl
 lbl_8039A8B8:
 /* 8039A8B8 00396558  3B DE 00 04 */	addi r30, r30, 4
 /* 8039A8BC 0039655C  3B 9C 00 01 */	addi r28, r28, 1
@@ -1832,7 +1832,7 @@ lbl_8039A8D4:
 /* 8039A8E8 00396588  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039A8EC 0039658C  7C 08 03 A6 */	mtlr r0
 /* 8039A8F0 00396590  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039A8F4 00396594  4E 80 00 20 */	blr 
+/* 8039A8F4 00396594  4E 80 00 20 */	blr
 
 .global "UpdateAllVoicesSync__Q46nw4hbm3snd6detail9AxManagerFUl"
 "UpdateAllVoicesSync__Q46nw4hbm3snd6detail9AxManagerFUl":
@@ -1889,7 +1889,7 @@ lbl_8039A97C:
 /* 8039A9B8 00396658  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8039A9BC 0039665C  7C 08 03 A6 */	mtlr r0
 /* 8039A9C0 00396660  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039A9C4 00396664  4E 80 00 20 */	blr 
+/* 8039A9C4 00396664  4E 80 00 20 */	blr
 
 .global "SetTarget__Q46nw4hbm3snd6detail14MoveValue<f,i>Ffi"
 "SetTarget__Q46nw4hbm3snd6detail14MoveValue<f,i>Ffi":
@@ -1914,7 +1914,7 @@ lbl_8039A97C:
 /* 8039AA10 003966B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039AA14 003966B4  7C 08 03 A6 */	mtlr r0
 /* 8039AA18 003966B8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039AA1C 003966BC  4E 80 00 20 */	blr 
+/* 8039AA1C 003966BC  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator":
@@ -1933,7 +1933,7 @@ lbl_8039A97C:
 /* 8039AA50 003966F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AA54 003966F4  7C 08 03 A6 */	mtlr r0
 /* 8039AA58 003966F8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AA5C 003966FC  4E 80 00 20 */	blr 
+/* 8039AA5C 003966FC  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator":
@@ -1950,7 +1950,7 @@ lbl_8039A97C:
 /* 8039AA88 00396728  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AA8C 0039672C  7C 08 03 A6 */	mtlr r0
 /* 8039AA90 00396730  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AA94 00396734  4E 80 00 20 */	blr 
+/* 8039AA94 00396734  4E 80 00 20 */	blr
 
 .global "GetEndIter__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv"
 "GetEndIter__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv":
@@ -1966,7 +1966,7 @@ lbl_8039A97C:
 /* 8039AABC 0039675C  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039AAC0 00396760  7C 08 03 A6 */	mtlr r0
 /* 8039AAC4 00396764  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AAC8 00396768  4E 80 00 20 */	blr 
+/* 8039AAC8 00396768  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator"
 "__ct__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFQ56nw4hbm2ut6detail12LinkListImpl8Iterator":
@@ -1981,7 +1981,7 @@ lbl_8039A97C:
 /* 8039AAEC 0039678C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AAF0 00396790  7C 08 03 A6 */	mtlr r0
 /* 8039AAF4 00396794  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AAF8 00396798  4E 80 00 20 */	blr 
+/* 8039AAF8 00396798  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFv"
 "__pp__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFv":
@@ -1996,7 +1996,7 @@ lbl_8039A97C:
 /* 8039AB1C 003967BC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AB20 003967C0  7C 08 03 A6 */	mtlr r0
 /* 8039AB24 003967C4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AB28 003967C8  4E 80 00 20 */	blr 
+/* 8039AB28 003967C8  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorCFv"
 "__rf__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorCFv":
@@ -2008,7 +2008,7 @@ lbl_8039A97C:
 /* 8039AB40 003967E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AB44 003967E4  7C 08 03 A6 */	mtlr r0
 /* 8039AB48 003967E8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AB4C 003967EC  4E 80 00 20 */	blr 
+/* 8039AB4C 003967EC  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>FPQ36nw4hbm2ut12LinkListNode":
@@ -2032,7 +2032,7 @@ lbl_8039AB88:
 /* 8039AB90 00396830  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AB94 00396834  7C 08 03 A6 */	mtlr r0
 /* 8039AB98 00396838  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AB9C 0039683C  4E 80 00 20 */	blr 
+/* 8039AB9C 0039683C  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFRCQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator"
 "__ct__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFRCQ46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8Iterator":
@@ -2047,7 +2047,7 @@ lbl_8039AB88:
 /* 8039ABC0 00396860  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039ABC4 00396864  7C 08 03 A6 */	mtlr r0
 /* 8039ABC8 00396868  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039ABCC 0039686C  4E 80 00 20 */	blr 
+/* 8039ABCC 0039686C  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv"
 "GetBeginIter__Q36nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>Fv":
@@ -2063,7 +2063,7 @@ lbl_8039AB88:
 /* 8039ABF4 00396894  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039ABF8 00396898  7C 08 03 A6 */	mtlr r0
 /* 8039ABFC 0039689C  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AC00 003968A0  4E 80 00 20 */	blr 
+/* 8039AC00 003968A0  4E 80 00 20 */	blr
 
 .global "GetEffectList__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd6AuxBus"
 "GetEffectList__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd6AuxBus":
@@ -2103,7 +2103,7 @@ lbl_8039AC68:
 /* 8039AC80 00396920  38 63 A2 CC */	addi r3, r3, -23860
 /* 8039AC84 00396924  7C 08 03 A6 */	mtlr r0
 /* 8039AC88 00396928  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AC8C 0039692C  4E 80 00 20 */	blr 
+/* 8039AC8C 0039692C  4E 80 00 20 */	blr
 
 .global "AxCallbackFunc__Q46nw4hbm3snd6detail9AxManagerFv"
 "AxCallbackFunc__Q46nw4hbm3snd6detail9AxManagerFv":
@@ -2130,7 +2130,7 @@ lbl_8039ACBC:
 /* 8039ACDC 0039697C  48 00 00 ED */	bl "__rf__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorCFv"
 /* 8039ACE0 00396980  81 83 00 08 */	lwz r12, 8(r3)
 /* 8039ACE4 00396984  7D 89 03 A6 */	mtctr r12
-/* 8039ACE8 00396988  4E 80 04 21 */	bctrl 
+/* 8039ACE8 00396988  4E 80 04 21 */	bctrl
 lbl_8039ACEC:
 /* 8039ACEC 0039698C  4B FF E7 31 */	bl "GetInstance__Q46nw4hbm3snd6detail9AxManagerFv"
 /* 8039ACF0 00396990  38 63 00 08 */	addi r3, r3, 8
@@ -2152,12 +2152,12 @@ lbl_8039ACEC:
 /* 8039AD30 003969D0  3C 63 00 01 */	addis r3, r3, 1
 /* 8039AD34 003969D4  81 83 A2 2C */	lwz r12, -0x5dd4(r3)
 /* 8039AD38 003969D8  7D 89 03 A6 */	mtctr r12
-/* 8039AD3C 003969DC  4E 80 04 21 */	bctrl 
+/* 8039AD3C 003969DC  4E 80 04 21 */	bctrl
 lbl_8039AD40:
 /* 8039AD40 003969E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039AD44 003969E4  7C 08 03 A6 */	mtlr r0
 /* 8039AD48 003969E8  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039AD4C 003969EC  4E 80 00 20 */	blr 
+/* 8039AD4C 003969EC  4E 80 00 20 */	blr
 
 .global "__ne__Q26nw4hbm2utFQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator"
 "__ne__Q26nw4hbm2utFQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator":
@@ -2176,7 +2176,7 @@ lbl_8039AD40:
 /* 8039AD80 00396A20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AD84 00396A24  7C 08 03 A6 */	mtlr r0
 /* 8039AD88 00396A28  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AD8C 00396A2C  4E 80 00 20 */	blr 
+/* 8039AD8C 00396A2C  4E 80 00 20 */	blr
 
 .global "__eq__Q26nw4hbm2utFQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator"
 "__eq__Q26nw4hbm2utFQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator":
@@ -2193,7 +2193,7 @@ lbl_8039AD40:
 /* 8039ADB8 00396A58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039ADBC 00396A5C  7C 08 03 A6 */	mtlr r0
 /* 8039ADC0 00396A60  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039ADC4 00396A64  4E 80 00 20 */	blr 
+/* 8039ADC4 00396A64  4E 80 00 20 */	blr
 
 .global "__rf__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorCFv"
 "__rf__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorCFv":
@@ -2205,7 +2205,7 @@ lbl_8039AD40:
 /* 8039ADDC 00396A7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039ADE0 00396A80  7C 08 03 A6 */	mtlr r0
 /* 8039ADE4 00396A84  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039ADE8 00396A88  4E 80 00 20 */	blr 
+/* 8039ADE8 00396A88  4E 80 00 20 */	blr
 
 .global "GetPointerFromNode__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ36nw4hbm2ut12LinkListNode"
 "GetPointerFromNode__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>FPQ36nw4hbm2ut12LinkListNode":
@@ -2229,7 +2229,7 @@ lbl_8039AE24:
 /* 8039AE2C 00396ACC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AE30 00396AD0  7C 08 03 A6 */	mtlr r0
 /* 8039AE34 00396AD4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AE38 00396AD8  4E 80 00 20 */	blr 
+/* 8039AE38 00396AD8  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFi"
 "__pp__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFi":
@@ -2248,7 +2248,7 @@ lbl_8039AE24:
 /* 8039AE6C 00396B0C  80 61 00 08 */	lwz r3, 8(r1)
 /* 8039AE70 00396B10  7C 08 03 A6 */	mtlr r0
 /* 8039AE74 00396B14  38 21 00 20 */	addi r1, r1, 0x20
-/* 8039AE78 00396B18  4E 80 00 20 */	blr 
+/* 8039AE78 00396B18  4E 80 00 20 */	blr
 
 .global "__pp__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFv"
 "__pp__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFv":
@@ -2263,7 +2263,7 @@ lbl_8039AE24:
 /* 8039AE9C 00396B3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AEA0 00396B40  7C 08 03 A6 */	mtlr r0
 /* 8039AEA4 00396B44  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AEA8 00396B48  4E 80 00 20 */	blr 
+/* 8039AEA8 00396B48  4E 80 00 20 */	blr
 
 .global "__ct__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFRCQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator"
 "__ct__Q46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8IteratorFRCQ46nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>8Iterator":
@@ -2278,7 +2278,7 @@ lbl_8039AE24:
 /* 8039AECC 00396B6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8039AED0 00396B70  7C 08 03 A6 */	mtlr r0
 /* 8039AED4 00396B74  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AED8 00396B78  4E 80 00 20 */	blr 
+/* 8039AED8 00396B78  4E 80 00 20 */	blr
 
 .global "GetBeginIter__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv"
 "GetBeginIter__Q36nw4hbm2ut60LinkList<Q56nw4hbm3snd6detail9AxManager16CallbackListNode,0>Fv":
@@ -2294,7 +2294,7 @@ lbl_8039AE24:
 /* 8039AF00 00396BA0  80 63 00 00 */	lwz r3, 0(r3)
 /* 8039AF04 00396BA4  7C 08 03 A6 */	mtlr r0
 /* 8039AF08 00396BA8  38 21 00 10 */	addi r1, r1, 0x10
-/* 8039AF0C 00396BAC  4E 80 00 20 */	blr 
+/* 8039AF0C 00396BAC  4E 80 00 20 */	blr
 
 .global "ShutdownEffect__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd6AuxBus"
 "ShutdownEffect__Q46nw4hbm3snd6detail9AxManagerFQ36nw4hbm3snd6AuxBus":
@@ -2332,7 +2332,7 @@ lbl_8039AF7C:
 /* 8039AF84 00396C24  81 83 00 00 */	lwz r12, 0(r3)
 /* 8039AF88 00396C28  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 8039AF8C 00396C2C  7D 89 03 A6 */	mtctr r12
-/* 8039AF90 00396C30  4E 80 04 21 */	bctrl 
+/* 8039AF90 00396C30  4E 80 04 21 */	bctrl
 /* 8039AF94 00396C34  38 61 00 14 */	addi r3, r1, 0x14
 /* 8039AF98 00396C38  4B FF FB 65 */	bl "__pp__Q46nw4hbm2ut32LinkList<Q36nw4hbm3snd6FxBase,4>8IteratorFv"
 lbl_8039AF9C:
@@ -2382,72 +2382,128 @@ lbl_8039B028:
 /* 8039B030 00396CD0  83 C1 00 28 */	lwz r30, 0x28(r1)
 /* 8039B034 00396CD4  7C 08 03 A6 */	mtlr r0
 /* 8039B038 00396CD8  38 21 00 30 */	addi r1, r1, 0x30
-/* 8039B03C 00396CDC  4E 80 00 20 */	blr 
+/* 8039B03C 00396CDC  4E 80 00 20 */	blr
 
 .section .data, "wa"  # 0x80420060 - 0x80488160
 .global lbl_8046CF88
 lbl_8046CF88:
-	.incbin "baserom.dol", 0x469088, 0x14
+	# ROM: 0x469088
+	.asciz "snd_AxManager.cpp"
+	.byte 0x00, 0x00
+
 .global lbl_8046CF9C
 lbl_8046CF9C:
-	.incbin "baserom.dol", 0x46909C, 0x18
+	# ROM: 0x46909C
+	.asciz "not initialized AI \n"
+	.byte 0x00, 0x00, 0x00
+
 .global lbl_8046CFB4
 lbl_8046CFB4:
-	.incbin "baserom.dol", 0x4690B4, 0x1C
+	# ROM: 0x4690B4
+	.asciz "Zero buffer is not created."
+
 .global lbl_8046CFD0
 lbl_8046CFD0:
-	.incbin "baserom.dol", 0x4690D0, 0x20
+	# ROM: 0x4690D0
+	.asciz "Voice Acquisition failed!\n"
+	.byte 0x00
+	.4byte 0x00000000
+
 .global lbl_8046CFF0
 lbl_8046CFF0:
-	.incbin "baserom.dol", 0x4690F0, 0x28
+	# ROM: 0x4690F0
+	.asciz "NW4HBM:Pointer must not be NULL (voice)"
+
 .global lbl_8046D018
 lbl_8046D018:
-	.incbin "baserom.dol", 0x469118, 0x24
+	# ROM: 0x469118
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D03C
 lbl_8046D03C:
-	.incbin "baserom.dol", 0x46913C, 0xC
+	# ROM: 0x46913C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D048
 lbl_8046D048:
-	.incbin "baserom.dol", 0x469148, 0x24
+	# ROM: 0x469148
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D06C
 lbl_8046D06C:
-	.incbin "baserom.dol", 0x46916C, 0xC
+	# ROM: 0x46916C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D078
 lbl_8046D078:
-	.incbin "baserom.dol", 0x469178, 0x24
+	# ROM: 0x469178
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D09C
 lbl_8046D09C:
-	.incbin "baserom.dol", 0x46919C, 0xC
+	# ROM: 0x46919C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D0A8
 lbl_8046D0A8:
-	.incbin "baserom.dol", 0x4691A8, 0x24
+	# ROM: 0x4691A8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D0CC
 lbl_8046D0CC:
-	.incbin "baserom.dol", 0x4691CC, 0xC
+	# ROM: 0x4691CC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D0D8
 lbl_8046D0D8:
-	.incbin "baserom.dol", 0x4691D8, 0x24
+	# ROM: 0x4691D8
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D0FC
 lbl_8046D0FC:
-	.incbin "baserom.dol", 0x4691FC, 0xC
+	# ROM: 0x4691FC
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D108
 lbl_8046D108:
-	.incbin "baserom.dol", 0x469208, 0x24
+	# ROM: 0x469208
+	.asciz "NW4HBM:Failed assertion !IsEmpty()"
+	.byte 0x00
+
 .global lbl_8046D12C
 lbl_8046D12C:
-	.incbin "baserom.dol", 0x46922C, 0xC
+	# ROM: 0x46922C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D138
 lbl_8046D138:
-	.incbin "baserom.dol", 0x469238, 0x24
+	# ROM: 0x469238
+	.asciz "NW4HBM:Pointer must not be NULL (p)"
+
 .global lbl_8046D15C
 lbl_8046D15C:
-	.incbin "baserom.dol", 0x46925C, 0xC
+	# ROM: 0x46925C
+	.asciz "LinkList.h"
+	.byte 0x00
+
 .global lbl_8046D168
 lbl_8046D168:
-	.incbin "baserom.dol", 0x469268, 0x38
+	# ROM: 0x469268
+	.asciz "bus is out of bounds(%d)\n%d <= bus < %d not satisfied."
+	.byte 0x00
+
 .global lbl_8046D1A0
 lbl_8046D1A0:
-	.incbin "baserom.dol", 0x4692A0, 0x10
+	# ROM: 0x4692A0
+	.asciz "AxManager.h"
+	.4byte 0x00000000
+
 
 .section .bss, "wa"  # 0x80488180 - 0x805DC448
 .global "sZeroBuffer__Q46nw4hbm3snd6detail9AxManager"
@@ -2468,13 +2524,23 @@ lbl_805D8C60:
 .section .sdata2, "a"  # 0x805D9220 - 0x805DC420
 .global lbl_805DBA48
 lbl_805DBA48:
-	.incbin "baserom.dol", 0x489D68, 0x4
+	# ROM: 0x489D68
+	.4byte 0x3F800000
+
 .global lbl_805DBA4C
 lbl_805DBA4C:
-	.incbin "baserom.dol", 0x489D6C, 0x4
+	# ROM: 0x489D6C
+	.byte 0x00, 0x00, 0x00, 0x00
+
 .global lbl_805DBA50
 lbl_805DBA50:
-	.incbin "baserom.dol", 0x489D70, 0x8
+	# ROM: 0x489D70
+	.4byte 0x43300000
+	.4byte 0x80000000
+
 .global lbl_805DBA58
 lbl_805DBA58:
-	.incbin "baserom.dol", 0x489D78, 0x8
+	# ROM: 0x489D78
+	.4byte 0x47000000
+	.4byte 0x00000000
+

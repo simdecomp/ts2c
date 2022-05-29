@@ -41,10 +41,6 @@ def read_baserom(start, size):
         f.seek(start, os.SEEK_SET)
         return bytearray(f.read(size))
 
-if len(sys.argv) != 2:
-    print('Usage: %s ASM_FILE' % sys.argv[0])
-    exit()
-
 # reads a 32-bit big endian value starting at pos
 def read_u32(data, pos):
     return (data[pos]<<24) | (data[pos+1]<<16) | (data[pos+2]<<8) | (data[pos+3])

@@ -16,9 +16,9 @@
 /* 803A330C 0039EFAC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 803A3310 0039EFB0  7C 08 03 A6 */	mtlr r0
 /* 803A3314 0039EFB4  38 21 00 10 */	addi r1, r1, 0x10
-/* 803A3318 0039EFB8  4E 80 00 20 */	blr 
+/* 803A3318 0039EFB8  4E 80 00 20 */	blr
 
 .global "GetPrev__Q36nw4hbm2ut12LinkListNodeCFv"
 "GetPrev__Q36nw4hbm2ut12LinkListNodeCFv":
 /* 803A331C 0039EFBC  80 63 00 04 */	lwz r3, 4(r3)
-/* 803A3320 0039EFC0  4E 80 00 20 */	blr 
+/* 803A3320 0039EFC0  4E 80 00 20 */	blr
